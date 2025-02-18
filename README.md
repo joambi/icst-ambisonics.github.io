@@ -1,1 +1,1 @@
-# icst-ambisonics.github.io
+This is the new Tutorial Blog for the ICST Ambisonics Stuff.
