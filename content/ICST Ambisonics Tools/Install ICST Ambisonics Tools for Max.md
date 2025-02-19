@@ -9,14 +9,13 @@ weight: 10
 
 ---
 
-
-
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
 
 Please install the “ICST Ambisonics Tools” in Max 8+ via the package manager.
-![install icst ambisonics tools]([/images/Amb_Max.gif](https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/images/Amb_Max.gif))
+![[static/images/Amb_Max.gif]]
+
 
     Created at: 2024-12-29
     Updated at: 2024-12-29

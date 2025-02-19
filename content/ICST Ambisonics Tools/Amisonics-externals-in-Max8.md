@@ -16,8 +16,8 @@ ICST Ambisonics Tools
 A set of externals for MaxMSP for Ambisonics surround sound processing and source-control in three dimensions.
 These externals are the result of research and practise using Ambisonics since 2000 and have been tested and used in numerous concerts, compositions and installations.
 The package includes the following externals:
+![[static/images/max-externals.png]]
 
-![Max-externals](/images/max-externals.png)
 
 The ICST Ambisonics Tools are distributed under the "Revised BSD License", see license file in this package.
 Current Version
