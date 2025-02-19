@@ -12,7 +12,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 * * *
 
-This is under construction!
+This site is under construction!
 
 Please go to this site: https://ambisonics.ch
 

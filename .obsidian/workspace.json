@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "d30a5c7dc07444a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae43aba2320bbf93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89b7c0cd5901e279",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/HOME/Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "cbc19e11f2f5ace3",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.7"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "aab5f389c3e6d95f",
+    "type": "split",
+    "children": [
+      {
+        "id": "00a99854b522bd27",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1597bac92f6118b8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1309d7d7bc3fc386",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e21e314f59748959",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "37258160c4802e4d",
+    "type": "split",
+    "children": [
+      {
+        "id": "fafad14f287418a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f8259754b1b3e52",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/About/abaut.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for abaut"
+            }
+          },
+          {
+            "id": "9c4d66522b007df2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/About/abaut.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from abaut"
+            }
+          },
+          {
+            "id": "01dd36e747a4e98d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "16787122e2ec5f17",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/About/abaut.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of abaut"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "89b7c0cd5901e279",
+  "lastOpenFiles": [
+    "Evernote/Best practices with ICST Ambisonics plugins/Best practices with ICST Ambisonics plugins.md",
+    "content/HOME/Home.md",
+    "Evernote/ICST Ambisonics Tools for Max/ICST Ambisonics Tools for Max.md",
+    "Evernote/ICST Ambisonics Tools for Max/_resources/ICST_Ambisonics_Tools_for_Max.resources/Amb_Max.gif",
+    "Evernote/ICST Ambisonics Tools for Max/_resources/ICST_Ambisonics_Tools_for_Max.resources",
+    "Evernote/ICST Ambisonics Tools for Max/_resources",
+    "Evernote/ICST Ambisonics Tools for Max",
+    "Evernote/ICST Ambisonics Plugins/ICST Ambisonics Plugins.md",
+    "Evernote/ICST Ambisonics Plugins/_resources/ICST_Ambisonics_Plugins.resources/Bildschirmfoto 2022-12-09 um 11.45.28.png",
+    "Evernote/ICST Ambisonics Plugins/_resources/ICST_Ambisonics_Plugins.resources",
+    "Evernote/ICST Ambisonics Plugins/_resources",
+    "Evernote/ICST Ambisonics Plugins",
+    "Evernote/Best practices with ICST Ambisonics plugins/_resources",
+    "Evernote/Best practices with ICST Ambisonics plugins",
+    "Evernote",
+    "content/ICST Ambisonics Plugins Blog Git/Overview v3.1.md",
+    "content/ICST Ambisonics Plugins Blog Git/_index.md",
+    "content/About/abaut.md"
+  ]
+}
