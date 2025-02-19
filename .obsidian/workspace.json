@@ -162,13 +162,23 @@
               "icon": "lucide-list",
               "title": "Outline of abaut"
             }
+          },
+          {
+            "id": "fe98a70a95c559b6",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,11 +188,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-importer:Open Importer": false
+      "obsidian-importer:Open Importer": false,
+      "github-sync:Sync with Remote": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "89b7c0cd5901e279",
   "lastOpenFiles": [
+    "uploader.js",
+    "hugoserverwithuploader.sh",
+    "layouts/_default:baseof.html",
+    "layouts/_default:baseof.html.rtf",
     "Evernote/Best practices with ICST Ambisonics plugins/Best practices with ICST Ambisonics plugins.md",
     "content/HOME/Home.md",
     "Evernote/ICST Ambisonics Tools for Max/ICST Ambisonics Tools for Max.md",
@@ -196,8 +212,6 @@
     "Evernote/ICST Ambisonics Plugins/_resources",
     "Evernote/ICST Ambisonics Plugins",
     "Evernote/Best practices with ICST Ambisonics plugins/_resources",
-    "Evernote/Best practices with ICST Ambisonics plugins",
-    "Evernote",
     "content/ICST Ambisonics Plugins Blog Git/Overview v3.1.md",
     "content/ICST Ambisonics Plugins Blog Git/_index.md",
     "content/About/abaut.md"

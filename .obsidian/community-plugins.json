@@ -1,4 +1,5 @@
 [
   "obsidian-importer",
-  "github-sync"
+  "github-sync",
+  "obsidian-git"
 ]
