@@ -1,0 +1,69 @@
+baseURL = 'https://example.com'
+languageCode = 'en-us'
+title = 'The ICST Ambisonics Site'
+theme = 'anatole'
+eneableEmoji = true
+
+[params]
+title = "The ICST Ambisonics"
+author = "Johannes Schuett"
+singleDateFormat = "2006-01-02"
+description = " This is the ICST Ambisonics Tutorial Blog"
+profilePicture = "images/ambiPlugin_logo.gif"
+mainSections = ["blog"]
+favicon = "favicons/"
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/jschuett"
+
+## Menu items
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Blog"
+  weight = 200
+  identifier = "blog"
+  url = "/blog/"
+
+  [[menu.main]]
+  name = "ICST Ambisonics Plugins"
+  weight = 300
+  identifier = "ICST Ambisonics Plugins"
+  url = "/ICST Ambisonics Plugins/"
+
+  [[menu.main]]
+  name = "ICST Ambisonics-tools"
+  weight = 400
+  identifier = "CST Ambisonics-tools"
+  url = "/CST Ambisonics-tools/"
+
+  [[menu.main]]
+  name = "Videos"
+  weight = 500
+  identifier = "videos"
+  url = "/videos/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 600
+  url = ""
+
+  [[menu.footer]]
+  name = "License"
+  weight = 1
+  identifier = "license"
+  url = "/license/"
+
+[taxonomies]
+series = "series"
+tag = "tags"

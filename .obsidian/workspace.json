@@ -193,15 +193,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89b7c0cd5901e279",
+  "active": "fe98a70a95c559b6",
   "lastOpenFiles": [
+    "config.toml",
+    "content/HOME/Home.md",
     "content/ICST Ambisonics Tools/Amisonics-externals-in-Max8.md",
     "content/ICST Ambisonics Tools/Install ICST Ambisonics Tools for Max.md",
     "static/images/Amb_Max.gif",
     "Evernote/ICST Ambisonics Tools for Max/ICST Ambisonics Tools for Max.md",
     "static/images/max-externals.png",
     "static/images/max-tools_in_max.png",
-    "content/HOME/Home.md",
     "uploader.js",
     "hugoserverwithuploader.sh",
     "layouts/_default:baseof.html",
