@@ -68,3 +68,10 @@ url = "https://github.com/jschuett"
 [taxonomies]
 series = "series"
 tag = "tags"
+
+[module]
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/lxndrblz/anatole -> ../../anatole"
+  [[module.imports]]
+    path = "github.com/joambi/icst-ambisonics.github.io/anatole"
+    disable = false
