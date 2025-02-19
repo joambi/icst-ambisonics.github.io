@@ -4,6 +4,13 @@ title = 'The ICST Ambisonics Site'
 theme = 'anatole'
 eneableEmoji = true
 
+[module]
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/lxndrblz/anatole -> ../../anatole"
+  [[module.imports]]
+    path = "github.com/lxndrblz/anatole"
+    disable = false
+
 [params]
 title = "The ICST Ambisonics"
 author = "Johannes Schuett"
