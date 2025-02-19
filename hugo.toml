@@ -1,8 +1,17 @@
-baseURL = 'https://example.com'
+baseURL = 'https://icst-ambisonics.github.io/'
 languageCode = 'en-us'
 title = 'The ICST Ambisonics Site'
 theme = 'anatole'
 eneableEmoji = true
+
+[params]
+title = "The ICST Ambisonics"
+author = "Johannes Schuett"
+singleDateFormat = "2006-01-02"
+description = " This is the ICST Ambisonics Tutorial Blog"
+profilePicture = "images/AmbiPlugin_logo.gif"
+mainSections = ["blog"]
+favicon = "favicons/"
 
 [module]
   # uncomment line below for temporary local development of module
@@ -10,16 +19,7 @@ eneableEmoji = true
   [[module.imports]]
     path = "github.com/lxndrblz/anatole"
     disable = false
-
-[params]
-title = "The ICST Ambisonics"
-author = "Johannes Schuett"
-singleDateFormat = "2006-01-02"
-description = " This is the ICST Ambisonics Tutorial Blog"
-profilePicture = "images/ambiPlugin_logo.gif"
-mainSections = ["blog"]
-favicon = "favicons/"
-
+    
 ## Social links
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
 [[params.socialIcons]]
@@ -34,13 +34,13 @@ url = "https://github.com/jschuett"
   name = "Home"
   identifier = "home"
   weight = 100
-  url = "/"
+  url = "/HOME/"
 
   [[menu.main]]
-  name = "Blog"
+  name = "Posts"
   weight = 200
-  identifier = "blog"
-  url = "/blog/"
+  identifier = "posts"
+  url = "/posts/"
 
   [[menu.main]]
   name = "ICST Ambisonics Plugins"
@@ -49,27 +49,27 @@ url = "https://github.com/jschuett"
   url = "/ICST Ambisonics Plugins/"
 
   [[menu.main]]
-  name = "ICST Ambisonics-tools"
+  name = "ICST Ambisonics Tools"
   weight = 400
-  identifier = "CST Ambisonics-tools"
-  url = "/CST Ambisonics-tools/"
+  identifier = "ICST Ambisonics Tools"
+  url = "/ICST Ambisonics Tools/"
 
   [[menu.main]]
-  name = "Videos"
+  name = "Links"
   weight = 500
-  identifier = "videos"
-  url = "/videos/"
+  identifier = "Links"
+  url = "/Links/"
 
   [[menu.main]]
   name = "About"
   weight = 600
-  url = ""
+  url = "/about/"
 
   [[menu.footer]]
   name = "License"
   weight = 1
-  identifier = "license"
-  url = "/license/"
+  identifier = "License"
+  url = "/License.md/"
 
 [taxonomies]
 series = "series"
