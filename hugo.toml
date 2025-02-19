@@ -13,12 +13,6 @@ profilePicture = "images/AmbiPlugin_logo.gif"
 mainSections = ["blog"]
 favicon = "favicons/"
 
-[module]
-  # uncomment line below for temporary local development of module
-  # replacements = "github.com/joambi/icst-ambisonics.github.io"
-  [[module.imports]]
-    path = "github.com/joambi/icst-ambisonics.github.io/anatole"
-    disable = false
     
 ## Social links
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
