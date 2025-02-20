@@ -195,6 +195,7 @@
   },
   "active": "fe98a70a95c559b6",
   "lastOpenFiles": [
+    "hugo.yaml",
     "content/ICST Ambisonics Plugins Blog /_index.md",
     "content/ICST Ambisonics Plugins Blog /Speakers ICST Labor (DOM).md",
     "content/ICST Ambisonics Plugins Blog /Overview v3.1.md",
@@ -235,7 +236,6 @@
     "themes/bilberry-hugo-theme/v4/exampleSite/content/status/bilberry-theme-released.en.md",
     "themes/bilberry-hugo-theme/v4/exampleSite/content/status/bilberry-theme-released.de.md",
     "themes/bilberry-hugo-theme/v4/exampleSite/content/video/kilez-more-leben-und-tod-des-imperialismus.en.md",
-    "themes/bilberry-hugo-theme/v4/exampleSite/content/video/kilez-more-leben-und-tod-des-imperialismus.de.md",
     "themes/bilberry-hugo-theme/v4/static/fonts/open-sans-v17-latin-ext_vietnamese_cyrillic-ext_greek-ext-regular.svg",
     "themes/bilberry-hugo-theme/v4/static/fonts/open-sans-v17-latin-ext_vietnamese_cyrillic-ext_greek-ext-italic.svg",
     "themes/bilberry-hugo-theme/v4/static/fonts/open-sans-v17-latin-ext_vietnamese_cyrillic-ext_greek-ext-700italic.svg",
