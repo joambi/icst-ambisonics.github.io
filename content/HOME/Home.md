@@ -15,7 +15,7 @@ The ICST Ambisonics Plugins provide Encoding and Decoding of the  Ambisonics B-
 
 ![icst_ambiplugins_overview_v3.0](images/icst_ambiplugins_overview_v3.0.png)
 
-The ICST Ambisonics Plugins bestehend aus den Plugin Formats: \* VST3 \* Components (AU) \* LV2 (LV2 version does currently NOT support automation parameters)
+The ICST Ambisonics plugins consist of the following plugin formats: VST3 / Components (AU) /LV2 (LV2 version does NOT support automation parameters at this time)
 
 Find individual pages here: \* [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder \* [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
 
