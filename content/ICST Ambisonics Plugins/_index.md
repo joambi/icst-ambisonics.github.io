@@ -4,5 +4,6 @@ author: Johannes Schuett
 
 ---
 
-- ICST Ambisonics Plugins Overview v3.0.md
+- Overview_v3.1
+
 - Speakers ICST Labor (DOM).md
