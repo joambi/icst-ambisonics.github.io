@@ -1,3 +1,13 @@
+---
+title: "ICST Ambisonics Tools"
+description: "Tools for Ambisonics audio processing"
+date: "2025-02-27"
+image: "images/amb_Max.gif"
+---
+
+
+
+
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ------------------------------------------------------------------------
