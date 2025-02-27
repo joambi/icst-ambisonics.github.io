@@ -1,10 +1,13 @@
 ---
-title: "Mein Hugo-Beitrag"
-date: 2025-02-27
-image: "max-externals.png"
+date: 2025-02-02T04:14:54-08:00
+draft: false
+params:
+  author: Johannes Schuett
+title: Ambisonics-externals for Max 8
+weight: 10
+image: "max-external.png"
+image: "Amb_Max.gif"
 ---
-
-
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -14,8 +17,15 @@ ICST Ambisonics Tools A set of externals for MaxMSP for Ambisonics surround soun
 
 ![max-external](max-externals.png)
 
-The ICST Ambisonics Tools are distributed under the "Revised BSD License", see license file in this package. Current Version Version 3.0.1 
+The ICST Ambisonics Tools are distributed under the "Revised BSD License", see license file in this package. 
+Current Version Version 3.0.1:
 
-– released May 2021 for Max 8.1 64bit 
+ – released May 2021 for Max 8.1 64bit 
 
-– mac os and Windows 10.
+ – mac os and Windows 10.
+
+## Installation:
+
+ Please install the “ICST Ambisonics Tools” in Max 8+ via the package manager. 
+
+
