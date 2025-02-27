@@ -29,3 +29,4 @@ Current Version Version 3.0.1:
  Please install the “ICST Ambisonics Tools” in Max 8+ via the package manager. 
 
 
+![max-external](Amb_Max.gif)
