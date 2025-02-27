@@ -9,8 +9,6 @@ weight: 10
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
-
-
 All of the following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
 
 !["icst_ambiplugins_overview_v3.0"](images/icst_ambiplugins_overview_v3.0.png){fig-alt="icst_ambiplugins_overview_v3.0"}
@@ -26,4 +24,4 @@ Find individual pages here:
 -   [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder)
 -   [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
 
-**Download:** (https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+**Download:** [ICST Ambisonics Plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
