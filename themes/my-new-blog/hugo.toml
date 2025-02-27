@@ -1,4 +1,0 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-cp -r bilberry-hugo-theme/v4/exampleSite/* my-new-blog
