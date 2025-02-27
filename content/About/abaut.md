@@ -5,7 +5,6 @@ params:
   author: Johannes Schuett
 title: About
 weight: 10
-
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts

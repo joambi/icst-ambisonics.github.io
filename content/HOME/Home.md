@@ -5,7 +5,7 @@ params:
   author: Johannes Schuett
 title: ICST Ambisonics Plugins Overview v3.0
 weight: 10
-images: /static/image
+images: "/static/image"
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -32,7 +32,7 @@ Find individual pages here:
 
 - 2025 the ICST
 
-----
+
 
 **Free download here:**
 
@@ -48,6 +48,6 @@ Issues: LV2 is very experimental
 
 **Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>**
 
-------------------------------------------------------------------------
+
 
 ©2025 the ICST

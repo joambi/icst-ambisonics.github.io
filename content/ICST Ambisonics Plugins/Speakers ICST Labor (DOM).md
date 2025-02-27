@@ -5,7 +5,7 @@ params:
   author: Johannes Schuett
 title: 01 Speakers ICST Labor (DOM)
 weight: 10
-
+images: "static/images/"
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
