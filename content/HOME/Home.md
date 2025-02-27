@@ -15,13 +15,29 @@ The ICST Ambisonics Plugins provide Encoding and Decoding of the  Ambisonics B-
 
 ![icst_ambiplugins_overview_v3.0](images/icst_ambiplugins_overview_v3.0.png)
 
-The ICST Ambisonics plugins consist of the following plugin formats: VST3 / Components (AU) /LV2 (LV2 version does NOT support automation parameters at this time)
+The ICST Ambisonics plugins consist of the following plugin formats:
 
-Find individual pages here: \* [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder \* [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
+VST3 / Components (AU) /LV2 (LV2 version does NOT support automation parameters at this time)
+
+Find individual pages here:
+
+[ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder
+
+[ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
 
 **Developer - team**: - Christian Schweizer/Johannes Schuett/Martin Neukom - Video Editor: Axel Kolb - 2025 the ICST
 
-**Free download here:** - Binary Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases> - Documentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki> - Tutorials, Blog: <https://ambisonics.ch/post/content> - Youtube: [https://www.youtube.com/\@ICSTAmbisonics](https://www.youtube.com/@ICSTAmbisonics) - Issues: LV2 is very experimental
+**Free download here:**
+
+\- Binary Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
+
+\- Documentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
+
+\- Tutorials, Blog: <https://ambisonics.ch/post/content>
+
+\- Youtube: [https://www.youtube.com/\@ICSTAmbisonics](https://www.youtube.com/@ICSTAmbisonics)
+
+\- Issues: LV2 is very experimental
 
 **Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>**
 
