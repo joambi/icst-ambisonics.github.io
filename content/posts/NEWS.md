@@ -1,7 +1,7 @@
 ---
-date = '2025-02-27T17:04:32+01:00' 
-draft = true 
-title = 'NEW' 
+title: "NEW"
+date: 2025-02-27
+draft: false
 ---
 
 The new ICST Ambisonics Plugins Release is out!
