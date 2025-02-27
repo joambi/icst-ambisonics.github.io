@@ -17,8 +17,6 @@ The ICST Ambisonics Plugins provide Encoding and Decoding of the Ambisonics B-Fo
 
 ![Overview_v3.1](Overview_v3.1.png)
 
-![Overview_v3.1](Overview_v3.1)
-
 
 The ICST Ambisonics plugins consist of the following plugin formats:
 
