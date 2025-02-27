@@ -1,7 +1,7 @@
 ---
 title: "Mein Hugo-Beitrag"
 date: 2025-02-27
-image: "/images/max-externals.png"
+image: "max-externals.png"
 ---
 
 
