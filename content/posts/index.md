@@ -1,10 +1,9 @@
 ---
-title: "Blog_Index"
-date: 2023-12-18T04:10:42Z
-draft: true
+title: "NEW"
+date: YYYY-MM-DDTHH:MM:SSZ
+draft: false
 ---
 
-- NEW
+The new ICST Ambisonics Plugins release v3.1 is out!
 
-- ICST_Max_Tools
 
