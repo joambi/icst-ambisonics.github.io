@@ -6,7 +6,7 @@ aliases:
   - "showcase"
   - "docs"
 title: "Posts"
-author: "Hugo Authors"
+author: "Johannes Schuett"
 tags:
   - "index"
 ---
