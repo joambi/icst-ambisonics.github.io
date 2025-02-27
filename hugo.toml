@@ -10,7 +10,7 @@ author = "Johannes Schuett"
 singleDateFormat = "2006-01-02"
 description = " This is the ICST Ambisonics Tutorial Blog"
 profilePicture = "images/AmbiPlugin_logo.gif"
-images = "images/"
+images = "/images/"
 mainSections = ["blog"]
 favicon = "favicons/"
 
