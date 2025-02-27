@@ -1,10 +1,7 @@
 ---
-date: 2024-02-02T04:14:54-08:00
-draft: false
-params:
-  author: Johannes Schuett
-title: ICST Ambisonics Plugins Overview v3.0
-weight: 10
+title: "ICST Ambisonics Tools"
+description: "Tools for Ambisonics audio processing"
+date: "2025-02-27"
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
