@@ -1,5 +1,5 @@
 ---
-title: "Mein Hugo-Beitrag"
+title: "ICST Ambisonics Max-Externals"
 date: 2025-02-27
 image: "max-externals.png"
 ---
