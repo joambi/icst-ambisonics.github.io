@@ -51,8 +51,8 @@ url = "https://github.com/jschuett"
   [[menu.main]]
   name = "Tutorials"
   weight = 400
-  identifier = "ICST Ambisonics Plugins Tutorials"
-  url = "/ICST Ambisonics Plugins Tutorials/"
+  identifier = "Tutorials"
+  url = "/Tutorials/"
   
 
   [[menu.main]]
