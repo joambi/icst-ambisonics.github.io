@@ -2,13 +2,14 @@
 title: "ICST Ambisonics Tools"
 description: "Tools for Ambisonics audio processing"
 date: "2025-02-27"
+images: "/images/"
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 All of the following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
 
-!["icst_ambiplugins_overview_v3.0"](images/icst_ambiplugins_overview_v3.0.png){fig-alt="icst_ambiplugins_overview_v3.0"}
+!["icst_ambiplugins_overview_v3.0"](images/icst_ambiplugins_overview_v3.0.png)
 
 The ICST Ambisonics Plugins consisting of the Plugin Formats:
 
