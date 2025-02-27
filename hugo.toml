@@ -1,7 +1,7 @@
 baseURL = 'https://icst-ambisonics.github.io/'
 languageCode = 'en-us'
 title = 'The ICST Ambisonics Site'
-theme = 'hugo-profile'
+theme = 'anatole'
 enableEmoji = true
 
 [params]
@@ -10,6 +10,7 @@ author = "Johannes Schuett"
 singleDateFormat = "2006-01-02"
 description = " This is the ICST Ambisonics Tutorial Blog"
 profilePicture = "images/AmbiPlugin_logo.gif"
+images = "images/"
 mainSections = ["blog"]
 favicon = "favicons/"
 
