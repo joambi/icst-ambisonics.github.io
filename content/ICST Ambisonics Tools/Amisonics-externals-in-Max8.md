@@ -5,7 +5,7 @@ params:
   author: Johannes Schuett
 title: Ambisonics-externals for Max 8
 weight: 10
-image: 
+image: = '/static/image/'
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
