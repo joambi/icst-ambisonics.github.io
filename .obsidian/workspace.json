@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST_Ambisonics_Plugins/What is new in v3.1.md",
+                "file": "content/ICST_Ambisonics_Plugins/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "What is new in v3.1"
+              "title": "index"
             }
           }
         ]
@@ -183,12 +183,12 @@
   },
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
+    "content/ICST_Ambisonics_Plugins/What is new in v3.1.md",
+    "content/HOME/index.md",
+    "content/ICST_Ambisonics_Plugins/index.md",
+    "content/ICST Ambisonics Tools/index.md",
     "content/posts/NEWS.md",
     "content/posts/_index.md",
-    "content/ICST_Ambisonics_Plugins/_index.md",
-    "content/ICST Ambisonics Tools/index.md",
-    "content/ICST_Ambisonics_Plugins/What is new in v3.1.md",
-    "content/ICST_Ambisonics_Plugins/index.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What is new in v3.1.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1",
@@ -218,7 +218,6 @@
     "content/ICST Ambisonics Plugins/What is new in v3.1",
     "content/ICST Ambisonics Plugins/What is new in v3.1_/What is new in v3.1.md",
     "content/ICST Ambisonics Plugins/What is new in v3.1_/_resources/What_is_new_in_v3.1.resources",
-    "content/HOME/index.md",
     "content/Tutorials/Tutorial_Content.md",
     "content/Tutorials/Tutorials_Content.md",
     "content/Links/Links.md",
