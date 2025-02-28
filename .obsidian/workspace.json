@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/About/abaut.md",
+                "file": "content/ICST Ambisonics Plugins/What is new in v3.1/What is new in v3.1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "abaut"
+              "title": "What is new in v3.1"
             }
           }
         ]
@@ -183,17 +183,32 @@
   },
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
+    "content/About/abaut.md",
+    "content/ICST Ambisonics Plugins/What is new in v3.1/_resources/What_is_new_in_v3.1.resources/osc-decoder-euler-absolute.gif",
+    "content/ICST Ambisonics Plugins/What is new in v3.1/_resources/What_is_new_in_v3.1.resources/decoder_weights.gif",
+    "content/ICST Ambisonics Plugins/What is new in v3.1/_resources/What_is_new_in_v3.1.resources/Speaker_setting_managment.gif",
+    "content/ICST Ambisonics Plugins/What is new in v3.1/_resources/What_is_new_in_v3.1.resources/MultiDecoder.gif",
+    "content/ICST Ambisonics Plugins/What is new in v3.1/_resources/What_is_new_in_v3.1.resources",
+    "content/ICST Ambisonics Plugins/What is new in v3.1/_resources",
+    "content/ICST Ambisonics Plugins/What is new in v3.1/What is new in v3.1.md",
+    "content/ICST Ambisonics Plugins/What is new in v3.1",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_/What is new in v3.1.md",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_/_resources/What_is_new_in_v3.1.resources/osc-decoder-euler-absolute.gif",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_/_resources/What_is_new_in_v3.1.resources/decoder_weights.gif",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_/_resources/What_is_new_in_v3.1.resources/Speaker_setting_managment.gif",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_/_resources/What_is_new_in_v3.1.resources/MultiDecoder.gif",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_/_resources/What_is_new_in_v3.1.resources",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_/_resources",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_alt/What is new in v3.1.md",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_alt/Overview_v3.1.png",
+    "content/ICST Ambisonics Plugins/What is new in v3.1_alt",
     "content/HOME/index.md",
     "content/Tutorials/Tutorial_Content.md",
     "content/Tutorials/Tutorials_Content.md",
     "content/Links/Links.md",
     "2025-02-02.md",
-    "content/ICST Ambisonics Plugins/What is new in v3.1/What is new in v3.1.md",
     "content/ICST Ambisonics Plugins/What is new in v3.1/Overview_v3.1.png",
-    "content/ICST Ambisonics Plugins/Overview_v3.1/Overview_v3.1.png",
-    "content/ICST Ambisonics Plugins/What is new in v3.1",
-    "content/HOME/Overview_v3.1.png",
-    "content/Overview_v3.1.png",
     "content/ICST Ambisonics Plugins/Overview_v3.1/What is new in v3.1.md",
     "content/ICST Ambisonics Plugins/index.md",
     "content/posts/_index.md",
@@ -206,28 +221,12 @@
     "content/ICST Ambisonics Plugins Blog ",
     "themes/my-new-blog/go.mod",
     "themes/my-new-blog/archetypes/default.md",
-    "themes/my-new-blog/themes",
-    "themes/my-new-blog/static",
-    "themes/my-new-blog/layouts",
-    "themes/my-new-blog/i18n",
-    "themes/my-new-blog/hugo.toml",
-    "themes/my-new-blog/data",
     "themes/bilberry-hugo-theme/v4/v4-migration-guide.md",
     "themes/bilberry-hugo-theme/v4/v4-developer-guide.md",
     "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/täst.md",
     "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/täst.de.md",
     "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/shortTextWithCode.md",
     "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/long-text.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/long-text-manual-readmore.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/long-text-1.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/quote/täst-quote.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/quote/täst-quote.de.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/page/about-bilberry.md",
-    "themes/bilberry-hugo-theme/v4/exampleSite/content/gallery/my-trip-to-scotland/scotland5.jpg",
-    "themes/bilberry-hugo-theme/v4/exampleSite/content/gallery/my-trip-to-scotland/scotland4.jpg",
-    "themes/bilberry-hugo-theme/v4/exampleSite/content/gallery/my-trip-to-scotland/scotland3.jpg",
-    "themes/bilberry-hugo-theme/v4/exampleSite/content/gallery/my-trip-to-scotland/scotland2.jpg",
-    "themes/bilberry-hugo-theme/v4/exampleSite/content/gallery/my-trip-to-scotland/scotland1.jpg",
-    "themes/bilberry-hugo-theme/v4/static/fonts/open-sans-v17-latin-ext_vietnamese_cyrillic-ext_greek-ext-regular.svg"
+    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/long-text-manual-readmore.md"
   ]
 }
