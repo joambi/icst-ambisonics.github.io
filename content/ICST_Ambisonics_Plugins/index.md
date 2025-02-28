@@ -70,7 +70,7 @@ In this version, we have focused on a new multi-decoder and implemented the late
 
 * * *
 
-### 
+
 
 ### What we now?
 
