@@ -11,10 +11,14 @@
             "id": "cbc19e11f2f5ace3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/ICST_Ambisonics_Plugins/index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "index"
             }
           }
         ]
@@ -180,12 +184,13 @@
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1.md",
+    "content/ICST_Ambisonics_Plugins/index.md",
+    "content/ICST Ambisonics Tools/index.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What is new in v3.1.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1",
     "content/ICST Ambisonics Plugins/What is new in v3.1/What is new in v3.1.md",
     "content/ICST_Ambisonics_Plugins/What is new in v3.1/What is new in v3.1.md",
-    "content/ICST_Ambisonics_Plugins/index.md",
     "content/ICST_Ambisonics_Plugins/What is new in v3.1",
     "content/ICST_Ambisonics_Plugins",
     "content/ICST Ambisonics Plugins/index.md",
@@ -223,7 +228,6 @@
     "content/ICST Ambisonics Plugins Blog /Speakers ICST Labor (DOM).md",
     "content/ICST Ambisonics Plugins Blog /Overview v3.1.md",
     "themes/my-new-blog/archetypes/default.md",
-    "themes/bilberry-hugo-theme/v4/v4-migration-guide.md",
-    "themes/bilberry-hugo-theme/v4/v4-developer-guide.md"
+    "themes/bilberry-hugo-theme/v4/v4-migration-guide.md"
   ]
 }
