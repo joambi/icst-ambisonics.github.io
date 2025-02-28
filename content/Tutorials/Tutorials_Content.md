@@ -5,6 +5,8 @@ params:
   author: Johannes Schuett
 title: Tutorials
 weight: 10
+tags:
+  - index
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
