@@ -27,7 +27,7 @@ In this version, we have focused on a new multi-decoder and implemented the late
 		* Filter
 		* Options
 		
-		![Speaker_setting_managment](/_resources/Speaker_setting_managment.gif)
+		![Speaker_setting_managment](Speaker_setting_managment.gif)
 
 * Multi-Decoder mode
 	* Default is the ICST Decoder (Basic)
