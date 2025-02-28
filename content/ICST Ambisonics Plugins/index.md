@@ -5,7 +5,8 @@ params:
   author: Johannes Schuett
 title: What is new in v3.1
 weight: 10
-tags: -index
+tags:
+  - -index
 ---
 
 # What is new in v3.1
