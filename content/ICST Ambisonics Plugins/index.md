@@ -1,6 +1,6 @@
 ---
-author: Johannes Schuett 
-  - "index"
+author: Johannes Schuett
+tags:
 ---
 
 - Overview_v3.1
