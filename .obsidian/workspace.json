@@ -11,14 +11,10 @@
             "id": "cbc19e11f2f5ace3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/ICST Ambisonics Plugins/What is new in v3.1/What is new in v3.1.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "What is new in v3.1"
+              "title": "New tab"
             }
           }
         ]
@@ -183,8 +179,15 @@
   },
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
-    "content/ICST Ambisonics Plugins/index.md",
+    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md",
+    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What is new in v3.1.md",
+    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1",
     "content/ICST Ambisonics Plugins/What is new in v3.1/What is new in v3.1.md",
+    "content/ICST_Ambisonics_Plugins/What is new in v3.1/What is new in v3.1.md",
+    "content/ICST_Ambisonics_Plugins/index.md",
+    "content/ICST_Ambisonics_Plugins/What is new in v3.1",
+    "content/ICST_Ambisonics_Plugins",
+    "content/ICST Ambisonics Plugins/index.md",
     "static/_resources/What_is_new_in_v3.1.resources",
     "content/ICST Ambisonics Plugins/What is new in v3.1_alt/What is new in v3.1.md",
     "content/ICST Ambisonics Plugins/What is new in v3.1_alt/Overview_v3.1.png",
@@ -206,8 +209,6 @@
     "content/ICST Ambisonics Plugins/What is new in v3.1",
     "content/ICST Ambisonics Plugins/What is new in v3.1_/What is new in v3.1.md",
     "content/ICST Ambisonics Plugins/What is new in v3.1_/_resources/What_is_new_in_v3.1.resources",
-    "content/ICST Ambisonics Plugins/What is new in v3.1_/_resources",
-    "content/ICST Ambisonics Plugins/What is new in v3.1_",
     "content/HOME/index.md",
     "content/Tutorials/Tutorial_Content.md",
     "content/Tutorials/Tutorials_Content.md",
@@ -217,16 +218,12 @@
     "content/posts/_index.md",
     "content/posts/NEWS.md",
     "static/_index.md",
-    "hugo.yaml",
     "content/ICST Ambisonics Plugins Blog /_index.md",
     "content/ICST Ambisonics Plugins Blog /Speakers ICST Labor (DOM).md",
     "content/ICST Ambisonics Plugins Blog /Overview v3.1.md",
     "themes/my-new-blog/archetypes/default.md",
     "themes/bilberry-hugo-theme/v4/v4-migration-guide.md",
     "themes/bilberry-hugo-theme/v4/v4-developer-guide.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/täst.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/täst.de.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/shortTextWithCode.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/long-text.md"
+    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/täst.md"
   ]
 }
