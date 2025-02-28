@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Tools/Install ICST Ambisonics Tools for Max.md",
+                "file": "content/ICST Ambisonics Plugins/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Install ICST Ambisonics Tools for Max"
+              "title": "index"
             }
           },
           {
@@ -193,8 +193,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fe98a70a95c559b6",
+  "active": "89b7c0cd5901e279",
   "lastOpenFiles": [
+    "content/ICST Ambisonics Plugins/index.md",
+    "content/ICST Ambisonics Plugins/Overview_v3.1/Overview v3.1.md",
+    "static/_index.md",
     "hugo.yaml",
     "content/ICST Ambisonics Plugins Blog /_index.md",
     "content/ICST Ambisonics Plugins Blog /Speakers ICST Labor (DOM).md",
@@ -209,7 +212,6 @@
     "themes/my-new-blog/hugo.toml",
     "themes/my-new-blog/data",
     "themes/my-new-blog/content",
-    "themes/my-new-blog/assets",
     "themes/bilberry-hugo-theme/v4/v4-migration-guide.md",
     "themes/bilberry-hugo-theme/v4/v4-developer-guide.md",
     "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/täst.md",
@@ -234,8 +236,6 @@
     "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/archive.md",
     "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/archive.de.md",
     "themes/bilberry-hugo-theme/v4/exampleSite/content/status/bilberry-theme-released.en.md",
-    "themes/bilberry-hugo-theme/v4/exampleSite/content/status/bilberry-theme-released.de.md",
-    "themes/bilberry-hugo-theme/v4/exampleSite/content/video/kilez-more-leben-und-tod-des-imperialismus.en.md",
     "themes/bilberry-hugo-theme/v4/static/fonts/open-sans-v17-latin-ext_vietnamese_cyrillic-ext_greek-ext-regular.svg",
     "themes/bilberry-hugo-theme/v4/static/fonts/open-sans-v17-latin-ext_vietnamese_cyrillic-ext_greek-ext-italic.svg",
     "themes/bilberry-hugo-theme/v4/static/fonts/open-sans-v17-latin-ext_vietnamese_cyrillic-ext_greek-ext-700italic.svg",

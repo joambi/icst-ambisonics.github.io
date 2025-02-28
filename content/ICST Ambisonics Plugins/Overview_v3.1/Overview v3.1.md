@@ -7,7 +7,7 @@ image: "icst_ambiplugins_overview_v3.0.png"
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
-All of the following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
+The following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
 
 
 ![icst_ambiplugins_overview_v3.0](icst_ambiplugins_overview_v3.0.png)
