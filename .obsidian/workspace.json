@@ -179,6 +179,7 @@
   },
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
+    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What is new in v3.1.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1",
@@ -223,7 +224,6 @@
     "content/ICST Ambisonics Plugins Blog /Overview v3.1.md",
     "themes/my-new-blog/archetypes/default.md",
     "themes/bilberry-hugo-theme/v4/v4-migration-guide.md",
-    "themes/bilberry-hugo-theme/v4/v4-developer-guide.md",
-    "themes/bilberry-hugo-theme/v4/tests/exampleSite/content/article/täst.md"
+    "themes/bilberry-hugo-theme/v4/v4-developer-guide.md"
   ]
 }
