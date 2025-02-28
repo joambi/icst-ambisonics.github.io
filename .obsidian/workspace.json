@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/_index.md",
+                "file": "content/ICST_Ambisonics_Plugins/What is new in v3.1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "What is new in v3.1"
             }
           }
         ]
@@ -183,11 +183,11 @@
   },
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
-    "content/ICST_Ambisonics_Plugins/_index.md",
     "content/posts/NEWS.md",
     "content/posts/_index.md",
+    "content/ICST_Ambisonics_Plugins/_index.md",
     "content/ICST Ambisonics Tools/index.md",
-    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1.md",
+    "content/ICST_Ambisonics_Plugins/What is new in v3.1.md",
     "content/ICST_Ambisonics_Plugins/index.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What is new in v3.1.md",

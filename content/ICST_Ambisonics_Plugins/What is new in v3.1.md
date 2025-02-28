@@ -1,8 +1,8 @@
 ---
 Created at: 2025-02-26
-Last updated at: 2025-02-28
 tags:
   - index
+title: What is new in v3.1
 ---
 
 # What is new in v3.1
@@ -23,6 +23,7 @@ In this version, we have focused on a new multi-decoder and implemented the late
 		* Decoding
 		* Filter
 		* Options
+		
 		![[Speaker_setting_managment.gif]]
 
 * Multi-Decoder mode
@@ -32,7 +33,9 @@ In this version, we have focused on a new multi-decoder and implemented the late
 			* InPhase
 			* Max-rE
 			* Manual
-		* Ambisonics order: 1st(4ch) to 7th (64ch)![[./_resources/What_is_new_in_v3.1.resources/decoder_weights.gif]]
+		* Ambisonics order: 1st(4ch) to 7th (64ch)!
+
+		![[decoder_weights.gif]]
 
 * Multi-Decoder is a new version and allows up to 4 decoder units to be operated in parallel.
 	* Activate Multi-Decoder mode
@@ -54,17 +57,16 @@ In this version, we have focused on a new multi-decoder and implemented the late
 			volume (+/- dB)
 			
 			mute
-			![[./_resources/What_is_new_in_v3.1.resources/MultiDecoder.gif]]
-
-	bidirektional mute & solo (shift + ctrl & "M" or "S"
+			
+			bidirektional mute & solo (shift + ctrl & "M" or "S"
 	
-
+		![[MultiDecoder.gif]]
 * Encoder:
 	* Bugfixes
 
 * OSC:
 		Group manipulation with absolute angles
-		![[./_resources/What_is_new_in_v3.1.resources/osc-decoder-euler-absolute.gif]]
+		![[osc-decoder-euler-absolute.gif]]
 
 ### 
 
