@@ -1,27 +1,19 @@
 ---
-title: "ICST Ambisonics Tools"
-description: "Tools for Ambisonics audio processing"
-date: "2025-02-27"
-image: "icst_ambiplugins_overview_v3.0.png"
+title: ICST Ambisonics Plugins
+description: What is new in v3.1
+date: 2025-02-27
+image: Overview_v3.1.png
+tags:
+  - index
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
-The following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
+---
+# What is new in v3.1
 
+![Overview_v3.1](Overview_v3.1.png)
 
-![icst_ambiplugins_overview_v3.0](icst_ambiplugins_overview_v3.0.png)
+### New in the ICST Decoder:
 
-
-The ICST Ambisonics Plugins consisting of the Plugin Formats:
-
--   VST3
--   Components (AU)
--   LV2 (LV2 version does currently NOT support automation parameters)
-
-Find individual pages here:
-
--   [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder)
--   [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
-
-**Download:** [ICST Ambisonics Plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+- Multi-Decoder
