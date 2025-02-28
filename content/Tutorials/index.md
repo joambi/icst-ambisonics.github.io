@@ -11,7 +11,7 @@ tags:
   - "index"
 ---
 
-# Tutorials:
+# Content:
 
 -   Installation
 
