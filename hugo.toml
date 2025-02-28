@@ -19,7 +19,7 @@ favicon = "favicons/"
 [[params.socialIcons]]
 icon = "fab fa-github"
 title = "GitHub"
-url = "https://github.com/jschuett"
+url = "https://github.com/joambi"
 
 ## Menu items
 [menu]
@@ -50,20 +50,20 @@ url = "https://github.com/jschuett"
   
   [[menu.main]]
   name = "Tutorials"
-  weight = 400
+  weight = 500
   identifier = "Tutorials"
   url = "/Tutorials/"
   
 
   [[menu.main]]
   name = "Links"
-  weight = 500
+  weight = 600
   identifier = "Links"
   url = "/Links/"
 
   [[menu.main]]
   name = "About"
-  weight = 600
+  weight = 700
   url = "/about/"
 
   [[menu.footer]]
