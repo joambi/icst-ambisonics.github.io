@@ -5,8 +5,20 @@ aliases:
   - "blog"
   - "showcase"
   - "docs"
-title: "Posts"
+title: "Tutorials"
 author: "Johannes Schuett"
 tags:
   - "index"
 ---
+
+# Tutorials:
+
+-   Installation
+
+-   Automation
+
+-   Editing
+
+-   Mixing Bformat
+
+-   OSC
