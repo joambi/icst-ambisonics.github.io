@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/HOME/index.md",
+                "file": "content/About/abaut.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "abaut"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
+    "content/HOME/index.md",
     "content/Tutorials/Tutorial_Content.md",
     "content/Tutorials/Tutorials_Content.md",
     "content/Links/Links.md",
@@ -197,7 +198,6 @@
     "content/ICST Ambisonics Plugins/index.md",
     "content/posts/_index.md",
     "content/posts/NEWS.md",
-    "content/HOME/index.md",
     "static/_index.md",
     "hugo.yaml",
     "content/ICST Ambisonics Plugins Blog /_index.md",
