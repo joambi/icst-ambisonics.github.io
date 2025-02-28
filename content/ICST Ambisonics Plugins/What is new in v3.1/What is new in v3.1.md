@@ -10,9 +10,9 @@ tags:
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# What is new in v3.1
+# The ICST Ambisonics Plugins v3.1
 
-![Overview_v3.1](Overview_v3.1.png)
+![[content/ICST Ambisonics Plugins/What is new in v3.1/Overview_v3.1.png]]
 
 ### New in the ICST Decoder:
 
