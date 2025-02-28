@@ -1,11 +1,8 @@
-
 ---
-author: Johannes Schuett
+author: Johannes Schuett 
 tags:
-- "index"
+  - "index"
 ---
 
-
--   Overview_v3.1
-
--   Speakers ICST Labor (DOM).md
+- Overview_v3.1
+- Speakers ICST Labor (DOM).md
