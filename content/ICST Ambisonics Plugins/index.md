@@ -3,7 +3,6 @@ date: 2025-02-02T04:14:54-08:00
 draft: false
 params:
   author: Johannes Schuett
-title: What is new in v3.1
 weight: 10
 tags:
   - -index
