@@ -5,14 +5,16 @@ params:
   author: Johannes Schuett
 title: Links
 weight: 10
+tags:
+  - index
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
 
-- [ambisonics.ch](https://ambisonics.ch/)
-- [The ICST Ambisonics Plugins](https://ambisonics.ch/page/icst-ambisonics-plugins)
+- [The ICST Ambisonics Tools](https://joambi.github.io/icst-ambisonics.github.io/icst-ambisonics-tools/)
+- [The ICST Ambisonics Plugins](https://joambi.github.io/icst-ambisonics.github.io/home/)
 - [Specification:](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - [Downloads:](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 - [Video Tutorials](https://www.youtube.com/@ICSTAmbisonics)
