@@ -13,6 +13,8 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ------------------------------------------------------------------------
 
+[Tutorial 1](../Tutorial1/Tutorial_1)
+
 Good practice tutorials coming soon.
 
 ©2025 the ICST
