@@ -6,5 +6,5 @@ tags:
 
 ### Test
 
-![Overview3.1](../AmbiPlugin_logo.gif)
+![Overview3.1](../ambiplugin_logo.gif)
 
