@@ -6,13 +6,13 @@ params:
 title: Tutorials
 weight: 10
 tags:
-  - index
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ------------------------------------------------------------------------
 
+# tutorials: 
 [Tutorial 1](tutorial_1)
 
 Good practice tutorials coming soon.
