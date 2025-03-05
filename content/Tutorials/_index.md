@@ -16,8 +16,9 @@ Good practice tutorials.
 
 # Tutorials: 
 
-[01_Installation](01_Installation)
-[02_Overview](02_Overview)
+[01_installation](01_installation)
+
+[02_overview](02_overview)
 
 
 
