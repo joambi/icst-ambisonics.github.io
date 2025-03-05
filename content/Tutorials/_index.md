@@ -15,9 +15,9 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 Good practice tutorials.
 
 # Tutorials: 
-- [01_Installation](01_Installation)
 
-- [02_Overview](02_Overview)
+[01_Installation](01_Installation)
+[02_Overview](02_Overview)
 
 
 
