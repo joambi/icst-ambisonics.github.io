@@ -5,8 +5,7 @@ params:
   author: Johannes Schuett
 title: Links
 weight: 10
-tags:
-  - index
+tags: []
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts

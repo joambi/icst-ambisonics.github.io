@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/index.md",
+                "file": "content/Links/Links.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Links"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
+    "content/ICST Ambisonics Plugins/index.md",
     "content/ICST Ambisonics Plugins/Speaker_setting_managment.gif",
     "content/ICST Ambisonics Plugins/osc-decoder-euler-absolute.gif",
     "content/ICST Ambisonics Plugins/MultiDecoder.gif",
@@ -195,7 +196,6 @@
     "content/posts/_index.md",
     "content/HOME/index.md",
     "content/ICST_Ambisonics_Plugins/index.md",
-    "content/ICST Ambisonics Plugins/index.md",
     "content/ICST Ambisonics Plugins",
     "content/ICST Ambisonics Tools/index.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md",
@@ -210,7 +210,6 @@
     "content/ICST Ambisonics Plugins/What is new in v3.1_alt/Overview_v3.1.png",
     "content/ICST Ambisonics Plugins/What is new in v3.1_alt",
     "content/ICST Ambisonics Plugins/What is new in v3.1/_resources/What_is_new_in_v3.1.resources/osc-decoder-euler-absolute.gif",
-    "content/ICST Ambisonics Plugins/What is new in v3.1/_resources/What_is_new_in_v3.1.resources/decoder_weights.gif",
     "content/ICST Ambisonics Plugins/What is new in v3.1/_resources/What_is_new_in_v3.1.resources",
     "content/ICST Ambisonics Plugins/What is new in v3.1/_resources",
     "static/_resources",
