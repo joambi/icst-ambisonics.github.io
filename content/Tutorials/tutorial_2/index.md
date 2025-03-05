@@ -5,7 +5,6 @@ params:
   author: Johannes Schuett
 weight: 10
 tags:
-  - -index
 ---
 
 
@@ -37,7 +36,7 @@ Quickstart with the ICST_AmbiPlugins_MultiEncoder.RPP
 2. Open “ICST_AmbiPlugins_MultiEncoder.RPP” via the Reaper menu.
 3. Save the template under a new <name>
 
-
+![open_multiencoder_temp](open_multiencoder_temp.gif)
 
 
 
