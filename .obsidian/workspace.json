@@ -183,7 +183,9 @@
   },
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
+    "content/posts/_index.md",
     "content/Tutorials/01_installation/index.md",
+    "content/posts/index.md",
     "installer.gif",
     "01_Installation.md",
     "02_Overview.md",
@@ -209,8 +211,6 @@
     "content/Links/index.md",
     "content/ICST Ambisonics Plugins/index.md",
     "content/Links/Links.md",
-    "content/posts/index.md",
-    "content/posts/_index.md",
     "content/ICST_Ambisonics_Plugins/index.md",
     "content/ICST Ambisonics Plugins",
     "content/ICST Ambisonics Tools/index.md",

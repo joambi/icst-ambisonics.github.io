@@ -4,7 +4,7 @@ draft: false
 params:
   author: Johannes Schuett
 weight: 10
-tags:
+tags:post
 ---
 
 
