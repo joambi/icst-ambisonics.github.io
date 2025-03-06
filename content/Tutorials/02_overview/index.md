@@ -16,31 +16,49 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 # 02_Overview
 
-### Overview of the ICST AmbisonicsPlugins
+# Overview
+The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and several additional spatial audio production tools. The following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
 
-What is installed by 'ICST_AmbiPlugins_macOS_3.1.0.pkg'?
+![Overview_v3.1](Overview_v3.1.png)
 
-- /Library/Audio/Plugins/VST3
-- /Library/Audio/Plugins/Components
-- /Library/Audio/Plugins/LV2 (experimental)
-- Users/Shared/AmbiPluginsTemp/ProjectTemplates
-  - ICST_AmbiPlugins_MonoEncoder.RPP
-  - ICST_AmbiPlugins_MultiEncoder.RPP
-- Users/Shared/AmbiPluginsTemplatesTemp
-  - TrackTemplates
-    - ICST_AmbiPlugins
-    - ICST_AmbiPlugins_3rdParty
+The ICST Ambisonics plugins consist of the following plugin formats:
+-   VST3 / Components (AU) /LV2 (LV2 version does NOT support automation parameters at this time)
 
-### Quickstart with the ICST_AmbiPlugins_MultiEncoder.RPP
+Find individual pages here:
+[ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder
+[ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
+
+**Developer - team**:
+
+-   Christian Schweizer/Johannes Schuett/Martin Neukom
+-   Video Editor: Axel Kolb
+-   2025 the ICST
+
+**Free download here:**
+
+-   Binary Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
+-   Documentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
+-   Tutorials, Blog: <https://joambi.github.io/icst-ambisonics.github.io/home/>
+-   Youtube: [https://www.youtube.com/\@ICSTAmbisonics](https://www.youtube.com/@ICSTAmbisonics)
+
+Issues: LV2 is very experimental
+
+**Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>**
+
+
+----
+
+## Quickstart with the ICST_AmbiPlugins_MultiEncoder.RPP
 1. Open the Reaper DAW
 2. Open “ICST_AmbiPlugins_MultiEncoder.RPP” via the Reaper menu.
 3. Save the template under a new <name>
 
 ![open_multiencoder_temp](open_multiencoder_temp.gif)
 
+---
 
 
-### Open the TrackTemplates
+# Open the TrackTemplates
 
 1. Right-click in the empty Reaper track field
 2. Select 'Insert track from template
