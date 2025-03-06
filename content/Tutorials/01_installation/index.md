@@ -4,7 +4,7 @@ draft: false
 params:
   author: Johannes Schuett
 weight: 10
-tags: []
+tags: -index
 ---
 
 
@@ -14,7 +14,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 # 01_Installation
 
-### Install help 
+### Install the ICST Ambisonics Plugins (OSX)
 
 ![installer](installer.gif)
 
