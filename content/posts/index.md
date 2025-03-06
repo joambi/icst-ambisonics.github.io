@@ -1,5 +1,4 @@
 ---
-title: "NEW"
 date: 2025-02-27
 draft: false
 ---
