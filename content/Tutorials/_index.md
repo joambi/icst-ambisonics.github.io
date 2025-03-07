@@ -18,6 +18,10 @@ Good practice tutorials.
 
 [01_overview](01_overview)
 [02_installation](02_installation)
+[[index_tut_temp]]
+04_decoders
+05_MonoEncoder
+06_MultiEncoder
 
 
 
