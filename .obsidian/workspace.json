@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/02_installation/2_installation(win)/index.md",
+                "file": "content/Tutorials/02_installation/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -181,13 +181,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "43edabad0f07ac01",
+  "active": "1597bac92f6118b8",
   "lastOpenFiles": [
-    "content/Tutorials/02_installation/1_installtion(osx)/index.md",
+    "content/Tutorials/02_installation/_index.md",
+    "content/Tutorials/02_installation/index.md",
     "content/Tutorials/02_installation/2_installation(win)/index.md",
     "content/Tutorials/_index.md",
+    "content/Tutorials/01_overview/index.md",
     "templates/index_tut_temp.md",
-    "content/Tutorials/02_installation/_index.md",
     "content/Tutorials/02_installation/2_installation(win)",
     "content/Tutorials/02_installation/1_installtion(osx)",
     "templates",
@@ -195,12 +196,11 @@
     "ICST Ambisonics Site Struktur.canvas",
     "README.md",
     "content/Tutorials/01_overview/open_multiencoder_temp.gif",
-    "content/Tutorials/01_overview/index.md",
     "01_Installation.md",
     "02_Overview.md",
     "static/images/installer.gif",
     "content/posts/index.md",
-    "content/Tutorials/02_installation/1_installtion(osx)/installer.gif",
+    "content/Tutorials/02_installation/installer.gif",
     "content/HOME/index.md",
     "content/posts/_index.md",
     "static/images/Overview_v3.1.png",
