@@ -17,7 +17,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ### Install the ICST Ambisonics Plugins (OSX)
 
-![installer](installer.gif)
+![installer](static/images/installer.gif)
 
 ### What is installed by 'ICST_AmbiPlugins_macOS':
 
