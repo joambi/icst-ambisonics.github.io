@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/01_overview/index.md",
+                "file": "content/Tutorials/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Tutorials/01_overview/index.md",
+                "file": "content/Tutorials/_index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of _index"
             }
           },
           {
@@ -183,6 +183,11 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/posts/_index.md",
+    "content/posts/NOTES",
+    "content/posts/NEW",
+    "content/posts/index.md",
+    "content/Tutorials/01_overview/index.md",
     "content/Tutorials/02_installation/index.md",
     "content/Tutorials/03_how_it_works/index.md",
     "content/Tutorials/03_how_it_works/02_workflow.png",
@@ -190,7 +195,6 @@
     "content/Tutorials/03_how_it_works/03_reaper_workflow.png",
     "Bildschirmfoto 2021-01-19 um 15.56.04.png",
     "content/Tutorials/_index.md",
-    "content/Tutorials/01_overview/index.md",
     "content/Tutorials/03_how_it_works/open_multiencoder_temp.gif",
     "content/Tutorials/01_overview/Overview_v3.1.png",
     "content/Tutorials/03_how_it_works/tracktemplate.png",
@@ -207,8 +211,6 @@
     "Evernote/ICST AmbiPlugins Installation for Reaper (Windows 64-bit)/ICST AmbiPlugins Installation for Reaper (Windows 64-bit).md",
     "Evernote/Best practices with ICST Ambisonics plugins/Best practices with ICST Ambisonics plugins.md",
     "Evernote/ICST AmbiPlugins Installation for Reaper (Windows 64-bit)/_resources/ICST_AmbiPlugins_Installation_for_Reaper_(Windows_64-bit).resources",
-    "Evernote/ICST AmbiPlugins Installation for Reaper (Windows 64-bit)/_resources",
-    "Evernote/ICST AmbiPlugins Installation for Reaper (Windows 64-bit)",
     "content/Tutorials/02_installation/_index.md",
     "content/Tutorials/02_installation/2_installation(win)/index.md",
     "templates/index_tut_temp.md",
@@ -216,9 +218,7 @@
     "README.md",
     "01_Installation.md",
     "02_Overview.md",
-    "content/posts/index.md",
     "content/HOME/index.md",
-    "content/posts/_index.md",
     "content/About/index.md",
     "content/Links/index.md",
     "content/ICST Ambisonics Plugins/index.md",

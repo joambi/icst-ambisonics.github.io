@@ -6,8 +6,7 @@ params:
 title: NEW
 weight: 10
 image: 
-tags:
-  - posts
+tags: []
 ---
 ---
 
