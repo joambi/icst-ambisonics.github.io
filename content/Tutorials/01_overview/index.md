@@ -19,17 +19,12 @@ The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and severa
 ![Overview_v3.1](Overview_v3.1.png)
 
 The ICST Ambisonics plugins consist of the following plugin formats:
--   VST3 / Components (AU) /LV2 (LV2 version does NOT support automation parameters at this time)
+-   VST3 / Components (AU) /LV2 
+    (LV2 version does NOT support automation parameters at this time)
 
 Find individual pages here:
 [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder
 [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
-
-**Developer - team**:
-
--   Christian Schweizer/Johannes Schuett/Martin Neukom
--   Video Editor: Axel Kolb
--   2025 the ICST
 
 **Free download here:**
 
@@ -42,5 +37,11 @@ Issues: LV2 is very experimental
 
 **Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>**
 
+**Developer - team**:
+
+-   Christian Schweizer/Johannes Schuett/Martin Neukom
+-   Video Editor: Axel Kolb
+
+©2025 the ICST
 
 ----
