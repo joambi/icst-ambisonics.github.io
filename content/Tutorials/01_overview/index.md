@@ -51,12 +51,11 @@ Issues: LV2 is very experimental
 2. Open “ICST_AmbiPlugins_MultiEncoder.RPP” via the Reaper menu.
 3. Save the template under a new <name>
 
-![open_multiencoder_temp](content/Tutorials/01_overview/open_multiencoder_temp.gif)
+![open_multiencoder_temp](open_multiencoder_temp.gif)
 
----
+----
 
-
-# Open the TrackTemplates
+## Open the TrackTemplates
 
 1. Right-click in the empty Reaper track field
 2. Select 'Insert track from template
