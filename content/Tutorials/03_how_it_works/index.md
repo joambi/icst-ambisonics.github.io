@@ -15,8 +15,8 @@ tags:
 
 ### Open the TrackTemplates
 
-	1. Right-click in the empty Reaper track field
-	2. Select 'Insert track from template
-	3. Select the desired 'TrackTemplate'
+1. Right-click in the empty Reaper track field
+2. Select 'Insert track from template
+3. Select the desired 'TrackTemplate'
 
-	![tracktemplate.png](tracktemplate.png)
+![tracktemplate.png](tracktemplate.png)

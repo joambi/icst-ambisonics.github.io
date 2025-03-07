@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/_index.md",
+                "file": "content/Tutorials/03_how_it_works/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/Tutorials/_index.md",
     "content/Tutorials/03_how_it_works/index.md",
     "content/Tutorials/01_overview/index.md",
     "content/Tutorials/03_how_it_works/open_multiencoder_temp.gif",
@@ -210,7 +211,6 @@
     "Evernote/ICST AmbiPlugins Installation for Reaper (Windows 64-bit)",
     "content/Tutorials/02_installation/_index.md",
     "content/Tutorials/02_installation/2_installation(win)/index.md",
-    "content/Tutorials/_index.md",
     "templates/index_tut_temp.md",
     "ICST Ambisonics Site Struktur.canvas",
     "README.md",
