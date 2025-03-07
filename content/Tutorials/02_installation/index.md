@@ -40,7 +40,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
   - TrackTemplates
     - ICST_AmbiPlugins
     - ICST_AmbiPlugins_3rdParty
-    - 
+
 INFO: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
 
 > [!VIDEO]
