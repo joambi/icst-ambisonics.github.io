@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/HOME/index.md",
+                "file": "content/Tutorials/02_installation/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/HOME/index.md",
+                "file": "content/Tutorials/02_installation/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,6 +183,7 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/HOME/index.md",
     "content/Tutorials/03_how_it_works/index.md",
     "content/Tutorials/03_how_it_works/ec50767771367e861156b3deedaba79e.png",
     "content/Tutorials/03_how_it_works/index 1.md",
@@ -205,7 +206,6 @@
     "content/posts/NEW/index.md",
     "Evernote/ICST Ambisonics Plugins in Reaper (step by step)/ICST Ambisonics Plugins in Reaper (step by step).md",
     "content/posts/NOTES/index.md",
-    "content/HOME/index.md",
     "content/Tutorials/03_how_it_works/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources",
     "content/Tutorials/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources",
     "content/Tutorials/Create a workflow with ICST Ambisonics Plugins in Reaper",
