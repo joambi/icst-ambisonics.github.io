@@ -54,5 +54,12 @@ Make sure you create the correct audio routing from channel track to channel tra
 
 ----
 
-## 03 Step by Step 
+## 03 step by step setup
 
+This tutorial assumes that you have already installed Reaper, the ICST Ambisonics plugins, and all other recommended third-party plugins!
+
+### So let's create this template for Reaper together step by step.
+
+We begin from the top down:
+
+1. Open a empty Reaper session

@@ -20,4 +20,4 @@ HOME of the ICST Ambisonics
 	
 - The Ambisonics Tools (Max 8.0)
 
-![ICST_Ambi-Tools_Max](ICST_Ambi-Tools_Max.png)
+  ![ICST_Ambi-Tools_Max](ICST_Ambi-Tools_Max.png)
