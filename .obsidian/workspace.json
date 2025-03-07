@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/NOTES/index.md",
+                "file": "content/HOME/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/NOTES/index.md",
+                "file": "content/HOME/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,13 +183,15 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/posts/NEW/index.md",
-    "content/Tutorials/01_overview/index.md",
-    "content/posts/index.md",
-    "content/posts/NOTES/index.md",
     "Evernote/ICST Ambisonics Plugins/ICST Ambisonics Plugins.md",
-    "content/Tutorials/_index.md",
+    "Evernote/Best practices with ICST Ambisonics plugins/Best practices with ICST Ambisonics plugins.md",
+    "Evernote/ICST Ambisonics Plugins/_resources/ICST_Ambisonics_Plugins.resources/Bildschirmfoto 2022-12-09 um 11.45.28.png",
+    "content/posts/NOTES/index.md",
+    "content/posts/index.md",
+    "content/posts/NEW/index.md",
     "content/posts/_index.md",
+    "content/Tutorials/01_overview/index.md",
+    "content/Tutorials/_index.md",
     "content/posts/NOTES",
     "content/posts/NEW",
     "content/Tutorials/02_installation/index.md",
@@ -203,7 +205,6 @@
     "content/Tutorials/03_how_it_works/tracktemplate.png",
     "content/Tutorials/02_installation/01_win.png",
     "content/Tutorials/02_installation/b423a22c-122a-989a-70b1-1cfeffd12c4d.png",
-    "content/Tutorials/02_installation/07_win.png",
     "content/Tutorials/02_installation/70b27b89-403d-2fc2-e5e5-10b0b7e29329.png.sb-74d5163e-aFs4MN",
     "content/Tutorials/02_installation/0f6150aa-72d5-3fef-b1a5-b9b5a91fa910.png.sb-74d5163e-wkS5pE",
     "content/Tutorials/02_installation/61162f76-55c0-9331-36f4-6aafe078f0a3.png.sb-74d5163e-sUaGzE",
@@ -212,7 +213,6 @@
     "content/Tutorials/02_installation/45e9fbff-7906-e5b3-b687-1bb3692626de.png.sb-74d5163e-eKLGVo",
     "content/Tutorials/02_installation/5bfb790c-a319-a78a-6c52-0979b4c4a0f0.png.sb-74d5163e-bZcY5C",
     "Evernote/ICST AmbiPlugins Installation for Reaper (Windows 64-bit)/ICST AmbiPlugins Installation for Reaper (Windows 64-bit).md",
-    "Evernote/Best practices with ICST Ambisonics plugins/Best practices with ICST Ambisonics plugins.md",
     "Evernote/ICST AmbiPlugins Installation for Reaper (Windows 64-bit)/_resources/ICST_AmbiPlugins_Installation_for_Reaper_(Windows_64-bit).resources",
     "content/Tutorials/02_installation/_index.md",
     "content/Tutorials/02_installation/2_installation(win)/index.md",
@@ -228,7 +228,6 @@
     "content/Links/Links.md",
     "content/ICST_Ambisonics_Plugins/index.md",
     "content/ICST Ambisonics Tools/index.md",
-    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md",
-    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What is new in v3.1.md"
+    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md"
   ]
 }
