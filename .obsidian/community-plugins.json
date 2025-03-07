@@ -1,5 +1,6 @@
 [
   "obsidian-importer",
   "github-sync",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-local-images"
 ]

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/01_overview/index.md",
+                "file": "content/Tutorials/03_how_it_works/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,10 +183,11 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/Tutorials/01_overview/index.md",
+    "content/Tutorials/03_how_it_works/index.md",
     "content/Tutorials/01_overview/open_multiencoder_temp.gif",
     "content/Tutorials/01_overview/Overview_v3.1.png",
     "content/Tutorials/01_overview/tracktemplate.png",
-    "content/Tutorials/01_overview/index.md",
     "content/Tutorials/02_installation/index.md",
     "content/Tutorials/02_installation/01_win.png",
     "content/Tutorials/02_installation/b423a22c-122a-989a-70b1-1cfeffd12c4d.png",
@@ -195,7 +196,6 @@
     "content/Tutorials/02_installation/05_win.png",
     "content/Tutorials/02_installation/04_win.png",
     "content/Tutorials/02_installation/03_win.png",
-    "content/Tutorials/02_installation/02_win.png",
     "content/Tutorials/02_installation/70b27b89-403d-2fc2-e5e5-10b0b7e29329.png.sb-74d5163e-aFs4MN",
     "content/Tutorials/02_installation/0f6150aa-72d5-3fef-b1a5-b9b5a91fa910.png.sb-74d5163e-wkS5pE",
     "content/Tutorials/02_installation/61162f76-55c0-9331-36f4-6aafe078f0a3.png.sb-74d5163e-sUaGzE",
