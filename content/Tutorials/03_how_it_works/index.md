@@ -7,7 +7,7 @@ tags:
 2. Open “ICST_AmbiPlugins_MultiEncoder.RPP” via the Reaper menu.
 3. Save the template under a new <name>
 
-![open_multiencoder_temp](open_multiencoder_temp.gif)
+![open_multiencoder_temp](public/tutorials/02_overview/open_multiencoder_temp.gif)
 
 ----
 
