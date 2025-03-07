@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/About/abaut.md",
+                "file": "content/Tutorials/03_how_it_works/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of abaut"
+              "title": "Outline of index"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -183,8 +183,12 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/Tutorials/_index.md",
+    "content/Tutorials/03_how_it_works/02_workflow.png",
     "content/Tutorials/03_how_it_works/index.md",
+    "content/Tutorials/03_how_it_works/01_easy_workflow.png",
+    "content/Tutorials/03_how_it_works/03_reaper_workflow.png",
+    "Bildschirmfoto 2021-01-19 um 15.56.04.png",
+    "content/Tutorials/_index.md",
     "content/Tutorials/01_overview/index.md",
     "content/Tutorials/03_how_it_works/open_multiencoder_temp.gif",
     "content/Tutorials/01_overview/Overview_v3.1.png",
@@ -193,10 +197,6 @@
     "content/Tutorials/02_installation/01_win.png",
     "content/Tutorials/02_installation/b423a22c-122a-989a-70b1-1cfeffd12c4d.png",
     "content/Tutorials/02_installation/07_win.png",
-    "content/Tutorials/02_installation/06_win.png",
-    "content/Tutorials/02_installation/05_win.png",
-    "content/Tutorials/02_installation/04_win.png",
-    "content/Tutorials/02_installation/03_win.png",
     "content/Tutorials/02_installation/70b27b89-403d-2fc2-e5e5-10b0b7e29329.png.sb-74d5163e-aFs4MN",
     "content/Tutorials/02_installation/0f6150aa-72d5-3fef-b1a5-b9b5a91fa910.png.sb-74d5163e-wkS5pE",
     "content/Tutorials/02_installation/61162f76-55c0-9331-36f4-6aafe078f0a3.png.sb-74d5163e-sUaGzE",
@@ -228,7 +228,6 @@
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What is new in v3.1.md",
     "content/ICST Ambisonics Plugins/What is new in v3.1/What is new in v3.1.md",
-    "content/ICST_Ambisonics_Plugins/What is new in v3.1/What is new in v3.1.md",
-    "content/ICST Ambisonics Plugins/What is new in v3.1_alt/What is new in v3.1.md"
+    "content/ICST_Ambisonics_Plugins/What is new in v3.1/What is new in v3.1.md"
   ]
 }
