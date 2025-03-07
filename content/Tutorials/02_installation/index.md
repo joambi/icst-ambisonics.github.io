@@ -13,7 +13,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 * * *
 
-# 01_Installation
+# 02_Installation
 
 ### Install the ICST Ambisonics Plugins (OSX)
 

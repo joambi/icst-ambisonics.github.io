@@ -14,12 +14,12 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 
 
-# 02_Overview
+# 01_Overview
 
 # Overview
 The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and several additional spatial audio production tools. The following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
 
-![Overview_v3.1](Overview_v3.1.png)
+![Overview_v3.1](content/Tutorials/01_overview/Overview_v3.1.png)
 
 The ICST Ambisonics plugins consist of the following plugin formats:
 -   VST3 / Components (AU) /LV2 (LV2 version does NOT support automation parameters at this time)
@@ -53,7 +53,7 @@ Issues: LV2 is very experimental
 2. Open “ICST_AmbiPlugins_MultiEncoder.RPP” via the Reaper menu.
 3. Save the template under a new <name>
 
-![open_multiencoder_temp](open_multiencoder_temp.gif)
+![open_multiencoder_temp](content/Tutorials/01_overview/open_multiencoder_temp.gif)
 
 ---
 
