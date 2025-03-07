@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/NEW/index.md",
+                "file": "content/posts/NOTES/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/NEW/index.md",
+                "file": "content/posts/NOTES/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,8 +183,8 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/Tutorials/01_overview/index.md",
     "content/posts/NEW/index.md",
+    "content/Tutorials/01_overview/index.md",
     "content/posts/index.md",
     "content/posts/NOTES/index.md",
     "Evernote/ICST Ambisonics Plugins/ICST Ambisonics Plugins.md",
