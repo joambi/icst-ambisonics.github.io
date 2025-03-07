@@ -3,7 +3,7 @@ date: 2025-02-02T04:14:54-08:00
 draft: false
 params:
   author: Johannes Schuett
-title: Tutorials
+title: Tutorials that demonstrate best practices
 weight: 10
 tags:
 ---
@@ -19,9 +19,7 @@ Good practice tutorials.
 [01_overview](01_overview)
 [02_installation](02_installation)
 [03_how_it_works](03_how_it_works)
-04_decoders
-05_MonoEncoder
-06_MultiEncoder
+
 
 
 

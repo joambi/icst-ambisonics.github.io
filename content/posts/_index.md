@@ -10,7 +10,7 @@ author: "Johannes Schuett"
 tags:
   - "index"
 ---
-[index](index)
+[index](content/posts/index.md)
 [new](new)
 [notes](notes)
 

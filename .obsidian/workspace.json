@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/_index.md",
+                "file": "content/posts/NEW/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Tutorials/_index.md",
+                "file": "content/posts/NEW/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of _index"
+              "title": "Outline of index"
             }
           },
           {
@@ -183,18 +183,21 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/Tutorials/01_overview/index.md",
+    "content/posts/NEW/index.md",
+    "content/posts/index.md",
+    "content/posts/NOTES/index.md",
+    "Evernote/ICST Ambisonics Plugins/ICST Ambisonics Plugins.md",
+    "content/Tutorials/_index.md",
     "content/posts/_index.md",
     "content/posts/NOTES",
     "content/posts/NEW",
-    "content/posts/index.md",
-    "content/Tutorials/01_overview/index.md",
     "content/Tutorials/02_installation/index.md",
     "content/Tutorials/03_how_it_works/index.md",
     "content/Tutorials/03_how_it_works/02_workflow.png",
     "content/Tutorials/03_how_it_works/01_easy_workflow.png",
     "content/Tutorials/03_how_it_works/03_reaper_workflow.png",
     "Bildschirmfoto 2021-01-19 um 15.56.04.png",
-    "content/Tutorials/_index.md",
     "content/Tutorials/03_how_it_works/open_multiencoder_temp.gif",
     "content/Tutorials/01_overview/Overview_v3.1.png",
     "content/Tutorials/03_how_it_works/tracktemplate.png",
@@ -226,8 +229,6 @@
     "content/ICST_Ambisonics_Plugins/index.md",
     "content/ICST Ambisonics Tools/index.md",
     "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What_is_new_in_v3.1.md",
-    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What is new in v3.1.md",
-    "content/ICST Ambisonics Plugins/What is new in v3.1/What is new in v3.1.md",
-    "content/ICST_Ambisonics_Plugins/What is new in v3.1/What is new in v3.1.md"
+    "content/ICST_Ambisonics_Plugins/What_is_new_in_v3.1/What is new in v3.1.md"
   ]
 }
