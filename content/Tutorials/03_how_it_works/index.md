@@ -1,5 +1,6 @@
 ---
-tags:
+tags: 
+title: 03_how_it_works
 ---
 ----
 The ICST Ambisonics plugins are designed for an intuitive and easy-to-use workflow. 
