@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/03_how_it_works/index.md",
+                "file": "content/Tutorials/01_overview/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Tutorials/03_how_it_works/index.md",
+                "file": "content/Tutorials/01_overview/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,8 +183,9 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/Tutorials/03_how_it_works/02_workflow.png",
+    "content/Tutorials/02_installation/index.md",
     "content/Tutorials/03_how_it_works/index.md",
+    "content/Tutorials/03_how_it_works/02_workflow.png",
     "content/Tutorials/03_how_it_works/01_easy_workflow.png",
     "content/Tutorials/03_how_it_works/03_reaper_workflow.png",
     "Bildschirmfoto 2021-01-19 um 15.56.04.png",
@@ -193,7 +194,6 @@
     "content/Tutorials/03_how_it_works/open_multiencoder_temp.gif",
     "content/Tutorials/01_overview/Overview_v3.1.png",
     "content/Tutorials/03_how_it_works/tracktemplate.png",
-    "content/Tutorials/02_installation/index.md",
     "content/Tutorials/02_installation/01_win.png",
     "content/Tutorials/02_installation/b423a22c-122a-989a-70b1-1cfeffd12c4d.png",
     "content/Tutorials/02_installation/07_win.png",

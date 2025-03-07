@@ -2,7 +2,10 @@
 tags: 
 title: 03_how_it_works
 ---
+Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+
 ----
+
 The ICST Ambisonics plugins are designed for an intuitive and easy-to-use workflow. 
 In this tutorial, we will show you three “how it works” workflows.
 
@@ -24,7 +27,7 @@ In the DAW Reaper, it looks like this:
 - Decoder
 - Bformat master
 - Bformat (ambiX) player
-- MultiEncoder with 16-channel mono source routing
+- MultiEncoder with 16-channel mono source as children tracks.
 Of couse your ar free to create your own workflow (see in workflow  '03_step_by_step')
 
 ----
