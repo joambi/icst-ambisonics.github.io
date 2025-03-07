@@ -5,7 +5,7 @@ params:
   author: Johannes Schuett
 title: NEW
 weight: 10
-image: Overview_v3.1.png
+image: 
 tags:
   - posts
 ---
