@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/02_installation/_index.md",
+                "file": "content/Tutorials/02_installation/2_installation(win)/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -183,12 +183,13 @@
   },
   "active": "43edabad0f07ac01",
   "lastOpenFiles": [
-    "content/Tutorials/_index.md",
-    "content/Tutorials/02_installation/_index.md",
     "content/Tutorials/02_installation/1_installtion(osx)/index.md",
+    "content/Tutorials/02_installation/2_installation(win)/index.md",
+    "content/Tutorials/_index.md",
+    "templates/index_tut_temp.md",
+    "content/Tutorials/02_installation/_index.md",
     "content/Tutorials/02_installation/2_installation(win)",
     "content/Tutorials/02_installation/1_installtion(osx)",
-    "templates/index_tut_temp.md",
     "templates",
     "content/Tutorials/03_how_it_works",
     "ICST Ambisonics Site Struktur.canvas",
