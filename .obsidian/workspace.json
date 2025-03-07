@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/01_installation/index.md",
+                "file": "content/posts/index.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "index"
@@ -183,20 +183,21 @@
   },
   "active": "cbc19e11f2f5ace3",
   "lastOpenFiles": [
-    "content/posts/NEW.md",
+    "content/Tutorials/02_overview/open_multiencoder_temp.gif",
+    "content/Tutorials/02_overview/index.md",
+    "content/Tutorials/_index.md",
+    "content/Tutorials/01_installation/index.md",
+    "content/Tutorials/01_installation/installer.gif",
+    "content/posts/index.md",
     "content/HOME/index.md",
     "content/posts/_index.md",
-    "content/Tutorials/01_installation/index.md",
     "installer.gif",
     "01_Installation.md",
     "02_Overview.md",
-    "content/Tutorials/02_overview/index.md",
-    "content/Tutorials/_index.md",
     "static/images/Overview_v3.1.png",
     "content/Tutorials/02_overview/Overview_v3.1.png",
     "content/About/index.md",
     "content/Tutorials/02_overview/tracktemplate.png",
-    "content/Tutorials/02_overview/open_multiencoder_temp.gif",
     "content/Tutorials/02_overview/Bildschirmfoto 2025-03-05 um 13.20.37.png",
     "content/Tutorials/Bildschirmfoto 2025-03-05 um 13.20.37.png",
     "public/tutorials/02_overview/open_multiencoder_temp.gif",
@@ -205,7 +206,6 @@
     "public/tutorials/01_installation/installer.gif",
     "public/tutorials/01_installation/index.html",
     "public/tutorials/01_installation",
-    "content/Tutorials/tutorial_2/open_multiencoder-temp.gif",
     "content/Tutorials/02_overview",
     "content/Tutorials/Neuer Ordner",
     "content/Links/index.md",
