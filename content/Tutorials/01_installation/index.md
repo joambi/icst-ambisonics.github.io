@@ -1,6 +1,7 @@
 ---
 date: 2025-02-02T04:14:54-08:00
 draft: false
+title: 01_Installation
 params:
   author: Johannes Schuett
 weight: 10
