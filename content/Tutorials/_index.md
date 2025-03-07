@@ -18,7 +18,7 @@ Good practice tutorials.
 
 [01_overview](01_overview)
 [02_installation](02_installation)
-[[03_how_it_works]]
+[03_how_it_works](03_how_it_works)
 04_decoders
 05_MonoEncoder
 06_MultiEncoder

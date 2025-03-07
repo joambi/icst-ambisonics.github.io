@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/03_how_it_works/index.md",
+                "file": "content/Tutorials/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -181,10 +181,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1597bac92f6118b8",
+  "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/Tutorials/01_overview/index.md",
     "content/Tutorials/03_how_it_works/index.md",
+    "content/Tutorials/01_overview/index.md",
     "content/Tutorials/03_how_it_works/open_multiencoder_temp.gif",
     "content/Tutorials/01_overview/Overview_v3.1.png",
     "content/Tutorials/03_how_it_works/tracktemplate.png",
