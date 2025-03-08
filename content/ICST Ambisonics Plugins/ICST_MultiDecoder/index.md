@@ -6,6 +6,7 @@ params:
 weight: 10
 tags:
   - -index
+title: 04_MultiDecoder
 ---
 
 # What is new in v3.1

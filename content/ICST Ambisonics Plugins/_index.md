@@ -19,6 +19,8 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 [01_overview](01_overview)
 [02_installation](02_installation)
 [03_how_it_works](03_how_it_works)
+[04_MultiDecoder](04_MultiDecoder)
+
 
 
 

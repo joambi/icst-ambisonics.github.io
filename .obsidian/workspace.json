@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/_index.md",
+                "file": "content/Tutorials/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/_index.md",
+                "file": "content/Tutorials/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of _index"
+              "title": "Outline of index"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -183,6 +183,15 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/ICST Ambisonics Plugins/ICST_MultiDecoder/index.md",
+    "content/ICST Ambisonics Plugins/_index.md",
+    "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
+    "content/ICST Ambisonics Plugins/02_installation/index.md",
+    "content/ICST Ambisonics Plugins/01_overview/index.md",
+    "content/Tutorials/index.md",
+    "public/tutorials/untitled/index.html",
+    "public/tutorials/untitled",
+    "CNAME",
     "public/icst-ambisonics-plugins/03_how_it_works/index.html",
     "public/icst-ambisonics-plugins/03_how_it_works/tracktemplate.png",
     "public/icst-ambisonics-plugins/03_how_it_works/speaker_test.png",
@@ -201,15 +210,8 @@
     "public/icst-ambisonics-plugins/01_overview",
     "ICST Ambisonics Site Struktur.canvas",
     "public/icst-ambisonics-plugins/index.xml",
-    "public/icst-ambisonics-plugins/ICST_MultiDecoder/index.html",
-    "public/icst-ambisonics-plugins/ICST_MultiDecoder",
-    "content/ICST Ambisonics Plugins/ICST_MultiDecoder",
-    "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
-    "content/Tutorials/03_how_it_works/MonoEncoder-2.png.sb-74d5163e-qB2qYJ",
-    "content/ICST Ambisonics Plugins/02_installation/index.md",
     "content/HOME/index.md",
     "content/Tutorials/03_how_it_works/index 1.md",
-    "content/ICST Ambisonics Plugins/01_overview/index.md",
     "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/Create a workflow with ICST Ambisonics Plugins in Reaper.md",
     "content/Links/index.md",
     "content/posts/NEW/index.md",
@@ -219,7 +221,6 @@
     "Evernote/Best practices with ICST Ambisonics plugins/Best practices with ICST Ambisonics plugins.md",
     "content/posts/index.md",
     "content/posts/_index.md",
-    "content/ICST Ambisonics Plugins/_index.md",
     "Evernote/ICST AmbiPlugins Installation for Reaper (Windows 64-bit)/ICST AmbiPlugins Installation for Reaper (Windows 64-bit).md",
     "content/Tutorials/02_installation/_index.md",
     "content/Tutorials/02_installation/2_installation(win)/index.md",
@@ -227,8 +228,6 @@
     "README.md",
     "01_Installation.md",
     "02_Overview.md",
-    "content/About/index.md",
-    "content/ICST Ambisonics Plugins/ICST_MultiDecoder/index.md",
-    "content/Links/Links.md"
+    "content/About/index.md"
   ]
 }
