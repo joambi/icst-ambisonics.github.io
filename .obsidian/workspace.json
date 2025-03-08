@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/02_installation/index.md",
+                "file": "content/ICST Ambisonics Plugins/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Tutorials/02_installation/index.md",
+                "file": "content/ICST Ambisonics Plugins/_index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of _index"
             }
           },
           {
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 223.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,42 +183,43 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/HOME/index.md",
-    "content/Tutorials/03_how_it_works/index.md",
-    "content/Tutorials/03_how_it_works/ec50767771367e861156b3deedaba79e.png",
-    "content/Tutorials/03_how_it_works/index 1.md",
-    "content/Tutorials/03_how_it_works/0de1f89fc0b2ca9ed639ff94b73d16bc.png",
-    "content/Tutorials/01_overview/index.md",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/Create a workflow with ICST Ambisonics Plugins in Reaper.md",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources/ec50767771367e861156b3deedaba79e.png",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources/e843ddb23139291ce1a8695feaa7494c.png",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources/e7dbdd995a9c15829909741c2af92371.png",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources/e4f489eb05757e192f748162afe79d9a.png",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources/b33bda682c92519205d92b069ec5ee7c.png",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources/Bildschirmfoto 2022-11-16 um 16.54.32.png",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources/Bildschirmfoto 2022-11-16 um 16.12.27.png",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources/Bildschirmfoto 2022-11-16 um 16.08.26.png",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper",
+    "public/icst-ambisonics-plugins/03_how_it_works/index.html",
+    "public/icst-ambisonics-plugins/03_how_it_works/tracktemplate.png",
+    "public/icst-ambisonics-plugins/03_how_it_works/speaker_test.png",
+    "public/icst-ambisonics-plugins/03_how_it_works/record_movement.gif",
+    "public/icst-ambisonics-plugins/03_how_it_works/open_multiencoder_temp.gif",
+    "public/icst-ambisonics-plugins/03_how_it_works/open_decoder.gif",
+    "public/icst-ambisonics-plugins/03_how_it_works/first-order.png",
+    "public/icst-ambisonics-plugins/03_how_it_works/empty_reaper.png",
+    "public/icst-ambisonics-plugins/03_how_it_works/choose_dec_preset.gif",
+    "public/icst-ambisonics-plugins/03_how_it_works/binaural hören.png",
+    "public/icst-ambisonics-plugins/03_how_it_works/bformat-player.png",
+    "public/icst-ambisonics-plugins/03_how_it_works",
+    "public/icst-ambisonics-plugins/02_installation/index.html",
+    "public/icst-ambisonics-plugins/02_installation",
+    "public/icst-ambisonics-plugins/01_overview/index.html",
+    "public/icst-ambisonics-plugins/01_overview",
     "ICST Ambisonics Site Struktur.canvas",
+    "public/icst-ambisonics-plugins/index.xml",
+    "public/icst-ambisonics-plugins/ICST_MultiDecoder/index.html",
+    "public/icst-ambisonics-plugins/ICST_MultiDecoder",
+    "content/ICST Ambisonics Plugins/ICST_MultiDecoder",
+    "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
+    "content/Tutorials/03_how_it_works/MonoEncoder-2.png.sb-74d5163e-qB2qYJ",
+    "content/ICST Ambisonics Plugins/02_installation/index.md",
+    "content/HOME/index.md",
+    "content/Tutorials/03_how_it_works/index 1.md",
+    "content/ICST Ambisonics Plugins/01_overview/index.md",
+    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/Create a workflow with ICST Ambisonics Plugins in Reaper.md",
     "content/Links/index.md",
     "content/posts/NEW/index.md",
     "Evernote/ICST Ambisonics Plugins in Reaper (step by step)/ICST Ambisonics Plugins in Reaper (step by step).md",
     "content/posts/NOTES/index.md",
-    "content/Tutorials/03_how_it_works/Create_a_workflow_with_ICST_Ambisonics_Plugins_in_Reaper.resources",
-    "content/Tutorials/Create a workflow with ICST Ambisonics Plugins in Reaper/_resources",
-    "content/Tutorials/Create a workflow with ICST Ambisonics Plugins in Reaper",
-    "Evernote/ICST Ambisonics Plugins in Reaper (step by step)/_resources/ICST_Ambisonics_Plugins_in_Reaper_(step_by_step).resources",
-    "Evernote/ICST Ambisonics Plugins in Reaper (step by step)/_resources",
-    "Evernote/ICST Ambisonics Plugins in Reaper (step by step)",
     "Evernote/ICST Ambisonics Plugins/ICST Ambisonics Plugins.md",
     "Evernote/Best practices with ICST Ambisonics plugins/Best practices with ICST Ambisonics plugins.md",
     "content/posts/index.md",
     "content/posts/_index.md",
-    "content/Tutorials/_index.md",
-    "content/posts/NOTES",
-    "content/Tutorials/02_installation/index.md",
+    "content/ICST Ambisonics Plugins/_index.md",
     "Evernote/ICST AmbiPlugins Installation for Reaper (Windows 64-bit)/ICST AmbiPlugins Installation for Reaper (Windows 64-bit).md",
     "content/Tutorials/02_installation/_index.md",
     "content/Tutorials/02_installation/2_installation(win)/index.md",
@@ -227,7 +228,7 @@
     "01_Installation.md",
     "02_Overview.md",
     "content/About/index.md",
-    "content/ICST Ambisonics Plugins/index.md",
+    "content/ICST Ambisonics Plugins/ICST_MultiDecoder/index.md",
     "content/Links/Links.md"
   ]
 }

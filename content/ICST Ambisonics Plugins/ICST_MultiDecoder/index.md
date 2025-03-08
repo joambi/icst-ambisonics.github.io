@@ -27,7 +27,7 @@ In this version, we have focused on a new multi-decoder and implemented the late
 		* Filter
 		* Options
 		
-		![Speaker_setting_managment](Speaker_setting_managment.gif)
+		![Speaker_setting_managment](content/ICST%20Ambisonics%20Plugins/ICST_MultiDecoder/Speaker_setting_managment.gif)
 
 * Multi-Decoder mode
 	* Default is the ICST Decoder (Basic)
@@ -38,7 +38,7 @@ In this version, we have focused on a new multi-decoder and implemented the late
 			* Manual
 		* Ambisonics order: 1st(4ch) to 7th (64ch)!
 
-		![decoder_weights](decoder_weights.gif)
+		![decoder_weights](content/ICST%20Ambisonics%20Plugins/ICST_MultiDecoder/decoder_weights.gif)
 
 * Multi-Decoder is a new version and allows up to 4 decoder units to be operated in parallel.
 	* Activate Multi-Decoder mode
@@ -63,13 +63,13 @@ In this version, we have focused on a new multi-decoder and implemented the late
 			
 			bidirektional mute & solo (shift + ctrl & "M" or "S"
 	
-		![MultiDecoder](MultiDecoder.gif)
+		![MultiDecoder](content/ICST%20Ambisonics%20Plugins/ICST_MultiDecoder/MultiDecoder.gif)
 * Encoder:
 	* Bugfixes
 
 * OSC:
 		Group manipulation with absolute angles
-		![osc-decoder-euler-absolute](osc-decoder-euler-absolute.gif)
+		![osc-decoder-euler-absolute](content/ICST%20Ambisonics%20Plugins/ICST_MultiDecoder/osc-decoder-euler-absolute.gif)
 
 * * *
 
