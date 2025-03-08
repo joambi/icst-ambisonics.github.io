@@ -24,7 +24,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 7. Follow this installations guide: <https://reapack.com/user-guide#installation>
 8. Download the ICST AmbiPlugin osx installer: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 
-![installer](static/images/installer.gif)
+![installer](installer.gif)
 
 ### What is installed by 'ICST_AmbiPlugins_macOS':
 
@@ -58,13 +58,15 @@ INFO: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
 8. Download the ICST AmbiPlugin windows installer: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 9. Extract _ICST\_AmbiPlugins\_3.0\_win\_x64.exe_ to _C:\\Program Files\\Common Files\\VST3_
 
-![01_win.png](content/ICST%20Ambisonics%20Plugins/02_installation/01_win.png)
-![01_win.png](content/ICST%20Ambisonics%20Plugins/02_installation/02_win.png)
-![01_win.png](content/ICST%20Ambisonics%20Plugins/02_installation/03_win.png)
-![01_win.png](content/ICST%20Ambisonics%20Plugins/02_installation/04_win.png)
-![01_win.png](content/ICST%20Ambisonics%20Plugins/02_installation/05_win.png)
-![01_win.png](content/ICST%20Ambisonics%20Plugins/02_installation/06_win.png)
-![01_win.png](content/ICST%20Ambisonics%20Plugins/02_installation/07_win.png)
+![01_win.png](01_win.png)
+![01_win.png](02_win.png)
+![01_win.png](03_win.png)
+![01_win.png](04_win.png)
+![01_win.png](05_win.png)
+![01_win.png](06_win.png)
+![01_win.png](07_win.png)
+
 Restart the PC!
 
 ----
+©2025 ICST

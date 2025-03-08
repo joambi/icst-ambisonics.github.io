@@ -42,6 +42,5 @@ Issues: LV2 is very experimental
 -   Christian Schweizer/Johannes Schuett/Martin Neukom
 -   Video Editor: Axel Kolb
 
-©2025 the ICST
-
 ----
+©2025 ICST
