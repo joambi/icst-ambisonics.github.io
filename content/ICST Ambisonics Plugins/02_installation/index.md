@@ -25,7 +25,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 8. Download the ICST AmbiPlugin osx installer: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 
 ![installer](installer.gif)
-
+> [!Tip:] See this [Video](https://www.youtube.com/watch?v=UmPnUTVem0Q&t=11s)
 ### What is installed by 'ICST_AmbiPlugins_macOS':
 
 - /Library/Audio/Plugins/VST3

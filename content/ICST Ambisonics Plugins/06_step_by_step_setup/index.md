@@ -79,15 +79,64 @@ Now we can play back and listen to B-format files on eight speakers.
 
 You will have noticed that a new track (mono source) has already been created in the last two images.  You should now do the same: create a new track called 'Mono-source' and insert a 'Mono-audiofile' into it. Please note that this channel also contains a 64-channel bus in the 'Route'! 
 
+>[!Tip:] Have look on this [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=119s)
+
 12. Mono AmbieEncoder overview.
 	![open monoencoder](MonoEncoder_01.png)
-
 - in the FX, open the MonoEncoder Plugin.
 ![open_MonoEncoder](MonoEncoder_load.png)
 Overview of the ICST MonoEncoder:
+- Add a AmbiEncoder(ICST) (1-4) --> Mono-Encoder
+- Route the Audio (64channels) from Encoder to the 'Bformat-Master bus'.
 ![MonnoEncoder](MonoEncoder.png)
-13. Record the MonoEncoder movements in the Reaper-Track:
-![rec_movement](record_movement.gif)
-14. Play the recorded movement.
+13. Record the MonoEncoder movements in the Reaper-Track: Follow the next gif animation.
+![rec_xyz](rec_xyz.gif)
+14. Play the recorded movement, see the next gif.
+![play_xyt](play_xyz.gif)
+You can now continue track by track and spatialize your N-sources. But let me consider an economic component. As you know, at max 7th-order all MonoEncoders work with 64-channels, which may cause a CPU problem on the computer. To make the computer's work more ecological, we have implemented the MultiEncoder. It can handle up to 64 mono sources and sends them as a 64ch Bformat to the Bformat master track. This reduces the processing power of your computer and allows more audio sources.
+
+15. In the next example, I'll show you how we used the multi-encoder. Right-click in the empty Reaper track field and select “Insert Track from Template”. Then go to “ICST AmbiPlugins” and select “ICST_AmbiEncoder_Multi_8src”. This opens a MultiEncoder with 8x mono sources that are already routed into the MultiEncoder.
+    ![MultiEncoder_routing](MultiEncoder_routing.png)
+If you have linked the routing correctly, you can now control the four sources with different placements or movements in the MultiEncoder.
+16. The AmbiEncoder Settings are a very importend chapter in the Workflow!
+	 The next Gif you see the AmbiEncoder-Setting Features.
+	 ![Enc_Settings](Enc_Settings.gif)
+
+>[!Tip: ] See the AmbiEncoder [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=31s)
+
+17. A specialty of the ICST Ambisonics Encoder is the implementation of the distance function. It was created at the ICST by Martin Neukom. The distance function allows you to create several different room configurations so that the train moves quickly or very slowly through your room. (next gif)
+      ![Distanc_overview](Distance.gif) Please refer to the tutorial 'Distance' for detailed instructions.
+> [!Tip: If you are working with distance, it is important to define it at the beginning of your work in order to scale all xyz coordinates to this space.(Here in the example, the distance is 0.0 to 1.0)]
+18. To give you an idea of how the MultiEncoder works, here are a few gifs that illustrate it. To give you an idea of how to work with the multi-encoder, here are a few gifs that illustrate it. You can move the source in the multi-encoder's radar and record this movement individually. 
+	(Gif_01)Record first movement with the Src_1 
+    ![MultiEnc_01_write](MultiEnc_01_write.gif)
+     - First set Automations Envelopes to Mode: Write
+     - Then start Reaper (space) and move the Src_01 in the MultiEncoder Radar.
+     - You can do that with all others.
+Gif_02 shows the movement with the 'Src_3'
+![Encoder_move_03](Move_03.gif)
+The next step demonstrates how to manually edit the xyz envelopes.
+![Manuel_edit](MultiEnc_Manuell_edit.gif)
+- To create a new editing point, click the envelope while holding down the Shift key.
+- Then move the point to change the xyz coordinates.
+
+(Gif_03) Playing the entire recorded/edited Ambisonics scene.
+![MultiEnc_plays_scene](play_multienc.gif)
+
+19. Finally, here's an idea of how you can work with groups. In Radar, mark the 'Src' points that you want to have in a group.
+	                            ![GP_select](GP_select.png)
+	   You have created a group and can now name the group point (e.g. G1).
+	                          ![GP_name](GP_edit.png)
+20. Record the Group:
+     ![Rec_GP](Rec_GP.gif)
+     Recording modes in Reaper:
+	-  “Latch” to record only one source point.
+	- “Touch” to start recording from the moment you touch a point.
+	- “Write” to overwrite the recording.
+
+21. Finally, we check the final recording and listen to it through the decoder (speaker) and through the binaural decoder with headphones.
+       ![Play_GP](play_GP.gif)
+
+22. If we are satisfied with the result, we can now bounce or record (realtime) it as our master B format.
 
 
