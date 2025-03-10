@@ -6,14 +6,78 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ----
 
-### The new ICST Ambisonics Plugins Release v3.1 is out!
+# **ICST Ambisonics Plugins v3.1 Now Available!**
 
-Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
+**Download:** [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 
 ----
+## **What’s New in v3.1?**
 
-### What's new in version 3.1:
+We're excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a **multi-decoder** that integrates the latest insights from our empirical research. With four distinct **weightings** and **filter banks**, you can now refine up to four loudspeaker arrays for a more detailed and spatially precise **B-format** audio experience.
 
-We are excited to announce the release of **v.3.1** of our **ICST Ambisonics plugins**. This update introduces a new multi-decoder, incorporating the latest insights from our empirical research. Four distinct weightings and filter banks can now be applied to up to four loudspeaker arrays, resulting in a more detailed and differentiated sound image. This update offers a new way to control and interpret **B-format** audio in physical space.
+📖 **Documentation:** [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 
-## What's new:
+---
+# ICST AmbiDecoder
+
+### **General Enhancements**
+
+- **Bidirectional Solo & Mute**
+  ![bidi_mute](bidi_mute.gif)
+- **Keyboard Shortcuts:** Shift & Control (Mac)
+
+# Settings 
+#### New  Layout 
+
+![New_layout](Layout_v3_1.png)
+- - **Speaker**
+- **Decoding**
+- **Filter**
+- **Options**
+- **? (Feature coming soon)**
+
+### New CSV export
+
+- 
+#### Multi-Decoder Mode
+
+![MultiDecoder](Multidecoder.png)
+
+- Four independent decoders with unique names and colors
+- Individual selection/deselection of speakers
+- Customizable Ambisonic orders per decoder
+- Independent weighting and volume control for each decoder
+- Dedicated filter ranges per decoder
+- Individual muting for each decoder
+
+>  💡  For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki).
+
+---
+
+# ICST AmbiEecoder
+
+# Settings 
+#### New  Layout 
+![Enc_layout](Enc_layout.png)
+
+- New Tap layout
+- Ambisonics Oder Menu
+- Bidirectional Mute & Solo
+
+![Enc_M_S](Enc_M_S.gif)
+Ex. Mute & Solo (bidirectional)
+
+### OSC 
+  
+Easily manipulate groups over **OSC** using absolute **Euler angles**.
+
+- Activate the OSC port (e.g., **50001**)
+- Send absolute angles externally to control movement
+
+![Ab_Grad_euler](absolut_euler.gif)
+🔹 **Example:** OSC from Max 9.0 to ICST AmbiEncoder
+
+💡  For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).
+
+---
+©2025 ICST

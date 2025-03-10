@@ -21,7 +21,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 	* Filter
 	* Options
 
-    ![Speaker_setting_managment](Speaker_setting_managment.gif)
+    ![Speaker_setting_managment | 450](Speaker_setting_managment.gif)
 
 ----
 
