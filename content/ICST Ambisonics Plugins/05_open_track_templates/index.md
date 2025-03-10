@@ -4,14 +4,15 @@ date:
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ----
-## 02 Open the TrackTemplates
+## 02 Open Track Templates
 
-1. Right-click in the empty Reaper track field
-2. Select 'Insert track from template
-3. Select the desired 'TrackTemplate'
+1. Right-click in the empty track area in **Reaper**.
+2. Select **"Insert track from template."**
+3. Choose the desired **TrackTemplate**.
 
 ![tracktemplate.png](tracktemplate.png)
-Make sure you create the correct audio routing from channel track to channel track!
+
+Ensure proper audio routing between channel tracks for accurate signal flow!
 
 ![Track_template](Track_templates.gif)
 

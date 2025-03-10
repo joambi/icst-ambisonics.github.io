@@ -5,8 +5,8 @@ title: NOTES
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-### This is the new website for the ICST Ambisonics Plugins!
+### Welcome to the New ICST Ambisonics Plugins Website!
 
-It replaces the previous site ambisonics.ch (until November 2024).
+This site replaces **ambisonics.ch**.
 
-Work in progress and no guarantee for completeness.
+Content is still a work in progress—stay tuned for updates!

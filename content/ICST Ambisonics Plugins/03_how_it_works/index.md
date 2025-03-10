@@ -6,30 +6,39 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ----
 
-The ICST Ambisonics plugins are designed for an intuitive and easy-to-use workflow. 
-In this tutorial, we will show you three “how it works” workflows.
+### Intuitive Ambisonics Workflow with ICST Plugins
 
-To create Ambisonic content, we need the following workflow setup in our DAW:   
--  Mono sources   
-- Encoder for the mono movement or placement  
-- A B-format master track for bouncing or recording the encoded files  
-- A decoder for decoding the B-format (encoded data) for the physical speaker arrangement or binaural (headphone) monitoring.
+The **ICST Ambisonics plugins** are designed for a seamless and intuitive workflow.
+In this tutorial, we’ll guide you through three essential **"how it works"** workflows.
 
-Overview for the easy signalflow:
+### Setting Up an Ambisonic Workflow in Your DAW
+
+To create **Ambisonic content**, your setup should include:
+
+- **Mono sources** – Individual sound sources
+- **Encoder** – Positions or moves mono sources in the Ambisonic field
+- **B-format master track** – Captures the encoded audio for bouncing or recording
+- **Decoder** – Converts B-format audio for speaker playback or binaural headphone monitoring
+
+#### Signal Flow Overview
+
+Below is a schematic representation of a **typical Ambisonics workflow**:
   ![01_easyworkflow](01_easy_workflow.png)
-This image shows a schematic representation of a paradigmatic Ambisonics workflow.
 
-The next image shows a schematic overview of the signal flow of the ICST Ambisonics plugins.
-![0_workflow_](02_workflow.png)
-In the DAW Reaper, it looks like this:
-![03_reaper_workflow](03_reaper_workflow.png)
--  Master output
-- Decoder
-- Bformat master
-- Bformat (ambiX) player
-- MultiEncoder with 16-channel mono source as children tracks.
+The next image provides an **overview of the ICST Ambisonics plugin signal flow**:
+  ![0_workflow_](02_workflow.png)
 
-Of course, you can also create your own workflow.
+In **Reaper**, the signal flow appears as follows:
+
+  ![03_reaper_workflow](03_reaper_workflow.png)
+
+- **Master Output**
+- **Decoder**
+- **B-format Master**
+- **B-format (ambiX) Player**
+- **MultiEncoder** with 16-channel mono sources as child tracks
+
+Of course, you can also customize your workflow to fit your needs!
 
 ----
 ©2025 ICST

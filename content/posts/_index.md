@@ -15,3 +15,5 @@ tags:
 
 [notes](notes)
 
+[what_we_now](what_we_now)
+
