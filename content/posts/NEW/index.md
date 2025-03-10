@@ -72,6 +72,8 @@ Ex. Mute & Solo (bidirectional)
 Easily manipulate groups over **OSC** using absolute **Euler angles**.
 
 - Activate the OSC port (e.g., **50001**)
+  ![osc-port](osc-port.png)
+- 
 - Send absolute angles externally to control movement
 
 ![Ab_Grad_euler](absolut_euler.gif)

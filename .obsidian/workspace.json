@@ -11,12 +11,14 @@
             "id": "229301a58f7d83a0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "content/Tutorials/01_MultiDecoder/Speaker_setting_managment.gif"
+                "file": "content/posts/NEW/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Speaker_setting_managment"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -181,10 +183,12 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "public/posts/new/osc-port.png",
+    "content/posts/NEW/osc-port.png",
+    "content/Tutorials/01_MultiDecoder/Speaker_setting_managment.gif",
     "content/Tutorials/01_MultiDecoder/decoder_weights.gif",
     "content/Tutorials/01_MultiDecoder/MultiDecoder.gif",
     "content/Tutorials/01_MultiDecoder/osc-decoder-euler-absolute.gif",
-    "content/Tutorials/01_MultiDecoder/Speaker_setting_managment.gif",
     "content/posts/NEW/index.md",
     "content/Tutorials/01_MultiDecoder/index.md",
     "content/Tutorials/_index.md",
@@ -196,8 +200,6 @@
     "public/tutorials/01_multidecoder",
     "content/Tutorials/Info.md",
     "content/posts/NEW/absolut_euler.gif",
-    "content/posts/NEW/image001.gif",
-    "public/posts/new/absolut_euler.gif",
     "content/posts/What_we_now/index.md",
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/posts/NOTES/index.md",
