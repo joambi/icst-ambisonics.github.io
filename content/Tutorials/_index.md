@@ -4,4 +4,4 @@ date:
 
 [Info](info)
 
-[01_Decoder](01_decoder)
+[index](content/Tutorials/01_Decoder/index.md)

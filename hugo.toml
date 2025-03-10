@@ -1,4 +1,4 @@
-baseURL = 'https://icst-ambisonics.github.io/'
+baseURL = 'https://ambisonics.ch/'
 languageCode = 'en-us'
 title = 'The ICST Ambisonics Site'
 theme = 'anatole'

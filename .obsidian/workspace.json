@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/01_Decoder/01_Decoder.md",
+                "file": "content/Tutorials/01_Decoder/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Decoder"
+              "title": "index"
             }
           }
         ]
@@ -183,13 +183,14 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "public/tutorials/01_Decoder/01_decoder/index.html",
-    "public/tutorials/01_Decoder/01_decoder",
+    "content/Tutorials/01_Decoder/decoder_weights.gif",
+    "content/Tutorials/01_Decoder/index.md",
     "content/Tutorials/_index.md",
     "content/Tutorials/Info.md",
+    "public/tutorials/01_Decoder/01_decoder/index.html",
+    "public/tutorials/01_Decoder/01_decoder",
     "public/tutorials/info/index.html",
     "public/tutorials/info",
-    "content/Tutorials/01_Decoder/01_Decoder.md",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/Tutorials/01_Decoder/03.1_quickstart.md",
     "public/tutorials/01_Decoder/osc-decoder-euler-absolute.gif",
@@ -216,7 +217,6 @@
     "what.md",
     "public/posts/what_we_now/index.html",
     "public/posts/what_we_now/untitled/index.html",
-    "public/posts/what_we_now/untitled",
     "content/posts/NEW/index.md",
     "content/ICST Ambisonics Plugins/05_open_track_templates/index.md",
     "content/ICST Ambisonics Plugins/04_quick_start/index.md",
