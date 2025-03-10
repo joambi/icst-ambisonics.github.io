@@ -96,7 +96,7 @@ Overview of the ICST MonoEncoder:
 You can now continue track by track and spatialize your N-sources. But let me consider an economic component. As you know, at max 7th-order all MonoEncoders work with 64-channels, which may cause a CPU problem on the computer. To make the computer's work more ecological, we have implemented the MultiEncoder. It can handle up to 64 mono sources and sends them as a 64ch Bformat to the Bformat master track. This reduces the processing power of your computer and allows more audio sources.
 
 15. In the next example, I'll show you how we used the multi-encoder. Right-click in the empty Reaper track field and select “Insert Track from Template”. Then go to “ICST AmbiPlugins” and select “ICST_AmbiEncoder_Multi_8src”. This opens a MultiEncoder with 8x mono sources that are already routed into the MultiEncoder.
-    ![MultiEncoder_routing](MultiEncoder_routing.png)
+    ![MultiEncoder_routing | 550](MultiEncoder_routing.png)
 If you have linked the routing correctly, you can now control the four sources with different placements or movements in the MultiEncoder.
 16. The AmbiEncoder Settings are a very importend chapter in the Workflow!
 	 The next Gif you see the AmbiEncoder-Setting Features.
@@ -123,10 +123,11 @@ The next step demonstrates how to manually edit the xyz envelopes.
 (Gif_03) Playing the entire recorded/edited Ambisonics scene.
 ![MultiEnc_plays_scene](play_multienc.gif)
 
-19. Finally, here's an idea of how you can work with groups. In Radar, mark the 'Src' points that you want to have in a group.
-	                            ![GP_select](GP_select.png)
-	   You have created a group and can now name the group point (e.g. G1).
-	                          ![GP_name](GP_edit.png)
+19. Finally, here's an idea of how you can work with groups. In Radar, mark the 'Src' points that you want to have in a group. You have created a group and can now name the group point (e.g. G1).	
+
+![create_a_GP | 300](GP_select.png)
+![GP_name | 300](GP_edit.png)
+
 20. Record the Group:
      ![Rec_GP](Rec_GP.gif)
      Recording modes in Reaper:
@@ -137,6 +138,25 @@ The next step demonstrates how to manually edit the xyz envelopes.
 21. Finally, we check the final recording and listen to it through the decoder (speaker) and through the binaural decoder with headphones.
        ![Play_GP](play_GP.gif)
 
-22. If we are satisfied with the result, we can now bounce or record (realtime) it as our master B format.
+22. If we are satisfied with the result, we can now bounce or record (realtime) it as our master B format. For do this, follow the next steps:
+	- Select the Bformat-Master bus and set it to 'solo'
+	- Go to 'Menu' and choose 'Render'.
+	  
+	   ![Render_Master | 500](render-master.png)
+		
+		1. Select tracks(stems) that renders (bounce) the selected track. In our case the Bformat-Master bus.
+		2. Give the bformat a name
+		3. Sample rate: 48'000kHz
+		4. Channels: 64 for 7th-order Ambisonics
+		5. Set Multichannel tracks to multichannel files
+		6. Large files Wave/RF64
+		7. Press 'Render' 1 file
+     ![render-info](render_info.png)
+		After the rendering process, you will get a Rendering Info window with the Peak and LUFS information.
 
+23. That's all, now you can drag and drop your B-Format onto the B-Format player track, set it to “Solo” and listen to the final result via the ICST decoder or the binaural decoder.
 
+Happy sounding!
+
+---
+©2025 ICST

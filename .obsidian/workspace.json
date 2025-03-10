@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -181,8 +181,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "229301a58f7d83a0",
+  "active": "1597bac92f6118b8",
   "lastOpenFiles": [
+    "public/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png",
+    "public/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png",
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/render-master.png",
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/render_info.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/Distance.gif",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/Distance.gif",
     "content/ICST Ambisonics Plugins/05_open_track_templates/index.md",
@@ -196,10 +200,6 @@
     "public/icst-ambisonics-plugins/06_step_by_step_setup/play_xyz.gif",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/play_multienc.gif",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/play_GP.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/Zahl_über_Rand_hinaus.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/Rec_GP.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/MultiEncoder_routing.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_Manuell_edit.gif",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/MultiEncoder_routing-2.png.sb-74d5163e-EsqPew",
     "ICST Ambisonics Site Struktur.canvas",
     "06_step_by_step_setup.md",
