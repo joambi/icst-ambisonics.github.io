@@ -31,26 +31,26 @@ url = "https://github.com/joambi"
   url = "/HOME/"
 
   [[menu.main]]
-  name = "Posts"
-  weight = 200
-  identifier = "posts"
-  url = "/posts/"
+  name = "Blog"
+  weight = 500
+  identifier = "blog"
+  url = "/blog/"
 
   [[menu.main]]
   name = "ICST Ambisonics Plugins"
-  weight = 300
+  weight = 200
   identifier = "ICST Ambisonics Plugins"
   url = "/ICST Ambisonics Plugins/"
 
   [[menu.main]]
   name = "ICST Ambisonics Tools"
-  weight = 400
+  weight = 300
   identifier = "ICST Ambisonics Tools"
   url = "/ICST Ambisonics Tools/"
   
   [[menu.main]]
   name = "Tutorials"
-  weight = 500
+  weight = 400
   identifier = "Tutorials"
   url = "/Tutorials/"
   
