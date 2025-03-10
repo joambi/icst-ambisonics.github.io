@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/07_multidecoder/index.md",
+                "file": "content/ICST Ambisonics Tools/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,8 +183,11 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/ICST Ambisonics Plugins/07_multidecoder/MultiDecoder.gif",
+    "content/HOME/index.md",
+    "content/ICST Ambisonics Tools/index.md",
+    "content/About/index.md",
     "content/ICST Ambisonics Plugins/07_multidecoder/index.md",
+    "content/ICST Ambisonics Plugins/07_multidecoder/MultiDecoder.gif",
     "content/ICST Ambisonics Plugins/07_multidecoder/osc-decoder-euler-absolute.gif",
     "content/posts/What_we_now/index.md",
     "content/posts/NOTES/index.md",
@@ -203,7 +206,6 @@
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "public/icst-ambisonics-plugins/05_open_track_templates/Track_templates.gif",
     "content/ICST Ambisonics Plugins/05_open_track_templates/Track_templates.gif",
-    "content/HOME/index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png",
@@ -211,7 +213,6 @@
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/render_info.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/Distance.gif",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/Distance.gif",
-    "content/ICST Ambisonics Plugins/03_how_it_works/01_easy_workflow.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/MultiEncoder_routing-2.png.sb-74d5163e-EsqPew",
     "ICST Ambisonics Site Struktur.canvas",
     "06_step_by_step_setup.md",
@@ -228,7 +229,6 @@
     "content/Links/index.md",
     "Evernote/ICST Ambisonics Plugins in Reaper (step by step)/ICST Ambisonics Plugins in Reaper (step by step).md",
     "Evernote/ICST Ambisonics Plugins/ICST Ambisonics Plugins.md",
-    "Evernote/Best practices with ICST Ambisonics plugins/Best practices with ICST Ambisonics plugins.md",
-    "content/posts/index.md"
+    "Evernote/Best practices with ICST Ambisonics plugins/Best practices with ICST Ambisonics plugins.md"
   ]
 }

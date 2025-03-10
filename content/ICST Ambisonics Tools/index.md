@@ -13,20 +13,30 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ------------------------------------------------------------------------
 
-ICST Ambisonics Tools A set of externals for MaxMSP for Ambisonics surround sound processing and source-control in three dimensions. These externals result from research and practice using Ambisonics since 2000 and have been tested and used in numerous concerts, compositions, and installations. The package includes the following externals: 
+### ICST Ambisonics Tools
+
+A collection of **MaxMSP externals** for **Ambisonics** surround sound processing and 3D source control. Developed through research and practice since 2000, these tools have been extensively tested and used in concerts, compositions, and installations.
+
+#### **Included Externals:**
 
 ![max-external](max-externals.png)
 
-The ICST Ambisonics Tools are distributed under the "Revised BSD License." The license file is included in this package. 
-Current Version Version 3.0.1:
+### Licensing & Installation
 
- – released May 2021 for Max 8.1 64bit 
+The **ICST Ambisonics Tools** are distributed under the **Revised BSD License** (included in the package).
 
- – mac os and Windows 10.
+#### **Current Version: 3.0.1**
 
-## Installation:
+- Released **May 2021** for **Max 8.1 (64-bit)**
+- Compatible with **macOS** and **Windows 10**
 
- Please install the “ICST Ambisonics Tools” in Max 8+ via the package manager. 
+#### **Installation**
 
+Install **ICST Ambisonics Tools** in **Max 8+** via the **Package Manager**:
 
 ![max-external](Amb_Max.gif)
+
+Info at ZHdK: https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385
+
+---
+©2025 ICST
