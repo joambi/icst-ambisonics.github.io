@@ -16,13 +16,20 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 # The ICST AmbiPlugins: 
 
-[01_overview](01_overview)
-[02_installation](02_installation)
-[03_how_it_works](03_how_it_works)
-[04_quick_start](04_quick_start)
-[05_open_track_templates](05_open_track_templates)
-[06_step_by_step_setup](06_step_by_step_setup)
-[07_MultiDecoder](07_MultiDecoder)
+[01_Overview](01_Overview)
+
+[02_Installation](02_Installation)
+
+[03_How_it_works](03_How_it_works)
+
+[04_Quick_start](04_Quick_start)
+
+[05_Open_track_templates](05_Open_track_templates)
+
+[06_Step_by_step_setup](06_Step_by_step_setup)
+
+
+
 
 
 
