@@ -36,9 +36,10 @@ We're excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a **multi
 - **Options**
 - **? (Feature coming soon)**
 
-### New CSV export
+### New CSV export features
 
-- 
+![CSV](Speaker_setting_managment.gif)
+
 #### Multi-Decoder Mode
 
 ![MultiDecoder](Multidecoder.png)
