@@ -12,7 +12,6 @@ title: 01_Overview
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
-
 # Overview
 The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and several additional spatial audio production tools. The following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
 
@@ -27,7 +26,6 @@ Find individual pages here:
 [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
 
 **Free download here:**
-
 -   Binary Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 -   Documentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
 -   Tutorials, Blog: <https://joambi.github.io/icst-ambisonics.github.io/home/>

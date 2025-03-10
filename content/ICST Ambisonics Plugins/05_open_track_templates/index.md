@@ -13,5 +13,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ![tracktemplate.png](tracktemplate.png)
 Make sure you create the correct audio routing from channel track to channel track!
 
+![Track_template](Track_templates.gif)
+
 ----
 ©2025 ICST
