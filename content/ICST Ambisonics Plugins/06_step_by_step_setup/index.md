@@ -47,7 +47,7 @@ We will create the template step by step from top to bottom.
 
 
 9. Create the 'Bformat-Master track'
-![02_BF-Master](02_BF-Master.gif)
+![02_BF-Master | 700](02_BF-Master.gif)
 
 #### 3. Create a Bformat master track
 
@@ -98,7 +98,7 @@ To be able to listen to the B format through headphones, we will now set up a bi
 
 - Create a new track Mono-Source and load a mono audio file.
 
->[!Tip:] Watch this  [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=119s)
+Tip: Watch this  [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=119s)
 
 12. Mono AmbieEncoder overview.
 	![open monoencoder](MonoEncoder_01.png)
@@ -166,11 +166,12 @@ In the next example, I'll demonstrate how we use the **Multi-Encoder**:
 
 Here’s an example with **Src_3**:The next step demonstrates how to manually edit the xyz envelopes.
 ![Manuel_edit](MultiEnc_Manuell_edit.gif)
+
 6. **Manually Editing XYZ Envelopes**
 
 	- To refine movements, manually adjust the **XYZ envelopes**:
-    - Hold **Shift** and click on the envelope to create a new edit point.
-    - Move the point to adjust the **XYZ coordinates**.
+	- Hold **Shift** and click on the envelope to create a new edit point.
+	- Move the point to adjust the **XYZ coordinates**.
 
 7. Playing Back the Recorded Ambisonic Scene
 
@@ -183,8 +184,8 @@ Here’s an example with **Src_3**:The next step demonstrates how to manually ed
     - In the **Radar Display**, select multiple **Src points** to form a group.
     - Assign a **group name** (e.g., **G1**).
 
-![create_a_GP | 300](GP_select.png)
-![GP_name | 300](GP_edit.png)
+![create_a_GP](GP_select_scaled.png)
+![GP_name](GP_edit_scaled.png)
 
 9. **Recording Group Movements**
 

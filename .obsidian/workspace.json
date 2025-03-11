@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/_index.md",
+                "file": "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 537.5
   },
   "right": {
     "id": "37258160c4802e4d",
@@ -198,10 +198,16 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select.png",
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png.sb-26ad3a7a-boDjp1",
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png",
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_edit_scaled.png",
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_edit.png.sb-26ad3a7a-0nvgCz",
+    "content/ICST Ambisonics Plugins/_index.md",
     "content/Tutorials/_index.md",
     "content/Tutorials/Info.md",
     "content/Tutorials/01_MultiDecoder/index.md",
-    "content/ICST Ambisonics Plugins/_index.md",
     "content/Blog/_index.md",
     "content/Blog/What_we_now/index.md",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
@@ -219,15 +225,11 @@
     "public/blog/new/Multidecoder.png",
     "public/blog/new/Layout_v3_1.png",
     "public/blog/new/Enc_layout.png",
-    "public/blog/new/Enc_M_S.gif",
     "public/blog/new",
     "content/Blog/NEW/index.md",
-    "public/posts/new/Speaker_setting_managment.gif",
     "public/tutorials/01_multidecoder/index.html",
-    "public/tutorials/01_multidecoder",
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/Blog/NOTES/index.md",
-    "public/tutorials/01_Decoder/01_decoder/index.html",
     "content/Tutorials/01_Decoder/03.1_quickstart.md",
     "03_how_it_works.md",
     "content/ICST Ambisonics Tools/index.md",
@@ -237,7 +239,6 @@
     "content/ICST Ambisonics Plugins/05_open_track_templates/index.md",
     "content/ICST Ambisonics Plugins/04_quick_start/index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "ICST Ambisonics Site Struktur.canvas",
     "06_step_by_step_setup.md",
     "04_MultiDecoder.md",
