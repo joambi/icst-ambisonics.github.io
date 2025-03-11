@@ -18,15 +18,15 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 [Overview](01_overview)
 
-[02_installation](02_installation)
+[Installation](02_installation)
 
-[03_how_it_works](03_how_it_works)
+[How_it_works](03_how_it_works)
 
-[04_quick_start](04_quick_start)
+[Quick_start](04_quick_start)
 
-[05_open_track_templates](05_open_track_templates)
+[Open_track_templates](05_open_track_templates)
 
-[06_step_by_step_setup](06_step_by_step_setup)
+[Step_by_step_setup](06_step_by_step_setup)
 
 
 
