@@ -208,7 +208,7 @@ Here’s an example with **Src_3**:The next step demonstrates how to manually ed
 
 **Render Settings:**
 
-  ![Render_Master | 500](render-master.png)
+  ![Render_Master | 200](render-master.png)
 
 
 1. **Select Track (Stem Render)** → Choose **Bformat-Master**.
