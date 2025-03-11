@@ -9,5 +9,5 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 
 * Speaker settings:  \[?\] About is empty
-- The website [ambisonics.ch](https://ambisonics.ch/) is temporarily unavailable.
+
 
