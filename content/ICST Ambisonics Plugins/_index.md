@@ -16,9 +16,9 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 # The ICST AmbiPlugins: 
 
-[01_Overview](01_Overview)
+[01_overview](01_overview)
 
-[02_Installation](02_Installation)
+[02_installation](02_installation)
 
 [03_How_it_works](03_How_it_works)
 
