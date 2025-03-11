@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "a9379e3180396ae8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,8 +192,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1597bac92f6118b8",
+  "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/ICST Ambisonics Plugins/02_installation/index.md",
     "public/blog/index.xml",
     "public/blog/new/index.html",
     "public/blog/new/settings.png",
@@ -210,7 +222,6 @@
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/Blog/NOTES/index.md",
     "public/tutorials/01_Decoder/01_decoder/index.html",
-    "public/tutorials/01_Decoder/01_decoder",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/Tutorials/01_Decoder/03.1_quickstart.md",
     "03_how_it_works.md",
@@ -222,7 +233,6 @@
     "content/ICST Ambisonics Plugins/05_open_track_templates/index.md",
     "content/ICST Ambisonics Plugins/04_quick_start/index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
-    "content/ICST Ambisonics Plugins/02_installation/index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "ICST Ambisonics Site Struktur.canvas",
     "06_step_by_step_setup.md",
