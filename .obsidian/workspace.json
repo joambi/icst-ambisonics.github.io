@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/About/index.md",
+                "file": "content/ICST Ambisonics Plugins/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -198,10 +198,10 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
-    "ist.md",
-    "content/About/index.md",
-    "content/Tutorials/_index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
+    "content/About/index.md",
+    "ist.md",
+    "content/Tutorials/_index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png.sb-26ad3a7a-boDjp1",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png",
