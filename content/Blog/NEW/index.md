@@ -23,13 +23,13 @@ We're excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a **multi
 ### **General Enhancements**
 
 - **Bidirectional Solo & Mute**
-  ![bidi_mute](bidi_mute.gif)
+  ![bidi_mute](content/Blog/NEW/bidi_mute.gif)
 - **Keyboard Shortcuts:** Shift & Control (Mac)
 
 # Settings 
 #### New  Layout 
 
-![New_layout](Layout_v3_1.png)
+![New_layout](content/Blog/NEW/Layout_v3_1.png)
 - - **Speaker**
 - **Decoding**
 - **Filter**
@@ -38,11 +38,11 @@ We're excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a **multi
 
 ### New CSV export features
 
-![CSV](Speaker_setting_managment.gif)
+![CSV](content/Blog/NEW/Speaker_setting_managment.gif)
 
 #### Multi-Decoder Mode
 
-![MultiDecoder](Multidecoder.png)
+![MultiDecoder](content/Blog/NEW/Multidecoder.png)
 
 - Four independent decoders with unique names and colors
 - Individual selection/deselection of speakers
@@ -59,13 +59,13 @@ We're excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a **multi
 
 # Settings 
 #### New  Layout 
-![Enc_layout](Enc_layout.png)
+![Enc_layout](content/Blog/NEW/Enc_layout.png)
 
 - New Tap layout
 - Ambisonics Oder Menu
 - Bidirectional Mute & Solo
 
-![Enc_M_S](Enc_M_S.gif)
+![Enc_M_S](content/Blog/NEW/Enc_M_S.gif)
 Ex. Mute & Solo (bidirectional)
 
 ### OSC 
@@ -73,11 +73,11 @@ Ex. Mute & Solo (bidirectional)
 Easily manipulate groups over **OSC** using absolute **Euler angles**.
 
 - Activate the OSC port (e.g., **50001**)
-  ![osc-port](osc-port.png)
+  ![osc-port](content/Blog/NEW/osc-port.png)
 - 
 - Send absolute angles externally to control movement
 
-![Ab_Grad_euler](absolut_euler.gif)
+![Ab_Grad_euler](content/Blog/NEW/absolut_euler.gif)
 🔹 **Example:** OSC from Max 9.0 to ICST AmbiEncoder
 
 💡  For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).

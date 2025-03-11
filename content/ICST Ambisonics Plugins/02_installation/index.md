@@ -19,13 +19,14 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 2. Follow the Reaper Installation guide.
 3. Run the Reaper (DAW) by click the _[Reaper64.app](http://Reaper64.app)_
 4. Close _Reaper64._
-5. Install the _reaper plugin extension (SWS/S&M)_ from this link: <https://www.sws-extension.org/> (<https://www.sws-extension.org/download/REAPERPlusSWS171.pdf>)
+5. Install the _reaper plugin extension (SWS/S&M)_ from this link: <https://www.sws-extension.org/> 
 6. Install the _ReaPack_ (Package manager for Reaper) from here: <https://reapack.com/>
 7. Follow this installations guide: <https://reapack.com/user-guide#installation>
 8. Download the ICST AmbiPlugin osx installer: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 
    ![installer](installer.gif)
-> [!Tip:] See this [Video](https://www.youtube.com/watch?v=UmPnUTVem0Q&t=11s)
+
+
 ### What is installed by 'ICST_AmbiPlugins_macOS':
 
 - /Library/Audio/Plugins/VST3
@@ -41,8 +42,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 INFO: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
 
-> [!VIDEO]
-> https://www.youtube.com/watch?v=UmPnUTVem0Q
+VIDEO:  https://www.youtube.com/watch?v=UmPnUTVem0Q
 
 ---
 
@@ -50,9 +50,9 @@ INFO: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
 
 1. Download Reaper64 (Windows 64-bit) from [reaper.fm](http://reaper.fm/)
 2. Follow the Reaper Installation guide.
-3. Run the Reaper (DAW) by click the _[Reaper64.app](http://Reaper64.app)_
+3. Run the Reaper (DAW) by click the Reaper64.app
 4. Close _Reaper64._
-5. Install the _reaper plugin extension (SWS/S&M)_ from this link: <https://www.sws-extension.org/> (<https://www.sws-extension.org/download/REAPERPlusSWS171.pdf>)
+5. Install the _reaper plugin extension (SWS/S&M)_ from this link: https://www.sws-extension.org/
 6. Install the _ReaPack_ (Package manager for Reaper) from here: <https://reapack.com/>
 7. Follow this installations guide: <https://reapack.com/user-guide#installation>
 8. Download the ICST AmbiPlugin windows installer: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
