@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Best practice tutorials/_index.md",
+                "file": "content/About/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -198,8 +198,8 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
-    "content/Best practice tutorials/Info.md",
     "content/Best practice tutorials/_index.md",
+    "content/Best practice tutorials/Info.md",
     "content/About/index.md",
     "content/ICST Ambisonics Tools/index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
