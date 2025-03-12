@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/_index.md",
+                "file": "content/About/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -198,6 +198,9 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/Blog/_index.md",
+    "notes.md",
+    "content/ICST Ambisonics Plugins/_index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "content/About/index.md",
     "ist.md",
@@ -207,10 +210,8 @@
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_edit_scaled.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_edit.png.sb-26ad3a7a-0nvgCz",
-    "content/ICST Ambisonics Plugins/_index.md",
     "content/Tutorials/Info.md",
     "content/Tutorials/01_MultiDecoder/index.md",
-    "content/Blog/_index.md",
     "content/Blog/What_we_now/index.md",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
     "public/blog/index.xml",
@@ -243,7 +244,6 @@
     "06_step_by_step_setup.md",
     "04_MultiDecoder.md",
     "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/Create a workflow with ICST Ambisonics Plugins in Reaper.md",
-    "content/Tutorials/03_how_it_works/index 1.md",
-    "content/Links/index.md"
+    "content/Tutorials/03_how_it_works/index 1.md"
   ]
 }

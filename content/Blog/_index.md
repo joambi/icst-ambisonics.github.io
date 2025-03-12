@@ -1,19 +1,18 @@
 ---
 aliases:
-  - "posts"
-  - "articles"
-  - "blog"
-  - "showcase"
-  - "docs"
-title: "Posts"
-author: "Johannes Schuett"
-tags:
-  - "index"
+  - posts
+  - articles
+  - blog
+  - showcase
+  - docs
+title: Blog
+author: Johannes Schuett
+tags: []
 ---
 
-[new](new)
+[New](new)
 
-[notes](notes)
+[Notes](notes)
 
-[what_we_now](what_we_now)
+[What_we_now](what_we_now)
 
