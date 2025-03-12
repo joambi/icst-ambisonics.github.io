@@ -14,5 +14,5 @@ tags:
 
 [Notes](notes)
 
-[What_we_now](what_we_now)
+[What we now](what_we_now)
 
