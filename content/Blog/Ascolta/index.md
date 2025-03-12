@@ -44,7 +44,7 @@ We look forward to comparing these versions.
 - [**ICST Production**](http://ppeam.zhdk.ch/song/kontakte/)
 - [**UHJ Production**](https://en.wikipedia.org/wiki/Ambisonic_UHJ_format)
 	- **Stereo UHJ**: A process that encodes strictly horizontal [Ambisonics](https://de.wikipedia.org/wiki/Ambisonics) signals into a compatible two-channel stereo format using matrix technology originally developed for [Quadraphonics](https://en.wikipedia.org/wiki/Quadraphonic_sound). However, this encoding is lossy.
-	- We decoded the original UHJ into a **7th-order ambiX B-format** and used the **I[CST Ambisonics MultiDecoder**(https://ambisonics.ch/home/)] for playback.
+	- We decoded the original UHJ into a **7th-order ambiX B-format** and used the [ICST Ambisonics MultiDecoder](https://ambisonics.ch/home/)] for playback.
 
 ---
 
