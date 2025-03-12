@@ -25,7 +25,7 @@ For full details, check out the official documentation:
 
 - **Bidirectional Solo & Mute**  
 - **Keyboard Shortcuts:** Shift & Control (Mac)
-  ![bidi_mute](NEW/bidi_mute.gif)
+  ![bidi_mute](bidi_mute.gif)
 ### **New Layout**
 
 - **Speaker Settings**
