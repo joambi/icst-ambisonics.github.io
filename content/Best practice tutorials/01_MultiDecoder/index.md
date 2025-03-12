@@ -5,7 +5,7 @@ params:
   author: Johannes Schuett
 weight: 10
 tags: 
-title:
+title: Multi-Decoder
 ---
 
 # 01_MultiDecoder
@@ -54,16 +54,6 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
     - Bidirectional mute & solo (Shift + Ctrl + "M" or "S")
 	
 	![MultiDecoder](content/Best%20practice%20tutorials/01_MultiDecoder/MultiDecoder.gif)
-
-### Encoder:
-
-- Bugfixes
-
-### OSC:
-
-- Group manipulation with absolute angles
-
-  ![osc-decoder-euler-absolute](content/Best%20practice%20tutorials/01_MultiDecoder/osc-decoder-euler-absolute.gif)
 
 * * *
 ©2025 ICST

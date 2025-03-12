@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/01_overview/index.md",
+                "file": "content/Best practice tutorials/01_MultiDecoder/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -200,6 +200,8 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/Blog/NEW/index.md",
+    "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/HOME/index.md",
     "content/Blog/_index.md",
     "content/Blog/Ascolta/index.md",
@@ -223,10 +225,8 @@
     "public/blog/ascolta",
     "public/best-practice-tutorials/01_multidecoder",
     "public/best-practice-tutorials",
-    "content/Blog/NEW/index.md",
     "content/About/index.md",
     "content/ICST Ambisonics Plugins/_index.md",
-    "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "content/Blog/Ascolta",
     "content/Links/index.md",

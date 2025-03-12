@@ -18,14 +18,13 @@ We’re excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a new *
 For full details, check out the official documentation: 
 📖 **Documentation:** [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 
-
 ---
 # ICST AmbiDecoder v3.1
 
 ### **New Features & Enhancements**
 
 - **Bidirectional Solo & Mute**  
-- **Keyboard Shortcuts:** Shift & Control (Mac)
+- **Keyboard Shortcuts (Mac):** shift & control 's' / shift & control 'm'
   ![bidi_mute](bidi_mute.gif)
 ### **New Layout**
 
