@@ -5,6 +5,7 @@ title: NEW
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ----
+
 # **ICST Ambisonics Plugins v3.1 Now Available!**
 
 **Download:** [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
