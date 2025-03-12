@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/01_MultiDecoder/index.md",
+                "file": "content/Tutorials/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -198,13 +198,14 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/Tutorials/Info.md",
     "content/Tutorials/_index.md",
+    "content/Tutorials/01_MultiDecoder/index.md",
     "content/Blog/NOTES/index.md",
     "content/Blog/_index.md",
     "content/Blog/NEW/index.md",
     "content/Blog/NEW/Layout_v3_1.png",
     "content/Blog/NEW/Untitled.md",
-    "content/Tutorials/01_MultiDecoder/index.md",
     "notes.md",
     "content/About/index.md",
     "content/ICST Ambisonics Plugins/_index.md",
@@ -215,7 +216,6 @@
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_edit_scaled.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_edit.png.sb-26ad3a7a-0nvgCz",
-    "content/Tutorials/Info.md",
     "content/Blog/What_we_now/index.md",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
     "public/blog/index.xml",
