@@ -5,7 +5,6 @@ title: NEW
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ----
-
 # **ICST Ambisonics Plugins v3.1 Now Available!**
 
 **Download:** [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
@@ -13,68 +12,69 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ----
 ## **What’s New in v3.1?**
 
-We're excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a **multi-decoder** that integrates the latest insights from our empirical research. With four distinct **weightings** and **filter banks**, you can now refine up to four loudspeaker arrays for a more detailed and spatially precise **B-format** audio experience.
+We’re excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a new **multi-decoder** that incorporates the latest empirical research. With four **weightings** and **filter banks**, you can now fine-tune up to four loudspeaker arrays for a more detailed and spatially accurate **B-format** audio experience.
 
-Please refer to the official documentation in our Github wiki:
+For full details, check out the official documentation: 
 📖 **Documentation:** [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 
 ---
-# ICST AmbiDecoder
+# ICST AmbiDecoder v3.1
 
-### **General Enhancements**
+### **New Features & Enhancements**
 
-- **Bidirectional Solo & Mute**
-  ![bidi_mute](content/Blog/NEW/bidi_mute.gif)
+- **Bidirectional Solo & Mute**  
 - **Keyboard Shortcuts:** Shift & Control (Mac)
+  ![bidi_mute](content/Blog/NEW/bidi_mute.gif)
+### **New Layout**
 
-# Settings 
-#### New  Layout 
-
-![New_layout](content/Blog/NEW/Layout_v3_1.png)
-- **Speaker**
-- **Decoding**
-- **Filter**
-- **Options**
-- **? (Feature coming soon)**
-
-### New CSV export features
-
+- **Speaker Settings**
+- **Decoding Settings**
+- **Filter Options**
+- **Additional Features (coming soon)**
+  ![New_layout](content/Blog/NEW/Layout_v3_1.png)
+### **New CSV Export Features**
+- Export decoder "speaker coordinates" to Max via CSV (and vice versa).
+- Backup and export all presets as XML.
+- Import backup presets.
 ![CSV](content/Blog/NEW/Speaker_setting_managment.gif)
-
 ### New Multi-Decoder Mode
+
+- Four independent decoders with customizable names and colors.
+- Individual speaker selection/deselection.
+- Custom Ambisonic orders per decoder.
+- Independent volume, weighting, and filter control for each decoder.
+- Muting for each decoder.
+
+📖 [**MultiDecoder Tutorial**] ()  
+💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki).
 
 ![MultiDecoder](content/Blog/NEW/Multidecoder.png)
 
-- Four independent decoders with unique names and colors
-- Individual selection/deselection of speakers
-- Customizable Ambisonic orders per decoder
-- Independent weighting and volume control for each decoder
-- Dedicated filter ranges per decoder
-- Individual muting for each decoder
-
-📖 [**MultiDecoder tutorial**] ()
-💡  For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki).
-
 ---
-# ICST AmbiEecoder
+# **ICST AmbiEncoder v3.1**
 
-# Settings 
-#### New  Layout 
+### **New Features & Layout**
+
+- New Tap Layout
+- Ambisonics Order Menu
+-  Bidirectional Mute & Solo
 ![Enc_layout](content/Blog/NEW/Enc_layout.png)
-- New Tap layout
-- Ambisonics Oder Menu
-- Bidirectional Mute & Solo
+Ex. Layout
 ![Enc_M_S](content/Blog/NEW/Enc_M_S.gif)
 Ex. Mute & Solo (bidirectional)
-### OSC 
-  
-Easily manipulate groups over **OSC** using absolute **Euler angles**.
-- Activate the OSC port (e.g., **50001**)
+
+### **OSC Control**
+
+Easily manipulate groups via **OSC** using absolute **Euler angles**:
+
+- Activate OSC port (e.g., **50001**)  
+- Send absolute angles externally for movement control  
+
+🔹 **Example:** OSC from Max 9.0 to ICST AmbiEncoder  
+💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).
   ![osc-port](content/Blog/NEW/osc-port.png)
 - Send absolute angles externally to control movement
 ![Ab_Grad_euler](content/Blog/NEW/absolut_euler.gif)
-🔹 **Example:** OSC from Max 9.0 to ICST AmbiEncoder
-💡  For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).
 
 ---
 ©2025 ICST
