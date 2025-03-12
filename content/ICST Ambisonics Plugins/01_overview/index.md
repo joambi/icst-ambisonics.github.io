@@ -34,7 +34,7 @@ Find individual pages here:
 -  Documentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
 - Tutorials, Blog: <https://ambisonics.ch/home/>
 - Youtube: [https://www.youtube.com/\@ICSTAmbisonics](https://www.youtube.com/@ICSTAmbisonics)
-- Warning:  LV2 is very experimental
+- <span style="color:rgb(220, 20, 60)">Warning</span>:  LV2 is very experimental
 
 **Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>**
 
