@@ -38,6 +38,8 @@ In **Reaper**, the signal flow appears as follows:
 - **B-format (ambiX) Player**
 - **MultiEncoder** with 16-channel mono sources as child tracks
 
+![Ambi_Signalflow](Ambi_Signalflow.jpg)
+
 Of course, you can also customize your workflow to fit your needs!
 
 ----
