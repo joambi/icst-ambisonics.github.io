@@ -27,9 +27,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/About/index.md",
+                "file": "content/ICST Ambisonics Tools/index.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "index"
@@ -198,6 +199,8 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/About/index.md",
+    "content/ICST Ambisonics Tools/index.md",
     "content/Tutorials/_index.md",
     "content/Tutorials/Info.md",
     "content/Tutorials/01_MultiDecoder/index.md",
@@ -207,7 +210,6 @@
     "content/Blog/NEW/Layout_v3_1.png",
     "content/Blog/NEW/Untitled.md",
     "notes.md",
-    "content/About/index.md",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "ist.md",
@@ -235,7 +237,6 @@
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/Tutorials/01_Decoder/03.1_quickstart.md",
     "03_how_it_works.md",
-    "content/ICST Ambisonics Tools/index.md",
     "content/HOME/index.md",
     "what.md",
     "content/ICST Ambisonics Plugins/05_open_track_templates/index.md",
