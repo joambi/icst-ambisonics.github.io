@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/About/index.md",
+                "file": "content/Blog/NEW/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,9 +198,9 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/About/index.md",
     "content/Best practice tutorials/_index.md",
     "content/Best practice tutorials/Info.md",
-    "content/About/index.md",
     "content/ICST Ambisonics Tools/index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
     "content/ICST Ambisonics Plugins/_index.md",
