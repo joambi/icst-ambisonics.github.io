@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
+                "file": "content/Best practice tutorials/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -198,21 +198,21 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/Best practice tutorials/Info.md",
+    "content/Best practice tutorials/_index.md",
+    "content/About/index.md",
+    "content/ICST Ambisonics Tools/index.md",
+    "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/Ambi_Signalflow.jpg",
-    "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/03_reaper_workflow.png",
     "content/ICST Ambisonics Plugins/03_how_it_works/02_workflow.png",
     "content/ICST Ambisonics Plugins/03_how_it_works/02_Bformat_Mastertrack.png",
     "content/ICST Ambisonics Plugins/03_how_it_works/01_easy_workflow.png",
     "content/ICST Ambisonics Plugins/03_how_it_works/track_color.png",
-    "content/ICST Ambisonics Tools/index.md",
     "content/ICST Ambisonics Tools/large-1.jpg",
     "content/ICST Ambisonics Tools/max-externals.png",
-    "content/About/index.md",
-    "content/Tutorials/_index.md",
-    "content/Tutorials/Info.md",
-    "content/Tutorials/01_MultiDecoder/index.md",
+    "content/Best practice tutorials/01_MultiDecoder/index.md",
     "content/Blog/NOTES/index.md",
     "content/Blog/_index.md",
     "content/Blog/NEW/index.md",

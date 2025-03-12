@@ -28,10 +28,10 @@ A central result of this work is the **ICST Ambisonics Tools** – a collection 
 
 This site is intended to provide an overview and information on the Ambisonics activities at the ICST. 
 
-- [ICST Ambisonics Max Externals](obsidian://open?vault=icst-ambisonics.github.io&file=content%2FICST%20Ambisonics%20Tools%2Findex)
-- ICST Ambisonics Plugins
-- Good practice tutorials
-- Blog 
+- [ICST Ambisonics Max Externals](https://ambisonics.ch/icst-ambisonics-tools/)
+- [ICST Ambisonics Plugins](https://ambisonics.ch/icst-ambisonics-plugins/01_overview/)
+- [Best practice tutorials]()
+- [Blog]()
 
 ----
 ©2025 ICST

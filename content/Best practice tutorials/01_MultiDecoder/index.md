@@ -20,7 +20,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 	* Filter
 	* Options
 
-    ![Speaker_setting_managment | 450](content/Tutorials/01_MultiDecoder/Speaker_setting_managment.gif)
+    ![Speaker_setting_managment | 450](content/Best%20practice%20tutorials/01_MultiDecoder/Speaker_setting_managment.gif)
 
 ----
 
@@ -35,7 +35,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 - Ambisonics order: 1st(4ch) to 7th (64ch)!
 
-	![decoder_weights](decoder_weights.gif)
+	![decoder_weights](content/Best%20practice%20tutorials/01_MultiDecoder/decoder_weights.gif)
 
 ### Multi-Decoder allows up to 4 decoder units to operate in parallel:
 - Activate Multi-Decoder mode
@@ -53,7 +53,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
     - Mute
     - Bidirectional mute & solo (Shift + Ctrl + "M" or "S")
 	
-	![MultiDecoder](MultiDecoder.gif)
+	![MultiDecoder](content/Best%20practice%20tutorials/01_MultiDecoder/MultiDecoder.gif)
 
 ### Encoder:
 
@@ -63,7 +63,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 - Group manipulation with absolute angles
 
-  ![osc-decoder-euler-absolute](osc-decoder-euler-absolute.gif)
+  ![osc-decoder-euler-absolute](content/Best%20practice%20tutorials/01_MultiDecoder/osc-decoder-euler-absolute.gif)
 
 * * *
 ©2025 ICST
