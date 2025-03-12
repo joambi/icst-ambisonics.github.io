@@ -38,6 +38,14 @@ For full details, check out the official documentation:
 - Backup and export all presets as XML.
 - Import backup presets.
 ![CSV](Speaker_setting_managment.gif)
+
+### Improved filter user interface
+
+- 8 different filter options
+	![filters](filters.png)
+	
+![filter UI](filter_UI.png)
+
 ### New Multi-Decoder Mode
 
 - Four independent decoders with customizable names and colors.
@@ -93,10 +101,10 @@ Easily manipulate groups via **OSC** using absolute **Euler angles**:
 
 ** Encoders**:
 
-- Distance scaler initialization
+- The output of the decoder audio channel was not initialized correctly.
 - Radar frame disappears
-- Number flipping
-- 
+- Point Labels flip was brocken
+- If you close the OSC plugin window without first closing the OSC Javascript window, Reaper will crash.
 
 ---
 ©2025 ICST
