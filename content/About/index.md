@@ -9,26 +9,29 @@ tags:
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
-
-This site is under construction!
-
-
 # About
 
-Das [Institute for Computer Music and Sound Technology] (ICST) ist eine Forschungs- und Bildungseinrichtung an der [Zürcher Hochschule der Künste]() (ZHdK). Es konzentriert sich auf die Erforschung und Entwicklung neuer Technologien für Musik, Klangkunst und Medienproduktion. Ein zentrales Ergebnis dieser Arbeit ist die Entwicklung der ICST Ambisonics Tools, einer Sammlung von Software-Externals für Max/MSP, die eine umfassende 3D-Surround-Audiobearbeitung ermöglichen. Diese Tools wurden über mehr als zwei Jahrzehnte hinweg durch Forschung, Entwicklung und künstlerische Anwendung am ICST entwickelt und sind öffentlich zugänglich. 
+The **Institute for Computer Music and Sound Technology** ([ICST](https://www.zhdk.ch/forschung/icst)) is a research and educational institution at the **Zurich University of the Arts** ([ZHdK](https://www.zhdk.ch/)). 
 
-Schwerpunkte des ICST sind:
+The ICST is dedicated to the development of new technologies for music, sound art and media production. The main areas of focus at the ICST are:
+  
+Ambisonics & Spatial Sound:   
+Development of tools and plugins for 3D audio, including the **ICST Ambisonics Tools** for Max/MSP and **ICST Ambisonics Plugins** for DAWs.  
+  
+Sound Research & Perception:   
+Investigation of acoustic perception, algorithmic composition and interactive sound spaces.  
 
-- **Ambisonics & Raumklang**: 
-	- Entwicklung von Software-Tools und Plugins für 3D-Audio, darunter die **ICST [Ambisonics Tools** für Max/MSP](https://www.zhdk.ch/en/researchproject/ambisonics-580119?) und die **I[CST Ambisonics Plugins**]() für DAWs
-- **Klangforschung & Wahrnehmung**: 
-	- Untersuchungen zu akustischer Wahrnehmung, algorithmischer Komposition und interaktiven Klangräumen.
-- **Musik & Medienkunst**: 
-	- Unterstützung von künstlerischen Projekten in den Bereichen elektroakustische Musik, Sounddesign und immersive Audioformate.
+Music & Media Art:   
+supporting artistic projects in the areas of electroacoustic music, sound design, and immersive audio formats.
 
-- Ein weiterer bemerkenswerter Beitrag ist das Projekt **"Spatialization Symbolic Music Notation"** (SSMN). Dieses zielt darauf ab, ein konzeptionelles Framework und ein Toolset zu entwickeln, das es Komponisten ermöglicht, die Räumlichkeit von Musik von Anfang an in die Notation zu integrieren. [blog.zhdk.ch](https://blog.zhdk.ch/ssmn/files/2014/10/Spatialization-Symbolic-Music-Notation-at-ICST.pdf?utm_source=chatgpt.com)
+A central result of this work is the **ICST Ambisonics Tools** – a collection of Max/MSP software externals that enable comprehensive 3D surround audio editing. These tools have been developed over more than two decades and are publicly available. With the ICST Ambisonics plugins, most of the features of the Max externals are now also available as VST/AU/LV2 plugins for DAWs. The AmbiPlugins are being further developed and are currently available in [version 3.1.0](https://github.com/schweizerweb/icst-ambisonics-plugins).
 
-Das ICST arbeitet mit internationalen Institutionen zusammen und bietet Software sowie Publikationen für Forschende und Künstler an.
+This site is intended to provide an overview and information on the Ambisonics activities at the ICST. 
 
+- [ICST Ambisonics Max Externals](../ICST Ambisonics Tools)
+- ICST Ambisonics Plugins
+- Good practice tutorials
+- Blog 
 
-
+----
+©2025 ICST
