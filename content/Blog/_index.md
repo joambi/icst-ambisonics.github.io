@@ -5,9 +5,9 @@ aliases:
   - blog
   - showcase
   - docs
-title: Blog
+title: 
 author: Johannes Schuett
-tags: []
+tags:
 ---
 
 [New](new)
