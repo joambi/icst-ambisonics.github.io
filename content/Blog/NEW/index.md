@@ -51,6 +51,13 @@ For full details, check out the official documentation:
 
 ![MultiDecoder](Multidecoder.png)
 
+### New Project-templates
+
+- ICST_AmbiPlugins_MonoEncoder
+- ICST_AmbiPlugins_MultiEncoder
+
+#### New Track Templates
+
 ---
 # **ICST AmbiEncoder v3.1**
 
@@ -75,7 +82,7 @@ Easily manipulate groups via **OSC** using absolute **Euler angles**:
 💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).
   ![osc-port](osc-port.png)
 - Send absolute angles externally to control movement
-![Ab_Grad_euler](content/Blog/NEW/absolut_euler.gif)
+![Ab_Grad_euler](absolut_euler.gif)
 
 ---
 ©2025 ICST

@@ -198,8 +198,11 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
-    "Evernote/Decoder/Decoder.md",
+    "content/Blog/NEW/Track_temp_icst.png",
+    "content/Blog/NEW/Track_temp_3rd.png",
+    "content/Blog/NOTES/index.md",
     "content/Blog/NEW/index.md",
+    "Evernote/Decoder/Decoder.md",
     "Evernote/Decoder/_resources/Decoder.resources/ZDec_02_zoom.gif",
     "Evernote/Decoder/_resources/Decoder.resources/Speaker_settings_und__unsaved_project__-_REAPER_v5.png",
     "Evernote/Decoder/_resources/Decoder.resources/Speaker_settings_und_VST3__AmbiDecoder_O1_32CH__IC.png",
@@ -218,9 +221,7 @@
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/Ambi_Signalflow.jpg",
-    "content/ICST Ambisonics Plugins/03_how_it_works/03_reaper_workflow.png",
     "content/Best practice tutorials/01_MultiDecoder/index.md",
-    "content/Blog/NOTES/index.md",
     "content/Blog/_index.md",
     "content/Blog/NEW/Untitled.md",
     "notes.md",
@@ -243,7 +244,6 @@
     "content/ICST Ambisonics Plugins/05_open_track_templates/index.md",
     "content/ICST Ambisonics Plugins/04_quick_start/index.md",
     "ICST Ambisonics Site Struktur.canvas",
-    "06_step_by_step_setup.md",
-    "04_MultiDecoder.md"
+    "06_step_by_step_setup.md"
   ]
 }
