@@ -44,7 +44,7 @@ For full details, check out the official documentation:
 - 8 different filter options
 	![filters](filters.png)
 	
-![filter UI](filter_UI.png)
+  ![filter UI](filter_UI.png)
 
 ### New Multi-Decoder Mode
 
@@ -80,22 +80,22 @@ For full details, check out the official documentation:
 - Ambisonics Order Menu
 -  Bidirectional Mute & Solo
 ![Enc_layout](Enc_layout.png)
-Ex. Layout
+🔹 **Example:** Layout
 ![Enc_M_S](Enc_M_S.gif)
-Ex. Mute & Solo (bidirectional)
+🔹 **Example:** Mute & Solo (bidirectional)
 
 ### **OSC Control**
 
-Easily manipulate groups via **OSC** using absolute **Euler angles**:
+Easily manipulate groups via **OSC** using absolute **[Euler angles](https://en.wikipedia.org/wiki/Euler_angles)**:
 
 - Activate OSC port (e.g., **50001**)  
-- Send absolute angles externally for movement control  
+- Send absolute angles from externally for movement control in the AmbiEncoder.
 
+![absolut_angel](OSC_abs_angel.gif)
 🔹 **Example:** OSC from Max 9.0 to ICST AmbiEncoder  
+
 💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).
-  ![osc-port](osc-port.png)
-- Send absolute angles externally to control movement
-![Ab_Grad_euler](absolut_euler.gif)
+
 
 ### Bug fixes
 
