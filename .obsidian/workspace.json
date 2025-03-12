@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/_index.md",
+                "file": "content/Tutorials/01_MultiDecoder/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -198,13 +198,13 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/Tutorials/_index.md",
+    "content/Blog/NOTES/index.md",
+    "content/Blog/_index.md",
     "content/Blog/NEW/index.md",
     "content/Blog/NEW/Layout_v3_1.png",
-    "content/Blog/NOTES/index.md",
     "content/Blog/NEW/Untitled.md",
-    "content/Blog/_index.md",
     "content/Tutorials/01_MultiDecoder/index.md",
-    "content/Tutorials/_index.md",
     "notes.md",
     "content/About/index.md",
     "content/ICST Ambisonics Plugins/_index.md",

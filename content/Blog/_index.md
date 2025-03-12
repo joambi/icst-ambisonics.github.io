@@ -5,7 +5,7 @@ aliases:
   - blog
   - showcase
   - docs
-title: Multi-Decoder
+title: 
 author: Johannes Schuett
 tags:
 ---
