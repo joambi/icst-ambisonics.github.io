@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Links/index.md",
+                "file": "content/Blog/Ascolta/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 537.5
+    "width": 286.5
   },
   "right": {
     "id": "37258160c4802e4d",
@@ -200,9 +200,18 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/Blog/NEW/index.md",
+    "content/Blog/Ascolta/index.md",
+    "content/Blog/_index.md",
+    "content/Blog/Ascolta/Rotation table.png",
+    "content/About/index.md",
+    "content/ICST Ambisonics Plugins/_index.md",
+    "content/ICST Ambisonics Plugins/01_overview/index.md",
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
+    "content/Blog/Ascolta",
+    "content/Links/index.md",
     "content/Blog/What_we_now/index.md",
     "content/Blog/NOTES/index.md",
-    "content/Blog/NEW/index.md",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
     "content/Blog/NEW/osc-port.png",
     "content/Blog/NEW/settings.png",
@@ -210,26 +219,20 @@
     "content/Blog/NEW/youtube_em.png",
     "content/Blog/NEW/youtube.png",
     "content/Blog/NEW/1202-youtube-759723749.png",
-    "content/Links/index.md",
     "content/Blog/NEW/OSC_abs_angel.gif",
     "content/Blog/NEW/absolut_euler.gif",
     "content/Blog/NEW/filters.png",
-    "content/Blog/NEW/filter_UI.png",
     "Evernote/Decoder/Decoder.md",
     "Evernote/Decoder/_resources/Decoder.resources",
     "Evernote/Decoder/_resources",
     "Evernote/Decoder",
-    "content/About/index.md",
     "content/Best practice tutorials/_index.md",
     "content/Best practice tutorials/Info.md",
     "content/ICST Ambisonics Tools/index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
-    "content/ICST Ambisonics Plugins/_index.md",
     "content/Best practice tutorials/01_MultiDecoder/index.md",
-    "content/Blog/_index.md",
     "content/Blog/NEW/Untitled.md",
     "notes.md",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "ist.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png.sb-26ad3a7a-boDjp1",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_edit.png.sb-26ad3a7a-0nvgCz",
@@ -237,14 +240,11 @@
     "public/blog/new/index.html",
     "public/blog/notes/index.html",
     "public/blog/notes",
-    "public/blog/what_we_now/index.html",
-    "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/Tutorials/01_Decoder/03.1_quickstart.md",
     "03_how_it_works.md",
     "content/HOME/index.md",
     "what.md",
     "content/ICST Ambisonics Plugins/05_open_track_templates/index.md",
-    "content/ICST Ambisonics Plugins/04_quick_start/index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }

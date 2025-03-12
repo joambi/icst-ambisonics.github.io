@@ -4,7 +4,7 @@ date:
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-## 03 ## Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper
+### Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper
 
 ### Prerequisites
 
