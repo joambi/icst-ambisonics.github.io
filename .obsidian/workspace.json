@@ -29,8 +29,7 @@
               "state": {
                 "file": "content/ICST Ambisonics Tools/index.md",
                 "mode": "source",
-                "source": false,
-                "backlinks": false
+                "source": false
               },
               "icon": "lucide-file",
               "title": "index"
@@ -199,8 +198,10 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
-    "content/About/index.md",
+    "content/ICST Ambisonics Tools/large-1.jpg",
+    "content/ICST Ambisonics Tools/max-externals.png",
     "content/ICST Ambisonics Tools/index.md",
+    "content/About/index.md",
     "content/Tutorials/_index.md",
     "content/Tutorials/Info.md",
     "content/Tutorials/01_MultiDecoder/index.md",
@@ -231,7 +232,6 @@
     "public/blog/notes",
     "public/blog/what_we_now/index.html",
     "public/blog/what_we_now",
-    "public/blog/new/Multidecoder.png",
     "public/blog/new",
     "public/tutorials/01_multidecoder/index.html",
     "content/ICST Ambisonics Plugins/01_overview/index.md",

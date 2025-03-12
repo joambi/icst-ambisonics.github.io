@@ -15,8 +15,17 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ### ICST Ambisonics Tools
 
-A collection of **MaxMSP externals** for **Ambisonics** surround sound processing and 3D source control. Developed through research and practice since 2000, these tools have been extensively tested and used in concerts, compositions, and installations.
+![ICST Tools](large-1.jpg)
 
+A collection of **MaxMSP externals** for **Ambisonics** surround sound processing and 3D source control. Developed through research and practice since 2000, these tools have been extensively tested and used in concerts, compositions, and installations.
+  
+- The tools have found broad adoption in the audio community and are applied in music studios, dedicated listening spaces and acoustics labs worldwide.  
+  
+- As an extension for the MaxMSP audio environment it also powers spatial audio workflows in Ableton Live, a widely used production tool for electronic music.  
+  
+- The current release represents an important update in which almost every aspect of the tools has been reworked, refined and extended.  
+  
+First released in 2003, this new version will give the users of the ICST Ambisonics Tools a solid foundation for further years of advanced spatial music and sound productions.
 #### **Included Externals:**
 
 ![max-external](max-externals.png)
