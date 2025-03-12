@@ -25,19 +25,19 @@ For full details, check out the official documentation:
 
 - **Bidirectional Solo & Mute**  
 - **Keyboard Shortcuts:** Shift & Control (Mac)
-  ![bidi_mute](content/Blog/NEW/bidi_mute.gif)
+  ![bidi_mute](NEW/bidi_mute.gif)
 ### **New Layout**
 
 - **Speaker Settings**
 - **Decoding Settings**
 - **Filter Options**
 - **Additional Features (coming soon)**
-  ![New_layout](content/Blog/NEW/Layout_v3_1.png)
+  ![New_layout](Layout_v3_1.png)
 ### **New CSV Export Features**
 - Export decoder "speaker coordinates" to Max via CSV (and vice versa).
 - Backup and export all presets as XML.
 - Import backup presets.
-![CSV](content/Blog/NEW/Speaker_setting_managment.gif)
+![CSV](Speaker_setting_managment.gif)
 ### New Multi-Decoder Mode
 
 - Four independent decoders with customizable names and colors.
@@ -49,7 +49,7 @@ For full details, check out the official documentation:
 📖 [**MultiDecoder Tutorial**] ()  
 💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki).
 
-![MultiDecoder](content/Blog/NEW/Multidecoder.png)
+![MultiDecoder](Multidecoder.png)
 
 ---
 # **ICST AmbiEncoder v3.1**
@@ -59,9 +59,9 @@ For full details, check out the official documentation:
 - New Tap Layout
 - Ambisonics Order Menu
 -  Bidirectional Mute & Solo
-![Enc_layout](content/Blog/NEW/Enc_layout.png)
+![Enc_layout](Enc_layout.png)
 Ex. Layout
-![Enc_M_S](content/Blog/NEW/Enc_M_S.gif)
+![Enc_M_S](Enc_M_S.gif)
 Ex. Mute & Solo (bidirectional)
 
 ### **OSC Control**
@@ -73,7 +73,7 @@ Easily manipulate groups via **OSC** using absolute **Euler angles**:
 
 🔹 **Example:** OSC from Max 9.0 to ICST AmbiEncoder  
 💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).
-  ![osc-port](content/Blog/NEW/osc-port.png)
+  ![osc-port](osc-port.png)
 - Send absolute angles externally to control movement
 ![Ab_Grad_euler](content/Blog/NEW/absolut_euler.gif)
 
