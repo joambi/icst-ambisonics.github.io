@@ -5,7 +5,7 @@ params:
   author: Johannes Schuett
 weight: 10
 tags: 
-title: 01_Overview
+title:
 ---
 
 
@@ -22,16 +22,19 @@ The ICST Ambisonics plugins consist of the following plugin formats:
     (LV2 version does NOT support automation parameters at this time)
 
 Find individual pages here:
-[ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder
+
+[What is New](https://ambisonics.ch/blog/new/)
+
+[ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder)
+
 [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
 
 **Free download here:**
--   Binary Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
--   Documentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
--   Tutorials, Blog: <https://joambi.github.io/icst-ambisonics.github.io/home/>
--   Youtube: [https://www.youtube.com/\@ICSTAmbisonics](https://www.youtube.com/@ICSTAmbisonics)
-
-Issues: LV2 is very experimental
+-  Binary Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
+-  Documentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
+- Tutorials, Blog: <https://ambisonics.ch/home/>
+- Youtube: [https://www.youtube.com/\@ICSTAmbisonics](https://www.youtube.com/@ICSTAmbisonics)
+- Warning:  LV2 is very experimental
 
 **Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>**
 

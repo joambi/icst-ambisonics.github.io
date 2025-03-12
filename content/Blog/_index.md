@@ -12,7 +12,7 @@ tags:
 
 [New](new)
 
-[Ascolta](ascolta)
+[Ascolta Akusmatische Hörstunde](ascolta)
 
 [Notes](notes)
 

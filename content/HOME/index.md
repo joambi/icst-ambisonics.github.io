@@ -18,7 +18,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 	![Overview_v3.1](Overview_v3.1.png)
 	Info at ZHdK: https://www.zhdk.ch/forschungsprojekt/icst-ambisonics-plugins-555245
-
+  
 ---
 
 - ### The Ambisonics Tools (Max 8.0)
