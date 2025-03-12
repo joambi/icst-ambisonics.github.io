@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/NEW/index.md",
+                "file": "content/Links/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -193,25 +193,29 @@
       "command-palette:Open command palette": false,
       "obsidian-importer:Open Importer": false,
       "github-sync:Sync with Remote": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "iconic:Open rulebook": false,
+      "image-preview-on-icon-hover:1741787233889": false
     }
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
-    "content/Links/index.md",
+    "content/Blog/What_we_now/index.md",
+    "content/Blog/NOTES/index.md",
     "content/Blog/NEW/index.md",
+    "content/ICST Ambisonics Plugins/02_installation/index.md",
+    "content/Blog/NEW/osc-port.png",
+    "content/Blog/NEW/settings.png",
+    "content/Blog/NEW/bidi_mute.gif",
+    "content/Blog/NEW/youtube_em.png",
+    "content/Blog/NEW/youtube.png",
+    "content/Blog/NEW/1202-youtube-759723749.png",
+    "content/Links/index.md",
     "content/Blog/NEW/OSC_abs_angel.gif",
     "content/Blog/NEW/absolut_euler.gif",
     "content/Blog/NEW/filters.png",
     "content/Blog/NEW/filter_UI.png",
-    "content/Blog/NEW/Track_temp_icst.png",
-    "content/Blog/NEW/Track_temp_3rd.png",
-    "content/Blog/NOTES/index.md",
     "Evernote/Decoder/Decoder.md",
-    "Evernote/Decoder/_resources/Decoder.resources/ZDec_02_zoom.gif",
-    "Evernote/Decoder/_resources/Decoder.resources/Speaker_settings_und__unsaved_project__-_REAPER_v5.png",
-    "Evernote/Decoder/_resources/Decoder.resources/Speaker_settings_und_VST3__AmbiDecoder_O1_32CH__IC.png",
-    "Evernote/Decoder/_resources/Decoder.resources/Speaker_settings_und_VST3__AmbiDecoder_O1_32CH__IC.1.png",
     "Evernote/Decoder/_resources/Decoder.resources",
     "Evernote/Decoder/_resources",
     "Evernote/Decoder",
@@ -229,8 +233,6 @@
     "ist.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png.sb-26ad3a7a-boDjp1",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_edit.png.sb-26ad3a7a-0nvgCz",
-    "content/Blog/What_we_now/index.md",
-    "content/ICST Ambisonics Plugins/02_installation/index.md",
     "public/blog/index.xml",
     "public/blog/new/index.html",
     "public/blog/notes/index.html",
@@ -243,7 +245,6 @@
     "what.md",
     "content/ICST Ambisonics Plugins/05_open_track_templates/index.md",
     "content/ICST Ambisonics Plugins/04_quick_start/index.md",
-    "ICST Ambisonics Site Struktur.canvas",
-    "06_step_by_step_setup.md"
+    "ICST Ambisonics Site Struktur.canvas"
   ]
 }

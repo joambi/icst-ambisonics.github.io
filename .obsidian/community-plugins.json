@@ -2,5 +2,7 @@
   "obsidian-importer",
   "github-sync",
   "obsidian-git",
-  "obsidian-local-images"
+  "obsidian-local-images",
+  "image-preview-on-icon-hover",
+  "emoji-magic"
 ]

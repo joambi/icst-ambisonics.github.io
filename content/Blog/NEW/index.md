@@ -18,6 +18,7 @@ We’re excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a new *
 For full details, check out the official documentation: 
 📖 **Documentation:** [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 
+
 ---
 # ICST AmbiDecoder v3.1
 
@@ -96,10 +97,8 @@ Easily manipulate groups via **OSC** using absolute **[Euler angles](https://en.
 
 💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).
 
-
+---
 ### Bug fixes
-
-** Encoders**:
 
 - The output of the decoder audio channel was not initialized correctly.
 - Radar frame disappears
