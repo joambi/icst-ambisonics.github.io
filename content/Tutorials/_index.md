@@ -2,6 +2,6 @@
 date:
 ---
 
-[info](info)
+[Info](info)
 
-[Multi-Decoder](multi-decoder)
+[Multi-Decoder](01_multidecoder)
