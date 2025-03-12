@@ -8,7 +8,7 @@ tags:
 title:
 ---
 
-# MultiDecoder
+# Multi-Decoder
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

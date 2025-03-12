@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Tutorials/_index.md",
+                "file": "content/Blog/_index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,14 +198,18 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
-    "content/Tutorials/01_MultiDecoder/index.md",
+    "content/Blog/NEW/index.md",
+    "content/Blog/NEW/Layout_v3_1.png",
+    "content/Blog/NOTES/index.md",
+    "content/Blog/NEW/Untitled.md",
     "content/Blog/_index.md",
+    "content/Tutorials/01_MultiDecoder/index.md",
+    "content/Tutorials/_index.md",
     "notes.md",
     "content/About/index.md",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "ist.md",
-    "content/Tutorials/_index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png.sb-26ad3a7a-boDjp1",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/GP_select_scaled.png",
@@ -226,12 +230,9 @@
     "public/blog/what_we_now/index.html",
     "public/blog/what_we_now",
     "public/blog/new/Multidecoder.png",
-    "public/blog/new/Layout_v3_1.png",
     "public/blog/new",
-    "content/Blog/NEW/index.md",
     "public/tutorials/01_multidecoder/index.html",
     "content/ICST Ambisonics Plugins/01_overview/index.md",
-    "content/Blog/NOTES/index.md",
     "content/Tutorials/01_Decoder/03.1_quickstart.md",
     "03_how_it_works.md",
     "content/ICST Ambisonics Tools/index.md",
@@ -242,8 +243,6 @@
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
     "ICST Ambisonics Site Struktur.canvas",
     "06_step_by_step_setup.md",
-    "04_MultiDecoder.md",
-    "Evernote/Create a workflow with ICST Ambisonics Plugins in Reaper/Create a workflow with ICST Ambisonics Plugins in Reaper.md",
-    "content/Tutorials/03_how_it_works/index 1.md"
+    "04_MultiDecoder.md"
   ]
 }
