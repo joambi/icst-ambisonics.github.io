@@ -56,7 +56,12 @@ For full details, check out the official documentation:
 - ICST_AmbiPlugins_MonoEncoder
 - ICST_AmbiPlugins_MultiEncoder
 
-#### New Track Templates
+### New Track Templates
+
+- ICST AmbiPlugins
+  ![ICST | 400](Track_temp_icst.png)
+- ICST AmbiPlugins 3rdParty
+  ![3rdParty | 400](Track_temp_3rd.png)
 
 ---
 # **ICST AmbiEncoder v3.1**
@@ -83,6 +88,15 @@ Easily manipulate groups via **OSC** using absolute **Euler angles**:
   ![osc-port](osc-port.png)
 - Send absolute angles externally to control movement
 ![Ab_Grad_euler](absolut_euler.gif)
+
+### Bug fixes
+
+** Encoders**:
+
+- Distance scaler initialization
+- Radar frame disappears
+- Number flipping
+- 
 
 ---
 ©2025 ICST
