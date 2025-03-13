@@ -14,7 +14,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 * * *
 ### OSC <-->  Max to AmbiEncoder
 
-open the 
+
 
 * * *
 ©2025 ICST
