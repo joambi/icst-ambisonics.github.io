@@ -1,12 +1,12 @@
 ---
 tags: 
-date: 2025-03-13T16:30:00
 title: osc-send-for-osc-learning-in-reaper
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
 # osc-send-for-osc-learning-in-reaper
+
 
 1. Activate  the OSC in Reaper
 
@@ -26,7 +26,6 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 Picture A: Zero Distance = Wet of the FX ReaVerb 0.0dB
 Picture B: Distance  1.0 =  Wet of the FX ReaVerb +6.0dB
-
 
 * * *
 ©2025 ICST
