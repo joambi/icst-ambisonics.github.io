@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/Ascolta/index.md",
+                "file": "content/Blog/NEW/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -200,6 +200,7 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/Blog/Ascolta/index.md",
     "content/ICST Ambisonics Tools/large-1.jpg",
     "content/ICST Ambisonics Tools/Amb_Max.gif",
     "content/ICST Ambisonics Tools/max-externals.png",
@@ -209,7 +210,6 @@
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/HOME/index.md",
     "content/Blog/_index.md",
-    "content/Blog/Ascolta/index.md",
     "Rotation.md",
     "content/Blog/Ascolta/rotations_tabel.png",
     "public/blog/ascolta/rotations_tabel.png",
@@ -224,7 +224,6 @@
     "public/blog/ascolta/index.html",
     "public/best-practice-tutorials/info/index.html",
     "public/best-practice-tutorials/info",
-    "public/blog/new/youtube_em.png",
     "public/blog/ascolta",
     "public/best-practice-tutorials/01_multidecoder",
     "public/best-practice-tutorials",
