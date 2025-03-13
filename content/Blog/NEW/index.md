@@ -1,6 +1,5 @@
 ---
 title: NEW
-date: 2025-03-13T09:00:00
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
