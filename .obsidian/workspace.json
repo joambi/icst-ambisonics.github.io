@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Best practice tutorials/01_MultiDecoder/index.md",
+                "file": "content/About/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -200,6 +200,7 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/Best practice tutorials/01_MultiDecoder/index.md",
     "content/Blog/NEW/index.md",
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/HOME/index.md",
@@ -238,7 +239,6 @@
     "content/Best practice tutorials/Info.md",
     "content/ICST Ambisonics Tools/index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
-    "content/Best practice tutorials/01_MultiDecoder/index.md",
     "content/Blog/NEW/Untitled.md",
     "notes.md",
     "ist.md",
