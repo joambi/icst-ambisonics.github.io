@@ -18,7 +18,6 @@ _Eintritt frei_ 
 ---
 ### **In dieser Hörstunde widmen wir uns einem Klassiker von Karlheinz Stockhausen:**
 
-  
 ![Kontakte](rotations_tabel.png)
 #### **KONTAKTE**
 No.12: KONTAKTE (Contacts)
