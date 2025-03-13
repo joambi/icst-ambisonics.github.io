@@ -49,10 +49,10 @@ url = "https://github.com/joambi"
   url = "/ICST Ambisonics Tools/"
   
   [[menu.main]]
-  name = "Best practice tutorials"
+  name = "Post"
   weight = 400
-  identifier = "Best practice tutorials"
-  url = "/Best practice tutorials/"
+  identifier = "post"
+  url = "/post/"
   
 
   [[menu.main]]
