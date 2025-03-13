@@ -1,6 +1,7 @@
 ---
 tags: 
 date: 2025-03-13T16:30:00
+title: osc-send-for-osc-learning-in-reaper
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
