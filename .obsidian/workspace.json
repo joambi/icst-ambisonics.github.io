@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/NEW/index.md",
+                "file": "content/post/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -200,13 +200,17 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/post/OSC<-->Max to AmbiEncoder/index.md",
+    "content/post/_index.md",
+    "content/Best practice tutorials/OSC<-->Max to AmbiEncoder/decoder_weights.gif",
+    "content/Best practice tutorials/OSC<-->Max to AmbiEncoder/MultiDecoder.gif",
+    "content/Best practice tutorials/OSC<-->Max to AmbiEncoder/Speaker_setting_managment.gif",
+    "content/Blog/NEW/index.md",
     "content/Blog/Ascolta/index.md",
     "content/ICST Ambisonics Tools/large-1.jpg",
     "content/ICST Ambisonics Tools/Amb_Max.gif",
     "content/ICST Ambisonics Tools/max-externals.png",
     "content/About/index.md",
-    "content/Best practice tutorials/01_MultiDecoder/index.md",
-    "content/Blog/NEW/index.md",
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/HOME/index.md",
     "content/Blog/_index.md",
@@ -216,9 +220,6 @@
     "public/blog/ascolta/rotations_tabel.png.png",
     "public/best-practice-tutorials/index.xml",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/GP_select_scaled.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/GP_edit_scaled.png",
-    "public/icst-ambisonics-tools/large-1.jpg",
-    "public/icst-ambisonics-plugins/03_how_it_works/Ambi_Signalflow.jpg",
     "public/best-practice-tutorials/01_multidecoder/index.html",
     "public/best-practice-tutorials/index.html",
     "public/blog/ascolta/index.html",
@@ -235,8 +236,7 @@
     "content/Blog/NOTES/index.md",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
     "Evernote/Decoder/Decoder.md",
-    "content/Best practice tutorials/_index.md",
-    "content/Best practice tutorials/Info.md",
+    "content/post/Info.md",
     "content/ICST Ambisonics Tools/index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
     "content/Blog/NEW/Untitled.md",

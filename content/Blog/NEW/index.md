@@ -37,7 +37,7 @@ For full details, check out the official documentation:
 - Export decoder "speaker coordinates" to Max via CSV (and vice versa).
 - Backup and export all presets as XML.
 - Import backup presets.
-![CSV](Speaker_setting_managment.gif)
+![CSV](content/Blog/NEW/Speaker_setting_managment.gif)
 
 ### Improved filter user interface
 
