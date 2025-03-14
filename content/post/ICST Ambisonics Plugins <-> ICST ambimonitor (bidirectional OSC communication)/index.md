@@ -1,9 +1,11 @@
 ---
-title: ICST Ambisonics Plugins <-> ICST ambimonitor (bidirectional OSC communication)
+title:
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
+### ICST Ambisonics Plugins <-> ICST ambimonitor (bidirectional OSC communication)
+
 This tutorial requires the installation of the following components:
 
 - MaxMSP v.8.0+ --> [cycling74.com](http://cycling74.com)

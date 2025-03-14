@@ -9,4 +9,4 @@ ICST Ambisonics Plugins <-> ICST ambimonitor (bidirectional OSC communication)
 
 [OSC for fx-learning in reaper](osc-send-for-osc-learning-in-reaper)
 
-[ICST Ambisonics Plugins <-> ICST ambimonitor](ICST Ambisonics Plugins <-> ICST ambimonitor (bidirectional OSC communication))
+[ICST Ambisonics Plugins <-> ICST ambimonitor (bidirectional OSC communication)](ICST Ambisonics Plugins <-> ICST ambimonitor (bidirectional OSC communication))
