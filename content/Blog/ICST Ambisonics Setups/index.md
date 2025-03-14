@@ -12,3 +12,7 @@ title: ICST Ambisonics Setups
 For more information go here: https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio
 
 ---
+### The ICST DOM (Labor)
+
+![Labor_Dom](Labor-DOME-Setup.jpg)
+
