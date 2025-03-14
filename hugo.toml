@@ -75,5 +75,12 @@ url = "https://github.com/joambi"
 [taxonomies]
 series = "series"
 tag = "tags"
+year = "year"
+month = "month"
+
+[permalinks]
+post = "/post/:year/:month/:slug/"
+year = "/post/:slug/"
+month = "/post/:slug/"
 
 
