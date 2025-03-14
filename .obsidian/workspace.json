@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/About/index.md",
+                "file": "content/Blog/NEW/index.md",
                 "mode": "preview",
                 "source": false
               },
@@ -200,8 +200,9 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
-    "content/post/Info/Index.md",
+    "Evernote/Decoder/Decoder.md",
     "content/About/index.md",
+    "content/post/Info/Index.md",
     "osc-syntax-for-the-icst-ambiencoder-plugin.md",
     "content/post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
     "content/post/OSC<-->Max to AmbiEncoder/index.md",
@@ -245,7 +246,6 @@
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "content/Links/index.md",
     "content/Blog/What_we_now/index.md",
-    "content/Blog/NOTES/index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }
