@@ -1,106 +1,131 @@
 ---
 title: osc-syntax-for-the-icst-ambiencoder-plugin
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+# Institute for Computer Music and Sound Technology (ICST)
+
+**Zurich University of the Arts**
 
 ---
-### osc-syntax-for-the-icst-ambiencoder-plugin
+## OSC Syntax for the ICST AmbiEncoder Plugin
 
-The ICST AmbiEncoder offers OSC and JavaScript support, enabling seamless communication with OSC tools such as TouchOSC, IanniX, MaxMSP and other OCS-enabled tools.
+The **ICST AmbiEncoder** supports **OSC** and **JavaScript**, enabling seamless communication with OSC tools such as **TouchOSC, IanniX, MaxMSP**, and other OSC-enabled software.
 
-### How it works:
+### **How It Works**
 
-1. Open the 'OSC In' tap 
+1. Open the **'OSC In'** tab.
+
 ![OSC IN-OUT](osc-in-out.png)
-_Figure: Encoder Setting OSC - OSC In receives over the port 50001
+_Figure: Encoder Setting 'OSC In' receives over the port 50001
 
-2. You can find all the information in the “Help” section by clicking on the question mark.
+Find all information in the **Help** section by clicking the question mark (**?**).
 
-OSC In:
+#### **OSC In**
 
-* Receive OSC: Allows receiving commands through OSC on the defined port (default: 50001). OSC specification can be found in the help section of the Plugin.
-* Send Positions for External Usage: The positions of the audio sources can be sent as OSC message to a defined target/port. Messages are triggered by position changes and the update rate is limited to 20Hz (50ms).
+*  **Receive OSC**: Receives OSC commands on the defined port (default: 50001). The full OSC specification is available in the plugin’s Help section.
+- **Send Positions for External Usage**: This function sends audio source positions as OSC messages to a defined target/port. Messages trigger on position changes, and the update rate is limited to **20Hz (50ms).**
 
 * * *
 
-### **OSC - Syntax & Adress Specification**
+## **OSC Syntax & Address Specification**
 
-1. Clicking on the question mark in the ICST AmbiEncoder.
+### **1. Accessing OSC Specifications**
+
+Click the **question mark** in the ICST AmbiEncoder.
    ![osc-in-help](OSX-Syntax.png)
-	_Figure: OSC specification can be found in the help section of the Plugin._
-	
-	- Help  (?)
-	- OSC Syntax
-	- Sections
+   _Figure: OSC specifications in the Help section._
 
-2. Incoming OSC Messages are:
-	* either index based (source index), e.g. 1
-	* or name based (source), e.g. flute
+Available sections:
+- Help (**?**)
+- OSC Syntax
+- Sections
+### **2. Incoming OSC Messages**
 
-	**/icst/ambi/source**
-	Set Source Position AED:
+Messages can be:
+
+- **Index-based** (source index), e.g., `1`
+- **Name-based** (source name), e.g., `flute`
+#### **Set Source Position (AED Format)**
 ```
 	/icst/ambi/source/aed [ChannelName] [Azimuth] [Elevation] [Distance]
 	/icst/ambi/source/aed 'S1' 45 10 0.8
 ```
-	Set Source Position XYZ:
+
+#### **Set Source Position (XYZ Format)**
+	
 ```
 	/icst/ambi/source/xyz [ChannelName] [X] [Y] [Z]
 	/icst/ambi/source/xyz 'S2' 0.2 0.2 0.0
 ```
->[!Note:] The channel name (e.g S1, S2) will be sent as **symbol**.
 
-**/icst/ambi/source index**
-Set Source (Index) Position AED:
+**Note:** The channel name (e.g S1, S2) will be sent as **symbol**.
+
+#### **Set Source (Index) Position (AED Format)**
+
 ```
 /icst/ambi/sourceindex/aed [ChannelIndex] [Azimuth] [Elevation] [Distance]
 /icst/ambi/sourceindex/aed 1 45 10 0.8
 ```
-Set Source (Index) Position XYZ:
+#### **Set Source (Index) Position (XYZ Format)**
+
 ```
 /icst/ambi/sourceindex/xyz [ChannelIndex] [X] [Y] [Z]
 /icst/ambi/sourceindex/xyz 2 0.2 0.2 0.0
 ```
-> [!Note:] The channel index will be sent as **integer**.
+**Note:** Channel indices are sent as **integers**.
 
 * * *
 
-### **Send Positions for External Usage**
+## **Sending Positions for External Usage**
 
-1. Open the 'OSC Out' tap 
+1. Open the **'OSC Out'** tab.
 
 ![OSC IN-OUT](osc-in-out.png)
 
+**Note:** The ICST AmbiPlugins standard format sends **source names as symbols**. Max users should define a **Custom OSC Message**:
 
-Note: The ICST AmbiPlugins Standard format sends the **source name as symbol**.
-Max users, please define a Custom OSC Message as follows:
 ```
 /icst/ambi/sourceindex/xyz {i} {x} {y} {z}
-```
-```
 /icst/ambi/sourceindex/aed {i} {a} {e} {d}
+
 ```
+
 
 ![OSC-Out](osc.png)
 _Figure: Custom 'OSC Out' Editor_
 
-_Internal:_ send all AmbiEncoder mouvements to the ICST AmbiDecoder.
+#### **Internal OSC Communication**
 
-> [!Note:] For this deactivate in the AmbiDecoder the Speaker 'Edit mode' and activate the OSC port.
+To send **all AmbiEncoder movements** to the ICST AmbiDecoder:
+1. Deactivate **Speaker Edit Mode** in the AmbiDecoder.
+2. Activate the OSC port.
+
 ![Edit_off](intern_osc2.png)
 
 ![Intern_osc_port](aktivate_osc.png)
 
 ![OSC_internal](Intern_osc.png)
-Now the AmbiDecoder receives all OSC messages from all sending AmbiEncoders.
+Now, the AmbiDecoder receives **all OSC messages** from all connected AmbiEncoders.
 
 ---
-### External OSC
+### **Steps to Send OSC Messages**
 
 AmbiEncoder can also send most of its parameters via OSC.
 
 ![External-osc](external_osc.png)
-Open the question mark bevor presets for detailed help informations
+Open the question mark in front of the presets to get detailed help information.  
+
+1. Enable **“Send Positions for External Usage”** in the settings.
+2. In the **Targets** section:
+    - Enable or disable OSC transmission.
+    - Define the **Host IP address**.
+    - Select a **Port** (default: **50001**).
+    - Double-click **OSC messages** to edit.
+    
+    **Note:** If participating in an **internal FX learning program**, select **“Continuous”** mode.
+    
+3. Click **Help (?)** for detailed OSC information.
+4. Add or delete OSC messages.
+5. Save or load OSC messages in **Presets**.
 
 * * *
 ©2025 ICST

@@ -5,11 +5,12 @@ params:
   author: Johannes Schuett
 weight: 10
 tags: 
-title: icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication
+title:
 ---
 
+# Institute for Computer Music and Sound Technology (ICST)
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+**Zurich University of the Arts**
 
 * * *
 ### OSC <-->  MaxMSP to the ICST AmbiEncoder
@@ -27,6 +28,30 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 2. Open MaxMSP and look for the 'OSC-communication with ICST plugins in DAW' patch.
 - See the next demo gif.
 ![Max-AmbiEnc](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.gif)
+
+## **Example: Sending Absolute Angles (Degrees) with Euler Coordinates from Max to ICST AmbiEncoder**
+
+To send **absolute angles** using **Euler coordinates** from MaxMSP to the ICST AmbiEncoder, use the following OSC message format:
+
+```
+/icst/ambi/source/euler [ChannelName] [Yaw] [Pitch] [Roll]
+/icst/ambi/source/euler 'S1' 30 15 5
+```
+
+For **index-based addressing**:
+
+```
+/icst/ambi/sourceindex/euler [ChannelIndex] [Yaw] [Pitch] [Roll]
+/icst/ambi/sourceindex/euler 1 30 15 5
+```
+
+**Note:**
+
+- `Yaw` (Azimuth): Horizontal rotation
+- `Pitch` (Elevation): Vertical tilt
+- `Roll`: Rotation around the forward axis
+
+![osc-euler](osc-euler-abs.gif)
 
 ----
 ©2025 ICST

@@ -32,7 +32,9 @@ This site is intended to provide an overview and information on the Ambisonics a
 - [ICST Ambisonics Max Externals](https://ambisonics.ch/icst-ambisonics-tools/)
 - [ICST Ambisonics Plugins](https://ambisonics.ch/icst-ambisonics-plugins/01_overview/)
 - [Best practice tutorials](https://ambisonics.ch/best-practice-tutorials/)
+- [ICST Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/ascolta)
 - [Blog](https://ambisonics.ch/blog/)
+	
 
 ----
 ©2025 ICST
