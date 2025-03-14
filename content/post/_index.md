@@ -3,7 +3,7 @@ date:
 ---
 
 
-[Info](Info.md)
+[Info](info)
 
 [ICST Ambisonics Plugins <-> ICST ambimonitor](icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication)
 
