@@ -73,7 +73,6 @@ Set Source (Index) Position XYZ:
 
 
 Note: The ICST AmbiPlugins Standard format sends the **source name as symbol**.
-
 Max users, please define a Custom OSC Message as follows:
 ```
 /icst/ambi/sourceindex/xyz {i} {x} {y} {z}
@@ -88,12 +87,22 @@ _Figure: Custom 'OSC Out' Editor_
 _Internal:_ send all AmbiEncoder mouvements to the ICST AmbiDecoder.
 
 > [!Note:] For this deactivate in the AmbiDecoder the Speaker 'Edit mode' and activate the OSC port.
+![Edit_off](intern_osc2.png)
 
 ![Intern_osc_port](aktivate_osc.png)
 
 ![OSC_internal](Intern_osc.png)
 Now the AmbiDecoder receives all OSC messages from all sending AmbiEncoders.
 
+---
+### External OSC
+
+AmbiEncoder can also send most of its parameters via OSC.
+
+![External-osc](external_osc.png)
+Open the question mark bevor presets for detailed help informations
+
 * * *
 ©2025 ICST
+
 
