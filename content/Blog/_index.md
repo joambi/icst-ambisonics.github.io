@@ -14,7 +14,7 @@ tags:
 
 [Ascolta Akusmatische Hörstunde](ascolta)
 
-[Additional Downloads](additional_downloads)
+[Decoder speaker settings](speakers_decoder_xml)
 
 [Notes](notes)
 
