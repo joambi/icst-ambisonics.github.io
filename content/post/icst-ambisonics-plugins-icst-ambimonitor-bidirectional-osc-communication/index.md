@@ -10,8 +10,8 @@ This tutorial requires the installation of the following components:
 
 - MaxMSP v.8.0+ --> [cycling74.com](http://cycling74.com)
 - ICST Ambisonics Tools v3 Packages --> [cycling74.com](http://cycling74.com)
-- ICST Ambisonics Plugins (VST3/AU) --> [https://bitbucket.org/christian_schweizer/icst-ambisonics-plugins/downloads/](https://bitbucket.org/christian_schweizer/icst-ambisonics-plugins/downloads/)
-- Reaper.app v.6.2 (DAW) --> [http://reaper.fm/download.php](http://reaper.fm/download.php)
+- ICST Ambisonics Plugins (VST3/AU) --> [ICST AmbiPlugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+- Reaper.app (DAW) --> [http://reaper.fm/download.php](http://reaper.fm/download.php)
     
 
 _icst.ambimonitor --> ICST Ambisonics Multi-Encoder Plugin:_
