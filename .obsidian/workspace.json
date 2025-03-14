@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/Additional Downloads/index.md",
+                "file": "content/Blog/Additional Downloads/speakers_decoder_xml/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -200,8 +200,13 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/About/index.md",
+    "content/Blog/Additional Downloads/speakers_decoder_xml/index.md",
     "content/Blog/_index.md",
     "content/Blog/Additional Downloads/index.md",
+    "public/blog/Additional Downloads/_index.txt",
+    "content/Blog/Additional Downloads/_index.txt",
+    "public/blog/additional-downloads/speakers_decoder_xml/index.html",
     "public/blog/additional-downloads/speakers_decoder_xml/ZHdK IA Space.xml",
     "public/blog/additional-downloads/speakers_decoder_xml/Notam Studio 3.xml",
     "public/blog/additional-downloads/speakers_decoder_xml/ICSTKompositionsstudio Eingemessen_2025.xml",
@@ -209,11 +214,7 @@
     "public/blog/additional-downloads/speakers_decoder_xml/ICST DOM.xml",
     "public/blog/additional-downloads/speakers_decoder_xml",
     "public/blog/additional-downloads/index.html",
-    "public/blog/additional-downloads/untitled/index.html",
-    "public/blog/additional-downloads/untitled",
-    "public/blog/additional-downloads",
     "content/Links/index.md",
-    "content/About/index.md",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/intern_osc2.png",
@@ -244,7 +245,6 @@
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/HOME/index.md",
     "Rotation.md",
-    "content/ICST Ambisonics Plugins/_index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }
