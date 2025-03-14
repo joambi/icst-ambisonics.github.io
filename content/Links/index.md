@@ -18,7 +18,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - [Specification:](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - [Downloads:](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 - [Video Tutorials](https://www.youtube.com/@ICSTAmbisonics)
-- [ICST Ambisonics Listening Sessions]()
+- [ICST Ambisonics Listening Sessions](https://ambisonics.ch/blog/ascolta/)
 
 ---
 
