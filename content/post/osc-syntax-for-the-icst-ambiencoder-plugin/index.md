@@ -71,22 +71,29 @@ Set Source (Index) Position XYZ:
 
 ![OSC IN-OUT](osc-in-out.png)
 
-Click _edit..._ to change settings (see screenshot below).
+
 Note: The ICST AmbiPlugins Standard format sends the **source name as symbol**.
 
 Max users, please define a Custom OSC Message as follows:
 ```
 /icst/ambi/sourceindex/xyz {i} {x} {y} {z}
 ```
-
 ```
-/icst/ambi/sourceindex/xyz {i} {a} {e} {d}
+/icst/ambi/sourceindex/aed {i} {a} {e} {d}
 ```
 
-![[./_resources/OSC-Syntax_for_the_ICST_AmbiEncoder_Plugin.resources/Bildschirmfoto 2021-03-18 um 10.09.41.png]]
-_Figure: Custom OSC Editor_
+![OSC-Out](osc.png)
+_Figure: Custom 'OSC Out' Editor_
+
+_Internal:_ send all AmbiEncoder mouvements to the ICST AmbiDecoder.
+
+> [!Note:] For this deactivate in the AmbiDecoder the Speaker 'Edit mode' and activate the OSC port.
+
+![Intern_osc_port](aktivate_osc.png)
+
+![OSC_internal](Intern_osc.png)
+Now the AmbiDecoder receives all OSC messages from all sending AmbiEncoders.
 
 * * *
+©2025 ICST
 
-
-_Figure: Encoder Setting OSC - Address settings_
