@@ -1,5 +1,5 @@
 ---
-title:
+title: ICST Ambisonics Setups
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 
@@ -8,7 +8,7 @@ title:
 ---
 ### The ICST Kompositionsstudio
 
-![Kompstudio](Kompstudio.jpg)
+![Kompstudio](content/Blog/ICST%20Ambisonics%20Setups/Kompstudio.jpg)
 For more information go here: https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio
 
 ---
