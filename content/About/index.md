@@ -1,8 +1,8 @@
 ---
-title: About
+title: 
 description: Tools for Ambisonics audio processing
 date: 2025-02-27
-tags: []
+tags:
 ---
 
 # Institute for Computer Music and Sound Technology (ICST)
