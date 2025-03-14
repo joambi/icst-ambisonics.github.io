@@ -1,5 +1,5 @@
 ---
-title:
+title: icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -27,13 +27,13 @@ Generate motion data in Max and send it via OSC to the _ICST AmbiEncoder_ in you
 - The Max demo patch listens for:  
     `'/icst/ambi/sourceindex/xyz'`
 
-![OSC-OUT](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-out.png)
+   ![OSC-OUT](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-out.png)
 #### 2. Open MaxMSP and Load the Patch
 
 - Find the _OSC communication with ICST plugins in DAW_ patch.
 - See the demo GIF:
 
-![Max-AmbiEnc](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.gif)
+  ![Max-AmbiEnc](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.gif)
 
 ----
 ©2025 ICST
