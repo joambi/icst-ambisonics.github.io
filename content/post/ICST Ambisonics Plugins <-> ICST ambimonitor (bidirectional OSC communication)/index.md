@@ -1,10 +1,10 @@
 ---
-title:
+title: icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-### ICST Ambisonics Plugins <-> ICST ambimonitor (bidirectional OSC communication)
+### icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication
 
 This tutorial requires the installation of the following components:
 
