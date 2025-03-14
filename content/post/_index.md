@@ -1,7 +1,7 @@
 ---
 date:
 ---
-ICST Ambisonics Plugins <-> ICST ambimonitor (bidirectional OSC communication)
+
 
 [Info](Info.md)
 

@@ -5,7 +5,7 @@ params:
   author: Johannes Schuett
 weight: 10
 tags: 
-title: "#14 ascolta Akusmatische Hörstunde"
+title:
 ---
 
 
