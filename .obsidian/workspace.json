@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/_index.md",
+                "file": "content/Blog/Additional Downloads/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -200,20 +200,21 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "public/blog/additional-downloads/speakers_decoder_xml/ZHdK IA Space.xml",
+    "public/blog/additional-downloads/speakers_decoder_xml/Notam Studio 3.xml",
+    "public/blog/additional-downloads/speakers_decoder_xml/ICSTKompositionsstudio Eingemessen_2025.xml",
+    "public/blog/additional-downloads/speakers_decoder_xml/ICST Kompositionsstudio.xml",
+    "public/blog/additional-downloads/speakers_decoder_xml/ICST DOM.xml",
+    "public/blog/additional-downloads/speakers_decoder_xml",
+    "public/blog/additional-downloads/index.html",
+    "public/blog/additional-downloads/untitled/index.html",
+    "public/blog/additional-downloads/untitled",
+    "public/blog/additional-downloads",
+    "content/Blog/_index.md",
+    "content/Blog/Additional Downloads/index.md",
     "public/blog/Additional Downloads/speakers_decoder_xml/ICST Kompositionsstudio.xml",
-    "content/Blog/Additional Downloads/speakers_decoder_xml/ICST Kompositionsstudio.xml",
-    "public/blog/Additional Downloads/speakers_decoder_xml/ICST DOM.xml",
-    "content/Blog/Additional Downloads/speakers_decoder_xml/ICST DOM.xml",
-    "public/blog/Additional Downloads/speakers_decoder_xml/ICSTKompositionsstudio Eingemessen_2025.xml",
-    "content/Blog/Additional Downloads/speakers_decoder_xml/ZHdK IA Space.xml",
-    "content/Blog/Additional Downloads/speakers_decoder_xml/Notam Studio 3.xml",
-    "content/Blog/Additional Downloads/speakers_decoder_xml/ICSTKompositionsstudio Eingemessen_2025.xml",
-    "public/blog/Additional Downloads/speakers_decoder_xml/Filters/HighPass 120Hz.xml",
-    "public/blog/Additional Downloads/speakers_decoder_xml/Decoding/Demo.xml",
-    "public/blog/Additional Downloads/speakers_decoder_xml/AnimationDemo/Demo_A.xml",
     "content/Links/index.md",
     "content/About/index.md",
-    "content/Blog/_index.md",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/intern_osc2.png",
@@ -245,7 +246,6 @@
     "content/HOME/index.md",
     "Rotation.md",
     "content/ICST Ambisonics Plugins/_index.md",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }
