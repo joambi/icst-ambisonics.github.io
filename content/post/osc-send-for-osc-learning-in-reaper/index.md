@@ -5,7 +5,7 @@ title: osc-send-for-osc-learning-in-reaper
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
-# osc-send-for-osc-learning-in-reaper
+# osc-for-fx-learning-in-reaper
 
 
 1. Activate  the OSC in Reaper
