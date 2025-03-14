@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/_index.md",
-                "mode": "source",
+                "file": "content/Blog/speakers_decoder_xml/index.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -200,8 +200,8 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
-    "speakers_decoder_xml.md",
     "content/Blog/_index.md",
+    "speakers_decoder_xml.md",
     "public/blog/speakers_decoder_xml/index.html",
     "public/blog/speakers_decoder_xml/ZHdK IA Space.xml",
     "public/blog/speakers_decoder_xml/Notam Studio 3.xml",
