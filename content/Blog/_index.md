@@ -16,6 +16,8 @@ tags:
 
 [Decoder speaker settings](speakers_decoder_xml)
 
+[ICST Ambisonics Setups](icst_ambisonics_setups)
+
 [Notes](notes)
 
 [What we now](what_we_now)
