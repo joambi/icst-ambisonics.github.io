@@ -1,5 +1,6 @@
 ---
-tag:
+tags:
+  - published
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 
