@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Links/index.md",
-                "mode": "preview",
+                "file": "content/Blog/_index.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -200,15 +200,20 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "public/blog/Additional Downloads/speakers_decoder_xml/ICST Kompositionsstudio.xml",
+    "content/Blog/Additional Downloads/speakers_decoder_xml/ICST Kompositionsstudio.xml",
+    "public/blog/Additional Downloads/speakers_decoder_xml/ICST DOM.xml",
+    "content/Blog/Additional Downloads/speakers_decoder_xml/ICST DOM.xml",
+    "public/blog/Additional Downloads/speakers_decoder_xml/ICSTKompositionsstudio Eingemessen_2025.xml",
+    "content/Blog/Additional Downloads/speakers_decoder_xml/ZHdK IA Space.xml",
+    "content/Blog/Additional Downloads/speakers_decoder_xml/Notam Studio 3.xml",
+    "content/Blog/Additional Downloads/speakers_decoder_xml/ICSTKompositionsstudio Eingemessen_2025.xml",
+    "public/blog/Additional Downloads/speakers_decoder_xml/Filters/HighPass 120Hz.xml",
+    "public/blog/Additional Downloads/speakers_decoder_xml/Decoding/Demo.xml",
+    "public/blog/Additional Downloads/speakers_decoder_xml/AnimationDemo/Demo_A.xml",
+    "content/Links/index.md",
     "content/About/index.md",
     "content/Blog/_index.md",
-    "public/month/index.xml",
-    "public/year/index.xml",
-    "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/index.html",
-    "public/year/index.html",
-    "public/year",
-    "public/month/index.html",
-    "public/month",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/intern_osc2.png",
@@ -219,9 +224,6 @@
     "public/post/1/01/osc-send-for-osc-learning-in-reaper/wet-dry-b.png",
     "public/post/1/01/osc-send-for-osc-learning-in-reaper/wet-dry-a.png",
     "public/post/1/01/osc-send-for-osc-learning-in-reaper/osx_fx.gif",
-    "public/post/1/01/osc-send-for-osc-learning-in-reaper/index.html",
-    "public/post/1/01/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.html",
-    "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin",
     "content/Blog/NEW/index.md",
     "Evernote/Decoder/Decoder.md",
     "content/post/Info/Index.md",
@@ -244,7 +246,6 @@
     "Rotation.md",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
-    "content/Links/index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }
