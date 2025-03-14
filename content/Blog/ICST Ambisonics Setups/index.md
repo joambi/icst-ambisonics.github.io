@@ -8,7 +8,7 @@ title: ICST Ambisonics Setups
 ---
 ### The ICST Kompositionsstudio
 
-![Kompstudio](content/Blog/ICST%20Ambisonics%20Setups/Kompstudio.jpg)
+![Kompstudio](Kompstudio.jpg)
 For more information go here: https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio
 
 ---
