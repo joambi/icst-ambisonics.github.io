@@ -14,5 +14,6 @@ For more information go here: https://icst-kompositionsstudio.ch/post/icst-kompo
 ---
 ### The ICST DOM (Labor)
 
-![Labor_Dom](Labor-DOME-Setup.jpg)
+![Labor_Dom](Labor-DOME-Setup.png)
+
 
