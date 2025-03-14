@@ -5,8 +5,6 @@ date:
 
 [Info](Info.md)
 
-[OSC<-->Max to AmbiEncoder](osc<-->max to ambiencoder)
+[ICST Ambisonics Plugins <-> ICST ambimonitor](icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication)
 
 [OSC for fx-learning in reaper](osc-send-for-osc-learning-in-reaper)
-
-[ICST Ambisonics Plugins <-> ICST ambimonitor](icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication)
