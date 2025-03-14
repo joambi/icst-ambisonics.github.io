@@ -84,4 +84,3 @@ _Figure: Custom OSC Editor_
 
 * * *
 
-<< [content](https://ambisonics.ch/post/content)  -- [tutorials](https://ambisonics.ch/post/tutorials) \>>
