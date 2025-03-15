@@ -1,6 +1,7 @@
 ---
 tags: 
 title: Decoder_speaker_settings
+date:
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 
