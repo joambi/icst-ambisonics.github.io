@@ -24,12 +24,31 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ### 3rd-party tools:
 
-- IEM Plugin suite
-- Sparta Plugins
-- DearVR
-- Grapes
+- [IEM Plugin suite](https://plugins.iem.at/)
+- [Sparta Plugins](https://leomccormack.github.io/sparta-site/)
+- [Wigware](https://www.brucewiggins.co.uk/?page_id=78)
+- [aXPlugin Suite](https://www.ssa-plugins.com/)
+- [DearVR Ambi Micro](https://www.dear-reality.com/products/dearvr-ambi-micro)
+- [Grapes 3D Audio Control](https://grapes-3d.com/)
 
 ----
 
+### Ambisonics Studios & Istitutes
+
+- IEM
+- IRCAM
+- ICST
+- CNMAT
+- NOTAM
+- [Future Sounding](https://www.soundingfuture.com/de/artikel/ambisonics-auf-der-suche-nach-dem-geeigneten-klang)
+- 
 ### Ambisonics Links:
 
+- https://de.wikipedia.org/wiki/Ambisonics
+- https://www.ambisonic.net/
+- https://ambisonics.ch/
+- https://link.springer.com/referenceworkentry/10.1007/978-3-662-60357-4_25-1
+- https://www.waves.com/ambisonics-explained-guide-for-sound-engineers
+- 
+
+No guarantee of completeness

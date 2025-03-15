@@ -1,5 +1,5 @@
 ---
-title: Best practice tutorial
+title:
 ---
 
 
@@ -13,4 +13,4 @@ title: Best practice tutorial
 
 [OSC-JavaScript](osc-javascript)
 
-
+[Ambisonics in Reaper](ambisonics-reaper)
