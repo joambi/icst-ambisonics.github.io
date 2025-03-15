@@ -1,5 +1,5 @@
 ---
-title: decoder-speaker-settings
+title:
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 
