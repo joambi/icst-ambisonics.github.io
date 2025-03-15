@@ -1,5 +1,6 @@
 ---
-title: ICST Ambisonics Setups
+title: 
+date:
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 
