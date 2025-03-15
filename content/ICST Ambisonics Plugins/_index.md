@@ -28,14 +28,25 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 [Step_by_step_setup](06_step_by_step_setup)
 
+---
 
+**Advantage:**
 
+> * Time-based work
+> * Intuitive
+> * Compatible with most DAWs (up to 3rd order)
+> * Reaper & Ardour 8 (up to 7th order)
 
+**Disadvantage:**
 
+> * Not as flexible to program.
 
+**Recommendation:**
 
+> * For fixed media
+> * Film/multimedia
 
-
+[ICST Ambisonics Plugins](https://www.zhdk.ch/forschungsprojekt/icst-ambisonics-plugins-555245)
 
 ----
 ©2025 ICST

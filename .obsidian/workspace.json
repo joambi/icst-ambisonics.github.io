@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
+                "file": "content/ICST Ambisonics Plugins/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           },
           {
@@ -198,9 +198,10 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/post/Info/Index.md",
+    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.html",
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication",
-    "content/post/Info/Index.md",
     "content/post/_index.md",
     "content/About/index.md",
     "content/HOME/index.md",
@@ -209,7 +210,6 @@
     "public/post/1/01/osc_javascript",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
     "content/ICST Ambisonics Tools/index.md",
-    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif",
     "public/post/1/01/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif",
     "content/post/OSC<-->Max to AmbiEncoder/index.md",
@@ -223,7 +223,6 @@
     "public/post/1/01/osc-help/index.html",
     "public/post/1/01/osc-help",
     "content/post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
-    "content/post/OSC-JavaScript",
     "content/Blog/ICST Ambisonics Setups/index.md",
     "content/Blog/_index.md",
     "content/Blog/Decoder-Speaker-Ssettings/index.md",

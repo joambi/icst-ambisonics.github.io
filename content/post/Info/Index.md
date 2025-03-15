@@ -15,8 +15,10 @@ We give no guarantee, as everything is in progress.
 
 ### OSC & JavaScript:
 
-- [OSC <-> MaxMSP](https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/)
+- [OSC <-> MaxMSP]()
 
-- [OSC Syntax](osc-syntax-for-the-icst-ambiencoder-plugin)
+- [OSC Syntax]()
 
-- [OSC FX-learning](https://ambisonics.ch/post/osc-send-for-osc-learning-in-reaper/)
+- [OSC FX-learning]()
+
+- 
