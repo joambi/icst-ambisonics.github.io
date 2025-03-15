@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/Decoder-Speaker-Ssettings/index.md",
+                "file": "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,10 +198,10 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/Blog/Decoder-Speaker-Ssettings/index.md",
     "content/Blog/ICST Ambisonics Setups/index.md",
     "content/Blog/_index.md",
     "content/post/_index.md",
-    "content/Blog/Decoder-Speaker-Ssettings/index.md",
     "content/post/OSC-JavaScript/index.md",
     "content/post/Info/Index.md",
     "content/ICST Ambisonics Plugins/_index.md",
