@@ -1,5 +1,5 @@
 ---
-title:
+title: Decoder-Speaker
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 
