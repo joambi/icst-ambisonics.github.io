@@ -1,12 +1,12 @@
 ---
-title: osc_javascript
+title: osc-javascript
+date:
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 
 **Zurich University of the Arts**
 
 ----
-
 ### Custom OSC - JS Help:
 
 ![JavaScript](JavaScript.jpg)

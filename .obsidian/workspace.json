@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/OSC-JavaScript/index.md",
+                "file": "content/post/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           },
           {
@@ -198,10 +198,10 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/post/OSC-JavaScript/index.md",
+    "content/post/_index.md",
     "public/post/1/01/osc_javascript/index.html",
     "public/post/1/01/osc_javascript",
-    "content/post/_index.md",
-    "content/post/OSC-JavaScript/index.md",
     "content/post/Info/Index.md",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
     "content/ICST Ambisonics Tools/index.md",
@@ -227,7 +227,6 @@
     "decoder_speaker_settings.md",
     "content/Blog/NEW/index.md",
     "public/blog/decoder-speaker-ssettings/index.html",
-    "public/blog/decoder-speaker-ssettings/ZHdK IA Space.xml",
     "public/blog/icst-ambisonics-setups/Labor-DOME-Setup.png",
     "content/Blog/NOTES/index.md",
     "ascolta.md",
