@@ -5,8 +5,8 @@ aliases:
   - blog
   - showcase
   - docs
-title: NEW
-author: Johannes Schuett
+title: 
+author: 
 tags:
 ---
 
@@ -14,7 +14,7 @@ tags:
 
 [Ascolta Akusmatische Hörstunde](ascolta)
 
-[Decoder speaker settings](decoder_speaker_settings)
+[Decoder-Speaker-Settings](decoder-speaker-settings)
 
 [ICST Ambisonics Setups](icst_ambisonics_setups)
 

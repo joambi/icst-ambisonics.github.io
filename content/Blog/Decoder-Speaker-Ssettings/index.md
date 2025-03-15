@@ -1,5 +1,5 @@
 ---
-title: Decoder_Speaker_Settings
+title: decoder-speaker-settings
 date:
 ---
 
