@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/Info/Index.md",
+                "file": "content/post/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "_index"
             }
           },
           {
@@ -198,6 +198,7 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/post/Info/Index.md",
     "content/post/Ambisonics_in_Reaper/index.md",
     "public/post/1/01/ambisonics_in_reaper/index.html",
     "public/post/1/01/ambisonics_in_reaper",
@@ -224,7 +225,6 @@
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-js_help.png",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-euler-abs.gif",
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif",
-    "content/post/Info/Index.md",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/About/index.md",
     "content/HOME/index.md",
