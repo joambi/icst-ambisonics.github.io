@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/OSC-JavaScript/index.md",
+                "file": "content/Blog/ICST Ambisonics Setups/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,6 +198,7 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/post/OSC-JavaScript/index.md",
     "content/post/Info/Index.md",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
@@ -206,7 +207,6 @@
     "content/post/_index.md",
     "content/About/index.md",
     "content/HOME/index.md",
-    "content/post/OSC-JavaScript/index.md",
     "public/post/1/01/osc_javascript/index.html",
     "public/post/1/01/osc_javascript",
     "content/ICST Ambisonics Plugins/02_installation/index.md",

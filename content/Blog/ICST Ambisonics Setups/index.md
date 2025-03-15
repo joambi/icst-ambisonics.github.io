@@ -11,6 +11,8 @@ title: icst-ambisonics-setups
 ![Kompstudio](Kompstudio.jpg)
 For more information go here: https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio
 
+[photo gallery](https://icst-kompositionsstudio.ch/post/gallery)
+
 ---
 ### The ICST Labor ambisonics Dome 
 
