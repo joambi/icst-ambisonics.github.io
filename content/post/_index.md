@@ -13,4 +13,4 @@ title:
 
 [OSC-JavaScript](osc-javascript)
 
-[Ambisonics in Reaper](ambisonics-reaper)
+[Ambisonics_in_Reaper](ambisonics_in_reaper)
