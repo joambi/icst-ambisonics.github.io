@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/_index.md",
+                "file": "content/Blog/Decoder_speaker_settings/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -199,12 +199,14 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/Blog/NOTES/index.md",
+    "content/Blog/_index.md",
+    "ascolta.md",
     "content/Blog/Decoder_speaker_settings/index.md",
     "content/Blog/Ascolta/rotations_tabel.png",
     "content/Blog/ICST Ambisonics Setups/index.md",
     "content/Blog/Ascolta/index.md",
     "content/Blog/NEW/index.md",
-    "content/Blog/_index.md",
     "new.md",
     "content/post/_index.md",
     "content/post/Info/Index.md",
@@ -243,7 +245,6 @@
     "Evernote/OSC-Syntax for the ICST AmbiEncoder Plugin/OSC-Syntax for the ICST AmbiEncoder Plugin.md",
     "osc.md",
     "osc<-->max.md",
-    "Evernote/OSC Send for OSC-learning in Reaper/OSC Send for OSC-learning in Reaper.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }
