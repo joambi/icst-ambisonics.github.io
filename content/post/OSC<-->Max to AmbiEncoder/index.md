@@ -3,9 +3,7 @@ date: ""
 title: osc-syntax-for-the-icst-ambiencoder-plugin
 ---
 
-# Institute for Computer Music and Sound Technology (ICST)
-
-**Zurich University of the Arts**
+Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
 ### OSC <-->  MaxMSP to the ICST AmbiEncoder

@@ -1,9 +1,8 @@
 ---
 date:
 ---
-# Institute for Computer Music and Sound Technology (ICST)
+Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
-**Zurich University of the Arts**
 ---
 
 ### What we know:

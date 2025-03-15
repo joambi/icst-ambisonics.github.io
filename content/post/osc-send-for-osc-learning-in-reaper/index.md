@@ -2,9 +2,7 @@
 tags: 
 title: osc-send-for-osc-learning-in-reaper
 ---
-# Institute for Computer Music and Sound Technology (ICST)
-
-**Zurich University of the Arts**
+Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
 # osc-for-fx-learning-in-reaper

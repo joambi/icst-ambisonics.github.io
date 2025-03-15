@@ -1,9 +1,7 @@
 ---
 title: Info
 ---
-# Institute for Computer Music and Sound Technology (ICST)
-
-**Zurich University of the Arts**
+Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
 
@@ -13,12 +11,6 @@ In this “post” we collect our “best practice tutorials”. They are not or
 
 We give no guarantee, as everything is in progress.
 
-### OSC & JavaScript:
 
-- [OSC <-> MaxMSP]()
-
-- [OSC Syntax]()
-
-- [OSC FX-learning]()
-
-- 
+---
+©2025 ICST
