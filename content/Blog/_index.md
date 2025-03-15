@@ -5,9 +5,6 @@ aliases:
   - blog
   - showcase
   - docs
-title: 
-author: 
-tags:
 ---
 
 [New](new)

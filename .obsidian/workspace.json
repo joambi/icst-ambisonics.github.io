@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/_index.md",
+                "file": "content/post/Info/Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "Index"
             }
           },
           {
@@ -196,8 +196,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1597bac92f6118b8",
+  "active": "229301a58f7d83a0",
   "lastOpenFiles": [
+    "content/ICST Ambisonics Plugins/_index.md",
     "content/Blog/_index.md",
     "content/post/_index.md",
     "content/post/Info/Index.md",
@@ -242,7 +243,6 @@
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/open_OSC.gif",
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.gif",
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-js_help.png",
-    "content/ICST Ambisonics Plugins/_index.md",
     "decoder_speaker_settings.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
