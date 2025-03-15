@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/_index.md",
+                "file": "content/post/OSC-JavaScript/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           },
           {
@@ -199,6 +199,7 @@
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
     "content/post/Info/Index.md",
+    "content/ICST Ambisonics Plugins/_index.md",
     "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.html",
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication",

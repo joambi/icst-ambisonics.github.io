@@ -1,5 +1,5 @@
 ---
-title: osc-javascript
+title: OSC-JavaScript
 date:
 ---
 # Institute for Computer Music and Sound Technology (ICST)
