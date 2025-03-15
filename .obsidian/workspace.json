@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/_index.md",
+                "file": "content/Blog/ICST Ambisonics Setups/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           },
           {
@@ -198,9 +198,12 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/post/OSC-JavaScript/index.md",
-    "content/post/_index.md",
+    "content/Blog/_index.md",
     "content/post/Ambisonics in Reaper/index.md",
+    "public/post/1/01/ambisonics-in-reaper/index.html",
+    "public/post/1/01/ambisonics-in-reaper",
+    "content/post/_index.md",
+    "content/post/OSC-JavaScript/index.md",
     "public/post/1/01/ambisonics-reaper/index.html",
     "public/post/1/01/ambisonics-reaper",
     "content/Links/index.md",
@@ -211,8 +214,6 @@
     "public/blog/decoder-speaker-settings/Notam Studio 3.xml",
     "public/blog/decoder-speaker-settings/ICSTKompositionsstudio Eingemessen_2025.xml",
     "public/blog/decoder-speaker-settings/ICST Kompositionsstudio.xml",
-    "public/blog/decoder-speaker-settings/ICST DOM.xml",
-    "public/blog/decoder-speaker-settings",
     "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc_Reaper.png",
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-port.png",
@@ -223,7 +224,6 @@
     "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-euler-abs.gif",
     "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif",
     "content/Blog/ICST Ambisonics Setups/index.md",
-    "content/Blog/_index.md",
     "content/post/Info/Index.md",
     "content/ICST Ambisonics Plugins/_index.md",
     "content/About/index.md",
