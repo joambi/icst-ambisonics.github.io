@@ -22,3 +22,14 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ---
 
+### 3rd-party tools:
+
+- IEM Plugin suite
+- Sparta Plugins
+- DearVR
+- Grapes
+
+----
+
+### Ambisonics Links:
+

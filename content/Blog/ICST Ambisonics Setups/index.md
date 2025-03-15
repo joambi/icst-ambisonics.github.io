@@ -1,6 +1,5 @@
 ---
-title: ICST Ambisonics Setups
-date:
+title: icst-ambisonics-setups
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 
@@ -13,8 +12,13 @@ date:
 For more information go here: https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio
 
 ---
-### The ICST DOM (Labor)
+### The ICST Labor ambisonics Dome 
+
+The "Vienna" Speaker setup at the ICST Labor (DOM)
 
 ![Labor_Dom](Labor-DOME-Setup.png)
+Setup of Speakers in the ICST Labor
 
+---
+©2025 ICST
 
