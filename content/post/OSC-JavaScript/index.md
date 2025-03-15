@@ -7,7 +7,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ----
 ### Custom OSC - JS Help:
 
-![JavaScript](content/Post/OSC-JavaScript/JavaScript.jpg)
+![JavaScript](content/post/OSC-JavaScript/JavaScript.jpg)
 
 Title (optional):");
   If the first line starts with a comment (//), this comment
