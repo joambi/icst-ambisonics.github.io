@@ -1,11 +1,6 @@
 ---
 date: ""
-draft: false
-params:
-  author: Johannes Schuett
-weight: 10
-tags: 
-title:
+title: osc-syntax-for-the-icst-ambiencoder-plugin
 ---
 
 # Institute for Computer Music and Sound Technology (ICST)

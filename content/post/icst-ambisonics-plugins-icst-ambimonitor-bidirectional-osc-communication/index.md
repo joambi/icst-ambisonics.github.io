@@ -29,13 +29,16 @@ Generate motion data in Max and send it via OSC to the _ICST AmbiEncoder_ in you
 - The Max demo patch listens for:  
     `'/icst/ambi/sourceindex/xyz'`
 
-   ![OSC-OUT](osc-out.png)
+![OSC-OUT](osc-out.png)
 #### 2. Open MaxMSP and Load the Patch
 
 - Find the _OSC communication with ICST plugins in DAW_ patch.
-- See the demo GIF:
 
-  ![Max-AmbiEnc](max_osc_to_AmbiPlugins.gif)
+See the demo Gifs:
+- ![Max_Reaper](Max_Reaper.gif)
+
+Next Gif: How it works:
+ ![Max-AmbiEnc](max_osc_to_AmbiPlugins.gif)
 
 ----
 ©2025 ICST

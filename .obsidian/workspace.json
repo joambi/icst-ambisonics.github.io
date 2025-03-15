@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/OSC-JavaScript/index.md",
+                "file": "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -199,10 +199,16 @@
   },
   "active": "a9379e3180396ae8",
   "lastOpenFiles": [
+    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif",
+    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
+    "public/post/1/01/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif",
+    "content/post/OSC<-->Max to AmbiEncoder/index.md",
+    "content/post/_index.md",
+    "public/post/1/01/osc-/index.html",
+    "public/post/1/01/osc-",
+    "content/post/OSC-JavaScript/index.md",
     "public/post/1/01/osc-javascript/JavaScript.jpg",
     "content/post/OSC-JavaScript/JavaScript.jpg",
-    "content/post/_index.md",
-    "content/post/OSC-JavaScript/index.md",
     "public/post/1/01/osc-javascript/index.html",
     "public/post/1/01/osc-javascript",
     "content/About/index.md",
@@ -220,8 +226,6 @@
     "public/blog/decoder-speaker-ssettings/index.html",
     "public/blog/decoder-speaker-ssettings/ZHdK IA Space.xml",
     "public/blog/decoder-speaker-ssettings/Notam Studio 3.xml",
-    "public/blog/decoder-speaker-ssettings/ICSTKompositionsstudio Eingemessen_2025.xml",
-    "public/blog/decoder-speaker-ssettings/ICST Kompositionsstudio.xml",
     "public/blog/icst-ambisonics-setups/Labor-DOME-Setup.png",
     "content/Blog/NOTES/index.md",
     "ascolta.md",
@@ -234,17 +238,12 @@
     "content/Blog/ICST Ambisonics Setups/Labor-DOME-Setup.png",
     "public/blog/icst-ambisonics-setups/Kompstudio.jpg",
     "public/blog/icst-ambisonics-setup/Kompstudio.jpg",
-    "content/Blog/ICST Ambisonics Setups/Kompstudio.jpg",
     "speakers_decoder_xml.md",
     "content/Blog/Additional Downloads/_index.md",
     "ICST.md",
     "content/Blog/Additional Downloads/index.md",
-    "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png",
-    "public/post/1/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png",
     "Evernote/Decoder/Decoder.md",
     "osc-syntax-for-the-icst-ambiencoder-plugin.md",
-    "content/post/OSC<-->Max to AmbiEncoder/index.md",
-    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }
