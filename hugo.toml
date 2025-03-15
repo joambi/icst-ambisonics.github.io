@@ -79,7 +79,7 @@ year = "year"
 month = "month"
 
 [permalinks]
-post = "/post/:year/:month/:slug/"
+post = ""/post/:year/:month/:day/:slug""
 year = "/post/:slug/"
 month = "/post/:slug/"
 
