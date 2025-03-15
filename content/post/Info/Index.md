@@ -1,5 +1,5 @@
 ---
-title: Info
+title:
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 

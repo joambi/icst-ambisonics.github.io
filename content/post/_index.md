@@ -11,6 +11,6 @@ title: Best practice tutorial
 
 [OSC for fx-learning in reaper](osc-send-for-osc-learning-in-reaper)
 
-[OSC-JavaScript](osc-javascript)
+[OSC-JavaScript](osc_javascript)
 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/02_installation/index.md",
+                "file": "content/post/OSC-JavaScript/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
+                "file": "content/ICST Ambisonics Tools/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -35,8 +35,7 @@
               "title": "index"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,16 +196,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a9379e3180396ae8",
+  "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif",
+    "public/post/1/01/osc_javascript/index.html",
+    "public/post/1/01/osc_javascript",
+    "content/post/_index.md",
+    "content/post/OSC-JavaScript/index.md",
+    "content/post/Info/Index.md",
+    "content/ICST Ambisonics Plugins/02_installation/index.md",
+    "content/ICST Ambisonics Tools/index.md",
     "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
+    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif",
     "public/post/1/01/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif",
     "content/post/OSC<-->Max to AmbiEncoder/index.md",
-    "content/post/_index.md",
     "public/post/1/01/osc-/index.html",
     "public/post/1/01/osc-",
-    "content/post/OSC-JavaScript/index.md",
     "public/post/1/01/osc-javascript/JavaScript.jpg",
     "content/post/OSC-JavaScript/JavaScript.jpg",
     "public/post/1/01/osc-javascript/index.html",
@@ -217,7 +221,6 @@
     "public/post/1/01/osc-help",
     "content/post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
     "content/post/OSC-JavaScript",
-    "content/post/Info/Index.md",
     "content/Blog/ICST Ambisonics Setups/index.md",
     "content/Blog/_index.md",
     "content/Blog/Decoder-Speaker-Ssettings/index.md",
@@ -225,7 +228,6 @@
     "content/Blog/NEW/index.md",
     "public/blog/decoder-speaker-ssettings/index.html",
     "public/blog/decoder-speaker-ssettings/ZHdK IA Space.xml",
-    "public/blog/decoder-speaker-ssettings/Notam Studio 3.xml",
     "public/blog/icst-ambisonics-setups/Labor-DOME-Setup.png",
     "content/Blog/NOTES/index.md",
     "ascolta.md",
@@ -242,8 +244,6 @@
     "content/Blog/Additional Downloads/_index.md",
     "ICST.md",
     "content/Blog/Additional Downloads/index.md",
-    "Evernote/Decoder/Decoder.md",
-    "osc-syntax-for-the-icst-ambiencoder-plugin.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }

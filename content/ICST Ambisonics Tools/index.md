@@ -44,5 +44,21 @@ Install **ICST Ambisonics Tools** in **Max 8+** via the **Package Manager**:
 
 Info at ZHdK: https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385
 
+Advantage:
+
+> * Modular and therefore highly flexible
+> * Individual patching for individual applications
+
+Disadvantage:
+> * Requires Max programming knowledge
+> * Not time-based.
+> * (Except Envelop in Ableton)
+
+**Recommendation:**
+
+> * For LiveElectronic
+> * Special Performances
+
+
 ---
 ©2025 ICST
