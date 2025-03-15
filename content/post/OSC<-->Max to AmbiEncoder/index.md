@@ -13,16 +13,16 @@ title: osc-syntax-for-the-icst-ambiencoder-plugin
 1. Prepare MaxMSP and the ICST AmbiEncoder for communicate over OSC.
 	- Open the “ICST AmbiEncoder” in an FX slot and go to “Encoder Settings”
 	- Go to “OSC In” and activate the incoming OSC port: (eg. 50001)
-   ![OSC-IN](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-port.png)
+   ![OSC-IN](content/Post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-port.png)
 - Click on the 'OSC Out' tap and activate the OSC Out port: 
    - ICST AmbiPlugins Standard XYZ Index
 
 > [!Note:] In the Max-demo patch we will wait for this  '/icst/ambi/sourceindex/xyz'
 
-![OSC-OUT](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-out.png)
+![OSC-OUT](content/Post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-out.png)
 2. Open MaxMSP and look for the 'OSC-communication with ICST plugins in DAW' patch.
 - See the next demo gif.
-![Max-AmbiEnc](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.gif)
+![Max-AmbiEnc](content/Post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.gif)
 
 ## **Example: Sending Absolute Angles (Degrees) with Euler Coordinates from Max to ICST AmbiEncoder**
 
@@ -46,7 +46,7 @@ For **index-based addressing**:
 - `Pitch` (Elevation): Vertical tilt
 - `Roll`: Rotation around the forward axis
 
-![osc-euler](osc-euler-abs.gif)
+![osc-euler](content/Post/OSC<-->Max%20to%20AmbiEncoder/osc-euler-abs.gif)
 
 ----
 ©2025 ICST

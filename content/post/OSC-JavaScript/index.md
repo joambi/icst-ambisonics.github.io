@@ -1,5 +1,5 @@
 ---
-title: 
+title: OSC-JavaScript
 date:
 ---
 # Institute for Computer Music and Sound Technology (ICST)
@@ -9,7 +9,7 @@ date:
 ----
 ### Custom OSC - JS Help:
 
-![JavaScript](JavaScript.jpg)
+![JavaScript](content/Post/OSC-JavaScript/JavaScript.jpg)
 
 Title (optional):");
   If the first line starts with a comment (//), this comment
