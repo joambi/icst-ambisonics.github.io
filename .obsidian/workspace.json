@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/About/index.md",
+                "file": "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,13 +198,15 @@
   },
   "active": "229301a58f7d83a0",
   "lastOpenFiles": [
-    "content/HOME/index.md",
-    "content/About/index.md",
+    "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.html",
+    "public/post/1/01/icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication",
+    "content/post/Info/Index.md",
     "content/post/_index.md",
+    "content/About/index.md",
+    "content/HOME/index.md",
     "content/post/OSC-JavaScript/index.md",
     "public/post/1/01/osc_javascript/index.html",
     "public/post/1/01/osc_javascript",
-    "content/post/Info/Index.md",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
     "content/ICST Ambisonics Tools/index.md",
     "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
@@ -227,7 +229,6 @@
     "content/Blog/Decoder-Speaker-Ssettings/index.md",
     "decoder_speaker_settings.md",
     "content/Blog/NEW/index.md",
-    "public/blog/decoder-speaker-ssettings/index.html",
     "public/blog/icst-ambisonics-setups/Labor-DOME-Setup.png",
     "content/Blog/NOTES/index.md",
     "ascolta.md",
@@ -243,7 +244,6 @@
     "speakers_decoder_xml.md",
     "content/Blog/Additional Downloads/_index.md",
     "ICST.md",
-    "content/Blog/Additional Downloads/index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }

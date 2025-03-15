@@ -1,5 +1,5 @@
 ---
-title: icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication
+title: icst-ambisonics-plucst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication
 ---
 # Institute for Computer Music and Sound Technology (ICST)
 
