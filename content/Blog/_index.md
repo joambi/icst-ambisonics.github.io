@@ -14,7 +14,7 @@ tags:
 
 [Ascolta Akusmatische Hörstunde](ascolta)
 
-[Decoder-Speaker-Settings](decoder-speaker-settings)
+[Decoder Speaker Settings](decoder_speaker_settings)
 
 [ICST Ambisonics Setups](icst_ambisonics_setups)
 
