@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
+                "file": "content/Post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -184,6 +184,7 @@
   },
   "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
+    "content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
     "content/Post/_index.md",
     "public/post/osc-max-group-manipulation-in-ambiencoder/osc-js_help.png",
     "public/post/osc-max-group-manipulation-in-ambiencoder/index.html",
@@ -191,7 +192,6 @@
     "public/post/osc-max-group-manipulation-in-ambiencoder",
     "public/post/oscmax-group-manipulation-in-ambiencoder/osc-js_help.png",
     "public/post/oscmax-group-manipulation-in-ambiencoder/osc-euler-abs.gif",
-    "content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
     "public/post/oscmax-group-manipulation-in-ambiencoder/index.html",
     "public/post/oscmax-group-manipulation-in-ambiencoder",
     "content/Links/index.md",
