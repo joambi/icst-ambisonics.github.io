@@ -1,6 +1,10 @@
 ---
-date: ""
-title: osc-syntax-for-the-icst-ambiencoder-plugin
+title: 
+date: 2025-03-16T09:44:58+01:00
+Description: 
+tags: 
+Categories: 
+DisableComments: false
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -44,7 +48,7 @@ For **index-based addressing**:
 - `Pitch` (Elevation): Vertical tilt
 - `Roll`: Rotation around the forward axis
 
-![osc-euler](Evernote/OSC<-->Max%20to%20AmbiEncoder/osc-euler-abs.gif)
+![osc-euler](content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/osc-euler-abs.gif)
 
 ----
 ©2025 ICST
