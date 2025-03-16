@@ -1,6 +1,12 @@
 ---
-description: osc-syntax-for-the-icst-ambiencoder-plugin
+title: 
+date: 2025-03-16T09:44:58+01:00
+Description: 
+tags: 
+Categories: 
+DisableComments: false
 ---
+
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
