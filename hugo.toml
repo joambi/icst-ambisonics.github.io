@@ -49,7 +49,7 @@ url = "https://github.com/joambi"
   url = "/ICST Ambisonics Tools/"
   
   [[menu.main]]
-  name = "Posts"
+  name = "Post"
   weight = 400
   identifier = "post"
   url = "/post/"
@@ -77,10 +77,5 @@ tag = "tags"
 year = "year"
 month = "month"
 
-[permalinks]
-post = "/post/:year/:month/:day/:slug"
-year = "/post/:slug/"
-month = "/post/:slug/"
-day = "/post/:slug/"
 
 
