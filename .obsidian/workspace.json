@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "cc972b6b124e21f6",
+        "id": "be91a84e7662b3a4",
         "type": "tabs",
         "children": [
           {
-            "id": "229301a58f7d83a0",
+            "id": "d27bf0d7bfe9d943",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/post/_index.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "_index"
-            }
-          },
-          {
-            "id": "a9379e3180396ae8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/ICST Ambisonics Tools/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
+              "title": "New tab"
             }
           }
         ]
@@ -196,12 +178,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "229301a58f7d83a0",
+  "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
-    "content/Blog/_index.md",
+    "public/post/2025/03/16/info/index.html",
+    "public/post/2025/03/16/info",
+    "public/post/2025/03/16",
+    "public/post/2025/03",
+    "public/post/2025",
+    "content/post/info/index.md",
+    "content/post/info",
+    "Evernote/Info/Index.md",
+    "content/ICST Ambisonics Tools/index.md",
     "content/post/_index.md",
+    "Evernote/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
+    "public/post/1/01/01/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.html",
+    "public/post/1/01/01/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication",
+    "content/Blog/_index.md",
     "content/_index.md",
-    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "public/post/1/01/01/bidirectional-osc/osc_Reaper.png",
     "public/post/1/01/01/bidirectional-osc/osc-port.png",
     "public/post/1/01/01/bidirectional-osc/osc-out.png",
@@ -210,27 +203,19 @@
     "public/post/1/01/01/bidirectional-osc/Max_Reaper.gif",
     "public/post/1/01/01/bidirectional-osc/index.html",
     "public/post/1/01/01/bidirectional-osc",
-    "content/post/Reaper/index.md",
+    "Evernote/Reaper/index.md",
     "public/tags/post/index.xml",
-    "public/tags/post/index.html",
-    "public/tags/post",
-    "content/post/Info/Index.md",
-    "public/post/1/01/01/reaper/index.html",
-    "public/post/1/01/01/reaper",
     "public/post/1/01/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png",
     "public/post/1/01/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png",
-    "public/post/1/01/01/osc-send-for-osc-learning-in-reaper/index.html",
     "public/post/1/01/01/osc_Reaper.png",
     "public/post/1/01/01/osc-port.png",
-    "public/post/1/01/01/osc-syntax-for-the-icst-ambiencoder-plugin/index.html",
-    "public/post/1/01/01/info/index.html",
     "content/post/Untitled.md",
     "ambisonics_in_reaper.md",
     "content/ICST Ambisonics Plugins/_index.md",
-    "content/post/OSC<-->Max to AmbiEncoder/index.md",
-    "content/post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
-    "content/post/osc-send-for-osc-learning-in-reaper/index.md",
-    "content/post/OSC-JavaScript/index.md",
+    "Evernote/OSC<-->Max to AmbiEncoder/index.md",
+    "Evernote/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
+    "Evernote/osc-send-for-osc-learning-in-reaper/index.md",
+    "Evernote/OSC-JavaScript/index.md",
     "content/Links/index.md",
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
@@ -241,9 +226,6 @@
     "content/Blog/NEW/index.md",
     "content/Blog/ICST Ambisonics Setups/index.md",
     "content/Blog/Decoder-Speaker-Settings/index.md",
-    "content/Blog/Ascolta/index.md",
-    "content/About/index.md",
-    "content/ICST Ambisonics Tools/index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }
