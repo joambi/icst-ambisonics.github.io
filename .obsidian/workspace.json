@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Post/_index.md",
+                "file": "content/Post/ableton_reaper/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -182,8 +182,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1597bac92f6118b8",
+  "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
+    "content/Post/_index.md",
     "public/downloads/E4L Multi-Panner_OSC.adv",
     "static/downloads/E4L Multi-Panner_OSC.adv",
     "public/downloads",
@@ -202,9 +203,7 @@
     "public/post/ableton_reaper/untitled",
     "content/Post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
     "public/post/ableton_reaper/E4L Multi-Panner_OSC.adv",
-    "public/post/ableton_reaper",
     "content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
-    "content/Post/_index.md",
     "public/post/osc-max-group-manipulation-in-ambiencoder/osc-js_help.png",
     "public/post/osc-max-group-manipulation-in-ambiencoder/osc-euler-abs.gif",
     "public/post/oscmax-group-manipulation-in-ambiencoder/osc-js_help.png",
