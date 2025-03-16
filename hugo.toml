@@ -49,7 +49,7 @@ url = "https://github.com/joambi"
   url = "/ICST Ambisonics Tools/"
   
   [[menu.main]]
-  name = "Post"
+  name = "Posts"
   weight = 400
   identifier = "post"
   url = "/post/"
