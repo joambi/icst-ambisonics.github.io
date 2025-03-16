@@ -54,7 +54,6 @@ url = "https://github.com/joambi"
   identifier = "post"
   url = "/post/"
   
-
   [[menu.main]]
   name = "Links"
   weight = 600
@@ -82,5 +81,6 @@ month = "month"
 post = "/post/:year/:month/:day/:slug"
 year = "/post/:slug/"
 month = "/post/:slug/"
+day = "/post/:slug/"
 
 
