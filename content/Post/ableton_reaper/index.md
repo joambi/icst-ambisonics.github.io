@@ -21,7 +21,9 @@ The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncode
   
 In the Reaper DAW, you receive the audio inputs from BlackHole (1-4) and in the ICST Multi-AmbiEncoder the OSC sources (1-16).
 
-This allows you to recorde  a Bformat up to the 7th order of Ableton Live 12.
+![Ableton_to_MultiEncoder](Ableton_OSC_BlackHole.gif)
+
+This allows you, to record  a Bformat up to the 7th order of Ableton Live 12.
 
 Download: [E4L_Multi-Panner_OSC.adv](https://github.com/joambi/icst-ambisonics.github.io/tree/main/static/downloads)
 
