@@ -11,10 +11,14 @@
             "id": "d27bf0d7bfe9d943",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/Post/_index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "_index"
             }
           }
         ]
@@ -166,7 +170,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1742113801378": false,
+      "image-preview-on-icon-hover:1742116671922": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -180,6 +184,11 @@
   },
   "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
+    "content/Post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
+    "public/post/neuer-ordner/index.html",
+    "public/post/neuer-ordner/untitled/index.html",
+    "public/post/neuer-ordner/untitled",
+    "public/post/neuer-ordner",
     "public/post/2025/03/16/info/index.html",
     "public/post/2025/03/16/info",
     "public/post/2025/03/16",
@@ -191,8 +200,6 @@
     "content/ICST Ambisonics Tools/index.md",
     "content/post/_index.md",
     "Evernote/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
-    "public/post/1/01/01/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.html",
-    "public/post/1/01/01/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication",
     "content/Blog/_index.md",
     "content/_index.md",
     "public/post/1/01/01/bidirectional-osc/osc_Reaper.png",
@@ -201,10 +208,7 @@
     "public/post/1/01/01/bidirectional-osc/open_OSC.gif",
     "public/post/1/01/01/bidirectional-osc/max_osc_to_AmbiPlugins.gif",
     "public/post/1/01/01/bidirectional-osc/Max_Reaper.gif",
-    "public/post/1/01/01/bidirectional-osc/index.html",
-    "public/post/1/01/01/bidirectional-osc",
     "Evernote/Reaper/index.md",
-    "public/tags/post/index.xml",
     "public/post/1/01/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png",
     "public/post/1/01/01/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png",
     "public/post/1/01/01/osc_Reaper.png",
@@ -225,7 +229,6 @@
     "content/Blog/NOTES/index.md",
     "content/Blog/NEW/index.md",
     "content/Blog/ICST Ambisonics Setups/index.md",
-    "content/Blog/Decoder-Speaker-Settings/index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }
