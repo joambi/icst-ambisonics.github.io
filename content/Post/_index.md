@@ -13,5 +13,5 @@ aliases:
 
 [osc-syntax-for-the-icst-ambiencoder-plugin](osc-syntax-for-the-icst-ambiencoder-plugin)
 
-[OSC-Max-Group-Manipulation-in-AmbiEncoder](osc–max-group-manipulation-in-ambiencoder)
+[osc-syntax-for-the-icst-ambiencoder-plugin](osc-syntax-for-the-icst-ambiencoder-plugin)
 
