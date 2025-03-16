@@ -1,0 +1,15 @@
+/* Hintergrundfarbe ändern */
+body {
+    background-color: #f5f5f5;
+}
+
+/* Schriftart ändern */
+body, h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Breite des Content-Bereichs anpassen */
+.post {
+    max-width: 800px;
+    margin: auto;
+}
