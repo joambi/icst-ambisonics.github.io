@@ -13,5 +13,5 @@ aliases:
 
 [osc-syntax-for-the-icst-ambiencoder-plugin](osc-syntax-for-the-icst-ambiencoder-plugin)
 
-[osc-syntax-for-the-icst-ambiencoder-plugin](osc-syntax-for-the-icst-ambiencoder-plugin)
+
 

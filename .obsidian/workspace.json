@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Post/_index.md",
+                "file": "content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ]
@@ -185,8 +185,8 @@
   "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
     "content/Post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
-    "content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
     "content/Post/_index.md",
+    "content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
     "public/post/osc-max-group-manipulation-in-ambiencoder/osc-js_help.png",
     "public/post/osc-max-group-manipulation-in-ambiencoder/index.html",
     "public/post/osc-max-group-manipulation-in-ambiencoder/osc-euler-abs.gif",
@@ -199,9 +199,9 @@
     "content/Post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "content/Post/info/index.md",
     "Evernote/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
-    "Evernote/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png",
-    "Evernote/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png",
-    "Evernote/osc-syntax-for-the-icst-ambiencoder-plugin/OSX-Syntax.png",
+    "content/Post/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png",
+    "content/Post/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png",
+    "content/Post/osc-syntax-for-the-icst-ambiencoder-plugin/OSX-Syntax.png",
     "content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/osc-euler-abs.gif",
     "content/Post/OSC-Max-Group-Manipulation-in-AmbiEncoder/osc-js_help.png",
     "content/Post/osc-syntax-for-the-icst-ambiencoder-plugin",
