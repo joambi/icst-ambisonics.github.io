@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/Ascolta/index.md",
+                "file": "content/Post/ableton_reaper/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -184,6 +184,8 @@
   },
   "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
+    "content/Post/ableton_reaper/Ableton_output.png",
+    "content/Blog/Ascolta/index.md",
     "content/Post/ableton_reaper/index.md",
     "content/Post/_index.md",
     "public/downloads/E4L Multi-Panner_OSC.adv",
@@ -196,7 +198,6 @@
     "public/post/ableton_reaper/Ableton_output.png",
     "public/post/ableton_reaper/Ableton_OSC_BlackHole.gif",
     "content/Post/ableton_reaper/reaper_input.png",
-    "content/Post/ableton_reaper/Ableton_output.png",
     "content/Post/ableton_reaper/Ableton_OSC_BlackHole.gif",
     "public/post/ableton_reaper/index.html",
     "public/post/ableton_reaper/untitled/index.html",
@@ -228,7 +229,6 @@
     "content/ICST Ambisonics Plugins/03_how_it_works/index.md",
     "content/ICST Ambisonics Plugins/02_installation/index.md",
     "content/ICST Ambisonics Plugins/01_overview/index.md",
-    "content/HOME/index.md",
     "ICST Ambisonics Site Struktur.canvas"
   ]
 }

@@ -25,7 +25,16 @@ In the Reaper DAW, you receive the audio inputs from BlackHole (1-4) and in the 
 
 This allows you, to record  a Bformat up to the 7th order of Ableton Live 12.
 
-Download: [E4L_Multi-Panner_OSC.adv](https://github.com/joambi/icst-ambisonics.github.io/tree/main/static/downloads)
+### How it works
+
+#### Preparation:
+
+- Install [AbletonLive 12](https://www.ableton.com/de/live/)
+- Install [Reaper (DAW)](https://www.reaper.fm/)
+- Download: [E4L_Multi-Panner_OSC.adv](https://github.com/joambi/icst-ambisonics.github.io/tree/main/static/downloads) This is a modified panner from [EnvelopforLive](https://github.com/EnvelopSound/EnvelopForLive/wiki)
+
+#### Setup:
+
 
 ----
 ©2025 ICST
