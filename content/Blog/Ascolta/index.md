@@ -11,11 +11,10 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ## **Listening twice**
 
 **Experimental**
-Tuesday, 22 April 2025, 18:00
 
-Toni-Areal, Kompositionsstudio 3.D02, Ebene 3, 
-
-Pfingstweidstrasse 96, Zürich
+- Tuesday, 22 April 2025, 18:00
+- Toni-Areal, Kompositionsstudio 3.D02, Ebene 3, 
+- Pfingstweidstrasse 96, Zürich
 
 _Eintritt frei_ 
 
