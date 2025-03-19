@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Post/ableton_reaper/index.md",
+                "file": "content/Blog/Ascolta/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -184,6 +184,7 @@
   },
   "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
+    "content/Post/ableton_reaper/index.md",
     "content/Post/_index.md",
     "public/downloads/E4L Multi-Panner_OSC.adv",
     "static/downloads/E4L Multi-Panner_OSC.adv",
@@ -191,7 +192,6 @@
     "static/downloads",
     "public/Neuer Ordner",
     "static/Neuer Ordner",
-    "content/Post/ableton_reaper/index.md",
     "public/post/ableton_reaper/reaper_input.png",
     "public/post/ableton_reaper/Ableton_output.png",
     "public/post/ableton_reaper/Ableton_OSC_BlackHole.gif",
