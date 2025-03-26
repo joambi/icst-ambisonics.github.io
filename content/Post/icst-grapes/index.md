@@ -18,6 +18,7 @@ Grapes comes as a standalone and as a VST3 and can be operated directly in the D
 ### Advantages of Grapes 3D Control
 
 A major advantage of this method is that the 3D spatial sound control does not have to be recorded in the DAW. Instead, it is sent to the ICST AmbiEncoders via OSC from Grapes. This means that the spatial design remains flexible and can also be interpreted with other spatialization tools such as LISA, Dolby Atmos or binaural audio playback.
+
 For more information, see: https://grapes-3d.com/
 
 ----
