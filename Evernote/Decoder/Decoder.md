@@ -85,7 +85,6 @@ C: Adjustment for the Speaker - Gain in dB
 ![[./_resources/Decoder.resources/ZDec_02_zoom.gif]]
 
 **Decoder\_specification:**
-<https://bitbucket.org/christian_schweizer/icst-ambisonics-plugins/wiki/Decoder_specification>
 
 * * *
 
