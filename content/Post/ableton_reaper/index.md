@@ -44,7 +44,8 @@ This setup allows recording B-format up to the 7th order from Ableton Live 12.
 
 1. Create up to 64 mono/stereo tracks with audio or MIDI content.
 2. Route outputs as external outs (1-64).
-3. Reserve Track 64 for the LTC timecode.
+3. Reserve Track 64 for the LTC timecode. 
+**Note**: I read that there could be difficulties with bi-directional synchronization between Reaper and Ableton Live. So I decided on the stable LTC Timecode variant.
 4. Create spatialization tracks using 'E4L_Multi-Panner_OSC.adv' for automation (max 16 sources per panner).
 5. Optionally, send custom OSC spatialization data from Max to ensure consistent OSC port numbers in Reaper (port: 50001).
 
