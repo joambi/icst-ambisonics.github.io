@@ -28,6 +28,7 @@ A key outcome of ICST’s research is the **ICST Ambisonics Tools**, a suite of 
 This site provides an overview of ICST’s Ambisonics research and developments.
 
 The site is maintained by Johannes Schuett at the ICST/ZHdK. 
+
 johannes.schuett@zhdk.ch
 
 ----
