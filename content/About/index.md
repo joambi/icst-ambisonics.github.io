@@ -1,5 +1,5 @@
 ---
-title: About
+title: About & Impressum
 description: Tools for Ambisonics audio processing
 date: 2025-02-27
 tags:
@@ -8,6 +8,7 @@ tags:
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
+# About
 
 The **Institute for Computer Music and Sound Technology** ([ICST](https://www.zhdk.ch/forschung/icst)) is a research and educational center at the **Zurich University of the Arts** ([ZHdK](https://www.zhdk.ch/)), dedicated to advancing technology for music, sound art, and media production.
 # Focus Areas
@@ -15,7 +16,6 @@ The **Institute for Computer Music and Sound Technology** ([ICST](https://www.zh
 - Development of 3D audio tools and plugins, including **ICST Ambisonics Tools** for Max/MSP and **ICST Ambisonics Plugins** for DAWs.
 #### **Sound Research & Perception**
 - Exploration of acoustic perception, algorithmic composition, and interactive sound spaces.
-
 #### **Music & Media Art**
 - Support for projects in electroacoustic music, sound design, and immersive audio formats.
 
@@ -27,9 +27,33 @@ A key outcome of ICST’s research is the **ICST Ambisonics Tools**, a suite of 
 
 This site provides an overview of ICST’s Ambisonics research and developments.
 
-The site is maintained by Johannes Schuett at the ICST/ZHdK. 
+---
 
-johannes.schuett@zhdk.ch
+# Impressum
+
+Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+
+---
+
+The site is maintained by Johannes Schuett at the ICST/ZHdK.
+## Kontakt
+
+
+
+Postadresse:  
+Zürcher Hochschule der Künste  
+Institute for Computer Music and Sound Technology  
+Toni-Areal, Pfingstweidstrasse 96  
+Postfach, CH-8031 Zürich  
+  
+**Céline Lutz**  
+Administration ICST  
+Telefon: +41 (0)43 446 55 00  
+[E-Mail](celine.lutz@zhdk.ch)
+
+https://www.zhdk.ch/forschung/icst
+
+[www.zhdk.ch](http://www.zhdk.ch/ "http://www.zhdk.ch/")
 
 ----
 ©2025 ICST
