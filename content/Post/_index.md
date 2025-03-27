@@ -15,6 +15,9 @@ aliases:
 
 [ICST AmbiEncoder OSC to FX](osc-2-fx)
 
+[ICST MultiEncoder Group animation](gp-manipulation)
+
 [ICST AmbiPlugins and AbletonLive](ableton_reaper)
 
 [ICST AmbiPlugins & Grapes](icst-grapes)
+
