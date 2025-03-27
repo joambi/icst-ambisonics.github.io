@@ -25,17 +25,25 @@ The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool f
 💡 **Tip:** These functions also apply to height adjustments in the **Z-Radar**.
 
 ----
-#### LFO animation of a Group
-
-![LFO_A 1](LFO_A.png)
+### LFO Animation of a Group
+ ![LFO_A 1](LFO_A.png)
 1. Open the **LFO Parameter Modulation** in the **AmbiEncoder** track and activate the parameters for **GX, GY, and GZ**.
-![LFO_parm](LFO_param.png)
+ ![LFO_parm](LFO_param.png)
 2. Adjust the LFO parameters, such as **speed**, to achieve the desired movement.  
 Now, the group moves automatically in the radar.
 
-![GP_LFO_animated](LFO_A.gif)
+ ![GP_LFO_animated](LFO_A.gif)
 
 💡 **Tip:** If you connect the LFO parameters to a **MIDI/OSC interface**, you can control the movement live.
+
+----
+### LFO Group Animation with Quaternions
+
+![LFO_B](LFO_Quarternions.gif)
+
+This is a more advanced example of animating a group using **quaternion parameters**.
+
+💡 **Tip:** You can also drive the parameters using an **audio control signal** via sidechain.
 
 ----
 ©2025 ICST
