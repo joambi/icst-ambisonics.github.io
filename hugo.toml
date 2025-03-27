@@ -66,10 +66,10 @@ url = "https://github.com/joambi"
   url = "/about/"
 
   [[menu.footer]]
-  name = "License"
+  name = "Privacy Policy"
   weight = 1
-  identifier = "License"
-  url = "/License.md/"
+  identifier = "Privacy Policy"
+  url = "/Privacy Policy/"
 
 [taxonomies]
 series = "series"

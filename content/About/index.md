@@ -35,10 +35,12 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ---
 
-The site is maintained by Johannes Schuett at the ICST/ZHdK.
+The site is made with [Hugo](https://gohugo.io/) and the '[anatole](https://themes.gohugo.io/themes/anatole/)' theme.
+
+Hostet by [Github/page](https://pages.github.com/)
+
+Maintained by Johannes Schuett at the ICST/ZHdK.
 ## Kontakt
-
-
 
 Postadresse:  
 Zürcher Hochschule der Künste  
