@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/HOME/index.md",
+                "file": "data/Privacy Policy.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Privacy Policy.md"
             }
           }
         ]
@@ -182,12 +182,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d27bf0d7bfe9d943",
+  "active": "1597bac92f6118b8",
   "lastOpenFiles": [
-    "content/Blog/Ascolta/index.md",
     "content/About/index.md",
+    "content/HOME/index.md",
+    "content/Blog/Ascolta/index.md",
     "public/privacy-policy.md",
-    "data/Privacy Policy.md",
+    "data/Privacy Policy.md.md",
     "data/Privacy Policy.md.sb-16ac9988-yct5T8",
     "themes/anatole/archetypes/post.md",
     "README.md",
@@ -229,7 +230,6 @@
     "Evernote/ICST Ambisonics Encoder  OSC/_resources/ICST_Ambisonics_Encoder_OSC.resources/Bildschirmfoto 2022-09-15 um 13.22.43.png",
     "content/Post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication.md",
-    "Evernote/Decoder/Decoder.md",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",

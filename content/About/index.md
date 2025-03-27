@@ -11,7 +11,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 # About
 
 The **Institute for Computer Music and Sound Technology** ([ICST](https://www.zhdk.ch/forschung/icst)) is a research and educational center at the **Zurich University of the Arts** ([ZHdK](https://www.zhdk.ch/)), dedicated to advancing technology for music, sound art, and media production.
-# Focus Areas
+### Focus Areas
 #### **Ambisonics & Spatial Sound**
 - Development of 3D audio tools and plugins, including **ICST Ambisonics Tools** for Max/MSP and **ICST Ambisonics Plugins** for DAWs.
 #### **Sound Research & Perception**
@@ -34,12 +34,13 @@ This site provides an overview of ICST’s Ambisonics research and developments.
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
+Powered by  [Hugo](https://gohugo.io/) with the '[Anatole](https://themes.gohugo.io/themes/anatole/)' theme.
 
-The site is made with [Hugo](https://gohugo.io/) and the '[anatole](https://themes.gohugo.io/themes/anatole/)' theme.
+Hosted on [GitHub Pages](https://pages.github.com/). 
 
-Hostet by [Github/page](https://pages.github.com/)
+Maintained by Johannes Schütt at ICST/ZHdK.
 
-Maintained by Johannes Schuett at the ICST/ZHdK.
+---
 ## Kontakt
 
 Postadresse:  
