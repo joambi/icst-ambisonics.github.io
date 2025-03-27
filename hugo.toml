@@ -12,8 +12,9 @@ description = " This is the ICST Ambisonics Tutorial Blog"
 profilePicture = "images/AmbiPlugin_logo.gif"
 mainSections = ["blog"]
 favicon = "favicons/"
+rssFullContent = true
+contentratio = 0.7 
 
-    
 ## Social links
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
 [[params.socialIcons]]
