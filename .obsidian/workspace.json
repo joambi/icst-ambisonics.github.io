@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/About/index.md",
+                "file": "content/Blog/Ascolta/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -184,13 +184,14 @@
   },
   "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
+    "content/About/index.md",
+    "public/privacy-policy.md",
     "data/Privacy Policy.md",
     "data/Privacy Policy.md.sb-16ac9988-yct5T8",
     "themes/anatole/archetypes/post.md",
     "README.md",
     "archetypes/default.md",
     "content/Blog/_index.md",
-    "content/About/index.md",
     "content/Blog/NEW/index.md",
     "content/Blog/NOTES/index.md",
     "themes/anatole/layouts/partials/Datenschutz",
