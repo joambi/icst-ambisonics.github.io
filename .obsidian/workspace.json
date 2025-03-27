@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/Ascolta/index.md",
+                "file": "content/HOME/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -184,6 +184,7 @@
   },
   "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
+    "content/Blog/Ascolta/index.md",
     "content/About/index.md",
     "public/privacy-policy.md",
     "data/Privacy Policy.md",
@@ -209,7 +210,6 @@
     "public/Privacy Policy.md",
     "public/License.md",
     "public/blog/icst-ambisonics-setup/Kompstudio.jpg",
-    "content/Blog/Ascolta/index.md",
     "content/Post/icst-grapes/index.md",
     "icst-grapes.md",
     "public/post/icst-grapes/Grapes.gif",
