@@ -10,6 +10,7 @@ tags:
 ---
 ## 1\. IntroductionADM-OSC has been designed to solve real problems for live and broadcast sound producers. Since 2019, a growing workgroup of industry stakeholders from live music and broadcast domains has gathered to exchange needs and experiences from real-life production cases. These companies have already expressed interest or have implemented ADM-OSC:
 
+
 - [Atlas](https://www.atlas-control.app/)
 - [Adamson](http://www.adamsonsystems.com/)
 - [Amadeus Acoustics GmbH](https://amadeus-acoustics.com/)

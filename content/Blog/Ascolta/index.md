@@ -8,6 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ---
 # #14 ascolta Akusmatische Hörstunde
 
+![ascolta](ascolta.png)
 ## **Listening twice**
 
 **Experimental**
@@ -27,11 +28,8 @@ In this session we will listen to classic electroacoustic compositions in two di
 
 We look forward to comparing these versions
 
-
 Additional Information:
-
 - [5.1 Surround Format](https://en.wikipedia.org/wiki/5.1_surround_sound)
-
 - [Stereo UHJ:](https://en.wikipedia.org/wiki/Ambisonic_UHJ_format) A process that encodes strictly horizontal Ambisonics signals into a compatible two-channel stereo format using matrix technology originally developed for Quadraphonics. However, this encoding is lossy.
 - We decoded the original UHJ into a 7th-order ambiX B-format and are using the [ICST Ambisonics MultiDecoder](https://ambisonics.ch/icst-ambisonics-plugins/01_overview/) for playback.
 
