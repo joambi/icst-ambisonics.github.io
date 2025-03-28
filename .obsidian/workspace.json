@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Post/gp-manipulation/index.md",
-                "mode": "source",
+                "file": "content/Privacy Policy.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Privacy Policy"
             }
           }
         ]
@@ -184,8 +184,8 @@
   },
   "active": "d27bf0d7bfe9d943",
   "lastOpenFiles": [
-    "content/Post/gp-manipulation/LFO_Quarternions.gif",
     "content/Post/gp-manipulation/index.md",
+    "content/Post/gp-manipulation/LFO_Quarternions.gif",
     "public/post/gp-manipulation/LFO_Quarternions.gif",
     "public/post/gp-manipulation/LFO_A.gif",
     "content/Post/gp-manipulation/LFO_A.gif",

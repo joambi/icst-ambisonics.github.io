@@ -9,6 +9,7 @@ DisableComments: false
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
+The Privacy Policy is powered by [iubenda ](https://www.iubenda.com/en/cookie-solution?utm_source=cs&utm_medium=web&utm_campaign=csbr1)
 ### Privacy Policy ambisonics.ch   
   
 This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to understand how we collect, use, protect or otherwise handle your personal data in accordance with our website.   
