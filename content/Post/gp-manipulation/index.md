@@ -45,6 +45,13 @@ This is a more advanced example of animating a group using **quaternion paramete
 
 💡 **Tip:** You can also drive the parameters using an **audio control signal** via sidechain.
 
+---
+### Group animation from an external source 
+
+Next, we’ll demonstrate how to animate groups using OSC from an external source. The MultiEncoder internally converts Euler angles into quaternions. In this example, the angles from the source point (1) are crucial for the animation.
+
+![Euler2Quaternions](Euler2Quadternion.gif)
+
 ----
 ©2025 ICST
 

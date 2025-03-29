@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/Ascolta/index.md",
+                "file": "content/Post/gp-manipulation/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -227,6 +227,9 @@
   },
   "active": "b0ba27d906809eee",
   "lastOpenFiles": [
+    "content/Blog/Ascolta/index.md",
+    "public/post/gp-manipulation/Euler2Quadternion.gif",
+    "content/Post/gp-manipulation/Euler2Quadternion.gif",
     "public/blog/ascolta/ascolta.png",
     "content/Blog/Ascolta/ascolta.png",
     "content/Blog/_index.md",
@@ -252,9 +255,6 @@
     "content/Post/gp-manipulation/LFO_Quarternions.gif",
     "public/post/gp-manipulation/LFO_Quarternions.gif",
     "public/post/gp-manipulation/LFO_A.gif",
-    "content/Post/gp-manipulation/LFO_A.gif",
-    "content/Post/gp-manipulation/LFO_param.png",
-    "public/post/gp-manipulation/LFO_param.png",
     "content/Post/_index.md",
     "content/ICST Ambisonics Plugins/04_quick_start/index.md",
     "public/post/gp-manipulation/index.html",
@@ -266,7 +266,6 @@
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
     "content/About/index.md",
     "content/HOME/index.md",
-    "content/Blog/Ascolta/index.md",
     "public/privacy-policy.md",
     "themes/anatole/archetypes/post.md",
     "archetypes/default.md",
