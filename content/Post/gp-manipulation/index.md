@@ -48,9 +48,23 @@ This is a more advanced example of animating a group using **quaternion paramete
 ---
 ### Group animation from an external source 
 
-Next, we’ll demonstrate how to animate groups using OSC from an external source. The MultiEncoder internally converts Euler angles into quaternions. In this example, the angles from the source point (1) are crucial for the animation.
+A new 'ICST Ambi-OSC-Patcher' shows the direct group animation possibilities, we’ll demonstrate how to animate groups using OSC from an external source. The MultiEncoder internally converts Euler angles into quaternions. In this example, the angles from the source point (1) are crucial for the animation.
 
-![Euler2Quaternions](Euler2Quadternion.gif)
+![Max exaple patch](max-example-patch.png)
+
+#### Group Position
+1. Set Group Position AED
+	- /icst/ambi/group/aed [GroupName] [Azimuth] [Elevation] [Distance] [Mode] Mode (1) = move the hole GP, Mode (0) = move only the GP-Point.
+	- `/icst/ambi/group/aed 'G1' 135 0 0.1 1`
+2. Set Group Position XYZ
+	- /icst/ambi/group/xyz [GroupName] [X] [Y] [Z] [Mode]:
+	- `/icst/ambi/group/xyz 'G2' 0.1 0.1 0 0`
+
+### **OSC Animation**
+
+The ICST MultiEncoder can now be controlled directly using Euler angles via OSC. 
+
+![Euler_Winkel](OSC_abs_angel.gif)
 
 ----
 ©2025 ICST
