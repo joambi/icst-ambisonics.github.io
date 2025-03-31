@@ -11,6 +11,11 @@ ICST MultiEncoder and the ios [GyrOSC.app ](https://www.bitshapesoftware.com/ins
 
 ![GyrOSC](gyrOSC.png)
 
-![Example video:](GyrOSC_EX.mov)
+![Example video:](GyrOSC_EX.mp4)
+
+---
+©2025 ICST
+
+
 
 
