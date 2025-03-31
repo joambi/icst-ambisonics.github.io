@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Post/gp-manipulation/index.md",
+                "file": "content/Post/GYROSC/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -225,53 +225,92 @@
       "obsidian-git:Open Git source control": false
     }
   },
+  "floating": {
+    "id": "ac7d763fce7970b1",
+    "type": "floating",
+    "children": [
+      {
+        "id": "a4137102f20920a0",
+        "type": "window",
+        "children": [
+          {
+            "id": "3d8837b43bccbcec",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4112a6ed98fb8192",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Evernote/ICST AmbiPlugins OSC-JavaScript for the GyrOSC/ICST AmbiPlugins OSC-JavaScript for the GyrOSC.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "ICST AmbiPlugins OSC-JavaScript for the GyrOSC"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 476,
+        "y": -884,
+        "width": 1076,
+        "height": 884,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
   "active": "b0ba27d906809eee",
   "lastOpenFiles": [
-    "content/Post/gp-manipulation/Rec_PP.gif",
+    "content/Post/_index.md",
+    "content/Post/GYROSC/index.md",
+    "public/post/gyrosc/GyrOSC_EX.mov",
+    "content/Post/GYROSC/GyrOSC_EX.mov",
+    "content/Post/GYROSC/IMG_1589.mp4",
+    "Example.md",
+    "Evernote/ICST AmbiPlugins OSC-JavaScript for the GyrOSC/ICST AmbiPlugins OSC-JavaScript for the GyrOSC.md",
+    "public/post/gyrosc/IMG_1589.mp4",
+    "public/post/gyrosc/Bildschirmfoto 2025-03-31 um 13.26.15.png",
+    "content/Post/GYROSC/gyrosc-screenshots-2.5.png",
+    "content/Post/GYROSC/Bildschirmfoto 2025-03-31 um 13.26.15.png",
+    "content/Post/GYROSC/gyrOSC.png",
+    "public/post/gyrosc/gyrOSC.png",
+    "public/post/gyrosc/gyrosc-screenshots-2.5.png",
+    "Evernote/ICST AmbiPlugins OSC-JavaScript for the GyrOSC/ICST AmbiPlugins OSC-JavaScript for the GyrOSC.1.md",
+    "Evernote/Send OSC from ICST AmbiPlugin to a other FX-Plugin/Send OSC from ICST AmbiPlugin to a other FX-Plugin.md",
+    "Evernote/ICST AmbiPlugins OSC-JavaScript for the GyrOSC/_resources/ICST_AmbiPlugins_OSC-JavaScript_for_the_GyrOSC.1.resources/Bildschirmfoto 2022-05-09 um 14.20.10.png",
+    "Evernote/ICST AmbiPlugins OSC-JavaScript for the GyrOSC/_resources/ICST_AmbiPlugins_OSC-JavaScript_for_the_GyrOSC.1.resources",
+    "Evernote/Reaper/index.md",
+    "Evernote/ICST Ambisonics Encoder  OSC/ICST Ambisonics Encoder OSC.md",
+    "ableton_reaper.md",
+    "Evernote/ICST AmbiPlugins OSC-JavaScript for the GyrOSC/_resources/ICST_AmbiPlugins_OSC-JavaScript_for_the_GyrOSC.resources/Bildschirmfoto 2022-05-09 um 14.20.10.png",
+    "Evernote/ICST AmbiPlugins OSC-JavaScript for the GyrOSC/_resources/ICST_AmbiPlugins_OSC-JavaScript_for_the_GyrOSC.resources",
+    "Evernote/ICST AmbiPlugins OSC-JavaScript for the GyrOSC/_resources",
+    "Evernote/ICST AmbiPlugins OSC-JavaScript for the GyrOSC",
+    "content/Post/osc-2-fx/index.md",
+    "public/post/gyrosc/index.html",
+    "public/post/gyrosc/untitled/index.html",
+    "Evernote/OSC-JavaScript/JavaScript.jpg",
+    "Evernote/OSC-JavaScript/index.md",
     "content/Post/gp-manipulation/index.md",
+    "content/Post/gp-manipulation/Rec_PP.gif",
     "Ansicht.md",
     "Einsicht.md",
-    "public/post/gp-manipulation/Rec_PP.gif",
-    "public/post/gp-manipulation/auto-latch.png",
-    "content/Post/gp-manipulation/auto-latch.png",
-    "public/post/gp-manipulation/max-example-patch.png",
-    "public/downloads/OSC-GP-ICST-MultiEncoder.maxpat",
-    "static/downloads/OSC-GP-ICST-MultiEncoder.maxpat",
-    "content/Post/gp-manipulation/max-example-patch.png",
-    "public/post/gp-manipulation/OSC_abs_angel.gif",
-    "content/Post/gp-manipulation/OSC_abs_angel.gif",
-    "content/Blog/NEW/OSC_abs_angel.gif",
     "content/Blog/NEW/index.md",
     "content/Blog/Ascolta/index.md",
-    "public/post/gp-manipulation/Euler2Quadternion.gif",
     "content/Blog/_index.md",
     "content/Blog/Sounding_Future/index.md",
     "Aussicht.md",
     "content/Blog/NOTES/index.md",
-    "public/blog/sounding_future/index.html",
-    "public/blog/sounding_future/untitled/index.html",
-    "public/blog/sounding_future/untitled",
-    "public/blog/sounding_future",
-    "content/Blog/Sounding_Future",
     "polices.md",
     "README.md",
     "Clippings/ADM-OSC.md",
-    "Clippings/ADM-OSC.md.sb-16ac9988-nVDpBo",
     "content/Privacy Policy.md",
-    "content/Post/_index.md",
     "content/ICST Ambisonics Plugins/04_quick_start/index.md",
-    "public/post/gp-manipulation/index.html",
-    "public/post/gp-manipulation/untitled/index.html",
-    "content/ICST Ambisonics Plugins/_index.md",
-    "content/ICST Ambisonics Plugins/07_shortcuts/index.md",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
-    "content/About/index.md",
-    "content/HOME/index.md",
-    "public/privacy-policy.md",
-    "themes/anatole/archetypes/post.md",
-    "archetypes/default.md",
-    "themes/anatole/README.md",
-    "templates/index_tut_temp.md",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",

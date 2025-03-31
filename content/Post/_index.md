@@ -9,15 +9,17 @@ aliases:
 
 [Info](info)
 
-[ICST AmbiEncoder & ICST Ambisonics Externals OSC](icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication)
+### OSC
+- [**ICST AmbiEncoder & Ambisonics Externals (OSC)**](icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication)
+- [**ICST AmbiEncoder Plugin – OSC Syntax**](osc-syntax-for-the-icst-ambiencoder-plugin)
+- [**ICST AmbiEncoder – OSC to FX Mapping**](osc-2-fx)
+- [**ICST MultiEncoder – Group Animation**](gp-manipulation)
+- [ **ICST AmbiPlugins & Grapes – 3D Control (OSC)**](icst-grapes)
+- [ICST AmbiPlugins & GyrOSC.app](gyrosc)
 
-[ICST AmbiEncoder Plugin OSC Syntax](osc-syntax-for-the-icst-ambiencoder-plugin)
+### DAW
+- [**ICST AmbiPlugins & Ableton Live Integration**](ableton_reaper)
 
-[ICST AmbiEncoder OSC to FX](osc-2-fx)
 
-[ICST MultiEncoder Group animation](gp-manipulation)
 
-[ICST AmbiPlugins and AbletonLive](ableton_reaper)
-
-[ICST AmbiPlugins & Grapes](icst-grapes)
 
