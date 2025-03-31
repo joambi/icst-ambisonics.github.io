@@ -24,6 +24,8 @@ The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool f
 
 💡 **Tip:** These functions also apply to height adjustments in the **Z-Radar**.
 
+### Recording 
+1. 
 ----
 ### LFO Animation of a Group
  ![LFO_A 1](LFO_A.png)
@@ -51,7 +53,7 @@ This is a more advanced example of animating a group using **quaternion paramete
 A new 'ICST Ambi-OSC-Patcher' shows the direct group animation possibilities, we’ll demonstrate how to animate groups using OSC from an external source. The MultiEncoder internally converts Euler angles into quaternions. In this example, the angles from the source point (1) are crucial for the animation.
 
 ![Max exaple patch](max-example-patch.png)
-
+Download MaxPatch: [Neuer OSC-Messenger](https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat)
 #### Group Position
 1. Set Group Position AED
 	- /icst/ambi/group/aed [GroupName] [Azimuth] [Elevation] [Distance] [Mode] Mode (1) = move the hole GP, Mode (0) = move only the GP-Point.
