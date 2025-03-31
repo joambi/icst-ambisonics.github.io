@@ -29,8 +29,8 @@ The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool f
 1. Set **ICST MultiEncoder** (Track Automation) to **'LATCH'** (or **'WRITE'**).
 2. Start playback in **Reaper**, hold **Alt**, and record your movement.
 3. To play back the recorded motion, set “LATCH” to “READ”.
+![GP_REC](Rec_PP.gif)
 
-   ![rec_mouvement](rec_PP.gif)
 
 
 ----
