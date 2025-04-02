@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Post/GYROSC/index.md",
+                "file": "content/ICST Ambisonics Plugins/02_installation/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -213,7 +213,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1743424176812": false,
+      "image-preview-on-icon-hover:1743596328890": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,

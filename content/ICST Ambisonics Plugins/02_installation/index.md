@@ -46,7 +46,7 @@ VIDEO:  https://www.youtube.com/watch?v=UmPnUTVem0Q
 
 ---
 
-### 02_Installation(win):
+### 02_Installation(winows):
 
 1. Download Reaper64 (Windows 64-bit) from [reaper.fm](http://reaper.fm/)
 2. Follow the Reaper Installation guide.
@@ -67,6 +67,9 @@ VIDEO:  https://www.youtube.com/watch?v=UmPnUTVem0Q
 ![01_win.png](07_win.png)
 
 Restart the PC!
+
+# Install on Linux
+
 
 ----
 ©2025 ICST
