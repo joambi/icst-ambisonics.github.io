@@ -23,6 +23,10 @@ aliases:
 
 - [Sounding Future](sounding_future)
 
+### Help
+
+- [Help](help)
+
 ### additional downloads
 
 - [Decoder Speaker Settings](decoder-speaker-settings)
