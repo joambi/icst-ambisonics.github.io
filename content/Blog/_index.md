@@ -23,9 +23,9 @@ aliases:
 
 - [Sounding Future](sounding_future)
 
-### Help
+### Technical support
 
-- [Help](help)
+- [ICST support for the composition studio](support-composition-studio)
 
 ### additional downloads
 

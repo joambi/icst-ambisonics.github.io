@@ -1,6 +1,12 @@
+---
+title: support-composition-studio
+---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
+
+# ICST support for the composition studio
+
 ### Install RME MadiFace  USB Driver
 
 
