@@ -12,12 +12,12 @@ Ambisonics - speaker - setting and coordinates
 
 The Studio Room is nearly 7m length, 7m bright and 7m hight.
 Speaker-Coordinates for the "ICST Composer Studio"
-![[Speaker_for_Decoder.png]]
+![[public/blog/ambisonics-setup/Speaker_for_Decoder.png]]
 **Coordinate:**
 ![[Speaker setting.png]]
 Speaker 19 (Sub\_B) is to the physical Channel 33 routed!
 
-* Audio-Routing for the ICST Ambisonics. Decoder in the ICST Kompositionsstudio![[audio-outputs.png]]
+* Audio-Routing for the ICST Ambisonics. Decoder in the ICST Kompositionsstudio![[public/blog/ambisonics-setup/audio-outputs.png]]
 	* Speakers Channel 1 - 17
 	* Sub\_F --> Channel 18
 	* Sub\_II --> Channel 33

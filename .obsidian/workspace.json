@@ -69,7 +69,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "content/Blog/Ambisonics-setup/audio-outputs.png"
+                "file": "content/Blog/ICST-Kompositionsstudio-Setting/audio-outputs.png"
               },
               "icon": "lucide-image",
               "title": "audio-outputs"
@@ -79,12 +79,14 @@
             "id": "ff0c5726087b7b88",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST Ambisonics Setups/Kompstudio.jpg"
+                "file": "content/Blog/ICST-Ambisonics-Photos/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Kompstudio"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ],
@@ -145,7 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 200
   },
   "right": {
     "id": "37258160c4802e4d",
@@ -249,33 +251,41 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff0c5726087b7b88",
+  "active": "1597bac92f6118b8",
   "lastOpenFiles": [
-    "content/Blog/ICST Ambisonics Setups/index.md",
-    "content/Blog/ICST Labor/index.md",
-    "public/blog/icst-labor/index.html",
-    "public/blog/icst-labor/untitled/index.html",
-    "public/blog/icst-labor/untitled",
-    "public/blog/icst-labor",
+    "content/Blog/ICST-Ambisonics-Photos/index.md",
+    "15 ascolta.md",
+    "content/Blog/ICST-Ambisonics-Photos/_AAA2472.jpg",
+    "content/Blog/ICST-Ambisonics-Photos/_AAA2476.jpg",
+    "content/Blog/ICST-Ambisonics-Photos/_AAA2498.jpg",
+    "content/Blog/ICST-Ambisonics-Photos/_AAA2502.jpg",
+    "content/Blog/ICST-Ambisonics-Photos/_AAA2430.jpg",
+    "content/Blog/ICST-Ambisonics-Photos/_AAA2437.jpg",
+    "content/Blog/ICST-Ambisonics-Photos/_AAA2429.jpg",
     "content/Blog/_index.md",
-    "public/blog/ICST Labor/Labor-DOME-Setup.png",
-    "public/blog/ICST Labor",
-    "content/Blog/ICST Labor",
-    "content/Blog/Ambisonics-setup/index.md",
-    "content/Blog/Ambisonics-setup/MultiDec.png",
-    "content/Blog/Ambisonics-setup/Speakers_Kompstudio.png",
-    "content/Blog/Ambisonics-setup/Speaker_Setting.png",
-    "content/Blog/Ambisonics-setup/Speaker_for_Decoder.png",
-    "content/Blog/Ambisonics-setup/Speaker setting.png",
-    "public/blog/ambisonics-setup/Speaker_Setting.png",
-    "public/blog/ambisonics-setup/MultiDec.png",
+    "content/Blog/ICST-Kompositionsstudio-Setting/index.md",
+    "content/Blog/ICST-Kompositionsstudio-Setting/studio-speakers.jpg",
+    "public/blog/icst-kompositionsstudio-setting/studio-speakers.jpg",
+    "public/blog/icst-kompositionsstudio-setting/_AAA2429 1.jpg",
+    "public/blog/icst-kompositionsstudio-setting/index.html",
+    "public/blog/icst-kompositionsstudio-setting",
+    "public/blog/icst-kompositionsstudio-photos/index.html",
+    "public/blog/icst-kompositionsstudio-photos",
+    "icst-ambisonics-setups.md",
+    "public/blog/icst-ambisonics-photos/index.html",
+    "public/blog/icst-ambisonics-photos",
+    "Untitled.md",
+    "themes/anatole/exampleSite/public/ar/series/index.xml",
+    "themes/anatole/exampleSite/public/ar/tags/index.xml",
+    "themes/anatole/exampleSite/public/ar/post/index.xml",
+    "themes/anatole/exampleSite/public/ar/index.xml",
+    "README.md",
+    "polices.md",
+    "Einsicht.md",
+    "Aussicht.md",
+    "Ansicht.md",
+    "content/Blog/ICST Labor/index.md",
     "Speakers_Kompstudio.md",
-    "public/blog/ambisonics-setup/Speakers_Kompstudio 1.png",
-    "public/blog/ambisonics-setup/Speakers_Kompstudio.png",
-    "public/good-practice/index.xml",
-    "public/good-practice/gp-manipulation/index.html",
-    "public/good-practice/ableton_reaper/index.html",
-    "public/good-practice/gyrosc/index.html",
     "content/Blog/Ascolta/index.md",
     "Evernote/icst-kompositionsstudio/Ambisonics-Setup.md",
     "Evernote/icst-kompositionsstudio/01 ascolta - Akusmatische Hörstunde 2019.md",
@@ -289,14 +299,6 @@
     "Evernote/icst-kompositionsstudio/ZOOM AUDIO.md",
     "Evernote/icst-kompositionsstudio/Workflows.md",
     "Evernote/icst-kompositionsstudio/Vilbjørg Broch.md",
-    "Evernote/icst-kompositionsstudio/Tutorials Studiopraxis.md",
-    "Evernote/icst-kompositionsstudio/Terms of use.md",
-    "Evernote/icst-kompositionsstudio/Technik des Kompositionsstudio.md",
-    "Evernote/icst-kompositionsstudio/Table of contents.md",
-    "Evernote/icst-kompositionsstudio/Support.md",
-    "Evernote/icst-kompositionsstudio/Studiopraxis mit Audiomovers.md",
-    "Evernote/icst-kompositionsstudio/Speaker Settings.md",
-    "Evernote/icst-kompositionsstudio/Spat  Ircam Forum.md",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",

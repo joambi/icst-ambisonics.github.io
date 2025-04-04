@@ -1,5 +1,5 @@
 ---
-title: ICST Kompositionsstudio Speaker Setting
+title: ICST Kompositionsstudio Setting
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -12,6 +12,8 @@ Ambisonics - speaker - setting and coordinates
 
 The Studio Room is nearly 7m length, 7m bright and 7m hight.
 
+![ICST KompStudio Speakers](studio-speakers.jpg)
+[photo gallery]()
 Speaker-Coordinates for the "ICST Composer Studio"
 
 ![Speaker Setup](Speakers_Kompstudio.png)
