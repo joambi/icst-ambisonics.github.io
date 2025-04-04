@@ -1,13 +1,10 @@
 ---
-
-tags: 
-  - published
-
+title:
 ---
+
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
-* * *
-
+---
 Ambisonics - speaker - setting and coordinates
 **Example for „ICST\_AmbiDecoder 2.3.1" VST3  (2023)**
 
@@ -15,12 +12,12 @@ Ambisonics - speaker - setting and coordinates
 
 The Studio Room is nearly 7m length, 7m bright and 7m hight.
 Speaker-Coordinates for the "ICST Composer Studio"
-![[Speaker_for_Decoder.png]]
+![[./_resources/Ambisonics-Setup.resources/Bildschirmfoto 2023-04-23 um 14.12.10.png]]
 **Coordinate:**
-![[Speaker setting.png]]
+![[./_resources/Ambisonics-Setup.resources/Bildschirmfoto 2023-04-23 um 14.35.35.png]]
 Speaker 19 (Sub\_B) is to the physical Channel 33 routed!
 
-* Audio-Routing for the ICST Ambisonics. Decoder in the ICST Kompositionsstudio![[audio-outputs.png]]
+* Audio-Routing for the ICST Ambisonics. Decoder in the ICST Kompositionsstudio![[./_resources/Ambisonics-Setup.resources/Bildschirmfoto 2023-04-23 um 14.14.39.png]]
 	* Speakers Channel 1 - 17
 	* Sub\_F --> Channel 18
 	* Sub\_II --> Channel 33

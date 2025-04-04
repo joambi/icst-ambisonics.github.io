@@ -15,17 +15,18 @@ aliases:
 
 ### ICST Kompositionsstudio
 
--  [ICST Ambisonics Speaker Setups](icst-ambisonics-setups)
+- [ICST Ambisonics Speaker Setups](icst-ambisonics-setups)
 - [ICST support for the composition studio](support-composition-studio)
 
+### ICST Labor 
+- 
 ###  Explore 3D Audio Music
 
 - [Ascolta Akusmatische Hörstunde](ascolta)
 - [Sounding Future](sounding_future)
 
 ### Technical support
-
-- [ICST support for the composition studio](support-composition-studio)
+- 
 
 ### Additional downloads
 

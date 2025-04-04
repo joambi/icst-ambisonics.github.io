@@ -67,14 +67,12 @@
             "id": "ec34dd779a0bfc7a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Evernote/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
-                "mode": "source",
-                "source": false
+                "file": "Evernote/icst-kompositionsstudio/_resources/Ambisonics-Setup.resources/audio-outputs.png"
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-image",
+              "title": "audio-outputs"
             }
           }
         ],
@@ -239,13 +237,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ec34dd779a0bfc7a",
+  "active": "1597bac92f6118b8",
   "lastOpenFiles": [
+    "Evernote/icst-kompositionsstudio/_resources/Ambisonics-Setup.resources/Speaker setting.png",
+    "Evernote/icst-kompositionsstudio/_resources/Ambisonics-Setup.resources/Speaker_for_Decoder.png",
+    "content/Blog/Ambisonics-setup/index.md",
+    "Evernote/icst-kompositionsstudio/Ambisonics-Setup.md",
+    "content/Blog/Ascolta/index.md",
+    "public/blog/ambisonics-setup/index.html",
+    "public/blog/ambisonics-setup/untitled/index.html",
+    "public/blog/ambisonics-setup/untitled",
+    "public/blog/ambisonics-setup",
+    "content/Blog/Ambisonics-setup",
+    "Evernote/icst-kompositionsstudio/01 ascolta - Akusmatische Hörstunde 2019.md",
+    "Evernote/icst-kompositionsstudio/02 ascolta – Akusmatische Hoerstunde Gerald Bennett.md",
+    "content/Blog/_index.md",
+    "content/Post/_index.md",
+    "Evernote/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
     "Evernote/Reaper/index.md",
     "Evernote/Send OSC from ICST AmbiPlugin to a other FX-Plugin/Send OSC from ICST AmbiPlugin to a other FX-Plugin.md",
     "Evernote/OSC-JavaScript/index.md",
-    "content/Post/_index.md",
-    "content/Blog/_index.md",
     "content/Blog/support-composition-studio/index.md",
     "Evernote/icst-kompositionsstudio/ZOOM AUDIO.md",
     "Evernote/icst-kompositionsstudio/Workflows.md",
@@ -272,21 +283,8 @@
     "Evernote/icst-kompositionsstudio/Spat  Ircam Forum.md",
     "Evernote/icst-kompositionsstudio/_resources/Spat__Ircam_Forum.resources/spat_oper.png",
     "Evernote/icst-kompositionsstudio/_resources/Spat__Ircam_Forum.resources/spat_1.png",
-    "Evernote/icst-kompositionsstudio/_resources/Spat__Ircam_Forum.resources",
     "Evernote/icst-kompositionsstudio/Software.md",
     "Evernote/icst-kompositionsstudio/Savva Dimitrios.md",
-    "Evernote/icst-kompositionsstudio/Savannah Agger.md",
-    "Evernote/icst-kompositionsstudio/_resources/Savannah_Agger.resources/F550F606-DFC4-4F0C-AD45-6FB44EEEECE9_1_201_a.jpeg",
-    "Evernote/icst-kompositionsstudio/_resources/Savannah_Agger.resources",
-    "Evernote/icst-kompositionsstudio/Sarah Duffy.md",
-    "Evernote/icst-kompositionsstudio/_resources/Sarah_Duffy.resources",
-    "Evernote/icst-kompositionsstudio/Reaper Tips.md",
-    "Evernote/icst-kompositionsstudio/Reaper and CSI.md",
-    "Evernote/icst-kompositionsstudio/Reaper als Live Alternative.md",
-    "Evernote/icst-kompositionsstudio/PureTools Video Converter.md",
-    "Evernote/icst-kompositionsstudio/_resources/PureTools_Video_Converter.resources/PT-SC-VGAHD_manual.pdf",
-    "Evernote/icst-kompositionsstudio/_resources/PureTools_Video_Converter.resources",
-    "Evernote/icst-kompositionsstudio/Pratyay Raha.md",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
