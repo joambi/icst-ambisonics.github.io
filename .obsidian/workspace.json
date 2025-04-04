@@ -67,18 +67,28 @@
             "id": "ec34dd779a0bfc7a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "content/Blog/_index.md",
-                "mode": "source",
-                "source": false
+                "file": "content/Blog/Ambisonics-setup/audio-outputs.png"
               },
-              "icon": "lucide-file",
-              "title": "_index"
+              "icon": "lucide-image",
+              "title": "audio-outputs"
+            }
+          },
+          {
+            "id": "ff0c5726087b7b88",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "content/Blog/ICST Ambisonics Setups/Kompstudio.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "Kompstudio"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -239,33 +249,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1597bac92f6118b8",
+  "active": "ff0c5726087b7b88",
   "lastOpenFiles": [
+    "content/Blog/ICST Ambisonics Setups/index.md",
+    "content/Blog/ICST Labor/index.md",
+    "public/blog/icst-labor/index.html",
+    "public/blog/icst-labor/untitled/index.html",
+    "public/blog/icst-labor/untitled",
+    "public/blog/icst-labor",
+    "content/Blog/_index.md",
+    "public/blog/ICST Labor/Labor-DOME-Setup.png",
+    "public/blog/ICST Labor",
+    "content/Blog/ICST Labor",
+    "content/Blog/Ambisonics-setup/index.md",
+    "content/Blog/Ambisonics-setup/MultiDec.png",
+    "content/Blog/Ambisonics-setup/Speakers_Kompstudio.png",
+    "content/Blog/Ambisonics-setup/Speaker_Setting.png",
+    "content/Blog/Ambisonics-setup/Speaker_for_Decoder.png",
+    "content/Blog/Ambisonics-setup/Speaker setting.png",
+    "public/blog/ambisonics-setup/Speaker_Setting.png",
+    "public/blog/ambisonics-setup/MultiDec.png",
+    "Speakers_Kompstudio.md",
+    "public/blog/ambisonics-setup/Speakers_Kompstudio 1.png",
+    "public/blog/ambisonics-setup/Speakers_Kompstudio.png",
     "public/good-practice/index.xml",
     "public/good-practice/gp-manipulation/index.html",
     "public/good-practice/ableton_reaper/index.html",
-    "public/good-practice/gp-manipulation/max-example-patch.png",
-    "public/good-practice/ableton_reaper/rec_disable.png",
-    "public/good-practice/gp-manipulation/auto-latch.png",
-    "public/good-practice/ableton_reaper/reaper_input.png",
-    "public/good-practice/ableton_reaper/Routing_Overview.png",
-    "public/good-practice/ableton_reaper/Rec_BF.png",
-    "public/good-practice/ableton_reaper/Rec.png",
     "public/good-practice/gyrosc/index.html",
-    "public/good-practice/ableton_reaper/OSC_ON.png",
-    "public/good-practice/gyrosc/gyrosc-screenshots-2.5.png",
-    "public/good-practice/gp-manipulation/Rec_PP.gif",
-    "public/good-practice/osc-syntax-for-the-icst-ambiencoder-plugin/index.html",
-    "public/good-practice/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.html",
-    "public/good-practice/osc-syntax-for-the-icst-ambiencoder-plugin",
-    "public/good-practice/index.html",
-    "public/good-practice/icst-grapes/index.html",
-    "public/good-practice/osc-2-fx/index.html",
-    "public/good-practice/osc-max-group-manipulation-in-ambiencoder/index.html",
-    "content/Blog/Ambisonics-setup/index.md",
     "content/Blog/Ascolta/index.md",
     "Evernote/icst-kompositionsstudio/Ambisonics-Setup.md",
-    "content/Blog/_index.md",
     "Evernote/icst-kompositionsstudio/01 ascolta - Akusmatische Hörstunde 2019.md",
     "Evernote/icst-kompositionsstudio/02 ascolta – Akusmatische Hoerstunde Gerald Bennett.md",
     "content/good practice/_index.md",
@@ -285,8 +297,6 @@
     "Evernote/icst-kompositionsstudio/Studiopraxis mit Audiomovers.md",
     "Evernote/icst-kompositionsstudio/Speaker Settings.md",
     "Evernote/icst-kompositionsstudio/Spat  Ircam Forum.md",
-    "Evernote/icst-kompositionsstudio/Software.md",
-    "Evernote/icst-kompositionsstudio/Savva Dimitrios.md",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
