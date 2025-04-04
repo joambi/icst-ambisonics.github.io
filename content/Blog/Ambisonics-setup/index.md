@@ -1,5 +1,5 @@
 ---
-title:
+title: icst-ambisonics-setups
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts

@@ -92,7 +92,7 @@ Easily manipulate groups via **OSC** using absolute **[Euler angles](https://en.
 - Activate OSC port (e.g., **50001**)  
 - Send absolute angles from externally for movement control in the AmbiEncoder.
 
-![absolut_angel](OSC_abs_angel.gif)
+![absolut_angel](content/Blog/NEW/OSC_abs_angel.gif)
 🔹 **Example:** OSC from Max 9.0 to ICST AmbiEncoder  
 
 💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).

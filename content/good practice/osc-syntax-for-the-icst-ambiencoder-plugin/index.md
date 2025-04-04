@@ -19,7 +19,7 @@ The **ICST AmbiEncoder** supports **OSC** and **JavaScript**, enabling seamless 
 
 1. Open the **'OSC In'** tab.
 
-![OSC IN-OUT](osc-in-out.png)
+![OSC IN-OUT](content/good%20practice/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png)
 _Figure: Encoder Setting 'OSC In' receives over the port 50001
 
 Find all information in the **Help** section by clicking the question mark (**?**).
@@ -36,7 +36,7 @@ Find all information in the **Help** section by clicking the question mark (**?*
 ### **1. Accessing OSC Specifications**
 
 Click the **question mark** in the ICST AmbiEncoder.
-   ![osc-in-help](OSX-Syntax.png)
+   ![osc-in-help](content/good%20practice/osc-syntax-for-the-icst-ambiencoder-plugin/OSX-Syntax.png)
    _Figure: OSC specifications in the Help section._
 
 Available sections:
@@ -84,7 +84,7 @@ Messages can be:
 
 1. Open the **'OSC Out'** tab.
 
-![OSC IN-OUT](osc-in-out.png)
+![OSC IN-OUT](content/good%20practice/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png)
 
 **Note:** The ICST AmbiPlugins standard format sends **source names as symbols**. Max users should define a **Custom OSC Message**:
 
@@ -95,7 +95,7 @@ Messages can be:
 ```
 
 
-![OSC-Out](osc.png)
+![OSC-Out](content/good%20practice/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png)
 _Figure: Custom 'OSC Out' Editor_
 
 #### **Internal OSC Communication**
@@ -104,11 +104,11 @@ To send **all AmbiEncoder movements** to the ICST AmbiDecoder:
 1. Deactivate **Speaker Edit Mode** in the AmbiDecoder.
 2. Activate the OSC port.
 
-![Edit_off](intern_osc2.png)
+![Edit_off](content/good%20practice/osc-syntax-for-the-icst-ambiencoder-plugin/intern_osc2.png)
 
-![Intern_osc_port](aktivate_osc.png)
+![Intern_osc_port](content/good%20practice/osc-syntax-for-the-icst-ambiencoder-plugin/aktivate_osc.png)
 
-![OSC_internal](Intern_osc.png)
+![OSC_internal](content/good%20practice/osc-syntax-for-the-icst-ambiencoder-plugin/Intern_osc.png)
 Now, the AmbiDecoder receives **all OSC messages** from all connected AmbiEncoders.
 
 ---
@@ -116,7 +116,7 @@ Now, the AmbiDecoder receives **all OSC messages** from all connected AmbiEncode
 
 AmbiEncoder can also send most of its parameters via OSC.
 
-![External-osc](external_osc.png)
+![External-osc](content/good%20practice/osc-syntax-for-the-icst-ambiencoder-plugin/external_osc.png)
 Open the question mark in front of the presets to get detailed help information.  
 
 1. Enable **“Send Positions for External Usage”** in the settings.

@@ -15,6 +15,7 @@ aliases:
 
 ### ICST Kompositionsstudio
 
+- [Ambisonics Setup](ambisonics-setup)
 - [ICST Ambisonics Speaker Setups](icst-ambisonics-setups)
 - [ICST support for the composition studio](support-composition-studio)
 
