@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "content/Blog/00-ascolta-hörstunden/index.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -180,7 +180,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1743596328890": false,
+      "image-preview-on-icon-hover:1743866600305": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -193,16 +193,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "561fd2024ba46950",
+  "active": "746621c737e6e236",
   "lastOpenFiles": [
-    "content/Blog/00-ascolta-hörstunden/Ascolta_Index.png",
+    "content/Blog/01-ascolta-hörstunde/index.md",
     "content/Blog/00-ascolta-hörstunden/index.md",
+    "content/Blog/00-ascolta-hörstunden/Ascolta_Index.png",
     "Evernote/icst-kompositionsstudio/ICST Ascolta Akusmatische Hoerstunde.md",
     "public/blog/00-ascolta-hörstunden/Ascolta_Index.png",
     "content/Blog/_index.md",
     "public/blog/00-ascolta-hörstunden/index.html",
     "public/blog/00-ascolta-hörstunden",
-    "content/Blog/01-ascolta-hörstunde/index.md",
     "public/blog/00-ascolta-hörstunde/untitled/index.html",
     "public/blog/00-ascolta-hörstunde/untitled",
     "Evernote/icst-kompositionsstudio/ascolta 'Akusmatische Hörstunde am ICST'.md",
@@ -224,7 +224,6 @@
     "content/Blog/07-ascolta-hörstunde/index.md",
     "content/Blog/07-ascolta-hörstunde/oliver.png",
     "content/Blog/07-ascolta-hörstunde/marteau.png",
-    "public/blog/07-ascolta-hörstunde/marteau.png",
     "Evernote/icst-kompositionsstudio/07 ascolta Akusmatische Hörstunde.md",
     "Evernote/icst-kompositionsstudio/06 ascolta acousmatic listening lesson.md",
     "content/Blog/06-ascolta-hörstunde/index.md",
