@@ -14,7 +14,7 @@ The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool f
 ---
 ### Simple animation of a group
 
-![simple](content/good%20practice/gp-manipulation/Gp_manipulation.gif)
+![simple](content/post/gp-manipulation/Gp_manipulation.gif)
 1. **Select Points** – Click to select a point; use **Shift + Click** for multiple points.
 2. **Create Group** – Click the **Group** symbol to generate a group point (e.g., 'S').
 3. **Move Group** – Hold **Shift** and drag the group point.
@@ -29,26 +29,26 @@ The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool f
 1. Set **ICST MultiEncoder** (Track Automation) to **'LATCH'** (or **'WRITE'**).
 2. Start playback in **Reaper**, hold **Alt**, and record your movement.
 3. To play back the recorded motion, set “LATCH” to “READ”.
-![GP_REC](content/good%20practice/gp-manipulation/Rec_PP.gif)
+![GP_REC](content/post/gp-manipulation/Rec_PP.gif)
 
 
 
 ----
 ### LFO Animation of a Group
- ![LFO_A 1](content/good%20practice/gp-manipulation/LFO_A.png)
+ ![LFO_A 1](content/post/gp-manipulation/LFO_A.png)
 1. Open the **LFO Parameter Modulation** in the **AmbiEncoder** track and activate the parameters for **GX, GY, and GZ**.
- ![LFO_parm](content/good%20practice/gp-manipulation/LFO_param.png)
+ ![LFO_parm](content/post/gp-manipulation/LFO_param.png)
 2. Adjust the LFO parameters, such as **speed**, to achieve the desired movement.  
 Now, the group moves automatically in the radar.
 
- ![GP_LFO_animated](content/good%20practice/gp-manipulation/LFO_A.gif)
+ ![GP_LFO_animated](content/post/gp-manipulation/LFO_A.gif)
 
 💡 **Tip:** If you connect the LFO parameters to a **MIDI/OSC interface**, you can control the movement live.
 
 ----
 ### LFO Group Animation with Quaternions
 
-![LFO_B](content/good%20practice/gp-manipulation/LFO_Quarternions.gif)
+![LFO_B](content/post/gp-manipulation/LFO_Quarternions.gif)
 
 This is a more advanced example of animating a group using **quaternion parameters**.
 
@@ -59,7 +59,7 @@ This is a more advanced example of animating a group using **quaternion paramete
 
 A new 'ICST Ambi-OSC-Patcher' shows the direct group animation possibilities, we’ll demonstrate how to animate groups using OSC from an external source. The MultiEncoder internally converts Euler angles into quaternions. In this example, the angles from the source point (1) are crucial for the animation.
 
-![Max exaple patch](content/good%20practice/gp-manipulation/max-example-patch.png)
+![Max exaple patch](content/post/gp-manipulation/max-example-patch.png)
 Download MaxPatch: [Neuer OSC-Messenger](https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat)
 #### Group Position
 1. Set Group Position AED
@@ -73,7 +73,7 @@ Download MaxPatch: [Neuer OSC-Messenger](https://github.com/joambi/icst-ambisoni
 
 The ICST MultiEncoder can now be controlled directly using Euler angles via OSC. 
 
-![Euler_Winkel](content/good%20practice/gp-manipulation/OSC_abs_angel.gif)
+![Euler_Winkel](content/post/gp-manipulation/OSC_abs_angel.gif)
 
 ----
 ©2025 ICST

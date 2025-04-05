@@ -10,7 +10,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 1. Activate  the OSC in Reaper
 
-    ![OSC_Reaper](content/good%20practice/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc_Reaper.png)
+    ![OSC_Reaper](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc_Reaper.png)
 
 2. Activate the OSC-Send in the 'ICST Ambisonics Encoder'
 3. Choose your 'FX' in Reaper  

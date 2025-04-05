@@ -49,7 +49,7 @@ For **index-based addressing**:
 - `Pitch` (Elevation): Vertical tilt
 - `Roll`: Rotation around the forward axis
 
-![osc-euler](content/good%20practice/OSC-Max-Group-Manipulation-in-AmbiEncoder/osc-euler-abs.gif)
+![osc-euler](content/post/OSC-Max-Group-Manipulation-in-AmbiEncoder/osc-euler-abs.gif)
 
 ----
 ©2025 ICST
