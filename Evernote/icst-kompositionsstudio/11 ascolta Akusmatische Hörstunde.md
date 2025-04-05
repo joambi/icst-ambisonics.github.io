@@ -54,7 +54,7 @@ _Eintritt frei_ 
 ### Mario MARY
 
 An Argentine composer born April 25, 1961 in Buenos Aires.
-![[./_resources/11_ascolta_Akusmatische_Hörstunde.resources/L2fRglsSErgEQwJcaK66RkLsaWPkOXrww6FTQAsr.jpg]]
+![[L2fRglsSErgEQwJcaK66RkLsaWPkOXrww6FTQAsr.jpg]]
 After gaining a diploma in composition at the University of La Plata  in Argentina, Mario Mary continued his training at the GRM, the Paris  Conservatory and Ircam. He obtained a doctorate in the aesthetics,  science and technology of the arts,  at the University of Paris VIII,  where he taught computer-assisted composition (1996-2010).
 
 A teacher of electro-acoustic composition at the Académie de Musique  Prince Rainier III in Monaco, co-founder and artistic director of  Monaco/Electroacoustique (international electro-acoustic music  meetings), this teacher-researcher also lectures in Europe and South  America.

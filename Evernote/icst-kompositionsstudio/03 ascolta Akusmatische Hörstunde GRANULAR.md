@@ -1,15 +1,14 @@
 ---
-
-tags: 
-  - published
-
+tags: []
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
+# GRANULAR
 
-**ascolta – Akusmatische Hörstunde: GRANULAR** 
-
+### Konzert 
+01.11.202 18:00
+- 
 * * *
 
 **Nicos Stavropoulos,** vom 12.1.2018 - 19.1.2018

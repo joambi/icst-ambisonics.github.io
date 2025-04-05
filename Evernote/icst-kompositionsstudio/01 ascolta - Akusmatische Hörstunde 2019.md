@@ -10,7 +10,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ## Jean-Cloude Risset   (13.3.1938 - 21.11.2016)
 
-![[./_resources/01_ascolta_-_Akusmatische_Hörstunde_2019.resources/Whiteboard am 16.11.2019, 13_32_57.png]]
+![[Whiteboard am 16.11.2019, 13_32_57.png]]
 
 ### Programm:
 

@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology
 
 * * *
 
-![[./_resources/02_ascolta_–_Akusmatische_Hoerstunde_Gerald_Bennett.resources/Scannable-Dokument 5 am 06.10.2022, 09_52_19.png]]
+![[Scannable-Dokument 5 am 06.10.2022, 09_52_19.png]]
 
 **Dienstag, 4. Oktober 2022, 18.00 Uhr**
 ICST-Kompositionsstudio (3.D02, Ebene 3)
@@ -24,7 +24,7 @@ _Rainstick_ (1993)
 _Im Eismeer – ein Schumann-Stück für Tonband_ (1997)
 _Auf schwanker Halme Bogen_ (1985)
 _Un Madrigal gentile_ (2004)
-![[./_resources/02_ascolta_–_Akusmatische_Hoerstunde_Gerald_Bennett.resources/image005.jpg]]
+![[image005.jpg]]
 Gerald Bennett, geboren 1942 in New Jersey (USA), studierte unter anderem an der _Harvard University_ bei Robert Moevs und in Basel bei Klaus Huber und Pierre Boulez. 1967–76 war er Dozent für Musiktheorie am _Basler Konservatorium_, ab 1969 dessen Leiter. 1976–1981 stand er dem _Département Diagonal_ am Pariser _Institut de Recherche et Coordination Acoustique/Musique_ (IRCAM) vor, und ab 1993 war er Mitglied der _Internationalen Akademie für elektroakustische Musik Bourges_. Von 1981 bis zu seiner Pensionierung lehrte Gerald Bennett Musiktheorie und Komposition an der _Hochschule für Musik Zürich_. Gemeinsam mit Bruno Spoerri, Antonio Greco und Rainer Boesch gründete er 1985 das _Schweizerische Zentrum für Computermusik_(SZCM) und gemeinsam mit Daniel Fueter 2005 das _ICST – Institute for Computer Music and Sound Technology_.
 
 Das Werk von Gerald Bennett umfasst Orchester-, Kammer- Vokalwerke in verschiedenen Besetzungen mit und ohne Elektronik sowie zahlreiche elektroakustische Stücke. Seine Kompositionen werden bei Edition Modern/Ricordi und Mnémosyne verlegt, Tonträger mit seinen Werken erschienen bei Wergo, Jecklin und Harmonia Mundi. Er ist Verfasser zahlreicher Publikationen, die bei Gallimard, Oxford University Press, Eulenburg, MIT Press u.a. erschienen sind.

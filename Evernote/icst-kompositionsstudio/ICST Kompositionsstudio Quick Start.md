@@ -1,14 +1,11 @@
 ---
-
-tags: 
-  - published
-
+tags: []
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
 
-Quick start for the ICST Komopositionsstudio Setting
+Quick start for the ICST Kompositionsstudio Setting
 
 **AUDIO**
 
@@ -37,7 +34,7 @@ To get the curved screen as a single large screen, you need to make an additiona
 ### RME TotalMixer Setup for Multichannel:
 
 Set the 'Fireface Settings‘ to this,
-![[./_resources/ICST_Kompositionsstudio_Quick_Start.resources/Bildschirmfoto 2023-10-10 um 10.39.37.png]]
+![[Bildschirmfoto 2023-10-10 um 10.39.37.png]]
 and the TotalMixer to this Setting.
 ![[./_resources/ICST_Kompositionsstudio_Quick_Start.resources/Bildschirmfoto 2023-10-10 um 10.40.17.png]]
 

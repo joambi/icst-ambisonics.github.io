@@ -13,7 +13,7 @@ Das ICST verfügt in seinem Archiv über zahlreiche historische Stücke aus dies
 Die Konzertreihe _Ascolta – Akusmatische Hörstunde_ präsentiert Werke neueren und älteren Datums, die im ICST-Kompositionsstudio
 (3.D02, Ebene 3, Toni-Areal)  gespielt werden. 
 
-![[./_resources/ICST_Ascolta_Akusmatische_Hoerstunde.resources/Ascolta_Index.png]]
+![[Ascolta_Index.png]]
 
 |     |     |     |     |     |
 | --- | --- | --- | --- | --- |
