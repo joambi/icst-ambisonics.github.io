@@ -13,7 +13,7 @@ profilePicture = "images/AmbiPlugin_logo.gif"
 mainSections = ["blog"]
 favicon = "favicons/"
 rssFullContent = true
-contentratio = 0.7 
+contentratio = 0.6 
 
 ## Social links
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
