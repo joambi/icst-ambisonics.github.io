@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/00-ascolta-hörstunden/index.md",
-                "mode": "preview",
+                "file": "content/Blog/11-ascolta-hörstunde/index.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -195,8 +195,14 @@
   },
   "active": "746621c737e6e236",
   "lastOpenFiles": [
-    "content/Blog/01-ascolta-hörstunde/index.md",
+    "content/Blog/12-ascolta-hörstunde/index.md",
+    "content/Blog/13-ascolta-hörstunde/index.md",
+    "content/Blog/15-ascolta-hörstunde/index.md",
+    "content/Blog/14-ascolta-hörstunde/index.md",
+    "content/Blog/03-ascolta-hörstunde/index.md",
+    "content/Blog/02-ascolta-hörstunde/index.md",
     "content/Blog/00-ascolta-hörstunden/index.md",
+    "content/Blog/01-ascolta-hörstunde/index.md",
     "content/Blog/00-ascolta-hörstunden/Ascolta_Index.png",
     "Evernote/icst-kompositionsstudio/ICST Ascolta Akusmatische Hoerstunde.md",
     "public/blog/00-ascolta-hörstunden/Ascolta_Index.png",
@@ -230,11 +236,6 @@
     "content/Blog/05-ascolta-hörstunde/index.md",
     "Evernote/icst-kompositionsstudio/05 ascolta acousmatic listening lesson.md",
     "content/Blog/04-ascolta-hörstunde/index.md",
-    "Evernote/icst-kompositionsstudio/04 ascolta Akusmatische Hörstunde Glocken.md",
-    "content/Blog/03-ascolta-hörstunde/index.md",
-    "Evernote/icst-kompositionsstudio/03 ascolta Akusmatische Hörstunde GRANULAR.md",
-    "content/Blog/02-ascolta-hörstunde/index.md",
-    "Evernote/icst-kompositionsstudio/02 ascolta – Akusmatische Hoerstunde Gerald Bennett.md",
     "public/blog/01-ascolta-hörstunde/index.html",
     "public/blog/01-ascolta-hörstunde",
     "public/blog/02-ascolta-hörstunde-1/index.html",
