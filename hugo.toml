@@ -50,10 +50,10 @@ url = "https://github.com/joambi"
   url = "/ICST Ambisonics Tools/"
   
   [[menu.main]]
-  name = "Good practice"
+  name = "Post"
   weight = 400
-  identifier = "good practice"
-  url = "/good practice/"
+  identifier = "post"
+  url = "/post/"
   
   [[menu.main]]
   name = "Links"
