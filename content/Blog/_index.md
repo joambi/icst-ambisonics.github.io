@@ -51,7 +51,13 @@ aliases:
 - [ICST Labor Dome](icst-labor)
 ###  Explore 3D Audio Music
 
+#### Ambisonics
 -  [Sounding Future](sounding_future)
+- [Hoast Library](hoast-library)
+- ICST Bformat Archive
+- Nimbus UHJ
+
+
 
 # ICST Artists in Residence
 - Impressions of Artist in Residence in the studio
