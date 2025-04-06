@@ -4,7 +4,7 @@ title: ICST Kompositionsstudio Overview
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-#### **Studio for Composition**
+#### **Studio for Composition** 
 
 The Studio of the ICST is a Surround-Studio with 17 Geithain Speakers (8+5+4) and stereo-monitoring. 
 A Mac Pro is offering various software such as sequencers, HD-recording- and Sound-tools, MAX MSP/Jitter, and PD. The studio is suitable especially for producing ambisonic/surround music. It combines the latest technologies with musical practice and puts its focus on sound research, computer music, and media art. The Studio is a place to support the production and composition of new works of electronic music, sound- and media art.
@@ -15,9 +15,18 @@ A Mac Pro is offering various software such as sequencers, HD-recording- and Sou
 
 ## Help for the operation of the ICST Kompositionsstudio:
 
-- [Overview](https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio-regie)
-- [Quick Start](https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio-quick-start)
-- [Support](https://icst-kompositionsstudio.ch/post/support)
+- [Overview](https://ambisonics.ch/blog/icst-kompositionsstudio-overview/)
+- [ICST Kompositionsstudio Pre-Installation](https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/)
+- [ICST Kompositionsstudio Regie](https://icst-kompositionsstudio.ch/post/support)
+- [ICST Kompositionsstudio Speaker Settings](https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings)
+- [ICST Ambisonics Speaker Setups](https://ambisonics.ch/blog/icst-kompositionsstudio-setting)
+- [ICST Kompositionsstudio Software](https://ambisonics.ch/blog/icst-kompositionsstudio-software)
+- [ICST Kompositionsstudio Equipment](https://ambisonics.ch/blog/icst-kompositionsstudio-equipment)
+- [ICST Kompositionsstudio Support](https://ambisonics.ch/blog/icst-kompositionsstudio-support)
+- [ICST Kompositionsstudio Photos](https://ambisonics.ch/blog/icst-ambisonics-photos)
+
+
+
 - [Terms of use](https://icst-kompositionsstudio.ch/post/terms-of-use)
 - [Speaker Settings](https://icst-kompositionsstudio.ch/post/speaker-settings)
 - [Ambisonics Setup](https://icst-kompositionsstudio.ch/post/ambisonics-setup)
@@ -29,4 +38,8 @@ A Mac Pro is offering various software such as sequencers, HD-recording- and Sou
 * * *
 
 Room-address:  **[ZT 3.D02 ICST Kompositionsstudio](https://intern.zhdk.ch/?raum/ansicht/einzel&ts=1536789600&id=469)**
+
 Contact:  [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
+
+---
+©2025 ICST

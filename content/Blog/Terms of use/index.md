@@ -1,8 +1,5 @@
 ---
-
-tags: 
-  - published
-
+tags: []
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -36,5 +33,4 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 **The next studio user will thank them.**
 
 * * *
-
-<< [ICST Kompositionsstudio | Studio for Composition](https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio)
+©2025 ICST

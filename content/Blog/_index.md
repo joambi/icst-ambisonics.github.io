@@ -23,6 +23,7 @@ aliases:
 - [ICST Ambisonics Speaker Setups](icst-kompositionsstudio-setting)
 - [ICST Kompositionsstudio Software](icst-kompositionsstudio-software)
 - [ICST Kompositionsstudio Equipment](icst-kompositionsstudio-equipment)
+- [ICST Kompositionsstudio Terms](terms-of-use)
 - [ICST Kompositionsstudio Support](icst-kompositionsstudio-support)
 - [ICST Kompositionsstudio Photos](icst-ambisonics-photos)
 
