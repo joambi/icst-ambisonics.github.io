@@ -1,5 +1,5 @@
 ---
-title: ICST Kompositionsstudio Support
+title: ICST Kompositionsstudio Pre-Installation
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -23,10 +23,12 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 	#### **Troubleshooting**
 - Watch the [Video](https://youtu.be/Ilkwtb2MKrM) starting at 2:36 for assistance.
 #### RME MadiFace Sync:
-![RME-MadiFace](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/MadiFace.png)
+![RME-MadiFace](MadiFace.png)
+
 As in the figure above, the synchronization is correct.
 #### RME TotalMixer Setup for Multichannel:
-![TotalMix](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/TotalMix.png)
+![TotalMix](TotalMix.png)
+
 - for Ambisonics delete the 'stereo-mix'
 
 ---
@@ -41,8 +43,9 @@ To get the curved screen as a single large screen, you need to make an additiona
 1. system preferences -> mission control
 2. deactivate the flag 'monitors use different spaces.'
 3. This setting will only become active after a new login!
-   ![Mission-control](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/Mission-control.webp)
-   ![Mission_2](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/Mission_2.png)
-   ![Mission_3](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/Mission3.webp)
+   ![Mission-control](Mission-control.webp)
+   ![Mission_2](Mission_2.png)
+   ![Mission_3](Mission3.webp)
+
 ---
 ©2025 ICST
