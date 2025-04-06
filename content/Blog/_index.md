@@ -15,16 +15,22 @@ aliases:
 
 ### ICST Kompositionsstudio
 
-- [ICST Kompositionsstudio Photos](icst-ambisonics-photos)
-- [ICST Composition Studio Quick Start](icst-composition-studio-quick-start)
-- [ICST Composition Studio technics](icst-composition-studio-technics)
+
+- [ICST Kompositionsstudio Overview](icst-kompositionsstudio-overview)
+- [ICST Kompositionsstudio Pre-Installation](icst-kompositionsstudio-pre-installation)
+- [ICST Kompositionsstudio Regie](icst-kompositionsstudio-regie)
+- [ICST Kompositionsstudio Speaker Settings](icst-kompositionsstudio-speaker-settings)
 - [ICST Ambisonics Speaker Setups](icst-kompositionsstudio-setting)
+- [ICST Kompositionsstudio Software](icst-kompositionsstudio-software)
+- [ICST Kompositionsstudio Equipment](icst-kompositionsstudio-equipment)
+- [ICST Kompositionsstudio Support](icst-kompositionsstudio-support)
+- [ICST Kompositionsstudio Photos](icst-ambisonics-photos)
 
 #### ICST Ascolta Hörstunden
 
 - [00 Ascolta Akusmatische Hörstunden](00-ascolta-hörstunden)
-- [15 Ascolta Akusmatische Hörstunde](15-ascolta-hörstunde ) --> 2025-05-06
-- [14 Ascolta Akusmatische Hörstunde](14-ascolta-hörstunde) --> 2025-04-22
+- [15 Ascolta Akusmatische Hörstunde](15-ascolta-hörstunde ) --> 06-05-2025
+- [14 Ascolta Akusmatische Hörstunde](14-ascolta-hörstunde) --> 22-04-2025
 - [13 Ascolta Akusmatische Hörstunde](13-ascolta-hörstunde)
 - [12 Ascolta Akusmatische Hörstunde](12-ascolta-hörstunde)
 - [11 Ascolta Akusmatische Hörstunde](11-ascolta-hörstunde)
@@ -40,11 +46,15 @@ aliases:
 - [01 Ascolta Akusmatische Hörstunde](01-ascolta-hörstunde)
 
 ### ICST Labor 
-- 
+
+- [ICST Labor Dome](icst-labor)
 ###  Explore 3D Audio Music
+
 -  [Sounding Future](sounding_future)
 
-### Technical support
-- 
+# ICST Artists in Residence
+- Impressions of Artist in Residence in the studio
+- [Current ICST Artists in Residence](https://www.zhdk.ch/forschung/icst/icst-air)
+- [Past Residents](https://www.zhdk.ch/forschung/icst/icst-air/past-residents-20734)
 ### Additional downloads
 - [Decoder Speaker Settings](decoder-speaker-settings)

@@ -31,11 +31,11 @@ Figure. shows LSB Layer 1
 The picture shows the sources in the first LSB line; you can select the speaker settings directly in the second and third lines. If you choose 'ALL LS,' all speakers are available, and you can route them in RME Totalmixer or directly in the DAW.
 
 To switch to the second layout with the 'Sources' --> press the 'Setings' button.
-![[LSB_Back.jpg]]
+![[public/blog/icst-composition-studio-technics/LSB_Back.jpg]]
 Figure. shows LSB Layer 2
 
 **Speaker Settings at the ICST-Kompositionsstudio:**
-![[LSB_Front.jpg]]
+![[public/blog/icst-composition-studio-technics/LSB_Front.jpg]]
 
 ## **[Speaker Settings](https://icst-kompositionsstudio.ch/post/speaker-settings)**
 
@@ -82,9 +82,9 @@ Download \[[DisplayLink](https://www.synaptics.com/products/displaylink-graphics
 
 7. The Apple Labtop can be easily connected via USB-C (3.2) or USB -A (3.2).
 
-![[DisplayLink_4.jpeg]]
+![[public/blog/icst-composition-studio-technics/DisplayLink_4.jpeg]]
 9.  For Pc and its various connections, 'adapters' are ready.
-![[5D4C3851-129C-4216-A06E-E6C21D190EC9_1_201_a.jpeg]]
+![[public/blog/icst-composition-studio-technics/5D4C3851-129C-4216-A06E-E6C21D190EC9_1_201_a.jpeg]]
 
 8. Logitech Keyboard & Mouse
 

@@ -1,5 +1,5 @@
 ---
-title:
+title: ICST Labor Ambisonics Regie
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -65,7 +65,7 @@ Additional hubs and hardware are available behind the screen:
    Documentation: [PureTools PT-SC-VGAHD](https://icst-kompositionsstudio.ch/post/puretools-video-converter)
 
 4. Lake People (Stereo Balanced Amplifier) for direct connection of the Mac. ![Amp](amp.jpeg)
-5. Lake People (Phone Amplifier) for 2x headphone monitoring.![[./_resources/ICST_Kompositionsstudio_Regie.resources/IMG_1020.jpeg]]
+5. Lake People (Phone Amplifier) for 2x headphone monitoring.!
 6. Headphone:
 ![Headphone_amp](Headphone_amp.jpeg)
  Lake People (Phone Amplifier) for 2x headphone monitoring.

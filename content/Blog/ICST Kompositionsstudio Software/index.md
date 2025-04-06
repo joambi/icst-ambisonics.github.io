@@ -1,11 +1,9 @@
 ---
-tags: 
-title: Kompositionsstudio  Software
+title: ICST Kompositionsstudio Software
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
-* * *
-
+---
 ### List of Software on the ICST Mac Pro:
 
 **Audio - Analyse:**
@@ -159,6 +157,5 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 Here at ICST, the staff uses [Reaper](http://reaper.fm/) and [Ardour](http://ardour.org/) 7
 We recommend you do so as well, especially if you want to work with ambisonics or multi-channel audio in general.
 
-* * *
-
-<< [ICST Kompositionsstudio | Studio for Composition](https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio)
+---
+©2025 ICST

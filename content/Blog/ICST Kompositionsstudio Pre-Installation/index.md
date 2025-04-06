@@ -1,10 +1,11 @@
 ---
-title: Quick start for the ICST Kompositionsstudio Setting
+title: ICST Kompositionsstudio Support
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-Quick Step Setup for your external Laptop/Mac-Book
+# Pre-installation for your external laptop
+
 ### **AUDIO**
 
 #### Install RME Driver (DriverKit)
@@ -22,10 +23,10 @@ Quick Step Setup for your external Laptop/Mac-Book
 	#### **Troubleshooting**
 - Watch the [Video](https://youtu.be/Ilkwtb2MKrM) starting at 2:36 for assistance.
 #### RME MadiFace Sync:
-![RME-MadiFace](MadiFace.png)
+![RME-MadiFace](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/MadiFace.png)
 As in the figure above, the synchronization is correct.
 #### RME TotalMixer Setup for Multichannel:
-![TotalMix](TotalMix.png)
+![TotalMix](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/TotalMix.png)
 - for Ambisonics delete the 'stereo-mix'
 
 ---
@@ -34,15 +35,14 @@ As in the figure above, the synchronization is correct.
 **Install DisplayLink Manager**  
 Download and install  [DisplayLink Manager for macOS](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) for your system.
 
-#### **Tip:**
-
+#### **Tip:** 
 To get the curved screen as a single large screen, you need to make an additional setting on your Mac.
 
 1. system preferences -> mission control
 2. deactivate the flag 'monitors use different spaces.'
 3. This setting will only become active after a new login!
-   ![Mission-control](Mission-control.webp)
-   ![Mission_2](Mission_2.png)
-   ![Mission_3](Mission3.webp)
+   ![Mission-control](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/Mission-control.webp)
+   ![Mission_2](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/Mission_2.png)
+   ![Mission_3](content/Blog/ICST%20Kompositionsstudio%20Pre-Installation/Mission3.webp)
 ---
 ©2025 ICST
