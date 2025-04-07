@@ -32,7 +32,7 @@ aliases:
 #  Explore 3D Audio Music
 
 - #### Ambisonics
-	- ICST Bformat Archive
+	- [ICST Bformat Archive](icst-bformat-archive)
 	- [Sounding Future](sounding_future)
 	- [Hoast Library](hoast-library)
 	- [Nimbus UHJ](https://www.wyastone.co.uk/all-labels/nimbus.html)
