@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "content/Blog/Downloads/index.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -211,6 +211,8 @@
   },
   "active": "913db07b04967298",
   "lastOpenFiles": [
+    "content/Links/index.md",
+    "content/Blog/Downloads/index.md",
     "static/downloads/Channeltests.tar",
     "public/downloads/kompositionsstudio-speakers-max.txt.zip",
     "public/downloads/ICST_Ambisonics_Plugins_Speaker-Settings.tar",
@@ -226,12 +228,10 @@
     "content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/index.md",
     "icst-kompositionsstudio-ambisonics-setting.md",
     "content/Blog/00-ascolta-hörstunden/index.md",
-    "content/Blog/Downloads/index.md",
     "public/blog/downloads/index.html",
     "public/blog/downloads/ZHdK IA Space.xml",
     "public/blog/downloads/Notam Studio 3.xml",
     "public/blog/downloads/ICSTKompositionsstudio Eingemessen_2025.xml",
-    "public/blog/downloads/ICST Kompositionsstudio.xml",
     "content/Blog/ICST Kompositionsstudio Speaker Settings/2023-04-Dolby.jpg",
     "content/Blog/ICST Kompositionsstudio Speaker Settings/2023-04-All.jpg",
     "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
