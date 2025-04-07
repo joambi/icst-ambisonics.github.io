@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/_index.md",
-                "mode": "source",
+                "file": "content/Blog/ICST Bformat Archive/index.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -211,6 +211,8 @@
   },
   "active": "913db07b04967298",
   "lastOpenFiles": [
+    "content/Blog/_index.md",
+    "icst-bformat-archive.md",
     "content/Blog/ICST Bformat Archive/index.md",
     "content/Blog/00-ascolta-hörstunden/index.md",
     "content/Blog/HOAST Library/index.md",
@@ -223,7 +225,6 @@
     "public/downloads/Channeltests.tar",
     "static/downloads/kompositionsstudio-speakers-max.txt.zip",
     "static/downloads/ICST_Ambisonics_Plugins_Speaker-Settings.tar",
-    "content/Blog/_index.md",
     "content/Blog/ICST Kompositionsstudio Overview/index.md",
     "().md",
     "icst-kompositionsstudio-regie.md",
@@ -256,7 +257,6 @@
     "Evernote/icst-kompositionsstudio/Kompositionsstudio  Software.md",
     "Evernote/support-composition-studio/index.md",
     "2023-04.md",
-    "Evernote/icst-kompositionsstudio/ICST Residentinnen im Kompositionsstudio.md",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
