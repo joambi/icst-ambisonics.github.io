@@ -8,9 +8,9 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 (to download the raw XML file, click on the link below)
 
-- [ICST Kompositionsstudio](https://github.com/joambi/icst-ambisonics.github.io/blob/main/content/Blog/Decoder-Speaker-Settings/ICST%20Kompositionsstudio.xml)
-- [ICST Kompositionsstudio with filters](https://github.com/joambi/icst-ambisonics.github.io/blob/main/content/Blog/Decoder-Speaker-Settings/ICSTKompositionsstudio%20Eingemessen_2025.xml)
-- [ICST DOM (Labor)](https://github.com/joambi/icst-ambisonics.github.io/blob/main/content/Blog/Decoder-Speaker-Settings/ICST%20DOM.xml)
-- [IA-Space (ZhdK)](https://github.com/joambi/icst-ambisonics.github.io/blob/main/content/Blog/Decoder-Speaker-Settings/ZHdK%20IA%20Space.xml)
+- [ICST Kompositionsstudio]()
+- [ICST Kompositionsstudio with filters]()
+- [ICST DOM (Labor)]()
+- [IA-Space (ZhdK)]()
 
 ---

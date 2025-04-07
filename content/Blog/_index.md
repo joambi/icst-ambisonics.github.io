@@ -38,7 +38,7 @@ aliases:
 	- [Nimbus UHJ](https://www.wyastone.co.uk/all-labels/nimbus.html)
 
 # ICST Artists in Residence
-- Impressions of Artist in Residence in the studio
+ Impressions of Artist in Residence in the studio
 - [Current ICST Artists in Residence](https://www.zhdk.ch/forschung/icst/icst-air)
 - [Past Residents](https://www.zhdk.ch/forschung/icst/icst-air/past-residents-20734)
 

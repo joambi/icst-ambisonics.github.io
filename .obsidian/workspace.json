@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/_index.md",
+                "file": "content/Blog/Downloads/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -209,12 +209,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "913db07b04967298",
+  "active": "1597bac92f6118b8",
   "lastOpenFiles": [
+    "content/Blog/_index.md",
     "content/Blog/ICST Kompositionsstudio Overview/index.md",
     "().md",
     "icst-kompositionsstudio-regie.md",
-    "content/Blog/_index.md",
     "Untitled.md",
     "content/Blog/ICST-Kompositionsstudio-Support/index.md",
     "content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/index.md",
