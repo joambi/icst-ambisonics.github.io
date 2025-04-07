@@ -17,14 +17,14 @@ A Mac Pro is offering various software such as sequencers, HD-recording- and Sou
 
 - [Overview](https://ambisonics.ch/blog/icst-kompositionsstudio-overview/)
 - [ICST Kompositionsstudio Pre-Installation](https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/)
-- [ICST Kompositionsstudio Regie](https://icst-kompositionsstudio.ch/post/support)
+- [ICST Kompositionsstudio Regie]()
 - [ICST Kompositionsstudio Speaker Settings](https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings)
-- [ICST Ambisonics Speaker Setups](https://ambisonics.ch/blog/icst-kompositionsstudio-setting)
+- [ICST-Kompositionsstudio-Ambisonics-Setting](https://ambisonics.ch/blog/icst-kompositionsstudio-setting)
 - [ICST Kompositionsstudio Software](https://ambisonics.ch/blog/icst-kompositionsstudio-software)
 - [ICST Kompositionsstudio Equipment](https://ambisonics.ch/blog/icst-kompositionsstudio-equipment)
 - [ICST Kompositionsstudio Support](https://ambisonics.ch/blog/icst-kompositionsstudio-support)
 - [ICST Kompositionsstudio Photos](https://ambisonics.ch/blog/icst-ambisonics-photos)
-- [Downloads](https://icst-kompositionsstudio.ch/post/downloads)
+- [Downloads](https://https://ambisonics.ch/blog/downloads)
 
 * * *
 
