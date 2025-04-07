@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/HOAST Library/index.md",
+                "file": "content/Blog/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -196,9 +196,9 @@
   },
   "active": "746621c737e6e236",
   "lastOpenFiles": [
+    "content/Blog/HOAST Library/index.md",
     "content/Blog/HOAST Library/iem-library.png",
     "public/blog/hoast-library/iem-library.png",
-    "content/Blog/HOAST Library/index.md",
     "public/blog/hoast-library/Bildschirmfoto 2025-04-06 um 19.08.52.png",
     "content/Blog/ICST Kompositionsstudio Equipment/index.md",
     "content/Blog/_index.md",
@@ -232,7 +232,6 @@
     "content/Blog/ICST Kompositionsstudio Regie/index.md",
     "Evernote/support-composition-studio/index.md",
     "public/blog/icst-kompositionsstudio-speaker-setups/2023-04-Stereo.jpg",
-    "public/blog/icst-kompositionsstudio-speaker-setups/2023-04-Quadro.jpg",
     "2023-04.md",
     "Evernote/icst-kompositionsstudio/ICST Residentinnen im Kompositionsstudio.md",
     "Evernote/icst-kompositionsstudio/index.md",
