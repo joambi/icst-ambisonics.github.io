@@ -29,6 +29,8 @@ aliases:
 - ICST Bformat Archive
 - Nimbus UHJ
 
+
+
 # ICST Artists in Residence
 - Impressions of Artist in Residence in the studio
 - [Current ICST Artists in Residence](https://www.zhdk.ch/forschung/icst/icst-air)
