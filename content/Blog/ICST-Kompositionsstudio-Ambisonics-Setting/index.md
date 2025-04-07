@@ -12,14 +12,14 @@ Ambisonics - speaker - setting and coordinates
 
 The Studio Room is nearly 7m length, 7m bright and 7m hight.
 
-![ICST KompStudio Speakers](content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/studio-speakers.jpg)
+![ICST KompStudio Speakers](studio-speakers.jpg)
 Speaker-Coordinates for the "ICST Composer Studio"
 
-![Speaker Setup](content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/Speakers_Kompstudio.png)
+![Speaker Setup](Speakers_Kompstudio.png)
 ### **Coordinate:**
-![Speaker-Setting](content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/Speaker_Setting.png)
+![Speaker-Setting](Speaker_Setting.png)
 #### Multi-Decoder-Setting (example)
-![MultiDecoder](content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/MultiDec.png)
+![MultiDecoder](MultiDec.png)
 
  Speakers 1 - 17 --> channels 1- 17
 (Speaker 17 = voice of God)
