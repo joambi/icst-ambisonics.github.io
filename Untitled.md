@@ -1,12 +1,13 @@
 - [ICST Kompositionsstudio Pre-Installation](icst-kompositionsstudio-pre-installation)
 - [ICST Kompositionsstudio Regie](icst-kompositionsstudio-regie)
 - [ICST Kompositionsstudio Speaker Settings](icst-kompositionsstudio-speaker-settings)
-- [ICST Ambisonics Speaker Setups](icst-kompositionsstudio-setting)
+- [ICST-Kompositionsstudio-Ambisonics-Setting](icst-kompositionsstudio-ambisonics-setting)
 - [ICST Kompositionsstudio Software](icst-kompositionsstudio-software)
 - [ICST Kompositionsstudio Equipment](icst-kompositionsstudio-equipment)
 - [ICST Kompositionsstudio Terms](terms-of-use)
 - [ICST Kompositionsstudio Support](icst-kompositionsstudio-support)
 - [ICST Kompositionsstudio Photos](icst-ambisonics-photos)
+- [Downloads](https://ambisonics.ch/blog/downloads)
 
 
 
