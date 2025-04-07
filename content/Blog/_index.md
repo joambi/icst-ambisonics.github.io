@@ -18,6 +18,7 @@ aliases:
 
 - [ICST Kompositionsstudio Overview](icst-kompositionsstudio-overview)
 - [ICST Kompositionsstudio Ambisonics Setting](icst-kompositionsstudio-ambisonics-setting)
+- [ICST Kompositionsstudio Regie](icst-kompositionsstudio-regie)
 ---
 # ICST Ascolta Hörstunden
 

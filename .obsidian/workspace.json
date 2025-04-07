@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/index.md",
-                "mode": "source",
+                "file": "content/Blog/_index.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -209,14 +209,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "913db07b04967298",
+  "active": "1597bac92f6118b8",
   "lastOpenFiles": [
     "content/Blog/_index.md",
-    "content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/index.md",
-    "content/Blog/ICST-Kompositionsstudio-Support/index.md",
-    "icst-kompositionsstudio-ambisonics-setting.md",
-    "content/Blog/ICST Kompositionsstudio Overview/index.md",
+    "icst-kompositionsstudio-regie.md",
     "Untitled.md",
+    "content/Blog/ICST Kompositionsstudio Overview/index.md",
+    "content/Blog/ICST-Kompositionsstudio-Support/index.md",
+    "content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/index.md",
+    "icst-kompositionsstudio-ambisonics-setting.md",
     "content/Blog/00-ascolta-hörstunden/index.md",
     "content/Blog/Downloads/index.md",
     "public/blog/downloads/index.html",
@@ -229,7 +230,6 @@
     "content/Blog/ICST Kompositionsstudio Speaker Settings/2023-04-Dolby.jpg",
     "content/Blog/ICST Kompositionsstudio Speaker Settings/2023-04-All.jpg",
     "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
-    "icst-kompositionsstudio-regie.md",
     "content/Blog/ICST Kompositionsstudio Regie/index.md",
     "public/page/4/index.html",
     "public/page/4",
