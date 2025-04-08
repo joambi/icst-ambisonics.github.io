@@ -6,7 +6,6 @@
       {
         "id": "aeb50d5b614bb66f",
         "type": "tabs",
-        "dimension": 66.12903225806451,
         "children": [
           {
             "id": "746621c737e6e236",
@@ -28,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST Bformat Archive/index.md",
+                "file": "content/About/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -38,23 +37,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "ce5ca24b71b93a8e",
-        "type": "tabs",
-        "dimension": 33.87096774193548,
-        "children": [
-          {
-            "id": "2cb6019c14209d6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown-table-editor-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Markdown Table Editor"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -111,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 394.5
   },
   "right": {
     "id": "37258160c4802e4d",
@@ -215,7 +196,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1744027741584": false,
+      "image-preview-on-icon-hover:1744098577003": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -231,6 +212,15 @@
   },
   "active": "913db07b04967298",
   "lastOpenFiles": [
+    "content/Blog/01-ascolta-hörstunde/index.md",
+    "content/Blog/ICST Kompositionsstudio Software/index.md",
+    "content/Blog/ICST Kompositionsstudio Regie/LSB_Back.jpg",
+    "content/Blog/ICST Kompositionsstudio Regie/LSB_Front.jpg",
+    "content/Blog/ICST Kompositionsstudio Regie/LSB_Front_1.jpg",
+    "content/Blog/ICST Kompositionsstudio Regie/LSB_Front.2.jpg",
+    "content/Blog/ICST Kompositionsstudio Regie/DisplayLink_1.png",
+    "content/Blog/ICST Kompositionsstudio Regie/index.md",
+    "content/Blog/ICST Bformat Archive/index.md",
     "ICST_PLAYER_LIST.xlsx",
     "themes/anatole/archetypes/post.md",
     "public/scss/main.min.d8f857853c3edac0bf7e11e3df723cd115c3846046668862e8d33ae1d5ae0347.css",
@@ -241,21 +231,14 @@
     "public/scss/main.min.fe2b6fe4b9dae4df2e8da79b3b7fae466b3124127bf57cecd06b5ffd7d159cf2.css",
     "themes/anatole/CHANGELOG.md",
     "themes/anatole/README.md",
-    "content/Blog/ICST Bformat Archive/index.md",
     "public/index.xml",
     "public/blog/index.xml",
     "public/post/index.xml",
-    "public/icst-ambisonics-plugins/index.xml",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/speaker_test.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/record_movement.gif",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/rec_xyz.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_xyz.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_multienc.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_GP.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/open_decoder.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/first-order.png",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "content/Blog/_index.md",
     "icst-bformat-archive.md",
@@ -271,13 +254,11 @@
     "content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/index.md",
     "icst-kompositionsstudio-ambisonics-setting.md",
     "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
-    "content/Blog/ICST Kompositionsstudio Regie/index.md",
     "content/Blog/ICST Kompositionsstudio Equipment/index.md",
     "content/Blog/Sounding_Future/index.md",
     "content/Blog/ICST Kompositionsstudio Pre-Installation/index.md",
     "content/Blog/Terms of use/index.md",
     "icst-kompositionsstudio-equipment.md",
-    "Evernote/Info/Index.md",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/post/ableton_reaper/Untitled.canvas",

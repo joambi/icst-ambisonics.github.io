@@ -20,7 +20,8 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 _Eintritt frei_ 
 
-## Jean-Cloude Risset   (13.3.1938 - 21.11.2016)
+---
+## Jean-Claude Risset   (13.3.1938 - 21.11.2016)
 
 ![Risset](Risset.png)
 
