@@ -4,30 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "aeb50d5b614bb66f",
+        "id": "c11a613b619837b1",
         "type": "tabs",
         "children": [
           {
-            "id": "746621c737e6e236",
+            "id": "12e59acca5aa7f81",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/_index.md",
+                "file": "content/Links/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           },
           {
-            "id": "913db07b04967298",
+            "id": "20c83a2f07077927",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/15-ascolta-hörstunde/index.md",
+                "file": "content/post/ableton_reaper/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -196,7 +196,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1744297757909": false,
+      "image-preview-on-icon-hover:1744620920618": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -207,11 +207,21 @@
       "github-sync:Sync with Remote": false,
       "obsidian-git:Open Git source control": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "markdown-table-editor:Open Markdown Table Editor": false
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "DEVONlink-obsidian:DEVONlink": false
     }
   },
-  "active": "913db07b04967298",
+  "active": "20c83a2f07077927",
   "lastOpenFiles": [
+    "ICST MultiDecoder.md",
+    "content/Links/index.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "README.md",
+    "content/post/gp-manipulation/index.md",
+    "content/Blog/_index.md",
+    "content/Blog/14-ascolta-hörstunde/index.md",
+    "content/Blog/15-ascolta-hörstunde/index.md",
     "content/post/Zylia/index.md",
     "content/post/_index.md",
     "content/post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
@@ -244,21 +254,12 @@
     "public/icst-ambisonics-plugins/06_step_by_step_setup/record_movement.gif",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/rec_xyz.gif",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
-    "content/Blog/_index.md",
     "icst-bformat-archive.md",
     "content/Blog/00-ascolta-hörstunden/index.md",
     "content/Blog/HOAST Library/index.md",
     "content/Blog/Downloads/index.md",
-    "content/Links/index.md",
     "content/Blog/ICST Kompositionsstudio Overview/index.md",
     "().md",
-    "icst-kompositionsstudio-regie.md",
-    "Untitled.md",
-    "content/Blog/ICST-Kompositionsstudio-Support/index.md",
-    "content/Blog/ICST-Kompositionsstudio-Ambisonics-Setting/index.md",
-    "icst-kompositionsstudio-ambisonics-setting.md",
-    "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
-    "content/Blog/ICST Kompositionsstudio Equipment/index.md",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/post/ableton_reaper/Untitled.canvas",

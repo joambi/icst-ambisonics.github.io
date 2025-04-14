@@ -608,7 +608,7 @@ var parser = import_lr.LRParser.deserialize({
   maxTerm: 26,
   skippedNodes: [0],
   repeatNodeCount: 5,
-  tokenData: "%f~RcXY!^YZ!c]^!^pq!^qr!^rs!^s!_!^!_!`!p!`#O!^#O#P!}#P#S!^#S#T$q#T#r!^#r#s$v#s;'S!^;'S;=`%Z<%l~!^~O!^~~%a~!cOj~~!hPj~YZ!k~!pOb~~!uPj~#r#s!x~!}Oa~~#SXj~rs!^!P!Q!^#O#P!^#U#V!^#Y#Z!^#b#c!^#f#g!^#h#i!^#i#j#o~#rR!Q![#{!c!i#{#T#Z#{~$OR!Q![$X!c!i$X#T#Z$X~$[R!Q![$e!c!i$e#T#Z$e~$hR!Q![!^!c!i!^#T#Z!^~$vO[~~${Pj~!_!`%O~%RP#o#p%U~%ZOS~~%^P;=`<%l!^~%fOc~",
+  tokenData: "%i~RcXY!^YZ!c]^!^pq!^qr!^rs!^s!_!^!_!`!p!`#O!^#O#P!}#P#S!^#S#T$t#T#r!^#r#s$y#s;'S!^;'S;=`%^<%l~!^~O!^~~%d~!cOj~~!hPj~YZ!k~!pOb~~!uPj~#r#s!x~!}Oa~~#SYj~rs!^!P!Q!^#O#P!^#S#T!^#U#V!^#Y#Z!^#b#c!^#f#g!^#h#i!^#i#j#r~#uR!Q![$O!c!i$O#T#Z$O~$RR!Q![$[!c!i$[#T#Z$[~$_R!Q![$h!c!i$h#T#Z$h~$kR!Q![!^!c!i!^#T#Z!^~$yO[~~%OPj~!_!`%R~%UP#o#p%X~%^OS~~%aP;=`<%l!^~%iOc~",
   tokenizers: [1, new import_lr.LocalTokenGroup("!X~R[X^wpqw#q#r|#y#zw$f$gw#BY#BZw$IS$I_w$I|$JOw$JT$JUw$KV$KWw&FU&FVw~~!R~|O_~~!ROV~~!WO^~~", 54, 6)],
   topRules: { "TextColor": [0, 1] },
   tokenPrec: 230
@@ -1000,16 +1000,19 @@ function applyColor(tColor, editor) {
     editor.setCursor(pos);
     return;
   }
-  let selected = editor.getSelection();
-  let coloredText = `${prefix}${selected}${suffix}`;
-  editor.replaceSelection(coloredText);
-  try {
-    let pos = editor.getCursor();
-    pos.ch = pos.ch + 1;
-    editor.setCursor(pos);
-  } catch (e) {
-    return;
-  }
+  let selections = editor.listSelections();
+  selections.forEach((element) => {
+    let selected = editor.getRange(element.anchor, element.head);
+    let coloredText = `${prefix}${selected}${suffix}`;
+    editor.replaceRange(coloredText, element.anchor, element.head);
+    try {
+      let pos = editor.getCursor();
+      pos.ch = pos.ch + 1;
+      editor.setCursor(pos);
+    } catch (e) {
+      return;
+    }
+  });
 }
 function removeColor(editor, view) {
   var _a, _b;
@@ -1066,6 +1069,7 @@ var ColorSuggestModal = class extends import_obsidian7.SuggestModal {
 var FastTextColorPlugin = class extends import_obsidian8.Plugin {
   async onload() {
     await this.loadSettings();
+    this.styleElements = /* @__PURE__ */ new Map();
     this.registerEditorExtension(textColorParserField);
     this.registerEditorExtension(textColorViewPlugin);
     this.registerMarkdownPostProcessor((el, ctx) => {
@@ -1120,10 +1124,17 @@ var FastTextColorPlugin = class extends import_obsidian8.Plugin {
       })
     );
     this.addSettingTab(new FastTextColorPluginSettingTab(this.app, this));
+    this.app.workspace.on("window-open", (_, window2) => {
+      this.styleElements.set(window2, null);
+      this.setCssVariables();
+    });
+    this.app.workspace.on("window-close", (_, window2) => {
+      this.styleElements.delete(window2);
+    });
+    this.styleElements.set(activeWindow, null);
     this.setCssVariables();
   }
   onunload() {
-    this.styleElement.remove();
     this.closeColorMenu();
   }
   async loadSettings() {
@@ -1157,7 +1168,7 @@ var FastTextColorPlugin = class extends import_obsidian8.Plugin {
   }
   // create and open the color menu
   /**
-   * opens the color menu and pushed the scope onto the keybindings.
+   * opens the color menu and pushes the scope onto the keybindings.
    *
    * @param {Editor} editor - [TODO:description]
    */
@@ -1270,38 +1281,48 @@ var FastTextColorPlugin = class extends import_obsidian8.Plugin {
       this.closeColorMenu();
     }).buttonEl.setAttr("style", `background-color: ${tColor.getColorValue()}`);
   }
+  addWindow(window2) {
+    this.styleElements.set(window2, null);
+    this.setCssVariables();
+  }
+  removeWindow(window2) {
+    this.styleElements.delete(window2);
+  }
   /**
    * creates the stylesheet needed for the colors in the root of the document.
    * A different set of classes is created for each theme.
    *
    */
   setCssVariables() {
-    if (!this.styleElement) {
-      const root = document.querySelector(":root");
-      if (!root) {
-        return;
+    this.styleElements.forEach((styleElement, win) => {
+      if (!styleElement) {
+        let root = win.document.querySelector(":root");
+        if (!root) {
+          return;
+        }
+        styleElement = root.createEl("style");
+        styleElement.id = "fast-text-color-stylesheet";
+        this.styleElements.set(win, styleElement);
       }
-      this.styleElement = root.createEl("style");
-      this.styleElement.id = "fast-text-color-stylesheet";
-    }
-    this.styleElement.textContent = "";
-    const formatCss = (css) => {
-      const lines = css.split("\n").map((l) => l.trim()).filter((l) => l.length);
-      if (lines.length <= 5) {
-        return lines.join(" ");
-      }
-      return lines.map((l) => /[{}]/.test(l) ? l : `  ${l}`).join("\n");
-    };
-    for (let i = 0; i < this.settings.themes.length; i++) {
-      getColors(this.settings, i).forEach((tColor) => {
-        const theme = this.settings.themes[i];
-        const className = `.${CSS_COLOR_PREFIX}${theme.name}-${tColor.id}`;
-        let cssClass = `${className} {
+      styleElement.textContent = "";
+      const formatCss = (css) => {
+        const lines = css.split("\n").map((l) => l.trim()).filter((l) => l.length);
+        if (lines.length <= 5) {
+          return lines.join(" ");
+        }
+        return lines.map((l) => /[{}]/.test(l) ? l : `  ${l}`).join("\n");
+      };
+      for (let i = 0; i < this.settings.themes.length; i++) {
+        getColors(this.settings, i).forEach((tColor) => {
+          const theme = this.settings.themes[i];
+          const className = `.${CSS_COLOR_PREFIX}${theme.name}-${tColor.id}`;
+          let cssClass = `${className} {
 ${tColor.getInnerCss(this.settings)}
 }`;
-        this.styleElement.textContent += formatCss(cssClass) + "\n";
-      });
-    }
+          styleElement.textContent += formatCss(cssClass) + "\n";
+        });
+      }
+    });
   }
 };
 

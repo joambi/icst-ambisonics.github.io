@@ -17,10 +17,10 @@ This tutorial provides a detailed guide to recording 7th-Order Ambisonics using 
 
 Ableton transmits audio via "BlackHole" (up to 64 channels) to Reaper's BlackHole input devices.
 
-![Ableton_outs](content/post/ableton_reaper/Ableton_output.png)
+![Ableton_outs](Ableton_output.png)
 The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncoder via localhost on port 50001. In Reaper, audio inputs from BlackHole (1-4) are received, while the ICST Multi-AmbiEncoder processes OSC sources (1-16).
 
-![Ableton_to_MultiEncoder](content/post/ableton_reaper/Ableton_OSC_BlackHole.gif)
+![Ableton_to_MultiEncoder](Ableton_OSC_BlackHole.gif)
 
 This setup allows recording B-format up to the 7th order from Ableton Live 12.
 
@@ -30,7 +30,7 @@ This setup allows recording B-format up to the 7th order from Ableton Live 12.
 
 #### Schematic Overview:
 
-![Ableton_routing64ch](content/post/ableton_reaper/Ableton_routing_64ch.png)
+![Ableton_routing64ch](Ableton_routing_64ch.png)
 #### Preparation:
 
 - Install [AbletonLive 12](https://www.ableton.com/de/live/)
@@ -57,29 +57,29 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)
 #### In Reaper
 
 1. Create a session with 63 mono tracks (Track 64 for LTC timecode).
-2. Enable LTC sync input on Track 64 by right-clicking the Playbar.![LTC](content/post/ableton_reaper/LTC.png)
+2. Enable LTC sync input on Track 64 by right-clicking the Playbar.![LTC](LTC.png)
      
 3. Set all active tracks to "Record: Disable (monitor only)."
-   ![Rec_disable](content/post/ableton_reaper/rec_disable.png)
+   ![Rec_disable](rec_disable.png)
 
 4. Route Tracks 1-63 to ICST MultiEncoder_64.
 
-![Routing_Inputs](content/post/ableton_reaper/Routing_Overview.png)
+![Routing_Inputs](Routing_Overview.png)
 - When correctly routed, the source appears in the encoder radar for verification.
 
 5. Configure OSC connection between Ableton and ICST MultiEncoder. Each encoder requires its own OSC port.
 
-    ![OSC-Ports](content/post/ableton_reaper/OSC-Port.png)
+    ![OSC-Ports](OSC-Port.png)
 6. Activate OSC transmission in E4L_Multi-Panner. The ICST MultiEncoder will display moving dots when receiving OSC data.
-   ![OSC_ON](content/post/ableton_reaper/OSC_ON.png)
+   ![OSC_ON](OSC_ON.png)
 7. In Reaper press Record -Output for recording your Bformat see next image.
-   ![Rec_BF](content/post/ableton_reaper/Rec_BF.png)
+   ![Rec_BF](Rec_BF.png)
 8. Then press REC in Reaper -> you get the follow message "Waiting for Timecode"
-   ![Rec](content/post/ableton_reaper/Rec.png)
+   ![Rec](Rec.png)
 
 9. Press play in Ableton Live to synchronize Reaper via LTC Sync (Input 64), enabling B-format 7th-order ambix recording.
 10. Move to the **Start Marker** at **01:00:000** (LTC has a 60' offset), then press **Fire** or **Play** in Ableton Live to start recording.
-![recoding_bf](content/post/ableton_reaper/Live_Reper_BF.gif)
+![recoding_bf](Live_Reper_BF.gif)
 
 For more details, refer to the documentation for Ableton Live, Reaper, and the ICST MultiEncoder.
 
