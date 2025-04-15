@@ -22,7 +22,7 @@ _Eintritt frei_ 
 
 ---
 
-In this session we will listen to classic electroacoustic compositions in two different versions:
+In this session, we will listen to classic electroacoustic compositions in two different versions:
 
 - A recent 5.1 production from ICST/ZHdK
 - A historic Ambisonics (UHJ) recording from the 1976s
