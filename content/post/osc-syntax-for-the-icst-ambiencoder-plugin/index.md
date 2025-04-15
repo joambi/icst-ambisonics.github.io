@@ -123,9 +123,9 @@ Now, the AmbiDecoder receives **all OSC messages** from all connected AmbiEncode
 
 AmbiEncoder can also send most of its parameters via OSC.
 
-![External-osc](osc-syntax-for-the-icst-ambiencoder-plugin/external_osc.png)
+![External-osc](external_osc.png)
 
-Open the question mark in front of the presets to get detailed help information.  
+Open the question mark before the presets to get detailed help information.  
 
 1. Enable **“Send Positions for External Usage”** in the settings.
 2. In the **Targets** section:
