@@ -42,7 +42,8 @@ The GyrOSC app will send the 'Gravity' data via OSC (port 50001) to the ICST Mul
 
 ### Setting Up the ICST Ambisonics Encoder Plugin:
 
-![Reaper_GyrOSC](content/post/GYROSC/Reaper_GyrOSC.png)
+![Reaper_GyrOSC](Reaper_GyrOSC.png)
+
 1.  Open the ICST AmbiEncoder_64 plugin.
 2. Access the Encoder Settings.
 3. Open the _OSC IN_ section and enable OSC-IN (port: 50001).
