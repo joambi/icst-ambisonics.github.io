@@ -59,7 +59,8 @@ This is a more advanced example of animating a group using **quaternion paramete
 
 A new 'ICST Ambi-OSC-Patcher' shows the direct group animation possibilities, we’ll demonstrate how to animate groups using OSC from an external source. The MultiEncoder internally converts Euler angles into quaternions. In this example, the angles from the source point (1) are crucial for the animation.
 
-![Max example patch](gp-manipulation/max-example-patch.png)
+![Max example patch](max-example-patch.png)
+
 Download MaxPatch: [Neuer OSC-Messenger](https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat)
 #### Group Position
 1. Set Group Position AED

@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
+                "file": "content/post/gp-manipulation/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -227,6 +227,8 @@
   },
   "active": "3436bb38f7392b7e",
   "lastOpenFiles": [
+    "content/post/GYROSC/index.md",
+    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "content/post/icst-grapes/index.md",
     "content/post/icst-grapes/Grapes.gif",
     "content/post/info/index.md",
@@ -234,8 +236,6 @@
     "content/post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
     "content/post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
     "content/post/Zylia/index.md",
-    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
-    "content/post/GYROSC/index.md",
     "content/post/gp-manipulation/index.md",
     "content/post/ableton_reaper/index.md",
     "14_Ascolta_Ablauf.md",
