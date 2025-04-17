@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ---
 # #12 ascolta Akusmatische Hörstunde
 
-![ascolta](ascolta.png)
+![ascolta](content/Blog/12-ascolta-hörstunde/ascolta.png)
 
 ---
 # Georg Katzer

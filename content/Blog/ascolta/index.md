@@ -1,5 +1,5 @@
 ---
-title:
+title: ICST Ascolta Hörstunden
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
