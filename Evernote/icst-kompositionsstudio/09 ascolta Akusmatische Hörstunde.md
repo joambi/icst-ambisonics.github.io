@@ -17,14 +17,14 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 # Remembering Japan
 
 INFO: <https://tutschku.com/remembering-japan/>
-![[montage-pochette-pour-internet.jpg]]
+![[public/blog/09-ascolta-hörstunde/montage-pochette-pour-internet.jpg]]
 <https://electrocd.com/en/album/6390/hans-tutschku/remembering-japan>
 
 * * *
 
 ### Biography
 
-![[2013-09-10-Tutschku_by_TonyRinaldo-300x270.jpg]]
+![[public/blog/09-ascolta-hörstunde/2013-09-10-Tutschku_by_TonyRinaldo-300x270.jpg]]
 Foto: Tony Rinaldo
 Hans Tutschku is a composer of instrumental and electroacoustic music. In 1982 he joined the “Ensemble for intuitive music Weimar” and later studied theatre and composition in Berlin, Dresden, The Hague, Paris, and Birmingham. He collaborated in film, theatre and dance productions, and participated in concert cycles with Karlheinz Stockhausen. Since 2004 he directs the electroacoustic studios at Harvard University.
 

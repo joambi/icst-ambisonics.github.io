@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ---
 # #07 ascolta Akusmatische Hörstunde
 
-![ascolta](content/Blog/07-ascolta-hörstunde/ascolta.png)
+![ascolta](ascolta.png)
 
 ---
 ### A concert featuring some of the ICST artists in residence
@@ -37,7 +37,7 @@ Artist in Residency  11.2. -24.2.2008
 
 **dark\_zurich**   5:11
 
-![oliver](oliver.png)
+![oliver](content/Blog/07-ascolta/oliver.png)
 
 
 * * *

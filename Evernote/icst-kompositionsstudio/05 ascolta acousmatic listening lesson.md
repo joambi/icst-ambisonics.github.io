@@ -17,7 +17,7 @@ Dur: 28.30
 In 2019, Philip received a grant from the Swiss National Science Foundation to conduct research at the High Altitude Research Center on the Jungfraujoch. This is the first time either organization has supported an artist-researcher under their respective programs, demonstrating a growing awareness of art's ability to advocate for rare and endangered ecologies. Philip's high-alpine research has been featured on DW Radio, Swiss Info, and Les Temps news services and exhibited in China and Japan (2019) and Switzerland (2021). It was also featured in an exhibition titled Sampling the Future (2021) at NGV Australia.
 
 This project is supported by Creative Victoria; High Altitude Research Station at Jungfraujoch and Gornergrat; Institute for Computer Music and Sound Technology at the ZhDK; RMIT School of Art; Swiss National Science Foundation
-![[img_6516.jpg]]
+![[public/blog/05-ascolta-hörstunde/img_6516.jpg]]
 Wie der Klimawandel klingt - SWI [swissinfo.ch](http://swissinfo.ch)
 <https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
 

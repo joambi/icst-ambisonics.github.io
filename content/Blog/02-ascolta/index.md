@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ---
 # #02 ascolta Akusmatische Hörstunde
 
-![ascolta](content/Blog/02-ascolta-hörstunde/ascolta.png)
+![ascolta](ascolta.png)
 
 ---
 #### Konzert

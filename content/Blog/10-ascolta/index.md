@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ---
 # #10 ascolta Akusmatische Hörstunde
 
-![ascolta](content/Blog/10-ascolta-hörstunde/ascolta.png)
+![ascolta](ascolta.png)
 
 ---
 # The Composer, Herself

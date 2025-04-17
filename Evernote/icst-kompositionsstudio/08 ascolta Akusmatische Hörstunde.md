@@ -25,7 +25,7 @@ Dieses Werk wird heute als 'Cinema pour l'oreille' ohne das Video gespielt!
 * * *
 
 Mesias Maiguashca
-![[04d.-5am-mesias.jpg]]
+![[public/blog/08-ascolta-hörstunde/04d.-5am-mesias.jpg]]
 Born in Quito, Ecuador, the 24th of December, 1938, Mesías Maiguashca studied at the Conservatorio de Quito, the Eastman School of Music (Rochester, N.Y.), the Instituto di Tella (Buenos Aires) and at the Musikhochschule in Cologne. He realized compositions in the Studio for Electronic Music WDR (Cologne), the Centre Européen pour la Recherche Musicale (Metz), IRCAM (Paris), Acroe (Grenoble) and ZKM (Karlsruhe), and teached in Metz, Stuttgart, Karlsruhe, Basel, Sofía, Quito, Cuenca, Buenos Aires, Bogotá, Madrid, Barcelona, Györ y Szombathely (Hungary), Seoul (Corea) and his works were presented at the most important European festivals.Maiguashcas was professor for electronic music at the Musikhochschule Freiburg from 1990 until his retirement in 2004. Together with Roland Breitenfeld, he founded the [K.O.Studio](http://K.O.Studio) Freiburg in 1998, a private initiative for the practice of experimental music. He lives in Freiburg since 1996.
 [www.maiguashca.de](http://www.maiguashca.de/index.php/de/)
 

@@ -128,7 +128,7 @@ Quelle: EMDocu (erstellt: 25.08.1993 Source: Ruschkowski-Kartei 1989)
 
 * * *
 
-![[Katzer_Georg_StudioCircé_IMEB_2.jpg]]
+![[public/blog/12-ascolta-hörstunde/Katzer_Georg_StudioCircé_IMEB_2.jpg]]
 **Georg Katzer,** 1935 in Niederschlesien geboren und 2019 in Zeuthen gestorben, gilt als einer der bedeuteten Komponisten der ostdeutschen Schule. Katzer, der Meisterschüler von Hanns Eisler war, hinterliess ein umfangreiches Oeuvre an Orchester-, Instrumental- und Filmmusik sowie Hörspiele. Dieses Porträt widmet sich Georg Katzer als Pionier der elektroakustischen Musik. 
 1978 wurde Katzer zum Mitglied der Akademie der Künste in Ostberlin gewählt. 1982 gründete er das der Musikabteilung der Akademie der Künste angegliederte Studio für Elektroakustische Musik "Studio für Elektroakustische Musik", dessen künstlerischer Leiter er bis 2005 war.
 

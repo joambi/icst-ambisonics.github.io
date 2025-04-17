@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 Artist in Residency  3.7. – 14.7.2017 | 12.1. – 22.1.2018
 
 Karst Grotto     7:15
-![[content/Blog/07-ascolta-hörstunde/1658512254578.jpg]]
+![[content/Blog/07-ascolta/1658512254578.jpg]]
 
 * * *
 
@@ -24,7 +24,7 @@ dark\_zurich  5:11
 (Artist in Residency  20.4. – 4.5.2009)
 
 A OCHO    7:35
-![[medium.jpg]]
+![[public/blog/07-ascolta-hörstunde/medium.jpg]]
 
 * * *
 
@@ -32,7 +32,7 @@ A OCHO    7:35
 Artist in Residency 2.5. – 13.5.2016
 
 IKUR         10:00
-![[zurine_fg.jpg]]
+![[public/blog/07-ascolta-hörstunde/zurine_fg.jpg]]
 
 * * *
 
@@ -41,7 +41,7 @@ Artist in Residency  18.6. - 29.6.2018
 
 KOM     (Ambisonics  Version) 2018
 8:00
-![[medium.1.jpg]]
+![[public/blog/07-ascolta-hörstunde/medium.1.jpg]]
 
 * * *
 
