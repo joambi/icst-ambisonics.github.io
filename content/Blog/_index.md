@@ -21,7 +21,7 @@ aliases:
 ---
 # ICST Ascolta Hörstunden
 
-- [00 Ascolta Akusmatische Hörstunden](00-ascolta-hörstunden)
+- [Ascolta Akusmatische Hörstunden](ascolta)
 
 ---
 # ICST Labor 

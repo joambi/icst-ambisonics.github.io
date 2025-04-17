@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ascolta/index.md",
+                "file": "content/Blog/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -227,6 +227,7 @@
   },
   "active": "3436bb38f7392b7e",
   "lastOpenFiles": [
+    "content/Blog/ascolta/index.md",
     "content/post/ableton_reaper/index.md",
     "public/post/zylia/index.html",
     "public/post/zylia",
