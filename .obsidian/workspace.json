@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/10-ascolta/index.md",
+                "file": "content/Blog/ascolta/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -227,6 +227,7 @@
   },
   "active": "3436bb38f7392b7e",
   "lastOpenFiles": [
+    "content/Blog/10-ascolta/index.md",
     "content/Blog/11-ascolta/index.md",
     "content/Blog/12-ascolta/index.md",
     "content/Blog/15-ascolta/index.md",
@@ -272,7 +273,6 @@
     "content/post/info/index.md",
     "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
     "content/post/GYROSC/index.md",
-    "content/post/gp-manipulation/index.md",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",

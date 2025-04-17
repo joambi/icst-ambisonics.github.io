@@ -11,10 +11,10 @@ Acousmatic music and its associated performance practice aims to create a situat
 
 ---
 
-| Termine (FS) 2025                                                                                        | Topic            | Date       | Time  | Raum  |
-| -------------------------------------------------------------------------------------------------------- | ---------------- | ---------- | ----- | ----- |
-| [#15 ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/15-ascolta/)                             | **Listen twice** | 06.05.2025 | 18:00 | 3.D02 |
-| [#14  ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/https://ambisonics.ch/blog/14-ascolta/) | **Listen twice** | 22.04.2025 | 18:00 | 3.D02 |
+| Termine (FS) 2025                                                             | Topic            | Date       | Time  | Raum  |
+| ----------------------------------------------------------------------------- | ---------------- | ---------- | ----- | ----- |
+| [#15 ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/15-ascolta/)  | **Listen twice** | 06.05.2025 | 18:00 | 3.D02 |
+| [#14  ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/14-ascolta/) | **Listen twice** | 22.04.2025 | 18:00 | 3.D02 |
 
 |                                                                                  |                       |                |           |                |
 | -------------------------------------------------------------------------------- | --------------------- | -------------- | --------- | -------------- |
