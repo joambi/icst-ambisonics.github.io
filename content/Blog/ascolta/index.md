@@ -9,10 +9,6 @@ Acousmatic music and its associated performance practice aims to create a situat
 
 ![Index](Ascolta_Index.png)
 
-| Termine (HS) 2025 | Topic | Date | Time | Raum |
-| ----------------- | ----- | ---- | ---- | ---- |
-|                   |       |      |      |      |
-
 ---
 
 | Termine (FS) 2025                                                                            | Topic            | Date       | Time  | Raum  |
