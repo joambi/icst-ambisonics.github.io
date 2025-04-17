@@ -22,21 +22,6 @@ aliases:
 # ICST Ascolta Hörstunden
 
 - [Ascolta Akusmatische Hörstunden](ascolta)
-- [15-ascolta](15-ascolta)
-- [14-ascolta](14-ascolta)
-- [13-ascolta](13-ascolta)
-- [12-ascolta](12-ascolta)
-- [11-ascolta](11-ascolta)
-- [10-ascolta](10-ascolta)
-- [09-ascolta](09-ascolta)
-- [08-ascolta](08-ascolta)
-- [07-ascolta](07-ascolta)
-- [06-ascolta](06-ascolta)
-- [05-ascolta](05-ascolta)
-- [04-ascolta](04-ascolta)
-- [03-ascolta](03-ascolta)
-- [02-ascolta](02-ascolta)
-- [01-ascolta](01-ascolta)
 
 ---
 # ICST Labor 

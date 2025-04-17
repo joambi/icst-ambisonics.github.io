@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ascolta/index.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Untitled"
             }
           }
         ],
@@ -227,11 +227,12 @@
   },
   "active": "3436bb38f7392b7e",
   "lastOpenFiles": [
+    "content/Blog/_index.md",
+    "content/Blog/ascolta/index.md",
     "content/Blog/10-ascolta/index.md",
     "content/Blog/11-ascolta/index.md",
     "content/Blog/12-ascolta/index.md",
     "content/Blog/15-ascolta/index.md",
-    "content/Blog/ascolta/index.md",
     "content/Blog/14-ascolta/index.md",
     "content/Blog/13-ascolta/index.md",
     "content/Blog/09-ascolta/index.md",
@@ -263,7 +264,6 @@
     "public/blog/05-ascolta/img_6516.jpg",
     "public/blog/05-ascolta/ascolta.png",
     "public/blog/05-ascolta",
-    "content/Blog/_index.md",
     "content/post/_index.md",
     "content/Blog/ICST Kompositionsstudio Overview/index.md",
     "content/post/ableton_reaper/index.md",
