@@ -27,30 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/ableton_reaper/index.md",
+                "file": "content/Blog/ascolta/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "index"
             }
-          },
-          {
-            "id": "3436bb38f7392b7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,7 +196,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1745397588421": false,
+      "image-preview-on-icon-hover:1745845779732": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -225,8 +211,11 @@
       "DEVONlink-obsidian:DEVONlink": false
     }
   },
-  "active": "3436bb38f7392b7e",
+  "active": "20c83a2f07077927",
   "lastOpenFiles": [
+    "content/post/ableton_reaper/index.md",
+    "Untitled 1.md",
+    "Untitled.md",
     "content/Blog/_index.md",
     "content/Blog/ascolta/index.md",
     "content/Blog/10-ascolta/index.md",
@@ -266,13 +255,10 @@
     "public/blog/05-ascolta",
     "content/post/_index.md",
     "content/Blog/ICST Kompositionsstudio Overview/index.md",
-    "content/post/ableton_reaper/index.md",
     "content/post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
     "content/post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
     "content/post/osc-2-fx/index.md",
     "content/post/info/index.md",
-    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
-    "content/post/GYROSC/index.md",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "public/post/ableton_reaper/Ableton2Reaper.canvas",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
