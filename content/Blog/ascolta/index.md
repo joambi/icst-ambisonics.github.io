@@ -11,18 +11,18 @@ Acousmatic music and its associated performance practice aims to create a situat
 
 ---
 
-| Termine (FS) 2025                                                             | Topic            | Date       | Time  | Raum  |
-| ----------------------------------------------------------------------------- | ---------------- | ---------- | ----- | ----- |
-| [#15 Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/15-ascolta/)  | **Listen twice** | 06.05.2025 | 18:00 | 3.D02 |
-| [#14  Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/14-ascolta/) | **Listen twice** | 22.04.2025 | 18:00 | 3.D02 |
+| Termine (FS) 2025                                                                | Topic            | Date           | Time  | Raum  |
+| -------------------------------------------------------------------------------- | ---------------- | -------------- | ----- | ----- |
+| [**#15 Ascolta Akusmatische Hörstunde**](https://ambisonics.ch/blog/15-ascolta/) | **Listen twice** | **06.05.2025** | 18:00 | 3.D02 |
+| [#14  Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/14-ascolta/)    | **Listen twice** | 22.04.2025     | 18:00 | 3.D02 |
 
-|                                                                                  |                       |                |           |                |
-| -------------------------------------------------------------------------------- | --------------------- | -------------- | --------- | -------------- |
-| Termine (HS) 2024                                                                | Topic                 | Date           | Time      | Raum           |
-| **[#13 Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/13-ascolta/)** | **Listen twice**      | **17.12.2024** | **18:00** | 3.D02, Ebene 3 |
-| [#12 Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/12-ascolta/)     | Porträt Georg Katzer  | 22.10.2024     | 18:00     | 3.D02, Ebene 3 |
-| # [#11 Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/11-ascolta/)   | Porträt Mario Mary    | 11.06.2024     | 18:00     | 3.D02, Ebene 3 |
-| # [#10 Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/10-ascolta/)   | The Composer, Herself | 19.03.2024     | 18:00     | 3.D02, Ebene 3 |
+|                                                                                |                       |                |           |                |
+| ------------------------------------------------------------------------------ | --------------------- | -------------- | --------- | -------------- |
+| Termine (HS) 2024                                                              | Topic                 | Date           | Time      | Raum           |
+| [#13 Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/13-ascolta/)   | **Listen twice**      | **17.12.2024** | **18:00** | 3.D02, Ebene 3 |
+| [#12 Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/12-ascolta/)   | Porträt Georg Katzer  | 22.10.2024     | 18:00     | 3.D02, Ebene 3 |
+| # [#11 Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/11-ascolta/) | Porträt Mario Mary    | 11.06.2024     | 18:00     | 3.D02, Ebene 3 |
+| # [#10 Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/10-ascolta/) | The Composer, Herself | 19.03.2024     | 18:00     | 3.D02, Ebene 3 |
 
 |                                                                              |                                                  |            |       |                |
 | ---------------------------------------------------------------------------- | ------------------------------------------------ | ---------- | ----- | -------------- |
