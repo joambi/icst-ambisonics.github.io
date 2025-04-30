@@ -39,7 +39,6 @@ Find individual pages here:
 **Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>**
 
 **Developer - team**:
-
 -   Christian Schweizer/Johannes Schuett/Martin Neukom
 -   Video Editor: Axel Kolb
 
