@@ -1,0 +1,36 @@
+@use 'modules/color_theme' as color;
+@use 'modules/config' as conf;
+
+a {
+  text-decoration: none;
+
+  @include color.themed() {
+    color: color.t('primary');
+  }
+
+  &:hover {
+    @include color.themed() {
+      color: color.t('info');
+    }
+  }
+}
+
+blockquote {
+  padding: 0 1em;
+
+  @include color.themed() {
+    color: color.t('primary');
+
+    @include conf.ltr {
+      border-left: color.t('border');
+    }
+
+    @include conf.rtl {
+      border-right: color.t('border');
+    }
+  }
+}
+
+p {
+  line-height: 1.9em;
+}

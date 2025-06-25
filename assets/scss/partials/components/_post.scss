@@ -1,0 +1,234 @@
+@use 'modules/color_theme' as color;
+@use 'modules/config' as conf;
+@use 'modules/variables' as var;
+
+.post {
+  margin: 30px;
+
+  @include color.themed() {
+    background-color: color.t('accent');
+  }
+
+  &__meta {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 1.25rem;
+      }
+    }
+
+    &-icon {
+      @include conf.ltr {
+        margin-right: 2px;
+      }
+
+      @include conf.rtl {
+        margin-left: 2px;
+      }
+    }
+
+    &-text {
+      &:not(:last-child) {
+        @include conf.ltr {
+          margin-right: 4px;
+        }
+
+        @include conf.rtl {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  &__thumbnail {
+    width: 100%;
+    height: var.$thumbnail-height;
+    object-fit: cover;
+    display: block;
+
+    &-wrapper {
+      border-radius: 2px;
+      width: 100%;
+      margin-bottom: 1em;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+
+      @include color.themed() {
+        box-shadow: color.t('shadow');
+      }
+    }
+  }
+
+  &__content {
+    a {
+      @include color.themed() {
+        color: color.t('info');
+      }
+    }
+
+    .chroma {
+      @include color.themed() {
+        background-color: color.t('primary-lighter');
+        display: block;
+        border-bottom: 1px solid color.t('primary-lighter');
+      }
+    }
+
+    code {
+      font-family: monospace;
+    }
+
+    pre {
+      padding: 5px;
+      overflow-x: auto;
+
+      @include color.themed() {
+        background-color: color.t('primary-lighter');
+      }
+    }
+
+    h1 {
+      $font-size-h1: 3.6rem;
+
+      font-size: $font-size-h1;
+      letter-spacing: 1px;
+      line-height: 1;
+
+      a {
+        font-size: $font-size-h1;
+
+        @include color.themed() {
+          color: color.t('primary');
+        }
+      }
+    }
+
+    h2 {
+      $font-size-h2: 2.4rem;
+
+      font-size: $font-size-h2;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 1;
+
+      a {
+        font-size: $font-size-h2;
+
+        @include color.themed() {
+          color: color.t('primary');
+        }
+      }
+    }
+
+    h3 {
+      $font-size-h3: 2rem;
+
+      font-size: $font-size-h3;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 1;
+
+      a {
+        font-size: $font-size-h3;
+
+        @include color.themed() {
+          color: color.t('primary');
+        }
+      }
+    }
+
+    ul,
+    ol {
+      line-height: 1.9em;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+
+    figure {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      text-align: center;
+
+      &.big {
+        max-width: 87.5%;
+      }
+
+      &.medium {
+        max-width: 75%;
+      }
+
+      &.small {
+        max-width: 50%;
+      }
+
+      &.tiny {
+        max-width: 25%;
+      }
+
+      &.right {
+        @include conf.desktop {
+          max-width: 50%;
+
+          @include conf.ltr {
+            float: right;
+            margin: 0 0 0 1.5em;
+          }
+
+          @include conf.rtl {
+            float: left;
+            margin: 0 1.5em 0 0;
+          }
+        }
+      }
+
+      &.left {
+        @include conf.desktop {
+          max-width: 50%;
+
+          @include conf.ltr {
+            float: left;
+            margin-right: 1.5em;
+          }
+
+          @include conf.rtl {
+            float: right;
+            margin-left: 1.5em;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    padding: 12px 0;
+
+    @include color.themed() {
+      border-bottom: color.t('border');
+    }
+
+    &-date {
+      font-size: 1.4rem;
+
+      @include conf.ltr {
+        margin-right: 10px;
+        margin-left: 5px;
+      }
+
+      @include conf.rtl {
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

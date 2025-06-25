@@ -1,0 +1,84 @@
+@use 'modules/color_theme' as color;
+@use 'modules/config' as conf;
+
+.optionswitch {
+  position: relative;
+
+  &__label {
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  &__list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: relative;
+
+    @include conf.desktop {
+      border-radius: 5px;
+      position: absolute;
+      top: 32px;
+
+      @include color.themed() {
+        background: color.t('primary-lighter');
+        box-shadow: color.t('shadow');
+      }
+    }
+
+    &-item {
+      background: transparent;
+      display: block;
+      line-height: 1;
+      bottom: 0;
+      text-align: center;
+      white-space: nowrap;
+      padding-top: 24px;
+
+      @include color.themed() {
+        color: color.t('primary');
+      }
+
+      @include conf.desktop {
+        padding: 12px;
+      }
+    }
+  }
+
+  &__triangle {
+    display: none;
+
+    &::before {
+      content: '';
+      border-radius: 2px 0px 0px 0px;
+      height: 14px;
+      left: calc(50% / 2);
+      overflow: hidden;
+      position: absolute;
+      transform: rotate(45deg) translateY(0px) translatex(10px);
+      width: 14px;
+
+      @include color.themed() {
+        background: color.t('primary-lighter');
+        box-shadow: color.t('shadow');
+        border-color: color.t('primary-lighter');
+      }
+    }
+  }
+
+  &__picker {
+    &:checked {
+      ~ .optionswitch {
+        &__list {
+          display: block;
+        }
+
+        &__triangle {
+          @include conf.desktop {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
