@@ -1,0 +1,123 @@
+TPF-JAM-TOOL is a low-latency online jamming tool designed to connect up to sixteen musicians in different locations to play together in near real-time (Mac only). A key feature of the tool is its ability to transmit communication and musical signals via binaural 3D audio over headphones, creating a more natural and immersive listening experience.
+
+The tool was developed as part of the project Spatial Dis/continuities in Telematic Performances at the Institute for Computer Music and Sound Technology (ICST) at the Zurich University of the Arts. It reflects the research group's artistic and technical explorations in the field of telematic performance and remote musical collaboration.
+
+One of the main motivations behind TPF-JAM-TOOL comes from the experience of the beneficial aspects of using binaural auralisation in listening contexts. Compared to stereo panning, binaural auralisation allows for a more precise placement of sound sources within the acoustic panorama, allowing for a clearer separation in the perception of remote players and thus a more embodied form of communication. It also counteracts 'zoom fatigue' - the acoustic exhaustion that often results from prolonged online communication and collaboration. Some of our basic ideas can be found in the research paper Telemerisve Audio Systems for Online Jamming presented at the International Symposium on the Internet of Sounds 2024.
+
+The tool builds on previous developments by the Telematic Performance Format (TPF) research group, including tpf-client, tpf-server and tpf-installers, and incorporates the ICST's extensive expertise in Ambisonics and spatial audio technologies.
+
+TPF-JAM-TOOL uses the digital audio workstation (DAW) Reaper because of its widespread use, especially in the field of 3D audio production. Reaper's powerful Lua scripting capabilities allow most of Reaper's parameters to be controlled via scripts, thus enabling a seamless integration of the various software components involved in TPF-JAM-TOOL.
+
+Although the installation of the tool requires some initial setup, the investment is well worth it: once installed, TPF-JAM-TOOL is extremely versatile and easy to use. Using Reaper as a virtual console, musicians can quickly set up, mix and record telematic jam sessions in a richly spatialised sound environment.
+
+And now, let's jam...
+
+
+What can TPF-JAM-TOOL do?
+
+    Low-latency bidirectional telematic jamming over Lan
+    Two Iinputs mic/inst sending to max. 16 destinations/locations
+    Receiving from max. 16 locations
+    Placement in 3D audio (binaural)
+    Streaming a binaural mix (2ch) over OBS
+    Head tracking (headphones)
+    Recording
+    Playback of audio from the DAW
+    Rec/play from external sources (e.g. Ableton)
+    Play video from the DAW
+    The tools are freely available
+
+NOTE:
+
+TPF-JAM-TOOL is for testing and is still under development! Please read the instructions for installation!
+
+Prerequisites
+
+Make sure to have all these applications pre-installed:
+
+    TPF-JAM-TOOL
+    TPF-Client_v2.0+ (latest)
+    ICST Ambisonics Plugins (latest)
+    NOTE: The LV2 version of these Plugins is experimental and not yet ready!!
+
+    IEM-Plugin-Suite
+    FaceMotionTracker
+    Reaper.app
+    BlackHole is a modern macOS virtual audio loopback driver that allows applications to pass audio to other applications with zero additional latency. Donate $10.
+
+NOTE:
+
+After downloading, open the dmg file and drag the Reaper.app into the folder '/Applications/TPF-JAM-TOOL'. 
+Then, open the Reaper.app with ctrl-click or right-click.
+
+#### Quick Start
+
+You have completed all pre-installations and are up to date.
+
+--> Restart Ccomputer!
+
+    First, set up your Audio Interface and Hardware components, e.g.
+        Mic (CH1)
+        Instrument (Kkeyboard) (CH2)
+    Make sure that your hardware works correctly with your Mac/PC
+    Create an Aggregate (Mac) and name it as shown in the following picture. The correct order of components is crucial. (for Windows take Virtual cable (Donate $)
+    Create an Aggregate (Mac) and name it as shown in the following picture. The correct order of components is crucial.
+    You get all the needed information, like the server address, room, and link to Livelab, by mail invitation from the Bbandleader.
+    Open Reaper, then choose "Setting" -> "Device" and select your 'Aggregate TPF-JAM-TOOL'.
+    The left toolbar of the Reaper template contains all the necessary functions for a telematic connection.
+    Press the button 'tpf-client on'.
+    In 'tpf-client,' go to Settings and add your and the .
+    Before connecting to the server, check your inputs in Reaper and unmute your local inputs 1 and 2 (the channels in tpf-client are flickering green).
+    To connect to the server, click the top left square in the tpf-client. If connected, it will turn blue.
+    One by one, all fellow musicians/locations will appear. You can connect by clicking the square on the left. You should now hear all of them all.
+    Click 'LiveLab' in the left toolbar of Reaper, and your main browser will open. Type in the LiveLab URL you received from the bandleader. In the settings of LiveLab, choose 'no audio'.'
+    then click 'start'. You should now be connected by video. (Set Google-Chrome.app as your main Bbrowser.)
+
+Your audio should be connected to the TPF clienttpf-client and all other musicians/locations. You are connected to video via LiveLab in the Chrome browser. So, happy jamming...
+Closing the session
+
+    Click 'tpf-client off'. I just wanted to remind you to try to disconnect all connections before.
+    Press FPHD and LiveLab off.
+    Close your Reaper session.
+
+For more detailed information, visit the Wiki https://github.com/joambi/tpf-jam-tool/wiki -->, which is still in progress!
+Links and Referencing
+
+    REAPER (DAW)
+        SWS/S&M
+        ReaPack
+    IEM Plugin Suite https://plugins.iem.at/
+    ICST Ambisonics Plugins https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
+    TPF-Client 2.0+ https://github.com/zhdk/tpf-client
+
+    REAPER (DAW)
+        SWS/S&M
+        ReaPack
+    IEM Plugin Suite
+    ICST Ambisonics Plugins
+    TPF-Client 2.0+
+
+Optional
+Head Tracker Tools:
+
+    NX Head Tracker Waves https://www.waves.com/hardware/nx-head-tracker
+    USB Head Tracker https://supperware.co.uk/headtracker-overview
+    nvsonic https://github.com/trsonic/nvsonic-head-tracker
+    RC HeadTracker https://github.com/dlktdr/HeadTracker
+    OpenTrack (win/linux)
+    SAKHeadTracker https://spatialaudiokit.github.io/headtracker/
+
+    NX Head Tracker Waves
+    USB Head Tracker
+    nvsonic
+    RC HeadTracker
+    OpenTrack (win/linux)
+    SAKHeadTracker
+
+NOTE to REAPER:
+
+Reaper is not free, but you can evaluate it for 60 days with full functionality and no strings attached. All license purchases are final. If you own multiple computers, you may install the same license key on them if you only use REAPER on one computer at a time.: Purchasing Reaper. We have to thank all these wonderful resources:
+
+    SWS/S&M EXTENSION
+    ReaPack Please donate them when you are happy with all these tools!
+
