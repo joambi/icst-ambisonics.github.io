@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on The ICST Ambisonics Site</title>
-    <link>https://ambisonics.ch/series/</link>
+    <link>http://localhost:1313/series/</link>
     <description>Recent content in Series on The ICST Ambisonics Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ambisonics.ch/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

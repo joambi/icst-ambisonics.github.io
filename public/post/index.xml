@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The ICST Ambisonics Site</title>
-    <link>https://ambisonics.ch/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content on The ICST Ambisonics Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Mar 2025 13:00:00 +0000</lastBuildDate><atom:link href="https://ambisonics.ch/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Mar 2025 13:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ICST MultiEncoder and GP-manipulation</title>
-      <link>https://ambisonics.ch/post/gp-manipulation/</link>
+      <link>http://localhost:1313/post/gp-manipulation/</link>
       <pubDate>Mon, 24 Mar 2025 13:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/post/gp-manipulation/</guid>
+      <guid>http://localhost:1313/post/gp-manipulation/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -85,10 +85,10 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</link>
+      <link>http://localhost:1313/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</link>
       <pubDate>Sun, 16 Mar 2025 09:44:58 +0100</pubDate>
       
-      <guid>https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</guid>
+      <guid>http://localhost:1313/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -144,10 +144,10 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/post/osc-max-group-manipulation-in-ambiencoder/</link>
+      <link>http://localhost:1313/post/osc-max-group-manipulation-in-ambiencoder/</link>
       <pubDate>Sun, 16 Mar 2025 09:44:58 +0100</pubDate>
       
-      <guid>https://ambisonics.ch/post/osc-max-group-manipulation-in-ambiencoder/</guid>
+      <guid>http://localhost:1313/post/osc-max-group-manipulation-in-ambiencoder/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -199,10 +199,10 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/</link>
+      <link>http://localhost:1313/post/osc-syntax-for-the-icst-ambiencoder-plugin/</link>
       <pubDate>Sun, 16 Mar 2025 09:44:58 +0100</pubDate>
       
-      <guid>https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/</guid>
+      <guid>http://localhost:1313/post/osc-syntax-for-the-icst-ambiencoder-plugin/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -312,10 +312,10 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
     
     <item>
       <title>AbletonLive to ICST Ambisonics MultiEncoder in Reaper</title>
-      <link>https://ambisonics.ch/post/ableton_reaper/</link>
+      <link>http://localhost:1313/post/ableton_reaper/</link>
       <pubDate>Sun, 16 Mar 2025 09:44:58 +0100</pubDate>
       
-      <guid>https://ambisonics.ch/post/ableton_reaper/</guid>
+      <guid>http://localhost:1313/post/ableton_reaper/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -411,10 +411,10 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)&lt;/p&
     
     <item>
       <title>ICST AmbiEncoder OSC to FX</title>
-      <link>https://ambisonics.ch/post/osc-2-fx/</link>
+      <link>http://localhost:1313/post/osc-2-fx/</link>
       <pubDate>Sun, 16 Mar 2025 09:44:58 +0100</pubDate>
       
-      <guid>https://ambisonics.ch/post/osc-2-fx/</guid>
+      <guid>http://localhost:1313/post/osc-2-fx/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -454,10 +454,10 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)&lt;/p&
     
     <item>
       <title>ICST Ambisonics Plugins and Grapes</title>
-      <link>https://ambisonics.ch/post/icst-grapes/</link>
+      <link>http://localhost:1313/post/icst-grapes/</link>
       <pubDate>Sun, 16 Mar 2025 09:44:58 +0100</pubDate>
       
-      <guid>https://ambisonics.ch/post/icst-grapes/</guid>
+      <guid>http://localhost:1313/post/icst-grapes/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -475,10 +475,10 @@ Grapes come as a standalone and VST3 and can be operated directly in the DAW (Re
     
     <item>
       <title>info</title>
-      <link>https://ambisonics.ch/post/info/</link>
+      <link>http://localhost:1313/post/info/</link>
       <pubDate>Sun, 16 Mar 2025 09:44:58 +0100</pubDate>
       
-      <guid>https://ambisonics.ch/post/info/</guid>
+      <guid>http://localhost:1313/post/info/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -492,10 +492,10 @@ Grapes come as a standalone and VST3 and can be operated directly in the DAW (Re
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/post/gyrosc/</link>
+      <link>http://localhost:1313/post/gyrosc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/post/gyrosc/</guid>
+      <guid>http://localhost:1313/post/gyrosc/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -566,10 +566,10 @@ Grapes come as a standalone and VST3 and can be operated directly in the DAW (Re
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/post/zylia/</link>
+      <link>http://localhost:1313/post/zylia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/post/zylia/</guid>
+      <guid>http://localhost:1313/post/zylia/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;

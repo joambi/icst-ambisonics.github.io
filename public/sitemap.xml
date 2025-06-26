@@ -2,153 +2,153 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ambisonics.ch/icst-ambisonics-plugins/01_overview/</loc>
+    <loc>http://localhost:1313/icst-ambisonics-plugins/01_overview/</loc>
     <lastmod>2025-02-02T04:14:54-08:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/icst-ambisonics-plugins/02_installation/</loc>
+    <loc>http://localhost:1313/icst-ambisonics-plugins/02_installation/</loc>
     <lastmod>2025-02-02T04:14:54-08:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/icst-ambisonics-tools/</loc>
+    <loc>http://localhost:1313/icst-ambisonics-tools/</loc>
     <lastmod>2025-02-02T04:14:54-08:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/home/</loc>
+    <loc>http://localhost:1313/home/</loc>
     <lastmod>2025-02-02T04:14:54-08:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/icst-ambisonics-plugins/</loc>
+    <loc>http://localhost:1313/icst-ambisonics-plugins/</loc>
     <lastmod>2025-02-02T04:14:54-08:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/links/</loc>
+    <loc>http://localhost:1313/links/</loc>
     <lastmod>2024-02-02T04:14:54-08:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2025-03-24T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/post/gp-manipulation/</loc>
+    <loc>http://localhost:1313/post/gp-manipulation/</loc>
     <lastmod>2025-03-24T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-03-24T13:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</loc>
+    <loc>http://localhost:1313/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</loc>
     <lastmod>2025-03-16T09:44:58+01:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/post/osc-max-group-manipulation-in-ambiencoder/</loc>
+    <loc>http://localhost:1313/post/osc-max-group-manipulation-in-ambiencoder/</loc>
     <lastmod>2025-03-16T09:44:58+01:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/</loc>
+    <loc>http://localhost:1313/post/osc-syntax-for-the-icst-ambiencoder-plugin/</loc>
     <lastmod>2025-03-16T09:44:58+01:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/post/ableton_reaper/</loc>
+    <loc>http://localhost:1313/post/ableton_reaper/</loc>
     <lastmod>2025-03-16T09:44:58+01:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/post/osc-2-fx/</loc>
+    <loc>http://localhost:1313/post/osc-2-fx/</loc>
     <lastmod>2025-03-16T09:44:58+01:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/post/icst-grapes/</loc>
+    <loc>http://localhost:1313/post/icst-grapes/</loc>
     <lastmod>2025-03-16T09:44:58+01:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/post/info/</loc>
+    <loc>http://localhost:1313/post/info/</loc>
     <lastmod>2025-03-16T09:44:58+01:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-03-12T11:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/blog/notes/</loc>
+    <loc>http://localhost:1313/blog/notes/</loc>
     <lastmod>2025-03-12T11:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ambisonics.ch/blog/01-ascolta/</loc>
+    <loc>http://localhost:1313/blog/01-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/02-ascolta/</loc>
+    <loc>http://localhost:1313/blog/02-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/03-ascolta/</loc>
+    <loc>http://localhost:1313/blog/03-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/04-ascolta/</loc>
+    <loc>http://localhost:1313/blog/04-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/05-ascolta/</loc>
+    <loc>http://localhost:1313/blog/05-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/06-ascolta/</loc>
+    <loc>http://localhost:1313/blog/06-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/07-ascolta/</loc>
+    <loc>http://localhost:1313/blog/07-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/08-ascolta/</loc>
+    <loc>http://localhost:1313/blog/08-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/09-ascolta/</loc>
+    <loc>http://localhost:1313/blog/09-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/10-ascolta/</loc>
+    <loc>http://localhost:1313/blog/10-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/11-ascolta/</loc>
+    <loc>http://localhost:1313/blog/11-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/12-ascolta/</loc>
+    <loc>http://localhost:1313/blog/12-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/13-ascolta/</loc>
+    <loc>http://localhost:1313/blog/13-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/14-ascolta/</loc>
+    <loc>http://localhost:1313/blog/14-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/artist-residencies-at-the-icst-composition-studio/</loc>
+    <loc>http://localhost:1313/blog/artist-residencies-at-the-icst-composition-studio/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/hoast-library/</loc>
+    <loc>http://localhost:1313/blog/hoast-library/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-kompositionsstudio-regie/</loc>
+    <loc>http://localhost:1313/blog/icst-kompositionsstudio-regie/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/sounding_future/</loc>
+    <loc>http://localhost:1313/blog/sounding_future/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/terms-of-use/</loc>
+    <loc>http://localhost:1313/blog/terms-of-use/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/what_we_now/</loc>
+    <loc>http://localhost:1313/blog/what_we_now/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/icst-ambisonics-plugins/04_quick_start/</loc>
+    <loc>http://localhost:1313/icst-ambisonics-plugins/04_quick_start/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/icst-ambisonics-plugins/05_open_track_templates/</loc>
+    <loc>http://localhost:1313/icst-ambisonics-plugins/05_open_track_templates/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/</loc>
+    <loc>http://localhost:1313/icst-ambisonics-plugins/06_step_by_step_setup/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/icst-ambisonics-plugins/07_shortcuts/</loc>
+    <loc>http://localhost:1313/icst-ambisonics-plugins/07_shortcuts/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/post/gyrosc/</loc>
+    <loc>http://localhost:1313/post/gyrosc/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/post/zylia/</loc>
+    <loc>http://localhost:1313/post/zylia/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/15-ascolta/</loc>
+    <loc>http://localhost:1313/blog/15-ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/icst-ambisonics-plugins/03_how_it_works/</loc>
+    <loc>http://localhost:1313/icst-ambisonics-plugins/03_how_it_works/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/downloads/</loc>
+    <loc>http://localhost:1313/blog/downloads/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/ascolta/</loc>
+    <loc>http://localhost:1313/blog/ascolta/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-bformat-archive/</loc>
+    <loc>http://localhost:1313/blog/icst-bformat-archive/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/</loc>
+    <loc>http://localhost:1313/blog/icst-kompositionsstudio-ambisonics-setting/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-kompositionsstudio-equipment/</loc>
+    <loc>http://localhost:1313/blog/icst-kompositionsstudio-equipment/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-kompositionsstudio-overview/</loc>
+    <loc>http://localhost:1313/blog/icst-kompositionsstudio-overview/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/</loc>
+    <loc>http://localhost:1313/blog/icst-kompositionsstudio-pre-installation/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-kompositionsstudio-software/</loc>
+    <loc>http://localhost:1313/blog/icst-kompositionsstudio-software/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-kompositionsstudio-support/</loc>
+    <loc>http://localhost:1313/blog/icst-kompositionsstudio-support/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-labor/</loc>
+    <loc>http://localhost:1313/blog/icst-labor/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings/</loc>
+    <loc>http://localhost:1313/blog/icst-kompositionsstudio-speaker-settings/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/icst-ambisonics-photos/</loc>
+    <loc>http://localhost:1313/blog/icst-ambisonics-photos/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/month/</loc>
+    <loc>http://localhost:1313/month/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/blog/new/</loc>
+    <loc>http://localhost:1313/blog/new/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/privacy-policy/</loc>
+    <loc>http://localhost:1313/privacy-policy/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>https://ambisonics.ch/year/</loc>
+    <loc>http://localhost:1313/year/</loc>
   </url>
 </urlset>

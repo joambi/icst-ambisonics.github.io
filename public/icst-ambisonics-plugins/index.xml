@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ICST Ambisonics Plugins on The ICST Ambisonics Site</title>
-    <link>https://ambisonics.ch/icst-ambisonics-plugins/</link>
+    <link>http://localhost:1313/icst-ambisonics-plugins/</link>
     <description>Recent content in ICST Ambisonics Plugins on The ICST Ambisonics Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Feb 2025 04:14:54 -0800</lastBuildDate><atom:link href="https://ambisonics.ch/icst-ambisonics-plugins/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Feb 2025 04:14:54 -0800</lastBuildDate><atom:link href="http://localhost:1313/icst-ambisonics-plugins/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://ambisonics.ch/icst-ambisonics-plugins/01_overview/</link>
+      <link>http://localhost:1313/icst-ambisonics-plugins/01_overview/</link>
       <pubDate>Sun, 02 Feb 2025 04:14:54 -0800</pubDate>
       
-      <guid>https://ambisonics.ch/icst-ambisonics-plugins/01_overview/</guid>
+      <guid>http://localhost:1313/icst-ambisonics-plugins/01_overview/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -50,10 +50,10 @@
     
     <item>
       <title>02_Install_the_AmbiPlugins</title>
-      <link>https://ambisonics.ch/icst-ambisonics-plugins/02_installation/</link>
+      <link>http://localhost:1313/icst-ambisonics-plugins/02_installation/</link>
       <pubDate>Sun, 02 Feb 2025 04:14:54 -0800</pubDate>
       
-      <guid>https://ambisonics.ch/icst-ambisonics-plugins/02_installation/</guid>
+      <guid>http://localhost:1313/icst-ambisonics-plugins/02_installation/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -139,10 +139,10 @@
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/icst-ambisonics-plugins/04_quick_start/</link>
+      <link>http://localhost:1313/icst-ambisonics-plugins/04_quick_start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/icst-ambisonics-plugins/04_quick_start/</guid>
+      <guid>http://localhost:1313/icst-ambisonics-plugins/04_quick_start/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -162,10 +162,10 @@
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/icst-ambisonics-plugins/05_open_track_templates/</link>
+      <link>http://localhost:1313/icst-ambisonics-plugins/05_open_track_templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/icst-ambisonics-plugins/05_open_track_templates/</guid>
+      <guid>http://localhost:1313/icst-ambisonics-plugins/05_open_track_templates/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -186,10 +186,10 @@
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/</link>
+      <link>http://localhost:1313/icst-ambisonics-plugins/06_step_by_step_setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/</guid>
+      <guid>http://localhost:1313/icst-ambisonics-plugins/06_step_by_step_setup/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -458,10 +458,10 @@ After the rendering process, you will get a Rendering Info window with the Peak 
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/icst-ambisonics-plugins/07_shortcuts/</link>
+      <link>http://localhost:1313/icst-ambisonics-plugins/07_shortcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/icst-ambisonics-plugins/07_shortcuts/</guid>
+      <guid>http://localhost:1313/icst-ambisonics-plugins/07_shortcuts/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -494,10 +494,10 @@ After the rendering process, you will get a Rendering Info window with the Peak 
     
     <item>
       <title>03_how_it_works</title>
-      <link>https://ambisonics.ch/icst-ambisonics-plugins/03_how_it_works/</link>
+      <link>http://localhost:1313/icst-ambisonics-plugins/03_how_it_works/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/icst-ambisonics-plugins/03_how_it_works/</guid>
+      <guid>http://localhost:1313/icst-ambisonics-plugins/03_how_it_works/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;

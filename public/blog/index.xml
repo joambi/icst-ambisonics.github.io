@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The ICST Ambisonics Site</title>
-    <link>https://ambisonics.ch/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content on The ICST Ambisonics Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Mar 2025 11:00:00 +0000</lastBuildDate><atom:link href="https://ambisonics.ch/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Mar 2025 11:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NOTES</title>
-      <link>https://ambisonics.ch/blog/notes/</link>
+      <link>http://localhost:1313/blog/notes/</link>
       <pubDate>Wed, 12 Mar 2025 11:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/notes/</guid>
+      <guid>http://localhost:1313/blog/notes/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/01-ascolta/</link>
+      <link>http://localhost:1313/blog/01-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/01-ascolta/</guid>
+      <guid>http://localhost:1313/blog/01-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -62,10 +62,10 @@
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/02-ascolta/</link>
+      <link>http://localhost:1313/blog/02-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/02-ascolta/</guid>
+      <guid>http://localhost:1313/blog/02-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -150,10 +150,10 @@ and rather than watching, now listen.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/03-ascolta/</link>
+      <link>http://localhost:1313/blog/03-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/03-ascolta/</guid>
+      <guid>http://localhost:1313/blog/03-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -196,10 +196,10 @@ Wir hören: part 1: immersion 09:58 min&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/04-ascolta/</link>
+      <link>http://localhost:1313/blog/04-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/04-ascolta/</guid>
+      <guid>http://localhost:1313/blog/04-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -259,10 +259,10 @@ I wish you peace and tranquility over the holidays and all the best for the new 
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/05-ascolta/</link>
+      <link>http://localhost:1313/blog/05-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/05-ascolta/</guid>
+      <guid>http://localhost:1313/blog/05-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -304,10 +304,10 @@ I wish you peace and tranquility over the holidays and all the best for the new 
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/06-ascolta/</link>
+      <link>http://localhost:1313/blog/06-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/06-ascolta/</guid>
+      <guid>http://localhost:1313/blog/06-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -345,10 +345,10 @@ In 2008 Zbigniew Karkowski was a guest at ICST and realized the piece &amp;lsquo
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/07-ascolta/</link>
+      <link>http://localhost:1313/blog/07-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/07-ascolta/</guid>
+      <guid>http://localhost:1313/blog/07-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -407,10 +407,10 @@ Artist in Residency  3.7. – 14.7.2017 | 12.1. – 22.1.2018&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/08-ascolta/</link>
+      <link>http://localhost:1313/blog/08-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/08-ascolta/</guid>
+      <guid>http://localhost:1313/blog/08-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -465,10 +465,10 @@ a la Naturaleza, a la Madre Tierra, a la Pachamama.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/09-ascolta/</link>
+      <link>http://localhost:1313/blog/09-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/09-ascolta/</guid>
+      <guid>http://localhost:1313/blog/09-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -507,10 +507,10 @@ Hans Tutschku is a composer of instrumental and electroacoustic music. In 1982 h
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/10-ascolta/</link>
+      <link>http://localhost:1313/blog/10-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/10-ascolta/</guid>
+      <guid>http://localhost:1313/blog/10-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -555,10 +555,10 @@ Link:&lt;a href=&#34;https://en.wikipedia.org/wiki/Judy_Klein&#34;&gt;https://en
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/11-ascolta/</link>
+      <link>http://localhost:1313/blog/11-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/11-ascolta/</guid>
+      <guid>http://localhost:1313/blog/11-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -628,10 +628,10 @@ This composition is a proposal with a high density of sound materials and few br
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/12-ascolta/</link>
+      <link>http://localhost:1313/blog/12-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/12-ascolta/</guid>
+      <guid>http://localhost:1313/blog/12-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -731,10 +731,10 @@ Quelle: EMDocu (erstellt: 25.08.1993 Source: Ruschkowski-Kartei 1989)&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/13-ascolta/</link>
+      <link>http://localhost:1313/blog/13-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/13-ascolta/</guid>
+      <guid>http://localhost:1313/blog/13-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -761,10 +761,10 @@ Quelle: EMDocu (erstellt: 25.08.1993 Source: Ruschkowski-Kartei 1989)&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/14-ascolta/</link>
+      <link>http://localhost:1313/blog/14-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/14-ascolta/</guid>
+      <guid>http://localhost:1313/blog/14-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -797,10 +797,10 @@ Quelle: EMDocu (erstellt: 25.08.1993 Source: Ruschkowski-Kartei 1989)&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/artist-residencies-at-the-icst-composition-studio/</link>
+      <link>http://localhost:1313/blog/artist-residencies-at-the-icst-composition-studio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/artist-residencies-at-the-icst-composition-studio/</guid>
+      <guid>http://localhost:1313/blog/artist-residencies-at-the-icst-composition-studio/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -812,10 +812,10 @@ Quelle: EMDocu (erstellt: 25.08.1993 Source: Ruschkowski-Kartei 1989)&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/hoast-library/</link>
+      <link>http://localhost:1313/blog/hoast-library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/hoast-library/</guid>
+      <guid>http://localhost:1313/blog/hoast-library/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -829,10 +829,10 @@ Quelle: EMDocu (erstellt: 25.08.1993 Source: Ruschkowski-Kartei 1989)&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/icst-kompositionsstudio-regie/</link>
+      <link>http://localhost:1313/blog/icst-kompositionsstudio-regie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-regie/</guid>
+      <guid>http://localhost:1313/blog/icst-kompositionsstudio-regie/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -927,10 +927,10 @@ Image: DisplayLink Connectors&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/sounding_future/</link>
+      <link>http://localhost:1313/blog/sounding_future/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/sounding_future/</guid>
+      <guid>http://localhost:1313/blog/sounding_future/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -944,10 +944,10 @@ Image: DisplayLink Connectors&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/terms-of-use/</link>
+      <link>http://localhost:1313/blog/terms-of-use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/terms-of-use/</guid>
+      <guid>http://localhost:1313/blog/terms-of-use/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -985,10 +985,10 @@ Image: DisplayLink Connectors&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://ambisonics.ch/blog/what_we_now/</link>
+      <link>http://localhost:1313/blog/what_we_now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/what_we_now/</guid>
+      <guid>http://localhost:1313/blog/what_we_now/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1002,10 +1002,10 @@ Image: DisplayLink Connectors&lt;/p&gt;
     
     <item>
       <title>#15 ascolta Akusmatische Hörstunde</title>
-      <link>https://ambisonics.ch/blog/15-ascolta/</link>
+      <link>http://localhost:1313/blog/15-ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/15-ascolta/</guid>
+      <guid>http://localhost:1313/blog/15-ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1030,10 +1030,10 @@ Image: DisplayLink Connectors&lt;/p&gt;
     
     <item>
       <title>Downloads</title>
-      <link>https://ambisonics.ch/blog/downloads/</link>
+      <link>http://localhost:1313/blog/downloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/downloads/</guid>
+      <guid>http://localhost:1313/blog/downloads/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1053,10 +1053,10 @@ Image: DisplayLink Connectors&lt;/p&gt;
     
     <item>
       <title>ICST Ascolta Hörstunden</title>
-      <link>https://ambisonics.ch/blog/ascolta/</link>
+      <link>http://localhost:1313/blog/ascolta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/ascolta/</guid>
+      <guid>http://localhost:1313/blog/ascolta/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1288,10 +1288,10 @@ Image: DisplayLink Connectors&lt;/p&gt;
     
     <item>
       <title>ICST Bformat Archive</title>
-      <link>https://ambisonics.ch/blog/icst-bformat-archive/</link>
+      <link>http://localhost:1313/blog/icst-bformat-archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-bformat-archive/</guid>
+      <guid>http://localhost:1313/blog/icst-bformat-archive/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1356,10 +1356,10 @@ Image: DisplayLink Connectors&lt;/p&gt;
     
     <item>
       <title>ICST Kompositionsstudio Ambisonics Setting</title>
-      <link>https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/</link>
+      <link>http://localhost:1313/blog/icst-kompositionsstudio-ambisonics-setting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/</guid>
+      <guid>http://localhost:1313/blog/icst-kompositionsstudio-ambisonics-setting/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1393,10 +1393,10 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
     
     <item>
       <title>ICST Kompositionsstudio Equipment</title>
-      <link>https://ambisonics.ch/blog/icst-kompositionsstudio-equipment/</link>
+      <link>http://localhost:1313/blog/icst-kompositionsstudio-equipment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-equipment/</guid>
+      <guid>http://localhost:1313/blog/icst-kompositionsstudio-equipment/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1430,10 +1430,10 @@ DisplayLink Adapter&lt;/p&gt;
     
     <item>
       <title>ICST Kompositionsstudio Overview</title>
-      <link>https://ambisonics.ch/blog/icst-kompositionsstudio-overview/</link>
+      <link>http://localhost:1313/blog/icst-kompositionsstudio-overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-overview/</guid>
+      <guid>http://localhost:1313/blog/icst-kompositionsstudio-overview/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1466,10 +1466,10 @@ A Mac Pro is offering various software such as sequencers, HD-recording- and Sou
     
     <item>
       <title>ICST Kompositionsstudio Pre-Installation</title>
-      <link>https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/</link>
+      <link>http://localhost:1313/blog/icst-kompositionsstudio-pre-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/</guid>
+      <guid>http://localhost:1313/blog/icst-kompositionsstudio-pre-installation/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1534,10 +1534,10 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
     
     <item>
       <title>ICST Kompositionsstudio Software</title>
-      <link>https://ambisonics.ch/blog/icst-kompositionsstudio-software/</link>
+      <link>http://localhost:1313/blog/icst-kompositionsstudio-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-software/</guid>
+      <guid>http://localhost:1313/blog/icst-kompositionsstudio-software/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1698,10 +1698,10 @@ We recommend you do so as well, especially if you want to work with ambisonics o
     
     <item>
       <title>ICST Kompositionsstudio Support</title>
-      <link>https://ambisonics.ch/blog/icst-kompositionsstudio-support/</link>
+      <link>http://localhost:1313/blog/icst-kompositionsstudio-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-support/</guid>
+      <guid>http://localhost:1313/blog/icst-kompositionsstudio-support/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1752,10 +1752,10 @@ Download for your system: &lt;a href=&#34;https://www.synaptics.com/products/dis
     
     <item>
       <title>ICST Labor Ambisonics Setting</title>
-      <link>https://ambisonics.ch/blog/icst-labor/</link>
+      <link>http://localhost:1313/blog/icst-labor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-labor/</guid>
+      <guid>http://localhost:1313/blog/icst-labor/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1770,10 +1770,10 @@ Setup of Speakers in the ICST Labor.&lt;/h2&gt;
     
     <item>
       <title>ICST Labor Ambisonics Speaker Settings</title>
-      <link>https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings/</link>
+      <link>http://localhost:1313/blog/icst-kompositionsstudio-speaker-settings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings/</guid>
+      <guid>http://localhost:1313/blog/icst-kompositionsstudio-speaker-settings/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1817,10 +1817,10 @@ All speakers allow the creation of your own speaker routings.&lt;/p&gt;
     
     <item>
       <title>icst-kompositionsstudio-photo-galery</title>
-      <link>https://ambisonics.ch/blog/icst-ambisonics-photos/</link>
+      <link>http://localhost:1313/blog/icst-ambisonics-photos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/icst-ambisonics-photos/</guid>
+      <guid>http://localhost:1313/blog/icst-ambisonics-photos/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
@@ -1838,10 +1838,10 @@ All speakers allow the creation of your own speaker routings.&lt;/p&gt;
     
     <item>
       <title>New</title>
-      <link>https://ambisonics.ch/blog/new/</link>
+      <link>http://localhost:1313/blog/new/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ambisonics.ch/blog/new/</guid>
+      <guid>http://localhost:1313/blog/new/</guid>
       
         <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
 &lt;hr&gt;
