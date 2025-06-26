@@ -1,0 +1,48 @@
+@use 'sass:color' as color;
+@use 'modules/color_theme' as colorTheme;
+@use 'modules/variables' as var;
+
+.notice {
+  display: flex;
+  flex-direction: column;
+
+  @include colorTheme.themed() {
+    background-color: color.mix(colorTheme.t('info'), colorTheme.t('accent'), 40%);
+  }
+
+  &--update {
+    @include colorTheme.themed() {
+      background-color: color.mix(colorTheme.t('success'), colorTheme.t('accent'), 40%);
+    }
+  }
+
+  &--warning {
+    @include colorTheme.themed() {
+      background-color: color.mix(colorTheme.t('danger'), colorTheme.t('accent'), 40%);
+    }
+  }
+
+  &__title {
+    background-color: colorTheme.t('info');
+    align-self: flex-end;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+
+    @include colorTheme.themed() {
+      color: colorTheme.t('accent');
+    }
+
+    &--update {
+      background-color: colorTheme.t('success');
+    }
+
+    &--warning {
+      background-color: colorTheme.t('danger');
+    }
+  }
+
+  &__content {
+    padding: 8px 8px 1rem 1rem;
+  }
+}

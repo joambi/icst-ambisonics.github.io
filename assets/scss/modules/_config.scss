@@ -1,0 +1,31 @@
+@use 'hugo:vars' as hugo;
+
+@mixin desktop {
+  @media screen and (min-width: 961px) {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media screen and (min-width: 1921px) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin ltr {
+  @if hugo.$text-direction == ltr {
+    @content;
+  }
+}
+
+@mixin rtl {
+  @if hugo.$text-direction == rtl {
+    @content;
+  }
+}

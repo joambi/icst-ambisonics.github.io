@@ -1,0 +1,55 @@
+@use 'modules/variables' as var;
+@use 'sass:map';
+
+$themes: (
+  light: (
+    accent: var.$accent--lightmode,
+    primary: var.$primary--lightmode,
+    primary-light: var.$primary-light--lightmode,
+    primary-lighter: var.$primary-lighter--lightmode,
+    info: var.$info,
+    shadow: var.$shadow--lightmode,
+    border: 1px solid var.$primary-lighter--lightmode,
+    alert: var.$warning,
+    success: var.$success,
+    warning: var.$warning,
+    danger: var.$danger,
+  ),
+  dark: (
+    accent: var.$accent--darkmode,
+    primary: var.$primary--darkmode,
+    primary-light: var.$primary-light--darkmode,
+    primary-lighter: var.$primary-lighter--darkmode,
+    info: var.$info,
+    shadow: var.$shadow--darkmode,
+    border: 1px solid var.$primary-lighter--darkmode,
+    alert: var.$warning,
+    success: var.$success,
+    warning: var.$warning,
+    danger: var.$danger,
+  ),
+);
+
+$theme-map: ();
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      @each $key, $submap in $map {
+        $value: map.get(map.get($themes, $theme), '#{$key}');
+        $theme-map: map.merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: ();
+    }
+  }
+}
+
+@function t($key) {
+  @return map.get($theme-map, $key);
+}

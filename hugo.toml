@@ -1,0 +1,82 @@
+baseURL = 'https://ambisonics.ch/'
+languageCode = 'en-us'
+title = 'The ICST Ambisonics Site'
+theme = 'anatole'
+enableEmoji = true
+
+[params]
+title = "The ICST Ambisonics"
+author = "Johannes Schuett"
+singleDateFormat = "2006-01-02"
+description = " This is the ICST Ambisonics Tutorial Blog"
+profilePicture = "images/AmbiPlugin_logo.gif"
+mainSections = ["blog"]
+favicon = "favicons/"
+rssFullContent = true
+contentratio = 0.6 
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/joambi"
+
+## Menu items
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/HOME/"
+
+  [[menu.main]]
+  name = "Blog"
+  weight = 500
+  identifier = "blog"
+  url = "/blog/"
+
+  [[menu.main]]
+  name = "ICST Ambisonics Plugins"
+  weight = 200
+  identifier = "ICST Ambisonics Plugins"
+  url = "/ICST Ambisonics Plugins/"
+
+  [[menu.main]]
+  name = "ICST Ambisonics Tools"
+  weight = 300
+  identifier = "ICST Ambisonics Tools"
+  url = "/ICST Ambisonics Tools/"
+  
+  [[menu.main]]
+  name = "Post"
+  weight = 400
+  identifier = "post"
+  url = "/post/"
+  
+  [[menu.main]]
+  name = "Links"
+  weight = 600
+  identifier = "Links"
+  url = "/Links/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 700
+  url = "/about/"
+
+  [[menu.footer]]
+  name = "Privacy Policy"
+  weight = 1
+  identifier = "Privacy Policy"
+  url = "/Privacy Policy/"
+
+[taxonomies]
+series = "series"
+tag = "tags"
+year = "year"
+month = "month"
+
+
+
