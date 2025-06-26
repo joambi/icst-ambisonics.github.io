@@ -1,12 +1,12 @@
 ---
-title: Nandele Maguni
+title:
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
 # Nandele Maguni 
 ICST Artist in Residence from **16.06.2025 to 06.07.2025** (Studio-Residence)
-![[Unknown.jpeg]]
+![Nandele Maguni](Unknown.jpeg)
 ### Exploring Sound at ZHdK – ICST
 
 Being in residency at ZHdK – Zurich University of the Arts, within the ICST, has been an inspiring experience.
@@ -15,4 +15,4 @@ At the ICST spatial audio studio, I’m experimenting with immersive technologie
 This is not just about sound — it’s about movement, memory, and space.  
 Nandele Maguni
 
-![[IMG_0071.jpg]]
+![Nandele](IMG_0071.jpg)
