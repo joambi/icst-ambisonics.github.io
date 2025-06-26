@@ -1,7 +1,12 @@
 ---
-date:
-title: ICST Kompositionsstudio Residences
+aliases:
+  - posts
+  - articles
+  - blog
+  - showcase
+  - docs
 ---
+
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
