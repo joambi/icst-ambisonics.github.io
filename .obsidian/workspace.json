@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST Kompositionsstudio Residences/index.md",
+                "file": "content/Blog/ICST Kompositionsstudio Residences/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           },
           {
@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST Kompositionsstudio Residences/index.md",
+                "file": "content/Blog/ICST Kompositionsstudio Residences/nandele_manguni/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -226,6 +226,10 @@
   },
   "active": "e8538778c0de3738",
   "lastOpenFiles": [
+    "content/Blog/ICST Kompositionsstudio Residences/_index.md",
+    "content/Blog/ICST Kompositionsstudio Residences/nandele_manguni/index.md",
+    "nandele_maguni.md",
+    "public/blog/icst-kompositionsstudio-residences/index.xml",
     "content/Blog/_index.md",
     "public/blog/icst-kompositionsstudio-residences/nandele_manguni/index.html",
     "public/blog/icst-kompositionsstudio-residences/nandele_manguni/Unknown.jpeg",
@@ -233,8 +237,6 @@
     "public/blog/icst-kompositionsstudio-residences/nandele_manguni",
     "2025.md",
     "artist-residences-at-the-icst-composition-studio.md",
-    "content/Blog/ICST Kompositionsstudio Residences/nandele_manguni/index.md",
-    "content/Blog/ICST Kompositionsstudio Residences/index.md",
     "public/blog/icst-kompositionsstudio-residences/2025/nandele_manguni/Unknown.jpeg",
     "public/blog/icst-kompositionsstudio-residences/2025/nandele_manguni/index.html",
     "public/blog/icst-kompositionsstudio-residences/2025/nandele_manguni/IMG_0071.jpg",
@@ -255,7 +257,6 @@
     "().md",
     "content/Blog/ascolta/index.md",
     "content/Blog/ICST Kompositionsstudio Residences/nandele_manguni/Unknown.jpeg",
-    "public/blog/artist-residencies-at-the-icst-composition-studio/2025/index.html",
     "index.md",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/themes/anatole/exampleSite/content/english/post/series-part-2.md",
