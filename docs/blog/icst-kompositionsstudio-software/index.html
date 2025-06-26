@@ -1,0 +1,627 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Johannes Schuett
+        |
+        ICST Kompositionsstudio Software
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.145.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Schuett" />
+  <meta
+    name="description"
+    content=" This is the ICST Ambisonics Tutorial Blog"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.86b1f7f8e46fb7f9432e28081186d24eb6cd881e4d058e84aef93462f1e41337.css" integrity="sha256-hrH3&#43;ORvt/lDLigIEYbSTrbNiB5NBY6Ervk0YvHkEzc=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/blog/icst-kompositionsstudio-software/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ICST Kompositionsstudio Software">
+  <meta name="twitter:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+List of Software on the ICST Mac Pro: Audio - Analyse:
+RX-7 iZotope Acousmographe EAnalysis iSpectrum iZotope Melodyne 4 Praat Sonic Visualiser SPEAR Ambisonics:
+Audio Brewers Plugins ATK Ambisonics Tool Kit (Plugins) Ambisonics Externals for Max (ICST) Ambi Head (B-format to Binaural converter) ambiX plugin suite v.0.2.7 BlueRipple (free plugins) FB360 Spatial Workstation Harpex-B Panoramix-Ircam Soundfield Limited Sound Particles U Sound Trajectory Spat Revolution Flux Spat for Max mcfx v0.5.5 – multichannel audio plug-in suite IEM Plugin suite ICST Ambisonics Plugins Audio-Tools:">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/blog/icst-kompositionsstudio-software/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="ICST Kompositionsstudio Software">
+  <meta property="og:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+List of Software on the ICST Mac Pro: Audio - Analyse:
+RX-7 iZotope Acousmographe EAnalysis iSpectrum iZotope Melodyne 4 Praat Sonic Visualiser SPEAR Ambisonics:
+Audio Brewers Plugins ATK Ambisonics Tool Kit (Plugins) Ambisonics Externals for Max (ICST) Ambi Head (B-format to Binaural converter) ambiX plugin suite v.0.2.7 BlueRipple (free plugins) FB360 Spatial Workstation Harpex-B Panoramix-Ircam Soundfield Limited Sound Particles U Sound Trajectory Spat Revolution Flux Spat for Max mcfx v0.5.5 – multichannel audio plug-in suite IEM Plugin suite ICST Ambisonics Plugins Audio-Tools:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "blog",
+        "name": "ICST Kompositionsstudio Software",
+        "headline": "ICST Kompositionsstudio Software",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003cp\u003eInstitute for Computer Music and Sound Technology \/ (ICST) Zurich University of the Arts\u003c\/p\u003e\n\u003chr\u003e\n\u003ch3 id=\u0022list-of-software-on-the-icst-mac-pro\u0022\u003eList of Software on the ICST Mac Pro:\u003c\/h3\u003e\n\u003cp\u003e\u003cstrong\u003eAudio - Analyse:\u003c\/strong\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eRX-7 iZotope\u003c\/li\u003e\n\u003cli\u003eAcousmographe\u003c\/li\u003e\n\u003cli\u003eEAnalysis\u003c\/li\u003e\n\u003cli\u003eiSpectrum\u003c\/li\u003e\n\u003cli\u003eiZotope\u003c\/li\u003e\n\u003cli\u003eMelodyne 4\u003c\/li\u003e\n\u003cli\u003ePraat\u003c\/li\u003e\n\u003cli\u003eSonic Visualiser\u003c\/li\u003e\n\u003cli\u003eSPEAR\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e\u003cstrong\u003eAmbisonics:\u003c\/strong\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eAudio Brewers Plugins\u003c\/li\u003e\n\u003cli\u003eATK Ambisonics Tool Kit (Plugins)\u003c\/li\u003e\n\u003cli\u003eAmbisonics Externals for Max (ICST)\u003c\/li\u003e\n\u003cli\u003eAmbi Head (B-format to Binaural converter)\u003c\/li\u003e\n\u003cli\u003eambiX plugin suite v.0.2.7\u003c\/li\u003e\n\u003cli\u003eBlueRipple (free plugins)\u003c\/li\u003e\n\u003cli\u003eFB360 Spatial Workstation \u003c\/li\u003e\n\u003cli\u003eHarpex-B\u003c\/li\u003e\n\u003cli\u003ePanoramix-Ircam\u003c\/li\u003e\n\u003cli\u003eSoundfield Limited\u003c\/li\u003e\n\u003cli\u003eSound Particles U\u003c\/li\u003e\n\u003cli\u003eSound Trajectory\u003c\/li\u003e\n\u003cli\u003eSpat Revolution Flux\u003c\/li\u003e\n\u003cli\u003eSpat for Max\u003c\/li\u003e\n\u003cli\u003emcfx v0.5.5 – multichannel audio plug-in suite\u003c\/li\u003e\n\u003cli\u003eIEM Plugin suite\u003c\/li\u003e\n\u003cli\u003eICST Ambisonics Plugins\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e\u003cstrong\u003eAudio-Tools:\u003c\/strong\u003e\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/blog\/icst-kompositionsstudio-software\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "dateCreated": "0001-01-01T00:00:00.00Z",
+        "datePublished": "0001-01-01T00:00:00.00Z",
+        "dateModified": "0001-01-01T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Johannes Schuett",
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/blog\/icst-kompositionsstudio-software\/",
+        "wordCount" : "276",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">The ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p> This is the ICST Ambisonics Tutorial Blog</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/home/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-plugins/"
+              
+              title=""
+              >ICST Ambisonics Plugins</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-tools/"
+              
+              title=""
+              >ICST Ambisonics Tools</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Post</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/blog/"
+              
+              title=""
+              >Blog</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/links/"
+              
+              title=""
+              >Links</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>ICST Kompositionsstudio Software</h1>
+      
+      <p>Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts</p>
+<hr>
+<h3 id="list-of-software-on-the-icst-mac-pro">List of Software on the ICST Mac Pro:</h3>
+<p><strong>Audio - Analyse:</strong></p>
+<ul>
+<li>RX-7 iZotope</li>
+<li>Acousmographe</li>
+<li>EAnalysis</li>
+<li>iSpectrum</li>
+<li>iZotope</li>
+<li>Melodyne 4</li>
+<li>Praat</li>
+<li>Sonic Visualiser</li>
+<li>SPEAR</li>
+</ul>
+<p><strong>Ambisonics:</strong></p>
+<ul>
+<li>Audio Brewers Plugins</li>
+<li>ATK Ambisonics Tool Kit (Plugins)</li>
+<li>Ambisonics Externals for Max (ICST)</li>
+<li>Ambi Head (B-format to Binaural converter)</li>
+<li>ambiX plugin suite v.0.2.7</li>
+<li>BlueRipple (free plugins)</li>
+<li>FB360 Spatial Workstation </li>
+<li>Harpex-B</li>
+<li>Panoramix-Ircam</li>
+<li>Soundfield Limited</li>
+<li>Sound Particles U</li>
+<li>Sound Trajectory</li>
+<li>Spat Revolution Flux</li>
+<li>Spat for Max</li>
+<li>mcfx v0.5.5 – multichannel audio plug-in suite</li>
+<li>IEM Plugin suite</li>
+<li>ICST Ambisonics Plugins</li>
+</ul>
+<p><strong>Audio-Tools:</strong></p>
+<ul>
+<li>Audio Hijack</li>
+<li>Dante Controller</li>
+<li>Dante Via</li>
+<li>Dante Virtual Soundcard</li>
+<li>JackPilot</li>
+<li>Qjackctl.app</li>
+<li>Loopback</li>
+<li>Ravenna</li>
+</ul>
+<p><strong>Audio-Instruments:</strong></p>
+<ul>
+<li>Native Instruments</li>
+</ul>
+<p><strong>DAW:</strong></p>
+<ul>
+<li>Ableton Live 12 Suite </li>
+<li>Adobe Audition CC</li>
+<li>Ardour8.0</li>
+<li>Audacity</li>
+<li>Logic Pro</li>
+<li>REAPER (newest)</li>
+</ul>
+<p><strong>Audio-Programming:</strong></p>
+<ul>
+<li>Cabbage</li>
+<li>Csound</li>
+<li>CsoundQt-d-py-cs6</li>
+<li>Faust</li>
+<li>Grace</li>
+<li>Max 8.0.1</li>
+<li>Pd-0.49-1-Vanille</li>
+<li>Processing</li>
+<li>Plogue Bidule 0.9759</li>
+<li>SuperCollider</li>
+</ul>
+<p><strong>Audio-Editor:</strong></p>
+<ul>
+<li>GRM-Player</li>
+<li>GRM Tools Complete </li>
+<li>HourGlass</li>
+<li>iZotope RX 7 Audio Editor</li>
+<li>SoundGrain</li>
+<li>SoundHack</li>
+<li>TwistedWave 1.2</li>
+</ul>
+<p><strong>Audio-Plugins:</strong></p>
+<ul>
+<li>ambiX</li>
+<li>audio brewers</li>
+<li>FabFilter-Bundle</li>
+<li>Flux-Session</li>
+<li>GRM Tools </li>
+<li>Harpex</li>
+<li>IEM</li>
+<li>Melodyne</li>
+<li>PaulStretch</li>
+<li>SIR 2 Audiotools</li>
+<li>RX-7</li>
+<li>FabFilters</li>
+<li>Two Big Ears FB360 Spatialiser</li>
+<li>ToscA</li>
+<li>UdeM SpatGris</li>
+<li>Waves Mercury</li>
+<li>ICST Ambisonics Plugins</li>
+<li>ZOOM MS-Decoder</li>
+</ul>
+<p><strong>IRCAM-Bundle</strong>:</p>
+<ul>
+<li>ADMIX</li>
+<li>ANGUS</li>
+<li>ANTESCOFO</li>
+<li>AUDIOSCULPT</li>
+<li>CATART STANDALONE</li>
+<li>CLEESE</li>
+<li>DAVID</li>
+<li>DIPHONE STUDIO 4.2</li>
+<li>FORUM MAX APPS</li>
+<li>GESTURE &amp; SOUND</li>
+<li>MAX SOUND BOX</li>
+<li>MODALYS</li>
+<li>MUBU</li>
+<li>MUSIQUE LAB 2</li>
+<li>NAJO MODULAR INTERFACE 2</li>
+<li>OMAX</li>
+<li>OPENMUSIC</li>
+<li>ORCHIDS</li>
+<li>PANORAMIX</li>
+<li>SPAT</li>
+<li>SUPERVP FOR MAX</li>
+<li>SUPERVP TRAX</li>
+<li>TOSCA</li>
+</ul>
+<p><strong>Notation:</strong></p>
+<ul>
+<li>Finale 25.0</li>
+<li>Sibelius</li>
+<li>INScore-1.21</li>
+<li>JMSL </li>
+<li>MuseScore</li>
+<li>NoteAbilityPro</li>
+<li>OM-6.14-macOS</li>
+<li>PWGL</li>
+<li>Scala</li>
+</ul>
+<p><strong>OSC-Tools:</strong></p>
+<ul>
+<li>IanniX</li>
+<li>INScore-1.21</li>
+<li>ToscA</li>
+</ul>
+<hr>
+<h3 id="daw">DAW</h3>
+<p>Here at ICST, the staff uses <a href="http://reaper.fm/">Reaper</a> and <a href="http://ardour.org/">Ardour</a> 7
+We recommend you do so as well, especially if you want to work with ambisonics or multi-channel audio in general.</p>
+<hr>
+<p>©2025 ICST</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

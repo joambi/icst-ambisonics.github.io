@@ -1,0 +1,583 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Johannes Schuett
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.145.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Schuett" />
+  <meta
+    name="description"
+    content="OSC-Syntax"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.86b1f7f8e46fb7f9432e28081186d24eb6cd881e4d058e84aef93462f1e41337.css" integrity="sha256-hrH3&#43;ORvt/lDLigIEYbSTrbNiB5NBY6Ervk0YvHkEzc=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The ICST Ambisonics Site">
+  <meta name="twitter:description" content="OSC-Syntax">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="The ICST Ambisonics Site">
+  <meta property="og:description" content="OSC-Syntax">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-03-16T09:44:58+01:00">
+    <meta property="article:modified_time" content="2025-03-16T09:44:58+01:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "",
+        "headline": "",
+        "alternativeHeadline": "",
+        "description": "
+      OSC-Syntax
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/post\/osc-syntax-for-the-icst-ambiencoder-plugin\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "dateCreated": "2025-03-16T09:44:58.00Z",
+        "datePublished": "2025-03-16T09:44:58.00Z",
+        "dateModified": "2025-03-16T09:44:58.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Johannes Schuett",
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/post\/osc-syntax-for-the-icst-ambiencoder-plugin\/",
+        "wordCount" : "429",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">The ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p> This is the ICST Ambisonics Tutorial Blog</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/home/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-plugins/"
+              
+              title=""
+              >ICST Ambisonics Plugins</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-tools/"
+              
+              title=""
+              >ICST Ambisonics Tools</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Post</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/blog/"
+              
+              title=""
+              >Blog</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/links/"
+              
+              title=""
+              >Links</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1></h1>
+      
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  2025-03-16
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">3-minute read</span>
+          </li>
+        </ul>
+      <p>Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts</p>
+<hr>
+<h2 id="osc-syntax-for-the-icst-ambiencoder-plugin">OSC Syntax for the ICST AmbiEncoder Plugin</h2>
+<p>The <strong>ICST AmbiEncoder</strong> supports <strong>OSC</strong> and <strong>JavaScript</strong>, enabling seamless communication with OSC tools such as <strong>TouchOSC, IanniX, MaxMSP</strong>, and other OSC-enabled software.</p>
+<h3 id="how-it-works"><strong>How It Works</strong></h3>
+<ol>
+<li>Open the <strong>&lsquo;OSC In&rsquo;</strong> tab.</li>
+</ol>
+<p><img src="osc-in-out.png" alt="OSC IN-OUT"></p>
+<p>_Figure: Encoder Setting &lsquo;OSC In&rsquo; receives over the port 50001</p>
+<p>Find all information in the <strong>Help</strong> section by clicking the question mark (<strong>?</strong>).</p>
+<h4 id="osc-in"><strong>OSC In</strong></h4>
+<ul>
+<li><strong>Receive OSC</strong>: Receive OSC commands on the defined port (default: 50001). The full OSC specification is available in the plugin’s Help section.</li>
+</ul>
+<ul>
+<li><strong>Send Positions for External Usage</strong>: This function sends audio source positions as OSC messages to a defined target/port. Messages trigger position changes, and the update rate is limited to <strong>20Hz (50ms).</strong></li>
+</ul>
+<hr>
+<h2 id="osc-syntax--address-specification"><strong>OSC Syntax &amp; Address Specification</strong></h2>
+<h3 id="1-accessing-osc-specifications"><strong>1. Accessing OSC Specifications</strong></h3>
+<p>Click the <strong>question mark</strong> in the ICST AmbiEncoder.
+<img src="OSX-Syntax.png" alt="osc-in-help"></p>
+<p><em>Figure: OSC specifications in the Help section.</em></p>
+<p>Available sections:</p>
+<ul>
+<li>Help (<strong>?</strong>)</li>
+<li>OSC Syntax</li>
+<li>Sections</li>
+</ul>
+<h3 id="2-incoming-osc-messages"><strong>2. Incoming OSC Messages</strong></h3>
+<p>Messages can be:</p>
+<ul>
+<li><strong>Index-based</strong> (source index), e.g., <code>1</code></li>
+<li><strong>Name-based</strong> (source name), e.g., <code>flute</code></li>
+</ul>
+<h4 id="set-source-position-aed-format"><strong>Set Source Position (AED Format)</strong></h4>
+<pre tabindex="0"><code>	/icst/ambi/source/aed [ChannelName] [Azimuth] [Elevation] [Distance]
+	/icst/ambi/source/aed &#39;S1&#39; 45 10 0.8
+</code></pre><h4 id="set-source-position-xyz-format"><strong>Set Source Position (XYZ Format)</strong></h4>
+<pre tabindex="0"><code>	/icst/ambi/source/xyz [ChannelName] [X] [Y] [Z]
+	/icst/ambi/source/xyz &#39;S2&#39; 0.2 0.2 0.0
+</code></pre><p><strong>Note:</strong> The channel name (e.g S1, S2) will be sent as <strong>symbol</strong>.</p>
+<h4 id="set-source-index-position-aed-format"><strong>Set Source (Index) Position (AED Format)</strong></h4>
+<pre tabindex="0"><code>/icst/ambi/sourceindex/aed [ChannelIndex] [Azimuth] [Elevation] [Distance]
+/icst/ambi/sourceindex/aed 1 45 10 0.8
+</code></pre><h4 id="set-source-index-position-xyz-format"><strong>Set Source (Index) Position (XYZ Format)</strong></h4>
+<pre tabindex="0"><code>/icst/ambi/sourceindex/xyz [ChannelIndex] [X] [Y] [Z]
+/icst/ambi/sourceindex/xyz 2 0.2 0.2 0.0
+</code></pre><p><strong>Note:</strong> Channel indices are sent as <strong>integers</strong>.</p>
+<hr>
+<h2 id="sending-positions-for-external-usage"><strong>Sending Positions for External Usage</strong></h2>
+<ol>
+<li>Open the <strong>&lsquo;OSC Out&rsquo;</strong> tab.</li>
+</ol>
+<p><img src="osc-in-out.png" alt="OSC IN-OUT"></p>
+<p><strong>Note:</strong> The ICST AmbiPlugins standard format sends <strong>source names as symbols</strong>. Max users should define a <strong>Custom OSC Message</strong>:</p>
+<pre tabindex="0"><code>/icst/ambi/sourceindex/xyz {i} {x} {y} {z}
+/icst/ambi/sourceindex/aed {i} {a} {e} {d}
+</code></pre><p><img src="osc.png" alt="OSC-Out"></p>
+<p><em>Figure: Custom &lsquo;OSC Out&rsquo; Editor</em></p>
+<h4 id="internal-osc-communication"><strong>Internal OSC Communication</strong></h4>
+<p>To send <strong>all AmbiEncoder movements</strong> to the ICST AmbiDecoder:</p>
+<ol>
+<li>Deactivate <strong>Speaker Edit Mode</strong> in the AmbiDecoder.</li>
+<li>Activate the OSC port.</li>
+</ol>
+<p><img src="intern_osc2.png" alt="Edit_off"></p>
+<p><img src="aktivate_osc.png" alt="Intern_osc_port"></p>
+<p><img src="Intern_osc.png" alt="OSC_internal"></p>
+<p>Now, the AmbiDecoder receives <strong>all OSC messages</strong> from all connected AmbiEncoders.</p>
+<hr>
+<h3 id="steps-to-send-osc-messages"><strong>Steps to Send OSC Messages</strong></h3>
+<p>AmbiEncoder can also send most of its parameters via OSC.</p>
+<p><img src="external_osc.png" alt="External-osc"></p>
+<p>Open the question mark before the presets to get detailed help information.</p>
+<ol>
+<li>
+<p>Enable <strong>“Send Positions for External Usage”</strong> in the settings.</p>
+</li>
+<li>
+<p>In the <strong>Targets</strong> section:</p>
+<ul>
+<li>Enable or disable OSC transmission.</li>
+<li>Define the <strong>Host IP address</strong>.</li>
+<li>Select a <strong>Port</strong> (default: <strong>50001</strong>).</li>
+<li>Double-click <strong>OSC messages</strong> to edit.</li>
+</ul>
+<p><strong>Note:</strong> If participating in an <strong>internal FX learning program</strong>, select <strong>“Continuous”</strong> mode.</p>
+</li>
+<li>
+<p>Click <strong>Help (?)</strong> for detailed OSC information.</p>
+</li>
+<li>
+<p>Add or delete OSC messages.</p>
+</li>
+<li>
+<p>Save or load OSC messages in <strong>Presets</strong>.</p>
+</li>
+</ol>
+<hr>
+<p>©2025 ICST</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
