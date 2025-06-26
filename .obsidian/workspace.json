@@ -25,14 +25,12 @@
             "id": "20c83a2f07077927",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "content/Blog/Artist residencies at the ICST composition studio/index.md",
-                "mode": "source",
-                "source": false
+                "file": "images/tn.png"
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-image",
+              "title": "tn"
             }
           }
         ],
@@ -187,16 +185,15 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 223.5,
-    "collapsed": true
+    "width": 223.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1750836915442": false,
+      "image-preview-on-icon-hover:1750943865218": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -208,32 +205,34 @@
       "obsidian-git:Open Git source control": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
-      "DEVONlink-obsidian:DEVONlink": false
+      "DEVONlink-obsidian:DEVONlink": false,
+      "obsidian-shellcommands:Shell commands: Custom variables": false
     }
   },
-  "active": "1597bac92f6118b8",
+  "active": "20c83a2f07077927",
   "lastOpenFiles": [
+    "public/images/AmbiPlugin_logo.gif",
+    "Gemfile",
+    "index.md",
+    "CNAME",
+    "public/css/anatole.css",
+    "public/images/max-tools_in_max.png",
+    "public/images/icst_ambiplugins_overview_v3.0.png",
+    "public/images",
+    "images/max-tools_in_max.png",
+    "images/icst_ambiplugins_overview_v3.0.png",
+    "images/AmbiPlugin_logo.gif",
+    "images/screenshot_dark.png",
+    "images/screenshot.png",
+    "images/lighthouse.png",
+    "content/Blog/Artist residencies at the ICST composition studio/index.md",
+    "config.toml",
     "public/index.xml",
     "public/blog/index.xml",
     "public/post/index.xml",
     "public/icst-ambisonics-plugins/index.xml",
     "public/series/index.xml",
-    "public/month/index.xml",
-    "public/tags/index.xml",
-    "public/year/index.xml",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/index.html",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/speaker_test.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/record_movement.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/rec_xyz.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_xyz.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_multienc.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_GP.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/open_decoder.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/first-order.png",
-    "public/blog/icst-kompositionsstudio-regie/index.html",
-    "public/post/gp-manipulation/index.html",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/themes/anatole/exampleSite/content/english/post/series-part-2.md",
     "docs/themes/anatole/exampleSite/content/english/post/series-part-1.md",
@@ -258,8 +257,6 @@
     "docs/themes/anatole/exampleSite/content/english/_index.md",
     "docs/themes/anatole/exampleSite/content/arabic/archives.md",
     "docs/themes/anatole/exampleSite/content/arabic/contact.md",
-    "docs/themes/anatole/exampleSite/content/arabic/about.md",
-    "docs/themes/anatole/archetypes/post.md",
     "docs/public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas",
