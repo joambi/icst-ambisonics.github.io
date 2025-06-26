@@ -5,6 +5,7 @@ aliases:
   - blog
   - showcase
   - docs
+title: ICST Kompositionsstudio Residences
 ---
 
 
