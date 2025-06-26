@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST Kompositionsstudio Residences/2025/nandele_manguni/index.md",
+                "file": "content/Blog/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -226,8 +226,11 @@
   },
   "active": "e8538778c0de3738",
   "lastOpenFiles": [
-    "content/Blog/ICST Kompositionsstudio Residences/index.md",
+    "2025.md",
+    "content/Blog/_index.md",
+    "artist-residences-at-the-icst-composition-studio.md",
     "content/Blog/ICST Kompositionsstudio Residences/2025/nandele_manguni/index.md",
+    "content/Blog/ICST Kompositionsstudio Residences/index.md",
     "public/blog/icst-kompositionsstudio-residences/2025/nandele_manguni/Unknown.jpeg",
     "public/blog/icst-kompositionsstudio-residences/2025/nandele_manguni/index.html",
     "public/blog/icst-kompositionsstudio-residences/2025/nandele_manguni/IMG_0071.jpg",
@@ -270,8 +273,6 @@
     "docs/themes/anatole/exampleSite/content/english/portfolio/_index.md",
     "docs/themes/anatole/exampleSite/content/arabic/post/arabic_example.md",
     "docs/themes/anatole/exampleSite/content/english/imprint.md",
-    "docs/themes/anatole/exampleSite/content/english/contact.md",
-    "docs/themes/anatole/exampleSite/content/english/certifications.md",
     "docs/public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas",
