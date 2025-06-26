@@ -1,0 +1,566 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Johannes Schuett
+        |
+        02_Install_the_AmbiPlugins
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.145.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Schuett" />
+  <meta
+    name="description"
+    content=" This is the ICST Ambisonics Tutorial Blog"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.86b1f7f8e46fb7f9432e28081186d24eb6cd881e4d058e84aef93462f1e41337.css" integrity="sha256-hrH3&#43;ORvt/lDLigIEYbSTrbNiB5NBY6Ervk0YvHkEzc=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/icst-ambisonics-plugins/02_installation/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="02_Install_the_AmbiPlugins">
+  <meta name="twitter:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+01_Install the ICST Ambisonics Plugins (OSX) Download Reaper(DAW) (arm64/intel_64) from reaper.fm
+Follow the Reaper Installation guide.
+Run the Reaper (DAW) by click the Reaper64.app
+Close Reaper64.
+Install the reaper plugin extension (SWS/S&amp;M) from this link: https://www.sws-extension.org/
+Install the ReaPack (Package manager for Reaper) from here: https://reapack.com/
+Follow this installations guide: https://reapack.com/user-guide#installation
+Download the ICST AmbiPlugin osx installer: https://github.com/schweizerweb/icst-ambisonics-plugins/releases
+What is installed by ‘ICST_AmbiPlugins_macOS’: /Library/Audio/Plugins/VST3 /Library/Audio/Plugins/Components /Library/Audio/Plugins/LV2 (experimental) Users/Shared/AmbiPluginsTemp/ProjectTemplates ICST_AmbiPlugins_MonoEncoder.RPP ICST_AmbiPlugins_MultiEncoder.RPP Users/Shared/AmbiPluginsTemplatesTemp TrackTemplates ICST_AmbiPlugins ICST_AmbiPlugins_3rdParty INFO: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/icst-ambisonics-plugins/02_installation/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="02_Install_the_AmbiPlugins">
+  <meta property="og:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+01_Install the ICST Ambisonics Plugins (OSX) Download Reaper(DAW) (arm64/intel_64) from reaper.fm
+Follow the Reaper Installation guide.
+Run the Reaper (DAW) by click the Reaper64.app
+Close Reaper64.
+Install the reaper plugin extension (SWS/S&amp;M) from this link: https://www.sws-extension.org/
+Install the ReaPack (Package manager for Reaper) from here: https://reapack.com/
+Follow this installations guide: https://reapack.com/user-guide#installation
+Download the ICST AmbiPlugin osx installer: https://github.com/schweizerweb/icst-ambisonics-plugins/releases
+What is installed by ‘ICST_AmbiPlugins_macOS’: /Library/Audio/Plugins/VST3 /Library/Audio/Plugins/Components /Library/Audio/Plugins/LV2 (experimental) Users/Shared/AmbiPluginsTemp/ProjectTemplates ICST_AmbiPlugins_MonoEncoder.RPP ICST_AmbiPlugins_MultiEncoder.RPP Users/Shared/AmbiPluginsTemplatesTemp TrackTemplates ICST_AmbiPlugins ICST_AmbiPlugins_3rdParty INFO: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="icst-ambisonics-plugins">
+    <meta property="article:published_time" content="2025-02-02T04:14:54-08:00">
+    <meta property="article:modified_time" content="2025-02-02T04:14:54-08:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "icst-ambisonics-plugins",
+        "name": "02_Install_the_AmbiPlugins",
+        "headline": "02_Install_the_AmbiPlugins",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003cp\u003eInstitute for Computer Music and Sound Technology \/ (ICST) Zurich University of the Arts\u003c\/p\u003e\n\u003chr\u003e\n\u003ch3 id=\u002201_install-the-icst-ambisonics-plugins-osx\u0022\u003e01_Install the ICST Ambisonics Plugins (OSX)\u003c\/h3\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003eDownload Reaper(DAW) (arm64\/intel_64) from \u003ca href=\u0022http:\/\/reaper.fm\/\u0022\u003ereaper.fm\u003c\/a\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eFollow the Reaper Installation guide.\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eRun the Reaper (DAW) by click the \u003cem\u003e\u003ca href=\u0022http:\/\/Reaper64.app\u0022\u003eReaper64.app\u003c\/a\u003e\u003c\/em\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eClose \u003cem\u003eReaper64.\u003c\/em\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eInstall the \u003cem\u003ereaper plugin extension (SWS\/S\u0026amp;M)\u003c\/em\u003e from this link: \u003ca href=\u0022https:\/\/www.sws-extension.org\/\u0022\u003ehttps:\/\/www.sws-extension.org\/\u003c\/a\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eInstall the \u003cem\u003eReaPack\u003c\/em\u003e (Package manager for Reaper) from here: \u003ca href=\u0022https:\/\/reapack.com\/\u0022\u003ehttps:\/\/reapack.com\/\u003c\/a\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eFollow this installations guide: \u003ca href=\u0022https:\/\/reapack.com\/user-guide#installation\u0022\u003ehttps:\/\/reapack.com\/user-guide#installation\u003c\/a\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003cli\u003e\n\u003cp\u003eDownload the ICST AmbiPlugin osx installer: \u003ca href=\u0022https:\/\/github.com\/schweizerweb\/icst-ambisonics-plugins\/releases\u0022\u003ehttps:\/\/github.com\/schweizerweb\/icst-ambisonics-plugins\/releases\u003c\/a\u003e\u003c\/p\u003e\n\u003cp\u003e\u003cimg src=\u0022installer.gif\u0022 alt=\u0022installer\u0022\u003e\u003c\/p\u003e\n\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003ch3 id=\u0022what-is-installed-by-icst_ambiplugins_macos\u0022\u003eWhat is installed by \u0026lsquo;ICST_AmbiPlugins_macOS\u0026rsquo;:\u003c\/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\/Library\/Audio\/Plugins\/VST3\u003c\/li\u003e\n\u003cli\u003e\/Library\/Audio\/Plugins\/Components\u003c\/li\u003e\n\u003cli\u003e\/Library\/Audio\/Plugins\/LV2 (experimental)\u003c\/li\u003e\n\u003cli\u003eUsers\/Shared\/AmbiPluginsTemp\/ProjectTemplates\n\u003cul\u003e\n\u003cli\u003eICST_AmbiPlugins_MonoEncoder.RPP\u003c\/li\u003e\n\u003cli\u003eICST_AmbiPlugins_MultiEncoder.RPP\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003cli\u003eUsers\/Shared\/AmbiPluginsTemplatesTemp\n\u003cul\u003e\n\u003cli\u003eTrackTemplates\n\u003cul\u003e\n\u003cli\u003eICST_AmbiPlugins\u003c\/li\u003e\n\u003cli\u003eICST_AmbiPlugins_3rdParty\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003eINFO: \u003ca href=\u0022https:\/\/github.com\/schweizerweb\/icst-ambisonics-plugins\/wiki\u0022\u003ehttps:\/\/github.com\/schweizerweb\/icst-ambisonics-plugins\/wiki\u003c\/a\u003e\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/icst-ambisonics-plugins\/02_installation\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "dateCreated": "2025-02-02T04:14:54.00Z",
+        "datePublished": "2025-02-02T04:14:54.00Z",
+        "dateModified": "2025-02-02T04:14:54.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Johannes Schuett",
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/icst-ambisonics-plugins\/02_installation\/",
+        "wordCount" : "160",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">The ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p> This is the ICST Ambisonics Tutorial Blog</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/home/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-plugins/"
+              
+              title=""
+              >ICST Ambisonics Plugins</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-tools/"
+              
+              title=""
+              >ICST Ambisonics Tools</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Post</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/blog/"
+              
+              title=""
+              >Blog</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/links/"
+              
+              title=""
+              >Links</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>02_Install_the_AmbiPlugins</h1>
+      
+      <p>Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts</p>
+<hr>
+<h3 id="01_install-the-icst-ambisonics-plugins-osx">01_Install the ICST Ambisonics Plugins (OSX)</h3>
+<ol>
+<li>
+<p>Download Reaper(DAW) (arm64/intel_64) from <a href="http://reaper.fm/">reaper.fm</a></p>
+</li>
+<li>
+<p>Follow the Reaper Installation guide.</p>
+</li>
+<li>
+<p>Run the Reaper (DAW) by click the <em><a href="http://Reaper64.app">Reaper64.app</a></em></p>
+</li>
+<li>
+<p>Close <em>Reaper64.</em></p>
+</li>
+<li>
+<p>Install the <em>reaper plugin extension (SWS/S&amp;M)</em> from this link: <a href="https://www.sws-extension.org/">https://www.sws-extension.org/</a></p>
+</li>
+<li>
+<p>Install the <em>ReaPack</em> (Package manager for Reaper) from here: <a href="https://reapack.com/">https://reapack.com/</a></p>
+</li>
+<li>
+<p>Follow this installations guide: <a href="https://reapack.com/user-guide#installation">https://reapack.com/user-guide#installation</a></p>
+</li>
+<li>
+<p>Download the ICST AmbiPlugin osx installer: <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases">https://github.com/schweizerweb/icst-ambisonics-plugins/releases</a></p>
+<p><img src="installer.gif" alt="installer"></p>
+</li>
+</ol>
+<h3 id="what-is-installed-by-icst_ambiplugins_macos">What is installed by &lsquo;ICST_AmbiPlugins_macOS&rsquo;:</h3>
+<ul>
+<li>/Library/Audio/Plugins/VST3</li>
+<li>/Library/Audio/Plugins/Components</li>
+<li>/Library/Audio/Plugins/LV2 (experimental)</li>
+<li>Users/Shared/AmbiPluginsTemp/ProjectTemplates
+<ul>
+<li>ICST_AmbiPlugins_MonoEncoder.RPP</li>
+<li>ICST_AmbiPlugins_MultiEncoder.RPP</li>
+</ul>
+</li>
+<li>Users/Shared/AmbiPluginsTemplatesTemp
+<ul>
+<li>TrackTemplates
+<ul>
+<li>ICST_AmbiPlugins</li>
+<li>ICST_AmbiPlugins_3rdParty</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>INFO: <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/wiki">https://github.com/schweizerweb/icst-ambisonics-plugins/wiki</a></p>
+<p>VIDEO:  <a href="https://www.youtube.com/watch?v=UmPnUTVem0Q">https://www.youtube.com/watch?v=UmPnUTVem0Q</a></p>
+<hr>
+<h3 id="02_installationwinows">02_Installation(winows):</h3>
+<ol>
+<li>Download Reaper64 (Windows 64-bit) from <a href="http://reaper.fm/">reaper.fm</a></li>
+<li>Follow the Reaper Installation guide.</li>
+<li>Run the Reaper (DAW) by click the Reaper64.app</li>
+<li>Close <em>Reaper64.</em></li>
+<li>Install the <em>reaper plugin extension (SWS/S&amp;M)</em> from this link: <a href="https://www.sws-extension.org/">https://www.sws-extension.org/</a></li>
+<li>Install the <em>ReaPack</em> (Package manager for Reaper) from here: <a href="https://reapack.com/">https://reapack.com/</a></li>
+<li>Follow this installations guide: <a href="https://reapack.com/user-guide#installation">https://reapack.com/user-guide#installation</a></li>
+<li>Download the ICST AmbiPlugin windows installer: <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases">https://github.com/schweizerweb/icst-ambisonics-plugins/releases</a></li>
+<li>Extract <em>ICST_AmbiPlugins_3.0_win_x64.exe</em> to <em>C:\Program Files\Common Files\VST3</em></li>
+</ol>
+<p><img src="01_win.png" alt="01_win.png">
+<img src="02_win.png" alt="01_win.png">
+<img src="03_win.png" alt="01_win.png">
+<img src="04_win.png" alt="01_win.png">
+<img src="05_win.png" alt="01_win.png">
+<img src="06_win.png" alt="01_win.png">
+<img src="07_win.png" alt="01_win.png"></p>
+<p>Restart the PC!</p>
+<h1 id="install-on-linux">Install on Linux</h1>
+<hr>
+<p>©2025 ICST</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

@@ -1,0 +1,732 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Johannes Schuett
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.145.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Schuett" />
+  <meta
+    name="description"
+    content=" This is the ICST Ambisonics Tutorial Blog"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.86b1f7f8e46fb7f9432e28081186d24eb6cd881e4d058e84aef93462f1e41337.css" integrity="sha256-hrH3&#43;ORvt/lDLigIEYbSTrbNiB5NBY6Ervk0YvHkEzc=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The ICST Ambisonics Site">
+  <meta name="twitter:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper Prerequisites Before we begin, make sure you have Reaper, the ICST Ambisonics plugins and any recommended 3rd party pluginsinstalled.
+Creating a Reaper template We will create the template step by step from top to bottom.
+1. Prepare Reaper Open a new, empty Reaper session. Create a new track (double click or use the menu). Name the track Decoder and remove the master bus. [!Tip:] Create all tracks with 64 channels by default and keep an eye on the routing.">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="The ICST Ambisonics Site">
+  <meta property="og:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper Prerequisites Before we begin, make sure you have Reaper, the ICST Ambisonics plugins and any recommended 3rd party pluginsinstalled.
+Creating a Reaper template We will create the template step by step from top to bottom.
+1. Prepare Reaper Open a new, empty Reaper session. Create a new track (double click or use the menu). Name the track Decoder and remove the master bus. [!Tip:] Create all tracks with 64 channels by default and keep an eye on the routing.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="icst-ambisonics-plugins">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "icst-ambisonics-plugins",
+        "name": "",
+        "headline": "",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003cp\u003eInstitute for Computer Music and Sound Technology \/ (ICST) Zurich University of the Arts\u003c\/p\u003e\n\u003chr\u003e\n\u003ch3 id=\u0022step-by-step-setup-guide-for-the-icst-ambiplugins-in-reaper\u0022\u003eStep-by-Step Setup Guide for the ICST AmbiPlugins in Reaper\u003c\/h3\u003e\n\u003ch3 id=\u0022prerequisites\u0022\u003ePrerequisites\u003c\/h3\u003e\n\u003cp\u003eBefore we begin, make sure you have \u003cstrong\u003eReaper\u003c\/strong\u003e, the \u003cstrong\u003eICST Ambisonics plugins\u003c\/strong\u003e and any recommended \u003cstrong\u003e3rd party plugins\u003c\/strong\u003einstalled.\u003c\/p\u003e\n\u003ch3 id=\u0022creating-a-reaper-template\u0022\u003eCreating a Reaper template\u003c\/h3\u003e\n\u003cp\u003eWe will create the template step by step from top to bottom.\u003c\/p\u003e\n\u003ch4 id=\u00221-prepare-reaper\u0022\u003e1. Prepare Reaper\u003c\/h4\u003e\n\u003col\u003e\n\u003cli\u003eOpen a \u003cstrong\u003enew, empty Reaper session\u003c\/strong\u003e.\n\u003cimg src=\u0022empty_reaper.png\u0022 alt=\u0022empty_reaper\u0022\u003e\u003c\/li\u003e\n\u003cli\u003eCreate a new track (\u003cstrong\u003edouble click\u003c\/strong\u003e or use the menu).\u003c\/li\u003e\n\u003cli\u003eName the track \u003cstrong\u003eDecoder\u003c\/strong\u003e and remove the master bus.\n\u003cimg src=\u002201_Decoder_A.gif\u0022 alt=\u002201_dec\u0022\u003e\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cblockquote\u003e\n\u003cp\u003e[!Tip:]\nCreate all tracks with \u003cstrong\u003e64 channels\u003c\/strong\u003e by default and keep an eye on the \u003cstrong\u003erouting\u003c\/strong\u003e.\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/icst-ambisonics-plugins\/06_step_by_step_setup\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "dateCreated": "0001-01-01T00:00:00.00Z",
+        "datePublished": "0001-01-01T00:00:00.00Z",
+        "dateModified": "0001-01-01T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Johannes Schuett",
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/icst-ambisonics-plugins\/06_step_by_step_setup\/",
+        "wordCount" : "972",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">The ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p> This is the ICST Ambisonics Tutorial Blog</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/home/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-plugins/"
+              
+              title=""
+              >ICST Ambisonics Plugins</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-tools/"
+              
+              title=""
+              >ICST Ambisonics Tools</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Post</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/blog/"
+              
+              title=""
+              >Blog</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/links/"
+              
+              title=""
+              >Links</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1></h1>
+      
+      <p>Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts</p>
+<hr>
+<h3 id="step-by-step-setup-guide-for-the-icst-ambiplugins-in-reaper">Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper</h3>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before we begin, make sure you have <strong>Reaper</strong>, the <strong>ICST Ambisonics plugins</strong> and any recommended <strong>3rd party plugins</strong>installed.</p>
+<h3 id="creating-a-reaper-template">Creating a Reaper template</h3>
+<p>We will create the template step by step from top to bottom.</p>
+<h4 id="1-prepare-reaper">1. Prepare Reaper</h4>
+<ol>
+<li>Open a <strong>new, empty Reaper session</strong>.
+<img src="empty_reaper.png" alt="empty_reaper"></li>
+<li>Create a new track (<strong>double click</strong> or use the menu).</li>
+<li>Name the track <strong>Decoder</strong> and remove the master bus.
+<img src="01_Decoder_A.gif" alt="01_dec"></li>
+</ol>
+<blockquote>
+<p>[!Tip:]
+Create all tracks with <strong>64 channels</strong> by default and keep an eye on the <strong>routing</strong>.</p></blockquote>
+<h4 id="2-set-up-decoder-routing">2. Set up decoder routing</h4>
+<ul>
+<li><strong>Decoder routing for an Oktagon setup:</strong></li>
+<li><strong>Inputs:</strong> 64 channels from the “Bformat Master Track”</li>
+<li><strong>outputs</strong>: 8 channels to the audio interface</li>
+</ul>
+<ol>
+<li><strong>ICST AmbiPlugins Decoder</strong> in the <strong>FX window</strong>.
+<img src="FX_Decoder.png" alt="open__FX_decoder"></li>
+<li>open the AmbiDecoder
+<img src="open_decoder.gif" alt="open_decoder"></li>
+<li>Select a <strong>speaker preset</strong> (e.g. Oktagon).
+<img src="choose_dec_preset.gif" alt="open_dec"></li>
+<li><strong>Customize AmbiDecoder settings</strong>:</li>
+</ol>
+<ul>
+<li>Ambisonics Weighting</li>
+<li>Ambisonics Order (1st to 7th order)
+<img src="7_choose_dec_setting.gif" alt="Dec-setting">5. <strong>Run speaker test</strong>:
+<ul>
+<li>press the “Speaker Test” button or test individual speakers.
+<img src="speaker_test.png" alt="speaker_test"></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>[!Attention:]  Keep an eye on the volume level!</p></blockquote>
+<ol start="9">
+<li>Create the &lsquo;Bformat-Master track&rsquo;
+<img src="02_BF-Master.gif" alt="02_BF-Master | 700"></li>
+</ol>
+<h4 id="3-create-a-bformat-master-track">3. Create a Bformat master track</h4>
+<ul>
+<li>The <strong>Bformat master track</strong> receives all signals from:</li>
+<li><strong>Ambience Encoders</strong></li>
+<li><strong>BFormat SFX</strong></li>
+<li><strong>BFormat players</strong></li>
+<li>Since this is the master track, the final <strong>B format is recorded</strong> or bounced here.</li>
+<li>This track is colored <strong>red</strong>.</li>
+<li>It leads both to the <strong>AmbiDecoder</strong> and in parallel to a <strong>binaural track</strong>.</li>
+</ul>
+<h4 id="4-create-a-bformat-player-track">4. Create a Bformat player track</h4>
+<ul>
+<li>Create a <strong>64-channel track</strong> and route it into the <strong>Bformat master track</strong>.</li>
+</ul>
+<p><img src="bformat-player.png" alt="bformat-player"></p>
+<blockquote>
+<p>[!Tip:] This allows <strong>B-format files from the 1st to the 7th order</strong> to be played.</p></blockquote>
+<h4 id="5-enable-binaural-listening">5. Enable binaural listening</h4>
+<ul>
+<li>Create a new <strong>64-channel track</strong> and load a <strong>binaural plug-in</strong> (e.g. <em>DearVR Ambi Micro.vst3</em>).</li>
+<li>Move the track <strong>upwards</strong>.</li>
+<li>Route the output from the <strong>format master</strong> to this <strong>binaural decoder</strong>.</li>
+<li><strong>Mute AmbiDecoder</strong> to hear only the binaurally decoded signal.</li>
+</ul>
+<blockquote>
+<p>[!Tip:] Compare with <em>Solo/Mute</em> between AmbiDecoder and Binaural Decoder.</p></blockquote>
+<p><img src="first-order.png" alt="1.order_bf">
+Example B shows a 5th-order b-format Ambisonic.</p>
+<p><img src="5th-order-bf.png" alt="5th-order_bf">
+Now we can play back and listen to B-format files on eight speakers.</p>
+<p>To be able to listen to the B format through headphones, we will now set up a binaural decoder:</p>
+<ul>
+<li>Create a new <strong>64-channel track</strong> and load a <strong>binaural plugin</strong> of your choice into the FX window (e.g. <em>DearVR Ambi Micro.vst3</em>).</li>
+<li>Move the track <strong>to the beginning</strong> of the Reaper rack.</li>
+<li>Route the <strong>output of the Bformat master track</strong> to this binaural decoder (see GIF).</li>
+</ul>
+<p><img src="Binaural_Track.gif" alt="Binaural-track"></p>
+<ul>
+<li>Mute the AmbiDecoder to hear only the binaurally decoded signal.
+<img src="DearVR_binaurl.png" alt="DearVR_binaural"></li>
+</ul>
+<blockquote>
+<p>[!Tip:]
+Compare solo/mute between AmbiDecoder and binaural decoder.</p></blockquote>
+<h3 id="6-mono-source--ambisonics-encoder">6. Mono Source &amp; Ambisonics Encoder</h3>
+<ul>
+<li>Create a new track Mono-Source and load a mono audio file.</li>
+</ul>
+<p>Tip: Watch this  <a href="https://www.youtube.com/watch?v=aDa-vNWriLM&amp;t=119s">Video</a></p>
+<ol start="12">
+<li>Mono AmbieEncoder overview.
+<img src="MonoEncoder_01.png" alt="open monoencoder">
+<img src="MonoEncoder_load.png" alt="open_MonoEncoder"></li>
+</ol>
+<ul>
+<li>
+<p>In the FX window, load the ICST MonoEncoder.</p>
+</li>
+<li>
+<p>Add a AmbiEncoder(ICST) (1-4) &ndash;&gt; Mono-Encoder
+Routing:</p>
+</li>
+<li>
+<p>MonoEncoder → 64-channel output → Bformat master.</p>
+<p><img src="MonoEncoder.png" alt="MonnoEncoder"></p>
+</li>
+</ul>
+<h4 id="7-record-motions-in-the-reaper-track">7. Record motions in the Reaper track</h4>
+<p>Record motions in the MonoEncoder:
+<img src="rec_xyz.gif" alt="rec_xyz"></p>
+<p>Play back saved motion:</p>
+<p><img src="play_xyz.gif" alt="play_xyt"></p>
+<h3 id="8-using-the-multi-encoder">8. Using the Multi-Encoder</h3>
+<p>In the next example, I&rsquo;ll demonstrate how we use the <strong>Multi-Encoder</strong>:</p>
+<ol>
+<li>
+<p><strong>Insert the Multi-Encoder Track</strong></p>
+<ul>
+<li>Right-click in the empty Reaper track area and select <strong>“Insert Track from Template”</strong>.</li>
+<li>Navigate to <strong>ICST AmbiPlugins</strong> and choose <strong>“ICST_AmbiEncoder_Multi_8src”</strong>.</li>
+<li>This will open a Multi-Encoder with <strong>8 mono sources</strong>, already routed into the encoder.</li>
+</ul>
+<p><img src="MultiEncoder_routing.png" alt="MultiEncoder_routing | 550">
+2. <strong>Controlling Sources in the Multi-Encoder</strong></p>
+<ul>
+<li>If the routing is set up correctly, you can now control the <strong>placement and movement</strong> of up to <strong>8 sources</strong> within the Multi-Encoder.</li>
+</ul>
+</li>
+</ol>
+<h3 id="ambiencoder-settings">AmbiEncoder Settings</h3>
+<ol start="3">
+<li>
+<p>Understanding AmbiEncoder Settings**- The <strong>AmbiEncoder settings</strong> are crucial for your workflow. - The following GIF showcases the key <strong>AmbiEncoder features</strong>:</p>
+<p><img src="Enc_Settings.gif" alt="Enc_Settings">
+<img src="Enc_Settings.gif" alt="Enc_Settings"></p>
+</li>
+</ol>
+<blockquote>
+<p>[!Tip: ] Watch the AmbiEncoder <a href="https://www.youtube.com/watch?v=aDa-vNWriLM&amp;t=31s">Video tutorial</a>  for more details.</p></blockquote>
+<ol start="4">
+<li><strong>ICST Distance Function</strong>
+<ul>
+<li>A unique feature of the <strong>ICST Ambisonics Encoder</strong> is its <strong>distance function</strong>, developed by <strong>Martin Neukom</strong> at ICST.</li>
+<li>This function allows you to create various <strong>spatial configurations</strong>, simulating movement speeds from very fast to extremely slow.
+<img src="Distance.gif" alt="Distanc_overview">For in-depth instructions, refer to the <strong>Distance tutorial</strong>.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>[!Tip:] If working with <strong>distance</strong>, define it <strong>at the start</strong> of your project to scale all <strong>XYZ coordinates</strong> correctly. _(Example: Distance scale from 0.0 to 1.0).</p></blockquote>
+<h3 id="recording--editing-source-movements">Recording &amp; Editing Source Movements</h3>
+<ol start="5">
+<li>
+<p><strong>Recording Movements in the Multi-Encoder</strong></p>
+<ul>
+<li>
+<p>To understand how the Multi-Encoder works, let’s go through a <strong>recording example</strong>:</p>
+<ul>
+<li><strong>Set automation envelopes</strong> to <strong>“Write” mode</strong>.</li>
+<li>Press <strong>Play</strong> (Spacebar) in Reaper and move <strong>Src_1</strong> in the Multi-Encoder Radar.</li>
+<li>Repeat the process for other sources.</li>
+</ul>
+<p>MultiEnc_01_write:
+<img src="MultiEnc_01_write.gif" alt="MultiEnc_01_write"></p>
+<p>Here’s an example with <strong>Src_3</strong>:</p>
+<p><img src="Move_03.gif" alt="Encoder_move_03"></p>
+</li>
+</ul>
+</li>
+</ol>
+<p>Here’s an example with <strong>Src_3</strong>:The next step demonstrates how to manually edit the xyz envelopes.
+<img src="MultiEnc_Manuell_edit.gif" alt="Manuel_edit"></p>
+<ol start="6">
+<li>
+<p><strong>Manually Editing XYZ Envelopes</strong></p>
+<ul>
+<li>To refine movements, manually adjust the <strong>XYZ envelopes</strong>:</li>
+<li>Hold <strong>Shift</strong> and click on the envelope to create a new edit point.</li>
+<li>Move the point to adjust the <strong>XYZ coordinates</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Playing Back the Recorded Ambisonic Scene</p>
+</li>
+</ol>
+<p><img src="play_multienc.gif" alt="MultiEnc_plays_scene"></p>
+<h3 id="working-with-groups">Working with Groups</h3>
+<ol start="8">
+<li>
+<p><strong>Creating a Group in the Multi-Encoder</strong></p>
+<ul>
+<li>In the <strong>Radar Display</strong>, select multiple <strong>Src points</strong> to form a group.</li>
+<li>Assign a <strong>group name</strong> (e.g., <strong>G1</strong>).</li>
+</ul>
+</li>
+</ol>
+<p><img src="GP_select_scaled.png" alt="create_a_GP">
+<img src="GP_edit_scaled.png" alt="GP_name"></p>
+<ol start="9">
+<li><strong>Recording Group Movements</strong></li>
+</ol>
+<ul>
+<li>
+<p>Choose a recording mode:</p>
+<ul>
+<li><strong>“Latch”</strong> – Records only one source point.</li>
+<li><strong>“Touch”</strong> – Starts recording when a point is touched.</li>
+<li><strong>“Write”</strong> – Overwrites previous recordings.
+<img src="Rec_GP.gif" alt="Rec_GP"></li>
+</ul>
+<ol start="9">
+<li><strong>Playback &amp; Evaluation</strong>
+<img src="play_GP.gif" alt="Play_GP"></li>
+</ol>
+<ul>
+<li>Listen to the final <strong>group movement recording</strong> via <strong>speakers (Decoder)</strong> or <strong>headphones (Binaural Decoder)</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="finalizing--exporting">Finalizing &amp; Exporting</h3>
+<ol start="11">
+<li><strong>Rendering the B-Format Master</strong>
+<ul>
+<li>Once satisfied, follow these steps to <strong>export the B-Format</strong>:
+<ul>
+<li>Select <strong>Bformat-Master Track</strong> and set it to <strong>Solo</strong>.</li>
+<li>Open <strong>Menu &gt; Render</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>Render Settings:</strong></p>
+<p><img src="render-master.png" alt="Render_Master | 200"></p>
+<ol>
+<li><strong>Select Track (Stem Render)</strong> → Choose <strong>Bformat-Master</strong>.</li>
+<li><strong>File Name</strong> → Assign a <strong>B-Format filename</strong>.</li>
+<li><strong>Sample Rate</strong> → 48,000 kHz.</li>
+<li><strong>Channels</strong> → 64 (for <strong>7th-order Ambisonics</strong>).</li>
+<li><strong>Multichannel Format</strong> → Set to <strong>Multichannel Files</strong>.</li>
+<li><strong>Large File Support</strong> → Use <strong>Wave/RF64</strong>.</li>
+<li><strong>Click “Render”</strong>.</li>
+</ol>
+<p>Rendering-info:
+<img src="render_info.png" alt="render-info">
+After the rendering process, you will get a Rendering Info window with the Peak and LUFS information.</p>
+<ol start="8">
+<li>That&rsquo;s all, now you can drag and drop your B-Format onto the B-Format player track, set it to “Solo” and listen to the final result via the ICST decoder or the binaural decoder.</li>
+</ol>
+<p>🎧 Happy ambisonics!</p>
+<hr>
+<p>©2025 ICST</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

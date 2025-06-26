@@ -1,0 +1,694 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Johannes Schuett
+        |
+        ICST Ascolta Hörstunden
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.145.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Schuett" />
+  <meta
+    name="description"
+    content=" This is the ICST Ambisonics Tutorial Blog"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.86b1f7f8e46fb7f9432e28081186d24eb6cd881e4d058e84aef93462f1e41337.css" integrity="sha256-hrH3&#43;ORvt/lDLigIEYbSTrbNiB5NBY6Ervk0YvHkEzc=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/blog/ascolta/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ICST Ascolta Hörstunden">
+  <meta name="twitter:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Acousmatic music and its associated performance practice aims to create a situation of focused listening by keeping the means of sound production invisible and largely eliminating visual stimuli. The ICST archive contains numerous historical pieces in this tradition and promotes the creation of new acousmatic works through artistic residencies. The concert series ascolta – Akusmatische Hörstunde presents both newer and older works, played in the (usually multi-channel) original versions in the ICST composition studio (3.D02, level 3, Toni-Areal).">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/blog/ascolta/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="ICST Ascolta Hörstunden">
+  <meta property="og:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Acousmatic music and its associated performance practice aims to create a situation of focused listening by keeping the means of sound production invisible and largely eliminating visual stimuli. The ICST archive contains numerous historical pieces in this tradition and promotes the creation of new acousmatic works through artistic residencies. The concert series ascolta – Akusmatische Hörstunde presents both newer and older works, played in the (usually multi-channel) original versions in the ICST composition studio (3.D02, level 3, Toni-Areal).">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "blog",
+        "name": "ICST Ascolta Hörstunden",
+        "headline": "ICST Ascolta Hörstunden",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003cp\u003eInstitute for Computer Music and Sound Technology \/ (ICST) Zurich University of the Arts\u003c\/p\u003e\n\u003chr\u003e\n\u003cp\u003eAcousmatic music and its associated performance practice aims to create a situation of focused listening by keeping the means of sound production invisible and largely eliminating visual stimuli. The ICST archive contains numerous historical pieces in this tradition and promotes the creation of new acousmatic works through artistic residencies. The concert series \u003cem\u003eascolta – Akusmatische Hörstunde\u003c\/em\u003e presents both newer and older works, played in the (usually multi-channel) original versions in the ICST composition studio (3.D02, level 3, Toni-Areal).\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/blog\/ascolta\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Johannes Schuett"
+        },
+        "dateCreated": "0001-01-01T00:00:00.00Z",
+        "datePublished": "0001-01-01T00:00:00.00Z",
+        "dateModified": "0001-01-01T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Johannes Schuett",
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/blog\/ascolta\/",
+        "wordCount" : "309",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">The ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p> This is the ICST Ambisonics Tutorial Blog</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/home/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-plugins/"
+              
+              title=""
+              >ICST Ambisonics Plugins</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/icst-ambisonics-tools/"
+              
+              title=""
+              >ICST Ambisonics Tools</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Post</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/blog/"
+              
+              title=""
+              >Blog</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/links/"
+              
+              title=""
+              >Links</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>ICST Ascolta Hörstunden</h1>
+      
+      <p>Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts</p>
+<hr>
+<p>Acousmatic music and its associated performance practice aims to create a situation of focused listening by keeping the means of sound production invisible and largely eliminating visual stimuli. The ICST archive contains numerous historical pieces in this tradition and promotes the creation of new acousmatic works through artistic residencies. The concert series <em>ascolta – Akusmatische Hörstunde</em> presents both newer and older works, played in the (usually multi-channel) original versions in the ICST composition studio (3.D02, level 3, Toni-Areal).</p>
+<p><img src="Ascolta_Index.png" alt="Index"></p>
+<hr>
+<table>
+  <thead>
+      <tr>
+          <th>Termine (FS) 2025</th>
+          <th>Topic</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Raum</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/15-ascolta/"><strong>#15 Ascolta Akusmatische Hörstunde</strong></a></td>
+          <td><strong>Listen twice</strong></td>
+          <td><strong>06.05.2025</strong></td>
+          <td>18:00</td>
+          <td>3.D02</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/14-ascolta/">#14  Ascolta Akusmatische Hörstunde</a></td>
+          <td><strong>Listen twice</strong></td>
+          <td>22.04.2025</td>
+          <td>18:00</td>
+          <td>3.D02</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Termine (HS) 2024</td>
+          <td>Topic</td>
+          <td>Date</td>
+          <td>Time</td>
+          <td>Raum</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/13-ascolta/">#13 Ascolta Akusmatische Hörstunde</a></td>
+          <td><strong>Listen twice</strong></td>
+          <td><strong>17.12.2024</strong></td>
+          <td><strong>18:00</strong></td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/12-ascolta/">#12 Ascolta Akusmatische Hörstunde</a></td>
+          <td>Porträt Georg Katzer</td>
+          <td>22.10.2024</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+      <tr>
+          <td># <a href="https://ambisonics.ch/blog/11-ascolta/">#11 Ascolta Akusmatische Hörstunde</a></td>
+          <td>Porträt Mario Mary</td>
+          <td>11.06.2024</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+      <tr>
+          <td># <a href="https://ambisonics.ch/blog/10-ascolta/">#10 Ascolta Akusmatische Hörstunde</a></td>
+          <td>The Composer, Herself</td>
+          <td>19.03.2024</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Termine (HS) 2023</td>
+          <td>Topic</td>
+          <td>Date</td>
+          <td>Time</td>
+          <td>Raum</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/09-ascolta/">#09 Ascolta Akusmatische Hörstunde</a></td>
+          <td>Hans Tutschku: <strong><em>Remembering Japan</em></strong></td>
+          <td>05.12.2023</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/08-ascolta/">#08 Ascolta Akusmatische Hörstunde</a></td>
+          <td>Mesias Maiguashca: <strong><em>La Canción de la Tierra</em></strong></td>
+          <td>24.10.2023</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Termine (FS) 2023</td>
+          <td>Topic</td>
+          <td>Date</td>
+          <td>Time</td>
+          <td>Raum</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/07-ascolta/">#07 Ascolta Akusmatische Hörstunde</a></td>
+          <td>6 x 7</td>
+          <td>23.05.2023</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/06-ascolta/">#06 Ascolta Akusmatische Hörstunde</a></td>
+          <td>## Zbigniew Karkowski (Polen/Japan)</td>
+          <td>04.04.2023</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/05-ascolta/">#05 Ascolta Akusmatische Hörstunde</a></td>
+          <td>Field-Recordings  &amp; Soundscapes</td>
+          <td>14.03.2023</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Termine (HS) 2022</td>
+          <td>Topic</td>
+          <td>Date</td>
+          <td>Time</td>
+          <td>Raum</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/04-ascolta/">#04 Ascolta Akusmatische Hörstunde</a></td>
+          <td>Glocken</td>
+          <td>13.12.2022</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/03-ascolta/">#03  Ascolta Akusmatische Hörstunde</a></td>
+          <td>GRANULAR</td>
+          <td>01.11.2022</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/02-ascolta/">#02 Ascolta Akusmatische Hörstunde</a></td>
+          <td>Gerald Bennett</td>
+          <td>04.10.2022</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Termine (HS) 2019</td>
+          <td>Topic</td>
+          <td>Date</td>
+          <td>Time</td>
+          <td>Raum</td>
+      </tr>
+      <tr>
+          <td><a href="https://ambisonics.ch/blog/01-ascolta/">#01 Ascolta Akusmatische Hörstunde</a></td>
+          <td>Jean-Claude Risset</td>
+          <td>26.11.2019</td>
+          <td>18:00</td>
+          <td>3.D02, Ebene 3</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Johannes Schuett
+        2025
+      
+    </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/privacy-policy/"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
