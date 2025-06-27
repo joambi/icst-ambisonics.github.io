@@ -5,11 +5,16 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ---
 
-Acousmatic music and its associated performance practice aims to create a situation of focused listening by keeping the means of sound production invisible and largely eliminating visual stimuli. The ICST archive contains numerous historical pieces in this tradition and promotes the creation of new acousmatic works through artistic residencies. The concert series _ascolta – Akusmatische Hörstunde_ presents both newer and older works, played in the (usually multi-channel) original versions in the ICST composition studio (3.D02, level 3, Toni-Areal). 
+Acousmatic music and its associated performance practice aim to create a situation of focused listening by keeping the means of sound production invisible and essentially eliminating visual stimuli. The ICST archive contains numerous historical pieces in this tradition and promotes the creation of new acousmatic works through artistic residencies. The concert series _ascolta – Akusmatische Hörstunde_ presents newer and older works, played in the (usually multi-channel) original versions in the ICST composition studio (3.D02, level 3, Toni-Areal). 
 
 ![Index](Ascolta_Index.png)
 
 ---
+
+| Termine (HS) 2025                       | Topic       | Date | Time  | Raum  |
+| --------------------------------------- | ----------- | ---- | ----- | ----- |
+| [#17 Ascolta Akusmatische Hörstunde]()  |             |      | 18:00 | 3.D02 |
+| [#16  Ascolta Akusmatische Hörstunde]() | The Bformat |      | 18:00 | 3.D02 |
 
 | Termine (FS) 2025                                                                | Topic            | Date           | Time  | Raum  |
 | -------------------------------------------------------------------------------- | ---------------- | -------------- | ----- | ----- |

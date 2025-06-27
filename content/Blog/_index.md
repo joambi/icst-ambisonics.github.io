@@ -17,6 +17,7 @@ aliases:
 # ICST Kompositionsstudio
 
 - [ICST Kompositionsstudio Overview](icst-kompositionsstudio-overview)
+- [ICST Kompositionsstudio Residences](nandele_manguni)
 
 ---
 # ICST Ascolta Hörstunden
