@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "785ea755c9e7737d",
+    "type": "split",
+    "children": [
+      {
+        "id": "271184e5518fff0e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a41e2ee78e102ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nandele_maguni.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "nandele_maguni"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "34fe7304aefcc261",
+    "type": "split",
+    "children": [
+      {
+        "id": "881a5a39cd43bd3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0dcbaf17685ec5f0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c460d0faa05200ac",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6262097731c4fbe1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bfdd1d5de593f550",
+    "type": "split",
+    "children": [
+      {
+        "id": "48140c6377b60b57",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f37245bcd9aeb2a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "nandele_maguni.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for nandele_maguni"
+            }
+          },
+          {
+            "id": "5d9e645036cb725d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "nandele_maguni.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from nandele_maguni"
+            }
+          },
+          {
+            "id": "c2bb42a517850a9f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "91f2c7db8a2b7784",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "nandele_maguni.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of nandele_maguni"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-importer:Open Importer": false,
+      "github-sync:Sync with Remote": false,
+      "obsidian-git:Open Git source control": false,
+      "image-preview-on-icon-hover:1751034835707": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "DEVONlink-obsidian:DEVONlink": false,
+      "markitdown:Convert to Markdown with Markitdown": false
+    }
+  },
+  "active": "3a41e2ee78e102ac",
+  "lastOpenFiles": []
+}
