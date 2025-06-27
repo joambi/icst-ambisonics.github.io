@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST Kompositionsstudio Residences/nandele_maguni/index.md",
+                "file": "content/Blog/ascolta/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -205,11 +205,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1750952852316": false,
+      "image-preview-on-icon-hover:1751006984410": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -226,8 +226,8 @@
   },
   "active": "e8538778c0de3738",
   "lastOpenFiles": [
-    "content/Blog/ICST Kompositionsstudio Residences/_index.md",
     "content/Blog/ICST Kompositionsstudio Residences/nandele_maguni/index.md",
+    "content/Blog/ICST Kompositionsstudio Residences/_index.md",
     "nandele_maguni.md",
     "public/blog/icst-kompositionsstudio-residences/nandele_maguni/index.html",
     "public/blog/icst-kompositionsstudio-residences/nandele_maguni/Unknown.jpeg",
