@@ -221,10 +221,11 @@
       "obsidian-git:Open Git source control": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
-      "DEVONlink-obsidian:DEVONlink": false
+      "DEVONlink-obsidian:DEVONlink": false,
+      "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "1597bac92f6118b8",
+  "active": "e8538778c0de3738",
   "lastOpenFiles": [
     "public/blog/docs/index.html",
     "public/blog/docs",
