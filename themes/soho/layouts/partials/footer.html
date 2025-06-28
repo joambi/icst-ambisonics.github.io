@@ -1,0 +1,15 @@
+<footer>
+  <div>
+    <p>
+      &copy; {{ $.Site.Params.Copyright }} {{ now.Format "2006"}}
+
+      {{ with $.Site.Params.License -}}
+      &middot; <a href="{{ $.Site.Params.licenseURL }}" target="_blank">{{ . | safeHTML }}</a>
+      {{- end }}
+
+      {{ with $.Site.Params.BuiltWith -}}
+      &middot; Build with <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://themes.gohugo.io/soho/" target="_blank">Soho</a> theme
+      {{- end }}
+    </p>
+  </div>
+</footer>

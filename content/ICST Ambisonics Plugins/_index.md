@@ -1,54 +1,29 @@
 ---
-date: 2025-02-02T04:14:54-08:00
-draft: false
-params:
-  author: Johannes Schuett
-title: ICST Ambisonics Plugins
-weight: 10
-tags:
+aliases: []
+author: Johannes Schuett
+tags: []
+title: New
+date: 2025-01-20T02:35:00
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
-------------------------------------------------------------------------
-
-
 
 # The ICST AmbiPlugins: 
 
-[Overview](01_overview)
 
-[Installation](02_installation)
+- [01 Overview](01_overview)
 
-[How_it_works](03_how_it_works)
+- [02 Installation](02_installation)
 
-[Quick_start](04_quick_start)
+- [03 How it works](03_how_it_works)
 
-[Open_track_templates](05_open_track_templates)
+- [04 Quickstart](04_quick_start)
 
-[Step_by_step_setup](06_step_by_step_setup)
+- [05 Open Track-Templates](05_open_track_templates)
 
-[Shortcuts](07_shortcuts)
+- [06 Step by Step Setup](06_step_by_step_setup)
 
----
+- [07 Shortcuts](07_shortcuts)
 
-**Advantage:**
-
-> * Time-based work
-> * Intuitive
-> * Compatible with most DAWs (up to 3rd order)
-> * Reaper & Ardour 8 (up to 7th order)
-
-**Disadvantage:**
-
-> * Not as flexible to program.
-
-**Recommendation:**
-
-> * For fixed media
-> * Film/multimedia
-
-[ICST Ambisonics Plugins](https://www.zhdk.ch/forschungsprojekt/icst-ambisonics-plugins-555245)
-
-----
-©2025 ICST
+ - [New](new)

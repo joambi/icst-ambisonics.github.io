@@ -1,0 +1,29 @@
+{{ define "main" -}}
+<div class="post">
+  <h1 class="title">{{ .Title }}</h1>
+  {{ with .Params.tagline }}<span class="tagline">{{ . }}</span>{{ end }}
+
+  {{ if ne .Type "page" -}}
+  <div class="post-date">
+    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> <span class="readtime">&middot; {{ .ReadingTime }} min read</span>
+  </div>
+  {{- end }}
+
+  <div>
+  {{ .Content }}
+  </div>
+
+  {{ partial "tags.html" . }}
+
+  {{ if (and (ne .Params.DisableShare true) (ne .Params.disable_share true)) -}}
+  {{ partial "share.html" . }}
+  {{- end }}
+
+  {{ if (and .Site.Config.Services.Disqus.Shortname (ne .Params.DisableComments true) (ne .Params.disable_comments true)) -}}
+  <div class="comments">
+    <h2>Comments</h2>
+    {{ template "_internal/disqus.html" . }}
+  </div>
+  {{- end }}
+</div>
+{{- end }}

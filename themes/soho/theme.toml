@@ -1,0 +1,16 @@
+name = "Soho"
+license = "MIT"
+licenselink = "https://github.com/alexandrevicenzi/soho/blob/master/LICENSE.md"
+description = "A minimalist and mobile first theme for Hugo"
+tags = ["blog", "responsive", "light", "minimal"]
+features = ["blog", "seo", "responsive", "mobile", "disqus", "analytics"]
+min_version = "0.54.0"
+
+[author]
+    name = "alexandrevicenzi"
+    homepage = "https://alxd.dev"
+
+[original]
+    author = "spf13"
+    homepage = "http://spf13.com"
+    repo = "https://github.com/spf13/hyde"

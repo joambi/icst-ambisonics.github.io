@@ -1,9 +1,9 @@
 ---
-title: 
-date: 2025-03-16T09:44:58+01:00
-Description: 
-tags: 
-Categories: 
+title: icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication
+date: 2025-03-16T09:44:58
+Description:
+tags:
+Categories:
 DisableComments: false
 ---
 
@@ -27,7 +27,7 @@ Generate motion data in Max and send it via OSC to the _ICST AmbiEncoder_ in you
 
 - Open the _ICST AmbiEncoder_ in an FX slot and navigate to **Encoder Settings**.
 - Under **OSC In**, activate the OSC input port (e.g., `50001`).
-   ![OSC-IN](osc-port.png)
+   ![OSC-IN](content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-port.png)
 - - Click **OSC Out** and enable the OSC output port.
     - Uses **ICST AmbiPlugins Standard XYZ Index**.
 - The Max demo patch listens for:  

@@ -1,0 +1,13 @@
+{{ define "main" -}}
+<ul class="posts">
+  <h1>Tag: {{ .Title }}</h1>
+  {{ range .Data.Pages -}}
+  <li>
+    <div class="flex">
+      <a href="{{ .Permalink }}" class="truncate">{{ .Title }}</a>
+      <time class="nowrap" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    </div>
+  </li>
+  {{- end }}
+</ul>
+{{- end }}

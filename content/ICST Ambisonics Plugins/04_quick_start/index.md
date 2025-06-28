@@ -1,11 +1,11 @@
 ---
-title: 
-date:
+title: 04_quick_start
+date: 2025-01-28T14:31:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ----
-## 01 Quick Start with **ICST_AmbiPlugins_MultiEncoder.RPP**
+## Quick Start with **ICST_AmbiPlugins_MultiEncoder.RPP**
 
 Get started quickly using the **MultiEncoder template** with this simple workflow:
 

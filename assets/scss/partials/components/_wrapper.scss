@@ -1,0 +1,59 @@
+@use 'hugo:vars' as hugo;
+@use 'modules/config' as conf;
+@use 'modules/variables' as var;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include conf.desktop {
+    flex-direction: row;
+  }
+
+  @include conf.widescreen {
+    justify-content: center;
+  }
+
+  &__main {
+    width: 100%;
+
+    @include conf.desktop {
+      width: hugo.$content-ratio;
+    }
+
+    @include conf.widescreen {
+      width: hugo.$content-ratio-wide;
+    }
+
+    &--fullscreen {
+      margin-top: 20px;
+
+      @include conf.desktop {
+        width: 100%;
+        margin-top: 0px;
+      }
+
+      @include conf.widescreen {
+        width: var.$body-max-width;
+      }
+    }
+  }
+
+  &__sidebar {
+    width: 100%;
+    padding: 16px 0;
+
+    @include conf.desktop {
+      width: hugo.$sidebar_ratio;
+      padding: 0;
+    }
+
+    @include conf.widescreen {
+      width: hugo.$sidebar_ratio_wide;
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+}

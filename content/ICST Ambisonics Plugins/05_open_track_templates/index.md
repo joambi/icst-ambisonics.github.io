@@ -1,5 +1,6 @@
 ---
-date:
+date: 2025-01-27T14:32:00
+title: 05_open_track_templates
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

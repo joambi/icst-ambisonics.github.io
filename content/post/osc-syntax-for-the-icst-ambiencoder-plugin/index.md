@@ -1,9 +1,9 @@
 ---
-title: 
+title: osc-syntax-for-the-icst-ambiencoder-plugin
 date: 2025-03-16T09:44:58+01:00
 Description: OSC-Syntax
-tags: 
-Categories: 
+tags:
+Categories:
 DisableComments: false
 ---
 

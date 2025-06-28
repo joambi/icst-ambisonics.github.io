@@ -1,9 +1,9 @@
 ---
-title: 
-date: 2025-03-16T09:44:58+01:00
-Description: 
-tags: 
-Categories: 
+title: OSC-Max-Group-Manipulation-in-AmbiEncoder
+date: 2025-03-16T09:44:58
+Description:
+tags:
+Categories:
 DisableComments: false
 ---
 
@@ -16,7 +16,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 1. Prepare MaxMSP and the ICST AmbiEncoder for communicate over OSC.
 	- Open the “ICST AmbiEncoder” in an FX slot and go to “Encoder Settings”
 	- Go to “OSC In” and activate the incoming OSC port: (eg. 50001)
-   ![OSC-IN](osc-port.png)
+   ![OSC-IN](docs/blog/new/osc-port.png)
 	- 
 - Click on the 'OSC Out' tap and activate the OSC Out port: 
    - ICST AmbiPlugins Standard XYZ Index

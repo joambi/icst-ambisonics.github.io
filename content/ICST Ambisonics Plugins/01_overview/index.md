@@ -1,17 +1,18 @@
 ---
-date: 2025-02-02T04:14:54-08:00
+date: 2025-06-02T04:14:54
 draft: false
 params:
   author: Johannes Schuett
 weight: 10
-tags: 
-title:
+tags:
+title: 01_Overview
 ---
 
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 * * *
+
 # Overview
 The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and several additional spatial audio production tools. The following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
 
@@ -23,11 +24,11 @@ The ICST Ambisonics plugins consist of the following plugin formats:
 
 Find individual pages here:
 
-[What is New](https://ambisonics.ch/blog/new/)
+- [What is New](https://ambisonics.ch/blog/new/)
 
-[ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder)
+- [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder) (Mono & Multi Encoder)
 
-[ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
+- [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
 
 **Free download here:**
 -  Binary Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
@@ -36,7 +37,7 @@ Find individual pages here:
 - Youtube: [https://www.youtube.com/\@ICSTAmbisonics](https://www.youtube.com/@ICSTAmbisonics)
 - <span style="color:rgb(220, 20, 60)">Warning</span>:  LV2 is very experimental
 
-**Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>**
+Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>
 
 **Developer - team**:
 -   Christian Schweizer/Johannes Schuett/Martin Neukom

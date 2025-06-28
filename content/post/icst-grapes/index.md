@@ -1,9 +1,9 @@
 ---
-title: ICST Ambisonics Plugins and Grapes
+title: icst-grapes
 date: 2025-03-16T09:44:58+01:00
-Description: 
-tags: 
-Categories: 
+Description:
+tags:
+Categories:
 DisableComments: false
 ---
 

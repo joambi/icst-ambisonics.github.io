@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build: .
+    working_dir: /blog
+    command: hugo server --logLevel info --bind "0.0.0.0" --port 1313 --watch -t soho
+    ports:
+      - "1313:1313"
+    volumes:
+      - ./exampleSite:/blog
+      - .:/blog/themes/soho

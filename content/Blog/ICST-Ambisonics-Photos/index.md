@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 photo gallery
 
-![Kompstudio](Kompstudio.jpg)
+![Kompstudio](content/Blog/ICST-Ambisonics-Photos/Kompstudio.jpg)
 
 ![foto2](_AAA2437.jpg)
 

@@ -1,0 +1,23 @@
+@use 'modules/color_theme' as color;
+@use 'modules/config' as conf;
+
+.tag {
+  display: inline-block;
+  font-size: 1.4rem;
+
+  @include color.themed() {
+    color: color.t('primary-light');
+  }
+
+  @include conf.ltr {
+    margin: 5px 8px 5px 0;
+  }
+
+  @include conf.rtl {
+    margin: 5px 0 5px 8px;
+  }
+
+  &::before {
+    content: '#';
+  }
+}

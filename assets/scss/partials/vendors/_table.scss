@@ -1,0 +1,20 @@
+@use 'modules/color_theme' as color;
+
+table {
+  display: table;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+tr {
+  display: table-row;
+}
+
+th,
+td {
+  display: table-cell;
+  padding: 8px;
+  @include color.themed() {
+    border: color.t('border');
+  }
+}

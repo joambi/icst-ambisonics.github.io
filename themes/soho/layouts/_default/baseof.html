@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"{{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ hugo.Generator }}
+
+  {{ if .IsHome -}}
+  <title>{{ .Site.Title }}</title>
+  {{- else -}}
+  <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  {{- end }}
+
+  <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+
+  {{ partial "seo.html" . }}
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="{{ `css/print.css` | relURL }}"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="{{ `css/poole.css` | relURL }}">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="{{ `css/hyde.css` | relURL }}">
+
+  {{ partial "theme-color.html" . }}
+
+  {{ range $.Site.Params.customCss -}}
+  <link type="text/css" rel="stylesheet" href="{{ . | relURL }}">
+  {{- end}}
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <!-- RSS -->
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
+  {{ end -}}
+</head>
+<body>
+  {{ partial "sidebar.html" . }}
+
+  <main class="content container">
+  {{ block "main" . -}}{{- end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="{{ `js/jquery.min.js` | relURL }}"></script>
+  <script src="{{ `js/soho.js` | relURL }}"></script>
+
+  {{ range $.Site.Params.customJs -}}
+  <script src="{{ . | relURL }}"></script>
+  {{- end}}
+
+    {{ if not hugo.IsServer }}
+      {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
+</body>
+</html>

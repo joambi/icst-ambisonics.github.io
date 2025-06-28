@@ -1,0 +1,35 @@
+{{ with $.Site.Params.themeColor }}
+<style type="text/css">
+  .sidebar {
+    background-color: {{ . }};
+  }
+
+  .read-more-link a {
+    border-color: {{ . }};
+  }
+
+  .read-more-link a:hover {
+    background-color: {{ . }};
+  }
+
+  .pagination li a {
+    color: {{ . }};
+    border: 1px solid {{ . }};
+  }
+
+  .pagination li.active a {
+    background-color: {{ . }};
+  }
+
+  .pagination li a:hover {
+    background-color: {{ . }};
+    opacity: 0.75;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: {{ . }};
+  }
+</style>
+{{ end }}

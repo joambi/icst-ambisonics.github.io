@@ -1,15 +1,13 @@
 ---
-aliases:
-  - posts
-  - articles
-  - blog
-  - showcase
-  - docs
+aliases: []
+title: ICST Studio Blog
+date: 2025-06-12T16:13:00
+---
 ---
 
 # BLOG
 
-- [New](new)
+- [ICST Studio Blog](ICST Studio Blog)
 - [Notes](notes)
 - [What we now](what_we_now)
 
@@ -17,6 +15,7 @@ aliases:
 # ICST Kompositionsstudio
 
 - [ICST Kompositionsstudio Overview](icst-kompositionsstudio-overview)
+- [ICST Kompositionsstudio Residences](ICST Resident*innen im Kompositionsstudio)
 
 ---
 # ICST Ascolta Hörstunden

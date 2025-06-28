@@ -1,5 +1,6 @@
 ---
-title:
+title: zylia
+date: 2025-02-28T09:56:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -8,3 +9,4 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 # How you record with Zylia
 
 
+- coming soon....

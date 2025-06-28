@@ -1,9 +1,9 @@
 ---
-title: ICST AmbiEncoder OSC to FX
-date: 2025-03-16T09:44:58+01:00
+title: osc-2-fx
+date: 2025-05-16T09:44:58
 Description: osc
-tags: 
-Categories: 
+tags:
+Categories:
 DisableComments: false
 ---
 

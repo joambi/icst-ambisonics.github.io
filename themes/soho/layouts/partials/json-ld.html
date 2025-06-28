@@ -1,0 +1,134 @@
+{{ $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": {{ .Site.BaseURL | printf "%s#author" }},
+      "name": {{ .Site.Params.author }},
+      "image": {
+        "@type":"ImageObject",
+        {{ with .Site.Params.gravatar -}}
+        "url": {{ md5 . | printf `"https://www.gravatar.com/avatar/%s?s=400&d=mp"` | safeJS }}
+        {{- else }}
+        {{ with .Site.Params.profilePicture -}}
+        "url": {{ . | absURL | printf `"%s"` | safeJS }}
+        {{ end -}}
+        {{ end }}
+      },
+      "description": {{ .Site.Params.description }}
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ .Site.BaseURL | printf "%s#website" }},
+      "url": {{ .Site.BaseURL }},
+      "name": {{ .Site.Title }},
+      "description": {{ .Site.Params.description }},
+      "publisher": {
+        "@id": {{ $.Site.BaseURL | printf "%s#author" }}
+      },
+      "inLanguage": {{ .Site.LanguageCode }}
+    },
+    {{- with .Site.Params.images -}}
+    {{- range . }}
+    {
+      "@type": "ImageObject",
+      "url": {{ . | absURL | printf `"%s"` | safeJS }},
+      "caption": {{ $.Site.Title }}
+    },
+    {{- end }}
+    {{- end }}
+    {
+      "@type": "WebPage",
+      "@id": {{ .Permalink | printf "%s#webpage" }},
+      "url": {{ .Permalink }},
+      "name": {{ .Title }},
+      "isPartOf": {
+        "@id": {{ .Site.BaseURL | printf "%s#website" }}
+      },
+      "about": {
+         "@id": {{ .Site.BaseURL | printf "%s#author" }}
+      },
+      {{- if not .PublishDate.IsZero }}
+      "datePublished": {{ .PublishDate.Format $ISO8601 }},
+      {{- end }}
+      {{- if not .Lastmod.IsZero }}
+      "dateModified": {{ .Lastmod.Format $ISO8601 }},
+      {{- end }}
+      "description": {{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }},
+      "inLanguage": {{ .Site.LanguageCode }},
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            {{ .Permalink }}
+          ]
+        }
+      ]
+    }{{ if .IsPage }},
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": {{ .Permalink | printf "%s#webpage" }}
+      },
+      "mainEntityOfPage": {
+        "@id": {{ .Permalink | printf "%s#webpage" }}
+      },
+      "headline": {{ .Title }},
+      {{- with .Params.images }}
+      "image": [
+        {{- range $idx, $url := . -}}{{- if $idx -}},{{- end }}
+        {{ $url | absURL -}}
+        {{ end }}
+      ],
+      {{- end }}
+      {{- if not .PublishDate.IsZero }}
+      "datePublished": {{ .PublishDate.Format $ISO8601 }},
+      {{- end }}
+      {{- if not .Lastmod.IsZero }}
+      "dateModified": {{ .Lastmod.Format $ISO8601 }},
+      {{- end }}
+      "publisher": {
+        "@id": {{ .Site.BaseURL | printf "%s#author" }}
+      },
+      "keywords": [
+      {{- if isset .Params "tags" -}}
+      {{- range $idx, $cat := .Params.tags -}}
+        {{- with $.Site.GetPage "tags" -}}
+        {{- with .GetPage $cat -}}{{- if $idx -}},{{- end }}
+        {{ .Title -}}
+        {{ end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- end }}
+      ],
+      "articleSection": [
+      {{- if isset .Params "categories" -}}
+      {{- range $idx, $cat := .Params.categories -}}
+        {{- with $.Site.GetPage "categories" -}}
+        {{- with .GetPage $cat -}}{{- if $idx -}},{{- end }}
+        {{ .Title -}}
+        {{ end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- end }}
+      ],
+      "inLanguage": {{ .Site.LanguageCode }},
+      "author": {
+        "@type": "Person",
+        "name": {{ .Params.author }}
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            {{ .Permalink | printf "%s#comments" }}
+          ]
+        }
+      ]
+    }{{ end }}
+  ]
+}
+</script>

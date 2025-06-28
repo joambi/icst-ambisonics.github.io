@@ -1,6 +1,6 @@
 ---
-title: ICST MultiEncoder and GP-manipulation
-date: 2025-03-24T13:00:00
+title: ICST MultiEncoder – Group Animation
+date: 2025-05-28T13:00:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

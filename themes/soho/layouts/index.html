@@ -1,0 +1,28 @@
+{{ define "main" -}}
+  <div class="posts">
+    {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.MainSections -}}
+    {{- $paginator := .Paginate $pages -}}
+
+    {{ range $paginator.Pages }}
+      <article class="post">
+        <h1 class="post-title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h1>
+
+        <div class="post-date">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> &middot; {{ .ReadingTime }} min read
+        </div>
+
+        <div>
+          {{ .Summary }}
+        </div>
+
+        <div class="read-more-link">
+          <a href="{{ .Permalink }}">Read More</a>
+        </div>
+      </article>
+    {{- end }}
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+{{- end }}

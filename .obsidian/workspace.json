@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Einsicht.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Einsicht"
+              "title": "README"
+            }
+          },
+          {
+            "id": "b787e49fed5742d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Blog/ICST Composer Studio Blog/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 604.5
   },
   "right": {
     "id": "bfdd1d5de593f550",
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Einsicht.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Einsicht"
+              "title": "Backlinks for Untitled"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Einsicht.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Einsicht"
+              "title": "Outgoing links from Untitled"
             }
           },
           {
@@ -142,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Einsicht.md",
+                "file": "Untitled.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Einsicht"
+              "title": "Outline of Untitled"
             }
           }
         ]
@@ -160,6 +175,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "image-preview-on-icon-hover:1751104048352": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -169,46 +185,61 @@
       "obsidian-importer:Open Importer": false,
       "github-sync:Sync with Remote": false,
       "obsidian-git:Open Git source control": false,
-      "image-preview-on-icon-hover:1751034835707": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
       "DEVONlink-obsidian:DEVONlink": false,
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "3a41e2ee78e102ac",
+  "active": "b787e49fed5742d6",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Untitled 1.md",
-    "public/post/gyrosc/gyrosc-screenshots-2.5.png",
-    "public/post/osc-max-group-manipulation-in-ambiencoder/osc-euler-abs.gif",
-    "public/icst-ambisonics-plugins/01_overview/Overview_v3.1.png",
-    "public/blog/icst-kompositionsstudio-speaker-settings/2023-04-Stereo.jpg",
-    "public/blog/new/Speaker_setting_managment.gif",
-    "public/blog/new/OSC_abs_angel.gif",
-    "public/blog/icst-kompositionsstudio-regie/DisplayLink_4.jpeg",
-    "public/blog/icst-kompositionsstudio-ambisonics-setting/studio-speakers.jpg",
-    "public/blog/new/1202-youtube-759723749.png",
-    "public/blog/icst-kompositionsstudio-pre-installation/TotalMix.png",
-    "public/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js",
-    "public/scss/main.min.02f8abdc58ec06d9c9f48196f87cc2b7a93b13103269f7b550421ee6748b10fa.css",
-    "public/scss",
-    "public/downloads/ICST_Ambisonics_Plugins_Speaker-Settings.tar",
-    "public/downloads/kompositionsstudio-speakers-max.txt.zip",
-    "public/_resources",
-    "nandele_maguni.md",
-    "themes/anatole/resources/_gen/assets/scss/scss/anatole.scss_dcc8b7002348ef29d44bd1c4b6ae0aca.json",
-    "themes/anatole/resources/_gen/assets/scss/scss/anatole.scss_6dd5ee34d337299a377a4ab7b84829ac.json",
-    "themes/anatole/resources/_gen/assets/scss/scss/anatole.rtl.scss_97af51e696731e38130ed73ef4f4756e.json",
-    "themes/anatole/resources/_gen/assets/scss/scss/anatole.rtl.scss_91e1ad794daba18680ca1041efc12aed.json",
-    "themes/anatole/exampleSite/content/arabic/post/_index.md",
-    "themes/anatole/exampleSite/content/arabic/_index.md",
-    "templates/index_tut_temp.md",
-    "ICST MultiDecoder.md",
-    "Einsicht.md",
-    "Aussicht.md",
-    "Ansicht.md",
-    "15_Ascolta_Ablauf.md",
-    "14_Ascolta_Ablauf.md"
+    "content/Blog/ICST Studio Residences/nandele_maguni/index.md",
+    "content/Blog/ICST Composer Studio Blog/index.md",
+    "content/Blog/ICST Studio Residences/_index.md",
+    "content/ICST Ambisonics Plugins/_index.md",
+    "01_overview.md",
+    "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
+    "content/Blog/ICST Composer Studio Overview/index.md",
+    "content/Blog/_index.md",
+    "public/blog/icst-composer-studio-overview/index.html",
+    "public/blog/icst-composer-studio-overview/ICST_STUDIO.png",
+    "public/blog/icst-composer-studio-overview",
+    "public/blog/icst-composer-studio-blog/index.html",
+    "public/blog/icst-composer-studio-blog/KompStudio.jpg",
+    "public/blog/icst-composer-studio-blog",
+    "public/blog/blog/icst-composer-studio-blog/index.html",
+    "public/blog/blog/icst-composer-studio-blog/KompStudio.jpg",
+    "public/blog/blog/icst-composer-studio-blog",
+    "public/blog/blog/icst-composer-studio-overview/index.html",
+    "public/blog/blog/icst-composer-studio-overview/ICST_STUDIO.png",
+    "public/blog/blog/icst-composer-studio-overview",
+    "public/blog/blog/icst-kompositionsstudio-overview/index.html",
+    "public/blog/blog/icst-kompositionsstudio-overview/ICST_STUDIO.png",
+    "public/blog/blog/icst-kompositionsstudio-overview",
+    "public/blog/blog/icst-studio-residences/nandele_maguni/Unknown.jpeg",
+    "public/blog/blog/icst-studio-residences/nandele_maguni/IMG_0071.jpg",
+    "public/blog/blog/icst-studio-blog/KompStudio.jpg",
+    "public/blog/blog/icst-studio-residences-1/nandele_maguni/Unknown.jpeg",
+    "public/blog/blog/icst-studio-residences-1/nandele_maguni/IMG_0071.jpg",
+    "content/Blog/ICST Studio Residences/Content.md",
+    "ICST.md",
+    "content/ICST Ambisonics Plugins/NEW/index.md",
+    "content/Blog/ICST Bformat Archive/index.md",
+    "icst_air.md",
+    "content/Blog/Downloads/index.md",
+    "content/Blog/ascolta/index.md",
+    "content/Blog/ICST Studio Residences/2024/Residency-a-icst-studio.md",
+    "2024.md",
+    "content/post/ableton_reaper/index.md",
+    "content/ICST Studio-Residences/nandele_maguni.md",
+    "content/Blog/NOTES/index.md",
+    "content/post/Zylia/index.md",
+    "zylia.md",
+    "content/post/_index.md",
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/index.md",
+    "content/ICST Ambisonics Plugins/07_shortcuts/index.md",
+    "content/ICST Ambisonics Plugins/05_open_track_templates/index.md",
+    "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
+    "docs/blog/what_we_now/Ableton2Reaper.canvas"
   ]
 }
