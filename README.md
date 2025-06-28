@@ -1,1 +1,1 @@
-This is the new Tutorial Blog for the ICST Ambisonics Stuff.
+This is the new Blog for the ICST Ambisonics Stuff.
