@@ -1,7 +1,7 @@
 baseURL = 'https://ambisonics.ch/'
 languageCode = 'en-us'
 title = 'The ICST Ambisonics Site'
-theme = 'anatole'
+theme = 'soho'
 enableEmoji = true
 ignoreLogs = 'warning-goldmark-raw-html'
 
@@ -22,7 +22,7 @@ profilePicture = "images/AmbiPlugin_logo.gif"
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)']]
 
-mainSections = ["blog"]
+mainSections = ["home"]
 favicon = "favicons/"
 rssFullContent = true
 contentratio = 0.2
