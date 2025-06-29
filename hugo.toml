@@ -3,29 +3,17 @@ languageCode = 'en-us'
 title = 'The ICST Ambisonics Site'
 theme = 'anatole'
 enableEmoji = true
-#ignoreLogs = 'warning-goldmark-raw-html'
 
-# website title
 [params]
 title = "The ICST Ambisonics"
 author = "Johannes Schuett"
 singleDateFormat = "2006-01-02"
-description = " This is the ICST Ambisonic Blog"
+description = " This is the ICST Ambisonics Tutorial Blog"
 profilePicture = "images/AmbiPlugin_logo.gif"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      [markup.goldmark.extensions.passthrough]
-        enable = true
-        [markup.goldmark.extensions.passthrough.delimiters]
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)']]
-
-mainSections = ["home"]
+mainSections = ["blog"]
 favicon = "favicons/"
 rssFullContent = true
-contentratio = 0.2
+contentratio = 0.6 
 
 ## Social links
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
@@ -33,7 +21,6 @@ contentratio = 0.2
 icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/joambi"
-
 
 ## Menu items
 [menu]
@@ -64,7 +51,7 @@ url = "https://github.com/joambi"
   
   [[menu.main]]
   name = "Post"
-  weight = 500
+  weight = 400
   identifier = "post"
   url = "/post/"
   

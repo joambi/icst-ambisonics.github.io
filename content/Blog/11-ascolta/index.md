@@ -1,6 +1,6 @@
 ---
 date: 2025-01-12T15:17:00
-title:
+title: 11-ascolta
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -62,7 +62,7 @@ _Eintritt frei_ 
 ### Mario MARY
 
 An Argentine composer born April 25, 1961 in Buenos Aires.
-![Mario Mary](mario_Mary.jpg)
+![Mario Mary](content/Blog/11-ascolta/mario_Mary.jpg)
 
 After gaining a diploma in composition at the University of La Plata  in Argentina, Mario Mary continued his training at the GRM, the Paris  Conservatory and Ircam. He obtained a doctorate in the aesthetics,  science and technology of the arts,  at the University of Paris VIII,  where he taught computer-assisted composition (1996-2010).
 
