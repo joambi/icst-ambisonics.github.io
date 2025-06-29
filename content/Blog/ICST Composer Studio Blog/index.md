@@ -7,16 +7,11 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ![ICST_KompStudio](KompStudio.jpg)
 
-- [ICST STUDIO RESIDENCES]()
-- [ICST COMPOSER STUDIO]()
-- [ICST ASCOLTA LISTENING SESSIONS]()
-- [ICST STUDIO]()
 
 # BLOG
 
 - [Notes](https://ambisonics.ch/blog/notes/)
 - [What we now](https://ambisonics.ch/blog/what_we_now/)
-
 
 ---
 # ICST Composer Studio
