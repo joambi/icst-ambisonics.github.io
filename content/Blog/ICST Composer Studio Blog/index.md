@@ -21,10 +21,13 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ---
 # ICST Composer Studio
 
-- [ICST Composer Studio Overview](icst-kompositionsstudio-overview)
+- [ICST Composer Studio Overview](https://ambisonics.ch/blog/icst-composer-studio-overview/)
+
+# ICST Studio Residencies
+
 - [ICST Studio Residencies]()
 - [# Previous residences of the ICST Composer Studio](ICST Resident*innen im Kompositionsstudio)
-- 
+
 
 ---
 # ICST Ascolta Hörstunden

@@ -1,6 +1,6 @@
 ---
 title: Nandele Maguni
-date: 2025-01-27T16:08:00
+date: 2025-06-27T13:08:00
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts

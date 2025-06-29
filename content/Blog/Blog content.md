@@ -10,17 +10,17 @@ date: 2025-06-28T16:13:00
 - [Notes](https://ambisonics.ch/blog/notes/)
 - [What we now](https://ambisonics.ch/blog/what_we_now/)
 
-
 ---
+!Under construction!
 # ICST Composer Studio
 
-- [ICST Composer Studio Overview](icst-kompositionsstudio-overview)
+- [ICST STUDIO RESIDENCES](https://ambisonics.ch/blog/icst-studio-residences/)
+- [ICST Composer Studio Overview]()
 - [ICST Studio Residencies]()
 - [# Previous residences of the ICST Composer Studio](ICST Resident*innen im Kompositionsstudio)
-- 
 
 ---
-# ICST Ascolta Hörstunden
+# ICST Ascolta listening sessions
 
 - [Ascolta Akusmatische Hörstunden](ascolta)
 
