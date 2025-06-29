@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ascolta/index.md",
+                "file": "content/Blog/10-ascolta/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -207,11 +207,14 @@
   },
   "active": "be4cebd6ca53c6f8",
   "lastOpenFiles": [
+    "content/Blog/11-ascolta/index.md",
+    "content/Blog/ICST Kompositionsstudio Regie/index.md",
+    "content/Blog/10-ascolta/index.md",
+    "content/Blog/ascolta/index.md",
     "content/Blog/15-ascolta/index.md",
     "content/Blog/14-ascolta/index.md",
     "content/Blog/13-ascolta/index.md",
     "content/Blog/12-ascolta/index.md",
-    "content/Blog/10-ascolta/index.md",
     "content/Blog/09-ascolta/index.md",
     "content/Blog/08-ascolta/index.md",
     "content/Blog/07-ascolta/index.md",
@@ -221,7 +224,6 @@
     "content/Blog/03-ascolta/index.md",
     "content/Blog/02-ascolta/index.md",
     "content/Blog/01-ascolta/index.md",
-    "content/Blog/11-ascolta/index.md",
     "content/Blog/13-ascolta/ascolta.png",
     "content/Blog/_index.md",
     "exampleSite/content/english/imprint.md",
@@ -232,8 +234,6 @@
     "exampleSite/content/english/about.md",
     "exampleSite/content/english/portfolio/_index.md",
     "notes.md",
-    "content/Blog/ascolta/index.md",
-    "Links to Sites.md",
     "content/Blog/ICST-Ambisonics-Photos/_AAA2430.jpg",
     "content/Blog/ICST-Ambisonics-Photos/_AAA2429.jpg",
     "public/blog/blog-content/index.html",

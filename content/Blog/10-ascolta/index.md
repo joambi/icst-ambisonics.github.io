@@ -1,6 +1,6 @@
 ---
 date: 2025-01-11T15:17:00
-title: 10-ascolta
+title:
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
