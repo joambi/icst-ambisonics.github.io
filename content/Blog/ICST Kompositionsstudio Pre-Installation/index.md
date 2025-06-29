@@ -1,5 +1,6 @@
 ---
 title: ICST Kompositionsstudio Pre-Installation
+date: 2025-06-03T15:10:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

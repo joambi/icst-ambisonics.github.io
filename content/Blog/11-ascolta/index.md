@@ -1,6 +1,6 @@
 ---
-date: 
-title:
+date: 2025-01-12T15:17:00
+title: "#11 ascolta Akusmatische Hörstunde"
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts

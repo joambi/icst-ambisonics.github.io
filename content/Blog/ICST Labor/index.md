@@ -1,5 +1,6 @@
 ---
 title: ICST Labor Ambisonics Setting
+date: 2025-04-08T15:12:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

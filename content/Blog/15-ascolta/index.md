@@ -1,5 +1,5 @@
 ---
-date: 
+date: 2025-01-16T15:13:00
 title: "#15 ascolta Akusmatische Hörstunde"
 ---
 

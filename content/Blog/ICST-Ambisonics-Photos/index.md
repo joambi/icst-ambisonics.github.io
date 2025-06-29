@@ -1,5 +1,6 @@
 ---
 title: icst-kompositionsstudio-photo-galery
+date: 2025-06-25T15:12:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

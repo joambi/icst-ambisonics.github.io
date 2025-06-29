@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/Blog content.md",
+                "file": "content/Blog/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Blog content"
+              "title": "_index"
             }
           },
           {
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST Composer Studio Blog/index.md",
+                "file": "content/Blog/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ],
@@ -207,41 +207,42 @@
   },
   "active": "be4cebd6ca53c6f8",
   "lastOpenFiles": [
-    "content/Blog/ICST Studio Residences/index.md",
-    "content/Blog/nandele_maguni/index.md",
-    "content/Blog/ICST Composer Studio Blog/index.md",
+    "exampleSite/content/english/imprint.md",
+    "exampleSite/content/english/contact.md",
+    "exampleSite/content/english/certifications.md",
+    "exampleSite/content/english/awards.md",
+    "exampleSite/content/english/archives.md",
+    "exampleSite/content/english/about.md",
+    "exampleSite/content/english/portfolio/_index.md",
     "notes.md",
+    "content/Blog/ascolta/index.md",
     "Links to Sites.md",
-    "01_overview.md",
-    "content/Blog/ICST Composer Studio Overview/index.md",
-    "content/Blog/Blog content.md",
-    "content/ICST Ambisonics Plugins/_index.md",
-    "content/post/_index.md",
-    "info.md",
-    "icst-kompositionsstudio-overview.md",
-    "ascolta.md",
-    "ICST.md",
-    "content/post/Zylia/index.md",
-    "content/post/gyrosc/index.md",
+    "content/Blog/02-ascolta/index.md",
+    "content/Blog/01-ascolta/index.md",
+    "content/Blog/10-ascolta/index.md",
+    "content/Blog/15-ascolta/index.md",
+    "content/Blog/14-ascolta/index.md",
+    "content/Blog/13-ascolta/index.md",
+    "content/Blog/12-ascolta/index.md",
+    "content/Blog/11-ascolta/index.md",
+    "content/Blog/09-ascolta/index.md",
+    "content/Blog/08-ascolta/index.md",
+    "content/Blog/07-ascolta/index.md",
+    "content/Blog/06-ascolta/index.md",
+    "content/Blog/05-ascolta/index.md",
+    "content/Blog/04-ascolta/index.md",
+    "content/Blog/03-ascolta/index.md",
+    "content/Blog/Sounding_Future/index.md",
     "content/Blog/ICST-Ambisonics-Photos/_AAA2430.jpg",
     "content/Blog/ICST-Ambisonics-Photos/_AAA2429.jpg",
     "public/blog/blog-content/index.html",
     "public/blog/blog-content",
     "public/blog/blog-inhalt/index.html",
     "public/blog/blog-inhalt",
-    "content/Privacy Policy.md",
-    "CHANGELOG.md",
-    "README.md",
-    "polices.md",
     "public/blog/nandele_maguni/index.html",
     "public/blog/nandele_maguni/Unknown.jpeg",
     "public/blog/nandele_maguni/IMG_0071.jpg",
     "public/blog/nandele_maguni",
-    "content/Blog/ICST Studio Residences/_index.md",
-    "content/Blog/ICST Studio Residences/Content.md",
-    "content/Blog/ascolta/index.md",
-    "content/Blog/01-ascolta/index.md",
-    "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
     "public/blog/icst-composer-studio-overview/index.html",
     "public/blog/icst-composer-studio-overview/ICST_STUDIO.png",
     "public/blog/icst-composer-studio-overview",
@@ -252,7 +253,6 @@
     "public/blog/blog/icst-composer-studio-overview/ICST_STUDIO.png",
     "public/blog/blog/icst-kompositionsstudio-overview/ICST_STUDIO.png",
     "public/blog/blog/icst-studio-residences/nandele_maguni/Unknown.jpeg",
-    "content/ICST Ambisonics Plugins/NEW/index.md",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"
   ]

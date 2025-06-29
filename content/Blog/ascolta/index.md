@@ -1,5 +1,6 @@
 ---
-title: ICST Ascolta listening sessions
+title: ascolta
+date: 2025-02-01T15:08:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

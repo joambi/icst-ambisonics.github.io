@@ -1,5 +1,6 @@
 ---
 title: ICST Kompositionsstudio Equipment
+date: 2025-06-09T15:10:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
