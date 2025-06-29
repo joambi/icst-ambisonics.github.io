@@ -9,4 +9,4 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 # How you record with Zylia
 
 
-- coming soon....
+- https://support.zylia.co/tutorials/

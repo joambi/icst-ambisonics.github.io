@@ -1,21 +1,23 @@
 ---
 aliases: []
-title: ICST Studio Blog
-date: 2025-06-12T16:13:00
+title: Blog content
+date: 2025-06-28T16:13:00
 ---
 ---
 
 # BLOG
 
-- [ICST Studio Blog](ICST Studio Blog)
-- [Notes](notes)
-- [What we now](what_we_now)
+- [Notes](https://ambisonics.ch/blog/notes/)
+- [What we now](https://ambisonics.ch/blog/what_we_now/)
+
 
 ---
-# ICST Kompositionsstudio
+# ICST Composer Studio
 
-- [ICST Kompositionsstudio Overview](icst-kompositionsstudio-overview)
-- [ICST Kompositionsstudio Residences](ICST Resident*innen im Kompositionsstudio)
+- [ICST Composer Studio Overview](icst-kompositionsstudio-overview)
+- [ICST Studio Residencies]()
+- [# Previous residences of the ICST Composer Studio](ICST Resident*innen im Kompositionsstudio)
+- 
 
 ---
 # ICST Ascolta Hörstunden
@@ -38,8 +40,8 @@ date: 2025-06-12T16:13:00
 
 # ICST Artists in Residence
  Impressions of Artist in Residence in the studio
-- [Current ICST Artists in Residence](https://www.zhdk.ch/forschung/icst/icst-air)
-- [Past Residents](https://www.zhdk.ch/forschung/icst/icst-air/past-residents-20734)
+- [Current ICST Artists in Residencies](https://www.zhdk.ch/forschung/icst/icst-air)
+- [Former residencies](https://www.zhdk.ch/forschung/icst/icst-air/past-residents-20734)
 
 ---
 ## Additional downloads
