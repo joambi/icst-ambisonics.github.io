@@ -1,9 +1,9 @@
 baseURL = 'https://ambisonics.ch/'
 languageCode = 'en-us'
 title = 'The ICST Ambisonics Site'
-theme = 'soho'
+theme = 'anatole'
 enableEmoji = true
-ignoreLogs = 'warning-goldmark-raw-html'
+#ignoreLogs = 'warning-goldmark-raw-html'
 
 # website title
 [params]
@@ -33,7 +33,6 @@ contentratio = 0.2
 icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/joambi"
-
 
 
 ## Menu items
