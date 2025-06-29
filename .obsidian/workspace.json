@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/10-ascolta/index.md",
+                "file": "content/Blog/ICST Studio Residences/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -207,8 +207,9 @@
   },
   "active": "be4cebd6ca53c6f8",
   "lastOpenFiles": [
-    "content/Blog/11-ascolta/index.md",
+    "content/Blog/ICST Composer Studio Blog/index.md",
     "content/Blog/10-ascolta/index.md",
+    "content/Blog/11-ascolta/index.md",
     "content/Blog/ICST Kompositionsstudio Regie/index.md",
     "content/Blog/ascolta/index.md",
     "content/Blog/15-ascolta/index.md",
@@ -233,7 +234,6 @@
     "exampleSite/content/english/archives.md",
     "exampleSite/content/english/about.md",
     "exampleSite/content/english/portfolio/_index.md",
-    "notes.md",
     "content/Blog/ICST-Ambisonics-Photos/_AAA2430.jpg",
     "content/Blog/ICST-Ambisonics-Photos/_AAA2429.jpg",
     "public/blog/blog-content/index.html",

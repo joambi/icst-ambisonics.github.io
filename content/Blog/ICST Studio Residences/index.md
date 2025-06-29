@@ -17,7 +17,7 @@ At the ICST composition studio, international artists create their 3D audio work
 ----
 ### 2025 
 
-- [Nandele Maguni](https://ambisonics.ch/blog/icst-studio-residences/nandele_maguni/)
+- [Nandele Maguni](https://ambisonics.ch/blog/nandele_maguni/)
 - Cho Youngjae
 - Péter Biró Dániel
 - Ana Gamboa
