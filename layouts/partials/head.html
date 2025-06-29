@@ -231,6 +231,7 @@
   <!-- Schema.org-->
   {{ partial "schema.html" . }}
 
+	
 
   <!-- KaTeX-->
   {{ $noop := .WordCount }}
@@ -240,6 +241,7 @@
 	   {{ if .Page.Store.Get "hasMath" }}
 	     {{ $katex_css_url := printf "https://cdn.jsdelivr.net/npm/katex@latest/dist/katex%s.css" (cond hugo.IsProduction ".min" "") -}}
 	     {{ with try (resources.GetRemote $katex_css_url) -}}
+		 {{ default "fallback" ... }}
 	       {{ with .Err -}}
 	        {{ errorf "Could not retrieve KaTeX css file from CDN. Reason: %s." . -}}
 	       {{ else with.Value -}}
