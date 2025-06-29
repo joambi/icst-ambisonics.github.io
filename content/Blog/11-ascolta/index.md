@@ -5,12 +5,13 @@ title: "#11 ascolta Akusmatische Hörstunde"
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
----
+* * *
+
 # #11 ascolta Akusmatische Hörstunde
 
 ![ascolta](ascolta.png)
 
----
+* * *
 
 # Mario Mary, portrait
 
