@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ---
 # #08 ascolta Akusmatische Hörstunde
 
-![ascolta](ascolta.png)
+![ascolta](docs/blog/13-ascolta/ascolta.png)
 
 ---
 **Dienstag, 24. Oktober 2023, 18.00 Uhr**
