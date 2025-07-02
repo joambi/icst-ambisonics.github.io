@@ -18,7 +18,7 @@ I'm currently developing the project Kampfumo, a sonic exploration based on the 
 
 At the ICST spatial audio studio, I’m experimenting with immersive technologies to create a cinematic and multidimensional listening experience.
 
-![Nandele](Malhangalene.png)
+![[content/Blog/nandele_maguni/Malhangalene.png]]
 ### listening:
 - [Nandele Maguni "M" Stereo](https://e.pcloud.link/publink/show?code=XZvP26ZnnCneLSM38LofJ0Pm0o0G7ntvjqV)
 - [Nandele Maguni "M" Binaural](https://e.pcloud.link/publink/show?code=XZOa26Z7QSuUM3JzapPDE5xsfWu2yGCS3uy)

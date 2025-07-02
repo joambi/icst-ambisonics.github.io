@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ascolta/index.md",
+                "file": "content/Blog/nandele_maguni/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -207,6 +207,14 @@
   },
   "active": "be4cebd6ca53c6f8",
   "lastOpenFiles": [
+    "content/Blog/ascolta/index.md",
+    "public/blog/nandele_maguni/Malhangalene.png",
+    "content/Blog/nandele_maguni/Malhangalene.png",
+    "Malhangalene.png",
+    "content/Blog/index.md",
+    "content/Blog/Malhangalene.png",
+    "content/Blog/IMG_0071.jpg",
+    "content/Blog/Unknown.jpeg",
     "public/index.xml",
     "public/blog/index.xml",
     "public/post/index.xml",
@@ -220,17 +228,9 @@
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/record_movement.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/rec_xyz.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_xyz.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_multienc.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_GP.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/open_decoder.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/first-order.png",
     "public/blog/icst-kompositionsstudio-regie/index.html",
-    "public/post/gp-manipulation/index.html",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "content/Blog/10-ascolta/index.md",
-    "content/Blog/ascolta/index.md",
     "content/Blog/15-ascolta/index.md",
     "content/Blog/14-ascolta/index.md",
     "content/Blog/13-ascolta/index.md",
@@ -253,7 +253,6 @@
     "exampleSite/content/english/contact.md",
     "exampleSite/content/english/certifications.md",
     "exampleSite/content/english/awards.md",
-    "exampleSite/content/english/archives.md",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"
   ]
