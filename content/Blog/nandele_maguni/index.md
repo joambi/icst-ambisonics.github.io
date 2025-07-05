@@ -9,6 +9,8 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ICST Artist in Residence from **16.06.2025 to 06.07.2025** (Studio-Residence)
 
+During his three-week ICST Studio Residency, Nandele Maguni produced a new release entitled “Kampfumo” based on his field recordings from Maputo.
+
 ![Nandele Maguni](Unknown.jpeg)
 ### Exploring Sound at ZHdK – ICST
 
@@ -23,7 +25,8 @@ At the ICST spatial audio studio, I’m experimenting with immersive technologie
 - [Nandele Maguni "Kampfumo" Stereo](https://e.pcloud.link/publink/show?code=XZcB96ZIpQd93jYp9YJyyVLT0aWOSThvLNV)
 - [Nandele Maguni "Kampfumo" Binaural](https://e.pcloud.link/publink/show?code=XZk296ZezHI5GUzScpbYWV0SADkCjkigCbV)
 - [Nandele Maguni "Kampfumo" Binaural+ ](https://e.pcloud.link/publink/show?code=XZV296ZHgMAiKBRIB0EGXgbV9g5V0hDomjk)
-  (Binaural+ is like in Home Cinema)
+  
+- (Binaural+ is like in Home Cinema)
 
 This is not just about sound but movement, memory, and space.  
 Nandele Maguni
