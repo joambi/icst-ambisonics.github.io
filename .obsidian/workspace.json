@@ -48,9 +48,19 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "b0fb161b8a15ad49",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -205,8 +215,9 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "be4cebd6ca53c6f8",
+  "active": "b0fb161b8a15ad49",
   "lastOpenFiles": [
+    "content/Blog/nandele_maguni/index.md",
     "content/Blog/ICST Studio Residences/index.md",
     "content/Blog/index.md",
     "content/Blog/_index.md",
@@ -225,7 +236,6 @@
     "Evernote/icst-kompositionsstudio/ICST Residentinnen im Kompositionsstudio.md",
     "notes.md",
     "Malhangalene.png",
-    "content/Blog/nandele_maguni/index.md",
     "content/Blog/Cho Youngjae",
     "content/Blog/ascolta/index.md",
     "public/blog/nandele_maguni/Malhangalene.png",
