@@ -41,6 +41,7 @@ aliases:
  Impressions of Artist in Residence in the studio
 - [Current ICST Artists in Residence](https://www.zhdk.ch/forschung/icst/icst-air)
 - [Past Residents](https://www.zhdk.ch/forschung/icst/icst-air/past-residents-20734)
+- [Current residencies]()
 
 ---
 ## Additional downloads

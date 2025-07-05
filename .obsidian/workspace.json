@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/nandele_maguni/index.md",
+                "file": "content/Blog/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -189,7 +189,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1751456104537": false,
+      "image-preview-on-icon-hover:1751703660373": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -207,10 +207,21 @@
   },
   "active": "be4cebd6ca53c6f8",
   "lastOpenFiles": [
+    "content/Blog/ICST Studio Residences/index.md",
+    "content/Blog/ICST Studio Residences/ICST AiR Dates.md",
+    "content/Blog/ICST Composer Studio Blog/index.md",
+    "content/Blog/ICST Composer Studio Blog/KompStudio.jpg",
+    "().md",
+    "docs/content/Blog/_index.md",
+    "docs/Ascolta_Links.md",
+    "Evernote/icst-kompositionsstudio/ICST Residentinnen im Kompositionsstudio.md",
+    "notes.md",
+    "Malhangalene.png",
+    "content/Blog/nandele_maguni/index.md",
+    "content/Blog/Cho Youngjae",
     "content/Blog/ascolta/index.md",
     "public/blog/nandele_maguni/Malhangalene.png",
     "content/Blog/nandele_maguni/Malhangalene.png",
-    "Malhangalene.png",
     "content/Blog/index.md",
     "content/Blog/Malhangalene.png",
     "content/Blog/IMG_0071.jpg",
@@ -227,8 +238,6 @@
     "public/icst-ambisonics-plugins/06_step_by_step_setup/speaker_test.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/record_movement.gif",
-    "public/blog/icst-kompositionsstudio-regie/index.html",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "content/Blog/10-ascolta/index.md",
     "content/Blog/15-ascolta/index.md",
@@ -245,14 +254,6 @@
     "content/Blog/03-ascolta/index.md",
     "content/Blog/02-ascolta/index.md",
     "content/Blog/01-ascolta/index.md",
-    "content/Blog/ICST Composer Studio Blog/index.md",
-    "content/Blog/ICST Studio Residences/index.md",
-    "content/Blog/_index.md",
-    "content/Blog/ICST Kompositionsstudio Regie/index.md",
-    "exampleSite/content/english/imprint.md",
-    "exampleSite/content/english/contact.md",
-    "exampleSite/content/english/certifications.md",
-    "exampleSite/content/english/awards.md",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"
   ]
