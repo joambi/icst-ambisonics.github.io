@@ -22,7 +22,7 @@ At the ICST spatial audio studio, I’m experimenting with immersive technologie
 ### Listen to the new release from Nandele Maguni:
 - [Nandele Maguni "Kampfumo" Stereo](https://e.pcloud.link/publink/show?code=XZcB96ZIpQd93jYp9YJyyVLT0aWOSThvLNV)
 - [Nandele Maguni "Kampfumo" Binaural](https://e.pcloud.link/publink/show?code=XZk296ZezHI5GUzScpbYWV0SADkCjkigCbV)
-- [Nandele Maguni "Kampfumo" Binaural+ ](https://e.pcloud.link/publink/show?code=XZcB96ZIpQd93jYp9YJyyVLT0aWOSThvLNV)
+- [Nandele Maguni "Kampfumo" Binaural+ ](https://e.pcloud.link/publink/show?code=XZV296ZHgMAiKBRIB0EGXgbV9g5V0hDomjk)
   (Binaural+ is like in Home Cinema)
 
 This is not just about sound but movement, memory, and space.  
