@@ -53,10 +53,14 @@
             "id": "b0fb161b8a15ad49",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/Blog/nandele_maguni/index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "index"
             }
           }
         ],
@@ -217,6 +221,9 @@
   },
   "active": "b0fb161b8a15ad49",
   "lastOpenFiles": [
+    "public/blog/Unknown.jpeg",
+    "public/blog/Malhangalene.png",
+    "public/blog/IMG_0071.jpg",
     "content/Blog/nandele_maguni/index.md",
     "content/Blog/ICST Studio Residences/index.md",
     "content/Blog/index.md",
@@ -248,8 +255,6 @@
     "public/post/index.xml",
     "public/icst-ambisonics-plugins/index.xml",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/speaker_test.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "content/Blog/10-ascolta/index.md",
     "content/Blog/15-ascolta/index.md",
@@ -263,7 +268,6 @@
     "content/Blog/06-ascolta/index.md",
     "content/Blog/05-ascolta/index.md",
     "content/Blog/04-ascolta/index.md",
-    "content/Blog/03-ascolta/index.md",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"
   ]

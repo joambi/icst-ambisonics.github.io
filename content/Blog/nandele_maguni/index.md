@@ -19,11 +19,11 @@ I'm currently developing the project Kampfumo, a sonic exploration based on the 
 At the ICST spatial audio studio, I’m experimenting with immersive technologies to create a cinematic and multidimensional listening experience.
 
 ![Nandele](Malhangalene.png)
-### listening:
-- [Nandele Maguni "M" Stereo](https://e.pcloud.link/publink/show?code=XZvP26ZnnCneLSM38LofJ0Pm0o0G7ntvjqV)
-- [Nandele Maguni "M" Binaural](https://e.pcloud.link/publink/show?code=XZOa26Z7QSuUM3JzapPDE5xsfWu2yGCS3uy)
-- [Nandele Maguni "M" Binaural+ ](https://e.pcloud.link/publink/show?code=XZla26ZSY0FpaPqOdX23D5dtxYFaS9eJHCy)
-- [Nandele Maguni "M" Binaural (Apple-Music)](https://e.pcloud.link/publink/show?code=XZzys6ZQd4pS1RClFLBgcTe8n6IShVBUW87)
+### Listen to the new release from Nandele Maguni:
+- [Nandele Maguni "Kampfumo" Stereo](https://e.pcloud.link/publink/show?code=XZcB96ZIpQd93jYp9YJyyVLT0aWOSThvLNV)
+- [Nandele Maguni "Kampfumo" Binaural](https://e.pcloud.link/publink/show?code=XZk296ZezHI5GUzScpbYWV0SADkCjkigCbV)
+- [Nandele Maguni "Kampfumo" Binaural+ ](https://e.pcloud.link/publink/show?code=XZcB96ZIpQd93jYp9YJyyVLT0aWOSThvLNV)
+  (Binaural+ is like in Home Cinema)
 
 This is not just about sound but movement, memory, and space.  
 Nandele Maguni
