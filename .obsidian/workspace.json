@@ -39,18 +39,28 @@
             "id": "be4cebd6ca53c6f8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "content/Blog/Youngjae Cho/index.md",
-                "mode": "source",
-                "source": false
+                "file": "images/Bildschirmfoto 2025-07-08 um 11.48.29.png"
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-image",
+              "title": "Bildschirmfoto 2025-07-08 um 11.48.29"
+            }
+          },
+          {
+            "id": "29783d4e1938a9fc",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/Bildschirmfoto 2025-07-08 um 11.48.29.png"
+              },
+              "icon": "lucide-image",
+              "title": "Bildschirmfoto 2025-07-08 um 11.48.29"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -205,10 +215,16 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "be4cebd6ca53c6f8",
+  "active": "0dcbaf17685ec5f0",
   "lastOpenFiles": [
-    "content/Blog/Youngjae Cho/Youngjae Cho_02.png",
+    "images/Bildschirmfoto 2025-07-08 um 11.51.46.png",
+    "images/Bildschirmfoto 2025-07-08 um 11.48.29.png",
+    "content/Blog/ICST Composer Studio Overview/index.md",
+    "content/Blog/_index.md",
+    "content/Blog/index.md",
+    "content/Blog/ICST Kompositionsstudio Software/index.md",
     "content/Blog/Youngjae Cho/index.md",
+    "content/Blog/Youngjae Cho/Youngjae Cho_02.png",
     "content/Blog/Youngjae Cho/Youngjae Cho_01.png",
     "images/tn.png",
     "334-I3DA_2023_paper_9987.pdf",
@@ -218,8 +234,6 @@
     "Youngjae Cho_02 1.png",
     "Youngjae Cho_01 1.png",
     "Youngjae Cho_01.png",
-    "Bildschirmfoto 2025-07-08 um 12.59.29.png",
-    "content/Blog/index.md",
     "content/Blog/nandele_maguni/index.md",
     "Youngjae.md",
     "content/Blog/What_we_now/index.md",
@@ -233,7 +247,6 @@
     "public/tags/icst/index.html",
     "public/tags/icst",
     "public/tags/cho/index.xml",
-    "content/Blog/_index.md",
     "content/Blog/Terms of use/index.md",
     "content/HOME/index.md",
     "content/ICST Ambisonics Tools/index.md",
@@ -251,8 +264,6 @@
     "content/Blog/ascolta/index.md",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "content/Blog/10-ascolta/index.md",
-    "content/Blog/15-ascolta/index.md",
-    "content/Blog/14-ascolta/index.md",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"
   ]
