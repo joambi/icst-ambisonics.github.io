@@ -53,6 +53,18 @@
             "id": "b0fb161b8a15ad49",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "images/Youngjae Cho_02 3.png"
+              },
+              "icon": "lucide-image",
+              "title": "Youngjae Cho_02 3"
+            }
+          },
+          {
+            "id": "2c3bc87ae3031638",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "content/Blog/Youngjae Cho/index.md",
@@ -64,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -203,7 +215,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1752130315029": false,
+      "image-preview-on-icon-hover:1752156475219": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -219,40 +231,42 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "b0fb161b8a15ad49",
+  "active": "2c3bc87ae3031638",
   "lastOpenFiles": [
-    "content/Blog/Terms of use/index.md",
+    "images/Youngjae Cho_02 3.png",
     "content/Blog/Youngjae Cho/index.md",
-    "public/blog/youngjae-cho/index.html",
-    "public/blog/youngjae-cho",
+    "images/Youngjae Cho_01 2.png",
+    "Youngjae Cho_02 1.png",
+    "Youngjae Cho_02.png",
+    "Youngjae Cho_01.png",
+    "Youngjae.md",
+    "Youngjae Cho_01 1.png",
+    "content/Blog/nandele_maguni/index.md",
+    "content/Blog/What_we_now/index.md",
+    "content/Blog/index.md",
+    "Youngjae Cho_02 2.png",
+    "IMG_0082.heic",
+    "IMG_0079.heic",
+    "content/Blog/Youngjae Cho/Bformat to SPS.md",
+    "public/tags/air/index.xml",
+    "public/tags/air/index.html",
+    "public/tags/air",
+    "public/tags/icst/index.xml",
+    "public/tags/icst/index.html",
+    "public/tags/icst",
+    "public/tags/cho/index.xml",
+    "public/tags/cho/index.html",
+    "content/Blog/_index.md",
+    "content/Blog/Terms of use/index.md",
     "content/HOME/Overview_v3.1.png",
     "content/HOME/index.md",
     "content/HOME/ICST_Ambi-Tools_Max.png",
     "content/ICST Ambisonics Tools/Amb_Max.gif",
     "content/ICST Ambisonics Tools/index.md",
-    "content/ICST Ambisonics Plugins/NEW/filter_UI.png",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/02_BF-Master.gif",
     "content/post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
     "content/post/gp-manipulation/index.md",
-    "content/Blog/Youngjae Cho/Bformat to SPS.md",
-    "Bildschirmfoto 2025-07-08 um 12.59.29.png",
-    "334-I3DA_2023_paper_9987.pdf",
-    "content/Blog/What_we_now/index.md",
-    "Bildschirmfoto 2025-07-08 um 11.51.46.png",
-    "Bildschirmfoto 2025-07-08 um 12.24.39.png",
-    "Bildschirmfoto 2025-07-08 um 11.48.29.png",
-    "content/Blog/_index.md",
-    "content/Blog/nandele_maguni/index.md",
-    "content/Blog/Youngjae Cho",
-    "public/blog/Unknown.jpeg",
     "content/Blog/ICST Studio Residences/index.md",
-    "content/Blog/index.md",
     "[Nandele/_Kampfumo/_07/_04/_2025/_Stereo.wav.md",
-    "[Nandele/_Kampfumo/_07/_04/_2025",
-    "[Nandele/_Kampfumo/_07/_04",
-    "[Nandele/_Kampfumo/_07",
-    "[Nandele/_Kampfumo",
-    "[Nandele",
     "content/Blog/ICST Studio Residences/ICST AiR Dates.md",
     "content/Blog/ICST Composer Studio Blog/index.md",
     "().md",
@@ -260,14 +274,11 @@
     "docs/Ascolta_Links.md",
     "Evernote/icst-kompositionsstudio/ICST Residentinnen im Kompositionsstudio.md",
     "notes.md",
-    "content/Blog/Cho Youngjae",
     "content/Blog/ascolta/index.md",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "content/Blog/10-ascolta/index.md",
     "content/Blog/15-ascolta/index.md",
     "content/Blog/14-ascolta/index.md",
-    "content/Blog/13-ascolta/index.md",
-    "content/Blog/12-ascolta/index.md",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"
   ]
