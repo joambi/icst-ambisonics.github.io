@@ -51,12 +51,14 @@
             "id": "29783d4e1938a9fc",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "images/Bildschirmfoto 2025-07-08 um 11.48.29.png"
+                "file": "content/Blog/Youngjae Cho/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Bildschirmfoto 2025-07-08 um 11.48.29"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ],
@@ -215,10 +217,10 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "0dcbaf17685ec5f0",
+  "active": "29783d4e1938a9fc",
   "lastOpenFiles": [
-    "images/Bildschirmfoto 2025-07-08 um 11.51.46.png",
     "images/Bildschirmfoto 2025-07-08 um 11.48.29.png",
+    "images/Bildschirmfoto 2025-07-08 um 11.51.46.png",
     "content/Blog/ICST Composer Studio Overview/index.md",
     "content/Blog/_index.md",
     "content/Blog/index.md",

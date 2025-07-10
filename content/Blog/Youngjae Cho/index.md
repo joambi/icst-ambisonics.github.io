@@ -1,7 +1,5 @@
 ---
-tags:
-  - icst
-  - air
+tags: []
 date: 2025-07-09T08:56:00
 title: Youngjae Cho
 ---
