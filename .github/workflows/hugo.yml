@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.148.0
-	  extended: true
+	
     steps:
       - name: Install Hugo CLI
         run: |
