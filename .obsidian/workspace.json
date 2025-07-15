@@ -53,7 +53,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/Youngjae Cho/index.md",
+                "file": "content/post/GYROSC/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -201,7 +201,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1752156475219": false,
+      "image-preview-on-icon-hover:1752573843705": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -219,13 +219,14 @@
   },
   "active": "29783d4e1938a9fc",
   "lastOpenFiles": [
+    "content/Blog/Youngjae Cho/index.md",
+    "content/post/GYROSC/index.md",
     "images/Bildschirmfoto 2025-07-08 um 11.48.29.png",
     "images/Bildschirmfoto 2025-07-08 um 11.51.46.png",
     "content/Blog/ICST Composer Studio Overview/index.md",
     "content/Blog/_index.md",
     "content/Blog/index.md",
     "content/Blog/ICST Kompositionsstudio Software/index.md",
-    "content/Blog/Youngjae Cho/index.md",
     "content/Blog/Youngjae Cho/Youngjae Cho_02.png",
     "content/Blog/Youngjae Cho/Youngjae Cho_01.png",
     "images/tn.png",
@@ -235,7 +236,6 @@
     "Youngjae Cho_02.png",
     "Youngjae Cho_02 1.png",
     "Youngjae Cho_01 1.png",
-    "Youngjae Cho_01.png",
     "content/Blog/nandele_maguni/index.md",
     "Youngjae.md",
     "content/Blog/What_we_now/index.md",
