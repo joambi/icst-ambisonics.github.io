@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/_index.md",
+                "file": "content/post/ICST_Scripts/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -219,14 +219,14 @@
   },
   "active": "29783d4e1938a9fc",
   "lastOpenFiles": [
-    "icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication.md",
+    "content/post/GYROSC/index.md",
     "content/post/_index.md",
+    "icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication.md",
     "content/post/ICST_Scripts/index.md",
     "content/post/gp-manipulation/index.md",
     "content/post/ableton_reaper/index.md",
     "content/post/GYROSC/gyrOSC.png",
     "content/post/GYROSC/GyrOSC-SWARM.gif",
-    "content/post/GYROSC/index.md",
     "content/post/ICST_Scripts/ICST Spiral Walk.md",
     "content/post/ICST_Scripts/Spiral_Walk_innen.gif",
     "content/post/ICST_Scripts/Spiral_Walk_aussen.gif",

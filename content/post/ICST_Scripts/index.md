@@ -3,6 +3,7 @@ tags:
   - ambiencoder
   - luascript
   - reaper_script
+date: 2025-07-17T14:31:00
 ---
 # **ICST AmbiEncoder_64 Spiral Walk - Dokumentation**
 
