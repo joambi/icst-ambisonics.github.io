@@ -5,7 +5,7 @@ title: blauertsche-bänder
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ----
-# ~={blue}Blauertschen Bänder=~:
+# Blauertschen Bänder:
 
 Für die Stimme und derer Directivity Wahrnehmung habe ich Experimente mit den [Blauertschen-Bändern](https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder) gemacht. 
 ![Ritungsbänder | 400](Richtungsbänder.png)
