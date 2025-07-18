@@ -53,7 +53,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/GYROSC/index.md",
+                "file": "content/post/ICST_Scripts/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -201,7 +201,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1752573843705": false,
+      "image-preview-on-icon-hover:1752840831367": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -219,8 +219,18 @@
   },
   "active": "29783d4e1938a9fc",
   "lastOpenFiles": [
-    "content/Blog/Youngjae Cho/index.md",
+    "content/post/gp-manipulation/index.md",
+    "content/post/ableton_reaper/index.md",
+    "content/post/GYROSC/gyrOSC.png",
+    "content/post/GYROSC/GyrOSC-SWARM.gif",
     "content/post/GYROSC/index.md",
+    "content/post/ICST_Scripts/ICST Spiral Walk.md",
+    "content/post/ICST_Scripts/index.md",
+    "content/post/ICST_Scripts/Spiral_Walk_innen.gif",
+    "content/post/ICST_Scripts/Spiral_Walk_aussen.gif",
+    "content/post/icst-grapes/index.md",
+    "content/post/icst-grapes/Grapes.gif",
+    "content/Blog/Youngjae Cho/index.md",
     "images/Bildschirmfoto 2025-07-08 um 11.48.29.png",
     "images/Bildschirmfoto 2025-07-08 um 11.51.46.png",
     "content/Blog/ICST Composer Studio Overview/index.md",
@@ -231,11 +241,6 @@
     "content/Blog/Youngjae Cho/Youngjae Cho_01.png",
     "images/tn.png",
     "334-I3DA_2023_paper_9987.pdf",
-    "public/blog/youngjae-cho/Youngjae Cho_02.png",
-    "public/blog/youngjae-cho/Youngjae Cho_01.png",
-    "Youngjae Cho_02.png",
-    "Youngjae Cho_02 1.png",
-    "Youngjae Cho_01 1.png",
     "content/Blog/nandele_maguni/index.md",
     "Youngjae.md",
     "content/Blog/What_we_now/index.md",
@@ -253,7 +258,6 @@
     "content/HOME/index.md",
     "content/ICST Ambisonics Tools/index.md",
     "content/post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
-    "content/post/gp-manipulation/index.md",
     "content/Blog/ICST Studio Residences/index.md",
     "[Nandele/_Kampfumo/_07/_04/_2025/_Stereo.wav.md",
     "content/Blog/ICST Studio Residences/ICST AiR Dates.md",
@@ -261,11 +265,7 @@
     "().md",
     "docs/content/Blog/_index.md",
     "docs/Ascolta_Links.md",
-    "Evernote/icst-kompositionsstudio/ICST Residentinnen im Kompositionsstudio.md",
-    "notes.md",
-    "content/Blog/ascolta/index.md",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
-    "content/Blog/10-ascolta/index.md",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"
   ]
