@@ -15,7 +15,7 @@ author: Johannes Schuett
 - [ICST AmbiPlugins & GyrOSC.app](gyrosc)
 - [ICST AmbiPlugins-&-Ableton Live-Integration](ableton-reaper)
 - [Zylia](zylia)
-- [ICST AmbiEncoder_64 & LuaScript](icst_scripts)
+- [ICST AmbiEncoder_64 & LuaScript](icst-scripts)
 
 
 

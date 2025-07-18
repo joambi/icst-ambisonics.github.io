@@ -3,7 +3,7 @@ title: gyrosc
 date: 2025-05-28T14:57:00
 author: Johannes Schuett
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts
 
 ---
 

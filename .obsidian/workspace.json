@@ -53,7 +53,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/ICST_Scripts/index.md",
+                "file": "content/post/icst-scripts/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -219,17 +219,18 @@
   },
   "active": "29783d4e1938a9fc",
   "lastOpenFiles": [
-    "content/post/GYROSC/index.md",
     "content/post/_index.md",
+    "content/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/index.md",
+    "content/post/GYROSC/index.md",
+    "content/post/icst-scripts/index.md",
     "icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication.md",
-    "content/post/ICST_Scripts/index.md",
     "content/post/gp-manipulation/index.md",
     "content/post/ableton_reaper/index.md",
     "content/post/GYROSC/gyrOSC.png",
     "content/post/GYROSC/GyrOSC-SWARM.gif",
     "content/post/ICST_Scripts/ICST Spiral Walk.md",
-    "content/post/ICST_Scripts/Spiral_Walk_innen.gif",
-    "content/post/ICST_Scripts/Spiral_Walk_aussen.gif",
+    "content/post/icst-scripts/Spiral_Walk_innen.gif",
+    "content/post/icst-scripts/Spiral_Walk_aussen.gif",
     "content/post/icst-grapes/index.md",
     "content/post/icst-grapes/Grapes.gif",
     "content/Blog/Youngjae Cho/index.md",
@@ -264,7 +265,6 @@
     "[Nandele/_Kampfumo/_07/_04/_2025/_Stereo.wav.md",
     "content/Blog/ICST Studio Residences/ICST AiR Dates.md",
     "content/Blog/ICST Composer Studio Blog/index.md",
-    "().md",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"
