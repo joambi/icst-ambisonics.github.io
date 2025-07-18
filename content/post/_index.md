@@ -3,7 +3,7 @@ aliases: []
 title: _index
 author: Johannes Schuett
 ---
-
+Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 
 - [info](info)
