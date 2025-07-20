@@ -16,6 +16,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - [ICST AmbiPlugins-&-Ableton Live-Integration](ableton-reaper)
 - [Zylia](zylia)
 - [ICST AmbiEncoder_64 & LuaScript](icst-scripts)
+- [ICST AmbiEncoder_64 CircleSelected](circleselected)
 
 
 
