@@ -77,12 +77,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/_index.md",
+                "file": "content/post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "index"
             }
           }
         ],
@@ -225,7 +225,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1752840831367": false,
+      "image-preview-on-icon-hover:1753196306679": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -243,14 +243,14 @@
   },
   "active": "870cd185a90d2892",
   "lastOpenFiles": [
+    "content/post/icst-scripts/index.md",
+    "content/post/Blauertsche_Bänder/index.md",
+    "content/post/_index.md",
     "content/post/CircleSelected/index.md",
     "content/post/CircleSelected/Sircle_Selected.gif",
     "Sircle_Selected.gif",
-    "content/post/_index.md",
     "content/post/CircleSelected",
     "CircleSelected_Presets.lua.md",
-    "content/post/icst-scripts/index.md",
-    "content/post/Blauertsche_Bänder/index.md",
     "ICST_AmbiEncoder_Parmeter_Indexes.txt",
     "content/post/Blauertsche_Bänder/8000hz.png",
     "Hight.md",

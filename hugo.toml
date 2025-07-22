@@ -22,6 +22,7 @@ icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/joambi"
 
+
 ## Menu items
 [menu]
 
@@ -70,7 +71,8 @@ url = "https://github.com/joambi"
   name = "Privacy Policy"
   weight = 1
   identifier = "Privacy Policy"
-  url = "/Privacy Policy/"
+  url = "https://www.iubenda.com/privacy-policy/34653471"
+
 
 [taxonomies]
 series = "series"
