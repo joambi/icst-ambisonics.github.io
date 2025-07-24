@@ -26,4 +26,6 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 - [07 Shortcuts](07_shortcuts)
 
+- [08_Downloads](08_downloads)
+
  - [New](new)

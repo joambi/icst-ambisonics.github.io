@@ -20,27 +20,27 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 # ICST Studio Residencies
 
-- [ICST Studio Residencies]()
-- [# Previous residences of the ICST Composer Studio](ICST Resident*innen im Kompositionsstudio)
+- [ICST Studio Residencies](https://ambisonics.ch/blog/icst-studio-residences/)
+- [ICST Resident\*innen im Kompositionsstudio \| ICST-Kompositionsstudio](https://icst-kompositionsstudio.ch/post/icst-artist-in-residency-im-kompositionsstudio))
 
 
 ---
 # ICST Ascolta Hörstunden
 
-- [Ascolta Akusmatische Hörstunden](ascolta)
+- [Ascolta Akusmatische Hörstunden](https://ambisonics.ch/blog/ascolta/)
 
 ---
 # ICST Labor 
 
-- [ICST Labor Dome](icst-labor)
+- [ICST Labor Dome](https://ambisonics.ch/blog/icst-labor/)
 
 ---
 #  Explore 3D Audio Music
 
 - #### Ambisonics
 	- [ICST Bformat Archive](icst-bformat-archive)
-	- [Sounding Future](sounding_future)
-	- [Hoast Library](hoast-library)
+	- [Sounding Future]([Sound Tracks - Browse Our Collection](https://audiospace.soundingfuture.com/tracks))
+	- [Hoast Library](https://hoast.iem.at/)
 	- [Nimbus UHJ](https://www.wyastone.co.uk/all-labels/nimbus.html)
 
 # ICST Artists in Residence

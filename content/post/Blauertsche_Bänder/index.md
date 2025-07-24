@@ -1,5 +1,5 @@
 ---
-Date-Created: 2025-05-17
+Date-Created: 2025-05-16
 title: blauertsche-bänder
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
