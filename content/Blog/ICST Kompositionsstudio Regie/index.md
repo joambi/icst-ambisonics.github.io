@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 **Overview of the direction in the ICST composition studio**
 Status  April 2023
-![Regie-Tisch](content/Blog/ICST%20Kompositionsstudio%20Regie/foto_1.png)
+![Regie-Tisch](foto_1.png)
 
 A: The LSB is the control panel for routing and controlling all audio components.
 B: The Extron panel provides convenient management of all video and power components.
@@ -26,59 +26,59 @@ Please have a look at this link: **[Quick Start](https://icst-kompositionsstudio
 The 'LSB panel' operates in two different levels (layouts):
 
 **LSB (First Layout)**
-![LSB_1](content/Blog/ICST%20Kompositionsstudio%20Regie/LSB_Front_1.jpg)
+![LSB_1](LSB_Front_1.jpg)
 Figure. shows LSB Layer 1
 
 The picture shows the sources in the first LSB line; you can select the speaker settings directly in the second and third lines. If you choose 'ALL LS,' all speakers are available, and you can route them in RME Totalmixer or directly in the DAW.
 
 To switch to the second layout with the 'Sources' --> press the 'Setings' button.
-![LSB_2](content/Blog/ICST%20Kompositionsstudio%20Regie/LSB_Back.jpg)
+![LSB_2](LSB_Back.jpg)
 Figure. shows LSB Layer 2
 
 **Speaker Settings at the ICST-Kompositionsstudio:**
-![LSB_Front](content/Blog/ICST%20Kompositionsstudio%20Regie/LSB_Front.jpg)
+![LSB_Front](LSB_Front.jpg)
 ####  **[Speaker Settings](https://icst-kompositionsstudio.ch/post/speaker-settings)**
 
 * * *
 
 **LSB: Mic-Amp setting:**
-![Mic/Line](content/Blog/ICST%20Kompositionsstudio%20Regie/Mic-Line.jpg)
+![Mic/Line](Mic-Line.jpg)
 ****
 
 ## The Extron touchscreen panel for Video
 
-![Extron-Video](content/Blog/ICST%20Kompositionsstudio%20Regie/Extron_Video.jpeg)
+![Extron-Video](Extron_Video.jpeg)
 
 Image shows as an example the 'video switching layout'.
-![Extron-Light](content/Blog/ICST%20Kompositionsstudio%20Regie/Extron-Light.png)
+![Extron-Light](Extron-Light.png)
 Image shows the touch-panel layout 'light'.
 * * *
 
 Additional hubs and hardware are available behind the screen:
-![Extron-Hun](content/Blog/ICST%20Kompositionsstudio%20Regie/Extron-Hub.jpeg)
+![Extron-Hun](Extron-Hub.jpeg)
 1. (1) the "Extron Hub" behind the curved screen provides the interfaces for additional video connections as well as the Extron panel.
 2. (2) PureTools (converter) video VGA input for PC - laptop.!
-![PureTool_1](content/Blog/ICST%20Kompositionsstudio%20Regie/PureTool_1.jpeg)
-![Connecting](content/Blog/ICST%20Kompositionsstudio%20Regie/Connecting.png)
-![Remote-Control](content/Blog/ICST%20Kompositionsstudio%20Regie/Remote.png)
+![PureTool_1](PureTool_1.jpeg)
+![Connecting](Connecting.png)
+![Remote-Control](Remote.png)
 
 3. On the table is remote control for all settings of PureTools PT-SC-VGAHD
    Documentation: [PureTools PT-SC-VGAHD](https://icst-kompositionsstudio.ch/post/puretools-video-converter)
 
-4. Lake People (Stereo Balanced Amplifier) for direct connection of the Mac. ![Amp](content/Blog/ICST%20Kompositionsstudio%20Regie/amp.jpeg)
+4. Lake People (Stereo Balanced Amplifier) for direct connection of the Mac. ![Amp](amp.jpeg)
 5. Lake People (Phone Amplifier) for 2x headphone monitoring.!
 6. Headphone:
-![Headphone_amp](content/Blog/ICST%20Kompositionsstudio%20Regie/Headphone_amp.jpeg)
+![Headphone_amp](Headphone_amp.jpeg)
  Lake People (Phone Amplifier) for 2x headphone monitoring.
 
 ---
 ### DisplayLink
 The [Targus USB-C Docking station](https://us.targus.com/products/usb-c-universal-dv4k-docking-station-with-100w-power-dock190usz)  can now connect two SSD HDs via USB-C in addition to the fixed connections.
-![DisplayLink](content/Blog/ICST%20Kompositionsstudio%20Regie/DisplayLink_1.png)
+![DisplayLink](DisplayLink_1.png)
 Image: DisplayLink front/side
-![DisplayLink_2](content/Blog/ICST%20Kompositionsstudio%20Regie/DisplayLink_3.jpeg)
+![DisplayLink_2](DisplayLink_3.jpeg)
 Image: DisplayLink Back
-![DisplayLink_3](content/Blog/ICST%20Kompositionsstudio%20Regie/DisplayLink_2.png)
+![DisplayLink_3](DisplayLink_2.png)
 Image: DisplayLink Connectors
 
 ATTENTION: To use the video features of the 'Targus Docking station' the 'DisplayLink' driver must be installed!
@@ -86,11 +86,10 @@ ATTENTION: To use the video features of the 'Targus Docking station' the 'Displa
 Download \[[DisplayLink](https://www.synaptics.com/products/displaylink-graphics/downloads)\] Driver!
 
 7. The Apple Labtop can be easily connected via USB-C (3.2) or USB -A (3.2).
-
-![DisplayLink_4](DisplayLink_4.jpeg)
+![DisplayLink_4.jpeg](DisplayLink_4.jpeg)
 8. Logitech Keyboard & Mouse
 
-![Tastature-Mouse](content/Blog/ICST%20Kompositionsstudio%20Regie/Tastature-Maus.jpeg)
+![Tastature-Mouse](Tastature-Maus.jpeg)
 
 You can now conveniently switch the keyboard and mouse to their respective sources.
 - 1 --> MacPro Studio
