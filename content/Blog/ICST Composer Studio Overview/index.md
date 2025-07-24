@@ -16,7 +16,7 @@ A Mac Pro is offering various software such as sequencers, HD-recording- and Sou
 
 ## Help for the operation of the ICST Kompositionsstudio:
 
-- [Overview](https://ambisonics.ch/blog/icst-kompositionsstudio-overview/)
+- [ICST Kompositionsstudio Overview](https://ambisonics.ch/blog/icst-composer-studio-blog/)
 - [ICST Kompositionsstudio Pre-Installation](https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/)
 - [ICST Kompositionsstudio Regie](https://ambisonics.ch/blog/icst-kompositionsstudio-regie)
 - [ICST Kompositionsstudio Speaker Settings](https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings)
@@ -30,7 +30,7 @@ A Mac Pro is offering various software such as sequencers, HD-recording- and Sou
 
 * * *
 
-Room-address:  **[ZT 3.D02 ICST Kompositionsstudio](https://intern.zhdk.ch/?raum/ansicht/einzel&ts=1536789600&id=469)**
+Room-address:  **ZT 3.D02 ICST Kompositionsstudio**
 
 Contact:  [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
 

@@ -77,7 +77,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST Kompositionsstudio Regie/index.md",
+                "file": "content/Blog/ICST Composer Studio Overview/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -241,14 +241,17 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "0dcbaf17685ec5f0",
+  "active": "870cd185a90d2892",
   "lastOpenFiles": [
+    "content/Blog/ICST Composer Studio Overview/ICST_STUDIO.png",
+    "content/Blog/_index.md",
+    "content/Blog/ICST Composer Studio Overview/index.md",
+    "content/Blog/ICST Kompositionsstudio Regie/index.md",
     "public/blog/icst-kompositionsstudio-regie/DisplayLink_4.jpeg",
     "content/Blog/ICST Kompositionsstudio Regie/DisplayLink_4.jpeg",
     "DisplayLink_4.jpeg",
     "docs/content/Blog/ICST Kompositionsstudio Regie/index.md",
     "docs/Evernote/icst-kompositionsstudio/ICST Kompositionsstudio Regie.md",
-    "content/Blog/ICST Kompositionsstudio Regie/index.md",
     "content/Blog/ICST Kompositionsstudio Software/index.md",
     "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
     "content/Blog/ICST Labor/index.md",
@@ -261,8 +264,6 @@
     "content/Blog/ICST Composer Studio Blog/index.md",
     "content/Blog/ICST Kompositionsstudio Pre-Installation/index.md",
     "content/Blog/ICST Kompositionsstudio Equipment/index.md",
-    "content/Blog/ICST Composer Studio Overview/index.md",
-    "content/Blog/ICST Composer Studio Overview/ICST_STUDIO.png",
     "content/Blog/ICST Bformat Archive/index.md",
     "content/post/osc-syntax-for-the-icst-ambiencoder-plugin/index.md",
     "content/post/icst-scripts/index.md",
@@ -278,10 +279,8 @@
     "Hight.md",
     "content/post/Blauertsche_Bänder/Richtungswahrnehmung.png",
     "content/post/Blauertsche_Bänder/Richtungsbänder.png",
-    "content/post/Blauertsche_Bänder/osc-anbindung.png",
     "Bildschirmfoto.md",
     "README.md",
-    "polices.md",
     "ICST AmbiEncoder_64 Spiral Walk.lua",
     "content/post/Blauertsche_Bänder",
     "334-I3DA_2023_paper_9987.pdf",
