@@ -6,94 +6,109 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ----
 
-**Overview of the direction in the ICST composition studio**
+# **Overview of  the ICST Composition Studio**
 Status  April 2023
+
 ![Regie-Tisch](foto_1.png)
+### Direction Table
 
-A: The LSB is the control panel for routing and controlling all audio components.
-B: The Extron panel provides convenient management of all video and power components.
+**A:** The LSB is the central control panel for routing and managing all audio components.  
+**B:** The Extron panel provides convenient control of all video and power components.
+* * *
+
+### **Hint:**
+
+To work in the composition studio with your own laptop, please follow these two steps:
+
+1. Install the required drivers for audio and video:
+    - **RME MADI USB Driver** (Mac / Windows) for the audio connection
+    - **DisplayLink** for the video connection
+
+👉 See also: **[Quick Start Guide](https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio-quick-start)**
 
 * * *
 
-**Hint:** To dock in the composition studio with your own laptop, you need to consider a two steps!
-Install the necessary drivers for audio & video:
-\- RME Madi USB Driver (Mac / Windows ) for the audio connection.
-\- DisplayLinker for the video connection
-Please have a look at this link: **[Quick Start](https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio-quick-start)**
+## LSB Panel – Two Operating Modes
 
-* * *
-
-The 'LSB panel' operates in two different levels (layouts):
-
-**LSB (First Layout)**
+The LSB panel offers two main layouts:
+### **LSB – First Layout**
 ![LSB_1](LSB_Front_1.jpg)
-Figure. shows LSB Layer 1
+_Figure: LSB Layer 1_
 
-The picture shows the sources in the first LSB line; you can select the speaker settings directly in the second and third lines. If you choose 'ALL LS,' all speakers are available, and you can route them in RME Totalmixer or directly in the DAW.
+The first layout shows the available audio sources in the top row. In the second and third rows, you can directly select the speaker configuration.  
+Selecting **ALL LS** makes all speakers available, which you can then route in **RME TotalMix** or directly in your DAW.
 
-To switch to the second layout with the 'Sources' --> press the 'Setings' button.
+To switch to the second layout “Sources”, press the **Settings** button.
 ![LSB_2](LSB_Back.jpg)
-Figure. shows LSB Layer 2
+Figure: LSB Layer 2
 
-**Speaker Settings at the ICST-Kompositionsstudio:**
+---
+
+### **Speaker Settings in the ICST Composition Studio**
+
 ![LSB_Front](LSB_Front.jpg)
-####  **[Speaker Settings](https://icst-kompositionsstudio.ch/post/speaker-settings)**
+
+👉 Further information: **[Speaker Settings](https://icst-kompositionsstudio.ch/post/speaker-settings)**
 
 * * *
-
-**LSB: Mic-Amp setting:**
+### **LSB – Mic/Line Settings**
 ![Mic/Line](Mic-Line.jpg)
 ****
 
 ## The Extron touchscreen panel for Video
 
 ![Extron-Video](Extron_Video.jpeg)
+Example: Video switching layout
 
-Image shows as an example the 'video switching layout'.
 ![Extron-Light](Extron-Light.png)
-Image shows the touch-panel layout 'light'.
+Example: Light-control layout
 * * *
+### Additional Hubs and Interfaces
 
-Additional hubs and hardware are available behind the screen:
+Behind the curved screen you will find additional hardware:
 ![Extron-Hun](Extron-Hub.jpeg)
-1. (1) the "Extron Hub" behind the curved screen provides the interfaces for additional video connections as well as the Extron panel.
-2. (2) PureTools (converter) video VGA input for PC - laptop.!
+### Extron Hub:
+1.  **Extron Hub** – interfaces for additional video connections and the Extron panel.
+2. **PureTools Converter** – VGA input for PC/laptop.
 ![PureTool_1](PureTool_1.jpeg)
 ![Connecting](Connecting.png)
 ![Remote-Control](Remote.png)
 
-3. On the table is remote control for all settings of PureTools PT-SC-VGAHD
-   Documentation: [PureTools PT-SC-VGAHD](https://icst-kompositionsstudio.ch/post/puretools-video-converter)
-
-4. Lake People (Stereo Balanced Amplifier) for direct connection of the Mac. ![Amp](amp.jpeg)
-5. Lake People (Phone Amplifier) for 2x headphone monitoring.!
-6. Headphone:
-![Headphone_amp](Headphone_amp.jpeg)
+### Remote-Control:
+3. A remote control on the table manages all settings of the PureTools PT‑SC‑VGAHD.  
+    👉 [Documentation: PureTools PT‑SC‑VGAHD](https://icst-kompositionsstudio.ch/post/puretools-video-converter)
+    
+4. **Lake People Stereo Balanced Amplifier** – for direct connection to the Mac.
+	![Amp](amp.jpeg)
+5. **Lake People Phone Amplifier** – for two headphone monitoring channels.
+    
+6. **Headphones**
+   ![Headphone_amp](Headphone_amp.jpeg)
  Lake People (Phone Amplifier) for 2x headphone monitoring.
 
 ---
-### DisplayLink
-The [Targus USB-C Docking station](https://us.targus.com/products/usb-c-universal-dv4k-docking-station-with-100w-power-dock190usz)  can now connect two SSD HDs via USB-C in addition to the fixed connections.
-![DisplayLink](DisplayLink_1.png)
-Image: DisplayLink front/side
-![DisplayLink_2](DisplayLink_3.jpeg)
-Image: DisplayLink Back
-![DisplayLink_3](DisplayLink_2.png)
-Image: DisplayLink Connectors
+### DisplayLink Docking Station
+   .   The [Targus USB‑C Docking Station](https://us.targus.com/products/usb-c-universal-dv4k-docking-station-with-100w-power-dock190usz) allows you to connect two external SSDs via USB‑C in       addition to the fixed connections.
+	![DisplayLink](DisplayLink_1.png)
+ .      Front/Side View
+	![DisplayLink_2](DisplayLink_3.jpeg)
+ .      DisplayLink Back
+	![DisplayLink_3](DisplayLink_2.png)
+    _Connector Overview_
 
-ATTENTION: To use the video features of the 'Targus Docking station' the 'DisplayLink' driver must be installed!
+**Attention:** To use the video functions of the Targus Docking Station, you must install the **DisplayLink** driver:  
+👉 [Download DisplayLink Driver](https://www.synaptics.com/products/displaylink-graphics/downloads)
 
-Download \[[DisplayLink](https://www.synaptics.com/products/displaylink-graphics/downloads)\] Driver!
-
-7. The Apple Labtop can be easily connected via USB-C (3.2) or USB -A (3.2).
+7. The Apple laptop can be connected via **USB‑C (3.2)** or **USB‑A (3.2)**.
 ![DisplayLink_4.jpeg](DisplayLink_4.jpeg)
 8. Logitech Keyboard & Mouse
 
 ![Tastature-Mouse](Tastature-Maus.jpeg)
 
-You can now conveniently switch the keyboard and mouse to their respective sources.
-- 1 --> MacPro Studio
-- 2 --> Laptop / Pc
-
+7. You can easily switch the keyboard and mouse between the following sources:
+    
+    - **1** → Mac Pro Studio
+    - **2** → Laptop / PC
+        
 ----
 2025@ICST
