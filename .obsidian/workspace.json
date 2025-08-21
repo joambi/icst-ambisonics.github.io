@@ -77,7 +77,35 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/08_downloads/index.md",
+                "file": "content/About/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "e03bde39c086c207",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Blog/Péter Biró Dániel/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "7f4dacc8a4bebee0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Blog/09-ascolta/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -86,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -225,7 +253,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1753290605491": false,
+      "image-preview-on-icon-hover:1755790426042": false,
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -241,10 +270,34 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "0dcbaf17685ec5f0",
+  "active": "7f4dacc8a4bebee0",
   "lastOpenFiles": [
-    "content/ICST Ambisonics Plugins/_index.md",
+    "content/Blog/13-ascolta/index.md",
+    "content/Blog/04-ascolta/index.md",
+    "content/Blog/03-ascolta/index.md",
+    "content/Blog/01-ascolta/index.md",
+    "content/Blog/02-ascolta/image005.jpg",
+    "images/Bildschirmfoto 2025-07-08 um 12.59.29.png",
+    "images/Bildschirmfoto 2025-07-08 um 12.24.39.png",
+    "images/Bildschirmfoto 2025-07-08 um 11.51.46.png",
+    "images/Bildschirmfoto 2025-07-08 um 11.48.29.png",
+    "content/Blog/Youngjae Cho/index.md",
+    "content/Blog/Youngjae Cho/Bformat to SPS.md",
+    "content/Blog/Péter Biró Dániel/index.md",
+    "[ICST.md",
+    "Lucas & Daniel.jpg",
+    "2025-05-17.md",
+    "content/Blog/nandele_maguni/index.md",
+    "content/Blog/_index.md",
+    "content/Blog/NOTES/index.md",
+    "content/Blog/Péter Biró Dániel/Lucas & Daniel.jpg",
+    "polices.md",
+    "content/Privacy Policy.md",
+    "archetypes/post.md",
+    "archetypes/default.md",
+    "content/About/index.md",
     "content/ICST Ambisonics Plugins/08_downloads/index.md",
+    "content/ICST Ambisonics Plugins/_index.md",
     "public/icst-ambisonics-plugins/08_downloads/index.html",
     "public/icst-ambisonics-plugins/08_downloads",
     "content/ICST Ambisonics Plugins/07_shortcuts/index.md",
@@ -252,38 +305,15 @@
     "content/ICST Ambisonics Plugins/08_downloads",
     "content/post/_index.md",
     "content/post/Blauertsche_Bänder/index.md",
-    "2025-05-17.md",
     "content/Blog/ICST Composer Studio Blog/index.md",
     "content/Blog/ascolta/index.md",
-    "[ICST.md",
     "content/Blog/ICST Composer Studio Overview/index.md",
     "content/Blog/ICST Composer Studio Overview/ICST_STUDIO.png",
-    "content/Blog/_index.md",
-    "content/Blog/ICST Kompositionsstudio Regie/index.md",
     "public/blog/icst-kompositionsstudio-regie/DisplayLink_4.jpeg",
     "content/Blog/ICST Kompositionsstudio Regie/DisplayLink_4.jpeg",
-    "DisplayLink_4.jpeg",
-    "docs/content/Blog/ICST Kompositionsstudio Regie/index.md",
-    "docs/Evernote/icst-kompositionsstudio/ICST Kompositionsstudio Regie.md",
-    "content/Blog/ICST Kompositionsstudio Software/index.md",
-    "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
-    "content/Blog/ICST Labor/index.md",
-    "content/Blog/ICST Labor/Labor-DOME-Setup.png",
-    "content/Blog/ICST Studio Residences/index.md",
-    "content/Blog/nandele_maguni/index.md",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
-    "content/Blog/What_we_now/index.md",
-    "content/Blog/Sounding_Future/index.md",
-    "content/Blog/ICST Kompositionsstudio Pre-Installation/index.md",
-    "content/Blog/ICST Kompositionsstudio Equipment/index.md",
-    "content/Blog/ICST Bformat Archive/index.md",
-    "content/post/CircleSelected/Sircle_Selected.gif",
-    "Sircle_Selected.gif",
     "content/post/CircleSelected",
     "ICST_AmbiEncoder_Parmeter_Indexes.txt",
-    "content/post/Blauertsche_Bänder/8000hz.png",
-    "content/post/Blauertsche_Bänder/Richtungswahrnehmung.png",
-    "content/post/Blauertsche_Bänder/Richtungsbänder.png",
     "ICST AmbiEncoder_64 Spiral Walk.lua",
     "content/post/Blauertsche_Bänder",
     "334-I3DA_2023_paper_9987.pdf",
