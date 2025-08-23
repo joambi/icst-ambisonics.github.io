@@ -105,16 +105,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/nandele_maguni/index.md",
+                "file": "content/post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "378a4e7505ca44e0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.11"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.11"
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -146,7 +158,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "downloads",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -253,7 +265,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1755790426042": false,
+      "image-preview-on-icon-hover:1755954620209": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -270,13 +282,15 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "7f4dacc8a4bebee0",
+  "active": "0dcbaf17685ec5f0",
   "lastOpenFiles": [
+    "content/post/osc-2-fx/index.md",
+    "content/post/osc-2-fx/FndReverb_Dist_Wet-Dry.png",
+    "content/Blog/nandele_maguni/index.md",
     "content/Blog/nandele_maguni/nandele_01.png",
     "content/Blog/Péter Biró Dániel/index.md",
     "content/Blog/Péter Biró Dániel/Lucas_Daniel.jpg",
     "content/Blog/Youngjae Cho/index.md",
-    "content/Blog/nandele_maguni/index.md",
     "content/Blog/nandele_maguni/nandele_02.png",
     "content/Blog/09-ascolta/index.md",
     "content/Blog/13-ascolta/index.md",
@@ -308,8 +322,6 @@
     "content/ICST Ambisonics Plugins/08_downloads",
     "content/post/_index.md",
     "content/post/Blauertsche_Bänder/index.md",
-    "content/Blog/ICST Composer Studio Blog/index.md",
-    "content/Blog/ICST Composer Studio Overview/ICST_STUDIO.png",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "content/post/CircleSelected",
     "ICST_AmbiEncoder_Parmeter_Indexes.txt",
