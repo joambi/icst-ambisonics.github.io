@@ -117,12 +117,14 @@
             "id": "378a4e7505ca44e0",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.9.11"
+                "file": "content/post/icst-grapes/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.11"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ],
@@ -255,17 +257,27 @@
               "icon": "lucide-list",
               "title": "Outline of Untitled"
             }
+          },
+          {
+            "id": "db97cea7ebd1a566",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1755954620209": false,
+      "image-preview-on-icon-hover:1755956824816": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -282,15 +294,17 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "0dcbaf17685ec5f0",
+  "active": "378a4e7505ca44e0",
   "lastOpenFiles": [
+    "content/post/icst-scripts/index.md",
+    "content/Blog/Youngjae Cho/index.md",
+    "content/Blog/Youngjae Cho/Bformat to SPS.md",
     "content/post/osc-2-fx/index.md",
     "content/post/osc-2-fx/FndReverb_Dist_Wet-Dry.png",
     "content/Blog/nandele_maguni/index.md",
     "content/Blog/nandele_maguni/nandele_01.png",
     "content/Blog/Péter Biró Dániel/index.md",
     "content/Blog/Péter Biró Dániel/Lucas_Daniel.jpg",
-    "content/Blog/Youngjae Cho/index.md",
     "content/Blog/nandele_maguni/nandele_02.png",
     "content/Blog/09-ascolta/index.md",
     "content/Blog/13-ascolta/index.md",
@@ -302,7 +316,6 @@
     "images/Bildschirmfoto 2025-07-08 um 12.24.39.png",
     "images/Bildschirmfoto 2025-07-08 um 11.51.46.png",
     "images/Bildschirmfoto 2025-07-08 um 11.48.29.png",
-    "content/Blog/Youngjae Cho/Bformat to SPS.md",
     "[ICST.md",
     "Lucas & Daniel.jpg",
     "2025-05-17.md",
