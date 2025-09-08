@@ -119,7 +119,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/ICST Studio Residences/index.md",
+                "file": "content/ICST Ambisonics Plugins/08_downloads/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -296,13 +296,14 @@
   },
   "active": "378a4e7505ca44e0",
   "lastOpenFiles": [
+    "notes.md",
+    "content/Blog/ICST Studio Residences/index.md",
     "images/Lucas & Daniel.jpg",
     "ICST.md",
     "public/blog/ana-gonzalez-gamboa/index.html",
     "public/blog/ana-gonzalez-gamboa",
     "content/Blog/Ana Gonzalez Gamboa/index.md",
     "content/Blog/Péter Biró Dániel/index.md",
-    "content/Blog/ICST Studio Residences/index.md",
     "content/Blog/Youngjae Cho/index.md",
     "content/Blog/_index.md",
     "content/Blog/Péter Biró Dániel/Lucas_Daniel.jpg",
@@ -327,7 +328,6 @@
     "public/icst-ambisonics-plugins/01_overview/Bildschirmfoto 2025-08-23 um 16.08.16.png",
     "content/post/icst-grapes/index.md",
     "public/blog/youngjae-cho/Youngjae_02.jpg",
-    "content/Blog/Youngjae Cho/Youngjae_02.jpg",
     "content/post/icst-scripts/index.md",
     "content/Blog/Youngjae Cho/Bformat to SPS.md",
     "content/post/osc-2-fx/index.md",
