@@ -12,7 +12,6 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 - [ICST Ambisonics Plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 - [ICST Ambisonics Tools](https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-ambisonics-externals-for-maxmsp-5381) (please download the Ambisonics Tools over the 'Max Package Manager')
-- [Studio Speaker-Settings (XML) & other helpers]() -->work in progress
 	
 ---
 ©2025 ICST
