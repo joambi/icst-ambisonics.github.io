@@ -117,14 +117,12 @@
             "id": "378a4e7505ca44e0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "content/Blog/Ana Gonzalez Gamboa/index.md",
-                "mode": "source",
-                "source": false
+                "file": "content/Blog/Ana Gonzalez Gamboa/GOPR4281.jpg"
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-image",
+              "title": "GOPR4281"
             }
           }
         ],
@@ -296,9 +294,9 @@
   },
   "active": "378a4e7505ca44e0",
   "lastOpenFiles": [
+    "content/Blog/Ana Gonzalez Gamboa/index.md",
     "public/blog/ana-gonzalez-gamboa/GOPR4281.jpg",
     "content/Blog/Ana Gonzalez Gamboa/GOPR4281.jpg",
-    "content/Blog/Ana Gonzalez Gamboa/index.md",
     "content/ICST Ambisonics Plugins/08_downloads/index.md",
     "notes.md",
     "content/Blog/ICST Studio Residences/index.md",
@@ -327,7 +325,6 @@
     "docs/ICST MultiDecoder.md",
     "content/ICST Ambisonics Plugins/01_overview/Overview_v3.1.png",
     "public/icst-ambisonics-plugins/01_overview/Overview_ICST_Plugins.png",
-    "public/icst-ambisonics-plugins/01_overview/Bildschirmfoto 2025-08-23 um 16.08.16.png",
     "content/post/icst-grapes/index.md",
     "content/post/icst-scripts/index.md",
     "content/Blog/Youngjae Cho/Bformat to SPS.md",
