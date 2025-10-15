@@ -25266,71 +25266,99 @@ var SettingsTab = class extends import_obsidian3.PluginSettingTab {
 var TextFormatting = class {
   constructor(view) {
     this.editorView = view;
-    this.shouldInsert = "none";
   }
   detectSandwichAsterisks(update) {
     for (const tr of update.transactions) {
       const changes = tr.changes.toJSON();
-      if (changes.length === 5 && Array.isArray(changes[1]) && Array.isArray(changes[3]) && changes[1].length === 2 && changes[3].length === 2 && changes[1][1].contains("*") && changes[3][1].contains("*")) {
-        const selectedText = this.editorView.state.doc.slice(changes[0], changes[0] + changes[2]).sliceString(0);
-        if (selectedText.contains("span") && selectedText.contains("color")) {
-          this.shouldInsert = changes[1][1].length === 1 ? "italic" : "bold";
-          this.changes = changes;
-          return true;
-        }
-      } else if (changes.length === 4 && Array.isArray(changes[0]) && Array.isArray(changes[2]) && changes[0].length === 2 && changes[2].length === 2 && changes[0][1].contains("*") && changes[2][1].contains("*")) {
-        const selectedText = this.editorView.state.doc.slice(0, changes[1]).sliceString(0);
-        if (selectedText.contains("span") && selectedText.contains("color")) {
-          this.shouldInsert = changes[0][1].length === 1 ? "italic" : "bold";
-          changes.unshift(0);
-          this.changes = changes;
-          return true;
-        }
-      } else if (changes.length === 4 && Array.isArray(changes[1]) && Array.isArray(changes[3]) && changes[1].length === 2 && changes[3].length === 2 && changes[1][1].contains("*") && changes[3][1].contains("*")) {
-        const selectedText = this.editorView.state.doc.slice(changes[0], changes[0] + changes[2]).sliceString(0);
-        if (selectedText.contains("span") && selectedText.contains("color")) {
-          this.shouldInsert = changes[1][1].length === 1 ? "italic" : "bold";
-          changes.push(0);
-          this.changes = changes;
-          return true;
-        }
+      if (this.isValidAsteriskChange(changes)) {
+        return true;
       }
     }
     return false;
   }
+  isValidAsteriskChange(changes) {
+    const hasAsterisks = changes.some(
+      (change) => {
+        var _a;
+        return Array.isArray(change) && change.length === 2 && ((_a = change[1]) == null ? void 0 : _a.includes("*"));
+      }
+    );
+    if (!hasAsterisks)
+      return false;
+    const text = this.getAffectedText(changes);
+    return text.includes("span") && text.includes("color");
+  }
+  getAffectedText(changes) {
+    let startPos = 0;
+    let length2 = 0;
+    if (changes.length === 5 && Array.isArray(changes[1])) {
+      startPos = changes[0];
+      length2 = changes[2];
+    } else if (changes.length === 4 && Array.isArray(changes[0])) {
+      startPos = 0;
+      length2 = changes[1];
+    } else if (changes.length === 4 && Array.isArray(changes[1])) {
+      startPos = changes[0];
+      length2 = changes[2];
+    }
+    return this.editorView.state.doc.slice(startPos, startPos + length2).sliceString(0);
+  }
   addStylingToSandwichAsterisks(update) {
-    if (this.shouldInsert === "none")
-      return;
-    let anchorPos = 0;
-    const styleText = this.shouldInsert === "bold" ? "font-weight:bold; " : "font-style:italic; ";
-    const textLen = this.changes[1][1].length;
-    const editorChanges = [
-      { from: this.changes[0], to: this.changes[0] + textLen, insert: "" },
-      { from: this.changes[0] + this.changes[2] + textLen, to: this.changes[0] + this.changes[2] + textLen * 2, insert: "" }
-    ];
-    const selectedText = this.editorView.state.doc.slice(this.changes[0], this.changes[0] + this.changes[2]).sliceString(0);
-    if (!selectedText.contains(this.shouldInsert)) {
-      const searchedText = '<span style="';
-      const idx = selectedText.search(searchedText) + searchedText.length - textLen;
-      editorChanges.push({ from: this.changes[0] + idx + textLen, insert: styleText });
-      anchorPos = this.changes[0] + this.changes[2] + styleText.length + 1;
-    } else {
-      const idx = selectedText.search(styleText);
-      const from2 = this.changes[0] + idx;
-      const to = from2 + styleText.length;
-      editorChanges.push({ from: from2, to, insert: "" });
-      anchorPos = this.changes[0] + this.changes[2] - styleText.length + 1;
-    }
-    if (this.changes[4] === 0) {
-      anchorPos -= 1;
-    }
-    setTimeout(() => {
-      this.editorView.dispatch({
-        changes: editorChanges,
-        selection: { anchor: anchorPos }
-        // Move the cursor to end of the html element
+    for (const tr of update.transactions) {
+      const changes = tr.changes.toJSON();
+      if (!this.isValidAsteriskChange(changes))
+        continue;
+      const { startPos, textLength, asteriskCount } = this.parseChanges(changes);
+      let spanText = this.editorView.state.doc.slice(startPos, startPos + textLength + asteriskCount * 2).sliceString(0);
+      spanText = spanText.slice(asteriskCount, -asteriskCount);
+      const newText = this.toggleFormattingTags(spanText, asteriskCount);
+      const cursorPos = startPos + newText.length;
+      setTimeout(() => {
+        this.editorView.dispatch({
+          changes: {
+            from: startPos,
+            to: startPos + textLength + asteriskCount * 2,
+            insert: newText
+          },
+          selection: { anchor: cursorPos }
+        });
       });
-    });
+    }
+  }
+  parseChanges(changes) {
+    let startPos = 0;
+    let textLength = 0;
+    let asteriskCount = 1;
+    if (changes.length === 5 && Array.isArray(changes[1])) {
+      startPos = changes[0];
+      textLength = changes[2];
+      asteriskCount = changes[1][1].length;
+    } else if (changes.length === 4 && Array.isArray(changes[0])) {
+      startPos = 0;
+      textLength = changes[1];
+      asteriskCount = changes[0][1].length;
+    } else if (changes.length === 4 && Array.isArray(changes[1])) {
+      startPos = changes[0];
+      textLength = changes[2];
+      asteriskCount = changes[1][1].length;
+    }
+    return { startPos, textLength, asteriskCount };
+  }
+  toggleFormattingTags(text, asteriskCount) {
+    const isBold = asteriskCount === 2;
+    if (isBold) {
+      if (text.includes("<b>") && text.includes("</b>")) {
+        return text.replace(/<b>/g, "").replace(/<\/b>/g, "");
+      } else {
+        return text.replace(/(<span[^>]*>)([\s\S]*?)(<\/span>)/, "$1<b>$2</b>$3");
+      }
+    } else {
+      if (text.includes("<i>") && text.includes("</i>")) {
+        return text.replace(/<i>/g, "").replace(/<\/i>/g, "");
+      } else {
+        return text.replace(/(<span[^>]*>)([\s\S]*?)(<\/span>)/, "$1<i>$2</i>$3");
+      }
+    }
   }
 };
 
@@ -25375,7 +25403,29 @@ var ColorHandler = class {
     this.colorBar = colorBar;
     this.colorUtils = new ColorUtils();
   }
+  nodeLength(n) {
+    if (!n)
+      return 0;
+    if (n.innerHTML)
+      return n.innerHTML.length;
+    if (n.textContent)
+      return n.textContent.length;
+    return 0;
+  }
+  getGlobalOffsets(range) {
+    let startOffset = range.startOffset;
+    let wordLength = range.endOffset - range.startOffset;
+    let node2 = range.startContainer;
+    let prev2 = node2.previousSibling;
+    while (prev2) {
+      startOffset += this.nodeLength(prev2);
+      prev2 = prev2.previousSibling;
+    }
+    const endOffset = startOffset + wordLength;
+    return { startOffset, endOffset };
+  }
   changeColor(colorMode = 0 /* Normal */) {
+    var _a;
     const view = this.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
     if (view) {
       const editor = view.editor;
@@ -25394,6 +25444,47 @@ var ColorHandler = class {
       } catch (e) {
         const lineText = editor.getLine(cursorEnd.line);
         editor.setLine(cursorEnd.line, lineText + " ");
+      }
+    }
+    const canvasView = this.app.workspace.getActiveViewOfType(Object);
+    if (canvasView && canvasView.canvas) {
+      const selectedNodes = Array.from(canvasView.canvas.selection.values());
+      const curCellColor = this.colorBar.getCurCellColor();
+      for (const node2 of selectedNodes) {
+        const data = node2.getData();
+        if (data.type === "text") {
+          const nodeEl = node2.nodeEl;
+          const iframe = nodeEl.querySelector("iframe.embed-iframe");
+          if (iframe) {
+            const innerDoc = iframe.contentDocument || ((_a = iframe.contentWindow) == null ? void 0 : _a.document);
+            const selection = innerDoc == null ? void 0 : innerDoc.getSelection();
+            if (selection && selection.rangeCount > 0) {
+              const range = selection.getRangeAt(0);
+              const selectedText = selection.toString();
+              if (selectedText.length === 0 && colorMode === 1 /* ColoredText */)
+                return;
+              if (!innerDoc)
+                return;
+              const data2 = node2.getData();
+              const fullText = data2.text;
+              const { startOffset, endOffset } = this.getGlobalOffsets(range);
+              const before = fullText.slice(0, startOffset);
+              const after = fullText.slice(endOffset);
+              const wrapped = `<span style="color:${curCellColor}">${selectedText}</span>`;
+              const newHtml = before + wrapped + after;
+              node2.setData({
+                ...data2,
+                text: newHtml
+              });
+              if (selection) {
+                try {
+                  selection.removeAllRanges();
+                } catch (e) {
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

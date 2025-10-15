@@ -12,10 +12,10 @@ Acousmatic music and its associated performance practice aim to create a situati
 
 ---
 
-| Termine (HS) 2025                       | Topic       | Date | Time  | Raum  |
-| --------------------------------------- | ----------- | ---- | ----- | ----- |
-| [#17 Ascolta Akusmatische Hörstunde]()  |             |      | 18:00 | 3.D02 |
-| [#16  Ascolta Akusmatische Hörstunde]() | The Bformat |      | 18:00 | 3.D02 |
+| Termine (HS) 2025                       | Topic       | Date       | Time  | Raum  |
+| --------------------------------------- | ----------- | ---------- | ----- | ----- |
+| [#17 Ascolta Akusmatische Hörstunde]()  | open        | 20.11.2025 | 18:00 | 3.D02 |
+| [#16  Ascolta Akusmatische Hörstunde]() | The Bformat | 16.10.2025 | 18:00 | 3.D02 |
 
 | Termine (FS) 2025                                                                | Topic            | Date           | Time  | Raum  |
 | -------------------------------------------------------------------------------- | ---------------- | -------------- | ----- | ----- |

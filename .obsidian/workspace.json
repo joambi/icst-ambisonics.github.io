@@ -117,12 +117,14 @@
             "id": "378a4e7505ca44e0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "content/Blog/Ana Gonzalez Gamboa/GOPR4281.jpg"
+                "file": "content/Blog/16-ascolta/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "GOPR4281"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ],
@@ -275,7 +277,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1757835948063": false,
+      "image-preview-on-icon-hover:1760536821732": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -292,11 +294,23 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "378a4e7505ca44e0",
+  "active": "0dcbaf17685ec5f0",
   "lastOpenFiles": [
+    "content/Blog/15-ascolta/index.md",
+    "content/Blog/16-ascolta/index.md",
+    "content/Blog/ascolta/index.md",
+    "content/Blog/16-ascolta/ascolta.png",
+    "content/Blog/15-ascolta/ascolta.png",
+    "content/Blog/16-ascolta",
+    "content/Blog/ascolta/Ascolta_Index.png",
     "content/Blog/Ana Gonzalez Gamboa/index.md",
-    "public/blog/ana-gonzalez-gamboa/GOPR4281.jpg",
+    "content/Blog/ICST Composer Studio Blog/index.md",
+    "[Dateien.md",
+    "content/post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
+    "decoder-speaker-settings.md",
+    "content/ICST Ambisonics Tools/index.md",
     "content/Blog/Ana Gonzalez Gamboa/GOPR4281.jpg",
+    "public/blog/ana-gonzalez-gamboa/GOPR4281.jpg",
     "content/ICST Ambisonics Plugins/08_downloads/index.md",
     "notes.md",
     "content/Blog/ICST Studio Residences/index.md",
@@ -319,19 +333,9 @@
     "2025-05-17.md",
     "Bildschirmfoto 2025-07-02 um 10.55.04.png",
     "Hight.md",
-    "Lucas & Daniel.jpg",
     "docs/polices.md",
     "docs/notes.md",
     "docs/ICST MultiDecoder.md",
-    "content/ICST Ambisonics Plugins/01_overview/Overview_v3.1.png",
-    "public/icst-ambisonics-plugins/01_overview/Overview_ICST_Plugins.png",
-    "content/post/icst-grapes/index.md",
-    "content/post/icst-scripts/index.md",
-    "content/Blog/Youngjae Cho/Bformat to SPS.md",
-    "content/post/osc-2-fx/index.md",
-    "content/Blog/nandele_maguni/index.md",
-    "content/Blog/09-ascolta/index.md",
-    "content/Blog/13-ascolta/index.md",
     "public/icst-ambisonics-plugins/08_downloads/index.html",
     "public/icst-ambisonics-plugins/08_downloads",
     "content/ICST Ambisonics Plugins/08_downloads",
@@ -339,7 +343,6 @@
     "content/post/CircleSelected",
     "ICST_AmbiEncoder_Parmeter_Indexes.txt",
     "ICST AmbiEncoder_64 Spiral Walk.lua",
-    "content/post/Blauertsche_Bänder",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"

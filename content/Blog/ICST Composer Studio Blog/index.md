@@ -50,7 +50,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ---
 ## Additional downloads
-- [Decoder Speaker Settings](decoder-speaker-settings)
+- [Decoder Speaker Settings](https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV)
 
 ---
 ©2025 ICST
