@@ -11,6 +11,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 # The ICST AmbiPlugins: 
 
+- [00_NEW](00_new)
 
 - [01 Overview](01_overview)
 

@@ -69,7 +69,7 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)
 
 5. Configure OSC connection between Ableton and ICST MultiEncoder. Each encoder requires its own OSC port.
 
-    ![OSC-Ports](OSC-Port.png)
+    ![OSC-Ports](content/post/ableton_reaper/OSC-Port.png)
 6. Activate OSC transmission in E4L_Multi-Panner. The ICST MultiEncoder will display moving dots when receiving OSC data.
    ![OSC_ON](OSC_ON.png)
 7. In Reaper press Record -Output for recording your Bformat see next image.

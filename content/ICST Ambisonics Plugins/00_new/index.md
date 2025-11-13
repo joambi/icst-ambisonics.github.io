@@ -7,12 +7,12 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ----
 
-# **ICST Ambisonics Plugins v3.1 Now Available!**
+# **ICST Ambisonics Plugins v3.2 Now Available!**
 
 **Download:** [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 
 ----
-## **What’s New in v3.1?**
+## **What’s New in v3.2?**
 
 We’re excited to introduce **ICST Ambisonics Plugins v3.1**, featuring a new **multi-decoder** that incorporates the latest empirical research. With four **weightings** and **filter banks**, you can now fine-tune up to four loudspeaker arrays for a more detailed and spatially accurate **B-format** audio experience.
 
@@ -20,20 +20,20 @@ For full details, check out the official documentation:
 📖 **Documentation:** [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 
 ---
-# ICST AmbiDecoder v3.1
+# ICST AmbiDecoder v3.2
 
 ### **New Features & Enhancements**
 
 - **Bidirectional Solo & Mute**  
 - **Keyboard Shortcuts (Mac):** shift & control 's' / shift & control 'm'
-  ![bidi_mute](bidi_mute.gif)
+  ![bidi_mute](content/ICST%20Ambisonics%20Plugins/00_new/bidi_mute.gif)
 ### **New Layout**
 
 - **Speaker Settings**
 - **Decoding Settings**
 - **Filter Options**
 - **Additional Features (coming soon)**
-  ![New_layout](Layout_v3_1.png)
+  ![New_layout](content/ICST%20Ambisonics%20Plugins/00_new/Layout_v3_1.png)
 ### **New CSV Export Features**
 - Export decoder "speaker coordinates" to Max via CSV (and vice versa).
 - Backup and export all presets as XML.
@@ -43,9 +43,9 @@ For full details, check out the official documentation:
 ### Improved filter user interface
 
 - 8 different filter options
-	![filters](NEW/filters.png)
+	![filters](content/ICST%20Ambisonics%20Plugins/00_new/filters.png)
 	
-  ![filter UI](NEW/filter_UI.png)
+  ![filter UI](content/ICST%20Ambisonics%20Plugins/00_new/filter_UI.png)
 
 ### New Multi-Decoder Mode
 
@@ -59,7 +59,7 @@ For full details, check out the official documentation:
 
 💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki).
 
-![MultiDecoder](NEW/Multidecoder.png)
+![MultiDecoder](content/ICST%20Ambisonics%20Plugins/00_new/Multidecoder.png)
 
 ### New Project-templates
 
@@ -69,9 +69,9 @@ For full details, check out the official documentation:
 ### New Track Templates
 
 - ICST AmbiPlugins
-  ![ICST | 400](Track_temp_icst.png)
+  ![ICST | 400](content/ICST%20Ambisonics%20Plugins/00_new/Track_temp_icst.png)
 - ICST AmbiPlugins 3rdParty
-  ![3rdParty | 400](Track_temp_3rd.png)
+  ![3rdParty | 400](content/ICST%20Ambisonics%20Plugins/00_new/Track_temp_3rd.png)
 
 ---
 # **ICST AmbiEncoder v3.1**
@@ -81,9 +81,9 @@ For full details, check out the official documentation:
 - New Tap Layout
 - Ambisonics Order Menu
 -  Bidirectional Mute & Solo
-![Enc_layout](Enc_layout.png)
+![Enc_layout](content/ICST%20Ambisonics%20Plugins/00_new/Enc_layout.png)
 🔹 **Example:** Layout
-![Enc_M_S](Enc_M_S.gif)
+![Enc_M_S](content/ICST%20Ambisonics%20Plugins/00_new/Enc_M_S.gif)
 🔹 **Example:** Mute & Solo (bidirectional)
 
 ### **OSC Control**
