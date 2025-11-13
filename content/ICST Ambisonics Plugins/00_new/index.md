@@ -1,6 +1,6 @@
 ---
 title: ICST Ambisonics Plugins
-date: 2025-10-20T16:13:00
+date: 2025-11-03T16:13:00
 ---
 
 # Institute for Computer Music and Sound Technology (ICST)
