@@ -37,7 +37,7 @@ var TextColor = class {
   /**
    * Create a basic Text Color
    *
-   * @param {string} color - [TODO:description]
+   * @param {string} color - the color of the text
    * @param {string} id - the id or name of the color
    * @param {string} themeName - the associated theme that this color belongs to
    * @param {boolean} [italic] - italic text
@@ -1021,30 +1021,60 @@ function applyColor(tColor, editor) {
 function removeColor(editor, view) {
   var _a, _b;
   const tree = view.state.field(textColorParserField).tree;
-  let node = tree.resolveInner(view.state.selection.main.head);
-  while (node.parent != null) {
-    if (node.type.name != "Expression") {
-      node = node.parent;
-      continue;
+  let from = Math.min(view.state.selection.main.head, view.state.selection.main.anchor);
+  let to = Math.max(view.state.selection.main.head, view.state.selection.main.anchor);
+  if (to - from == 0) {
+    let node = tree.resolveInner(view.state.selection.main.head);
+    while (node.parent != null) {
+      if (node.type.name != "Expression") {
+        node = node.parent;
+        continue;
+      }
+      const TcLeft = node.getChild("TcLeft");
+      const Rmarker = (_b = (_a = node.getChild("TcRight")) == null ? void 0 : _a.getChild("REnd")) == null ? void 0 : _b.getChild("RMarker");
+      view.dispatch({
+        changes: [
+          {
+            from: TcLeft ? TcLeft.from : 0,
+            to: TcLeft ? TcLeft.to : 0,
+            insert: ""
+          },
+          {
+            from: Rmarker ? Rmarker.from : 0,
+            to: Rmarker ? Rmarker.to : 0,
+            insert: ""
+          }
+        ]
+      });
+      return;
     }
-    const TcLeft = node.getChild("TcLeft");
-    const Rmarker = (_b = (_a = node.getChild("TcRight")) == null ? void 0 : _a.getChild("REnd")) == null ? void 0 : _b.getChild("RMarker");
-    view.dispatch({
-      changes: [
-        {
-          from: TcLeft ? TcLeft.from : 0,
-          to: TcLeft ? TcLeft.to : 0,
-          insert: ""
-        },
-        {
-          from: Rmarker ? Rmarker.from : 0,
-          to: Rmarker ? Rmarker.to : 0,
-          insert: ""
-        }
-      ]
-    });
     return;
   }
+  let changes = [];
+  tree.iterate({
+    from,
+    to,
+    enter(n) {
+      var _a2, _b2;
+      if (n.type.name != "Expression") {
+        return true;
+      }
+      const TcLeft = n.node.getChild("TcLeft");
+      const Rmarker = (_b2 = (_a2 = n.node.getChild("TcRight")) == null ? void 0 : _a2.getChild("REnd")) == null ? void 0 : _b2.getChild("RMarker");
+      changes.push({
+        from: TcLeft ? TcLeft.from : 0,
+        to: TcLeft ? TcLeft.to : 0,
+        insert: ""
+      });
+      changes.push({
+        from: Rmarker ? Rmarker.from : 0,
+        to: Rmarker ? Rmarker.to : 0,
+        insert: ""
+      });
+      return true;
+    }
+  });
+  view.dispatch({ changes });
   return;
 }
 
@@ -1122,6 +1152,12 @@ var FastTextColorPlugin = class extends import_obsidian8.Plugin {
               });
               subitem.dom.addClass(tColor.className);
               subitem.iconEl.addClass(tColor.className);
+            });
+          });
+          submenu.addItem((subitem) => {
+            subitem.setTitle("remove").setIcon("ban").onClick((evt) => {
+              const editorView = view.editor.cm;
+              removeColor(editor, editorView);
             });
           });
         });

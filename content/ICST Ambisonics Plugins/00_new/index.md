@@ -3,14 +3,12 @@ title: ICST Ambisonics Plugins
 date: 2025-11-03T16:13:00
 ---
 
-# Institute for Computer Music and Sound Technology (ICST)
-
-**Zurich University of the Arts**
+Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ----
-
 # ICST Ambisonics Plugins v3.2 
-**Now Available!**
+
+_**Now Available!**_
 
 **Download:**  
 🔗 **GitHub Releases**  
@@ -52,8 +50,8 @@ A clearer and more modular structure:
 - Eight new filter options
 - Updated UI for easier comparison and tuning
 
-	![filters](00_new/filters.png)
-	![filter UI](00_new/filter_UI.png)
+	![filters](filters.png)
+	![filter UI](filter_UI.png)
 
 ### New Multi-Decoder Mode
 

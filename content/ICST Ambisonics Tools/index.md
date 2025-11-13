@@ -1,14 +1,6 @@
 ---
-date: 2025-02-02T04:14:54-08:00
-draft: false
-params:
-  author: Johannes Schuett
-title: Ambisonics-externals for Max 8
-weight: 10
-image: "max-external.png"
-image: "Amb_Max.gif"
+tags:
 ---
-
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ------------------------------------------------------------------------
