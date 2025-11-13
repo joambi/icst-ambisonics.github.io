@@ -119,7 +119,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/00_new/index.md",
+                "file": "content/Blog/16-ascolta/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -296,10 +296,13 @@
   },
   "active": "378a4e7505ca44e0",
   "lastOpenFiles": [
+    "content/Blog/15-ascolta/index.md",
+    "content/Blog/ascolta/index.md",
+    "content/Blog/ascolta/Ascolta_Index.png",
+    "content/ICST Ambisonics Plugins/00_new/index.md",
     "public/icst-ambisonics-plugins/00_new/OSC_abs_angel.gif",
     "content/ICST Ambisonics Plugins/00_new/OSC_abs_angel.gif",
     "content/ICST Ambisonics Tools/index.md",
-    "content/ICST Ambisonics Plugins/00_new/index.md",
     "content/ICST Ambisonics Tools/index_2.md",
     "public/icst-ambisonics-plugins/00_new/index.html",
     "public/icst-ambisonics-plugins/00_new/youtube_em.png",
@@ -309,8 +312,6 @@
     "public/icst-ambisonics-plugins/00_new/filter_UI.png",
     "public/icst-ambisonics-plugins/00_new/bidi_mute.gif",
     "public/icst-ambisonics-plugins/00_new/Track_temp_icst.png",
-    "public/icst-ambisonics-plugins/00_new/Track_temp_3rd.png",
-    "public/icst-ambisonics-plugins/00_new/Speaker_setting_managment.gif",
     "public/icst-ambisonics-plugins/00_new",
     "public/blog/16-ascolta/index.html",
     "public/blog/16-ascolta",
@@ -333,9 +334,7 @@
     "content/ICST Ambisonics Plugins/08_downloads/index.md",
     "content/ICST Ambisonics Plugins/01_overview/index.md",
     "content/Blog/16-ascolta/index.md",
-    "content/Blog/15-ascolta/index.md",
     "content/Blog/14-ascolta/index.md",
-    "content/Blog/ascolta/index.md",
     "content/Blog/16-ascolta",
     "public/blog/ana-gonzalez-gamboa/index.html",
     "public/blog/ana-gonzalez-gamboa",

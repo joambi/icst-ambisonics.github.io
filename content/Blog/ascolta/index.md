@@ -14,7 +14,7 @@ Acousmatic music and its associated performance practice aim to create a situati
 
 | Termine (HS) 2025                                                             | Topic       | Date       | Time  | Raum  |
 | ----------------------------------------------------------------------------- | ----------- | ---------- | ----- | ----- |
-| [#17 Ascolta Akusmatische Hörstunde]()                                        | open        | 20.11.2025 | 18:00 | 3.D02 |
+| [#17 Ascolta Akusmatische Hörstunde]()                                        | fällt aus   | 20.11.2025 | 18:00 | 3.D02 |
 | [#16  Ascolta Akusmatische Hörstunde](https://ambisonics.ch/blog/16-ascolta/) | The Bformat | 16.10.2025 | 18:00 | 3.D02 |
 
 | Termine (FS) 2025                                                                | Topic            | Date           | Time  | Raum  |
