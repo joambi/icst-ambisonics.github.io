@@ -1,6 +1,6 @@
 ---
-title: ICST Ambisonics Plugins v3.1
-date: 2025-06-27T16:13:00
+title: ICST Ambisonics Plugins
+date: 2025-10-20T16:13:00
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
