@@ -117,14 +117,12 @@
             "id": "378a4e7505ca44e0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "content/Blog/16-ascolta/index.md",
-                "mode": "source",
-                "source": false
+                "file": "content/post/CircleSelected/Circle_Selected.gif"
               },
-              "icon": "lucide-file",
-              "title": "index"
+              "icon": "lucide-image",
+              "title": "Circle_Selected"
             }
           }
         ],
@@ -277,7 +275,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1763023690195": false,
+      "image-preview-on-icon-hover:1768736861227": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -294,13 +292,14 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "378a4e7505ca44e0",
+  "active": "0dcbaf17685ec5f0",
   "lastOpenFiles": [
+    "content/Blog/16-ascolta/index.md",
+    "content/post/CircleSelected/Circle_Selected.gif",
     "content/Blog/ICST Studio Residences/index.md",
     "content/Blog/ICST Studio Residences/ICST AiR Dates.md",
     "content/Blog/ICST Composer Studio Blog/index.md",
     "content/Blog/ICST Composer Studio Overview/index.md",
-    "content/Blog/16-ascolta/index.md",
     "content/Blog/16-ascolta/ascolta.png",
     "content/Blog/14-ascolta/index.md",
     "content/Blog/15-ascolta/index.md",
@@ -317,7 +316,6 @@
     "public/icst-ambisonics-plugins/00_new/osc-port.png",
     "public/icst-ambisonics-plugins/00_new/filters.png",
     "public/icst-ambisonics-plugins/00_new/filter_UI.png",
-    "public/icst-ambisonics-plugins/00_new/bidi_mute.gif",
     "public/icst-ambisonics-plugins/00_new",
     "public/blog/16-ascolta/index.html",
     "public/blog/16-ascolta",
@@ -335,7 +333,6 @@
     "docs/content/post/gp-manipulation/index.md",
     "docs/content/Blog/NEW/index.md",
     "content/Links/index.md",
-    "content/Blog/_index.md",
     "content/Blog/16-ascolta",
     "public/blog/ana-gonzalez-gamboa/index.html",
     "public/blog/ana-gonzalez-gamboa",

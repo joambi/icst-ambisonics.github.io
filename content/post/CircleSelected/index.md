@@ -9,7 +9,7 @@ title: CircleSelected_Script
 **Script:** `ICST_AmbiEncoder_64_CircleSelected_Presets.lua`  
 **Funktion:** Punkte des ICST AmbiEncoder_64 Plugins grafisch auswählen, im Kreis anordnen, bewegen (Rotation/RandomWalk) und als Preset speichern/laden.
 
-![CircleSelected](Sircle_Selected.gif)
+![CircleSelected](Circle_Selected.gif)
 
 
 ---
