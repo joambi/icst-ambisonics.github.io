@@ -117,12 +117,14 @@
             "id": "378a4e7505ca44e0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "content/post/CircleSelected/Circle_Selected.gif"
+                "file": "content/post/circleselected/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Circle_Selected"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ],
@@ -292,10 +294,13 @@
       "markitdown:Convert to Markdown with Markitdown": false
     }
   },
-  "active": "0dcbaf17685ec5f0",
+  "active": "378a4e7505ca44e0",
   "lastOpenFiles": [
+    "content/post/circleselected/Circle_Selected.gif",
     "content/Blog/16-ascolta/index.md",
     "content/post/CircleSelected/Circle_Selected.gif",
+    "content/post/circleselected/index.md",
+    "content/post/circleselected",
     "content/Blog/ICST Studio Residences/index.md",
     "content/Blog/ICST Studio Residences/ICST AiR Dates.md",
     "content/Blog/ICST Composer Studio Blog/index.md",
@@ -315,7 +320,6 @@
     "public/icst-ambisonics-plugins/00_new/settings.png",
     "public/icst-ambisonics-plugins/00_new/osc-port.png",
     "public/icst-ambisonics-plugins/00_new/filters.png",
-    "public/icst-ambisonics-plugins/00_new/filter_UI.png",
     "public/icst-ambisonics-plugins/00_new",
     "public/blog/16-ascolta/index.html",
     "public/blog/16-ascolta",
@@ -332,13 +336,11 @@
     "content/HOME/index.md",
     "docs/content/post/gp-manipulation/index.md",
     "docs/content/Blog/NEW/index.md",
-    "content/Links/index.md",
     "content/Blog/16-ascolta",
     "public/blog/ana-gonzalez-gamboa/index.html",
     "public/blog/ana-gonzalez-gamboa",
     "content/Blog/Ana Gonzalez Gamboa",
     "public/icst-ambisonics-plugins/08_downloads/index.html",
-    "public/icst-ambisonics-plugins/08_downloads",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
