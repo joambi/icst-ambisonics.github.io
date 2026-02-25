@@ -7,6 +7,7 @@ enableEmoji = true
 [params]
 title = "The ICST Ambisonics"
 author = "Johannes Schuett"
+email = "johannes.schuett@zhdk.ch"
 singleDateFormat = "2006-01-02"
 description = " This is the ICST Ambisonics Tutorial Blog"
 profilePicture = "images/AmbiPlugin_logo.gif"
