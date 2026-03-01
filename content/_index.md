@@ -21,6 +21,9 @@ The **ICST Ambisonics Plugins** encode and decode Ambisonics B-Format and provid
   <a class="hero__link" href="/blog/ascolta/">
     <i class="fas fa-headphones"></i>&nbsp;Ascolta
   </a>
+  <a class="hero__link" href="/residenzen/">
+    <i class="fas fa-music"></i>&nbsp;Residenzen
+  </a>
   <a class="hero__link" href="/blog/">
     <i class="fas fa-rss"></i>&nbsp;Studio
   </a>
