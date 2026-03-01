@@ -19,7 +19,7 @@ The **ICST Ambisonics Plugins** encode and decode Ambisonics B-Format and provid
     <i class="fas fa-graduation-cap"></i>&nbsp;Tutorials
   </a>
   <a class="hero__link" href="/blog/">
-    <i class="fas fa-rss"></i>&nbsp;Blog
+    <i class="fas fa-rss"></i>&nbsp;Studio
   </a>
   <a class="hero__link" href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank" rel="noopener noreferrer">
     <i class="fas fa-download"></i>&nbsp;Download
