@@ -1,5 +1,7 @@
 ---
+title: Studio Terms of Use
 tags: []
+weight: 8
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

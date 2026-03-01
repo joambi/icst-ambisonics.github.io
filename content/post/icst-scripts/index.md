@@ -4,7 +4,8 @@ tags:
   - luascript
   - reaper_script
 date: 2025-07-17T14:31:00
-title: icst-scripts
+title: ICST AmbiEncoder – Spiral Walk Script
+weight: 8
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

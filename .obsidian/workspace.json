@@ -117,12 +117,14 @@
             "id": "378a4e7505ca44e0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/06_step_by_step_setup/FX_Decoder.png"
+                "file": "content/Blog/ascolta/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "FX_Decoder"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ],
@@ -149,7 +151,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Dateiexplorer"
             }
           },
           {
@@ -275,14 +277,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1770738814544": false,
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Schnellauswahl öffnen": false,
+      "graph:Graph-Ansicht öffnen": false,
+      "canvas:Neuen Canvas erstellen": false,
+      "daily-notes:Heutige Notiz öffnen": false,
+      "templates:Vorlage einfügen": false,
+      "command-palette:Befehlspalette öffnen": false,
+      "bases:Neue Base erstellen": false,
+      "image-preview-on-icon-hover:1772357222862": false,
       "obsidian-importer:Open Importer": false,
       "github-sync:Sync with Remote": false,
       "obsidian-git:Open Git source control": false,
@@ -294,6 +296,7 @@
   },
   "active": "378a4e7505ca44e0",
   "lastOpenFiles": [
+    "content/ICST Ambisonics Plugins/06_step_by_step_setup/FX_Decoder.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/MultiEncoder_routing.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/open_decoder.gif",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/play_GP.gif",
@@ -302,7 +305,6 @@
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/render_info.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/render-master.png",
     "content/ICST Ambisonics Plugins/06_step_by_step_setup/speaker_test.png",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/FX_Decoder.png",
     "content/ICST Ambisonics Plugins/00_new/Track_temp_icst.png",
     "content/ICST Ambisonics Plugins/00_new/Track_temp_3rd.png",
     "content/post/Blauertsche_Bänder/index.md",

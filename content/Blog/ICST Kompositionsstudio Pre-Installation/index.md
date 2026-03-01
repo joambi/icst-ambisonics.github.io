@@ -1,6 +1,7 @@
 ---
 title: ICST Kompositionsstudio Pre-Installation
 date: 2025-06-03T15:10:00
+weight: 2
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -49,21 +50,20 @@ To get the curved screen as a single large screen, you need to make an additiona
    ![Mission_3](Mission3.webp)
 
 ---
-# Downloads for the ICST Kompositionsstudio
+---
+# Support & Contact
+
+**Help:**
+- Johannes Schütt &nbsp;&nbsp; Mobile: +41 79 786 12 49 &nbsp;&nbsp; Mail: [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
+- Peter Färber &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile: +41 79 444 06 16 &nbsp;&nbsp; Mail: [peter.faerber@zhdk.ch](mailto:peter.faerber@zhdk.ch)
+
+**Technical Service A/V:**
+- [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch) &nbsp;&nbsp; Mobile: +41 76 330 11 02
 
 ---
+# Downloads
 
-- **RME-Drivers:**
-- Please select the 'MADIface USB Driver' for your current architecture (PC/Mac) and operating system on the RME download page. Then follow the RME installation instructions.
-- [https://rme-audio.de/de_madiface-usb.html](https://rme-audio.de/Downloadbereich.html)
----
-
-- [ICST Ambisonics Plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
-- [ICST Ambisonics Tools](https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-ambisonics-externals-for-maxmsp-5381) (please download the Ambisonics Tools over the 'Max Package Manager')
-- [Studio Speaker-Settings (XML) & other helpers](https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV)
-- Labor Settings
----
-- Curved Screen Driver : [https://www.synaptics.com/products/displaylink-graphics/downloads](https://www.synaptics.com/products/displaylink-graphics/downloads)
+→ All downloads are centralized on the [Downloads](/blog/downloads/) page.
 
 ---
 ©2025 ICST

@@ -2,6 +2,7 @@
 tags:
 title: ICST Labor Ambisonics Speaker Settings
 date: 2025-05-20T15:11:00
+weight: 11
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

@@ -3,20 +3,30 @@ languageCode = 'en-us'
 title = 'The ICST Ambisonics Site'
 theme = 'anatole'
 enableEmoji = true
+buildFuture = true
 
 [params]
-title = "The ICST Ambisonics"
-author = "Johannes Schuett"
+title = "ICST Ambisonics"
+authorName = "Johannes Schuett"
 email = "johannes.schuett@zhdk.ch"
+rssFullContent = true
 singleDateFormat = "2006-01-02"
-description = " This is the ICST Ambisonics Tutorial Blog"
+description = "Spatial Audio Plugins & Tutorials\nby ICST · Zurich University of the Arts"
 profilePicture = "images/AmbiPlugin_logo.gif"
-mainSections = ["blog"]
+mainSections = ["blog", "post"]
 favicon = "favicons/"
-contentratio = 0.6 
+contentratio = 0.7
+copyright = "Johannes Schuett {{ YEAR }}"
+
+  [params.author]
+  name  = "Johannes Schuett"
+  email = "johannes.schuett@zhdk.ch"
+
+[markup.goldmark.renderer]
+unsafe = true
+ignoreLogs = ["warning-goldmark-raw-html"]
 
 ## Social links
-# use 'fab' when brand icons, use 'fas' when standard solid icons.
 [[params.socialIcons]]
 icon = "fab fa-github"
 title = "GitHub"
@@ -27,44 +37,57 @@ url = "https://github.com/joambi"
 [menu]
 
   [[menu.main]]
-  name = "Home"
-  identifier = "home"
+  name = "ICST AMBISONICS"
+  identifier = "docs"
   weight = 100
-  url = "/HOME/"
+  url = "#"
+
+    [[menu.main]]
+    name = "Plugin Docs"
+    parent = "docs"
+    weight = 101
+    url = "/ICST Ambisonics Plugins/"
+
+    [[menu.main]]
+    name = "Ambi Tools"
+    parent = "docs"
+    weight = 102
+    url = "/ICST Ambisonics Tools/"
 
   [[menu.main]]
-  name = "ICST Ambisonics Plugins"
+  name = "Tutorials"
+  identifier = "tutorials"
   weight = 200
-  identifier = "ICST Ambisonics Plugins"
-  url = "/ICST Ambisonics Plugins/"
+  url = "/post/"
 
   [[menu.main]]
-  name = "ICST Ambisonics Tools"
+  name = "ASCOLTA"
+  identifier = "ascolta"
+  weight = 250
+  url = "/blog/ascolta/"
+
+  [[menu.main]]
+  name = "Residenzen"
+  identifier = "residenzen"
   weight = 300
-  identifier = "ICST Ambisonics Tools"
-  url = "/ICST Ambisonics Tools/"
-  
+  url = "/residenzen/"
+
   [[menu.main]]
-  name = "Post"
-  weight = 400
-  identifier = "post"
-  url = "/post/"
-  
-  [[menu.main]]
-  name = "Blog"
-  weight = 500
+  name = "Resourcen"
   identifier = "blog"
+  weight = 350
   url = "/blog/"
 
   [[menu.main]]
   name = "Links"
-  weight = 600
-  identifier = "Links"
+  identifier = "links"
+  weight = 400
   url = "/Links/"
 
   [[menu.main]]
   name = "About"
-  weight = 700
+  identifier = "about"
+  weight = 500
   url = "/about/"
 
   [[menu.footer]]
@@ -79,6 +102,3 @@ series = "series"
 tag = "tags"
 year = "year"
 month = "month"
-
-
-

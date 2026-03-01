@@ -1,25 +1,18 @@
 ---
 aliases: []
-title: _index
+title: Tutorials
 author: Johannes Schuett
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 
-- [info](info)
-- [ICST-AmbiEncoder-&-Ambisonics-Externals](icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication)
-- [ICST AmbiEncoder Plugin – OSC-Syntax](osc-syntax-for-the-icst-ambiencoder-plugin)
+- [ICST AmbiEncoder – OSC Syntax](osc-syntax-for-the-icst-ambiencoder-plugin)
+- [MaxMSP & ICST AmbiEncoder – OSC Communication](icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication)
 - [ICST AmbiEncoder – OSC to FX Mapping](osc-2-fx)
 - [ICST MultiEncoder – Group Animation](gp-manipulation)
 - [ICST AmbiPlugins & Grapes – 3D Control](icst-grapes)
-- [ICST AmbiPlugins & GyrOSC.app](gyrosc)
-- [ICST AmbiPlugins-&-Ableton Live-Integration](ableton-reaper)
-- [Zylia](zylia)
-- [ICST AmbiEncoder_64 & LuaScript](icst-scripts)
-- [ICST AmbiEncoder_64 CircleSelected](circleselected)
-
-
-
-
-
-
+- [ICST AmbiPlugins & GyrOSC](GYROSC)
+- [Ableton Live & ICST Ambisonics Integration](ableton_reaper)
+- [ICST AmbiEncoder – Spiral Walk Script](icst-scripts)
+- [ICST AmbiEncoder – CircleSelected](circle_selected)
+- [Blauertsche Bänder](Blauertsche_Bänder)

@@ -1,5 +1,5 @@
 ---
-title: 06_step_by_step_setup
+title: Step by Step Setup
 date: 2025-01-23T15:38:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts

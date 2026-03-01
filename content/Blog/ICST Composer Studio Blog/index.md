@@ -1,6 +1,7 @@
 ---
 title: ICST Composer Studio Blog
 date: 2025-05-27T17:16:00
+weight: -1
 ---
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -20,7 +21,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 # ICST Studio Residencies
 
-- [ICST Studio Residencies](https://ambisonics.ch/blog/icst-studio-residences/)
+- [ICST Studio Residencies](/residenzen/icst-studio-residences/)
 - [ICST Resident\*innen im Kompositionsstudio \| ICST-Kompositionsstudio](https://icst-kompositionsstudio.ch/post/icst-artist-in-residency-im-kompositionsstudio))
 
 
@@ -49,8 +50,9 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - [Former residencies](https://www.zhdk.ch/forschung/icst/icst-air/past-residents-20734)
 
 ---
-## Additional downloads
-- [Decoder Speaker Settings](https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV)
+## Downloads
+
+→ [Downloads](/blog/downloads/)
 
 ---
 ©2025 ICST

@@ -1,6 +1,7 @@
 ---
 date: 2025-07-19T13:28:00
-title: circle_selectted
+title: ICST AmbiEncoder – CircleSelected
+weight: 9
 ---
 
 # ICST_AmbiEncoder_64_CircleSelected_Lua-Presets

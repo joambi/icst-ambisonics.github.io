@@ -1,6 +1,7 @@
 ---
 title: ICST MultiEncoder – Group Animation
 date: 2025-05-28T13:00:00
+weight: 4
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

@@ -1,6 +1,7 @@
 ---
 title: ICST Kompositionsstudio Ambisonics Setting
 date: 2025-06-02T15:12:00
+weight: 6
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -35,7 +36,7 @@ ICST Ambisonics Plugins Dokumentation:
 
 * * *
 
-**Downloads:** [ICST Kompositionsstudio](https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV)
+**Downloads:** → [Downloads](/blog/downloads/)
 
 * * *
 ©2025 ICST

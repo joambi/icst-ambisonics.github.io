@@ -1,6 +1,7 @@
 ---
-title:
+title: ICST Kompositionsstudio Regie
 date: 2025-04-08T15:11:00
+weight: 5
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

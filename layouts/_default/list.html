@@ -7,7 +7,7 @@
     {{ end }}"
   >
     {{ range .Data.Pages.GroupByDate "2006" }}
-      <div class="archive__heading">{{ .Key }}</div>
+      {{ if ne .Key "0001" }}<div class="archive__heading">{{ .Key }}</div>{{ end }}
       {{ range .Pages }}
         <ul class="archive__list">
           <li class="archive__list-item">

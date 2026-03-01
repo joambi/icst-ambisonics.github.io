@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+    {{ range .Data.Pages.ByWeight }}
+      <ul class="archive__list">
+        <li class="archive__list-item">
+          {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
+            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+          {{ else }}
+            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+          {{ end }}
+          {{ if not .Date.IsZero }}
+          <div class="archive__list-date">{{ .Date.Format "Jan 2" }}</div>
+          {{ end }}
+        </li>
+      </ul>
+    {{ end }}
+  </div>
+{{ end }}

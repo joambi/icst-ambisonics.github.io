@@ -1,5 +1,8 @@
 ---
 title: ICST Bformat Archive
+date: 2025-03-01T00:00:00
+weight: 13
+draft: true
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

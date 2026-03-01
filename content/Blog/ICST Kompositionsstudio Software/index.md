@@ -1,6 +1,7 @@
 ---
 title: ICST Kompositionsstudio Software
 date: 2025-05-28T15:11:00
+weight: 4
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

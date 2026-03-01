@@ -1,5 +1,5 @@
 ---
-title: ICST Ambisonics Plugins
+title: What's New
 date: 2025-11-03T16:13:00
 ---
 

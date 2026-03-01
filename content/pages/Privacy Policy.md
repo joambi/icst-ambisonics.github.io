@@ -95,6 +95,6 @@ P.O. Box, CH-8031 Zurich
 **Céline Lutz**   
 Administration ICST   
 Phone: +41 (0)43 446 55 00   
-[E-Mail](http://localhost:1313/about/celine.lutz@zhdk.ch)  
+[E-Mail](mailto:celine.lutz@zhdk.ch)  
   
 Last updated on 20240621

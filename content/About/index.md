@@ -52,7 +52,7 @@ Postfach, CH-8031 Zürich
 **Céline Lutz**  
 Administration ICST  
 Telefon: +41 (0)43 446 55 00  
-[E-Mail](celine.lutz@zhdk.ch)
+[E-Mail](mailto:celine.lutz@zhdk.ch)
 
 https://www.zhdk.ch/forschung/icst
 

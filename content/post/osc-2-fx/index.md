@@ -1,7 +1,7 @@
 ---
-title: osc-2-fx
+title: ICST AmbiEncoder – OSC to FX Mapping
 date: 2025-05-16T09:44:58
-Description: osc
+weight: 3
 tags:
 Categories:
 DisableComments: false

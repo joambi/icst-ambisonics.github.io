@@ -1,5 +1,5 @@
 ---
-title: 07_shortcuts
+title: Shortcuts
 date: 2025-01-22T14:36:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts

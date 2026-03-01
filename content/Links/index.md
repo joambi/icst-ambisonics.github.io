@@ -35,7 +35,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - [Envelop](https://envelop.us/page/software)
 - [Blue Ripple Sound Core Suite](http://www.blueripplesound.com/products/o3a-core)
 - [Kronlachner Ambix](http://www.matthiaskronlachner.com/?p=1910)
-- [Noisemaker]([https://www.noisemakers.fr/)
+- [Noisemaker](https://www.noisemakers.fr/)
 - [VVAudio](https://www.vvaudio.com/)
 - [Harpex](https://harpex.net/)
 - [The Ambisonics Toolkit](https://www.ambisonictoolkit.net/)

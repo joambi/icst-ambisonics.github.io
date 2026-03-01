@@ -1,6 +1,6 @@
 ---
 tags:
-title: 03_how_it_works
+title: How it Works
 date: 2025-02-01T19:26:00
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts

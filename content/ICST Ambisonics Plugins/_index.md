@@ -1,33 +1,13 @@
 ---
-aliases: []
-author: Johannes Schuett
-tags: []
-title: New
+title: "ICST Ambisonics Plugins"
 date: 2025-01-20T02:35:00
+type: docs
+hidesidebar: true
+cascade:
+  type: docs
+  hidesidebar: true
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) · Zurich University of the Arts
 
-
-# The ICST AmbiPlugins: 
-
-- [00_NEW](00_new)
-
-- [01 Overview](01_overview)
-
-- [02 Installation](02_installation)
-
-- [03 How it works](03_how_it_works)
-
-- [04 Quickstart](04_quick_start)
-
-- [05 Open Track-Templates](05_open_track_templates)
-
-- [06 Step by Step Setup](06_step_by_step_setup)
-
-- [07 Shortcuts](07_shortcuts)
-
-- [08_Downloads](08_downloads)
-
-- [09_NEW-Blog](09_new-posts)
-09_new-posts
+The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and provide spatial audio production tools for the **REAPER** Digital Audio Workstation.
