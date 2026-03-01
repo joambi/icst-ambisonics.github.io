@@ -10,7 +10,3 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 # Acousmatic Listening Sessions
 
 ICST Ascolta presents acousmatic music events at the Composition Studio of ZHdK.
-
----
-
-©2025 ICST
