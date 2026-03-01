@@ -1,5 +1,5 @@
 ---
-title: "#04 ascolta Akusmatische Hörstunde"
+title: "#04 ascolta Acousmatic Listening Session"
 date: 2022-12-13T18:00:00
 weight: 4
 ---
@@ -7,21 +7,21 @@ weight: 4
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# #04 ascolta Akusmatische Hörstunde
+# #04 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
 ---
-#### Konzert
+#### Concert
 
-**Dienstag, 13. Dezember 2022, 18.00 Uhr**
+**Tuesday, December 13, 2022, 18:00**
 
 - Toni-Areal, 
 - ICST-Kompositionsstudio (3.D02, Ebene 3)
 - Pfingstweidstrasse 96, 
 - 8005 Zürich
 
-_Eintritt frei_ 
+_Free admission_ 
 
 ----
 # GLOCKEN
@@ -69,7 +69,7 @@ This huge black bell with superhuman strength bears the inscription:
 
 * * *
 
-**Ausläuten**
+**Closing Bell**
 I ring out the last Acoustic Listening Hour this year with the church bells of the Reformed Church Diessenhofen/TG.
 The next Acoustic Listening Hour will take place next year.
 I wish you peace and tranquility over the holidays and all the best for the new year, 2023!

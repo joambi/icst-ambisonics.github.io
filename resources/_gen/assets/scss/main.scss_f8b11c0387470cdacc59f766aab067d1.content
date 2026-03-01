@@ -673,9 +673,13 @@ body {
 }
 .post__content img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
+  margin: 1.5em auto;
+  max-width: min(100%, 720px);
+  max-height: 520px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
 }
 .post__content figure {
   max-width: 100%;

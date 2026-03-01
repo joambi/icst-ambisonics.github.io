@@ -28,7 +28,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ---
 # ICST Ascolta Hörstunden
 
-- [Ascolta Akusmatische Hörstunden](https://ambisonics.ch/blog/ascolta/)
+- [Ascolta Acousmatic Listening Sessions](https://ambisonics.ch/blog/ascolta/)
 
 ---
 # ICST Labor 

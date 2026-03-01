@@ -1,5 +1,5 @@
 ---
-title: "#11 ascolta Akusmatische Hörstunde"
+title: "#11 ascolta Acousmatic Listening Session"
 date: 2024-06-11T18:00:00
 weight: 11
 ---
@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 * * *
 
-# #11 ascolta Akusmatische Hörstunde
+# #11 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
@@ -16,13 +16,13 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 # Mario Mary, portrait
 
-**Konzert**
+**Concert**
 - **11.06.2024, 18:00**
 - Toni-Areal, 
 - Kompositionsstudio 3.D02, Ebene 3, 
 - Pfingstweidstrasse 96, Zürich
 
-_Eintritt frei_ 
+_Free admission_ 
 
 * * *
 

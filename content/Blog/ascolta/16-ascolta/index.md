@@ -1,5 +1,5 @@
 ---
-title: "#16 ascolta Akusmatische Hörstunde"
+title: "#16 ascolta Acousmatic Listening Session"
 date: 2025-10-16T18:00:00
 weight: 16
 ---
@@ -8,30 +8,39 @@ weight: 16
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# #16 ascolta Akusmatische Hörstunde
+
+# #16 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
-**Experimental**
+**Experiment**
 
-- Donnerstag, 16.Oktober, 18:00
+- Thursday, 16. October, 18:00
 - Toni-Areal, Kompositionsstudio 3.D02, Ebene 3,
 - Pfingstweidstrasse 96, Zürich
 
-_Eintritt frei_
+_Free admission_
 
 ---
-Am ICST haben wir ein Pilotprojekt lanciert, um einen bestmöglichen und einfachen Zugang zu Elektroakustischen Werken zu ermöglichen. Diese Idee leitet sich aus den Schriften und Techniken von Michael Gerzon und seinem Team ab, dass das B-Format in Ambisonics sich hervorragend dazu eignet.
-## Anliegen: 
-B-Format als Plattform für den Umgang mit immersivem Audio, nicht nur in der Komposition/Produktion, sondern im Umgang des bestehenden Repertoires.
+
+At ICST we have launched a pilot project to enable the best possible and simple access to electroacoustic works. This idea is derived from the writings and techniques of Michael Gerzon and his team, that B-format in ambisonics is ideally suited for this.
+
+## Objective:
+
+B-format as a platform for dealing with immersive audio, not only in composition/production, but in the handling of existing repertoire.
+
 - Interpretation
-- Bearbeitung als immersives Audio
-- Archivierung im B-Format
-## Vorteile:
-- Ein File-Format das 'B-Format ambiX' aus dem sich jegliches andere gängige Format ableiten lässt.
-- Ein File-Format zur  Archivierung zusammen mit Metadaten.
-- Nicht abhängig von kurzfristigen Kommerziellen Format-Hypes.
+- Processing as immersive audio
+- Archiving in B-format
+
+## Advantages:
+
+- A file format that 'B-format ambiX' from which any other common format can be derived.
+- A file format for archiving together with metadata.
+- Not dependent on short-term commercial format hype.
+
 ## Experiment:
+
 (Listening examples)
 
 Stereo tape compositions:
@@ -43,7 +52,7 @@ Quadrophonic
 
 Eight-channel
 - Jonathan Harvey (1939-2012): "Mortus Plango, Vivos Voco" for eight-channel tape (1980)
-- Verschiedenen Versionen 
+- Various versions
 
 Ambisonics UHJ
 - Maurice Ravel "Pavane pour une Infante défunte", Vlado Perlemuter, piano (Nimbus release in UHJ (2-channel/stereo compatible), 1977)
@@ -58,7 +67,8 @@ Each example will be presented in three different versions:
 - Ambisonics
 - Ambisonics UpScaled mit ICST MultiDecoder
 
-Präsentation: Johannes Schütt
+Presentation: Johannes Schütt
 
 ---
+
 ©2025 ICST

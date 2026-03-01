@@ -1,5 +1,5 @@
 ---
-title: "#14 ascolta Akusmatische Hörstunde"
+title: "#14 ascolta Acousmatic Listening Session"
 date: 2025-04-22T18:00:00
 weight: 14
 ---
@@ -7,7 +7,7 @@ weight: 14
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# #14 ascolta Akusmatische Hörstunde
+# #14 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
@@ -19,7 +19,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - Toni-Areal, Kompositionsstudio 3.D02, Ebene 3, 
 - Pfingstweidstrasse 96, Zürich
 
-_Eintritt frei_ 
+_Free admission_ 
 
 ---
 In this session we will listen to classic electroacoustic compositions in two different versions:  

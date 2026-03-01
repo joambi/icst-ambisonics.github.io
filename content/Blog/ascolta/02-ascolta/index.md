@@ -1,5 +1,5 @@
 ---
-title: "#02 ascolta Akusmatische Hörstunde"
+title: "#02 ascolta Acousmatic Listening Session"
 date: 2022-10-04T18:00:00
 weight: 2
 ---
@@ -7,64 +7,64 @@ weight: 2
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# #02 ascolta Akusmatische Hörstunde
+# #02 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
 ---
-#### Konzert
+#### Concert
 
-**Dienstag, 4. Oktober 2022, 18.00 Uhr**
+**Tuesday, October 4, 2022, 18:00**
 
-- Toni-Areal, 
+- Toni-Areal,
 - ICST-Kompositionsstudio (3.D02, Ebene 3)
-- Pfingstweidstrasse 96, 
+- Pfingstweidstrasse 96,
 - 8005 Zürich
 
-_Eintritt frei_ 
+_Free admission_
 
 * * *
 
 ### Programm
 
-_Vêpres vénitiennes – Il dì s'appressa_ (1999)
-_Rainstick_ (1993)
-_Im Eismeer – ein Schumann-Stück für Tonband_ (1997)
-_Auf schwanker Halme Bogen_ (1985)
-_Un Madrigal gentile_ (2004)
+_Vêpres vénitiennes – Il dì s'appressa_ (1999)
+_Rainstick_ (1993)
+_Im Eismeer – ein Schumann-Stück für Tonband_ (1997)
+_Auf schwanker Halme Bogen_ (1985)
+_Un Madrigal gentile_ (2004)
 
 ![Bennet.jpg](image005.jpg)
 
-Gerald Bennett, geboren 1942 in New Jersey (USA), studierte unter anderem an der _Harvard University_ bei Robert Moevs und in Basel bei Klaus Huber und Pierre Boulez. 1967–76 war er Dozent für Musiktheorie am _Basler Konservatorium_, ab 1969 dessen Leiter. 1976–1981 stand er dem _Département Diagonal_ am Pariser _Institut de Recherche et Coordination Acoustique/Musique_ (IRCAM) vor, und ab 1993 war er Mitglied der _Internationalen Akademie für elektroakustische Musik Bourges_. Von 1981 bis zu seiner Pensionierung lehrte Gerald Bennett Musiktheorie und Komposition an der _Hochschule für Musik Zürich_. Gemeinsam mit Bruno Spoerri, Antonio Greco und Rainer Boesch gründete er 1985 das _Schweizerische Zentrum für Computermusik_(SZCM) und gemeinsam mit Daniel Fueter 2005 das _ICST – Institute for Computer Music and Sound Technology_.
+Gerald Bennett, born 1942 in New Jersey (USA), studied among others at _Harvard University_ with Robert Moevs and in Basel with Klaus Huber and Pierre Boulez. 1967–76 he was lecturer for music theory at the _Basler Konservatorium_, from 1969 its director. 1976–1981 he headed the _Département Diagonal_ at the Paris _Institut de Recherche et Coordination Acoustique/Musique_ (IRCAM), and from 1993 he was member of the _Internationalen Akademie für elektroakustische Musik Bourges_. From 1981 until his retirement, Gerald Bennett taught music theory and composition at the _Hochschule für Musik Zürich_. Together with Bruno Spoerri, Antonio Greco, and Rainer Boesch, he founded the _Schweizerische Zentrum für Computermusik_(SZCM) in 1985, and together with Daniel Fueter the _ICST – Institute for Computer Music and Sound Technology_ in 2005.
 
-Das Werk von Gerald Bennett umfasst Orchester-, Kammer- Vokalwerke in verschiedenen Besetzungen mit und ohne Elektronik sowie zahlreiche elektroakustische Stücke. Seine Kompositionen werden bei Edition Modern/Ricordi und Mnémosyne verlegt, Tonträger mit seinen Werken erschienen bei Wergo, Jecklin und Harmonia Mundi. Er ist Verfasser zahlreicher Publikationen, die bei Gallimard, Oxford University Press, Eulenburg, MIT Press u.a. erschienen sind.
- [Gerald Bennett](http://www.gdbennett.net/)
+The works of Gerald Bennett comprise orchestral, chamber, and vocal works in various instrumentations with and without electronics as well as numerous electroacoustic pieces. His compositions are published by Edition Modern/Ricordi and Mnémosyne, recordings of his works appeared with Wergo, Jecklin, and Harmonia Mundi. He is the author of numerous publications, which have appeared with Gallimard, Oxford University Press, Eulenburg, MIT Press, and others.
+ [Gerald Bennett](http://www.gdbennett.net/)
 
-Aktuelle Informationen zu der Veranstaltung finden Sie [hier](https://www.zhdk.ch/veranstaltung/48124).
+Current information about the event can be found [here](https://www.zhdk.ch/veranstaltung/48124).
 
 * * *
 
-# Programmtexte:
+# Program notes:
 
 ### Gerald Bennett: Vêpres vénitiennes - Il dì s'appressa (1999)
 
-"Il dì s'appressa" is part of a larger work (of course still unfinished): the "Venetian Vespers". The Venetian Vespers at San Marco were distinguished from the Roman Vespers by the richness of their music. This work takes the place of the ancient marian sung towards the end of the vespers. It is based on the first two lines of the last poem of Petrarch's "Canzoniere", a poem about death addressed to the Virgin: Il dì s'appresa e non puot' esser lunge, Sì corr' il temp e vola ...
-"Il dì s'appressa" was commissioned by the International Institute of Electroa- coustic Music in Bourges, France, and realized in its studios in 1999.
+"Il dì s'appressa" is part of a larger work (of course still unfinished): the "Venetian Vespers". The Venetian Vespers at San Marco were distinguished from the Roman Vespers by the richness of their music. This work takes the place of the ancient marian sung towards the end of the vespers. It is based on the first two lines of the last poem of Petrarch's "Canzoniere", a poem about death addressed to the Virgin: Il dì s'appresa e non puot' esser lunge, Sì corr' il temp e vola ...
+"Il dì s'appressa" was commissioned by the International Institute of Electroa- coustic Music in Bourges, France, and realized in its studios in 1999.
 
 * * *
 
 ### Gerald Bennett: Rainstick (1993)
 
 The rainstick is a ritual instrument of the Indians of Central and South America used to conjure rain. In this piece, the rainstick is used to conjure many different things, both real and imaginary (but not rain). One of the piece's principal ideas is the pas- sage from continuity to discontinuity. Of course, this movement can reflect and ex- press both a structural and an emotional trajectory.
-"Rainstick" was commissioned by the Groupe de Musique Expérimentale de Bourges and was realized in their studios in 1993.
+"Rainstick" was commissioned by the Groupe de Musique Expérimentale de Bourges and was realized in their studios in 1993.
 
 * * *
 
-### Im Eismeer – ein Schumann-Stück für Tonband (1997)
+### Im Eismeer – ein Schumann-Stück für Tonband (1997)
 
 * * *
 
-### Auf schwanker Halme Bogen (1985)
+### Auf schwanker Halme Bogen (1985)
 
 * * *
 

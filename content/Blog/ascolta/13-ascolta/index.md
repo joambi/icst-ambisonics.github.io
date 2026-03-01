@@ -1,5 +1,5 @@
 ---
-title: "#13 ascolta Akusmatische Hörstunde"
+title: "#13 ascolta Acousmatic Listening Session"
 date: 2024-12-17T18:00:00
 weight: 13
 ---
@@ -7,7 +7,7 @@ weight: 13
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# #13 ascolta Akusmatische Hörstunde
+# #13 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
@@ -23,7 +23,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - Kompositionsstudio 3.D02, Ebene 3, 
 - Pfingstweidstrasse 96, Zürich
 
-_Eintritt frei_ 
+_Free admission_ 
 * * *
 
 #### The title of this audio lesson is **Listening Twice.**

@@ -1,5 +1,5 @@
 ---
-title: "#05 ascolta Akusmatische Hörstunde"
+title: "#05 ascolta Acousmatic Listening Session"
 date: 2023-03-14T18:00:00
 weight: 5
 ---
@@ -7,21 +7,21 @@ weight: 5
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# #05 ascolta Akusmatische Hörstunde
+# #05 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
 ---
-#### Konzert
+#### Concert
 
-**Dienstag, 14. März 2023, 18.00 Uhr**
+**Tuesday, March 14, 2023, 18:00**
 
 - Toni-Areal, 
 - ICST-Kompositionsstudio (3.D02, Ebene 3)
 - Pfingstweidstrasse 96, 
 - 8005 Zürich
 
-_Eintritt frei_ 
+_Free admission_ 
 
 ---
 # Field-Recordings & Soundscapes
@@ -36,7 +36,7 @@ In 2019, Philip received a grant from the Swiss National Science Foundation to c
 This project is supported by Creative Victoria; High Altitude Research Station at Jungfraujoch and Gornergrat; Institute for Computer Music and Sound Technology at the ZhDK; RMIT School of Art; Swiss National Science Foundation
 ![Ph.Samartzis](img_6516.jpg)
 
-Wie der Klimawandel klingt - SWI [swissinfo.ch](http://swissinfo.ch)
+What climate change sounds like - SWI [swissinfo.ch](http://swissinfo.ch)
 <https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
 
 * * *

@@ -1,5 +1,5 @@
 ---
-title: "#07 ascolta Akusmatische Hörstunde"
+title: "#07 ascolta Acousmatic Listening Session"
 date: 2023-06-06T18:00:00
 weight: 7
 ---
@@ -7,21 +7,21 @@ weight: 7
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# #07 ascolta Akusmatische Hörstunde
+# #07 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
 ---
 ### A concert featuring some of the ICST artists in residence
 
-**Dienstag, 04. April 2023, 18.00 Uhr**
+**Tuesday, June 6, 2023, 18:00**
 
 - Toni-Areal, 
 - ICST-Kompositionsstudio (3.D02, Ebene 3)
 - Pfingstweidstrasse 96, 
 - 8005 Zürich
 
-_Eintritt frei_ 
+_Free admission_ 
 
 ---
 

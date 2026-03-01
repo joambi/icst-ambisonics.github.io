@@ -1,5 +1,5 @@
 ---
-title: "#06 ascolta Akusmatische Hörstunde"
+title: "#06 ascolta Acousmatic Listening Session"
 date: 2023-04-04T18:00:00
 weight: 6
 ---
@@ -7,24 +7,24 @@ weight: 6
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# #06 ascolta Akusmatische Hörstunde
+# #06 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
 ---
-#### Konzert
+#### Concert
 
-**Dienstag, 04. April 2023, 18.00 Uhr**
+**Tuesday, April 4, 2023, 18:00**
 
 - Toni-Areal, 
 - ICST-Kompositionsstudio (3.D02, Ebene 3)
 - Pfingstweidstrasse 96, 
 - 8005 Zürich
 
-_Eintritt frei_ 
+_Free admission_ 
 
 ---
-# Zbigniew Karkowski (Polen/Japan)
+# Zbigniew Karkowski (Poland/Japan)
 
 ## Title: \_no name\_
 
@@ -32,7 +32,7 @@ _Eintritt frei_ 
 
 ### Description:
 
-Zbigniew Karkowski (Polen/Japan)
+Zbigniew Karkowski (Poland/Japan)
 
 The Polish composer Zbigniew Karkowski, who died all too soon in 2013 and lived in Japan, is and remains in a league of his own. In his almost elegiac pieces of micro-structured noise and rhythm settings, his entire visionary range comes to the fore, whether his pieces were created with a laptop or with electroacoustic means.
 He studied composition at the National Academy of Music in Gothenburg, Sweden, aesthetics of modern music at the University of Gothenburg, and computer music at the Chalmers University of Technology. After completing his studies in Sweden, he studied sonology for a year at the Royal Conservatory of Music in The Hague, The Netherlands. For over 20 years, he was active in the field of experimental electronic music, composing pieces for a full orchestra, an opera, and several chamber music pieces.

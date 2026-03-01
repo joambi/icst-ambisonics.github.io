@@ -1,5 +1,5 @@
 ---
-title: "#09 ascolta Akusmatische Hörstunde"
+title: "#09 ascolta Acousmatic Listening Session"
 date: 2023-12-05T18:00:00
 weight: 9
 ---
@@ -7,25 +7,25 @@ weight: 9
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-# #09 ascolta Akusmatische Hörstunde
+# #09 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)
 
 ---
-**Dienstag, 05. Dezember 2023, 18.00 Uhr**
+**Tuesday, December 5, 2023, 18:00**
 
 - Toni-Areal, 
 - ICST-Kompositionsstudio (3.D02, Ebene 3)
 - Pfingstweidstrasse 96, 
 - 8005 Zürich
 
-_Eintritt frei_ 
+_Free admission_ 
 
 ---
 # Hans Tutschku: **_Remembering Japan_**
 
  **Hans Tutschku**
- ICST Artist in Residenz vom 31.01.2022 bis zum 13.2.2022.
+ ICST Artist in Residence from January 31 to February 13, 2022.
 
 * * *
 # Remembering Japan

@@ -41,7 +41,7 @@ Hosted on [GitHub Pages](https://pages.github.com/).
 Maintained by Johannes Schütt at ICST/ZHdK.
 
 ---
-## Kontakt
+## Contact
 
 Postadresse:  
 Zürcher Hochschule der Künste  
