@@ -37,7 +37,7 @@ url = "https://github.com/joambi"
 [menu]
 
   [[menu.main]]
-  name = "ICST AMBISONICS"
+  name = "Plugins & Tools"
   identifier = "docs"
   weight = 100
   url = "#"
@@ -73,7 +73,7 @@ url = "https://github.com/joambi"
   url = "/residenzen/"
 
   [[menu.main]]
-  name = "Resourcen"
+  name = "Studio"
   identifier = "blog"
   weight = 350
   url = "/blog/"
