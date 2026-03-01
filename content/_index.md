@@ -31,3 +31,6 @@ The **ICST Ambisonics Plugins** encode and decode Ambisonics B-Format and provid
     <i class="fas fa-download"></i>&nbsp;Download
   </a>
 </div>
+
+---
+©2025 ICST
