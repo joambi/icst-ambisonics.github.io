@@ -46,7 +46,7 @@ Aktuelle Informationen zu der Veranstaltung finden Sie [hier](https://www.zhdk.
 
 # Programmtexte:
 
-### Gerald Bennett: Vê pres vé nitiennes - Il dì s'appressa (1999)
+### Gerald Bennett: Vêpres vénitiennes - Il dì s'appressa (1999)
 
 "Il dì s'appressa" is part of a larger work (of course still unfinished): the "Venetian Vespers". The Venetian Vespers at San Marco were distinguished from the Roman Vespers by the richness of their music. This work takes the place of the ancient marian sung towards the end of the vespers. It is based on the first two lines of the last poem of Petrarch's "Canzoniere", a poem about death addressed to the Virgin: Il dì s'appresa e non puot' esser lunge, Sì corr' il temp e vola ...
 "Il dì s'appressa" was commissioned by the International Institute of Electroa- coustic Music in Bourges, France, and realized in its studios in 1999.

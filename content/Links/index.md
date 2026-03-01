@@ -48,7 +48,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ----
 
-### Ambisonics Studios & Istitutes
+### Ambisonics Studios & Institutes
 
 - [Into The Soundfield](https://intothesoundfield.music.ox.ac.uk/)
 - [IEM](https://ambisonics.iem.at/)

@@ -112,4 +112,4 @@ Behind the curved screen you will find additional hardware:
     - **2** → Laptop / PC
         
 ----
-2025@ICST
+©2025 ICST
