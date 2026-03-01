@@ -27,7 +27,7 @@ All Ambisonics B-formats are stored in ambiX.
 
 | Composer | Title | Duration | Format | Order | Channel ordering | Channels | SR | Bits | Listening | Downloads |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| AudioBrewers | AmbiTest_ambix_5th-order.wav | 4' | wav | ACN/SN3D | MaxRe | 35 | 48000 | 24 | Binaural | [AmbiSpeakerTest]() |
+| AudioBrewers | AmbiTest_ambix_5th-order.wav | 4' | wav | ACN/SN3D | MaxRe | 35 | 48000 | 24 | Binaural | AmbiSpeakerTest |
 
 ---
 ©2025 ICST

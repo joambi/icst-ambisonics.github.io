@@ -58,13 +58,13 @@ VIDEO:  https://www.youtube.com/watch?v=UmPnUTVem0Q
 8. Download the ICST AmbiPlugin windows installer: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 9. Extract _ICST\_AmbiPlugins\_3.0\_win\_x64.exe_ to _C:\\Program Files\\Common Files\\VST3_
 
-![01_win.png](01_win.png)
-![01_win.png](02_win.png)
-![01_win.png](03_win.png)
-![01_win.png](04_win.png)
-![01_win.png](05_win.png)
-![01_win.png](06_win.png)
-![01_win.png](07_win.png)
+![Installation step 1](01_win.png)
+![Installation step 2](02_win.png)
+![Installation step 3](03_win.png)
+![Installation step 4](04_win.png)
+![Installation step 5](05_win.png)
+![Installation step 6](06_win.png)
+![Installation step 7](07_win.png)
 
 Restart the PC!
 

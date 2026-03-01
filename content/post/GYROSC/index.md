@@ -18,9 +18,6 @@ The following GIF demonstrates how the ICST AmbiEncoder receives OSC data from t
 
  ![Example video:](GyroOSC_Demo.gif)
  
- ### How it works:
-This tutorial is a short step-by-step guide on how to use the iOS app 'GyrOSC' with the ICST Ambisonics Encoder.
-
 ### How It Works:
 
 This tutorial provides a step-by-step guide on using the iOS app _GyrOSC_ with the ICST Ambisonics Encoder.
