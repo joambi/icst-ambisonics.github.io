@@ -70,6 +70,7 @@ Restart the PC!
 
 # Install on Linux
 
+_Coming soon_
 
 ----
 ©2025 ICST

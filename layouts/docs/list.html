@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ $pages := sort .RegularPages "Title" }}
+
+<div
+  class="post animated fadeInDown"
+>
+  <div class="post__content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</div>
+
+<div class="docs-index animated fadeInDown">
+  <div class="docs-index__chapters">
+    {{ range $i, $page := $pages }}
+    <a class="docs-index__chapter" href="{{ $page.RelPermalink }}">
+      <div class="docs-index__chapter-number">{{ add $i 1 }}</div>
+      <div class="docs-index__chapter-info">
+        <div class="docs-index__chapter-title">{{ $page.Title }}</div>
+        {{ with $page.Description }}
+          <div class="docs-index__chapter-desc">{{ . }}</div>
+        {{ end }}
+      </div>
+      <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

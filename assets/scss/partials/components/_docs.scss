@@ -1,0 +1,302 @@
+@use '../../modules/color_theme' as color;
+@use '../../modules/config' as conf;
+@use '../../modules/variables' as var;
+
+// Docs Layout (single page with chapter sidebar nav)
+
+.docs {
+  display: flex;
+  gap: 0;
+  min-height: 60vh;
+
+  &__nav {
+    display: none;
+
+    @include conf.desktop {
+      display: block;
+      width: 210px;
+      flex-shrink: 0;
+      padding: 1.5rem 0 2rem;
+      position: sticky;
+      top: 0;
+      max-height: 100vh;
+      overflow-y: auto;
+
+      @include color.themed() {
+        border-right: color.t('border');
+      }
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: 0 1.2rem 1rem;
+      margin-bottom: 0.5rem;
+
+      @include color.themed() {
+        border-bottom: color.t('border');
+      }
+
+      a {
+        text-decoration: none;
+
+        @include color.themed() {
+          color: color.t('primary');
+        }
+
+        i {
+          margin-right: 0.4rem;
+
+          @include color.themed() {
+            color: color.t('info');
+          }
+        }
+      }
+    }
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-item {
+      a {
+        display: block;
+        padding: 0.45rem 1.2rem;
+        font-size: 1.3rem;
+        text-decoration: none;
+        border-left: 3px solid transparent;
+        transition: all 0.15s ease;
+
+        @include color.themed() {
+          color: color.t('primary-light');
+        }
+
+        &:hover {
+          @include color.themed() {
+            color: color.t('primary');
+            border-left-color: color.t('primary-lighter');
+          }
+        }
+      }
+
+      &--active a {
+        font-weight: 600;
+
+        @include color.themed() {
+          color: color.t('primary');
+          border-left-color: color.t('info');
+          background-color: color.t('primary-lighter');
+        }
+      }
+    }
+  }
+
+  &__content {
+    flex: 1;
+    min-width: 0;
+
+    @include conf.desktop {
+      padding: 0 2rem;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+
+    @include color.themed() {
+      border-top: color.t('border');
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1rem;
+      font-size: 1.3rem;
+      border-radius: 6px;
+      text-decoration: none;
+      max-width: 48%;
+      transition: all 0.15s ease;
+
+      @include color.themed() {
+        color: color.t('primary-light');
+        border: 1px solid color.t('primary-lighter');
+      }
+
+      &:hover {
+        @include color.themed() {
+          color: color.t('primary');
+          border-color: color.t('info');
+        }
+      }
+
+      &--next {
+        margin-left: auto;
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+    }
+  }
+}
+
+// Docs Index (chapter list on section list page)
+
+.docs-index {
+  margin: 0 30px 30px;
+
+  &__chapters {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+
+  &__chapter {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem 1.4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+
+    @include color.themed() {
+      color: color.t('primary');
+      border: 1px solid color.t('primary-lighter');
+      background-color: color.t('accent');
+    }
+
+    &:hover {
+      transform: translateX(3px);
+
+      @include color.themed() {
+        border-color: color.t('info');
+      }
+    }
+
+    &-number {
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      flex-shrink: 0;
+
+      @include color.themed() {
+        background-color: color.t('primary-lighter');
+        color: color.t('primary');
+      }
+    }
+
+    &-info {
+      flex: 1;
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    &-desc {
+      font-size: 1.2rem;
+      margin-top: 0.2rem;
+
+      @include color.themed() {
+        color: color.t('primary-light');
+      }
+    }
+
+    &-arrow {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+
+      @include color.themed() {
+        color: color.t('primary-light');
+      }
+    }
+  }
+}
+
+// Residenzen overview featured entry
+
+.archive__list-title--featured {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
+  display: block;
+
+  @include color.themed() {
+    border-bottom: color.t('border');
+  }
+}
+
+// Post content images
+
+.post__content img {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+// Hero links (homepage CTA buttons)
+
+.hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.3rem;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+
+  @include color.themed() {
+    color: color.t('primary');
+    border: 1px solid color.t('primary-lighter');
+    background-color: color.t('accent');
+  }
+
+  &:hover {
+    @include color.themed() {
+      border-color: color.t('info');
+      color: color.t('info');
+    }
+  }
+}
+
+// Primary variant — specificity 0,2,1 (two classes + element) beats .theme--dark .post__content a
+.hero__links a.hero__link--primary {
+  font-weight: 600;
+  background-color: #6086b4;
+  border-color: #6086b4;
+  color: #ffffff;
+
+  &:hover {
+    @include color.themed() {
+      background-color: color.t('primary');
+      border-color: color.t('primary');
+      color: color.t('accent');
+    }
+  }
+}

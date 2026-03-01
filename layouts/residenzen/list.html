@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+
+    {{/* Overview page (hideDate: true) shown first, without date */}}
+    {{ range where .Data.Pages "Params.hideDate" true }}
+      <ul class="archive__list">
+        <li class="archive__list-item">
+          {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
+            <a class="archive__list-title archive__list-title--featured" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+          {{ else }}
+            <a class="archive__list-title archive__list-title--featured" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+          {{ end }}
+        </li>
+      </ul>
+    {{ end }}
+
+    {{/* Remaining pages grouped by year */}}
+    {{ range (where .Data.Pages "Params.hideDate" "!=" true).GroupByDate "2006" }}
+      <div class="archive__heading">{{ .Key }}</div>
+      {{ range .Pages }}
+        <ul class="archive__list">
+          <li class="archive__list-item">
+            {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
+              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+            {{ else }}
+              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+            {{ end }}
+            <div class="archive__list-date">
+              {{ if isset .Site.Params "listdateformat" }}
+                {{ .Date.Format .Site.Params.listDateFormat }}
+              {{ else }}
+                {{ .Date.Format "Jan 2" }}
+              {{ end }}
+            </div>
+          </li>
+        </ul>
+      {{ end }}
+    {{ end }}
+
+  </div>
+{{ end }}

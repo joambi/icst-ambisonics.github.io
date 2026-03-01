@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ $section := .Parent }}
+{{ $pages := sort $section.RegularPages "Title" }}
+
+<div class="docs animated fadeInDown">
+
+  {{/* Chapter sidebar nav */}}
+  <nav class="docs__nav">
+    <div class="docs__nav-title">
+      <a href="{{ $section.RelPermalink }}">
+        <i class="fas fa-book"></i> Plugin Docs
+      </a>
+    </div>
+    <ul class="docs__nav-list">
+      {{ range $pages }}
+        <li class="docs__nav-item{{ if eq .RelPermalink $.RelPermalink }} docs__nav-item--active{{ end }}">
+          <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+
+  {{/* Main content */}}
+  <article class="docs__content post">
+    <div class="post__content">
+      <h1>{{ title .Title }}</h1>
+
+      {{- if (eq .Params.toc true) -}}
+        {{- partial "toc.html" . -}}
+      {{- end -}}
+
+      {{ .Content }}
+    </div>
+
+    {{/* Prev / Next navigation */}}
+    <div class="docs__pagination">
+      {{ with .PrevInSection }}
+        <a class="docs__pagination-link docs__pagination-link--prev" href="{{ .RelPermalink }}">
+          <i class="fas fa-arrow-left"></i>
+          <span>{{ .Title }}</span>
+        </a>
+      {{ end }}
+      {{ with .NextInSection }}
+        <a class="docs__pagination-link docs__pagination-link--next" href="{{ .RelPermalink }}">
+          <span>{{ .Title }}</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      {{ end }}
+    </div>
+  </article>
+
+</div>
+{{ end }}
