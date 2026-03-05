@@ -1,5 +1,6 @@
 ---
 title: Tastaturkürzel
+weight: 140
 date: 2025-01-22T14:36:00
 ---
 Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts

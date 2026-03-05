@@ -2,6 +2,7 @@
 tags:
 date: 2025-01-15T16:21:00
 title: Downloads
+weight: 30
 ---
 Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
 

@@ -1,5 +1,6 @@
 ---
 title: Schritt-für-Schritt-Setup
+weight: 70
 date: 2025-01-23T15:38:00
 ---
 Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts

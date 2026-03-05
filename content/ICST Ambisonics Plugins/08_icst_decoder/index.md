@@ -4,7 +4,7 @@ date: 2025-01-01T00:00:00
 weight: 80
 draft: false
 ---
-
+kannst du mir
 Institute for Computer Music and Sound Technology (ICST) · Zurich University of the Arts
 
 ---

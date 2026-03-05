@@ -1,6 +1,7 @@
 ---
 date: 2025-01-27T14:32:00
 title: Spurvorlagen
+weight: 120
 ---
 Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
 

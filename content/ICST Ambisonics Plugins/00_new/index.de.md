@@ -1,6 +1,7 @@
 ---
 title: Was ist neu
 date: 2025-11-03T16:13:00
+weight: 20
 ---
 
 Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
