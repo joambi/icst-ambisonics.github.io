@@ -9,11 +9,21 @@ Zurich University of the Arts
 
 ---
 
+### The ICST Ambisonics Plugins (Reaper DAW)
+
+![Overview_v3.2](/HOME/Overview_v3.1.png)
+
 The **ICST Ambisonics Plugins** encode and decode Ambisonics B-Format and provide spatial audio production tools for REAPER DAW — free and open source.
+
+Developed at ZHdK Zurich, this site brings together plugin documentation, tutorials, and a living practice: international composers work in our studio through artist residencies, and the public is invited to acousmatic listening sessions (Ascolta). All tools are format-agnostic and built on the open B-Format standard.
+
+Info at ZHdK: https://www.zhdk.ch/forschungsprojekt/icst-ambisonics-plugins-555245
+
+[What is new in v3.2](/icst-ambisonics-plugins/00_new/)
 
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/">
-    <i class="fas fa-book-open"></i>&nbsp;Plugin Docs
+    <i class="fas fa-book-open"></i>&nbsp;ICST AmbiPlugins Docs
   </a>
   <a class="hero__link" href="/post/">
     <i class="fas fa-graduation-cap"></i>&nbsp;Tutorials
@@ -33,4 +43,12 @@ The **ICST Ambisonics Plugins** encode and decode Ambisonics B-Format and provid
 </div>
 
 ---
-©2025 ICST
+
+### The Ambisonics Tools (Max 8.0)
+
+![ICST_Ambi-Tools_Max](/HOME/ICST_Ambi-Tools_Max.png)
+
+Info at ZHdK: https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385
+
+---
+<span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>

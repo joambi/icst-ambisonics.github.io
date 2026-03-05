@@ -1,5 +1,6 @@
 ---
 title: "#16 ascolta Acousmatic Listening Session"
+description: "B-Format Archiving – immersive access to the electroacoustic repertoire"
 date: 2025-10-16T18:00:00
 weight: 16
 ---
@@ -71,4 +72,4 @@ Presentation: Johannes Schütt
 
 ---
 
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

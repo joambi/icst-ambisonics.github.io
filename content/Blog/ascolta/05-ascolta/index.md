@@ -1,5 +1,6 @@
 ---
 title: "#05 ascolta Acousmatic Listening Session"
+description: "Field-Recordings & Soundscapes – Philip Samartzis"
 date: 2023-03-14T18:00:00
 weight: 5
 ---
@@ -55,4 +56,4 @@ Cathy Lane is an English composer, sound artist, and academic. Her work uses lan
 <https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -1,5 +1,6 @@
 ---
 title: "#03 ascolta Acousmatic Listening Session"
+description: "Granular – Nikos Stavropoulos & Horacio Vaggione"
 date: 2022-11-15T18:00:00
 weight: 3
 ---
@@ -35,13 +36,13 @@ The title was selected based on its onomatopoetic qualities and its direct refer
 **Horacio Vaggione,** ICST Artist in Residency June 30, 2015 – July 5, 2015
 **Gymel II (2015)** electronic music for 8-track medium
 We find in this work morphology (figures, textures) that manifest themselves at different granularity levels.
-GYMEL II is the result of a stay at ICST, University of the Arts Zurich, in July 2015.
+GYMEL II is the result of a stay at ICST, Zurich University of the Arts, in July 2015.
 
 * * *
 
 **Vincent Cears,** ICST Artist in Residency April 6, 2021 - April 19, 2021
 **A Year in Dark Tones (2021)**
-Live improvisation in Ambisonics (3rd-order). A Year in Dark Shades is the work I created using different spatial sound systems. For this piece I collaborated with a visual artist to create an immersive performance. During the ICST residency, I converted everything to Ambisonics using the ICST AmbisonicsPlugins!
+Live improvisation in Ambisonics (3rd-order). A Year in Dark Shades is the work I created using different spatial sound systems. For this piece I collaborated with a visual artist to create an immersive performance. During the ICST residency, I converted everything to Ambisonics using the ICST Ambisonics Plugins!
 'Improvisation I' and 'Improvisation II' are a live pre-recording during the residency at ICST.
 
 * * *
@@ -51,4 +52,4 @@ Live improvisation in Ambisonics (3rd-order). A Year in Dark Shades is the work 
 We hear: part 1: immersion 09:58 min
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

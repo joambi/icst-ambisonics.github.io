@@ -1,11 +1,11 @@
 ---
-tags:
-  - ambiencoder
-  - luascript
-  - reaper_script
-date: 2025-07-17T14:31:00
 title: ICST AmbiEncoder – Spiral Walk Script
+description: "Documents the Spiral Walk ReaScript, covering installation, GUI controls, and envelope generation for producing spiraling motion in the AmbiEncoder."
+date: 2025-07-17T14:31:00
+year: 2025
+month: 2025-07
 weight: 8
+tags: ["ambiencoder", "automation", "lua", "reaper"]
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

@@ -1,7 +1,11 @@
 ---
 title: ICST MultiEncoder – Group Animation
+description: "Walks through ICST MultiEncoder group animation tools for selecting, rotating, stretching, and recording grouped sources in Reaper."
 date: 2025-05-28T13:00:00
+year: 2025
+month: 2025-05
 weight: 4
+tags: ["multiencoder", "group", "animation", "reaper", "workflow"]
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -78,5 +82,5 @@ The ICST MultiEncoder can now be controlled directly using Euler angles via OSC.
 ![Euler_Winkel](OSC_abs_angel.gif)
 
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
 

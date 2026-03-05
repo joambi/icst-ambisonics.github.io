@@ -1,6 +1,7 @@
 ---
 title: What's New
 date: 2025-11-03T16:13:00
+weight: 20
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -12,14 +13,13 @@ _**Now Available!**_
 
 **Download:**  
 🔗 **GitHub Releases**  
-([https://github.com/schweizerweb/icst-ambisonics-plugins/releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+[GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 
-# **What’s New in v3.2?**
-
-We’re pleased to announce **ICST Ambisonics Plugins v3.2**, featuring a major update to the **Multi-Decoder**, new user interface layouts, enhanced filter options, improved OSC control, and numerous workflow improvements based on ongoing empirical research at ICST.
+We’re pleased to announce **v3.2**, featuring a major update to the **Multi-Decoder**, new user interface layouts, enhanced filter options, improved OSC control, and numerous workflow improvements based on ongoing empirical research at ICST.
 
 📖 **Full Documentation:**  
-🔗 [**Wiki**]([https://github.com/schweizerweb/icst-ambisonics-plugins/wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
+🔗 [**Wiki**](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
+
 
 ---
 # ICST AmbiDecoder v3.2
@@ -61,9 +61,7 @@ A clearer and more modular structure:
 - Independent Ambisonics order, weighting, filters, mute, and gain
 - Precise spatial tuning for complex arrays
 
-📖 **Multi-Decoder Tutorial:** _(coming soon)_
-💡 For more details, visit the [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki).
-
+📖 **Multi-Decoder Tutorial:** [ICST AmbiDecoder – Multi-Decoder Mode](content/ICST Ambisonics Plugins/09_icst_multidecoder)
 ![MultiDecoder](Multidecoder.png)
 
 ### New Project-templates
@@ -116,4 +114,4 @@ Control groups via OSC using **absolute Euler angles**:
 - Speaker test updated: White-Noise → **Pink-Noise**
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

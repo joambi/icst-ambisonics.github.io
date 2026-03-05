@@ -1,5 +1,6 @@
 ---
 title: "#10 ascolta Acousmatic Listening Session"
+description: "The Composer, Herself – Natasha Barrett"
 date: 2024-03-19T18:00:00
 weight: 10
 ---
@@ -61,4 +62,4 @@ Source \[Wikipedia\]
 Link:<https://en.wikipedia.org/wiki/Judy_Klein>
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

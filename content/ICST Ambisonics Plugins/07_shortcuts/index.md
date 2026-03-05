@@ -1,4 +1,5 @@
 ---
+weight: 140
 title: Shortcuts
 date: 2025-01-22T14:36:00
 ---
@@ -29,4 +30,4 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 Referenz: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

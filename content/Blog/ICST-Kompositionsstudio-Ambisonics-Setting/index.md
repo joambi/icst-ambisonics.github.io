@@ -1,7 +1,9 @@
 ---
 title: ICST Kompositionsstudio Ambisonics Setting
+description: "Speaker coordinates and Ambisonics decoder configuration"
 date: 2025-06-02T15:12:00
 weight: 6
+group: "Studio"
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -39,4 +41,4 @@ ICST Ambisonics Plugins Dokumentation:
 **Downloads:** → [Downloads](/blog/downloads/)
 
 * * *
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

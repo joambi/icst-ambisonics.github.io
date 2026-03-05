@@ -1,7 +1,9 @@
 ---
 title: Downloads
+description: "Speaker settings, track templates, Max patches and more"
 date: 2025-06-12T15:09:00
 weight: 0
+group: "Residents"
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 

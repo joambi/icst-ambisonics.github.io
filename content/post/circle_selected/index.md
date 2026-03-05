@@ -1,7 +1,11 @@
 ---
-date: 2025-07-19T13:28:00
 title: ICST AmbiEncoder – CircleSelected
+description: "Describes the CircleSelected Lua presets for ICST AmbiEncoder to position, rotate, and save source points and recall presets."
+date: 2025-07-19T13:28:00
+year: 2025
+month: 2025-07
 weight: 9
+tags: ["ambiencoder", "lua", "reaper", "automation", "presets"]
 ---
 
 # ICST_AmbiEncoder_64_CircleSelected_Lua-Presets

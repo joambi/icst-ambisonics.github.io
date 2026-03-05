@@ -104,6 +104,12 @@
           color: color.t('primary');
         }
       }
+
+      i {
+        font-size: $font-size-h1;
+        vertical-align: middle;
+        line-height: 1;
+      }
     }
 
     h2 {
@@ -121,6 +127,12 @@
           color: color.t('primary');
         }
       }
+
+      i {
+        font-size: $font-size-h2;
+        vertical-align: middle;
+        line-height: 1;
+      }
     }
 
     h3 {
@@ -137,6 +149,12 @@
         @include color.themed() {
           color: color.t('primary');
         }
+      }
+
+      i {
+        font-size: $font-size-h3;
+        vertical-align: middle;
+        line-height: 1;
       }
     }
 

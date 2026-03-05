@@ -1,5 +1,6 @@
 ---
 title: "#06 ascolta Acousmatic Listening Session"
+description: "Zbigniew Karkowski – noise and experimental electronic music"
 date: 2023-04-04T18:00:00
 weight: 6
 ---
@@ -46,4 +47,4 @@ In 2008 Zbigniew Karkowski was a guest at ICST and realized the piece 'No name' 
 <https://www.zhdk.ch/veranstaltung/50898>
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

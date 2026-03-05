@@ -1,5 +1,6 @@
 ---
 title: "#09 ascolta Acousmatic Listening Session"
+description: "Hans Tutschku – Remembering Japan"
 date: 2023-12-05T18:00:00
 weight: 9
 ---
@@ -48,4 +49,4 @@ Besides his regular courses at the university, he has taught international works
 
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

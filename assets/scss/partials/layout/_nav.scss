@@ -71,6 +71,12 @@
     }
   }
 
+  &__list:not(.nav__list--end) .optionswitch__label {
+    @include color.themed() {
+      color: color.t('info');
+    }
+  }
+
   &--active {
     display: block;
   }

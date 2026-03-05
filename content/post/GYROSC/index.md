@@ -1,7 +1,11 @@
 ---
 title: ICST AmbiPlugins & GyrOSC
+description: "Shows how GyrOSC streams iOS motion-sensor data via OSC into the ICST AmbiEncoder for mobile spatial control plus inspiration snippets."
 date: 2025-05-28T14:57:00
+year: 2025
+month: 2025-05
 weight: 6
+tags: ["gyrosc", "osc", "mobile", "ambiencoder", "reaper"]
 author: Johannes Schuett
 ---
 Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts
@@ -72,7 +76,7 @@ JS-Code:
 
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
 
 
 

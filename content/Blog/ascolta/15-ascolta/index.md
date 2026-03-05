@@ -1,5 +1,6 @@
 ---
 title: "#15 ascolta Acousmatic Listening Session"
+description: "Listening Twice – Ambisonics UHJ recordings from the 1970s"
 date: 2025-05-06T18:00:00
 weight: 15
 ---
@@ -30,4 +31,4 @@ In this listening session, we want to engage with ambisonics UHJ recordings from
 
 ---
 
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

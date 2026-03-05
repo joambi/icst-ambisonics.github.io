@@ -62,15 +62,15 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 ### Ambisonics Links:
 
-- https://de.wikipedia.org/wiki/Ambisonics
-- https://www.ambisonic.net/
-- https://ambisonics.ch/
-- https://link.springer.com/referenceworkentry/10.1007/978-3-662-60357-4_25-1
-- https://www.waves.com/ambisonics-explained-guide-for-sound-engineers
+- [Ambisonics (Wikipedia)](https://de.wikipedia.org/wiki/Ambisonics)
+- [ambisonic.net](https://www.ambisonic.net/)
+- [ambisonics.ch](https://ambisonics.ch/)
+- [Springer: Ambisonics Reference Entry](https://link.springer.com/referenceworkentry/10.1007/978-3-662-60357-4_25-1)
+- [Waves: Ambisonics Explained](https://www.waves.com/ambisonics-explained-guide-for-sound-engineers)
 - [Reaper Ambisonics Forum](https://forum.cockos.com/forumdisplay.php?s=75823a68d22b96a21e8025b8fea609ad&f=53)
 
 
 No guarantee of completeness
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

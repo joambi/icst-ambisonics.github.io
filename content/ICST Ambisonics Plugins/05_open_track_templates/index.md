@@ -1,4 +1,5 @@
 ---
+weight: 120
 date: 2025-01-27T14:32:00
 title: Track Templates
 ---
@@ -18,4 +19,4 @@ Ensure proper audio routing between channel tracks for accurate signal flow!
 ![Track_template](Track_templates.gif)
 
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

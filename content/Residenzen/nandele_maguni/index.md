@@ -1,6 +1,9 @@
 ---
 title: Nandele Maguni
 date: 2025-07-04T13:08:00
+_build:
+  list: never
+  render: always
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -31,4 +34,4 @@ This is not just about sound but movement, memory, and space.
 
 
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

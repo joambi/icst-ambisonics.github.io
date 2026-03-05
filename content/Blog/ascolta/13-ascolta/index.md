@@ -1,5 +1,6 @@
 ---
 title: "#13 ascolta Acousmatic Listening Session"
+description: "Listening Twice – stereo vs. immersive, an experimental comparison"
 date: 2024-12-17T18:00:00
 weight: 13
 ---
@@ -32,4 +33,4 @@ Based on the empirical research ‘Performance and storage of multi-channel cont
 
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

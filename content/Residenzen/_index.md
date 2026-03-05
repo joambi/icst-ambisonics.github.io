@@ -1,5 +1,6 @@
 ---
 title: "Residenzen"
+description: "International artist residencies at the ICST Composition Studio — composers working with spatial audio and Ambisonics technology at ZHdK Zurich."
 hidesidebar: true
 ---
 

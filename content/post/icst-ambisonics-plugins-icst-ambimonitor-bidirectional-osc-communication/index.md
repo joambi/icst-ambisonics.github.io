@@ -1,9 +1,11 @@
 ---
 title: MaxMSP & ICST AmbiEncoder – OSC Communication
+description: "Details bidirectional OSC communication between Max/MSP and ICST AmbiEncoder, including angle formats and motion data exchanges."
 date: 2025-03-16T09:44:58
+year: 2025
+month: 2025-03
 weight: 2
-tags:
-Categories:
+tags: ["maxmsp", "osc", "ambimonitor", "ambiencoder", "bidirectional"]
 DisableComments: false
 ---
 
@@ -70,4 +72,4 @@ For **index-based addressing**:
 - `Roll`: Rotation around the forward axis
 
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -1,9 +1,11 @@
 ---
 title: ICST AmbiEncoder – OSC to FX Mapping
+description: "Demonstrates mapping ICST AmbiEncoder OSC messages to FX plugin parameters (e.g. IEM FdnReverb) for synchronized spatial effects control."
 date: 2025-05-16T09:44:58
+year: 2025
+month: 2025-05
 weight: 3
-tags:
-Categories:
+tags: ["osc", "fx", "ambiencoder", "reaper", "automation"]
 DisableComments: false
 ---
 
@@ -46,4 +48,4 @@ As the distance increases, reverb intensity will also increase. Experiment with 
 
 
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

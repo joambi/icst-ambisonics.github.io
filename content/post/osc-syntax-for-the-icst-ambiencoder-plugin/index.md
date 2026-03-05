@@ -1,9 +1,11 @@
 ---
 title: ICST AmbiEncoder – OSC Syntax
+description: "Reference for the OSC syntax supported by ICST AmbiEncoder, covering message formats and TouchOSC/MaxMSP-compatible parameters."
 date: 2025-03-16T09:44:58+01:00
+year: 2025
+month: 2025-03
 weight: 1
-tags:
-Categories:
+tags: ["osc", "syntax", "ambiencoder", "reference"]
 DisableComments: false
 ---
 
@@ -141,6 +143,6 @@ Open the question mark before the presets to get detailed help information.
 5. Save or load OSC messages in **Presets**.
 
 * * *
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
 
 

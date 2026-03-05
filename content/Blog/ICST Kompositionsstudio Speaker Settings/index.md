@@ -1,8 +1,10 @@
 ---
 tags:
 title: ICST Labor Ambisonics Speaker Settings
+description: "Speaker presets and coordinate files for the ICST decoder"
 date: 2025-05-20T15:11:00
 weight: 11
+group: "Residents"
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -36,6 +38,6 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ![All](2023-04-All.jpg)
 All speakers allow the creation of your own speaker routings.
 * * *
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
 
 

@@ -1,5 +1,6 @@
 ---
 title: "#02 ascolta Acousmatic Listening Session"
+description: "Gerald Bennett portrait – electroacoustic works by the co-founder of ICST"
 date: 2022-10-04T18:00:00
 weight: 2
 ---
@@ -114,4 +115,4 @@ Silence, then,
 and rather than watching, now listen.
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

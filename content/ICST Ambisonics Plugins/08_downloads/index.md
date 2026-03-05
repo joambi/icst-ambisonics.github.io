@@ -1,4 +1,5 @@
 ---
+weight: 30
 tags:
 date: 2025-01-15T16:21:00
 title: Downloads
@@ -14,4 +15,4 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - [ICST Ambisonics Tools](https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-ambisonics-externals-for-maxmsp-5381) (please download the Ambisonics Tools over the 'Max Package Manager')
 	
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

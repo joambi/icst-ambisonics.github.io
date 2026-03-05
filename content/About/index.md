@@ -23,7 +23,7 @@ The **Institute for Computer Music and Sound Technology** ([ICST](https://www.zh
 
 ### ICST Ambisonics Tools & Plugins
 
-A key outcome of ICST’s research is the **ICST Ambisonics Tools**, a suite of Max/MSP externals enabling advanced 3D surround audio editing. Developed over two decades, these tools are publicly available. The **ICST Ambisonics Plugins** bring many of these features to DAWs as VST/AU/LV2 plugins. Actively evolving, they are currently available in [version 3.1.0](https://github.com/schweizerweb/icst-ambisonics-plugins).
+A key outcome of ICST’s research is the **ICST Ambisonics Tools**, a suite of Max/MSP externals enabling advanced 3D surround audio editing. Developed over two decades, these tools are publicly available. The **ICST Ambisonics Plugins** bring many of these features to DAWs as VST/AU/LV2 plugins. Actively evolving, they are currently available in [version 3.2.0](https://github.com/schweizerweb/icst-ambisonics-plugins).
 
 This site provides an overview of ICST’s Ambisonics research and developments.
 
@@ -31,7 +31,7 @@ This site provides an overview of ICST’s Ambisonics research and developments.
 
 # Impressum
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts
 
 ---
 Powered by  [Hugo](https://gohugo.io/) with the '[Anatole](https://themes.gohugo.io/themes/anatole/)' theme.
@@ -52,11 +52,11 @@ Postfach, CH-8031 Zürich
 **Céline Lutz**  
 Administration ICST  
 Telefon: +41 (0)43 446 55 00  
-[E-Mail](mailto:celine.lutz@zhdk.ch)
+[E-Mail](mailto:info@zhdk.ch)
 
 https://www.zhdk.ch/forschung/icst
 
 [www.zhdk.ch](http://www.zhdk.ch/ "http://www.zhdk.ch/")
 
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

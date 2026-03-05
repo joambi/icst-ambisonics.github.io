@@ -1,24 +1,32 @@
 ---
-title: icst-kompositionsstudio-photo-galery
+title: ICST Kompositionsstudio – Photo Gallery
+description: "Photo gallery — impressions of the ICST Composition Studio"
 date: 2025-06-25T15:12:00
 weight: 12
+group: "Studio"
 ---
+
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-### The ICST Kompositionsstudio 
 
-photo gallery
+### The ICST Kompositionsstudio
 
-![Kompstudio](Kompstudio.jpg)
+![Studio overview](Kompstudio.jpg)
 
-![foto2](_AAA2437.jpg)
+![Studio session](_AAA2429.jpg)
 
-![foto3](_AAA2476.jpg)
+![Studio session](_AAA2430.jpg)
 
-![foto4](_AAA2472.jpg)
+![Control room](_AAA2437.jpg)
 
+![Speaker system](_AAA2472.jpg)
+
+![Speaker detail](_AAA2476.jpg)
+
+![Studio equipment](_AAA2498.jpg)
+
+![Studio at work](_AAA2502.jpg)
 
 ---
-©2025 ICST
-
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

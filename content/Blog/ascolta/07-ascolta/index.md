@@ -1,5 +1,6 @@
 ---
 title: "#07 ascolta Acousmatic Listening Session"
+description: "ICST Artists in Residence – concert with works by former residents"
 date: 2023-06-06T18:00:00
 weight: 7
 ---
@@ -84,4 +85,4 @@ Artist in Residency  3.7. – 14.7.2017 | 12.1. – 22.1.2018
 (1st Prize for ISAC-2023)   
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

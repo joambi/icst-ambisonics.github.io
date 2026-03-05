@@ -1,4 +1,5 @@
 ---
+weight: 60
 title: Quick Start
 date: 2025-01-28T14:31:00
 ---
@@ -16,4 +17,4 @@ Get started quickly using the **MultiEncoder template** with this simple workflo
 ![open_multiencoder_temp](open_multiencoder_temp.gif)
 
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

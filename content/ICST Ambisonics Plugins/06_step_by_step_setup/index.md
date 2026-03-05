@@ -1,4 +1,5 @@
 ---
+weight: 70
 title: Step by Step Setup
 date: 2025-01-23T15:38:00
 ---
@@ -231,4 +232,4 @@ Rendering-info:
 🎧 Happy ambisonics!
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

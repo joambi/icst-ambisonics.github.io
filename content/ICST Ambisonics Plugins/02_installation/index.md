@@ -4,7 +4,7 @@ draft: false
 title: Installation
 params:
   author: Johannes Schuett
-weight: 10
+weight: 40
 tags:
 ---
 
@@ -42,7 +42,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 INFO: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
 
-VIDEO:  https://www.youtube.com/watch?v=UmPnUTVem0Q
+VIDEO:  [ICST Ambisonics Plugins – 01 – How to Install - YouTube](https://www.youtube.com/watch?v=2GXb5tbqW1Y&t=11s)
 
 ---
 
@@ -68,9 +68,5 @@ VIDEO:  https://www.youtube.com/watch?v=UmPnUTVem0Q
 
 Restart the PC!
 
-# Install on Linux
-
-_Coming soon_
-
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

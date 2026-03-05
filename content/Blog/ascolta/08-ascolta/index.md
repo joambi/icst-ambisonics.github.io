@@ -1,5 +1,6 @@
 ---
 title: "#08 ascolta Acousmatic Listening Session"
+description: "La Canción de la Tierra – Mesias Maiguashca"
 date: 2023-10-24T18:00:00
 weight: 8
 ---
@@ -71,4 +72,4 @@ to Nature, to Mother Earth, to the Pachamama.
 Quoted from the website of **[Mesias Maiguashca](https://maiguashca.de/) (2022)**
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

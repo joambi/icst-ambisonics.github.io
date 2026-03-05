@@ -1,7 +1,9 @@
 ---
 title: Studio Terms of Use
+description: "Studio usage terms and conditions"
 tags: []
 weight: 8
+group: "Residents"
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -35,4 +37,4 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 **The next studio user will thank them.**
 
 * * *
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

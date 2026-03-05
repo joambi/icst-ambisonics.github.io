@@ -1,5 +1,6 @@
 ---
 title: "#11 ascolta Acousmatic Listening Session"
+description: "Mario Mary, portrait"
 date: 2024-06-11T18:00:00
 weight: 11
 ---
@@ -75,4 +76,4 @@ Mario Mary composes mainly electro-acoustic works (_Fuite en avant_, premiered a
 Quelle: <http://www.cdmc.asso.fr/en/ressources/compositeurs/biographies/mary-mario-marcelo-1961>
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

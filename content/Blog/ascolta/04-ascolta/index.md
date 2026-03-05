@@ -1,5 +1,6 @@
 ---
 title: "#04 ascolta Acousmatic Listening Session"
+description: "Glocken – bells and tape, Werner Geissberger"
 date: 2022-12-13T18:00:00
 weight: 4
 ---
@@ -75,4 +76,4 @@ The next Acoustic Listening Hour will take place next year.
 I wish you peace and tranquility over the holidays and all the best for the new year, 2023!
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

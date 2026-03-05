@@ -1,7 +1,9 @@
 ---
 title: ICST Kompositionsstudio Regie
+description: "LSB control panel, routing, and operation of the control room"
 date: 2025-04-08T15:11:00
 weight: 5
+group: "Studio"
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -112,4 +114,4 @@ Behind the curved screen you will find additional hardware:
     - **2** → Laptop / PC
         
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

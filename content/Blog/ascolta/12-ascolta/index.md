@@ -1,5 +1,6 @@
 ---
 title: "#12 ascolta Acousmatic Listening Session"
+description: "Georg Katzer – electroacoustic works"
 date: 2024-09-17T18:00:00
 weight: 12
 ---
@@ -159,4 +160,4 @@ In 1978 Katzer was elected a member of the Academy of Arts in East Berlin. In 19
 
 ---
 
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

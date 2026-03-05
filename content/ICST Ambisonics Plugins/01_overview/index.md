@@ -44,4 +44,4 @@ Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>
 -   Video Editor: Axel Kolb
 
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

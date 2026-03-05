@@ -1,5 +1,6 @@
 ---
 title: "#14 ascolta Acousmatic Listening Session"
+description: "Listening Twice – 5.1 surround vs. Ambisonics UHJ (1970s)"
 date: 2025-04-22T18:00:00
 weight: 14
 ---
@@ -36,4 +37,4 @@ Additional Information:
 
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -1,5 +1,6 @@
 ---
 title: "#01 ascolta Acousmatic Listening Session"
+description: "Jean-Claude Risset – Songs, Octant, Sud I–III, Resonant"
 date: 2019-11-26T18:00:00
 weight: 1
 ---
@@ -36,4 +37,4 @@ _Free admission_ 
 * **Resonant   14:37**
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

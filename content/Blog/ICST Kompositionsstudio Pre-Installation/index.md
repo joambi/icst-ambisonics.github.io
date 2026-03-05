@@ -1,7 +1,9 @@
 ---
 title: ICST Kompositionsstudio Pre-Installation
+description: "Driver and software setup for your own laptop before arrival"
 date: 2025-06-03T15:10:00
 weight: 2
+group: "Residents"
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -66,4 +68,4 @@ To get the curved screen as a single large screen, you need to make an additiona
 → All downloads are centralized on the [Downloads](/blog/downloads/) page.
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

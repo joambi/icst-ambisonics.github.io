@@ -53,4 +53,4 @@ Disadvantage:
 
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -1,8 +1,9 @@
 ---
 title: ICST Kompositionsstudio Support
+description: "Technical support, contacts, and troubleshooting"
 date: 2025-05-06T15:12:00
 weight: 7
-draft: true
+group: "Residents"
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -44,4 +45,4 @@ Download for your system: [DisplayLink Manager for macOS](https://www.synaptics.
 - mobile: +41 76 330 11 02
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

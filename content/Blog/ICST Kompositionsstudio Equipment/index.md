@@ -1,7 +1,9 @@
 ---
 title: ICST Kompositionsstudio Equipment
+description: "Mac Pro, RME MadiFace, LAWO matrix, speakers and MIDI controllers"
 date: 2025-06-09T15:10:00
 weight: 3
+group: "Studio"
 ---
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
@@ -28,5 +30,5 @@ Bring all special cables and adapters with you.
 - others
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
 

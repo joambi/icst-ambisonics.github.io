@@ -2,6 +2,9 @@
 tags:
 title: Ana Gonzalez Gamboa
 date: 2025-09-03T18:35:00
+_build:
+  list: never
+  render: always
 ---
 
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
@@ -27,4 +30,4 @@ Web: [https://anagonzalezgamboa0.wixsite.com/anagamboa](https://anagonzalezgamb
 Ig: [https://www.instagram.com/ana___gamboa/](https://www.instagram.com/ana___gamboa/)
 
 ---
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

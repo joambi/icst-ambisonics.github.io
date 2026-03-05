@@ -1,9 +1,11 @@
 ---
 title: Ableton Live & ICST Ambisonics Integration
+description: "Step-by-step guide for recording 7th-order Ambisonics from Ableton Live into Reaper via BlackHole, OSC-driven MultiEncoder automation, and LTC sync."
 date: 2025-03-16T09:44:58+01:00
+year: 2025
+month: 2025-03
 weight: 7
-tags:
-Categories:
+tags: ["ableton", "reaper", "workflow", "ambiencoder", "tutorial", "blackhole"]
 DisableComments: false
 ---
 
@@ -84,4 +86,4 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)
 For more details, refer to the documentation for Ableton Live, Reaper, and the ICST MultiEncoder.
 
 ----
-©2025 ICST
+<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
