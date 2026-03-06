@@ -25,7 +25,7 @@ profilePicture = "images/AmbiPlugin_logo.gif"
 mainSections = ["blog", "post"]
 favicon = "favicons/"
 contentratio = 0.7
-copyright = "Johannes Schuett {{ YEAR }}"
+copyright = ""
 
   [params.author]
   name  = "Johannes Schuett"
@@ -173,7 +173,19 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   name = "Privacy Policy"
   weight = 1
   identifier = "Privacy Policy"
-  url = "https://www.iubenda.com/privacy-policy/70769495/full-legal"
+  url = "https://www.iubenda.com/privacy-policy/70769495"
+
+  [[menu.footer]]
+  name = "Cookie Policy"
+  weight = 2
+  identifier = "Cookie Policy"
+  url = "https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+
+  [[menu.footer]]
+  name = "Terms and Conditions"
+  weight = 3
+  identifier = "Terms and Conditions"
+  url = "https://www.iubenda.com/terms-and-conditions/70769495"
 
 
 [taxonomies]

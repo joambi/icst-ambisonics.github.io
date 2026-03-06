@@ -135,7 +135,7 @@ Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule de
 </style>
 
 <div class="artist-card">
-  <img src="monoc-small-2.jpg" alt="Pierre Alexandre Tremblay">
+  <img src="/residenzen/icst-studio-residences-2026/monoc-small-2.jpg" alt="Pierre Alexandre Tremblay">
   <div class="artist-card__body">
     <div class="artist-card__name">Pierre Alexandre Tremblay</div>
     <span class="artist-card__period">28 Apr – 21 Aug 2026</span>
@@ -156,7 +156,7 @@ Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule de
 </div>
 
 <div class="artist-card">
-  <img src="monoc-small.jpg" alt="Yoko Konishi">
+  <img src="/residenzen/icst-studio-residences-2026/monoc-small.jpg" alt="Yoko Konishi">
   <div class="artist-card__body">
     <div class="artist-card__name">Yoko Konishi</div>
     <span class="artist-card__period">24 Aug – 13 Sep 2026</span>
@@ -169,7 +169,7 @@ Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule de
 </div>
 
 <div class="artist-card">
-  <img src="monoc-small-1.jpg" alt="Eli Stine">
+  <img src="/residenzen/icst-studio-residences-2026/monoc-small-1.jpg" alt="Eli Stine">
   <div class="artist-card__body">
     <div class="artist-card__name">Eli Stine</div>
     <span class="artist-card__period">29 Jun – 06 Jul 2026</span>
