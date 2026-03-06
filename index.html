@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ── Primary Meta ── -->
+  <title>ICST Ambisonics – Spatial Audio Plugins & Tutorials</title>
+  <meta name="description" content="Free open-source Ambisonics plugins for REAPER DAW and Max/MSP tools by ICST · Zurich University of the Arts. Encode, decode, and spatialise audio in 3D."/>
+  <meta name="author" content="Johannes Schütt, ICST ZHdK"/>
+  <link rel="canonical" href="https://ambisonics.ch/"/>
+
+  <!-- ── Open Graph / Social ── -->
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://ambisonics.ch/"/>
+  <meta property="og:title"       content="ICST Ambisonics – Spatial Audio Plugins & Tutorials"/>
+  <meta property="og:description" content="Free open-source Ambisonics plugins for REAPER and Max/MSP. Encoding, decoding, rotation, binaural rendering – developed at ZHdK Zurich."/>
+  <meta property="og:image"       content="https://ambisonics.ch/images/AmbiPlugin_logo.gif"/>
+  <meta property="og:site_name"   content="ICST Ambisonics"/>
+  <meta name="twitter:card"       content="summary_large_image"/>
+  <meta name="twitter:title"      content="ICST Ambisonics – Spatial Audio Plugins"/>
+  <meta name="twitter:description" content="Free Ambisonics plugins for REAPER & Max/MSP by ZHdK Zurich."/>
+  <meta name="twitter:image"      content="https://ambisonics.ch/images/AmbiPlugin_logo.gif"/>
+
+  <!-- ── Favicon ── -->
+  <link rel="icon" type="image/gif" href="static/images/AmbiPlugin_logo.gif"/>
+
+  <!-- ── Fonts ── -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* ═══════════════════════════════════════════
+       BASE RESET & VARIABLES
+    ═══════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --bg:        #f9f7f4;
+      --surface:   #ffffff;
+      --primary:   #1a2b4a;
+      --primary2:  #263f66;
+      --accent:    #3d6b9e;
+      --accent-lt: #e8eff7;
+      --border:    #d0cec9;
+      --text:      #2c2c2c;
+      --muted:     #6b6866;
+      --serif:     'Source Serif 4', Georgia, serif;
+      --sans:      'Source Sans 3', system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* ── LANGUAGE SYSTEM ── */
+    body.lang-de [data-lang="en"] { display: none !important; }
+    body.lang-en [data-lang="de"] { display: none !important; }
+
+    /* ═══════════════════════════════════════════
+       LANGUAGE BAR
+    ═══════════════════════════════════════════ */
+    .lang-bar { background: #0b1624; padding: 0.35rem 2rem; }
+    .lang-bar-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: flex-end; gap: 0.25rem;
+    }
+    .lang-btn {
+      background: none; border: 1px solid transparent;
+      color: #5a88b5; font-family: var(--sans);
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 0.2rem 0.55rem; cursor: pointer;
+      border-radius: 1px; transition: all 0.2s;
+    }
+    .lang-btn:hover { color: #fff; }
+    .lang-btn.active {
+      color: #fff; border-color: var(--accent);
+      background: rgba(61,107,158,0.3);
+    }
+
+    /* ═══════════════════════════════════════════
+       HEADER + MOBILE NAV
+    ═══════════════════════════════════════════ */
+    header {
+      background: var(--primary);
+      padding: 0 2rem;
+      position: sticky; top: 0; z-index: 200;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.35);
+    }
+    .header-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding: 0.95rem 0; gap: 1.5rem;
+    }
+    .header-brand { text-decoration: none; display: flex; align-items: center; gap: 0.7rem; }
+    .brand-logo {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      object-fit: contain;
+      background: rgba(255,255,255,0.08);
+    }
+    .brand-text .inst {
+      font-size: 0.62rem; letter-spacing: 0.16em;
+      text-transform: uppercase; color: #7ba8d1; font-weight: 300;
+    }
+    .brand-text .name {
+      font-family: var(--serif); font-size: 1.35rem;
+      font-weight: 600; color: #fff; line-height: 1.1;
+    }
+
+    /* Desktop nav */
+    .main-nav { display: flex; gap: 1.3rem; align-items: center; flex-wrap: wrap; }
+    .main-nav a {
+      color: #c9d8ea; text-decoration: none;
+      font-size: 0.84rem; font-weight: 400;
+      letter-spacing: 0.02em;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0.1rem;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .main-nav a:hover,
+    .main-nav a.active { color: #fff; border-bottom-color: var(--accent); }
+
+    /* Hamburger button */
+    .nav-toggle {
+      display: none;
+      background: none; border: none;
+      color: #c9d8ea; cursor: pointer;
+      padding: 0.4rem; line-height: 1;
+    }
+    .nav-toggle svg { display: block; }
+
+    /* Mobile nav drawer */
+    .mobile-nav {
+      display: none;
+      position: fixed; inset: 0; z-index: 199;
+    }
+    .mobile-nav.open { display: block; }
+    .mobile-overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    .mobile-drawer {
+      position: absolute; top: 0; right: 0;
+      width: min(300px, 85vw); height: 100%;
+      background: var(--primary);
+      padding: 1.5rem;
+      overflow-y: auto;
+      display: flex; flex-direction: column; gap: 0.2rem;
+    }
+    .mobile-drawer .close-btn {
+      align-self: flex-end; background: none; border: none;
+      color: #7ba8d1; cursor: pointer; font-size: 1.4rem;
+      padding: 0.2rem 0.4rem; margin-bottom: 1rem;
+    }
+    .mobile-drawer a {
+      display: block; color: #c9d8ea; text-decoration: none;
+      font-size: 1rem; font-weight: 400;
+      padding: 0.7rem 0; border-bottom: 1px solid #1e3555;
+      transition: color 0.2s;
+    }
+    .mobile-drawer a:hover { color: #fff; }
+    .mobile-drawer .lang-row {
+      display: flex; gap: 0.5rem; margin-top: 1.5rem;
+    }
+    .mobile-drawer .lang-row button {
+      background: rgba(61,107,158,0.2); border: 1px solid #3d6b9e;
+      color: #7ba8d1; padding: 0.4rem 1rem;
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; cursor: pointer; border-radius: 1px;
+      transition: all 0.2s;
+    }
+    .mobile-drawer .lang-row button.active,
+    .mobile-drawer .lang-row button:hover { color: #fff; background: var(--accent); }
+
+    @media (max-width: 820px) {
+      .main-nav { display: none; }
+      .nav-toggle { display: block; }
+    }
+
+    /* ═══════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════ */
+    .hero {
+      background: linear-gradient(135deg, #0e1b2e 0%, var(--primary) 45%, var(--primary2) 100%);
+      color: #fff;
+      padding: 5.5rem 2rem 5.5rem;
+      position: relative; overflow: hidden;
+    }
+    #ambi-canvas {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      opacity: 0.18;
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 760px; margin: 0 auto;
+      position: relative; z-index: 1;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.68rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: #7ba8d1;
+      margin-bottom: 1.3rem; font-weight: 400;
+    }
+    .hero-badge::before, .hero-badge::after {
+      content: ''; display: block;
+      width: 28px; height: 1px; background: #3d6b9e;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      font-weight: 600; line-height: 1.2;
+      margin-bottom: 1.4rem;
+    }
+    .hero p {
+      font-size: 1.05rem; color: #c2d4e8;
+      max-width: 550px; margin: 0 auto 2.4rem;
+      line-height: 1.8; font-weight: 300;
+    }
+    .hero-actions { display: flex; gap: 0.9rem; flex-wrap: wrap; justify-content: center; }
+    .hero-scroll {
+      position: absolute; bottom: 1.8rem; left: 50%; transform: translateX(-50%);
+      color: #3d6b9e; animation: bounce 2s infinite;
+      cursor: pointer; z-index: 1;
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      padding: 0.65rem 1.4rem; border-radius: 2px;
+      font-size: 0.875rem; font-weight: 600;
+      text-decoration: none; letter-spacing: 0.04em;
+      transition: background 0.2s, color 0.2s, transform 0.1s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .btn-primary:hover { background: #2e5480; border-color: #2e5480; }
+    .btn-outline { background: transparent; color: #c2d4e8; border: 1px solid #4e6e91; }
+    .btn-outline:hover { background: rgba(255,255,255,0.09); color: #fff; }
+    .btn-sm { padding: 0.45rem 1rem; font-size: 0.8rem; }
+
+    /* ═══════════════════════════════════════════
+       SECTIONS
+    ═══════════════════════════════════════════ */
+    .section { padding: 4.5rem 2rem; }
+    .section.alt { background: var(--surface); }
+    .section.dark {
+      background: var(--primary);
+      color: #fff;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    .wrap-sm { max-width: 780px; margin: 0 auto; }
+
+    .sec-label {
+      font-size: 0.68rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--accent);
+      font-weight: 700; margin-bottom: 0.5rem;
+    }
+    .section.dark .sec-label { color: #7ba8d1; }
+    .sec-title {
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 400; color: var(--primary); line-height: 1.25;
+    }
+    .section.dark .sec-title { color: #fff; }
+    .sec-sub { color: var(--muted); font-size: 0.95rem; margin-top: 0.4rem; }
+    .section.dark .sec-sub { color: #a8bcd4; }
+    .sec-header {
+      margin-bottom: 2.8rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .section.dark .sec-header { border-bottom-color: #1e3555; }
+
+    /* ── NEWS BANNER ── */
+    .news-banner {
+      background: var(--accent-lt); border-left: 3px solid var(--accent);
+      padding: 0.9rem 1.2rem; margin-bottom: 2.8rem;
+      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+      border-radius: 0 2px 2px 0;
+    }
+    .news-tag {
+      background: var(--accent); color: #fff;
+      font-size: 0.62rem; font-weight: 800;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 0.2rem 0.55rem; border-radius: 1px; white-space: nowrap;
+    }
+    .news-banner p { font-size: 0.9rem; color: var(--text); }
+    .news-banner a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .news-banner a:hover { text-decoration: underline; }
+
+    /* ── PLUGIN CARDS ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.8rem;
+    }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 3px; padding: 2rem;
+      transition: box-shadow 0.2s, border-color 0.2s;
+      display: flex; flex-direction: column;
+    }
+    .section.alt .card { background: var(--bg); }
+    .card:hover { box-shadow: 0 6px 24px rgba(26,43,74,0.1); border-color: #b5c5d8; }
+    .card-icon {
+      width: 46px; height: 46px;
+      background: var(--accent-lt); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.2rem; flex-shrink: 0;
+    }
+    .card-icon svg { width: 22px; height: 22px; fill: none; stroke: var(--accent); }
+    .card h3 {
+      font-family: var(--serif); font-size: 1.15rem;
+      font-weight: 600; color: var(--primary); margin-bottom: 0.4rem;
+    }
+    .badge {
+      display: inline-block; font-size: 0.62rem;
+      font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--accent); background: var(--accent-lt);
+      padding: 0.15rem 0.5rem; border-radius: 1px; margin-bottom: 0.9rem;
+    }
+    .card p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; margin-bottom: 1.2rem; flex: 1; }
+    .card-links { display: flex; flex-direction: column; gap: 0.4rem; }
+    .card-links a { font-size: 0.85rem; color: var(--accent); text-decoration: none; font-weight: 600; }
+    .card-links a:hover { text-decoration: underline; }
+
+    /* ── BLOG PREVIEW ── */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1.5rem;
+    }
+    .blog-card {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 3px; padding: 1.5rem;
+      text-decoration: none; color: var(--text);
+      display: flex; flex-direction: column; gap: 0.6rem;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .blog-card:hover { box-shadow: 0 4px 16px rgba(26,43,74,0.09); border-color: #b5c5d8; }
+    .blog-tag {
+      font-size: 0.62rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .blog-card h4 {
+      font-family: var(--serif); font-size: 1rem;
+      font-weight: 600; color: var(--primary); line-height: 1.35;
+    }
+    .blog-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.65; flex: 1; }
+    .blog-date { font-size: 0.78rem; color: var(--muted); }
+    .blog-read { font-size: 0.82rem; color: var(--accent); font-weight: 600; margin-top: auto; }
+
+    /* ── ASCOLTA ── */
+    .ascolta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem; align-items: start;
+    }
+    @media (max-width: 680px) { .ascolta-grid { grid-template-columns: 1fr; } }
+    .ascolta-info h3 {
+      font-family: var(--serif); font-size: 1.45rem;
+      color: var(--primary); margin-bottom: 1rem; font-weight: 400;
+    }
+    .ascolta-info p {
+      color: var(--muted); font-size: 0.95rem;
+      margin-bottom: 1.1rem; line-height: 1.75;
+    }
+    address { font-style: normal; font-size: 0.87rem; color: var(--muted); line-height: 1.8; }
+    .free-badge {
+      display: inline-block; font-size: 0.65rem; font-weight: 800;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: #2e7d32; background: #e8f5e9;
+      padding: 0.18rem 0.55rem; border-radius: 1px; margin-top: 1rem;
+    }
+    .dates-label {
+      font-size: 0.68rem; font-weight: 800; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;
+    }
+    .date-item {
+      display: flex; gap: 1.2rem; align-items: flex-start;
+      padding: 1rem 0; border-bottom: 1px solid var(--border);
+    }
+    .date-item:first-of-type { border-top: 1px solid var(--border); }
+    .date-box {
+      background: var(--primary); color: #fff;
+      text-align: center; padding: 0.55rem 0.7rem;
+      border-radius: 2px; min-width: 54px; flex-shrink: 0;
+    }
+    .date-box .d { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; line-height: 1; }
+    .date-box .m {
+      font-size: 0.58rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: #7ba8d1; margin-top: 0.2rem;
+    }
+    .date-meta strong { display: block; font-size: 0.92rem; color: var(--text); }
+    .date-meta span { font-size: 0.82rem; color: var(--muted); }
+    .all-link { font-size: 0.85rem; color: var(--accent); font-weight: 600; text-decoration: none; }
+    .all-link:hover { text-decoration: underline; }
+
+    /* ── RESIDENZEN ── */
+    .res-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .res-card {
+      border: 1px solid var(--border); border-radius: 3px;
+      overflow: hidden; text-decoration: none; color: var(--text);
+      display: flex; flex-direction: column;
+      background: var(--surface);
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .section.alt .res-card { background: var(--bg); }
+    .res-card:hover { box-shadow: 0 6px 24px rgba(26,43,74,0.1); border-color: #b5c5d8; }
+    .res-head {
+      background: var(--primary); padding: 1.2rem 1.5rem;
+    }
+    .res-year {
+      font-size: 0.62rem; font-weight: 800;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: #7ba8d1; margin-bottom: 0.3rem;
+    }
+    .res-head h4 {
+      font-family: var(--serif); font-size: 1.05rem;
+      font-weight: 600; color: #fff; line-height: 1.25;
+    }
+    .res-body { padding: 1.3rem 1.5rem; flex: 1; display: flex; flex-direction: column; }
+    .res-artists { margin-bottom: 0.9rem; }
+    .res-artist {
+      display: flex; align-items: baseline; gap: 0.5rem;
+      font-size: 0.85rem; padding: 0.4rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .res-artist:last-child { border-bottom: none; }
+    .res-artist-name { font-weight: 600; color: var(--primary); }
+    .res-artist-from { font-size: 0.75rem; color: var(--muted); }
+    .res-body p { font-size: 0.85rem; color: var(--muted); line-height: 1.65; margin-bottom: 0.9rem; }
+    .res-link {
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      text-decoration: none; margin-top: auto;
+    }
+    .res-link:hover { text-decoration: underline; }
+
+    /* ── TUTORIALS ── */
+    .tut-list { display: flex; flex-direction: column; }
+    .tut-item {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.9rem 0; border-bottom: 1px solid var(--border);
+      text-decoration: none; color: var(--text);
+      transition: color 0.15s;
+    }
+    .tut-item:first-child { border-top: 1px solid var(--border); }
+    .tut-item:hover { color: var(--accent); }
+    .tut-item:hover .tut-arr { transform: translateX(4px); }
+    .tut-n { font-size: 0.72rem; color: var(--border); width: 22px; flex-shrink: 0; text-align: right; font-family: var(--serif); font-size: 1rem; }
+    .tut-title { font-size: 0.9rem; flex: 1; }
+    .tut-arr { font-size: 0.85rem; color: var(--accent); transition: transform 0.15s; }
+
+    /* ── RESOURCE OVERVIEW ── */
+    .res-overview {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      border: 1px solid var(--border); border-radius: 3px; overflow: hidden;
+    }
+    .rov-item {
+      display: flex; align-items: flex-start; gap: 1.1rem;
+      padding: 1.3rem 1.4rem; text-decoration: none; color: var(--text);
+      background: var(--surface); border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    .rov-item:hover { background: var(--accent-lt); }
+    .rov-num {
+      font-family: var(--serif); font-size: 1.6rem;
+      font-weight: 300; color: var(--border); line-height: 1; flex-shrink: 0;
+    }
+    .rov-text strong { display: block; font-size: 0.9rem; color: var(--primary); font-weight: 600; }
+    .rov-text span { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+
+    /* ── ABOUT DARK STRIP ── */
+    .about-strip { text-align: center; }
+    .about-strip h2 {
+      font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 400; margin-bottom: 1rem;
+    }
+    .about-strip p {
+      font-size: 0.97rem; color: #c2d4e8;
+      line-height: 1.8; margin-bottom: 2rem; max-width: 640px; margin-left: auto; margin-right: auto;
+    }
+    .about-strip .btn-outline { border-color: #4e6e91; }
+
+    /* ── FOOTER ── */
+    footer { background: #0b1624; color: #6a8aaa; padding: 2.5rem 2rem; }
+    .foot-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: flex-end;
+      flex-wrap: wrap; gap: 1.5rem;
+    }
+    .foot-brand strong { color: #fff; font-size: 1rem; }
+    .foot-brand p { font-size: 0.83rem; line-height: 1.7; margin-top: 0.3rem; }
+    .foot-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; }
+    .foot-links a { color: #5a88b5; text-decoration: none; font-size: 0.8rem; transition: color 0.2s; }
+    .foot-links a:hover { color: #fff; }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════ */
+    @media (max-width: 600px) {
+      .hero { padding: 3.5rem 1.5rem 4.5rem; }
+      .section { padding: 3rem 1.5rem; }
+      .about-strip p { margin-bottom: 1.5rem; }
+    }
+  </style>
+</head>
+
+<body class="lang-de">
+
+<!-- ════ LANG BAR ════ -->
+<div class="lang-bar">
+  <div class="lang-bar-inner">
+    <button class="lang-btn active" id="btn-de" onclick="setLang('de')">DE</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+  </div>
+</div>
+
+<!-- ════ HEADER ════ -->
+<header>
+  <div class="header-inner">
+    <a class="header-brand" href="https://ambisonics.ch/">
+      <img class="brand-logo" src="static/images/AmbiPlugin_logo.gif"
+           alt="ICST Ambisonics Logo" onerror="this.style.display='none'"/>
+      <div class="brand-text">
+        <div class="inst">ICST · ZHdK Zürich</div>
+        <div class="name">ICST Ambisonics</div>
+      </div>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="https://ambisonics.ch/" class="active" data-lang="de">Home</a>
+      <a href="https://ambisonics.ch/" class="active" data-lang="en">Home</a>
+      <a href="https://ambisonics.ch/icst-ambisonics-plugins/" data-lang="de">Plugin Docs</a>
+      <a href="https://ambisonics.ch/icst-ambisonics-plugins/" data-lang="en">Plugin Docs</a>
+      <a href="https://ambisonics.ch/icst-ambisonics-tools/" data-lang="de">Ambi Tools</a>
+      <a href="https://ambisonics.ch/icst-ambisonics-tools/" data-lang="en">Ambi Tools</a>
+      <a href="https://ambisonics.ch/post/" data-lang="de">Tutorials</a>
+      <a href="https://ambisonics.ch/post/" data-lang="en">Tutorials</a>
+      <a href="https://ambisonics.ch/blog/ascolta/" data-lang="de">Ascolta</a>
+      <a href="https://ambisonics.ch/blog/ascolta/" data-lang="en">Ascolta</a>
+      <a href="https://ambisonics.ch/residenzen/" data-lang="de">Residenzen</a>
+      <a href="https://ambisonics.ch/residenzen/" data-lang="en">Residencies</a>
+      <a href="https://ambisonics.ch/blog/" data-lang="de">Studio</a>
+      <a href="https://ambisonics.ch/blog/" data-lang="en">Studio</a>
+      <a href="https://ambisonics.ch/about/" data-lang="de">About</a>
+      <a href="https://ambisonics.ch/about/" data-lang="en">About</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu öffnen" onclick="toggleMobile()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ════ MOBILE NAV DRAWER ════ -->
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-overlay" onclick="closeMobile()"></div>
+  <div class="mobile-drawer">
+    <button class="close-btn" onclick="closeMobile()">✕</button>
+    <a href="https://ambisonics.ch/" data-lang="de">Home</a>
+    <a href="https://ambisonics.ch/" data-lang="en">Home</a>
+    <a href="https://ambisonics.ch/icst-ambisonics-plugins/">Plugin Docs</a>
+    <a href="https://ambisonics.ch/icst-ambisonics-tools/" data-lang="de">Ambi Tools</a>
+    <a href="https://ambisonics.ch/icst-ambisonics-tools/" data-lang="en">Ambi Tools</a>
+    <a href="https://ambisonics.ch/post/" data-lang="de">Tutorials</a>
+    <a href="https://ambisonics.ch/post/" data-lang="en">Tutorials</a>
+    <a href="https://ambisonics.ch/blog/ascolta/">Ascolta</a>
+    <a href="https://ambisonics.ch/residenzen/" data-lang="de">Residenzen</a>
+    <a href="https://ambisonics.ch/residenzen/" data-lang="en">Residencies</a>
+    <a href="https://ambisonics.ch/blog/" data-lang="de">Studio Blog</a>
+    <a href="https://ambisonics.ch/blog/" data-lang="en">Studio Blog</a>
+    <a href="https://ambisonics.ch/about/" data-lang="de">About</a>
+    <a href="https://ambisonics.ch/about/" data-lang="en">About</a>
+    <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank">↓ Download</a>
+    <div class="lang-row">
+      <button id="m-btn-de" class="active" onclick="setLang('de')">DE</button>
+      <button id="m-btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</div>
+
+<!-- ════ HERO ════ -->
+<section class="hero" id="top">
+  <canvas id="ambi-canvas" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <span class="hero-badge" data-lang="de">Open-Source · Free · B-Format Standard</span>
+    <span class="hero-badge" data-lang="en">Open-Source · Free · B-Format Standard</span>
+
+    <h1 data-lang="de">Räumliches Audio für Komponisten,<br/>Forscher und Sounddesigner</h1>
+    <h1 data-lang="en">Spatial Audio for Composers,<br/>Researchers and Sound Designers</h1>
+
+    <p data-lang="de">Das ICST Ambisonics-Projekt der Zürcher Hochschule der Künste bietet professionelle,
+       kostenlose Werkzeuge für 3D-Klangraumproduktion — als Plugins für REAPER
+       und als Externals für Max/MSP.</p>
+    <p data-lang="en">The ICST Ambisonics project at the Zurich University of the Arts offers professional,
+       free tools for 3D spatial audio production — as plugins for REAPER
+       and as externals for Max/MSP.</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary"
+         href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases"
+         target="_blank" rel="noopener" data-lang="de">↓ Plugins herunterladen</a>
+      <a class="btn btn-primary"
+         href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases"
+         target="_blank" rel="noopener" data-lang="en">↓ Download Plugins</a>
+      <a class="btn btn-outline"
+         href="https://ambisonics.ch/icst-ambisonics-plugins/" data-lang="de">Dokumentation →</a>
+      <a class="btn btn-outline"
+         href="https://ambisonics.ch/icst-ambisonics-plugins/" data-lang="en">Documentation →</a>
+    </div>
+  </div>
+  <div class="hero-scroll" onclick="document.getElementById('software').scrollIntoView({behavior:'smooth'})"
+       aria-hidden="true">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ════ SOFTWARE ════ -->
+<section class="section" id="software">
+  <div class="wrap">
+
+    <div class="news-banner">
+      <span class="news-tag" data-lang="de">Aktuell v3.1.0</span>
+      <span class="news-tag" data-lang="en">Current v3.1.0</span>
+      <p data-lang="de">ICST Ambisonics Plugins v3.1.0 ist verfügbar – Format-agnostisch, open-source, für REAPER.
+         <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases"
+            target="_blank" rel="noopener">Alle Releases auf GitHub →</a></p>
+      <p data-lang="en">ICST Ambisonics Plugins v3.1.0 is available – format-agnostic, open-source, for REAPER.
+         <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases"
+            target="_blank" rel="noopener">All releases on GitHub →</a></p>
+    </div>
+
+    <div class="sec-header">
+      <div class="sec-label" data-lang="de">Software</div>
+      <div class="sec-label" data-lang="en">Software</div>
+      <h2 class="sec-title" data-lang="de">Unsere Werkzeuge</h2>
+      <h2 class="sec-title" data-lang="en">Our Tools</h2>
+      <p class="sec-sub" data-lang="de">Beide Toolkits basieren auf dem offenen B-Format-Standard und sind kostenlos verfügbar.</p>
+      <p class="sec-sub" data-lang="en">Both toolkits are based on the open B-Format standard and free of charge.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <line x1="9" y1="3" x2="9" y2="21"/>
+            <line x1="15" y1="9" x2="15" y2="21"/>
+            <line x1="3" y1="9" x2="9" y2="9"/>
+          </svg>
+        </div>
+        <h3>ICST Ambisonics Plugins</h3>
+        <span class="badge">REAPER DAW · VST3 / AU / LV2</span>
+        <p data-lang="de">Eine umfassende Plugin-Suite für Ambisonics-Produktion direkt in REAPER.
+           Encoding, Decoding, Rotation und binaurale Wiedergabe — format-agnostisch auf Basis
+           des offenen B-Format-Standards.</p>
+        <p data-lang="en">A comprehensive plugin suite for Ambisonics production in REAPER.
+           Encoding, decoding, rotation, and binaural rendering — format-agnostic, open B-Format standard.</p>
+        <div class="card-links">
+          <a href="https://ambisonics.ch/icst-ambisonics-plugins/" data-lang="de">→ Plugin Dokumentation</a>
+          <a href="https://ambisonics.ch/icst-ambisonics-plugins/" data-lang="en">→ Plugin Documentation</a>
+          <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases"
+             target="_blank" rel="noopener" data-lang="de">↗ GitHub Releases</a>
+          <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases"
+             target="_blank" rel="noopener" data-lang="en">↗ GitHub Releases</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="3" x2="12" y2="8"/>
+            <line x1="12" y1="16" x2="12" y2="21"/>
+            <line x1="3" y1="12" x2="8" y2="12"/>
+            <line x1="16" y1="12" x2="21" y2="12"/>
+          </svg>
+        </div>
+        <h3 data-lang="de">Ambisonics Tools für Max/MSP</h3>
+        <h3 data-lang="en">Ambisonics Tools for Max/MSP</h3>
+        <span class="badge">Max 8 · C-Externals &amp; Patches</span>
+        <p data-lang="de">Externals und Patches für Max/MSP — ideal für experimentelle Kompositionen,
+           Echtzeit-Raumklang und interaktive Installationen. Seit über zwei Jahrzehnten am ICST entwickelt.</p>
+        <p data-lang="en">Externals and patches for Max/MSP — ideal for experimental compositions,
+           real-time spatial audio, and interactive installations. Developed at ICST for over two decades.</p>
+        <div class="card-links">
+          <a href="https://ambisonics.ch/icst-ambisonics-tools/" data-lang="de">→ Tools Dokumentation</a>
+          <a href="https://ambisonics.ch/icst-ambisonics-tools/" data-lang="en">→ Tools Documentation</a>
+          <a href="https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385"
+             target="_blank" rel="noopener" data-lang="de">↗ Download an der ZHdK</a>
+          <a href="https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385"
+             target="_blank" rel="noopener" data-lang="en">↗ Download at ZHdK</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ BLOG PREVIEW ════ -->
+<section class="section alt" id="blog">
+  <div class="wrap">
+    <div class="sec-header">
+      <div class="sec-label" data-lang="de">Studio Blog</div>
+      <div class="sec-label" data-lang="en">Studio Blog</div>
+      <h2 class="sec-title" data-lang="de">Aktuelles aus dem Studio</h2>
+      <h2 class="sec-title" data-lang="en">Latest from the Studio</h2>
+    </div>
+    <div class="blog-grid">
+
+      <a class="blog-card" href="https://ambisonics.ch/blog/">
+        <span class="blog-tag" data-lang="de">Studio</span>
+        <span class="blog-tag" data-lang="en">Studio</span>
+        <h4 data-lang="de">ICST Kompositionsstudio – Fotogalerie</h4>
+        <h4 data-lang="en">ICST Composition Studio – Photo Gallery</h4>
+        <p data-lang="de">Ein Blick in das Kompositionsstudio der ZHdK — Aufnahmen des Ambisonics Speaker-Setups
+           und der Arbeitsumgebung.</p>
+        <p data-lang="en">A look inside the ZHdK Composition Studio — photos of the Ambisonics speaker setup
+           and working environment.</p>
+        <span class="blog-date">Juni 2025</span>
+        <span class="blog-read" data-lang="de">Galerie ansehen →</span>
+        <span class="blog-read" data-lang="en">View Gallery →</span>
+      </a>
+
+      <a class="blog-card" href="https://ambisonics.ch/blog/">
+        <span class="blog-tag" data-lang="de">Ressourcen</span>
+        <span class="blog-tag" data-lang="en">Resources</span>
+        <h4 data-lang="de">Ambisonics Audio online entdecken</h4>
+        <h4 data-lang="en">Explore Ambisonics Audio Online</h4>
+        <p data-lang="de">Links zu öffentlichen Ambisonics-Audiotheken: sounding FUTURE, HOAST Library,
+           Nimbus UHJ und weitere Online-Quellen für räumliches Audio.</p>
+        <p data-lang="en">Links to public Ambisonics audio libraries: sounding FUTURE, HOAST Library,
+           Nimbus UHJ and more online resources for spatial audio.</p>
+        <span class="blog-date">Juni 2025</span>
+        <span class="blog-read" data-lang="de">Ressourcen entdecken →</span>
+        <span class="blog-read" data-lang="en">Discover Resources →</span>
+      </a>
+
+      <a class="blog-card" href="https://ambisonics.ch/blog/">
+        <span class="blog-tag" data-lang="de">Setup</span>
+        <span class="blog-tag" data-lang="en">Setup</span>
+        <h4 data-lang="de">Kompositionsstudio – Ambisonics Speaker-Setting</h4>
+        <h4 data-lang="en">Composition Studio – Ambisonics Speaker Setting</h4>
+        <p data-lang="de">Dokumentation des Speaker-Setups im ICST Studio: Koordinaten, Decoder-Konfiguration
+           für ICST AmbiDecoder 3.1.0 im 7×7×7m Raum.</p>
+        <p data-lang="en">Documentation of the speaker setup at ICST Studio: coordinates, decoder configuration
+           for ICST AmbiDecoder 3.1.0 in the 7×7×7m room.</p>
+        <span class="blog-date">Juni 2025</span>
+        <span class="blog-read" data-lang="de">Mehr lesen →</span>
+        <span class="blog-read" data-lang="en">Read more →</span>
+      </a>
+
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a class="btn btn-primary btn-sm" href="https://ambisonics.ch/blog/" data-lang="de">Alle Studio-Beiträge</a>
+      <a class="btn btn-primary btn-sm" href="https://ambisonics.ch/blog/" data-lang="en">All Studio Posts</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ ASCOLTA ════ -->
+<section class="section" id="ascolta">
+  <div class="wrap">
+    <div class="sec-header">
+      <div class="sec-label" data-lang="de">Veranstaltungen</div>
+      <div class="sec-label" data-lang="en">Events</div>
+      <h2 class="sec-title" data-lang="de">ICST Ascolta – Akusmatische Hörstunden</h2>
+      <h2 class="sec-title" data-lang="en">ICST Ascolta – Acousmatic Listening Sessions</h2>
+    </div>
+    <div class="ascolta-grid">
+      <div class="ascolta-info">
+        <h3 data-lang="de">Öffentliche Konzerte im Kompositionsstudio</h3>
+        <h3 data-lang="en">Public Concerts at the Composition Studio</h3>
+        <p data-lang="de">ICST Ascolta präsentiert akusmatische Musik im Kompositionsstudio der ZHdK.
+           Komponist*innen stellen ihre räumlichen Werke im professionellen Ambisonics-Umfeld vor.
+           Alle Veranstaltungen sind kostenlos.</p>
+        <p data-lang="en">ICST Ascolta presents acousmatic music at the ZHdK Composition Studio.
+           Composers present their spatial works in a professional Ambisonics environment.
+           All events are free of charge.</p>
+        <address>
+          <strong data-lang="de">Ort:</strong>
+          <strong data-lang="en">Venue:</strong><br/>
+          Toni-Areal · Kompositionsstudio 3.D02, Level 3<br/>
+          Pfingstweidstrasse 96 · 8005 Zürich
+        </address>
+        <span class="free-badge" data-lang="de">Freier Eintritt</span>
+        <span class="free-badge" data-lang="en">Free Admission</span>
+        <br/><br/>
+        <a class="all-link" href="https://ambisonics.ch/blog/ascolta/"
+           data-lang="de">Alle Ascolta-Konzerte ansehen →</a>
+        <a class="all-link" href="https://ambisonics.ch/blog/ascolta/"
+           data-lang="en">View all Ascolta Concerts →</a>
+      </div>
+
+      <div>
+        <div class="dates-label" data-lang="de">Nächste Termine 2026</div>
+        <div class="dates-label" data-lang="en">Upcoming Dates 2026</div>
+
+        <div class="date-item">
+          <div class="date-box">
+            <div class="d">02</div>
+            <div class="m" data-lang="de">Apr</div>
+            <div class="m" data-lang="en">Apr</div>
+          </div>
+          <div class="date-meta">
+            <strong data-lang="de">Donnerstag, 2. April 2026</strong>
+            <strong data-lang="en">Thursday, 2 April 2026</strong>
+            <span>18:00 – 19:00 Uhr</span>
+          </div>
+        </div>
+
+        <div class="date-item">
+          <div class="date-box">
+            <div class="d">21</div>
+            <div class="m" data-lang="de">Mai</div>
+            <div class="m" data-lang="en">May</div>
+          </div>
+          <div class="date-meta">
+            <strong data-lang="de">Donnerstag, 21. Mai 2026</strong>
+            <strong data-lang="en">Thursday, 21 May 2026</strong>
+            <span>18:00 – 19:00 Uhr</span>
+          </div>
+        </div>
+
+        <br/>
+        <a class="all-link" href="https://ambisonics.ch/blog/ascolta/17-ascolta/"
+           data-lang="de">→ Details &amp; alle Termine</a>
+        <a class="all-link" href="https://ambisonics.ch/blog/ascolta/17-ascolta/"
+           data-lang="en">→ Details &amp; all Dates</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ RESIDENZEN ════ -->
+<section class="section alt" id="residenzen">
+  <div class="wrap">
+    <div class="sec-header">
+      <div class="sec-label" data-lang="de">Composer in Residence</div>
+      <div class="sec-label" data-lang="en">Composer in Residence</div>
+      <h2 class="sec-title" data-lang="de">ICST Studio Residenzen</h2>
+      <h2 class="sec-title" data-lang="en">ICST Studio Residencies</h2>
+      <p class="sec-sub" data-lang="de">Internationale Künstler*innen entwickeln ihre 3D-Audioarbeiten im ICST Kompositionsstudio.</p>
+      <p class="sec-sub" data-lang="en">International artists develop their 3D audio works at the ICST Composition Studio.</p>
+    </div>
+
+    <div class="res-grid">
+
+      <!-- 2026 -->
+      <a class="res-card" href="https://ambisonics.ch/residenzen/icst-studio-residences-2026/">
+        <div class="res-head">
+          <div class="res-year" data-lang="de">Aktuell · 2026</div>
+          <div class="res-year" data-lang="en">Current · 2026</div>
+          <h4 data-lang="de">ICST Studio Residenzen 2026</h4>
+          <h4 data-lang="en">ICST Studio Residencies 2026</h4>
+        </div>
+        <div class="res-body">
+          <div class="res-artists">
+            <div class="res-artist">
+              <span class="res-artist-name">Pierre Alexandre Tremblay</span>
+              <span class="res-artist-from" data-lang="de">Montréal</span>
+              <span class="res-artist-from" data-lang="en">Montréal</span>
+            </div>
+            <div class="res-artist">
+              <span class="res-artist-name">Yoko Konishi</span>
+              <span class="res-artist-from" data-lang="de">Frankreich / Japan</span>
+              <span class="res-artist-from" data-lang="en">France / Japan</span>
+            </div>
+          </div>
+          <p data-lang="de">Bassist, Komponist und Performer sowie Klangkünstlerin mit IRCAM Cursus —
+             beide schaffen neue Werke für das Sonic Matter Festival und weitere Aufführungen.</p>
+          <p data-lang="en">Bassist, composer &amp; performer and spatial sound artist with IRCAM Cursus —
+             both creating new works for the Sonic Matter Festival and further performances.</p>
+          <span class="res-link" data-lang="de">Details ansehen →</span>
+          <span class="res-link" data-lang="en">View details →</span>
+        </div>
+      </a>
+
+      <!-- 2025 -->
+      <a class="res-card" href="https://ambisonics.ch/residenzen/icst-studio-residences-2025/">
+        <div class="res-head" style="background: var(--primary2);">
+          <div class="res-year">2025</div>
+          <h4 data-lang="de">ICST Studio Residenzen 2025</h4>
+          <h4 data-lang="en">ICST Studio Residencies 2025</h4>
+        </div>
+        <div class="res-body">
+          <div class="res-artists">
+            <div class="res-artist">
+              <span class="res-artist-name">Nandele Maguni</span>
+              <span class="res-artist-from" data-lang="de">Maputo</span>
+              <span class="res-artist-from" data-lang="en">Maputo</span>
+            </div>
+            <div class="res-artist">
+              <span class="res-artist-name">Youngjae Cho</span>
+              <span class="res-artist-from" data-lang="de">Korea / Deutschland</span>
+              <span class="res-artist-from" data-lang="en">Korea / Germany</span>
+            </div>
+            <div class="res-artist">
+              <span class="res-artist-name">Dániel Péter Biró</span>
+              <span class="res-artist-from" data-lang="de">Bergen</span>
+              <span class="res-artist-from" data-lang="en">Bergen</span>
+            </div>
+          </div>
+          <p data-lang="de">Field Recordings aus Maputo, elektroakustische Komposition und
+             Klanggphilosophie — drei internationale Perspektiven auf räumliches Audio.</p>
+          <p data-lang="en">Field recordings from Maputo, electroacoustic composition and
+             sound philosophy — three international perspectives on spatial audio.</p>
+          <span class="res-link" data-lang="de">Zur Übersicht →</span>
+          <span class="res-link" data-lang="en">View overview →</span>
+        </div>
+      </a>
+
+      <!-- Programme -->
+      <a class="res-card"
+         href="https://www.zhdk.ch/forschung/icst/icst-air/residency-a-icst-studio-20727"
+         target="_blank" rel="noopener">
+        <div class="res-head" style="background:#1e3a5f;">
+          <div class="res-year" data-lang="de">Bewerbung</div>
+          <div class="res-year" data-lang="en">Application</div>
+          <h4 data-lang="de">Residency A: ICST Studio</h4>
+          <h4 data-lang="en">Residency A: ICST Studio</h4>
+        </div>
+        <div class="res-body">
+          <p data-lang="de">Informationen zum offiziellen Residenzprogramm der ZHdK —
+             Bewerbungsverfahren, Fristen und Voraussetzungen für internationale Komponist*innen.</p>
+          <p data-lang="en">Information on the official ZHdK residency programme —
+             application process, deadlines and requirements for international composers.</p>
+          <span class="res-link" data-lang="de">Zur ZHdK-Seite ↗</span>
+          <span class="res-link" data-lang="en">Visit ZHdK page ↗</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ TUTORIALS ════ -->
+<section class="section" id="tutorials">
+  <div class="wrap">
+    <div class="sec-header">
+      <div class="sec-label" data-lang="de">Lernmaterial</div>
+      <div class="sec-label" data-lang="en">Learning Resources</div>
+      <h2 class="sec-title" data-lang="de">Tutorials &amp; Anleitungen</h2>
+      <h2 class="sec-title" data-lang="en">Tutorials &amp; Guides</h2>
+      <p class="sec-sub" data-lang="de">Schritt-für-Schritt-Anleitungen für Einsteiger und Fortgeschrittene.</p>
+      <p class="sec-sub" data-lang="en">Step-by-step guides for beginners and advanced users.</p>
+    </div>
+    <div class="tut-list">
+      <a class="tut-item" href="https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/">
+        <span class="tut-n">01</span>
+        <span class="tut-title">ICST AmbiEncoder – OSC Syntax</span>
+        <span class="tut-arr">→</span>
+      </a>
+      <a class="tut-item" href="https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/">
+        <span class="tut-n">02</span>
+        <span class="tut-title" data-lang="de">MaxMSP &amp; ICST AmbiEncoder – Bidirektionale OSC Kommunikation</span>
+        <span class="tut-title" data-lang="en">MaxMSP &amp; ICST AmbiEncoder – Bidirectional OSC Communication</span>
+        <span class="tut-arr">→</span>
+      </a>
+      <a class="tut-item" href="https://ambisonics.ch/post/osc-2-fx/">
+        <span class="tut-n">03</span>
+        <span class="tut-title">ICST AmbiEncoder – OSC to FX Mapping</span>
+        <span class="tut-arr">→</span>
+      </a>
+      <a class="tut-item" href="https://ambisonics.ch/post/icst-grapes/">
+        <span class="tut-n">04</span>
+        <span class="tut-title">ICST AmbiPlugins &amp; Grapes – 3D Control</span>
+        <span class="tut-arr">→</span>
+      </a>
+      <a class="tut-item" href="https://ambisonics.ch/post/ableton_reaper/">
+        <span class="tut-n">05</span>
+        <span class="tut-title" data-lang="de">Ableton Live &amp; ICST Ambisonics Integration</span>
+        <span class="tut-title" data-lang="en">Ableton Live &amp; ICST Ambisonics Integration</span>
+        <span class="tut-arr">→</span>
+      </a>
+      <a class="tut-item" href="https://ambisonics.ch/post/GYROSC/">
+        <span class="tut-n">06</span>
+        <span class="tut-title">ICST AmbiPlugins &amp; GyrOSC</span>
+        <span class="tut-arr">→</span>
+      </a>
+      <a class="tut-item" href="https://ambisonics.ch/post/gp-manipulation/">
+        <span class="tut-n">07</span>
+        <span class="tut-title" data-lang="de">ICST MultiEncoder – Gruppen-Animation</span>
+        <span class="tut-title" data-lang="en">ICST MultiEncoder – Group Animation</span>
+        <span class="tut-arr">→</span>
+      </a>
+      <a class="tut-item" href="https://ambisonics.ch/post/icst-scripts/">
+        <span class="tut-n">08</span>
+        <span class="tut-title">ICST AmbiEncoder – Spiral Walk Script</span>
+        <span class="tut-arr">→</span>
+      </a>
+      <a class="tut-item" href="https://ambisonics.ch/post/Blauertsche_B%C3%A4nder/">
+        <span class="tut-n">09</span>
+        <span class="tut-title">Blauertsche Bänder</span>
+        <span class="tut-arr">→</span>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a class="btn btn-primary btn-sm" href="https://ambisonics.ch/post/" data-lang="de">Alle Tutorials</a>
+      <a class="btn btn-primary btn-sm" href="https://ambisonics.ch/post/" data-lang="en">All Tutorials</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ OVERVIEW ════ -->
+<section class="section alt" id="overview">
+  <div class="wrap">
+    <div class="sec-header">
+      <div class="sec-label" data-lang="de">Übersicht</div>
+      <div class="sec-label" data-lang="en">Overview</div>
+      <h2 class="sec-title" data-lang="de">Alle Inhalte auf einen Blick</h2>
+      <h2 class="sec-title" data-lang="en">All Content at a Glance</h2>
+    </div>
+    <div class="res-overview">
+      <a class="rov-item" href="https://ambisonics.ch/icst-ambisonics-tools/">
+        <span class="rov-num">01</span>
+        <div class="rov-text">
+          <strong data-lang="de">Ambisonics Tools (Max)</strong>
+          <strong data-lang="en">Ambisonics Tools (Max)</strong>
+          <span data-lang="de">C-Externals für tiefe Max/MSP-Integration</span>
+          <span data-lang="en">C-Externals for deep Max/MSP integration</span>
+        </div>
+      </a>
+      <a class="rov-item" href="https://ambisonics.ch/icst-ambisonics-plugins/">
+        <span class="rov-num">02</span>
+        <div class="rov-text">
+          <strong>Ambisonics Plugins</strong>
+          <span data-lang="de">REAPER VST3/AU/LV2 für räumliches Audio</span>
+          <span data-lang="en">REAPER VST3/AU/LV2 for spatial audio</span>
+        </div>
+      </a>
+      <a class="rov-item" href="https://ambisonics.ch/post/">
+        <span class="rov-num">03</span>
+        <div class="rov-text">
+          <strong>Tutorials</strong>
+          <span data-lang="de">9 Anleitungen, OSC, Max, Live-Integration</span>
+          <span data-lang="en">9 guides: OSC, Max, Live integration</span>
+        </div>
+      </a>
+      <a class="rov-item" href="https://ambisonics.ch/blog/ascolta/">
+        <span class="rov-num">04</span>
+        <div class="rov-text">
+          <strong>ICST Ascolta</strong>
+          <span data-lang="de">Akusmatische Hörstunden · freier Eintritt</span>
+          <span data-lang="en">Acousmatic listening sessions · free</span>
+        </div>
+      </a>
+      <a class="rov-item" href="https://ambisonics.ch/residenzen/">
+        <span class="rov-num">05</span>
+        <div class="rov-text">
+          <strong data-lang="de">Studio Residenzen</strong>
+          <strong data-lang="en">Studio Residencies</strong>
+          <span data-lang="de">Internationale Komponist*innen am ICST</span>
+          <span data-lang="en">International composers at ICST</span>
+        </div>
+      </a>
+      <a class="rov-item" href="https://ambisonics.ch/blog/">
+        <span class="rov-num">06</span>
+        <div class="rov-text">
+          <strong data-lang="de">Studio Blog</strong>
+          <strong data-lang="en">Studio Blog</strong>
+          <span data-lang="de">Forschung, Setup &amp; Praxisberichte</span>
+          <span data-lang="en">Research, setup &amp; practice reports</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ ABOUT STRIP ════ -->
+<section class="section dark about-strip">
+  <div class="wrap-sm">
+    <div class="sec-label" data-lang="de" style="margin-bottom:0.8rem;">ICST · ZHdK Zürich</div>
+    <div class="sec-label" data-lang="en" style="margin-bottom:0.8rem;">ICST · ZHdK Zürich</div>
+    <h2 data-lang="de">Institute for Computer Music<br/>and Sound Technology</h2>
+    <h2 data-lang="en">Institute for Computer Music<br/>and Sound Technology</h2>
+    <p data-lang="de">Das ICST ist ein Forschungs- und Lehrbereich an der Zürcher Hochschule der Künste,
+       der sich der Weiterentwicklung von Technologie für Musik, Klangkunst und Medienproduktion
+       widmet. Alle Werkzeuge sind open-source und kostenlos verfügbar.</p>
+    <p data-lang="en">ICST is a research and educational center at the Zurich University of the Arts,
+       dedicated to advancing technology for music, sound art, and media production.
+       All tools are open-source and freely available.</p>
+    <a class="btn btn-outline" href="https://ambisonics.ch/about/" data-lang="de">Über das ICST →</a>
+    <a class="btn btn-outline" href="https://ambisonics.ch/about/" data-lang="en">About ICST →</a>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <strong>ICST Ambisonics</strong>
+      <p data-lang="de">Institute for Computer Music and Sound Technology<br/>
+         Zürcher Hochschule der Künste (ZHdK) · © 2026 ICST</p>
+      <p data-lang="en">Institute for Computer Music and Sound Technology<br/>
+         Zurich University of the Arts (ZHdK) · © 2026 ICST</p>
+    </div>
+    <div class="foot-links">
+      <a href="https://www.zhdk.ch/forschung/icst" target="_blank" rel="noopener">ZHdK / ICST</a>
+      <a href="https://github.com/joambi" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://ambisonics.ch/links/" data-lang="de">Links</a>
+      <a href="https://ambisonics.ch/links/" data-lang="en">Links</a>
+      <a href="https://ambisonics.ch/about/" data-lang="de">Impressum</a>
+      <a href="https://ambisonics.ch/about/" data-lang="en">Imprint</a>
+      <a href="https://www.iubenda.com/privacy-policy/70769495/full-legal"
+         target="_blank" rel="noopener" data-lang="de">Datenschutz</a>
+      <a href="https://www.iubenda.com/privacy-policy/70769495/full-legal"
+         target="_blank" rel="noopener" data-lang="en">Privacy Policy</a>
+      <a href="mailto:johannes.schuett@zhdk.ch" data-lang="de">Kontakt</a>
+      <a href="mailto:johannes.schuett@zhdk.ch" data-lang="en">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ════ SCRIPTS ════ -->
+<script>
+/* ── Language switching ── */
+function setLang(lang) {
+  document.body.className = 'lang-' + lang;
+  ['btn-de','btn-en'].forEach(id => {
+    var btn = document.getElementById(id);
+    if (btn) btn.classList.toggle('active', id === 'btn-' + lang);
+  });
+  ['m-btn-de','m-btn-en'].forEach(id => {
+    var btn = document.getElementById(id);
+    if (btn) btn.classList.toggle('active', id === 'm-btn-' + lang);
+  });
+  document.documentElement.lang = lang;
+  try { localStorage.setItem('icst-lang', lang); } catch(e) {}
+}
+try {
+  if (localStorage.getItem('icst-lang') === 'en') setLang('en');
+} catch(e) {}
+
+/* ── Mobile nav ── */
+function toggleMobile() {
+  document.getElementById('mobile-nav').classList.toggle('open');
+  document.body.style.overflow =
+    document.getElementById('mobile-nav').classList.contains('open') ? 'hidden' : '';
+}
+function closeMobile() {
+  document.getElementById('mobile-nav').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* ── Ambisonics sphere canvas animation ── */
+(function() {
+  var canvas = document.getElementById('ambi-canvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var W, H, cx, cy, t = 0;
+
+  function resize() {
+    W = canvas.width  = canvas.offsetWidth;
+    H = canvas.height = canvas.offsetHeight;
+    cx = W / 2; cy = H / 2;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    var R = Math.min(W, H) * 0.38;
+
+    /* Outer glow */
+    var grd = ctx.createRadialGradient(cx, cy, R * 0.6, cx, cy, R * 1.1);
+    grd.addColorStop(0, 'rgba(61,107,158,0.12)');
+    grd.addColorStop(1, 'rgba(61,107,158,0)');
+    ctx.fillStyle = grd;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R * 1.1, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.strokeStyle = 'rgba(120,170,220,0.55)';
+    ctx.lineWidth = 1;
+
+    /* Concentric circles (latitude rings) */
+    var rings = 6;
+    for (var i = 1; i <= rings; i++) {
+      var r = R * (i / rings);
+      var phase = t * (i % 2 === 0 ? 0.4 : -0.3);
+      /* Slight ellipse to suggest 3D rotation */
+      var ry = r * (0.3 + 0.2 * Math.sin(phase));
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, r, ry, 0, 0, Math.PI * 2);
+      ctx.globalAlpha = 0.3 + 0.3 * (i / rings);
+      ctx.stroke();
+    }
+
+    /* Rotating meridian lines */
+    var lines = 8;
+    ctx.globalAlpha = 0.5;
+    for (var j = 0; j < lines; j++) {
+      var angle = (j / lines) * Math.PI + t * 0.18;
+      var x1 = cx + R * Math.cos(angle);
+      var y1 = cy + R * Math.sin(angle) * 0.25;
+      var x2 = cx - R * Math.cos(angle);
+      var y2 = cy - R * Math.sin(angle) * 0.25;
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.bezierCurveTo(cx + R * 0.5 * Math.cos(angle + 1.3), cy - R * 0.5,
+                        cx - R * 0.5 * Math.cos(angle + 1.3), cy - R * 0.5,
+                        x2, y2);
+      ctx.stroke();
+    }
+
+    /* Centre dot */
+    ctx.globalAlpha = 0.7;
+    ctx.fillStyle = 'rgba(100,170,230,0.8)';
+    ctx.beginPath();
+    ctx.arc(cx, cy, 3, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.globalAlpha = 1;
+    t += 0.008;
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+</script>
+
+</body>
+</html>

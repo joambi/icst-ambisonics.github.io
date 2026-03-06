@@ -1,18 +1,54 @@
 {{ define "main" }}
+
+  {{/* Intro text from _index.md */}}
+  {{ with .Content }}
+  <div class="post {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+    <div class="post__content">{{ . }}</div>
+  </div>
+  {{ end }}
+
+  {{ $pages := .Data.Pages.ByWeight }}
+  {{ $groups := slice "Studio" "Residents" "Listening" }}
+
+  {{ range $groups }}
+    {{ $group := . }}
+    {{ $groupPages := where $pages "Params.group" $group }}
+    {{ if $groupPages }}
+
+    <div class="archive {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+      <div class="archive__heading">{{ $group }}</div>
+
+      {{ range $groupPages }}
+        <ul class="archive__list">
+          <li class="archive__list-item">
+            {{ if (eq $.Site.Params.disableArchiveTitleStyling true) }}
+              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+            {{ else }}
+              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+            {{ end }}
+            {{ with .Description }}
+              <div style="font-size: 0.82em; opacity: 0.62; margin-top: 0.1em; font-style: italic;">{{ . }}</div>
+            {{ end }}
+          </li>
+        </ul>
+      {{ end }}
+
+    </div>
+    {{ end }}
+  {{ end }}
+
+  {{/* Fallback: pages without a group */}}
+  {{ $ungrouped := where $pages "Params.group" nil }}
+  {{ if $ungrouped }}
   <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
-    {{ range .Data.Pages.ByWeight }}
+    {{ range $ungrouped }}
       <ul class="archive__list">
         <li class="archive__list-item">
-          {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
-            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
-          {{ else }}
-            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
-          {{ end }}
-          {{ if not .Date.IsZero }}
-          <div class="archive__list-date">{{ .Date.Format "Jan 2" }}</div>
-          {{ end }}
+          <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
         </li>
       </ul>
     {{ end }}
   </div>
+  {{ end }}
+
 {{ end }}

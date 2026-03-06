@@ -4,6 +4,15 @@ title = 'The ICST Ambisonics Site'
 theme = 'anatole'
 enableEmoji = true
 buildFuture = true
+defaultContentLanguage = 'en'
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 2
 
 [params]
 title = "ICST Ambisonics"
@@ -28,9 +37,19 @@ ignoreLogs = ["warning-goldmark-raw-html"]
 
 ## Social links
 [[params.socialIcons]]
+image = "images/zhdk-logo.svg"
+title = "Zurich University of the Arts"
+url = "https://www.zhdk.ch/forschung/icst"
+
+[[params.socialIcons]]
 icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/joambi"
+
+[[params.socialIcons]]
+icon = "fab fa-youtube"
+title = "YouTube"
+url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 
 
 ## Menu items
@@ -43,7 +62,7 @@ url = "https://github.com/joambi"
   url = "#"
 
     [[menu.main]]
-    name = "Plugin Docs"
+    name = "ICST AmbiPlugins Docs"
     parent = "docs"
     weight = 101
     url = "/ICST Ambisonics Plugins/"
@@ -58,25 +77,85 @@ url = "https://github.com/joambi"
   name = "Tutorials"
   identifier = "tutorials"
   weight = 200
-  url = "/post/"
+  url = "#"
+
+    [[menu.main]]
+    name = "Tutorials"
+    parent = "tutorials"
+    weight = 201
+    url = "/post/"
+
+    [[menu.main]]
+    name = "Videos"
+    parent = "tutorials"
+    weight = 202
+    url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 
   [[menu.main]]
   name = "ASCOLTA"
   identifier = "ascolta"
   weight = 250
-  url = "/blog/ascolta/"
+  url = "#"
+
+    [[menu.main]]
+    name = "Upcoming"
+    parent = "ascolta"
+    weight = 251
+    url = "/blog/ascolta/17-ascolta/"
+
+    [[menu.main]]
+    name = "Alle Ascolta"
+    parent = "ascolta"
+    weight = 252
+    url = "/blog/ascolta/"
 
   [[menu.main]]
   name = "Residenzen"
   identifier = "residenzen"
   weight = 300
-  url = "/residenzen/"
+  url = "#"
+
+    [[menu.main]]
+    name = "Residenzen 2025"
+    parent = "residenzen"
+    weight = 301
+    url = "/residenzen/icst-studio-residences-2025/"
+
+    [[menu.main]]
+    name = "Residenzen 2026"
+    parent = "residenzen"
+    weight = 302
+    url = "/residenzen/icst-studio-residences-2026/"
 
   [[menu.main]]
   name = "Studio"
   identifier = "blog"
   weight = 350
-  url = "/blog/"
+  url = "#"
+
+    [[menu.main]]
+    name = "Composition Studio"
+    parent = "blog"
+    weight = 351
+    url = "/blog/icst-composer-studio-blog/"
+
+    [[menu.main]]
+    name = "Pre-Installation"
+    parent = "blog"
+    weight = 352
+    url = "/blog/icst-kompositionsstudio-pre-installation/"
+
+    [[menu.main]]
+    name = "Downloads"
+    parent = "blog"
+    weight = 353
+    url = "/blog/downloads/"
+
+    [[menu.main]]
+    name = "All Studio Pages"
+    parent = "blog"
+    weight = 354
+    url = "/blog/"
 
   [[menu.main]]
   name = "Links"
@@ -87,7 +166,7 @@ url = "https://github.com/joambi"
   [[menu.main]]
   name = "About"
   identifier = "about"
-  weight = 500
+  weight = 50
   url = "/about/"
 
   [[menu.footer]]

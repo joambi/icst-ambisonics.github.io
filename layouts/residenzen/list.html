@@ -1,41 +1,47 @@
 {{ define "main" }}
-  <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+{{ $pinned := where .Data.Pages "Params.hideDate" true }}
+{{ $dated  := where .Data.Pages "Params.hideDate" "!=" true }}
 
-    {{/* Overview page (hideDate: true) shown first, without date */}}
-    {{ range where .Data.Pages "Params.hideDate" true }}
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
-            <a class="archive__list-title archive__list-title--featured" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
-          {{ else }}
-            <a class="archive__list-title archive__list-title--featured" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
-          {{ end }}
-        </li>
-      </ul>
+<div class="post animated fadeInDown">
+  <div class="post__content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</div>
+
+<div class="docs-index animated fadeInDown">
+  <div class="docs-index__chapters">
+
+    {{/* Pinned overview page(s) without number */}}
+    {{ range $pinned }}
+    <a class="docs-index__chapter" href="{{ .RelPermalink }}">
+      <div class="docs-index__chapter-number">
+        <i class="fas fa-info"></i>
+      </div>
+      <div class="docs-index__chapter-info">
+        <div class="docs-index__chapter-title">{{ .Title }}</div>
+        {{ with .Description }}
+          <div class="docs-index__chapter-desc">{{ . }}</div>
+        {{ end }}
+      </div>
+      <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+    </a>
     {{ end }}
 
-    {{/* Remaining pages grouped by year */}}
-    {{ range (where .Data.Pages "Params.hideDate" "!=" true).GroupByDate "2006" }}
-      <div class="archive__heading">{{ .Key }}</div>
-      {{ range .Pages }}
-        <ul class="archive__list">
-          <li class="archive__list-item">
-            {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
-              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
-            {{ else }}
-              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
-            {{ end }}
-            <div class="archive__list-date">
-              {{ if isset .Site.Params "listdateformat" }}
-                {{ .Date.Format .Site.Params.listDateFormat }}
-              {{ else }}
-                {{ .Date.Format "Jan 2" }}
-              {{ end }}
-            </div>
-          </li>
-        </ul>
-      {{ end }}
+    {{/* Remaining pages sorted by date descending (newest first) */}}
+    {{ range $i, $page := $dated.ByDate.Reverse }}
+    <a class="docs-index__chapter" href="{{ $page.RelPermalink }}">
+      <div class="docs-index__chapter-number">{{ add $i 1 }}</div>
+      <div class="docs-index__chapter-info">
+        <div class="docs-index__chapter-title">{{ $page.Title }}</div>
+        {{ with $page.Description }}
+          <div class="docs-index__chapter-desc">{{ . }}</div>
+        {{ end }}
+      </div>
+      <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+    </a>
     {{ end }}
 
   </div>
+</div>
 {{ end }}

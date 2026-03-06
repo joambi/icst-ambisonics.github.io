@@ -1,0 +1,23 @@
+{{- $alertTypes := dict
+  "tip"       (dict "icon" "🔥" "label" "Tip"       "class" "callout--tip")
+  "note"      (dict "icon" "📝" "label" "Note"      "class" "callout--note")
+  "info"      (dict "icon" "ℹ️" "label" "Info"      "class" "callout--info")
+  "warning"   (dict "icon" "⚠️" "label" "Warning"   "class" "callout--warning")
+  "caution"   (dict "icon" "⚠️" "label" "Caution"   "class" "callout--warning")
+  "important" (dict "icon" "❗" "label" "Important" "class" "callout--important")
+  "todo"      (dict "icon" "📋" "label" "To Do"     "class" "callout--todo")
+-}}
+
+{{- if eq .Type "alert" -}}
+  {{- $type := lower .AlertType -}}
+  {{- $meta := index $alertTypes $type | default (dict "icon" "💬" "label" (title $type) "class" "callout--note") -}}
+  <div class="callout {{ $meta.class }}">
+    <div class="callout__header">
+      <span class="callout__icon">{{ $meta.icon }}</span>
+      <span class="callout__label">{{ $meta.label }}</span>
+    </div>
+    <div class="callout__body">{{ .Text | safeHTML }}</div>
+  </div>
+{{- else -}}
+  <blockquote>{{ .Text | safeHTML }}</blockquote>
+{{- end -}}

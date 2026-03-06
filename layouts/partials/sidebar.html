@@ -37,7 +37,11 @@
             aria-label="{{ $item.title }}"
             title="{{ $item.title }}"
           >
-            <i class="{{ $item.icon }} fa-2x" aria-hidden="true"></i>
+            {{ if $item.image }}
+              <img src="{{ $item.image | relURL }}" alt="{{ $item.title }}" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+            {{ else }}
+              <i class="{{ $item.icon }} fa-2x" aria-hidden="true"></i>
+            {{ end }}
           </a>
         </li>
       {{ end }}

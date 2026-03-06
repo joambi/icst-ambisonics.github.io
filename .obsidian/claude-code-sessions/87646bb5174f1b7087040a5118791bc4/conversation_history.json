@@ -1,0 +1,12 @@
+[
+  {
+    "role": "user",
+    "content": "sollten nicht alle JPG (Bilder) im Folder images sein und dorthin verknügft sein?",
+    "timestamp": "2026-03-03T14:02:09.208Z"
+  },
+  {
+    "role": "assistant",
+    "content": "Lass mich zunächst die aktuelle Notiz und die Ordnerstruktur ansehen.\nDiese Notiz enthält keine Bilder oder Bildverknüpfungen – es handelt sich um ein reines Text-Dokument (Datenschutzerklärung + Refund Policy).\n\nSoll ich im Vault nach einer anderen Datei suchen, oder meinst du vielleicht eine andere Notiz oder einen anderen Ordner im Projekt?",
+    "timestamp": "2026-03-03T14:02:09.208Z"
+  }
+]

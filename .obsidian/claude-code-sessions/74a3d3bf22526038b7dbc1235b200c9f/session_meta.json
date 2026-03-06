@@ -1,0 +1,18 @@
+{
+  "sessionName": "_index",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "content/ICST Ambisonics Plugins/_index.md",
+      "title": "_index",
+      "linkedAt": "2026-03-03T16:54:55.873Z",
+      "isPrimary": true
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-03-03T16:54:55.873Z",
+  "createdAt": "2026-03-03T16:54:55.873Z",
+  "messageCount": 1,
+  "notePath": "content/ICST Ambisonics Plugins/_index.md",
+  "noteTitle": "_index"
+}

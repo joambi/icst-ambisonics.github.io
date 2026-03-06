@@ -1,0 +1,20 @@
+{
+  "backend": "claude",
+  "claudeCodePath": "",
+  "autoDetectPath": true,
+  "modelAlias": "",
+  "opencodePath": "",
+  "opencodeAutoDetect": true,
+  "opencodeModel": "",
+  "customSystemPrompt": "",
+  "preserveCursorPosition": true,
+  "timeoutSeconds": 300,
+  "autoAcceptChanges": false,
+  "allowVaultAccess": true,
+  "enablePermissionlessMode": false,
+  "anthropicBaseUrl": "",
+  "anthropicAuthToken": "",
+  "anthropicModel": "",
+  "anthropicSmallFastModel": "",
+  "language": "en"
+}

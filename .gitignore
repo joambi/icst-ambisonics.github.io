@@ -2,3 +2,6 @@ public/
 
 /.quarto/
 .obsidian/workspace.json
+
+# Große Binärdateien
+.obsidian/plugins/mcp-tools/bin/

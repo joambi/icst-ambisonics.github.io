@@ -1,0 +1,18 @@
+{
+  "sessionName": "_index",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "content/Blog/ascolta/_index.md",
+      "title": "_index",
+      "linkedAt": "2026-03-05T12:13:13.297Z",
+      "isPrimary": true
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-03-05T13:14:03.444Z",
+  "createdAt": "2026-03-05T12:13:13.297Z",
+  "messageCount": 9,
+  "notePath": "content/Blog/ascolta/_index.md",
+  "noteTitle": "_index"
+}

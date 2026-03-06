@@ -1,0 +1,48 @@
+{
+  "sessionName": "index",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "content/ICST Ambisonics Plugins/08_icst_decoder/index.md",
+      "title": "index",
+      "linkedAt": "2026-03-04T09:38:59.020Z",
+      "isPrimary": true
+    },
+    {
+      "path": "content/ICST Ambisonics Plugins/08_icst_decoder/index.de.md",
+      "title": "index.de",
+      "linkedAt": "2026-03-05T13:47:30.872Z",
+      "isPrimary": false
+    },
+    {
+      "path": "content/ICST Ambisonics Plugins/10_icst_encoders/index.de.md",
+      "title": "index.de",
+      "linkedAt": "2026-03-05T13:55:08.598Z",
+      "isPrimary": false
+    },
+    {
+      "path": "content/ICST Ambisonics Plugins/11_animator/index.de.md",
+      "title": "index.de",
+      "linkedAt": "2026-03-05T13:55:08.598Z",
+      "isPrimary": false
+    },
+    {
+      "path": "content/ICST Ambisonics Plugins/13_osc/index.de.md",
+      "title": "index.de",
+      "linkedAt": "2026-03-05T13:55:08.606Z",
+      "isPrimary": false
+    },
+    {
+      "path": "content/ICST Ambisonics Plugins/15_best_practices/index.de.md",
+      "title": "index.de",
+      "linkedAt": "2026-03-05T13:55:08.612Z",
+      "isPrimary": false
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-03-05T13:57:15.092Z",
+  "createdAt": "2026-03-04T09:38:59.020Z",
+  "messageCount": 7,
+  "notePath": "content/ICST Ambisonics Plugins/08_icst_decoder/index.md",
+  "noteTitle": "index"
+}

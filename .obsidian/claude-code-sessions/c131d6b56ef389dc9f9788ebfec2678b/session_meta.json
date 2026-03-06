@@ -1,0 +1,36 @@
+{
+  "sessionName": "ICST Studio Residenzen 2026",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "ICST Studio Residenzen 2026.md",
+      "title": "ICST Studio Residenzen 2026",
+      "linkedAt": "2026-03-01T13:20:04.271Z",
+      "isPrimary": true
+    },
+    {
+      "path": "content/Residenzen/ICST Studio Residences 2026/index.md",
+      "title": "index",
+      "linkedAt": "2026-03-01T13:26:44.346Z",
+      "isPrimary": false
+    },
+    {
+      "path": "content/Residenzen/ICST Studio Residences 2025/index.md",
+      "title": "index",
+      "linkedAt": "2026-03-01T13:28:31.130Z",
+      "isPrimary": false
+    },
+    {
+      "path": "content/Blog/ascolta/17-ascolta/index.md",
+      "title": "index",
+      "linkedAt": "2026-03-01T13:37:20.772Z",
+      "isPrimary": false
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-03-03T14:10:02.922Z",
+  "createdAt": "2026-03-01T13:20:04.271Z",
+  "messageCount": 24,
+  "notePath": "ICST Studio Residenzen 2026.md",
+  "noteTitle": "ICST Studio Residenzen 2026"
+}

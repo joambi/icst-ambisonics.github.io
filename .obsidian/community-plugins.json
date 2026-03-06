@@ -15,5 +15,12 @@
   "markitdown",
   "color-folders-files",
   "obsidian-auto-link-title",
-  "chronos"
+  "chronos",
+  "mcp-tools",
+  "obsidian42-brat",
+  "claude-code-integration",
+  "obsidian-local-rest-api",
+  "templater-obsidian",
+  "chatgpt-md",
+  "open-in-terminal"
 ]

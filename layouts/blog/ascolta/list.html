@@ -4,23 +4,8 @@
       {{ .Content }}
     </div>
   </div>
-  <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
-    {{ range .Pages.ByDate.Reverse }}
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
-            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
-          {{ else }}
-            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
-          {{ end }}
-          {{ if not .Date.IsZero }}
-            <div class="archive__list-date">{{ .Date.Format "2 Jan 2006" }}</div>
-          {{ end }}
-        </li>
-      </ul>
-    {{ end }}
-  </div>
+
   <div class="post__content" style="margin-top: 2em; border-top: 1px solid rgba(128,128,128,0.3); padding-top: 1em; font-size: 0.9em; opacity: 0.6;">
-    ©2025 ICST
+    ©2026 ICST
   </div>
 {{ end }}

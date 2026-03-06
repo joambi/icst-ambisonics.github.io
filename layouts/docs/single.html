@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $section := .Parent }}
-{{ $pages := sort $section.RegularPages "Title" }}
+{{ $pages := sort $section.RegularPages "Weight" }}
 
 <div class="docs animated fadeInDown">
 
@@ -8,7 +8,7 @@
   <nav class="docs__nav">
     <div class="docs__nav-title">
       <a href="{{ $section.RelPermalink }}">
-        <i class="fas fa-book"></i> Plugin Docs
+        <i class="fas fa-book"></i> ICST AmbiPlugins Docs
       </a>
     </div>
     <ul class="docs__nav-list">

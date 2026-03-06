@@ -8,118 +8,40 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3a41e2ee78e102ac",
+            "id": "5f55fa415176d02a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "docs/Evernote/icst-kompositionsstudio/Ambisonics Encoder and GyroOSC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Ambisonics Encoder and GyroOSC"
             }
           },
           {
-            "id": "b787e49fed5742d6",
+            "id": "509c158b0a20f2c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Blog/_index.md",
+                "file": "Evernote/ICST Mono-AmbiEncoders/ICST Mono-AmbiEncoders.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "ICST Mono-AmbiEncoders"
             }
           },
           {
-            "id": "be4cebd6ca53c6f8",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "images/Bildschirmfoto 2025-07-08 um 11.48.29.png"
-              },
-              "icon": "lucide-image",
-              "title": "Bildschirmfoto 2025-07-08 um 11.48.29"
-            }
-          },
-          {
-            "id": "29783d4e1938a9fc",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "content/post/Blauertsche_Bänder/Richtungsbänder.png"
-              },
-              "icon": "lucide-image",
-              "title": "Richtungsbänder"
-            }
-          },
-          {
-            "id": "745655d79de5ba45",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "content/post/Blauertsche_Bänder/osc-anbindung.png"
-              },
-              "icon": "lucide-image",
-              "title": "osc-anbindung"
-            }
-          },
-          {
-            "id": "870cd185a90d2892",
+            "id": "992ec39b645be909",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/About/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "e03bde39c086c207",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Blog/Péter Biró Dániel/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "7f4dacc8a4bebee0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/post/OSC-Max-Group-Manipulation-in-AmbiEncoder/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "378a4e7505ca44e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Blog/ascolta/index.md",
+                "file": "content/ICST Ambisonics Plugins/08_icst_decoder/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -128,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -160,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ".gif",
+                "query": "Encoder",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -168,7 +90,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Suchen"
             }
           },
           {
@@ -185,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 604.5
+    "width": 282.5
   },
   "right": {
     "id": "bfdd1d5de593f550",
@@ -267,16 +189,27 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "3a7c1c4e2012a87e",
+            "type": "leaf",
+            "state": {
+              "type": "claude-code-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claude Code"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 385.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "image-preview-on-icon-hover:1772717919603": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -284,64 +217,66 @@
       "templates:Vorlage einfügen": false,
       "command-palette:Befehlspalette öffnen": false,
       "bases:Neue Base erstellen": false,
-      "image-preview-on-icon-hover:1772357222862": false,
       "obsidian-importer:Open Importer": false,
       "github-sync:Sync with Remote": false,
       "obsidian-git:Open Git source control": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
       "DEVONlink-obsidian:DEVONlink": false,
-      "markitdown:Convert to Markdown with Markitdown": false
+      "markitdown:Convert to Markdown": false,
+      "obsidian42-brat:BRAT": false,
+      "claude-code-integration:Open Claude Code": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "378a4e7505ca44e0",
+  "active": "3a7c1c4e2012a87e",
   "lastOpenFiles": [
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/FX_Decoder.png",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/MultiEncoder_routing.png",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/open_decoder.gif",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/play_GP.gif",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/play_multienc.gif",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/record_movement.gif",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/render_info.png",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/render-master.png",
-    "content/ICST Ambisonics Plugins/06_step_by_step_setup/speaker_test.png",
-    "content/ICST Ambisonics Plugins/00_new/Track_temp_icst.png",
-    "content/ICST Ambisonics Plugins/00_new/Track_temp_3rd.png",
-    "content/post/Blauertsche_Bänder/index.md",
-    "content/post/circle_selected/index.md",
-    "content/post/ableton_reaper/index.md",
-    "content/Blog/16-ascolta/index.md",
-    "content/post/circle_selected",
-    "content/Blog/ICST Studio Residences/index.md",
-    "content/Blog/ICST Studio Residences/ICST AiR Dates.md",
-    "content/Blog/ICST Composer Studio Blog/index.md",
-    "content/Blog/ICST Composer Studio Overview/index.md",
-    "content/Blog/14-ascolta/index.md",
-    "content/Blog/15-ascolta/index.md",
-    "content/Blog/ascolta/index.md",
-    "content/ICST Ambisonics Plugins/00_new/index.md",
-    "content/ICST Ambisonics Tools/index.md",
-    "content/ICST Ambisonics Tools/index_2.md",
-    "public/icst-ambisonics-plugins/00_new/index.html",
-    "public/icst-ambisonics-plugins/00_new",
-    "public/blog/16-ascolta/index.html",
-    "public/blog/16-ascolta",
-    "README.md",
-    "polices.md",
-    "notes.md",
-    "archetypes/default.md",
-    "new.md",
-    "decoder-speaker-settings.md",
-    "00_new.md",
-    "[Dateien.md",
-    "archetypes/post.md",
-    "Clippings/ADM-OSC.md",
+    "public/de/icst-ambisonics-plugins/15_best_practices/index.html",
+    "public/de/icst-ambisonics-plugins/15_best_practices",
+    "public/de/icst-ambisonics-plugins/13_osc/index.html",
+    "public/de/icst-ambisonics-plugins/13_osc",
+    "content/ICST Ambisonics Plugins/15_best_practices/index.de.md",
+    "content/ICST Ambisonics Plugins/13_osc/index.de.md",
+    "public/de/icst-ambisonics-plugins/11_animator/index.html",
+    "public/de/icst-ambisonics-plugins/11_animator",
+    "public/de/icst-ambisonics-plugins/10_icst_encoders/index.html",
+    "public/de/icst-ambisonics-plugins/10_icst_encoders",
+    "content/ICST Ambisonics Plugins/11_animator/index.de.md",
+    "content/ICST Ambisonics Plugins/10_icst_encoders/index.de.md",
+    "public/de/icst-ambisonics-plugins/08_icst_decoder/index.html",
+    "public/de/icst-ambisonics-plugins/08_icst_decoder",
+    "content/ICST Ambisonics Plugins/08_icst_decoder/index.de.md",
+    "Decodierung.md",
+    "ICST Studio Residenzen 2026.md",
+    "multi-decoder-mode.md",
+    "content/Blog/ascolta/_index.md",
+    "content/Blog/ascolta/_index.de.md",
+    "blog/ascolta/17-ascolta.md",
+    "blog/ascolta",
     "content/HOME/index.md",
-    "content/Blog/16-ascolta",
-    "public/blog/ana-gonzalez-gamboa/index.html",
-    "public/blog/ana-gonzalez-gamboa",
-    "content/Blog/Ana Gonzalez Gamboa",
-    "public/icst-ambisonics-plugins/08_downloads/index.html",
+    "public/de/residenzen/icst-studio-residences-2025/GOPR4281.jpg",
+    "public/de/residenzen/icst-studio-residences-2025/Lucas_Daniel.jpg",
+    "public/de/residenzen/icst-studio-residences-2025/Youngjae_Cho.jpg",
+    "public/de/residenzen/icst-studio-residences-2025/nandele_01.png",
+    "public/de/residenzen/icst-studio-residences-2026/monoc-small.jpg",
+    "public/de/residenzen/icst-studio-residences-2026/monoc-small-2.jpg",
+    "public/de/residenzen/icst-studio-residences-2026/monoc-small-1.jpg",
+    "content/post/Blauertsche_Bänder/Back.png",
+    "content/post/Blauertsche_Bänder/Front.png",
+    "content/post/Blauertsche_Bänder/8000hz.png",
+    "content/HOME/index.de.md",
+    "content/ICST Ambisonics Plugins/11_animator/index.md",
+    "content/Blog/ICST Composer Studio Overview/index.md",
+    "content/Blog/ICST Composer Studio Blog/index.md",
+    "content/Residenzen/ICST Studio Residences 2026/index.md",
+    "content/ICST Ambisonics Plugins/00_new/index.md",
+    "content/ICST.md",
+    "post/multi-decoder-mode.md",
+    "CLAUDE.md",
+    "content/pages/ICST Decoder.md",
+    "content/ICST Ambisonics Plugins/01_overview/index.de.md",
+    "content/ICST Ambisonics Plugins/01_overview/index.md",
+    "content/ICST Ambisonics Plugins/_index.md",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",

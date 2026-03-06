@@ -1,0 +1,22 @@
+[
+  {
+    "role": "user",
+    "content": "kannst du im text nach Redundanzen suchen",
+    "timestamp": "2026-03-03T13:54:23.060Z"
+  },
+  {
+    "role": "assistant",
+    "content": "Hier sind die Redundanzen, die ich im Text gefunden habe:\n\n---\n\n### 1. Doppeltes \"What's New\"\n- **Zeile 2** (Frontmatter-Titel): `title: What's New`\n- **Zeile 17** (Überschrift): `# **What's New in v3.2?**`\n\nDer Seitentitel und die Abschnittsüberschrift transportieren dieselbe Information.\n\n---\n\n### 2. \"ICST Ambisonics Plugins v3.2\" dreifach\n- **Zeile 9:** `# ICST Ambisonics Plugins v3.2`\n- **Zeile 17:** `# **What's New in v3.2?**`\n- **Zeile 19:** `We're pleased to announce **ICST Ambisonics Plugins v3.2**`\n\nInnerhalb weniger Zeilen wird der Name + Version dreimal wiederholt.\n\n---\n\n### 3. Wiki-Link identisch formuliert (zweimal)\n- **Zeile 65:** `💡 For more details, visit the [Wiki](...)`\n- **Zeile 106:** `💡 For more details, visit the [Wiki](...)`\n\nDieselbe Formulierung taucht am Ende des AmbiDecoder- und AmbiEncoder-Abschnitts auf (die Links selbst zeigen auf unterschiedliche Seiten, aber der Satz ist identisch).\n\n---\n\n### 4. \"Bidirectional Solo & Mute\" in beiden Plugins erwähnt\n- **Zeile 29:** eigene Untersektion im AmbiDecoder\n- **Zeile 88:** Feature-Auflistung im AmbiEncoder\n\nDies ist inhaltlich nicht redundant (es sind zwei verschiedene Plugins), aber der Begriff taucht ohne Querverweise auf.\n\n---\n\n### 5. Einleitungsabsatz fasst Sektionen vorweg zusammen\n- **Zeile 19** nennt: Multi-Decoder, neue Layouts, Filter, OSC-Control – das wird dann alles nochmals ausführlich erklärt. Das ist strukturell üblich (Teaser + Detail), aber ggf. kürzbar.\n\n---\n\nSoll ich Vorschläge machen, wie diese Redundanzen bereinigt werden können, oder direkt Änderungen vornehmen?",
+    "timestamp": "2026-03-03T13:54:23.060Z"
+  },
+  {
+    "role": "user",
+    "content": "direkt ändern",
+    "timestamp": "2026-03-03T13:55:11.323Z"
+  },
+  {
+    "role": "assistant",
+    "content": "Folgende Änderungen wurden vorgenommen:\n\n1. **Überschrift `# What's New in v3.2?` entfernt** – der Seitentitel \"What's New\" übernimmt diese Funktion bereits.\n\n2. **Intro-Absatz vereinfacht:** `We're pleased to announce **ICST Ambisonics Plugins v3.2**` → `We're pleased to announce **v3.2**` – da der Name + Version direkt darüber im Haupttitel steht.\n\n3. **Doppelter Wiki-Link entfernt** – der erste (allgemeiner Wiki-Link nach dem Multi-Decoder-Abschnitt) wurde gestrichen. Der zweite (encoder-spezifisch am Ende des AmbiEncoder-Abschnitts) bleibt erhalten.",
+    "timestamp": "2026-03-03T13:55:11.323Z"
+  }
+]

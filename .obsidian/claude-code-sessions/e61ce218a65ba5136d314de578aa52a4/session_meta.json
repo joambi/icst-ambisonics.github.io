@@ -1,0 +1,18 @@
+{
+  "sessionName": "index",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "content/HOME/index.md",
+      "title": "index",
+      "linkedAt": "2026-03-05T09:53:15.624Z",
+      "isPrimary": true
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-03-05T10:08:55.378Z",
+  "createdAt": "2026-03-05T09:53:15.624Z",
+  "messageCount": 5,
+  "notePath": "content/HOME/index.md",
+  "noteTitle": "index"
+}

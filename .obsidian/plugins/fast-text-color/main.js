@@ -106,6 +106,20 @@ var CycleState = class {
     this.state = this.states[this.index];
   }
 };
+var LatestColor = class {
+  constructor() {
+    this.color = new TextColor("", "", "");
+  }
+  static getInstance() {
+    return this.static_instance || (this.static_instance = new this());
+  }
+  getColor() {
+    return this.color;
+  }
+  setColor(tColor) {
+    this.color = tColor;
+  }
+};
 
 // src/color/TextColorTheme.ts
 var TextColorTheme = class {
@@ -710,6 +724,7 @@ var ColorWidget = class extends import_view2.WidgetType {
       getColors(settings).forEach((tColor) => {
         this.menu.addItem((item) => {
           item.setTitle(tColor.id).onClick((evt) => {
+            LatestColor.getInstance().setColor(tColor);
             view.dispatch({
               changes: {
                 from: this.from,
@@ -993,6 +1008,7 @@ var import_view4 = require("@codemirror/view");
 function applyColor(tColor, editor) {
   let prefix = `~={${tColor.id}}`;
   let suffix = `=~`;
+  LatestColor.getInstance().setColor(tColor);
   if (!editor.somethingSelected()) {
     editor.replaceSelection(prefix);
     let pos = editor.getCursor();
@@ -1002,19 +1018,26 @@ function applyColor(tColor, editor) {
   }
   let selections = editor.listSelections();
   selections.forEach((element) => {
-    let anchorpos = element.anchor.line + element.anchor.ch;
-    let headpos = element.head.line + element.head.ch;
-    let start = anchorpos < headpos ? element.anchor : element.head;
-    let end = anchorpos < headpos ? element.head : element.anchor;
-    let selected = editor.getRange(start, end);
-    let coloredText = `${prefix}${selected}${suffix}`;
-    editor.replaceRange(coloredText, start, end);
-    try {
-      let pos = editor.getCursor();
-      pos.ch = pos.ch + 1;
-      editor.setCursor(pos);
-    } catch (e) {
-      return;
+    const anchorOffset = editor.posToOffset(element.anchor);
+    const headOffset = editor.posToOffset(element.head);
+    let start = anchorOffset < headOffset ? element.anchor : element.head;
+    let end = anchorOffset < headOffset ? element.head : element.anchor;
+    const selected = editor.getRange(start, end);
+    let selectedLines = selected.split("\n");
+    for (let i = 0; i < selectedLines.length; i++) {
+      if (selectedLines[i])
+        selectedLines[i] = prefix + selectedLines[i] + suffix;
+    }
+    editor.replaceRange(selectedLines.join("\n"), start, end);
+    const nonEmpty = (element2) => element2.length > 0;
+    if (!selectedLines.some(nonEmpty))
+      editor.setCursor(end);
+    else {
+      const firstNonEmptyLine = selectedLines.findIndex(nonEmpty);
+      const lastNonEmptyLine = selectedLines.findLastIndex(nonEmpty);
+      const beginSelection = { line: start.line + firstNonEmptyLine, ch: firstNonEmptyLine == 0 ? start.ch + prefix.length : prefix.length };
+      const endSelection = { line: start.line + lastNonEmptyLine, ch: lastNonEmptyLine == selectedLines.length - 1 ? end.ch + prefix.length : selectedLines[lastNonEmptyLine].length - suffix.length };
+      editor.setSelection(beginSelection, endSelection);
     }
   });
 }
@@ -1112,6 +1135,7 @@ var FastTextColorPlugin = class extends import_obsidian8.Plugin {
     this.settingsCompartment = new import_state4.Compartment();
     this.settingsExtension = this.settingsCompartment.of(settingsFacet.of(this.settings));
     this.registerEditorExtension(this.settingsExtension);
+    LatestColor.getInstance().setColor(getColors(this.settings)[0]);
     this.registerEditorExtension(
       import_state4.Prec.high(
         import_view4.keymap.of([
@@ -1127,6 +1151,13 @@ var FastTextColorPlugin = class extends import_obsidian8.Plugin {
       name: "Change text color",
       editorCallback: (editor) => {
         this.openColorMenu(editor);
+      }
+    });
+    this.addCommand({
+      id: "text-color-latestcolor",
+      name: "Apply latest color",
+      editorCallback: (editor) => {
+        applyColor(LatestColor.getInstance().getColor(), editor);
       }
     });
     this.addCommand({

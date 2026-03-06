@@ -1,0 +1,18 @@
+{
+  "sessionName": "ICST Decoder",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "content/pages/ICST Decoder.md",
+      "title": "ICST Decoder",
+      "linkedAt": "2026-03-04T10:02:29.028Z",
+      "isPrimary": true
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-03-04T10:17:53.342Z",
+  "createdAt": "2026-03-04T10:02:29.028Z",
+  "messageCount": 6,
+  "notePath": "content/pages/ICST Decoder.md",
+  "noteTitle": "ICST Decoder"
+}

@@ -1,0 +1,18 @@
+{
+  "sessionName": "polices",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "polices.md",
+      "title": "polices",
+      "linkedAt": "2026-03-03T14:01:45.467Z",
+      "isPrimary": true
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-03-03T14:01:45.467Z",
+  "createdAt": "2026-03-03T14:01:45.467Z",
+  "messageCount": 1,
+  "notePath": "polices.md",
+  "noteTitle": "polices"
+}

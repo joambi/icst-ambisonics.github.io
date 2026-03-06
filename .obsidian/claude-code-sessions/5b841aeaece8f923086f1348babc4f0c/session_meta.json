@@ -1,0 +1,18 @@
+{
+  "sessionName": "index",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "content/Residenzen/ICST Studio Residences 2026/index.md",
+      "title": "index",
+      "linkedAt": "2026-03-05T10:16:23.307Z",
+      "isPrimary": true
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-03-05T10:21:03.365Z",
+  "createdAt": "2026-03-05T10:16:23.307Z",
+  "messageCount": 4,
+  "notePath": "content/Residenzen/ICST Studio Residences 2026/index.md",
+  "noteTitle": "index"
+}
