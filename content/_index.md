@@ -7,6 +7,27 @@ mainSectionsTitle: "Latest Posts"
 **Institute for Computer Music and Sound Technology (ICST)**
 Zurich University of the Arts
 
+## Ambisonics @ ICST - Tools, Tutorials, and Studio for Spatial Sound
+
+This site is for composers, sound designers, students, and researchers who want to work with spatial sound, whether they are getting started or already advanced. It combines open tools with practical studio workflows and artistic practice.
+
+### Start by Audience
+
+#### For Beginners
+- [Quick Start with ICST Ambisonics Plugins](/icst-ambisonics-plugins/04_quick_start/)
+- [Tutorials & Basics](/post/)
+- [Plugin Documentation](/icst-ambisonics-plugins/)
+
+#### For ICST Residents
+- [ICST Studio Residencies](/residenzen/)
+- [ICST Composer Studio](/blog/icst-composer-studio-blog/)
+- [Studio (Blog)](/blog/)
+
+#### For Ambisonics Nerds
+- [How It Works](/icst-ambisonics-plugins/03_how_it_works/)
+- [OSC Syntax for the AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+- [Downloads (Releases)](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+
 ---
 
 ### The ICST Ambisonics Plugins (Reaper DAW)
