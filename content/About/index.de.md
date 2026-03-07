@@ -6,7 +6,9 @@ tags:
 languageCode: de
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Ambisonics.ch ist ein Tutorial- und Notizblog zu den ICST-Ambisonics-Tools und Plugins, entstanden aus Forschung und Lehre am Institute for Computer Music and Sound Technology (ICST) der Zürcher Hochschule der Künste. Im Fokus stehen praxisnahe Workflows, Lautsprecher-Setups und Ressourcen für 3D-Audio in DAWs, mit besonderem Schwerpunkt auf räumlichem Klang für Komposition, Sounddesign und immersive Medienproduktion.
+
+Ambisonics.ch versteht Ambisonics als Verbindung von Forschung, Studio-Praxis und künstlerischer Arbeit, nicht nur als technisches Wiedergabesystem. Im Zentrum stehen räumliche Hörsituationen, in denen B-Format und Ambisonics eingesetzt werden, um elektroakustische Werke, Residencies und künstlerische Projekte möglichst zugänglich und erfahrbar zu machen. Das ICST-Kompositionsstudio dient dabei als Labor, in dem Tools, Lautsprecher-Setups und künstlerische Positionen kontinuierlich erprobt und dokumentiert werden.
 
 * * *
 # Über uns
@@ -15,19 +17,17 @@ Das **Institute for Computer Music and Sound Technology** ([ICST](https://www.zh
 
 ### Schwerpunkte
 #### **Ambisonics & räumlicher Sound**
-- Entwicklung von 3D-Audios-Werkzeugen und Plugins, darunter **ICST Ambisonics Tools** für Max/MSP und **ICST Ambisonics Plugins** für DAWs.
+- Praxisnahe Workflows, Lautsprecher-Setups und Ressourcen für 3D-Audio in DAWs.
 #### **Soundforschung & Wahrnehmung**
-- Erforschung von akustischer Wahrnehmung, algorithmischer Komposition und interaktiven Soundräumen.
+- Erforschung der akustischen Wahrnehmung, der algorithmischen Komposition und der interaktiven Soundräume.
 #### **Musik & Medienkunst**
-- Unterstützung von Projekten in elektroakustischer Musik, Sound Design und immersiven Audioformaten.
+- Unterstützung von Projekten in elektroakustischer Musik, Sounddesign und immersiven Audioformaten.
 
 ---
 
 ### ICST Ambisonics Tools & Plugins
 
 Ein Hauptergebnis der ICST-Forschung sind die **ICST Ambisonics Tools**, eine Suite von Max/MSP-Externals, die fortschrittliche 3D-Surroundaudio-Bearbeitung ermöglicht. Sie wurden über zwei Jahrzehnte hinweg entwickelt und sind öffentlich verfügbar. Die **ICST Ambisonics Plugins** bringen viele dieser Funktionen als VST/AU/LV2-Plugins zu DAWs. Sie entwickeln sich aktiv weiter und sind derzeit in [Version 3.2.0](https://github.com/schweizerweb/icst-ambisonics-plugins) verfügbar.
-
-Diese Website bietet einen Überblick über die Ambisonics-Forschung und Entwicklungen des ICST.
 
 ---
 

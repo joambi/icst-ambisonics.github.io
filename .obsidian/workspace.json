@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/08_icst_decoder/index.md",
+                "file": "content/About/index.de.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "index.de"
             }
           }
         ],
@@ -201,7 +201,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -209,7 +209,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1772717919603": false,
+      "image-preview-on-icon-hover:1772788685528": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -229,8 +229,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3a7c1c4e2012a87e",
+  "active": "992ec39b645be909",
   "lastOpenFiles": [
+    "content/About/index.md",
+    "Clippings/Grassroots Ambisonics.md",
+    "content/About/index.de.md",
+    "content/ICST Ambisonics Plugins/08_icst_decoder/index.md",
+    "ChatGPT_MD/agents",
+    "ChatGPT_MD",
+    "resources/_gen/assets/scss/main.scss_f8b11c0387470cdacc59f766aab067d1.content",
+    "resources/_gen/assets/scss/main.scss_f8b11c0387470cdacc59f766aab067d1.json",
+    "Clippings/Destinations  Integrations  GitGuardian.md",
     "public/de/icst-ambisonics-plugins/15_best_practices/index.html",
     "public/de/icst-ambisonics-plugins/15_best_practices",
     "public/de/icst-ambisonics-plugins/13_osc/index.html",
@@ -239,12 +248,8 @@
     "content/ICST Ambisonics Plugins/13_osc/index.de.md",
     "public/de/icst-ambisonics-plugins/11_animator/index.html",
     "public/de/icst-ambisonics-plugins/11_animator",
-    "public/de/icst-ambisonics-plugins/10_icst_encoders/index.html",
-    "public/de/icst-ambisonics-plugins/10_icst_encoders",
     "content/ICST Ambisonics Plugins/11_animator/index.de.md",
     "content/ICST Ambisonics Plugins/10_icst_encoders/index.de.md",
-    "public/de/icst-ambisonics-plugins/08_icst_decoder/index.html",
-    "public/de/icst-ambisonics-plugins/08_icst_decoder",
     "content/ICST Ambisonics Plugins/08_icst_decoder/index.de.md",
     "Decodierung.md",
     "ICST Studio Residenzen 2026.md",
@@ -252,7 +257,6 @@
     "content/Blog/ascolta/_index.md",
     "content/Blog/ascolta/_index.de.md",
     "blog/ascolta/17-ascolta.md",
-    "blog/ascolta",
     "content/HOME/index.md",
     "public/de/residenzen/icst-studio-residences-2025/GOPR4281.jpg",
     "public/de/residenzen/icst-studio-residences-2025/Lucas_Daniel.jpg",
@@ -273,10 +277,6 @@
     "content/ICST.md",
     "post/multi-decoder-mode.md",
     "CLAUDE.md",
-    "content/pages/ICST Decoder.md",
-    "content/ICST Ambisonics Plugins/01_overview/index.de.md",
-    "content/ICST Ambisonics Plugins/01_overview/index.md",
-    "content/ICST Ambisonics Plugins/_index.md",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
