@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/About/index.de.md",
+                "file": "content/About/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index.de"
+              "title": "index"
             }
           }
         ],
@@ -231,9 +231,9 @@
   },
   "active": "992ec39b645be909",
   "lastOpenFiles": [
+    "content/About/index.de.md",
     "content/About/index.md",
     "Clippings/Grassroots Ambisonics.md",
-    "content/About/index.de.md",
     "content/ICST Ambisonics Plugins/08_icst_decoder/index.md",
     "ChatGPT_MD/agents",
     "ChatGPT_MD",

@@ -7,6 +7,8 @@ tags:
 
 Ambisonics.ch is a tutorial and notes blog on the ICST Ambisonics Tools and Plugins, developed from research and teaching at the Institute for Computer Music and Sound Technology (ICST) at the Zurich University of the Arts. The focus is on practical workflows, loudspeaker setups, and resources for 3D audio in DAWs, with a special emphasis on spatial sound for composition, sound design, and immersive media production.
 
+Ambisonics.ch understands Ambisonics as a connection between research, studio practice, and artistic work, not only as a technical playback system. At the center are spatial listening situations in which B-format and Ambisonics are used to make electroacoustic works, residencies, and artistic projects as accessible and tangible as possible. The ICST Composition Studio serves as a laboratory where tools, loudspeaker setups, and artistic positions are continuously tested and documented.
+
 * * *
 # About
 
