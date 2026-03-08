@@ -107,6 +107,9 @@ The **ICST Composition Studio** at the Zurich University of the Arts is a dedica
 
 # Explore the Studio
 
+**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+
+
 <div class="studio-nav">
   <a href="/blog/icst-kompositionsstudio-equipment/"><i class="fas fa-microchip"></i> Equipment</a>
   <a href="/blog/icst-kompositionsstudio-software/"><i class="fas fa-laptop-code"></i> Software</a>
@@ -118,28 +121,6 @@ The **ICST Composition Studio** at the Zurich University of the Arts is a dedica
   <a href="/blog/ascolta/"><i class="fas fa-headphones"></i> ascolta</a>
   <a href="/blog/downloads/"><i class="fas fa-download"></i> Downloads</a>
 </div>
-
----
-
-# Explore 3D Audio Music
-
-A selection of online resources for listening to Ambisonics and spatial audio:
-
-<ul class="listen-links">
-  <li><a href="https://audiospace.soundingfuture.com/tracks">Sounding Future</a> — spatial audio archive</li>
-  <li><a href="https://hoast.iem.at/">HOAST Library (IEM)</a> — Higher-Order Ambisonics recordings</li>
-  <li><a href="https://www.wyastone.co.uk/all-labels/nimbus.html">Nimbus UHJ</a> — classic Ambisonics UHJ recordings</li>
-</ul>
-
----
-
-## ICST B-Format Archive
-
-The ICST maintains an archive of works recorded and encoded in ambiX B-format.
-
-→ [Explore the B-Format Archive](/blog/sounding_future/)
-
----
 
 <div class="studio-contact">
   📍 Toni-Areal · Pfingstweidstrasse 96, Zürich · Room ZT 3.D02 &nbsp;·&nbsp;

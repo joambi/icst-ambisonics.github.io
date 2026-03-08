@@ -19,14 +19,11 @@ _and number of loudspeakers._
 SPS (PCM) audio allows for more precise processing of a field recording in B-format.
 For this, I will convert the B-format (3rd-order ambix) with the [sparta-decoder/encoder](https://leomccormack.github.io/sparta-site/docs/plugins/overview/) to a T-design format (T-Design / T-Format corresponds to the SPS-Format)
 The workflow is as follows:
-![B-Format to T-Format conversion workflow overview](Bildschirmfoto%202025-07-08%20um%2012.59.29.png)
 1. Convert the B-format (HOA) to a 3rd-order ambix B-format
 2. Decoding the 3rd-order (B-format to T-format conversion using AmbiDEC) from Sparta.
-   ![AmbiDEC decoder setup in Sparta — B-format to T-format](Bildschirmfoto%202025-07-08%20um%2011.51.46.png)
 3. De-Noise or work with traditional methods on your PCM Audio
     Example: Toonbooster EQ-Pro
 4. Back-Conversion from T-Format to a B-Format (3rd-order ambix)
-   ![T-format to B-format back-conversion in Sparta](Bildschirmfoto%202025-07-08%20um%2012.24.39.png)
 5. UpScaling to 7th-order ambix
 
 Literature:

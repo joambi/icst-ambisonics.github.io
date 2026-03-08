@@ -6,12 +6,18 @@ year: 2025
 month: 2025-05
 weight: 4
 tags: ["multiencoder", "group", "animation", "reaper", "workflow"]
+key_points:
+  - "Animate and edit MultiEncoder source groups efficiently."
+  - "Record, refine, and replay coordinated spatial group movement."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
 # Group Animation
+
+**For whom:** Level: Intermediate | Audience: Composer, Live performer.
+
 
 The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool for dynamically manipulating grouped audio sources in the **Radar Display**. By selecting a group point and holding **Option (Alt) on Mac**, you unlock advanced functions like **group animation** and **group stretch**, enabling synchronized movement and transformation of multiple sources for enhanced 3D spatialization.
 

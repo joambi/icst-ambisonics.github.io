@@ -7,7 +7,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-----
+-
 ## 02 Open Track Templates
 
 1. Right-click in the empty track area in **Reaper**.

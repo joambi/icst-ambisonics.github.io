@@ -12,6 +12,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 # #16 ascolta Acousmatic Listening Session
 
+**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+
+
 ![ascolta](ascolta.png)
 
 **Experiment**

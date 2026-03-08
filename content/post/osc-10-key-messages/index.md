@@ -6,12 +6,22 @@ year: 2026
 month: 2026-03
 weight: 22
 tags: ["osc", "ambiencoder", "tutorial", "reference"]
+key_points:
+  - "Use the 10 OSC message types that matter most in daily production."
+  - "Apply a compact debugging checklist for port, format, and timing."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
 # OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages
+
+**For whom:** Level: Intermediate | Audience: Power user, Technical artist.
+
+
+Diese Seite ist der **Praxis-Quickstart**.
+Fuer die vollstaendige Adress- und Parameterreferenz siehe:
+- [OSC Syntax fuer den ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 
 ## Wofuer OSC hier wirklich nuetzlich ist
 OSC macht Bewegungssteuerung reproduzierbar und erlaubt es, externe Controller, Max-Patches oder Skripte sauber in den Produktionsworkflow einzubinden.
@@ -42,7 +52,6 @@ OSC macht Bewegungssteuerung reproduzierbar und erlaubt es, externe Controller, 
 Kombiniere einen externen Controller mit Reaper-Automation: OSC steuert die Bewegung in Echtzeit, Reaper zeichnet die Bewegung als verifizierbare Automation auf.
 
 ## Weiterfuehrende Inhalte
-- [OSC Syntax fuer den ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 - [MaxMSP und ICST AmbiEncoder - OSC Communication](/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/)
 - [Reaper Ambisonics Setup in 20 Minuten](/post/reaper-setup-20-minuten/)
 

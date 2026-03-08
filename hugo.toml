@@ -20,7 +20,7 @@ authorName = "Johannes Schuett"
 email = "johannes.schuett@zhdk.ch"
 rssFullContent = true
 singleDateFormat = "2006-01-02"
-description = "Spatial Audio Plugins & Tutorials\nby ICST · Zurich University of the Arts"
+description = "Spatial Audio Plugins & Tutorials\nby ICST / Zurich University of the Arts"
 profilePicture = "images/AmbiPlugin_logo.gif"
 mainSections = ["blog", "post"]
 favicon = "favicons/"
@@ -59,78 +59,108 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   name = "Tutorials"
   identifier = "tutorials"
   weight = 100
-  url = "#"
+  url = "/post/"
 
     [[menu.main]]
     name = "All Tutorials"
     parent = "tutorials"
-    weight = 201
+    weight = 101
     url = "/post/"
 
     [[menu.main]]
     name = "Ambisonics 101"
     parent = "tutorials"
-    weight = 202
+    weight = 102
     url = "/ambisonics-101/"
 
     [[menu.main]]
     name = "Videos"
     parent = "tutorials"
-    weight = 203
+    weight = 103
     url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 
   [[menu.main]]
-  name = "Studio Cases"
-  identifier = "cases"
+  name = "Studio"
+  identifier = "studio"
   weight = 200
-  url = "#"
+  url = "/blog/"
 
     [[menu.main]]
-    name = "Ascolta Sessions"
-    parent = "cases"
+    name = "Composer Studio"
+    parent = "studio"
+    weight = 201
+    url = "/blog/icst-composer-studio-blog/"
+
+    [[menu.main]]
+    name = "Residencies"
+    parent = "studio"
+    weight = 202
+    url = "/residenzen/"
+
+  [[menu.main]]
+  name = "ASCOLTA"
+  identifier = "ascolta"
+  weight = 300
+  url = "/blog/ascolta/"
+
+    [[menu.main]]
+    name = "ASCOLTA"
+    parent = "ascolta"
     weight = 301
     url = "/blog/ascolta/"
 
     [[menu.main]]
-    name = "Residencies"
-    parent = "cases"
+    name = "Listening"
+    parent = "ascolta"
     weight = 302
-    url = "/residenzen/"
+    url = "/blog/sounding_future/"
+
+    [[menu.main]]
+    name = "Konzerte"
+    parent = "ascolta"
+    weight = 303
+    url = "/blog/ascolta/"
 
   [[menu.main]]
-  name = "Downloads"
-  identifier = "downloads"
-  weight = 300
-  url = "/blog/downloads/"
-
-  [[menu.main]]
-  name = "Docs"
-  identifier = "docs"
-  weight = 350
+  name = "Tools/OSC"
+  identifier = "tools-osc"
+  weight = 400
   url = "#"
 
     [[menu.main]]
     name = "Plugin Docs"
-    parent = "docs"
-    weight = 351
+    parent = "tools-osc"
+    weight = 401
     url = "/ICST Ambisonics Plugins/"
 
     [[menu.main]]
     name = "Ambi Tools"
-    parent = "docs"
-    weight = 352
+    parent = "tools-osc"
+    weight = 402
     url = "/ICST Ambisonics Tools/"
+
+    [[menu.main]]
+    name = "OSC Syntax"
+    parent = "tools-osc"
+    weight = 403
+    url = "/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
+
+    [[menu.main]]
+    name = "Downloads"
+    parent = "tools-osc"
+    weight = 404
+    url = "/blog/downloads/"
 
   [[menu.main]]
   name = "Links"
   identifier = "links"
-  weight = 400
+  weight = 500
   url = "/links/"
 
   [[menu.main]]
   name = "About"
   identifier = "about"
-  weight = 500
+  weight = 600
   url = "/about/"
 
   [[menu.footer]]

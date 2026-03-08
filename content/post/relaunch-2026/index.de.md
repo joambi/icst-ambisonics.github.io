@@ -6,12 +6,18 @@ year: 2026
 month: 2026-03
 weight: 20
 tags: ["update", "workflow", "tutorial", "studio"]
+key_points:
+  - "Fasst Struktur-Aenderungen und Prioritaeten des Relaunch 2026 zusammen."
+  - "Zeigt klare Einstiegswege fuer Tutorials, Studio Cases und Dokumentation."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
 # Ambisonics.ch Relaunch 2026 - Was ist neu
+
+**Für wen:** Level: Alle Levels | Zielgruppe: neue und wiederkehrende Seitennutzer:innen.
+
 
 ## Warum wir die Seite neu strukturiert haben
 Die neue Struktur reduziert Suchaufwand und fuehrt schneller zu den passenden Inhalten. Statt gemischter Bereiche gibt es klare Einstiegspunkte fuer Tutorials, Studio Cases, Downloads und Dokumentation.

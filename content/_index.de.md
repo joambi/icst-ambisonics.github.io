@@ -11,12 +11,18 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-**Institute for Computer Music and Sound Technology (ICST)**
-Zurich University of the Arts
-
 ## Ambisonics @ ICST – Tools, Tutorials und Studio für räumlichen Klang
 
 Diese Seite richtet sich an Komponist:innen, Sounddesigner:innen, Studierende und Researcher, die mit räumlichem Klang arbeiten oder einsteigen wollen. Sie verbindet offene Tools mit konkreten Studio-Workflows und künstlerischer Praxis.
+
+Nutze [Anleitungen](/post/) fuer Schritt-fuer-Schritt-Setups und Produktions-Workflows. Nutze [Studio Cases](/blog/) fuer Residency-Kontext, Hoerstunden und Studio-Updates.
+
+### Wie nutze ich diese Seite?
+
+Zwei kurze Einstiegswege:
+
+- Technischer Weg: Starte mit [Quick Start](/icst-ambisonics-plugins/04_quick_start/), gehe weiter mit [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/) und dann zu [Anleitungen](/post/) fuer reproduzierbare Workflows.
+- Kuenstlerischer Weg: Starte mit [Ascolta](/blog/ascolta/) und [Audio Examples](/blog/audio-examples/), wechsle danach zu [Studio Cases](/blog/) und [Residencies](/residenzen/) fuer Produktionskontext und kuenstlerische Praxis.
 
 ### Einstieg nach Zielgruppe
 

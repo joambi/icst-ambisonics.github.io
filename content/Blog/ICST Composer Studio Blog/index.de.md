@@ -21,6 +21,9 @@ Raum: **ZT 3.D02** · Kontakt: [johannes.schuett@zhdk.ch](mailto:johannes.schuet
 
 ## Studio-Bereiche
 
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+
+
 - [Equipment](/blog/icst-kompositionsstudio-equipment/)
 - [Software](/blog/icst-kompositionsstudio-software/)
 - [Speaker Setup](/blog/icst-kompositionsstudio-speaker-settings/)
@@ -30,25 +33,5 @@ Raum: **ZT 3.D02** · Kontakt: [johannes.schuett@zhdk.ch](mailto:johannes.schuet
 - [Artist Residencies](/residenzen/)
 - [ascolta](/blog/ascolta/)
 - [Downloads](/blog/downloads/)
-
----
-
-## 3D Audio-Musik entdecken
-
-Eine Auswahl an Online-Ressourcen zum Anhören von Ambisonics und Raumklang:
-
-- [Sounding Future](https://audiospace.soundingfuture.com/tracks) — Räumliches Audioarchiv
-- [HOAST Library (IEM)](https://hoast.iem.at/) — Higher-Order Ambisonics Aufnahmen
-- [Nimbus UHJ](https://www.wyastone.co.uk/all-labels/nimbus.html) — Klassische Ambisonics-UHJ-Aufnahmen
-
----
-
-## ICST B-Format Archiv
-
-Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kodiert wurden.
-
-→ [Zum B-Format Archiv](/blog/sounding_future/)
-
----
 
 <span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>

@@ -10,6 +10,8 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+
 Downloads für Studio- und Ambisonics-Workflows an einem Ort.
 
 <div class="home-cards">

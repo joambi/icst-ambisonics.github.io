@@ -8,19 +8,32 @@ languageCode: de
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+Diese Seite ist der praktische Anleitungsindex fuer ICST Ambisonics Workflows in REAPER und Max-basierten Umgebungen.
+Nutze ihn fuer Schritt-fuer-Schritt-Setups, OSC-Steuerung, Automationsbeispiele und produktionsreife Routing-Loesungen.
 
+### Fuer wen diese OSC-Workflows gedacht sind
+- **Komponist:innen:** raeumliche Kompositions-Workflows mit spielbarer Automation und reproduzierbarer Bewegungsdramaturgie.
+- **Techniker:innen:** stabiles Routing, Synchronisation und Controller-Integration fuer Produktions- und Wiedergabe-Setups.
+- **Studierende:** klarer Lernpfad von OSC-Grundlagen bis zur kompletten DAW-basierten Ambisonics-Session.
 
-- [ICST AmbiEncoder – OSC Syntax](osc-syntax-for-the-icst-ambiencoder-plugin)
-- [MaxMSP & ICST AmbiEncoder – OSC Communication](icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication)
-- [ICST AmbiEncoder – OSC zu FX Zuordnung](osc-2-fx)
-- [ICST MultiEncoder – Gruppenanimation](gp-manipulation)
-- [ICST AmbiPlugins & Grapes – 3D Steuerung](icst-grapes)
-- [ICST AmbiPlugins & GyrOSC](GYROSC)
-- [Ableton Live & ICST Ambisonics Integration](ableton_reaper)
-- [ICST AmbiEncoder – Spiral Walk Script](icst-scripts)
-- [ICST AmbiEncoder – CircleSelected](circle_selected)
-- [Blauertsche Bänder](Blauertsche_Bänder)
-- [ICST AmbiDecoder – Multi-Decoder Modus](multi-decoder-mode)
+### Empfohlene Vorkenntnisse
+- REAPER-Basics (Tracks, Routing, Monitoring).
+- OSC-Basics (Host, Port, Message-Format).
+- Ambisonics-Basics (Quelle, B-Format, Encoder/Decoder).
 
----
-📺 [ICST Ambisonics Plugins – Videos auf YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)
+### OSC-Integrationspfad (empfohlene Reihenfolge)
+Starte hier, wenn du neu einsteigst:
+- [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
+- [Von Stereo zu HOA7: Eine Schritt-fuer-Schritt-Session](/post/stereo-to-hoa7-session/)
+
+Danach geht es mit OSC-Integration weiter:
+1. [ICST AmbiEncoder - OSC Syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+2. [MaxMSP und ICST AmbiEncoder - OSC Communication](/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/)
+3. [ICST AmbiEncoder - OSC zu FX Zuordnung](/post/osc-2-fx/)
+4. [ICST AmbiPlugins und Grapes - 3D Steuerung](/post/icst-grapes/)
+5. [ICST AmbiPlugins und GyrOSC](/post/gyrosc/)
+6. [Ableton Live und ICST Ambisonics Integration](/post/ableton_reaper/)
+
+Fuer Studio-News, Residency-Kontext und Event-Dokumentation gehe weiter zum [ICST Studio Blog](/blog/).
+
+📺 [ICST Ambisonics Plugins - Videos auf YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)

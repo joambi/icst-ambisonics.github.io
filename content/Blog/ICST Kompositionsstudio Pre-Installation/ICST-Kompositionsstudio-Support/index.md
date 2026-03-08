@@ -14,6 +14,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 * * *
 # ICST support for the composition studio
 
+**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+
+
 ### Install RME MadiFace  USB Driver
 
 **Download MadiFace USB**  

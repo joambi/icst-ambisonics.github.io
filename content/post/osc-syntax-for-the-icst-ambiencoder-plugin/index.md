@@ -6,6 +6,10 @@ year: 2025
 month: 2025-03
 weight: 1
 tags: ["osc", "syntax", "ambiencoder", "reference"]
+
+key_points:
+  - "Reference complete OSC address and parameter syntax for AmbiEncoder."
+  - "Includes AED/XYZ patterns for index- and name-based control."
 DisableComments: false
 ---
 
@@ -15,24 +19,13 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ## OSC Syntax for the ICST AmbiEncoder Plugin
 
+**For whom:** Level: Advanced | Audience: Technician, Developer, Max/OSC user.
+
+
 The **ICST AmbiEncoder** supports **OSC** and **JavaScript**, enabling seamless communication with OSC tools such as **TouchOSC, IanniX, MaxMSP**, and other OSC-enabled software.
-
-### **How It Works**
-
-1. Open the **'OSC In'** tab.
-
-![OSC IN-OUT](osc-in-out.png)
-
-_Figure: Encoder Setting 'OSC In' receives over the port 50001
-
-Find all information in the **Help** section by clicking the question mark (**?**).
-
-#### **OSC In**
-
-*  **Receive OSC**: Receive OSC commands on the defined port (default: 50001). The full OSC specification is available in the plugin’s Help section.
-- **Send Positions for External Usage**: This function sends audio source positions as OSC messages to a defined target/port. Messages trigger position changes, and the update rate is limited to **20Hz (50ms).**
-
-* * *
+This page is the **syntax reference**.
+For a practical quickstart and debugging sequence, use:
+- [OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages](/post/osc-10-key-messages/)
 
 ## **OSC Syntax & Address Specification**
 
@@ -121,27 +114,5 @@ To send **all AmbiEncoder movements** to the ICST AmbiDecoder:
 Now, the AmbiDecoder receives **all OSC messages** from all connected AmbiEncoders.
 
 ---
-### **Steps to Send OSC Messages**
-
-AmbiEncoder can also send most of its parameters via OSC.
-
-![External-osc](external_osc.png)
-
-Open the question mark before the presets to get detailed help information.  
-
-1. Enable **“Send Positions for External Usage”** in the settings.
-2. In the **Targets** section:
-    - Enable or disable OSC transmission.
-    - Define the **Host IP address**.
-    - Select a **Port** (default: **50001**).
-    - Double-click **OSC messages** to edit.
-    
-    **Note:** If participating in an **internal FX learning program**, select **“Continuous”** mode.
-    
-3. Click **Help (?)** for detailed OSC information.
-4. Add or delete OSC messages.
-5. Save or load OSC messages in **Presets**.
-
 * * *
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
-

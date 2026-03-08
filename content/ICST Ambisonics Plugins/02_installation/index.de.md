@@ -13,9 +13,6 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-
-* * *
-
 ### 01_Installieren Sie die ICST Ambisonics Plugins (OSX)
 
 1. Laden Sie Reaper(DAW) (arm64/intel_64) von [reaper.fm](http://reaper.fm/) herunter

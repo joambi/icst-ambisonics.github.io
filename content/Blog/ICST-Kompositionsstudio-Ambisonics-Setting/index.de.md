@@ -11,6 +11,8 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+
 Ambisonics-Lautsprecher-Setup und Koordinaten
 **Beispiel für „ICST_AmbiDecoder 3.1.0" VST3 (2025)**
 

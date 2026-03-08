@@ -9,6 +9,8 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
+**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+
 #### **Studio for Composition**
 
 The Studio of the ICST is a Surround-Studio with 17 Geithain Speakers (8+5+4) and stereo-monitoring.

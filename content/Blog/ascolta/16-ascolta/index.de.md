@@ -12,6 +12,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 # #16 ascolta Akousmatische Hörstunde
 
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+
+
 ![ascolta](ascolta.png)
 
 **Experiment**

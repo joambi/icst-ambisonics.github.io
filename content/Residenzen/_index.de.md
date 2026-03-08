@@ -1,7 +1,6 @@
 ---
 title: "Residenzen"
 description: "Internationale Künstlerresidenzen am ICST Kompositionsstudio — Komponistinnen und Komponisten arbeiten mit räumlicher Audio und Ambisonics-Technologie an der ZHdK Zurich."
-hidesidebar: true
 languageCode: de
 ---
 

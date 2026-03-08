@@ -11,6 +11,8 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+
 ### Das ICST Kompositionsstudio
 
 ![Studio overview](Kompstudio.jpg)

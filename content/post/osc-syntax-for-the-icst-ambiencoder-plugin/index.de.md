@@ -6,6 +6,10 @@ year: 2025
 month: 2025-03
 weight: 1
 tags: ["osc", "syntax", "ambiencoder", "reference"]
+
+key_points:
+  - "Referenz fuer vollstaendige OSC-Adress- und Parameter-Syntax im AmbiEncoder."
+  - "Enthaelt AED/XYZ-Muster fuer index- und namensbasiertes Steuern."
 DisableComments: false
 ---
 
@@ -15,24 +19,13 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ## OSC Syntax für das ICST AmbiEncoder Plugin
 
+**Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Developer, Max/OSC-User.
+
+
 Der **ICST AmbiEncoder** unterstützt **OSC** und **JavaScript**, was eine nahtlose Kommunikation mit OSC-Tools wie **TouchOSC, IanniX, MaxMSP** und andere OSC-fähige Software ermöglicht.
-
-### **Funktionsweise**
-
-1. Öffne den Tab **'OSC In'**.
-
-![OSC IN-OUT](osc-in-out.png)
-
-_Abbildung: Encoder-Einstellung 'OSC In' empfängt auf Port 50001_
-
-Alle Informationen findest du im **Help**-Bereich, indem du auf das Fragezeichen (**?**) klickst.
-
-#### **OSC In**
-
-*  **Receive OSC**: Empfange OSC-Befehle auf dem definierten Port (Standard: 50001). Die vollständige OSC-Spezifikation ist im Help-Bereich des Plugins verfügbar.
-- **Send Positions for External Usage**: Diese Funktion sendet Audio-Quellenpositionen als OSC-Nachrichten an ein definiertes Ziel/einen Port. Nachrichten lösen Positionswechsel aus, und die Update-Rate ist auf **20Hz (50ms)** begrenzt.
-
-* * *
+Diese Seite ist die **Syntax-Referenz**.
+Fuer Quickstart und Debugging-Reihenfolge nutze:
+- [OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages](/post/osc-10-key-messages/)
 
 ## **OSC Syntax & Adressspezifikation**
 
@@ -121,26 +114,5 @@ Um **alle AmbiEncoder-Bewegungen** zum ICST AmbiDecoder zu senden:
 Jetzt empfängt der AmbiDecoder **alle OSC-Nachrichten** von allen verbundenen AmbiEncodern.
 
 ---
-### **Schritte zum Senden von OSC-Nachrichten**
-
-Der AmbiEncoder kann auch die meisten seiner Parameter über OSC senden.
-
-![External-osc](external_osc.png)
-
-Öffne das Fragezeichen vor den Presets, um detaillierte Hilfeinformationen zu erhalten.
-
-1. Aktiviere **"Send Positions for External Usage"** in den Einstellungen.
-2. Im **Targets**-Bereich:
-    - Aktiviere oder deaktiviere die OSC-Übertragung.
-    - Definiere die **Host-IP-Adresse**.
-    - Wähle einen **Port** (Standard: **50001**).
-    - Doppelklick auf **OSC messages** zum Bearbeiten.
-
-    **Hinweis:** Wenn du an einem **internen FX Learning Program** teilnimmst, wähle **"Continuous"** Modus.
-
-3. Klicke auf **Help (?)** für detaillierte OSC-Informationen.
-4. Füge OSC-Nachrichten hinzu oder lösche sie.
-5. Speichere oder lade OSC-Nachrichten in **Presets**.
-
 * * *
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

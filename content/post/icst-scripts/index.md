@@ -6,13 +6,19 @@ year: 2025
 month: 2025-07
 weight: 8
 tags: ["ambiencoder", "automation", "lua", "reaper"]
+key_points:
+  - "Use ReaScripts for structured movement generation and preset workflows."
+  - "Apply spiral and automation tools directly in production sessions."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
-----
+-
 # ICST AmbiEncoder_64 Spiral Walk - Dokumentation
+
+**For whom:** Level: Advanced | Audience: ReaScript user, Technical artist.
+
 
 ### 🔍 **Funktion**
 

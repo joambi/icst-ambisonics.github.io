@@ -1,7 +1,7 @@
 ---
 title: Nandele Maguni
 date: 2025-07-04T13:08:00
-_build:
+build:
   list: never
   render: always
 ---

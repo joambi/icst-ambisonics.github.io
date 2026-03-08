@@ -2,17 +2,27 @@
 title: Blauertsche Bänder
 description: "Zeigt, wie Blauerts Bänder per OSC zum IEM MultiEQ geleitet werden und welche Schritte nötig sind, um Front/Back- und Höhenbänder zu formen."
 date: 2025-05-16
+slug: blauerts-bands
+aliases:
+  - /de/post/blauertsche_bänder/
+  - /de/post/blauertsche_bänder/
 year: 2025
 month: 2025-05
 weight: 10
 tags: ["perception", "psychoacoustics", "binaural", "theory"]
+key_points:
+  - "Verbinde Blauertsche Baender mit OSC-gesteuerter EQ-Kontrolle im Spatial-Workflow."
+  - "Nutze Frequenz-Richtungs-Mapping fuer bessere Front/Back- und Hoehenwahrnehmung."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
-----
+-
 # Blauertsche Bänder:
+
+**Für wen:** Level: Advanced | Zielgruppe: psychoakustisch orientierte Komponist:innen/Researcher.
+
 
 Für die Stimme und ihre Richtungswahrnehmung habe ich Experimente mit den [Blauertsche Bänder](https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder) durchgeführt.
 ![Richtungsbänder | 400](Richtungsbänder.png)

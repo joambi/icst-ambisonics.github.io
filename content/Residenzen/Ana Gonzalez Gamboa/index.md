@@ -2,7 +2,7 @@
 tags:
 title: Ana Gonzalez Gamboa
 date: 2025-09-03T18:35:00
-_build:
+build:
   list: never
   render: always
 ---
@@ -26,9 +26,9 @@ In this work, I reflect on the interaction between soundscapes, human presence, 
 
 Based in Buenos Aires  and born in Ambato, Ecuador, Ana Gamboa is a cellist, composer, and sound artist whose work explores the hybridity of acoustic and electronic practices. Since 2018, she has been building a personal archive of sounds from her travels across Latin America, intertwining them with collaborative improvisation and experimental composition. Her practice investigates memory, identity, and the imaginary through sound.
 
-Web: [https://anagonzalezgamboa0.wixsite.com/anagamboa](https://anagonzalezgamboa0.wixsite.com/anagamboa)
+Web: <https://anagonzalezgamboa0.wixsite.com/anagamboa>
 
-Ig: [https://www.instagram.com/ana___gamboa/](https://www.instagram.com/ana___gamboa/)
+Ig: <https://www.instagram.com/ana___gamboa/>
 
 ---
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

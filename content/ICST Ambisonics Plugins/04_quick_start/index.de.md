@@ -7,7 +7,6 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-----
 ## Schnellstart mit **ICST_AmbiPlugins_MultiEncoder.RPP**
 
 Starten Sie schnell mit der **MultiEncoder-Vorlage** mit diesem einfachen Workflow:

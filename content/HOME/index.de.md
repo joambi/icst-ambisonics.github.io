@@ -18,7 +18,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-------------------------------------------------------------------------
+---------------------------------------------------------------------
 # HOME des ICST Ambisonics
 
 - ### Die ICST Ambisonics Plugins in der Reaper DAW

@@ -39,6 +39,16 @@ body {
   font-size: 1.6rem;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid #d5d5d5;
+  height: 0;
+}
+
+.theme--dark hr {
+  border-top-color: #5b5b5b;
+}
+
 .html {
   -webkit-font-smoothing: antialiased;
   font-size: 62.5%;
@@ -315,7 +325,7 @@ body {
 }
 
 .sidebar {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 @media screen and (min-width: 961px) {
   .sidebar {
@@ -336,22 +346,28 @@ body {
     border-right: 1px solid #464646;
   }
 }
+.sidebar__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 @media screen and (min-width: 961px) {
   .sidebar__content {
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 5.5rem;
   }
 }
 .sidebar__list {
   list-style: none;
   padding: 0;
+  margin: 0.6rem 0 0;
   text-align: center;
 }
 .sidebar__list-item {
   display: inline;
-  padding: 0 4px;
+  padding: 0 6px;
   line-height: 0;
 }
 .sidebar__introduction {
@@ -361,9 +377,12 @@ body {
 .sidebar__introduction-description {
   margin: 0 1em;
 }
+.sidebar__introduction-description p {
+  line-height: 1.55;
+}
 .sidebar__introduction-profileimage {
-  width: 127px;
-  height: 127px;
+  width: 138px;
+  height: 138px;
   border-radius: 50%;
 }
 .sidebar__introduction-title {
@@ -374,10 +393,25 @@ body {
   margin: 1em;
 }
 .sidebar__introduction-title a {
-  font-size: 3.2rem;
+  font-size: 3.1rem;
 }
 .sidebar__introduction-title h1 {
   margin: 0;
+}
+.sidebar__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar__social-image {
+  height: 2.2rem;
+  width: auto;
+  vertical-align: middle;
+  filter: var(--icon-filter, none);
+}
+.sidebar__social-icon {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .footer {
@@ -410,7 +444,10 @@ body {
 }
 @media screen and (min-width: 961px) {
   .footer__sidebar {
-    display: inline-block;
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 26px;
   }
 }
 @media screen and (min-width: 961px) {
@@ -998,6 +1035,58 @@ body {
 .archive {
   margin: 30px;
 }
+.archive__intro {
+  margin: 0 0 1.6rem;
+}
+.archive__filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0 0 1.2rem;
+}
+.archive__filter-btn {
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 1px solid;
+}
+.theme--light .archive__filter-btn {
+  border-color: 1px solid #eeeeee;
+  color: #464646;
+}
+.theme--dark .archive__filter-btn {
+  border-color: 1px solid #464646;
+  color: #eeeeee;
+}
+.theme--light .archive__filter-btn--active {
+  border-color: #6086b4;
+  color: #6086b4;
+}
+.theme--dark .archive__filter-btn--active {
+  border-color: #6086b4;
+  color: #6086b4;
+}
+.archive__recommended {
+  margin: 0 0 1.4rem;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+}
+.theme--light .archive__recommended {
+  border: 1px solid 1px solid #eeeeee;
+}
+.theme--dark .archive__recommended {
+  border: 1px solid 1px solid #464646;
+}
+.archive__recommended-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.archive__recommended-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
 .archive__heading {
   font-size: 2.4rem;
   font-weight: 600;
@@ -1015,17 +1104,29 @@ body {
 .archive__list-item {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 5px;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding-bottom: 10px;
   list-style-type: none;
+}
+.archive__list-main {
+  flex: 1;
+  min-width: 0;
 }
 .archive__list-date {
   text-align: right;
+  flex-shrink: 0;
 }
 .theme--light .archive__list-date {
   color: #9f9f9f;
 }
 .theme--dark .archive__list-date {
   color: #9f9f9f;
+}
+.archive__list .archive__readtime {
+  margin-top: 0.2rem;
+  font-size: 0.85em;
+  opacity: 0.85;
 }
 .archive__list-title {
   display: inline-block;
@@ -1042,6 +1143,32 @@ body {
 }
 .theme--dark .archive__list-title:hover {
   color: #6086b4;
+}
+.archive__list-excerpt {
+  font-size: 0.9em;
+  margin-top: 0.2rem;
+  line-height: 1.45;
+}
+.theme--light .archive__list-excerpt {
+  color: #9f9f9f;
+}
+.theme--dark .archive__list-excerpt {
+  color: #9f9f9f;
+}
+.archive__list-meta {
+  margin-top: 0.35rem;
+  font-size: 0.82em;
+  opacity: 0.8;
+}
+.archive__keypoints {
+  margin: 0.45rem 0 0.2rem 1.1rem;
+  padding: 0;
+  list-style: disc;
+}
+.archive__keypoints li {
+  margin: 0.15rem 0;
+  font-size: 0.9em;
+  line-height: 1.35;
 }
 
 .notice {

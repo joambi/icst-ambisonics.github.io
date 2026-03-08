@@ -3,6 +3,59 @@
 .archive {
   margin: 30px;
 
+  &__intro {
+    margin: 0 0 1.6rem;
+  }
+
+  &__filters {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 0 0 1.2rem;
+  }
+
+  &__filter-btn {
+    border-radius: 6px;
+    padding: 0.35rem 0.75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid;
+
+    @include color.themed() {
+      border-color: color.t('border');
+      background: color.t('background');
+      color: color.t('primary');
+    }
+  }
+
+  &__filter-btn--active {
+    @include color.themed() {
+      border-color: color.t('info');
+      color: color.t('info');
+    }
+  }
+
+  &__recommended {
+    margin: 0 0 1.4rem;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+
+    @include color.themed() {
+      border: 1px solid color.t('border');
+    }
+  }
+
+  &__recommended-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+  &__recommended-list {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
   &__heading {
     font-size: 2.4rem;
     font-weight: 600;
@@ -19,16 +72,30 @@
     &-item {
       display: flex;
       justify-content: space-between;
-      padding-bottom: 5px;
+      align-items: flex-start;
+      gap: 1.2rem;
+      padding-bottom: 10px;
       list-style-type: none;
+    }
+
+    &-main {
+      flex: 1;
+      min-width: 0;
     }
 
     &-date {
       text-align: right;
+      flex-shrink: 0;
 
       @include color.themed() {
         color: color.t('primary-light');
       }
+    }
+
+    .archive__readtime {
+      margin-top: 0.2rem;
+      font-size: 0.85em;
+      opacity: 0.85;
     }
 
     &-title {
@@ -43,6 +110,34 @@
           color: color.t('info');
         }
       }
+    }
+
+    &-excerpt {
+      font-size: 0.9em;
+      margin-top: 0.2rem;
+      line-height: 1.45;
+
+      @include color.themed() {
+        color: color.t('primary-light');
+      }
+    }
+
+    &-meta {
+      margin-top: 0.35rem;
+      font-size: 0.82em;
+      opacity: 0.8;
+    }
+  }
+
+  &__keypoints {
+    margin: 0.45rem 0 0.2rem 1.1rem;
+    padding: 0;
+    list-style: disc;
+
+    li {
+      margin: 0.15rem 0;
+      font-size: 0.9em;
+      line-height: 1.35;
     }
   }
 }

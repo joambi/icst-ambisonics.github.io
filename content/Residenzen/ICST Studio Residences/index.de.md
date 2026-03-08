@@ -9,7 +9,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-----
+-
 # Künstlerresidenzien am ICST Kompositionsstudio
 
 Im ICST Kompositionsstudio schaffen internationale Künstler ihre 3D-Audioarbeiten mit unseren Ambisonics-Plugins. Die Residenzprogramme ermöglichen kreative Arbeitsprozesse im Bereich des räumlichen Sounddesigns und der elektroakustischen Komposition.

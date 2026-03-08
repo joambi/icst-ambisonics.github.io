@@ -2,7 +2,7 @@
 tags:
 title: Péter Biró Dániel
 date: 2025-08-20T18:09:00
-_build:
+build:
   list: never
   render: always
 ---

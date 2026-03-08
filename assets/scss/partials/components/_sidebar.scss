@@ -2,7 +2,7 @@
 @use 'modules/config' as conf;
 
 .sidebar {
-  margin-top: 40px;
+  margin-top: 24px;
 
   @include conf.desktop {
     z-index: 2;
@@ -27,23 +27,28 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
     @include conf.desktop {
-      display: flex;
-      flex-direction: column;
       flex-grow: 1;
-      justify-content: center;
+      justify-content: flex-start;
+      padding-top: 5.5rem;
     }
   }
 
   &__list {
     list-style: none;
     padding: 0;
+    margin: 0.6rem 0 0;
 
     text-align: center;
 
     &-item {
       display: inline;
-      padding: 0 4px;
+      padding: 0 6px;
       line-height: 0;
     }
   }
@@ -54,11 +59,14 @@
 
     &-description {
       margin: 0 1em;
+      p {
+        line-height: 1.55;
+      }
     }
 
     &-profileimage {
-      width: 127px;
-      height: 127px;
+      width: 138px;
+      height: 138px;
       border-radius: 50%;
     }
 
@@ -70,12 +78,30 @@
       margin: 1em;
 
       a {
-        font-size: 3.2rem;
+        font-size: 3.1rem;
       }
 
       h1 {
         margin: 0;
       }
     }
+  }
+
+  &__social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__social-image {
+    height: 2.2rem;
+    width: auto;
+    vertical-align: middle;
+    filter: var(--icon-filter, none);
+  }
+
+  &__social-icon {
+    font-size: 3rem;
+    line-height: 1;
   }
 }

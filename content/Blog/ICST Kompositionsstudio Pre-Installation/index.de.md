@@ -12,6 +12,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 # Vorinstallation für Ihren externen Laptop
 
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+
+
 ### **AUDIO**
 
 #### RME-Treiber installieren (DriverKit)

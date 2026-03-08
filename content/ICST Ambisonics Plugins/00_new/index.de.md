@@ -14,13 +14,12 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 _**Jetzt verfügbar!**_
 
 **Download:**
-🔗 **GitHub Releases**
-([https://github.com/schweizerweb/icst-ambisonics-plugins/releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+🔗 [**GitHub Releases**](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 
 Wir freuen uns, **v3.2** ankündigen zu können, mit einem großen Update für den **Multi-Decoder**, neuen Benutzeroberflächen-Layouts, verbesserten Filteroptionen, verbesserter OSC-Steuerung und zahlreichen Workflow-Verbesserungen basierend auf laufender empirischer Forschung am ICST.
 
 📖 **Vollständige Dokumentation:**
-🔗 [**Wiki**]([https://github.com/schweizerweb/icst-ambisonics-plugins/wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
+🔗 [**Wiki**](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 
 ---
 # ICST AmbiDecoder v3.2

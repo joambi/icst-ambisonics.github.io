@@ -6,6 +6,10 @@ year: 2025
 month: 2025-03
 weight: 2
 tags: ["maxmsp", "osc", "ambimonitor", "ambiencoder", "bidirectional"]
+
+key_points:
+  - "Set up bidirectional OSC communication between MaxMSP and ICST plugins."
+  - "Synchronize controller feedback and plugin state for stable performance control."
 DisableComments: false
 ---
 
@@ -14,6 +18,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 ---
 
 # Bidirectional OSC Communication with MaxMSP
+
+**For whom:** Level: Advanced | Audience: Max/MSP and OSC integrator.
+
 
 Generate motion data in Max and send it via OSC to the _ICST AmbiEncoder_ in your DAW. Alternatively, transfer a motion composition from your DAW to the _icst.ambisonics-externals_.
 

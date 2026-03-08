@@ -6,12 +6,18 @@ year: 2025
 month: 2025-11
 weight: 11
 tags: ["decoder", "multi-decoder", "v3.2", "loudspeaker", "spatial audio"]
+key_points:
+  - "Set up and understand parallel decoder units for multiple targets."
+  - "Control speaker sets and decoding parameters per decoder instance."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
 # Multi-Decoder Mode
+
+**For whom:** Level: Advanced | Audience: Technician, Studio engineer.
+
 
 The **Multi-Decoder Mode**, introduced in **ICST AmbiDecoder v3.2**, allows you to run up to **four fully independent decoders** within a single plugin instance. This is ideal for complex loudspeaker setups that combine different speaker arrays — for example, a main Ambisonics ring together with height speakers, a subwoofer group, or a separate near-field array.
 

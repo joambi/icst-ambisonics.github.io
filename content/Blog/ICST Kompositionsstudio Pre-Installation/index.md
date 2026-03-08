@@ -11,6 +11,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 # Pre-installation for your external laptop
 
+**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+
+
 ### **AUDIO**
 
 #### Install RME Driver (DriverKit)
@@ -51,7 +54,6 @@ To get the curved screen as a single large screen, you need to make an additiona
    ![Mission-control](Mission-control.webp)
    ![Mission_3](Mission3.webp)
 
----
 ---
 # Support & Contact
 

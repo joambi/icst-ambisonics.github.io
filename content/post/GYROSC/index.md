@@ -6,6 +6,10 @@ year: 2025
 month: 2025-05
 weight: 6
 tags: ["gyrosc", "osc", "mobile", "ambiencoder", "reaper"]
+
+key_points:
+  - "Control Ambisonics motion with mobile gyroscope OSC data."
+  - "Connect real-time performer gestures to repeatable spatial automation."
 author: Johannes Schuett
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
@@ -61,6 +65,9 @@ The GyrOSC app will send the 'Gravity' data via OSC (port 50001) to the ICST Mul
 ---
 
 # Inspirations:
+
+**For whom:** Level: Intermediate | Audience: Mobile-controller user, Performer.
+
 
 ### OSC-Swarm
 

@@ -31,6 +31,7 @@
       {{ range $item := .Site.Params.socialIcons }}
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="{{ $item.url }}"
             target="_blank"
             rel="noopener me"
@@ -38,9 +39,9 @@
             title="{{ $item.title }}"
           >
             {{ if $item.image }}
-              <img src="{{ $item.image | relURL }}" alt="{{ $item.title }}" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+              <img class="sidebar__social-image" src="{{ $item.image | relURL }}" alt="{{ $item.title }}" aria-hidden="true" />
             {{ else }}
-              <i class="{{ $item.icon }} fa-2x" aria-hidden="true"></i>
+              <i class="{{ $item.icon }} sidebar__social-icon" aria-hidden="true"></i>
             {{ end }}
           </a>
         </li>

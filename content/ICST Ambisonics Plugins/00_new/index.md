@@ -8,7 +8,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-----
+-
 # ICST Ambisonics Plugins v3.2 
 
 _**Now Available!**_
@@ -63,7 +63,7 @@ A clearer and more modular structure:
 - Independent Ambisonics order, weighting, filters, mute, and gain
 - Precise spatial tuning for complex arrays
 
-📖 **Multi-Decoder Tutorial:** [ICST AmbiDecoder – Multi-Decoder Mode](content/ICST Ambisonics Plugins/09_icst_multidecoder)
+📖 **Multi-Decoder Tutorial:** [ICST AmbiDecoder – Multi-Decoder Mode](/icst-ambisonics-plugins/09_icst_multidecoder/)
 ![MultiDecoder](Multidecoder.png)
 
 ### New Project-templates

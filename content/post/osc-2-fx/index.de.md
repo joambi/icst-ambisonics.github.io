@@ -6,6 +6,10 @@ year: 2025
 month: 2025-05
 weight: 3
 tags: ["osc", "fx", "ambiencoder", "reaper", "automation"]
+
+key_points:
+  - "Mappe OSC-Streams auf FX-Parameter fuer raeumlich reaktive Verarbeitung."
+  - "Baue robuste Signal- und Kontrollpfade zwischen Encoder und Effekten."
 DisableComments: false
 ---
 
@@ -13,8 +17,11 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
------
+--
 # ICST AmbiEncoder sendet OSC zu FX-Plugins-Parameter
+
+**Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Sound Engineer.
+
 
 
 ### Integration des ICST AmbiEncoder mit IEM FdnReverb via OSC

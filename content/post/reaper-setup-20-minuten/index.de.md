@@ -6,12 +6,22 @@ year: 2026
 month: 2026-03
 weight: 21
 tags: ["reaper", "ambiencoder", "tutorial", "workflow"]
+key_points:
+  - "Fuehre ein schnelles 20-Minuten-Setup mit direkten Docs-Links aus."
+  - "Pruefe Routing, Bewegung und Monitoring in einem kompakten Durchlauf."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
 # Reaper Ambisonics Setup in 20 Minuten (ICST Workflow)
+
+**Für wen:** Level: Beginner | Zielgruppe: Komponist:in, Studierende, DAW-Einsteiger:in.
+
+
+Diese Seite ist die **Ausfuehrungs-Checkliste** (klickorientiert).
+Fuer Onboarding-Logik und systematische Fehlersuche siehe:
+- [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 
 ## Was du am Ende erreicht hast
 Du hast eine lauffaehige Reaper-Session mit ICST AmbiEncoder, sauberem Routing und einem schnellen Monitoring-Check.
@@ -20,23 +30,36 @@ Du hast eine lauffaehige Reaper-Session mit ICST AmbiEncoder, sauberem Routing u
 - Reaper installiert.
 - ICST Ambisonics Plugins installiert.
 - Audio-Interface mit passender I/O-Konfiguration.
+- Docs dazu: [Installation](/icst-ambisonics-plugins/02_installation/)
 
 ## Schritt 1 - Session vorbereiten
 Lege eine neue Session an, setze Sample Rate und definiere ein klares Track-Layout fuer Quellen, B-Format-Bus und Monitoring.
+- Docs dazu:
+  - [Schnellstart](/icst-ambisonics-plugins/04_quick_start/)
+  - [Schritt-fuer-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 
 ## Schritt 2 - ICST AmbiEncoder korrekt routen
 Lade den AmbiEncoder auf den Quelltracks und route die Ausgaenge in den zentralen B-Format-Bus. Pruefe danach die Kanalzuordnung im Routing-Fenster.
+- Docs dazu:
+  - [Spurvorlagen](/icst-ambisonics-plugins/05_open_track_templates/)
+  - [Wie es funktioniert](/icst-ambisonics-plugins/03_how_it_works/)
+  - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
 
 ## Schritt 3 - Erste Quelle raeumlich bewegen
 Bewege eine einzelne Quelle in X/Y/Z, speichere ein Preset und pruefe die Bewegung in der Radar-Ansicht.
+- Docs dazu:
+  - [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
+  - [Schritt-fuer-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 
 ## Schritt 4 - Monitoring und Schnelltest
 Fuehre einen kurzen Pegel- und Hoertest durch und verifiziere, dass alle Kanaele erwartungsgemaess reagieren.
+- Docs dazu:
+  - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
+  - [Schritt-fuer-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 
-## Haeufige Fehler und schnelle Fixes
-- Kein Signal: Input-/Track-Arming pruefen.
-- Falsches Routing: Bus-Zuordnung im Track Routing korrigieren.
-- Keine Bewegung sichtbar: Falscher Plugin-Track oder Preset nicht geladen.
+## Haeufige Fehler
+Die ausfuehrliche Debug-Liste liegt im Onboarding-Guide:
+- [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 
 ## Downloads und weiterfuehrende Artikel
 - [ICST Ambisonics Tools](/icst%20ambisonics%20tools/)

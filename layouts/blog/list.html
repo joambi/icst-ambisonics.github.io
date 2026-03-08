@@ -1,54 +1,132 @@
 {{ define "main" }}
-
-  {{/* Intro text from _index.md */}}
   {{ with .Content }}
-  <div class="post {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
-    <div class="post__content">{{ . }}</div>
-  </div>
-  {{ end }}
-
-  {{ $pages := .Data.Pages.ByWeight }}
-  {{ $groups := slice "Studio" "Residents" "Listening" }}
-
-  {{ range $groups }}
-    {{ $group := . }}
-    {{ $groupPages := where $pages "Params.group" $group }}
-    {{ if $groupPages }}
-
-    <div class="archive {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
-      <div class="archive__heading">{{ $group }}</div>
-
-      {{ range $groupPages }}
-        <ul class="archive__list">
-          <li class="archive__list-item">
-            {{ if (eq $.Site.Params.disableArchiveTitleStyling true) }}
-              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
-            {{ else }}
-              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
-            {{ end }}
-            {{ with .Description }}
-              <div style="font-size: 0.82em; opacity: 0.62; margin-top: 0.1em; font-style: italic;">{{ . }}</div>
-            {{ end }}
-          </li>
-        </ul>
-      {{ end }}
-
+    <div class="post {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+      <div class="post__content">{{ . }}</div>
     </div>
-    {{ end }}
   {{ end }}
 
-  {{/* Fallback: pages without a group */}}
-  {{ $ungrouped := where $pages "Params.group" nil }}
-  {{ if $ungrouped }}
   <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
-    {{ range $ungrouped }}
+    <div class="archive__heading">
+      {{ if eq .Site.Language.Lang "de" }}Studio-Bereiche{{ else }}Studio Sections{{ end }}
+    </div>
+    <p class="archive__intro">
+      {{ if eq .Site.Language.Lang "de" }}
+        Diese Seite zeigt Studio-Rubriken, Events und Residency-Bereiche. Für Schritt-für-Schritt-Anleitungen besuchen Sie <a href="/post/">Tutorials</a>.
+      {{ else }}
+        This page lists studio sections, events, and residency areas. For step-by-step guides, visit <a href="/post/">Tutorials</a>.
+      {{ end }}
+    </p>
+    <p class="archive__intro">
+      {{ if eq .Site.Language.Lang "de" }}
+        Der Blog kombiniert Dokumentation und Journal: technische Infrastruktur, musikalische Inhalte und gemischte Produktionsnotizen.
+      {{ else }}
+        This blog combines documentation and journal entries: technical infrastructure, musical content, and mixed production notes.
+      {{ end }}
+    </p>
+
+    <div class="archive__filters" role="group" aria-label="{{ if eq .Site.Language.Lang "de" }}Blog-Filter{{ else }}Blog filters{{ end }}">
+      <button class="archive__filter-btn archive__filter-btn--active" type="button" data-filter="all">{{ if eq .Site.Language.Lang "de" }}Alle{{ else }}All{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="technical">{{ if eq .Site.Language.Lang "de" }}Technik{{ else }}Technical{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="music">{{ if eq .Site.Language.Lang "de" }}Musik{{ else }}Music{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="mixed">Mixed</button>
+    </div>
+
+    <div class="archive__recommended">
+      <div class="archive__recommended-title">{{ if eq .Site.Language.Lang "de" }}Empfohlene Einstiege{{ else }}Recommended Starting Points{{ end }}</div>
+      <ul class="archive__recommended-list">
+        <li><a href="/blog/icst-kompositionsstudio-speaker-settings/">{{ if eq .Site.Language.Lang "de" }}Speaker Settings (Technik){{ else }}Speaker Settings (Technical){{ end }}</a></li>
+        <li><a href="/blog/ascolta/">{{ if eq .Site.Language.Lang "de" }}Ascolta (Musik){{ else }}Ascolta (Music){{ end }}</a></li>
+        <li><a href="/blog/icst-composer-studio-blog/">{{ if eq .Site.Language.Lang "de" }}ICST Composer Studio (Mixed){{ else }}ICST Composer Studio (Mixed){{ end }}</a></li>
+        <li><a href="/blog/audio-examples/">{{ if eq .Site.Language.Lang "de" }}Audio Examples (Mixed){{ else }}Audio Examples (Mixed){{ end }}</a></li>
+      </ul>
+    </div>
+
+    {{ range .Pages.ByWeight }}
+      {{ $item := . }}
+      {{ $latest := $item.Date }}
+      {{ $count := 0 }}
+      {{ $kind := "mixed" }}
+      {{ $title := lower $item.Title }}
+      {{ if $item.IsSection }}
+        {{ $count = len $item.RegularPagesRecursive }}
+        {{ if gt $count 0 }}
+          {{ $latest = (index ($item.RegularPagesRecursive.ByDate.Reverse) 0).Date }}
+        {{ end }}
+      {{ end }}
+      {{ if or (in $title "ascolta") (in $title "sounding future") (in $title "concert") }}
+        {{ $kind = "music" }}
+      {{ else if or (in $title "equipment") (in $title "software") (in $title "speaker") (in $title "download") (in $title "regie") (in $title "installation") }}
+        {{ $kind = "technical" }}
+      {{ end }}
       <ul class="archive__list">
-        <li class="archive__list-item">
-          <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+        <li class="archive__list-item archive__list-item--filter" data-kind="{{ $kind }}">
+          <div class="archive__list-main">
+            <a class="archive__list-title" href="{{ $item.RelPermalink }}" title="{{ $item.Title }}">{{ $item.Title }}</a>
+            {{ $desc := $item.Description }}
+            {{ if not $desc }}
+              {{ $desc = $item.Summary | plainify | truncate 190 }}
+            {{ end }}
+            {{ with $desc }}
+              <div class="archive__list-excerpt">{{ . }}</div>
+            {{ end }}
+            <div class="archive__list-meta">
+              {{ if $item.IsSection }}
+                {{ if eq $.Site.Language.Lang "de" }}Einträge: {{ else }}Entries: {{ end }}{{ $count }}
+              {{ else }}
+                {{ if eq $.Site.Language.Lang "de" }}Eintrag{{ else }}Single page{{ end }}
+              {{ end }}
+              ·
+              {{ if eq $.Site.Language.Lang "de" }}
+                {{ if eq $kind "technical" }}Technik{{ else if eq $kind "music" }}Musik{{ else }}Mixed{{ end }}
+              {{ else }}
+                {{ if eq $kind "technical" }}Technical{{ else if eq $kind "music" }}Music{{ else }}Mixed{{ end }}
+              {{ end }}
+            </div>
+          </div>
+          {{ if not $latest.IsZero }}
+            <div class="archive__list-date">
+              {{ if eq $.Site.Language.Lang "de" }}Aktualisiert: {{ else }}Updated: {{ end }}
+              {{ if isset $.Site.Params "listdateformat" }}
+                {{ if $.Site.Params.localizedDates }}
+                  {{ time.Format $.Site.Params.listDateFormat $latest }}
+                {{ else }}
+                  {{ $latest.Format $.Site.Params.listDateFormat }}
+                {{ end }}
+              {{ else }}
+                {{ if $.Site.Params.localizedDates }}
+                  {{ time.Format "Jan 2, 2006" $latest }}
+                {{ else }}
+                  {{ $latest.Format "Jan 2, 2006" }}
+                {{ end }}
+              {{ end }}
+            </div>
+          {{ end }}
         </li>
       </ul>
     {{ end }}
   </div>
-  {{ end }}
+
+  <script>
+    (function () {
+      var root = document.querySelector('.archive');
+      if (!root) return;
+      var buttons = root.querySelectorAll('.archive__filter-btn');
+      var items = root.querySelectorAll('.archive__list-item--filter');
+      if (!buttons.length || !items.length) return;
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var filter = btn.getAttribute('data-filter');
+          buttons.forEach(function (b) { b.classList.remove('archive__filter-btn--active'); });
+          btn.classList.add('archive__filter-btn--active');
+          items.forEach(function (item) {
+            var show = filter === 'all' || item.getAttribute('data-kind') === filter;
+            var row = item.parentElement;
+            if (row) row.style.display = show ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
 
 {{ end }}

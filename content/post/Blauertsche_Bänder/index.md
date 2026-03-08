@@ -2,10 +2,17 @@
 title: Blauert's Bands
 description: "Dokumentiert Blauerts Bänder sowie OSC-Routing und IEM MultiEQ-Frequenzbänder mit Workflow-Hinweisen zu Front/Back und Höhen."
 date: 2025-05-16
+slug: blauerts-bands
+aliases:
+  - /post/blauertsche_bänder/
+  - /post/blauertsche_bänder/
 year: 2025
 month: 2025-05
 weight: 10
 tags: ["perception", "psychoacoustics", "binaural", "theory"]
+key_points:
+  - "Connect perceptual Blauert bands with OSC-driven EQ control in spatial workflows."
+  - "Use frequency-direction mapping to improve front/back and height perception."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
@@ -60,6 +67,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 </style>
 
 # Blauert's Bands
+
+**For whom:** Level: Advanced | Audience: Psychoacoustics-focused composer/researcher.
+
 
 <div class="info-box">
 <strong>What this tutorial covers</strong>

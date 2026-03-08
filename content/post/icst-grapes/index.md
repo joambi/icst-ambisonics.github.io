@@ -6,6 +6,10 @@ year: 2025
 month: 2025-03
 weight: 5
 tags: ["grapes", "osc", "ambiencoder", "spatial audio", "3d control"]
+
+key_points:
+  - "Integrate Grapes 3D control with AmbiEncoder OSC workflows."
+  - "Keep spatial gestures flexible outside fixed DAW automation."
 DisableComments: false
 ---
 
@@ -13,8 +17,8 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
------
-  
+**For whom:** Level: Intermediate | Audience: Spatial performer, controller-based workflow user.
+
 [Grapes 3D Control](https://grapes-3d.com/) is a handy addition to the ICST Ambisonics plugins.
 Grapes come as a standalone and VST3 and can be operated directly in the DAW (Reaper) in sync. 
 

@@ -9,6 +9,8 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
+**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+
 ### What we know:
 
 

@@ -6,6 +6,9 @@ year: 2025
 month: 2025-07
 weight: 9
 tags: ["ambiencoder", "lua", "reaper", "automation", "presets"]
+key_points:
+  - "Waehle, ordne und animiere Quellkreise effizient im ICST AmbiEncoder_64."
+  - "Speichere und lade Bewegungs-Presets fuer reproduzierbare Raum-Szenen."
 ---
 
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
@@ -13,6 +16,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 ---
 
 # ICST_AmbiEncoder_64_CircleSelected_Lua-Presets
+
+**Für wen:** Level: Intermediate | Zielgruppe: Reaper-Power-User, Performance Artist.
+
 
 ## 📃 Benutzer-Dokumentation
 **Script:** `ICST_AmbiEncoder_64_CircleSelected_Presets.lua`

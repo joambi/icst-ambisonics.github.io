@@ -10,6 +10,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ## Online Hörenfolgen
 
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+
+
 ![SoundingFuture](SoundingFuture.png)
 [sounding FUTURE](https://audiospace.soundingfuture.com/)
 

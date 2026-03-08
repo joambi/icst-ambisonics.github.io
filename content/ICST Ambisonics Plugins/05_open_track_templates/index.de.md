@@ -7,7 +7,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-----
+-
 ## 02 Spurvorlagen öffnen
 
 1. Klicken Sie mit der rechten Maustaste in den leeren Spurbereich in **Reaper**.

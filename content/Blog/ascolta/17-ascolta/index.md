@@ -14,6 +14,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ## ascolta — Acousmatic Listening Sessions
 
+**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+
+
 Public listening sessions at the ICST Composition Studio, ZHdK
 Free admission · Open to all
 

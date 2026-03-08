@@ -1,16 +1,78 @@
 {{ define "main" }}
+  {{ with .Content }}
+    <div class="post {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+      <div class="post__content">{{ . }}</div>
+    </div>
+  {{ end }}
+
   <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
-    {{ range .Data.Pages.ByWeight }}
+    <div class="archive__heading">
+      {{ if eq .Site.Language.Lang "de" }}Tutorial-Index{{ else }}Tutorial Index{{ end }}
+    </div>
+    <p class="archive__intro">
+      {{ if eq .Site.Language.Lang "de" }}
+        Suchen Sie Studio-News und Residency-Updates? Diese finden Sie im <a href="/blog/">Studio Blog</a>.
+      {{ else }}
+        Looking for studio news and residency updates? You can find them in the <a href="/blog/">Studio Blog</a>.
+      {{ end }}
+    </p>
+
+    {{ $pages := .RegularPages.ByDate.Reverse }}
+    {{ range $pages }}
       <ul class="archive__list">
         <li class="archive__list-item">
-          {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
+          <div class="archive__list-main">
             <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
-          {{ else }}
-            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
-          {{ end }}
-          {{ if not .Date.IsZero }}
-          <div class="archive__list-date">{{ .Date.Format "Jan 2" }}</div>
-          {{ end }}
+            {{ $desc := .Description }}
+            {{ if not $desc }}
+              {{ $desc = .Summary | plainify | truncate 190 }}
+            {{ end }}
+            {{ with $desc }}
+              <div class="archive__list-excerpt">{{ . }}</div>
+            {{ end }}
+            <ul class="archive__keypoints">
+              {{ with .Params.key_points }}
+                {{ range first 2 . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              {{ else }}
+                {{ with $desc }}
+                  <li>{{ . | plainify | truncate 120 }}</li>
+                {{ end }}
+                {{ with .Params.tags }}
+                  <li>
+                    {{ if eq $.Site.Language.Lang "de" }}Fokus: {{ else }}Focus: {{ end }}
+                    {{ range $idx, $tag := first 2 . }}{{ if gt $idx 0 }}, {{ end }}{{ $tag }}{{ end }}
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+            {{ with .Params.tags }}
+              <div class="archive__list-meta">
+                {{ range first 4 . }}#{{ . }} {{ end }}
+              </div>
+            {{ end }}
+          </div>
+          <div class="archive__list-date">
+            <div>
+            {{ if isset .Site.Params "listdateformat" }}
+              {{ if .Site.Params.localizedDates }}
+                {{ time.Format .Site.Params.listDateFormat .Date }}
+              {{ else }}
+                {{ .Date.Format .Site.Params.listDateFormat }}
+              {{ end }}
+            {{ else }}
+              {{ if .Site.Params.localizedDates }}
+                {{ time.Format "Jan 2, 2006" .Date }}
+              {{ else }}
+                {{ .Date.Format "Jan 2, 2006" }}
+              {{ end }}
+            {{ end }}
+            </div>
+            <div class="archive__readtime">
+              {{ if eq .Site.Language.Lang "de" }}{{ .ReadingTime }} Min. Lesezeit{{ else }}{{ .ReadingTime }} min read{{ end }}
+            </div>
+          </div>
         </li>
       </ul>
     {{ end }}

@@ -10,9 +10,12 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-----
+-
 
 # **Überblick über das ICST Kompositionsstudio**
+
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+
 Status April 2023
 
 ![Regie-Tisch](foto_1.png)
