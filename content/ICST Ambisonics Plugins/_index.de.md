@@ -10,6 +10,8 @@ cascade:
   hidesidebar: true
 ---
 
-Institute for Computer Music and Sound Technology (ICST) · Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 Die ICST Ambisonics Plugins codieren und dekodieren das Ambisonics B-Format und stellen räumliche Audioproduktionswerkzeuge für die **REAPER** Digital Audio Workstation zur Verfügung.

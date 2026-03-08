@@ -9,9 +9,10 @@ tags: ["maxmsp", "osc", "ambimonitor", "ambiencoder", "bidirectional"]
 DisableComments: false
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 # Bidirektionale OSC-Kommunikation mit MaxMSP
 
 Generiere Bewegungsdaten in Max und sende sie via OSC zum _ICST AmbiEncoder_ in deiner DAW. Alternativ kannst du eine Bewegungskomposition von deiner DAW zu den _icst.ambisonics-externals_ übertragen.
@@ -73,4 +74,3 @@ Für **Index-basierte Adressierung**:
 
 ----
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
-

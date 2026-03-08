@@ -2,9 +2,10 @@
 date: 2025-07-08T11:37:00
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 SPS (Spatial PCM Sampling) or P-Format.
 
 _SPS can be considered as an alternative approach to Higher-Order Ambisonics._
@@ -31,4 +32,3 @@ The workflow is as follows:
 Literature:
 - A.Farina [upv.es/contenidos/ISVA2011/info/U0568405.pdf](https://www.upv.es/contenidos/ISVA2011/info/U0568405.pdf)
 - [SPS and Mach1 spatial audio formats](https://www.angelofarina.it/SPS-conversion.htm)
-

@@ -1,11 +1,11 @@
 ---
 title: Was Wir Wissen
 description: "Einblicke in aktuelle Entwicklungen des ICST Kompositionsstudios und der Ambisonics-Praxis."
-date:
+date: 2025-01-01T00:00:00
 weight: 16
 draft: true
 ---
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
@@ -13,4 +13,3 @@ Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of t
 
 
 * Lautsprecher-Einstellungen:  \[?\] About ist leer
-

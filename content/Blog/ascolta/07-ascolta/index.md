@@ -5,9 +5,10 @@ date: 2023-06-06T18:00:00
 weight: 7
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 # #07 ascolta Acousmatic Listening Session
 
 ![ascolta](ascolta.png)

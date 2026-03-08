@@ -4,7 +4,7 @@ description: "Ueberblick zur Klangkunstreihe Sounding Future und zur Erkundung i
 date: 2025-06-11T15:09:00
 weight: 14
 ---
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 

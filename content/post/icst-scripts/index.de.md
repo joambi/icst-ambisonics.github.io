@@ -7,7 +7,9 @@ month: 2025-07
 weight: 8
 tags: ["ambiencoder", "automation", "lua", "reaper"]
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 ----
 # ICST AmbiEncoder_64 Spiral Walk - Dokumentation

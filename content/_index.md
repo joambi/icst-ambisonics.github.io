@@ -2,6 +2,12 @@
 title: "ICST Ambisonics"
 description: "Spatial Audio Plugins & Tutorials"
 mainSectionsTitle: "Latest Posts"
+aliases:
+  - /home/
+---
+
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
 ---
 
 **Institute for Computer Music and Sound Technology (ICST)**

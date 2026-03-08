@@ -8,7 +8,7 @@ weight: 6
 tags: ["gyrosc", "osc", "mobile", "ambiencoder", "reaper"]
 author: Johannes Schuett
 ---
-Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
@@ -77,7 +77,6 @@ JS-Code:
 
 ---
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
-
 
 
 

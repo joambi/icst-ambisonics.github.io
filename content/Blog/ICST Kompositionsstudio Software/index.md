@@ -5,9 +5,10 @@ date: 2025-05-28T15:11:00
 weight: 4
 group: "Studio"
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 Software and plugin environment for production at the ICST Mac Pro.
 
 <div class="home-cards">

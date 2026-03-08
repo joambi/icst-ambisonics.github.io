@@ -6,9 +6,10 @@ Categories:
 DisableComments: false
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 The Privacy Policy is powered by [iubenda ](https://www.iubenda.com/en/cookie-solution?utm_source=cs&utm_medium=web&utm_campaign=csbr1)
 ### Privacy Policy ambisonics.ch   
   

@@ -5,7 +5,7 @@ weight: -1
 description: "Das ICST Kompositionsstudio an der ZHdK — ein Higher-Order Ambisonics Produktionsraum für elektroakustische Musik und Klangkunst."
 ---
 
-Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule der Künste
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 

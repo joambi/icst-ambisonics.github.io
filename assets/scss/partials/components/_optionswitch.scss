@@ -6,7 +6,11 @@
 
   &__label {
     cursor: pointer;
-    white-space: nowrap;
+    white-space: normal;
+
+    @include conf.desktop {
+      white-space: nowrap;
+    }
   }
 
   &__list {
@@ -31,15 +35,19 @@
       display: block;
       line-height: 1;
       bottom: 0;
-      text-align: center;
-      white-space: nowrap;
-      padding-top: 24px;
+      text-align: left;
+      white-space: normal;
+      padding-top: 10px;
+      padding-left: 10px;
 
       @include color.themed() {
         color: color.t('primary');
       }
 
       @include conf.desktop {
+        text-align: center;
+        white-space: nowrap;
+        padding-left: 12px;
         padding: 12px;
       }
     }

@@ -3,9 +3,10 @@ weight: 70
 title: Step by Step Setup
 date: 2025-01-23T15:38:00
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 # Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper
 
 ---

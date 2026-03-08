@@ -3,7 +3,9 @@ title: Schnellstart
 weight: 60
 date: 2025-01-28T14:31:00
 ---
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 ----
 ## Schnellstart mit **ICST_AmbiPlugins_MultiEncoder.RPP**

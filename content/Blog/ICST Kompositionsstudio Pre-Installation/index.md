@@ -5,9 +5,10 @@ date: 2025-06-03T15:10:00
 weight: 2
 group: "Residents"
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 # Pre-installation for your external laptop
 
 ### **AUDIO**

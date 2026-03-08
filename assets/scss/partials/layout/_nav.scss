@@ -5,12 +5,16 @@
   $py-desktop: 24px;
 
   display: none;
+  max-height: 70vh;
+  overflow-y: auto;
 
   @include conf.desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: none;
+    max-height: none;
+    overflow-y: visible;
   }
 
   &__list {
@@ -38,12 +42,16 @@
     }
 
     &-item {
-      padding: 16px 0;
-      text-transform: uppercase;
-      text-align: center;
-      white-space: nowrap;
+      padding: 12px 16px;
+      text-transform: none;
+      text-align: left;
+      white-space: normal;
+      line-height: 1.35;
 
       @include conf.desktop {
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
         padding-top: 0;
         padding-bottom: 0;
 
@@ -60,10 +68,15 @@
   }
 
   &__link {
+    display: inline-block;
+    width: 100%;
+
     &--active {
-      padding-bottom: $py-desktop;
+      font-weight: 700;
 
       @include conf.desktop {
+        padding-bottom: $py-desktop;
+
         @include color.themed() {
           border-bottom: 1px solid color.t('primary');
         }

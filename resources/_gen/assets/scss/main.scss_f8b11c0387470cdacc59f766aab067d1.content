@@ -88,6 +88,8 @@ body {
 
 .nav {
   display: none;
+  max-height: 70vh;
+  overflow-y: auto;
 }
 @media screen and (min-width: 961px) {
   .nav {
@@ -95,6 +97,8 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: none;
+    max-height: none;
+    overflow-y: visible;
   }
 }
 .nav__list {
@@ -126,13 +130,17 @@ body {
   }
 }
 .nav__list-item {
-  padding: 16px 0;
-  text-transform: uppercase;
-  text-align: center;
-  white-space: nowrap;
+  padding: 12px 16px;
+  text-transform: none;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.35;
 }
 @media screen and (min-width: 961px) {
   .nav__list-item {
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -140,10 +148,17 @@ body {
     padding-right: 20px;
   }
 }
+.nav__link {
+  display: inline-block;
+  width: 100%;
+}
 .nav__link--active {
-  padding-bottom: 24px;
+  font-weight: 700;
 }
 @media screen and (min-width: 961px) {
+  .nav__link--active {
+    padding-bottom: 24px;
+  }
   .theme--light .nav__link--active {
     border-bottom: 1px solid #464646;
   }
@@ -481,7 +496,12 @@ body {
 }
 .optionswitch__label {
   cursor: pointer;
-  white-space: nowrap;
+  white-space: normal;
+}
+@media screen and (min-width: 961px) {
+  .optionswitch__label {
+    white-space: nowrap;
+  }
 }
 .optionswitch__list {
   display: none;
@@ -509,9 +529,10 @@ body {
   display: block;
   line-height: 1;
   bottom: 0;
-  text-align: center;
-  white-space: nowrap;
-  padding-top: 24px;
+  text-align: left;
+  white-space: normal;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .theme--light .optionswitch__list-item {
   color: #464646;
@@ -521,6 +542,9 @@ body {
 }
 @media screen and (min-width: 961px) {
   .optionswitch__list-item {
+    text-align: center;
+    white-space: nowrap;
+    padding-left: 12px;
     padding: 12px;
   }
 }

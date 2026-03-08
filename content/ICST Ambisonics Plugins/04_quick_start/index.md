@@ -3,7 +3,9 @@ weight: 60
 title: Quick Start
 date: 2025-01-28T14:31:00
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 ----
 ## Quick Start with **ICST_AmbiPlugins_MultiEncoder.RPP**

@@ -4,7 +4,9 @@ title: Tutorials
 description: "Step-by-step tutorials for the ICST Ambisonics Plugins — OSC control, MaxMSP integration, Ableton Live workflow, GyrOSC, and more."
 author: Johannes Schuett
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 
 - [ICST AmbiEncoder – OSC Syntax](osc-syntax-for-the-icst-ambiencoder-plugin)

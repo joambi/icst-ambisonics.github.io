@@ -2,6 +2,10 @@
 categories:
   - "[[ICST Ambisonics Plugins]]"
 ---
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
+
 ----
 
 Das Decoding ist die zentrale Schnittstelle zwischen dem Ambisonics-B-Format und der physischen Lautsprecherwiedergabe – seine Qualität entscheidet über räumliche Präzision, Tiefenstaffelung und Lokalisation.

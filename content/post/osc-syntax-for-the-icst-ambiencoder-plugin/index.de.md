@@ -9,7 +9,7 @@ tags: ["osc", "syntax", "ambiencoder", "reference"]
 DisableComments: false
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
@@ -144,4 +144,3 @@ Der AmbiEncoder kann auch die meisten seiner Parameter über OSC senden.
 
 * * *
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
-

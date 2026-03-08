@@ -6,7 +6,9 @@ weight: 0
 group: "Residents"
 languageCode: de
 ---
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 Downloads für Studio- und Ambisonics-Workflows an einem Ort.
 

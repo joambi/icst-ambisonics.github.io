@@ -9,7 +9,10 @@ tags: ["ableton", "reaper", "workflow", "ambiencoder", "tutorial", "blackhole"]
 DisableComments: false
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
+
 
 * * *
 # AbletonLive zu ICST Ambisonics MultiEncoder in Reaper

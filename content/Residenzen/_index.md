@@ -4,7 +4,9 @@ description: "International artist residencies at the ICST Composition Studio â€
 hidesidebar: true
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Â· Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 International artists create their 3D audio works at the ICST Composition Studio using Ambisonics technology. The residencies enable creative work processes in the field of spatial sound design and electroacoustic composition.
 

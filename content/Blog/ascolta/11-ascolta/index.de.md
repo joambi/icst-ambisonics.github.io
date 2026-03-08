@@ -5,7 +5,10 @@ date: 2024-06-11T18:00:00
 weight: 11
 ---
 
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
+
 
 * * *
 

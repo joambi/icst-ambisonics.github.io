@@ -4,7 +4,9 @@ date: 2025-11-03T16:13:00
 weight: 20
 ---
 
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 ----
 # ICST Ambisonics Plugins v3.2

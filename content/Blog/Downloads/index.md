@@ -5,7 +5,9 @@ date: 2025-06-12T15:09:00
 weight: 0
 group: "Residents"
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 Downloads for studio and Ambisonics workflows in one place.
 

@@ -5,9 +5,10 @@ date: 2025-06-09T15:10:00
 weight: 3
 group: "Studio"
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 Core equipment and practical checklist for work at the ICST composition studio.
 
 <div class="home-cards">

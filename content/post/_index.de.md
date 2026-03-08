@@ -5,7 +5,9 @@ description: "Schritt-für-Schritt-Anleitungen für die ICST Ambisonics Plugins 
 author: Johannes Schuett
 languageCode: de
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 
 - [ICST AmbiEncoder – OSC Syntax](osc-syntax-for-the-icst-ambiencoder-plugin)

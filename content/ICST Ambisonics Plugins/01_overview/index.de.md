@@ -9,7 +9,10 @@ title: Übersicht
 ---
 
 
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
+
 
 * * *
 
@@ -33,7 +36,7 @@ Finden Sie einzelne Seiten hier:
 **Kostenlos herunterladen hier:**
 -  Binärer Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 -  Dokumentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
-- Tutorials, Blog: <https://ambisonics.ch/home/>
+- Tutorials, Blog: <https://ambisonics.ch/>
 - Youtube: [https://www.youtube.com/\@ICSTAmbisonics](https://www.youtube.com/@ICSTAmbisonics)
 - <span style="color:rgb(220, 20, 60)">Warnung</span>:  LV2 ist sehr experimentell
 

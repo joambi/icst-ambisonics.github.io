@@ -8,6 +8,10 @@ weight: 9
 tags: ["ambiencoder", "lua", "reaper", "automation", "presets"]
 ---
 
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
+
 # ICST_AmbiEncoder_64_CircleSelected_Lua-Presets
 
 ## 📃 Benutzer-Dokumentation
@@ -123,4 +127,3 @@ tags: ["ambiencoder", "lua", "reaper", "automation", "presets"]
 - **Features:** Presets, Export/Import, Visualisierung, auswählbare Punkte
 
 ---
-

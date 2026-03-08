@@ -7,7 +7,9 @@ month: 2025-05
 weight: 10
 tags: ["perception", "psychoacoustics", "binaural", "theory"]
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 ----
 # Blauertsche Bänder:
@@ -48,4 +50,3 @@ Back:![Back](Back.png)
 - [sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf](https://sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf)
 
 ---
-

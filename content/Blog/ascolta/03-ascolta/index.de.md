@@ -5,9 +5,10 @@ date: 2022-11-15T18:00:00
 weight: 3
 ---
 
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 # #03 ascolta Akousmatische Hörstunde
 
 ![ascolta](ascolta.png)

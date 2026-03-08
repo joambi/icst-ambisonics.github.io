@@ -9,12 +9,13 @@ tags: []
 languageCode: de
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
-* * *
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 ### ICST Ambisonics
 
 - [The ICST Ambisonics Tools](https://joambi.github.io/icst-ambisonics.github.io/icst-ambisonics-tools/)
-- [Übersicht über die ICST Ambisonics Plugins](https://joambi.github.io/icst-ambisonics.github.io/home/)
+- [Übersicht über die ICST Ambisonics Plugins](https://ambisonics.ch/)
 - [Spezifikation:](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - [Downloads:](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 - [Video-Anleitungen](https://www.youtube.com/@ZHDK_ICST)
@@ -75,6 +76,21 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - https://link.springer.com/referenceworkentry/10.1007/978-3-662-60357-4_25-1
 - https://www.waves.com/ambisonics-explained-guide-for-sound-engineers
 - [REAPER Ambisonics Forum](https://forum.cockos.com/forumdisplay.php?s=75823a68d22b96a21e8025b8fea609ad&f=53)
+
+### Literatur: Buecher und Papers
+
+#### Buecher
+
+- [Ambisonics: A Practical 3D Audio Theory (Zotter, Frank, 2019, Open Access)](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+- [Parametric Time-Frequency Domain Spatial Audio (Pulkki, Delikaris-Manias, Politis, 2017)](https://doi.org/10.1002/9781119252634)
+- [Immersive Sound: The Art and Science of Binaural and Multi-Channel Audio (Rumsey, 2012)](https://www.routledge.com/Immersive-Sound-The-Art-and-Science-of-Binaural-and-Multi-Channel-Audio/Rumsey/p/book/9780240815091)
+
+#### Schluessel-Papers
+
+- [Periphony: With-Height Sound Reproduction (Gerzon, JAES, 1973)](https://ringbuffer.org/papers/gerzon1973periphony.html)
+- [Ambisonics in Multichannel Broadcasting and Video (Gerzon, JAES, 1985 issue reference)](https://www.aes-media.org/historical/pdf/jaes-contents-v30-39.pdf)
+- [Sector-Based Parametric Sound Field Reproduction in the Spherical Harmonic Domain (Politis, Vilkamo, Pulkki, 2015)](https://doi.org/10.1109/JSTSP.2015.2415762)
+- [Parametric Spatial Audio Reproduction with Higher-Order B-Format Microphone Input (Pulkki et al., AES 134th Convention, 2013)](https://publica.fraunhofer.de/entities/publication/649e4c9c-4d59-476c-9928-4a35a33bd090)
 
 ### Weitere Ambisonics-Ressourcen
 

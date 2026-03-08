@@ -4,6 +4,10 @@ description: A compact introduction to Ambisonics, B-format, typical setups, and
 slug: ambisonics-101
 ---
 
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
+
 ## 1. What Is Ambisonics?
 Ambisonics is a format-agnostic way to represent a full sound field in 3D. Instead of mixing directly for a fixed speaker layout, you work with a spatial representation that can later be rendered for different playback systems.
 
@@ -21,4 +25,3 @@ Headphones use binaural rendering and are practical for editing, checking transl
 - Use the [ICST Ambisonics Tools](/icst-ambisonics-tools/) for Max/MSP workflows.
 - Explore [Ascolta](/blog/ascolta/) for listening practice and references.
 - Continue with tutorials and articles in the [Blog & Tutorials](/post/).
-

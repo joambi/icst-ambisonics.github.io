@@ -5,9 +5,10 @@ date: 2025-05-05T16:43:00
 weight: 1
 group: "Studio"
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 #### **Studio for Composition**
 
 The Studio of the ICST is a Surround-Studio with 17 Geithain Speakers (8+5+4) and stereo-monitoring.

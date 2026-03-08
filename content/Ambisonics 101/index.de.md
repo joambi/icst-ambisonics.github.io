@@ -5,6 +5,10 @@ slug: ambisonics-101
 languageCode: de
 ---
 
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
+
 ## 1. Was ist Ambisonics?
 Ambisonics ist eine formatagnostische Methode, ein räumliches 3D-Klangfeld zu beschreiben. Statt direkt für ein fixes Lautsprecher-Layout zu mischen, arbeitet man mit einer räumlichen Repräsentation, die später für unterschiedliche Wiedergabesysteme gerendert werden kann.
 
@@ -22,4 +26,3 @@ Kopfhörer arbeiten mit binauralem Rendering und sind praktisch für Editing, Tr
 - Nutze die [ICST Ambisonics Tools](/icst-ambisonics-tools/) für Max/MSP-Workflows.
 - Höre in [Ascolta](/blog/ascolta/) und nutze die Hörbeispiele als Referenz.
 - Gehe weiter mit den [Anleitungen & Tutorials](/post/).
-

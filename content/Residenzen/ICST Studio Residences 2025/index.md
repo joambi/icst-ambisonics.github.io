@@ -4,7 +4,7 @@ date: 2025-09-16T00:00:00
 hideDate: true
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 

@@ -3,9 +3,10 @@ title: Tastaturkürzel
 weight: 140
 date: 2025-01-22T14:36:00
 ---
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 **Aktionen in Encoder und Decoder verfügbar:**
 
 - **Vergrößern:** _Rechte Maustaste Klick / Mausrad_

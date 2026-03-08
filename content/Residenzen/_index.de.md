@@ -5,7 +5,9 @@ hidesidebar: true
 languageCode: de
 ---
 
-Institute for Computer Music and Sound Technology (ICST) · Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 Internationale Künstlerinnen und Künstler schaffen ihre 3D-Audioarbeiten am ICST Kompositionsstudio mit Ambisonics-Technologie. Die Residenzen ermöglichen kreative Arbeitsprozesse im Bereich räumliches Sound Design und elektroakustische Komposition.
 

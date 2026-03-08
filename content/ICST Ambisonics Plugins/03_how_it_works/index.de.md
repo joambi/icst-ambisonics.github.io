@@ -4,7 +4,9 @@ title: Wie es funktioniert
 weight: 50
 date: 2025-02-01T19:26:00
 ---
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 ----
 

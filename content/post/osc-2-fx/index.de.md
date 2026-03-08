@@ -9,7 +9,9 @@ tags: ["osc", "fx", "ambiencoder", "reaper", "automation"]
 DisableComments: false
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 -----
 # ICST AmbiEncoder sendet OSC zu FX-Plugins-Parameter
@@ -49,4 +51,3 @@ Mit zunehmender Entfernung wird auch die Reverb-Intensität zunehmen. Experiment
 
 ----
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
-

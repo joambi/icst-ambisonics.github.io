@@ -5,7 +5,7 @@ description: "News, studio documentation, and updates from the ICST Composition 
 date: 2025-06-28T16:13:00
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 

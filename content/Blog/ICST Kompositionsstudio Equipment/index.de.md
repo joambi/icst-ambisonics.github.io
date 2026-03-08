@@ -6,9 +6,10 @@ weight: 3
 group: "Studio"
 languageCode: de
 ---
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 Zentrale Ausstattung und praktische Checkliste für die Arbeit im ICST Kompositionsstudio.
 
 <div class="home-cards">

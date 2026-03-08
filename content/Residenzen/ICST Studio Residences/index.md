@@ -5,7 +5,9 @@ weight: 1
 hideDate: true
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 ----
 # Artist residencies at the ICST Composition Studio
@@ -19,4 +21,3 @@ At the ICST composition studio, international artists create their 3D audio work
 
 ---
 <span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>
-

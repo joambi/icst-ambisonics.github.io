@@ -3,9 +3,10 @@ weight: 140
 title: Shortcuts
 date: 2025-01-22T14:36:00
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 **Actions available in Encoder and Decoder:**
 
 - **Zoom In:** _Right Mouse Button Click / MouseWheel_

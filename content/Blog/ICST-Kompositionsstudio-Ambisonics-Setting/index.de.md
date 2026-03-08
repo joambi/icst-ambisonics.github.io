@@ -7,9 +7,10 @@ group: "Studio"
 languageCode: de
 ---
 
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 Ambisonics-Lautsprecher-Setup und Koordinaten
 **Beispiel für „ICST_AmbiDecoder 3.1.0" VST3 (2025)**
 

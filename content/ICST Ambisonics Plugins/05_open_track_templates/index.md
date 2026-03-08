@@ -3,7 +3,9 @@ weight: 120
 date: 2025-01-27T14:32:00
 title: Track Templates
 ---
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 ----
 ## 02 Open Track Templates

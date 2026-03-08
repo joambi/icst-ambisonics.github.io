@@ -6,9 +6,10 @@ weight: 6
 group: "Studio"
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 Ambisonics - speaker - setting and coordinates
 **Example for „ICST\_AmbiDecoder 3.1.0" VST3  (2025)**
 

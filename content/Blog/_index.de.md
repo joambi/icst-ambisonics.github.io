@@ -5,3 +5,6 @@ description: "Nachrichten, Studio-Dokumentation und Updates vom ICST Komposition
 date: 2025-06-28T16:13:00
 languageCode: de
 ---
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---

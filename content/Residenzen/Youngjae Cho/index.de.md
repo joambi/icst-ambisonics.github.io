@@ -7,7 +7,7 @@ _build:
   render: always
 ---
 
-Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule der Künste
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 

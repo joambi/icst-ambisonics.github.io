@@ -6,7 +6,10 @@ weight: 7
 group: "Residents"
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
+
 
 * * *
 # ICST support for the composition studio

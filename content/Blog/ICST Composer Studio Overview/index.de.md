@@ -6,9 +6,10 @@ weight: 1
 group: "Studio"
 languageCode: de
 ---
-Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
+
 #### **Studio für Komposition**
 
 Das ICST-Kompositionsstudio ist ein Surround-Studio mit 17 Geithain-Lautsprechern (8+5+4) und Stereo-Monitoring. Ein Mac Pro bietet verschiedene Software für Sequencing, HD-Recording, Sound-Tools, MAX MSP/Jitter und PD. Das Studio eignet sich besonders für die Produktion von Ambisonics- und Surround-Musik. Es verbindet aktuelle Technologien mit musikalischer Praxis und legt den Fokus auf Klangforschung, Computermusik und Medienkunst. Das Studio unterstützt die Produktion und Komposition neuer Werke elektronischer Musik sowie Klang- und Medienkunst.

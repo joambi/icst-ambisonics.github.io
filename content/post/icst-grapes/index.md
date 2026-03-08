@@ -9,7 +9,9 @@ tags: ["grapes", "osc", "ambiencoder", "spatial audio", "3d control"]
 DisableComments: false
 ---
 
-Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
+Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
+
+---
 
 -----
   
