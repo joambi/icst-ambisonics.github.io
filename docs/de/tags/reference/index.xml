@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Reference on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/tags/reference/</link>
+
+    <description>
+      Recent content
+      
+         in Reference 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/tags/reference/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST AmbiEncoder – OSC Syntax</title>
+      <link>https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/</link>
+      <guid>https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;osc-syntax-für-das-icst-ambiencoder-plugin&#34;&gt;OSC Syntax für das ICST AmbiEncoder Plugin&lt;/h2&gt;
+&lt;p&gt;Der &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; unterstützt &lt;strong&gt;OSC&lt;/strong&gt; und &lt;strong&gt;JavaScript&lt;/strong&gt;, was eine nahtlose Kommunikation mit OSC-Tools wie &lt;strong&gt;TouchOSC, IanniX, MaxMSP&lt;/strong&gt; und andere OSC-fähige Software ermöglicht.&lt;/p&gt;
+&lt;h3 id=&#34;funktionsweise&#34;&gt;&lt;strong&gt;Funktionsweise&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Öffne den Tab &lt;strong&gt;&amp;lsquo;OSC In&amp;rsquo;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png&#34; alt=&#34;OSC IN-OUT&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Abbildung: Encoder-Einstellung &amp;lsquo;OSC In&amp;rsquo; empfängt auf Port 50001&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Alle Informationen findest du im &lt;strong&gt;Help&lt;/strong&gt;-Bereich, indem du auf das Fragezeichen (&lt;strong&gt;?&lt;/strong&gt;) klickst.&lt;/p&gt;
+&lt;h4 id=&#34;osc-in&#34;&gt;&lt;strong&gt;OSC In&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Receive OSC&lt;/strong&gt;: Empfange OSC-Befehle auf dem definierten Port (Standard: 50001). Die vollständige OSC-Spezifikation ist im Help-Bereich des Plugins verfügbar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Send Positions for External Usage&lt;/strong&gt;: Diese Funktion sendet Audio-Quellenpositionen als OSC-Nachrichten an ein definiertes Ziel/einen Port. Nachrichten lösen Positionswechsel aus, und die Update-Rate ist auf &lt;strong&gt;20Hz (50ms)&lt;/strong&gt; begrenzt.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;osc-syntax--adressspezifikation&#34;&gt;&lt;strong&gt;OSC Syntax &amp;amp; Adressspezifikation&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;1-zugriff-auf-osc-spezifikationen&#34;&gt;&lt;strong&gt;1. Zugriff auf OSC-Spezifikationen&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Klicke auf das &lt;strong&gt;Fragezeichen&lt;/strong&gt; im ICST AmbiEncoder.
+&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/OSX-Syntax.png&#34; alt=&#34;osc-in-help&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Abbildung: OSC-Spezifikationen im Help-Bereich.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Verfügbare Abschnitte:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Help (&lt;strong&gt;?&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;OSC Syntax&lt;/li&gt;
+&lt;li&gt;Sections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-eingehende-osc-nachrichten&#34;&gt;&lt;strong&gt;2. Eingehende OSC-Nachrichten&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Nachrichten können sein:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Index-basiert&lt;/strong&gt; (Quellen-Index), z.B. &lt;code&gt;1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name-basiert&lt;/strong&gt; (Quellenname), z.B. &lt;code&gt;flute&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;quellenposition-setzen-aed-format&#34;&gt;&lt;strong&gt;Quellenposition setzen (AED Format)&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;	/icst/ambi/source/aed [ChannelName] [Azimuth] [Elevation] [Distance]
+	/icst/ambi/source/aed &amp;#39;S1&amp;#39; 45 10 0.8
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;quellenposition-setzen-xyz-format&#34;&gt;&lt;strong&gt;Quellenposition setzen (XYZ Format)&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;	/icst/ambi/source/xyz [ChannelName] [X] [Y] [Z]
+	/icst/ambi/source/xyz &amp;#39;S2&amp;#39; 0.2 0.2 0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt; Der Kanalname (z.B S1, S2) wird als &lt;strong&gt;Symbol&lt;/strong&gt; gesendet.&lt;/p&gt;
+&lt;h4 id=&#34;quellenposition-nach-index-setzen-aed-format&#34;&gt;&lt;strong&gt;Quellenposition nach Index setzen (AED Format)&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/sourceindex/aed [ChannelIndex] [Azimuth] [Elevation] [Distance]
+/icst/ambi/sourceindex/aed 1 45 10 0.8
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;quellenposition-nach-index-setzen-xyz-format&#34;&gt;&lt;strong&gt;Quellenposition nach Index setzen (XYZ Format)&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/sourceindex/xyz [ChannelIndex] [X] [Y] [Z]
+/icst/ambi/sourceindex/xyz 2 0.2 0.2 0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt; Kanal-Indizes werden als &lt;strong&gt;Ganzzahlen&lt;/strong&gt; gesendet.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;positionen-für-externe-verwendung-senden&#34;&gt;&lt;strong&gt;Positionen für externe Verwendung senden&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Öffne den Tab &lt;strong&gt;&amp;lsquo;OSC Out&amp;rsquo;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png&#34; alt=&#34;OSC IN-OUT&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt; Das Standard-Format der ICST AmbiPlugins sendet &lt;strong&gt;Quellennamen als Symbole&lt;/strong&gt;. Max-Benutzer sollten eine &lt;strong&gt;Custom OSC Message&lt;/strong&gt; definieren:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/sourceindex/xyz {i} {x} {y} {z}
+/icst/ambi/sourceindex/aed {i} {a} {e} {d}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png&#34; alt=&#34;OSC-Out&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Abbildung: Custom &amp;lsquo;OSC Out&amp;rsquo; Editor&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;interne-osc-kommunikation&#34;&gt;&lt;strong&gt;Interne OSC-Kommunikation&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Um &lt;strong&gt;alle AmbiEncoder-Bewegungen&lt;/strong&gt; zum ICST AmbiDecoder zu senden:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Deaktiviere &lt;strong&gt;Speaker Edit Mode&lt;/strong&gt; im AmbiDecoder.&lt;/li&gt;
+&lt;li&gt;Aktiviere den OSC-Port.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/intern_osc2.png&#34; alt=&#34;Edit_off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/aktivate_osc.png&#34; alt=&#34;Intern_osc_port&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/Intern_osc.png&#34; alt=&#34;OSC_internal&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Jetzt empfängt der AmbiDecoder &lt;strong&gt;alle OSC-Nachrichten&lt;/strong&gt; von allen verbundenen AmbiEncodern.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;schritte-zum-senden-von-osc-nachrichten&#34;&gt;&lt;strong&gt;Schritte zum Senden von OSC-Nachrichten&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Der AmbiEncoder kann auch die meisten seiner Parameter über OSC senden.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/external_osc.png&#34; alt=&#34;External-osc&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Öffne das Fragezeichen vor den Presets, um detaillierte Hilfeinformationen zu erhalten.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Aktiviere &lt;strong&gt;&amp;ldquo;Send Positions for External Usage&amp;rdquo;&lt;/strong&gt; in den Einstellungen.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Im &lt;strong&gt;Targets&lt;/strong&gt;-Bereich:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aktiviere oder deaktiviere die OSC-Übertragung.&lt;/li&gt;
+&lt;li&gt;Definiere die &lt;strong&gt;Host-IP-Adresse&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Wähle einen &lt;strong&gt;Port&lt;/strong&gt; (Standard: &lt;strong&gt;50001&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;Doppelklick auf &lt;strong&gt;OSC messages&lt;/strong&gt; zum Bearbeiten.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt; Wenn du an einem &lt;strong&gt;internen FX Learning Program&lt;/strong&gt; teilnimmst, wähle &lt;strong&gt;&amp;ldquo;Continuous&amp;rdquo;&lt;/strong&gt; Modus.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Klicke auf &lt;strong&gt;Help (?)&lt;/strong&gt; für detaillierte OSC-Informationen.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Füge OSC-Nachrichten hinzu oder lösche sie.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speichere oder lade OSC-Nachrichten in &lt;strong&gt;Presets&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

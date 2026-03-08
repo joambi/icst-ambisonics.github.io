@@ -1,0 +1,969 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="de"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]
+        |
+        ICST MultiEncoder – Gruppenanimation
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]" />
+  <meta
+    name="description"
+    content="Erklärt MultiEncoder Group Animation zum Auswählen, Rotieren, Stretch und Aufzeichnen gruppierter Quellen in Reaper."
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css" integrity="sha256-gnZ8kex8rMjku3tmSA/DOpKI6lhtiQQZWl2QqNvPOAE=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/de/post/gp-manipulation/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ICST MultiEncoder – Gruppenanimation">
+  <meta name="twitter:description" content="Erklärt MultiEncoder Group Animation zum Auswählen, Rotieren, Stretch und Aufzeichnen gruppierter Quellen in Reaper.">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/de/post/gp-manipulation/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="ICST MultiEncoder – Gruppenanimation">
+  <meta property="og:description" content="Erklärt MultiEncoder Group Animation zum Auswählen, Rotieren, Stretch und Aufzeichnen gruppierter Quellen in Reaper.">
+  <meta property="og:locale" content="de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-05-28T13:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-28T13:00:00+00:00">
+    <meta property="article:tag" content="Multiencoder">
+    <meta property="article:tag" content="Group">
+    <meta property="article:tag" content="Animation">
+    <meta property="article:tag" content="Reaper">
+    <meta property="article:tag" content="Workflow">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "ICST MultiEncoder – Gruppenanimation",
+        "headline": "ICST MultiEncoder – Gruppenanimation",
+        "alternativeHeadline": "",
+        "description": "
+      Erklärt MultiEncoder Group Animation zum Auswählen, Rotieren, Stretch und Aufzeichnen gruppierter Quellen in Reaper.
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "de",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/de\/post\/gp-manipulation\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "dateCreated": "2025-05-28T13:00:00.00Z",
+        "datePublished": "2025-05-28T13:00:00.00Z",
+        "dateModified": "2025-05-28T13:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": {"email":"johannes.schuett@zhdk.ch","name":"Johannes Schuett"},
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/de\/post\/gp-manipulation\/",
+        "wordCount" : "397",
+        "genre" : [ ],
+        "keywords" : [ 
+      
+      "multiencoder"
+
+    
+      
+        ,
+
+      
+      "group"
+
+    
+      
+        ,
+
+      
+      "animation"
+
+    
+      
+        ,
+
+      
+      "reaper"
+
+    
+      
+        ,
+
+      
+      "workflow"
+
+    ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+	
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/de">ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST · Zurich University of the Arts</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.zhdk.ch/forschung/icst"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Zurich University of the Arts"
+            title="Zurich University of the Arts"
+          >
+            
+              <img src="/images/zhdk-logo.svg" alt="Zurich University of the Arts" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            
+              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+            target="_blank"
+            rel="noopener me"
+            aria-label="YouTube"
+            title="YouTube"
+          >
+            
+              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="1" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="1"
+                >Plugins &amp; Tools <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-plugins/"
+                      
+                      title=""
+                      >ICST AmbiPlugins Docs</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-tools/"
+                      
+                      title=""
+                      >Ambi Tools</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="2" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="2"
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/ambisonics-101/"
+                      
+                      title=""
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/post/"
+                      
+                      title=""
+                      >All Tutorials</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="3" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="3"
+                >Ascolta <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/17-ascolta/"
+                      
+                      title=""
+                      >Next Session</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/"
+                      
+                      title=""
+                      >All Sessions</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="4" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="4"
+                >Residenzen <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2025/"
+                      
+                      title=""
+                      >Residenzen 2025</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2026/"
+                      
+                      title=""
+                      >Residenzen 2026</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="5" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="5"
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-composer-studio-blog/"
+                      
+                      title=""
+                      >Composition Studio</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/audio-examples/"
+                      
+                      title=""
+                      >Audio Examples</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-equipment/"
+                      
+                      title=""
+                      >Equipment</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-software/"
+                      
+                      title=""
+                      >Software</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-speaker-settings/"
+                      
+                      title=""
+                      >Speaker Setup</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-regie/"
+                      
+                      title=""
+                      >Regie</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-pre-installation/"
+                      
+                      title=""
+                      >Pre-Installation</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/downloads/"
+                      
+                      title=""
+                      >Downloads</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/"
+                      
+                      title=""
+                      >All Studio Pages</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/links/"
+              
+              title=""
+              >Links</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >DE <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/post/gp-manipulation/" title="EN"
+                    ><span
+                      
+                      aria-label="EN"
+                      >EN</span
+                    >
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </li>
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>ICST MultiEncoder – Gruppenanimation</h1>
+      
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  2025-05-28
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">2 Minuten zum Lesen</span>
+          </li>
+        </ul>
+      <p>Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts</p>
+<hr>
+<h1 id="gruppenanimation">Gruppenanimation</h1>
+<p>Der <strong>ICST Multi-Ambisonics Encoder v.2+</strong> bietet ein <strong>Gruppenanimations-Tool</strong> zur dynamischen Manipulation gruppierter Audioquellen in der <strong>Radar-Anzeige</strong>. Durch Auswahl eines Gruppenpunkts und Halten von <strong>Option (Alt) auf Mac</strong> schaltest du erweiterte Funktionen wie <strong>Gruppenanimation</strong> und <strong>Gruppenstrecken</strong> frei, die es dir ermöglichen, mehrere Quellen synchronisiert zu bewegen und zu transformieren für verbesserte 3D-Raumalisierung.</p>
+<p>📺 <strong>Tutorial:</strong> <a href="https://youtu.be/aDa-vNWriLM">Points and Radar</a> (3:15)</p>
+<hr>
+<h3 id="einfache-animation-einer-gruppe">Einfache Animation einer Gruppe</h3>
+<p><img src="/post/gp-manipulation/Gp_manipulation.gif" alt="simple"></p>
+<ol>
+<li><strong>Punkte auswählen</strong> – Klicke um einen Punkt auszuwählen; nutze <strong>Shift + Klick</strong> für mehrere Punkte.</li>
+<li><strong>Gruppe erstellen</strong> – Klicke auf das <strong>Group</strong>-Symbol um einen Gruppenpunkt zu erstellen (z.B. &lsquo;S&rsquo;).</li>
+<li><strong>Gruppe verschieben</strong> – Halte <strong>Shift</strong> und ziehe den Gruppenpunkt.</li>
+<li><strong>Punkte um Gruppe rotieren</strong> – Halte <strong>Alt</strong>, dann ziehe und lasse das <strong>Rotate-Around-Group</strong>-Symbol fallen.</li>
+<li><strong>Gruppe strecken</strong> – Halte <strong>Alt</strong>, nutze das <strong>Stretch Symbol</strong>, dann bewege die Maus <strong>nach oben/unten</strong> zum Anpassen.</li>
+<li><strong>Gruppe um Ursprung rotieren</strong> – Halte <strong>Alt</strong>, dann ziehe und lasse das <strong>Rotate-Around-Origin</strong>-Symbol fallen.</li>
+</ol>
+<p>💡 <strong>Tipp:</strong> Diese Funktionen gelten auch für Höhenanpassungen im <strong>Z-Radar</strong>.</p>
+<h3 id="manuelle-aufnahme">Manuelle Aufnahme</h3>
+<ol>
+<li>Stelle <strong>ICST MultiEncoder</strong> (Track Automation) auf <strong>&lsquo;LATCH&rsquo;</strong> (oder <strong>&lsquo;WRITE&rsquo;</strong>).</li>
+<li>Starte die Wiedergabe in <strong>Reaper</strong>, halte <strong>Alt</strong> und nimm deine Bewegung auf.</li>
+<li>Um die aufgenommene Bewegung abzuspielen, stelle &ldquo;LATCH&rdquo; auf &ldquo;READ&rdquo;.
+<img src="/post/gp-manipulation/Rec_PP.gif" alt="GP_REC"></li>
+</ol>
+<hr>
+<h3 id="lfo-animation-einer-gruppe">LFO-Animation einer Gruppe</h3>
+<p><img src="/post/gp-manipulation/LFO_A.png" alt="LFO_A 1"></p>
+<ol>
+<li>Öffne die <strong>LFO Parameter Modulation</strong> im <strong>AmbiEncoder</strong>-Track und aktiviere die Parameter für <strong>GX, GY und GZ</strong>.
+<img src="/post/gp-manipulation/LFO_param.png" alt="LFO_parm"></li>
+<li>Passe die LFO-Parameter an, z.B. <strong>Geschwindigkeit</strong>, um die gewünschte Bewegung zu erreichen.
+Nun bewegt sich die Gruppe automatisch im Radar.</li>
+</ol>
+<p><img src="/post/gp-manipulation/LFO_A.gif" alt="GP_LFO_animated"></p>
+<p>💡 <strong>Tipp:</strong> Das Verbinden der LFO-Parameter mit einer MIDI/OSC-Schnittstelle ermöglicht es dir, die Bewegung live zu steuern.</p>
+<hr>
+<h3 id="lfo-gruppenanimation-mit-quaternionen">LFO-Gruppenanimation mit Quaternionen</h3>
+<p><img src="/post/gp-manipulation/LFO_Quarternions.gif" alt="LFO_B"></p>
+<p>Dies ist ein fortgeschritteneres Beispiel für die Animation einer Gruppe mit <strong>Quaternionen-Parametern</strong>.</p>
+<p>💡 <strong>Tipp:</strong> Du kannst die Parameter auch mit einem <strong>Audio-Kontrollsignal</strong> über einen Sidechain steuern.</p>
+<hr>
+<h3 id="gruppenanimation-aus-einer-externen-quelle">Gruppenanimation aus einer externen Quelle</h3>
+<p>Der neue &lsquo;ICST Ambi-OSC-Patcher&rsquo; zeigt die direkten Möglichkeiten der Gruppenanimation. Wir demonstrieren, wie man Gruppen mit OSC aus einer externen Quelle animiert. Der MultiEncoder konvertiert Euler-Winkel intern in Quaternionen. In diesem Beispiel sind die Winkel vom Quellenpunkt (1) entscheidend für die Animation.</p>
+<p><img src="/post/gp-manipulation/max-example-patch.png" alt="Max example patch"></p>
+<p>Download MaxPatch: <a href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat">Neuer OSC-Messenger</a></p>
+<h4 id="gruppenposition">Gruppenposition</h4>
+<ol>
+<li>Setze Gruppenposition AED
+<ul>
+<li>/icst/ambi/group/aed [GroupName] [Azimuth] [Elevation] [Distance] [Mode] Mode (1) = bewege die ganze GP, Mode (0) = bewege nur den GP-Punkt.</li>
+<li><code>/icst/ambi/group/aed 'G1' 135 0 0.1 1</code></li>
+</ul>
+</li>
+<li>Setze Gruppenposition XYZ
+<ul>
+<li>/icst/ambi/group/xyz [GroupName] [X] [Y] [Z] [Mode]:</li>
+<li><code>/icst/ambi/group/xyz 'G2' 0.1 0.1 0 0</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="osc-animation"><strong>OSC-Animation</strong></h3>
+<p>Der ICST MultiEncoder kann jetzt direkt mit Euler-Winkeln via OSC gesteuert werden.</p>
+<p><img src="/post/gp-manipulation/OSC_abs_angel.gif" alt="Euler_Winkel"></p>
+<hr>
+<p><span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span></p>
+</div>
+    <div class="post__footer">
+      
+
+      
+        <span><a class="tag" href="/de/tags/multiencoder/">multiencoder</a><a class="tag" href="/de/tags/group/">group</a><a class="tag" href="/de/tags/animation/">animation</a><a class="tag" href="/de/tags/reaper/">reaper</a><a class="tag" href="/de/tags/workflow/">workflow</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

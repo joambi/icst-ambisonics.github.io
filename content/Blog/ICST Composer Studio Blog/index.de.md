@@ -19,6 +19,20 @@ Raum: **ZT 3.D02** · Kontakt: [johannes.schuett@zhdk.ch](mailto:johannes.schuet
 
 ---
 
+## Studio-Bereiche
+
+- [Equipment](/blog/icst-kompositionsstudio-equipment/)
+- [Software](/blog/icst-kompositionsstudio-software/)
+- [Speaker Setup](/blog/icst-kompositionsstudio-speaker-settings/)
+- [Audio Examples](/blog/audio-examples/)
+- [Pre-Installation](/blog/icst-kompositionsstudio-pre-installation/)
+- [Regie](/blog/icst-kompositionsstudio-regie/)
+- [Artist Residencies](/residenzen/)
+- [ascolta](/blog/ascolta/)
+- [Downloads](/blog/downloads/)
+
+---
+
 ## 3D Audio-Musik entdecken
 
 Eine Auswahl an Online-Ressourcen zum Anhören von Ambisonics und Raumklang:

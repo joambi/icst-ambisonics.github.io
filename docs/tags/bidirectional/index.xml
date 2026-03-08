@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Bidirectional on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/bidirectional/</link>
+
+    <description>
+      Recent content
+      
+         in Bidirectional 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Sun, 16 Mar 2025 09:44:58 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/bidirectional/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>MaxMSP &amp; ICST AmbiEncoder – OSC Communication</title>
+      <link>https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</link>
+      <guid>https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;bidirectional-osc-communication-with-maxmsp&#34;&gt;Bidirectional OSC Communication with MaxMSP&lt;/h1&gt;
+&lt;p&gt;Generate motion data in Max and send it via OSC to the &lt;em&gt;ICST AmbiEncoder&lt;/em&gt; in your DAW. Alternatively, transfer a motion composition from your DAW to the &lt;em&gt;icst.ambisonics-externals&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;required-software&#34;&gt;&lt;strong&gt;Required Software:&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MaxMSP v.8.0+&lt;/strong&gt; → &lt;a href=&#34;http://cycling74.com&#34;&gt;cycling74.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ICST Ambisonics Tools v3&lt;/strong&gt; → &lt;a href=&#34;http://cycling74.com&#34;&gt;cycling74.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ICST Ambisonics Plugins (VST3/AU)&lt;/strong&gt; → &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;ICST AmbiPlugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reaper (DAW)&lt;/strong&gt; → &lt;a href=&#34;http://reaper.fm/download.php&#34;&gt;reaper.fm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;setup-guide&#34;&gt;&lt;strong&gt;Setup Guide:&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;1-configure-osc-in-icst-ambiencoder&#34;&gt;1. Configure OSC in ICST AmbiEncoder&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;em&gt;ICST AmbiEncoder&lt;/em&gt; in an FX slot and navigate to &lt;strong&gt;Encoder Settings&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Under &lt;strong&gt;OSC In&lt;/strong&gt;, activate the OSC input port (e.g., &lt;code&gt;50001&lt;/code&gt;).
+&lt;img src=&#34;https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-port.png&#34; alt=&#34;OSC-IN&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;OSC Out&lt;/strong&gt; and enable the OSC output port.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Uses &lt;strong&gt;ICST AmbiPlugins Standard XYZ Index&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Max demo patch listens for:
+&lt;code&gt;&#39;/icst/ambi/sourceindex/xyz&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-out.png&#34; alt=&#34;OSC-OUT&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-open-maxmsp-and-load-the-patch&#34;&gt;2. Open MaxMSP and Load the Patch&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Find the &lt;em&gt;OSC communication with ICST plugins in DAW&lt;/em&gt; patch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See the demo Gifs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif&#34; alt=&#34;Max_Reaper&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next Gif: How it works:
+&lt;img src=&#34;https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.gif&#34; alt=&#34;Max-AmbiEnc&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sending-absolute-angles-euler-coordinates&#34;&gt;Sending Absolute Angles (Euler Coordinates)&lt;/h2&gt;
+&lt;p&gt;To send &lt;strong&gt;absolute angles&lt;/strong&gt; using &lt;strong&gt;Euler coordinates&lt;/strong&gt; from MaxMSP to the ICST AmbiEncoder, use the following OSC message format:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/source/euler [ChannelName] [Yaw] [Pitch] [Roll]
+/icst/ambi/source/euler &amp;#39;S1&amp;#39; 30 15 5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For &lt;strong&gt;index-based addressing&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/sourceindex/euler [ChannelIndex] [Yaw] [Pitch] [Roll]
+/icst/ambi/sourceindex/euler 1 30 15 5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Yaw&lt;/code&gt; (Azimuth): Horizontal rotation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Pitch&lt;/code&gt; (Elevation): Vertical tilt&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Roll&lt;/code&gt;: Rotation around the forward axis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

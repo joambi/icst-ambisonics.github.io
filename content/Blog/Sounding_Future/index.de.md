@@ -1,5 +1,6 @@
 ---
 title: Ambisonics Audio erkunden
+description: "Ueberblick zur Klangkunstreihe Sounding Future und zur Erkundung immersiver Ambisonics-Klangerfahrungen."
 date: 2025-06-11T15:09:00
 weight: 14
 ---

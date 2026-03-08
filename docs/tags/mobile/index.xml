@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Mobile on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/mobile/</link>
+
+    <description>
+      Recent content
+      
+         in Mobile 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Wed, 28 May 2025 14:57:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/mobile/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST AmbiPlugins &amp; GyrOSC</title>
+      <link>https://ambisonics.ch/post/gyrosc/</link>
+      <guid>https://ambisonics.ch/post/gyrosc/</guid>
+      <pubDate>Wed, 28 May 2025 14:57:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;ICST MultiEncoder and iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GyrOSC&lt;/strong&gt; is a lightweight utility that sends motion sensor data (from your iPhone, iPod Touch, or iPad) over a local wireless network to any OSC-compatible host application. It allows you to control live audio or video applications using your device&amp;rsquo;s built-in gyroscope, accelerometer, compass, and altimeter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/gyrOSC.png&#34; alt=&#34;GyrOSC&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The following GIF demonstrates how the ICST AmbiEncoder receives OSC data from the GyrOSC app.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyroOSC_Demo.gif&#34; alt=&#34;Example video:&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;how-it-works&#34;&gt;How It Works:&lt;/h3&gt;
+&lt;p&gt;This tutorial provides a step-by-step guide on using the iOS app &lt;em&gt;GyrOSC&lt;/em&gt; with the ICST Ambisonics Encoder.&lt;/p&gt;
+&lt;h4 id=&#34;setting-up-the-gyrosc-app&#34;&gt;Setting Up the GyrOSC App:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;a href=&#34;https://apps.apple.com/us/app/gyrosc/id418751595&#34;&gt;GyrOSC app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Configure the app as follows:
+&lt;ul&gt;
+&lt;li&gt;Enable &lt;em&gt;Gravity&lt;/em&gt; (disable all other sensors).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/Gyro_grav.jpeg&#34; alt=&#34;Gyro_01&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;osc-configuration-in-gyrosc-app&#34;&gt;OSC Configuration in GyrOSC App:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Enter the IP address of your machine in field (1).&lt;/li&gt;
+&lt;li&gt;The default port number for the ICST Ambisonics Encoder is 50001 (field 2).&lt;/li&gt;
+&lt;li&gt;Choose the index (source-number) for the plugin in field (3).&lt;/li&gt;
+&lt;li&gt;Field (4) shows the OSC message sent by GyrOSC.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/Gyro_Config.jpeg&#34; alt=&#34;GyrOSC_Config&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The GyrOSC app will send the &amp;lsquo;Gravity&amp;rsquo; data via OSC (port 50001) to the ICST MultiEncoder.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-the-icst-ambisonics-encoder-plugin&#34;&gt;Setting Up the ICST Ambisonics Encoder Plugin:&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/Reaper_GyrOSC.png&#34; alt=&#34;Reaper_GyrOSC&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the ICST AmbiEncoder_64 plugin.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Access the Encoder Settings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;em&gt;OSC IN&lt;/em&gt; section and enable OSC-IN (port: 50001).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Double-click in the &lt;em&gt;OSC-Message&lt;/em&gt; field and enter:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/gyrosc/{i}/grav {x} {y} {z}&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable the plugin by selecting &lt;em&gt;en&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move your iPhone to generate motion data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;inspirations&#34;&gt;Inspirations:&lt;/h1&gt;
+&lt;h3 id=&#34;osc-swarm&#34;&gt;OSC-Swarm&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;OSC-Message:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/gyrosc/1/grav&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;JS-Code:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s.setXYZ(1, s.arg(2), -s.arg(1), 0); for(i = 2; i &amp;lt;= 8; i++) s.setXYZ(i, s.arg(2)+Math.random()*0.2, -s.arg(1) + Math.random()* 0.2, 0)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyrOSC-SWARM.gif&#34; alt=&#34;OSC-Swarm&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

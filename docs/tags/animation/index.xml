@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Animation on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/animation/</link>
+
+    <description>
+      Recent content
+      
+         in Animation 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Wed, 28 May 2025 13:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/animation/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST MultiEncoder – Group Animation</title>
+      <link>https://ambisonics.ch/post/gp-manipulation/</link>
+      <guid>https://ambisonics.ch/post/gp-manipulation/</guid>
+      <pubDate>Wed, 28 May 2025 13:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;group-animation&#34;&gt;Group Animation&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;ICST Multi-Ambisonics Encoder v.2+&lt;/strong&gt; features a &lt;strong&gt;Group Animation&lt;/strong&gt; tool for dynamically manipulating grouped audio sources in the &lt;strong&gt;Radar Display&lt;/strong&gt;. By selecting a group point and holding &lt;strong&gt;Option (Alt) on Mac&lt;/strong&gt;, you unlock advanced functions like &lt;strong&gt;group animation&lt;/strong&gt; and &lt;strong&gt;group stretch&lt;/strong&gt;, enabling synchronized movement and transformation of multiple sources for enhanced 3D spatialization.&lt;/p&gt;
+&lt;p&gt;📺 &lt;strong&gt;Tutorial:&lt;/strong&gt; &lt;a href=&#34;https://youtu.be/aDa-vNWriLM&#34;&gt;Points and Radar&lt;/a&gt; (3:15)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;simple-animation-of-a-group&#34;&gt;Simple animation of a group&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/Gp_manipulation.gif&#34; alt=&#34;simple&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Select Points&lt;/strong&gt; – Click to select a point; use &lt;strong&gt;Shift + Click&lt;/strong&gt; for multiple points.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create Group&lt;/strong&gt; – Click the &lt;strong&gt;Group&lt;/strong&gt; symbol to generate a group point (e.g., &amp;lsquo;S&amp;rsquo;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Move Group&lt;/strong&gt; – Hold &lt;strong&gt;Shift&lt;/strong&gt; and drag the group point.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rotate Points Around Group&lt;/strong&gt; – Hold &lt;strong&gt;Alt&lt;/strong&gt;, then drag and drop the &lt;strong&gt;Rotate-Around-Group&lt;/strong&gt; symbol.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stretch Group&lt;/strong&gt; – Hold &lt;strong&gt;Alt&lt;/strong&gt;, use the &lt;strong&gt;Stretch Symbol&lt;/strong&gt;, then move the mouse &lt;strong&gt;up/down&lt;/strong&gt; to adjust.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rotate Group Around Origin&lt;/strong&gt; – Hold &lt;strong&gt;Alt&lt;/strong&gt;, then drag and drop the &lt;strong&gt;Rotate-Around-Origin&lt;/strong&gt; symbol.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;💡 &lt;strong&gt;Tip:&lt;/strong&gt; These functions also apply to height adjustments in the &lt;strong&gt;Z-Radar&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;manual-recording&#34;&gt;Manual recording&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Set &lt;strong&gt;ICST MultiEncoder&lt;/strong&gt; (Track Automation) to &lt;strong&gt;&amp;lsquo;LATCH&amp;rsquo;&lt;/strong&gt; (or &lt;strong&gt;&amp;lsquo;WRITE&amp;rsquo;&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;Start playback in &lt;strong&gt;Reaper&lt;/strong&gt;, hold &lt;strong&gt;Alt&lt;/strong&gt;, and record your movement.&lt;/li&gt;
+&lt;li&gt;To play back the recorded motion, set “LATCH” to “READ”.
+&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/Rec_PP.gif&#34; alt=&#34;GP_REC&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lfo-animation-of-a-group&#34;&gt;LFO Animation of a Group&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_A.png&#34; alt=&#34;LFO_A 1&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;LFO Parameter Modulation&lt;/strong&gt; in the &lt;strong&gt;AmbiEncoder&lt;/strong&gt; track and activate the parameters for &lt;strong&gt;GX, GY, and GZ&lt;/strong&gt;.
+&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_param.png&#34; alt=&#34;LFO_parm&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Adjust the LFO parameters, such as &lt;strong&gt;speed&lt;/strong&gt;, to achieve the desired movement.&lt;br&gt;
+Now, the group moves automatically in the radar.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_A.gif&#34; alt=&#34;GP_LFO_animated&#34;&gt;&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;Tip:&lt;/strong&gt; Connecting the LFO parameters to a MIDI/OSC interface lets you control the movement live.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lfo-group-animation-with-quaternions&#34;&gt;LFO Group Animation with Quaternions&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_Quarternions.gif&#34; alt=&#34;LFO_B&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is a more advanced example of animating a group using &lt;strong&gt;quaternion parameters&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;Tip:&lt;/strong&gt; You can also drive the parameters using an &lt;strong&gt;audio control signal&lt;/strong&gt; via a sidechain.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;group-animation-from-an-external-source&#34;&gt;Group animation from an external source&lt;/h3&gt;
+&lt;p&gt;A new &amp;lsquo;ICST Ambi-OSC-Patcher&amp;rsquo; shows the direct group animation possibilities, we’ll demonstrate how to animate groups using OSC from an external source. The MultiEncoder internally converts Euler angles into quaternions. In this example, the angles from the source point (1) are crucial for the animation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/max-example-patch.png&#34; alt=&#34;Max example patch&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Download MaxPatch: &lt;a href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat&#34;&gt;Neuer OSC-Messenger&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;group-position&#34;&gt;Group Position&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Set Group Position AED
+&lt;ul&gt;
+&lt;li&gt;/icst/ambi/group/aed [GroupName] [Azimuth] [Elevation] [Distance] [Mode] Mode (1) = move the hole GP, Mode (0) = move only the GP-Point.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/icst/ambi/group/aed &#39;G1&#39; 135 0 0.1 1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set Group Position XYZ
+&lt;ul&gt;
+&lt;li&gt;/icst/ambi/group/xyz [GroupName] [X] [Y] [Z] [Mode]:&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/icst/ambi/group/xyz &#39;G2&#39; 0.1 0.1 0 0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;osc-animation&#34;&gt;&lt;strong&gt;OSC Animation&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The ICST MultiEncoder can now be controlled directly using Euler angles via OSC.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/OSC_abs_angel.gif&#34; alt=&#34;Euler_Winkel&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

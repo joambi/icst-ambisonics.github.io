@@ -8,158 +8,93 @@ group: "Studio"
 Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
 
 ---
-### List of Software on the ICST Mac Pro:
+Software and plugin environment for production at the ICST Mac Pro.
 
-**Audio - Analyse:**
+<div class="home-cards">
+  <section class="home-card">
+    <h4>Recommended DAWs</h4>
+    <p>For Ambisonics and multichannel production, ICST primarily works with Reaper and Ardour.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="http://reaper.fm/" target="_blank" rel="noopener noreferrer">Reaper</a>
+      <a class="hero__link" href="http://ardour.org/" target="_blank" rel="noopener noreferrer">Ardour</a>
+    </div>
+  </section>
 
-* RX-7 iZotope
-* Acousmographe
-* EAnalysis
-* iSpectrum
-* iZotope
-* Melodyne 4
-* Praat
-* Sonic Visualiser
-* SPEAR
+  <section class="home-card">
+    <h4>Spatial Audio Stack</h4>
+    <p>Core Ambisonics toolchain across ICST plugins, IEM, ATK, Spat, and related ecosystems.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/">ICST Plugins</a>
+      <a class="hero__link" href="/icst-ambisonics-tools/">ICST Max Tools</a>
+      <a class="hero__link" href="/blog/downloads/">Downloads</a>
+    </div>
+  </section>
+</div>
 
-**Ambisonics:**
+### Software Inventory (Accordion)
 
-* Audio Brewers Plugins
-* ATK Ambisonics Tool Kit (Plugins)
-* Ambisonics Externals for Max (ICST)
-* Ambi Head (B-format to Binaural converter)
-* ambiX plugin suite v.0.2.7
-* BlueRipple (free plugins)
-* FB360 Spatial Workstation 
-* Harpex-B
-* Panoramix-Ircam
-* Soundfield Limited
-* Sound Particles U
-* Sound Trajectory
-* Spat Revolution Flux
-* Spat for Max
-* mcfx v0.5.5 – multichannel audio plug-in suite
-* IEM Plugin suite
-* ICST Ambisonics Plugins
+<details class="home-accordion">
+  <summary>Audio Analysis & Editors</summary>
+  <div class="home-accordion__actions">
+    <a class="hero__link hero__link--primary" href="https://www.izotope.com/en/products/rx.html" target="_blank" rel="noopener noreferrer">RX iZotope</a>
+    <a class="hero__link" href="https://www.sonicvisualiser.org/" target="_blank" rel="noopener noreferrer">Sonic Visualiser</a>
+    <a class="hero__link" href="https://www.klingbeil.com/spear/" target="_blank" rel="noopener noreferrer">SPEAR</a>
+    <a class="hero__link" href="https://twistedwave.com/" target="_blank" rel="noopener noreferrer">TwistedWave</a>
+    <a class="hero__link" href="https://grm.tools/en/grmtools-3" target="_blank" rel="noopener noreferrer">GRM Tools Complete</a>
+  </div>
+</details>
 
-**Audio-Tools:**
+<details class="home-accordion">
+  <summary>Ambisonics & Spatial Audio</summary>
+  <div class="home-accordion__actions">
+    <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/">ICST Ambisonics Plugins</a>
+    <a class="hero__link" href="/icst-ambisonics-tools/">ICST Ambisonics Tools (Max)</a>
+    <a class="hero__link" href="https://plugins.iem.at/" target="_blank" rel="noopener noreferrer">IEM Plugin Suite</a>
+    <a class="hero__link" href="https://www.ambisonictoolkit.net/" target="_blank" rel="noopener noreferrer">ATK Ambisonics Toolkit</a>
+    <a class="hero__link" href="http://www.matthiaskronlachner.com/?p=1910" target="_blank" rel="noopener noreferrer">ambiX</a>
+    <a class="hero__link" href="https://harpex.net/" target="_blank" rel="noopener noreferrer">Harpex</a>
+    <a class="hero__link" href="https://forum.ircam.fr/projects/detail/spat/" target="_blank" rel="noopener noreferrer">Panoramix / Spat</a>
+    <a class="hero__link" href="https://github.com/mcfx-dev/mcfx" target="_blank" rel="noopener noreferrer">mcfx</a>
+  </div>
+</details>
 
-* Audio Hijack
-* Dante Controller
-* Dante Via
-* Dante Virtual Soundcard
-* JackPilot
-* Qjackctl.app
-* Loopback
-* Ravenna
+<details class="home-accordion">
+  <summary>DAW, Programming, and Utilities</summary>
+  <div class="home-accordion__actions">
+    <a class="hero__link hero__link--primary" href="https://www.ableton.com/live/" target="_blank" rel="noopener noreferrer">Ableton Live 12</a>
+    <a class="hero__link" href="https://www.reaper.fm/" target="_blank" rel="noopener noreferrer">Reaper</a>
+    <a class="hero__link" href="https://ardour.org/" target="_blank" rel="noopener noreferrer">Ardour</a>
+    <a class="hero__link" href="https://www.apple.com/logic-pro/" target="_blank" rel="noopener noreferrer">Logic Pro</a>
+    <a class="hero__link" href="https://cycling74.com/products/max" target="_blank" rel="noopener noreferrer">Max</a>
+    <a class="hero__link" href="https://supercollider.github.io/" target="_blank" rel="noopener noreferrer">SuperCollider</a>
+    <a class="hero__link" href="https://csound.com/" target="_blank" rel="noopener noreferrer">Csound</a>
+    <a class="hero__link" href="https://faust.grame.fr/" target="_blank" rel="noopener noreferrer">Faust</a>
+    <a class="hero__link" href="https://puredata.info/" target="_blank" rel="noopener noreferrer">Pd</a>
+    <a class="hero__link" href="https://www.audinate.com/products/software/" target="_blank" rel="noopener noreferrer">Dante Controller / Via / Virtual Soundcard</a>
+  </div>
+</details>
 
-**Audio-Instruments:**
+<details class="home-accordion">
+  <summary>Notation, IRCAM, and OSC Tools</summary>
+  <div class="home-accordion__actions">
+    <a class="hero__link hero__link--primary" href="https://www.avid.com/sibelius" target="_blank" rel="noopener noreferrer">Sibelius</a>
+    <a class="hero__link" href="https://musescore.org/" target="_blank" rel="noopener noreferrer">MuseScore</a>
+    <a class="hero__link" href="https://www.finalemusic.com/" target="_blank" rel="noopener noreferrer">Finale</a>
+    <a class="hero__link" href="https://forum.ircam.fr/projects/detail/spat/" target="_blank" rel="noopener noreferrer">IRCAM SPAT / PANORAMIX / OPENMUSIC</a>
+    <a class="hero__link" href="http://www.iannix.org/" target="_blank" rel="noopener noreferrer">IanniX</a>
+    <a class="hero__link" href="https://inscore.grame.fr/" target="_blank" rel="noopener noreferrer">INScore</a>
+    <a class="hero__link" href="https://forum.ircam.fr/projects/detail/tosca/" target="_blank" rel="noopener noreferrer">ToscA</a>
+  </div>
+</details>
 
-* Native Instruments
-
-**DAW:**
-
-* Ableton Live 12 Suite 
-* Adobe Audition CC 
-* Ardour8.0
-* Audacity
-* Logic Pro 
-* REAPER (newest)
-
-**Audio-Programming:**
-
-* Cabbage
-* Csound
-* CsoundQt-d-py-cs6
-* Faust
-* Grace
-* Max 8.0.1
-* Pd-0.49-1-Vanille
-* Processing
-* Plogue Bidule 0.9759
-* SuperCollider
-
-**Audio-Editor:**
-
-* GRM-Player
-* GRM Tools Complete 
-* HourGlass
-* iZotope RX 7 Audio Editor
-* SoundGrain
-* SoundHack
-* TwistedWave 1.2
-
-**Audio-Plugins:**
-
-* ambiX
-* audio brewers
-* FabFilter-Bundle
-* Flux-Session
-* GRM Tools 
-* Harpex
-* IEM
-* Melodyne
-* PaulStretch
-* SIR 2 Audiotools
-* RX-7
-* FabFilters
-* Two Big Ears FB360 Spatialiser
-* ToscA
-* UdeM SpatGris
-* Waves Mercury
-* ICST Ambisonics Plugins
-* ZOOM MS-Decoder
-
-**IRCAM-Bundle**:
-
-* ADMIX
-* ANGUS
-* ANTESCOFO
-* AUDIOSCULPT
-* CATART STANDALONE
-* CLEESE
-* DAVID
-* DIPHONE STUDIO 4.2
-* FORUM MAX APPS
-* GESTURE & SOUND
-* MAX SOUND BOX
-* MODALYS
-* MUBU
-* MUSIQUE LAB 2
-* NAJO MODULAR INTERFACE 2
-* OMAX
-* OPENMUSIC
-* ORCHIDS
-* PANORAMIX
-* SPAT
-* SUPERVP FOR MAX
-* SUPERVP TRAX
-* TOSCA
-
-**Notation:**
-
-* Finale 25.0
-* Sibelius
-* INScore-1.21
-* JMSL 
-* MuseScore
-* NoteAbilityPro
-* OM-6.14-macOS
-* PWGL
-* Scala
-
-**OSC-Tools:**
-
-* IanniX
-* INScore-1.21
-* ToscA
-
-* * *
-
-### DAW
-
-Here at ICST, the staff uses [Reaper](http://reaper.fm/) and [Ardour](http://ardour.org/) 7
-We recommend you do so as well, especially if you want to work with ambisonics or multi-channel audio in general.
+### Further Links
+<div class="hero__links">
+  <a class="hero__link hero__link--primary" href="/blog/icst-kompositionsstudio-equipment/">Equipment</a>
+  <a class="hero__link" href="/blog/icst-kompositionsstudio-regie/">Regie</a>
+  <a class="hero__link" href="/blog/icst-kompositionsstudio-speaker-settings/">Speaker Settings</a>
+  <a class="hero__link" href="/blog/downloads/">Downloads</a>
+  <a class="hero__link" href="/residenzen/">Residencies</a>
+</div>
 
 ---
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

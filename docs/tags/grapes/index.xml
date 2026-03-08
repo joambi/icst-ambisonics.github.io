@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Grapes on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/grapes/</link>
+
+    <description>
+      Recent content
+      
+         in Grapes 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/grapes/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST AmbiPlugins &amp; Grapes – 3D Control</title>
+      <link>https://ambisonics.ch/post/icst-grapes/</link>
+      <guid>https://ambisonics.ch/post/icst-grapes/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://grapes-3d.com/&#34;&gt;Grapes 3D Control&lt;/a&gt; is a handy addition to the ICST Ambisonics plugins.
+Grapes come as a standalone and VST3 and can be operated directly in the DAW (Reaper) in sync.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-grapes/Grapes.gif&#34; alt=&#34;Grapes&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;advantages-of-grapes-3d-control&#34;&gt;Advantages of Grapes 3D Control&lt;/h3&gt;
+&lt;p&gt;A major advantage of this method is that the 3D spatial sound control does not have to be recorded in the DAW. Instead, it is sent to the ICST AmbiEncoders via OSC from Grapes. This means that the spatial design remains flexible and can also be interpreted with other spatialization tools such as LISA, Dolby Atmos or binaural audio playback.&lt;/p&gt;
+&lt;p&gt;For more information, see: &lt;a href=&#34;https://grapes-3d.com/&#34;&gt;https://grapes-3d.com/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

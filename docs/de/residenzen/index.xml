@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Residenzen on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/residenzen/</link>
+
+    <description>
+      Recent content
+      
+         in Residenzen 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Thu, 01 Jan 2099 00:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/residenzen/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>RESIDENCY AT THE ICST STUDIO</title>
+      <link>https://ambisonics.ch/de/residenzen/icst-studio-residences/</link>
+      <guid>https://ambisonics.ch/de/residenzen/icst-studio-residences/</guid>
+      <pubDate>Thu, 01 Jan 2099 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;künstlerresidenzien-am-icst-kompositionsstudio&#34;&gt;Künstlerresidenzien am ICST Kompositionsstudio&lt;/h1&gt;
+&lt;p&gt;Im ICST Kompositionsstudio schaffen internationale Künstler ihre 3D-Audioarbeiten mit unseren Ambisonics-Plugins. Die Residenzprogramme ermöglichen kreative Arbeitsprozesse im Bereich des räumlichen Sounddesigns und der elektroakustischen Komposition.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/residenzen/icst-studio-residences-2026/&#34;&gt;2026 Künstlerresidenzien am ICST Kompositionsstudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/residenzen/icst-studio-residences-2025/&#34;&gt;2025 Künstlerresidenzien am ICST Kompositionsstudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://icst-kompositionsstudio.ch/post/icst-artist-in-residency-im-kompositionsstudio&#34;&gt;Informationen über ICST Studio-Residenzprogramme bis 2024 finden Sie hier.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zhdk.ch/forschung/icst/icst-air/residency-a-icst-studio-20727&#34;&gt;Residency A: ICST Studio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2026 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>2026 ICST Artist in Studio-Residency</title>
+      <link>https://ambisonics.ch/de/residenzen/icst-studio-residences-2026/</link>
+      <guid>https://ambisonics.ch/de/residenzen/icst-studio-residences-2026/</guid>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule der Künste&lt;/p&gt;
+&lt;hr&gt;
+&lt;style&gt;
+/* ── Artist-in-Residence Cards — Anatole theme aligned ── */
+
+.artist-card {
+  overflow: hidden;
+  margin: 2rem 0 2.5rem 0;
+  padding: 1.5rem;
+  border-left: 3px solid #6086b4;
+  border-radius: 2px;
+  font-family: inherit;
+}
+.theme--light .artist-card {
+  background: #eeeeee;
+  color: #464646;
+  box-shadow: 0 8px 16px rgba(10,10,10,0.07);
+}
+.theme--dark .artist-card {
+  background: #2a3a44;
+  color: #eeeeee;
+  box-shadow: 0 8px 16px rgba(226,226,226,0.06);
+}
+
+.artist-card img {
+  float: left !important;
+  display: block !important;
+  margin: 0 1.8rem 1rem 0 !important;
+  width: 260px !important;
+  height: 174px !important;
+  max-width: 260px !important;
+  max-height: 174px !important;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 2px;
+}
+
+.artist-card__name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 0 0.4rem 0;
+  line-height: 1.2;
+}
+
+.artist-card__period {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.7rem;
+  font-family: monospace;
+  letter-spacing: 0.03em;
+}
+.theme--light .artist-card__period {
+  background: #fff;
+  color: #9f9f9f;
+  border: 1px solid #eeeeee;
+}
+.theme--dark .artist-card__period {
+  background: #152028;
+  color: #9f9f9f;
+  border: 1px solid #464646;
+}
+
+.artist-card__badge {
+  display: inline-block;
+  background: #6086b4;
+  color: #fff;
+  font-size: 1rem;
+  padding: 2px 9px;
+  border-radius: 20px;
+  margin-left: 0.4rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.artist-card__links {
+  margin: 0.5rem 0 0.8rem 0;
+  font-size: 1.3rem;
+}
+.artist-card__links a {
+  margin-right: 1.2rem;
+  color: #6086b4;
+}
+.artist-card__links a:hover {
+  text-decoration: underline;
+}
+
+.artist-card__bio {
+  font-size: 1.4rem;
+  margin: 0.6rem 0;
+  line-height: 1.75;
+}
+.theme--light .artist-card__bio { color: #464646; }
+.theme--dark  .artist-card__bio { color: #eeeeee; }
+
+.sessions-table {
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+  border-collapse: collapse;
+}
+.sessions-table th {
+  text-align: left;
+  padding: 3px 14px 3px 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: #9f9f9f;
+}
+.sessions-table td {
+  padding: 3px 14px 3px 0;
+}
+
+@media (max-width: 600px) {
+  .artist-card img {
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 260px !important;
+    max-height: 260px !important;
+    margin: 0 0 1rem 0 !important;
+  }
+}
+&lt;/style&gt;
+&lt;div class=&#34;artist-card&#34;&gt;
+  &lt;img src=&#34;https://ambisonics.ch/residenzen/icst-studio-residences-2026/monoc-small-2.jpg&#34; alt=&#34;Pierre Alexandre Tremblay&#34;&gt;
+  &lt;div class=&#34;artist-card__body&#34;&gt;
+    &lt;div class=&#34;artist-card__name&#34;&gt;Pierre Alexandre Tremblay&lt;/div&gt;
+    &lt;span class=&#34;artist-card__period&#34;&gt;28 Apr – 21 Aug 2026&lt;/span&gt;
+    &lt;div class=&#34;artist-card__links&#34;&gt;
+      &lt;a href=&#34;https://www.zhdk.ch/forschung/icst/icst-air/pierre-alexandre-tremblay-25360&#34;&gt;ICST Projektseite&lt;/a&gt;
+      &lt;a href=&#34;https://www.pierrealexandretremblay.com/&#34;&gt;Website&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p class=&#34;artist-card__bio&#34;&gt;1975 in Montréal geboren, ist Pierre Alexandre Tremblay ein Komponist und Performer, der sich auf Bassgitarre und elektronische Geräte spezialisiert hat. Seine Arbeit erstreckt sich über elektroakustische Musik, zeitgenössischen Jazz, Musik mit gemischten Medien und Improvisation, mit Veröffentlichungen auf dem Label empreintes DIGITALes. Er war von 2005 bis 2024 Professor für Komposition und Improvisation an der University of Huddersfield und ist derzeit Forschungsprofessor für Komposition am Conservatorio della Svizzera italiana.&lt;/p&gt;
+    &lt;table class=&#34;sessions-table&#34;&gt;
+      &lt;tr&gt;&lt;th&gt;Session&lt;/th&gt;&lt;th&gt;Von&lt;/th&gt;&lt;th&gt;Bis&lt;/th&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;1.&lt;/td&gt;&lt;td&gt;28 Apr 2026&lt;/td&gt;&lt;td&gt;01 Mai 2026&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;2.&lt;/td&gt;&lt;td&gt;22 Jun 2026&lt;/td&gt;&lt;td&gt;24 Jun 2026&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;3.&lt;/td&gt;&lt;td&gt;13 Jul 2026&lt;/td&gt;&lt;td&gt;17 Jul 2026&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;4.&lt;/td&gt;&lt;td&gt;27 Jul 2026&lt;/td&gt;&lt;td&gt;30 Jul 2026&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;5.&lt;/td&gt;&lt;td&gt;17 Aug 2026&lt;/td&gt;&lt;td&gt;21 Aug 2026&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;artist-card&#34;&gt;
+  &lt;img src=&#34;https://ambisonics.ch/residenzen/icst-studio-residences-2026/monoc-small.jpg&#34; alt=&#34;Yoko Konishi&#34;&gt;
+  &lt;div class=&#34;artist-card__body&#34;&gt;
+    &lt;div class=&#34;artist-card__name&#34;&gt;Yoko Konishi&lt;/div&gt;
+    &lt;span class=&#34;artist-card__period&#34;&gt;24 Aug – 13 Sep 2026&lt;/span&gt;
+    &lt;div class=&#34;artist-card__links&#34;&gt;
+      &lt;a href=&#34;https://www.zhdk.ch/forschung/icst/icst-air/yoko-konishi-25367&#34;&gt;ICST Projektseite&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p class=&#34;artist-card__bio&#34;&gt;Yoko Konishi ist eine japanische Soundkünstlerin und Performerin, die derzeit in Frankreich lebt. Ihre Praxis konzentriert sich auf die Schnittstelle zwischen Klang, Körper und Technologie durch räumliches Audio, interaktive Systeme und sensorgestützte Prozesse. Sie hält einen Master-Abschluss in Ambisonics und räumlicher Soundkomposition von der Université Paris 8, besuchte ein Post-Master-Programm an der mdw – University of Music and Performing Arts Wien und schloss 2024–25 das IRCAM Cursus-Programm ab.&lt;/p&gt;
+    &lt;p class=&#34;artist-card__bio&#34;&gt;Vom 24. August bis 13. September 2026 wird Konishi zur Studio-Residency am ICST sein. Sie wird ein neues Werk für die Präsentation auf dem &lt;strong&gt;Sonic Matter Festival 2027&lt;/strong&gt; schaffen und die Integration von Narrativstrukturen und sensorischer Immersion in räumlicher Komposition vertiefen.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;artist-card&#34;&gt;
+  &lt;img src=&#34;https://ambisonics.ch/residenzen/icst-studio-residences-2026/monoc-small-1.jpg&#34; alt=&#34;Eli Stine&#34;&gt;
+  &lt;div class=&#34;artist-card__body&#34;&gt;
+    &lt;div class=&#34;artist-card__name&#34;&gt;Eli Stine&lt;/div&gt;
+    &lt;span class=&#34;artist-card__period&#34;&gt;29 Jun – 06 Jul 2026&lt;/span&gt;
+    &lt;span class=&#34;artist-card__badge&#34;&gt;Prix CIME 2025&lt;/span&gt;
+    &lt;div class=&#34;artist-card__links&#34;&gt;
+      &lt;a href=&#34;https://elistine.com/&#34;&gt;Website&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p class=&#34;artist-card__bio&#34;&gt;Eli Stine ist Komponist, Programmierer und Pädagoge. Er hält einen Ph.D. und Master in Komposition und Computertechnologien von der University of Virginia sowie Bachelor-Abschlüsse in Technology in Music und Computer Science vom Oberlin College. Er ist Visiting Assistant Professor am Oberlin Conservatory. Seine Arbeit erforscht elektroakustische Klänge und Multimedia-Technologien unter Verwendung von benutzerdefinierter Software, Videoprojektionen und Multi-Channel-Lautsprechersystemen. Sein Stück &lt;em&gt;Where Water Meets Memory&lt;/em&gt; gewann den &lt;strong&gt;Prix CIME 2025&lt;/strong&gt; internationalen elektroakustischen Musikwettbewerb.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2026 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>2025 ICST Artist in Studio-Residency</title>
+      <link>https://ambisonics.ch/de/residenzen/icst-studio-residences-2025/</link>
+      <guid>https://ambisonics.ch/de/residenzen/icst-studio-residences-2025/</guid>
+      <pubDate>Tue, 16 Sep 2025 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule der Künste&lt;/p&gt;
+&lt;hr&gt;
+&lt;style&gt;
+/* ── Artist-in-Residence Cards — Anatole theme aligned ── */
+
+.artist-card {
+  overflow: hidden;
+  margin: 2rem 0 2.5rem 0;
+  padding: 1.5rem;
+  border-left: 3px solid #6086b4;
+  border-radius: 2px;
+  font-family: inherit;
+}
+.theme--light .artist-card {
+  background: #eeeeee;
+  color: #464646;
+  box-shadow: 0 8px 16px rgba(10,10,10,0.07);
+}
+.theme--dark .artist-card {
+  background: #2a3a44;
+  color: #eeeeee;
+  box-shadow: 0 8px 16px rgba(226,226,226,0.06);
+}
+
+.artist-card img {
+  float: left !important;
+  display: block !important;
+  margin: 0 1.8rem 1rem 0 !important;
+  width: 260px !important;
+  height: 174px !important;
+  max-width: 260px !important;
+  max-height: 174px !important;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 2px;
+}
+
+.artist-card__name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 0 0.4rem 0;
+  line-height: 1.2;
+}
+
+.artist-card__period {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.7rem;
+  font-family: monospace;
+  letter-spacing: 0.03em;
+}
+.theme--light .artist-card__period {
+  background: #fff;
+  color: #9f9f9f;
+  border: 1px solid #eeeeee;
+}
+.theme--dark .artist-card__period {
+  background: #152028;
+  color: #9f9f9f;
+  border: 1px solid #464646;
+}
+
+.artist-card__badge {
+  display: inline-block;
+  background: #6086b4;
+  color: #fff;
+  font-size: 1rem;
+  padding: 2px 9px;
+  border-radius: 20px;
+  margin-left: 0.4rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.artist-card__links {
+  margin: 0.5rem 0 0.8rem 0;
+  font-size: 1.3rem;
+}
+.artist-card__links a {
+  margin-right: 1.2rem;
+  color: #6086b4;
+}
+.artist-card__links a:hover {
+  text-decoration: underline;
+}
+
+.artist-card__bio {
+  font-size: 1.4rem;
+  margin: 0.6rem 0;
+  line-height: 1.75;
+}
+.theme--light .artist-card__bio { color: #464646; }
+.theme--dark  .artist-card__bio { color: #eeeeee; }
+
+@media (max-width: 600px) {
+  .artist-card img {
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 260px !important;
+    max-height: 260px !important;
+    margin: 0 0 1rem 0 !important;
+  }
+}
+&lt;/style&gt;
+&lt;div class=&#34;artist-card&#34;&gt;
+  &lt;img src=&#34;nandele_01.png&#34; alt=&#34;Nandele Maguni&#34;&gt;
+  &lt;div class=&#34;artist-card__body&#34;&gt;
+    &lt;div class=&#34;artist-card__name&#34;&gt;Nandele Maguni&lt;/div&gt;
+    &lt;span class=&#34;artist-card__period&#34;&gt;16 Jun – 06 Jul 2025&lt;/span&gt;
+    &lt;p class=&#34;artist-card__bio&#34;&gt;Während seiner dreiwöchigen ICST Studio-Residency produzierte Nandele Maguni eine neue Veröffentlichung mit dem Titel &lt;em&gt;Kampfumo&lt;/em&gt;, basierend auf seinen Feldaufnahmen aus Maputo.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;artist-card&#34;&gt;
+  &lt;img src=&#34;Youngjae_Cho.jpg&#34; alt=&#34;Youngjae Cho&#34;&gt;
+  &lt;div class=&#34;artist-card__body&#34;&gt;
+    &lt;div class=&#34;artist-card__name&#34;&gt;Youngjae Cho&lt;/div&gt;
+    &lt;span class=&#34;artist-card__period&#34;&gt;07 Jul – 27 Jul 2025&lt;/span&gt;
+    &lt;div class=&#34;artist-card__links&#34;&gt;
+      &lt;a href=&#34;https://www.youngjaecho.com/about.html&#34;&gt;Website&lt;/a&gt;
+      &lt;a href=&#34;../Youngjae Cho/&#34;&gt;Vollständiges Profil &amp; B-Format-Projekt →&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p class=&#34;artist-card__bio&#34;&gt;Komponist mit Basis in Korea und Deutschland, arbeitet mit elektroakustischer Musik, Live-Elektronik und immersivem Mehrkanalformat-Audio. Auszeichnungen: George Enescu Competition (1. Preis), Via Nova Competition (1. Preis).&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;artist-card&#34;&gt;
+  &lt;img src=&#34;Lucas_Daniel.jpg&#34; alt=&#34;Dániel Péter Biró&#34;&gt;
+  &lt;div class=&#34;artist-card__body&#34;&gt;
+    &lt;div class=&#34;artist-card__name&#34;&gt;Dániel Péter Biró&lt;/div&gt;
+    &lt;span class=&#34;artist-card__period&#34;&gt;18 Aug – 07 Sep 2025&lt;/span&gt;
+    &lt;p class=&#34;artist-card__bio&#34;&gt;Professor für Komposition an der Grieg Academy, University of Bergen. Sein Forschungsprojekt &lt;em&gt;Sounding Philosophy&lt;/em&gt; wird vom Norwegian Artistic Research Program finanziert (2021–2025).&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;artist-card&#34;&gt;
+  &lt;img src=&#34;GOPR4281.jpg&#34; alt=&#34;Ana Gonzalez Gamboa&#34;&gt;
+  &lt;div class=&#34;artist-card__body&#34;&gt;
+    &lt;div class=&#34;artist-card__name&#34;&gt;Ana Gonzalez Gamboa &lt;span class=&#34;artist-card__badge&#34;&gt;Prix CIME 2025&lt;/span&gt;&lt;/div&gt;
+    &lt;span class=&#34;artist-card__period&#34;&gt;08 Sep – 16 Sep 2025&lt;/span&gt;
+    &lt;div class=&#34;artist-card__links&#34;&gt;
+      &lt;a href=&#34;https://anagonzalezgamboa0.wixsite.com/anagamboa&#34;&gt;Website&lt;/a&gt;
+      &lt;a href=&#34;https://www.instagram.com/ana___gamboa/&#34;&gt;Instagram&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p class=&#34;artist-card__bio&#34;&gt;&lt;em&gt;Lúmina&lt;/em&gt; ist eine Komposition, die Reiseaufnahmen mit Fragmenten von Anime verflicht und eine imaginäre Welt konstruiert, in der sich Erinnerung und Fiktion überschneiden.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

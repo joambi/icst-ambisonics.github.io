@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Workflow on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/tags/workflow/</link>
+
+    <description>
+      Recent content
+      
+         in Workflow 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Wed, 28 May 2025 13:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/tags/workflow/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST MultiEncoder – Gruppenanimation</title>
+      <link>https://ambisonics.ch/de/post/gp-manipulation/</link>
+      <guid>https://ambisonics.ch/de/post/gp-manipulation/</guid>
+      <pubDate>Wed, 28 May 2025 13:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;gruppenanimation&#34;&gt;Gruppenanimation&lt;/h1&gt;
+&lt;p&gt;Der &lt;strong&gt;ICST Multi-Ambisonics Encoder v.2+&lt;/strong&gt; bietet ein &lt;strong&gt;Gruppenanimations-Tool&lt;/strong&gt; zur dynamischen Manipulation gruppierter Audioquellen in der &lt;strong&gt;Radar-Anzeige&lt;/strong&gt;. Durch Auswahl eines Gruppenpunkts und Halten von &lt;strong&gt;Option (Alt) auf Mac&lt;/strong&gt; schaltest du erweiterte Funktionen wie &lt;strong&gt;Gruppenanimation&lt;/strong&gt; und &lt;strong&gt;Gruppenstrecken&lt;/strong&gt; frei, die es dir ermöglichen, mehrere Quellen synchronisiert zu bewegen und zu transformieren für verbesserte 3D-Raumalisierung.&lt;/p&gt;
+&lt;p&gt;📺 &lt;strong&gt;Tutorial:&lt;/strong&gt; &lt;a href=&#34;https://youtu.be/aDa-vNWriLM&#34;&gt;Points and Radar&lt;/a&gt; (3:15)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;einfache-animation-einer-gruppe&#34;&gt;Einfache Animation einer Gruppe&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/Gp_manipulation.gif&#34; alt=&#34;simple&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Punkte auswählen&lt;/strong&gt; – Klicke um einen Punkt auszuwählen; nutze &lt;strong&gt;Shift + Klick&lt;/strong&gt; für mehrere Punkte.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gruppe erstellen&lt;/strong&gt; – Klicke auf das &lt;strong&gt;Group&lt;/strong&gt;-Symbol um einen Gruppenpunkt zu erstellen (z.B. &amp;lsquo;S&amp;rsquo;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gruppe verschieben&lt;/strong&gt; – Halte &lt;strong&gt;Shift&lt;/strong&gt; und ziehe den Gruppenpunkt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Punkte um Gruppe rotieren&lt;/strong&gt; – Halte &lt;strong&gt;Alt&lt;/strong&gt;, dann ziehe und lasse das &lt;strong&gt;Rotate-Around-Group&lt;/strong&gt;-Symbol fallen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gruppe strecken&lt;/strong&gt; – Halte &lt;strong&gt;Alt&lt;/strong&gt;, nutze das &lt;strong&gt;Stretch Symbol&lt;/strong&gt;, dann bewege die Maus &lt;strong&gt;nach oben/unten&lt;/strong&gt; zum Anpassen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gruppe um Ursprung rotieren&lt;/strong&gt; – Halte &lt;strong&gt;Alt&lt;/strong&gt;, dann ziehe und lasse das &lt;strong&gt;Rotate-Around-Origin&lt;/strong&gt;-Symbol fallen.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;💡 &lt;strong&gt;Tipp:&lt;/strong&gt; Diese Funktionen gelten auch für Höhenanpassungen im &lt;strong&gt;Z-Radar&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;manuelle-aufnahme&#34;&gt;Manuelle Aufnahme&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Stelle &lt;strong&gt;ICST MultiEncoder&lt;/strong&gt; (Track Automation) auf &lt;strong&gt;&amp;lsquo;LATCH&amp;rsquo;&lt;/strong&gt; (oder &lt;strong&gt;&amp;lsquo;WRITE&amp;rsquo;&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;Starte die Wiedergabe in &lt;strong&gt;Reaper&lt;/strong&gt;, halte &lt;strong&gt;Alt&lt;/strong&gt; und nimm deine Bewegung auf.&lt;/li&gt;
+&lt;li&gt;Um die aufgenommene Bewegung abzuspielen, stelle &amp;ldquo;LATCH&amp;rdquo; auf &amp;ldquo;READ&amp;rdquo;.
+&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/Rec_PP.gif&#34; alt=&#34;GP_REC&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lfo-animation-einer-gruppe&#34;&gt;LFO-Animation einer Gruppe&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_A.png&#34; alt=&#34;LFO_A 1&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Öffne die &lt;strong&gt;LFO Parameter Modulation&lt;/strong&gt; im &lt;strong&gt;AmbiEncoder&lt;/strong&gt;-Track und aktiviere die Parameter für &lt;strong&gt;GX, GY und GZ&lt;/strong&gt;.
+&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_param.png&#34; alt=&#34;LFO_parm&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Passe die LFO-Parameter an, z.B. &lt;strong&gt;Geschwindigkeit&lt;/strong&gt;, um die gewünschte Bewegung zu erreichen.
+Nun bewegt sich die Gruppe automatisch im Radar.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_A.gif&#34; alt=&#34;GP_LFO_animated&#34;&gt;&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;Tipp:&lt;/strong&gt; Das Verbinden der LFO-Parameter mit einer MIDI/OSC-Schnittstelle ermöglicht es dir, die Bewegung live zu steuern.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lfo-gruppenanimation-mit-quaternionen&#34;&gt;LFO-Gruppenanimation mit Quaternionen&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_Quarternions.gif&#34; alt=&#34;LFO_B&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dies ist ein fortgeschritteneres Beispiel für die Animation einer Gruppe mit &lt;strong&gt;Quaternionen-Parametern&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;Tipp:&lt;/strong&gt; Du kannst die Parameter auch mit einem &lt;strong&gt;Audio-Kontrollsignal&lt;/strong&gt; über einen Sidechain steuern.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;gruppenanimation-aus-einer-externen-quelle&#34;&gt;Gruppenanimation aus einer externen Quelle&lt;/h3&gt;
+&lt;p&gt;Der neue &amp;lsquo;ICST Ambi-OSC-Patcher&amp;rsquo; zeigt die direkten Möglichkeiten der Gruppenanimation. Wir demonstrieren, wie man Gruppen mit OSC aus einer externen Quelle animiert. Der MultiEncoder konvertiert Euler-Winkel intern in Quaternionen. In diesem Beispiel sind die Winkel vom Quellenpunkt (1) entscheidend für die Animation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/max-example-patch.png&#34; alt=&#34;Max example patch&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Download MaxPatch: &lt;a href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat&#34;&gt;Neuer OSC-Messenger&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;gruppenposition&#34;&gt;Gruppenposition&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Setze Gruppenposition AED
+&lt;ul&gt;
+&lt;li&gt;/icst/ambi/group/aed [GroupName] [Azimuth] [Elevation] [Distance] [Mode] Mode (1) = bewege die ganze GP, Mode (0) = bewege nur den GP-Punkt.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/icst/ambi/group/aed &#39;G1&#39; 135 0 0.1 1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Setze Gruppenposition XYZ
+&lt;ul&gt;
+&lt;li&gt;/icst/ambi/group/xyz [GroupName] [X] [Y] [Z] [Mode]:&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/icst/ambi/group/xyz &#39;G2&#39; 0.1 0.1 0 0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;osc-animation&#34;&gt;&lt;strong&gt;OSC-Animation&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Der ICST MultiEncoder kann jetzt direkt mit Euler-Winkeln via OSC gesteuert werden.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/OSC_abs_angel.gif&#34; alt=&#34;Euler_Winkel&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Ableton Live &amp; ICST Ambisonics Integration</title>
+      <link>https://ambisonics.ch/de/post/ableton_reaper/</link>
+      <guid>https://ambisonics.ch/de/post/ableton_reaper/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;abletonlive-zu-icst-ambisonics-multiencoder-in-reaper&#34;&gt;AbletonLive zu ICST Ambisonics MultiEncoder in Reaper&lt;/h1&gt;
+&lt;p&gt;Dieses Tutorial bietet eine detaillierte Anleitung zur Aufnahme von 7. Ordnung Ambisonics mit Ableton Live und Reaper. Es richtet sich an Benutzer mit grundlegenden Kenntnissen beider Programme. Wenn du mit den Konzepten von Ableton Live, Reaper und Ambisonics vertraut bist, sollten die Schritte einfach sein. Andernfalls können einige Abschnitte herausfordernd sein. In diesem Fall wird empfohlen, zuerst die Grundlagen dieser Software und der Ambisonics-Technologie zu erlernen.&lt;/p&gt;
+&lt;h3 id=&#34;ableton-zu-icst-multiencoder-in-reaper&#34;&gt;Ableton zu ICST MultiEncoder in Reaper&lt;/h3&gt;
+&lt;p&gt;Ableton überträgt Audio über &amp;ldquo;BlackHole&amp;rdquo; (bis zu 64 Kanäle) zu Reapers BlackHole-Eingangsgeräten.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_output.png&#34; alt=&#34;Ableton_outs&#34;&gt;
+Der Multi-Panner-OSC kann bis zu 16 OSC-Kanäle via localhost auf Port 50001 zum ICST Multi-AmbiEncoder senden. In Reaper werden Audio-Eingänge von BlackHole (1-4) empfangen, während der ICST Multi-AmbiEncoder OSC-Quellen (1-16) verarbeitet.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_OSC_BlackHole.gif&#34; alt=&#34;Ableton_to_MultiEncoder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dieses Setup ermöglicht die Aufnahme von B-Format bis zur 7. Ordnung aus Ableton Live 12.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;funktionsweise&#34;&gt;Funktionsweise&lt;/h3&gt;
+&lt;h4 id=&#34;schematische-übersicht&#34;&gt;Schematische Übersicht:&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_routing_64ch.png&#34; alt=&#34;Ableton_routing64ch&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;vorbereitung&#34;&gt;Vorbereitung:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Installiere &lt;a href=&#34;https://www.ableton.com/de/live/&#34;&gt;AbletonLive 12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Installiere &lt;a href=&#34;https://www.reaper.fm/&#34;&gt;Reaper (DAW)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Installiere &lt;a href=&#34;https://www.blackhole.audio/&#34;&gt;BlackHole64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download: &lt;a href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv&#34;&gt;E4L_Multi-Panner_OSC.adv&lt;/a&gt;  Dies ist ein modifizierter Panner von &lt;a href=&#34;https://github.com/EnvelopSound/EnvelopForLive/wiki&#34;&gt;EnvelopforLive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;h4 id=&#34;in-ableton-live&#34;&gt;In Ableton Live&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Erstelle bis zu 64 Mono-/Stereo-Spuren mit Audio- oder MIDI-Inhalten.&lt;/li&gt;
+&lt;li&gt;Leite die Ausgänge als externe Ausgänge weiter (1-64).&lt;/li&gt;
+&lt;li&gt;Reserviere Spur 64 für den LTC-Timecode.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Hinweis&lt;/strong&gt;: Ich habe gelesen, dass es Schwierigkeiten mit der bidirektionalen Synchronisierung zwischen Reaper und Ableton Live geben könnte. Ich habe mich daher für die stabile LTC-Timecode-Variante entschieden.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Erstelle Raumalisierungsspuren mit &amp;lsquo;E4L_Multi-Panner_OSC.adv&amp;rsquo; für Automation (max. 16 Quellen pro Panner).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sende optional benutzerdefinierte OSC-Raumalisierungsdaten von Max, um konsistente OSC-Portnummern in Reaper zu gewährleisten (Port: 50001).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Max-OSC-Out2.png&#34; alt=&#34;Max-OSC | 400&#34;&gt;
+Tipp: Stelle sicher, dass du die gleichen OSC-Portnummern in Reaper verwendest. (Port: 50001)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;in-reaper&#34;&gt;In Reaper&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Erstelle eine Session mit 63 Mono-Spuren (Spur 64 für LTC-Timecode).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aktiviere LTC-Synchronisierungseingabe auf Spur 64, indem du mit der rechten Maustaste auf die Playbar klickst.&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/LTC.png&#34; alt=&#34;LTC&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stelle alle aktiven Spuren auf &amp;ldquo;Record: Disable (monitor only).&amp;rdquo;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/rec_disable.png&#34; alt=&#34;Rec_disable&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Leite Spuren 1-63 zum ICST MultiEncoder_64 weiter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Routing_Overview.png&#34; alt=&#34;Routing_Inputs&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wenn korrekt geroutet, erscheint die Quelle im Encoder-Radar zur Verifizierung.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Konfiguriere die OSC-Verbindung zwischen Ableton und ICST MultiEncoder. Jeder Encoder benötigt seinen eigenen OSC-Port.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC-Port.png&#34; alt=&#34;OSC-Ports&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aktiviere OSC-Übertragung in E4L_Multi-Panner. Der ICST MultiEncoder zeigt bewegliche Punkte an, wenn OSC-Daten empfangen werden.
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC_ON.png&#34; alt=&#34;OSC_ON&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Klicke in Reaper auf Record -Output, um dein Bformat aufzunehmen. Siehe nächstes Bild.
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec_BF.png&#34; alt=&#34;Rec_BF&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Klicke dann auf REC in Reaper → du erhältst die folgende Nachricht &amp;ldquo;Waiting for Timecode&amp;rdquo;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec.png&#34; alt=&#34;Rec&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Drücke Play in Ableton Live, um Reaper via LTC Sync (Input 64) zu synchronisieren, was die B-Format 7. Ordnung Ambix-Aufnahme ermöglicht.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wechsle zum &lt;strong&gt;Start Marker&lt;/strong&gt; bei &lt;strong&gt;01:00:000&lt;/strong&gt; (LTC hat einen 60&amp;rsquo;-Offset), dann drücke &lt;strong&gt;Fire&lt;/strong&gt; oder &lt;strong&gt;Play&lt;/strong&gt; in Ableton Live, um die Aufnahme zu starten.
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Live_Reper_BF.gif&#34; alt=&#34;recoding_bf&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Weitere Details findest du in der Dokumentation für Ableton Live, Reaper und den ICST MultiEncoder.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

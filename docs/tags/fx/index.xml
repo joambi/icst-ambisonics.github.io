@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Fx on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/fx/</link>
+
+    <description>
+      Recent content
+      
+         in Fx 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Fri, 16 May 2025 09:44:58 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/fx/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST AmbiEncoder – OSC to FX Mapping</title>
+      <link>https://ambisonics.ch/post/osc-2-fx/</link>
+      <guid>https://ambisonics.ch/post/osc-2-fx/</guid>
+      <pubDate>Fri, 16 May 2025 09:44:58 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;icst-ambiencoder-sends-osc-to-fx-plugins-parameter&#34;&gt;ICST AmbiEncoder sends OSC to FX-Plugins-parameter&lt;/h1&gt;
+&lt;h3 id=&#34;integrating-icst-ambiencoder-with-iem-fdnreverb-via-osc&#34;&gt;Integrating ICST AmbiEncoder with IEM FdnReverb via OSC&lt;/h3&gt;
+&lt;p&gt;This example demonstrates a simple synchronization between &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; and &lt;strong&gt;IEM Ambisonics plugins&lt;/strong&gt;, using &lt;strong&gt;FdnReverb&lt;/strong&gt; to apply distance-dependent reverb. The &lt;strong&gt;IEM plugins&amp;rsquo; OSC interface&lt;/strong&gt; makes this process straightforward.&lt;/p&gt;
+&lt;h3 id=&#34;osc--osc-communication&#34;&gt;OSC &amp;lt;&amp;ndash;&amp;gt; OSC Communication&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;FdnReverb&lt;/strong&gt; (by IEM) is a CPU-efficient reverb for B-format. The goal is to &lt;strong&gt;increase reverb as the source moves further away&lt;/strong&gt; in the spatialization.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-2-fx/FX-Reverb_osc.gif&#34; alt=&#34;OSC to FX-Reverb&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1-set-up-the-daw-reaper&#34;&gt;1. Set Up the DAW (Reaper)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Create three tracks:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ICST Decoder&lt;/strong&gt; → Stereo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ICST Encoder (Mono/Panner)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IEM FdnReverb&lt;/strong&gt; → Reverb processing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-configure-osc-communication&#34;&gt;2. Configure OSC Communication&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; settings and navigate to the &lt;strong&gt;OSC window&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enable &lt;strong&gt;OSC Send&lt;/strong&gt; for external use.&lt;/li&gt;
+&lt;li&gt;Add the &lt;strong&gt;Dry/Wet parameter&lt;/strong&gt; from &lt;strong&gt;IEM FdnReverb&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OSC Input for IEM FdnReverb:&lt;/strong&gt;
+&lt;code&gt;/FdnReverb/dryWet {d}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In &lt;strong&gt;IEM FdnReverb&lt;/strong&gt;, activate the &lt;strong&gt;OSC Listener&lt;/strong&gt; (e.g., Port: 9001).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;IEM OSC&lt;/strong&gt;, set the port number, and press &lt;strong&gt;Connect&lt;/strong&gt; (should turn green when active).&lt;/li&gt;
+&lt;li&gt;Moving the &lt;strong&gt;panner&lt;/strong&gt; in ICST AmbiEncoder will now dynamically adjust the &lt;strong&gt;Dry/Wet&lt;/strong&gt; parameter in FdnReverb.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As the distance increases, reverb intensity will also increase. Experiment with other reverb parameters for additional effects.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

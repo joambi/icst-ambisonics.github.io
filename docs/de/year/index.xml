@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Year on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/year/</link>
+
+    <description>
+      Recent content
+      
+         in Year 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/year/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>2025</title>
+      <link>https://ambisonics.ch/de/year/2025/</link>
+      <guid>https://ambisonics.ch/de/year/2025/</guid>
+      <pubDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description></description>
+
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ambisonics @ ICST</title>
+  <meta name="description" content="Räumlicher Klang, Praxis, Forschung und Lehre am ICST." />
+  <style>
+    :root {
+      --bg-1: #eef4f7;
+      --bg-2: #d8e7ef;
+      --ink: #152733;
+      --muted: #3f5563;
+      --card: rgba(255, 255, 255, 0.74);
+      --accent: #136e9c;
+      --accent-2: #0f4f70;
+      --ring: rgba(19, 110, 156, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 700px at 10% -10%, #eef8ff 0%, transparent 60%),
+        radial-gradient(900px 500px at 95% 100%, #d9f4ff 0%, transparent 55%),
+        linear-gradient(135deg, var(--bg-1), var(--bg-2));
+      display: grid;
+      place-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      border-radius: 24px;
+      padding: clamp(1.25rem, 2.5vw, 2.25rem);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 12px 32px rgba(31, 41, 51, 0.12);
+      animation: rise 700ms ease-out both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 4vw, 2.7rem);
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+    }
+
+    p {
+      margin: 0.9rem 0 0;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: clamp(1rem, 2vw, 1.12rem);
+    }
+
+    .cta {
+      margin-top: 1.35rem;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 650;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      padding: 0.78rem 1.1rem;
+      border-radius: 999px;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+      box-shadow: 0 8px 20px rgba(11, 79, 74, 0.25);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.35rem;
+    }
+
+    .cta.secondary {
+      background: rgba(15, 79, 112, 0.1);
+      color: #0f4f70;
+      border: 1px solid rgba(15, 79, 112, 0.25);
+      box-shadow: none;
+    }
+
+    .cta:hover { transform: translateY(-2px); }
+    .cta:focus-visible {
+      outline: 0;
+      box-shadow: 0 0 0 4px var(--ring), 0 8px 20px rgba(11, 79, 74, 0.25);
+    }
+
+    .meta {
+      margin-top: 1.25rem;
+      font-size: 0.92rem;
+      color: #5c6a74;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Ambisonics @ ICST</h1>
+    <p>
+      Raumklang als künstlerische Praxis: Tutorials, Notizen und Setups aus dem
+      Umfeld des Institute for Computer Music and Sound Technology (ZHdK).
+    </p>
+    <div class="actions">
+      <a class="cta" href="https://ambisonics.ch" target="_blank" rel="noopener noreferrer">Zum Blog</a>
+      <a class="cta secondary" href="mailto:deine.email@example.com">Kontakt</a>
+    </div>
+    <p class="meta">Stand: März 2026 · Zürich</p>
+  </main>
+</body>
+</html>

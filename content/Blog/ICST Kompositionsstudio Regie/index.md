@@ -19,6 +19,39 @@ Status  April 2023
 **B:** The Extron panel provides convenient control of all video and power components.
 * * *
 
+<div class="home-cards">
+  <section class="home-card">
+    <h4>Work With Your Laptop</h4>
+    <p>Prepare audio and video drivers before arriving at the studio.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="https://www.rme-audio.de/downloads.html" target="_blank" rel="noopener noreferrer">RME MADI USB Driver</a>
+      <a class="hero__link" href="https://www.synaptics.com/products/displaylink-graphics/downloads" target="_blank" rel="noopener noreferrer">DisplayLink Driver</a>
+      <a class="hero__link" href="/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/">Quick Start Guide</a>
+    </div>
+  </section>
+
+  <section class="home-card">
+    <h4>Control Room Navigation</h4>
+    <p>Jump directly to routing, speaker settings, and video control sections.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="#lsb-panel--two-operating-modes">LSB Panel</a>
+      <a class="hero__link" href="#the-extron-touchscreen-panel-for-video">Extron Panel</a>
+      <a class="hero__link" href="#displaylink-docking-station">DisplayLink Dock</a>
+    </div>
+  </section>
+</div>
+
+<details class="home-accordion">
+  <summary>Mobile Quick Access</summary>
+  <div class="home-accordion__actions">
+    <a class="hero__link hero__link--primary" href="#lsb-panel--two-operating-modes">LSB Modes</a>
+    <a class="hero__link" href="#speaker-settings-in-the-icst-composition-studio">Speaker Settings</a>
+    <a class="hero__link" href="#the-extron-touchscreen-panel-for-video">Video Control</a>
+    <a class="hero__link" href="#additional-hubs-and-interfaces">Hubs & Interfaces</a>
+    <a class="hero__link" href="#displaylink-docking-station">Docking Station</a>
+  </div>
+</details>
+
 ### **Hint:**
 
 To work in the composition studio with your own laptop, please follow these two steps:
@@ -27,7 +60,7 @@ To work in the composition studio with your own laptop, please follow these two 
     - **RME MADI USB Driver** (Mac / Windows) for the audio connection
     - **DisplayLink** for the video connection
 
-👉 See also: **[Quick Start Guide](https://icst-kompositionsstudio.ch/post/icst-kompositionsstudio-quick-start)**
+👉 See also: **[Quick Start Guide](/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/)**
 
 * * *
 
@@ -51,7 +84,7 @@ Figure: LSB Layer 2
 
 ![LSB_Front](LSB_Front.jpg)
 
-👉 Further information: **[Speaker Settings](https://icst-kompositionsstudio.ch/post/speaker-settings)**
+👉 Further information: **[Speaker Settings](/blog/icst-kompositionsstudio-speaker-settings/)**
 
 * * *
 ### **LSB – Mic/Line Settings**
@@ -103,7 +136,7 @@ Behind the curved screen you will find additional hardware:
 👉 [Download DisplayLink Driver](https://www.synaptics.com/products/displaylink-graphics/downloads)
 
 7. The Apple laptop can be connected via **USB‑C (3.2)** or **USB‑A (3.2)**.
-![DisplayLink_4.jpeg](DisplayLink_4.jpeg)
+![DisplayLink_1](DisplayLink_1.png)
 8. Logitech Keyboard & Mouse
 
 ![Tastature-Mouse](Tastature-Maus.jpeg)
@@ -112,6 +145,15 @@ Behind the curved screen you will find additional hardware:
     
     - **1** → Mac Pro Studio
     - **2** → Laptop / PC
-        
+
+### Further Links
+<div class="hero__links">
+  <a class="hero__link hero__link--primary" href="/blog/icst-kompositionsstudio-equipment/">Equipment</a>
+  <a class="hero__link" href="/blog/icst-kompositionsstudio-software/">Software</a>
+  <a class="hero__link" href="/blog/icst-kompositionsstudio-speaker-settings/">Speaker Settings</a>
+  <a class="hero__link" href="/blog/downloads/">Downloads</a>
+  <a class="hero__link" href="/residenzen/">Residencies</a>
+</div>
+
 ----
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -8,10 +8,10 @@ defaultContentLanguage = 'en'
 
 [languages]
   [languages.en]
-    languageName = "English"
+    languageName = "EN"
     weight = 1
   [languages.de]
-    languageName = "Deutsch"
+    languageName = "DE"
     weight = 2
 
 [params]
@@ -80,31 +80,37 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   url = "#"
 
     [[menu.main]]
-    name = "Tutorials"
+    name = "Ambisonics 101"
     parent = "tutorials"
     weight = 201
+    url = "/ambisonics-101/"
+
+    [[menu.main]]
+    name = "All Tutorials"
+    parent = "tutorials"
+    weight = 202
     url = "/post/"
 
     [[menu.main]]
     name = "Videos"
     parent = "tutorials"
-    weight = 202
+    weight = 203
     url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 
   [[menu.main]]
-  name = "ASCOLTA"
+  name = "Ascolta"
   identifier = "ascolta"
   weight = 250
   url = "#"
 
     [[menu.main]]
-    name = "Upcoming"
+    name = "Next Session"
     parent = "ascolta"
     weight = 251
     url = "/blog/ascolta/17-ascolta/"
 
     [[menu.main]]
-    name = "Alle Ascolta"
+    name = "All Sessions"
     parent = "ascolta"
     weight = 252
     url = "/blog/ascolta/"
@@ -140,28 +146,58 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     url = "/blog/icst-composer-studio-blog/"
 
     [[menu.main]]
-    name = "Pre-Installation"
+    name = "Audio Examples"
     parent = "blog"
     weight = 352
+    url = "/blog/audio-examples/"
+
+    [[menu.main]]
+    name = "Equipment"
+    parent = "blog"
+    weight = 353
+    url = "/blog/icst-kompositionsstudio-equipment/"
+
+    [[menu.main]]
+    name = "Software"
+    parent = "blog"
+    weight = 354
+    url = "/blog/icst-kompositionsstudio-software/"
+
+    [[menu.main]]
+    name = "Speaker Setup"
+    parent = "blog"
+    weight = 355
+    url = "/blog/icst-kompositionsstudio-speaker-settings/"
+
+    [[menu.main]]
+    name = "Regie"
+    parent = "blog"
+    weight = 356
+    url = "/blog/icst-kompositionsstudio-regie/"
+
+    [[menu.main]]
+    name = "Pre-Installation"
+    parent = "blog"
+    weight = 357
     url = "/blog/icst-kompositionsstudio-pre-installation/"
 
     [[menu.main]]
     name = "Downloads"
     parent = "blog"
-    weight = 353
+    weight = 358
     url = "/blog/downloads/"
 
     [[menu.main]]
     name = "All Studio Pages"
     parent = "blog"
-    weight = 354
+    weight = 359
     url = "/blog/"
 
   [[menu.main]]
   name = "Links"
   identifier = "links"
   weight = 400
-  url = "/Links/"
+  url = "/links/"
 
   [[menu.main]]
   name = "About"

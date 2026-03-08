@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+
     <title>Series on The ICST Ambisonics Site</title>
+
     <link>https://ambisonics.ch/series/</link>
-    <description>Recent content in Series on The ICST Ambisonics Site</description>
+
+    <description>
+      Recent content
+      
+         in Series 
+      
+      on The ICST Ambisonics Site
+    </description>
+
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ambisonics.ch/series/index.xml" rel="self" type="application/rss+xml" />
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <atom:link href="https://ambisonics.ch/series/index.xml" rel="self" type="application/rss&#43;xml" />
+
   </channel>
 </rss>

@@ -31,7 +31,7 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 As in the figure above, the synchronization is correct.
 #### RME TotalMixer Setup for Multichannel:
-![TotalMix](TotalMix.png)
+- [RME TotalMix FX](https://rme-audio.de/totalmix-fx.html)
 
 - for Ambisonics delete the 'stereo-mix'
 
@@ -48,7 +48,6 @@ To get the curved screen as a single large screen, you need to make an additiona
 2. deactivate the flag 'monitors use different spaces.'
 3. This setting will only become active after a new login!
    ![Mission-control](Mission-control.webp)
-   ![Mission_2](Mission_2.png)
    ![Mission_3](Mission3.webp)
 
 ---

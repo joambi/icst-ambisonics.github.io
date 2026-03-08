@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>ICST Studio Blog on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/blog/</link>
+
+    <description>
+      Recent content
+      
+         in ICST Studio Blog 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Sat, 28 Jun 2025 16:13:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/blog/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST Kompositionsstudio</title>
+      <link>https://ambisonics.ch/de/blog/icst-composer-studio-blog/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-composer-studio-blog/</guid>
+      <pubDate>Tue, 27 May 2025 17:16:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule der Künste&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-composer-studio-blog/KompStudio.jpg&#34; alt=&#34;ICST Kompositionsstudio&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Das &lt;strong&gt;ICST Kompositionsstudio&lt;/strong&gt; an der Zürcher Hochschule der Künste ist ein Produktionsraum für elektroakustische Musik und räumliche Klangkunst. Ausgestattet mit einem 31-Lautsprecher-Ambisonics-System (Geithain) sowie einer umfangreichen Software- und Hardware-Infrastruktur unterstützt es die Produktion, Erforschung und Aufführung immersiver Audioarbeiten.&lt;/p&gt;
+&lt;p&gt;Das Studio steht internationalen Künstler*innen in Residenz, Forschenden und Studierenden offen, die an der Schnittstelle von Musik, Technologie und Klangdesign arbeiten.&lt;/p&gt;
+&lt;p&gt;Raum: &lt;strong&gt;ZT 3.D02&lt;/strong&gt; · Kontakt: &lt;a href=&#34;mailto:johannes.schuett@zhdk.ch&#34;&gt;johannes.schuett@zhdk.ch&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;studio-bereiche&#34;&gt;Studio-Bereiche&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-kompositionsstudio-equipment/&#34;&gt;Equipment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-kompositionsstudio-software/&#34;&gt;Software&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-kompositionsstudio-speaker-settings/&#34;&gt;Speaker Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/audio-examples/&#34;&gt;Audio Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-kompositionsstudio-pre-installation/&#34;&gt;Pre-Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-kompositionsstudio-regie/&#34;&gt;Regie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/residenzen/&#34;&gt;Artist Residencies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/ascolta/&#34;&gt;ascolta&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3d-audio-musik-entdecken&#34;&gt;3D Audio-Musik entdecken&lt;/h2&gt;
+&lt;p&gt;Eine Auswahl an Online-Ressourcen zum Anhören von Ambisonics und Raumklang:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://audiospace.soundingfuture.com/tracks&#34;&gt;Sounding Future&lt;/a&gt; — Räumliches Audioarchiv&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hoast.iem.at/&#34;&gt;HOAST Library (IEM)&lt;/a&gt; — Higher-Order Ambisonics Aufnahmen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.wyastone.co.uk/all-labels/nimbus.html&#34;&gt;Nimbus UHJ&lt;/a&gt; — Klassische Ambisonics-UHJ-Aufnahmen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;icst-b-format-archiv&#34;&gt;ICST B-Format Archiv&lt;/h2&gt;
+&lt;p&gt;Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kodiert wurden.&lt;/p&gt;
+&lt;p&gt;→ &lt;a href=&#34;https://ambisonics.ch/de/blog/sounding_future/&#34;&gt;Zum B-Format Archiv&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2026 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST Kompositionsstudio Überblick</title>
+      <link>https://ambisonics.ch/de/blog/icst-composer-studio-overview/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-composer-studio-overview/</guid>
+      <pubDate>Mon, 05 May 2025 16:43:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;studio-für-komposition&#34;&gt;&lt;strong&gt;Studio für Komposition&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Das ICST-Kompositionsstudio ist ein Surround-Studio mit 17 Geithain-Lautsprechern (8+5+4) und Stereo-Monitoring. Ein Mac Pro bietet verschiedene Software für Sequencing, HD-Recording, Sound-Tools, MAX MSP/Jitter und PD. Das Studio eignet sich besonders für die Produktion von Ambisonics- und Surround-Musik. Es verbindet aktuelle Technologien mit musikalischer Praxis und legt den Fokus auf Klangforschung, Computermusik und Medienkunst. Das Studio unterstützt die Produktion und Komposition neuer Werke elektronischer Musik sowie Klang- und Medienkunst.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-composer-studio-overview/ICST_STUDIO.png&#34; alt=&#34;ICST_STUDIO&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Raum: &lt;strong&gt;ZT 3.D02 ICST Kompositionsstudio&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Kontakt: &lt;a href=&#34;mailto:johannes.schuett@zhdk.ch&#34;&gt;johannes.schuett@zhdk.ch&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST Kompositionsstudio Vorinstallation</title>
+      <link>https://ambisonics.ch/de/blog/icst-kompositionsstudio-pre-installation/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-kompositionsstudio-pre-installation/</guid>
+      <pubDate>Tue, 03 Jun 2025 15:10:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;vorinstallation-für-ihren-externen-laptop&#34;&gt;Vorinstallation für Ihren externen Laptop&lt;/h1&gt;
+&lt;h3 id=&#34;audio&#34;&gt;&lt;strong&gt;AUDIO&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;rme-treiber-installieren-driverkit&#34;&gt;RME-Treiber installieren (DriverKit)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;MadiFace USB herunterladen&lt;/strong&gt; und den Installationsanweisungen folgen.&lt;br&gt;
+&lt;a href=&#34;https://rme-audio.de/de_madiface-usb.html&#34;&gt;Produktseite&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Systemkompatibilität:&lt;/strong&gt; macOS / Windows&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;USB Series Kernel Extension:&lt;/strong&gt; macOS 11+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Handbuch:&lt;/strong&gt; &lt;a href=&#34;https://rme-audio.de/downloads/madiface_usb_d.pdf&#34;&gt;PDF herunterladen&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rme-audio.de/rme-treiber-macos.html&#34;&gt;RME-Treiber für macOS&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rme-audio.de/installationsanleitung.html&#34;&gt;Installationsanleitung&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rme-audio.de/de_login-items-extensions-driverkit-macos-sequoia.html&#34;&gt;Login Items &amp;amp; Extensions für DriverKit&lt;/a&gt; &lt;img src=&#34;https://rme-audio.de/files/uploads/Support/macOS-Privacy-Security-Sequoia.jpg&#34; alt=&#34;macOS Privacy &amp;amp; Security Guide&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;fehlersuche&#34;&gt;&lt;strong&gt;Fehlersuche&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Für Unterstützung das &lt;a href=&#34;https://youtu.be/Ilkwtb2MKrM&#34;&gt;Video&lt;/a&gt; ab Minute 2:36 ansehen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;rme-madiface-sync&#34;&gt;RME MadiFace Sync:&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/MadiFace.png&#34; alt=&#34;RME-MadiFace&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Wie in der Abbildung oben ist die Synchronisation korrekt.&lt;/p&gt;
+&lt;h4 id=&#34;rme-totalmixer-setup-für-mehrkanal&#34;&gt;RME TotalMixer Setup für Mehrkanal:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://rme-audio.de/totalmix-fx.html&#34;&gt;RME TotalMix FX&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Für Ambisonics den &amp;ldquo;stereo-mix&amp;rdquo; löschen.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;video--screen&#34;&gt;Video / Screen&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;DisplayLink Manager installieren&lt;/strong&gt;&lt;br&gt;
+Den &lt;a href=&#34;https://www.synaptics.com/products/displaylink-graphics/downloads/macos&#34;&gt;DisplayLink Manager für macOS&lt;/a&gt; für Ihr System herunterladen und installieren.&lt;/p&gt;
+&lt;h4 id=&#34;tipp&#34;&gt;&lt;strong&gt;Tipp:&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Damit der Curved Screen als ein großer Bildschirm erscheint, ist eine zusätzliche Einstellung auf dem Mac nötig.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Systemeinstellungen -&amp;gt; Mission Control&lt;/li&gt;
+&lt;li&gt;Option &amp;ldquo;Monitore verwenden verschiedene Spaces&amp;rdquo; deaktivieren&lt;/li&gt;
+&lt;li&gt;Die Einstellung wird erst nach einem erneuten Login aktiv
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/Mission-control.webp&#34; alt=&#34;Mission-control&#34;&gt;
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/Mission3.webp&#34; alt=&#34;Mission_3&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;support--kontakt&#34;&gt;Support &amp;amp; Kontakt&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Hilfe:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Johannes Schütt    Mobile: +41 79 786 12 49    Mail: &lt;a href=&#34;mailto:johannes.schuett@zhdk.ch&#34;&gt;johannes.schuett@zhdk.ch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Peter Färber           Mobile: +41 79 444 06 16    Mail: &lt;a href=&#34;mailto:peter.faerber@zhdk.ch&#34;&gt;peter.faerber@zhdk.ch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Technischer Service A/V:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;mailto:simon.koenz@zhdk.ch&#34;&gt;simon.koenz@zhdk.ch&lt;/a&gt;    Mobile: +41 76 330 11 02&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;downloads&#34;&gt;Downloads&lt;/h1&gt;
+&lt;p&gt;→ Alle Downloads sind zentral auf der Seite &lt;a href=&#34;https://ambisonics.ch/de/blog/downloads/&#34;&gt;Downloads&lt;/a&gt; verfügbar.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST Kompositionsstudio Equipment</title>
+      <link>https://ambisonics.ch/de/blog/icst-kompositionsstudio-equipment/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-kompositionsstudio-equipment/</guid>
+      <pubDate>Mon, 09 Jun 2025 15:10:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Zentrale Ausstattung und praktische Checkliste für die Arbeit im ICST Kompositionsstudio.&lt;/p&gt;
+&lt;div class=&#34;home-cards&#34;&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Hauptsystem&lt;/h4&gt;
+    &lt;p&gt;Mac Pro Produktionsrechner, Routing-Infrastruktur und Display-Setup.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://rme-audio.de/de_madiface-usb.html&#34;&gt;RME MadiFace&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://lawo.com/produkte/nova73-hd/?lang=de&#34;&gt;LAWO Matrix&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Lautsprecher &amp; Kontrolle&lt;/h4&gt;
+    &lt;p&gt;Hauptmonitoring, Ambisonics-Ringlautsprecher, LFE und MIDI-Steuerung.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://www.me-geithain.de/en/rl-901k2.html&#34;&gt;Geithain RL911&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://www.me-geithain.de/en/mo-2.html&#34;&gt;Geithain MO-2&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://novationmusic.com/products/launch-control-xl&#34;&gt;LaunchControl XL&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;details class=&#34;home-accordion&#34;&gt;
+  &lt;summary&gt;Systemdetails&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://www.apple.com/mac-pro/&#34;&gt;Mac Pro (28-Core Intel, macOS Sequoia 15.4)&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.synaptics.com/products/displaylink-graphics/downloads/macos&#34;&gt;Großbildschirm + DisplayLink-Adapter&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://rme-audio.de/de_madiface-usb.html&#34;&gt;RME MadiFace&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://lawo.com/produkte/nova73-hd/?lang=de&#34;&gt;LAWO Kreuzschiene&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;home-accordion&#34;&gt;
+  &lt;summary&gt;Lautsprecher &amp; Controller&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://www.me-geithain.de/en/rl-901k2.html&#34;&gt;2x Geithain RL911&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.me-geithain.de/en/mo-2.html&#34;&gt;29x Geithain MO-2&lt;/a&gt;
+    &lt;span class=&#34;hero__link&#34;&gt;1x Hafler (LFE)&lt;/span&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://novationmusic.com/products/launch-control-xl&#34;&gt;Novation LaunchControl XL&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;home-accordion&#34;&gt;
+  &lt;summary&gt;Mitbringen&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://en.wikipedia.org/wiki/USB_hardware&#34;&gt;USB-Kabel&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.power-plugs-sockets.com/switzerland/&#34;&gt;Netzadapter (Schweiz / Typ J)&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/#additional-hubs-and-interfaces&#34;&gt;Spezielle Connectoren&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Wenn Sie spezielle Connectoren wie MIDI/OSC oder andere Anschlüsse benötigen, bitte mitbringen und mit uns in Kontakt treten.&lt;/p&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST Kompositionsstudio Software</title>
+      <link>https://ambisonics.ch/de/blog/icst-kompositionsstudio-software/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-kompositionsstudio-software/</guid>
+      <pubDate>Wed, 28 May 2025 15:11:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Software- und Plugin-Umgebung für die Produktion auf dem ICST Mac Pro.&lt;/p&gt;
+&lt;div class=&#34;home-cards&#34;&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Empfohlene DAWs&lt;/h4&gt;
+    &lt;p&gt;Für Ambisonics- und Mehrkanalproduktion arbeitet ICST primär mit Reaper und Ardour.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;http://reaper.fm/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Reaper&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;http://ardour.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Ardour&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Spatial-Audio-Stack&lt;/h4&gt;
+    &lt;p&gt;Zentrale Ambisonics-Toolchain mit ICST Plugins, IEM, ATK, Spat und verwandten Ökosystemen.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/&#34;&gt;ICST Plugins&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/icst-ambisonics-tools/&#34;&gt;ICST Max Tools&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;software-inventar-akkordeon&#34;&gt;Software-Inventar (Akkordeon)&lt;/h3&gt;
+&lt;details class=&#34;home-accordion&#34;&gt;
+  &lt;summary&gt;Audioanalyse &amp; Editoren&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://www.izotope.com/en/products/rx.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;RX iZotope&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.sonicvisualiser.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Sonic Visualiser&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.klingbeil.com/spear/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;SPEAR&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://twistedwave.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;TwistedWave&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://grm.tools/en/grmtools-3&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;GRM Tools Complete&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;home-accordion&#34;&gt;
+  &lt;summary&gt;Ambisonics &amp; Spatial Audio&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/&#34;&gt;ICST Ambisonics Plugins&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/icst-ambisonics-tools/&#34;&gt;ICST Ambisonics Tools (Max)&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://plugins.iem.at/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;IEM Plugin Suite&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.ambisonictoolkit.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;ATK Ambisonics Toolkit&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;http://www.matthiaskronlachner.com/?p=1910&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;ambiX&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://harpex.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Harpex&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://forum.ircam.fr/projects/detail/spat/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Panoramix / Spat&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/mcfx-dev/mcfx&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;mcfx&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;home-accordion&#34;&gt;
+  &lt;summary&gt;DAW, Programmierung und Utilities&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://www.ableton.com/live/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Ableton Live 12&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.reaper.fm/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Reaper&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://ardour.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Ardour&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.apple.com/logic-pro/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Logic Pro&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://cycling74.com/products/max&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Max&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://supercollider.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;SuperCollider&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://csound.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Csound&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://faust.grame.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Faust&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://puredata.info/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Pd&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.audinate.com/products/software/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Dante Controller / Via / Virtual Soundcard&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;home-accordion&#34;&gt;
+  &lt;summary&gt;Notation, IRCAM und OSC-Tools&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://www.avid.com/sibelius&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Sibelius&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://musescore.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;MuseScore&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.finalemusic.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Finale&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://forum.ircam.fr/projects/detail/spat/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;IRCAM SPAT / PANORAMIX / OPENMUSIC&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;http://www.iannix.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;IanniX&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://inscore.grame.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;INScore&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://forum.ircam.fr/projects/detail/tosca/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;ToscA&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;weitere-links&#34;&gt;Weitere Links&lt;/h3&gt;
+&lt;div class=&#34;hero__links&#34;&gt;
+  &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-equipment/&#34;&gt;Equipment&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/&#34;&gt;Regie&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings/&#34;&gt;Speaker Settings&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/residenzen/&#34;&gt;Residencies&lt;/a&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST Kompositionsstudio Regie</title>
+      <link>https://ambisonics.ch/de/blog/icst-kompositionsstudio-regie/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-kompositionsstudio-regie/</guid>
+      <pubDate>Tue, 08 Apr 2025 15:11:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;überblick-über-das-icst-kompositionsstudio&#34;&gt;&lt;strong&gt;Überblick über das ICST Kompositionsstudio&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Status April 2023&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/foto_1.png&#34; alt=&#34;Regie-Tisch&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;regietisch&#34;&gt;Regietisch&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; Das LSB ist das zentrale Bedienfeld für Routing und Verwaltung aller Audiokomponenten.&lt;br&gt;
+&lt;strong&gt;B:&lt;/strong&gt; Das Extron-Panel steuert bequem Video- und Stromkomponenten.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;home-cards&#34;&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Arbeiten mit dem eigenen Laptop&lt;/h4&gt;
+    &lt;p&gt;Audio- und Video-Treiber vor dem Studiotermin vorbereiten.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://www.rme-audio.de/downloads.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;RME MADI USB Treiber&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://www.synaptics.com/products/displaylink-graphics/downloads&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;DisplayLink Treiber&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/&#34;&gt;Quick Start Guide&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Regie-Navigation&lt;/h4&gt;
+    &lt;p&gt;Direkte Sprünge zu Routing, Lautsprecher-Settings und Videosteuerung.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;#lsb-panel--two-operating-modes&#34;&gt;LSB-Panel&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;#the-extron-touchscreen-panel-for-video&#34;&gt;Extron-Panel&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;#displaylink-docking-station&#34;&gt;DisplayLink Dock&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;details class=&#34;home-accordion&#34;&gt;
+  &lt;summary&gt;Mobile Schnellzugriffe&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;#lsb-panel--two-operating-modes&#34;&gt;LSB-Modi&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;#speaker-settings-in-the-icst-composition-studio&#34;&gt;Speaker Settings&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;#the-extron-touchscreen-panel-for-video&#34;&gt;Videosteuerung&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;#additional-hubs-and-interfaces&#34;&gt;Hubs &amp; Interfaces&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;#displaylink-docking-station&#34;&gt;Docking-Station&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;hinweis&#34;&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Um im Kompositionsstudio mit dem eigenen Laptop zu arbeiten, bitte diese zwei Schritte durchführen:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Erforderliche Treiber für Audio und Video installieren:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;RME MADI USB Driver&lt;/strong&gt; (Mac / Windows) für die Audioverbindung&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DisplayLink&lt;/strong&gt; für die Videoverbindung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;👉 Siehe auch: &lt;strong&gt;&lt;a href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/&#34;&gt;Quick Start Guide&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;lsb-panel--zwei-betriebsmodi&#34;&gt;LSB-Panel – Zwei Betriebsmodi&lt;/h2&gt;
+&lt;p&gt;Das LSB-Panel bietet zwei Hauptlayouts:&lt;/p&gt;
+&lt;h3 id=&#34;lsb--erstes-layout&#34;&gt;&lt;strong&gt;LSB – Erstes Layout&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/LSB_Front_1.jpg&#34; alt=&#34;LSB_1&#34;&gt;
+&lt;em&gt;Abbildung: LSB Layer 1&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Im ersten Layout sind in der oberen Reihe die verfügbaren Audioquellen sichtbar. In der zweiten und dritten Reihe kann direkt das Lautsprecher-Setup gewählt werden.&lt;br&gt;
+Mit &lt;strong&gt;ALL LS&lt;/strong&gt; werden alle Lautsprecher freigeschaltet, die dann in &lt;strong&gt;RME TotalMix&lt;/strong&gt; oder direkt in der DAW geroutet werden können.&lt;/p&gt;
+&lt;p&gt;Um auf das zweite Layout „Sources&amp;quot; zu wechseln, den &lt;strong&gt;Settings&lt;/strong&gt;-Button drücken.
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/LSB_Back.jpg&#34; alt=&#34;LSB_2&#34;&gt;
+Abbildung: LSB Layer 2&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;speaker-settings-im-icst-kompositionsstudio&#34;&gt;&lt;strong&gt;Speaker Settings im ICST Kompositionsstudio&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/LSB_Front.jpg&#34; alt=&#34;LSB_Front&#34;&gt;&lt;/p&gt;
+&lt;p&gt;👉 Weitere Informationen: &lt;strong&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-kompositionsstudio-speaker-settings/&#34;&gt;Speaker Settings&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lsb--micline-einstellungen&#34;&gt;&lt;strong&gt;LSB – Mic/Line Einstellungen&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/Mic-Line.jpg&#34; alt=&#34;Mic/Line&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;extron-touchscreen-panel-für-video&#34;&gt;Extron Touchscreen-Panel für Video&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/Extron_Video.jpeg&#34; alt=&#34;Extron-Video&#34;&gt;
+Beispiel: Video-Umschaltlayout&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/Extron-Light.png&#34; alt=&#34;Extron-Light&#34;&gt;
+Beispiel: Lichtsteuerung&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;zusätzliche-hubs-und-interfaces&#34;&gt;Zusätzliche Hubs und Interfaces&lt;/h3&gt;
+&lt;p&gt;Hinter der gebogenen Leinwand befindet sich zusätzliche Hardware:
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/Extron-Hub.jpeg&#34; alt=&#34;Extron-Hun&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;extron-hub&#34;&gt;Extron Hub:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Extron Hub&lt;/strong&gt; – Schnittstellen für zusätzliche Videoverbindungen und das Extron-Panel.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PureTools Converter&lt;/strong&gt; – VGA-Eingang für PC/Laptop.
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/PureTool_1.jpeg&#34; alt=&#34;PureTool_1&#34;&gt;
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/Connecting.png&#34; alt=&#34;Connecting&#34;&gt;
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/Remote.png&#34; alt=&#34;Remote-Control&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;fernbedienung&#34;&gt;Fernbedienung:&lt;/h3&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Eine Fernbedienung auf dem Tisch steuert alle Einstellungen des PureTools PT-SC-VGAHD.&lt;br&gt;
+👉 &lt;a href=&#34;https://icst-kompositionsstudio.ch/post/puretools-video-converter&#34;&gt;Dokumentation: PureTools PT-SC-VGAHD&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lake People Stereo Balanced Amplifier&lt;/strong&gt; – für die direkte Verbindung zum Mac.
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/amp.jpeg&#34; alt=&#34;Amp&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Lake People Phone Amplifier&lt;/strong&gt; – für zwei Kopfhörer-Monitoringkanäle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Kopfhörer&lt;/strong&gt;
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/Headphone_amp.jpeg&#34; alt=&#34;Headphone_amp&#34;&gt;
+Lake People (Phone Amplifier) für 2x Kopfhörer-Monitoring.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;displaylink-docking-station&#34;&gt;DisplayLink Docking-Station&lt;/h3&gt;
+&lt;p&gt;.   Die &lt;a href=&#34;https://us.targus.com/products/usb-c-universal-dv4k-docking-station-with-100w-power-dock190usz&#34;&gt;Targus USB-C Docking Station&lt;/a&gt; ermöglicht zusätzlich zu den festen Anschlüssen die Verbindung von zwei externen SSDs über USB-C.
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/DisplayLink_1.png&#34; alt=&#34;DisplayLink&#34;&gt;
+.      Front/Seitenansicht
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/DisplayLink_3.jpeg&#34; alt=&#34;DisplayLink_2&#34;&gt;
+.      DisplayLink Rückseite
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/DisplayLink_2.png&#34; alt=&#34;DisplayLink_3&#34;&gt;
+&lt;em&gt;Anschlussübersicht&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Achtung:&lt;/strong&gt; Für die Videofunktionen der Targus Docking Station muss der &lt;strong&gt;DisplayLink&lt;/strong&gt;-Treiber installiert sein:&lt;br&gt;
+👉 &lt;a href=&#34;https://www.synaptics.com/products/displaylink-graphics/downloads&#34;&gt;DisplayLink Treiber herunterladen&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Apple-Laptops können über &lt;strong&gt;USB-C (3.2)&lt;/strong&gt; oder &lt;strong&gt;USB-A (3.2)&lt;/strong&gt; verbunden werden.
+&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/DisplayLink_1.png&#34; alt=&#34;DisplayLink_1&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Logitech Tastatur &amp;amp; Maus&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/Tastature-Maus.jpeg&#34; alt=&#34;Tastature-Mouse&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Tastatur und Maus lassen sich einfach zwischen folgenden Quellen umschalten:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;1&lt;/strong&gt; → Mac Pro Studio&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2&lt;/strong&gt; → Laptop / PC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;weitere-links&#34;&gt;Weitere Links&lt;/h3&gt;
+&lt;div class=&#34;hero__links&#34;&gt;
+  &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-equipment/&#34;&gt;Equipment&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-software/&#34;&gt;Software&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings/&#34;&gt;Speaker Settings&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/residenzen/&#34;&gt;Residencies&lt;/a&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST Kompositionsstudio Ambisonics-Setup</title>
+      <link>https://ambisonics.ch/de/blog/icst-kompositionsstudio-ambisonics-setting/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-kompositionsstudio-ambisonics-setting/</guid>
+      <pubDate>Mon, 02 Jun 2025 15:12:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Ambisonics-Lautsprecher-Setup und Koordinaten
+&lt;strong&gt;Beispiel für „ICST_AmbiDecoder 3.1.0&amp;quot; VST3 (2025)&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Der Studioraum ist ca. 7 m lang, 7 m breit und 7 m hoch.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/Speaker_for_Decoder.png&#34; alt=&#34;ICST KompStudio Speakers&#34;&gt;
+Lautsprecher-Koordinaten für das &amp;ldquo;ICST Kompositionsstudio&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/Speakers_Kompstudio.png&#34; alt=&#34;Speaker Setup&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;koordinaten&#34;&gt;&lt;strong&gt;Koordinaten:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/Speaker_Setting.png&#34; alt=&#34;Speaker-Setting&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;multi-decoder-setting-beispiel&#34;&gt;Multi-Decoder-Setting (Beispiel)&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/MultiDec.png&#34; alt=&#34;MultiDecoder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Lautsprecher 1 - 17 &amp;ndash;&amp;gt; Kanäle 1 - 17
+(Lautsprecher 17 = Voice of God)
+Sub/LFE &amp;ndash;&amp;gt; Kanal 18&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;ICST Ambisonics Plugins Dokumentation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&#34;&gt;ICST Ambisonics Plugins Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/&#34;&gt;ICST Ambisonics Plugins Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Downloads:&lt;/strong&gt; → &lt;a href=&#34;https://ambisonics.ch/de/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Audio Examples</title>
+      <link>https://ambisonics.ch/de/blog/audio-examples/</link>
+      <guid>https://ambisonics.ch/de/blog/audio-examples/</guid>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology (ICST) · Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Kurze Preview-Snippets werden auf dieser Website gehostet. Längere Vollversionen werden extern verlinkt, damit die GitHub-Pages-Limits nicht überschritten werden.&lt;/p&gt;
+&lt;h3 id=&#34;so-hörst-du-die-beispiele&#34;&gt;So hörst du die Beispiele&lt;/h3&gt;
+&lt;div class=&#34;hero__links&#34;&gt;
+  &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/ambisonics-101/&#34;&gt;Ambisonics 101&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/ascolta/&#34;&gt;Ascolta&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;beispiele&#34;&gt;Beispiele&lt;/h3&gt;
+&lt;div class=&#34;home-cards&#34;&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Beispiel 01 · Binaural Preview&lt;/h4&gt;
+    &lt;p&gt;Format: Binaural Stereo · Preview-Dauer: 60s&lt;/p&gt;
+    &lt;audio controls preload=&#34;none&#34;&gt;
+      &lt;source src=&#34;https://ambisonics.ch/audio/previews/example-01-binaural.ogg&#34; type=&#34;audio/ogg&#34;&gt;
+      &lt;source src=&#34;https://ambisonics.ch/audio/previews/example-01-binaural.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+      Dein Browser unterstützt das Audio-Element nicht.
+    &lt;/audio&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://music.apple.com/ch/album/english-suite-no-3-in-g-minor-bwv-808-ivb-les-agr%C3%A9ments/1702748649?i=1702749430&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Vollversion&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/audio/previews/example-01-binaural.ogg&#34;&gt;Preview herunterladen&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Beispiel 02 · Speaker-Render Preview&lt;/h4&gt;
+    &lt;p&gt;Format: Stereo Fold-down aus Speaker-Render · Preview-Dauer: 75s&lt;/p&gt;
+    &lt;audio controls preload=&#34;none&#34;&gt;
+      &lt;source src=&#34;https://ambisonics.ch/audio/previews/example-02-speaker-render.ogg&#34; type=&#34;audio/ogg&#34;&gt;
+      &lt;source src=&#34;https://ambisonics.ch/audio/previews/example-02-speaker-render.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+      Dein Browser unterstützt das Audio-Element nicht.
+    &lt;/audio&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://music.apple.com/ch/album/english-suite-no-3-in-g-minor-bwv-808-ivb-les-agr%C3%A9ments/1702748649?i=1702749430&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Vollversion&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/audio/previews/example-02-speaker-render.ogg&#34;&gt;Preview herunterladen&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Nutzungsbedingungen Studio</title>
+      <link>https://ambisonics.ch/de/blog/terms-of-use/</link>
+      <guid>https://ambisonics.ch/de/blog/terms-of-use/</guid>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;regeln-für-die-nutzung-des-icst-kompositionsstudios&#34;&gt;Regeln für die Nutzung des ICST Kompositionsstudios:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Im Studio nicht essen oder trinken.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keine eigenen Benutzerkonten auf dem Kompositionsrechner einrichten.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keine Installation eigener Software und Plugins (bei Bedarf bitte Support kontaktieren).&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Die 18 Ambisonics-Lautsprecher nicht bewegen, da sie präzise eingemessen sind.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alle eigenen Änderungen wieder zurückbauen.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keine Gegenstände im Studio lagern.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Instrumente / Notenständer / Spezial-Equipment wieder versorgen.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Audio-Matrix-Routing wieder auf &amp;ldquo;Standard&amp;rdquo; setzen.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;Ghielmetti&amp;rdquo; wieder auf &amp;ldquo;Standard&amp;rdquo; setzen.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beim Verlassen des Studios alle Geräte ausschalten.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wichtig&#34;&gt;Wichtig&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Die Benutzerdaten auf dem Kompositionsrechner werden gelöscht.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jede Nutzerin und jeder Nutzer ist selbst für die Sicherheit der eigenen Daten verantwortlich (auf eigene Festplatte sichern).&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bitte das Studio beim Verlassen im Standardzustand hinterlassen.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;neu&#34;&gt;Neu&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bei Nachtsessions bitte beachten, dass die Studiokomponenten um 03:00 Uhr automatisch herunterfahren.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Um 03:00 Uhr erscheint eine Warnung am Extron-Touchpanel; mit Bestätigung kann der Vorgang abgebrochen werden.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Diese Regelungen gelten für die Dauer der Studiobuchung. Für Projekte und AiR-Gäste gelten die vereinbarten Bestimmungen.&lt;/strong&gt;
+&lt;strong&gt;Die nächste Studio-Nutzerin oder der nächste Studio-Nutzer wird es danken.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST Labor Ambisonics Speaker Settings</title>
+      <link>https://ambisonics.ch/de/blog/icst-kompositionsstudio-speaker-settings/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-kompositionsstudio-speaker-settings/</guid>
+      <pubDate>Tue, 20 May 2025 15:11:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.&lt;/p&gt;
+&lt;div class=&#34;home-cards&#34;&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Häufige Presets&lt;/h4&gt;
+    &lt;p&gt;Stereo-, Surround- und Ambisonics-Layouts als schnelle Startpunkte.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;#stereo-setting&#34;&gt;Stereo&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;#dolby-surround&#34;&gt;Dolby&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;#octogon--ambisonics&#34;&gt;Ambisonics&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Flexible Routings&lt;/h4&gt;
+    &lt;p&gt;Zwischen vordefinierten Layouts wechseln oder alle Lautsprecher frei routen.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;#quadrophonie&#34;&gt;Quadro&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;#all-speakers&#34;&gt;Alle Lautsprecher&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;details class=&#34;home-accordion&#34; id=&#34;stereo-setting&#34;&gt;
+  &lt;summary&gt;Stereo-Setting&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;span class=&#34;hero__link hero__link--primary&#34;&gt;Gelb = RL911&lt;/span&gt;
+    &lt;span class=&#34;hero__link&#34;&gt;Grau = MO-2&lt;/span&gt;
+    &lt;span class=&#34;hero__link&#34;&gt;Rot = MO-2 (hinter der Leinwand)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;img src=&#34;2023-04-Stereo.jpg&#34; alt=&#34;Stereo setting&#34;&gt;
+&lt;/details&gt;
+&lt;details class=&#34;home-accordion&#34; id=&#34;dolby-surround&#34;&gt;
+  &lt;summary&gt;Dolby Surround&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;span class=&#34;hero__link hero__link--primary&#34;&gt;5.1 Surround&lt;/span&gt;
+    &lt;span class=&#34;hero__link&#34;&gt;7.1.4 Atmos&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;img src=&#34;2023-04-Dolby.jpg&#34; alt=&#34;Dolby surround setting&#34;&gt;
+&lt;/details&gt;
+&lt;details class=&#34;home-accordion&#34; id=&#34;octogon--ambisonics&#34;&gt;
+  &lt;summary&gt;Octogon &amp; Ambisonics&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;span class=&#34;hero__link hero__link--primary&#34;&gt;Ring 1-8 (im Uhrzeigersinn) &amp; Ambisonics (2D)&lt;/span&gt;
+    &lt;span class=&#34;hero__link&#34;&gt;Ambisonics Full (17 Lautsprecher)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;img src=&#34;2023-04-Okto-Ambi.jpg&#34; alt=&#34;Octogon and Ambisonics setting&#34;&gt;
+&lt;/details&gt;
+&lt;details class=&#34;home-accordion&#34; id=&#34;quadrophonie&#34;&gt;
+  &lt;summary&gt;Quadrophonie&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;span class=&#34;hero__link hero__link--primary&#34;&gt;Quadro (diagonal)&lt;/span&gt;
+    &lt;span class=&#34;hero__link&#34;&gt;Quadro (orthogonal)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;img src=&#34;2023-04-Quadro.jpg&#34; alt=&#34;Quadrophonie setting&#34;&gt;
+&lt;/details&gt;
+&lt;details class=&#34;home-accordion&#34; id=&#34;all-speakers&#34;&gt;
+  &lt;summary&gt;Alle Lautsprecher&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;span class=&#34;hero__link hero__link--primary&#34;&gt;Eigene Lautsprecher-Routings erstellen&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;img src=&#34;2023-04-All.jpg&#34; alt=&#34;All speakers setting&#34;&gt;
+&lt;/details&gt;
+&lt;h3 id=&#34;weitere-links&#34;&gt;Weitere Links&lt;/h3&gt;
+&lt;div class=&#34;hero__links&#34;&gt;
+  &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Speaker Files &amp; Downloads&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/&#34;&gt;Regie&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-equipment/&#34;&gt;Equipment&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-software/&#34;&gt;Software&lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/&#34;&gt;Legacy Speaker Settings&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST Kompositionsstudio – Fotogalerie</title>
+      <link>https://ambisonics.ch/de/blog/icst-ambisonics-photos/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-ambisonics-photos/</guid>
+      <pubDate>Wed, 25 Jun 2025 15:12:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;das-icst-kompositionsstudio&#34;&gt;Das ICST Kompositionsstudio&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/Kompstudio.jpg&#34; alt=&#34;Studio overview&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2429.jpg&#34; alt=&#34;Studio session&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2430.jpg&#34; alt=&#34;Studio session&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2437.jpg&#34; alt=&#34;Control room&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2472.jpg&#34; alt=&#34;Speaker system&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2476.jpg&#34; alt=&#34;Speaker detail&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2498.jpg&#34; alt=&#34;Studio equipment&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2502.jpg&#34; alt=&#34;Studio at work&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Ambisonics Audio erkunden</title>
+      <link>https://ambisonics.ch/de/blog/sounding_future/</link>
+      <guid>https://ambisonics.ch/de/blog/sounding_future/</guid>
+      <pubDate>Wed, 11 Jun 2025 15:09:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;online-hörenfolgen&#34;&gt;Online Hörenfolgen&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/sounding_future/SoundingFuture.png&#34; alt=&#34;SoundingFuture&#34;&gt;
+&lt;a href=&#34;https://audiospace.soundingfuture.com/&#34;&gt;sounding FUTURE&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/sounding_future/iem-library.png&#34; alt=&#34;iem-library&#34;&gt;
+&lt;a href=&#34;https://hoast.iem.at/&#34;&gt;HOAST Library&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.wyastone.co.uk/all-labels/nimbus.html&#34;&gt;Nimbus UHJ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;icst-b-format-archiv&#34;&gt;ICST B-Format Archiv&lt;/h2&gt;
+&lt;p&gt;Alle Ambisonics B-Formate werden im ambiX-Format gespeichert.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Komponist&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Titel&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Länge&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Format&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Ordnung&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Kanal-Ordnung&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Kanäle&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;SR&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Bits&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Hörerlebnis&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Downloads&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;AudioBrewers&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;AmbiTest_ambix_5th-order.wav&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4&#39;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;wav&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;ACN/SN3D&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;MaxRe&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;35&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;48000&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;24&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Binaural&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;AmbiSpeakerTest&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Downloads</title>
+      <link>https://ambisonics.ch/de/blog/downloads/</link>
+      <guid>https://ambisonics.ch/de/blog/downloads/</guid>
+      <pubDate>Thu, 12 Jun 2025 15:09:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;p&gt;Downloads für Studio- und Ambisonics-Workflows an einem Ort.&lt;/p&gt;
+&lt;div class=&#34;home-cards&#34;&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Lautsprecher &amp; Setup&lt;/h4&gt;
+    &lt;p&gt;Lautsprecher-Presets und Setup-Dateien für Decoder-Workflows.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/ICST_Ambisonics_Plugins_Speaker-Settings.tar&#34;&gt;Decoder-Settings&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/kompositionsstudio-speakers-max.txt.zip&#34;&gt;Max-Lautsprecherdatei&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Patches &amp; Templates&lt;/h4&gt;
+    &lt;p&gt;Einsatzbereite Patches und Templates für Max und Ableton Live.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat&#34;&gt;OSC MultiEncoder (Max)&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv&#34;&gt;Multi-Panner (Ableton)&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;details class=&#34;home-accordion&#34;&gt;
+  &lt;summary&gt;Alle Downloads&lt;/summary&gt;
+  &lt;div class=&#34;home-accordion__actions&#34;&gt;
+    &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/ICST_Ambisonics_Plugins_Speaker-Settings.tar&#34;&gt;Zusätzliche Decoder-Settings&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/kompositionsstudio-speakers-max.txt.zip&#34;&gt;Kompositionsstudio Lautsprecher für Max&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat&#34;&gt;ICST MultiEncoder Group OSC&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv&#34;&gt;E4L Multi-Panner OSC&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV&#34;&gt;Große Dateien&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://www.zhdk.ch/forschung/icst/software-downloads-5379&#34;&gt;ICST Software-Downloads&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

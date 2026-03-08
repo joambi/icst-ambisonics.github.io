@@ -1,0 +1,963 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="de"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]
+        |
+        MaxMSP &amp; ICST AmbiEncoder – OSC Kommunikation
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]" />
+  <meta
+    name="description"
+    content="Zeigt die bidirektionale OSC-Kommunikation zwischen Max/MSP und ICST AmbiEncoder inklusive Winkel- und Bewegungsformaten."
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css" integrity="sha256-gnZ8kex8rMjku3tmSA/DOpKI6lhtiQQZWl2QqNvPOAE=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/de/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MaxMSP & ICST AmbiEncoder – OSC Kommunikation">
+  <meta name="twitter:description" content="Zeigt die bidirektionale OSC-Kommunikation zwischen Max/MSP und ICST AmbiEncoder inklusive Winkel- und Bewegungsformaten.">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/de/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="MaxMSP & ICST AmbiEncoder – OSC Kommunikation">
+  <meta property="og:description" content="Zeigt die bidirektionale OSC-Kommunikation zwischen Max/MSP und ICST AmbiEncoder inklusive Winkel- und Bewegungsformaten.">
+  <meta property="og:locale" content="de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-03-16T09:44:58+00:00">
+    <meta property="article:modified_time" content="2025-03-16T09:44:58+00:00">
+    <meta property="article:tag" content="Maxmsp">
+    <meta property="article:tag" content="Osc">
+    <meta property="article:tag" content="Ambimonitor">
+    <meta property="article:tag" content="Ambiencoder">
+    <meta property="article:tag" content="Bidirectional">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "MaxMSP \u0026 ICST AmbiEncoder – OSC Kommunikation",
+        "headline": "MaxMSP \u0026 ICST AmbiEncoder – OSC Kommunikation",
+        "alternativeHeadline": "",
+        "description": "
+      Zeigt die bidirektionale OSC-Kommunikation zwischen Max\/MSP und ICST AmbiEncoder inklusive Winkel- und Bewegungsformaten.
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "de",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/de\/post\/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "dateCreated": "2025-03-16T09:44:58.00Z",
+        "datePublished": "2025-03-16T09:44:58.00Z",
+        "dateModified": "2025-03-16T09:44:58.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": {"email":"johannes.schuett@zhdk.ch","name":"Johannes Schuett"},
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/de\/post\/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication\/",
+        "wordCount" : "198",
+        "genre" : [ ],
+        "keywords" : [ 
+      
+      "maxmsp"
+
+    
+      
+        ,
+
+      
+      "osc"
+
+    
+      
+        ,
+
+      
+      "ambimonitor"
+
+    
+      
+        ,
+
+      
+      "ambiencoder"
+
+    
+      
+        ,
+
+      
+      "bidirectional"
+
+    ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+	
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/de">ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST · Zurich University of the Arts</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.zhdk.ch/forschung/icst"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Zurich University of the Arts"
+            title="Zurich University of the Arts"
+          >
+            
+              <img src="/images/zhdk-logo.svg" alt="Zurich University of the Arts" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            
+              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+            target="_blank"
+            rel="noopener me"
+            aria-label="YouTube"
+            title="YouTube"
+          >
+            
+              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="1" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="1"
+                >Plugins &amp; Tools <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-plugins/"
+                      
+                      title=""
+                      >ICST AmbiPlugins Docs</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-tools/"
+                      
+                      title=""
+                      >Ambi Tools</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="2" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="2"
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/ambisonics-101/"
+                      
+                      title=""
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/post/"
+                      
+                      title=""
+                      >All Tutorials</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="3" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="3"
+                >Ascolta <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/17-ascolta/"
+                      
+                      title=""
+                      >Next Session</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/"
+                      
+                      title=""
+                      >All Sessions</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="4" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="4"
+                >Residenzen <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2025/"
+                      
+                      title=""
+                      >Residenzen 2025</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2026/"
+                      
+                      title=""
+                      >Residenzen 2026</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="5" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="5"
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-composer-studio-blog/"
+                      
+                      title=""
+                      >Composition Studio</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/audio-examples/"
+                      
+                      title=""
+                      >Audio Examples</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-equipment/"
+                      
+                      title=""
+                      >Equipment</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-software/"
+                      
+                      title=""
+                      >Software</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-speaker-settings/"
+                      
+                      title=""
+                      >Speaker Setup</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-regie/"
+                      
+                      title=""
+                      >Regie</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-pre-installation/"
+                      
+                      title=""
+                      >Pre-Installation</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/downloads/"
+                      
+                      title=""
+                      >Downloads</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/"
+                      
+                      title=""
+                      >All Studio Pages</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/links/"
+              
+              title=""
+              >Links</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >DE <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/" title="EN"
+                    ><span
+                      
+                      aria-label="EN"
+                      >EN</span
+                    >
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </li>
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>MaxMSP &amp; ICST AmbiEncoder – OSC Kommunikation</h1>
+      
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  2025-03-16
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">1 Minute zum Lesen</span>
+          </li>
+        </ul>
+      <p>Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts</p>
+<hr>
+<h1 id="bidirektionale-osc-kommunikation-mit-maxmsp">Bidirektionale OSC-Kommunikation mit MaxMSP</h1>
+<p>Generiere Bewegungsdaten in Max und sende sie via OSC zum <em>ICST AmbiEncoder</em> in deiner DAW. Alternativ kannst du eine Bewegungskomposition von deiner DAW zu den <em>icst.ambisonics-externals</em> übertragen.</p>
+<h3 id="erforderliche-software"><strong>Erforderliche Software:</strong></h3>
+<ul>
+<li><strong>MaxMSP v.8.0+</strong> → <a href="http://cycling74.com">cycling74.com</a></li>
+<li><strong>ICST Ambisonics Tools v3</strong> → <a href="http://cycling74.com">cycling74.com</a></li>
+<li><strong>ICST Ambisonics Plugins (VST3/AU)</strong> → <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases">ICST AmbiPlugins</a></li>
+<li><strong>Reaper (DAW)</strong> → <a href="http://reaper.fm/download.php">reaper.fm</a></li>
+</ul>
+<h3 id="setup-anleitung"><strong>Setup-Anleitung:</strong></h3>
+<h4 id="1-osc-im-icst-ambiencoder-konfigurieren">1. OSC im ICST AmbiEncoder konfigurieren</h4>
+<ul>
+<li>
+<p>Öffne den <em>ICST AmbiEncoder</em> in einem FX-Slot und navigiere zu <strong>Encoder Settings</strong>.</p>
+</li>
+<li>
+<p>Unter <strong>OSC In</strong> aktiviere den OSC-Eingangs-Port (z.B. <code>50001</code>).
+<img src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-port.png" alt="OSC-IN"></p>
+</li>
+<li>
+<p>Klicke auf <strong>OSC Out</strong> und aktiviere den OSC-Ausgangs-Port.</p>
+<ul>
+<li>Nutzt <strong>ICST AmbiPlugins Standard XYZ Index</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Der Max-Demo-Patch hört auf:
+<code>'/icst/ambi/sourceindex/xyz'</code></p>
+<p><img src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-out.png" alt="OSC-OUT"></p>
+</li>
+</ul>
+<h4 id="2-öffne-maxmsp-und-lade-den-patch">2. Öffne MaxMSP und lade den Patch</h4>
+<ul>
+<li>Finde den <em>OSC communication with ICST plugins in DAW</em> Patch.</li>
+</ul>
+<p>Siehe die Demo-GIFs:</p>
+<ul>
+<li><img src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif" alt="Max_Reaper"></li>
+</ul>
+<p>Nächstes GIF: Wie es funktioniert:
+<img src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.gif" alt="Max-AmbiEnc"></p>
+<hr>
+<h2 id="absendung-absoluter-winkel-euler-koordinaten">Absendung absoluter Winkel (Euler-Koordinaten)</h2>
+<p>Um <strong>absolute Winkel</strong> mit <strong>Euler-Koordinaten</strong> von MaxMSP zum ICST AmbiEncoder zu senden, verwende das folgende OSC-Nachrichtenformat:</p>
+<pre tabindex="0"><code>/icst/ambi/source/euler [ChannelName] [Yaw] [Pitch] [Roll]
+/icst/ambi/source/euler &#39;S1&#39; 30 15 5
+</code></pre><p>Für <strong>Index-basierte Adressierung</strong>:</p>
+<pre tabindex="0"><code>/icst/ambi/sourceindex/euler [ChannelIndex] [Yaw] [Pitch] [Roll]
+/icst/ambi/sourceindex/euler 1 30 15 5
+</code></pre><p><strong>Hinweis:</strong></p>
+<ul>
+<li><code>Yaw</code> (Azimuth): Horizontale Rotation</li>
+<li><code>Pitch</code> (Elevation): Vertikale Neigung</li>
+<li><code>Roll</code>: Rotation um die Vorwärtsachse</li>
+</ul>
+<hr>
+<p><span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span></p>
+</div>
+    <div class="post__footer">
+      
+
+      
+        <span><a class="tag" href="/de/tags/maxmsp/">maxmsp</a><a class="tag" href="/de/tags/osc/">osc</a><a class="tag" href="/de/tags/ambimonitor/">ambimonitor</a><a class="tag" href="/de/tags/ambiencoder/">ambiencoder</a><a class="tag" href="/de/tags/bidirectional/">bidirectional</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

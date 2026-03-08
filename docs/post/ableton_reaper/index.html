@@ -9,24 +9,24 @@
 ><head>
   <meta charset="utf-8" />
   <title>
-    Johannes Schuett
+    map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]
         |
-        AbletonLive to ICST Ambisonics MultiEncoder in Reaper
+        Ableton Live &amp; ICST Ambisonics Integration
       
 
     
 
   </title>
 
-  <meta name="generator" content="Hugo 0.145.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="author" content="Johannes Schuett" />
+  <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]" />
   <meta
     name="description"
-    content=" This is the ICST Ambisonics Tutorial Blog"
+    content="Step-by-step guide for recording 7th-order Ambisonics from Ableton Live into Reaper via BlackHole, OSC-driven MultiEncoder automation, and LTC sync."
   />
   
   
-        <link rel="stylesheet" href="/css/anatole.min.86b1f7f8e46fb7f9432e28081186d24eb6cd881e4d058e84aef93462f1e41337.css" integrity="sha256-hrH3&#43;ORvt/lDLigIEYbSTrbNiB5NBY6Ervk0YvHkEzc=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css" integrity="sha256-gnZ8kex8rMjku3tmSA/DOpKI6lhtiQQZWl2QqNvPOAE=" crossorigin="anonymous" />
       
   <link
     rel="stylesheet"
@@ -107,23 +107,27 @@
   
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="AbletonLive to ICST Ambisonics MultiEncoder in Reaper">
-  <meta name="twitter:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
-AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a detailed guide to recording 7th-Order Ambisonics using Ableton Live and Reaper. It is aimed at users with a basic knowledge of both programs. If you are familiar with the concepts of Ableton Live, Reaper, and Ambisonics, the steps should be straightforward. Otherwise, some sections may be challenging. In this case, it is recommended that you first learn the basics of this software and Ambisonics technology.">
+  <meta name="twitter:title" content="Ableton Live & ICST Ambisonics Integration">
+  <meta name="twitter:description" content="Step-by-step guide for recording 7th-order Ambisonics from Ableton Live into Reaper via BlackHole, OSC-driven MultiEncoder automation, and LTC sync.">
 
 
 
   
   <meta property="og:url" content="https://ambisonics.ch/post/ableton_reaper/">
   <meta property="og:site_name" content="The ICST Ambisonics Site">
-  <meta property="og:title" content="AbletonLive to ICST Ambisonics MultiEncoder in Reaper">
-  <meta property="og:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
-AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a detailed guide to recording 7th-Order Ambisonics using Ableton Live and Reaper. It is aimed at users with a basic knowledge of both programs. If you are familiar with the concepts of Ableton Live, Reaper, and Ambisonics, the steps should be straightforward. Otherwise, some sections may be challenging. In this case, it is recommended that you first learn the basics of this software and Ambisonics technology.">
-  <meta property="og:locale" content="en_us">
+  <meta property="og:title" content="Ableton Live & ICST Ambisonics Integration">
+  <meta property="og:description" content="Step-by-step guide for recording 7th-order Ambisonics from Ableton Live into Reaper via BlackHole, OSC-driven MultiEncoder automation, and LTC sync.">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2025-03-16T09:44:58+01:00">
     <meta property="article:modified_time" content="2025-03-16T09:44:58+01:00">
+    <meta property="article:tag" content="Ableton">
+    <meta property="article:tag" content="Reaper">
+    <meta property="article:tag" content="Workflow">
+    <meta property="article:tag" content="Ambiencoder">
+    <meta property="article:tag" content="Tutorial">
+    <meta property="article:tag" content="Blackhole">
 
 
 
@@ -136,21 +140,17 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "articleSection": "post",
-        "name": "AbletonLive to ICST Ambisonics MultiEncoder in Reaper",
-        "headline": "AbletonLive to ICST Ambisonics MultiEncoder in Reaper",
+        "name": "Ableton Live \u0026 ICST Ambisonics Integration",
+        "headline": "Ableton Live \u0026 ICST Ambisonics Integration",
         "alternativeHeadline": "",
         "description": "
-      
-        \u003cp\u003eInstitute for Computer Music and Sound Technology \/ (ICST) Zurich University of the Arts\u003c\/p\u003e\n\u003chr\u003e\n\u003ch1 id=\u0022abletonlive-to-icst-ambisonics-multiencoder-in-reaper\u0022\u003eAbletonLive to ICST Ambisonics MultiEncoder in Reaper\u003c\/h1\u003e\n\u003cp\u003eThis tutorial provides a detailed guide to recording 7th-Order Ambisonics using Ableton Live and Reaper. It is aimed at users with a basic knowledge of both programs. If you are familiar with the concepts of Ableton Live, Reaper, and Ambisonics, the steps should be straightforward. Otherwise, some sections may be challenging. In this case, it is recommended that you first learn the basics of this software and Ambisonics technology.\u003c\/p\u003e
-
-
-      
+      Step-by-step guide for recording 7th-order Ambisonics from Ableton Live into Reaper via BlackHole, OSC-driven MultiEncoder automation, and LTC sync.
 
 
     ",
         "license": "",
         
-        "inLanguage": "en-us",
+        "inLanguage": "en",
         "isFamilyFriendly": "true",
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -158,26 +158,26 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
         },
         "author" : {
             "@type": "Person",
-            "name": "Johannes Schuett"
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
         },
         "creator" : {
             "@type": "Person",
-            "name": "Johannes Schuett"
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
         },
         "accountablePerson" : {
             "@type": "Person",
-            "name": "Johannes Schuett"
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
         },
         "copyrightHolder" : {
             "@type": "Person",
-            "name": "Johannes Schuett"
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
         },
         "dateCreated": "2025-03-16T09:44:58.00Z",
         "datePublished": "2025-03-16T09:44:58.00Z",
         "dateModified": "2025-03-16T09:44:58.00Z",
         "publisher":{
             "@type":"Organization",
-            "name": "Johannes Schuett",
+            "name": {"email":"johannes.schuett@zhdk.ch","name":"Johannes Schuett"},
             "url": "https://ambisonics.ch/",
             "logo": {
                 "@type": "ImageObject",
@@ -194,7 +194,46 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
         "url" : "https:\/\/ambisonics.ch\/post\/ableton_reaper\/",
         "wordCount" : "446",
         "genre" : [ ],
-        "keywords" : [ ]
+        "keywords" : [ 
+      
+      "ableton"
+
+    
+      
+        ,
+
+      
+      "reaper"
+
+    
+      
+        ,
+
+      
+      "workflow"
+
+    
+      
+        ,
+
+      
+      "ambiencoder"
+
+    
+      
+        ,
+
+      
+      "tutorial"
+
+    
+      
+        ,
+
+      
+      "blackhole"
+
+    ]
     }
   </script>
 
@@ -204,6 +243,7 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
   
   
   
+	
 </head>
 <body class="body">
     <div class="wrapper">
@@ -225,14 +265,28 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
       />
       
         <div class="sidebar__introduction-title">
-          <a href="/">The ICST Ambisonics</a>
+          <a href="/">ICST Ambisonics</a>
         </div>
       
       <div class="sidebar__introduction-description">
-        <p> This is the ICST Ambisonics Tutorial Blog</p>
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST · Zurich University of the Arts</p>
       </div>
     </div>
     <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.zhdk.ch/forschung/icst"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Zurich University of the Arts"
+            title="Zurich University of the Arts"
+          >
+            
+              <img src="/images/zhdk-logo.svg" alt="Zurich University of the Arts" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+            
+          </a>
+        </li>
       
         <li class="sidebar__list-item">
           <a
@@ -242,29 +296,67 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
             aria-label="GitHub"
             title="GitHub"
           >
-            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+            
+              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+            target="_blank"
+            rel="noopener me"
+            aria-label="YouTube"
+            title="YouTube"
+          >
+            
+              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+            
           </a>
         </li>
       
     </ul>
   </div><footer class="footer footer__sidebar">
   <ul class="footer__list">
-    <li class="footer__item">
-      &copy;
-      
-        Johannes Schuett
-        2025
-      
-    </li>
+    
     
       <li class="footer__item">
         <a
           class="link"
-          href="/privacy-policy/"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
           
           title=""
         >
           Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
         </a>
       </li>
     
@@ -273,8 +365,8 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
   
   <script
     type="text/javascript"
-    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
-    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
     crossorigin="anonymous"
   ></script></div>
 </aside>
@@ -303,10 +395,10 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
             
             <a
               
-              href="/home/"
+              href="/about/"
               
               title=""
-              >Home</a
+              >About</a
             >
           </li>
         
@@ -314,60 +406,356 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
       
         
         
+
           <li class="nav__list-item">
-            
-            <a
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="1" hidden />
+
               
-              href="/icst-ambisonics-plugins/"
               
-              title=""
-              >ICST Ambisonics Plugins</a
-            >
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="1"
+                >Plugins &amp; Tools <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-plugins/"
+                      
+                      title=""
+                      >ICST AmbiPlugins Docs</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-tools/"
+                      
+                      title=""
+                      >Ambi Tools</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
           </li>
         
 
       
         
         
+
           <li class="nav__list-item">
-            
-            <a
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="2" hidden />
+
               
-              href="/icst-ambisonics-tools/"
               
-              title=""
-              >ICST Ambisonics Tools</a
-            >
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="2"
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/ambisonics-101/"
+                      
+                      title=""
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/post/"
+                      
+                      title=""
+                      >All Tutorials</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
           </li>
         
 
       
         
         
+
           <li class="nav__list-item">
-            
-            <a
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="3" hidden />
+
               
-              href="/post/"
               
-              title=""
-              >Post</a
-            >
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="3"
+                >Ascolta <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/17-ascolta/"
+                      
+                      title=""
+                      >Next Session</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/"
+                      
+                      title=""
+                      >All Sessions</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
           </li>
         
 
       
         
         
+
           <li class="nav__list-item">
-            
-            <a
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="4" hidden />
+
               
-              href="/blog/"
               
-              title=""
-              >Blog</a
-            >
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="4"
+                >Residenzen <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2025/"
+                      
+                      title=""
+                      >Residenzen 2025</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2026/"
+                      
+                      title=""
+                      >Residenzen 2026</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="5" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="5"
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-composer-studio-blog/"
+                      
+                      title=""
+                      >Composition Studio</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/audio-examples/"
+                      
+                      title=""
+                      >Audio Examples</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-equipment/"
+                      
+                      title=""
+                      >Equipment</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-software/"
+                      
+                      title=""
+                      >Software</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-speaker-settings/"
+                      
+                      title=""
+                      >Speaker Setup</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-regie/"
+                      
+                      title=""
+                      >Regie</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-pre-installation/"
+                      
+                      title=""
+                      >Pre-Installation</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/downloads/"
+                      
+                      title=""
+                      >Downloads</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/"
+                      
+                      title=""
+                      >All Studio Pages</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
           </li>
         
 
@@ -387,23 +775,31 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
         
 
       
-        
-        
-          <li class="nav__list-item">
-            
-            <a
-              
-              href="/about/"
-              
-              title=""
-              >About</a
-            >
-          </li>
-        
-
-      
     </ul>
     <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >EN <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/de/post/ableton_reaper/" title="DE"
+                    ><span
+                      
+                      aria-label="DE"
+                      >DE</span
+                    >
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </li>
       
       
         <li class="nav__list-item">
@@ -426,7 +822,7 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
     
     <div class="post__content">
       
-        <h1>AbletonLive to ICST Ambisonics MultiEncoder in Reaper</h1>
+        <h1>Ableton Live &amp; ICST Ambisonics Integration</h1>
       
       
         <ul class="post__meta">
@@ -452,14 +848,14 @@ AbletonLive to ICST Ambisonics MultiEncoder in Reaper This tutorial provides a d
 <p>This tutorial provides a detailed guide to recording 7th-Order Ambisonics using Ableton Live and Reaper. It is aimed at users with a basic knowledge of both programs. If you are familiar with the concepts of Ableton Live, Reaper, and Ambisonics, the steps should be straightforward. Otherwise, some sections may be challenging. In this case, it is recommended that you first learn the basics of this software and Ambisonics technology.</p>
 <h3 id="ableton-to-icst-multiencoder-in-reaper">Ableton to ICST MultiEncoder in Reaper</h3>
 <p>Ableton transmits audio via &ldquo;BlackHole&rdquo; (up to 64 channels) to Reaper&rsquo;s BlackHole input devices.</p>
-<p><img src="Ableton_output.png" alt="Ableton_outs">
+<p><img src="/post/ableton_reaper/Ableton_output.png" alt="Ableton_outs">
 The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncoder via localhost on port 50001. In Reaper, audio inputs from BlackHole (1-4) are received, while the ICST Multi-AmbiEncoder processes OSC sources (1-16).</p>
-<p><img src="Ableton_OSC_BlackHole.gif" alt="Ableton_to_MultiEncoder"></p>
+<p><img src="/post/ableton_reaper/Ableton_OSC_BlackHole.gif" alt="Ableton_to_MultiEncoder"></p>
 <p>This setup allows recording B-format up to the 7th order from Ableton Live 12.</p>
 <hr>
 <h3 id="how-it-works">How It Works</h3>
 <h4 id="schematic-overview">Schematic Overview:</h4>
-<p><img src="Ableton_routing_64ch.png" alt="Ableton_routing64ch"></p>
+<p><img src="/post/ableton_reaper/Ableton_routing_64ch.png" alt="Ableton_routing64ch"></p>
 <h4 id="preparation">Preparation:</h4>
 <ul>
 <li>Install <a href="https://www.ableton.com/de/live/">AbletonLive 12</a></li>
@@ -482,7 +878,7 @@ The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncode
 </li>
 <li>
 <p>Optionally, send custom OSC spatialization data from Max to ensure consistent OSC port numbers in Reaper (port: 50001).</p>
-<p><img src="Max-OSC-Out2.png" alt="Max-OSC | 400">
+<p><img src="/post/ableton_reaper/Max-OSC-Out2.png" alt="Max-OSC | 400">
 Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)</p>
 </li>
 </ol>
@@ -492,51 +888,55 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)</p>
 <p>Create a session with 63 mono tracks (Track 64 for LTC timecode).</p>
 </li>
 <li>
-<p>Enable LTC sync input on Track 64 by right-clicking the Playbar.<img src="LTC.png" alt="LTC"></p>
+<p>Enable LTC sync input on Track 64 by right-clicking the Playbar.<img src="/post/ableton_reaper/LTC.png" alt="LTC"></p>
 </li>
 <li>
 <p>Set all active tracks to &ldquo;Record: Disable (monitor only).&rdquo;
-<img src="rec_disable.png" alt="Rec_disable"></p>
+<img src="/post/ableton_reaper/rec_disable.png" alt="Rec_disable"></p>
 </li>
 <li>
 <p>Route Tracks 1-63 to ICST MultiEncoder_64.</p>
 </li>
 </ol>
-<p><img src="Routing_Overview.png" alt="Routing_Inputs"></p>
+<p><img src="/post/ableton_reaper/Routing_Overview.png" alt="Routing_Inputs"></p>
 <ul>
 <li>When correctly routed, the source appears in the encoder radar for verification.</li>
 </ul>
 <ol start="5">
 <li>
 <p>Configure OSC connection between Ableton and ICST MultiEncoder. Each encoder requires its own OSC port.</p>
-<p><img src="OSC-Port.png" alt="OSC-Ports"></p>
+<p><img src="/post/ableton_reaper/OSC-Port.png" alt="OSC-Ports"></p>
 </li>
 <li>
 <p>Activate OSC transmission in E4L_Multi-Panner. The ICST MultiEncoder will display moving dots when receiving OSC data.
-<img src="OSC_ON.png" alt="OSC_ON"></p>
+<img src="/post/ableton_reaper/OSC_ON.png" alt="OSC_ON"></p>
 </li>
 <li>
 <p>In Reaper press Record -Output for recording your Bformat see next image.
-<img src="Rec_BF.png" alt="Rec_BF"></p>
+<img src="/post/ableton_reaper/Rec_BF.png" alt="Rec_BF"></p>
 </li>
 <li>
 <p>Then press REC in Reaper -&gt; you get the follow message &ldquo;Waiting for Timecode&rdquo;
-<img src="Rec.png" alt="Rec"></p>
+<img src="/post/ableton_reaper/Rec.png" alt="Rec"></p>
 </li>
 <li>
 <p>Press play in Ableton Live to synchronize Reaper via LTC Sync (Input 64), enabling B-format 7th-order ambix recording.</p>
 </li>
 <li>
 <p>Move to the <strong>Start Marker</strong> at <strong>01:00:000</strong> (LTC has a 60&rsquo; offset), then press <strong>Fire</strong> or <strong>Play</strong> in Ableton Live to start recording.
-<img src="Live_Reper_BF.gif" alt="recoding_bf"></p>
+<img src="/post/ableton_reaper/Live_Reper_BF.gif" alt="recoding_bf"></p>
 </li>
 </ol>
 <p>For more details, refer to the documentation for Ableton Live, Reaper, and the ICST MultiEncoder.</p>
 <hr>
-<p>©2025 ICST</p>
+<p><span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span></p>
 </div>
     <div class="post__footer">
       
+
+      
+        <span><a class="tag" href="/tags/ableton/">ableton</a><a class="tag" href="/tags/reaper/">reaper</a><a class="tag" href="/tags/workflow/">workflow</a><a class="tag" href="/tags/ambiencoder/">ambiencoder</a><a class="tag" href="/tags/tutorial/">tutorial</a><a class="tag" href="/tags/blackhole/">blackhole</a></span>
+
 
       
     </div>
@@ -547,22 +947,44 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)</p>
       </main>
     </div><footer class="footer footer__base">
   <ul class="footer__list">
-    <li class="footer__item">
-      &copy;
-      
-        Johannes Schuett
-        2025
-      
-    </li>
+    
     
       <li class="footer__item">
         <a
           class="link"
-          href="/privacy-policy/"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
           
           title=""
         >
           Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
         </a>
       </li>
     
@@ -571,8 +993,8 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)</p>
   
   <script
     type="text/javascript"
-    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
-    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
     crossorigin="anonymous"
   ></script></body>
 </html>

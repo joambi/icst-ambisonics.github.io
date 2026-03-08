@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Multi-Decoder on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/multi-decoder/</link>
+
+    <description>
+      Recent content
+      
+         in Multi-Decoder 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/multi-decoder/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST AmbiDecoder – Multi-Decoder Mode</title>
+      <link>https://ambisonics.ch/post/multi-decoder-mode/</link>
+      <guid>https://ambisonics.ch/post/multi-decoder-mode/</guid>
+      <pubDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;multi-decoder-mode&#34;&gt;Multi-Decoder Mode&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;Multi-Decoder Mode&lt;/strong&gt;, introduced in &lt;strong&gt;ICST AmbiDecoder v3.2&lt;/strong&gt;, allows you to run up to &lt;strong&gt;four fully independent decoders&lt;/strong&gt; within a single plugin instance. This is ideal for complex loudspeaker setups that combine different speaker arrays — for example, a main Ambisonics ring together with height speakers, a subwoofer group, or a separate near-field array.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Multidecoder.png&#34; alt=&#34;Multi-Decoder overview&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;when-to-use-multi-decoder-mode&#34;&gt;When to use Multi-Decoder Mode&lt;/h2&gt;
+&lt;p&gt;Use Multi-Decoder Mode when your setup includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multiple speaker layers&lt;/strong&gt; (e.g. horizontal ring + height dome)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mixed-order decoding&lt;/strong&gt; (e.g. 3rd order for horizontal, 1st order for height)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Different speaker geometries&lt;/strong&gt; that require separate presets&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Independent gain and filter settings&lt;/strong&gt; per group of loudspeakers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For straightforward setups (single array, single geometry), the standard single-decoder mode is sufficient.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;activating-multi-decoder-mode&#34;&gt;Activating Multi-Decoder Mode&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;ICST AmbiDecoder&lt;/strong&gt; plugin in your REAPER FX chain.&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Decoder Settings&lt;/strong&gt; panel, locate the &lt;strong&gt;Multi-Decoder&lt;/strong&gt; toggle.&lt;/li&gt;
+&lt;li&gt;Enable Multi-Decoder Mode — four decoder slots (A, B, C, D) will appear.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;&lt;p&gt;[!Tip:]
+Each decoder slot is fully independent and can be configured separately without affecting the others.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;hr&gt;
+&lt;h2 id=&#34;configuring-each-decoder&#34;&gt;Configuring Each Decoder&lt;/h2&gt;
+&lt;p&gt;For each of the four decoders, you can set:&lt;/p&gt;
+&lt;h3 id=&#34;1-name-and-color&#34;&gt;1. Name and Color&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Give each decoder a descriptive name (e.g. &amp;ldquo;Ring&amp;rdquo;, &amp;ldquo;Height&amp;rdquo;, &amp;ldquo;Sub&amp;rdquo;, &amp;ldquo;Near&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;Assign a custom color for easy identification in the UI.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-loudspeaker-selection&#34;&gt;2. Loudspeaker Selection&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Each decoder has its &lt;strong&gt;own speaker selection&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Assign specific speakers from your loudspeaker preset to each decoder.&lt;/li&gt;
+&lt;li&gt;Speakers can only belong to one decoder at a time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-ambisonics-order&#34;&gt;3. Ambisonics Order&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Set the &lt;strong&gt;decoding order independently&lt;/strong&gt; per decoder (1st to 7th order).&lt;/li&gt;
+&lt;li&gt;Lower orders (1st–2nd) are suitable for sparse or difficult speaker geometries.&lt;/li&gt;
+&lt;li&gt;Higher orders (3rd–7th) give more precise localisation for dense arrays.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-ambisonics-weighting&#34;&gt;4. Ambisonics Weighting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Choose the weighting scheme (e.g. MaxRe, inPhase, Basic) per decoder.&lt;/li&gt;
+&lt;li&gt;MaxRe is recommended for most practical setups.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5-filters&#34;&gt;5. Filters&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Eight filter options are available per decoder.&lt;/li&gt;
+&lt;li&gt;Adjust per-decoder EQ and spatial filtering independently.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;6-mute-and-gain&#34;&gt;6. Mute and Gain&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Each decoder has an independent &lt;strong&gt;mute&lt;/strong&gt; button and &lt;strong&gt;gain&lt;/strong&gt; control.&lt;/li&gt;
+&lt;li&gt;Use mute to isolate individual decoders during setup and testing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;routing-in-reaper&#34;&gt;Routing in REAPER&lt;/h2&gt;
+&lt;p&gt;When using Multi-Decoder Mode, the plugin still receives the same &lt;strong&gt;B-Format master bus&lt;/strong&gt; as input. The routing within the plugin distributes the signal to each decoder internally.&lt;/p&gt;
+&lt;p&gt;Output channels are assigned sequentially:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Decoder A → Outputs 1–N (based on its speaker count)&lt;/li&gt;
+&lt;li&gt;Decoder B → Outputs N+1–M&lt;/li&gt;
+&lt;li&gt;Decoder C → continues after B&lt;/li&gt;
+&lt;li&gt;Decoder D → continues after C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Make sure your REAPER track has enough output channels configured to cover all speakers across all four decoders.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;[!Attention:]
+Check your track channel count and routing carefully. Missing channels will result in silent speakers without any error message.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;hr&gt;
+&lt;h2 id=&#34;speaker-testing&#34;&gt;Speaker Testing&lt;/h2&gt;
+&lt;p&gt;To verify each decoder:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Mute&lt;/strong&gt; decoders B, C, and D.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Speaker Test&lt;/strong&gt; on decoder A and step through its speakers.&lt;/li&gt;
+&lt;li&gt;Repeat for each decoder after unmuting it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Use &lt;code&gt;Shift + Control + S&lt;/code&gt; / &lt;code&gt;Shift + Control + M&lt;/code&gt; (macOS) for keyboard-based solo and mute during testing.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;example-horizontal-ring--height-dome&#34;&gt;Example: Horizontal Ring + Height Dome&lt;/h2&gt;
+&lt;p&gt;A common multi-decoder use case at ICST is an &lt;strong&gt;Oktagon ring&lt;/strong&gt; (8 speakers, horizontal) combined with a &lt;strong&gt;height layer&lt;/strong&gt; (4 elevated speakers):&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Decoder&lt;/th&gt;
+          &lt;th&gt;Speakers&lt;/th&gt;
+          &lt;th&gt;Order&lt;/th&gt;
+          &lt;th&gt;Weighting&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;A&lt;/td&gt;
+          &lt;td&gt;Ring (1–8)&lt;/td&gt;
+          &lt;td&gt;3rd&lt;/td&gt;
+          &lt;td&gt;MaxRe&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;B&lt;/td&gt;
+          &lt;td&gt;Height (9–12)&lt;/td&gt;
+          &lt;td&gt;1st&lt;/td&gt;
+          &lt;td&gt;MaxRe&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This setup allows fine-tuned decoding for each layer independently, with separate gain compensation for the height speakers.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;further-resources&#34;&gt;Further Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;📖 &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&#34;&gt;ICST AmbiDecoder Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📥 &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;Download v3.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📺 &lt;a href=&#34;https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&amp;#43;plugins&#34;&gt;ICST Ambisonics Videos on YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

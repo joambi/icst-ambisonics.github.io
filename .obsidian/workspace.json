@@ -27,30 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Evernote/ICST Mono-AmbiEncoders/ICST Mono-AmbiEncoders.md",
+                "file": "content/Audio Examples/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ICST Mono-AmbiEncoders"
-            }
-          },
-          {
-            "id": "fcc74ae2be48f34a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ambisonics @ ICST – Worum es hier geht.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ambisonics @ ICST – Worum es hier geht"
+              "title": "index"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,7 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.5
+    "width": 251.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,27 +215,37 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "fcc74ae2be48f34a",
+  "active": "509c158b0a20f2c9",
   "lastOpenFiles": [
-    "Ambisonics @ ICST – Worum es hier geht.md",
+    "content/Blog/ICST Kompositionsstudio Software/index.md",
+    "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
+    "content/Blog/ICST Composer Studio Blog/index.md",
+    "deployment texte.md",
     "Evernote/ICST Mono-AmbiEncoders/ICST Mono-AmbiEncoders.md",
+    "content/Audio Examples/index.md",
+    "content/Audio Examples/index.de.md",
+    "Ambisonics @ ICST – Worum es hier geht.md",
+    "public/audio/previews/README.md",
+    "public/audio/previews",
+    "public/audio",
+    "static/audio/previews/README.md",
+    "static/audio/previews",
+    "static/audio",
+    "public/de/audio-examples/index.html",
+    "public/de/audio-examples",
+    "public/audio-examples/index.html",
+    "public/audio-examples",
+    "content/Audio Examples",
+    "public/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css",
+    "content/Ambisonics 101/index.de.md",
+    "content/Ambisonics 101/index.md",
     "content/About/index.md",
     "content/About/index.de.md",
     "Clippings/Grassroots Ambisonics.md",
     "content/ICST Ambisonics Plugins/08_icst_decoder/index.md",
-    "ChatGPT_MD/agents",
-    "ChatGPT_MD",
-    "resources/_gen/assets/scss/main.scss_f8b11c0387470cdacc59f766aab067d1.content",
-    "resources/_gen/assets/scss/main.scss_f8b11c0387470cdacc59f766aab067d1.json",
     "Clippings/Destinations  Integrations  GitGuardian.md",
-    "public/de/icst-ambisonics-plugins/15_best_practices/index.html",
-    "public/de/icst-ambisonics-plugins/15_best_practices",
-    "public/de/icst-ambisonics-plugins/13_osc/index.html",
-    "public/de/icst-ambisonics-plugins/13_osc",
     "content/ICST Ambisonics Plugins/15_best_practices/index.de.md",
     "content/ICST Ambisonics Plugins/13_osc/index.de.md",
-    "public/de/icst-ambisonics-plugins/11_animator/index.html",
-    "public/de/icst-ambisonics-plugins/11_animator",
     "content/ICST Ambisonics Plugins/11_animator/index.de.md",
     "content/ICST Ambisonics Plugins/10_icst_encoders/index.de.md",
     "content/ICST Ambisonics Plugins/08_icst_decoder/index.de.md",
@@ -257,9 +253,6 @@
     "ICST Studio Residenzen 2026.md",
     "multi-decoder-mode.md",
     "content/Blog/ascolta/_index.md",
-    "content/Blog/ascolta/_index.de.md",
-    "blog/ascolta/17-ascolta.md",
-    "content/HOME/index.md",
     "public/de/residenzen/icst-studio-residences-2025/GOPR4281.jpg",
     "public/de/residenzen/icst-studio-residences-2025/Lucas_Daniel.jpg",
     "public/de/residenzen/icst-studio-residences-2025/Youngjae_Cho.jpg",
@@ -270,13 +263,6 @@
     "content/post/Blauertsche_Bänder/Back.png",
     "content/post/Blauertsche_Bänder/Front.png",
     "content/post/Blauertsche_Bänder/8000hz.png",
-    "content/HOME/index.de.md",
-    "content/ICST Ambisonics Plugins/11_animator/index.md",
-    "content/Blog/ICST Composer Studio Overview/index.md",
-    "content/Blog/ICST Composer Studio Blog/index.md",
-    "content/Residenzen/ICST Studio Residences 2026/index.md",
-    "content/ICST Ambisonics Plugins/00_new/index.md",
-    "content/ICST.md",
     "content/Blog/What_we_now/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",

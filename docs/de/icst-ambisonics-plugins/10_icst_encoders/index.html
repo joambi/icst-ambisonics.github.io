@@ -1,0 +1,1040 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="de"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]
+        |
+        ICST Encoders
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]" />
+  <meta
+    name="description"
+    content="Spatial Audio Plugins &amp; Tutorials
+by ICST · Zurich University of the Arts"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css" integrity="sha256-gnZ8kex8rMjku3tmSA/DOpKI6lhtiQQZWl2QqNvPOAE=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/de/icst-ambisonics-plugins/10_icst_encoders/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ICST Encoders">
+  <meta name="twitter:description" content="Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste
+ICST AmbiEncoders Die ICST AmbiEncoders positionieren und bewegen Klangquellen innerhalb des Ambisonics-B-Format-Feldes. Zwei Encoder-Varianten stehen zur Verfügung:
+Mono-Encoder (A) – Positioniert oder bewegt eine einzelne Mono-Quelle im 3D-Raum. Multi-Encoder (B) – Positioniert oder bewegt bis zu 64 Quellen pro Audiospur, organisiert in bis zu 8 Gruppen. Jede Gruppe kann relativ zu ihrem Gruppenznentrum manipuliert werden, was komplexe räumliche Choreografien ermöglicht. Ein wesentliches Merkmal der ICST-Encoder ist die integrierte Distanzsimulation: Ein Distanz-Scaler wendet Tiefpassfilterung und einen einfachen Doppler-Effekt an, um Tiefen- und Nähewahrnehmung zu modellieren.">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/de/icst-ambisonics-plugins/10_icst_encoders/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="ICST Encoders">
+  <meta property="og:description" content="Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste
+ICST AmbiEncoders Die ICST AmbiEncoders positionieren und bewegen Klangquellen innerhalb des Ambisonics-B-Format-Feldes. Zwei Encoder-Varianten stehen zur Verfügung:
+Mono-Encoder (A) – Positioniert oder bewegt eine einzelne Mono-Quelle im 3D-Raum. Multi-Encoder (B) – Positioniert oder bewegt bis zu 64 Quellen pro Audiospur, organisiert in bis zu 8 Gruppen. Jede Gruppe kann relativ zu ihrem Gruppenznentrum manipuliert werden, was komplexe räumliche Choreografien ermöglicht. Ein wesentliches Merkmal der ICST-Encoder ist die integrierte Distanzsimulation: Ein Distanz-Scaler wendet Tiefpassfilterung und einen einfachen Doppler-Effekt an, um Tiefen- und Nähewahrnehmung zu modellieren.">
+  <meta property="og:locale" content="de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="icst-ambisonics-plugins">
+    <meta property="article:published_time" content="2025-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-01T00:00:00+00:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "icst-ambisonics-plugins",
+        "name": "ICST Encoders",
+        "headline": "ICST Encoders",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003cp\u003eInstitut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste\u003c\/p\u003e\n\u003chr\u003e\n\u003ch1 id=\u0022icst-ambiencoders\u0022\u003eICST AmbiEncoders\u003c\/h1\u003e\n\u003cp\u003eDie \u003cstrong\u003eICST AmbiEncoders\u003c\/strong\u003e positionieren und bewegen Klangquellen innerhalb des Ambisonics-B-Format-Feldes. Zwei Encoder-Varianten stehen zur Verfügung:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eMono-Encoder (A)\u003c\/strong\u003e – Positioniert oder bewegt eine einzelne Mono-Quelle im 3D-Raum.\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eMulti-Encoder (B)\u003c\/strong\u003e – Positioniert oder bewegt bis zu 64 Quellen pro Audiospur, organisiert in bis zu 8 Gruppen. Jede Gruppe kann relativ zu ihrem Gruppenznentrum manipuliert werden, was komplexe räumliche Choreografien ermöglicht.\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003eEin wesentliches Merkmal der ICST-Encoder ist die integrierte \u003cstrong\u003eDistanzsimulation\u003c\/strong\u003e: Ein Distanz-Scaler wendet Tiefpassfilterung und einen einfachen Doppler-Effekt an, um Tiefen- und Nähewahrnehmung zu modellieren.\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "de",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/de\/icst-ambisonics-plugins\/10_icst_encoders\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "dateCreated": "2025-01-01T00:00:00.00Z",
+        "datePublished": "2025-01-01T00:00:00.00Z",
+        "dateModified": "2025-01-01T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": {"email":"johannes.schuett@zhdk.ch","name":"Johannes Schuett"},
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/de\/icst-ambisonics-plugins\/10_icst_encoders\/",
+        "wordCount" : "373",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+	
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar wrapper__sidebar--hidden"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/de">ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST · Zurich University of the Arts</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.zhdk.ch/forschung/icst"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Zurich University of the Arts"
+            title="Zurich University of the Arts"
+          >
+            
+              <img src="/images/zhdk-logo.svg" alt="Zurich University of the Arts" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            
+              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+            target="_blank"
+            rel="noopener me"
+            aria-label="YouTube"
+            title="YouTube"
+          >
+            
+              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main wrapper__main--fullscreen"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="1" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="1"
+                >Plugins &amp; Tools <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-plugins/"
+                      
+                      title=""
+                      >ICST AmbiPlugins Docs</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-tools/"
+                      
+                      title=""
+                      >Ambi Tools</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="2" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="2"
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/ambisonics-101/"
+                      
+                      title=""
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/post/"
+                      
+                      title=""
+                      >All Tutorials</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="3" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="3"
+                >Ascolta <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/17-ascolta/"
+                      
+                      title=""
+                      >Next Session</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/"
+                      
+                      title=""
+                      >All Sessions</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="4" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="4"
+                >Residenzen <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2025/"
+                      
+                      title=""
+                      >Residenzen 2025</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2026/"
+                      
+                      title=""
+                      >Residenzen 2026</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="5" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="5"
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-composer-studio-blog/"
+                      
+                      title=""
+                      >Composition Studio</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/audio-examples/"
+                      
+                      title=""
+                      >Audio Examples</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-equipment/"
+                      
+                      title=""
+                      >Equipment</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-software/"
+                      
+                      title=""
+                      >Software</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-speaker-settings/"
+                      
+                      title=""
+                      >Speaker Setup</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-regie/"
+                      
+                      title=""
+                      >Regie</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-pre-installation/"
+                      
+                      title=""
+                      >Pre-Installation</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/downloads/"
+                      
+                      title=""
+                      >Downloads</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/"
+                      
+                      title=""
+                      >All Studio Pages</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/links/"
+              
+              title=""
+              >Links</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >DE <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/icst-ambisonics-plugins/10_icst_encoders/" title="EN"
+                    ><span
+                      
+                      aria-label="EN"
+                      >EN</span
+                    >
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </li>
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+
+
+
+<div class="docs animated fadeInDown">
+
+  
+  <nav class="docs__nav">
+    <div class="docs__nav-title">
+      <a href="/de/icst-ambisonics-plugins/">
+        <i class="fas fa-book"></i> ICST AmbiPlugins Docs
+      </a>
+    </div>
+    <ul class="docs__nav-list">
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/01_overview/" title="Übersicht">Übersicht</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/00_new/" title="Was ist neu">Was ist neu</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/08_downloads/" title="Downloads">Downloads</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/02_installation/" title="Installation">Installation</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/03_how_it_works/" title="Wie es funktioniert">Wie es funktioniert</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/04_quick_start/" title="Schnellstart">Schnellstart</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/06_step_by_step_setup/" title="Schritt-für-Schritt-Setup">Schritt-für-Schritt-Setup</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/08_icst_decoder/" title="ICST Decoder">ICST Decoder</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/09_icst_multidecoder/" title="ICST MultiDecoder">ICST MultiDecoder</a>
+        </li>
+      
+        <li class="docs__nav-item docs__nav-item--active">
+          <a href="/de/icst-ambisonics-plugins/10_icst_encoders/" title="ICST Encoders">ICST Encoders</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/11_animator/" title="Animator">Animator</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/05_open_track_templates/" title="Spurvorlagen">Spurvorlagen</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/13_osc/" title="OSC">OSC</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/07_shortcuts/" title="Tastaturkürzel">Tastaturkürzel</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/icst-ambisonics-plugins/15_best_practices/" title="Best Practices">Best Practices</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  
+  <article class="docs__content post">
+    <div class="post__content">
+      <h1>ICST Encoders</h1><p>Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste</p>
+<hr>
+<h1 id="icst-ambiencoders">ICST AmbiEncoders</h1>
+<p>Die <strong>ICST AmbiEncoders</strong> positionieren und bewegen Klangquellen innerhalb des Ambisonics-B-Format-Feldes. Zwei Encoder-Varianten stehen zur Verfügung:</p>
+<ul>
+<li><strong>Mono-Encoder (A)</strong> – Positioniert oder bewegt eine einzelne Mono-Quelle im 3D-Raum.</li>
+<li><strong>Multi-Encoder (B)</strong> – Positioniert oder bewegt bis zu 64 Quellen pro Audiospur, organisiert in bis zu 8 Gruppen. Jede Gruppe kann relativ zu ihrem Gruppenznentrum manipuliert werden, was komplexe räumliche Choreografien ermöglicht.</li>
+</ul>
+<p>Ein wesentliches Merkmal der ICST-Encoder ist die integrierte <strong>Distanzsimulation</strong>: Ein Distanz-Scaler wendet Tiefpassfilterung und einen einfachen Doppler-Effekt an, um Tiefen- und Nähewahrnehmung zu modellieren.</p>
+<p>Ein- und ausgehende Parameter können über <a href="https://en.wikipedia.org/wiki/Open_Sound_Control">OSC</a> gesendet und empfangen werden.</p>
+<div class="callout callout--info">
+    <div class="callout__header">
+      <span class="callout__icon">ℹ️</span>
+      <span class="callout__label">Info</span>
+    </div>
+    <div class="callout__body"><p>Wiki: <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder">ICST AmbiEncoder · GitHub</a></p></div>
+  </div><div class="callout callout--note">
+    <div class="callout__header">
+      <span class="callout__icon">💬</span>
+      <span class="callout__label">Example</span>
+    </div>
+    <div class="callout__body"><p>Video: ICST Ambisonics Plugins – 02 – Encoder und Routing
+<a href="https://youtu.be/-U0t8sjeTsw?si=zJh9QpgOKeFe2BL0">https://youtu.be/-U0t8sjeTsw?si=zJh9QpgOKeFe2BL0</a></p></div>
+  </div><hr>
+<h2 id="übersicht">Übersicht</h2>
+<p>![[Overview AmbiEncoder.png]]</p>
+<table>
+  <thead>
+      <tr>
+          <th>Label</th>
+          <th>Beschreibung</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>A</strong></td>
+          <td>Mono-Encoder – positioniert/bewegt eine einzelne Mono-Quelle</td>
+      </tr>
+      <tr>
+          <td><strong>B</strong></td>
+          <td>Multi-Encoder – positioniert/bewegt bis zu 64 Quellen pro Spur</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="benutzeroberfläche">Benutzeroberfläche</h2>
+<h3 id="hauptbedienelemente">Hauptbedienelemente</h3>
+<ol>
+<li><strong>Einstellungen</strong> – Öffnet das Encoder-Einstellungsfenster</li>
+<li><strong>Hilfe</strong> – Öffnet das Hilfefenster</li>
+</ol>
+<p>![[CleanShot 2026-03-04 at 15.04.30@2x.png]]</p>
+<h3 id="quellen-fenster-3">Quellen-Fenster (3)</h3>
+<p>![[CleanShot 2026-03-04 at 15.02.00@2x.png]]</p>
+<p>Zeigt und steuert einzelne Quellen. Jede Quelle kann nach Azimut, Elevation und Distanz positioniert werden.</p>
+<h3 id="encoding-einstellungen-4">Encoding-Einstellungen (4)</h3>
+<p>![[CleanShot 2026-03-04 at 15.02.47@2x.png]]</p>
+<p>Konfiguriert die Ambisonics-Encoding-Parameter wie Ordnung und Kanalformat.</p>
+<p>![[CleanShot 2026-03-04 at 18.09.16.png]]</p>
+<h3 id="radar-5">Radar (5)</h3>
+<p>Visuelle Draufsicht des Schallfeldes mit den aktuellen Positionen aller Quellen.</p>
+<h4 id="beispiel">Beispiel</h4>
+<p>![[CleanShot 2026-03-04 at 18.03.59.png]]</p>
+<hr>
+<h2 id="osc-integration-6--7">OSC-Integration (6 &amp; 7)</h2>
+<ol start="6">
+<li><strong>OSC-Eingänge &amp; JavaScript</strong> – Empfängt OSC-Nachrichten und ermöglicht benutzerdefiniertes JavaScript zur Parametersteuerung</li>
+<li><strong>OSC-Ausgang</strong> – Sendet den Encoder-Zustand als OSC-Nachrichten an externe Anwendungen</li>
+</ol>
+<div class="callout callout--note">
+    <div class="callout__header">
+      <span class="callout__icon">💬</span>
+      <span class="callout__label">Example</span>
+    </div>
+    <div class="callout__body"><p>Video: ICST Ambisonics Plugins – 03 – OSC Teil 1
+<a href="https://youtu.be/7_s-jaUQa14?si=NM8TPRrigY_egDfC">https://youtu.be/7_s-jaUQa14?si=NM8TPRrigY_egDfC</a></p></div>
+  </div><hr>
+<h2 id="weitere-bedienelemente">Weitere Bedienelemente</h2>
+<ol start="8">
+<li><strong>Distanz-Scaler</strong> – Simuliert die Distanzwahrnehmung über Tiefpassfilterung und Doppler-Effekt</li>
+<li><strong>Infiniti</strong> – Aktiviert den Unendlich-Distanz-Modus und platziert Quellen an der Fernfeld-Grenze</li>
+<li><strong>Gain / Lautstärke</strong> – Regelt den Eingangs- oder Ausgangs-Gain des Encoders</li>
+<li><strong>Import &amp; Export</strong> – Importiert oder exportiert Quellkonfigurationen als Dateien</li>
+<li><strong>Gruppen-Editor</strong> – Verwaltet Quellengruppen; jede Gruppe kann relativ zu ihrem Gruppenznentrum repositioniert werden</li>
+</ol>
+<h4 id="beispiel-gruppen-erstellen">Beispiel: Gruppen erstellen</h4>
+<p>![[create groups.png]]</p>
+<h4 id="beispiel-gruppenmanipulation--animation">Beispiel: Gruppenmanipulation &amp; Animation</h4>
+<p>![[2c34531a-ff69-490d-c9d0-e3ea82eb29b0.gif]]</p>
+<ol start="13">
+<li><strong>Presets speichern &amp; laden</strong> – Speichert und lädt vollständige Encoder-Konfigurationen</li>
+</ol>
+<hr>
+<h2 id="zusammenfassung">Zusammenfassung</h2>
+<p>Die ICST AmbiEncoders bieten:</p>
+<ul>
+<li>Mono- und Mehrquellen-Encoding (bis zu 64 Quellen pro Spur)</li>
+<li>Gruppenbasierte räumliche Choreografie mit bis zu 8 Gruppen</li>
+<li>Distanzsimulation mit Tiefpassfilterung und Doppler-Effekt</li>
+<li>Vollständige OSC-Integration (Eingang, Ausgang und JavaScript-Scripting)</li>
+<li>Preset-Verwaltung für reproduzierbare Sessions</li>
+</ul>
+<hr>
+<p><span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span></p>
+
+    </div>
+
+    
+    <div class="docs__pagination">
+      
+        <a class="docs__pagination-link docs__pagination-link--prev" href="/de/icst-ambisonics-plugins/11_animator/">
+          <i class="fas fa-arrow-left"></i>
+          <span>Animator</span>
+        </a>
+      
+      
+        <a class="docs__pagination-link docs__pagination-link--next" href="/de/icst-ambisonics-plugins/09_icst_multidecoder/">
+          <span>ICST MultiDecoder</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      
+    </div>
+  </article>
+
+</div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

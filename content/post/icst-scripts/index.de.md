@@ -16,8 +16,6 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 Dieses ReaScript generiert Spiralbewegungen (z.B. expandierende Spiralen) für die X-, Y- und optional Z-Koordinaten des VST3 "ICST AmbiEncoder_64" in REAPER. Es erlaubt dir, Bewegungsverläufe auf Basis von Startpositionen deiner Punkte zu erzeugen und automatisch als Envelope einzufügen. Das Ganze erfolgt grafisch via ReaImGui mit einstellbaren Parametern und Preset-Speicher.
 
-![Spiral_Walk](Spiral_Walk.png)
-
 DOWNLOAD ICST LuaScripts:
 (Copy to /Reaper/Scripts)
 
@@ -80,6 +78,4 @@ DOWNLOAD ICST LuaScripts:
 # Example:
 
 Spiral_Walk_out:
-![Spiral_Walk_aussen](Spiral_Walk_aussen.gif)
 Spiral_Walk_in:
-![Spiral_Walk_in](Spiral_Walk_innen.gif)

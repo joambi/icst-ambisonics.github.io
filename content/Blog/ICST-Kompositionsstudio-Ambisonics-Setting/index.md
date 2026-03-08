@@ -16,7 +16,7 @@ Ambisonics - speaker - setting and coordinates
 
 The Studio Room is nearly 7m length, 7m bright and 7m hight.
 
-![ICST KompStudio Speakers](studio-speakers.jpg)
+![ICST KompStudio Speakers](Speaker_for_Decoder.png)
 Speaker-Coordinates for the "ICST Composer Studio"
 
 ![Speaker Setup](Speakers_Kompstudio.png)

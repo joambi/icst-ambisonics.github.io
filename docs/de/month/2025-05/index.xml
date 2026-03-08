@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>2025-05 on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/month/2025-05/</link>
+
+    <description>
+      Recent content
+      
+         in 2025-05 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Wed, 28 May 2025 14:57:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/month/2025-05/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST AmbiEncoder – OSC zu FX Mapping</title>
+      <link>https://ambisonics.ch/de/post/osc-2-fx/</link>
+      <guid>https://ambisonics.ch/de/post/osc-2-fx/</guid>
+      <pubDate>Fri, 16 May 2025 09:44:58 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;icst-ambiencoder-sendet-osc-zu-fx-plugins-parameter&#34;&gt;ICST AmbiEncoder sendet OSC zu FX-Plugins-Parameter&lt;/h1&gt;
+&lt;h3 id=&#34;integration-des-icst-ambiencoder-mit-iem-fdnreverb-via-osc&#34;&gt;Integration des ICST AmbiEncoder mit IEM FdnReverb via OSC&lt;/h3&gt;
+&lt;p&gt;Dieses Beispiel zeigt eine einfache Synchronisierung zwischen &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; und &lt;strong&gt;IEM Ambisonics Plugins&lt;/strong&gt;, wobei &lt;strong&gt;FdnReverb&lt;/strong&gt; verwendet wird, um distanzabhängige Reverb anzuwenden. Die &lt;strong&gt;OSC-Schnittstelle der IEM Plugins&lt;/strong&gt; macht diesen Prozess einfach.&lt;/p&gt;
+&lt;h3 id=&#34;osc--osc-kommunikation&#34;&gt;OSC &amp;lt;&amp;ndash;&amp;gt; OSC Kommunikation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;FdnReverb&lt;/strong&gt; (von IEM) ist ein CPU-effizienter Reverb für B-Format. Das Ziel ist es, &lt;strong&gt;den Reverb zu erhöhen, wenn die Quelle sich während der Raumalisierung weiter entfernt&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-2-fx/FX-Reverb_osc.gif&#34; alt=&#34;OSC to FX-Reverb&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1-richte-die-daw-ein-reaper&#34;&gt;1. Richte die DAW ein (Reaper)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Erstelle drei Spuren:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ICST Decoder&lt;/strong&gt; → Stereo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ICST Encoder (Mono/Panner)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IEM FdnReverb&lt;/strong&gt; → Reverb-Verarbeitung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-konfiguriere-osc-kommunikation&#34;&gt;2. Konfiguriere OSC-Kommunikation&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Öffne die &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt;-Einstellungen und navigiere zum &lt;strong&gt;OSC-Fenster&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Aktiviere &lt;strong&gt;OSC Send&lt;/strong&gt; für externe Verwendung.&lt;/li&gt;
+&lt;li&gt;Füge den &lt;strong&gt;Dry/Wet-Parameter&lt;/strong&gt; aus &lt;strong&gt;IEM FdnReverb&lt;/strong&gt; hinzu.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OSC-Eingabe für IEM FdnReverb:&lt;/strong&gt;
+&lt;code&gt;/FdnReverb/dryWet {d}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Aktiviere in &lt;strong&gt;IEM FdnReverb&lt;/strong&gt; den &lt;strong&gt;OSC Listener&lt;/strong&gt; (z.B. Port: 9001).&lt;/li&gt;
+&lt;li&gt;Klicke auf &lt;strong&gt;IEM OSC&lt;/strong&gt;, stelle die Portnummer ein und drücke &lt;strong&gt;Connect&lt;/strong&gt; (sollte grün werden, wenn aktiv).&lt;/li&gt;
+&lt;li&gt;Das Verschieben des &lt;strong&gt;Panners&lt;/strong&gt; im ICST AmbiEncoder passt nun dynamisch den &lt;strong&gt;Dry/Wet&lt;/strong&gt;-Parameter in FdnReverb an.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Mit zunehmender Entfernung wird auch die Reverb-Intensität zunehmen. Experimentiere mit anderen Reverb-Parametern für zusätzliche Effekte.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST MultiEncoder – Gruppenanimation</title>
+      <link>https://ambisonics.ch/de/post/gp-manipulation/</link>
+      <guid>https://ambisonics.ch/de/post/gp-manipulation/</guid>
+      <pubDate>Wed, 28 May 2025 13:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;gruppenanimation&#34;&gt;Gruppenanimation&lt;/h1&gt;
+&lt;p&gt;Der &lt;strong&gt;ICST Multi-Ambisonics Encoder v.2+&lt;/strong&gt; bietet ein &lt;strong&gt;Gruppenanimations-Tool&lt;/strong&gt; zur dynamischen Manipulation gruppierter Audioquellen in der &lt;strong&gt;Radar-Anzeige&lt;/strong&gt;. Durch Auswahl eines Gruppenpunkts und Halten von &lt;strong&gt;Option (Alt) auf Mac&lt;/strong&gt; schaltest du erweiterte Funktionen wie &lt;strong&gt;Gruppenanimation&lt;/strong&gt; und &lt;strong&gt;Gruppenstrecken&lt;/strong&gt; frei, die es dir ermöglichen, mehrere Quellen synchronisiert zu bewegen und zu transformieren für verbesserte 3D-Raumalisierung.&lt;/p&gt;
+&lt;p&gt;📺 &lt;strong&gt;Tutorial:&lt;/strong&gt; &lt;a href=&#34;https://youtu.be/aDa-vNWriLM&#34;&gt;Points and Radar&lt;/a&gt; (3:15)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;einfache-animation-einer-gruppe&#34;&gt;Einfache Animation einer Gruppe&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/Gp_manipulation.gif&#34; alt=&#34;simple&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Punkte auswählen&lt;/strong&gt; – Klicke um einen Punkt auszuwählen; nutze &lt;strong&gt;Shift + Klick&lt;/strong&gt; für mehrere Punkte.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gruppe erstellen&lt;/strong&gt; – Klicke auf das &lt;strong&gt;Group&lt;/strong&gt;-Symbol um einen Gruppenpunkt zu erstellen (z.B. &amp;lsquo;S&amp;rsquo;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gruppe verschieben&lt;/strong&gt; – Halte &lt;strong&gt;Shift&lt;/strong&gt; und ziehe den Gruppenpunkt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Punkte um Gruppe rotieren&lt;/strong&gt; – Halte &lt;strong&gt;Alt&lt;/strong&gt;, dann ziehe und lasse das &lt;strong&gt;Rotate-Around-Group&lt;/strong&gt;-Symbol fallen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gruppe strecken&lt;/strong&gt; – Halte &lt;strong&gt;Alt&lt;/strong&gt;, nutze das &lt;strong&gt;Stretch Symbol&lt;/strong&gt;, dann bewege die Maus &lt;strong&gt;nach oben/unten&lt;/strong&gt; zum Anpassen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gruppe um Ursprung rotieren&lt;/strong&gt; – Halte &lt;strong&gt;Alt&lt;/strong&gt;, dann ziehe und lasse das &lt;strong&gt;Rotate-Around-Origin&lt;/strong&gt;-Symbol fallen.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;💡 &lt;strong&gt;Tipp:&lt;/strong&gt; Diese Funktionen gelten auch für Höhenanpassungen im &lt;strong&gt;Z-Radar&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;manuelle-aufnahme&#34;&gt;Manuelle Aufnahme&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Stelle &lt;strong&gt;ICST MultiEncoder&lt;/strong&gt; (Track Automation) auf &lt;strong&gt;&amp;lsquo;LATCH&amp;rsquo;&lt;/strong&gt; (oder &lt;strong&gt;&amp;lsquo;WRITE&amp;rsquo;&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;Starte die Wiedergabe in &lt;strong&gt;Reaper&lt;/strong&gt;, halte &lt;strong&gt;Alt&lt;/strong&gt; und nimm deine Bewegung auf.&lt;/li&gt;
+&lt;li&gt;Um die aufgenommene Bewegung abzuspielen, stelle &amp;ldquo;LATCH&amp;rdquo; auf &amp;ldquo;READ&amp;rdquo;.
+&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/Rec_PP.gif&#34; alt=&#34;GP_REC&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lfo-animation-einer-gruppe&#34;&gt;LFO-Animation einer Gruppe&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_A.png&#34; alt=&#34;LFO_A 1&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Öffne die &lt;strong&gt;LFO Parameter Modulation&lt;/strong&gt; im &lt;strong&gt;AmbiEncoder&lt;/strong&gt;-Track und aktiviere die Parameter für &lt;strong&gt;GX, GY und GZ&lt;/strong&gt;.
+&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_param.png&#34; alt=&#34;LFO_parm&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Passe die LFO-Parameter an, z.B. &lt;strong&gt;Geschwindigkeit&lt;/strong&gt;, um die gewünschte Bewegung zu erreichen.
+Nun bewegt sich die Gruppe automatisch im Radar.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_A.gif&#34; alt=&#34;GP_LFO_animated&#34;&gt;&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;Tipp:&lt;/strong&gt; Das Verbinden der LFO-Parameter mit einer MIDI/OSC-Schnittstelle ermöglicht es dir, die Bewegung live zu steuern.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;lfo-gruppenanimation-mit-quaternionen&#34;&gt;LFO-Gruppenanimation mit Quaternionen&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/LFO_Quarternions.gif&#34; alt=&#34;LFO_B&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dies ist ein fortgeschritteneres Beispiel für die Animation einer Gruppe mit &lt;strong&gt;Quaternionen-Parametern&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;💡 &lt;strong&gt;Tipp:&lt;/strong&gt; Du kannst die Parameter auch mit einem &lt;strong&gt;Audio-Kontrollsignal&lt;/strong&gt; über einen Sidechain steuern.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;gruppenanimation-aus-einer-externen-quelle&#34;&gt;Gruppenanimation aus einer externen Quelle&lt;/h3&gt;
+&lt;p&gt;Der neue &amp;lsquo;ICST Ambi-OSC-Patcher&amp;rsquo; zeigt die direkten Möglichkeiten der Gruppenanimation. Wir demonstrieren, wie man Gruppen mit OSC aus einer externen Quelle animiert. Der MultiEncoder konvertiert Euler-Winkel intern in Quaternionen. In diesem Beispiel sind die Winkel vom Quellenpunkt (1) entscheidend für die Animation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/max-example-patch.png&#34; alt=&#34;Max example patch&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Download MaxPatch: &lt;a href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat&#34;&gt;Neuer OSC-Messenger&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;gruppenposition&#34;&gt;Gruppenposition&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Setze Gruppenposition AED
+&lt;ul&gt;
+&lt;li&gt;/icst/ambi/group/aed [GroupName] [Azimuth] [Elevation] [Distance] [Mode] Mode (1) = bewege die ganze GP, Mode (0) = bewege nur den GP-Punkt.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/icst/ambi/group/aed &#39;G1&#39; 135 0 0.1 1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Setze Gruppenposition XYZ
+&lt;ul&gt;
+&lt;li&gt;/icst/ambi/group/xyz [GroupName] [X] [Y] [Z] [Mode]:&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/icst/ambi/group/xyz &#39;G2&#39; 0.1 0.1 0 0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;osc-animation&#34;&gt;&lt;strong&gt;OSC-Animation&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Der ICST MultiEncoder kann jetzt direkt mit Euler-Winkeln via OSC gesteuert werden.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/OSC_abs_angel.gif&#34; alt=&#34;Euler_Winkel&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST AmbiPlugins &amp; GyrOSC</title>
+      <link>https://ambisonics.ch/de/post/gyrosc/</link>
+      <guid>https://ambisonics.ch/de/post/gyrosc/</guid>
+      <pubDate>Wed, 28 May 2025 14:57:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;ICST MultiEncoder und iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GyrOSC&lt;/strong&gt; ist ein leichtes Utility, das Bewegungssensordaten (von deinem iPhone, iPod Touch oder iPad) über ein lokales Wireless-Netzwerk an jede OSC-kompatible Host-Anwendung sendet. Es ermöglicht dir, Live-Audio- oder Video-Anwendungen mit den integrierten Sensoren deines Geräts (Gyroskop, Beschleunigungsmesser, Kompass und Höhenmesser) zu steuern.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/gyrOSC.png&#34; alt=&#34;GyrOSC&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Das folgende GIF zeigt, wie der ICST AmbiEncoder OSC-Daten von der GyrOSC-App empfängt.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyroOSC_Demo.gif&#34; alt=&#34;Example video:&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;funktionsweise&#34;&gt;Funktionsweise:&lt;/h3&gt;
+&lt;p&gt;Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung zur Verwendung der iOS-App &lt;em&gt;GyrOSC&lt;/em&gt; mit dem ICST Ambisonics Encoder.&lt;/p&gt;
+&lt;h4 id=&#34;einrichtung-der-gyrosc-app&#34;&gt;Einrichtung der GyrOSC-App:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Lade die &lt;a href=&#34;https://apps.apple.com/us/app/gyrosc/id418751595&#34;&gt;GyrOSC-App&lt;/a&gt; herunter.&lt;/li&gt;
+&lt;li&gt;Konfiguriere die App wie folgt:
+&lt;ul&gt;
+&lt;li&gt;Aktiviere &lt;em&gt;Gravity&lt;/em&gt; (deaktiviere alle anderen Sensoren).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/Gyro_grav.jpeg&#34; alt=&#34;Gyro_01&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;osc-konfiguration-in-der-gyrosc-app&#34;&gt;OSC-Konfiguration in der GyrOSC-App:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Gebe die IP-Adresse deines Computers im Feld (1) ein.&lt;/li&gt;
+&lt;li&gt;Die Standard-Portnummer für den ICST Ambisonics Encoder ist 50001 (Feld 2).&lt;/li&gt;
+&lt;li&gt;Wähle den Index (Quellennummer) für das Plugin im Feld (3).&lt;/li&gt;
+&lt;li&gt;Feld (4) zeigt die von GyrOSC gesendete OSC-Nachricht.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/Gyro_Config.jpeg&#34; alt=&#34;GyrOSC_Config&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Die GyrOSC-App sendet die &amp;lsquo;Gravity&amp;rsquo;-Daten via OSC (Port 50001) zum ICST MultiEncoder.&lt;/p&gt;
+&lt;h3 id=&#34;einrichtung-des-icst-ambisonics-encoder-plugins&#34;&gt;Einrichtung des ICST Ambisonics Encoder Plugins:&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/Reaper_GyrOSC.png&#34; alt=&#34;Reaper_GyrOSC&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Öffne das ICST AmbiEncoder_64 Plugin.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rufe die Encoder Settings auf.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Öffne den &lt;em&gt;OSC IN&lt;/em&gt; Bereich und aktiviere OSC-IN (Port: 50001).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Doppelklick im Feld &lt;em&gt;OSC-Message&lt;/em&gt; und gebe ein:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/gyrosc/{i}/grav {x} {y} {z}&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aktiviere das Plugin durch Auswahl von &lt;em&gt;en&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bewege dein iPhone, um Bewegungsdaten zu generieren.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;inspirationen&#34;&gt;Inspirationen:&lt;/h1&gt;
+&lt;h3 id=&#34;osc-swarm&#34;&gt;OSC-Swarm&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;OSC-Message:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/gyrosc/1/grav&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;JS-Code:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s.setXYZ(1, s.arg(2), -s.arg(1), 0); for(i = 2; i &amp;lt;= 8; i++) s.setXYZ(i, s.arg(2)+Math.random()*0.2, -s.arg(1) + Math.random()* 0.2, 0)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyrOSC-SWARM.gif&#34; alt=&#34;OSC-Swarm&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Blauertsche Bänder</title>
+      <link>https://ambisonics.ch/de/post/blauertsche_b%C3%A4nder/</link>
+      <guid>https://ambisonics.ch/de/post/blauertsche_b%C3%A4nder/</guid>
+      <pubDate>Fri, 16 May 2025 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;blauertsche-bänder&#34;&gt;Blauertsche Bänder:&lt;/h1&gt;
+&lt;p&gt;Für die Stimme und ihre Richtungswahrnehmung habe ich Experimente mit den &lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauertsche Bänder&lt;/a&gt; durchgeführt.
+&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungsb%C3%A4nder.png&#34; alt=&#34;Richtungsbänder | 400&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So habe ich Y Front &amp;lt;-&amp;gt; Back und Z Top &amp;lt;-&amp;gt; Bottom mit dem IEM-Multifilter gekoppelt.
+&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung | 400&#34;&gt;
+OSC-OUT: 8008&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ICST Encoder OSC-Out Height: &amp;ndash;&amp;gt; /MultiEQ/filterGain4 {sz, -5.3, 0.0, 5.3}
+OSC-IN: 8008&lt;/li&gt;
+&lt;li&gt;Z&amp;ndash;&amp;gt; IEM MultiEQ: /MultiEQ/filterGain4 (Float)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OSC-OUT: 8008&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ICST Encoder OSC-Out Front: &amp;ndash;&amp;gt; /MultiEQ/filterGain4 {sz, -5.3, 0.0, 5.3}&lt;/li&gt;
+&lt;li&gt;Y&amp;ndash;&amp;gt; IEM MultiEQ: &lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/osc-anbindung.png&#34; alt=&#34;OSC&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;IEM-MultiEQ
+Height:
+&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Front:&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Back:&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;gedanken-und-beschreibungen-der-workflow-schritte&#34;&gt;Gedanken und Beschreibungen der Workflow-Schritte&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Wie kann ich die Präsenz von vorne und hinten, sowie das Gefühl von Höhen und Tiefen hörbarer machen?&lt;/li&gt;
+&lt;li&gt;Erstellte OSC-Kommunikation zwischen Encoder (Y,Z) &amp;amp; IEM MultiEQ (Blauertsche Bänder)&lt;/li&gt;
+&lt;li&gt;Mono-Encoder FX-Chain &amp;ldquo;Blauertsche Bänder-Ambi&amp;rdquo; eingerichtet.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;links&#34;&gt;Links:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauertsche Bänder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf&#34;&gt;sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

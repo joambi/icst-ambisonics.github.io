@@ -47,7 +47,16 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: |
+          if [[ -f package-lock.json || -f npm-shrinkwrap.json ]]; then
+            npm ci
+          fi
+      - name: Make checks executable
+        run: chmod +x scripts/check-frontmatter.sh scripts/check-links.sh
+      - name: Check front matter
+        run: ./scripts/check-frontmatter.sh
+      - name: Check markdown links
+        run: ./scripts/check-links.sh
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache

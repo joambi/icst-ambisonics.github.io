@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Psychoacoustics on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/psychoacoustics/</link>
+
+    <description>
+      Recent content
+      
+         in Psychoacoustics 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Fri, 16 May 2025 00:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/psychoacoustics/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Blauert&#39;s Bands</title>
+      <link>https://ambisonics.ch/post/blauertsche_b%C3%A4nder/</link>
+      <guid>https://ambisonics.ch/post/blauertsche_b%C3%A4nder/</guid>
+      <pubDate>Fri, 16 May 2025 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;style&gt;
+/* ── Blauert&#39;s Bands — Anatole theme aligned ── */
+
+.info-box {
+  border-left: 3px solid #6086b4;  /* info */
+  border-radius: 0 2px 2px 0;
+  padding: 0.9rem 1.2rem;
+  margin: 1.2rem 0;
+  font-size: 1.4rem;
+}
+.theme--light .info-box { background: #eeeeee; color: #464646; }
+.theme--dark  .info-box { background: #2a3a44; color: #eeeeee; }
+.info-box strong { display: block; margin-bottom: 0.3rem; color: #6086b4; }
+
+/* Code/OSC block — stays dark in both modes (terminal style) */
+.osc-block {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 2px;
+  padding: 0.8rem 1.1rem;
+  font-family: monospace;
+  font-size: 1.3rem;
+  margin: 0.6rem 0 1rem 0;
+}
+.osc-block .label {
+  color: #9f9f9f;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.osc-block .arrow { color: #569cd6; }
+.osc-block .path   { color: #9cdcfe; }
+.osc-block .param  { color: #ce9178; }
+
+.step-grid { display: flex; flex-direction: column; gap: 0.6rem; margin: 1rem 0; }
+.step { display: flex; gap: 0.8rem; align-items: flex-start; }
+.step__num {
+  background: #6086b4;            /* info */
+  color: #fff;
+  border-radius: 50%;
+  width: 26px; height: 26px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: bold; flex-shrink: 0; margin-top: 2px;
+}
+.step__text { font-size: 1.4rem; padding-top: 2px; }
+&lt;/style&gt;
+&lt;h1 id=&#34;blauerts-bands&#34;&gt;Blauert&amp;rsquo;s Bands&lt;/h1&gt;
+&lt;div class=&#34;info-box&#34;&gt;
+&lt;strong&gt;What this tutorial covers&lt;/strong&gt;
+How to use Blauert&#39;s Bands (frequency-dependent directional perception) to enhance front/back and height perception in Ambisonics — by coupling the ICST Encoder&#39;s Y and Z axes to the IEM MultiEQ via OSC.
+&lt;/div&gt;
+&lt;p&gt;For the voice and its directivity perception I conducted experiments with the &lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauert&amp;rsquo;s Bands&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungsb%C3%A4nder.png&#34; alt=&#34;Ritungsbänder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Thus I coupled Y Front ↔ Back and Z Top ↔ Bottom with the IEM-Multifilter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;osc-routing&#34;&gt;OSC Routing&lt;/h2&gt;
+&lt;h3 id=&#34;height-z-axis--iem-multieq&#34;&gt;Height (Z-Axis → IEM MultiEQ)&lt;/h3&gt;
+&lt;div class=&#34;osc-block&#34;&gt;
+  &lt;div class=&#34;label&#34;&gt;OSC OUT · Port 8008&lt;/div&gt;
+  &lt;span class=&#34;arrow&#34;&gt;ICST Encoder OSC-Out Height&lt;/span&gt; &lt;span class=&#34;arrow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;path&#34;&gt;/MultiEQ/filterGain4&lt;/span&gt; &lt;span class=&#34;param&#34;&gt;{sz, -5.3, 0.0, 5.3}&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;osc-block&#34;&gt;
+  &lt;div class=&#34;label&#34;&gt;OSC IN · Port 8008&lt;/div&gt;
+  Z &lt;span class=&#34;arrow&#34;&gt;→&lt;/span&gt; IEM MultiEQ: &lt;span class=&#34;path&#34;&gt;/MultiEQ/filterGain4&lt;/span&gt; &lt;span class=&#34;param&#34;&gt;(Float)&lt;/span&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;frontback-y-axis--iem-multieq&#34;&gt;Front/Back (Y-Axis → IEM MultiEQ)&lt;/h3&gt;
+&lt;div class=&#34;osc-block&#34;&gt;
+  &lt;div class=&#34;label&#34;&gt;OSC OUT · Port 8008&lt;/div&gt;
+  &lt;span class=&#34;arrow&#34;&gt;ICST Encoder OSC-Out Front&lt;/span&gt; &lt;span class=&#34;arrow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;path&#34;&gt;/MultiEQ/filterGain4&lt;/span&gt; &lt;span class=&#34;param&#34;&gt;{sz, -5.3, 0.0, 5.3}&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/osc-anbindung.png&#34; alt=&#34;OSC Connection&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;iem-multieq--frequency-bands&#34;&gt;IEM MultiEQ — Frequency Bands&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Height (8 kHz boost)&lt;/strong&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Front&lt;/strong&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Back&lt;/strong&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;workflow-steps&#34;&gt;Workflow Steps&lt;/h2&gt;
+&lt;div class=&#34;step-grid&#34;&gt;
+  &lt;div class=&#34;step&#34;&gt;&lt;div class=&#34;step__num&#34;&gt;1&lt;/div&gt;&lt;div class=&#34;step__text&#34;&gt;How can I make the presence of the front/back and the feeling of highs and lows more audible?&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&#34;step&#34;&gt;&lt;div class=&#34;step__num&#34;&gt;2&lt;/div&gt;&lt;div class=&#34;step__text&#34;&gt;Create OSC communication between Encoder (Y, Z axes) and IEM MultiEQ (Blauert&#39;s Bands).&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&#34;step&#34;&gt;&lt;div class=&#34;step__num&#34;&gt;3&lt;/div&gt;&lt;div class=&#34;step__text&#34;&gt;Set up a Mono-Encoder FX-Chain &#34;Blauert&#39;s Bands-Ambi&#34;.&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauert&amp;rsquo;s Bands (Wikipedia)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf&#34;&gt;sengpielaudio.com – Die Bedeutung der Blauert&amp;rsquo;schen Bänder (PDF)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

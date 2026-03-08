@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Fx on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/tags/fx/</link>
+
+    <description>
+      Recent content
+      
+         in Fx 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Fri, 16 May 2025 09:44:58 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/tags/fx/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST AmbiEncoder – OSC zu FX Mapping</title>
+      <link>https://ambisonics.ch/de/post/osc-2-fx/</link>
+      <guid>https://ambisonics.ch/de/post/osc-2-fx/</guid>
+      <pubDate>Fri, 16 May 2025 09:44:58 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;icst-ambiencoder-sendet-osc-zu-fx-plugins-parameter&#34;&gt;ICST AmbiEncoder sendet OSC zu FX-Plugins-Parameter&lt;/h1&gt;
+&lt;h3 id=&#34;integration-des-icst-ambiencoder-mit-iem-fdnreverb-via-osc&#34;&gt;Integration des ICST AmbiEncoder mit IEM FdnReverb via OSC&lt;/h3&gt;
+&lt;p&gt;Dieses Beispiel zeigt eine einfache Synchronisierung zwischen &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; und &lt;strong&gt;IEM Ambisonics Plugins&lt;/strong&gt;, wobei &lt;strong&gt;FdnReverb&lt;/strong&gt; verwendet wird, um distanzabhängige Reverb anzuwenden. Die &lt;strong&gt;OSC-Schnittstelle der IEM Plugins&lt;/strong&gt; macht diesen Prozess einfach.&lt;/p&gt;
+&lt;h3 id=&#34;osc--osc-kommunikation&#34;&gt;OSC &amp;lt;&amp;ndash;&amp;gt; OSC Kommunikation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;FdnReverb&lt;/strong&gt; (von IEM) ist ein CPU-effizienter Reverb für B-Format. Das Ziel ist es, &lt;strong&gt;den Reverb zu erhöhen, wenn die Quelle sich während der Raumalisierung weiter entfernt&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-2-fx/FX-Reverb_osc.gif&#34; alt=&#34;OSC to FX-Reverb&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1-richte-die-daw-ein-reaper&#34;&gt;1. Richte die DAW ein (Reaper)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Erstelle drei Spuren:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ICST Decoder&lt;/strong&gt; → Stereo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ICST Encoder (Mono/Panner)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IEM FdnReverb&lt;/strong&gt; → Reverb-Verarbeitung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-konfiguriere-osc-kommunikation&#34;&gt;2. Konfiguriere OSC-Kommunikation&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Öffne die &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt;-Einstellungen und navigiere zum &lt;strong&gt;OSC-Fenster&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Aktiviere &lt;strong&gt;OSC Send&lt;/strong&gt; für externe Verwendung.&lt;/li&gt;
+&lt;li&gt;Füge den &lt;strong&gt;Dry/Wet-Parameter&lt;/strong&gt; aus &lt;strong&gt;IEM FdnReverb&lt;/strong&gt; hinzu.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OSC-Eingabe für IEM FdnReverb:&lt;/strong&gt;
+&lt;code&gt;/FdnReverb/dryWet {d}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Aktiviere in &lt;strong&gt;IEM FdnReverb&lt;/strong&gt; den &lt;strong&gt;OSC Listener&lt;/strong&gt; (z.B. Port: 9001).&lt;/li&gt;
+&lt;li&gt;Klicke auf &lt;strong&gt;IEM OSC&lt;/strong&gt;, stelle die Portnummer ein und drücke &lt;strong&gt;Connect&lt;/strong&gt; (sollte grün werden, wenn aktiv).&lt;/li&gt;
+&lt;li&gt;Das Verschieben des &lt;strong&gt;Panners&lt;/strong&gt; im ICST AmbiEncoder passt nun dynamisch den &lt;strong&gt;Dry/Wet&lt;/strong&gt;-Parameter in FdnReverb an.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Mit zunehmender Entfernung wird auch die Reverb-Intensität zunehmen. Experimentiere mit anderen Reverb-Parametern für zusätzliche Effekte.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

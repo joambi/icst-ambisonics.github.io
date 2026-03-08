@@ -111,6 +111,7 @@ The **ICST Composition Studio** at the Zurich University of the Arts is a dedica
   <a href="/blog/icst-kompositionsstudio-equipment/"><i class="fas fa-microchip"></i> Equipment</a>
   <a href="/blog/icst-kompositionsstudio-software/"><i class="fas fa-laptop-code"></i> Software</a>
   <a href="/blog/icst-kompositionsstudio-speaker-settings/"><i class="fas fa-volume-up"></i> Speaker Setup</a>
+  <a href="/blog/audio-examples/"><i class="fas fa-wave-square"></i> Audio Examples</a>
   <a href="/blog/icst-kompositionsstudio-pre-installation/"><i class="fas fa-tools"></i> Pre-Installation</a>
   <a href="/blog/icst-kompositionsstudio-regie/"><i class="fas fa-sliders-h"></i> Regie</a>
   <a href="/residenzen/"><i class="fas fa-music"></i> Artist Residencies</a>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Tutorial on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/tutorial/</link>
+
+    <description>
+      Recent content
+      
+         in Tutorial 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/tutorial/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Ableton Live &amp; ICST Ambisonics Integration</title>
+      <link>https://ambisonics.ch/post/ableton_reaper/</link>
+      <guid>https://ambisonics.ch/post/ableton_reaper/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;abletonlive-to-icst-ambisonics-multiencoder-in-reaper&#34;&gt;AbletonLive to ICST Ambisonics MultiEncoder in Reaper&lt;/h1&gt;
+&lt;p&gt;This tutorial provides a detailed guide to recording 7th-Order Ambisonics using Ableton Live and Reaper. It is aimed at users with a basic knowledge of both programs. If you are familiar with the concepts of Ableton Live, Reaper, and Ambisonics, the steps should be straightforward. Otherwise, some sections may be challenging. In this case, it is recommended that you first learn the basics of this software and Ambisonics technology.&lt;/p&gt;
+&lt;h3 id=&#34;ableton-to-icst-multiencoder-in-reaper&#34;&gt;Ableton to ICST MultiEncoder in Reaper&lt;/h3&gt;
+&lt;p&gt;Ableton transmits audio via &amp;ldquo;BlackHole&amp;rdquo; (up to 64 channels) to Reaper&amp;rsquo;s BlackHole input devices.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_output.png&#34; alt=&#34;Ableton_outs&#34;&gt;
+The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncoder via localhost on port 50001. In Reaper, audio inputs from BlackHole (1-4) are received, while the ICST Multi-AmbiEncoder processes OSC sources (1-16).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_OSC_BlackHole.gif&#34; alt=&#34;Ableton_to_MultiEncoder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This setup allows recording B-format up to the 7th order from Ableton Live 12.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h3&gt;
+&lt;h4 id=&#34;schematic-overview&#34;&gt;Schematic Overview:&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_routing_64ch.png&#34; alt=&#34;Ableton_routing64ch&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;preparation&#34;&gt;Preparation:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://www.ableton.com/de/live/&#34;&gt;AbletonLive 12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://www.reaper.fm/&#34;&gt;Reaper (DAW)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://www.blackhole.audio/&#34;&gt;BlackHole64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download: &lt;a href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv&#34;&gt;E4L_Multi-Panner_OSC.adv&lt;/a&gt;  This is a modified panner from &lt;a href=&#34;https://github.com/EnvelopSound/EnvelopForLive/wiki&#34;&gt;EnvelopforLive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;h4 id=&#34;in-ableton-live&#34;&gt;In Ableton Live&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Create up to 64 mono/stereo tracks with audio or MIDI content.&lt;/li&gt;
+&lt;li&gt;Route outputs as external outs (1-64).&lt;/li&gt;
+&lt;li&gt;Reserve Track 64 for the LTC timecode.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: I read that there could be difficulties with bi-directional synchronization between Reaper and Ableton Live. So I decided on the stable LTC Timecode variant.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Create spatialization tracks using &amp;lsquo;E4L_Multi-Panner_OSC.adv&amp;rsquo; for automation (max 16 sources per panner).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optionally, send custom OSC spatialization data from Max to ensure consistent OSC port numbers in Reaper (port: 50001).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Max-OSC-Out2.png&#34; alt=&#34;Max-OSC | 400&#34;&gt;
+Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;in-reaper&#34;&gt;In Reaper&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a session with 63 mono tracks (Track 64 for LTC timecode).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable LTC sync input on Track 64 by right-clicking the Playbar.&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/LTC.png&#34; alt=&#34;LTC&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set all active tracks to &amp;ldquo;Record: Disable (monitor only).&amp;rdquo;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/rec_disable.png&#34; alt=&#34;Rec_disable&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Route Tracks 1-63 to ICST MultiEncoder_64.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Routing_Overview.png&#34; alt=&#34;Routing_Inputs&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When correctly routed, the source appears in the encoder radar for verification.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Configure OSC connection between Ableton and ICST MultiEncoder. Each encoder requires its own OSC port.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC-Port.png&#34; alt=&#34;OSC-Ports&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Activate OSC transmission in E4L_Multi-Panner. The ICST MultiEncoder will display moving dots when receiving OSC data.
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC_ON.png&#34; alt=&#34;OSC_ON&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Reaper press Record -Output for recording your Bformat see next image.
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec_BF.png&#34; alt=&#34;Rec_BF&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then press REC in Reaper -&amp;gt; you get the follow message &amp;ldquo;Waiting for Timecode&amp;rdquo;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec.png&#34; alt=&#34;Rec&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press play in Ableton Live to synchronize Reaper via LTC Sync (Input 64), enabling B-format 7th-order ambix recording.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move to the &lt;strong&gt;Start Marker&lt;/strong&gt; at &lt;strong&gt;01:00:000&lt;/strong&gt; (LTC has a 60&amp;rsquo; offset), then press &lt;strong&gt;Fire&lt;/strong&gt; or &lt;strong&gt;Play&lt;/strong&gt; in Ableton Live to start recording.
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Live_Reper_BF.gif&#34; alt=&#34;recoding_bf&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For more details, refer to the documentation for Ableton Live, Reaper, and the ICST MultiEncoder.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

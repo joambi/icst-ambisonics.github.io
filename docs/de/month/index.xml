@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Month on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/month/</link>
+
+    <description>
+      Recent content
+      
+         in Month 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/month/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>2025-11</title>
+      <link>https://ambisonics.ch/de/month/2025-11/</link>
+      <guid>https://ambisonics.ch/de/month/2025-11/</guid>
+      <pubDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description></description>
+
+    </item>
+    <item>
+      <title>2025-07</title>
+      <link>https://ambisonics.ch/de/month/2025-07/</link>
+      <guid>https://ambisonics.ch/de/month/2025-07/</guid>
+      <pubDate>Sat, 19 Jul 2025 13:28:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description></description>
+
+    </item>
+    <item>
+      <title>2025-05</title>
+      <link>https://ambisonics.ch/de/month/2025-05/</link>
+      <guid>https://ambisonics.ch/de/month/2025-05/</guid>
+      <pubDate>Wed, 28 May 2025 14:57:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description></description>
+
+    </item>
+    <item>
+      <title>2025-03</title>
+      <link>https://ambisonics.ch/de/month/2025-03/</link>
+      <guid>https://ambisonics.ch/de/month/2025-03/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description></description>
+
+    </item>
+
+  </channel>
+</rss>

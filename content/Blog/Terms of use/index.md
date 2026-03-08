@@ -1,6 +1,7 @@
 ---
 title: Studio Terms of Use
 description: "Studio usage terms and conditions"
+date: 2026-03-07T00:00:00
 tags: []
 weight: 8
 group: "Residents"

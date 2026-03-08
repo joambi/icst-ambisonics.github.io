@@ -16,9 +16,17 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - [The ICST Ambisonics Plugins Overview](https://joambi.github.io/icst-ambisonics.github.io/home/)
 - [Specification:](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - [Downloads:](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
-- [Video Tutorials](https://www.youtube.com/@ICSTAmbisonics)
+- [Video Tutorials](https://www.youtube.com/@ZHDK_ICST)
 - [ICST Ambisonics Listening Sessions](https://ambisonics.ch/blog/ascolta/)
 - [ICST Ambisonics UDO's](https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-ambisonics-udos-for-csound-5382)
+
+### ICST Website
+
+- [ICST Studio Overview](https://ambisonics.ch/blog/icst-composer-studio-blog/)
+- [Audio Examples](https://ambisonics.ch/blog/audio-examples/)
+- [Ambisonics 101](https://ambisonics.ch/ambisonics-101/)
+- [All Tutorials](https://ambisonics.ch/post/)
+- [Studio Downloads](https://ambisonics.ch/blog/downloads/)
 
 ---
 
@@ -38,7 +46,6 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 - [Noisemaker](https://www.noisemakers.fr/)
 - [VVAudio](https://www.vvaudio.com/)
 - [Harpex](https://harpex.net/)
-- [The Ambisonics Toolkit](https://www.ambisonictoolkit.net/)
 - [TripinLab](https://www.tripinlab.com/)
 - [SoundParticles](https://soundparticles.com/?a=PvobB)
 - [Rode](https://rode.com/de?uri=soundfield-by-rode&destination=%2Fapps%2F%7Buri%7D&status=302)
@@ -51,12 +58,12 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 ### Ambisonics Studios & Institutes
 
 - [Into The Soundfield](https://intothesoundfield.music.ox.ac.uk/)
-- [IEM](https://ambisonics.iem.at/)
+- [IEM](https://iem.at/en)
 - [IRCAM](https://forum.ircam.fr/projects/detail/spat/)
 - [ICST](https://www.zhdk.ch/forschung/icst)
 - [CCRMA](https://ccrma.stanford.edu/blogs/mzeligs/ambisonics-in-21st-century-review-of-spatial-audio-techniques)
 - [NOTAM](https://notam.no/en/studio/studio-3/)
-- [Derby.ac.uk](https://repository.derby.ac.uk/repository/search?q=Ambisonics)
+- [Derby.ac.uk](https://www.derby.ac.uk/)
 - [Future Sounding](https://www.soundingfuture.com/de/artikel/ambisonics-auf-der-suche-nach-dem-geeigneten-klang)
 - [tamlab.kunstuni-linz](https://tamlab.kunstuni-linz.at/wp-content/uploads/Practical-Ambisonics_compressed-1.pdf)
 
@@ -64,10 +71,20 @@ Institute for Computer Music and Sound Technology / (ICST) Zurich University of 
 
 - [Ambisonics (Wikipedia)](https://de.wikipedia.org/wiki/Ambisonics)
 - [ambisonic.net](https://www.ambisonic.net/)
-- [ambisonics.ch](https://ambisonics.ch/)
 - [Springer: Ambisonics Reference Entry](https://link.springer.com/referenceworkentry/10.1007/978-3-662-60357-4_25-1)
 - [Waves: Ambisonics Explained](https://www.waves.com/ambisonics-explained-guide-for-sound-engineers)
 - [Reaper Ambisonics Forum](https://forum.cockos.com/forumdisplay.php?s=75823a68d22b96a21e8025b8fea609ad&f=53)
+
+### Further Ambisonics Resources
+
+- [Ambisonics Symposium / Xchange](https://ambisonics-symposium.org/)
+- [ambiX Format Specification (ACN/SN3D)](https://iem-projects.github.io/ambix/apiref/format.html)
+- [Spatial Audio Framework (SAF)](https://github.com/leomccormack/Spatial_Audio_Framework)
+- [OpenAIR Library](https://www.openairlib.net/)
+- [RØDE SoundField Library](https://library.soundfield.com/)
+- [AES Technical Committee: Spatial Audio](https://aes.org/community/technical-council/aes-technical-committee-spatial-audio/)
+- [Omnitone (Web Ambisonics Renderer)](https://github.com/GoogleChrome/omnitone)
+- [Envelop for Live](https://github.com/EnvelopSound/EnvelopForLive)
 
 
 No guarantee of completeness

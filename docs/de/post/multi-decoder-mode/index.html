@@ -1,0 +1,1022 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="de"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]
+        |
+        ICST AmbiDecoder – Multi-Decoder Modus
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]" />
+  <meta
+    name="description"
+    content="Wie man den Multi-Decoder-Modus in ICST AmbiDecoder v3.2 für vier unabhängige Decoder und komplexe Lautsprecher-Setups nutzt."
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css" integrity="sha256-gnZ8kex8rMjku3tmSA/DOpKI6lhtiQQZWl2QqNvPOAE=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/de/post/multi-decoder-mode/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ICST AmbiDecoder – Multi-Decoder Modus">
+  <meta name="twitter:description" content="Wie man den Multi-Decoder-Modus in ICST AmbiDecoder v3.2 für vier unabhängige Decoder und komplexe Lautsprecher-Setups nutzt.">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/de/post/multi-decoder-mode/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="ICST AmbiDecoder – Multi-Decoder Modus">
+  <meta property="og:description" content="Wie man den Multi-Decoder-Modus in ICST AmbiDecoder v3.2 für vier unabhängige Decoder und komplexe Lautsprecher-Setups nutzt.">
+  <meta property="og:locale" content="de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-11-10T10:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-10T10:00:00+00:00">
+    <meta property="article:tag" content="Decoder">
+    <meta property="article:tag" content="Multi-Decoder">
+    <meta property="article:tag" content="V3.2">
+    <meta property="article:tag" content="Loudspeaker">
+    <meta property="article:tag" content="Spatial Audio">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "ICST AmbiDecoder – Multi-Decoder Modus",
+        "headline": "ICST AmbiDecoder – Multi-Decoder Modus",
+        "alternativeHeadline": "",
+        "description": "
+      Wie man den Multi-Decoder-Modus in ICST AmbiDecoder v3.2 für vier unabhängige Decoder und komplexe Lautsprecher-Setups nutzt.
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "de",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/de\/post\/multi-decoder-mode\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "dateCreated": "2025-11-10T10:00:00.00Z",
+        "datePublished": "2025-11-10T10:00:00.00Z",
+        "dateModified": "2025-11-10T10:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": {"email":"johannes.schuett@zhdk.ch","name":"Johannes Schuett"},
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/de\/post\/multi-decoder-mode\/",
+        "wordCount" : "540",
+        "genre" : [ ],
+        "keywords" : [ 
+      
+      "decoder"
+
+    
+      
+        ,
+
+      
+      "multi-decoder"
+
+    
+      
+        ,
+
+      
+      "v3.2"
+
+    
+      
+        ,
+
+      
+      "loudspeaker"
+
+    
+      
+        ,
+
+      
+      "spatial audio"
+
+    ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+	
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/de">ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST · Zurich University of the Arts</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.zhdk.ch/forschung/icst"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Zurich University of the Arts"
+            title="Zurich University of the Arts"
+          >
+            
+              <img src="/images/zhdk-logo.svg" alt="Zurich University of the Arts" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            
+              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+            target="_blank"
+            rel="noopener me"
+            aria-label="YouTube"
+            title="YouTube"
+          >
+            
+              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="1" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="1"
+                >Plugins &amp; Tools <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-plugins/"
+                      
+                      title=""
+                      >ICST AmbiPlugins Docs</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-tools/"
+                      
+                      title=""
+                      >Ambi Tools</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="2" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="2"
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/ambisonics-101/"
+                      
+                      title=""
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/post/"
+                      
+                      title=""
+                      >All Tutorials</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="3" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="3"
+                >Ascolta <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/17-ascolta/"
+                      
+                      title=""
+                      >Next Session</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/"
+                      
+                      title=""
+                      >All Sessions</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="4" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="4"
+                >Residenzen <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2025/"
+                      
+                      title=""
+                      >Residenzen 2025</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/icst-studio-residences-2026/"
+                      
+                      title=""
+                      >Residenzen 2026</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="5" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="5"
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-composer-studio-blog/"
+                      
+                      title=""
+                      >Composition Studio</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/audio-examples/"
+                      
+                      title=""
+                      >Audio Examples</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-equipment/"
+                      
+                      title=""
+                      >Equipment</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-software/"
+                      
+                      title=""
+                      >Software</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-speaker-settings/"
+                      
+                      title=""
+                      >Speaker Setup</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-regie/"
+                      
+                      title=""
+                      >Regie</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-kompositionsstudio-pre-installation/"
+                      
+                      title=""
+                      >Pre-Installation</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/downloads/"
+                      
+                      title=""
+                      >Downloads</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/"
+                      
+                      title=""
+                      >All Studio Pages</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/links/"
+              
+              title=""
+              >Links</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >DE <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/post/multi-decoder-mode/" title="EN"
+                    ><span
+                      
+                      aria-label="EN"
+                      >EN</span
+                    >
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </li>
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>ICST AmbiDecoder – Multi-Decoder Modus</h1>
+      
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  2025-11-10
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">3 Minuten zum Lesen</span>
+          </li>
+        </ul>
+      <p>Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts</p>
+<hr>
+<h1 id="multi-decoder-modus">Multi-Decoder Modus</h1>
+<p>Der <strong>Multi-Decoder Modus</strong>, eingeführt in <strong>ICST AmbiDecoder v3.2</strong>, ermöglicht es dir, bis zu <strong>vier vollständig unabhängige Decoder</strong> in einer einzelnen Plugin-Instanz auszuführen. Dies ist ideal für komplexe Lautsprechersetups, die unterschiedliche Sprecherarrays kombinieren — zum Beispiel einen Hauptambisonics-Ring zusammen mit Höhenlautsprechern, einer Subwoofer-Gruppe oder einem separaten Nahfeld-Array.</p>
+<p><img src="Multidecoder.png" alt="Multi-Decoder overview"></p>
+<hr>
+<h2 id="wann-man-den-multi-decoder-modus-verwendet">Wann man den Multi-Decoder Modus verwendet</h2>
+<p>Verwende den Multi-Decoder Modus, wenn dein Setup enthält:</p>
+<ul>
+<li><strong>Mehrere Sprecherschichten</strong> (z.B. horizontaler Ring + Höhenkuppel)</li>
+<li><strong>Mixed-Order Dekodierung</strong> (z.B. 3. Ordnung für horizontal, 1. Ordnung für Höhe)</li>
+<li><strong>Unterschiedliche Sprechergeometrien</strong>, die separate Presets benötigen</li>
+<li><strong>Unabhängige Gain- und Filtereinstellungen</strong> pro Lautsprechergruppe</li>
+</ul>
+<p>Für einfache Setups (einzelnes Array, einzelne Geometrie) ist der Standard-Single-Decoder-Modus ausreichend.</p>
+<hr>
+<h2 id="aktivierung-des-multi-decoder-modus">Aktivierung des Multi-Decoder Modus</h2>
+<ol>
+<li>Öffne das <strong>ICST AmbiDecoder</strong> Plugin in deiner REAPER FX-Kette.</li>
+<li>Im <strong>Decoder Settings</strong> Panel, finde die <strong>Multi-Decoder</strong> Schaltfläche.</li>
+<li>Aktiviere den Multi-Decoder Modus — vier Decoder-Slots (A, B, C, D) erscheinen.</li>
+</ol>
+<blockquote><p>[!Tip:]
+Jeder Decoder-Slot ist vollständig unabhängig und kann separat konfiguriert werden, ohne die anderen zu beeinflussen.</p>
+</blockquote><hr>
+<h2 id="konfiguration-jedes-decoders">Konfiguration jedes Decoders</h2>
+<p>Für jeden der vier Decoder kannst du einstellen:</p>
+<h3 id="1-name-und-farbe">1. Name und Farbe</h3>
+<ul>
+<li>Gebe jedem Decoder einen aussagekräftigen Namen (z.B. &ldquo;Ring&rdquo;, &ldquo;Height&rdquo;, &ldquo;Sub&rdquo;, &ldquo;Near&rdquo;).</li>
+<li>Weise eine benutzerdefinierte Farbe für einfache Identifikation in der Benutzeroberfläche zu.</li>
+</ul>
+<h3 id="2-lautsprecherauswahl">2. Lautsprecherauswahl</h3>
+<ul>
+<li>Jeder Decoder hat seine <strong>eigene Lautsprecherauswahl</strong>.</li>
+<li>Weise spezifische Lautsprecher aus deinem Lautsprecherpreset jedem Decoder zu.</li>
+<li>Lautsprecher können immer nur zu einem Decoder gehören.</li>
+</ul>
+<h3 id="3-ambisonics-reihenfolge">3. Ambisonics-Reihenfolge</h3>
+<ul>
+<li>Stelle die <strong>Dekodierreihenfolge unabhängig</strong> pro Decoder ein (1. bis 7. Ordnung).</li>
+<li>Niedrigere Ordnungen (1.–2.) eignen sich für spärliche oder schwierige Sprechergeometrien.</li>
+<li>Höhere Ordnungen (3.–7.) geben präzisere Ortung für dichte Arrays.</li>
+</ul>
+<h3 id="4-ambisonics-gewichtung">4. Ambisonics-Gewichtung</h3>
+<ul>
+<li>Wähle das Gewichtungsschema (z.B. MaxRe, inPhase, Basic) pro Decoder.</li>
+<li>MaxRe wird für die meisten praktischen Setups empfohlen.</li>
+</ul>
+<h3 id="5-filter">5. Filter</h3>
+<ul>
+<li>Acht Filteroptionen sind pro Decoder verfügbar.</li>
+<li>Passe pro-Decoder EQ und räumliche Filterung unabhängig an.</li>
+</ul>
+<h3 id="6-stumm-und-gain">6. Stumm und Gain</h3>
+<ul>
+<li>Jeder Decoder hat eine unabhängige <strong>Stumm-Schaltfläche</strong> und <strong>Gain-Kontrolle</strong>.</li>
+<li>Verwende Stumm, um einzelne Decoder während Setup und Tests zu isolieren.</li>
+</ul>
+<hr>
+<h2 id="routing-in-reaper">Routing in REAPER</h2>
+<p>Bei Verwendung des Multi-Decoder Modus empfängt das Plugin immer noch denselben <strong>B-Format Master Bus</strong> als Eingabe. Das Routing innerhalb des Plugins verteilt das Signal intern auf jeden Decoder.</p>
+<p>Ausgangskanäle werden sequenziell zugewiesen:</p>
+<ul>
+<li>Decoder A → Ausgänge 1–N (basierend auf seiner Lautsprecheranzahl)</li>
+<li>Decoder B → Ausgänge N+1–M</li>
+<li>Decoder C → setzt sich nach B fort</li>
+<li>Decoder D → setzt sich nach C fort</li>
+</ul>
+<p>Stelle sicher, dass dein REAPER-Track genug Ausgangskanäle konfiguriert hat, um alle Lautsprecher über alle vier Decoder zu decken.</p>
+<blockquote><p>[!Attention:]
+Überprüfe deine Track-Kanalanzahl und das Routing sorgfältig. Fehlende Kanäle führen zu stillen Lautsprechern ohne Fehlermeldung.</p>
+</blockquote><hr>
+<h2 id="lautsprecher-test">Lautsprecher-Test</h2>
+<p>Um jeden Decoder zu verifizieren:</p>
+<ol>
+<li><strong>Stumme</strong> Decoder B, C und D.</li>
+<li>Klicke auf <strong>Speaker Test</strong> auf Decoder A und durchlaufe seine Lautsprecher.</li>
+<li>Wiederhole für jeden Decoder, nachdem du ihn stummgeschaltet hast.</li>
+</ol>
+<p>Verwende <code>Shift + Control + S</code> / <code>Shift + Control + M</code> (macOS) für tastaturgestützte Solo- und Stumm-Optionen während des Tests.</p>
+<hr>
+<h2 id="beispiel-horizontaler-ring--höhenkuppel">Beispiel: Horizontaler Ring + Höhenkuppel</h2>
+<p>Ein häufiger Multi-Decoder-Anwendungsfall am ICST ist ein <strong>Oktagon-Ring</strong> (8 Lautsprecher, horizontal) kombiniert mit einer <strong>Höhenschicht</strong> (4 erhöhte Lautsprecher):</p>
+<table>
+  <thead>
+      <tr>
+          <th>Decoder</th>
+          <th>Lautsprecher</th>
+          <th>Ordnung</th>
+          <th>Gewichtung</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A</td>
+          <td>Ring (1–8)</td>
+          <td>3.</td>
+          <td>MaxRe</td>
+      </tr>
+      <tr>
+          <td>B</td>
+          <td>Height (9–12)</td>
+          <td>1.</td>
+          <td>MaxRe</td>
+      </tr>
+  </tbody>
+</table>
+<p>Dieses Setup ermöglicht eine feinabgestimmte Dekodierung für jede Schicht unabhängig, mit separater Gain-Kompensation für die Höhenlautsprecher.</p>
+<hr>
+<h2 id="weitere-ressourcen">Weitere Ressourcen</h2>
+<ul>
+<li>📖 <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/wiki">ICST AmbiDecoder Wiki</a></li>
+<li>📥 <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases">Download v3.2</a></li>
+<li>📺 <a href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins">ICST Ambisonics Videos on YouTube</a></li>
+</ul>
+<hr>
+<p><span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span></p>
+</div>
+    <div class="post__footer">
+      
+
+      
+        <span><a class="tag" href="/de/tags/decoder/">decoder</a><a class="tag" href="/de/tags/multi-decoder/">multi-decoder</a><a class="tag" href="/de/tags/v3%2e2/">v3.2</a><a class="tag" href="/de/tags/loudspeaker/">loudspeaker</a><a class="tag" href="/de/tags/spatial-audio/">spatial audio</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/terms-and-conditions/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

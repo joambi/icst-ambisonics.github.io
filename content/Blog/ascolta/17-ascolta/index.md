@@ -1,5 +1,6 @@
 ---
 title: "Upcoming ascolta Listening Sessions"
+description: "Preview of upcoming ascolta listening sessions with current schedule and program updates."
 date: 2099-12-31T00:00:00
 weight: 0
 hideDate: true

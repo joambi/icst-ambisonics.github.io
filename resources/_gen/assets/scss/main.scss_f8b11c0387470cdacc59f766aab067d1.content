@@ -1455,6 +1455,85 @@ body {
   color: #152028;
 }
 
+.home-cards {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 1.25rem;
+}
+
+@media screen and (min-width: 961px) {
+  .home-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.home-card {
+  padding: 1rem;
+  border-radius: 10px;
+}
+.theme--light .home-card {
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+}
+.theme--dark .home-card {
+  background-color: #152028;
+  border: 1px solid #464646;
+}
+.home-card h4 {
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+.home-card p {
+  margin: 0;
+  font-size: 1.45rem;
+  line-height: 1.55;
+}
+
+.home-card__actions,
+.home-accordion__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.home-accordion {
+  margin: 0.75rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.theme--light .home-accordion {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+}
+.theme--dark .home-accordion {
+  border: 1px solid #464646;
+  background-color: #152028;
+}
+.home-accordion summary {
+  cursor: pointer;
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+}
+
+.theme--light .home-accordion[open] summary {
+  border-bottom: 1px solid #eeeeee;
+}
+.theme--dark .home-accordion[open] summary {
+  border-bottom: 1px solid #464646;
+}
+
+.home-accordion__actions {
+  padding: 0.85rem 1rem 1rem;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .home-card__actions .hero__link,
+  .home-accordion__actions .hero__link {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .medium-zoom-overlay {
   position: fixed;
   top: 0;

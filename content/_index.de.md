@@ -14,20 +14,70 @@ Diese Seite richtet sich an Komponist:innen, Sounddesigner:innen, Studierende un
 
 ### Einstieg nach Zielgruppe
 
-#### Für Einsteiger:innen
-- [Schnellstart mit den ICST Ambisonics Plugins](/icst-ambisonics-plugins/04_quick_start/)
-- [Anleitungen & Grundlagen](/post/)
-- [Plugin-Dokumentation](/icst-ambisonics-plugins/)
+<div class="home-cards">
+  <section class="home-card">
+    <h4>Für Einsteiger:innen</h4>
+    <p>Kurzer Einstieg in Setup, Signalfluss und erste Projekte mit ICST Ambisonics.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
+      <a class="hero__link" href="/post/">Anleitungen</a>
+      <a class="hero__link" href="/ambisonics-101/">Ambisonics 101</a>
+    </div>
+  </section>
 
-#### Für ICST-Residents
-- [ICST Studio Residencies](/residenzen/)
-- [ICST Composer Studio](/blog/icst-composer-studio-blog/)
-- [Studio (Blog)](/blog/)
+  <section class="home-card">
+    <h4>Für ICST-Residents</h4>
+    <p>Studio-Kontext, Residency-Abläufe und Infrastruktur für Produktion vor Ort.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/residenzen/">Residencies</a>
+      <a class="hero__link" href="/blog/icst-composer-studio-blog/">Composer Studio</a>
+      <a class="hero__link" href="/blog/">Studio-Blog</a>
+    </div>
+  </section>
 
-#### Für Ambisonics-Nerds
-- [How It Works](/icst-ambisonics-plugins/03_how_it_works/)
-- [OSC-Syntax für den AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
-- [Downloads (Releases)](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+  <section class="home-card">
+    <h4>Für Ambisonics-Nerds</h4>
+    <p>Technische Tiefe zu Decoder-Logik, OSC-Workflows und Produktionsdetails.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/03_how_it_works/">How It Works</a>
+      <a class="hero__link" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC-Syntax</a>
+      <a class="hero__link" href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank" rel="noopener noreferrer">Releases</a>
+    </div>
+  </section>
+</div>
+
+### Mobile Quick Access
+
+<details class="home-accordion">
+  <summary>Residencies</summary>
+  <div class="home-accordion__actions">
+    <a class="hero__link hero__link--primary" href="/residenzen/">Alle Residencies</a>
+    <a class="hero__link" href="/residenzen/icst-studio-residences-2026/">Residencies 2026</a>
+    <a class="hero__link" href="/residenzen/icst-studio-residences-2025/">Residencies 2025</a>
+  </div>
+</details>
+
+<details class="home-accordion">
+  <summary>Equipment</summary>
+  <div class="home-accordion__actions">
+    <a class="hero__link hero__link--primary" href="/blog/icst-kompositionsstudio-equipment/">Equipment Overview</a>
+    <a class="hero__link" href="/blog/icst-kompositionsstudio-regie/">Regie</a>
+    <a class="hero__link" href="/blog/icst-kompositionsstudio-software/">Software</a>
+  </div>
+</details>
+
+<details class="home-accordion">
+  <summary>Downloads</summary>
+  <div class="home-accordion__actions">
+    <a class="hero__link hero__link--primary" href="/blog/downloads/">Studio Downloads</a>
+    <a class="hero__link" href="/icst-ambisonics-plugins/08_downloads/">Plugin Downloads</a>
+    <a class="hero__link" href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a>
+  </div>
+</details>
+
+### Neu: Ambisonics 101
+Ein kompakter Einstieg mit den Basics zu Ambisonics, B-Format, typischen Setups und Kopfhörer-vs.-Lautsprecher-Workflows.  
+→ [Ambisonics 101](/ambisonics-101/)
 
 ---
 

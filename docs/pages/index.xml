@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Pages on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/pages/</link>
+
+    <description>
+      Recent content
+      
+         in Pages 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <atom:link href="https://ambisonics.ch/pages/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title></title>
+      <link>https://ambisonics.ch/pages/icst-decoder/</link>
+      <guid>https://ambisonics.ch/pages/icst-decoder/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;hr&gt;
+&lt;p&gt;Das Decoding ist die zentrale Schnittstelle zwischen dem Ambisonics-B-Format und der physischen Lautsprecherwiedergabe – seine Qualität entscheidet über räumliche Präzision, Tiefenstaffelung und Lokalisation.&lt;/p&gt;
+&lt;h1 id=&#34;decoder-for-speakers&#34;&gt;Decoder for Speakers&lt;/h1&gt;
+&lt;p&gt;Das Dekodieren ist eine &lt;strong&gt;Schlüsselfunktion im Umgang mit 3D-Audio im Ambisonics-Format&lt;/strong&gt;. Von der Qualität des Decoders hängt maßgeblich ab, wie präzise und räumlich korrekt ein aufgezeichnetes oder synthetisch erzeugtes B-Format wiedergegeben wird.
+Wenn sie mit Kopfhörern arbeiten, haben sie heute fast keine Probleme mehr, da die Algorithmen der Dekodierung vom B-Format ins Binaural-Format mit den verschiedensten Binaural-Plugins von IEM, Sparta und anderen Herstellern sehr gut funktionieren.&lt;/p&gt;
+&lt;p&gt;Mit dem &lt;strong&gt;ICST Ambisonics Decoder&lt;/strong&gt; steht Ihnen ein leistungsfähiges und praxisnahes Werkzeug zur Verfügung, das Ihnen ein leichteres Arbeiten beim Dekodieren mit den verschiedensten Lautsprecher-Arrays ermöglicht. So lassen sich Standardkonfigurationen wie Quadro, Octagon, Atmos 7.1.4 etc. sowie nicht-symmetrische Lautsprecheraufstellungen beispielhaft zeigen.
+Der Decoder wurde auf Basis umfangreicher Erfahrungen im Studio- und Live-Einsatz entwickelt, kontinuierlich erprobt und optimiert. Ziel war es, ein flexibles, zuverlässiges und klanglich präzises Decoding-System für unterschiedlichste Lautsprecher-Setups bereitzustellen.&lt;/p&gt;
+&lt;p&gt;In diesem Blog möchte ich Ihnen die &lt;strong&gt;zentralen Funktionen, Besonderheiten und Spezialitäten&lt;/strong&gt; des ICST-Ambisonics-Decoders im Detail vorstellen und anhand praktischer Beispiele erläutern.&lt;/p&gt;
+&lt;p&gt;Die &lt;strong&gt;ICST Ambisonics Decoder Plugins&lt;/strong&gt; sind verfügbar als:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VST3&lt;/li&gt;
+&lt;li&gt;AU (Component)&lt;/li&gt;
+&lt;li&gt;LV2 &lt;em&gt;(experimentell – nicht für produktiven Einsatz empfohlen)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Weitere Informationen zur Installation:&lt;br&gt;
+&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/&#34;&gt;https://ambisonics.ch/icst-ambisonics-plugins/&lt;/a&gt;
+Hinweise zur &lt;strong&gt;Installation der ICST Ambisonics Plugins&lt;/strong&gt; finden Sie auf dieser Blog-Seite:&lt;br&gt;
+&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/&#34;&gt;ambisonics.ch&lt;/a&gt;
+Alternativ bietet dieses Video eine anschauliche Schritt-für-Schritt-Einführung:&lt;br&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=2GXb5tbqW1Y&#34;&gt;https://www.youtube.com/watch?v=2GXb5tbqW1Y&lt;/a&gt;
+Wiki ICST Ambisonics Plugins:
+&lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&#34;&gt;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Alle Beispiele werden in der DAW Reaper durchgeführt, da Reaper bis zu 128 Audiospuren pro Track verarbeitet. Dies macht Reaper zur prädestinierten DAW für das Arbeiten mit Ambisonics und 3D-Audio.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;overview-icst-ambisonics-decoder&#34;&gt;Overview ICST Ambisonics Decoder&lt;/h3&gt;
+&lt;p&gt;![[CleanShot 2026-02-11 at 10.31.18@2x.png]]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Radar Horizontal Ansicht der Laustprecher-Anordnung (ICST Kompositionsstudio)&lt;/li&gt;
+&lt;li&gt;Vertikale Radaransicht (Z-Achse)&lt;/li&gt;
+&lt;li&gt;Speaker-Parmeter:
+&lt;ul&gt;
+&lt;li&gt;CH 1 = index&lt;/li&gt;
+&lt;li&gt;Name = Speakername&lt;/li&gt;
+&lt;li&gt;Cartesian (XYZ) &amp;amp; Polar (AED) Koordinates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;callout callout--tip&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;🔥&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Tip&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;p&gt;Doppelklick in die Parameternfelder um direkt zu schreiben&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;p&gt;Settings:![[CleanShot 2026-02-11 at 11.45.08@2x.png |25]]
+4. Preferences &amp;amp; Help
+- Zahnrad = Öffnen des &amp;ldquo;Speaker settings&amp;rdquo; Fensters
+- &amp;ldquo;Fragezeichen&amp;rdquo; = öffnet das Help-Fenster
+5. Speaker-Parmeter Editor
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 10.59.50@2x.png]]&lt;/p&gt;
+&lt;h4 id=&#34;actions-affecting-sound&#34;&gt;Actions affecting sound:&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Action&lt;/th&gt;
+          &lt;th&gt;Mouse/Keyboard&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mute selected source/speaker&lt;/td&gt;
+          &lt;td&gt;Ctrl + Shift + m&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Solo selected source/speaker&lt;/td&gt;
+          &lt;td&gt;Ctrl + Shift + s&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;callout callout--note&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;💬&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Example&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;p&gt;Video ICST Ambisonics Plugins Overview
+&lt;a href=&#34;https://www.youtube.com/watch?v=xkauhHMYt5k&#34;&gt;https://www.youtube.com/watch?v=xkauhHMYt5k&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;div class=&#34;callout callout--info&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;ℹ️&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Info&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;p&gt;Wiki ICST Ambisonics Plugins
+&lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&#34;&gt;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;workflow-ambisonics-decoding-in-reaper&#34;&gt;Workflow Ambisonics Decoding in Reaper&lt;/h3&gt;
+&lt;p&gt;![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-10 at 17.28.25@2x.png]]
+Der Workflow in Reaper: schematisch dargestellt.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Erstellen Sie in Reaper einen 3x einen 64-kanaligen Audio-Track
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-10 at 17.36.04@2x.png]]
+&lt;ul&gt;
+&lt;li&gt;B-Format Source (1st to 7th order ambisonics file)&lt;/li&gt;
+&lt;li&gt;Ambisonics Bus collects all B-Formats and hosted the Mastering FX&amp;rsquo;s.&lt;/li&gt;
+&lt;li&gt;ICST AmbiDecoder host for the ICST AmbiDecoder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;icst-ambidecoder&#34;&gt;ICST AmbiDecoder&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add a ICST AmbiDecoder Plugin in the &amp;ldquo;ICST AmbiDecoder&amp;rdquo;
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-10 at 17.54.52@2x.png]]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Standart mässig öffnet sich der Decoder mit dem Stereo (90°) Setting.
+![[content/ICST Ambisonics Plugins/08_icst_decoder/Choose_Quadro.gif]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Um ihr Lautsprecher-Setting zu finden, gehen Sie ins Decoder &amp;ldquo;Speaker settings“-Fenster, klicken Sie auf das &amp;ldquo;Zahnrad“ und dann auf „Speaker“, um die &amp;ldquo;Speaker settings&amp;rdquo; zu öffnen. Wählen Sie eines der vielen Standard-Settings oder geben Sie Ihre eigene Lautsprecherkonfiguration ein. (siehe next gif)
+![[content/ICST Ambisonics Plugins/08_icst_decoder/Speaker_Editing.gif]]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aktivieren und öffnen sie die &amp;ldquo;Filter&amp;rdquo; um jeden Lautsprecher separat zu filtern. (optional)
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 11.05.51@2x.png]]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Folgende Filter stehen zu Verfügung. (siehe Bild unten)
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 11.11.32@2x.png]]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Im untenstehend Bild sehen sie das ausgemessene Lautsprecher Setup des ICST Kompositionsstudio.
+![[CleanShot 2026-02-11 at 11.13.46@2x.png]]&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unter &amp;ldquo;Speakers&amp;rdquo; können Sie die Speaker-Parameter direkt editieren und anschließend als Preset speichern.
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-10 at 18.57.37@2x.png]]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unter &amp;ldquo;Ambisonics&amp;rdquo; können sie die Channel weights wählen, sowie die Ambisonics Order. (max 7th-order)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In &amp;ldquo;Ambisonics Order&amp;rdquo; können sie leicht ihre gewünschte Ordnung wählen.
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 09.30.18@2x.png]]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Skaliere die Raumgrössen Verhältnisse und die Lautsprecher Koordinaten als auch die Laufzeit-Delays werden automatisch mitgerechnet.
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 10.19.42@2x.png]]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ein wichtiges Features ist die direkt eingebaute Audio-test Funktion:&lt;/p&gt;
+&lt;h3 id=&#34;8-audio-test&#34;&gt;8. Audio Test&lt;/h3&gt;
+&lt;p&gt;![[content/ICST Ambisonics Plugins/08_icst_decoder/Decoder Audio test.gif]]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Der Decoder erlaubt einen direkten Audio-test mit Pinknoise. Es lassen sich die einzelnen Lautsprecher manuell testen und/oder mit dem &amp;ldquo;test all speakers&amp;rdquo; in serie nacheinander im Uhrzeigersinn.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mit dem KeyShortcut &amp;ldquo;shift+ctrl. &amp;amp; M&amp;rdquo; lässt sich eine Gruppe oder einzelne Lautsprecher muten. Mit &amp;ldquo;shift+ctrl. &amp;amp; S&amp;rdquo; auch Solo schalten.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;save--load-presets&#34;&gt;Save &amp;amp; Load Presets&lt;/h3&gt;
+&lt;p&gt;![[content/ICST Ambisonics Plugins/08_icst_decoder/save decoder presets.gif]]&lt;/p&gt;
+&lt;div class=&#34;callout callout--tip&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;🔥&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Tip&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;p&gt;Export the speaker configuration as a txt file and load it into the external ‘ambidecode~’ with a ‘coll’.
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 14.23.51@2x.png]]&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;h4 id=&#34;import-speaker-settingxml&#34;&gt;import speaker-setting.xml&lt;/h4&gt;
+&lt;h1 id=&#34;overview-icst-multidecoder&#34;&gt;Overview ICST MultiDecoder&lt;/h1&gt;
+&lt;p&gt;![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 13.46.56@2x.png]]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Aktivate the Multi-Decoder mode
+&lt;ul&gt;
+&lt;li&gt;Dieses Flag kann auch zum Vergleich aktiviert &amp;amp; deaktiviert werden.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bis zu vier separate Decoders können hier gewählt und konfiguriert werden.                       (Exemple: Höhe/Mitte/Unten)&lt;/li&gt;
+&lt;li&gt;Jeder der gewählten Decoder kann folgende Parameter separat handeln:
+&lt;ul&gt;
+&lt;li&gt;Lautsprecher Auswahl
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 13.55.43@2x.png]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Selection of the ambisonics sequence and its weighting
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 13.59.16@2x.png]]&lt;/li&gt;
+&lt;li&gt;Jede Decodereinheit kann eine eigene spezifische Filtrierung erhalten. Zum Beispiel für die oberen Lautsprecher, wie im folgenden Bild erläutert.
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 14.05.58@2x.png]]
+Neben den Ambisonics-Parametern lassen sich auch diese Audio-parameter getrennt einstellen:
+![[content/ICST Ambisonics Plugins/08_icst_decoder/CleanShot 2026-02-11 at 14.09.04@2x.png]]
+&lt;ol&gt;
+&lt;li&gt;Die Filter können pro Decodereinheit aktiviert oder deaktiviert werden.&lt;/li&gt;
+&lt;li&gt;Jede Decodereinheit verfügt über ihr eigenes Volumen.&lt;/li&gt;
+&lt;li&gt;Mute/UnMute&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Ambiencoder on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/ambiencoder/</link>
+
+    <description>
+      Recent content
+      
+         in Ambiencoder 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Sat, 19 Jul 2025 13:28:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/ambiencoder/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST AmbiEncoder – OSC Syntax</title>
+      <link>https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/</link>
+      <guid>https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;osc-syntax-for-the-icst-ambiencoder-plugin&#34;&gt;OSC Syntax for the ICST AmbiEncoder Plugin&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; supports &lt;strong&gt;OSC&lt;/strong&gt; and &lt;strong&gt;JavaScript&lt;/strong&gt;, enabling seamless communication with OSC tools such as &lt;strong&gt;TouchOSC, IanniX, MaxMSP&lt;/strong&gt;, and other OSC-enabled software.&lt;/p&gt;
+&lt;h3 id=&#34;how-it-works&#34;&gt;&lt;strong&gt;How It Works&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;&amp;lsquo;OSC In&amp;rsquo;&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png&#34; alt=&#34;OSC IN-OUT&#34;&gt;&lt;/p&gt;
+&lt;p&gt;_Figure: Encoder Setting &amp;lsquo;OSC In&amp;rsquo; receives over the port 50001&lt;/p&gt;
+&lt;p&gt;Find all information in the &lt;strong&gt;Help&lt;/strong&gt; section by clicking the question mark (&lt;strong&gt;?&lt;/strong&gt;).&lt;/p&gt;
+&lt;h4 id=&#34;osc-in&#34;&gt;&lt;strong&gt;OSC In&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Receive OSC&lt;/strong&gt;: Receive OSC commands on the defined port (default: 50001). The full OSC specification is available in the plugin’s Help section.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Send Positions for External Usage&lt;/strong&gt;: This function sends audio source positions as OSC messages to a defined target/port. Messages trigger position changes, and the update rate is limited to &lt;strong&gt;20Hz (50ms).&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;osc-syntax--address-specification&#34;&gt;&lt;strong&gt;OSC Syntax &amp;amp; Address Specification&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;1-accessing-osc-specifications&#34;&gt;&lt;strong&gt;1. Accessing OSC Specifications&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Click the &lt;strong&gt;question mark&lt;/strong&gt; in the ICST AmbiEncoder.
+&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/OSX-Syntax.png&#34; alt=&#34;osc-in-help&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure: OSC specifications in the Help section.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Available sections:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Help (&lt;strong&gt;?&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;OSC Syntax&lt;/li&gt;
+&lt;li&gt;Sections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-incoming-osc-messages&#34;&gt;&lt;strong&gt;2. Incoming OSC Messages&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Messages can be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Index-based&lt;/strong&gt; (source index), e.g., &lt;code&gt;1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name-based&lt;/strong&gt; (source name), e.g., &lt;code&gt;flute&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;set-source-position-aed-format&#34;&gt;&lt;strong&gt;Set Source Position (AED Format)&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;	/icst/ambi/source/aed [ChannelName] [Azimuth] [Elevation] [Distance]
+	/icst/ambi/source/aed &amp;#39;S1&amp;#39; 45 10 0.8
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;set-source-position-xyz-format&#34;&gt;&lt;strong&gt;Set Source Position (XYZ Format)&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;	/icst/ambi/source/xyz [ChannelName] [X] [Y] [Z]
+	/icst/ambi/source/xyz &amp;#39;S2&amp;#39; 0.2 0.2 0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The channel name (e.g S1, S2) will be sent as &lt;strong&gt;symbol&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;set-source-index-position-aed-format&#34;&gt;&lt;strong&gt;Set Source (Index) Position (AED Format)&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/sourceindex/aed [ChannelIndex] [Azimuth] [Elevation] [Distance]
+/icst/ambi/sourceindex/aed 1 45 10 0.8
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;set-source-index-position-xyz-format&#34;&gt;&lt;strong&gt;Set Source (Index) Position (XYZ Format)&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/sourceindex/xyz [ChannelIndex] [X] [Y] [Z]
+/icst/ambi/sourceindex/xyz 2 0.2 0.2 0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Channel indices are sent as &lt;strong&gt;integers&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sending-positions-for-external-usage&#34;&gt;&lt;strong&gt;Sending Positions for External Usage&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;&amp;lsquo;OSC Out&amp;rsquo;&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png&#34; alt=&#34;OSC IN-OUT&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The ICST AmbiPlugins standard format sends &lt;strong&gt;source names as symbols&lt;/strong&gt;. Max users should define a &lt;strong&gt;Custom OSC Message&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/sourceindex/xyz {i} {x} {y} {z}
+/icst/ambi/sourceindex/aed {i} {a} {e} {d}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/osc.png&#34; alt=&#34;OSC-Out&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Figure: Custom &amp;lsquo;OSC Out&amp;rsquo; Editor&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;internal-osc-communication&#34;&gt;&lt;strong&gt;Internal OSC Communication&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;To send &lt;strong&gt;all AmbiEncoder movements&lt;/strong&gt; to the ICST AmbiDecoder:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Deactivate &lt;strong&gt;Speaker Edit Mode&lt;/strong&gt; in the AmbiDecoder.&lt;/li&gt;
+&lt;li&gt;Activate the OSC port.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/intern_osc2.png&#34; alt=&#34;Edit_off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/aktivate_osc.png&#34; alt=&#34;Intern_osc_port&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/Intern_osc.png&#34; alt=&#34;OSC_internal&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now, the AmbiDecoder receives &lt;strong&gt;all OSC messages&lt;/strong&gt; from all connected AmbiEncoders.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;steps-to-send-osc-messages&#34;&gt;&lt;strong&gt;Steps to Send OSC Messages&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;AmbiEncoder can also send most of its parameters via OSC.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/external_osc.png&#34; alt=&#34;External-osc&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Open the question mark before the presets to get detailed help information.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Enable &lt;strong&gt;“Send Positions for External Usage”&lt;/strong&gt; in the settings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the &lt;strong&gt;Targets&lt;/strong&gt; section:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enable or disable OSC transmission.&lt;/li&gt;
+&lt;li&gt;Define the &lt;strong&gt;Host IP address&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select a &lt;strong&gt;Port&lt;/strong&gt; (default: &lt;strong&gt;50001&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;Double-click &lt;strong&gt;OSC messages&lt;/strong&gt; to edit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If participating in an &lt;strong&gt;internal FX learning program&lt;/strong&gt;, select &lt;strong&gt;“Continuous”&lt;/strong&gt; mode.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;Help (?)&lt;/strong&gt; for detailed OSC information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add or delete OSC messages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Save or load OSC messages in &lt;strong&gt;Presets&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>MaxMSP &amp; ICST AmbiEncoder – OSC Communication</title>
+      <link>https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</link>
+      <guid>https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;bidirectional-osc-communication-with-maxmsp&#34;&gt;Bidirectional OSC Communication with MaxMSP&lt;/h1&gt;
+&lt;p&gt;Generate motion data in Max and send it via OSC to the &lt;em&gt;ICST AmbiEncoder&lt;/em&gt; in your DAW. Alternatively, transfer a motion composition from your DAW to the &lt;em&gt;icst.ambisonics-externals&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;required-software&#34;&gt;&lt;strong&gt;Required Software:&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MaxMSP v.8.0+&lt;/strong&gt; → &lt;a href=&#34;http://cycling74.com&#34;&gt;cycling74.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ICST Ambisonics Tools v3&lt;/strong&gt; → &lt;a href=&#34;http://cycling74.com&#34;&gt;cycling74.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ICST Ambisonics Plugins (VST3/AU)&lt;/strong&gt; → &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;ICST AmbiPlugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reaper (DAW)&lt;/strong&gt; → &lt;a href=&#34;http://reaper.fm/download.php&#34;&gt;reaper.fm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;setup-guide&#34;&gt;&lt;strong&gt;Setup Guide:&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;1-configure-osc-in-icst-ambiencoder&#34;&gt;1. Configure OSC in ICST AmbiEncoder&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;em&gt;ICST AmbiEncoder&lt;/em&gt; in an FX slot and navigate to &lt;strong&gt;Encoder Settings&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Under &lt;strong&gt;OSC In&lt;/strong&gt;, activate the OSC input port (e.g., &lt;code&gt;50001&lt;/code&gt;).
+&lt;img src=&#34;https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-port.png&#34; alt=&#34;OSC-IN&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click &lt;strong&gt;OSC Out&lt;/strong&gt; and enable the OSC output port.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Uses &lt;strong&gt;ICST AmbiPlugins Standard XYZ Index&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Max demo patch listens for:
+&lt;code&gt;&#39;/icst/ambi/sourceindex/xyz&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-out.png&#34; alt=&#34;OSC-OUT&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-open-maxmsp-and-load-the-patch&#34;&gt;2. Open MaxMSP and Load the Patch&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Find the &lt;em&gt;OSC communication with ICST plugins in DAW&lt;/em&gt; patch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See the demo Gifs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.gif&#34; alt=&#34;Max_Reaper&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next Gif: How it works:
+&lt;img src=&#34;https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.gif&#34; alt=&#34;Max-AmbiEnc&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sending-absolute-angles-euler-coordinates&#34;&gt;Sending Absolute Angles (Euler Coordinates)&lt;/h2&gt;
+&lt;p&gt;To send &lt;strong&gt;absolute angles&lt;/strong&gt; using &lt;strong&gt;Euler coordinates&lt;/strong&gt; from MaxMSP to the ICST AmbiEncoder, use the following OSC message format:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/source/euler [ChannelName] [Yaw] [Pitch] [Roll]
+/icst/ambi/source/euler &amp;#39;S1&amp;#39; 30 15 5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For &lt;strong&gt;index-based addressing&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/icst/ambi/sourceindex/euler [ChannelIndex] [Yaw] [Pitch] [Roll]
+/icst/ambi/sourceindex/euler 1 30 15 5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Yaw&lt;/code&gt; (Azimuth): Horizontal rotation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Pitch&lt;/code&gt; (Elevation): Vertical tilt&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Roll&lt;/code&gt;: Rotation around the forward axis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST AmbiEncoder – OSC to FX Mapping</title>
+      <link>https://ambisonics.ch/post/osc-2-fx/</link>
+      <guid>https://ambisonics.ch/post/osc-2-fx/</guid>
+      <pubDate>Fri, 16 May 2025 09:44:58 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;icst-ambiencoder-sends-osc-to-fx-plugins-parameter&#34;&gt;ICST AmbiEncoder sends OSC to FX-Plugins-parameter&lt;/h1&gt;
+&lt;h3 id=&#34;integrating-icst-ambiencoder-with-iem-fdnreverb-via-osc&#34;&gt;Integrating ICST AmbiEncoder with IEM FdnReverb via OSC&lt;/h3&gt;
+&lt;p&gt;This example demonstrates a simple synchronization between &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; and &lt;strong&gt;IEM Ambisonics plugins&lt;/strong&gt;, using &lt;strong&gt;FdnReverb&lt;/strong&gt; to apply distance-dependent reverb. The &lt;strong&gt;IEM plugins&amp;rsquo; OSC interface&lt;/strong&gt; makes this process straightforward.&lt;/p&gt;
+&lt;h3 id=&#34;osc--osc-communication&#34;&gt;OSC &amp;lt;&amp;ndash;&amp;gt; OSC Communication&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;FdnReverb&lt;/strong&gt; (by IEM) is a CPU-efficient reverb for B-format. The goal is to &lt;strong&gt;increase reverb as the source moves further away&lt;/strong&gt; in the spatialization.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-2-fx/FX-Reverb_osc.gif&#34; alt=&#34;OSC to FX-Reverb&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1-set-up-the-daw-reaper&#34;&gt;1. Set Up the DAW (Reaper)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Create three tracks:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ICST Decoder&lt;/strong&gt; → Stereo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ICST Encoder (Mono/Panner)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IEM FdnReverb&lt;/strong&gt; → Reverb processing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-configure-osc-communication&#34;&gt;2. Configure OSC Communication&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; settings and navigate to the &lt;strong&gt;OSC window&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enable &lt;strong&gt;OSC Send&lt;/strong&gt; for external use.&lt;/li&gt;
+&lt;li&gt;Add the &lt;strong&gt;Dry/Wet parameter&lt;/strong&gt; from &lt;strong&gt;IEM FdnReverb&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OSC Input for IEM FdnReverb:&lt;/strong&gt;
+&lt;code&gt;/FdnReverb/dryWet {d}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In &lt;strong&gt;IEM FdnReverb&lt;/strong&gt;, activate the &lt;strong&gt;OSC Listener&lt;/strong&gt; (e.g., Port: 9001).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;IEM OSC&lt;/strong&gt;, set the port number, and press &lt;strong&gt;Connect&lt;/strong&gt; (should turn green when active).&lt;/li&gt;
+&lt;li&gt;Moving the &lt;strong&gt;panner&lt;/strong&gt; in ICST AmbiEncoder will now dynamically adjust the &lt;strong&gt;Dry/Wet&lt;/strong&gt; parameter in FdnReverb.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As the distance increases, reverb intensity will also increase. Experiment with other reverb parameters for additional effects.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST AmbiPlugins &amp; Grapes – 3D Control</title>
+      <link>https://ambisonics.ch/post/icst-grapes/</link>
+      <guid>https://ambisonics.ch/post/icst-grapes/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://grapes-3d.com/&#34;&gt;Grapes 3D Control&lt;/a&gt; is a handy addition to the ICST Ambisonics plugins.
+Grapes come as a standalone and VST3 and can be operated directly in the DAW (Reaper) in sync.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-grapes/Grapes.gif&#34; alt=&#34;Grapes&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;advantages-of-grapes-3d-control&#34;&gt;Advantages of Grapes 3D Control&lt;/h3&gt;
+&lt;p&gt;A major advantage of this method is that the 3D spatial sound control does not have to be recorded in the DAW. Instead, it is sent to the ICST AmbiEncoders via OSC from Grapes. This means that the spatial design remains flexible and can also be interpreted with other spatialization tools such as LISA, Dolby Atmos or binaural audio playback.&lt;/p&gt;
+&lt;p&gt;For more information, see: &lt;a href=&#34;https://grapes-3d.com/&#34;&gt;https://grapes-3d.com/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST AmbiPlugins &amp; GyrOSC</title>
+      <link>https://ambisonics.ch/post/gyrosc/</link>
+      <guid>https://ambisonics.ch/post/gyrosc/</guid>
+      <pubDate>Wed, 28 May 2025 14:57:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;ICST MultiEncoder and iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GyrOSC&lt;/strong&gt; is a lightweight utility that sends motion sensor data (from your iPhone, iPod Touch, or iPad) over a local wireless network to any OSC-compatible host application. It allows you to control live audio or video applications using your device&amp;rsquo;s built-in gyroscope, accelerometer, compass, and altimeter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/gyrOSC.png&#34; alt=&#34;GyrOSC&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The following GIF demonstrates how the ICST AmbiEncoder receives OSC data from the GyrOSC app.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyroOSC_Demo.gif&#34; alt=&#34;Example video:&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;how-it-works&#34;&gt;How It Works:&lt;/h3&gt;
+&lt;p&gt;This tutorial provides a step-by-step guide on using the iOS app &lt;em&gt;GyrOSC&lt;/em&gt; with the ICST Ambisonics Encoder.&lt;/p&gt;
+&lt;h4 id=&#34;setting-up-the-gyrosc-app&#34;&gt;Setting Up the GyrOSC App:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;a href=&#34;https://apps.apple.com/us/app/gyrosc/id418751595&#34;&gt;GyrOSC app&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Configure the app as follows:
+&lt;ul&gt;
+&lt;li&gt;Enable &lt;em&gt;Gravity&lt;/em&gt; (disable all other sensors).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/Gyro_grav.jpeg&#34; alt=&#34;Gyro_01&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;osc-configuration-in-gyrosc-app&#34;&gt;OSC Configuration in GyrOSC App:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Enter the IP address of your machine in field (1).&lt;/li&gt;
+&lt;li&gt;The default port number for the ICST Ambisonics Encoder is 50001 (field 2).&lt;/li&gt;
+&lt;li&gt;Choose the index (source-number) for the plugin in field (3).&lt;/li&gt;
+&lt;li&gt;Field (4) shows the OSC message sent by GyrOSC.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/Gyro_Config.jpeg&#34; alt=&#34;GyrOSC_Config&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The GyrOSC app will send the &amp;lsquo;Gravity&amp;rsquo; data via OSC (port 50001) to the ICST MultiEncoder.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-the-icst-ambisonics-encoder-plugin&#34;&gt;Setting Up the ICST Ambisonics Encoder Plugin:&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/Reaper_GyrOSC.png&#34; alt=&#34;Reaper_GyrOSC&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the ICST AmbiEncoder_64 plugin.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Access the Encoder Settings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open the &lt;em&gt;OSC IN&lt;/em&gt; section and enable OSC-IN (port: 50001).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Double-click in the &lt;em&gt;OSC-Message&lt;/em&gt; field and enter:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/gyrosc/{i}/grav {x} {y} {z}&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable the plugin by selecting &lt;em&gt;en&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move your iPhone to generate motion data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;inspirations&#34;&gt;Inspirations:&lt;/h1&gt;
+&lt;h3 id=&#34;osc-swarm&#34;&gt;OSC-Swarm&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;OSC-Message:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/gyrosc/1/grav&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;JS-Code:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s.setXYZ(1, s.arg(2), -s.arg(1), 0); for(i = 2; i &amp;lt;= 8; i++) s.setXYZ(i, s.arg(2)+Math.random()*0.2, -s.arg(1) + Math.random()* 0.2, 0)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyrOSC-SWARM.gif&#34; alt=&#34;OSC-Swarm&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Ableton Live &amp; ICST Ambisonics Integration</title>
+      <link>https://ambisonics.ch/post/ableton_reaper/</link>
+      <guid>https://ambisonics.ch/post/ableton_reaper/</guid>
+      <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;abletonlive-to-icst-ambisonics-multiencoder-in-reaper&#34;&gt;AbletonLive to ICST Ambisonics MultiEncoder in Reaper&lt;/h1&gt;
+&lt;p&gt;This tutorial provides a detailed guide to recording 7th-Order Ambisonics using Ableton Live and Reaper. It is aimed at users with a basic knowledge of both programs. If you are familiar with the concepts of Ableton Live, Reaper, and Ambisonics, the steps should be straightforward. Otherwise, some sections may be challenging. In this case, it is recommended that you first learn the basics of this software and Ambisonics technology.&lt;/p&gt;
+&lt;h3 id=&#34;ableton-to-icst-multiencoder-in-reaper&#34;&gt;Ableton to ICST MultiEncoder in Reaper&lt;/h3&gt;
+&lt;p&gt;Ableton transmits audio via &amp;ldquo;BlackHole&amp;rdquo; (up to 64 channels) to Reaper&amp;rsquo;s BlackHole input devices.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_output.png&#34; alt=&#34;Ableton_outs&#34;&gt;
+The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncoder via localhost on port 50001. In Reaper, audio inputs from BlackHole (1-4) are received, while the ICST Multi-AmbiEncoder processes OSC sources (1-16).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_OSC_BlackHole.gif&#34; alt=&#34;Ableton_to_MultiEncoder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This setup allows recording B-format up to the 7th order from Ableton Live 12.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h3&gt;
+&lt;h4 id=&#34;schematic-overview&#34;&gt;Schematic Overview:&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_routing_64ch.png&#34; alt=&#34;Ableton_routing64ch&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;preparation&#34;&gt;Preparation:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://www.ableton.com/de/live/&#34;&gt;AbletonLive 12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://www.reaper.fm/&#34;&gt;Reaper (DAW)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://www.blackhole.audio/&#34;&gt;BlackHole64&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download: &lt;a href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv&#34;&gt;E4L_Multi-Panner_OSC.adv&lt;/a&gt;  This is a modified panner from &lt;a href=&#34;https://github.com/EnvelopSound/EnvelopForLive/wiki&#34;&gt;EnvelopforLive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;setup&#34;&gt;Setup&lt;/h3&gt;
+&lt;h4 id=&#34;in-ableton-live&#34;&gt;In Ableton Live&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Create up to 64 mono/stereo tracks with audio or MIDI content.&lt;/li&gt;
+&lt;li&gt;Route outputs as external outs (1-64).&lt;/li&gt;
+&lt;li&gt;Reserve Track 64 for the LTC timecode.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: I read that there could be difficulties with bi-directional synchronization between Reaper and Ableton Live. So I decided on the stable LTC Timecode variant.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Create spatialization tracks using &amp;lsquo;E4L_Multi-Panner_OSC.adv&amp;rsquo; for automation (max 16 sources per panner).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optionally, send custom OSC spatialization data from Max to ensure consistent OSC port numbers in Reaper (port: 50001).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Max-OSC-Out2.png&#34; alt=&#34;Max-OSC | 400&#34;&gt;
+Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;in-reaper&#34;&gt;In Reaper&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a session with 63 mono tracks (Track 64 for LTC timecode).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable LTC sync input on Track 64 by right-clicking the Playbar.&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/LTC.png&#34; alt=&#34;LTC&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set all active tracks to &amp;ldquo;Record: Disable (monitor only).&amp;rdquo;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/rec_disable.png&#34; alt=&#34;Rec_disable&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Route Tracks 1-63 to ICST MultiEncoder_64.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Routing_Overview.png&#34; alt=&#34;Routing_Inputs&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When correctly routed, the source appears in the encoder radar for verification.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Configure OSC connection between Ableton and ICST MultiEncoder. Each encoder requires its own OSC port.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC-Port.png&#34; alt=&#34;OSC-Ports&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Activate OSC transmission in E4L_Multi-Panner. The ICST MultiEncoder will display moving dots when receiving OSC data.
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC_ON.png&#34; alt=&#34;OSC_ON&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Reaper press Record -Output for recording your Bformat see next image.
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec_BF.png&#34; alt=&#34;Rec_BF&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then press REC in Reaper -&amp;gt; you get the follow message &amp;ldquo;Waiting for Timecode&amp;rdquo;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec.png&#34; alt=&#34;Rec&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press play in Ableton Live to synchronize Reaper via LTC Sync (Input 64), enabling B-format 7th-order ambix recording.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move to the &lt;strong&gt;Start Marker&lt;/strong&gt; at &lt;strong&gt;01:00:000&lt;/strong&gt; (LTC has a 60&amp;rsquo; offset), then press &lt;strong&gt;Fire&lt;/strong&gt; or &lt;strong&gt;Play&lt;/strong&gt; in Ableton Live to start recording.
+&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Live_Reper_BF.gif&#34; alt=&#34;recoding_bf&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For more details, refer to the documentation for Ableton Live, Reaper, and the ICST MultiEncoder.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST AmbiEncoder – Spiral Walk Script</title>
+      <link>https://ambisonics.ch/post/icst-scripts/</link>
+      <guid>https://ambisonics.ch/post/icst-scripts/</guid>
+      <pubDate>Thu, 17 Jul 2025 14:31:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;icst-ambiencoder_64-spiral-walk---dokumentation&#34;&gt;ICST AmbiEncoder_64 Spiral Walk - Dokumentation&lt;/h1&gt;
+&lt;h3 id=&#34;-funktion&#34;&gt;🔍 &lt;strong&gt;Funktion&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Dieses ReaScript generiert Spiralbewegungen (z.B. expandierende Spiralen) für die X-, Y- und optional Z-Koordinaten des VST3 &amp;ldquo;ICST AmbiEncoder_64&amp;rdquo; in REAPER. Es erlaubt dir, Bewegungsverläufe auf Basis von Startpositionen deiner Punkte zu erzeugen und automatisch als Envelope einzufügen. Das Ganze erfolgt grafisch via ReaImGui mit einstellbaren Parametern und Preset-Speicher.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Spiral_Walk.png&#34; alt=&#34;Spiral_Walk&#34;&gt;&lt;/p&gt;
+&lt;p&gt;DOWNLOAD ICST LuaScripts:
+(Copy to /Reaper/Scripts)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://e.pcloud.link/publink/show?code=XZmro6ZLP1Wyf6A0xL5fdX1tbfVjyhpaE7X&#34;&gt;ICST Spiral Walk.lua&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-features&#34;&gt;⚖️ &lt;strong&gt;Features&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Startposition der Punkte wird dynamisch ausgelesen&lt;/li&gt;
+&lt;li&gt;Spiralbewegung mit Schrittzahl, Radiuslimit, Spread, Geschwindigkeit&lt;/li&gt;
+&lt;li&gt;Z-Achse kann ein-/ausgeschaltet und skaliert werden&lt;/li&gt;
+&lt;li&gt;GUI mit ReaImGui&lt;/li&gt;
+&lt;li&gt;Presetverwaltung (Save, Load, Delete)&lt;/li&gt;
+&lt;li&gt;Speicherort für Presets auswählbar (JSON-Datei)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-installation--setup&#34;&gt;🔧 &lt;strong&gt;Installation &amp;amp; Setup&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Voraussetzungen:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;REAPER installiert&lt;/li&gt;
+&lt;li&gt;VST3-Plugin &lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/02_installation/&#34;&gt;&lt;strong&gt;ICST AmbiEncoder_64&lt;/strong&gt;&lt;/a&gt; muss auf Track geladen sein&lt;/li&gt;
+&lt;li&gt;ReaImGui Extension (&lt;a href=&#34;https://github.com/cfillion/reaimgui&#34;&gt;https://github.com/cfillion/reaimgui&lt;/a&gt;) installiert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Script-Speicherung:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Kopiere das Script in einen beliebigen Ordner z.B. &lt;code&gt;Scripts/ICST_AMBI/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speichere die Datei z.B. als &lt;code&gt;ICST AmbiEncoder_64 Spiral Walk.lua&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Einbindung in REAPER:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;REAPER &amp;gt; Actions &amp;gt; Show Action List&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Load ReaScript&amp;rdquo; &amp;gt; wähle die &lt;code&gt;.lua&lt;/code&gt;-Datei aus&lt;/li&gt;
+&lt;li&gt;Mit [Add] zum Action List hinzufügen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Verwendung:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Selektiere einen Track mit geladenem&amp;rsquo; ICST AmbiEncoder_64&#39;&lt;/li&gt;
+&lt;li&gt;Wähle im Arrange-Fenster eine Zeit-Selection&lt;/li&gt;
+&lt;li&gt;Starte das Script&lt;/li&gt;
+&lt;li&gt;Stelle Parameter im GUI ein (z.B. Schritte, Radius, Spread)&lt;/li&gt;
+&lt;li&gt;Klicke auf &amp;ldquo;Spiral Walk ausführen&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preset-Verwaltung:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Preset-Namen eingeben &amp;gt; Speichern&lt;/li&gt;
+&lt;li&gt;Preset auswählen &amp;gt; Laden oder Löschen&lt;/li&gt;
+&lt;li&gt;Speicherort für JSON-Datei im GUI änderbar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-analyse--technik&#34;&gt;📊 &lt;strong&gt;Analyse &amp;amp; Technik&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Parameter-Mapping basiert auf Screenshot-Anordnung: jeder Punkt nutzt 3 Parameter (X, Y, Z)&lt;/li&gt;
+&lt;li&gt;Die Spiralbewegung wird mathematisch generiert (∅ Radius + Spread, θ Winkel)&lt;/li&gt;
+&lt;li&gt;Normierte Werte werden auf 0-1 skaliert und in Envelopes geschrieben&lt;/li&gt;
+&lt;li&gt;Z-Werte werden konstant gehalten oder skaliert wiederholt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-tipps--hinweise&#34;&gt;❓ Tipps &amp;amp; Hinweise&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Achte darauf, dass du im richtigen Zeitbereich arbeitest (Reaper Timeline Selection)&lt;/li&gt;
+&lt;li&gt;Die Spiralbewegung basiert auf Startposition jedes Punktes&lt;/li&gt;
+&lt;li&gt;Der Skalierungsfaktor für Z hat keinen Einfluss, wenn Z deaktiviert ist&lt;/li&gt;
+&lt;li&gt;Min Radius &amp;lt; 0.1 ist nicht erlaubt (Verhinderung unphysikalischer Spiralen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;example&#34;&gt;Example:&lt;/h1&gt;
+&lt;p&gt;Spiral_Walk_out:
+&lt;img src=&#34;Spiral_Walk_aussen.gif&#34; alt=&#34;Spiral_Walk_aussen&#34;&gt;
+Spiral_Walk_in:
+&lt;img src=&#34;Spiral_Walk_innen.gif&#34; alt=&#34;Spiral_Walk_in&#34;&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST AmbiEncoder – CircleSelected</title>
+      <link>https://ambisonics.ch/post/circle_selected/</link>
+      <guid>https://ambisonics.ch/post/circle_selected/</guid>
+      <pubDate>Sat, 19 Jul 2025 13:28:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;h1 id=&#34;icst_ambiencoder_64_circleselected_lua-presets&#34;&gt;ICST_AmbiEncoder_64_CircleSelected_Lua-Presets&lt;/h1&gt;
+&lt;h2 id=&#34;-benutzer-dokumentation&#34;&gt;📃 Benutzer-Dokumentation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Script:&lt;/strong&gt; &lt;code&gt;ICST_AmbiEncoder_64_CircleSelected_Presets.lua&lt;/code&gt;&lt;br&gt;
+&lt;strong&gt;Funktion:&lt;/strong&gt; Punkte des ICST AmbiEncoder_64 Plugins grafisch auswählen, im Kreis anordnen, bewegen (Rotation/RandomWalk) und als Preset speichern/laden.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/circle_selected/Circle_Selected.gif&#34; alt=&#34;circleselected&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-installation&#34;&gt;🚀 Installation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Datei speichern&lt;/strong&gt;&lt;br&gt;
+Lege die Datei &lt;code&gt;ICST_AmbiEncoder_64_CircleSelected_Presets.lua&lt;/code&gt; in deinen REAPER-Scripts-Ordner:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/Users/&amp;lt;name&amp;gt;/Library/Application Support/REAPER/Scripts/ICST_AMBI/
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;In REAPER registrieren&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Öffne REAPER → &lt;code&gt;Actions&lt;/code&gt; → &lt;code&gt;Show Action List...&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Klick auf &lt;code&gt;ReaScript: Load...&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Wähle die Datei und bestätige.&lt;/li&gt;
+&lt;li&gt;Das Script ist nun als Action verfügbar.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;AmbiEncoder laden&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lege auf eine Spur das Plugin &lt;code&gt;AmbiEncoder_64 (ICST)&lt;/code&gt; und markiere die Spur.&lt;/li&gt;
+&lt;li&gt;Starte das Script über die Action List.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-gui-elemente--bedienung&#34;&gt;🖥️ GUI-Elemente &amp;amp; Bedienung&lt;/h2&gt;
+&lt;h3 id=&#34;-punkte-auswählen&#34;&gt;✅ Punkte auswählen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Alle 64 Punkte erscheinen als Checkboxen.&lt;/li&gt;
+&lt;li&gt;Aktiviere nur die Punkte, die du steuern willst.&lt;/li&gt;
+&lt;li&gt;Buttons:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alle auswählen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alle abwählen&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-kreis-offsets-setzen&#34;&gt;🔄 Kreis-Offsets setzen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kreis-Radius:&lt;/strong&gt; Abstand der Punkte vom Zentrum.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Punkte-Anzahl:&lt;/strong&gt; Anzahl der Punkte auf dem Kreis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Startwinkel:&lt;/strong&gt; Dreht den Kreis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uhrzeigersinn:&lt;/strong&gt; Reihenfolge invertieren.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Winkel-Abstand:&lt;/strong&gt; Skaliert den Winkel zwischen den Punkten.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abstandszuwachs:&lt;/strong&gt; Jeder folgende Punkt kann weiter außen liegen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Apply Kreis:&lt;/strong&gt; 👉 Überträgt die Parameter auf die aktivierten Punkte.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-preset-verwaltung&#34;&gt;💾 Preset-Verwaltung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Preset-Name:&lt;/strong&gt; Eingabefeld für den Namen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preset speichern:&lt;/strong&gt; Speichert die aktuellen Kreis-Parameter in
+&lt;code&gt;REAPER/ResourcePath/AmbiPresets/&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preset wählen:&lt;/strong&gt; Dropdown mit allen vorhandenen Presets.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preset laden:&lt;/strong&gt; Übernimmt gespeicherte Werte.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-punkte-exportimport&#34;&gt;📤 Punkte Export/Import&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Punkte exportieren:&lt;/strong&gt; Speichert die aktuelle Auswahl in &lt;code&gt;points_export.txt&lt;/code&gt; im REAPER-ResourcePath.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Punkte importieren:&lt;/strong&gt; Lädt eine gespeicherte Auswahl per Dialog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-bewegung&#34;&gt;⚙️ Bewegung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rotationsgeschw.:&lt;/strong&gt; Umdrehungen pro Sekunde.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RandomWalk Speed:&lt;/strong&gt; Schrittweite der Zufallsbewegung.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Random Range:&lt;/strong&gt; Maximaler Bewegungsradius.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Z-Achse:&lt;/strong&gt; Punkte auch in Z bewegen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Start Bewegung / Stop Bewegung:&lt;/strong&gt; Startet oder stoppt die Animation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;&lt;p&gt;Beim Start werden die aktuellen Positionen als Basis übernommen.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;hr&gt;
+&lt;h2 id=&#34;-visualisierung&#34;&gt;🎨 Visualisierung&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Im Fenster siehst du eine Echtzeit-Darstellung:
+&lt;ul&gt;
+&lt;li&gt;Weiße Punkte = aktuelle Positionen der ausgewählten Punkte.&lt;/li&gt;
+&lt;li&gt;Linien verbinden die Punkte in Reihenfolge.&lt;/li&gt;
+&lt;li&gt;Blauer Kreis = maximaler Bewegungsradius (Random Range).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-speicherorte&#34;&gt;📁 Speicherorte&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Preset-Dateien:&lt;/strong&gt; &lt;code&gt;REAPER/ResourcePath/AmbiPresets/&amp;lt;presetname&amp;gt;.txt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Exportierte Punkt-Sets:&lt;/strong&gt; &lt;code&gt;REAPER/ResourcePath/points_export.txt&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-tipps--hinweise&#34;&gt;✨ Tipps &amp;amp; Hinweise&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Wähle nur die Punkte aus, die du brauchst → übersichtlicher und ressourcenschonend.&lt;/li&gt;
+&lt;li&gt;Speichere verschiedene Presets (kleiner Radius, großer Radius, etc.).&lt;/li&gt;
+&lt;li&gt;Preset-Dateien sind einfache Textdateien und können auch extern editiert werden.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-anforderungen&#34;&gt;🔧 Anforderungen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;REAPER mit aktivem &lt;code&gt;ICST AmbiEncoder_64 (VST3)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ReaPack mit ReaImGui installiert:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Extensions → ReaPack → Browse Packages → ReaImGui&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;REAPER 6.x oder höher empfohlen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-version--autor&#34;&gt;🏷️ Version &amp;amp; Autor&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Version:&lt;/strong&gt; Juli 2025&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Autor:&lt;/strong&gt; Johannes Schütt &amp;amp;  Reaper-Assistent ✨&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Features:&lt;/strong&gt; Presets, Export/Import, Visualisierung, auswählbare Punkte&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

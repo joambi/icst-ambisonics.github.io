@@ -381,3 +381,82 @@
     }
   }
 }
+
+// Homepage mobile UX blocks
+
+.home-cards {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 1.25rem;
+}
+
+@media screen and (min-width: 961px) {
+  .home-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.home-card {
+  padding: 1rem;
+  border-radius: 10px;
+
+  @include color.themed() {
+    background-color: color.t('accent');
+    border: 1px solid color.t('primary-lighter');
+  }
+
+  h4 {
+    margin: 0 0 0.5rem;
+    line-height: 1.3;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.45rem;
+    line-height: 1.55;
+  }
+}
+
+.home-card__actions,
+.home-accordion__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.home-accordion {
+  margin: 0.75rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include color.themed() {
+    border: 1px solid color.t('primary-lighter');
+    background-color: color.t('accent');
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 0.85rem 1rem;
+    font-weight: 600;
+  }
+}
+
+.home-accordion[open] summary {
+  @include color.themed() {
+    border-bottom: 1px solid color.t('primary-lighter');
+  }
+}
+
+.home-accordion__actions {
+  padding: 0.85rem 1rem 1rem;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .home-card__actions .hero__link,
+  .home-accordion__actions .hero__link {
+    width: 100%;
+    justify-content: center;
+  }
+}
