@@ -4,6 +4,7 @@
 $themes: (
   light: (
     accent: var.$accent--lightmode,
+    background: var.$accent--lightmode,
     primary: var.$primary--lightmode,
     primary-light: var.$primary-light--lightmode,
     primary-lighter: var.$primary-lighter--lightmode,
@@ -17,6 +18,7 @@ $themes: (
   ),
   dark: (
     accent: var.$accent--darkmode,
+    background: var.$accent--darkmode,
     primary: var.$primary--darkmode,
     primary-light: var.$primary-light--darkmode,
     primary-lighter: var.$primary-lighter--darkmode,

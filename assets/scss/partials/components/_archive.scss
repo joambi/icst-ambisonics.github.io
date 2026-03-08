@@ -22,16 +22,25 @@
     border: 1px solid;
 
     @include color.themed() {
-      border-color: color.t('border');
+      border: color.t('border');
       background: color.t('background');
       color: color.t('primary');
+    }
+
+    &:hover {
+      @include color.themed() {
+        border-color: rgba(96, 134, 180, 0.6);
+        background: rgba(96, 134, 180, 0.12);
+      }
     }
   }
 
   &__filter-btn--active {
     @include color.themed() {
-      border-color: color.t('info');
+      border-color: rgba(96, 134, 180, 0.75);
+      background: rgba(96, 134, 180, 0.24);
       color: color.t('info');
+      font-weight: 600;
     }
   }
 
@@ -41,7 +50,7 @@
     border-radius: 6px;
 
     @include color.themed() {
-      border: 1px solid color.t('border');
+      border: color.t('border');
     }
   }
 
