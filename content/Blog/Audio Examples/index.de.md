@@ -14,9 +14,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+Für wen: Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Forschende, Studio-Besucher:in.
 
-Kurze Preview-Snippets werden auf dieser Website gehostet. Längere Vollversionen werden extern verlinkt, damit die GitHub-Pages-Limits nicht überschritten werden.
+Kurze Preview-Snippets werden auf dieser Website gehostet. Längere Vollversionen sind extern verlinkt, um die GitHub-Pages-Limits einzuhalten.
 
 ### So hörst du die Beispiele
 <div class="hero__links">
@@ -28,31 +28,21 @@ Kurze Preview-Snippets werden auf dieser Website gehostet. Längere Vollversione
 ### Beispiele
 
 <div class="home-cards">
-  <section class="home-card">
-    <h4>Beispiel 01 · Binaural Preview</h4>
-    <p>Format: Binaural Stereo · Preview-Dauer: 60s</p>
+  <section class="home-card playback-card">
+    <h4>3D-Audio-Test 01 · Binaural Preview</h4>
+    <p>Format: Binaural Stereo · Preview-Dauer: 4min</p>
     <audio controls preload="none">
-      <source src="/audio/previews/example-01-binaural.ogg" type="audio/ogg">
-      <source src="/audio/previews/example-01-binaural.mp3" type="audio/mpeg">
+      <source src="/audio/ambitest%20bin.ogg" type="audio/ogg">
       Dein Browser unterstützt das Audio-Element nicht.
     </audio>
-    <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="https://music.apple.com/ch/album/english-suite-no-3-in-g-minor-bwv-808-ivb-les-agr%C3%A9ments/1702748649?i=1702749430" target="_blank" rel="noopener noreferrer">Vollversion</a>
-      <a class="hero__link" href="/audio/previews/example-01-binaural.ogg">Preview herunterladen</a>
-    </div>
   </section>
 
-  <section class="home-card">
-    <h4>Beispiel 02 · Speaker-Render Preview</h4>
-    <p>Format: Stereo Fold-down aus Speaker-Render · Preview-Dauer: 75s</p>
+  <section class="home-card playback-card">
+    <h4>Beispiel 02 · Speaker Stereo Preview</h4>
+    <p>Format: Stereo for Speakers · Preview-Dauer: 4min</p>
     <audio controls preload="none">
-      <source src="/audio/previews/example-02-speaker-render.ogg" type="audio/ogg">
-      <source src="/audio/previews/example-02-speaker-render.mp3" type="audio/mpeg">
+      <source src="/audio/ambitest%20stereo.ogg" type="audio/ogg">
       Dein Browser unterstützt das Audio-Element nicht.
     </audio>
-    <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="https://music.apple.com/ch/album/english-suite-no-3-in-g-minor-bwv-808-ivb-les-agr%C3%A9ments/1702748649?i=1702749430" target="_blank" rel="noopener noreferrer">Vollversion</a>
-      <a class="hero__link" href="/audio/previews/example-02-speaker-render.ogg">Preview herunterladen</a>
-    </div>
   </section>
 </div>

@@ -236,6 +236,8 @@ Eine Auswahl an Online-Ressourcen zum Anhören von Ambisonics und Raumklang:
 
 Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kodiert wurden.
 
-→ [Zum B-Format Archiv](https://audiospace.soundingfuture.com/tracks)
+→ [Zum B-Format Archiv](https://ambisonics.ch/blog/audio-examples/)
+
+→ [Audio Examples – Binaural Previews](/blog/audio-examples/)
 
 ---

@@ -236,6 +236,8 @@ A selection of online resources for listening to Ambisonics and spatial audio:
 
 The ICST maintains an archive of works recorded and encoded in ambiX B-format.
 
-→ [Explore the B-Format Archive](https://audiospace.soundingfuture.com/tracks)
+→ [Explore the B-Format Archive](https://ambisonics.ch/blog/audio-examples/)
+
+→ [Audio Examples – Binaural Previews](/blog/audio-examples/)
 
 ---

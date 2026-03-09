@@ -29,7 +29,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kodiert wurden.
 
-→ [Zum B-Format Archiv](https://audiospace.soundingfuture.com/tracks)
+→ [Zum B-Format Archiv](https://ambisonics.ch/blog/audio-examples/)
 
 ---
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

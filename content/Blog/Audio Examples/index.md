@@ -13,7 +13,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+For whom: Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
 
 Short preview snippets are hosted on this site. Full-length versions are linked externally to avoid GitHub Page size limits.
 
@@ -27,31 +27,21 @@ Short preview snippets are hosted on this site. Full-length versions are linked 
 ### Examples
 
 <div class="home-cards">
-  <section class="home-card">
+  <section class="home-card playback-card">
     <h4>3D-Audio-Test 01 · Binaural Preview</h4>
     <p>Format: Binaural stereo · Preview duration: 4min</p>
     <audio controls preload="none">
-      <source src="/audio/previews/example-01-binaural.ogg" type="audio/ogg">
-      <source src="/audio/previews/example-01-binaural.mp3" type="audio/mpeg">
+      <source src="/audio/ambitest%20bin.ogg" type="audio/ogg">
       Your browser does not support the audio element.
     </audio>
-    <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="[https://e.pcloud.link/publink/show?code=XZgkkGZzkPOKp87E2uqPOVuRrPscSJoUR37](https://e.pcloud.link/publink/show?code=XZgkkGZzkPOKp87E2uqPOVuRrPscSJoUR37)" target="_blank" rel="noopener noreferrer">Full-Length Version</a>
-      <a class="hero__link" href="/audio/previews/example-01-binaural.ogg">Download Preview</a>
-    </div>
   </section>
 
-  <section class="home-card">
-    <h4>Example 02 · Speaker Render Preview</h4>
-    <p>Format: Stereo fold-down from speaker render · Preview duration: 75s</p>
+  <section class="home-card playback-card">
+    <h4>Example 02 · Speaker Stereo Preview</h4>
+    <p>Format: Stereo for Speakers · Preview duration: 4min</p>
     <audio controls preload="none">
-      <source src="/audio/previews/example-02-speaker-render.ogg" type="audio/ogg">
-      <source src="/audio/previews/example-02-speaker-render.mp3" type="audio/mpeg">
+      <source src="/audio/ambitest%20stereo.ogg" type="audio/ogg">
       Your browser does not support the audio element.
     </audio>
-    <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="https://music.apple.com/ch/album/english-suite-no-3-in-g-minor-bwv-808-ivb-les-agr%C3%A9ments/1702748649?i=1702749430" target="_blank" rel="noopener noreferrer">Full-Length Version</a>
-      <a class="hero__link" href="/audio/previews/example-02-speaker-render.ogg">Download Preview</a>
-    </div>
   </section>
 </div>
