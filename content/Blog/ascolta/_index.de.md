@@ -72,11 +72,26 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 **ascolta** ist eine öffentliche Hörreihe am ICST Kompositionsstudio der Zürcher Hochschule der Künste. In einem intimen Rahmen mit einem Higher-Order Ambisonics-Lautsprechersystem hören wir akusmatische und elektroakustische Musik — Werke von Komponist\*innen aus dem ICST-Residenzprogramm und aus dem internationalen Repertoire, präsentiert in immersivem Raumklang.
 
-**Nächste Termine 2026** · [02. April 2026](/de/blog/ascolta/17-ascolta/) · [21. Mai 2026](/de/blog/ascolta/17-ascolta/) · 18:00–19:00 · Freier Eintritt
+**Nächste Termine 2026** · [02. April 2026](/de/blog/ascolta/18-ascolta/) · 21. Mai 2026 · 18:00–19:00 · Freier Eintritt
+
+**Teaser (02. April 2026, 18:00):** Für **#18 ascolta** öffnen wir ein akustisches Feld aus den ICST Studio-Residenzen 2025: Werke von Nandele Maguni, Youngjae Cho und Ana Gonzalez Gamboa in immersivem 3D-Audio. Donnerstag, 2. April 2026, 18:00–19:00, Toni-Areal, Kompositionsstudio 3.D02, Zürich. Freier Eintritt.
 
 ---
 
 ## Alle Sitzungen
+
+<div class="season-section">
+  <div class="season-label">2026</div>
+  <div class="session-list">
+    <a class="session-row" href="/de/blog/ascolta/18-ascolta/">
+      <span class="session-row__num">#18</span>
+      <span class="session-row__content">
+        <span class="session-row__subtitle">Acousmatic Listening Sessions — ICST Studio Residenzen 2025</span>
+        <span class="session-row__date">02 Apr 2026</span>
+      </span>
+    </a>
+  </div>
+</div>
 
 <div class="season-section">
   <div class="season-label">2025</div>

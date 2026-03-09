@@ -17,6 +17,9 @@ For whom: Level: All levels | Audience: Composer, Student, Researcher, Studio vi
 
 Short preview snippets are hosted on this site. Full-length versions are linked externally to avoid GitHub Page size limits.
 
+Hinweis: Ambitest-Referenzbeispiel von Audiobrewers:
+[Ambisonics Test Library](https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen)
+
 ### How To Listen
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/ambisonics-101/">Ambisonics 101</a>

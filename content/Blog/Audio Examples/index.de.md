@@ -18,6 +18,9 @@ Für wen: Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Forschende
 
 Kurze Preview-Snippets werden auf dieser Website gehostet. Längere Vollversionen sind extern verlinkt, um die GitHub-Pages-Limits einzuhalten.
 
+Hinweis: Ambitest-Referenzbeispiel von Audiobrewers:
+[Ambisonics Test Library](https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen)
+
 ### So hörst du die Beispiele
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/ambisonics-101/">Ambisonics 101</a>

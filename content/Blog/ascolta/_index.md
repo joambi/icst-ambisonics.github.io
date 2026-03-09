@@ -72,11 +72,26 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 **ascolta** is a public listening series at the ICST Composition Studio of the Zurich University of the Arts. In an intimate setting with a higher-order Ambisonics speaker system, we listen to acousmatic and electroacoustic music — works by composers from the ICST residency programme and from the international repertoire, presented in immersive spatial audio.
 
-**Upcoming Dates 2026** · [02 April 2026](/blog/ascolta/17-ascolta/) · [21 May 2026](/blog/ascolta/17-ascolta/) · 18:00–19:00 · Free admission
+**Upcoming Dates 2026** · [02 April 2026](/blog/ascolta/18-ascolta/) · 21 May 2026 · 18:00–19:00 · Free admission
+
+**Teaser (02 April 2026, 18:00):** For **#18 ascolta**, we open an acoustic field from the ICST Studio Residencies 2025: works by Nandele Maguni, Youngjae Cho, and Ana Gonzalez Gamboa in immersive 3D audio. Thursday, 02 April 2026, 18:00–19:00, Toni-Areal, Composition Studio 3.D02, Zurich. Free admission.
 
 ---
 
 ## All Sessions
+
+<div class="season-section">
+  <div class="season-label">2026</div>
+  <div class="session-list">
+    <a class="session-row" href="/blog/ascolta/18-ascolta/">
+      <span class="session-row__num">#18</span>
+      <span class="session-row__content">
+        <span class="session-row__subtitle">Acousmatic Listening Sessions — ICST Studio Residencies 2025</span>
+        <span class="session-row__date">02 Apr 2026</span>
+      </span>
+    </a>
+  </div>
+</div>
 
 <div class="season-section">
   <div class="season-label">2025</div>
