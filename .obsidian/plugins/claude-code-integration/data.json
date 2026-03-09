@@ -1,7 +1,7 @@
 {
   "backend": "claude",
   "claudeCodePath": "",
-  "autoDetectPath": true,
+  "autoDetectPath": false,
   "modelAlias": "",
   "opencodePath": "",
   "opencodeAutoDetect": true,
