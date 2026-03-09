@@ -31,7 +31,7 @@ Status  April 2023
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="https://www.rme-audio.de/downloads.html" target="_blank" rel="noopener noreferrer">RME MADI USB Driver</a>
       <a class="hero__link" href="https://www.synaptics.com/products/displaylink-graphics/downloads" target="_blank" rel="noopener noreferrer">DisplayLink Driver</a>
-      <a class="hero__link" href="/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/">Quick Start Guide</a>
+      <a class="hero__link" href="/blog/icst-kompositionsstudio-support/">Quick Start Guide</a>
     </div>
   </section>
 
@@ -65,7 +65,7 @@ To work in the composition studio with your own laptop, please follow these two 
     - **RME MADI USB Driver** (Mac / Windows) for the audio connection
     - **DisplayLink** for the video connection
 
-👉 See also: **[Quick Start Guide](/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/)**
+👉 See also: **[Quick Start Guide](/blog/icst-kompositionsstudio-support/)**
 
 * * *
 

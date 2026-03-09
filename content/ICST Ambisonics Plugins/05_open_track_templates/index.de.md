@@ -10,13 +10,13 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 -
 ## 02 Spurvorlagen öffnen
 
-1. Klicken Sie mit der rechten Maustaste in den leeren Spurbereich in **Reaper**.
-2. Wählen Sie **"Spur aus Vorlage einfügen."**
-3. Wählen Sie die gewünschte **Spurvorlage**.
+1. Klicke mit der rechten Maustaste in den leeren Spurbereich in **Reaper**.
+2. Wähle **"Spur aus Vorlage einfügen."**
+3. Wähle die gewünschte **Spurvorlage**.
 
 ![tracktemplate.png](tracktemplate.png)
 
-Stellen Sie sicher, dass das Audio-Routing zwischen Kanal-Spuren korrekt konfiguriert ist, um einen genauen Signalfluss zu gewährleisten!
+Stelle sicher, dass das Audio-Routing zwischen Kanal-Spuren korrekt konfiguriert ist, um einen genauen Signalfluss zu gewährleisten!
 
 ![Track_template](Track_templates.gif)
 

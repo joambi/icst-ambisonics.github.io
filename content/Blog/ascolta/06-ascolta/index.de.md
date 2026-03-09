@@ -1,6 +1,6 @@
 ---
 title: "#06 ascolta Akousmatische Hörstunde"
-description: "Ankuendigung und Archiv der ascolta Akousmatischen Hoerstunde mit Programm, Infos und Hoerdaten."
+description: "Ankuendigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2023-04-04T18:00:00
 weight: 6
 ---
@@ -11,7 +11,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 # #06 ascolta Akousmatische Hörstunde
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 
 ![ascolta](ascolta.png)

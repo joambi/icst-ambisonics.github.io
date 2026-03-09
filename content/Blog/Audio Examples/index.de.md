@@ -14,7 +14,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Kurze Preview-Snippets werden auf dieser Website gehostet. Längere Vollversionen werden extern verlinkt, damit die GitHub-Pages-Limits nicht überschritten werden.
 

@@ -13,16 +13,16 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-### 01_Installieren Sie die ICST Ambisonics Plugins (OSX)
+### 01_Installiere die ICST Ambisonics Plugins (OSX)
 
-1. Laden Sie Reaper(DAW) (arm64/intel_64) von [reaper.fm](http://reaper.fm/) herunter
-2. Folgen Sie der Reaper-Installationsanleitung.
-3. Führen Sie Reaper (DAW) durch Klick auf _[Reaper64.app](http://Reaper64.app)_ aus
-4. Schließen Sie _Reaper64._
-5. Installieren Sie die _Reaper Plugin-Erweiterung (SWS/S&M)_ von diesem Link: <https://www.sws-extension.org/>
-6. Installieren Sie _ReaPack_ (Paketmanager für Reaper) von hier: <https://reapack.com/>
-7. Folgen Sie dieser Installationsanleitung: <https://reapack.com/user-guide#installation>
-8. Laden Sie das ICST AmbiPlugin OSX-Installationsprogramm herunter: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
+1. Lade Reaper(DAW) (arm64/intel_64) von [reaper.fm](http://reaper.fm/) herunter
+2. Folge der Reaper-Installationsanleitung.
+3. Führe Reaper (DAW) durch Klick auf _[Reaper64.app](http://Reaper64.app)_ aus
+4. Schließe _Reaper64._
+5. Installiere die _Reaper Plugin-Erweiterung (SWS/S&M)_ von diesem Link: <https://www.sws-extension.org/>
+6. Installiere _ReaPack_ (Paketmanager für Reaper) von hier: <https://reapack.com/>
+7. Folge dieser Installationsanleitung: <https://reapack.com/user-guide#installation>
+8. Lade das ICST AmbiPlugin OSX-Installationsprogramm herunter: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 
    ![installer](installer.gif)
 
@@ -48,15 +48,15 @@ VIDEO: [ICST Ambisonics Plugins – 01 – How to Install - YouTube](https://www
 
 ### 02_Installation(Windows):
 
-1. Laden Sie Reaper64 (Windows 64-bit) von [reaper.fm](http://reaper.fm/) herunter
-2. Folgen Sie der Reaper-Installationsanleitung.
-3. Führen Sie Reaper (DAW) durch Klick auf Reaper64.app aus
-4. Schließen Sie _Reaper64._
-5. Installieren Sie die _Reaper Plugin-Erweiterung (SWS/S&M)_ von diesem Link: https://www.sws-extension.org/
-6. Installieren Sie _ReaPack_ (Paketmanager für Reaper) von hier: <https://reapack.com/>
-7. Folgen Sie dieser Installationsanleitung: <https://reapack.com/user-guide#installation>
-8. Laden Sie das ICST AmbiPlugin Windows-Installationsprogramm herunter: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
-9. Extrahieren Sie _ICST\_AmbiPlugins\_3.0\_win\_x64.exe_ zu _C:\\Program Files\\Common Files\\VST3_
+1. Lade Reaper64 (Windows 64-bit) von [reaper.fm](http://reaper.fm/) herunter
+2. Folge der Reaper-Installationsanleitung.
+3. Führe Reaper (DAW) durch Klick auf Reaper64.app aus
+4. Schließe _Reaper64._
+5. Installiere die _Reaper Plugin-Erweiterung (SWS/S&M)_ von diesem Link: https://www.sws-extension.org/
+6. Installiere _ReaPack_ (Paketmanager für Reaper) von hier: <https://reapack.com/>
+7. Folge dieser Installationsanleitung: <https://reapack.com/user-guide#installation>
+8. Lade das ICST AmbiPlugin Windows-Installationsprogramm herunter: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
+9. Extrahiere _ICST\_AmbiPlugins\_3.0\_win\_x64.exe_ nach _C:\\Program Files\\Common Files\\VST3_
 
 ![Installation step 1](01_win.png)
 ![Installation step 2](02_win.png)
@@ -66,7 +66,7 @@ VIDEO: [ICST Ambisonics Plugins – 01 – How to Install - YouTube](https://www
 ![Installation step 6](06_win.png)
 ![Installation step 7](07_win.png)
 
-Starten Sie den PC neu!
+Starte den PC neu!
 
 ----
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

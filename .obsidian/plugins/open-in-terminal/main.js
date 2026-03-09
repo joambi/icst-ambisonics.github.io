@@ -304,7 +304,10 @@ const DEFAULT_SETTINGS = {
     enableCursor: false,
     enableGemini: false,
     enableOpencode: false,
-    enableWslOnWindows: false
+    enableWslOnWindows: false,
+    enableGitCommitPush: false,
+    enableGitPull: false,
+    defaultCommitMessage: 'update'
 };
 const isRecord = (value) => typeof value === 'object' && value !== null;
 const normalizeTerminalAppSetting = (value, fallback) => {
@@ -340,7 +343,12 @@ const normalizeSettings = (stored) => {
         enableCursor: readBoolean(source.enableCursor, DEFAULT_SETTINGS.enableCursor),
         enableGemini: readBoolean(source.enableGemini, DEFAULT_SETTINGS.enableGemini),
         enableOpencode: readBoolean(source.enableOpencode, DEFAULT_SETTINGS.enableOpencode),
-        enableWslOnWindows: readBoolean(source.enableWslOnWindows, DEFAULT_SETTINGS.enableWslOnWindows)
+        enableWslOnWindows: readBoolean(source.enableWslOnWindows, DEFAULT_SETTINGS.enableWslOnWindows),
+        enableGitCommitPush: readBoolean(source.enableGitCommitPush, DEFAULT_SETTINGS.enableGitCommitPush),
+        enableGitPull: readBoolean(source.enableGitPull, DEFAULT_SETTINGS.enableGitPull),
+        defaultCommitMessage: typeof source.defaultCommitMessage === 'string'
+            ? source.defaultCommitMessage
+            : DEFAULT_SETTINGS.defaultCommitMessage
     };
 };
 const getCurrentTerminalApp = (terminalApp) => {
@@ -363,6 +371,7 @@ const optionalLaunchTargets = [
     {
         id: 'open-claude',
         commandName: 'Open in Claude Code',
+        action: 'terminal',
         toolCommand: 'claude',
         settingKey: 'enableClaude',
         settingLabel: 'Claude Code'
@@ -370,6 +379,7 @@ const optionalLaunchTargets = [
     {
         id: 'open-codex',
         commandName: 'Open in Codex cli',
+        action: 'terminal',
         toolCommand: 'codex',
         settingKey: 'enableCodex',
         settingLabel: 'Codex cli'
@@ -377,6 +387,7 @@ const optionalLaunchTargets = [
     {
         id: 'open-cursor',
         commandName: 'Open in Cursor cli',
+        action: 'terminal',
         toolCommand: 'agent',
         settingKey: 'enableCursor',
         settingLabel: 'Cursor cli'
@@ -384,6 +395,7 @@ const optionalLaunchTargets = [
     {
         id: 'open-gemini',
         commandName: 'Open in Gemini cli',
+        action: 'terminal',
         toolCommand: 'gemini',
         settingKey: 'enableGemini',
         settingLabel: 'Gemini cli'
@@ -391,15 +403,33 @@ const optionalLaunchTargets = [
     {
         id: 'open-opencode',
         commandName: 'Open in OpenCode',
+        action: 'terminal',
         toolCommand: 'opencode',
         settingKey: 'enableOpencode',
         settingLabel: 'OpenCode'
+    },
+    {
+        id: 'git-commit-push',
+        commandName: 'Git: commit and push',
+        action: 'git',
+        gitAction: 'commit-push',
+        settingKey: 'enableGitCommitPush',
+        settingLabel: 'Git: commit and push'
+    },
+    {
+        id: 'git-pull',
+        commandName: 'Git: pull',
+        action: 'git',
+        gitAction: 'pull',
+        settingKey: 'enableGitPull',
+        settingLabel: 'Git: pull'
     }
 ];
 const launchTargets = [
     {
         id: 'open-terminal',
-        commandName: 'Open in terminal'
+        commandName: 'Open in terminal',
+        action: 'terminal'
     },
     ...optionalLaunchTargets
 ];
@@ -432,14 +462,42 @@ class OpenInTerminalSettingTab extends obsidian.PluginSettingTab {
         if (obsidian.Platform.isWin) {
             new obsidian.Setting(containerEl)
                 .setName('Use WSL for commands')
-                .setDesc('Run terminal and CLI commands inside WSL on Windows.')
+                .setDesc('Run commands inside WSL on Windows.')
                 .addToggle((toggle) => toggle.setValue(this.plugin.settings.enableWslOnWindows).onChange((value) => __awaiter(this, void 0, void 0, function* () {
                 this.plugin.settings.enableWslOnWindows = value;
                 yield this.plugin.saveSettings();
             })));
         }
+        new obsidian.Setting(containerEl).setName('Git commands').setHeading();
+        new obsidian.Setting(containerEl)
+            .setName('Default commit message')
+            .setDesc('Used when running the commit and push command.')
+            .addText((text) => text
+            .setPlaceholder('Update')
+            .setValue(this.plugin.settings.defaultCommitMessage)
+            .onChange((value) => __awaiter(this, void 0, void 0, function* () {
+            this.plugin.settings.defaultCommitMessage = value.trim() || 'update';
+            yield this.plugin.saveSettings();
+        })));
+        new obsidian.Setting(containerEl)
+            .setName('Enable Git: commit and push')
+            .setDesc('Add a command to commit all changes and push to remote.')
+            .addToggle((toggle) => toggle.setValue(this.plugin.settings.enableGitCommitPush).onChange((value) => __awaiter(this, void 0, void 0, function* () {
+            this.plugin.settings.enableGitCommitPush = value;
+            yield this.plugin.saveSettings();
+        })));
+        new obsidian.Setting(containerEl)
+            .setName('Enable Git: pull')
+            .setDesc('Add a command to pull changes from remote.')
+            .addToggle((toggle) => toggle.setValue(this.plugin.settings.enableGitPull).onChange((value) => __awaiter(this, void 0, void 0, function* () {
+            this.plugin.settings.enableGitPull = value;
+            yield this.plugin.saveSettings();
+        })));
         new obsidian.Setting(containerEl).setName('Command toggles').setHeading();
         for (const target of optionalLaunchTargets) {
+            if (target.action !== 'terminal') {
+                continue;
+            }
             this.addToggleSetting(containerEl, target.settingLabel, () => this.plugin.settings[target.settingKey], (value) => __awaiter(this, void 0, void 0, function* () {
                 this.plugin.settings[target.settingKey] = value;
                 yield this.plugin.saveSettings();
@@ -487,7 +545,17 @@ class OpenInTerminalPlugin extends obsidian.Plugin {
             this.addCommand({
                 id: target.id,
                 name: target.commandName,
-                callback: () => this.runLaunchCommand(() => this.composeLaunchCommand(target.toolCommand), target.commandName)
+                callback: () => {
+                    if (target.action === 'git') {
+                        if (target.gitAction === 'commit-push') {
+                            void this.runGitCommitPush();
+                            return;
+                        }
+                        void this.runGitPull();
+                        return;
+                    }
+                    this.runLaunchCommand(() => this.composeLaunchCommand(target.toolCommand), target.commandName);
+                }
             });
             this.registeredCommandIds.add(`${this.manifest.id}:${target.id}`);
         }
@@ -569,6 +637,63 @@ class OpenInTerminalPlugin extends obsidian.Plugin {
             yield this.saveData(this.settings);
             this.refreshCommands();
         });
+    }
+    runGitCommitPush() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const isGitRepo = yield this.checkGitRepo();
+            if (!isGitRepo) {
+                new obsidian.Notice('Not a Git repository');
+                return;
+            }
+            const gitCommand = this.buildGitCommitPushCommand();
+            this.runLaunchCommand(() => this.composeLaunchCommand(gitCommand), 'Git: commit and push');
+        });
+    }
+    runGitPull() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const isGitRepo = yield this.checkGitRepo();
+            if (!isGitRepo) {
+                new obsidian.Notice('Not a Git repository');
+                return;
+            }
+            this.runLaunchCommand(() => this.composeLaunchCommand('git pull'), 'Git: pull');
+        });
+    }
+    checkGitRepo() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const adapter = this.app.vault.adapter;
+            if (!(adapter instanceof obsidian.FileSystemAdapter)) {
+                return false;
+            }
+            const vaultPath = adapter.getBasePath();
+            return new Promise((resolve) => {
+                const child = child_process.spawn('git', ['rev-parse', '--is-inside-work-tree'], {
+                    cwd: vaultPath,
+                    stdio: 'ignore'
+                });
+                child.on('close', (code) => resolve(code === 0));
+                child.on('error', () => resolve(false));
+            });
+        });
+    }
+    buildGitCommitPushCommand() {
+        const normalized = this.settings.defaultCommitMessage.replace(/[\r\n]+/g, ' ').trim() || 'update';
+        const escaped = this.escapeCommitMessageForShell(normalized);
+        return `git add . && git commit -m "${escaped}" && git push`;
+    }
+    escapeCommitMessageForShell(message) {
+        if (obsidian.Platform.isWin) {
+            return message
+                .replace(/\^/g, '^^')
+                .replace(/"/g, '""')
+                .replace(/%/g, '%%')
+                .replace(/!/g, '^^!');
+        }
+        return message
+            .replace(/\\/g, '\\\\')
+            .replace(/"/g, '\\"')
+            .replace(/\$/g, '\\$')
+            .replace(/`/g, '\\`');
     }
 }
 

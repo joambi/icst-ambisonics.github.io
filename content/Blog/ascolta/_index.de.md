@@ -76,24 +76,6 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-## Listening
-
-Eine Auswahl an Online-Ressourcen zum Anhören von Ambisonics und Raumklang:
-
-- [Sounding Future](https://audiospace.soundingfuture.com/tracks) — Räumliches Audioarchiv
-- [HOAST Library (IEM)](https://hoast.iem.at/) — Higher-Order Ambisonics Aufnahmen
-- [Nimbus UHJ](https://www.wyastone.co.uk/all-labels/nimbus.html) — Klassische Ambisonics-UHJ-Aufnahmen
-
----
-
-## ICST B-Format Archiv
-
-Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kodiert wurden.
-
-→ [Zum B-Format Archiv](/blog/sounding_future/)
-
----
-
 ## Alle Sitzungen
 
 <div class="season-section">
@@ -237,5 +219,23 @@ Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kod
     </a>
   </div>
 </div>
+
+---
+
+## Listening
+
+Eine Auswahl an Online-Ressourcen zum Anhören von Ambisonics und Raumklang:
+
+- [Sounding Future](https://audiospace.soundingfuture.com/tracks) — Räumliches Audioarchiv
+- [HOAST Library (IEM)](https://hoast.iem.at/) — Higher-Order Ambisonics Aufnahmen
+- [Nimbus UHJ](https://www.wyastone.co.uk/all-labels/nimbus.html) — Klassische Ambisonics-UHJ-Aufnahmen
+
+---
+
+## ICST B-Format Archiv
+
+Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kodiert wurden.
+
+→ [Zum B-Format Archiv](https://audiospace.soundingfuture.com/tracks)
 
 ---

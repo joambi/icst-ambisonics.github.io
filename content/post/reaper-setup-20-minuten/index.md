@@ -62,7 +62,7 @@ Die ausfuehrliche Debug-Liste liegt im Onboarding-Guide:
 - [Getting Started with ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 
 ## Downloads und weiterfuehrende Artikel
-- [ICST Ambisonics Tools](/icst%20ambisonics%20tools/)
+- [ICST Ambisonics Tools](/icst-ambisonics-tools/)
 - [OSC im ICST AmbiEncoder: Die 10 wichtigsten Messages](/post/osc-10-key-messages/)
 - [Ableton Live und ICST Ambisonics Integration](/post/ableton_reaper/)
 

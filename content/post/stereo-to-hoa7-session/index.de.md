@@ -1,6 +1,6 @@
 ---
-title: "Von Stereo zu HOA7: Eine Schritt-fuer-Schritt-Session"
-description: "Strukturierter Uebergang von einem Stereo-Denken zu einer praktischen HOA7-Ambisonics-Session mit Routing, Bewegungsdesign und Export-Checks."
+title: "Von Stereo zu HOA7: Eine Schritt-für-Schritt-Session"
+description: "Strukturierter Übergang von einem Stereo-Denken zu einer praktischen HOA7-Ambisonics-Session mit Routing, Bewegungsdesign und Export-Checks."
 date: 2026-03-08T14:20:00+01:00
 year: 2026
 month: 2026-03
@@ -14,27 +14,27 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-# Von Stereo zu HOA7: Eine Schritt-fuer-Schritt-Session
+# Von Stereo zu HOA7: Eine Schritt-für-Schritt-Session
 
 **Für wen:** Level: Intermediate | Zielgruppe: Komponist:in, Producer.
 
 
 ## Warum es diesen Guide gibt
-Viele Nutzer:innen kennen Stereo-Produktion sehr gut, brauchen aber eine konkrete Bruecke zu Higher-Order Ambisonics in einer realen Session.
+Viele Nutzer:innen kennen Stereo-Produktion sehr gut, brauchen aber eine konkrete Brücke zu Higher-Order Ambisonics in einer realen Session.
 
 ## Lernziel
-Ein Stereo-Arrangement in HOA7-Denken ueberfuehren: Objektplatzierung, Bewegung und kontrolliertes Rendering.
+Ein Stereo-Arrangement in HOA7-Denken überführen: Objektplatzierung, Bewegung und kontrolliertes Rendering.
 
 ## Voraussetzungen
 - Grundkenntnisse in Stereo-Mix-Workflows.
 - Grundkenntnisse in Reaper-Projektaufbau.
 - ICST Plugins sind installiert.
 
-## Schritt 1 - Stereo-Rollen in Raumrollen uebersetzen
-Ordne Stereo-Elemente raeumlichen Objekten zu:
+## Schritt 1 - Stereo-Rollen in Raumrollen übersetzen
+Ordne Stereo-Elemente räumlichen Objekten zu:
 - Lead-Elemente -> stabile Front oder gezielte Bewegung.
-- Support-Elemente -> breitere Raeume.
-- Atmosphaeren -> diffuse oder geschichtete Hoehenanteile.
+- Support-Elemente -> breitere Räume.
+- Atmosphären -> diffuse oder geschichtete Höhenanteile.
 
 ## Schritt 2 - HOA7-Session-Grundstruktur bauen
 Lege Quelltracks an, setze AmbiEncoder-Instanzen und definiere einen sauberen HOA7-Buspfad.
@@ -42,21 +42,21 @@ Lege Quelltracks an, setze AmbiEncoder-Instanzen und definiere einen sauberen HO
 ## Schritt 3 - Mit statischer Platzierung starten
 Setze klare Ausgangspositionen, bevor Bewegung dazu kommt.
 
-## Schritt 4 - Kontrollierte Bewegung ergaenzen
-Nutze kleine, gezielte Automationsbewegungen und pruefe die Lesbarkeit im Monitoring.
+## Schritt 4 - Kontrollierte Bewegung ergänzen
+Nutze kleine, gezielte Automationsbewegungen und prüfe die Lesbarkeit im Monitoring.
 
-## Schritt 5 - Uebertragung pruefen
-Pruefe Referenzen in Mono/Stereo und validiere die HOA7-Ausgabekette.
+## Schritt 5 - Übertragung prüfen
+Prüfe Referenzen in Mono/Stereo und validiere die HOA7-Ausgabekette.
 
 ## Schritt 6 - Export und Dokumentation
-Exportiere den Ambisonics-Render und sichere Projektnotizen fuer reproduzierbare Sessions.
+Exportiere den Ambisonics-Render und sichere Projektnotizen für reproduzierbare Sessions.
 
 ## Typische Stolperfallen
-- Zu frueh zu viel Bewegung.
+- Zu früh zu viel Bewegung.
 - Gain-Staging auf Higher-Order-Bussen wird ignoriert.
 - Fehlende Dokumentation von Routing und OSC-Zuordnungen.
 
-## Weiterfuehrend
+## Weiterführend
 - [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 - [ICST MultiEncoder - Gruppenanimation](/post/gp-manipulation/)
 - [ICST AmbiDecoder - Multi-Decoder Modus](/post/multi-decoder-mode/)

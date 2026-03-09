@@ -29,13 +29,26 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 - [Ambisonics 101](https://ambisonics.ch/ambisonics-101/)
 - [Alle Tutorials](https://ambisonics.ch/post/)
 - [Studio Downloads](https://ambisonics.ch/blog/downloads/)
+---
+### Michael Gerzon, Father of Ambisonics
+
+- [Gerzon Archive](https://audiosignal.co.uk/Gerzon%20archive.html)
+- [Michael Gerzon Audio Pioneer](https://www.michaelgerzonphotos.org.uk/ambisonics.html)
+- [The Michael Gerzon Story \| Into The Soundfield](https://intothesoundfield.music.ox.ac.uk/michael-gerzon-story)
+- [michaelgerzonphotos.org.uk/articles/Ambisonics 1.pdf](https://www.michaelgerzonphotos.org.uk/articles/Ambisonics%201.pdf)
+- [michaelgerzonphotos.org.uk/articles/Ambisonics 2.pdf](https://www.michaelgerzonphotos.org.uk/articles/Ambisonics%202.pdf)
+- [audiosignal.co.uk/Resources/What\_is\_wrong\_with\_quadraphonics\_A4.pdf](https://www.audiosignal.co.uk/Resources/What_is_wrong_with_quadraphonics_A4.pdf)
+- [audiosignal.co.uk/Resources/Surround\_sound\_psychoacoustics\_A4.pdf](https://www.audiosignal.co.uk/Resources/Surround_sound_psychoacoustics_A4.pdf)
+- [audiosignal.co.uk/Resources/Surround\_sound\_from\_2-channel\_stereo\_A4.pdf](https://www.audiosignal.co.uk/Resources/Surround_sound_from_2-channel_stereo_A4.pdf)
+
+Video: ['Into The Soundfield' - Michael Gerzon & Ambisonics at Oxford (Official Documentary 2018) - YouTube](https://www.youtube.com/watch?v=X23hZNoSkUs)
 
 ---
 
 ### Tools von Drittanbietern:
 
 - [Ambisonic Toolkit (ATK) für REAPER](http://www.ambisonictoolkit.net/documentation/reaper/)
-- [IEM Plugin suite](https://plugins.iem.at/)
+- [IEM Plugin Suite](https://plugins.iem.at/)
 - [Sparta Plugins](https://leomccormack.github.io/sparta-site/)
 - [Wigware](https://www.brucewiggins.co.uk/?page_id=78)
 - [aXPlugin Suite](https://www.ssa-plugins.com/)
@@ -77,15 +90,15 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 - https://www.waves.com/ambisonics-explained-guide-for-sound-engineers
 - [REAPER Ambisonics Forum](https://forum.cockos.com/forumdisplay.php?s=75823a68d22b96a21e8025b8fea609ad&f=53)
 
-### Literatur: Buecher und Papers
+### Literatur: Bücher und Papers
 
-#### Buecher
+#### Bücher
 
 - [Ambisonics: A Practical 3D Audio Theory (Zotter, Frank, 2019, Open Access)](https://link.springer.com/book/10.1007/978-3-030-17207-7)
 - [Parametric Time-Frequency Domain Spatial Audio (Pulkki, Delikaris-Manias, Politis, 2017)](https://doi.org/10.1002/9781119252634)
 - [Immersive Sound: The Art and Science of Binaural and Multi-Channel Audio (Rumsey, 2012)](https://www.routledge.com/Immersive-Sound-The-Art-and-Science-of-Binaural-and-Multi-Channel-Audio/Rumsey/p/book/9780240815091)
 
-#### Schluessel-Papers
+#### Schlüssel-Papers
 
 - [Periphony: With-Height Sound Reproduction (Gerzon, JAES, 1973)](https://ringbuffer.org/papers/gerzon1973periphony.html)
 - [Ambisonics in Multichannel Broadcasting and Video (Gerzon, JAES, 1985 issue reference)](https://www.aes-media.org/historical/pdf/jaes-contents-v30-39.pdf)

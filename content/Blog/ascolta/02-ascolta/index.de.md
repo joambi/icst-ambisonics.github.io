@@ -1,6 +1,6 @@
 ---
 title: "#02 ascolta Akousmatische Hörstunde"
-description: "Ankuendigung und Archiv der ascolta Akousmatischen Hoerstunde mit Programm, Infos und Hoerdaten."
+description: "Ankuendigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2022-10-04T18:00:00
 weight: 2
 ---
@@ -11,7 +11,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 # #02 ascolta Akousmatische Hörstunde
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 
 ![ascolta](ascolta.png)
@@ -45,7 +45,7 @@ Gerald Bennett, 1942 in New Jersey (USA) geboren, studierte unter anderem an der
 Die Werke von Gerald Bennett umfassen Orchester-, Kammer- und Vokalwerke in verschiedenen Besetzungen mit und ohne Elektronik sowie zahlreiche elektroakustische Stücke. Seine Kompositionen werden von Edition Modern/Ricordi und Mnémosyne veröffentlicht, Aufnahmen seiner Werke erschienen bei Wergo, Jecklin und Harmonia Mundi. Er ist Autor zahlreicher Publikationen, die bei Gallimard, Oxford University Press, Eulenburg, MIT Press und anderen erschienen sind.
  [Gerald Bennett](http://www.gdbennett.net/)
 
-Aktuelle Informationen zur Veranstaltung finden Sie [hier](https://www.zhdk.ch/veranstaltung/48124).
+Aktuelle Informationen zur Veranstaltung findest du [hier](https://www.zhdk.ch/veranstaltung/48124).
 
 * * *
 

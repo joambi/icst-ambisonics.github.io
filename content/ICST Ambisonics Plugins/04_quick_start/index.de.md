@@ -9,11 +9,11 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ## Schnellstart mit **ICST_AmbiPlugins_MultiEncoder.RPP**
 
-Starten Sie schnell mit der **MultiEncoder-Vorlage** mit diesem einfachen Workflow:
+Starte schnell mit der **MultiEncoder-Vorlage** mit diesem einfachen Workflow:
 
-1. Öffnen Sie **Reaper**.
-2. Laden Sie **ICST_AmbiPlugins_MultiEncoder.RPP** aus dem Reaper-Menü.
-3. Speichern Sie das Projekt unter einem neuen Namen.
+1. Öffne **Reaper**.
+2. Lade **ICST_AmbiPlugins_MultiEncoder.RPP** aus dem Reaper-Menü.
+3. Speichere das Projekt unter einem neuen Namen.
 
 ![open_multiencoder_temp](open_multiencoder_temp.gif)
 

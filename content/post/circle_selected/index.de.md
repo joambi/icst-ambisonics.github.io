@@ -8,7 +8,7 @@ weight: 9
 tags: ["ambiencoder", "lua", "reaper", "automation", "presets"]
 key_points:
   - "Waehle, ordne und animiere Quellkreise effizient im ICST AmbiEncoder_64."
-  - "Speichere und lade Bewegungs-Presets fuer reproduzierbare Raum-Szenen."
+  - "Speichere und lade Bewegungs-Presets für reproduzierbare Raum-Szenen."
 ---
 
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts

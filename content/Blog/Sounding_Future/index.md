@@ -13,7 +13,6 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
 
-
 ![SoundingFuture](SoundingFuture.png)
 [sounding FUTURE](https://audiospace.soundingfuture.com/)
 
@@ -28,11 +27,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ## ICST B-Format Archive
 
-All Ambisonics B-formats are stored in ambiX.
+The ICST maintains an archive of works recorded and encoded in ambiX B-format.
 
-| Composer | Title | Duration | Format | Order | Channel ordering | Channels | SR | Bits | Listening | Downloads |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| AudioBrewers | AmbiTest_ambix_5th-order.wav | 4' | wav | ACN/SN3D | MaxRe | 35 | 48000 | 24 | Binaural | AmbiSpeakerTest |
+→ [Explore the B-Format Archive](https://audiospace.soundingfuture.com/tracks)
 
 ---
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

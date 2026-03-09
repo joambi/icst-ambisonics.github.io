@@ -8,8 +8,8 @@ weight: 1
 tags: ["osc", "syntax", "ambiencoder", "reference"]
 
 key_points:
-  - "Referenz fuer vollstaendige OSC-Adress- und Parameter-Syntax im AmbiEncoder."
-  - "Enthaelt AED/XYZ-Muster fuer index- und namensbasiertes Steuern."
+  - "Referenz für vollständige OSC-Adress- und Parameter-Syntax im AmbiEncoder."
+  - "Enthaelt AED/XYZ-Muster für index- und namensbasiertes Steuern."
 DisableComments: false
 ---
 
@@ -24,7 +24,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 Der **ICST AmbiEncoder** unterstützt **OSC** und **JavaScript**, was eine nahtlose Kommunikation mit OSC-Tools wie **TouchOSC, IanniX, MaxMSP** und andere OSC-fähige Software ermöglicht.
 Diese Seite ist die **Syntax-Referenz**.
-Fuer Quickstart und Debugging-Reihenfolge nutze:
+Für Quickstart und Debugging-Reihenfolge nutze:
 - [OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages](/post/osc-10-key-messages/)
 
 ## **OSC Syntax & Adressspezifikation**

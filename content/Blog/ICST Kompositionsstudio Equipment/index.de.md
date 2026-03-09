@@ -10,7 +10,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Zentrale Ausstattung und praktische Checkliste für die Arbeit im ICST Kompositionsstudio.
 
@@ -62,7 +62,7 @@ Zentrale Ausstattung und praktische Checkliste für die Arbeit im ICST Kompositi
     <a class="hero__link" href="https://www.power-plugs-sockets.com/switzerland/">Netzadapter (Schweiz / Typ J)</a>
     <a class="hero__link" href="/blog/icst-kompositionsstudio-regie/#additional-hubs-and-interfaces">Spezielle Connectoren</a>
   </div>
-  <p>Wenn Sie spezielle Connectoren wie MIDI/OSC oder andere Anschlüsse benötigen, bitte mitbringen und mit uns in Kontakt treten.</p>
+  <p>Wenn du spezielle Connectoren wie MIDI/OSC oder andere Anschlüsse benötigst, bring sie bitte mit und nimm mit uns Kontakt auf.</p>
 </details>
 
 ---

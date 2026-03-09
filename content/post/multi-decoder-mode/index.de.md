@@ -7,7 +7,7 @@ month: 2025-11
 weight: 11
 tags: ["decoder", "multi-decoder", "v3.2", "loudspeaker", "spatial audio"]
 key_points:
-  - "Richte parallele Decoder-Einheiten fuer mehrere Ziele ein und verstehe sie."
+  - "Richte parallele Decoder-Einheiten für mehrere Ziele ein und verstehe sie."
   - "Steuere Lautsprecher-Sets und Decoding-Parameter pro Decoder-Instanz."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
@@ -19,7 +19,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 **Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Studio-Engineer.
 
 
-Der **Multi-Decoder Modus**, eingeführt in **ICST AmbiDecoder v3.2**, ermöglicht es dir, bis zu **vier vollständig unabhängige Decoder** in einer einzelnen Plugin-Instanz auszuführen. Dies ist ideal für komplexe Lautsprechersetups, die unterschiedliche Sprecherarrays kombinieren — zum Beispiel einen Hauptambisonics-Ring zusammen mit Höhenlautsprechern, einer Subwoofer-Gruppe oder einem separaten Nahfeld-Array.
+Der **Multi-Decoder Modus**, eingeführt in **ICST AmbiDecoder v3.2**, ermöglicht es dir, bis zu **vier vollständig unabhängige Decoder** in einer einzelnen Plugin-Instanz auszuführen. Dies ist ideal für komplexe Lautsprechersetups, die unterschiedliche Lautsprecher-Arrays kombinieren, zum Beispiel einen Hauptambisonics-Ring zusammen mit Höhenlautsprechern, einer Subwoofer-Gruppe oder einem separaten Nahfeld-Array.
 
 ![Multi-Decoder overview](Multidecoder.png)
 
@@ -29,9 +29,9 @@ Der **Multi-Decoder Modus**, eingeführt in **ICST AmbiDecoder v3.2**, ermöglic
 
 Verwende den Multi-Decoder Modus, wenn dein Setup enthält:
 
-- **Mehrere Sprecherschichten** (z.B. horizontaler Ring + Höhenkuppel)
+- **Mehrere Lautsprecherschichten** (z.B. horizontaler Ring + Höhenkuppel)
 - **Mixed-Order Dekodierung** (z.B. 3. Ordnung für horizontal, 1. Ordnung für Höhe)
-- **Unterschiedliche Sprechergeometrien**, die separate Presets benötigen
+- **Unterschiedliche Lautsprechergeometrien**, die separate Presets benötigen
 - **Unabhängige Gain- und Filtereinstellungen** pro Lautsprechergruppe
 
 Für einfache Setups (einzelnes Array, einzelne Geometrie) ist der Standard-Single-Decoder-Modus ausreichend.
@@ -41,7 +41,7 @@ Für einfache Setups (einzelnes Array, einzelne Geometrie) ist der Standard-Sing
 ## Aktivierung des Multi-Decoder Modus
 
 1. Öffne das **ICST AmbiDecoder** Plugin in deiner REAPER FX-Kette.
-2. Im **Decoder Settings** Panel, finde die **Multi-Decoder** Schaltfläche.
+2. Im **Decoder-Settings-Panel** findest du die **Multi-Decoder** Schaltfläche.
 3. Aktiviere den Multi-Decoder Modus — vier Decoder-Slots (A, B, C, D) erscheinen.
 
 > [!Tip:]
@@ -64,7 +64,7 @@ Für jeden der vier Decoder kannst du einstellen:
 
 ### 3. Ambisonics-Reihenfolge
 - Stelle die **Dekodierreihenfolge unabhängig** pro Decoder ein (1. bis 7. Ordnung).
-- Niedrigere Ordnungen (1.–2.) eignen sich für spärliche oder schwierige Sprechergeometrien.
+- Niedrigere Ordnungen (1.–2.) eignen sich für spärliche oder schwierige Lautsprechergeometrien.
 - Höhere Ordnungen (3.–7.) geben präzisere Ortung für dichte Arrays.
 
 ### 4. Ambisonics-Gewichtung

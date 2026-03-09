@@ -14,7 +14,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 # **Überblick über das ICST Kompositionsstudio**
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Status April 2023
 
@@ -32,7 +32,7 @@ Status April 2023
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="https://www.rme-audio.de/downloads.html" target="_blank" rel="noopener noreferrer">RME MADI USB Treiber</a>
       <a class="hero__link" href="https://www.synaptics.com/products/displaylink-graphics/downloads" target="_blank" rel="noopener noreferrer">DisplayLink Treiber</a>
-      <a class="hero__link" href="/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/">Quick Start Guide</a>
+      <a class="hero__link" href="/blog/icst-kompositionsstudio-support/">Quick Start Guide</a>
     </div>
   </section>
 
@@ -66,7 +66,7 @@ Um im Kompositionsstudio mit dem eigenen Laptop zu arbeiten, bitte diese zwei Sc
     - **RME MADI USB Driver** (Mac / Windows) für die Audioverbindung
     - **DisplayLink** für die Videoverbindung
 
-👉 Siehe auch: **[Quick Start Guide](/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/)**
+👉 Siehe auch: **[Quick Start Guide](/blog/icst-kompositionsstudio-support/)**
 
 * * *
 
@@ -93,7 +93,7 @@ Abbildung: LSB Layer 2
 👉 Weitere Informationen: **[Speaker Settings](/blog/icst-kompositionsstudio-speaker-settings/)**
 
 * * *
-### **LSB – Mic/Line Einstellungen**
+### **LSB - Mic/Line Einstellungen**
 ![Mic/Line](Mic-Line.jpg)
 ****
 
@@ -108,7 +108,7 @@ Beispiel: Lichtsteuerung
 ### Zusätzliche Hubs und Interfaces
 
 Hinter der gebogenen Leinwand befindet sich zusätzliche Hardware:
-![Extron-Hun](Extron-Hub.jpeg)
+![Extron-Hub](Extron-Hub.jpeg)
 ### Extron Hub:
 1.  **Extron Hub** – Schnittstellen für zusätzliche Videoverbindungen und das Extron-Panel.
 2. **PureTools Converter** – VGA-Eingang für PC/Laptop.

@@ -1,17 +1,17 @@
 ---
 title: Ambisonics Audio erkunden
-description: "Ueberblick zur Klangkunstreihe Sounding Future und zur Erkundung immersiver Ambisonics-Klangerfahrungen."
+description: "Überblick zur Klangkunstreihe Sounding Future und zur Erkundung immersiver Ambisonics-Klangerfahrungen."
 date: 2025-06-11T15:09:00
 weight: 14
+languageCode: de
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
 
-## Online Hörenfolgen
+## Listen Online
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
-
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![SoundingFuture](SoundingFuture.png)
 [sounding FUTURE](https://audiospace.soundingfuture.com/)
@@ -27,11 +27,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ## ICST B-Format Archiv
 
-Alle Ambisonics B-Formate werden im ambiX-Format gespeichert.
+Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kodiert wurden.
 
-| Komponist | Titel | Länge | Format | Ordnung | Kanal-Ordnung | Kanäle | SR | Bits | Hörerlebnis | Downloads |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| AudioBrewers | AmbiTest_ambix_5th-order.wav | 4' | wav | ACN/SN3D | MaxRe | 35 | 48000 | 24 | Binaural | AmbiSpeakerTest |
+→ [Zum B-Format Archiv](https://audiospace.soundingfuture.com/tracks)
 
 ---
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

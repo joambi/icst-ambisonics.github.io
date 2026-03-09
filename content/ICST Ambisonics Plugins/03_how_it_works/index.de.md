@@ -13,11 +13,11 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 ### Intuitiver Ambisonics-Workflow mit ICST Plugins
 
 Die **ICST Ambisonics Plugins** sind für einen nahtlosen und intuitiven Workflow konzipiert.
-In diesem Tutorial zeigen wir Ihnen drei wesentliche **"Wie es funktioniert"** Workflows.
+In diesem Tutorial zeigen wir dir drei wesentliche **"Wie es funktioniert"** Workflows.
 
-### Einrichten eines Ambisonics-Workflows in Ihrer DAW
+### Einrichten eines Ambisonics-Workflows in deiner DAW
 
-Zum Erstellen von **Ambisonics-Inhalten** sollte Ihre Einrichtung folgende Komponenten umfassen:
+Zum Erstellen von **Ambisonics-Inhalten** sollte deine Einrichtung folgende Komponenten umfassen:
 
 - **Monoquellen** – Einzelne Soundquellen
 - **Encoder** – Positioniert oder bewegt Monoquellen im Ambisonics-Feld
@@ -26,7 +26,7 @@ Zum Erstellen von **Ambisonics-Inhalten** sollte Ihre Einrichtung folgende Kompo
 
 #### Signalfluss-Übersicht
 
-Nachstehend finden Sie eine schematische Darstellung eines **typischen Ambisonics-Workflows**:
+Nachstehend findest du eine schematische Darstellung eines **typischen Ambisonics-Workflows**:
   ![01_easyworkflow](01_easy_workflow.png)
 
 Das nächste Bild bietet einen **Überblick über den ICST Ambisonics Plugin-Signalfluss**:
@@ -44,7 +44,7 @@ In **Reaper** sieht der Signalfluss wie folgt aus:
 
 ![Ambi_Signalflow](Ambi_Signalflow.jpg)
 
-Natürlich können Sie Ihren Workflow auch anpassen, um Ihren Anforderungen zu entsprechen!
+Natürlich kannst du deinen Workflow auch anpassen, um deinen Anforderungen zu entsprechen!
 
 ----
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -4,6 +4,7 @@ description: "Zeigt, wie Blauerts Bänder per OSC zum IEM MultiEQ geleitet werde
 date: 2025-05-16
 slug: blauerts-bands
 aliases:
+  - /de/post/blauerts-bands/
   - /de/post/blauertsche_bänder/
   - /de/post/blauertsche_bänder/
 year: 2025
@@ -11,8 +12,8 @@ month: 2025-05
 weight: 10
 tags: ["perception", "psychoacoustics", "binaural", "theory"]
 key_points:
-  - "Verbinde Blauertsche Baender mit OSC-gesteuerter EQ-Kontrolle im Spatial-Workflow."
-  - "Nutze Frequenz-Richtungs-Mapping fuer bessere Front/Back- und Hoehenwahrnehmung."
+  - "Verbinde Blauertsche Bänder mit OSC-gesteuerter EQ-Kontrolle im Spatial-Workflow."
+  - "Nutze Frequenz-Richtungs-Mapping für bessere Front/Back- und Höhenwahrnehmung."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 

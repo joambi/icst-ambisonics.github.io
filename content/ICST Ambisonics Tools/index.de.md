@@ -36,7 +36,7 @@ Die **ICST Ambisonics Tools** werden unter der **Revised BSD License** verteilt 
 
 #### **Installation**
 
-Installieren Sie die **ICST Ambisonics Tools** in **Max 8+** über den **Package Manager**:
+Installiere die **ICST Ambisonics Tools** in **Max 8+** über den **Package Manager**:
 
 ![max-external](Amb_Max.gif)
 

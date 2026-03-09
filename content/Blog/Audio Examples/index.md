@@ -15,7 +15,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
 
-Short preview snippets are hosted on this site. Full-length versions are linked externally to avoid GitHub Pages size limits.
+Short preview snippets are hosted on this site. Full-length versions are linked externally to avoid GitHub Page size limits.
 
 ### How To Listen
 <div class="hero__links">
@@ -28,15 +28,15 @@ Short preview snippets are hosted on this site. Full-length versions are linked 
 
 <div class="home-cards">
   <section class="home-card">
-    <h4>Example 01 · Binaural Preview</h4>
-    <p>Format: Binaural stereo · Preview duration: 60s</p>
+    <h4>3D-Audio-Test 01 · Binaural Preview</h4>
+    <p>Format: Binaural stereo · Preview duration: 4min</p>
     <audio controls preload="none">
       <source src="/audio/previews/example-01-binaural.ogg" type="audio/ogg">
       <source src="/audio/previews/example-01-binaural.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="https://music.apple.com/ch/album/english-suite-no-3-in-g-minor-bwv-808-ivb-les-agr%C3%A9ments/1702748649?i=1702749430" target="_blank" rel="noopener noreferrer">Full-Length Version</a>
+      <a class="hero__link hero__link--primary" href="[https://e.pcloud.link/publink/show?code=XZgkkGZzkPOKp87E2uqPOVuRrPscSJoUR37](https://e.pcloud.link/publink/show?code=XZgkkGZzkPOKp87E2uqPOVuRrPscSJoUR37)" target="_blank" rel="noopener noreferrer">Full-Length Version</a>
       <a class="hero__link" href="/audio/previews/example-01-binaural.ogg">Download Preview</a>
     </div>
   </section>

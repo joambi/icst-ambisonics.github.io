@@ -112,7 +112,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     [[menu.main]]
     name = "Listening"
     parent = "ascolta"
-    weight = 302
+    weight = 304
     url = "/blog/sounding_future/"
 
     [[menu.main]]
@@ -122,7 +122,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     url = "/blog/ascolta/"
 
   [[menu.main]]
-  name = "Tools/OSC"
+  name = "Docs"
   identifier = "tools-osc"
   weight = 400
   url = "#"

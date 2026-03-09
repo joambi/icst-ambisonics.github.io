@@ -9,7 +9,7 @@ tags: ["maxmsp", "osc", "ambimonitor", "ambiencoder", "bidirectional"]
 
 key_points:
   - "Richte bidirektionale OSC-Kommunikation zwischen MaxMSP und ICST-Plugins ein."
-  - "Synchronisiere Controller-Feedback und Plugin-Status fuer stabile Performance-Steuerung."
+  - "Synchronisiere Controller-Feedback und Plugin-Status für stabile Performance-Steuerung."
 DisableComments: false
 ---
 

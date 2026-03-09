@@ -7,7 +7,7 @@ month: 2025-07
 weight: 8
 tags: ["ambiencoder", "automation", "lua", "reaper"]
 key_points:
-  - "Nutze ReaScripts fuer strukturierte Bewegungsgenerierung und Preset-Workflows."
+  - "Nutze ReaScripts für strukturierte Bewegungsgenerierung und Preset-Workflows."
   - "Setze Spiral- und Automations-Tools direkt in Produktionssessions ein."
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
@@ -56,7 +56,7 @@ DOWNLOAD ICST LuaScripts:
     - "Load ReaScript" > wähle die `.lua`-Datei aus
     - Mit [Add] zum Action List hinzufügen
 4. **Verwendung:**
-    - Selektiere einen Track mit geladenem' ICST AmbiEncoder_64'
+    - Selektiere einen Track mit geladenem `ICST AmbiEncoder_64`
     - Wähle im Arrange-Fenster eine Zeit-Selection
     - Starte das Script
     - Stelle Parameter im GUI ein (z.B. Schritte, Radius, Spread)
@@ -83,7 +83,7 @@ DOWNLOAD ICST LuaScripts:
 - Min Radius < 0.1 ist nicht erlaubt (Verhinderung unphysikalischer Spiralen)
 
 ---
-# Example:
+# Beispiel:
 
 Spiral_Walk_out:
 Spiral_Walk_in:

@@ -15,7 +15,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 * * *
 # ICST Support für das Kompositionsstudio
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 
 ### RME MadiFace USB-Treiber installieren
@@ -39,7 +39,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 ---
 
 **DisplayLink Manager installieren**  
-Download für Ihr System: [DisplayLink Manager für macOS](https://www.synaptics.com/products/displaylink-graphics/downloads/macos)
+Download für dein System: [DisplayLink Manager für macOS](https://www.synaptics.com/products/displaylink-graphics/downloads/macos)
 
 * * *
 

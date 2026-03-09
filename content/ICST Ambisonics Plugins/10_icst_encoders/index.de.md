@@ -18,7 +18,7 @@ Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule d
 Die **ICST AmbiEncoders** positionieren und bewegen Klangquellen innerhalb des Ambisonics-B-Format-Feldes. Zwei Encoder-Varianten stehen zur Verfügung:
 
 - **Mono-Encoder (A)** – Positioniert oder bewegt eine einzelne Mono-Quelle im 3D-Raum.
-- **Multi-Encoder (B)** – Positioniert oder bewegt bis zu 64 Quellen pro Audiospur, organisiert in bis zu 8 Gruppen. Jede Gruppe kann relativ zu ihrem Gruppenznentrum manipuliert werden, was komplexe räumliche Choreografien ermöglicht.
+- **Multi-Encoder (B)** – Positioniert oder bewegt bis zu 64 Quellen pro Audiospur, organisiert in bis zu 8 Gruppen. Jede Gruppe kann relativ zu ihrem Gruppenzentrum manipuliert werden, was komplexe räumliche Choreografien ermöglicht.
 
 Ein wesentliches Merkmal der ICST-Encoder ist die integrierte **Distanzsimulation**: Ein Distanz-Scaler wendet Tiefpassfilterung und einen einfachen Doppler-Effekt an, um Tiefen- und Nähewahrnehmung zu modellieren.
 
@@ -35,7 +35,7 @@ Ein- und ausgehende Parameter können über [OSC](https://en.wikipedia.org/wiki/
 
 ## Übersicht
 
-![[Overview AmbiEncoder.png]]
+![ICST AmbiEncoder overview](CleanShot 2026-03-04 at 14.27.47@2x.png)
 
 | Label | Beschreibung                                                        |
 | ----- | ------------------------------------------------------------------- |
@@ -51,29 +51,21 @@ Ein- und ausgehende Parameter können über [OSC](https://en.wikipedia.org/wiki/
 1. **Einstellungen** – Öffnet das Encoder-Einstellungsfenster
 2. **Hilfe** – Öffnet das Hilfefenster
 
-![[CleanShot 2026-03-04 at 15.04.30@2x.png]]
-
 ### Quellen-Fenster (3)
 
-![[CleanShot 2026-03-04 at 15.02.00@2x.png]]
+![AmbiEncoder source window](CleanShot 2026-03-04 at 15.02.00@2x.png)
 
 Zeigt und steuert einzelne Quellen. Jede Quelle kann nach Azimut, Elevation und Distanz positioniert werden.
 
 ### Encoding-Einstellungen (4)
 
-![[CleanShot 2026-03-04 at 15.02.47@2x.png]]
+![AmbiEncoder encoding settings](CleanShot 2026-03-04 at 15.02.47@2x.png)
 
 Konfiguriert die Ambisonics-Encoding-Parameter wie Ordnung und Kanalformat.
-
-![[CleanShot 2026-03-04 at 18.09.16.png]]
 
 ### Radar (5)
 
 Visuelle Draufsicht des Schallfeldes mit den aktuellen Positionen aller Quellen.
-
-#### Beispiel
-
-![[CleanShot 2026-03-04 at 18.03.59.png]]
 
 ---
 
@@ -94,15 +86,11 @@ Visuelle Draufsicht des Schallfeldes mit den aktuellen Positionen aller Quellen.
 9. **Infiniti** – Aktiviert den Unendlich-Distanz-Modus und platziert Quellen an der Fernfeld-Grenze
 10. **Gain / Lautstärke** – Regelt den Eingangs- oder Ausgangs-Gain des Encoders
 11. **Import & Export** – Importiert oder exportiert Quellkonfigurationen als Dateien
-12. **Gruppen-Editor** – Verwaltet Quellengruppen; jede Gruppe kann relativ zu ihrem Gruppenznentrum repositioniert werden
+12. **Gruppen-Editor** – Verwaltet Quellengruppen; jede Gruppe kann relativ zu ihrem Gruppenzentrum repositioniert werden
 
 #### Beispiel: Gruppen erstellen
 
-![[create groups.png]]
-
 #### Beispiel: Gruppenmanipulation & Animation
-
-![[2c34531a-ff69-490d-c9d0-e3ea82eb29b0.gif]]
 
 13. **Presets speichern & laden** – Speichert und lädt vollständige Encoder-Konfigurationen
 

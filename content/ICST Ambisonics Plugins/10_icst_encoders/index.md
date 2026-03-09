@@ -31,7 +31,7 @@ Incoming and outgoing parameters can be sent and received via [OSC](https://en.w
 
 ## Overview
 
-![[Overview AmbiEncoder.png]]
+![ICST AmbiEncoder overview](CleanShot 2026-03-04 at 14.27.47@2x.png)
 
 | Label | Description                                                |
 | ----- | ---------------------------------------------------------- |
@@ -46,29 +46,21 @@ Incoming and outgoing parameters can be sent and received via [OSC](https://en.w
 1. **Settings** – Opens the Encoder Settings window
 2. **Help** – Opens the Help window
 
-![[CleanShot 2026-03-04 at 15.04.30@2x.png]]
-
 ### Source Window (3)
 
-![[CleanShot 2026-03-04 at 15.02.00@2x.png]]
+![AmbiEncoder source window](CleanShot 2026-03-04 at 15.02.00@2x.png)
 
 Displays and controls individual sources. Each source can be positioned by azimuth, elevation, and distance.
 
 ### Encoding Settings (4)
 
-![[CleanShot 2026-03-04 at 15.02.47@2x.png]]
+![AmbiEncoder encoding settings](CleanShot 2026-03-04 at 15.02.47@2x.png)
 
 Configures the Ambisonics encoding parameters such as order and channel format.
-
-![[CleanShot 2026-03-04 at 18.09.16.png]]
 
 ### Radar (5)
 
 Visual top-down display of the sound field showing the current positions of all sources.
-
-#### Example
-
-![[CleanShot 2026-03-04 at 18.03.59.png]]
 
 ---
 
@@ -93,11 +85,7 @@ Visual top-down display of the sound field showing the current positions of all 
 
 #### Example: Create Groups
 
-![[create groups.png]]
-
 #### Example: Group Manipulation & Animation
-
-![[2c34531a-ff69-490d-c9d0-e3ea82eb29b0.gif]]
 
 13. **Save & Load Presets** – Stores and recalls complete encoder configurations
 

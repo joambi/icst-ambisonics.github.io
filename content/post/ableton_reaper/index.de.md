@@ -8,7 +8,7 @@ weight: 7
 tags: ["ableton", "reaper", "workflow", "ambiencoder", "tutorial", "blackhole"]
 
 key_points:
-  - "Verbinde Ableton Live mit Reaper fuer HOA-Aufnahme via BlackHole und LTC."
+  - "Verbinde Ableton Live mit Reaper für HOA-Aufnahme via BlackHole und LTC."
   - "Kombiniere OSC-Steuerung mit synchronisierter Mehrkanalaufnahme."
 DisableComments: false
 ---

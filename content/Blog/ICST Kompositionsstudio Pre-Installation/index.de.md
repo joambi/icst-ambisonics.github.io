@@ -10,9 +10,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-# Vorinstallation für Ihren externen Laptop
+# Vorinstallation für deinen externen Laptop
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 
 ### **AUDIO**
@@ -47,7 +47,7 @@ Wie in der Abbildung oben ist die Synchronisation korrekt.
 # Video / Screen
 
 **DisplayLink Manager installieren**  
-Den [DisplayLink Manager für macOS](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) für Ihr System herunterladen und installieren.
+Lade den [DisplayLink Manager für macOS](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) für dein System herunter und installiere ihn.
 
 #### **Tipp:**
 Damit der Curved Screen als ein großer Bildschirm erscheint, ist eine zusätzliche Einstellung auf dem Mac nötig.

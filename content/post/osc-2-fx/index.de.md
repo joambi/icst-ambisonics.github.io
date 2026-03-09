@@ -8,7 +8,7 @@ weight: 3
 tags: ["osc", "fx", "ambiencoder", "reaper", "automation"]
 
 key_points:
-  - "Mappe OSC-Streams auf FX-Parameter fuer raeumlich reaktive Verarbeitung."
+  - "Mappe OSC-Streams auf FX-Parameter für räumlich reaktive Verarbeitung."
   - "Baue robuste Signal- und Kontrollpfade zwischen Encoder und Effekten."
 DisableComments: false
 ---

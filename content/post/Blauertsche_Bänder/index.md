@@ -4,6 +4,7 @@ description: "Dokumentiert Blauerts Bänder sowie OSC-Routing und IEM MultiEQ-Fr
 date: 2025-05-16
 slug: blauerts-bands
 aliases:
+  - /post/blauerts-bands/
   - /post/blauertsche_bänder/
   - /post/blauertsche_bänder/
 year: 2025

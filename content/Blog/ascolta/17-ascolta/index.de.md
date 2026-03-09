@@ -1,6 +1,6 @@
 ---
 title: "Kommende ascolta Hörstunde"
-description: "Vorschau auf kommende ascolta Hoerstunden mit aktuellen Termin- und Programminformationen."
+description: "Vorschau auf kommende ascolta Hörstunden mit aktuellen Termin- und Programminformationen."
 date: 2099-12-31T00:00:00
 weight: 0
 hideDate: true
@@ -12,7 +12,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 # Kommende ascolta Akousmatische Hörstunde
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gaeste.
+**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 
 ![ascolta](ascolta.png)

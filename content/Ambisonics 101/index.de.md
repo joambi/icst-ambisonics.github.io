@@ -9,20 +9,119 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-## 1. Was ist Ambisonics?
-Ambisonics ist eine formatagnostische Methode, ein räumliches 3D-Klangfeld zu beschreiben. Statt direkt für ein fixes Lautsprecher-Layout zu mischen, arbeitet man mit einer räumlichen Repräsentation, die später für unterschiedliche Wiedergabesysteme gerendert werden kann.
+<style>
+.toc-card {
+  border: 1px solid #c8c8c8;
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  margin: 0.8rem 0 1.4rem 0;
+}
+.toc-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.toc-card ol {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+.toc-card li {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+.toc-card a {
+  text-decoration: none;
+}
+.toc-card a:hover {
+  text-decoration: underline;
+}
+.post__content h1 a,
+.post__content h2 a,
+.post__content h3 a {
+  color: #6086b4 !important;
+}
+</style>
 
-## 2. Was ist B-Format?
-Das B-Format ist das zentrale Signalformat von Ambisonics und trägt die räumlichen Informationen. In der Praxis werden Klangquellen ins B-Format codiert und anschließend für ein Ziel-Setup dekodiert, z. B. Kopfhörer, Stereo oder Lautsprecher-Arrays.
+<div class="toc-card">
+  <div class="toc-card__title">Inhaltsverzeichnis</div>
+  <ol>
+    <li><a href="#was-ist-ambisonics">Was ist Ambisonics?</a></li>
+    <li><a href="#was-ist-b-format">Was ist B-Format?</a></li>
+    <li><a href="#typische-setups">Typische Setups</a></li>
+    <li><a href="#kopfhoerer-vs-lautsprecher">Kopfhörer vs. Lautsprecher</a></li>
+    <li><a href="#immersive-vs-atmos">Wie unterscheidet sich Ambisonics von Immersive Audio, Dolby Atmos und Spatial Audio?</a></li>
+    <li><a href="#einstieg-am-icst">Einstieg am ICST</a></li>
+    <li><a href="#begriffssammlung-ambisonics">Begriffssammlung Ambisonics (Kurzreferenz)</a></li>
+  </ol>
+</div>
 
-## 3. Typische Setups
-Typische Setups reichen von kleinen Studio-Ringen über Höhenebenen bis zu individuellen Arrays im Kompositionsstudio. Dasselbe Ambisonics-Material kann über Dekodierung auf diese verschiedenen Setups angepasst werden.
+<a id="was-ist-ambisonics"></a>
+## 1. [Was ist Ambisonics?](https://de.wikipedia.org/wiki/Ambisonics)
+Ambisonics ist eine formatagnostische Methode, um ein räumliches 3D-Klangfeld zu beschreiben. Statt direkt für ein festes Lautsprecher-Layout zu mischen, arbeitet man mit einer räumlichen Repräsentation, die später für unterschiedliche Wiedergabesysteme gerendert werden kann.
 
+<a id="was-ist-b-format"></a>
+## 2. [Was ist B-Format?](https://ambisonic.info/ambisonics/channels.html)
+
+Das B-Format ist das zentrale Signalformat von Ambisonics und enthält die räumlichen Informationen. Klangquellen werden ins B-Format encodiert und anschließend für ein Ziel-Setup dekodiert, etwa für Kopfhörer, Stereo oder verschiedene Lautsprecher-Arrays.
+
+Es beschreibt einen Raumzustand um einen Hörpunkt herum, der aus Druck- und Richtungsanteilen besteht. In der ersten Ordnung bedeutet das:
+- `W` ist die omnidirektionale Komponente, also der Druck bzw. die Präsenz im Raum.
+- `X`, `Y` und `Z` sind gerichtete Anteile in drei Achsen (vorne-hinten, links-rechts, oben-unten), die angeben, aus welcher Richtung das Signal kommt.
+
+Im engeren, klassischen Sinn bezeichnet "B-Format" dieses vierkanalige Ambisonics-Format erster Ordnung (`W`, `X`, `Y`, `Z`). Im erweiterten Sinn kann man B-Format auch für höhere Ordnungen verwenden. Dann umfasst es alle Ambisonics-Koeffizienten bis zu einer bestimmten Ordnung, jeweils als eigener Audiokanal.
+
+Dieses Format kann anschließend auf verschiedene Ziel-Setups dekodiert werden, etwa auf Kopfhörer, Stereo oder Lautsprecher-Arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
+
+<a id="typische-setups"></a>
+## 3. [Typische Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
+Typische Setups reichen von kleinen Studio-Ringen über Höhenebenen bis hin zu individuellen Arrays im Kompositionsstudio. Dasselbe Ambisonics-Material kann durch Dekodierung an diese verschiedenen Setups angepasst werden.
+
+<a id="kopfhoerer-vs-lautsprecher"></a>
 ## 4. Kopfhörer vs. Lautsprecher
-Kopfhörer arbeiten mit binauralem Rendering und sind praktisch für Editing, Translation-Checks und Zusammenarbeit auf Distanz. Lautsprecher erzeugen ein physisches Klangfeld im Raum und bleiben zentral für Komposition, Tiefenwahrnehmung und künstlerische Bewertung.
+Kopfhörer arbeiten mit binauralem Rendering und sind praktisch für Editing, Translation-Checks und die Zusammenarbeit auf Distanz. Lautsprecher erzeugen ein physisches Klangfeld im Raum und bleiben zentral für Komposition, Tiefenwahrnehmung und künstlerische Bewertung.
 
-## 5. Einstieg am ICST
+<a id="immersive-vs-atmos"></a>
+## 5. Wie unterscheidet sich Ambisonics von Immersive Audio, Dolby Atmos und Spatial Audio?
+
+Ambisonics ist eine Form von Immersive Audio. Immersive Audio ist ein Oberbegriff für 3D-Audioverfahren, die ein vollständiges Klangfeld um die hörende Person erzeugen statt nur links/rechts.
+
+Dolby Atmos und Apple Spatial Audio verfolgen ein ähnliches Ziel wie Ambisonics, basieren jedoch meist auf objektbasierten Workflows. Ambisonics ist dagegen ein kanalbasiertes, feldorientiertes Verfahren. Die räumliche Information steckt im B-Format und wird erst beim Dekodieren an ein konkretes Wiedergabesystem angepasst.
+
+<a id="einstieg-am-icst"></a>
+## 6. Einstieg am ICST
+
+- Für Einsteiger:innen: [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
 - Starte mit den [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) für DAW-Workflows.
 - Nutze die [ICST Ambisonics Tools](/icst-ambisonics-tools/) für Max/MSP-Workflows.
 - Höre in [Ascolta](/blog/ascolta/) und nutze die Hörbeispiele als Referenz.
 - Gehe weiter mit den [Anleitungen & Tutorials](/post/).
+
+---
+<a id="begriffssammlung-ambisonics"></a>
+## 7. Begriffssammlung Ambisonics (Kurzreferenz)
+- **B-Format**: Das Ambisonics-Signalformat, das räumliche Informationen für die spätere Dekodierung speichert.  
+  Vertiefung (Wiki): [ICST Ambisonics Plugins Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
+- **Ambisonics-Order**: Räumliche Auflösungsstufe (z. B. 1st, 3rd, 7th order). Höhere Order bedeutet meist präzisere Lokalisation.  
+  Vertiefung (Wiki): [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
+- **Encoder**: Codiert eine Mono-/Stereo-Quelle mit Positionsdaten in Ambisonics (B-Format).  
+  Vertiefung (Wiki): [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
+- **Decoder**: Dekodiert B-Format für ein Zielsystem (Lautsprecher-Array, binaurale Kopfhörerausgabe usw.).  
+  Vertiefung (Wiki): [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
+- **Channel Count**: Anzahl der Kanäle im Ambisonics-Signalpfad; sollte im Routing durchgehend konsistent sein.  
+  Vertiefung (Wiki): [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
+- **Speaker Layout**: Physische Lautsprechergeometrie, auf die dekodiert und abgespielt wird.  
+  Vertiefung (Wiki): [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
+- **Binaural**: Kopfhörer-Rendering, das räumliche Richtungshinweise simuliert.  
+  Vertiefung (Wiki): [ICST Ambisonics Plugins Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
+- **OSC (Open Sound Control)**: Nachrichtenprotokoll zur Echtzeitsteuerung räumlicher Parameter.  
+  Vertiefung (Wiki): [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
+- **Yaw / Pitch / Roll**: Rotationsachsen für Orientierung und Bewegung im 3D-Raum.  
+  Vertiefung (Wiki): [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
+- **Azimut / Elevation**: Winkelkoordinaten zur Beschreibung horizontaler und vertikaler Quellrichtung.  
+  Vertiefung (Wiki): [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
+
+---
+
+Passende nächste Artikel:
+- [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
+- [OSC-Syntax für den ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)

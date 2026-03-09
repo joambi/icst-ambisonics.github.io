@@ -27,8 +27,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Audio Examples/index.md",
+                "file": "templates/TEMPLATE_Residency_Artist.de.md",
                 "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TEMPLATE_Residency_Artist.de"
+            }
+          },
+          {
+            "id": "237f4a997ac67dc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Blog/ascolta/15-ascolta/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "0dafd90d371067bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ambisonics @ ICST – Worum es hier geht.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ambisonics @ ICST – Worum es hier geht"
+            }
+          },
+          {
+            "id": "5319277c9e9994a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Blog/Audio Examples/index.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -36,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -68,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Encoder",
+                "query": "What",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 217.5
   },
   "right": {
     "id": "bfdd1d5de593f550",
@@ -157,13 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
+                "file": "content/ICST B-Format Archive.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Gliederung von ICST B-Format Archive"
             }
           },
           {
@@ -172,8 +214,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -182,77 +224,70 @@
             "state": {
               "type": "claude-code-view",
               "state": {},
-              "icon": "bot",
-              "title": "Claude Code"
+              "icon": "lucide-ghost",
+              "title": "claude-code-view"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 251.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1772788685528": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
       "daily-notes:Heutige Notiz öffnen": false,
       "templates:Vorlage einfügen": false,
       "command-palette:Befehlspalette öffnen": false,
-      "bases:Neue Base erstellen": false,
-      "obsidian-importer:Open Importer": false,
-      "github-sync:Sync with Remote": false,
-      "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "markdown-table-editor:Open Markdown Table Editor": false,
-      "DEVONlink-obsidian:DEVONlink": false,
-      "markitdown:Convert to Markdown": false,
-      "obsidian42-brat:BRAT": false,
-      "claude-code-integration:Open Claude Code": false,
-      "templater-obsidian:Templater": false
+      "bases:Neue Base erstellen": false
     }
   },
-  "active": "509c158b0a20f2c9",
+  "active": "5319277c9e9994a8",
   "lastOpenFiles": [
-    "content/Blog/ICST Kompositionsstudio Software/index.md",
-    "content/Blog/ICST Kompositionsstudio Speaker Settings/index.md",
-    "content/Blog/ICST Composer Studio Blog/index.md",
-    "deployment texte.md",
-    "Evernote/ICST Mono-AmbiEncoders/ICST Mono-AmbiEncoders.md",
-    "content/Audio Examples/index.md",
-    "content/Audio Examples/index.de.md",
+    "static/audio/ambitest bin.ogg",
+    "static/audio/ambitest bin.tmp.ogg",
+    "static/audio/narthex Youngjae Cho orig Binaural iTunes.ogg",
+    "static/audio/narthex Youngjae Cho orig Binaural iTunes.tmp.ogg",
+    "static/audio/narthex Youngjae Cho orig Binaural iTunes.wav",
+    "resources/_gen/assets/scss/main.scss_f8b11c0387470cdacc59f766aab067d1.json",
+    "resources/_gen/assets/scss/main.scss_f8b11c0387470cdacc59f766aab067d1.content",
+    "public/css/anatole.min.8c1d9be9942ff3dc9e578ba8d7eb67da19768a8cf664be52d88bfddabc2497d6.css",
+    "public/audio/ambitest bin.wav",
+    "static/audio/ambitest bin.wav",
+    "content/Blog/ascolta-listening-guide/index.de.md",
+    "content/Blog/ascolta-listening-guide/index.md",
+    "ASCOLTA Template.md",
     "Ambisonics @ ICST – Worum es hier geht.md",
-    "public/audio/previews/README.md",
-    "public/audio/previews",
-    "public/audio",
-    "static/audio/previews/README.md",
-    "static/audio/previews",
-    "static/audio",
-    "public/de/audio-examples/index.html",
-    "public/de/audio-examples",
-    "public/audio-examples/index.html",
-    "public/audio-examples",
-    "content/Audio Examples",
-    "public/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css",
-    "content/Ambisonics 101/index.de.md",
-    "content/Ambisonics 101/index.md",
-    "content/About/index.md",
-    "content/About/index.de.md",
-    "Clippings/Grassroots Ambisonics.md",
-    "content/ICST Ambisonics Plugins/08_icst_decoder/index.md",
-    "Clippings/Destinations  Integrations  GitGuardian.md",
-    "content/ICST Ambisonics Plugins/15_best_practices/index.de.md",
-    "content/ICST Ambisonics Plugins/13_osc/index.de.md",
-    "content/ICST Ambisonics Plugins/11_animator/index.de.md",
-    "content/ICST Ambisonics Plugins/10_icst_encoders/index.de.md",
-    "content/ICST Ambisonics Plugins/08_icst_decoder/index.de.md",
+    "Help's.md",
+    "content/ICST B-Format Archive.md",
+    "content/Blog/Audio Examples/index.md",
+    "content/Blog/download-pack-1-hoa-reaper-template/index.md",
+    "public/tags/icst-b-format-archive/index.xml",
+    "content/Blog/Sounding_Future/index.md",
     "Decodierung.md",
-    "ICST Studio Residenzen 2026.md",
-    "multi-decoder-mode.md",
+    "deployment texte.md",
+    "content/Links/index.md",
+    "post/blauerts-bands.md",
+    "post/osc-2-fx.md",
+    "templates/ASCOLTA_LISTENING_SESSION_TEMPLATE.de.md",
+    "#18 ascolta hörstunde.md",
+    "Untitled.md",
+    "content/Blog/ascolta/15-ascolta/index.md",
+    "2c34531a-ff69-490d-c9d0-e3ea82eb29b0.gif",
+    "templates/ascolta-ankuendigung-template.md",
+    "CLAUDE.md",
+    "docs/Evernote/icst-kompositionsstudio/Ambisonics Encoder and GyroOSC.md",
+    "templates/TEMPLATE_Residency_Artist.de.md",
+    "templates/TEMPLATE_Residency_Artist.md",
+    "content/Blog/ascolta/17-ascolta/index.md",
     "content/Blog/ascolta/_index.md",
+    "CleanShot 2026-03-09 at 12.08.46.png",
+    "public/blog/faq/Ableton2Reaper.canvas",
     "public/de/residenzen/icst-studio-residences-2025/GOPR4281.jpg",
     "public/de/residenzen/icst-studio-residences-2025/Lucas_Daniel.jpg",
     "public/de/residenzen/icst-studio-residences-2025/Youngjae_Cho.jpg",
@@ -261,9 +296,7 @@
     "public/de/residenzen/icst-studio-residences-2026/monoc-small-2.jpg",
     "public/de/residenzen/icst-studio-residences-2026/monoc-small-1.jpg",
     "content/post/Blauertsche_Bänder/Back.png",
-    "content/post/Blauertsche_Bänder/Front.png",
-    "content/post/Blauertsche_Bänder/8000hz.png",
-    "content/Blog/What_we_now/Ableton2Reaper.canvas",
+    "content/Blog/FAQ/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",
     "docs/blog/what_we_now/Ableton2Reaper.canvas"

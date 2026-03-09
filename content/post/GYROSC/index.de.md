@@ -8,7 +8,7 @@ weight: 6
 tags: ["gyrosc", "osc", "mobile", "ambiencoder", "reaper"]
 
 key_points:
-  - "Steuere Ambisonics-Bewegung mit Gyroscope-OSC-Daten vom Mobilgeraet."
+  - "Steuere Ambisonics-Bewegung mit Gyroscope-OSC-Daten vom Mobilgerät."
   - "Verbinde Echtzeit-Gesten mit reproduzierbarer Raum-Automation."
 author: Johannes Schuett
 ---
@@ -24,7 +24,7 @@ ICST MultiEncoder und iOS [GyrOSC.app ](https://www.bitshapesoftware.com/instrum
 
 Das folgende GIF zeigt, wie der ICST AmbiEncoder OSC-Daten von der GyrOSC-App empfängt.
 
- ![Example video:](GyroOSC_Demo.gif)
+ ![Beispielvideo](GyroOSC_Demo.gif)
 
 ### Funktionsweise:
 
@@ -53,7 +53,7 @@ Die GyrOSC-App sendet die 'Gravity'-Daten via OSC (Port 50001) zum ICST MultiEnc
 ![Reaper_GyrOSC](Reaper_GyrOSC.png)
 
 1.  Öffne das ICST AmbiEncoder_64 Plugin.
-2. Rufe die Encoder Settings auf.
+2. Rufe die Encoder-Settings auf.
 3. Öffne den _OSC IN_ Bereich und aktiviere OSC-IN (Port: 50001).
 4. Doppelklick im Feld _OSC-Message_ und gebe ein:
 
@@ -84,6 +84,5 @@ JS-Code:
 
 ---
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
-
 
 
