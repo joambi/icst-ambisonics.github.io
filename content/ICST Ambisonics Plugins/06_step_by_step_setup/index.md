@@ -53,7 +53,7 @@ Decoder routing for an Oktagon setup:
    - Press the **Speaker Test** button or test individual speakers.
    ![speaker_test](speaker_test.png)
 
-> [!Attention]
+> [!Warning]
 > Keep an eye on output volume.
 
 > [!Tip]

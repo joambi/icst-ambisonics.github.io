@@ -162,6 +162,9 @@ Dolby Atmos and Apple Spatial Audio pursue a similar goal, but are typically obj
 - Explore [Ascolta](/blog/ascolta/) for listening practice and references.
 - Continue with tutorials and articles in the [Blog & Tutorials](/post/).
 
+Ambisonics 101: Ten Essential Questions Answered  
+[Watch on YouTube](https://www.youtube.com/watch?v=95Hr3T5whsU&t=6s)
+
 ---
 <a id="ambisonics-glossary"></a>
 ## 7. Ambisonics Glossary (Quick Reference)

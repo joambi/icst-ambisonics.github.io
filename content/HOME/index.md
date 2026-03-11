@@ -15,10 +15,6 @@ tags:
 
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
----
-🚧 This blog is currently being edited!
-
----------------------------------------------------------------------
 # HOME of the ICST Ambisonics
 
 - ### The ICST Ambisonics Plugins in the Reaper DAW

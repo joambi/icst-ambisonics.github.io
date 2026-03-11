@@ -1,8 +1,54 @@
 {{ define "main" }}
-  <div class="page_404">
-    <h1>404</h1>
-    <h2>{{ i18n "page_not_found" }}</h2>
-    <p>{{ i18n "page_does_not_exist" }}</p>
-    <p>{{ i18n "head_back" .Site.BaseURL | safeHTML }}</p>
+  <div class="post animated fadeInDown">
+    <div class="post__content">
+      <h1>404</h1>
+      <h2>{{ i18n "page_not_found" }}</h2>
+      <p>{{ i18n "page_does_not_exist" }}</p>
+      <p>{{ i18n "head_back" .Site.BaseURL | safeHTML }}</p>
+
+      <hr style="margin: 2rem 0;" />
+
+      {{ if eq .Site.Language.Lang "de" }}
+        <p><strong>Vielleicht hilft dir eines davon weiter:</strong></p>
+      {{ else }}
+        <p><strong>You might be looking for one of these:</strong></p>
+      {{ end }}
+
+      <div class="hero__links" style="flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+        {{ if eq .Site.Language.Lang "de" }}
+          <a class="hero__link hero__link--primary" href="/de/icst-ambisonics-plugins/04_quick_start/">
+            <i class="fas fa-play"></i>&nbsp;Quick Start
+          </a>
+          <a class="hero__link" href="/de/post/">
+            <i class="fas fa-graduation-cap"></i>&nbsp;Alle Tutorials
+          </a>
+          <a class="hero__link" href="/de/icst-ambisonics-plugins/">
+            <i class="fas fa-book-open"></i>&nbsp;Plugin Docs
+          </a>
+          <a class="hero__link" href="/de/search/">
+            <i class="fas fa-search"></i>&nbsp;Suche
+          </a>
+          <a class="hero__link" href="/de/">
+            <i class="fas fa-home"></i>&nbsp;Startseite
+          </a>
+        {{ else }}
+          <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">
+            <i class="fas fa-play"></i>&nbsp;Quick Start
+          </a>
+          <a class="hero__link" href="/post/">
+            <i class="fas fa-graduation-cap"></i>&nbsp;All Tutorials
+          </a>
+          <a class="hero__link" href="/icst-ambisonics-plugins/">
+            <i class="fas fa-book-open"></i>&nbsp;Plugin Docs
+          </a>
+          <a class="hero__link" href="/search/">
+            <i class="fas fa-search"></i>&nbsp;Search
+          </a>
+          <a class="hero__link" href="/">
+            <i class="fas fa-home"></i>&nbsp;Home
+          </a>
+        {{ end }}
+      </div>
+    </div>
   </div>
 {{ end }}

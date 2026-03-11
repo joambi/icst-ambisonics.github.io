@@ -41,7 +41,7 @@ Für einfache Setups (einzelnes Array, einzelne Geometrie) ist der Standard-Sing
 2. Im **Decoder-Settings-Panel** findest du die **Multi-Decoder** Schaltfläche.
 3. Aktiviere den Multi-Decoder Modus — vier Decoder-Slots (A, B, C, D) erscheinen.
 
-> [!Tip:]
+> [!Tip]
 > Jeder Decoder-Slot ist vollständig unabhängig und kann separat konfiguriert werden, ohne die anderen zu beeinflussen.
 
 ---
@@ -90,7 +90,7 @@ Ausgangskanäle werden sequenziell zugewiesen:
 
 Stelle sicher, dass dein REAPER-Track genug Ausgangskanäle konfiguriert hat, um alle Lautsprecher über alle vier Decoder zu decken.
 
-> [!Attention:]
+> [!Warning]
 > Überprüfe deine Track-Kanalanzahl und das Routing sorgfältig. Fehlende Kanäle führen zu stillen Lautsprechern ohne Fehlermeldung.
 
 ---

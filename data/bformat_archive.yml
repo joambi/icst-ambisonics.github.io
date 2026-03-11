@@ -1,0 +1,17 @@
+files:
+  - composer: AudioBrewers
+    composer_url: https://www.audiobrewers.com/
+    title: AmbiTest_ambix_5th-order.wav
+    duration_label: "4′"
+    duration_seconds: 240
+    format: WAV
+    order_label: 5th order
+    order_numeric: 5
+    normalisation: ACN/SN3D
+    channels: 36
+    sample_rate: 48000
+    bits: 24
+    listen_label: Binaural
+    listen_url: https://e.pcloud.link/publink/show?code=XZgkkGZzkPOKp87E2uqPOVuRrPscSJoUR37
+    download_label: ""
+    download_url: ""

@@ -267,6 +267,81 @@
   display: none;
 }
 
+.bformat-archive {
+  margin: 0.8rem 0 1.2rem;
+}
+
+.bformat-archive__controls {
+  display: grid;
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+
+  @media screen and (min-width: 721px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.bformat-archive__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 1.2rem;
+
+  span {
+    font-weight: 600;
+  }
+
+  input,
+  select {
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 0.45rem 0.55rem;
+    font-size: 1.25rem;
+
+    @include color.themed() {
+      color: color.t('primary');
+      border-color: color.t('primary-lighter');
+      background-color: color.t('accent');
+    }
+  }
+}
+
+.bformat-archive__table-wrap {
+  overflow-x: auto;
+}
+
+.bformat-archive__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+  font-size: 1.25rem;
+
+  th,
+  td {
+    padding: 0.5rem 0.6rem;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid;
+
+    @include color.themed() {
+      border-color: color.t('primary-lighter');
+    }
+  }
+
+  th {
+    font-weight: 700;
+
+    @include color.themed() {
+      background-color: color.t('primary-lighter');
+    }
+  }
+}
+
+.bformat-archive__empty {
+  margin-top: 0.6rem;
+  font-size: 1.25rem;
+}
+
 // Residenzen overview featured entry
 
 .archive__list-title--featured {

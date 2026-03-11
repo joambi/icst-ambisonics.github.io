@@ -1526,6 +1526,90 @@ hr {
   display: none;
 }
 
+.bformat-archive {
+  margin: 0.8rem 0 1.2rem;
+}
+
+.bformat-archive__controls {
+  display: grid;
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+@media screen and (min-width: 721px) {
+  .bformat-archive__controls {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.bformat-archive__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 1.2rem;
+}
+.bformat-archive__field span {
+  font-weight: 600;
+}
+.bformat-archive__field input,
+.bformat-archive__field select {
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 0.45rem 0.55rem;
+  font-size: 1.25rem;
+}
+.theme--light .bformat-archive__field input,
+.theme--light .bformat-archive__field select {
+  color: #464646;
+  border-color: #eeeeee;
+  background-color: #fff;
+}
+.theme--dark .bformat-archive__field input,
+.theme--dark .bformat-archive__field select {
+  color: #eeeeee;
+  border-color: #464646;
+  background-color: #152028;
+}
+
+.bformat-archive__table-wrap {
+  overflow-x: auto;
+}
+
+.bformat-archive__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+  font-size: 1.25rem;
+}
+.bformat-archive__table th,
+.bformat-archive__table td {
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid;
+}
+.theme--light .bformat-archive__table th,
+.theme--light .bformat-archive__table td {
+  border-color: #eeeeee;
+}
+.theme--dark .bformat-archive__table th,
+.theme--dark .bformat-archive__table td {
+  border-color: #464646;
+}
+.bformat-archive__table th {
+  font-weight: 700;
+}
+.theme--light .bformat-archive__table th {
+  background-color: #eeeeee;
+}
+.theme--dark .bformat-archive__table th {
+  background-color: #464646;
+}
+
+.bformat-archive__empty {
+  margin-top: 0.6rem;
+  font-size: 1.25rem;
+}
+
 .archive__list-title--featured {
   font-size: 2rem;
   font-weight: 700;

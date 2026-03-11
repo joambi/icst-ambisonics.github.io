@@ -41,7 +41,7 @@ For straightforward setups (single array, single geometry), the standard single-
 2. In the **Decoder Settings** panel, locate the **Multi-Decoder** toggle.
 3. Enable Multi-Decoder Mode — four decoder slots (A, B, C, D) will appear.
 
-> [!Tip:]
+> [!Tip]
 > Each decoder slot is fully independent and can be configured separately without affecting the others.
 
 ---
@@ -90,7 +90,7 @@ Output channels are assigned sequentially:
 
 Make sure your REAPER track has enough output channels configured to cover all speakers across all four decoders.
 
-> [!Attention:]
+> [!Warning]
 > Check your track channel count and routing carefully. Missing channels will result in silent speakers without any error message.
 
 ---

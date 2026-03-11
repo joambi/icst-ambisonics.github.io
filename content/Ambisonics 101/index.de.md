@@ -163,6 +163,9 @@ Dolby Atmos und Apple Spatial Audio verfolgen ein ähnliches Ziel wie Ambisonics
 - Höre in [Ascolta](/blog/ascolta/) und nutze die Hörbeispiele als Referenz.
 - Gehe weiter mit den [Anleitungen & Tutorials](/post/).
 
+Ambisonics 101: Ten Essential Questions Answered  
+[Auf YouTube ansehen](https://www.youtube.com/watch?v=95Hr3T5whsU&t=6s)
+
 ---
 <a id="begriffssammlung-ambisonics"></a>
 ## 7. Begriffssammlung Ambisonics (Kurzreferenz)

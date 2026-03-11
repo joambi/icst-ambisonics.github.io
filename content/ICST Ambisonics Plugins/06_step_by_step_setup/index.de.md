@@ -53,7 +53,7 @@ Decoder-Routing für ein Oktagon-Setup:
    - Nutze die Schaltfläche **Lautsprechertest** oder prüfe einzelne Lautsprecher.
    ![speaker_test](speaker_test.png)
 
-> [!Attention]
+> [!Warning]
 > Achte auf den Ausgangspegel.
 
 > [!Tip]

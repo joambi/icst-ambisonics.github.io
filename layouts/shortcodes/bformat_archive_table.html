@@ -1,0 +1,185 @@
+{{- $isDE := eq .Page.Site.Language.Lang "de" -}}
+{{- $files := site.Data.bformat_archive.files -}}
+{{- $id := printf "bformat-%d" .Ordinal -}}
+
+<div class="bformat-archive" id="{{ $id }}" data-bformat-archive>
+  <div class="bformat-archive__controls">
+    <label class="bformat-archive__field">
+      <span>{{ if $isDE }}Suche{{ else }}Search{{ end }}</span>
+      <input
+        type="search"
+        data-bformat-search
+        placeholder="{{ if $isDE }}Komponist, Titel, Format...{{ else }}Composer, title, format...{{ end }}"
+      >
+    </label>
+
+    <label class="bformat-archive__field">
+      <span>{{ if $isDE }}Order{{ else }}Order{{ end }}</span>
+      <select data-bformat-order-filter>
+        <option value="all">{{ if $isDE }}Alle{{ else }}All{{ end }}</option>
+        {{- $seenOrders := slice -}}
+        {{- range $files -}}
+          {{- if not (in $seenOrders .order_label) -}}
+            {{- $seenOrders = $seenOrders | append .order_label -}}
+            <option value="{{ lower .order_label }}">{{ .order_label }}</option>
+          {{- end -}}
+        {{- end -}}
+      </select>
+    </label>
+
+    <label class="bformat-archive__field">
+      <span>{{ if $isDE }}Sortierung{{ else }}Sort by{{ end }}</span>
+      <select data-bformat-sort-key>
+        <option value="title">{{ if $isDE }}Titel{{ else }}Title{{ end }}</option>
+        <option value="order">{{ if $isDE }}Order{{ else }}Order{{ end }}</option>
+        <option value="channels">{{ if $isDE }}Kanäle{{ else }}Channels{{ end }}</option>
+        <option value="sample_rate">SR</option>
+        <option value="bits">Bits</option>
+      </select>
+    </label>
+
+    <label class="bformat-archive__field">
+      <span>{{ if $isDE }}Richtung{{ else }}Direction{{ end }}</span>
+      <select data-bformat-sort-direction>
+        <option value="asc">{{ if $isDE }}Aufsteigend{{ else }}Ascending{{ end }}</option>
+        <option value="desc">{{ if $isDE }}Absteigend{{ else }}Descending{{ end }}</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="bformat-archive__table-wrap">
+    <table class="bformat-archive__table">
+      <thead>
+        <tr>
+          <th>{{ if $isDE }}Komponist{{ else }}Composer{{ end }}</th>
+          <th>{{ if $isDE }}Titel{{ else }}Title{{ end }}</th>
+          <th>{{ if $isDE }}Dauer{{ else }}Duration{{ end }}</th>
+          <th>Format</th>
+          <th>{{ if $isDE }}Order{{ else }}Order{{ end }}</th>
+          <th>{{ if $isDE }}Normierung{{ else }}Normalisation{{ end }}</th>
+          <th>{{ if $isDE }}Kanäle{{ else }}Channels{{ end }}</th>
+          <th>SR</th>
+          <th>Bits</th>
+          <th>{{ if $isDE }}Anhören{{ else }}Listen{{ end }}</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody data-bformat-body>
+        {{- range $files -}}
+          {{- $search := lower (printf "%s %s %s %s %s" .composer .title .format .order_label .normalisation) -}}
+          <tr
+            data-bformat-row
+            data-search="{{ $search }}"
+            data-order="{{ .order_numeric }}"
+            data-channels="{{ .channels }}"
+            data-sample-rate="{{ .sample_rate }}"
+            data-bits="{{ .bits }}"
+            data-title="{{ lower .title }}"
+            data-order-label="{{ lower .order_label }}"
+          >
+            <td>
+              {{- if .composer_url -}}
+                <a href="{{ .composer_url }}" target="_blank" rel="noopener noreferrer">{{ .composer }}</a>
+              {{- else -}}
+                {{ .composer }}
+              {{- end -}}
+            </td>
+            <td>{{ .title }}</td>
+            <td>{{ .duration_label }}</td>
+            <td>{{ .format }}</td>
+            <td>{{ .order_label }}</td>
+            <td>{{ .normalisation }}</td>
+            <td>{{ .channels }}</td>
+            <td>{{ .sample_rate }}</td>
+            <td>{{ .bits }}</td>
+            <td>
+              {{- if .listen_url -}}
+                <a href="{{ .listen_url }}" target="_blank" rel="noopener noreferrer">
+                  {{ if .listen_label }}{{ .listen_label }} ↗{{ else }}{{ if $isDE }}Anhören{{ else }}Listen{{ end }} ↗{{ end }}
+                </a>
+              {{- else -}}
+                —
+              {{- end -}}
+            </td>
+            <td>
+              {{- if .download_url -}}
+                <a href="{{ .download_url }}" target="_blank" rel="noopener noreferrer">
+                  {{ if .download_label }}{{ .download_label }}{{ else }}{{ if $isDE }}Download{{ else }}Download{{ end }}{{ end }}
+                </a>
+              {{- else -}}
+                —
+              {{- end -}}
+            </td>
+          </tr>
+        {{- end -}}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="bformat-archive__empty" data-bformat-empty hidden>
+    {{ if $isDE }}Keine Einträge für den aktuellen Filter gefunden.{{ else }}No entries found for the current filter.{{ end }}
+  </p>
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById("{{ $id }}");
+    if (!root) return;
+    var body = root.querySelector("[data-bformat-body]");
+    var rows = Array.prototype.slice.call(root.querySelectorAll("[data-bformat-row]"));
+    var search = root.querySelector("[data-bformat-search]");
+    var orderFilter = root.querySelector("[data-bformat-order-filter]");
+    var sortKey = root.querySelector("[data-bformat-sort-key]");
+    var sortDirection = root.querySelector("[data-bformat-sort-direction]");
+    var empty = root.querySelector("[data-bformat-empty]");
+
+    function getValue(row, key) {
+      if (key === "title") return row.getAttribute("data-title") || "";
+      if (key === "order") return Number(row.getAttribute("data-order") || "0");
+      if (key === "channels") return Number(row.getAttribute("data-channels") || "0");
+      if (key === "sample_rate") return Number(row.getAttribute("data-sample-rate") || "0");
+      if (key === "bits") return Number(row.getAttribute("data-bits") || "0");
+      return row.getAttribute("data-title") || "";
+    }
+
+    function filterRows() {
+      var q = (search.value || "").toLowerCase().trim();
+      var order = (orderFilter.value || "all").toLowerCase();
+      var visible = 0;
+      rows.forEach(function (row) {
+        var haystack = (row.getAttribute("data-search") || "").toLowerCase();
+        var rowOrder = (row.getAttribute("data-order-label") || "").toLowerCase();
+        var matchesQuery = !q || haystack.indexOf(q) !== -1;
+        var matchesOrder = order === "all" || rowOrder === order;
+        var show = matchesQuery && matchesOrder;
+        row.hidden = !show;
+        if (show) visible += 1;
+      });
+      empty.hidden = visible !== 0;
+    }
+
+    function sortRows() {
+      var key = sortKey.value || "title";
+      var dir = sortDirection.value === "desc" ? -1 : 1;
+      rows.sort(function (a, b) {
+        var av = getValue(a, key);
+        var bv = getValue(b, key);
+        if (typeof av === "number" && typeof bv === "number") return (av - bv) * dir;
+        return String(av).localeCompare(String(bv)) * dir;
+      });
+      rows.forEach(function (row) { body.appendChild(row); });
+    }
+
+    function refresh() {
+      sortRows();
+      filterRows();
+    }
+
+    [search, orderFilter, sortKey, sortDirection].forEach(function (el) {
+      el.addEventListener("input", refresh);
+      el.addEventListener("change", refresh);
+    });
+
+    refresh();
+  })();
+</script>
