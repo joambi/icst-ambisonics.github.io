@@ -39,7 +39,13 @@
             title="{{ $item.title }}"
           >
             {{ if $item.image }}
-              <img class="sidebar__social-image" src="{{ $item.image | relURL }}" alt="{{ $item.title }}" aria-hidden="true" />
+              {{ if in $item.image "zhdk-logo" }}
+                <span class="sidebar__social-image sidebar__social-image--zhdk" aria-hidden="true">
+                  {{ readFile (printf "static/%s" $item.image) | safeHTML }}
+                </span>
+              {{ else }}
+                <img class="sidebar__social-image" src="{{ $item.image | relURL }}" alt="{{ $item.title }}" aria-hidden="true" />
+              {{ end }}
             {{ else }}
               <i class="{{ $item.icon }} sidebar__social-icon" aria-hidden="true"></i>
             {{ end }}

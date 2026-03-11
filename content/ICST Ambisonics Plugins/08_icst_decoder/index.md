@@ -4,11 +4,6 @@ date: 2025-01-01T00:00:00
 weight: 80
 draft: false
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
-kannst du mir
 Institute for Computer Music and Sound Technology (ICST) · Zurich University of the Arts
 
 ---
@@ -107,7 +102,7 @@ This clear separation ensures transparency, modularity, and reproducible setups.
 
     ![Choose speaker preset](Choose_Quadro.gif)
 
-2. Open the _Speaker Settings_ window (gear icon → "Speaker"). Select one of the many standard presets or enter your own loudspeaker configuration.
+2. Open the _Speaker Settings_ window (gear icon → "Speaker"). Select one of the many standard presets or create your own loudspeaker preset.
 
     ![Speaker editing](Speaker_Editing.gif)
 
@@ -151,14 +146,44 @@ This enables a quick technical check of the entire system before rehearsal or pe
 
 ---
 
+
+
+### Quick Session Check (60 sec)
+
+Before rehearsal or recording, verify:
+
+1. **Routing active:** signal level is visible at the decoder input.
+2. **Speaker order correct:** "Test all speakers" follows the expected physical order.
+3. **Preset loaded:** correct preset (room / array / order) is active.
+4. **Order consistent:** decoder order matches the B-format source.
+5. **Monitoring clear:** speaker or binaural monitoring path is explicit (no unintended double monitoring).
+
+> [!Tip]
+> Save presets per room with a stable naming scheme, e.g.:
+> `RoomName_Array_Order_Date` (example: `ICST_Octagon_O5_2026-03`).
+
+### Troubleshooting (Quick)
+
+- **No decoder output:** verify send from Ambisonics bus to decoder track and confirm 64 channels.
+- **Wrong localization:** compare speaker preset with actual hardware output mapping.
+- **Diffuse height image:** check order/weighting and consider MultiDecoder layer separation.
+- **Unbalanced levels:** refine per-speaker filters and distance/delay settings in the speaker editor.
+- **Preset mismatch in a new room:** re-scale room dimensions and resave under a new preset name.
+
+### Next Step
+
+If your array uses multiple elevation layers (e.g. floor / mid / height), continue with:
+**[ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)**
+for layer-specific order, filtering, and speaker subsets.
+
 ## Save & Load Presets
 
 ![Save presets](save%20decoder%20presets.gif)
 
-Speaker configurations can be saved as presets and reloaded at any time. This ensures reproducibility across sessions and venues.
+Speaker presets can be saved and reloaded at any time. This ensures reproducibility across sessions and venues.
 
 > [!tip]
-> Export the speaker configuration as a TXT file and load it into the external `ambidecode~` object using a `coll`.
+> Export speaker preset data as a TXT file and load it into the external `ambidecode~` object using a `coll`.
 
 ![TXT export](CleanShot%202026-02-11%20at%2014.23.51@2x.png)
 

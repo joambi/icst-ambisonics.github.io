@@ -7,8 +7,6 @@ weight: 20
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
 ---
-
--
 # ICST Ambisonics Plugins v3.2 
 
 _**Now Available!**_

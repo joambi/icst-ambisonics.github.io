@@ -12,181 +12,216 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 ---
 ### Voraussetzungen
 
-Stelle vor dem Start sicher, dass du **Reaper**, die **ICST Ambisonics Plugins** und alle empfohlenen **3rd-Party-Plugins** installiert hast.
+Bevor du startest, stelle sicher, dass **Reaper**, die **ICST Ambisonics Plugins** und alle empfohlenen **Drittanbieter-Plugins** installiert sind.
 
-### Erstellen einer Reaper-Vorlage
+> [!Important]
+> Empfohlene Basis vor dem Start:
+> - Reaper-Projekt-Samplerate: **48 kHz**
+> - Alle Ambisonics-Spuren auf **64 Kanäle**
+> - ICST-Plugin-Set installiert und im FX-Browser sichtbar
+> - Ausgangszuordnung des Audio-Interfaces geprüft
 
-Wir werden die Vorlage Schritt für Schritt von oben nach unten erstellen.
+### Reaper-Vorlage erstellen
+
+Wir erstellen die Vorlage Schritt für Schritt von oben nach unten.
 
 #### 1. Reaper vorbereiten
 
-1. Öffne eine **neue, leere Reaper-Sitzung**.
-    ![empty_reaper](empty_reaper.png)
-2. Erstelle eine neue Spur (**Doppelklick** oder verwende das Menü).
-3. Benenne die Spur mit **Decoder** und entferne den Master-Bus.
-    ![01_dec](01_Decoder_A.gif)
+1. Öffne eine **neue, leere Reaper-Session**.
+   ![empty_reaper](empty_reaper.png)
+2. Erstelle eine neue Spur (**Doppelklick** oder über das Menü).
+3. Benenne die Spur **Decoder** und entferne den Master-Bus.
+   ![01_dec](01_Decoder_A.gif)
 
-> [!Tip:]
->  Erstelle alle Spuren mit **64 Kanälen** standardmäßig und behalte das **Routing** im Auge.
+> [!Tip]
+> Erstelle alle Spuren standardmäßig mit **64 Kanälen** und achte auf das Routing.
 
 #### 2. Decoder-Routing einrichten
 
--  **Decoder-Routing für ein Oktagon-Setup:**
-- **Eingaben:** 64 Kanäle vom "Bformat Master Track"
-- **Ausgaben**: 8 Kanäle zur Audio-Schnittstelle
-1. **ICST AmbiPlugins Decoder** im **FX-Fenster**.
+Decoder-Routing für ein Oktagon-Setup:
+- **Eingänge:** 64 Kanäle vom **Bformat Master**
+- **Ausgänge:** 8 Kanäle zum Audio-Interface
+
+1. Öffne den **ICST AmbiPlugins Decoder** im **FX-Fenster**.
    ![open__FX_decoder](FX_Decoder.png)
-2. Öffne den AmbiDecoder
+2. Öffne den AmbiDecoder.
    ![open_decoder](open_decoder.gif)
-3. Wähle eine **Lautsprecher-Voreinstellung** (z.B. Oktagon).
-    ![open_dec](choose_dec_preset.gif)
-4. **AmbiDecoder-Einstellungen anpassen**:
-- Ambisonics-Gewichtung
-- Ambisonics-Ordnung (1. bis 7. Ordnung)
-  ![Dec-setting](7_choose_dec_setting.gif)5. **Lautsprechertest durchführen**:
-	- Drücke die "Speaker Test"-Schaltfläche oder teste einzelne Lautsprecher.
-![speaker_test](speaker_test.png)
+3. Wähle ein **Lautsprecher-Preset** (z. B. Oktagon).
+   ![open_dec](choose_dec_preset.gif)
+4. Passe die AmbiDecoder-Einstellungen an:
+   - Ambisonics-Gewichtung
+   - Ambisonics-Ordnung (1. bis 7. Ordnung)
+   ![Dec-setting](7_choose_dec_setting.gif)
+5. Führe einen Lautsprechertest durch:
+   - Nutze die Schaltfläche **Lautsprechertest** oder prüfe einzelne Lautsprecher.
+   ![speaker_test](speaker_test.png)
 
-> [!Attention:]  Behalte den Lautstärkepegel im Auge!
+> [!Attention]
+> Achte auf den Ausgangspegel.
 
+> [!Tip]
+> **Routing-Schnellcheck (20 Sek.):**
+> 1. Sende Rosa Rauschen oder ein Testsignal in den Bformat Master.
+> 2. Prüfe Pegelaktivität am Decoder-Eingang.
+> 3. Starte den Lautsprechertest und verifiziere die physische Kanalreihenfolge.
 
-9. Erstelle den "Bformat-Master Track"
+#### 3. Bformat-Masterspur erstellen
+
+Erstelle die Spur **Bformat Master**:
+
 ![02_BF-Master | 700](02_BF-Master.gif)
 
-#### 3. Einen Bformat Master-Track erstellen
+- Diese Spur empfängt Signale von:
+  - Ambience Encodern
+  - B-Format-SFX
+  - B-Format-Playern
+- Sie ist der zentrale Aufnahme- und Render-Punkt für das finale **B-Format**.
+- Empfohlen: Spurfarbe **rot**.
+- Route zur **AmbiDecoder**-Spur und parallel zu einer **Binaural-Monitor**-Spur.
 
-- Der **Bformat Master Track** empfängt alle Signale von:
-- **Ambience Encodern**
-- **BFormat SFX**
-- **BFormat Playern**
-- Da dies der Master-Track ist, wird das endgültige **B-Format** hier aufgezeichnet oder durchgemischt.
-- Dieser Track ist **rot** gefärbt.
-- Er führt sowohl zum **AmbiDecoder** als auch parallel zu einem **Binauralen Track**.
+#### 4. Bformat-Player-Spur erstellen
 
-#### 4. Einen Bformat Player-Track erstellen
-
-- Erstelle einen **64-Kanal-Track** und route ihn in den **Bformat Master Track**.
+- Erstelle eine **64-Kanal-Spur** und route sie in den **Bformat Master**.
 
 ![bformat-player](bformat-player.png)
-> [!Tip:] Dies ermöglicht die Wiedergabe von **B-Format-Dateien von der 1. bis zur 7. Ordnung**.
 
-#### 5. Binaurales Hören aktivieren
+> [!Tip]
+> So kannst du **B-Format-Dateien von der 1. bis zur 7. Ordnung** abspielen.
 
-- Erstelle einen neuen **64-Kanal-Track** und lade ein **binaurales Plugin** (z.B. _DearVR Ambi Micro.vst3_).
-- Verschiebe den Track **nach oben**.
-- Route die Ausgabe vom **Format Master** zu diesem **Binauralen Decoder**.
-- **Schalte stumm den AmbiDecoder**, um nur das binaurale Decodersignal zu hören.
+#### 5. Binaurales Monitoring aktivieren
 
-> [!Tip:] Vergleiche mit _Solo/Mute_ zwischen AmbiDecoder und Binaural Decoder.
-
-
-![1.order_bf](first-order.png)
-Beispiel B zeigt ein 5th-Order B-Format Ambisonics.
-
-![5th-order_bf](5th-order-bf.png)
-Jetzt können wir B-Format-Dateien auf acht Lautsprecher abspielen und anhören.
-
-Um das B-Format über Kopfhörer abhören zu können, richten wir nun einen Binauralen Decoder ein:
-- Erstelle einen neuen **64-Kanal-Track** und lade ein **binaurales Plugin** deiner Wahl ins FX-Fenster (z.B. _DearVR Ambi Micro.vst3_).
-- Verschiebe den Track **an den Anfang** des Reaper-Racks.
-- Route die **Ausgabe des Bformat Master Tracks** zu diesem Binauralen Decoder (siehe GIF).
+- Erstelle eine neue **64-Kanal-Spur** und lade ein **binaurales Plugin** (z. B. _DearVR Ambi Micro.vst3_).
+- Verschiebe die Spur nach oben in deinem Reaper-Projekt.
+- Route den **Ausgang vom Bformat Master** auf diese Binaural-Spur.
+- Stummschalte den **AmbiDecoder**, wenn du nur binaural hören willst.
 
 ![Binaural-track](Binaural_Track.gif)
-- Schalte stumm den AmbiDecoder, um nur das binaurale Decodersignal zu hören.
 ![DearVR_binaural](DearVR_binaurl.png)
 
->[!Tip:]
->Vergleiche Solo/Mute zwischen AmbiDecoder und Binauraler Decoder.
+> [!Tip]
+> Vergleiche die Wiedergabe per **Solo/Stumm** zwischen AmbiDecoder und Binaural-Decoder.
 
-### 6. Monoquelle & Ambisonics Encoder
+![1.order_bf](first-order.png)
+Beispiel B unten zeigt eine B-Format-Datei in 5. Ordnung:
 
-- Erstelle einen neuen Track "Mono-Source" und lade eine Mono-Audiodatei.
+![5th-order_bf](5th-order-bf.png)
+Jetzt kannst du B-Format über Lautsprecher oder Kopfhörer kontrollieren.
 
-Tip: Sieh dir diesen [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=119s) an
+### Namenskonvention (empfohlen)
 
-12. Mono AmbieEncoder Übersicht.
-	![open monoencoder](MonoEncoder_01.png)
-    ![open_MonoEncoder](MonoEncoder_load.png)
-- Lade im FX-Fenster den ICST MonoEncoder.
-- Füge einen AmbiEncoder(ICST) (1-4) --> Mono-Encoder hinzu
+Nutze früh stabile Spur-Namen, um Routing-Fehler zu vermeiden:
+- `DECODER`
+- `BFORMAT_MASTER`
+- `BINAURAL_MONITOR`
+- `SRC_01` ... `SRC_08`
+- `MULTIENCODER_8SRC`
+
+### 6. Mono-Quelle und Ambisonics Encoder
+
+- Erstelle eine neue Spur **Mono-Quelle** und lade eine Mono-Audiodatei.
+
+Tip: Sieh dir dieses [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=119s) an.
+
+Mono-AmbiEncoder-Überblick:
+![open monoencoder](MonoEncoder_01.png)
+![open_MonoEncoder](MonoEncoder_load.png)
+
+- Lade im FX-Fenster den **ICST MonoEncoder**.
+- Füge einen **AmbiEncoder (ICST)** (1-4) zur Mono-Quelle hinzu.
+
 Routing:
-- MonoEncoder → 64-Kanal-Ausgang → Bformat Master.
+- MonoEncoder -> 64-Kanal-Ausgang -> Bformat Master
 
-  ![MonnoEncoder](MonoEncoder.png)
-#### 7. Bewegungen im Reaper-Track aufnehmen
+![MonnoEncoder](MonoEncoder.png)
 
- Nimm Bewegungen im MonoEncoder auf:
- ![rec_xyz](rec_xyz.gif)
+#### 7. Bewegungen in Reaper aufnehmen
 
- Gespeicherte Bewegung wiedergeben:
+Bewegungen im MonoEncoder aufnehmen:
+![rec_xyz](rec_xyz.gif)
 
+Gespeicherte Bewegung abspielen:
 ![play_xyt](play_xyz.gif)
 
-### 8. Verwenden des Multi-Encoders
+### 8. Multi-Encoder verwenden
 
-Im nächsten Beispiel zeige ich, wie wir den **Multi-Encoder** verwenden:
+Im nächsten Beispiel nutzen wir den **Multi-Encoder**:
 
-1. **Den Multi-Encoder-Track einfügen**
+1. **Multi-Encoder-Spur einfügen**
 
-    - Klicke mit der rechten Maustaste in den leeren Reaper-Spurbereich und wähle **"Spur aus Vorlage einfügen"**.
-    - Navigiere zu **ICST AmbiPlugins** und wähle **"ICST_AmbiEncoder_Multi_8src"**.
-    - Dies öffnet einen Multi-Encoder mit **8 Monoquellen**, bereits in den Encoder geroutet.
+   - Rechtsklick in einen leeren Spurbereich und **Spur aus Vorlage einfügen** wählen.
+   - Zu **ICST AmbiPlugins** navigieren und **ICST_AmbiEncoder_Multi_8src** wählen.
+   - Dadurch öffnet sich ein Multi-Encoder mit **8 Monoquellen**, bereits geroutet.
 
-    ![MultiEncoder_routing | 550](MultiEncoder_routing.png)
-	2. **Quellen im Multi-Encoder steuern**
+   ![MultiEncoder_routing | 550](MultiEncoder_routing.png)
 
-	- Wenn das Routing korrekt konfiguriert ist, kannst du jetzt die **Platzierung und Bewegung** von bis zu **8 Quellen** im Multi-Encoder steuern.
+2. **Quellen im Multi-Encoder steuern**
+
+   - Wenn das Routing korrekt ist, kannst du die **Position und Bewegung** von bis zu **8 Quellen** steuern.
+
 ### AmbiEncoder-Einstellungen
 
-  3. **AmbiEncoder-Einstellungen verstehen**- Die **AmbiEncoder-Einstellungen** sind entscheidend für deinen Workflow. - Das folgende GIF zeigt die wichtigsten **AmbiEncoder-Funktionen**:
+3. **AmbiEncoder-Einstellungen verstehen**
 
-        ![Enc_Settings](Enc_Settings.gif)
-	 ![Enc_Settings](Enc_Settings.gif)
+- Die AmbiEncoder-Einstellungen sind zentral für den Workflow.
+- Das folgende GIF zeigt wichtige Funktionen:
 
->[!Tip: ] Sieh dir das AmbiEncoder [Video-Tutorial](https://www.youtube.com/watch?v=aDa-vNWriLM&t=31s) an, um mehr Details zu erfahren.
+![Enc_Settings](Enc_Settings.gif)
 
-4. **ICST Distanzfunktion**
-    - Ein einzigartiges Merkmal des **ICST Ambisonics Encoders** ist seine **Distanzfunktion**, entwickelt von **Martin Neukom** am ICST.
-    - Diese Funktion ermöglicht es dir, verschiedene **räumliche Konfigurationen** zu erstellen und Bewegungsgeschwindigkeiten von sehr schnell bis extrem langsam zu simulieren.
-      ![Distanc_overview](Distance.gif)Detaillierte Anweisungen findest du im **Distance-Tutorial**.
+> [!Tip]
+> Sieh dir das AmbiEncoder-[Video-Tutorial](https://www.youtube.com/watch?v=aDa-vNWriLM&t=31s) für mehr Details an.
 
-> [!Tip:] Wenn du mit **Distanz** arbeitest, lege sie **am Anfang** deines Projekts fest, um alle **XYZ-Koordinaten** korrekt zu skalieren. _(Beispiel: Distanzskala von 0,0 bis 1,0).
+4. **ICST-Distanzfunktion**
 
-### Aufnahme & Bearbeitung von Quellbewegungen
+- Ein besonderes Merkmal des **ICST Ambisonics Encoders** ist die **Distanzfunktion**, entwickelt von **Martin Neukom** am ICST.
+- Sie ermöglicht verschiedene räumliche Konfigurationen mit sehr schnellen bis sehr langsamen Bewegungen.
+
+![Distanc_overview](Distance.gif)
+
+Für detaillierte Anleitungen siehe das **Distance-Tutorial**.
+
+> [!Tip]
+> Wenn du mit **Distanz** arbeitest, definiere sie zu Projektbeginn, damit die **XYZ-Skalierung** konsistent bleibt (Beispiel: `0.0` bis `1.0`).
+
+### Aufnahme und Bearbeitung von Quellbewegungen
+
+> [!Tip]
+> **Kurzleitfaden zu Automationsmodi:**
+> - **Write (Schreiben):** überschreibt komplett (ideal für den ersten Take)
+> - **Touch (Berühren):** schreibt nur während der aktiven Berührung
+> - **Latch (Halten):** schreibt nach erster Berührung bis Stop
+>
+> Für saubere Ergebnisse: erst in **Write (Schreiben)** aufnehmen, dann in **Touch (Berühren)** verfeinern.
 
 5. **Bewegungen im Multi-Encoder aufnehmen**
 
-    - Um zu verstehen, wie der Multi-Encoder funktioniert, gehen wir durch ein **Aufnahmebeispiel**:
-        - **Automatisierungshüllen** auf **"Schreiben"** setzen.
-        - Drücke **Play** (Leerzeichen) in Reaper und verschiebe **Src_1** im Multi-Encoder Radar.
-        - Wiederhole den Vorgang für andere Quellen.
+Zum Verständnis der Multi-Encoder-Logik:
+- Setze die Automationskurven auf **Write (Schreiben)**.
+- Drücke **Play** (Leertaste) und bewege **Src_1** im Multi-Encoder-Radar.
+- Wiederhole das für weitere Quellen.
 
-		MultiEnc_01_write:
-     ![MultiEnc_01_write](MultiEnc_01_write.gif)
+![MultiEnc_01_write](MultiEnc_01_write.gif)
+Beispiel mit **Src_3**:
+![Encoder_move_03](Move_03.gif)
 
-	  Hier ist ein Beispiel mit **Src_3**:
-
-       ![Encoder_move_03](Move_03.gif)
-
-Hier ist ein Beispiel mit **Src_3**: Der nächste Schritt zeigt, wie man die XYZ-Hüllen manuell bearbeitet.
+Im nächsten Schritt bearbeitest du XYZ-Kurven manuell:
 ![Manuel_edit](MultiEnc_Manuell_edit.gif)
 
-6. **XYZ-Hüllen manuell bearbeiten**
+6. **XYZ-Kurven manuell bearbeiten**
 
-	- Um Bewegungen zu verfeinern, passe die **XYZ-Hüllen** manuell an:
-	- Halte **Shift** und klicke auf die Hülle, um einen neuen Bearbeitungspunkt zu erstellen.
-	- Verschiebe den Punkt, um die **XYZ-Koordinaten** anzupassen.
+- Für feinere Bewegungen bearbeite die **XYZ-Kurven** manuell.
+- Halte **Shift** und klicke auf eine Kurve, um einen neuen Punkt zu erstellen.
+- Verschiebe den Punkt, um XYZ-Koordinaten anzupassen.
 
-7. Wiedergabe der aufgezeichneten Ambisonics-Szene
+7. **Aufgenommene Ambisonics-Szene abspielen**
 
 ![MultiEnc_plays_scene](play_multienc.gif)
 
 ### Arbeiten mit Gruppen
 
-8. **Eine Gruppe im Multi-Encoder erstellen**
+8. **Gruppe im Multi-Encoder erstellen**
 
-    - Wähle im **Radar-Display** mehrere **Src-Punkte**, um eine Gruppe zu bilden.
-    - Weise einen **Gruppennamen** zu (z.B. **G1**).
+- Wähle im **Radar-Display** mehrere **Src-Punkte**, um eine Gruppe zu bilden.
+- Vergib einen **Gruppennamen** (z. B. **G1**).
 
 ![create_a_GP](GP_select_scaled.png)
 ![GP_name](GP_edit_scaled.png)
@@ -194,43 +229,58 @@ Hier ist ein Beispiel mit **Src_3**: Der nächste Schritt zeigt, wie man die XYZ
 9. **Gruppenbewegungen aufnehmen**
 
 - Wähle einen Aufnahmemodus:
-    - **"Latch"** – Nimmt nur einen Quellpunkt auf.
-    - **"Touch"** – Startet die Aufnahme, wenn ein Punkt berührt wird.
-    - **"Write"** – Überschreibt vorherige Aufnahmen.
-     ![Rec_GP](Rec_GP.gif)
+  - **Latch (Halten):** schreibt nach erster Berührung
+  - **Touch (Berühren):** schreibt nur während Berührung
+  - **Write (Schreiben):** überschreibt vorhandene Automation
 
-	9. **Wiedergabe & Bewertung**
-     ![Play_GP](play_GP.gif)
-	- Höre die endgültige **Gruppenbewegungsaufnahme** über **Lautsprecher (Decoder)** oder **Kopfhörer (Binauraler Decoder)**.
+![Rec_GP](Rec_GP.gif)
 
-### Finalisierung & Export
+10. **Wiedergabe und Bewertung**
 
-11. **Rendering des B-Format Masters**
-	- Folge nach Zufriedenheit diesen Schritten, um das **B-Format zu exportieren**:
-	    - Wähle **Bformat-Master Track** und stelle ihn auf **Solo**.
-	    - Öffne **Menü > Rendern**.
+![Play_GP](play_GP.gif)
+
+- Höre die finale Gruppenbewegung über **Lautsprecher (Decoder)** oder **Kopfhörer (binauraler Decoder)**.
+
+### Finalisieren und Export
+
+### Pre-Render-Checkliste
+
+Vor dem Rendern prüfen:
+- **Bformat Master** ist auf Solo
+- Ambisonics-Format/Ordnung passt zur Ziel-Pipeline
+- Kein unbeabsichtigter Limiter/Kompressor im Master-Pfad
+- Dateiname enthält Ordnung und Take-Nummer (Beispiel: `scene01_O5_take03.wav`)
+
+11. **Bformat Master rendern**
+
+Wenn alles passt:
+- Spur **Bformat Master** auf **Solo** setzen
+- **Menü > Rendern** öffnen
 
 **Render-Einstellungen:**
 
-  ![Render_Master | 200](render-master.png)
+![Render_Master | 200](render-master.png)
 
+1. **Spur wählen (Stem-Render)** -> **Bformat Master**
+2. **Dateiname** -> B-Format-Dateinamen vergeben
+3. **Abtastrate** -> **48,000 Hz**
+4. **Kanäle** -> 64 (für **Ambisonics 7. Ordnung**)
+5. **Mehrkanalformat** -> **Mehrkanaldateien**
+6. **Unterstützung großer Dateien** -> **Wave/RF64**
+7. **Rendern** klicken
 
-1. **Track auswählen (Stem Render)** → Wähle **Bformat-Master**.
-2. **Dateiname** → Weise einen **B-Format-Dateinamen** zu.
-3. **Abtastrate** → 48.000 kHz.
-4. **Kanäle** → 64 (für **7. Ordnung Ambisonics**).
-5. **Mehrkanalige Format** → Auf **Mehrkanalige Dateien** einstellen.
-6. **Große Dateiunterstützung** → Verwende **Wave/RF64**.
-7. **Klicke auf "Rendern"**.
+Render-Info:
+![render-info](render_info.png)
+Nach dem Rendern zeigt Reaper ein **Render-Info**-Fenster mit Peak- und LUFS-Werten.
 
-Rendering-Info:
-     ![render-info](render_info.png)
-	Nach dem Rendering-Prozess erhältst du ein Rendering-Info-Fenster mit Peak- und LUFS-Informationen.
+12. Ziehe die gerenderte B-Format-Datei auf die **Bformat-Player**-Spur, setze sie auf **Solo**, und prüfe die Wiedergabe über ICST-Decoder oder binauralen Decoder.
 
-8. Das ist alles, jetzt kannst du dein B-Format auf den B-Format Player-Track ziehen und ablegen, es auf "Solo" stellen und das Endergebnis über den ICST Decoder oder den Binauralen Decoder anhören.
+### Troubleshooting (Kurz)
 
-
-🎧 Viel Spaß mit Ambisonics!
+- **Keine Bewegungswiedergabe:** Sichtbarkeit der Automationskurven und Write-/Touch-/Latch-Modus prüfen.
+- **Kein Decoder-Ausgang:** Send vom Bformat Master zum Decoder-Eingang kontrollieren.
+- **Falsche Lokalisation:** Lautsprechertest erneut durchführen und Hardware-Ausgangszuordnung prüfen.
+- **Nur binaural / keine Lautsprecher:** Stumm-/Solo-Status zwischen Decoder- und Binaural-Spur prüfen.
 
 ---
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -148,8 +148,14 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     [[menu.main]]
     name = "Downloads"
     parent = "tools-osc"
-    weight = 404
+    weight = 405
     url = "/blog/downloads/"
+
+    [[menu.main]]
+    name = "Best Practices"
+    parent = "tools-osc"
+    weight = 404
+    url = "/icst-ambisonics-plugins/15_best_practices/"
 
   [[menu.main]]
   name = "Links"

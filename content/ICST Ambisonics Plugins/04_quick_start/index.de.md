@@ -17,5 +17,20 @@ Starte schnell mit der **MultiEncoder-Vorlage** mit diesem einfachen Workflow:
 
 ![open_multiencoder_temp](open_multiencoder_temp.gif)
 
+> [!Tip]
+> **Kurz prüfen (30 Sek.):**
+> - Der **Bformat-Master** ist sichtbar.
+> - Der **Decoder-Track** ist geladen.
+> - Beim Abspielen eines Signals siehst du Aktivität im Routing/Metering.
+>
+> Wenn das passt, ist die Vorlage korrekt initialisiert.
+
+### Nächster Schritt
+
+Jetzt kannst du entweder:
+- direkt mit dem **MultiEncoder** Quellen platzieren und bewegen, oder
+- mit dem **[Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)** tiefer in Routing, Decoder und Recording einsteigen.
+
+
 ----
 <span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
