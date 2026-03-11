@@ -5,14 +5,9 @@ date: 2022-11-15T18:00:00
 weight: 3
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #03 ascolta Acousmatic Listening Session
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ![ascolta](ascolta.png)
 
@@ -54,6 +49,3 @@ Live improvisation in Ambisonics (3rd-order). A Year in Dark Shades is the work 
 **Hans Tutschku,** ICST Artist in Residency January 3 – January 15, 2020 | January 31 – February 13, 2022.
 **Remembering Japan** **(2020/22)** Cycle in 5 parts.
 We hear: part 1: immersion 09:58 min
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

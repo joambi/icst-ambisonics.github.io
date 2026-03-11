@@ -9,15 +9,11 @@ tags: ["tutorial", "reaper", "ambiencoder", "einstieg", "workflow"]
 key_points:
   - "Baue eine erste stabile Reaper-Ambisonics-Session in klaren Phasen auf."
   - "Verstehe zuerst den Monitoring-Backbone vor der Detailausfuehrung."
----
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "beginner"
 ---
 
-# Getting Started mit ICST Ambisonics Plugins in Reaper
 
 **Für wen:** Level: Beginner | Zielgruppe: Komponist:in, Studierende, Studio-Assistenz.
-
 
 Diese Seite ist die kompakte Onboarding-Version des vollständigen Docs-Workflows:
 [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/).

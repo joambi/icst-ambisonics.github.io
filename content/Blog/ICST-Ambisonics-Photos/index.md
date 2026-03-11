@@ -6,10 +6,6 @@ weight: 12
 group: "Studio"
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
 
 ### The ICST Kompositionsstudio
@@ -29,6 +25,3 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 ![Studio equipment](_AAA2498.jpg)
 
 ![Studio at work](_AAA2502.jpg)
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

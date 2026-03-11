@@ -5,9 +5,6 @@ date: 2025-06-11T15:09:00
 weight: 14
 group: "Listening"
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 ## Listen Online
 
@@ -30,6 +27,3 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 The ICST maintains an archive of works recorded and encoded in ambiX B-format.
 
 → [Explore the B-Format Archive](https://ambisonics.ch/blog/audio-examples/)
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

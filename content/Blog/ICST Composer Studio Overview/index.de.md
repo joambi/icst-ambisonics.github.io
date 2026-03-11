@@ -6,9 +6,6 @@ weight: 1
 group: "Studio"
 languageCode: de
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
@@ -23,6 +20,3 @@ Das ICST-Kompositionsstudio ist ein Surround-Studio mit 17 Geithain-Lautsprecher
 Raum: **ZT 3.D02 ICST Kompositionsstudio**
 
 Kontakt: [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

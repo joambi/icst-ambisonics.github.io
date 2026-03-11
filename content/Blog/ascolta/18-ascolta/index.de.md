@@ -5,10 +5,6 @@ date: 2026-04-02T18:00:00
 weight: 18
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 ![ascolta](ascolta.png)
 
 - Donnerstag, 2. April 2026, 18:00–19:00
@@ -22,7 +18,6 @@ _Freier Eintritt_
 Wenn der Raum zu hören beginnt, verändert sich auch die Zeit.  
 
 Für **#18 ascolta** öffnen wir ein akustisches Feld aus den **ICST Studio Residenzen 2025**: drei Positionen, drei unterschiedliche Arten, Erinnerung, Gegenwart und Imagination in Ambisonics zu verorten.
-
 
 ---
 
@@ -52,7 +47,4 @@ Das Vertraute verschiebt sich, bis Wahrnehmung selbst instabil wird und Erinneru
 
 Persönlicher Link: [Website](https://www.youngjaecho.com/about.html)
 
-
 ---
-
-<span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>

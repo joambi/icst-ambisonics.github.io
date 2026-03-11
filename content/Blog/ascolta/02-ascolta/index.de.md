@@ -5,14 +5,9 @@ date: 2022-10-04T18:00:00
 weight: 2
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #02 ascolta Akousmatische Hörstunde
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ![ascolta](ascolta.png)
 
@@ -117,6 +112,3 @@ nur im Verstand zu sehen ist,
 in das es durch die Ohren und nicht die Augen eindringt.
 Stille also,
 und statt zu schauen, höret nun.
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

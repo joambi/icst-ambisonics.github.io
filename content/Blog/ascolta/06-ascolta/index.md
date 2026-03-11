@@ -5,14 +5,9 @@ date: 2023-04-04T18:00:00
 weight: 6
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #06 ascolta Acousmatic Listening Session
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ![ascolta](ascolta.png)
 
@@ -49,6 +44,3 @@ In 2008 Zbigniew Karkowski was a guest at ICST and realized the piece 'No name' 
 
 [Zbigniew Karkowski - Wikipedia](https://en.wikipedia.org/wiki/Zbigniew_Karkowski) 
 <https://www.zhdk.ch/veranstaltung/50898>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

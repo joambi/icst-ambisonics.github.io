@@ -5,9 +5,6 @@ date: 2025-05-28T15:11:00
 weight: 4
 group: "Studio"
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
 
@@ -98,6 +95,3 @@ Software and plugin environment for production at the ICST Mac Pro.
   <a class="hero__link" href="/blog/downloads/">Downloads</a>
   <a class="hero__link" href="/residenzen/">Residencies</a>
 </div>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

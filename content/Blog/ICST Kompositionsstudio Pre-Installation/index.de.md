@@ -6,14 +6,10 @@ weight: 2
 group: "Residents"
 languageCode: de
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 # Vorinstallation für deinen externen Laptop
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ### **AUDIO**
 
@@ -72,6 +68,3 @@ Damit der Curved Screen als ein großer Bildschirm erscheint, ist eine zusätzli
 # Downloads
 
 → Alle Downloads sind zentral auf der Seite [Downloads](/blog/downloads/) verfügbar.
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

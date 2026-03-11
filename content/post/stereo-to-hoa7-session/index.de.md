@@ -9,15 +9,11 @@ tags: ["tutorial", "hoa7", "reaper", "ambisonics", "workflow"]
 key_points:
   - "Wechsle schrittweise von Stereo-Material zu einer HOA7-Session."
   - "Fokus auf sauberes Routing und renderfertigen Mehrkanal-Output."
----
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "intermediate"
 ---
 
-# Von Stereo zu HOA7: Eine Schritt-für-Schritt-Session
 
 **Für wen:** Level: Intermediate | Zielgruppe: Komponist:in, Producer.
-
 
 ## Warum es diesen Guide gibt
 Viele Nutzer:innen kennen Stereo-Produktion sehr gut, brauchen aber eine konkrete Brücke zu Higher-Order Ambisonics in einer realen Session.

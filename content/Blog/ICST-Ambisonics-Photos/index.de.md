@@ -7,10 +7,6 @@ group: "Studio"
 languageCode: de
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ### Das ICST Kompositionsstudio
@@ -30,6 +26,3 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 ![Studio equipment](_AAA2498.jpg)
 
 ![Studio at work](_AAA2502.jpg)
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

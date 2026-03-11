@@ -6,9 +6,6 @@ date: 2025-05-20T15:11:00
 weight: 11
 group: "Residents"
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
 
@@ -89,5 +86,3 @@ Preset views and reference layouts for fast setup in the ICST studio.
   <a class="hero__link" href="/blog/icst-kompositionsstudio-software/">Software</a>
   <a class="hero__link" href="/blog/icst-kompositionsstudio-ambisonics-setting/">Legacy Speaker Settings</a>
 </div>
-
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

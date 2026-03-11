@@ -5,14 +5,9 @@ date: 2023-04-04T18:00:00
 weight: 6
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #06 ascolta Akousmatische Hörstunde
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ![ascolta](ascolta.png)
 
@@ -51,6 +46,3 @@ Er studierte Komposition an der National Academy of Music in Göteborg, Schweden
 
 [Zbigniew Karkowski - Wikipedia](https://en.wikipedia.org/wiki/Zbigniew_Karkowski)
 <https://www.zhdk.ch/veranstaltung/50898>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -6,11 +6,7 @@ weight: 5
 group: "Studio"
 languageCode: de
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
----
-
--
 
 # **Überblick über das ICST Kompositionsstudio**
 
@@ -162,4 +158,3 @@ Hinter der gebogenen Leinwand befindet sich zusätzliche Hardware:
 </div>
 
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

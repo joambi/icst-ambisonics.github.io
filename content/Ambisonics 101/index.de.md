@@ -5,10 +5,6 @@ slug: ambisonics-101
 languageCode: de
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 <style>
 .toc-card {
   border: 1px solid #c8c8c8;

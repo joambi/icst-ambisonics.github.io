@@ -5,14 +5,9 @@ date: 2023-12-05T18:00:00
 weight: 9
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #09 ascolta Akousmatische Hörstunde
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ![ascolta](ascolta.png)
 
@@ -50,7 +45,3 @@ Hans Tutschku ist Komponist für Instrumental- und Elektroakustische Musik. 1982
 Improvisation mit Elektronik war über die letzten 35 Jahre eine Kernaktivität. Er ist Gewinner mehrerer internationaler Wettbewerbe, darunter: Hanns Eisler Preis, Bourges, CIMESP Sao Paulo, Prix Ars Electronica, Prix Noroit, Prix Musica Nova, ZKM Giga-Hertz, CIME ICEM und Klang!. 2005 erhielt er den Kulturpreis der Stadt Weimar.
 
 Neben seinen regulären Kursen an der Universität hat er internationale Workshops für Musiker und Nicht-Musiker zu Aspekten der Kunstschätzung, des Hörens, der Kreativität, der Komposition, der Improvisation, der Live-Elektronik und der Klangräumlichkeit in mehr als 20 Ländern gelehrt.
-
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

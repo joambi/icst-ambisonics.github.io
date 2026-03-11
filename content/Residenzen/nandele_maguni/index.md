@@ -6,10 +6,6 @@ build:
   render: always
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 ICST Artist in Residence from **16.06.2025 to 06.07.2025** (Studio-Residence)
 
 During his three-week ICST Studio Residency, Nandele Maguni produced a new release entitled “Kampfumo” based on his field recordings from Maputo.
@@ -32,6 +28,4 @@ At the ICST spatial audio studio, I’m experimenting with immersive technologie
 This is not just about sound but movement, memory, and space.  
 ![nandele_02](nandele_02.png)
 
-
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

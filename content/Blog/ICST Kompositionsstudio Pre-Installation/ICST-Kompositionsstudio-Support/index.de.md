@@ -7,16 +7,10 @@ group: "Residents"
 languageCode: de
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
-
 * * *
 # ICST Support für das Kompositionsstudio
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ### RME MadiFace USB-Treiber installieren
 
@@ -50,6 +44,3 @@ Download für dein System: [DisplayLink Manager für macOS](https://www.synaptic
 **Technischer Service A/V:**
 - [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch)
 - Mobile: +41 76 330 11 02
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

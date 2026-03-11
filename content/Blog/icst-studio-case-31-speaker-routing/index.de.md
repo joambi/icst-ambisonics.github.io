@@ -40,4 +40,3 @@ Dieser Case beschreibt die Routing-Logik im ICST Kompositionsstudio, damit Sessi
 
 ## Next step
 - [ICST Kompositionsstudio](/blog/icst-composer-studio-blog/)
-

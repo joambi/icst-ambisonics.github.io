@@ -9,9 +9,9 @@ tags: ["tutorial", "reaper", "ambisonics", "getting-started", "workflow"]
 key_points:
   - "Build a first working Ambisonics session in 30 minutes."
   - "Validate routing and monitoring before creative work."
+difficulty: "beginner"
 ---
 
-# Ambisonics in 30 Minutes: Your First Working Reaper Session Flow
 
 **For whom:** Level: Beginner | Audience: Composer, Student, Studio Assistant.
 
@@ -46,4 +46,3 @@ You want to start quickly with ICST Ambisonics plugins in Reaper, without spendi
 
 ## Next step
 - [OSC Syntax for the ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
-

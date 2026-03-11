@@ -11,10 +11,7 @@ key_points:
   - "Integriere Grapes-3D-Control in AmbiEncoder-OSC-Workflows."
   - "Halte Raumgesten flexibel ausserhalb fixer DAW-Automation."
 DisableComments: false
----
-
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "advanced"
 ---
 
 **Für wen:** Level: Intermediate | Zielgruppe: Spatial-Performer:in, Controller-Workflow-User.
@@ -30,4 +27,3 @@ Ein großer Vorteil dieser Methode ist, dass die 3D-Raumklang-Kontrolle nicht in
 Weitere Informationen findest du unter: https://grapes-3d.com/
 
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

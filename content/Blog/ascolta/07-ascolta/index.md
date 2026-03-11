@@ -5,14 +5,9 @@ date: 2023-06-06T18:00:00
 weight: 7
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #07 ascolta Acousmatic Listening Session
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ![ascolta](ascolta.png)
 
@@ -44,7 +39,6 @@ Artist in Residency  11.2. -24.2.2008
 **dark\_zurich**   5:11
 
 ![oliver](oliver.png)
-
 
 * * *
 
@@ -86,7 +80,4 @@ Gregory Marteau
 Artist in Residency  3.7. – 14.7.2017 | 12.1. – 22.1.2018
 
 **Khemenu** 8:19
-(1st Prize for ISAC-2023)   
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
+(1st Prize for ISAC-2023)

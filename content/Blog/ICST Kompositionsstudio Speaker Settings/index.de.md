@@ -7,9 +7,6 @@ weight: 11
 group: "Residents"
 languageCode: de
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
@@ -90,5 +87,3 @@ Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.
   <a class="hero__link" href="/blog/icst-kompositionsstudio-software/">Software</a>
   <a class="hero__link" href="/blog/icst-kompositionsstudio-ambisonics-setting/">Legacy Speaker Settings</a>
 </div>
-
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

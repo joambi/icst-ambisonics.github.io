@@ -40,4 +40,3 @@ This case explains the routing logic used in the ICST composition studio to keep
 
 ## Next step
 - [ICST Composition Studio](/blog/icst-composer-studio-blog/)
-

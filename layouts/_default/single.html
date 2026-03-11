@@ -43,6 +43,11 @@
             <em class="fas fa-stopwatch post__meta-icon"></em>
             <span class="post__meta-text">{{ i18n "reading_time" .ReadingTime }}</span>
           </li>
+          {{ with .Params.difficulty }}
+          <li class="post__meta-item">
+            <span class="difficulty-badge difficulty-badge--{{ . }}">{{ . }}</span>
+          </li>
+          {{ end }}
         </ul>
       {{ end }}
 

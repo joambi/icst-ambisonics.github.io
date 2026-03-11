@@ -10,10 +10,6 @@ group: "Studio"
 weight: 8
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 Für wen: Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Forschende, Studio-Besucher:in.
 
 Kurze Preview-Snippets werden auf dieser Website gehostet. Längere Vollversionen sind extern verlinkt, um die GitHub-Pages-Limits einzuhalten.

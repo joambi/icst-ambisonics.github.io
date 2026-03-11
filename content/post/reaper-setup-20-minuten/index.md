@@ -9,15 +9,11 @@ tags: ["reaper", "ambiencoder", "tutorial", "workflow"]
 key_points:
   - "Execute a fast 20-minute setup with direct docs links per step."
   - "Validate routing, movement, and monitoring in one short pass."
----
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "beginner"
 ---
 
-# Reaper Ambisonics Setup in 20 Minuten (ICST Workflow)
 
 **For whom:** Level: Beginner | Audience: Composer, Student, DAW newcomer.
-
 
 Diese Seite ist die **Ausfuehrungs-Checkliste** (klickorientiert).
 Fuer Onboarding-Logik und systematische Fehlersuche siehe:

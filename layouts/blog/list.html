@@ -83,7 +83,7 @@
               {{ end }}
             </div>
           </div>
-          {{ if not $latest.IsZero }}
+          {{ if and (not $latest.IsZero) (lt $latest.Year 2050) }}
             <div class="archive__list-date">
               {{ if eq $.Site.Language.Lang "de" }}Aktualisiert: {{ else }}Updated: {{ end }}
               {{ if isset $.Site.Params "listdateformat" }}

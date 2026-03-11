@@ -5,9 +5,6 @@ date: 2025-06-09T15:10:00
 weight: 3
 group: "Studio"
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
 
@@ -63,6 +60,3 @@ Core equipment and practical checklist for work at the ICST composition studio.
   </div>
   <p>Wenn Sie spezielle Connectors wie MIDI/OSC oder andere Anschluesse benoetigen, bitte mitbringen und mit uns in Kontakt treten.</p>
 </details>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

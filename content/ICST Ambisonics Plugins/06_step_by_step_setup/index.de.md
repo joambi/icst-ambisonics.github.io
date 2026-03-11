@@ -3,9 +3,6 @@ title: Schritt-für-Schritt-Setup
 weight: 70
 date: 2025-01-23T15:38:00
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 # Schritt-für-Schritt-Setup-Anleitung für die ICST AmbiPlugins in Reaper
 
@@ -281,6 +278,3 @@ Nach dem Rendern zeigt Reaper ein **Render-Info**-Fenster mit Peak- und LUFS-Wer
 - **Kein Decoder-Ausgang:** Send vom Bformat Master zum Decoder-Eingang kontrollieren.
 - **Falsche Lokalisation:** Lautsprechertest erneut durchführen und Hardware-Ausgangszuordnung prüfen.
 - **Nur binaural / keine Lautsprecher:** Stumm-/Solo-Status zwischen Decoder- und Binaural-Spur prüfen.
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

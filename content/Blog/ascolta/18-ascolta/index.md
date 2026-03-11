@@ -5,10 +5,6 @@ date: 2026-04-02T18:00:00
 weight: 18
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 ![ascolta](ascolta.png)
 
 - Thursday, 02 April 2026, 18:00–19:00
@@ -52,5 +48,3 @@ What seems familiar gradually destabilizes until memory returns as an acoustic p
 Personal link: [Website](https://www.youngjaecho.com/about.html)
 
 ---
-
-<span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>

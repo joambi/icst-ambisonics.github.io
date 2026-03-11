@@ -6,10 +6,6 @@ weight: 1
 group: "Listening"
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 <style>
 .season-section { margin-bottom: 1.5rem; }
 .season-label {

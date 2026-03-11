@@ -4,11 +4,7 @@ tags:
 title: How it Works
 date: 2025-02-01T19:26:00
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
----
-
--
 
 ### Intuitive Ambisonics Workflow with ICST Plugins
 
@@ -47,4 +43,3 @@ In **Reaper**, the signal flow appears as follows:
 Of course, you can also customize your workflow to fit your needs!
 
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

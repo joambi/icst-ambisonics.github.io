@@ -5,14 +5,9 @@ date: 2024-03-19T18:00:00
 weight: 10
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #10 ascolta Acousmatic Listening Session
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ![ascolta](ascolta.png)
 
@@ -64,6 +59,3 @@ Judy Klein, a composer and sound freak, lives in New York. She was born on April
 
 Source \[Wikipedia\]
 Link:<https://en.wikipedia.org/wiki/Judy_Klein>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

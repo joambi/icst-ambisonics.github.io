@@ -14,9 +14,7 @@ tags: ["perception", "psychoacoustics", "binaural", "theory"]
 key_points:
   - "Connect perceptual Blauert bands with OSC-driven EQ control in spatial workflows."
   - "Use frequency-direction mapping to improve front/back and height perception."
----
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "intermediate"
 ---
 
 <style>
@@ -67,10 +65,7 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 .step__text { font-size: 1.4rem; padding-top: 2px; }
 </style>
 
-# Blauert's Bands
-
 **For whom:** Level: Advanced | Audience: Psychoacoustics-focused composer/researcher.
-
 
 <div class="info-box">
 <strong>What this tutorial covers</strong>

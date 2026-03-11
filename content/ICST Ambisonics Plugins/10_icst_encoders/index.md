@@ -5,10 +5,6 @@ weight: 100
 draft: false
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # ICST AmbiEncoders
 
 The **ICST AmbiEncoders** position and move sound sources within the Ambisonics B-format field. Two encoder variants are available:
@@ -100,6 +96,3 @@ The ICST AmbiEncoders offer:
 - Distance simulation with lowpass filtering and Doppler effect
 - Full OSC integration (input, output, and JavaScript scripting)
 - Preset management for reproducible sessions
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>

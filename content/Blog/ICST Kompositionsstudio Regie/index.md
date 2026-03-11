@@ -5,11 +5,7 @@ date: 2025-04-08T15:11:00
 weight: 5
 group: "Studio"
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
----
-
--
 
 # **Overview of  the ICST Composition Studio**
 
@@ -161,4 +157,3 @@ Behind the curved screen you will find additional hardware:
 </div>
 
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

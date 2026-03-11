@@ -4,10 +4,6 @@ date: 2025-09-16T00:00:00
 hideDate: true
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 <style>
 /* ── Artist-in-Residence Cards — Anatole theme aligned ── */
 
@@ -161,5 +157,3 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 </div>
 
 ---
-
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -147,8 +147,6 @@ Dies ermöglicht eine schnelle technische Überprüfung des gesamten Systems vor
 
 ---
 
-
-
 ### Schnellcheck vor Session / Konzert (60 Sek.)
 
 Bevor du mit Probe oder Aufnahme startest, prüfe kurz:

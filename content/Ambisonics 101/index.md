@@ -4,10 +4,6 @@ description: A compact introduction to Ambisonics, B-format, typical setups, and
 slug: ambisonics-101
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 <style>
 .toc-card {
   border: 1px solid #c8c8c8;
@@ -99,25 +95,15 @@ Dolby Atmos and Apple Spatial Audio pursue a similar goal, but are typically obj
 <a id="ambisonics-glossary"></a>
 ## 7. Ambisonics Glossary (Quick Reference)
 - **B-Format**: The Ambisonics signal representation that stores spatial information for later decoding.  
-  Deep dive (Wiki): [ICST Ambisonics Plugins Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - **Ambisonics Order**: Spatial resolution level (e.g. 1st, 3rd, 7th order). Higher order usually means finer localization.  
-  Deep dive (Wiki): [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
 - **Encoder**: Converts a mono/stereo source into Ambisonics (B-format) with spatial position data.  
-  Deep dive (Wiki): [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
 - **Decoder**: Renders B-format to a target playback system (speaker array, binaural headphone output, etc.).  
-  Deep dive (Wiki): [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
 - **Channel Count**: Number of channels used in your Ambisonics path; must be consistent across routing.  
-  Deep dive (Wiki): [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
 - **Speaker Layout**: Physical loudspeaker geometry used for decoding and playback.  
-  Deep dive (Wiki): [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
 - **Binaural**: Headphone rendering method that simulates spatial direction cues.  
-  Deep dive (Wiki): [ICST Ambisonics Plugins Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - **OSC (Open Sound Control)**: Message protocol used to control spatial parameters in real time.  
-  Deep dive (Wiki): [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
 - **Yaw / Pitch / Roll**: Rotation axes used for orientation and motion control in 3D space.  
-  Deep dive (Wiki): [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
 - **Azimuth / Elevation**: Angle coordinates used to describe horizontal and vertical source direction.  
-  Deep dive (Wiki): [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
 
 ---
 

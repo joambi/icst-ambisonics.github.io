@@ -6,9 +6,6 @@ build:
   list: never
   render: always
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 ICST Artist in Residence vom **18.08.2025 bis 07.09.2025** (Studio-Residency)
 
@@ -22,4 +19,3 @@ Besuchen Sie Birós [Website](https://eur03.safelinks.protection.outlook.com/?ur
 Dániel Péter Biró und Lucas Fels nehmen Elemente auf, die für die Komposition relevant sind.
 
 -----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

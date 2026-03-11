@@ -6,10 +6,6 @@ tags:
 languageCode: de
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 Ambisonics.ch ist ein Tutorial- und Notizblog zu den ICST-Ambisonics-Tools und Plugins, entstanden aus Forschung und Lehre am Institute for Computer Music and Sound Technology (ICST) der Zürcher Hochschule der Künste. Im Fokus stehen praxisnahe Workflows, Lautsprecher-Setups und Ressourcen für 3D-Audio in DAWs, mit besonderem Schwerpunkt auf räumlichem Klang für Komposition, Sounddesign und immersive Medienproduktion.
 
 Ambisonics.ch versteht Ambisonics als Verbindung von Forschung, Studio-Praxis und künstlerischer Arbeit, nicht nur als technisches Wiedergabesystem. Im Zentrum stehen räumliche Hörsituationen, in denen B-Format und Ambisonics eingesetzt werden, um elektroakustische Werke, Residencies und künstlerische Projekte möglichst zugänglich und erfahrbar zu machen. Das ICST-Kompositionsstudio dient dabei als Labor, in dem Tools, Lautsprecher-Setups und künstlerische Positionen kontinuierlich erprobt und dokumentiert werden.
@@ -65,4 +61,3 @@ https://www.zhdk.ch/forschung/icst
 [www.zhdk.ch](http://www.zhdk.ch/ "http://www.zhdk.ch/")
 
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

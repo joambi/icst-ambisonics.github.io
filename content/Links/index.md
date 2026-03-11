@@ -8,9 +8,6 @@ weight: 10
 tags: []
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 ### ICST Ambisonics
 
 - [The ICST Ambisonics Tools](https://joambi.github.io/icst-ambisonics.github.io/icst-ambisonics-tools/)
@@ -63,7 +60,6 @@ Video: ['Into The Soundfield' - Michael Gerzon & Ambisonics at Oxford (Official 
 - [Rode](https://rode.com/de?uri=soundfield-by-rode&destination=%2Fapps%2F%7Buri%7D&status=302)
 - [Dear Reality](https://www.sennheiser.com/de-ch/immersive/dear-reality)
 - [Zylia](https://www.zylia.co/)
-
 
 ----
 
@@ -118,8 +114,4 @@ Video: ['Into The Soundfield' - Michael Gerzon & Ambisonics at Oxford (Official 
 - [Omnitone (Web Ambisonics Renderer)](https://github.com/GoogleChrome/omnitone)
 - [Envelop for Live](https://github.com/EnvelopSound/EnvelopForLive)
 
-
 No guarantee of completeness
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

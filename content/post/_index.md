@@ -4,9 +4,6 @@ title: Tutorials
 description: "Step-by-step tutorials for the ICST Ambisonics Plugins — OSC control, MaxMSP integration, Ableton Live workflow, GyrOSC, and more."
 author: Johannes Schuett
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 This page is the practical tutorial index for ICST Ambisonics workflows in REAPER and Max-based environments.
 Use it when you want step-by-step setup, OSC control patterns, automation examples, and production-ready routing guides.
 

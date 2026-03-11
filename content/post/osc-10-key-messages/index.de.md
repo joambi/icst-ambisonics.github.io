@@ -9,15 +9,11 @@ tags: ["osc", "ambiencoder", "tutorial", "reference"]
 key_points:
   - "Nutze die 10 wichtigsten OSC-Message-Typen für die Praxis."
   - "Arbeite mit einer kompakten Debug-Checkliste für Port, Format und Timing."
----
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "intermediate"
 ---
 
-# OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages
 
 **Für wen:** Level: Intermediate | Zielgruppe: Power-User, Technical Artist.
-
 
 Diese Seite ist der **Praxis-Quickstart**.
 Für die vollständige Adress- und Parameterreferenz siehe:

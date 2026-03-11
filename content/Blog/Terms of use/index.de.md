@@ -7,12 +7,8 @@ weight: 8
 group: "Residents"
 languageCode: de
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 * * *
 
@@ -44,4 +40,3 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 **Die nächste Studio-Nutzerin oder der nächste Studio-Nutzer wird es danken.**
 
 * * *
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

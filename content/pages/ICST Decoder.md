@@ -1,12 +1,8 @@
 ---
+title: "ICST Ambisonics Decoder"
 categories:
   - "ICST Ambisonics Plugins"
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
--
 
 Das Decoding ist die zentrale Schnittstelle zwischen dem Ambisonics-B-Format und der physischen Lautsprecherwiedergabe – seine Qualität entscheidet über räumliche Präzision, Tiefenstaffelung und Lokalisation.
 
@@ -70,7 +66,6 @@ Settings:
 > Video ICST Ambisonics Plugins Overview
 > https://www.youtube.com/watch?v=xkauhHMYt5k
 
-
 > [!info]
 > Wiki ICST Ambisonics Plugins
 > https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
@@ -114,7 +109,6 @@ Der Workflow in Reaper: schematisch dargestellt.
    ![](/icst-ambisonics-plugins/08_icst_decoder/CleanShot%202026-02-11%20at%2010.19.42@2x.png)
 7. Ein wichtiges Features ist die direkt eingebaute Audio-test Funktion:
 
-
    ### 8. Audio Test 
    ![](/icst-ambisonics-plugins/08_icst_decoder/Decoder%20Audio%20test.gif)
 9. Der Decoder erlaubt einen direkten Audio-test mit Pinknoise. Es lassen sich die einzelnen Lautsprecher manuell testen und/oder mit dem "test all speakers" in serie nacheinander im Uhrzeigersinn.
@@ -127,10 +121,8 @@ Der Workflow in Reaper: schematisch dargestellt.
 Export the speaker configuration as a txt file and load it into the external ‘ambidecode~’ with a ‘coll’.
 ![](/icst-ambisonics-plugins/08_icst_decoder/CleanShot%202026-02-11%20at%2014.23.51@2x.png)
 
-
 Example: 
 #### import speaker-setting.xml
-
 
 # Overview ICST MultiDecoder
 

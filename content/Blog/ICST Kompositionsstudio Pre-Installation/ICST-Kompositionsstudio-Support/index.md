@@ -6,16 +6,10 @@ weight: 7
 group: "Residents"
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
-
 * * *
 # ICST support for the composition studio
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ### Install RME MadiFace  USB Driver
 
@@ -49,6 +43,3 @@ Download for your system: [DisplayLink Manager for macOS](https://www.synaptics.
 **Technical Service A/V:** 
 - [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch)
 - mobile: +41 76 330 11 02
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

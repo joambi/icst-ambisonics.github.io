@@ -5,15 +5,9 @@ date: 2025-10-16T18:00:00
 weight: 16
 ---
 
-
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #16 ascolta Akousmatische Hörstunde
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ![ascolta](ascolta.png)
 
@@ -74,5 +68,3 @@ Jedes Beispiel wird in drei verschiedenen Versionen präsentiert:
 Präsentation: Johannes Schütt
 
 ---
-
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

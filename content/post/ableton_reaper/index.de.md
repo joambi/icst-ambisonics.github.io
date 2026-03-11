@@ -11,18 +11,13 @@ key_points:
   - "Verbinde Ableton Live mit Reaper für HOA-Aufnahme via BlackHole und LTC."
   - "Kombiniere OSC-Steuerung mit synchronisierter Mehrkanalaufnahme."
 DisableComments: false
+difficulty: "advanced"
 ---
-
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 
 * * *
 # AbletonLive zu ICST Ambisonics MultiEncoder in Reaper
 
 **Für wen:** Level: Advanced | Zielgruppe: Ableton/Reaper-Hybrid-Producer.
-
 
 Dieses Tutorial bietet eine detaillierte Anleitung zur Aufnahme von 7. Ordnung Ambisonics mit Ableton Live und Reaper. Es richtet sich an Benutzer mit grundlegenden Kenntnissen beider Programme. Wenn du mit den Konzepten von Ableton Live, Reaper und Ambisonics vertraut bist, sollten die Schritte einfach sein. Andernfalls können einige Abschnitte herausfordernd sein. In diesem Fall wird empfohlen, zuerst die Grundlagen dieser Software und der Ambisonics-Technologie zu erlernen.
 ### Ableton zu ICST MultiEncoder in Reaper
@@ -96,4 +91,3 @@ Tipp: Stelle sicher, dass du die gleichen OSC-Portnummern in Reaper verwendest. 
 Weitere Details findest du in der Dokumentation für Ableton Live, Reaper und den ICST MultiEncoder.
 
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -5,9 +5,6 @@ description: "Schritt-für-Schritt-Anleitungen für die ICST Ambisonics Plugins 
 author: Johannes Schuett
 languageCode: de
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 Diese Seite ist der praktische Anleitungsindex für ICST Ambisonics Workflows in REAPER und Max-basierten Umgebungen.
 Nutze ihn für Schritt-für-Schritt-Setups, OSC-Steuerung, Automationsbeispiele und produktionsreife Routing-Lösungen.
 

@@ -5,14 +5,9 @@ date: 2022-12-13T18:00:00
 weight: 4
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #04 ascolta Akousmatische Hörstunde
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ![ascolta](ascolta.png)
 
@@ -78,6 +73,3 @@ Diese riesige schwarze Glocke mit übermenschlicher Kraft trägt die Aufschrift:
 Ich beschließe die letzte Akousmatische Hörstunde dieses Jahres mit den Kirchenglocken der Reformierten Kirche Diessenhofen/TG.
 Die nächste Akousmatische Hörstunde findet nächstes Jahr statt.
 Ich wünsche euch Frieden und Ruhe über die Feiertage und alles Gute für das neue Jahr 2023!
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

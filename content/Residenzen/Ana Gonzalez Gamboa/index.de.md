@@ -7,12 +7,7 @@ build:
   render: always
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # Ana Gonzalez Gamboa
-
 
 ICST Artist in Residence vom **08.09.2025 bis 16.09.2025**
 (Studio-Residency)
@@ -29,6 +24,3 @@ Ana Gamboa lebt in Buenos Aires und wurde in Ambato, Ecuador geboren. Sie ist Ce
 Web: <https://anagonzalezgamboa0.wixsite.com/anagamboa>
 
 Ig: <https://www.instagram.com/ana___gamboa/>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

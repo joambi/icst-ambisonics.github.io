@@ -5,17 +5,11 @@ date: 2024-06-11T18:00:00
 weight: 11
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
-
 * * *
 
 # #11 ascolta Acousmatic Listening Session
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ![ascolta](ascolta.png)
 
@@ -80,6 +74,3 @@ Mario Mary composes mainly electro-acoustic works (_Fuite en avant_, premiered a
 
 * * *
 Quelle: <http://www.cdmc.asso.fr/en/ressources/compositeurs/biographies/mary-mario-marcelo-1961>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

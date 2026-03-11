@@ -3,9 +3,6 @@ title: Schnellstart
 weight: 60
 date: 2025-01-28T14:31:00
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 ## Schnellstart mit **ICST_AmbiPlugins_MultiEncoder.RPP**
 
@@ -31,6 +28,4 @@ Jetzt kannst du entweder:
 - direkt mit dem **MultiEncoder** Quellen platzieren und bewegen, oder
 - mit dem **[Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)** tiefer in Routing, Decoder und Recording einsteigen.
 
-
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

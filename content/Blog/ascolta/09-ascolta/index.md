@@ -5,14 +5,9 @@ date: 2023-12-05T18:00:00
 weight: 9
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #09 ascolta Acousmatic Listening Session
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ![ascolta](ascolta.png)
 
@@ -50,7 +45,3 @@ Hans Tutschku is a composer of instrumental and electroacoustic music. In 1982 h
 Improvisation with electronics has been a core activity over the past 35 years. He is the winner of several international competitions, among others: Hanns Eisler Preis, Bourges, CIMESP Sao Paulo, Prix Ars Electronica, Prix Noroit, Prix Musica Nova, ZKM Giga-Hertz, CIME ICEM and Klang!. In 2005 he received the culture prize of the city of Weimar.
 
 Besides his regular courses at the university, he has taught international workshops for musicians and non-musicians on aspects of art appreciation, listening, creativity, composition, improvisation, live-electronics, and sound spatialization in more than 20 countries.
-
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -5,10 +5,6 @@ weight: 90
 draft: false
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 > [!warning]
 > 🚧 This section is currently under construction.
 

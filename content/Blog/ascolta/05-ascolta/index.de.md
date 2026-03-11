@@ -5,14 +5,9 @@ date: 2023-03-14T18:00:00
 weight: 5
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #05 ascolta Akousmatische Hörstunde
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ![ascolta](ascolta.png)
 
@@ -58,6 +53,3 @@ Cathy Lane ist eine englische Komponistin, Soundkünstlerin und Akademikerin. Ih
 
 [cathylane.co.uk](http://cathylane.co.uk)
 <https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

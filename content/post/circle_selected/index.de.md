@@ -9,23 +9,18 @@ tags: ["ambiencoder", "lua", "reaper", "automation", "presets"]
 key_points:
   - "Waehle, ordne und animiere Quellkreise effizient im ICST AmbiEncoder_64."
   - "Speichere und lade Bewegungs-Presets für reproduzierbare Raum-Szenen."
----
-
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "intermediate"
 ---
 
 # ICST_AmbiEncoder_64_CircleSelected_Lua-Presets
 
 **Für wen:** Level: Intermediate | Zielgruppe: Reaper-Power-User, Performance Artist.
 
-
 ## 📃 Benutzer-Dokumentation
 **Script:** `ICST_AmbiEncoder_64_CircleSelected_Presets.lua`
 **Funktion:** Punkte des ICST AmbiEncoder_64 Plugins grafisch auswählen, im Kreis anordnen, bewegen (Rotation/RandomWalk) und als Preset speichern/laden.
 
 ![circleselected](Circle_Selected.gif)
-
 
 ---
 

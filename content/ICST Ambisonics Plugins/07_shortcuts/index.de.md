@@ -3,9 +3,6 @@ title: Tastaturkürzel
 weight: 140
 date: 2025-01-22T14:36:00
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **Aktionen in Encoder und Decoder verfügbar:**
 
@@ -22,13 +19,9 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 - **Punkt(e) um Gruppenpunkt(e) rotieren:** _Alt -> Drag-Drop Rotate-Around-Group-Symbol_
 - **Gruppe(n) um Ursprung rotieren:** _Alt -> Drag-Drop Rotate-Around-Origin-Symbol_
 
-
 **Stummschaltung & Solo** (direkt im Radar)
 
 - shift + control & 'm' [Stummschaltung]
 - shift + control & 's' [Solo]
 
 Referenz: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

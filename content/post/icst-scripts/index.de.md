@@ -9,16 +9,12 @@ tags: ["ambiencoder", "automation", "lua", "reaper"]
 key_points:
   - "Nutze ReaScripts für strukturierte Bewegungsgenerierung und Preset-Workflows."
   - "Setze Spiral- und Automations-Tools direkt in Produktionssessions ein."
----
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "advanced"
 ---
 
--
 # ICST AmbiEncoder_64 Spiral Walk - Dokumentation
 
 **Für wen:** Level: Advanced | Zielgruppe: ReaScript-User, Technical Artist.
-
 
 ### 🔍 **Funktion**
 

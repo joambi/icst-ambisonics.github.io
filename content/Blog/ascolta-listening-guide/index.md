@@ -39,4 +39,3 @@ Spatial listening can feel abstract at first. This page provides a simple method
 
 ## Next step
 - [ascolta](/blog/ascolta/)
-

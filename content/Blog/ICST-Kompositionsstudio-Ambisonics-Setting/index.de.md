@@ -7,10 +7,6 @@ group: "Studio"
 languageCode: de
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Ambisonics-Lautsprecher-Setup und Koordinaten
@@ -45,4 +41,3 @@ ICST Ambisonics Plugins Dokumentation:
 **Downloads:** → [Downloads](/blog/downloads/)
 
 * * *
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -5,14 +5,10 @@ date: 2025-06-03T15:10:00
 weight: 2
 group: "Residents"
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 # Pre-installation for your external laptop
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ### **AUDIO**
 
@@ -68,6 +64,3 @@ To get the curved screen as a single large screen, you need to make an additiona
 # Downloads
 
 → All downloads are centralized on the [Downloads](/blog/downloads/) page.
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

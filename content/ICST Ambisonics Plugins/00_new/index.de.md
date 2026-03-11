@@ -4,9 +4,6 @@ date: 2025-11-03T16:13:00
 weight: 20
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 # ICST Ambisonics Plugins v3.2
 
 _**Jetzt verfügbar!**_
@@ -110,6 +107,3 @@ Steuern Sie Gruppen über OSC mit **absoluten Euler-Winkeln**:
 - Absturz durch falsches Schließen von OSC-Fenstern behoben
 - Tutorial-Link im Hilfemenü aktualisiert
 - Lautsprecher-Test aktualisiert: White-Noise → **Pink-Noise**
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -11,16 +11,12 @@ key_points:
   - "Referenz für vollständige OSC-Adress- und Parameter-Syntax im AmbiEncoder."
   - "Enthaelt AED/XYZ-Muster für index- und namensbasiertes Steuern."
 DisableComments: false
----
-
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "intermediate"
 ---
 
 ## OSC Syntax für das ICST AmbiEncoder Plugin
 
 **Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Developer, Max/OSC-User.
-
 
 Der **ICST AmbiEncoder** unterstützt **OSC** und **JavaScript**, was eine nahtlose Kommunikation mit OSC-Tools wie **TouchOSC, IanniX, MaxMSP** und andere OSC-fähige Software ermöglicht.
 Diese Seite ist die **Syntax-Referenz**.
@@ -83,7 +79,6 @@ Nachrichten können sein:
 
 ![OSC IN-OUT](osc-in-out.png)
 
-
 **Hinweis:** Das Standard-Format der ICST AmbiPlugins sendet **Quellennamen als Symbole**. Max-Benutzer sollten eine **Custom OSC Message** definieren:
 
 ```
@@ -91,7 +86,6 @@ Nachrichten können sein:
 /icst/ambi/sourceindex/aed {i} {a} {e} {d}
 
 ```
-
 
 ![OSC-Out](osc.png)
 
@@ -105,9 +99,7 @@ Um **alle AmbiEncoder-Bewegungen** zum ICST AmbiDecoder zu senden:
 
 ![Edit_off](intern_osc2.png)
 
-
 ![Intern_osc_port](aktivate_osc.png)
-
 
 ![OSC_internal](Intern_osc.png)
 
@@ -115,4 +107,3 @@ Jetzt empfängt der AmbiDecoder **alle OSC-Nachrichten** von allen verbundenen A
 
 ---
 * * *
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

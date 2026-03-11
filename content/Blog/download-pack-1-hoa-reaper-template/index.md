@@ -35,4 +35,3 @@ Use this pack to reduce setup time and avoid common routing mistakes in first se
 
 ## Next step
 - [Downloads](/blog/downloads/)
-

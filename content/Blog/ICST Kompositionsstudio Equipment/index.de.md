@@ -6,9 +6,6 @@ weight: 3
 group: "Studio"
 languageCode: de
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
@@ -64,6 +61,3 @@ Zentrale Ausstattung und praktische Checkliste für die Arbeit im ICST Kompositi
   </div>
   <p>Wenn du spezielle Connectoren wie MIDI/OSC oder andere Anschlüsse benötigst, bring sie bitte mit und nimm mit uns Kontakt auf.</p>
 </details>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

@@ -5,14 +5,9 @@ date: 2023-10-24T18:00:00
 weight: 8
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #08 ascolta Akousmatische Hörstunde
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ![ascolta](ascolta.png)
 
@@ -74,6 +69,3 @@ zur Natur, zur Mutter Erde, zur Pachamama.
 * * *
 
 Zitiert von der Website von **[Mesias Maiguashca](https://maiguashca.de/) (2022)**
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

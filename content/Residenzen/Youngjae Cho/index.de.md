@@ -7,10 +7,6 @@ build:
   render: always
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # Youngjae Cho
 
 ICST Artist in Residence vom **07.07.2025 bis 27.07.2025** (Studio-Residenz)
@@ -46,5 +42,3 @@ Der am ICST entwickelte Workflow:
 5. Upscaling auf 7th-order ambiX für die Wiedergabe
 
 ---
-
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

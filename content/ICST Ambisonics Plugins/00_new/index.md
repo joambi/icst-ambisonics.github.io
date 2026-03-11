@@ -4,9 +4,6 @@ date: 2025-11-03T16:13:00
 weight: 20
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 # ICST Ambisonics Plugins v3.2 
 
 _**Now Available!**_
@@ -19,7 +16,6 @@ We’re pleased to announce **v3.2**, featuring a major update to the **Multi-De
 
 📖 **Full Documentation:**  
 🔗 [**Wiki**](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
-
 
 ---
 # ICST AmbiDecoder v3.2
@@ -112,6 +108,3 @@ Control groups via OSC using **absolute Euler angles**:
 - Crash caused by closing OSC windows in the wrong order resolved
 - Updated the tutorial link in the Help section
 - Speaker test updated: White-Noise → **Pink-Noise**
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

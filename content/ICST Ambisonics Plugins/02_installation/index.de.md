@@ -8,11 +8,6 @@ weight: 40
 tags:
 ---
 
-
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 ### 01_Installiere die ICST Ambisonics Plugins (OSX)
 
 1. Lade Reaper(DAW) (arm64/intel_64) von [reaper.fm](http://reaper.fm/) herunter
@@ -25,7 +20,6 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 8. Lade das ICST AmbiPlugin OSX-Installationsprogramm herunter: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 
    ![installer](installer.gif)
-
 
 ### Was wird durch 'ICST_AmbiPlugins_macOS' installiert:
 
@@ -69,4 +63,3 @@ VIDEO: [ICST Ambisonics Plugins – 01 – How to Install - YouTube](https://www
 Starte den PC neu!
 
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

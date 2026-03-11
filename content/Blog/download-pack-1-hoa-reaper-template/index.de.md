@@ -35,4 +35,3 @@ Das Paket reduziert Setup-Zeit und vermeidet typische Routing-Fehler in den erst
 
 ## Next step
 - [Downloads](/blog/downloads/)
-

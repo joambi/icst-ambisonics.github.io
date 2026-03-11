@@ -560,3 +560,29 @@
     color: color.t('primary-light');
   }
 }
+
+// ── Difficulty badges (tutorial list) ─────────────────────────────────────
+.difficulty-badge {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 1px 7px 2px;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+  text-transform: capitalize;
+  line-height: 1.6;
+}
+
+.theme--light {
+  .difficulty-badge--beginner    { background: #d6f0de; color: #1e6b38; }
+  .difficulty-badge--intermediate { background: #fef3cd; color: #7d5c00; }
+  .difficulty-badge--advanced    { background: #fde0e0; color: #8b1a1a; }
+}
+.theme--dark {
+  .difficulty-badge--beginner    { background: #1b3a25; color: #72d48a; }
+  .difficulty-badge--intermediate { background: #3a2e0a; color: #f5d060; }
+  .difficulty-badge--advanced    { background: #3a1515; color: #f08080; }
+}

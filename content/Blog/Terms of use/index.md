@@ -6,12 +6,8 @@ tags: []
 weight: 8
 group: "Residents"
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 * * *
 
@@ -43,4 +39,3 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 **The next studio user will thank them.**
 
 * * *
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

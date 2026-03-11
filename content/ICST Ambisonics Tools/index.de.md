@@ -1,12 +1,19 @@
 ---
+title: "ICST Ambisonics Tools"
+description: "MaxMSP Externals für Ambisonics Surround-Sound-Verarbeitung und 3D-Quellenkontrolle. Kostenlos, open source, verfügbar über den Max Package Manager."
+date: 2025-06-01T00:00:00
 tags:
 languageCode: de
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
----
-
----------------------------------------------------------------------
+<div class="hero__links" style="margin: 0 0 1.6rem;">
+  <a class="hero__link hero__link--primary" href="https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-download"></i>&nbsp;Download via Max Package Manager
+  </a>
+  <a class="hero__link" href="https://www.zhdk.ch/forschung/icst/software-downloads-5379" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-external-link-alt"></i>&nbsp;Alle ICST Software-Downloads
+  </a>
+</div>
 
 ### ICST Ambisonics Tools
 
@@ -56,7 +63,3 @@ Nachteile:
 
 > * Für Live Electronic
 > * Spezielle Performances
-
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

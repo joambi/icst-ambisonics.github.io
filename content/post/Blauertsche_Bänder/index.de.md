@@ -14,16 +14,11 @@ tags: ["perception", "psychoacoustics", "binaural", "theory"]
 key_points:
   - "Verbinde Blauertsche Bänder mit OSC-gesteuerter EQ-Kontrolle im Spatial-Workflow."
   - "Nutze Frequenz-Richtungs-Mapping für bessere Front/Back- und Höhenwahrnehmung."
----
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "intermediate"
 ---
 
--
-# Blauertsche Bänder:
 
 **Für wen:** Level: Advanced | Zielgruppe: psychoakustisch orientierte Komponist:innen/Researcher.
-
 
 Für die Stimme und ihre Richtungswahrnehmung habe ich Experimente mit den [Blauertsche Bänder](https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder) durchgeführt.
 ![Richtungsbänder | 400](Richtungsbänder.png)
@@ -54,7 +49,6 @@ Back:![Back](Back.png)
 1. Wie kann ich die Präsenz von vorne und hinten, sowie das Gefühl von Höhen und Tiefen hörbarer machen?
 2. Erstellte OSC-Kommunikation zwischen Encoder (Y,Z) & IEM MultiEQ (Blauertsche Bänder)
 3. Mono-Encoder FX-Chain "Blauertsche Bänder-Ambi" eingerichtet.
-
 
 ### Links:
 - [Blauertsche Bänder](https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder)

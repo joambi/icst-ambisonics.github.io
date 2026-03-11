@@ -22,7 +22,7 @@
       <ul class="archive__list">
         <li class="archive__list-item">
           <div class="archive__list-main">
-            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>{{ with .Params.difficulty }}<span class="difficulty-badge difficulty-badge--{{ . }}">{{ . }}</span>{{ end }}
             {{ $desc := .Description }}
             {{ if not $desc }}
               {{ $desc = .Summary | plainify | truncate 190 }}

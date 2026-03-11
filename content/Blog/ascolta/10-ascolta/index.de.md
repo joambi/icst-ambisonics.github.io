@@ -5,14 +5,9 @@ date: 2024-03-19T18:00:00
 weight: 10
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #10 ascolta Akousmatische Hörstunde
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ![ascolta](ascolta.png)
 
@@ -62,6 +57,3 @@ Judy Klein, eine Komponistin und Klang-Verrückte, lebt in New York. Sie wurde a
 
 Quelle \[Wikipedia\]
 Link:<https://en.wikipedia.org/wiki/Judy_Klein>
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

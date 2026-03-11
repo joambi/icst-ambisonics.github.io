@@ -5,10 +5,6 @@ weight: -1
 description: "Das ICST Kompositionsstudio an der ZHdK — ein Higher-Order Ambisonics Produktionsraum für elektroakustische Musik und Klangkunst."
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 ![ICST Kompositionsstudio](KompStudio.jpg)
 
 Das **ICST Kompositionsstudio** an der Zürcher Hochschule der Künste ist ein Produktionsraum für elektroakustische Musik und räumliche Klangkunst. Ausgestattet mit einem 31-Lautsprecher-Ambisonics-System (Geithain) sowie einer umfangreichen Software- und Hardware-Infrastruktur unterstützt es die Produktion, Erforschung und Aufführung immersiver Audioarbeiten.
@@ -23,7 +19,6 @@ Raum: **ZT 3.D02** · Kontakt: [johannes.schuett@zhdk.ch](mailto:johannes.schuet
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
-
 - [Equipment](/blog/icst-kompositionsstudio-equipment/)
 - [Software](/blog/icst-kompositionsstudio-software/)
 - [Speaker Setup](/blog/icst-kompositionsstudio-speaker-settings/)
@@ -33,5 +28,3 @@ Raum: **ZT 3.D02** · Kontakt: [johannes.schuett@zhdk.ch](mailto:johannes.schuet
 - [Artist Residencies](/residenzen/)
 - [ascolta](/blog/ascolta/)
 - [Downloads](/blog/downloads/)
-
-<span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>

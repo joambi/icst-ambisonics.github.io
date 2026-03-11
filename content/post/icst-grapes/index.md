@@ -11,10 +11,7 @@ key_points:
   - "Integrate Grapes 3D control with AmbiEncoder OSC workflows."
   - "Keep spatial gestures flexible outside fixed DAW automation."
 DisableComments: false
----
-
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "advanced"
 ---
 
 **For whom:** Level: Intermediate | Audience: Spatial performer, controller-based workflow user.
@@ -30,4 +27,3 @@ A major advantage of this method is that the 3D spatial sound control does not h
 For more information, see: https://grapes-3d.com/
 
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

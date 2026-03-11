@@ -11,18 +11,13 @@ key_points:
   - "Mappe OSC-Streams auf FX-Parameter für räumlich reaktive Verarbeitung."
   - "Baue robuste Signal- und Kontrollpfade zwischen Encoder und Effekten."
 DisableComments: false
----
-
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "advanced"
 ---
 
 --
 # ICST AmbiEncoder sendet OSC zu FX-Plugins-Parameter
 
 **Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Sound Engineer.
-
-
 
 ### Integration des ICST AmbiEncoder mit IEM FdnReverb via OSC
 
@@ -54,7 +49,4 @@ Dieses Beispiel zeigt eine einfache Synchronisierung zwischen **ICST AmbiEncoder
 
 Mit zunehmender Entfernung wird auch die Reverb-Intensität zunehmen. Experimentiere mit anderen Reverb-Parametern für zusätzliche Effekte.
 
-
-
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

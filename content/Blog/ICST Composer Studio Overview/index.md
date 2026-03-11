@@ -5,9 +5,6 @@ date: 2025-05-05T16:43:00
 weight: 1
 group: "Studio"
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
 
@@ -23,6 +20,3 @@ A Mac Pro is offering various software such as sequencers, HD-recording- and Sou
 Room: **ZT 3.D02 ICST Kompositionsstudio**
 
 Contact: [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

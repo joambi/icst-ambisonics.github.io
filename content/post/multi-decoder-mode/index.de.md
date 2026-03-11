@@ -9,15 +9,12 @@ tags: ["decoder", "multi-decoder", "v3.2", "loudspeaker", "spatial audio"]
 key_points:
   - "Richte parallele Decoder-Einheiten für mehrere Ziele ein und verstehe sie."
   - "Steuere Lautsprecher-Sets und Decoding-Parameter pro Decoder-Instanz."
----
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
+difficulty: "intermediate"
 ---
 
 # Multi-Decoder Modus
 
 **Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Studio-Engineer.
-
 
 Der **Multi-Decoder Modus**, eingeführt in **ICST AmbiDecoder v3.2**, ermöglicht es dir, bis zu **vier vollständig unabhängige Decoder** in einer einzelnen Plugin-Instanz auszuführen. Dies ist ideal für komplexe Lautsprechersetups, die unterschiedliche Lautsprecher-Arrays kombinieren, zum Beispiel einen Hauptambisonics-Ring zusammen mit Höhenlautsprechern, einer Subwoofer-Gruppe oder einem separaten Nahfeld-Array.
 
@@ -128,6 +125,3 @@ Dieses Setup ermöglicht eine feinabgestimmte Dekodierung für jede Schicht unab
 - 📖 [ICST AmbiDecoder Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - 📥 [Download v3.2](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 - 📺 [ICST Ambisonics Videos on YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

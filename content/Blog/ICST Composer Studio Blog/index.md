@@ -6,10 +6,6 @@ description: "The ICST Composition Studio at ZHdK — a higher-order Ambisonics 
 group: "Studio"
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 <style>
 /* ── ICST Studio page — Anatole theme aligned ── */
 
@@ -109,7 +105,6 @@ The **ICST Composition Studio** at the Zurich University of the Arts is a dedica
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
 
-
 <div class="studio-nav">
   <a href="/blog/icst-kompositionsstudio-equipment/"><i class="fas fa-microchip"></i> Equipment</a>
   <a href="/blog/icst-kompositionsstudio-software/"><i class="fas fa-laptop-code"></i> Software</a>
@@ -128,5 +123,3 @@ The **ICST Composition Studio** at the Zurich University of the Arts is a dedica
 </div>
 
 ---
-
-<span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>

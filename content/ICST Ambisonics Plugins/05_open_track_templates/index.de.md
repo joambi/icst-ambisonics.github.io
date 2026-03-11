@@ -3,11 +3,7 @@ date: 2025-01-27T14:32:00
 title: Spurvorlagen
 weight: 120
 ---
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
 
----
-
--
 ## 02 Spurvorlagen öffnen
 
 1. Klicke mit der rechten Maustaste in den leeren Spurbereich in **Reaper**.
@@ -21,4 +17,3 @@ Stelle sicher, dass das Audio-Routing zwischen Kanal-Spuren korrekt konfiguriert
 ![Track_template](Track_templates.gif)
 
 ----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

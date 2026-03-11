@@ -5,14 +5,9 @@ date: 2024-09-17T18:00:00
 weight: 12
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #12 ascolta Acousmatic Listening Session
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ![ascolta](ascolta.png)
 
@@ -162,5 +157,3 @@ Source: EMDocu (created: 25.08.1993 Source: Ruschkowski-Kartei 1989)
 In 1978 Katzer was elected a member of the Academy of Arts in East Berlin. In 1982 he founded the Studio for Electroacoustic Music "Studio for Electroacoustic Music" affiliated with the Music Department of the Academy of Arts, of which he was artistic director until 2005.
 
 ---
-
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>

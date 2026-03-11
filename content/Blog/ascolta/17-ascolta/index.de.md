@@ -6,14 +6,9 @@ weight: 0
 hideDate: true
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # Kommende ascolta Akousmatische Hörstunde
 
 **Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 
 ![ascolta](ascolta.png)
 
@@ -32,5 +27,3 @@ _Freier Eintritt_
 | Donnerstag, 21. Mai 2026 | 18:00–19:00 |
 
 ---
-
-<span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>

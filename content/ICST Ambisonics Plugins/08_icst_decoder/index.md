@@ -146,8 +146,6 @@ This enables a quick technical check of the entire system before rehearsal or pe
 
 ---
 
-
-
 ### Quick Session Check (60 sec)
 
 Before rehearsal or recording, verify:

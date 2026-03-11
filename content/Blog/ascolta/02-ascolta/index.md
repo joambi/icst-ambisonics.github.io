@@ -5,14 +5,9 @@ date: 2022-10-04T18:00:00
 weight: 2
 ---
 
-Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
-
----
-
 # #02 ascolta Acousmatic Listening Session
 
 **For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
-
 
 ![ascolta](ascolta.png)
 
@@ -117,6 +112,3 @@ is seen only in the mind,
 into which it enters through the ears and not the eyes.
 Silence, then,
 and rather than watching, now listen.
-
----
-<span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span>
