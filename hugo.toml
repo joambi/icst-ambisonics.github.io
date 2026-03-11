@@ -179,7 +179,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   name = "Terms and Conditions"
   weight = 3
   identifier = "Terms and Conditions"
-  url = "https://www.iubenda.com/terms-and-conditions/70769495"
+  url = "/terms-and-conditions/"
 
 
 [taxonomies]
