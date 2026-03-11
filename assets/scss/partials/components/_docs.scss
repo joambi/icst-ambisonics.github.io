@@ -482,3 +482,81 @@
     justify-content: center;
   }
 }
+
+// Homepage hero tagline — first H2 on the home page gets a larger, bolder treatment
+.post--home .post__content > h2:first-of-type {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  margin-bottom: 1.4rem;
+}
+
+// Homepage hero image — full-width, not capped at 720px
+.post--home .post__content > p:first-of-type > img,
+.post--home .post__content .home-hero-img img {
+  max-width: 100%;
+  max-height: none;
+}
+
+// Tool cards — side-by-side layout for Plugins vs. Max Tools section
+.tool-cards {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1.5rem 0 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .tool-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tool-card {
+  padding: 1.2rem 1.2rem 1rem;
+  border-radius: 10px;
+
+  @include color.themed() {
+    border: 1px solid color.t('primary-lighter');
+    background-color: color.t('accent');
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.55;
+    margin: 0 0 0.75rem;
+
+    @include color.themed() {
+      color: color.t('primary-light');
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0.5rem 0 0.75rem;
+    display: block;
+  }
+}
+
+// Home section divider — subtle label above a section break
+.home-section-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+
+  @include color.themed() {
+    color: color.t('primary-light');
+  }
+}

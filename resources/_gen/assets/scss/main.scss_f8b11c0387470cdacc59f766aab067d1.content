@@ -1734,6 +1734,83 @@ hr {
     justify-content: center;
   }
 }
+.post--home .post__content > h2:first-of-type {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  margin-bottom: 1.4rem;
+}
+
+.post--home .post__content > p:first-of-type > img,
+.post--home .post__content .home-hero-img img {
+  max-width: 100%;
+  max-height: none;
+}
+
+.tool-cards {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1.5rem 0 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .tool-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.tool-card {
+  padding: 1.2rem 1.2rem 1rem;
+  border-radius: 10px;
+}
+.theme--light .tool-card {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+}
+.theme--dark .tool-card {
+  border: 1px solid #464646;
+  background-color: #152028;
+}
+.tool-card h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+.tool-card p {
+  font-size: 1.4rem;
+  line-height: 1.55;
+  margin: 0 0 0.75rem;
+}
+.theme--light .tool-card p {
+  color: #9f9f9f;
+}
+.theme--dark .tool-card p {
+  color: #9f9f9f;
+}
+.tool-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 0.5rem 0 0.75rem;
+  display: block;
+}
+
+.home-section-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+.theme--light .home-section-label {
+  color: #9f9f9f;
+}
+.theme--dark .home-section-label {
+  color: #9f9f9f;
+}
+
 .medium-zoom-overlay {
   position: fixed;
   top: 0;
