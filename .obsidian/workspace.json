@@ -275,6 +275,7 @@
   },
   "active": "246c82454f930827",
   "lastOpenFiles": [
+    "layouts/blog/list.html",
     "layouts/shortcodes/bformat_archive_table.html",
     "data/bformat_archive.yml",
     "public/de/tags/b-format/index.xml",
@@ -286,7 +287,6 @@
     "public/de/blog/b-format-archive/index.html",
     "public/de/blog/b-format-archive",
     "content/Blog/b-format-archive/index.de.md",
-    "public/tags/test-files/index.xml",
     "content/Blog/b-format-archive/index.md",
     "content/search/index.de.md",
     "content/search/index.md",

@@ -5,128 +5,191 @@
     </div>
   {{ end }}
 
-  <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
-    <div class="archive__heading">
-      {{ if eq .Site.Language.Lang "de" }}Studio-Bereiche{{ else }}Studio Sections{{ end }}
+  <div class="post animated fadeInDown">
+    <div class="post__content">
+      <h2>{{ if eq .Site.Language.Lang "de" }}Schnelle Einstiege{{ else }}Quick Starts{{ end }}</h2>
+      <div class="home-cards">
+        <div class="home-card">
+          <h4>{{ if eq .Site.Language.Lang "de" }}Studio Cases{{ else }}Studio Cases{{ end }}</h4>
+          <p>{{ if eq .Site.Language.Lang "de" }}Dokumentation von Setup, Technik und Produktionen im ICST Studio.{{ else }}Documentation of setup, technology, and productions in the ICST studio.{{ end }}</p>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="/blog/icst-composer-studio-blog/">{{ if eq .Site.Language.Lang "de" }}Öffnen{{ else }}Open{{ end }}</a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>ASCOLTA</h4>
+          <p>{{ if eq .Site.Language.Lang "de" }}Konzerte, Listening Sessions und reale künstlerische Praxis.{{ else }}Concerts, listening sessions, and real artistic practice.{{ end }}</p>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="/blog/ascolta/">{{ if eq .Site.Language.Lang "de" }}Öffnen{{ else }}Open{{ end }}</a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>{{ if eq .Site.Language.Lang "de" }}Research & Best Practices{{ else }}Research & Best Practices{{ end }}</h4>
+          <p>{{ if eq .Site.Language.Lang "de" }}Methoden, Learnings und wiederverwendbare Produktionsmuster.{{ else }}Methods, learnings, and reusable production patterns.{{ end }}</p>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/15_best_practices/">{{ if eq .Site.Language.Lang "de" }}Öffnen{{ else }}Open{{ end }}</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="post animated fadeInDown">
+    <div class="post__content">
+      <div class="home-card playback-card">
+        <h4>ASCOLTA {{ if eq .Site.Language.Lang "de" }}(Featured){{ else }}(Featured){{ end }}</h4>
+        <p>
+          {{ if eq .Site.Language.Lang "de" }}
+            Das Alleinstellungsmerkmal der Seite: dokumentierte Konzerte und Hörpraxis im realen Studiokontext der ZHdK.
+          {{ else }}
+            The distinctive core of this site: documented concerts and listening practice in ZHdK's real studio context.
+          {{ end }}
+        </p>
+        <div class="hero__links">
+          <a class="hero__link hero__link--primary" href="/blog/ascolta/">{{ if eq .Site.Language.Lang "de" }}Zu ASCOLTA{{ else }}Go to ASCOLTA{{ end }}</a>
+          <a class="hero__link" href="/blog/audio-examples/">{{ if eq .Site.Language.Lang "de" }}Audio Examples{{ else }}Audio Examples{{ end }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}" data-blog-root>
+    <div class="archive__heading">{{ if eq .Site.Language.Lang "de" }}Alle Blog-Bereiche{{ else }}All Blog Sections{{ end }}</div>
     <p class="archive__intro">
       {{ if eq .Site.Language.Lang "de" }}
-        Diese Seite zeigt Studio-Rubriken, Events und Residency-Bereiche. Für Schritt-für-Schritt-Anleitungen besuchen Sie <a href="/post/">Tutorials</a>.
+        Für technische Schritt-für-Schritt-Anleitungen gehe zu <a href="/post/">Tutorials</a>.
       {{ else }}
-        This page lists studio sections, events, and residency areas. For step-by-step guides, visit <a href="/post/">Tutorials</a>.
-      {{ end }}
-    </p>
-    <p class="archive__intro">
-      {{ if eq .Site.Language.Lang "de" }}
-        Der Blog kombiniert Dokumentation und Journal: technische Infrastruktur, musikalische Inhalte und gemischte Produktionsnotizen.
-      {{ else }}
-        This blog combines documentation and journal entries: technical infrastructure, musical content, and mixed production notes.
+        For technical step-by-step workflows, go to <a href="/post/">Tutorials</a>.
       {{ end }}
     </p>
 
     <div class="archive__filters" role="group" aria-label="{{ if eq .Site.Language.Lang "de" }}Blog-Filter{{ else }}Blog filters{{ end }}">
       <button class="archive__filter-btn archive__filter-btn--active" type="button" data-filter="all">{{ if eq .Site.Language.Lang "de" }}Alle{{ else }}All{{ end }}</button>
-      <button class="archive__filter-btn" type="button" data-filter="technical">{{ if eq .Site.Language.Lang "de" }}Technik{{ else }}Technical{{ end }}</button>
-      <button class="archive__filter-btn" type="button" data-filter="music">{{ if eq .Site.Language.Lang "de" }}Musik{{ else }}Music{{ end }}</button>
-      <button class="archive__filter-btn" type="button" data-filter="mixed">Mixed</button>
+      <button class="archive__filter-btn" type="button" data-filter="studio">{{ if eq .Site.Language.Lang "de" }}Studio{{ else }}Studio{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="ascolta">ASCOLTA</button>
+      <button class="archive__filter-btn" type="button" data-filter="research">{{ if eq .Site.Language.Lang "de" }}Research{{ else }}Research{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="downloads">{{ if eq .Site.Language.Lang "de" }}Downloads{{ else }}Downloads{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="news">{{ if eq .Site.Language.Lang "de" }}News{{ else }}News{{ end }}</button>
     </div>
 
-    <div class="archive__recommended">
-      <div class="archive__recommended-title">{{ if eq .Site.Language.Lang "de" }}Empfohlene Einstiege{{ else }}Recommended Starting Points{{ end }}</div>
-      <ul class="archive__recommended-list">
-        <li><a href="/blog/icst-kompositionsstudio-speaker-settings/">{{ if eq .Site.Language.Lang "de" }}Speaker Settings (Technik){{ else }}Speaker Settings (Technical){{ end }}</a></li>
-        <li><a href="/blog/ascolta/">{{ if eq .Site.Language.Lang "de" }}Ascolta (Musik){{ else }}Ascolta (Music){{ end }}</a></li>
-        <li><a href="/blog/icst-composer-studio-blog/">{{ if eq .Site.Language.Lang "de" }}ICST Composer Studio (Mixed){{ else }}ICST Composer Studio (Mixed){{ end }}</a></li>
-        <li><a href="/blog/audio-examples/">{{ if eq .Site.Language.Lang "de" }}Audio Examples (Mixed){{ else }}Audio Examples (Mixed){{ end }}</a></li>
-      </ul>
-    </div>
-
-    {{ range .Pages.ByWeight }}
-      {{ $item := . }}
-      {{ $latest := $item.Date }}
-      {{ $count := 0 }}
-      {{ $kind := "mixed" }}
-      {{ $title := lower $item.Title }}
-      {{ if $item.IsSection }}
-        {{ $count = len $item.RegularPagesRecursive }}
-        {{ if gt $count 0 }}
-          {{ $latest = (index ($item.RegularPagesRecursive.ByDate.Reverse) 0).Date }}
-        {{ end }}
-      {{ end }}
-      {{ if or (in $title "ascolta") (in $title "sounding future") (in $title "concert") }}
-        {{ $kind = "music" }}
-      {{ else if or (in $title "equipment") (in $title "software") (in $title "speaker") (in $title "download") (in $title "regie") (in $title "installation") }}
-        {{ $kind = "technical" }}
-      {{ end }}
-      <ul class="archive__list">
-        <li class="archive__list-item archive__list-item--filter" data-kind="{{ $kind }}">
-          <div class="archive__list-main">
-            <a class="archive__list-title" href="{{ $item.RelPermalink }}" title="{{ $item.Title }}">{{ $item.Title }}</a>
-            {{ $desc := $item.Description }}
-            {{ if not $desc }}
-              {{ $desc = $item.Summary | plainify | truncate 190 }}
+    <div class="docs-index">
+      <div class="docs-index__chapters">
+        {{ range $i, $item := .Pages.ByWeight }}
+          {{ $latest := $item.Date }}
+          {{ $count := 0 }}
+          {{ if $item.IsSection }}
+            {{ $count = len $item.RegularPagesRecursive }}
+            {{ if gt $count 0 }}
+              {{ $latest = (index ($item.RegularPagesRecursive.ByDate.Reverse) 0).Date }}
             {{ end }}
-            {{ with $desc }}
-              <div class="archive__list-excerpt">{{ . }}</div>
-            {{ end }}
-            <div class="archive__list-meta">
-              {{ if $item.IsSection }}
-                {{ if eq $.Site.Language.Lang "de" }}Einträge: {{ else }}Entries: {{ end }}{{ $count }}
-              {{ else }}
-                {{ if eq $.Site.Language.Lang "de" }}Eintrag{{ else }}Single page{{ end }}
-              {{ end }}
-              ·
-              {{ if eq $.Site.Language.Lang "de" }}
-                {{ if eq $kind "technical" }}Technik{{ else if eq $kind "music" }}Musik{{ else }}Mixed{{ end }}
-              {{ else }}
-                {{ if eq $kind "technical" }}Technical{{ else if eq $kind "music" }}Music{{ else }}Mixed{{ end }}
-              {{ end }}
-            </div>
-          </div>
-          {{ if and (not $latest.IsZero) (lt $latest.Year 2050) }}
-            <div class="archive__list-date">
-              {{ if eq $.Site.Language.Lang "de" }}Aktualisiert: {{ else }}Updated: {{ end }}
-              {{ if isset $.Site.Params "listdateformat" }}
-                {{ if $.Site.Params.localizedDates }}
-                  {{ time.Format $.Site.Params.listDateFormat $latest }}
-                {{ else }}
-                  {{ $latest.Format $.Site.Params.listDateFormat }}
-                {{ end }}
-              {{ else }}
-                {{ if $.Site.Params.localizedDates }}
-                  {{ time.Format "Jan 2, 2006" $latest }}
-                {{ else }}
-                  {{ $latest.Format "Jan 2, 2006" }}
-                {{ end }}
-              {{ end }}
-            </div>
           {{ end }}
-        </li>
-      </ul>
-    {{ end }}
+
+          {{ $kind := "news" }}
+          {{ $title := lower $item.Title }}
+          {{ $permalink := lower $item.RelPermalink }}
+          {{ if or (in $title "ascolta") (in $permalink "/ascolta/") (in $title "sounding future") }}
+            {{ $kind = "ascolta" }}
+          {{ else if or (in $title "download") (in $permalink "/downloads/") (in $permalink "b-format-archive") }}
+            {{ $kind = "downloads" }}
+          {{ else if or (in $title "studio") (in $title "residenz") (in $title "residenc") (in $title "regie") (in $title "speaker") (in $title "software") (in $title "equipment") }}
+            {{ $kind = "studio" }}
+          {{ else if or (in $title "best practices") (in $title "faq") (in $title "research") }}
+            {{ $kind = "research" }}
+          {{ end }}
+
+          <a class="docs-index__chapter archive__list-item--filter" href="{{ $item.RelPermalink }}" data-kind="{{ $kind }}">
+            <div class="docs-index__chapter-number">{{ add $i 1 }}</div>
+            <div class="docs-index__chapter-info">
+              <div class="docs-index__chapter-title">{{ $item.Title }}</div>
+              {{ $desc := $item.Description }}
+              {{ if not $desc }}
+                {{ $desc = $item.Summary | plainify | truncate 190 }}
+              {{ end }}
+              {{ with $desc }}
+                <div class="docs-index__chapter-desc">{{ . }}</div>
+              {{ end }}
+              <div class="archive__list-meta">
+                {{ if $item.IsSection }}
+                  {{ if eq $.Site.Language.Lang "de" }}Einträge: {{ else }}Entries: {{ end }}{{ $count }}
+                {{ else }}
+                  {{ if eq $.Site.Language.Lang "de" }}Eintrag{{ else }}Single page{{ end }}
+                {{ end }}
+                ·
+                {{ if eq $.Site.Language.Lang "de" }}
+                  {{ if eq $kind "ascolta" }}ASCOLTA{{ else if eq $kind "studio" }}Studio{{ else if eq $kind "research" }}Research{{ else if eq $kind "downloads" }}Downloads{{ else }}News{{ end }}
+                {{ else }}
+                  {{ if eq $kind "ascolta" }}ASCOLTA{{ else if eq $kind "studio" }}Studio{{ else if eq $kind "research" }}Research{{ else if eq $kind "downloads" }}Downloads{{ else }}News{{ end }}
+                {{ end }}
+                {{ if and (not $latest.IsZero) (lt $latest.Year 2050) }}
+                  · {{ if eq $.Site.Language.Lang "de" }}Aktualisiert: {{ else }}Updated: {{ end }}
+                  {{ if isset $.Site.Params "listdateformat" }}
+                    {{ if $.Site.Params.localizedDates }}
+                      {{ time.Format $.Site.Params.listDateFormat $latest }}
+                    {{ else }}
+                      {{ $latest.Format $.Site.Params.listDateFormat }}
+                    {{ end }}
+                  {{ else }}
+                    {{ if $.Site.Params.localizedDates }}
+                      {{ time.Format "Jan 2, 2006" $latest }}
+                    {{ else }}
+                      {{ $latest.Format "Jan 2, 2006" }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+            <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+          </a>
+        {{ end }}
+      </div>
+    </div>
   </div>
 
   <script>
     (function () {
-      var root = document.querySelector('.archive');
+      var root = document.querySelector("[data-blog-root]");
       if (!root) return;
-      var buttons = root.querySelectorAll('.archive__filter-btn');
-      var items = root.querySelectorAll('.archive__list-item--filter');
+      var buttons = root.querySelectorAll(".archive__filter-btn");
+      var items = root.querySelectorAll(".archive__list-item--filter");
       if (!buttons.length || !items.length) return;
 
+      var valid = {};
       buttons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var filter = btn.getAttribute('data-filter');
-          buttons.forEach(function (b) { b.classList.remove('archive__filter-btn--active'); });
-          btn.classList.add('archive__filter-btn--active');
-          items.forEach(function (item) {
-            var show = filter === 'all' || item.getAttribute('data-kind') === filter;
-            var row = item.parentElement;
-            if (row) row.style.display = show ? '' : 'none';
-          });
+        valid[btn.getAttribute("data-filter")] = true;
+      });
+
+      function applyFilter(filter) {
+        var key = valid[filter] ? filter : "all";
+        buttons.forEach(function (b) {
+          b.classList.toggle("archive__filter-btn--active", b.getAttribute("data-filter") === key);
+          b.setAttribute("aria-pressed", b.getAttribute("data-filter") === key ? "true" : "false");
         });
+        items.forEach(function (item) {
+          var show = key === "all" || item.getAttribute("data-kind") === key;
+          item.style.display = show ? "" : "none";
+        });
+        if (window.location.hash !== "#" + key) {
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, "", "#" + key);
+          } else {
+            window.location.hash = key;
+          }
+        }
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          applyFilter(btn.getAttribute("data-filter"));
+        });
+      });
+
+      var hashKey = (window.location.hash || "").replace(/^#/, "").toLowerCase();
+      applyFilter(valid[hashKey] ? hashKey : "all");
+
+      window.addEventListener("hashchange", function () {
+        var nextKey = (window.location.hash || "").replace(/^#/, "").toLowerCase();
+        applyFilter(valid[nextKey] ? nextKey : "all");
       });
     })();
   </script>
-
 {{ end }}

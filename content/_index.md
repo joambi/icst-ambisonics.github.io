@@ -33,7 +33,10 @@ aliases:
 
 ---
 
-### Where do you want to go?
+<div class="home-section-header home-section-header--software">
+<p class="home-section-label">🎛️ Working with Ambisonics?</p>
+<p class="home-section-lead">Free and open-source spatial audio tools for REAPER — from first setup to advanced OSC control and DAW integration.</p>
+</div>
 
 <div class="home-cards">
   <section class="home-card">
@@ -41,11 +44,10 @@ aliases:
     <p>Fast entry into setup, signal flow, and your first spatial mix in REAPER.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
-      <a class="hero__link" href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step by Step Setup</a>
+      <a class="hero__link" href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step by Step</a>
       <a class="hero__link" href="/ambisonics-101/">Ambisonics 101</a>
     </div>
   </section>
-
   <section class="home-card">
     <h4>⚙️ For Production Work</h4>
     <p>Technical depth for repeatable pipelines, OSC control, and robust session templates.</p>
@@ -55,21 +57,7 @@ aliases:
       <a class="hero__link" href="/icst-ambisonics-plugins/15_best_practices/">Best Practices</a>
     </div>
   </section>
-
-  <section class="home-card">
-    <h4>🎼 For Artistic Context</h4>
-    <p>Residency practice, listening sessions, and studio cases from real projects at ZHdK.</p>
-    <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/blog/ascolta/">Ascolta</a>
-      <a class="hero__link" href="/blog/">Studio Cases</a>
-      <a class="hero__link" href="/residenzen/">Residencies</a>
-    </div>
-  </section>
 </div>
-
----
-
-### The Tools
 
 <div class="tool-cards">
   <div class="tool-card">
@@ -81,7 +69,6 @@ aliases:
       <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
     </div>
   </div>
-
   <div class="tool-card">
     <h4>🧊 Ambisonics Tools for Max/MSP</h4>
     <p>For live spatialisation, algorithmic sound, and extending workflows beyond REAPER — runs natively in Max 8.</p>
@@ -95,20 +82,33 @@ aliases:
 
 ---
 
-### ASCOLTA — Acousmatic Listening Sessions
+<div class="home-section-header home-section-header--studio">
+<p class="home-section-label">🏛️ At the ICST Studio?</p>
+<p class="home-section-lead">For ZHdK residents, composers and studio visitors — listening sessions, residency documentation and studio resources.</p>
+</div>
 
-Regular concerts and listening sessions at ZHdK: spatial works performed live in the studio, open for audience. New and archival pieces, all documented here.
-
-![ASCOLTA at ICST](/blog/ascolta/18-ascolta/ascolta.png)
-
-<div class="hero__links">
-  <a class="hero__link hero__link--primary" href="/blog/ascolta/">
-    <i class="fas fa-headphones"></i>&nbsp;Explore ASCOLTA
-  </a>
-  <a class="hero__link" href="/residenzen/">
-    <i class="fas fa-music"></i>&nbsp;Residencies
-  </a>
-  <a class="hero__link" href="/blog/">
-    <i class="fas fa-rss"></i>&nbsp;Studio Cases
-  </a>
+<div class="home-cards">
+  <section class="home-card">
+    <h4>🎧 ASCOLTA</h4>
+    <p>Regular acousmatic listening sessions and concerts at ZHdK — spatial works performed live, open for audience.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/blog/ascolta/">All Sessions</a>
+      <a class="hero__link" href="/blog/sounding_future/">Listening Guide</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🎼 Residencies</h4>
+    <p>Artist-in-residence programme at ICST — profiles, projects and documentation from past and current residents.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/residenzen/">All Residencies</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🖥️ Composer Studio</h4>
+    <p>Setup documentation, equipment, speaker configurations and studio cases from the ICST Kompositionsstudio.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/blog/icst-composer-studio-blog/">Studio Blog</a>
+      <a class="hero__link" href="/blog/downloads/">Downloads</a>
+    </div>
+  </section>
 </div>

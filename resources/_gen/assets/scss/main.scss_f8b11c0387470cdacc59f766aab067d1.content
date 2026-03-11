@@ -2120,6 +2120,40 @@ hr {
   padding: 0 0.2rem;
   font-style: italic;
 }
+.home-section-header {
+  padding: 0.9rem 1.2rem 0.8rem;
+  border-radius: 6px;
+  margin: 0 0 1.2rem;
+}
+
+.home-section-header--software {
+  border-left: 4px solid #4a9eff;
+}
+
+.home-section-header--studio {
+  border-left: 4px solid #9c6fde;
+}
+
+.theme--light .home-section-header--software {
+  background: #eef5ff;
+}
+.theme--light .home-section-header--studio {
+  background: #f3eeff;
+}
+
+.theme--dark .home-section-header--software {
+  background: #1a2a3d;
+}
+.theme--dark .home-section-header--studio {
+  background: #251a36;
+}
+
+.home-section-lead {
+  margin: 0.25rem 0 0;
+  font-size: 0.93rem;
+  color: #9f9f9f;
+}
+
 .medium-zoom-overlay {
   position: fixed;
   top: 0;

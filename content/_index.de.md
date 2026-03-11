@@ -34,7 +34,10 @@ aliases:
 
 ---
 
-### Wo willst du hin?
+<div class="home-section-header home-section-header--software">
+<p class="home-section-label">🎛️ Ambisonics-Anwender:innen</p>
+<p class="home-section-lead">Freie, quelloffene Spatial-Audio-Tools für REAPER — vom ersten Setup bis zu fortgeschrittener OSC-Steuerung und DAW-Integration.</p>
+</div>
 
 <div class="home-cards">
   <section class="home-card">
@@ -42,11 +45,10 @@ aliases:
     <p>Schneller Einstieg in Setup, Signalfluss und den ersten räumlichen Mix in REAPER.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
-      <a class="hero__link" href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step by Step Setup</a>
+      <a class="hero__link" href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step by Step</a>
       <a class="hero__link" href="/ambisonics-101/">Ambisonics 101</a>
     </div>
   </section>
-
   <section class="home-card">
     <h4>⚙️ Für Production Work</h4>
     <p>Technische Tiefe für robuste Pipelines, OSC-Steuerung und reproduzierbare Session-Templates.</p>
@@ -56,33 +58,18 @@ aliases:
       <a class="hero__link" href="/icst-ambisonics-plugins/15_best_practices/">Best Practices</a>
     </div>
   </section>
-
-  <section class="home-card">
-    <h4>🎼 Für künstlerischen Kontext</h4>
-    <p>Residency-Praxis, Hörstunden und Studio-Cases aus realen Produktionen an der ZHdK.</p>
-    <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/blog/ascolta/">Ascolta</a>
-      <a class="hero__link" href="/blog/">Studio Cases</a>
-      <a class="hero__link" href="/residenzen/">Residencies</a>
-    </div>
-  </section>
 </div>
-
----
-
-### Die Tools
 
 <div class="tool-cards">
   <div class="tool-card">
     <h4>🎛️ Ambisonics Plugins für REAPER</h4>
-    <p>Enkodieren, dekodieren und räumlich mischen — direkt in deiner DAW. Die vollständige ICST-Suite: Encoder, Decoder, Monitor und mehr.</p>
+    <p>Enkodieren, dekodieren und räumlich mischen — direkt in der DAW. Die vollständige ICST-Suite: Encoder, Decoder, Monitor und mehr.</p>
     <img src="/images/Home_gif.gif" alt="ICST Ambisonics Plugins in REAPER" loading="lazy" />
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/01_overview/">Plugin-Übersicht</a>
       <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
     </div>
   </div>
-
   <div class="tool-card">
     <h4>🧊 Ambisonics Tools für Max/MSP</h4>
     <p>Für Live-Spatialisierung, algorithmischen Klang und Workflows jenseits von REAPER — läuft nativ in Max 8.</p>
@@ -96,20 +83,33 @@ aliases:
 
 ---
 
-### ASCOLTA — Acousmatische Hörstunden
+<div class="home-section-header home-section-header--studio">
+<p class="home-section-label">🏛️ Im ICST Kompositionsstudio?</p>
+<p class="home-section-lead">Für ZHdK-Residents, Komponist:innen und Studio-Gäste — Hörstunden, Residency-Dokumentation und Studio-Ressourcen.</p>
+</div>
 
-Regelmässige Konzerte und Hörstunden an der ZHdK: räumliche Werke, live im Studio aufgeführt, offen für Publikum. Neue und archivierte Stücke, hier dokumentiert.
-
-![ASCOLTA am ICST](/blog/ascolta/18-ascolta/ascolta.png)
-
-<div class="hero__links">
-  <a class="hero__link hero__link--primary" href="/blog/ascolta/">
-    <i class="fas fa-headphones"></i>&nbsp;ASCOLTA entdecken
-  </a>
-  <a class="hero__link" href="/residenzen/">
-    <i class="fas fa-music"></i>&nbsp;Residencies
-  </a>
-  <a class="hero__link" href="/blog/">
-    <i class="fas fa-rss"></i>&nbsp;Studio Cases
-  </a>
+<div class="home-cards">
+  <section class="home-card">
+    <h4>🎧 ASCOLTA</h4>
+    <p>Regelmässige acousmatische Hörstunden und Konzerte an der ZHdK — räumliche Werke live aufgeführt, offen für Publikum.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/blog/ascolta/">Alle Sessions</a>
+      <a class="hero__link" href="/blog/sounding_future/">Hörleitfaden</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🎼 Residencies</h4>
+    <p>Artist-in-Residence-Programm am ICST — Profile, Projekte und Dokumentation aus vergangenen und aktuellen Residencies.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/residenzen/">Alle Residencies</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🖥️ Kompositionsstudio</h4>
+    <p>Setup-Dokumentation, Equipment, Lautsprecherkonfigurationen und Studio-Cases aus dem ICST Kompositionsstudio.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/blog/icst-composer-studio-blog/">Studio Blog</a>
+      <a class="hero__link" href="/blog/downloads/">Downloads</a>
+    </div>
+  </section>
 </div>
