@@ -7,8 +7,8 @@ month: 2025-11
 weight: 11
 tags: ["decoder", "multi-decoder", "v3.2", "loudspeaker", "spatial audio"]
 key_points:
-  - "Set up and understand parallel decoder units for multiple targets."
-  - "Control speaker sets and decoding parameters per decoder instance."
+  - "Configure up to four independent decoders within a single ICST AmbiDecoder"
+  - "Assign separate loudspeaker groups, Ambisonics orders, and filters per decoder"
 difficulty: "intermediate"
 ---
 

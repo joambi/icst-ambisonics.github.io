@@ -5,32 +5,6 @@ description: "Schritt-für-Schritt-Anleitungen für die ICST Ambisonics Plugins 
 author: Johannes Schuett
 languageCode: de
 ---
-Diese Seite ist der praktische Anleitungsindex für ICST Ambisonics Workflows in REAPER und Max-basierten Umgebungen.
-Nutze ihn für Schritt-für-Schritt-Setups, OSC-Steuerung, Automationsbeispiele und produktionsreife Routing-Lösungen.
+Schritt-für-Schritt-Workflows für räumliche Audioproduktion mit den ICST Ambisonics Plugins in REAPER — vom ersten Setup bis zu OSC-Automation, Controller-Integration und DAW-Bridging. Die Difficulty-Badges und Filter unten helfen beim Einstieg.
 
-### Für wen diese OSC-Workflows gedacht sind
-- **Komponist:innen:** räumliche Kompositions-Workflows mit spielbarer Automation und reproduzierbarer Bewegungsdramaturgie.
-- **Techniker:innen:** stabiles Routing, Synchronisation und Controller-Integration für Produktions- und Wiedergabe-Setups.
-- **Studierende:** klarer Lernpfad von OSC-Grundlagen bis zur kompletten DAW-basierten Ambisonics-Session.
-
-### Empfohlene Vorkenntnisse
-- REAPER-Basics (Tracks, Routing, Monitoring).
-- OSC-Basics (Host, Port, Message-Format).
-- Ambisonics-Basics (Quelle, B-Format, Encoder/Decoder).
-
-### OSC-Integrationspfad (empfohlene Reihenfolge)
-Starte hier, wenn du neu einsteigst:
-- [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
-- [Von Stereo zu HOA7: Eine Schritt-für-Schritt-Session](/post/stereo-to-hoa7-session/)
-
-Danach geht es mit OSC-Integration weiter:
-1. [ICST AmbiEncoder - OSC Syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
-2. [MaxMSP und ICST AmbiEncoder - OSC Communication](/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/)
-3. [ICST AmbiEncoder - OSC zu FX Zuordnung](/post/osc-2-fx/)
-4. [ICST AmbiPlugins und Grapes - 3D Steuerung](/post/icst-grapes/)
-5. [ICST AmbiPlugins und GyrOSC](/post/gyrosc/)
-6. [Ableton Live und ICST Ambisonics Integration](/post/ableton_reaper/)
-
-Für Studio-News, Residency-Kontext und Event-Dokumentation gehe weiter zum [ICST Studio Blog](/blog/).
-
-📺 [ICST Ambisonics Plugins - Videos auf YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)
+📺 [@ZHDK_ICST auf YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)

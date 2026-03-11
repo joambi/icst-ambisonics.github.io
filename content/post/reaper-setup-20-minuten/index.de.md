@@ -7,8 +7,8 @@ month: 2026-03
 weight: 21
 tags: ["reaper", "ambiencoder", "tutorial", "workflow"]
 key_points:
-  - "Fuehre ein schnelles 20-Minuten-Setup mit direkten Docs-Links aus."
-  - "Prüfe Routing, Bewegung und Monitoring in einem kompakten Durchlauf."
+  - "ICST AmbiEncoder, B-Format-Bus und Decoder in 20 Minuten aufsetzen"
+  - "Routing prüfen und ersten Raumklang-Test in REAPER durchführen"
 difficulty: "beginner"
 ---
 

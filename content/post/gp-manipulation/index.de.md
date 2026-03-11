@@ -7,8 +7,8 @@ month: 2025-05
 weight: 4
 tags: ["multiencoder", "group", "animation", "reaper", "workflow"]
 key_points:
-  - "Animieren und bearbeite MultiEncoder-Quellgruppen effizient."
-  - "Nimm koordinierte Gruppenbewegungen auf, verfeinere und spiele sie ab."
+  - "Quellengruppen mit LFO, manuellem Recording oder Quaternion-Motion animieren"
+  - "Gruppenmotion aus externem OSC-Signal in REAPER-Envelopes übertragen"
 difficulty: "intermediate"
 ---
 

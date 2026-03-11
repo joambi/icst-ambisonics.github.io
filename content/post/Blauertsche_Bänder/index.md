@@ -12,8 +12,8 @@ month: 2025-05
 weight: 10
 tags: ["perception", "psychoacoustics", "binaural", "theory"]
 key_points:
-  - "Connect perceptual Blauert bands with OSC-driven EQ control in spatial workflows."
-  - "Use frequency-direction mapping to improve front/back and height perception."
+  - "Understand how Blauert's Bands affect perceived elevation and front/back localisation"
+  - "Apply IEM MultiEQ filter settings for elevation and direction correction"
 difficulty: "intermediate"
 ---
 

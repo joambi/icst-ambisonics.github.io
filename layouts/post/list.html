@@ -1,13 +1,69 @@
 {{ define "main" }}
+  {{ $pages := .RegularPages.ByDate.Reverse }}
+
   {{ with .Content }}
     <div class="post {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
       <div class="post__content">{{ . }}</div>
     </div>
   {{ end }}
 
-  <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+  <div class="post animated fadeInDown">
+    <div class="post__content">
+      <h2>{{ if eq .Site.Language.Lang "de" }}Schnelle Einstiege{{ else }}Quick Starts{{ end }}</h2>
+      <div class="home-cards">
+        <div class="home-card">
+          <h4>{{ if eq .Site.Language.Lang "de" }}Erster Einstieg{{ else }}First Setup{{ end }}</h4>
+          <p>
+            {{ if eq .Site.Language.Lang "de" }}
+              Starte mit Reaper-Setup und Basis-Routing.
+            {{ else }}
+              Start with Reaper setup and baseline routing.
+            {{ end }}
+          </p>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="/post/getting-started-icst-plugins-reaper/">
+              {{ if eq .Site.Language.Lang "de" }}Jetzt starten{{ else }}Start now{{ end }}
+            </a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>{{ if eq .Site.Language.Lang "de" }}Produktions-Workflow{{ else }}Production Workflow{{ end }}</h4>
+          <p>
+            {{ if eq .Site.Language.Lang "de" }}
+              Von Stereo zu HOA7 mit einem reproduzierbaren Session-Flow.
+            {{ else }}
+              Move from stereo to HOA7 with a repeatable session flow.
+            {{ end }}
+          </p>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="/post/stereo-to-hoa7-session/">
+              {{ if eq .Site.Language.Lang "de" }}Zum Guide{{ else }}Open guide{{ end }}
+            </a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>{{ if eq .Site.Language.Lang "de" }}OSC & Automation{{ else }}OSC & Automation{{ end }}</h4>
+          <p>
+            {{ if eq .Site.Language.Lang "de" }}
+              Vertiefe dich in OSC-Syntax, Mapping und Controller-Integration.
+            {{ else }}
+              Deep dive into OSC syntax, mapping, and controller integration.
+            {{ end }}
+          </p>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">
+              {{ if eq .Site.Language.Lang "de" }}OSC öffnen{{ else }}Open OSC{{ end }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="docs-index animated fadeInDown">
+    <div data-tutorials-root>
     <div class="archive__heading">
-      {{ if eq .Site.Language.Lang "de" }}Tutorial-Index{{ else }}Tutorial Index{{ end }}
+      {{ if eq .Site.Language.Lang "de" }}Alle Tutorials{{ else }}All Tutorials{{ end }}
     </div>
     <p class="archive__intro">
       {{ if eq .Site.Language.Lang "de" }}
@@ -16,65 +72,120 @@
         Looking for studio news and residency updates? You can find them in the <a href="/blog/">Studio Blog</a>.
       {{ end }}
     </p>
-
-    {{ $pages := .RegularPages.ByDate.Reverse }}
-    {{ range $pages }}
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          <div class="archive__list-main">
-            <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>{{ with .Params.difficulty }}<span class="difficulty-badge difficulty-badge--{{ . }}">{{ . }}</span>{{ end }}
+    <div class="tutorial-filters" role="group" aria-label="{{ if eq .Site.Language.Lang "de" }}Tutorial Filter{{ else }}Tutorial filters{{ end }}">
+      <button type="button" class="tutorial-filters__btn is-active" data-filter="all">{{ if eq .Site.Language.Lang "de" }}Alle{{ else }}All{{ end }}</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="beginner">{{ if eq .Site.Language.Lang "de" }}Beginner{{ else }}Beginner{{ end }}</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="osc">OSC</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="reaper">Reaper</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="max">Max</button>
+    </div>
+    <div class="docs-index__chapters">
+      {{ range $i, $page := $pages }}
+        {{ $tags := slice }}
+        {{ with $page.Params.tags }}
+          {{ range . }}
+            {{ $tags = $tags | append (lower .) }}
+          {{ end }}
+        {{ end }}
+        {{ $difficulty := lower (default "" $page.Params.difficulty) }}
+        {{ $filterText := printf "%s %s %s %s" (delimit $tags " ") (lower $page.Title) (lower $page.RelPermalink) $difficulty }}
+        <a class="docs-index__chapter" href="{{ $page.RelPermalink }}" data-filter-text="{{ $filterText }}">
+          <div class="docs-index__chapter-number">{{ add $i 1 }}</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              {{ $page.Title }}
+              {{ with $page.Params.difficulty }}<span class="difficulty-badge difficulty-badge--{{ . }}">{{ . }}</span>{{ end }}
+            </div>
             {{ $desc := .Description }}
             {{ if not $desc }}
               {{ $desc = .Summary | plainify | truncate 190 }}
             {{ end }}
             {{ with $desc }}
-              <div class="archive__list-excerpt">{{ . }}</div>
+              <div class="docs-index__chapter-desc">{{ . }}</div>
             {{ end }}
-            <ul class="archive__keypoints">
-              {{ with .Params.key_points }}
+            <div class="archive__list-meta">
+              {{ if isset .Site.Params "listdateformat" }}
+                {{ if .Site.Params.localizedDates }}
+                  {{ time.Format .Site.Params.listDateFormat $page.Date }}
+                {{ else }}
+                  {{ $page.Date.Format .Site.Params.listDateFormat }}
+                {{ end }}
+              {{ else }}
+                {{ if .Site.Params.localizedDates }}
+                  {{ time.Format "Jan 2, 2006" $page.Date }}
+                {{ else }}
+                  {{ $page.Date.Format "Jan 2, 2006" }}
+                {{ end }}
+              {{ end }}
+              · {{ if eq .Site.Language.Lang "de" }}{{ $page.ReadingTime }} Min. Lesezeit{{ else }}{{ $page.ReadingTime }} min read{{ end }}
+              {{ with $page.Params.tags }}
+                · {{ if eq $.Site.Language.Lang "de" }}Fokus: {{ else }}Focus: {{ end }}
+                {{ range $idx, $tag := first 2 . }}{{ if gt $idx 0 }}, {{ end }}#{{ $tag }}{{ end }}
+              {{ end }}
+            </div>
+            {{ with $page.Params.key_points }}
+              <ul class="archive__keypoints">
                 {{ range first 2 . }}
                   <li>{{ . }}</li>
                 {{ end }}
-              {{ else }}
-                {{ with $desc }}
-                  <li>{{ . | plainify | truncate 120 }}</li>
-                {{ end }}
-                {{ with .Params.tags }}
-                  <li>
-                    {{ if eq $.Site.Language.Lang "de" }}Fokus: {{ else }}Focus: {{ end }}
-                    {{ range $idx, $tag := first 2 . }}{{ if gt $idx 0 }}, {{ end }}{{ $tag }}{{ end }}
-                  </li>
-                {{ end }}
-              {{ end }}
-            </ul>
-            {{ with .Params.tags }}
-              <div class="archive__list-meta">
-                {{ range first 4 . }}#{{ . }} {{ end }}
-              </div>
+              </ul>
             {{ end }}
           </div>
-          <div class="archive__list-date">
-            <div>
-            {{ if isset .Site.Params "listdateformat" }}
-              {{ if .Site.Params.localizedDates }}
-                {{ time.Format .Site.Params.listDateFormat .Date }}
-              {{ else }}
-                {{ .Date.Format .Site.Params.listDateFormat }}
-              {{ end }}
-            {{ else }}
-              {{ if .Site.Params.localizedDates }}
-                {{ time.Format "Jan 2, 2006" .Date }}
-              {{ else }}
-                {{ .Date.Format "Jan 2, 2006" }}
-              {{ end }}
-            {{ end }}
-            </div>
-            <div class="archive__readtime">
-              {{ if eq .Site.Language.Lang "de" }}{{ .ReadingTime }} Min. Lesezeit{{ else }}{{ .ReadingTime }} min read{{ end }}
-            </div>
-          </div>
-        </li>
-      </ul>
-    {{ end }}
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      {{ end }}
+    </div>
+    </div>
   </div>
+  <script>
+    (function () {
+      var root = document.querySelector("[data-tutorials-root]");
+      if (!root) return;
+      var buttons = Array.prototype.slice.call(root.querySelectorAll("[data-filter]"));
+      var cards = Array.prototype.slice.call(root.querySelectorAll(".docs-index__chapter[data-filter-text]"));
+      var matchers = {
+        all: function () { return true; },
+        beginner: function (text) { return text.indexOf("beginner") !== -1 || text.indexOf("getting started") !== -1 || text.indexOf("quick start") !== -1; },
+        osc: function (text) { return text.indexOf("osc") !== -1; },
+        reaper: function (text) { return text.indexOf("reaper") !== -1; },
+        max: function (text) { return text.indexOf("max") !== -1 || text.indexOf("maxmsp") !== -1 || text.indexOf("msp") !== -1; }
+      };
+
+      function applyFilter(key) {
+        var matcher = matchers[key] || matchers.all;
+        var activeKey = matchers[key] ? key : "all";
+        cards.forEach(function (card) {
+          var text = (card.getAttribute("data-filter-text") || "").toLowerCase();
+          var show = matcher(text);
+          card.classList.toggle("is-hidden", !show);
+        });
+        buttons.forEach(function (btn) {
+          var isActive = btn.getAttribute("data-filter") === activeKey;
+          btn.classList.toggle("is-active", isActive);
+          btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+        if (window.location.hash !== "#" + activeKey) {
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, "", "#" + activeKey);
+          } else {
+            window.location.hash = activeKey;
+          }
+        }
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          applyFilter(btn.getAttribute("data-filter") || "all");
+        });
+      });
+
+      var hashKey = (window.location.hash || "").replace(/^#/, "").toLowerCase();
+      applyFilter(matchers[hashKey] ? hashKey : "all");
+
+      window.addEventListener("hashchange", function () {
+        var nextKey = (window.location.hash || "").replace(/^#/, "").toLowerCase();
+        applyFilter(matchers[nextKey] ? nextKey : "all");
+      });
+    })();
+  </script>
 {{ end }}

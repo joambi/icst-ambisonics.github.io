@@ -8,8 +8,8 @@ weight: 2
 tags: ["maxmsp", "osc", "ambimonitor", "ambiencoder", "bidirectional"]
 
 key_points:
-  - "Richte bidirektionale OSC-Kommunikation zwischen MaxMSP und ICST-Plugins ein."
-  - "Synchronisiere Controller-Feedback und Plugin-Status für stabile Performance-Steuerung."
+  - "Bidirektionale OSC-Kommunikation zwischen Max/MSP und ICST AmbiEncoder einrichten"
+  - "Quellenwinkel im Euler-Format zwischen Max-Patches und REAPER senden und empfangen"
 DisableComments: false
 difficulty: "advanced"
 ---

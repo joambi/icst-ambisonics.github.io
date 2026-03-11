@@ -42,6 +42,7 @@ slug: ambisonics-101
   <ol>
     <li><a href="#what-is-ambisonics">What Is Ambisonics?</a></li>
     <li><a href="#what-is-b-format">What Is B-Format?</a></li>
+    <li><a href="#signal-flow">Signal Flow at a Glance</a></li>
     <li><a href="#typical-setups">Typical Setups</a></li>
     <li><a href="#headphones-vs-loudspeakers">Headphones vs. Loudspeakers</a></li>
     <li><a href="#immersive-vs-atmos">How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?</a></li>
@@ -66,6 +67,76 @@ It describes a sound-field state around a listening point using pressure and dir
 In the strict classical sense, “B-format” refers to this four-channel first-order format (`W`, `X`, `Y`, `Z`). In an extended sense, the term is also used for higher-order Ambisonics, where all Ambisonics coefficients up to a given order are represented as separate audio channels.
 
 This format can then be decoded to different target systems such as headphones, stereo, or loudspeaker arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
+
+<a id="signal-flow"></a>
+## Signal Flow at a Glance
+
+From source to speaker — this is how Ambisonics works in REAPER with the ICST plugins:
+
+<div class="ambi-sigflow">
+<div class="ambi-sigflow__track">
+<div class="ambi-sigflow__node ambi-sigflow__node--source">
+<i class="fas fa-music ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">Audio Source</div>
+<div class="ambi-sigflow__detail">mono track<br>in REAPER</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">plugin insert</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--plugin">
+<i class="fas fa-dot-circle ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">ICST<br>AmbiEncoder</div>
+<div class="ambi-sigflow__detail">az · el<br>distance</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">B-Format (ambiX)</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--bus">
+<i class="fas fa-code-branch ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">B-Format<br>Bus</div>
+<div class="ambi-sigflow__detail">64 channels<br>7th order</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">bus receive</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--plugin">
+<i class="fas fa-broadcast-tower ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">ICST<br>AmbiDecoder</div>
+<div class="ambi-sigflow__detail">speaker layout<br>order · filter</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">renders to</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__outputs">
+<div class="ambi-sigflow__node ambi-sigflow__node--output">
+<i class="fas fa-volume-up ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">Speakers</div>
+</div>
+<div class="ambi-sigflow__or">or</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--output">
+<i class="fas fa-headphones ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">Binaural</div>
+</div>
+</div>
+</div>
+<div class="ambi-sigflow__caption">Multiple sources each have their own AmbiEncoder — all feed into the shared B-Format Bus. Decoding to speakers or headphones happens once at the bus output.</div>
+</div>
 
 <a id="typical-setups"></a>
 ## 3. [Typical Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)

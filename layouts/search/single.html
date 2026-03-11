@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <div class="post {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+    <div class="post__content">
+      <h1>{{ .Title }}</h1>
+      <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+      <p id="search-fallback" style="color: var(--font-color-sub, #888); font-size: 0.95rem;">
+        {{ if eq .Site.Language.Lang "de" }}Suche wird geladen…{{ else }}Loading search…{{ end }}
+      </p>
+      <div id="search"></div>
+      <script src="/pagefind/pagefind-ui.js"></script>
+      <script>
+        window.addEventListener("DOMContentLoaded", function () {
+          new PagefindUI({
+            element: "#search",
+            showSubResults: true,
+            translations: {
+              placeholder: {{ if eq .Site.Language.Lang "de" }}"Suchen…"{{ else }}"Search…"{{ end }},
+              zero_results: {{ if eq .Site.Language.Lang "de" }}"Keine Ergebnisse für [SEARCH_TERM]"{{ else }}"No results for [SEARCH_TERM]"{{ end }}
+            }
+          });
+          document.getElementById("search-fallback").style.display = "none";
+          var params = new URLSearchParams(window.location.search);
+          var q = params.get("q");
+          if (q) {
+            var input = document.querySelector("#search input[type=text]");
+            if (input) {
+              input.value = q;
+              input.dispatchEvent(new Event("input", { bubbles: true }));
+            }
+          }
+        });
+      </script>
+    </div>
+  </div>
+{{ end }}

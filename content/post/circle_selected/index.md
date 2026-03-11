@@ -7,8 +7,8 @@ month: 2025-07
 weight: 9
 tags: ["ambiencoder", "lua", "reaper", "automation", "presets"]
 key_points:
-  - "Select, arrange, and animate source circles efficiently in ICST AmbiEncoder_64."
-  - "Store and recall movement presets for repeatable spatial scenes."
+  - "Position sources on a circle using CircleSelected Lua presets in REAPER"
+  - "Save, recall, and manage source position presets interactively"
 difficulty: "intermediate"
 ---
 

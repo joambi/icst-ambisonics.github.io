@@ -7,8 +7,8 @@ month: 2026-03
 weight: 24
 tags: ["tutorial", "hoa7", "reaper", "ambisonics", "workflow"]
 key_points:
-  - "Move from stereo material to HOA7 session structure step by step."
-  - "Focus on clean routing and render-ready multichannel output."
+  - "Translate a stereo production mindset into a 7th-order Ambisonics workflow"
+  - "Design controlled source movement and validate the HOA7 export"
 difficulty: "intermediate"
 ---
 

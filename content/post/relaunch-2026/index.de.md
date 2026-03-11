@@ -7,8 +7,8 @@ month: 2026-03
 weight: 20
 tags: ["update", "workflow", "tutorial", "studio"]
 key_points:
-  - "Fasst Struktur-Änderungen und Prioritäten des Relaunch 2026 zusammen."
-  - "Zeigt klare Einstiegswege für Tutorials, Studio Cases und Dokumentation."
+  - "Überblick über die neue Struktur von ambisonics.ch: Tutorials, Blog, Docs, Downloads"
+  - "Direkte Einstiegspunkte für Einsteiger, Komposition und Forschung"
 difficulty: "intermediate"
 ---
 

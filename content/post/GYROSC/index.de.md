@@ -8,8 +8,8 @@ weight: 6
 tags: ["gyrosc", "osc", "mobile", "ambiencoder", "reaper"]
 
 key_points:
-  - "Steuere Ambisonics-Bewegung mit Gyroscope-OSC-Daten vom Mobilgerät."
-  - "Verbinde Echtzeit-Gesten mit reproduzierbarer Raum-Automation."
+  - "iPhone-Bewegungsdaten via GyrOSC in den ICST AmbiEncoder streamen"
+  - "Geräteneigung für Live-Raumkontrolle oder synchrone Schwarm-Bewegungen nutzen"
 author: Johannes Schuett
 difficulty: "advanced"
 ---

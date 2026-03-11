@@ -7,8 +7,8 @@ month: 2025-11
 weight: 11
 tags: ["decoder", "multi-decoder", "v3.2", "loudspeaker", "spatial audio"]
 key_points:
-  - "Richte parallele Decoder-Einheiten für mehrere Ziele ein und verstehe sie."
-  - "Steuere Lautsprecher-Sets und Decoding-Parameter pro Decoder-Instanz."
+  - "Bis zu vier unabhängige Decoder im ICST AmbiDecoder konfigurieren"
+  - "Separate Lautsprechergruppen, Ambisonics-Order und Filter pro Decoder zuweisen"
 difficulty: "intermediate"
 ---
 

@@ -7,8 +7,8 @@ month: 2025-07
 weight: 9
 tags: ["ambiencoder", "lua", "reaper", "automation", "presets"]
 key_points:
-  - "Waehle, ordne und animiere Quellkreise effizient im ICST AmbiEncoder_64."
-  - "Speichere und lade Bewegungs-Presets für reproduzierbare Raum-Szenen."
+  - "Quellen mit CircleSelected-Presets auf einem Kreis in REAPER positionieren"
+  - "Quellenposition-Presets interaktiv speichern, laden und verwalten"
 difficulty: "intermediate"
 ---
 

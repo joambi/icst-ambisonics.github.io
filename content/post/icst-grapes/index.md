@@ -8,8 +8,8 @@ weight: 5
 tags: ["grapes", "osc", "ambiencoder", "spatial audio", "3d control"]
 
 key_points:
-  - "Integrate Grapes 3D control with AmbiEncoder OSC workflows."
-  - "Keep spatial gestures flexible outside fixed DAW automation."
+  - "Connect a Grapes 3D Controller to ICST AmbiEncoder via shared OSC data"
+  - "Use physical knob control for spatial source positioning in live performance"
 DisableComments: false
 difficulty: "advanced"
 ---

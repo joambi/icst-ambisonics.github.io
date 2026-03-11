@@ -7,8 +7,8 @@ month: 2025-05
 weight: 4
 tags: ["multiencoder", "group", "animation", "reaper", "workflow"]
 key_points:
-  - "Animate and edit MultiEncoder source groups efficiently."
-  - "Record, refine, and replay coordinated spatial group movement."
+  - "Animate source groups with LFO, manual recording, or quaternion motion"
+  - "Drive group motion from an external OSC source into REAPER envelopes"
 difficulty: "intermediate"
 ---
 

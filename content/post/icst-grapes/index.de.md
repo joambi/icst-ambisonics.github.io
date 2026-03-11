@@ -8,8 +8,8 @@ weight: 5
 tags: ["grapes", "osc", "ambiencoder", "spatial audio", "3d control"]
 
 key_points:
-  - "Integriere Grapes-3D-Control in AmbiEncoder-OSC-Workflows."
-  - "Halte Raumgesten flexibel ausserhalb fixer DAW-Automation."
+  - "Grapes-3D-Controller via OSC mit dem ICST AmbiEncoder verbinden"
+  - "Raumquellen im Live-Einsatz mit physischen Reglern steuern"
 DisableComments: false
 difficulty: "advanced"
 ---

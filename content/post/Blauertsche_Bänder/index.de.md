@@ -12,8 +12,8 @@ month: 2025-05
 weight: 10
 tags: ["perception", "psychoacoustics", "binaural", "theory"]
 key_points:
-  - "Verbinde Blauertsche Bänder mit OSC-gesteuerter EQ-Kontrolle im Spatial-Workflow."
-  - "Nutze Frequenz-Richtungs-Mapping für bessere Front/Back- und Höhenwahrnehmung."
+  - "Verstehen, wie Blauertsche Bänder Höhen- und Richtungswahrnehmung beeinflussen"
+  - "IEM-MultiEQ-Filtersetzung für Elevations- und Front/Back-Korrektur anwenden"
 difficulty: "intermediate"
 ---
 

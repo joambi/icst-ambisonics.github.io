@@ -8,8 +8,8 @@ weight: 6
 tags: ["gyrosc", "osc", "mobile", "ambiencoder", "reaper"]
 
 key_points:
-  - "Control Ambisonics motion with mobile gyroscope OSC data."
-  - "Connect real-time performer gestures to repeatable spatial automation."
+  - "Stream iPhone motion sensor data into ICST AmbiEncoder via GyrOSC"
+  - "Use device tilt for live spatial control or synchronised swarm motion"
 author: Johannes Schuett
 difficulty: "advanced"
 ---

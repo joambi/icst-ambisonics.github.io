@@ -98,6 +98,11 @@
           </div>
         </li>
       {{ end }}
+      <li class="nav__list-item">
+        <a href="{{ "/search/" | relLangURL }}" title="{{ if eq .Site.Language.Lang "de" }}Suche{{ else }}Search{{ end }}">
+          <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
       {{ if not .Site.Params.disableThemeSwitcher }}
         <li class="nav__list-item">
           <div class="themeswitch">

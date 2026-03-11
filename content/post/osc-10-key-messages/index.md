@@ -7,8 +7,8 @@ month: 2026-03
 weight: 22
 tags: ["osc", "ambiencoder", "tutorial", "reference"]
 key_points:
-  - "Use the 10 OSC message types that matter most in daily production."
-  - "Apply a compact debugging checklist for port, format, and timing."
+  - "Die 10 wichtigsten OSC-Messages für den ICST AmbiEncoder auf einen Blick"
+  - "OSC-Verbindung in 2 Minuten einrichten und mit Checkliste debuggen"
 difficulty: "intermediate"
 ---
 

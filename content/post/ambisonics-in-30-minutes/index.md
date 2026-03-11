@@ -7,8 +7,8 @@ month: 2026-03
 weight: 24
 tags: ["tutorial", "reaper", "ambisonics", "getting-started", "workflow"]
 key_points:
-  - "Build a first working Ambisonics session in 30 minutes."
-  - "Validate routing and monitoring before creative work."
+  - "Build encoder → B-format bus → decoder routing from scratch in REAPER"
+  - "Diagnose and fix the most common first-session errors"
 difficulty: "beginner"
 ---
 

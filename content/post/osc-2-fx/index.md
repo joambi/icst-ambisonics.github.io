@@ -8,8 +8,8 @@ weight: 3
 tags: ["osc", "fx", "ambiencoder", "reaper", "automation"]
 
 key_points:
-  - "Map OSC streams to FX parameters for spatially reactive processing."
-  - "Build robust signal and control paths between encoder and effects."
+  - "Map ICST AmbiEncoder OSC messages to IEM FdnReverb and other FX parameters"
+  - "Build synchronized spatial-position and reverb control from a single OSC stream"
 DisableComments: false
 difficulty: "advanced"
 ---

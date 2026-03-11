@@ -43,6 +43,7 @@ languageCode: de
   <ol>
     <li><a href="#was-ist-ambisonics">Was ist Ambisonics?</a></li>
     <li><a href="#was-ist-b-format">Was ist B-Format?</a></li>
+    <li><a href="#signalfluss">Signalfluss auf einen Blick</a></li>
     <li><a href="#typische-setups">Typische Setups</a></li>
     <li><a href="#kopfhoerer-vs-lautsprecher">Kopfhörer vs. Lautsprecher</a></li>
     <li><a href="#immersive-vs-atmos">Wie unterscheidet sich Ambisonics von Immersive Audio, Dolby Atmos und Spatial Audio?</a></li>
@@ -67,6 +68,76 @@ Es beschreibt einen Raumzustand um einen Hörpunkt herum, der aus Druck- und Ric
 Im engeren, klassischen Sinn bezeichnet "B-Format" dieses vierkanalige Ambisonics-Format erster Ordnung (`W`, `X`, `Y`, `Z`). Im erweiterten Sinn kann man B-Format auch für höhere Ordnungen verwenden. Dann umfasst es alle Ambisonics-Koeffizienten bis zu einer bestimmten Ordnung, jeweils als eigener Audiokanal.
 
 Dieses Format kann anschließend auf verschiedene Ziel-Setups dekodiert werden, etwa auf Kopfhörer, Stereo oder Lautsprecher-Arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
+
+<a id="signalfluss"></a>
+## Signalfluss auf einen Blick
+
+Von der Quelle zum Lautsprecher — so funktioniert Ambisonics in REAPER mit den ICST Plugins:
+
+<div class="ambi-sigflow">
+<div class="ambi-sigflow__track">
+<div class="ambi-sigflow__node ambi-sigflow__node--source">
+<i class="fas fa-music ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">Audio-Quelle</div>
+<div class="ambi-sigflow__detail">Mono-Spur<br>in REAPER</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">Plugin-Insert</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--plugin">
+<i class="fas fa-dot-circle ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">ICST<br>AmbiEncoder</div>
+<div class="ambi-sigflow__detail">Az · El<br>Distanz</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">B-Format (ambiX)</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--bus">
+<i class="fas fa-code-branch ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">B-Format<br>Bus</div>
+<div class="ambi-sigflow__detail">64 Kanäle<br>7. Ordnung</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">Bus-Receive</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--plugin">
+<i class="fas fa-broadcast-tower ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">ICST<br>AmbiDecoder</div>
+<div class="ambi-sigflow__detail">Lsp.-Layout<br>Ordnung · Filter</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">Ausgabe</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__outputs">
+<div class="ambi-sigflow__node ambi-sigflow__node--output">
+<i class="fas fa-volume-up ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">Lautsprecher</div>
+</div>
+<div class="ambi-sigflow__or">oder</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--output">
+<i class="fas fa-headphones ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">Binaural</div>
+</div>
+</div>
+</div>
+<div class="ambi-sigflow__caption">Mehrere Quellen haben je einen eigenen AmbiEncoder — alle speisen in denselben B-Format-Bus. Das Decoding auf Lautsprecher oder Kopfhörer findet einmalig am Bus-Ausgang statt.</div>
+</div>
 
 <a id="typische-setups"></a>
 ## 3. [Typische Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)

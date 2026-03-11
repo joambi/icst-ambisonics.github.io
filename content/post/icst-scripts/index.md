@@ -7,8 +7,8 @@ month: 2025-07
 weight: 8
 tags: ["ambiencoder", "automation", "lua", "reaper"]
 key_points:
-  - "Use ReaScripts for structured movement generation and preset workflows."
-  - "Apply spiral and automation tools directly in production sessions."
+  - "Install the Spiral Walk ReaScript and generate spiraling motion envelopes in REAPER"
+  - "Understand the GUI parameters and LFO logic behind the spiral algorithm"
 difficulty: "advanced"
 ---
 

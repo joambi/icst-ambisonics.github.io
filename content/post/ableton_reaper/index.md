@@ -8,8 +8,8 @@ weight: 7
 tags: ["ableton", "reaper", "workflow", "ambiencoder", "tutorial", "blackhole"]
 
 key_points:
-  - "Bridge Ableton Live to Reaper for HOA recording via BlackHole and LTC."
-  - "Combine OSC control with synchronized multichannel capture."
+  - "Route audio from Ableton Live into REAPER via BlackHole for 7th-order Ambisonics"
+  - "Sync DAWs with LTC and automate the MultiEncoder from Ableton OSC clips"
 DisableComments: false
 difficulty: "advanced"
 ---

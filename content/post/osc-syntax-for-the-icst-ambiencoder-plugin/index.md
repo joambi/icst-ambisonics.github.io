@@ -8,8 +8,8 @@ weight: 1
 tags: ["osc", "syntax", "ambiencoder", "reference"]
 
 key_points:
-  - "Reference complete OSC address and parameter syntax for AmbiEncoder."
-  - "Includes AED/XYZ patterns for index- and name-based control."
+  - "Look up every OSC address and parameter format for ICST AmbiEncoder"
+  - "Control source position in AED or XYZ coordinates from any OSC sender"
 DisableComments: false
 difficulty: "intermediate"
 ---

@@ -7,8 +7,8 @@ month: 2026-03
 weight: 23
 tags: ["tutorial", "reaper", "ambiencoder", "einstieg", "workflow"]
 key_points:
-  - "Baue eine erste stabile Reaper-Ambisonics-Session in klaren Phasen auf."
-  - "Verstehe zuerst den Monitoring-Backbone vor der Detailausfuehrung."
+  - "Erste funktionierende Spatial-Audio-Session in REAPER Schritt für Schritt aufbauen"
+  - "Strukturierte Checkliste vom Plugin-Install bis zum Binaural-Monitoring"
 difficulty: "beginner"
 ---
 
