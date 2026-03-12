@@ -8,9 +8,7 @@ group: "Ascolta"
 tags: ["ascolta", "hören", "spatial-audio", "analyse", "guide"]
 ---
 
-# Ascolta Guide: So hörst du räumliche Musik aktiv und analytisch
-
-**Für wen:** Level: Alle Levels | Zielgruppe: Besucher:innen, Studierende, Komponist:innen.
+**Für wen:** Zielgruppe: Besucher:innen, Studierende, Komponist:innen.
 
 ## Warum dieser Guide
 Räumliches Hören wirkt am Anfang oft abstrakt. Diese Seite bietet eine einfache Methode, um Struktur, Bewegung und Tiefe klarer wahrzunehmen.

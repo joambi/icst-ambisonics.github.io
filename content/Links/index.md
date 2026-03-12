@@ -115,3 +115,4 @@ Video: ['Into The Soundfield' - Michael Gerzon & Ambisonics at Oxford (Official 
 - [Envelop for Live](https://github.com/EnvelopSound/EnvelopForLive)
 
 No guarantee of completeness
+

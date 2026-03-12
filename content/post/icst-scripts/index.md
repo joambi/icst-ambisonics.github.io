@@ -14,7 +14,7 @@ difficulty: "advanced"
 
 # ICST AmbiEncoder_64 Spiral Walk - Dokumentation
 
-**For whom:** Level: Advanced | Audience: ReaScript user, Technical artist.
+Level: Advanced | **Audience:** ReaScript user, Technical artist.
 
 ### 🔍 **Funktion**
 
@@ -83,3 +83,4 @@ DOWNLOAD ICST LuaScripts:
 
 Spiral_Walk_out:
 Spiral_Walk_in:
+

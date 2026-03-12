@@ -54,4 +54,5 @@ Back:![Back](Back.png)
 - [Blauertsche Bänder](https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder)
 - [sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf](https://sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf)
 
----
+
+

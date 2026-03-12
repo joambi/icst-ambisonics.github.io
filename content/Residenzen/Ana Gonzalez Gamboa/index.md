@@ -7,8 +7,6 @@ build:
   render: always
 ---
 
-# Ana Gonzalez Gamboa
-
 ICST Artist in Residence from **08.09.2025 to 16.09.2025** 
 (Studio-Residence)
 ![Ana Gonzalez](GOPR4281.jpg)

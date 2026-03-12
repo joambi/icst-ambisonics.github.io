@@ -8,9 +8,7 @@ group: "Ascolta"
 tags: ["ascolta", "listening", "spatial-audio", "analysis", "guide"]
 ---
 
-# Ascolta Guide: How to Listen to Spatial Music Actively and Analytically
-
-**For whom:** Level: All levels | Audience: Visitors, Students, Composers.
+**Audience:** Visitors, Students, Composers.
 
 ## Why this guide
 Spatial listening can feel abstract at first. This page provides a simple method for hearing structure, movement, and depth more clearly.

@@ -7,8 +7,6 @@ build:
   render: always
 ---
 
-# Youngjae Cho
-
 ICST Artist in Residence from **07.07.2025 to 27.07.2025** (Studio-Residence)
 
 ![Youngjae Cho](Youngjae_Cho.jpg)
@@ -41,4 +39,4 @@ The workflow developed at ICST:
 4. Re-encode from T-format back to 3rd-order ambiX B-format
 5. Upscale to 7th-order ambiX for playback
 
----
+

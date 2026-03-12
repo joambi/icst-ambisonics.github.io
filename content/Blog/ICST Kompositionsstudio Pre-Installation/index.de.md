@@ -9,7 +9,7 @@ languageCode: de
 
 # Vorinstallation für deinen externen Laptop
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ### **AUDIO**
 
@@ -68,3 +68,4 @@ Damit der Curved Screen als ein großer Bildschirm erscheint, ist eine zusätzli
 # Downloads
 
 → Alle Downloads sind zentral auf der Seite [Downloads](/blog/downloads/) verfügbar.
+

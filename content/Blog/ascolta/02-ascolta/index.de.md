@@ -5,9 +5,7 @@ date: 2022-10-04T18:00:00
 weight: 2
 ---
 
-# #02 ascolta Akousmatische Hörstunde
-
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![ascolta](ascolta.png)
 
@@ -112,3 +110,4 @@ nur im Verstand zu sehen ist,
 in das es durch die Ohren und nicht die Augen eindringt.
 Stille also,
 und statt zu schauen, höret nun.
+

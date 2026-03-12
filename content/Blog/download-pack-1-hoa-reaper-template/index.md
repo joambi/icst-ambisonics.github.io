@@ -8,9 +8,7 @@ group: "Downloads"
 tags: ["download", "reaper", "hoa", "template", "checklist"]
 ---
 
-# Download Pack #1: Reaper Template + HOA Routing Checklist
-
-**For whom:** Level: Beginner to Intermediate | Audience: Composer, Student, Technician.
+Level: Beginner to Intermediate | **Audience:** Composer, Student, Technician.
 
 ## Included files
 - Reaper project template (`.RPP`)

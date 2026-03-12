@@ -30,4 +30,4 @@ Alle Dateien in diesem Archiv folgen dem **ambiX**-Standard:
 
 Zur Verwendung: Datei in REAPER importieren, Spur auf die korrekte Kanalanzahl setzen und durch einen ICST AmbiDecoder für die passende Ordnung routen. Die [Schritt-für-Schritt-Anleitung](/de/icst-ambisonics-plugins/06_step_by_step_setup/) führt durch den Prozess.
 
----
+

@@ -7,7 +7,7 @@ group: "Studio"
 languageCode: de
 ---
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 #### **Studio für Komposition**
 

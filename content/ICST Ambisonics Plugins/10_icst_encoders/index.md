@@ -96,3 +96,4 @@ The ICST AmbiEncoders offer:
 - Distance simulation with lowpass filtering and Doppler effect
 - Full OSC integration (input, output, and JavaScript scripting)
 - Preset management for reproducible sessions
+

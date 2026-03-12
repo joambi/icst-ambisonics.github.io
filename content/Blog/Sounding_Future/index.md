@@ -8,7 +8,7 @@ group: "Listening"
 
 ## Listen Online
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 ![SoundingFuture](SoundingFuture.png)
 [sounding FUTURE](https://audiospace.soundingfuture.com/)

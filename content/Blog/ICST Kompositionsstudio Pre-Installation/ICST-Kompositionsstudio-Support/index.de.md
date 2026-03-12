@@ -10,7 +10,7 @@ languageCode: de
 * * *
 # ICST Support für das Kompositionsstudio
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ### RME MadiFace USB-Treiber installieren
 
@@ -44,3 +44,4 @@ Download für dein System: [DisplayLink Manager für macOS](https://www.synaptic
 **Technischer Service A/V:**
 - [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch)
 - Mobile: +41 76 330 11 02
+

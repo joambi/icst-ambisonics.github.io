@@ -14,7 +14,7 @@ difficulty: "intermediate"
 
 # ICST_AmbiEncoder_64_CircleSelected_Lua-Presets
 
-**For whom:** Level: Intermediate | Audience: Reaper power user, Performance artist.
+Level: Intermediate | **Audience:** Reaper power user, Performance artist.
 
 ## 📃 Benutzer-Dokumentation
 **Script:** `ICST_AmbiEncoder_64_CircleSelected_Presets.lua`  
@@ -127,4 +127,5 @@ difficulty: "intermediate"
 - **Autor:** Johannes Schütt &  Reaper-Assistent ✨
 - **Features:** Presets, Export/Import, Visualisierung, auswählbare Punkte
 
----
+
+

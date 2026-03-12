@@ -278,3 +278,4 @@ Nach dem Rendern zeigt Reaper ein **Render-Info**-Fenster mit Peak- und LUFS-Wer
 - **Kein Decoder-Ausgang:** Send vom Bformat Master zum Decoder-Eingang kontrollieren.
 - **Falsche Lokalisation:** Lautsprechertest erneut durchführen und Hardware-Ausgangszuordnung prüfen.
 - **Nur binaural / keine Lautsprecher:** Stumm-/Solo-Status zwischen Decoder- und Binaural-Spur prüfen.
+

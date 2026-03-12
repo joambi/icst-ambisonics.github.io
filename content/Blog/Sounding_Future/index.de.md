@@ -8,7 +8,7 @@ languageCode: de
 
 ## Listen Online
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![SoundingFuture](SoundingFuture.png)
 [sounding FUTURE](https://audiospace.soundingfuture.com/)

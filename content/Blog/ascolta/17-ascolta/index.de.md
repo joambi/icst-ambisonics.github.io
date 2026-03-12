@@ -8,7 +8,7 @@ hideDate: true
 
 # Kommende ascolta Akousmatische Hörstunde
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![ascolta](ascolta.png)
 
@@ -26,4 +26,5 @@ _Freier Eintritt_
 | [Donnerstag, 2. April 2026](/de/blog/ascolta/18-ascolta/) | 18:00–19:00 |
 | Donnerstag, 21. Mai 2026 | 18:00–19:00 |
 
----
+
+

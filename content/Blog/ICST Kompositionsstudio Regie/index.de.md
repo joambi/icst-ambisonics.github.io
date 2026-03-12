@@ -10,7 +10,7 @@ languageCode: de
 
 # **Überblick über das ICST Kompositionsstudio**
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Status April 2023
 

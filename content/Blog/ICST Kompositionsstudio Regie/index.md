@@ -9,7 +9,7 @@ group: "Studio"
 
 # **Overview of  the ICST Composition Studio**
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 Status  April 2023
 

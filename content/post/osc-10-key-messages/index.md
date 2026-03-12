@@ -13,7 +13,7 @@ difficulty: "intermediate"
 ---
 
 
-**For whom:** Level: Intermediate | Audience: Power user, Technical artist.
+Level: Intermediate | **Audience:** Power user, Technical artist.
 
 Diese Seite ist der **Praxis-Quickstart**.
 Fuer die vollstaendige Adress- und Parameterreferenz siehe:

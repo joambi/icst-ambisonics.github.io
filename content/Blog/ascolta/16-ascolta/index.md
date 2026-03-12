@@ -5,9 +5,7 @@ date: 2025-10-16T18:00:00
 weight: 16
 ---
 
-# #16 ascolta Acousmatic Listening Session
-
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 ![ascolta](ascolta.png)
 
@@ -67,4 +65,4 @@ Each example will be presented in three different versions:
 
 Presentation: Johannes Schütt
 
----
+

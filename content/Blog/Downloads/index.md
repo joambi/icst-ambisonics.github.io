@@ -6,7 +6,7 @@ weight: 0
 group: "Residents"
 ---
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 Downloads for studio and Ambisonics workflows in one place.
 
@@ -50,4 +50,4 @@ Downloads for studio and Ambisonics workflows in one place.
   </div>
 </details>
 
----
+

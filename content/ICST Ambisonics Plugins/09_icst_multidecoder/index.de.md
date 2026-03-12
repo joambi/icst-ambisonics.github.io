@@ -87,4 +87,4 @@ Das Ergebnis ist eine präzisere Tiefenstaffelung und eine differenziertere Raum
 
 Der ICST MultiDecoder stellt damit ein erweitertes Werkzeug für künstlerische wie auch forschungsbasierte Anwendungen im Bereich der Higher-Order Ambisonics dar.
 
----
+

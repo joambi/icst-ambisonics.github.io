@@ -17,7 +17,7 @@ Raum: **ZT 3.D02** · Kontakt: [johannes.schuett@zhdk.ch](mailto:johannes.schuet
 
 ## Studio-Bereiche
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 - [Equipment](/blog/icst-kompositionsstudio-equipment/)
 - [Software](/blog/icst-kompositionsstudio-software/)
@@ -28,3 +28,4 @@ Raum: **ZT 3.D02** · Kontakt: [johannes.schuett@zhdk.ch](mailto:johannes.schuet
 - [Artist Residencies](/residenzen/)
 - [ascolta](/blog/ascolta/)
 - [Downloads](/blog/downloads/)
+

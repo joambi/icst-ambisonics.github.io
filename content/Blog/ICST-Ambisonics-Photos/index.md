@@ -6,7 +6,7 @@ weight: 12
 group: "Studio"
 ---
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 ### The ICST Kompositionsstudio
 

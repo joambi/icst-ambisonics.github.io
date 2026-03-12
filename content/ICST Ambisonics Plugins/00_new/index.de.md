@@ -107,3 +107,4 @@ Steuern Sie Gruppen über OSC mit **absoluten Euler-Winkeln**:
 - Absturz durch falsches Schließen von OSC-Fenstern behoben
 - Tutorial-Link im Hilfemenü aktualisiert
 - Lautsprecher-Test aktualisiert: White-Noise → **Pink-Noise**
+

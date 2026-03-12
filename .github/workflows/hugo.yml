@@ -52,9 +52,11 @@ jobs:
             npm ci
           fi
       - name: Make checks executable
-        run: chmod +x scripts/check-frontmatter.sh scripts/check-links.sh
+        run: chmod +x scripts/check-frontmatter.sh scripts/check-links.sh scripts/check-i18n-consistency.sh
       - name: Check front matter
         run: ./scripts/check-frontmatter.sh
+      - name: Check EN/DE consistency
+        run: ./scripts/check-i18n-consistency.sh
       - name: Check markdown links
         run: ./scripts/check-links.sh
       - name: Build with Hugo

@@ -125,3 +125,4 @@ Dieses Setup ermöglicht eine feinabgestimmte Dekodierung für jede Schicht unab
 - 📖 [ICST AmbiDecoder Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - 📥 [Download v3.2](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 - 📺 [ICST Ambisonics Videos on YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)
+

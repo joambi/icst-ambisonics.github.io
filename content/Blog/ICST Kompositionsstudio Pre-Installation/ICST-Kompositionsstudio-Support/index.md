@@ -9,7 +9,7 @@ group: "Residents"
 * * *
 # ICST support for the composition studio
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 ### Install RME MadiFace  USB Driver
 
@@ -43,3 +43,4 @@ Download for your system: [DisplayLink Manager for macOS](https://www.synaptics.
 **Technical Service A/V:** 
 - [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch)
 - mobile: +41 76 330 11 02
+

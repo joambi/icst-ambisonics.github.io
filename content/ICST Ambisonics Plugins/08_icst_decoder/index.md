@@ -200,4 +200,4 @@ The ICST Ambisonics Decoder offers:
 
 It thus forms a robust foundation for artistic, scientific, and production-oriented applications in 3D audio.
 
----
+

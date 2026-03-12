@@ -8,7 +8,7 @@ group: "Residents"
 
 # Pre-installation for your external laptop
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 ### **AUDIO**
 
@@ -64,3 +64,4 @@ To get the curved screen as a single large screen, you need to make an additiona
 # Downloads
 
 → All downloads are centralized on the [Downloads](/blog/downloads/) page.
+

@@ -5,9 +5,7 @@ date: 2023-10-24T18:00:00
 weight: 8
 ---
 
-# #08 ascolta Acousmatic Listening Session
-
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 ![ascolta](ascolta.png)
 
@@ -69,3 +67,4 @@ to Nature, to Mother Earth, to the Pachamama.
 * * *
 
 Quoted from the website of **[Mesias Maiguashca](https://maiguashca.de/) (2022)**
+

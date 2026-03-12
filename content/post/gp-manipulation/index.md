@@ -14,7 +14,7 @@ difficulty: "intermediate"
 
 # Group Animation
 
-**For whom:** Level: Intermediate | Audience: Composer, Live performer.
+Level: Intermediate | **Audience:** Composer, Live performer.
 
 The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool for dynamically manipulating grouped audio sources in the **Radar Display**. By selecting a group point and holding **Option (Alt) on Mac**, you unlock advanced functions like **group animation** and **group stretch**, enabling synchronized movement and transformation of multiple sources for enhanced 3D spatialization.
 

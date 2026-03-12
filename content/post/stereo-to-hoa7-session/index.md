@@ -13,7 +13,7 @@ difficulty: "intermediate"
 ---
 
 
-**For whom:** Level: Intermediate | Audience: Composer, Producer.
+Level: Intermediate | **Audience:** Composer, Producer.
 
 ## Why this guide exists
 Many users know stereo production well but need a concrete bridge to higher-order Ambisonics in a real session.

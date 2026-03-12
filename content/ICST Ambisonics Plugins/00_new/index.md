@@ -108,3 +108,4 @@ Control groups via OSC using **absolute Euler angles**:
 - Crash caused by closing OSC windows in the wrong order resolved
 - Updated the tutorial link in the Help section
 - Speaker test updated: White-Noise → **Pink-Noise**
+

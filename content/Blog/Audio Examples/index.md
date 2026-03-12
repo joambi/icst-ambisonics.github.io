@@ -9,7 +9,7 @@ group: "Studio"
 weight: 8
 ---
 
-For whom: Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 Short preview snippets are hosted on this site. Full-length versions are linked externally to avoid GitHub Page size limits.
 

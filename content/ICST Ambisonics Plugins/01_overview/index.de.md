@@ -8,7 +8,6 @@ tags:
 title: Übersicht
 ---
 
-# Übersicht
 Die ICST Ambisonics Plugins kodieren und dekodieren das Ambisonics B-Format und mehrere zusätzliche räumliche Audio-Produktionswerkzeuge. Die folgenden Beispiele wurden für und mit der [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW) erstellt!
 
 ![Overview_v3.1](Overview_v3.1.png)

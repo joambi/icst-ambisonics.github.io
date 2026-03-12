@@ -16,7 +16,7 @@ difficulty: "advanced"
 
 # Bidirectional OSC Communication with MaxMSP
 
-**For whom:** Level: Advanced | Audience: Max/MSP and OSC integrator.
+Level: Advanced | **Audience:** Max/MSP and OSC integrator.
 
 Generate motion data in Max and send it via OSC to the _ICST AmbiEncoder_ in your DAW. Alternatively, transfer a motion composition from your DAW to the _icst.ambisonics-externals_.
 
@@ -76,3 +76,4 @@ For **index-based addressing**:
 - `Roll`: Rotation around the forward axis
 
 ----
+

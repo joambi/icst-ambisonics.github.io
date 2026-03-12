@@ -5,9 +5,7 @@ date: 2023-10-24T18:00:00
 weight: 8
 ---
 
-# #08 ascolta Akousmatische Hörstunde
-
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![ascolta](ascolta.png)
 
@@ -69,3 +67,4 @@ zur Natur, zur Mutter Erde, zur Pachamama.
 * * *
 
 Zitiert von der Website von **[Mesias Maiguashca](https://maiguashca.de/) (2022)**
+

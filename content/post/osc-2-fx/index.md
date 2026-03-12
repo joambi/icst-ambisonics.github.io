@@ -17,7 +17,7 @@ difficulty: "advanced"
 --
 # ICST AmbiEncoder sends OSC to FX-Plugins-parameter
 
-**For whom:** Level: Advanced | Audience: Technician, Sound engineer.
+Level: Advanced | **Audience:** Technician, Sound engineer.
 
 ### Integrating ICST AmbiEncoder with IEM FdnReverb via OSC
 

@@ -6,7 +6,7 @@ weight: 6
 group: "Studio"
 ---
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 Ambisonics - speaker - setting and coordinates
 **Example for „ICST\_AmbiDecoder 3.1.0" VST3  (2025)**

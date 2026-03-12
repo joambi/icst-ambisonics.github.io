@@ -7,9 +7,7 @@ weight: 11
 
 * * *
 
-# #11 ascolta Akousmatische Hörstunde
-
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![ascolta](ascolta.png)
 

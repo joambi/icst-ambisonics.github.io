@@ -7,7 +7,7 @@ group: "Residents"
 languageCode: de
 ---
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Downloads für Studio- und Ambisonics-Workflows an einem Ort.
 
@@ -29,6 +29,14 @@ Downloads für Studio- und Ambisonics-Workflows an einem Ort.
       <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv">Multi-Panner (Ableton)</a>
     </div>
   </section>
+
+  <section class="home-card">
+    <h4>B-Format Testdateien</h4>
+    <p>Referenz-ambiX-Aufnahmen (ACN/SN3D) zum Testen von Decodern und Binaural-Renderern.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/blog/b-format-archive/">B-Format Archiv</a>
+    </div>
+  </section>
 </div>
 
 <details class="home-accordion">
@@ -43,4 +51,4 @@ Downloads für Studio- und Ambisonics-Workflows an einem Ort.
   </div>
 </details>
 
----
+

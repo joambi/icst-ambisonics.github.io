@@ -1,0 +1,7 @@
+# One path per line. Use for intentional EN-only/DE-only exceptions.
+content/Blog/Sounding_Future/index.md
+content/Blog/ICST Kompositionsstudio Pre-Installation/index.md
+content/ICST Ambisonics Plugins/09_icst_multidecoder/index.md
+content/post/Blauertsche_B
+content/Blog/ascolta/17-ascolta/index.md
+content/Blog/ICST Composer Studio Blog/index.md

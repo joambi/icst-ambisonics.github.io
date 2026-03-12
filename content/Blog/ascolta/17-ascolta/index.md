@@ -10,7 +10,7 @@ hideDate: true
 
 ## ascolta — Acousmatic Listening Sessions
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 Public listening sessions at the ICST Composition Studio, ZHdK
 Free admission · Open to all
@@ -25,4 +25,5 @@ Free admission · Open to all
 
 **Thursday, 21 May 2026** · 18:00 – 19:00 · Free admission
 
----
+
+

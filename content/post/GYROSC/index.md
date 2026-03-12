@@ -64,7 +64,7 @@ The GyrOSC app will send the 'Gravity' data via OSC (port 50001) to the ICST Mul
 
 # Inspirations:
 
-**For whom:** Level: Intermediate | Audience: Mobile-controller user, Performer.
+Level: Intermediate | **Audience:** Mobile-controller user, Performer.
 
 ### OSC-Swarm
 
@@ -77,3 +77,4 @@ JS-Code:
 `s.setXYZ(1, s.arg(2), -s.arg(1), 0); for(i = 2; i <= 8; i++) s.setXYZ(i, s.arg(2)+Math.random()*0.2, -s.arg(1) + Math.random()* 0.2, 0)`
 
 ![OSC-Swarm](GyrOSC-SWARM.gif)
+

@@ -5,9 +5,8 @@ title: Downloads
 weight: 30
 ---
 
-# Downloads
-
 ---
 
 - [ICST Ambisonics Plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 - [ICST Ambisonics Tools](https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-ambisonics-externals-for-maxmsp-5381) (Bitte laden Sie die Ambisonics Tools über den 'Max Package Manager' herunter)
+

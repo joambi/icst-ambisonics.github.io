@@ -276,3 +276,4 @@ After rendering, Reaper shows a **Rendering Info** window with peak and LUFS val
 - **No decoder output:** verify send from Bformat Master to Decoder input.
 - **Wrong speaker localization:** run speaker test again and verify hardware output mapping.
 - **Binaural only / no speakers:** check mute/solo state between Decoder and Binaural track.
+

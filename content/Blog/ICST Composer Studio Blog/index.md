@@ -103,7 +103,7 @@ The **ICST Composition Studio** at the Zurich University of the Arts is a dedica
 
 # Explore the Studio
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 <div class="studio-nav">
   <a href="/blog/icst-kompositionsstudio-equipment/"><i class="fas fa-microchip"></i> Equipment</a>
@@ -122,4 +122,3 @@ The **ICST Composition Studio** at the Zurich University of the Arts is a dedica
   ✉️ <a href="mailto:johannes.schuett@zhdk.ch">johannes.schuett@zhdk.ch</a>
 </div>
 
----

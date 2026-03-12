@@ -7,7 +7,7 @@ weight: 8
 group: "Residents"
 ---
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 * * *
 

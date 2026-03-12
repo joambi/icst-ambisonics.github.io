@@ -8,8 +8,6 @@ group: "Studio"
 tags: ["studio", "routing", "lautsprecher", "decoder", "case-study"]
 ---
 
-# ICST Studio-Case: Warum unser 31-Speaker-Setup so geroutet ist
-
 **Für wen:** Level: Intermediate | Zielgruppe: Komponist:in, Techniker:in, Researcher.
 
 ## Kontext

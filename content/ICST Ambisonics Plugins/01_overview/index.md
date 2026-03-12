@@ -8,7 +8,6 @@ tags:
 title: Overview
 ---
 
-# Overview
 The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and several additional spatial audio production tools. The following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
 
 ![Overview_v3.1](Overview_v3.1.png)

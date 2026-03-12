@@ -5,9 +5,7 @@ date: 2025-10-16T18:00:00
 weight: 16
 ---
 
-# #16 ascolta Akousmatische Hörstunde
-
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![ascolta](ascolta.png)
 
@@ -67,4 +65,4 @@ Jedes Beispiel wird in drei verschiedenen Versionen präsentiert:
 
 Präsentation: Johannes Schütt
 
----
+

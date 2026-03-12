@@ -5,9 +5,7 @@ date: 2025-04-22T18:00:00
 weight: 14
 ---
 
-# #14 ascolta Akousmatische Hörstunde
-
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![ascolta](ascolta.png)
 
@@ -33,3 +31,4 @@ Zusätzliche Informationen:
 - [5.1 Surround-Format](https://en.wikipedia.org/wiki/5.1_surround_sound)
 - [Stereo UHJ](https://en.wikipedia.org/wiki/Ambisonic_UHJ_format): Ein Prozess, der streng horizontale Ambisonics-Signale in ein kompatibles 2-Kanal-Stereoformat mit Matrixtechnologie kodiert, ursprünglich für Quadraphonics entwickelt. Diese Kodierung ist jedoch verlustreich.
 - Wir haben das ursprüngliche UHJ in ein 7. Ordnung ambiX B-Format dekodiert und verwenden den [ICST Ambisonics MultiDecoder](https://ambisonics.ch/icst-ambisonics-plugins/01_overview/) für die Wiedergabe.
+

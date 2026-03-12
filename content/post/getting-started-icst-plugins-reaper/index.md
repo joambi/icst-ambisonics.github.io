@@ -13,7 +13,7 @@ difficulty: "beginner"
 ---
 
 
-**For whom:** Level: Beginner | Audience: Composer, Student, Studio Assistant.
+Level: Beginner | **Audience:** Composer, Student, Studio Assistant.
 
 This page is the compact onboarding version of the full docs workflow:
 [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/).

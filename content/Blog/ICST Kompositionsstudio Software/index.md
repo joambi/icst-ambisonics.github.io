@@ -6,7 +6,7 @@ weight: 4
 group: "Studio"
 ---
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 Software and plugin environment for production at the ICST Mac Pro.
 

@@ -13,7 +13,7 @@ difficulty: "beginner"
 ---
 
 
-**For whom:** Level: Beginner | Audience: Composer, Student, DAW newcomer.
+Level: Beginner | **Audience:** Composer, Student, DAW newcomer.
 
 Diese Seite ist die **Ausfuehrungs-Checkliste** (klickorientiert).
 Fuer Onboarding-Logik und systematische Fehlersuche siehe:

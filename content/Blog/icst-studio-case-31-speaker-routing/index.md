@@ -8,9 +8,7 @@ group: "Studio"
 tags: ["studio", "routing", "loudspeaker", "decoder", "case-study"]
 ---
 
-# ICST Studio Case: Why Our 31-Speaker Setup Is Routed This Way
-
-**For whom:** Level: Intermediate | Audience: Composer, Technician, Researcher.
+Level: Intermediate | **Audience:** Composer, Technician, Researcher.
 
 ## Context
 This case explains the routing logic used in the ICST composition studio to keep sessions robust and repeatable.

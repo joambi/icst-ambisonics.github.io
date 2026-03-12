@@ -13,7 +13,7 @@ difficulty: "intermediate"
 ---
 
 
-**For whom:** Level: All levels | Audience: New and returning site users.
+**Audience:** New and returning site users.
 
 ## Warum wir die Seite neu strukturiert haben
 Die neue Struktur reduziert Suchaufwand und fuehrt schneller zu den passenden Inhalten. Statt gemischter Bereiche gibt es klare Einstiegspunkte fuer Tutorials, Studio Cases, Downloads und Dokumentation.

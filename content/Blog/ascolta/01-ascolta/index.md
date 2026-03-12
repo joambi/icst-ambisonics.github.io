@@ -5,9 +5,7 @@ date: 2019-11-26T18:00:00
 weight: 1
 ---
 
-# #01 ascolta Acousmatic Listening Session
-
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 ![ascolta](ascolta.png)
 

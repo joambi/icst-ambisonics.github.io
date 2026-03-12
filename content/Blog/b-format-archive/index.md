@@ -29,4 +29,4 @@ All files in this archive follow the **ambiX** standard:
 
 To use these files: import into REAPER, set the track to the correct channel count, and route through an ICST AmbiDecoder configured for the matching order. See the [Step-by-Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/) for a walkthrough.
 
----
+

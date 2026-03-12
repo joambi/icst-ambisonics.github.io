@@ -7,7 +7,7 @@ weight: 11
 group: "Residents"
 ---
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 Preset views and reference layouts for fast setup in the ICST studio.
 

@@ -13,7 +13,7 @@ difficulty: "beginner"
 ---
 
 
-**For whom:** Level: Beginner | Audience: Composer, Student, Studio Assistant.
+Level: Beginner | **Audience:** Composer, Student, Studio Assistant.
 
 ## Problem
 You want to start quickly with ICST Ambisonics plugins in Reaper, without spending hours on trial-and-error routing.

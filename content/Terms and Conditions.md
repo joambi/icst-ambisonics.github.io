@@ -9,8 +9,6 @@ Institute for Computer Music and Sound Technology (ICST) Zurich University of th
 
 ---
 
-## Terms and Conditions
-
 Read the full Terms and Conditions here:
 
 <a href="https://www.iubenda.com/terms-and-conditions/70769495" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe">Terms and Conditions</a>

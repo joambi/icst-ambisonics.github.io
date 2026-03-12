@@ -94,4 +94,5 @@ By assigning separate decoder units to each layer, psychoacoustic parameters (or
 
 The ICST MultiDecoder thus provides an extended tool for both artistic and research-based applications in Higher-Order Ambisonics.
 
----
+
+

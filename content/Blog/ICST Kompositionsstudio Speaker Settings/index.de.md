@@ -8,7 +8,7 @@ group: "Residents"
 languageCode: de
 ---
 
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.
 

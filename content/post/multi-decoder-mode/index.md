@@ -14,7 +14,7 @@ difficulty: "intermediate"
 
 # Multi-Decoder Mode
 
-**For whom:** Level: Advanced | Audience: Technician, Studio engineer.
+Level: Advanced | **Audience:** Technician, Studio engineer.
 
 The **Multi-Decoder Mode**, introduced in **ICST AmbiDecoder v3.2**, allows you to run up to **four fully independent decoders** within a single plugin instance. This is ideal for complex loudspeaker setups that combine different speaker arrays — for example, a main Ambisonics ring together with height speakers, a subwoofer group, or a separate near-field array.
 
@@ -125,3 +125,4 @@ This setup allows fine-tuned decoding for each layer independently, with separat
 - 📖 [ICST AmbiDecoder Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - 📥 [Download v3.2](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 - 📺 [ICST Ambisonics Videos on YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)
+

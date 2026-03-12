@@ -5,9 +5,7 @@ date: 2022-12-13T18:00:00
 weight: 4
 ---
 
-# #04 ascolta Acousmatic Listening Session
-
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 ![ascolta](ascolta.png)
 
@@ -73,3 +71,4 @@ This huge black bell with superhuman strength bears the inscription:
 I ring out the last Acoustic Listening Hour this year with the church bells of the Reformed Church Diessenhofen/TG.
 The next Acoustic Listening Hour will take place next year.
 I wish you peace and tranquility over the holidays and all the best for the new year, 2023!
+

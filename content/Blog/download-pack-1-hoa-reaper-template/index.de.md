@@ -8,8 +8,6 @@ group: "Downloads"
 tags: ["download", "reaper", "hoa", "template", "checkliste"]
 ---
 
-# Download Pack #1: Reaper-Template + HOA-Routing-Checkliste
-
 **Für wen:** Level: Beginner bis Intermediate | Zielgruppe: Komponist:in, Studierende, Techniker:in.
 
 ## Enthaltene Dateien

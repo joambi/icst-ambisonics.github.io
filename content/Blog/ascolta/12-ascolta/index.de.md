@@ -5,9 +5,7 @@ date: 2024-09-17T18:00:00
 weight: 12
 ---
 
-# #12 ascolta Akousmatische Hörstunde
-
-**Für wen:** Level: Alle Levels | Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![ascolta](ascolta.png)
 
@@ -154,4 +152,5 @@ Quelle: EMDocu (erstellt: 25.08.1993 Quelle: Ruschkowski-Kartei 1989)
 
 1978 wurde Katzer in die Akademie der Künste Ost-Berlins gewählt. 1982 gründete er das Studio für elektroakustische Musik "Studio für elektroakustische Musik" angegliedert an die Musikabteilung der Akademie der Künste, deren künstlerischer Direktor er bis 2005 war.
 
----
+
+

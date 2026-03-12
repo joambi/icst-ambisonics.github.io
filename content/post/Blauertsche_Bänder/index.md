@@ -65,7 +65,7 @@ difficulty: "intermediate"
 .step__text { font-size: 1.4rem; padding-top: 2px; }
 </style>
 
-**For whom:** Level: Advanced | Audience: Psychoacoustics-focused composer/researcher.
+Level: Advanced | **Audience:** Psychoacoustics-focused composer/researcher.
 
 <div class="info-box">
 <strong>What this tutorial covers</strong>
@@ -134,4 +134,4 @@ Thus I coupled Y Front ↔ Back and Z Top ↔ Bottom with the IEM-Multifilter.
 - [Blauert's Bands (Wikipedia)](https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder)
 - [sengpielaudio.com – Die Bedeutung der Blauert'schen Bänder (PDF)](https://sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf)
 
----
+

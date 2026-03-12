@@ -14,7 +14,7 @@ DisableComments: false
 difficulty: "advanced"
 ---
 
-**For whom:** Level: Intermediate | Audience: Spatial performer, controller-based workflow user.
+Level: Intermediate | **Audience:** Spatial performer, controller-based workflow user.
 
 [Grapes 3D Control](https://grapes-3d.com/) is a handy addition to the ICST Ambisonics plugins.
 Grapes come as a standalone and VST3 and can be operated directly in the DAW (Reaper) in sync. 

@@ -6,7 +6,7 @@ weight: 3
 group: "Studio"
 ---
 
-**For whom:** Level: All levels | Audience: Composer, Student, Researcher, Studio visitor.
+**Audience:** Composer, Student, Researcher, Studio visitor.
 
 Core equipment and practical checklist for work at the ICST composition studio.
 
