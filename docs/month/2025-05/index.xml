@@ -26,9 +26,9 @@
       <guid>https://ambisonics.ch/post/osc-2-fx/</guid>
       <pubDate>Fri, 16 May 2025 09:44:58 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&amp;ndash;&lt;/p&gt;
 &lt;h1 id=&#34;icst-ambiencoder-sends-osc-to-fx-plugins-parameter&#34;&gt;ICST AmbiEncoder sends OSC to FX-Plugins-parameter&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Technician, Sound engineer.&lt;/p&gt;
 &lt;h3 id=&#34;integrating-icst-ambiencoder-with-iem-fdnreverb-via-osc&#34;&gt;Integrating ICST AmbiEncoder with IEM FdnReverb via OSC&lt;/h3&gt;
 &lt;p&gt;This example demonstrates a simple synchronization between &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; and &lt;strong&gt;IEM Ambisonics plugins&lt;/strong&gt;, using &lt;strong&gt;FdnReverb&lt;/strong&gt; to apply distance-dependent reverb. The &lt;strong&gt;IEM plugins&amp;rsquo; OSC interface&lt;/strong&gt; makes this process straightforward.&lt;/p&gt;
 &lt;h3 id=&#34;osc--osc-communication&#34;&gt;OSC &amp;lt;&amp;ndash;&amp;gt; OSC Communication&lt;/h3&gt;
@@ -57,7 +57,6 @@
 &lt;/ol&gt;
 &lt;p&gt;As the distance increases, reverb intensity will also increase. Experiment with other reverb parameters for additional effects.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -67,9 +66,8 @@
       <guid>https://ambisonics.ch/post/gp-manipulation/</guid>
       <pubDate>Wed, 28 May 2025 13:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;group-animation&#34;&gt;Group Animation&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;group-animation&#34;&gt;Group Animation&lt;/h1&gt;
+&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Live performer.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;ICST Multi-Ambisonics Encoder v.2+&lt;/strong&gt; features a &lt;strong&gt;Group Animation&lt;/strong&gt; tool for dynamically manipulating grouped audio sources in the &lt;strong&gt;Radar Display&lt;/strong&gt;. By selecting a group point and holding &lt;strong&gt;Option (Alt) on Mac&lt;/strong&gt;, you unlock advanced functions like &lt;strong&gt;group animation&lt;/strong&gt; and &lt;strong&gt;group stretch&lt;/strong&gt;, enabling synchronized movement and transformation of multiple sources for enhanced 3D spatialization.&lt;/p&gt;
 &lt;p&gt;📺 &lt;strong&gt;Tutorial:&lt;/strong&gt; &lt;a href=&#34;https://youtu.be/aDa-vNWriLM&#34;&gt;Points and Radar&lt;/a&gt; (3:15)&lt;/p&gt;
 &lt;hr&gt;
@@ -131,7 +129,6 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
 &lt;p&gt;The ICST MultiEncoder can now be controlled directly using Euler angles via OSC.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/OSC_abs_angel.gif&#34; alt=&#34;Euler_Winkel&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -141,9 +138,7 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
       <guid>https://ambisonics.ch/post/gyrosc/</guid>
       <pubDate>Wed, 28 May 2025 14:57:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;ICST MultiEncoder and iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;ICST MultiEncoder and iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GyrOSC&lt;/strong&gt; is a lightweight utility that sends motion sensor data (from your iPhone, iPod Touch, or iPad) over a local wireless network to any OSC-compatible host application. It allows you to control live audio or video applications using your device&amp;rsquo;s built-in gyroscope, accelerometer, compass, and altimeter.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/gyrOSC.png&#34; alt=&#34;GyrOSC&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The following GIF demonstrates how the ICST AmbiEncoder receives OSC data from the GyrOSC app.&lt;/p&gt;
@@ -194,26 +189,23 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;inspirations&#34;&gt;Inspirations:&lt;/h1&gt;
+&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Mobile-controller user, Performer.&lt;/p&gt;
 &lt;h3 id=&#34;osc-swarm&#34;&gt;OSC-Swarm&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;OSC-Message:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;/gyrosc/1/grav&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;JS-Code:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;s.setXYZ(1, s.arg(2), -s.arg(1), 0); for(i = 2; i &amp;lt;= 8; i++) s.setXYZ(i, s.arg(2)+Math.random()*0.2, -s.arg(1) + Math.random()* 0.2, 0)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyrOSC-SWARM.gif&#34; alt=&#34;OSC-Swarm&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
     <item>
       <title>Blauert&#39;s Bands</title>
-      <link>https://ambisonics.ch/post/blauertsche_b%C3%A4nder/</link>
-      <guid>https://ambisonics.ch/post/blauertsche_b%C3%A4nder/</guid>
+      <link>https://ambisonics.ch/post/blauerts-bands/</link>
+      <guid>https://ambisonics.ch/post/blauerts-bands/</guid>
       <pubDate>Fri, 16 May 2025 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;style&gt;
+        <description>&lt;style&gt;
 /* ── Blauert&#39;s Bands — Anatole theme aligned ── */
 
 .info-box {
@@ -260,15 +252,15 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
 }
 .step__text { font-size: 1.4rem; padding-top: 2px; }
 &lt;/style&gt;
-&lt;h1 id=&#34;blauerts-bands&#34;&gt;Blauert&amp;rsquo;s Bands&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Psychoacoustics-focused composer/researcher.&lt;/p&gt;
 &lt;div class=&#34;info-box&#34;&gt;
 &lt;strong&gt;What this tutorial covers&lt;/strong&gt;
 How to use Blauert&#39;s Bands (frequency-dependent directional perception) to enhance front/back and height perception in Ambisonics — by coupling the ICST Encoder&#39;s Y and Z axes to the IEM MultiEQ via OSC.
 &lt;/div&gt;
 &lt;p&gt;For the voice and its directivity perception I conducted experiments with the &lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauert&amp;rsquo;s Bands&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungsb%C3%A4nder.png&#34; alt=&#34;Ritungsbänder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Richtungsb%C3%A4nder.png&#34; alt=&#34;Ritungsbänder&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Thus I coupled Y Front ↔ Back and Z Top ↔ Bottom with the IEM-Multifilter.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;osc-routing&#34;&gt;OSC Routing&lt;/h2&gt;
 &lt;h3 id=&#34;height-z-axis--iem-multieq&#34;&gt;Height (Z-Axis → IEM MultiEQ)&lt;/h3&gt;
@@ -285,15 +277,15 @@ How to use Blauert&#39;s Bands (frequency-dependent directional perception) to e
   &lt;div class=&#34;label&#34;&gt;OSC OUT · Port 8008&lt;/div&gt;
   &lt;span class=&#34;arrow&#34;&gt;ICST Encoder OSC-Out Front&lt;/span&gt; &lt;span class=&#34;arrow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;path&#34;&gt;/MultiEQ/filterGain4&lt;/span&gt; &lt;span class=&#34;param&#34;&gt;{sz, -5.3, 0.0, 5.3}&lt;/span&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/osc-anbindung.png&#34; alt=&#34;OSC Connection&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/osc-anbindung.png&#34; alt=&#34;OSC Connection&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;iem-multieq--frequency-bands&#34;&gt;IEM MultiEQ — Frequency Bands&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Height (8 kHz boost)&lt;/strong&gt;
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Front&lt;/strong&gt;
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Back&lt;/strong&gt;
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;workflow-steps&#34;&gt;Workflow Steps&lt;/h2&gt;
 &lt;div class=&#34;step-grid&#34;&gt;
@@ -307,7 +299,6 @@ How to use Blauert&#39;s Bands (frequency-dependent directional perception) to e
 &lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauert&amp;rsquo;s Bands (Wikipedia)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf&#34;&gt;sengpielaudio.com – Die Bedeutung der Blauert&amp;rsquo;schen Bänder (PDF)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 </description>
 
     </item>

@@ -22,15 +22,16 @@
       <atom:link href="https://ambisonics.ch/de/tags/presets/index.xml" rel="self" type="application/rss&#43;xml" />
     <item>
       <title>ICST AmbiEncoder – CircleSelected</title>
-      <link>https://ambisonics.ch/de/post/circle_selected/</link>
-      <guid>https://ambisonics.ch/de/post/circle_selected/</guid>
+      <link>https://ambisonics.ch/de/post/circle-selected/</link>
+      <guid>https://ambisonics.ch/de/post/circle-selected/</guid>
       <pubDate>Sat, 19 Jul 2025 13:28:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
         <description>&lt;h1 id=&#34;icst_ambiencoder_64_circleselected_lua-presets&#34;&gt;ICST_AmbiEncoder_64_CircleSelected_Lua-Presets&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Intermediate | Zielgruppe: Reaper-Power-User, Performance Artist.&lt;/p&gt;
 &lt;h2 id=&#34;-benutzer-dokumentation&#34;&gt;📃 Benutzer-Dokumentation&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Script:&lt;/strong&gt; &lt;code&gt;ICST_AmbiEncoder_64_CircleSelected_Presets.lua&lt;/code&gt;
 &lt;strong&gt;Funktion:&lt;/strong&gt; Punkte des ICST AmbiEncoder_64 Plugins grafisch auswählen, im Kreis anordnen, bewegen (Rotation/RandomWalk) und als Preset speichern/laden.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/circle_selected/Circle_Selected.gif&#34; alt=&#34;circleselected&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/circle-selected/Circle_Selected.gif&#34; alt=&#34;circleselected&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-installation&#34;&gt;🚀 Installation&lt;/h2&gt;
 &lt;ol&gt;
@@ -147,7 +148,6 @@ Lege die Datei &lt;code&gt;ICST_AmbiEncoder_64_CircleSelected_Presets.lua&lt;/co
 &lt;li&gt;&lt;strong&gt;Autor:&lt;/strong&gt; Johannes Schütt &amp;amp;  Reaper-Assistent ✨&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Features:&lt;/strong&gt; Presets, Export/Import, Visualisierung, auswählbare Punkte&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 </description>
 
     </item>

@@ -3,6 +3,9 @@ tags:
 title: ICST Labor Ambisonics Speaker Settings
 description: "Lautsprecher-Presets und Koordinatendateien für den ICST Decoder"
 date: 2025-05-20T15:11:00
+slug: icst-kompositionsstudio-speaker-settings
+aliases:
+  - /blog/icst-kompositionsstudio-speaker-settings/
 weight: 11
 group: "Residents"
 languageCode: de

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Hoa7 on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/tags/hoa7/</link>
+
+    <description>
+      Recent content
+      
+         in Hoa7 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Sun, 08 Mar 2026 14:20:00 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/tags/hoa7/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Von Stereo zu HOA7: Eine Schritt-für-Schritt-Session</title>
+      <link>https://ambisonics.ch/de/post/stereo-to-hoa7-session/</link>
+      <guid>https://ambisonics.ch/de/post/stereo-to-hoa7-session/</guid>
+      <pubDate>Sun, 08 Mar 2026 14:20:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Intermediate | Zielgruppe: Komponist:in, Producer.&lt;/p&gt;
+&lt;h2 id=&#34;warum-es-diesen-guide-gibt&#34;&gt;Warum es diesen Guide gibt&lt;/h2&gt;
+&lt;p&gt;Viele Nutzer:innen kennen Stereo-Produktion sehr gut, brauchen aber eine konkrete Brücke zu Higher-Order Ambisonics in einer realen Session.&lt;/p&gt;
+&lt;h2 id=&#34;lernziel&#34;&gt;Lernziel&lt;/h2&gt;
+&lt;p&gt;Ein Stereo-Arrangement in HOA7-Denken überführen: Objektplatzierung, Bewegung und kontrolliertes Rendering.&lt;/p&gt;
+&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Grundkenntnisse in Stereo-Mix-Workflows.&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse in Reaper-Projektaufbau.&lt;/li&gt;
+&lt;li&gt;ICST Plugins sind installiert.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-1---stereo-rollen-in-raumrollen-übersetzen&#34;&gt;Schritt 1 - Stereo-Rollen in Raumrollen übersetzen&lt;/h2&gt;
+&lt;p&gt;Ordne Stereo-Elemente räumlichen Objekten zu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lead-Elemente -&amp;gt; stabile Front oder gezielte Bewegung.&lt;/li&gt;
+&lt;li&gt;Support-Elemente -&amp;gt; breitere Räume.&lt;/li&gt;
+&lt;li&gt;Atmosphären -&amp;gt; diffuse oder geschichtete Höhenanteile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-2---hoa7-session-grundstruktur-bauen&#34;&gt;Schritt 2 - HOA7-Session-Grundstruktur bauen&lt;/h2&gt;
+&lt;p&gt;Lege Quelltracks an, setze AmbiEncoder-Instanzen und definiere einen sauberen HOA7-Buspfad.&lt;/p&gt;
+&lt;h2 id=&#34;schritt-3---mit-statischer-platzierung-starten&#34;&gt;Schritt 3 - Mit statischer Platzierung starten&lt;/h2&gt;
+&lt;p&gt;Setze klare Ausgangspositionen, bevor Bewegung dazu kommt.&lt;/p&gt;
+&lt;h2 id=&#34;schritt-4---kontrollierte-bewegung-ergänzen&#34;&gt;Schritt 4 - Kontrollierte Bewegung ergänzen&lt;/h2&gt;
+&lt;p&gt;Nutze kleine, gezielte Automationsbewegungen und prüfe die Lesbarkeit im Monitoring.&lt;/p&gt;
+&lt;h2 id=&#34;schritt-5---übertragung-prüfen&#34;&gt;Schritt 5 - Übertragung prüfen&lt;/h2&gt;
+&lt;p&gt;Prüfe Referenzen in Mono/Stereo und validiere die HOA7-Ausgabekette.&lt;/p&gt;
+&lt;h2 id=&#34;schritt-6---export-und-dokumentation&#34;&gt;Schritt 6 - Export und Dokumentation&lt;/h2&gt;
+&lt;p&gt;Exportiere den Ambisonics-Render und sichere Projektnotizen für reproduzierbare Sessions.&lt;/p&gt;
+&lt;h2 id=&#34;typische-stolperfallen&#34;&gt;Typische Stolperfallen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Zu früh zu viel Bewegung.&lt;/li&gt;
+&lt;li&gt;Gain-Staging auf Higher-Order-Bussen wird ignoriert.&lt;/li&gt;
+&lt;li&gt;Fehlende Dokumentation von Routing und OSC-Zuordnungen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;weiterführend&#34;&gt;Weiterführend&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started mit ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/gp-manipulation/&#34;&gt;ICST MultiEncoder - Gruppenanimation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/multi-decoder-mode/&#34;&gt;ICST AmbiDecoder - Multi-Decoder Modus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

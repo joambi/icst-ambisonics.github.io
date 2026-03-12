@@ -18,7 +18,7 @@
       <language>en</language>
       <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
       <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
-      <lastBuildDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</lastBuildDate>
+      <lastBuildDate>Mon, 09 Mar 2026 09:00:00 &#43;0100</lastBuildDate>
       <atom:link href="https://ambisonics.ch/post/index.xml" rel="self" type="application/rss&#43;xml" />
     <item>
       <title>ICST AmbiEncoder – OSC Syntax</title>
@@ -26,25 +26,14 @@
       <guid>https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;osc-syntax-for-the-icst-ambiencoder-plugin&#34;&gt;OSC Syntax for the ICST AmbiEncoder Plugin&lt;/h2&gt;
-&lt;p&gt;The &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; supports &lt;strong&gt;OSC&lt;/strong&gt; and &lt;strong&gt;JavaScript&lt;/strong&gt;, enabling seamless communication with OSC tools such as &lt;strong&gt;TouchOSC, IanniX, MaxMSP&lt;/strong&gt;, and other OSC-enabled software.&lt;/p&gt;
-&lt;h3 id=&#34;how-it-works&#34;&gt;&lt;strong&gt;How It Works&lt;/strong&gt;&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Open the &lt;strong&gt;&amp;lsquo;OSC In&amp;rsquo;&lt;/strong&gt; tab.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png&#34; alt=&#34;OSC IN-OUT&#34;&gt;&lt;/p&gt;
-&lt;p&gt;_Figure: Encoder Setting &amp;lsquo;OSC In&amp;rsquo; receives over the port 50001&lt;/p&gt;
-&lt;p&gt;Find all information in the &lt;strong&gt;Help&lt;/strong&gt; section by clicking the question mark (&lt;strong&gt;?&lt;/strong&gt;).&lt;/p&gt;
-&lt;h4 id=&#34;osc-in&#34;&gt;&lt;strong&gt;OSC In&lt;/strong&gt;&lt;/h4&gt;
+        <description>&lt;h2 id=&#34;osc-syntax-for-the-icst-ambiencoder-plugin&#34;&gt;OSC Syntax for the ICST AmbiEncoder Plugin&lt;/h2&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Technician, Developer, Max/OSC user.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; supports &lt;strong&gt;OSC&lt;/strong&gt; and &lt;strong&gt;JavaScript&lt;/strong&gt;, enabling seamless communication with OSC tools such as &lt;strong&gt;TouchOSC, IanniX, MaxMSP&lt;/strong&gt;, and other OSC-enabled software.
+This page is the &lt;strong&gt;syntax reference&lt;/strong&gt;.
+For a practical quickstart and debugging sequence, use:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Receive OSC&lt;/strong&gt;: Receive OSC commands on the defined port (default: 50001). The full OSC specification is available in the plugin’s Help section.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/osc-10-key-messages/&#34;&gt;OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Send Positions for External Usage&lt;/strong&gt;: This function sends audio source positions as OSC messages to a defined target/port. Messages trigger position changes, and the update rate is limited to &lt;strong&gt;20Hz (50ms).&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;osc-syntax--address-specification&#34;&gt;&lt;strong&gt;OSC Syntax &amp;amp; Address Specification&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;1-accessing-osc-specifications&#34;&gt;&lt;strong&gt;1. Accessing OSC Specifications&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Click the &lt;strong&gt;question mark&lt;/strong&gt; in the ICST AmbiEncoder.
@@ -98,36 +87,7 @@
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/Intern_osc.png&#34; alt=&#34;OSC_internal&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now, the AmbiDecoder receives &lt;strong&gt;all OSC messages&lt;/strong&gt; from all connected AmbiEncoders.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;steps-to-send-osc-messages&#34;&gt;&lt;strong&gt;Steps to Send OSC Messages&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;AmbiEncoder can also send most of its parameters via OSC.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/external_osc.png&#34; alt=&#34;External-osc&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Open the question mark before the presets to get detailed help information.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Enable &lt;strong&gt;“Send Positions for External Usage”&lt;/strong&gt; in the settings.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;In the &lt;strong&gt;Targets&lt;/strong&gt; section:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Enable or disable OSC transmission.&lt;/li&gt;
-&lt;li&gt;Define the &lt;strong&gt;Host IP address&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Select a &lt;strong&gt;Port&lt;/strong&gt; (default: &lt;strong&gt;50001&lt;/strong&gt;).&lt;/li&gt;
-&lt;li&gt;Double-click &lt;strong&gt;OSC messages&lt;/strong&gt; to edit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If participating in an &lt;strong&gt;internal FX learning program&lt;/strong&gt;, select &lt;strong&gt;“Continuous”&lt;/strong&gt; mode.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Click &lt;strong&gt;Help (?)&lt;/strong&gt; for detailed OSC information.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add or delete OSC messages.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Save or load OSC messages in &lt;strong&gt;Presets&lt;/strong&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -137,9 +97,8 @@
       <guid>https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;bidirectional-osc-communication-with-maxmsp&#34;&gt;Bidirectional OSC Communication with MaxMSP&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;bidirectional-osc-communication-with-maxmsp&#34;&gt;Bidirectional OSC Communication with MaxMSP&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Max/MSP and OSC integrator.&lt;/p&gt;
 &lt;p&gt;Generate motion data in Max and send it via OSC to the &lt;em&gt;ICST AmbiEncoder&lt;/em&gt; in your DAW. Alternatively, transfer a motion composition from your DAW to the &lt;em&gt;icst.ambisonics-externals&lt;/em&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;required-software&#34;&gt;&lt;strong&gt;Required Software:&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -195,7 +154,6 @@
 &lt;li&gt;&lt;code&gt;Roll&lt;/code&gt;: Rotation around the forward axis&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -205,9 +163,9 @@
       <guid>https://ambisonics.ch/post/osc-2-fx/</guid>
       <pubDate>Fri, 16 May 2025 09:44:58 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&amp;ndash;&lt;/p&gt;
 &lt;h1 id=&#34;icst-ambiencoder-sends-osc-to-fx-plugins-parameter&#34;&gt;ICST AmbiEncoder sends OSC to FX-Plugins-parameter&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Technician, Sound engineer.&lt;/p&gt;
 &lt;h3 id=&#34;integrating-icst-ambiencoder-with-iem-fdnreverb-via-osc&#34;&gt;Integrating ICST AmbiEncoder with IEM FdnReverb via OSC&lt;/h3&gt;
 &lt;p&gt;This example demonstrates a simple synchronization between &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; and &lt;strong&gt;IEM Ambisonics plugins&lt;/strong&gt;, using &lt;strong&gt;FdnReverb&lt;/strong&gt; to apply distance-dependent reverb. The &lt;strong&gt;IEM plugins&amp;rsquo; OSC interface&lt;/strong&gt; makes this process straightforward.&lt;/p&gt;
 &lt;h3 id=&#34;osc--osc-communication&#34;&gt;OSC &amp;lt;&amp;ndash;&amp;gt; OSC Communication&lt;/h3&gt;
@@ -236,7 +194,6 @@
 &lt;/ol&gt;
 &lt;p&gt;As the distance increases, reverb intensity will also increase. Experiment with other reverb parameters for additional effects.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -246,9 +203,8 @@
       <guid>https://ambisonics.ch/post/gp-manipulation/</guid>
       <pubDate>Wed, 28 May 2025 13:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;group-animation&#34;&gt;Group Animation&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;group-animation&#34;&gt;Group Animation&lt;/h1&gt;
+&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Live performer.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;ICST Multi-Ambisonics Encoder v.2+&lt;/strong&gt; features a &lt;strong&gt;Group Animation&lt;/strong&gt; tool for dynamically manipulating grouped audio sources in the &lt;strong&gt;Radar Display&lt;/strong&gt;. By selecting a group point and holding &lt;strong&gt;Option (Alt) on Mac&lt;/strong&gt;, you unlock advanced functions like &lt;strong&gt;group animation&lt;/strong&gt; and &lt;strong&gt;group stretch&lt;/strong&gt;, enabling synchronized movement and transformation of multiple sources for enhanced 3D spatialization.&lt;/p&gt;
 &lt;p&gt;📺 &lt;strong&gt;Tutorial:&lt;/strong&gt; &lt;a href=&#34;https://youtu.be/aDa-vNWriLM&#34;&gt;Points and Radar&lt;/a&gt; (3:15)&lt;/p&gt;
 &lt;hr&gt;
@@ -310,7 +266,6 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
 &lt;p&gt;The ICST MultiEncoder can now be controlled directly using Euler angles via OSC.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/OSC_abs_angel.gif&#34; alt=&#34;Euler_Winkel&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -320,8 +275,7 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
       <guid>https://ambisonics.ch/post/icst-grapes/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Spatial performer, controller-based workflow user.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://grapes-3d.com/&#34;&gt;Grapes 3D Control&lt;/a&gt; is a handy addition to the ICST Ambisonics plugins.
 Grapes come as a standalone and VST3 and can be operated directly in the DAW (Reaper) in sync.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-grapes/Grapes.gif&#34; alt=&#34;Grapes&#34;&gt;&lt;/p&gt;
@@ -329,7 +283,6 @@ Grapes come as a standalone and VST3 and can be operated directly in the DAW (Re
 &lt;p&gt;A major advantage of this method is that the 3D spatial sound control does not have to be recorded in the DAW. Instead, it is sent to the ICST AmbiEncoders via OSC from Grapes. This means that the spatial design remains flexible and can also be interpreted with other spatialization tools such as LISA, Dolby Atmos or binaural audio playback.&lt;/p&gt;
 &lt;p&gt;For more information, see: &lt;a href=&#34;https://grapes-3d.com/&#34;&gt;https://grapes-3d.com/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -339,9 +292,7 @@ Grapes come as a standalone and VST3 and can be operated directly in the DAW (Re
       <guid>https://ambisonics.ch/post/gyrosc/</guid>
       <pubDate>Wed, 28 May 2025 14:57:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;ICST MultiEncoder and iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;ICST MultiEncoder and iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GyrOSC&lt;/strong&gt; is a lightweight utility that sends motion sensor data (from your iPhone, iPod Touch, or iPad) over a local wireless network to any OSC-compatible host application. It allows you to control live audio or video applications using your device&amp;rsquo;s built-in gyroscope, accelerometer, compass, and altimeter.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/gyrOSC.png&#34; alt=&#34;GyrOSC&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The following GIF demonstrates how the ICST AmbiEncoder receives OSC data from the GyrOSC app.&lt;/p&gt;
@@ -392,37 +343,36 @@ Grapes come as a standalone and VST3 and can be operated directly in the DAW (Re
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;inspirations&#34;&gt;Inspirations:&lt;/h1&gt;
+&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Mobile-controller user, Performer.&lt;/p&gt;
 &lt;h3 id=&#34;osc-swarm&#34;&gt;OSC-Swarm&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;OSC-Message:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;/gyrosc/1/grav&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;JS-Code:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;s.setXYZ(1, s.arg(2), -s.arg(1), 0); for(i = 2; i &amp;lt;= 8; i++) s.setXYZ(i, s.arg(2)+Math.random()*0.2, -s.arg(1) + Math.random()* 0.2, 0)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyrOSC-SWARM.gif&#34; alt=&#34;OSC-Swarm&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
     <item>
       <title>Ableton Live &amp; ICST Ambisonics Integration</title>
-      <link>https://ambisonics.ch/post/ableton_reaper/</link>
-      <guid>https://ambisonics.ch/post/ableton_reaper/</guid>
+      <link>https://ambisonics.ch/post/ableton-reaper/</link>
+      <guid>https://ambisonics.ch/post/ableton-reaper/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;hr&gt;
 &lt;h1 id=&#34;abletonlive-to-icst-ambisonics-multiencoder-in-reaper&#34;&gt;AbletonLive to ICST Ambisonics MultiEncoder in Reaper&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Ableton/Reaper hybrid producer.&lt;/p&gt;
 &lt;p&gt;This tutorial provides a detailed guide to recording 7th-Order Ambisonics using Ableton Live and Reaper. It is aimed at users with a basic knowledge of both programs. If you are familiar with the concepts of Ableton Live, Reaper, and Ambisonics, the steps should be straightforward. Otherwise, some sections may be challenging. In this case, it is recommended that you first learn the basics of this software and Ambisonics technology.&lt;/p&gt;
 &lt;h3 id=&#34;ableton-to-icst-multiencoder-in-reaper&#34;&gt;Ableton to ICST MultiEncoder in Reaper&lt;/h3&gt;
 &lt;p&gt;Ableton transmits audio via &amp;ldquo;BlackHole&amp;rdquo; (up to 64 channels) to Reaper&amp;rsquo;s BlackHole input devices.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_output.png&#34; alt=&#34;Ableton_outs&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Ableton_output.png&#34; alt=&#34;Ableton_outs&#34;&gt;
 The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncoder via localhost on port 50001. In Reaper, audio inputs from BlackHole (1-4) are received, while the ICST Multi-AmbiEncoder processes OSC sources (1-16).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_OSC_BlackHole.gif&#34; alt=&#34;Ableton_to_MultiEncoder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Ableton_OSC_BlackHole.gif&#34; alt=&#34;Ableton_to_MultiEncoder&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This setup allows recording B-format up to the 7th order from Ableton Live 12.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h3&gt;
 &lt;h4 id=&#34;schematic-overview&#34;&gt;Schematic Overview:&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_routing_64ch.png&#34; alt=&#34;Ableton_routing64ch&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Ableton_routing_64ch.png&#34; alt=&#34;Ableton_routing64ch&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;preparation&#34;&gt;Preparation:&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Install &lt;a href=&#34;https://www.ableton.com/de/live/&#34;&gt;AbletonLive 12&lt;/a&gt;&lt;/li&gt;
@@ -445,7 +395,7 @@ The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncode
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Optionally, send custom OSC spatialization data from Max to ensure consistent OSC port numbers in Reaper (port: 50001).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Max-OSC-Out2.png&#34; alt=&#34;Max-OSC | 400&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Max-OSC-Out2.png&#34; alt=&#34;Max-OSC | 400&#34;&gt;
 Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -455,48 +405,47 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)&lt;/p&
 &lt;p&gt;Create a session with 63 mono tracks (Track 64 for LTC timecode).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Enable LTC sync input on Track 64 by right-clicking the Playbar.&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/LTC.png&#34; alt=&#34;LTC&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Enable LTC sync input on Track 64 by right-clicking the Playbar.&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/LTC.png&#34; alt=&#34;LTC&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Set all active tracks to &amp;ldquo;Record: Disable (monitor only).&amp;rdquo;
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/rec_disable.png&#34; alt=&#34;Rec_disable&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/rec_disable.png&#34; alt=&#34;Rec_disable&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Route Tracks 1-63 to ICST MultiEncoder_64.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Routing_Overview.png&#34; alt=&#34;Routing_Inputs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Routing_Overview.png&#34; alt=&#34;Routing_Inputs&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;When correctly routed, the source appears in the encoder radar for verification.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;Configure OSC connection between Ableton and ICST MultiEncoder. Each encoder requires its own OSC port.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC-Port.png&#34; alt=&#34;OSC-Ports&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/OSC-Port.png&#34; alt=&#34;OSC-Ports&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Activate OSC transmission in E4L_Multi-Panner. The ICST MultiEncoder will display moving dots when receiving OSC data.
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC_ON.png&#34; alt=&#34;OSC_ON&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/OSC_ON.png&#34; alt=&#34;OSC_ON&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;In Reaper press Record -Output for recording your Bformat see next image.
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec_BF.png&#34; alt=&#34;Rec_BF&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Rec_BF.png&#34; alt=&#34;Rec_BF&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Then press REC in Reaper -&amp;gt; you get the follow message &amp;ldquo;Waiting for Timecode&amp;rdquo;
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec.png&#34; alt=&#34;Rec&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Rec.png&#34; alt=&#34;Rec&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Press play in Ableton Live to synchronize Reaper via LTC Sync (Input 64), enabling B-format 7th-order ambix recording.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Move to the &lt;strong&gt;Start Marker&lt;/strong&gt; at &lt;strong&gt;01:00:000&lt;/strong&gt; (LTC has a 60&amp;rsquo; offset), then press &lt;strong&gt;Fire&lt;/strong&gt; or &lt;strong&gt;Play&lt;/strong&gt; in Ableton Live to start recording.
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Live_Reper_BF.gif&#34; alt=&#34;recoding_bf&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Live_Reper_BF.gif&#34; alt=&#34;recoding_bf&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;For more details, refer to the documentation for Ableton Live, Reaper, and the ICST MultiEncoder.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -506,12 +455,10 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)&lt;/p&
       <guid>https://ambisonics.ch/post/icst-scripts/</guid>
       <pubDate>Thu, 17 Jul 2025 14:31:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;icst-ambiencoder_64-spiral-walk---dokumentation&#34;&gt;ICST AmbiEncoder_64 Spiral Walk - Dokumentation&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;icst-ambiencoder_64-spiral-walk---dokumentation&#34;&gt;ICST AmbiEncoder_64 Spiral Walk - Dokumentation&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; ReaScript user, Technical artist.&lt;/p&gt;
 &lt;h3 id=&#34;-funktion&#34;&gt;🔍 &lt;strong&gt;Funktion&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Dieses ReaScript generiert Spiralbewegungen (z.B. expandierende Spiralen) für die X-, Y- und optional Z-Koordinaten des VST3 &amp;ldquo;ICST AmbiEncoder_64&amp;rdquo; in REAPER. Es erlaubt dir, Bewegungsverläufe auf Basis von Startpositionen deiner Punkte zu erzeugen und automatisch als Envelope einzufügen. Das Ganze erfolgt grafisch via ReaImGui mit einstellbaren Parametern und Preset-Speicher.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;Spiral_Walk.png&#34; alt=&#34;Spiral_Walk&#34;&gt;&lt;/p&gt;
 &lt;p&gt;DOWNLOAD ICST LuaScripts:
 (Copy to /Reaper/Scripts)&lt;/p&gt;
 &lt;ul&gt;
@@ -586,23 +533,22 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)&lt;/p&
 &lt;hr&gt;
 &lt;h1 id=&#34;example&#34;&gt;Example:&lt;/h1&gt;
 &lt;p&gt;Spiral_Walk_out:
-&lt;img src=&#34;Spiral_Walk_aussen.gif&#34; alt=&#34;Spiral_Walk_aussen&#34;&gt;
-Spiral_Walk_in:
-&lt;img src=&#34;Spiral_Walk_innen.gif&#34; alt=&#34;Spiral_Walk_in&#34;&gt;&lt;/p&gt;
+Spiral_Walk_in:&lt;/p&gt;
 </description>
 
     </item>
     <item>
       <title>ICST AmbiEncoder – CircleSelected</title>
-      <link>https://ambisonics.ch/post/circle_selected/</link>
-      <guid>https://ambisonics.ch/post/circle_selected/</guid>
+      <link>https://ambisonics.ch/post/circle-selected/</link>
+      <guid>https://ambisonics.ch/post/circle-selected/</guid>
       <pubDate>Sat, 19 Jul 2025 13:28:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
         <description>&lt;h1 id=&#34;icst_ambiencoder_64_circleselected_lua-presets&#34;&gt;ICST_AmbiEncoder_64_CircleSelected_Lua-Presets&lt;/h1&gt;
+&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Reaper power user, Performance artist.&lt;/p&gt;
 &lt;h2 id=&#34;-benutzer-dokumentation&#34;&gt;📃 Benutzer-Dokumentation&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Script:&lt;/strong&gt; &lt;code&gt;ICST_AmbiEncoder_64_CircleSelected_Presets.lua&lt;/code&gt;&lt;br&gt;
 &lt;strong&gt;Funktion:&lt;/strong&gt; Punkte des ICST AmbiEncoder_64 Plugins grafisch auswählen, im Kreis anordnen, bewegen (Rotation/RandomWalk) und als Preset speichern/laden.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/circle_selected/Circle_Selected.gif&#34; alt=&#34;circleselected&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/circle-selected/Circle_Selected.gif&#34; alt=&#34;circleselected&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-installation&#34;&gt;🚀 Installation&lt;/h2&gt;
 &lt;ol&gt;
@@ -719,19 +665,16 @@ Lege die Datei &lt;code&gt;ICST_AmbiEncoder_64_CircleSelected_Presets.lua&lt;/co
 &lt;li&gt;&lt;strong&gt;Autor:&lt;/strong&gt; Johannes Schütt &amp;amp;  Reaper-Assistent ✨&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Features:&lt;/strong&gt; Presets, Export/Import, Visualisierung, auswählbare Punkte&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 </description>
 
     </item>
     <item>
       <title>Blauert&#39;s Bands</title>
-      <link>https://ambisonics.ch/post/blauertsche_b%C3%A4nder/</link>
-      <guid>https://ambisonics.ch/post/blauertsche_b%C3%A4nder/</guid>
+      <link>https://ambisonics.ch/post/blauerts-bands/</link>
+      <guid>https://ambisonics.ch/post/blauerts-bands/</guid>
       <pubDate>Fri, 16 May 2025 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;style&gt;
+        <description>&lt;style&gt;
 /* ── Blauert&#39;s Bands — Anatole theme aligned ── */
 
 .info-box {
@@ -778,15 +721,15 @@ Lege die Datei &lt;code&gt;ICST_AmbiEncoder_64_CircleSelected_Presets.lua&lt;/co
 }
 .step__text { font-size: 1.4rem; padding-top: 2px; }
 &lt;/style&gt;
-&lt;h1 id=&#34;blauerts-bands&#34;&gt;Blauert&amp;rsquo;s Bands&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Psychoacoustics-focused composer/researcher.&lt;/p&gt;
 &lt;div class=&#34;info-box&#34;&gt;
 &lt;strong&gt;What this tutorial covers&lt;/strong&gt;
 How to use Blauert&#39;s Bands (frequency-dependent directional perception) to enhance front/back and height perception in Ambisonics — by coupling the ICST Encoder&#39;s Y and Z axes to the IEM MultiEQ via OSC.
 &lt;/div&gt;
 &lt;p&gt;For the voice and its directivity perception I conducted experiments with the &lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauert&amp;rsquo;s Bands&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungsb%C3%A4nder.png&#34; alt=&#34;Ritungsbänder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Richtungsb%C3%A4nder.png&#34; alt=&#34;Ritungsbänder&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Thus I coupled Y Front ↔ Back and Z Top ↔ Bottom with the IEM-Multifilter.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;osc-routing&#34;&gt;OSC Routing&lt;/h2&gt;
 &lt;h3 id=&#34;height-z-axis--iem-multieq&#34;&gt;Height (Z-Axis → IEM MultiEQ)&lt;/h3&gt;
@@ -803,15 +746,15 @@ How to use Blauert&#39;s Bands (frequency-dependent directional perception) to e
   &lt;div class=&#34;label&#34;&gt;OSC OUT · Port 8008&lt;/div&gt;
   &lt;span class=&#34;arrow&#34;&gt;ICST Encoder OSC-Out Front&lt;/span&gt; &lt;span class=&#34;arrow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;path&#34;&gt;/MultiEQ/filterGain4&lt;/span&gt; &lt;span class=&#34;param&#34;&gt;{sz, -5.3, 0.0, 5.3}&lt;/span&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/osc-anbindung.png&#34; alt=&#34;OSC Connection&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/osc-anbindung.png&#34; alt=&#34;OSC Connection&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;iem-multieq--frequency-bands&#34;&gt;IEM MultiEQ — Frequency Bands&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Height (8 kHz boost)&lt;/strong&gt;
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Front&lt;/strong&gt;
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Back&lt;/strong&gt;
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;workflow-steps&#34;&gt;Workflow Steps&lt;/h2&gt;
 &lt;div class=&#34;step-grid&#34;&gt;
@@ -825,7 +768,6 @@ How to use Blauert&#39;s Bands (frequency-dependent directional perception) to e
 &lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauert&amp;rsquo;s Bands (Wikipedia)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf&#34;&gt;sengpielaudio.com – Die Bedeutung der Blauert&amp;rsquo;schen Bänder (PDF)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 </description>
 
     </item>
@@ -835,11 +777,10 @@ How to use Blauert&#39;s Bands (frequency-dependent directional perception) to e
       <guid>https://ambisonics.ch/post/multi-decoder-mode/</guid>
       <pubDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;multi-decoder-mode&#34;&gt;Multi-Decoder Mode&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;multi-decoder-mode&#34;&gt;Multi-Decoder Mode&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Technician, Studio engineer.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;Multi-Decoder Mode&lt;/strong&gt;, introduced in &lt;strong&gt;ICST AmbiDecoder v3.2&lt;/strong&gt;, allows you to run up to &lt;strong&gt;four fully independent decoders&lt;/strong&gt; within a single plugin instance. This is ideal for complex loudspeaker setups that combine different speaker arrays — for example, a main Ambisonics ring together with height speakers, a subwoofer group, or a separate near-field array.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;Multidecoder.png&#34; alt=&#34;Multi-Decoder overview&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/multi-decoder-mode/Multidecoder.png&#34; alt=&#34;Multi-Decoder overview&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;when-to-use-multi-decoder-mode&#34;&gt;When to use Multi-Decoder Mode&lt;/h2&gt;
 &lt;p&gt;Use Multi-Decoder Mode when your setup includes:&lt;/p&gt;
@@ -857,9 +798,13 @@ How to use Blauert&#39;s Bands (frequency-dependent directional perception) to e
 &lt;li&gt;In the &lt;strong&gt;Decoder Settings&lt;/strong&gt; panel, locate the &lt;strong&gt;Multi-Decoder&lt;/strong&gt; toggle.&lt;/li&gt;
 &lt;li&gt;Enable Multi-Decoder Mode — four decoder slots (A, B, C, D) will appear.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;&lt;p&gt;[!Tip:]
-Each decoder slot is fully independent and can be configured separately without affecting the others.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;hr&gt;
+&lt;div class=&#34;callout callout--tip&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;🔥&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Tip&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;p&gt;Each decoder slot is fully independent and can be configured separately without affecting the others.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;configuring-each-decoder&#34;&gt;Configuring Each Decoder&lt;/h2&gt;
 &lt;p&gt;For each of the four decoders, you can set:&lt;/p&gt;
 &lt;h3 id=&#34;1-name-and-color&#34;&gt;1. Name and Color&lt;/h3&gt;
@@ -905,9 +850,13 @@ Each decoder slot is fully independent and can be configured separately without 
 &lt;li&gt;Decoder D → continues after C&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Make sure your REAPER track has enough output channels configured to cover all speakers across all four decoders.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;[!Attention:]
-Check your track channel count and routing carefully. Missing channels will result in silent speakers without any error message.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;hr&gt;
+&lt;div class=&#34;callout callout--warning&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;⚠️&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Warning&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;p&gt;Check your track channel count and routing carefully. Missing channels will result in silent speakers without any error message.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;speaker-testing&#34;&gt;Speaker Testing&lt;/h2&gt;
 &lt;p&gt;To verify each decoder:&lt;/p&gt;
 &lt;ol&gt;
@@ -951,8 +900,321 @@ Check your track channel count and routing carefully. Missing channels will resu
 &lt;li&gt;📥 &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;Download v3.2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📺 &lt;a href=&#34;https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&amp;#43;plugins&#34;&gt;ICST Ambisonics Videos on YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Ambisonics.ch Relaunch 2026 - Was ist neu</title>
+      <link>https://ambisonics.ch/post/relaunch-2026/</link>
+      <guid>https://ambisonics.ch/post/relaunch-2026/</guid>
+      <pubDate>Sun, 08 Mar 2026 11:30:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; New and returning site users.&lt;/p&gt;
+&lt;h2 id=&#34;warum-wir-die-seite-neu-strukturiert-haben&#34;&gt;Warum wir die Seite neu strukturiert haben&lt;/h2&gt;
+&lt;p&gt;Die neue Struktur reduziert Suchaufwand und fuehrt schneller zu den passenden Inhalten. Statt gemischter Bereiche gibt es klare Einstiegspunkte fuer Tutorials, Studio Cases, Downloads und Dokumentation.&lt;/p&gt;
+&lt;h2 id=&#34;was-sich-konkret-geaendert-hat&#34;&gt;Was sich konkret geaendert hat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Klarere Menuestruktur mit den vier Kernbereichen.&lt;/li&gt;
+&lt;li&gt;Kompaktere Uebersichtsseiten mit eindeutigen Teasern.&lt;/li&gt;
+&lt;li&gt;Staerkere Verlinkung zwischen Grundlagen, Praxis und Download-Material.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;fuer-wen-ist-was&#34;&gt;Fuer wen ist was&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Einsteiger: Reaper-Setup und erste Ambisonics-Workflows.&lt;/li&gt;
+&lt;li&gt;Fortgeschrittene: OSC-Steuerung, Automationen und Multi-Decoder-Setups.&lt;/li&gt;
+&lt;li&gt;Kuenstler und Studios: Residency Cases mit realen Produktionsablaeufen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;drei-schnelle-einstiege&#34;&gt;Drei schnelle Einstiege&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minuten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/osc-10-key-messages/&#34;&gt;OSC im ICST AmbiEncoder: Die 10 wichtigsten Messages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/ableton-reaper/&#34;&gt;Ableton Live und ICST Ambisonics Integration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;naechster-schritt&#34;&gt;Naechster Schritt&lt;/h2&gt;
+&lt;p&gt;Starte mit dem Reaper-Setup-Guide und arbeite danach mit dem OSC-Artikel weiter, um deinen Workflow reproduzierbar zu machen.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Reaper Ambisonics Setup in 20 Minuten (ICST Workflow)</title>
+      <link>https://ambisonics.ch/post/reaper-setup-20-minuten/</link>
+      <guid>https://ambisonics.ch/post/reaper-setup-20-minuten/</guid>
+      <pubDate>Sun, 08 Mar 2026 11:40:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Level: Beginner | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, DAW newcomer.&lt;/p&gt;
+&lt;p&gt;Diese Seite ist die &lt;strong&gt;Ausfuehrungs-Checkliste&lt;/strong&gt; (klickorientiert).
+Fuer Onboarding-Logik und systematische Fehlersuche siehe:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started with ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;was-du-am-ende-erreicht-hast&#34;&gt;Was du am Ende erreicht hast&lt;/h2&gt;
+&lt;p&gt;Du hast eine lauffaehige Reaper-Session mit ICST AmbiEncoder, sauberem Routing und einem schnellen Monitoring-Check.&lt;/p&gt;
+&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reaper installiert.&lt;/li&gt;
+&lt;li&gt;ICST Ambisonics Plugins installiert.&lt;/li&gt;
+&lt;li&gt;Audio-Interface mit passender I/O-Konfiguration.&lt;/li&gt;
+&lt;li&gt;Docs dazu: &lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/02_installation/&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-1---session-vorbereiten&#34;&gt;Schritt 1 - Session vorbereiten&lt;/h2&gt;
+&lt;p&gt;Lege eine neue Session an, setze Sample Rate und definiere ein klares Track-Layout fuer Quellen, B-Format-Bus und Monitoring.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Docs dazu:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/04_quick_start/&#34;&gt;Quick Start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Step by Step Setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-2---icst-ambiencoder-korrekt-routen&#34;&gt;Schritt 2 - ICST AmbiEncoder korrekt routen&lt;/h2&gt;
+&lt;p&gt;Lade den AmbiEncoder auf den Quelltracks und route die Ausgaenge in den zentralen B-Format-Bus. Pruefe danach die Kanalzuordnung im Routing-Fenster.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Docs dazu:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/05_open_track_templates/&#34;&gt;Track Templates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/03_how_it_works/&#34;&gt;How it Works&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/08_icst_decoder/&#34;&gt;ICST Decoder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-3---erste-quelle-raeumlich-bewegen&#34;&gt;Schritt 3 - Erste Quelle raeumlich bewegen&lt;/h2&gt;
+&lt;p&gt;Bewege eine einzelne Quelle in X/Y/Z, speichere ein Preset und pruefe die Bewegung in der Radar-Ansicht.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Docs dazu:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/10_icst_encoders/&#34;&gt;ICST Encoders&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Step by Step Setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-4---monitoring-und-schnelltest&#34;&gt;Schritt 4 - Monitoring und Schnelltest&lt;/h2&gt;
+&lt;p&gt;Fuehre einen kurzen Pegel- und Hoertest durch und verifiziere, dass alle Kanaele erwartungsgemaess reagieren.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Docs dazu:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/08_icst_decoder/&#34;&gt;ICST Decoder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Step by Step Setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;haeufige-fehler&#34;&gt;Haeufige Fehler&lt;/h2&gt;
+&lt;p&gt;Die ausfuehrliche Debug-Liste liegt im Onboarding-Guide:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started with ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;downloads-und-weiterfuehrende-artikel&#34;&gt;Downloads und weiterfuehrende Artikel&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-tools/&#34;&gt;ICST Ambisonics Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/osc-10-key-messages/&#34;&gt;OSC im ICST AmbiEncoder: Die 10 wichtigsten Messages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/ableton-reaper/&#34;&gt;Ableton Live und ICST Ambisonics Integration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;naechster-schritt&#34;&gt;Naechster Schritt&lt;/h2&gt;
+&lt;p&gt;Wenn das Grundsetup stabil laeuft, erweitere die Session mit OSC-Automation fuer reproduzierbare Bewegungen.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages</title>
+      <link>https://ambisonics.ch/post/osc-10-key-messages/</link>
+      <guid>https://ambisonics.ch/post/osc-10-key-messages/</guid>
+      <pubDate>Sun, 08 Mar 2026 11:50:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Power user, Technical artist.&lt;/p&gt;
+&lt;p&gt;Diese Seite ist der &lt;strong&gt;Praxis-Quickstart&lt;/strong&gt;.
+Fuer die vollstaendige Adress- und Parameterreferenz siehe:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC Syntax fuer den ICST AmbiEncoder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;wofuer-osc-hier-wirklich-nuetzlich-ist&#34;&gt;Wofuer OSC hier wirklich nuetzlich ist&lt;/h2&gt;
+&lt;p&gt;OSC macht Bewegungssteuerung reproduzierbar und erlaubt es, externe Controller, Max-Patches oder Skripte sauber in den Produktionsworkflow einzubinden.&lt;/p&gt;
+&lt;h2 id=&#34;setup-in-zwei-minuten&#34;&gt;Setup in zwei Minuten&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Lokalen Host und Port festlegen.&lt;/li&gt;
+&lt;li&gt;Verbindung mit einer Test-Message pruefen.&lt;/li&gt;
+&lt;li&gt;Rueckmeldung in Reaper und im AmbiEncoder kontrollieren.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;die-10-message-typen-die-du-sofort-brauchst&#34;&gt;Die 10 Message-Typen, die du sofort brauchst&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Source Select&lt;/li&gt;
+&lt;li&gt;X-Position&lt;/li&gt;
+&lt;li&gt;Y-Position&lt;/li&gt;
+&lt;li&gt;Z-Position&lt;/li&gt;
+&lt;li&gt;Azimuth&lt;/li&gt;
+&lt;li&gt;Elevation&lt;/li&gt;
+&lt;li&gt;Distance/Gain&lt;/li&gt;
+&lt;li&gt;Group Move&lt;/li&gt;
+&lt;li&gt;Snapshot/Preset Recall&lt;/li&gt;
+&lt;li&gt;Transport Sync Trigger&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;debugging-checkliste&#34;&gt;Debugging Checkliste&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Port-Konflikt ausschliessen.&lt;/li&gt;
+&lt;li&gt;Message-Format mit bestehender Syntax pruefen.&lt;/li&gt;
+&lt;li&gt;Timing/Jitter bei schnellen Updates begrenzen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;praxisbeispiel&#34;&gt;Praxisbeispiel&lt;/h2&gt;
+&lt;p&gt;Kombiniere einen externen Controller mit Reaper-Automation: OSC steuert die Bewegung in Echtzeit, Reaper zeichnet die Bewegung als verifizierbare Automation auf.&lt;/p&gt;
+&lt;h2 id=&#34;weiterfuehrende-inhalte&#34;&gt;Weiterfuehrende Inhalte&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/&#34;&gt;MaxMSP und ICST AmbiEncoder - OSC Communication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minuten&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;naechster-schritt&#34;&gt;Naechster Schritt&lt;/h2&gt;
+&lt;p&gt;Uebernimm zwei bis drei Messages in dein Setup und teste sie zuerst mit einer einzelnen Quelle, bevor du Gruppensteuerung aktivierst.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Getting Started with ICST Ambisonics Plugins in Reaper</title>
+      <link>https://ambisonics.ch/post/getting-started-icst-plugins-reaper/</link>
+      <guid>https://ambisonics.ch/post/getting-started-icst-plugins-reaper/</guid>
+      <pubDate>Sun, 08 Mar 2026 14:10:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Level: Beginner | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Studio Assistant.&lt;/p&gt;
+&lt;p&gt;This page is the compact onboarding version of the full docs workflow:
+&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Step by Step Setup&lt;/a&gt;.
+Use this guide to get running fast, then use the docs page as technical reference.&lt;/p&gt;
+&lt;h2 id=&#34;who-this-is-for&#34;&gt;Who this is for&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Composers who want a reliable first Ambisonics session.&lt;/li&gt;
+&lt;li&gt;Students who need a clear practical entry point.&lt;/li&gt;
+&lt;li&gt;Technicians who need a repeatable setup baseline.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-you-will-achieve&#34;&gt;What you will achieve&lt;/h2&gt;
+&lt;p&gt;By the end, you will have a working Reaper project with source routing, AmbiEncoder control, and a basic monitoring check.&lt;/p&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reaper installed and running.&lt;/li&gt;
+&lt;li&gt;ICST Ambisonics Plugins installed.&lt;/li&gt;
+&lt;li&gt;Recommended Reaper extensions installed (SWS and ReaPack).&lt;/li&gt;
+&lt;li&gt;Basic understanding of tracks, buses, and plugin inserts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;session-baseline-from-the-docs-setup&#34;&gt;Session baseline (from the docs setup)&lt;/h2&gt;
+&lt;p&gt;Use 64 channels as default on all Ambisonics-related tracks and check routing at each step.&lt;/p&gt;
+&lt;h2 id=&#34;workflow-phases-onboarding-view&#34;&gt;Workflow phases (onboarding view)&lt;/h2&gt;
+&lt;p&gt;Use this page to understand the structure before hands-on execution:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Monitoring backbone: &lt;code&gt;Decoder&lt;/code&gt; + &lt;code&gt;Bformat-Master&lt;/code&gt; + speaker preset.&lt;/li&gt;
+&lt;li&gt;Parallel listening: add binaural path for headphone validation.&lt;/li&gt;
+&lt;li&gt;Source layer: start with one MonoEncoder source and verify routing.&lt;/li&gt;
+&lt;li&gt;Motion layer: record first movement and validate automation readback.&lt;/li&gt;
+&lt;li&gt;Output layer: render from &lt;code&gt;Bformat-Master&lt;/code&gt; in multichannel format.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;hands-on-checklist-execution&#34;&gt;Hands-on checklist (execution)&lt;/h2&gt;
+&lt;p&gt;For the exact click-by-click sequence, use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minutes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Step by Step Setup (Docs)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;typical-first-errors-and-where-to-debug&#34;&gt;Typical first errors (and where to debug)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Wrong bus assignment (&lt;code&gt;Source -&amp;gt; Bformat-Master -&amp;gt; Decoder&lt;/code&gt; chain broken).&lt;/li&gt;
+&lt;li&gt;Binaural track fed from wrong source.&lt;/li&gt;
+&lt;li&gt;Non-64-channel track in the signal path.&lt;/li&gt;
+&lt;li&gt;OSC port mismatch when external control is enabled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC Syntax for the ICST AmbiEncoder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minutes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/stereo-to-hoa7-session/&#34;&gt;Stereo to HOA7: A Step-by-Step Session&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Ambisonics in 30 Minutes: Your First Working Reaper Session Flow</title>
+      <link>https://ambisonics.ch/post/ambisonics-in-30-minutes/</link>
+      <guid>https://ambisonics.ch/post/ambisonics-in-30-minutes/</guid>
+      <pubDate>Mon, 09 Mar 2026 09:00:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Level: Beginner | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Studio Assistant.&lt;/p&gt;
+&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;You want to start quickly with ICST Ambisonics plugins in Reaper, without spending hours on trial-and-error routing.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reaper installed&lt;/li&gt;
+&lt;li&gt;ICST Ambisonics plugins installed&lt;/li&gt;
+&lt;li&gt;Optional: SWS + ReaPack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;step-by-step&#34;&gt;Step-by-step&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create &lt;code&gt;Bformat-Master&lt;/code&gt; (64 channels).&lt;/li&gt;
+&lt;li&gt;Insert decoder on monitoring path.&lt;/li&gt;
+&lt;li&gt;Add one source with AmbiEncoder.&lt;/li&gt;
+&lt;li&gt;Route source to &lt;code&gt;Bformat-Master&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Add binaural monitoring in parallel.&lt;/li&gt;
+&lt;li&gt;Record a short motion automation pass.&lt;/li&gt;
+&lt;li&gt;Render and verify output channels.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;common-errors&#34;&gt;Common errors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Source not routed to &lt;code&gt;Bformat-Master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Non-64-channel track in signal path&lt;/li&gt;
+&lt;li&gt;Wrong decoder preset for speaker setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-tutorial&#34;&gt;Related tutorial&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started with ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minutes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add links to template and checklist here.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-step&#34;&gt;Next step&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC Syntax for the ICST AmbiEncoder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+    <item>
+      <title>From Stereo to HOA7: A Step-by-Step Session</title>
+      <link>https://ambisonics.ch/post/stereo-to-hoa7-session/</link>
+      <guid>https://ambisonics.ch/post/stereo-to-hoa7-session/</guid>
+      <pubDate>Sun, 08 Mar 2026 14:20:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Producer.&lt;/p&gt;
+&lt;h2 id=&#34;why-this-guide-exists&#34;&gt;Why this guide exists&lt;/h2&gt;
+&lt;p&gt;Many users know stereo production well but need a concrete bridge to higher-order Ambisonics in a real session.&lt;/p&gt;
+&lt;h2 id=&#34;learning-goal&#34;&gt;Learning goal&lt;/h2&gt;
+&lt;p&gt;Translate a stereo-style arrangement into HOA7 workflow thinking: object placement, motion, and controlled rendering.&lt;/p&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic stereo mixing workflow.&lt;/li&gt;
+&lt;li&gt;Basic Reaper project setup skills.&lt;/li&gt;
+&lt;li&gt;ICST plugin installation complete.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;step-1---map-stereo-roles-to-spatial-roles&#34;&gt;Step 1 - Map stereo roles to spatial roles&lt;/h2&gt;
+&lt;p&gt;Assign your stereo elements to spatial objects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lead elements -&amp;gt; stable front or animated object.&lt;/li&gt;
+&lt;li&gt;Support elements -&amp;gt; wider spatial beds.&lt;/li&gt;
+&lt;li&gt;Atmospheres -&amp;gt; diffuse or layered height support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;step-2---build-the-hoa7-session-scaffold&#34;&gt;Step 2 - Build the HOA7 session scaffold&lt;/h2&gt;
+&lt;p&gt;Create source tracks, assign AmbiEncoder instances, and define a clean HOA7 bus path.&lt;/p&gt;
+&lt;h2 id=&#34;step-3---start-with-static-placement&#34;&gt;Step 3 - Start with static placement&lt;/h2&gt;
+&lt;p&gt;Set clear initial positions before adding motion.&lt;/p&gt;
+&lt;h2 id=&#34;step-4---add-controlled-movement&#34;&gt;Step 4 - Add controlled movement&lt;/h2&gt;
+&lt;p&gt;Use small, intentional automation moves and test readability in monitoring.&lt;/p&gt;
+&lt;h2 id=&#34;step-5---validate-translation&#34;&gt;Step 5 - Validate translation&lt;/h2&gt;
+&lt;p&gt;Check mono/stereo compatibility references and verify the HOA7 output chain.&lt;/p&gt;
+&lt;h2 id=&#34;step-6---export-and-archive&#34;&gt;Step 6 - Export and archive&lt;/h2&gt;
+&lt;p&gt;Export your Ambisonics render and save project notes for reproducibility.&lt;/p&gt;
+&lt;h2 id=&#34;common-pitfalls&#34;&gt;Common pitfalls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Over-animating too early.&lt;/li&gt;
+&lt;li&gt;Ignoring gain staging on higher-order buses.&lt;/li&gt;
+&lt;li&gt;Missing documentation of routing and OSC assignments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;continue-with&#34;&gt;Continue with&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started with ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/gp-manipulation/&#34;&gt;ICST MultiEncoder - Group Animation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/multi-decoder-mode/&#34;&gt;ICST AmbiDecoder - Multi-Decoder Mode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
 
     </item>

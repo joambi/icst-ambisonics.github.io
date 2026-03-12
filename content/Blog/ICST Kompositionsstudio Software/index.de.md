@@ -2,6 +2,9 @@
 title: ICST Kompositionsstudio Software
 description: "Vollständige Liste von Audio-, Analyse- und Kompositionssoftware auf dem ICST Mac Pro"
 date: 2025-05-28T15:11:00
+slug: icst-kompositionsstudio-software
+aliases:
+  - /blog/icst-kompositionsstudio-software/
 weight: 4
 group: "Studio"
 languageCode: de

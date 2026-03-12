@@ -8,15 +8,19 @@ tags:
 title: Overview
 ---
 
-The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and several additional spatial audio production tools. The following examples were created for and with the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW)!
+Reference overview of the ICST Ambisonics Plugins for REAPER: plugin scope, supported formats, download links, and core documentation entry points.
+
+The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and provide additional spatial audio production tools for the [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW).
 
 ![Overview_v3.1](Overview_v3.1.png)
 
-The ICST Ambisonics plugins consist of the following plugin formats:
+## Plugin formats
+
+The ICST Ambisonics Plugins are available in the following formats:
 -   VST3 / Components (AU) /LV2 
     (LV2 version does NOT support automation parameters at this time)
 
-Find individual pages here:
+## Key references
 
 - [What is New](https://ambisonics.ch/blog/new/)
 
@@ -24,7 +28,7 @@ Find individual pages here:
 
 - [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
 
-**Free download here:**
+## Downloads and external resources
 -  Binary Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 -  Documentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
 - Tutorials, Blog: <https://ambisonics.ch/>
@@ -33,7 +37,9 @@ Find individual pages here:
 
 Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>
 
-**Developer - team**:
+## Development
+
+**Developer team**:
 -   Christian Schweizer/Johannes Schuett/Martin Neukom
 -   Video Editor: Axel Kolb
 

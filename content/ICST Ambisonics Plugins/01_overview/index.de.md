@@ -8,15 +8,19 @@ tags:
 title: Übersicht
 ---
 
-Die ICST Ambisonics Plugins kodieren und dekodieren das Ambisonics B-Format und mehrere zusätzliche räumliche Audio-Produktionswerkzeuge. Die folgenden Beispiele wurden für und mit der [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW) erstellt!
+Referenzübersicht zu den ICST Ambisonics Plugins für REAPER: Plugin-Umfang, unterstützte Formate, Downloads und zentrale Dokumentationseinstiege.
+
+Die ICST Ambisonics Plugins kodieren und dekodieren das Ambisonics B-Format und stellen zusätzliche Werkzeuge für räumliche Audioproduktion in der [REAPER](https://www.reaper.fm/) Digital Audio Workstation (DAW) bereit.
 
 ![Overview_v3.1](Overview_v3.1.png)
 
-Die ICST Ambisonics Plugins bestehen aus den folgenden Plugin-Formaten:
+## Plugin-Formate
+
+Die ICST Ambisonics Plugins sind in den folgenden Formaten verfügbar:
 -   VST3 / Components (AU) /LV2
     (LV2-Version unterstützt derzeit keine Automatisierungsparameter)
 
-Finden Sie einzelne Seiten hier:
+## Zentrale Referenzen
 
 - [Was ist neu](https://ambisonics.ch/blog/new/)
 
@@ -24,7 +28,7 @@ Finden Sie einzelne Seiten hier:
 
 - [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder) (Decoder)
 
-**Kostenlos herunterladen hier:**
+## Downloads und externe Ressourcen
 -  Binärer Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>
 -  Dokumentation: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
 - Tutorials, Blog: <https://ambisonics.ch/>
@@ -33,7 +37,9 @@ Finden Sie einzelne Seiten hier:
 
 Download: <https://github.com/schweizerweb/icst-ambisonics-plugins/releases/>
 
-**Entwickler - Team**:
+## Entwicklung
+
+**Entwickler-Team**:
 -   Christian Schweizer/Johannes Schuett/Martin Neukom
 -   Video-Editor: Axel Kolb
 

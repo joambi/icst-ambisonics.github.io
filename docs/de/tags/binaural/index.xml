@@ -22,17 +22,15 @@
       <atom:link href="https://ambisonics.ch/de/tags/binaural/index.xml" rel="self" type="application/rss&#43;xml" />
     <item>
       <title>Blauertsche Bänder</title>
-      <link>https://ambisonics.ch/de/post/blauertsche_b%C3%A4nder/</link>
-      <guid>https://ambisonics.ch/de/post/blauertsche_b%C3%A4nder/</guid>
+      <link>https://ambisonics.ch/de/post/blauerts-bands/</link>
+      <guid>https://ambisonics.ch/de/post/blauerts-bands/</guid>
       <pubDate>Fri, 16 May 2025 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;blauertsche-bänder&#34;&gt;Blauertsche Bänder:&lt;/h1&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Advanced | Zielgruppe: psychoakustisch orientierte Komponist:innen/Researcher.&lt;/p&gt;
 &lt;p&gt;Für die Stimme und ihre Richtungswahrnehmung habe ich Experimente mit den &lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauertsche Bänder&lt;/a&gt; durchgeführt.
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungsb%C3%A4nder.png&#34; alt=&#34;Richtungsbänder | 400&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Richtungsb%C3%A4nder.png&#34; alt=&#34;Richtungsbänder | 400&#34;&gt;&lt;/p&gt;
 &lt;p&gt;So habe ich Y Front &amp;lt;-&amp;gt; Back und Z Top &amp;lt;-&amp;gt; Bottom mit dem IEM-Multifilter gekoppelt.
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung | 400&#34;&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung | 400&#34;&gt;
 OSC-OUT: 8008&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ICST Encoder OSC-Out Height: &amp;ndash;&amp;gt; /MultiEQ/filterGain4 {sz, -5.3, 0.0, 5.3}
@@ -42,14 +40,14 @@ OSC-IN: 8008&lt;/li&gt;
 &lt;p&gt;OSC-OUT: 8008&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ICST Encoder OSC-Out Front: &amp;ndash;&amp;gt; /MultiEQ/filterGain4 {sz, -5.3, 0.0, 5.3}&lt;/li&gt;
-&lt;li&gt;Y&amp;ndash;&amp;gt; IEM MultiEQ: &lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/osc-anbindung.png&#34; alt=&#34;OSC&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Y&amp;ndash;&amp;gt; IEM MultiEQ: &lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/osc-anbindung.png&#34; alt=&#34;OSC&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;IEM-MultiEQ
 Height:
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Front:&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Back:&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Front:&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Back:&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;gedanken-und-beschreibungen-der-workflow-schritte&#34;&gt;Gedanken und Beschreibungen der Workflow-Schritte&lt;/h3&gt;
 &lt;ol&gt;
@@ -62,7 +60,6 @@ Height:
 &lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauertsche Bänder&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf&#34;&gt;sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 </description>
 
     </item>

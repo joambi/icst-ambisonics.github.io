@@ -2,6 +2,9 @@
 title: ICST Kompositionsstudio Regie
 description: "LSB-Bedienfeld, Routing und Bedienung der Regie"
 date: 2025-04-08T15:11:00
+slug: icst-kompositionsstudio-regie
+aliases:
+  - /blog/icst-kompositionsstudio-regie/
 weight: 5
 group: "Studio"
 languageCode: de

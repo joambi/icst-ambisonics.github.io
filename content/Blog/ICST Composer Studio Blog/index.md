@@ -1,124 +1,173 @@
 ---
 title: ICST Composition Studio
 date: 2025-05-27T17:16:00
+slug: icst-composer-studio-blog
+aliases:
+  - /blog/icst-composer-studio-blog/
 weight: -1
 description: "The ICST Composition Studio at ZHdK — a higher-order Ambisonics production environment for electroacoustic music and sound art."
 group: "Studio"
 ---
 
 <style>
-/* ── ICST Studio page — Anatole theme aligned ── */
-
-.studio-hero {
-  position: relative;
-  margin-bottom: 1.5rem;
+.hub-intro {
+  font-size: 1.45rem;
+  line-height: 1.7;
+  margin: 1rem 0 1.25rem;
+  max-width: 54rem;
 }
-.studio-hero img {
-  width: 100%;
-  border-radius: 2px;
-  display: block;
-}
-
-/* Spec grid — plain text, no boxes */
-.spec-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 0.4rem 1rem;
-  margin: 0.8rem 0 1rem 0;
-}
-.spec-card {
-  padding: 0.3rem 0;
-  text-align: center;
-}
-.spec-card__value {
-  font-size: 1.6rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 1;
-}
-.theme--light .spec-card__value { color: #464646; }
-.theme--dark  .spec-card__value { color: #eeeeee; }
-.spec-card__label {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+.hub-meta {
+  margin: 0.75rem 0 1.75rem;
   color: #9f9f9f;
-  margin-top: 3px;
+  font-size: 1.15rem;
 }
-
-/* Contact line — plain text, no box */
-.studio-contact {
-  font-size: 1.4rem;
-  margin: 0.2rem 0 1.5rem 0;
-  line-height: 1.6;
+.post__content h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 0.9rem;
+  padding-top: 0.15rem;
+  font-size: 1.75rem;
+  letter-spacing: 0.01em;
 }
-.theme--light .studio-contact { color: #9f9f9f; }
-.theme--dark  .studio-contact { color: #9f9f9f; }
-.studio-contact a { color: #6086b4; }
-.studio-contact a:hover { text-decoration: underline; }
-
-/* Studio nav links */
-.studio-nav {
+.post__content h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.28rem;
+  color: #9f9f9f;
+}
+.hub-start {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.8rem;
-  margin: 1.2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  margin: 1.1rem 0 1.75rem;
 }
-.studio-nav a {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
+.hub-start a,
+.hub-related a {
+  display: block;
   border-radius: 2px;
-  padding: 1rem 1.1rem;
-  font-size: 1.4rem;
-  font-weight: 500;
+  min-height: 100%;
+  padding: 1.05rem 1.15rem;
   text-decoration: none;
-  transition: border-color 0.15s, background 0.15s;
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
 }
-.theme--light .studio-nav a {
+.theme--light .hub-start a,
+.theme--light .hub-related a {
   background: #fff;
   border: 1px solid #eeeeee;
   color: #464646;
 }
-.theme--dark .studio-nav a {
+.theme--dark .hub-start a,
+.theme--dark .hub-related a {
   background: #2a3a44;
   border: 1px solid #464646;
   color: #eeeeee;
 }
-.theme--light .studio-nav a:hover { border-color: #6086b4; }
-.theme--dark  .studio-nav a:hover { border-color: #6086b4; }
-.studio-nav a i { color: #6086b4; width: 18px; text-align: center; }
-
-.listen-links { margin: 0.5rem 0; }
-.listen-links li { margin-bottom: 0.4rem; }
+.theme--light .hub-start a:hover,
+.theme--light .hub-related a:hover {
+  border-color: #6086b4;
+  transform: translateY(-1px);
+}
+.theme--dark .hub-start a:hover,
+.theme--dark .hub-related a:hover {
+  border-color: #6086b4;
+  transform: translateY(-1px);
+}
+.hub-card__title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.hub-card__text {
+  display: block;
+  font-size: 1.15rem;
+  color: #9f9f9f;
+  line-height: 1.5;
+}
+.hub-related {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.1rem 0 0;
+}
+@media (max-width: 760px) {
+  .hub-intro {
+    font-size: 1.3rem;
+    line-height: 1.65;
+  }
+  .hub-meta {
+    font-size: 1.05rem;
+    margin-bottom: 1.35rem;
+  }
+  .post__content h2 {
+    margin-top: 2rem;
+    font-size: 1.55rem;
+  }
+  .post__content h3 {
+    font-size: 1.18rem;
+  }
+  .hub-start,
+  .hub-related {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .hub-start a,
+  .hub-related a {
+    padding: 0.95rem 1rem;
+  }
+}
 </style>
 
-<div class="studio-hero">
-  <img src="KompStudio.jpg" alt="ICST Composition Studio">
+![ICST Composition Studio](KompStudio.jpg)
+
+<div class="hub-intro">
+The <strong>ICST Composition Studio</strong> at the Zurich University of the Arts is a dedicated production environment for electroacoustic music and spatial sound art. It supports the creation, research, and performance of immersive audio works.
 </div>
 
-The **ICST Composition Studio** at the Zurich University of the Arts is a dedicated production environment for electroacoustic music and spatial sound art. It supports the creation, research, and performance of immersive audio works.
+The studio is open to international artists in residence, researchers, and students working at the intersection of music, technology, and sound design.
+
+<div class="hub-meta">Room: <strong>ZT 3.D02</strong> · Contact: <a href="mailto:johannes.schuett@zhdk.ch">johannes.schuett@zhdk.ch</a></div>
 
 ---
 
-# Explore the Studio
+# What This Page Is For
 
-**Audience:** Composer, Student, Researcher, Studio visitor.
+This is the **service and resource hub** for the ICST Composition Studio. From here, you can access technical preparation, speaker and routing information, studio infrastructure, and downloads for working on site.
 
-<div class="studio-nav">
-  <a href="/blog/icst-kompositionsstudio-equipment/"><i class="fas fa-microchip"></i> Equipment</a>
-  <a href="/blog/icst-kompositionsstudio-software/"><i class="fas fa-laptop-code"></i> Software</a>
-  <a href="/blog/icst-kompositionsstudio-speaker-settings/"><i class="fas fa-volume-up"></i> Speaker Setup</a>
-  <a href="/blog/audio-examples/"><i class="fas fa-wave-square"></i> Audio Examples</a>
-  <a href="/blog/icst-kompositionsstudio-pre-installation/"><i class="fas fa-tools"></i> Pre-Installation</a>
-  <a href="/blog/icst-kompositionsstudio-regie/"><i class="fas fa-sliders-h"></i> Regie</a>
-  <a href="/residenzen/"><i class="fas fa-music"></i> Artist Residencies</a>
-  <a href="/blog/ascolta/"><i class="fas fa-headphones"></i> ascolta</a>
-  <a href="/blog/downloads/"><i class="fas fa-download"></i> Downloads</a>
+If you are looking for the **public programme**, go to [ascolta](/blog/ascolta/). If you are looking for the **artists in residence** and their projects, go to [Residencies](/residenzen/).
+
+---
+
+## Start here
+
+<div class="hub-start">
+  <a href="/blog/icst-kompositionsstudio-equipment/">
+    <span class="hub-card__title">Equipment</span>
+    <span class="hub-card__text">Hardware, speakers, interfaces, and studio technology at a glance.</span>
+  </a>
+  <a href="/blog/icst-kompositionsstudio-software/">
+    <span class="hub-card__title">Software</span>
+    <span class="hub-card__text">Installed tools, plugins, and the working environment of the studio.</span>
+  </a>
+  <a href="/blog/icst-kompositionsstudio-speaker-settings/">
+    <span class="hub-card__title">Speaker Setup</span>
+    <span class="hub-card__text">Speaker structure, routing context, and spatial playback information.</span>
+  </a>
+  <a href="/blog/downloads/">
+    <span class="hub-card__title">Downloads</span>
+    <span class="hub-card__text">Templates, checklists, and files for preparing your session.</span>
+  </a>
 </div>
 
-<div class="studio-contact">
-  📍 Toni-Areal · Pfingstweidstrasse 96, Zürich · Room ZT 3.D02 &nbsp;·&nbsp;
-  ✉️ <a href="mailto:johannes.schuett@zhdk.ch">johannes.schuett@zhdk.ch</a>
-</div>
+---
 
+## Related Areas
+
+<div class="hub-related">
+  <a href="/blog/ascolta/">
+    <span class="hub-card__title">ascolta</span>
+    <span class="hub-card__text">Public listening series for spatial and electroacoustic music.</span>
+  </a>
+  <a href="/residenzen/">
+    <span class="hub-card__title">Residencies</span>
+    <span class="hub-card__text">Artist-in-residence programme, profiles, and projects.</span>
+  </a>
+</div>

@@ -8,7 +8,9 @@ weight: 40
 tags:
 ---
 
-### 01_Install the ICST Ambisonics Plugins (OSX)
+Reference installation steps for the ICST Ambisonics Plugins on macOS, including required REAPER dependencies and the default file locations installed by the package.
+
+## Install the ICST Ambisonics Plugins (macOS)
 
 1. Download Reaper(DAW) (arm64/intel_64) from [reaper.fm](http://reaper.fm/)
 2. Follow the Reaper Installation guide.
@@ -21,7 +23,7 @@ tags:
 
    ![installer](installer.gif)
 
-### What is installed by 'ICST_AmbiPlugins_macOS':
+## Installed files and folders
 
 - /Library/Audio/Plugins/VST3
 - /Library/Audio/Plugins/Components
@@ -34,9 +36,10 @@ tags:
     - ICST_AmbiPlugins
     - ICST_AmbiPlugins_3rdParty
 
-INFO: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
+## Related references
 
-VIDEO:  [ICST Ambisonics Plugins – 01 – How to Install - YouTube](https://www.youtube.com/watch?v=2GXb5tbqW1Y&t=11s)
+- Wiki: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
+- Video: [ICST Ambisonics Plugins – 01 – How to Install - YouTube](https://www.youtube.com/watch?v=2GXb5tbqW1Y&t=11s)
 
 ---
 
@@ -63,4 +66,3 @@ VIDEO:  [ICST Ambisonics Plugins – 01 – How to Install - YouTube](https://ww
 Restart the PC!
 
 ----
-

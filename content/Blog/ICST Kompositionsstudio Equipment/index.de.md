@@ -2,6 +2,9 @@
 title: ICST Kompositionsstudio Equipment
 description: "Mac Pro, RME MadiFace, LAWO-Matrix, Lautsprecher und MIDI-Controller"
 date: 2025-06-09T15:10:00
+slug: icst-kompositionsstudio-equipment
+aliases:
+  - /blog/icst-kompositionsstudio-equipment/
 weight: 3
 group: "Studio"
 languageCode: de

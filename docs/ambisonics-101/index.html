@@ -9,7 +9,7 @@
 ><head>
   <meta charset="utf-8" />
   <title>
-    map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]
+    Johannes Schuett
         |
         Ambisonics 101
       
@@ -19,15 +19,15 @@
   </title>
 
   <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="author" content="map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]" />
+  <meta name="author" content="Johannes Schuett" />
   <meta
     name="description"
     content="A compact introduction to Ambisonics, B-format, typical setups, and practical listening workflows."
   />
   
   
-        <link rel="stylesheet" href="/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css" integrity="sha256-gnZ8kex8rMjku3tmSA/DOpKI6lhtiQQZWl2QqNvPOAE=" crossorigin="anonymous" />
-      
+      <link rel="stylesheet" href="/css/anatole.min.c67a96166a1b34f0c4d28751874d6cd50877fa3f2e94228b181b56faf7604337.css" integrity="sha256-xnqWFmobNPDE0odRh01s1Qh3&#43;j8ulCKLGBtW&#43;vdgQzc=" crossorigin="anonymous" />
+    
   <link
     rel="stylesheet"
     href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
@@ -183,7 +183,7 @@
 
     ,
         "url" : "https:\/\/ambisonics.ch\/ambisonics-101\/",
-        "wordCount" : "189",
+        "wordCount" : "644",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -221,13 +221,14 @@
         </div>
       
       <div class="sidebar__introduction-description">
-        <p>Spatial Audio Plugins & Tutorials<br />by ICST · Zurich University of the Arts</p>
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST / Zurich University of the Arts</p>
       </div>
     </div>
     <ul class="sidebar__list">
       
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="https://www.zhdk.ch/forschung/icst"
             target="_blank"
             rel="noopener me"
@@ -235,13 +236,25 @@
             title="Zurich University of the Arts"
           >
             
-              <img src="/images/zhdk-logo.svg" alt="Zurich University of the Arts" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+              
+                <span class="sidebar__social-image sidebar__social-image--zhdk" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" fill="currentColor">
+  <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Z</text>
+  <line x1="40" y1="10" x2="54" y2="10" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="20" x2="54" y2="20" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="30" x2="54" y2="30" stroke="currentColor" stroke-width="2.5"/>
+  <text x="58" y="32" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" letter-spacing="0.5">hdk</text>
+</svg>
+
+                </span>
+              
             
           </a>
         </li>
       
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="https://github.com/joambi"
             target="_blank"
             rel="noopener me"
@@ -249,13 +262,14 @@
             title="GitHub"
           >
             
-              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+              <i class="fab fa-github sidebar__social-icon" aria-hidden="true"></i>
             
           </a>
         </li>
       
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
             target="_blank"
             rel="noopener me"
@@ -263,7 +277,7 @@
             title="YouTube"
           >
             
-              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+              <i class="fab fa-youtube sidebar__social-icon" aria-hidden="true"></i>
             
           </a>
         </li>
@@ -302,9 +316,7 @@
       <li class="footer__item">
         <a
           class="link"
-          href="https://www.iubenda.com/terms-and-conditions/70769495"
-          
-            target="_blank" rel="noopener noreferrer"
+          href="/terms-and-conditions/"
           
           title=""
         >
@@ -347,10 +359,10 @@
             
             <a
               
-              href="/about/"
+              href="/start/"
               
               title=""
-              >About</a
+              >Start</a
             >
           </li>
         
@@ -369,12 +381,20 @@
 
               
                 
+                  
+                
+
+              
+                
+
+              
+                
 
               
 
 
-              <label class="optionswitch__label" for="1"
-                >Plugins &amp; Tools <i class="fa fa-angle-down" aria-hidden="true"></i
+              <label class="optionswitch__label nav__link--active" for="1"
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -383,20 +403,42 @@
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/icst-ambisonics-plugins/"
+                      href="/post/"
                       
                       title=""
-                      >ICST AmbiPlugins Docs</a
+                      >All Tutorials</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/icst-ambisonics-tools/"
+                      href="/ambisonics-101/"
                       
                       title=""
-                      >Ambi Tools</a
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/composing-in-ambisonics/"
+                      
+                      title=""
+                      >For Composers</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
                     >
                   </li>
                 
@@ -416,8 +458,6 @@
               
               
                 
-                  
-                
 
               
                 
@@ -428,8 +468,8 @@
               
 
 
-              <label class="optionswitch__label nav__link--active" for="2"
-                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+              <label class="optionswitch__label" for="2"
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -438,32 +478,30 @@
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/ambisonics-101/"
+                      href="/for-residents/"
                       
                       title=""
-                      >Ambisonics 101</a
+                      >Resident Guide</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/post/"
+                      href="/blog/icst-composer-studio-blog/"
                       
                       title=""
-                      >All Tutorials</a
+                      >Studio Hub</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
-                      
-                        target="_blank" rel="noopener noreferrer"
+                      href="/residenzen/"
                       
                       title=""
-                      >Videos</a
+                      >Residencies</a
                     >
                   </li>
                 
@@ -491,7 +529,7 @@
 
 
               <label class="optionswitch__label" for="3"
-                >Ascolta <i class="fa fa-angle-down" aria-hidden="true"></i
+                >ASCOLTA <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -500,20 +538,20 @@
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/ascolta/17-ascolta/"
+                      href="/blog/ascolta/"
                       
                       title=""
-                      >Next Session</a
+                      >ASCOLTA</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/ascolta/"
+                      href="/blog/sounding_future/"
                       
                       title=""
-                      >All Sessions</a
+                      >Listening</a
                     >
                   </li>
                 
@@ -538,10 +576,25 @@
                 
 
               
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
 
 
               <label class="optionswitch__label" for="4"
-                >Residenzen <i class="fa fa-angle-down" aria-hidden="true"></i
+                >Docs <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -550,161 +603,70 @@
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/residenzen/icst-studio-residences-2025/"
+                      href="/icst-ambisonics-plugins/"
                       
                       title=""
-                      >Residenzen 2025</a
+                      >Plugin Docs</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/residenzen/icst-studio-residences-2026/"
+                      href="/icst-ambisonics-tools/"
                       
                       title=""
-                      >Residenzen 2026</a
-                    >
-                  </li>
-                
-              </ul>
-            </div>
-          </li>
-        
-
-      
-        
-        
-
-          <li class="nav__list-item">
-            <div class="optionswitch">
-              <input class="optionswitch__picker" type="checkbox" id="5" hidden />
-
-              
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-
-
-              <label class="optionswitch__label" for="5"
-                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
-              ></label>
-
-              <div class="optionswitch__triangle"></div>
-              <ul class="optionswitch__list">
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/icst-composer-studio-blog/"
-                      
-                      title=""
-                      >Composition Studio</a
+                      >Ambi Tools</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/audio-examples/"
+                      href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
                       
                       title=""
-                      >Audio Examples</a
+                      >OSC Syntax</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-equipment/"
+                      href="/icst-ambisonics-plugins/15_best_practices/"
                       
                       title=""
-                      >Equipment</a
+                      >Best Practices</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-software/"
+                      href="/blog/b-format-archive/"
                       
                       title=""
-                      >Software</a
+                      >B-Format Archive</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-speaker-settings/"
+                      href="/blog/faq/"
                       
                       title=""
-                      >Speaker Setup</a
+                      >FAQ</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-regie/"
+                      href="/links/"
                       
                       title=""
-                      >Regie</a
-                    >
-                  </li>
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/icst-kompositionsstudio-pre-installation/"
-                      
-                      title=""
-                      >Pre-Installation</a
-                    >
-                  </li>
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/downloads/"
-                      
-                      title=""
-                      >Downloads</a
-                    >
-                  </li>
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/"
-                      
-                      title=""
-                      >All Studio Pages</a
+                      >Links</a
                     >
                   </li>
                 
@@ -720,10 +682,25 @@
             
             <a
               
-              href="/links/"
+              href="/blog/downloads/"
               
               title=""
-              >Links</a
+              >Downloads</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
             >
           </li>
         
@@ -755,6 +732,11 @@
           </div>
         </li>
       
+      <li class="nav__list-item">
+        <a href="/search/" title="Search">
+          <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
       
         <li class="nav__list-item">
           <div class="themeswitch">
@@ -778,20 +760,112 @@
       
         <h1>Ambisonics 101</h1>
       
-      <h2 id="1-what-is-ambisonics">1. What Is Ambisonics?</h2>
-<p>Ambisonics is a format-agnostic way to represent a full sound field in 3D. Instead of mixing directly for a fixed speaker layout, you work with a spatial representation that can later be rendered for different playback systems.</p>
-<h2 id="2-what-is-b-format">2. What Is B-Format?</h2>
-<p>B-format is the core Ambisonics signal format used for encoding spatial information. In practice, sources are encoded into B-format and then decoded for a target setup, such as headphones, stereo, or loudspeaker arrays.</p>
-<h2 id="3-typical-setups">3. Typical Setups</h2>
+      <style>
+.toc-card {
+  border: 1px solid #c8c8c8;
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  margin: 0.8rem 0 1.4rem 0;
+}
+.toc-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.toc-card ol {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+.toc-card li {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+.toc-card a {
+  text-decoration: none;
+}
+.toc-card a:hover {
+  text-decoration: underline;
+}
+.post__content h1 a,
+.post__content h2 a,
+.post__content h3 a {
+  color: #6086b4 !important;
+}
+</style>
+<div class="toc-card">
+  <div class="toc-card__title">Table of Contents</div>
+  <ol>
+    <li><a href="#what-is-ambisonics">What Is Ambisonics?</a></li>
+    <li><a href="#what-is-b-format">What Is B-Format?</a></li>
+    <li><a href="#signal-flow">Signal Flow at a Glance</a></li>
+    <li><a href="#typical-setups">Typical Setups</a></li>
+    <li><a href="#headphones-vs-loudspeakers">Headphones vs. Loudspeakers</a></li>
+    <li><a href="#immersive-vs-atmos">How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?</a></li>
+    <li><a href="#where-to-start-at-icst">Where To Start at ICST</a></li>
+    <li><a href="#ambisonics-glossary">Ambisonics Glossary (Quick Reference)</a></li>
+  </ol>
+</div>
+<p><a id="what-is-ambisonics"></a></p>
+<h2 id="1-what-is-ambisonics">1. <a href="https://en.wikipedia.org/wiki/Ambisonics">What Is Ambisonics?</a></h2>
+<p>Ambisonics is a format-agnostic method for describing a spatial 3D sound field. Instead of mixing directly for a fixed loudspeaker layout, you work with a spatial representation that can later be rendered for different playback systems.</p>
+<p><a id="what-is-b-format"></a></p>
+<h2 id="2-what-is-b-format">2. <a href="https://ambisonic.info/ambisonics/channels.html">What Is B-Format?</a></h2>
+<p>B-format is the core signal format in Ambisonics and carries spatial information. Sources are encoded into B-format and then decoded for a target setup, such as headphones, stereo, or different loudspeaker arrays.</p>
+<p>It describes a sound-field state around a listening point using pressure and directional components. In first order, this means:</p>
+<ul>
+<li><code>W</code> is the omnidirectional component, i.e. the pressure/presence in the room.</li>
+<li><code>X</code>, <code>Y</code>, and <code>Z</code> are directional components along three axes (front-back, left-right, up-down), indicating where the signal comes from.</li>
+</ul>
+<p>In the strict classical sense, “B-format” refers to this four-channel first-order format (<code>W</code>, <code>X</code>, <code>Y</code>, <code>Z</code>). In an extended sense, the term is also used for higher-order Ambisonics, where all Ambisonics coefficients up to a given order are represented as separate audio channels.</p>
+<p>This format can then be decoded to different target systems such as headphones, stereo, or loudspeaker arrays. <a href="https://en.wikipedia.org/wiki/Ambisonics">1</a> <a href="https://ambisonic.info/ambisonics/channels.html">2</a></p>
+<p><a id="signal-flow"></a></p>
+<h2 id="signal-flow-at-a-glance">Signal Flow at a Glance</h2>
+<p>From source to speaker — this is how Ambisonics works in REAPER with the ICST plugins:</p>
+<p><img src="/images/signalflow-simple.svg" alt="Ambisonics Signal Flow — Single Source"></p>
+<p><em>Single source: mono track → AmbiEncoder (az/el/dist) → B-Format Bus → AmbiDecoder → Speakers or Binaural.</em></p>
+<p><img src="/images/signalflow-multi.svg" alt="Ambisonics Signal Flow — Multi-Source (ICST MultiEncoder)"></p>
+<p><em>Multi-source: up to 64 sources feed simultaneously into the ICST MultiEncoder → shared B-Format Bus → decoded once.</em></p>
+<p><a id="typical-setups"></a></p>
+<h2 id="3-typical-setups">3. <a href="https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems">Typical Setups</a></h2>
 <p>Common setups range from small studio rings and dome-like height configurations to custom arrays in composition studios. The same Ambisonics material can be adapted to each of these setups through decoding.</p>
+<p><a id="headphones-vs-loudspeakers"></a></p>
 <h2 id="4-headphones-vs-loudspeakers">4. Headphones vs. Loudspeakers</h2>
 <p>Headphones use binaural rendering and are practical for editing, checking translation, and remote collaboration. Loudspeakers provide a physical spatial field in the room and remain essential for composition, depth perception, and artistic evaluation.</p>
-<h2 id="5-where-to-start-at-icst">5. Where To Start at ICST</h2>
+<p><a id="immersive-vs-atmos"></a></p>
+<h2 id="5-how-is-ambisonics-different-from-immersive-audio-dolby-atmos-and-spatial-audio">5. How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?</h2>
+<p>Ambisonics is a form of immersive audio. Immersive audio is a broader term for 3D audio approaches that recreate a full sound field around the listener rather than just left/right playback.</p>
+<p>Dolby Atmos and Apple Spatial Audio pursue a similar goal, but are typically object-based workflows. Ambisonics, by contrast, is a channel-based, field-oriented approach. The spatial information is contained in B-format and adapted to a concrete playback system only at decoding stage.</p>
+<p><a id="where-to-start-at-icst"></a></p>
+<h2 id="6-where-to-start-at-icst">6. Where To Start at ICST</h2>
 <ul>
+<li>For Beginners: <a href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a></li>
 <li>Start with the <a href="/icst-ambisonics-plugins/">ICST Ambisonics Plugins</a> for DAW workflows.</li>
 <li>Use the <a href="/icst-ambisonics-tools/">ICST Ambisonics Tools</a> for Max/MSP workflows.</li>
 <li>Explore <a href="/blog/ascolta/">Ascolta</a> for listening practice and references.</li>
 <li>Continue with tutorials and articles in the <a href="/post/">Blog &amp; Tutorials</a>.</li>
+</ul>
+<p>Ambisonics 101: Ten Essential Questions Answered<br>
+<a href="https://www.youtube.com/watch?v=95Hr3T5whsU&amp;t=6s">Watch on YouTube</a></p>
+<hr>
+<p><a id="ambisonics-glossary"></a></p>
+<h2 id="7-ambisonics-glossary-quick-reference">7. Ambisonics Glossary (Quick Reference)</h2>
+<ul>
+<li><strong>B-Format</strong>: The Ambisonics signal representation that stores spatial information for later decoding.</li>
+<li><strong>Ambisonics Order</strong>: Spatial resolution level (e.g. 1st, 3rd, 7th order). Higher order usually means finer localization.</li>
+<li><strong>Encoder</strong>: Converts a mono/stereo source into Ambisonics (B-format) with spatial position data.</li>
+<li><strong>Decoder</strong>: Renders B-format to a target playback system (speaker array, binaural headphone output, etc.).</li>
+<li><strong>Channel Count</strong>: Number of channels used in your Ambisonics path; must be consistent across routing.</li>
+<li><strong>Speaker Layout</strong>: Physical loudspeaker geometry used for decoding and playback.</li>
+<li><strong>Binaural</strong>: Headphone rendering method that simulates spatial direction cues.</li>
+<li><strong>OSC (Open Sound Control)</strong>: Message protocol used to control spatial parameters in real time.</li>
+<li><strong>Yaw / Pitch / Roll</strong>: Rotation axes used for orientation and motion control in 3D space.</li>
+<li><strong>Azimuth / Elevation</strong>: Angle coordinates used to describe horizontal and vertical source direction.</li>
+</ul>
+<hr>
+<p>Related next reads:</p>
+<ul>
+<li><a href="/post/getting-started-icst-plugins-reaper/">Getting Started with ICST Ambisonics Plugins in Reaper</a></li>
+<li><a href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC Syntax for the ICST AmbiEncoder</a></li>
 </ul>
 </div>
     <div class="post__footer">
@@ -837,9 +911,7 @@
       <li class="footer__item">
         <a
           class="link"
-          href="https://www.iubenda.com/terms-and-conditions/70769495"
-          
-            target="_blank" rel="noopener noreferrer"
+          href="/terms-and-conditions/"
           
           title=""
         >

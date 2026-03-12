@@ -18,38 +18,15 @@
       <language>de</language>
       <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
       <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
-      <lastBuildDate>Thu, 01 Jan 2099 00:00:00 &#43;0000</lastBuildDate>
+      <lastBuildDate>Sun, 01 Mar 2026 00:00:00 &#43;0000</lastBuildDate>
       <atom:link href="https://ambisonics.ch/de/residenzen/index.xml" rel="self" type="application/rss&#43;xml" />
-    <item>
-      <title>RESIDENCY AT THE ICST STUDIO</title>
-      <link>https://ambisonics.ch/de/residenzen/icst-studio-residences/</link>
-      <guid>https://ambisonics.ch/de/residenzen/icst-studio-residences/</guid>
-      <pubDate>Thu, 01 Jan 2099 00:00:00 &#43;0000</pubDate>
-        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;künstlerresidenzien-am-icst-kompositionsstudio&#34;&gt;Künstlerresidenzien am ICST Kompositionsstudio&lt;/h1&gt;
-&lt;p&gt;Im ICST Kompositionsstudio schaffen internationale Künstler ihre 3D-Audioarbeiten mit unseren Ambisonics-Plugins. Die Residenzprogramme ermöglichen kreative Arbeitsprozesse im Bereich des räumlichen Sounddesigns und der elektroakustischen Komposition.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/residenzen/icst-studio-residences-2026/&#34;&gt;2026 Künstlerresidenzien am ICST Kompositionsstudio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/residenzen/icst-studio-residences-2025/&#34;&gt;2025 Künstlerresidenzien am ICST Kompositionsstudio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://icst-kompositionsstudio.ch/post/icst-artist-in-residency-im-kompositionsstudio&#34;&gt;Informationen über ICST Studio-Residenzprogramme bis 2024 finden Sie hier.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.zhdk.ch/forschung/icst/icst-air/residency-a-icst-studio-20727&#34;&gt;Residency A: ICST Studio&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2026 ICST&lt;/span&gt;&lt;/p&gt;
-</description>
-
-    </item>
     <item>
       <title>2026 ICST Artist in Studio-Residency</title>
       <link>https://ambisonics.ch/de/residenzen/icst-studio-residences-2026/</link>
       <guid>https://ambisonics.ch/de/residenzen/icst-studio-residences-2026/</guid>
       <pubDate>Sun, 01 Mar 2026 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule der Künste&lt;/p&gt;
-&lt;hr&gt;
-&lt;style&gt;
+        <description>&lt;style&gt;
 /* ── Artist-in-Residence Cards — Anatole theme aligned ── */
 
 .artist-card {
@@ -218,8 +195,6 @@
     &lt;p class=&#34;artist-card__bio&#34;&gt;Eli Stine ist Komponist, Programmierer und Pädagoge. Er hält einen Ph.D. und Master in Komposition und Computertechnologien von der University of Virginia sowie Bachelor-Abschlüsse in Technology in Music und Computer Science vom Oberlin College. Er ist Visiting Assistant Professor am Oberlin Conservatory. Seine Arbeit erforscht elektroakustische Klänge und Multimedia-Technologien unter Verwendung von benutzerdefinierter Software, Videoprojektionen und Multi-Channel-Lautsprechersystemen. Sein Stück &lt;em&gt;Where Water Meets Memory&lt;/em&gt; gewann den &lt;strong&gt;Prix CIME 2025&lt;/strong&gt; internationalen elektroakustischen Musikwettbewerb.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2026 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -229,9 +204,7 @@
       <guid>https://ambisonics.ch/de/residenzen/icst-studio-residences-2025/</guid>
       <pubDate>Tue, 16 Sep 2025 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institut für Computermusik und Soundtechnologie / (ICST) Zürcher Hochschule der Künste&lt;/p&gt;
-&lt;hr&gt;
-&lt;style&gt;
+        <description>&lt;style&gt;
 /* ── Artist-in-Residence Cards — Anatole theme aligned ── */
 
 .artist-card {
@@ -378,8 +351,6 @@
     &lt;p class=&#34;artist-card__bio&#34;&gt;&lt;em&gt;Lúmina&lt;/em&gt; ist eine Komposition, die Reiseaufnahmen mit Fragmenten von Anime verflicht und eine imaginäre Welt konstruiert, in der sich Erinnerung und Fiktion überschneiden.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>

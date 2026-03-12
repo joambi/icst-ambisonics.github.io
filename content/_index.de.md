@@ -7,21 +7,23 @@ aliases:
   - /de/home/
 ---
 
-## Offene Ambisonics-Tools, echte Studio-Workflows
+## Neu hier? Starte mit Ambisonics in REAPER
 
 Eine Methode, dreidimensionalen Klang aufzunehmen und wiederzugeben — für beliebige Lautsprecheranordnungen, in jedem Raum. Die ICST-Plugins bringen das in REAPER, gratis und Open Source, mit studioerprobten Workflows aus der ZHdK Zürich.
+
+Wenn du neu einsteigst, folge dem geführten Startpfad. Wenn du schon mit den Plugins arbeitest, spring direkt in Quick Start oder die Doku.
 
 ![Plugin-Übersicht](/images/Home_gif.gif)
 
 <div class="hero__links">
-  <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">
-    <i class="fas fa-play"></i>&nbsp;Start in 5 Minuten
+  <a class="hero__link hero__link--primary" href="/de/start/">
+    <i class="fas fa-play"></i>&nbsp;Hier starten
+  </a>
+  <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">
+    <i class="fas fa-bolt"></i>&nbsp;Quick Start
   </a>
   <a class="hero__link" href="/ambisonics-101/">
     <i class="fas fa-compass"></i>&nbsp;Was ist Ambisonics?
-  </a>
-  <a class="hero__link" href="/blog/downloads/">
-    <i class="fas fa-download"></i>&nbsp;Download
   </a>
   <a class="hero__link" href="/icst-ambisonics-plugins/">
     <i class="fas fa-book-open"></i>&nbsp;Plugin-Doku
@@ -35,7 +37,7 @@ Neu in v3.2: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releases
 <div class="home-section-header home-section-header--software">
 <p class="home-section-label">🎛️ Ambisonics-Anwender:innen</p>
 <p class="home-section-lead">Freie, quelloffene Spatial-Audio-Tools für REAPER — vom ersten Setup bis zu fortgeschrittener OSC-Steuerung und DAW-Integration.</p>
-<a class="hero__link hero__link--primary" href="/de/start/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-play"></i>&nbsp;Hier starten — geführter 4-Schritte-Pfad</a>
+<a class="hero__link hero__link--primary" href="/de/start/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-play"></i>&nbsp;Geführter Einstieg in 4 Schritten</a>
 </div>
 
 <div class="home-cards">

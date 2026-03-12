@@ -5,9 +5,9 @@
       {{ with .Title }}
         {{ . }} |
       {{ end }}
-      {{- .Site.Params.author -}}
+      {{- or .Site.Params.authorName .Site.Params.author.name .Site.Params.author -}}
     {{ else }}
-      {{- .Site.Params.author -}}{{ with .Title }}
+      {{- or .Site.Params.authorName .Site.Params.author.name .Site.Params.author -}}{{ with .Title }}
         |
         {{ . }}
       {{ end }}
@@ -19,7 +19,7 @@
   <!-- Meta -->
   {{- hugo.Generator -}}
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="author" content="{{ .Site.Params.author }}" />
+  <meta name="author" content="{{ or .Site.Params.authorName .Site.Params.author.name .Site.Params.author }}" />
   <meta
     name="description"
     content="{{ if .Params.description }}
@@ -52,14 +52,8 @@
     "targetPath" (printf "css/anatole%s.css" (cond (eq site.Language.LanguageDirection "") "" (printf ".%s" site.Language.LanguageDirection)))
   -}}
   {{ with resources.Get "scss/main.scss" -}}
-    {{ if hugo.IsProduction -}}
-      {{ with . | toCSS $options | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
-      {{ end -}}
-    {{ else -}}
-      {{ with . | toCSS $options }}
-        <link rel="stylesheet" href="{{ .RelPermalink }}" />
-      {{ end -}}
+    {{ with . | toCSS $options | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
     {{ end -}}
   {{ end -}}
 

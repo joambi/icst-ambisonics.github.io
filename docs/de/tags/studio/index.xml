@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Studio on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/tags/studio/</link>
+
+    <description>
+      Recent content
+      
+         in Studio 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Sun, 08 Mar 2026 11:30:00 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/tags/studio/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Ambisonics.ch Relaunch 2026 - Was ist neu</title>
+      <link>https://ambisonics.ch/de/post/relaunch-2026/</link>
+      <guid>https://ambisonics.ch/de/post/relaunch-2026/</guid>
+      <pubDate>Sun, 08 Mar 2026 11:30:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Zielgruppe: neue und wiederkehrende Seitennutzer:innen.&lt;/p&gt;
+&lt;h2 id=&#34;warum-wir-die-seite-neu-strukturiert-haben&#34;&gt;Warum wir die Seite neu strukturiert haben&lt;/h2&gt;
+&lt;p&gt;Die neue Struktur reduziert Suchaufwand und führt schneller zu den passenden Inhalten. Statt gemischter Bereiche gibt es klare Einstiegspunkte für Tutorials, Studio Cases, Downloads und Dokumentation.&lt;/p&gt;
+&lt;h2 id=&#34;was-sich-konkret-geändert-hat&#34;&gt;Was sich konkret geändert hat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Klarere Menüstruktur mit den vier Kernbereichen.&lt;/li&gt;
+&lt;li&gt;Kompaktere Übersichtsseiten mit eindeutigen Teasern.&lt;/li&gt;
+&lt;li&gt;Stärkere Verlinkung zwischen Grundlagen, Praxis und Download-Material.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;für-wen-ist-was&#34;&gt;Für wen ist was&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Einsteiger: Reaper-Setup und erste Ambisonics-Workflows.&lt;/li&gt;
+&lt;li&gt;Fortgeschrittene: OSC-Steuerung, Automationen und Multi-Decoder-Setups.&lt;/li&gt;
+&lt;li&gt;Künstler und Studios: Residency Cases mit realen Produktionsabläufen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;drei-schnelle-einstiege&#34;&gt;Drei schnelle Einstiege&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minuten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/osc-10-key-messages/&#34;&gt;OSC im ICST AmbiEncoder: Die 10 wichtigsten Messages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/ableton-reaper/&#34;&gt;Ableton Live und ICST Ambisonics Integration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;nächster-schritt&#34;&gt;Nächster Schritt&lt;/h2&gt;
+&lt;p&gt;Starte mit dem Reaper-Setup-Guide und arbeite danach mit dem OSC-Artikel weiter, um deinen Workflow reproduzierbar zu machen.&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

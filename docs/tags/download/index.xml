@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Download on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/download/</link>
+
+    <description>
+      Recent content
+      
+         in Download 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Thu, 12 Mar 2026 09:00:00 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/download/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Download Pack #1: Reaper Template &#43; HOA Routing Checklist</title>
+      <link>https://ambisonics.ch/blog/download-pack-1-hoa-reaper-template/</link>
+      <guid>https://ambisonics.ch/blog/download-pack-1-hoa-reaper-template/</guid>
+      <pubDate>Thu, 12 Mar 2026 09:00:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Level: Beginner to Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Technician.&lt;/p&gt;
+&lt;h2 id=&#34;included-files&#34;&gt;Included files&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reaper project template (&lt;code&gt;.RPP&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;HOA routing checklist (&lt;code&gt;.md&lt;/code&gt; or &lt;code&gt;.pdf&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Quick verification guide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-this-pack-is-for&#34;&gt;What this pack is for&lt;/h2&gt;
+&lt;p&gt;Use this pack to reduce setup time and avoid common routing mistakes in first sessions.&lt;/p&gt;
+&lt;h2 id=&#34;recommended-workflow&#34;&gt;Recommended workflow&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open template and verify audio device settings.&lt;/li&gt;
+&lt;li&gt;Confirm channel count on master and Ambisonics tracks.&lt;/li&gt;
+&lt;li&gt;Load decoder preset for your speaker setup.&lt;/li&gt;
+&lt;li&gt;Run quick signal check before recording.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;related-tutorial&#34;&gt;Related tutorial&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/ambisonics-in-30-minutes/&#34;&gt;Ambisonics in 30 Minutes: Your First Working Reaper Session Flow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started with ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;download-links&#34;&gt;Download links&lt;/h2&gt;
+&lt;h2 id=&#34;template-note&#34;&gt;Template note&lt;/h2&gt;
+&lt;p&gt;The template provides a clean 64-channel HOA project scaffold. Insert the ICST plugins and load the decoder preset that matches your studio setup.&lt;/p&gt;
+&lt;p&gt;The new &lt;code&gt;ICST Kompositionsstudio Session v4&lt;/code&gt; is tailored to the documented studio setup: ICST Composition Studio naming, a MultiDecoder-first structure, and notes for &lt;code&gt;LS 1-17&lt;/code&gt; plus &lt;code&gt;Sub/LFE on channel 18&lt;/code&gt;. &lt;code&gt;v3&lt;/code&gt; remains available as the more general guided version.&lt;/p&gt;
+&lt;h2 id=&#34;next-step&#34;&gt;Next step&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

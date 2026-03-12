@@ -2,6 +2,10 @@
 title: ICST AmbiEncoder – CircleSelected
 description: "Beschreibt die CircleSelected-Lua-Presets für den ICST AmbiEncoder zum Anordnen, Rotieren und Speichern von Punkten."
 date: 2025-07-19T13:28:00
+slug: circle-selected
+aliases:
+  - /post/circle_selected/
+  - /post/circleselected/
 year: 2025
 month: 2025-07
 weight: 9
@@ -126,6 +130,5 @@ difficulty: "intermediate"
 - **Version:** Juli 2025
 - **Autor:** Johannes Schütt &  Reaper-Assistent ✨
 - **Features:** Presets, Export/Import, Visualisierung, auswählbare Punkte
-
 
 

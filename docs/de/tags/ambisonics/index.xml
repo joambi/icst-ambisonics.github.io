@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Ambisonics on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/tags/ambisonics/</link>
+
+    <description>
+      Recent content
+      
+         in Ambisonics 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Mon, 09 Mar 2026 09:00:00 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/tags/ambisonics/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Ambisonics in 30 Minuten: Dein erster funktionierender Reaper-Session-Flow</title>
+      <link>https://ambisonics.ch/de/post/ambisonics-in-30-minutes/</link>
+      <guid>https://ambisonics.ch/de/post/ambisonics-in-30-minutes/</guid>
+      <pubDate>Mon, 09 Mar 2026 09:00:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Beginner | Zielgruppe: Komponist:in, Studierende, Studio-Assistenz.&lt;/p&gt;
+&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Du willst schnell mit ICST Ambisonics Plugins in Reaper starten, ohne lange Routing-Fehlersuche.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reaper installiert&lt;/li&gt;
+&lt;li&gt;ICST Ambisonics Plugins installiert&lt;/li&gt;
+&lt;li&gt;Optional: SWS + ReaPack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-für-schritt&#34;&gt;Schritt-für-Schritt&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Bformat-Master&lt;/code&gt; anlegen (64 Kanäle).&lt;/li&gt;
+&lt;li&gt;Decoder in den Monitoring-Pfad einsetzen.&lt;/li&gt;
+&lt;li&gt;Eine Quelle mit AmbiEncoder anlegen.&lt;/li&gt;
+&lt;li&gt;Quelle auf &lt;code&gt;Bformat-Master&lt;/code&gt; routen.&lt;/li&gt;
+&lt;li&gt;Binaurales Monitoring parallel aufsetzen.&lt;/li&gt;
+&lt;li&gt;Kurze Bewegungsautomation aufnehmen.&lt;/li&gt;
+&lt;li&gt;Rendern und Ausgangskanaele prüfen.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;häufige-fehler&#34;&gt;Häufige Fehler&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Quelle nicht auf &lt;code&gt;Bformat-Master&lt;/code&gt; geroutet&lt;/li&gt;
+&lt;li&gt;Nicht-64-Kanal-Track im Signalpfad&lt;/li&gt;
+&lt;li&gt;Falsches Decoder-Preset für Lautsprecher-Setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-tutorial&#34;&gt;Related tutorial&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started mit ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minuten&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hier Links zu Template und Checkliste eintragen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-step&#34;&gt;Next step&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC Syntax für den ICST AmbiEncoder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Von Stereo zu HOA7: Eine Schritt-für-Schritt-Session</title>
+      <link>https://ambisonics.ch/de/post/stereo-to-hoa7-session/</link>
+      <guid>https://ambisonics.ch/de/post/stereo-to-hoa7-session/</guid>
+      <pubDate>Sun, 08 Mar 2026 14:20:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Intermediate | Zielgruppe: Komponist:in, Producer.&lt;/p&gt;
+&lt;h2 id=&#34;warum-es-diesen-guide-gibt&#34;&gt;Warum es diesen Guide gibt&lt;/h2&gt;
+&lt;p&gt;Viele Nutzer:innen kennen Stereo-Produktion sehr gut, brauchen aber eine konkrete Brücke zu Higher-Order Ambisonics in einer realen Session.&lt;/p&gt;
+&lt;h2 id=&#34;lernziel&#34;&gt;Lernziel&lt;/h2&gt;
+&lt;p&gt;Ein Stereo-Arrangement in HOA7-Denken überführen: Objektplatzierung, Bewegung und kontrolliertes Rendering.&lt;/p&gt;
+&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Grundkenntnisse in Stereo-Mix-Workflows.&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse in Reaper-Projektaufbau.&lt;/li&gt;
+&lt;li&gt;ICST Plugins sind installiert.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-1---stereo-rollen-in-raumrollen-übersetzen&#34;&gt;Schritt 1 - Stereo-Rollen in Raumrollen übersetzen&lt;/h2&gt;
+&lt;p&gt;Ordne Stereo-Elemente räumlichen Objekten zu:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lead-Elemente -&amp;gt; stabile Front oder gezielte Bewegung.&lt;/li&gt;
+&lt;li&gt;Support-Elemente -&amp;gt; breitere Räume.&lt;/li&gt;
+&lt;li&gt;Atmosphären -&amp;gt; diffuse oder geschichtete Höhenanteile.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-2---hoa7-session-grundstruktur-bauen&#34;&gt;Schritt 2 - HOA7-Session-Grundstruktur bauen&lt;/h2&gt;
+&lt;p&gt;Lege Quelltracks an, setze AmbiEncoder-Instanzen und definiere einen sauberen HOA7-Buspfad.&lt;/p&gt;
+&lt;h2 id=&#34;schritt-3---mit-statischer-platzierung-starten&#34;&gt;Schritt 3 - Mit statischer Platzierung starten&lt;/h2&gt;
+&lt;p&gt;Setze klare Ausgangspositionen, bevor Bewegung dazu kommt.&lt;/p&gt;
+&lt;h2 id=&#34;schritt-4---kontrollierte-bewegung-ergänzen&#34;&gt;Schritt 4 - Kontrollierte Bewegung ergänzen&lt;/h2&gt;
+&lt;p&gt;Nutze kleine, gezielte Automationsbewegungen und prüfe die Lesbarkeit im Monitoring.&lt;/p&gt;
+&lt;h2 id=&#34;schritt-5---übertragung-prüfen&#34;&gt;Schritt 5 - Übertragung prüfen&lt;/h2&gt;
+&lt;p&gt;Prüfe Referenzen in Mono/Stereo und validiere die HOA7-Ausgabekette.&lt;/p&gt;
+&lt;h2 id=&#34;schritt-6---export-und-dokumentation&#34;&gt;Schritt 6 - Export und Dokumentation&lt;/h2&gt;
+&lt;p&gt;Exportiere den Ambisonics-Render und sichere Projektnotizen für reproduzierbare Sessions.&lt;/p&gt;
+&lt;h2 id=&#34;typische-stolperfallen&#34;&gt;Typische Stolperfallen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Zu früh zu viel Bewegung.&lt;/li&gt;
+&lt;li&gt;Gain-Staging auf Higher-Order-Bussen wird ignoriert.&lt;/li&gt;
+&lt;li&gt;Fehlende Dokumentation von Routing und OSC-Zuordnungen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;weiterführend&#34;&gt;Weiterführend&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started mit ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/gp-manipulation/&#34;&gt;ICST MultiEncoder - Gruppenanimation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/multi-decoder-mode/&#34;&gt;ICST AmbiDecoder - Multi-Decoder Modus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST B-Format Archiv</title>
+      <link>https://ambisonics.ch/de/blog/b-format-archive/</link>
+      <guid>https://ambisonics.ch/de/blog/b-format-archive/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Eine kuratierte Sammlung von Ambisonics-B-Format-Referenzdateien zum Testen von Dekodern, Binauralrenderern und räumlichen Audio-Pipelines. Alle Dateien verwenden die &lt;strong&gt;ambiX&lt;/strong&gt;-Konvention: ACN-Kanalreihenfolge, SN3D-Normierung.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;audiodateien&#34;&gt;Audiodateien&lt;/h2&gt;
+&lt;div class=&#34;bformat-archive&#34; id=&#34;bformat-0&#34; data-bformat-archive&gt;
+  &lt;div class=&#34;bformat-archive__controls&#34;&gt;
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Suche&lt;/span&gt;
+      &lt;input
+        type=&#34;search&#34;
+        data-bformat-search
+        placeholder=&#34;Komponist, Titel, Format...&#34;
+      &gt;
+    &lt;/label&gt;
+
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Order&lt;/span&gt;
+      &lt;select data-bformat-order-filter&gt;
+        &lt;option value=&#34;all&#34;&gt;Alle&lt;/option&gt;&lt;option value=&#34;5th order&#34;&gt;5th order&lt;/option&gt;&lt;/select&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Sortierung&lt;/span&gt;
+      &lt;select data-bformat-sort-key&gt;
+        &lt;option value=&#34;title&#34;&gt;Titel&lt;/option&gt;
+        &lt;option value=&#34;order&#34;&gt;Order&lt;/option&gt;
+        &lt;option value=&#34;channels&#34;&gt;Kanäle&lt;/option&gt;
+        &lt;option value=&#34;sample_rate&#34;&gt;SR&lt;/option&gt;
+        &lt;option value=&#34;bits&#34;&gt;Bits&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Richtung&lt;/span&gt;
+      &lt;select data-bformat-sort-direction&gt;
+        &lt;option value=&#34;asc&#34;&gt;Aufsteigend&lt;/option&gt;
+        &lt;option value=&#34;desc&#34;&gt;Absteigend&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;bformat-archive__table-wrap&#34;&gt;
+    &lt;table class=&#34;bformat-archive__table&#34;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Komponist&lt;/th&gt;
+          &lt;th&gt;Titel&lt;/th&gt;
+          &lt;th&gt;Dauer&lt;/th&gt;
+          &lt;th&gt;Format&lt;/th&gt;
+          &lt;th&gt;Order&lt;/th&gt;
+          &lt;th&gt;Normierung&lt;/th&gt;
+          &lt;th&gt;Kanäle&lt;/th&gt;
+          &lt;th&gt;SR&lt;/th&gt;
+          &lt;th&gt;Bits&lt;/th&gt;
+          &lt;th&gt;Anhören&lt;/th&gt;
+          &lt;th&gt;Download&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody data-bformat-body&gt;&lt;tr
+            data-bformat-row
+            data-search=&#34;audiobrewers ambitest_ambix_5th-order.wav wav 5th order acn/sn3d&#34;
+            data-order=&#34;5&#34;
+            data-channels=&#34;36&#34;
+            data-sample-rate=&#34;48000&#34;
+            data-bits=&#34;24&#34;
+            data-title=&#34;ambitest_ambix_5th-order.wav&#34;
+            data-order-label=&#34;5th order&#34;
+          &gt;
+            &lt;td&gt;&lt;a href=&#34;https://www.audiobrewers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;AudioBrewers&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;AmbiTest_ambix_5th-order.wav&lt;/td&gt;
+            &lt;td&gt;4′&lt;/td&gt;
+            &lt;td&gt;WAV&lt;/td&gt;
+            &lt;td&gt;5th order&lt;/td&gt;
+            &lt;td&gt;ACN/SN3D&lt;/td&gt;
+            &lt;td&gt;36&lt;/td&gt;
+            &lt;td&gt;48000&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;https://e.pcloud.link/publink/show?code=XZgkkGZzkPOKp87E2uqPOVuRrPscSJoUR37&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;
+                  Binaural ↗
+                &lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;—&lt;/td&gt;
+          &lt;/tr&gt;&lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+
+  &lt;p class=&#34;bformat-archive__empty&#34; data-bformat-empty hidden&gt;
+    Keine Einträge für den aktuellen Filter gefunden.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  (function () {
+    var root = document.getElementById(&#34;bformat-0&#34;);
+    if (!root) return;
+    var body = root.querySelector(&#34;[data-bformat-body]&#34;);
+    var rows = Array.prototype.slice.call(root.querySelectorAll(&#34;[data-bformat-row]&#34;));
+    var search = root.querySelector(&#34;[data-bformat-search]&#34;);
+    var orderFilter = root.querySelector(&#34;[data-bformat-order-filter]&#34;);
+    var sortKey = root.querySelector(&#34;[data-bformat-sort-key]&#34;);
+    var sortDirection = root.querySelector(&#34;[data-bformat-sort-direction]&#34;);
+    var empty = root.querySelector(&#34;[data-bformat-empty]&#34;);
+
+    function getValue(row, key) {
+      if (key === &#34;title&#34;) return row.getAttribute(&#34;data-title&#34;) || &#34;&#34;;
+      if (key === &#34;order&#34;) return Number(row.getAttribute(&#34;data-order&#34;) || &#34;0&#34;);
+      if (key === &#34;channels&#34;) return Number(row.getAttribute(&#34;data-channels&#34;) || &#34;0&#34;);
+      if (key === &#34;sample_rate&#34;) return Number(row.getAttribute(&#34;data-sample-rate&#34;) || &#34;0&#34;);
+      if (key === &#34;bits&#34;) return Number(row.getAttribute(&#34;data-bits&#34;) || &#34;0&#34;);
+      return row.getAttribute(&#34;data-title&#34;) || &#34;&#34;;
+    }
+
+    function filterRows() {
+      var q = (search.value || &#34;&#34;).toLowerCase().trim();
+      var order = (orderFilter.value || &#34;all&#34;).toLowerCase();
+      var visible = 0;
+      rows.forEach(function (row) {
+        var haystack = (row.getAttribute(&#34;data-search&#34;) || &#34;&#34;).toLowerCase();
+        var rowOrder = (row.getAttribute(&#34;data-order-label&#34;) || &#34;&#34;).toLowerCase();
+        var matchesQuery = !q || haystack.indexOf(q) !== -1;
+        var matchesOrder = order === &#34;all&#34; || rowOrder === order;
+        var show = matchesQuery &amp;&amp; matchesOrder;
+        row.hidden = !show;
+        if (show) visible += 1;
+      });
+      empty.hidden = visible !== 0;
+    }
+
+    function sortRows() {
+      var key = sortKey.value || &#34;title&#34;;
+      var dir = sortDirection.value === &#34;desc&#34; ? -1 : 1;
+      rows.sort(function (a, b) {
+        var av = getValue(a, key);
+        var bv = getValue(b, key);
+        if (typeof av === &#34;number&#34; &amp;&amp; typeof bv === &#34;number&#34;) return (av - bv) * dir;
+        return String(av).localeCompare(String(bv)) * dir;
+      });
+      rows.forEach(function (row) { body.appendChild(row); });
+    }
+
+    function refresh() {
+      sortRows();
+      filterRows();
+    }
+
+    [search, orderFilter, sortKey, sortDirection].forEach(function (el) {
+      el.addEventListener(&#34;input&#34;, refresh);
+      el.addEventListener(&#34;change&#34;, refresh);
+    });
+
+    refresh();
+  })();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;format-referenz&#34;&gt;Format-Referenz&lt;/h2&gt;
+&lt;p&gt;Alle Dateien in diesem Archiv folgen dem &lt;strong&gt;ambiX&lt;/strong&gt;-Standard:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kanalreihenfolge:&lt;/strong&gt; ACN (Ambisonic Channel Number) — Kanäle sortiert nach Grad und Ordnungsindex&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Normierung:&lt;/strong&gt; SN3D (Schmidt Semi-Normierung)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kodierung:&lt;/strong&gt; B-Format, kein lautsprecherdecodiertes Audio&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zur Verwendung: Datei in REAPER importieren, Spur auf die korrekte Kanalanzahl setzen und durch einen ICST AmbiDecoder für die passende Ordnung routen. Die &lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Schritt-für-Schritt-Anleitung&lt;/a&gt; führt durch den Prozess.&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

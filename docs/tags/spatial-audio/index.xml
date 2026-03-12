@@ -26,8 +26,7 @@
       <guid>https://ambisonics.ch/post/icst-grapes/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Spatial performer, controller-based workflow user.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://grapes-3d.com/&#34;&gt;Grapes 3D Control&lt;/a&gt; is a handy addition to the ICST Ambisonics plugins.
 Grapes come as a standalone and VST3 and can be operated directly in the DAW (Reaper) in sync.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-grapes/Grapes.gif&#34; alt=&#34;Grapes&#34;&gt;&lt;/p&gt;
@@ -35,7 +34,6 @@ Grapes come as a standalone and VST3 and can be operated directly in the DAW (Re
 &lt;p&gt;A major advantage of this method is that the 3D spatial sound control does not have to be recorded in the DAW. Instead, it is sent to the ICST AmbiEncoders via OSC from Grapes. This means that the spatial design remains flexible and can also be interpreted with other spatialization tools such as LISA, Dolby Atmos or binaural audio playback.&lt;/p&gt;
 &lt;p&gt;For more information, see: &lt;a href=&#34;https://grapes-3d.com/&#34;&gt;https://grapes-3d.com/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -45,11 +43,10 @@ Grapes come as a standalone and VST3 and can be operated directly in the DAW (Re
       <guid>https://ambisonics.ch/post/multi-decoder-mode/</guid>
       <pubDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;multi-decoder-mode&#34;&gt;Multi-Decoder Mode&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;multi-decoder-mode&#34;&gt;Multi-Decoder Mode&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Technician, Studio engineer.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;Multi-Decoder Mode&lt;/strong&gt;, introduced in &lt;strong&gt;ICST AmbiDecoder v3.2&lt;/strong&gt;, allows you to run up to &lt;strong&gt;four fully independent decoders&lt;/strong&gt; within a single plugin instance. This is ideal for complex loudspeaker setups that combine different speaker arrays — for example, a main Ambisonics ring together with height speakers, a subwoofer group, or a separate near-field array.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;Multidecoder.png&#34; alt=&#34;Multi-Decoder overview&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/multi-decoder-mode/Multidecoder.png&#34; alt=&#34;Multi-Decoder overview&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;when-to-use-multi-decoder-mode&#34;&gt;When to use Multi-Decoder Mode&lt;/h2&gt;
 &lt;p&gt;Use Multi-Decoder Mode when your setup includes:&lt;/p&gt;
@@ -67,9 +64,13 @@ Grapes come as a standalone and VST3 and can be operated directly in the DAW (Re
 &lt;li&gt;In the &lt;strong&gt;Decoder Settings&lt;/strong&gt; panel, locate the &lt;strong&gt;Multi-Decoder&lt;/strong&gt; toggle.&lt;/li&gt;
 &lt;li&gt;Enable Multi-Decoder Mode — four decoder slots (A, B, C, D) will appear.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;&lt;p&gt;[!Tip:]
-Each decoder slot is fully independent and can be configured separately without affecting the others.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;hr&gt;
+&lt;div class=&#34;callout callout--tip&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;🔥&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Tip&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;p&gt;Each decoder slot is fully independent and can be configured separately without affecting the others.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;configuring-each-decoder&#34;&gt;Configuring Each Decoder&lt;/h2&gt;
 &lt;p&gt;For each of the four decoders, you can set:&lt;/p&gt;
 &lt;h3 id=&#34;1-name-and-color&#34;&gt;1. Name and Color&lt;/h3&gt;
@@ -115,9 +116,13 @@ Each decoder slot is fully independent and can be configured separately without 
 &lt;li&gt;Decoder D → continues after C&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Make sure your REAPER track has enough output channels configured to cover all speakers across all four decoders.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;[!Attention:]
-Check your track channel count and routing carefully. Missing channels will result in silent speakers without any error message.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;hr&gt;
+&lt;div class=&#34;callout callout--warning&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;⚠️&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Warning&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;p&gt;Check your track channel count and routing carefully. Missing channels will result in silent speakers without any error message.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;speaker-testing&#34;&gt;Speaker Testing&lt;/h2&gt;
 &lt;p&gt;To verify each decoder:&lt;/p&gt;
 &lt;ol&gt;
@@ -161,8 +166,6 @@ Check your track channel count and routing carefully. Missing channels will resu
 &lt;li&gt;📥 &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;Download v3.2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📺 &lt;a href=&#34;https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&amp;#43;plugins&#34;&gt;ICST Ambisonics Videos on YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>

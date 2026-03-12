@@ -10,7 +10,7 @@
 
   @include conf.desktop {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     box-shadow: none;
     max-height: none;
@@ -30,14 +30,16 @@
     @include conf.desktop {
       display: flex;
       padding: $py-desktop 30px;
+      width: auto;
+      flex-shrink: 0;
 
       @include color.themed() {
         background-color: color.t('accent');
       }
 
       &--end {
-        flex-shrink: 1;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        margin-left: clamp(0.6rem, 1.2vw, 1.4rem);
       }
     }
 

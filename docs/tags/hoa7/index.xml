@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Hoa7 on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/tags/hoa7/</link>
+
+    <description>
+      Recent content
+      
+         in Hoa7 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Sun, 08 Mar 2026 14:20:00 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/tags/hoa7/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>From Stereo to HOA7: A Step-by-Step Session</title>
+      <link>https://ambisonics.ch/post/stereo-to-hoa7-session/</link>
+      <guid>https://ambisonics.ch/post/stereo-to-hoa7-session/</guid>
+      <pubDate>Sun, 08 Mar 2026 14:20:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Producer.&lt;/p&gt;
+&lt;h2 id=&#34;why-this-guide-exists&#34;&gt;Why this guide exists&lt;/h2&gt;
+&lt;p&gt;Many users know stereo production well but need a concrete bridge to higher-order Ambisonics in a real session.&lt;/p&gt;
+&lt;h2 id=&#34;learning-goal&#34;&gt;Learning goal&lt;/h2&gt;
+&lt;p&gt;Translate a stereo-style arrangement into HOA7 workflow thinking: object placement, motion, and controlled rendering.&lt;/p&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic stereo mixing workflow.&lt;/li&gt;
+&lt;li&gt;Basic Reaper project setup skills.&lt;/li&gt;
+&lt;li&gt;ICST plugin installation complete.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;step-1---map-stereo-roles-to-spatial-roles&#34;&gt;Step 1 - Map stereo roles to spatial roles&lt;/h2&gt;
+&lt;p&gt;Assign your stereo elements to spatial objects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lead elements -&amp;gt; stable front or animated object.&lt;/li&gt;
+&lt;li&gt;Support elements -&amp;gt; wider spatial beds.&lt;/li&gt;
+&lt;li&gt;Atmospheres -&amp;gt; diffuse or layered height support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;step-2---build-the-hoa7-session-scaffold&#34;&gt;Step 2 - Build the HOA7 session scaffold&lt;/h2&gt;
+&lt;p&gt;Create source tracks, assign AmbiEncoder instances, and define a clean HOA7 bus path.&lt;/p&gt;
+&lt;h2 id=&#34;step-3---start-with-static-placement&#34;&gt;Step 3 - Start with static placement&lt;/h2&gt;
+&lt;p&gt;Set clear initial positions before adding motion.&lt;/p&gt;
+&lt;h2 id=&#34;step-4---add-controlled-movement&#34;&gt;Step 4 - Add controlled movement&lt;/h2&gt;
+&lt;p&gt;Use small, intentional automation moves and test readability in monitoring.&lt;/p&gt;
+&lt;h2 id=&#34;step-5---validate-translation&#34;&gt;Step 5 - Validate translation&lt;/h2&gt;
+&lt;p&gt;Check mono/stereo compatibility references and verify the HOA7 output chain.&lt;/p&gt;
+&lt;h2 id=&#34;step-6---export-and-archive&#34;&gt;Step 6 - Export and archive&lt;/h2&gt;
+&lt;p&gt;Export your Ambisonics render and save project notes for reproducibility.&lt;/p&gt;
+&lt;h2 id=&#34;common-pitfalls&#34;&gt;Common pitfalls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Over-animating too early.&lt;/li&gt;
+&lt;li&gt;Ignoring gain staging on higher-order buses.&lt;/li&gt;
+&lt;li&gt;Missing documentation of routing and OSC assignments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;continue-with&#34;&gt;Continue with&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started with ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/gp-manipulation/&#34;&gt;ICST MultiEncoder - Group Animation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/multi-decoder-mode/&#34;&gt;ICST AmbiDecoder - Multi-Decoder Mode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

@@ -2,6 +2,9 @@
 title: ICST Kompositionsstudio Ambisonics Setting
 description: "Speaker coordinates and Ambisonics decoder configuration"
 date: 2025-06-02T15:12:00
+slug: icst-kompositionsstudio-ambisonics-setting
+aliases:
+  - /blog/icst-kompositionsstudio-ambisonics-setting/
 weight: 6
 group: "Studio"
 ---

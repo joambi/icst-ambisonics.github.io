@@ -26,9 +26,7 @@
       <guid>https://ambisonics.ch/post/gyrosc/</guid>
       <pubDate>Wed, 28 May 2025 14:57:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;ICST MultiEncoder and iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;ICST MultiEncoder and iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GyrOSC&lt;/strong&gt; is a lightweight utility that sends motion sensor data (from your iPhone, iPod Touch, or iPad) over a local wireless network to any OSC-compatible host application. It allows you to control live audio or video applications using your device&amp;rsquo;s built-in gyroscope, accelerometer, compass, and altimeter.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/gyrOSC.png&#34; alt=&#34;GyrOSC&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The following GIF demonstrates how the ICST AmbiEncoder receives OSC data from the GyrOSC app.&lt;/p&gt;
@@ -79,14 +77,13 @@
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;inspirations&#34;&gt;Inspirations:&lt;/h1&gt;
+&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Mobile-controller user, Performer.&lt;/p&gt;
 &lt;h3 id=&#34;osc-swarm&#34;&gt;OSC-Swarm&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;OSC-Message:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;/gyrosc/1/grav&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;JS-Code:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;s.setXYZ(1, s.arg(2), -s.arg(1), 0); for(i = 2; i &amp;lt;= 8; i++) s.setXYZ(i, s.arg(2)+Math.random()*0.2, -s.arg(1) + Math.random()* 0.2, 0)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyrOSC-SWARM.gif&#34; alt=&#34;OSC-Swarm&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>

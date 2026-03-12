@@ -4,9 +4,9 @@ title: Quick Start
 date: 2025-01-28T14:31:00
 ---
 
-## Quick Start with **ICST_AmbiPlugins_MultiEncoder.RPP**
+Reference quick-start for a working ICST Ambisonics session in REAPER using the MultiEncoder project template.
 
-Get started quickly using the **MultiEncoder template** with this simple workflow:
+## Quick Start with `ICST_AmbiPlugins_MultiEncoder.RPP`
 
 1. Open **Reaper**.
 2. Load **ICST_AmbiPlugins_MultiEncoder.RPP** from the Reaper menu.
@@ -22,7 +22,7 @@ Get started quickly using the **MultiEncoder template** with this simple workflo
 >
 > If all three are true, the template is initialized correctly.
 
-### Next Step
+## Next step
 
 You can now either:
 - start placing/moving sources in the **MultiEncoder**, or

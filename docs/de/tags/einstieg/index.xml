@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Einstieg on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/tags/einstieg/</link>
+
+    <description>
+      Recent content
+      
+         in Einstieg 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Mon, 09 Mar 2026 09:00:00 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/tags/einstieg/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Getting Started mit ICST Ambisonics Plugins in Reaper</title>
+      <link>https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/</link>
+      <guid>https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/</guid>
+      <pubDate>Sun, 08 Mar 2026 14:10:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Beginner | Zielgruppe: Komponist:in, Studierende, Studio-Assistenz.&lt;/p&gt;
+&lt;p&gt;Diese Seite ist die kompakte Onboarding-Version des vollständigen Docs-Workflows:
+&lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Step by Step Setup&lt;/a&gt;.
+Nutze diesen Guide für den schnellen Einstieg und die Docs-Seite als technische Referenz.&lt;/p&gt;
+&lt;h2 id=&#34;für-wen-ist-das-gedacht&#34;&gt;Für wen ist das gedacht&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Komponist:innen, die eine stabile erste Ambisonics-Session brauchen.&lt;/li&gt;
+&lt;li&gt;Studierende, die einen klaren Praxiseinstieg suchen.&lt;/li&gt;
+&lt;li&gt;Techniker:innen, die ein reproduzierbares Setup als Grundlage wollen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;was-du-am-ende-hast&#34;&gt;Was du am Ende hast&lt;/h2&gt;
+&lt;p&gt;Am Ende hast du ein funktionierendes Reaper-Projekt mit Quellrouting, AmbiEncoder-Steuerung und einem grundlegenden Monitoring-Check.&lt;/p&gt;
+&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reaper ist installiert und laeuft.&lt;/li&gt;
+&lt;li&gt;ICST Ambisonics Plugins sind installiert.&lt;/li&gt;
+&lt;li&gt;Empfohlene Reaper-Erweiterungen sind installiert (SWS und ReaPack).&lt;/li&gt;
+&lt;li&gt;Grundkenntnisse zu Tracks, Bussen und Plugin-Insert-Slots.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;session-baseline-aus-dem-docs-setup&#34;&gt;Session-Baseline (aus dem Docs-Setup)&lt;/h2&gt;
+&lt;p&gt;Setze bei allen Ambisonics-relevanten Tracks standardmaessig 64 Kanäle und prüfe das Routing nach jedem Schritt.&lt;/p&gt;
+&lt;h2 id=&#34;workflow-phasen-onboarding-sicht&#34;&gt;Workflow-Phasen (Onboarding-Sicht)&lt;/h2&gt;
+&lt;p&gt;Nutze diese Seite, um die Struktur zu verstehen, bevor du ins Klick-für-Klick-Setup gehst:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Monitoring-Backbone: &lt;code&gt;Decoder&lt;/code&gt; + &lt;code&gt;Bformat-Master&lt;/code&gt; + Lautsprecher-Preset.&lt;/li&gt;
+&lt;li&gt;Paralleles Hören: binauralen Pfad für Kopfhoerer-Validierung aufsetzen.&lt;/li&gt;
+&lt;li&gt;Quellen-Ebene: mit einer MonoEncoder-Quelle starten und Routing verifizieren.&lt;/li&gt;
+&lt;li&gt;Bewegungs-Ebene: erste Bewegung aufnehmen und Automation prüfen.&lt;/li&gt;
+&lt;li&gt;Output-Ebene: aus &lt;code&gt;Bformat-Master&lt;/code&gt; als Multichannel rendern.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;hands-on-checkliste-ausführung&#34;&gt;Hands-on-Checkliste (Ausführung)&lt;/h2&gt;
+&lt;p&gt;Für die exakte Schrittfolge nutze:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minuten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Step by Step Setup (Docs)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;typische-startfehler-und-wo-du-suchst&#34;&gt;Typische Startfehler (und wo du suchst)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Falsche Bus-Zuordnung (Kette &lt;code&gt;Source -&amp;gt; Bformat-Master -&amp;gt; Decoder&lt;/code&gt; unterbrochen).&lt;/li&gt;
+&lt;li&gt;Binaural-Track von falscher Quelle gespeist.&lt;/li&gt;
+&lt;li&gt;Nicht-64-Kanal-Track im Signalpfad.&lt;/li&gt;
+&lt;li&gt;OSC-Port-Mismatch bei externer Steuerung.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;nächste-schritte&#34;&gt;Nächste Schritte&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC Syntax für den ICST AmbiEncoder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minuten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/stereo-to-hoa7-session/&#34;&gt;Von Stereo zu HOA7: Schritt-für-Schritt-Session&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Ambisonics in 30 Minuten: Dein erster funktionierender Reaper-Session-Flow</title>
+      <link>https://ambisonics.ch/de/post/ambisonics-in-30-minutes/</link>
+      <guid>https://ambisonics.ch/de/post/ambisonics-in-30-minutes/</guid>
+      <pubDate>Mon, 09 Mar 2026 09:00:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Beginner | Zielgruppe: Komponist:in, Studierende, Studio-Assistenz.&lt;/p&gt;
+&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Du willst schnell mit ICST Ambisonics Plugins in Reaper starten, ohne lange Routing-Fehlersuche.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reaper installiert&lt;/li&gt;
+&lt;li&gt;ICST Ambisonics Plugins installiert&lt;/li&gt;
+&lt;li&gt;Optional: SWS + ReaPack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;schritt-für-schritt&#34;&gt;Schritt-für-Schritt&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Bformat-Master&lt;/code&gt; anlegen (64 Kanäle).&lt;/li&gt;
+&lt;li&gt;Decoder in den Monitoring-Pfad einsetzen.&lt;/li&gt;
+&lt;li&gt;Eine Quelle mit AmbiEncoder anlegen.&lt;/li&gt;
+&lt;li&gt;Quelle auf &lt;code&gt;Bformat-Master&lt;/code&gt; routen.&lt;/li&gt;
+&lt;li&gt;Binaurales Monitoring parallel aufsetzen.&lt;/li&gt;
+&lt;li&gt;Kurze Bewegungsautomation aufnehmen.&lt;/li&gt;
+&lt;li&gt;Rendern und Ausgangskanaele prüfen.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;häufige-fehler&#34;&gt;Häufige Fehler&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Quelle nicht auf &lt;code&gt;Bformat-Master&lt;/code&gt; geroutet&lt;/li&gt;
+&lt;li&gt;Nicht-64-Kanal-Track im Signalpfad&lt;/li&gt;
+&lt;li&gt;Falsches Decoder-Preset für Lautsprecher-Setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-tutorial&#34;&gt;Related tutorial&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started mit ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minuten&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hier Links zu Template und Checkliste eintragen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-step&#34;&gt;Next step&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC Syntax für den ICST AmbiEncoder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

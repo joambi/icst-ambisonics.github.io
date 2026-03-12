@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="230" viewBox="0 0 860 230">
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#6b7280"/>
+  </marker>
+</defs>
+<rect width="860" height="230" fill="#f9fafb" rx="12"/>
+<text x="430" y="26" font-size="13" fill="#374151" font-weight="600" text-anchor="middle" font-family="system-ui,sans-serif">ICST Ambisonics — Signal Flow</text>
+<line x1="193" y1="136" x2="227" y2="136" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/><text x="211.0" y="126.0" font-size="9.5" fill="#6b7280" text-anchor="middle" font-family="system-ui,sans-serif">plugin insert</text>
+<line x1="339" y1="136" x2="373" y2="136" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/><text x="357.0" y="126.0" font-size="9.5" fill="#6b7280" text-anchor="middle" font-family="system-ui,sans-serif">B-Format (ambiX)</text>
+<line x1="485" y1="136" x2="519" y2="136" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/><text x="503.0" y="126.0" font-size="9.5" fill="#6b7280" text-anchor="middle" font-family="system-ui,sans-serif">bus receive</text>
+<line x1="631" y1="136" x2="665" y2="136" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/><text x="649.0" y="126.0" font-size="9.5" fill="#6b7280" text-anchor="middle" font-family="system-ui,sans-serif">renders to</text>
+<rect x="83" y="100" width="110" height="72" rx="10" fill="#5b8dd9" stroke="#2e5f9a" stroke-width="1.5"/>
+<text x="138" y="120" font-size="10.5" fill="rgba(255,255,255,0.85)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">♩ Audio</text>
+<text x="138" y="137" font-size="13" fill="#fff" font-weight="700" text-anchor="middle" font-family="system-ui,sans-serif">Source</text>
+<text x="138" y="154" font-size="10" fill="rgba(255,255,255,0.75)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">mono/stereo</text>
+<rect x="229" y="100" width="110" height="72" rx="10" fill="#4a9eff" stroke="#2d7acc" stroke-width="1.5"/>
+<text x="284" y="120" font-size="10.5" fill="rgba(255,255,255,0.85)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">◎ ICST</text>
+<text x="284" y="137" font-size="13" fill="#fff" font-weight="700" text-anchor="middle" font-family="system-ui,sans-serif">AmbiEncoder</text>
+<text x="284" y="154" font-size="10" fill="rgba(255,255,255,0.75)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">az · el · dist</text>
+<rect x="375" y="100" width="110" height="72" rx="10" fill="#6c757d" stroke="#495057" stroke-width="1.5"/>
+<text x="430" y="120" font-size="10.5" fill="rgba(255,255,255,0.85)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">⇌ B-Format</text>
+<text x="430" y="137" font-size="13" fill="#fff" font-weight="700" text-anchor="middle" font-family="system-ui,sans-serif">Bus</text>
+<text x="430" y="154" font-size="10" fill="rgba(255,255,255,0.75)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">16–64 channels</text>
+<rect x="521" y="100" width="110" height="72" rx="10" fill="#4a9eff" stroke="#2d7acc" stroke-width="1.5"/>
+<text x="576" y="120" font-size="10.5" fill="rgba(255,255,255,0.85)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">◉ ICST</text>
+<text x="576" y="137" font-size="13" fill="#fff" font-weight="700" text-anchor="middle" font-family="system-ui,sans-serif">AmbiDecoder</text>
+<text x="576" y="154" font-size="10" fill="rgba(255,255,255,0.75)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">speaker layout</text>
+<rect x="667" y="100" width="110" height="72" rx="10" fill="#2e8b57" stroke="#1a5c38" stroke-width="1.5"/>
+<text x="722" y="120" font-size="10.5" fill="rgba(255,255,255,0.85)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">▷ Output</text>
+<text x="722" y="137" font-size="13" fill="#fff" font-weight="700" text-anchor="middle" font-family="system-ui,sans-serif">Speakers</text>
+<text x="722" y="154" font-size="10" fill="rgba(255,255,255,0.75)" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">or binaural</text>
+<text x="430" y="214" font-size="10" fill="#9ca3af" font-weight="normal" text-anchor="middle" font-family="system-ui,sans-serif">Multiple sources each have their own AmbiEncoder → all feed into the shared B-Format Bus → decoded once</text>
+</svg>

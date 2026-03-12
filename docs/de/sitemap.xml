@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ambisonics.ch/de/blog/download-pack-1-hoa-reaper-template/</loc>
+    <lastmod>2026-03-12T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/blog/download-pack-1-hoa-reaper-template/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/blog/download-pack-1-hoa-reaper-template/"
+                />
+  </url><url>
     <loc>https://ambisonics.ch/de/blog/icst-composer-studio-blog/</loc>
     <lastmod>2025-05-27T17:16:00+00:00</lastmod>
     <xhtml:link
@@ -13,19 +26,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://ambisonics.ch/de/blog/icst-composer-studio-blog/"
-                />
-  </url><url>
-    <loc>https://ambisonics.ch/de/residenzen/icst-studio-residences/</loc>
-    <lastmod>2099-01-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/residenzen/icst-studio-residences/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/residenzen/icst-studio-residences/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/blog/icst-composer-studio-overview/</loc>
@@ -275,17 +275,17 @@
                 href="https://ambisonics.ch/de/blog/ascolta/06-ascolta/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/post/ableton_reaper/</loc>
+    <loc>https://ambisonics.ch/de/post/ableton-reaper/</loc>
     <lastmod>2025-03-16T09:44:58+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ambisonics.ch/post/ableton_reaper/"
+                href="https://ambisonics.ch/post/ableton-reaper/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://ambisonics.ch/de/post/ableton_reaper/"
+                href="https://ambisonics.ch/de/post/ableton-reaper/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/blog/ascolta/07-ascolta/</loc>
@@ -353,17 +353,17 @@
                 href="https://ambisonics.ch/de/blog/ascolta/08-ascolta/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/post/circle_selected/</loc>
+    <loc>https://ambisonics.ch/de/post/circle-selected/</loc>
     <lastmod>2025-07-19T13:28:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ambisonics.ch/post/circle_selected/"
+                href="https://ambisonics.ch/post/circle-selected/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://ambisonics.ch/de/post/circle_selected/"
+                href="https://ambisonics.ch/de/post/circle-selected/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/blog/ascolta/09-ascolta/</loc>
@@ -392,30 +392,17 @@
                 href="https://ambisonics.ch/de/icst-ambisonics-plugins/01_overview/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/post/blauertsche_b%C3%A4nder/</loc>
+    <loc>https://ambisonics.ch/de/post/blauerts-bands/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ambisonics.ch/post/blauertsche_b%C3%A4nder/"
+                href="https://ambisonics.ch/post/blauerts-bands/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://ambisonics.ch/de/post/blauertsche_b%C3%A4nder/"
-                />
-  </url><url>
-    <loc>https://ambisonics.ch/de/home/</loc>
-    <lastmod>2025-02-02T04:14:54-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/home/"
+                href="https://ambisonics.ch/de/post/blauerts-bands/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/blog/ascolta/10-ascolta/</loc>
@@ -561,6 +548,19 @@
                 href="https://ambisonics.ch/de/blog/ascolta/15-ascolta/"
                 />
   </url><url>
+    <loc>https://ambisonics.ch/de/blog/faq/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/blog/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/blog/faq/"
+                />
+  </url><url>
     <loc>https://ambisonics.ch/de/blog/ascolta/16-ascolta/</loc>
     <lastmod>2025-10-16T18:00:00+00:00</lastmod>
     <xhtml:link
@@ -574,6 +574,19 @@
                 href="https://ambisonics.ch/de/blog/ascolta/16-ascolta/"
                 />
   </url><url>
+    <loc>https://ambisonics.ch/de/post/relaunch-2026/</loc>
+    <lastmod>2026-03-08T11:30:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/post/relaunch-2026/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/post/relaunch-2026/"
+                />
+  </url><url>
     <loc>https://ambisonics.ch/de/icst-ambisonics-plugins/00_new/</loc>
     <lastmod>2025-11-03T16:13:00+00:00</lastmod>
     <xhtml:link
@@ -585,6 +598,71 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://ambisonics.ch/de/icst-ambisonics-plugins/00_new/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/post/reaper-setup-20-minuten/</loc>
+    <lastmod>2026-03-08T11:40:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/post/reaper-setup-20-minuten/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/post/reaper-setup-20-minuten/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/post/osc-10-key-messages/</loc>
+    <lastmod>2026-03-08T11:50:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/post/osc-10-key-messages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/post/osc-10-key-messages/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/</loc>
+    <lastmod>2026-03-08T14:10:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/post/getting-started-icst-plugins-reaper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/post/ambisonics-in-30-minutes/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/post/ambisonics-in-30-minutes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/post/ambisonics-in-30-minutes/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/post/stereo-to-hoa7-session/</loc>
+    <lastmod>2026-03-08T14:20:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/post/stereo-to-hoa7-session/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/post/stereo-to-hoa7-session/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/icst-ambisonics-plugins/08_downloads/</loc>
@@ -756,8 +834,37 @@
                 href="https://ambisonics.ch/de/icst-ambisonics-plugins/15_best_practices/"
                 />
   </url><url>
+    <loc>https://ambisonics.ch/de/tags/checkliste/</loc>
+    <lastmod>2026-03-12T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/download/</loc>
+    <lastmod>2026-03-12T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/download/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/download/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/hoa/</loc>
+    <lastmod>2026-03-12T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/hoa/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/hoa/"
+                />
+  </url><url>
     <loc>https://ambisonics.ch/de/</loc>
-    <lastmod>2099-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-12T09:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -769,30 +876,228 @@
                 href="https://ambisonics.ch/de/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/blog/ascolta/17-ascolta/</loc>
-    <lastmod>2099-12-31T00:00:00+00:00</lastmod>
+    <loc>https://ambisonics.ch/de/tags/reaper/</loc>
+    <lastmod>2026-03-12T09:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ambisonics.ch/blog/ascolta/17-ascolta/"
+                href="https://ambisonics.ch/tags/reaper/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://ambisonics.ch/de/blog/ascolta/17-ascolta/"
+                href="https://ambisonics.ch/de/tags/reaper/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/residenzen/</loc>
-    <lastmod>2099-01-01T00:00:00+00:00</lastmod>
+    <loc>https://ambisonics.ch/de/tags/</loc>
+    <lastmod>2026-03-12T09:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ambisonics.ch/residenzen/"
+                href="https://ambisonics.ch/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://ambisonics.ch/de/residenzen/"
+                href="https://ambisonics.ch/de/tags/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/template/</loc>
+    <lastmod>2026-03-12T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/template/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/template/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/year/2026/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/year/2026/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/year/2026/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/month/2026-03/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/month/2026-03/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/month/2026-03/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/ambisonics/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/ambisonics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/ambisonics/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/post/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/post/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/einstieg/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://ambisonics.ch/de/month/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/month/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/month/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/tutorial/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/tutorial/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/workflow/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/workflow/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/workflow/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/year/</loc>
+    <lastmod>2026-03-09T09:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/year/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/year/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/hoa7/</loc>
+    <lastmod>2026-03-08T14:20:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/hoa7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/hoa7/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/ambiencoder/</loc>
+    <lastmod>2026-03-08T14:10:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/ambiencoder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/ambiencoder/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/osc/</loc>
+    <lastmod>2026-03-08T11:50:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/osc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/osc/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/reference/</loc>
+    <lastmod>2026-03-08T11:50:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/reference/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/reference/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/studio/</loc>
+    <lastmod>2026-03-08T11:30:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/studio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/studio/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/update/</loc>
+    <lastmod>2026-03-08T11:30:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/update/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/update/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/residenzen/icst-studio-residences-2026/</loc>
@@ -807,6 +1112,87 @@
                 hreflang="de"
                 href="https://ambisonics.ch/de/residenzen/icst-studio-residences-2026/"
                 />
+  </url><url>
+    <loc>https://ambisonics.ch/de/residenzen/</loc>
+    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/residenzen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/residenzen/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/b-format/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/tags/b-format/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/tags/b-format/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/start/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/start/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/start/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/blog/b-format-archive/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/blog/b-format-archive/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/blog/b-format-archive/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/for-residents/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/for-residents/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/for-residents/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/composing-in-ambisonics/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/composing-in-ambisonics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/composing-in-ambisonics/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/tags/testdateien/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ambisonics.ch/de/year/2025/</loc>
     <lastmod>2025-11-10T10:00:00+00:00</lastmod>
@@ -832,19 +1218,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://ambisonics.ch/de/month/2025-11/"
-                />
-  </url><url>
-    <loc>https://ambisonics.ch/de/post/</loc>
-    <lastmod>2025-11-10T10:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/post/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/tags/decoder/</loc>
@@ -873,19 +1246,6 @@
                 href="https://ambisonics.ch/de/tags/loudspeaker/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/month/</loc>
-    <lastmod>2025-11-10T10:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/month/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/month/"
-                />
-  </url><url>
     <loc>https://ambisonics.ch/de/tags/multi-decoder/</loc>
     <lastmod>2025-11-10T10:00:00+00:00</lastmod>
     <xhtml:link
@@ -912,19 +1272,6 @@
                 href="https://ambisonics.ch/de/tags/spatial-audio/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/tags/</loc>
-    <lastmod>2025-11-10T10:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/tags/"
-                />
-  </url><url>
     <loc>https://ambisonics.ch/de/tags/v3.2/</loc>
     <lastmod>2025-11-10T10:00:00+00:00</lastmod>
     <xhtml:link
@@ -936,19 +1283,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://ambisonics.ch/de/tags/v3.2/"
-                />
-  </url><url>
-    <loc>https://ambisonics.ch/de/year/</loc>
-    <lastmod>2025-11-10T10:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/year/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/year/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/residenzen/icst-studio-residences-2025/</loc>
@@ -975,19 +1309,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://ambisonics.ch/de/month/2025-07/"
-                />
-  </url><url>
-    <loc>https://ambisonics.ch/de/tags/ambiencoder/</loc>
-    <lastmod>2025-07-19T13:28:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/tags/ambiencoder/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/tags/ambiencoder/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/tags/automation/</loc>
@@ -1029,19 +1350,6 @@
                 href="https://ambisonics.ch/de/tags/presets/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/tags/reaper/</loc>
-    <lastmod>2025-07-19T13:28:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/tags/reaper/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/tags/reaper/"
-                />
-  </url><url>
     <loc>https://ambisonics.ch/de/blog/</loc>
     <lastmod>2025-06-28T16:13:00+00:00</lastmod>
     <xhtml:link
@@ -1066,6 +1374,19 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://ambisonics.ch/de/blog/downloads/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/icst-ambisonics-tools/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/icst-ambisonics-tools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/icst-ambisonics-tools/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/month/2025-05/</loc>
@@ -1107,19 +1428,6 @@
                 href="https://ambisonics.ch/de/tags/mobile/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/tags/osc/</loc>
-    <lastmod>2025-05-28T14:57:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/tags/osc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/tags/osc/"
-                />
-  </url><url>
     <loc>https://ambisonics.ch/de/tags/animation/</loc>
     <lastmod>2025-05-28T13:00:00+00:00</lastmod>
     <xhtml:link
@@ -1157,19 +1465,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://ambisonics.ch/de/tags/multiencoder/"
-                />
-  </url><url>
-    <loc>https://ambisonics.ch/de/tags/workflow/</loc>
-    <lastmod>2025-05-28T13:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/tags/workflow/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/tags/workflow/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/tags/fx/</loc>
@@ -1341,19 +1636,6 @@
                 href="https://ambisonics.ch/de/tags/grapes/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/tags/reference/</loc>
-    <lastmod>2025-03-16T09:44:58+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/tags/reference/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/tags/reference/"
-                />
-  </url><url>
     <loc>https://ambisonics.ch/de/tags/syntax/</loc>
     <lastmod>2025-03-16T09:44:58+01:00</lastmod>
     <xhtml:link
@@ -1365,19 +1647,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://ambisonics.ch/de/tags/syntax/"
-                />
-  </url><url>
-    <loc>https://ambisonics.ch/de/tags/tutorial/</loc>
-    <lastmod>2025-03-16T09:44:58+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/tags/tutorial/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/tags/tutorial/"
                 />
   </url><url>
     <loc>https://ambisonics.ch/de/about/</loc>
@@ -1406,18 +1675,6 @@
                 href="https://ambisonics.ch/de/icst-ambisonics-plugins/"
                 />
   </url><url>
-    <loc>https://ambisonics.ch/de/icst-ambisonics-tools/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ambisonics.ch/icst-ambisonics-tools/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://ambisonics.ch/de/icst-ambisonics-tools/"
-                />
-  </url><url>
     <loc>https://ambisonics.ch/de/ambisonics-101/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1440,6 +1697,18 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://ambisonics.ch/de/series/"
+                />
+  </url><url>
+    <loc>https://ambisonics.ch/de/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ambisonics.ch/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://ambisonics.ch/de/search/"
                 />
   </url>
 </urlset>

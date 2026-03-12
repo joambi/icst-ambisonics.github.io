@@ -3,7 +3,8 @@ languageCode = 'en-us'
 title = 'The ICST Ambisonics Site'
 theme = 'anatole'
 enableEmoji = true
-buildFuture = true
+buildFuture = false
+cleanDestinationDir = true
 defaultContentLanguage = 'en'
 
 [languages]
@@ -56,28 +57,34 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 [menu]
 
   [[menu.main]]
+  name = "Start"
+  identifier = "start"
+  weight = 50
+  url = "/start/"
+
+  [[menu.main]]
   name = "Tutorials"
   identifier = "tutorials"
   weight = 100
   url = "/post/"
 
     [[menu.main]]
-    name = "Start here"
-    parent = "tutorials"
-    weight = 100
-    url = "/start/"
-
-    [[menu.main]]
     name = "All Tutorials"
     parent = "tutorials"
-    weight = 101
+    weight = 100
     url = "/post/"
 
     [[menu.main]]
     name = "Ambisonics 101"
     parent = "tutorials"
-    weight = 102
+    weight = 101
     url = "/ambisonics-101/"
+
+    [[menu.main]]
+    name = "For Composers"
+    parent = "tutorials"
+    weight = 102
+    url = "/composing-in-ambisonics/"
 
     [[menu.main]]
     name = "Videos"
@@ -98,7 +105,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     url = "/for-residents/"
 
     [[menu.main]]
-    name = "Composer Studio"
+    name = "Studio Hub"
     parent = "studio"
     weight = 201
     url = "/blog/icst-composer-studio-blog/"
@@ -124,20 +131,14 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     [[menu.main]]
     name = "Listening"
     parent = "ascolta"
-    weight = 304
+    weight = 302
     url = "/blog/sounding_future/"
-
-    [[menu.main]]
-    name = "Composing in Ambisonics"
-    parent = "ascolta"
-    weight = 303
-    url = "/composing-in-ambisonics/"
 
   [[menu.main]]
   name = "Docs"
   identifier = "tools-osc"
   weight = 400
-  url = "#"
+  url = "/ICST Ambisonics Plugins/"
 
     [[menu.main]]
     name = "Plugin Docs"
@@ -158,12 +159,6 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     url = "/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
 
     [[menu.main]]
-    name = "Downloads"
-    parent = "tools-osc"
-    weight = 406
-    url = "/blog/downloads/"
-
-    [[menu.main]]
     name = "B-Format Archive"
     parent = "tools-osc"
     weight = 405
@@ -181,16 +176,22 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     weight = 407
     url = "/blog/faq/"
 
+    [[menu.main]]
+    name = "Links"
+    parent = "tools-osc"
+    weight = 408
+    url = "/links/"
+
   [[menu.main]]
-  name = "Links"
-  identifier = "links"
-  weight = 500
-  url = "/links/"
+  name = "Downloads"
+  identifier = "downloads"
+  weight = 450
+  url = "/blog/downloads/"
 
   [[menu.main]]
   name = "About"
   identifier = "about"
-  weight = 600
+  weight = 500
   url = "/about/"
 
   [[menu.footer]]
@@ -210,6 +211,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   weight = 3
   identifier = "Terms and Conditions"
   url = "/terms-and-conditions/"
+
 
 
 [taxonomies]

@@ -4,7 +4,9 @@ date: 2025-01-27T14:32:00
 title: Track Templates
 ---
 
-## 02 Open Track Templates
+Reference steps for inserting the ICST track templates in REAPER and checking the expected routing afterwards.
+
+## Open track templates
 
 1. Right-click in the empty track area in **Reaper**.
 2. Select **"Insert track from template."**
@@ -12,7 +14,7 @@ title: Track Templates
 
 ![tracktemplate.png](tracktemplate.png)
 
-Ensure proper audio routing between channel tracks for accurate signal flow!
+Verify the routing between channel tracks after insertion to ensure a valid signal flow.
 
 ![Track_template](Track_templates.gif)
 

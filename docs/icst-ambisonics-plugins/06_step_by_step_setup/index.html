@@ -9,7 +9,7 @@
 ><head>
   <meta charset="utf-8" />
   <title>
-    map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]
+    Johannes Schuett
         |
         Step by Step Setup
       
@@ -19,16 +19,16 @@
   </title>
 
   <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="author" content="map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]" />
+  <meta name="author" content="Johannes Schuett" />
   <meta
     name="description"
     content="Spatial Audio Plugins &amp; Tutorials
-by ICST · Zurich University of the Arts"
+by ICST / Zurich University of the Arts"
   />
   
   
-        <link rel="stylesheet" href="/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css" integrity="sha256-gnZ8kex8rMjku3tmSA/DOpKI6lhtiQQZWl2QqNvPOAE=" crossorigin="anonymous" />
-      
+      <link rel="stylesheet" href="/css/anatole.min.c67a96166a1b34f0c4d28751874d6cd50877fa3f2e94228b181b56faf7604337.css" integrity="sha256-xnqWFmobNPDE0odRh01s1Qh3&#43;j8ulCKLGBtW&#43;vdgQzc=" crossorigin="anonymous" />
+    
   <link
     rel="stylesheet"
     href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
@@ -109,10 +109,9 @@ by ICST · Zurich University of the Arts"
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Step by Step Setup">
-  <meta name="twitter:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
-Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper Prerequisites Before we begin, make sure you have Reaper, the ICST Ambisonics plugins and any recommended 3rd party pluginsinstalled.
-Creating a Reaper template We will create the template step by step from top to bottom.
-1. Prepare Reaper Open a new, empty Reaper session. Create a new track (double click or use the menu). Name the track Decoder and remove the master bus. [!Tip:] Create all tracks with 64 channels by default and keep an eye on the routing.">
+  <meta name="twitter:description" content="Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper Prerequisites Before we begin, make sure you have Reaper, the ICST Ambisonics plugins, and any recommended 3rd-party plugins installed.
+❗ Important Recommended baseline before starting:
+Reaper project sample rate: 48 kHz All Ambisonics tracks set to 64 channels ICST plugin set installed and visible in the FX browser Audio interface output mapping verified Creating a Reaper template We will create the template step by step from top to bottom.">
 
 
 
@@ -120,10 +119,9 @@ Creating a Reaper template We will create the template step by step from top to 
   <meta property="og:url" content="https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/">
   <meta property="og:site_name" content="The ICST Ambisonics Site">
   <meta property="og:title" content="Step by Step Setup">
-  <meta property="og:description" content="Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts
-Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper Prerequisites Before we begin, make sure you have Reaper, the ICST Ambisonics plugins and any recommended 3rd party pluginsinstalled.
-Creating a Reaper template We will create the template step by step from top to bottom.
-1. Prepare Reaper Open a new, empty Reaper session. Create a new track (double click or use the menu). Name the track Decoder and remove the master bus. [!Tip:] Create all tracks with 64 channels by default and keep an eye on the routing.">
+  <meta property="og:description" content="Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper Prerequisites Before we begin, make sure you have Reaper, the ICST Ambisonics plugins, and any recommended 3rd-party plugins installed.
+❗ Important Recommended baseline before starting:
+Reaper project sample rate: 48 kHz All Ambisonics tracks set to 64 channels ICST plugin set installed and visible in the FX browser Audio interface output mapping verified Creating a Reaper template We will create the template step by step from top to bottom.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="icst-ambisonics-plugins">
@@ -146,7 +144,7 @@ Creating a Reaper template We will create the template step by step from top to 
         "alternativeHeadline": "",
         "description": "
       
-        \u003cp\u003eInstitute for Computer Music and Sound Technology \/ (ICST) Zurich University of the Arts\u003c\/p\u003e\n\u003chr\u003e\n\u003ch1 id=\u0022step-by-step-setup-guide-for-the-icst-ambiplugins-in-reaper\u0022\u003eStep-by-Step Setup Guide for the ICST AmbiPlugins in Reaper\u003c\/h1\u003e\n\u003chr\u003e\n\u003ch3 id=\u0022prerequisites\u0022\u003ePrerequisites\u003c\/h3\u003e\n\u003cp\u003eBefore we begin, make sure you have \u003cstrong\u003eReaper\u003c\/strong\u003e, the \u003cstrong\u003eICST Ambisonics plugins\u003c\/strong\u003e and any recommended \u003cstrong\u003e3rd party plugins\u003c\/strong\u003einstalled.\u003c\/p\u003e\n\u003ch3 id=\u0022creating-a-reaper-template\u0022\u003eCreating a Reaper template\u003c\/h3\u003e\n\u003cp\u003eWe will create the template step by step from top to bottom.\u003c\/p\u003e\n\u003ch4 id=\u00221-prepare-reaper\u0022\u003e1. Prepare Reaper\u003c\/h4\u003e\n\u003col\u003e\n\u003cli\u003eOpen a \u003cstrong\u003enew, empty Reaper session\u003c\/strong\u003e.\n\u003cimg src=\u0022\/icst-ambisonics-plugins\/06_step_by_step_setup\/empty_reaper.png\u0022 alt=\u0022empty_reaper\u0022\u003e\u003c\/li\u003e\n\u003cli\u003eCreate a new track (\u003cstrong\u003edouble click\u003c\/strong\u003e or use the menu).\u003c\/li\u003e\n\u003cli\u003eName the track \u003cstrong\u003eDecoder\u003c\/strong\u003e and remove the master bus.\n\u003cimg src=\u0022\/icst-ambisonics-plugins\/06_step_by_step_setup\/01_Decoder_A.gif\u0022 alt=\u002201_dec\u0022\u003e\u003c\/li\u003e\n\u003c\/ol\u003e\n\u003cblockquote\u003e\u003cp\u003e[!Tip:]\nCreate all tracks with \u003cstrong\u003e64 channels\u003c\/strong\u003e by default and keep an eye on the \u003cstrong\u003erouting\u003c\/strong\u003e.\u003c\/p\u003e
+        \u003ch1 id=\u0022step-by-step-setup-guide-for-the-icst-ambiplugins-in-reaper\u0022\u003eStep-by-Step Setup Guide for the ICST AmbiPlugins in Reaper\u003c\/h1\u003e\n\u003chr\u003e\n\u003ch3 id=\u0022prerequisites\u0022\u003ePrerequisites\u003c\/h3\u003e\n\u003cp\u003eBefore we begin, make sure you have \u003cstrong\u003eReaper\u003c\/strong\u003e, the \u003cstrong\u003eICST Ambisonics plugins\u003c\/strong\u003e, and any recommended \u003cstrong\u003e3rd-party plugins\u003c\/strong\u003e installed.\u003c\/p\u003e\n\u003cdiv class=\u0022callout callout--important\u0022\u003e\n    \u003cdiv class=\u0022callout__header\u0022\u003e\n      \u003cspan class=\u0022callout__icon\u0022\u003e❗\u003c\/span\u003e\n      \u003cspan class=\u0022callout__label\u0022\u003eImportant\u003c\/span\u003e\n    \u003c\/div\u003e\n    \u003cdiv class=\u0022callout__body\u0022\u003e\u003cp\u003eRecommended baseline before starting:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eReaper project sample rate: \u003cstrong\u003e48 kHz\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003eAll Ambisonics tracks set to \u003cstrong\u003e64 channels\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003eICST plugin set installed and visible in the FX browser\u003c\/li\u003e\n\u003cli\u003eAudio interface output mapping verified\u003c\/li\u003e\n\u003c\/ul\u003e\u003c\/div\u003e\n  \u003c\/div\u003e\u003ch3 id=\u0022creating-a-reaper-template\u0022\u003eCreating a Reaper template\u003c\/h3\u003e\n\u003cp\u003eWe will create the template step by step from top to bottom.\u003c\/p\u003e
 
 
       
@@ -197,7 +195,7 @@ Creating a Reaper template We will create the template step by step from top to 
 
     ,
         "url" : "https:\/\/ambisonics.ch\/icst-ambisonics-plugins\/06_step_by_step_setup\/",
-        "wordCount" : "972",
+        "wordCount" : "1022",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -215,7 +213,7 @@ Creating a Reaper template We will create the template step by step from top to 
     <div class="wrapper">
       <aside
         
-          class="wrapper__sidebar wrapper__sidebar--hidden"
+          class="wrapper__sidebar"
         
       ><div
   class="sidebar
@@ -235,13 +233,14 @@ Creating a Reaper template We will create the template step by step from top to 
         </div>
       
       <div class="sidebar__introduction-description">
-        <p>Spatial Audio Plugins & Tutorials<br />by ICST · Zurich University of the Arts</p>
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST / Zurich University of the Arts</p>
       </div>
     </div>
     <ul class="sidebar__list">
       
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="https://www.zhdk.ch/forschung/icst"
             target="_blank"
             rel="noopener me"
@@ -249,13 +248,25 @@ Creating a Reaper template We will create the template step by step from top to 
             title="Zurich University of the Arts"
           >
             
-              <img src="/images/zhdk-logo.svg" alt="Zurich University of the Arts" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+              
+                <span class="sidebar__social-image sidebar__social-image--zhdk" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" fill="currentColor">
+  <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Z</text>
+  <line x1="40" y1="10" x2="54" y2="10" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="20" x2="54" y2="20" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="30" x2="54" y2="30" stroke="currentColor" stroke-width="2.5"/>
+  <text x="58" y="32" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" letter-spacing="0.5">hdk</text>
+</svg>
+
+                </span>
+              
             
           </a>
         </li>
       
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="https://github.com/joambi"
             target="_blank"
             rel="noopener me"
@@ -263,13 +274,14 @@ Creating a Reaper template We will create the template step by step from top to 
             title="GitHub"
           >
             
-              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+              <i class="fab fa-github sidebar__social-icon" aria-hidden="true"></i>
             
           </a>
         </li>
       
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
             target="_blank"
             rel="noopener me"
@@ -277,7 +289,7 @@ Creating a Reaper template We will create the template step by step from top to 
             title="YouTube"
           >
             
-              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+              <i class="fab fa-youtube sidebar__social-icon" aria-hidden="true"></i>
             
           </a>
         </li>
@@ -316,9 +328,7 @@ Creating a Reaper template We will create the template step by step from top to 
       <li class="footer__item">
         <a
           class="link"
-          href="https://www.iubenda.com/terms-and-conditions/70769495"
-          
-            target="_blank" rel="noopener noreferrer"
+          href="/terms-and-conditions/"
           
           title=""
         >
@@ -338,7 +348,7 @@ Creating a Reaper template We will create the template step by step from top to 
 </aside>
       <main
         
-          class="wrapper__main wrapper__main--fullscreen"
+          class="wrapper__main"
         
       >
         <header class="header"><div
@@ -361,10 +371,10 @@ Creating a Reaper template We will create the template step by step from top to 
             
             <a
               
-              href="/about/"
+              href="/start/"
               
               title=""
-              >About</a
+              >Start</a
             >
           </li>
         
@@ -385,10 +395,16 @@ Creating a Reaper template We will create the template step by step from top to 
                 
 
               
+                
+
+              
+                
+
+              
 
 
               <label class="optionswitch__label" for="1"
-                >Plugins &amp; Tools <i class="fa fa-angle-down" aria-hidden="true"></i
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -397,20 +413,42 @@ Creating a Reaper template We will create the template step by step from top to 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/icst-ambisonics-plugins/"
+                      href="/post/"
                       
                       title=""
-                      >ICST AmbiPlugins Docs</a
+                      >All Tutorials</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/icst-ambisonics-tools/"
+                      href="/ambisonics-101/"
                       
                       title=""
-                      >Ambi Tools</a
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/composing-in-ambisonics/"
+                      
+                      title=""
+                      >For Composers</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
                     >
                   </li>
                 
@@ -441,7 +479,7 @@ Creating a Reaper template We will create the template step by step from top to 
 
 
               <label class="optionswitch__label" for="2"
-                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -450,32 +488,30 @@ Creating a Reaper template We will create the template step by step from top to 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/ambisonics-101/"
+                      href="/for-residents/"
                       
                       title=""
-                      >Ambisonics 101</a
+                      >Resident Guide</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/post/"
+                      href="/blog/icst-composer-studio-blog/"
                       
                       title=""
-                      >All Tutorials</a
+                      >Studio Hub</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
-                      
-                        target="_blank" rel="noopener noreferrer"
+                      href="/residenzen/"
                       
                       title=""
-                      >Videos</a
+                      >Residencies</a
                     >
                   </li>
                 
@@ -503,7 +539,7 @@ Creating a Reaper template We will create the template step by step from top to 
 
 
               <label class="optionswitch__label" for="3"
-                >Ascolta <i class="fa fa-angle-down" aria-hidden="true"></i
+                >ASCOLTA <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -512,20 +548,20 @@ Creating a Reaper template We will create the template step by step from top to 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/ascolta/17-ascolta/"
+                      href="/blog/ascolta/"
                       
                       title=""
-                      >Next Session</a
+                      >ASCOLTA</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/ascolta/"
+                      href="/blog/sounding_future/"
                       
                       title=""
-                      >All Sessions</a
+                      >Listening</a
                     >
                   </li>
                 
@@ -550,10 +586,25 @@ Creating a Reaper template We will create the template step by step from top to 
                 
 
               
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
 
 
               <label class="optionswitch__label" for="4"
-                >Residenzen <i class="fa fa-angle-down" aria-hidden="true"></i
+                >Docs <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -562,161 +613,70 @@ Creating a Reaper template We will create the template step by step from top to 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/residenzen/icst-studio-residences-2025/"
+                      href="/icst-ambisonics-plugins/"
                       
                       title=""
-                      >Residenzen 2025</a
+                      >Plugin Docs</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/residenzen/icst-studio-residences-2026/"
+                      href="/icst-ambisonics-tools/"
                       
                       title=""
-                      >Residenzen 2026</a
-                    >
-                  </li>
-                
-              </ul>
-            </div>
-          </li>
-        
-
-      
-        
-        
-
-          <li class="nav__list-item">
-            <div class="optionswitch">
-              <input class="optionswitch__picker" type="checkbox" id="5" hidden />
-
-              
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-
-
-              <label class="optionswitch__label" for="5"
-                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
-              ></label>
-
-              <div class="optionswitch__triangle"></div>
-              <ul class="optionswitch__list">
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/icst-composer-studio-blog/"
-                      
-                      title=""
-                      >Composition Studio</a
+                      >Ambi Tools</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/audio-examples/"
+                      href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
                       
                       title=""
-                      >Audio Examples</a
+                      >OSC Syntax</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-equipment/"
+                      href="/icst-ambisonics-plugins/15_best_practices/"
                       
                       title=""
-                      >Equipment</a
+                      >Best Practices</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-software/"
+                      href="/blog/b-format-archive/"
                       
                       title=""
-                      >Software</a
+                      >B-Format Archive</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-speaker-settings/"
+                      href="/blog/faq/"
                       
                       title=""
-                      >Speaker Setup</a
+                      >FAQ</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-regie/"
+                      href="/links/"
                       
                       title=""
-                      >Regie</a
-                    >
-                  </li>
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/icst-kompositionsstudio-pre-installation/"
-                      
-                      title=""
-                      >Pre-Installation</a
-                    >
-                  </li>
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/downloads/"
-                      
-                      title=""
-                      >Downloads</a
-                    >
-                  </li>
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/"
-                      
-                      title=""
-                      >All Studio Pages</a
+                      >Links</a
                     >
                   </li>
                 
@@ -732,10 +692,25 @@ Creating a Reaper template We will create the template step by step from top to 
             
             <a
               
-              href="/links/"
+              href="/blog/downloads/"
               
               title=""
-              >Links</a
+              >Downloads</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
             >
           </li>
         
@@ -767,6 +742,11 @@ Creating a Reaper template We will create the template step by step from top to 
           </div>
         </li>
       
+      <li class="nav__list-item">
+        <a href="/search/" title="Search">
+          <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
       
         <li class="nav__list-item">
           <div class="themeswitch">
@@ -860,261 +840,317 @@ Creating a Reaper template We will create the template step by step from top to 
   
   <article class="docs__content post">
     <div class="post__content">
-      <h1>Step by Step Setup</h1><p>Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts</p>
-<hr>
-<h1 id="step-by-step-setup-guide-for-the-icst-ambiplugins-in-reaper">Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper</h1>
+      <h1>Step by Step Setup</h1><h1 id="step-by-step-setup-guide-for-the-icst-ambiplugins-in-reaper">Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper</h1>
 <hr>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>Before we begin, make sure you have <strong>Reaper</strong>, the <strong>ICST Ambisonics plugins</strong> and any recommended <strong>3rd party plugins</strong>installed.</p>
-<h3 id="creating-a-reaper-template">Creating a Reaper template</h3>
+<p>Before we begin, make sure you have <strong>Reaper</strong>, the <strong>ICST Ambisonics plugins</strong>, and any recommended <strong>3rd-party plugins</strong> installed.</p>
+<div class="callout callout--important">
+    <div class="callout__header">
+      <span class="callout__icon">❗</span>
+      <span class="callout__label">Important</span>
+    </div>
+    <div class="callout__body"><p>Recommended baseline before starting:</p>
+<ul>
+<li>Reaper project sample rate: <strong>48 kHz</strong></li>
+<li>All Ambisonics tracks set to <strong>64 channels</strong></li>
+<li>ICST plugin set installed and visible in the FX browser</li>
+<li>Audio interface output mapping verified</li>
+</ul></div>
+  </div><h3 id="creating-a-reaper-template">Creating a Reaper template</h3>
 <p>We will create the template step by step from top to bottom.</p>
 <h4 id="1-prepare-reaper">1. Prepare Reaper</h4>
 <ol>
-<li>Open a <strong>new, empty Reaper session</strong>.
+<li>Open a <strong>new, empty Reaper session</strong>.
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/empty_reaper.png" alt="empty_reaper"></li>
-<li>Create a new track (<strong>double click</strong> or use the menu).</li>
-<li>Name the track <strong>Decoder</strong> and remove the master bus.
+<li>Create a new track (<strong>double-click</strong> or use the menu).</li>
+<li>Name the track <strong>Decoder</strong> and remove the master bus.
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/01_Decoder_A.gif" alt="01_dec"></li>
 </ol>
-<blockquote><p>[!Tip:]
-Create all tracks with <strong>64 channels</strong> by default and keep an eye on the <strong>routing</strong>.</p>
-</blockquote><h4 id="2-set-up-decoder-routing">2. Set up decoder routing</h4>
+<div class="callout callout--tip">
+    <div class="callout__header">
+      <span class="callout__icon">🔥</span>
+      <span class="callout__label">Tip</span>
+    </div>
+    <div class="callout__body"><p>Create all tracks with <strong>64 channels</strong> by default and keep an eye on routing.</p></div>
+  </div><h4 id="2-set-up-decoder-routing">2. Set up decoder routing</h4>
+<p>Decoder routing for an Oktagon setup:</p>
 <ul>
-<li><strong>Decoder routing for an Oktagon setup:</strong></li>
-<li><strong>Inputs:</strong> 64 channels from the “Bformat Master Track”</li>
-<li><strong>outputs</strong>: 8 channels to the audio interface</li>
+<li><strong>Inputs:</strong> 64 channels from the <strong>Bformat Master</strong> track</li>
+<li><strong>Outputs:</strong> 8 channels to the audio interface</li>
 </ul>
 <ol>
-<li><strong>ICST AmbiPlugins Decoder</strong> in the <strong>FX window</strong>.
+<li>Open <strong>ICST AmbiPlugins Decoder</strong> in the <strong>FX</strong> window.
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/FX_Decoder.png" alt="open__FX_decoder"></li>
-<li>open the AmbiDecoder
+<li>Open the AmbiDecoder.
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/open_decoder.gif" alt="open_decoder"></li>
-<li>Select a <strong>speaker preset</strong> (e.g. Oktagon).
+<li>Select a <strong>speaker preset</strong> (e.g. Oktagon).
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/choose_dec_preset.gif" alt="open_dec"></li>
-<li><strong>Customize AmbiDecoder settings</strong>:</li>
-</ol>
+<li>Customize AmbiDecoder settings:
 <ul>
-<li>Ambisonics Weighting</li>
-<li>Ambisonics Order (1st to 7th order)
-<img src="/icst-ambisonics-plugins/06_step_by_step_setup/7_choose_dec_setting.gif" alt="Dec-setting">5. <strong>Run speaker test</strong>:
+<li>Ambisonics weighting</li>
+<li>Ambisonics order (1st to 7th order)
+<img src="/icst-ambisonics-plugins/06_step_by_step_setup/7_choose_dec_setting.gif" alt="Dec-setting"></li>
+</ul>
+</li>
+<li>Run a speaker test:
 <ul>
-<li>press the “Speaker Test” button or test individual speakers.
+<li>Press the <strong>Speaker Test</strong> button or test individual speakers.
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/speaker_test.png" alt="speaker_test"></li>
 </ul>
 </li>
-</ul>
-<blockquote><p>[!Attention:]  Keep an eye on the volume level!</p>
-</blockquote><ol start="9">
-<li>Create the &lsquo;Bformat-Master track&rsquo;
-<img src="/icst-ambisonics-plugins/06_step_by_step_setup/02_BF-Master.gif" alt="02_BF-Master | 700"></li>
 </ol>
-<h4 id="3-create-a-bformat-master-track">3. Create a Bformat master track</h4>
+<div class="callout callout--warning">
+    <div class="callout__header">
+      <span class="callout__icon">⚠️</span>
+      <span class="callout__label">Warning</span>
+    </div>
+    <div class="callout__body"><p>Keep an eye on output volume.</p></div>
+  </div><div class="callout callout--tip">
+    <div class="callout__header">
+      <span class="callout__icon">🔥</span>
+      <span class="callout__label">Tip</span>
+    </div>
+    <div class="callout__body"><p><strong>Routing sanity check (20 sec):</strong></p>
+<ol>
+<li>Send pink noise or a test signal into the Bformat Master.</li>
+<li>Confirm level activity on Decoder input meters.</li>
+<li>Trigger speaker test and verify output order physically in the room.</li>
+</ol></div>
+  </div><h4 id="3-create-a-bformat-master-track">3. Create a Bformat master track</h4>
+<p>Create the <strong>Bformat Master</strong> track:</p>
+<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/02_BF-Master.gif" alt="02_BF-Master | 700"></p>
 <ul>
-<li>The <strong>Bformat master track</strong> receives all signals from:</li>
-<li><strong>Ambience Encoders</strong></li>
-<li><strong>BFormat SFX</strong></li>
-<li><strong>BFormat players</strong></li>
-<li>Since this is the master track, the final <strong>B format is recorded</strong> or bounced here.</li>
-<li>This track is colored <strong>red</strong>.</li>
-<li>It leads both to the <strong>AmbiDecoder</strong> and in parallel to a <strong>binaural track</strong>.</li>
+<li>This track receives signals from:
+<ul>
+<li>Ambience encoders</li>
+<li>B-format SFX</li>
+<li>B-format players</li>
+</ul>
+</li>
+<li>This is the main recording/render point for the final <strong>B-format</strong> signal.</li>
+<li>Set the track color to <strong>red</strong> (recommended).</li>
+<li>Route it to the <strong>AmbiDecoder</strong> and in parallel to a <strong>binaural monitor</strong> track.</li>
 </ul>
 <h4 id="4-create-a-bformat-player-track">4. Create a Bformat player track</h4>
 <ul>
-<li>Create a <strong>64-channel track</strong> and route it into the <strong>Bformat master track</strong>.</li>
+<li>Create a <strong>64-channel track</strong> and route it into the <strong>Bformat Master</strong> track.</li>
 </ul>
 <p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/bformat-player.png" alt="bformat-player"></p>
-<blockquote><p>[!Tip:] This allows <strong>B-format files from the 1st to the 7th order</strong> to be played.</p>
-</blockquote><h4 id="5-enable-binaural-listening">5. Enable binaural listening</h4>
+<div class="callout callout--tip">
+    <div class="callout__header">
+      <span class="callout__icon">🔥</span>
+      <span class="callout__label">Tip</span>
+    </div>
+    <div class="callout__body"><p>This allows <strong>B-format files from 1st to 7th order</strong> to be played.</p></div>
+  </div><h4 id="5-enable-binaural-listening">5. Enable binaural listening</h4>
 <ul>
-<li>Create a new <strong>64-channel track</strong> and load a <strong>binaural plug-in</strong> (e.g. <em>DearVR Ambi Micro.vst3</em>).</li>
-<li>Move the track <strong>upwards</strong>.</li>
-<li>Route the output from the <strong>format master</strong> to this <strong>binaural decoder</strong>.</li>
-<li><strong>Mute AmbiDecoder</strong> to hear only the binaurally decoded signal.</li>
+<li>Create a new <strong>64-channel track</strong> and load a <strong>binaural plugin</strong> (e.g. <em>DearVR Ambi Micro.vst3</em>).</li>
+<li>Move the track to the top of your Reaper project.</li>
+<li>Route the <strong>output of Bformat Master</strong> to this binaural track.</li>
+<li>Mute <strong>AmbiDecoder</strong> if you want to monitor only the binaural output.</li>
 </ul>
-<blockquote><p>[!Tip:] Compare with <em>Solo/Mute</em> between AmbiDecoder and Binaural Decoder.</p>
-</blockquote><p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/first-order.png" alt="1.order_bf">
-Example B shows a 5th-order b-format Ambisonic.</p>
+<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/Binaural_Track.gif" alt="Binaural-track">
+<img src="/icst-ambisonics-plugins/06_step_by_step_setup/DearVR_binaurl.png" alt="DearVR_binaural"></p>
+<div class="callout callout--tip">
+    <div class="callout__header">
+      <span class="callout__icon">🔥</span>
+      <span class="callout__label">Tip</span>
+    </div>
+    <div class="callout__body"><p>Compare playback with <strong>Solo/Mute</strong> between AmbiDecoder and binaural decoder.</p></div>
+  </div><p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/first-order.png" alt="1.order_bf">
+Example B below shows a 5th-order B-format Ambisonic file:</p>
 <p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/5th-order-bf.png" alt="5th-order_bf">
-Now we can play back and listen to B-format files on eight speakers.</p>
-<p>To be able to listen to the B format through headphones, we will now set up a binaural decoder:</p>
+Now you can play and monitor B-format files on speakers or headphones.</p>
+<h3 id="naming-convention-recommended">Naming Convention (recommended)</h3>
+<p>Use stable names early to avoid routing mistakes:</p>
 <ul>
-<li>Create a new <strong>64-channel track</strong> and load a <strong>binaural plugin</strong> of your choice into the FX window (e.g. <em>DearVR Ambi Micro.vst3</em>).</li>
-<li>Move the track <strong>to the beginning</strong> of the Reaper rack.</li>
-<li>Route the <strong>output of the Bformat master track</strong> to this binaural decoder (see GIF).</li>
+<li><code>DECODER</code></li>
+<li><code>BFORMAT_MASTER</code></li>
+<li><code>BINAURAL_MONITOR</code></li>
+<li><code>SRC_01</code> &hellip; <code>SRC_08</code></li>
+<li><code>MULTIENCODER_8SRC</code></li>
 </ul>
-<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/Binaural_Track.gif" alt="Binaural-track"></p>
+<h3 id="6-mono-source--ambisonics-encoder">6. Mono Source &amp; Ambisonics Encoder</h3>
 <ul>
-<li>Mute the AmbiDecoder to hear only the binaurally decoded signal.
-<img src="/icst-ambisonics-plugins/06_step_by_step_setup/DearVR_binaurl.png" alt="DearVR_binaural"></li>
+<li>Create a new <strong>Mono Source</strong> track and load a mono audio file.</li>
 </ul>
-<blockquote><p>[!Tip:]
-Compare solo/mute between AmbiDecoder and binaural decoder.</p>
-</blockquote><h3 id="6-mono-source--ambisonics-encoder">6. Mono Source &amp; Ambisonics Encoder</h3>
-<ul>
-<li>Create a new track Mono-Source and load a mono audio file.</li>
-</ul>
-<p>Tip: Watch this  <a href="https://www.youtube.com/watch?v=aDa-vNWriLM&amp;t=119s">Video</a></p>
-<ol start="12">
-<li>Mono AmbieEncoder overview.
+<p>Tip: Watch this <a href="https://www.youtube.com/watch?v=aDa-vNWriLM&amp;t=119s">Video</a></p>
+<p>Mono AmbiEncoder overview:
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/MonoEncoder_01.png" alt="open monoencoder">
-<img src="/icst-ambisonics-plugins/06_step_by_step_setup/MonoEncoder_load.png" alt="open_MonoEncoder"></li>
-</ol>
+<img src="/icst-ambisonics-plugins/06_step_by_step_setup/MonoEncoder_load.png" alt="open_MonoEncoder"></p>
 <ul>
-<li>
-<p>In the FX window, load the ICST MonoEncoder.</p>
-</li>
-<li>
-<p>Add a AmbiEncoder(ICST) (1-4) &ndash;&gt; Mono-Encoder
-Routing:</p>
-</li>
-<li>
-<p>MonoEncoder → 64-channel output → Bformat master.</p>
-<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/MonoEncoder.png" alt="MonnoEncoder"></p>
-</li>
+<li>In the FX window, load the <strong>ICST MonoEncoder</strong>.</li>
+<li>Add an <strong>AmbiEncoder (ICST)</strong> (1-4) to the mono source.</li>
 </ul>
+<p>Routing:</p>
+<ul>
+<li>MonoEncoder -&gt; 64-channel output -&gt; Bformat Master.</li>
+</ul>
+<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/MonoEncoder.png" alt="MonnoEncoder"></p>
 <h4 id="7-record-motions-in-the-reaper-track">7. Record motions in the Reaper track</h4>
 <p>Record motions in the MonoEncoder:
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/rec_xyz.gif" alt="rec_xyz"></p>
-<p>Play back saved motion:</p>
-<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/play_xyz.gif" alt="play_xyt"></p>
+<p>Play back saved motion:
+<img src="/icst-ambisonics-plugins/06_step_by_step_setup/play_xyz.gif" alt="play_xyt"></p>
 <h3 id="8-using-the-multi-encoder">8. Using the Multi-Encoder</h3>
-<p>In the next example, I&rsquo;ll demonstrate how we use the <strong>Multi-Encoder</strong>:</p>
+<p>In the next example, we use the <strong>Multi-Encoder</strong>:</p>
 <ol>
 <li>
 <p><strong>Insert the Multi-Encoder Track</strong></p>
 <ul>
-<li>Right-click in the empty Reaper track area and select <strong>“Insert Track from Template”</strong>.</li>
-<li>Navigate to <strong>ICST AmbiPlugins</strong> and choose <strong>“ICST_AmbiEncoder_Multi_8src”</strong>.</li>
-<li>This will open a Multi-Encoder with <strong>8 mono sources</strong>, already routed into the encoder.</li>
+<li>Right-click in an empty Reaper track area and select <strong>Insert Track from Template</strong>.</li>
+<li>Navigate to <strong>ICST AmbiPlugins</strong> and choose <strong>ICST_AmbiEncoder_Multi_8src</strong>.</li>
+<li>This opens a Multi-Encoder with <strong>8 mono sources</strong> already routed into the encoder.</li>
 </ul>
-<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEncoder_routing.png" alt="MultiEncoder_routing | 550">
-2. <strong>Controlling Sources in the Multi-Encoder</strong></p>
+<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEncoder_routing.png" alt="MultiEncoder_routing | 550"></p>
+</li>
+<li>
+<p><strong>Control Sources in the Multi-Encoder</strong></p>
 <ul>
-<li>If the routing is set up correctly, you can now control the <strong>placement and movement</strong> of up to <strong>8 sources</strong> within the Multi-Encoder.</li>
+<li>If routing is correct, you can control the <strong>placement and movement</strong> of up to <strong>8 sources</strong>.</li>
 </ul>
 </li>
 </ol>
 <h3 id="ambiencoder-settings">AmbiEncoder Settings</h3>
 <ol start="3">
-<li>
-<p>Understanding AmbiEncoder Settings**- The <strong>AmbiEncoder settings</strong> are crucial for your workflow. - The following GIF showcases the key <strong>AmbiEncoder features</strong>:</p>
-<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/Enc_Settings.gif" alt="Enc_Settings">
-<img src="/icst-ambisonics-plugins/06_step_by_step_setup/Enc_Settings.gif" alt="Enc_Settings"></p>
-</li>
+<li><strong>Understanding AmbiEncoder settings</strong></li>
 </ol>
-<blockquote><p>[!Tip: ] Watch the AmbiEncoder <a href="https://www.youtube.com/watch?v=aDa-vNWriLM&amp;t=31s">Video tutorial</a>  for more details.</p>
-</blockquote><ol start="4">
-<li><strong>ICST Distance Function</strong>
+<ul>
+<li>AmbiEncoder settings are central to the workflow.</li>
+<li>The GIF below shows key AmbiEncoder features:</li>
+</ul>
+<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/Enc_Settings.gif" alt="Enc_Settings"></p>
+<div class="callout callout--tip">
+    <div class="callout__header">
+      <span class="callout__icon">🔥</span>
+      <span class="callout__label">Tip</span>
+    </div>
+    <div class="callout__body"><p>Watch the AmbiEncoder <a href="https://www.youtube.com/watch?v=aDa-vNWriLM&amp;t=31s">Video tutorial</a> for more details.</p></div>
+  </div><ol start="4">
+<li><strong>ICST Distance Function</strong></li>
+</ol>
 <ul>
 <li>A unique feature of the <strong>ICST Ambisonics Encoder</strong> is its <strong>distance function</strong>, developed by <strong>Martin Neukom</strong> at ICST.</li>
-<li>This function allows you to create various <strong>spatial configurations</strong>, simulating movement speeds from very fast to extremely slow.
-<img src="/icst-ambisonics-plugins/06_step_by_step_setup/Distance.gif" alt="Distanc_overview">For in-depth instructions, refer to the <strong>Distance tutorial</strong>.</li>
+<li>This function enables different spatial configurations, from very fast to very slow movement behavior.
+<img src="/icst-ambisonics-plugins/06_step_by_step_setup/Distance.gif" alt="Distanc_overview"></li>
 </ul>
-</li>
-</ol>
-<blockquote><p>[!Tip:] If working with <strong>distance</strong>, define it <strong>at the start</strong> of your project to scale all <strong>XYZ coordinates</strong> correctly. _(Example: Distance scale from 0.0 to 1.0).</p>
-</blockquote><h3 id="recording--editing-source-movements">Recording &amp; Editing Source Movements</h3>
-<ol start="5">
-<li>
-<p><strong>Recording Movements in the Multi-Encoder</strong></p>
+<p>For in-depth instructions, refer to the <strong>Distance tutorial</strong>.</p>
+<div class="callout callout--tip">
+    <div class="callout__header">
+      <span class="callout__icon">🔥</span>
+      <span class="callout__label">Tip</span>
+    </div>
+    <div class="callout__body"><p>If you work with <strong>distance</strong>, define it at the start of the project to keep <strong>XYZ scaling</strong> consistent (example: <code>0.0</code> to <code>1.0</code>).</p></div>
+  </div><h3 id="recording--editing-source-movements">Recording &amp; Editing Source Movements</h3>
+<div class="callout callout--tip">
+    <div class="callout__header">
+      <span class="callout__icon">🔥</span>
+      <span class="callout__label">Tip</span>
+    </div>
+    <div class="callout__body"><p><strong>Automation mode quick guide:</strong></p>
 <ul>
-<li>
-<p>To understand how the Multi-Encoder works, let’s go through a <strong>recording example</strong>:</p>
-<ul>
-<li><strong>Set automation envelopes</strong> to <strong>“Write” mode</strong>.</li>
-<li>Press <strong>Play</strong> (Spacebar) in Reaper and move <strong>Src_1</strong> in the Multi-Encoder Radar.</li>
-<li>Repeat the process for other sources.</li>
+<li><strong>Write:</strong> overwrite completely (best for first pass)</li>
+<li><strong>Touch:</strong> write only while touching control</li>
+<li><strong>Latch:</strong> keeps writing after first touch until stop</li>
 </ul>
-<p>MultiEnc_01_write:
-<img src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_01_write.gif" alt="MultiEnc_01_write"></p>
-<p>Here’s an example with <strong>Src_3</strong>:</p>
-<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/Move_03.gif" alt="Encoder_move_03"></p>
-</li>
-</ul>
-</li>
+<p>For clean results, record in <strong>Write</strong>, then refine in <strong>Touch</strong>.</p></div>
+  </div><ol start="5">
+<li><strong>Recording Movements in the Multi-Encoder</strong></li>
 </ol>
-<p>Here’s an example with <strong>Src_3</strong>:The next step demonstrates how to manually edit the xyz envelopes.
+<p>To understand Multi-Encoder behavior, run this recording example:</p>
+<ul>
+<li>Set automation envelopes to <strong>Write</strong> mode.</li>
+<li>Press <strong>Play</strong> (Spacebar) and move <strong>Src_1</strong> in the Multi-Encoder radar.</li>
+<li>Repeat for other sources.</li>
+</ul>
+<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_01_write.gif" alt="MultiEnc_01_write">
+Example with <strong>Src_3</strong>:
+<img src="/icst-ambisonics-plugins/06_step_by_step_setup/Move_03.gif" alt="Encoder_move_03"></p>
+<p>The next step shows manual editing of XYZ envelopes:
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_Manuell_edit.gif" alt="Manuel_edit"></p>
 <ol start="6">
-<li>
-<p><strong>Manually Editing XYZ Envelopes</strong></p>
+<li><strong>Manually Editing XYZ Envelopes</strong></li>
+</ol>
 <ul>
-<li>To refine movements, manually adjust the <strong>XYZ envelopes</strong>:</li>
-<li>Hold <strong>Shift</strong> and click on the envelope to create a new edit point.</li>
-<li>Move the point to adjust the <strong>XYZ coordinates</strong>.</li>
+<li>To refine motion, edit <strong>XYZ envelopes</strong> manually.</li>
+<li>Hold <strong>Shift</strong> and click an envelope to create a new edit point.</li>
+<li>Move the point to adjust XYZ coordinates.</li>
 </ul>
-</li>
-<li>
-<p>Playing Back the Recorded Ambisonic Scene</p>
-</li>
+<ol start="7">
+<li><strong>Playing Back the Recorded Ambisonic Scene</strong></li>
 </ol>
 <p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/play_multienc.gif" alt="MultiEnc_plays_scene"></p>
 <h3 id="working-with-groups">Working with Groups</h3>
 <ol start="8">
-<li>
-<p><strong>Creating a Group in the Multi-Encoder</strong></p>
+<li><strong>Creating a Group in the Multi-Encoder</strong></li>
+</ol>
 <ul>
 <li>In the <strong>Radar Display</strong>, select multiple <strong>Src points</strong> to form a group.</li>
-<li>Assign a <strong>group name</strong> (e.g., <strong>G1</strong>).</li>
+<li>Assign a <strong>group name</strong> (e.g. <strong>G1</strong>).</li>
 </ul>
-</li>
-</ol>
 <p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/GP_select_scaled.png" alt="create_a_GP">
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/GP_edit_scaled.png" alt="GP_name"></p>
 <ol start="9">
 <li><strong>Recording Group Movements</strong></li>
 </ol>
 <ul>
-<li>
-<p>Choose a recording mode:</p>
+<li>Choose a recording mode:
 <ul>
-<li><strong>“Latch”</strong> – Records only one source point.</li>
-<li><strong>“Touch”</strong> – Starts recording when a point is touched.</li>
-<li><strong>“Write”</strong> – Overwrites previous recordings.
-<img src="/icst-ambisonics-plugins/06_step_by_step_setup/Rec_GP.gif" alt="Rec_GP"></li>
-</ul>
-<ol start="9">
-<li><strong>Playback &amp; Evaluation</strong>
-<img src="/icst-ambisonics-plugins/06_step_by_step_setup/play_GP.gif" alt="Play_GP"></li>
-</ol>
-<ul>
-<li>Listen to the final <strong>group movement recording</strong> via <strong>speakers (Decoder)</strong> or <strong>headphones (Binaural Decoder)</strong>.</li>
+<li><strong>Latch</strong>: records after touching a source</li>
+<li><strong>Touch</strong>: records only while touching</li>
+<li><strong>Write</strong>: overwrites existing automation</li>
 </ul>
 </li>
+</ul>
+<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/Rec_GP.gif" alt="Rec_GP"></p>
+<ol start="10">
+<li><strong>Playback &amp; Evaluation</strong></li>
+</ol>
+<p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/play_GP.gif" alt="Play_GP"></p>
+<ul>
+<li>Listen to the final group movement via <strong>speakers (Decoder)</strong> or <strong>headphones (Binaural Decoder)</strong>.</li>
 </ul>
 <h3 id="finalizing--exporting">Finalizing &amp; Exporting</h3>
+<h3 id="pre-render-checklist">Pre-Render Checklist</h3>
+<p>Before rendering, confirm:</p>
+<ul>
+<li><strong>Bformat Master</strong> is soloed</li>
+<li>Ambisonics format/order matches your target pipeline</li>
+<li>No unintended limiter/compressor on the master path</li>
+<li>Filename contains order and take (example: <code>scene01_O5_take03.wav</code>)</li>
+</ul>
 <ol start="11">
-<li><strong>Rendering the B-Format Master</strong>
-<ul>
-<li>Once satisfied, follow these steps to <strong>export the B-Format</strong>:
-<ul>
-<li>Select <strong>Bformat-Master Track</strong> and set it to <strong>Solo</strong>.</li>
-<li>Open <strong>Menu &gt; Render</strong>.</li>
-</ul>
-</li>
-</ul>
-</li>
+<li><strong>Rendering the Bformat Master</strong></li>
 </ol>
+<p>Once satisfied, export the B-format:</p>
+<ul>
+<li>Select <strong>Bformat Master</strong> track and set it to <strong>Solo</strong></li>
+<li>Open <strong>Menu &gt; Render</strong></li>
+</ul>
 <p><strong>Render Settings:</strong></p>
 <p><img src="/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png" alt="Render_Master | 200"></p>
 <ol>
-<li><strong>Select Track (Stem Render)</strong> → Choose <strong>Bformat-Master</strong>.</li>
+<li><strong>Select Track (Stem Render)</strong> → Choose <strong>Bformat Master</strong>.</li>
 <li><strong>File Name</strong> → Assign a <strong>B-Format filename</strong>.</li>
-<li><strong>Sample Rate</strong> → 48,000 kHz.</li>
+<li><strong>Sample Rate</strong> → <strong>48,000 Hz</strong>.</li>
 <li><strong>Channels</strong> → 64 (for <strong>7th-order Ambisonics</strong>).</li>
 <li><strong>Multichannel Format</strong> → Set to <strong>Multichannel Files</strong>.</li>
 <li><strong>Large File Support</strong> → Use <strong>Wave/RF64</strong>.</li>
 <li><strong>Click “Render”</strong>.</li>
 </ol>
-<p>Rendering-info:
+<p>Rendering info:
 <img src="/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png" alt="render-info">
-After the rendering process, you will get a Rendering Info window with the Peak and LUFS information.</p>
-<ol start="8">
-<li>That&rsquo;s all, now you can drag and drop your B-Format onto the B-Format player track, set it to “Solo” and listen to the final result via the ICST decoder or the binaural decoder.</li>
+After rendering, Reaper shows a <strong>Rendering Info</strong> window with peak and LUFS values.</p>
+<ol start="12">
+<li>Drag and drop the rendered B-format file onto the <strong>Bformat player</strong> track, set it to <strong>Solo</strong>, and verify playback through the ICST decoder or binaural decoder.</li>
 </ol>
-<p>🎧 Happy ambisonics!</p>
-<hr>
-<p><span style="font-size:9px;color:#9f9f9f;">©2025 ICST</span></p>
+<h3 id="troubleshooting-quick">Troubleshooting (Quick)</h3>
+<ul>
+<li><strong>No movement playback:</strong> check automation lane visibility and write/touch/latch mode.</li>
+<li><strong>No decoder output:</strong> verify send from Bformat Master to Decoder input.</li>
+<li><strong>Wrong speaker localization:</strong> run speaker test again and verify hardware output mapping.</li>
+<li><strong>Binaural only / no speakers:</strong> check mute/solo state between Decoder and Binaural track.</li>
+</ul>
 
     </div>
 
@@ -1171,9 +1207,7 @@ After the rendering process, you will get a Rendering Info window with the Peak 
       <li class="footer__item">
         <a
           class="link"
-          href="https://www.iubenda.com/terms-and-conditions/70769495"
-          
-            target="_blank" rel="noopener noreferrer"
+          href="/terms-and-conditions/"
           
           title=""
         >

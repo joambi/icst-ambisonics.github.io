@@ -21,14 +21,50 @@
       <lastBuildDate>Sat, 28 Jun 2025 16:13:00 &#43;0000</lastBuildDate>
       <atom:link href="https://ambisonics.ch/blog/index.xml" rel="self" type="application/rss&#43;xml" />
     <item>
+      <title>Download Pack #1: Reaper Template &#43; HOA Routing Checklist</title>
+      <link>https://ambisonics.ch/blog/download-pack-1-hoa-reaper-template/</link>
+      <guid>https://ambisonics.ch/blog/download-pack-1-hoa-reaper-template/</guid>
+      <pubDate>Thu, 12 Mar 2026 09:00:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Level: Beginner to Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Technician.&lt;/p&gt;
+&lt;h2 id=&#34;included-files&#34;&gt;Included files&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reaper project template (&lt;code&gt;.RPP&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;HOA routing checklist (&lt;code&gt;.md&lt;/code&gt; or &lt;code&gt;.pdf&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Quick verification guide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-this-pack-is-for&#34;&gt;What this pack is for&lt;/h2&gt;
+&lt;p&gt;Use this pack to reduce setup time and avoid common routing mistakes in first sessions.&lt;/p&gt;
+&lt;h2 id=&#34;recommended-workflow&#34;&gt;Recommended workflow&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open template and verify audio device settings.&lt;/li&gt;
+&lt;li&gt;Confirm channel count on master and Ambisonics tracks.&lt;/li&gt;
+&lt;li&gt;Load decoder preset for your speaker setup.&lt;/li&gt;
+&lt;li&gt;Run quick signal check before recording.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;related-tutorial&#34;&gt;Related tutorial&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/ambisonics-in-30-minutes/&#34;&gt;Ambisonics in 30 Minutes: Your First Working Reaper Session Flow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/getting-started-icst-plugins-reaper/&#34;&gt;Getting Started with ICST Ambisonics Plugins in Reaper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;download-links&#34;&gt;Download links&lt;/h2&gt;
+&lt;h2 id=&#34;template-note&#34;&gt;Template note&lt;/h2&gt;
+&lt;p&gt;The template provides a clean 64-channel HOA project scaffold. Insert the ICST plugins and load the decoder preset that matches your studio setup.&lt;/p&gt;
+&lt;p&gt;The new &lt;code&gt;ICST Kompositionsstudio Session v4&lt;/code&gt; is tailored to the documented studio setup: ICST Composition Studio naming, a MultiDecoder-first structure, and notes for &lt;code&gt;LS 1-17&lt;/code&gt; plus &lt;code&gt;Sub/LFE on channel 18&lt;/code&gt;. &lt;code&gt;v3&lt;/code&gt; remains available as the more general guided version.&lt;/p&gt;
+&lt;h2 id=&#34;next-step&#34;&gt;Next step&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+    <item>
       <title>ICST Composition Studio</title>
       <link>https://ambisonics.ch/blog/icst-composer-studio-blog/</link>
       <guid>https://ambisonics.ch/blog/icst-composer-studio-blog/</guid>
       <pubDate>Tue, 27 May 2025 17:16:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;style&gt;
+        <description>&lt;style&gt;
 /* ── ICST Studio page — Anatole theme aligned ── */
 
 .studio-hero {
@@ -119,7 +155,12 @@
 &lt;/div&gt;
 &lt;p&gt;The &lt;strong&gt;ICST Composition Studio&lt;/strong&gt; at the Zurich University of the Arts is a dedicated production environment for electroacoustic music and spatial sound art. It supports the creation, research, and performance of immersive audio works.&lt;/p&gt;
 &lt;hr&gt;
+&lt;h1 id=&#34;what-this-page-is-for&#34;&gt;What This Page Is For&lt;/h1&gt;
+&lt;p&gt;This is the &lt;strong&gt;service and resource hub&lt;/strong&gt; for the ICST Composition Studio. From here, you can access technical preparation, speaker and routing information, studio infrastructure, and downloads for working on site.&lt;/p&gt;
+&lt;p&gt;If you are looking for the &lt;strong&gt;public programme&lt;/strong&gt;, go to &lt;a href=&#34;https://ambisonics.ch/blog/ascolta/&#34;&gt;ascolta&lt;/a&gt;. If you are looking for the &lt;strong&gt;artists in residence&lt;/strong&gt; and their projects, go to &lt;a href=&#34;https://ambisonics.ch/residenzen/&#34;&gt;Residencies&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h1 id=&#34;explore-the-studio&#34;&gt;Explore the Studio&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;div class=&#34;studio-nav&#34;&gt;
   &lt;a href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-equipment/&#34;&gt;&lt;i class=&#34;fas fa-microchip&#34;&gt;&lt;/i&gt; Equipment&lt;/a&gt;
   &lt;a href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-software/&#34;&gt;&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt; Software&lt;/a&gt;
@@ -131,25 +172,16 @@
   &lt;a href=&#34;https://ambisonics.ch/blog/ascolta/&#34;&gt;&lt;i class=&#34;fas fa-headphones&#34;&gt;&lt;/i&gt; ascolta&lt;/a&gt;
   &lt;a href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;&lt;i class=&#34;fas fa-download&#34;&gt;&lt;/i&gt; Downloads&lt;/a&gt;
 &lt;/div&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;explore-3d-audio-music&#34;&gt;Explore 3D Audio Music&lt;/h1&gt;
-&lt;p&gt;A selection of online resources for listening to Ambisonics and spatial audio:&lt;/p&gt;
-&lt;ul class=&#34;listen-links&#34;&gt;
-  &lt;li&gt;&lt;a href=&#34;https://audiospace.soundingfuture.com/tracks&#34;&gt;Sounding Future&lt;/a&gt; — spatial audio archive&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://hoast.iem.at/&#34;&gt;HOAST Library (IEM)&lt;/a&gt; — Higher-Order Ambisonics recordings&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&#34;https://www.wyastone.co.uk/all-labels/nimbus.html&#34;&gt;Nimbus UHJ&lt;/a&gt; — classic Ambisonics UHJ recordings&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;icst-b-format-archive&#34;&gt;ICST B-Format Archive&lt;/h2&gt;
-&lt;p&gt;The ICST maintains an archive of works recorded and encoded in ambiX B-format.&lt;/p&gt;
-&lt;p&gt;→ &lt;a href=&#34;https://ambisonics.ch/blog/sounding_future/&#34;&gt;Explore the B-Format Archive&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
 &lt;div class=&#34;studio-contact&#34;&gt;
   📍 Toni-Areal · Pfingstweidstrasse 96, Zürich · Room ZT 3.D02 &amp;nbsp;·&amp;nbsp;
   ✉️ &lt;a href=&#34;mailto:johannes.schuett@zhdk.ch&#34;&gt;johannes.schuett@zhdk.ch&lt;/a&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2026 ICST&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;related-areas&#34;&gt;Related Areas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/blog/ascolta/&#34;&gt;ascolta&lt;/a&gt; — public listening series for spatial and electroacoustic music&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/residenzen/&#34;&gt;Residencies&lt;/a&gt; — artist-in-residence programme, profiles, and projects&lt;/li&gt;
+&lt;/ul&gt;
 </description>
 
     </item>
@@ -159,8 +191,7 @@
       <guid>https://ambisonics.ch/blog/icst-composer-studio-overview/</guid>
       <pubDate>Mon, 05 May 2025 16:43:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;h4 id=&#34;studio-for-composition&#34;&gt;&lt;strong&gt;Studio for Composition&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;The Studio of the ICST is a Surround-Studio with 17 Geithain Speakers (8+5+4) and stereo-monitoring.
 A Mac Pro is offering various software such as sequencers, HD-recording- and Sound-tools, MAX MSP/Jitter, and PD. The studio is suitable especially for producing ambisonic/surround music. It combines the latest technologies with musical practice and puts its focus on sound research, computer music, and media art. The Studio is a place to support the production and composition of new works of electronic music, sound- and media art.&lt;/p&gt;
@@ -168,8 +199,6 @@ A Mac Pro is offering various software such as sequencers, HD-recording- and Sou
 &lt;hr&gt;
 &lt;p&gt;Room: &lt;strong&gt;ZT 3.D02 ICST Kompositionsstudio&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Contact: &lt;a href=&#34;mailto:johannes.schuett@zhdk.ch&#34;&gt;johannes.schuett@zhdk.ch&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -179,9 +208,8 @@ A Mac Pro is offering various software such as sequencers, HD-recording- and Sou
       <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/</guid>
       <pubDate>Tue, 03 Jun 2025 15:10:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;pre-installation-for-your-external-laptop&#34;&gt;Pre-installation for your external laptop&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;pre-installation-for-your-external-laptop&#34;&gt;Pre-installation for your external laptop&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;h3 id=&#34;audio&#34;&gt;&lt;strong&gt;AUDIO&lt;/strong&gt;&lt;/h3&gt;
 &lt;h4 id=&#34;install-rme-driver-driverkit&#34;&gt;Install RME Driver (DriverKit)&lt;/h4&gt;
 &lt;ul&gt;
@@ -238,7 +266,6 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
 &lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/Mission3.webp&#34; alt=&#34;Mission_3&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;hr&gt;
 &lt;h1 id=&#34;support--contact&#34;&gt;Support &amp;amp; Contact&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Help:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -252,8 +279,6 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
 &lt;hr&gt;
 &lt;h1 id=&#34;downloads&#34;&gt;Downloads&lt;/h1&gt;
 &lt;p&gt;→ All downloads are centralized on the &lt;a href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt; page.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -263,8 +288,7 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
       <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-equipment/</guid>
       <pubDate>Mon, 09 Jun 2025 15:10:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;p&gt;Core equipment and practical checklist for work at the ICST composition studio.&lt;/p&gt;
 &lt;div class=&#34;home-cards&#34;&gt;
   &lt;section class=&#34;home-card&#34;&gt;
@@ -312,8 +336,6 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
   &lt;/div&gt;
   &lt;p&gt;Wenn Sie spezielle Connectors wie MIDI/OSC oder andere Anschluesse benoetigen, bitte mitbringen und mit uns in Kontakt treten.&lt;/p&gt;
 &lt;/details&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -323,8 +345,7 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
       <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-software/</guid>
       <pubDate>Wed, 28 May 2025 15:11:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;p&gt;Software and plugin environment for production at the ICST Mac Pro.&lt;/p&gt;
 &lt;div class=&#34;home-cards&#34;&gt;
   &lt;section class=&#34;home-card&#34;&gt;
@@ -404,8 +425,6 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
   &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;
   &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/residenzen/&#34;&gt;Residencies&lt;/a&gt;
 &lt;/div&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -415,9 +434,8 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
       <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-regie/</guid>
       <pubDate>Tue, 08 Apr 2025 15:11:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;overview-of--the-icst-composition-studio&#34;&gt;&lt;strong&gt;Overview of  the ICST Composition Studio&lt;/strong&gt;&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;overview-of--the-icst-composition-studio&#34;&gt;&lt;strong&gt;Overview of  the ICST Composition Studio&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;p&gt;Status  April 2023&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-regie/foto_1.png&#34; alt=&#34;Regie-Tisch&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;direction-table&#34;&gt;Direction Table&lt;/h3&gt;
@@ -431,7 +449,7 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
     &lt;div class=&#34;home-card__actions&#34;&gt;
       &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://www.rme-audio.de/downloads.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;RME MADI USB Driver&lt;/a&gt;
       &lt;a class=&#34;hero__link&#34; href=&#34;https://www.synaptics.com/products/displaylink-graphics/downloads&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;DisplayLink Driver&lt;/a&gt;
-      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/&#34;&gt;Quick Start Guide&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-support/&#34;&gt;Quick Start Guide&lt;/a&gt;
     &lt;/div&gt;
   &lt;/section&gt;
   &lt;section class=&#34;home-card&#34;&gt;
@@ -464,7 +482,7 @@ Download and install  &lt;a href=&#34;https://www.synaptics.com/products/display
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;👉 See also: &lt;strong&gt;&lt;a href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-pre-installation/icst-kompositionsstudio-support/&#34;&gt;Quick Start Guide&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;👉 See also: &lt;strong&gt;&lt;a href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-support/&#34;&gt;Quick Start Guide&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;lsb-panel--two-operating-modes&#34;&gt;LSB Panel – Two Operating Modes&lt;/h2&gt;
 &lt;p&gt;The LSB panel offers two main layouts:&lt;/p&gt;
@@ -555,7 +573,6 @@ Lake People (Phone Amplifier) for 2x headphone monitoring.&lt;/p&gt;
   &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/residenzen/&#34;&gt;Residencies&lt;/a&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -565,8 +582,7 @@ Lake People (Phone Amplifier) for 2x headphone monitoring.&lt;/p&gt;
       <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/</guid>
       <pubDate>Mon, 02 Jun 2025 15:12:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;p&gt;Ambisonics - speaker - setting and coordinates
 &lt;strong&gt;Example for „ICST_AmbiDecoder 3.1.0&amp;quot; VST3  (2025)&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -590,7 +606,6 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Downloads:&lt;/strong&gt; → &lt;a href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;Downloads&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -600,9 +615,10 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
       <guid>https://ambisonics.ch/blog/audio-examples/</guid>
       <pubDate>Sat, 07 Mar 2026 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology (ICST) · Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Short preview snippets are hosted on this site. Full-length versions are linked externally to avoid GitHub Pages size limits.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
+&lt;p&gt;Short preview snippets are hosted on this site. Full-length versions are linked externally to avoid GitHub Page size limits.&lt;/p&gt;
+&lt;p&gt;Hinweis: Ambitest-Referenzbeispiel von Audiobrewers:
+&lt;a href=&#34;https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen&#34;&gt;Ambisonics Test Library&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;how-to-listen&#34;&gt;How To Listen&lt;/h3&gt;
 &lt;div class=&#34;hero__links&#34;&gt;
   &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/ambisonics-101/&#34;&gt;Ambisonics 101&lt;/a&gt;
@@ -611,31 +627,21 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
 &lt;/div&gt;
 &lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
 &lt;div class=&#34;home-cards&#34;&gt;
-  &lt;section class=&#34;home-card&#34;&gt;
-    &lt;h4&gt;Example 01 · Binaural Preview&lt;/h4&gt;
-    &lt;p&gt;Format: Binaural stereo · Preview duration: 60s&lt;/p&gt;
+  &lt;section class=&#34;home-card playback-card&#34;&gt;
+    &lt;h4&gt;3D-Audio-Test 01 · Binaural Preview&lt;/h4&gt;
+    &lt;p&gt;Format: Binaural stereo · Preview duration: 4min&lt;/p&gt;
     &lt;audio controls preload=&#34;none&#34;&gt;
-      &lt;source src=&#34;https://ambisonics.ch/audio/previews/example-01-binaural.ogg&#34; type=&#34;audio/ogg&#34;&gt;
-      &lt;source src=&#34;https://ambisonics.ch/audio/previews/example-01-binaural.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+      &lt;source src=&#34;https://ambisonics.ch/audio/ambitest%20bin.ogg&#34; type=&#34;audio/ogg&#34;&gt;
       Your browser does not support the audio element.
     &lt;/audio&gt;
-    &lt;div class=&#34;home-card__actions&#34;&gt;
-      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://music.apple.com/ch/album/english-suite-no-3-in-g-minor-bwv-808-ivb-les-agr%C3%A9ments/1702748649?i=1702749430&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Full-Length Version&lt;/a&gt;
-      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/audio/previews/example-01-binaural.ogg&#34;&gt;Download Preview&lt;/a&gt;
-    &lt;/div&gt;
   &lt;/section&gt;
-  &lt;section class=&#34;home-card&#34;&gt;
-    &lt;h4&gt;Example 02 · Speaker Render Preview&lt;/h4&gt;
-    &lt;p&gt;Format: Stereo fold-down from speaker render · Preview duration: 75s&lt;/p&gt;
+  &lt;section class=&#34;home-card playback-card&#34;&gt;
+    &lt;h4&gt;Example 02 · Speaker Stereo Preview&lt;/h4&gt;
+    &lt;p&gt;Format: Stereo for Speakers · Preview duration: 4min&lt;/p&gt;
     &lt;audio controls preload=&#34;none&#34;&gt;
-      &lt;source src=&#34;https://ambisonics.ch/audio/previews/example-02-speaker-render.ogg&#34; type=&#34;audio/ogg&#34;&gt;
-      &lt;source src=&#34;https://ambisonics.ch/audio/previews/example-02-speaker-render.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+      &lt;source src=&#34;https://ambisonics.ch/audio/ambitest%20stereo.ogg&#34; type=&#34;audio/ogg&#34;&gt;
       Your browser does not support the audio element.
     &lt;/audio&gt;
-    &lt;div class=&#34;home-card__actions&#34;&gt;
-      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://music.apple.com/ch/album/english-suite-no-3-in-g-minor-bwv-808-ivb-les-agr%C3%A9ments/1702748649?i=1702749430&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Full-Length Version&lt;/a&gt;
-      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/audio/previews/example-02-speaker-render.ogg&#34;&gt;Download Preview&lt;/a&gt;
-    &lt;/div&gt;
   &lt;/section&gt;
 &lt;/div&gt;
 </description>
@@ -647,7 +653,7 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
       <guid>https://ambisonics.ch/blog/terms-of-use/</guid>
       <pubDate>Sat, 07 Mar 2026 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;regulations-for-the-use-of-the-icst-composition-studio&#34;&gt;Regulations for the use of the ICST composition studio:&lt;/h3&gt;
 &lt;ul&gt;
@@ -676,7 +682,6 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;These regulations are valid for the duration of the studio booking. For projects and AiR guests, the agreed regulations are valid.&lt;/strong&gt;
 &lt;strong&gt;The next studio user will thank them.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -686,8 +691,7 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
       <guid>https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings/</guid>
       <pubDate>Tue, 20 May 2025 15:11:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;p&gt;Preset views and reference layouts for fast setup in the ICST studio.&lt;/p&gt;
 &lt;div class=&#34;home-cards&#34;&gt;
   &lt;section class=&#34;home-card&#34;&gt;
@@ -757,7 +761,6 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
   &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-software/&#34;&gt;Software&lt;/a&gt;
   &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-ambisonics-setting/&#34;&gt;Legacy Speaker Settings&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -767,8 +770,7 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
       <guid>https://ambisonics.ch/blog/icst-ambisonics-photos/</guid>
       <pubDate>Wed, 25 Jun 2025 15:12:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;h3 id=&#34;the-icst-kompositionsstudio&#34;&gt;The ICST Kompositionsstudio&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/Kompstudio.jpg&#34; alt=&#34;Studio overview&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2429.jpg&#34; alt=&#34;Studio session&#34;&gt;&lt;/p&gt;
@@ -778,8 +780,6 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2476.jpg&#34; alt=&#34;Speaker detail&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2498.jpg&#34; alt=&#34;Studio equipment&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-ambisonics-photos/_AAA2502.jpg&#34; alt=&#34;Studio at work&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -789,9 +789,8 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
       <guid>https://ambisonics.ch/blog/sounding_future/</guid>
       <pubDate>Wed, 11 Jun 2025 15:09:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;listen-online&#34;&gt;Listen Online&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;listen-online&#34;&gt;Listen Online&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/sounding_future/SoundingFuture.png&#34; alt=&#34;SoundingFuture&#34;&gt;
 &lt;a href=&#34;https://audiospace.soundingfuture.com/&#34;&gt;sounding FUTURE&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -802,41 +801,236 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;icst-b-format-archive&#34;&gt;ICST B-Format Archive&lt;/h2&gt;
-&lt;p&gt;All Ambisonics B-formats are stored in ambiX.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Composer&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Title&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Duration&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Format&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Order&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Channel ordering&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Channels&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;SR&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Bits&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Listening&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Downloads&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;AudioBrewers&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;AmbiTest_ambix_5th-order.wav&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;4&#39;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;wav&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;ACN/SN3D&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;MaxRe&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;35&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;48000&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;24&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Binaural&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;AmbiSpeakerTest&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;The ICST maintains an archive of works recorded and encoded in ambiX B-format.&lt;/p&gt;
+&lt;p&gt;→ &lt;a href=&#34;https://ambisonics.ch/blog/audio-examples/&#34;&gt;Explore the B-Format Archive&lt;/a&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>FAQ</title>
+      <link>https://ambisonics.ch/blog/faq/</link>
+      <guid>https://ambisonics.ch/blog/faq/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Answers to the most common questions about the ICST Ambisonics Plugins for REAPER and the ICST Ambisonics Tools for Max/MSP.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;installation--compatibility&#34;&gt;Installation &amp;amp; Compatibility&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Which REAPER version do the plugins require?&lt;/strong&gt;
+REAPER 6.0 or higher is recommended. The plugins run on macOS (Intel and Apple Silicon) and Windows 10/11 (64-bit). Linux is not officially supported.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Do the plugins work on Apple Silicon (M1/M2/M3)?&lt;/strong&gt;
+Yes — the plugins ship as universal binaries and run natively on Apple Silicon without Rosetta. Make sure you are using REAPER 6.78 or later for full compatibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where do I install the plugins?&lt;/strong&gt;
+Copy the &lt;code&gt;.vst3&lt;/code&gt; (or &lt;code&gt;.component&lt;/code&gt; for AU on macOS) files to your system VST3 folder, then rescan in REAPER under Options → Preferences → VST. See the &lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/02_installation/&#34;&gt;Installation guide&lt;/a&gt; for exact paths.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why does REAPER not show the plugins after installation?&lt;/strong&gt;
+Trigger a manual VST rescan: Options → Preferences → Plug-ins → VST → Re-scan. If the plugins still don&amp;rsquo;t appear, verify the plugin files are in the correct folder and are not quarantined by macOS Gatekeeper.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On macOS, I get a message &amp;ldquo;Apple cannot verify this developer&amp;rdquo; — what do I do?&lt;/strong&gt;
+Open System Settings → Privacy &amp;amp; Security → scroll down and click &amp;ldquo;Open Anyway&amp;rdquo; next to the blocked plugin. You may need to do this once per plugin file.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;signal-flow--setup&#34;&gt;Signal Flow &amp;amp; Setup&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;What is the difference between AmbiEncoder and MultiEncoder?&lt;/strong&gt;
+The AmbiEncoder handles a single mono audio source and positions it in 3D space. The MultiEncoder handles multiple sources simultaneously (up to 36 in v3.2) and is the recommended choice for production sessions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I have audio in REAPER but hear nothing through the decoder — what&amp;rsquo;s wrong?&lt;/strong&gt;
+Check three things in order: (1) the channel count on your B-Format bus must match the order you are working in (e.g. 16 channels for 3rd order HOA), (2) the decoder preset must match your speaker layout, (3) your REAPER output routing must address the correct hardware outputs. The &lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Step-by-Step Setup&lt;/a&gt; guide walks through each step.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How many output channels does third-order HOA need?&lt;/strong&gt;
+Third-order Ambisonics uses (3+1)² = 16 B-Format channels. Seventh-order uses 64 channels. The encoder and decoder must be set to the same order.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Can I use the ICST Decoder and REAPER&amp;rsquo;s built-in FX chain together?&lt;/strong&gt;
+Yes. Place any processing before the decoder on the B-Format bus. Gain, filtering, and reverb all work as expected. Avoid processing that changes channel count downstream of the encoder.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;osc-control&#34;&gt;OSC Control&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The OSC encoder does not respond to my messages — what should I check?&lt;/strong&gt;
+First confirm the correct UDP port is open in REAPER (Extensions → ReaScript or OSC/web). The default ICST listener port is &lt;strong&gt;8000&lt;/strong&gt;. Then check that the message path matches the expected syntax — see &lt;a href=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC Syntax Reference&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the minimum OSC message to move a source?&lt;/strong&gt;
+&lt;code&gt;/ambi/source/[id]/aed [azimuth] [elevation] [distance]&lt;/code&gt; — where azimuth and elevation are in degrees, distance is a normalised 0–1 value. Source IDs start at 1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Can I automate OSC from Ableton Live?&lt;/strong&gt;
+Yes — use Max for Live MIDI or OSC clips to send control messages, synchronised via LTC. The &lt;a href=&#34;https://ambisonics.ch/post/ableton-reaper/&#34;&gt;Ableton + REAPER bridging tutorial&lt;/a&gt; documents a complete 7th-order workflow.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;binaural--monitoring&#34;&gt;Binaural &amp;amp; Monitoring&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Can I monitor in binaural without a speaker array?&lt;/strong&gt;
+Yes. The AmbiDecoder includes a binaural decoding mode using HRTFs. Enable it in the decoder&amp;rsquo;s output section and route to a stereo output. For higher-quality HRTF rendering, the &lt;a href=&#34;https://ambisonics.ch/post/getting-started-icst-plugins-reaper/&#34;&gt;DearVR integration tutorial&lt;/a&gt; covers using a third-party binaural renderer on the decoder output.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The binaural output sounds mono or collapsed — why?&lt;/strong&gt;
+Usually caused by a channel count mismatch: the decoder is receiving fewer HOA channels than it expects. Check that the B-Format bus send is set to full multichannel (not summed to stereo).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;icst-ambisonics-tools-maxmsp&#34;&gt;ICST Ambisonics Tools (Max/MSP)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Which version of Max is required?&lt;/strong&gt;
+Max 8.0 or later. The package is available through the Max Package Manager.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is the difference between the Plugins and the Tools?&lt;/strong&gt;
+The Plugins run inside REAPER as VST/AU effects and are designed for session-based, multitrack work. The Tools are Max/MSP externals for live spatialisation, algorithmic composition, and custom patching outside a DAW.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;updates--versions&#34;&gt;Updates &amp;amp; Versions&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;How do I update from v3.1 to v3.2?&lt;/strong&gt;
+Replace the old plugin files with the new ones from the &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;GitHub Releases page&lt;/a&gt; and rescan in REAPER. Existing sessions will open correctly — no settings migration is required. Check &lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/00_new/&#34;&gt;What&amp;rsquo;s New in v3.2&lt;/a&gt; for new features.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where can I report bugs or request features?&lt;/strong&gt;
+Open an issue on the &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/issues&#34;&gt;GitHub repository&lt;/a&gt;. Include your OS version, REAPER version, plugin version, and a minimal reproducible project if possible.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>ICST B-Format Archive</title>
+      <link>https://ambisonics.ch/blog/b-format-archive/</link>
+      <guid>https://ambisonics.ch/blog/b-format-archive/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;A curated collection of Ambisonics B-Format reference files for testing decoders, binaural renderers, and spatial audio pipelines. All files use the &lt;strong&gt;ambiX&lt;/strong&gt; convention: ACN channel ordering, SN3D normalisation.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;audio-files&#34;&gt;Audio Files&lt;/h2&gt;
+&lt;div class=&#34;bformat-archive&#34; id=&#34;bformat-0&#34; data-bformat-archive&gt;
+  &lt;div class=&#34;bformat-archive__controls&#34;&gt;
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Search&lt;/span&gt;
+      &lt;input
+        type=&#34;search&#34;
+        data-bformat-search
+        placeholder=&#34;Composer, title, format...&#34;
+      &gt;
+    &lt;/label&gt;
+
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Order&lt;/span&gt;
+      &lt;select data-bformat-order-filter&gt;
+        &lt;option value=&#34;all&#34;&gt;All&lt;/option&gt;&lt;option value=&#34;5th order&#34;&gt;5th order&lt;/option&gt;&lt;/select&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Sort by&lt;/span&gt;
+      &lt;select data-bformat-sort-key&gt;
+        &lt;option value=&#34;title&#34;&gt;Title&lt;/option&gt;
+        &lt;option value=&#34;order&#34;&gt;Order&lt;/option&gt;
+        &lt;option value=&#34;channels&#34;&gt;Channels&lt;/option&gt;
+        &lt;option value=&#34;sample_rate&#34;&gt;SR&lt;/option&gt;
+        &lt;option value=&#34;bits&#34;&gt;Bits&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Direction&lt;/span&gt;
+      &lt;select data-bformat-sort-direction&gt;
+        &lt;option value=&#34;asc&#34;&gt;Ascending&lt;/option&gt;
+        &lt;option value=&#34;desc&#34;&gt;Descending&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;bformat-archive__table-wrap&#34;&gt;
+    &lt;table class=&#34;bformat-archive__table&#34;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Composer&lt;/th&gt;
+          &lt;th&gt;Title&lt;/th&gt;
+          &lt;th&gt;Duration&lt;/th&gt;
+          &lt;th&gt;Format&lt;/th&gt;
+          &lt;th&gt;Order&lt;/th&gt;
+          &lt;th&gt;Normalisation&lt;/th&gt;
+          &lt;th&gt;Channels&lt;/th&gt;
+          &lt;th&gt;SR&lt;/th&gt;
+          &lt;th&gt;Bits&lt;/th&gt;
+          &lt;th&gt;Listen&lt;/th&gt;
+          &lt;th&gt;Download&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody data-bformat-body&gt;&lt;tr
+            data-bformat-row
+            data-search=&#34;audiobrewers ambitest_ambix_5th-order.wav wav 5th order acn/sn3d&#34;
+            data-order=&#34;5&#34;
+            data-channels=&#34;36&#34;
+            data-sample-rate=&#34;48000&#34;
+            data-bits=&#34;24&#34;
+            data-title=&#34;ambitest_ambix_5th-order.wav&#34;
+            data-order-label=&#34;5th order&#34;
+          &gt;
+            &lt;td&gt;&lt;a href=&#34;https://www.audiobrewers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;AudioBrewers&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;AmbiTest_ambix_5th-order.wav&lt;/td&gt;
+            &lt;td&gt;4′&lt;/td&gt;
+            &lt;td&gt;WAV&lt;/td&gt;
+            &lt;td&gt;5th order&lt;/td&gt;
+            &lt;td&gt;ACN/SN3D&lt;/td&gt;
+            &lt;td&gt;36&lt;/td&gt;
+            &lt;td&gt;48000&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;https://e.pcloud.link/publink/show?code=XZgkkGZzkPOKp87E2uqPOVuRrPscSJoUR37&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;
+                  Binaural ↗
+                &lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;—&lt;/td&gt;
+          &lt;/tr&gt;&lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+
+  &lt;p class=&#34;bformat-archive__empty&#34; data-bformat-empty hidden&gt;
+    No entries found for the current filter.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  (function () {
+    var root = document.getElementById(&#34;bformat-0&#34;);
+    if (!root) return;
+    var body = root.querySelector(&#34;[data-bformat-body]&#34;);
+    var rows = Array.prototype.slice.call(root.querySelectorAll(&#34;[data-bformat-row]&#34;));
+    var search = root.querySelector(&#34;[data-bformat-search]&#34;);
+    var orderFilter = root.querySelector(&#34;[data-bformat-order-filter]&#34;);
+    var sortKey = root.querySelector(&#34;[data-bformat-sort-key]&#34;);
+    var sortDirection = root.querySelector(&#34;[data-bformat-sort-direction]&#34;);
+    var empty = root.querySelector(&#34;[data-bformat-empty]&#34;);
+
+    function getValue(row, key) {
+      if (key === &#34;title&#34;) return row.getAttribute(&#34;data-title&#34;) || &#34;&#34;;
+      if (key === &#34;order&#34;) return Number(row.getAttribute(&#34;data-order&#34;) || &#34;0&#34;);
+      if (key === &#34;channels&#34;) return Number(row.getAttribute(&#34;data-channels&#34;) || &#34;0&#34;);
+      if (key === &#34;sample_rate&#34;) return Number(row.getAttribute(&#34;data-sample-rate&#34;) || &#34;0&#34;);
+      if (key === &#34;bits&#34;) return Number(row.getAttribute(&#34;data-bits&#34;) || &#34;0&#34;);
+      return row.getAttribute(&#34;data-title&#34;) || &#34;&#34;;
+    }
+
+    function filterRows() {
+      var q = (search.value || &#34;&#34;).toLowerCase().trim();
+      var order = (orderFilter.value || &#34;all&#34;).toLowerCase();
+      var visible = 0;
+      rows.forEach(function (row) {
+        var haystack = (row.getAttribute(&#34;data-search&#34;) || &#34;&#34;).toLowerCase();
+        var rowOrder = (row.getAttribute(&#34;data-order-label&#34;) || &#34;&#34;).toLowerCase();
+        var matchesQuery = !q || haystack.indexOf(q) !== -1;
+        var matchesOrder = order === &#34;all&#34; || rowOrder === order;
+        var show = matchesQuery &amp;&amp; matchesOrder;
+        row.hidden = !show;
+        if (show) visible += 1;
+      });
+      empty.hidden = visible !== 0;
+    }
+
+    function sortRows() {
+      var key = sortKey.value || &#34;title&#34;;
+      var dir = sortDirection.value === &#34;desc&#34; ? -1 : 1;
+      rows.sort(function (a, b) {
+        var av = getValue(a, key);
+        var bv = getValue(b, key);
+        if (typeof av === &#34;number&#34; &amp;&amp; typeof bv === &#34;number&#34;) return (av - bv) * dir;
+        return String(av).localeCompare(String(bv)) * dir;
+      });
+      rows.forEach(function (row) { body.appendChild(row); });
+    }
+
+    function refresh() {
+      sortRows();
+      filterRows();
+    }
+
+    [search, orderFilter, sortKey, sortDirection].forEach(function (el) {
+      el.addEventListener(&#34;input&#34;, refresh);
+      el.addEventListener(&#34;change&#34;, refresh);
+    });
+
+    refresh();
+  })();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;format-reference&#34;&gt;Format Reference&lt;/h2&gt;
+&lt;p&gt;All files in this archive follow the &lt;strong&gt;ambiX&lt;/strong&gt; standard:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Channel ordering:&lt;/strong&gt; ACN (Ambisonic Channel Number) — channels sorted by degree and order index&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Normalisation:&lt;/strong&gt; SN3D (Schmidt Semi-Normalisation)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Encoding:&lt;/strong&gt; B-Format, not speaker-decoded audio&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To use these files: import into REAPER, set the track to the correct channel count, and route through an ICST AmbiDecoder configured for the matching order. See the &lt;a href=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Step-by-Step Setup&lt;/a&gt; for a walkthrough.&lt;/p&gt;
 </description>
 
     </item>
@@ -846,7 +1040,7 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
       <guid>https://ambisonics.ch/blog/downloads/</guid>
       <pubDate>Thu, 12 Jun 2025 15:09:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Audience:&lt;/strong&gt; Composer, Student, Researcher, Studio visitor.&lt;/p&gt;
 &lt;p&gt;Downloads for studio and Ambisonics workflows in one place.&lt;/p&gt;
 &lt;div class=&#34;home-cards&#34;&gt;
   &lt;section class=&#34;home-card&#34;&gt;
@@ -859,10 +1053,29 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
   &lt;/section&gt;
   &lt;section class=&#34;home-card&#34;&gt;
     &lt;h4&gt;Patches &amp; Templates&lt;/h4&gt;
-    &lt;p&gt;Ready-to-use patches and templates for Max and Ableton Live.&lt;/p&gt;
+    &lt;p&gt;Ready-to-use patches and templates for Max, Ableton Live, and REAPER.&lt;/p&gt;
     &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/downloads/reaper/ICST_HOA_Reaper_Session_ICST_Kompositionsstudio_v4.RPP&#34;&gt;ICST Kompositionsstudio v4&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v3.RPP&#34;&gt;HOA Reaper Session v3&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v2.RPP&#34;&gt;HOA Reaper Session v2&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/download-pack-1-hoa-reaper-template/&#34;&gt;HOA Reaper Template Pack&lt;/a&gt;
       &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat&#34;&gt;OSC MultiEncoder (Max)&lt;/a&gt;
       &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv&#34;&gt;Multi-Panner (Ableton)&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Guides &amp; Documentation&lt;/h4&gt;
+    &lt;p&gt;Onboarding guides for plugin users and studio residents — printable PDFs.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/downloads/icst-ambisonics-start-guide.pdf&#34; download&gt;Plugin Start Guide (PDF)&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/downloads/icst-resident-guide.pdf&#34; download&gt;Resident Guide (PDF)&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;B-Format Test Files&lt;/h4&gt;
+    &lt;p&gt;Reference ambiX recordings (ACN/SN3D) for testing decoders and binaural renderers.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/blog/b-format-archive/&#34;&gt;B-Format Archive&lt;/a&gt;
     &lt;/div&gt;
   &lt;/section&gt;
 &lt;/div&gt;
@@ -873,11 +1086,16 @@ Sub/LFE  &amp;ndash;&amp;gt; channel 18&lt;/p&gt;
     &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/kompositionsstudio-speakers-max.txt.zip&#34;&gt;Kompositionsstudio Speaker for Max&lt;/a&gt;
     &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat&#34;&gt;ICST MultiEncoder Group OSC&lt;/a&gt;
     &lt;a class=&#34;hero__link&#34; href=&#34;https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv&#34;&gt;E4L Multi-Panner OSC&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/downloads/reaper/ICST_HOA_Reaper_Session_ICST_Kompositionsstudio_v4.RPP&#34;&gt;ICST Kompositionsstudio Session v4&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v3.RPP&#34;&gt;ICST HOA Reaper Session Starter v3&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v2.RPP&#34;&gt;ICST HOA Reaper Session Starter v2&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/downloads/reaper/ICST_HOA_Reaper_Template_Pack_1.RPP&#34;&gt;ICST HOA Reaper Template Pack&lt;/a&gt;
     &lt;a class=&#34;hero__link&#34; href=&#34;https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV&#34;&gt;Big Files&lt;/a&gt;
     &lt;a class=&#34;hero__link&#34; href=&#34;https://www.zhdk.ch/forschung/icst/software-downloads-5379&#34;&gt;ICST Software Downloads&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/downloads/icst-ambisonics-start-guide.pdf&#34; download&gt;Plugin Start Guide (PDF)&lt;/a&gt;
+    &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/downloads/icst-resident-guide.pdf&#34; download&gt;Resident Guide (PDF)&lt;/a&gt;
   &lt;/div&gt;
 &lt;/details&gt;
-&lt;hr&gt;
 </description>
 
     </item>

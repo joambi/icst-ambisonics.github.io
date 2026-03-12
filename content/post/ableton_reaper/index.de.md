@@ -2,6 +2,9 @@
 title: Ableton Live & ICST Ambisonics Integration
 description: "Anleitung zur Aufnahme von 7. Ordnung Ambisonics aus Ableton Live in Reaper über BlackHole, OSC-gesteuerte MultiEncoder-Automation und LTC-Sync."
 date: 2025-03-16T09:44:58+01:00
+slug: ableton-reaper
+aliases:
+  - /post/ableton_reaper/
 year: 2025
 month: 2025-03
 weight: 7
@@ -91,4 +94,3 @@ Tipp: Stelle sicher, dass du die gleichen OSC-Portnummern in Reaper verwendest. 
 Weitere Details findest du in der Dokumentation für Ableton Live, Reaper und den ICST MultiEncoder.
 
 ----
-

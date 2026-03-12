@@ -9,7 +9,7 @@
 ><head>
   <meta charset="utf-8" />
   <title>
-    map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]
+    Johannes Schuett
         |
         Tutorials
       
@@ -19,15 +19,15 @@
   </title>
 
   <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="author" content="map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]" />
+  <meta name="author" content="Johannes Schuett" />
   <meta
     name="description"
     content="Step-by-step tutorials for the ICST Ambisonics Plugins — OSC control, MaxMSP integration, Ableton Live workflow, GyrOSC, and more."
   />
   
   
-        <link rel="stylesheet" href="/css/anatole.min.82767c91ec7cacc8e4bb7b66480fc33a9288ea586d8904195a5d90a8dbcf3801.css" integrity="sha256-gnZ8kex8rMjku3tmSA/DOpKI6lhtiQQZWl2QqNvPOAE=" crossorigin="anonymous" />
-      
+      <link rel="stylesheet" href="/css/anatole.min.c67a96166a1b34f0c4d28751874d6cd50877fa3f2e94228b181b56faf7604337.css" integrity="sha256-xnqWFmobNPDE0odRh01s1Qh3&#43;j8ulCKLGBtW&#43;vdgQzc=" crossorigin="anonymous" />
+    
   <link
     rel="stylesheet"
     href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
@@ -157,13 +157,14 @@
         </div>
       
       <div class="sidebar__introduction-description">
-        <p>Spatial Audio Plugins & Tutorials<br />by ICST · Zurich University of the Arts</p>
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST / Zurich University of the Arts</p>
       </div>
     </div>
     <ul class="sidebar__list">
       
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="https://www.zhdk.ch/forschung/icst"
             target="_blank"
             rel="noopener me"
@@ -171,13 +172,25 @@
             title="Zurich University of the Arts"
           >
             
-              <img src="/images/zhdk-logo.svg" alt="Zurich University of the Arts" style="height:2em; width:auto; vertical-align:middle; filter: var(--icon-filter, none);" aria-hidden="true"/>
+              
+                <span class="sidebar__social-image sidebar__social-image--zhdk" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" fill="currentColor">
+  <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Z</text>
+  <line x1="40" y1="10" x2="54" y2="10" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="20" x2="54" y2="20" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="30" x2="54" y2="30" stroke="currentColor" stroke-width="2.5"/>
+  <text x="58" y="32" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" letter-spacing="0.5">hdk</text>
+</svg>
+
+                </span>
+              
             
           </a>
         </li>
       
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="https://github.com/joambi"
             target="_blank"
             rel="noopener me"
@@ -185,13 +198,14 @@
             title="GitHub"
           >
             
-              <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+              <i class="fab fa-github sidebar__social-icon" aria-hidden="true"></i>
             
           </a>
         </li>
       
         <li class="sidebar__list-item">
           <a
+            class="sidebar__social-link"
             href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
             target="_blank"
             rel="noopener me"
@@ -199,7 +213,7 @@
             title="YouTube"
           >
             
-              <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+              <i class="fab fa-youtube sidebar__social-icon" aria-hidden="true"></i>
             
           </a>
         </li>
@@ -238,9 +252,7 @@
       <li class="footer__item">
         <a
           class="link"
-          href="https://www.iubenda.com/terms-and-conditions/70769495"
-          
-            target="_blank" rel="noopener noreferrer"
+          href="/terms-and-conditions/"
           
           title=""
         >
@@ -283,10 +295,10 @@
             
             <a
               
-              href="/about/"
+              href="/start/"
               
               title=""
-              >About</a
+              >Start</a
             >
           </li>
         
@@ -302,6 +314,14 @@
               
               
                 
+                  
+                
+
+              
+                
+
+              
+                
 
               
                 
@@ -309,8 +329,8 @@
               
 
 
-              <label class="optionswitch__label" for="1"
-                >Plugins &amp; Tools <i class="fa fa-angle-down" aria-hidden="true"></i
+              <label class="optionswitch__label nav__link--active" for="1"
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -319,20 +339,42 @@
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/icst-ambisonics-plugins/"
+                      href="/post/"
                       
                       title=""
-                      >ICST AmbiPlugins Docs</a
+                      >All Tutorials</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/icst-ambisonics-tools/"
+                      href="/ambisonics-101/"
                       
                       title=""
-                      >Ambi Tools</a
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/composing-in-ambisonics/"
+                      
+                      title=""
+                      >For Composers</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
                     >
                   </li>
                 
@@ -355,8 +397,6 @@
 
               
                 
-                  
-                
 
               
                 
@@ -364,8 +404,8 @@
               
 
 
-              <label class="optionswitch__label nav__link--active" for="2"
-                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+              <label class="optionswitch__label" for="2"
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -374,32 +414,30 @@
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/ambisonics-101/"
+                      href="/for-residents/"
                       
                       title=""
-                      >Ambisonics 101</a
+                      >Resident Guide</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/post/"
+                      href="/blog/icst-composer-studio-blog/"
                       
                       title=""
-                      >All Tutorials</a
+                      >Studio Hub</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
-                      
-                        target="_blank" rel="noopener noreferrer"
+                      href="/residenzen/"
                       
                       title=""
-                      >Videos</a
+                      >Residencies</a
                     >
                   </li>
                 
@@ -427,7 +465,7 @@
 
 
               <label class="optionswitch__label" for="3"
-                >Ascolta <i class="fa fa-angle-down" aria-hidden="true"></i
+                >ASCOLTA <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -436,20 +474,20 @@
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/ascolta/17-ascolta/"
+                      href="/blog/ascolta/"
                       
                       title=""
-                      >Next Session</a
+                      >ASCOLTA</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/ascolta/"
+                      href="/blog/sounding_future/"
                       
                       title=""
-                      >All Sessions</a
+                      >Listening</a
                     >
                   </li>
                 
@@ -474,10 +512,25 @@
                 
 
               
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
 
 
               <label class="optionswitch__label" for="4"
-                >Residenzen <i class="fa fa-angle-down" aria-hidden="true"></i
+                >Docs <i class="fa fa-angle-down" aria-hidden="true"></i
               ></label>
 
               <div class="optionswitch__triangle"></div>
@@ -486,161 +539,70 @@
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/residenzen/icst-studio-residences-2025/"
+                      href="/icst-ambisonics-plugins/"
                       
                       title=""
-                      >Residenzen 2025</a
+                      >Plugin Docs</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/residenzen/icst-studio-residences-2026/"
+                      href="/icst-ambisonics-tools/"
                       
                       title=""
-                      >Residenzen 2026</a
-                    >
-                  </li>
-                
-              </ul>
-            </div>
-          </li>
-        
-
-      
-        
-        
-
-          <li class="nav__list-item">
-            <div class="optionswitch">
-              <input class="optionswitch__picker" type="checkbox" id="5" hidden />
-
-              
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-                
-
-              
-
-
-              <label class="optionswitch__label" for="5"
-                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
-              ></label>
-
-              <div class="optionswitch__triangle"></div>
-              <ul class="optionswitch__list">
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/icst-composer-studio-blog/"
-                      
-                      title=""
-                      >Composition Studio</a
+                      >Ambi Tools</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/audio-examples/"
+                      href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
                       
                       title=""
-                      >Audio Examples</a
+                      >OSC Syntax</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-equipment/"
+                      href="/icst-ambisonics-plugins/15_best_practices/"
                       
                       title=""
-                      >Equipment</a
+                      >Best Practices</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-software/"
+                      href="/blog/b-format-archive/"
                       
                       title=""
-                      >Software</a
+                      >B-Format Archive</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-speaker-settings/"
+                      href="/blog/faq/"
                       
                       title=""
-                      >Speaker Setup</a
+                      >FAQ</a
                     >
                   </li>
                 
                   <li class="optionswitch__list-item">
                     
                     <a
-                      href="/blog/icst-kompositionsstudio-regie/"
+                      href="/links/"
                       
                       title=""
-                      >Regie</a
-                    >
-                  </li>
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/icst-kompositionsstudio-pre-installation/"
-                      
-                      title=""
-                      >Pre-Installation</a
-                    >
-                  </li>
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/downloads/"
-                      
-                      title=""
-                      >Downloads</a
-                    >
-                  </li>
-                
-                  <li class="optionswitch__list-item">
-                    
-                    <a
-                      href="/blog/"
-                      
-                      title=""
-                      >All Studio Pages</a
+                      >Links</a
                     >
                   </li>
                 
@@ -656,10 +618,25 @@
             
             <a
               
-              href="/links/"
+              href="/blog/downloads/"
               
               title=""
-              >Links</a
+              >Downloads</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
             >
           </li>
         
@@ -691,6 +668,11 @@
           </div>
         </li>
       
+      <li class="nav__list-item">
+        <a href="/search/" title="Search">
+          <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
       
         <li class="nav__list-item">
           <div class="themeswitch">
@@ -704,130 +686,1027 @@
   </nav>
 </div>
 </header>
-  <div class="archive animated fadeInDown">
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/" title="ICST AmbiEncoder – OSC Syntax">ICST AMBIENCODER – OSC SYNTAX</a>
-          
-          
-          <div class="archive__list-date">Mar 16</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/" title="MaxMSP &amp; ICST AmbiEncoder – OSC Communication">MAXMSP &amp; ICST AMBIENCODER – OSC COMMUNICATION</a>
-          
-          
-          <div class="archive__list-date">Mar 16</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/osc-2-fx/" title="ICST AmbiEncoder – OSC to FX Mapping">ICST AMBIENCODER – OSC TO FX MAPPING</a>
-          
-          
-          <div class="archive__list-date">May 16</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/gp-manipulation/" title="ICST MultiEncoder – Group Animation">ICST MULTIENCODER – GROUP ANIMATION</a>
-          
-          
-          <div class="archive__list-date">May 28</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/icst-grapes/" title="ICST AmbiPlugins &amp; Grapes – 3D Control">ICST AMBIPLUGINS &amp; GRAPES – 3D CONTROL</a>
-          
-          
-          <div class="archive__list-date">Mar 16</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/gyrosc/" title="ICST AmbiPlugins &amp; GyrOSC">ICST AMBIPLUGINS &amp; GYROSC</a>
-          
-          
-          <div class="archive__list-date">May 28</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/ableton_reaper/" title="Ableton Live &amp; ICST Ambisonics Integration">ABLETON LIVE &amp; ICST AMBISONICS INTEGRATION</a>
-          
-          
-          <div class="archive__list-date">Mar 16</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/icst-scripts/" title="ICST AmbiEncoder – Spiral Walk Script">ICST AMBIENCODER – SPIRAL WALK SCRIPT</a>
-          
-          
-          <div class="archive__list-date">Jul 17</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/circle_selected/" title="ICST AmbiEncoder – CircleSelected">ICST AMBIENCODER – CIRCLESELECTED</a>
-          
-          
-          <div class="archive__list-date">Jul 19</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/blauertsche_b%C3%A4nder/" title="Blauert&#39;s Bands">BLAUERT&#39;S BANDS</a>
-          
-          
-          <div class="archive__list-date">May 16</div>
-          
-        </li>
-      </ul>
-    
-      <ul class="archive__list">
-        <li class="archive__list-item">
-          
-            <a class="archive__list-title" href="/post/multi-decoder-mode/" title="ICST AmbiDecoder – Multi-Decoder Mode">ICST AMBIDECODER – MULTI-DECODER MODE</a>
-          
-          
-          <div class="archive__list-date">Nov 10</div>
-          
-        </li>
-      </ul>
-    
+  
+
+  
+    <div class="post animated fadeInDown">
+      <div class="post__content"><p>Step-by-step workflows for spatial audio production with ICST Ambisonics Plugins in REAPER — from first setup to OSC automation, controller integration, and DAW bridging. Use the difficulty badges and filters below to find the right starting point.</p>
+<p>📺 <a href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins">@ZHDK_ICST on YouTube</a></p>
+</div>
+    </div>
+  
+
+  <div class="post animated fadeInDown">
+    <div class="post__content">
+      <h2>Quick Starts</h2>
+      <div class="home-cards">
+        <div class="home-card">
+          <h4>First Setup</h4>
+          <p>
+            
+              Start with Reaper setup and baseline routing.
+            
+          </p>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="/post/getting-started-icst-plugins-reaper/">
+              Start now
+            </a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>Production Workflow</h4>
+          <p>
+            
+              Move from stereo to HOA7 with a repeatable session flow.
+            
+          </p>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="/post/stereo-to-hoa7-session/">
+              Open guide
+            </a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>OSC & Automation</h4>
+          <p>
+            
+              Deep dive into OSC syntax, mapping, and controller integration.
+            
+          </p>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">
+              Open OSC
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="docs-index animated fadeInDown">
+    <div data-tutorials-root>
+    <div class="archive__heading">
+      All Tutorials
+    </div>
+    <p class="archive__intro">
+      
+        Looking for studio news and residency updates? You can find them in the <a href="/blog/">Studio Blog</a>.
+      
+    </p>
+    <div class="tutorial-filters" role="group" aria-label="Tutorial filters">
+      <button type="button" class="tutorial-filters__btn is-active" data-filter="all">All</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="beginner">Beginner</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="osc">OSC</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="reaper">Reaper</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="max">Max</button>
+    </div>
+    <div class="docs-index__chapters">
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/ambisonics-in-30-minutes/" data-filter-text="tutorial reaper ambisonics getting-started workflow ambisonics in 30 minutes: your first working reaper session flow /post/ambisonics-in-30-minutes/ beginner">
+          <div class="docs-index__chapter-number">1</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              Ambisonics in 30 Minutes: Your First Working Reaper Session Flow
+              <span class="difficulty-badge difficulty-badge--beginner">beginner</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">A fast onboarding tutorial to build a stable first Ambisonics session in Reaper with ICST plugins.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 9, 2026
+                
+              
+              · 1 min read
+              
+                · Focus: 
+                #tutorial, #reaper
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Build encoder → B-format bus → decoder routing from scratch in REAPER</li>
+                
+                  <li>Diagnose and fix the most common first-session errors</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/stereo-to-hoa7-session/" data-filter-text="tutorial hoa7 reaper ambisonics workflow from stereo to hoa7: a step-by-step session /post/stereo-to-hoa7-session/ intermediate">
+          <div class="docs-index__chapter-number">2</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              From Stereo to HOA7: A Step-by-Step Session
+              <span class="difficulty-badge difficulty-badge--intermediate">intermediate</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Structured walkthrough from a stereo production mindset to a practical HOA7 Ambisonics session, including routing, movement design, and export checks.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 8, 2026
+                
+              
+              · 2 min read
+              
+                · Focus: 
+                #tutorial, #hoa7
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Translate a stereo production mindset into a 7th-order Ambisonics workflow</li>
+                
+                  <li>Design controlled source movement and validate the HOA7 export</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/getting-started-icst-plugins-reaper/" data-filter-text="tutorial reaper ambiencoder getting-started workflow getting started with icst ambisonics plugins in reaper /post/getting-started-icst-plugins-reaper/ beginner">
+          <div class="docs-index__chapter-number">3</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              Getting Started with ICST Ambisonics Plugins in Reaper
+              <span class="difficulty-badge difficulty-badge--beginner">beginner</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">A practical starter guide for composers, students, and technicians to set up ICST Ambisonics Plugins in Reaper and complete a first working session.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 8, 2026
+                
+              
+              · 2 min read
+              
+                · Focus: 
+                #tutorial, #reaper
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Complete a first working spatial audio session in REAPER step by step</li>
+                
+                  <li>Structured checklist from plugin install to binaural monitoring</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/osc-10-key-messages/" data-filter-text="osc ambiencoder tutorial reference osc im icst ambiencoder - die 10 wichtigsten messages /post/osc-10-key-messages/ intermediate">
+          <div class="docs-index__chapter-number">4</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages
+              <span class="difficulty-badge difficulty-badge--intermediate">intermediate</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Praxisorientierte OSC-Referenz fuer den ICST AmbiEncoder mit den wichtigsten Message-Typen, Setup-Hinweisen und Debugging-Checkliste.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 8, 2026
+                
+              
+              · 1 min read
+              
+                · Focus: 
+                #osc, #ambiencoder
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Die 10 wichtigsten OSC-Messages für den ICST AmbiEncoder auf einen Blick</li>
+                
+                  <li>OSC-Verbindung in 2 Minuten einrichten und mit Checkliste debuggen</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/reaper-setup-20-minuten/" data-filter-text="reaper ambiencoder tutorial workflow reaper ambisonics setup in 20 minuten (icst workflow) /post/reaper-setup-20-minuten/ beginner">
+          <div class="docs-index__chapter-number">5</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              Reaper Ambisonics Setup in 20 Minuten (ICST Workflow)
+              <span class="difficulty-badge difficulty-badge--beginner">beginner</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Schritt-fuer-Schritt Einstieg in ein stabiles Reaper-Ambisonics-Setup mit ICST Plugins, Routing und erstem Monitoring-Test.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 8, 2026
+                
+              
+              · 2 min read
+              
+                · Focus: 
+                #reaper, #ambiencoder
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>ICST AmbiEncoder, B-Format-Bus und Decoder in 20 Minuten aufsetzen</li>
+                
+                  <li>Routing prüfen und ersten Raumklang-Test in REAPER durchführen</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/relaunch-2026/" data-filter-text="update workflow tutorial studio ambisonics.ch relaunch 2026 - was ist neu /post/relaunch-2026/ intermediate">
+          <div class="docs-index__chapter-number">6</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              Ambisonics.ch Relaunch 2026 - Was ist neu
+              <span class="difficulty-badge difficulty-badge--intermediate">intermediate</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Ueberblick ueber die neue Struktur von ambisonics.ch mit klaren Einstiegen in Tutorials, Studio Cases, Downloads und Docs.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 8, 2026
+                
+              
+              · 1 min read
+              
+                · Focus: 
+                #update, #workflow
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Überblick über die neue Struktur von ambisonics.ch: Tutorials, Blog, Docs, Downloads</li>
+                
+                  <li>Direkte Einstiegspunkte für Einsteiger, Komposition und Forschung</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/multi-decoder-mode/" data-filter-text="decoder multi-decoder v3.2 loudspeaker spatial audio icst ambidecoder – multi-decoder mode /post/multi-decoder-mode/ intermediate">
+          <div class="docs-index__chapter-number">7</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              ICST AmbiDecoder – Multi-Decoder Mode
+              <span class="difficulty-badge difficulty-badge--intermediate">intermediate</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">How to use the Multi-Decoder Mode in ICST AmbiDecoder v3.2 — four independent decoders for complex loudspeaker arrays.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Nov 10, 2025
+                
+              
+              · 3 min read
+              
+                · Focus: 
+                #decoder, #multi-decoder
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Configure up to four independent decoders within a single ICST AmbiDecoder</li>
+                
+                  <li>Assign separate loudspeaker groups, Ambisonics orders, and filters per decoder</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/circle-selected/" data-filter-text="ambiencoder lua reaper automation presets icst ambiencoder – circleselected /post/circle-selected/ intermediate">
+          <div class="docs-index__chapter-number">8</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              ICST AmbiEncoder – CircleSelected
+              <span class="difficulty-badge difficulty-badge--intermediate">intermediate</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Describes the CircleSelected Lua presets for ICST AmbiEncoder to position, rotate, and save source points and recall presets.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Jul 19, 2025
+                
+              
+              · 2 min read
+              
+                · Focus: 
+                #ambiencoder, #lua
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Position sources on a circle using CircleSelected Lua presets in REAPER</li>
+                
+                  <li>Save, recall, and manage source position presets interactively</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/icst-scripts/" data-filter-text="ambiencoder automation lua reaper icst ambiencoder – spiral walk script /post/icst-scripts/ advanced">
+          <div class="docs-index__chapter-number">9</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              ICST AmbiEncoder – Spiral Walk Script
+              <span class="difficulty-badge difficulty-badge--advanced">advanced</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Documents the Spiral Walk ReaScript, covering installation, GUI controls, and envelope generation for producing spiraling motion in the AmbiEncoder.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Jul 17, 2025
+                
+              
+              · 2 min read
+              
+                · Focus: 
+                #ambiencoder, #automation
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Install the Spiral Walk ReaScript and generate spiraling motion envelopes in REAPER</li>
+                
+                  <li>Understand the GUI parameters and LFO logic behind the spiral algorithm</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/gyrosc/" data-filter-text="gyrosc osc mobile ambiencoder reaper icst ambiplugins &amp; gyrosc /post/gyrosc/ advanced">
+          <div class="docs-index__chapter-number">10</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              ICST AmbiPlugins &amp; GyrOSC
+              <span class="difficulty-badge difficulty-badge--advanced">advanced</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Shows how GyrOSC streams iOS motion-sensor data via OSC into the ICST AmbiEncoder for mobile spatial control plus inspiration snippets.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  May 28, 2025
+                
+              
+              · 2 min read
+              
+                · Focus: 
+                #gyrosc, #osc
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Stream iPhone motion sensor data into ICST AmbiEncoder via GyrOSC</li>
+                
+                  <li>Use device tilt for live spatial control or synchronised swarm motion</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/gp-manipulation/" data-filter-text="multiencoder group animation reaper workflow icst multiencoder – group animation /post/gp-manipulation/ intermediate">
+          <div class="docs-index__chapter-number">11</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              ICST MultiEncoder – Group Animation
+              <span class="difficulty-badge difficulty-badge--intermediate">intermediate</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Walks through ICST MultiEncoder group animation tools for selecting, rotating, stretching, and recording grouped sources in Reaper.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  May 28, 2025
+                
+              
+              · 2 min read
+              
+                · Focus: 
+                #multiencoder, #group
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Animate source groups with LFO, manual recording, or quaternion motion</li>
+                
+                  <li>Drive group motion from an external OSC source into REAPER envelopes</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/osc-2-fx/" data-filter-text="osc fx ambiencoder reaper automation icst ambiencoder – osc to fx mapping /post/osc-2-fx/ advanced">
+          <div class="docs-index__chapter-number">12</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              ICST AmbiEncoder – OSC to FX Mapping
+              <span class="difficulty-badge difficulty-badge--advanced">advanced</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Demonstrates mapping ICST AmbiEncoder OSC messages to FX plugin parameters (e.g. IEM FdnReverb) for synchronized spatial effects control.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  May 16, 2025
+                
+              
+              · 1 min read
+              
+                · Focus: 
+                #osc, #fx
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Map ICST AmbiEncoder OSC messages to IEM FdnReverb and other FX parameters</li>
+                
+                  <li>Build synchronized spatial-position and reverb control from a single OSC stream</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/blauerts-bands/" data-filter-text="perception psychoacoustics binaural theory blauert&#39;s bands /post/blauerts-bands/ intermediate">
+          <div class="docs-index__chapter-number">13</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              Blauert&#39;s Bands
+              <span class="difficulty-badge difficulty-badge--intermediate">intermediate</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Dokumentiert Blauerts Bänder sowie OSC-Routing und IEM MultiEQ-Frequenzbänder mit Workflow-Hinweisen zu Front/Back und Höhen.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  May 16, 2025
+                
+              
+              · 1 min read
+              
+                · Focus: 
+                #perception, #psychoacoustics
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Understand how Blauert&#39;s Bands affect perceived elevation and front/back localisation</li>
+                
+                  <li>Apply IEM MultiEQ filter settings for elevation and direction correction</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/" data-filter-text="maxmsp osc ambimonitor ambiencoder bidirectional maxmsp &amp; icst ambiencoder – osc communication /post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/ advanced">
+          <div class="docs-index__chapter-number">14</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              MaxMSP &amp; ICST AmbiEncoder – OSC Communication
+              <span class="difficulty-badge difficulty-badge--advanced">advanced</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Details bidirectional OSC communication between Max/MSP and ICST AmbiEncoder, including angle formats and motion data exchanges.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 16, 2025
+                
+              
+              · 1 min read
+              
+                · Focus: 
+                #maxmsp, #osc
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Set up bidirectional OSC communication between Max/MSP and ICST AmbiEncoder</li>
+                
+                  <li>Send and receive source angles in Euler format between Max patches and REAPER</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/ableton-reaper/" data-filter-text="ableton reaper workflow ambiencoder tutorial blackhole ableton live &amp; icst ambisonics integration /post/ableton-reaper/ advanced">
+          <div class="docs-index__chapter-number">15</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              Ableton Live &amp; ICST Ambisonics Integration
+              <span class="difficulty-badge difficulty-badge--advanced">advanced</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Step-by-step guide for recording 7th-order Ambisonics from Ableton Live into Reaper via BlackHole, OSC-driven MultiEncoder automation, and LTC sync.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 16, 2025
+                
+              
+              · 3 min read
+              
+                · Focus: 
+                #ableton, #reaper
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Route audio from Ableton Live into REAPER via BlackHole for 7th-order Ambisonics</li>
+                
+                  <li>Sync DAWs with LTC and automate the MultiEncoder from Ableton OSC clips</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/icst-grapes/" data-filter-text="grapes osc ambiencoder spatial audio 3d control icst ambiplugins &amp; grapes – 3d control /post/icst-grapes/ advanced">
+          <div class="docs-index__chapter-number">16</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              ICST AmbiPlugins &amp; Grapes – 3D Control
+              <span class="difficulty-badge difficulty-badge--advanced">advanced</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Introduces Grapes 3D Control together with ICST AmbiEncoder/Reaper, highlighting how the controller shares OSC data with spatial sources.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 16, 2025
+                
+              
+              · 1 min read
+              
+                · Focus: 
+                #grapes, #osc
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Connect a Grapes 3D Controller to ICST AmbiEncoder via shared OSC data</li>
+                
+                  <li>Use physical knob control for spatial source positioning in live performance</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+        
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        <a class="docs-index__chapter" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/" data-filter-text="osc syntax ambiencoder reference icst ambiencoder – osc syntax /post/osc-syntax-for-the-icst-ambiencoder-plugin/ intermediate">
+          <div class="docs-index__chapter-number">17</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">
+              ICST AmbiEncoder – OSC Syntax
+              <span class="difficulty-badge difficulty-badge--intermediate">intermediate</span>
+            </div>
+            
+            
+            
+              <div class="docs-index__chapter-desc">Reference for the OSC syntax supported by ICST AmbiEncoder, covering message formats and TouchOSC/MaxMSP-compatible parameters.</div>
+            
+            <div class="archive__list-meta">
+              
+                
+                  Mar 16, 2025
+                
+              
+              · 2 min read
+              
+                · Focus: 
+                #osc, #syntax
+              
+            </div>
+            
+              <ul class="archive__keypoints">
+                
+                  <li>Look up every OSC address and parameter format for ICST AmbiEncoder</li>
+                
+                  <li>Control source position in AED or XYZ coordinates from any OSC sender</li>
+                
+              </ul>
+            
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+      
+    </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var root = document.querySelector("[data-tutorials-root]");
+      if (!root) return;
+      var buttons = Array.prototype.slice.call(root.querySelectorAll("[data-filter]"));
+      var cards = Array.prototype.slice.call(root.querySelectorAll(".docs-index__chapter[data-filter-text]"));
+      var matchers = {
+        all: function () { return true; },
+        beginner: function (text) { return text.indexOf("beginner") !== -1 || text.indexOf("getting started") !== -1 || text.indexOf("quick start") !== -1; },
+        osc: function (text) { return text.indexOf("osc") !== -1; },
+        reaper: function (text) { return text.indexOf("reaper") !== -1; },
+        max: function (text) { return text.indexOf("max") !== -1 || text.indexOf("maxmsp") !== -1 || text.indexOf("msp") !== -1; }
+      };
+
+      function applyFilter(key) {
+        var matcher = matchers[key] || matchers.all;
+        var activeKey = matchers[key] ? key : "all";
+        cards.forEach(function (card) {
+          var text = (card.getAttribute("data-filter-text") || "").toLowerCase();
+          var show = matcher(text);
+          card.classList.toggle("is-hidden", !show);
+        });
+        buttons.forEach(function (btn) {
+          var isActive = btn.getAttribute("data-filter") === activeKey;
+          btn.classList.toggle("is-active", isActive);
+          btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+        if (window.location.hash !== "#" + activeKey) {
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, "", "#" + activeKey);
+          } else {
+            window.location.hash = activeKey;
+          }
+        }
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          applyFilter(btn.getAttribute("data-filter") || "all");
+        });
+      });
+
+      var hashKey = (window.location.hash || "").replace(/^#/, "").toLowerCase();
+      applyFilter(matchers[hashKey] ? hashKey : "all");
+
+      window.addEventListener("hashchange", function () {
+        var nextKey = (window.location.hash || "").replace(/^#/, "").toLowerCase();
+        applyFilter(matchers[nextKey] ? nextKey : "all");
+      });
+    })();
+  </script>
 
       </main>
     </div><footer class="footer footer__base">
@@ -863,9 +1742,7 @@
       <li class="footer__item">
         <a
           class="link"
-          href="https://www.iubenda.com/terms-and-conditions/70769495"
-          
-            target="_blank" rel="noopener noreferrer"
+          href="/terms-and-conditions/"
           
           title=""
         >

@@ -1,0 +1,359 @@
+<REAPER_PROJECT 0.1 "7.0/x64" 0
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 600
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 0
+  ZOOM 100 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  SAMPLERATE 48000 0 0
+  MASTER_NCH 64 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  <NOTES 0 0
+  |ICST HOA Reaper Session v4 - ICST Kompositionsstudio
+  |
+  |Studio reference from docs
+  |- ICST Kompositionsstudio loudspeaker setup
+  |- 17 loudspeakers on channels 1-17
+  |- Voice of God = loudspeaker 17
+  |- Sub/LFE = channel 18
+  |- Room approx. 7m x 7m x 7m
+  |
+  |Recommended signal flow
+  |SRC tracks -> HOA BUS 64ch -> ICST MULTIDECODER MAIN -> Studio speaker outputs
+  |SRC tracks -> HOA BUS 64ch -> BINAURAL CHECK -> headphones
+  |
+  |Session steps
+  |1. Check RME / device settings for the Kompositionsstudio session.
+  |2. Insert ICST MonoEncoder or MultiEncoder on the source tracks.
+  |3. Route sources to HOA BUS.
+  |4. Insert ICST MultiDecoder on ICST KS MULTIDECODER MAIN.
+  |5. Load the Kompositionsstudio speaker preset or rebuild it from the documented coordinates.
+  |6. Confirm channel mapping for LS 1-17 and Sub/LFE on channel 18.
+  |7. Run test all speakers in clockwise order and confirm physical order in the room.
+  |
+  |Track groups
+  |- 10-15 = source layer
+  |- 20 = HOA bus
+  |- 30-33 = decoder and monitoring
+  |- 90 = print / export
+  >
+  <TRACK {40000000-0000-4000-8000-000000000001}
+    NAME "00 NOTES [ICST KS] read Project Notes + speaker mapping"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000001}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000010}
+    NAME "10 SRC 01 [INSERT ICST MonoEncoder] object / instrument"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 1
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000010}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000011}
+    NAME "11 SRC 02 [INSERT ICST MonoEncoder] second object"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000011}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000012}
+    NAME "12 SRC 03 [INSERT ICST MultiEncoder if needed] texture"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000012}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000013}
+    NAME "13 SRC 04 [INSERT ICST MonoEncoder] moving source"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000013}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000014}
+    NAME "14 SRC 05 [DUPLICATE] extra object source"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000014}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000015}
+    NAME "15 SRC 06 [DUPLICATE] extra texture / stem"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000015}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000020}
+    NAME "20 HOA BUS [ROUTE] 64ch ambisonics backbone"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000020}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000030}
+    NAME "30 ICST KS MULTIDECODER MAIN [INSERT ICST MultiDecoder]"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000030}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000031}
+    NAME "31 ICST KS SPEAKER TEST [CHECK] LS1-17 + Sub/LFE"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000031}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000032}
+    NAME "32 BINAURAL CHECK [CHECK] optional headphone control"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000032}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000033}
+    NAME "33 FALLBACK DECODER [INSERT ICST Decoder] single-decoder option"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000033}
+    PERF 0
+  >
+  <TRACK {40000000-0000-4000-8000-000000000090}
+    NAME "90 PRINT / EXPORT [CHECK] render stem / archive pass"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {40000000-0000-4000-8000-000000000090}
+    PERF 0
+  >
+>

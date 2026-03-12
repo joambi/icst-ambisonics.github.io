@@ -26,9 +26,8 @@
       <guid>https://ambisonics.ch/post/gp-manipulation/</guid>
       <pubDate>Wed, 28 May 2025 13:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;group-animation&#34;&gt;Group Animation&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;group-animation&#34;&gt;Group Animation&lt;/h1&gt;
+&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Composer, Live performer.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;ICST Multi-Ambisonics Encoder v.2+&lt;/strong&gt; features a &lt;strong&gt;Group Animation&lt;/strong&gt; tool for dynamically manipulating grouped audio sources in the &lt;strong&gt;Radar Display&lt;/strong&gt;. By selecting a group point and holding &lt;strong&gt;Option (Alt) on Mac&lt;/strong&gt;, you unlock advanced functions like &lt;strong&gt;group animation&lt;/strong&gt; and &lt;strong&gt;group stretch&lt;/strong&gt;, enabling synchronized movement and transformation of multiple sources for enhanced 3D spatialization.&lt;/p&gt;
 &lt;p&gt;📺 &lt;strong&gt;Tutorial:&lt;/strong&gt; &lt;a href=&#34;https://youtu.be/aDa-vNWriLM&#34;&gt;Points and Radar&lt;/a&gt; (3:15)&lt;/p&gt;
 &lt;hr&gt;
@@ -90,7 +89,6 @@ Now, the group moves automatically in the radar.&lt;/li&gt;
 &lt;p&gt;The ICST MultiEncoder can now be controlled directly using Euler angles via OSC.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gp-manipulation/OSC_abs_angel.gif&#34; alt=&#34;Euler_Winkel&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>

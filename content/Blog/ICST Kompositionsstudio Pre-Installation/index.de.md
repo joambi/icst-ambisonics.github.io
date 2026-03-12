@@ -2,6 +2,9 @@
 title: ICST Kompositionsstudio Vorinstallation
 description: "Treiber- und Software-Setup für den eigenen Laptop vor dem Studiotermin"
 date: 2025-06-03T15:10:00
+slug: icst-kompositionsstudio-pre-installation
+aliases:
+  - /blog/icst-kompositionsstudio-pre-installation/
 weight: 2
 group: "Residents"
 languageCode: de
@@ -68,4 +71,3 @@ Damit der Curved Screen als ein großer Bildschirm erscheint, ist eine zusätzli
 # Downloads
 
 → Alle Downloads sind zentral auf der Seite [Downloads](/blog/downloads/) verfügbar.
-

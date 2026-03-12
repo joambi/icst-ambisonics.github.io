@@ -2,6 +2,9 @@
 title: ICST Kompositionsstudio Pre-Installation
 description: "Driver and software setup for your own laptop before arrival"
 date: 2025-06-03T15:10:00
+slug: icst-kompositionsstudio-pre-installation
+aliases:
+  - /blog/icst-kompositionsstudio-pre-installation/
 weight: 2
 group: "Residents"
 ---
@@ -64,4 +67,3 @@ To get the curved screen as a single large screen, you need to make an additiona
 # Downloads
 
 → All downloads are centralized on the [Downloads](/blog/downloads/) page.
-

@@ -2,6 +2,9 @@
 title: ICST Kompositionsstudio Ambisonics-Setup
 description: "Lautsprecherkoordinaten und Ambisonics-Decoder-Konfiguration"
 date: 2025-06-02T15:12:00
+slug: icst-kompositionsstudio-ambisonics-setting
+aliases:
+  - /blog/icst-kompositionsstudio-ambisonics-setting/
 weight: 6
 group: "Studio"
 languageCode: de

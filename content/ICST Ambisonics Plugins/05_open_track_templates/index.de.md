@@ -4,7 +4,9 @@ title: Spurvorlagen
 weight: 120
 ---
 
-## 02 Spurvorlagen öffnen
+Referenzschritte zum Einfügen der ICST-Spurvorlagen in REAPER und zur anschließenden Prüfung des erwarteten Routings.
+
+## Spurvorlagen öffnen
 
 1. Klicke mit der rechten Maustaste in den leeren Spurbereich in **Reaper**.
 2. Wähle **"Spur aus Vorlage einfügen."**
@@ -12,7 +14,7 @@ weight: 120
 
 ![tracktemplate.png](tracktemplate.png)
 
-Stelle sicher, dass das Audio-Routing zwischen Kanal-Spuren korrekt konfiguriert ist, um einen genauen Signalfluss zu gewährleisten!
+Prüfe nach dem Einfügen das Routing zwischen den Kanalspuren, damit der Signalfluss korrekt bleibt.
 
 ![Track_template](Track_templates.gif)
 

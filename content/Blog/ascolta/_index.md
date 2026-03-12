@@ -7,6 +7,79 @@ group: "Listening"
 ---
 
 <style>
+.hub-intro {
+  font-size: 1.45rem;
+  line-height: 1.7;
+  margin: 1rem 0 1.25rem;
+  max-width: 54rem;
+}
+.hub-meta {
+  margin: 0.75rem 0 1.75rem;
+  color: #9f9f9f;
+  font-size: 1.15rem;
+}
+.post__content h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 0.9rem;
+  padding-top: 0.15rem;
+  font-size: 1.75rem;
+  letter-spacing: 0.01em;
+}
+.post__content h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.28rem;
+  color: #9f9f9f;
+}
+.hub-start,
+.hub-related {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.1rem 0 1.75rem;
+}
+.hub-start a,
+.hub-related a {
+  display: block;
+  text-decoration: none;
+  border-radius: 2px;
+  min-height: 100%;
+  padding: 1.05rem 1.15rem;
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+}
+.theme--light .hub-start a,
+.theme--light .hub-related a {
+  background: #fff;
+  border: 1px solid #eeeeee;
+  color: #464646;
+}
+.theme--dark .hub-start a,
+.theme--dark .hub-related a {
+  background: #2a3a44;
+  border: 1px solid #464646;
+  color: #eeeeee;
+}
+.theme--light .hub-start a:hover,
+.theme--light .hub-related a:hover {
+  border-color: #6086b4;
+  transform: translateY(-1px);
+}
+.theme--dark .hub-start a:hover,
+.theme--dark .hub-related a:hover {
+  border-color: #6086b4;
+  transform: translateY(-1px);
+}
+.hub-card__title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.hub-card__text {
+  display: block;
+  font-size: 1.15rem;
+  color: #9f9f9f;
+  line-height: 1.5;
+}
 .season-section { margin-bottom: 1.5rem; }
 .season-label {
   font-size: 1rem;
@@ -64,13 +137,75 @@ group: "Listening"
   color: #9f9f9f;
   margin-top: 2px;
 }
+@media (max-width: 760px) {
+  .hub-intro {
+    font-size: 1.3rem;
+    line-height: 1.65;
+  }
+  .hub-meta {
+    font-size: 1.05rem;
+    margin-bottom: 1.35rem;
+  }
+  .post__content h2 {
+    margin-top: 2rem;
+    font-size: 1.55rem;
+  }
+  .post__content h3 {
+    font-size: 1.18rem;
+  }
+  .hub-start,
+  .hub-related {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .hub-start a,
+  .hub-related a {
+    padding: 0.95rem 1rem;
+  }
+  .session-row {
+    gap: 0.65rem;
+    padding: 0.7rem 0.75rem;
+  }
+  .session-row__subtitle {
+    font-size: 1.2rem;
+  }
+}
 </style>
 
-**ascolta** is a public listening series at the ICST Composition Studio of the Zurich University of the Arts. In an intimate setting with a higher-order Ambisonics speaker system, we listen to acousmatic and electroacoustic music — works by composers from the ICST residency programme and from the international repertoire, presented in immersive spatial audio.
+<div class="hub-intro">
+<strong>ascolta</strong> is a public listening series at the ICST Composition Studio of the Zurich University of the Arts. In an intimate setting with a higher-order Ambisonics speaker system, we listen to acousmatic and electroacoustic music — works by composers from the ICST residency programme and from the international repertoire, presented in immersive spatial audio.
+</div>
 
-**Upcoming Dates 2026** · [02 April 2026](/blog/ascolta/18-ascolta/) · 21 May 2026 · 18:00–19:00 · Free admission
+<div class="hub-meta"><strong>Upcoming Dates 2026</strong> · <a href="/blog/ascolta/18-ascolta/">02 April 2026</a> · 21 May 2026 · 18:00–19:00 · Free admission</div>
 
 **Teaser (02 April 2026, 18:00):** For **#18 ascolta**, we open an acoustic field from the ICST Studio Residencies 2025: works by Nandele Maguni, Youngjae Cho, and Ana Gonzalez Gamboa in immersive 3D audio. Thursday, 02 April 2026, 18:00–19:00, Toni-Areal, Composition Studio 3.D02, Zurich. Free admission.
+
+---
+
+## What This Page Is For
+
+This is the **listening and programme hub** for ascolta. Here you will find upcoming and past listening sessions, programme themes, and listening resources.
+
+If you are looking for technical information about the **studio setup**, go to the [ICST Composition Studio](/blog/icst-composer-studio-blog/). If you want to explore the **artists and projects** behind many of the programmes, go to [Residencies](/residenzen/).
+
+---
+
+## Start here
+
+<div class="hub-start">
+  <a href="/blog/ascolta/18-ascolta/">
+    <span class="hub-card__title">Next session</span>
+    <span class="hub-card__text">Go straight to the current ascolta date and programme.</span>
+  </a>
+  <a href="/blog/ascolta-listening-guide/">
+    <span class="hub-card__title">Listening Guide</span>
+    <span class="hub-card__text">Questions, categories, and exercises for active spatial listening.</span>
+  </a>
+  <a href="/residenzen/">
+    <span class="hub-card__title">Residency projects</span>
+    <span class="hub-card__text">Artists and projects behind many ascolta programmes.</span>
+  </a>
+</div>
 
 ---
 
@@ -250,9 +385,28 @@ A selection of online resources for listening to Ambisonics and spatial audio:
 
 The ICST maintains an archive of works recorded and encoded in ambiX B-format.
 
+---
+
+## Related Areas
+
+<div class="hub-related">
+  <a href="/blog/icst-composer-studio-blog/">
+    <span class="hub-card__title">ICST Composition Studio</span>
+    <span class="hub-card__text">Studio setup, infrastructure, and technical resources.</span>
+  </a>
+  <a href="/residenzen/">
+    <span class="hub-card__title">Residencies</span>
+    <span class="hub-card__text">Artists in residence, profiles, and projects.</span>
+  </a>
+</div>
+
 → [Explore the B-Format Archive](https://ambisonics.ch/blog/audio-examples/)
 
 → [Audio Examples – Binaural Previews](/blog/audio-examples/)
 
+---
 
+## Related Areas
 
+- [ICST Composition Studio](/blog/icst-composer-studio-blog/) — studio setup, infrastructure, and resources
+- [Residencies](/residenzen/) — artist-in-residence programme and project context

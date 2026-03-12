@@ -2,6 +2,9 @@
 title: ICST AmbiPlugins & GyrOSC
 description: "Erklärt, wie GyrOSC iOS-Bewegungsdaten über OSC an den ICST AmbiEncoder sendet, inklusive Message-Formate und Inspirationen."
 date: 2025-05-28T14:57:00
+slug: gyrosc
+aliases:
+  - /post/GYROSC/
 year: 2025
 month: 2025-05
 weight: 6
@@ -77,4 +80,3 @@ JS-Code:
 `s.setXYZ(1, s.arg(2), -s.arg(1), 0); for(i = 2; i <= 8; i++) s.setXYZ(i, s.arg(2)+Math.random()*0.2, -s.arg(1) + Math.random()* 0.2, 0)`
 
 ![OSC-Swarm](GyrOSC-SWARM.gif)
-

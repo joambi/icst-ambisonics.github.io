@@ -22,13 +22,11 @@
       <atom:link href="https://ambisonics.ch/tags/perception/index.xml" rel="self" type="application/rss&#43;xml" />
     <item>
       <title>Blauert&#39;s Bands</title>
-      <link>https://ambisonics.ch/post/blauertsche_b%C3%A4nder/</link>
-      <guid>https://ambisonics.ch/post/blauertsche_b%C3%A4nder/</guid>
+      <link>https://ambisonics.ch/post/blauerts-bands/</link>
+      <guid>https://ambisonics.ch/post/blauerts-bands/</guid>
       <pubDate>Fri, 16 May 2025 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;style&gt;
+        <description>&lt;style&gt;
 /* ── Blauert&#39;s Bands — Anatole theme aligned ── */
 
 .info-box {
@@ -75,15 +73,15 @@
 }
 .step__text { font-size: 1.4rem; padding-top: 2px; }
 &lt;/style&gt;
-&lt;h1 id=&#34;blauerts-bands&#34;&gt;Blauert&amp;rsquo;s Bands&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Psychoacoustics-focused composer/researcher.&lt;/p&gt;
 &lt;div class=&#34;info-box&#34;&gt;
 &lt;strong&gt;What this tutorial covers&lt;/strong&gt;
 How to use Blauert&#39;s Bands (frequency-dependent directional perception) to enhance front/back and height perception in Ambisonics — by coupling the ICST Encoder&#39;s Y and Z axes to the IEM MultiEQ via OSC.
 &lt;/div&gt;
 &lt;p&gt;For the voice and its directivity perception I conducted experiments with the &lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauert&amp;rsquo;s Bands&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungsb%C3%A4nder.png&#34; alt=&#34;Ritungsbänder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Richtungsb%C3%A4nder.png&#34; alt=&#34;Ritungsbänder&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Thus I coupled Y Front ↔ Back and Z Top ↔ Bottom with the IEM-Multifilter.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Richtungswahrnehmung.png&#34; alt=&#34;RichtungsWahrnehmung&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;osc-routing&#34;&gt;OSC Routing&lt;/h2&gt;
 &lt;h3 id=&#34;height-z-axis--iem-multieq&#34;&gt;Height (Z-Axis → IEM MultiEQ)&lt;/h3&gt;
@@ -100,15 +98,15 @@ How to use Blauert&#39;s Bands (frequency-dependent directional perception) to e
   &lt;div class=&#34;label&#34;&gt;OSC OUT · Port 8008&lt;/div&gt;
   &lt;span class=&#34;arrow&#34;&gt;ICST Encoder OSC-Out Front&lt;/span&gt; &lt;span class=&#34;arrow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;path&#34;&gt;/MultiEQ/filterGain4&lt;/span&gt; &lt;span class=&#34;param&#34;&gt;{sz, -5.3, 0.0, 5.3}&lt;/span&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/osc-anbindung.png&#34; alt=&#34;OSC Connection&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/osc-anbindung.png&#34; alt=&#34;OSC Connection&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;iem-multieq--frequency-bands&#34;&gt;IEM MultiEQ — Frequency Bands&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Height (8 kHz boost)&lt;/strong&gt;
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/8000hz.png&#34; alt=&#34;Height8000&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Front&lt;/strong&gt;
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Front.png&#34; alt=&#34;Front&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Back&lt;/strong&gt;
-&lt;img src=&#34;https://ambisonics.ch/post/blauertsche_b%C3%A4nder/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/blauerts-bands/Back.png&#34; alt=&#34;Back&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;workflow-steps&#34;&gt;Workflow Steps&lt;/h2&gt;
 &lt;div class=&#34;step-grid&#34;&gt;
@@ -122,7 +120,6 @@ How to use Blauert&#39;s Bands (frequency-dependent directional perception) to e
 &lt;li&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder&#34;&gt;Blauert&amp;rsquo;s Bands (Wikipedia)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://sengpielaudio.com/DieBedeutungDerBlauertschenBaender.pdf&#34;&gt;sengpielaudio.com – Die Bedeutung der Blauert&amp;rsquo;schen Bänder (PDF)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 </description>
 
     </item>

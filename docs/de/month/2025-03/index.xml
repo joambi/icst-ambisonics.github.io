@@ -26,25 +26,14 @@
       <guid>https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;osc-syntax-für-das-icst-ambiencoder-plugin&#34;&gt;OSC Syntax für das ICST AmbiEncoder Plugin&lt;/h2&gt;
-&lt;p&gt;Der &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; unterstützt &lt;strong&gt;OSC&lt;/strong&gt; und &lt;strong&gt;JavaScript&lt;/strong&gt;, was eine nahtlose Kommunikation mit OSC-Tools wie &lt;strong&gt;TouchOSC, IanniX, MaxMSP&lt;/strong&gt; und andere OSC-fähige Software ermöglicht.&lt;/p&gt;
-&lt;h3 id=&#34;funktionsweise&#34;&gt;&lt;strong&gt;Funktionsweise&lt;/strong&gt;&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Öffne den Tab &lt;strong&gt;&amp;lsquo;OSC In&amp;rsquo;&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png&#34; alt=&#34;OSC IN-OUT&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Abbildung: Encoder-Einstellung &amp;lsquo;OSC In&amp;rsquo; empfängt auf Port 50001&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Alle Informationen findest du im &lt;strong&gt;Help&lt;/strong&gt;-Bereich, indem du auf das Fragezeichen (&lt;strong&gt;?&lt;/strong&gt;) klickst.&lt;/p&gt;
-&lt;h4 id=&#34;osc-in&#34;&gt;&lt;strong&gt;OSC In&lt;/strong&gt;&lt;/h4&gt;
+        <description>&lt;h2 id=&#34;osc-syntax-für-das-icst-ambiencoder-plugin&#34;&gt;OSC Syntax für das ICST AmbiEncoder Plugin&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Advanced | Zielgruppe: Techniker:in, Developer, Max/OSC-User.&lt;/p&gt;
+&lt;p&gt;Der &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; unterstützt &lt;strong&gt;OSC&lt;/strong&gt; und &lt;strong&gt;JavaScript&lt;/strong&gt;, was eine nahtlose Kommunikation mit OSC-Tools wie &lt;strong&gt;TouchOSC, IanniX, MaxMSP&lt;/strong&gt; und andere OSC-fähige Software ermöglicht.
+Diese Seite ist die &lt;strong&gt;Syntax-Referenz&lt;/strong&gt;.
+Für Quickstart und Debugging-Reihenfolge nutze:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Receive OSC&lt;/strong&gt;: Empfange OSC-Befehle auf dem definierten Port (Standard: 50001). Die vollständige OSC-Spezifikation ist im Help-Bereich des Plugins verfügbar.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/osc-10-key-messages/&#34;&gt;OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Send Positions for External Usage&lt;/strong&gt;: Diese Funktion sendet Audio-Quellenpositionen als OSC-Nachrichten an ein definiertes Ziel/einen Port. Nachrichten lösen Positionswechsel aus, und die Update-Rate ist auf &lt;strong&gt;20Hz (50ms)&lt;/strong&gt; begrenzt.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;osc-syntax--adressspezifikation&#34;&gt;&lt;strong&gt;OSC Syntax &amp;amp; Adressspezifikation&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;1-zugriff-auf-osc-spezifikationen&#34;&gt;&lt;strong&gt;1. Zugriff auf OSC-Spezifikationen&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Klicke auf das &lt;strong&gt;Fragezeichen&lt;/strong&gt; im ICST AmbiEncoder.
@@ -98,36 +87,7 @@
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/Intern_osc.png&#34; alt=&#34;OSC_internal&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Jetzt empfängt der AmbiDecoder &lt;strong&gt;alle OSC-Nachrichten&lt;/strong&gt; von allen verbundenen AmbiEncodern.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;schritte-zum-senden-von-osc-nachrichten&#34;&gt;&lt;strong&gt;Schritte zum Senden von OSC-Nachrichten&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Der AmbiEncoder kann auch die meisten seiner Parameter über OSC senden.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/external_osc.png&#34; alt=&#34;External-osc&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Öffne das Fragezeichen vor den Presets, um detaillierte Hilfeinformationen zu erhalten.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Aktiviere &lt;strong&gt;&amp;ldquo;Send Positions for External Usage&amp;rdquo;&lt;/strong&gt; in den Einstellungen.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Im &lt;strong&gt;Targets&lt;/strong&gt;-Bereich:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Aktiviere oder deaktiviere die OSC-Übertragung.&lt;/li&gt;
-&lt;li&gt;Definiere die &lt;strong&gt;Host-IP-Adresse&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Wähle einen &lt;strong&gt;Port&lt;/strong&gt; (Standard: &lt;strong&gt;50001&lt;/strong&gt;).&lt;/li&gt;
-&lt;li&gt;Doppelklick auf &lt;strong&gt;OSC messages&lt;/strong&gt; zum Bearbeiten.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt; Wenn du an einem &lt;strong&gt;internen FX Learning Program&lt;/strong&gt; teilnimmst, wähle &lt;strong&gt;&amp;ldquo;Continuous&amp;rdquo;&lt;/strong&gt; Modus.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Klicke auf &lt;strong&gt;Help (?)&lt;/strong&gt; für detaillierte OSC-Informationen.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Füge OSC-Nachrichten hinzu oder lösche sie.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Speichere oder lade OSC-Nachrichten in &lt;strong&gt;Presets&lt;/strong&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -137,9 +97,8 @@
       <guid>https://ambisonics.ch/de/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;bidirektionale-osc-kommunikation-mit-maxmsp&#34;&gt;Bidirektionale OSC-Kommunikation mit MaxMSP&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;bidirektionale-osc-kommunikation-mit-maxmsp&#34;&gt;Bidirektionale OSC-Kommunikation mit MaxMSP&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Advanced | Zielgruppe: Max/MSP- und OSC-Integrator:in.&lt;/p&gt;
 &lt;p&gt;Generiere Bewegungsdaten in Max und sende sie via OSC zum &lt;em&gt;ICST AmbiEncoder&lt;/em&gt; in deiner DAW. Alternativ kannst du eine Bewegungskomposition von deiner DAW zu den &lt;em&gt;icst.ambisonics-externals&lt;/em&gt; übertragen.&lt;/p&gt;
 &lt;h3 id=&#34;erforderliche-software&#34;&gt;&lt;strong&gt;Erforderliche Software:&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -195,7 +154,6 @@
 &lt;li&gt;&lt;code&gt;Roll&lt;/code&gt;: Rotation um die Vorwärtsachse&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -205,8 +163,7 @@
       <guid>https://ambisonics.ch/de/post/icst-grapes/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Intermediate | Zielgruppe: Spatial-Performer:in, Controller-Workflow-User.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://grapes-3d.com/&#34;&gt;Grapes 3D Control&lt;/a&gt; ist eine praktische Ergänzung zu den ICST Ambisonics Plugins.
 Grapes ist als Standalone und VST3 erhältlich und kann direkt in der DAW (Reaper) synchron bedient werden.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-grapes/Grapes.gif&#34; alt=&#34;Grapes&#34;&gt;&lt;/p&gt;
@@ -214,30 +171,29 @@ Grapes ist als Standalone und VST3 erhältlich und kann direkt in der DAW (Reape
 &lt;p&gt;Ein großer Vorteil dieser Methode ist, dass die 3D-Raumklang-Kontrolle nicht in der DAW aufgenommen werden muss. Stattdessen wird sie vom ICST AmbiEncoder via OSC mit Grapes gesendet. Das bedeutet, dass das räumliche Design flexibel bleibt und auch mit anderen Raumalisierungstools wie LISA, Dolby Atmos oder Binauralwiedergabe interpretiert werden kann.&lt;/p&gt;
 &lt;p&gt;Weitere Informationen findest du unter: &lt;a href=&#34;https://grapes-3d.com/&#34;&gt;https://grapes-3d.com/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
     <item>
       <title>Ableton Live &amp; ICST Ambisonics Integration</title>
-      <link>https://ambisonics.ch/de/post/ableton_reaper/</link>
-      <guid>https://ambisonics.ch/de/post/ableton_reaper/</guid>
+      <link>https://ambisonics.ch/de/post/ableton-reaper/</link>
+      <guid>https://ambisonics.ch/de/post/ableton-reaper/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;hr&gt;
 &lt;h1 id=&#34;abletonlive-zu-icst-ambisonics-multiencoder-in-reaper&#34;&gt;AbletonLive zu ICST Ambisonics MultiEncoder in Reaper&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Advanced | Zielgruppe: Ableton/Reaper-Hybrid-Producer.&lt;/p&gt;
 &lt;p&gt;Dieses Tutorial bietet eine detaillierte Anleitung zur Aufnahme von 7. Ordnung Ambisonics mit Ableton Live und Reaper. Es richtet sich an Benutzer mit grundlegenden Kenntnissen beider Programme. Wenn du mit den Konzepten von Ableton Live, Reaper und Ambisonics vertraut bist, sollten die Schritte einfach sein. Andernfalls können einige Abschnitte herausfordernd sein. In diesem Fall wird empfohlen, zuerst die Grundlagen dieser Software und der Ambisonics-Technologie zu erlernen.&lt;/p&gt;
 &lt;h3 id=&#34;ableton-zu-icst-multiencoder-in-reaper&#34;&gt;Ableton zu ICST MultiEncoder in Reaper&lt;/h3&gt;
 &lt;p&gt;Ableton überträgt Audio über &amp;ldquo;BlackHole&amp;rdquo; (bis zu 64 Kanäle) zu Reapers BlackHole-Eingangsgeräten.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_output.png&#34; alt=&#34;Ableton_outs&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Ableton_output.png&#34; alt=&#34;Ableton_outs&#34;&gt;
 Der Multi-Panner-OSC kann bis zu 16 OSC-Kanäle via localhost auf Port 50001 zum ICST Multi-AmbiEncoder senden. In Reaper werden Audio-Eingänge von BlackHole (1-4) empfangen, während der ICST Multi-AmbiEncoder OSC-Quellen (1-16) verarbeitet.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_OSC_BlackHole.gif&#34; alt=&#34;Ableton_to_MultiEncoder&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Ableton_OSC_BlackHole.gif&#34; alt=&#34;Ableton_to_MultiEncoder&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Dieses Setup ermöglicht die Aufnahme von B-Format bis zur 7. Ordnung aus Ableton Live 12.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;funktionsweise&#34;&gt;Funktionsweise&lt;/h3&gt;
 &lt;h4 id=&#34;schematische-übersicht&#34;&gt;Schematische Übersicht:&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Ableton_routing_64ch.png&#34; alt=&#34;Ableton_routing64ch&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Ableton_routing_64ch.png&#34; alt=&#34;Ableton_routing64ch&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;vorbereitung&#34;&gt;Vorbereitung:&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Installiere &lt;a href=&#34;https://www.ableton.com/de/live/&#34;&gt;AbletonLive 12&lt;/a&gt;&lt;/li&gt;
@@ -260,7 +216,7 @@ Der Multi-Panner-OSC kann bis zu 16 OSC-Kanäle via localhost auf Port 50001 zum
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Sende optional benutzerdefinierte OSC-Raumalisierungsdaten von Max, um konsistente OSC-Portnummern in Reaper zu gewährleisten (Port: 50001).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Max-OSC-Out2.png&#34; alt=&#34;Max-OSC | 400&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Max-OSC-Out2.png&#34; alt=&#34;Max-OSC | 400&#34;&gt;
 Tipp: Stelle sicher, dass du die gleichen OSC-Portnummern in Reaper verwendest. (Port: 50001)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -270,48 +226,47 @@ Tipp: Stelle sicher, dass du die gleichen OSC-Portnummern in Reaper verwendest. 
 &lt;p&gt;Erstelle eine Session mit 63 Mono-Spuren (Spur 64 für LTC-Timecode).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Aktiviere LTC-Synchronisierungseingabe auf Spur 64, indem du mit der rechten Maustaste auf die Playbar klickst.&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/LTC.png&#34; alt=&#34;LTC&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Aktiviere LTC-Synchronisierungseingabe auf Spur 64, indem du mit der rechten Maustaste auf die Playbar klickst.&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/LTC.png&#34; alt=&#34;LTC&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Stelle alle aktiven Spuren auf &amp;ldquo;Record: Disable (monitor only).&amp;rdquo;
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/rec_disable.png&#34; alt=&#34;Rec_disable&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/rec_disable.png&#34; alt=&#34;Rec_disable&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Leite Spuren 1-63 zum ICST MultiEncoder_64 weiter.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Routing_Overview.png&#34; alt=&#34;Routing_Inputs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Routing_Overview.png&#34; alt=&#34;Routing_Inputs&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Wenn korrekt geroutet, erscheint die Quelle im Encoder-Radar zur Verifizierung.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;
 &lt;p&gt;Konfiguriere die OSC-Verbindung zwischen Ableton und ICST MultiEncoder. Jeder Encoder benötigt seinen eigenen OSC-Port.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC-Port.png&#34; alt=&#34;OSC-Ports&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/OSC-Port.png&#34; alt=&#34;OSC-Ports&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Aktiviere OSC-Übertragung in E4L_Multi-Panner. Der ICST MultiEncoder zeigt bewegliche Punkte an, wenn OSC-Daten empfangen werden.
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/OSC_ON.png&#34; alt=&#34;OSC_ON&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/OSC_ON.png&#34; alt=&#34;OSC_ON&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Klicke in Reaper auf Record -Output, um dein Bformat aufzunehmen. Siehe nächstes Bild.
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec_BF.png&#34; alt=&#34;Rec_BF&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Rec_BF.png&#34; alt=&#34;Rec_BF&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Klicke dann auf REC in Reaper → du erhältst die folgende Nachricht &amp;ldquo;Waiting for Timecode&amp;rdquo;
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Rec.png&#34; alt=&#34;Rec&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Rec.png&#34; alt=&#34;Rec&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Drücke Play in Ableton Live, um Reaper via LTC Sync (Input 64) zu synchronisieren, was die B-Format 7. Ordnung Ambix-Aufnahme ermöglicht.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Wechsle zum &lt;strong&gt;Start Marker&lt;/strong&gt; bei &lt;strong&gt;01:00:000&lt;/strong&gt; (LTC hat einen 60&amp;rsquo;-Offset), dann drücke &lt;strong&gt;Fire&lt;/strong&gt; oder &lt;strong&gt;Play&lt;/strong&gt; in Ableton Live, um die Aufnahme zu starten.
-&lt;img src=&#34;https://ambisonics.ch/post/ableton_reaper/Live_Reper_BF.gif&#34; alt=&#34;recoding_bf&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://ambisonics.ch/post/ableton-reaper/Live_Reper_BF.gif&#34; alt=&#34;recoding_bf&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Weitere Details findest du in der Dokumentation für Ableton Live, Reaper und den ICST MultiEncoder.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>

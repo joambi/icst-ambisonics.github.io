@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>B-Format on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/tags/b-format/</link>
+
+    <description>
+      Recent content
+      
+         in B-Format 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/tags/b-format/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST B-Format Archiv</title>
+      <link>https://ambisonics.ch/de/blog/b-format-archive/</link>
+      <guid>https://ambisonics.ch/de/blog/b-format-archive/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Eine kuratierte Sammlung von Ambisonics-B-Format-Referenzdateien zum Testen von Dekodern, Binauralrenderern und räumlichen Audio-Pipelines. Alle Dateien verwenden die &lt;strong&gt;ambiX&lt;/strong&gt;-Konvention: ACN-Kanalreihenfolge, SN3D-Normierung.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;audiodateien&#34;&gt;Audiodateien&lt;/h2&gt;
+&lt;div class=&#34;bformat-archive&#34; id=&#34;bformat-0&#34; data-bformat-archive&gt;
+  &lt;div class=&#34;bformat-archive__controls&#34;&gt;
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Suche&lt;/span&gt;
+      &lt;input
+        type=&#34;search&#34;
+        data-bformat-search
+        placeholder=&#34;Komponist, Titel, Format...&#34;
+      &gt;
+    &lt;/label&gt;
+
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Order&lt;/span&gt;
+      &lt;select data-bformat-order-filter&gt;
+        &lt;option value=&#34;all&#34;&gt;Alle&lt;/option&gt;&lt;option value=&#34;5th order&#34;&gt;5th order&lt;/option&gt;&lt;/select&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Sortierung&lt;/span&gt;
+      &lt;select data-bformat-sort-key&gt;
+        &lt;option value=&#34;title&#34;&gt;Titel&lt;/option&gt;
+        &lt;option value=&#34;order&#34;&gt;Order&lt;/option&gt;
+        &lt;option value=&#34;channels&#34;&gt;Kanäle&lt;/option&gt;
+        &lt;option value=&#34;sample_rate&#34;&gt;SR&lt;/option&gt;
+        &lt;option value=&#34;bits&#34;&gt;Bits&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+
+    &lt;label class=&#34;bformat-archive__field&#34;&gt;
+      &lt;span&gt;Richtung&lt;/span&gt;
+      &lt;select data-bformat-sort-direction&gt;
+        &lt;option value=&#34;asc&#34;&gt;Aufsteigend&lt;/option&gt;
+        &lt;option value=&#34;desc&#34;&gt;Absteigend&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;bformat-archive__table-wrap&#34;&gt;
+    &lt;table class=&#34;bformat-archive__table&#34;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Komponist&lt;/th&gt;
+          &lt;th&gt;Titel&lt;/th&gt;
+          &lt;th&gt;Dauer&lt;/th&gt;
+          &lt;th&gt;Format&lt;/th&gt;
+          &lt;th&gt;Order&lt;/th&gt;
+          &lt;th&gt;Normierung&lt;/th&gt;
+          &lt;th&gt;Kanäle&lt;/th&gt;
+          &lt;th&gt;SR&lt;/th&gt;
+          &lt;th&gt;Bits&lt;/th&gt;
+          &lt;th&gt;Anhören&lt;/th&gt;
+          &lt;th&gt;Download&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody data-bformat-body&gt;&lt;tr
+            data-bformat-row
+            data-search=&#34;audiobrewers ambitest_ambix_5th-order.wav wav 5th order acn/sn3d&#34;
+            data-order=&#34;5&#34;
+            data-channels=&#34;36&#34;
+            data-sample-rate=&#34;48000&#34;
+            data-bits=&#34;24&#34;
+            data-title=&#34;ambitest_ambix_5th-order.wav&#34;
+            data-order-label=&#34;5th order&#34;
+          &gt;
+            &lt;td&gt;&lt;a href=&#34;https://www.audiobrewers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;AudioBrewers&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;AmbiTest_ambix_5th-order.wav&lt;/td&gt;
+            &lt;td&gt;4′&lt;/td&gt;
+            &lt;td&gt;WAV&lt;/td&gt;
+            &lt;td&gt;5th order&lt;/td&gt;
+            &lt;td&gt;ACN/SN3D&lt;/td&gt;
+            &lt;td&gt;36&lt;/td&gt;
+            &lt;td&gt;48000&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#34;https://e.pcloud.link/publink/show?code=XZgkkGZzkPOKp87E2uqPOVuRrPscSJoUR37&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;
+                  Binaural ↗
+                &lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;—&lt;/td&gt;
+          &lt;/tr&gt;&lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+
+  &lt;p class=&#34;bformat-archive__empty&#34; data-bformat-empty hidden&gt;
+    Keine Einträge für den aktuellen Filter gefunden.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  (function () {
+    var root = document.getElementById(&#34;bformat-0&#34;);
+    if (!root) return;
+    var body = root.querySelector(&#34;[data-bformat-body]&#34;);
+    var rows = Array.prototype.slice.call(root.querySelectorAll(&#34;[data-bformat-row]&#34;));
+    var search = root.querySelector(&#34;[data-bformat-search]&#34;);
+    var orderFilter = root.querySelector(&#34;[data-bformat-order-filter]&#34;);
+    var sortKey = root.querySelector(&#34;[data-bformat-sort-key]&#34;);
+    var sortDirection = root.querySelector(&#34;[data-bformat-sort-direction]&#34;);
+    var empty = root.querySelector(&#34;[data-bformat-empty]&#34;);
+
+    function getValue(row, key) {
+      if (key === &#34;title&#34;) return row.getAttribute(&#34;data-title&#34;) || &#34;&#34;;
+      if (key === &#34;order&#34;) return Number(row.getAttribute(&#34;data-order&#34;) || &#34;0&#34;);
+      if (key === &#34;channels&#34;) return Number(row.getAttribute(&#34;data-channels&#34;) || &#34;0&#34;);
+      if (key === &#34;sample_rate&#34;) return Number(row.getAttribute(&#34;data-sample-rate&#34;) || &#34;0&#34;);
+      if (key === &#34;bits&#34;) return Number(row.getAttribute(&#34;data-bits&#34;) || &#34;0&#34;);
+      return row.getAttribute(&#34;data-title&#34;) || &#34;&#34;;
+    }
+
+    function filterRows() {
+      var q = (search.value || &#34;&#34;).toLowerCase().trim();
+      var order = (orderFilter.value || &#34;all&#34;).toLowerCase();
+      var visible = 0;
+      rows.forEach(function (row) {
+        var haystack = (row.getAttribute(&#34;data-search&#34;) || &#34;&#34;).toLowerCase();
+        var rowOrder = (row.getAttribute(&#34;data-order-label&#34;) || &#34;&#34;).toLowerCase();
+        var matchesQuery = !q || haystack.indexOf(q) !== -1;
+        var matchesOrder = order === &#34;all&#34; || rowOrder === order;
+        var show = matchesQuery &amp;&amp; matchesOrder;
+        row.hidden = !show;
+        if (show) visible += 1;
+      });
+      empty.hidden = visible !== 0;
+    }
+
+    function sortRows() {
+      var key = sortKey.value || &#34;title&#34;;
+      var dir = sortDirection.value === &#34;desc&#34; ? -1 : 1;
+      rows.sort(function (a, b) {
+        var av = getValue(a, key);
+        var bv = getValue(b, key);
+        if (typeof av === &#34;number&#34; &amp;&amp; typeof bv === &#34;number&#34;) return (av - bv) * dir;
+        return String(av).localeCompare(String(bv)) * dir;
+      });
+      rows.forEach(function (row) { body.appendChild(row); });
+    }
+
+    function refresh() {
+      sortRows();
+      filterRows();
+    }
+
+    [search, orderFilter, sortKey, sortDirection].forEach(function (el) {
+      el.addEventListener(&#34;input&#34;, refresh);
+      el.addEventListener(&#34;change&#34;, refresh);
+    });
+
+    refresh();
+  })();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;format-referenz&#34;&gt;Format-Referenz&lt;/h2&gt;
+&lt;p&gt;Alle Dateien in diesem Archiv folgen dem &lt;strong&gt;ambiX&lt;/strong&gt;-Standard:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kanalreihenfolge:&lt;/strong&gt; ACN (Ambisonic Channel Number) — Kanäle sortiert nach Grad und Ordnungsindex&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Normierung:&lt;/strong&gt; SN3D (Schmidt Semi-Normierung)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kodierung:&lt;/strong&gt; B-Format, kein lautsprecherdecodiertes Audio&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zur Verwendung: Datei in REAPER importieren, Spur auf die korrekte Kanalanzahl setzen und durch einen ICST AmbiDecoder für die passende Ordnung routen. Die &lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Schritt-für-Schritt-Anleitung&lt;/a&gt; führt durch den Prozess.&lt;/p&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

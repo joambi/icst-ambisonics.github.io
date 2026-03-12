@@ -26,8 +26,7 @@
       <guid>https://ambisonics.ch/de/post/icst-grapes/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Intermediate | Zielgruppe: Spatial-Performer:in, Controller-Workflow-User.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://grapes-3d.com/&#34;&gt;Grapes 3D Control&lt;/a&gt; ist eine praktische Ergänzung zu den ICST Ambisonics Plugins.
 Grapes ist als Standalone und VST3 erhältlich und kann direkt in der DAW (Reaper) synchron bedient werden.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-grapes/Grapes.gif&#34; alt=&#34;Grapes&#34;&gt;&lt;/p&gt;
@@ -35,7 +34,6 @@ Grapes ist als Standalone und VST3 erhältlich und kann direkt in der DAW (Reape
 &lt;p&gt;Ein großer Vorteil dieser Methode ist, dass die 3D-Raumklang-Kontrolle nicht in der DAW aufgenommen werden muss. Stattdessen wird sie vom ICST AmbiEncoder via OSC mit Grapes gesendet. Das bedeutet, dass das räumliche Design flexibel bleibt und auch mit anderen Raumalisierungstools wie LISA, Dolby Atmos oder Binauralwiedergabe interpretiert werden kann.&lt;/p&gt;
 &lt;p&gt;Weitere Informationen findest du unter: &lt;a href=&#34;https://grapes-3d.com/&#34;&gt;https://grapes-3d.com/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>

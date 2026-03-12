@@ -26,9 +26,8 @@
       <guid>https://ambisonics.ch/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;bidirectional-osc-communication-with-maxmsp&#34;&gt;Bidirectional OSC Communication with MaxMSP&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;bidirectional-osc-communication-with-maxmsp&#34;&gt;Bidirectional OSC Communication with MaxMSP&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Max/MSP and OSC integrator.&lt;/p&gt;
 &lt;p&gt;Generate motion data in Max and send it via OSC to the &lt;em&gt;ICST AmbiEncoder&lt;/em&gt; in your DAW. Alternatively, transfer a motion composition from your DAW to the &lt;em&gt;icst.ambisonics-externals&lt;/em&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;required-software&#34;&gt;&lt;strong&gt;Required Software:&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -84,7 +83,6 @@
 &lt;li&gt;&lt;code&gt;Roll&lt;/code&gt;: Rotation around the forward axis&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>

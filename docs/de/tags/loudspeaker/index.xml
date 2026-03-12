@@ -26,18 +26,17 @@
       <guid>https://ambisonics.ch/de/post/multi-decoder-mode/</guid>
       <pubDate>Mon, 10 Nov 2025 10:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;multi-decoder-modus&#34;&gt;Multi-Decoder Modus&lt;/h1&gt;
-&lt;p&gt;Der &lt;strong&gt;Multi-Decoder Modus&lt;/strong&gt;, eingeführt in &lt;strong&gt;ICST AmbiDecoder v3.2&lt;/strong&gt;, ermöglicht es dir, bis zu &lt;strong&gt;vier vollständig unabhängige Decoder&lt;/strong&gt; in einer einzelnen Plugin-Instanz auszuführen. Dies ist ideal für komplexe Lautsprechersetups, die unterschiedliche Sprecherarrays kombinieren — zum Beispiel einen Hauptambisonics-Ring zusammen mit Höhenlautsprechern, einer Subwoofer-Gruppe oder einem separaten Nahfeld-Array.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;Multidecoder.png&#34; alt=&#34;Multi-Decoder overview&#34;&gt;&lt;/p&gt;
+        <description>&lt;h1 id=&#34;multi-decoder-modus&#34;&gt;Multi-Decoder Modus&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Advanced | Zielgruppe: Techniker:in, Studio-Engineer.&lt;/p&gt;
+&lt;p&gt;Der &lt;strong&gt;Multi-Decoder Modus&lt;/strong&gt;, eingeführt in &lt;strong&gt;ICST AmbiDecoder v3.2&lt;/strong&gt;, ermöglicht es dir, bis zu &lt;strong&gt;vier vollständig unabhängige Decoder&lt;/strong&gt; in einer einzelnen Plugin-Instanz auszuführen. Dies ist ideal für komplexe Lautsprechersetups, die unterschiedliche Lautsprecher-Arrays kombinieren, zum Beispiel einen Hauptambisonics-Ring zusammen mit Höhenlautsprechern, einer Subwoofer-Gruppe oder einem separaten Nahfeld-Array.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/multi-decoder-mode/Multidecoder.png&#34; alt=&#34;Multi-Decoder overview&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;wann-man-den-multi-decoder-modus-verwendet&#34;&gt;Wann man den Multi-Decoder Modus verwendet&lt;/h2&gt;
 &lt;p&gt;Verwende den Multi-Decoder Modus, wenn dein Setup enthält:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mehrere Sprecherschichten&lt;/strong&gt; (z.B. horizontaler Ring + Höhenkuppel)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mehrere Lautsprecherschichten&lt;/strong&gt; (z.B. horizontaler Ring + Höhenkuppel)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Mixed-Order Dekodierung&lt;/strong&gt; (z.B. 3. Ordnung für horizontal, 1. Ordnung für Höhe)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Unterschiedliche Sprechergeometrien&lt;/strong&gt;, die separate Presets benötigen&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unterschiedliche Lautsprechergeometrien&lt;/strong&gt;, die separate Presets benötigen&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Unabhängige Gain- und Filtereinstellungen&lt;/strong&gt; pro Lautsprechergruppe&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Für einfache Setups (einzelnes Array, einzelne Geometrie) ist der Standard-Single-Decoder-Modus ausreichend.&lt;/p&gt;
@@ -45,12 +44,16 @@
 &lt;h2 id=&#34;aktivierung-des-multi-decoder-modus&#34;&gt;Aktivierung des Multi-Decoder Modus&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Öffne das &lt;strong&gt;ICST AmbiDecoder&lt;/strong&gt; Plugin in deiner REAPER FX-Kette.&lt;/li&gt;
-&lt;li&gt;Im &lt;strong&gt;Decoder Settings&lt;/strong&gt; Panel, finde die &lt;strong&gt;Multi-Decoder&lt;/strong&gt; Schaltfläche.&lt;/li&gt;
+&lt;li&gt;Im &lt;strong&gt;Decoder-Settings-Panel&lt;/strong&gt; findest du die &lt;strong&gt;Multi-Decoder&lt;/strong&gt; Schaltfläche.&lt;/li&gt;
 &lt;li&gt;Aktiviere den Multi-Decoder Modus — vier Decoder-Slots (A, B, C, D) erscheinen.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;&lt;p&gt;[!Tip:]
-Jeder Decoder-Slot ist vollständig unabhängig und kann separat konfiguriert werden, ohne die anderen zu beeinflussen.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;hr&gt;
+&lt;div class=&#34;callout callout--tip&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;🔥&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Tip&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;p&gt;Jeder Decoder-Slot ist vollständig unabhängig und kann separat konfiguriert werden, ohne die anderen zu beeinflussen.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;konfiguration-jedes-decoders&#34;&gt;Konfiguration jedes Decoders&lt;/h2&gt;
 &lt;p&gt;Für jeden der vier Decoder kannst du einstellen:&lt;/p&gt;
 &lt;h3 id=&#34;1-name-und-farbe&#34;&gt;1. Name und Farbe&lt;/h3&gt;
@@ -67,7 +70,7 @@ Jeder Decoder-Slot ist vollständig unabhängig und kann separat konfiguriert we
 &lt;h3 id=&#34;3-ambisonics-reihenfolge&#34;&gt;3. Ambisonics-Reihenfolge&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Stelle die &lt;strong&gt;Dekodierreihenfolge unabhängig&lt;/strong&gt; pro Decoder ein (1. bis 7. Ordnung).&lt;/li&gt;
-&lt;li&gt;Niedrigere Ordnungen (1.–2.) eignen sich für spärliche oder schwierige Sprechergeometrien.&lt;/li&gt;
+&lt;li&gt;Niedrigere Ordnungen (1.–2.) eignen sich für spärliche oder schwierige Lautsprechergeometrien.&lt;/li&gt;
 &lt;li&gt;Höhere Ordnungen (3.–7.) geben präzisere Ortung für dichte Arrays.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;4-ambisonics-gewichtung&#34;&gt;4. Ambisonics-Gewichtung&lt;/h3&gt;
@@ -96,9 +99,13 @@ Jeder Decoder-Slot ist vollständig unabhängig und kann separat konfiguriert we
 &lt;li&gt;Decoder D → setzt sich nach C fort&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Stelle sicher, dass dein REAPER-Track genug Ausgangskanäle konfiguriert hat, um alle Lautsprecher über alle vier Decoder zu decken.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;[!Attention:]
-Überprüfe deine Track-Kanalanzahl und das Routing sorgfältig. Fehlende Kanäle führen zu stillen Lautsprechern ohne Fehlermeldung.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;hr&gt;
+&lt;div class=&#34;callout callout--warning&#34;&gt;
+    &lt;div class=&#34;callout__header&#34;&gt;
+      &lt;span class=&#34;callout__icon&#34;&gt;⚠️&lt;/span&gt;
+      &lt;span class=&#34;callout__label&#34;&gt;Warning&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;callout__body&#34;&gt;&lt;p&gt;Überprüfe deine Track-Kanalanzahl und das Routing sorgfältig. Fehlende Kanäle führen zu stillen Lautsprechern ohne Fehlermeldung.&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;lautsprecher-test&#34;&gt;Lautsprecher-Test&lt;/h2&gt;
 &lt;p&gt;Um jeden Decoder zu verifizieren:&lt;/p&gt;
 &lt;ol&gt;
@@ -142,8 +149,6 @@ Jeder Decoder-Slot ist vollständig unabhängig und kann separat konfiguriert we
 &lt;li&gt;📥 &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;Download v3.2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;📺 &lt;a href=&#34;https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&amp;#43;plugins&#34;&gt;ICST Ambisonics Videos on YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>

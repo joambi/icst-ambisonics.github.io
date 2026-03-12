@@ -26,9 +26,9 @@
       <guid>https://ambisonics.ch/post/osc-2-fx/</guid>
       <pubDate>Fri, 16 May 2025 09:44:58 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&amp;ndash;&lt;/p&gt;
 &lt;h1 id=&#34;icst-ambiencoder-sends-osc-to-fx-plugins-parameter&#34;&gt;ICST AmbiEncoder sends OSC to FX-Plugins-parameter&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; Technician, Sound engineer.&lt;/p&gt;
 &lt;h3 id=&#34;integrating-icst-ambiencoder-with-iem-fdnreverb-via-osc&#34;&gt;Integrating ICST AmbiEncoder with IEM FdnReverb via OSC&lt;/h3&gt;
 &lt;p&gt;This example demonstrates a simple synchronization between &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; and &lt;strong&gt;IEM Ambisonics plugins&lt;/strong&gt;, using &lt;strong&gt;FdnReverb&lt;/strong&gt; to apply distance-dependent reverb. The &lt;strong&gt;IEM plugins&amp;rsquo; OSC interface&lt;/strong&gt; makes this process straightforward.&lt;/p&gt;
 &lt;h3 id=&#34;osc--osc-communication&#34;&gt;OSC &amp;lt;&amp;ndash;&amp;gt; OSC Communication&lt;/h3&gt;
@@ -57,7 +57,6 @@
 &lt;/ol&gt;
 &lt;p&gt;As the distance increases, reverb intensity will also increase. Experiment with other reverb parameters for additional effects.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>

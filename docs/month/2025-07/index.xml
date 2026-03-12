@@ -26,12 +26,10 @@
       <guid>https://ambisonics.ch/post/icst-scripts/</guid>
       <pubDate>Thu, 17 Jul 2025 14:31:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;icst-ambiencoder_64-spiral-walk---dokumentation&#34;&gt;ICST AmbiEncoder_64 Spiral Walk - Dokumentation&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;icst-ambiencoder_64-spiral-walk---dokumentation&#34;&gt;ICST AmbiEncoder_64 Spiral Walk - Dokumentation&lt;/h1&gt;
+&lt;p&gt;Level: Advanced | &lt;strong&gt;Audience:&lt;/strong&gt; ReaScript user, Technical artist.&lt;/p&gt;
 &lt;h3 id=&#34;-funktion&#34;&gt;🔍 &lt;strong&gt;Funktion&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Dieses ReaScript generiert Spiralbewegungen (z.B. expandierende Spiralen) für die X-, Y- und optional Z-Koordinaten des VST3 &amp;ldquo;ICST AmbiEncoder_64&amp;rdquo; in REAPER. Es erlaubt dir, Bewegungsverläufe auf Basis von Startpositionen deiner Punkte zu erzeugen und automatisch als Envelope einzufügen. Das Ganze erfolgt grafisch via ReaImGui mit einstellbaren Parametern und Preset-Speicher.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;Spiral_Walk.png&#34; alt=&#34;Spiral_Walk&#34;&gt;&lt;/p&gt;
 &lt;p&gt;DOWNLOAD ICST LuaScripts:
 (Copy to /Reaper/Scripts)&lt;/p&gt;
 &lt;ul&gt;
@@ -106,23 +104,22 @@
 &lt;hr&gt;
 &lt;h1 id=&#34;example&#34;&gt;Example:&lt;/h1&gt;
 &lt;p&gt;Spiral_Walk_out:
-&lt;img src=&#34;Spiral_Walk_aussen.gif&#34; alt=&#34;Spiral_Walk_aussen&#34;&gt;
-Spiral_Walk_in:
-&lt;img src=&#34;Spiral_Walk_innen.gif&#34; alt=&#34;Spiral_Walk_in&#34;&gt;&lt;/p&gt;
+Spiral_Walk_in:&lt;/p&gt;
 </description>
 
     </item>
     <item>
       <title>ICST AmbiEncoder – CircleSelected</title>
-      <link>https://ambisonics.ch/post/circle_selected/</link>
-      <guid>https://ambisonics.ch/post/circle_selected/</guid>
+      <link>https://ambisonics.ch/post/circle-selected/</link>
+      <guid>https://ambisonics.ch/post/circle-selected/</guid>
       <pubDate>Sat, 19 Jul 2025 13:28:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
         <description>&lt;h1 id=&#34;icst_ambiencoder_64_circleselected_lua-presets&#34;&gt;ICST_AmbiEncoder_64_CircleSelected_Lua-Presets&lt;/h1&gt;
+&lt;p&gt;Level: Intermediate | &lt;strong&gt;Audience:&lt;/strong&gt; Reaper power user, Performance artist.&lt;/p&gt;
 &lt;h2 id=&#34;-benutzer-dokumentation&#34;&gt;📃 Benutzer-Dokumentation&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Script:&lt;/strong&gt; &lt;code&gt;ICST_AmbiEncoder_64_CircleSelected_Presets.lua&lt;/code&gt;&lt;br&gt;
 &lt;strong&gt;Funktion:&lt;/strong&gt; Punkte des ICST AmbiEncoder_64 Plugins grafisch auswählen, im Kreis anordnen, bewegen (Rotation/RandomWalk) und als Preset speichern/laden.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/circle_selected/Circle_Selected.gif&#34; alt=&#34;circleselected&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/circle-selected/Circle_Selected.gif&#34; alt=&#34;circleselected&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;-installation&#34;&gt;🚀 Installation&lt;/h2&gt;
 &lt;ol&gt;
@@ -239,7 +236,6 @@ Lege die Datei &lt;code&gt;ICST_AmbiEncoder_64_CircleSelected_Presets.lua&lt;/co
 &lt;li&gt;&lt;strong&gt;Autor:&lt;/strong&gt; Johannes Schütt &amp;amp;  Reaper-Assistent ✨&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Features:&lt;/strong&gt; Presets, Export/Import, Visualisierung, auswählbare Punkte&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 </description>
 
     </item>

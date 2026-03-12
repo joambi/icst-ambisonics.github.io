@@ -4,6 +4,10 @@ title: Shortcuts
 date: 2025-01-22T14:36:00
 ---
 
+Reference list of the main interaction shortcuts for the ICST Encoder and Decoder interfaces.
+
+## Encoder and decoder shortcuts
+
 **Actions available in Encoder and Decoder:**
 
 - **Zoom In:** _Right Mouse Button Click / MouseWheel_
@@ -25,4 +29,4 @@ date: 2025-01-22T14:36:00
 - shift + control & 'm' [Mute]
 - shift + control & 's' [Solo]
 
-Referenz: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction
+Reference: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction>

@@ -4,6 +4,10 @@ weight: 140
 date: 2025-01-22T14:36:00
 ---
 
+Referenzliste der wichtigsten Interaktionskürzel für die Benutzeroberflächen von ICST Encoder und Decoder.
+
+## Kürzel für Encoder und Decoder
+
 **Aktionen in Encoder und Decoder verfügbar:**
 
 - **Vergrößern:** _Rechte Maustaste Klick / Mausrad_
@@ -24,4 +28,4 @@ date: 2025-01-22T14:36:00
 - shift + control & 'm' [Stummschaltung]
 - shift + control & 's' [Solo]
 
-Referenz: https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction
+Referenz: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction>

@@ -6,21 +6,23 @@ aliases:
   - /home/
 ---
 
-## Open Ambisonics Tools, Real Studio Workflows
+## New here? Start with Ambisonics in REAPER
 
 A method for capturing and reproducing three-dimensional sound — spatialise audio for any speaker layout, any room. The ICST plugins bring this to REAPER, free and open source, with studio-tested workflows from ZHdK Zürich.
+
+If you are new, follow the guided start path. If you already know the plugins, jump straight into Quick Start or the docs.
 
 ![Plugin Overview](/images/Home_gif.gif)
 
 <div class="hero__links">
-  <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">
-    <i class="fas fa-play"></i>&nbsp;Start in 5 Minutes
+  <a class="hero__link hero__link--primary" href="/start/">
+    <i class="fas fa-play"></i>&nbsp;Start Here
+  </a>
+  <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">
+    <i class="fas fa-bolt"></i>&nbsp;Quick Start
   </a>
   <a class="hero__link" href="/ambisonics-101/">
     <i class="fas fa-compass"></i>&nbsp;What is Ambisonics?
-  </a>
-  <a class="hero__link" href="/blog/downloads/">
-    <i class="fas fa-download"></i>&nbsp;Download
   </a>
   <a class="hero__link" href="/icst-ambisonics-plugins/">
     <i class="fas fa-book-open"></i>&nbsp;Plugin Docs
@@ -34,7 +36,7 @@ New in v3.2: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases]
 <div class="home-section-header home-section-header--software">
 <p class="home-section-label">🎛️ Working with Ambisonics?</p>
 <p class="home-section-lead">Free and open-source spatial audio tools for REAPER — from first setup to advanced OSC control and DAW integration.</p>
-<a class="hero__link hero__link--primary" href="/start/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-play"></i>&nbsp;Start here — guided 4-step path</a>
+<a class="hero__link hero__link--primary" href="/start/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-play"></i>&nbsp;Guided 4-step start path</a>
 </div>
 
 <div class="home-cards">

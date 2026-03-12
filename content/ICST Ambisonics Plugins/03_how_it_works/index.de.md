@@ -5,13 +5,9 @@ weight: 50
 date: 2025-02-01T19:26:00
 ---
 
+Referenzübersicht des Standard-Signalflusses für Ambisonics in REAPER: Quelle, Encoder, B-Format-Bus und Decoder.
 
-### Intuitiver Ambisonics-Workflow mit ICST Plugins
-
-Die **ICST Ambisonics Plugins** sind für einen nahtlosen und intuitiven Workflow konzipiert.
-In diesem Tutorial zeigen wir dir drei wesentliche **"Wie es funktioniert"** Workflows.
-
-### Einrichten eines Ambisonics-Workflows in deiner DAW
+## Grundmodell des Workflows
 
 Zum Erstellen von **Ambisonics-Inhalten** sollte deine Einrichtung folgende Komponenten umfassen:
 
@@ -20,15 +16,15 @@ Zum Erstellen von **Ambisonics-Inhalten** sollte deine Einrichtung folgende Komp
 - **B-Format Master-Track** – Erfasst das kodierte Audio zum Durchmischen oder Aufnehmen
 - **Decoder** – Konvertiert B-Format-Audio für Lautsprecherausgabe oder binaurales Kopfhörer-Monitoring
 
-#### Signalfluss-Übersicht
+### Signalflussübersicht
 
-Nachstehend findest du eine schematische Darstellung eines **typischen Ambisonics-Workflows**:
+Die folgende Darstellung zeigt einen typischen Ambisonics-Workflow:
   ![01_easyworkflow](01_easy_workflow.png)
 
-Das nächste Bild bietet einen **Überblick über den ICST Ambisonics Plugin-Signalfluss**:
+Das nächste Bild zeigt den Signalfluss der ICST Plugins:
   ![0_workflow_](02_workflow.png)
 
-In **Reaper** sieht der Signalfluss wie folgt aus:
+In **REAPER** sieht der Signalfluss wie folgt aus:
 
   ![03_reaper_workflow](03_reaper_workflow.png)
 

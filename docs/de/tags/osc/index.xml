@@ -18,7 +18,7 @@
       <language>de</language>
       <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
       <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
-      <lastBuildDate>Wed, 28 May 2025 14:57:00 &#43;0000</lastBuildDate>
+      <lastBuildDate>Sun, 08 Mar 2026 11:50:00 &#43;0100</lastBuildDate>
       <atom:link href="https://ambisonics.ch/de/tags/osc/index.xml" rel="self" type="application/rss&#43;xml" />
     <item>
       <title>ICST AmbiEncoder – OSC Syntax</title>
@@ -26,25 +26,14 @@
       <guid>https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;osc-syntax-für-das-icst-ambiencoder-plugin&#34;&gt;OSC Syntax für das ICST AmbiEncoder Plugin&lt;/h2&gt;
-&lt;p&gt;Der &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; unterstützt &lt;strong&gt;OSC&lt;/strong&gt; und &lt;strong&gt;JavaScript&lt;/strong&gt;, was eine nahtlose Kommunikation mit OSC-Tools wie &lt;strong&gt;TouchOSC, IanniX, MaxMSP&lt;/strong&gt; und andere OSC-fähige Software ermöglicht.&lt;/p&gt;
-&lt;h3 id=&#34;funktionsweise&#34;&gt;&lt;strong&gt;Funktionsweise&lt;/strong&gt;&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Öffne den Tab &lt;strong&gt;&amp;lsquo;OSC In&amp;rsquo;&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/osc-in-out.png&#34; alt=&#34;OSC IN-OUT&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Abbildung: Encoder-Einstellung &amp;lsquo;OSC In&amp;rsquo; empfängt auf Port 50001&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Alle Informationen findest du im &lt;strong&gt;Help&lt;/strong&gt;-Bereich, indem du auf das Fragezeichen (&lt;strong&gt;?&lt;/strong&gt;) klickst.&lt;/p&gt;
-&lt;h4 id=&#34;osc-in&#34;&gt;&lt;strong&gt;OSC In&lt;/strong&gt;&lt;/h4&gt;
+        <description>&lt;h2 id=&#34;osc-syntax-für-das-icst-ambiencoder-plugin&#34;&gt;OSC Syntax für das ICST AmbiEncoder Plugin&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Advanced | Zielgruppe: Techniker:in, Developer, Max/OSC-User.&lt;/p&gt;
+&lt;p&gt;Der &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; unterstützt &lt;strong&gt;OSC&lt;/strong&gt; und &lt;strong&gt;JavaScript&lt;/strong&gt;, was eine nahtlose Kommunikation mit OSC-Tools wie &lt;strong&gt;TouchOSC, IanniX, MaxMSP&lt;/strong&gt; und andere OSC-fähige Software ermöglicht.
+Diese Seite ist die &lt;strong&gt;Syntax-Referenz&lt;/strong&gt;.
+Für Quickstart und Debugging-Reihenfolge nutze:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Receive OSC&lt;/strong&gt;: Empfange OSC-Befehle auf dem definierten Port (Standard: 50001). Die vollständige OSC-Spezifikation ist im Help-Bereich des Plugins verfügbar.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/osc-10-key-messages/&#34;&gt;OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Send Positions for External Usage&lt;/strong&gt;: Diese Funktion sendet Audio-Quellenpositionen als OSC-Nachrichten an ein definiertes Ziel/einen Port. Nachrichten lösen Positionswechsel aus, und die Update-Rate ist auf &lt;strong&gt;20Hz (50ms)&lt;/strong&gt; begrenzt.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;osc-syntax--adressspezifikation&#34;&gt;&lt;strong&gt;OSC Syntax &amp;amp; Adressspezifikation&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;1-zugriff-auf-osc-spezifikationen&#34;&gt;&lt;strong&gt;1. Zugriff auf OSC-Spezifikationen&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Klicke auf das &lt;strong&gt;Fragezeichen&lt;/strong&gt; im ICST AmbiEncoder.
@@ -98,36 +87,7 @@
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/Intern_osc.png&#34; alt=&#34;OSC_internal&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Jetzt empfängt der AmbiDecoder &lt;strong&gt;alle OSC-Nachrichten&lt;/strong&gt; von allen verbundenen AmbiEncodern.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;schritte-zum-senden-von-osc-nachrichten&#34;&gt;&lt;strong&gt;Schritte zum Senden von OSC-Nachrichten&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Der AmbiEncoder kann auch die meisten seiner Parameter über OSC senden.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/external_osc.png&#34; alt=&#34;External-osc&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Öffne das Fragezeichen vor den Presets, um detaillierte Hilfeinformationen zu erhalten.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Aktiviere &lt;strong&gt;&amp;ldquo;Send Positions for External Usage&amp;rdquo;&lt;/strong&gt; in den Einstellungen.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Im &lt;strong&gt;Targets&lt;/strong&gt;-Bereich:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Aktiviere oder deaktiviere die OSC-Übertragung.&lt;/li&gt;
-&lt;li&gt;Definiere die &lt;strong&gt;Host-IP-Adresse&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Wähle einen &lt;strong&gt;Port&lt;/strong&gt; (Standard: &lt;strong&gt;50001&lt;/strong&gt;).&lt;/li&gt;
-&lt;li&gt;Doppelklick auf &lt;strong&gt;OSC messages&lt;/strong&gt; zum Bearbeiten.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt; Wenn du an einem &lt;strong&gt;internen FX Learning Program&lt;/strong&gt; teilnimmst, wähle &lt;strong&gt;&amp;ldquo;Continuous&amp;rdquo;&lt;/strong&gt; Modus.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Klicke auf &lt;strong&gt;Help (?)&lt;/strong&gt; für detaillierte OSC-Informationen.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Füge OSC-Nachrichten hinzu oder lösche sie.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Speichere oder lade OSC-Nachrichten in &lt;strong&gt;Presets&lt;/strong&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -137,9 +97,8 @@
       <guid>https://ambisonics.ch/de/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;bidirektionale-osc-kommunikation-mit-maxmsp&#34;&gt;Bidirektionale OSC-Kommunikation mit MaxMSP&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;bidirektionale-osc-kommunikation-mit-maxmsp&#34;&gt;Bidirektionale OSC-Kommunikation mit MaxMSP&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Advanced | Zielgruppe: Max/MSP- und OSC-Integrator:in.&lt;/p&gt;
 &lt;p&gt;Generiere Bewegungsdaten in Max und sende sie via OSC zum &lt;em&gt;ICST AmbiEncoder&lt;/em&gt; in deiner DAW. Alternativ kannst du eine Bewegungskomposition von deiner DAW zu den &lt;em&gt;icst.ambisonics-externals&lt;/em&gt; übertragen.&lt;/p&gt;
 &lt;h3 id=&#34;erforderliche-software&#34;&gt;&lt;strong&gt;Erforderliche Software:&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -195,7 +154,6 @@
 &lt;li&gt;&lt;code&gt;Roll&lt;/code&gt;: Rotation um die Vorwärtsachse&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -205,9 +163,9 @@
       <guid>https://ambisonics.ch/de/post/osc-2-fx/</guid>
       <pubDate>Fri, 16 May 2025 09:44:58 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&amp;ndash;&lt;/p&gt;
 &lt;h1 id=&#34;icst-ambiencoder-sendet-osc-zu-fx-plugins-parameter&#34;&gt;ICST AmbiEncoder sendet OSC zu FX-Plugins-Parameter&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Advanced | Zielgruppe: Techniker:in, Sound Engineer.&lt;/p&gt;
 &lt;h3 id=&#34;integration-des-icst-ambiencoder-mit-iem-fdnreverb-via-osc&#34;&gt;Integration des ICST AmbiEncoder mit IEM FdnReverb via OSC&lt;/h3&gt;
 &lt;p&gt;Dieses Beispiel zeigt eine einfache Synchronisierung zwischen &lt;strong&gt;ICST AmbiEncoder&lt;/strong&gt; und &lt;strong&gt;IEM Ambisonics Plugins&lt;/strong&gt;, wobei &lt;strong&gt;FdnReverb&lt;/strong&gt; verwendet wird, um distanzabhängige Reverb anzuwenden. Die &lt;strong&gt;OSC-Schnittstelle der IEM Plugins&lt;/strong&gt; macht diesen Prozess einfach.&lt;/p&gt;
 &lt;h3 id=&#34;osc--osc-kommunikation&#34;&gt;OSC &amp;lt;&amp;ndash;&amp;gt; OSC Kommunikation&lt;/h3&gt;
@@ -236,7 +194,6 @@
 &lt;/ol&gt;
 &lt;p&gt;Mit zunehmender Entfernung wird auch die Reverb-Intensität zunehmen. Experimentiere mit anderen Reverb-Parametern für zusätzliche Effekte.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -246,8 +203,7 @@
       <guid>https://ambisonics.ch/de/post/icst-grapes/</guid>
       <pubDate>Sun, 16 Mar 2025 09:44:58 &#43;0100</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST) Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Intermediate | Zielgruppe: Spatial-Performer:in, Controller-Workflow-User.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://grapes-3d.com/&#34;&gt;Grapes 3D Control&lt;/a&gt; ist eine praktische Ergänzung zu den ICST Ambisonics Plugins.
 Grapes ist als Standalone und VST3 erhältlich und kann direkt in der DAW (Reaper) synchron bedient werden.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/icst-grapes/Grapes.gif&#34; alt=&#34;Grapes&#34;&gt;&lt;/p&gt;
@@ -255,7 +211,6 @@ Grapes ist als Standalone und VST3 erhältlich und kann direkt in der DAW (Reape
 &lt;p&gt;Ein großer Vorteil dieser Methode ist, dass die 3D-Raumklang-Kontrolle nicht in der DAW aufgenommen werden muss. Stattdessen wird sie vom ICST AmbiEncoder via OSC mit Grapes gesendet. Das bedeutet, dass das räumliche Design flexibel bleibt und auch mit anderen Raumalisierungstools wie LISA, Dolby Atmos oder Binauralwiedergabe interpretiert werden kann.&lt;/p&gt;
 &lt;p&gt;Weitere Informationen findest du unter: &lt;a href=&#34;https://grapes-3d.com/&#34;&gt;https://grapes-3d.com/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
 </description>
 
     </item>
@@ -265,13 +220,11 @@ Grapes ist als Standalone und VST3 erhältlich und kann direkt in der DAW (Reape
       <guid>https://ambisonics.ch/de/post/gyrosc/</guid>
       <pubDate>Wed, 28 May 2025 14:57:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;ICST MultiEncoder und iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;ICST MultiEncoder und iOS &lt;a href=&#34;https://www.bitshapesoftware.com/instruments/gyrosc/&#34;&gt;GyrOSC.app &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GyrOSC&lt;/strong&gt; ist ein leichtes Utility, das Bewegungssensordaten (von deinem iPhone, iPod Touch oder iPad) über ein lokales Wireless-Netzwerk an jede OSC-kompatible Host-Anwendung sendet. Es ermöglicht dir, Live-Audio- oder Video-Anwendungen mit den integrierten Sensoren deines Geräts (Gyroskop, Beschleunigungsmesser, Kompass und Höhenmesser) zu steuern.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/gyrOSC.png&#34; alt=&#34;GyrOSC&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Das folgende GIF zeigt, wie der ICST AmbiEncoder OSC-Daten von der GyrOSC-App empfängt.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyroOSC_Demo.gif&#34; alt=&#34;Example video:&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyroOSC_Demo.gif&#34; alt=&#34;Beispielvideo&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;funktionsweise&#34;&gt;Funktionsweise:&lt;/h3&gt;
 &lt;p&gt;Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung zur Verwendung der iOS-App &lt;em&gt;GyrOSC&lt;/em&gt; mit dem ICST Ambisonics Encoder.&lt;/p&gt;
 &lt;h4 id=&#34;einrichtung-der-gyrosc-app&#34;&gt;Einrichtung der GyrOSC-App:&lt;/h4&gt;
@@ -300,7 +253,7 @@ Grapes ist als Standalone und VST3 erhältlich und kann direkt in der DAW (Reape
 &lt;p&gt;Öffne das ICST AmbiEncoder_64 Plugin.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Rufe die Encoder Settings auf.&lt;/p&gt;
+&lt;p&gt;Rufe die Encoder-Settings auf.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Öffne den &lt;em&gt;OSC IN&lt;/em&gt; Bereich und aktiviere OSC-IN (Port: 50001).&lt;/p&gt;
@@ -318,14 +271,64 @@ Grapes ist als Standalone und VST3 erhältlich und kann direkt in der DAW (Reape
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;inspirationen&#34;&gt;Inspirationen:&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Intermediate | Zielgruppe: Mobile-Controller-User, Performer:in.&lt;/p&gt;
 &lt;h3 id=&#34;osc-swarm&#34;&gt;OSC-Swarm&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;OSC-Message:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;/gyrosc/1/grav&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;JS-Code:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;s.setXYZ(1, s.arg(2), -s.arg(1), 0); for(i = 2; i &amp;lt;= 8; i++) s.setXYZ(i, s.arg(2)+Math.random()*0.2, -s.arg(1) + Math.random()* 0.2, 0)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/post/gyrosc/GyrOSC-SWARM.gif&#34; alt=&#34;OSC-Swarm&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;span style=&#34;font-size:9px;color:#9f9f9f;&#34;&gt;©2025 ICST&lt;/span&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages</title>
+      <link>https://ambisonics.ch/de/post/osc-10-key-messages/</link>
+      <guid>https://ambisonics.ch/de/post/osc-10-key-messages/</guid>
+      <pubDate>Sun, 08 Mar 2026 11:50:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Level: Intermediate | Zielgruppe: Power-User, Technical Artist.&lt;/p&gt;
+&lt;p&gt;Diese Seite ist der &lt;strong&gt;Praxis-Quickstart&lt;/strong&gt;.
+Für die vollständige Adress- und Parameterreferenz siehe:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC Syntax für den ICST AmbiEncoder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;wofür-osc-hier-wirklich-nützlich-ist&#34;&gt;Wofür OSC hier wirklich nützlich ist&lt;/h2&gt;
+&lt;p&gt;OSC macht Bewegungssteuerung reproduzierbar und erlaubt es, externe Controller, Max-Patches oder Skripte sauber in den Produktionsworkflow einzubinden.&lt;/p&gt;
+&lt;h2 id=&#34;setup-in-zwei-minuten&#34;&gt;Setup in zwei Minuten&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Lokalen Host und Port festlegen.&lt;/li&gt;
+&lt;li&gt;Verbindung mit einer Test-Message prüfen.&lt;/li&gt;
+&lt;li&gt;Rückmeldung in Reaper und im AmbiEncoder kontrollieren.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;die-10-message-typen-die-du-sofort-brauchst&#34;&gt;Die 10 Message-Typen, die du sofort brauchst&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Source Select&lt;/li&gt;
+&lt;li&gt;X-Position&lt;/li&gt;
+&lt;li&gt;Y-Position&lt;/li&gt;
+&lt;li&gt;Z-Position&lt;/li&gt;
+&lt;li&gt;Azimuth&lt;/li&gt;
+&lt;li&gt;Elevation&lt;/li&gt;
+&lt;li&gt;Distance/Gain&lt;/li&gt;
+&lt;li&gt;Group Move&lt;/li&gt;
+&lt;li&gt;Snapshot/Preset Recall&lt;/li&gt;
+&lt;li&gt;Transport Sync Trigger&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;debugging-checkliste&#34;&gt;Debugging Checkliste&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Port-Konflikt ausschliessen.&lt;/li&gt;
+&lt;li&gt;Message-Format mit bestehender Syntax prüfen.&lt;/li&gt;
+&lt;li&gt;Timing/Jitter bei schnellen Updates begrenzen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;praxisbeispiel&#34;&gt;Praxisbeispiel&lt;/h2&gt;
+&lt;p&gt;Kombiniere einen externen Controller mit Reaper-Automation: OSC steuert die Bewegung in Echtzeit, Reaper zeichnet die Bewegung als verifizierbare Automation auf.&lt;/p&gt;
+&lt;h2 id=&#34;weiterführende-inhalte&#34;&gt;Weiterführende Inhalte&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/&#34;&gt;MaxMSP und ICST AmbiEncoder - OSC Communication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/reaper-setup-20-minuten/&#34;&gt;Reaper Ambisonics Setup in 20 Minuten&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;nächster-schritt&#34;&gt;Nächster Schritt&lt;/h2&gt;
+&lt;p&gt;Übernimm zwei bis drei Messages in dein Setup und teste sie zuerst mit einer einzelnen Quelle, bevor du Gruppensteuerung aktivierst.&lt;/p&gt;
 </description>
 
     </item>
