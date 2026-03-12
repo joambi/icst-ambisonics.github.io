@@ -235,9 +235,12 @@ group: "Listening"
 
 ## Listening
 
+→ [Ascolta Listening Guide](/blog/ascolta-listening-guide/) — Smalley's spatial categories, five analytical questions, three exercises for active spatial listening.
+
 A selection of online resources for listening to Ambisonics and spatial audio:
 
-- [Sounding Future](https://audiospace.soundingfuture.com/tracks) — spatial audio archive
+- [Sounding Future — Tracks](https://audiospace.soundingfuture.com/tracks) — spatial audio archive
+- [Sounding Future — Artists](https://audiospace.soundingfuture.com/artists) — composer and artist profiles
 - [HOAST Library (IEM)](https://hoast.iem.at/) — Higher-Order Ambisonics recordings
 - [Nimbus UHJ](https://www.wyastone.co.uk/all-labels/nimbus.html) — classic Ambisonics UHJ recordings
 

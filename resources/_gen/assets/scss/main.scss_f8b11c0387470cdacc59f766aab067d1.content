@@ -2154,6 +2154,130 @@ hr {
   color: #9f9f9f;
 }
 
+.onboarding-steps {
+  margin: 1.8rem 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.onboarding-step {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  margin-bottom: 0;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.onboarding-step:last-child {
+  padding-bottom: 0;
+}
+
+.onboarding-step::before {
+  content: "";
+  position: absolute;
+  left: 1.1rem;
+  top: 2.4rem;
+  bottom: 0;
+  width: 2px;
+}
+.theme--light .onboarding-step::before {
+  background: #eeeeee;
+}
+.theme--dark .onboarding-step::before {
+  background: #464646;
+}
+
+.onboarding-step:last-child::before {
+  display: none;
+}
+
+.onboarding-step__num {
+  flex-shrink: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1;
+  z-index: 1;
+}
+
+.onboarding-steps--software .onboarding-step__num {
+  background: #4a9eff;
+  color: #fff;
+}
+
+.onboarding-steps--studio .onboarding-step__num {
+  background: #9c6fde;
+  color: #fff;
+}
+
+.onboarding-step__body {
+  flex: 1;
+  padding-top: 0.2rem;
+}
+
+.onboarding-step__title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 0.25rem;
+}
+
+.onboarding-step__desc {
+  font-size: 0.93rem;
+  margin: 0 0 0.55rem;
+}
+.theme--light .onboarding-step__desc {
+  color: #9f9f9f;
+}
+.theme--dark .onboarding-step__desc {
+  color: #9f9f9f;
+}
+
+.onboarding-step__optional {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-left: 0.4rem;
+}
+.theme--light .onboarding-step__optional {
+  color: #9f9f9f;
+}
+.theme--dark .onboarding-step__optional {
+  color: #9f9f9f;
+}
+
+.home-card--placeholder {
+  opacity: 0.72;
+  border-style: dashed !important;
+}
+
+.home-card__coming-soon {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1px 7px 2px;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.theme--light .home-card__coming-soon {
+  background: #fef3cd;
+  color: #7d5c00;
+}
+
+.theme--dark .home-card__coming-soon {
+  background: #3a2e0a;
+  color: #f5d060;
+}
+
 .medium-zoom-overlay {
   position: fixed;
   top: 0;

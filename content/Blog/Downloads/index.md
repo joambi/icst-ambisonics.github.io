@@ -22,10 +22,23 @@ Downloads for studio and Ambisonics workflows in one place.
 
   <section class="home-card">
     <h4>Patches & Templates</h4>
-    <p>Ready-to-use patches and templates for Max and Ableton Live.</p>
+    <p>Ready-to-use patches and templates for Max, Ableton Live, and REAPER.</p>
     <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/downloads/reaper/ICST_HOA_Reaper_Session_ICST_Kompositionsstudio_v4.RPP">ICST Kompositionsstudio v4</a>
+      <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v3.RPP">HOA Reaper Session v3</a>
+      <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v2.RPP">HOA Reaper Session v2</a>
+      <a class="hero__link" href="/blog/download-pack-1-hoa-reaper-template/">HOA Reaper Template Pack</a>
       <a class="hero__link hero__link--primary" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat">OSC MultiEncoder (Max)</a>
       <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv">Multi-Panner (Ableton)</a>
+    </div>
+  </section>
+
+  <section class="home-card">
+    <h4>Guides & Documentation</h4>
+    <p>Onboarding guides for plugin users and studio residents — printable PDFs.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/downloads/icst-ambisonics-start-guide.pdf" download>Plugin Start Guide (PDF)</a>
+      <a class="hero__link" href="/downloads/icst-resident-guide.pdf" download>Resident Guide (PDF)</a>
     </div>
   </section>
 
@@ -45,9 +58,13 @@ Downloads for studio and Ambisonics workflows in one place.
     <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/kompositionsstudio-speakers-max.txt.zip">Kompositionsstudio Speaker for Max</a>
     <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat">ICST MultiEncoder Group OSC</a>
     <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv">E4L Multi-Panner OSC</a>
+    <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_ICST_Kompositionsstudio_v4.RPP">ICST Kompositionsstudio Session v4</a>
+    <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v3.RPP">ICST HOA Reaper Session Starter v3</a>
+    <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v2.RPP">ICST HOA Reaper Session Starter v2</a>
+    <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Template_Pack_1.RPP">ICST HOA Reaper Template Pack</a>
     <a class="hero__link" href="https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV">Big Files</a>
     <a class="hero__link" href="https://www.zhdk.ch/forschung/icst/software-downloads-5379">ICST Software Downloads</a>
+    <a class="hero__link" href="/downloads/icst-ambisonics-start-guide.pdf" download>Plugin Start Guide (PDF)</a>
+    <a class="hero__link" href="/downloads/icst-resident-guide.pdf" download>Resident Guide (PDF)</a>
   </div>
 </details>
-
-

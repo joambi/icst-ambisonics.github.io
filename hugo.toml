@@ -62,6 +62,12 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   url = "/post/"
 
     [[menu.main]]
+    name = "Start here"
+    parent = "tutorials"
+    weight = 100
+    url = "/start/"
+
+    [[menu.main]]
     name = "All Tutorials"
     parent = "tutorials"
     weight = 101
@@ -84,6 +90,12 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   identifier = "studio"
   weight = 200
   url = "/blog/"
+
+    [[menu.main]]
+    name = "Resident Guide"
+    parent = "studio"
+    weight = 200
+    url = "/for-residents/"
 
     [[menu.main]]
     name = "Composer Studio"
@@ -116,10 +128,10 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     url = "/blog/sounding_future/"
 
     [[menu.main]]
-    name = "Konzerte"
+    name = "Composing in Ambisonics"
     parent = "ascolta"
     weight = 303
-    url = "/blog/ascolta/"
+    url = "/composing-in-ambisonics/"
 
   [[menu.main]]
   name = "Docs"

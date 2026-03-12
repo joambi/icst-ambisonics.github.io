@@ -1,9 +1,9 @@
 ---
 title: "Download Pack #1: Reaper Template + HOA Routing Checklist"
 description: "Starter pack for fast setup: Reaper template, HOA routing checklist, and verification steps."
-date: 2026-03-30T09:00:00+02:00
+date: 2026-03-12T09:00:00+01:00
 weight: -1
-draft: true
+draft: false
 group: "Downloads"
 tags: ["download", "reaper", "hoa", "template", "checklist"]
 ---
@@ -29,7 +29,11 @@ Use this pack to reduce setup time and avoid common routing mistakes in first se
 - [Getting Started with ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 
 ## Download links
-- Add final file links here.
+
+## Template note
+The template provides a clean 64-channel HOA project scaffold. Insert the ICST plugins and load the decoder preset that matches your studio setup.
+
+The new `ICST Kompositionsstudio Session v4` is tailored to the documented studio setup: ICST Composition Studio naming, a MultiDecoder-first structure, and notes for `LS 1-17` plus `Sub/LFE on channel 18`. `v3` remains available as the more general guided version.
 
 ## Next step
 - [Downloads](/blog/downloads/)

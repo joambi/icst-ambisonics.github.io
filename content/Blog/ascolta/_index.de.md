@@ -235,9 +235,12 @@ languageCode: de
 
 ## Listening
 
+→ [Ascolta Listening Guide](/blog/ascolta-listening-guide/) — Smalleys Raumkategorien, fünf analytische Hörfragen, drei Übungen für aktives räumliches Hören.
+
 Eine Auswahl an Online-Ressourcen zum Anhören von Ambisonics und Raumklang:
 
-- [Sounding Future](https://audiospace.soundingfuture.com/tracks) — Räumliches Audioarchiv
+- [Sounding Future — Tracks](https://audiospace.soundingfuture.com/tracks) — Räumliches Audioarchiv
+- [Sounding Future — Artists](https://audiospace.soundingfuture.com/artists) — Komponist:innen- und Künstler:innenprofile
 - [HOAST Library (IEM)](https://hoast.iem.at/) — Higher-Order Ambisonics Aufnahmen
 - [Nimbus UHJ](https://www.wyastone.co.uk/all-labels/nimbus.html) — Klassische Ambisonics-UHJ-Aufnahmen
 

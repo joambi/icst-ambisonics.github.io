@@ -8,8 +8,7 @@ aliases:
 
 ## Open Ambisonics Tools, Real Studio Workflows
 
-> [!Note]
-> **What is Ambisonics?** A method for capturing and reproducing three-dimensional sound — spatialise audio for any speaker layout, any room. The ICST plugins bring this to REAPER, free and open source, with studio-tested workflows from ZHdK Zürich.
+A method for capturing and reproducing three-dimensional sound — spatialise audio for any speaker layout, any room. The ICST plugins bring this to REAPER, free and open source, with studio-tested workflows from ZHdK Zürich.
 
 ![Plugin Overview](/images/Home_gif.gif)
 
@@ -28,14 +27,14 @@ aliases:
   </a>
 </div>
 
-> [!Tip]
-> New in v3.2: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+New in v3.2: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 
 ---
 
 <div class="home-section-header home-section-header--software">
 <p class="home-section-label">🎛️ Working with Ambisonics?</p>
 <p class="home-section-lead">Free and open-source spatial audio tools for REAPER — from first setup to advanced OSC control and DAW integration.</p>
+<a class="hero__link hero__link--primary" href="/start/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-play"></i>&nbsp;Start here — guided 4-step path</a>
 </div>
 
 <div class="home-cards">
@@ -55,6 +54,15 @@ aliases:
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/03_how_it_works/">How It Works</a>
       <a class="hero__link" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC Syntax</a>
       <a class="hero__link" href="/icst-ambisonics-plugins/15_best_practices/">Best Practices</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🎼 Composing in Ambisonics</h4>
+    <p>Spatial thinking for composers — analytical listening, movement and depth as compositional parameters, studio workflows.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/composing-in-ambisonics/">Composing Guide</a>
+      <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
+      <a class="hero__link" href="/blog/ascolta/">ASCOLTA Sessions</a>
     </div>
   </section>
 </div>
@@ -85,6 +93,7 @@ aliases:
 <div class="home-section-header home-section-header--studio">
 <p class="home-section-label">🏛️ At the ICST Studio?</p>
 <p class="home-section-lead">For ZHdK residents, composers and studio visitors — listening sessions, residency documentation and studio resources.</p>
+<a class="hero__link hero__link--primary" href="/for-residents/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-map-signs"></i>&nbsp;Resident guide — 4 steps before & during your stay</a>
 </div>
 
 <div class="home-cards">
@@ -93,7 +102,7 @@ aliases:
     <p>Regular acousmatic listening sessions and concerts at ZHdK — spatial works performed live, open for audience.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/blog/ascolta/">All Sessions</a>
-      <a class="hero__link" href="/blog/sounding_future/">Listening Guide</a>
+      <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
     </div>
   </section>
   <section class="home-card">

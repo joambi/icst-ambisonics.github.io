@@ -1,0 +1,264 @@
+<REAPER_PROJECT 0.1 "7.0/x64" 0
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 600
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 0
+  ZOOM 100 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  SAMPLERATE 48000 0 0
+  MASTER_NCH 64 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  <NOTES 0 0
+  |ICST HOA Reaper Session Starter v2
+  |
+  |Open this project directly in REAPER.
+  |
+  |Track plan
+  |- 00 NOTES: setup reminder
+  |- 10-13 SRC: source tracks for encoder inserts
+  |- 20 HOA BUS: central 64ch ambisonics bus
+  |- 30 DECODER MAIN: loudspeaker decoder track
+  |- 40 BINAURAL CHECK: optional headphone monitor path
+  |- 90 PRINT / EXPORT: optional render capture or print stem
+  |
+  |Recommended setup order
+  |1. Check audio device and sample rate.
+  |2. Insert ICST MonoEncoder or MultiEncoder on SRC tracks.
+  |3. Route each encoded SRC track to HOA BUS.
+  |4. Insert ICST Decoder on DECODER MAIN and load the speaker preset.
+  |5. Optionally feed BINAURAL CHECK from HOA BUS for headphone control.
+  |6. Keep accidental source-to-master paths disabled.
+  |
+  |Verification
+  |- Master, HOA BUS, DECODER MAIN, BINAURAL CHECK and SRC tracks should stay at 64 channels.
+  |- Test with one mono source first.
+  |- Confirm movement in the decoder and on the actual loudspeaker layout.
+  >
+  <TRACK {10000000-0000-4000-8000-000000000001}
+    NAME "00 NOTES - open Project Notes before starting"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 0
+    TRACKID {10000000-0000-4000-8000-000000000001}
+    PERF 0
+  >
+  <TRACK {10000000-0000-4000-8000-000000000010}
+    NAME "10 SRC 01 - mono voice / instrument"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 1
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {10000000-0000-4000-8000-000000000010}
+    PERF 0
+  >
+  <TRACK {10000000-0000-4000-8000-000000000011}
+    NAME "11 SRC 02 - mono source"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {10000000-0000-4000-8000-000000000011}
+    PERF 0
+  >
+  <TRACK {10000000-0000-4000-8000-000000000012}
+    NAME "12 SRC 03 - stereo or texture source"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {10000000-0000-4000-8000-000000000012}
+    PERF 0
+  >
+  <TRACK {10000000-0000-4000-8000-000000000013}
+    NAME "13 SRC 04 - duplicate for more objects"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {10000000-0000-4000-8000-000000000013}
+    PERF 0
+  >
+  <TRACK {10000000-0000-4000-8000-000000000020}
+    NAME "20 HOA BUS - route all encoded sources here"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {10000000-0000-4000-8000-000000000020}
+    PERF 0
+  >
+  <TRACK {10000000-0000-4000-8000-000000000030}
+    NAME "30 DECODER MAIN - insert ICST Decoder and speaker preset"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {10000000-0000-4000-8000-000000000030}
+    PERF 0
+  >
+  <TRACK {10000000-0000-4000-8000-000000000040}
+    NAME "40 BINAURAL CHECK - optional monitoring path"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {10000000-0000-4000-8000-000000000040}
+    PERF 0
+  >
+  <TRACK {10000000-0000-4000-8000-000000000090}
+    NAME "90 PRINT / EXPORT - optional print track"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {10000000-0000-4000-8000-000000000090}
+    PERF 0
+  >
+>

@@ -1,0 +1,425 @@
+<REAPER_PROJECT 0.1 "7.64/x64" 0
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 600
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 0
+  ZOOM 100 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  SAMPLERATE 48000 0 0
+  MASTER_NCH 64 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  <NOTES 0 0
+  |ICST AmbiPlugins Template from Screenshot v1
+  |
+  |This session mirrors the structure visible in the screenshot:
+  |- Track 1: AmbiDecoder output stage
+  |- Track 2: Bformat-Master 64ch
+  |- Track 3: Bt_Player_7th-order
+  |- Track 4: Mono-Encoder
+  |- Track 5: Multi-AmbiEncoder_64
+  |- Tracks 6-16: source tracks feeding the Multi-AmbiEncoder layer
+  |
+  |Insert plugins manually at the marked tracks:
+  |- Bformat-Master: HOA bus only, usually no insert needed
+  |- Bt_Player_7th-order: optional B-format player
+  |- Mono-Encoder: insert ICST AmbiEncoder / Mono-Encoder
+  |- Multi-AmbiEncoder_64: insert ICST AmbiEncoder_64
+  |- AmbiDecoder Output: insert ICST AmbiDecoder
+  |
+  |Recommended routing:
+  |- Mono-Encoder -> Bformat-Master
+  |- Bt_Player_7th-order -> Bformat-Master
+  |- Multi-AmbiEncoder_64 -> Bformat-Master
+  |- Source 1-11 -> Multi-AmbiEncoder_64
+  |- Bformat-Master -> AmbiDecoder Output
+  |
+  |All Ambisonics-critical tracks are set to 64 channels.
+  >
+  <TRACK {51000000-0000-4000-8000-000000000001}
+    NAME "1 AmbiDecoder Output [INSERT ICST AmbiDecoder]"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000001}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000002}
+    NAME "2 Bformat-Master [64 ch HOA BUS]"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000002}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000003}
+    NAME "3 Bt_Player_7th-order [optional B-format player]"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000003}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000004}
+    NAME "4 Mono-Encoder [INSERT ICST Mono-Encoder]"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 1
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000004}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000005}
+    NAME "5 Multi-AmbiEncoder_64 [INSERT ICST AmbiEncoder_64]"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000005}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000006}
+    NAME "6 source 01 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000006}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000007}
+    NAME "7 source 02 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000007}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000008}
+    NAME "8 source 03 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000008}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000009}
+    NAME "9 source 04 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000009}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000010}
+    NAME "10 source 05 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000010}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000011}
+    NAME "11 source 06 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000011}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000012}
+    NAME "12 source 07 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000012}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000013}
+    NAME "13 source 08 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000013}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000014}
+    NAME "14 source 09 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000014}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000015}
+    NAME "15 source 10 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000015}
+    PERF 0
+  >
+  <TRACK {51000000-0000-4000-8000-000000000016}
+    NAME "16 source 11 -> Multi-AmbiEncoder_64"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {51000000-0000-4000-8000-000000000016}
+    PERF 0
+  >
+>

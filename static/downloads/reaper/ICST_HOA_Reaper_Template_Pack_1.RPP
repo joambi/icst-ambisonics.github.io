@@ -1,0 +1,192 @@
+<REAPER_PROJECT 0.1 "7.0/x64" 0
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 600
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1
+  VIDEO_CONFIG 0 0 256
+  PANMODE 3
+  CURSOR 0
+  ZOOM 100 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "" ""
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  SAMPLERATE 48000 0 0
+  MASTER_NCH 64 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  <NOTES 0 0
+  |ICST HOA Reaper Template Pack #1
+  |
+  |Purpose
+  |- Fast project bootstrap for HOA sessions in REAPER.
+  |- Safe default: all HOA-relevant tracks are already set to 64 channels.
+  |
+  |Recommended next steps
+  |1. Open Project Settings and confirm sample rate and audio device.
+  |2. Insert ICST MonoEncoder or MultiEncoder on the source tracks as needed.
+  |3. Route encoded output into the HOA BUS.
+  |4. Insert your decoder on DECODER MAIN and load the preset for your loudspeaker layout.
+  |5. Use BINAURAL CHECK for headphone verification if needed.
+  |
+  |Suggested signal flow
+  |Sources -> HOA BUS -> DECODER MAIN
+  |Sources -> HOA BUS -> BINAURAL CHECK
+  |
+  |Verification
+  |- Check that Master is 64 channels.
+  |- Check that HOA BUS, DECODER MAIN and all source tracks are 64 channels.
+  |- Run a short signal test before recording.
+  >
+  <TRACK {1A111111-1111-4111-8111-111111111111}
+    NAME "00 NOTES - read Project Notes for setup steps"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 0
+    TRACKID {1A111111-1111-4111-8111-111111111111}
+    PERF 0
+  >
+  <TRACK {2B222222-2222-4222-8222-222222222222}
+    NAME "10 SRC 01 - mono source - insert ICST MonoEncoder"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {2B222222-2222-4222-8222-222222222222}
+    PERF 0
+  >
+  <TRACK {3C333333-3333-4333-8333-333333333333}
+    NAME "11 SRC 02 - mono source - duplicate as needed"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {3C333333-3333-4333-8333-333333333333}
+    PERF 0
+  >
+  <TRACK {4D444444-4444-4444-8444-444444444444}
+    NAME "20 HOA BUS - central 64ch ambisonics bus"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {4D444444-4444-4444-8444-444444444444}
+    PERF 0
+  >
+  <TRACK {5E555555-5555-4555-8555-555555555555}
+    NAME "30 DECODER MAIN - insert ICST Decoder and loudspeaker preset"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {5E555555-5555-4555-8555-555555555555}
+    PERF 0
+  >
+  <TRACK {6F666666-6666-4666-8666-666666666666}
+    NAME "40 BINAURAL CHECK - optional headphone monitoring"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 64
+    FX 0
+    TRACKID {6F666666-6666-4666-8666-666666666666}
+    PERF 0
+  >
+>
