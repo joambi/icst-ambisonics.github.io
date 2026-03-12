@@ -83,7 +83,7 @@ Neu in v3.2: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releases
   <div class="tool-card">
     <h4>🧊 Ambisonics Tools für Max/MSP</h4>
     <p>Für Live-Spatialisierung, algorithmischen Klang und Workflows jenseits von REAPER — läuft nativ in Max 8.</p>
-    <img src="/HOME/ICST_Ambi-Tools_Max.png" alt="ICST Ambisonics Tools für Max/MSP" loading="lazy" />
+    <img src="/images/ICST_Ambi-Tools_Max.png" alt="ICST Ambisonics Tools für Max/MSP" loading="lazy" />
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-tools/">Docs & Beispiele</a>
       <a class="hero__link" href="https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385">ZHdK Download</a>
