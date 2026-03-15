@@ -2,8 +2,9 @@
 title: "Tools and Software"
 description: "An overview of important Ambisonics toolchains for composition, production, and research."
 date: 2026-01-01T00:00:00
-weight: 80
+weight: 90
 draft: false
+translationKey: "composing-tools-software"
 ---
 
 Working in Ambisonics almost always means combining a **DAW**, **encoder/decoder plugins**, **monitoring**, **analysis**, and often **binaural or scene-based specialist tools**. This chapter gives a practical overview of important software environments and plugin ecosystems.

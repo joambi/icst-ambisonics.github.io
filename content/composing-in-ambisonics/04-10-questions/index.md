@@ -4,6 +4,7 @@ description: "A practical compositional checklist for Ambisonics."
 date: 2026-01-01T00:00:00
 weight: 40
 draft: false
+translationKey: "composing-10-questions"
 ---
 
 These questions are meant as a **compositional worksheet**. They are useful both for analysing existing works and for planning your own pieces, studio sessions, and documentation strategies.

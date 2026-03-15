@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $pages := sort .RegularPages "Weight" }}
+{{ $pages := sort (where .RegularPages "Params.hidden_in_nav" "ne" true) "Weight" }}
 
 <div class="docs docs--index animated fadeInDown">
   <nav class="docs__nav">

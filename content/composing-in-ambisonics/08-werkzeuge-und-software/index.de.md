@@ -2,8 +2,9 @@
 title: "Werkzeuge und Software"
 description: "Ein Überblick über wichtige Ambisonics-Toolchains für Komposition, Produktion und Forschung."
 date: 2026-01-01T00:00:00
-weight: 80
+weight: 90
 draft: false
+translationKey: "composing-tools-software"
 ---
 
 Wer mit Ambisonics arbeitet, braucht fast immer eine Kombination aus **DAW**, **Encoder-/Decoder-Plugins**, **Monitoring**, **Analyse** und oft auch **szenischen oder binauralen Spezialwerkzeugen**. Die folgende Uebersicht konzentriert sich auf verbreitete Software-Pakete fuer Produktion, Lehre, Forschung und kuenstlerische Praxis.

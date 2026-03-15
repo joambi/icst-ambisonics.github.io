@@ -4,6 +4,8 @@ description: "Ein Hörrahmen für räumliche Musik."
 date: 2026-01-01T00:00:00
 weight: 20
 draft: false
+translationKey: "composing-analytical-listening"
+hidden_in_nav: true
 ---
 
 Bevor man räumliche Trajektorien komponiert, hilft es, sie in den Werken anderer klar zu hören. Dieses Kapitel stellt einen praktischen Hörrahmen vor, der in den ICST [ascolta](/blog/ascolta/)-Sessions verwendet wird: Smalleys Raumkategorien, analytische Hörfragen und Übungen für aktives räumliches Hören.

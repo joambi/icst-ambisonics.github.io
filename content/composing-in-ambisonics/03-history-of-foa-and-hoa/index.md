@@ -4,6 +4,7 @@ description: "From the early foundations to today’s studios, concert spaces, a
 date: 2026-01-01T00:00:00
 weight: 30
 draft: false
+translationKey: "composing-history-foa-hoa"
 ---
 
 Working with Ambisonics means working within a historical field, not just with a technique. For composers, the distinction between **FOA** and **HOA** is especially important: FOA is the historical basis and remains a robust production format; HOA is the later systematic expansion toward higher spatial resolution and more flexible rendering.

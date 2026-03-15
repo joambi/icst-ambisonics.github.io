@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $section := .Parent }}
-{{ $pages := sort $section.RegularPages "Weight" }}
+{{ $pages := sort (where $section.RegularPages "Params.hidden_in_nav" "ne" true) "Weight" }}
 
 <div class="docs animated fadeInDown">
 
@@ -34,7 +34,7 @@
         {{ end }}
       </div>
 
-      <h1>{{ title .Title }}</h1>
+      <h1>{{ .Title }}</h1>
 
       {{- if (eq .Params.toc true) -}}
         {{- partial "toc.html" . -}}

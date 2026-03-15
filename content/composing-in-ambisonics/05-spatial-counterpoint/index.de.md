@@ -2,7 +2,7 @@
 title: "Spatial Counterpoint"
 description: "Räumliche Stimmführung, Fallstudien und Praxis mit ICST und REAPER."
 date: 2026-01-01T00:00:00
-weight: 50
+weight: 60
 draft: false
 ---
 
@@ -12,7 +12,7 @@ Für Hörende entsteht dadurch eine unmittelbar erfahrbare Klangumgebung: musika
 
 Zwei Klangobjekte können daher tonal konsonant, räumlich aber dissonant wirken. Eine Quinte etwa bleibt harmonisch stabil, kann aber bei zu geringer räumlicher Trennung in einer Überlagerung enden, in der beide Stimmen nicht mehr klar differenzierbar sind. Umgekehrt kann räumliche Distanz Spannung verstärken oder entspannen, etwa wenn zwei Quellen voneinander wegdriften, sich kreuzen oder in ein gemeinsames Zentrum konvergieren.
 
-### 4.1 Grundprinzipien räumlichen Kontrapunkts
+### Grundprinzipien räumlichen Kontrapunkts
 
 Räumlicher Kontrapunkt beruht auf der **Unabhängigkeit der Stimmen**. In Ambisonics wird diese Unabhängigkeit vor allem über **Winkelabstand**, **Höhenstaffelung**, **Distanzkodierung**, **Bewegungsgeschwindigkeit** und **klangliche Differenzierung** organisiert.
 
@@ -23,7 +23,7 @@ Räumlicher Kontrapunkt beruht auf der **Unabhängigkeit der Stimmen**. In Ambis
 
 Als praktische Faustregel gilt: Zentral wichtige, melodische oder sprachähnliche Stimmen brauchen meist mehr räumliche Trennung als Texturen, Cluster oder Rauschschichten. Bei Letzteren können engere Anordnungen oder bewusste Überlagerungen gerade erwünscht sein. Räumliche Dissonanz entsteht also nicht einfach als „Fehler“, sondern oft dort, wo Überlagerung, Clusterbildung oder Verdichtung kompositorisch gewollt sind.
 
-### 4.2 Bewegungstypen als räumliche Stimmführung
+### Bewegungstypen als räumliche Stimmführung
 
 Räumliche Bewegungsverhältnisse lassen sich ähnlich denken wie klassische kontrapunktische Stimmführungen:
 
@@ -37,7 +37,7 @@ Räumliche Bewegungsverhältnisse lassen sich ähnlich denken wie klassische kon
 
 Im ICST-/Reaper-Workflow lassen sich diese Relationen direkt als **Azimut-**, **Elevations-** oder **Distanzautomation** formulieren. Damit wird räumlicher Kontrapunkt nicht nur als abstrakte Idee, sondern als konkret bearbeitbare Stimmführung lesbar.
 
-### 4.3 Parameter im ICST-/Reaper-Workflow
+### Parameter im ICST-/Reaper-Workflow
 
 Im ICST-Ambisonics-Workflow in REAPER arbeitest du vor allem mit vier Gruppen von Parametern:
 
@@ -55,7 +55,7 @@ Bewegungen können in REAPER über klassische Envelopes, Motion Recording, LFOs 
   <figcaption><strong>Radar-GUI und Gruppenlogik.</strong> Der ICST MultiEncoder macht Position, Gruppierung und relative Raumbeziehungen als kompositorische Parameter direkt sichtbar und bearbeitbar.</figcaption>
 </figure>
 
-### 4.4 Fallstudie 1 — Dialog zwischen zwei Klangobjekten
+### Fallstudie 1 — Dialog zwischen zwei Klangobjekten
 
 Ein einfaches Modell für räumlichen Kontrapunkt ist ein **Dialog zweier Stimmen**. Man kann sich dazu ein elektroakustisches Stück für einen 24-Kanal-Ring vorstellen, in dem zwei präparierte Klavierklänge einander antworten.
 
@@ -80,7 +80,7 @@ Der kompositorische Kern liegt hier nicht nur im Material, sondern in der kontro
   <figcaption><strong>Distanz als Dramaturgie.</strong> Distanzkodierung und Bewegung erzeugen nicht nur Ortswechsel, sondern auch Nähe, Verdichtung und das allmähliche Verschwinden einer Stimme im Raum.</figcaption>
 </figure>
 
-### 4.5 Fallstudie 2 — Dreistimmiger räumlicher Kanon
+### Fallstudie 2 — Dreistimmiger räumlicher Kanon
 
 Ein zweites Modell ist ein **räumlicher Kanon**: Ein identisches Klangmaterial tritt mehrfach zeitversetzt auf, bewegt sich aber auf verschiedenen Pfaden durch den Raum.
 
@@ -104,7 +104,7 @@ So entsteht eine räumliche Imitationsstruktur: Das Material bleibt verwandt, di
   <figcaption><strong>Räumlicher Kanon im MultiEncoder.</strong> Mehrere Quellen lassen sich als kontrapunktische Gruppe organisieren und gemeinsam oder relativ zueinander durch das Klangfeld führen.</figcaption>
 </figure>
 
-### 4.6 Praxis: Hören, Justieren, Troubleshooting
+### Praxis: Hören, Justieren, Troubleshooting
 
 Spatial Counterpoint entsteht selten in einem Durchgang. Er ist fast immer ein **iterativer Hörprozess**. Deshalb lohnt sich ein einfaches Hörprotokoll:
 

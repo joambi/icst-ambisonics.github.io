@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Was ist die Gestalt eines Klanges.md",
+                "file": "content/composing-in-ambisonics/05-acoustic-gestalt/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Was ist die Gestalt eines Klanges"
+              "title": "index"
             }
           },
           {
@@ -160,9 +160,23 @@
               "icon": "lucide-file",
               "title": "Beispiele für die 10 Fragen"
             }
+          },
+          {
+            "id": "ecb32c2a2d51f22d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HOA Ambisonics Overview.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HOA Ambisonics Overview"
+            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -219,7 +233,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 321.5
   },
   "right": {
     "id": "bfdd1d5de593f550",
@@ -342,19 +356,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0a72b32b7b0d1744",
+  "active": "ecb32c2a2d51f22d",
   "lastOpenFiles": [
-    "public/de/index.xml",
-    "public/de/composing-in-ambisonics/index.xml",
-    "public/de/icst-ambisonics-plugins/index.xml",
-    "public/de/blog/index.xml",
-    "public/de/blog/ascolta/index.xml",
-    "public/de/year/2026/index.xml",
-    "public/de/year/2026/index.html",
-    "public/de/year/2025/index.xml",
-    "public/de/year/2025/index.html",
-    "public/de/year/index.xml",
-    "public/de/year/2026",
+    "HOA Ambisonics Overview.md",
+    "content/composing-in-ambisonics/05-acoustic-gestalt/index.md",
+    "content/composing-in-ambisonics/05-die-akustische-gestalt/index.de.md",
+    "Was ist die Gestalt eines Klanges und welche Rolle spielt der Raum dabei.md",
+    "public/de/de/post/blauertsche_bänder/index.html",
+    "public/de/de/post/blauerts-bands/index.html",
+    "public/de/de/blog/ambisonics-timeline/index.html",
+    "public/de/blog/ascolta/16-ascolta/index.html",
+    "public/de/blog/ascolta/13-ascolta/index.html",
+    "public/de/blog/ascolta/15-ascolta/index.html",
+    "public/de/blog/ascolta/14-ascolta/index.html",
+    "public/de/blog/ascolta/12-ascolta/index.html",
+    "public/de/blog/ascolta/11-ascolta/index.html",
+    "public/de/blog/ascolta/10-ascolta/index.html",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/speaker_test.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png",
@@ -366,6 +383,7 @@
     "public/icst-ambisonics-plugins/06_step_by_step_setup/open_decoder.gif",
     "public/icst-ambisonics-plugins/06_step_by_step_setup/first-order.png",
     "public/blog/faq/Ableton2Reaper.canvas",
+    "Beispiele für die 10 Fragen.md",
     "content/composing-in-ambisonics/09-references/index.md",
     "content/composing-in-ambisonics/08-tools-and-software/index.md",
     "content/composing-in-ambisonics/07-studio-practice-at-icst/index.md",
@@ -388,10 +406,6 @@
     "content/composing-in-ambisonics/01_overview/index.de.md",
     "content/composing-in-ambisonics/_index.de.md",
     "docs/blog/faq/Ableton2Reaper.canvas",
-    "docs/downloads/reaper/ICST_HOA_Verifikation_Kurzanleitung.md",
-    "docs/downloads/reaper/ICST_HOA_Verification_Quick_Guide.md",
-    "docs/downloads/reaper/ICST_HOA_Routing_Checkliste.md",
-    "docs/downloads/reaper/ICST_HOA_Routing_Checklist.md",
     "content/Blog/FAQ/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",
     "docs/content/Blog/What_we_now/Ableton2Reaper.canvas",

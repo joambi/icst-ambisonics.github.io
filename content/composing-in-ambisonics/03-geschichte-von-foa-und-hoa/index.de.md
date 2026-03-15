@@ -4,6 +4,7 @@ description: "Von den Grundlagen in Oxford bis zu heutigen Produktionsorten, Too
 date: 2026-01-01T00:00:00
 weight: 30
 draft: false
+translationKey: "composing-history-foa-hoa"
 ---
 
 Wer mit Ambisonics komponiert, arbeitet nicht nur mit einer Technik, sondern mit einem historischen Feld, das sich in mehreren Etappen entwickelt hat. Fuer die Kompositionspraxis ist vor allem die Unterscheidung zwischen **FOA** und **HOA** wichtig: FOA ist die historische Basis und bis heute ein robustes Produktionsformat, HOA ist die spaetere systematische Erweiterung fuer hoehere raeumliche Aufloesung und flexibleres Rendering.
