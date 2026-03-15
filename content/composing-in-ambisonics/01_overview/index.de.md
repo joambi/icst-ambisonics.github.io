@@ -11,6 +11,11 @@ draft: false
 <p class="home-section-lead">Ein Guide fuer räumliches Denken, Hören und Arbeiten in Ambisonics — von FOA/HOA-Kontext und akustischer Gestalt bis zu Spatial Counterpoint, Werkzeugen und Studio-Praxis.</p>
 </div>
 
+<figure class="big">
+  <img src="/images/composing_in_ambisonics%201.png" alt="Diagramm zu räumlichen Parametern, Distanzzonen und Bewegungsbeziehungen in Composing in Ambisonics" loading="lazy" />
+  <figcaption><strong>Composing in Ambisonics.</strong> Das Diagramm verbindet räumliches Feld, Bewegungsbeziehungen und die zentralen Parameter Azimut, Elevation, Distanz und Diffusion.</figcaption>
+</figure>
+
 Komponieren in Ambisonics heißt, Raum nicht nur als Verteilungssystem, sondern als **formbildenden Parameter** zu verstehen. Quellen können sich annähern, auseinanderdriften, in Höhe staffeln, sich zu Clustern verdichten oder als unabhängige Stimmen durch ein gemeinsames Schallfeld geführt werden.
 
 Dieser Bereich ist nicht als lineares Lehrbuch gedacht, sondern als **kompositorische Arbeitsumgebung in Textform**. Er verbindet historische Orientierung, kompositorische Fragen und technische Toolchains.

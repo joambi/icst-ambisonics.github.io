@@ -11,6 +11,11 @@ draft: false
 <p class="home-section-lead">A guide to spatial thinking, listening, and working in Ambisonics — from FOA/HOA context and acoustic gestalt to spatial counterpoint, tools, and studio practice.</p>
 </div>
 
+<figure class="big">
+  <img src="/images/composing_in_ambisonics%201.png" alt="Diagram of spatial parameters, distance zones, and movement relationships for composing in Ambisonics" loading="lazy" />
+  <figcaption><strong>Composing in Ambisonics.</strong> The diagram brings together the spatial field, movement relationships, and the key parameters of azimuth, elevation, distance, and diffusion.</figcaption>
+</figure>
+
 Composing in Ambisonics means treating space not merely as a distribution system, but as a **form-building parameter**. Sources can approach, separate, rise, cluster, or act as independent voices within a shared sound field.
 
 This area is not meant as a linear textbook, but as a **compositional workspace in text form**. It connects historical context, compositional questions, and technical toolchains.
