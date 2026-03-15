@@ -1,29 +1,55 @@
 {{ define "main" }}
 {{ $pages := sort .RegularPages "Weight" }}
 
-<div
-  class="post animated fadeInDown"
->
-  <div class="post__content">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-  </div>
-</div>
+<div class="docs docs--index animated fadeInDown">
+  <nav class="docs__nav">
+    <div class="docs__nav-title">
+      <a href="{{ .RelPermalink }}">
+        <i class="fas fa-book"></i>
+        {{ with .Params.docs_nav_title }}
+          {{ . }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </a>
+    </div>
+    <ul class="docs__nav-list">
+      {{ range $pages }}
+        <li class="docs__nav-item">
+          <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
 
-<div class="docs-index animated fadeInDown">
-  <div class="docs-index__chapters">
-    {{ range $i, $page := $pages }}
-    <a class="docs-index__chapter" href="{{ $page.RelPermalink }}">
-      <div class="docs-index__chapter-number">{{ add $i 1 }}</div>
-      <div class="docs-index__chapter-info">
-        <div class="docs-index__chapter-title">{{ $page.Title }}</div>
-        {{ with $page.Description }}
-          <div class="docs-index__chapter-desc">{{ . }}</div>
+  <article class="docs__content post">
+    <div class="post__content">
+      <div class="docs__tabs" aria-label="Chapter navigation">
+        {{ range $pages }}
+          <a class="docs__tab" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
         {{ end }}
       </div>
-      <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
-    </a>
-    {{ end }}
-  </div>
+
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </div>
+
+    <div class="docs-index">
+      <div class="docs-index__chapters">
+        {{ range $i, $page := $pages }}
+        <a class="docs-index__chapter" href="{{ $page.RelPermalink }}">
+          <div class="docs-index__chapter-number">{{ add $i 1 }}</div>
+          <div class="docs-index__chapter-info">
+            <div class="docs-index__chapter-title">{{ $page.Title }}</div>
+            {{ with $page.Description }}
+              <div class="docs-index__chapter-desc">{{ . }}</div>
+            {{ end }}
+          </div>
+          <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </article>
 </div>
 {{ end }}

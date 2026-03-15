@@ -28,6 +28,9 @@ favicon = "favicons/"
 contentratio = 0.7
 copyright = ""
 
+  [params.mermaid]
+  enable = true
+
   [params.author]
   name  = "Johannes Schuett"
   email = "johannes.schuett@zhdk.ch"

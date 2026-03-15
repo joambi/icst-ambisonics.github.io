@@ -1,0 +1,310 @@
+.ambisonics-history {
+  margin: 2rem 0;
+}
+
+.ambisonics-history__lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.ambisonics-history__gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1.3rem 0 1.6rem;
+}
+
+.ambisonics-history__gallery-item {
+  margin: 0;
+}
+
+.ambisonics-history__gallery-item a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.ambisonics-history__gallery-item img {
+  border-radius: 0.95rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+  display: block;
+  height: 220px;
+  margin: 0;
+  max-height: none;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.ambisonics-history__gallery-item figcaption {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-top: 0.7rem;
+}
+
+.ambisonics-history__gallery-item strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.ambisonics-history__section {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(16, 28, 39, 0.12);
+  border-radius: 1rem;
+  margin: 1.6rem 0;
+  padding: 1.2rem 1.15rem 1.1rem;
+}
+
+.ambisonics-history__section-title {
+  align-items: center;
+  display: flex;
+  gap: 0.8rem;
+  margin: 0 0 0.7rem;
+}
+
+.ambisonics-history__section-num {
+  background: #0e5f69;
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  padding: 0.5rem 0.7rem;
+}
+
+.ambisonics-history__section-title h4 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.ambisonics-history__section-intro {
+  font-size: 0.97rem;
+  line-height: 1.7;
+  margin: 0 0 0.95rem;
+}
+
+.ambisonics-history__section-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.ambisonics-history__section-list li + li {
+  margin-top: 0.65rem;
+}
+
+.ambisonics-history__card {
+  background: linear-gradient(180deg, rgba(16, 28, 39, 0.04), rgba(16, 28, 39, 0.01));
+  border: 1px solid rgba(16, 28, 39, 0.14);
+  border-radius: 1rem;
+  margin: 1.75rem 0;
+  padding: 1.2rem 1rem;
+}
+
+.ambisonics-history__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.ambisonics-history__legend-item {
+  align-items: center;
+  background: rgba(16, 28, 39, 0.04);
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.95rem;
+  gap: 0.5rem;
+  padding: 0.45rem 0.8rem;
+}
+
+.ambisonics-history__dot {
+  border-radius: 999px;
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+.ambisonics-history__dot--foa {
+  background: #00838f;
+}
+
+.ambisonics-history__dot--hoa {
+  background: #ef6c00;
+}
+
+.ambisonics-history__dot--shared {
+  background: #455a64;
+}
+
+.ambisonics-history__timeline {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.ambisonics-history__tracks {
+  display: grid;
+  gap: 1rem;
+}
+
+.ambisonics-history__track-label {
+  align-items: center;
+  display: inline-flex;
+  font-size: 0.95rem;
+  font-weight: 700;
+  gap: 0.55rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.ambisonics-history__track {
+  display: grid;
+  gap: 0.9rem;
+  margin-left: 0.35rem;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.ambisonics-history__track::before {
+  background: rgba(69, 90, 100, 0.22);
+  bottom: 0.2rem;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0.2rem;
+  width: 3px;
+}
+
+.ambisonics-history__item {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(16, 28, 39, 0.12);
+  border-radius: 0.9rem;
+  color: #18242c;
+  min-height: 0;
+  padding: 1rem 1rem 1rem 1.15rem;
+  position: relative;
+}
+
+.ambisonics-history__item::before {
+  border-radius: 999px;
+  content: "";
+  height: 0.95rem;
+  left: -1.92rem;
+  position: absolute;
+  top: 1.15rem;
+  width: 0.95rem;
+  z-index: 1;
+}
+
+.ambisonics-history__item--foa::before {
+  background: #00838f;
+}
+
+.ambisonics-history__item--hoa::before {
+  background: #ef6c00;
+}
+
+.ambisonics-history__item--shared::before {
+  background: #455a64;
+}
+
+.ambisonics-history__year {
+  color: rgba(24, 36, 44, 0.72);
+  display: block;
+  font-size: 0.83rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+}
+
+.ambisonics-history__item h3 {
+  color: #18242c;
+  font-size: 1.02rem;
+  line-height: 1.35;
+  margin: 0 0 0.45rem;
+}
+
+.ambisonics-history__item p {
+  color: rgba(24, 36, 44, 0.86);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ambisonics-history__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.ambisonics-history__links a {
+  background: rgba(16, 28, 39, 0.06);
+  border: 1px solid rgba(16, 28, 39, 0.12);
+  border-radius: 999px;
+  color: #0e5f69;
+  display: inline-flex;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.42rem 0.65rem;
+  text-decoration: none;
+}
+
+.ambisonics-history__links a:hover {
+  background: rgba(0, 131, 143, 0.1);
+  color: #084b53;
+}
+
+.ambisonics-history__notes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.5rem 0 0;
+}
+
+.ambisonics-history__note {
+  background: rgba(255, 255, 255, 0.52);
+  border-left: 4px solid rgba(16, 28, 39, 0.24);
+  border-radius: 0.75rem;
+  color: inherit;
+  padding: 1rem 1rem 0.95rem;
+}
+
+.ambisonics-history__note h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.45rem;
+}
+
+.ambisonics-history__note p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .ambisonics-history__gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .ambisonics-history__gallery-item img {
+    height: 200px;
+  }
+
+  .ambisonics-history__notes {
+    grid-template-columns: 1fr;
+  }
+
+  .ambisonics-history__card {
+    padding: 1rem 0.9rem;
+  }
+
+  .ambisonics-history__section-title {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+}
