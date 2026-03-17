@@ -7,16 +7,102 @@ group: "Listening"
 ---
 
 <style>
+.hub-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
+  gap: 1.2rem;
+  align-items: stretch;
+  margin: 1rem 0 1.5rem;
+}
+.hub-kicker {
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6086b4;
+  margin-bottom: 0.55rem;
+}
 .hub-intro {
   font-size: 1.45rem;
-  line-height: 1.7;
-  margin: 1rem 0 1.25rem;
+  line-height: 1.65;
+  margin: 0 0 0.8rem;
   max-width: 54rem;
 }
-.hub-meta {
-  margin: 0.75rem 0 1.75rem;
+.hub-lead {
+  margin: 0;
+  font-size: 1.12rem;
   color: #9f9f9f;
-  font-size: 1.15rem;
+  line-height: 1.55;
+  max-width: 46rem;
+}
+.hub-upcoming {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 1.05rem 1.15rem;
+  min-height: 100%;
+  margin-top: -2rem;
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+}
+.theme--light .hub-upcoming {
+  background: #f6f8fb;
+  border: 1px solid #d9e3ef;
+  color: #1f3142;
+}
+.theme--dark .hub-upcoming {
+  background: #2c4352;
+  border: 1px solid #5f84a7;
+  color: #eeeeee;
+}
+.hub-upcoming:hover {
+  transform: translateY(-1px);
+}
+.hub-upcoming__eyebrow {
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6086b4;
+}
+.hub-upcoming__date {
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.hub-upcoming__meta {
+  font-size: 1rem;
+  color: #9f9f9f;
+}
+.hub-upcoming__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.hub-upcoming__text {
+  font-size: 1.06rem;
+  line-height: 1.45;
+  color: #9f9f9f;
+}
+.hub-note {
+  margin: 1rem 0 0;
+  padding: 0.95rem 1rem;
+  border-left: 3px solid #6086b4;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.theme--light .hub-note {
+  background: #fbfbfb;
+}
+.theme--dark .hub-note {
+  background: #22313a;
+}
+.hub-purpose {
+  margin: 0.8rem 0 0;
+  padding-left: 1.15rem;
+}
+.hub-purpose li {
+  margin: 0.35rem 0;
 }
 .post__content h2 {
   margin-top: 2.4rem;
@@ -35,7 +121,7 @@ group: "Listening"
 .hub-related {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  gap: 1.15rem;
   margin: 1.1rem 0 1.75rem;
 }
 .hub-start a,
@@ -44,41 +130,45 @@ group: "Listening"
   text-decoration: none;
   border-radius: 2px;
   min-height: 100%;
-  padding: 1.05rem 1.15rem;
-  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+  padding: 1.15rem 1.2rem 1.1rem;
+  border-top: 3px solid #6086b4;
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
 }
 .theme--light .hub-start a,
 .theme--light .hub-related a {
-  background: #fff;
-  border: 1px solid #eeeeee;
-  color: #464646;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  border: 1px solid #dfe7ef;
+  color: #243546;
+  box-shadow: 0 1px 0 rgba(96, 134, 180, 0.05);
 }
 .theme--dark .hub-start a,
 .theme--dark .hub-related a {
-  background: #2a3a44;
-  border: 1px solid #464646;
+  background: linear-gradient(180deg, #2b3f4c 0%, #243640 100%);
+  border: 1px solid #486275;
   color: #eeeeee;
 }
 .theme--light .hub-start a:hover,
 .theme--light .hub-related a:hover {
   border-color: #6086b4;
-  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(96, 134, 180, 0.12);
 }
 .theme--dark .hub-start a:hover,
 .theme--dark .hub-related a:hover {
   border-color: #6086b4;
-  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
 }
 .hub-card__title {
   display: block;
-  font-weight: 600;
-  margin-bottom: 0.35rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
 }
 .hub-card__text {
   display: block;
-  font-size: 1.15rem;
+  font-size: 1.08rem;
   color: #9f9f9f;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 .season-section { margin-bottom: 1.5rem; }
 .season-label {
@@ -138,13 +228,20 @@ group: "Listening"
   margin-top: 2px;
 }
 @media (max-width: 760px) {
+  .hub-hero {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+  .hub-upcoming {
+    margin-top: 0;
+  }
   .hub-intro {
     font-size: 1.3rem;
     line-height: 1.65;
   }
-  .hub-meta {
-    font-size: 1.05rem;
-    margin-bottom: 1.35rem;
+  .hub-lead,
+  .hub-note {
+    font-size: 1rem;
   }
   .post__content h2 {
     margin-top: 2rem;
@@ -156,11 +253,11 @@ group: "Listening"
   .hub-start,
   .hub-related {
     grid-template-columns: 1fr;
-    gap: 0.75rem;
+    gap: 0.9rem;
   }
   .hub-start a,
   .hub-related a {
-    padding: 0.95rem 1rem;
+    padding: 1rem 1rem 0.95rem;
   }
   .session-row {
     gap: 0.65rem;
@@ -172,19 +269,35 @@ group: "Listening"
 }
 </style>
 
-<div class="hub-intro">
-<strong>ascolta</strong> is a public listening series at the ICST Composition Studio of the Zurich University of the Arts. In an intimate setting with a higher-order Ambisonics speaker system, we listen to acousmatic and electroacoustic music — works by composers from the ICST residency programme and from the international repertoire, presented in immersive spatial audio.
+<div class="hub-hero">
+  <div>
+    <div class="hub-kicker">Public Listening Series</div>
+    <div class="hub-intro">
+    <strong>ascolta</strong> brings acousmatic and electroacoustic music into an intimate listening situation at the ICST Composition Studio of the Zurich University of the Arts.
+    </div>
+    <p class="hub-lead">We listen on a higher-order Ambisonics speaker system to works from the ICST residency programme and from the international repertoire, presented as immersive spatial audio.</p>
+    <div class="hub-note">
+    <strong>Next session:</strong> <strong>#18 ascolta</strong> is dedicated to <strong>Éliane Radigue</strong> (24 January 1932 – 23 February 2026). At the centre is <em>The Resonant Island</em>, released on <strong>Shiiin</strong> (2005), a 55-minute sound sculpture of extraordinary slowness and concentration.
+    </div>
+  </div>
+  <a class="hub-upcoming" href="/blog/ascolta/18-ascolta/">
+    <span class="hub-upcoming__eyebrow">Upcoming Date</span>
+    <span class="hub-upcoming__date">02 April 2026</span>
+    <span class="hub-upcoming__meta">18:00–19:00 · Free admission</span>
+    <span class="hub-upcoming__title">#18 ascolta — Éliane Radigue</span>
+    <span class="hub-upcoming__text"><em>The Resonant Island</em>, released on Shiiin (2005)</span>
+  </a>
 </div>
-
-<div class="hub-meta"><strong>Upcoming Dates 2026</strong> · <a href="/blog/ascolta/18-ascolta/">02 April 2026</a> · 21 May 2026 · 18:00–19:00 · Free admission</div>
-
-**Teaser (02 April 2026, 18:00):** For **#18 ascolta**, we open an acoustic field from the ICST Studio Residencies 2025: works by Nandele Maguni, Youngjae Cho, and Ana Gonzalez Gamboa in immersive 3D audio. Thursday, 02 April 2026, 18:00–19:00, Toni-Areal, Composition Studio 3.D02, Zurich. Free admission.
 
 ---
 
 ## What This Page Is For
 
-This is the **listening and programme hub** for ascolta. Here you will find upcoming and past listening sessions, programme themes, and listening resources.
+This is the **listening and programme hub** for ascolta. Here you can:
+
+- find upcoming and past listening sessions
+- navigate programme themes and listening resources
+- move between the public series, the studio context, and the residency projects behind many programmes
 
 If you are looking for technical information about the **studio setup**, go to the [ICST Composition Studio](/blog/icst-composer-studio-blog/). If you want to explore the **artists and projects** behind many of the programmes, go to [Residencies](/residenzen/).
 
@@ -217,8 +330,15 @@ If you are looking for technical information about the **studio setup**, go to t
     <a class="session-row" href="/blog/ascolta/18-ascolta/">
       <span class="session-row__num">#18</span>
       <span class="session-row__content">
-        <span class="session-row__subtitle">Acousmatic Listening Sessions — ICST Studio Residencies 2025</span>
+        <span class="session-row__subtitle">Éliane Radigue — The Resonant Island</span>
         <span class="session-row__date">02 Apr 2026</span>
+      </span>
+    </a>
+    <a class="session-row" href="/blog/ascolta/19-ascolta/">
+      <span class="session-row__num">#19</span>
+      <span class="session-row__content">
+        <span class="session-row__subtitle">Acousmatic Listening Sessions — ICST Studio Residencies 2025</span>
+        <span class="session-row__date">21 May 2026</span>
       </span>
     </a>
   </div>

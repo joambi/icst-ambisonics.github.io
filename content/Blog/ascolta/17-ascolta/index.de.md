@@ -24,7 +24,4 @@ _Freier Eintritt_
 | Datum | Zeit |
 |------|------|
 | [Donnerstag, 2. April 2026](/de/blog/ascolta/18-ascolta/) | 18:00–19:00 |
-| Donnerstag, 21. Mai 2026 | 18:00–19:00 |
-
-
-
+| [Donnerstag, 21. Mai 2026](/de/blog/ascolta/19-ascolta/) | 18:00–19:00 |

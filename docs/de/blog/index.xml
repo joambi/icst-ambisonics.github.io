@@ -21,6 +21,51 @@
       <lastBuildDate>Sat, 28 Jun 2025 16:13:00 &#43;0000</lastBuildDate>
       <atom:link href="https://ambisonics.ch/de/blog/index.xml" rel="self" type="application/rss&#43;xml" />
     <item>
+      <title>ICST Studio-Case: Warum unser 31-Speaker-Setup so geroutet ist</title>
+      <link>https://ambisonics.ch/de/blog/icst-studio-case-31-speaker-routing/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-studio-case-31-speaker-routing/</guid>
+      <pubDate>Mon, 16 Mar 2026 09:00:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Level:&lt;/strong&gt; Intermediate — &lt;strong&gt;Für:&lt;/strong&gt; Komponist:innen, Techniker:innen und Forschende, die im ICST Kompositionsstudio arbeiten oder es besuchen.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;p&gt;Jeder Mehrkanal-Ambisonics-Raum sammelt über die Zeit kleine Routing-Entscheidungen an — ein Bus hier hinzugefügt, ein Monitoring-Pfad dort umgeleitet. Im ICST Kompositionsstudio wurden diese Entscheidungen bewusst getroffen und dokumentiert, damit jede neue Residenz von einer stabilen, verstandenen Ausgangslage startet — nicht von einer rätselhaften Vorlage.&lt;/p&gt;
+&lt;p&gt;Dieser Artikel erklärt die vier Kernentscheidungen hinter dem 31-Lautsprecher-REAPER-Session-Template des Studios, die Probleme, die jede Entscheidung löst, und die Fehlerquellen, die sie verhindert.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;entscheidung-1--ein-dedizierter-bformat-master-track-als-zentrale-instanz&#34;&gt;Entscheidung 1 — Ein dedizierter &lt;code&gt;Bformat-Master&lt;/code&gt;-Track als zentrale Instanz&lt;/h2&gt;
+&lt;p&gt;Alles Quellmaterial — unabhängig davon, wie viele Encoder oder Quell-Tracks aktiv sind — wird vor der Dekodierung in einen einzigen dedizierten B-Format-Master-Bus geleitet. Kein Quell-Track sendet Audio direkt an einen Decoder oder an die Lautsprecher-Ausgänge.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warum:&lt;/strong&gt; Wenn mehrere Komponist:innen über mehrere Tage in derselben Session arbeiten, kann ein Quell-Track leicht versehentlich an einen Monitoring-Bus oder einen Decoder-Eingang geroutet werden, der für ein anderes Signal gedacht war. Ein einziger, benannter B-Format-Master macht den Signalpfad auf einen Blick sichtbar und prüfbar. Er bedeutet auch, dass eine „trockene B-Format-Aufnahme&amp;quot; des gesamten Mixes — nützlich für die Archivierung oder Offline-Binaural-Rendering — genau einen Send von genau einem Track erfordert.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;entscheidung-2--decoder-ebene-vollständig-von-der-quellen-ebene-getrennt&#34;&gt;Entscheidung 2 — Decoder-Ebene vollständig von der Quellen-Ebene getrennt&lt;/h2&gt;
+&lt;p&gt;Der Decoder (AmbiDecoder) empfängt nur vom &lt;code&gt;Bformat-Master&lt;/code&gt;. Er sitzt nicht in einer Kette mit Quell-Tracks, und sein Ausgang geht direkt in den Lautsprecher-Ausgangsbus — nirgendwo sonst.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warum:&lt;/strong&gt; Das Vermischen der Dekodierungsstufe mit der Quellverarbeitung ist die häufigste Ursache schwer zu diagnostizierender Pegel- und Phasenanomalien in Ambisonics-Sessions. Wenn der Pegel eines Quell-Tracks falsch ist, ist das sofort und lokal hörbar. Wenn der Decoder falsch konfiguriert ist — falsche Ordnung, falsche Normalisierungskonvention, falsches Lautsprecher-Preset — betrifft es alle Quellen gleichzeitig, und die Artefakte können wie ein Raumproblem erscheinen, nicht wie ein Routing-Problem. Den Decoder isoliert zu halten bedeutet, dass jede Fehlkonfiguration eindeutig an einem Ort liegt.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;entscheidung-3--lautsprecher-ausgang-und-binaural-monitoring-als-parallele-pfade&#34;&gt;Entscheidung 3 — Lautsprecher-Ausgang und Binaural-Monitoring als parallele Pfade&lt;/h2&gt;
+&lt;p&gt;Das Session-Template enthält zwei Monitoring-Pfade, die per Konvention sich gegenseitig ausschliessen: den 31-Lautsprecher-Hardware-Ausgang und ein Stereo-Binaural-Render. Beide dekodieren vom selben &lt;code&gt;Bformat-Master&lt;/code&gt;. Das Umschalten zwischen ihnen ist eine Frage des Stummschaltens eines Ausgangsbusses und des Aktivierens des anderen — keine Routing-Änderungen, kein Umpatchen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warum:&lt;/strong&gt; Komponist:innen im Studio möchten ihren Mix häufig auf Kopfhörern prüfen, bevor sie eine Speaker-Session buchen, oder einen Binaural-Rohexport an Mitarbeitende schicken. Wenn Binaural-Monitoring eine Neuverkabelung der Session erfordert, wird es zur Unterbrechung und oft übersprungen. Mit parallelen Pfaden im Template ist es ein Ein-Klick-Toggle, der die räumliche Signalkette nicht berührt.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;entscheidung-4--einheitliche-benennung-und-kanal-konventionen&#34;&gt;Entscheidung 4 — Einheitliche Benennung und Kanal-Konventionen&lt;/h2&gt;
+&lt;p&gt;Alle Tracks im Template folgen einer Benennungskonvention: &lt;code&gt;[Nummer]_[Funktion]_[Format]&lt;/code&gt;, z.B. &lt;code&gt;01_source_mono&lt;/code&gt;, &lt;code&gt;10_bformat-master_HOA3&lt;/code&gt;, &lt;code&gt;20_decoder_out&lt;/code&gt;. Kanalzahlen sind pro Track-Typ festgelegt und im Template dokumentiert.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warum:&lt;/strong&gt; In einer 31-Kanal-Umgebung kann ein einzelner falsch zugewiesener Kanal einen Ausfall produzieren, der von einem Hardware-Defekt des Lautsprechers nicht zu unterscheiden ist. Einheitliche Benennung bedeutet, dass ein:e Gastkünstler:in oder Techniker:in den Signalpfad in unter einer Minute prüfen kann, ohne jedes Plugin öffnen zu müssen. Es macht REAPERs Track-Liste auch als Dokumentation lesbar — eine neue Residenz kann die Session-Architektur verstehen, bevor Play gedrückt wird.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;häufige-fehlerstellen-die-dieses-setup-verhindert&#34;&gt;Häufige Fehlerstellen, die dieses Setup verhindert&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gemischte HOA-Ordnungen auf dem B-Format-Master:&lt;/strong&gt; Eine dritter-Ordnung-Quelle zu einer Session erster Ordnung hinzuzufügen degradiert stumm auf erste Ordnung, wenn beide denselben Master speisen. Das Template dokumentiert die Zielordnung prominent im Master-Track-Namen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring vom falschen Bus gespeist:&lt;/strong&gt; Ein direkter Send von einem Quell-Track zum Lautsprecher-Ausgang umgeht den Decoder und produziert ein Mono- oder Stereo-Signal durch ein 31-Lautsprecher-Array — sofort hörbar, aber verwirrend zu diagnostizieren. Die getrennten Ebenen machen dies im Template strukturell unmöglich.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decoder-Preset passt nach einem System-Update nicht mehr:&lt;/strong&gt; Lautsprecher-Koordinatendateien werden im Template mit absolutem Pfad referenziert und im Dateinamen versioniert. Das Laden des falschen Presets ist die häufigste Ursache für falsch lokalisierte Quellen nach einem Software-Update.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;weiterführende-links&#34;&gt;Weiterführende Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/stereo-to-hoa7-session/&#34;&gt;Von Stereo zu HOA7: Eine Schritt-für-Schritt-Session&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/multi-decoder-mode/&#34;&gt;ICST AmbiDecoder — Multi-Decoder Modus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/for-residents/&#34;&gt;ICST Kompositionsstudio — Guide für Residenzen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-composer-studio-overview/&#34;&gt;ICST Kompositionsstudio Übersicht&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+    <item>
       <title>Download Pack #1: Reaper-Template &#43; HOA-Routing-Checkliste</title>
       <link>https://ambisonics.ch/de/blog/download-pack-1-hoa-reaper-template/</link>
       <guid>https://ambisonics.ch/de/blog/download-pack-1-hoa-reaper-template/</guid>
@@ -64,17 +109,143 @@
       <guid>https://ambisonics.ch/de/blog/icst-composer-studio-blog/</guid>
       <pubDate>Tue, 27 May 2025 17:16:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-composer-studio-blog/KompStudio.jpg&#34; alt=&#34;ICST Kompositionsstudio&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Das &lt;strong&gt;ICST Kompositionsstudio&lt;/strong&gt; an der Zürcher Hochschule der Künste ist ein Produktionsraum für elektroakustische Musik und räumliche Klangkunst. Ausgestattet mit einem 31-Lautsprecher-Ambisonics-System (Geithain) sowie einer umfangreichen Software- und Hardware-Infrastruktur unterstützt es die Produktion, Erforschung und Aufführung immersiver Audioarbeiten.&lt;/p&gt;
+        <description>&lt;style&gt;
+.hub-intro {
+  font-size: 1.45rem;
+  line-height: 1.7;
+  margin: 1rem 0 1.25rem;
+  max-width: 54rem;
+}
+.hub-meta {
+  margin: 0.75rem 0 1.75rem;
+  color: #9f9f9f;
+  font-size: 1.15rem;
+}
+.post__content h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 0.9rem;
+  padding-top: 0.15rem;
+  font-size: 1.75rem;
+  letter-spacing: 0.01em;
+}
+.post__content h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.28rem;
+  color: #9f9f9f;
+}
+.hub-start {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  margin: 1.1rem 0 1.75rem;
+}
+.hub-start a,
+.hub-related a {
+  display: block;
+  text-decoration: none;
+  border-radius: 2px;
+  min-height: 100%;
+  padding: 1.05rem 1.15rem;
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+}
+.theme--light .hub-start a,
+.theme--light .hub-related a {
+  background: #fff;
+  border: 1px solid #eeeeee;
+  color: #464646;
+}
+.theme--dark .hub-start a,
+.theme--dark .hub-related a {
+  background: #2a3a44;
+  border: 1px solid #464646;
+  color: #eeeeee;
+}
+.theme--light .hub-start a:hover,
+.theme--light .hub-related a:hover {
+  border-color: #6086b4;
+  transform: translateY(-1px);
+}
+.theme--dark .hub-start a:hover,
+.theme--dark .hub-related a:hover {
+  border-color: #6086b4;
+  transform: translateY(-1px);
+}
+.hub-card__title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.hub-card__text {
+  display: block;
+  font-size: 1.15rem;
+  color: #9f9f9f;
+  line-height: 1.5;
+}
+.hub-related {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.1rem 0 0;
+}
+@media (max-width: 760px) {
+  .hub-intro {
+    font-size: 1.3rem;
+    line-height: 1.65;
+  }
+  .hub-meta {
+    font-size: 1.05rem;
+    margin-bottom: 1.35rem;
+  }
+  .post__content h2 {
+    margin-top: 2rem;
+    font-size: 1.55rem;
+  }
+  .post__content h3 {
+    font-size: 1.18rem;
+  }
+  .hub-start,
+  .hub-related {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .hub-start a,
+  .hub-related a {
+    padding: 0.95rem 1rem;
+  }
+}
+&lt;/style&gt;
+&lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/blog/icst-composer-studio-blog/KompStudio.jpg&#34; alt=&#34;ICST Kompositionsstudio&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;hub-intro&#34;&gt;
+Das &lt;strong&gt;ICST Kompositionsstudio&lt;/strong&gt; an der Zürcher Hochschule der Künste ist ein Produktionsraum für elektroakustische Musik und räumliche Klangkunst. Ausgestattet mit einem 31-Lautsprecher-Ambisonics-System (Geithain) sowie einer umfangreichen Software- und Hardware-Infrastruktur unterstützt es die Produktion, Erforschung und Aufführung immersiver Audioarbeiten.
+&lt;/div&gt;
 &lt;p&gt;Das Studio steht internationalen Künstler*innen in Residenz, Forschenden und Studierenden offen, die an der Schnittstelle von Musik, Technologie und Klangdesign arbeiten.&lt;/p&gt;
-&lt;p&gt;Raum: &lt;strong&gt;ZT 3.D02&lt;/strong&gt; · Kontakt: &lt;a href=&#34;mailto:johannes.schuett@zhdk.ch&#34;&gt;johannes.schuett@zhdk.ch&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;hub-meta&#34;&gt;Raum: &lt;strong&gt;ZT 3.D02&lt;/strong&gt; · Kontakt: &lt;a href=&#34;mailto:johannes.schuett@zhdk.ch&#34;&gt;johannes.schuett@zhdk.ch&lt;/a&gt;&lt;/div&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;wofür-diese-seite-da-ist&#34;&gt;Wofür diese Seite da ist&lt;/h2&gt;
 &lt;p&gt;Dies ist der &lt;strong&gt;Service- und Ressourcen-Hub&lt;/strong&gt; für das ICST Kompositionsstudio. Von hier aus findest du technische Vorbereitung, Lautsprecher- und Routing-Informationen, Studio-Infrastruktur sowie Downloads für die Arbeit vor Ort.&lt;/p&gt;
 &lt;p&gt;Wenn du eher das &lt;strong&gt;öffentliche Programm&lt;/strong&gt; suchst, gehe zu &lt;a href=&#34;https://ambisonics.ch/de/blog/ascolta/&#34;&gt;ascolta&lt;/a&gt;. Wenn du dich für die &lt;strong&gt;Artists in Residence&lt;/strong&gt; und ihre Projekte interessierst, gehe zu &lt;a href=&#34;https://ambisonics.ch/de/residenzen/&#34;&gt;Residenzen&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
+&lt;h2 id=&#34;schnell-einsteigen&#34;&gt;Schnell einsteigen&lt;/h2&gt;
+&lt;div class=&#34;hub-start&#34;&gt;
+  &lt;a href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-equipment/&#34;&gt;
+    &lt;span class=&#34;hub-card__title&#34;&gt;Equipment&lt;/span&gt;
+    &lt;span class=&#34;hub-card__text&#34;&gt;Hardware, Lautsprecher, Interfaces und Studiotechnik im Überblick.&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-software/&#34;&gt;
+    &lt;span class=&#34;hub-card__title&#34;&gt;Software&lt;/span&gt;
+    &lt;span class=&#34;hub-card__text&#34;&gt;Installierte Tools, Plugins und Arbeitsumgebung des Studios.&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href=&#34;https://ambisonics.ch/blog/icst-kompositionsstudio-speaker-settings/&#34;&gt;
+    &lt;span class=&#34;hub-card__title&#34;&gt;Speaker Setup&lt;/span&gt;
+    &lt;span class=&#34;hub-card__text&#34;&gt;Lautsprecherstruktur, Routing-Kontext und räumliche Wiedergabe.&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href=&#34;https://ambisonics.ch/blog/downloads/&#34;&gt;
+    &lt;span class=&#34;hub-card__title&#34;&gt;Downloads&lt;/span&gt;
+    &lt;span class=&#34;hub-card__text&#34;&gt;Templates, Checklisten und weitere Dateien für die Vorbereitung.&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
 &lt;h2 id=&#34;studio-bereiche&#34;&gt;Studio-Bereiche&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Für wen:&lt;/strong&gt; Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-kompositionsstudio-equipment/&#34;&gt;Equipment&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-kompositionsstudio-software/&#34;&gt;Software&lt;/a&gt;&lt;/li&gt;
@@ -88,10 +259,16 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;verwandte-bereiche&#34;&gt;Verwandte Bereiche&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/ascolta/&#34;&gt;ascolta&lt;/a&gt; — öffentliche Hörreihe mit räumlicher und elektroakustischer Musik&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/residenzen/&#34;&gt;Residenzen&lt;/a&gt; — Artist-in-Residence-Programm, Profile und Projekte&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&#34;hub-related&#34;&gt;
+  &lt;a href=&#34;https://ambisonics.ch/blog/ascolta/&#34;&gt;
+    &lt;span class=&#34;hub-card__title&#34;&gt;ascolta&lt;/span&gt;
+    &lt;span class=&#34;hub-card__text&#34;&gt;Öffentliche Hörreihe mit räumlicher und elektroakustischer Musik.&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a href=&#34;https://ambisonics.ch/residenzen/&#34;&gt;
+    &lt;span class=&#34;hub-card__title&#34;&gt;Residenzen&lt;/span&gt;
+    &lt;span class=&#34;hub-card__text&#34;&gt;Artist-in-Residence-Programm, Profile und Projekte.&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
 </description>
 
     </item>
@@ -721,55 +898,213 @@ Sub/LFE &amp;ndash;&amp;gt; Kanal 18&lt;/p&gt;
       <guid>https://ambisonics.ch/de/blog/faq/</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;Antworten auf die häufigsten Fragen zu den ICST Ambisonics Plugins für REAPER und den ICST Ambisonics Tools für Max/MSP.&lt;/p&gt;
+        <description>&lt;p class=&#34;faq-intro&#34;&gt;Antworten auf die häufigsten Fragen zu den ICST Ambisonics Plugins für REAPER und den ICST Ambisonics Tools für Max/MSP.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;installation--kompatibilität&#34;&gt;Installation &amp;amp; Kompatibilität&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Welche REAPER-Version wird benötigt?&lt;/strong&gt;
-REAPER 6.0 oder höher wird empfohlen. Die Plugins laufen auf macOS (Intel und Apple Silicon) sowie Windows 10/11 (64-Bit). Linux wird offiziell nicht unterstützt.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Funktionieren die Plugins auf Apple Silicon (M1/M2/M3)?&lt;/strong&gt;
-Ja — die Plugins werden als universelle Binaries ausgeliefert und laufen nativ auf Apple Silicon ohne Rosetta. Für volle Kompatibilität wird REAPER 6.78 oder neuer empfohlen.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Wo werden die Plugins installiert?&lt;/strong&gt;
-Die &lt;code&gt;.vst3&lt;/code&gt;-Dateien (bzw. &lt;code&gt;.component&lt;/code&gt; für AU auf macOS) in den systemweiten VST3-Ordner kopieren, danach in REAPER unter Options → Preferences → VST einen Rescan durchführen. Genaue Pfade sind in der &lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/02_installation/&#34;&gt;Installationsanleitung&lt;/a&gt; beschrieben.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;REAPER zeigt die Plugins nach der Installation nicht an — was tun?&lt;/strong&gt;
-Manuellen VST-Rescan auslösen: Options → Preferences → Plug-ins → VST → Re-scan. Falls die Plugins danach immer noch fehlen: prüfen ob die Plugin-Dateien im richtigen Ordner liegen und nicht von macOS Gatekeeper quarantiniert wurden.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Auf macOS erscheint &amp;ldquo;Apple kann diesen Entwickler nicht verifizieren&amp;rdquo; — was tun?&lt;/strong&gt;
-Systemeinstellungen → Datenschutz &amp;amp; Sicherheit → nach unten scrollen und bei dem blockierten Plugin auf &amp;ldquo;Trotzdem öffnen&amp;rdquo; klicken. Dies ist einmal pro Plugin-Datei erforderlich.&lt;/p&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Welche REAPER-Version wird benötigt?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;REAPER 6.0 oder höher wird empfohlen. Die Plugins laufen auf macOS (Intel und Apple Silicon) sowie Windows 10/11 (64-Bit). Linux wird offiziell nicht unterstützt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Funktionieren die Plugins auf Apple Silicon (M1/M2/M3)?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Ja — die Plugins werden als universelle Binaries ausgeliefert und laufen nativ auf Apple Silicon ohne Rosetta. Für volle Kompatibilität wird REAPER 6.78 oder neuer empfohlen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Wo werden die Plugins installiert?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Die &lt;code&gt;.vst3&lt;/code&gt;-Dateien (bzw. &lt;code&gt;.component&lt;/code&gt; für AU auf macOS) in den systemweiten VST3-Ordner kopieren, danach in REAPER unter Options → Preferences → VST einen Rescan durchführen. Genaue Pfade sind in der &lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/02_installation/&#34;&gt;Installationsanleitung&lt;/a&gt; beschrieben.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;REAPER zeigt die Plugins nach der Installation nicht an — was tun?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Manuellen VST-Rescan auslösen: Options → Preferences → Plug-ins → VST → Re-scan. Falls die Plugins danach immer noch fehlen: prüfen ob die Plugin-Dateien im richtigen Ordner liegen und nicht von macOS Gatekeeper quarantiniert wurden.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Auf macOS erscheint &#34;Apple kann diesen Entwickler nicht verifizieren&#34; — was tun?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Systemeinstellungen → Datenschutz &amp;amp; Sicherheit → nach unten scrollen und bei dem blockierten Plugin auf &amp;ldquo;Trotzdem öffnen&amp;rdquo; klicken. Dies ist einmal pro Plugin-Datei erforderlich.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;signalfluss--einrichtung&#34;&gt;Signalfluss &amp;amp; Einrichtung&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Was ist der Unterschied zwischen AmbiEncoder und MultiEncoder?&lt;/strong&gt;
-Der AmbiEncoder verarbeitet eine einzelne Mono-Audioquelle und positioniert sie im 3D-Raum. Der MultiEncoder verarbeitet mehrere Quellen gleichzeitig (bis zu 36 in v3.2) und ist die empfohlene Wahl für Produktions-Sessions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Ich höre keinen Sound durch den Decoder — woran liegt das?&lt;/strong&gt;
-Drei Dinge der Reihe nach prüfen: (1) die Kanal-Anzahl des B-Format-Busses muss der gewählten Ordnung entsprechen (z.B. 16 Kanäle für 3rd Order HOA), (2) das Decoder-Preset muss zum Lautsprecher-Layout passen, (3) das REAPER-Ausgangs-Routing muss auf die richtigen Hardware-Ausgänge zeigen. Die &lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Schritt-für-Schritt-Anleitung&lt;/a&gt; führt durch jeden Schritt.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Wie viele Ausgangskanäle braucht 3rd-Order HOA?&lt;/strong&gt;
-3rd-Order Ambisonics verwendet (3+1)² = 16 B-Format-Kanäle. 7th-Order verwendet 64 Kanäle. Encoder und Decoder müssen auf dieselbe Ordnung eingestellt sein.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Kann ich den ICST Decoder mit anderen FX in der REAPER-Kette kombinieren?&lt;/strong&gt;
-Ja. Verarbeitung vor dem Decoder auf dem B-Format-Bus ist problemlos möglich — Gain, Filter, Reverb etc. funktionieren wie erwartet. Vermieden werden sollte nur Processing, das die Kanal-Anzahl nach dem Encoder ändert.&lt;/p&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Was ist der Unterschied zwischen AmbiEncoder und MultiEncoder?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Der AmbiEncoder verarbeitet eine einzelne Mono-Audioquelle und positioniert sie im 3D-Raum. Der MultiEncoder verarbeitet mehrere Quellen gleichzeitig (bis zu 36 in v3.2) und ist die empfohlene Wahl für Produktions-Sessions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Ich höre keinen Sound durch den Decoder — woran liegt das?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Drei Dinge der Reihe nach prüfen: (1) die Kanal-Anzahl des B-Format-Busses muss der gewählten Ordnung entsprechen (z.B. 16 Kanäle für 3rd Order HOA), (2) das Decoder-Preset muss zum Lautsprecher-Layout passen, (3) das REAPER-Ausgangs-Routing muss auf die richtigen Hardware-Ausgänge zeigen. Die &lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/06_step_by_step_setup/&#34;&gt;Schritt-für-Schritt-Anleitung&lt;/a&gt; führt durch jeden Schritt.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Wie viele Ausgangskanäle braucht 3rd-Order HOA?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;3rd-Order Ambisonics verwendet (3+1)² = 16 B-Format-Kanäle. 7th-Order verwendet 64 Kanäle. Encoder und Decoder müssen auf dieselbe Ordnung eingestellt sein.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Kann ich den ICST Decoder mit anderen FX in der REAPER-Kette kombinieren?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Ja. Verarbeitung vor dem Decoder auf dem B-Format-Bus ist problemlos möglich — Gain, Filter, Reverb etc. funktionieren wie erwartet. Vermieden werden sollte nur Processing, das die Kanal-Anzahl nach dem Encoder ändert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;osc-steuerung&#34;&gt;OSC-Steuerung&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Der OSC-Encoder reagiert nicht auf meine Nachrichten — was prüfen?&lt;/strong&gt;
-Zuerst sicherstellen, dass der richtige UDP-Port in REAPER offen ist (Extensions → OSC/Web). Der Standard-ICST-Listener-Port ist &lt;strong&gt;8000&lt;/strong&gt;. Dann den Nachrichtenpfad prüfen — die Syntax ist in der &lt;a href=&#34;https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC-Syntax-Referenz&lt;/a&gt; dokumentiert.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Was ist die minimale OSC-Nachricht um eine Quelle zu bewegen?&lt;/strong&gt;
-&lt;code&gt;/ambi/source/[id]/aed [azimuth] [elevation] [distance]&lt;/code&gt; — Azimuth und Elevation in Grad, Distanz als normalisierter 0–1-Wert. Quell-IDs beginnen bei 1.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Kann ich OSC aus Ableton Live automatisieren?&lt;/strong&gt;
-Ja — Max-for-Live-MIDI- oder OSC-Clips senden Steuernachrichten, synchronisiert per LTC. Das &lt;a href=&#34;https://ambisonics.ch/de/post/ableton_reaper/&#34;&gt;Ableton + REAPER Tutorial&lt;/a&gt; dokumentiert einen vollständigen 7th-Order-Workflow.&lt;/p&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Der OSC-Encoder reagiert nicht auf meine Nachrichten — was prüfen?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Zuerst sicherstellen, dass der richtige UDP-Port in REAPER offen ist (Extensions → OSC/Web). Der Standard-ICST-Listener-Port ist &lt;strong&gt;8000&lt;/strong&gt;. Dann den Nachrichtenpfad prüfen — die Syntax ist in der &lt;a href=&#34;https://ambisonics.ch/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC-Syntax-Referenz&lt;/a&gt; dokumentiert.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Was ist die minimale OSC-Nachricht um eine Quelle zu bewegen?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;&lt;code&gt;/ambi/source/[id]/aed [azimuth] [elevation] [distance]&lt;/code&gt; — Azimuth und Elevation in Grad, Distanz als normalisierter 0–1-Wert. Quell-IDs beginnen bei 1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Kann ich OSC aus Ableton Live automatisieren?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Ja — Max-for-Live-MIDI- oder OSC-Clips senden Steuernachrichten, synchronisiert per LTC. Das &lt;a href=&#34;https://ambisonics.ch/de/post/ableton_reaper/&#34;&gt;Ableton + REAPER Tutorial&lt;/a&gt; dokumentiert einen vollständigen 7th-Order-Workflow.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;binaurales-monitoring&#34;&gt;Binaurales Monitoring&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Kann ich binaurales Monitoring ohne Lautsprecheranlage nutzen?&lt;/strong&gt;
-Ja. Der AmbiDecoder enthält einen Binaural-Modus auf Basis von HRTFs. Im Decoder-Ausgangsbereich aktivieren und auf einen Stereo-Ausgang routen. Das &lt;a href=&#34;https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/&#34;&gt;DearVR-Integrations-Tutorial&lt;/a&gt; zeigt die Verwendung eines externen Binaural-Renderers am Decoder-Ausgang.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Der binaurale Ausgang klingt mono oder zusammengebrochen — warum?&lt;/strong&gt;
-Meist ein Kanal-Count-Mismatch: der Decoder empfängt weniger HOA-Kanäle als erwartet. Prüfen, ob das B-Format-Bus-Send auf vollständiges Multichannel gesetzt ist (nicht auf Stereo-Summe).&lt;/p&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Kann ich binaurales Monitoring ohne Lautsprecheranlage nutzen?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Ja. Der AmbiDecoder enthält einen Binaural-Modus auf Basis von HRTFs. Im Decoder-Ausgangsbereich aktivieren und auf einen Stereo-Ausgang routen. Das &lt;a href=&#34;https://ambisonics.ch/de/post/getting-started-icst-plugins-reaper/&#34;&gt;DearVR-Integrations-Tutorial&lt;/a&gt; zeigt die Verwendung eines externen Binaural-Renderers am Decoder-Ausgang.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Der binaurale Ausgang klingt mono oder zusammengebrochen — warum?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Meist ein Kanal-Count-Mismatch: der Decoder empfängt weniger HOA-Kanäle als erwartet. Prüfen, ob das B-Format-Bus-Send auf vollständiges Multichannel gesetzt ist (nicht auf Stereo-Summe).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;icst-ambisonics-tools-maxmsp&#34;&gt;ICST Ambisonics Tools (Max/MSP)&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Welche Max-Version wird benötigt?&lt;/strong&gt;
-Max 8.0 oder neuer. Das Paket ist über den Max Package Manager verfügbar.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Was ist der Unterschied zwischen Plugins und Tools?&lt;/strong&gt;
-Die Plugins laufen in REAPER als VST/AU-Effects und sind für Session-basiertes Multitrack-Arbeiten ausgelegt. Die Tools sind Max/MSP-Externals für Live-Spatialisation, algorithmische Komposition und eigene Patches außerhalb einer DAW.&lt;/p&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Welche Max-Version wird benötigt?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Max 8.0 oder neuer. Das Paket ist über den Max Package Manager verfügbar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Was ist der Unterschied zwischen Plugins und Tools?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Die Plugins laufen in REAPER als VST/AU-Effects und sind für Session-basiertes Multitrack-Arbeiten ausgelegt. Die Tools sind Max/MSP-Externals für Live-Spatialisation, algorithmische Komposition und eigene Patches außerhalb einer DAW.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;updates--versionen&#34;&gt;Updates &amp;amp; Versionen&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Wie aktualisiere ich von v3.1 auf v3.2?&lt;/strong&gt;
-Die alten Plugin-Dateien durch die neuen von der &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;GitHub-Releases-Seite&lt;/a&gt; ersetzen und REAPER neu scannen lassen. Bestehende Sessions öffnen korrekt — keine Einstellungsmigration nötig. Neue Features sind unter &lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/00_new/&#34;&gt;Was ist neu in v3.2&lt;/a&gt; beschrieben.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Wo kann ich Bugs melden oder Features anfragen?&lt;/strong&gt;
-Ein Issue auf dem &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/issues&#34;&gt;GitHub-Repository&lt;/a&gt; öffnen — OS-Version, REAPER-Version, Plugin-Version und wenn möglich ein minimales Beispielprojekt angeben.&lt;/p&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Wie aktualisiere ich von v3.1 auf v3.2?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Die alten Plugin-Dateien durch die neuen von der &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;GitHub-Releases-Seite&lt;/a&gt; ersetzen und REAPER neu scannen lassen. Bestehende Sessions öffnen korrekt — keine Einstellungsmigration nötig. Neue Features sind unter &lt;a href=&#34;https://ambisonics.ch/de/icst-ambisonics-plugins/00_new/&#34;&gt;Was ist neu in v3.2&lt;/a&gt; beschrieben.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class=&#34;faq-item&#34;&gt;
+&lt;summary class=&#34;faq-question&#34;&gt;Wo kann ich Bugs melden oder Features anfragen?&lt;/summary&gt;
+&lt;div class=&#34;faq-answer&#34;&gt;
+&lt;p&gt;Ein Issue auf dem &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/issues&#34;&gt;GitHub-Repository&lt;/a&gt; öffnen — OS-Version, REAPER-Version, Plugin-Version und wenn möglich ein minimales Beispielprojekt angeben.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Die Geschichte von Ambisonics: FOA und HOA als grafische Timeline</title>
+      <link>https://ambisonics.ch/de/blog/geschichte-von-ambisonics-foa-und-hoa/</link>
+      <guid>https://ambisonics.ch/de/blog/geschichte-von-ambisonics-foa-und-hoa/</guid>
+      <pubDate>Sun, 15 Mar 2026 10:30:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;div class=&#34;ambisonics-history&#34;&gt;
+&lt;p class=&#34;ambisonics-history__lead&#34;&gt;
+Diese Timeline trennt die Entwicklung von &lt;strong&gt;FOA&lt;/strong&gt; und &lt;strong&gt;HOA&lt;/strong&gt;, zeigt aber auch die gemeinsamen Meilensteine. So wird sichtbar: FOA ist die historische Basis von Ambisonics, HOA entsteht spaeter als systematische Erweiterung fuer hoehere raeumliche Aufloesung.
+&lt;/p&gt;
+&lt;div class=&#34;ambisonics-history__legend&#34;&gt;
+  &lt;span class=&#34;ambisonics-history__legend-item&#34;&gt;&lt;span class=&#34;ambisonics-history__dot ambisonics-history__dot--foa&#34;&gt;&lt;/span&gt;FOA-Linie&lt;/span&gt;
+  &lt;span class=&#34;ambisonics-history__legend-item&#34;&gt;&lt;span class=&#34;ambisonics-history__dot ambisonics-history__dot--hoa&#34;&gt;&lt;/span&gt;HOA-Linie&lt;/span&gt;
+  &lt;span class=&#34;ambisonics-history__legend-item&#34;&gt;&lt;span class=&#34;ambisonics-history__dot ambisonics-history__dot--shared&#34;&gt;&lt;/span&gt;Gemeinsame Standards und Medienpraxis&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ambisonics-history__card&#34;&gt;
+&lt;div class=&#34;mermaid&#34;&gt;flowchart TB
+    classDef foa fill:#d9f3f4,stroke:#00838f,color:#0d2a2d,stroke-width:1.6px;
+    classDef hoa fill:#ffe7d1,stroke:#ef6c00,color:#432100,stroke-width:1.6px;
+    classDef shared fill:#eceff1,stroke:#455a64,color:#1f2a30,stroke-width:1.4px;
+
+    A[&#34;1970er&lt;br/&gt;Gerzon und Fellgett entwickeln die Grundlagen von Ambisonics&#34;]:::shared
+
+    subgraph FOA[&#34;FOA: First-Order Ambisonics&#34;]
+      direction TB
+      F1[&#34;1973&lt;br/&gt;Periphony: With-Height Sound Reproduction&#34;]:::foa
+      F2[&#34;1975&lt;br/&gt;Der Begriff Ambisonics etabliert sich&#34;]:::foa
+      F3[&#34;spaete 1970er&lt;br/&gt;UHJ macht Ambisonics stereo-kompatibel&#34;]:::foa
+      F4[&#34;1980er&lt;br/&gt;FOA wird in Aufnahme, Rundfunk und UHJ-Releases praktisch genutzt&#34;]:::foa
+      F5[&#34;1990er&lt;br/&gt;FOA bleibt die dominante Praxisform und Lehrbasis&#34;]:::foa
+      F6[&#34;2010er-heute&lt;br/&gt;FOA bleibt der einfache Einstieg fuer 360-Audio und Produktion&#34;]:::foa
+    end
+
+    subgraph HOA[&#34;HOA: Higher-Order Ambisonics&#34;]
+      direction TB
+      H1[&#34;2000/2001&lt;br/&gt;Jerome Daniel formuliert die moderne HOA-Grundlage&#34;]:::hoa
+      H2[&#34;2003&lt;br/&gt;Near-Field- und Distance-Coding erweitern HOA&#34;]:::hoa
+      H3[&#34;2005&lt;br/&gt;Poletti etabliert HOA ueber sphaerische Harmonische&#34;]:::hoa
+      H4[&#34;2006-2009&lt;br/&gt;Mikrofonarrays, Symposien und Forschung machen HOA praktikabel&#34;]:::hoa
+      H5[&#34;2011&lt;br/&gt;ambiX vereinheitlicht Ordering und Normalisierung&#34;]:::hoa
+      H6[&#34;2010er-heute&lt;br/&gt;HOA wird Schluesseltechnologie fuer VR, XR und scene-based audio&#34;]:::hoa
+    end
+
+    S1[&#34;2011&lt;br/&gt;Datei- und Austauschformate werden fuer HOA-Workflows entscheidend&#34;]:::shared
+    S2[&#34;2018&lt;br/&gt;RFC 8486 standardisiert Ambisonics in Ogg Opus&#34;]:::shared
+    S3[&#34;heute&lt;br/&gt;FOA und HOA koexistieren als praktische und skalierbare Formate&#34;]:::shared
+
+    A --&gt; F1 --&gt; F2 --&gt; F3 --&gt; F4 --&gt; F5 --&gt; F6
+    A --&gt; H1 --&gt; H2 --&gt; H3 --&gt; H4 --&gt; H5 --&gt; H6
+    F5 --&gt; S1 --&gt; S2 --&gt; S3
+    H4 --&gt; S1
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ambisonics-history__notes&#34;&gt;
+  &lt;section class=&#34;ambisonics-history__note&#34;&gt;
+    &lt;h3&gt;FOA&lt;/h3&gt;
+    &lt;p&gt;FOA ist der historische Kern von Ambisonics. Es ist kompakt, robust und bis heute dort stark, wo einfache Produktion, Distribution und Kompatibilitaet wichtiger sind als maximale Richtungsaufloesung.&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;ambisonics-history__note&#34;&gt;
+    &lt;h3&gt;HOA&lt;/h3&gt;
+    &lt;p&gt;HOA baut auf denselben Grundlagen auf, erweitert sie aber systematisch. Mit hoeherer Ordnung wachsen Richtungsauflosung, Flexibilitaet im Rendering und Relevanz fuer immersive Medien und Forschung.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;lesart-der-grafik&#34;&gt;Lesart der Grafik&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;FOA&lt;/strong&gt; bezeichnet die erste Ordnung von Ambisonics und war die Form, in der das Verfahren historisch zuerst praktisch verbreitet wurde.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HOA&lt;/strong&gt; wird ab etwa 2000 als eigenes modernes Forschungs- und Produktionsfeld sichtbar.&lt;/li&gt;
+&lt;li&gt;Die &lt;strong&gt;gemeinsame Achse&lt;/strong&gt; zeigt, dass Formate, Standards und heutige Medienpraxis FOA und HOA nicht gegeneinander ausspielen, sondern beide in denselben Oekosystemen vorkommen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;warum-diese-unterscheidung-wichtig-ist&#34;&gt;Warum diese Unterscheidung wichtig ist&lt;/h2&gt;
+&lt;p&gt;Wer die Geschichte von Ambisonics nur als eine einzige Linie darstellt, uebersieht leicht, dass zwischen den fruehen FOA-Arbeiten der 1970er Jahre und der systematischen HOA-Entwicklung rund um 2000 ein deutlicher methodischer Sprung liegt. FOA ist nicht &amp;ldquo;veraltet&amp;rdquo;, sondern oft die pragmatische Wahl. HOA ist nicht einfach &amp;ldquo;mehr Kanaele&amp;rdquo;, sondern eine andere Groessenordnung an szenischer Praezision und Render-Flexibilitaet.&lt;/p&gt;
+&lt;h2 id=&#34;quellen-und-referenzen&#34;&gt;Quellen und Referenzen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Michael Gerzon, &lt;em&gt;Periphony: With-Height Sound Reproduction&lt;/em&gt; (JAES, 1973)&lt;/li&gt;
+&lt;li&gt;Michael Gerzon, &lt;em&gt;Practical Periphony&lt;/em&gt; (1980)&lt;/li&gt;
+&lt;li&gt;Jerome Daniel, Dissertation zu HOA-Grundlagen (2000/2001)&lt;/li&gt;
+&lt;li&gt;Mark Poletti, Arbeiten zu 3D-Surround-Systemen auf Basis sphaerischer Harmonischer (2005)&lt;/li&gt;
+&lt;li&gt;Ambisonics Symposium 2011, &lt;em&gt;ambiX - A Suggested Ambisonics Format&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rfc-editor.org/info/rfc8486&#34;&gt;RFC 8486: Ambisonics in an Ogg Opus Container&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wenn du magst, kann diese Seite als Naechstes noch um eine zweite Grafik ergaenzt werden, etwa als &lt;strong&gt;nur-FOA/HOA-Jahresachse&lt;/strong&gt;, als &lt;strong&gt;Vorlesungsfolie&lt;/strong&gt; oder als &lt;strong&gt;interaktive Version mit Klickpunkten&lt;/strong&gt;.&lt;/p&gt;
 </description>
 
     </item>

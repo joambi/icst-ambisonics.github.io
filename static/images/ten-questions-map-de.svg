@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1380" viewBox="0 0 1600 1380" role="img" aria-labelledby="title desc">
+  <title id="title">Die zehn Fragen als Arbeitskarte</title>
+  <desc id="desc">Arbeitskarte mit drei großen Gruppen oben und einer vierten Transfer-Gruppe darunter, damit alle Texte auch bei kleinerer Darstellung lesbar bleiben.</desc>
+  <rect width="1600" height="1380" fill="#f6f1e6"/>
+
+  <text x="88" y="96" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700" fill="#1d2c3a">Die zehn Fragen als Arbeitskarte</text>
+  <text x="88" y="138" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Nicht als starre Reihenfolge, sondern als Orientierung zwischen Stückidee, Raumorganisation und Transfer</text>
+
+  <g transform="translate(88 205)">
+    <rect x="0" y="0" width="360" height="520" rx="26" fill="#dde7cf" stroke="#314b60" stroke-width="4"/>
+    <text x="28" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1d2c3a">1. Welt und Form</text>
+    <text x="28" y="90" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Welche Raumwelt entsteht, und wodurch</text>
+    <text x="28" y="116" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">wird ihre Form eigentlich getragen?</text>
+
+    <g transform="translate(22 156)">
+      <rect x="0" y="0" width="316" height="130" rx="18" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <circle cx="36" cy="35" r="24" fill="#dde7cf" stroke="#314b60" stroke-width="3"/>
+      <text x="29" y="44" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">1</text>
+      <text x="72" y="38" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Ontologie</text>
+      <text x="72" y="70" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Welche Welt ist da?</text>
+      <text x="22" y="104" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#3d5366">realistisch, abstrahiert oder imaginär</text>
+    </g>
+
+    <g transform="translate(22 312)">
+      <rect x="0" y="0" width="316" height="158" rx="18" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <circle cx="36" cy="35" r="24" fill="#dde7cf" stroke="#314b60" stroke-width="3"/>
+      <text x="29" y="44" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">2</text>
+      <text x="72" y="38" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Raum vs.</text>
+      <text x="72" y="68" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Spektrum/Zeit</text>
+      <text x="72" y="100" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Was trägt die Form?</text>
+      <text x="22" y="132" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#3d5366">Raumgeste, Klangwandel</text>
+      <text x="22" y="156" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#3d5366">oder beides</text>
+    </g>
+  </g>
+
+  <g transform="translate(490 205)">
+    <rect x="0" y="0" width="500" height="700" rx="26" fill="#eef2f6" stroke="#314b60" stroke-width="4"/>
+    <text x="28" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1d2c3a">2. Räumliche Organisation</text>
+    <text x="28" y="90" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Wie werden Layer, Dichte, Bewegung und Fokus</text>
+    <text x="28" y="116" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">so organisiert, dass sie lesbar bleiben?</text>
+
+    <g transform="translate(22 156)">
+      <rect x="0" y="0" width="456" height="118" rx="18" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <circle cx="36" cy="34" r="24" fill="#eef2f6" stroke="#314b60" stroke-width="3"/>
+      <text x="29" y="43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">3</text>
+      <text x="72" y="39" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Raumebenen</text>
+      <text x="72" y="71" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Vordergrund, Mittelfeld, Fernfeld</text>
+      <text x="72" y="96" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">und Overhead</text>
+    </g>
+
+    <g transform="translate(22 292)">
+      <rect x="0" y="0" width="456" height="118" rx="18" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <circle cx="36" cy="34" r="24" fill="#eef2f6" stroke="#314b60" stroke-width="3"/>
+      <text x="29" y="43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">4</text>
+      <text x="72" y="39" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Objektzahl und Dichte</text>
+      <text x="72" y="71" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Wann kippt Klarheit in Wolke</text>
+      <text x="72" y="96" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">oder Leere?</text>
+    </g>
+
+    <g transform="translate(22 428)">
+      <rect x="0" y="0" width="456" height="118" rx="18" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <circle cx="36" cy="34" r="24" fill="#eef2f6" stroke="#314b60" stroke-width="3"/>
+      <text x="29" y="43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">5</text>
+      <text x="72" y="39" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Trajektorien und Gesten</text>
+      <text x="72" y="71" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Welche Bewegungsformen tragen</text>
+      <text x="72" y="96" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">die Dramaturgie?</text>
+    </g>
+
+    <g transform="translate(22 564)">
+      <rect x="0" y="0" width="456" height="118" rx="18" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <circle cx="36" cy="34" r="24" fill="#eef2f6" stroke="#314b60" stroke-width="3"/>
+      <text x="29" y="43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">6</text>
+      <text x="72" y="39" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Lokalisation und Diffusität</text>
+      <text x="72" y="71" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Wann braucht es Fokus,</text>
+      <text x="72" y="96" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">wann Ausdehnung?</text>
+    </g>
+  </g>
+
+  <g transform="translate(1032 205)">
+    <rect x="0" y="0" width="480" height="520" rx="26" fill="#f7e9dd" stroke="#314b60" stroke-width="4"/>
+    <text x="28" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1d2c3a">3. Hören und Kontext</text>
+    <text x="28" y="90" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Für wen, wo und unter welchen</text>
+    <text x="28" y="116" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Bedingungen muss das Stück bestehen?</text>
+
+    <g transform="translate(22 156)">
+      <rect x="0" y="0" width="436" height="96" rx="18" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <circle cx="36" cy="34" r="24" fill="#f7e9dd" stroke="#314b60" stroke-width="3"/>
+      <text x="29" y="43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">7</text>
+      <text x="72" y="39" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Ziel-Abhörszenario</text>
+      <text x="72" y="70" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Für welches Setup?</text>
+    </g>
+
+    <g transform="translate(22 276)">
+      <rect x="0" y="0" width="436" height="96" rx="18" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <circle cx="36" cy="34" r="24" fill="#f7e9dd" stroke="#314b60" stroke-width="3"/>
+      <text x="29" y="43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">8</text>
+      <text x="72" y="39" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Publikum</text>
+      <text x="72" y="70" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Wie trainiert hört es?</text>
+    </g>
+
+    <g transform="translate(22 396)">
+      <rect x="0" y="0" width="436" height="96" rx="18" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <circle cx="36" cy="34" r="24" fill="#f7e9dd" stroke="#314b60" stroke-width="3"/>
+      <text x="29" y="43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">9</text>
+      <text x="72" y="39" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1d2c3a">Realraum und Archetypen</text>
+      <text x="72" y="70" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Welche Raumvorstellung trägt?</text>
+    </g>
+  </g>
+
+  <path d="M448 470 C468 470 472 470 490 470" fill="none" stroke="#314b60" stroke-width="7"/>
+  <polygon points="490,470 466,456 466,484" fill="#314b60"/>
+  <path d="M990 470 C1010 470 1014 470 1032 470" fill="none" stroke="#314b60" stroke-width="7"/>
+  <polygon points="1032,470 1008,456 1008,484" fill="#314b60"/>
+
+  <g transform="translate(88 920)">
+    <rect x="0" y="0" width="1424" height="170" rx="26" fill="#e6edf2" stroke="#314b60" stroke-width="4"/>
+    <text x="28" y="52" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1d2c3a">4. Werk und Transfer</text>
+    <text x="28" y="88" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#3d5366">Was muss über verschiedene Decoder, Setups und Dokumentationsformen hinweg erhalten bleiben?</text>
+
+    <g transform="translate(22 110)">
+      <rect x="0" y="0" width="360" height="42" rx="14" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+      <text x="18" y="27" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1d2c3a">10 Werkidentität / Dokumentation</text>
+    </g>
+  </g>
+
+  <rect x="88" y="1130" width="1424" height="180" rx="24" fill="#fffaf1" stroke="#314b60" stroke-width="4"/>
+  <text x="124" y="1182" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#1d2c3a">Praktischer Gebrauch</text>
+  <text x="124" y="1224" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Starte meist mit 1 bis 2 Kernfragen, baue dazu eine Mini-Studie und nutze die übrigen Fragen erst danach als Gegenprobe,</text>
+  <text x="124" y="1254" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Schärfung oder Dokumentationshilfe. So bleibt die Seite ein Arbeitswerkzeug und kein Formular, das von Anfang an alles</text>
+  <text x="124" y="1284" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">gleichzeitig verlangt.</text>
+</svg>

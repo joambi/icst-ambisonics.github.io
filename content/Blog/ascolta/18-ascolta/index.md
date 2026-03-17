@@ -1,7 +1,7 @@
 ---
-title: "#18 ascolta — Acousmatic Listening Sessions"
-description: "ICST Studio Residencies 2025: three new Ambisonics works by Nandele Maguni, Youngjae Cho, and Ana Gonzalez Gamboa."
-date: 2026-04-02T18:00:00
+title: "#18 ascolta — Éliane Radigue"
+description: "An ascolta listening hour in memory of Éliane Radigue featuring The Resonant Island, released on Shiiin (2005)."
+date: 2026-03-17T12:00:00
 weight: 18
 ---
 
@@ -15,36 +15,29 @@ _Free admission_
 
 ---
 
-When space starts to listen, time changes with it.
+Éliane Radigue (24 January 1932 – 23 February 2026) was a renowned French composer.
 
-For **#18 ascolta**, we open an acoustic field from the **ICST Studio Residencies 2025**: three positions, three distinct ways of placing memory, presence, and imagination in Ambisonics.
+![Éliane Radigue with cat](Éliane_Radigue_and_Cat-1.jpg)
+
+Éliane Radigue was born in Paris. She studied electroacoustic music techniques at the **Studio d’essai** of the RTF under **Pierre Schaeffer** and **Pierre Henry** (1957–58). After a longer period devoted largely to raising her three children, she worked as Pierre Henry’s assistant at **Studio Apsome** from 1967 to 1968. She was a guest artist at the **School of the Arts at New York University** (1970–71), the **University of Iowa**, the **California Institute of the Arts**, and **Mills College** in 1998. She regularly spent time in the United States and worked in her own studio in Paris.
+
+In the late 1960s, Radigue created sound environments using endless tapes of different lengths that gradually slipped out of phase, producing potentially infinite cycles. These “combinatorial music pieces” were presented in galleries and museums. Since 1970, she explored this approach in numerous works, from *Chry-ptus* (1970) to *La Danse des Dakinis* (1998). These performances, marked by extreme austerity and an almost ascetic quality, consist of a continuous, ever-changing sonic flow of remarkable slowness, with transformation occurring within the sound mass itself.
+
+Éliane Radigue passed away on **23 February 2026**.  
+The **#18 ascolta** listening session on **02 April 2026** is therefore dedicated to her memory.
 
 ---
 
 ## Programme
 
-### Ana González Gamboa — _Lúmina_
+### Éliane Radigue — _The Resonant Island_<br><small>Released on Shiiin (2005)</small>
 
-_Lúmina_ creates a space of travel fragments, inner images, and fictional overlays.  
-The composition moves between intimacy and distance, asking how personal and collective sonic memory can resonate within an immersive field.
+*The Resonant Island* was the first release on the label **Shiiin**, founded by **Stéphane Roux** and **Patrick Richer**, with journalist and historian **Daniel Caux** closely associated with the project. The work explores the essence of musical vibration.
 
-Personal link: [Website](https://anagonzalezgamboa0.wixsite.com/anagamboa)
+**Duration:** 55 minutes
 
----
+In continuity with Radigue’s earlier recordings, this piece immerses the listener in a peaceful, meditative, and hypnotic experiment. Demanding and uncompromising, it also reminds us of the importance of attentive listening. Radigue explores states of fullness, emptiness, and transparency, as in *The Reflection of an Island in the Waters of a Lake*.
 
-### Nandele Maguni — _Kampfumo_
+Over the course of 55 minutes, the sound mass appears animated by wave effects: a permanent, progressive oscillation revolving almost imperceptibly around a series of breaks. These subtle, perhaps partly imagined nuances foster a peculiar sense of tactility and open spaces of extraordinary richness within high-frequency curves, ascending spirals, or deceptive appearances. After a few minutes of listening, ghostly melodies emerge: a choir, an opera with soloists, a church organ. The imagination is set in motion.
 
-Built from field recordings in Maputo, this work unfolds as a moving sonic body: urban impulses, voices, and frictions condense into an acousmatic topography. _Kampfumo_ hears the city not as a backdrop, but as social energy in motion.
-
-Personal link: [Profile](https://ambisonics.ch/residenzen/nandele_maguni/)
-
----
-
-### Youngjae Cho — _cycle: incarnations – II. narthex_ (2025)
-
-A park that first appears concrete shifts into a zone between proximity and distance: insect flight, distant birds, footsteps, wet surfaces, metal, children's voices.  
-What seems familiar gradually destabilizes until memory returns as an acoustic present.
-
-Personal link: [Website](https://www.youngjaecho.com/about.html)
-
-
+As **Daniel Caux** notes on the album sleeve, this sound sculpture was gradually composed in 2000 at the studios of the **Centre de Création Musicale Iannis Xenakis (CCMIX)** in Alfortville.

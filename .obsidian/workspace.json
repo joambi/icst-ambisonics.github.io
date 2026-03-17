@@ -8,59 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "509c158b0a20f2c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/TEMPLATE_Residency_Artist.de.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TEMPLATE_Residency_Artist.de"
-            }
-          },
-          {
-            "id": "237f4a997ac67dc2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Blog/ascolta/15-ascolta/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
             "id": "0dafd90d371067bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ambisonics @ ICST – Worum es hier geht.md",
+                "file": "content/composing-in-ambisonics/06-raumparameter/index.de.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ambisonics @ ICST – Worum es hier geht"
-            }
-          },
-          {
-            "id": "5319277c9e9994a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/SPATAI.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SPATAI"
+              "title": "index.de"
             }
           },
           {
@@ -97,26 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ascolta-höranleitung.md",
+                "file": "content/composing-in-ambisonics/065-vergleich-kompositorischer-raumstrategien/index.de.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ascolta-höranleitung"
-            }
-          },
-          {
-            "id": "e77b0a0c4a517da6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/Denis Smalley’s “Spectromorphology”, with respect to Simon Emmerson’s “Five Spaces” 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Denis Smalley’s “Spectromorphology”, with respect to Simon Emmerson’s “Five Spaces” 1"
+              "title": "index.de"
             }
           },
           {
@@ -139,42 +83,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10 Fragen die sich beim komponieren im 3D-Raum ergeben.md",
+                "file": "content/Blog/ascolta/18-ascolta/index.de.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10 Fragen die sich beim komponieren im 3D-Raum ergeben"
-            }
-          },
-          {
-            "id": "0a72b32b7b0d1744",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Beispiele für die 10 Fragen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Beispiele für die 10 Fragen"
-            }
-          },
-          {
-            "id": "ecb32c2a2d51f22d",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "static/images/composing_in_ambisonics 1.png"
-              },
-              "icon": "lucide-image",
-              "title": "composing_in_ambisonics 1"
+              "title": "index.de"
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -206,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "B-Format path:",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -334,7 +252,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1773568792110": false,
+      "image-preview-on-icon-hover:1773670589093": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -354,54 +272,55 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ecb32c2a2d51f22d",
+  "active": "0dcbaf17685ec5f0",
   "lastOpenFiles": [
-    "content/composing-in-ambisonics/01_overview/index.de.md",
-    "public/images/composing_in_ambisonics 1.png",
-    "static/images/composing_in_ambisonics 1.png",
-    "composing_in_ambisonics.png",
-    "content/composing-in-ambisonics/01_overview/index.md",
-    "HOA Ambisonics Overview.md",
-    "public/de/de/blog/ambisonics-timeline/index.html",
     "public/de/de/post/blauertsche_bänder/index.html",
     "public/de/de/post/blauerts-bands/index.html",
+    "public/de/de/blog/ambisonics-timeline/index.html",
+    "public/de/blog/ascolta/09-ascolta/index.html",
+    "public/de/blog/ascolta/10-ascolta/index.html",
+    "public/de/blog/ascolta/19-ascolta/index.html",
     "public/de/blog/ascolta/16-ascolta/index.html",
+    "public/de/blog/ascolta/18-ascolta/index.html",
     "public/de/blog/ascolta/15-ascolta/index.html",
     "public/de/blog/ascolta/14-ascolta/index.html",
     "public/de/blog/ascolta/13-ascolta/index.html",
-    "public/de/blog/ascolta/12-ascolta/index.html",
-    "public/de/blog/ascolta/11-ascolta/index.html",
-    "public/de/blog/ascolta/10-ascolta/index.html",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/speaker_test.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/render_info.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/render-master.png",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/record_movement.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/rec_xyz.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_xyz.gif",
-    "public/icst-ambisonics-plugins/06_step_by_step_setup/play_multienc.gif",
+    "public/residenzen/youngjae-cho/Youngjae_Cho.jpg",
+    "public/residenzen/youngjae-cho/Youngjae_02.jpg",
+    "public/residenzen/péter-biró-dániel/Lucas_Daniel.jpg",
+    "public/residenzen/nandele_maguni/nandele_02.png",
+    "public/residenzen/nandele_maguni/nandele_01.png",
+    "public/residenzen/nandele_maguni/Unknown.jpeg",
+    "public/residenzen/nandele_maguni/Malhangalene.png",
+    "public/residenzen/nandele_maguni/IMG_0071.jpg",
+    "public/residenzen/ana-gonzalez-gamboa/GOPR4281.jpg",
+    "public/residenzen/icst-studio-residences-2026/monoc-small.jpg",
     "public/blog/faq/Ableton2Reaper.canvas",
-    "content/composing-in-ambisonics/05-acoustic-gestalt/index.md",
-    "content/composing-in-ambisonics/05-die-akustische-gestalt/index.de.md",
-    "Was ist die Gestalt eines Klanges und welche Rolle spielt der Raum dabei.md",
-    "Beispiele für die 10 Fragen.md",
-    "content/composing-in-ambisonics/09-references/index.md",
-    "content/composing-in-ambisonics/08-tools-and-software/index.md",
-    "content/composing-in-ambisonics/07-studio-practice-at-icst/index.md",
-    "content/composing-in-ambisonics/06-spatial-parameters/index.md",
-    "content/composing-in-ambisonics/05-spatial-counterpoint/index.md",
-    "content/composing-in-ambisonics/04-10-questions/index.md",
-    "content/composing-in-ambisonics/03-history-of-foa-and-hoa/index.md",
-    "content/composing-in-ambisonics/02-analytical-listening/index.md",
-    "content/composing-in-ambisonics/_index.md",
-    "content/composing-in-ambisonics/index.de.md",
+    "content/Blog/ascolta/18-ascolta/index.de.md",
+    "content/Blog/ascolta/_index.de.md",
+    "content/Blog/ascolta/18-ascolta/index.md",
+    "content/Blog/ascolta/19-ascolta/index.de.md",
+    "content/Blog/ascolta/19-ascolta/index.md",
+    "content/Links/index.de.md",
     "content/composing-in-ambisonics/09-referenzen/index.de.md",
-    "content/composing-in-ambisonics/08-werkzeuge-und-software/index.de.md",
-    "content/composing-in-ambisonics/07-studiopraxis-am-icst/index.de.md",
-    "content/composing-in-ambisonics/06-raumparameter/index.de.md",
-    "content/composing-in-ambisonics/05-spatial-counterpoint/index.de.md",
     "content/composing-in-ambisonics/04-die-10-fragen/index.de.md",
-    "content/composing-in-ambisonics/03-geschichte-von-foa-und-hoa/index.de.md",
-    "content/composing-in-ambisonics/02-analytisches-hoeren/index.de.md",
+    "10 Fragen die sich beim komponieren im 3D-Raum ergeben.md",
+    "Unbenannt 1.md",
+    "content/composing-in-ambisonics/065-vergleich-kompositorischer-raumstrategien/index.de.md",
+    "content/composing-in-ambisonics/055-psychoacoustics/index.md",
+    "Ascolta-höranleitung.md",
+    "content/composing-in-ambisonics/090-vr-and-installation/index.md",
+    "content/composing-in-ambisonics/090-vr-und-installation/index.de.md",
+    "content/composing-in-ambisonics/088-live-electronics/index.md",
+    "content/composing-in-ambisonics/088-live-elektronik/index.de.md",
+    "content/composing-in-ambisonics/085-work-analyses/index.md",
+    "content/composing-in-ambisonics/085-werkanalysen/index.de.md",
+    "content/composing-in-ambisonics/075-spatial-notation/index.md",
+    "content/composing-in-ambisonics/075-raumpartitur/index.de.md",
+    "content/composing-in-ambisonics/055-psychoakustik/index.de.md",
+    "content/composing-in-ambisonics/10-glossary/index.md",
+    "content/composing-in-ambisonics/10-glossar/index.de.md",
+    "Compose in Ambisonics.md",
     "docs/blog/faq/Ableton2Reaper.canvas",
     "content/Blog/FAQ/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",

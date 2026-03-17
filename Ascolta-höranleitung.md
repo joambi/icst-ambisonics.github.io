@@ -4,58 +4,76 @@ categories:
   - ASCOLTA
 ---
 ---
-Hier ist eine längere, blogtaugliche Version für ambisonics.ch im Du-Stil, die du direkt (mit eigenem Frontmatter) übernehmen kannst. Ich schreibe nur den eigentlichen Artikelkörper; Frontmatter kannst du nach deinem Hugo-Setup ergänzen.
 
-***
+# So hörst du räumliche Musik aktiv und analytisch
 
-# Ascolta Guide: So hörst du räumliche Musik aktiv und analytisch
-
-*Ein Leitfaden für fortgeschrittene Hörer:innen der ascolta-Reihe am ICST Kompositionsstudio.*
-
-***
+---
 
 ## Warum räumliche Musik ein anderes Hören verlangt
 
-Wenn du in der Regie des ICST Kompositionsstudios sitzt, im Halbdunkel, umgeben von mehreren Lautsprecherebenen, bist du in einer anderen Hörsituation als beim klassischen Stereo-Konzert. Der Klang kommt nicht mehr aus einem (imaginären) Stereo-Dreieck, sondern entfaltet sich als **Raum** um dich herum – vor dir, hinter dir, über dir, manchmal scheinbar im Kopf.
+Wenn wir in der Regie des ICST-Kompositionsstudios sitzen, im Halbdunkel und umgeben von mehreren Lautsprecherebenen, befinden wir uns in einer anderen Hörsituation als bei einem klassischen Stereokonzert. Der Klang erreicht uns nicht mehr aus einem imaginären Stereodreieck, sondern entfaltet sich im ganzen Raum um dich herum. Wir nennen das dann auch immersives Hören. Dieses Eintauchen in die Klangwelt und das Narrative der Klänge im Raum, sei es eine abstrakte elektroakustische Komposition oder eine realistisch anmutende Feldaufzeichnung, unterscheidet sich grundlegend vom herkömmlichen Hören.
 
-Das hat Konsequenzen: Räumliche Musik will nicht einfach “konsumiert” werden, sie fordert dich als Hörer:in heraus. Sie lädt dich ein, den eigenen Hörmodus zu wechseln – weg vom beiläufigen Streamen, hin zu einem bewussten, neugierigen, analytischen Hören. Genau dafür ist dieser Guide gedacht.
+Damit verbunden ist die Erwartung an die Hörenden: Räumliche Musik ist nicht einfach zum passiven Konsum bestimmt, sondern fordert dich als Hörer:in heraus. Sie lädt dazu ein, den eigenen Hörmodus zu wechseln – weg vom beiläufigen Streamen, hin zu einem bewussten, neugierigen und analytischen Hören. Analytisches Hören bedeutet, gezielt auf bestimmte Parameter der Musik zu achten: Wie sind Klänge räumlich platziert, wie bewegen sie sich im Raum, wie verändern sich Dichte, Richtung oder Entfernung? Besonders wertvoll ist es, auf Details wie Hall, Echo, Modulationen und Klangfarben zu achten, narrative oder dramaturgische Strukturen im Raum zu erkennen, also wie sich musikalische Ereignisse räumlich entwickeln und Beziehungen zueinander aufbauen. Dies bedeutet, die eigene Wahrnehmung zu schärfen und die Vielschichtigkeit der räumlichen Gestaltung bewusst zu erfassen.  
 
-Er richtet sich an fortgeschrittene Audioleute: Komponist:innen, Sounddesigner:innen, Tontechniker:innen, Studierende und Forscher:innen, die bei ascolta nicht nur “dabei sein”, sondern das räumliche Geschehen als kompositorische Ebene ernst nehmen wollen.
+Dieses veränderte Hören erfordert, das räumliche Geschehen als kompositorische Ebene ernsthaft zu analysieren und zu reflektieren. Dabei gibt es verschiedene Ansätze und Modelle, die zur Analyse räumlicher Musik herangezogen werden können. Beispielsweise bieten die Ansätze von Denis Smalley zu „Spectromorphology“ und „Space-Form“ die Möglichkeit, räumliche Gestaltungselemente zu erfassen und zu beschreiben. Weitere Methoden umfassen akustische Analysen von Schallfeldverläufen, die Untersuchung von Bewegungsmustern der Klänge sowie die Anwendung von Hörtests zur subjektiven Erfassung der Raumerfahrung. Diese Modelle und Methoden können Studierenden Orientierung geben, um die räumlichen Qualitäten einer Komposition gezielt zu untersuchen. Im folgenden Artikel möchte ich genau das belegen.
 
-***
+  
+3D-Audio kann bei ungeübten Hörern Irritationen oder Angst auslösen, da der Klang aus allen Richtungen ertönt und sich bewegt. Ein Blick in die Entwicklung der Audiotechnologie verdeutlicht, dass sich der akustische Fokus des Menschen historisch auf den vorderen Bereich konzentrierte und dass klassischer Stereoklang ausschließlich Schall aus dieser Richtung wahrnehmbar machte; erst durch 3D-Audio wird es möglich, Klangquellen aus allen Richtungen, auch von hinten und oben, zu hören (Goossens, 2020). (Gehörte Geschichten: Phänomene des Auditiven, 2020) Früher, als wir Jäger waren, war unser Gehör in alle Richtungen geschärft. (Morley, n.d.) Auch heute hören wir dreidimensional, meist jedoch sehend. Dieses historische Erbe und die technische Entwicklung beeinflussen unsere heutige Hörpraxis deutlich: Viele Konzertbesucherinnen und -besucher erleben bei ihren ersten Kontakten mit räumlicher Musik zunächst Verunsicherung, weil sie kaum daran gewöhnt sind, Klänge von hinten oder von oben wahrzunehmen. Im Alltag nehmen wir zwar Geräusche in der Umgebung wahr, sind aber meist visuell orientiert und filtern Klänge aus unerwarteten Richtungen eher aus. Beim Hören eines immersiven 3D-Audiokonzerts, zum Beispiel im Kompositionsstudio, kann es vorkommen, dass sich Personen kurz umdrehen oder prüfen, woher ein bestimmter Ton tatsächlich kommt. Dies zeigt, wie stark unser Hörverhalten von der traditionellen frontalen Klangausrichtung geprägt wurde und wie räumliche Musik neue Hörgewohnheiten anstoßen kann.
+
+  
+In diesem Zusammenhang stellt sich mir ein Problem beim räumlichen Hören: Der akustisch wahrgenommene Raum weicht häufig deutlich vom physisch erfahrbaren Raum ab. Diese Diskrepanz entsteht, weil räumliche Musik eine auditiv erzeugte Umgebung schafft, die unabhängig von den realen, sichtbaren Raumstrukturen ist. So entsteht ein paralleler, klangbasierter Raum, der den tatsächlichen Raum überlagert und zu einer eigenständigen Hörerfahrung führt. Diese Erfahrung fordert mich heraus, meine gewohnte Raumwahrnehmung aktiv zu hinterfragen und zu reflektieren, inwiefern die von der Musik konstruierte Raumvorstellung mein Hören und mein Erleben beeinflusst.
+
+  
+
+Um diesen Reflexionsprozess zu unterstützen, können Studierende sich beim Hören zum Beispiel folgende Fragen stellen: Wie unterscheidet sich mein subjektives Raumempfinden vom sichtbaren, physischen Raum um mich herum? Welche Emotionen oder Gedanken werden durch die künstlich erschaffenen Klangräume ausgelöst? Solche Fragen helfen, das eigene Hören bewusst wahrzunehmen und eine kritisch-analytische Haltung zu entwickeln.
+
+Um das beschriebene Phänomen praktisch zu erfahren, folgt die erste Übung: Wir hören zunächst eine Aufnahme von "Soundwalk durch Zürich" von Max Mustermann, einer elektroakustischen Komposition, die speziell für ein 3D-Lautsprechersystem produziert wurde. In diesem Stück bewegen sich verschiedene Klangquellen – etwa Stadtgeräusche, Vogelstimmen und elektronische Texturen – gezielt durch den Raum und entstehen teils auch hinter oder über den Köpfen der Zuhörenden. Die Übung besteht darin, das Beispiel zunächst mit offenen und anschließend mit geschlossenen Augen anzuhören.
+
+  
+
+  
+
+
+
+  
+
+[^1](February 10, 2020). Offene Standards für 3D-Audio – Was der immersive Klang bringt – und welche Hürden er zu überwinden hat. Meinungsbarometer.info. https://www.meinungsbarometer.info/beitrag/Offene-Standards-fuer-3D-Audio_3626.html
+[^2](2020). Gehörte Geschichten: Phänomene des Auditiven. De Gruyter. https://dokumen.pub/gehrte-geschichten-phnomen-des-auditiven-9783110741773-9783110741681.html
+[^3]Morley, I. (n.d.). The Palaeoanthropology of Vocalization 2: The Brain and Hearing. https://academic.oup.com/book/9285/chapter/156014138
+
+
+
+---
 
 ## Aktives Hören im 3D-Klangfeld
 
 Aktives Hören hat im Kontext räumlicher Musik mindestens zwei Dimensionen: eine körperliche und eine kognitive.
 
-### Körperlich: Dein Kopf ist Teil des Decoders
+Das Prinzip, dass räumliche Musik eine Umstellung der Hörweise erfordert, wie zuvor für das ICST-Kompositionsstudio beschrieben, wird durch psychoakustische Studien gestützt, die die 3D-Schalllokalisierung in kontrollierten Laborumgebungen mit Surround-Lautsprecheranlagen oder kopfhörerbasierten räumlichen Audiosystemen untersuchen. Diese Studien zeigen, dass Hörer:innen, die natürliche Kopfbewegungen ausführen – wie leichte Drehungen oder Neigungen –, Schallquellen genauer lokalisieren können als Personen, die still sitzen. Die Ursache für diese Verbesserung liegt in der Fähigkeit des Gehirns, räumliche Hypothesen auf Grundlage dynamischer Veränderungen der binauralen Hinweise während der Kopfbewegung zu verfeinern. Diese Hinweise, darunter interaurale Zeitunterschiede (ITD), interaurale Pegelunterschiede (ILD) und spektrale Färbung, passen sich subtil an, wenn sich die Kopfposition verändert (Binaural-cue reweighting induced by discrimination training, 2025). Ist beispielsweise ein Geräusch innerhalb des räumlichen Feldes schwer zu lokalisieren, kann eine sanfte Kopfbewegung nach links oder rechts die Wahrnehmung der Richtung oder Entfernung des Geräusches verbessern. Diese Erkenntnisse bieten eine wissenschaftliche Grundlage für die empfohlenen aktiven Hörpraktiken: Bewusste körperliche Einbindung in das 3D-Klangfeld – etwa durch die beschriebenen Bewegungen im ICST-Kompositionsstudio – kann gezielt eingesetzt werden, um das räumliche Bewusstsein während Hörsitzungen zu verbessern. Theoretische Erkenntnisse aus der Laborforschung stützen somit den praktischen Ratschlag, achtsame Bewegung als Teil eines analytischen und engagierten Ansatzes für räumliche Musik einzubeziehen.
 
-In vielen psychoakustischen Studien zu 3D-Lokalisation zeigt sich ein klares Muster: Personen, die sich während des Hörens natürlich bewegen – insbesondere den Kopf leicht drehen oder neigen – lokalisieren Schallereignisse genauer als Personen, die bewusst “stillgehalten” werden. Der Grund: Das Gehirn nutzt die Veränderungen der binauralen Cues (ITD, ILD, spektrale Verfärbungen) beim Kopf drehen, um seine Lokalisations-Hypothesen zu verfeinern.
-
-Übertragen auf das ICST-Studio heisst das:  
-Du musst nicht wie gefroren im Sweet Spot sitzen. Kleine, bewusste Bewegungen – ein leichtes Drehen des Kopfes, ein “Einhorchen” in eine bestimmte Richtung – sind kein Fehler, sondern Teil des räumlichen Hörens. Dein Körper gehört zum System.
+Im ICST-Studio bedeutet dies, dass es nicht erforderlich ist, im Sweet Spot unbeweglich zu verharren. Vielmehr sind kleine, bewusste Bewegungen wie das leichte Drehen des Kopfes oder gezieltes Einhorchen in eine bestimmte Richtung integraler Bestandteil des räumlichen Hörerlebnisses im Surround-Studio des ICST mit 17 Geithain-Lautsprechern (Schuett, 2021). Dein Körper ist Teil des Systems.
 
 Du kannst das bewusst als Hörtechnik einsetzen:
 
-- Wenn eine Quelle schwer zu lokalisieren ist, bewege den Kopf minimal nach links/rechts.  
-- Wenn eine Höhenebene unklar wirkt, lehne dich leicht nach vorne oder hinten.  
-- Wenn du Envelopment einschätzen willst, fokussiere kurz nach vorn, dann nach hinten und vergleiche.
+- Wenn eine Quelle schwer zu lokalisieren ist, bewege den Kopf nur minimal nach links oder rechts.
+- Wenn eine Höhenebene unklar wirkt, lehne dich leicht nach vorne oder hinten.
+- Wenn du Envelopment einschätzen willst, fokussiere dich kurz nach vorn, dann nach hinten und vergleiche.
 
-### Kognitiv: Fragen statt nur Eindrücke
+### Kognitiv: Von bloßen Eindrücken zu gezielten Fragestellungen – der Übergang zum Critical Listening
 
-Die zweite Dimension ist die Aufmerksamkeitssteuerung. Anstatt “mal sehen, was passiert”, kannst du dir vor und während des Hörens konkrete Fragen stellen:
+Die zweite Dimension ist die Aufmerksamkeitssteuerung. Anstatt “mal sehen, was passiert“, kannst du dir vor und während des Hörens konkrete Fragen stellen:
 
-- Worauf will ich heute achten?  
-- Was interessiert mich an diesem Stück – Bewegung, Distanz, Envelopment, Format?  
-- Wie verhält sich die räumliche Ebene zur formalen Struktur?
+- Worauf will ich heute achten?
+- Was interessiert mich: Bewegung, Distanz, Enveloping, Format?
+- Wie wirkt die räumliche Ebene auf die formale Struktur?
 
-Das ist im Kern Critical Listening – nur erweitert um räumliche Parameter. Und genau hier kommt ein analytischer Rahmen ins Spiel, der aus der elektroakustischen Theorie kommt und sich für räumliches Hören hervorragend eignet.
+Dies ist im Kern Critical Listening, erweitert um räumliche Parameter. Während klassisches Critical Listening im Stereofeld vor allem Aspekte wie Tiefenstaffelung, Panorama und Klangbalance betrachtet, eröffnet räumliches Hören zusätzliche Fragestellungen: Wie werden Bewegungen im Raum wahrgenommen? Welche Klangereignisse sind über, hinter oder neben dir lokalisiert, jenseits der typischen Stereobreite? Binaurale Ansätze, die Raum simulieren, sind auf einen virtuellen Raum zwischen zwei Kopfhörermuscheln beschränkt. Im Lautsprecher-Raum hingegen agierst du in einem physischen Klangfeld, das deinen Körper direkt einbezieht und neue analytische Möglichkeiten eröffnet. Diese physische Erfahrung des Raums führt dazu, dass räumliches Hören nicht nur mehr Informationen liefert, sondern auch die Wahrnehmung selbst transformieren kann. Es fordert eine aktive Auseinandersetzung mit der Beziehung zwischen Hörer:in, Raum und Klang, wodurch die Art und Weise, wie Musik analysiert und erlebt wird, grundlegend erweitert wird. An dieser Stelle bietet ein analytischer Rahmen aus der elektroakustischen Theorie eine geeignete Grundlage für das räumliche Hören.
 
-***
+---
 
 ## Drei Räume nach Smalley: ein Modell zum Mitdenken
 
-Der Komponist und Theoretiker Denis Smalley hat mit “Spectromorphology” und später “Space-Form and the Acousmatic Image” Werkzeuge entwickelt, um elektroakustische Musik zu beschreiben. Viele dieser Ideen lassen sich produktiv auf deine ascolta-Hörpraxis übertragen.
+Der Komponist und Theoretiker Denis Smalley hat mit „Spectromorphology“ und später mit „Space-Form and the Acousmatic Image“ analytische Modelle entwickelt, die zur Beschreibung und Einordnung elektroakustischer Musik dienen. In einem Stück, das mit Field Recordings von Straßenbahnen arbeitet, lässt sich beispielsweise der perspektivische Raum durch die hörbare Bewegung der Klänge von vorne nach hinten nachvollziehen: Der Eindruck, dass sich ein Fahrzeug auf den Hörer zubewegt und dann nach links aus dem Lautsprecherfeld herausfährt, lässt sich mit Smalleys Konzept der räumlichen Trajektorie präzise beschreiben. Gleichzeitig ermöglicht das Konzept des source-bonded space die Analyse, wie der mitaufgenommene Nachhall des Bahnhofs die Lautsprecherumgebung überlagert und eine vielschichtige Raumwahrnehmung erzeugt. Diese Modelle lassen sich gezielt auf deine Hörerfahrung in der Ascolta-Reihe anwenden, da sie eine differenzierte Wahrnehmung der räumlichen, klanglichen und formalen Ebenen ermöglichen. Da in der Konzertreihe Ascolta – Akusmatische Hörstunde sowohl zeitgenössische als auch ältere Werke im ICST-Kompositionsstudio aufgeführt werden, bieten diese theoretischen Werkzeuge konkrete Perspektiven zur Analyse der jeweils gestalteten räumlichen Strukturen (Schütt, 2024).
 
 Vereinfacht kannst du drei “Räume” unterscheiden, in denen du gleichzeitig hören kannst:
 
@@ -63,36 +81,34 @@ Vereinfacht kannst du drei “Räume” unterscheiden, in denen du gleichzeitig 
 
 Das ist der Raum, den du am direktesten wahrnimmst: die scheinbare Position und Bewegung von Klängen im Lautsprecherfeld.
 
-Fragen, die du dir stellen kannst:
+Wo sitzt der Klang im Raum?
 
-- Wo “sitzt” dieser Klang im Raum?  
-- Bewegt er sich – wenn ja, auf einer klaren Trajektorie (Kreise, Linien, Spiralen) oder eher diffus?  
-- Gibt es feste “Ankerpunkte” im Raum (z.B. ein quasi statisches Vordergrundobjekt) und bewegte Layer darum herum?  
-- Verändert sich die Räumlichkeit im Verlauf des Stücks strukturell (z.B. von punktuell zu flächig, von frontal zu immersiv)?
+- Bewegt er sich? Auf welcher Trajectory oder diffus?
+- Gibt es Ankerpunkte und bewegte Layer?
+- Ändert sich die Räumlichkeit im Verlauf?
 
 ### 2. Source-bonded Space
 
-Viele Klänge bringen ihren eigenen Raum mit: Ein Field Recording eines Bahnhofs, eine Kirche, ein enger Innenraum. Dieser “mitgebrachte Raum” überlagert sich mit dem Lautsprecherraum.
+Viele Klänge bringen ihren eigenen Raum mit: ein Field Recording eines Bahnhofs, eine Kirche, ein enger Innenraum. Dieser “mitgebrachte Raum“ überlagert sich mit dem Lautsprecherraum.
 
 Hörfragen:
 
-- Welche Klänge tragen einen klaren “inneren Raum” in sich (Nachhall, Ambience, Hintergrundgeräusche)?  
-- Wie interagiert dieser innere Raum mit der Studiogeometrie? Wird er verstärkt, konterkariert oder neutralisiert?  
-- Gibt es Momente, wo der Stückraum bewusst “größer” wirkt als der physische Studio-Raum – oder umgekehrt?
+- Tragen Klänge einen inneren Raum (Nachhall, Ambience) mit sich?
+- Wie interagiert dieser Raum mit dem Studio?
+- Wirkt der Stückraum jemals größer oder kleiner als das Studio?
 
 ### 3. Spektraler Raum
 
 Smalley denkt Raum auch spektral: Welche Frequenzbereiche sind wo verortet? Wie hängen spektrale Dichte und räumliche Tiefe zusammen?
 
-Fragen:
+Wo ist der Bass lokalisiert?
 
-- Wo sitzt der Bass (Root) im Raum? Zentral, verteilt, von oben, von hinten?  
-- Wo schimmern Höhen/Obertöne (Canopy)? Ausschliesslich oben, oder auch überraschend nah?  
-- Werden spektrale Schichten räumlich getrennt (z.B. tiefe Impulse vorne, hohe Texturen hinten/oben), um komplexe Strukturen lesbar zu halten?
+- Wo erscheinen Höhen/Obertöne (Canopy)?
+- Sind spektrale Schichten räumlich getrennt?
 
-Mit diesen drei Ebenen im Hinterkopf kannst du jedes Stück bei ascolta wie eine räumliche Partitur “lesen”.
+Mit diesen drei Ebenen im Hinterkopf kannst du jedes Stück bei ascolta als räumliche Partitur analysieren.
 
-***
+---
 
 ## Fünf Leitfragen für jedes ascolta-Stück
 
@@ -100,63 +116,58 @@ Du kannst dir beim Hören einen kleinen Satz an Standardfragen mitnehmen, der si
 
 ### 1. Wie ist der Raum organisiert?
 
-- Gibt es klare Zonen (Front/Side/Back/Height, Nah/Fern), oder ist alles eher “wolkenartig” verteilt?  
-- Kommt die Energie überwiegend von vorne (quasi erweiterte Bühne) oder umhüllt sie dich?  
-- Gibt es bewusst “leere” Zonen, die dramaturgisch genutzt werden (z.B. eine stille Rückseite, die erst spät aktiviert wird)?
+- Gibt es klare Zonen (Front/Side/Back/Height, Nah/Fern), oder ist alles eher “wolkenartig“ verteilt?
+- Kommt die Energie überwiegend von vorne (quasi eine erweiterte Bühne) oder umhüllt sie dich?
+- Gibt es bewusst leere Zonen, die später aktiviert werden?
 
 ### 2. Wie verhalten sich Bewegung und Statik?
 
-- Welche Elemente sind immobil und bilden gewissermassen ein räumliches Koordinatensystem?  
-- Welche Elemente bewegen sich, und wie? Kontinuierlich, in Sprüngen, fragmentarisch?  
-- Gibt es räumliche “Kulminationspunkte”, in denen Bewegung und Dichte zusammenlaufen?
+- Welche Elemente bleiben im Raum ortsfest?
+- Welche Elemente bewegen sich und wie? Kontinuierlich, in Sprüngen, fragmentarisch?
+- Gibt es räumliche “Kulminationspunkte“, in denen Bewegung und Dichte zusammenlaufen?
 
 ### 3. Wie entsteht Envelopment?
 
-- Fühlst du dich eher *umgeben* oder eher *gegenüber* des Klanggeschehens?  
-- Wird Envelopment primär durch Hall/Room-Tails erzeugt oder durch viele diskrete Quellen, die dich umgeben?  
-- Wie ändert sich das Envelopment im Zeitverlauf – gibt es Passage, in denen du bewusst aus der Hülle “herausgeführt” wirst?
+- Bist du vom Klangraum umgeben oder gegenübergestellt?
+- Entsteht Envelopment durch Hall/Tails oder durch diskrete Quellen?
+- Wann ändert sich das Envelopment – fühlst du dich herausgeführt?
 
 ### 4. Wie werden Distanz und Tiefe gestaltet?
 
-- Welche Mittel werden für Nähe/Ferne genutzt (Pegel, Hochtonanteil, Hallanteil, Spektralmaskierung)?  
-- Gibt es “unmögliche Distanzen” (z.B. extrem nahe, körperlich unmögliche Klänge) als künstlerische Geste?  
-- Ist die Tiefenstaffelung eher “realistisch” oder stark stilisiert?
+- Wie werden Nähe/Ferne gestaltet? Gibt es künstlerische Distanzen?
+- Ist die Tiefenstaffelung realistisch oder stilisiert?
+- Was würde passieren, wenn man das Stück auf Stereo “reduzieren“ würde – bliebe die Struktur erhalten oder würde Entscheidendes fehlen?
+- Sind räumliche Parameter formbildende Kräfte – wird Raum zum Thema?
 
-### 5. Welche Bedeutung hat die Räumlichkeit?
+Diese Fragen dienen nicht als Prüfungsbogen, sondern als Werkzeug, um deine Aufmerksamkeit gezielt auf bestimmte Ebenen des räumlichen Hörens zu lenken.
 
-- Was würde passieren, wenn man das Stück auf Stereo “reduzieren” würde – bliebe die Struktur erhalten oder würde Entscheidendes fehlen?  
-- Werden räumliche Parameter als formbildende Kräfte eingesetzt (z.B. Raumwechsel als Formteile, Bewegung als Entwicklungsprinzip)?  
-- Gibt es Momente, in denen du das Gefühl hast, dass Raum selbst zum “Thema” des Stücks wird?
+---
 
-Diese Fragen sind kein Prüfungsbogen; sie sind ein Werkzeug, um deine Aufmerksamkeit jeweils auf eine Ebene zu richten.
+## Damit die reflektierten Fragen nicht abstrakt bleiben, ergänzen drei Übungen zum Ausprobieren deine Ascolta-Session – allein oder mit anderen.
 
-***
-
-## Drei praktische Hörübungen für ascolta
-
-Damit das nicht abstrakt bleibt, hier drei Übungen, die du direkt in einer ascolta-Session ausprobieren kannst – für dich alleine oder im Austausch mit anderen.
+Um die zuvor erläuterten aktiven und analytischen Höransätze praktisch umzusetzen und gezielt zu vertiefen, folgen drei Übungen, die sich direkt in einer ascolta-Session anwenden lassen – sowohl einzeln als auch im Austausch mit anderen.
 
 ### Übung 1: Zeichne dir eine Raumkarte
 
-Nimm dir für ein Stück vor, während des Hörens eine grobe Top-Down-Skizze des Studios zu machen (ein Kreis oder Rechteck mit vereinfachter Lautsprecheranordnung reicht). Markiere während des Stücks nur grob:
+Nimm dir für ein Stück vor, während des Hörens eine grobe Top-Down-Skizze des Studios zu machen (ein Kreis oder ein Rechteck mit vereinfachter Lautsprecheranordnung reicht). Markiere während des Stücks nur grob:
 
-- Wo (ungefähr) du bestimmte Klangfamilien wahrnimmst.  
-- Welche Bereiche lange “leer” bleiben und welche permanent bespielt werden.  
-- Ob sich bestimmte Regionen im Laufe des Stücks “aktivieren”.
+- Wo (ungefähr) du bestimmte Klangfamilien wahrnimmst.
+- Welche Bereiche lange “leer“ bleiben und welche permanent bespielt werden.
+- Ob sich bestimmte Regionen im Laufe des Stücks “aktivieren“.
 
-Ziel ist nicht Präzision, sondern eine Sichtbarmachung deines räumlichen Eindrucks. Wenn mehrere Personen das parallel tun, sind die Unterschiede im Anschluss spannend: Wo seid ihr euch einig, wo divergieren eure Karten?
+Das Ziel ist nicht Präzision, sondern die Visualisierung deines räumlichen Eindrucks. Wenn mehrere Personen dies parallel durchführen, werden die Unterschiede im Anschluss besonders interessant: Wo gibt es Übereinstimmungen, wo weichen die Karten voneinander ab?
 
 ### Übung 2: Listening Twice mit Fokuswechsel
 
-Wenn ein Stück bei ascolta zweimal gespielt wird (z.B. in unterschiedlichen Formaten oder mit kurzem Abstand), nutze das bewusst:
+Wenn ein Stück bei Ascolta zweimal gespielt wird (z.B. in unterschiedlichen Formaten oder mit kurzem Abstand), nutze das bewusst:
 
-1. Durchgang: Hören ohne explizite Aufgabe – nur notieren, was hängen bleibt (2–3 Stichworte).  
-2. Durchgang: Wähle *eine* Dimension (z.B. Distanz, Höhe, Envelopment, Bewegung) und fokussiere nur darauf.
+1. Durchgang: Hören ohne explizite Aufgabe – nur notieren, was hängen bleibt (2–3 Stichwörter).
+2. Durchgang: Wähle eine Dimension (z.B. Distanz, Höhe, Envelopment, Bewegung) und fokussiere dich nur darauf.
 
 Danach kannst du vergleichen:
 
-- Welche Aspekte hast du beim ersten Mal komplett überhört?  
-- Welche Details werden plötzlich selbstverständlich, wenn du sie einmal bewusst gehört hast?  
+- Welche Aspekte hast du beim ersten Mal komplett überhört?
+- Welche Details werden plötzlich selbstverständlich, wenn du sie einmal bewusst gehört hast?
 - Wie verändert der Fokus deine Bewertung des Stücks?
 
 ### Übung 3: Formatvergleich als Analyse
@@ -165,39 +176,50 @@ Wenn dasselbe Stück in verschiedenen Formaten zu hören ist (z.B. Stereo, 5.1, 
 
 Lege dir eine kleine Tabelle an, z.B.:
 
-| Dimension              | Stereo           | 5.1 / Surround     | Ambisonics / HOA     |
-|------------------------|------------------|--------------------|----------------------|
-| Ortungsschärfe        |                  |                    |                      |
-| Envelopment           |                  |                    |                      |
-| Tiefenstaffelung      |                  |                    |                      |
-| Transparenz / Klarheit|                  |                    |                      |
-| Bewegungslesbarkeit   |                  |                    |                      |
-| Gesamteinschätzung    |                  |                    |                      |
+Hier ein mögliches Beispiel für eine Vergleichstabelle:
 
-Fülle sie nicht mit Zahlen, sondern mit kurzen Worten (z.B. “präzise aber frontal”, “sehr immersiv, etwas diffuser”, “bewegt, aber schwer lesbar”). Das zwingt dich, deine Höreindrücke sprachlich zu fassen – ein wichtiger Schritt, um sie später in die eigene Komposition oder Produktion zurückzuspielen.
+  
 
-***
+Format      | Räumliche Präzision | Immersion           | Bewegung
+
+------------|--------------------|---------------------|--------------------
+
+Stereo      | klar, aber frontal | begrenzt            | wenig differenziert
+
+5.1         | besser, breiter    | mehr Envelopment    | deutlicher
+
+Ambisonics  | sehr präzise       | hoch, umhüllend     | differenziert, räumlich
+
+  
+
+Du kannst die Kategorien flexibel anpassen. Notiere in jedem Format deine Eindrücke in kurzen Worten (z.B. "präzise aber frontal", "sehr immersiv, etwas diffuser", "bewegt, aber schwer lesbar"). Verwende dabei keine Zahlen, sondern kurze Beschreibungen. Dies fördert die sprachliche Reflexion deiner Höreindrücke – ein wichtiger Schritt, um sie später in deine eigene Komposition oder Produktion zu integrieren.
+
+---
 
 ## Wie du das in deine eigene Praxis rückkoppelst
 
-Der Mehrwert dieser Art von Hören zeigt sich nicht nur während der ascolta-Stunde, sondern später in deinem eigenen Arbeiten:
+Der Mehrwert dieser Hörweise zeigt sich nicht nur während der Ascolta-Stunde, sondern auch in deiner eigenen Arbeit: Du kannst diese analytischen Hörtechniken gezielt in deinen kreativen Workflow integrieren, indem du Hörsessions regelmäßig als festen Bestandteil deiner Kompositions- oder Sounddesign-Routine etablierst. Fasse nach jeder Session gezielt Beobachtungen zusammen und leite daraus konkrete Ideen oder Strategien für eigene Projekte ab. So wird aktives und analytisches Hören schrittweise zum Motor deiner Kreativität und deiner Entwicklung.
 
-- Als Komponist:in kannst du gezielt räumliche Strategien anderer Stücke “stehlen” – z.B. wie Bewegung als Formprinzip eingesetzt wird oder wie mit “unmöglichen Distanzen” gespielt wird.  
-- Als Sounddesigner:in bekommst du ein feineres Gespür dafür, welche räumlichen Mittel tatsächlich funktional sind (Trennung, Narrativ, Lokalisationsklarheit) und welche eher dekorativ.  
+- Als Komponist:in kannst du gezielt räumliche Strategien anderer Stücke “stehlen“ – z.B. wie Bewegung als Formprinzip eingesetzt wird oder wie mit “unmöglichen Distanzen“ gespielt wird.
+- Als Sounddesigner:in bekommst du ein feineres Gespür dafür, welche räumlichen Mittel tatsächlich funktional sind (Trennung, Narrativ, Lokalisationsklarheit) und welche eher dekorativ sind.
 - Als Tonmeister:in hörst du schneller, wo eine 3D-Mischung auseinanderfällt (z.B. beim Übersetzen auf Kopfhörer) und kannst das gezielter kompensieren.
 
 Die ascolta-Reihe ist dafür ein ideales Labor: konzentrierte Hörsituation, hochauflösendes Lautsprechersystem, vielfältiges Repertoire, oft in mehreren Formaten.
 
-***
+---
 
 ## Ausblick
 
-Räumliche Musik aktiv und analytisch zu hören ist kein Selbstzweck, sondern ein Training für dein Ohr – ähnlich wie Instrumentalstudium für deine Hände. Mit jedem Stück verlagerst du ein bisschen mehr “Intelligenz” vom Lautsprechersystem in dein Hören: Du verstehst besser, was passiert, und warum es auf dich wirkt.
+Räumliche Musik aktiv und analytisch zu hören ist kein Selbstzweck, sondern ein Training für dein Ohr – ähnlich wie ein Instrumentalstudium für deine Hände. Mit jedem Stück verlagerst du ein bisschen mehr “Intelligenz“ vom Lautsprechersystem in dein Hören: Du verstehst besser, was passiert und warum es auf dich wirkt.
 
-Der schönste Nebeneffekt: Je präziser du hörst, desto intensiver wird auch das scheinbar “passive” Erleben. Analyse und Genuss müssen sich nicht ausschliessen – sie können sich gegenseitig verstärken.
+Ein bedeutender Nebeneffekt: Je präziser du hörst, desto intensiver wird auch das scheinbar passive Erleben. Dies zeigt sich beispielsweise, wenn du nach einer analytischen Hörsession feststellst, dass dir auch in zukünftigen, unvoreingenommenen Hörsituationen mehr Details auffallen oder dass du klangliche Feinheiten spontan wahrnimmst. Das bedeutet, dass Analyse und Genuss sich nicht ausschließen. Vielmehr kann eine reflektierte Auseinandersetzung mit räumlichen Parametern dazu führen, dass auch das intuitive, genussorientierte Hören reicher und vielfältiger wird.
 
-***
+---
 
-Wenn du willst, kann ich dir im nächsten Schritt den kompletten Text noch mit einem passenden Hugo-Frontmatter (inkl. URL `/ascolta-guide/` und Menüeintrag) vorbereiten, damit du ihn direkt als `content/ascolta-guide.md` ins Repo legen kannst.
+rephrased with AI Grammarly
 
-Quellen
+[^1]: 
+
+[^2]: 
+
+[^3]: 

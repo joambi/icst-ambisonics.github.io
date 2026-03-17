@@ -26,14 +26,16 @@
       <guid>https://ambisonics.ch/icst-ambisonics-plugins/01_overview/</guid>
       <pubDate>Mon, 02 Jun 2025 04:14:54 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and several additional spatial audio production tools. The following examples were created for and with the &lt;a href=&#34;https://www.reaper.fm/&#34;&gt;REAPER&lt;/a&gt; Digital Audio Workstation (DAW)!&lt;/p&gt;
+        <description>&lt;p&gt;Reference overview of the ICST Ambisonics Plugins for REAPER: plugin scope, supported formats, download links, and core documentation entry points.&lt;/p&gt;
+&lt;p&gt;The ICST Ambisonics Plugins encode and decode the Ambisonics B-Format and provide additional spatial audio production tools for the &lt;a href=&#34;https://www.reaper.fm/&#34;&gt;REAPER&lt;/a&gt; Digital Audio Workstation (DAW).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/01_overview/Overview_v3.1.png&#34; alt=&#34;Overview_v3.1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The ICST Ambisonics plugins consist of the following plugin formats:&lt;/p&gt;
+&lt;h2 id=&#34;plugin-formats&#34;&gt;Plugin formats&lt;/h2&gt;
+&lt;p&gt;The ICST Ambisonics Plugins are available in the following formats:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;VST3 / Components (AU) /LV2
 (LV2 version does NOT support automation parameters at this time)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Find individual pages here:&lt;/p&gt;
+&lt;h2 id=&#34;key-references&#34;&gt;Key references&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://ambisonics.ch/blog/new/&#34;&gt;What is New&lt;/a&gt;&lt;/p&gt;
@@ -45,7 +47,7 @@
 &lt;p&gt;&lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder&#34;&gt;ICST AmbiDecoder&lt;/a&gt; (Decoder)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Free download here:&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;downloads-and-external-resources&#34;&gt;Downloads and external resources&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Binary Download: &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Documentation: &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&#34;&gt;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&lt;/a&gt;&lt;/li&gt;
@@ -54,7 +56,8 @@
 &lt;li&gt;&lt;span style=&#34;color:rgb(220, 20, 60)&#34;&gt;Warning&lt;/span&gt;:  LV2 is very experimental&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Download: &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases/&#34;&gt;https://github.com/schweizerweb/icst-ambisonics-plugins/releases/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Developer - team&lt;/strong&gt;:&lt;/p&gt;
+&lt;h2 id=&#34;development&#34;&gt;Development&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Developer team&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Christian Schweizer/Johannes Schuett/Martin Neukom&lt;/li&gt;
 &lt;li&gt;Video Editor: Axel Kolb&lt;/li&gt;
@@ -181,7 +184,8 @@
       <guid>https://ambisonics.ch/icst-ambisonics-plugins/08_downloads/</guid>
       <pubDate>Wed, 15 Jan 2025 16:21:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;hr&gt;
+        <description>&lt;p&gt;Reference links for plugin binaries and the related Ambisonics Tools package.&lt;/p&gt;
+&lt;h2 id=&#34;downloads&#34;&gt;Downloads&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/releases&#34;&gt;ICST Ambisonics Plugins&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-ambisonics-externals-for-maxmsp-5381&#34;&gt;ICST Ambisonics Tools&lt;/a&gt; (please download the Ambisonics Tools over the &amp;lsquo;Max Package Manager&amp;rsquo;)&lt;/li&gt;
@@ -195,7 +199,8 @@
       <guid>https://ambisonics.ch/icst-ambisonics-plugins/02_installation/</guid>
       <pubDate>Sun, 02 Feb 2025 04:14:54 -0800</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;h3 id=&#34;01_install-the-icst-ambisonics-plugins-osx&#34;&gt;01_Install the ICST Ambisonics Plugins (OSX)&lt;/h3&gt;
+        <description>&lt;p&gt;Reference installation steps for the ICST Ambisonics Plugins on macOS, including required REAPER dependencies and the default file locations installed by the package.&lt;/p&gt;
+&lt;h2 id=&#34;install-the-icst-ambisonics-plugins-macos&#34;&gt;Install the ICST Ambisonics Plugins (macOS)&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Download Reaper(DAW) (arm64/intel_64) from &lt;a href=&#34;http://reaper.fm/&#34;&gt;reaper.fm&lt;/a&gt;&lt;/p&gt;
@@ -223,7 +228,7 @@
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/02_installation/installer.gif&#34; alt=&#34;installer&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;what-is-installed-by-icst_ambiplugins_macos&#34;&gt;What is installed by &amp;lsquo;ICST_AmbiPlugins_macOS&amp;rsquo;:&lt;/h3&gt;
+&lt;h2 id=&#34;installed-files-and-folders&#34;&gt;Installed files and folders&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;/Library/Audio/Plugins/VST3&lt;/li&gt;
 &lt;li&gt;/Library/Audio/Plugins/Components&lt;/li&gt;
@@ -245,8 +250,11 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;INFO: &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&#34;&gt;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;VIDEO:  &lt;a href=&#34;https://www.youtube.com/watch?v=2GXb5tbqW1Y&amp;amp;t=11s&#34;&gt;ICST Ambisonics Plugins – 01 – How to Install - YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;related-references&#34;&gt;Related references&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Wiki: &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&#34;&gt;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=2GXb5tbqW1Y&amp;amp;t=11s&#34;&gt;ICST Ambisonics Plugins – 01 – How to Install - YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;02_installationwinows&#34;&gt;02_Installation(winows):&lt;/h3&gt;
 &lt;ol&gt;
@@ -278,10 +286,8 @@
       <guid>https://ambisonics.ch/icst-ambisonics-plugins/03_how_it_works/</guid>
       <pubDate>Sat, 01 Feb 2025 19:26:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;h3 id=&#34;intuitive-ambisonics-workflow-with-icst-plugins&#34;&gt;Intuitive Ambisonics Workflow with ICST Plugins&lt;/h3&gt;
-&lt;p&gt;The &lt;strong&gt;ICST Ambisonics plugins&lt;/strong&gt; are designed for a seamless and intuitive workflow.
-In this tutorial, we’ll guide you through three essential &lt;strong&gt;&amp;ldquo;how it works&amp;rdquo;&lt;/strong&gt; workflows.&lt;/p&gt;
-&lt;h3 id=&#34;setting-up-an-ambisonic-workflow-in-your-daw&#34;&gt;Setting Up an Ambisonic Workflow in Your DAW&lt;/h3&gt;
+        <description>&lt;p&gt;Reference outline of the standard Ambisonics signal flow in REAPER: source, encoder, B-format bus, and decoder.&lt;/p&gt;
+&lt;h2 id=&#34;core-workflow-model&#34;&gt;Core workflow model&lt;/h2&gt;
 &lt;p&gt;To create &lt;strong&gt;Ambisonic content&lt;/strong&gt;, your setup should include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Mono sources&lt;/strong&gt; – Individual sound sources&lt;/li&gt;
@@ -289,12 +295,12 @@ In this tutorial, we’ll guide you through three essential &lt;strong&gt;&amp;l
 &lt;li&gt;&lt;strong&gt;B-format master track&lt;/strong&gt; – Captures the encoded audio for bouncing or recording&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Decoder&lt;/strong&gt; – Converts B-format audio for speaker playback or binaural headphone monitoring&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;signal-flow-overview&#34;&gt;Signal Flow Overview&lt;/h4&gt;
-&lt;p&gt;Below is a schematic representation of a &lt;strong&gt;typical Ambisonics workflow&lt;/strong&gt;:
+&lt;h3 id=&#34;signal-flow-overview&#34;&gt;Signal flow overview&lt;/h3&gt;
+&lt;p&gt;The following image shows a typical Ambisonics workflow:
 &lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/03_how_it_works/01_easy_workflow.png&#34; alt=&#34;01_easyworkflow&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The next image provides an &lt;strong&gt;overview of the ICST Ambisonics plugin signal flow&lt;/strong&gt;:
+&lt;p&gt;The next image shows the ICST plugin signal flow:
 &lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/03_how_it_works/02_workflow.png&#34; alt=&#34;0_workflow_&#34;&gt;&lt;/p&gt;
-&lt;p&gt;In &lt;strong&gt;Reaper&lt;/strong&gt;, the signal flow appears as follows:&lt;/p&gt;
+&lt;p&gt;In &lt;strong&gt;REAPER&lt;/strong&gt;, the signal flow appears as follows:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/03_how_it_works/03_reaper_workflow.png&#34; alt=&#34;03_reaper_workflow&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Master Output&lt;/strong&gt;&lt;/li&gt;
@@ -315,8 +321,8 @@ In this tutorial, we’ll guide you through three essential &lt;strong&gt;&amp;l
       <guid>https://ambisonics.ch/icst-ambisonics-plugins/04_quick_start/</guid>
       <pubDate>Tue, 28 Jan 2025 14:31:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;h2 id=&#34;quick-start-with-icst_&#34;&gt;Quick Start with &lt;strong&gt;ICST_AmbiPlugins_MultiEncoder.RPP&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Get started quickly using the &lt;strong&gt;MultiEncoder template&lt;/strong&gt; with this simple workflow:&lt;/p&gt;
+        <description>&lt;p&gt;Reference quick-start for a working ICST Ambisonics session in REAPER using the MultiEncoder project template.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start-with-icst_ambiplugins_multiencoderrpp&#34;&gt;Quick Start with &lt;code&gt;ICST_AmbiPlugins_MultiEncoder.RPP&lt;/code&gt;&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Open &lt;strong&gt;Reaper&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Load &lt;strong&gt;ICST_AmbiPlugins_MultiEncoder.RPP&lt;/strong&gt; from the Reaper menu.&lt;/li&gt;
@@ -335,7 +341,7 @@ In this tutorial, we’ll guide you through three essential &lt;strong&gt;&amp;l
 &lt;li&gt;You see signal activity in routing/metering when playing audio.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;If all three are true, the template is initialized correctly.&lt;/p&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;h3 id=&#34;next-step&#34;&gt;Next Step&lt;/h3&gt;
+  &lt;/div&gt;&lt;h2 id=&#34;next-step&#34;&gt;Next step&lt;/h2&gt;
 &lt;p&gt;You can now either:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;start placing/moving sources in the &lt;strong&gt;MultiEncoder&lt;/strong&gt;, or&lt;/li&gt;
@@ -1079,14 +1085,15 @@ for layer-specific order, filtering, and speaker subsets.&lt;/p&gt;
       <guid>https://ambisonics.ch/icst-ambisonics-plugins/05_open_track_templates/</guid>
       <pubDate>Mon, 27 Jan 2025 14:32:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;h2 id=&#34;02-open-track-templates&#34;&gt;02 Open Track Templates&lt;/h2&gt;
+        <description>&lt;p&gt;Reference steps for inserting the ICST track templates in REAPER and checking the expected routing afterwards.&lt;/p&gt;
+&lt;h2 id=&#34;open-track-templates&#34;&gt;Open track templates&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Right-click in the empty track area in &lt;strong&gt;Reaper&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Select &lt;strong&gt;&amp;ldquo;Insert track from template.&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Choose the desired &lt;strong&gt;TrackTemplate&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/05_open_track_templates/tracktemplate.png&#34; alt=&#34;tracktemplate.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Ensure proper audio routing between channel tracks for accurate signal flow!&lt;/p&gt;
+&lt;p&gt;Verify the routing between channel tracks after insertion to ensure a valid signal flow.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/05_open_track_templates/Track_templates.gif&#34; alt=&#34;Track_template&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 </description>
@@ -1098,7 +1105,8 @@ for layer-specific order, filtering, and speaker subsets.&lt;/p&gt;
       <guid>https://ambisonics.ch/icst-ambisonics-plugins/13_osc/</guid>
       <pubDate>Wed, 01 Jan 2025 00:00:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;h2 id=&#34;osc-resources&#34;&gt;OSC Resources&lt;/h2&gt;
+        <description>&lt;p&gt;Reference entry points for OSC control with the ICST AmbiEncoder.&lt;/p&gt;
+&lt;h2 id=&#34;osc-resources&#34;&gt;OSC resources&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Article: &lt;a href=&#34;https://ambisonics.ch/post/osc-syntax-for-the-icst-ambiencoder-plugin/&#34;&gt;OSC syntax for the ICST AmbiEncoder plugin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=7_s-jaUQa14&amp;amp;t=10s&#34;&gt;YouTube — OSC Tutorial&lt;/a&gt;&lt;/li&gt;
@@ -1112,7 +1120,9 @@ for layer-specific order, filtering, and speaker subsets.&lt;/p&gt;
       <guid>https://ambisonics.ch/icst-ambisonics-plugins/07_shortcuts/</guid>
       <pubDate>Wed, 22 Jan 2025 14:36:00 &#43;0000</pubDate>
         <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
-        <description>&lt;p&gt;&lt;strong&gt;Actions available in Encoder and Decoder:&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;p&gt;Reference list of the main interaction shortcuts for the ICST Encoder and Decoder interfaces.&lt;/p&gt;
+&lt;h2 id=&#34;encoder-and-decoder-shortcuts&#34;&gt;Encoder and decoder shortcuts&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Actions available in Encoder and Decoder:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Zoom In:&lt;/strong&gt; &lt;em&gt;Right Mouse Button Click / MouseWheel&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Zoom Out&lt;/strong&gt;: &lt;em&gt;Shift + Right Mouse Button Click&lt;/em&gt; / &lt;em&gt;MouseWheel&lt;/em&gt;&lt;/li&gt;
@@ -1132,7 +1142,7 @@ for layer-specific order, filtering, and speaker subsets.&lt;/p&gt;
 &lt;li&gt;shift + control &amp;amp; &amp;rsquo;m&amp;rsquo; [Mute]&lt;/li&gt;
 &lt;li&gt;shift + control &amp;amp; &amp;rsquo;s&amp;rsquo; [Solo]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Referenz: &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction&#34;&gt;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href=&#34;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction&#34;&gt;https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/Radar-Interaction&lt;/a&gt;&lt;/p&gt;
 </description>
 
     </item>

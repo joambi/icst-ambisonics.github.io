@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="940" viewBox="0 0 1600 940" role="img" aria-labelledby="title desc">
+  <title id="title">Workflow für die zehn Fragen im 3D-Raum</title>
+  <desc id="desc">Klar gegliederter Workflow mit fünf Karten von Leitfrage über Mini-Studie bis zur Übertragung ins Stück.</desc>
+  <rect width="1600" height="940" fill="#f6f1e6"/>
+
+  <text x="88" y="96" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#1d2c3a">Von der Frage zur räumlichen Entscheidung</text>
+  <text x="88" y="138" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#3d5366">Ein möglicher Arbeitsprozess für die zehn Fragen im 3D-Raum</text>
+
+  <g transform="translate(88 230)">
+    <rect x="0" y="0" width="250" height="180" rx="22" fill="#eef2f6" stroke="#314b60" stroke-width="4"/>
+    <text x="26" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1d2c3a">1. Leitfrage</text>
+    <text x="26" y="96" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">z. B. Dichte, Layer,</text>
+    <text x="26" y="126" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Publikum oder Fokus</text>
+  </g>
+
+  <g transform="translate(370 230)">
+    <rect x="0" y="0" width="262" height="180" rx="22" fill="#f7e9dd" stroke="#314b60" stroke-width="4"/>
+    <text x="26" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1d2c3a">2. Mini-Studie</text>
+    <text x="26" y="96" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">kleine Skizze bauen,</text>
+    <text x="26" y="126" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">noch nicht perfektionieren</text>
+  </g>
+
+  <g transform="translate(652 230)">
+    <rect x="0" y="0" width="274" height="180" rx="22" fill="#dde7cf" stroke="#314b60" stroke-width="4"/>
+    <text x="26" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1d2c3a">3. Parameter setzen</text>
+    <text x="26" y="96" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Position, Distanz,</text>
+    <text x="26" y="126" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Spread, Bewegung</text>
+  </g>
+
+  <g transform="translate(994 230)">
+    <rect x="0" y="0" width="240" height="180" rx="22" fill="#eef2f6" stroke="#314b60" stroke-width="4"/>
+    <text x="26" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1d2c3a">4. Hören</text>
+    <text x="26" y="96" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">vergleichen, zweimal</text>
+    <text x="26" y="126" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">abhören, schärfen</text>
+  </g>
+
+  <g transform="translate(1268 230)">
+    <rect x="0" y="0" width="244" height="180" rx="22" fill="#e6edf2" stroke="#314b60" stroke-width="4"/>
+    <text x="26" y="54" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1d2c3a">5. Übertragen</text>
+    <text x="26" y="96" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">ins Stück und in die</text>
+    <text x="26" y="126" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Dokumentation</text>
+  </g>
+
+  <path d="M338 320 L370 320" fill="none" stroke="#314b60" stroke-width="8"/>
+  <polygon points="370,320 344,305 344,335" fill="#314b60"/>
+  <path d="M632 320 L652 320" fill="none" stroke="#314b60" stroke-width="8"/>
+  <polygon points="652,320 626,305 626,335" fill="#314b60"/>
+  <path d="M926 320 L994 320" fill="none" stroke="#314b60" stroke-width="8"/>
+  <polygon points="994,320 968,305 968,335" fill="#314b60"/>
+  <path d="M1234 320 L1268 320" fill="none" stroke="#314b60" stroke-width="8"/>
+  <polygon points="1268,320 1242,305 1242,335" fill="#314b60"/>
+
+  <path d="M1118 410 C1112 628 792 704 500 656" fill="none" stroke="#314b60" stroke-width="7"/>
+  <polygon points="500,656 528,639 531,670" fill="#314b60"/>
+
+  <rect x="404" y="548" width="804" height="224" rx="24" fill="#fffaf1" stroke="#314b60" stroke-width="4"/>
+  <text x="450" y="610" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#1d2c3a">Rückkopplung</text>
+  <text x="450" y="656" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Wenn die Mini-Studie räumlich nicht trägt, springe nicht sofort zur nächsten Frage.</text>
+  <text x="450" y="688" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Ändere zuerst Hörziel, Parametergewichtung oder Lesbarkeit und höre dann erneut.</text>
+  <text x="450" y="720" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Gerade dadurch werden die zehn Fragen zu einem Arbeitsprozess</text>
+  <text x="450" y="752" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">statt zu einer Checkliste.</text>
+</svg>

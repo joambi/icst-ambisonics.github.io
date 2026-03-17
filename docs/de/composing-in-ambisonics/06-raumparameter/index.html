@@ -1,0 +1,928 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="de"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Johannes Schuett
+        |
+        Raumparameter als kompositorisches Material
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Schuett" />
+  <meta
+    name="description"
+    content="Azimut, Elevation, Distanz und Diffusion als formbildende Parameter."
+  />
+  
+  
+      <link rel="stylesheet" href="/css/anatole.min.d243332ab0bc22f6d7845b319a2ce8a9ae8053d30135088837bc09972897eece.css" integrity="sha256-0kMzKrC8IvbXhFsxmizoqa6AU9MBNQiIN7wJlyiX7s4=" crossorigin="anonymous" />
+    
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/de/composing-in-ambisonics/06-raumparameter/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Raumparameter als kompositorisches Material">
+  <meta name="twitter:description" content="Azimut, Elevation, Distanz und Diffusion als formbildende Parameter.">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/de/composing-in-ambisonics/06-raumparameter/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="Raumparameter als kompositorisches Material">
+  <meta property="og:description" content="Azimut, Elevation, Distanz und Diffusion als formbildende Parameter.">
+  <meta property="og:locale" content="de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="composing-in-ambisonics">
+    <meta property="article:published_time" content="2026-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-01T00:00:00+00:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "composing-in-ambisonics",
+        "name": "Raumparameter als kompositorisches Material",
+        "headline": "Raumparameter als kompositorisches Material",
+        "alternativeHeadline": "",
+        "description": "
+      Azimut, Elevation, Distanz und Diffusion als formbildende Parameter.
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "de",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ambisonics.ch\/de\/composing-in-ambisonics\/06-raumparameter\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "map[email:johannes.schuett@zhdk.ch name:Johannes Schuett]"
+        },
+        "dateCreated": "2026-01-01T00:00:00.00Z",
+        "datePublished": "2026-01-01T00:00:00.00Z",
+        "dateModified": "2026-01-01T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": {"email":"johannes.schuett@zhdk.ch","name":"Johannes Schuett"},
+            "url": "https://ambisonics.ch/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/ambisonics.ch\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/ambisonics.ch\/de\/composing-in-ambisonics\/06-raumparameter\/",
+        "wordCount" : "1226",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+
+  
+  
+  
+	
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/de">ICST Ambisonics</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST / Zurich University of the Arts</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            class="sidebar__social-link"
+            href="https://www.zhdk.ch/forschung/icst"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Zurich University of the Arts"
+            title="Zurich University of the Arts"
+          >
+            
+              
+                <span class="sidebar__social-image sidebar__social-image--zhdk" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" fill="currentColor">
+  <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Z</text>
+  <line x1="40" y1="10" x2="54" y2="10" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="20" x2="54" y2="20" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="30" x2="54" y2="30" stroke="currentColor" stroke-width="2.5"/>
+  <text x="58" y="32" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" letter-spacing="0.5">hdk</text>
+</svg>
+
+                </span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            class="sidebar__social-link"
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            
+              <i class="fab fa-github sidebar__social-icon" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            class="sidebar__social-link"
+            href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+            target="_blank"
+            rel="noopener me"
+            aria-label="YouTube"
+            title="YouTube"
+          >
+            
+              <i class="fab fa-youtube sidebar__social-icon" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/terms-and-conditions/"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/start/"
+              
+              title=""
+              >Start</a
+            >
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="1" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="1"
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/post/"
+                      
+                      title=""
+                      >All Tutorials</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/ambisonics-101/"
+                      
+                      title=""
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/composing-in-ambisonics/"
+                      
+                      title=""
+                      >For Composers</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="2" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="2"
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/for-residents/"
+                      
+                      title=""
+                      >Resident Guide</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-composer-studio-blog/"
+                      
+                      title=""
+                      >Studio Hub</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/"
+                      
+                      title=""
+                      >Residencies</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="3" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="3"
+                >ASCOLTA <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/"
+                      
+                      title=""
+                      >ASCOLTA</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/sounding_future/"
+                      
+                      title=""
+                      >Listening</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="4" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="4"
+                >Docs <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-plugins/"
+                      
+                      title=""
+                      >Plugin Docs</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-tools/"
+                      
+                      title=""
+                      >Ambi Tools</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
+                      
+                      title=""
+                      >OSC Syntax</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-plugins/15_best_practices/"
+                      
+                      title=""
+                      >Best Practices</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/b-format-archive/"
+                      
+                      title=""
+                      >B-Format Archive</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/faq/"
+                      
+                      title=""
+                      >FAQ</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/links/"
+                      
+                      title=""
+                      >Links</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/blog/downloads/"
+              
+              title=""
+              >Downloads</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >DE <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/composing-in-ambisonics/06-spatial-parameters/" title="EN"
+                    ><span
+                      
+                      aria-label="EN"
+                      >EN</span
+                    >
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </li>
+      
+      <li class="nav__list-item">
+        <a href="/de/search/" title="Suche">
+          <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+
+
+
+<div class="docs animated fadeInDown">
+
+  
+  <nav class="docs__nav">
+    <div class="docs__nav-title">
+      <a href="/de/composing-in-ambisonics/">
+        <i class="fas fa-book"></i>
+        
+          For Composers
+        
+      </a>
+    </div>
+    <ul class="docs__nav-list">
+      
+        <li class="docs__nav-item">
+          <a href="/de/composing-in-ambisonics/01_overview/" title="Overview">Overview</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/composing-in-ambisonics/03-geschichte-von-foa-und-hoa/" title="Geschichte von Ambisonics: FOA und HOA">Geschichte von Ambisonics: FOA und HOA</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/composing-in-ambisonics/04-die-10-fragen/" title="Die 10 Fragen im 3D-Raum">Die 10 Fragen im 3D-Raum</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/composing-in-ambisonics/05-die-akustische-gestalt/" title="Die Akustische Gestalt eines Klanges">Die Akustische Gestalt eines Klanges</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/composing-in-ambisonics/05-spatial-counterpoint/" title="Spatial Counterpoint">Spatial Counterpoint</a>
+        </li>
+      
+        <li class="docs__nav-item docs__nav-item--active">
+          <a href="/de/composing-in-ambisonics/06-raumparameter/" title="Raumparameter als kompositorisches Material">Raumparameter als kompositorisches Material</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/composing-in-ambisonics/065-vergleich-kompositorischer-raumstrategien/" title="Vergleich kompositorischer Raumstrategien">Vergleich kompositorischer Raumstrategien</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/composing-in-ambisonics/07-studiopraxis-am-icst/" title="Studiopraxis am ICST">Studiopraxis am ICST</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/composing-in-ambisonics/08-werkzeuge-und-software/" title="Werkzeuge und Software">Werkzeuge und Software</a>
+        </li>
+      
+        <li class="docs__nav-item">
+          <a href="/de/composing-in-ambisonics/09-referenzen/" title="Referenzen">Referenzen</a>
+        </li>
+      
+    </ul>
+  </nav>
+
+  
+  <article class="docs__content post">
+    <div class="post__content">
+      <div class="docs__tabs" aria-label="Kapitel-Navigation">
+        
+          <a class="docs__tab" href="/de/composing-in-ambisonics/01_overview/" title="Overview">Overview</a>
+        
+          <a class="docs__tab" href="/de/composing-in-ambisonics/03-geschichte-von-foa-und-hoa/" title="Geschichte von Ambisonics: FOA und HOA">Geschichte von Ambisonics: FOA und HOA</a>
+        
+          <a class="docs__tab" href="/de/composing-in-ambisonics/04-die-10-fragen/" title="Die 10 Fragen im 3D-Raum">Die 10 Fragen im 3D-Raum</a>
+        
+          <a class="docs__tab" href="/de/composing-in-ambisonics/05-die-akustische-gestalt/" title="Die Akustische Gestalt eines Klanges">Die Akustische Gestalt eines Klanges</a>
+        
+          <a class="docs__tab" href="/de/composing-in-ambisonics/05-spatial-counterpoint/" title="Spatial Counterpoint">Spatial Counterpoint</a>
+        
+          <a class="docs__tab docs__tab--active" href="/de/composing-in-ambisonics/06-raumparameter/" title="Raumparameter als kompositorisches Material">Raumparameter als kompositorisches Material</a>
+        
+          <a class="docs__tab" href="/de/composing-in-ambisonics/065-vergleich-kompositorischer-raumstrategien/" title="Vergleich kompositorischer Raumstrategien">Vergleich kompositorischer Raumstrategien</a>
+        
+          <a class="docs__tab" href="/de/composing-in-ambisonics/07-studiopraxis-am-icst/" title="Studiopraxis am ICST">Studiopraxis am ICST</a>
+        
+          <a class="docs__tab" href="/de/composing-in-ambisonics/08-werkzeuge-und-software/" title="Werkzeuge und Software">Werkzeuge und Software</a>
+        
+          <a class="docs__tab" href="/de/composing-in-ambisonics/09-referenzen/" title="Referenzen">Referenzen</a>
+        
+      </div>
+
+      <h1>Raumparameter als kompositorisches Material</h1><p>Das im vorangegangenen Abschnitt entwickelte Konzept des <em>Spatial Counterpoint</em> begreift Raum als relationales und formbildendes Prinzip musikalischer Organisation. Damit dieser Anspruch über die flüchtige Disposition einer Aufführungssituation hinaus realisierbar wird, ist ein Format erforderlich, das räumliche Beziehungen speicherbar, bearbeitbar und auf unterschiedliche Wiedergabesituationen übertragbar macht. Im Kontext von Ambisonics erfüllt das <strong>B-Format</strong> diese Funktion: Es ermöglicht, räumliche Konstellationen als abstrakte Struktur zu entwerfen und unabhängig von einem konkreten Wiedergabesystem zu fixieren. 3D-Audio wird damit nicht als nachträgliches Mittel der Klangverteilung verstanden, sondern als gestalterisches Element, das von Beginn an in den kompositorischen Prozess einbezogen ist. Bewegung, Tiefe, Höhe und Verteilung von Klängen erscheinen in dieser Auffassung als Parameter, die im Schreiben und Arrangieren ebenso bewusst behandelt werden wie Tonhöhe, Rhythmus oder Klangfarbe.</p>
+<h2 id="das-b-format-als-kompositorisches-speichermedium">Das B-Format als kompositorisches Speichermedium</h2>
+<p>Das B-Format wurde im Rahmen der von Michael Gerzon entwickelten Ambisonics-Theorie formuliert und dient als zentrales Signalformat zur Codierung räumlicher Audiodaten (Thornton, 2009). Seine mathematische Grundlage liegt in der Beschreibung von Schallfeldern durch sphärische Harmonische, mit deren Hilfe ein Klangfeld um einen Bezugspunkt als gewichtete Summe räumlicher Komponenten dargestellt werden kann (Zotter &amp; Frank, n.d.). Das Format fungiert dabei als Zwischenformat zwischen Aufnahme, Bearbeitung und Wiedergabe: Räumliche Information wird zunächst unabhängig von einem konkreten Wiedergabesystem gespeichert und erst danach für ein bestimmtes Ziel-Setup dekodiert, etwa für Kopfhörer, Stereo, Lautsprecher-Arrays, Virtual-Reality-Anwendungen oder 360-Grad-Videos (Ambisonics: File Formats, 2003). Gerade diese Trennung von Codierung und Wiedergabe ist kompositorisch bedeutsam, weil sie erlaubt, räumliche Strukturen zunächst als abstrakte Relationen zu entwerfen und erst in einem zweiten Schritt an ein konkretes Wiedergabesystem anzupassen.</p>
+<p>Im engeren Sinn bezeichnet das B-Format das vierkanalige Ambisonics-Format erster Ordnung mit den Kanälen W, X, Y und Z. W repräsentiert den omnidirektionalen Druckanteil des Schallfelds; X, Y und Z codieren die Richtungsanteile entlang der drei Raumachsen. In ihrer Gewichtung und Relation zueinander bilden sie die Grundlage für die räumliche Verortung von Klangereignissen. Im erweiterten Sinn kann der Begriff auch auf Ambisonics-Formate höherer Ordnung bezogen werden, bei denen zusätzliche Koeffizienten des Schallfelds als separate Audiokanäle vorliegen und eine höhere räumliche Auflösung ermöglichen. Als räumlichen Referenzrahmen verwenden die ICST-Ambisonics-Plugins ein rechtshändiges kartesisches Koordinatensystem, in dem die X-Achse die Links-Rechts-Richtung, die Y-Achse die Vorne-Hinten-Richtung und die Z-Achse die vertikale Dimension beschreibt. Innerhalb dieses Rahmens lassen sich Positionen, Bewegungen und räumliche Relationen eindeutig beschreiben und reproduzierbar festlegen (IEEE 3D Body Processing, n.d.).</p>
+<p>Neben dem eigentlichen Signalformat existieren verschiedene Konventionen der Normierung und Kanalanordnung, insbesondere FuMa, SN3D und N3D, die die Übertragbarkeit zwischen unterschiedlichen Systemen regeln. Für aktuelle Produktionszusammenhänge und den Datenaustausch hat sich SN3D/ACN als verbreiteter Standard etabliert; auch die ICST-Ambisonics-Plugins arbeiten seit Version 2 in diesem Format (Schweizerweb, 2023; Ambisonic Data Exchange Formats, n.d.; VRTONUNG, 2024).</p>
+<h2 id="raumparameter-als-kompositorische-kategorien">Raumparameter als kompositorische Kategorien</h2>
+<p>Auf der Grundlage des B-Formats lassen sich räumliche Eigenschaften als eigenständige kompositorische Parameter begreifen. Richtungsbeziehungen, Präsenz, Bewegungsverläufe und räumliche Dichte erscheinen damit nicht als nachträgliche Qualitäten der Wiedergabe, sondern als konstitutive Elemente musikalischer Form. Die folgenden Abschnitte bestimmen die einzelnen Parameter und verweisen jeweils auf ihre psychoakustische Grundlage, da die kompositorische Wirksamkeit eines Parameters von seiner wahrnehmbaren Fundierung abhängt.</p>
+<p><strong>Azimut.</strong> Der Azimut beschreibt die horizontale Position einer Klangquelle im Raum. Kompositorisch ermöglicht er die Organisation von seitlicher Trennung, Annäherung, Kreuzung und Gegenbewegung. Klänge können dadurch nicht nur lokalisiert, sondern in ihrem Verhältnis zueinander strukturiert werden; der Azimut wird so zum Mittel räumlicher Stimmführung. Seine psychoakustische Grundlage liegt im Zusammenwirken von interauralen Zeitdifferenzen (<em>Interaural Time Difference</em>, ITD) und interauralen Pegeldifferenzen (<em>Interaural Level Difference</em>, ILD). ITD bezeichnet den Laufzeitunterschied zwischen beiden Ohren und stellt insbesondere bei tiefen Frequenzen den dominanten Lokalisationshinweis dar; ILD beschreibt den durch den Schallschatten des Kopfes entstehenden Pegelunterschied und ist vor allem bei höheren Frequenzen wirksam (Blauert, 1997). Beide Cues ergänzen sich und bilden die Grundlage der lateralen Lokalisation.</p>
+<p><strong>Elevation.</strong> Die Elevation bezeichnet die vertikale Position eines Klangereignisses und erweitert die horizontale Organisation des Raums um eine eigenständige Schicht. Kompositorisch kann Höhe dazu dienen, Klangschichten zu trennen, Hierarchien auszubilden oder spezifische räumliche Qualitäten zu erzeugen. Besonders in Ambisonics stellt die vertikale Dimension einen eigenständigen Formparameter dar. Psychoakustisch ist die Höhenwahrnehmung auf Informationen angewiesen, die interaurale Differenzen allein nicht bereitstellen können. Hier sind die individuell geprägten <em>Head-Related Transfer Functions</em> (HRTF) maßgeblich: Kopf, Torso und insbesondere die Ohrmuscheln filtern eintreffenden Schall richtungsabhängig und erzeugen charakteristische spektrale Signaturen, die für die Wahrnehmung von Elevation und für die Auflösung der Vorne-Hinten-Ambiguität entscheidend sind (Blauert, 1997; Begault, 1994). Kompositorisch relevant ist dabei, dass starke spektrale Eingriffe oder ungeeignete Wiedergabebedingungen diese Hinweise abschwächen und damit die vertikale Differenzierung beeinträchtigen können.</p>
+<p><strong>Distanz.</strong> Die Distanz bestimmt den Grad von Nähe und Ferne einer Klangquelle. Sie wirkt nicht nur als Frage des Pegels, sondern beeinflusst Präsenz, Tiefenstaffelung und perspektivische Wahrnehmung: Nahes kann als unmittelbar, detailliert und körperlich erfahren werden, Entferntes als zurückgenommen oder atmosphärisch. Distanz ist damit zugleich ein akustischer und dramaturgischer Parameter. Psychoakustisch beruht die Distanzwahrnehmung auf mehreren Faktoren: Der physikalische Intensitätsabfall nach dem Abstandsgesetz stellt zwar den naheliegendsten Hinweis dar, ist in musikalischen Zusammenhängen jedoch aufgrund expressiver Pegelvariationen oft nicht ausreichend. Wirkungsvoller ist das Verhältnis von Direktschall zu diffusem Raumanteil: Ein hoher Direktschallanteil wird als Nähe wahrgenommen, ein überwiegender Reflexions- und Nachhallanteil signalisiert Ferne (Rumsey, 2001). Ergänzend wirkt Luftabsorption, die mit wachsender Entfernung bevorzugt hohe Frequenzen dämpft, sowie die zunehmende Unschärfe lateraler Unterschiede bei großen Distanzen (Begault, 1994).</p>
+<p><strong>Diffusion.</strong> Mit Diffusion ist der Grad der räumlichen Ausdehnung oder Fokussierung eines Klanges gemeint. Ein Klang kann punktuell und präzise erscheinen, als diffuse Wolke im Raum schweben oder sich flächig entgrenzt ausbreiten. Kompositorisch betrifft Diffusion das Verhältnis von Fokus und Unschärfe, von klarer Lokalisierbarkeit und räumlicher Auflösung; sie eignet sich besonders dazu, Übergänge zwischen Objekt- und Feldcharakter zu gestalten. Psychoakustisch entspricht dieser Parameter dem Konzept der <em>Listener Envelopment</em> (LEV): Diffus eintreffender Nachhall erzeugt das Gefühl von Umhüllung und räumlicher Einbettung, während frühe Reflexionen die wahrgenommene Quellbreite (<em>Apparent Source Width</em>, ASW) beeinflussen (Morimoto &amp; Maekawa, 1988; vgl. ergänzende Literatur zur Raumakustikwahrnehmung). Auch die Nachhallzeit und die spektrale Beschaffenheit eines Halls prägen die räumliche Identität und können als eigenständige kompositorische Merkmale behandelt werden.</p>
+<p><strong>Bewegung als Form.</strong> Raumparameter wirken selten isoliert, sondern meist in Kombination. Bewegungen entstehen durch die zeitliche Veränderung von Azimut, Elevation, Distanz und Diffusion. Dadurch wird Bewegung selbst zu einem formbildenden Prozess: Annäherung, Rotation, Aufstieg, Flucht oder Umkreisung können motivische, dramaturgische und strukturelle Funktionen übernehmen. Räumliche Form entsteht damit aus der zeitlichen Organisation mehrerer miteinander verschränkter Parameter. Psychoakustisch resultiert die Wahrnehmung von Bewegung aus der koordinierten Veränderung mehrerer Cues, insbesondere von ITD, ILD, HRTF-Mustern sowie Distanz- und Hallverhältnissen (Blauert, 1997). Bei schnellen Bewegungen kann zusätzlich der Doppler-Effekt als Bewegungsreiz wirksam werden. Bei binauraler Wiedergabe trägt die eigene Kopfbewegung der Hörenden zur Stabilisierung der Lokalisation bei; fehlt dieser Bezug, etwa bei statischer binauraler Wiedergabe ohne Head-Tracking, kann die externe Verortung instabil werden (Begault, 1994).</p>
+<h2 id="synthese-raum-als-system-kompositorischer-relationen">Synthese: Raum als System kompositorischer Relationen</h2>
+<p>Die vorangegangene Analyse zeigt, dass Azimut, Elevation, Distanz, Diffusion und Bewegung nicht als additive Einzelparameter zu verstehen sind, sondern als interdependente Dimensionen eines Systems. Ihre kompositorische Wirksamkeit entfaltet sich in der koordinierten Gestaltung und gegenseitigen Verschränkung: Ein überzeugend gestaltetes 3D-Klangbild setzt voraus, dass mehrere Wahrnehmungshinweise gleichzeitig und konsistent bearbeitet werden. Raum erscheint vor diesem Hintergrund nicht als neutraler Ort der Wiedergabe, sondern als strukturiertes Relationsfeld, dessen Parameter zur Formbildung des Werkes beitragen. Das B-Format schafft die technische Voraussetzung dafür, diese Relationen unabhängig von einem konkreten Wiedergabesystem zu fixieren, zu transformieren und zu übertragen und damit jenen kompositorischen Umgang mit Raum zu ermöglichen, der im Konzept des <em>Spatial Counterpoint</em> als Ausgangspunkt diente.</p>
+
+    </div>
+
+    
+    <div class="docs__pagination">
+      
+        <a class="docs__pagination-link docs__pagination-link--prev" href="/de/composing-in-ambisonics/065-vergleich-kompositorischer-raumstrategien/">
+          <i class="fas fa-arrow-left"></i>
+          <span>Vergleich kompositorischer Raumstrategien</span>
+        </a>
+      
+      
+        <a class="docs__pagination-link docs__pagination-link--next" href="/de/composing-in-ambisonics/05-spatial-counterpoint/">
+          <span>Spatial Counterpoint</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      
+    </div>
+  </article>
+
+</div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/terms-and-conditions/"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

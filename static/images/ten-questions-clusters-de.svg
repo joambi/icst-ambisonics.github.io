@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1260" viewBox="0 0 1600 1260" role="img" aria-labelledby="title desc">
+  <title id="title">Vier Gruppen der zehn Fragen im 3D-Raum</title>
+  <desc id="desc">Vier klar gegliederte Karten zu Welt und Form, räumlicher Organisation, Hören und Kontext sowie Werk und Transfer.</desc>
+  <rect width="1600" height="1260" fill="#f6f1e6"/>
+
+  <text x="88" y="96" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#1d2c3a">Die 10 Fragen in vier Gruppen</text>
+  <text x="88" y="138" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Nicht zehn isolierte Punkte, sondern vier kompositorische Aufgabenfelder mit unterschiedlichen Funktionen</text>
+
+  <g transform="translate(88 220)">
+    <rect x="0" y="0" width="332" height="368" rx="26" fill="#dde7cf" stroke="#314b60" stroke-width="4"/>
+    <text x="28" y="56" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#1d2c3a">1. Welt und Form</text>
+    <text x="28" y="94" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#1d2c3a">Fragen 1-2</text>
+    <text x="28" y="142" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#3d5366">Ontologie und Formträger</text>
+    <text x="28" y="170" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#3d5366">klären, welche Raumwelt ein</text>
+    <text x="28" y="198" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#3d5366">Stück überhaupt aufbaut.</text>
+    <rect x="28" y="248" width="258" height="52" rx="16" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+    <text x="48" y="281" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1d2c3a">1 Ontologie   2 Raum vs. S/T</text>
+  </g>
+
+  <g transform="translate(450 220)">
+    <rect x="0" y="0" width="430" height="500" rx="26" fill="#eef2f6" stroke="#314b60" stroke-width="4"/>
+    <text x="28" y="56" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#1d2c3a">2. Räumliche Organisation</text>
+    <text x="28" y="94" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#1d2c3a">Fragen 3-6</text>
+    <text x="28" y="142" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#3d5366">Layer, Dichte, Trajektorien und</text>
+    <text x="28" y="170" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#3d5366">Fokus machen räumliche Form</text>
+    <text x="28" y="198" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#3d5366">lesbar oder unlesbar.</text>
+    <rect x="28" y="246" width="330" height="52" rx="16" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+    <text x="48" y="279" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1d2c3a">3 Layer   4 Dichte   5 Gesten   6 Fokus</text>
+    <rect x="28" y="340" width="208" height="76" rx="18" fill="#f4d7c8" stroke="#314b60" stroke-width="3"/>
+    <text x="50" y="373" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#1d2c3a">kompositorischer</text>
+    <text x="88" y="401" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#1d2c3a">Kern</text>
+  </g>
+
+  <g transform="translate(900 220)">
+    <rect x="0" y="0" width="372" height="430" rx="26" fill="#f7e9dd" stroke="#314b60" stroke-width="4"/>
+    <text x="28" y="56" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#1d2c3a">3. Hören und Kontext</text>
+    <text x="28" y="94" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#1d2c3a">Fragen 7-9</text>
+    <text x="28" y="142" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#3d5366">Setup, Publikum und reale</text>
+    <text x="28" y="170" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#3d5366">Raumvorstellungen verändern,</text>
+    <text x="28" y="198" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#3d5366">wie eine Komposition gelesen wird.</text>
+    <rect x="28" y="252" width="296" height="56" rx="16" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+    <text x="176" y="286" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1d2c3a">7 Setup   8 Publikum   9 Archetypen</text>
+  </g>
+
+  <g transform="translate(1300 220)">
+    <rect x="0" y="0" width="212" height="404" rx="26" fill="#e6edf2" stroke="#314b60" stroke-width="4"/>
+    <text x="20" y="56" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#1d2c3a">4. Werk und</text>
+    <text x="20" y="90" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#1d2c3a">Transfer</text>
+    <text x="20" y="130" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#1d2c3a">Frage 10</text>
+    <text x="20" y="174" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#3d5366">Dokumentation</text>
+    <text x="20" y="198" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#3d5366">entscheidet,</text>
+    <text x="20" y="222" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#3d5366">was vom Werk über</text>
+    <text x="20" y="246" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#3d5366">Decoder und Zeit</text>
+    <text x="20" y="270" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#3d5366">hinweg</text>
+    <text x="20" y="294" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#3d5366">hinweg bleibt.</text>
+    <rect x="20" y="332" width="150" height="38" rx="12" fill="#fffaf1" stroke="#314b60" stroke-width="3"/>
+    <text x="32" y="357" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#1d2c3a">10 Werkidentität</text>
+  </g>
+
+  <path d="M420 408 C434 408 438 408 450 408" fill="none" stroke="#314b60" stroke-width="7"/>
+  <polygon points="450,408 426,394 426,422" fill="#314b60"/>
+  <path d="M880 448 C890 448 894 448 900 448" fill="none" stroke="#314b60" stroke-width="7"/>
+  <polygon points="900,448 876,434 876,462" fill="#314b60"/>
+  <path d="M1270 420 C1282 420 1288 420 1300 420" fill="none" stroke="#314b60" stroke-width="7"/>
+  <polygon points="1300,420 1276,406 1276,434" fill="#314b60"/>
+
+  <rect x="88" y="790" width="1424" height="220" rx="24" fill="#fffaf1" stroke="#314b60" stroke-width="4"/>
+  <text x="800" y="834" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#1d2c3a">Wie man diese Gruppen liest</text>
+  <text x="800" y="874" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">Die ersten beiden Gruppen betreffen vor allem Stückidee und räumliche Organisation. Die dritte Gruppe holt das reale Hören</text>
+  <text x="800" y="904" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">wieder hinein: für wen und unter welchen Bedingungen soll das Stück funktionieren? Die vierte Gruppe fragt schließlich,</text>
+  <text x="800" y="934" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#3d5366">was als Werk über konkrete Renderings hinweg erhalten bleiben muss.</text>
+</svg>

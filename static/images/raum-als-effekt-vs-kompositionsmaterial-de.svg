@@ -1,0 +1,76 @@
+<svg width="1400" height="940" viewBox="0 0 1400 940" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f7f3ea; }
+      .title { font: 700 32px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .subtitle { font: 500 18px 'Helvetica Neue', Arial, sans-serif; fill: #445964; }
+      .header-left { fill: #d8e6f2; stroke: #2f4858; stroke-width: 3; }
+      .header-right { fill: #dce8d4; stroke: #2f4858; stroke-width: 3; }
+      .cell { fill: #fffdf8; stroke: #2f4858; stroke-width: 2.5; }
+      .rowlabel { fill: #efe7d7; stroke: #2f4858; stroke-width: 2.5; }
+      .htext { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .rtext { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .body { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="940" rx="28"/>
+  <text class="title" x="64" y="72">Raum als Effekt vs. Raum als Kompositionsmaterial</text>
+  <text class="subtitle" x="64" y="106">Zwei unterschiedliche Denkweisen, die zu anderen Hörzielen, Entscheidungen und Werkbegriffen führen</text>
+
+  <rect class="rowlabel" x="64" y="160" width="260" height="94" rx="18"/>
+  <rect class="header-left" x="324" y="160" width="486" height="86" rx="18"/>
+  <rect class="header-right" x="810" y="160" width="526" height="86" rx="18"/>
+
+  <text class="htext" x="470" y="212">Raum als Effekt</text>
+  <text class="htext" x="930" y="212">Raum als Kompositionsmaterial</text>
+
+  <rect class="rowlabel" x="64" y="254" width="260" height="138" rx="18"/>
+  <rect class="cell" x="324" y="254" width="486" height="138" rx="18"/>
+  <rect class="cell" x="810" y="254" width="526" height="138" rx="18"/>
+  <text class="rtext" x="96" y="306">Was wird gestaltet?</text>
+  <text class="body" x="356" y="292">Vor allem die Verteilung oder</text>
+  <text class="body" x="356" y="320">Veredelung eines bereits</text>
+  <text class="body" x="356" y="348">bestehenden Klangmaterials</text>
+  <text class="body" x="842" y="282">Räumliche Beziehungen selbst:</text>
+  <text class="body" x="842" y="310">Nähe, Höhe, Staffelung, Bewegung,</text>
+  <text class="body" x="842" y="338">Fokus, Diffusion, Perspektive</text>
+  <text class="body" x="842" y="366">und räumliche Relation</text>
+
+  <rect class="rowlabel" x="64" y="400" width="260" height="138" rx="18"/>
+  <rect class="cell" x="324" y="400" width="486" height="138" rx="18"/>
+  <rect class="cell" x="810" y="400" width="526" height="138" rx="18"/>
+  <text class="rtext" x="96" y="460">Worauf hört man?</text>
+  <text class="body" x="356" y="436">Ob ein Signal größer, breiter,</text>
+  <text class="body" x="356" y="464">näher oder eindrucksvoller</text>
+  <text class="body" x="356" y="492">wirkt</text>
+  <text class="body" x="842" y="426">Wie sich Klangobjekte</text>
+  <text class="body" x="842" y="454">zueinander verhalten und</text>
+  <text class="body" x="842" y="482">wie daraus Form entsteht</text>
+
+  <rect class="rowlabel" x="64" y="546" width="260" height="138" rx="18"/>
+  <rect class="cell" x="324" y="546" width="486" height="138" rx="18"/>
+  <rect class="cell" x="810" y="546" width="526" height="138" rx="18"/>
+  <text class="rtext" x="96" y="606">Wie entsteht Form?</text>
+  <text class="body" x="356" y="582">Form liegt primär in</text>
+  <text class="body" x="356" y="610">Rhythmus, Klangfarbe</text>
+  <text class="body" x="356" y="638">oder Montage</text>
+  <text class="body" x="842" y="572">Form entsteht auch durch</text>
+  <text class="body" x="842" y="600">Annäherung, Trennung,</text>
+  <text class="body" x="842" y="628">Rotation, Schichtung</text>
+  <text class="body" x="842" y="656">und Konvergenz</text>
+
+  <rect class="rowlabel" x="64" y="692" width="260" height="160" rx="18"/>
+  <rect class="cell" x="324" y="692" width="486" height="160" rx="18"/>
+  <rect class="cell" x="810" y="692" width="526" height="160" rx="18"/>
+  <text class="rtext" x="96" y="768">Was wird dokumentiert?</text>
+  <text class="body" x="356" y="742">Eher Mix, Effektanteile</text>
+  <text class="body" x="356" y="770">oder eine konkrete</text>
+  <text class="body" x="356" y="798">Abhörfassung</text>
+  <text class="body" x="842" y="736">Auch die räumliche</text>
+  <text class="body" x="842" y="764">Logik des Werks:</text>
+  <text class="body" x="842" y="792">Parameter, Trajektorien,</text>
+  <text class="body" x="842" y="820">B-Format und Varianten</text>
+
+  <text class="subtitle" x="64" y="904">Die rechte Spalte beschreibt die Perspektive, auf die der Bereich “For Composers” zielt.</text>
+</svg>

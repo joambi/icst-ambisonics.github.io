@@ -57,7 +57,7 @@ This also opens specific aesthetic possibilities: narrative movement through spa
   </section>
   <section class="home-card">
     <h4>Work</h4>
-    <p>Toolchains, decoders, encoders, REAPER workflows, and the question of how a piece survives between studio, dome, and binaural presentation.</p>
+    <p>Toolchains, decoders, encoders, REAPER workflows, B-format archiving, and the question of how a piece survives between studio, dome, and binaural presentation.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/composing-in-ambisonics/08-tools-and-software/">Software Overview</a>
       <a class="hero__link" href="/composing-in-ambisonics/07-studio-practice-at-icst/">Studio Practice</a>
@@ -76,8 +76,10 @@ This also opens specific aesthetic possibilities: narrative movement through spa
 ## Reading Paths
 
 - **For a first entry point**: `History of Ambisonics: FOA and HOA` → `10 Questions in 3D Space` → `The Acoustic Gestalt of a Sound`
-- **For piece development and composition**: `10 Questions` → `Spatial Counterpoint` → `Spatial Parameters as Compositional Material`
+- **For piece development and composition**: `10 Questions` → `Spatial Counterpoint` → `Spatial Parameters as Compositional Material` → `Comparing Compositional Spatial Strategies`
 - **For production and setup**: `Tools and Software` → `Studio Practice at ICST`
+
+These reading paths are intentionally **not identical** with the numerical chapter order. They mark different entry routes: the first path leads into the topic through perception and basic concepts, while the second moves more directly toward compositional application and piece development.
 
 <figure class="big">
   <img src="/blog/icst-composer-studio-overview/ICST_STUDIO.png" alt="ICST Composer Studio in Zurich" loading="lazy" />
@@ -90,4 +92,7 @@ This also opens specific aesthetic possibilities: narrative movement through spa
 - **10 Questions in 3D Space**: a practical question set for planning and reflecting on a piece
 - **The Acoustic Gestalt of a Sound**: why space belongs to the identity of a sound object
 - **Spatial Counterpoint**: spatial voice-leading, case studies, and ICST/REAPER workflows
+- **Spatial Parameters as Compositional Material**: B-format, perception, and the compositional role of azimuth, elevation, distance, diffusion, and movement
+- **Comparing Compositional Spatial Strategies**: how different modes of spatial organization function as formal principles
+- **Studio Practice at ICST**: session architecture, monitoring, B-format archiving, and multi-format delivery
 - **Tools and Software**: an overview of key Ambisonics toolchains

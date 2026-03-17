@@ -1,0 +1,63 @@
+<svg width="1400" height="620" viewBox="0 0 1400 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f7f3ea; }
+      .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .sub { font: 500 17px 'Helvetica Neue', Arial, sans-serif; fill: #415560; }
+      .panel { fill: #fffdf8; stroke: #2f4858; stroke-width: 3; rx: 22; }
+      .ring { stroke: #9bb4c7; stroke-width: 2.5; fill: none; }
+      .axis { stroke: #2f4858; stroke-width: 3; stroke-linecap: round; }
+      .speaker { fill: #dce8d4; stroke: #2f4858; stroke-width: 2.5; }
+      .listener { fill: #2f4858; }
+      .headarc { stroke: #c96b4b; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .arrow { stroke: #c96b4b; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .label { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .body { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+      .small { font: 600 14px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c96b4b"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="620" rx="28"/>
+  <text class="title" x="64" y="68">Hörplatz, Lautsprecherfeld und Kopfbewegung</text>
+  <text class="sub" x="64" y="98">Kleine Bewegungen können helfen, Richtung und Höhe im Raum sicherer zu unterscheiden</text>
+
+  <rect class="panel" x="64" y="144" width="760" height="404" rx="22"/>
+  <circle class="ring" cx="444" cy="346" r="170"/>
+  <circle class="ring" cx="444" cy="346" r="126"/>
+  <line class="axis" x1="244" y1="346" x2="644" y2="346"/>
+  <line class="axis" x1="444" y1="156" x2="444" y2="536"/>
+
+  <rect class="speaker" x="432" y="154" width="24" height="34" rx="6"/>
+  <rect class="speaker" x="568" y="210" width="24" height="34" rx="6" transform="rotate(45 568 210)"/>
+  <rect class="speaker" x="622" y="334" width="24" height="34" rx="6" transform="rotate(90 622 334)"/>
+  <rect class="speaker" x="566" y="458" width="24" height="34" rx="6" transform="rotate(135 566 458)"/>
+  <rect class="speaker" x="432" y="502" width="24" height="34" rx="6" transform="rotate(180 432 502)"/>
+  <rect class="speaker" x="298" y="458" width="24" height="34" rx="6" transform="rotate(-135 298 458)"/>
+  <rect class="speaker" x="244" y="334" width="24" height="34" rx="6" transform="rotate(-90 244 334)"/>
+  <rect class="speaker" x="298" y="210" width="24" height="34" rx="6" transform="rotate(-45 298 210)"/>
+
+  <circle class="listener" cx="444" cy="346" r="12"/>
+  <path class="headarc" d="M404 326 C420 302 468 300 486 324" marker-end="url(#arrow)"/>
+  <path class="headarc" d="M484 364 C468 388 420 390 402 366" marker-end="url(#arrow)"/>
+  <text class="small" x="410" y="418">kleine Kopfbewegung</text>
+
+  <circle cx="548" cy="254" r="10" fill="#c96b4b" stroke="#2f4858" stroke-width="2.5"/>
+  <text class="small" x="566" y="250">unklare Quelle</text>
+  <text class="small" x="566" y="272">vorne / oben</text>
+
+  <text class="label" x="900" y="198">Was zeigt die Skizze?</text>
+  <text class="body" x="900" y="238">Die Hörer:in sitzt im Zentrum eines</text>
+  <text class="body" x="900" y="264">räumlichen Lautsprecherfelds. Wenn</text>
+  <text class="body" x="900" y="290">eine Quelle in Richtung oder Höhe</text>
+  <text class="body" x="900" y="316">nicht eindeutig erscheint, können</text>
+  <text class="body" x="900" y="342">kleine Kopfbewegungen zusätzliche</text>
+  <text class="body" x="900" y="368">räumliche Hinweise liefern.</text>
+
+  <text class="label" x="900" y="428">Praktischer Nutzen</text>
+  <text class="body" x="900" y="468">Kopfbewegung ist hier kein Fehler,</text>
+  <text class="body" x="900" y="494">sondern eine bewusste Hörtechnik:</text>
+  <text class="body" x="900" y="520">Sie hilft, Ambiguitäten im Raum</text>
+  <text class="body" x="900" y="546">besser zu unterscheiden.</text>
+</svg>

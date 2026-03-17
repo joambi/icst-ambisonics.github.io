@@ -1,0 +1,125 @@
+<svg width="1400" height="920" viewBox="0 0 1400 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f7f3ea; }
+      .title { font: 700 32px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .subtitle { font: 500 18px 'Helvetica Neue', Arial, sans-serif; fill: #445964; }
+      .window { fill: #f4efe4; stroke: #2f4858; stroke-width: 3; }
+      .chrome { fill: #dfe7da; stroke: #2f4858; stroke-width: 3; }
+      .panel { fill: #fbf8f1; stroke: #2f4858; stroke-width: 2.5; }
+      .grid { stroke: #99b2c2; stroke-width: 2.5; fill: none; }
+      .axis { stroke: #2f4858; stroke-width: 3.5; stroke-linecap: round; }
+      .traj { stroke: #c96b4b; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .point { fill: #c96b4b; stroke: #2f4858; stroke-width: 3; }
+      .diffuse { fill: #c96b4b; fill-opacity: 0.12; stroke: #c96b4b; stroke-width: 2.5; stroke-dasharray: 8 7; }
+      .ui-title { font: 700 18px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .ui-small { font: 600 13px 'Helvetica Neue', Arial, sans-serif; fill: #415560; }
+      .ui-body { font: 500 15px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+      .label { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .body { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+      .card { fill: #fffdf8; stroke: #2f4858; stroke-width: 2.5; rx: 18; }
+      .small { font: 700 16px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .line { stroke: #2f4858; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .knob { fill: #dce8d4; stroke: #2f4858; stroke-width: 2; }
+      .track { stroke: #2f4858; stroke-width: 2; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f4858"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="920" rx="28"/>
+  <text class="title" x="64" y="72">Vier Grundparameter räumlicher Komposition</text>
+  <text class="subtitle" x="64" y="106">Am Beispiel einer stilisierten ICST-AmbiEncoder-Oberfläche: Raumparameter werden nicht nur gedacht, sondern direkt bearbeitet</text>
+
+  <rect class="window" x="86" y="156" width="700" height="610" rx="26"/>
+  <rect class="chrome" x="86" y="156" width="700" height="72" rx="26"/>
+  <circle cx="126" cy="192" r="9" fill="#c96b4b"/>
+  <circle cx="154" cy="192" r="9" fill="#d6b45e"/>
+  <circle cx="182" cy="192" r="9" fill="#7ea388"/>
+  <text class="ui-title" x="230" y="198">ICST AmbiEncoder / Radar View</text>
+
+  <rect class="panel" x="120" y="254" width="390" height="470" rx="18"/>
+  <text class="ui-title" x="148" y="290">Radar</text>
+  <text class="ui-small" x="148" y="314">Quelle A · ambiX / ACN-SN3D</text>
+
+  <circle class="grid" cx="316" cy="490" r="150"/>
+  <circle class="grid" cx="316" cy="490" r="108"/>
+  <circle class="grid" cx="316" cy="490" r="66"/>
+  <line class="axis" x1="146" y1="490" x2="486" y2="490"/>
+  <line class="axis" x1="316" y1="320" x2="316" y2="660"/>
+  <path class="traj" d="M316 490 C350 460 390 435 438 404"/>
+  <circle class="diffuse" cx="438" cy="404" r="38"/>
+  <circle class="point" cx="438" cy="404" r="9"/>
+  <text class="ui-small" x="304" y="344">front</text>
+  <text class="ui-small" x="300" y="686">back</text>
+  <text class="ui-small" x="110" y="496">left</text>
+  <text class="ui-small" x="498" y="496">right</text>
+
+  <rect class="panel" x="536" y="254" width="214" height="470" rx="18"/>
+  <text class="ui-title" x="564" y="290">Parameters</text>
+
+  <text class="ui-small" x="564" y="334">Azimuth</text>
+  <line class="track" x1="564" y1="356" x2="708" y2="356"/>
+  <circle class="knob" cx="650" cy="356" r="10"/>
+  <text class="ui-body" x="564" y="382">Richtung auf der Horizontalen</text>
+
+  <text class="ui-small" x="564" y="438">Elevation</text>
+  <line class="track" x1="564" y1="460" x2="708" y2="460"/>
+  <circle class="knob" cx="614" cy="460" r="10"/>
+  <text class="ui-body" x="564" y="486">Höhenlage des Objekts</text>
+
+  <text class="ui-small" x="564" y="542">Distance</text>
+  <line class="track" x1="564" y1="564" x2="708" y2="564"/>
+  <circle class="knob" cx="672" cy="564" r="10"/>
+  <text class="ui-body" x="564" y="590">Nähe, Ferne, Perspektive</text>
+
+  <text class="ui-small" x="564" y="646">Diffusion</text>
+  <line class="track" x1="564" y1="668" x2="708" y2="668"/>
+  <circle class="knob" cx="690" cy="668" r="10"/>
+  <text class="ui-body" x="564" y="694">Punkt oder räumliche Wolke</text>
+
+  <text class="label" x="842" y="242">Azimut</text>
+  <text class="body" x="842" y="272">wird im Radar als Winkel</text>
+  <text class="body" x="842" y="298">und in der GUI als Parameter</text>
+  <text class="body" x="842" y="324">der Horizontalrichtung lesbar</text>
+  <line class="line" x1="808" y1="286" x2="678" y2="356" marker-end="url(#arrow)"/>
+
+  <text class="label" x="842" y="406">Elevation</text>
+  <text class="body" x="842" y="436">bezieht sich auf die vertikale</text>
+  <text class="body" x="842" y="462">Anordnung im Raum und auf</text>
+  <text class="body" x="842" y="488">Schichtung und Aufstieg</text>
+  <line class="line" x1="808" y1="454" x2="642" y2="460" marker-end="url(#arrow)"/>
+
+  <text class="label" x="842" y="570">Distanz</text>
+  <text class="body" x="842" y="600">organisiert Nähe, Ferne,</text>
+  <text class="body" x="842" y="626">Vordergrund und Fernfeld</text>
+  <text class="body" x="842" y="652">als kompositorische Zonen</text>
+  <line class="line" x1="808" y1="618" x2="690" y2="564" marker-end="url(#arrow)"/>
+
+  <text class="label" x="842" y="734">Diffusion</text>
+  <text class="body" x="842" y="764">regelt, wie präzise oder</text>
+  <text class="body" x="842" y="790">wie wolkig ein Objekt im</text>
+  <text class="body" x="842" y="816">Schallfeld erscheint</text>
+  <line class="line" x1="808" y1="782" x2="708" y2="668" marker-end="url(#arrow)"/>
+
+  <rect class="card" x="1088" y="178" width="230" height="118" rx="18"/>
+  <text class="small" x="1114" y="218">Azimut</text>
+  <text class="body" x="1114" y="248">Orientierung, Dialog,</text>
+  <text class="body" x="1114" y="274">Gegenbewegung</text>
+
+  <rect class="card" x="1088" y="320" width="230" height="118" rx="18"/>
+  <text class="small" x="1114" y="360">Elevation</text>
+  <text class="body" x="1114" y="390">Schichtung, Überhöhung,</text>
+  <text class="body" x="1114" y="416">Dome-Logik</text>
+
+  <rect class="card" x="1088" y="462" width="230" height="118" rx="18"/>
+  <text class="small" x="1114" y="502">Distanz</text>
+  <text class="body" x="1114" y="532">Perspektive, Vordergrund,</text>
+  <text class="body" x="1114" y="558">dramaturgische Nähe</text>
+
+  <rect class="card" x="1088" y="604" width="230" height="118" rx="18"/>
+  <text class="small" x="1114" y="644">Diffusion</text>
+  <text class="body" x="1114" y="674">Übergang zwischen</text>
+  <text class="body" x="1114" y="700">Punkt und Wolke</text>
+</svg>

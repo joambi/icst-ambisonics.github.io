@@ -18,7 +18,7 @@
       <language>de</language>
       <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
       <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
-      <lastBuildDate>Mon, 09 Mar 2026 09:00:00 &#43;0100</lastBuildDate>
+      <lastBuildDate>Sun, 15 Mar 2026 10:30:00 &#43;0100</lastBuildDate>
       <atom:link href="https://ambisonics.ch/de/tags/ambisonics/index.xml" rel="self" type="application/rss&#43;xml" />
     <item>
       <title>Ambisonics in 30 Minuten: Dein erster funktionierender Reaper-Session-Flow</title>
@@ -113,6 +113,92 @@
 &lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/gp-manipulation/&#34;&gt;ICST MultiEncoder - Gruppenanimation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/multi-decoder-mode/&#34;&gt;ICST AmbiDecoder - Multi-Decoder Modus&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Die Geschichte von Ambisonics: FOA und HOA als grafische Timeline</title>
+      <link>https://ambisonics.ch/de/blog/geschichte-von-ambisonics-foa-und-hoa/</link>
+      <guid>https://ambisonics.ch/de/blog/geschichte-von-ambisonics-foa-und-hoa/</guid>
+      <pubDate>Sun, 15 Mar 2026 10:30:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;div class=&#34;ambisonics-history&#34;&gt;
+&lt;p class=&#34;ambisonics-history__lead&#34;&gt;
+Diese Timeline trennt die Entwicklung von &lt;strong&gt;FOA&lt;/strong&gt; und &lt;strong&gt;HOA&lt;/strong&gt;, zeigt aber auch die gemeinsamen Meilensteine. So wird sichtbar: FOA ist die historische Basis von Ambisonics, HOA entsteht spaeter als systematische Erweiterung fuer hoehere raeumliche Aufloesung.
+&lt;/p&gt;
+&lt;div class=&#34;ambisonics-history__legend&#34;&gt;
+  &lt;span class=&#34;ambisonics-history__legend-item&#34;&gt;&lt;span class=&#34;ambisonics-history__dot ambisonics-history__dot--foa&#34;&gt;&lt;/span&gt;FOA-Linie&lt;/span&gt;
+  &lt;span class=&#34;ambisonics-history__legend-item&#34;&gt;&lt;span class=&#34;ambisonics-history__dot ambisonics-history__dot--hoa&#34;&gt;&lt;/span&gt;HOA-Linie&lt;/span&gt;
+  &lt;span class=&#34;ambisonics-history__legend-item&#34;&gt;&lt;span class=&#34;ambisonics-history__dot ambisonics-history__dot--shared&#34;&gt;&lt;/span&gt;Gemeinsame Standards und Medienpraxis&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;ambisonics-history__card&#34;&gt;
+&lt;div class=&#34;mermaid&#34;&gt;flowchart TB
+    classDef foa fill:#d9f3f4,stroke:#00838f,color:#0d2a2d,stroke-width:1.6px;
+    classDef hoa fill:#ffe7d1,stroke:#ef6c00,color:#432100,stroke-width:1.6px;
+    classDef shared fill:#eceff1,stroke:#455a64,color:#1f2a30,stroke-width:1.4px;
+
+    A[&#34;1970er&lt;br/&gt;Gerzon und Fellgett entwickeln die Grundlagen von Ambisonics&#34;]:::shared
+
+    subgraph FOA[&#34;FOA: First-Order Ambisonics&#34;]
+      direction TB
+      F1[&#34;1973&lt;br/&gt;Periphony: With-Height Sound Reproduction&#34;]:::foa
+      F2[&#34;1975&lt;br/&gt;Der Begriff Ambisonics etabliert sich&#34;]:::foa
+      F3[&#34;spaete 1970er&lt;br/&gt;UHJ macht Ambisonics stereo-kompatibel&#34;]:::foa
+      F4[&#34;1980er&lt;br/&gt;FOA wird in Aufnahme, Rundfunk und UHJ-Releases praktisch genutzt&#34;]:::foa
+      F5[&#34;1990er&lt;br/&gt;FOA bleibt die dominante Praxisform und Lehrbasis&#34;]:::foa
+      F6[&#34;2010er-heute&lt;br/&gt;FOA bleibt der einfache Einstieg fuer 360-Audio und Produktion&#34;]:::foa
+    end
+
+    subgraph HOA[&#34;HOA: Higher-Order Ambisonics&#34;]
+      direction TB
+      H1[&#34;2000/2001&lt;br/&gt;Jerome Daniel formuliert die moderne HOA-Grundlage&#34;]:::hoa
+      H2[&#34;2003&lt;br/&gt;Near-Field- und Distance-Coding erweitern HOA&#34;]:::hoa
+      H3[&#34;2005&lt;br/&gt;Poletti etabliert HOA ueber sphaerische Harmonische&#34;]:::hoa
+      H4[&#34;2006-2009&lt;br/&gt;Mikrofonarrays, Symposien und Forschung machen HOA praktikabel&#34;]:::hoa
+      H5[&#34;2011&lt;br/&gt;ambiX vereinheitlicht Ordering und Normalisierung&#34;]:::hoa
+      H6[&#34;2010er-heute&lt;br/&gt;HOA wird Schluesseltechnologie fuer VR, XR und scene-based audio&#34;]:::hoa
+    end
+
+    S1[&#34;2011&lt;br/&gt;Datei- und Austauschformate werden fuer HOA-Workflows entscheidend&#34;]:::shared
+    S2[&#34;2018&lt;br/&gt;RFC 8486 standardisiert Ambisonics in Ogg Opus&#34;]:::shared
+    S3[&#34;heute&lt;br/&gt;FOA und HOA koexistieren als praktische und skalierbare Formate&#34;]:::shared
+
+    A --&gt; F1 --&gt; F2 --&gt; F3 --&gt; F4 --&gt; F5 --&gt; F6
+    A --&gt; H1 --&gt; H2 --&gt; H3 --&gt; H4 --&gt; H5 --&gt; H6
+    F5 --&gt; S1 --&gt; S2 --&gt; S3
+    H4 --&gt; S1
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;ambisonics-history__notes&#34;&gt;
+  &lt;section class=&#34;ambisonics-history__note&#34;&gt;
+    &lt;h3&gt;FOA&lt;/h3&gt;
+    &lt;p&gt;FOA ist der historische Kern von Ambisonics. Es ist kompakt, robust und bis heute dort stark, wo einfache Produktion, Distribution und Kompatibilitaet wichtiger sind als maximale Richtungsaufloesung.&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;ambisonics-history__note&#34;&gt;
+    &lt;h3&gt;HOA&lt;/h3&gt;
+    &lt;p&gt;HOA baut auf denselben Grundlagen auf, erweitert sie aber systematisch. Mit hoeherer Ordnung wachsen Richtungsauflosung, Flexibilitaet im Rendering und Relevanz fuer immersive Medien und Forschung.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;lesart-der-grafik&#34;&gt;Lesart der Grafik&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;FOA&lt;/strong&gt; bezeichnet die erste Ordnung von Ambisonics und war die Form, in der das Verfahren historisch zuerst praktisch verbreitet wurde.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HOA&lt;/strong&gt; wird ab etwa 2000 als eigenes modernes Forschungs- und Produktionsfeld sichtbar.&lt;/li&gt;
+&lt;li&gt;Die &lt;strong&gt;gemeinsame Achse&lt;/strong&gt; zeigt, dass Formate, Standards und heutige Medienpraxis FOA und HOA nicht gegeneinander ausspielen, sondern beide in denselben Oekosystemen vorkommen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;warum-diese-unterscheidung-wichtig-ist&#34;&gt;Warum diese Unterscheidung wichtig ist&lt;/h2&gt;
+&lt;p&gt;Wer die Geschichte von Ambisonics nur als eine einzige Linie darstellt, uebersieht leicht, dass zwischen den fruehen FOA-Arbeiten der 1970er Jahre und der systematischen HOA-Entwicklung rund um 2000 ein deutlicher methodischer Sprung liegt. FOA ist nicht &amp;ldquo;veraltet&amp;rdquo;, sondern oft die pragmatische Wahl. HOA ist nicht einfach &amp;ldquo;mehr Kanaele&amp;rdquo;, sondern eine andere Groessenordnung an szenischer Praezision und Render-Flexibilitaet.&lt;/p&gt;
+&lt;h2 id=&#34;quellen-und-referenzen&#34;&gt;Quellen und Referenzen&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Michael Gerzon, &lt;em&gt;Periphony: With-Height Sound Reproduction&lt;/em&gt; (JAES, 1973)&lt;/li&gt;
+&lt;li&gt;Michael Gerzon, &lt;em&gt;Practical Periphony&lt;/em&gt; (1980)&lt;/li&gt;
+&lt;li&gt;Jerome Daniel, Dissertation zu HOA-Grundlagen (2000/2001)&lt;/li&gt;
+&lt;li&gt;Mark Poletti, Arbeiten zu 3D-Surround-Systemen auf Basis sphaerischer Harmonischer (2005)&lt;/li&gt;
+&lt;li&gt;Ambisonics Symposium 2011, &lt;em&gt;ambiX - A Suggested Ambisonics Format&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rfc-editor.org/info/rfc8486&#34;&gt;RFC 8486: Ambisonics in an Ogg Opus Container&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wenn du magst, kann diese Seite als Naechstes noch um eine zweite Grafik ergaenzt werden, etwa als &lt;strong&gt;nur-FOA/HOA-Jahresachse&lt;/strong&gt;, als &lt;strong&gt;Vorlesungsfolie&lt;/strong&gt; oder als &lt;strong&gt;interaktive Version mit Klickpunkten&lt;/strong&gt;.&lt;/p&gt;
 </description>
 
     </item>

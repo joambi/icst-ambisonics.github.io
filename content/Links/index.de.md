@@ -77,6 +77,9 @@ Video: ['Into The Soundfield' - Michael Gerzon & Ambisonics at Oxford (Official 
 - [Derby.ac.uk](https://www.derby.ac.uk/)
 - [Future Sounding](https://www.soundingfuture.com/de/artikel/ambisonics-auf-der-suche-nach-dem-geeigneten-klang)
 - [tamlab.kunstuni-linz](https://tamlab.kunstuni-linz.at/wp-content/uploads/Practical-Ambisonics_compressed-1.pdf)
+- [Electronic Music Studio of the Estonian Academy of Music](https://eamt.ee/en/)
+- [EMS (Elektronmusikstudion)](https://elektronmusikstudion.se/en/)
+- [Akousma](https://archives.akousma.ca/fr/)
 
 ### Ambisonics Links:
 

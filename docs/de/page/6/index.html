@@ -1,0 +1,981 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="de"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Johannes Schuett
+        |
+        ICST Ambisonics
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.156.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Johannes Schuett" />
+  <meta
+    name="description"
+    content="Spatial Audio Plugins &amp; Anleitungen"
+  />
+  
+  
+      <link rel="stylesheet" href="/css/anatole.min.d243332ab0bc22f6d7845b319a2ce8a9ae8053d30135088837bc09972897eece.css" integrity="sha256-0kMzKrC8IvbXhFsxmizoqa6AU9MBNQiIN7wJlyiX7s4=" crossorigin="anonymous" />
+    
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://ambisonics.ch/de/" />
+  
+  <link rel="alternate" type="application/rss+xml" href="/de/index.xml" title="The ICST Ambisonics Site" />
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ICST Ambisonics">
+  <meta name="twitter:description" content="Spatial Audio Plugins &amp; Anleitungen">
+
+
+
+  
+  <meta property="og:url" content="https://ambisonics.ch/de/">
+  <meta property="og:site_name" content="The ICST Ambisonics Site">
+  <meta property="og:title" content="ICST Ambisonics">
+  <meta property="og:description" content="Spatial Audio Plugins &amp; Anleitungen">
+  <meta property="og:locale" content="de">
+  <meta property="og:type" content="website">
+
+
+
+  
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "The ICST Ambisonics Site",
+      "url": "https:\/\/ambisonics.ch\/",
+      "description": "Spatial Audio Plugins \u0026 Tutorials\nby ICST \/ Zurich University of the Arts",
+      "thumbnailUrl": "https:\/\/ambisonics.ch\/",
+      "license": ""
+      
+    }
+  </script>
+
+
+
+
+  
+  
+  
+	
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/AmbiPlugin_logo.gif"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <h1>
+            <a href="/de">ICST Ambisonics</a>
+          </h1>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Spatial Audio Plugins & Tutorials<br />by ICST / Zurich University of the Arts</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            class="sidebar__social-link"
+            href="https://www.zhdk.ch/forschung/icst"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Zurich University of the Arts"
+            title="Zurich University of the Arts"
+          >
+            
+              
+                <span class="sidebar__social-image sidebar__social-image--zhdk" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" fill="currentColor">
+  <text x="0" y="32" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="900" letter-spacing="-1">Z</text>
+  <line x1="40" y1="10" x2="54" y2="10" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="20" x2="54" y2="20" stroke="currentColor" stroke-width="2.5"/>
+  <line x1="40" y1="30" x2="54" y2="30" stroke="currentColor" stroke-width="2.5"/>
+  <text x="58" y="32" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" letter-spacing="0.5">hdk</text>
+</svg>
+
+                </span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            class="sidebar__social-link"
+            href="https://github.com/joambi"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            
+              <i class="fab fa-github sidebar__social-icon" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            class="sidebar__social-link"
+            href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+            target="_blank"
+            rel="noopener me"
+            aria-label="YouTube"
+            title="YouTube"
+          >
+            
+              <i class="fab fa-youtube sidebar__social-icon" aria-hidden="true"></i>
+            
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/terms-and-conditions/"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/start/"
+              
+              title=""
+              >Start</a
+            >
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="1" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="1"
+                >Tutorials <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/post/"
+                      
+                      title=""
+                      >All Tutorials</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/ambisonics-101/"
+                      
+                      title=""
+                      >Ambisonics 101</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/composing-in-ambisonics/"
+                      
+                      title=""
+                      >For Composers</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics&#43;plugins"
+                      
+                        target="_blank" rel="noopener noreferrer"
+                      
+                      title=""
+                      >Videos</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="2" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="2"
+                >Studio <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/for-residents/"
+                      
+                      title=""
+                      >Resident Guide</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/icst-composer-studio-blog/"
+                      
+                      title=""
+                      >Studio Hub</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/residenzen/"
+                      
+                      title=""
+                      >Residencies</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="3" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="3"
+                >ASCOLTA <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/ascolta/"
+                      
+                      title=""
+                      >ASCOLTA</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/sounding_future/"
+                      
+                      title=""
+                      >Listening</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+
+          <li class="nav__list-item">
+            <div class="optionswitch">
+              <input class="optionswitch__picker" type="checkbox" id="4" hidden />
+
+              
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+                
+
+              
+
+
+              <label class="optionswitch__label" for="4"
+                >Docs <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></label>
+
+              <div class="optionswitch__triangle"></div>
+              <ul class="optionswitch__list">
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-plugins/"
+                      
+                      title=""
+                      >Plugin Docs</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-tools/"
+                      
+                      title=""
+                      >Ambi Tools</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
+                      
+                      title=""
+                      >OSC Syntax</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/icst-ambisonics-plugins/15_best_practices/"
+                      
+                      title=""
+                      >Best Practices</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/b-format-archive/"
+                      
+                      title=""
+                      >B-Format Archive</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/blog/faq/"
+                      
+                      title=""
+                      >FAQ</a
+                    >
+                  </li>
+                
+                  <li class="optionswitch__list-item">
+                    
+                    <a
+                      href="/links/"
+                      
+                      title=""
+                      >Links</a
+                    >
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/blog/downloads/"
+              
+              title=""
+              >Downloads</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+        <li class="nav__list-item">
+          <div class="optionswitch">
+            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
+            <label class="optionswitch__label" for="languagepicker"
+              >DE <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></label>
+            <div class="optionswitch__triangle"></div>
+            <ul class="optionswitch__list">
+              
+                <li class="optionswitch__list-item">
+                  <a href="/" title="EN"
+                    ><span
+                      
+                      aria-label="EN"
+                      >EN</span
+                    >
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </li>
+      
+      <li class="nav__list-item">
+        <a href="/de/search/" title="Suche">
+          <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+        </a>
+      </li>
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post post--home 
+      animated fadeInDown
+    "
+  >
+    <div class="post__content">
+      <h2 id="neu-hier-starte-mit-ambisonics-in-reaper">Neu hier? Starte mit Ambisonics in REAPER</h2>
+<p>Eine Methode, dreidimensionalen Klang aufzunehmen und wiederzugeben — für beliebige Lautsprecheranordnungen, in jedem Raum. Die ICST-Plugins bringen das in REAPER, gratis und Open Source, mit studioerprobten Workflows aus der ZHdK Zürich.</p>
+<p>Wenn du neu einsteigst, folge dem geführten Startpfad. Wenn du schon mit den Plugins arbeitest, spring direkt in Quick Start oder die Doku.</p>
+<p><img src="/images/Home_gif.gif" alt="Plugin-Übersicht"></p>
+<div class="hero__links">
+  <a class="hero__link hero__link--primary" href="/de/start/">
+    <i class="fas fa-play"></i>&nbsp;Hier starten
+  </a>
+  <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">
+    <i class="fas fa-bolt"></i>&nbsp;Quick Start
+  </a>
+  <a class="hero__link" href="/ambisonics-101/">
+    <i class="fas fa-compass"></i>&nbsp;Was ist Ambisonics?
+  </a>
+  <a class="hero__link" href="/icst-ambisonics-plugins/">
+    <i class="fas fa-book-open"></i>&nbsp;Plugin-Doku
+  </a>
+</div>
+<p>Neu in v3.2: <a href="/de/icst-ambisonics-plugins/00_new/">Was ist neu</a> · <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases">GitHub Releases</a></p>
+<hr>
+<div class="home-section-header home-section-header--software">
+<p class="home-section-label">🎛️ Ambisonics-Anwender:innen</p>
+<p class="home-section-lead">Freie, quelloffene Spatial-Audio-Tools für REAPER — vom ersten Setup bis zu fortgeschrittener OSC-Steuerung und DAW-Integration.</p>
+<a class="hero__link hero__link--primary" href="/de/start/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-play"></i>&nbsp;Geführter Einstieg in 4 Schritten</a>
+</div>
+<div class="home-cards">
+  <section class="home-card">
+    <h4>🎧 Für Einsteiger:innen</h4>
+    <p>Schneller Einstieg in Setup, Signalfluss und den ersten räumlichen Mix in REAPER.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
+      <a class="hero__link" href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step by Step</a>
+      <a class="hero__link" href="/ambisonics-101/">Ambisonics 101</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>⚙️ Für Production Work</h4>
+    <p>Technische Tiefe für robuste Pipelines, OSC-Steuerung und reproduzierbare Session-Templates.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/03_how_it_works/">How It Works</a>
+      <a class="hero__link" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC-Syntax</a>
+      <a class="hero__link" href="/icst-ambisonics-plugins/15_best_practices/">Best Practices</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🎼 Komponieren in Ambisonics</h4>
+    <p>Räumliches Denken für Komponist:innen — analytisches Hören, Bewegung und Tiefe als kompositorische Parameter, Studiopraxis.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/composing-in-ambisonics/">Kompositions-Guide</a>
+      <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
+      <a class="hero__link" href="/blog/ascolta/">ASCOLTA Sessions</a>
+    </div>
+  </section>
+</div>
+<div class="tool-cards">
+  <div class="tool-card">
+    <h4>🎛️ Ambisonics Plugins für REAPER</h4>
+    <p>Enkodieren, dekodieren und räumlich mischen — direkt in der DAW. Die vollständige ICST-Suite: Encoder, Decoder, Monitor und mehr.</p>
+    <img src="/images/Home_gif.gif" alt="ICST Ambisonics Plugins in REAPER" loading="lazy" />
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/01_overview/">Plugin-Übersicht</a>
+      <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
+    </div>
+  </div>
+  <div class="tool-card">
+    <h4>🧊 Ambisonics Tools für Max/MSP</h4>
+    <p>Für Live-Spatialisierung, algorithmischen Klang und Workflows jenseits von REAPER — läuft nativ in Max 8.</p>
+    <img src="/images/ICST_Ambi-Tools_Max.png" alt="ICST Ambisonics Tools für Max/MSP" loading="lazy" />
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/icst-ambisonics-tools/">Docs & Beispiele</a>
+      <a class="hero__link" href="https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385">ZHdK Download</a>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="home-section-header home-section-header--studio">
+<p class="home-section-label">🏛️ Im ICST Kompositionsstudio?</p>
+<p class="home-section-lead">Für ZHdK-Residents, Komponist:innen und Studio-Gäste — Hörstunden, Residency-Dokumentation und Studio-Ressourcen.</p>
+<a class="hero__link hero__link--primary" href="/de/for-residents/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-map-signs"></i>&nbsp;Resident-Leitfaden — 4 Schritte vor & während deines Aufenthalts</a>
+</div>
+<div class="home-cards">
+  <section class="home-card">
+    <h4>🎧 ASCOLTA</h4>
+    <p>Regelmässige acousmatische Hörstunden und Konzerte an der ZHdK — räumliche Werke live aufgeführt, offen für Publikum.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/blog/ascolta/">Alle Sessions</a>
+      <a class="hero__link" href="/blog/ascolta-listening-guide/">Hörleitfaden</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🎼 Residencies</h4>
+    <p>Artist-in-Residence-Programm am ICST — Profile, Projekte und Dokumentation aus vergangenen und aktuellen Residencies.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/residenzen/">Alle Residencies</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🖥️ Kompositionsstudio</h4>
+    <p>Setup-Dokumentation, Equipment, Lautsprecherkonfigurationen und Studio-Cases aus dem ICST Kompositionsstudio.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/blog/icst-composer-studio-blog/">Studio Blog</a>
+      <a class="hero__link" href="/blog/downloads/">Downloads</a>
+    </div>
+  </section>
+</div>
+
+    </div>
+
+    
+  </div>
+
+  
+    <div
+      class="post 
+        animated fadeInDown
+      "
+    >
+      <div class="post__content">
+        <h2>Aktuelle Beiträge</h2>
+      </div>
+    </div>
+  
+
+  
+  
+    <div
+      class="post 
+        animated fadeInDown
+      "
+    >
+      
+      <div class="post__content">
+        
+          <h3><a href="/de/blog/downloads/">DOWNLOADS</a></h3>
+        
+        
+          <p>Für wen: Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+Downloads für Studio- und Ambisonics-Workflows an einem Ort.
+Lautsprecher & Setup Lautsprecher-Presets und Setup-Dateien für Decoder-Workflows.
+Decoder-Settings Max-Lautsprecherdatei Patches & Templates Einsatzbereite Patches und Templates für Max, Ableton Live und REAPER.
+ICST Kompositionsstudio v4 HOA Reaper Session v3 HOA Reaper Session v2 HOA Reaper Template Pack OSC MultiEncoder (Max) Multi-Panner (Ableton) B-Format Testdateien Referenz-ambiX-Aufnahmen (ACN/SN3D) zum Testen von Decodern und Binaural-Renderern.
+B-Format Archiv Alle Downloads Zusätzliche Decoder-Settings Kompositionsstudio Lautsprecher für Max ICST MultiEncoder Group OSC E4L Multi-Panner OSC ICST Kompositionsstudio Session v4 ICST HOA Reaper Session Starter v3 ICST HOA Reaper Session Starter v2 ICST HOA Reaper Template Pack Große Dateien ICST Software-Downloads </p>
+        
+        </div>
+
+      
+      <div class="post__footer">
+        <em class="fas fa-calendar-day"></em>
+        <span class="post__footer-date"
+          >
+            
+              Thu, Jun 12, 2025
+            
+
+          </span
+        >
+        
+
+        
+      </div>
+    </div>
+  
+  <div class="pagination">
+    
+  <ul class="pagination__list">
+    
+    
+    
+      <li class="pagination__list-item">
+        <a class="page-link" href="/de/page/5/">
+          <i class="fa fa-angle-left" aria-label="Previous"></i>
+        </a>
+      </li>
+    
+    
+      
+        <li class="pagination__list-item">
+          <a class="page-link" href="/de/">1</a>
+        </li>
+      
+
+    
+      
+        
+          
+          <span class="page-link dots">&hellip;</span>
+        
+
+      
+
+    
+      
+        
+
+      
+
+    
+      
+        
+
+      
+
+    
+      
+        <li class="pagination__list-item">
+          <a class="page-link" href="/de/page/5/">5</a>
+        </li>
+      
+
+    
+      
+        <li class="pagination__list-item">
+          <span class="page-link current">6</span>
+        </li>
+      
+
+    
+    
+  </ul>
+
+
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Privacy Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+          
+            target="_blank" rel="noopener noreferrer"
+          
+          title=""
+        >
+          Cookie Policy
+        </a>
+      </li>
+    
+      <li class="footer__item">
+        <a
+          class="link"
+          href="/terms-and-conditions/"
+          
+          title=""
+        >
+          Terms and Conditions
+        </a>
+      </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.9531b4a2217a70c5a1fce89c1f81c9ebbdd586708fcd4130b417320c7230c8d6.js"
+    integrity="sha256-lTG0oiF6cMWh/OicH4HJ673VhnCPzUEwtBcyDHIwyNY="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

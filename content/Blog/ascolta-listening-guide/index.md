@@ -1,9 +1,10 @@
 ---
 title: "Ascolta Guide: How to Listen to Spatial Music Actively and Analytically"
 description: "A practical listening framework for Ascolta sessions: orientation, Smalley's spatial categories, five analytical questions, and three exercises for active spatial listening."
-date: 2026-03-23T09:00:00+01:00
+date: 2026-03-17T09:00:00+01:00
 weight: -1
 draft: false
+url: "/blog/ascolta-listening-guide/"
 group: "Ascolta"
 tags: ["ascolta", "listening", "spatial-audio", "analysis", "guide"]
 ---
@@ -41,6 +42,8 @@ Denis Smalley's concept of *space-form* (1997, 2007) offers one of the most usef
 **Source-bonded space** describes space that clings to recognisable sound objects — the physical distance and position associated with a footstep, a voice, an instrument. When a source-bonded sound moves in the Ambisonics field, the movement is perceptible not just as a position change but as a narrative event: it approached, it circled, it receded. *Listening task: follow one source-bonded object from entry to exit.*
 
 **Spectral space** is space that emerges from spectral and textural structure rather than from localisation — the sense that high frequencies occupy the upper hemisphere while low frequencies surround the floor, for example, or that brightness and darkness are distributed directionally. This category is the least immediately obvious but often the most compositionally significant. *Listening task: on a second listening, close your eyes and try to sense the spectral geography of the piece — where does the high material live? Where does the dense material concentrate?*
+
+For a compositional perspective on the same methodology — including detailed case studies and psychoacoustic analysis — see the [Work Analyses chapter](/composing-in-ambisonics/085-work-analyses/).
 
 ---
 

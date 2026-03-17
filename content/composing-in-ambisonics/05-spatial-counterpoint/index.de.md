@@ -122,7 +122,7 @@ Wenn Automationen oder Bewegungen nicht wie erwartet reagieren, helfen meist ein
 
 Gerade bei Distanz, Gruppierung und Motion-Aufzeichnung spart ein solcher Troubleshooting-Ablauf viel Zeit.
 
-### 4.7 Toolchains und Übertragbarkeit
+### Toolchains und Übertragbarkeit
 
 Die hier beschriebenen Prinzipien lassen sich nicht nur mit den ICST-Plugins, sondern auch mit anderen Ambisonics-Toolchains umsetzen. Unterschiede liegen weniger in der Grundidee als in **Benennung, Bedienlogik und Analyse-Tiefe**:
 

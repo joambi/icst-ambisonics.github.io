@@ -4,6 +4,7 @@ categories:
   - Ambisonics
 ---
 ---
+
 Ambisonics lässt sich einem Fachpublikum als szenenbasierte, formal genau spezifizierte 3D-Audiotechnologie vorstellen, die eine lautsprecherunabhängige Darstellung des Schallfeldes ermöglicht und damit die wesentlichen Einschränkungen kanalbasierter Formate überwindet. Im Gegensatz zu herkömmlichen Mehrkanalsystemen kodiert Ambisonics nicht die Signale einzelner Lautsprecher, sondern stellt das Schallfeld selbst mithilfe von Koeffizienten einer sphärischen harmonischen Darstellung dar. Mathematisch lässt sich jedes dreidimensionale Schallfeld um einen zentralen Punkt in eine gewichtete Summe sphärischer harmonischer Basisfunktionen zerlegen, und diese Gewichte bilden die Ambisonics-Kanäle. (Ahrens et al., 2021, S. 231–235) Formal ausgedrückt lässt sich der Schalldruck $p(r, θ, φ, t)$ an der Position $(r, θ, φ)$ und zum Zeitpunkt t wie folgt darstellen
 
 $p(r, θ, φ, t) = ∑_{n=0}^{N} ∑_{m=-n}^{n} a_{n,m}(t) Y_{n,m}(θ, φ),$

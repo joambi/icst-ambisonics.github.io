@@ -26,7 +26,7 @@
   />
   
   
-      <link rel="stylesheet" href="/css/anatole.min.c67a96166a1b34f0c4d28751874d6cd50877fa3f2e94228b181b56faf7604337.css" integrity="sha256-xnqWFmobNPDE0odRh01s1Qh3&#43;j8ulCKLGBtW&#43;vdgQzc=" crossorigin="anonymous" />
+      <link rel="stylesheet" href="/css/anatole.min.d243332ab0bc22f6d7845b319a2ce8a9ae8053d30135088837bc09972897eece.css" integrity="sha256-0kMzKrC8IvbXhFsxmizoqa6AU9MBNQiIN7wJlyiX7s4=" crossorigin="anonymous" />
     
   <link
     rel="stylesheet"
@@ -186,7 +186,7 @@
 
     ,
         "url" : "https:\/\/ambisonics.ch\/blog\/faq\/",
-        "wordCount" : "762",
+        "wordCount" : "760",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -756,62 +756,135 @@
   <div
     class="post 
       animated fadeInDown
-    "
+     faq"
   >
     
     <div class="post__content">
       
         <h1>FAQ</h1>
       
-      <p>Answers to the most common questions about the ICST Ambisonics Plugins for REAPER and the ICST Ambisonics Tools for Max/MSP.</p>
+      <p class="faq-intro">Answers to the most common questions about the ICST Ambisonics Plugins for REAPER and the ICST Ambisonics Tools for Max/MSP.</p>
 <hr>
 <h2 id="installation--compatibility">Installation &amp; Compatibility</h2>
-<p><strong>Which REAPER version do the plugins require?</strong>
-REAPER 6.0 or higher is recommended. The plugins run on macOS (Intel and Apple Silicon) and Windows 10/11 (64-bit). Linux is not officially supported.</p>
-<p><strong>Do the plugins work on Apple Silicon (M1/M2/M3)?</strong>
-Yes — the plugins ship as universal binaries and run natively on Apple Silicon without Rosetta. Make sure you are using REAPER 6.78 or later for full compatibility.</p>
-<p><strong>Where do I install the plugins?</strong>
-Copy the <code>.vst3</code> (or <code>.component</code> for AU on macOS) files to your system VST3 folder, then rescan in REAPER under Options → Preferences → VST. See the <a href="/icst-ambisonics-plugins/02_installation/">Installation guide</a> for exact paths.</p>
-<p><strong>Why does REAPER not show the plugins after installation?</strong>
-Trigger a manual VST rescan: Options → Preferences → Plug-ins → VST → Re-scan. If the plugins still don&rsquo;t appear, verify the plugin files are in the correct folder and are not quarantined by macOS Gatekeeper.</p>
-<p><strong>On macOS, I get a message &ldquo;Apple cannot verify this developer&rdquo; — what do I do?</strong>
-Open System Settings → Privacy &amp; Security → scroll down and click &ldquo;Open Anyway&rdquo; next to the blocked plugin. You may need to do this once per plugin file.</p>
+<details class="faq-item">
+<summary class="faq-question">Which REAPER version do the plugins require?</summary>
+<div class="faq-answer">
+<p>REAPER 6.0 or higher is recommended. The plugins run on macOS (Intel and Apple Silicon) and Windows 10/11 (64-bit). Linux is not officially supported.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Do the plugins work on Apple Silicon (M1/M2/M3)?</summary>
+<div class="faq-answer">
+<p>Yes — the plugins ship as universal binaries and run natively on Apple Silicon without Rosetta. Make sure you are using REAPER 6.78 or later for full compatibility.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Where do I install the plugins?</summary>
+<div class="faq-answer">
+<p>Copy the <code>.vst3</code> (or <code>.component</code> for AU on macOS) files to your system VST3 folder, then rescan in REAPER under Options → Preferences → VST. See the <a href="/icst-ambisonics-plugins/02_installation/">Installation guide</a> for exact paths.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Why does REAPER not show the plugins after installation?</summary>
+<div class="faq-answer">
+<p>Trigger a manual VST rescan: Options → Preferences → Plug-ins → VST → Re-scan. If the plugins still don&rsquo;t appear, verify the plugin files are in the correct folder and are not quarantined by macOS Gatekeeper.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">On macOS, I get "Apple cannot verify this developer" — what do I do?</summary>
+<div class="faq-answer">
+<p>Open System Settings → Privacy &amp; Security → scroll down and click &ldquo;Open Anyway&rdquo; next to the blocked plugin. You may need to do this once per plugin file.</p>
+</div>
+</details>
 <hr>
 <h2 id="signal-flow--setup">Signal Flow &amp; Setup</h2>
-<p><strong>What is the difference between AmbiEncoder and MultiEncoder?</strong>
-The AmbiEncoder handles a single mono audio source and positions it in 3D space. The MultiEncoder handles multiple sources simultaneously (up to 36 in v3.2) and is the recommended choice for production sessions.</p>
-<p><strong>I have audio in REAPER but hear nothing through the decoder — what&rsquo;s wrong?</strong>
-Check three things in order: (1) the channel count on your B-Format bus must match the order you are working in (e.g. 16 channels for 3rd order HOA), (2) the decoder preset must match your speaker layout, (3) your REAPER output routing must address the correct hardware outputs. The <a href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step-by-Step Setup</a> guide walks through each step.</p>
-<p><strong>How many output channels does third-order HOA need?</strong>
-Third-order Ambisonics uses (3+1)² = 16 B-Format channels. Seventh-order uses 64 channels. The encoder and decoder must be set to the same order.</p>
-<p><strong>Can I use the ICST Decoder and REAPER&rsquo;s built-in FX chain together?</strong>
-Yes. Place any processing before the decoder on the B-Format bus. Gain, filtering, and reverb all work as expected. Avoid processing that changes channel count downstream of the encoder.</p>
+<details class="faq-item">
+<summary class="faq-question">What is the difference between AmbiEncoder and MultiEncoder?</summary>
+<div class="faq-answer">
+<p>The AmbiEncoder handles a single mono audio source and positions it in 3D space. The MultiEncoder handles multiple sources simultaneously (up to 36 in v3.2) and is the recommended choice for production sessions.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">I have audio in REAPER but hear nothing through the decoder — what's wrong?</summary>
+<div class="faq-answer">
+<p>Check three things in order: (1) the channel count on your B-Format bus must match the order you are working in (e.g. 16 channels for 3rd order HOA), (2) the decoder preset must match your speaker layout, (3) your REAPER output routing must address the correct hardware outputs. The <a href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step-by-Step Setup</a> guide walks through each step.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">How many output channels does third-order HOA need?</summary>
+<div class="faq-answer">
+<p>Third-order Ambisonics uses (3+1)² = 16 B-Format channels. Seventh-order uses 64 channels. The encoder and decoder must be set to the same order.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Can I use the ICST Decoder and REAPER's built-in FX chain together?</summary>
+<div class="faq-answer">
+<p>Yes. Place any processing before the decoder on the B-Format bus. Gain, filtering, and reverb all work as expected. Avoid processing that changes channel count downstream of the encoder.</p>
+</div>
+</details>
 <hr>
 <h2 id="osc-control">OSC Control</h2>
-<p><strong>The OSC encoder does not respond to my messages — what should I check?</strong>
-First confirm the correct UDP port is open in REAPER (Extensions → ReaScript or OSC/web). The default ICST listener port is <strong>8000</strong>. Then check that the message path matches the expected syntax — see <a href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC Syntax Reference</a>.</p>
-<p><strong>What is the minimum OSC message to move a source?</strong>
-<code>/ambi/source/[id]/aed [azimuth] [elevation] [distance]</code> — where azimuth and elevation are in degrees, distance is a normalised 0–1 value. Source IDs start at 1.</p>
-<p><strong>Can I automate OSC from Ableton Live?</strong>
-Yes — use Max for Live MIDI or OSC clips to send control messages, synchronised via LTC. The <a href="/post/ableton-reaper/">Ableton + REAPER bridging tutorial</a> documents a complete 7th-order workflow.</p>
+<details class="faq-item">
+<summary class="faq-question">The OSC encoder does not respond to my messages — what should I check?</summary>
+<div class="faq-answer">
+<p>First confirm the correct UDP port is open in REAPER (Extensions → ReaScript or OSC/web). The default ICST listener port is <strong>8000</strong>. Then check that the message path matches the expected syntax — see <a href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC Syntax Reference</a>.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">What is the minimum OSC message to move a source?</summary>
+<div class="faq-answer">
+<p><code>/ambi/source/[id]/aed [azimuth] [elevation] [distance]</code> — where azimuth and elevation are in degrees, distance is a normalised 0–1 value. Source IDs start at 1.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Can I automate OSC from Ableton Live?</summary>
+<div class="faq-answer">
+<p>Yes — use Max for Live MIDI or OSC clips to send control messages, synchronised via LTC. The <a href="/post/ableton-reaper/">Ableton + REAPER bridging tutorial</a> documents a complete 7th-order workflow.</p>
+</div>
+</details>
 <hr>
 <h2 id="binaural--monitoring">Binaural &amp; Monitoring</h2>
-<p><strong>Can I monitor in binaural without a speaker array?</strong>
-Yes. The AmbiDecoder includes a binaural decoding mode using HRTFs. Enable it in the decoder&rsquo;s output section and route to a stereo output. For higher-quality HRTF rendering, the <a href="/post/getting-started-icst-plugins-reaper/">DearVR integration tutorial</a> covers using a third-party binaural renderer on the decoder output.</p>
-<p><strong>The binaural output sounds mono or collapsed — why?</strong>
-Usually caused by a channel count mismatch: the decoder is receiving fewer HOA channels than it expects. Check that the B-Format bus send is set to full multichannel (not summed to stereo).</p>
+<details class="faq-item">
+<summary class="faq-question">Can I monitor in binaural without a speaker array?</summary>
+<div class="faq-answer">
+<p>Yes. The AmbiDecoder includes a binaural decoding mode using HRTFs. Enable it in the decoder&rsquo;s output section and route to a stereo output. For higher-quality HRTF rendering, the <a href="/post/getting-started-icst-plugins-reaper/">DearVR integration tutorial</a> covers using a third-party binaural renderer on the decoder output.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">The binaural output sounds mono or collapsed — why?</summary>
+<div class="faq-answer">
+<p>Usually caused by a channel count mismatch: the decoder is receiving fewer HOA channels than it expects. Check that the B-Format bus send is set to full multichannel (not summed to stereo).</p>
+</div>
+</details>
 <hr>
 <h2 id="icst-ambisonics-tools-maxmsp">ICST Ambisonics Tools (Max/MSP)</h2>
-<p><strong>Which version of Max is required?</strong>
-Max 8.0 or later. The package is available through the Max Package Manager.</p>
-<p><strong>What is the difference between the Plugins and the Tools?</strong>
-The Plugins run inside REAPER as VST/AU effects and are designed for session-based, multitrack work. The Tools are Max/MSP externals for live spatialisation, algorithmic composition, and custom patching outside a DAW.</p>
+<details class="faq-item">
+<summary class="faq-question">Which version of Max is required?</summary>
+<div class="faq-answer">
+<p>Max 8.0 or later. The package is available through the Max Package Manager.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">What is the difference between the Plugins and the Tools?</summary>
+<div class="faq-answer">
+<p>The Plugins run inside REAPER as VST/AU effects and are designed for session-based, multitrack work. The Tools are Max/MSP externals for live spatialisation, algorithmic composition, and custom patching outside a DAW.</p>
+</div>
+</details>
 <hr>
 <h2 id="updates--versions">Updates &amp; Versions</h2>
-<p><strong>How do I update from v3.1 to v3.2?</strong>
-Replace the old plugin files with the new ones from the <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases">GitHub Releases page</a> and rescan in REAPER. Existing sessions will open correctly — no settings migration is required. Check <a href="/icst-ambisonics-plugins/00_new/">What&rsquo;s New in v3.2</a> for new features.</p>
-<p><strong>Where can I report bugs or request features?</strong>
-Open an issue on the <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/issues">GitHub repository</a>. Include your OS version, REAPER version, plugin version, and a minimal reproducible project if possible.</p>
+<details class="faq-item">
+<summary class="faq-question">How do I update from v3.1 to v3.2?</summary>
+<div class="faq-answer">
+<p>Replace the old plugin files with the new ones from the <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases">GitHub Releases page</a> and rescan in REAPER. Existing sessions will open correctly — no settings migration is required. Check <a href="/icst-ambisonics-plugins/00_new/">What&rsquo;s New in v3.2</a> for new features.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Where can I report bugs or request features?</summary>
+<div class="faq-answer">
+<p>Open an issue on the <a href="https://github.com/schweizerweb/icst-ambisonics-plugins/issues">GitHub repository</a>. Include your OS version, REAPER version, plugin version, and a minimal reproducible project if possible.</p>
+</div>
+</details>
+
 </div>
     <div class="post__footer">
       

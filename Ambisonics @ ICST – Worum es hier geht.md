@@ -9,3 +9,5 @@ Aus dieser Praxis heraus entstehen Tutorials, Notizen und Beispiel‑Setups, die
 Von Feldaufnahmen bis hin zu komplexen mehrkanaligen Installationen, synthetisch erzeugten oder aus dem B‑Format erstellten Sessions, wird an verschiedenen Dekodierungsmöglichkeiten für Lautsprecherarrays, Kopfhörer, aber auch hybriden Systemen geforscht und experimentiert.
 
 Gleichzeitig versteht sich dieser Ort als Brücke zwischen Forschung, Lehre und künstlerischer Arbeit. Residenzen, Kompositionen und Experimente liefern konkrete Beispiele dafür, wie Ambisonics als kompositorische Denkweise funktionieren kann: Raum wird zum mitgestalteten Parameter, nicht nur zur Lautsprecherkonfiguration. Die hier gesammelten Materialien sollen diese Praxis transparent machen, zum Nachbauen einladen und dazu ermutigen, eigene Ambisonics‑Setups zu entwickeln – unabhängig davon, ob man in einem großen Studio oder mit einem kleinen Setup arbeitet.
+
+

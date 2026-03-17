@@ -1,0 +1,74 @@
+<svg width="1400" height="680" viewBox="0 0 1400 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f6f1e8; }
+      .panel { fill: #fffdf8; stroke: #2f4858; stroke-width: 3; rx: 22; }
+      .accent { fill: #dce8d4; stroke: #2f4858; stroke-width: 3; rx: 18; }
+      .line { stroke: #2f4858; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #1e2b32; }
+      .subtitle { font: 500 17px 'Helvetica Neue', Arial, sans-serif; fill: #39505b; }
+      .box-title { font: 700 18px 'Helvetica Neue', Arial, sans-serif; fill: #1e2b32; }
+      .box-text { font: 500 14px 'Helvetica Neue', Arial, sans-serif; fill: #39505b; }
+      .small { font: 600 15px 'Helvetica Neue', Arial, sans-serif; fill: #1e2b32; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f4858"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="680" rx="28"/>
+
+  <text class="title" x="64" y="74">Vom Stückentwurf zum Ambisonics-Master</text>
+  <text class="subtitle" x="64" y="108">Ein möglicher kompositorischer Workflow für den Bereich “For Composers”</text>
+
+  <rect class="panel" x="44" y="160" width="200" height="144" rx="22"/>
+  <text class="box-title" x="92" y="204">1. Höridee</text>
+  <text class="box-text" x="92" y="236">Welche räumliche</text>
+  <text class="box-text" x="92" y="262">Situation oder Geste</text>
+  <text class="box-text" x="92" y="288">interessiert mich?</text>
+
+  <rect class="panel" x="264" y="160" width="210" height="144" rx="22"/>
+  <text class="box-title" x="302" y="204">2. Raumkonzept</text>
+  <text class="box-text" x="302" y="236">Nähe, Höhe,</text>
+  <text class="box-text" x="302" y="262">Distanz, Diffusion,</text>
+  <text class="box-text" x="302" y="288">Bewegung, Schichtung</text>
+
+  <rect class="panel" x="484" y="160" width="240" height="144" rx="22"/>
+  <text class="box-title" x="522" y="198">3. Quellen</text>
+  <text class="box-title" x="522" y="224">/ Gruppen</text>
+  <text class="box-text" x="522" y="252">Einzelobjekte,</text>
+  <text class="box-text" x="522" y="278">Felder, Kontrapunkte</text>
+  <text class="box-text" x="522" y="304">und Rollen im Stück</text>
+
+  <rect class="accent" x="754" y="152" width="228" height="160" rx="22"/>
+  <text class="box-title" x="792" y="198">4. Encoder /</text>
+  <text class="box-title" x="792" y="226">B-Format</text>
+  <text class="box-text" x="792" y="258">Räumliche Relationen</text>
+  <text class="box-text" x="792" y="284">werden speicherbar</text>
+
+  <rect class="panel" x="1012" y="160" width="190" height="144" rx="22"/>
+  <text class="box-title" x="1050" y="204">5. Monitoring</text>
+  <text class="box-text" x="1050" y="236">Binaural, Array,</text>
+  <text class="box-text" x="1050" y="262">Vergleich von</text>
+  <text class="box-text" x="1050" y="288">Perspektiven</text>
+
+  <rect class="panel" x="1202" y="160" width="134" height="144" rx="22"/>
+  <text class="box-title" x="1228" y="212">6. Export</text>
+  <text class="box-text" x="1228" y="244">Versionen</text>
+  <text class="box-text" x="1228" y="270">Archiv</text>
+
+  <path class="line" d="M244 232 H264" marker-end="url(#arrow)"/>
+  <path class="line" d="M474 232 H484" marker-end="url(#arrow)"/>
+  <path class="line" d="M724 232 H754" marker-end="url(#arrow)"/>
+  <path class="line" d="M982 232 H1012" marker-end="url(#arrow)"/>
+  <path class="line" d="M1202 232 H1202" marker-end="url(#arrow)"/>
+
+  <rect class="panel" x="420" y="420" width="560" height="124" rx="22"/>
+  <text class="small" x="452" y="460">Rückkopplungsschleife</text>
+  <text class="box-text" x="452" y="492">Hören, anpassen, neu gewichten:</text>
+  <text class="box-text" x="452" y="518">Der Workflow ist iterativ</text>
+  <text class="box-text" x="452" y="542">und selten linear.</text>
+
+  <path class="line" d="M1106 304 C1106 380 1020 388 980 420" marker-end="url(#arrow)"/>
+  <path class="line" d="M420 480 C330 480 280 414 280 304" marker-end="url(#arrow)"/>
+</svg>

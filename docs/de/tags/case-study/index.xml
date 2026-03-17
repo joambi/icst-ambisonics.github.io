@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Case-Study on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/de/tags/case-study/</link>
+
+    <description>
+      Recent content
+      
+         in Case-Study 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>de</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Mon, 16 Mar 2026 09:00:00 &#43;0100</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/de/tags/case-study/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST Studio-Case: Warum unser 31-Speaker-Setup so geroutet ist</title>
+      <link>https://ambisonics.ch/de/blog/icst-studio-case-31-speaker-routing/</link>
+      <guid>https://ambisonics.ch/de/blog/icst-studio-case-31-speaker-routing/</guid>
+      <pubDate>Mon, 16 Mar 2026 09:00:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Level:&lt;/strong&gt; Intermediate — &lt;strong&gt;Für:&lt;/strong&gt; Komponist:innen, Techniker:innen und Forschende, die im ICST Kompositionsstudio arbeiten oder es besuchen.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;kontext&#34;&gt;Kontext&lt;/h2&gt;
+&lt;p&gt;Jeder Mehrkanal-Ambisonics-Raum sammelt über die Zeit kleine Routing-Entscheidungen an — ein Bus hier hinzugefügt, ein Monitoring-Pfad dort umgeleitet. Im ICST Kompositionsstudio wurden diese Entscheidungen bewusst getroffen und dokumentiert, damit jede neue Residenz von einer stabilen, verstandenen Ausgangslage startet — nicht von einer rätselhaften Vorlage.&lt;/p&gt;
+&lt;p&gt;Dieser Artikel erklärt die vier Kernentscheidungen hinter dem 31-Lautsprecher-REAPER-Session-Template des Studios, die Probleme, die jede Entscheidung löst, und die Fehlerquellen, die sie verhindert.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;entscheidung-1--ein-dedizierter-bformat-master-track-als-zentrale-instanz&#34;&gt;Entscheidung 1 — Ein dedizierter &lt;code&gt;Bformat-Master&lt;/code&gt;-Track als zentrale Instanz&lt;/h2&gt;
+&lt;p&gt;Alles Quellmaterial — unabhängig davon, wie viele Encoder oder Quell-Tracks aktiv sind — wird vor der Dekodierung in einen einzigen dedizierten B-Format-Master-Bus geleitet. Kein Quell-Track sendet Audio direkt an einen Decoder oder an die Lautsprecher-Ausgänge.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warum:&lt;/strong&gt; Wenn mehrere Komponist:innen über mehrere Tage in derselben Session arbeiten, kann ein Quell-Track leicht versehentlich an einen Monitoring-Bus oder einen Decoder-Eingang geroutet werden, der für ein anderes Signal gedacht war. Ein einziger, benannter B-Format-Master macht den Signalpfad auf einen Blick sichtbar und prüfbar. Er bedeutet auch, dass eine „trockene B-Format-Aufnahme&amp;quot; des gesamten Mixes — nützlich für die Archivierung oder Offline-Binaural-Rendering — genau einen Send von genau einem Track erfordert.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;entscheidung-2--decoder-ebene-vollständig-von-der-quellen-ebene-getrennt&#34;&gt;Entscheidung 2 — Decoder-Ebene vollständig von der Quellen-Ebene getrennt&lt;/h2&gt;
+&lt;p&gt;Der Decoder (AmbiDecoder) empfängt nur vom &lt;code&gt;Bformat-Master&lt;/code&gt;. Er sitzt nicht in einer Kette mit Quell-Tracks, und sein Ausgang geht direkt in den Lautsprecher-Ausgangsbus — nirgendwo sonst.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warum:&lt;/strong&gt; Das Vermischen der Dekodierungsstufe mit der Quellverarbeitung ist die häufigste Ursache schwer zu diagnostizierender Pegel- und Phasenanomalien in Ambisonics-Sessions. Wenn der Pegel eines Quell-Tracks falsch ist, ist das sofort und lokal hörbar. Wenn der Decoder falsch konfiguriert ist — falsche Ordnung, falsche Normalisierungskonvention, falsches Lautsprecher-Preset — betrifft es alle Quellen gleichzeitig, und die Artefakte können wie ein Raumproblem erscheinen, nicht wie ein Routing-Problem. Den Decoder isoliert zu halten bedeutet, dass jede Fehlkonfiguration eindeutig an einem Ort liegt.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;entscheidung-3--lautsprecher-ausgang-und-binaural-monitoring-als-parallele-pfade&#34;&gt;Entscheidung 3 — Lautsprecher-Ausgang und Binaural-Monitoring als parallele Pfade&lt;/h2&gt;
+&lt;p&gt;Das Session-Template enthält zwei Monitoring-Pfade, die per Konvention sich gegenseitig ausschliessen: den 31-Lautsprecher-Hardware-Ausgang und ein Stereo-Binaural-Render. Beide dekodieren vom selben &lt;code&gt;Bformat-Master&lt;/code&gt;. Das Umschalten zwischen ihnen ist eine Frage des Stummschaltens eines Ausgangsbusses und des Aktivierens des anderen — keine Routing-Änderungen, kein Umpatchen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warum:&lt;/strong&gt; Komponist:innen im Studio möchten ihren Mix häufig auf Kopfhörern prüfen, bevor sie eine Speaker-Session buchen, oder einen Binaural-Rohexport an Mitarbeitende schicken. Wenn Binaural-Monitoring eine Neuverkabelung der Session erfordert, wird es zur Unterbrechung und oft übersprungen. Mit parallelen Pfaden im Template ist es ein Ein-Klick-Toggle, der die räumliche Signalkette nicht berührt.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;entscheidung-4--einheitliche-benennung-und-kanal-konventionen&#34;&gt;Entscheidung 4 — Einheitliche Benennung und Kanal-Konventionen&lt;/h2&gt;
+&lt;p&gt;Alle Tracks im Template folgen einer Benennungskonvention: &lt;code&gt;[Nummer]_[Funktion]_[Format]&lt;/code&gt;, z.B. &lt;code&gt;01_source_mono&lt;/code&gt;, &lt;code&gt;10_bformat-master_HOA3&lt;/code&gt;, &lt;code&gt;20_decoder_out&lt;/code&gt;. Kanalzahlen sind pro Track-Typ festgelegt und im Template dokumentiert.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Warum:&lt;/strong&gt; In einer 31-Kanal-Umgebung kann ein einzelner falsch zugewiesener Kanal einen Ausfall produzieren, der von einem Hardware-Defekt des Lautsprechers nicht zu unterscheiden ist. Einheitliche Benennung bedeutet, dass ein:e Gastkünstler:in oder Techniker:in den Signalpfad in unter einer Minute prüfen kann, ohne jedes Plugin öffnen zu müssen. Es macht REAPERs Track-Liste auch als Dokumentation lesbar — eine neue Residenz kann die Session-Architektur verstehen, bevor Play gedrückt wird.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;häufige-fehlerstellen-die-dieses-setup-verhindert&#34;&gt;Häufige Fehlerstellen, die dieses Setup verhindert&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gemischte HOA-Ordnungen auf dem B-Format-Master:&lt;/strong&gt; Eine dritter-Ordnung-Quelle zu einer Session erster Ordnung hinzuzufügen degradiert stumm auf erste Ordnung, wenn beide denselben Master speisen. Das Template dokumentiert die Zielordnung prominent im Master-Track-Namen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring vom falschen Bus gespeist:&lt;/strong&gt; Ein direkter Send von einem Quell-Track zum Lautsprecher-Ausgang umgeht den Decoder und produziert ein Mono- oder Stereo-Signal durch ein 31-Lautsprecher-Array — sofort hörbar, aber verwirrend zu diagnostizieren. Die getrennten Ebenen machen dies im Template strukturell unmöglich.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decoder-Preset passt nach einem System-Update nicht mehr:&lt;/strong&gt; Lautsprecher-Koordinatendateien werden im Template mit absolutem Pfad referenziert und im Dateinamen versioniert. Das Laden des falschen Presets ist die häufigste Ursache für falsch lokalisierte Quellen nach einem Software-Update.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;weiterführende-links&#34;&gt;Weiterführende Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/stereo-to-hoa7-session/&#34;&gt;Von Stereo zu HOA7: Eine Schritt-für-Schritt-Session&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/post/multi-decoder-mode/&#34;&gt;ICST AmbiDecoder — Multi-Decoder Modus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/for-residents/&#34;&gt;ICST Kompositionsstudio — Guide für Residenzen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/de/blog/icst-composer-studio-overview/&#34;&gt;ICST Kompositionsstudio Übersicht&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,142 @@
+@use 'modules/color_theme' as colorTheme;
+@use 'modules/variables' as var;
+
+// ─── FAQ Page Styles ───────────────────────────────────────────────────────────
+
+.faq-intro {
+  font-size: 1.7rem;
+  margin-bottom: 2.4rem;
+
+  @include colorTheme.themed() {
+    color: colorTheme.t('primary-light');
+  }
+}
+
+// Section headings — bold left-border accent (scoped to FAQ page only)
+.post.faq .post__content h2 {
+  position: relative;
+  padding-left: 1rem;
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+  border-left: 4px solid var.$info;
+}
+
+// ─── FAQ item (details element) ────────────────────────────────────────────────
+
+.faq-item {
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+
+  @include colorTheme.themed() {
+    border: 1px solid colorTheme.t('primary-lighter');
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    background-color: colorTheme.t('accent');
+  }
+
+  &:hover {
+    @include colorTheme.themed() {
+      box-shadow: colorTheme.t('shadow');
+    }
+  }
+
+  // Chevron rotates when open
+  &[open] > .faq-question::after {
+    transform: rotate(90deg);
+  }
+}
+
+// ─── Question (summary) ────────────────────────────────────────────────────────
+
+.faq-question {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem;
+  cursor: pointer;
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1.45;
+  list-style: none;
+  user-select: none;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+
+  @include colorTheme.themed() {
+    color: colorTheme.t('primary');
+    background-color: colorTheme.t('accent');
+  }
+
+  // Hide the default WebKit triangle
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  // Chevron icon
+  &::after {
+    content: '›';
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: -0.1rem;
+    transition: transform 0.2s ease;
+
+    @include colorTheme.themed() {
+      color: colorTheme.t('primary-light');
+    }
+  }
+
+  &:hover {
+    @include colorTheme.themed() {
+      background-color: colorTheme.t('primary-lighter');
+    }
+  }
+}
+
+// ─── Answer ────────────────────────────────────────────────────────────────────
+
+.faq-answer {
+  padding: 0.2rem 1.4rem 1.2rem 1.4rem;
+  font-size: 1.5rem;
+  line-height: 1.75;
+
+  @include colorTheme.themed() {
+    color: colorTheme.t('primary');
+    border-top: 1px solid colorTheme.t('primary-lighter');
+  }
+
+  p {
+    margin: 0.75rem 0 0;
+  }
+
+  code {
+    font-size: 1.3rem;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+
+    @include colorTheme.themed() {
+      background-color: colorTheme.t('primary-lighter');
+    }
+  }
+
+  a {
+    @include colorTheme.themed() {
+      color: colorTheme.t('info');
+    }
+  }
+
+  ol,
+  ul {
+    margin: 0.75rem 0 0 1.25rem;
+    line-height: 1.8;
+  }
+}
+
+// ─── Hide raw <hr> between sections (headings serve as visual dividers) ────────
+
+.post.faq .post__content hr {
+  display: none;
+}

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+
+    <title>Composing in Ambisonics on The ICST Ambisonics Site</title>
+
+    <link>https://ambisonics.ch/composing-in-ambisonics/</link>
+
+    <description>
+      Recent content
+      
+         in Composing in Ambisonics 
+      
+      on The ICST Ambisonics Site
+    </description>
+
+    <generator>Hugo -- gohugo.io</generator>
+      <language>en</language>
+      <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
+      <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
+      <lastBuildDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</lastBuildDate>
+      <atom:link href="https://ambisonics.ch/composing-in-ambisonics/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Overview</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/01_overview/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/01_overview/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;div class=&#34;home-section-header home-section-header--studio&#34; style=&#34;margin-bottom:1.4rem;&#34;&gt;
+&lt;p class=&#34;home-section-label&#34;&gt;For Composers&lt;/p&gt;
+&lt;p class=&#34;home-section-lead&#34;&gt;A guide to spatial thinking, listening, and working in Ambisonics — from FOA/HOA context and acoustic gestalt to spatial counterpoint, tools, and studio practice.&lt;/p&gt;
+&lt;/div&gt;
+&lt;figure class=&#34;big&#34;&gt;
+  &lt;img src=&#34;https://ambisonics.ch/images/composing_in_ambisonics%201.png&#34; alt=&#34;Diagram of spatial parameters, distance zones, and movement relationships for composing in Ambisonics&#34; loading=&#34;lazy&#34; /&gt;
+  &lt;figcaption&gt;&lt;strong&gt;Composing in Ambisonics.&lt;/strong&gt; The diagram brings together the spatial field, movement relationships, and the key parameters of azimuth, elevation, distance, and diffusion.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Composing in Ambisonics means treating space not merely as a distribution system, but as a &lt;strong&gt;form-building parameter&lt;/strong&gt;. Sources can approach, separate, rise, cluster, or act as independent voices within a shared sound field.&lt;/p&gt;
+&lt;p&gt;This area is not meant as a linear textbook, but as a &lt;strong&gt;compositional workspace in text form&lt;/strong&gt;. It connects historical context, compositional questions, and technical toolchains.&lt;/p&gt;
+&lt;h2 id=&#34;why-compose-in-3d-ambisonics&#34;&gt;Why compose in 3D Ambisonics?&lt;/h2&gt;
+&lt;p&gt;3D Ambisonics offers more freedom than channel-based formats, both &lt;strong&gt;artistically&lt;/strong&gt; and &lt;strong&gt;technically&lt;/strong&gt;. Instead of composing for fixed loudspeaker channels, you work with a &lt;strong&gt;continuous sound field&lt;/strong&gt; in which direction, distance, height, and movement become part of the musical material itself.&lt;/p&gt;
+&lt;p&gt;At the same time, Ambisonics makes works more &lt;strong&gt;transferable and future-proof&lt;/strong&gt;. A single Ambisonics master can be rendered for different loudspeaker systems, dome setups, binaural headphone playback, or immersive contexts such as VR and 360° media, without rebuilding the piece from scratch for each format. For study, teaching, and artistic practice, this is especially valuable because the same work can be tested and developed across multiple listening situations.&lt;/p&gt;
+&lt;p&gt;Three arguments are especially important:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Spatial imagination as compositional material&lt;/strong&gt;: you compose not only with timbre, time, and dynamics, but directly with nearness, distance, height, motion, and changing perspective&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Format independence&lt;/strong&gt;: FOA and HOA detach the work from a single loudspeaker layout and allow flexible decoding for different setups&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stronger transferability&lt;/strong&gt;: an Ambisonics master can move between concerts, studios, headphones, and installations without forcing you to rethink the whole spatial dramaturgy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This also opens specific aesthetic possibilities: narrative movement through space, transitions between interior and exterior, shifts between micro- and macro-perspectives, abstract sculptural motion, and a degree of physical presence that differs markedly from conventional surround. Ambisonics is therefore not only a technical format, but a &lt;strong&gt;compositional way of thinking&lt;/strong&gt; that already includes both present and future listening contexts.&lt;/p&gt;
+&lt;div class=&#34;hero__links&#34;&gt;
+  &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/composing-in-ambisonics/04-10-questions/&#34;&gt;
+    &lt;i class=&#34;fas fa-compass&#34;&gt;&lt;/i&gt;&amp;nbsp;Start with the 10 Questions
+  &lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/composing-in-ambisonics/05-spatial-counterpoint/&#34;&gt;
+    &lt;i class=&#34;fas fa-wave-square&#34;&gt;&lt;/i&gt;&amp;nbsp;Spatial Counterpoint
+  &lt;/a&gt;
+  &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/composing-in-ambisonics/08-tools-and-software/&#34;&gt;
+    &lt;i class=&#34;fas fa-sliders-h&#34;&gt;&lt;/i&gt;&amp;nbsp;Tools and Software
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&#34;home-cards&#34;&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Think&lt;/h4&gt;
+    &lt;p&gt;FOA, HOA, spatial counterpoint, work identity, and spatial parameters as compositional categories rather than just technical issues.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/composing-in-ambisonics/03-history-of-foa-and-hoa/&#34;&gt;History and Context&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/composing-in-ambisonics/05-spatial-counterpoint/&#34;&gt;Spatial Counterpoint&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Work&lt;/h4&gt;
+    &lt;p&gt;Toolchains, decoders, encoders, REAPER workflows, B-format archiving, and the question of how a piece survives between studio, dome, and binaural presentation.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/composing-in-ambisonics/08-tools-and-software/&#34;&gt;Software Overview&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/composing-in-ambisonics/07-studio-practice-at-icst/&#34;&gt;Studio Practice&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&#34;home-card&#34;&gt;
+    &lt;h4&gt;Listen&lt;/h4&gt;
+    &lt;p&gt;The ASCOLTA posts and Listening Guide remain a companion path for sharpening spatial perception while listening and composing.&lt;/p&gt;
+    &lt;div class=&#34;home-card__actions&#34;&gt;
+      &lt;a class=&#34;hero__link hero__link--primary&#34; href=&#34;https://ambisonics.ch/blog/ascolta-listening-guide/&#34;&gt;Listening Guide&lt;/a&gt;
+      &lt;a class=&#34;hero__link&#34; href=&#34;https://ambisonics.ch/blog/ascolta/&#34;&gt;ASCOLTA&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;reading-paths&#34;&gt;Reading Paths&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;For a first entry point&lt;/strong&gt;: &lt;code&gt;History of Ambisonics: FOA and HOA&lt;/code&gt; → &lt;code&gt;10 Questions in 3D Space&lt;/code&gt; → &lt;code&gt;The Acoustic Gestalt of a Sound&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For piece development and composition&lt;/strong&gt;: &lt;code&gt;10 Questions&lt;/code&gt; → &lt;code&gt;Spatial Counterpoint&lt;/code&gt; → &lt;code&gt;Spatial Parameters as Compositional Material&lt;/code&gt; → &lt;code&gt;Comparing Compositional Spatial Strategies&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For production and setup&lt;/strong&gt;: &lt;code&gt;Tools and Software&lt;/code&gt; → &lt;code&gt;Studio Practice at ICST&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These reading paths are intentionally &lt;strong&gt;not identical&lt;/strong&gt; with the numerical chapter order. They mark different entry routes: the first path leads into the topic through perception and basic concepts, while the second moves more directly toward compositional application and piece development.&lt;/p&gt;
+&lt;figure class=&#34;big&#34;&gt;
+  &lt;img src=&#34;https://ambisonics.ch/blog/icst-composer-studio-overview/ICST_STUDIO.png&#34; alt=&#34;ICST Composer Studio in Zurich&#34; loading=&#34;lazy&#34; /&gt;
+  &lt;figcaption&gt;&lt;strong&gt;Composing in Ambisonics.&lt;/strong&gt; Theory, listening practice, tools, and performance contexts intersect here rather than being treated separately.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;what-you-will-find-here&#34;&gt;What You Will Find Here&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;History of FOA and HOA&lt;/strong&gt;: historical lines, studios, concert spaces, archives, and tools&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10 Questions in 3D Space&lt;/strong&gt;: a practical question set for planning and reflecting on a piece&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Acoustic Gestalt of a Sound&lt;/strong&gt;: why space belongs to the identity of a sound object&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spatial Counterpoint&lt;/strong&gt;: spatial voice-leading, case studies, and ICST/REAPER workflows&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spatial Parameters as Compositional Material&lt;/strong&gt;: B-format, perception, and the compositional role of azimuth, elevation, distance, diffusion, and movement&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Comparing Compositional Spatial Strategies&lt;/strong&gt;: how different modes of spatial organization function as formal principles&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Studio Practice at ICST&lt;/strong&gt;: session architecture, monitoring, B-format archiving, and multi-format delivery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tools and Software&lt;/strong&gt;: an overview of key Ambisonics toolchains&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Analytical Listening</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/02-analytical-listening/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/02-analytical-listening/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Before composing spatial trajectories, it helps to hear them clearly in other people’s work. This chapter functions deliberately as a &lt;strong&gt;pointer chapter&lt;/strong&gt;: the actual listening framework is developed in the ICST &lt;a href=&#34;https://ambisonics.ch/blog/ascolta/&#34;&gt;ascolta&lt;/a&gt; sessions and in the corresponding listening guide. There, Smalley’s spatial categories, analytical listening questions, and exercises for active spatial listening are presented in a more systematic way.&lt;/p&gt;
+&lt;p&gt;For this section of the site, the guide is the central resource:&lt;/p&gt;
+&lt;p&gt;→ &lt;a href=&#34;https://ambisonics.ch/blog/ascolta-listening-guide/&#34;&gt;Ascolta Listening Guide — Analytical Spatial Listening&lt;/a&gt;&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>History of Ambisonics: FOA and HOA</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/03-history-of-foa-and-hoa/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/03-history-of-foa-and-hoa/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Working with Ambisonics means working within a historical field, not just with a technique. For composers, the distinction between &lt;strong&gt;FOA&lt;/strong&gt; and &lt;strong&gt;HOA&lt;/strong&gt; is especially important: FOA is the historical basis and remains a robust production format; HOA is the later systematic expansion toward higher spatial resolution and more flexible rendering.&lt;/p&gt;
+&lt;h3 id=&#34;key-points&#34;&gt;Key Points&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;FOA&lt;/strong&gt; is the historical root and remains practical for teaching, sketching, production, and distribution.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HOA&lt;/strong&gt; emerged as a more systematic, modern field from around 2000 onward, marking a clear increase in spatial precision.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compositional consequence&lt;/strong&gt;: not every work needs HOA, but many current immersive forms become more flexible and transferable through it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-this-matters-practically&#34;&gt;Why This Matters Practically&lt;/h3&gt;
+&lt;p&gt;For compositional practice, this history is not just background. It explains why Ambisonics work today almost always mediates between three levels: &lt;strong&gt;format and order&lt;/strong&gt; (FOA or HOA), &lt;strong&gt;playback context&lt;/strong&gt; (dome, studio, binaural, mobile setup), and &lt;strong&gt;toolchain&lt;/strong&gt; (DAW, encoder, decoder, monitoring, automation).&lt;/p&gt;
+&lt;p&gt;That leads directly to the next set of questions: how many spatial layers does a piece need, how should material move, how precise should localisation be, and how can a work be documented so that it is not tied to a single loudspeaker arrangement?&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>10 Questions in 3D Space</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/04-10-questions/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/04-10-questions/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;These questions are meant as a &lt;strong&gt;compositional worksheet&lt;/strong&gt;. They are useful both for analysing existing works and for planning your own pieces, studio sessions, and documentation strategies.&lt;/p&gt;
+&lt;h3 id=&#34;1-ontology-of-the-piece&#34;&gt;1. Ontology of the Piece&lt;/h3&gt;
+&lt;p&gt;What kind of world does the piece construct in space? Are you working with recognisable places, abstract formations, individual sound objects, or broader textures and fields?&lt;/p&gt;
+&lt;h3 id=&#34;2-role-of-space&#34;&gt;2. Role of Space&lt;/h3&gt;
+&lt;p&gt;What primarily carries the form: spatial gesture or spectral-temporal development? Could the piece still work in stereo, or would the form collapse?&lt;/p&gt;
+&lt;h3 id=&#34;3-spatial-layers&#34;&gt;3. Spatial Layers&lt;/h3&gt;
+&lt;p&gt;How many distinguishable spatial layers are there? Which zones matter most: front, back, above, below, near, or far?&lt;/p&gt;
+&lt;h3 id=&#34;4-object-count-and-density&#34;&gt;4. Object Count and Density&lt;/h3&gt;
+&lt;p&gt;How full is the space at any given moment? How many active objects can remain perceptually distinct?&lt;/p&gt;
+&lt;h3 id=&#34;5-trajectories-and-gesture-types&#34;&gt;5. Trajectories and Gesture Types&lt;/h3&gt;
+&lt;p&gt;Which types of movement define the piece: circles, lines, vertical motion, explosions, swarms, or more gestural motions of approach and escape?&lt;/p&gt;
+&lt;h3 id=&#34;6-localisation-vs-diffuseness&#34;&gt;6. Localisation vs. Diffuseness&lt;/h3&gt;
+&lt;p&gt;When should sounds be sharply localised, and when should they become diffuse or enveloping?&lt;/p&gt;
+&lt;h3 id=&#34;7-target-listening-scenario&#34;&gt;7. Target Listening Scenario&lt;/h3&gt;
+&lt;p&gt;For which playback situation are you composing: dome, multichannel loudspeaker array, binaural, or multiple formats?&lt;/p&gt;
+&lt;h3 id=&#34;8-audience-and-listening-experience&#34;&gt;8. Audience and Listening Experience&lt;/h3&gt;
+&lt;p&gt;How spatially trained is the assumed audience? Should contrasts be obvious and legible, or can they remain subtle?&lt;/p&gt;
+&lt;h3 id=&#34;9-real-space-reference-and-archetypes&#34;&gt;9. Real-Space Reference and Archetypes&lt;/h3&gt;
+&lt;p&gt;How does the piece relate to real spaces and spatial metaphors? Is it mimetic, transformed, or physically impossible?&lt;/p&gt;
+&lt;h3 id=&#34;10-work-identity-and-documentation&#34;&gt;10. Work Identity and Documentation&lt;/h3&gt;
+&lt;p&gt;What actually counts as the work: the HOA master, a specific decoded version, or a binaural release? What needs to be documented so the work remains reconstructible?&lt;/p&gt;
+&lt;p&gt;The ten questions make clear that spatial composition does not consist solely of positions and movements, but depends on the perceptibility and stability of sonic units. Before spatial relations between multiple sound objects can be shaped precisely, it is therefore necessary to ask what allows a sound to emerge in space as a perceptual gestalt in the first place. The following chapter therefore turns to &lt;strong&gt;The Acoustic Gestalt of a Sound&lt;/strong&gt;.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>The Acoustic Gestalt of a Sound</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/05-acoustic-gestalt/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/05-acoustic-gestalt/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;section class=&#34;docs-bridge&#34;&gt;
+  &lt;p class=&#34;docs-bridge__eyebrow&#34;&gt;Bridge Chapter&lt;/p&gt;
+  &lt;h2 class=&#34;docs-bridge__title&#34;&gt;From perception to spatial voice-leading&lt;/h2&gt;
+  &lt;p class=&#34;docs-bridge__lead&#34;&gt;This chapter forms the hinge between the &lt;strong&gt;10 Questions in 3D Space&lt;/strong&gt; and &lt;strong&gt;Spatial Counterpoint&lt;/strong&gt;. It explains why space belongs not only to playback, but to the identity of a sound object.&lt;/p&gt;
+  &lt;div class=&#34;docs-bridge__grid&#34;&gt;
+    &lt;article class=&#34;docs-bridge__card&#34;&gt;
+      &lt;h3&gt;1. Sound as Gestalt&lt;/h3&gt;
+      &lt;p&gt;A sound object is perceived as a coherent unit through spectrum, envelope, and pitch.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article class=&#34;docs-bridge__card&#34;&gt;
+      &lt;h3&gt;2. Space as Form&lt;/h3&gt;
+      &lt;p&gt;Direction, distance, and movement alter the perception of a sound and become compositional material in their own right.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article class=&#34;docs-bridge__card&#34;&gt;
+      &lt;h3&gt;3. Toward Counterpoint&lt;/h3&gt;
+      &lt;p&gt;If space belongs to gestalt, then relations between several gestalts can also be organised spatially and contrapuntally.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;p&gt;Before turning to &lt;strong&gt;Spatial Counterpoint&lt;/strong&gt;, it helps to pause at a more basic perceptual question: &lt;strong&gt;what makes a sound object feel like a coherent gestalt in the first place?&lt;/strong&gt; In Gestalt psychology, a gestalt is not merely the sum of isolated parts, but a perceivable unity that stands out from its background.&lt;/p&gt;
+&lt;p&gt;For listening, three principles are especially important:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;prägnanz / good form&lt;/strong&gt;: we tend to perceive clear, stable, and well-organised structures&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;proximity and similarity&lt;/strong&gt;: elements that resemble one another or are close in time and space are more likely to be heard as belonging together&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;continuity&lt;/strong&gt;: movements and transformations are more readily perceived as connected lines or processes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sound-gestalt-spectrum-envelope-pitch&#34;&gt;Sound Gestalt: Spectrum, Envelope, Pitch&lt;/h2&gt;
+&lt;p&gt;In listening, a sound object is usually recognised through three closely linked dimensions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;spectrum&lt;/strong&gt;: the distribution of frequency components, or what we hear as timbre&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;temporal envelope&lt;/strong&gt;: attack, sustain, and decay&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pitch or pitch contour&lt;/strong&gt;: a stable tone, vibrato, glissando, or other pitch movement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Together, these dimensions allow us to identify a clarinet, a cymbal, a breath, or a synthetic tone as distinct sonic objects.&lt;/p&gt;
+&lt;h2 id=&#34;space-as-a-fourth-dimension&#34;&gt;Space as a Fourth Dimension&lt;/h2&gt;
+&lt;p&gt;In many older models, space appears only as a neutral container. For Ambisonics, that is too limited. Space often belongs to the &lt;strong&gt;constitutive identity&lt;/strong&gt; of the sound itself.&lt;/p&gt;
+&lt;p&gt;This becomes clear through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;direction&lt;/strong&gt;: the same sound is perceived differently from the front, back, side, or above&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;distance&lt;/strong&gt;: nearness and farness change presence, intimacy, brilliance, and function&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;movement&lt;/strong&gt;: a moving sound has a different identity from a static one, even if spectrum and envelope remain unchanged&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In practice, parameters such as &lt;strong&gt;azimuth&lt;/strong&gt;, &lt;strong&gt;elevation&lt;/strong&gt;, &lt;strong&gt;distance&lt;/strong&gt;, &lt;strong&gt;spread&lt;/strong&gt;, and motion are therefore not just technical controls. They are part of composition.&lt;/p&gt;
+&lt;h2 id=&#34;figure-and-background&#34;&gt;Figure and Background&lt;/h2&gt;
+&lt;p&gt;Spatial listening also follows a &lt;strong&gt;figure/background&lt;/strong&gt; logic. A near, sharply localised, or moving sound tends to emerge as figure; a distant, static, or diffuse sound tends to become background.&lt;/p&gt;
+&lt;p&gt;That makes spatial hierarchy composable:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;foreground voices can be placed close and clearly&lt;/li&gt;
+&lt;li&gt;textures can be pushed back through distance and diffusion&lt;/li&gt;
+&lt;li&gt;transitions between figure and background can become formal events in themselves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sound-gestalt-as-a-spatiotemporal-event&#34;&gt;Sound Gestalt as a Spatiotemporal Event&lt;/h2&gt;
+&lt;p&gt;In electroacoustic music, a sound object is rarely static. Denis Smalley’s concept of &lt;strong&gt;spectromorphology&lt;/strong&gt; describes sound as a form unfolding through time. In Ambisonics, this thought can be extended further: sound is often not only &lt;strong&gt;spectro-morphological&lt;/strong&gt;, but also &lt;strong&gt;spatio-morphological&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A sound gestalt is then more than material plus position. It becomes a &lt;strong&gt;spatiotemporal event&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;an impulse that flashes overhead and dissolves into the distance&lt;/li&gt;
+&lt;li&gt;a texture that begins as a diffuse ceiling and gradually sharpens into discrete objects&lt;/li&gt;
+&lt;li&gt;a voice that leaves the foreground and turns into a ring of circulating echoes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These processes are not merely post-production effects. They belong to what the sound &lt;strong&gt;is&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;toward-spatial-counterpoint&#34;&gt;Toward Spatial Counterpoint&lt;/h2&gt;
+&lt;p&gt;This is exactly where &lt;strong&gt;Spatial Counterpoint&lt;/strong&gt; begins. If space belongs to the gestalt of a sound, then the spatial relations between several sound gestalts can also be composed: separation and overlap, approach and escape, layering, density, and dissolution.&lt;/p&gt;
+&lt;p&gt;The question is no longer only &lt;em&gt;where is the sound?&lt;/em&gt; but also:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;how clear is its gestalt?&lt;/li&gt;
+&lt;li&gt;how does it relate to other gestalts?&lt;/li&gt;
+&lt;li&gt;when does it remain independent, and when does it merge?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That shift turns space from a playback condition into a genuine &lt;strong&gt;material of voice-leading and form&lt;/strong&gt;.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Spatial Counterpoint</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/05-spatial-counterpoint/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/05-spatial-counterpoint/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Spatial counterpoint is the attempt to make &lt;strong&gt;extension, position, and movement&lt;/strong&gt; into compositional parameters equal in standing to pitch, time, dynamics, and timbre. Space is not merely a stage or a distribution system; it becomes a formal force in its own right. Movements, approaches, overlaps, and spatial separations generate tensions, densities, openings, and resolutions that can be shaped just as precisely as harmonic or rhythmic relations.&lt;/p&gt;
+&lt;p&gt;For listeners, this produces an immediately felt sound environment: musical processes become perceivable not only temporally but also spatially. In Ambisonics, this experience becomes especially strong because sources are not tied to a fixed loudspeaker image — they are conceived as a sound field and can be transferred to different setups.&lt;/p&gt;
+&lt;p&gt;Two sound objects may therefore be tonally consonant but spatially dissonant. A perfect fifth remains harmonically stable, but if the two voices are too close spatially, they may blend into an overlap in which neither can be heard as a distinct line. Conversely, spatial distance can amplify or release tension — when two sources drift apart, cross each other&amp;rsquo;s path, or converge toward a shared center.&lt;/p&gt;
+&lt;h2 id=&#34;principles-of-spatial-counterpoint&#34;&gt;Principles of Spatial Counterpoint&lt;/h2&gt;
+&lt;p&gt;Spatial counterpoint rests on the &lt;strong&gt;independence of voices&lt;/strong&gt;. In Ambisonics, this independence is organized primarily through &lt;strong&gt;angular separation&lt;/strong&gt;, &lt;strong&gt;height stratification&lt;/strong&gt;, &lt;strong&gt;distance coding&lt;/strong&gt;, &lt;strong&gt;speed of movement&lt;/strong&gt;, and &lt;strong&gt;timbral differentiation&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Angular separation&lt;/strong&gt; determines how well two sources remain distinguishable laterally.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Height stratification&lt;/strong&gt; helps to keep voices separate even when the horizontal plane is already dense.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Distance&lt;/strong&gt; works not only as a change in level, but often also shifts brilliance, presence, and perceived intimacy.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Movement&lt;/strong&gt; can separate voices, connect them, or cause them to collide deliberately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As a practical rule of thumb: melodic or speech-like voices that carry central material usually need more spatial separation than textures, clusters, or noise layers. For the latter, tighter arrangements or deliberate overlaps may in fact be desirable. Spatial dissonance is therefore not simply an error — it often arises precisely where overlap, clustering, or densification are compositionally intended.&lt;/p&gt;
+&lt;h2 id=&#34;movement-types-as-spatial-voice-leading&#34;&gt;Movement Types as Spatial Voice-Leading&lt;/h2&gt;
+&lt;p&gt;Spatial movement relations can be thought of in a way similar to classical contrapuntal voice-leading:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Movement type&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Spatial effect&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Contrary motion&lt;/td&gt;
+          &lt;td&gt;Source A moves left, source B moves right&lt;/td&gt;
+          &lt;td&gt;Opening, tension, separation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Parallel motion&lt;/td&gt;
+          &lt;td&gt;Both sources move in synchrony&lt;/td&gt;
+          &lt;td&gt;Fusion, mass, coupling&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Oblique motion&lt;/td&gt;
+          &lt;td&gt;One source moves, the other stays&lt;/td&gt;
+          &lt;td&gt;Figure/background, asymmetry&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Convergence&lt;/td&gt;
+          &lt;td&gt;Sources move toward each other&lt;/td&gt;
+          &lt;td&gt;Sharpening, densification&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Divergence&lt;/td&gt;
+          &lt;td&gt;Sources move away from each other&lt;/td&gt;
+          &lt;td&gt;Dissolution, widening&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In the ICST/REAPER workflow, these relations can be formulated directly as &lt;strong&gt;azimuth&lt;/strong&gt;, &lt;strong&gt;elevation&lt;/strong&gt;, or &lt;strong&gt;distance automation&lt;/strong&gt;. Spatial counterpoint thus becomes not only an abstract idea but a legible, editable voice-leading.&lt;/p&gt;
+&lt;h2 id=&#34;parameters-in-the-icstreaper-workflow&#34;&gt;Parameters in the ICST/REAPER Workflow&lt;/h2&gt;
+&lt;p&gt;In the ICST Ambisonics workflow in REAPER, you work primarily with four groups of parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Position&lt;/strong&gt;: azimuth, elevation, and where relevant, distance of a source&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Movement&lt;/strong&gt;: speed, trajectory, direction changes, rotation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Grouping&lt;/strong&gt;: assigning sources to groups and relative manipulation within a group&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rendering context&lt;/strong&gt;: decoder order, loudspeaker layout, binaural monitoring, routing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You use &lt;strong&gt;MonoEncoder&lt;/strong&gt;, &lt;strong&gt;StereoEncoder&lt;/strong&gt;, or &lt;strong&gt;MultiEncoder_64&lt;/strong&gt; depending on the situation. The MultiEncoder is especially interesting for spatial counterpoint because it organizes multiple sources in a shared radar GUI and allows group movements, relative offsets, and macro gestures.&lt;/p&gt;
+&lt;p&gt;Movements can be set up in REAPER using classic envelopes, motion recording, LFOs, or OSC control. For complex spatial dramaturgies this is especially important: a piece is then built not only from static placements but from temporally shaped spatial relations.&lt;/p&gt;
+&lt;figure class=&#34;big&#34;&gt;
+  &lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/GP_edit_scaled.png&#34; alt=&#34;ICST MultiEncoder with radar GUI and group editing&#34; loading=&#34;lazy&#34; /&gt;
+  &lt;figcaption&gt;&lt;strong&gt;Radar GUI and group logic.&lt;/strong&gt; The ICST MultiEncoder makes position, grouping, and relative spatial relations directly visible and editable as compositional parameters.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;case-study-1--dialogue-between-two-sound-objects&#34;&gt;Case Study 1 — Dialogue Between Two Sound Objects&lt;/h2&gt;
+&lt;p&gt;A simple model for spatial counterpoint is a &lt;strong&gt;dialogue of two voices&lt;/strong&gt;: an electroacoustic piece for a 24-channel ring in which two prepared piano sounds answer each other.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Setup in REAPER / ICST&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Track 1: Piano sound A, percussive, via &lt;strong&gt;ICST MonoEncoder&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Track 2: Piano sound B, sustained, also via &lt;strong&gt;ICST MonoEncoder&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Starting positions: A at &lt;code&gt;-90°&lt;/code&gt;, B at &lt;code&gt;+90°&lt;/code&gt;, both at ear height&lt;/li&gt;
+&lt;li&gt;Distance: A closer, B further away&lt;/li&gt;
+&lt;li&gt;Decoder: &lt;strong&gt;AmbiDecoder&lt;/strong&gt; for a 24-channel ring in &lt;strong&gt;ambiX (ACN/SN3D)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Dramaturgy&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Phase 1&lt;/strong&gt;: Question and answer. A makes a short gesture from the left toward center and back; B responds more slowly from the right.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Phase 2&lt;/strong&gt;: Approach. Both sources move toward each other and form a momentary spatial condensation at center.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Phase 3&lt;/strong&gt;: Dissolution. Both voices rise in elevation and recede into the distance, until the dialogue dissolves into a shared diffuse sphere.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The compositional core lies not only in the material but in the controlled question: &lt;strong&gt;when does the dialogue remain two-voiced, and when does it tip into fusion?&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;big&#34;&gt;
+  &lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/Distance.gif&#34; alt=&#34;Distance automation in the ICST workflow&#34; loading=&#34;lazy&#34; /&gt;
+  &lt;figcaption&gt;&lt;strong&gt;Distance as dramaturgy.&lt;/strong&gt; Distance coding and movement create not only changes of location, but also proximity, condensation, and the gradual disappearance of a voice into space.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;case-study-2--three-voice-spatial-canon&#34;&gt;Case Study 2 — Three-Voice Spatial Canon&lt;/h2&gt;
+&lt;p&gt;A second model is a &lt;strong&gt;spatial canon&lt;/strong&gt;: identical sound material enters multiple times with time offset, but each voice travels a different path through space.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Setup in REAPER / ICST&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MultiEncoder_64&lt;/strong&gt; with three active sources&lt;/li&gt;
+&lt;li&gt;All three sources receive the same material, but offset in time&lt;/li&gt;
+&lt;li&gt;Different azimuth starting positions, optionally with staggered elevations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Possible structure&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source 1 begins a circular movement in the horizontal plane&lt;/li&gt;
+&lt;li&gt;Source 2 enters with an offset on the same path&lt;/li&gt;
+&lt;li&gt;Source 3 enters again with a further offset&lt;/li&gt;
+&lt;li&gt;In an extended version, the three voices are additionally placed at different heights&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This creates a spatial imitation structure: the material stays related, but the voices differ through &lt;strong&gt;time&lt;/strong&gt;, &lt;strong&gt;position&lt;/strong&gt;, &lt;strong&gt;movement path&lt;/strong&gt;, and &lt;strong&gt;height&lt;/strong&gt;. The &lt;strong&gt;Group Animation&lt;/strong&gt; feature in the MultiEncoder becomes especially interesting here — the group point moves while the internal relations of the sources are preserved or modulated.&lt;/p&gt;
+&lt;figure class=&#34;big&#34;&gt;
+  &lt;img src=&#34;https://ambisonics.ch/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_01.gif&#34; alt=&#34;MultiEncoder with multiple sources and group movement&#34; loading=&#34;lazy&#34; /&gt;
+  &lt;figcaption&gt;&lt;strong&gt;Spatial canon in the MultiEncoder.&lt;/strong&gt; Multiple sources can be organized as a contrapuntal group and guided through the sound field together or relative to one another.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;practice-listening-adjusting-troubleshooting&#34;&gt;Practice: Listening, Adjusting, Troubleshooting&lt;/h2&gt;
+&lt;p&gt;Spatial counterpoint rarely emerges in a single pass. It is almost always an &lt;strong&gt;iterative listening process&lt;/strong&gt;. A simple listening protocol helps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;note moments when voices remain clearly separated&lt;/li&gt;
+&lt;li&gt;mark moments when they merge into a cluster&lt;/li&gt;
+&lt;li&gt;observe which combination of angle, height, distance, and movement leads to clarity or masking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When automations or movements don&amp;rsquo;t respond as expected, a few systematic checks usually help:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Is the right automation lane activated and mapped to the intended parameter?&lt;/li&gt;
+&lt;li&gt;Are there competing envelopes, MIDI assignments, or OSC data?&lt;/li&gt;
+&lt;li&gt;Is the plugin loaded correctly and the right version active?&lt;/li&gt;
+&lt;li&gt;Is the routing consistent, especially with multichannel tracks and decoder buses?&lt;/li&gt;
+&lt;li&gt;Does the parameter respond cleanly in a simple test run before building complex movement?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Especially with distance, grouping, and motion recording, a systematic troubleshooting approach like this saves significant time.&lt;/p&gt;
+&lt;h2 id=&#34;toolchains-and-transferability&#34;&gt;Toolchains and Transferability&lt;/h2&gt;
+&lt;p&gt;The principles described here can be realized not only with the ICST plugins, but also with other Ambisonics toolchains. Differences lie less in the underlying idea than in &lt;strong&gt;naming conventions, interaction logic, and depth of analysis&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ICST&lt;/strong&gt; is especially strong for clear source and group control in REAPER&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IEM&lt;/strong&gt; combines creative control with a broad set of production and analysis tools&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SPARTA&lt;/strong&gt; is especially strong for visualization, analysis, and research&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When switching toolchains, the decisive questions are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is the format clearly defined, for instance &lt;strong&gt;ambiX (ACN/SN3D)&lt;/strong&gt;?&lt;/li&gt;
+&lt;li&gt;Are position, distance, movement, and grouping available and automatable?&lt;/li&gt;
+&lt;li&gt;Do routing, channel count, and decoder configuration match the target setup?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Spatial counterpoint is therefore less a fixed procedure than a &lt;strong&gt;way of thinking&lt;/strong&gt;: space is not treated as an add-on, but as an integral part of musical organization.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Spatial Parameters as Compositional Material</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/06-spatial-parameters/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/06-spatial-parameters/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;The concept of &lt;em&gt;Spatial Counterpoint&lt;/em&gt; developed in the preceding section understands space as a relational and form-generating principle of musical organization. For this claim to extend beyond the fleeting disposition of a particular performance situation, a format is required that makes spatial relations storable, editable, and transferable across different playback conditions. Within Ambisonics, the &lt;strong&gt;B-format&lt;/strong&gt; fulfills this function: it makes it possible to conceive spatial constellations as abstract structures and to fix them independently of any concrete playback system. In this sense, 3D audio is not treated as a secondary means of sound distribution, but as a formative element that is integrated into the compositional process from the outset. Movement, depth, height, and the distribution of sounds thus appear as parameters that can be treated just as consciously during writing and arranging as pitch, rhythm, or timbre.&lt;/p&gt;
+&lt;h2 id=&#34;b-format-as-a-compositional-storage-medium&#34;&gt;B-Format as a Compositional Storage Medium&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;B-format&lt;/strong&gt; was developed within the framework of Michael Gerzon&amp;rsquo;s Ambisonics theory and serves as the central signal format for encoding spatial audio data (Thornton, 2009). Its mathematical basis lies in the description of sound fields by means of spherical harmonics, through which a sound field around a reference point can be represented as a weighted sum of spatial components (Zotter &amp;amp; Frank, n.d.). The format functions as an intermediate representation between recording, processing, and playback: spatial information is first stored independently of any particular playback system and only then decoded for a given target setup, whether headphones, stereo, loudspeaker arrays, virtual reality applications, or 360-degree video (Ambisonics: File Formats, 2003). This separation of encoding and playback is compositionally significant because it allows spatial structures to be conceived first as abstract relations and only in a second step adapted to a concrete playback system.&lt;/p&gt;
+&lt;p&gt;In the narrower sense, the B-format refers to the four-channel first-order Ambisonics format consisting of the channels W, X, Y, and Z. W represents the omnidirectional pressure component of the sound field, whereas X, Y, and Z encode the directional components along the three spatial axes. In their weighting and relation to one another, they form the basis for the spatial localization of sonic events. In a broader sense, the term may also refer to higher-order Ambisonics formats, in which additional coefficients of the sound field are represented as separate audio channels, thereby allowing a higher spatial resolution. As a spatial frame of reference, the ICST Ambisonics plugins use a right-handed Cartesian coordinate system in which the X axis describes the left-right direction, the Y axis the front-back direction, and the Z axis the vertical dimension. Within this frame, positions, movements, and spatial relations can be described unambiguously and reproduced consistently (IEEE 3D Body Processing, n.d.).&lt;/p&gt;
+&lt;p&gt;Alongside the signal format itself, there are different conventions of normalization and channel ordering, in particular FuMa, SN3D, and N3D, which regulate transferability between different systems. In current production contexts and for data exchange, SN3D/ACN has become the most widely adopted standard; the ICST Ambisonics plugins have also used this format since Version 2 (Schweizerweb, 2023; Ambisonic Data Exchange Formats, n.d.; VRTONUNG, 2024).&lt;/p&gt;
+&lt;h2 id=&#34;spatial-parameters-as-compositional-categories&#34;&gt;Spatial Parameters as Compositional Categories&lt;/h2&gt;
+&lt;p&gt;On the basis of the B-format, spatial properties can be understood as independent compositional parameters. Relations of direction, presence, trajectories of movement, and spatial density thus appear not as secondary qualities of playback, but as constitutive elements of musical form. The following sections define the individual parameters and connect each of them to its psychoacoustic foundation, since the compositional effectiveness of a parameter depends on its perceptual grounding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Azimuth.&lt;/strong&gt; Azimuth describes the horizontal position of a sound source in space. Compositionally, it makes it possible to organize lateral separation, approach, crossing, and contrary motion. Sounds can thus be not only localized, but also structured in their relation to one another; azimuth becomes a means of spatial voice-leading. Its psychoacoustic basis lies in the interaction of interaural time differences (&lt;em&gt;Interaural Time Difference&lt;/em&gt;, ITD) and interaural level differences (&lt;em&gt;Interaural Level Difference&lt;/em&gt;, ILD). ITD refers to the difference in arrival time between the two ears and is the dominant localization cue especially at low frequencies; ILD describes the level difference caused by the acoustic shadow of the head and is particularly effective at higher frequencies (Blauert, 1997). Together, these cues form the basis of lateral localization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Elevation.&lt;/strong&gt; Elevation refers to the vertical position of a sonic event and extends the horizontal organization of space by an independent layer. Compositionally, height can serve to separate sound layers, establish hierarchies, or produce specific spatial qualities. Particularly in Ambisonics, the vertical dimension becomes an autonomous formal parameter. Psychoacoustically, the perception of height depends on information that interaural differences alone cannot provide. Here, individually shaped &lt;em&gt;Head-Related Transfer Functions&lt;/em&gt; (HRTF) are decisive: the head, torso, and especially the pinnae filter incoming sound in a direction-dependent manner and create characteristic spectral signatures that are crucial for the perception of elevation and for resolving front-back ambiguity (Blauert, 1997; Begault, 1994). From a compositional perspective, it is important that strong spectral interventions or unsuitable playback conditions can weaken these cues and thereby impair vertical differentiation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Distance.&lt;/strong&gt; Distance determines the degree of nearness and farness of a sound source. It does not operate only as a matter of level, but also affects presence, depth stratification, and perspectival perception: near sounds may be experienced as immediate, detailed, and bodily, whereas distant sounds may appear withdrawn or atmospheric. Distance is therefore both an acoustic and a dramaturgical parameter. Psychoacoustically, distance perception relies on several factors. The physical drop in intensity according to the inverse-square law is the most obvious cue, but in musical contexts it is often insufficient because levels may vary for expressive reasons. More effective is the ratio of direct sound to diffuse room energy: a high proportion of direct sound is perceived as proximity, while a dominant proportion of reflections and reverberation suggests distance (Rumsey, 2001). This is complemented by air absorption, which attenuates high frequencies with increasing distance, and by the growing blur of lateral differences at large distances (Begault, 1994).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Diffusion.&lt;/strong&gt; Diffusion refers to the degree of spatial extension or focus of a sound. A sound may appear punctual and precise, hover as a diffuse cloud in space, or spread broadly and without clear boundaries. Compositionally, diffusion concerns the relation between focus and blur, between clear localizability and spatial dissolution; it is particularly useful for shaping transitions between object character and field character. Psychoacoustically, this parameter corresponds to the concept of &lt;em&gt;Listener Envelopment&lt;/em&gt; (LEV): diffusely arriving reverberation produces the sensation of immersion and spatial embedding, whereas early reflections influence the perceived source width (&lt;em&gt;Apparent Source Width&lt;/em&gt;, ASW) (Morimoto &amp;amp; Maekawa, 1988; see also additional literature on room-acoustic perception). Reverberation time and the spectral character of reverberation likewise shape spatial identity and can therefore be treated as independent compositional features.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Movement as Form.&lt;/strong&gt; Spatial parameters rarely operate in isolation; they usually act in combination. Movements arise through temporal changes in azimuth, elevation, distance, and diffusion. In this way, movement itself becomes a form-generating process: approach, rotation, ascent, flight, or circling can assume motivic, dramaturgical, and structural functions. Spatial form thus emerges from the temporal organization of several interwoven parameters. Psychoacoustically, the perception of movement results from the coordinated variation of several cues, in particular ITD, ILD, HRTF patterns, as well as distance and reverberation relations (Blauert, 1997). In the case of rapid movement, the Doppler effect may additionally function as a cue. In binaural playback, the listener&amp;rsquo;s own head movement contributes to the stabilization of localization; if this reference is absent, for instance in static binaural playback without head tracking, externalization may become unstable (Begault, 1994).&lt;/p&gt;
+&lt;h2 id=&#34;synthesis-space-as-a-system-of-compositional-relations&#34;&gt;Synthesis: Space as a System of Compositional Relations&lt;/h2&gt;
+&lt;p&gt;The preceding analysis shows that azimuth, elevation, distance, diffusion, and movement are not to be understood as additive individual parameters, but as interdependent dimensions of a system. Their compositional effectiveness unfolds through coordinated shaping and mutual interweaving: a convincingly designed 3D sound image presupposes that several perceptual cues are treated simultaneously and consistently. Against this background, space appears not as a neutral site of playback, but as a structured field of relations whose parameters contribute to the formation of the work. The B-format provides the technical condition for fixing, transforming, and transferring these relations independently of any particular playback system, and thus for enabling precisely that compositional treatment of space which served as the point of departure in the concept of &lt;em&gt;Spatial Counterpoint&lt;/em&gt;.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Comparing Compositional Spatial Strategies</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/065-comparing-spatial-strategies/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/065-comparing-spatial-strategies/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Once spatial parameters have been defined as individual compositional categories, the question arises of how they are organized within larger formal contexts. Space then no longer appears merely as the sum of individual control values, but as a strategic field of compositional decisions. Different works and working methods weight these parameters in different ways: sometimes space serves primarily to separate voices, sometimes to shape movement, sometimes to produce envelopment or perspective. The following chapter compares such modes of spatial organization not as a rigid typology, but as recurring compositional strategies.&lt;/p&gt;
+&lt;h2 id=&#34;space-as-the-separation-of-voices&#34;&gt;Space as the Separation of Voices&lt;/h2&gt;
+&lt;p&gt;A first fundamental strategy consists in using space for the &lt;strong&gt;differentiation of simultaneous events&lt;/strong&gt;. In this model, space functions much like contrapuntal voice-leading: sources are separated laterally, stratified vertically, or distributed across different depth zones so that they remain legible as independent lines or layers. Azimuth, elevation, and distance serve here primarily not dramatic movement, but the stabilization of difference.&lt;/p&gt;
+&lt;p&gt;The compositional strength of this strategy lies in its analytical clarity. Space becomes a means of making polyphony or multilayered texture perceptually intelligible. Especially in dense textures, this can be crucial in preventing a collapse into indistinguishability. Conversely, the risk of this approach is that spatial separation may become schematic or merely illustrative if it is not supported by timbral and temporal differentiation.&lt;/p&gt;
+&lt;h2 id=&#34;space-as-dramaturgy-of-movement&#34;&gt;Space as Dramaturgy of Movement&lt;/h2&gt;
+&lt;p&gt;A second strategy understands space primarily as &lt;strong&gt;temporally shaped movement&lt;/strong&gt;. Here, trajectories, transitions, and directional changes move to the foreground: approach, rotation, ascent, flight, convergence, or circling become form-generating processes. In this case, space functions less as a distribution system of static positions than as a dynamic articulation of tension, expectation, and release.&lt;/p&gt;
+&lt;p&gt;This strategy is particularly suitable where movement itself assumes a motivic role. A path through space can then become as distinctive as a rhythmic or melodic gesture. At the same time, this approach depends strongly on the coherence of several parameters: movement is perceived as convincing only when direction, distance, focus, and spatial energy correspond with one another. Otherwise, it risks being perceived merely as effect.&lt;/p&gt;
+&lt;h2 id=&#34;space-as-texture-and-envelopment&#34;&gt;Space as Texture and Envelopment&lt;/h2&gt;
+&lt;p&gt;A third strategy shifts the emphasis from geometry to the &lt;strong&gt;texture of space&lt;/strong&gt;. What matters here is how a sound field produces envelopment, width, density, or atmospheric depth. Diffusion, reverberation character, reflection structure, and field formation come to the foreground; pinpoint localization is reduced in favour of an immersive and often less measurable spatial effect.&lt;/p&gt;
+&lt;p&gt;Compositionally, this strategy is particularly productive when space appears less as a path than as a state. It lends itself to transitions between object character and field character, to suspended states, stratifications, or large-scale spatial atmospheres. Its strength lies in the formation of a spatial continuum; its danger in a possible loss of formal sharpness if no clear moments of tension or concentration are organized.&lt;/p&gt;
+&lt;h2 id=&#34;space-as-perspective&#34;&gt;Space as Perspective&lt;/h2&gt;
+&lt;p&gt;A fourth strategy conceives space as an &lt;strong&gt;order of perspective&lt;/strong&gt;. The focus here is not only where a sound is, but from which listening situation it is experienced: near or far, inside or outside, frontal or peripheral, stable or displaced in relation to a moving listening point. Especially in binaural, VR, or interactive contexts, perspective itself becomes a compositional parameter, since the listening position can no longer be treated as a neutral center.&lt;/p&gt;
+&lt;p&gt;This strategy changes the character of spatial form because it foregrounds the relation between sound field and listener more strongly. Not only the object, but the standpoint itself becomes composable. This opens narrative, scenic, and bodily possibilities, but at the same time demands heightened sensitivity to perceptual instability and to differences between loudspeaker and headphone situations.&lt;/p&gt;
+&lt;h2 id=&#34;comparative-observations&#34;&gt;Comparative Observations&lt;/h2&gt;
+&lt;p&gt;The four strategies outlined above differ less through exclusive parameters than through their respective prioritization. Where space serves the separation of voices, stable directional and depth relations usually dominate. Where space appears as a dramaturgy of movement, the temporal coupling of several parameters gains importance. Textural strategies work more strongly with diffusion, reverberation, and field character, while perspectival strategies foreground the relation between sonic event and listening point.&lt;/p&gt;
+&lt;p&gt;As a consequence, the psychoacoustic basis also shifts. Strategies of voice separation depend more strongly on localization cues such as ITD, ILD, and spectral differentiation. Strategies of envelopment rely more on diffuse spatial energy, envelope character, and reflection structure. Movement-based strategies require stable temporal changes in multiple cues, whereas perspectival strategies are particularly sensitive to differences between loudspeaker playback, binaural control, and head movement.&lt;/p&gt;
+&lt;p&gt;The risks also differ. A strategy aimed at clarity may turn into mere sorting; a movement-centered strategy into effect aesthetics; a textural strategy into vagueness; a perspectival strategy into perceptual instability. These models become compositionally productive, therefore, primarily where they do not appear in isolation, but modulate one another.&lt;/p&gt;
+&lt;h2 id=&#34;synthesis&#34;&gt;Synthesis&lt;/h2&gt;
+&lt;p&gt;Spatial composition cannot therefore be reduced to a single organizational model. Rather, different spatial strategies overlap and interpenetrate within a work. A piece may begin with separating voice-leading, move into a dramaturgy of motion, dissolve into diffuse envelopment, and finally be refocused through a changed perspective. It is precisely these transitions that make space an autonomous formal field of musical organization.&lt;/p&gt;
+&lt;p&gt;Seen in this light, studio practice also takes on a different meaning: it must not only manage technical decisions, but translate different spatial strategies into concrete workflows, monitoring situations, and archival formats. The comparison of compositional spatial strategies therefore leads directly to the question of how such models can be organized, tested, and made transferable within the studio.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Studio Practice at ICST</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/07-studio-practice-at-icst/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/07-studio-practice-at-icst/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Once spatial parameters have been defined as compositional categories, the practical question arises of how they are organized in the studio. Composing in Ambisonics does not consist only in selecting individual spatial gestures; it also requires a workflow in which sketching, spatial control, monitoring, archiving, and delivery formats are coordinated with one another. Studio practice at ICST should therefore be understood less as a rigid production scheme than as a workflow-based method for developing spatial composition consistently over longer periods of work.&lt;/p&gt;
+&lt;h2 id=&#34;from-parameter-to-session&#34;&gt;From Parameter to Session&lt;/h2&gt;
+&lt;p&gt;The decisive step in the studio is to translate spatial parameters into a sustainable project dramaturgy. A piece is no longer conceived solely as a sequence of sounds, but as a configuration of sources, groups, trajectories, and perspectives. In practice, this means that from the outset it is necessary to decide which role individual tracks will play within the spatial structure: which sources remain stably localized, which form moving lines, and which function as fields, envelopes, or distant horizons.&lt;/p&gt;
+&lt;p&gt;In the ICST context, work therefore often begins with a relatively clear distinction between functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;source tracks&lt;/strong&gt; for individual sound objects or clearly distinguishable voices&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;groups&lt;/strong&gt; for related movements or stratifications&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a shared Ambisonics bus&lt;/strong&gt; as the central spatial working field&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;decoder and monitoring tracks&lt;/strong&gt; for different listening situations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This separation is not only technical, but compositional. It allows a distinction between micro- and macro-levels: individual sources can be shaped in detail, while larger movement logics or spatial contrasts can be organized at the group or bus level.&lt;/p&gt;
+&lt;h2 id=&#34;session-architecture-and-signal-flow&#34;&gt;Session Architecture and Signal Flow&lt;/h2&gt;
+&lt;p&gt;A typical ICST session is designed so that all sonic events are first encoded into a shared B-format. This B-format constitutes the actual compositional space of the project. From there it can be decoded into different monitoring and output paths: for the studio loudspeaker array, for binaural monitoring, or for alternative target systems.&lt;/p&gt;
+&lt;p&gt;Such a session architecture offers several advantages. First, the spatial organization is gathered at a single central point. Second, the composition itself remains largely independent of a single loudspeaker configuration. Third, different monitoring and export paths can be considered in parallel without requiring the piece to be fundamentally restructured each time.&lt;/p&gt;
+&lt;p&gt;In practical terms this means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;encoder tracks define source position, movement, size, and grouping&lt;/li&gt;
+&lt;li&gt;the Ambisonics bus gathers the resulting sound field&lt;/li&gt;
+&lt;li&gt;decoder tracks translate this field into concrete listening situations&lt;/li&gt;
+&lt;li&gt;additional analysis, recording, or reference tracks support control and documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This separation is especially important in the ICST studio because many works are not intended for only one setup, but must mediate between dome playback, loudspeaker arrays, binaural monitoring, and archival formats.&lt;/p&gt;
+&lt;h2 id=&#34;b-format-as-working-and-archival-format&#34;&gt;B-Format as Working and Archival Format&lt;/h2&gt;
+&lt;p&gt;In studio practice, the B-format has a double function. It is not only the technical intermediate format of production, but also the central &lt;strong&gt;working and archival format&lt;/strong&gt;. Whereas decodings may vary according to loudspeaker layout, performance situation, or publication form, the B-format remains the version in which the spatial relations of the piece are fixed most consistently.&lt;/p&gt;
+&lt;p&gt;For studio work this means that decisions should be tested as early as possible with regard to whether they are coherent in the B-format itself and not only persuasive in one particular decoding. A passage that works convincingly only on one loudspeaker setup, but lacks a clear spatial logic in the Ambisonics master, remains fragile in the long term. The B-format therefore functions as a reference layer against which the transferability of the spatial dramaturgy can be measured.&lt;/p&gt;
+&lt;p&gt;At the same time, this way of working is also relevant archivally. For later reconstruction, re-decoding, or transfer into other contexts, the B-format master is often the most reliable basis of the work. In the ICST context, this means that a production is understood not only as a present studio version, but also as a future object of work and documentation.&lt;/p&gt;
+&lt;h2 id=&#34;monitoring-as-compositional-control&#34;&gt;Monitoring as Compositional Control&lt;/h2&gt;
+&lt;p&gt;In Ambisonics, monitoring is not merely a final check, but part of the compositional process itself. Since spatial decisions may become legible in different ways depending on the playback situation, listening must shift between several perspectives: loudspeaker playback, binaural control, and where relevant alternative decoders or simplified setups. These shifts serve not only technical verification, but compositional calibration.&lt;/p&gt;
+&lt;p&gt;The recurring question in the studio is therefore which aspects of a passage should remain invariant, and which may legitimately change with the setup. Some pieces depend strongly on vertical stratification or diffuse envelopment and gain precision in the loudspeaker array; others benefit from the immediacy and perspectival sharpness of binaural control. In this sense, monitoring means consciously hearing the difference between the idea of the work and its specific playback condition.&lt;/p&gt;
+&lt;p&gt;In practice, a cyclical procedure is often helpful:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;sketch a passage in B-format or through the primary decoding&lt;/li&gt;
+&lt;li&gt;check its legibility, focus, and movement logic through binaural monitoring&lt;/li&gt;
+&lt;li&gt;control its stratification, envelopment, and spatial energy on the loudspeaker setup&lt;/li&gt;
+&lt;li&gt;correct problematic passages not only at the decoder stage, but as far as possible within the spatial structure itself&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Monitoring thus becomes not a belated error check, but a method for gradually sharpening spatial form.&lt;/p&gt;
+&lt;h2 id=&#34;multi-format-delivery-and-versioning&#34;&gt;Multi-Format Delivery and Versioning&lt;/h2&gt;
+&lt;p&gt;A work produced in the ICST context often does not end in a single final output. Alongside the Ambisonics master, loudspeaker renders, binaural versions, or documentary derivatives may also be required. It follows that versioning and format decisions should be built into the workflow at an early stage.&lt;/p&gt;
+&lt;p&gt;From a compositional point of view, different delivery versions should not be treated merely as technical derivatives. Each version establishes a specific listening situation and may foreground different parameters of the work. A binaural version may require more precise control of front-back axes and HRTF-relevant spectral features; a loudspeaker version may benefit more strongly from spatial spread and energy distribution. Multi-format delivery therefore does not mean simple export, but the renewed testing of the identity of the work under changed conditions.&lt;/p&gt;
+&lt;p&gt;It is useful to distinguish at least the following layers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;project versions&lt;/strong&gt; for ongoing compositional work&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;the B-format master&lt;/strong&gt; as the central work and archive version&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;monitoring or performance versions&lt;/strong&gt; for specific setups&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;documentation versions&lt;/strong&gt; for transmission, archive, or teaching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This separation prevents later adjustments from feeding back uncontrollably into the actual center of the work.&lt;/p&gt;
+&lt;h2 id=&#34;documentation-as-part-of-composition&#34;&gt;Documentation as Part of Composition&lt;/h2&gt;
+&lt;p&gt;The more strongly a work depends on spatial relations, the more important its documentation becomes. In the ICST studio this concerns not only file formats and technical metadata, but also the compositional description of decisive spatial processes. Documentation is therefore not an external administrative step, but part of the stabilization of the work.&lt;/p&gt;
+&lt;p&gt;It is helpful to record at least the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the order and format convention used, for example ACN/SN3D&lt;/li&gt;
+&lt;li&gt;relevant decoder assumptions and monitoring situations&lt;/li&gt;
+&lt;li&gt;central trajectories, group formations, or critical spatial zones&lt;/li&gt;
+&lt;li&gt;particular dependencies on reverberation, diffusion, or vertical stratification&lt;/li&gt;
+&lt;li&gt;screenshots or graphic notes of radar and automation views&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This documentation supports not only later reconstruction, but already during the work itself sharpens attention to which spatial decisions are actually constitutive of the piece.&lt;/p&gt;
+&lt;h2 id=&#34;compositional-consequence&#34;&gt;Compositional Consequence&lt;/h2&gt;
+&lt;p&gt;Studio practice at ICST therefore does not simply mean operating Ambisonics plugins correctly. Rather, it refers to a way of working in which compositional idea, spatial control, monitoring, archiving, and transferability are thought together. The studio thus becomes the place where spatial form can not only be technically realized, but also methodically tested, stabilized, and refined.&lt;/p&gt;
+&lt;p&gt;This is precisely where the difference lies between a merely production-oriented and a compositional approach to Ambisonics: the decisive criterion is not any single decoding, but the coherence of spatial relations within the work itself. Studio practice therefore serves not merely the realization of a piece, but its conceptual and perceptual clarification.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>Tools and Software</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/08-tools-and-software/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/08-tools-and-software/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;Working in Ambisonics almost always means combining a &lt;strong&gt;DAW&lt;/strong&gt;, &lt;strong&gt;encoder/decoder plugins&lt;/strong&gt;, &lt;strong&gt;monitoring&lt;/strong&gt;, &lt;strong&gt;analysis&lt;/strong&gt;, and often &lt;strong&gt;binaural or scene-based specialist tools&lt;/strong&gt;. This chapter gives a practical overview of important software environments and plugin ecosystems.&lt;/p&gt;
+&lt;h3 id=&#34;quick-orientation&#34;&gt;Quick Orientation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;For open and free HOA production&lt;/strong&gt;: ICST, IEM, SPARTA, ambix, and ATK&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For composition-oriented work&lt;/strong&gt;: ICST, IEM, ATK, Audio Brewers&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For VR, film, and commercial immersive production&lt;/strong&gt;: SSA, Sound Particles, FLUX:: SPAT, dearVR, Nuendo, Pro Tools&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For teaching, DIY, and smaller setups&lt;/strong&gt;: OAT, ambix, Envelop for Live, REAPER-based chains&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See the German version for the full extended table until the English table is split out in the same form.&lt;/p&gt;
+</description>
+
+    </item>
+    <item>
+      <title>References</title>
+      <link>https://ambisonics.ch/composing-in-ambisonics/09-references/</link>
+      <guid>https://ambisonics.ch/composing-in-ambisonics/09-references/</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 &#43;0000</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;h3 id=&#34;books&#34;&gt;Books&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://link.springer.com/book/10.1007/978-3-030-17207-7&#34;&gt;Ambisonics: A Practical 3D Audio Theory — Zotter &amp;amp; Frank (2019, Open Access)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.routledge.com/Immersive-Sound-The-Art-and-Science-of-Binaural-and-Multi-Channel-Audio/Rumsey/p/book/9780240815091&#34;&gt;Immersive Sound: The Art and Science of Binaural and Multi-Channel Audio — Rumsey (2012)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;key-articles&#34;&gt;Key Articles&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ringbuffer.org/papers/gerzon1973periphony.html&#34;&gt;Periphony: With-Height Sound Reproduction — Gerzon (JAES, 1973)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.iem.at/proceedings-of-the-ambisonics-symposium-2011/ambix-a-suggested-ambisonics-format&#34;&gt;ambiX — A Suggested Ambisonics Format (IEM, 2011)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.researchgate.net/publication/280010078_Introduction_to_Ambisonics&#34;&gt;Introduction to Ambisonics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;further-links&#34;&gt;Further Links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/ambisonics-101/&#34;&gt;Ambisonics 101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/blog/ascolta/&#34;&gt;ascolta sessions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/blog/b-format-archive/&#34;&gt;ICST B-Format Archive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
+
+  </channel>
+</rss>

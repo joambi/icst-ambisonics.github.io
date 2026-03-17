@@ -23,7 +23,4 @@ Free admission · Open to all
 
 **[Thursday, 02 April 2026](/blog/ascolta/18-ascolta/)** · 18:00 – 19:00 · Free admission
 
-**Thursday, 21 May 2026** · 18:00 – 19:00 · Free admission
-
-
-
+**[Thursday, 21 May 2026](/blog/ascolta/19-ascolta/)** · 18:00 – 19:00 · Free admission

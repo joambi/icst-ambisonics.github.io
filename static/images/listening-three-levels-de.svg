@@ -1,0 +1,49 @@
+<svg width="1400" height="620" viewBox="0 0 1400 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f7f3ea; }
+      .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .sub { font: 500 17px 'Helvetica Neue', Arial, sans-serif; fill: #415560; }
+      .c1 { fill: #dce8d4; stroke: #2f4858; stroke-width: 3; }
+      .c2 { fill: #d8e6f2; stroke: #2f4858; stroke-width: 3; }
+      .c3 { fill: #efe1d2; stroke: #2f4858; stroke-width: 3; }
+      .center { fill: #fffdf8; stroke: #2f4858; stroke-width: 3; }
+      .label { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .body { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+      .small { font: 600 15px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="620" rx="28"/>
+  <text class="title" x="64" y="68">Drei Ebenen des aktiven Hörens</text>
+  <text class="sub" x="64" y="98">Körperliche Orientierung, kognitive Analyse und ästhetische Wirkung greifen ineinander</text>
+
+  <circle class="c1" cx="460" cy="260" r="122"/>
+  <circle class="c2" cx="700" cy="260" r="122"/>
+  <circle class="c3" cx="580" cy="404" r="122"/>
+  <circle class="center" cx="580" cy="312" r="88"/>
+
+  <text class="label" x="390" y="248">körperlich</text>
+  <text class="body" x="374" y="278">Kopfbewegung,</text>
+  <text class="body" x="374" y="304">Orientierung,</text>
+  <text class="body" x="374" y="330">Hörposition</text>
+
+  <text class="label" x="646" y="248">kognitiv</text>
+  <text class="body" x="626" y="278">Beobachten,</text>
+  <text class="body" x="626" y="304">Benennen,</text>
+  <text class="body" x="626" y="330">Vergleichen</text>
+
+  <text class="label" x="484" y="392">ästhetisch-</text>
+  <text class="label" x="472" y="420">emotional</text>
+  <text class="body" x="486" y="450">Wirkung,</text>
+  <text class="body" x="486" y="476">Spannung,</text>
+  <text class="body" x="486" y="502">Immersion</text>
+
+  <text class="small" x="516" y="300">analytischer</text>
+  <text class="small" x="530" y="326">Höreindruck</text>
+
+  <text class="body" x="930" y="226">Ein räumlicher Höreindruck ist</text>
+  <text class="body" x="930" y="252">vollständig erst dann, wenn</text>
+  <text class="body" x="930" y="278">diese drei Ebenen zusammen</text>
+  <text class="body" x="930" y="304">wahrgenommen und verknüpft</text>
+  <text class="body" x="930" y="330">werden.</text>
+</svg>

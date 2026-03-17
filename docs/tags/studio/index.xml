@@ -18,8 +18,53 @@
       <language>en</language>
       <managingEditor>johannes.schuett@zhdk.ch (Johannes Schuett)</managingEditor>
       <webMaster>johannes.schuett@zhdk.ch (Johannes Schuett)</webMaster>
-      <lastBuildDate>Sun, 08 Mar 2026 11:30:00 &#43;0100</lastBuildDate>
+      <lastBuildDate>Mon, 16 Mar 2026 09:00:00 &#43;0100</lastBuildDate>
       <atom:link href="https://ambisonics.ch/tags/studio/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>ICST Studio Case: Why Our 31-Speaker Setup Is Routed This Way</title>
+      <link>https://ambisonics.ch/blog/icst-studio-case-31-speaker-routing/</link>
+      <guid>https://ambisonics.ch/blog/icst-studio-case-31-speaker-routing/</guid>
+      <pubDate>Mon, 16 Mar 2026 09:00:00 &#43;0100</pubDate>
+        <author>johannes.schuett@zhdk.ch (Johannes Schuett)</author>
+        <description>&lt;p&gt;&lt;strong&gt;Level:&lt;/strong&gt; Intermediate — &lt;strong&gt;For:&lt;/strong&gt; Composers, Technicians, Researchers working with or visiting the ICST Kompositionsstudio.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;context&#34;&gt;Context&lt;/h2&gt;
+&lt;p&gt;Every multi-speaker Ambisonics room accumulates small routing decisions over time — a bus added here, a monitoring path rerouted there. In the ICST Kompositionsstudio, those decisions have been made deliberately and documented so that each new resident starts from a stable, understood baseline rather than a mystery template.&lt;/p&gt;
+&lt;p&gt;This article explains the four core decisions behind the studio&amp;rsquo;s 31-speaker REAPER session template, the problems each decision solves, and the failure modes it prevents.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;decision-1--a-dedicated-bformat-master-track-as-the-single-source-of-truth&#34;&gt;Decision 1 — A dedicated &lt;code&gt;Bformat-Master&lt;/code&gt; track as the single source of truth&lt;/h2&gt;
+&lt;p&gt;All source material — regardless of how many encoders or source tracks are active — feeds into one dedicated B-Format master bus before decoding. No source track sends audio directly to a decoder or to the speaker outputs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why:&lt;/strong&gt; When multiple composers work in the same session over several days, it is easy for a source track to be accidentally routed to a monitoring bus or a decoder input that was meant for another signal. A single, named B-Format master makes the signal path visible and auditable at a glance. It also means that recording a &amp;ldquo;dry B-Format capture&amp;rdquo; of the full mix — useful for archiving or offline binaural rendering — requires exactly one send, from one track.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;decision-2--decoder-layer-fully-separated-from-the-source-layer&#34;&gt;Decision 2 — Decoder layer fully separated from the source layer&lt;/h2&gt;
+&lt;p&gt;The decoder (AmbiDecoder) receives only from the &lt;code&gt;Bformat-Master&lt;/code&gt;. It does not sit in a chain with source tracks, and its output goes directly to the speaker output bus — nowhere else.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why:&lt;/strong&gt; Mixing the decode stage with source processing is the most common source of hard-to-diagnose level and phase anomalies in Ambisonics sessions. If a source track&amp;rsquo;s gain is wrong, that is audible immediately and locally. If the decoder is misconfigured — wrong order, wrong normalisation convention, wrong speaker preset — it affects every source simultaneously and the artefacts can appear to be a room problem rather than a routing problem. Keeping the decoder isolated means any misconfiguration is unambiguously in one place.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;decision-3--speaker-output-and-binaural-monitoring-as-parallel-paths&#34;&gt;Decision 3 — Speaker output and binaural monitoring as parallel paths&lt;/h2&gt;
+&lt;p&gt;The session template includes two monitoring paths that are mutually exclusive by convention: the 31-speaker hardware output and a stereo binaural render. Both decode from the same &lt;code&gt;Bformat-Master&lt;/code&gt;. Switching between them is a matter of muting one output bus and unmuting the other — no routing changes, no re-patching.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why:&lt;/strong&gt; Composers working in the studio frequently want to check their mix on headphones before committing to a speaker session booking, or want to send a rough binaural export to a collaborator. If binaural monitoring requires re-routing the session, it becomes a disruption and often gets skipped. With parallel paths in the template, it is a one-click toggle that does not touch the spatial signal chain.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;decision-4--consistent-naming-and-channel-conventions&#34;&gt;Decision 4 — Consistent naming and channel conventions&lt;/h2&gt;
+&lt;p&gt;All tracks in the template follow a naming convention: &lt;code&gt;[number]_[function]_[format]&lt;/code&gt;, e.g. &lt;code&gt;01_source_mono&lt;/code&gt;, &lt;code&gt;10_bformat-master_HOA3&lt;/code&gt;, &lt;code&gt;20_decoder_out&lt;/code&gt;. Channel counts are fixed per track type and documented in the template.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why:&lt;/strong&gt; In a 31-channel environment, a single misassigned channel can produce an output that is indistinguishable from a speaker hardware failure. Consistent naming means that a guest artist or technician can audit the signal path in under a minute without needing to open every plugin. It also makes REAPER&amp;rsquo;s track list readable as documentation — a new resident can understand the session architecture before pressing play.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;common-failure-points-this-setup-prevents&#34;&gt;Common failure points this setup prevents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mixed HOA orders on the B-Format master:&lt;/strong&gt; Adding a third-order source to a first-order session silently degrades to first-order when both feed the same master. The template documents the target order prominently in the master track name.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring fed from the wrong bus:&lt;/strong&gt; A direct send from a source track to the speaker output bypasses the decoder and produces a mono or stereo signal through a 31-speaker array — audible immediately, but confusing to diagnose. The separated layers make this structurally impossible in the template.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decoder preset mismatch after a system update:&lt;/strong&gt; Speaker coordinate files are referenced by absolute path in the template and version-tagged in the filename. Loading the wrong preset is the most common cause of incorrectly localised sources after a software update.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;related-resources&#34;&gt;Related resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/stereo-to-hoa7-session/&#34;&gt;From Stereo to HOA7: A Step-by-Step Session&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/post/multi-decoder-mode/&#34;&gt;ICST AmbiDecoder — Multi-Decoder Mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/for-residents/&#34;&gt;ICST Kompositionsstudio — Guide for Residents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ambisonics.ch/blog/icst-composer-studio-overview/&#34;&gt;ICST Kompositionsstudio Overview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+
+    </item>
     <item>
       <title>Ambisonics.ch Relaunch 2026 - Was ist neu</title>
       <link>https://ambisonics.ch/post/relaunch-2026/</link>
