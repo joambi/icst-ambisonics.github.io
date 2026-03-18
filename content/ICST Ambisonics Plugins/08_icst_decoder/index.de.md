@@ -3,56 +3,61 @@ title: ICST Decoder
 date: 2025-01-01T00:00:00
 weight: 90
 draft: false
----
-Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste
-
+description: "Leitfaden zum ICST Decoder für Lautsprecherwiedergabe in Ambisonics-Sessions: wann man ihn einsetzt, wie der Grundaufbau aussieht und welche Fehler vermieden werden sollten."
 ---
 
-# ICST Ambisonics Decoder
+Level: Intermediate | Zielgruppe: Techniker:in, Komponist:in, Studierende, Studio-User.
 
-Decodierung ist die zentrale Schnittstelle zwischen dem Ambisonics-B-Format und der physischen Lautsprecherwiedergabe – ihre Qualität bestimmt räumliche Präzision, Tiefenstaffelung und Lokalisation.
+Nutze diese Seite, wenn du verlässliche Lautsprecherwiedergabe aus dem Bformat Master brauchst und einen Decoder auf ein reales Lautsprecher-Array abstimmen willst.
 
-Während die binaurale Wiedergabe über Kopfhörer durch etablierte Plug-ins (z. B. IEM, SPARTA) heute weitgehend ausgereift ist, bleibt die Decodierung für reale Lautsprecheranordnungen eine technisch und psychoakustisch anspruchsvolle Aufgabe. Geometrie, Laufzeiten, Gewichtungen, Filterung und Ambisonics-Ordnung müssen präzise aufeinander abgestimmt werden.
+## Wann du den ICST Decoder verwenden solltest
 
-Der **ICST Ambisonics Decoder** ist ein leistungsfähiges, praxisorientiertes Werkzeug, das speziell für flexible Lautsprecheraufbauten in Studio- und Live-Kontexten entwickelt wurde. Neben Standardkonfigurationen (z. B. Quadro, Oktagon, 7.1.4) können auch asymmetrische oder individuell eingemessene Lautsprecheranordnungen präzise abgebildet werden.
+Nutze den **ICST Decoder**, wenn:
 
-Der Decoder wurde im Kontext des 3D-Kompositionsstudios der ZHdK entwickelt und kontinuierlich im Studio- und Konzertbetrieb erprobt. Ziel war ein **flexibles, reproduzierbares und klanglich transparentes Decodiersystem** für Higher-Order-Ambisonics-Workflows.
+- du Wiedergabe auf einem definierten Lautsprecher-Array brauchst
+- du Lautsprecher-Presets für einen Raum laden oder erstellen willst
+- du Kontrolle über Ambisonics-Ordnung, Gewichtung, Laufzeiten und Filterung brauchst
+- du reproduzierbares Lautsprecher-Monitoring in REAPER willst
 
----
+Für reines Kopfhörer-Monitoring sollte ein separater **Binaural-Decoder** verwendet werden.
+
+## Was der Decoder macht
+
+Decodierung ist die Stufe zwischen dem Ambisonics-B-Format-Feld und der physischen Lautsprecherwiedergabe. Geometrie, Laufzeit, Gewichtung, Filterung und Ordnung beeinflussen das resultierende räumliche Bild.
+
+Der **ICST Decoder** wurde für flexible Lautsprecher-Setups in Studio- und Live-Kontexten entwickelt. Neben Standard-Arrays wie Quadro, Oktagon oder 7.1.4 kann er auch asymmetrische oder individuell eingemessene Lautsprecher-Anordnungen verarbeiten.
 
 ## Plugin-Formate
 
-Die **ICST Ambisonics Decoder Plugins** sind verfügbar als:
-- VST3
-- AU (Component)
-- LV2 _(experimentell – nicht für den Produktionseinsatz empfohlen)_
+Der **ICST Decoder** ist verfügbar als:
 
-Wiki: [ICST AmbiDecoder · schweizerweb/icst-ambisonics-plugins Wiki · GitHub](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
+- `VST3`
+- `AU (Component)`
+- `LV2`  
+  LV2 ist experimentell und sollte nicht als Hauptpfad für die Produktion betrachtet werden.
 
-Alle Beispiele in diesem Artikel werden in REAPER durchgeführt. REAPER unterstützt bis zu 128 Audiokanäle pro Spur und eignet sich daher besonders gut für Higher-Order-Ambisonics-Produktionen.
+Alle Beispiele auf dieser Seite gehen von **REAPER** aus, das bis zu 128 Audiokanäle pro Spur unterstützt.
 
----
-
-## Übersicht ICST Ambisonics Decoder
+## Übersicht
 
 ![ICST Ambisonics Decoder Übersicht](decoder-overview.png)
 
-### Hauptbereiche der Benutzeroberfläche
+### Hauptbereiche der Oberfläche
 
-1. **Radar – horizontale Ansicht** der Lautsprecheranordnung (ICST Kompositionsstudio)
-2. **Vertikale Radar-Ansicht (Z-Achse)**
+1. **Radar** für die horizontale Lautsprecheransicht
+2. **Vertikale Radar-Ansicht**
 3. **Lautsprecherparameter**
-    - CH = Index
-    - Name = Lautsprecherbezeichnung
-    - Koordinaten: Kartesisch (XYZ) & Polar (Azimut, Elevation, Distanz)
+   - Kanalindex
+   - Lautsprechername
+   - kartesische und polare Koordinaten
 
 > [!tip]
-> Doppelklick auf die Parameterfelder ermöglicht die direkte Eingabe von Werten.
+> Doppelklick auf Parameterfelder erlaubt direkte Eingabe.
 
-### Einstellungen & Hilfe <img src="speaker-settings-icon.png" width="16" style="vertical-align: middle;">
+### Einstellungen und Hilfe
 
-4. Zahnrad-Icon → Öffnet das _Lautsprecher-Einstellungen_-Fenster
-5. Fragezeichen → Hilfefenster
+4. Zahnrad-Icon -> Lautsprecher-Einstellungen  
+5. Fragezeichen -> Hilfe-Fenster
 
 **Lautsprecher-Parameter-Editor:**
 
@@ -60,145 +65,96 @@ Alle Beispiele in diesem Artikel werden in REAPER durchgeführt. REAPER unterst�
 
 ### Tastenkürzel
 
-| Aktion                              | Kürzel             |
-| ----------------------------------- | ------------------ |
-| Ausgewählte Quelle/Lautsprecher muten | `Ctrl + Shift + M` |
-| Ausgewählte Quelle/Lautsprecher solo  | `Ctrl + Shift + S` |
+| Aktion | Kürzel |
+|---|---|
+| Ausgewählte Quelle oder Lautsprecher muten | `Ctrl + Shift + M` |
+| Ausgewählte Quelle oder Lautsprecher solo | `Ctrl + Shift + S` |
 
-> [!example]
-> Video: ICST Ambisonics Plugins Übersicht
-> https://www.youtube.com/watch?v=xkauhHMYt5k
-
-> [!info]
-> Wiki: ICST Ambisonics Plugins
-> https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
-
----
-
-## Workflow: Ambisonics-Decodierung in REAPER
+## Empfohlene REAPER-Struktur
 
 ![Workflow-Schema](CleanShot%202026-02-10%20at%2017.28.25@2x.png)
 
-### Empfohlene Spurstruktur
+Lege drei 64-Kanal-Spuren an:
 
-Drei 64-Kanal-Audiospuren in REAPER anlegen:
+1. **B-Format-Quellspur**
+2. **Ambisonics-Bus / Bformat Master**
+3. **Decoder-Spur**
 
 ![Spuraufbau](CleanShot%202026-02-10%20at%2017.36.04@2x.png)
 
-1. **B-Format-Quellspur** – Ambisonics-Datei 1.–7. Ordnung
-2. **Ambisonics-Bus** – sammelt mehrere B-Format-Signale, beherbergt Mastering-FX
-3. **Decoder-Spur** – beherbergt den ICST Ambisonics Decoder, Ausgabe an Lautsprecher
+Diese Trennung hält die Session übersichtlich und vereinfacht spätere Fehlersuche deutlich.
 
-Diese klare Trennung gewährleistet Transparenz, Modularität und reproduzierbare Setups.
+## Grundaufbau
 
----
+1. Den **ICST AmbiDecoder** auf der Decoder-Spur einsetzen.
+2. Die Lautsprecher-Einstellungen öffnen.
+3. Ein Preset laden oder das eigene Lautsprecher-Layout definieren.
+4. Ambisonics-**Ordnung** und **Kanalgewichtung** setzen.
+5. Bei Bedarf Raumdimensionen skalieren.
+6. Vor Probe, Aufnahme oder Export einen Lautsprechertest durchführen.
 
-## ICST AmbiDecoder – Schritt-für-Schritt-Einrichtung
+![Plugin hinzufügen](CleanShot%202026-02-10%20at%2017.54.52@2x.png)
+![Lautsprecher bearbeiten](Speaker_Editing.gif)
+![Ambisonics-Ordnung](CleanShot%202026-02-11%20at%2009.30.18@2x.png)
 
-1. Das **ICST AmbiDecoder**-Plugin zur Decoder-Spur hinzufügen.
+## Kontrolle pro Lautsprecher
 
-    ![Plugin hinzufügen](CleanShot%202026-02-10%20at%2017.54.52@2x.png)
+Lautsprecherspezifische Parameter können direkt bearbeitet und als Presets gespeichert werden.
 
-    Standardmäßig öffnet der Decoder mit der Stereo-Einstellung (90°).
+![Lautsprecher-Einstellungen Detail](CleanShot%202026-02-10%20at%2018.57.37@2x.png)
 
-    ![Lautsprecher-Voreinstellung auswählen](Choose_Quadro.gif)
+Optional steht eine Filterung pro Lautsprecher zur Verfügung:
 
-2. Das _Lautsprecher-Einstellungen_-Fenster öffnen (Zahnrad-Icon → „Speaker"). Eine der vielen Standard-Voreinstellungen (Presets) auswählen oder eine eigene Lautsprecherkonfiguration eingeben.
-
-    ![Lautsprecher bearbeiten](Speaker_Editing.gif)
-
-3. Optional den **Filter**-Bereich aktivieren, um einzelne Lautsprecher zu entzerren.
-
-    ![Filter aktivieren](CleanShot%202026-02-11%20at%2011.05.51@2x.png)
-
-    Verfügbare Filtertypen pro Lautsprecher:
-
-    ![Filtertypen](CleanShot%202026-02-11%20at%2011.11.32@2x.png)
-
-    > [!todo]
-    > Screenshot hinzufügen: eingemessenes Lautsprecher-Setup des ICST Kompositionsstudios
-
-4. Unter **„Lautsprecher"** die Lautsprecherparameter direkt bearbeiten und als Voreinstellung speichern.
-
-    ![Lautsprecher-Einstellungen Detail](CleanShot%202026-02-10%20at%2018.57.37@2x.png)
-
-5. Unter **„Ambisonics"** die gewünschte Ordnung (bis zur 7. Ordnung) und Kanalgewichtungen auswählen.
-
-    ![Ambisonics-Ordnung](CleanShot%202026-02-11%20at%2009.30.18@2x.png)
-
-6. Raumdimensionen bei Bedarf skalieren – Lautsprecherkoordinaten und Laufzeiten werden automatisch neu berechnet.
-
-    ![Raumskalierung](CleanShot%202026-02-11%20at%2010.19.42@2x.png)
-
----
+![Filtertypen](CleanShot%202026-02-11%20at%2011.11.32@2x.png)
 
 ## Audio-Testfunktion
 
 ![Audio-Test](Decoder%20Audio%20test.gif)
 
-Der Decoder verfügt über einen integrierten Testbereich:
+Der integrierte Testbereich enthält:
 
 - Pink-Noise-Generator
-- Einzeltest pro Lautsprecher
-- Sequenzieller Test aller Lautsprecher im Uhrzeigersinn („Test all speakers")
-- Stumm / Solo mit `Ctrl + Shift + M` / `Ctrl + Shift + S`
+- Einzeltests pro Lautsprecher
+- sequenziellen Lautsprechertest
+- Mute- und Solo-Kürzel
 
-Dies ermöglicht eine schnelle technische Überprüfung des gesamten Systems vor Probe oder Aufführung.
+Das ist der schnellste Weg, um zu prüfen, ob physisches System, Preset und Ausgangszuordnung zusammenpassen.
 
----
+## Schnellcheck vor der Session
 
-### Schnellcheck vor Session / Konzert (60 Sek.)
+Vor Probe oder Aufnahme kurz prüfen:
 
-Bevor du mit Probe oder Aufnahme startest, prüfe kurz:
+1. Pegel am Decoder-Eingang sichtbar
+2. Lautsprecher-Reihenfolge passt zum Raum
+3. das richtige Preset ist geladen
+4. Decoder-Ordnung passt zur B-Format-Quelle
+5. Lautsprecher- und binaurales Monitoring laufen nicht unbeabsichtigt parallel
 
-1. **Routing aktiv:** Pegel am Decoder-Eingang sichtbar.
-2. **Lautsprecher-Reihenfolge korrekt:** „Test all speakers“ läuft in erwarteter physischer Reihenfolge.
-3. **Voreinstellung geladen:** passendes Setup (Raum / Array / Ordnung) ist aktiv.
-4. **Ordnung konsistent:** Decoder-Ordnung passt zur B-Format-Quelle.
-5. **Monitoring klar:** Lautsprecher- oder binauraler Abhörweg ist eindeutig (keine unbeabsichtigte Doppelabhöre).
+> [!tip]
+> Presets mit einem stabilen Schema speichern, zum Beispiel `Room_Array_Order_Date`.
 
-> [!Tip]
-> Speichere Voreinstellungen pro Raum mit einem stabilen Namensschema, z. B.:
-> `RoomName_Array_Order_Date` (Beispiel: `ICST_Octagon_O5_2026-03`).
+## Häufige Fehler
 
-### Fehlerbehebung (Kurz)
+- die falsche Spur wird in den Decoder geschickt
+- ein Lautsprecher-Preset passt nicht zur realen Hardware-Ausgangszuordnung
+- Ordnung und Gewichtung werden nicht gegen das Quellmaterial geprüft
+- der Decoder wird fälschlich als Render-Ziel behandelt statt der Bformat Master
+- Lautsprecher- und binaurales Monitoring laufen unbeabsichtigt gleichzeitig
 
-- **Kein Decoder-Ausgang:** Send vom Ambisonics-Bus zur Decoder-Spur prüfen und 64 Kanäle bestätigen.
-- **Falsche Lokalisation:** Lautsprecher-Voreinstellung mit der realen Hardware-Ausgangszuordnung abgleichen.
-- **Diffuse Höhenabbildung:** Ordnung/Gewichtung prüfen und ggf. MultiDecoder-Layer-Trennung verwenden.
-- **Unausgewogene Pegel:** Pro-Lautsprecher-Filter sowie Distanz/Laufzeiten im Lautsprecher-Editor nachjustieren.
-- **Voreinstellung passt im neuen Raum nicht:** Raumskalierung neu setzen und unter neuem Namen speichern.
-
-### Nächster Schritt
-
-Wenn dein Array mehrere Höhenschichten nutzt (z. B. Boden / Mitte / Höhe), gehe weiter zu:
-**[ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)**
-für ebenenspezifische Ordnung, Filterung und Lautsprecher-Teilmengen.
-
-## Voreinstellungen speichern & laden
+## Presets
 
 ![Voreinstellungen speichern](save%20decoder%20presets.gif)
 
-Lautsprecherkonfigurationen können als Voreinstellungen gespeichert und jederzeit neu geladen werden. Dies gewährleistet Reproduzierbarkeit über Sessions und Spielorte hinweg.
+Lautsprecher-Presets können jederzeit gespeichert und erneut geladen werden. Das ist zentral für reproduzierbare Raum-Setups.
 
-> [!tip]
-> Die Lautsprecherkonfiguration als TXT-Datei exportieren und über ein `coll` in das externe `ambidecode~`-Objekt laden.
+## Nächster Schritt
 
-![TXT-Export](CleanShot%202026-02-11%20at%2014.23.51@2x.png)
+Wenn dein Array mehrere Höhenebenen oder unterschiedliche Lautsprecher-Subsets verwendet, gehe weiter zu:
 
----
+- [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
 
-## Zusammenfassung
+Verwandte Seiten:
 
-Der ICST Ambisonics Decoder bietet:
-
-- Präzise Higher-Order-Ambisonics-Decodierung
-- Flexible Lautsprechergeometrien (symmetrisch & asymmetrisch)
-- Lautsprecherindividuelle Filterung und Entzerrung
-- Integrierte Test- und Messfunktionen
-- Multi-Layer-MultiDecoder-Architektur
-- Voreinstellungs-Verwaltung für reproduzierbare Setups
-- Nahtlose Integration in professionelle DAW-Workflows
-
-Er bildet damit eine robuste Grundlage für künstlerische, wissenschaftliche und produktionsorientierte Anwendungen im Bereich 3D-Audio.
-
+- [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [B-Format in REAPER rendern](/icst-ambisonics-plugins/12_render_bformat/)
+- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)

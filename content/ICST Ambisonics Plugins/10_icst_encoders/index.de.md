@@ -3,100 +3,119 @@ title: ICST Encoders
 date: 2025-01-01T00:00:00
 weight: 80
 draft: false
----
-Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste
-
+description: "Leitfaden zu den ICST Encoders für Quellenpositionierung, Bewegung, Gruppierung und OSC-basierte Steuerung in Ambisonics-Sessions."
 ---
 
-# ICST AmbiEncoders
+Level: Intermediate | Zielgruppe: Komponist:in, Techniker:in, Studierende, Interactive-Media-User.
 
-Die **ICST AmbiEncoders** positionieren und bewegen Klangquellen innerhalb des Ambisonics-B-Format-Feldes. Zwei Encoder-Varianten stehen zur Verfügung:
+Nutze diese Seite, wenn du Quellen im Ambisonics-Feld platzieren, bewegen, gruppieren oder automatisieren willst.
 
-- **Mono-Encoder (A)** – Positioniert oder bewegt eine einzelne Mono-Quelle im 3D-Raum.
-- **Multi-Encoder (B)** – Positioniert oder bewegt bis zu 64 Quellen pro Audiospur, organisiert in bis zu 8 Gruppen. Jede Gruppe kann relativ zu ihrem Gruppenzentrum manipuliert werden, was komplexe räumliche Choreografien ermöglicht.
+## Welchen Encoder solltest du verwenden?
 
-Ein wesentliches Merkmal der ICST-Encoder ist die integrierte **Distanzsimulation**: Ein Distanz-Scaler wendet Tiefpassfilterung und einen einfachen Doppler-Effekt an, um Tiefen- und Nähewahrnehmung zu modellieren.
+Nutze **MonoEncoder**, wenn:
 
-Ein- und ausgehende Parameter können über [OSC](https://en.wikipedia.org/wiki/Open_Sound_Control) gesendet und empfangen werden.
+- du jeweils nur eine Quelle positionieren willst
+- du den Workflow gerade lernst
+- du das klarste Routing pro Quelle willst
 
-> [!info]
-> Wiki: [ICST AmbiEncoder · GitHub](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
+Nutze **MultiEncoder**, wenn:
 
-> [!example]
-> Video: ICST Ambisonics Plugins – 02 – Encoder und Routing
-> https://youtu.be/-U0t8sjeTsw?si=zJh9QpgOKeFe2BL0
+- du viele Quellen in einer Oberfläche steuern willst
+- du Quellengruppen brauchst
+- du größere Bewegungsstrukturen aufnehmen oder editieren willst
+- du OSC-basierte Interaktion mit mehreren Quellen planst
 
----
+## Was die Encoder machen
+
+Die **ICST Encoders** positionieren und bewegen Klangquellen im Ambisonics-B-Format-Feld.
+
+- **MonoEncoder** arbeitet mit einer einzelnen Mono-Quelle.
+- **MultiEncoder** verarbeitet bis zu 64 Quellen auf einer Spur und organisiert sie in bis zu 8 Gruppen.
+
+Ein prägendes Merkmal ist die integrierte **Distanzsimulation**, die Tiefpassfilterung und einen Doppler-ähnlichen Effekt kombiniert, um Tiefenwahrnehmung zu formen.
+
+Durch OSC-Ein- und Ausgang sind die Encoder auch für controllerbasierte und algorithmische Workflows geeignet.
 
 ## Übersicht
 
-![ICST AmbiEncoder overview](CleanShot 2026-03-04 at 14.27.47@2x.png)
+![ICST AmbiEncoder overview](<CleanShot 2026-03-04 at 14.27.47@2x.png>)
 
-| Label | Beschreibung                                                        |
-| ----- | ------------------------------------------------------------------- |
-| **A** | Mono-Encoder – positioniert/bewegt eine einzelne Mono-Quelle        |
-| **B** | Multi-Encoder – positioniert/bewegt bis zu 64 Quellen pro Spur      |
-
----
+| Label | Beschreibung |
+|---|---|
+| **A** | MonoEncoder für eine einzelne Quelle |
+| **B** | MultiEncoder für bis zu 64 Quellen pro Spur |
 
 ## Benutzeroberfläche
 
 ### Hauptbedienelemente
 
-1. **Einstellungen** – Öffnet das Encoder-Einstellungsfenster
-2. **Hilfe** – Öffnet das Hilfefenster
+1. **Einstellungen**
+2. **Hilfe**
 
-### Quellen-Fenster (3)
+### Quellen-Fenster
 
-![AmbiEncoder source window](CleanShot 2026-03-04 at 15.02.00@2x.png)
+![AmbiEncoder source window](<CleanShot 2026-03-04 at 15.02.00@2x.png>)
 
-Zeigt und steuert einzelne Quellen. Jede Quelle kann nach Azimut, Elevation und Distanz positioniert werden.
+In diesem Bereich werden einzelne Quellen über Azimut, Elevation und Distanz angezeigt und gesteuert.
 
-### Encoding-Einstellungen (4)
+### Encoding-Einstellungen
 
-![AmbiEncoder encoding settings](CleanShot 2026-03-04 at 15.02.47@2x.png)
+![AmbiEncoder encoding settings](<CleanShot 2026-03-04 at 15.02.47@2x.png>)
 
-Konfiguriert die Ambisonics-Encoding-Parameter wie Ordnung und Kanalformat.
+Hier werden zentrale Encoding-Parameter wie Ordnung und Kanalformat gesetzt.
 
-### Radar (5)
+### Radar
 
-Visuelle Draufsicht des Schallfeldes mit den aktuellen Positionen aller Quellen.
+Das Radar zeigt das Feld in Draufsicht und macht Quellenpositionen und Gruppen direkt editierbar.
 
----
+## Gruppierung und Bewegung
 
-## OSC-Integration (6 & 7)
+MultiEncoder ist besonders dann sinnvoll, wenn räumliche Bewegung nicht nur individuell, sondern strukturell gedacht wird:
 
-6. **OSC-Eingänge & JavaScript** – Empfängt OSC-Nachrichten und ermöglicht benutzerdefiniertes JavaScript zur Parametersteuerung
-7. **OSC-Ausgang** – Sendet den Encoder-Zustand als OSC-Nachrichten an externe Anwendungen
+- mehrere Quellen können gruppiert werden
+- Gruppen lassen sich relativ zu ihrem Gruppenzentrum bewegen
+- größere räumliche Choreografien können aufgenommen und verfeinert werden
+
+Nutze Gruppen, wenn die Szene als zusammenhängendes Objekt funktionieren soll und nicht als Sammlung unabhängiger Einzelquellen.
+
+## OSC-Integration
+
+- **OSC-Eingang und JavaScript** empfangen externe Steuernachrichten
+- **OSC-Ausgang** sendet den Encoder-Zustand an Controller oder externe Anwendungen
 
 > [!example]
-> Video: ICST Ambisonics Plugins – 03 – OSC Teil 1
+> Video: ICST Ambisonics Plugins – 03 – OSC Teil 1  
 > https://youtu.be/7_s-jaUQa14?si=NM8TPRrigY_egDfC
 
----
+Für Setup und Syntax:
+
+- [OSC](/icst-ambisonics-plugins/13_osc/)
 
 ## Weitere Bedienelemente
 
-8. **Distanz-Scaler** – Simuliert die Distanzwahrnehmung über Tiefpassfilterung und Doppler-Effekt
-9. **Infiniti** – Aktiviert den Unendlich-Distanz-Modus und platziert Quellen an der Fernfeld-Grenze
-10. **Gain / Lautstärke** – Regelt den Eingangs- oder Ausgangs-Gain des Encoders
-11. **Import & Export** – Importiert oder exportiert Quellkonfigurationen als Dateien
-12. **Gruppen-Editor** – Verwaltet Quellengruppen; jede Gruppe kann relativ zu ihrem Gruppenzentrum repositioniert werden
+8. **Distanz-Scaler**  
+   Simuliert Tiefe über Tiefpassfilterung und Doppler-ähnliches Verhalten.
+9. **Infiniti**  
+   Platziert Quellen an der Fernfeld-Grenze.
+10. **Gain / Lautstärke**  
+   Regelt den Eingangs- oder Ausgangspegel des Encoders.
+11. **Import & Export**  
+   Speichert oder lädt Quellkonfigurationen.
+12. **Gruppen-Editor**  
+   Verwaltet Quellengruppen und relative Repositionierung.
+13. **Presets speichern & laden**  
+   Speichert komplette Encoder-Zustände für reproduzierbare Setups.
 
-#### Beispiel: Gruppen erstellen
+## Häufige Fehler
 
-#### Beispiel: Gruppenmanipulation & Animation
+- MultiEncoder wird genutzt, obwohl eine einfache MonoEncoder-Spur klarer wäre
+- Distanz-Skalierung wird spät im Projekt verändert und bricht die Bewegungskonsistenz
+- vergessen wird, dass das Encoder-Routing trotzdem in einen stabilen Bformat Master führen muss
+- OSC wird als Pflicht behandelt, obwohl normale REAPER-Automation ausreichen würde
+- Quellen werden gruppiert, ohne klare Benennung, was spätere Bearbeitung erschwert
 
-13. **Presets speichern & laden** – Speichert und lädt vollständige Encoder-Konfigurationen
+## Nächster Schritt
 
----
-
-## Zusammenfassung
-
-Die ICST AmbiEncoders bieten:
-
-- Mono- und Mehrquellen-Encoding (bis zu 64 Quellen pro Spur)
-- Gruppenbasierte räumliche Choreografie mit bis zu 8 Gruppen
-- Distanzsimulation mit Tiefpassfilterung und Doppler-Effekt
-- Vollständige OSC-Integration (Eingang, Ausgang und JavaScript-Scripting)
-- Preset-Verwaltung für reproduzierbare Sessions
+- [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [OSC](/icst-ambisonics-plugins/13_osc/)
+- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)

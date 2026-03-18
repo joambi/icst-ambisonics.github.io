@@ -5,9 +5,7 @@ description: "Fast reference guide for opening the ICST MultiEncoder project tem
 date: 2025-01-28T14:31:00
 ---
 
-Level: Beginner | **Audience:** Composer, Student, Technician.
-
-Reference quick-start for a working ICST Ambisonics session in REAPER using the MultiEncoder project template.
+Level: Beginner | Audience: Composer, technician, student, studio user.
 
 Use this page when you want the shortest path to a verified first session. For the full setup logic and routing details, continue with [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/).
 

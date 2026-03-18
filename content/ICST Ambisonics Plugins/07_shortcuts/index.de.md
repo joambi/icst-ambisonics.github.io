@@ -2,9 +2,12 @@
 title: Tastaturkürzel
 weight: 140
 date: 2025-01-22T14:36:00
+description: "Kürzel-Referenz für die Oberflächen von ICST Encoder und Decoder in REAPER, inklusive Radar-Interaktion und Multi-Source-Gesten."
 ---
 
-Referenzliste der wichtigsten Interaktionskürzel für die Benutzeroberflächen von ICST Encoder und Decoder.
+Level: Referenz | Zielgruppe: Komponist:in, Techniker:in, Studierende, Advanced User.
+
+Nutze diese Seite, wenn du den Grundworkflow schon kennst und während der Bearbeitung von Quellen, Gruppen und Lautsprecherauswahl eine kompakte Kürzel-Referenz brauchst.
 
 ## Kürzel für Encoder und Decoder
 

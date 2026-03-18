@@ -2,9 +2,12 @@
 weight: 140
 title: Shortcuts
 date: 2025-01-22T14:36:00
+description: "Shortcut reference for the ICST Encoder and Decoder interfaces in REAPER, including radar interaction and multi-source editing gestures."
 ---
 
-Reference list of the main interaction shortcuts for the ICST Encoder and Decoder interfaces.
+Level: Reference | Audience: Composer, technician, student, advanced user.
+
+Use this page when you already know the basic workflow and want a compact shortcut reference while editing sources, groups, and speaker selections.
 
 ## Encoder and decoder shortcuts
 

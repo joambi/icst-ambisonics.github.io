@@ -6,6 +6,10 @@ weight: 125
 draft: false
 ---
 
+Level: Intermediate | Audience: Composer, technician, student, studio user.
+
+Use this page when you already know the basic setup and want working habits that reduce routing errors, monitoring problems, and export mistakes.
+
 Short, reliable rules for stable Ambisonics sessions in REAPER: clean routing, repeatable decoder setups, and less troubleshooting before recording, rehearsal, or export.
 
 ## 1. Set the session baseline first

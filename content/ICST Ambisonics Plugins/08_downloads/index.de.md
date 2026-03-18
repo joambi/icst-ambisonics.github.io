@@ -3,11 +3,38 @@ tags:
 date: 2025-01-15T16:21:00
 title: Downloads
 weight: 140
+description: "Alle Download-Links für die ICST Ambisonics Plugins, die ICST Ambisonics Tools für Max/MSP sowie Templates, Presets und Anleitungen."
 ---
 
-Referenzlinks für Plugin-Binaries und das zugehörige Paket der Ambisonics Tools.
+Level: Referenz | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.
 
-## Downloads
+Nutze diese Seite, wenn du aktuelle Plugin-Releases, Max/MSP-Tools oder ergänzende Pakete suchst, ohne dich durch die restliche Dokumentation zu klicken.
 
-- [ICST Ambisonics Plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
-- [ICST Ambisonics Tools](https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-ambisonics-externals-for-maxmsp-5381) (Bitte laden Sie die Ambisonics Tools über den 'Max Package Manager' herunter)
+## ICST Ambisonics Plugins
+
+Die zentrale Plugin-Suite für Encoding und Decoding von Ambisonics B-Format in REAPER. Kostenlos und Open Source.
+
+- [Aktuelles Release herunterladen](https://github.com/schweizerweb/icst-ambisonics-plugins/releases) — VST3 / AU / LV2 Installer für macOS und Windows
+- [GitHub-Repository und Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins) — Quellcode, Issue-Tracker und vollständige technische Dokumentation
+
+Enthält: AmbiEncoder (Mono + Multi), AmbiDecoder, MultiDecoder, Animator und OSC-Unterstützung.
+
+Für die Installationsanleitung siehe [Installation](/icst-ambisonics-plugins/02_installation/).
+
+## ICST Ambisonics Tools (Max/MSP)
+
+Ambisonics-Externals und Patches für Max/MSP — Encoding-, Decoding- und räumliche Bearbeitungsobjekte für den Einsatz in Max-Patches.
+
+- [Via Max Package Manager herunterladen](https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-ambisonics-externals-for-maxmsp-5381) — direkt in Max über den Package Manager installieren
+
+Hinweis: Die ICST Ambisonics Tools sind ein separates Paket von den REAPER-Plugins und werden unabhängig gepflegt.
+
+## Templates, Presets und Anleitungen
+
+Für REAPER-Session-Templates, Lautsprecher-Presets, Max-Patches, Ableton-Live-Templates und druckbare PDF-Anleitungen siehe den **[Downloads-Hub](/blog/downloads/)**.
+
+## YouTube-Kanal
+
+Tutorial-Videos zu den ICST Ambisonics Plugins:
+
+- [ZHDK ICST auf YouTube](https://www.youtube.com/@ICSTAmbisonics)

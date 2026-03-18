@@ -3,16 +3,44 @@ title: ICST MultiDecoder
 date: 2025-01-01T00:00:00
 weight: 100
 draft: false
+description: "Guide to the ICST MultiDecoder for layered or segmented loudspeaker arrays: when to use it, how the units work, and which mistakes to avoid."
 ---
 
-> [!warning]
-> 🚧 This section is currently under construction.
+Level: Advanced | Audience: Technician, advanced composer, studio operator, researcher.
 
----
+Use this page when a single decoder is no longer enough for your loudspeaker setup and you need separate decoding strategies for different speaker subsets or layers.
 
-## Overview – ICST MultiDecoder
+## When to use MultiDecoder
 
-The **ICST MultiDecoder** extends the conventional Ambisonics decoder by running up to four parallel decoder units within a single plugin. All units receive the same B-format input signal and route their output independently to different loudspeaker subsets. This enables differentiated spatial strategies – such as height-based or frequency-dependent segmentation – without leaving the field-based B-format paradigm.
+Use **ICST MultiDecoder** when:
+
+- your loudspeaker array has clearly different **height layers**
+- different loudspeaker subsets need different **order, weighting, or filter settings**
+- you want to compare decoding strategies inside one plugin
+- you want to keep one shared B-format input but distribute it differently across multiple zones
+
+## When a normal decoder is enough
+
+The standard **ICST Decoder** is usually enough when:
+
+- the array is symmetric and single-layered
+- one decoding strategy should apply to the whole speaker set
+- you do not need per-layer filtering or segmentation
+
+Do not use MultiDecoder just because it is available. It adds flexibility, but also adds setup complexity.
+
+## What MultiDecoder does
+
+The **ICST MultiDecoder** extends the normal decoder by running up to four parallel decoder units inside one plugin. All units receive the same B-format input, but each unit can address its own loudspeaker subset and use its own settings.
+
+This makes it possible to treat:
+
+- `Top`
+- `Mid`
+- `Bottom`
+- or other custom subsets
+
+as distinct playback layers without leaving the B-format workflow.
 
 ![MultiDecoder Overview](CleanShot%202026-02-11%20at%2013.46.56@2x.png)
 
@@ -20,78 +48,84 @@ The main controls at a glance:
 
 | # | Control | Function |
 |---|---------|----------|
-| 1 | **Multi-Decoder toggle** | Activates / deactivates the multi-decoder mode |
+| 1 | **Multi-Decoder toggle** | Activates / deactivates multi-decoder mode |
 | 2 | **Add Decoder** | Adds a new decoder unit (up to 4) |
-| 3 | **Volume & Mute** | Per-unit level control and mute |
-| 4 | **Filter Bands** | Opens the per-unit filter section |
+| 3 | **Volume & Mute** | Per-unit level and mute |
+| 4 | **Filter Bands** | Opens the filter section for that decoder unit |
 
-## How It Works
+## Basic setup
 
-### 1. Activate Multi-Decoder Mode
+Start with this minimal logic:
 
-Pressing the toggle (① in the overview) switches the plugin from standard single-decoder operation into multi-decoder mode. The toggle can be switched at any time, which makes direct A/B comparison between both modes straightforward.
+1. Route one stable **Bformat Master** into the decoder.
+2. Activate **MultiDecoder** mode.
+3. Add only the units you really need.
+4. Assign a clear loudspeaker subset to each unit.
+5. Name the units by function, for example `Mid Ring`, `Top`, `Sub`.
+6. Verify speaker order and level for each unit before changing weighting or EQ.
 
-### 2. Add and Manage Decoder Units
+The practical rule is: first make the routing work, then refine the decoding.
 
-New decoder units are added via the **+** button (②). Up to **four independent units** can run in parallel, each processing the same incoming B-format signal and sending its output to its own loudspeaker subset.
+## Typical layer strategies
 
 Typical use cases:
 
-- Height layers (e.g. _Top / Mid / Bottom_)
-- Frequency-based segmentation across layers
-- Different loudspeaker subsets within the same array
-- Side-by-side comparison of decoding strategies
-
-### 3. Individual Parameters per Unit
-
-Each active decoder unit can be configured independently:
-
-#### a) Loudspeaker Selection
-
-Each unit is assigned its own group of loudspeakers, selected from the overall speaker list. Subsets can be non-overlapping (e.g. floor / mid / ceiling) or freely defined.
+- **Top / Mid / Bottom** layer separation
+- frequency-dependent treatment across layers
+- separate decoding for special loudspeaker zones
+- A/B comparison of decoding strategies inside one session
 
 ![Loudspeaker selection](CleanShot%202026-02-11%20at%2013.55.43@2x.png)
 
-#### b) Ambisonics Sequence and Weighting
+### Ambisonics order and weighting
 
-Each unit can use a different **Ambisonics order** (how many spherical harmonics channels are decoded) and **channel weights** (e.g. Max-rE, Basic, In-Phase). Lower orders produce a wider, softer image; higher orders yield sharper localization. Weighting affects the trade-off between spatial focus and energy distribution.
+Each decoder unit can use its own **Ambisonics order** and **weighting**.
+
+- lower orders tend to sound wider and softer
+- higher orders give sharper localization
+- weighting changes the trade-off between focus and energy distribution
 
 ![Ambisonics sequence](CleanShot%202026-02-11%20at%2013.59.16@2x.png)
 
-#### c) Separate Filter Section
+### Per-layer filtering
 
-Each decoder unit has its own set of **filter bands** (④), allowing per-layer equalization. A common use case: applying a high-shelf cut to ceiling speakers to compensate for the different perception of elevated sound sources.
+Each unit also has its own filter section, which is useful when one layer should be treated differently from another, for example ceiling speakers versus the main ring.
 
 ![Filter section](CleanShot%202026-02-11%20at%2014.05.58@2x.png)
 
-#### d) Individual Audio Parameters
+### Per-unit audio parameters
 
 ![Audio parameters](CleanShot%202026-02-11%20at%2014.09.04@2x.png)
 
-Per unit (③):
+Per unit you can control:
 
-1. **Filter Enable/Disable** – activate or deactivate the filter section for this unit
-2. **Individual gain** – separate level control per decoder unit
-3. **Mute / Unmute** – quickly isolate or silence individual decoders
+1. **Filter on / off**
+2. **Individual gain**
+3. **Mute / unmute**
 
----
+## Why it matters
 
-## When to Use MultiDecoder
+Standard Ambisonics decoding applies one strategy to the whole loudspeaker set. In vertically extended arrays, this can produce a blurred height image because upper and middle layers are treated too uniformly.
 
-The standard single decoder is sufficient for symmetric, single-layer setups (e.g. Quadro, Octagon). MultiDecoder becomes useful when:
+By separating the array into decoder units, you can tune psychoacoustic parameters per layer while keeping the field-based Ambisonics structure intact.
 
-- the loudspeaker array has **distinct height layers** that benefit from different decoding parameters
-- **frequency-specific treatment** per layer is needed (e.g. reduced high-frequency content for ceiling speakers)
-- you want to **compare decoding strategies** within the same session without switching plugins
+That is why MultiDecoder is especially useful in:
 
----
+- complex studio arrays
+- vertically extended concert systems
+- research setups with comparison needs
 
-## Conceptual Background
+## Common mistakes
 
-Standard Ambisonics decoding applies the same algorithm uniformly across all loudspeakers. With vertically extended arrays, this can result in a **diffuse height image** – height layers blend into the mid layer and lose distinct spatial definition, making elevated sound sources harder to localize.
+- creating overlapping speaker subsets without intending to
+- changing order, weighting, EQ, and gain all at once before basic routing is verified
+- using MultiDecoder where a normal decoder would be simpler and clearer
+- naming units too vaguely, so later troubleshooting becomes difficult
+- skipping speaker-order verification after assigning a new subset
 
-By assigning separate decoder units to each layer, psychoacoustic parameters (order, weighting, EQ) can be tuned per layer. The result is a more precise depth layering and a more differentiated spatial structure, while the field-based nature of Ambisonics is fully preserved.
+## Related pages
 
-The ICST MultiDecoder thus provides an extended tool for both artistic and research-based applications in Higher-Order Ambisonics.
-
-
+- [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
+- [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [ICST AmbiDecoder — Multi-Decoder Mode](/post/multi-decoder-mode/)

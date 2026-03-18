@@ -2,12 +2,14 @@
 title: Schritt-für-Schritt-Setup
 weight: 50
 date: 2025-01-23T15:38:00
+description: "Detaillierte REAPER-Anleitung zum manuellen Aufbau einer ICST-Ambisonics-Session: Decoder, Bformat Master, binauraler Pfad, Encoder und Bewegungsaufnahme."
 ---
 
-# Schritt-für-Schritt-Setup-Anleitung für die ICST AmbiPlugins in Reaper
+Level: Beginner bis Intermediate | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.
 
----
-### Voraussetzungen
+Nutze diese Seite, wenn du das ICST-Ambisonics-Routing manuell aufbauen willst, statt nur mit einer fertigen Vorlage zu starten.
+
+## Voraussetzungen
 
 Bevor du startest, stelle sicher, dass **Reaper**, die **ICST Ambisonics Plugins** und alle empfohlenen **Drittanbieter-Plugins** installiert sind.
 
@@ -18,7 +20,7 @@ Bevor du startest, stelle sicher, dass **Reaper**, die **ICST Ambisonics Plugins
 > - ICST-Plugin-Set installiert und im FX-Browser sichtbar
 > - Ausgangszuordnung des Audio-Interfaces geprüft
 
-### Reaper-Vorlage erstellen
+## Reaper-Vorlage erstellen
 
 Wir erstellen die Vorlage Schritt für Schritt von oben nach unten.
 
@@ -41,15 +43,13 @@ Decoder-Routing für ein Oktagon-Setup:
 
 1. Öffne den **ICST AmbiPlugins Decoder** im **FX-Fenster**.
    ![open__FX_decoder](FX_Decoder.png)
-2. Öffne den AmbiDecoder.
-   ![open_decoder](open_decoder.gif)
-3. Wähle ein **Lautsprecher-Preset** (z. B. Oktagon).
+2. Öffne den AmbiDecoder und wähle ein **Lautsprecher-Preset** (z. B. Oktagon).
    ![open_dec](choose_dec_preset.gif)
-4. Passe die AmbiDecoder-Einstellungen an:
+3. Passe die AmbiDecoder-Einstellungen an:
    - Ambisonics-Gewichtung
    - Ambisonics-Ordnung (1. bis 7. Ordnung)
    ![Dec-setting](7_choose_dec_setting.gif)
-5. Führe einen Lautsprechertest durch:
+4. Führe einen Lautsprechertest durch:
    - Nutze die Schaltfläche **Lautsprechertest** oder prüfe einzelne Lautsprecher.
    ![speaker_test](speaker_test.png)
 
@@ -93,13 +93,11 @@ Erstelle die Spur **Bformat Master**:
 - Stummschalte den **AmbiDecoder**, wenn du nur binaural hören willst.
 
 ![Binaural-track](Binaural_Track.gif)
-![DearVR_binaural](DearVR_binaurl.png)
 
 > [!Tip]
 > Vergleiche die Wiedergabe per **Solo/Stumm** zwischen AmbiDecoder und Binaural-Decoder.
 
-![1.order_bf](first-order.png)
-Beispiel B unten zeigt eine B-Format-Datei in 5. Ordnung:
+Das folgende Beispiel zeigt eine B-Format-Datei 5. Ordnung auf der Player-Spur:
 
 ![5th-order_bf](5th-order-bf.png)
 Jetzt kannst du B-Format über Lautsprecher oder Kopfhörer kontrollieren.
@@ -121,7 +119,6 @@ Tip: Sieh dir dieses [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=119s)
 
 Mono-AmbiEncoder-Überblick:
 ![open monoencoder](MonoEncoder_01.png)
-![open_MonoEncoder](MonoEncoder_load.png)
 
 - Lade im FX-Fenster den **ICST MonoEncoder**.
 - Füge einen **AmbiEncoder (ICST)** (1-4) zur Mono-Quelle hinzu.
@@ -200,14 +197,13 @@ Zum Verständnis der Multi-Encoder-Logik:
 Beispiel mit **Src_3**:
 ![Encoder_move_03](Move_03.gif)
 
-Im nächsten Schritt bearbeitest du XYZ-Kurven manuell:
-![Manuel_edit](MultiEnc_Manuell_edit.gif)
-
 6. **XYZ-Kurven manuell bearbeiten**
 
 - Für feinere Bewegungen bearbeite die **XYZ-Kurven** manuell.
 - Halte **Shift** und klicke auf eine Kurve, um einen neuen Punkt zu erstellen.
 - Verschiebe den Punkt, um XYZ-Koordinaten anzupassen.
+
+![Manuel_edit](MultiEnc_Manuell_edit.gif)
 
 7. **Aufgenommene Ambisonics-Szene abspielen**
 
@@ -221,7 +217,6 @@ Im nächsten Schritt bearbeitest du XYZ-Kurven manuell:
 - Vergib einen **Gruppennamen** (z. B. **G1**).
 
 ![create_a_GP](GP_select_scaled.png)
-![GP_name](GP_edit_scaled.png)
 
 9. **Gruppenbewegungen aufnehmen**
 

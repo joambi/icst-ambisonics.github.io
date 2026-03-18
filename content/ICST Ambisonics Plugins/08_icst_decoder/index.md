@@ -3,200 +3,158 @@ title: ICST Decoder
 date: 2025-01-01T00:00:00
 weight: 90
 draft: false
----
-Institute for Computer Music and Sound Technology (ICST) · Zurich University of the Arts
-
+description: "Guide to the ICST Decoder for loudspeaker playback in Ambisonics sessions: when to use it, how to set it up, and which mistakes to avoid."
 ---
 
-# ICST Ambisonics Decoder
+Level: Intermediate | Audience: Technician, composer, student, studio user.
 
-Decoding is the central interface between the Ambisonics B-format and physical loudspeaker reproduction – its quality determines spatial precision, depth layering, and localization.
+Use this page when you want reliable loudspeaker playback from the B-format master and need a decoder that matches a real speaker array.
 
-While binaural playback over headphones is today largely mature through established plug-ins (e.g., IEM, SPARTA), decoding for real loudspeaker arrays remains a technically and psychoacoustically demanding task. Geometry, delay times, weightings, filtering, and Ambisonics order must all be precisely coordinated.
+## When to use ICST Decoder
 
-The **ICST Ambisonics Decoder** is a powerful, practical tool developed specifically for flexible loudspeaker setups in studio and live contexts. In addition to standard configurations (e.g., Quadro, Octagon, 7.1.4), asymmetric or individually measured loudspeaker arrangements can also be accurately mapped.
+Use the **ICST Decoder** when:
 
-The decoder was developed in the context of the ZHdK's 3D Composition Studio and has been continuously tested in studio and concert operation. The goal was to provide a **flexible, reproducible, and sonically transparent decoding system** for Higher-Order Ambisonics workflows.
+- you need playback on a defined loudspeaker array
+- you want to load or build speaker presets for a room
+- you need control over Ambisonics order, weighting, delay, and filtering
+- you want reproducible speaker-based monitoring in REAPER
 
----
-## Plugin Formats
+Use a separate **binaural decoder** when the goal is headphone monitoring only.
 
-The **ICST Ambisonics Decoder Plugins** are available as:
-- VST3
-- AU (Component)
-- LV2 _(experimental – not recommended for production use)_
+## What the decoder does
 
-Wiki: [ICST AmbiDecoder · schweizerweb/icst-ambisonics-plugins Wiki · GitHub](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
+Decoding is the stage between the Ambisonics B-format field and physical loudspeaker reproduction. Geometry, delay, weighting, filtering, and order all influence the resulting spatial image.
 
-All examples in this article are performed in REAPER. REAPER supports up to 128 audio channels per track and is therefore particularly well-suited for Higher-Order Ambisonics productions.
+The **ICST Decoder** was developed for flexible loudspeaker setups in studio and live contexts. In addition to standard arrays such as Quadro, Octagon, or 7.1.4, it can also handle asymmetric or individually measured speaker layouts.
 
----
+## Plugin formats
 
-## Overview ICST Ambisonics Decoder
+The **ICST Decoder** is available as:
+
+- `VST3`
+- `AU (Component)`
+- `LV2`  
+  LV2 is experimental and should not be treated as the main production path.
+
+All examples on this page assume **REAPER**, which supports up to 128 audio channels per track.
+
+## Overview
 
 ![ICST Ambisonics Decoder Overview](decoder-overview.png)
 
-### Main Areas of the User Interface
+### Main areas of the interface
 
-1. **Radar – horizontal view** of the loudspeaker arrangement (ICST Composition Studio)
-2. **Vertical radar view (Z-axis)**
+1. **Radar** for the horizontal speaker view
+2. **Vertical radar view**
 3. **Speaker parameters**
-    - CH = Index
-    - Name = loudspeaker label
-    - Coordinates: Cartesian (XYZ) & Polar (Azimuth, Elevation, Distance)
+   - channel index
+   - speaker name
+   - Cartesian and polar coordinates
 
 > [!tip]
-> Double-click the parameter fields to enter values directly.
+> Double-click parameter fields to enter values directly.
 
-### Settings & Help <img src="speaker-settings-icon.png" width="28">
+### Settings and help
 
-4. Gear icon → Opens the _Speaker Settings_ window
-5. Question mark → Help window
+4. Gear icon -> speaker settings window  
+5. Question mark -> help window
 
 **Speaker Parameter Editor:**
 
 ![Speaker Parameter Editor](CleanShot%202026-02-11%20at%2010.59.50@2x.png)
 
-### Keyboard Shortcuts
+### Keyboard shortcuts
 
-| Action                        | Shortcut           |
-| ----------------------------- | ------------------ |
-| Mute selected source/speaker  | `Ctrl + Shift + M` |
-| Solo selected source/speaker  | `Ctrl + Shift + S` |
+| Action | Shortcut |
+|---|---|
+| Mute selected source or speaker | `Ctrl + Shift + M` |
+| Solo selected source or speaker | `Ctrl + Shift + S` |
 
-> [!example]
-> Video: ICST Ambisonics Plugins Overview
-> https://www.youtube.com/watch?v=xkauhHMYt5k
-
-> [!info]
-> Wiki: ICST Ambisonics Plugins
-> https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
-
----
-
-## Workflow: Ambisonics Decoding in REAPER
+## Recommended REAPER structure
 
 ![Workflow schematic](CleanShot%202026-02-10%20at%2017.28.25@2x.png)
 
-### Recommended Track Structure
+Create three 64-channel tracks:
 
-Create three 64-channel audio tracks in REAPER:
+1. **B-format source track**
+2. **Ambisonics bus / Bformat Master**
+3. **Decoder track**
 
 ![Track setup](CleanShot%202026-02-10%20at%2017.36.04@2x.png)
 
-1. **B-Format Source Track** – 1st–7th Order Ambisonics file
-2. **Ambisonics Bus** – collects multiple B-format signals, hosts mastering FX
-3. **Decoder Track** – hosts the ICST Ambisonics Decoder, output to loudspeakers
+This separation keeps the session transparent and makes later troubleshooting much easier.
 
-This clear separation ensures transparency, modularity, and reproducible setups.
+## Basic setup
 
----
+1. Insert the **ICST AmbiDecoder** on the decoder track.
+2. Open the speaker settings.
+3. Load a preset or define your own loudspeaker layout.
+4. Set the Ambisonics **order** and **channel weighting**.
+5. Scale room dimensions if needed.
+6. Run a speaker test before rehearsal, recording, or export.
 
-## ICST AmbiDecoder – Step-by-Step Setup
+![Add plugin](CleanShot%202026-02-10%20at%2017.54.52@2x.png)
+![Speaker editing](Speaker_Editing.gif)
+![Ambisonics order](CleanShot%202026-02-11%20at%2009.30.18@2x.png)
 
-1. Add the **ICST AmbiDecoder** plugin to the Decoder Track.
+## Per-speaker control
 
-    ![Add plugin](CleanShot%202026-02-10%20at%2017.54.52@2x.png)
+You can edit speaker-specific parameters and save them as presets.
 
-    By default the decoder opens with the Stereo (90°) setting.
+![Speaker settings detail](CleanShot%202026-02-10%20at%2018.57.37@2x.png)
 
-    ![Choose speaker preset](Choose_Quadro.gif)
+Optional filter processing is available per speaker:
 
-2. Open the _Speaker Settings_ window (gear icon → "Speaker"). Select one of the many standard presets or create your own loudspeaker preset.
+![Filter types](CleanShot%202026-02-11%20at%2011.11.32@2x.png)
 
-    ![Speaker editing](Speaker_Editing.gif)
-
-3. Optionally activate the **Filter** section to equalize individual loudspeakers.
-
-    ![Enable filter](CleanShot%202026-02-11%20at%2011.05.51@2x.png)
-
-    Available filter types per speaker:
-
-    ![Filter types](CleanShot%202026-02-11%20at%2011.11.32@2x.png)
-
-    > [!todo]
-    > Add screenshot: measured loudspeaker setup of the ICST Composition Studio
-
-4. Under **"Speakers"** edit the speaker parameters directly and save them as a preset.
-
-    ![Speaker settings detail](CleanShot%202026-02-10%20at%2018.57.37@2x.png)
-
-5. Under **"Ambisonics"** select the desired order (up to 7th order) and Channel Weights.
-
-    ![Ambisonics order](CleanShot%202026-02-11%20at%2009.30.18@2x.png)
-
-6. Scale room dimensions as needed – loudspeaker coordinates and delay times are recalculated automatically.
-
-    ![Room scaling](CleanShot%202026-02-11%20at%2010.19.42@2x.png)
-
----
-
-## Audio Test Function
+## Audio test function
 
 ![Audio test](Decoder%20Audio%20test.gif)
 
-The decoder features an integrated test section:
+The integrated test section includes:
 
-- Pink noise generator
-- Individual test per loudspeaker
-- Sequential test of all loudspeakers clockwise ("Test all speakers")
-- Mute / Solo via `Ctrl + Shift + M` / `Ctrl + Shift + S`
+- pink noise generator
+- individual speaker tests
+- sequential speaker test
+- mute and solo shortcuts
 
-This enables a quick technical check of the entire system before rehearsal or performance.
+This is the fastest way to verify whether the physical system matches the preset and output routing.
 
----
-
-### Quick Session Check (60 sec)
+## Quick session check
 
 Before rehearsal or recording, verify:
 
-1. **Routing active:** signal level is visible at the decoder input.
-2. **Speaker order correct:** "Test all speakers" follows the expected physical order.
-3. **Preset loaded:** correct preset (room / array / order) is active.
-4. **Order consistent:** decoder order matches the B-format source.
-5. **Monitoring clear:** speaker or binaural monitoring path is explicit (no unintended double monitoring).
+1. level is visible at the decoder input
+2. the speaker order matches the room
+3. the correct preset is loaded
+4. the decoder order matches the B-format source
+5. loudspeaker and binaural monitoring are not accidentally running in parallel
 
-> [!Tip]
-> Save presets per room with a stable naming scheme, e.g.:
-> `RoomName_Array_Order_Date` (example: `ICST_Octagon_O5_2026-03`).
+> [!tip]
+> Save presets with a stable naming scheme such as `Room_Array_Order_Date`.
 
-### Troubleshooting (Quick)
+## Common mistakes
 
-- **No decoder output:** verify send from Ambisonics bus to decoder track and confirm 64 channels.
-- **Wrong localization:** compare speaker preset with actual hardware output mapping.
-- **Diffuse height image:** check order/weighting and consider MultiDecoder layer separation.
-- **Unbalanced levels:** refine per-speaker filters and distance/delay settings in the speaker editor.
-- **Preset mismatch in a new room:** re-scale room dimensions and resave under a new preset name.
+- sending the wrong track into the decoder
+- loading a speaker preset that does not match the real hardware mapping
+- forgetting to verify order and weighting against the source material
+- treating the decoder as the render target instead of the Bformat Master
+- running loudspeaker and binaural monitoring in parallel unintentionally
 
-### Next Step
-
-If your array uses multiple elevation layers (e.g. floor / mid / height), continue with:
-**[ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)**
-for layer-specific order, filtering, and speaker subsets.
-
-## Save & Load Presets
+## Presets
 
 ![Save presets](save%20decoder%20presets.gif)
 
-Speaker presets can be saved and reloaded at any time. This ensures reproducibility across sessions and venues.
+Speaker presets can be saved and reloaded at any time, which is essential for reproducible room setups.
 
-> [!tip]
-> Export speaker preset data as a TXT file and load it into the external `ambidecode~` object using a `coll`.
+## Next step
 
-![TXT export](CleanShot%202026-02-11%20at%2014.23.51@2x.png)
+If your array uses multiple elevation layers or different speaker subsets, continue with:
 
----
-## Summary
+- [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
 
-The ICST Ambisonics Decoder offers:
+Related pages:
 
-- Precise Higher-Order Ambisonics decoding
-- Flexible loudspeaker geometries (symmetric & asymmetric)
-- Per-speaker filtering and equalization
-- Integrated test and measurement functions
-- Multi-layer MultiDecoder architecture
-- Preset management for reproducible setups
-- Seamless integration into professional DAW workflows
-
-It thus forms a robust foundation for artistic, scientific, and production-oriented applications in 3D audio.
-
+- [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/)
+- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)

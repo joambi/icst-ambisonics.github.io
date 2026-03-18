@@ -2,9 +2,12 @@
 title: Schnellstart
 weight: 20
 date: 2025-01-28T14:31:00
+description: "Kompakter Einstieg zum Öffnen des ICST MultiEncoder-Projekttemplates in REAPER und zur schnellen Prüfung einer ersten funktionierenden Ambisonics-Session."
 ---
 
-Referenz-Schnellstart für eine funktionierende ICST-Ambisonics-Session in REAPER mit dem MultiEncoder-Projekttemplate.
+Level: Beginner | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.
+
+Nutze diese Seite, wenn du den kürzesten Weg zu einer verifizierten ersten Session willst. Für vollständige Setup-Logik und Routing-Details geht es danach weiter mit [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/).
 
 ## Schnellstart mit `ICST_AmbiPlugins_MultiEncoder.RPP`
 

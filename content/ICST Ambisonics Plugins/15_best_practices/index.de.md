@@ -6,6 +6,10 @@ weight: 125
 draft: false
 ---
 
+Level: Intermediate | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.
+
+Nutze diese Seite, wenn du das Grundsetup bereits kennst und Arbeitsweisen suchst, die Routing-Fehler, Monitoring-Probleme und Exportfehler reduzieren.
+
 Kurze, belastbare Regeln für stabile Ambisonics-Sessions in REAPER: sauberes Routing, reproduzierbare Decoder-Setups und weniger Fehlersuche vor Aufnahme, Probe oder Render.
 
 ## 1. Session-Baseline zuerst festlegen

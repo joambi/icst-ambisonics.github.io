@@ -2,12 +2,14 @@
 weight: 50
 title: Step by Step Setup
 date: 2025-01-23T15:38:00
+description: "Detailed REAPER setup guide for building an ICST Ambisonics session from scratch: decoder, Bformat Master, binaural path, encoders, and movement recording."
 ---
 
-# Step-by-Step Setup Guide for the ICST AmbiPlugins in Reaper
+Level: Beginner to Intermediate | Audience: Composer, technician, student, studio user.
 
----
-### Prerequisites
+Use this page when you want to build the ICST Ambisonics routing manually instead of starting only from a ready-made template.
+
+## Prerequisites
 
 Before we begin, make sure you have **Reaper**, the **ICST Ambisonics plugins**, and any recommended **3rd-party plugins** installed.
 
@@ -18,7 +20,7 @@ Before we begin, make sure you have **Reaper**, the **ICST Ambisonics plugins**,
 > - ICST plugin set installed and visible in the FX browser
 > - Audio interface output mapping verified
 
-### Creating a Reaper template
+## Creating a Reaper template
 
 We will create the template step by step from top to bottom.
 
@@ -41,15 +43,13 @@ Decoder routing for an Oktagon setup:
 
 1. Open **ICST AmbiPlugins Decoder** in the **FX** window.
    ![open__FX_decoder](FX_Decoder.png)
-2. Open the AmbiDecoder.
-   ![open_decoder](open_decoder.gif)
-3. Select a **speaker preset** (e.g. Oktagon).
+2. Open the AmbiDecoder and select a **speaker preset** (e.g. Oktagon).
    ![open_dec](choose_dec_preset.gif)
-4. Customize AmbiDecoder settings:
+3. Customize AmbiDecoder settings:
    - Ambisonics weighting
    - Ambisonics order (1st to 7th order)
    ![Dec-setting](7_choose_dec_setting.gif)
-5. Run a speaker test:
+4. Run a speaker test:
    - Press the **Speaker Test** button or test individual speakers.
    ![speaker_test](speaker_test.png)
 
@@ -92,13 +92,11 @@ Create the **Bformat Master** track:
 - Mute **AmbiDecoder** if you want to monitor only the binaural output.
 
 ![Binaural-track](Binaural_Track.gif)
-![DearVR_binaural](DearVR_binaurl.png)
 
 > [!Tip]
 > Compare playback with **Solo/Mute** between AmbiDecoder and binaural decoder.
 
-![1.order_bf](first-order.png)
-Example B below shows a 5th-order B-format Ambisonic file:
+Example below shows a 5th-order B-format Ambisonic file on the player track:
 
 ![5th-order_bf](5th-order-bf.png)
 Now you can play and monitor B-format files on speakers or headphones.
@@ -120,7 +118,6 @@ Tip: Watch this [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=119s)
 
 Mono AmbiEncoder overview:
 ![open monoencoder](MonoEncoder_01.png)
-![open_MonoEncoder](MonoEncoder_load.png)
 
 - In the FX window, load the **ICST MonoEncoder**.
 - Add an **AmbiEncoder (ICST)** (1-4) to the mono source.
@@ -198,14 +195,13 @@ To understand Multi-Encoder behavior, run this recording example:
 Example with **Src_3**:
 ![Encoder_move_03](Move_03.gif)
 
-The next step shows manual editing of XYZ envelopes:
-![Manuel_edit](MultiEnc_Manuell_edit.gif)
-
 6. **Manually Editing XYZ Envelopes**
 
 - To refine motion, edit **XYZ envelopes** manually.
 - Hold **Shift** and click an envelope to create a new edit point.
 - Move the point to adjust XYZ coordinates.
+
+![Manuel_edit](MultiEnc_Manuell_edit.gif)
 
 7. **Playing Back the Recorded Ambisonic Scene**
 
@@ -219,7 +215,6 @@ The next step shows manual editing of XYZ envelopes:
 - Assign a **group name** (e.g. **G1**).
 
 ![create_a_GP](GP_select_scaled.png)
-![GP_name](GP_edit_scaled.png)
 
 9. **Recording Group Movements**
 

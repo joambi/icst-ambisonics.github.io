@@ -5,6 +5,8 @@ date: 2026-03-18T12:15:00+01:00
 description: "Compact REAPER guide for rendering the Bformat Master correctly, choosing the right channel count, and documenting export metadata."
 ---
 
+Level: Beginner | Audience: Composer, technician, student, studio user.
+
 Use this page when you want the shortest reliable path to a clean Ambisonics export from REAPER. The goal is simple: render the **Bformat Master**, not the decoder output.
 
 ## What you will achieve
