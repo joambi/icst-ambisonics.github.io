@@ -1,7 +1,7 @@
 ---
 title: ICST Decoder
 date: 2025-01-01T00:00:00
-weight: 80
+weight: 90
 draft: false
 ---
 Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste
@@ -201,5 +201,4 @@ Der ICST Ambisonics Decoder bietet:
 - Nahtlose Integration in professionelle DAW-Workflows
 
 Er bildet damit eine robuste Grundlage für künstlerische, wissenschaftliche und produktionsorientierte Anwendungen im Bereich 3D-Audio.
-
 

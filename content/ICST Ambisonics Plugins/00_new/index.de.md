@@ -1,7 +1,7 @@
 ---
 title: Was ist neu
 date: 2025-11-03T16:13:00
-weight: 20
+weight: 150
 ---
 
 # ICST Ambisonics Plugins v3.2
@@ -107,4 +107,3 @@ Steuern Sie Gruppen über OSC mit **absoluten Euler-Winkeln**:
 - Absturz durch falsches Schließen von OSC-Fenstern behoben
 - Tutorial-Link im Hilfemenü aktualisiert
 - Lautsprecher-Test aktualisiert: White-Noise → **Pink-Noise**
-

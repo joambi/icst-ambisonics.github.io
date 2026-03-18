@@ -1,7 +1,7 @@
 ---
 title: OSC
 date: 2025-01-01T00:00:00
-weight: 130
+weight: 120
 draft: false
 ---
 Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste

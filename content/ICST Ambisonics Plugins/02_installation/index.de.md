@@ -4,7 +4,7 @@ draft: false
 title: Installation
 params:
   author: Johannes Schuett
-weight: 40
+weight: 30
 tags:
 ---
 

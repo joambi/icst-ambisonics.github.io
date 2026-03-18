@@ -1,6 +1,6 @@
 ---
 title: Schnellstart
-weight: 60
+weight: 20
 date: 2025-01-28T14:31:00
 ---
 

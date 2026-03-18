@@ -1,7 +1,7 @@
 ---
 tags:
 title: Wie es funktioniert
-weight: 50
+weight: 70
 date: 2025-02-01T19:26:00
 ---
 

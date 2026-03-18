@@ -1,5 +1,5 @@
 ---
-weight: 60
+weight: 20
 title: Quick Start
 description: "Fast reference guide for opening the ICST MultiEncoder project template in REAPER and verifying a first working Ambisonics session."
 date: 2025-01-28T14:31:00

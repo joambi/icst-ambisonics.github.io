@@ -1,6 +1,6 @@
 ---
 title: Schritt-für-Schritt-Setup
-weight: 70
+weight: 50
 date: 2025-01-23T15:38:00
 ---
 
@@ -240,6 +240,8 @@ Im nächsten Schritt bearbeitest du XYZ-Kurven manuell:
 
 ### Finalisieren und Export
 
+Für einen kompakten eigenständigen Render-Leitfaden siehe [B-Format in REAPER rendern](/icst-ambisonics-plugins/12_render_bformat/).
+
 ### Pre-Render-Checkliste
 
 Vor dem Rendern prüfen:
@@ -278,4 +280,3 @@ Nach dem Rendern zeigt Reaper ein **Render-Info**-Fenster mit Peak- und LUFS-Wer
 - **Kein Decoder-Ausgang:** Send vom Bformat Master zum Decoder-Eingang kontrollieren.
 - **Falsche Lokalisation:** Lautsprechertest erneut durchführen und Hardware-Ausgangszuordnung prüfen.
 - **Nur binaural / keine Lautsprecher:** Stumm-/Solo-Status zwischen Decoder- und Binaural-Spur prüfen.
-

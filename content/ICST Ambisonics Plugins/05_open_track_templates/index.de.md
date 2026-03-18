@@ -1,7 +1,7 @@
 ---
 date: 2025-01-27T14:32:00
 title: Spurvorlagen
-weight: 120
+weight: 40
 ---
 
 Referenzschritte zum Einfügen der ICST-Spurvorlagen in REAPER und zur anschließenden Prüfung des erwarteten Routings.

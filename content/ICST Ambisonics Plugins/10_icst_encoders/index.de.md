@@ -1,7 +1,7 @@
 ---
 title: ICST Encoders
 date: 2025-01-01T00:00:00
-weight: 100
+weight: 80
 draft: false
 ---
 Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste

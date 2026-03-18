@@ -1,5 +1,5 @@
 ---
-weight: 70
+weight: 50
 title: Step by Step Setup
 date: 2025-01-23T15:38:00
 ---
@@ -238,6 +238,8 @@ The next step shows manual editing of XYZ envelopes:
 
 ### Finalizing & Exporting
 
+For a compact dedicated rendering guide, see [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/).
+
 ### Pre-Render Checklist
 
 Before rendering, confirm:
@@ -276,4 +278,3 @@ After rendering, Reaper shows a **Rendering Info** window with peak and LUFS val
 - **No decoder output:** verify send from Bformat Master to Decoder input.
 - **Wrong speaker localization:** run speaker test again and verify hardware output mapping.
 - **Binaural only / no speakers:** check mute/solo state between Decoder and Binaural track.
-

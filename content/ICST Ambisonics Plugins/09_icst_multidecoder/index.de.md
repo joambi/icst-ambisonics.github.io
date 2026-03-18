@@ -1,7 +1,7 @@
 ---
 title: ICST MultiDecoder
 date: 2025-01-01T00:00:00
-weight: 90
+weight: 100
 draft: false
 ---
 Institut für Computermusik und Klangtechnologie (ICST) · Zürcher Hochschule der Künste
@@ -86,5 +86,4 @@ Klassisches Ambisonics-Decoding kann trotz natürlich klingender Ergebnisse zu e
 Das Ergebnis ist eine präzisere Tiefenstaffelung und eine differenziertere Raumstruktur – besonders bei komplexen, vertikal erweiterten Lautsprecheranordnungen.
 
 Der ICST MultiDecoder stellt damit ein erweitertes Werkzeug für künstlerische wie auch forschungsbasierte Anwendungen im Bereich der Higher-Order Ambisonics dar.
-
 

@@ -2,7 +2,7 @@
 title: Best Practices
 description: "Practical rules for stable Ambisonics sessions in REAPER, including signal flow, monitoring separation, export discipline, and setup order."
 date: 2025-01-01T00:00:00
-weight: 150
+weight: 125
 draft: false
 ---
 
@@ -12,11 +12,17 @@ Short, reliable rules for stable Ambisonics sessions in REAPER: clean routing, r
 
 Before adding sources, establish the session structure. Retrofitting routing later is a reliable source of errors.
 
+**Choose your HOA order first.** The order determines both spatial resolution and channel count, and it cannot be changed without rebuilding the session.
+
+As a rough guide: 1st order (4 ch) for basic archiving or small setups, 3rd order (16 ch) for most studio and concert work, and 5th order (36 ch) or 7th order (64 ch) for large-scale installations or maximum resolution.
+
+Match the order to your speaker array. Decoding high-order B-format to a low-density array gives no audible benefit.
+
 ![Signal flow overview](/images/best-practices-signal-flow.svg)
 
 *Core session logic: build one clear signal path from source to B-format bus to decoder, then keep speaker and headphone monitoring as intentional branches.*
 
-- Set all Ambisonics-relevant tracks to `64` channels by default.
+- Set all Ambisonics-relevant tracks to `64` channels by default. HOA7 requires exactly 64 channels; lower orders use fewer, but 64 as a uniform setting ensures no channel is silently dropped when routing between tracks.
 - Define the signal chain early and clearly: `Source → HOA Bus → Decoder`.
 - Save working setups as project or track templates so you start from a known state every time.
 
@@ -27,6 +33,7 @@ Routing errors in Ambisonics sessions are often invisible until playback reveals
 - Avoid accidental direct source-to-master paths — all sources should feed through the HOA bus.
 - Name source tracks, the HOA bus, and the decoder clearly and consistently.
 - Check routing immediately after adding each new source or bus track.
+- Keep gain staging clean: set source track levels so the HOA bus does not clip. Avoid compensating for low gain at the decoder output — fix it at the source. The B-format field carries spatial information in its amplitude ratios, so unexpected gain changes anywhere in the chain can distort the perceived image.
 
 ## 3. Standardize decoder practice
 
@@ -38,9 +45,13 @@ The decoder translates the B-format field into loudspeaker signals. A mismatch b
 
 - Always load the preset that matches the real loudspeaker setup before listening or recording.
 - Verify speaker order with the decoder test function after loading a new preset.
-- Keep loudspeaker monitoring and binaural monitoring separated: route the HOA bus to the decoder for speaker playback and to a separate binaural decoder (e.g. IEM BinauralDecoder, SPARTA) for headphone monitoring. Never let both run in parallel unintentionally.
+- Keep loudspeaker monitoring and binaural monitoring separated.
+  Route the HOA bus to the decoder for speaker playback and to a separate binaural decoder such as IEM BinauralDecoder or SPARTA for headphone monitoring.
+  Never let both run in parallel unintentionally.
 
-For complex setups with height layers or separate subgroups, use the **[ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)**, which runs up to four independent decoder units on the same B-format input. Name each unit clearly by its zone (e.g. `Mid Ring`, `Top Layer`, `Sub`).
+For complex setups with height layers or separate subgroups, use the **[ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)**.
+It runs up to four independent decoder units on the same B-format input.
+Name each unit clearly by its zone, for example `Mid Ring`, `Top Layer`, or `Sub`.
 
 ### Template reference
 
@@ -56,7 +67,8 @@ A quick signal check at the start of each session prevents problems that are muc
 
 - Start every session with a single mono test source on a known encoder position.
 - Briefly verify movement, level, and speaker assignment before working.
-- Run a short 30-second signal check before recording or export — especially after loading a preset, changing the speaker setup, or reopening a project.
+- Run a short 30-second signal check before recording or export, especially after loading a preset, changing the speaker setup, or reopening a project.
+- If the production will also be delivered in stereo or mono, run a brief downmix check: fold the B-format to mono or stereo and verify that the most important sources remain audible and correctly positioned. Phase cancellations can collapse spatial elements that sounded clear on the full array.
 
 ## 5. Export and rendering
 
@@ -69,49 +81,18 @@ Export discipline prevents format confusion when delivering files to other syste
 - Use a consistent filename that documents order and take: `scene01_O5_take03.wav`.
 - Document the export format and channel ordering in a session notes file alongside the rendered material.
 
-### REAPER tutorial: render B-format correctly
+### REAPER rendering guide
 
-Use this as the shortest reliable REAPER sequence for a clean Ambisonics export:
-
-1. Solo the **Bformat Master** track.
-2. Open **File -> Render**.
-3. Choose **Source: Stems (selected tracks)** or the equivalent track-based render mode.
-4. Select **Bformat Master** as the render target.
-5. Set **Sample rate** to `48000`.
-6. Set output to **multichannel WAV / RF64**.
-7. Set the **channel count** to the HOA order you are exporting:
-   - `4` channels for FOA / 1st order
-   - `9` channels for 2nd order
-   - `16` channels for 3rd order
-   - up to `64` channels for 7th order
-8. Render one short test file first, then re-import it into REAPER and verify playback through the decoder or binaural path.
-
-### Meta text inside REAPER
-
-Keep a short export note inside **Project Settings -> Notes** or in a session text file next to the render. This makes handover and later verification much easier.
-
-Suggested meta text:
-
-```text
-Render: B-format master
-Format: ambiX (ACN / SN3D)
-Sample rate: 48000 Hz
-Channels: 64
-HOA order: 7th
-Source track: BFORMAT_MASTER
-Decoder preset used for monitoring: [speaker preset name]
-Binaural check: yes / no
-Filename: scene01_O7_take01.wav
-Notes: rendered from B-format master, not decoder output
-```
+For the full export sequence, channel-count reference, and reusable REAPER metadata note, see [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/).
 
 ## 6. Maintain project hygiene
 
 A session that is easy to hand over is also a session that is easy to reopen six months later.
 
 - Use consistent track names and clear bus labels throughout.
-- Document decoder presets, OSC port assignments, and export formats in a text file or the REAPER project notes.
+- Document decoder presets, OSC port assignments, and export formats in a text file or the REAPER project notes. For OSC specifically: note the port numbers, the IP address of each controller, and the message namespace used. OSC setups are invisible in the REAPER project file and easy to forget between sessions.
 - Save important session states as numbered versions instead of only overwriting: `project_v01.rpp`, `project_v02.rpp`.
+- For sessions with many encoders or high HOA order, freeze source tracks after recording to reduce CPU load during mixing and playback.
 
 ## 7. Common failure points
 
@@ -129,7 +110,7 @@ A session that is easy to hand over is also a session that is easy to reopen six
 
 *Treat setup as a sequence, not as parallel experimentation. Most avoidable errors happen when steps 4–6 are started before steps 1–3 are stable.*
 
-1. Install the plugins and verify REAPER channel counts.
+1. Verify that all Ambisonics-relevant tracks are set to the correct channel count for your HOA order.
 2. Create the HOA bus and decoder structure.
 3. Insert one source and test the routing end-to-end.
 4. Load the decoder preset for the loudspeaker setup and verify speaker order.
@@ -138,6 +119,7 @@ A session that is easy to hand over is also a session that is easy to reopen six
 
 ## Related pages
 
+- [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/)
 - [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
 - [Step-by-Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)

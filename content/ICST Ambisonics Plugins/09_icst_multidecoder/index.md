@@ -1,7 +1,7 @@
 ---
 title: ICST MultiDecoder
 date: 2025-01-01T00:00:00
-weight: 90
+weight: 100
 draft: false
 ---
 
@@ -93,6 +93,5 @@ Standard Ambisonics decoding applies the same algorithm uniformly across all lou
 By assigning separate decoder units to each layer, psychoacoustic parameters (order, weighting, EQ) can be tuned per layer. The result is a more precise depth layering and a more differentiated spatial structure, while the field-based nature of Ambisonics is fully preserved.
 
 The ICST MultiDecoder thus provides an extended tool for both artistic and research-based applications in Higher-Order Ambisonics.
-
 
 

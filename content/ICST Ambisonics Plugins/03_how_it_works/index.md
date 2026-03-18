@@ -1,5 +1,5 @@
 ---
-weight: 50
+weight: 70
 tags:
 title: How it Works
 date: 2025-02-01T19:26:00
