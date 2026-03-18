@@ -47,6 +47,26 @@ Für vollständig dreidimensionale Verläufe bietet die **equirektanguläre Proj
 **Stärke:** Vollständige 3D-Abbildung; geeignet für Stücke mit starker Vertikaldimension.  
 **Schwäche:** Weniger intuitiv lesbar; Verzerrungen an den Polen.
 
+### SSMN — Spatialization Symbolic Music Notation
+
+**SSMN** ist ein Taxonomie- und Notationssystem, das am [ICST (ZHdK)](https://blog.zhdk.ch/ssmn/) in Zusammenarbeit mit der HEM Genf und der EPFL entwickelt wurde, gefördert durch den Schweizerischen Nationalfonds. Das Projekt erstellte eine Symbolbibliothek, die in einen angepassten MuseScore-Editor integriert wurde: Sobald ein Symbol in der Partitur platziert wird, zeigt ein Inspektor-Fenster benutzerdefinierte Parameter (Start-/Endpunkt, Radius, Richtung, Beschleunigung, Azimut/Elevation/Distanz), und eine sofortige Audio-Rückmeldung erfolgt im Surroundsystem.
+
+Die Stärke von SSMN liegt weniger darin, ein einziges universelles Partiturformat vorzugeben, sondern darin, zu trennen zwischen *welches räumliche Ereignis überhaupt vorliegt* und *wie dieses Ereignis grafisch dargestellt wird*. SSMN hilft, die **Taxonomie** räumlicher Vorgänge von ihrer **Notation** zu unterscheiden. Das vollständige System ist im [ICMC-2014-Paper (PDF)](https://blog.zhdk.ch/ssmn/files/2014/10/Spatialization-Symbolic-Music-Notation-at-ICST.pdf) dokumentiert.
+
+Für Ambisonics ist das besonders nützlich, weil viele räumliche Entscheidungen mehrere Ebenen zugleich betreffen: Position, Bewegungstyp, Diffusion, Distanzverhalten und Relationen zwischen mehreren Quellen. SSMN ist deshalb vor allem als **konzeptueller Referenzrahmen** wertvoll, auch wenn die konkrete Dokumentation am Ende über REAPER-Screenshots, Radar-Pläne oder verbale Beschreibung erfolgt.
+
+Praktisch heisst das im ICST-Kontext:
+
+- **SSMN Taxonomy** hilft zu benennen, *welcher Typ räumlichen Ereignisses* vorliegt: statische Platzierung, Trajektorie, Divergenz, Konvergenz, Diffusion, Ebenenwechsel oder Feldtransformation.
+- **SSMN Notation** stellt die Frage, *wie dieses Ereignis am besten vermittelt wird*: als Radar-Snapshot, Automationskurve, grafische Partitur, equirektanguläre Projektion oder verbale Anweisung.
+
+### Locus Notation
+
+Eine leichtgewichtigere Alternative für Live- und Mixed-Media-Kontexte ist **Locus**, entwickelt von Luís Zanforlin. Anstatt eines eigenen Editors verwendet Locus eine herunterladbare Schriftart mit 26 Glyphen, die in jede Standard-Notationssoftware eingebettet werden kann. Die Symbole codieren horizontale Richtung (8 Positionen × 3 Distanzstufen) und Elevation (8 Vertikalstufen), sodass räumliche Positionen inline mit konventioneller Notation lesbar werden. Die Schriftart ist auf Tastaturkürzel gemappt: `w/a/s/d` für Nahpositionen, Numpad für mittlere Distanz. Vollständiger Symbolsatz und Font-Download: [makuxr.com/blog/locus-spatial-music-notation](https://www.makuxr.com/blog/locus-spatial-music-notation).
+
+**Stärke:** Keine Spezialsoftware; integriert sich in Sibelius, Finale, Dorico oder MuseScore.
+**Schwäche:** 3D-Auflösung ist grob (45° horizontal, 5 Elevationsstufen); nicht für präzise Ambisonics-Trajektorien ausgelegt.
+
 ## Die Ambisonics-Raumpartitur in der Praxis
 
 Für den ICST-Kontext empfiehlt sich eine **pragmatische Mischform**: kein einziges universelles Notationsformat, sondern ein Dokumentationspaket, das verschiedene Perspektiven auf die räumliche Struktur versammelt.
@@ -103,3 +123,12 @@ Die Raumpartitur ist kein bürokratischer Zusatzaufwand, sondern ein direkter Re
 Das Erstellen einer Raumpartitur zwingt dazu, die eigene räumliche Komposition zu formalisieren: was konstitutiv ist, was flexibel, was situationsabhängig. Dieser Formalisierungsakt schärft den kompositorischen Blick — nicht anders als das Niederschreiben einer harmonischen Analyse das Verständnis einer Passage verändern kann.
 
 Im ICST-Studio gehört die Raumpartitur daher zum Standard-Repertoire der Kompositionsdokumentation — nicht als Pflicht, sondern als Denkwerkzeug. Die [10 Fragen](/de/composing-in-ambisonics/04-die-10-fragen/) bieten einen praktischen Einstiegsrahmen: Frage 10 (Werkidentität und Dokumentation) lässt sich direkt in die hier beschriebenen Dokumentationsebenen übersetzen.
+
+## Weiterführende Literatur
+
+- [SSMN-Projektblog — blog.zhdk.ch/ssmn](https://blog.zhdk.ch/ssmn/) — Projektblog mit Taxonomie-Übersicht, MuseScore-Implementierung und Klangbeispielen
+- [Spatialization Symbolic Music Notation at ICST (PDF)](https://blog.zhdk.ch/ssmn/files/2014/10/Spatialization-Symbolic-Music-Notation-at-ICST.pdf) — Ellberger, Toro Pérez u.a., ICMC 2014
+- [Taxonomy and Notation of Spatialization (PDF)](http://tenor2016.tenor-conference.org/papers/29_Ellberger_tenor2016.pdf) — Ellberger & Toro Pérez, TENOR 2016
+- [Space Notation in Electroacoustic Music (PDF)](https://hal.science/hal-01971595/document) — Bertrand Merlier, Überblick über historische und zeitgenössische Notationsansätze
+- [Locus Spatial Music Notation](https://www.makuxr.com/blog/locus-spatial-music-notation) — fontbasierte Notation für Standard-Notationssoftware
+- [The Composition and Performance of Spatial Music (PDF)](http://www.endabates.net/Enda%20Bates%20-%20The%20Composition%20and%20Performance%20of%20Spatial%20Music.pdf) — Enda Bates, umfassende Monografie inkl. Notationspraxis

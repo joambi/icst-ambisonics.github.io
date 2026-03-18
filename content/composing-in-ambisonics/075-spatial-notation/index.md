@@ -47,6 +47,26 @@ For fully three-dimensional trajectories, the **equirectangular projection** off
 **Strength:** Complete 3D representation; well suited for pieces with a strong vertical dimension.  
 **Weakness:** Less intuitively readable; distortion at the poles.
 
+### SSMN — Spatialization Symbolic Music Notation
+
+**SSMN** is a taxonomy and notation system developed at the [ICST (ZHdK)](https://blog.zhdk.ch/ssmn/) in collaboration with the HEM Geneva and EPFL, funded by the Swiss National Science Foundation. The project created a symbolic library integrated into a custom MuseScore editor: once a symbol is placed in the score, an inspector window displays user-defined parameters (start/end points, radius, direction, acceleration, azimuth/elevation/distance), and instant audio rendering provides feedback within a surround system.
+
+The value of SSMN lies less in proposing one universal score format than in separating *what kind of spatial event is taking place* from *how it is graphically represented*. In other words, SSMN helps distinguish the **taxonomy** of spatial phenomena from the **notation** used to communicate them. See the [ICMC 2014 paper (PDF)](https://blog.zhdk.ch/ssmn/files/2014/10/Spatialization-Symbolic-Music-Notation-at-ICST.pdf) for the full taxonomy and implementation.
+
+For Ambisonics work, this is especially helpful because many spatial decisions combine several layers at once: position, movement type, diffusion, distance behaviour, and relations between multiple sources. SSMN is therefore relevant as a **conceptual reference** even if one ultimately documents the piece in REAPER screenshots, radar plans, or prose.
+
+In practice, the ICST workflow can benefit from this distinction:
+
+- **SSMN Taxonomy** helps name the spatial event: static placement, trajectory, divergence, convergence, diffusion, layer change, field transformation.
+- **SSMN Notation** raises the question of how this event should best be communicated: as a radar snapshot, an automation curve, a graphic score, an equirectangular map, or a verbal instruction.
+
+### Locus Notation
+
+A lighter-weight alternative for live and mixed-media contexts is **Locus**, developed by Luís Zanforlin. Rather than a dedicated editor, Locus uses a downloadable font with 26 glyphs that can be embedded in any standard notation software. The symbols encode horizontal direction (8 positions × 3 distance levels) and elevation (8 vertical levels), making spatial positions readable inline with conventional notation. The font is mapped to keyboard shortcuts: `w/a/s/d` for close positions, numpad for median distance. See [makuxr.com/blog/locus-spatial-music-notation](https://www.makuxr.com/blog/locus-spatial-music-notation) for the full symbol set and font download.
+
+**Strength:** No special software; integrates into Sibelius, Finale, Dorico, or MuseScore.
+**Weakness:** 3D resolution is coarse (45° horizontal, 5 elevation levels); not designed for precise Ambisonics trajectories.
+
 ## The Ambisonics Spatial Score in Practice
 
 For the ICST context, a **pragmatic hybrid** is recommended: not a single universal notation format, but a documentation package that assembles different perspectives on the spatial structure.
@@ -103,3 +123,12 @@ The spatial score is not bureaucratic overhead. It is a direct response to a fun
 Creating a spatial score requires formalising your own spatial composition: what is constitutive, what is flexible, what is situation-dependent. This act of formalisation sharpens the compositional eye — just as writing out a harmonic analysis can change one's understanding of a passage.
 
 In the ICST studio, the spatial score is therefore part of the standard repertoire of compositional documentation — not as an obligation, but as a thinking tool. The [10 Questions](/composing-in-ambisonics/04-10-questions/) provide a practical entry point: Question 10 (work identity and documentation) translates directly into the documentation layers described here.
+
+## Further Reading
+
+- [SSMN Project — blog.zhdk.ch/ssmn](https://blog.zhdk.ch/ssmn/) — project blog with taxonomy overview, MuseScore implementation, and audio examples
+- [Spatialization Symbolic Music Notation at ICST (PDF)](https://blog.zhdk.ch/ssmn/files/2014/10/Spatialization-Symbolic-Music-Notation-at-ICST.pdf) — Ellberger, Toro Pérez et al., ICMC 2014
+- [Taxonomy and Notation of Spatialization (PDF)](http://tenor2016.tenor-conference.org/papers/29_Ellberger_tenor2016.pdf) — Ellberger & Toro Pérez, TENOR 2016
+- [Space Notation in Electroacoustic Music (PDF)](https://hal.science/hal-01971595/document) — Bertrand Merlier, overview of historical and contemporary notation approaches
+- [Locus Spatial Music Notation](https://www.makuxr.com/blog/locus-spatial-music-notation) — font-based notation for standard score software
+- [The Composition and Performance of Spatial Music (PDF)](http://www.endabates.net/Enda%20Bates%20-%20The%20Composition%20and%20Performance%20of%20Spatial%20Music.pdf) — Enda Bates, comprehensive monograph including notation practice

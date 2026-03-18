@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">SSMN notation bridge</title>
+  <desc id="desc">Diagram showing how taxonomy leads to notation choices such as radar plan, automation curves, graphic score, and verbal instruction.</desc>
+  <rect width="1200" height="640" fill="#14212b"/>
+  <text x="70" y="78" fill="#e9eef2" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700">SSMN Notation</text>
+  <text x="70" y="116" fill="#9fb2c3" font-family="Helvetica, Arial, sans-serif" font-size="21">Translate a spatial event into the clearest representation for performers, assistants, and reconstruction</text>
+
+  <rect x="90" y="210" width="310" height="120" rx="12" fill="#213241" stroke="#7cb2df" stroke-width="2"/>
+  <text x="245" y="254" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Taxonomy Layer</text>
+  <text x="245" y="286" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="20">What kind of event is this?</text>
+  <text x="245" y="314" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">placement, trajectory, diffusion,</text>
+  <text x="245" y="338" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">convergence, field change</text>
+
+  <rect x="455" y="210" width="290" height="120" rx="12" fill="#213a2a" stroke="#8fd19e" stroke-width="2"/>
+  <text x="600" y="254" text-anchor="middle" fill="#f0fff2" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Notation Choice</text>
+  <text x="600" y="286" text-anchor="middle" fill="#cde8d2" font-family="Helvetica, Arial, sans-serif" font-size="20">How should it be shown?</text>
+  <text x="600" y="314" text-anchor="middle" fill="#cde8d2" font-family="Helvetica, Arial, sans-serif" font-size="18">choose the form that best preserves</text>
+  <text x="600" y="338" text-anchor="middle" fill="#cde8d2" font-family="Helvetica, Arial, sans-serif" font-size="18">clarity, timing, and spatial intent</text>
+
+  <rect x="820" y="170" width="290" height="78" rx="12" fill="#1e2b35" stroke="#6da6d8" stroke-width="2"/>
+  <text x="965" y="216" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Radar Plan</text>
+
+  <rect x="820" y="265" width="290" height="78" rx="12" fill="#1e2b35" stroke="#6da6d8" stroke-width="2"/>
+  <text x="965" y="311" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Automation Curves</text>
+
+  <rect x="820" y="360" width="290" height="78" rx="12" fill="#1e2b35" stroke="#6da6d8" stroke-width="2"/>
+  <text x="965" y="406" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Graphic Score</text>
+
+  <rect x="820" y="455" width="290" height="78" rx="12" fill="#1e2b35" stroke="#6da6d8" stroke-width="2"/>
+  <text x="965" y="501" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Verbal Instruction</text>
+
+  <line x1="400" y1="270" x2="455" y2="270" stroke="#7cb2df" stroke-width="4"/>
+  <polygon points="455,270 438,260 438,280" fill="#7cb2df"/>
+
+  <line x1="745" y1="248" x2="820" y2="209" stroke="#8fd19e" stroke-width="3"/>
+  <line x1="745" y1="280" x2="820" y2="304" stroke="#8fd19e" stroke-width="3"/>
+  <line x1="745" y1="304" x2="820" y2="399" stroke="#8fd19e" stroke-width="3"/>
+  <line x1="745" y1="326" x2="820" y2="494" stroke="#8fd19e" stroke-width="3"/>
+
+  <text x="92" y="590" fill="#8ea2b4" font-family="Helvetica, Arial, sans-serif" font-size="17">Use taxonomy to classify the spatial event first; use notation to communicate it in the clearest possible way.</text>
+</svg>

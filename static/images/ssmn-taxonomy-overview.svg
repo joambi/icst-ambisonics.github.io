@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">SSMN taxonomy overview</title>
+  <desc id="desc">Diagram showing SSMN as a taxonomy connecting space, sources, movement, and operations.</desc>
+  <rect width="1200" height="700" fill="#14212b"/>
+  <text x="70" y="78" fill="#e9eef2" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700">SSMN Taxonomy</text>
+  <text x="70" y="116" fill="#9fb2c3" font-family="Helvetica, Arial, sans-serif" font-size="21">A conceptual map for describing spatial events before choosing a score format</text>
+
+  <rect x="455" y="180" width="290" height="95" rx="12" fill="#213241" stroke="#7cb2df" stroke-width="2"/>
+  <text x="600" y="219" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Spatial Event</text>
+  <text x="600" y="249" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="19">what happens in space?</text>
+
+  <rect x="80" y="360" width="220" height="130" rx="12" fill="#1e2b35" stroke="#6da6d8" stroke-width="2"/>
+  <text x="190" y="402" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Space</text>
+  <text x="190" y="432" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">shape of the space</text>
+  <text x="190" y="458" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">acoustic quality</text>
+
+  <rect x="345" y="360" width="220" height="130" rx="12" fill="#1e2b35" stroke="#6da6d8" stroke-width="2"/>
+  <text x="455" y="402" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Sources</text>
+  <text x="455" y="432" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">single or grouped</text>
+  <text x="455" y="458" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">layered relations</text>
+
+  <rect x="635" y="360" width="220" height="130" rx="12" fill="#1e2b35" stroke="#6da6d8" stroke-width="2"/>
+  <text x="745" y="402" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Position</text>
+  <text x="745" y="432" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">azimuth, elevation</text>
+  <text x="745" y="458" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">distance, width</text>
+
+  <rect x="900" y="360" width="220" height="130" rx="12" fill="#1e2b35" stroke="#6da6d8" stroke-width="2"/>
+  <text x="1010" y="402" text-anchor="middle" fill="#f2f6f9" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700">Movement</text>
+  <text x="1010" y="432" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">trajectory, diffusion</text>
+  <text x="1010" y="458" text-anchor="middle" fill="#c5d3de" font-family="Helvetica, Arial, sans-serif" font-size="18">field transformation</text>
+
+  <rect x="325" y="560" width="260" height="84" rx="12" fill="#213a2a" stroke="#8fd19e" stroke-width="2"/>
+  <text x="455" y="598" text-anchor="middle" fill="#f0fff2" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Local Operations</text>
+  <text x="455" y="624" text-anchor="middle" fill="#cde8d2" font-family="Helvetica, Arial, sans-serif" font-size="18">change one source or gesture</text>
+
+  <rect x="615" y="560" width="260" height="84" rx="12" fill="#213a2a" stroke="#8fd19e" stroke-width="2"/>
+  <text x="745" y="598" text-anchor="middle" fill="#f0fff2" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Global Operations</text>
+  <text x="745" y="624" text-anchor="middle" fill="#cde8d2" font-family="Helvetica, Arial, sans-serif" font-size="18">reshape the whole spatial field</text>
+
+  <line x1="600" y1="275" x2="190" y2="360" stroke="#7cb2df" stroke-width="3"/>
+  <line x1="600" y1="275" x2="455" y2="360" stroke="#7cb2df" stroke-width="3"/>
+  <line x1="600" y1="275" x2="745" y2="360" stroke="#7cb2df" stroke-width="3"/>
+  <line x1="600" y1="275" x2="1010" y2="360" stroke="#7cb2df" stroke-width="3"/>
+
+  <line x1="455" y1="490" x2="455" y2="560" stroke="#8fd19e" stroke-width="3"/>
+  <line x1="745" y1="490" x2="745" y2="560" stroke="#8fd19e" stroke-width="3"/>
+
+  <text x="70" y="672" fill="#8ea2b4" font-family="Helvetica, Arial, sans-serif" font-size="17">Interpretive overview inspired by the SSMN project and TENOR 2016 taxonomy paper.</text>
+</svg>
