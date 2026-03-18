@@ -1,4 +1,15 @@
-This is the new Blog for the ICST Ambisonics Stuff.
+# ICST Ambisonics — ambisonics.ch
+
+**Official documentation site:** [ambisonics.ch](https://ambisonics.ch)
+
+Free spatial audio plugins, a composing guide, and artist residencies at ICST / Zurich University of the Arts (ZHdK).
+
+- 🎛️ [ICST Ambisonics Plugins for REAPER](https://ambisonics.ch/icst-ambisonics-plugins/) — free & open source
+- 🎼 [Composing in Ambisonics](https://ambisonics.ch/composing-in-ambisonics/) — spatial composition guide
+- 🏛️ [Studio Residencies](https://ambisonics.ch/residenzen/) — artist-in-residence programme at ICST
+- 🧊 [Max/MSP Tools](https://ambisonics.ch/icst-ambisonics-tools/) — live spatialisation and algorithmic sound
+
+---
 
 ## Build policy
 

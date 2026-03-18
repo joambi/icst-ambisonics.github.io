@@ -29,6 +29,8 @@ mainSections = ["blog", "post"]
 favicon = "favicons/"
 contentratio = 0.7
 copyright = ""
+# Google Search Console verification
+googleSiteVerify = "2dac45051b431b1b"
 
   [params.mermaid]
   enable = true
