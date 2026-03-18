@@ -114,7 +114,9 @@ Use stable names early to avoid routing mistakes:
 
 - Create a new **Mono Source** track and load a mono audio file.
 
-Tip: Watch this [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=119s)
+**Video Tutorial: AmbiEncoder Setup**
+
+{{< youtube aDa-vNWriLM >}}
 
 Mono AmbiEncoder overview:
 ![open monoencoder](MonoEncoder_01.png)

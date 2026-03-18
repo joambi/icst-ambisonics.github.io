@@ -115,7 +115,9 @@ Nutze früh stabile Spur-Namen, um Routing-Fehler zu vermeiden:
 
 - Erstelle eine neue Spur **Mono-Quelle** und lade eine Mono-Audiodatei.
 
-Tip: Sieh dir dieses [Video](https://www.youtube.com/watch?v=aDa-vNWriLM&t=119s) an.
+**Video-Tutorial: AmbiEncoder Setup**
+
+{{< youtube aDa-vNWriLM >}}
 
 Mono-AmbiEncoder-Überblick:
 ![open monoencoder](MonoEncoder_01.png)
