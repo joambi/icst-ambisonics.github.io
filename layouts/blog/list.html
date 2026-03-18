@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ $isDe := eq .Site.Language.Lang "de" }}
+
   {{ with .Content }}
     <div class="post {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
       <div class="post__content">{{ . }}</div>
@@ -7,27 +9,45 @@
 
   <div class="post animated fadeInDown">
     <div class="post__content">
-      <h2>{{ if eq .Site.Language.Lang "de" }}Schnelle Einstiege{{ else }}Quick Starts{{ end }}</h2>
+      <h2>{{ if $isDe }}Empfohlene Einstiege{{ else }}Recommended Starts{{ end }}</h2>
+      <p class="archive__intro">
+        {{ if $isDe }}
+          Dieser Bereich ist der Kontext-Hub der Site: Studio, Residency-Programm, Listening Sessions, Downloads und dokumentierte Praxis am ICST. Starte mit einem kuratierten Einstieg statt mit einer gemischten Chronologie.
+        {{ else }}
+          This area is the context hub of the site: studio, residency programme, listening sessions, downloads, and documented practice at ICST. Start with a curated entry point instead of a mixed chronology.
+        {{ end }}
+      </p>
       <div class="home-cards">
         <div class="home-card">
-          <h4>{{ if eq .Site.Language.Lang "de" }}Studio Cases{{ else }}Studio Cases{{ end }}</h4>
-          <p>{{ if eq .Site.Language.Lang "de" }}Dokumentation von Setup, Technik und Produktionen im ICST Studio.{{ else }}Documentation of setup, technology, and productions in the ICST studio.{{ end }}</p>
+          <h4>{{ if $isDe }}Studio Hub{{ else }}Studio Hub{{ end }}</h4>
+          <p>{{ if $isDe }}Der beste Einstieg in Raum, Infrastruktur, Technik und Arbeitsweise des ICST Kompositionsstudios.{{ else }}Best entry point into the ICST Composition Studio space, infrastructure, technology, and working context.{{ end }}</p>
+          <div class="archive__list-meta">{{ if $isDe }}Bereich{{ else }}Section{{ end }}: Studio · {{ if $isDe }}Typ{{ else }}Type{{ end }}: Hub</div>
           <div class="hero__links">
-            <a class="hero__link hero__link--primary" href="/blog/icst-composer-studio-blog/">{{ if eq .Site.Language.Lang "de" }}Öffnen{{ else }}Open{{ end }}</a>
+            <a class="hero__link hero__link--primary" href="{{ "blog/icst-composer-studio-blog/" | relLangURL }}">{{ if $isDe }}Öffnen{{ else }}Open{{ end }}</a>
           </div>
         </div>
         <div class="home-card">
           <h4>ASCOLTA</h4>
-          <p>{{ if eq .Site.Language.Lang "de" }}Konzerte, Listening Sessions und reale künstlerische Praxis.{{ else }}Concerts, listening sessions, and real artistic practice.{{ end }}</p>
+          <p>{{ if $isDe }}Konzerte, Listening Sessions und öffentliche Hörpraxis als künstlerischer Kern der Site.{{ else }}Concerts, listening sessions, and public listening practice as the artistic core of the site.{{ end }}</p>
+          <div class="archive__list-meta">{{ if $isDe }}Bereich{{ else }}Section{{ end }}: ASCOLTA · {{ if $isDe }}Typ{{ else }}Type{{ end }}: Listening / Concerts</div>
           <div class="hero__links">
-            <a class="hero__link hero__link--primary" href="/blog/ascolta/">{{ if eq .Site.Language.Lang "de" }}Öffnen{{ else }}Open{{ end }}</a>
+            <a class="hero__link hero__link--primary" href="{{ "blog/ascolta/" | relLangURL }}">{{ if $isDe }}Öffnen{{ else }}Open{{ end }}</a>
           </div>
         </div>
         <div class="home-card">
-          <h4>{{ if eq .Site.Language.Lang "de" }}Research & Best Practices{{ else }}Research & Best Practices{{ end }}</h4>
-          <p>{{ if eq .Site.Language.Lang "de" }}Methoden, Learnings und wiederverwendbare Produktionsmuster.{{ else }}Methods, learnings, and reusable production patterns.{{ end }}</p>
+          <h4>{{ if $isDe }}Residencies{{ else }}Residencies{{ end }}</h4>
+          <p>{{ if $isDe }}Künstler:innen, Projekte und Produktionskontexte aus dem Residency-Programm des ICST Studios.{{ else }}Artists, projects, and production contexts from the ICST studio residency programme.{{ end }}</p>
+          <div class="archive__list-meta">{{ if $isDe }}Bereich{{ else }}Section{{ end }}: Residencies · {{ if $isDe }}Typ{{ else }}Type{{ end }}: Programme / Profiles</div>
           <div class="hero__links">
-            <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/15_best_practices/">{{ if eq .Site.Language.Lang "de" }}Öffnen{{ else }}Open{{ end }}</a>
+            <a class="hero__link hero__link--primary" href="{{ "residenzen/" | relLangURL }}">{{ if $isDe }}Öffnen{{ else }}Open{{ end }}</a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>{{ if $isDe }}Downloads{{ else }}Downloads{{ end }}</h4>
+          <p>{{ if $isDe }}Templates, Presets, PDF-Guides und Referenzmaterial für Studio- und Plugin-Workflows.{{ else }}Templates, presets, PDF guides, and reference material for studio and plugin workflows.{{ end }}</p>
+          <div class="archive__list-meta">{{ if $isDe }}Bereich{{ else }}Section{{ end }}: Downloads · {{ if $isDe }}Typ{{ else }}Type{{ end }}: Resources</div>
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="{{ "blog/downloads/" | relLangURL }}">{{ if $isDe }}Öffnen{{ else }}Open{{ end }}</a>
           </div>
         </div>
       </div>
@@ -36,40 +56,71 @@
 
   <div class="post animated fadeInDown">
     <div class="post__content">
-      <div class="home-card playback-card">
-        <h4>ASCOLTA {{ if eq .Site.Language.Lang "de" }}(Featured){{ else }}(Featured){{ end }}</h4>
-        <p>
-          {{ if eq .Site.Language.Lang "de" }}
-            Das Alleinstellungsmerkmal der Seite: dokumentierte Konzerte und Hörpraxis im realen Studiokontext der ZHdK.
-          {{ else }}
-            The distinctive core of this site: documented concerts and listening practice in ZHdK's real studio context.
-          {{ end }}
-        </p>
-        <div class="hero__links">
-          <a class="hero__link hero__link--primary" href="/blog/ascolta/">{{ if eq .Site.Language.Lang "de" }}Zu ASCOLTA{{ else }}Go to ASCOLTA{{ end }}</a>
-          <a class="hero__link" href="/blog/audio-examples/">{{ if eq .Site.Language.Lang "de" }}Audio Examples{{ else }}Audio Examples{{ end }}</a>
+      <h2>{{ if $isDe }}Nach Kontext sortiert{{ else }}Browse by Context{{ end }}</h2>
+      <div class="home-cards">
+        <div class="home-card">
+          <h4>{{ if $isDe }}Studio nutzen{{ else }}Using the Studio{{ end }}</h4>
+          <p>
+            {{ if $isDe }}
+              Für Bewohner:innen, Besucher:innen und Techniker:innen: Raum, Setup, Infrastruktur und praktische Orientierung.
+            {{ else }}
+              For residents, visitors, and technicians: room, setup, infrastructure, and practical orientation.
+            {{ end }}
+          </p>
+          <div class="hero__links">
+            <a class="hero__link" href="#studio">{{ if $isDe }}Studio filtern{{ else }}Filter studio{{ end }}</a>
+            <a class="hero__link" href="{{ "blog/icst-composer-studio-blog/" | relLangURL }}">{{ if $isDe }}Studio Hub{{ else }}Studio hub{{ end }}</a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>{{ if $isDe }}Hören & Programm{{ else }}Listening & Programme{{ end }}</h4>
+          <p>
+            {{ if $isDe }}
+              ASCOLTA, Audio Examples und öffentliche Hörpraxis als sichtbarer künstlerischer Output des Studios.
+            {{ else }}
+              ASCOLTA, audio examples, and public listening practice as the visible artistic output of the studio.
+            {{ end }}
+          </p>
+          <div class="hero__links">
+            <a class="hero__link" href="#ascolta">ASCOLTA</a>
+            <a class="hero__link" href="{{ "blog/audio-examples/" | relLangURL }}">{{ if $isDe }}Audio Examples{{ else }}Audio examples{{ end }}</a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>{{ if $isDe }}Ressourcen & Material{{ else }}Resources & Material{{ end }}</h4>
+          <p>
+            {{ if $isDe }}
+              Downloads, Archive und Referenzmaterial für Sessions, Tests und Wiederverwendung.
+            {{ else }}
+              Downloads, archives, and reference material for sessions, testing, and reuse.
+            {{ end }}
+          </p>
+          <div class="hero__links">
+            <a class="hero__link" href="#downloads">{{ if $isDe }}Downloads filtern{{ else }}Filter downloads{{ end }}</a>
+            <a class="hero__link" href="{{ "blog/downloads/" | relLangURL }}">{{ if $isDe }}Downloads öffnen{{ else }}Open downloads{{ end }}</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}" data-blog-root>
-    <div class="archive__heading">{{ if eq .Site.Language.Lang "de" }}Alle Blog-Bereiche{{ else }}All Blog Sections{{ end }}</div>
+    <div class="archive__heading">{{ if $isDe }}Alle Studio-Bereiche{{ else }}All Studio Sections{{ end }}</div>
     <p class="archive__intro">
-      {{ if eq .Site.Language.Lang "de" }}
-        Für technische Schritt-für-Schritt-Anleitungen gehe zu <a href="/post/">Tutorials</a>.
+      {{ if $isDe }}
+        Für technische Schritt-für-Schritt-Anleitungen gehe zu <a href="/post/">Tutorials</a>. Dieses Verzeichnis bündelt Kontext, Programm, Infrastruktur und dokumentierte Praxis.
       {{ else }}
-        For technical step-by-step workflows, go to <a href="/post/">Tutorials</a>.
+        For technical step-by-step workflows, go to <a href="/post/">Tutorials</a>. This directory brings together context, programme, infrastructure, and documented practice.
       {{ end }}
     </p>
 
-    <div class="archive__filters" role="group" aria-label="{{ if eq .Site.Language.Lang "de" }}Blog-Filter{{ else }}Blog filters{{ end }}">
-      <button class="archive__filter-btn archive__filter-btn--active" type="button" data-filter="all">{{ if eq .Site.Language.Lang "de" }}Alle{{ else }}All{{ end }}</button>
-      <button class="archive__filter-btn" type="button" data-filter="studio">{{ if eq .Site.Language.Lang "de" }}Studio{{ else }}Studio{{ end }}</button>
+    <div class="archive__filters" role="group" aria-label="{{ if $isDe }}Blog-Filter{{ else }}Blog filters{{ end }}">
+      <button class="archive__filter-btn archive__filter-btn--active" type="button" data-filter="all">{{ if $isDe }}Alle{{ else }}All{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="studio">{{ if $isDe }}Studio{{ else }}Studio{{ end }}</button>
       <button class="archive__filter-btn" type="button" data-filter="ascolta">ASCOLTA</button>
-      <button class="archive__filter-btn" type="button" data-filter="research">{{ if eq .Site.Language.Lang "de" }}Research{{ else }}Research{{ end }}</button>
-      <button class="archive__filter-btn" type="button" data-filter="downloads">{{ if eq .Site.Language.Lang "de" }}Downloads{{ else }}Downloads{{ end }}</button>
-      <button class="archive__filter-btn" type="button" data-filter="news">{{ if eq .Site.Language.Lang "de" }}News{{ else }}News{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="residencies">{{ if $isDe }}Residencies{{ else }}Residencies{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="downloads">{{ if $isDe }}Downloads{{ else }}Downloads{{ end }}</button>
+      <button class="archive__filter-btn" type="button" data-filter="news">{{ if $isDe }}News{{ else }}News{{ end }}</button>
     </div>
 
     <div class="docs-index">
@@ -87,14 +138,14 @@
           {{ $kind := "news" }}
           {{ $title := lower $item.Title }}
           {{ $permalink := lower $item.RelPermalink }}
-          {{ if or (in $title "ascolta") (in $permalink "/ascolta/") (in $title "sounding future") }}
+          {{ if or (in $title "ascolta") (in $permalink "/ascolta/") (in $title "sounding future") (in $title "listening") }}
             {{ $kind = "ascolta" }}
-          {{ else if or (in $title "download") (in $permalink "/downloads/") (in $permalink "b-format-archive") }}
+          {{ else if or (in $title "download") (in $permalink "/downloads/") (in $permalink "b-format-archive") (in $title "archive") }}
             {{ $kind = "downloads" }}
-          {{ else if or (in $title "studio") (in $title "residenz") (in $title "residenc") (in $title "regie") (in $title "speaker") (in $title "software") (in $title "equipment") }}
+          {{ else if or (in $title "residenz") (in $title "residenc") (in $permalink "/residenzen/") }}
+            {{ $kind = "residencies" }}
+          {{ else if or (in $title "studio") (in $title "regie") (in $title "speaker") (in $title "software") (in $title "equipment") }}
             {{ $kind = "studio" }}
-          {{ else if or (in $title "best practices") (in $title "faq") (in $title "research") }}
-            {{ $kind = "research" }}
           {{ end }}
 
           <a class="docs-index__chapter archive__list-item--filter" href="{{ $item.RelPermalink }}" data-kind="{{ $kind }}">
@@ -110,18 +161,14 @@
               {{ end }}
               <div class="archive__list-meta">
                 {{ if $item.IsSection }}
-                  {{ if eq $.Site.Language.Lang "de" }}Einträge: {{ else }}Entries: {{ end }}{{ $count }}
+                  {{ if $isDe }}Einträge: {{ else }}Entries: {{ end }}{{ $count }}
                 {{ else }}
-                  {{ if eq $.Site.Language.Lang "de" }}Eintrag{{ else }}Single page{{ end }}
+                  {{ if $isDe }}Eintrag{{ else }}Single page{{ end }}
                 {{ end }}
                 ·
-                {{ if eq $.Site.Language.Lang "de" }}
-                  {{ if eq $kind "ascolta" }}ASCOLTA{{ else if eq $kind "studio" }}Studio{{ else if eq $kind "research" }}Research{{ else if eq $kind "downloads" }}Downloads{{ else }}News{{ end }}
-                {{ else }}
-                  {{ if eq $kind "ascolta" }}ASCOLTA{{ else if eq $kind "studio" }}Studio{{ else if eq $kind "research" }}Research{{ else if eq $kind "downloads" }}Downloads{{ else }}News{{ end }}
-                {{ end }}
+                {{ if eq $kind "ascolta" }}ASCOLTA{{ else if eq $kind "studio" }}Studio{{ else if eq $kind "residencies" }}Residencies{{ else if eq $kind "downloads" }}Downloads{{ else }}News{{ end }}
                 {{ if and (not $latest.IsZero) (lt $latest.Year 2050) }}
-                  · {{ if eq $.Site.Language.Lang "de" }}Aktualisiert: {{ else }}Updated: {{ end }}
+                  · {{ if $isDe }}Aktualisiert: {{ else }}Updated: {{ end }}
                   {{ if isset $.Site.Params "listdateformat" }}
                     {{ if $.Site.Params.localizedDates }}
                       {{ time.Format $.Site.Params.listDateFormat $latest }}

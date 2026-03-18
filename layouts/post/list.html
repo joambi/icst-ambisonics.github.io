@@ -1,5 +1,10 @@
 {{ define "main" }}
   {{ $pages := .RegularPages.ByDate.Reverse }}
+  {{ $isDe := eq .Site.Language.Lang "de" }}
+  {{ $startPage := site.GetPage "post/getting-started-icst-plugins-reaper" }}
+  {{ $quickPage := site.GetPage "post/reaper-setup-20-minuten" }}
+  {{ $hoaPage := site.GetPage "post/stereo-to-hoa7-session" }}
+  {{ $oscPage := site.GetPage "post/osc-syntax-for-the-icst-ambiencoder-plugin" }}
 
   {{ with .Content }}
     <div class="post {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
@@ -9,51 +14,147 @@
 
   <div class="post animated fadeInDown">
     <div class="post__content">
-      <h2>{{ if eq .Site.Language.Lang "de" }}Schnelle Einstiege{{ else }}Quick Starts{{ end }}</h2>
+      <h2>{{ if $isDe }}Empfohlene Einstiege{{ else }}Recommended Starts{{ end }}</h2>
+      <p class="archive__intro">
+        {{ if $isDe }}
+          Beginne mit einem klaren Einstiegspfad statt mit einer rohen Chronologie. Diese vier Guides decken Erstsetup, schnelle Umsetzung, Produktionslogik und technische Referenz ab.
+        {{ else }}
+          Start with a clear entry path instead of a raw archive. These four guides cover first setup, quick execution, production thinking, and technical reference.
+        {{ end }}
+      </p>
       <div class="home-cards">
         <div class="home-card">
-          <h4>{{ if eq .Site.Language.Lang "de" }}Erster Einstieg{{ else }}First Setup{{ end }}</h4>
+          <h4>{{ if $isDe }}Erster Einstieg{{ else }}First Setup{{ end }}</h4>
           <p>
-            {{ if eq .Site.Language.Lang "de" }}
-              Starte mit Reaper-Setup und Basis-Routing.
+            {{ if $isDe }}
+              Kompakter Onboarding-Guide für die erste funktionierende Session mit Reaper, Routing und Monitoring.
             {{ else }}
-              Start with Reaper setup and baseline routing.
+              Compact onboarding for a first working session with Reaper, routing, and monitoring.
             {{ end }}
           </p>
+          {{ with $startPage }}
+            <div class="archive__list-meta">
+              {{ if $isDe }}Level{{ else }}Level{{ end }}: {{ default "Beginner" .Params.difficulty }}
+              {{ with .Params.tags }} · {{ if $isDe }}Fokus{{ else }}Focus{{ end }}: {{ range $idx, $tag := first 2 . }}{{ if gt $idx 0 }}, {{ end }}#{{ $tag }}{{ end }}{{ end }}
+            </div>
+          {{ end }}
           <div class="hero__links">
-            <a class="hero__link hero__link--primary" href="/post/getting-started-icst-plugins-reaper/">
-              {{ if eq .Site.Language.Lang "de" }}Jetzt starten{{ else }}Start now{{ end }}
+            <a class="hero__link hero__link--primary" href="{{ "post/getting-started-icst-plugins-reaper/" | relLangURL }}">
+              {{ if $isDe }}Jetzt starten{{ else }}Start now{{ end }}
             </a>
           </div>
         </div>
         <div class="home-card">
-          <h4>{{ if eq .Site.Language.Lang "de" }}Produktions-Workflow{{ else }}Production Workflow{{ end }}</h4>
+          <h4>{{ if $isDe }}Schneller Session-Bau{{ else }}Fast Session Build{{ end }}</h4>
           <p>
-            {{ if eq .Site.Language.Lang "de" }}
-              Von Stereo zu HOA7 mit einem reproduzierbaren Session-Flow.
+            {{ if $isDe }}
+              Klickorientierte 20-Minuten-Checkliste für Encoder, B-Format-Bus, Decoder und Monitoring-Test.
             {{ else }}
-              Move from stereo to HOA7 with a repeatable session flow.
+              Click-by-click 20-minute checklist for encoder, B-format bus, decoder, and monitoring test.
             {{ end }}
           </p>
+          {{ with $quickPage }}
+            <div class="archive__list-meta">
+              {{ if $isDe }}Level{{ else }}Level{{ end }}: {{ default "Beginner" .Params.difficulty }}
+              {{ with .Params.tags }} · {{ if $isDe }}Fokus{{ else }}Focus{{ end }}: {{ range $idx, $tag := first 2 . }}{{ if gt $idx 0 }}, {{ end }}#{{ $tag }}{{ end }}{{ end }}
+            </div>
+          {{ end }}
           <div class="hero__links">
-            <a class="hero__link hero__link--primary" href="/post/stereo-to-hoa7-session/">
-              {{ if eq .Site.Language.Lang "de" }}Zum Guide{{ else }}Open guide{{ end }}
+            <a class="hero__link hero__link--primary" href="{{ "post/reaper-setup-20-minuten/" | relLangURL }}">
+              {{ if $isDe }}Zur Checkliste{{ else }}Open checklist{{ end }}
             </a>
           </div>
         </div>
         <div class="home-card">
-          <h4>{{ if eq .Site.Language.Lang "de" }}OSC & Automation{{ else }}OSC & Automation{{ end }}</h4>
+          <h4>{{ if $isDe }}Von Stereo zu HOA7{{ else }}From Stereo to HOA7{{ end }}</h4>
           <p>
-            {{ if eq .Site.Language.Lang "de" }}
-              Vertiefe dich in OSC-Syntax, Mapping und Controller-Integration.
+            {{ if $isDe }}
+              Uebersetzt Stereo-Denken in einen kontrollierten HOA7-Produktionsworkflow mit Bewegung und Export.
             {{ else }}
-              Deep dive into OSC syntax, mapping, and controller integration.
+              Translates stereo thinking into a controlled HOA7 production workflow with movement and export.
+            {{ end }}
+          </p>
+          {{ with $hoaPage }}
+            <div class="archive__list-meta">
+              {{ if $isDe }}Level{{ else }}Level{{ end }}: {{ default "Intermediate" .Params.difficulty }}
+              {{ with .Params.tags }} · {{ if $isDe }}Fokus{{ else }}Focus{{ end }}: {{ range $idx, $tag := first 2 . }}{{ if gt $idx 0 }}, {{ end }}#{{ $tag }}{{ end }}{{ end }}
+            </div>
+          {{ end }}
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="{{ "post/stereo-to-hoa7-session/" | relLangURL }}">
+              {{ if $isDe }}Zum Workflow{{ else }}Open workflow{{ end }}
+            </a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>{{ if $isDe }}OSC Referenz{{ else }}OSC Reference{{ end }}</h4>
+          <p>
+            {{ if $isDe }}
+              Technische Referenz für Addressen, Parameter und die Integration mit MaxMSP, TouchOSC und ähnlichen Tools.
+            {{ else }}
+              Technical reference for addresses, parameters, and integration with MaxMSP, TouchOSC, and similar tools.
+            {{ end }}
+          </p>
+          {{ with $oscPage }}
+            <div class="archive__list-meta">
+              {{ if $isDe }}Level{{ else }}Level{{ end }}: Advanced
+              {{ with .Params.tags }} · {{ if $isDe }}Fokus{{ else }}Focus{{ end }}: {{ range $idx, $tag := first 2 . }}{{ if gt $idx 0 }}, {{ end }}#{{ $tag }}{{ end }}{{ end }}
+            </div>
+          {{ end }}
+          <div class="hero__links">
+            <a class="hero__link hero__link--primary" href="{{ "post/osc-syntax-for-the-icst-ambiencoder-plugin/" | relLangURL }}">
+              {{ if $isDe }}Referenz öffnen{{ else }}Open reference{{ end }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post animated fadeInDown">
+    <div class="post__content">
+      <h2>{{ if $isDe }}Nach Aufgaben sortiert{{ else }}Browse by Task{{ end }}</h2>
+      <div class="home-cards">
+        <div class="home-card">
+          <h4>{{ if $isDe }}Erstes Setup{{ else }}First Setup{{ end }}</h4>
+          <p>
+            {{ if $isDe }}
+              Installation, Routing, Signalfluss und erste verifizierte Session in REAPER.
+            {{ else }}
+              Installation, routing, signal flow, and the first verified session in REAPER.
             {{ end }}
           </p>
           <div class="hero__links">
-            <a class="hero__link hero__link--primary" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">
-              {{ if eq .Site.Language.Lang "de" }}OSC öffnen{{ else }}Open OSC{{ end }}
-            </a>
+            <a class="hero__link" href="#beginner">{{ if $isDe }}Beginner filtern{{ else }}Filter beginner{{ end }}</a>
+            <a class="hero__link" href="#reaper">REAPER</a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>{{ if $isDe }}Bewegung & Komposition{{ else }}Movement & Composition{{ end }}</h4>
+          <p>
+            {{ if $isDe }}
+              Session-Logik für HOA, Bewegungsdesign, Gruppen und musikalische Raumgestaltung.
+            {{ else }}
+              Session logic for HOA, movement design, groups, and musical spatial thinking.
+            {{ end }}
+          </p>
+          <div class="hero__links">
+            <a class="hero__link" href="{{ "post/stereo-to-hoa7-session/" | relLangURL }}">{{ if $isDe }}HOA7 Guide{{ else }}HOA7 guide{{ end }}</a>
+            <a class="hero__link" href="{{ "post/gp-manipulation/" | relLangURL }}">{{ if $isDe }}Gruppenanimation{{ else }}Group animation{{ end }}</a>
+          </div>
+        </div>
+        <div class="home-card">
+          <h4>{{ if $isDe }}OSC & Controller{{ else }}OSC & Controllers{{ end }}</h4>
+          <p>
+            {{ if $isDe }}
+              Syntax, Debugging, Mapping und externe Steuerung über Max, TouchOSC oder Sensor-Apps.
+            {{ else }}
+              Syntax, debugging, mapping, and external control via Max, TouchOSC, or sensor apps.
+            {{ end }}
+          </p>
+          <div class="hero__links">
+            <a class="hero__link" href="#osc">OSC</a>
+            <a class="hero__link" href="#max">Max</a>
           </div>
         </div>
       </div>
@@ -63,10 +164,10 @@
   <div class="docs-index animated fadeInDown">
     <div data-tutorials-root>
     <div class="archive__heading">
-      {{ if eq .Site.Language.Lang "de" }}Alle Tutorials{{ else }}All Tutorials{{ end }}
+      {{ if $isDe }}Alle Tutorials{{ else }}All Tutorials{{ end }}
     </div>
     <p class="archive__intro">
-      {{ if eq .Site.Language.Lang "de" }}
+      {{ if $isDe }}
         Suchen Sie Studio-News und Residency-Updates? Diese finden Sie im <a href="/blog/">Studio Blog</a>.
       {{ else }}
         Looking for studio news and residency updates? You can find them in the <a href="/blog/">Studio Blog</a>.
@@ -75,6 +176,8 @@
     <div class="tutorial-filters" role="group" aria-label="{{ if eq .Site.Language.Lang "de" }}Tutorial Filter{{ else }}Tutorial filters{{ end }}">
       <button type="button" class="tutorial-filters__btn is-active" data-filter="all">{{ if eq .Site.Language.Lang "de" }}Alle{{ else }}All{{ end }}</button>
       <button type="button" class="tutorial-filters__btn" data-filter="beginner">{{ if eq .Site.Language.Lang "de" }}Beginner{{ else }}Beginner{{ end }}</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="intermediate">{{ if $isDe }}Intermediate{{ else }}Intermediate{{ end }}</button>
+      <button type="button" class="tutorial-filters__btn" data-filter="advanced">{{ if $isDe }}Advanced{{ else }}Advanced{{ end }}</button>
       <button type="button" class="tutorial-filters__btn" data-filter="osc">OSC</button>
       <button type="button" class="tutorial-filters__btn" data-filter="reaper">Reaper</button>
       <button type="button" class="tutorial-filters__btn" data-filter="max">Max</button>
@@ -87,39 +190,56 @@
             {{ $tags = $tags | append (lower .) }}
           {{ end }}
         {{ end }}
+        {{ $raw := $page.RawContent }}
         {{ $difficulty := lower (default "" $page.Params.difficulty) }}
-        {{ $filterText := printf "%s %s %s %s" (delimit $tags " ") (lower $page.Title) (lower $page.RelPermalink) $difficulty }}
+        {{ $level := $page.Params.level }}
+        {{ if not $level }}
+          {{ $level = $page.Params.difficulty }}
+        {{ end }}
+        {{ $levelMatch := findRE `(?im)^Level:\s*([^|\n]+)` $raw 1 }}
+        {{ if and (not $level) (gt (len $levelMatch) 0) }}
+          {{ $level = replaceRE `(?im)^Level:\s*([^|\n]+).*$` `$1` (index $levelMatch 0) }}
+        {{ end }}
+        {{ $levelLower := lower (default "" $level) }}
+        {{ $audience := "" }}
+        {{ $audienceMatch := findRE `(?im)\*\*Audience:\*\*\s*([^\n\.]+)` $raw 1 }}
+        {{ if gt (len $audienceMatch) 0 }}
+          {{ $audience = replaceRE `(?im)^.*\*\*Audience:\*\*\s*([^\n\.]+).*$` `$1` (index $audienceMatch 0) }}
+        {{ end }}
+        {{ $filterText := printf "%s %s %s %s %s %s" (delimit $tags " ") (lower $page.Title) (lower $page.RelPermalink) $difficulty $levelLower (lower $audience) }}
         <a class="docs-index__chapter" href="{{ $page.RelPermalink }}" data-filter-text="{{ $filterText }}">
           <div class="docs-index__chapter-number">{{ add $i 1 }}</div>
           <div class="docs-index__chapter-info">
             <div class="docs-index__chapter-title">
               {{ $page.Title }}
-              {{ with $page.Params.difficulty }}<span class="difficulty-badge difficulty-badge--{{ . }}">{{ . }}</span>{{ end }}
+              {{ with $level }}<span class="difficulty-badge difficulty-badge--{{ lower . }}">{{ . }}</span>{{ end }}
             </div>
-            {{ $desc := .Description }}
+            {{ $desc := $page.Description }}
             {{ if not $desc }}
-              {{ $desc = .Summary | plainify | truncate 190 }}
+              {{ $desc = $page.Summary | plainify | truncate 190 }}
             {{ end }}
             {{ with $desc }}
               <div class="docs-index__chapter-desc">{{ . }}</div>
             {{ end }}
             <div class="archive__list-meta">
-              {{ if isset .Site.Params "listdateformat" }}
-                {{ if .Site.Params.localizedDates }}
-                  {{ time.Format .Site.Params.listDateFormat $page.Date }}
+              {{ if isset $.Site.Params "listdateformat" }}
+                {{ if $.Site.Params.localizedDates }}
+                  {{ time.Format $.Site.Params.listDateFormat $page.Date }}
                 {{ else }}
-                  {{ $page.Date.Format .Site.Params.listDateFormat }}
+                  {{ $page.Date.Format $.Site.Params.listDateFormat }}
                 {{ end }}
               {{ else }}
-                {{ if .Site.Params.localizedDates }}
+                {{ if $.Site.Params.localizedDates }}
                   {{ time.Format "Jan 2, 2006" $page.Date }}
                 {{ else }}
                   {{ $page.Date.Format "Jan 2, 2006" }}
                 {{ end }}
               {{ end }}
-              · {{ if eq .Site.Language.Lang "de" }}{{ $page.ReadingTime }} Min. Lesezeit{{ else }}{{ $page.ReadingTime }} min read{{ end }}
+              · {{ if $isDe }}{{ $page.ReadingTime }} Min. Lesezeit{{ else }}{{ $page.ReadingTime }} min read{{ end }}
+              {{ with $level }} · {{ if $isDe }}Level{{ else }}Level{{ end }}: {{ . }}{{ end }}
+              {{ with $audience }} · {{ if $isDe }}Audience{{ else }}Audience{{ end }}: {{ . }}{{ end }}
               {{ with $page.Params.tags }}
-                · {{ if eq $.Site.Language.Lang "de" }}Fokus: {{ else }}Focus: {{ end }}
+                · {{ if $isDe }}Fokus: {{ else }}Focus: {{ end }}
                 {{ range $idx, $tag := first 2 . }}{{ if gt $idx 0 }}, {{ end }}#{{ $tag }}{{ end }}
               {{ end }}
             </div>
@@ -146,6 +266,8 @@
       var matchers = {
         all: function () { return true; },
         beginner: function (text) { return text.indexOf("beginner") !== -1 || text.indexOf("getting started") !== -1 || text.indexOf("quick start") !== -1; },
+        intermediate: function (text) { return text.indexOf("intermediate") !== -1; },
+        advanced: function (text) { return text.indexOf("advanced") !== -1 || text.indexOf("reference") !== -1 || text.indexOf("syntax") !== -1; },
         osc: function (text) { return text.indexOf("osc") !== -1; },
         reaper: function (text) { return text.indexOf("reaper") !== -1; },
         max: function (text) { return text.indexOf("max") !== -1 || text.indexOf("maxmsp") !== -1 || text.indexOf("msp") !== -1; }
