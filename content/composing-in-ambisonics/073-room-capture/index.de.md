@@ -96,16 +96,60 @@ Eine einfache und wirksame Testmethode ist ein **A/B-Vergleich** zwischen:
 
 Beide Versionen durch dasselbe System abzuspielen — idealerweise sowohl über Lautsprecher als auch Kopfhörer — zeigt, wie viel Raumklang die Komposition benötigt, und wo das Gleichgewicht zwischen räumlicher Klarheit und immersiver Tiefe liegt. Diese Art iterativer Prüfung ist genauso ein kompositorischer Akt wie das Skizzieren von melodischem Material.
 
-### Raum aufnehmen und für Faltungshall verwenden
+### Drei Wege zur Integration von Raumakustik
 
-Ein dritter methodologischer Ansatz ist, die **Impulsantwort des Zielraumes aufzunehmen** und sie als Faltungshall in die Komposition zu integrieren. So lässt sich die Akustik des Konzertsaals bereits im Studio in das Stück "voreinbacken".
+Sobald der Raum verstanden ist, stehen drei Produktionswege zur Verfügung — jeder mit unterschiedlichen technischen Anforderungen und künstlerischen Ergebnissen.
+
+---
+
+**Weg 1 — Den Raum als Faltungshall aufnehmen**
+
+Die Impulsantwort (IR) des Zielraumes mit einem Ambisonics-Mikrofon aufnehmen und als räumlichen Faltungshall in der Produktion einsetzen. So lässt sich die Akustik des Konzertsaals bereits im Studio in das Stück einarbeiten.
 
 Workflow:
-1. Raum-IR mit Sinussweep oder Startpistole in ein Ambisonics-Mikrofon aufnehmen (z.B. Sennheiser Ambeo VR Mic, Zylia ZM-1)
-2. IR zu B-Format enkodieren
-3. Im DAW als Faltungshall auf einzelne Quellen oder den Ambisonics-Bus anwenden
+1. Sinussweep erzeugen (mit Room EQ Wizard, Reaper oder ähnlichem) und über einen Breitband-Lautsprecher im Zielraum abspielen
+2. Antwort mit einem Ambisonics-Mikrofon aufnehmen — das **Zylia ZM-1** (3. Ordnung HOA, 19 Kapseln) liefert exzellente räumliche Auflösung; das **Sennheiser Ambeo VR Mic** oder **Rode NT-SF1** eignen sich für First-Order-Aufnahmen; auch **Core Sound TetraMic** oder **Eigenmike em32** sind geeignet
+3. Die aufgenommene IR zu B-Format (AmbiX) dekodieren — mit der mitgelieferten Mikrofon-Software oder mit IEM- / SPARTA-Tools
+4. Die B-Format-IR im DAW als Faltungshall auf einzelne Quellen oder den Ambisonics-Bus anwenden — Plugins wie **Reapers ReaVerb**, **Altiverb** oder der **IEM RoomEncoder** unterstützen Mehrkanal-Faltung
 
-Das Ergebnis ist ein Stück, das den Zielraum bereits "kennt". Wenn es in diesem Saal wiedergegeben wird, verschmelzen enkodierter Raum und lebendiger Raum — was künstlerisch sehr wirkungsvoll sein kann, oder gelegentlich problematisch, wenn das Abklingen sich zu stark verdoppelt. Vorheriges Testen bleibt unerlässlich.
+Das Ergebnis ist ein Stück, das die akustische Signatur des Zielraums bereits trägt. Bei der Aufführung in diesem Saal verschmelzen enkodierter und realer Raum — was künstlerisch sehr wirkungsvoll sein kann, aber gelegentlich problematisch, wenn das Abklingen sich zu stark verdoppelt. Falls der Aufführungsort wechselt, kann eine neue IR eingesetzt werden, ohne die Komposition neu zu bearbeiten.
+
+**Stärke:** Physikalisch präzise; der räumliche Charakter des spezifischen Raumes bleibt vollständig in 3D erhalten.
+**Einschränkung:** Erfordert vorab Zugang zum Venue; IR-Aufnahme dauert vor Ort 30–60 Minuten.
+
+---
+
+**Weg 2 — Einen virtuellen Raum in Ambisonics synthetisieren**
+
+Statt einen realen Raum aufzunehmen, einen synthetischen räumlichen Nachhall algorithmisch erzeugen. Dieser Ansatz ist vollständig studiobasiert und gibt vollständige kreative Kontrolle über alle Raumparameter.
+
+Wichtige Werkzeuge:
+
+- **IRCAM Spat5** (Max/MSP, Standalone oder VST) — die leistungsfähigste räumliche Hall-Umgebung für Ambisonics-Arbeit; unterstützt Raummodellierung, Quell-Direktheit und vollständigen HOA-Output bis zu beliebiger Ordnung; Raumgrösse, RT60, frühe Reflexionen, Diffusion und Luftabsorption sind pro Quelle steuerbar
+- **SPARTA AmbiBIN / Hybrid Reverb** — kostenloser VST mit Ambisonics-eigenem Hall und Binaural-Output
+- **IEM FdnReverb** — kostenloser Feedback-Delay-Network-Hall mit Ambisonics-Output, geeignet für Einhüllung und Großraumsimulation
+- **Aalto Spatial** / **dearVR Spatial Connect** — kommerzielle Optionen mit HRTF-basierter Raumsimulation
+- **Panoramix** (IRCAM, Max/MSP) — in vielen akusmatischen Konzert-Kontexten eingesetzt; direktionaler Hall und Spatialisation in einer Umgebung
+
+Mit einem Werkzeug wie Spat5 lässt sich ein Raum bauen, der nicht existiert — ein 40 Meter hohes Steingewölbe, eine sphärische Kammer, ein schalltotes Volumen — und gezielt für seine Eigenschaften komponieren. Der Raum wird zum kompositorischen Instrument statt zur physikalischen Bedingung.
+
+**Stärke:** Vollständige kreative Freiheit; kein Venue-Zugang nötig; Raumparameter können über Abschnitte des Stückes hinweg wechseln.
+**Einschränkung:** Synthetischer Hall klingt bei bestimmtem Material weniger physikalisch überzeugend als ein reales IR; erfordert Zeit für eine kohärente Kalibrierung.
+
+---
+
+**Weg 3 — Beide kombinieren: hybride Produktion**
+
+Der flexibelste Ansatz kombiniert eine reale aufgenommene IR (für den übergeordneten räumlichen Charakter) mit einer synthetischen Hall-Schicht (für kompositorische Kontrolle). Typische hybride Setups:
+
+- Die **reale IR** als leichten Faltungsschwanz auf dem Ambisonics-Bus einsetzen — dem Stück den „Klang" des Zielraums geben — während der individuelle Quell-Hall **synthetisch** bleibt für präzise Kontrolle von frühen Reflexionen und Quell-Distanz
+- Mit Spat5 die **frühen Reflexionen** formen (die den entscheidendsten Einfluss auf wahrgenommene Quell-Distanz und Raumgrösse haben) und nur für den **späten diffusen Nachhall** eine reale IR verwenden
+- In Reaper: Quellen über Spat5-Insert für räumliche Positionierung und frühe Reflexionen routen, dann den Ambisonics-Bus durch einen mit der Venue-IR geladenen Faltungshall schicken
+
+Dieser Ansatz ist in der professionellen Fixed-Media-Produktion am ICST und am IRCAM verbreitet: Das reale Raumimpuls gibt der akustischen Situation Glaubwürdigkeit; die synthetische Schicht liefert kompositorische Präzision, die eine rohe IR allein nicht bieten kann.
+
+**Stärke:** Physikalisch verankert, aber kompositorisch steuerbar; funktioniert auch wenn die Venue-IR noch nicht verfügbar ist (mit einer ähnlichen Referenz-IR aufbauen, später austauschen).
+**Einschränkung:** Komplexeres Routing; sorgfältiges Gain-Staging nötig, um Hall-Verdopplung zu vermeiden.
 
 ## Zusammenfassung: Fragen vor jeder Produktion
 
