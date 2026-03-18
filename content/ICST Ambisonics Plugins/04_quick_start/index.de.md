@@ -30,5 +30,3 @@ Nutze diese Seite, wenn du den kürzesten Weg zu einer verifizierten ersten Sess
 Jetzt kannst du entweder:
 - direkt mit dem **MultiEncoder** Quellen platzieren und bewegen, oder
 - mit dem **[Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)** tiefer in Routing, Decoder und Recording einsteigen.
-
-----

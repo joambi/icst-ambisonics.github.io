@@ -30,5 +30,3 @@ Use this page when you want the shortest path to a verified first session. For t
 You can now either:
 - start placing/moving sources in the **MultiEncoder**, or
 - continue with the **[Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)** for routing, decoder, and recording details.
-
-----
