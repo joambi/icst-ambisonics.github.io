@@ -1,5 +1,5 @@
 ---
-title: "Residenzen"
+title: "Residencies"
 description: "International artist residencies at the ICST Composition Studio â€” composers working with spatial audio and Ambisonics technology at ZHdK Zurich."
 ---
 
@@ -101,6 +101,8 @@ description: "International artist residencies at the ICST Composition Studio â€
   }
 }
 </style>
+
+Level: Intermediate | **Audience:** Composers, sound artists, researchers, and potential residency applicants.
 
 ## Artist Residencies at the ICST Studio
 

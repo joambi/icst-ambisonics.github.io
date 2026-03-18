@@ -1,14 +1,14 @@
 ---
-title: ICST Kompositionsstudio – Photo Gallery
+title: ICST Composition Studio Photo Gallery
 description: "Photo gallery — impressions of the ICST Composition Studio"
 date: 2025-06-25T15:12:00
 weight: 12
 group: "Studio"
 ---
 
-**Audience:** Composer, Student, Researcher, Studio visitor.
+Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 
-### The ICST Kompositionsstudio
+### The ICST Composition Studio
 
 ![Studio overview](Kompstudio.jpg)
 

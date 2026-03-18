@@ -5,6 +5,8 @@ date: 2026-01-01T00:00:00
 draft: false
 ---
 
+Level: Beginner | **Audience:** Composer, student, producer, technician.
+
 New to spatial audio or to the ICST plugins? Follow these four steps in order — each one builds on the previous and takes you from zero to a working Ambisonics session in REAPER.
 
 <a class="hero__link" href="/downloads/icst-ambisonics-start-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;Download as PDF</a>
@@ -55,4 +57,4 @@ New to spatial audio or to the ICST plugins? Follow these four steps in order �
 
 ---
 
-**Questions?** Check the [FAQ](/blog/faq/) first — common installation issues, signal flow problems, and OSC troubleshooting are all covered there.
+**Questions?** Check the [FAQ](/blog/faq/) first. Common installation issues, signal flow problems, and OSC troubleshooting are covered there.

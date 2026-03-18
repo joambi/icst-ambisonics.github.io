@@ -1,6 +1,6 @@
 ---
 tags:
-title: ICST Labor Ambisonics Speaker Settings
+title: ICST Composition Studio Speaker Settings
 description: "Speaker presets and coordinate files for the ICST decoder"
 date: 2025-05-20T15:11:00
 slug: icst-kompositionsstudio-speaker-settings
@@ -10,7 +10,7 @@ weight: 11
 group: "Residents"
 ---
 
-**Audience:** Composer, Student, Researcher, Studio visitor.
+Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 
 Preset views and reference layouts for fast setup in the ICST studio.
 
@@ -37,7 +37,7 @@ Preset views and reference layouts for fast setup in the ICST studio.
 </div>
 
 <details class="home-accordion" id="stereo-setting">
-  <summary>Stereo-Setting</summary>
+  <summary>Stereo</summary>
   <div class="home-accordion__actions">
     <span class="hero__link hero__link--primary">Yellow = RL911</span>
     <span class="hero__link">Gray = MO-2</span>
@@ -56,7 +56,7 @@ Preset views and reference layouts for fast setup in the ICST studio.
 </details>
 
 <details class="home-accordion" id="octogon--ambisonics">
-  <summary>Octogon & Ambisonics</summary>
+  <summary>Octagon & Ambisonics</summary>
   <div class="home-accordion__actions">
     <span class="hero__link hero__link--primary">Ring 1-8 (clockwise) & Ambisonics (2D)</span>
     <span class="hero__link">Ambisonics Full (17 speakers)</span>
@@ -65,7 +65,7 @@ Preset views and reference layouts for fast setup in the ICST studio.
 </details>
 
 <details class="home-accordion" id="quadrophonie">
-  <summary>Quadrophonie</summary>
+  <summary>Quadrophonic</summary>
   <div class="home-accordion__actions">
     <span class="hero__link hero__link--primary">Quadro (diagonal)</span>
     <span class="hero__link">Quadro (orthogonal)</span>

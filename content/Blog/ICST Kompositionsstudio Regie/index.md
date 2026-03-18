@@ -1,5 +1,5 @@
 ---
-title: ICST Kompositionsstudio Regie
+title: ICST Composition Studio Control Room
 description: "LSB control panel, routing, and operation of the control room"
 date: 2025-04-08T15:11:00
 slug: icst-kompositionsstudio-regie
@@ -10,14 +10,14 @@ group: "Studio"
 ---
 
 
-# **Overview of  the ICST Composition Studio**
+# Overview of the ICST Composition Studio Control Room
 
-**Audience:** Composer, Student, Researcher, Studio visitor.
+Level: Intermediate | **Audience:** Composer, student, researcher, studio visitor.
 
-Status  April 2023
+Status: April 2023
 
 ![Regie-Tisch](foto_1.png)
-### Direction Table
+### Control desk
 
 **A:** The LSB is the central control panel for routing and managing all audio components.  
 **B:** The Extron panel provides convenient control of all video and power components.
@@ -56,9 +56,9 @@ Status  April 2023
   </div>
 </details>
 
-### **Hint:**
+### Note
 
-To work in the composition studio with your own laptop, please follow these two steps:
+To work in the composition studio with your own laptop, follow these two steps:
 
 1. Install the required drivers for audio and video:
     - **RME MADI USB Driver** (Mac / Windows) for the audio connection

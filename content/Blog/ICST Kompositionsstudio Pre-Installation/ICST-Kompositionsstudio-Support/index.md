@@ -1,5 +1,5 @@
 ---
-title: ICST Kompositionsstudio Support
+title: ICST Composition Studio Support
 description: "Technical support, contacts, and troubleshooting"
 date: 2025-05-06T15:12:00
 weight: 7
@@ -9,7 +9,7 @@ group: "Residents"
 * * *
 # ICST support for the composition studio
 
-**Audience:** Composer, Student, Researcher, Studio visitor.
+Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 
 ### Install RME MadiFace  USB Driver
 
@@ -43,4 +43,3 @@ Download for your system: [DisplayLink Manager for macOS](https://www.synaptics.
 **Technical Service A/V:** 
 - [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch)
 - mobile: +41 76 330 11 02
-

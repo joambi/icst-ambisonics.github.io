@@ -1,5 +1,5 @@
 ---
-title: ICST Kompositionsstudio Software
+title: ICST Composition Studio Software
 description: "Full list of audio, analysis and composition software on the ICST Mac Pro"
 date: 2025-05-28T15:11:00
 slug: icst-kompositionsstudio-software
@@ -9,7 +9,7 @@ weight: 4
 group: "Studio"
 ---
 
-**Audience:** Composer, Student, Researcher, Studio visitor.
+Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 
 Software and plugin environment for production at the ICST Mac Pro.
 

@@ -1,5 +1,5 @@
 ---
-title: ICST Kompositionsstudio Equipment
+title: ICST Composition Studio Equipment
 description: "Mac Pro, RME MadiFace, LAWO matrix, speakers and MIDI controllers"
 date: 2025-06-09T15:10:00
 slug: icst-kompositionsstudio-equipment
@@ -9,7 +9,7 @@ weight: 3
 group: "Studio"
 ---
 
-**Audience:** Composer, Student, Researcher, Studio visitor.
+Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 
 Core equipment and practical checklist for work at the ICST composition studio.
 
@@ -61,5 +61,5 @@ Core equipment and practical checklist for work at the ICST composition studio.
     <a class="hero__link" href="https://www.power-plugs-sockets.com/switzerland/">Power adapters (Switzerland / Type J)</a>
     <a class="hero__link" href="/blog/icst-kompositionsstudio-regie/#additional-hubs-and-interfaces">Special connectors</a>
   </div>
-  <p>Wenn Sie spezielle Connectors wie MIDI/OSC oder andere Anschluesse benoetigen, bitte mitbringen und mit uns in Kontakt treten.</p>
+  <p>If you need special connectors such as MIDI, OSC, or other interfaces, please bring them with you and contact us in advance.</p>
 </details>

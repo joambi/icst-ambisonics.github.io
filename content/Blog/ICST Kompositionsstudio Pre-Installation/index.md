@@ -1,5 +1,5 @@
 ---
-title: ICST Kompositionsstudio Pre-Installation
+title: ICST Composition Studio Pre-Installation
 description: "Driver and software setup for your own laptop before arrival"
 date: 2025-06-03T15:10:00
 slug: icst-kompositionsstudio-pre-installation
@@ -9,9 +9,9 @@ weight: 2
 group: "Residents"
 ---
 
-# Pre-installation for your external laptop
+# Pre-installation for your laptop
 
-**Audience:** Composer, Student, Researcher, Studio visitor.
+Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 
 ### **AUDIO**
 
@@ -29,14 +29,14 @@ group: "Residents"
 - [Login Items & Extensions for DriverKit](https://rme-audio.de/de_login-items-extensions-driverkit-macos-sequoia.html) ![macOS Privacy & Security Guide](https://rme-audio.de/files/uploads/Support/macOS-Privacy-Security-Sequoia.jpg)
 	#### **Troubleshooting**
 - Watch the [Video](https://youtu.be/Ilkwtb2MKrM) starting at 2:36 for assistance.
-#### RME MadiFace Sync:
+#### RME MadiFace sync
 ![RME-MadiFace](MadiFace.png)
 
-As in the figure above, the synchronization is correct.
-#### RME TotalMixer Setup for Multichannel:
+As shown above, synchronization is correct.
+#### RME TotalMix setup for multichannel
 - [RME TotalMix FX](https://rme-audio.de/totalmix-fx.html)
 
-- for Ambisonics delete the 'stereo-mix'
+- For Ambisonics, delete the `stereo-mix`.
 
 ---
 # Video / Screen

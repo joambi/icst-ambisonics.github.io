@@ -8,9 +8,11 @@ aliases:
 
 ## New here? Start with Ambisonics in REAPER
 
-A method for capturing and reproducing three-dimensional sound — spatialise audio for any speaker layout, any room. The ICST plugins bring this to REAPER, free and open source, with studio-tested workflows from ZHdK Zürich.
+Level: Beginner to Advanced | **Audience:** Composers, students, producers, technicians, and studio residents.
 
-If you are new, follow the guided start path. If you already know the plugins, jump straight into Quick Start or the docs.
+Ambisonics is a method for capturing and reproducing three-dimensional sound. The ICST plugins bring this approach into REAPER through free, open-source, studio-tested workflows developed at ZHdK Zurich.
+
+If you are new, follow the guided start path. If you already know the plugins, jump straight to Quick Start, tutorials, or the docs.
 
 ![Plugin Overview](/images/Home_gif.gif)
 
@@ -116,7 +118,7 @@ New in v3.2: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases]
   </section>
   <section class="home-card">
     <h4>🖥️ Composer Studio</h4>
-    <p>Setup documentation, equipment, speaker configurations and studio cases from the ICST Kompositionsstudio.</p>
+    <p>Setup documentation, equipment, speaker configurations, and studio cases from the ICST Composition Studio.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/blog/icst-composer-studio-blog/">Studio Blog</a>
       <a class="hero__link" href="/blog/downloads/">Downloads</a>
