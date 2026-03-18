@@ -40,6 +40,7 @@ slug: ambisonics-101
 <div class="toc-card">
   <div class="toc-card__title">Table of Contents</div>
   <ol>
+    <li><a href="#what-is-3d-audio">What Is 3D Audio?</a></li>
     <li><a href="#what-is-ambisonics">What Is Ambisonics?</a></li>
     <li><a href="#ambisonics-vs-stereo">Ambisonics vs. Stereo</a></li>
     <li><a href="#what-is-b-format">What Is B-Format?</a></li>
@@ -53,12 +54,24 @@ slug: ambisonics-101
   </ol>
 </div>
 
+<a id="what-is-3d-audio"></a>
+## 1. What Is 3D Audio?
+3D audio is the general term for sound that is perceived not only left and right, but also in front, behind, above, below, and in depth. Instead of a flat stereo image, it creates the impression of a surrounding acoustic space.
+
+Ambisonics is one specific way to produce and store 3D audio. Other approaches include binaural audio for headphones and object-based formats such as Dolby Atmos. In that sense, 3D audio is the broader category, and Ambisonics is one method within it.
+
+Two short listening examples:
+
+{{< youtube AVnlw7iIPnE >}}
+
+{{< youtube LKTdCq6AhDI >}}
+
 <a id="what-is-ambisonics"></a>
-## 1. [What Is Ambisonics?](https://en.wikipedia.org/wiki/Ambisonics)
+## 2. [What Is Ambisonics?](https://en.wikipedia.org/wiki/Ambisonics)
 Ambisonics is a format-agnostic method for describing a spatial 3D sound field. Instead of mixing directly for a fixed loudspeaker layout, you work with a spatial representation that can later be rendered for different playback systems.
 
 <a id="ambisonics-vs-stereo"></a>
-## 2. Ambisonics vs. Stereo
+## 3. Ambisonics vs. Stereo
 
 Stereo is familiar: two channels, left and right. It creates the illusion of sounds positioned along a horizontal line between two speakers. Add a centre channel and surrounds, and you get 5.1 or 7.1 — but each time you change the loudspeaker layout, you have to re-mix from scratch.
 
@@ -75,7 +88,7 @@ Ambisonics takes a different approach. Instead of mixing directly for a speaker 
 **When does stereo make more sense?** For most music distribution, podcasts, and broadcast, stereo remains the standard — it is compatible with every playback system and requires no special tools. Ambisonics pays off when the spatial dimension of sound matters artistically or technically, or when you need a single master file that can serve multiple playback contexts.
 
 <a id="what-is-b-format"></a>
-## 3. [What Is B-Format?](https://ambisonic.info/ambisonics/channels.html)
+## 4. [What Is B-Format?](https://ambisonic.info/ambisonics/channels.html)
 
 B-format is the core signal format in Ambisonics and carries spatial information. Sources are encoded into B-format and then decoded for a target setup, such as headphones, stereo, or different loudspeaker arrays.
 
@@ -88,7 +101,7 @@ In the strict classical sense, “B-format” refers to this four-channel first-
 This format can then be decoded to different target systems such as headphones, stereo, or loudspeaker arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
 
 <a id="signal-flow"></a>
-## Signal Flow at a Glance
+## 5. Signal Flow at a Glance
 
 From source to speaker — this is how Ambisonics works in REAPER with the ICST plugins:
 
@@ -101,15 +114,15 @@ From source to speaker — this is how Ambisonics works in REAPER with the ICST 
 *Multi-source: up to 64 sources feed simultaneously into the ICST MultiEncoder → shared B-Format Bus → decoded once.*
 
 <a id="typical-setups"></a>
-## 5. [Typical Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
+## 6. [Typical Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
 Common setups range from small studio rings and dome-like height configurations to custom arrays in composition studios. The same Ambisonics material can be adapted to each of these setups through decoding.
 
 <a id="headphones-vs-loudspeakers"></a>
-## 6. Headphones vs. Loudspeakers
+## 7. Headphones vs. Loudspeakers
 Headphones use [binaural rendering](#gl-binaural) and are practical for editing, checking translation, and remote collaboration. Loudspeakers provide a physical spatial field in the room and remain essential for composition, depth perception, and artistic evaluation.
 
 <a id="immersive-vs-atmos"></a>
-## 7. How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?
+## 8. How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?
 
 Immersive audio is a broad term for any 3D audio approach that places sound around — and above — the listener rather than just left and right. Ambisonics, [Dolby Atmos](#gl-dolby-atmos), and [Apple Spatial Audio](https://en.wikipedia.org/wiki/Spatial_audio) all pursue this goal, but they do so in fundamentally different ways.
 
@@ -134,7 +147,7 @@ Ambisonics is the better choice when speaker-layout independence, open archiving
 The two are not mutually exclusive: some workflows produce Ambisonics for archiving and artistic use, and separately deliver a Dolby Atmos render for streaming.
 
 <a id="where-to-start-at-icst"></a>
-## 8. Where To Start at ICST
+## 9. Where To Start at ICST
 
 - For Beginners: [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
 - Start with the [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) for DAW workflows.
@@ -148,7 +161,7 @@ The two are not mutually exclusive: some workflows produce Ambisonics for archiv
 
 ---
 <a id="ambisonic-microphones"></a>
-## 9. Ambisonic Microphones — A Practical Introduction
+## 10. Ambisonic Microphones — A Practical Introduction
 
 An Ambisonic microphone captures the full-sphere sound field in a single recording. Unlike standard stereo or surround microphones, it uses a tetrahedral arrangement of four (or more) capsules and outputs a raw format called [**A-format**](#gl-a-format), which must be converted to B-format before use in your DAW.
 
@@ -175,7 +188,7 @@ Any B-format recording — whether from a first-order or [HOA](https://en.wikipe
 
 ---
 <a id="ambisonics-glossary"></a>
-## 10. Ambisonics Glossary (Quick Reference)
+## 11. Ambisonics Glossary (Quick Reference)
 
 - <a id="gl-a-format"></a>**A-format** — Raw signal from a tetrahedral Ambisonics microphone: four capsule signals in tetrahedral geometry. Must be encoded to B-format before use in a DAW.
   → [Wikipedia: Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#A-format)

@@ -49,6 +49,21 @@ A middle ground: spatial events or positions are triggered or modulated live, bu
 
 This configuration is well suited to compositionally controlled but performatively lively performance situations.
 
+## For Composers: ICST Externals, Envelopes, and Ableton Live
+
+If you are composing live electronics in Ambisonics, the most useful ICST paths are not only the REAPER plugins but also the **ICST Ambisonics Tools** in Max/MSP and their extension into Ableton-oriented workflows.
+
+- **ICST Ambisonics Tools / Externals**: for custom live patches, algorithmic spatialisation, and real-time source control in Max. This is the right path when the performance logic itself is part of the composition. See [ICST Ambisonics Tools](/icst-ambisonics-tools/).
+- **Envelope-based movement in REAPER**: for pieces where spatial trajectories need to remain repeatable but still performable. This is useful for cue-based live form, hybrid playback, or precisely timed entrances. See [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/) and [ICST ReaScripts](/post/icst-scripts/).
+- **Ableton Live + ICST workflow**: useful when clips, scene logic, Max for Live, or hybrid electronic performance are central to the piece. See [Ableton Live & ICST Ambisonics Integration](/post/ableton_reaper/).
+- **Envelop for Live and related Ableton-centred approaches**: relevant when spatial performance is organised around Live sets, Max for Live devices, and hands-on gestural control. For the broader tool comparison, see [Tools and Software](/composing-in-ambisonics/08-tools-and-software/).
+
+One concrete ICST live reference is Vincent Cears's **A Year in Dark Tones**, documented in [ASCOLTA #3](/blog/ascolta/03-ascolta/): a **live improvisation in 3rd-order Ambisonics** developed during the residency, combining performance, immersive staging, and Ambisonics conversion in practice.
+
+Another useful artistic reference is Franziska Baumann's live spatial work:
+
+{{< youtube g2ZGXN_2oX4 >}}
+
 ## Monitoring in the Live Context
 
 In the studio, monitoring can shift between different perspectives — loudspeakers, binaural, various decoders. In the performance context, this flexibility is constrained. This has practical consequences:

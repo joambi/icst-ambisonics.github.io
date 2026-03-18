@@ -49,6 +49,21 @@ Eine Zwischenform: Räumliche Ereignisse oder Positionen werden live getriggert 
 
 Diese Konfiguration ist besonders geeignet für kompositorisch kontrollierte, aber performativ lebendige Aufführungssituationen.
 
+## Für Komponierende: ICST Externals, Envelopes und Ableton Live
+
+Wenn du Live-Elektronik in Ambisonics komponierst, sind nicht nur die REAPER-Plugins relevant, sondern auch die **ICST Ambisonics Tools** in Max/MSP und deren Erweiterung in Ableton-orientierte Workflows.
+
+- **ICST Ambisonics Tools / Externals**: für eigene Live-Patches, algorithmische Verräumlichung und Echtzeit-Quellensteuerung in Max. Das ist der richtige Weg, wenn die Performance-Logik selbst Teil der Komposition ist. Siehe [ICST Ambisonics Tools](/de/icst-ambisonics-tools/).
+- **Envelope-basierte Bewegung in REAPER**: für Stücke, in denen räumliche Verläufe reproduzierbar, aber trotzdem performativ ausführbar bleiben sollen. Das eignet sich für cue-basierte Live-Formen, Hybrid-Playback oder präzise zeitlich gesetzte Einsätze. Siehe [Step by Step Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/) und [ICST ReaScripts](/de/post/icst-scripts/).
+- **Ableton Live + ICST Workflow**: sinnvoll, wenn Clips, Szenenlogik, Max for Live oder hybride elektronische Performance zentral für das Stück sind. Siehe [Ableton Live & ICST Ambisonics Integration](/de/post/ableton_reaper/).
+- **Envelop for Live und verwandte Ableton-zentrierte Ansätze**: relevant, wenn räumliche Performance über Live-Sets, Max-for-Live-Devices und gestische Kontrolle organisiert wird. Für den grösseren Werkzeugvergleich siehe [Werkzeuge und Software](/de/composing-in-ambisonics/08-werkzeuge-und-software/).
+
+Ein konkreter ICST-Live-Referenzfall ist Vincent Cears' **A Year in Dark Tones**, dokumentiert in [ASCOLTA #3](/de/blog/ascolta/03-ascolta/): eine **Live-Improvisation in Ambisonics 3. Ordnung**, die während der Residency entstand und Performance, immersive Inszenierung und praktische Ambisonics-Konvertierung verbindet.
+
+Ein weiteres künstlerisches Referenzbeispiel ist Franziska Baumanns Live-Arbeit im Raum:
+
+{{< youtube g2ZGXN_2oX4 >}}
+
 ## Monitoring im Live-Kontext
 
 Im Studio kann Monitoring zwischen verschiedenen Perspektiven wechseln — Lautsprecher, binaural, unterschiedliche Decoder. Im Aufführungskontext ist diese Flexibilität eingeschränkt. Das hat praktische Konsequenzen:
