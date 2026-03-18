@@ -1,0 +1,55 @@
+<svg width="1400" height="520" viewBox="0 0 1400 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f7f3ea; }
+      .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .sub { font: 500 17px 'Helvetica Neue', Arial, sans-serif; fill: #415560; }
+      .panel { fill: #fffdf8; stroke: #2f4858; stroke-width: 3; rx: 22; }
+      .axis { stroke: #2f4858; stroke-width: 3; stroke-linecap: round; }
+      .tick { stroke: #2f4858; stroke-width: 2; }
+      .dot { fill: #c96b4b; stroke: #2f4858; stroke-width: 2.5; }
+      .line { stroke: #c96b4b; stroke-width: 4; stroke-linecap: round; }
+      .label { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .body { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+      .small { font: 600 14px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="520" rx="28"/>
+  <text class="title" x="64" y="68">Example listening note</text>
+  <text class="sub" x="64" y="98">From spatial perception to a brief, usable analysis</text>
+
+  <rect class="panel" x="64" y="146" width="1272" height="286" rx="22"/>
+  <line class="axis" x1="122" y1="308" x2="1274" y2="308"/>
+  <line class="tick" x1="170" y1="292" x2="170" y2="324"/>
+  <line class="tick" x1="430" y1="292" x2="430" y2="324"/>
+  <line class="tick" x1="710" y1="292" x2="710" y2="324"/>
+  <line class="tick" x1="1000" y1="292" x2="1000" y2="324"/>
+
+  <circle class="dot" cx="170" cy="236" r="9"/>
+  <text class="small" x="136" y="206">0:00</text>
+  <text class="body" x="108" y="354">front left,</text>
+  <text class="body" x="108" y="380">clearly localised</text>
+
+  <line class="line" x1="170" y1="236" x2="430" y2="210"/>
+  <circle class="dot" cx="430" cy="210" r="9"/>
+  <text class="small" x="392" y="180">0:20</text>
+  <text class="body" x="358" y="354">movement</text>
+  <text class="body" x="358" y="380">to the rear</text>
+
+  <line class="line" x1="430" y1="210" x2="710" y2="244"/>
+  <circle class="dot" cx="710" cy="244" r="9"/>
+  <text class="small" x="672" y="214">0:35</text>
+  <text class="body" x="630" y="354">diffuse</text>
+  <text class="body" x="630" y="380">layering</text>
+
+  <line class="line" x1="710" y1="244" x2="1000" y2="198"/>
+  <circle class="dot" cx="1000" cy="198" r="9"/>
+  <text class="small" x="962" y="168">1:00</text>
+  <text class="body" x="908" y="354">pressure from</text>
+  <text class="body" x="908" y="380">low tone behind</text>
+
+  <text class="label" x="1110" y="210">Note</text>
+  <text class="body" x="1110" y="240">shift between</text>
+  <text class="body" x="1110" y="266">precise direction</text>
+  <text class="body" x="1110" y="292">and envelopment</text>
+</svg>

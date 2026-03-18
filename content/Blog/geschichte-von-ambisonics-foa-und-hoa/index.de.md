@@ -93,5 +93,3 @@ Wer die Geschichte von Ambisonics nur als eine einzige Linie darstellt, uebersie
 - Mark Poletti, Arbeiten zu 3D-Surround-Systemen auf Basis sphaerischer Harmonischer (2005)
 - Ambisonics Symposium 2011, *ambiX - A Suggested Ambisonics Format*
 - [RFC 8486: Ambisonics in an Ogg Opus Container](https://www.rfc-editor.org/info/rfc8486)
-
-Wenn du magst, kann diese Seite als Naechstes noch um eine zweite Grafik ergaenzt werden, etwa als **nur-FOA/HOA-Jahresachse**, als **Vorlesungsfolie** oder als **interaktive Version mit Klickpunkten**.

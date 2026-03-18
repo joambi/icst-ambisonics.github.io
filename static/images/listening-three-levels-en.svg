@@ -1,0 +1,48 @@
+<svg width="1400" height="620" viewBox="0 0 1400 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f7f3ea; }
+      .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .sub { font: 500 17px 'Helvetica Neue', Arial, sans-serif; fill: #415560; }
+      .c1 { fill: #dce8d4; stroke: #2f4858; stroke-width: 3; }
+      .c2 { fill: #d8e6f2; stroke: #2f4858; stroke-width: 3; }
+      .c3 { fill: #efe1d2; stroke: #2f4858; stroke-width: 3; }
+      .center { fill: #fffdf8; stroke: #2f4858; stroke-width: 3; }
+      .label { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .body { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+      .small { font: 600 15px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="620" rx="28"/>
+  <text class="title" x="64" y="68">Three Levels of Active Listening</text>
+  <text class="sub" x="64" y="98">Physical orientation, cognitive analysis, and aesthetic response work together</text>
+
+  <circle class="c1" cx="460" cy="260" r="122"/>
+  <circle class="c2" cx="700" cy="260" r="122"/>
+  <circle class="c3" cx="580" cy="404" r="122"/>
+  <circle class="center" cx="580" cy="312" r="88"/>
+
+  <text class="label" x="378" y="248">physical</text>
+  <text class="body" x="362" y="278">head movement,</text>
+  <text class="body" x="362" y="304">orientation,</text>
+  <text class="body" x="362" y="330">listening position</text>
+
+  <text class="label" x="634" y="248">cognitive</text>
+  <text class="body" x="620" y="278">observe,</text>
+  <text class="body" x="620" y="304">name,</text>
+  <text class="body" x="620" y="330">compare</text>
+
+  <text class="label" x="480" y="392">aesthetic-</text>
+  <text class="label" x="474" y="420">emotional</text>
+  <text class="body" x="486" y="450">effect,</text>
+  <text class="body" x="486" y="476">tension,</text>
+  <text class="body" x="486" y="502">immersion</text>
+
+  <text class="small" x="520" y="300">analytical</text>
+  <text class="small" x="516" y="326">listening</text>
+
+  <text class="body" x="930" y="226">A complete spatial listening</text>
+  <text class="body" x="930" y="252">impression only emerges when</text>
+  <text class="body" x="930" y="278">these three levels are perceived</text>
+  <text class="body" x="930" y="304">and connected together.</text>
+</svg>

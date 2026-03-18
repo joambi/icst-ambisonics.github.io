@@ -1,0 +1,55 @@
+<svg width="1400" height="540" viewBox="0 0 1400 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f7f3ea; }
+      .title { font: 700 30px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .sub { font: 500 17px 'Helvetica Neue', Arial, sans-serif; fill: #415560; }
+      .panel { fill: #fffdf8; stroke: #2f4858; stroke-width: 3; rx: 22; }
+      .grid { stroke: #9bb4c7; stroke-width: 2; fill: none; }
+      .axis { stroke: #2f4858; stroke-width: 2.5; }
+      .label { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .body { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+      .point { fill: #c96b4b; stroke: #2f4858; stroke-width: 2.5; }
+      .traj { stroke: #c96b4b; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .field { fill: #c96b4b; fill-opacity: 0.16; stroke: #c96b4b; stroke-width: 2.5; stroke-dasharray: 8 7; }
+      .listener { fill: #2f4858; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="540" rx="28"/>
+  <text class="title" x="64" y="68">Point, Movement, Field</text>
+  <text class="sub" x="64" y="98">Three fundamental forms of spatial perception that many pieces move between</text>
+
+  <rect class="panel" x="64" y="138" width="392" height="336" rx="22"/>
+  <rect class="panel" x="504" y="138" width="392" height="336" rx="22"/>
+  <rect class="panel" x="944" y="138" width="392" height="336" rx="22"/>
+
+  <text class="label" x="216" y="184">Point</text>
+  <text class="label" x="628" y="184">Movement</text>
+  <text class="label" x="1082" y="184">Field</text>
+
+  <circle class="grid" cx="260" cy="310" r="98"/>
+  <line class="axis" x1="162" y1="310" x2="358" y2="310"/>
+  <line class="axis" x1="260" y1="212" x2="260" y2="408"/>
+  <circle class="point" cx="302" cy="270" r="9"/>
+  <circle class="listener" cx="260" cy="310" r="7"/>
+  <text class="body" x="110" y="430">clearly localised,</text>
+  <text class="body" x="110" y="454">precise position</text>
+
+  <circle class="grid" cx="700" cy="310" r="98"/>
+  <line class="axis" x1="602" y1="310" x2="798" y2="310"/>
+  <line class="axis" x1="700" y1="212" x2="700" y2="408"/>
+  <path class="traj" d="M654 348 C674 320 698 292 742 258"/>
+  <circle class="point" cx="742" cy="258" r="9"/>
+  <circle class="listener" cx="700" cy="310" r="7"/>
+  <text class="body" x="554" y="430">direction, path</text>
+  <text class="body" x="554" y="454">and trajectory</text>
+
+  <circle class="grid" cx="1140" cy="310" r="98"/>
+  <line class="axis" x1="1042" y1="310" x2="1238" y2="310"/>
+  <line class="axis" x1="1140" y1="212" x2="1140" y2="408"/>
+  <circle class="field" cx="1184" cy="270" r="38"/>
+  <circle class="point" cx="1184" cy="270" r="7"/>
+  <circle class="listener" cx="1140" cy="310" r="7"/>
+  <text class="body" x="1004" y="430">diffuse, spread,</text>
+  <text class="body" x="1004" y="454">enveloping</text>
+</svg>
