@@ -19,7 +19,7 @@ This first impression will shape every compositional decision that follows.
 
 ## Analysing the Room
 
-After the initial listening, a more systematic analysis is useful. Tools for measuring room impulse responses (IRs) such as Room EQ Wizard, Maat thEQred, or even a simple starter pistol recording can give you:
+After the initial listening, a more systematic analysis is useful. Tools for measuring room impulse responses (IRs) such as [Room EQ Wizard](https://www.roomeqwizard.com/), [Maat thEQred](https://maat.digital/theqred/), or even a simple starter pistol recording can give you:
 
 - **RT60** — how long it takes the sound to decay by 60 dB across different frequency bands
 - **Early reflections** — the first discrete bounces that shape clarity and spatial width
@@ -103,13 +103,17 @@ Once the room is understood, three production paths are available — each with 
 
 **Approach 1 — Record the room as a convolution reverb**
 
+<figure class="big">
+  <img src="/images/room-capture-approach-1.svg" alt="Signal flow: sine sweep generator feeds a loudspeaker in the room; an Ambisonics microphone captures the response; IR decoder converts to B-format IR file; in production the IR is loaded into a convolution plugin on the Ambisonics bus." loading="lazy" />
+</figure>
+
 Record the target room's impulse response (IR) with an Ambisonics microphone and use it as a spatial convolution reverb during production. This allows you to "pre-bake" the concert hall acoustics into the piece while still working in the studio.
 
 Workflow:
-1. Generate a sine sweep (using Room EQ Wizard, Reaper, or similar) and play it through a full-range loudspeaker in the target room
-2. Record the response with an Ambisonics microphone — the **Zylia ZM-1** (3rd-order HOA, 19 capsules) gives excellent spatial resolution; the **Sennheiser Ambeo VR Mic** or **Rode NT-SF1** work well for first-order captures; the **Core Sound TetraMic** or **Eigenmike em32** are also suitable
-3. Decode the recorded IR to B-format (AmbiX) using the microphone's own software or IEM / SPARTA tools
-4. Apply the B-format IR in the DAW as a convolution reverb on individual sources or the Ambisonics bus — plugins such as **Reaper's ReaVerb**, **Altiverb**, or the **IEM RoomEncoder** support multichannel convolution
+1. Generate a sine sweep (using [Room EQ Wizard](https://www.roomeqwizard.com/), [Reaper](https://www.reaper.fm/), or similar) and play it through a full-range loudspeaker in the target room
+2. Record the response with an Ambisonics microphone — the **[Zylia ZM-1](https://www.zylia.co/zylia-zm-1-microphone.html)** (3rd-order HOA, 19 capsules) gives excellent spatial resolution; the **[Sennheiser Ambeo VR Mic](https://www.sennheiser.com/en-gb/catalog/products/microphones/ambeo-vr-mic/ambeo-vr-mic-506180)** or **[Rode NT-SF1](https://rode.com/en/microphones/360-ambisonic/nt-sf1)** work well for first-order captures; the **[Core Sound TetraMic](https://www.core-sound.com/TetraMic/1.php)** or **[Eigenmike em32](https://mhacoustics.com/products)** are also suitable
+3. Decode the recorded IR to B-format (AmbiX) using the microphone's own software or [IEM](https://plugins.iem.at/) / [SPARTA](https://leomccormack.github.io/sparta-site/) tools
+4. Apply the B-format IR in the DAW as a convolution reverb on individual sources or the Ambisonics bus — plugins such as **[Reaper's ReaVerb](https://www.reaper.fm/reaplugs/)**, **[Altiverb](https://www.audioease.com/altiverb/)**, or the **[IEM RoomEncoder](https://plugins.iem.at/docs/roomencoder/)** support multichannel convolution
 
 The result is a piece that already carries the acoustic signature of the target venue. When played back in that hall, the encoded room and the live room blend — which can be artistically very powerful, or occasionally problematic if the decay doubles too noticeably. If the venue changes, a new IR can be substituted without reworking the composition.
 
@@ -120,15 +124,19 @@ The result is a piece that already carries the acoustic signature of the target 
 
 **Approach 2 — Synthesise a virtual room in Ambisonics**
 
+<figure class="big">
+  <img src="/images/room-capture-approach-2.svg" alt="Signal flow: DAW source feeds a spatial reverb engine (Spat5, IEM FdnReverb, SPARTA). Room parameters such as room size, RT60, early reflections, and diffusion are fully controllable. Output is B-format HOA." loading="lazy" />
+</figure>
+
 Rather than capturing a real room, generate a synthetic spatial reverberation algorithmically. This approach is fully studio-based and gives complete creative control over all room parameters.
 
 Key tools:
 
-- **IRCAM Spat5** (Max/MSP, standalone, or VST) — the most powerful spatial reverb environment for Ambisonics work; supports room modelling, source directivity, and full HOA output up to arbitrary order; room size, RT60, early reflections, diffusion, and air absorption are all controllable per source
-- **SPARTA AmbiBIN / Hybrid Reverb** — free VST with Ambisonics-native reverb and binaural output
-- **IEM FdnReverb** — free feedback delay network reverb with Ambisonics output, suitable for envelopment and large hall simulation
-- **Aalto Spatial** / **dearVR Spatial Connect** — commercial options with HRTF-based room simulation
-- **Panoramix** (IRCAM, Max/MSP) — used in many acousmatic concert contexts; includes directional reverb and spatialisation in a single environment
+- **[IRCAM Spat5](https://forum.ircam.fr/projects/detail/spat/)** (Max/MSP, standalone, or VST) — the most powerful spatial reverb environment for Ambisonics work; supports room modelling, source directivity, and full HOA output up to arbitrary order; room size, RT60, early reflections, diffusion, and air absorption are all controllable per source
+- **[SPARTA AmbiBIN / Hybrid Reverb](https://leomccormack.github.io/sparta-site/)** — free VST with Ambisonics-native reverb and binaural output
+- **[IEM FdnReverb](https://plugins.iem.at/docs/fdnreverb/)** — free feedback delay network reverb with Ambisonics output, suitable for envelopment and large hall simulation
+- **[Aalto Spatial](https://aaltospatial.com/)** / **[dearVR Spatial Connect](https://www.dear-reality.com/products/dearvr-spatial-connect)** — commercial options with HRTF-based room simulation
+- **[Panoramix](https://forum.ircam.fr/projects/detail/panoramix/)** (IRCAM, Max/MSP) — used in many acousmatic concert contexts; includes directional reverb and spatialisation in a single environment
 
 With a tool like Spat5, you can build a room that does not exist — a 40-metre stone vault, a spherical chamber, an anechoic space — and compose specifically for its properties. The room becomes a compositional instrument rather than a physical constraint.
 
@@ -139,11 +147,15 @@ With a tool like Spat5, you can build a room that does not exist — a 40-metre 
 
 **Approach 3 — Combine both: hybrid production**
 
+<figure class="big">
+  <img src="/images/room-capture-approach-3.svg" alt="Signal flow for hybrid production: source is encoded and routed through Spat5 for early reflections (synthetic path), while a venue IR feeds a convolution plugin for the late diffuse tail (real IR path). Both paths merge on the Ambisonics bus." loading="lazy" />
+</figure>
+
 The most flexible approach combines a real captured IR (for overall spatial character) with a synthetic reverb layer (for compositional control). Typical hybrid setups:
 
 - Apply the **real IR** as a light convolution tail on the Ambisonics bus — giving the piece the "flavour" of the target space — while keeping individual source reverb **synthetic** for precise control of early reflections and source distance
-- Use Spat5 or similar to shape the **early reflections** (which have the most decisive effect on perceived source distance and room size), and use a real IR for the **late diffuse tail** only
-- In Reaper: route sources through a Spat5 insert for spatial positioning and early reflection shaping, then send the Ambisonics bus through a convolution reverb loaded with the venue IR for the late field
+- Use [Spat5](https://forum.ircam.fr/projects/detail/spat/) or similar to shape the **early reflections** (which have the most decisive effect on perceived source distance and room size), and use a real IR for the **late diffuse tail** only
+- In [Reaper](https://www.reaper.fm/): route sources through a Spat5 insert for spatial positioning and early reflection shaping, then send the Ambisonics bus through a convolution reverb loaded with the venue IR for the late field
 
 This approach is common in professional fixed-media production at ICST and at IRCAM: the real room gives credibility to the acoustic space; the synthetic layer gives compositional precision that a raw IR capture alone cannot provide.
 

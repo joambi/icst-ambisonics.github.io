@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="430" viewBox="0 0 1280 430" role="img" aria-labelledby="title1 desc1">
+  <title id="title1">Approach 1 — Record the room as a convolution reverb</title>
+  <desc id="desc1">Signal flow diagram: Sine sweep generator feeds a loudspeaker in the room; an Ambisonics microphone captures the response; IR decoder converts to B-format IR file; in production the IR is loaded into a convolution plugin applied to the Ambisonics bus.</desc>
+  <style>
+    .bg { fill: #14212b; }
+    .panel { fill: #1d2f3a; stroke: #6086b4; stroke-width: 2.5; }
+    .panel-room { fill: #1a3030; stroke: #5aada0; stroke-width: 2; stroke-dasharray: 8 5; }
+    .panel-ir { fill: #1f2f20; stroke: #8fc59a; stroke-width: 2.5; }
+    .panel-prod { fill: #2a1f30; stroke: #b48fc5; stroke-width: 2.5; }
+    .text { fill: #f2f5f7; font: 600 23px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .sub { fill: #b6c3cc; font: 400 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .phase { fill: #9fd0ff; font: 700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .07em; text-transform: uppercase; }
+    .room-label { fill: #5aada0; font: 600 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+    .arrow { stroke: #9fd0ff; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .arrow-green { stroke: #8fc59a; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .arrow-purple { stroke: #c09fd0; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .divider { stroke: #2e4455; stroke-width: 1.5; stroke-dasharray: 6 6; }
+  </style>
+  <defs>
+    <marker id="ah1" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 z" fill="#9fd0ff"/>
+    </marker>
+    <marker id="ah1g" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 z" fill="#8fc59a"/>
+    </marker>
+    <marker id="ah1p" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 z" fill="#c09fd0"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1280" height="430"/>
+
+  <!-- Phase 1 label -->
+  <text class="phase" x="40" y="36">① Measurement — Room IR Capture</text>
+
+  <!-- Room acoustics backdrop -->
+  <rect class="panel-room" x="308" y="52" width="456" height="122" rx="14"/>
+  <text class="room-label" x="536" y="70" text-anchor="middle">Room Acoustics</text>
+
+  <!-- Box 1: Sine Sweep Gen (x=40, y=78, w=190, h=70) -->
+  <rect class="panel" x="40" y="78" width="190" height="70" rx="10"/>
+  <text class="text" x="135" y="109" text-anchor="middle">Sine Sweep</text>
+  <text class="sub" x="135" y="133" text-anchor="middle">Generator</text>
+
+  <!-- Box 2: Loudspeaker (x=328, y=78) -->
+  <rect class="panel" x="328" y="78" width="190" height="70" rx="10"/>
+  <text class="text" x="423" y="109" text-anchor="middle">Loudspeaker</text>
+  <text class="sub" x="423" y="133" text-anchor="middle">full-range</text>
+
+  <!-- Box 3: Ambi Mic (x=564, y=78) -->
+  <rect class="panel" x="564" y="78" width="190" height="70" rx="10"/>
+  <text class="text" x="659" y="109" text-anchor="middle">Ambi Mic</text>
+  <text class="sub" x="659" y="133" text-anchor="middle">Zylia ZM-1 · Ambeo</text>
+
+  <!-- Box 4: IR Decoder (x=820, y=78) -->
+  <rect class="panel" x="820" y="78" width="190" height="70" rx="10"/>
+  <text class="text" x="915" y="109" text-anchor="middle">IR Decoder</text>
+  <text class="sub" x="915" y="133" text-anchor="middle">IEM · SPARTA</text>
+
+  <!-- Box 5: B-format IR File (x=1060, y=78, green) -->
+  <rect class="panel-ir" x="1060" y="78" width="178" height="70" rx="10"/>
+  <text class="text" x="1149" y="109" text-anchor="middle">B-format</text>
+  <text class="sub" x="1149" y="133" text-anchor="middle">IR File (.wav)</text>
+
+  <!-- Arrows row 1 -->
+  <line class="arrow" x1="233" y1="113" x2="323" y2="113" marker-end="url(#ah1)"/>
+  <line class="arrow" x1="521" y1="113" x2="558" y2="113" marker-end="url(#ah1)"/>
+  <line class="arrow" x1="757" y1="113" x2="815" y2="113" marker-end="url(#ah1)"/>
+  <line class="arrow" x1="1013" y1="113" x2="1055" y2="113" marker-end="url(#ah1)"/>
+
+  <!-- Divider -->
+  <line class="divider" x1="40" y1="218" x2="1240" y2="218"/>
+
+  <!-- Phase 2 label -->
+  <text class="phase" x="40" y="246">② Production — Apply IR in DAW</text>
+
+  <!-- Box 6: Source (x=40, y=268) -->
+  <rect class="panel-prod" x="40" y="268" width="190" height="70" rx="10"/>
+  <text class="text" x="135" y="299" text-anchor="middle">Source</text>
+  <text class="sub" x="135" y="323" text-anchor="middle">DAW track</text>
+
+  <!-- Box 7: Ambi Encoder (x=300, y=268) -->
+  <rect class="panel-prod" x="300" y="268" width="190" height="70" rx="10"/>
+  <text class="text" x="395" y="299" text-anchor="middle">Ambi Encoder</text>
+  <text class="sub" x="395" y="323" text-anchor="middle">positioned</text>
+
+  <!-- Box 8: Ambi Bus (x=560, y=268) -->
+  <rect class="panel-prod" x="560" y="268" width="190" height="70" rx="10"/>
+  <text class="text" x="655" y="299" text-anchor="middle">Ambi Bus</text>
+  <text class="sub" x="655" y="323" text-anchor="middle">B-format</text>
+
+  <!-- Box 9: Convolution Plugin (x=820, y=268) -->
+  <rect class="panel-ir" x="820" y="268" width="220" height="70" rx="10"/>
+  <text class="text" x="930" y="295" text-anchor="middle">Conv. Plugin</text>
+  <text class="sub" x="930" y="317" text-anchor="middle">ReaVerb · Altiverb</text>
+  <text class="sub" x="930" y="334" text-anchor="middle">+ B-format IR loaded</text>
+
+  <!-- Box 10: B-format Output (x=1105, y=268) -->
+  <rect class="panel" x="1105" y="268" width="175" height="70" rx="10"/>
+  <text class="text" x="1192" y="299" text-anchor="middle">B-format</text>
+  <text class="sub" x="1192" y="323" text-anchor="middle">Output</text>
+
+  <!-- Arrows row 2 -->
+  <line class="arrow-purple" x1="233" y1="303" x2="295" y2="303" marker-end="url(#ah1p)"/>
+  <line class="arrow-purple" x1="493" y1="303" x2="555" y2="303" marker-end="url(#ah1p)"/>
+  <line class="arrow-purple" x1="753" y1="303" x2="815" y2="303" marker-end="url(#ah1p)"/>
+  <line class="arrow-purple" x1="1043" y1="303" x2="1100" y2="303" marker-end="url(#ah1p)"/>
+
+  <!-- Connecting arrow: B-format IR File → Conv Plugin (L-shaped, green) -->
+  <polyline class="arrow-green" points="1149,148 1149,200 930,200 930,263" marker-end="url(#ah1g)"/>
+
+</svg>
