@@ -10,12 +10,12 @@ languageCode: de
 .hub-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
-  gap: 1.2rem;
+  gap: 1.4rem;
   align-items: stretch;
   margin: 1rem 0 1.5rem;
 }
 .hub-kicker {
-  font-size: 0.92rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: #6086b4;
@@ -29,7 +29,7 @@ languageCode: de
 }
 .hub-lead {
   margin: 0;
-  font-size: 1.12rem;
+  font-size: 1.4rem;
   color: #9f9f9f;
   line-height: 1.55;
   max-width: 46rem;
@@ -60,7 +60,7 @@ languageCode: de
   transform: translateY(-1px);
 }
 .hub-upcoming__eyebrow {
-  font-size: 0.88rem;
+  font-size: 1.0rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: #6086b4;
@@ -71,16 +71,16 @@ languageCode: de
   line-height: 1.15;
 }
 .hub-upcoming__meta {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #9f9f9f;
 }
 .hub-upcoming__title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.3;
 }
 .hub-upcoming__text {
-  font-size: 1.06rem;
+  font-size: 1.35rem;
   line-height: 1.45;
   color: #9f9f9f;
 }
@@ -88,7 +88,7 @@ languageCode: de
   margin: 1rem 0 0;
   padding: 0.95rem 1rem;
   border-left: 3px solid #6086b4;
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 .theme--light .hub-note {
@@ -114,7 +114,7 @@ languageCode: de
 .post__content h3 {
   margin-top: 1.8rem;
   margin-bottom: 0.7rem;
-  font-size: 1.28rem;
+  font-size: 1.5rem;
   color: #9f9f9f;
 }
 .hub-start,
@@ -130,7 +130,7 @@ languageCode: de
   text-decoration: none;
   border-radius: 2px;
   min-height: 100%;
-  padding: 1.15rem 1.2rem 1.1rem;
+  padding: 1.15rem 1.4rem 1.1rem;
   border-top: 3px solid #6086b4;
   transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
 }
@@ -161,18 +161,18 @@ languageCode: de
   display: block;
   font-weight: 700;
   margin-bottom: 0.45rem;
-  font-size: 1.08rem;
+  font-size: 1.4rem;
   letter-spacing: 0.01em;
 }
 .hub-card__text {
   display: block;
-  font-size: 1.08rem;
+  font-size: 1.35rem;
   color: #9f9f9f;
   line-height: 1.45;
 }
 .season-section { margin-bottom: 1.5rem; }
 .season-label {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #9f9f9f;
@@ -198,7 +198,7 @@ languageCode: de
 .theme--dark  .session-row:hover { background: #354f5e; }
 
 .session-row__num {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
   min-width: 32px;
   border-radius: 2px;
@@ -214,16 +214,16 @@ languageCode: de
   flex: 1;
 }
 .session-row__title {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .session-row__subtitle {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .session-row__date {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #9f9f9f;
   margin-top: 2px;
 }
@@ -236,19 +236,19 @@ languageCode: de
     margin-top: 0;
   }
   .hub-intro {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.65;
   }
   .hub-lead,
   .hub-note {
-    font-size: 1rem;
+    font-size: 1.35rem;
   }
   .post__content h2 {
     margin-top: 2rem;
     font-size: 1.55rem;
   }
   .post__content h3 {
-    font-size: 1.18rem;
+    font-size: 1.4rem;
   }
   .hub-start,
   .hub-related {
@@ -264,7 +264,7 @@ languageCode: de
     padding: 0.7rem 0.75rem;
   }
   .session-row__subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 </style>
@@ -273,9 +273,9 @@ languageCode: de
   <div>
     <div class="hub-kicker">Öffentliche Hörreihe</div>
     <div class="hub-intro">
-    <strong>ascolta</strong> bringt akusmatische und elektroakustische Musik in eine konzentrierte Hörsituation am ICST Kompositionsstudio der Zürcher Hochschule der Künste.
+    <strong>ascolta</strong> ist die öffentliche Hörreihe des ICST Kompositionsstudios: akusmatische und elektroakustische Musik in einer konzentrierten, immersiven Hörsituation.
     </div>
-    <p class="hub-lead">Gehört wird auf einem Higher-Order Ambisonics-Lautsprechersystem: Werke aus dem ICST-Residenzprogramm und aus dem internationalen Repertoire, präsentiert als immersiver Raumklang.</p>
+    <p class="hub-lead">Die Sitzungen verbinden Studioarbeit, Residency-Projekte und internationales Repertoire durch Higher-Order-Ambisonics-Hören an der ZHdK.</p>
     <div class="hub-note">
     <strong>Nächste Sitzung:</strong> <strong>#18 ascolta</strong> ist <strong>Éliane Radigue</strong> (24. Januar 1932 – 23. Februar 2026) gewidmet. Im Mittelpunkt steht <em>The Resonant Island</em>, erschienen auf <strong>Shiiin</strong> (2005), eine 55-minütige Klangskulptur von außergewöhnlicher Langsamkeit und Konzentration.
     </div>
@@ -288,18 +288,6 @@ languageCode: de
     <span class="hub-upcoming__text"><em>The Resonant Island</em>, erschienen auf Shiiin (2005)</span>
   </a>
 </div>
-
----
-
-## Wofür diese Seite da ist
-
-Dies ist der **Listening- und Programm-Hub** für ascolta. Hier kannst du:
-
-- kommende und vergangene Hörsitzungen finden
-- Programmschwerpunkte und Hörressourcen überblicken
-- zwischen öffentlicher Hörreihe, Studiokontext und Residenzprojekten navigieren
-
-Wenn du technische Informationen zum **Studio-Setup** suchst, gehe zum [ICST Kompositionsstudio](/blog/icst-composer-studio-blog/). Wenn du die **Künstler:innen und Projekte** hinter vielen Programmen kennenlernen willst, gehe zu [Residenzen](/residenzen/).
 
 ---
 
@@ -316,7 +304,7 @@ Wenn du technische Informationen zum **Studio-Setup** suchst, gehe zum [ICST Kom
   </a>
   <a href="/residenzen/">
     <span class="hub-card__title">Residency-Projekte</span>
-    <span class="hub-card__text">Künstler:innen und Projekte hinter vielen ascolta-Programmen.</span>
+    <span class="hub-card__text">Künstler:innen und Projekte im Umfeld vieler ascolta-Programme.</span>
   </a>
 </div>
 
