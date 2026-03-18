@@ -498,10 +498,6 @@ Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kod
 ## Verwandte Bereiche
 
 <div class="hub-related">
-  <a href="/blog/icst-composer-studio-blog/">
-    <span class="hub-card__title">ICST Kompositionsstudio</span>
-    <span class="hub-card__text">Studio-Setup, Infrastruktur und technische Ressourcen.</span>
-  </a>
   <a href="/residenzen/">
     <span class="hub-card__title">Residenzen</span>
     <span class="hub-card__text">Artists in Residence, Profile und Projekte.</span>
@@ -516,5 +512,4 @@ Das ICST pflegt ein Archiv von Werken, die im ambiX B-Format aufgenommen und kod
 
 ## Verwandte Bereiche
 
-- [ICST Kompositionsstudio](/blog/icst-composer-studio-blog/) — Studio-Setup, Infrastruktur und Ressourcen
 - [Residenzen](/residenzen/) — Artist-in-Residence-Programm und Projektkontexte
