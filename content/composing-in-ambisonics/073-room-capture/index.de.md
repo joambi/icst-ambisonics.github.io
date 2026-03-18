@@ -104,7 +104,9 @@ Sobald der Raum verstanden ist, stehen drei Produktionswege zur Verfügung — j
 
 **Weg 1 — Den Raum als Faltungshall aufnehmen**
 
-{{< figure src="/images/room-capture-approach-1.svg" alt="Signalfluss: Sinussweep-Generator speist einen Lautsprecher im Raum; ein Ambisonics-Mikrofon nimmt die Antwort auf; der IR-Decoder wandelt in eine B-Format-IR-Datei um; in der Produktion wird die IR in ein Faltungshall-Plugin geladen." class="diagram" >}}
+<figure class="big">
+  <img src="/images/room-capture-approach-1.svg" alt="Signalfluss: Sinussweep-Generator speist einen Lautsprecher im Raum; ein Ambisonics-Mikrofon nimmt die Antwort auf; der IR-Decoder wandelt in eine B-Format-IR-Datei um; in der Produktion wird die IR in ein Faltungshall-Plugin geladen." loading="lazy" />
+</figure>
 
 Die Impulsantwort (IR) des Zielraumes mit einem Ambisonics-Mikrofon aufnehmen und als räumlichen Faltungshall in der Produktion einsetzen. So lässt sich die Akustik des Konzertsaals bereits im Studio in das Stück einarbeiten.
 
@@ -123,7 +125,9 @@ Das Ergebnis ist ein Stück, das die akustische Signatur des Zielraums bereits t
 
 **Weg 2 — Einen virtuellen Raum in Ambisonics synthetisieren**
 
-{{< figure src="/images/room-capture-approach-2.svg" alt="Signalfluss: DAW-Quelle speist eine räumliche Hall-Engine (Spat5, IEM FdnReverb, SPARTA). Raumparameter wie Raumgrösse, RT60, frühe Reflexionen und Diffusion sind vollständig steuerbar. Ausgabe: B-Format HOA." class="diagram" >}}
+<figure class="big">
+  <img src="/images/room-capture-approach-2.svg" alt="Signalfluss: DAW-Quelle speist eine räumliche Hall-Engine (Spat5, IEM FdnReverb, SPARTA). Raumparameter wie Raumgrösse, RT60, frühe Reflexionen und Diffusion sind vollständig steuerbar. Ausgabe: B-Format HOA." loading="lazy" style="width:100%;max-width:1100px;height:auto;" />
+</figure>
 
 Statt einen realen Raum aufzunehmen, einen synthetischen räumlichen Nachhall algorithmisch erzeugen. Dieser Ansatz ist vollständig studiobasiert und gibt vollständige kreative Kontrolle über alle Raumparameter.
 
@@ -144,7 +148,9 @@ Mit einem Werkzeug wie Spat5 lässt sich ein Raum bauen, der nicht existiert —
 
 **Weg 3 — Beide kombinieren: hybride Produktion**
 
-{{< figure src="/images/room-capture-approach-3.svg" alt="Signalfluss für hybride Produktion: Quelle wird enkodiert und über Spat5 für frühe Reflexionen (synthetischer Pfad) geleitet; die Venue-IR speist ein Faltungshall-Plugin für den späten Nachhall (realer IR-Pfad). Beide Pfade werden auf dem Ambisonics-Bus zusammengeführt." class="diagram" >}}
+<figure class="big">
+  <img src="/images/room-capture-approach-3.svg" alt="Signalfluss für hybride Produktion: Quelle wird enkodiert und über Spat5 für frühe Reflexionen (synthetischer Pfad) geleitet; die Venue-IR speist ein Faltungshall-Plugin für den späten Nachhall (realer IR-Pfad). Beide Pfade werden auf dem Ambisonics-Bus zusammengeführt." loading="lazy" />
+</figure>
 
 Der flexibelste Ansatz kombiniert eine reale aufgenommene IR (für den übergeordneten räumlichen Charakter) mit einer synthetischen Hall-Schicht (für kompositorische Kontrolle). Typische hybride Setups:
 

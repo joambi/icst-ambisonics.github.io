@@ -493,6 +493,12 @@
   border-radius: 4px;
 }
 
+// Diagram SVGs should use more horizontal space than photos so labels stay readable.
+.post__content img[src*="/images/"][src$=".svg"]:not([width]) {
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
 // Inline icons with explicit width (e.g. width="16" in headings)
 .post__content img[width] {
   display: inline;
@@ -1039,12 +1045,99 @@
   margin: 0 0 0.55rem;
   @include color.themed() { color: color.t('primary-light'); }
 }
+.onboarding-steps--large .onboarding-step::before {
+  left: 1.22rem;
+  top: 2.65rem;
+}
+.onboarding-steps--large .onboarding-step__num {
+  width: 2.45rem;
+  height: 2.45rem;
+  font-size: 1.05rem;
+}
+.onboarding-steps--large .onboarding-step__body {
+  padding-top: 0.1rem;
+}
+.onboarding-steps--large .onboarding-step__title {
+  font-size: 1.28rem;
+  line-height: 1.4;
+  margin: 0 0 0.35rem;
+}
+.onboarding-steps--large .onboarding-step__desc {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  margin: 0 0 0.8rem;
+}
+@media (max-width: 700px) {
+  .onboarding-steps--large .onboarding-step__title {
+    font-size: 1.16rem;
+  }
+  .onboarding-steps--large .onboarding-step__desc {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+}
 .onboarding-step__optional {
   font-size: 0.8rem;
   font-style: italic;
   margin-left: 0.4rem;
   @include color.themed() { color: color.t('primary-light'); }
 }
+
+// ── ICST Three-Pillar quick-access ───────────────────────────────────────
+.icst-pillars {
+  display: grid;
+  gap: 1rem;
+  margin: 0 0 2.5rem;
+}
+@media screen and (min-width: 700px) {
+  .icst-pillars {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.icst-pillar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.1rem 1.3rem 1.25rem;
+  border-radius: 10px;
+  border-top: 3px solid transparent;
+  text-decoration: none !important;
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+
+  @include color.themed() {
+    background-color: color.t('accent');
+    border-left: 1px solid color.t('primary-lighter');
+    border-right: 1px solid color.t('primary-lighter');
+    border-bottom: 1px solid color.t('primary-lighter');
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    text-decoration: none !important;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+  }
+}
+.icst-pillar__icon {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+.icst-pillar__title {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0.1rem 0 0.25rem;
+  @include color.themed() { color: color.t('primary'); }
+}
+.icst-pillar__desc {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  @include color.themed() { color: color.t('secondary'); }
+}
+.icst-pillar--plugins  { border-top-color: #4a9eff; }
+.icst-pillar--residency { border-top-color: #38c4b0; }
+.icst-pillar--ascolta  { border-top-color: #e0a040; }
 
 // ── Placeholder / coming-soon card ───────────────────────────────────────
 .home-card--placeholder {

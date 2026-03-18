@@ -135,7 +135,7 @@ hideDate: true
     <span class="artist-card__period">07 Jul – 27 Jul 2025</span>
     <div class="artist-card__links">
       <a href="https://www.youngjaecho.com/about.html">Website</a>
-      <a href="../Youngjae Cho/">Full profile & B-Format project →</a>
+      <a href="../youngjae-cho/">Full profile & B-Format project →</a>
     </div>
     <p class="artist-card__bio">Composer based in Korea and Germany, working with electroacoustic music, live electronics, and immersive multi-channel audio. His accolades include the George Enescu Competition (1st Prize) and the Via Nova Competition (1st Prize).</p>
   </div>
@@ -158,9 +158,9 @@ hideDate: true
     <div class="artist-card__links">
       <a href="https://anagonzalezgamboa0.wixsite.com/anagamboa">Website</a>
       <a href="https://www.instagram.com/ana___gamboa/">Instagram</a>
+      <a href="../ana-gonzalez-gamboa/">Full profile →</a>
     </div>
     <p class="artist-card__bio"><em>Lúmina</em> is a composition that intertwines travel recordings with fragments of anime, constructing an imaginary world where memory and fiction intersect.</p>
   </div>
 </div>
-
 

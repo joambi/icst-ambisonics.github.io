@@ -7,6 +7,24 @@ aliases:
   - /de/home/
 ---
 
+<div class="icst-pillars">
+  <a class="icst-pillar icst-pillar--plugins" href="/icst-ambisonics-plugins/">
+    <span class="icst-pillar__icon">🎛️</span>
+    <strong class="icst-pillar__title">Ambisonics Plugins & Max Tools</strong>
+    <span class="icst-pillar__desc">Freie Ambisonics-Tools für REAPER und Max/MSP — Encoder, Decoder, Monitor, OSC-Steuerung.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--residency" href="/residenzen/">
+    <span class="icst-pillar__icon">🏛️</span>
+    <strong class="icst-pillar__title">Studio-Residenzen</strong>
+    <span class="icst-pillar__desc">Artist-in-Residence am ICST — aktuelle und vergangene Residenzen, Projekte, Dokumentation.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--ascolta" href="/blog/ascolta/">
+    <span class="icst-pillar__icon">🎧</span>
+    <strong class="icst-pillar__title">ASCOLTA</strong>
+    <span class="icst-pillar__desc">Akusmatische Konzerte und Listening-Sessions an der ZHdK — offen für alle.</span>
+  </a>
+</div>
+
 ## Neu hier? Starte mit Ambisonics in REAPER
 
 Eine Methode, dreidimensionalen Klang aufzunehmen und wiederzugeben — für beliebige Lautsprecheranordnungen, in jedem Raum. Die ICST-Plugins bringen das in REAPER, gratis und Open Source, mit studioerprobten Workflows aus der ZHdK Zürich.

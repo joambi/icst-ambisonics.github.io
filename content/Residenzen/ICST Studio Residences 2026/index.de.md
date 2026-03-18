@@ -1,5 +1,5 @@
 ---
-title: "2026 ICST Artist in Studio-Residency"
+title: "ICST Studio-Residenzen 2026"
 date: 2026-03-01T00:00:00
 hideDate: true
 ---
@@ -134,19 +134,19 @@ hideDate: true
   <img src="/residenzen/icst-studio-residences-2026/monoc-small-2.jpg" alt="Pierre Alexandre Tremblay">
   <div class="artist-card__body">
     <div class="artist-card__name">Pierre Alexandre Tremblay</div>
-    <span class="artist-card__period">28 Apr – 21 Aug 2026</span>
+    <span class="artist-card__period">28. Apr – 21. Aug 2026</span>
     <div class="artist-card__links">
       <a href="https://www.zhdk.ch/forschung/icst/icst-air/pierre-alexandre-tremblay-25360">ICST Projektseite</a>
       <a href="https://www.pierrealexandretremblay.com/">Website</a>
     </div>
     <p class="artist-card__bio">1975 in Montréal geboren, ist Pierre Alexandre Tremblay ein Komponist und Performer, der sich auf Bassgitarre und elektronische Geräte spezialisiert hat. Seine Arbeit erstreckt sich über elektroakustische Musik, zeitgenössischen Jazz, Musik mit gemischten Medien und Improvisation, mit Veröffentlichungen auf dem Label empreintes DIGITALes. Er war von 2005 bis 2024 Professor für Komposition und Improvisation an der University of Huddersfield und ist derzeit Forschungsprofessor für Komposition am Conservatorio della Svizzera italiana.</p>
     <table class="sessions-table">
-      <tr><th>Session</th><th>Von</th><th>Bis</th></tr>
-      <tr><td>1.</td><td>28 Apr 2026</td><td>01 Mai 2026</td></tr>
-      <tr><td>2.</td><td>22 Jun 2026</td><td>24 Jun 2026</td></tr>
-      <tr><td>3.</td><td>13 Jul 2026</td><td>17 Jul 2026</td></tr>
-      <tr><td>4.</td><td>27 Jul 2026</td><td>30 Jul 2026</td></tr>
-      <tr><td>5.</td><td>17 Aug 2026</td><td>21 Aug 2026</td></tr>
+      <tr><th>Termin</th><th>Von</th><th>Bis</th></tr>
+      <tr><td>1.</td><td>28. Apr 2026</td><td>01. Mai 2026</td></tr>
+      <tr><td>2.</td><td>22. Juni 2026</td><td>24. Juni 2026</td></tr>
+      <tr><td>3.</td><td>13. Juli 2026</td><td>17. Juli 2026</td></tr>
+      <tr><td>4.</td><td>27. Juli 2026</td><td>30. Juli 2026</td></tr>
+      <tr><td>5.</td><td>17. Aug 2026</td><td>21. Aug 2026</td></tr>
     </table>
   </div>
 </div>
@@ -155,12 +155,12 @@ hideDate: true
   <img src="/residenzen/icst-studio-residences-2026/monoc-small.jpg" alt="Yoko Konishi">
   <div class="artist-card__body">
     <div class="artist-card__name">Yoko Konishi</div>
-    <span class="artist-card__period">24 Aug – 13 Sep 2026</span>
+    <span class="artist-card__period">24. Aug – 13. Sep 2026</span>
     <div class="artist-card__links">
       <a href="https://www.zhdk.ch/forschung/icst/icst-air/yoko-konishi-25367">ICST Projektseite</a>
     </div>
     <p class="artist-card__bio">Yoko Konishi ist eine japanische Soundkünstlerin und Performerin, die derzeit in Frankreich lebt. Ihre Praxis konzentriert sich auf die Schnittstelle zwischen Klang, Körper und Technologie durch räumliches Audio, interaktive Systeme und sensorgestützte Prozesse. Sie hält einen Master-Abschluss in Ambisonics und räumlicher Soundkomposition von der Université Paris 8, besuchte ein Post-Master-Programm an der mdw – University of Music and Performing Arts Wien und schloss 2024–25 das IRCAM Cursus-Programm ab.</p>
-    <p class="artist-card__bio">Vom 24. August bis 13. September 2026 wird Konishi zur Studio-Residency am ICST sein. Sie wird ein neues Werk für die Präsentation auf dem <strong>Sonic Matter Festival 2027</strong> schaffen und die Integration von Narrativstrukturen und sensorischer Immersion in räumlicher Komposition vertiefen.</p>
+    <p class="artist-card__bio">Vom 24. August bis 13. September 2026 ist Konishi für eine Studio-Residenz am ICST. Sie entwickelt ein neues Werk für eine Präsentation beim <strong>Sonic Matter Festival 2027</strong> und vertieft dabei die Verbindung von narrativen Strukturen und sensorischer Immersion in der räumlichen Komposition.</p>
   </div>
 </div>
 
@@ -168,7 +168,7 @@ hideDate: true
   <img src="/residenzen/icst-studio-residences-2026/monoc-small-1.jpg" alt="Eli Stine">
   <div class="artist-card__body">
     <div class="artist-card__name">Eli Stine</div>
-    <span class="artist-card__period">29 Jun – 06 Jul 2026</span>
+    <span class="artist-card__period">29. Juni – 06. Juli 2026</span>
     <span class="artist-card__badge">Prix CIME 2025</span>
     <div class="artist-card__links">
       <a href="https://elistine.com/">Website</a>
@@ -176,5 +176,3 @@ hideDate: true
     <p class="artist-card__bio">Eli Stine ist Komponist, Programmierer und Pädagoge. Er hält einen Ph.D. und Master in Komposition und Computertechnologien von der University of Virginia sowie Bachelor-Abschlüsse in Technology in Music und Computer Science vom Oberlin College. Er ist Visiting Assistant Professor am Oberlin Conservatory. Seine Arbeit erforscht elektroakustische Klänge und Multimedia-Technologien unter Verwendung von benutzerdefinierter Software, Videoprojektionen und Multi-Channel-Lautsprechersystemen. Sein Stück <em>Where Water Meets Memory</em> gewann den <strong>Prix CIME 2025</strong> internationalen elektroakustischen Musikwettbewerb.</p>
   </div>
 </div>
-
-

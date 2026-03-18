@@ -1,6 +1,9 @@
 ---
 title: Nandele Maguni
 date: 2025-07-04T13:08:00
+slug: nandele-maguni
+aliases:
+  - /residenzen/nandele_maguni/
 build:
   list: never
   render: always

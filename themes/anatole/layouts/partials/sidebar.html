@@ -24,7 +24,10 @@
         </div>
       {{ end }}
       <div class="sidebar__introduction-description">
-        <p>{{ replace .Site.Params.description "\n" "<br />" | safeHTML }}</p>
+        <p>
+          {{ .Site.Params.description }}<br />
+          <a href="https://www.zhdk.ch/forschung/icst" target="_blank" rel="noopener noreferrer">by ICST / Zurich University of the Arts</a>
+        </p>
       </div>
     </div>
     <ul class="sidebar__list">

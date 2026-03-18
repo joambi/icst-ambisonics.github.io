@@ -1,14 +1,28 @@
 ---
 title: Über uns & Impressum
-description: Werkzeuge zur Ambisonics-Audioverarbeitung
+description: ICST Ambisonics — Spatial-Audio-Werkzeuge, Forschung und künstlerische Praxis an der ZHdK Zürich.
 date: 2025-02-27
 tags:
 languageCode: de
 ---
 
-Ambisonics.ch ist ein Tutorial- und Notizblog zu den ICST-Ambisonics-Tools und Plugins, entstanden aus Forschung und Lehre am Institute for Computer Music and Sound Technology (ICST) der Zürcher Hochschule der Künste. Im Fokus stehen praxisnahe Workflows, Lautsprecher-Setups und Ressourcen für 3D-Audio in DAWs, mit besonderem Schwerpunkt auf räumlichem Klang für Komposition, Sounddesign und immersive Medienproduktion.
+## Ambisonics als kompositorische Methode
 
-Ambisonics.ch versteht Ambisonics als Verbindung von Forschung, Studio-Praxis und künstlerischer Arbeit, nicht nur als technisches Wiedergabesystem. Im Zentrum stehen räumliche Hörsituationen, in denen B-Format und Ambisonics eingesetzt werden, um elektroakustische Werke, Residencies und künstlerische Projekte möglichst zugänglich und erfahrbar zu machen. Das ICST-Kompositionsstudio dient dabei als Labor, in dem Tools, Lautsprecher-Setups und künstlerische Positionen kontinuierlich erprobt und dokumentiert werden.
+Ambisonics ermöglicht, Raum als eigenständiges kompositorisches Material zu behandeln — gleichwertig mit Klangfarbe, Zeit und Dynamik. Quellen bewegen sich, nähern sich an, trennen sich, schichten sich in Höhe und Tiefe: Das sind keine technischen Effekte, sondern formale Entscheidungen.
+
+Das B-Format entkoppelt ein Werk von einem bestimmten Lautsprecherlayout. Dieselbe Ambisonics-Master-Datei kann für eine 32-Kanal-Kuppel, eine Achtkanalreihe, Binaural auf Kopfhörern oder VR-Umgebungen gerendert werden — ohne die räumliche Dramaturgie neu aufzubauen. Das macht Ambisonics zur nachhaltigsten Speicherform für 3D-Audioinhalte: ein Archivformat, das heutige und zukünftige Wiedergabekontexte einschliesst.
+
+Die Methode ist offen: Sie funktioniert für elektroakustische Komposition, Klanginstallation, immersive Medienproduktion und Live-Performance. Das ICST entwickelt seit über zwei Jahrzehnten Werkzeuge, Workflows und Lehrformate, die diese Praxis zugänglich und forschungsbasiert verankert halten.
+
+**Ambisonics ist kein Format unter vielen. Es ist eine Entscheidung für räumliches Denken — heute und auf lange Sicht.**
+
+---
+
+## Über diese Site
+
+Ambisonics.ch dokumentiert Werkzeuge, Workflows und künstlerische Praxis rund um Ambisonics und räumlichen Klang am ICST Kompositionsstudio, ZHdK Zürich. Plugin-Dokumentation, kompositorisches Denken, Residenzarbeit und Hörpraxis sind hier an einem Ort zusammengeführt.
+
+Ich bin Johannes Schütt und arbeite seit über 30 Jahren mit Ambisonics. Gemeinsam mit [Christian Schweizer](https://github.com/schweizerweb) und Axel Kolb entwickle und pflege ich die ICST Ambisonics Plugins. In Zusammenarbeit mit Studio-Residenz-Künstler:innen, Studierenden und dem ICST-Team erforsche ich, was es bedeutet, in 3D-Audio zu komponieren, zu produzieren und aufzuführen. Studierende und Gastkünstler:innen nutzen dabei dieselben Werkzeuge und dieselbe Infrastruktur, die wir auch für die laufende Weiterentwicklung und Forschung einsetzen. Diese Site ist aus dieser gemeinsamen Praxis entstanden und soll anderen einen motivierenden Einstieg in dieses zukunftsträchtige Arbeitsfeld ermöglichen.
 
 * * *
 # Über uns

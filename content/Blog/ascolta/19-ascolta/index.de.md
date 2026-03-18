@@ -36,7 +36,7 @@ Persönlicher Link: [Website](https://anagonzalezgamboa0.wixsite.com/anagamboa)
 
 Aus Feldaufnahmen in Maputo entsteht ein bewegter Klangkörper: urbane Impulse, Stimmen und Reibungen verdichten sich zu einer akusmatischen Topografie. _Kampfumo_ hört Stadt nicht als Kulisse, sondern als soziale Energie im Fluss.
 
-Persönlicher Link: [Profil](https://ambisonics.ch/de/residenzen/nandele_maguni/)
+Persönlicher Link: [Profil](https://ambisonics.ch/de/residenzen/nandele-maguni/)
 
 ---
 

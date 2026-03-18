@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title3 desc3">
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="500" viewBox="0 0 1540 500" role="img" aria-labelledby="title3 desc3">
   <title id="title3">Approach 3 — Hybrid production: real IR plus synthetic reverb</title>
   <desc id="desc3">Signal flow diagram showing hybrid production: the source is encoded and routed through Spat5 for early reflections (synthetic path), while a venue IR feeds a convolution plugin for the late diffuse tail (real IR path). Both paths merge on the Ambisonics bus, which outputs B-format.</desc>
   <style>
@@ -8,13 +8,13 @@
     .panel-ir { fill: #1f2f20; stroke: #8fc59a; stroke-width: 2.5; }
     .panel-bus { fill: #2a2218; stroke: #c5a85a; stroke-width: 3; }
     .panel-out { fill: #1d2f3a; stroke: #6086b4; stroke-width: 2.5; }
-    .text { fill: #f2f5f7; font: 600 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    .sub { fill: #b6c3cc; font: 400 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    .small { fill: #8fa4b2; font: 400 14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    .label-synth { fill: #7ab8d8; font: 700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .06em; text-transform: uppercase; }
-    .label-ir { fill: #8fc59a; font: 700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .06em; text-transform: uppercase; }
-    .label-bus { fill: #c5a85a; font: 700 13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .06em; text-transform: uppercase; }
-    .phase { fill: #9fd0ff; font: 700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .07em; text-transform: uppercase; }
+    .text { fill: #f2f5f7; font: 600 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .sub { fill: #b6c3cc; font: 400 19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .small { fill: #8fa4b2; font: 400 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .label-synth { fill: #7ab8d8; font: 700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+    .label-ir { fill: #8fc59a; font: 700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+    .label-bus { fill: #c5a85a; font: 700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+    .phase { fill: #9fd0ff; font: 700 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .07em; text-transform: uppercase; }
     .arrow { stroke: #9fd0ff; stroke-width: 4; fill: none; stroke-linecap: round; }
     .arrow-blue { stroke: #7aa6d8; stroke-width: 3.5; fill: none; stroke-linecap: round; }
     .arrow-green { stroke: #8fc59a; stroke-width: 3.5; fill: none; stroke-linecap: round; }
@@ -36,65 +36,66 @@
   </defs>
 
   <!-- Background -->
-  <rect class="bg" width="1280" height="400"/>
+  <rect class="bg" width="1540" height="500"/>
 
   <!-- Phase label -->
-  <text class="phase" x="40" y="36">③ Hybrid — Real IR + Synthetic Early Reflections</text>
+  <text class="phase" x="70" y="52">③ Hybrid — Real IR + Synthetic Early Reflections</text>
 
   <!-- Source box (left, centered vertically) -->
-  <rect class="panel" x="40" y="155" width="180" height="80" rx="10"/>
-  <text class="text" x="130" y="190" text-anchor="middle">Source</text>
-  <text class="sub" x="130" y="214" text-anchor="middle">DAW track</text>
+  <rect class="panel" x="80" y="205" width="220" height="96" rx="10"/>
+  <text class="text" x="190" y="248" text-anchor="middle">Source</text>
+  <text class="sub" x="190" y="278" text-anchor="middle">DAW track</text>
 
   <!-- Fork arrow from source: one up to synth path, one down to IR path -->
   <!-- Up branch to Encoder + Spat5 -->
-  <polyline class="arrow-blue" points="223,185 275,185 275,130 340,130" marker-end="url(#ah3b)"/>
+  <polyline class="arrow-blue" points="305,234 370,234 370,150 470,150" marker-end="url(#ah3b)"/>
   <!-- Down branch to Venue IR -->
-  <polyline class="arrow-green" points="223,205 275,205 275,280 340,280" marker-end="url(#ah3g)"/>
+  <polyline class="arrow-green" points="305,272 370,272 370,342 470,342" marker-end="url(#ah3g)"/>
 
   <!-- SYNTHETIC PATH (upper) -->
-  <text class="label-synth" x="345" y="72">Synthetic path — early reflections</text>
+  <text class="label-synth" x="470" y="92">Synthetic path — early reflections</text>
   <!-- Box: Encoder + Spat5 -->
-  <rect class="panel-synth" x="340" y="84" width="340" height="80" rx="10"/>
-  <text class="text" x="510" y="119" text-anchor="middle">Encoder + Spat5</text>
-  <text class="sub" x="510" y="143" text-anchor="middle">spatial positioning · early reflections</text>
+  <rect class="panel-synth" x="470" y="104" width="430" height="96" rx="10"/>
+  <text class="text" x="685" y="147" text-anchor="middle">Encoder + Spat5</text>
+  <text class="sub" x="685" y="177" text-anchor="middle">spatial positioning · early reflections</text>
 
   <!-- Arrow synth → Ambi Bus -->
-  <polyline class="arrow-blue" points="683,124 760,124 760,195" marker-end="url(#ah3b)"/>
+  <polyline class="arrow-blue" points="905,152 1030,152 1030,235" marker-end="url(#ah3b)"/>
 
   <!-- REAL IR PATH (lower) -->
-  <text class="label-ir" x="345" y="254">Real IR path — late diffuse tail</text>
+  <text class="label-ir" x="470" y="318">Real IR path — late diffuse tail</text>
   <!-- Box: Venue IR -->
-  <rect class="panel-ir" x="340" y="258" width="185" height="80" rx="10"/>
-  <text class="text" x="432" y="293" text-anchor="middle">Venue IR</text>
-  <text class="sub" x="432" y="317" text-anchor="middle">B-format file</text>
+  <rect class="panel-ir" x="470" y="334" width="230" height="96" rx="10"/>
+  <text class="text" x="585" y="377" text-anchor="middle">Venue IR</text>
+  <text class="sub" x="585" y="407" text-anchor="middle">B-format file</text>
 
   <!-- Arrow IR → Conv Plugin -->
-  <line class="arrow-green" x1="528" y1="298" x2="593" y2="298" marker-end="url(#ah3g)"/>
+  <line class="arrow-green" x1="705" y1="382" x2="805" y2="382" marker-end="url(#ah3g)"/>
 
   <!-- Box: Conv Plugin -->
-  <rect class="panel-ir" x="598" y="258" width="185" height="80" rx="10"/>
-  <text class="text" x="690" y="293" text-anchor="middle">Conv. Plugin</text>
-  <text class="sub" x="690" y="317" text-anchor="middle">late diffuse tail</text>
+  <rect class="panel-ir" x="810" y="334" width="250" height="96" rx="10"/>
+  <text class="text" x="935" y="377" text-anchor="middle">Conv. Plugin</text>
+  <text class="sub" x="935" y="407" text-anchor="middle">late diffuse tail</text>
 
   <!-- Arrow Conv → Ambi Bus -->
-  <polyline class="arrow-green" points="786,298 855,298 855,255" marker-end="url(#ah3g)"/>
+  <polyline class="arrow-green" points="1065,382 1150,382 1150,296" marker-end="url(#ah3g)"/>
 
   <!-- Ambi Bus (central merge) -->
-  <text class="label-bus" x="765" y="168">Merge</text>
-  <rect class="panel-bus" x="760" y="175" width="200" height="80" rx="12"/>
-  <text class="text" x="860" y="210" text-anchor="middle">Ambi Bus</text>
-  <text class="sub" x="860" y="234" text-anchor="middle">B-format mix</text>
+  <text class="label-bus" x="1105" y="206">Merge</text>
+  <rect class="panel-bus" x="1030" y="226" width="220" height="96" rx="12"/>
+  <text class="text" x="1140" y="269" text-anchor="middle">Ambi Bus</text>
+  <text class="sub" x="1140" y="299" text-anchor="middle">B-format mix</text>
 
   <!-- Arrow Ambi Bus → Output -->
-  <line class="arrow-gold" x1="963" y1="215" x2="1050" y2="215" marker-end="url(#ah3gold)"/>
+  <line class="arrow-gold" x1="1255" y1="274" x2="1365" y2="274" marker-end="url(#ah3gold)"/>
 
   <!-- Output -->
-  <rect class="panel-out" x="1055" y="175" width="185" height="80" rx="10"/>
-  <text class="text" x="1147" y="210" text-anchor="middle">B-format</text>
-  <text class="sub" x="1147" y="234" text-anchor="middle">Output</text>
+  <rect class="panel-out" x="1360" y="226" width="130" height="96" rx="10"/>
+  <text class="text" x="1425" y="269" text-anchor="middle">B-format</text>
+  <text class="sub" x="1425" y="299" text-anchor="middle">Output</text>
 
   <!-- Gain staging note -->
-  <text class="small" x="640" y="370" text-anchor="middle">Careful gain staging required — synthetic early reflections + real late tail must be balanced to avoid reverb multiplication</text>
+  <text class="small" x="770" y="470" text-anchor="middle">Careful gain staging required — synthetic early reflections and the real late tail</text>
+  <text class="small" x="770" y="492" text-anchor="middle">must be balanced so reverb multiplication stays under control</text>
 
 </svg>

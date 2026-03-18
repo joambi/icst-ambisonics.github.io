@@ -1,23 +1,42 @@
 ---
-title: "Start with ICST Ambisonics Plugins"
-description: "A guided 4-step path from first concepts to a working spatial audio session in REAPER — free, open source, studio-tested."
+title: "ICST Ambisonics Plugins: Start"
+description: "The guided start to the ICST Ambisonics Plugins: in four steps from first concepts to a working spatial audio session in REAPER."
 date: 2026-01-01T00:00:00
 draft: false
 ---
 
 Level: Beginner | **Audience:** Composer, student, producer, technician.
 
-New to spatial audio or to the ICST plugins? Follow these four steps in order — each one builds on the previous and takes you from zero to a working Ambisonics session in REAPER.
+New to spatial audio or to the ICST plugins? This page is meant as a calm first entry point: no prior Ambisonics experience, no advanced setup knowledge, and no studio access required.
 
-<a class="hero__link" href="/downloads/icst-ambisonics-start-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;Download as PDF</a>
+Follow the four steps below in order and you will go from first concepts to a working Ambisonics session in REAPER. Each step is short, practical, and designed to build confidence before the next one.
+
+<div class="home-cards">
+  <section class="home-card">
+    <h4>First time here?</h4>
+    <p>Start with the guided path below if you want context, setup help, and a reliable first session without guessing what comes next.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="#step-1">Start with step 1</a>
+      <a class="hero__link" href="/ambisonics-101/">Read Ambisonics 101</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>Already comfortable with REAPER?</h4>
+    <p>If you want the fastest route to sound, jump straight to installation or the quick start and come back for the deeper concepts later.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">Open Quick Start</a>
+      <a class="hero__link" href="/icst-ambisonics-plugins/02_installation/">Install plugins</a>
+    </div>
+  </section>
+</div>
 
 <div class="home-section-header home-section-header--software" style="margin-bottom:1.6rem;">
 <p class="home-section-label">🎛️ Your path to spatial audio in REAPER</p>
 <p class="home-section-lead">Estimated time: 1–2 hours end to end. All tools are free and open source.</p>
 </div>
 
-<ol class="onboarding-steps onboarding-steps--software">
-<li class="onboarding-step">
+<ol class="onboarding-steps onboarding-steps--software onboarding-steps--large">
+<li class="onboarding-step" id="step-1">
 <span class="onboarding-step__num">1</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Understand Ambisonics — the concepts</p>
@@ -58,3 +77,9 @@ New to spatial audio or to the ICST plugins? Follow these four steps in order �
 ---
 
 **Questions?** Check the [FAQ](/blog/faq/) first. Common installation issues, signal flow problems, and OSC troubleshooting are covered there.
+
+Prefer an offline version or want to print the guide?
+
+<div class="hero__links">
+  <a class="hero__link" href="/downloads/icst-ambisonics-start-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;Download as PDF</a>
+</div>

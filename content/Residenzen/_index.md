@@ -1,6 +1,9 @@
 ---
 title: "Residencies"
 description: "International artist residencies at the ICST Composition Studio — composers working with spatial audio and Ambisonics technology at ZHdK Zurich."
+hideSectionIndex: true
+aliases:
+  - /residenzen/icst-studio-residences/
 ---
 
 <style>
@@ -100,6 +103,42 @@ description: "International artist residencies at the ICST Composition Studio �
     padding: 0.95rem 1rem;
   }
 }
+.hub-years {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 0.5rem 0 2.2rem;
+}
+.hub-years a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem 1.25rem;
+  border-top: 3px solid transparent;
+  transition: transform 0.13s ease, box-shadow 0.13s ease;
+}
+.theme--light .hub-years a {
+  background: #fff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  color: #464646;
+}
+.theme--dark .hub-years a {
+  background: #2a3a44;
+  border-left: 1px solid #3a4e58;
+  border-right: 1px solid #3a4e58;
+  border-bottom: 1px solid #3a4e58;
+  color: #eeeeee;
+}
+.hub-years a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.16);
+}
+.hub-years a.year--current { border-top-color: #4a9eff; }
+.hub-years a.year--past    { border-top-color: #38c4b0; }
+.hub-years a.year--archive { border-top-color: #6086b4; }
 </style>
 
 Level: Intermediate | **Audience:** Composers, sound artists, researchers, and potential residency applicants.
@@ -110,47 +149,18 @@ Level: Intermediate | **Audience:** Composers, sound artists, researchers, and p
 International composers and sound artists work with Ambisonics and 3D audio at the ICST Composition Studio, ZHdK Zürich. Each residency provides dedicated studio time, full access to the spatial audio production environment, and hands-on technical support from the ICST team.
 </div>
 
-This is the **programme and people hub** for the residencies: profiles, yearly cohorts, projects, and their links to the studio and public programme.
-
----
-
-## Start here
-
-<div class="hub-start">
-  <a href="https://www.zhdk.ch/forschung/icst/icst-air/residency-a-icst-studio-20727" target="_blank" rel="noopener noreferrer">
-    <span class="hub-card__title">Apply</span>
-    <span class="hub-card__text">Official entry point for ZHdK Residency A.</span>
+<div class="hub-years">
+  <a class="year--current" href="/residenzen/icst-studio-residences-2026/">
+    <span class="hub-card__title">📅 Residencies 2026</span>
+    <span class="hub-card__text">Current cohort — Pierre Alexandre Tremblay, Yoko Konishi, Eli Stine.</span>
   </a>
-  <a href="/residenzen/icst-studio-residences-2026/">
-    <span class="hub-card__title">Residencies 2026</span>
-    <span class="hub-card__text">Current cohort, profiles, and working periods.</span>
+  <a class="year--past" href="/residenzen/icst-studio-residences-2025/">
+    <span class="hub-card__title">🕐 Residencies 2025</span>
+    <span class="hub-card__text">Previous cohort — documentation, projects, and works in progress.</span>
   </a>
-  <a href="/blog/icst-composer-studio-blog/">
-    <span class="hub-card__title">Studio Hub</span>
-    <span class="hub-card__text">Resources, infrastructure, and technical preparation.</span>
-  </a>
-</div>
-
-### What the residency offers
-
-Residents work in the ICST Composition Studio with its multi-channel speaker arrays and the full ICST Ambisonics production setup. The ICST team provides technical onboarding on the plugins and workflows — no prior Ambisonics experience is required. Sessions typically run one to four weeks, either as a single block or spread across several dates. Residencies connect to the [ASCOLTA](/blog/ascolta/) listening series, giving artists the opportunity to present work-in-progress to an audience.
-
-### Who can apply
-
-The programme is open to composers, sound designers, and electroacoustic artists with a focus on spatial sound. Applications are handled through ZHdK via **Residency A** — the official ICST studio residency programme.
-
-<div class="hero__links">
-  <a class="hero__link hero__link--primary" href="https://www.zhdk.ch/forschung/icst/icst-air/residency-a-icst-studio-20727" target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-door-open"></i>&nbsp;Apply: Residency A (ZHdK)
-  </a>
-  <a class="hero__link" href="/blog/icst-kompositionsstudio-equipment/">
-    <i class="fas fa-sliders-h"></i>&nbsp;Studio Equipment
-  </a>
-  <a class="hero__link" href="/blog/icst-composer-studio-blog/">
-    <i class="fas fa-book-open"></i>&nbsp;Composition Studio
-  </a>
-  <a class="hero__link" href="/blog/ascolta/">
-    <i class="fas fa-headphones"></i>&nbsp;ascolta
+  <a class="year--archive" href="https://www.zhdk.ch/forschung/icst/icst-air/past-residents-20734" target="_blank" rel="noopener noreferrer">
+    <span class="hub-card__title">🗂 Past Residencies (pre-2025)</span>
+    <span class="hub-card__text">All earlier residents on the ZHdK website.</span>
   </a>
 </div>
 
@@ -184,29 +194,40 @@ The programme is open to composers, sound designers, and electroacoustic artists
   </section>
 </div>
 
-<div class="hero__links">
-  <a class="hero__link" href="/residenzen/icst-studio-residences-2026/">
-    <i class="fas fa-calendar"></i>&nbsp;All 2026 Residencies
+---
+
+## Start here
+
+<div class="hub-start">
+  <a href="https://www.zhdk.ch/forschung/icst/icst-air/residency-a-icst-studio-20727" target="_blank" rel="noopener noreferrer">
+    <span class="hub-card__title">Apply</span>
+    <span class="hub-card__text">Official entry point for ZHdK Residency A.</span>
   </a>
-  <a class="hero__link" href="/residenzen/icst-studio-residences-2025/">
-    <i class="fas fa-history"></i>&nbsp;2025 Residencies
-  </a>
-  <a class="hero__link" href="https://icst-kompositionsstudio.ch/post/icst-artist-in-residency-im-kompositionsstudio" target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-archive"></i>&nbsp;Archive (pre-2025)
+  <a href="/blog/icst-composer-studio-blog/">
+    <span class="hub-card__title">Studio Hub</span>
+    <span class="hub-card__text">Resources, infrastructure, and technical preparation.</span>
   </a>
 </div>
 
----
+### What the residency offers
 
-## Related Areas
+Residents work in the ICST Composition Studio with its multi-channel speaker arrays and the full ICST Ambisonics production setup. The ICST team provides technical onboarding on the plugins and workflows — no prior Ambisonics experience is required. Sessions typically run one to four weeks, either as a single block or spread across several dates. Residencies connect to the [ASCOLTA](/blog/ascolta/) listening series, giving artists the opportunity to present work-in-progress to an audience.
 
-<div class="hub-related">
-  <a href="/blog/icst-composer-studio-blog/">
-    <span class="hub-card__title">ICST Composition Studio</span>
-    <span class="hub-card__text">Studio setup, infrastructure, and resources.</span>
+### Who can apply
+
+The programme is open to composers, sound designers, and electroacoustic artists with a focus on spatial sound. Applications are handled through ZHdK via **Residency A** — the official ICST studio residency programme.
+
+<div class="hero__links">
+  <a class="hero__link hero__link--primary" href="https://www.zhdk.ch/forschung/icst/icst-air/residency-a-icst-studio-20727" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-door-open"></i>&nbsp;Apply: Residency A (ZHdK)
   </a>
-  <a href="/blog/ascolta/">
-    <span class="hub-card__title">ascolta</span>
-    <span class="hub-card__text">Public listening series, often connected to residency projects.</span>
+  <a class="hero__link" href="/blog/icst-kompositionsstudio-equipment/">
+    <i class="fas fa-sliders-h"></i>&nbsp;Studio Equipment
+  </a>
+  <a class="hero__link" href="/blog/icst-composer-studio-blog/">
+    <i class="fas fa-book-open"></i>&nbsp;Composition Studio
+  </a>
+  <a class="hero__link" href="/blog/ascolta/">
+    <i class="fas fa-headphones"></i>&nbsp;ascolta
   </a>
 </div>

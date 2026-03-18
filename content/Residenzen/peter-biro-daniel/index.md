@@ -2,6 +2,10 @@
 tags:
 title: Péter Biró Dániel
 date: 2025-08-20T18:09:00
+slug: peter-biro-daniel
+aliases:
+  - /residenzen/Péter Biró Dániel/
+  - /residenzen/Péter Biró Dániel/
 build:
   list: never
   render: always

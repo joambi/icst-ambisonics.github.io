@@ -36,7 +36,7 @@ Personal link: [Website](https://anagonzalezgamboa0.wixsite.com/anagamboa)
 
 Built from field recordings in Maputo, this work unfolds as a moving sonic body: urban impulses, voices, and frictions condense into an acousmatic topography. _Kampfumo_ hears the city not as a backdrop, but as social energy in motion.
 
-Personal link: [Profile](https://ambisonics.ch/residenzen/nandele_maguni/)
+Personal link: [Profile](https://ambisonics.ch/residenzen/nandele-maguni/)
 
 ---
 

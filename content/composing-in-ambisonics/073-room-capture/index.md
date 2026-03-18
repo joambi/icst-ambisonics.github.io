@@ -125,7 +125,7 @@ The result is a piece that already carries the acoustic signature of the target 
 **Approach 2 — Synthesise a virtual room in Ambisonics**
 
 <figure class="big">
-  <img src="/images/room-capture-approach-2.svg" alt="Signal flow: DAW source feeds a spatial reverb engine (Spat5, IEM FdnReverb, SPARTA). Room parameters such as room size, RT60, early reflections, and diffusion are fully controllable. Output is B-format HOA." loading="lazy" />
+  <img src="/images/room-capture-approach-2.svg" alt="Signal flow: DAW source feeds a spatial reverb engine (Spat5, IEM FdnReverb, SPARTA). Room parameters such as room size, RT60, early reflections, and diffusion are fully controllable. Output is B-format HOA." loading="lazy" style="width:100%;max-width:1100px;height:auto;" />
 </figure>
 
 Rather than capturing a real room, generate a synthetic spatial reverberation algorithmically. This approach is fully studio-based and gives complete creative control over all room parameters.

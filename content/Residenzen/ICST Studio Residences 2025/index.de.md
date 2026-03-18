@@ -1,5 +1,5 @@
 ---
-title: "2025 ICST Artist in Studio-Residency"
+title: "ICST Studio-Residenzen 2025"
 date: 2025-09-16T00:00:00
 hideDate: true
 ---
@@ -116,8 +116,11 @@ hideDate: true
   <img src="nandele_01.png" alt="Nandele Maguni">
   <div class="artist-card__body">
     <div class="artist-card__name">Nandele Maguni</div>
-    <span class="artist-card__period">16 Jun – 06 Jul 2025</span>
-    <p class="artist-card__bio">Während seiner dreiwöchigen ICST Studio-Residency produzierte Nandele Maguni eine neue Veröffentlichung mit dem Titel <em>Kampfumo</em>, basierend auf seinen Feldaufnahmen aus Maputo.</p>
+    <span class="artist-card__period">16. Jun – 06. Jul 2025</span>
+    <div class="artist-card__links">
+      <a href="../nandele-maguni/">Vollständiges Profil →</a>
+    </div>
+    <p class="artist-card__bio">Während seiner dreiwöchigen ICST Studio-Residenz produzierte Nandele Maguni eine neue Veröffentlichung mit dem Titel <em>Kampfumo</em>, basierend auf seinen Feldaufnahmen aus Maputo.</p>
   </div>
 </div>
 
@@ -125,10 +128,10 @@ hideDate: true
   <img src="Youngjae_Cho.jpg" alt="Youngjae Cho">
   <div class="artist-card__body">
     <div class="artist-card__name">Youngjae Cho</div>
-    <span class="artist-card__period">07 Jul – 27 Jul 2025</span>
+    <span class="artist-card__period">07. Jul – 27. Jul 2025</span>
     <div class="artist-card__links">
       <a href="https://www.youngjaecho.com/about.html">Website</a>
-      <a href="../Youngjae Cho/">Vollständiges Profil & B-Format-Projekt →</a>
+      <a href="../youngjae-cho/">Vollständiges Profil und B-Format-Projekt →</a>
     </div>
     <p class="artist-card__bio">Komponist mit Basis in Korea und Deutschland, arbeitet mit elektroakustischer Musik, Live-Elektronik und immersivem Mehrkanalformat-Audio. Auszeichnungen: George Enescu Competition (1. Preis), Via Nova Competition (1. Preis).</p>
   </div>
@@ -138,7 +141,10 @@ hideDate: true
   <img src="Lucas_Daniel.jpg" alt="Dániel Péter Biró">
   <div class="artist-card__body">
     <div class="artist-card__name">Dániel Péter Biró</div>
-    <span class="artist-card__period">18 Aug – 07 Sep 2025</span>
+    <span class="artist-card__period">18. Aug – 07. Sep 2025</span>
+    <div class="artist-card__links">
+      <a href="../peter-biro-daniel/">Vollständiges Profil →</a>
+    </div>
     <p class="artist-card__bio">Professor für Komposition an der Grieg Academy, University of Bergen. Sein Forschungsprojekt <em>Sounding Philosophy</em> wird vom Norwegian Artistic Research Program finanziert (2021–2025).</p>
   </div>
 </div>
@@ -147,13 +153,12 @@ hideDate: true
   <img src="GOPR4281.jpg" alt="Ana Gonzalez Gamboa">
   <div class="artist-card__body">
     <div class="artist-card__name">Ana Gonzalez Gamboa <span class="artist-card__badge">Prix CIME 2025</span></div>
-    <span class="artist-card__period">08 Sep – 16 Sep 2025</span>
+    <span class="artist-card__period">08. Sep – 16. Sep 2025</span>
     <div class="artist-card__links">
       <a href="https://anagonzalezgamboa0.wixsite.com/anagamboa">Website</a>
       <a href="https://www.instagram.com/ana___gamboa/">Instagram</a>
+      <a href="../ana-gonzalez-gamboa/">Vollständiges Profil →</a>
     </div>
     <p class="artist-card__bio"><em>Lúmina</em> ist eine Komposition, die Reiseaufnahmen mit Fragmenten von Anime verflicht und eine imaginäre Welt konstruiert, in der sich Erinnerung und Fiktion überschneiden.</p>
   </div>
 </div>
-
-

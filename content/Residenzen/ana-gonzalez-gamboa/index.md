@@ -2,6 +2,9 @@
 tags:
 title: Ana Gonzalez Gamboa
 date: 2025-09-03T18:35:00
+slug: ana-gonzalez-gamboa
+aliases:
+  - /residenzen/Ana Gonzalez Gamboa/
 build:
   list: never
   render: always

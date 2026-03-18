@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<div class="docs-index animated fadeInDown">
+{{ if not .Params.hideSectionIndex }}<div class="docs-index animated fadeInDown">
   <div class="docs-index__chapters">
 
     {{/* Pinned overview page(s) without number */}}
@@ -44,4 +44,5 @@
 
   </div>
 </div>
+{{ end }}
 {{ end }}

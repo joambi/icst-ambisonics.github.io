@@ -2,6 +2,9 @@
 tags: []
 date: 2025-07-07T00:00:00
 title: Youngjae Cho
+slug: youngjae-cho
+aliases:
+  - /de/residenzen/Youngjae Cho/
 build:
   list: never
   render: always
@@ -15,7 +18,7 @@ ICST Artist in Residence vom **07.07.2025 bis 27.07.2025** (Studio-Residenz)
 
 ## Zur Person
 
-Youngjae Cho (geboren 1990) ist ein Komponist mit Basis in Korea und Deutschland. Sein Schaffen umfasst Solo- und Kammermusik, elektroakustische Musik, Live-Elektronik und immersives Mehrkanalformat-Audio. Inspiriert von Alltagsgeräuschen und Klanglandschaften entstehen Kompositionen, die auf Festivals in Europa, Asien und Nordamerika aufgeführt werden. Er studierte Komposition bei Peter Gahn an der Hochschule für Musik Nürnberg und schloss einen Master in elektroakustischer Komposition an der Hochschule für Künste Bremen ab.
+Youngjae Cho (geboren 1990) ist ein Komponist mit Arbeitsorten in Korea und Deutschland. Sein Schaffen umfasst Solo- und Kammermusik, elektroakustische Musik, Live-Elektronik und immersives Mehrkanal-Audio. Inspiriert von Alltagsgeräuschen und Klanglandschaften entstehen Kompositionen, die auf Festivals in Europa, Asien und Nordamerika aufgeführt werden. Er studierte Komposition bei Peter Gahn an der Hochschule für Musik Nürnberg und schloss einen Master in elektroakustischer Komposition an der Hochschule für Künste Bremen ab.
 
 Auszeichnungen: **George Enescu Wettbewerb** (1. Preis), **Via Nova Wettbewerb** (1. Preis).
 
@@ -26,7 +29,7 @@ Auszeichnungen: **George Enescu Wettbewerb** (1. Preis), **Via Nova Wettbewerb**
 
 ## Projekt am ICST
 
-**B-Format zu SPS/T-Format Konvertierung**
+**B-Format- zu SPS-/T-Format-Konvertierung**
 
 Während seiner Residenz erforschte Youngjae Cho einen Workflow zur räumlichen Audioverarbeitung, der auf der Umwandlung von B-Format-Aufnahmen in das SPS-Format (Spatial PCM Sampling) basiert — einem alternativen Ansatz zu Higher-Order Ambisonics, bei dem räumliche Information als raumabhängige Filterkanäle enkodiert wird. Dadurch können klassische Audioprozesse (Rauschreduzierung, EQ) auf immersive Aufnahmen angewendet werden, bevor diese zurück in B-Format konvertiert werden.
 
@@ -34,9 +37,7 @@ Während seiner Residenz erforschte Youngjae Cho einen Workflow zur räumlichen 
 
 Der am ICST entwickelte Workflow:
 1. Feldaufnahme in 3rd-order ambiX B-Format konvertieren
-2. Dekodierung in T-Format (SPS) mit dem SPARTA AmbiDEC Plugin
+2. Dekodierung in T-Format (SPS) mit dem SPARTA AmbiDEC-Plugin
 3. Traditionelle Bearbeitung der PCM-Audiokanäle
 4. Rückkodierung von T-Format zu 3rd-order ambiX B-Format
 5. Upscaling auf 7th-order ambiX für die Wiedergabe
-
-

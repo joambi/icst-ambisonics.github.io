@@ -2,6 +2,9 @@
 tags: []
 date: 2025-07-07T00:00:00
 title: Youngjae Cho
+slug: youngjae-cho
+aliases:
+  - /residenzen/Youngjae Cho/
 build:
   list: never
   render: always
@@ -38,5 +41,3 @@ The workflow developed at ICST:
 3. Apply traditional processing to the PCM audio channels
 4. Re-encode from T-format back to 3rd-order ambiX B-format
 5. Upscale to 7th-order ambiX for playback
-
-

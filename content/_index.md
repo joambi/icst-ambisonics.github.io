@@ -6,6 +6,24 @@ aliases:
   - /home/
 ---
 
+<div class="icst-pillars">
+  <a class="icst-pillar icst-pillar--plugins" href="/icst-ambisonics-plugins/">
+    <span class="icst-pillar__icon">🎛️</span>
+    <strong class="icst-pillar__title">Ambisonics Plugins & Max Tools</strong>
+    <span class="icst-pillar__desc">Free spatial audio tools for REAPER and Max/MSP — encoder, decoder, monitor, OSC control.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--residency" href="/residenzen/">
+    <span class="icst-pillar__icon">🏛️</span>
+    <strong class="icst-pillar__title">Studio Residencies</strong>
+    <span class="icst-pillar__desc">Artist-in-residence programme at ICST — current residents, projects, and past documentation.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--ascolta" href="/blog/ascolta/">
+    <span class="icst-pillar__icon">🎧</span>
+    <strong class="icst-pillar__title">ASCOLTA</strong>
+    <span class="icst-pillar__desc">Acousmatic listening sessions and concerts at ZHdK — spatial works performed live, open audience.</span>
+  </a>
+</div>
+
 ## New here? Start with Ambisonics in REAPER
 
 Level: Beginner to Advanced | **Audience:** Composers, students, producers, technicians, and studio residents.

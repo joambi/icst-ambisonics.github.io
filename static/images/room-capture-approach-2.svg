@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title2 desc2">
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="560" viewBox="0 0 1680 560" role="img" aria-labelledby="title2 desc2">
   <title id="title2">Approach 2 — Synthesise a virtual room in Ambisonics</title>
   <desc id="desc2">Signal flow diagram: DAW source feeds a spatial reverb engine (Spat5, IEM FdnReverb, SPARTA). Room parameters such as room size, RT60, early reflections, and diffusion are fully controllable. Output is B-format HOA.</desc>
   <style>
@@ -7,10 +7,10 @@
     .panel-engine { fill: #1e2838; stroke: #7aa6d8; stroke-width: 3; }
     .panel-param { fill: #1a2530; stroke: #4a7a9a; stroke-width: 1.5; stroke-dasharray: 5 4; }
     .panel-out { fill: #1d2f3a; stroke: #6086b4; stroke-width: 2.5; }
-    .text { fill: #f2f5f7; font: 600 23px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    .sub { fill: #b6c3cc; font: 400 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    .param-text { fill: #7ab8d8; font: 400 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-    .phase { fill: #9fd0ff; font: 700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .07em; text-transform: uppercase; }
+    .text { fill: #f2f5f7; font: 600 34px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .sub { fill: #b6c3cc; font: 400 23px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .param-text { fill: #7ab8d8; font: 400 21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .phase { fill: #9fd0ff; font: 700 19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .07em; text-transform: uppercase; }
     .arrow { stroke: #9fd0ff; stroke-width: 4; fill: none; stroke-linecap: round; }
     .arrow-dashed { stroke: #7aa6d8; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-dasharray: 7 5; }
   </style>
@@ -24,40 +24,40 @@
   </defs>
 
   <!-- Background -->
-  <rect class="bg" width="1280" height="320"/>
+  <rect class="bg" width="1680" height="560"/>
 
   <!-- Phase label -->
-  <text class="phase" x="40" y="36">② Virtual Room — Algorithmic Synthesis</text>
+  <text class="phase" x="80" y="60">② Virtual Room — Algorithmic Synthesis</text>
 
-  <!-- Box 1: Source (x=40, y=108, w=190, h=80) -->
-  <rect class="panel" x="40" y="108" width="190" height="80" rx="10"/>
-  <text class="text" x="135" y="143" text-anchor="middle">Source</text>
-  <text class="sub" x="135" y="167" text-anchor="middle">DAW track</text>
+  <!-- Box 1: Source -->
+  <rect class="panel" x="90" y="188" width="250" height="104" rx="10"/>
+  <text class="text" x="215" y="232" text-anchor="middle">Source</text>
+  <text class="sub" x="215" y="265" text-anchor="middle">DAW track</text>
 
   <!-- Arrow 1→2 -->
-  <line class="arrow" x1="233" y1="148" x2="333" y2="148" marker-end="url(#ah2)"/>
+  <line class="arrow" x1="345" y1="240" x2="500" y2="240" marker-end="url(#ah2)"/>
 
   <!-- Box 2: Spatial Reverb Engine (large, central) -->
-  <rect class="panel-engine" x="338" y="68" width="560" height="160" rx="14"/>
-  <text class="text" x="618" y="106" text-anchor="middle">Spatial Reverb Engine</text>
-  <text class="sub" x="618" y="130" text-anchor="middle">IRCAM Spat5 · IEM FdnReverb · SPARTA AmbiBIN</text>
-  <text class="sub" x="618" y="154" text-anchor="middle">Panoramix · dearVR Spatial Connect</text>
-  <text class="sub" x="618" y="178" text-anchor="middle">Aalto Spatial</text>
+  <rect class="panel-engine" x="500" y="126" width="850" height="226" rx="14"/>
+  <text class="text" x="925" y="182" text-anchor="middle">Spatial Reverb Engine</text>
+  <text class="sub" x="925" y="224" text-anchor="middle">IRCAM Spat5 · IEM FdnReverb · SPARTA AmbiBIN</text>
+  <text class="sub" x="925" y="258" text-anchor="middle">Panoramix · dearVR Spatial Connect</text>
+  <text class="sub" x="925" y="292" text-anchor="middle">Aalto Spatial</text>
 
   <!-- Arrow 2→3 -->
-  <line class="arrow" x1="901" y1="148" x2="1005" y2="148" marker-end="url(#ah2)"/>
+  <line class="arrow" x1="1355" y1="240" x2="1490" y2="240" marker-end="url(#ah2)"/>
 
   <!-- Box 3: B-format Output -->
-  <rect class="panel-out" x="1010" y="108" width="220" height="80" rx="10"/>
-  <text class="text" x="1120" y="143" text-anchor="middle">B-format</text>
-  <text class="sub" x="1120" y="167" text-anchor="middle">HOA Output</text>
+  <rect class="panel-out" x="1485" y="188" width="155" height="104" rx="10"/>
+  <text class="text" x="1562" y="232" text-anchor="middle">B-format</text>
+  <text class="sub" x="1562" y="265" text-anchor="middle">HOA Output</text>
 
   <!-- Parameters box below engine -->
-  <rect class="panel-param" x="338" y="248" width="560" height="52" rx="10"/>
-  <text class="param-text" x="618" y="270" text-anchor="middle">Controllable per source: Room Size · RT60 · Early Reflections · Diffusion · Air Absorption</text>
-  <text class="param-text" x="618" y="290" text-anchor="middle">Room geometry can change across sections — the virtual room is a compositional instrument</text>
+  <rect class="panel-param" x="500" y="404" width="850" height="94" rx="10"/>
+  <text class="param-text" x="925" y="442" text-anchor="middle">Controllable per source: Room Size · RT60 · Early Reflections · Diffusion · Air Absorption</text>
+  <text class="param-text" x="925" y="474" text-anchor="middle">Room geometry can change across sections — the virtual room becomes a compositional instrument</text>
 
   <!-- Dashed arrow from engine box bottom to params box -->
-  <line class="arrow-dashed" x1="618" y1="231" x2="618" y2="244" marker-end="url(#ah2d)"/>
+  <line class="arrow-dashed" x1="925" y1="356" x2="925" y2="392" marker-end="url(#ah2d)"/>
 
 </svg>
