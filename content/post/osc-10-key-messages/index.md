@@ -1,6 +1,6 @@
 ---
-title: OSC im ICST AmbiEncoder - Die 10 wichtigsten Messages
-description: "Praxisorientierte OSC-Referenz fuer den ICST AmbiEncoder mit den wichtigsten Message-Typen, Setup-Hinweisen und Debugging-Checkliste."
+title: OSC in ICST AmbiEncoder - The 10 Most Important Messages
+description: "Practical OSC quick reference for ICST AmbiEncoder, covering the essential message types, setup guidance, and a debugging checklist."
 date: 2026-03-08T11:50:00+01:00
 year: 2026
 month: 2026-03
@@ -15,19 +15,19 @@ difficulty: "intermediate"
 
 Level: Intermediate | **Audience:** Power user, Technical artist.
 
-Diese Seite ist der **Praxis-Quickstart**.
-Fuer die vollstaendige Adress- und Parameterreferenz siehe:
-- [OSC Syntax fuer den ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+This page is the **practical quickstart**.
+For the full address and parameter reference, see:
+- [OSC Syntax for ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 
-## Wofuer OSC hier wirklich nuetzlich ist
-OSC macht Bewegungssteuerung reproduzierbar und erlaubt es, externe Controller, Max-Patches oder Skripte sauber in den Produktionsworkflow einzubinden.
+## What OSC is actually useful for here
+OSC makes movement control reproducible and allows external controllers, Max patches, or scripts to integrate cleanly into the production workflow.
 
-## Setup in zwei Minuten
-1. Lokalen Host und Port festlegen.
-2. Verbindung mit einer Test-Message pruefen.
-3. Rueckmeldung in Reaper und im AmbiEncoder kontrollieren.
+## Setup in two minutes
+1. Define local host and port.
+2. Verify the connection with a test message.
+3. Check feedback in Reaper and in AmbiEncoder.
 
-## Die 10 Message-Typen, die du sofort brauchst
+## The 10 message types you need first
 1. Source Select
 2. X-Position
 3. Y-Position
@@ -39,17 +39,17 @@ OSC macht Bewegungssteuerung reproduzierbar und erlaubt es, externe Controller, 
 9. Snapshot/Preset Recall
 10. Transport Sync Trigger
 
-## Debugging Checkliste
-- Port-Konflikt ausschliessen.
-- Message-Format mit bestehender Syntax pruefen.
-- Timing/Jitter bei schnellen Updates begrenzen.
+## Debugging checklist
+- Exclude port conflicts.
+- Verify message format against the syntax reference.
+- Limit timing jitter for fast updates.
 
-## Praxisbeispiel
-Kombiniere einen externen Controller mit Reaper-Automation: OSC steuert die Bewegung in Echtzeit, Reaper zeichnet die Bewegung als verifizierbare Automation auf.
+## Practical example
+Combine an external controller with Reaper automation: OSC drives movement in real time, while Reaper records it as verifiable automation.
 
-## Weiterfuehrende Inhalte
-- [MaxMSP und ICST AmbiEncoder - OSC Communication](/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/)
-- [Reaper Ambisonics Setup in 20 Minuten](/post/reaper-setup-20-minuten/)
+## Related content
+- [MaxMSP and ICST AmbiEncoder - OSC Communication](/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/)
+- [Reaper Ambisonics Setup in 20 Minutes](/post/reaper-setup-20-minuten/)
 
-## Naechster Schritt
-Uebernimm zwei bis drei Messages in dein Setup und teste sie zuerst mit einer einzelnen Quelle, bevor du Gruppensteuerung aktivierst.
+## Next step
+Adopt two or three messages into your setup and test them first with a single source before enabling group control.

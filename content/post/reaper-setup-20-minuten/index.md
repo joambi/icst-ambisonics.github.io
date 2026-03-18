@@ -1,6 +1,6 @@
 ---
-title: Reaper Ambisonics Setup in 20 Minuten (ICST Workflow)
-description: "Schritt-fuer-Schritt Einstieg in ein stabiles Reaper-Ambisonics-Setup mit ICST Plugins, Routing und erstem Monitoring-Test."
+title: Reaper Ambisonics Setup in 20 Minutes (ICST Workflow)
+description: "Step-by-step quickstart for a stable Reaper Ambisonics setup with ICST plugins, routing, and a first monitoring check."
 date: 2026-03-08T11:40:00+01:00
 year: 2026
 month: 2026-03
@@ -15,52 +15,52 @@ difficulty: "beginner"
 
 Level: Beginner | **Audience:** Composer, Student, DAW newcomer.
 
-Diese Seite ist die **Ausfuehrungs-Checkliste** (klickorientiert).
-Fuer Onboarding-Logik und systematische Fehlersuche siehe:
+This page is the **execution checklist**.
+For onboarding logic and systematic troubleshooting, see:
 - [Getting Started with ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 
-## Was du am Ende erreicht hast
-Du hast eine lauffaehige Reaper-Session mit ICST AmbiEncoder, sauberem Routing und einem schnellen Monitoring-Check.
+## What you will achieve
+You will end up with a working Reaper session featuring ICST AmbiEncoder, clean routing, and a fast monitoring check.
 
-## Voraussetzungen
-- Reaper installiert.
-- ICST Ambisonics Plugins installiert.
-- Audio-Interface mit passender I/O-Konfiguration.
-- Docs dazu: [Installation](/icst-ambisonics-plugins/02_installation/)
+## Prerequisites
+- Reaper installed.
+- ICST Ambisonics Plugins installed.
+- Audio interface with a suitable I/O configuration.
+- Related docs: [Installation](/icst-ambisonics-plugins/02_installation/)
 
-## Schritt 1 - Session vorbereiten
-Lege eine neue Session an, setze Sample Rate und definiere ein klares Track-Layout fuer Quellen, B-Format-Bus und Monitoring.
-- Docs dazu:
+## Step 1 - Prepare the session
+Create a new session, set the sample rate, and define a clear track layout for sources, B-format bus, and monitoring.
+- Related docs:
   - [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
   - [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 
-## Schritt 2 - ICST AmbiEncoder korrekt routen
-Lade den AmbiEncoder auf den Quelltracks und route die Ausgaenge in den zentralen B-Format-Bus. Pruefe danach die Kanalzuordnung im Routing-Fenster.
-- Docs dazu:
+## Step 2 - Route ICST AmbiEncoder correctly
+Load AmbiEncoder on the source tracks and route the outputs into the central B-format bus. Then verify channel assignment in the routing window.
+- Related docs:
   - [Track Templates](/icst-ambisonics-plugins/05_open_track_templates/)
   - [How it Works](/icst-ambisonics-plugins/03_how_it_works/)
   - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
 
-## Schritt 3 - Erste Quelle raeumlich bewegen
-Bewege eine einzelne Quelle in X/Y/Z, speichere ein Preset und pruefe die Bewegung in der Radar-Ansicht.
-- Docs dazu:
+## Step 3 - Move the first source in space
+Move a single source in X/Y/Z, save a preset, and verify the movement in the radar view.
+- Related docs:
   - [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
   - [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 
-## Schritt 4 - Monitoring und Schnelltest
-Fuehre einen kurzen Pegel- und Hoertest durch und verifiziere, dass alle Kanaele erwartungsgemaess reagieren.
-- Docs dazu:
+## Step 4 - Monitoring and quick test
+Run a short level and listening test and verify that all channels respond as expected.
+- Related docs:
   - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
   - [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 
-## Haeufige Fehler
-Die ausfuehrliche Debug-Liste liegt im Onboarding-Guide:
+## Common errors
+The full debugging list lives in the onboarding guide:
 - [Getting Started with ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 
-## Downloads und weiterfuehrende Artikel
+## Downloads and related articles
 - [ICST Ambisonics Tools](/icst-ambisonics-tools/)
-- [OSC im ICST AmbiEncoder: Die 10 wichtigsten Messages](/post/osc-10-key-messages/)
-- [Ableton Live und ICST Ambisonics Integration](/post/ableton_reaper/)
+- [OSC in ICST AmbiEncoder: The 10 Most Important Messages](/post/osc-10-key-messages/)
+- [Ableton Live and ICST Ambisonics Integration](/post/ableton_reaper/)
 
-## Naechster Schritt
-Wenn das Grundsetup stabil laeuft, erweitere die Session mit OSC-Automation fuer reproduzierbare Bewegungen.
+## Next step
+Once the baseline setup is stable, extend the session with OSC automation for repeatable movement workflows.

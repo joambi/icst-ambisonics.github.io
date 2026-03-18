@@ -8,13 +8,13 @@ group: "Studio"
 tags: ["studio", "routing", "loudspeaker", "decoder", "case-study"]
 ---
 
-**Level:** Intermediate — **For:** Composers, Technicians, Researchers working with or visiting the ICST Kompositionsstudio.
+Level: Intermediate | **Audience:** Composers, technicians, and researchers working with or visiting the ICST Composition Studio.
 
 ---
 
 ## Context
 
-Every multi-speaker Ambisonics room accumulates small routing decisions over time — a bus added here, a monitoring path rerouted there. In the ICST Kompositionsstudio, those decisions have been made deliberately and documented so that each new resident starts from a stable, understood baseline rather than a mystery template.
+Every multi-speaker Ambisonics room accumulates small routing decisions over time — a bus added here, a monitoring path rerouted there. In the ICST Composition Studio, those decisions have been made deliberately and documented so that each new resident starts from a stable, understood baseline rather than a mystery template.
 
 This article explains the four core decisions behind the studio's 31-speaker REAPER session template, the problems each decision solves, and the failure modes it prevents.
 
@@ -64,5 +64,5 @@ All tracks in the template follow a naming convention: `[number]_[function]_[for
 
 - [From Stereo to HOA7: A Step-by-Step Session](/post/stereo-to-hoa7-session/)
 - [ICST AmbiDecoder — Multi-Decoder Mode](/post/multi-decoder-mode/)
-- [ICST Kompositionsstudio — Guide for Residents](/for-residents/)
-- [ICST Kompositionsstudio Overview](/blog/icst-composer-studio-overview/)
+- [ICST Composition Studio — Guide for Residents](/for-residents/)
+- [ICST Composition Studio Overview](/blog/icst-composer-studio-overview/)

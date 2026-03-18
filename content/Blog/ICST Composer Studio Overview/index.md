@@ -1,22 +1,23 @@
 ---
-title: ICST Kompositionsstudio Overview
-description: "Studio space, 31-speaker Ambisonics system, and general overview"
+title: ICST Composition Studio Overview
+description: "Studio space, 31-speaker Ambisonics system, and general overview."
 date: 2025-05-05T16:43:00
 weight: 1
 group: "Studio"
 ---
 
-**Audience:** Composer, Student, Researcher, Studio visitor.
+Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 
-#### **Studio for Composition**
+## Studio overview
 
-The Studio of the ICST is a Surround-Studio with 17 Geithain Speakers (8+5+4) and stereo-monitoring.
-A Mac Pro is offering various software such as sequencers, HD-recording- and Sound-tools, MAX MSP/Jitter, and PD. The studio is suitable especially for producing ambisonic/surround music. It combines the latest technologies with musical practice and puts its focus on sound research, computer music, and media art. The Studio is a place to support the production and composition of new works of electronic music, sound- and media art.
+The ICST studio is a surround production environment with 17 Geithain loudspeakers (8+5+4) plus stereo monitoring.
+A Mac Pro provides sequencing, HD recording, sound tools, Max MSP/Jitter, and Pure Data. The studio is designed especially for Ambisonics and surround music production. It combines current technology with musical practice and focuses on sound research, computer music, and media art.
+The studio supports the production and composition of new works in electronic music, sound art, and media art.
 
 ![ICST_STUDIO](ICST_STUDIO.png)
 
 * * *
 
-Room: **ZT 3.D02 ICST Kompositionsstudio**
+Room: **ZT 3.D02 ICST Composition Studio**
 
 Contact: [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
