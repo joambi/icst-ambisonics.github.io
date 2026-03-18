@@ -41,6 +41,7 @@ slug: ambisonics-101
   <div class="toc-card__title">Table of Contents</div>
   <ol>
     <li><a href="#what-is-ambisonics">What Is Ambisonics?</a></li>
+    <li><a href="#ambisonics-vs-stereo">Ambisonics vs. Stereo</a></li>
     <li><a href="#what-is-b-format">What Is B-Format?</a></li>
     <li><a href="#signal-flow">Signal Flow at a Glance</a></li>
     <li><a href="#typical-setups">Typical Setups</a></li>
@@ -55,8 +56,25 @@ slug: ambisonics-101
 ## 1. [What Is Ambisonics?](https://en.wikipedia.org/wiki/Ambisonics)
 Ambisonics is a format-agnostic method for describing a spatial 3D sound field. Instead of mixing directly for a fixed loudspeaker layout, you work with a spatial representation that can later be rendered for different playback systems.
 
+<a id="ambisonics-vs-stereo"></a>
+## 2. Ambisonics vs. Stereo
+
+Stereo is familiar: two channels, left and right. It creates the illusion of sounds positioned along a horizontal line between two speakers. Add a centre channel and surrounds, and you get 5.1 or 7.1 — but each time you change the loudspeaker layout, you have to re-mix from scratch.
+
+Ambisonics takes a different approach. Instead of mixing directly for a speaker layout, you first encode the spatial sound field as B-format (see section 3 below). That representation captures where sound comes from across the full 3D sphere — left, right, front, back, above, below. The decoding to actual speakers happens later, and the same file can be decoded for completely different setups without touching the mix.
+
+| | Stereo | Ambisonics |
+|---|---|---|
+| **Channels** | 2 (L / R) | 4 – 64+ (B-format) |
+| **Spatial range** | Left–right line | Full sphere (360° × 180°) |
+| **Speaker dependency** | Fixed to layout at mix time | Decoded to any layout later |
+| **Re-use** | New mix per setup | One B-format file → many setups |
+| **Typical use** | Music, broadcast, everyday listening | Art, research, installation, live, film |
+
+**When does stereo make more sense?** For most music distribution, podcasts, and broadcast, stereo remains the standard — it is compatible with every playback system and requires no special tools. Ambisonics pays off when the spatial dimension of sound matters artistically or technically, or when you need a single master file that can serve multiple playback contexts.
+
 <a id="what-is-b-format"></a>
-## 2. [What Is B-Format?](https://ambisonic.info/ambisonics/channels.html)
+## 3. [What Is B-Format?](https://ambisonic.info/ambisonics/channels.html)
 
 B-format is the core signal format in Ambisonics and carries spatial information. Sources are encoded into B-format and then decoded for a target setup, such as headphones, stereo, or different loudspeaker arrays.
 
@@ -82,22 +100,40 @@ From source to speaker — this is how Ambisonics works in REAPER with the ICST 
 *Multi-source: up to 64 sources feed simultaneously into the ICST MultiEncoder → shared B-Format Bus → decoded once.*
 
 <a id="typical-setups"></a>
-## 3. [Typical Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
+## 5. [Typical Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
 Common setups range from small studio rings and dome-like height configurations to custom arrays in composition studios. The same Ambisonics material can be adapted to each of these setups through decoding.
 
 <a id="headphones-vs-loudspeakers"></a>
-## 4. Headphones vs. Loudspeakers
+## 6. Headphones vs. Loudspeakers
 Headphones use binaural rendering and are practical for editing, checking translation, and remote collaboration. Loudspeakers provide a physical spatial field in the room and remain essential for composition, depth perception, and artistic evaluation.
 
 <a id="immersive-vs-atmos"></a>
-## 5. How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?
+## 7. How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?
 
-Ambisonics is a form of immersive audio. Immersive audio is a broader term for 3D audio approaches that recreate a full sound field around the listener rather than just left/right playback.
+Immersive audio is a broad term for any 3D audio approach that places sound around — and above — the listener rather than just left and right. Ambisonics, Dolby Atmos, and Apple Spatial Audio all pursue this goal, but they do so in fundamentally different ways.
 
-Dolby Atmos and Apple Spatial Audio pursue a similar goal, but are typically object-based workflows. Ambisonics, by contrast, is a channel-based, field-oriented approach. The spatial information is contained in B-format and adapted to a concrete playback system only at decoding stage.
+**Ambisonics is field-based.** The sound field is encoded as a mathematical representation (B-format) that is independent of any specific speaker layout. The same B-format file can be decoded later for a studio ring, a concert dome, headphones, or stereo. The playback system does not need to be decided at production time.
+
+**Dolby Atmos and Apple Spatial Audio are object-based.** Individual sound sources are stored as audio objects with position metadata. A licensed renderer (Dolby Atmos Renderer, Apple Music infrastructure) places them into a target playback system — whether a cinema, a home theater, or headphones — at delivery time.
+
+| | Ambisonics | Dolby Atmos |
+|---|---|---|
+| **Spatial approach** | Field-based (B-format) | Object-based (audio + metadata) |
+| **Speaker independence** | Yes — one file, many layouts | No — render per target system |
+| **Hardware dependency** | Free, open, any speaker array | Requires licensed Dolby renderer |
+| **Headphone playback** | Binaural decoder (free tools) | Dolby binaural renderer |
+| **Typical tools** | ICST Plugins, IEM, ATK | Pro Tools + Dolby Renderer, Logic, Nuendo |
+| **Cost** | Free, open source | Commercial licensing for distribution |
+| **Typical use** | Art, research, installation, archiving, live | Film, streaming music, gaming, consumer media |
+| **Archivability** | High — B-format is format-agnostic | Medium — tied to Dolby ecosystem |
+
+**When to use which:**
+Ambisonics is the better choice when speaker-layout independence, open archiving, or research and artistic use matter. Dolby Atmos is the standard for commercial streaming delivery (Tidal, Apple Music, Amazon Music) and film — if you need to reach those channels, Atmos is the practical requirement.
+
+The two are not mutually exclusive: some workflows produce Ambisonics for archiving and artistic use, and separately deliver a Dolby Atmos render for streaming.
 
 <a id="where-to-start-at-icst"></a>
-## 6. Where To Start at ICST
+## 8. Where To Start at ICST
 
 - For Beginners: [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
 - Start with the [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) for DAW workflows.
@@ -105,12 +141,13 @@ Dolby Atmos and Apple Spatial Audio pursue a similar goal, but are typically obj
 - Explore [Ascolta](/blog/ascolta/) for listening practice and references.
 - Continue with tutorials and articles in the [Blog & Tutorials](/post/).
 
-Ambisonics 101: Ten Essential Questions Answered  
-[Watch on YouTube](https://www.youtube.com/watch?v=95Hr3T5whsU&t=6s)
+**Ambisonics 101: Ten Essential Questions Answered**
+
+{{< youtube 95Hr3T5whsU >}}
 
 ---
 <a id="ambisonics-glossary"></a>
-## 7. Ambisonics Glossary (Quick Reference)
+## 9. Ambisonics Glossary (Quick Reference)
 - **B-Format**: The Ambisonics signal representation that stores spatial information for later decoding.  
 - **Ambisonics Order**: Spatial resolution level (e.g. 1st, 3rd, 7th order). Higher order usually means finer localization.  
 - **Encoder**: Converts a mono/stereo source into Ambisonics (B-format) with spatial position data.  
