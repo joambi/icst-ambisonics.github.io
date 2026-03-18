@@ -86,7 +86,7 @@ Das lässt sich auch als Gegenüberstellung zweier Denkweisen beschreiben: In ei
     <p>Toolchains, Decoder, Encoder, REAPER-Workflows, B-Format-Archivierung und die Frage, wie ein Stück zwischen Studio, Dome und binauraler Fassung bestehen kann.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/de/composing-in-ambisonics/08-werkzeuge-und-software/">Software-Überblick</a>
-      <a class="hero__link" href="/de/composing-in-ambisonics/07-studiopraxis-am-icst/">Studiopraxis</a>
+      <a class="hero__link" href="/de/composing-in-ambisonics/07-studiopraxis-am-icst/">Studiopraxis in Ambisonics</a>
     </div>
   </section>
   <section class="home-card">
@@ -111,7 +111,7 @@ Das lässt sich auch als Gegenüberstellung zweier Denkweisen beschreiben: In ei
 
 - **Für den ersten Einstieg**: `Geschichte von Ambisonics: FOA und HOA` → `Die 10 Fragen im 3D-Raum` → `Die Akustische Gestalt eines Klanges`
 - **Für Stückentwicklung und Komposition**: `Die 10 Fragen` → `Spatial Counterpoint` → `Raumparameter als kompositorisches Material` → `Vergleich kompositorischer Raumstrategien`
-- **Für Produktion und Setup**: `Werkzeuge und Software` → `Studiopraxis am ICST`
+- **Für Produktion und Setup**: `Werkzeuge und Software` → `Studiopraxis in Ambisonics am ICST`
 
 Diese Lesepfade sind bewusst **nicht identisch** mit der numerischen Kapitelreihenfolge. Sie markieren unterschiedliche Einstiege: Der erste Pfad fuehrt ueber Wahrnehmung und Grundbegriffe in das Thema ein, waehrend der zweite direkt auf kompositorische Anwendung und Stueckentwicklung zielt.
 

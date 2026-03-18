@@ -1,5 +1,5 @@
 ---
-title: "Studiopraxis am ICST"
+title: "Studiopraxis in Ambisonics am ICST"
 description: "Workflow-Perspektiven aus dem ICST-Kompositionsstudio: Session-Architektur, B-Format-Archivierung, Monitoring und Multi-Format-Lieferung."
 date: 2026-01-01T00:00:00
 weight: 80
@@ -7,7 +7,7 @@ draft: false
 translationKey: "composing-studio-practice"
 ---
 
-Sobald räumliche Parameter als kompositorische Kategorien bestimmt sind, stellt sich die praktische Frage, wie sie im Studio organisiert werden. Komponieren in Ambisonics besteht nicht allein darin, einzelne räumliche Gesten zu wählen; es erfordert einen Workflow, in dem Skizzieren, räumliche Steuerung, Monitoring, Archivierung und Lieferformate aufeinander abgestimmt sind. Studiopraxis am ICST ist daher weniger als starres Produktionsschema zu verstehen denn als arbeitsweise Methode, räumliche Komposition über längere Arbeitsphasen konsistent zu entwickeln.
+Sobald räumliche Parameter als kompositorische Kategorien bestimmt sind, stellt sich die praktische Frage, wie sie im Studio organisiert werden. Komponieren in Ambisonics besteht nicht allein darin, einzelne räumliche Gesten zu wählen; es erfordert einen Workflow, in dem Skizzieren, räumliche Steuerung, Monitoring, Archivierung und Lieferformate aufeinander abgestimmt sind. Studiopraxis in Ambisonics am ICST ist daher weniger als starres Produktionsschema zu verstehen denn als arbeitsweise Methode, räumliche Komposition über längere Arbeitsphasen konsistent zu entwickeln.
 
 ## Vom Parameter zur Session
 
@@ -114,6 +114,6 @@ Diese Dokumentation unterstützt nicht nur spätere Rekonstruktion, sondern sch�
 
 ## Kompositorische Konsequenz
 
-Studiopraxis am ICST meint damit nicht allein das korrekte Bedienen von Ambisonics-Plugins. Sie meint eine Arbeitsweise, in der kompositorische Idee, räumliche Steuerung, Monitoring, Archivierung und Übertragbarkeit zusammengedacht werden. Das Studio wird damit zum Ort, an dem räumliche Form nicht nur technisch realisiert, sondern methodisch erprobt, stabilisiert und verfeinert werden kann.
+Studiopraxis in Ambisonics am ICST meint damit nicht allein das korrekte Bedienen von Ambisonics-Plugins. Sie meint eine Arbeitsweise, in der kompositorische Idee, räumliche Steuerung, Monitoring, Archivierung und Übertragbarkeit zusammengedacht werden. Das Studio wird damit zum Ort, an dem räumliche Form nicht nur technisch realisiert, sondern methodisch erprobt, stabilisiert und verfeinert werden kann.
 
 Genau darin liegt der Unterschied zwischen einem bloß produktionsorientierten und einem kompositorischen Umgang mit Ambisonics: Das entscheidende Kriterium ist nicht eine einzelne Dekodierung, sondern die Kohärenz räumlicher Relationen innerhalb des Werkes selbst. Studiopraxis dient damit nicht bloß der Realisierung eines Stückes, sondern seiner begrifflichen und wahrnehmungsmäßigen Klärung.

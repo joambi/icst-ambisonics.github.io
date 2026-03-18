@@ -60,7 +60,7 @@ This also opens specific aesthetic possibilities: narrative movement through spa
     <p>Toolchains, decoders, encoders, REAPER workflows, B-format archiving, and the question of how a piece survives between studio, dome, and binaural presentation.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/composing-in-ambisonics/08-tools-and-software/">Software Overview</a>
-      <a class="hero__link" href="/composing-in-ambisonics/07-studio-practice-at-icst/">Studio Practice</a>
+      <a class="hero__link" href="/composing-in-ambisonics/07-studio-practice-at-icst/">Ambisonics Studio Practice</a>
     </div>
   </section>
   <section class="home-card">
@@ -77,7 +77,7 @@ This also opens specific aesthetic possibilities: narrative movement through spa
 
 - **For a first entry point**: `History of Ambisonics: FOA and HOA` → `10 Questions in 3D Space` → `The Acoustic Gestalt of a Sound`
 - **For piece development and composition**: `10 Questions` → `Spatial Counterpoint` → `Spatial Parameters as Compositional Material` → `Comparing Compositional Spatial Strategies`
-- **For production and setup**: `Tools and Software` → `Studio Practice at ICST`
+- **For production and setup**: `Tools and Software` → `Ambisonics Studio Practice at ICST`
 
 These reading paths are intentionally **not identical** with the numerical chapter order. They mark different entry routes: the first path leads into the topic through perception and basic concepts, while the second moves more directly toward compositional application and piece development.
 
@@ -94,5 +94,5 @@ These reading paths are intentionally **not identical** with the numerical chapt
 - **Spatial Counterpoint**: spatial voice-leading, case studies, and ICST/REAPER workflows
 - **Spatial Parameters as Compositional Material**: B-format, perception, and the compositional role of azimuth, elevation, distance, diffusion, and movement
 - **Comparing Compositional Spatial Strategies**: how different modes of spatial organization function as formal principles
-- **Studio Practice at ICST**: session architecture, monitoring, B-format archiving, and multi-format delivery
+- **Ambisonics Studio Practice at ICST**: session architecture, monitoring, B-format archiving, and multi-format delivery
 - **Tools and Software**: an overview of key Ambisonics toolchains
