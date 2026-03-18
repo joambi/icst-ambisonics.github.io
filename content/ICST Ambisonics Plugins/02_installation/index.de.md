@@ -91,7 +91,9 @@ Wenn die Vorlagen fehlen, prüfe zusätzlich die oben genannten gemeinsamen Temp
 ## Weiterführende Referenzen
 
 - Projekt-Wiki: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
-- Installationsvideo: [ICST Ambisonics Plugins – 01 – How to Install](https://www.youtube.com/watch?v=2GXb5tbqW1Y&t=11s)
+**Installationsvideo: ICST Ambisonics Plugins – 01 – How to Install**
+
+{{< youtube 2GXb5tbqW1Y >}}
 
 ## Nächster Schritt
 

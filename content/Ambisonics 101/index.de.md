@@ -199,8 +199,9 @@ Beide schliessen sich nicht aus: Manche Workflows produzieren Ambisonics für di
 - Höre in [Ascolta](/blog/ascolta/) und nutze die Hörbeispiele als Referenz.
 - Gehe weiter mit den [Anleitungen & Tutorials](/post/).
 
-Ambisonics 101: Ten Essential Questions Answered  
-[Auf YouTube ansehen](https://www.youtube.com/watch?v=95Hr3T5whsU&t=6s)
+**Ambisonics 101: Ten Essential Questions Answered**
+
+{{< youtube 95Hr3T5whsU >}}
 
 ---
 <a id="begriffssammlung-ambisonics"></a>

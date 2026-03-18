@@ -91,7 +91,9 @@ If the templates are missing, also check the shared template folders listed abov
 ## Related references
 
 - Project wiki: <https://github.com/schweizerweb/icst-ambisonics-plugins/wiki>
-- Installation video: [ICST Ambisonics Plugins – 01 – How to Install](https://www.youtube.com/watch?v=2GXb5tbqW1Y&t=11s)
+**Installation video: ICST Ambisonics Plugins – 01 – How to Install**
+
+{{< youtube 2GXb5tbqW1Y >}}
 
 ## Next step
 
