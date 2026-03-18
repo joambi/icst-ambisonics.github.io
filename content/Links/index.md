@@ -38,7 +38,9 @@ tags: []
 - [audiosignal.co.uk/Resources/Surround\_sound\_psychoacoustics\_A4.pdf](https://www.audiosignal.co.uk/Resources/Surround_sound_psychoacoustics_A4.pdf)
 - [audiosignal.co.uk/Resources/Surround\_sound\_from\_2-channel\_stereo\_A4.pdf](https://www.audiosignal.co.uk/Resources/Surround_sound_from_2-channel_stereo_A4.pdf)
 
-Video: ['Into The Soundfield' - Michael Gerzon & Ambisonics at Oxford (Official Documentary 2018) - YouTube](https://www.youtube.com/watch?v=X23hZNoSkUs)
+**'Into The Soundfield' — Michael Gerzon & Ambisonics at Oxford (Documentary 2018)**
+
+{{< youtube X23hZNoSkUs >}}
 ### 3rd-party tools:
 
 - [Ambisonic Toolkit (ATK) for REAPER](http://www.ambisonictoolkit.net/documentation/reaper/)    

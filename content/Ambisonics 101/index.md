@@ -48,6 +48,7 @@ slug: ambisonics-101
     <li><a href="#headphones-vs-loudspeakers">Headphones vs. Loudspeakers</a></li>
     <li><a href="#immersive-vs-atmos">How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?</a></li>
     <li><a href="#where-to-start-at-icst">Where To Start at ICST</a></li>
+    <li><a href="#ambisonic-microphones">Ambisonic Microphones — A Practical Introduction</a></li>
     <li><a href="#ambisonics-glossary">Ambisonics Glossary (Quick Reference)</a></li>
   </ol>
 </div>
@@ -61,7 +62,7 @@ Ambisonics is a format-agnostic method for describing a spatial 3D sound field. 
 
 Stereo is familiar: two channels, left and right. It creates the illusion of sounds positioned along a horizontal line between two speakers. Add a centre channel and surrounds, and you get 5.1 or 7.1 — but each time you change the loudspeaker layout, you have to re-mix from scratch.
 
-Ambisonics takes a different approach. Instead of mixing directly for a speaker layout, you first encode the spatial sound field as B-format (see section 3 below). That representation captures where sound comes from across the full 3D sphere — left, right, front, back, above, below. The decoding to actual speakers happens later, and the same file can be decoded for completely different setups without touching the mix.
+Ambisonics takes a different approach. Instead of mixing directly for a speaker layout, you first encode the spatial sound field as [B-format](#gl-b-format) (see section 3 below). That representation captures where sound comes from across the full 3D sphere — left, right, front, back, above, below. The decoding to actual speakers happens later, and the same file can be decoded for completely different setups without touching the mix.
 
 | | Stereo | Ambisonics |
 |---|---|---|
@@ -82,7 +83,7 @@ It describes a sound-field state around a listening point using pressure and dir
 - `W` is the omnidirectional component, i.e. the pressure/presence in the room.
 - `X`, `Y`, and `Z` are directional components along three axes (front-back, left-right, up-down), indicating where the signal comes from.
 
-In the strict classical sense, “B-format” refers to this four-channel first-order format (`W`, `X`, `Y`, `Z`). In an extended sense, the term is also used for higher-order Ambisonics, where all Ambisonics coefficients up to a given order are represented as separate audio channels.
+In the strict classical sense, “B-format” refers to this four-channel first-order format (`W`, `X`, `Y`, `Z`). In an extended sense, the term is also used for [higher-order Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics), where all Ambisonics coefficients up to a given order are represented as separate audio channels.
 
 This format can then be decoded to different target systems such as headphones, stereo, or loudspeaker arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
 
@@ -105,12 +106,12 @@ Common setups range from small studio rings and dome-like height configurations 
 
 <a id="headphones-vs-loudspeakers"></a>
 ## 6. Headphones vs. Loudspeakers
-Headphones use binaural rendering and are practical for editing, checking translation, and remote collaboration. Loudspeakers provide a physical spatial field in the room and remain essential for composition, depth perception, and artistic evaluation.
+Headphones use [binaural rendering](#gl-binaural) and are practical for editing, checking translation, and remote collaboration. Loudspeakers provide a physical spatial field in the room and remain essential for composition, depth perception, and artistic evaluation.
 
 <a id="immersive-vs-atmos"></a>
 ## 7. How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?
 
-Immersive audio is a broad term for any 3D audio approach that places sound around — and above — the listener rather than just left and right. Ambisonics, Dolby Atmos, and Apple Spatial Audio all pursue this goal, but they do so in fundamentally different ways.
+Immersive audio is a broad term for any 3D audio approach that places sound around — and above — the listener rather than just left and right. Ambisonics, [Dolby Atmos](#gl-dolby-atmos), and [Apple Spatial Audio](https://en.wikipedia.org/wiki/Spatial_audio) all pursue this goal, but they do so in fundamentally different ways.
 
 **Ambisonics is field-based.** The sound field is encoded as a mathematical representation (B-format) that is independent of any specific speaker layout. The same B-format file can be decoded later for a studio ring, a concert dome, headphones, or stereo. The playback system does not need to be decided at production time.
 
@@ -146,18 +147,74 @@ The two are not mutually exclusive: some workflows produce Ambisonics for archiv
 {{< youtube 95Hr3T5whsU >}}
 
 ---
+<a id="ambisonic-microphones"></a>
+## 9. Ambisonic Microphones — A Practical Introduction
+
+An Ambisonic microphone captures the full-sphere sound field in a single recording. Unlike standard stereo or surround microphones, it uses a tetrahedral arrangement of four (or more) capsules and outputs a raw format called [**A-format**](#gl-a-format), which must be converted to B-format before use in your DAW.
+
+### A-format and the encoding step
+
+Most tetrahedral microphones output A-format: four raw capsule signals in a tetrahedral geometry. This must be encoded into B-format (W, X, Y, Z for first order) before working with the recording in Ambisonics. Encoding is usually handled by dedicated software from the manufacturer — for example the SoundField by Rode plugin, Zylia Studio, or the Sennheiser A-B Ambisonics plugin — or by third-party tools such as [Harpex](https://harpex.net/) or the IEM AllRADecoder.
+
+Some microphones (e.g. the Zoom H3-VR) handle this internally and output B-format directly.
+
+### Common microphones
+
+| Microphone | Order | Capsules | Output | Notes |
+|---|---|---|---|---|
+| [Zoom H3-VR](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h3-vr/) | 1st | 4 | A- or B-format | Entry-level, integrated encoder, good for field recording |
+| [Sennheiser Ambeo VR Mic](https://www.sennheiser.com/en-us/catalog/products/microphones/ambeo-vr-mic/ambeo-vr-mic-506071) | 1st | 4 | A-format | Widely used, requires Sennheiser A-B Ambisonics plugin for encoding |
+| [Rode NT-SF1](https://rode.com/en/microphones/studio-condenser/nt-sf1) | 1st | 4 | A-format | SoundField by Rode software included |
+| [Core Sound TetraMic](https://www.core-sound.com/TetraMic/1.php) | 1st | 4 | A-format | Long-established, widely used in field recording and research |
+| [Zylia ZM-1](https://www.zylia.co/zylia-zm-1-microphone.html) | 3rd | 19 | A-format | Higher-order, includes Zylia Studio software, good spatial resolution |
+| [mh acoustics Eigenmike em32](https://mhacoustics.com/products) | 4th | 32 | A-format | Professional/research grade, very high spatial resolution |
+
+### In the ICST workflow
+
+Any B-format recording — whether from a first-order or [HOA](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics) microphone — can be loaded directly into a REAPER session and decoded with the ICST AmbiDecoder. For HOA recordings, make sure the Ambisonics order in the decoder matches the recording order.
+
+---
 <a id="ambisonics-glossary"></a>
-## 9. Ambisonics Glossary (Quick Reference)
-- **B-Format**: The Ambisonics signal representation that stores spatial information for later decoding.  
-- **Ambisonics Order**: Spatial resolution level (e.g. 1st, 3rd, 7th order). Higher order usually means finer localization.  
-- **Encoder**: Converts a mono/stereo source into Ambisonics (B-format) with spatial position data.  
-- **Decoder**: Renders B-format to a target playback system (speaker array, binaural headphone output, etc.).  
-- **Channel Count**: Number of channels used in your Ambisonics path; must be consistent across routing.  
-- **Speaker Layout**: Physical loudspeaker geometry used for decoding and playback.  
-- **Binaural**: Headphone rendering method that simulates spatial direction cues.  
-- **OSC (Open Sound Control)**: Message protocol used to control spatial parameters in real time.  
-- **Yaw / Pitch / Roll**: Rotation axes used for orientation and motion control in 3D space.  
-- **Azimuth / Elevation**: Angle coordinates used to describe horizontal and vertical source direction.  
+## 10. Ambisonics Glossary (Quick Reference)
+
+- <a id="gl-a-format"></a>**A-format** — Raw signal from a tetrahedral Ambisonics microphone: four capsule signals in tetrahedral geometry. Must be encoded to B-format before use in a DAW.
+  → [Wikipedia: Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#A-format)
+
+- <a id="gl-b-format"></a>**B-format** — The Ambisonics carrier signal: encodes the spatial sound field as spherical harmonics. First order = 4 channels (W, X, Y, Z); seventh order = 64 channels.
+  → [Wikipedia: Ambisonics](https://en.wikipedia.org/wiki/Ambisonics) | [ICST Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
+
+- <a id="gl-ambix"></a>**ambiX** — Standardised Ambisonics file format (ACN channel ordering, SN3D normalisation); the de-facto standard for HOA exchange and archiving.
+  → [ambiX Specification (IEM)](https://ambisonics.iem.at/proceedings-of-the-ambisonics-symposium-2011/ambix-a-suggested-ambisonics-format)
+
+- <a id="gl-order"></a>**Ambisonics Order** — Spatial resolution level: 1st order = 4 channels, 3rd = 16, 7th = 64. Higher order means finer localisation and more channels.
+  → [Wikipedia: Higher-order Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics) | [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
+
+- <a id="gl-encoder"></a>**Encoder** — Converts a mono/stereo source with position data (azimuth, elevation, distance) into B-format.
+  → [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
+
+- <a id="gl-decoder"></a>**Decoder** — Renders B-format to a target playback system: loudspeaker array or binaural.
+  → [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
+
+- <a id="gl-channel-count"></a>**Channel Count** — Number of channels in the Ambisonics signal path; must remain consistent across the entire routing.
+  → [ICST Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
+
+- <a id="gl-speaker-layout"></a>**Speaker Layout** — Physical loudspeaker geometry to which the decoder renders B-format.
+  → [Wikipedia: Ambisonic reproduction systems](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
+
+- <a id="gl-binaural"></a>**Binaural / HRTF** — Headphone rendering via Head-Related Transfer Functions (HRTFs): simulates spatial directional cues without loudspeakers. Enables Ambisonics monitoring on any headphone.
+  → [Wikipedia: Binaural recording](https://en.wikipedia.org/wiki/Binaural_recording) | [Wikipedia: HRTF](https://en.wikipedia.org/wiki/Head-related_transfer_function)
+
+- <a id="gl-dolby-atmos"></a>**Dolby Atmos** — Object-based 3D audio format: sound sources are stored as audio objects with position metadata; a licensed renderer places them in the target system (cinema, home theatre, streaming services).
+  → [dolby.com](https://www.dolby.com/technologies/dolby-atmos/) | [Wikipedia: Dolby Atmos](https://en.wikipedia.org/wiki/Dolby_Atmos)
+
+- <a id="gl-osc"></a>**OSC (Open Sound Control)** — Network protocol (UDP/IP) for real-time control of spatial parameters.
+  → [opensoundcontrol.stanford.edu](https://opensoundcontrol.stanford.edu/) | [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
+
+- <a id="gl-yaw"></a>**Yaw / Pitch / Roll** — Rotation axes in 3D space: Yaw = horizontal (left/right), Pitch = vertical (up/down), Roll = tilt.
+  → [Wikipedia: Euler angles](https://en.wikipedia.org/wiki/Euler_angles)
+
+- <a id="gl-azimuth"></a>**Azimuth / Elevation** — Polar coordinates for source direction: Azimuth = horizontal angle (0°–360°), Elevation = vertical angle (−90° to +90°).
+  → [Wikipedia: Horizontal coordinate system](https://en.wikipedia.org/wiki/Horizontal_coordinate_system)  
 
 ---
 

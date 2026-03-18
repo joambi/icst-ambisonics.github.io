@@ -25,8 +25,9 @@ Weitere Informationen zur Installation:
 https://ambisonics.ch/icst-ambisonics-plugins/
 Hinweise zur **Installation der ICST Ambisonics Plugins** finden Sie auf dieser Blog-Seite:  
 [ambisonics.ch](https://ambisonics.ch/icst-ambisonics-plugins/)
-Alternativ bietet dieses Video eine anschauliche Schritt-für-Schritt-Einführung:  
-<https://www.youtube.com/watch?v=2GXb5tbqW1Y>
+Alternativ bietet dieses Video eine anschauliche Schritt-für-Schritt-Einführung:
+
+{{< youtube 2GXb5tbqW1Y >}}
 Wiki ICST Ambisonics Plugins:
 https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
 
@@ -62,9 +63,9 @@ Settings:
 | Mute selected source/speaker | Ctrl + Shift + m |     |
 | Solo selected source/speaker | Ctrl + Shift + s |     |
 
-> [!example]
-> Video ICST Ambisonics Plugins Overview
-> https://www.youtube.com/watch?v=xkauhHMYt5k
+**Video: ICST Ambisonics Plugins Overview**
+
+{{< youtube xkauhHMYt5k >}}
 
 > [!info]
 > Wiki ICST Ambisonics Plugins

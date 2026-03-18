@@ -45,6 +45,10 @@ Durch OSC-Ein- und Ausgang sind die Encoder auch für controllerbasierte und alg
 | **A** | MonoEncoder für eine einzelne Quelle |
 | **B** | MultiEncoder für bis zu 64 Quellen pro Spur |
 
+**Video: ICST Ambisonics Plugins – 02 – AmbiEncoder**
+
+{{< youtube -U0t8sjeTsw >}}
+
 ## Benutzeroberfläche
 
 ### Hauptbedienelemente
@@ -83,9 +87,9 @@ Nutze Gruppen, wenn die Szene als zusammenhängendes Objekt funktionieren soll u
 - **OSC-Eingang und JavaScript** empfangen externe Steuernachrichten
 - **OSC-Ausgang** sendet den Encoder-Zustand an Controller oder externe Anwendungen
 
-> [!example]
-> Video: ICST Ambisonics Plugins – 03 – OSC Teil 1  
-> https://youtu.be/7_s-jaUQa14?si=NM8TPRrigY_egDfC
+**Video: ICST Ambisonics Plugins – 03 – OSC Teil 1**
+
+{{< youtube 7_s-jaUQa14 >}}
 
 Für Setup und Syntax:
 

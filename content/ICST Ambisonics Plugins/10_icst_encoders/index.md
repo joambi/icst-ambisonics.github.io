@@ -45,6 +45,10 @@ OSC input and output make the encoders usable in controller-based and algorithmi
 | **A** | MonoEncoder for one source |
 | **B** | MultiEncoder for up to 64 sources per track |
 
+**Video: ICST Ambisonics Plugins – 02 – AmbiEncoder**
+
+{{< youtube -U0t8sjeTsw >}}
+
 ## User interface
 
 ### Main controls
@@ -83,9 +87,9 @@ Use grouping when the scene should behave as a coherent object rather than as un
 - **OSC input and JavaScript** receive external control messages
 - **OSC output** sends encoder state to controllers or external applications
 
-> [!example]
-> Video: ICST Ambisonics Plugins – 03 – OSC Part 1  
-> https://youtu.be/7_s-jaUQa14?si=NM8TPRrigY_egDfC
+**Video: ICST Ambisonics Plugins – 03 – OSC Part 1**
+
+{{< youtube 7_s-jaUQa14 >}}
 
 For setup and syntax:
 
