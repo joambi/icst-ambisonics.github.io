@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="380" viewBox="0 0 1380 380" role="img" aria-labelledby="title desc">
+  <title id="title">Monitoring separation</title>
+  <desc id="desc">Separate speaker and binaural monitoring paths from the same B-format bus with a warning not to run both unintentionally.</desc>
+  <style>
+    .bg { fill: #14212b; }
+    .panel { fill: #1d2f3a; stroke: #6086b4; stroke-width: 3; rx: 18; }
+    .warn { fill: #3a2722; stroke: #d9826b; stroke-width: 3; rx: 18; }
+    .text { fill: #f2f5f7; font: 600 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .sub { fill: #b6c3cc; font: 400 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .small { fill: #cdd7de; font: 400 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .labelBlue { fill: #9fd0ff; font: 700 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .05em; }
+    .labelGreen { fill: #8fc59a; font: 700 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .05em; }
+    .labelWarn { fill: #ffb09a; font: 700 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .04em; }
+    .arrowBlue { stroke: #9fd0ff; stroke-width: 6; fill: none; stroke-linecap: round; }
+    .arrowGreen { stroke: #8fc59a; stroke-width: 6; fill: none; stroke-linecap: round; stroke-dasharray: 11 9; }
+  </style>
+  <defs>
+    <marker id="blueHead" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto">
+      <path d="M0,0 L4,2 L0,4 z" fill="#9fd0ff"/>
+    </marker>
+    <marker id="greenHead" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto">
+      <path d="M0,0 L4,2 L0,4 z" fill="#8fc59a"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1380" height="380"/>
+
+  <rect class="panel" x="110" y="128" width="220" height="110"/>
+  <text class="text" x="220" y="172" text-anchor="middle">B-Format Bus</text>
+  <text class="sub" x="220" y="198" text-anchor="middle">
+    <tspan x="220" dy="0">single source</tspan>
+    <tspan x="220" dy="22">of truth</tspan>
+  </text>
+
+  <rect class="panel" x="460" y="52" width="230" height="112"/>
+  <text class="text" x="575" y="96" text-anchor="middle">Speaker Decoder</text>
+  <text class="sub" x="575" y="130" text-anchor="middle">preset matches room</text>
+
+  <rect class="panel" x="460" y="196" width="230" height="112"/>
+  <text class="text" x="575" y="240" text-anchor="middle">Binaural Decoder</text>
+  <text class="sub" x="575" y="274" text-anchor="middle">headphone validation</text>
+
+  <rect class="panel" x="800" y="52" width="230" height="112"/>
+  <text class="text" x="915" y="96" text-anchor="middle">Speaker Output</text>
+  <text class="sub" x="915" y="122" text-anchor="middle">
+    <tspan x="915" dy="0">array / room</tspan>
+    <tspan x="915" dy="22">path</tspan>
+  </text>
+
+  <rect class="panel" x="800" y="196" width="230" height="112"/>
+  <text class="text" x="915" y="240" text-anchor="middle">Headphones</text>
+  <text class="sub" x="915" y="266" text-anchor="middle">
+    <tspan x="915" dy="0">binaural</tspan>
+    <tspan x="915" dy="22">check path</tspan>
+  </text>
+
+  <rect class="warn" x="1090" y="88" width="220" height="182"/>
+  <text class="labelWarn" x="1200" y="126" text-anchor="middle">Warning</text>
+  <text class="small" x="1200" y="162" text-anchor="middle">
+    <tspan x="1200" dy="0">Do not run both</tspan>
+    <tspan x="1200" dy="24">monitoring paths</tspan>
+    <tspan x="1200" dy="24">in parallel</tspan>
+    <tspan x="1200" dy="24">unless you intend</tspan>
+    <tspan x="1200" dy="24">to compare.</tspan>
+  </text>
+
+  <path class="arrowBlue" d="M330 168 C390 168 392 108 460 108" marker-end="url(#blueHead)"/>
+  <path class="arrowGreen" d="M330 198 C390 198 392 252 460 252" marker-end="url(#greenHead)"/>
+  <path class="arrowBlue" d="M690 108 H800" marker-end="url(#blueHead)"/>
+  <path class="arrowGreen" d="M690 252 H800" marker-end="url(#greenHead)"/>
+
+  <text class="labelBlue" x="575" y="28" text-anchor="middle">Room listening path</text>
+  <text class="labelGreen" x="575" y="346" text-anchor="middle">
+    <tspan x="575" dy="0">Separate headphone path for validation,</tspan>
+    <tspan x="575" dy="22">not accidental doubling</tspan>
+  </text>
+</svg>

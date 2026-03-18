@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+  <title id="title">Recommended setup order</title>
+  <desc id="desc">Linear setup order for new Ambisonics sessions from plugin installation to automation and rendering.</desc>
+  <style>
+    .bg { fill: #14212b; }
+    .step { fill: #1d2f3a; stroke: #6086b4; stroke-width: 3; rx: 18; }
+    .current { fill: #243f4d; stroke: #8fc59a; stroke-width: 3; rx: 18; }
+    .num { fill: #9fd0ff; font: 700 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .title { fill: #f2f5f7; font: 600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .sub { fill: #b6c3cc; font: 400 17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .arrow { stroke: #9fd0ff; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .footer { fill: #8fc59a; font: 600 19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .02em; }
+  </style>
+  <defs>
+    <marker id="flowHead" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto">
+      <path d="M0,0 L4,2 L0,4 z" fill="#9fd0ff"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1280" height="340"/>
+
+  <g transform="translate(30,56)">
+    <rect class="step" x="0" y="0" width="150" height="132"/>
+    <text class="num" x="20" y="32">1</text>
+    <text class="title" x="75" y="58" text-anchor="middle">Install</text>
+    <text class="sub" x="75" y="92" text-anchor="middle">
+      <tspan x="75" dy="0">plugins +</tspan>
+      <tspan x="75" dy="22">channels</tspan>
+    </text>
+
+    <rect class="step" x="190" y="0" width="150" height="132"/>
+    <text class="num" x="210" y="32">2</text>
+    <text class="title" x="265" y="58" text-anchor="middle">Create</text>
+    <text class="sub" x="265" y="92" text-anchor="middle">
+      <tspan x="265" dy="0">HOA bus +</tspan>
+      <tspan x="265" dy="22">decoder</tspan>
+    </text>
+
+    <rect class="step" x="380" y="0" width="150" height="132"/>
+    <text class="num" x="400" y="32">3</text>
+    <text class="title" x="455" y="58" text-anchor="middle">Insert</text>
+    <text class="sub" x="455" y="92" text-anchor="middle">
+      <tspan x="455" dy="0">one source</tspan>
+      <tspan x="455" dy="22">and test</tspan>
+    </text>
+
+    <rect class="step" x="570" y="0" width="150" height="132"/>
+    <text class="num" x="590" y="32">4</text>
+    <text class="title" x="645" y="58" text-anchor="middle">Load</text>
+    <text class="sub" x="645" y="92" text-anchor="middle">
+      <tspan x="645" dy="0">decoder</tspan>
+      <tspan x="645" dy="22">preset</tspan>
+    </text>
+
+    <rect class="step" x="760" y="0" width="150" height="132"/>
+    <text class="num" x="780" y="32">5</text>
+    <text class="title" x="835" y="58" text-anchor="middle">Add</text>
+    <text class="sub" x="835" y="92" text-anchor="middle">
+      <tspan x="835" dy="0">binaural</tspan>
+      <tspan x="835" dy="22">path</tspan>
+    </text>
+
+    <rect class="current" x="950" y="0" width="250" height="132"/>
+    <text class="num" x="970" y="32">6</text>
+    <text class="title" x="1075" y="58" text-anchor="middle">Expand</text>
+    <text class="sub" x="1075" y="88" text-anchor="middle">
+      <tspan x="1075" dy="0">automation</tspan>
+      <tspan x="1075" dy="21">recording</tspan>
+      <tspan x="1075" dy="21">export</tspan>
+    </text>
+
+    <path class="arrow" d="M150 66 H190" marker-end="url(#flowHead)"/>
+    <path class="arrow" d="M340 66 H380" marker-end="url(#flowHead)"/>
+    <path class="arrow" d="M530 66 H570" marker-end="url(#flowHead)"/>
+    <path class="arrow" d="M720 66 H760" marker-end="url(#flowHead)"/>
+    <path class="arrow" d="M910 66 H950" marker-end="url(#flowHead)"/>
+  </g>
+
+  <text class="footer" x="640" y="265" text-anchor="middle">
+    <tspan x="640" dy="0">Build the session in this order to reduce</tspan>
+    <tspan x="640" dy="24">invisible routing mistakes and decoder mismatch.</tspan>
+  </text>
+</svg>

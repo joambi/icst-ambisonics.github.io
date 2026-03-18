@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+  <title id="title">ICST Ambisonics signal flow</title>
+  <desc id="desc">Signal flow from source to encoder, B-format bus, decoder, speakers, and binaural headphones.</desc>
+  <style>
+    .bg { fill: #14212b; }
+    .panel { fill: #1d2f3a; stroke: #6086b4; stroke-width: 3; rx: 18; }
+    .accent { fill: #243f4d; stroke: #7aa6d8; stroke-width: 2; rx: 16; }
+    .text { fill: #f2f5f7; font: 600 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .sub { fill: #b6c3cc; font: 400 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .small { fill: #8fa4b2; font: 400 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .arrow { stroke: #9fd0ff; stroke-width: 5; fill: none; stroke-linecap: round; }
+    .arrow-dashed { stroke: #8fc59a; stroke-width: 4; fill: none; stroke-dasharray: 9 9; stroke-linecap: round; }
+    .label { fill: #9fd0ff; font: 600 18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+    .label2 { fill: #8fc59a; font: 600 20px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing: .03em; }
+  </style>
+  <defs>
+    <marker id="arrowHead" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto">
+      <path d="M0,0 L4,2 L0,4 z" fill="#9fd0ff"/>
+    </marker>
+    <marker id="arrowHeadGreen" markerWidth="4" markerHeight="4" refX="3.2" refY="2" orient="auto">
+      <path d="M0,0 L4,2 L0,4 z" fill="#8fc59a"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1280" height="340"/>
+
+  <rect class="panel" x="50" y="108" width="180" height="104"/>
+  <text class="text" x="140" y="148" text-anchor="middle">Source</text>
+  <text class="sub" x="140" y="182" text-anchor="middle">mono / stereo track</text>
+
+  <rect class="panel" x="290" y="108" width="190" height="104"/>
+  <text class="text" x="385" y="148" text-anchor="middle">AmbiEncoder</text>
+  <text class="sub" x="385" y="174" text-anchor="middle">
+    <tspan x="385" dy="0">mono or</tspan>
+    <tspan x="385" dy="22">multi encoder</tspan>
+  </text>
+
+  <rect class="panel" x="540" y="108" width="210" height="104"/>
+  <text class="text" x="645" y="148" text-anchor="middle">B-Format Bus</text>
+  <text class="sub" x="645" y="174" text-anchor="middle">
+    <tspan x="645" dy="0">HOA /</tspan>
+    <tspan x="645" dy="22">Bformat Master</tspan>
+  </text>
+
+  <rect class="panel" x="810" y="54" width="180" height="104"/>
+  <text class="text" x="900" y="94" text-anchor="middle">Decoder</text>
+  <text class="sub" x="900" y="128" text-anchor="middle">speaker playback</text>
+
+  <rect class="panel" x="810" y="182" width="180" height="104"/>
+  <text class="text" x="900" y="222" text-anchor="middle">Binaural</text>
+  <text class="sub" x="900" y="248" text-anchor="middle">
+    <tspan x="900" dy="0">headphone</tspan>
+    <tspan x="900" dy="22">decoder</tspan>
+  </text>
+
+  <rect class="accent" x="1050" y="54" width="180" height="104"/>
+  <text class="text" x="1140" y="94" text-anchor="middle">Speakers</text>
+  <text class="sub" x="1140" y="128" text-anchor="middle">room playback</text>
+
+  <rect class="accent" x="1050" y="182" width="180" height="104"/>
+  <text class="text" x="1140" y="222" text-anchor="middle">Headphones</text>
+  <text class="sub" x="1140" y="248" text-anchor="middle">
+    <tspan x="1140" dy="0">binaural</tspan>
+    <tspan x="1140" dy="22">monitoring</tspan>
+  </text>
+
+  <path class="arrow" d="M230 160 H290" marker-end="url(#arrowHead)"/>
+  <path class="arrow" d="M480 160 H540" marker-end="url(#arrowHead)"/>
+  <path class="arrow" d="M750 146 C775 146 785 106 810 106" marker-end="url(#arrowHead)"/>
+  <path class="arrow-dashed" d="M750 174 C775 174 785 234 810 234" marker-end="url(#arrowHeadGreen)"/>
+  <path class="arrow" d="M990 106 H1050" marker-end="url(#arrowHead)"/>
+  <path class="arrow-dashed" d="M990 234 H1050" marker-end="url(#arrowHeadGreen)"/>
+
+  <text class="label" x="645" y="86" text-anchor="middle">Main signal path</text>
+  <text class="label2" x="955" y="310" text-anchor="middle">
+    <tspan x="955" dy="0">Parallel headphone path:</tspan>
+    <tspan x="955" dy="24">not accidental double monitoring</tspan>
+  </text>
+</svg>

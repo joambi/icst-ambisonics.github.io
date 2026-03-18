@@ -1,15 +1,22 @@
 ---
 title: Best Practices
+description: "Praktische Regeln für stabile Ambisonics-Sessions in REAPER, inklusive Signalfluss, Monitoring-Trennung, Exportdisziplin und Setup-Reihenfolge."
 date: 2025-01-01T00:00:00
 weight: 150
 draft: false
 ---
+
+**Für wen:** Level: Beginner bis Intermediate | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.
 
 Kurze, belastbare Regeln für stabile Ambisonics-Sessions in REAPER: sauberes Routing, reproduzierbare Decoder-Setups und weniger Fehlersuche vor Aufnahme, Probe oder Render.
 
 ## 1. Session-Baseline zuerst festlegen
 
 Bevor Quellen hinzugefügt werden, sollte die Session-Struktur feststehen. Routing nachträglich anzupassen ist eine verlässliche Fehlerquelle.
+
+![Signalfluss-Übersicht](/images/best-practices-signal-flow.svg)
+
+*Grundlogik der Session: ein klarer Signalpfad von der Quelle über den B-Format-Bus zum Decoder, ergänzt durch bewusst getrennte Monitoring-Zweige.*
 
 - Alle Ambisonics-relevanten Tracks standardmässig auf `64` Kanäle setzen.
 - Die Signalkette früh und klar definieren: `Source → HOA Bus → Decoder`.
@@ -27,11 +34,23 @@ Routing-Fehler in Ambisonics-Sessions sind oft unsichtbar — bis die Wiedergabe
 
 Der Decoder übersetzt das B-Format-Feld in Lautsprechersignale. Ein Mismatch zwischen Preset und realer Hardware ist die häufigste Ursache für falsche Lokalisation.
 
+![Monitoring-Trennung](/images/best-practices-monitoring-separation.svg)
+
+*Beide Hörpfade greifen auf denselben B-Format-Master zu, sollen aber im Betrieb bewusst getrennt bleiben.*
+
 - Immer das Preset laden, das zum realen Lautsprecher-Setup passt — vor dem Hören oder Aufnehmen.
 - Die Lautsprecherreihenfolge nach dem Laden eines neuen Presets mit der Testfunktion des Decoders verifizieren.
 - Lautsprecher-Monitoring und binaurales Monitoring getrennt halten: den HOA-Bus zum Decoder für Lautsprecherwiedergabe und zu einem separaten binauralen Decoder (z. B. IEM BinauralDecoder, SPARTA) für Kopfhörerwiedergabe routen. Beide Pfade sollen nie unbeabsichtigt parallel laufen.
 
 Für komplexe Setups mit Höhenebenen oder separaten Subgruppen den **[ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)** verwenden, der bis zu vier unabhängige Decoder-Einheiten auf dasselbe B-Format-Eingangssignal anwendet. Jede Einheit klar nach ihrer Zone benennen (z. B. `Mid Ring`, `Top Layer`, `Sub`).
+
+## Template-Referenz
+
+Das aktuelle ICST-Default-Template bildet viele dieser Regeln bereits praktisch ab: ein zentraler B-Format-Pfad, getrennte Monitoring-Zweige und eine klare Unterscheidung zwischen Source-, Bus- und Decoder-Ebene.
+
+![ICST Default-Template Referenz](/images/icst-ambiplugins-default-template.png)
+
+*Reales REAPER-Beispiel aus dem ICST Default-Template. Nutze diese Ansicht als praktische Referenz für Source-Tracks, B-Format-Master, Decoder und den getrennten binauralen Pfad.*
 
 ## 4. Monitoring und Verifikation nicht überspringen
 
@@ -52,6 +71,42 @@ Sorgfalt beim Export verhindert Formatverwirrung bei der Abgabe an andere System
 - Einen konsistenten Dateinamen verwenden, der Ordnung und Take dokumentiert: `scene01_O5_take03.wav`.
 - Exportformat und Channel-Ordering in einer Notizendatei neben dem gerenderten Material dokumentieren.
 
+### REAPER-Tutorial: B-Format korrekt rendern
+
+Nutze diese kurze REAPER-Sequenz für einen sauberen Ambisonics-Export:
+
+1. Den Track **Bformat Master** auf **Solo** setzen.
+2. **Datei -> Rendern** öffnen.
+3. **Quelle: Stems (ausgewählte Tracks)** oder den entsprechenden spurbezogenen Render-Modus wählen.
+4. **Bformat Master** als Render-Ziel auswählen.
+5. **Sample Rate** auf `48000` setzen.
+6. Als Format **Multichannel WAV / RF64** wählen.
+7. Die **Kanalanzahl** passend zur HOA-Ordnung setzen:
+   - `4` Kanäle für FOA / 1. Ordnung
+   - `9` Kanäle für 2. Ordnung
+   - `16` Kanäle für 3. Ordnung
+   - bis `64` Kanäle für 7. Ordnung
+8. Zuerst eine kurze Testdatei rendern, danach wieder in REAPER importieren und über Decoder oder binauralen Pfad kontrollieren.
+
+### Meta-Text in REAPER
+
+Halte eine kurze Exportnotiz in **Project Settings -> Notes** oder in einer Session-Textdatei neben dem Render fest. Das erleichtert Übergabe und spätere Verifikation deutlich.
+
+Vorgeschlagener Meta-Text:
+
+```text
+Render: B-format master
+Format: ambiX (ACN / SN3D)
+Sample rate: 48000 Hz
+Channels: 64
+HOA order: 7th
+Source track: BFORMAT_MASTER
+Decoder preset used for monitoring: [speaker preset name]
+Binaural check: yes / no
+Filename: scene01_O7_take01.wav
+Notes: rendered from B-format master, not decoder output
+```
+
 ## 6. Projekt-Hygiene
 
 Eine Session, die einfach weitergegeben werden kann, ist auch eine Session, die sich sechs Monate später problemlos wieder öffnen lässt.
@@ -71,6 +126,10 @@ Eine Session, die einfach weitergegeben werden kann, ist auch eine Session, die 
 - ambiX- und FuMa-Channel-Ordering zwischen Produktion und Abgabe verwechselt.
 
 ## 8. Empfohlene Reihenfolge für neue Setups
+
+![Empfohlene Setup-Reihenfolge](/images/best-practices-setup-order.svg)
+
+*Setup als Reihenfolge denken, nicht als Parallel-Baustelle. Die meisten vermeidbaren Fehler entstehen, wenn Schritte 4 bis 6 begonnen werden, bevor Schritte 1 bis 3 stabil sind.*
 
 1. Plugins installieren und REAPER-Kanalzahlen prüfen.
 2. HOA-Bus und Decoder-Struktur anlegen.
