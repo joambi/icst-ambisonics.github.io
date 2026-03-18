@@ -58,6 +58,6 @@ Telefon: +41 (0)43 446 55 00
 
 https://www.zhdk.ch/forschung/icst
 
-[www.zhdk.ch](http://www.zhdk.ch/ "http://www.zhdk.ch/")
+[www.zhdk.ch](http://www.zhdk.ch/)
 
 ----
