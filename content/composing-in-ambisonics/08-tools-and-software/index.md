@@ -2,7 +2,7 @@
 title: "Tools and Software"
 description: "An overview of important Ambisonics toolchains for composition, production, and research."
 date: 2026-01-01T00:00:00
-weight: 90
+weight: 89
 draft: false
 translationKey: "composing-tools-software"
 ---

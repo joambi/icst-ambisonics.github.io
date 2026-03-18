@@ -4,7 +4,7 @@ description: Wie lässt sich Raumklang aufschreiben? Überblick über
   Notationsansätze, vom grafischen Klang-Zeit-Diagramm bis zur praktischen
   Raumpartitur im ICST/REAPER-Kontext.
 date: 2026-01-01T00:00:00
-weight: "77"
+weight: 77
 draft: false
 translationKey: composing-spatial-notation
 ---

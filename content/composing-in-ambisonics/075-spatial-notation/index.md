@@ -4,7 +4,7 @@ description: How do you write down spatial sound? An overview of notation
   approaches, from graphic sound-time diagrams to a practical spatial score in
   the ICST/REAPER context.
 date: 2026-01-01T00:00:00
-weight: "77"
+weight: 77
 draft: false
 translationKey: composing-spatial-notation
 ---

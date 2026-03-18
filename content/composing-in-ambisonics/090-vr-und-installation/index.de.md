@@ -2,7 +2,7 @@
 title: "Ambisonics in VR und Installation"
 description: "Raumklang in Klanginstallationen und VR-Kontexten: Head Tracking, interaktives Hören, Installation ohne Sweet Spot und kompositorische Besonderheiten."
 date: 2026-01-01T00:00:00
-weight: 90
+weight: 91
 draft: false
 translationKey: "composing-vr-installation"
 ---
