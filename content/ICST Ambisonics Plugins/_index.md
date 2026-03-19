@@ -1,6 +1,6 @@
 ---
 title: "ICST Ambisonics Plugins"
-description: "Full documentation for the ICST Ambisonics Plugins — VST3/AU/LV2 tools for encoding and decoding Ambisonics B-Format in REAPER. Free and open source."
+description: "Free, open-source VST3/AU/LV2 Ambisonics plugin suite for REAPER — MonoEncoder, MultiEncoder, AmbiDecoder, MultiDecoder. Higher Order Ambisonics up to 7th order."
 date: 2025-01-20T02:35:00
 type: docs
 cascade:

@@ -46,9 +46,9 @@ languageCode: de
 
 ### Tools von Drittanbietern:
 
-- [Ambisonic Toolkit (ATK) für REAPER](http://www.ambisonictoolkit.net/documentation/reaper/)
-- [IEM Plugin Suite](https://plugins.iem.at/)
-- [Sparta Plugins](https://leomccormack.github.io/sparta-site/)
+- [Ambisonic Toolkit (ATK) für REAPER](http://www.ambisonictoolkit.net/documentation/reaper/) — JSFX-Plugins für REAPER und SuperCollider; starke Signalverarbeitungsgrundlage, forschungsorientiert
+- [IEM Plugin Suite](https://plugins.iem.at/) — kostenlose HOA-Plugin-Suite bis 7. Ordnung; VST3/AU/LV2 für alle Plattformen
+- [Sparta Plugins](https://leomccormack.github.io/sparta-site/) — Forschungs-Plugins für räumliche Audioverarbeitung bis 10. Ordnung von Leo McCormack
 - [Wigware](https://www.brucewiggins.co.uk/?page_id=78)
 - [aXPlugin Suite](https://www.ssa-plugins.com/)
 - [DearVR Ambi Micro](https://www.dear-reality.com/products/dearvr-ambi-micro)
@@ -74,6 +74,7 @@ languageCode: de
 - [IEM](https://iem.at/en)
 - [IRCAM](https://forum.ircam.fr/projects/detail/spat/)
 - [ICST](https://www.zhdk.ch/forschung/icst)
+- [Positive Ambisonics](https://www.positiveambisonics.org) — Ambisonics Artist-Residency in Tayvallich, Schottland; Schwerpunkt Feldaufnahme und 3D-Klang in natürlicher Umgebung
 - [CCRMA](https://ccrma.stanford.edu/blogs/mzeligs/ambisonics-in-21st-century-review-of-spatial-audio-techniques)
 - [NOTAM](https://notam.no/en/studio/studio-3/)
 - [Derby.ac.uk](https://www.derby.ac.uk/)

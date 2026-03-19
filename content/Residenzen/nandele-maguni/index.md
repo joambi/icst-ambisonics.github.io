@@ -1,5 +1,6 @@
 ---
 title: Nandele Maguni
+description: "Nandele Maguni — ICST Studio Residency at ZHdK Zurich, June–July 2025. New release 'Kampfumo' based on field recordings from Maputo, Mozambique."
 date: 2025-07-04T13:08:00
 slug: nandele-maguni
 aliases:

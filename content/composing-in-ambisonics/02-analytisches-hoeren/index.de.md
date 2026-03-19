@@ -3,7 +3,7 @@ title: "Analytisches Hören"
 description: "Räumliche Musik mit kompositorischer Absicht hören: Smalleys Raumkategorien, Parameter-Analyse und analytisches Hörprotokoll für Komponist:innen."
 date: 2026-01-01T00:00:00
 weight: 20
-draft: false
+draft: true
 translationKey: "composing-analytical-listening"
 hidden_in_nav: true
 ---

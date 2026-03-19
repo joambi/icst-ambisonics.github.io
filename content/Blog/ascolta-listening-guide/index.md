@@ -131,6 +131,10 @@ Denis Smalley's concept of *space-form* (1997, 2007) offers one of the most usef
 
 For a compositional perspective on the same methodology — including detailed case studies and psychoacoustic analysis — see the [Work Analyses chapter](/composing-in-ambisonics/085-work-analyses/).
 
+<div class="hero__links">
+  <a class="hero__link" href="/composing-in-ambisonics/085-work-analyses/">Read the Work Analyses chapter</a>
+</div>
+
 #### Five analytical questions
 
 Bring these five questions to each piece. You do not need to answer all of them in one listening — pick one or two per work.

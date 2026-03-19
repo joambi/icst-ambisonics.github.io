@@ -3,7 +3,7 @@ title: "Psychoacoustic Foundations of Spatial Perception"
 description: "How the auditory system localises spatial sound — and what composers can derive from it."
 date: 2026-01-01T00:00:00
 weight: 55
-draft: false
+draft: true
 translationKey: "composing-psychoacoustics"
 ---
 

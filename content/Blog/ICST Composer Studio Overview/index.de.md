@@ -9,7 +9,7 @@ languageCode: de
 
 **Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
-#### **Studio für Komposition**
+## Studio für Komposition
 
 Das ICST-Kompositionsstudio ist ein Surround-Studio mit 17 Geithain-Lautsprechern (8+5+4) und Stereo-Monitoring. Ein Mac Pro bietet verschiedene Software für Sequencing, HD-Recording, Sound-Tools, MAX MSP/Jitter und PD. Das Studio eignet sich besonders für die Produktion von Ambisonics- und Surround-Musik. Es verbindet aktuelle Technologien mit musikalischer Praxis und legt den Fokus auf Klangforschung, Computermusik und Medienkunst. Das Studio unterstützt die Produktion und Komposition neuer Werke elektronischer Musik sowie Klang- und Medienkunst.
 

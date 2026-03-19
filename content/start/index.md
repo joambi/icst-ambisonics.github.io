@@ -1,15 +1,43 @@
 ---
-title: "ICST Ambisonics Plugins: Start"
-description: "The guided start to the ICST Ambisonics Plugins: in four steps from first concepts to a working spatial audio session in REAPER."
+title: "Get Started"
+description: "New to ICST Ambisonics? Find your entry point — plugin setup for REAPER, Max/MSP externals, the Ambisonics 101 primer, or the studio residency programme."
 date: 2026-01-01T00:00:00
 draft: false
 ---
 
+What would you like to explore? Choose a starting point below.
+
+<div class="icst-pillars" style="grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin-bottom: 2rem;">
+  <a class="icst-pillar icst-pillar--plugins" href="/icst-ambisonics-plugins/">
+    <span class="icst-pillar__icon">🎛️</span>
+    <strong class="icst-pillar__title">Plugins for REAPER</strong>
+    <span class="icst-pillar__desc">Encode, decode, spatialise. Free VST3/AU/LV2 suite — encoder, decoder, monitor, animator.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--plugins" href="/icst-ambisonics-tools/">
+    <span class="icst-pillar__icon">🧊</span>
+    <strong class="icst-pillar__title">Max Externals</strong>
+    <span class="icst-pillar__desc">Live spatialisation and algorithmic sound in Max/MSP. Runs natively in Max 8.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--residency" href="/composing-in-ambisonics/">
+    <span class="icst-pillar__icon">🎼</span>
+    <strong class="icst-pillar__title">Studio Practice</strong>
+    <span class="icst-pillar__desc">Composing in 3D space — spatial parameters, room capture, binaural delivery, notation.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--ascolta" href="/blog/ascolta/">
+    <span class="icst-pillar__icon">🎧</span>
+    <strong class="icst-pillar__title">Concerts & ASCOLTA</strong>
+    <span class="icst-pillar__desc">Acousmatic listening sessions and concerts at ZHdK — spatial works performed live.</span>
+  </a>
+</div>
+
+---
+
+<div class="home-section-header home-section-header--software" style="margin-bottom:1.6rem;">
+<p class="home-section-label">🎛️ New to the ICST Ambisonics Plugins?</p>
+<p class="home-section-lead">Follow the four steps below — from first concepts to a working Ambisonics session in REAPER. Estimated time: 1–2 hours. All tools are free and open source.</p>
+</div>
+
 Level: Beginner | **Audience:** Composer, student, producer, technician.
-
-New to spatial audio or to the ICST plugins? This page is meant as a calm first entry point: no prior Ambisonics experience, no advanced setup knowledge, and no studio access required.
-
-Follow the four steps below in order and you will go from first concepts to a working Ambisonics session in REAPER. Each step is short, practical, and designed to build confidence before the next one.
 
 <div class="home-cards">
   <section class="home-card">
@@ -28,11 +56,6 @@ Follow the four steps below in order and you will go from first concepts to a wo
       <a class="hero__link" href="/icst-ambisonics-plugins/02_installation/">Install plugins</a>
     </div>
   </section>
-</div>
-
-<div class="home-section-header home-section-header--software" style="margin-bottom:1.6rem;">
-<p class="home-section-label">🎛️ Your path to spatial audio in REAPER</p>
-<p class="home-section-lead">Estimated time: 1–2 hours end to end. All tools are free and open source.</p>
 </div>
 
 <ol class="onboarding-steps onboarding-steps--software onboarding-steps--large">
@@ -82,4 +105,30 @@ Prefer an offline version or want to print the guide?
 
 <div class="hero__links">
   <a class="hero__link" href="/downloads/icst-ambisonics-start-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;Download as PDF</a>
+</div>
+
+---
+
+<div class="home-section-header home-section-header--studio" style="margin-top:2rem;margin-bottom:1.2rem;">
+<p class="home-section-label">🎼 Ready to compose?</p>
+<p class="home-section-lead">Once the plugins are running, the next step is spatial thinking — how to use movement, depth, and room acoustics as compositional material.</p>
+</div>
+
+<div class="home-cards">
+  <section class="home-card">
+    <h4>🎼 Composing in Ambisonics</h4>
+    <p>From analytical listening and spatial counterpoint to room capture and binaural delivery — a curated guide for composers working in 3D audio.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/composing-in-ambisonics/">Open Composing Guide</a>
+      <a class="hero__link" href="/composing-in-ambisonics/02-analytical-listening/">Start: Analytical Listening</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🏛️ Work in the ICST Studio</h4>
+    <p>Apply for a residency at the ICST Composition Studio — 31-speaker Ambisonics system, ZHdK Zurich, supported by ICST.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/residenzen/">Studio Residencies</a>
+      <a class="hero__link" href="/for-residents/">Resident Guide</a>
+    </div>
+  </section>
 </div>

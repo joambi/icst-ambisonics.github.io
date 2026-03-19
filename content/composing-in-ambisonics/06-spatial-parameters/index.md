@@ -3,7 +3,7 @@ title: "Spatial Parameters as Compositional Material"
 description: "Azimuth, elevation, distance, and diffusion as form-shaping parameters."
 date: 2026-01-01T00:00:00
 weight: 70
-draft: false
+draft: true
 translationKey: "composing-spatial-parameters"
 ---
 

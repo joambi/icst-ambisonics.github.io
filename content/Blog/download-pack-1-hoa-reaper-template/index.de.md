@@ -5,7 +5,7 @@ date: 2026-03-12T09:00:00+01:00
 weight: -1
 draft: false
 group: "Downloads"
-tags: ["download", "reaper", "hoa", "template", "checkliste"]
+tags: ["download", "reaper", "hoa", "template", "checklist"]
 ---
 
 **Für wen:** Level: Beginner bis Intermediate | Zielgruppe: Komponist:in, Studierende, Techniker:in.

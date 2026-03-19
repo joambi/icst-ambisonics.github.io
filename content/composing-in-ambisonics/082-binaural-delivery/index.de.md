@@ -3,7 +3,7 @@ title: "Binaural-Rendering und Kopfhörer-Delivery"
 description: "Wie ein Ambisonics-Mix zu Binaural konvertiert wird, HRTFs ausgewählt und bewertet werden, während der Komposition monitoriert wird und ein kopfhörerkompatibles Master geliefert wird."
 date: 2026-01-01T00:00:00
 weight: 82
-draft: false
+draft: true
 translationKey: "composing-binaural-delivery"
 languageCode: de
 ---

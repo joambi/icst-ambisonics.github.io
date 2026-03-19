@@ -3,7 +3,7 @@ title: "Ambisonics in VR and Installation"
 description: "Spatial sound in sound installations and VR contexts: head tracking, interactive listening, installation without sweet spot, and compositional specifics."
 date: 2026-01-01T00:00:00
 weight: 91
-draft: false
+draft: true
 translationKey: "composing-vr-installation"
 ---
 

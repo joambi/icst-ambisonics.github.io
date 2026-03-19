@@ -3,7 +3,7 @@ title: "Die Akustische Gestalt eines Klanges"
 description: "Warum Raum zur Gestalt eines Klangobjekts gehört und nicht nur zu seiner Wiedergabe."
 date: 2026-01-01T00:00:00
 weight: 50
-draft: false
+draft: true
 translationKey: "composing-acoustic-gestalt"
 ---
 

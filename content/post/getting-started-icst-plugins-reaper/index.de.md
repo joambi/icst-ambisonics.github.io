@@ -5,7 +5,7 @@ date: 2026-03-08T14:10:00+01:00
 year: 2026
 month: 2026-03
 weight: 23
-tags: ["tutorial", "reaper", "ambiencoder", "einstieg", "workflow"]
+tags: ["tutorial", "reaper", "ambiencoder", "getting-started", "workflow"]
 key_points:
   - "Erste funktionierende Spatial-Audio-Session in REAPER Schritt für Schritt aufbauen"
   - "Strukturierte Checkliste vom Plugin-Install bis zum Binaural-Monitoring"

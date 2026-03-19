@@ -1,6 +1,6 @@
 baseURL = 'https://ambisonics.ch/'
 languageCode = 'en-us'
-title = 'The ICST Ambisonics Site'
+title = 'ICST Ambisonics'
 theme = 'anatole'
 enableEmoji = true
 buildFuture = false
@@ -21,10 +21,18 @@ authorName = "Johannes Schuett"
 email = "johannes.schuett@zhdk.ch"
 rssFullContent = true
 singleDateFormat = "2006-01-02"
-description = "Free ambisonics plugins for REAPER, a spatial composition guide, and artist residencies at ICST / ZHdK Zurich. Open source, studio-tested."
+description = "Free VST3/AU/LV2 ambisonics plugins for REAPER, open-source Max/MSP externals for spatial audio, and an artist residency programme. ICST / ZHdK Zurich."
 descriptionattribution = "by ICST / Zurich University of the Arts"
 descriptionattributionurl = "https://www.zhdk.ch/forschung/icst"
+descriptionLines = [
+  "Free ambisonics plugins for REAPER,",
+  "a spatial composition guide,",
+  "and artist residencies."
+]
+descriptionAttributionLines = ["ICST / Zurich University of the Arts"]
 profilePicture = "images/AmbiPlugin_logo.gif"
+# Default Open Graph / social sharing image (1200×630+ recommended)
+images = ["images/composing_in_ambisonics.png"]
 mainSections = ["blog", "post"]
 favicon = "favicons/"
 contentratio = 0.7
@@ -87,11 +95,11 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     weight = 101
     url = "/ambisonics-101/"
 
-    [[menu.main]]
-    name = "For Composers"
-    parent = "tutorials"
-    weight = 102
-    url = "/composing-in-ambisonics/"
+    # [[menu.main]]
+    # name = "For Composers"
+    # parent = "tutorials"
+    # weight = 102
+    # url = "/composing-in-ambisonics/"
 
     [[menu.main]]
     name = "Videos"

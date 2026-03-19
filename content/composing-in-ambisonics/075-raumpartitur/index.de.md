@@ -5,7 +5,7 @@ description: Wie lässt sich Raumklang aufschreiben? Überblick über
   Raumpartitur im ICST/REAPER-Kontext.
 date: 2026-01-01T00:00:00
 weight: 77
-draft: false
+draft: true
 translationKey: composing-spatial-notation
 ---
 

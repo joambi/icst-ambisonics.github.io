@@ -8,6 +8,8 @@ languageCode: de
 
 Du planst eine Residency oder einen Studiobesuch im ICST Kompositionsstudio? Folge diesen vier Schritten, um gut vorbereitet anzukommen und die Zeit mit dem 31-Kanal-Ambisonics-System optimal zu nutzen.
 
+<a class="hero__link" href="/downloads/icst-resident-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;Als PDF herunterladen</a>
+
 <div class="home-section-header home-section-header--studio" style="margin-bottom:1.6rem;">
 <p class="home-section-label">🏛️ Dein Weg durch das ICST Studio</p>
 <p class="home-section-lead">Schritt 1–2 vor der Ankunft lesen. Schritt 3–4 für die Zeit im Studio.</p>

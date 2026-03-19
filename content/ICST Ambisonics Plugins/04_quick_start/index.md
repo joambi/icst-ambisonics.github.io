@@ -1,7 +1,7 @@
 ---
 weight: 20
-title: Quick Start
-description: "Fast reference guide for opening the ICST MultiEncoder project template in REAPER and verifying a first working Ambisonics session."
+title: "Quick Start: ICST Ambisonics Plugins in REAPER"
+description: "Get Ambisonics running in REAPER in minutes — open the MultiEncoder template, verify audio routing, and produce your first spatialised session with the ICST plugins."
 date: 2025-01-28T14:31:00
 ---
 

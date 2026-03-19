@@ -119,7 +119,7 @@ Das folgende Raster hilft, wesentliche räumliche Parameter systematisch zu beob
 | **Schichtung** | Wie viele räumliche Ebenen sind gleichzeitig aktiv? | eine, zwei, mehrere, Überlagerung |
 | **Envelopment** | Werde ich von Klang umhüllt, oder höre ich ihn von außen? | keine, gering, deutlich, vollständig |
 
-## Übergeordnete Analysefragen
+### Übergeordnete Analysefragen
 
 - Welche räumliche Strategie dominiert: Stimmtrennung, Bewegungsdramaturgie, Einhüllung oder Perspektive?
 - Wie beeinflusst die räumliche Ebene die formale Struktur des Stücks?
@@ -128,6 +128,20 @@ Das folgende Raster hilft, wesentliche räumliche Parameter systematisch zu beob
 {{< notice update >}}
 Versuche nicht, alle Parameter gleichzeitig zu verfolgen. Wähle pro Durchgang lieber ein bis zwei Aspekte aus und höre diese besonders bewusst.
 {{< /notice >}}
+
+**Formatvergleich** (wenn dasselbe Stück in unterschiedlichen Formaten erscheint)
+
+Wenn ein Stück in Stereo und in Ambisonics oder in Surround und in HOA präsentiert wird, hilft diese Notizstruktur:
+
+| Dimension | Stereo / Surround | Ambisonics |
+|---|---|---|
+| Lokalisationspräzision | | |
+| Tiefenwirkung | | |
+| Envelopment | | |
+| Quellenbewegung | | |
+| Auffälligster Unterschied | | |
+
+Wenn du die Tabelle direkt nach jeder Version ausfüllst, überschreibt der zweite Eindruck nicht so leicht die Erinnerung an den ersten.
 
 ### 3. Ästhetisch-emotionale Ebene: Wirkung ernst nehmen
 
@@ -210,6 +224,10 @@ Wenn du diese Beobachtungen theoretisch vertiefen möchtest, bieten sich zwei An
 Pierre Schaeffers Konzept der *écoute réduite* beschreibt ein Hören, das Klänge zunächst unabhängig von deren Ursache oder Quelle auf ihre Eigenschaften untersucht. Diese Haltung richtet die Aufmerksamkeit speziell auf das akustische Objekt selbst und ist auch für die räumliche Analyse hilfreich.
 
 Denis Smalley entwickelt in *Space-form and the acousmatic image* (2007) verschiedene Kategorien wie *perspectival space*, *source-bonded space* und *spectral space*. Diese Begriffe beziehen sich direkt auf das hier beschriebene Beobachtungsraster. Seine frühere *Spectromorphology* (1997) beschreibt, wie sich spektrale Merkmale und deren Veränderungen im Laufe der Zeit zu bestimmten Formen verbinden und daraus räumliche Kategorien entstehen.
+
+<div class="hero__links">
+  <a class="hero__link" href="/de/composing-in-ambisonics/085-werkanalysen/">Kapitel Werkanalysen lesen</a>
+</div>
 
 ## Literatur
 

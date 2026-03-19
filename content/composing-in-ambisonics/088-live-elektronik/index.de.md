@@ -3,7 +3,7 @@ title: "Live-Elektronik und Performance in Ambisonics"
 description: "Ambisonics im Aufführungskontext: Echtzeit-Raumverarbeitung, Instrument und Live-Elektronik, Performance-Workflow und spezifische Herausforderungen."
 date: 2026-01-01T00:00:00
 weight: 88
-draft: false
+draft: true
 translationKey: "composing-live-electronics"
 ---
 

@@ -63,7 +63,12 @@
     &-description {
       margin: 0 1em;
       p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.15rem;
         line-height: 1.55;
+        margin: 0;
       }
     }
 
@@ -121,5 +126,16 @@
   &__social-icon {
     font-size: 2rem;
     line-height: 1;
+  }
+
+  &__description-line {
+    display: block;
+  }
+
+  &__description-attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.45rem;
   }
 }

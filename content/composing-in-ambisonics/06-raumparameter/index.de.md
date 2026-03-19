@@ -3,7 +3,7 @@ title: "Raumparameter als kompositorisches Material"
 description: "Azimut, Elevation, Distanz und Diffusion als formbildende Parameter."
 date: 2026-01-01T00:00:00
 weight: 70
-draft: false
+draft: true
 translationKey: "composing-spatial-parameters"
 ---
 

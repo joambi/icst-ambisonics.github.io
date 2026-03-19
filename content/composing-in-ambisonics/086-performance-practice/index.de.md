@@ -3,7 +3,7 @@ title: "Konzert- und Aufführungspraxis"
 description: "Technischer Rider, Vorabkommunikation mit dem Venue, Soundcheck-Logistik und häufige Fallstricke bei Ambisonics-Fixed-Media-Aufführungen."
 date: 2026-01-01T00:00:00
 weight: 86
-draft: false
+draft: true
 translationKey: "composing-performance-practice"
 languageCode: de
 ---

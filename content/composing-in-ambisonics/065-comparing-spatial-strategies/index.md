@@ -3,7 +3,7 @@ title: "Comparing Compositional Spatial Strategies"
 description: "How different modes of spatial organization function as formal principles."
 date: 2026-01-01T00:00:00
 weight: 75
-draft: false
+draft: true
 translationKey: "composing-comparing-spatial-strategies"
 ---
 

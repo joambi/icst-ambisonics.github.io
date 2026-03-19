@@ -6,8 +6,6 @@ weight: 140
 description: "Alle Download-Links für die ICST Ambisonics Plugins, die ICST Ambisonics Tools für Max/MSP sowie Templates, Presets und Anleitungen."
 ---
 
-Level: Referenz | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.
-
 Nutze diese Seite, wenn du aktuelle Plugin-Releases, Max/MSP-Tools oder ergänzende Pakete suchst, ohne dich durch die restliche Dokumentation zu klicken.
 
 ## ICST Ambisonics Plugins
@@ -19,7 +17,7 @@ Die zentrale Plugin-Suite für Encoding und Decoding von Ambisonics B-Format in 
 
 Enthält: AmbiEncoder (Mono + Multi), AmbiDecoder, MultiDecoder, Animator und OSC-Unterstützung.
 
-Für die Installationsanleitung siehe [Installation](/icst-ambisonics-plugins/02_installation/).
+Für die Installationsanleitung siehe [Installation](/de/icst-ambisonics-plugins/02_installation/).
 
 ## ICST Ambisonics Tools (Max/MSP)
 
@@ -31,7 +29,7 @@ Hinweis: Die ICST Ambisonics Tools sind ein separates Paket von den REAPER-Plugi
 
 ## Templates, Presets und Anleitungen
 
-Für REAPER-Session-Templates, Lautsprecher-Presets, Max-Patches, Ableton-Live-Templates und druckbare PDF-Anleitungen siehe den **[Downloads-Hub](/blog/downloads/)**.
+Für REAPER-Session-Templates, Lautsprecher-Presets, Max-Patches, Ableton-Live-Templates und druckbare PDF-Anleitungen siehe den **[Downloads-Hub](/de/blog/downloads/)**.
 
 ## YouTube-Kanal
 

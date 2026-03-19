@@ -26,6 +26,71 @@ frontmatter_block() {
   ' "$file"
 }
 
+translation_key() {
+  local file="$1"
+  frontmatter_block "$file" | awk '
+    /^[[:space:]]*translationKey:[[:space:]]*/ {
+      line=$0
+      sub(/^[[:space:]]*translationKey:[[:space:]]*/, "", line)
+      gsub(/^"/, "", line)
+      gsub(/"$/, "", line)
+      print line
+      exit
+    }
+  '
+}
+
+find_translation_by_key() {
+  local key="$1"
+  local pattern="$2"
+  [[ -n "$key" ]] || return 1
+
+  while IFS= read -r candidate; do
+    local candidate_key
+    candidate_key="$(translation_key "$candidate")"
+    if [[ "$candidate_key" == "$key" ]]; then
+      echo "$candidate"
+      return 0
+    fi
+  done < <(rg --files content | rg "$pattern")
+
+  return 1
+}
+
+resolve_de_counterpart() {
+  local en_file="$1"
+  local de_file=""
+  local key
+  key="$(translation_key "$en_file")"
+
+  if [[ -n "$key" ]]; then
+    de_file="$(find_translation_by_key "$key" '/index\.de\.md$' || true)"
+  fi
+
+  if [[ -z "$de_file" ]]; then
+    de_file="${en_file/index.md/index.de.md}"
+  fi
+
+  echo "$de_file"
+}
+
+resolve_en_counterpart() {
+  local de_file="$1"
+  local en_file=""
+  local key
+  key="$(translation_key "$de_file")"
+
+  if [[ -n "$key" ]]; then
+    en_file="$(find_translation_by_key "$key" '/index\.md$' || true)"
+  fi
+
+  if [[ -z "$en_file" ]]; then
+    en_file="${de_file/index.de.md/index.md}"
+  fi
+
+  echo "$en_file"
+}
+
 frontmatter_keys() {
   local file="$1"
   frontmatter_block "$file" | awk '
@@ -67,12 +132,18 @@ callout_signature() {
 table_signature() {
   local file="$1"
   awk '
-    BEGIN{fm=0; prev=""; table_open=0}
+    BEGIN{fm=0; prev=""; table_open=0; in_study_card=0}
     /^---[[:space:]]*$/ {if (fm<2) {fm++; next}}
     fm<2 {next}
     {
       line=$0
-      if (line ~ /^[[:space:]]*\|[-:[:space:]]+\|[| -:[:space:]]*$/) {
+      if (line ~ /<div class="study-card">/) {
+        in_study_card=1
+      }
+      if (line ~ /<\/div>/ && in_study_card==1) {
+        in_study_card=0
+      }
+      if (in_study_card==0 && line ~ /^[[:space:]]*\|[-:[:space:]]+\|[| -:[:space:]]*$/) {
         header=prev
         gsub(/^[[:space:]]*\|/, "", header)
         gsub(/\|[[:space:]]*$/, "", header)
@@ -93,7 +164,8 @@ cta_signature() {
     BEGIN{fm=0}
     /^---[[:space:]]*$/ {if (fm<2) {fm++; next}}
     fm<2 {next}
-    tolower($0) ~ /hero__links|hero__link|cta[-_ ]/ { print "cta" }
+    tolower($0) ~ /hero__links|hero__link|(^|[^a-z])cta[-_ ]/ { found=1 }
+    END { if (found) print "cta" }
   ' "$file"
 }
 
@@ -182,13 +254,13 @@ check_pair() {
 
 while IFS= read -r en_file; do
   is_ignored "$en_file" && continue
-  de_file="${en_file/index.md/index.de.md}"
+  de_file="$(resolve_de_counterpart "$en_file")"
   check_pair "$en_file" "$de_file"
 done < <(rg --files content | rg '/index\.md$')
 
 while IFS= read -r de_file; do
   is_ignored "$de_file" && continue
-  en_file="${de_file/index.de.md/index.md}"
+  en_file="$(resolve_en_counterpart "$de_file")"
   if ! [[ -f "$en_file" ]]; then
     echo "Missing EN counterpart for: $de_file"
     errors=$((errors + 1))

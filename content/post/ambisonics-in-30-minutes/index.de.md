@@ -5,7 +5,7 @@ date: 2026-03-09T09:00:00+01:00
 year: 2026
 month: 2026-03
 weight: 24
-tags: ["tutorial", "reaper", "ambisonics", "einstieg", "workflow"]
+tags: ["tutorial", "reaper", "ambisonics", "getting-started", "workflow"]
 key_points:
   - "Encoder → B-Format-Bus → Decoder-Routing von Grund auf in REAPER aufbauen"
   - "Häufige Fehler beim ersten Setup erkennen und beheben"

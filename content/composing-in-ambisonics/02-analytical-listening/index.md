@@ -3,7 +3,7 @@ title: "Analytical Listening"
 description: "Hearing spatial music with compositional intent: Smalley's space-form categories, parameter analysis, and an analytical listening framework for composers."
 date: 2026-01-01T00:00:00
 weight: 20
-draft: false
+draft: true
 translationKey: "composing-analytical-listening"
 hidden_in_nav: true
 ---

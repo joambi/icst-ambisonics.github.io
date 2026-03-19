@@ -1,19 +1,12 @@
 <head>
   <meta charset="utf-8" />
   <title>
-    {{ if (eq .Site.Params.reversepagetitle true) }}
-      {{ with .Title }}
-        {{ . }} |
-      {{ end }}
-      {{- or .Site.Params.authorName .Site.Params.author.name .Site.Params.author -}}
-    {{ else }}
-      {{- or .Site.Params.authorName .Site.Params.author.name .Site.Params.author -}}{{ with .Title }}
-        |
-        {{ . }}
-      {{ end }}
-
-    {{ end }}
-
+    {{- if .IsHome -}}
+      {{- .Site.Title }} — Free Ambisonics Plugins &amp; Spatial Audio Guide | ZHdK
+    {{- else -}}
+      {{- with .Title }}{{ . }} | {{ end -}}
+      {{- .Site.Title }}
+    {{- end -}}
   </title>
 
   <!-- Meta -->
@@ -135,6 +128,16 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.favicon | relURL }}favicon-16x16.png" />
 
   <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- hreflang: bilingual EN/DE -->
+  {{ if .IsTranslated }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{ range .Translations }}
+      <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{ end }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+  {{ end }}
+
   <!-- License -->
   {{- with .Site.Params.license -}}
     <link rel="license" href="{{ . }}" />

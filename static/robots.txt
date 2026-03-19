@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block draft/unpublished content
+Disallow: /composing-in-ambisonics/
+
+Sitemap: https://icst-ambisonics.github.io/sitemap.xml

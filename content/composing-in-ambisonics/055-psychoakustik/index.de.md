@@ -3,7 +3,7 @@ title: "Psychoakustische Grundlagen der Raumwahrnehmung"
 description: "Wie das Gehör räumliche Klänge lokalisiert — und was Komponist:innen daraus ableiten können."
 date: 2026-01-01T00:00:00
 weight: 55
-draft: false
+draft: true
 translationKey: "composing-psychoacoustics"
 ---
 

@@ -3,7 +3,7 @@ title: "Formats, Stems, and Archiving"
 description: "B-format archiving conventions, stem structure, and delivery formats for festivals, labels, streaming, and long-term preservation."
 date: 2026-01-01T00:00:00
 weight: 84
-draft: false
+draft: true
 translationKey: "composing-formats-archiving"
 ---
 

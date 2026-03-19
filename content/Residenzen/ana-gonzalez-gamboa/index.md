@@ -1,6 +1,7 @@
 ---
 tags:
 title: Ana Gonzalez Gamboa
+description: "Ana González Gamboa — ICST Studio Residency at ZHdK Zurich, September 2025. Composer working on 'Lúmina', a spatial composition woven from field recordings in the Ecuadorian Amazon."
 date: 2025-09-03T18:35:00
 slug: ana-gonzalez-gamboa
 aliases:

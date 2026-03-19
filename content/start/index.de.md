@@ -1,21 +1,49 @@
 ---
-title: "ICST Ambisonics Plugins: Einstieg"
-description: "Der geführte Einstieg in die ICST Ambisonics Plugins: in vier Schritten von den ersten Konzepten bis zur funktionierenden Spatial-Audio-Session in REAPER."
+title: "Start — ICST Ambisonics"
+description: "Überblick über alle ICST Ambisonics Tools und Ressourcen: Plugins für REAPER, Max-Externals, Studiopraxis und Konzertprogramm."
 date: 2026-01-01T00:00:00
 draft: false
 languageCode: de
 ---
 
+Womit möchtest du beginnen? Wähle deinen Einstieg.
+
+<div class="icst-pillars" style="grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin-bottom: 2rem;">
+  <a class="icst-pillar icst-pillar--plugins" href="/de/icst-ambisonics-plugins/">
+    <span class="icst-pillar__icon">🎛️</span>
+    <strong class="icst-pillar__title">Plugins für REAPER</strong>
+    <span class="icst-pillar__desc">Encodieren, decodieren, spatialisieren. Kostenlose VST3/AU/LV2-Suite — Encoder, Decoder, Monitor, Animator.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--plugins" href="/de/icst-ambisonics-tools/">
+    <span class="icst-pillar__icon">🧊</span>
+    <strong class="icst-pillar__title">Max-Externals</strong>
+    <span class="icst-pillar__desc">Live-Spatialisation und algorithmischer Klang in Max/MSP. Läuft nativ in Max 8.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--residency" href="/de/composing-in-ambisonics/">
+    <span class="icst-pillar__icon">🎼</span>
+    <strong class="icst-pillar__title">Studiopraxis</strong>
+    <span class="icst-pillar__desc">Komponieren im 3D-Raum — Raumparameter, Room Capture, Binaural-Delivery, Notation.</span>
+  </a>
+  <a class="icst-pillar icst-pillar--ascolta" href="/de/blog/ascolta/">
+    <span class="icst-pillar__icon">🎧</span>
+    <strong class="icst-pillar__title">Konzerte & ASCOLTA</strong>
+    <span class="icst-pillar__desc">Akusmatische Hörstunden und Konzerte an der ZHdK — räumliche Werke live aufgeführt.</span>
+  </a>
+</div>
+
+---
+
+<div class="home-section-header home-section-header--software" style="margin-bottom:1.6rem;">
+<p class="home-section-label">🎛️ Neu bei den ICST Ambisonics Plugins?</p>
+<p class="home-section-lead">Folge den vier Schritten unten — von den ersten Grundlagen bis zur funktionierenden Ambisonics-Session in REAPER. Geschätzte Zeit: 1–2 Stunden. Alle Tools sind kostenlos und Open Source.</p>
+</div>
+
 Level: Einstieg | **Audience:** Komponist:in, Student:in, Producer, Techniker:in.
-
-Neu bei Spatial Audio oder den ICST Plugins? Diese Seite ist als ruhiger Einstieg gedacht: ohne Ambisonics-Vorkenntnisse, ohne komplizierte Vorbereitung und ohne Zugang zu einem spezialisierten Studio.
-
-Folge den vier Schritten unten der Reihe nach, und du kommst von den ersten Grundlagen zu einer funktionierenden Ambisonics-Session in REAPER. Jeder Schritt ist kompakt, praktisch und baut verständlich auf dem vorherigen auf.
 
 <div class="home-cards">
   <section class="home-card">
     <h4>Zum ersten Mal hier?</h4>
-    <p>Dann beginne mit dem geführten Weg unten. So bekommst du Orientierung, Hilfe beim Setup und eine erste funktionierende Session ohne unnötiges Rätselraten.</p>
+    <p>Dann beginne mit dem unten aufgeführten Weg. So bekommst du Orientierung, Hilfe beim Setup und eine erste funktionierende Session ohne unnötiges Rätselraten.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="#schritt-1">Mit Schritt 1 beginnen</a>
       <a class="hero__link" href="/de/ambisonics-101/">Ambisonics 101 lesen</a>
@@ -29,11 +57,6 @@ Folge den vier Schritten unten der Reihe nach, und du kommst von den ersten Grun
       <a class="hero__link" href="/de/icst-ambisonics-plugins/02_installation/">Plugins installieren</a>
     </div>
   </section>
-</div>
-
-<div class="home-section-header home-section-header--software" style="margin-bottom:1.6rem;">
-<p class="home-section-label">🎛️ Dein Weg zu Spatial Audio in REAPER</p>
-<p class="home-section-lead">Geschätzte Zeit: 1–2 Stunden gesamt. Alle Tools sind kostenlos und Open Source.</p>
 </div>
 
 <ol class="onboarding-steps onboarding-steps--software onboarding-steps--large">
@@ -77,10 +100,36 @@ Folge den vier Schritten unten der Reihe nach, und du kommst von den ersten Grun
 
 ---
 
-**Fragen?** Zuerst in der [FAQ](/de/blog/faq/) nachschauen — häufige Installationsprobleme, Signalfluss-Probleme und OSC-Troubleshooting sind dort alle abgedeckt.
+**Fragen?** Zuerst in der [FAQ](/de/blog/faq/) nachschauen — häufige Installationsprobleme, Signalfluss-Probleme und OSC-Troubleshooting sind dort vollständig abgedeckt.
 
 Wenn du die Anleitung lieber offline lesen oder ausdrucken möchtest:
 
 <div class="hero__links">
   <a class="hero__link" href="/downloads/icst-ambisonics-start-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;Download als PDF</a>
+</div>
+
+---
+
+<div class="home-section-header home-section-header--studio" style="margin-top:2rem;margin-bottom:1.2rem;">
+<p class="home-section-label">🎼 Bereit zu komponieren?</p>
+<p class="home-section-lead">Wenn die Plugins laufen, beginnt das räumliche Denken — Bewegung, Tiefe und Raumakustik als kompositorisches Material.</p>
+</div>
+
+<div class="home-cards">
+  <section class="home-card">
+    <h4>🎼 Komponieren in Ambisonics</h4>
+    <p>Von analytischem Hören und räumlichem Kontrapunkt bis zu Room Capture und Binaural-Delivery — ein kuratierter Guide für Komponist:innen im 3D-Audio.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/de/composing-in-ambisonics/">Zum Kompositions-Guide</a>
+      <a class="hero__link" href="/de/composing-in-ambisonics/02-analytical-listening/">Start: Analytisches Hören</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>🏛️ Im ICST-Studio arbeiten</h4>
+    <p>Bewirb dich für eine Residenz am ICST-Kompositionsstudio — 31-Kanal-Ambisonics-Anlage, ZHdK Zürich, betreut vom ICST-Team.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/de/residenzen/">Studio-Residenzen</a>
+      <a class="hero__link" href="/de/for-residents/">Guide für Residenten</a>
+    </div>
+  </section>
 </div>

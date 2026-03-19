@@ -1,60 +1,136 @@
 ---
 title: Downloads
-description: "Lautsprecher-Settings, Track-Templates, Max-Patches und mehr"
+description: "ICST Ambisonics Plugins, Max-Tools, Lautsprecher-Presets, Session-Templates, PDF-Guides und B-Format-Testdateien."
 date: 2025-06-12T15:09:00
 weight: 0
 group: "Residents"
 languageCode: de
 ---
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+Alle ICST-Tools und unterstützenden Dateien an einem Ort.
 
-Downloads für Studio- und Ambisonics-Workflows an einem Ort.
+<div class="hero__links">
+  <a class="hero__link" href="#plugins">Plugins</a>
+  <a class="hero__link" href="#studio-dateien">Studio-Dateien</a>
+  <a class="hero__link" href="#pdf-guides">PDF-Guides</a>
+  <a class="hero__link" href="#b-format-audiodateien">B-Format</a>
+  <a class="hero__link" href="#papers-and-referenzen">Papers</a>
+</div>
+
+---
+
+<div id="plugins"></div>
+
+## 🎛️ ICST Ambisonics Plugins für REAPER
+
+Kostenlose Open-Source VST3/AU/LV2-Plugin-Suite für Higher Order Ambisonics in REAPER — Encoder, Decoder, Multi-Decoder, Monitor und Animator.
 
 <div class="home-cards">
   <section class="home-card">
-    <h4>Lautsprecher & Setup</h4>
-    <p>Lautsprecher-Presets und Setup-Dateien für Decoder-Workflows.</p>
+    <h4>🎛️ Plugin-Download</h4>
+    <p>Aktuelle Installer für macOS und Windows auf GitHub. Erfordert REAPER 6+.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/ICST_Ambisonics_Plugins_Speaker-Settings.tar">Decoder-Settings</a>
-      <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/kompositionsstudio-speakers-max.txt.zip">Max-Lautsprecherdatei</a>
+      <a class="hero__link hero__link--primary" href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank" rel="noopener noreferrer">Download von GitHub →</a>
+      <a class="hero__link" href="/de/icst-ambisonics-plugins/">Plugin-Dokumentation</a>
+      <a class="hero__link" href="/de/icst-ambisonics-plugins/02_installation/">Installationsanleitung</a>
     </div>
   </section>
-
   <section class="home-card">
-    <h4>Patches & Templates</h4>
-    <p>Einsatzbereite Patches und Templates für Max, Ableton Live und REAPER.</p>
+    <h4>🧊 Max/MSP Externals</h4>
+    <p>ICST Ambisonics Tools für Max 8 — Live-Spatialisation, algorithmischer Klang und OSC-Integration. Gehostet bei ZHdK.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/downloads/reaper/ICST_HOA_Reaper_Session_ICST_Kompositionsstudio_v4.RPP">ICST Kompositionsstudio v4</a>
-      <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v3.RPP">HOA Reaper Session v3</a>
-      <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v2.RPP">HOA Reaper Session v2</a>
-      <a class="hero__link" href="/blog/download-pack-1-hoa-reaper-template/">HOA Reaper Template Pack</a>
-      <a class="hero__link hero__link--primary" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat">OSC MultiEncoder (Max)</a>
-      <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv">Multi-Panner (Ableton)</a>
-    </div>
-  </section>
-
-  <section class="home-card">
-    <h4>B-Format Testdateien</h4>
-    <p>Referenz-ambiX-Aufnahmen (ACN/SN3D) zum Testen von Decodern und Binaural-Renderern.</p>
-    <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/blog/b-format-archive/">B-Format Archiv</a>
+      <a class="hero__link hero__link--primary" href="https://www.zhdk.ch/forschung/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385" target="_blank" rel="noopener noreferrer">Download von ZHdK →</a>
+      <a class="hero__link" href="/de/icst-ambisonics-tools/">Max-Tools-Dokumentation</a>
     </div>
   </section>
 </div>
 
-<details class="home-accordion">
-  <summary>Alle Downloads</summary>
-  <div class="home-accordion__actions">
-    <a class="hero__link hero__link--primary" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/ICST_Ambisonics_Plugins_Speaker-Settings.tar">Zusätzliche Decoder-Settings</a>
-    <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/kompositionsstudio-speakers-max.txt.zip">Kompositionsstudio Lautsprecher für Max</a>
-    <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/OSC-GP-ICST-MultiEncoder.maxpat">ICST MultiEncoder Group OSC</a>
-    <a class="hero__link" href="https://github.com/joambi/icst-ambisonics.github.io/blob/main/static/downloads/E4L%20Multi-Panner_OSC.adv">E4L Multi-Panner OSC</a>
-    <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_ICST_Kompositionsstudio_v4.RPP">ICST Kompositionsstudio Session v4</a>
-    <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v3.RPP">ICST HOA Reaper Session Starter v3</a>
-    <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Session_Starter_v2.RPP">ICST HOA Reaper Session Starter v2</a>
-    <a class="hero__link" href="/downloads/reaper/ICST_HOA_Reaper_Template_Pack_1.RPP">ICST HOA Reaper Template Pack</a>
-    <a class="hero__link" href="https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV">Große Dateien</a>
-    <a class="hero__link" href="https://www.zhdk.ch/forschung/icst/software-downloads-5379">ICST Software-Downloads</a>
-  </div>
-</details>
+---
+
+<div id="studio-dateien"></div>
+
+## 🏛️ Studio-Dateien
+
+Lautsprecher-Presets, Session-Templates und Patches für das ICST-Kompositionsstudio und allgemeine Ambisonics-Workflows.
+
+<div class="home-cards">
+  <section class="home-card">
+    <h4>Lautsprecher & Decoder-Presets</h4>
+    <p>Lautsprecher-Koordinatendateien und Decoder-Presets für das ICST-Studio und gängige Lautsprecher-Layouts.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="https://raw.githubusercontent.com/joambi/icst-ambisonics.github.io/main/static/downloads/ICST_Ambisonics_Plugins_Speaker-Settings.tar" target="_blank" rel="noopener noreferrer">Decoder-Settings (.tar)</a>
+      <a class="hero__link" href="https://raw.githubusercontent.com/joambi/icst-ambisonics.github.io/main/static/downloads/kompositionsstudio-speakers-max.txt.zip" target="_blank" rel="noopener noreferrer">Max-Lautsprecherdatei (.zip)</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>Patches & Templates</h4>
+    <p>Einsatzbereite OSC-Patches für Max und Ableton Live. REAPER-Session-Templates über das HOA-Template-Pack.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/downloads/OSC-GP-ICST-MultiEncoder.maxpat" download>OSC MultiEncoder (Max)</a>
+      <a class="hero__link" href="/downloads/E4L Multi-Panner_OSC.adv" download>Multi-Panner (Ableton)</a>
+      <a class="hero__link" href="/de/blog/download-pack-1-hoa-reaper-template/">HOA REAPER Template Pack →</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>Studio-XML-Layouts</h4>
+    <p>Direkt ladbare Lautsprecher-Layouts für ICST und Partnerstudios, hilfreich für Decoder-Setup und raumspezifische Tests.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/blog/downloads/ICST%20Kompositionsstudio.xml" download>ICST Kompositionsstudio (.xml)</a>
+      <a class="hero__link" href="/blog/downloads/ICST%20DOM.xml" download>ICST DOM (.xml)</a>
+      <a class="hero__link" href="/blog/downloads/ICSTKompositionsstudio%20Eingemessen_2025.xml" download>ICST Kompositionsstudio 2025 (.xml)</a>
+      <a class="hero__link" href="/blog/downloads/ZHdK%20IA%20Space.xml" download>ZHdK IA Space (.xml)</a>
+      <a class="hero__link" href="/blog/downloads/Notam%20Studio%203.xml" download>Notam Studio 3 (.xml)</a>
+    </div>
+  </section>
+</div>
+
+---
+
+<div id="pdf-guides"></div>
+
+## 📄 PDF-Guides
+
+<div class="home-cards">
+  <section class="home-card">
+    <h4>Plugin-Einstiegsguide</h4>
+    <p>Der vollständige 4-Schritte-Einstieg in die ICST Ambisonics Plugins — druckfertig und offline nutzbar.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/downloads/icst-ambisonics-start-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;PDF herunterladen</a>
+    </div>
+  </section>
+  <section class="home-card">
+    <h4>Residenten-Guide</h4>
+    <p>Alles zur Vorbereitung auf eine Residenz im ICST-Kompositionsstudio — Pre-Installation, Lautsprecher-Setup, Nutzungsbedingungen.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/downloads/icst-resident-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;PDF herunterladen</a>
+    </div>
+  </section>
+</div>
+
+---
+
+<div id="b-format-audiodateien"></div>
+
+## 🎵 B-Format-Audiodateien
+
+Referenz-ambiX-Aufnahmen (ACN/SN3D) zum Testen von Decodern, Binaural-Renderern und räumlichem Monitoring.
+
+<div class="hero__links">
+  <a class="hero__link hero__link--primary" href="/de/blog/b-format-archive/">B-Format-Archiv öffnen</a>
+</div>
+
+---
+
+<div id="papers-and-referenzen"></div>
+
+## 📚 Papers & Referenzen
+
+Schlüsseltexte zur akusmatischen Komposition und räumlichem Audio — für Studium, Analyse und Residenz-Vorbereitung.
+
+<div class="hero__links">
+  <a class="hero__link" href="/downloads/papers/DENIS SMALLEY Space form and the acousmatic image.pdf" download>Smalley — Space-form and the Acousmatic Image (PDF)</a>
+  <a class="hero__link" href="/downloads/papers/SMALLEYFromSoundShapestoSpaceForm.pdf" download>Smalley — From Sound Shapes to Space-Form (PDF)</a>
+  <a class="hero__link" href="/downloads/papers/EMS_Barrett2010.pdf" download>Barrett — EMS 2010 (PDF)</a>
+  <a class="hero__link" href="https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV" target="_blank" rel="noopener noreferrer">Grosse Mehrkanal-Dateien (SWITCHdrive, extern)</a>
+  <a class="hero__link" href="https://www.zhdk.ch/forschung/icst/software-downloads-5379" target="_blank" rel="noopener noreferrer">Alle ICST-Software (ZHdK, extern)</a>
+</div>

@@ -1,6 +1,6 @@
 ---
 title: Ambisonics 101
-description: A compact introduction to Ambisonics, B-format, typical setups, and practical listening workflows.
+description: "What is Ambisonics? A practical introduction to B-format, Higher Order Ambisonics (HOA), loudspeaker decoding, and 3D spatial audio workflows for composers and producers."
 slug: ambisonics-101
 ---
 

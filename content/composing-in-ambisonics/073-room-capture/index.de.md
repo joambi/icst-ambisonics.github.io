@@ -3,7 +3,7 @@ title: "Raum erfassen und Raum synthetisch erzeugen"
 description: "Ein praktischer Leitfaden für Ambisonics-Komponist:innen zu akustischer Eingewöhnung, Raumanalyse und der Entscheidung zwischen Trockenproduktion, künstlichem Hall und Faltungshall."
 date: 2026-01-01T00:00:00
 weight: 78
-draft: false
+draft: true
 translationKey: "composing-room-capture"
 languageCode: de
 ---

@@ -3,13 +3,13 @@ title: "Die 10 Fragen im 3D-Raum"
 description: "Ein kompositorischer Fragenkatalog fuer Ambisonics-Stücke."
 date: 2026-01-01T00:00:00
 weight: 40
-draft: false
+draft: true
 translationKey: "composing-10-questions"
 ---
 
 Die folgenden Fragen sind als **kompositorisches Arbeitsblatt** gedacht. Sie helfen nicht nur bei der Analyse bestehender Werke, sondern auch beim Entwerfen eigener Stücke, bei Proben im Studio und bei der späteren Dokumentation.
 
-## So benutzt du diese Seite
+### So benutzt du diese Seite
 
 Diese Seite hat zwei Ebenen, die bewusst zusammengehören:
 

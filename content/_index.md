@@ -1,6 +1,6 @@
 ---
 title: "ICST Ambisonics"
-description: "Spatial Audio Plugins & Tutorials"
+description: "Free VST3/AU/LV2 ambisonics plugins for REAPER, open-source Max/MSP externals for spatial audio, and an artist residency programme. ICST / ZHdK Zurich."
 mainSectionsTitle: "Latest Posts"
 aliases:
   - /home/

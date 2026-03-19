@@ -3,13 +3,21 @@ title: "Overview"
 description: "Entry point and reading paths for the Composing in Ambisonics section."
 date: 2026-01-01T00:00:00
 weight: 10
-draft: false
+draft: true
 ---
 
 <div class="home-section-header home-section-header--studio" style="margin-bottom:1.4rem;">
 <p class="home-section-label">For Composers</p>
 <p class="home-section-lead">A guide to spatial thinking, listening, and working in Ambisonics — from FOA/HOA context and acoustic gestalt to spatial counterpoint, tools, and studio practice.</p>
 </div>
+
+Ambisonics makes it possible to treat space as an independent compositional material — on equal footing with timbre, time, and dynamics. Sources approach, separate, stratify in height and depth: these are not technical effects but formal decisions.
+
+The B-format decouples a work from any specific loudspeaker layout. The same Ambisonics master can be rendered for a 32-channel dome, an eight-channel ring, binaural headphones, or VR environments — without rebuilding the spatial dramaturgy from scratch. This makes Ambisonics the most sustainable archival format for 3D audio content: a single master that encompasses present and future listening contexts.
+
+**Ambisonics is not a format among many. It is a commitment to spatial thinking — now and over time.**
+
+---
 
 <figure class="big">
   <img src="/images/composing_in_ambisonics%201.png" alt="Diagram of spatial parameters, distance zones, and movement relationships for composing in Ambisonics" loading="lazy" />

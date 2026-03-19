@@ -3,13 +3,21 @@ title: "Overview"
 description: "Einstieg und Lesepfad fuer den Bereich Composing in Ambisonics."
 date: 2026-01-01T00:00:00
 weight: 10
-draft: false
+draft: true
 ---
 
 <div class="home-section-header home-section-header--studio" style="margin-bottom:1.4rem;">
 <p class="home-section-label">For Composers</p>
 <p class="home-section-lead">Ein Guide fuer räumliches Denken, Hören und Arbeiten in Ambisonics — von FOA/HOA-Kontext und akustischer Gestalt bis zu Spatial Counterpoint, Werkzeugen und Studio-Praxis.</p>
 </div>
+
+Ambisonics macht es möglich, Raum als eigenständiges kompositorisches Material zu behandeln — gleichwertig mit Klangfarbe, Zeit und Dynamik. Quellen nähern sich an, entfernen sich, staffeln sich in Höhe und Tiefe: Das sind keine technischen Effekte, sondern formale Entscheidungen.
+
+Das B-Format löst ein Werk von einem bestimmten Lautsprecherlayout. Dieselbe Ambisonics-Master-Datei kann für eine 64-Kanal-Kuppel, einen Achtkanalring, binaurale Kopfhörerwiedergabe oder VR-Umgebungen gerendert werden, ohne die räumliche Dramaturgie neu aufzubauen. Dadurch wird Ambisonics zu einem nachhaltigen Archivformat für 3D-Audioinhalte, das gegenwärtige und zukünftige Wiedergabekontexte einschliesst.
+
+**Ambisonics ist nicht nur ein Format unter vielen. Es ist eine bewusste Entscheidung für räumliches Denken — heute und langfristig.**
+
+---
 
 <figure class="big">
   <img src="/images/composing_in_ambisonics%201.png" alt="Diagramm zu räumlichen Parametern, Distanzzonen und Bewegungsbeziehungen in Composing in Ambisonics" loading="lazy" />
@@ -99,7 +107,7 @@ Das lässt sich auch als Gegenüberstellung zweier Denkweisen beschreiben: In ei
   </section>
 </div>
 
-## Fünf Begriffe für den Einstieg
+### Fünf Begriffe für den Einstieg
 
 - **FOA**: First Order Ambisonics, die grundlegende historische Ambisonics-Form
 - **HOA**: Higher Order Ambisonics, mit höherer räumlicher Auflösung und flexiblerem Rendering

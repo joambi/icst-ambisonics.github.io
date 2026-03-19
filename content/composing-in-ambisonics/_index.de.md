@@ -5,8 +5,10 @@ date: 2026-01-01T00:00:00
 type: docs
 languageCode: de
 docs_nav_title: "For Composers"
+draft: true
 cascade:
   type: docs
+  draft: true
 ---
 
 Ambisonics gibt Komponist:innen Zugang zu einem dreidimensionalen Klangfeld als primäres kompositorisches Material: nicht als nachträglich hinzugefügter Effekt, sondern als strukturelle Dimension auf derselben Ebene wie Tonhöhe, Rhythmus und Klangfarbe. Bewegung, Tiefe, Envelopment, Elevation und die Beziehung zwischen punktuellen und diffusen Klangobjekten lassen sich nicht nur mischen, sondern **komponieren**.

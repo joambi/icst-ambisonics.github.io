@@ -6,8 +6,6 @@ title: Downloads
 description: "All download links for the ICST Ambisonics Plugins, the ICST Ambisonics Tools for Max/MSP, and the broader collection of templates, presets, and guides."
 ---
 
-Level: Reference | Audience: Composer, technician, student, studio user.
-
 Use this page when you need the current plugin releases, Max/MSP tools, or supporting packages without browsing through the rest of the documentation.
 
 ## ICST Ambisonics Plugins

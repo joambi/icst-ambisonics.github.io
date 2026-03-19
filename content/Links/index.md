@@ -4,6 +4,7 @@ draft: false
 params:
   author: Johannes Schuett
 title: Links
+description: "Curated links to Ambisonics resources, spatial audio research, related software, ICST publications, and community references."
 weight: 10
 tags: []
 ---
@@ -43,9 +44,9 @@ tags: []
 {{< youtube X23hZNoSkUs >}}
 ### 3rd-party tools:
 
-- [Ambisonic Toolkit (ATK) for REAPER](http://www.ambisonictoolkit.net/documentation/reaper/)    
-- [IEM Plugin suite](https://plugins.iem.at/)
-- [Sparta Plugins](https://leomccormack.github.io/sparta-site/)
+- [Ambisonic Toolkit (ATK) for REAPER](http://www.ambisonictoolkit.net/documentation/reaper/) — JSFX plugins for REAPER and SuperCollider; strong signal-processing foundation, research-oriented
+- [IEM Plugin suite](https://plugins.iem.at/) — free HOA plugin suite up to 7th order; VST3/AU/LV2 for all platforms
+- [Sparta Plugins](https://leomccormack.github.io/sparta-site/) — research-grade spatial audio processing plugins up to 10th order by Leo McCormack
 - [Wigware](https://www.brucewiggins.co.uk/?page_id=78)
 - [aXPlugin Suite](https://www.ssa-plugins.com/)
 - [DearVR Ambi Micro](https://www.dear-reality.com/products/dearvr-ambi-micro)
@@ -71,6 +72,7 @@ tags: []
 - [IEM](https://iem.at/en)
 - [IRCAM](https://forum.ircam.fr/projects/detail/spat/)
 - [ICST](https://www.zhdk.ch/forschung/icst)
+- [Positive Ambisonics](https://www.positiveambisonics.org) — immersive audio artist residency in Tayvallich, Scotland; focus on field recording and 3D sound in natural environments
 - [CCRMA](https://ccrma.stanford.edu/blogs/mzeligs/ambisonics-in-21st-century-review-of-spatial-audio-techniques)
 - [NOTAM](https://notam.no/en/studio/studio-3/)
 - [Derby.ac.uk](https://www.derby.ac.uk/)

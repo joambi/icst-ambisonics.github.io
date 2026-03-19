@@ -1,74 +1,55 @@
 ---
 title: About & Impressum
-description: ICST Ambisonics — spatial audio tools, research, and artistic practice at ZHdK Zurich.
+description: "About ICST — the Institute for Computer Music and Sound Technology at ZHdK Zurich. Over two decades of open-source spatial audio tools, research, and electroacoustic composition."
 date: 2025-02-27
 tags:
 ---
 
-## Ambisonics as a Compositional Method
+## ICST — Institute for Computer Music and Sound Technology
 
-Ambisonics makes it possible to treat space as an independent compositional material — on equal footing with timbre, time, and dynamics. Sources approach, separate, stratify in height and depth: these are not technical effects but formal decisions.
+The **[ICST](https://www.zhdk.ch/forschung/icst)** is a research and artistic institute at the **[Zurich University of the Arts (ZHdK)](https://www.zhdk.ch/)**. For over two decades, ICST has developed tools, workflows, and educational frameworks for spatial audio — keeping this practice accessible, research-grounded, and open source.
 
-The B-format decouples a work from any specific loudspeaker layout. The same Ambisonics master can be rendered for a 32-channel dome, an eight-channel ring, binaural headphones, or VR environments — without rebuilding the spatial dramaturgy from scratch. This makes Ambisonics the most sustainable archival format for 3D audio content: a single master that encompasses present and future listening contexts.
+**Core areas:** Ambisonics & spatial sound · Acoustic perception & algorithmic composition · Electroacoustic music & immersive media.
 
-The method is open: it works for electroacoustic composition, sound installation, immersive media production, and live performance. ICST has been developing tools, workflows, and educational frameworks for over two decades, keeping this practice accessible and research-grounded.
+---
 
-**Ambisonics is not a format among many. It is a commitment to spatial thinking — now and over time.**
+## ICST Ambisonics Tools & Plugins
+
+Two open-source toolsets have emerged from ICST's research:
+
+**[ICST Ambisonics Plugins](/icst-ambisonics-plugins/)** — Free VST3/AU/LV2 plugin suite for Higher Order Ambisonics in REAPER. Encoder, decoder, multi-decoder, monitor, and animator. Currently at [v3.2](https://github.com/schweizerweb/icst-ambisonics-plugins/releases). Developed by Johannes Schütt, [Christian Schweizer](https://github.com/schweizerweb), and Axel Kolb.
+
+**ICST Ambisonics Tools** — Max/MSP externals for live spatialisation, algorithmic sound design, and OSC integration. Available via ZHdK and running natively in Max 8.
+
+Both toolsets are free and open source. Students and visiting artists work with the same infrastructure as the development and research team.
 
 ---
 
 ## About This Site
 
-Ambisonics.ch documents tools, workflows, and artistic practice around Ambisonics and spatial audio at the ICST Composition Studio, ZHdK Zürich. It connects practical plugin documentation, compositional thinking, residency work, and listening practice in one place.
+Ambisonics.ch documents tools, workflows, and artistic practice around Ambisonics and spatial audio at the ICST Composition Studio. The site brings plugin documentation, compositional thinking, residency work, and listening practice together in one place.
 
-I am Johannes Schütt, and I have been working with Ambisonics for over 30 years. Together with [Christian Schweizer](https://github.com/schweizerweb) and Axel Kolb I develop and maintain the ICST Ambisonics Plugins. In collaboration with studio residents, students, and the ICST team, we explore the practice of Ambisonics content — what it means to compose, produce, and perform in 3D audio. Students and visiting artists use the same tools and infrastructure that we use for ongoing development and research. This site grew out of that shared practice and is intended to give others an accessible, motivated entry into this field.
-
-* * *
-# About
-
-The **Institute for Computer Music and Sound Technology** ([ICST](https://www.zhdk.ch/forschung/icst)) is a research and educational center at the **Zurich University of the Arts** ([ZHdK](https://www.zhdk.ch/)), dedicated to advancing technology for music, sound art, and media production.
-### Focus Areas
-#### **Ambisonics & Spatial Sound**
-- Practical workflows, loudspeaker setups, and resources for 3D audio in DAWs.
-#### **Sound Research & Perception**
-- Exploration of acoustic perception, algorithmic composition, and interactive sound spaces.
-#### **Music & Media Art**
-- Support for projects in electroacoustic music, sound design, and immersive audio formats.
+I am Johannes Schütt, and I have been working with Ambisonics for over 30 years. This website grew out of shared studio practice with residents, students, and the ICST team, and is meant to offer others an accessible, motivating entry point into this field.
 
 ---
 
-### ICST Ambisonics Tools & Plugins
+## Impressum
 
-A key outcome of ICST’s research is the **ICST Ambisonics Tools**, a suite of Max/MSP externals enabling advanced 3D surround audio editing. Developed over two decades, these tools are publicly available. The **ICST Ambisonics Plugins** bring many of these features to DAWs as VST/AU/LV2 plugins. Actively evolving, they are currently available in [version 3.2.0](https://github.com/schweizerweb/icst-ambisonics-plugins).
+Institute for Computer Music and Sound Technology (ICST)  
+Zurich University of the Arts (ZHdK)
 
----
-
-# Impressum
-
-Institute for Computer Music and Sound Technology / (ICST), Zurich University of the Arts
+Powered by [Hugo](https://gohugo.io/) with the [Anatole](https://themes.gohugo.io/themes/anatole/) theme. Hosted on [GitHub Pages](https://pages.github.com/). Maintained by Johannes Schütt at ICST/ZHdK.
 
 ---
-Powered by  [Hugo](https://gohugo.io/) with the '[Anatole](https://themes.gohugo.io/themes/anatole/)' theme.
 
-Hosted on [GitHub Pages](https://pages.github.com/). 
-
-Maintained by Johannes Schütt at ICST/ZHdK.
-
----
 ## Contact
 
-Postadresse:  
 Zürcher Hochschule der Künste  
 Institute for Computer Music and Sound Technology  
 Toni-Areal, Pfingstweidstraße 96  
-Postfach, CH-8031 Zürich  
-  
+Postfach, CH-8031 Zürich
+
 Administration ICST  
-Telefon: +41 (0)43 446 55 00  
-[E-Mail](mailto:info@zhdk.ch)
-
-https://www.zhdk.ch/forschung/icst
-
-[www.zhdk.ch](http://www.zhdk.ch/)
-
-----
+Phone: +41 (0)43 446 55 00  
+[Email](mailto:info@zhdk.ch)  
+[www.zhdk.ch/forschung/icst](https://www.zhdk.ch/forschung/icst)

@@ -3,7 +3,7 @@ title: "The Acoustic Gestalt of a Sound"
 description: "Why space belongs to the identity of a sound object, not just to its playback."
 date: 2026-01-01T00:00:00
 weight: 50
-draft: false
+draft: true
 translationKey: "composing-acoustic-gestalt"
 ---
 

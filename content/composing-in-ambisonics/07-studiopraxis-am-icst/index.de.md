@@ -3,7 +3,7 @@ title: "Studiopraxis in Ambisonics am ICST"
 description: "Workflow-Perspektiven aus dem ICST-Kompositionsstudio: Session-Architektur, B-Format-Archivierung, Monitoring und Multi-Format-Lieferung."
 date: 2026-01-01T00:00:00
 weight: 80
-draft: false
+draft: true
 translationKey: "composing-studio-practice"
 ---
 
