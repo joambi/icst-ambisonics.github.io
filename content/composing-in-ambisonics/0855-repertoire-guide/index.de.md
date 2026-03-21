@@ -2,7 +2,7 @@
 title: "Repertoire-Guide für Raumkomposition"
 description: "Ein kuratierter Hörführer aus ASCOLTA-Sessions, ICST-Residenzen und der 3D AudioSpace-Plattform — geordnet nach Analysekategorien."
 date: 2026-01-01T00:00:00
-weight: 855
+weight: 87
 draft: true
 translationKey: "composing-repertoire-guide"
 languageCode: de

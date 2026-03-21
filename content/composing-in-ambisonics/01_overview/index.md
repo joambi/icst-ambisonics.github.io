@@ -11,6 +11,14 @@ draft: true
 <p class="home-section-lead">A guide to spatial thinking, listening, and working in Ambisonics — from FOA/HOA context and acoustic gestalt to spatial counterpoint, tools, and studio practice.</p>
 </div>
 
+> **In short:** this section helps you treat space not merely as something to mix, but as **compositional material** that can be designed, tested, and carried across different playback situations.
+
+## Quick Entry Points
+
+- **New to the topic?** Start with the **10 Questions**, then **Analytical Listening**.
+- **Already inside a piece?** Go straight to **Spatial Counterpoint** and **Spatial Parameters**.
+- **Preparing a production or residency?** Open **Tools and Software** first, then **Studio Practice at ICST**.
+
 Ambisonics makes it possible to treat space as an independent compositional material — on equal footing with timbre, time, and dynamics. Sources approach, separate, stratify in height and depth: these are not technical effects but formal decisions.
 
 The B-format decouples a work from any specific loudspeaker layout. The same Ambisonics master can be rendered for a 32-channel dome, an eight-channel ring, binaural headphones, or VR environments — without rebuilding the spatial dramaturgy from scratch. This makes Ambisonics the most sustainable archival format for 3D audio content: a single master that encompasses present and future listening contexts.
@@ -27,6 +35,12 @@ The B-format decouples a work from any specific loudspeaker layout. The same Amb
 Composing in Ambisonics means treating space not merely as a distribution system, but as a **form-building parameter**. Sources can approach, separate, rise, cluster, or act as independent voices within a shared sound field.
 
 This area is not meant as a linear textbook, but as a **compositional workspace in text form**. It connects historical context, compositional questions, and technical toolchains.
+
+## What You Should Be Able to Take Away
+
+- **a vocabulary** for naming and documenting spatial decisions
+- **a compositional model** for organising nearness, distance, height, diffusion, and movement
+- **a practical workflow** that holds together across B-format, monitoring, export, and performance
 
 ## Why compose in 3D Ambisonics?
 
@@ -83,9 +97,9 @@ This also opens specific aesthetic possibilities: narrative movement through spa
 
 ## Reading Paths
 
-- **For a first entry point**: `History of Ambisonics: FOA and HOA` → `10 Questions in 3D Space` → `The Acoustic Gestalt of a Sound`
+- **For a first entry point**: `Overview` → `Analytical Listening` → `10 Questions in 3D Space`
 - **For piece development and composition**: `10 Questions` → `Spatial Counterpoint` → `Spatial Parameters as Compositional Material` → `Comparing Compositional Spatial Strategies`
-- **For production and setup**: `Tools and Software` → `Ambisonics Studio Practice at ICST`
+- **For production and setup**: `Tools and Software` → `Ambisonics Studio Practice at ICST` → `Binaural Rendering and Headphone Delivery` → `Formats, Stems, and Archiving`
 
 These reading paths are intentionally **not identical** with the numerical chapter order. They mark different entry routes: the first path leads into the topic through perception and basic concepts, while the second moves more directly toward compositional application and piece development.
 

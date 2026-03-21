@@ -5,7 +5,6 @@ date: 2026-01-01T00:00:00
 weight: 20
 draft: true
 translationKey: "composing-analytical-listening"
-hidden_in_nav: true
 ---
 
 Analytical listening is the prerequisite for compositional action. Before spatial trajectories, layering, and perspectives can be used deliberately, a vocabulary must develop for describing, distinguishing, and translating spatial events from other composers' work into one's own practice. This chapter provides such a framework — not for passive listening, but for **hearing with compositional intent**.

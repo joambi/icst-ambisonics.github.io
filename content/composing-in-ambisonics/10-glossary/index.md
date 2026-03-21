@@ -32,7 +32,7 @@ The horizontal angle of a sound source in the Ambisonics coordinate system, meas
 ---
 
 **B-Format**
-The fundamental Ambisonics signal format. In FOA it consists of four channels: W (omnidirectional), X (front–back), Y (left–right), and Z (up–down). In HOA, the B-format extends to (N+1)² channels for order N. The B-format serves as both the primary working format and the preferred archival format in the ICST context.
+The fundamental Ambisonics signal format. In FOA it consists of four channels: W (omnidirectional), X (front–back), Y (left–right), and Z (up–down). In HOA, the B-format extends to (N+1)² channels for order N. The B-format serves as both the primary working format and the preferred archival format in the ICST context. For the methodological background, see also [Why the Decoder Sounds the Way It Does – Methodological Context](/post/decoder-methodological-context/).
 
 ---
 
@@ -47,7 +47,7 @@ The ratio of direct sound from a source to the diffuse reverberant component at 
 ---
 
 **Decoding**
-Conversion of an Ambisonics signal (B-format) into a loudspeaker-specific or binaural output format. Decoding is setup-dependent and can produce different output configurations from the same B-format master without altering the composition.
+Conversion of an Ambisonics signal (B-format) into a loudspeaker-specific or binaural output format. Decoding is setup-dependent and can produce different output configurations from the same B-format master without altering the composition. For a deeper conceptual framing, see [Why the Decoder Sounds the Way It Does – Methodological Context](/post/decoder-methodological-context/).
 
 ---
 
@@ -147,7 +147,7 @@ Denis Smalley's analytical concept for describing the temporal development of el
 ---
 
 **Spherical Harmonics**
-Mathematical basis functions on the surface of a sphere that form the foundation of HOA mathematics. Ambisonics signals are weighted sums of spherical harmonics up to the chosen order N. The number of terms grows as (N+1)²; higher orders capture finer directional structures.
+Mathematical basis functions on the surface of a sphere that form the foundation of HOA mathematics. Ambisonics signals are weighted sums of spherical harmonics up to the chosen order N. The number of terms grows as (N+1)²; higher orders capture finer directional structures. A readable introduction to their role in decoding is [Why the Decoder Sounds the Way It Does – Methodological Context](/post/decoder-methodological-context/).
 
 ---
 

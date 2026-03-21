@@ -32,7 +32,7 @@ Horizontaler Winkel einer Klangquelle im Ambisonics-Koordinatensystem, gemessen 
 ---
 
 **B-Format**
-Das grundlegende Ambisonics-Signalformat. In FOA besteht es aus vier Kanälen: W (omnidirektional), X (vorne–hinten), Y (links–rechts) und Z (oben–unten). In HOA erweitert sich das B-Format auf (N+1)² Kanäle für die Ordnung N. Das B-Format ist sowohl primäres Arbeitsformat als auch bevorzugtes Archivformat im ICST-Kontext.
+Das grundlegende Ambisonics-Signalformat. In FOA besteht es aus vier Kanälen: W (omnidirektional), X (vorne–hinten), Y (links–rechts) und Z (oben–unten). In HOA erweitert sich das B-Format auf (N+1)² Kanäle für die Ordnung N. Das B-Format ist sowohl primäres Arbeitsformat als auch bevorzugtes Archivformat im ICST-Kontext. Für den methodischen Hintergrund siehe auch [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/).
 
 ---
 
@@ -47,7 +47,7 @@ Verhältnis zwischen direktem Schall einer Quelle und diffusem Hallanteil am Hö
 ---
 
 **Dekodierung**
-Umwandlung eines Ambisonics-Signals (B-Format) in ein lautsprecherspezifisches oder binaurales Ausgabeformat. Die Dekodierung ist setup-abhängig und kann für unterschiedliche Lautsprecherkonfigurationen aus demselben B-Format-Master erzeugt werden, ohne die Komposition zu verändern.
+Umwandlung eines Ambisonics-Signals (B-Format) in ein lautsprecherspezifisches oder binaurales Ausgabeformat. Die Dekodierung ist setup-abhängig und kann für unterschiedliche Lautsprecherkonfigurationen aus demselben B-Format-Master erzeugt werden, ohne die Komposition zu verändern. Eine vertiefende Einordnung bietet [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/).
 
 ---
 
@@ -142,7 +142,7 @@ Kategorie aus Denis Smalleys *space-form*-Theorie: Raum, der aus der räumlichen
 ---
 
 **Sphärische Harmonische**
-Mathematische Basisfunktionen auf der Kugeloberfläche, die das Fundament der HOA-Mathematik bilden. Ambisonics-Signale sind gewichtete Summen sphärischer Harmonischer bis zur gewählten Ordnung N. Die Anzahl der Terme wächst mit (N+1)²; höhere Ordnungen erfassen feinere Richtungsstrukturen.
+Mathematische Basisfunktionen auf der Kugeloberfläche, die das Fundament der HOA-Mathematik bilden. Ambisonics-Signale sind gewichtete Summen sphärischer Harmonischer bis zur gewählten Ordnung N. Die Anzahl der Terme wächst mit (N+1)²; höhere Ordnungen erfassen feinere Richtungsstrukturen. Ein lesbarer Einstieg in ihre Rolle für den Decoder steht in [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/).
 
 ---
 

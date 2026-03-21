@@ -77,6 +77,20 @@ Typical use cases:
 
 ![Loudspeaker selection](CleanShot%202026-02-11%20at%2013.55.43@2x.png)
 
+## Psychoacoustic rationale
+
+The MultiDecoder does not implement Blauert bands directly. What it offers is a practical way to **tune different loudspeaker layers differently** while keeping one shared B-format input.
+
+This can make sense because different perceptual tasks are not equally sensitive to the same cues:
+
+- **Elevation** often depends strongly on spectral detail, especially in the upper frequency range
+- the **main horizontal image** usually benefits from the most stable and neutral decoding
+- **low-frequency support** often contributes more to weight and envelopment than to clear vertical localisation
+
+That is why layer-based tuning can be useful in vertically extended arrays. A `Top` layer may benefit from a different order, weighting, or gentle filtering than the main ring, while a `Bottom` or `Sub` layer may serve a different perceptual role again.
+
+Important: a loudspeaker layer is **not automatically a perceptual depth layer**. Height, width, envelopment, and distance are related but not identical phenomena.
+
 ### Ambisonics order and weighting
 
 Each decoder unit can use its own **Ambisonics order** and **weighting**.
@@ -93,6 +107,9 @@ Each unit also has its own filter section, which is useful when one layer should
 
 ![Filter section](CleanShot%202026-02-11%20at%2014.05.58@2x.png)
 
+> [!note]
+> Use filtering conservatively. The goal is usually not to split the sound field into artificial frequency bands, but to make small corrections that improve clarity, stability, or translation on a specific array.
+
 ### Per-unit audio parameters
 
 ![Audio parameters](CleanShot%202026-02-11%20at%2014.09.04@2x.png)
@@ -103,11 +120,19 @@ Per unit you can control:
 2. **Individual gain**
 3. **Mute / unmute**
 
+### Typical perceptual roles of layers
+
+| Layer | Typical goal | Typical treatment |
+|---|---|---|
+| **Top** | clearer elevation cues | careful comparison of order/weighting, possibly gentle HF support |
+| **Mid** | stable main image | most neutral decoding, often the main reference layer |
+| **Bottom / Sub** | weight, support, envelopment | restrained LF-focused treatment, not a "distance decoder" by itself |
+
 ## Why it matters
 
 Standard Ambisonics decoding applies one strategy to the whole loudspeaker set. In vertically extended arrays, this can produce a blurred height image because upper and middle layers are treated too uniformly.
 
-By separating the array into decoder units, you can tune psychoacoustic parameters per layer while keeping the field-based Ambisonics structure intact.
+By separating the array into decoder units, you can **experiment with per-layer psychoacoustic tuning** while keeping the field-based Ambisonics structure intact. The main advantage is not that MultiDecoder "knows perception" by itself, but that it gives you a controlled way to compare different settings for different loudspeaker zones.
 
 That is why MultiDecoder is especially useful in:
 

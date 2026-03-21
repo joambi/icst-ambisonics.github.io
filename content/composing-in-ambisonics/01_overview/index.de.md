@@ -7,9 +7,17 @@ draft: true
 ---
 
 <div class="home-section-header home-section-header--studio" style="margin-bottom:1.4rem;">
-<p class="home-section-label">For Composers</p>
+<p class="home-section-label">Für Komponist:innen</p>
 <p class="home-section-lead">Ein Guide fuer räumliches Denken, Hören und Arbeiten in Ambisonics — von FOA/HOA-Kontext und akustischer Gestalt bis zu Spatial Counterpoint, Werkzeugen und Studio-Praxis.</p>
 </div>
+
+> **Kurz gesagt:** Dieser Bereich hilft dir, Raum nicht nur zu mischen, sondern als **kompositorisches Material** zu entwerfen, zu überprüfen und in verschiedenen Wiedergabesituationen tragfähig zu machen.
+
+## Schnelle Einstiege
+
+- **Neu im Thema?** Starte mit den **10 Fragen**, danach **Analytisches Hören**.
+- **Mitten in einem Stück?** Gehe direkt zu **Spatial Counterpoint** und **Raumparameter**.
+- **Vor einer Produktion oder Residency?** Öffne **Werkzeuge und Software** und danach **Studiopraxis am ICST**.
 
 Ambisonics macht es möglich, Raum als eigenständiges kompositorisches Material zu behandeln — gleichwertig mit Klangfarbe, Zeit und Dynamik. Quellen nähern sich an, entfernen sich, staffeln sich in Höhe und Tiefe: Das sind keine technischen Effekte, sondern formale Entscheidungen.
 
@@ -46,6 +54,12 @@ Wenn du diesen Bereich durcharbeitest, sollst du vor allem drei Dinge können:
 - **geeignete Arbeitsweisen wählen**: vom ersten Entwurf über Monitoring und B-Format bis zur Frage, welches Setup oder welche Toolchain für ein Stück sinnvoll ist
 
 Der rote Faden ist dabei immer derselbe: Wie wird aus einem Klang nicht nur ein Ereignis in der Zeit, sondern ein Ereignis **im Raum**?
+
+## Was du am Ende konkret mitnehmen sollst
+
+- **ein sprachliches Vokabular**, um räumliche Entscheidungen zu benennen und zu dokumentieren
+- **ein kompositorisches Modell**, um Nähe, Distanz, Höhe, Diffusion und Bewegung bewusst zu organisieren
+- **einen praktikablen Workflow**, der zwischen B-Format, Monitoring, Export und Aufführung nicht auseinanderfällt
 
 ## Warum in 3D-Ambisonics komponieren?
 
@@ -117,9 +131,9 @@ Das lässt sich auch als Gegenüberstellung zweier Denkweisen beschreiben: In ei
 
 ## Lesepfade
 
-- **Für den ersten Einstieg**: `Geschichte von Ambisonics: FOA und HOA` → `Die 10 Fragen im 3D-Raum` → `Die Akustische Gestalt eines Klanges`
+- **Für den ersten Einstieg**: `Overview` → `Analytisches Hören` → `Die 10 Fragen im 3D-Raum`
 - **Für Stückentwicklung und Komposition**: `Die 10 Fragen` → `Spatial Counterpoint` → `Raumparameter als kompositorisches Material` → `Vergleich kompositorischer Raumstrategien`
-- **Für Produktion und Setup**: `Werkzeuge und Software` → `Studiopraxis in Ambisonics am ICST`
+- **Für Produktion und Setup**: `Werkzeuge und Software` → `Studiopraxis in Ambisonics am ICST` → `Binaurales Rendering` → `Formate, Stems und Archivierung`
 
 Diese Lesepfade sind bewusst **nicht identisch** mit der numerischen Kapitelreihenfolge. Sie markieren unterschiedliche Einstiege: Der erste Pfad fuehrt ueber Wahrnehmung und Grundbegriffe in das Thema ein, waehrend der zweite direkt auf kompositorische Anwendung und Stueckentwicklung zielt.
 

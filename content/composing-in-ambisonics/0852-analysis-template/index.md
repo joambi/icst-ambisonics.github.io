@@ -2,7 +2,7 @@
 title: "Spatial Analysis Template"
 description: "A six-step analytical template for listening to and reading spatial composition — parametric observation, strategic classification, psychoacoustic assessment."
 date: 2026-01-01T00:00:00
-weight: 852
+weight: 86
 draft: true
 translationKey: "composing-analysis-template"
 ---

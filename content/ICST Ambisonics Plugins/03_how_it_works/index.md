@@ -28,6 +28,9 @@ The most important rule is this:
 - headphone monitoring should use a **separate binaural decoder**
 - final export should come from the **Bformat Master**, not from the decoder output
 
+A helpful way to think about Ambisonics is this: the system does not primarily store speakers or objects, but a **sound field representation**.
+The decoder does not "create space" afterwards. It projects an already encoded spatial field onto a concrete loudspeaker setup.
+
 ## What each part does
 
 - **Source**  

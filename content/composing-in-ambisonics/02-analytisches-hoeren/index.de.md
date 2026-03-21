@@ -5,7 +5,6 @@ date: 2026-01-01T00:00:00
 weight: 20
 draft: true
 translationKey: "composing-analytical-listening"
-hidden_in_nav: true
 ---
 
 Analytisches Hören ist die Voraussetzung für kompositorisches Handeln. Bevor räumliche Trajektorien, Schichtungen und Perspektiven gezielt eingesetzt werden können, muss ein Vokabular entstehen, mit dem sich räumliche Ereignisse in Stücken anderer Komponist:innen beschreiben, unterscheiden und in eigenes Arbeiten übersetzen lassen. Dieses Kapitel liefert einen solchen Analyserahmen — nicht für das passive Hören, sondern für das **Hören mit kompositorischer Absicht**.

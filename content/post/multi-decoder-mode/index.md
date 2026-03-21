@@ -33,6 +33,10 @@ Use Multi-Decoder Mode when your setup includes:
 
 For straightforward setups (single array, single geometry), the standard single-decoder mode is sufficient.
 
+> [!Note]
+> Multi-Decoder Mode is not a direct implementation of Blauert bands or any other fixed psychoacoustic model.
+> It is better understood as a **layer-aware decoding tool**: you can compare and refine different strategies for different loudspeaker zones while keeping the same B-format source.
+
 ---
 
 ## Activating Multi-Decoder Mode
@@ -71,6 +75,9 @@ For each of the four decoders, you can set:
 ### 5. Filters
 - Eight filter options are available per decoder.
 - Adjust per-decoder EQ and spatial filtering independently.
+- Use filters carefully and for clear reasons.
+- In many cases, small layer-specific corrections are more useful than strong spectral reshaping.
+- A height layer may benefit from slightly different spectral treatment than the main ring, but this should always be verified by listening on the real array.
 
 ### 6. Mute and Gain
 - Each decoder has an independent **mute** button and **gain** control.
@@ -107,6 +114,19 @@ Use `Shift + Control + S` / `Shift + Control + M` (macOS) for keyboard-based sol
 
 ---
 
+## What Multi-Decoder Mode is not
+
+Multi-Decoder Mode is not:
+
+- a direct Blauert-band decoder
+- a distance renderer by itself
+- automatically better than a single decoder
+- a substitute for correct geometry, speaker verification, and routing discipline
+
+Its strength lies in **controlled comparison**: you can separate loudspeaker groups and test how order, weighting, gain, and filtering affect the perceived result.
+
+---
+
 ## Example: Horizontal Ring + Height Dome
 
 A common multi-decoder use case at ICST is an **Oktagon ring** (8 speakers, horizontal) combined with a **height layer** (4 elevated speakers):
@@ -117,6 +137,7 @@ A common multi-decoder use case at ICST is an **Oktagon ring** (8 speakers, hori
 | B       | Height (9–12)   | 1st   | MaxRe     |
 
 This setup allows fine-tuned decoding for each layer independently, with separate gain compensation for the height speakers.
+The split can be useful because the horizontal ring and the height layer do not always benefit from identical decoding settings. The main ring often carries the most stable image, while the height layer may require more careful tuning to avoid sounding weak, blurry, or detached.
 
 ---
 
@@ -125,4 +146,3 @@ This setup allows fine-tuned decoding for each layer independently, with separat
 - 📖 [ICST AmbiDecoder Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - 📥 [Download v3.2](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 - 📺 [ICST Ambisonics Videos on YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)
-

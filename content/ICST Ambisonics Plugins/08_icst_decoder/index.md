@@ -84,6 +84,13 @@ Create three 64-channel tracks:
 
 This separation keeps the session transparent and makes later troubleshooting much easier.
 
+> [!note]
+> The decoder is not just a speaker router. It projects a **B-format sound field** onto a real loudspeaker array.
+> This is why speaker geometry, Ambisonics order, weighting, delay, and filtering all affect the perceived image.
+>
+> If you want the conceptual background, see:
+> [Why the decoder sounds the way it does – Methodological context](/post/decoder-methodological-context/)
+
 ## Basic setup
 
 1. Insert the **ICST AmbiDecoder** on the decoder track.
@@ -96,6 +103,16 @@ This separation keeps the session transparent and makes later troubleshooting mu
 ![Add plugin](CleanShot%202026-02-10%20at%2017.54.52@2x.png)
 ![Speaker editing](Speaker_Editing.gif)
 ![Ambisonics order](CleanShot%202026-02-11%20at%2009.30.18@2x.png)
+
+### Choosing a weighting scheme
+
+Weighting changes the trade-off between spatial focus and stability.
+
+- **Max-rE:** usually the best starting point for clear localization and focused images
+- **In-Phase:** often more stable on irregular arrays or difficult listening positions
+- **Basic:** useful as a neutral reference when comparing behaviours
+
+If you are unsure, start with **Max-rE**, then compare with **In-Phase** on the real array.
 
 ## Per-speaker control
 
@@ -158,3 +175,13 @@ Related pages:
 - [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+
+## Go deeper
+
+These articles extend the concepts on this page with practical examples and theoretical background:
+
+- [Why the decoder sounds the way it does – Methodological context](/post/decoder-methodological-context/)
+- [How it Works](/icst-ambisonics-plugins/03_how_it_works/)
+- [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
+- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Glossary](/composing-in-ambisonics/10-glossary/)
