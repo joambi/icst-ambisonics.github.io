@@ -66,6 +66,25 @@ Starte mit dieser Minimal-Logik:
 
 Die praktische Regel ist: zuerst das Routing stabil machen, dann das Decoding verfeinern.
 
+## Decoder-Logik in drei Schritten
+
+Der MultiDecoder ersetzt die Grundlogik des Decoders nicht, sondern erweitert sie auf mehrere Lautsprecherzonen:
+
+1. **Geometrie**  
+   Jedes Lautsprecher-Subset klar definieren und prüfen, **wo** jede Einheit projiziert.
+2. **Laufzeit**  
+   Sicherstellen, dass Skalierung, Distanzen und Laufzeitverhältnisse stabil sind, bevor Ebenen verglichen werden.
+3. **Abstimmung**  
+   Erst dann Ordnung, Gewichtung, Gain und Filterung vergleichen, um zu hören, **wie** sich die Ebenen wahrnehmungsbezogen unterscheiden.
+
+Praktisch heißt das: keine Abstimmungs-Experimente starten, solange Geometrie oder Laufzeit noch unklar sind.
+
+> [!tip]
+> **Decoder-Serie:**
+> - **Geometrie:** [XYZ und AED – Zwei Koordinatensysteme, ein Lautsprecher](/post/xyz-vs-aed-koordinatensysteme/)
+> - **Laufzeit:** [Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
+> - **Abstimmung:** [Der Filter-Tab – Praxisbeispiele und Anwendungsfälle](/post/decoder-filter-praxisbeispiele/)
+
 ## Typische Layer-Strategien
 
 Typische Anwendungsfälle:
@@ -76,6 +95,20 @@ Typische Anwendungsfälle:
 - A/B-Vergleich verschiedener Decoding-Strategien in einer Session
 
 ![Lautsprecherauswahl](CleanShot%202026-02-11%20at%2013.55.43@2x.png)
+
+## Psychoakustische Einordnung
+
+Der MultiDecoder implementiert die Blauertschen Bänder nicht direkt. Er bietet vielmehr eine praktische Möglichkeit, **verschiedene Lautsprecherebenen unterschiedlich abzustimmen**, während ein gemeinsamer B-Format-Eingang erhalten bleibt.
+
+Das kann sinnvoll sein, weil unterschiedliche Wahrnehmungsaufgaben nicht auf dieselben Hinweise gleich stark reagieren:
+
+- **Elevation** hängt oft stark von spektralen Details ab, besonders im oberen Frequenzbereich
+- die **horizontale Hauptabbildung** profitiert meist von einem möglichst stabilen und neutralen Decoding
+- **tieffrequente Stütze** trägt häufig stärker zu Gewicht und Umhüllung bei als zu klarer vertikaler Lokalisation
+
+Deshalb kann eine layer-basierte Abstimmung in vertikal erweiterten Arrays hilfreich sein. Eine `Top`-Ebene kann von anderer Ordnung, Gewichtung oder behutsamer Filterung profitieren als der Hauptring, während eine `Bottom`- oder `Sub`-Ebene wiederum eine andere wahrnehmungsbezogene Rolle erfüllt.
+
+Wichtig: Eine Lautsprecherebene ist **nicht automatisch eine Tiefenebene der Wahrnehmung**. Höhe, Breite, Umhüllung und Distanz hängen zusammen, sind aber nicht identisch.
 
 ### Ambisonics-Ordnung und Gewichtung
 
@@ -93,6 +126,9 @@ Jede Einheit besitzt auch ihre eigene Filtersektion. Das ist besonders nützlich
 
 ![Filtersektion](CleanShot%202026-02-11%20at%2014.05.58@2x.png)
 
+> [!note]
+> Nutze Filter zurückhaltend. Meist geht es nicht darum, das Schallfeld in künstliche Frequenzbänder zu zerlegen, sondern kleine Korrekturen vorzunehmen, die Klarheit, Stabilität oder Übersetzbarkeit auf einem konkreten Array verbessern.
+
 ### Audio-Parameter pro Einheit
 
 ![Audio-Parameter](CleanShot%202026-02-11%20at%2014.09.04@2x.png)
@@ -103,11 +139,19 @@ Pro Einheit lassen sich steuern:
 2. **Individueller Gain**
 3. **Mute / Unmute**
 
+### Typische wahrnehmungsbezogene Rollen von Ebenen
+
+| Ebene | Typisches Ziel | Typische Behandlung |
+|---|---|---|
+| **Top** | klarere Höhenhinweise | sorgfältiger Vergleich von Ordnung/Gewichtung, eventuell leichte HF-Stützung |
+| **Mid** | stabiles Hauptbild | möglichst neutrales Decoding, oft die Referenzebene |
+| **Bottom / Sub** | Gewicht, Stütze, Umhüllung | zurückhaltende LF-orientierte Behandlung, kein „Distanz-Decoder“ an sich |
+
 ## Warum das wichtig ist
 
 Klassisches Ambisonics-Decoding behandelt den gesamten Lautsprechersatz mit einer einheitlichen Strategie. In vertikal erweiterten Arrays kann das zu einer unscharfen Höhenabbildung führen, weil obere und mittlere Ebenen zu gleich behandelt werden.
 
-Durch die Trennung in Decodereinheiten lassen sich psychoakustische Parameter pro Ebene gezielt anpassen, während die feldbasierte Ambisonics-Struktur erhalten bleibt.
+Durch die Trennung in Decodereinheiten lässt sich **mit psychoakustischer Abstimmung pro Ebene experimentieren**, während die feldbasierte Ambisonics-Struktur erhalten bleibt. Der Hauptvorteil ist nicht, dass der MultiDecoder „Wahrnehmung kennt“, sondern dass er einen kontrollierten Vergleich verschiedener Einstellungen für verschiedene Lautsprecherzonen erlaubt.
 
 Deshalb ist MultiDecoder besonders sinnvoll in:
 

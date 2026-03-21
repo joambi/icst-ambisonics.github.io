@@ -84,6 +84,25 @@ Lege drei 64-Kanal-Spuren an:
 
 Diese Trennung hält die Session übersichtlich und vereinfacht spätere Fehlersuche deutlich.
 
+## Decoder-Logik in drei Schritten
+
+Du kannst die Arbeit mit dem Decoder als drei Schritte denken:
+
+1. **Geometrie**  
+   Lautsprecherkoordinaten bestimmen, **wo** das System Lautsprecher im Raum verortet.
+2. **Laufzeit**  
+   Laufzeitkompensation bestimmt, **wann** Signale am Hörplatz ankommen.
+3. **Abstimmung**  
+   Gewichtung, Filterung und verwandte Einstellungen formen, **wie deutlich** oder **wie gefärbt** das Ergebnis wahrgenommen wird.
+
+Diese Reihenfolge ist wichtig: zuerst die Geometrie verlässlich machen, dann die Zeitverhältnisse stabilisieren, danach den Klang fein abstimmen.
+
+> [!tip]
+> **Decoder-Serie:**
+> - **Geometrie:** [XYZ und AED – Zwei Koordinatensysteme, ein Lautsprecher](/post/xyz-vs-aed-koordinatensysteme/)
+> - **Laufzeit:** [Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
+> - **Abstimmung:** [Der Filter-Tab – Praxisbeispiele und Anwendungsfälle](/post/decoder-filter-praxisbeispiele/)
+
 ## Grundaufbau
 
 1. Den **ICST AmbiDecoder** auf der Decoder-Spur einsetzen.

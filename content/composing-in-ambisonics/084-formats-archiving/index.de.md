@@ -10,6 +10,17 @@ languageCode: de
 
 Das Abschliessen einer Ambisonics-Komposition stellt sofort eine praktische Frage: Was liefert man tatsächlich, und an wen? Die Antwort hängt vom Kontext ab — Festival-Aufführung, Label-Veröffentlichung, Streaming-Plattform oder Langzeitarchiv — und jeder Kontext erfordert ein anderes Format oder eine Kombination. Das von Beginn an richtig zu machen vermeidet aufwändige Re-Exporte und stellt sicher, dass das Werk auch in Zukunft zugänglich und dekodierbar bleibt.
 
+> [!note]
+> Diese Seite konzentriert sich bewusst auf den **ICST- bzw. B-Format-zentrierten Workflow** und die häufigsten daraus abgeleiteten Lieferwege. Themen wie **ADM/BWAV**, **MPEG-H**, plattformspezifische Streaming-Pipelines oder die Integration in **Game-Engines** werden hier nur angerissen oder auf externe Ressourcen ausgelagert. Wer ein wirkliches **„All-formats“-Howto** für Broadcast, Streaming, VR und interaktive Medien sucht, muss ergänzend recherchieren.
+
+### Externe Einstiege
+
+- **Ambisonics zu ADM / Atmos-Delivery**: [Von der Ambisonics-Szene zum Atmos Bed – Methodik und Werkzeuge](/post/ambisonics-to-atmos-bed/)
+- **ADM / BWAV / ADM in BW64**: [EBU ADM Guidelines](https://adm.ebu.io/) und [ITU-R BS.2076 Audio Definition Model](https://www.itu.int/rec/R-REC-BS.2076/)
+- **MPEG-H Audio**: [Fraunhofer IIS – MPEG-H Überblick](https://www.iis.fraunhofer.de/en/ff/amm/broadcast-streaming/mpegh.html)
+- **Unity / Ambisonics**: [Unity Manual – Ambisonic Audio](https://docs.unity.cn/Components/AmbisonicAudio.html)
+- **Unreal Engine / Ambisonics**: [Epic-Dokumentation – Ambisonics](https://dev.epicgames.com/documentation/en-us/unreal-engine/ambisonics)
+
 ## Das B-Format-Master: Der archivalische Kern
 
 Die wichtigste Datei, die erhalten werden muss, ist das **B-Format-Master** — das enkodierte Ambisonics-Signal vor jeder Dekodierung oder jedem Downmix. Dies ist die formatunabhängige Archivversion, aus der jedes zukünftige Wiedergabeformat abgeleitet werden kann: Lautsprecherarrays beliebiger Geometrie, Binaural-Stereo, Stereo-Downmix oder Formate, die noch nicht erfunden wurden.
@@ -20,7 +31,7 @@ Zwei Konventionen existieren für die Speicherung von B-Format-Signalen in Audio
 
 | Konvention | Kanalreihenfolge | Normalisierung | Status |
 |------------|-----------------|----------------|--------|
-| **AmbiX** | ACN (W, Y, Z, X, …) | SN3D | Aktueller Standard; verwendet von IEM, SPARTA, YouTube 360, Apple |
+| **AmbiX** | ACN (W, Y, Z, X, …) | SN3D | Aktueller Standard für HOA-Austausch und Archivierung; verwendet von IEM, SPARTA, YouTube 360 und vielen Ambisonics-Toolchains |
 | **FuMa** | W, X, Y, Z, … | MaxN | Legacy; verwendet in älteren Cycling '74- und SuperCollider-Tools |
 
 **Immer in AmbiX archivieren.** FuMa-Unterstützung nimmt ab und viele moderne Tools erkennen es nicht mehr. Wenn Material in FuMa vorliegt, vor der Archivierung mit dem IEM MultichannelConverter oder dem `ambix_converter`-Dienstprogramm in AmbiX konvertieren.
@@ -67,11 +78,16 @@ Ein vollständiges Stem-Paket dokumentiert die kompositorischen Schichten und er
 - Mehrkanal-Lautsprecher-Renders (siehe unten)
 - Stereo-Downmix
 
-Nicht alle Kontexte erfordern alle Stems. Für eine Festival-Aufführung ist das Master-B-Format oft ausreichend. Für Label-Lieferung oder institutionelle Archivierung ist der vollständige Stem-Baum gute Praxis.
+Nicht alle Kontexte erfordern alle Stems. Wenn der Aufführungsort oder das Studio **vor Ort dekodiert**, ist das Master-B-Format oft ausreichend. Wenn eine **direkt abspielbare Mehrkanal-Datei** geliefert werden muss, wird ein vorab dekodierter Render notwendig. Für Label-Lieferung oder institutionelle Archivierung ist der vollständige Stem-Baum gute Praxis.
 
 ## Konzert- und Festival-Lieferung
 
-Festivals und Konzertsäle fordern typischerweise eine **vorab dekodierte Mehrkanal-Audiodatei**, die auf ihr spezifisches Lautsprecherlayout abgestimmt ist, statt einer B-Format-Datei, die sie selbst dekodieren. Häufige Konfigurationen:
+Festivals und Konzertsäle arbeiten meist in einem von zwei Modi:
+
+- **Dekodierung vor Ort**: Künstler:in liefert ein B-Format-Master, der Veranstaltungsort dekodiert selbst
+- **Vorab dekodierte Wiedergabe**: Künstler:in liefert einen Mehrkanal-Render passend zum exakten Lautsprecherlayout
+
+In vielen praktischen Festival-Situationen ist die **vorab dekodierte Mehrkanal-Datei** die sicherere Variante, besonders wenn vor Ort kein verlässlicher HOA-Decoding-Workflow vorhanden ist. Häufige Konfigurationen:
 
 | Format | Kanalanzahl | Hinweise |
 |--------|------------|---------|
@@ -103,7 +119,7 @@ Online-Plattformen behandeln Spatial Audio unterschiedlich:
 | Bandcamp / SoundCloud | Nur Stereo | Binaural-Stereo-Master liefern |
 | Streaming (allgemein) | Stereo | –14 LUFS integriert; –1 dBTP True Peak |
 
-Für die meisten Label- und Streaming-Releases ist ein **Binaural-Stereo-Master** das praktische Vertriebsformat. Die verwendete HRTF dokumentieren und angeben, ob die Datei ausschliesslich für Kopfhörerwiedergabe bestimmt ist.
+Für viele Label- und Streaming-Releases auf Plattformen, die **keine immersiven Master direkt annehmen**, ist ein **Binaural-Stereo-Master** das praktische Vertriebsformat. Wo eine Plattform ein immersives Lieferformat wie **Dolby Atmos ADM/BWF** verlangt, muss dieses plattformspezifische Master separat vorbereitet werden. Die verwendete HRTF dokumentieren und angeben, ob die binaurale Datei ausschliesslich für Kopfhörerwiedergabe bestimmt ist.
 
 ## Label- und Verlags-Lieferung
 

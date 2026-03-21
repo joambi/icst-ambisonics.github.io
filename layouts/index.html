@@ -32,7 +32,7 @@
     </div>
   {{ end }}
 
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+  {{ $paginator := .Paginate (where (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) "Lang" "eq" $.Site.Language.Lang) }}
   {{ range $paginator.Pages }}
     <div
       class="post {{ with .Site.Params.doNotLoadAnimations }}

@@ -91,6 +91,25 @@ This separation keeps the session transparent and makes later troubleshooting mu
 > If you want the conceptual background, see:
 > [Why the decoder sounds the way it does – Methodological context](/post/decoder-methodological-context/)
 
+## Decoder logic in three steps
+
+You can think of decoder work in three stages:
+
+1. **Geometry**  
+   Loudspeaker coordinates define **where** the system places speakers in space.
+2. **Timing**  
+   Delay compensation defines **when** signals arrive at the listening position.
+3. **Voicing**  
+   Weighting, filtering, and related settings shape **how clearly** or **how coloured** the result is perceived.
+
+That order matters. First make geometry reliable, then stabilise timing, then refine the sound.
+
+> [!tip]
+> **Decoder series:**
+> - **Geometry:** [XYZ and AED – Comparing coordinate systems](/post/xyz-vs-aed-koordinatensysteme/)
+> - **Timing:** [Scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)
+> - **Voicing:** [The Filter tab – Practical examples and use cases](/post/decoder-filter-praxisbeispiele/)
+
 ## Basic setup
 
 1. Insert the **ICST AmbiDecoder** on the decoder track.
@@ -184,4 +203,3 @@ These articles extend the concepts on this page with practical examples and theo
 - [How it Works](/icst-ambisonics-plugins/03_how_it_works/)
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
-- [Glossary](/composing-in-ambisonics/10-glossary/)

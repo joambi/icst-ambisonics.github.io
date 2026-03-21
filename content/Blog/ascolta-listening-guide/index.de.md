@@ -9,7 +9,7 @@ group: "Ascolta"
 tags: ["ascolta", "hören", "spatial-audio", "analyse", "guide"]
 ---
 
-*Teil von [Komponieren in Ambisonics](/composing-in-ambisonics/) · Kapitel 1 — Analytisches Hören · [ascolta Sessions](/blog/ascolta/)*
+*Kapitel 1 — Analytisches Hören · [ascolta Sessions](/blog/ascolta/)*
 
 ---
 
@@ -225,9 +225,6 @@ Pierre Schaeffers Konzept der *écoute réduite* beschreibt ein Hören, das Klä
 
 Denis Smalley entwickelt in *Space-form and the acousmatic image* (2007) verschiedene Kategorien wie *perspectival space*, *source-bonded space* und *spectral space*. Diese Begriffe beziehen sich direkt auf das hier beschriebene Beobachtungsraster. Seine frühere *Spectromorphology* (1997) beschreibt, wie sich spektrale Merkmale und deren Veränderungen im Laufe der Zeit zu bestimmten Formen verbinden und daraus räumliche Kategorien entstehen.
 
-<div class="hero__links">
-  <a class="hero__link" href="/de/composing-in-ambisonics/085-werkanalysen/">Kapitel Werkanalysen lesen</a>
-</div>
 
 ## Literatur
 

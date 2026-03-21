@@ -66,6 +66,25 @@ Start with this minimal logic:
 
 The practical rule is: first make the routing work, then refine the decoding.
 
+## Decoder logic in three steps
+
+MultiDecoder does not replace the basic decoder logic. It extends it across several loudspeaker zones:
+
+1. **Geometry**  
+   Define each loudspeaker subset clearly and verify **where** each unit projects.
+2. **Timing**  
+   Make sure scaling, distances, and delay relationships are stable before comparing layers.
+3. **Voicing**  
+   Only then compare order, weighting, gain, and filtering to hear **how** the layers differ perceptually.
+
+In practice: do not start with voicing experiments while geometry or timing are still uncertain.
+
+> [!tip]
+> **Decoder series:**
+> - **Geometry:** [XYZ and AED – Comparing coordinate systems](/post/xyz-vs-aed-koordinatensysteme/)
+> - **Timing:** [Scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)
+> - **Voicing:** [The Filter tab – Practical examples and use cases](/post/decoder-filter-praxisbeispiele/)
+
 ## Typical layer strategies
 
 Typical use cases:

@@ -9,7 +9,7 @@ group: "Ascolta"
 tags: ["ascolta", "listening", "spatial-audio", "analysis", "guide"]
 ---
 
-*Part of [Composing in Ambisonics](/composing-in-ambisonics/) · Chapter 1 — Analytical Listening · [ascolta sessions](/blog/ascolta/)*
+*Chapter 1 — Analytical Listening · [ascolta sessions](/blog/ascolta/)*
 
 ---
 
@@ -129,11 +129,7 @@ Denis Smalley's concept of *space-form* (1997, 2007) offers one of the most usef
 
 **Spectral space** is space that emerges from spectral and textural structure rather than from localisation — the sense that high frequencies occupy the upper hemisphere while low frequencies surround the floor, or that brightness and density are distributed directionally. This category is the least immediately obvious but often the most compositionally significant. *Listening task: on a second pass, close your eyes and try to sense the spectral geography of the piece — where does the high material live? Where does the dense material concentrate?*
 
-For a compositional perspective on the same methodology — including detailed case studies and psychoacoustic analysis — see the [Work Analyses chapter](/composing-in-ambisonics/085-work-analyses/).
-
-<div class="hero__links">
-  <a class="hero__link" href="/composing-in-ambisonics/085-work-analyses/">Read the Work Analyses chapter</a>
-</div>
+For a compositional perspective on the same methodology — including detailed case studies and psychoacoustic analysis — see the [Blog](/blog/) for forthcoming work analyses.
 
 #### Five analytical questions
 

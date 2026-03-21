@@ -148,3 +148,6 @@ Das folgende Workflow-Schema zeigt den Bereich nicht als starre Produktionspipel
   <img src="/blog/icst-composer-studio-overview/ICST_STUDIO.png" alt="ICST Kompositionsstudio in Zuerich" loading="lazy" />
   <figcaption><strong>Komponieren in Ambisonics.</strong> Theorie, Hörpraxis, Werkzeuge und Aufführungskontexte greifen hier ineinander statt getrennt behandelt zu werden.</figcaption>
 </figure>
+
+---
+

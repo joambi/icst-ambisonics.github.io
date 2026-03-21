@@ -8,7 +8,7 @@ weight: 33
 tags: ["decoder", "filter", "eq", "raumakustik", "multidecoder", "klanganpassung", "tutorial"]
 key_points:
   - "Jeder Lautsprecher kann individuell mit bis zu acht Filtertypen bearbeitet werden"
-  - "Filter kompensieren raumakustische Probleme oder unterstützen psychoakustische Tiefenstaffelung"
+  - "Filter kompensieren raumakustische Probleme oder unterstützen eine vorsichtige psychoakustische Abstimmung"
   - "Im MultiDecoder-Modus kann jede Decoder-Einheit eine eigene Filtersektion erhalten"
 difficulty: "intermediate"
 ---
@@ -16,6 +16,10 @@ difficulty: "intermediate"
 Level: Intermediate | **Audience:** Techniker:in, Komponist:in mit technischem Interesse, Studiobetreiber:in.
 
 Diese Seite erklärt, wie du den Filter-Tab des ICST AmbiDecoders praktisch nutzt – und zeigt konkrete Szenarien, wann welche Filterstrategie sinnvoll ist.
+
+> **Gemeinsamer Kernsatz dieser Decoder-Serie:** Der Decoder erzeugt den Raum nicht neu, sondern projiziert ein B-Format-Feld auf ein reales System.
+>
+> In diesem Artikel geht es um den dritten Schritt dieser Projektion: **Abstimmung**. Filter, Gewichtung und ähnliche Eingriffe bestimmen, **wie deutlich** oder **wie gefärbt** das Ergebnis wahrgenommen wird, nachdem Geometrie und Laufzeit bereits stimmen.
 
 ---
 
@@ -31,6 +35,8 @@ Diese Seite erklärt, wie du den Filter-Tab des ICST AmbiDecoders praktisch nutz
 Jeder Slot hat drei Parameter: **Frequenz**, **Gain (dB)** und **Q-Wert** (Güte / Bandbreite).
 
 Der **FFT-Toggle** zeigt das gemessene oder simulierte Spektrum des Lautsprechers im Hintergrund des Displays – hilfreich zur visuellen Kontrolle der Filterkurve.
+
+> **Wichtige Einordnung:** Der Filter-Tab ist in erster Linie für gezielte Korrekturen und vorsichtige Abstimmung gedacht, nicht für eine harte Zerlegung des Schallfeldes in starre Wahrnehmungsbänder.
 
 ---
 
@@ -83,7 +89,7 @@ Damit wird die Mode gezielt adressiert, ohne den gesamten Bassbereich zu schwäc
 - Gain: +3.0 bis +5.0 dB
 - Q: 1.0
 
-Das unterstützt die psychoakustische Höhenwahrnehmung über den Precedence-Effekt und macht Bewegungen nach oben plastischer. Dieses Prinzip nutzt das PDF selbst als Beispiel für frequenzabhängige Modulation im MultiDecoder-Modus.
+Das kann die Wahrnehmung von Höhe unterstützen und Bewegungen nach oben deutlicher machen. Solche Eingriffe sollten jedoch immer vorsichtig dosiert und am realen Array gegengehört werden.
 
 ---
 
@@ -110,7 +116,7 @@ Im **MultiDecoder-Modus** hat jede der bis zu vier Decoder-Einheiten eine eigene
 | Middle (mitte) | 16 Speaker | flach (keine Filterung) |
 | Deep (unten/sub) | 12 Speaker | Low Pass 300 Hz |
 
-Dieser Ansatz orientiert sich an psychoakustischen Wahrnehmungsmodellen: Tieffrequenzen tragen zur Umhüllung bei, Hochfrequenzen zur Lokalisationsschärfe in der Vertikalen. Durch die getrennte Filterung kann beides gezielt optimiert werden, ohne das B-Format zu verändern.
+Dieser Ansatz kann sich an psychoakustischen Wahrnehmungsmodellen orientieren: Tieffrequenzen tragen oft stärker zu Umhüllung bei, Hochfrequenzen stärker zu vertikaler Klarheit. Die getrennte Filterung ist dabei keine feststehende Wahrheitsmaschine, sondern eine Form vorsichtiger Abstimmung, die auf dem konkreten Array überprüft werden muss.
 
 ---
 
@@ -138,9 +144,23 @@ Nutze die Filter im Decoder für gezielte, spezifische Korrekturen – nicht als
 
 ---
 
+## Decoder-Serie: Abstimmung
+
+Wenn du den Decoder als Dreischritt denkst, ist diese Seite der Teil **Abstimmung**:
+
+- **Geometrie** bestimmt, **wo** Lautsprecher stehen
+- **Laufzeit** bestimmt, **wann** Signale ankommen
+- **Abstimmung** bestimmt, **wie deutlich** oder **wie gefärbt** das Ergebnis wahrgenommen wird
+
+Filterung ist deshalb der letzte Schritt, nicht der erste. Wenn Geometrie oder Laufzeit noch unstimmig sind, wirken Filter schnell wie Problemlöser, obwohl sie nur Symptome überdecken.
+
+---
+
 ## Weiterführende Seiten
 
 - [ICST Decoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
+- [XYZ und AED – Koordinatensysteme im Vergleich](/post/xyz-vs-aed-koordinatensysteme/)
+- [Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
 - [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)

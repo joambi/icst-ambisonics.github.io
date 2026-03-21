@@ -17,6 +17,10 @@ Level: Intermediate | **Audience:** Techniker:in, Installationskünstler:in, Stu
 
 Diese Seite erklärt, wie die Scaling- und Delay-Kompensationsfunktion des ICST AmbiDecoders funktioniert und wann du sie brauchst.
 
+> **Gemeinsamer Kernsatz dieser Decoder-Serie:** Der Decoder erzeugt den Raum nicht neu, sondern projiziert ein B-Format-Feld auf ein reales System.
+>
+> In diesem Artikel geht es um den zweiten Schritt dieser Projektion: **Laufzeit**. Delay-Kompensation bestimmt, **wann** Signale am Hörzentrum ankommen, nachdem die Geometrie bereits festgelegt wurde.
+
 ---
 
 ## Das Problem: Lautsprecher stehen nicht alle gleich weit weg
@@ -110,6 +114,18 @@ Ein kurzer Pink-Noise-Test mit Mute/Solo-Überprüfung zeigt sofort, ob die zeit
 
 ---
 
+## Decoder-Serie: Laufzeit
+
+Wenn du den Decoder als Dreischritt denkst, ist diese Seite der Teil **Laufzeit**:
+
+- **Geometrie** bestimmt, **wo** Lautsprecher stehen
+- **Laufzeit** bestimmt, **wann** ihre Signale ankommen
+- **Abstimmung** bestimmt, **wie deutlich** oder **wie gefärbt** das Ergebnis erscheint
+
+Scaling und Delay-Kompensation sind deshalb keine kreative Klangformung, sondern ein Übersetzungsschritt zwischen normiertem Preset und realem Raum. Erst wenn die Zeitverhältnisse stimmen, lassen sich Gewichtung, Filter oder MultiDecoder-Layer sinnvoll beurteilen.
+
+---
+
 ## Preset speichern und exportieren
 
 Nach jeder Skalierung solltest du das Setup als Preset speichern:
@@ -126,4 +142,5 @@ Die exportierte TXT-Datei enthält alle Lautsprecherpositionen im AED-Format und
 - [ICST Decoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
 - [XYZ und AED – Koordinatensysteme im Vergleich](/post/xyz-vs-aed-koordinatensysteme/)
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
+- [Der Filter-Tab – Praxisbeispiele und Anwendungsfälle](/post/decoder-filter-praxisbeispiele/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)

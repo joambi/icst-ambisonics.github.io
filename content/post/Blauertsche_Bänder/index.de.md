@@ -3,9 +3,8 @@ title: Blauertsche Bänder
 description: "Zeigt, wie Blauerts Bänder per OSC zum IEM MultiEQ geleitet werden und welche Schritte nötig sind, um Front/Back- und Höhenbänder zu formen."
 date: 2025-05-16
 slug: blauerts-bands
+draft: true
 aliases:
-  - /de/post/blauerts-bands/
-  - /de/post/blauertsche_bänder/
   - /de/post/blauertsche_bänder/
 year: 2025
 month: 2025-05

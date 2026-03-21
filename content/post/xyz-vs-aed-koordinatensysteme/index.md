@@ -17,6 +17,10 @@ Level: Beginner | **Audience:** Techniker:in, Komponist:in, Studierende.
 
 Diese Seite erklärt, warum der ICST AmbiDecoder zwei Koordinatensysteme anbietet und wie du entscheidest, welches du verwenden solltest.
 
+> **Gemeinsamer Kernsatz dieser Decoder-Serie:** Der Decoder erzeugt den Raum nicht neu, sondern projiziert ein B-Format-Feld auf ein reales System.
+>
+> In diesem Artikel geht es um den ersten Schritt dieser Projektion: **Geometrie**. Koordinaten bestimmen, **wo** der Decoder Lautsprecher im Raum verortet.
+
 ---
 
 ## Das Problem: Wie beschreibt man, wo ein Lautsprecher steht?
@@ -116,6 +120,16 @@ Das ist die mathematische Konvention, nicht die Navigation (wo 90° oft Ost = re
 
 ## Zusammenfassung
 
+### Decoder-Serie: Geometrie
+
+Wenn du den Decoder als Dreischritt denkst, ist diese Seite der Teil **Geometrie**:
+
+- **Geometrie** bestimmt, **wo** Lautsprecher im Raum stehen
+- **Laufzeit** bestimmt, **wann** Signale dort ankommen
+- **Abstimmung** bestimmt, **wie deutlich** oder **wie gefärbt** das Ergebnis wahrgenommen wird
+
+Falsche Koordinaten sind deshalb kein klanglicher Charakterzug, sondern ein Setup-Fehler. Erst wenn die Geometrie stimmt, sind spätere Entscheidungen über Delay, Gewichtung oder Filterung sinnvoll beurteilbar.
+
 | | XYZ | AED |
 |---|---|---|
 | **Sinnvoll wenn…** | Messdaten vorhanden | Intuitive Winkelplanung |
@@ -131,4 +145,5 @@ Du musst dich nicht entscheiden. Der Decoder zeigt immer beide – nutze das, wa
 
 - [ICST Decoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
 - [Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
+- [Der Filter-Tab – Praxisbeispiele und Anwendungsfälle](/post/decoder-filter-praxisbeispiele/)
 - [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)

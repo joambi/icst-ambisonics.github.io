@@ -19,11 +19,11 @@ Womit möchtest du beginnen? Wähle deinen Einstieg.
     <strong class="icst-pillar__title">Max-Externals</strong>
     <span class="icst-pillar__desc">Live-Spatialisation und algorithmischer Klang in Max/MSP. Läuft nativ in Max 8.</span>
   </a>
-  <a class="icst-pillar icst-pillar--residency" href="/de/composing-in-ambisonics/">
+  <div class="icst-pillar icst-pillar--residency icst-pillar--coming-soon">
     <span class="icst-pillar__icon">🎼</span>
     <strong class="icst-pillar__title">Studiopraxis</strong>
-    <span class="icst-pillar__desc">Komponieren im 3D-Raum — Raumparameter, Room Capture, Binaural-Delivery, Notation.</span>
-  </a>
+    <span class="icst-pillar__desc">Komponieren im 3D-Raum — Raumparameter, Room Capture, Binaural-Delivery, Notation. <em>(Guide in Vorbereitung)</em></span>
+  </div>
   <a class="icst-pillar icst-pillar--ascolta" href="/de/blog/ascolta/">
     <span class="icst-pillar__icon">🎧</span>
     <strong class="icst-pillar__title">Konzerte & ASCOLTA</strong>
@@ -118,11 +118,7 @@ Wenn du die Anleitung lieber offline lesen oder ausdrucken möchtest:
 <div class="home-cards">
   <section class="home-card">
     <h4>🎼 Komponieren in Ambisonics</h4>
-    <p>Von analytischem Hören und räumlichem Kontrapunkt bis zu Room Capture und Binaural-Delivery — ein kuratierter Guide für Komponist:innen im 3D-Audio.</p>
-    <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/de/composing-in-ambisonics/">Zum Kompositions-Guide</a>
-      <a class="hero__link" href="/de/composing-in-ambisonics/02-analytical-listening/">Start: Analytisches Hören</a>
-    </div>
+    <p>Von analytischem Hören und räumlichem Kontrapunkt bis zu Room Capture und Binaural-Delivery — ein kuratierter Guide für Komponist:innen im 3D-Audio. <em>In Vorbereitung.</em></p>
   </section>
   <section class="home-card">
     <h4>🏛️ Im ICST-Studio arbeiten</h4>

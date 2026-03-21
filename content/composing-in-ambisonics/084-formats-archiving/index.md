@@ -9,6 +9,17 @@ translationKey: "composing-formats-archiving"
 
 Finishing a composition in Ambisonics raises an immediate practical question: what do you actually hand over, and to whom? The answer depends on the context — festival performance, label release, streaming platform, or long-term archive — and each requires a different format or combination of formats. Getting this right from the beginning of a project avoids costly re-exports and ensures the work remains accessible and decodable in the future.
 
+> [!note]
+> This page deliberately focuses on the **ICST / B-format-centred workflow** and the most common delivery paths around it. Topics such as **ADM/BWAV**, **MPEG-H**, platform-specific streaming pipelines, or **game-engine integration** are only touched on briefly here or delegated to external resources. If you are looking for an **all-formats how-to** across broadcast, streaming, VR, and interactive media, you will need additional research beyond this guide.
+
+### External starting points
+
+- **Ambisonics to ADM / Atmos delivery**: [From the Ambisonics scene to the Atmos bed – methods and tools](/post/ambisonics-to-atmos-bed/) *(currently available in German)*
+- **ADM / BWAV / ADM in BW64**: [EBU ADM Guidelines](https://adm.ebu.io/) and [ITU-R BS.2076 Audio Definition Model](https://www.itu.int/rec/R-REC-BS.2076/)
+- **MPEG-H Audio**: [Fraunhofer IIS – MPEG-H overview](https://www.iis.fraunhofer.de/en/ff/amm/broadcast-streaming/mpegh.html)
+- **Unity / Ambisonics**: [Unity Manual – Ambisonic Audio](https://docs.unity.cn/Components/AmbisonicAudio.html)
+- **Unreal Engine / Ambisonics**: [Epic documentation – Ambisonics](https://dev.epicgames.com/documentation/en-us/unreal-engine/ambisonics)
+
 ## The B-Format Master: The Archival Core
 
 The most important file to preserve is the **B-format master** — the encoded Ambisonics signal before any decoding or downmix. This is the format-agnostic archival version from which any future playback format can be derived: loudspeaker arrays of any geometry, binaural stereo, stereo downmix, or formats not yet invented.
@@ -19,7 +30,7 @@ Two conventions exist for storing B-format signals in audio files:
 
 | Convention | Channel order | Normalisation | Status |
 |------------|--------------|---------------|--------|
-| **AmbiX** | ACN (W, Y, Z, X, …) | SN3D | Current standard; used by IEM, SPARTA, YouTube 360, Apple |
+| **AmbiX** | ACN (W, Y, Z, X, …) | SN3D | Current standard for HOA interchange and archiving; used by IEM, SPARTA, YouTube 360, and many Ambisonics toolchains |
 | **FuMa** | W, X, Y, Z, … | MaxN | Legacy; used in older Cycling '74 and SuperCollider tools |
 
 **Always archive in AmbiX.** FuMa support is declining and many modern tools do not recognise it. If you receive material in FuMa, convert to AmbiX before archiving using tools such as the IEM MultichannelConverter or the `ambix_converter` utility.
@@ -66,11 +77,16 @@ A full stem package documents the compositional layers and allows future remix, 
 - Loudspeaker multichannel renders (see below)
 - Stereo downmix
 
-Not all contexts require all stems. For a festival performance, the master B-format is often sufficient. For label delivery or institutional archiving, the full stem tree is good practice.
+Not all contexts require all stems. If the venue or studio **decodes on site**, the master B-format is often sufficient. If you must deliver a **playback-ready multichannel file**, a pre-decoded render becomes necessary. For label delivery or institutional archiving, the full stem tree is good practice.
 
 ## Concert and Festival Delivery
 
-Festivals and concert venues typically request a **pre-decoded multichannel audio file** matched to their specific loudspeaker layout, rather than a B-format file they decode themselves. Common configurations:
+Festivals and concert venues usually fall into one of two workflows:
+
+- **Venue-decoded playback**: the artist delivers a B-format master and the venue decodes on site
+- **Pre-decoded playback**: the artist delivers a multichannel render matched to the exact loudspeaker layout
+
+In many practical festival situations, especially when no trusted HOA decoding workflow is available on site, the **pre-decoded multichannel file** is the safer option. Common configurations:
 
 | Format | Channel count | Notes |
 |--------|--------------|-------|
@@ -102,7 +118,7 @@ Online platforms handle spatial audio in different ways:
 | Bandcamp / SoundCloud | Stereo only | Deliver binaural stereo master |
 | Streaming (general) | Stereo | –14 LUFS integrated; –1 dBTP true peak |
 
-For most label and streaming releases, a **binaural stereo master** is the practical distribution format. Document the HRTF used and whether the file is intended for headphone playback only.
+For many labels and for platforms that do **not** accept immersive masters directly, a **binaural stereo master** is the practical distribution format. Where a platform requires an immersive delivery format such as **Dolby Atmos ADM/BWF**, that platform-specific master must be prepared separately. Document the HRTF used and whether the binaural file is intended for headphone playback only.
 
 ## Label and Publisher Delivery
 
