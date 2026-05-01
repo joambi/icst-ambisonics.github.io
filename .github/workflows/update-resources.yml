@@ -12,7 +12,12 @@ jobs:
       - name: checkout
         uses: actions/checkout@v6
       - name: install dart sass
-        run: sudo snap install dart-sass --edge
+        run: |
+          DART_SASS_VERSION="1.89.0"
+          wget -q https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          tar -xf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          sudo mv dart-sass/sass /usr/local/bin/
+          rm -rf dart-sass dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
       - name: setup hugo
         uses: peaceiris/actions-hugo@v3
         with:
