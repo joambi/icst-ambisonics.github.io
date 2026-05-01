@@ -3,7 +3,6 @@ title: "10 Questions in 3D Space"
 description: "A practical compositional checklist for Ambisonics pieces."
 date: 2026-01-01T00:00:00
 weight: 40
-draft: true
 translationKey: "composing-10-questions"
 ---
 

@@ -9,6 +9,8 @@ Level: Beginner | Audience: Composer, technician, student, studio user.
 
 Use this page when you want the shortest reliable path to a clean Ambisonics export from REAPER. The goal is simple: render the **Bformat Master**, not the decoder output.
 
+If you need to clarify ambiX, ACN/SN3D, FOA/HOA, or why the channel count matters, keep [Ambisonics Formats Explained](/learn/ambisonics-formats/) open next to this guide.
+
 ## What you will achieve
 
 By the end, you will have:
@@ -75,5 +77,6 @@ Notes: rendered from B-format master, not decoder output
 ## Related pages
 
 - [Step-by-Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [Ambisonics Formats Explained](/learn/ambisonics-formats/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
 - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)

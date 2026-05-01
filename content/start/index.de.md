@@ -35,7 +35,7 @@ Womit möchtest du beginnen? Wähle deinen Einstieg.
 
 <div class="home-section-header home-section-header--software" style="margin-bottom:1.6rem;">
 <p class="home-section-label">🎛️ Neu bei den ICST Ambisonics Plugins?</p>
-<p class="home-section-lead">Folge den vier Schritten unten — von den ersten Grundlagen bis zur funktionierenden Ambisonics-Session in REAPER. Geschätzte Zeit: 1–2 Stunden. Alle Tools sind kostenlos und Open Source.</p>
+<p class="home-section-lead">Folge den fünf Schritten unten — von den ersten Grundlagen bis zur funktionierenden Ambisonics-Session in REAPER. Geschätzte Zeit: 1–2 Stunden. Alle Tools sind kostenlos und Open Source.</p>
 </div>
 
 Level: Einstieg | **Audience:** Komponist:in, Student:in, Producer, Techniker:in.
@@ -47,6 +47,7 @@ Level: Einstieg | **Audience:** Komponist:in, Student:in, Producer, Techniker:in
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="#schritt-1">Mit Schritt 1 beginnen</a>
       <a class="hero__link" href="/de/ambisonics-101/">Ambisonics 101 lesen</a>
+      <a class="hero__link" href="/de/learn/ambisonics-formats/">Ambisonics-Formate</a>
     </div>
   </section>
   <section class="home-card">
@@ -66,10 +67,19 @@ Level: Einstieg | **Audience:** Komponist:in, Student:in, Producer, Techniker:in
 <p class="onboarding-step__title">Ambisonics verstehen — die Konzepte</p>
 <p class="onboarding-step__desc">B-Format, HOA-Ordnungen, ACN/SN3D, Encoder vs. Decoder — der 15-Minuten-Text, der alles andere verständlich macht. Mit Signalfluss-Diagramm vom Mono-Signal zu Lautsprechern oder Binaural-Output.</p>
 <a class="hero__link hero__link--primary" href="/de/ambisonics-101/">Ambisonics 101 →</a>
+<a class="hero__link" href="/de/learn/ambisonics-formats/">Ambisonics-Formate →</a>
 </div>
 </li>
 <li class="onboarding-step">
 <span class="onboarding-step__num">2</span>
+<div class="onboarding-step__body">
+<p class="onboarding-step__title">Das richtige Format wählen</p>
+<p class="onboarding-step__desc">A-Format, B-Format, FuMa, ambiX, FOA, HOA, ACN/SN3D — eine kompakte Referenz für die Begriffe, die vor Routing, Export und Decoder-Einstellungen wichtig sind.</p>
+<a class="hero__link hero__link--primary" href="/de/learn/ambisonics-formats/">Ambisonics-Formate →</a>
+</div>
+</li>
+<li class="onboarding-step">
+<span class="onboarding-step__num">3</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Plugins installieren</p>
 <p class="onboarding-step__desc">Anleitungen für macOS und Windows — VST3/AU-Installationspfade, REAPER-Rescan, Gatekeeper-Fix unter macOS. Auch ReaPack und SWS Extension Setup werden erklärt.</p>
@@ -78,7 +88,7 @@ Level: Einstieg | **Audience:** Komponist:in, Student:in, Producer, Techniker:in
 </div>
 </li>
 <li class="onboarding-step">
-<span class="onboarding-step__num">3</span>
+<span class="onboarding-step__num">4</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Erste Session aufbauen — Schritt für Schritt</p>
 <p class="onboarding-step__desc">Der vollständige Walkthrough: B-Format-Bus einrichten, MultiEncoder hinzufügen, Decoder für Lautsprecher oder Binaural konfigurieren, Pegel prüfen, rendern. Mit Screenshots und annotierten GIFs bei jedem Schritt.</p>
@@ -87,7 +97,7 @@ Level: Einstieg | **Audience:** Komponist:in, Student:in, Producer, Techniker:in
 </div>
 </li>
 <li class="onboarding-step">
-<span class="onboarding-step__num">4</span>
+<span class="onboarding-step__num">5</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Tiefer gehen — Tutorials und Referenzen</p>
 <p class="onboarding-step__desc">OSC-Steuerung, Multi-Decoder-Modus, Gruppen-Panning, DAW-Bridging (Ableton + REAPER), Controller-Integration (GyrOSC, GRAPES) — alles in der Tutorial-Bibliothek, gefiltert nach Schwierigkeitsgrad.</p>

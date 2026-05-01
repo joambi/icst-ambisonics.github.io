@@ -3,7 +3,6 @@ title: "Formate, Stems und Archivierung"
 description: "B-Format-Archivierungskonventionen, Stem-Struktur und Lieferformate für Festivals, Labels, Streaming und Langzeiterhaltung."
 date: 2026-01-01T00:00:00
 weight: 84
-draft: true
 translationKey: "composing-formats-archiving"
 languageCode: de
 ---

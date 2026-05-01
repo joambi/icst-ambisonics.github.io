@@ -3,7 +3,6 @@ title: "Repertoire Guide for Spatial Composition"
 description: "A curated listening guide from ASCOLTA sessions, ICST residencies, and the 3D AudioSpace platform — organised by analytical category."
 date: 2026-01-01T00:00:00
 weight: 87
-draft: true
 translationKey: "composing-repertoire-guide"
 ---
 

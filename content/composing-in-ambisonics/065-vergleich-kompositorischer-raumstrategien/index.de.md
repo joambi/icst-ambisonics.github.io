@@ -3,7 +3,6 @@ title: "Vergleich kompositorischer Raumstrategien"
 description: "Wie unterschiedliche räumliche Organisationsweisen als Formprinzip wirken."
 date: 2026-01-01T00:00:00
 weight: 75
-draft: true
 translationKey: "composing-comparing-spatial-strategies"
 ---
 

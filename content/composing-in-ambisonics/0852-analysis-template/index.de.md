@@ -3,7 +3,6 @@ title: "Räumliche Analysevorlage"
 description: "Eine sechsstufige Analysevorlage für das Hören und Lesen räumlicher Komposition — parametrische Beobachtung, strategische Einordnung, psychoakustische Bewertung."
 date: 2026-01-01T00:00:00
 weight: 86
-draft: true
 translationKey: "composing-analysis-template"
 languageCode: de
 ---

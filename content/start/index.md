@@ -34,7 +34,7 @@ What would you like to explore? Choose a starting point below.
 
 <div class="home-section-header home-section-header--software" style="margin-bottom:1.6rem;">
 <p class="home-section-label">🎛️ New to the ICST Ambisonics Plugins?</p>
-<p class="home-section-lead">Follow the four steps below — from first concepts to a working Ambisonics session in REAPER. Estimated time: 1–2 hours. All tools are free and open source.</p>
+<p class="home-section-lead">Follow the five steps below — from first concepts to a working Ambisonics session in REAPER. Estimated time: 1–2 hours. All tools are free and open source.</p>
 </div>
 
 Level: Beginner | **Audience:** Composer, student, producer, technician.
@@ -46,6 +46,7 @@ Level: Beginner | **Audience:** Composer, student, producer, technician.
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="#step-1">Start with step 1</a>
       <a class="hero__link" href="/ambisonics-101/">Read Ambisonics 101</a>
+      <a class="hero__link" href="/learn/ambisonics-formats/">Ambisonics Formats</a>
     </div>
   </section>
   <section class="home-card">
@@ -65,10 +66,19 @@ Level: Beginner | **Audience:** Composer, student, producer, technician.
 <p class="onboarding-step__title">Understand Ambisonics — the concepts</p>
 <p class="onboarding-step__desc">B-Format, HOA orders, ACN/SN3D, encoder vs. decoder — the 15-minute read that makes everything else click. Includes a signal flow diagram showing the path from mono source to speakers or binaural output.</p>
 <a class="hero__link hero__link--primary" href="/ambisonics-101/">Ambisonics 101 →</a>
+<a class="hero__link" href="/learn/ambisonics-formats/">Ambisonics Formats →</a>
 </div>
 </li>
 <li class="onboarding-step">
 <span class="onboarding-step__num">2</span>
+<div class="onboarding-step__body">
+<p class="onboarding-step__title">Choose the right format</p>
+<p class="onboarding-step__desc">A-Format, B-Format, FuMa, ambiX, FOA, HOA, ACN/SN3D — a compact reference for the terms that matter before you set up routing, export, or decoder settings.</p>
+<a class="hero__link hero__link--primary" href="/learn/ambisonics-formats/">Ambisonics Formats →</a>
+</div>
+</li>
+<li class="onboarding-step">
+<span class="onboarding-step__num">3</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Install the plugins</p>
 <p class="onboarding-step__desc">macOS and Windows instructions — VST3/AU install paths, REAPER rescan, Gatekeeper fix on macOS. Also covers ReaPack and SWS extension setup.</p>
@@ -77,7 +87,7 @@ Level: Beginner | **Audience:** Composer, student, producer, technician.
 </div>
 </li>
 <li class="onboarding-step">
-<span class="onboarding-step__num">3</span>
+<span class="onboarding-step__num">4</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Build your first session — step by step</p>
 <p class="onboarding-step__desc">The full walkthrough: set up a B-Format bus, add the MultiEncoder, configure the decoder for speakers or binaural, check levels, render. With screenshots and annotated GIFs at every step.</p>
@@ -86,7 +96,7 @@ Level: Beginner | **Audience:** Composer, student, producer, technician.
 </div>
 </li>
 <li class="onboarding-step">
-<span class="onboarding-step__num">4</span>
+<span class="onboarding-step__num">5</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Go deeper — tutorials and references</p>
 <p class="onboarding-step__desc">OSC control, multi-decoder mode, group panning, DAW bridging (Ableton + REAPER), controller integration (GyrOSC, GRAPES) — all in the tutorial library, filtered by difficulty.</p>

@@ -31,6 +31,8 @@ Note: the ICST Ambisonics Tools are a separate package from the REAPER plugins a
 
 For REAPER session templates, speaker presets, Max patches, Ableton Live templates, and printable PDF guides, see the main **[Downloads hub](/blog/downloads/)**.
 
+For the meaning of ambiX, ACN/SN3D, FOA/HOA, and B-Format channel counts, see **[Ambisonics Formats Explained](/learn/ambisonics-formats/)**.
+
 ## YouTube channel
 
 Tutorial videos for the ICST Ambisonics Plugins:

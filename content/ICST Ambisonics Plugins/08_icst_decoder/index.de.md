@@ -10,6 +10,8 @@ Level: Intermediate | Zielgruppe: Techniker:in, Komponist:in, Studierende, Studi
 
 Nutze diese Seite, wenn du verlässliche Lautsprecherwiedergabe aus dem Bformat Master brauchst und einen Decoder auf ein reales Lautsprecher-Array abstimmen willst.
 
+Zur praktischen Bedeutung von **B-Format**, **FOA/HOA**, **ambiX**, **ACN/SN3D** und Kanalzahlen siehe [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/).
+
 ## Wann du den ICST Decoder verwenden solltest
 
 Nutze den **ICST Decoder**, wenn:
@@ -176,4 +178,5 @@ Verwandte Seiten:
 
 - [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [B-Format in REAPER rendern](/icst-ambisonics-plugins/12_render_bformat/)
+- [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)

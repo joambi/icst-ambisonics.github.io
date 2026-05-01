@@ -280,7 +280,7 @@ var MARKDOWN_ATTACHMENT_URL_REGEXP = /!\[(.*?)\]\(((.*?)\.(\w+))\)/g;
 var EMBED_URL_REGEXP = /!\[\[([\s\S]*?)\]\]/g;
 var EMBED_METADATA_REGEXP = /^---(?:\n|\r\n)[\s\S]*?(?:\n|\r\n)---(?:\n|\r\n)?/;
 var GFM_IMAGE_FORMAT = "![]({0})";
-var OUTGOING_LINK_REGEXP = /(?<!!)\[\[(.*?)\]\]/g;
+var OUTGOING_LINK_REGEXP = /(?<!!)\[\[(?:[^|\]]*\|)?(?<alias>[^\]]+)\]\]/g;
 var DEFAULT_SETTINGS = {
   output: "output",
   attachment: "attachment",

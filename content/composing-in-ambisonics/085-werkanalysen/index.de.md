@@ -3,7 +3,6 @@ title: "Werkanalysen: Raumkomposition hören und lesen"
 description: "Wie man räumliche Komposition analytisch hört — Methodik, zwei strukturierte Fallstudien und ein kommentierter Repertoire-Guide aus ASCOLTA-Sessions, ICST-Residenzen und der 3D AudioSpace-Plattform."
 date: 2026-01-01T00:00:00
 weight: 85
-draft: true
 translationKey: "composing-work-analyses"
 ---
 

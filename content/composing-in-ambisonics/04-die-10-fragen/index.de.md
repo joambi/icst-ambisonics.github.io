@@ -3,7 +3,6 @@ title: "Die 10 Fragen im 3D-Raum"
 description: "Ein kompositorischer Fragenkatalog fuer Ambisonics-Stücke."
 date: 2026-01-01T00:00:00
 weight: 40
-draft: true
 translationKey: "composing-10-questions"
 ---
 

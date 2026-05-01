@@ -12,6 +12,8 @@ tags:
 
 Eine kuratierte Sammlung von Ambisonics-B-Format-Referenzdateien zum Testen von Dekodern, Binauralrenderern und räumlichen Audio-Pipelines. Alle Dateien verwenden die **ambiX**-Konvention: ACN-Kanalreihenfolge, SN3D-Normierung.
 
+Wenn du zuerst den Format-Hintergrund brauchst, lies [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/) zu A-Format vs. B-Format, FuMa vs. ambiX, FOA/HOA, ACN/SN3D und Kanalzahlen.
+
 ---
 
 ## Audiodateien
@@ -30,3 +32,4 @@ Alle Dateien in diesem Archiv folgen dem **ambiX**-Standard:
 
 Zur Verwendung: Datei in REAPER importieren, Spur auf die korrekte Kanalanzahl setzen und durch einen ICST AmbiDecoder für die passende Ordnung routen. Die [Schritt-für-Schritt-Anleitung](/de/icst-ambisonics-plugins/06_step_by_step_setup/) führt durch den Prozess.
 
+Verwandte Referenz: [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/).

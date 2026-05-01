@@ -3,7 +3,6 @@ title: "History of Ambisonics: FOA and HOA"
 description: "From the early foundations in Oxford to today's production studios, concert spaces, and toolchains."
 date: 2026-01-01T00:00:00
 weight: 30
-draft: true
 translationKey: "composing-history-foa-hoa"
 ---
 

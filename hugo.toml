@@ -95,16 +95,22 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     weight = 101
     url = "/ambisonics-101/"
 
-    # [[menu.main]]
-    # name = "For Composers"
-    # parent = "tutorials"
-    # weight = 102
-    # url = "/composing-in-ambisonics/"
+    [[menu.main]]
+    name = "Ambisonics Formats"
+    parent = "tutorials"
+    weight = 102
+    url = "/learn/ambisonics-formats/"
+
+    [[menu.main]]
+    name = "For Composers"
+    parent = "tutorials"
+    weight = 103
+    url = "/composing-in-ambisonics/"
 
     [[menu.main]]
     name = "Videos"
     parent = "tutorials"
-    weight = 103
+    weight = 104
     url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 
   [[menu.main]]

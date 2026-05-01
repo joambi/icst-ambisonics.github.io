@@ -31,6 +31,8 @@ Hinweis: Die ICST Ambisonics Tools sind ein separates Paket von den REAPER-Plugi
 
 Für REAPER-Session-Templates, Lautsprecher-Presets, Max-Patches, Ableton-Live-Templates und druckbare PDF-Anleitungen siehe den **[Downloads-Hub](/de/blog/downloads/)**.
 
+Zur Bedeutung von ambiX, ACN/SN3D, FOA/HOA und B-Format-Kanalzahlen siehe **[Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)**.
+
 ## YouTube-Kanal
 
 Tutorial-Videos zu den ICST Ambisonics Plugins:

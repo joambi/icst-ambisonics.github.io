@@ -23,5 +23,6 @@
   "templater-obsidian",
   "chatgpt-md",
   "open-in-terminal",
-  "lovely-mindmap"
+  "lovely-mindmap",
+  "graph-link-types"
 ]

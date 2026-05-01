@@ -3,7 +3,6 @@ title: "Binaural Rendering and Headphone Delivery"
 description: "How to convert an Ambisonics mix to binaural, choose and evaluate HRTFs, monitor during composition, and deliver a headphone-compatible master."
 date: 2026-01-01T00:00:00
 weight: 82
-draft: true
 translationKey: "composing-binaural-delivery"
 ---
 

@@ -3,7 +3,6 @@ title: "Overview"
 description: "Entry point and reading paths for the Composing in Ambisonics section."
 date: 2026-01-01T00:00:00
 weight: 10
-draft: true
 ---
 
 <div class="home-section-header home-section-header--studio" style="margin-bottom:1.4rem;">

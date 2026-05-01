@@ -16,15 +16,15 @@ languageCode: de
     </div>
     <p class="hub-lead">Die Sitzungen verbinden Studioarbeit, Residency-Projekte und internationales Repertoire durch Higher-Order-Ambisonics-Hören an der ZHdK.</p>
     <div class="hub-note">
-    <strong>Nächste Sitzung:</strong> <strong>#18 ascolta</strong> ist <strong>Éliane Radigue</strong> (24. Januar 1932 – 23. Februar 2026) gewidmet. Im Mittelpunkt steht <em>The Resonant Island</em>, erschienen auf <strong>Shiiin</strong> (2005), eine 55-minütige Klangskulptur von außergewöhnlicher Langsamkeit und Konzentration.
+    <strong>Nächste Sitzung:</strong> <strong>#19 ascolta</strong> präsentiert drei neue Ambisonics-Werke aus den <strong>ICST Studio Residenzen 2025</strong> von <strong>Nandele Maguni</strong>, <strong>Youngjae Cho</strong> und <strong>Ana González Gamboa</strong>.
     </div>
   </div>
-  <a class="hub-upcoming" href="/de/blog/ascolta/18-ascolta/">
+  <a class="hub-upcoming" href="/de/blog/ascolta/19-ascolta/">
     <span class="hub-upcoming__eyebrow">Nächster Termin</span>
-    <span class="hub-upcoming__date">02. April 2026</span>
+    <span class="hub-upcoming__date">21. Mai 2026</span>
     <span class="hub-upcoming__meta">18:00–19:00 · Freier Eintritt</span>
-    <span class="hub-upcoming__title">#18 ascolta — Éliane Radigue</span>
-    <span class="hub-upcoming__text"><em>The Resonant Island</em>, erschienen auf Shiiin (2005)</span>
+    <span class="hub-upcoming__title">#19 ascolta — Acousmatic Listening Sessions</span>
+    <span class="hub-upcoming__text">ICST Studio Residenzen 2025: Nandele Maguni, Youngjae Cho und Ana González Gamboa</span>
   </a>
 </div>
 
@@ -33,7 +33,7 @@ languageCode: de
 ## Schnell einsteigen
 
 <div class="hub-start">
-  <a href="/de/blog/ascolta/18-ascolta/">
+  <a href="/de/blog/ascolta/19-ascolta/">
     <span class="hub-card__title">Nächste Sitzung</span>
     <span class="hub-card__text">Direkt zum aktuellen ascolta-Termin und Programm.</span>
   </a>
@@ -54,18 +54,18 @@ languageCode: de
 <div class="season-section">
   <div class="season-label">2026</div>
   <div class="session-list">
-    <a class="session-row" href="/de/blog/ascolta/18-ascolta/">
-      <span class="session-row__num">#18</span>
-      <span class="session-row__content">
-        <span class="session-row__subtitle">Éliane Radigue — The Resonant Island</span>
-        <span class="session-row__date">02 Apr 2026</span>
-      </span>
-    </a>
     <a class="session-row" href="/de/blog/ascolta/19-ascolta/">
       <span class="session-row__num">#19</span>
       <span class="session-row__content">
         <span class="session-row__subtitle">Acousmatic Listening Sessions — ICST Studio Residenzen 2025</span>
         <span class="session-row__date">21 Mai 2026</span>
+      </span>
+    </a>
+    <a class="session-row" href="/de/blog/ascolta/18-ascolta/">
+      <span class="session-row__num">#18</span>
+      <span class="session-row__content">
+        <span class="session-row__subtitle">Éliane Radigue — The Resonant Island</span>
+        <span class="session-row__date">02 Apr 2026</span>
       </span>
     </a>
   </div>

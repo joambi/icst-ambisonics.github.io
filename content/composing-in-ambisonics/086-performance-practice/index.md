@@ -3,7 +3,6 @@ title: "Concert and Performance Practice"
 description: "Technical rider, pre-concert communication, soundcheck logistics, and common pitfalls for Ambisonics fixed-media performances."
 date: 2026-01-01T00:00:00
 weight: 86
-draft: true
 translationKey: "composing-performance-practice"
 ---
 

@@ -10,6 +10,8 @@ Level: Intermediate | Audience: Technician, composer, student, studio user.
 
 Use this page when you want reliable loudspeaker playback from the B-format master and need a decoder that matches a real speaker array.
 
+For the practical meaning of **B-Format**, **FOA/HOA**, **ambiX**, **ACN/SN3D**, and channel counts, see [Ambisonics Formats Explained](/learn/ambisonics-formats/).
+
 ## When to use ICST Decoder
 
 Use the **ICST Decoder** when:
@@ -193,6 +195,7 @@ Related pages:
 
 - [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/)
+- [Ambisonics Formats Explained](/learn/ambisonics-formats/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
 
 ## Go deeper
@@ -203,3 +206,8 @@ These articles extend the concepts on this page with practical examples and theo
 - [How it Works](/icst-ambisonics-plugins/03_how_it_works/)
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Binaural Monitoring im ICST-Workflow](/post/binaural-monitoring-icst-workflow/)
+- [Den B-Format-Master exportieren – AmbiX, Kanalreihenfolge und Normalisierung](/post/b-format-export-reaper/)
+- [Ambisonics-Mikrofon aufnehmen – A-Format, B-Format und die ICST-Integration](/post/ambisonics-mikrofon-a-format-b-format/)
+- [Welche Ambisonics-Ordnung brauche ich?](/post/hoa-ordnung-wahl-praxis/)
+- [Szenen-Rotation – Das gesamte B-Format-Feld drehen](/post/szenen-rotation-b-format-transform/)

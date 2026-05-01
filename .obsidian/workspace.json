@@ -8,45 +8,175 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0dafd90d371067bc",
+            "id": "77374b90c28df63e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/composing-in-ambisonics/06-raumparameter/index.de.md",
+                "file": "JAR Einreichungsnahe Fassung.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JAR Einreichungsnahe Fassung"
+            }
+          },
+          {
+            "id": "9a3ceeace1b7ae63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spatial Counterpoint Spatial Parameters and Perception as a Compositional Method in Ambisonics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spatial Counterpoint Spatial Parameters and Perception as a Compositional Method in Ambisonics"
+            }
+          },
+          {
+            "id": "c749531b3f477b48",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ambisonics und akusmatischer Raum, Ein kompositorischer Rahmen zur Untersuchung räumlicher Ontologie.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ambisonics und akusmatischer Raum, Ein kompositorischer Rahmen zur Untersuchung räumlicher Ontologie"
+            }
+          },
+          {
+            "id": "6b720fe981689a7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JAR Einreich Fassung Deutsch.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JAR Einreich Fassung Deutsch"
+            }
+          },
+          {
+            "id": "7627707cf3e7c5a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Research Catalogue exposition.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Research Catalogue exposition"
+            }
+          },
+          {
+            "id": "58a0ac6c795c2a55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JAR RC deutsch.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JAR RC deutsch"
+            }
+          },
+          {
+            "id": "838e5d9b8067de15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spatial Counterpoint im engen Ambisonics‑Sinn.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spatial Counterpoint im engen Ambisonics‑Sinn"
+            }
+          },
+          {
+            "id": "a6aa796a6c52085b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vergleich Spatial Counterpoint und Smalleys Spatial Articulation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Vergleich Spatial Counterpoint und Smalleys Spatial Articulation"
+            }
+          },
+          {
+            "id": "8e1a7fc092fdfe0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Smalleys Spatial Articulation Examples.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Smalleys Spatial Articulation Examples"
+            }
+          },
+          {
+            "id": "6c553528ca6a1c3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Versus meinem Ansatz.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Versus meinem Ansatz"
+            }
+          },
+          {
+            "id": "77f45e2da072a4ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Smalley and Schütt.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Smalley and Schütt"
+            }
+          },
+          {
+            "id": "eb13a915c767599b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Blog/ascolta-listening-guide/index.de.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "index.de"
             }
-          },
-          {
-            "id": "246c82454f930827",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/A Practical Guide to Critical Listening.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "A Practical Guide to Critical Listening"
-            }
-          },
-          {
-            "id": "5b801f6a56e48bcc",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Neuer Tab"
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -78,7 +208,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "B-Format path:",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,13 +297,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/ICST B-Format Archive.md",
-                "followCursor": false,
-                "showSearch": false,
+                "file": "Clippings/Research Catalogue - an international database for artistic research.md",
+                "followCursor": true,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Gliederung von ICST B-Format Archive"
+              "title": "Gliederung von Research Catalogue - an international database for artistic research"
             }
           },
           {
@@ -192,21 +322,19 @@
             "state": {
               "type": "claude-code-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "claude-code-view"
+              "icon": "bot",
+              "title": "Claude Code"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1774082826118": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -217,6 +345,7 @@
       "obsidian-importer:Open Importer": false,
       "github-sync:Sync with Remote": false,
       "obsidian-git:Open Git source control": false,
+      "image-preview-on-icon-hover:1777622898304": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
       "DEVONlink-obsidian:DEVONlink": false,
@@ -226,55 +355,55 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "246c82454f930827",
+  "active": "0dcbaf17685ec5f0",
   "lastOpenFiles": [
-    "exports/composing-in-ambisonics-de-gesamt.docx",
-    "content/composing-in-ambisonics/01_overview/index.de.md",
-    "content/composing-in-ambisonics/05-acoustic-gestalt/index.md",
-    "content/composing-in-ambisonics/065-vergleich-kompositorischer-raumstrategien/index.de.md",
-    "Glossary-Link aus der \"Go Deeper\"-Liste.md",
-    "Decoder Blauertsche Bänder.md",
-    "Geschichte und Anwendungen des Ambisonics Decoders.md",
-    "exports/composing-in-ambisonics-de-gesamt.html",
-    "scripts/build_composing_in_ambisonics_de_doc.py",
-    "public/tags/theorie/index.xml",
-    "public/tags/sphärische-harmonische/index.xml",
-    "public/tags/spherical-harmonics/index.xml",
-    "public/tags/psychoakustik/index.xml",
-    "public/tags/konzept/index.xml",
-    "public/tags/gerzon/index.xml",
-    "public/tags/geschichte/index.xml",
-    "public/tags/concept/index.xml",
-    "content/post/ambisonics-to-atmos-bed/index.md",
-    "content/post/decoder-methodological-context/index.md",
-    "content/Blog/decoder-geschichte-und-anwendungen/index.md",
-    "Clippings/The Sound Before Sound Éliane Radigue  Gagosian Quarterly.md",
-    "content/composing-in-ambisonics/02-analytisches-hoeren/index.de.md",
-    "content/About/index.de.md",
-    "public/residenzen/youngjae-cho/Youngjae_Cho.jpg",
-    "public/residenzen/youngjae-cho/Youngjae_02.jpg",
-    "public/residenzen/peter-biro-daniel/Lucas_Daniel.jpg",
-    "public/residenzen/nandele-maguni/nandele_02.png",
-    "public/residenzen/nandele-maguni/nandele_01.png",
-    "public/residenzen/nandele-maguni/Unknown.jpeg",
-    "public/residenzen/nandele-maguni/Malhangalene.png",
-    "public/residenzen/nandele-maguni/IMG_0071.jpg",
-    "public/residenzen/icst-studio-residences-2026/monoc-small.jpg",
-    "public/residenzen/icst-studio-residences-2026/monoc-small-2.jpg",
+    "_notes/JAR/JAR_Exposition_Template.scrivtemplate",
+    "Attachments/composing_in_ambisonics.png",
+    "_notes/pcloud-index.html",
+    "exports/tmp_icst_decoder_ocr.txt",
+    "exports/ICST-DECODER.pdf",
+    "exports/seo-strategie-ambisonics-2026.docx",
+    "exports/composing-in-ambisonics-v2.pdf",
+    "exports/composing-in-ambisonics-v2.docx",
+    "exports/composing-in-ambisonics.docx",
+    "Attachments/Overview AmbiEncoder.png",
+    "Attachments/create groups.png",
+    "Attachments/2c34531a-ff69-490d-c9d0-e3ea82eb29b0.gif",
+    "Attachments/CleanShot 2026-03-17 at 15.47.50.png",
+    "Attachments/CleanShot 2026-03-16 at 11.35.05.png",
+    "Attachments/CleanShot 2026-03-09 at 12.08.46.png",
+    "Attachments/CleanShot 2026-03-04 at 18.09.16.png",
+    "Attachments/CleanShot 2026-03-04 at 18.03.59.png",
+    "Attachments/CleanShot 2026-03-04 at 15.04.58@2x.png",
+    "_notes/JAR/JAR Einreichungsnahe Fassung.md",
+    "_notes/JAR/JAR RC deutsch.md",
+    "_notes/JAR/JAR Einreichung.md",
+    "_notes/JAR/JAR Einreich Fassung Deutsch.md",
+    "_notes/Was ist ein B-Format?.md",
+    "_notes/polices.md",
+    "_notes/Was ist die Gestalt eines Klanges und welche Rolle spielt der Raum dabei.md",
+    "_notes/Versus meinem Ansatz.md",
+    "_notes/Vergleich Spatial Counterpoint und Smalleys Spatial Articulation.md",
+    "_notes/Unbenannt.md",
+    "_notes/Spatial Counterpoint im engen Ambisonics‑Sinn.md",
+    "_notes/Spatial Counterpoint Spatial Parameters and Perception as a Compositional Method in Ambisonics.md",
+    "_notes/Smalleys Spatial Articulation Examples.md",
+    "_notes/Smalley and Schütt.md",
+    "_notes/Research Catalogue exposition.md",
+    "_notes/Konkrete Produktionsanweisung für die JAR-Medien.md",
+    "_notes/JAR",
+    "_notes/Glossary-Link aus der \"Go Deeper\"-Liste.md",
+    "_notes/Geschichte und Anwendungen des Ambisonics Decoders.md",
+    "_notes/Exposition würde ich die Medienproduktion.md",
+    "_notes/Decoder Blauertsche Bänder.md",
+    "_notes/Ambisonics und akusmatischer Raum, Ein kompositorischer Rahmen zur Untersuchung räumlicher Ontologie.md",
+    "_notes/Ambisonics @ ICST – Worum es hier geht.md",
+    "_notes/10 Fragen die sich beim komponieren im 3D-Raum ergeben.md",
+    "_notes/Ambi Blog Relevanz Kritik.md",
+    "_notes",
+    "content/Ambisonics 101/index.de.md",
+    "content/post/szenen-rotation-b-format-transform",
     "public/blog/faq/Ableton2Reaper.canvas",
-    "content/About/index.md",
-    "content/start/index.de.md",
-    "content/pages/ICST Decoder.de.md",
-    "content/Residenzen/ICST Studio Residences/ICST AiR Dates.de.md",
-    "content/Terms and Conditions.de.md",
-    "content/Privacy Policy.de.md",
-    "content/Blog/ascolta/18-ascolta/index.de.md",
-    "content/Blog/ascolta/_index.de.md",
-    "content/Blog/ascolta/18-ascolta/index.md",
-    "content/Blog/ascolta/19-ascolta/index.de.md",
-    "content/Blog/ascolta/19-ascolta/index.md",
-    "content/Links/index.de.md",
-    "content/composing-in-ambisonics/09-referenzen/index.de.md",
     "docs/blog/faq/Ableton2Reaper.canvas",
     "content/Blog/FAQ/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",

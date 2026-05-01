@@ -66,6 +66,16 @@ Styles for the Markitdown Obsidian plugin
   color: var(--text-error);
 }
 
+/* Resolved Python path hint */
+.markitdown-resolved-path-hint {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  margin-top: -8px;
+  margin-bottom: 12px;
+  padding-left: 2px;
+  font-family: var(--font-monospace);
+}
+
 /* File type checkbox grid */
 .markitdown-checkbox-grid {
   display: grid;
@@ -166,6 +176,161 @@ Styles for the Markitdown Obsidian plugin
   font-weight: 500;
 }
 
+<<<<<<< HEAD
+/* Resolved path hint */
+.markitdown-resolved-path-hint {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-family: var(--font-monospace);
+}
+
+/* Troubleshooting section (collapsible) */
+.markitdown-troubleshooting {
+  margin: 12px 0;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.markitdown-troubleshooting summary {
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-muted);
+  background-color: var(--background-secondary);
+  user-select: none;
+}
+
+.markitdown-troubleshooting summary:hover {
+  color: var(--text-normal);
+}
+
+.markitdown-troubleshooting-content {
+  padding: 12px 14px;
+}
+
+.markitdown-troubleshooting-content p {
+  margin: 6px 0;
+  color: var(--text-muted);
+  font-size: 0.9em;
+}
+
+.markitdown-troubleshooting-label {
+  font-weight: 500;
+  color: var(--text-normal);
+}
+
+.markitdown-tried-paths {
+  list-style: none;
+  padding-left: 0;
+  margin: 6px 0;
+}
+
+.markitdown-tried-paths li {
+  padding: 4px 0;
+  font-size: 0.85em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markitdown-tried-paths li:last-child {
+  border-bottom: none;
+}
+
+.markitdown-tried-paths code {
+  background-color: var(--background-primary-alt);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 0.95em;
+}
+
+.markitdown-tried-path-error {
+  color: var(--text-faint);
+}
+
+.markitdown-pip-command {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  padding: 8px 12px;
+  background-color: var(--background-primary-alt);
+  border-radius: 4px;
+  font-family: var(--font-monospace);
+  font-size: 0.85em;
+}
+
+.markitdown-pip-command code {
+  flex: 1;
+  word-break: break-all;
+}
+
+.markitdown-copy-button {
+  flex-shrink: 0;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+
+.markitdown-copy-button:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.markitdown-troubleshooting-hint {
+  font-style: italic;
+  color: var(--text-faint);
+}
+
+/* Preview modal — applied to .modal-content via contentEl */
+.markitdown-preview-modal {
+  width: 80vw;
+  max-width: 900px;
+}
+
+.markitdown-preview-meta {
+  background-color: var(--background-secondary);
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.markitdown-preview-meta-item {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  padding: 2px 0;
+}
+
+.markitdown-preview-truncation-note {
+  font-size: 0.85em;
+  color: var(--text-accent);
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.markitdown-preview-content {
+  max-height: 40vh;
+  overflow-y: auto;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  background-color: var(--background-primary-alt);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.markitdown-preview-content pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: var(--font-monospace);
+  font-size: 0.85em;
+  color: var(--text-normal);
+}
+
 /* Plugin args editor */
 .markitdown-plugin-args-container {
   margin: 8px 0 16px;
@@ -218,4 +383,80 @@ Styles for the Markitdown Obsidian plugin
 .markitdown-plugin-arg-add:hover {
   color: var(--text-normal);
   border-color: var(--interactive-accent);
+}
+
+/* Conversion history modal */
+.markitdown-history-list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 12px 0;
+}
+
+.markitdown-history-empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.markitdown-history-entry {
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  background-color: var(--background-secondary);
+  border-radius: 6px;
+  border-left: 3px solid var(--background-modifier-border);
+}
+
+.markitdown-history-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.markitdown-history-timestamp {
+  font-size: 0.8em;
+  color: var(--text-muted);
+}
+
+.markitdown-history-badge {
+  font-size: 0.75em;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.markitdown-history-badge-success {
+  background-color: var(--background-modifier-success);
+  color: var(--interactive-success);
+}
+
+.markitdown-history-badge-fail {
+  background-color: var(--background-modifier-error);
+  color: var(--text-error);
+}
+
+.markitdown-history-filename {
+  font-weight: 500;
+  font-size: 0.95em;
+  margin-bottom: 2px;
+  word-break: break-all;
+}
+
+.markitdown-history-details {
+  font-size: 0.8em;
+  color: var(--text-muted);
+}
+
+.markitdown-history-error {
+  font-size: 0.8em;
+  color: var(--text-error);
+  margin-top: 4px;
+  padding: 4px 8px;
+  background-color: var(--background-primary-alt);
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+.markitdown-history-clear-btn {
+  background-color: var(--background-modifier-error) !important;
+  color: var(--text-error) !important;
 }

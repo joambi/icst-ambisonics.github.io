@@ -10,6 +10,8 @@ Level: Intermediate | Audience: Composer, technician, student, interactive-media
 
 Use this page when you want to place, move, group, or automate sources inside the Ambisonics field.
 
+If you are unsure what **B-Format**, **ambiX**, **ACN/SN3D**, or **64 channels** mean before choosing encoder settings, read [Ambisonics Formats Explained](/learn/ambisonics-formats/) first.
+
 ## When to use which encoder
 
 Use **MonoEncoder** when:
@@ -121,5 +123,6 @@ For setup and syntax:
 ## Next step
 
 - [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [Ambisonics Formats Explained](/learn/ambisonics-formats/)
 - [OSC](/icst-ambisonics-plugins/13_osc/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)

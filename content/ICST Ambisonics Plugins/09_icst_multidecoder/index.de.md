@@ -10,6 +10,8 @@ Level: Advanced | Zielgruppe: Techniker:in, fortgeschrittene Komponist:in, Studi
 
 Nutze diese Seite, wenn ein einzelner Decoder für dein Lautsprecher-Setup nicht mehr ausreicht und du getrennte Decoding-Strategien für verschiedene Lautsprecher-Subsets oder Ebenen brauchst.
 
+Auch der MultiDecoder erhält ein gemeinsames **B-Format**-Eingangssignal. Wenn du ambiX, ACN/SN3D, FOA/HOA oder die 64 Kanäle von HOA-7 auffrischen willst, siehe [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/).
+
 ## Wann du MultiDecoder verwenden solltest
 
 Nutze den **ICST MultiDecoder**, wenn:
@@ -171,5 +173,6 @@ Deshalb ist MultiDecoder besonders sinnvoll in:
 
 - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
 - [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
 - [ICST AmbiDecoder — Multi-Decoder Modus](/post/multi-decoder-mode/)

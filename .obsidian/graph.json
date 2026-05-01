@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": "",
+  "collapse-filter": false,
+  "search": "JAR",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -15,23 +15,30 @@
       }
     },
     {
-      "query": "",
+      "query": "JAR",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": -0.7,
+  "nodeSizeMultiplier": 1.233125,
+  "lineSizeMultiplier": 1.58616319444444,
   "collapse-forces": true,
   "centerStrength": 0.518713248970312,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.3644696424212612,
-  "close": true
+  "scale": 0.8135811392281711,
+  "close": false
 }

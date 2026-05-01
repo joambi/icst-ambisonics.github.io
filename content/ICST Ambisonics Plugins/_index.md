@@ -25,6 +25,9 @@ A key strength is the direct connection between **panning, automation, and OSC c
   <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">
     <i class="fas fa-bolt"></i>&nbsp;Quick Start
   </a>
+  <a class="hero__link" href="/learn/ambisonics-formats/">
+    <i class="fas fa-layer-group"></i>&nbsp;Ambisonics Formats
+  </a>
 </div>
 
-> **New to Ambisonics?** Start with the [Quick Start guide](/icst-ambisonics-plugins/04_quick_start/) — you'll have a working spatial audio setup in REAPER in under 10 minutes.
+> **New to Ambisonics?** Start with [Ambisonics 101](/ambisonics-101/) and the [Ambisonics Formats reference](/learn/ambisonics-formats/), then move to the [Quick Start guide](/icst-ambisonics-plugins/04_quick_start/) — you'll have a working spatial audio setup in REAPER in under 10 minutes.

@@ -45,6 +45,7 @@ languageCode: de
     <li><a href="#was-ist-ambisonics">Was ist Ambisonics?</a></li>
     <li><a href="#ambisonics-vs-stereo">Ambisonics vs. Stereo</a></li>
     <li><a href="#was-ist-b-format">Was ist B-Format?</a></li>
+    <li><a href="/de/learn/ambisonics-formats/">Ambisonics-Formate erklärt</a></li>
     <li><a href="#signalfluss">Signalfluss auf einen Blick</a></li>
     <li><a href="#typische-setups">Typische Setups</a></li>
     <li><a href="#kopfhoerer-vs-lautsprecher">Kopfhörer vs. Lautsprecher</a></li>
@@ -100,6 +101,8 @@ Es beschreibt einen Raumzustand um einen Hörpunkt herum, der aus Druck- und Ric
 Im engeren, klassischen Sinn bezeichnet "B-Format" dieses vierkanalige Ambisonics-Format erster Ordnung (`W`, `X`, `Y`, `Z`). Im erweiterten Sinn kann man B-Format auch für [höhere Ordnungen](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics) verwenden. Dann umfasst es alle Ambisonics-Koeffizienten bis zu einer bestimmten Ordnung, jeweils als eigener Audiokanal.
 
 Dieses Format kann anschließend auf verschiedene Ziel-Setups dekodiert werden, etwa auf Kopfhörer, Stereo oder Lautsprecher-Arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
+
+Für die praktischen Unterschiede zwischen A-Format, B-Format, FuMa, ambiX, ACN/SN3D, FOA und HOA lies weiter bei [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/).
 
 <a id="signalfluss"></a>
 ## 5. Signalfluss auf einen Blick
@@ -208,6 +211,7 @@ Beide schliessen sich nicht aus: Manche Workflows produzieren Ambisonics für di
 ## 9. Einstieg am ICST
 
 - Für Einsteiger:innen: [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
+- Vor dem Setup Formate klären: [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)
 - Starte mit den [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) für DAW-Workflows.
 - Nutze die [ICST Ambisonics Tools](/icst-ambisonics-tools/) für Max/MSP-Workflows.
 - Höre in [Ascolta](/blog/ascolta/) und nutze die Hörbeispiele als Referenz.

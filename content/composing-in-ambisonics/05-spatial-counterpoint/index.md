@@ -3,7 +3,6 @@ title: "Spatial Counterpoint"
 description: "Spatial voice-leading, case studies, and practice with ICST and REAPER."
 date: 2026-01-01T00:00:00
 weight: 60
-draft: true
 translationKey: "composing-spatial-counterpoint"
 ---
 

@@ -5,7 +5,6 @@ description: How do you write down spatial sound? An overview of notation
   the ICST/REAPER context.
 date: 2026-01-01T00:00:00
 weight: 77
-draft: true
 translationKey: composing-spatial-notation
 ---
 

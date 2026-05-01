@@ -44,6 +44,7 @@ slug: ambisonics-101
     <li><a href="#what-is-ambisonics">What Is Ambisonics?</a></li>
     <li><a href="#ambisonics-vs-stereo">Ambisonics vs. Stereo</a></li>
     <li><a href="#what-is-b-format">What Is B-Format?</a></li>
+    <li><a href="/learn/ambisonics-formats/">Ambisonics Formats Explained</a></li>
     <li><a href="#signal-flow">Signal Flow at a Glance</a></li>
     <li><a href="#typical-setups">Typical Setups</a></li>
     <li><a href="#headphones-vs-loudspeakers">Headphones vs. Loudspeakers</a></li>
@@ -100,6 +101,8 @@ In the strict classical sense, “B-format” refers to this four-channel first-
 
 This format can then be decoded to different target systems such as headphones, stereo, or loudspeaker arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
 
+For the practical differences between A-Format, B-Format, FuMa, ambiX, ACN/SN3D, FOA, and HOA, continue with [Ambisonics Formats Explained](/learn/ambisonics-formats/).
+
 <a id="signal-flow"></a>
 ## 5. Signal Flow at a Glance
 
@@ -150,6 +153,7 @@ The two are not mutually exclusive: some workflows produce Ambisonics for archiv
 ## 9. Where To Start at ICST
 
 - For Beginners: [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
+- Clarify formats before setup: [Ambisonics Formats Explained](/learn/ambisonics-formats/)
 - Start with the [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) for DAW workflows.
 - Use the [ICST Ambisonics Tools](/icst-ambisonics-tools/) for Max/MSP workflows.
 - Explore [Ascolta](/blog/ascolta/) for listening practice and references.

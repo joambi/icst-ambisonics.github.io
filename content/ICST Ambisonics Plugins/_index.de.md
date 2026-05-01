@@ -26,10 +26,13 @@ Ein wichtiges Merkmal ist die direkte Verbindung von **Panning, Automation und O
   <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">
     <i class="fas fa-bolt"></i>&nbsp;Quick Start
   </a>
+  <a class="hero__link" href="/de/learn/ambisonics-formats/">
+    <i class="fas fa-layer-group"></i>&nbsp;Ambisonics-Formate
+  </a>
 </div>
 
 <div style="font-size:0.82em; line-height:1.45; margin-top:0.1rem;">
 
-> **Neu bei Ambisonics?** [Quick Start Guide](/icst-ambisonics-plugins/04_quick_start/) — in unter 10 Minuten zum räumlichen REAPER-Setup.
+> **Neu bei Ambisonics?** Beginne mit [Ambisonics 101](/de/ambisonics-101/) und der [Ambisonics-Formate-Referenz](/de/learn/ambisonics-formats/), dann weiter zum [Quick Start Guide](/de/icst-ambisonics-plugins/04_quick_start/) — in unter 10 Minuten zum räumlichen REAPER-Setup.
 
 </div>

@@ -3,7 +3,6 @@ title: "Work Analyses: Hearing and Reading Spatial Composition"
 description: "How to analytically hear spatial composition — methodology, two structured case studies, and a commented repertoire guide from ASCOLTA sessions, ICST residencies, and the 3D AudioSpace platform."
 date: 2026-01-01T00:00:00
 weight: 85
-draft: true
 translationKey: "composing-work-analyses"
 ---
 

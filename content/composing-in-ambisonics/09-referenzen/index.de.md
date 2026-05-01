@@ -3,7 +3,6 @@ title: "Referenzen"
 description: "Bücher, Aufsätze, Archive und weiterführende Links."
 date: 2026-01-01T00:00:00
 weight: 98
-draft: true
 translationKey: "composing-references"
 ---
 

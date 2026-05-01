@@ -3,7 +3,6 @@ title: "Spatial Counterpoint"
 description: "Räumliche Stimmführung, Fallstudien und Praxis mit ICST und REAPER."
 date: 2026-01-01T00:00:00
 weight: 60
-draft: true
 ---
 
 Spatial Counterpoint ist der Versuch, **Ausdehnung, Position und Bewegung** zu gleichwertigen kompositorischen Parametern neben Tonhöhe, Zeit, Dynamik und Klangfarbe zu machen. Raum ist dabei nicht bloß Bühne oder Verteilungssystem, sondern wird selbst zur Formkraft. Bewegungen, Annäherungen, Überlagerungen und räumliche Trennungen erzeugen Spannungen, Verdichtungen, Öffnungen oder Auflösungen, die ebenso präzise gestaltet werden können wie harmonische oder rhythmische Beziehungen.

@@ -117,6 +117,7 @@ Referenz-ambiX-Aufnahmen (ACN/SN3D) zum Testen von Decodern, Binaural-Renderern 
 
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/de/blog/b-format-archive/">B-Format-Archiv öffnen</a>
+  <a class="hero__link" href="/de/learn/ambisonics-formats/">Ambisonics-Formate</a>
 </div>
 
 ---

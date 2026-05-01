@@ -1,0 +1,11 @@
+{
+	"id": "graph-link-types",
+	"name": "Graph Link Types",
+	"version": "0.3.3",
+	"minAppVersion": "1.5.0",
+	"description": "Link types for graph view.",
+	"author": "natefrisch01",
+	"authorUrl": "https://natesnote.com",
+	"fundingUrl": "https://www.buymeacoffee.com/natefrisch",
+	"isDesktopOnly": false
+}

@@ -9,6 +9,8 @@ Level: Beginner | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-Us
 
 Nutze diese Seite, wenn du den kürzesten verlässlichen Weg zu einem sauberen Ambisonics-Export aus REAPER brauchst. Das Ziel ist einfach: den **Bformat Master** rendern, nicht den Decoder-Ausgang.
 
+Wenn du ambiX, ACN/SN3D, FOA/HOA oder die Bedeutung der Kanalzahl klären willst, halte [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/) neben dieser Anleitung offen.
+
 ## Was du am Ende erreicht hast
 
 Am Ende hast du:
@@ -75,5 +77,6 @@ Notes: rendered from B-format master, not decoder output
 ## Verwandte Seiten
 
 - [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)
 - [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
 - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)

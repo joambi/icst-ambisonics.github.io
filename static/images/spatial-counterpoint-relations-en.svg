@@ -1,0 +1,84 @@
+<svg width="1600" height="860" viewBox="0 0 1600 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f7f3ea; }
+      .title { font: 700 34px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .sub { font: 500 19px 'Helvetica Neue', Arial, sans-serif; fill: #415560; }
+      .frame { fill: #fffdf8; stroke: #2f4858; stroke-width: 3; }
+      .layer-top { fill: #dce8d4; stroke: #2f4858; stroke-width: 2.5; }
+      .layer-mid { fill: #d8e6f2; stroke: #2f4858; stroke-width: 2.5; }
+      .layer-low { fill: #efe1d2; stroke: #2f4858; stroke-width: 2.5; }
+      .label { font: 700 23px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .body { font: 500 18px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+      .small { font: 600 15px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+      .line-a { stroke: #c96b4b; stroke-width: 7; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .line-b { stroke: #6f8f72; stroke-width: 7; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .merge { stroke: #6d5f86; stroke-width: 9; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .node-a { fill: #c96b4b; stroke: #2f4858; stroke-width: 2.5; }
+      .node-b { fill: #6f8f72; stroke: #2f4858; stroke-width: 2.5; }
+      .node-m { fill: #6d5f86; stroke: #2f4858; stroke-width: 2.5; }
+      .dash { stroke: #2f4858; stroke-width: 2; stroke-dasharray: 8 8; }
+      .ghost { fill: #6d5f86; fill-opacity: 0.12; stroke: #6d5f86; stroke-width: 2.5; stroke-dasharray: 8 7; }
+      .arrow { stroke: #2f4858; stroke-width: 2.5; fill: none; }
+      .stage { font: 700 18px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; letter-spacing: 0.08em; }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f4858"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="860" rx="28"/>
+  <text class="title" x="68" y="76">Spatial Counterpoint: Two Lines, Three Layers, Crossing, Merging</text>
+  <text class="sub" x="68" y="112">A simple schematic for tracing independent trajectories across upper, middle, and lower spatial layers</text>
+
+  <rect class="frame" x="96" y="154" width="1408" height="610" rx="28"/>
+
+  <rect class="layer-top" x="188" y="218" width="1180" height="120" rx="22"/>
+  <rect class="layer-mid" x="188" y="378" width="1180" height="120" rx="22"/>
+  <rect class="layer-low" x="188" y="538" width="980" height="120" rx="22"/>
+
+  <text class="label" x="232" y="288">Upper layer</text>
+  <text class="label" x="232" y="448">Middle layer</text>
+  <text class="label" x="232" y="608">Lower layer</text>
+
+  <text class="stage" x="370" y="194">INDEPENDENCE</text>
+  <text class="stage" x="778" y="194">CROSSING</text>
+  <text class="stage" x="1168" y="194">MERGING</text>
+
+  <line class="dash" x1="694" y1="208" x2="694" y2="676"/>
+  <line class="dash" x1="1070" y1="208" x2="1070" y2="676"/>
+
+  <path class="line-a" d="M330 262 C420 262 510 278 626 414 C714 518 802 586 892 586 C982 586 1040 518 1114 462"/>
+  <path class="line-b" d="M330 586 C420 586 506 562 620 454 C724 332 822 262 904 262 C986 262 1044 318 1114 414"/>
+
+  <path class="merge" d="M1114 438 C1194 438 1260 438 1328 438 C1390 438 1444 438 1492 438"/>
+  <circle class="ghost" cx="1370" cy="438" r="52"/>
+
+  <circle class="node-a" cx="330" cy="262" r="11"/>
+  <circle class="node-b" cx="330" cy="586" r="11"/>
+  <circle class="node-a" cx="694" cy="438" r="11"/>
+  <circle class="node-b" cx="694" cy="438" r="11"/>
+  <circle class="node-m" cx="1114" cy="438" r="12"/>
+  <circle class="node-m" cx="1492" cy="438" r="12"/>
+
+  <path class="arrow" d="M330 708 C456 738 560 738 676 708" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M716 708 C836 738 944 738 1048 708" marker-end="url(#arrowhead)"/>
+
+  <text class="small" x="230" y="756">two lines occupy different layers and remain distinct</text>
+  <text class="small" x="720" y="756">the lines intersect in the middle field without fully collapsing</text>
+  <text class="small" x="1120" y="730">both trajectories converge into a shared,</text>
+  <text class="small" x="1120" y="752">blended presence</text>
+
+  <text class="body" x="1178" y="278">Line A</text>
+  <line class="line-a" x1="1098" y1="272" x2="1152" y2="272"/>
+  <text class="body" x="1178" y="322">Line B</text>
+  <line class="line-b" x1="1098" y1="316" x2="1152" y2="316"/>
+  <text class="body" x="1178" y="366">Merged field</text>
+  <line class="merge" x1="1098" y1="360" x2="1152" y2="360"/>
+
+  <text class="body" x="1206" y="560">Reading suggestion:</text>
+  <text class="body" x="1206" y="594">1. follow separation across layers</text>
+  <text class="body" x="1206" y="628">2. observe the crossing in the middle zone</text>
+  <text class="body" x="1206" y="662">3. notice the shift from two presences</text>
+  <text class="body" x="1206" y="690">   to one field-like image</text>
+</svg>

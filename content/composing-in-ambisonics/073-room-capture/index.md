@@ -3,7 +3,6 @@ title: "Capturing Space and Synthetically Creating Space"
 description: "A practical guide for Ambisonics composers on acoustic familiarisation, room analysis, and the decision between dry production, artificial reverb, and convolution."
 date: 2026-01-01T00:00:00
 weight: 78
-draft: true
 translationKey: "composing-room-capture"
 ---
 
