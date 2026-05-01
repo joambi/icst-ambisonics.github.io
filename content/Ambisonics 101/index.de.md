@@ -45,7 +45,7 @@ languageCode: de
     <li><a href="#was-ist-ambisonics">Was ist Ambisonics?</a></li>
     <li><a href="#ambisonics-vs-stereo">Ambisonics vs. Stereo</a></li>
     <li><a href="#was-ist-b-format">Was ist B-Format?</a></li>
-    <li><a href="/de/learn/ambisonics-formats/">Ambisonics-Formate erklärt</a></li>
+    <li><a href="/de/ambisonics-101/formats/">Ambisonics-Formate im Überblick</a></li>
     <li><a href="#signalfluss">Signalfluss auf einen Blick</a></li>
     <li><a href="#typische-setups">Typische Setups</a></li>
     <li><a href="#kopfhoerer-vs-lautsprecher">Kopfhörer vs. Lautsprecher</a></li>

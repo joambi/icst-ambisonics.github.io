@@ -44,7 +44,7 @@ slug: ambisonics-101
     <li><a href="#what-is-ambisonics">What Is Ambisonics?</a></li>
     <li><a href="#ambisonics-vs-stereo">Ambisonics vs. Stereo</a></li>
     <li><a href="#what-is-b-format">What Is B-Format?</a></li>
-    <li><a href="/learn/ambisonics-formats/">Ambisonics Formats Explained</a></li>
+    <li><a href="/ambisonics-101/formats/">Ambisonics Formats at a Glance</a></li>
     <li><a href="#signal-flow">Signal Flow at a Glance</a></li>
     <li><a href="#typical-setups">Typical Setups</a></li>
     <li><a href="#headphones-vs-loudspeakers">Headphones vs. Loudspeakers</a></li>
