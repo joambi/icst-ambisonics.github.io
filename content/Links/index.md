@@ -99,6 +99,7 @@ tags: []
 
 #### Key Papers
 
+- [Ambisonics. Part One: General System Description (Fellgett, Studio Sound and Broadcast Engineering, 1975)](https://www.michaelgerzonphotos.org.uk/articles/Ambisonics%201.pdf)
 - [Periphony: With-Height Sound Reproduction (Gerzon, JAES, 1973)](https://ringbuffer.org/papers/gerzon1973periphony.html)
 - [Ambisonics in Multichannel Broadcasting and Video (Gerzon, JAES, 1985 issue reference)](https://www.aes-media.org/historical/pdf/jaes-contents-v30-39.pdf)
 - [Sector-Based Parametric Sound Field Reproduction in the Spherical Harmonic Domain (Politis, Vilkamo, Pulkki, 2015)](https://doi.org/10.1109/JSTSP.2015.2415762)
