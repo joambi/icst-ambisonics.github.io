@@ -150,12 +150,6 @@ Immer dokumentieren:
 - Sample Rate und Bit Depth
 - verwendeter Decoder oder Renderer fürs Monitoring
 
-## Forschungskontext
-
-Diese Unterscheidung ist auch zentral für künstlerische Forschung am ICST: B-Format ist nicht einfach ein Lieferformat, sondern eine szenenbasierte räumliche Repräsentation. In Johannes Schütts JAR-Exposition *The B-Format as Score: Composition, Interpretation, and Spatial Form in Ambisonics* wird daraus die Idee, Ambisonics als räumliche Partitur und nicht als fixe Aufnahme zu denken.
-
-Zugehöriges Forschungsartefakt: [JAR Reaper Ambisonics Bundle auf Zenodo](https://doi.org/10.5281/zenodo.19633159).
-
 ## Verwandte Seiten
 
 - [Ambisonics 101](/de/ambisonics-101/)
