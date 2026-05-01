@@ -2,7 +2,7 @@
 title: "Ambisonics Formats at a Glance"
 description: "A visual reference for Ambisonics formats: A-Format vs B-Format, FuMa vs ambiX, FOA vs HOA, channel counts, and normalization conventions — all in one place."
 date: 2026-05-01T00:00:00
-draft: false
+draft: true
 url: /ambisonics-101/formats/
 tags:
   - ambisonics

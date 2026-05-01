@@ -2,7 +2,7 @@
 title: "Ambisonics-Formate im Überblick"
 description: "Visuelle Referenz zu Ambisonics-Formaten: A-Format vs. B-Format, FuMa vs. ambiX, FOA vs. HOA, Kanalzahlen und Normierungskonventionen — alles auf einen Blick."
 date: 2026-05-01T00:00:00
-draft: false
+draft: true
 url: /de/ambisonics-101/formats/
 languageCode: de
 tags:
