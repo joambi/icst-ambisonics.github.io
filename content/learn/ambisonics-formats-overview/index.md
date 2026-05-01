@@ -83,6 +83,46 @@ tags:
   text-decoration: none;
 }
 .fmt-links a:hover { background: #6086b4; color: #fff; }
+
+/* ── Dark mode ── */
+html.theme--dark .fmt-section h2 {
+  border-bottom-color: #3a3a3a;
+}
+html.theme--dark .fmt-table th {
+  background: #1e1e1e;
+  border-bottom-color: #3a3a3a;
+}
+html.theme--dark .fmt-table td {
+  border-bottom-color: #2e2e2e;
+}
+html.theme--dark .fmt-table tr:hover td {
+  background: #1a1a1a;
+}
+html.theme--dark .fmt-rule {
+  background: rgba(96, 134, 180, 0.12);
+  border-left-color: #6086b4;
+  color: inherit;
+}
+html.theme--dark .fmt-badge--icst {
+  background: #0d2b18;
+  color: #6fcf97;
+}
+html.theme--dark .fmt-badge--legacy {
+  background: #2e2200;
+  color: #f0c040;
+}
+html.theme--dark .fmt-badge--raw {
+  background: #001f3d;
+  color: #7ec8e3;
+}
+html.theme--dark .fmt-links a {
+  border-color: #6086b4;
+  color: #8aadd4;
+}
+html.theme--dark .fmt-links a:hover {
+  background: #6086b4;
+  color: #fff;
+}
 </style>
 
 <p class="fmt-intro">
