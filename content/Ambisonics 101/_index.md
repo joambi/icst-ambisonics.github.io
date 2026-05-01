@@ -1,5 +1,8 @@
 ---
-draft: true
+title: Ambisonics 101
+description: "What is Ambisonics? A practical introduction to B-format, Higher Order Ambisonics (HOA), loudspeaker decoding, and 3D spatial audio workflows for composers and producers."
+slug: ambisonics-101
+layout: single
 ---
 
 <style>
@@ -95,11 +98,11 @@ It describes a sound-field state around a listening point using pressure and dir
 - `W` is the omnidirectional component, i.e. the pressure/presence in the room.
 - `X`, `Y`, and `Z` are directional components along three axes (front-back, left-right, up-down), indicating where the signal comes from.
 
-In the strict classical sense, “B-format” refers to this four-channel first-order format (`W`, `X`, `Y`, `Z`). In an extended sense, the term is also used for [higher-order Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics), where all Ambisonics coefficients up to a given order are represented as separate audio channels.
+In the strict classical sense, "B-format" refers to this four-channel first-order format (`W`, `X`, `Y`, `Z`). In an extended sense, the term is also used for [higher-order Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics), where all Ambisonics coefficients up to a given order are represented as separate audio channels.
 
 This format can then be decoded to different target systems such as headphones, stereo, or loudspeaker arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
 
-For the practical differences between A-Format, B-Format, FuMa, ambiX, ACN/SN3D, FOA, and HOA, continue with [Ambisonics Formats Explained](/learn/ambisonics-formats/).
+For the practical differences between A-Format, B-Format, FuMa, ambiX, ACN/SN3D, FOA, and HOA, continue with [Ambisonics Formats at a Glance](/ambisonics-101/formats/).
 
 <a id="signal-flow"></a>
 ## 5. Signal Flow at a Glance
@@ -151,7 +154,7 @@ The two are not mutually exclusive: some workflows produce Ambisonics for archiv
 ## 9. Where To Start at ICST
 
 - For Beginners: [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
-- Clarify formats before setup: [Ambisonics Formats Explained](/learn/ambisonics-formats/)
+- Clarify formats before setup: [Ambisonics Formats at a Glance](/ambisonics-101/formats/)
 - Start with the [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) for DAW workflows.
 - Use the [ICST Ambisonics Tools](/icst-ambisonics-tools/) for Max/MSP workflows.
 - Explore [Ascolta](/blog/ascolta/) for listening practice and references.
