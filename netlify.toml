@@ -3,7 +3,7 @@
   command = "hugo --gc --minify"
 
 [build.environment]
-  HUGO_VERSION = "0.156.0"
+  HUGO_VERSION = "0.159.1"
   HUGO_ENV = "production"
   HUGO_BASEURL = "https://ambisonics.ch"
 
