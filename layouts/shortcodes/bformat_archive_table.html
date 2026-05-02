@@ -1,5 +1,5 @@
 {{- $isDE := eq .Page.Site.Language.Lang "de" -}}
-{{- $files := site.Data.bformat_archive.files -}}
+{{- $files := hugo.Data.bformat_archive.files -}}
 {{- $id := printf "bformat-%d" .Ordinal -}}
 
 <div class="bformat-archive" id="{{ $id }}" data-bformat-archive>
