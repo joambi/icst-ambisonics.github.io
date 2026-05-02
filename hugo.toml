@@ -132,9 +132,15 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     url = "/blog/icst-composer-studio-blog/"
 
     [[menu.main]]
-    name = "Residencies"
+    name = "Support"
     parent = "studio"
     weight = 202
+    url = "/blog/icst-kompositionsstudio-support/"
+
+    [[menu.main]]
+    name = "Residencies"
+    parent = "studio"
+    weight = 203
     url = "/residenzen/"
 
   [[menu.main]]

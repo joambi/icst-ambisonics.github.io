@@ -133,6 +133,10 @@ Dies ist der **Service- und Ressourcen-Hub** für das ICST Kompositionsstudio. V
 
 Wenn du eher das **öffentliche Programm** suchst, gehe zu [ascolta](/blog/ascolta/). Wenn du dich für die **Artists in Residence** und ihre Projekte interessierst, gehe zu [Residenzen](/residenzen/).
 
+<div class="hero__links">
+  <a class="hero__link hero__link--primary" href="/blog/icst-kompositionsstudio-support/">Support öffnen</a>
+</div>
+
 ---
 
 ## Schnell einsteigen
@@ -141,6 +145,10 @@ Wenn du eher das **öffentliche Programm** suchst, gehe zu [ascolta](/blog/ascol
   <a href="/blog/icst-kompositionsstudio-equipment/">
     <span class="hub-card__title">Equipment</span>
     <span class="hub-card__text">Hardware, Lautsprecher, Interfaces und Studiotechnik im Überblick.</span>
+  </a>
+  <a href="/blog/icst-kompositionsstudio-support/">
+    <span class="hub-card__title">Support</span>
+    <span class="hub-card__text">Treiber, Display-Setup, Fehlersuche und Kontaktstellen für Studiogäste.</span>
   </a>
   <a href="/blog/icst-kompositionsstudio-software/">
     <span class="hub-card__title">Software</span>
@@ -159,6 +167,7 @@ Wenn du eher das **öffentliche Programm** suchst, gehe zu [ascolta](/blog/ascol
 ## Studio-Bereiche
 
 - [Equipment](/blog/icst-kompositionsstudio-equipment/)
+- [Support](/blog/icst-kompositionsstudio-support/)
 - [Software](/blog/icst-kompositionsstudio-software/)
 - [Speaker Setup](/blog/icst-kompositionsstudio-speaker-settings/)
 - [Audio Examples](/blog/audio-examples/)

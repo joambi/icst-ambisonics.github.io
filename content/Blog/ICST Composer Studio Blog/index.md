@@ -134,6 +134,10 @@ This is the **service and resource hub** for the ICST Composition Studio. From h
 
 If you are looking for the **public programme**, go to [ascolta](/blog/ascolta/). If you are looking for the **artists in residence** and their projects, go to [Residencies](/residenzen/).
 
+<div class="hero__links">
+  <a class="hero__link hero__link--primary" href="/blog/icst-kompositionsstudio-support/">Open Support</a>
+</div>
+
 ---
 
 ## Start here
@@ -142,6 +146,10 @@ If you are looking for the **public programme**, go to [ascolta](/blog/ascolta/)
   <a href="/blog/icst-kompositionsstudio-equipment/">
     <span class="hub-card__title">Equipment</span>
     <span class="hub-card__text">Hardware, speakers, interfaces, and studio technology at a glance.</span>
+  </a>
+  <a href="/blog/icst-kompositionsstudio-support/">
+    <span class="hub-card__title">Support</span>
+    <span class="hub-card__text">Drivers, display setup, troubleshooting, and contact points for studio guests.</span>
   </a>
   <a href="/blog/icst-kompositionsstudio-software/">
     <span class="hub-card__title">Software</span>
