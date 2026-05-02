@@ -100,7 +100,6 @@ Für den großen Studio-Screen wird DisplayLink benötigt. Installiere den Displ
 **Studio-Support**
 
 - Johannes Schütt · Mobile: +41 79 786 12 49 · Mail: [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
-- Peter Färber · Mobile: +41 79 444 06 16 · Mail: [peter.faerber@zhdk.ch](mailto:peter.faerber@zhdk.ch)
 
 **Technischer Service A/V**
 
