@@ -38,7 +38,6 @@ Download for your system: [DisplayLink Manager for macOS](https://www.synaptics.
 
 **Help:**
 - Johannes Schütt           Mobile: +41 79 786 12 49      Mail: [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
-- Peter Färber                    Mobile: +41 79 444 06 16      Mail: [peter.faerber@zhdk.ch](mailto:peter.faerber@zhdk.ch)
 
 **Technical Service A/V:** 
 - [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch)
