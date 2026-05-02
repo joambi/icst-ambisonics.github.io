@@ -10,9 +10,75 @@ group: "Studio"
 languageCode: de
 ---
 
-**Für wen:** Komponist:innen, Studierende, Researcher, Studio-Gäste und Techniker:innen.
+<style>
+.support-intro {
+  border-left: 4px solid #6086b4;
+  margin: 0.75rem 0 1.5rem;
+  padding: 0.95rem 1.15rem;
+}
+.support-intro p {
+  margin: 0.25rem 0;
+}
+.support-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.8rem;
+}
+.support-nav a {
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: 0.35rem 0.7rem;
+  text-decoration: none;
+}
+.support-checklist {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1rem 0 2rem;
+}
+.support-checklist__item {
+  border-left: 3px solid #6086b4;
+  padding: 0.35rem 0 0.35rem 0.8rem;
+}
+.support-checklist__item strong {
+  display: block;
+}
+.support-steps {
+  margin: 1rem 0 1.6rem;
+  padding-left: 1.4rem;
+}
+.support-steps li {
+  margin: 0.35rem 0;
+}
+.support-contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 1.5rem;
+}
+.support-contact__item {
+  border-left: 3px solid #6086b4;
+  padding: 0.4rem 0 0.4rem 0.8rem;
+}
+.support-contact__item strong {
+  display: block;
+}
+</style>
 
-Diese Seite bündelt die wichtigsten Support-Schritte für die Arbeit im ICST Kompositionsstudio: Audio-Treiber, Display-Setup, erste Fehlersuche und Kontaktstellen vor Ort.
+<div class="support-intro">
+  <p><strong>Für wen:</strong> Komponist:innen, Studierende, Researcher, Studio-Gäste und Techniker:innen.</p>
+  <p>Diese Seite bündelt die wichtigsten Support-Schritte für die Arbeit im ICST Kompositionsstudio: Audio-Treiber, Display-Setup, erste Fehlersuche und Kontaktstellen vor Ort.</p>
+</div>
+
+<div class="support-nav" aria-label="Support navigation">
+  <a href="#schnellstart">Schnellstart</a>
+  <a href="#audio-rme-madiface-usb">Audio</a>
+  <a href="#video-curved-screen-und-displaylink">Video</a>
+  <a href="#erste-fehlersuche">Fehlersuche</a>
+  <a href="#support--kontakt">Kontakt</a>
+</div>
+
+## Schnellstart
 
 <div class="home-cards">
   <section class="home-card">
@@ -32,6 +98,27 @@ Diese Seite bündelt die wichtigsten Support-Schritte für die Arbeit im ICST Ko
       <a class="hero__link" href="/blog/icst-kompositionsstudio-pre-installation/">Pre-Installation</a>
     </div>
   </section>
+</div>
+
+### Vor der Session prüfen
+
+<div class="support-checklist">
+  <div class="support-checklist__item">
+    <strong>1. RME-Treiber installieren</strong>
+    MadiFace USB anschließen und prüfen, ob das Interface in macOS oder in der DAW erscheint.
+  </div>
+  <div class="support-checklist__item">
+    <strong>2. DriverKit erlauben</strong>
+    Nach der Installation Datenschutz & Sicherheit sowie Login Items & Extensions prüfen.
+  </div>
+  <div class="support-checklist__item">
+    <strong>3. DisplayLink installieren</strong>
+    Curved Screen nur mit DisplayLink Manager und korrekter Mission-Control-Einstellung nutzen.
+  </div>
+  <div class="support-checklist__item">
+    <strong>4. Mehrkanal testen</strong>
+    DAW-Ausgang, Sample Rate, TotalMix und Speaker Settings vor dem Arbeiten kontrollieren.
+  </div>
 </div>
 
 ## Audio: RME MadiFace USB
@@ -70,13 +157,15 @@ Installiere den passenden RME-Treiber vor deinem Studiotermin, wenn du mit dem e
 
 ## Video: Curved Screen und DisplayLink
 
-Für den großen Studio-Screen wird DisplayLink benötigt. Installiere den DisplayLink Manager vor der Session und erlaube die nötigen Bildschirmfreigabe-Rechte in macOS.
+Für den großen Studio-Screen wird DisplayLink benötigt. Installiere den [DisplayLink Manager](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) vor der Session und erlaube die nötigen Bildschirmfreigabe-Rechte in macOS.
 
-1. DisplayLink Manager installieren.
-2. Systemeinstellungen öffnen.
-3. Mission Control öffnen.
-4. Option **Monitore verwenden verschiedene Spaces** deaktivieren.
-5. Ausloggen und erneut einloggen, damit die Einstellung aktiv wird.
+<ol class="support-steps">
+  <li><a href="https://www.synaptics.com/products/displaylink-graphics/downloads/macos" target="_blank" rel="noopener noreferrer">DisplayLink Manager</a> installieren.</li>
+  <li>Systemeinstellungen öffnen.</li>
+  <li>Mission Control öffnen.</li>
+  <li>Option <strong>Monitore verwenden verschiedene Spaces</strong> deaktivieren.</li>
+  <li>Ausloggen und erneut einloggen, damit die Einstellung aktiv wird.</li>
+</ol>
 
 ## Erste Fehlersuche
 
@@ -97,13 +186,20 @@ Für den großen Studio-Screen wird DisplayLink benötigt. Installiere den Displ
 
 ## Support & Kontakt
 
-**Studio-Support**
-
-- Johannes Schütt · Mobile: +41 79 786 12 49 · Mail: [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
-
-**Technischer Service A/V**
-
-- Simon Könz · Mobile: +41 76 330 11 02 · Mail: [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch)
+<div class="support-contact">
+  <div class="support-contact__item">
+    <strong>Studio-Support</strong>
+    Johannes Schütt<br>
+    Mobile: +41 79 786 12 49<br>
+    Mail: <a href="mailto:johannes.schuett@zhdk.ch">johannes.schuett@zhdk.ch</a>
+  </div>
+  <div class="support-contact__item">
+    <strong>Technischer Service A/V</strong>
+    Simon Könz<br>
+    Mobile: +41 76 330 11 02<br>
+    Mail: <a href="mailto:simon.koenz@zhdk.ch">simon.koenz@zhdk.ch</a>
+  </div>
+</div>
 
 ## Weitere Studio-Seiten
 
