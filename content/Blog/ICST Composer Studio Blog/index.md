@@ -132,11 +132,7 @@ The studio is open to international artists in residence, researchers, and stude
 
 This is the **service and resource hub** for the ICST Composition Studio. From here, you can access technical preparation, speaker and routing information, studio infrastructure, and downloads for working on site.
 
-If you are looking for the **public programme**, go to [ascolta](/blog/ascolta/). If you are looking for the **artists in residence** and their projects, go to [Residencies](/residenzen/).
-
-<div class="hero__links">
-  <a class="hero__link hero__link--primary" href="/blog/icst-kompositionsstudio-support/">Open Support</a>
-</div>
+If you are looking for the **public programme** or for **artists in residence** and their projects, the relevant areas are included in the overview below.
 
 ---
 
@@ -159,23 +155,28 @@ If you are looking for the **public programme**, go to [ascolta](/blog/ascolta/)
     <span class="hub-card__title">Speaker Setup</span>
     <span class="hub-card__text">Speaker structure, routing context, and spatial playback information.</span>
   </a>
-  <a href="/blog/downloads/">
-    <span class="hub-card__title">Downloads</span>
-    <span class="hub-card__text">Templates, checklists, and files for preparing your session.</span>
+  <a href="/blog/audio-examples/">
+    <span class="hub-card__title">Audio Examples</span>
+    <span class="hub-card__text">Listening examples and documented sound practice from the studio context.</span>
   </a>
-</div>
-
----
-
-## Related Areas
-
-<div class="hub-related">
+  <a href="/blog/icst-kompositionsstudio-pre-installation/">
+    <span class="hub-card__title">Pre-Installation</span>
+    <span class="hub-card__text">Prepare your own laptop before coming to the studio.</span>
+  </a>
+  <a href="/blog/icst-kompositionsstudio-regie/">
+    <span class="hub-card__title">Control Room</span>
+    <span class="hub-card__text">Workstation, connections, monitoring, and studio operation.</span>
+  </a>
+  <a href="/residenzen/">
+    <span class="hub-card__title">Artist Residencies</span>
+    <span class="hub-card__text">Residency programme, artists, and projects in the ICST studio.</span>
+  </a>
   <a href="/blog/ascolta/">
     <span class="hub-card__title">ascolta</span>
     <span class="hub-card__text">Public listening series for spatial and electroacoustic music.</span>
   </a>
-  <a href="/residenzen/">
-    <span class="hub-card__title">Residencies</span>
-    <span class="hub-card__text">Artist-in-residence programme, profiles, and projects.</span>
+  <a href="/blog/downloads/">
+    <span class="hub-card__title">Downloads</span>
+    <span class="hub-card__text">Templates, checklists, and files for preparing your session.</span>
   </a>
 </div>

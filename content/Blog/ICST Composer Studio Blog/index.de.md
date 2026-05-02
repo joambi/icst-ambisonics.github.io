@@ -131,11 +131,7 @@ Das Studio steht internationalen Künstler\*innen in Residenz, Forschenden und S
 
 Dies ist der **Service- und Ressourcen-Hub** für das ICST Kompositionsstudio. Von hier aus findest du technische Vorbereitung, Lautsprecher- und Routing-Informationen, Studio-Infrastruktur sowie Downloads für die Arbeit vor Ort.
 
-Wenn du eher das **öffentliche Programm** suchst, gehe zu [ascolta](/blog/ascolta/). Wenn du dich für die **Artists in Residence** und ihre Projekte interessierst, gehe zu [Residenzen](/residenzen/).
-
-<div class="hero__links">
-  <a class="hero__link hero__link--primary" href="/blog/icst-kompositionsstudio-support/">Support öffnen</a>
-</div>
+Wenn du eher das **öffentliche Programm** suchst oder dich für die **Artists in Residence** und ihre Projekte interessierst, findest du die passenden Bereiche ebenfalls unten in der Übersicht.
 
 ---
 
@@ -158,36 +154,28 @@ Wenn du eher das **öffentliche Programm** suchst, gehe zu [ascolta](/blog/ascol
     <span class="hub-card__title">Speaker Setup</span>
     <span class="hub-card__text">Lautsprecherstruktur, Routing-Kontext und räumliche Wiedergabe.</span>
   </a>
-  <a href="/blog/downloads/">
-    <span class="hub-card__title">Downloads</span>
-    <span class="hub-card__text">Templates, Checklisten und weitere Dateien für die Vorbereitung.</span>
+  <a href="/blog/audio-examples/">
+    <span class="hub-card__title">Audio Examples</span>
+    <span class="hub-card__text">Hörbeispiele und dokumentierte Klangpraxis aus dem Studio-Kontext.</span>
   </a>
-</div>
-
-## Studio-Bereiche
-
-- [Equipment](/blog/icst-kompositionsstudio-equipment/)
-- [Support](/blog/icst-kompositionsstudio-support/)
-- [Software](/blog/icst-kompositionsstudio-software/)
-- [Speaker Setup](/blog/icst-kompositionsstudio-speaker-settings/)
-- [Audio Examples](/blog/audio-examples/)
-- [Pre-Installation](/blog/icst-kompositionsstudio-pre-installation/)
-- [Regie](/blog/icst-kompositionsstudio-regie/)
-- [Artist Residencies](/residenzen/)
-- [ascolta](/blog/ascolta/)
-- [Downloads](/blog/downloads/)
-
----
-
-## Verwandte Bereiche
-
-<div class="hub-related">
+  <a href="/blog/icst-kompositionsstudio-pre-installation/">
+    <span class="hub-card__title">Pre-Installation</span>
+    <span class="hub-card__text">Vorbereitung des eigenen Laptops vor dem Studiotermin.</span>
+  </a>
+  <a href="/blog/icst-kompositionsstudio-regie/">
+    <span class="hub-card__title">Regie</span>
+    <span class="hub-card__text">Arbeitsplatz, Anschlüsse, Monitoring und Bedienung im Studio.</span>
+  </a>
+  <a href="/residenzen/">
+    <span class="hub-card__title">Artist Residencies</span>
+    <span class="hub-card__text">Residency-Programm, Künstler:innen und Projekte im ICST Studio.</span>
+  </a>
   <a href="/blog/ascolta/">
     <span class="hub-card__title">ascolta</span>
     <span class="hub-card__text">Öffentliche Hörreihe mit räumlicher und elektroakustischer Musik.</span>
   </a>
-  <a href="/residenzen/">
-    <span class="hub-card__title">Residenzen</span>
-    <span class="hub-card__text">Artist-in-Residence-Programm, Profile und Projekte.</span>
+  <a href="/blog/downloads/">
+    <span class="hub-card__title">Downloads</span>
+    <span class="hub-card__text">Templates, Checklisten und weitere Dateien für die Vorbereitung.</span>
   </a>
 </div>
