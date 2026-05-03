@@ -2,7 +2,7 @@
 title: "Working with Ambisonics: Advanced Workshop"
 description: "Four-hour ICST workshop on HOA signal chains, Ambisonics recording, ambiX/FuMa formats, production, live performance, Max/MSP, Csound, and compositional practice."
 date: 2026-05-03T00:00:00
-draft: false
+draft: true
 slug: working-with-ambisonics-workshop
 languageCode: en
 tags:
