@@ -2,10 +2,12 @@
 title: "Composing in Ambisonics"
 description: "A curated guide for composers: from analytical listening and FOA/HOA history to spatial counterpoint, tools, and studio practice."
 date: 2026-01-01T00:00:00
+draft: true
 type: docs
 docs_nav_title: "For Composers"
 cascade:
   type: docs
+  draft: true
 ---
 
 Ambisonics gives composers access to a three-dimensional sound field as compositional material: not as an effect added later, but as a structural dimension alongside pitch, rhythm, and timbre. Movement, depth, envelopment, elevation, and the relationship between point-like and diffuse sound objects can all be **composed**.
