@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICST Ambisonics Workshop 2026 – Betriebsanleitung</title>
+<style>
+  :root {
+    --dark:    #1A1A2E;
+    --panel:   #16213E;
+    --card:    #0F3460;
+    --accent:  #E94560;
+    --accent2: #53C0F0;
+    --accent3: #F5A623;
+    --green:   #4CAF50;
+    --text:    #E0E0E0;
+    --muted:   #8892A4;
+    --radius:  8px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--dark);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 0 0 60px;
+  }
+
+  /* ── Header ── */
+  header {
+    background: linear-gradient(135deg, var(--panel) 0%, #0a1628 100%);
+    border-bottom: 2px solid var(--accent);
+    padding: 28px 40px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 16px;
+  }
+  header h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: 0.03em; }
+  header h1 span { color: var(--accent2); }
+  .version-badge {
+    background: var(--card); border: 1px solid var(--accent2);
+    border-radius: 20px; padding: 5px 14px;
+    font-size: 0.78rem; color: var(--accent2); white-space: nowrap;
+  }
+
+  /* ── Progress Bar ── */
+  #progress-bar-wrap {
+    background: var(--panel); padding: 12px 40px;
+    border-bottom: 1px solid #2a3a5e;
+    display: flex; align-items: center; gap: 16px;
+  }
+  #progress-bar-wrap label { font-size: 0.82rem; color: var(--muted); white-space: nowrap; }
+  #progress-track {
+    flex: 1; height: 8px; background: var(--card);
+    border-radius: 4px; overflow: hidden;
+  }
+  #progress-fill {
+    height: 100%; width: 0%;
+    background: linear-gradient(90deg, var(--accent2), var(--green));
+    border-radius: 4px; transition: width 0.4s ease;
+  }
+  #progress-pct { font-size: 0.82rem; color: var(--accent2); min-width: 40px; text-align: right; }
+  #reset-btn {
+    background: none; border: 1px solid var(--muted); color: var(--muted);
+    border-radius: 6px; padding: 4px 12px; font-size: 0.78rem; cursor: pointer;
+    transition: all 0.2s;
+  }
+  #reset-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── Main layout ── */
+  .container { max-width: 900px; margin: 0 auto; padding: 32px 20px 0; }
+
+  /* ── Section headers ── */
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px;
+  }
+  .section-num {
+    width: 36px; height: 36px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1rem; flex-shrink: 0;
+  }
+  .phase-0 .section-num { background: var(--accent3); color: #000; }
+  .phase-a .section-num { background: var(--accent2); color: #000; }
+  .phase-b .section-num { background: var(--green); color: #000; }
+  .phase-c .section-num { background: var(--accent); color: #fff; }
+  .section-title { font-size: 1.15rem; font-weight: 700; }
+  .section-sub { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
+
+  /* ── Phase badges ── */
+  .phase-badge {
+    display: inline-block; padding: 2px 10px; border-radius: 12px;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; margin-left: 8px;
+  }
+  .badge-0  { background: var(--accent3); color: #000; }
+  .badge-a  { background: var(--accent2); color: #000; }
+  .badge-b  { background: var(--green); color: #000; }
+  .badge-c  { background: var(--accent); color: #fff; }
+
+  /* ── Step cards ── */
+  .steps-card {
+    background: var(--panel); border: 1px solid #2a3a5e;
+    border-radius: var(--radius); overflow: hidden;
+    margin-bottom: 8px;
+  }
+
+  .step {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 14px 18px; border-bottom: 1px solid #1e2d4a;
+    cursor: pointer; transition: background 0.15s;
+    user-select: none;
+  }
+  .step:last-child { border-bottom: none; }
+  .step:hover { background: rgba(83,192,240,0.06); }
+  .step.done { background: rgba(76,175,80,0.07); }
+
+  .step-check {
+    width: 22px; height: 22px; border-radius: 50%;
+    border: 2px solid var(--muted); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 1px; transition: all 0.2s;
+  }
+  .step.done .step-check {
+    background: var(--green); border-color: var(--green);
+  }
+  .step-check svg { display: none; }
+  .step.done .step-check svg { display: block; }
+
+  .step-body { flex: 1; }
+  .step-title {
+    font-size: 0.92rem; font-weight: 600; line-height: 1.4;
+  }
+  .step.done .step-title { color: var(--muted); text-decoration: line-through; }
+  .step-detail {
+    font-size: 0.82rem; color: var(--muted); margin-top: 5px; line-height: 1.55;
+  }
+  .step-num {
+    font-size: 0.72rem; color: var(--muted); min-width: 24px; text-align: right;
+    padding-top: 3px; flex-shrink: 0;
+  }
+
+  /* code / monospace highlights */
+  code {
+    background: var(--card); color: var(--accent2);
+    border-radius: 4px; padding: 1px 6px;
+    font-family: 'SF Mono', 'Fira Mono', 'Consolas', monospace;
+    font-size: 0.82em;
+  }
+  .osc-msg {
+    display: inline-block;
+    background: #0d2137; color: #7ee8fa;
+    border: 1px solid #2a4a6e; border-radius: 4px;
+    padding: 0px 8px; font-family: 'SF Mono','Fira Mono','Consolas',monospace;
+    font-size: 0.8em; margin: 1px 0;
+  }
+  .warn-note {
+    background: rgba(233,69,96,0.12); border-left: 3px solid var(--accent);
+    border-radius: 0 4px 4px 0; padding: 6px 12px; margin-top: 8px;
+    font-size: 0.80rem; color: #ffb3b3;
+  }
+  .info-note {
+    background: rgba(83,192,240,0.10); border-left: 3px solid var(--accent2);
+    border-radius: 0 4px 4px 0; padding: 6px 12px; margin-top: 8px;
+    font-size: 0.80rem; color: #a8dcf0;
+  }
+  .tip-note {
+    background: rgba(245,166,35,0.10); border-left: 3px solid var(--accent3);
+    border-radius: 0 4px 4px 0; padding: 6px 12px; margin-top: 8px;
+    font-size: 0.80rem; color: #f7d08a;
+  }
+
+  /* sub-step list */
+  .sub-steps { list-style: none; margin-top: 8px; }
+  .sub-steps li {
+    display: flex; gap: 8px; margin-bottom: 4px;
+    font-size: 0.82rem; color: var(--text);
+  }
+  .sub-steps li::before {
+    content: "→"; color: var(--accent2); flex-shrink: 0;
+  }
+
+  /* ── Signal Chain Diagram ── */
+  .signal-chain-wrap {
+    background: var(--panel); border: 1px solid #2a3a5e;
+    border-radius: var(--radius); padding: 24px 20px;
+    margin: 8px 0 24px;
+    overflow-x: auto;
+  }
+  .signal-chain {
+    display: flex; align-items: center; gap: 0;
+    min-width: 600px;
+  }
+  .sc-node {
+    background: var(--card); border: 1px solid #2a4a6e;
+    border-radius: 8px; padding: 10px 14px; text-align: center;
+    flex: 1;
+  }
+  .sc-node .n-label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .sc-node .n-name { font-size: 0.9rem; font-weight: 700; margin: 3px 0; }
+  .sc-node .n-port { font-size: 0.72rem; color: var(--accent2); }
+  .sc-arrow {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 0 6px; flex-shrink: 0;
+  }
+  .sc-arrow .arrow-line {
+    width: 36px; height: 2px; background: var(--accent2);
+    position: relative;
+  }
+  .sc-arrow .arrow-line::after {
+    content: ''; position: absolute; right: -1px; top: -5px;
+    border: 6px solid transparent;
+    border-left-color: var(--accent2);
+    border-right: none;
+  }
+  .sc-arrow .arrow-label {
+    font-size: 0.64rem; color: var(--muted); margin-top: 4px; white-space: nowrap;
+  }
+
+  /* ── OSC Quick Reference ── */
+  .osc-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 0.83rem; margin: 8px 0;
+  }
+  .osc-table th {
+    background: var(--card); color: var(--accent2);
+    padding: 8px 12px; text-align: left;
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em;
+    border-bottom: 1px solid #2a3a5e;
+  }
+  .osc-table td {
+    padding: 8px 12px; border-bottom: 1px solid #1e2d4a;
+    vertical-align: top;
+  }
+  .osc-table tr:last-child td { border-bottom: none; }
+  .osc-table tr:hover td { background: rgba(83,192,240,0.05); }
+  .osc-table td:first-child { font-family: 'SF Mono','Fira Mono','Consolas',monospace; color: #7ee8fa; }
+
+  /* ── Troubleshooting ── */
+  .trouble-item {
+    background: var(--panel); border: 1px solid #2a3a5e;
+    border-radius: var(--radius); margin-bottom: 8px; overflow: hidden;
+  }
+  .trouble-header {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 18px; cursor: pointer;
+    background: rgba(233,69,96,0.05);
+  }
+  .trouble-header:hover { background: rgba(233,69,96,0.10); }
+  .trouble-sym { font-size: 1.1rem; }
+  .trouble-title { flex: 1; font-weight: 600; font-size: 0.9rem; }
+  .trouble-arrow { color: var(--muted); transition: transform 0.2s; font-size: 0.9rem; }
+  .trouble-item.open .trouble-arrow { transform: rotate(90deg); }
+  .trouble-body {
+    padding: 0; max-height: 0; overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.2s;
+  }
+  .trouble-item.open .trouble-body {
+    max-height: 600px; padding: 14px 18px 18px;
+    border-top: 1px solid #2a3a5e;
+  }
+  .cause-fix { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+  .cf-block { background: var(--card); border-radius: 6px; padding: 10px 14px; }
+  .cf-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 6px; }
+  .cf-text { font-size: 0.83rem; line-height: 1.5; }
+  @media (max-width: 600px) {
+    .cause-fix { grid-template-columns: 1fr; }
+    header { padding: 20px; }
+    #progress-bar-wrap { padding: 10px 20px; }
+    .container { padding: 20px 12px 0; }
+  }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center; padding: 32px 20px 0;
+    font-size: 0.78rem; color: var(--muted);
+    border-top: 1px solid #2a3a5e; margin-top: 40px;
+  }
+  footer a { color: var(--accent2); text-decoration: none; }
+
+  /* ── Repeat helper ── */
+  .repeat-hint {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(245,166,35,0.12); border: 1px solid var(--accent3);
+    border-radius: 20px; padding: 3px 12px; font-size: 0.75rem;
+    color: var(--accent3); margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>ICST Ambisonics Workshop 2026<br><span>Betriebsanleitung – Scenen Wechsler</span></h1>
+  </div>
+  <div class="version-badge">v1.0 · Mai 2026</div>
+</header>
+
+<div id="progress-bar-wrap">
+  <label>Fortschritt</label>
+  <div id="progress-track"><div id="progress-fill"></div></div>
+  <div id="progress-pct">0 %</div>
+  <button id="reset-btn" onclick="resetAll()">↺ Reset</button>
+</div>
+
+<div class="container">
+
+  <!-- ══════════════════════════════════════════════════════
+       SIGNAL CHAIN
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-header">
+    <div style="font-size:1.1rem;font-weight:700;color:var(--muted)">Signalfluss</div>
+  </div>
+  <div class="signal-chain-wrap">
+    <div class="signal-chain">
+      <div class="sc-node">
+        <div class="n-label">DAW</div>
+        <div class="n-name">REAPER</div>
+        <div class="n-port">Marker / Playback</div>
+      </div>
+      <div class="sc-arrow">
+        <div class="arrow-line"></div>
+        <div class="arrow-label">OSC UDP<br>:50010</div>
+      </div>
+      <div class="sc-node">
+        <div class="n-label">Max/MSP</div>
+        <div class="n-name">ACT_Circle_Mover</div>
+        <div class="n-port">p Scene_Mover</div>
+      </div>
+      <div class="sc-arrow">
+        <div class="arrow-line"></div>
+        <div class="arrow-label">OSC UDP<br>:50001–08</div>
+      </div>
+      <div class="sc-node">
+        <div class="n-label">Plugin (VST3/AU)</div>
+        <div class="n-name">AmbiEncoder</div>
+        <div class="n-port">ICST · 8 Instanzen</div>
+      </div>
+      <div class="sc-arrow">
+        <div class="arrow-line"></div>
+        <div class="arrow-label">Audio<br>Ambisonics</div>
+      </div>
+      <div class="sc-node">
+        <div class="n-label">Lautsprecher</div>
+        <div class="n-name">Speaker Array</div>
+        <div class="n-port">Decoder</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       PHASE 0 – EINMALIGES SETUP
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-header phase-0">
+    <div class="section-num">0</div>
+    <div>
+      <div class="section-title">Einmaliges Setup <span class="phase-badge badge-0">SETUP</span></div>
+      <div class="section-sub">Einmalig pro Rechner / Session. Danach nicht mehr nötig.</div>
+    </div>
+  </div>
+
+  <div class="steps-card" id="phase0">
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">0.1</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">ACT_Circle_Mover_Main.app starten</div>
+        <div class="step-detail">
+          Im Bundle-Ordner die App doppelklicken.
+          <div class="warn-note">⚠ macOS zeigt Netzwerk-Dialog → <strong>«Erlauben»</strong> klicken (notwendig für UDP-Empfang).</div>
+          <div class="info-note">✓ Warten bis in der Max Console erscheint:<br><code>udpreceiver binding to port 50010</code></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">0.2</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">REAPER öffnen</div>
+        <div class="step-detail">
+          REAPER starten und das Workshop-Projekt laden (oder neues Projekt anlegen).
+          <div class="info-note">Das REAPER-Projekt muss ICST AmbiEncoder VST3/AU-Instanzen auf den Audio-Tracks enthalten.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">0.3</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">ICST_Trigger_Scenes.lua laden</div>
+        <div class="step-detail">
+          In REAPER:
+          <ul class="sub-steps">
+            <li><strong>Actions → Show Action List</strong> (oder <code>?</code>-Taste)</li>
+            <li><strong>New action → Load ReaScript…</strong></li>
+            <li>Datei wählen: <code>ICST_Trigger_Scenes.lua</code></li>
+            <li>Skript erscheint jetzt in der Action List – noch <em>nicht</em> ausführen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">0.4</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">ICST_Store_Current_Marker_Scene.lua laden</div>
+        <div class="step-detail">
+          Gleicher Weg wie 0.3 – aber diese Datei:
+          <ul class="sub-steps">
+            <li><strong>New action → Load ReaScript…</strong></li>
+            <li>Datei wählen: <code>ICST_Store_Current_Marker_Scene.lua</code></li>
+          </ul>
+          <div class="tip-note">💡 Beide Scripts einem Toolbar-Button oder Keyboard-Shortcut zuweisen (Rechtsklick in Action List → Add button to toolbar)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">0.5</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">OSC-Verbindung testen</div>
+        <div class="step-detail">
+          Kurz-Test ohne Playback:
+          <ul class="sub-steps">
+            <li>In Max-Fenster die <strong>p Scene_Mover</strong> öffnen (Doppelklick auf Subpatcher)</li>
+            <li>Einen der Scene-Buttons (1–6) manuell klicken</li>
+            <li>ambimonitor-Anzeige reagiert → <strong>Verbindung OK</strong></li>
+          </ul>
+          <div class="info-note">Reagiert nichts: → Troubleshooting Abschnitt weiter unten</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       WORKFLOW A – SCENE SPEICHERN
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-header phase-a">
+    <div class="section-num">A</div>
+    <div>
+      <div class="section-title">Workflow A – Scene speichern <span class="phase-badge badge-a">VOR DEM KONZERT</span></div>
+      <div class="section-sub">Ambisonics-Positionen definieren und pro Marker als Scene ablegen.</div>
+    </div>
+  </div>
+
+  <div class="steps-card" id="phaseA">
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">A.1</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Marker an gewünschten Positionen setzen (REAPER)</div>
+        <div class="step-detail">
+          Jeden Abschnitt / jede Klangszene als REAPER-Marker markieren:
+          <ul class="sub-steps">
+            <li>Cursor an die gewünschte Zeitposition setzen</li>
+            <li><code>Shift+M</code> → Marker hinzufügen (Name vergeben, z. B. <em>Scene_1</em>)</li>
+            <li>Gleiche Schritte für alle weiteren Szenen wiederholen</li>
+          </ul>
+          <div class="info-note">Der Marker-Name wird als Scene-Bezeichnung in Max verwendet.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">A.2</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Ambisonics-Position für Scene_1 einstellen (Max)</div>
+        <div class="step-detail">
+          In ACT_Circle_Mover_Main → <strong>p Scene_Mover</strong>:
+          <ul class="sub-steps">
+            <li>Den <strong>ambimonitor</strong> öffnen (Doppelklick)</li>
+            <li>Klangquelle(n) auf die gewünschte Position ziehen</li>
+            <li>Position wird sofort an AmbiEncoder weitergegeben (OSC → Port 50001–50008)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">A.3</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Cursor auf Marker setzen (REAPER)</div>
+        <div class="step-detail">
+          REAPER Edit-Cursor exakt auf den entsprechenden Marker setzen:
+          <ul class="sub-steps">
+            <li>Marker im Arrange-Bereich anklicken, oder</li>
+            <li><code>Ctrl+G</code> / <code>Cmd+G</code> → «Go to marker number»</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">A.4</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Scene speichern – Store-Script ausführen</div>
+        <div class="step-detail">
+          <strong>ICST_Store_Current_Marker_Scene</strong>-Action in REAPER aufrufen:
+          <ul class="sub-steps">
+            <li>Action List → Script suchen → <strong>Run</strong>, oder</li>
+            <li>Toolbar-Button / Shortcut drücken (falls in 0.4 zugewiesen)</li>
+          </ul>
+          <div class="info-note">Das Script sendet <span class="osc-msg">/act/scene/store «Scene_1»</span> → Max speichert die aktuelle ambimonitor-Position als «Scene_1».</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">A.5</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Speicherung in Max Console bestätigen</div>
+        <div class="step-detail">
+          In der Max Console (Extras → Console) erscheint:
+          <div style="margin-top:6px"><code>scene stored: Scene_1</code></div>
+          <div class="warn-note">Erscheint keine Meldung → OSC-Verbindung prüfen (Troubleshooting unten)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">A.6</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Für alle weiteren Scenes wiederholen (A.2 – A.5)</div>
+        <div class="step-detail">
+          Schritte A.2–A.5 für jede Szene (Scene_2, Scene_3, …) wiederholen.
+          <div class="repeat-hint">🔁 Schleife: A.2 → A.3 → A.4 → A.5 → nächste Scene</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">A.7</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Scenes in snapshots.xml speichern (Max)</div>
+        <div class="step-detail">
+          Alle gespeicherten Scenes persistent sichern:
+          <ul class="sub-steps">
+            <li>In ACT_Circle_Mover: <strong>write</strong>-Button klicken</li>
+            <li>Speicherpfad wählen / bestätigen → <code>snapshots.xml</code></li>
+          </ul>
+          <div class="tip-note">💡 Beim nächsten App-Start mit <strong>read</strong> wieder laden.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       WORKFLOW B – PLAYBACK / PERFORMANCE
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-header phase-b">
+    <div class="section-num">B</div>
+    <div>
+      <div class="section-title">Workflow B – Playback / Performance <span class="phase-badge badge-b">KONZERT</span></div>
+      <div class="section-sub">Automatischer Scene-Wechsel synchron zum REAPER-Playback.</div>
+    </div>
+  </div>
+
+  <div class="steps-card" id="phaseB">
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">B.1</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Trigger-Script starten (Dauerschleife)</div>
+        <div class="step-detail">
+          <strong>ICST_Trigger_Scenes</strong>-Action in REAPER aufrufen:
+          <ul class="sub-steps">
+            <li>Action List → Script suchen → <strong>Run</strong></li>
+            <li>Das Script läuft als <em>kontinuierlicher Loop</em> – es überwacht permanent Marker und Playback-Status</li>
+          </ul>
+          <div class="info-note">Erkennbar: In der REAPER-Titelleiste oder Console erscheint Aktivitäts-Meldung. Das Script läuft bis es manuell gestoppt wird.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">B.2</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Cursor an den Startpunkt setzen</div>
+        <div class="step-detail">
+          Cursor auf den ersten Marker oder gewünschten Startpunkt in REAPER setzen.
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">B.3</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Playback starten (Spacebar / Transport Play)</div>
+        <div class="step-detail">
+          REAPER-Playback starten.
+          <div class="info-note">
+            Das Trigger-Script erkennt den Play-Status und sendet bei jedem Marker automatisch:<br>
+            <span class="osc-msg">/act/scene/target «Scene_Name»</span> – Ziel-Scene<br>
+            <span class="osc-msg">/act/scene/interval i f i f i</span> – von/bis Position + Dauer in ms
+          </div>
+          <div class="tip-note">💡 Max interpoliert die ambimonitor-Position sanft mit <code>live.line</code> – kein harter Sprung.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">B.4</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Scene-Übergänge in Max beobachten (optional)</div>
+        <div class="step-detail">
+          In ACT_Circle_Mover → p Scene_Mover:
+          <ul class="sub-steps">
+            <li>Das <strong>umenu</strong> zeigt die aktuelle Ziel-Scene</li>
+            <li>Der <strong>ambimonitor</strong> bewegt sich zur Ziel-Position</li>
+            <li>Scene-Buttons (1–6) leuchten bei aktivem Scene auf</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">B.5</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Playback stoppen / Trigger-Script beenden</div>
+        <div class="step-detail">
+          Nach dem Konzert:
+          <ul class="sub-steps">
+            <li>REAPER Stop (<code>Space</code>)</li>
+            <li>Trigger-Script stoppen: Action List → Script → <strong>Run</strong> (togglet Dauerschleife aus)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       WORKFLOW C – SCHNELLTEST / MARKER-KLICK
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-header phase-c">
+    <div class="section-num">C</div>
+    <div>
+      <div class="section-title">Workflow C – Schnelltest / Marker-Klick <span class="phase-badge badge-c">SOUNDCHECK</span></div>
+      <div class="section-sub">Einzelne Scenes manuell anspringen ohne laufendes Playback.</div>
+    </div>
+  </div>
+
+  <div class="steps-card" id="phaseC">
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">C.1</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Trigger-Script läuft (aus Workflow B)</div>
+        <div class="step-detail">
+          Das Trigger-Script muss aktiv sein (wie in B.1 gestartet). Playback kann gestoppt sein.
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">C.2</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Cursor auf gewünschten Marker klicken</div>
+        <div class="step-detail">
+          Im Arrange-Bereich direkt auf einen Marker-Pfeil klicken.
+          <div class="info-note">
+            Das Trigger-Script erkennt den Klick und sendet sofort:<br>
+            <span class="osc-msg">/act/scene/target «Scene_Name»</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" onclick="toggle(this)">
+      <div class="step-num">C.3</div>
+      <div class="step-check"><svg width="12" height="10" viewBox="0 0 12 10"><polyline points="1,5 4.5,8.5 11,1" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+      <div class="step-body">
+        <div class="step-title">Reaktion in Max prüfen</div>
+        <div class="step-detail">
+          <ul class="sub-steps">
+            <li>ambimonitor bewegt sich zur gespeicherten Position der angeklickten Scene</li>
+            <li>AmbiEncoder empfängt neue XYZ-Koordinaten (OSC an Ports 50001–50008)</li>
+          </ul>
+          <div class="tip-note">💡 Ideal für Soundcheck: jede Scene kurz antriggern und Lautsprecher-Ortung prüfen.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       OSC QUICK REFERENCE
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-header">
+    <div style="font-size:1.1rem;font-weight:700;color:var(--accent2)">OSC Quick Reference</div>
+  </div>
+  <div class="steps-card">
+    <div style="padding: 4px 0;">
+      <table class="osc-table">
+        <thead>
+          <tr>
+            <th>OSC-Adresse</th>
+            <th>Argumente</th>
+            <th>Bedeutung</th>
+            <th>Von</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>/act/scene/target</td>
+            <td><code>s</code> scene_name</td>
+            <td>Ziel-Scene setzen (sofort oder interpoliert)</td>
+            <td>REAPER → Max</td>
+          </tr>
+          <tr>
+            <td>/act/scene/interval</td>
+            <td><code>i f i f i</code><br>m1_idx · m1_pos · m2_idx · m2_pos · diff_ms</td>
+            <td>Interpolations-Intervall: von Marker m1 zu m2, Dauer diff_ms</td>
+            <td>REAPER → Max</td>
+          </tr>
+          <tr>
+            <td>/act/scene/store</td>
+            <td><code>s</code> scene_name</td>
+            <td>Aktuelle ambimonitor-Position als scene_name speichern</td>
+            <td>REAPER → Max</td>
+          </tr>
+          <tr>
+            <td>/act/scene/setduration</td>
+            <td><code>i</code> ms</td>
+            <td>Überblend-Dauer manuell setzen</td>
+            <td>REAPER → Max</td>
+          </tr>
+          <tr>
+            <td>/act/scene/start</td>
+            <td><code>i f s</code><br>marker_idx · playpos · scene_name</td>
+            <td>Playback-Start mit Scene-Angabe</td>
+            <td>REAPER → Max</td>
+          </tr>
+          <tr>
+            <td>(XYZ-Koordinaten)</td>
+            <td>ambimonitor-intern</td>
+            <td>Positionen an AmbiEncoder-Instanzen senden</td>
+            <td>Max → AmbiEncoder<br>Port 50001–50008</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       TROUBLESHOOTING
+  ════════════════════════════════════════════════════════ -->
+  <div class="section-header">
+    <div style="font-size:1.1rem;font-weight:700;color:var(--accent)">Troubleshooting</div>
+  </div>
+
+  <div class="trouble-item" onclick="toggleTrouble(this)">
+    <div class="trouble-header">
+      <span class="trouble-sym">🔇</span>
+      <span class="trouble-title">Keine Reaktion in Max – ambimonitor bewegt sich nicht</span>
+      <span class="trouble-arrow">▶</span>
+    </div>
+    <div class="trouble-body">
+      <div class="cause-fix">
+        <div class="cf-block">
+          <div class="cf-label">Mögliche Ursache</div>
+          <div class="cf-text">OSC-Pakete kommen nicht an Port 50010</div>
+        </div>
+        <div class="cf-block">
+          <div class="cf-label">Lösung</div>
+          <div class="cf-text">
+            1. Max Console prüfen: <code>udpreceiver binding to port 50010</code> vorhanden?<br>
+            2. Wenn nicht: App neu starten, Netzwerk-Dialog → <strong>«Erlauben»</strong><br>
+            3. Terminal: <code>lsof -i UDP:50010</code> → ACT_Circle_Mover muss erscheinen
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trouble-item" onclick="toggleTrouble(this)">
+    <div class="trouble-header">
+      <span class="trouble-sym">🧩</span>
+      <span class="trouble-title">ACT_Circle_Mover_Main.app öffnet nicht / startet nicht</span>
+      <span class="trouble-arrow">▶</span>
+    </div>
+    <div class="trouble-body">
+      <div class="cause-fix">
+        <div class="cf-block">
+          <div class="cf-label">Mögliche Ursache</div>
+          <div class="cf-text">macOS Gatekeeper blockiert unbekannte App</div>
+        </div>
+        <div class="cf-block">
+          <div class="cf-label">Lösung</div>
+          <div class="cf-text">
+            Rechtsklick auf .app → <strong>«Öffnen»</strong> (nicht Doppelklick).<br>
+            Einmalig bestätigen. Danach normaler Start.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trouble-item" onclick="toggleTrouble(this)">
+    <div class="trouble-header">
+      <span class="trouble-sym">🐍</span>
+      <span class="trouble-title">REAPER Script-Fehler: «python3 not found» oder helper.py schlägt fehl</span>
+      <span class="trouble-arrow">▶</span>
+    </div>
+    <div class="trouble-body">
+      <div class="cause-fix">
+        <div class="cf-block">
+          <div class="cf-label">Mögliche Ursache</div>
+          <div class="cf-text">Python 3 nicht unter Standard-Pfaden (<code>/opt/homebrew/bin/python3</code>, <code>/usr/local/bin/python3</code>, <code>/usr/bin/python3</code>) gefunden</div>
+        </div>
+        <div class="cf-block">
+          <div class="cf-label">Lösung</div>
+          <div class="cf-text">
+            Terminal: <code>bash test_python3.sh</code> ausführen<br>
+            Falls fehlgeschlagen: <code>bash install_python3.sh</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trouble-item" onclick="toggleTrouble(this)">
+    <div class="trouble-header">
+      <span class="trouble-sym">🔊</span>
+      <span class="trouble-title">AmbiEncoder Plugin reagiert nicht auf Positions-Änderungen</span>
+      <span class="trouble-arrow">▶</span>
+    </div>
+    <div class="trouble-body">
+      <div class="cause-fix">
+        <div class="cf-block">
+          <div class="cf-label">Mögliche Ursache</div>
+          <div class="cf-text">OSC-Empfang im AmbiEncoder nicht aktiviert, oder falscher Port</div>
+        </div>
+        <div class="cf-block">
+          <div class="cf-label">Lösung</div>
+          <div class="cf-text">
+            Im AmbiEncoder-Plugin: OSC Receive aktivieren, Port auf <strong>50001–50008</strong> (je Instanz) setzen.<br>
+            Prüfen: <code>lsof -i UDP:50001</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trouble-item" onclick="toggleTrouble(this)">
+    <div class="trouble-header">
+      <span class="trouble-sym">📁</span>
+      <span class="trouble-title">«scene stored» erscheint nicht in Max Console nach Store-Script</span>
+      <span class="trouble-arrow">▶</span>
+    </div>
+    <div class="trouble-body">
+      <div class="cause-fix">
+        <div class="cf-block">
+          <div class="cf-label">Mögliche Ursache</div>
+          <div class="cf-text">Cursor sitzt nicht auf einem benannten Marker; oder Script-Datei nicht korrekt geladen</div>
+        </div>
+        <div class="cf-block">
+          <div class="cf-label">Lösung</div>
+          <div class="cf-text">
+            1. REAPER Marker List öffnen (<code>Shift+Ctrl+M</code>) → Marker mit Namen vorhanden?<br>
+            2. Cursor exakt auf Marker-Position? → <code>Ctrl/Cmd+G</code> nutzen<br>
+            3. Script neu laden (Schritt 0.4 wiederholen)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trouble-item" onclick="toggleTrouble(this)">
+    <div class="trouble-header">
+      <span class="trouble-sym">⏱</span>
+      <span class="trouble-title">Scene-Übergang zu abrupt / kein Fade</span>
+      <span class="trouble-arrow">▶</span>
+    </div>
+    <div class="trouble-body">
+      <div class="cause-fix">
+        <div class="cf-block">
+          <div class="cf-label">Mögliche Ursache</div>
+          <div class="cf-text">Marker liegen zu dicht zusammen (diff_ms ≈ 0), oder <code>live.line</code> bekommt keinen Interval-Parameter</div>
+        </div>
+        <div class="cf-block">
+          <div class="cf-label">Lösung</div>
+          <div class="cf-text">
+            Mindestabstand zwischen Markern: <strong>≥ 500 ms</strong> empfohlen.<br>
+            Alternativ manuell via OSC: <span class="osc-msg">/act/scene/setduration 2000</span> (= 2 Sekunden Fade)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- .container -->
+
+<footer>
+  <p>ICST Ambisonics Workshop 2026 · ZHdK / ICST ·
+    <a href="https://www.zhdk.ch/forschung/icst" target="_blank">zhdk.ch/forschung/icst</a>
+  </p>
+  <p style="margin-top:6px">Generiert mit Claude · <a href="ICST_Workshop_Tools.html">→ Workshop Tools</a></p>
+</footer>
+
+<script>
+  // ── Checkbox state persistence ──────────────────────────
+  const STORE_KEY = 'icst_betrieb_checks_v1';
+
+  function saveState() {
+    const steps = document.querySelectorAll('.step');
+    const state = {};
+    steps.forEach((s, i) => { state[i] = s.classList.contains('done'); });
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch(e){}
+  }
+
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORE_KEY);
+      if (!raw) return;
+      const state = JSON.parse(raw);
+      const steps = document.querySelectorAll('.step');
+      steps.forEach((s, i) => {
+        if (state[i]) s.classList.add('done');
+      });
+    } catch(e){}
+  }
+
+  function toggle(el) {
+    el.classList.toggle('done');
+    saveState();
+    updateProgress();
+  }
+
+  function resetAll() {
+    document.querySelectorAll('.step.done').forEach(s => s.classList.remove('done'));
+    try { localStorage.removeItem(STORE_KEY); } catch(e){}
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const all  = document.querySelectorAll('.step').length;
+    const done = document.querySelectorAll('.step.done').length;
+    const pct  = all === 0 ? 0 : Math.round((done / all) * 100);
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('progress-pct').textContent  = pct + ' %';
+  }
+
+  // ── Troubleshooting accordion ───────────────────────────
+  function toggleTrouble(el) {
+    el.classList.toggle('open');
+  }
+
+  // ── Init ────────────────────────────────────────────────
+  loadState();
+  updateProgress();
+</script>
+</body>
+</html>
