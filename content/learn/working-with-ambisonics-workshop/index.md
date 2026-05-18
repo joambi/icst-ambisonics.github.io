@@ -227,7 +227,7 @@ a.ws-badge:hover { background: rgba(255,255,255,0.25); border-color: rgba(255,25
 
 <div class="ws-info">
 <strong>📋 Preparation</strong>
-Reaper is pre-installed on all workshop computers (v7+, incl. ICST plugins) · Bring headphones (binaural monitoring) · <a href="https://e.pcloud.link/publink/show?code=kZ2sJrZRfKhPcnfwtFkV5zgXyQApL2tK93X" target="_blank" rel="noopener">Download the large workshop package</a> (Reaper folder + papers) in advance
+Reaper is pre-installed on all workshop computers (v7+, incl. ICST plugins) · Bring headphones (binaural monitoring) · <a href="https://e.pcloud.link/publink/show?code=XZAeJrZH78kTyE16GyaO0aFzw3kdhpvNeYk" target="_blank" rel="noopener">Download the large workshop package</a> (Reaper folder + papers) in advance
 </div>
 
 ---
@@ -407,19 +407,37 @@ The Zylia ZM-1 delivers A-format (19 raw channels). The Zylia software converts 
 
 ### Field Recording Checklist
 
+<style>
+.ws-checklist { list-style: none; padding: 0; margin: 0.5rem 0 1.2rem; }
+.ws-checklist li { display: flex; align-items: flex-start; gap: 0.7rem; padding: 0.38rem 0; font-size: 1.48rem; line-height: 1.5; border-bottom: 1px solid #e8eef5; }
+.theme--dark .ws-checklist li { border-bottom-color: #2a3d4f; }
+.ws-checklist li:last-child { border-bottom: none; }
+.ws-checklist input[type="checkbox"] { flex-shrink: 0; width: 1.2rem; height: 1.2rem; margin-top: 0.22rem; accent-color: #4a9eda; cursor: pointer; }
+.ws-checklist li.done { color: #888; text-decoration: line-through; }
+.theme--dark .ws-checklist li.done { color: #556; }
+</style>
+
 Before recording:
 
-- [ ] Acoustic survey: reflections, noise sources, wind direction
-- [ ] Decide on microphone placement and document it (height, orientation, distance)
-- [ ] Level check: all 19 channels at approx. −18 dBFS
-- [ ] Binaural monitoring active and verified
-- [ ] Metadata template prepared (location, date, take number, weather)
+<ul class="ws-checklist" id="checklist-before">
+  <li><input type="checkbox" onchange="wsCk(this)"> Acoustic survey: reflections, noise sources, wind direction</li>
+  <li><input type="checkbox" onchange="wsCk(this)"> Decide on microphone placement and document it (height, orientation, distance)</li>
+  <li><input type="checkbox" onchange="wsCk(this)"> Level check: all 19 channels at approx. −18 dBFS</li>
+  <li><input type="checkbox" onchange="wsCk(this)"> Binaural monitoring active and verified</li>
+  <li><input type="checkbox" onchange="wsCk(this)"> Metadata template prepared (location, date, take number, weather)</li>
+</ul>
 
 After recording:
 
-- [ ] A-to-B conversion in Zylia app
-- [ ] Load HOA file (16 ch AmbiX) in Reaper and verify binaurally
-- [ ] Archive raw channels (A-format)
+<ul class="ws-checklist" id="checklist-after">
+  <li><input type="checkbox" onchange="wsCk(this)"> A-to-B conversion in Zylia app</li>
+  <li><input type="checkbox" onchange="wsCk(this)"> Load HOA file (16 ch AmbiX) in Reaper and verify binaurally</li>
+  <li><input type="checkbox" onchange="wsCk(this)"> Archive raw channels (A-format)</li>
+</ul>
+
+<script>
+function wsCk(cb) { cb.closest('li').classList.toggle('done', cb.checked); }
+</script>
 
 ### Reaper Session (pre-configured)
 
@@ -742,7 +760,7 @@ A guided discussion to consolidate the workshop experience. Not a lecture — pa
 - Download the pre-configured Reaper session in advance
 
 <div class="ws-resources">
-  <a class="ws-resource-link ws-resource-link--featured" href="https://e.pcloud.link/publink/show?code=kZ2sJrZRfKhPcnfwtFkV5zgXyQApL2tK93X" target="_blank" rel="noopener">⬇ ICST Workshop — Large Download (pCloud)<strong>Pre-configured Reaper folder (drag in Reaper.app → ready to go) + Workshop papers</strong></a>
+  <a class="ws-resource-link ws-resource-link--featured" href="https://e.pcloud.link/publink/show?code=XZAeJrZH78kTyE16GyaO0aFzw3kdhpvNeYk" target="_blank" rel="noopener">⬇ ICST Workshop — Large Download (pCloud)<strong>Pre-configured Reaper folder (drag in Reaper.app → ready to go) + Workshop papers</strong></a>
   <a class="ws-resource-link ws-resource-link--featured" href="/downloads/workshop-2026/ICST_Ambisonics_Workshop_2026.zip" download>⬇ ICST_Ambisonics_Workshop_2026.zip<strong>Complete workshop package — Reaper session, Lua scripts, Csound, MaxMSP (6.8 MB)</strong></a>
   <a class="ws-resource-link" href="/downloads/zylia-recording-example/zylia_recording_example.RPP" download>zylia_recording_example.RPP<strong>Pre-configured Reaper session for Zylia ZM-1</strong></a>
   <a class="ws-resource-link" href="/downloads/ICST_Ambisonics_Workshop.docx" download>Workshop Document (.docx)<strong>Complete workshop document</strong></a>
