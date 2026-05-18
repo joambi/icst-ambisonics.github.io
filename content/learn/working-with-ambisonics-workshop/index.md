@@ -227,7 +227,7 @@ a.ws-badge:hover { background: rgba(255,255,255,0.25); border-color: rgba(255,25
 
 <div class="ws-info">
 <strong>📋 Preparation</strong>
-Reaper is pre-installed on all workshop computers (v7+, incl. ICST plugins) · Bring headphones (binaural monitoring) · Download the pre-configured Reaper session in advance
+Reaper is pre-installed on all workshop computers (v7+, incl. ICST plugins) · Bring headphones (binaural monitoring) · <a href="https://e.pcloud.link/publink/show?code=kZ2sJrZRfKhPcnfwtFkV5zgXyQApL2tK93X" target="_blank" rel="noopener">Download the large workshop package</a> (Reaper folder + papers) in advance
 </div>
 
 ---
@@ -742,6 +742,7 @@ A guided discussion to consolidate the workshop experience. Not a lecture — pa
 - Download the pre-configured Reaper session in advance
 
 <div class="ws-resources">
+  <a class="ws-resource-link ws-resource-link--featured" href="https://e.pcloud.link/publink/show?code=kZ2sJrZRfKhPcnfwtFkV5zgXyQApL2tK93X" target="_blank" rel="noopener">⬇ ICST Workshop — Large Download (pCloud)<strong>Pre-configured Reaper folder (drag in Reaper.app → ready to go) + Workshop papers</strong></a>
   <a class="ws-resource-link ws-resource-link--featured" href="/downloads/workshop-2026/ICST_Ambisonics_Workshop_2026.zip" download>⬇ ICST_Ambisonics_Workshop_2026.zip<strong>Complete workshop package — Reaper session, Lua scripts, Csound, MaxMSP (6.8 MB)</strong></a>
   <a class="ws-resource-link" href="/downloads/zylia-recording-example/zylia_recording_example.RPP" download>zylia_recording_example.RPP<strong>Pre-configured Reaper session for Zylia ZM-1</strong></a>
   <a class="ws-resource-link" href="/downloads/ICST_Ambisonics_Workshop.docx" download>Workshop Document (.docx)<strong>Complete workshop document</strong></a>
