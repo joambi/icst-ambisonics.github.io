@@ -43,7 +43,9 @@ tags:
 .ws-badge {
   background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25);
   border-radius: 20px; padding: 0.32rem 0.95rem; font-size: 1.3rem; color: #fff; white-space: nowrap;
+  text-decoration: none; display: inline-block;
 }
+a.ws-badge:hover { background: rgba(255,255,255,0.25); border-color: rgba(255,255,255,0.5); }
 .ws-badge--blue   { background: #4a9eda; border-color: #4a9eda; }
 .ws-badge--green  { background: #4a9e7a; border-color: #4a9e7a; }
 .ws-meta { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem; font-size: 1.38rem; opacity: 0.85; }
@@ -195,15 +197,15 @@ tags:
   <div class="ws-badges">
     <span class="ws-badge ws-badge--blue">Online-Kurs</span>
     <span class="ws-badge ws-badge--green">Selbstgeführt</span>
-    <span class="ws-badge">Zylia ZM-1</span>
-    <span class="ws-badge">ICST Plugins</span>
-    <span class="ws-badge">HOA 3rd Order</span>
-    <span class="ws-badge">Reaper vorinstalliert</span>
+    <a class="ws-badge" href="https://www.zylia.co" target="_blank" rel="noopener">Zylia ZM-1</a>
+    <a class="ws-badge" href="https://ambisonics.ch/start/" target="_blank" rel="noopener">ICST Plugins</a>
+    <a class="ws-badge" href="/learn/ambisonics-formats/">HOA 3rd Order</a>
+    <a class="ws-badge" href="https://www.reaper.fm" target="_blank" rel="noopener">Reaper vorinstalliert</a>
   </div>
   <div class="ws-meta">
-    <span>🎛️ REAPER + ICST AmbiEncoder/Decoder</span>
-    <span>🎙️ Zylia ZM-1 (16-Kanal HOA)</span>
-    <span>🔄 FuMa ↔ AmbiX Konvertierung</span>
+    <span>🎛️ <a href="https://www.reaper.fm" target="_blank" rel="noopener">REAPER</a> + <a href="https://ambisonics.ch/start/" target="_blank" rel="noopener">ICST AmbiEncoder/Decoder</a></span>
+    <span>🎙️ <a href="https://www.zylia.co" target="_blank" rel="noopener">Zylia ZM-1</a> (16-Kanal HOA)</span>
+    <span>🔄 <a href="/learn/ambisonics-formats/">FuMa ↔ AmbiX Konvertierung</a></span>
   </div>
 </div>
 
