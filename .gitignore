@@ -6,3 +6,9 @@ public/
 # Große Binärdateien
 .obsidian/plugins/mcp-tools/bin/
 images/ICST AmbiPlugins Default.png
+
+
+
+
+# Ignore Smart Environment folder
+.smart-env
