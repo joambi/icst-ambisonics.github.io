@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><ambiscore>
+	<snapshot index="Scene_0">
+		<point>
+			<number>1</number>
+			<xyz>0.597009 0.621240 -0.015251</xyz>
+		</point>
+		<point>
+			<number>2</number>
+			<xyz>-0.770676 0.636491 -0.015251</xyz>
+		</point>
+		<point>
+			<number>3</number>
+			<xyz>0.022877 0.873129 0.160137</xyz>
+		</point>
+	</snapshot>
+	<snapshot index="Scene_1">
+		<point>
+			<number>1</number>
+			<xyz>0.589383 -0.652233 -0.015251</xyz>
+		</point>
+		<point>
+			<number>2</number>
+			<xyz>-0.778302 -0.636982 -0.015251</xyz>
+		</point>
+		<point>
+			<number>3</number>
+			<xyz>0.022877 -0.911257 0.160137</xyz>
+		</point>
+	</snapshot>
+	<snapshot index="Scene_2">
+		<point>
+			<number>1</number>
+			<xyz>-0.005412 0.872884 -0.015251</xyz>
+		</point>
+		<point>
+			<number>2</number>
+			<xyz>-0.000492 0.644116 -0.015251</xyz>
+		</point>
+		<point>
+			<number>3</number>
+			<xyz>0.007626 0.446097 0.160137</xyz>
+		</point>
+	</snapshot>
+</ambiscore>
