@@ -18,10 +18,10 @@ group: "Listening"
   </div>
   <div class="hub-info">
     <span class="hub-info__eyebrow">Series Info</span>
-    <div class="hub-info__item"><strong>Location</strong><span>Toni-Areal · Kompositionsstudio 3.D02 · Level 3 · Pfingstweidstrasse 96, Zürich</span></div>
-    <div class="hub-info__item"><strong>Format</strong><span>~60 min · Acousmatic listening session</span></div>
-    <div class="hub-info__item"><strong>Admission</strong><span>Free · Open to all</span></div>
-    <div class="hub-info__item"><strong>Audience</strong><span>Composers, students, researchers, studio visitors</span></div>
+    <div class="hub-info__item"><strong>Location</strong><span>Toni-Areal, Kompositionsstudio 3.D02, Level 3, Pfingstweidstrasse 96, Zürich</span></div>
+    <div class="hub-info__item"><strong>Format</strong><span>~60 min, Acousmatic listening session</span></div>
+    <div class="hub-info__item"><strong>Admission</strong><span>Free, Open to all</span></div>
+    <div class="hub-info__item"><strong>Audience</strong><span>Composers, students, researchers, visitors</span></div>
   </div>
 </div>
 
@@ -56,6 +56,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Acousmatic Listening Sessions — ICST Studio Residencies 2025</span>
         <span class="session-row__date">21 May 2026</span>
+        <span class="session-row__tag">Residency · New works</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/18-ascolta/">
@@ -63,8 +64,16 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Éliane Radigue — The Resonant Island</span>
         <span class="session-row__date">02 Apr 2026</span>
+        <span class="session-row__tag">In memoriam</span>
       </span>
     </a>
+    <div class="session-row session-row--cancelled">
+      <span class="session-row__num">#17</span>
+      <span class="session-row__content">
+        <span class="session-row__subtitle">—</span>
+        <span class="session-row__date">Cancelled</span>
+      </span>
+    </div>
   </div>
 </div>
 
@@ -76,6 +85,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">B-Format Archiving – immersive access to the electroacoustic repertoire</span>
         <span class="session-row__date">16 Oct 2025</span>
+        <span class="session-row__tag">Experiment</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/15-ascolta/">
@@ -83,6 +93,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Listening Twice – Ambisonics UHJ recordings from the 1970s</span>
         <span class="session-row__date">06 May 2025</span>
+        <span class="session-row__tag">Experiment</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/14-ascolta/">
@@ -90,6 +101,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Listening Twice – 5.1 surround vs. Ambisonics UHJ (1970s)</span>
         <span class="session-row__date">22 Apr 2025</span>
+        <span class="session-row__tag">Experiment</span>
       </span>
     </a>
   </div>
@@ -103,6 +115,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Listening Twice – stereo vs. immersive, an experimental comparison</span>
         <span class="session-row__date">17 Dec 2024</span>
+        <span class="session-row__tag">Experiment</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/12-ascolta/">
@@ -110,6 +123,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Georg Katzer – electroacoustic works</span>
         <span class="session-row__date">17 Sep 2024</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/11-ascolta/">
@@ -117,6 +131,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Mario Mary, portrait</span>
         <span class="session-row__date">11 Jun 2024</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/10-ascolta/">
@@ -124,6 +139,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">The Composer, Herself – Natasha Barrett</span>
         <span class="session-row__date">19 Mar 2024</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
   </div>
@@ -137,6 +153,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Hans Tutschku — Remembering Japan</span>
         <span class="session-row__date">05 Dec 2023</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/08-ascolta/">
@@ -144,6 +161,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">La Canción de la Tierra — Mesias Maiguashca</span>
         <span class="session-row__date">24 Oct 2023</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/07-ascolta/">
@@ -151,6 +169,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">ICST Artists in Residence — concert with works by former residents</span>
         <span class="session-row__date">06 Jun 2023</span>
+        <span class="session-row__tag">Residency Concert</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/06-ascolta/">
@@ -158,6 +177,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Zbigniew Karkowski — noise and experimental electronic music</span>
         <span class="session-row__date">04 Apr 2023</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/05-ascolta/">
@@ -165,6 +185,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Field-Recordings & Soundscapes — Philip Samartzis</span>
         <span class="session-row__date">14 Mar 2023</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
   </div>
@@ -178,6 +199,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Glocken — bells and tape, Werner Geissberger</span>
         <span class="session-row__date">13 Dec 2022</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/03-ascolta/">
@@ -185,6 +207,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Granular — Nikos Stavropoulos & Horacio Vaggione</span>
         <span class="session-row__date">15 Nov 2022</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
     <a class="session-row" href="/blog/ascolta/02-ascolta/">
@@ -192,6 +215,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Gerald Bennett portrait — electroacoustic works by the co-founder of ICST</span>
         <span class="session-row__date">04 Oct 2022</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
   </div>
@@ -205,6 +229,7 @@ group: "Listening"
       <span class="session-row__content">
         <span class="session-row__subtitle">Jean-Claude Risset — Songs, Octant, Sud I–III, Resonant</span>
         <span class="session-row__date">26 Nov 2019</span>
+        <span class="session-row__tag">Portrait</span>
       </span>
     </a>
   </div>
@@ -225,9 +250,11 @@ A selection of online resources for listening to Ambisonics and spatial audio:
 
 ---
 
+<!-- B-Format Archive section hidden (not deleted)
 ## ICST B-Format Archive
 
 The ICST maintains an archive of works recorded and encoded in ambiX B-format.
+-->
 
 ---
 
