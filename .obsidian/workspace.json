@@ -4,179 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "271184e5518fff0e",
+        "id": "2fa814588cf22892",
         "type": "tabs",
         "children": [
           {
-            "id": "77374b90c28df63e",
+            "id": "6d07191f14bb7db8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAR Einreichungsnahe Fassung.md",
-                "mode": "source",
+                "file": "content/Blog/_index.de.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JAR Einreichungsnahe Fassung"
-            }
-          },
-          {
-            "id": "9a3ceeace1b7ae63",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spatial Counterpoint Spatial Parameters and Perception as a Compositional Method in Ambisonics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Spatial Counterpoint Spatial Parameters and Perception as a Compositional Method in Ambisonics"
-            }
-          },
-          {
-            "id": "c749531b3f477b48",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ambisonics und akusmatischer Raum, Ein kompositorischer Rahmen zur Untersuchung räumlicher Ontologie.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ambisonics und akusmatischer Raum, Ein kompositorischer Rahmen zur Untersuchung räumlicher Ontologie"
-            }
-          },
-          {
-            "id": "6b720fe981689a7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAR Einreich Fassung Deutsch.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JAR Einreich Fassung Deutsch"
-            }
-          },
-          {
-            "id": "7627707cf3e7c5a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Research Catalogue exposition.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Research Catalogue exposition"
-            }
-          },
-          {
-            "id": "58a0ac6c795c2a55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAR RC deutsch.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JAR RC deutsch"
-            }
-          },
-          {
-            "id": "838e5d9b8067de15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spatial Counterpoint im engen Ambisonics‑Sinn.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Spatial Counterpoint im engen Ambisonics‑Sinn"
-            }
-          },
-          {
-            "id": "a6aa796a6c52085b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Vergleich Spatial Counterpoint und Smalleys Spatial Articulation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Vergleich Spatial Counterpoint und Smalleys Spatial Articulation"
-            }
-          },
-          {
-            "id": "8e1a7fc092fdfe0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Smalleys Spatial Articulation Examples.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Smalleys Spatial Articulation Examples"
-            }
-          },
-          {
-            "id": "6c553528ca6a1c3e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Versus meinem Ansatz.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Versus meinem Ansatz"
-            }
-          },
-          {
-            "id": "77f45e2da072a4ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Smalley and Schütt.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Smalley and Schütt"
-            }
-          },
-          {
-            "id": "eb13a915c767599b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Ambisonics 101/formats/index.de.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index.de"
+              "title": "_index.de"
             }
           }
-        ],
-        "currentTab": 11
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Dateiexplorer"
@@ -249,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "content/learn/working-with-ambisonics-workshop/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Untitled"
+              "title": "Rückverweise auf index"
             }
           },
           {
@@ -268,12 +115,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "content/learn/working-with-ambisonics-workshop/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Untitled"
+              "title": "Ausgehende Links von index öffnen"
             }
           },
           {
@@ -297,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clippings/Research Catalogue - an international database for artistic research.md",
-                "followCursor": true,
-                "showSearch": true,
+                "file": "ICST Workshop Ablauf.md",
+                "followCursor": false,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Gliederung von Research Catalogue - an international database for artistic research"
+              "title": "Gliederung von ICST Workshop Ablauf"
             }
           },
           {
@@ -312,8 +159,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -325,16 +172,27 @@
               "icon": "bot",
               "title": "Claude Code"
             }
+          },
+          {
+            "id": "d2d7c612aea29c78",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 447.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "image-preview-on-icon-hover:1780222479964": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -345,65 +203,69 @@
       "obsidian-importer:Open Importer": false,
       "github-sync:Sync with Remote": false,
       "obsidian-git:Open Git source control": false,
-      "image-preview-on-icon-hover:1777622898304": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
       "DEVONlink-obsidian:DEVONlink": false,
       "markitdown:Convert to Markdown": false,
       "obsidian42-brat:BRAT": false,
       "claude-code-integration:Open Claude Code": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "eb13a915c767599b",
+  "active": "0dcbaf17685ec5f0",
   "lastOpenFiles": [
-    "content/Ambisonics 101/_index.de.md",
-    "content/Ambisonics 101/_index.md",
-    "content/Ambisonics 101/formats/index.md",
-    "content/Ambisonics 101/index.de.md",
-    "content/learn/ambisonics-formats-overview/index.de.md",
-    "content/learn/ambisonics-formats-overview/index.md",
-    "content/Ambisonics 101/index.md",
-    "content/Ambisonics 101/formats/index.de.md",
+    "content/Blog/ascolta/_index.md.tmp.33558.123c3e69bb21",
+    "content/Blog/ascolta/_index.md.tmp.33558.d10c873a5c1e",
+    "public/css/anatole.min.04421256f4207e4aa9cd619e27a1f65401159d75030ea77ad4c54181191efdb3.css",
+    "assets/scss/partials/components/_ascolta.scss.tmp.33558.800dbb329179",
+    "public/css/anatole.min.d47153f653a59d4166411c71f68a3e5605f1901b3fdc8f0a299e0f7bb9a7ce8d.css",
+    "content/Blog/ascolta/_index.de.md.tmp.32873.6242c9c48246",
+    "public/index.xml",
+    "public/post/index.xml",
+    "public/blog/index.xml",
+    "public/post/gp-manipulation/index.html",
+    "public/post/gp-manipulation/max-example-patch.png",
+    "public/post/gp-manipulation/auto-latch.png",
+    "public/post/gyrosc/index.html",
+    "public/post/gyrosc/gyrOSC.png",
+    "public/post/gyrosc/Reaper_GyrOSC.png",
+    "public/post/gyrosc/Gyro_grav.jpeg",
+    "public/post/gyrosc/Gyro_Config.jpeg",
+    "public/post/ableton-reaper/rec_disable.png",
+    "public/post/ableton-reaper/reaper_input.png",
+    "public/post/gp-manipulation/Rec_PP.gif",
+    "public/post/gp-manipulation/OSC_abs_angel.gif",
     "content/Blog/ascolta-listening-guide/index.de.md",
-    "public/de/ambisonics-101/index.xml",
-    "public/de/ambisonics-101/formats/index.html",
-    "public/de/ambisonics-101/formats",
-    "public/ambisonics-101/index.xml",
-    "public/ambisonics-101/formats/index.html",
-    "public/ambisonics-101/formats",
-    "content/learn/ambisonics-formats-overview",
-    "public/de/index.xml",
-    "public/de/de/residenzen/Péter Biró Dániel/index.html",
-    "public/de/year/2026/index.xml",
-    "public/residenzen/peter-biro-daniel/Lucas_Daniel.jpg",
-    "public/residenzen/youngjae-cho/Youngjae_Cho.jpg",
-    "public/residenzen/youngjae-cho/Youngjae_02.jpg",
-    "public/residenzen/icst-studio-residences-2026/monoc-small.jpg",
-    "public/residenzen/icst-studio-residences-2026/monoc-small-2.jpg",
-    "public/residenzen/icst-studio-residences-2026/monoc-small-1.jpg",
-    "public/residenzen/nandele-maguni/nandele_02.png",
-    "public/residenzen/nandele-maguni/nandele_01.png",
-    "public/residenzen/nandele-maguni/Unknown.jpeg",
-    "public/residenzen/nandele-maguni/Malhangalene.png",
+    "content/learn/ambisonics-formats-overview/index.md",
+    "content/learn/working-with-ambisonics-workshop/index.md",
+    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Composer Fragen ergänzend.md",
+    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Spatial Counterpoint.md",
+    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Tutorial-Scenen-Wechsler -ACT.md",
+    "content/learn/working-with-ambisonics-workshop/reaper-workshop/ICST Ambisonics Workshop 2026.md",
+    "content/learn/working-with-ambisonics-workshop/reaper-workshop/MaxMSP Ambisonics.md",
+    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Aufgabe.md",
+    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Ablauf II.md",
+    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Ablauf.md",
+    "content/learn/ambisonics-workflow/index.md",
+    "content/learn/ambisonics-formats-overview/index.de.md",
+    "content/_index.md",
+    "ICST Workshop arbeiten in Ambisonics.md",
+    "public/downloads/ICST_Ambisonics_Workshop_2026/05_act-tool/README.md",
+    "public/downloads/ICST_Ambisonics_Workshop_2026/README.md",
+    "static/downloads/ICST_Ambisonics_Workshop_2026/05_act-tool/README.md",
+    "static/downloads/ICST_Ambisonics_Workshop_2026/README.md",
     "public/blog/faq/Ableton2Reaper.canvas",
-    "_notes/JAR/JAR Einreichungsnahe Fassung.md",
-    "_notes/JAR/JAR RC deutsch.md",
-    "_notes/JAR/JAR Einreichung.md",
-    "_notes/JAR/JAR Einreich Fassung Deutsch.md",
-    "_notes/Was ist ein B-Format?.md",
-    "_notes/polices.md",
-    "_notes/Was ist die Gestalt eines Klanges und welche Rolle spielt der Raum dabei.md",
-    "_notes/Versus meinem Ansatz.md",
-    "_notes/Vergleich Spatial Counterpoint und Smalleys Spatial Articulation.md",
-    "_notes/Unbenannt.md",
-    "_notes/Spatial Counterpoint im engen Ambisonics‑Sinn.md",
-    "_notes/Spatial Counterpoint Spatial Parameters and Perception as a Compositional Method in Ambisonics.md",
-    "_notes/Smalleys Spatial Articulation Examples.md",
-    "_notes/Smalley and Schütt.md",
-    "_notes/Research Catalogue exposition.md",
-    "_notes/Konkrete Produktionsanweisung für die JAR-Medien.md",
-    "_notes/Glossary-Link aus der \"Go Deeper\"-Liste.md",
+    "content/learn/ambisonics-workflow/index.de.md",
+    "content/learn/working-with-ambisonics-workshop/ICST Workshop Wie arbeiten in Ambisonics.md",
+    "public/downloads/workshop-2026/ICST Ambisonics Workshop 2026/Helgoboss/App/bin/Contents/Frameworks/App.framework/Versions/Current/Resources/flutter_assets/packages/flutter_arc_text/assets/README.md",
+    "public/downloads/workshop-2026/ICST Ambisonics Workshop 2026/Helgoboss/App/bin/Contents/Frameworks/App.framework/Versions/A/Resources/flutter_assets/packages/flutter_arc_text/assets/README.md",
+    "public/downloads/workshop-2026/ICST Ambisonics Workshop 2026/Helgoboss/App/bin/Contents/Frameworks/App.framework/Resources/flutter_assets/packages/flutter_arc_text/assets/README.md",
+    "public/downloads/workshop-2026/ICST Ambisonics Workshop 2026/Data/talagan_MIDI CC Mapper X/func/user_lib/USER_LIB_FILES_GO_HERE.md",
     "docs/blog/faq/Ableton2Reaper.canvas",
     "content/Blog/FAQ/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",

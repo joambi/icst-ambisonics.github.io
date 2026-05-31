@@ -1,5 +1,5 @@
 baseURL = 'https://ambisonics.ch/'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'ICST Ambisonics'
 theme = 'anatole'
 enableEmoji = true
@@ -9,10 +9,10 @@ defaultContentLanguage = 'en'
 
 [languages]
   [languages.en]
-    languageName = "EN"
+    label = "EN"
     weight = 1
   [languages.de]
-    languageName = "DE"
+    label = "DE"
     weight = 2
 
 [params]

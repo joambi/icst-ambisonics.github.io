@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICST AmbiEncoder_64 – Tutorial</title>
+<style>
+  :root {
+    --dark:#1A1A2E; --panel:#16213E; --card:#0F3460;
+    --accent:#E94560; --accent2:#53C0F0; --accent3:#F5A623;
+    --green:#4CAF50; --purple:#9B59B6;
+    --text:#E0E0E0; --muted:#8892A4; --radius:8px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    background:var(--dark);color:var(--text);min-height:100vh;padding-bottom:60px;}
+
+  /* Header */
+  header{background:linear-gradient(135deg,var(--panel) 0%,#0a1628 100%);
+    border-bottom:2px solid var(--accent2);padding:24px 40px 18px;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  header h1{font-size:1.4rem;font-weight:700;}
+  header h1 span{color:var(--accent2);}
+  .badge{background:var(--card);border:1px solid var(--accent2);border-radius:20px;
+    padding:4px 14px;font-size:0.76rem;color:var(--accent2);}
+
+  /* Tabs */
+  .tab-bar{background:var(--panel);border-bottom:1px solid #2a3a5e;
+    display:flex;gap:0;padding:0 32px;overflow-x:auto;}
+  .tab{padding:14px 22px;cursor:pointer;font-size:0.87rem;font-weight:600;
+    border-bottom:3px solid transparent;color:var(--muted);white-space:nowrap;
+    transition:all 0.2s;}
+  .tab:hover{color:var(--text);}
+  .tab.active{color:var(--accent2);border-bottom-color:var(--accent2);}
+
+  /* Content */
+  .tab-content{display:none;}
+  .tab-content.active{display:block;}
+  .container{max-width:880px;margin:0 auto;padding:32px 20px;}
+
+  /* Section */
+  .sec-head{display:flex;align-items:center;gap:12px;margin:32px 0 14px;}
+  .sec-num{width:32px;height:32px;border-radius:50%;display:flex;
+    align-items:center;justify-content:center;font-weight:700;font-size:0.9rem;flex-shrink:0;}
+  .num-a{background:var(--accent2);color:#000;}
+  .num-b{background:var(--accent3);color:#000;}
+  .num-p{background:var(--purple);color:#fff;}
+  .sec-title{font-size:1.05rem;font-weight:700;}
+  .sec-sub{font-size:0.8rem;color:var(--muted);margin-top:2px;}
+
+  /* Cards */
+  .card{background:var(--panel);border:1px solid #2a3a5e;border-radius:var(--radius);
+    padding:20px;margin-bottom:12px;}
+  .card h4{font-size:0.9rem;font-weight:700;margin-bottom:10px;color:var(--accent2);}
+
+  /* Steps */
+  .step-list{list-style:none;}
+  .step-list li{display:flex;gap:12px;padding:11px 0;
+    border-bottom:1px solid #1e2d4a;}
+  .step-list li:last-child{border-bottom:none;}
+  .step-n{min-width:24px;font-size:0.75rem;color:var(--muted);padding-top:2px;}
+  .step-body{flex:1;font-size:0.87rem;line-height:1.55;}
+  .step-body strong{color:var(--text);}
+
+  /* Notes */
+  .note{border-radius:0 4px 4px 0;padding:7px 12px;margin:8px 0;font-size:0.8rem;}
+  .note-info{background:rgba(83,192,240,0.10);border-left:3px solid var(--accent2);color:#a8dcf0;}
+  .note-warn{background:rgba(233,69,96,0.12);border-left:3px solid var(--accent);color:#ffb3b3;}
+  .note-tip{background:rgba(245,166,35,0.10);border-left:3px solid var(--accent3);color:#f7d08a;}
+  .note-ok{background:rgba(76,175,80,0.10);border-left:3px solid var(--green);color:#a5d6a7;}
+
+  /* Code */
+  pre{background:#0a0e1a;border:1px solid #1e3a5a;border-radius:6px;
+    padding:16px;overflow-x:auto;margin:10px 0;}
+  code{font-family:'SF Mono','Fira Mono','Consolas',monospace;font-size:0.8rem;line-height:1.6;}
+  .inline{background:var(--card);color:var(--accent2);border-radius:3px;
+    padding:1px 6px;font-family:'SF Mono','Fira Mono','Consolas',monospace;font-size:0.8em;}
+  .kw{color:#c792ea;} .fn{color:#82aaff;} .st{color:#c3e88d;}
+  .cm{color:#546e7a;font-style:italic;} .nm{color:#f78c6c;}
+  .osc{display:inline-block;background:#0d2137;color:#7ee8fa;
+    border:1px solid #2a4a6e;border-radius:3px;padding:0 7px;
+    font-family:'SF Mono','Fira Mono','Consolas',monospace;font-size:0.79em;}
+
+  /* Parameter grid */
+  .param-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0;}
+  @media(max-width:600px){.param-grid{grid-template-columns:1fr;}}
+  .param-card{background:var(--card);border-radius:6px;padding:12px 14px;}
+  .param-name{font-size:0.78rem;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--muted);margin-bottom:4px;}
+  .param-val{font-size:0.88rem;font-weight:600;}
+  .param-desc{font-size:0.78rem;color:var(--muted);margin-top:3px;line-height:1.4;}
+
+  /* XYZ Diagram */
+  .xyz-diagram{display:flex;justify-content:center;padding:16px 0;}
+
+  /* Table */
+  table{width:100%;border-collapse:collapse;font-size:0.83rem;margin:8px 0;}
+  th{background:var(--card);color:var(--accent2);padding:8px 12px;text-align:left;
+    font-size:0.74rem;text-transform:uppercase;letter-spacing:.06em;}
+  td{padding:8px 12px;border-bottom:1px solid #1e2d4a;vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  tr:hover td{background:rgba(83,192,240,0.04);}
+  td:first-child{font-family:'SF Mono','Fira Mono','Consolas',monospace;color:#7ee8fa;font-size:0.8em;}
+
+  /* Workflow diagram */
+  .flow{display:flex;align-items:center;flex-wrap:wrap;gap:0;margin:12px 0;}
+  .flow-box{background:var(--card);border:1px solid #2a4a6e;border-radius:6px;
+    padding:8px 14px;font-size:0.82rem;font-weight:600;text-align:center;}
+  .flow-arr{padding:0 8px;color:var(--accent2);font-size:1.1rem;}
+
+  /* Blauert bands visualiser */
+  .blauert-bands{display:flex;gap:4px;align-items:flex-end;height:60px;margin:10px 0;}
+  .band{border-radius:3px 3px 0 0;flex:1;transition:height .3s;}
+  .band-label{font-size:0.65rem;color:var(--muted);text-align:center;margin-top:3px;}
+
+  footer{text-align:center;padding:28px 20px 0;font-size:0.76rem;color:var(--muted);
+    border-top:1px solid #2a3a5e;margin-top:40px;}
+  footer a{color:var(--accent2);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>ICST <span>AmbiEncoder_64</span> + REAPER Automation<br>
+    <span style="font-size:0.85rem;font-weight:400;color:var(--muted)">Tutorial für Composer &amp; Sound Engineers</span></h1>
+  </div>
+  <div class="badge">Workshop 2026 · ZHdK ICST</div>
+</header>
+
+<div class="tab-bar">
+  <div class="tab active" onclick="showTab('overview',this)">📐 Übersicht</div>
+  <div class="tab" onclick="showTab('partA',this)">🔵 Part A – XYZ ohne Distanz</div>
+  <div class="tab" onclick="showTab('partB',this)">🟠 Part B – Distanz + Blauert</div>
+  <div class="tab" onclick="showTab('scripts',this)">⚙️ Lua / Python Scripts</div>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     TAB: ÜBERSICHT
+════════════════════════════════════════════════ -->
+<div id="tab-overview" class="tab-content active">
+<div class="container">
+
+  <div class="sec-head">
+    <div style="font-size:1.05rem;font-weight:700;color:var(--accent2)">Plugin-Architektur</div>
+  </div>
+
+  <div class="card">
+    <h4>Was macht der AmbiEncoder_64?</h4>
+    <p style="font-size:0.87rem;line-height:1.6;margin-bottom:12px;">
+      Der ICST AmbiEncoder_64 codiert eine Mono-Quelle in Ambisonics B-Format bis zur 7. Ordnung (64 Kanäle).
+      Er unterstützt zwei Koordinaten-Modi sowie optionale Distanz-Enkodierung mit psychoakustischer Filterung.
+    </p>
+    <div class="flow">
+      <div class="flow-box">Mono-Quelle<br><span style="color:var(--muted);font-size:0.75rem">REAPER-Track</span></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box" style="border-color:var(--accent2);color:var(--accent2)">AmbiEncoder_64<br><span style="font-size:0.75rem">VST3 / AU</span></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box">B-Format<br><span style="color:var(--muted);font-size:0.75rem">bis 64 Kanäle</span></div>
+      <div class="flow-arr">→</div>
+      <div class="flow-box">Decoder<br><span style="color:var(--muted);font-size:0.75rem">Speaker / Bino</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4>Koordinaten-Modi im Vergleich</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div style="background:rgba(83,192,240,0.08);border:1px solid var(--accent2);border-radius:6px;padding:14px;">
+        <div style="font-weight:700;color:var(--accent2);margin-bottom:8px;">🔵 Sphärisch (Az/El/R)</div>
+        <div style="font-size:0.82rem;line-height:1.55;">
+          <strong>Azimuth</strong> 0–360° (horizontal)<br>
+          <strong>Elevation</strong> −90° bis +90°<br>
+          <strong>Radius</strong> 0.0 – ∞ (optional)<br><br>
+          ✓ Intuitiv für Panoramierung<br>
+          ✓ Konstante Distanz leicht haltbar<br>
+          ✗ Gimbal Lock an Polen (±90°)
+        </div>
+      </div>
+      <div style="background:rgba(245,166,35,0.08);border:1px solid var(--accent3);border-radius:6px;padding:14px;">
+        <div style="font-weight:700;color:var(--accent3);margin-bottom:8px;">🟠 Kartesisch (X/Y/Z)</div>
+        <div style="font-size:0.82rem;line-height:1.55;">
+          <strong>X</strong> links (−1) → rechts (+1)<br>
+          <strong>Y</strong> hinten (−1) → vorne (+1)<br>
+          <strong>Z</strong> unten (−1) → oben (+1)<br><br>
+          ✓ Kontinuierliche Automation<br>
+          ✓ Keine Singularitäten<br>
+          ✓ Distanz = √(X²+Y²+Z²)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4>XYZ-Konvention (ICST)</h4>
+    <div class="xyz-diagram">
+      <svg viewBox="0 0 340 220" width="340" height="220" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#53C0F0"/>
+          </marker>
+          <marker id="ahg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#4CAF50"/>
+          </marker>
+          <marker id="ahr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#E94560"/>
+          </marker>
+        </defs>
+        <!-- Axes -->
+        <line x1="170" y1="110" x2="280" y2="110" stroke="#53C0F0" stroke-width="2" marker-end="url(#ah)"/>
+        <line x1="170" y1="110" x2="100" y2="160" stroke="#4CAF50" stroke-width="2" marker-end="url(#ahg)"/>
+        <line x1="170" y1="110" x2="170" y2="30"  stroke="#E94560" stroke-width="2" marker-end="url(#ahr)"/>
+        <!-- Labels -->
+        <text x="288" y="114" fill="#53C0F0" font-size="14" font-weight="bold">X</text>
+        <text x="84"  y="170" fill="#4CAF50" font-size="14" font-weight="bold">Y</text>
+        <text x="175" y="24"  fill="#E94560" font-size="14" font-weight="bold">Z</text>
+        <!-- Direction labels -->
+        <text x="252" y="105" fill="#53C0F0" font-size="10">rechts</text>
+        <text x="94"  y="155" fill="#4CAF50" font-size="10">vorne</text>
+        <text x="178" y="42"  fill="#E94560" font-size="10">oben</text>
+        <!-- Listener icon -->
+        <circle cx="170" cy="110" r="14" fill="#0F3460" stroke="#2a4a6e" stroke-width="2"/>
+        <text x="170" y="115" fill="#8892A4" font-size="11" text-anchor="middle">👂</text>
+        <!-- Unit sphere hint -->
+        <ellipse cx="170" cy="110" rx="55" ry="40" fill="none" stroke="#2a3a5e" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="232" y="90" fill="#546e7a" font-size="9">r = 1</text>
+      </svg>
+    </div>
+    <div class="note note-tip">💡 Bei XYZ-Automation auf der Einheitskugel (r=1) bleibt die Distanz konstant. Formel: X=sin(az)·cos(el), Y=cos(az)·cos(el), Z=sin(el)</div>
+  </div>
+
+  <div class="card">
+    <h4>Alle automatisierbaren Parameter</h4>
+    <table>
+      <thead><tr><th>Parameter</th><th>Bereich</th><th>Modus</th><th>Automation-Prio</th></tr></thead>
+      <tbody>
+        <tr><td>X</td><td>−1.0 … +1.0</td><td>Kartesisch</td><td style="color:var(--accent2)">★★★ Hoch</td></tr>
+        <tr><td>Y</td><td>−1.0 … +1.0</td><td>Kartesisch</td><td style="color:var(--accent2)">★★★ Hoch</td></tr>
+        <tr><td>Z</td><td>−1.0 … +1.0</td><td>Kartesisch</td><td style="color:var(--accent2)">★★★ Hoch</td></tr>
+        <tr><td>Azimuth</td><td>0 … 360°</td><td>Sphärisch</td><td style="color:var(--muted)">★★☆</td></tr>
+        <tr><td>Elevation</td><td>−90 … +90°</td><td>Sphärisch</td><td style="color:var(--muted)">★★☆</td></tr>
+        <tr><td>Distance/Radius</td><td>0.0 … 1.0+</td><td>Beide</td><td style="color:var(--accent3)">★★★ Part B</td></tr>
+        <tr><td>Gain</td><td>−inf … +12 dB</td><td>–</td><td style="color:var(--muted)">★☆☆</td></tr>
+        <tr><td>Blauert Filter (on/off)</td><td>0/1</td><td>–</td><td style="color:var(--muted)">★☆☆</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     TAB: PART A – XYZ OHNE DISTANZ
+════════════════════════════════════════════════ -->
+<div id="tab-partA" class="tab-content">
+<div class="container">
+
+  <div class="sec-head">
+    <div class="sec-num num-a">A</div>
+    <div>
+      <div class="sec-title">XYZ-Automation ohne Distanz-Enkodierung</div>
+      <div class="sec-sub">Klangquelle bewegt sich auf der Einheitskugel – konstante Lautstärke, kein Proximity-Effekt</div>
+    </div>
+  </div>
+
+  <!-- A.1 Plugin konfigurieren -->
+  <div class="card">
+    <h4>A.1 – Plugin konfigurieren (einmalig)</h4>
+    <ul class="step-list">
+      <li><span class="step-n">1.</span><div class="step-body">AmbiEncoder_64 auf dem Mono-Track als Insert hinzufügen (VST3 empfohlen).</div></li>
+      <li><span class="step-n">2.</span><div class="step-body"><strong>Koordinaten-Modus → XYZ</strong> wählen (im Plugin-GUI oben links).<br>
+        <div class="note note-info">Im XYZ-Modus sind Azimuth/Elevation-Regler ausgegraut. X, Y, Z werden aktiv.</div></div></li>
+      <li><span class="step-n">3.</span><div class="step-body"><strong>Distance / Near-Field Compensation → OFF</strong> (Schalter deaktivieren oder Radius-Bypass aktivieren).<br>
+        <div class="note note-warn">Wenn Distance aktiv bleibt und Radius &lt; 1.0 ist, wird Proximity-Effekt angewendet – in Part A nicht erwünscht.</div></div></li>
+      <li><span class="step-n">4.</span><div class="step-body"><strong>Blauert Filter → OFF</strong> für diesen Workflow.</div></li>
+      <li><span class="step-n">5.</span><div class="step-body">Ambisonics-Ordnung wählen (3. Ordnung = 16 Kanäle empfohlen für Workshop-Setup).</div></li>
+    </ul>
+  </div>
+
+  <!-- A.2 Startposition -->
+  <div class="card">
+    <h4>A.2 – Startposition manuell setzen</h4>
+    <div class="param-grid">
+      <div class="param-card">
+        <div class="param-name">X (links/rechts)</div>
+        <div class="param-val" style="color:var(--accent2)">0.0 = Mitte</div>
+        <div class="param-desc">−1.0 = links, +1.0 = rechts</div>
+      </div>
+      <div class="param-card">
+        <div class="param-name">Y (vorne/hinten)</div>
+        <div class="param-val" style="color:var(--green)">+1.0 = vorne</div>
+        <div class="param-desc">−1.0 = hinten, +1.0 = vorne</div>
+      </div>
+      <div class="param-card">
+        <div class="param-name">Z (oben/unten)</div>
+        <div class="param-val" style="color:var(--accent)">0.0 = Horizont</div>
+        <div class="param-desc">−1.0 = Boden, +1.0 = Decke</div>
+      </div>
+      <div class="param-card">
+        <div class="param-name">Einheitskugel Check</div>
+        <div class="param-val" style="color:var(--accent3)">√(X²+Y²+Z²) = 1</div>
+        <div class="param-desc">Solange Betrag = 1, bleibt Lautstärke konstant</div>
+      </div>
+    </div>
+    <div class="note note-tip">💡 Startempfehlung: X=0, Y=1, Z=0 → direkt vorne auf Hörhorizonthöhe</div>
+  </div>
+
+  <!-- A.3 Automation-Lanes -->
+  <div class="card">
+    <h4>A.3 – Automation-Lanes in REAPER anlegen</h4>
+    <ul class="step-list">
+      <li><span class="step-n">1.</span><div class="step-body">Track auswählen → <span class="inline">A</span>-Button (Automation Lanes) anklicken oder <span class="inline">Cmd+Shift+A</span>.</div></li>
+      <li><span class="step-n">2.</span><div class="step-body">Im Automation-Dialog: <strong>Add/Remove Envelopes</strong> → Plugin-Parameter suchen:<br>
+        <code style="font-size:0.8rem;background:#0a0e1a;padding:4px 8px;border-radius:4px;display:inline-block;margin-top:4px;">AmbiEncoder_64: X<br>AmbiEncoder_64: Y<br>AmbiEncoder_64: Z</code></div></li>
+      <li><span class="step-n">3.</span><div class="step-body">Alle drei aktivieren → jedes bekommt eine farbige Automation-Spur unter dem Track.</div></li>
+      <li><span class="step-n">4.</span><div class="step-body"><strong>Farben zuweisen</strong> (Rechtsklick auf Envelope → Set color):<br>
+        X = <span style="color:var(--accent2)">Blau</span> · Y = <span style="color:var(--green)">Grün</span> · Z = <span style="color:var(--accent)">Rot</span> — entspricht Konvention oben.</div></li>
+    </ul>
+    <div class="note note-info">REAPER zeigt Automation-Envelopes nur wenn der Track-Höhe aufgezogen ist (mindestens 80px empfohlen).</div>
+  </div>
+
+  <!-- A.4 Workflow: Automation schreiben -->
+  <div class="card">
+    <h4>A.4 – Workflow: Automation effizient schreiben</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
+      <div style="background:rgba(83,192,240,0.07);border:1px solid #2a4a6e;border-radius:6px;padding:14px;">
+        <div style="font-weight:700;font-size:0.87rem;margin-bottom:8px;color:var(--accent2)">Methode 1: Real-Time Write</div>
+        <ol style="font-size:0.82rem;line-height:1.7;padding-left:16px;">
+          <li>Automation Mode → <strong>Write</strong></li>
+          <li>Playback starten</li>
+          <li>X/Y/Z-Regler im Plugin live bewegen</li>
+          <li>REAPER zeichnet Envelope-Kurve auf</li>
+          <li>Danach Modus → <strong>Read</strong></li>
+        </ol>
+        <div class="note note-tip" style="margin-top:8px;">✓ Ideal für organische, gespielte Bewegungen</div>
+      </div>
+      <div style="background:rgba(245,166,35,0.07);border:1px solid #3a3020;border-radius:6px;padding:14px;">
+        <div style="font-weight:700;font-size:0.87rem;margin-bottom:8px;color:var(--accent3)">Methode 2: Envelope-Punkte zeichnen</div>
+        <ol style="font-size:0.82rem;line-height:1.7;padding-left:16px;">
+          <li>Automation Lane im Arrange sichtbar</li>
+          <li>Pencil-Tool (<span class="inline">D</span>-Taste) aktivieren</li>
+          <li>Punkte klicken, Kurven ziehen</li>
+          <li>Kurventyp: Rechtsklick → Linear / Bezier / Square</li>
+        </ol>
+        <div class="note note-tip" style="margin-top:8px;">✓ Ideal für präzise, geometrische Trajektorien</div>
+      </div>
+    </div>
+    <div class="note note-warn">⚠ Write-Modus überschreibt vorhandene Automation. Backup mit <span class="inline">Ctrl+Z</span> sofort möglich.</div>
+  </div>
+
+  <!-- A.5 Trajektorien -->
+  <div class="card">
+    <h4>A.5 – Typische Trajektorie-Muster (ohne Distanz)</h4>
+    <table>
+      <thead><tr><th>Muster</th><th>X</th><th>Y</th><th>Z</th><th>Anwendung</th></tr></thead>
+      <tbody>
+        <tr><td>Kreis horizontal</td><td>sin(t)</td><td>cos(t)</td><td>0</td><td>Rotierende Quelle auf Horizont</td></tr>
+        <tr><td>Kreis vertikal (sagittal)</td><td>0</td><td>cos(t)</td><td>sin(t)</td><td>Elevation-Loop vorne/hinten</td></tr>
+        <tr><td>Lemniskate (∞)</td><td>sin(t)</td><td>sin(2t)/2</td><td>0</td><td>Pendelnde 8er-Figur</td></tr>
+        <tr><td>Spiral abwärts</td><td>sin(t)·r(t)</td><td>cos(t)·r(t)</td><td>1→−1</td><td>Herabfallender Sound</td></tr>
+        <tr><td>Zufalls-Walk</td><td>noise</td><td>noise</td><td>noise</td><td>Diffuse Bewegung (per Script)</td></tr>
+      </tbody>
+    </table>
+    <div class="note note-info">Alle Formeln als Lua-Script im Tab «Scripts» → automatische Envelope-Generierung ohne Echtzeit-Recording.</div>
+  </div>
+
+  <!-- A.6 Effizienz-Tipps -->
+  <div class="card">
+    <h4>A.6 – Effizienz-Tipps für XYZ-Editing</h4>
+    <ul class="step-list">
+      <li><span class="step-n">⚡</span><div class="step-body"><strong>Envelope-Scaling</strong>: Alle Punkte einer Lane markieren → <span class="inline">V</span> → Scale Envelope Points (z.B. Amplitude halbieren ohne neu zeichnen)</div></li>
+      <li><span class="step-n">⚡</span><div class="step-body"><strong>Copy-Paste zwischen Lanes</strong>: X-Envelope kopieren, in Z einfügen, um gleiche Kurve auf anderer Achse zu nutzen</div></li>
+      <li><span class="step-n">⚡</span><div class="step-body"><strong>Automation Items</strong>: Längen-unabhängige Automation-Clips anlegen (Loop, Reverse, Speed). Rechtsklick auf Lane → Create Automation Item</div></li>
+      <li><span class="step-n">⚡</span><div class="step-body"><strong>SWS Envelope-Actions</strong>: <span class="inline">SWS: Create sine envelope</span> in der Action List → automatisch sinusförmige Kurve generieren</div></li>
+      <li><span class="step-n">⚡</span><div class="step-body"><strong>Trim-Modus</strong>: Bestehende Automation nur verschieben (nicht überschreiben) → Automation Mode → <strong>Trim/Read</strong></div></li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     TAB: PART B – DISTANZ + BLAUERT
+════════════════════════════════════════════════ -->
+<div id="tab-partB" class="tab-content">
+<div class="container">
+
+  <div class="sec-head">
+    <div class="sec-num num-b">B</div>
+    <div>
+      <div class="sec-title">XYZ mit Distanz-Enkodierung &amp; Blauert-Filter</div>
+      <div class="sec-sub">Near-field Proximity + psychoakustische Elevation-Cues für realistische Raumwahrnehmung</div>
+    </div>
+  </div>
+
+  <!-- B.1 Distanz-Theorie -->
+  <div class="card">
+    <h4>B.1 – Distanz-Enkodierung: Konzept</h4>
+    <p style="font-size:0.87rem;line-height:1.6;margin-bottom:12px;">
+      Bei kleinem Radius (&lt; 1.0) aktiviert der AmbiEncoder den <strong>Near-Field Compensation Filter</strong>:
+      Bassfrequenzen werden angehoben (Proximity-Effekt), höhere Ordnungen werden im Pegel angepasst,
+      um physikalisch korrekte Wellenfront-Krümmung zu simulieren.
+    </p>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;">
+      <div class="param-card">
+        <div class="param-name">Radius = 1.0</div>
+        <div class="param-val" style="color:var(--green)">Fernfeld</div>
+        <div class="param-desc">Ebene Wellenfront, kein Proximity</div>
+      </div>
+      <div class="param-card">
+        <div class="param-name">Radius = 0.5</div>
+        <div class="param-val" style="color:var(--accent3)">Mittelfeld</div>
+        <div class="param-desc">Leichte Bassbetonung, spürbare Nähe</div>
+      </div>
+      <div class="param-card">
+        <div class="param-name">Radius &lt; 0.2</div>
+        <div class="param-val" style="color:var(--accent)">Nahfeld</div>
+        <div class="param-desc">Starker Proximity-Effekt, sehr präsent</div>
+      </div>
+    </div>
+    <div class="note note-warn">⚠ Sehr kleine Radius-Werte (&lt; 0.1) können Übersteuerung und instabiles Verhalten erzeugen. Gain-Kompensation notwendig.</div>
+  </div>
+
+  <!-- B.2 Blauert Filter -->
+  <div class="card">
+    <h4>B.2 – Blauert-Filter: Was er macht</h4>
+    <p style="font-size:0.87rem;line-height:1.6;margin-bottom:12px;">
+      Der <strong>Blauert-Filter</strong> (nach Jens Blauert, «Spatial Hearing», 1983/1997) fügt
+      richtungsabhängige Frequenz-Einfärbungen hinzu, die das menschliche Ohr als Elevation-Cues
+      interpretiert. Diese Cues kommen normalerweise von der Ohrmuschel (HRTF-Pinna-Effekt).
+    </p>
+
+    <!-- Visual frequency bands -->
+    <div style="background:#0a0e1a;border-radius:6px;padding:16px;margin:10px 0;">
+      <div style="font-size:0.75rem;color:var(--muted);margin-bottom:10px;">Blauert's Bänder – frequenzabhängige Elevation-Codierung</div>
+      <div style="display:flex;gap:3px;align-items:flex-end;height:70px;margin-bottom:6px;">
+        <div style="flex:1;background:#1e3050;border-radius:3px 3px 0 0;height:20px;"></div>
+        <div style="flex:1;background:#1e3050;border-radius:3px 3px 0 0;height:25px;"></div>
+        <div style="flex:1;background:#2a5070;border-radius:3px 3px 0 0;height:35px;"></div>
+        <div style="flex:1;background:rgba(83,192,240,0.7);border-radius:3px 3px 0 0;height:65px;" title="~3kHz vorne"></div>
+        <div style="flex:1;background:#2a5070;border-radius:3px 3px 0 0;height:30px;"></div>
+        <div style="flex:1;background:rgba(233,69,96,0.7);border-radius:3px 3px 0 0;height:55px;" title="~8kHz elevation"></div>
+        <div style="flex:1;background:#1e3050;border-radius:3px 3px 0 0;height:28px;"></div>
+        <div style="flex:1;background:rgba(76,175,80,0.7);border-radius:3px 3px 0 0;height:60px;" title="~10kHz hinten"></div>
+        <div style="flex:1;background:#1e3050;border-radius:3px 3px 0 0;height:22px;"></div>
+        <div style="flex:1;background:rgba(245,166,35,0.7);border-radius:3px 3px 0 0;height:50px;" title="~13kHz elevation"></div>
+        <div style="flex:1;background:#1e3050;border-radius:3px 3px 0 0;height:18px;"></div>
+        <div style="flex:1;background:#1e3050;border-radius:3px 3px 0 0;height:15px;"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.68rem;color:var(--muted);">
+        <span>200 Hz</span><span>1 kHz</span><span style="color:var(--accent2)">3 kHz↑ front</span>
+        <span style="color:var(--accent)">8 kHz↑ elev</span>
+        <span style="color:var(--green)">10 kHz↑ back</span>
+        <span style="color:var(--accent3)">13 kHz↑ elev</span><span>16 kHz</span>
+      </div>
+    </div>
+
+    <table>
+      <thead><tr><th>Frequenzband</th><th>Wahrnehmung</th><th>Effekt</th></tr></thead>
+      <tbody>
+        <tr><td>~3 kHz Boost</td><td style="color:var(--accent2)">Vorne / Frontal</td><td>Erhöhte Präsenz, Quelle «kommt auf dich zu»</td></tr>
+        <tr><td>~8 kHz Boost</td><td style="color:var(--accent)">Elevation oben</td><td>Quelle klingt erhöht / über dem Kopf</td></tr>
+        <tr><td>~10 kHz Notch</td><td style="color:var(--green)">Hinten / Rückwärts</td><td>Charakteristischer «hinten»-Klang</td></tr>
+        <tr><td>~13 kHz Boost</td><td style="color:var(--accent3)">Elevation + vorne</td><td>Extreme Höhe, «Decken»-Wahrnehmung</td></tr>
+      </tbody>
+    </table>
+    <div class="note note-tip">💡 Blauert-Filter ist besonders wirksam bei Lautsprecherwiedergabe und Kopfhörern. Bei Mehrkanal-Lautsprechern ohne HRTF-Decoder ist der Effekt subtiler.</div>
+  </div>
+
+  <!-- B.3 Plugin Setup Part B -->
+  <div class="card">
+    <h4>B.3 – Plugin konfigurieren für Part B</h4>
+    <ul class="step-list">
+      <li><span class="step-n">1.</span><div class="step-body"><strong>XYZ-Modus</strong> aktiv lassen (wie Part A).</div></li>
+      <li><span class="step-n">2.</span><div class="step-body"><strong>Near-Field Compensation → ON</strong> (Distance-Enkodierung aktivieren).</div></li>
+      <li><span class="step-n">3.</span><div class="step-body"><strong>Blauert Filter → ON</strong>. Optional: Blauert-Gain anpassen (Stärke des Effekts, 0–100%).</div></li>
+      <li><span class="step-n">4.</span><div class="step-body"><strong>Radius / Distance</strong> Startposition: empfohlen 0.8–1.0 (nicht direkt 0.0 → Clipping-Risiko).</div></li>
+      <li><span class="step-n">5.</span><div class="step-body"><strong>Gain-Kompensation</strong> einrichten: Bei Radius-Automation Gain-Envelope gegenläufig anlegen (näherkommen → Gain runter), damit wahrgenommene Lautstärke konstant bleibt.</div></li>
+    </ul>
+    <div class="note note-warn">⚠ Ohne Gain-Kompensation klingt eine Quelle die von r=1.0 auf r=0.1 bewegt wird ~20 dB lauter. Für dramatische Effekte gewollt – für subtile Bewegungen kompensieren.</div>
+  </div>
+
+  <!-- B.4 Distanz-Automation -->
+  <div class="card">
+    <h4>B.4 – Distanz-Automation in REAPER</h4>
+    <ul class="step-list">
+      <li><span class="step-n">1.</span><div class="step-body">Automation-Lane hinzufügen: <strong>AmbiEncoder_64: Radius</strong> (oder «Distance»)</div></li>
+      <li><span class="step-n">2.</span><div class="step-body">Gleichzeitig <strong>AmbiEncoder_64: Gain</strong> als Kompensations-Lane anlegen.</div></li>
+      <li><span class="step-n">3.</span><div class="step-body">Typisches Fly-By-Muster:<br>
+        <div style="margin-top:8px;background:#0a0e1a;border-radius:6px;padding:12px;font-size:0.8rem;line-height:1.8;">
+          t=0s: X=0, Y=1.0, Radius=1.0, Gain=0dB<br>
+          t=2s: X=0, Y=0.2, Radius=0.2, Gain=−14dB &nbsp;<span class="cm">← Vorbeiflug-Nähe</span><br>
+          t=4s: X=0, Y=−1.0, Radius=1.0, Gain=0dB
+        </div>
+      </div></li>
+      <li><span class="step-n">4.</span><div class="step-body">Kurventyp für Radius: <strong>Bezier</strong> → weicher Ein- und Ausklang der Nähewahrnehmung.</div></li>
+    </ul>
+  </div>
+
+  <!-- B.5 Kombinierter Workflow -->
+  <div class="card">
+    <h4>B.5 – Kombinierter XYZ + Distanz Workflow</h4>
+    <p style="font-size:0.85rem;line-height:1.6;margin-bottom:12px;">
+      Beispiel: Klangquelle fliegt um den Hörer herum <em>und</em> kommt dabei näher (Spirale nach innen):
+    </p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div>
+        <div style="font-size:0.8rem;color:var(--muted);margin-bottom:6px;">Automation Lanes</div>
+        <div style="background:#0a0e1a;border-radius:6px;padding:12px;">
+          <div style="font-size:0.78rem;line-height:1.8;">
+            <span style="color:var(--accent2)">X</span> = sin(t) · r(t)<br>
+            <span style="color:var(--green)">Y</span> = cos(t) · r(t)<br>
+            <span style="color:var(--accent)">Z</span> = 0 (oder leichte Elevation)<br>
+            <span style="color:var(--accent3)">Radius</span> = 1.0 → 0.3 (abnehmend)<br>
+            <span style="color:var(--purple)">Gain</span> = Kompensation (gegenläufig)
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:0.8rem;color:var(--muted);margin-bottom:6px;">Lua-Script (→ Scripts-Tab)</div>
+        <div class="note note-info" style="margin:0;">Das Script <strong>spiral_approach.lua</strong> im Scripts-Tab generiert diese Automation vollautomatisch in alle Lanes.</div>
+      </div>
+    </div>
+    <div class="note note-tip" style="margin-top:10px;">💡 Blauert-Filter verstärkt den Effekt: Bei frontaler Annäherung (Y steigt) klingen die 3kHz-Boost-Cues natürlicher und die Quelle wird als «wirklich näherkommen» wahrgenommen.</div>
+  </div>
+
+  <!-- B.6 Vergleich -->
+  <div class="card">
+    <h4>B.6 – Part A vs Part B: Wann was benutzen?</h4>
+    <table>
+      <thead><tr><th>Situation</th><th>Empfehlung</th><th>Begründung</th></tr></thead>
+      <tbody>
+        <tr><td>Gleichmässige Rotation / Loop</td><td style="color:var(--accent2)">Part A</td><td>Konstante Lautstärke, keine Färbung erwünscht</td></tr>
+        <tr><td>Fly-by, Vorbeiflug</td><td style="color:var(--accent3)">Part B</td><td>Proximity-Effekt erzeugt realistische Nähe</td></tr>
+        <tr><td>Elektronische/abstrakte Musik</td><td style="color:var(--accent2)">Part A</td><td>Blauert-Cues können als «unnatürlich» stören</td></tr>
+        <tr><td>Field Recordings, Foley</td><td style="color:var(--accent3)">Part B</td><td>Realistische akustische Distanz-Simulation</td></tr>
+        <tr><td>Binaural-Rendering (Kopfhörer)</td><td style="color:var(--accent3)">Part B + Blauert</td><td>HRTF-Cues essentiell für Elevation-Wahrnehmung</td></tr>
+        <tr><td>Lautsprecher-Array &gt; 8 Ch</td><td style="color:var(--accent2)">Part A</td><td>Elevation kommt vom Decoder, kein Blauert nötig</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     TAB: SCRIPTS
+════════════════════════════════════════════════ -->
+<div id="tab-scripts" class="tab-content">
+<div class="container">
+
+  <div class="sec-head">
+    <div class="sec-num num-p">⚙</div>
+    <div>
+      <div class="sec-title">Lua &amp; Python Automation Scripts</div>
+      <div class="sec-sub">Envelope-Generatoren für REAPER – direkt in die Action List laden</div>
+    </div>
+  </div>
+
+  <div class="note note-info" style="margin-bottom:16px;">Alle Scripts via <strong>Actions → Load ReaScript</strong> in REAPER laden. Datei im Bundle-Ordner speichern.</div>
+
+  <!-- Script 1: Kreisbewegung -->
+  <div class="card">
+    <h4>Script 1 – Kreisbewegung auf Einheitskugel (Part A)</h4>
+    <p style="font-size:0.84rem;color:var(--muted);margin-bottom:10px;">Schreibt X/Y-Envelope für eine Rotation auf dem Hörhorizont. Z bleibt 0. Kein Distanzeffekt.</p>
+    <pre><code><span class="cm">-- ICST_AmbiEncoder_Circle_XY.lua
+-- Erzeugt X/Y-Kreisbahn auf dem Hörhorizont (Z=0)
+-- Part A – keine Distanz-Enkodierung</span>
+
+<span class="kw">local</span> TWO_PI = <span class="nm">2</span> * math.pi
+
+<span class="cm">-- ── Parameter ──────────────────────────────────</span>
+<span class="kw">local</span> DURATION_SEC = <span class="nm">8</span>     <span class="cm">-- Gesamtdauer der Kreisbewegung</span>
+<span class="kw">local</span> ROTATIONS   = <span class="nm">1</span>     <span class="cm">-- Anzahl vollständige Umdrehungen</span>
+<span class="kw">local</span> POINTS      = <span class="nm">200</span>   <span class="cm">-- Envelope-Auflösung</span>
+<span class="kw">local</span> START_ANG   = <span class="nm">0</span>     <span class="cm">-- Startwinkel (0 = vorne)</span>
+
+<span class="cm">-- ── Hilfsfunktionen ─────────────────────────────</span>
+<span class="kw">local function</span> <span class="fn">getEnvByName</span>(track, name)
+  <span class="kw">for</span> i = <span class="nm">0</span>, reaper.<span class="fn">TrackFX_GetCount</span>(track) - <span class="nm">1</span> <span class="kw">do</span>
+    <span class="kw">for</span> p = <span class="nm">0</span>, reaper.<span class="fn">TrackFX_GetNumParams</span>(track, i) - <span class="nm">1</span> <span class="kw">do</span>
+      <span class="kw">local</span> _, pname = reaper.<span class="fn">TrackFX_GetParamName</span>(track, i, p, <span class="st">""</span>)
+      <span class="kw">if</span> pname:lower():find(name:lower()) <span class="kw">then</span>
+        <span class="kw">return</span> reaper.<span class="fn">GetFXEnvelope</span>(track, i, p, <span class="nm">true</span>)
+      <span class="kw">end</span>
+    <span class="kw">end</span>
+  <span class="kw">end</span>
+  <span class="kw">return</span> <span class="nm">nil</span>
+<span class="kw">end</span>
+
+<span class="kw">local function</span> <span class="fn">fillEnvelope</span>(env, times, vals)
+  reaper.<span class="fn">DeleteEnvelopePointRange</span>(env, times[<span class="nm">1</span>] - <span class="nm">0.001</span>, times[#times] + <span class="nm">0.001</span>)
+  <span class="kw">for</span> i, t <span class="kw">in</span> ipairs(times) <span class="kw">do</span>
+    reaper.<span class="fn">InsertEnvelopePoint</span>(env, t, vals[i], <span class="nm">0</span>, <span class="nm">0</span>, <span class="nm">false</span>, <span class="nm">true</span>)
+  <span class="kw">end</span>
+  reaper.<span class="fn">Envelope_SortPoints</span>(env)
+<span class="kw">end</span>
+
+<span class="cm">-- ── Haupt-Routine ────────────────────────────────</span>
+<span class="kw">local</span> track = reaper.<span class="fn">GetSelectedTrack</span>(<span class="nm">0</span>, <span class="nm">0</span>)
+<span class="kw">if not</span> track <span class="kw">then</span>
+  reaper.<span class="fn">ShowMessageBox</span>(<span class="st">"Bitte einen Track auswählen!"</span>, <span class="st">"Fehler"</span>, <span class="nm">0</span>)
+  <span class="kw">return</span>
+<span class="kw">end</span>
+
+<span class="kw">local</span> envX = <span class="fn">getEnvByName</span>(track, <span class="st">"param_x"</span>)  <span class="cm">-- Passe Namen an dein Plugin an</span>
+<span class="kw">local</span> envY = <span class="fn">getEnvByName</span>(track, <span class="st">"param_y"</span>)
+<span class="kw">if not</span> envX <span class="kw">or not</span> envY <span class="kw">then</span>
+  reaper.<span class="fn">ShowMessageBox</span>(<span class="st">"X oder Y Envelope nicht gefunden.\nParameter-Name prüfen."</span>, <span class="st">"Fehler"</span>, <span class="nm">0</span>)
+  <span class="kw">return</span>
+<span class="kw">end</span>
+
+<span class="kw">local</span> cursorPos = reaper.<span class="fn">GetCursorPosition</span>()
+<span class="kw">local</span> times, xs, ys = {}, {}, {}
+
+<span class="kw">for</span> i = <span class="nm">0</span>, POINTS <span class="kw">do</span>
+  <span class="kw">local</span> frac = i / POINTS
+  <span class="kw">local</span> t    = cursorPos + frac * DURATION_SEC
+  <span class="kw">local</span> ang  = START_ANG + frac * ROTATIONS * TWO_PI
+  times[i+<span class="nm">1</span>] = t
+  xs[i+<span class="nm">1</span>]    = math.sin(ang)   <span class="cm">-- X = links/rechts</span>
+  ys[i+<span class="nm">1</span>]    = math.cos(ang)   <span class="cm">-- Y = vorne/hinten</span>
+<span class="kw">end</span>
+
+reaper.<span class="fn">Undo_BeginBlock</span>()
+<span class="fn">fillEnvelope</span>(envX, times, xs)
+<span class="fn">fillEnvelope</span>(envY, times, ys)
+reaper.<span class="fn">Undo_EndBlock</span>(<span class="st">"ICST: Kreisbewegung X/Y"</span>, -<span class="nm">1</span>)
+
+reaper.<span class="fn">ShowMessageBox</span>(
+  string.format(<span class="st">"✓ Kreisbewegung geschrieben\n%d Punkte · %.1f s · %d Rotation(en)"</span>,
+    POINTS, DURATION_SEC, ROTATIONS),
+  <span class="st">"ICST AmbiEncoder"</span>, <span class="nm">0</span>)</code></pre>
+  </div>
+
+  <!-- Script 2: Spiral Approach -->
+  <div class="card">
+    <h4>Script 2 – Spiralförmige Annäherung mit Distanz (Part B)</h4>
+    <p style="font-size:0.84rem;color:var(--muted);margin-bottom:10px;">Schreibt X/Y/Radius-Envelopes: Quelle rotiert und kommt gleichzeitig näher. Gain-Kompensation optional.</p>
+    <pre><code><span class="cm">-- ICST_AmbiEncoder_Spiral_Approach.lua
+-- Spiralbahn: Rotation + Annäherung
+-- Part B – mit Distanz-Enkodierung</span>
+
+<span class="kw">local</span> TWO_PI = <span class="nm">2</span> * math.pi
+
+<span class="cm">-- ── Parameter ──────────────────────────────────</span>
+<span class="kw">local</span> DURATION_SEC  = <span class="nm">12</span>    <span class="cm">-- Gesamtdauer</span>
+<span class="kw">local</span> ROTATIONS    = <span class="nm">2</span>     <span class="cm">-- Umdrehungen während Annäherung</span>
+<span class="kw">local</span> RADIUS_START = <span class="nm">1.0</span>  <span class="cm">-- Startdistanz (Fernfeld)</span>
+<span class="kw">local</span> RADIUS_END   = <span class="nm">0.25</span> <span class="cm">-- Enddistanz (Nahfeld)</span>
+<span class="kw">local</span> GAIN_COMP    = <span class="nm">true</span>  <span class="cm">-- Lautstärke kompensieren?</span>
+<span class="kw">local</span> POINTS       = <span class="nm">300</span>
+
+<span class="cm">-- ── Envelope-Lookup ─────────────────────────────</span>
+<span class="kw">local function</span> <span class="fn">getFXEnv</span>(track, paramSubstr)
+  <span class="kw">for</span> i = <span class="nm">0</span>, reaper.<span class="fn">TrackFX_GetCount</span>(track)-<span class="nm">1</span> <span class="kw">do</span>
+    <span class="kw">for</span> p = <span class="nm">0</span>, reaper.<span class="fn">TrackFX_GetNumParams</span>(track,i)-<span class="nm">1</span> <span class="kw">do</span>
+      <span class="kw">local</span> _, n = reaper.<span class="fn">TrackFX_GetParamName</span>(track, i, p, <span class="st">""</span>)
+      <span class="kw">if</span> n:lower():find(paramSubstr:lower()) <span class="kw">then</span>
+        <span class="kw">return</span> reaper.<span class="fn">GetFXEnvelope</span>(track, i, p, <span class="nm">true</span>), i, p
+      <span class="kw">end</span>
+    <span class="kw">end</span>
+  <span class="kw">end</span>
+<span class="kw">end</span>
+
+<span class="kw">local function</span> <span class="fn">writeEnv</span>(env, tArr, vArr)
+  reaper.<span class="fn">DeleteEnvelopePointRange</span>(env, tArr[<span class="nm">1</span>]-<span class="nm">.01</span>, tArr[#tArr]+<span class="nm">.01</span>)
+  <span class="kw">for</span> i = <span class="nm">1</span>, #tArr <span class="kw">do</span>
+    reaper.<span class="fn">InsertEnvelopePoint</span>(env, tArr[i], vArr[i], <span class="nm">0</span>, <span class="nm">0</span>, <span class="nm">false</span>, <span class="nm">true</span>)
+  <span class="kw">end</span>
+  reaper.<span class="fn">Envelope_SortPoints</span>(env)
+<span class="kw">end</span>
+
+<span class="kw">local</span> track = reaper.<span class="fn">GetSelectedTrack</span>(<span class="nm">0</span>, <span class="nm">0</span>)
+<span class="kw">if not</span> track <span class="kw">then</span> reaper.<span class="fn">ShowMessageBox</span>(<span class="st">"Track auswählen!"</span>,<span class="st">""</span>,<span class="nm">0</span>); <span class="kw">return end</span>
+
+<span class="kw">local</span> envX = <span class="fn">getFXEnv</span>(track, <span class="st">"param_x"</span>)
+<span class="kw">local</span> envY = <span class="fn">getFXEnv</span>(track, <span class="st">"param_y"</span>)
+<span class="kw">local</span> envR = <span class="fn">getFXEnv</span>(track, <span class="st">"radius"</span>)
+<span class="kw">local</span> envG = GAIN_COMP <span class="kw">and</span> <span class="fn">getFXEnv</span>(track, <span class="st">"gain"</span>)
+
+<span class="kw">local</span> cursor = reaper.<span class="fn">GetCursorPosition</span>()
+<span class="kw">local</span> tArr, xArr, yArr, rArr, gArr = {},{},{},{},{}
+
+<span class="kw">for</span> i = <span class="nm">0</span>, POINTS <span class="kw">do</span>
+  <span class="kw">local</span> frac = i / POINTS
+  <span class="kw">local</span> t    = cursor + frac * DURATION_SEC
+  <span class="kw">local</span> ang  = frac * ROTATIONS * TWO_PI
+  <span class="kw">local</span> r    = RADIUS_START + (RADIUS_END - RADIUS_START) * frac
+
+  tArr[i+<span class="nm">1</span>] = t
+  xArr[i+<span class="nm">1</span>] = math.sin(ang) * r
+  yArr[i+<span class="nm">1</span>] = math.cos(ang) * r
+  rArr[i+<span class="nm">1</span>] = r
+  <span class="cm">-- Gain-Kompensation: ~6dB pro Halbierung der Distanz</span>
+  gArr[i+<span class="nm">1</span>] = -<span class="nm">20</span> * math.log(r / RADIUS_START, <span class="nm">10</span>) <span class="cm">-- in dB</span>
+<span class="kw">end</span>
+
+reaper.<span class="fn">Undo_BeginBlock</span>()
+<span class="kw">if</span> envX <span class="kw">then</span> <span class="fn">writeEnv</span>(envX, tArr, xArr) <span class="kw">end</span>
+<span class="kw">if</span> envY <span class="kw">then</span> <span class="fn">writeEnv</span>(envY, tArr, yArr) <span class="kw">end</span>
+<span class="kw">if</span> envR <span class="kw">then</span> <span class="fn">writeEnv</span>(envR, tArr, rArr) <span class="kw">end</span>
+<span class="kw">if</span> envG <span class="kw">and</span> GAIN_COMP <span class="kw">then</span> <span class="fn">writeEnv</span>(envG, tArr, gArr) <span class="kw">end</span>
+reaper.<span class="fn">Undo_EndBlock</span>(<span class="st">"ICST: Spiral Approach"</span>, -<span class="nm">1</span>)</code></pre>
+  </div>
+
+  <!-- Script 3: Python OSC -->
+  <div class="card">
+    <h4>Script 3 – Python: Echtzeit OSC Automation (extern)</h4>
+    <p style="font-size:0.84rem;color:var(--muted);margin-bottom:10px;">Sendet XYZ-Daten direkt per OSC an Max/AmbiEncoder – ohne REAPER-Envelope. Nützlich für Live-Generierung.</p>
+    <pre><code><span class="cm">#!/usr/bin/env python3
+# ICST_live_xyz_osc.py
+# Sendet Kreisbewegung als OSC-Pakete an localhost:50010
+# Benötigt nur Python stdlib</span>
+
+<span class="kw">import</span> socket, struct, time, math
+
+<span class="cm">## ── Konfiguration ──────────────────────────────</span>
+HOST     = <span class="st">"127.0.0.1"</span>
+PORT     = <span class="nm">50010</span>
+OSC_ADDR = <span class="st">"/ambi/xyz"</span>     <span class="cm"># Anpassen an Max-Route</span>
+FPS      = <span class="nm">30</span>               <span class="cm"># Pakete pro Sekunde</span>
+DURATION = <span class="nm">10</span>              <span class="cm"># Sekunden</span>
+ROTATIONS= <span class="nm">2</span>               <span class="cm"># Umdrehungen</span>
+
+<span class="cm">## ── OSC Helpers ────────────────────────────────</span>
+<span class="kw">def</span> <span class="fn">osc_pad</span>(d):
+    <span class="kw">return</span> d + b<span class="st">'\0'</span> * ((<span class="nm">4</span> - (len(d) % <span class="nm">4</span>)) % <span class="nm">4</span>)
+
+<span class="kw">def</span> <span class="fn">osc_str</span>(s):
+    <span class="kw">return</span> <span class="fn">osc_pad</span>(s.encode() + b<span class="st">'\0'</span>)
+
+<span class="kw">def</span> <span class="fn">osc_packet_fff</span>(address, x, y, z):
+    <span class="cm">"""OSC message mit 3 Float-Argumenten"""</span>
+    <span class="kw">return</span> (
+        <span class="fn">osc_str</span>(address) +
+        <span class="fn">osc_str</span>(<span class="st">",fff"</span>) +
+        struct.pack(<span class="st">">fff"</span>, x, y, z)
+    )
+
+<span class="cm">## ── Hauptschleife ──────────────────────────────</span>
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+total_frames = <span class="nm">int</span>(DURATION * FPS)
+
+print(f<span class="st">"Starte XYZ-OSC · {FPS} fps · {DURATION}s · Port {PORT}"</span>)
+
+<span class="kw">for</span> frame <span class="kw">in</span> range(total_frames):
+    frac = frame / total_frames
+    ang  = frac * ROTATIONS * <span class="nm">2</span> * math.pi
+
+    x = math.sin(ang)
+    y = math.cos(ang)
+    z = <span class="nm">0.0</span>               <span class="cm"># Für Part B: z = math.sin(frac*math.pi)</span>
+    r = <span class="nm">1.0</span>               <span class="cm"># Für Part B: r = 1.0 - 0.7*frac</span>
+
+    pkt = <span class="fn">osc_packet_fff</span>(OSC_ADDR, x*r, y*r, z*r)
+    sock.sendto(pkt, (HOST, PORT))
+    time.sleep(<span class="nm">1.0</span> / FPS)
+
+sock.close()
+print(<span class="st">"✓ Fertig"</span>)</code></pre>
+    <div class="note note-tip">💡 Für Part B: Zeile <span class="inline">r = 1.0 - 0.7*frac</span> einkommentieren → Radius schrumpft von 1.0 auf 0.3.</div>
+  </div>
+
+  <!-- Script 4: Param-Name Finder -->
+  <div class="card">
+    <h4>Script 4 – Parameter-Namen des AmbiEncoder auslesen</h4>
+    <p style="font-size:0.84rem;color:var(--muted);margin-bottom:10px;">Listet alle FX-Parameter des selektierten Tracks in der REAPER Console – damit die richtigen Namen für Scripts 1–2 bekannt sind.</p>
+    <pre><code><span class="cm">-- ICST_list_params.lua
+-- Zeigt alle FX-Parameter des selektierten Tracks</span>
+
+<span class="kw">local</span> track = reaper.<span class="fn">GetSelectedTrack</span>(<span class="nm">0</span>, <span class="nm">0</span>)
+<span class="kw">if not</span> track <span class="kw">then</span> reaper.<span class="fn">ShowConsoleMsg</span>(<span class="st">"Kein Track selektiert!\n"</span>); <span class="kw">return end</span>
+
+<span class="kw">local</span> out = <span class="st">"FX-Parameter:\n"</span> .. string.rep(<span class="st">"-"</span>, <span class="nm">50</span>) .. <span class="st">"\n"</span>
+<span class="kw">for</span> fx = <span class="nm">0</span>, reaper.<span class="fn">TrackFX_GetCount</span>(track)-<span class="nm">1</span> <span class="kw">do</span>
+  <span class="kw">local</span> _, fxName = reaper.<span class="fn">TrackFX_GetFXName</span>(track, fx, <span class="st">""</span>)
+  out = out .. string.format(<span class="st">"\n[FX %d] %s\n"</span>, fx, fxName)
+  <span class="kw">for</span> p = <span class="nm">0</span>, reaper.<span class="fn">TrackFX_GetNumParams</span>(track, fx)-<span class="nm">1</span> <span class="kw">do</span>
+    <span class="kw">local</span> _, pn = reaper.<span class="fn">TrackFX_GetParamName</span>(track, fx, p, <span class="st">""</span>)
+    <span class="kw">local</span> val    = reaper.<span class="fn">TrackFX_GetParam</span>(track, fx, p)
+    out = out .. string.format(<span class="st">"  [%2d] %-30s = %.4f\n"</span>, p, pn, val)
+  <span class="kw">end</span>
+<span class="kw">end</span>
+reaper.<span class="fn">ShowConsoleMsg</span>(out)</code></pre>
+    <div class="note note-info">Output erscheint in REAPER Console (<span class="inline">Ctrl+Alt+R</span>). Die Parameternamen dort in Scripts 1 &amp; 2 eintragen.</div>
+  </div>
+
+</div>
+</div>
+
+<footer>
+  <p>ICST Ambisonics Workshop 2026 · ZHdK / ICST ·
+    <a href="https://www.zhdk.ch/forschung/icst" target="_blank">zhdk.ch/forschung/icst</a>
+  </p>
+  <p style="margin-top:6px">
+    <a href="ICST_Betriebsanleitung.html">← Betriebsanleitung</a> &nbsp;·&nbsp;
+    <a href="ICST_Workshop_Tools.html">Workshop Tools</a>
+  </p>
+</footer>
+
+<script>
+  function showTab(id, el) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    el.classList.add('active');
+  }
+</script>
+</body>
+</html>

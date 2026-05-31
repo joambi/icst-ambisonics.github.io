@@ -22,7 +22,9 @@
   "obsidian-local-rest-api",
   "templater-obsidian",
   "chatgpt-md",
-  "open-in-terminal",
   "lovely-mindmap",
-  "graph-link-types"
+  "graph-link-types",
+  "smart-connections",
+  "obsidian-icon-folder",
+  "terminal"
 ]

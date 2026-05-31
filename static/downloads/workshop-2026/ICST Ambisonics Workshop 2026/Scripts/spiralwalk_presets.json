@@ -1,0 +1,1 @@
+{"test2":{"accelerando":1.0,"speed":1.0,"spiralOutward":true,"reverseAccel":false,"maxRadius":0.7,"spiralSpread":1.0,"steps":200,"minRadius":0.1,"numPointsToProcess":8,"includeZ":false},"test":{"accelerando":1.0,"speed":1.0,"spiralOutward":true,"reverseAccel":true,"maxRadius":1.0,"spiralSpread":1.0,"steps":200,"minRadius":0.1,"numPointsToProcess":8,"includeZ":false}}

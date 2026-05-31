@@ -1,0 +1,202 @@
+noindex: true
+desc: MIDI Multi Channel Pre-Delay Live Flagger
+version: 0.8
+author: Ben 'Talagan' Babut
+
+slider1:introduced_lag=0<0,1000>Introduced Lag
+slider2:queue_size=0<0,1000>Queue Size
+
+options:gmem=MIDIMultiChannelPredelay
+
+// This plugin flags live events in GMEM so that another plugin in the normal FX Chain
+// can check if incoming MIDI Events are live events or not.
+// Currently the check is based on the perfect equality for : the event content + offset in current block
+
+// GMEM : queue of currently processed events.
+//        They are shared among all instances,
+//        so beware of the gardener.
+
+// The life of a stored event is 1 block only.
+// Just the time for the FX chain to process it.
+
+// Stored Event :
+// - Magic            : check end of queue
+// - Owner UID        : check if it belongs to us
+// - timestamp        : time_precise of the event, drop if > 100ms
+// - block num        : num of the block, drop if not == current block
+// - msg content      : msg1 | msg2 | msg3
+// - offset in block  : offset in block, useful for receiver
+
+@init
+
+ext_noinit          = 0;
+g_last_play_state   = play_state;
+
+MAGIC_NUMBER        = 0xF5AF5BB0;
+
+EVENT_START_ADDR    = 1;
+STORED_EVENT_SIZE   = 6;
+
+g_block_num = 0;
+b_now       = 0;
+
+introduced_lag = 0;
+queue_size = 0;
+
+@block
+
+function getUID()
+  local(cp, flags)
+(
+  get_host_placement(cp, flags);
+);
+
+function gmem_p()
+  local(res)
+(
+  res =  atomic_setifequal(gmem[0], 0, 1);
+  (res == 0);
+);
+
+function gmem_v()
+(
+  atomic_set(gmem[0],0);
+);
+
+function gmem_wait(timeout)
+local(t1, t2, elapsed)
+(
+  (timeout <=0)?(timeout = 1.0);
+
+  t1          = time_precise();
+  elapsed     = 0;
+  should_loop = 1;
+
+  while(!gmem_p() && should_loop == 1)
+  (
+    t2          = time_precise();
+    elapsed     = (t2 - t1);
+    should_loop = (elapsed < timeout);
+  );
+
+  introduced_lag += elapsed;
+  should_loop;
+);
+
+function slotIsReusable(slot_address)
+  local(mg, st, id, ts, bn)
+(
+  mg = gmem[slot_address+0];
+  id = gmem[slot_address+1];
+  ts = gmem[slot_address+2];
+  bn = gmem[slot_address+3];
+
+  (mg != MAGIC_NUMBER) ||                 // The slot is crap
+  ((id == UID) && (bn != g_block_num)) || // This is one of ours but not during this block so it is now obsolete
+  (ts + 0.1 < b_now);                     // Too old, obsolete, probably a leftover of another plugin
+);
+
+
+function findFirstReusableSlot()
+  local(c)
+(
+  c = EVENT_START_ADDR;
+  while(!slotIsReusable(c)) (
+    c += STORED_EVENT_SIZE;
+  );
+  c;
+);
+
+function cleanupMemory()
+  local(last, c, bn, id)
+(
+  gmem_wait(0.01);
+
+  c        = EVENT_START_ADDR;
+  last     = EVENT_START_ADDR;
+
+  // Advance till we meet something which is not a slot
+  while(gmem[c] == MAGIC_NUMBER) (
+    last      = c;
+    c         += STORED_EVENT_SIZE;
+  );
+
+  queue_size = c - EVENT_START_ADDR;
+
+  // Now rewind-erase the end of the queue
+  while(slotIsReusable(last) && (last >= EVENT_START_ADDR)) (
+    gmem[last]   = 0;
+    gmem[last+1] = 0;
+    gmem[last+2] = 0;
+    gmem[last+3] = 0;
+    gmem[last+4] = 0;
+    gmem[last+5] = 0;
+    last -= STORED_EVENT_SIZE;
+  );
+
+  // Only invalidate events in the rest of the queue if they belong to us and are not valid anymore.
+  while(last >= EVENT_START_ADDR) (
+
+    id = gmem[last+1];
+    bn = gmem[last+3];
+
+    ((id == UID) && (bn != g_block_num))?(
+      gmem[last+3] = -1;
+    );
+    last -= STORED_EVENT_SIZE;
+  );
+
+  gmem_v();
+);
+
+function flagEvent(offset, msg1, msg2, msg3)
+  local(slot_address)
+(
+  gmem_wait(0.01);
+
+  // Calculate address to store next event
+  slot_address            = findFirstReusableSlot();
+
+  // Store UID / Offsetof the event at this address
+  gmem[slot_address]      = MAGIC_NUMBER;
+  gmem[slot_address+1]    = UID;
+  gmem[slot_address+2]    = b_now;
+  gmem[slot_address+3]    = g_block_num;
+  gmem[slot_address+4]    = (msg1 << 16) | (msg2 << 8) | msg3;
+  gmem[slot_address+5]    = offset;
+
+  gmem_v();
+);
+
+function receiveEvents()
+  local(offset,msg1,msg2,msg3)
+(
+  // Don't flag system events, use midirecv
+  while(midirecv(offset, msg1, msg2, msg3)) (
+    ((msg1 & 0xF0) < 0xF0)?(
+      // It's a message with a channel
+      flagEvent(offset, msg1, msg2, msg3);
+    );
+    midisend(offset, msg1, msg2, msg3);
+  );
+);
+
+//----------------------
+
+b_now     = time_precise();
+
+// Resync the counter on play changes
+
+(g_last_play_state != play_state)?(
+  g_block_num = 0;
+  g_last_play_state = play_state;
+);
+
+// Read some events, and flag them in gmem
+
+UID = getUID();
+receiveEvents();
+cleanupMemory();
+
+g_block_num += 1;
+

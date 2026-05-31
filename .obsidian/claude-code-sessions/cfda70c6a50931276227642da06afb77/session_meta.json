@@ -1,0 +1,18 @@
+{
+  "sessionName": "Tutorial-Scenen-Wechsler -ACT",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "content/learn/working-with-ambisonics-workshop/reaper-workshop/Tutorial-Scenen-Wechsler -ACT.md",
+      "title": "Tutorial-Scenen-Wechsler -ACT",
+      "linkedAt": "2026-05-15T13:23:18.340Z",
+      "isPrimary": true
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-05-15T13:23:18.340Z",
+  "createdAt": "2026-05-15T13:23:18.340Z",
+  "messageCount": 1,
+  "notePath": "content/learn/working-with-ambisonics-workshop/reaper-workshop/Tutorial-Scenen-Wechsler -ACT.md",
+  "noteTitle": "Tutorial-Scenen-Wechsler -ACT"
+}

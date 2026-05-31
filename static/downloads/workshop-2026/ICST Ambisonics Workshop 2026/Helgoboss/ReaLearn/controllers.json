@@ -1,0 +1,28 @@
+{
+  "controllers": [
+    {
+      "id": "BrmSHIiypmIUY3LkWrjvu",
+      "name": "Midi Fighter Twister",
+      "enabled": true,
+      "connection": {
+        "kind": "Midi",
+        "identity_response": "F0 7E 7F 06 02 00 01 79 05 00 01 00 20 23 06 08 F7",
+        "input_port": 16,
+        "output_port": 16
+      },
+      "default_main_preset": "factory/generic/grid/playtime"
+    },
+    {
+      "id": "YFBs34tjF-JUk5LKFGqKG",
+      "name": "APC Key 25",
+      "enabled": true,
+      "connection": {
+        "kind": "Midi",
+        "identity_response": "F0 7E 01 06 02 47 27 00 19 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F7",
+        "input_port": 17,
+        "output_port": 17
+      },
+      "default_main_preset": "factory/akai/apc-key-25/playtime"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "Name": "MultiEncoder",
+  "Version": "1.0.4",
+  "Factory Info": {
+    "Vendor": "IEM",
+    "URL": "",
+    "E-Mail": "",
+    "Flags": {
+      "Unicode": true,
+      "Classes Discardable": false,
+      "Component Non Discardable": false,
+    },
+  },
+  "Classes": [
+    {
+      "CID": "ABCDEF019182FAEB49454D414D75456E",
+      "Category": "Audio Module Class",
+      "Name": "MultiEncoder",
+      "Vendor": "IEM",
+      "Version": "1.0.4",
+      "SDKVersion": "VST 3.7.12",
+      "Sub Categories": [
+        "Fx",
+        "Spatial",
+        "Surround",
+        "Up-Downmix",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "ABCDEF011234ABCD49454D414D75456E",
+      "Category": "Component Controller Class",
+      "Name": "MultiEncoder",
+      "Vendor": "IEM",
+      "Version": "1.0.4",
+      "SDKVersion": "VST 3.7.12",
+      "Sub Categories": [
+        "Fx",
+        "Spatial",
+        "Surround",
+        "Up-Downmix",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "ABCDEF01C0DEF00D49454D414D75456E",
+      "Category": "Plugin Compatibility Class",
+      "Name": "MultiEncoder",
+      "Vendor": "IEM",
+      "Version": "1.0.4",
+      "SDKVersion": "VST 3.7.12",
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+  ],
+}

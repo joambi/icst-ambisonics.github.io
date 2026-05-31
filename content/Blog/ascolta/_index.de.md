@@ -15,17 +15,7 @@ languageCode: de
     <strong>ascolta</strong> ist die öffentliche Hörreihe des ICST Kompositionsstudios: akusmatische und elektroakustische Musik in einer konzentrierten, immersiven Hörsituation.
     </div>
     <p class="hub-lead">Die Sitzungen verbinden Studioarbeit, Residency-Projekte und internationales Repertoire durch Higher-Order-Ambisonics-Hören an der ZHdK.</p>
-    <div class="hub-note">
-    <strong>Nächste Sitzung:</strong> <strong>#19 ascolta</strong> präsentiert drei neue Ambisonics-Werke aus den <strong>ICST Studio Residenzen 2025</strong> von <strong>Nandele Maguni</strong>, <strong>Youngjae Cho</strong> und <strong>Ana González Gamboa</strong>.
-    </div>
   </div>
-  <a class="hub-upcoming" href="/de/blog/ascolta/19-ascolta/">
-    <span class="hub-upcoming__eyebrow">Nächster Termin</span>
-    <span class="hub-upcoming__date">21. Mai 2026</span>
-    <span class="hub-upcoming__meta">18:00–19:00 · Freier Eintritt</span>
-    <span class="hub-upcoming__title">#19 ascolta — Acousmatic Listening Sessions</span>
-    <span class="hub-upcoming__text">ICST Studio Residenzen 2025: Nandele Maguni, Youngjae Cho und Ana González Gamboa</span>
-  </a>
 </div>
 
 ---

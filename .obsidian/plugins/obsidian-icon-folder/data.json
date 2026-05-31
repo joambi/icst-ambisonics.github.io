@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": "#4679af",
+    "recentlyUsedIcons": [
+      "LiAccessibility",
+      "LiAward",
+      "LiAtSign",
+      "LiAtom",
+      "LiAudioLines"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "content/learn/working-with-ambisonics-workshop/reaper-workshop/Tutorial-Scenen-Wechsler -ACT.md": "LiAtom",
+  "content/learn/working-with-ambisonics-workshop/reaper-workshop/Spatial Counterpoint.md": "LiAtSign",
+  "content/learn/working-with-ambisonics-workshop/reaper-workshop/Csound.md": "LiAward",
+  "content/learn/working-with-ambisonics-workshop/reaper-workshop/MaxMSP Ambisonics.md": "LiAward",
+  "content/learn/working-with-ambisonics-workshop/reaper-workshop/Reaper Decoder Studio Test.md": "LiAtom",
+  "content/learn/working-with-ambisonics-workshop/reaper-workshop/ICST Ambisonics Workshop 2026.md": "LiAccessibility"
+}

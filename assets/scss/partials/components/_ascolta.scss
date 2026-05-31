@@ -122,6 +122,53 @@
     background: #22313a;
   }
 
+  .hub-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    border-radius: 2px;
+    padding: 1.05rem 1.15rem;
+    min-height: 100%;
+    margin-top: -2rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .theme--light & .hub-info {
+    background: #f6f8fb;
+    border: 1px solid #d9e3ef;
+    color: #1f3142;
+  }
+
+  .theme--dark & .hub-info {
+    background: #2c4352;
+    border: 1px solid #5f84a7;
+    color: #eeeeee;
+  }
+
+  .hub-info__eyebrow {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #6086b4;
+    margin-bottom: 0.2rem;
+  }
+
+  .hub-info__item {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 0.4rem;
+    align-items: baseline;
+
+    strong {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #6086b4;
+    }
+  }
+
   .hub-start,
   .hub-related {
     display: grid;
@@ -270,6 +317,24 @@
   .session-row__date {
     font-size: 1.3rem;
     margin-top: 2px;
+  }
+
+  .session-row__tag {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #6086b4;
+    margin-top: 2px;
+  }
+
+  .session-row--cancelled {
+    opacity: 0.45;
+    pointer-events: none;
+    cursor: default;
+
+    .session-row__subtitle {
+      text-decoration: line-through;
+    }
   }
 
   .post__content h2 {

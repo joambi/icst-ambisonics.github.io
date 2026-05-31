@@ -1,0 +1,285 @@
+desc:ICST Ambisonics Lissajous Monitor
+tags: analyzer visualization ambisonics icst
+author: ICST Ambisonics Workshop
+
+// ---------------------------------------------------------------
+//  ICST Ambisonics Lissajous Monitor
+//  Für Reaper (macOS / Windows / Linux)
+//
+//  Zeigt Lissajous-Figuren zweier wählbarer Ambisonics-Kanäle.
+//  Kanalbelegung (ACN-Reihenfolge, 1-basiert für Reaper):
+//    1=W  2=Y  3=Z  4=X  5-9=2nd  10-16=3rd Order
+//  Kein Audiosignal wird verändert (reiner Analyzer).
+// ---------------------------------------------------------------
+
+slider1:0<0,15,1{W(ACN0), Y(ACN1), Z(ACN2), X(ACN3), V(ACN4), T(ACN5), R(ACN6), S(ACN7), U(ACN8), Q(ACN9), O(ACN10), M(ACN11), K(ACN12), L(ACN13), N(ACN14), P(ACN15)}>Kanal X (horizontal)
+slider2:3<0,15,1{W(ACN0), Y(ACN1), Z(ACN2), X(ACN3), V(ACN4), T(ACN5), R(ACN6), S(ACN7), U(ACN8), Q(ACN9), O(ACN10), M(ACN11), K(ACN12), L(ACN13), N(ACN14), P(ACN15)}>Kanal Y (vertikal)
+slider3:0.75<0.0,1.0,0.01>Nachleucht-Decay
+slider4:1.0<0.1,4.0,0.01>Zoom
+slider5:200<0,360,1>Farbton (Hue)
+slider6:1<0,1,1{Nein,Ja}>Korrelationsmeter anzeigen
+slider7:2048<256,8192,256>Puffergrösse (Samples)
+
+in_pin:1
+in_pin:2
+in_pin:3
+in_pin:4
+in_pin:5
+in_pin:6
+in_pin:7
+in_pin:8
+in_pin:9
+in_pin:10
+in_pin:11
+in_pin:12
+in_pin:13
+in_pin:14
+in_pin:15
+in_pin:16
+
+out_pin:1
+out_pin:2
+out_pin:3
+out_pin:4
+out_pin:5
+out_pin:6
+out_pin:7
+out_pin:8
+out_pin:9
+out_pin:10
+out_pin:11
+out_pin:12
+out_pin:13
+out_pin:14
+out_pin:15
+out_pin:16
+
+@init
+BUF_MAX = 8192;
+
+// Speicherbereiche
+buf_x = 0;
+buf_y = BUF_MAX;
+buf_pos = 0;
+buf_count = 0;
+
+ch_x = 0;
+ch_y = 3;
+decay = 0.75;
+zoom  = 1.0;
+base_hue = 200;
+show_corr = 1;
+buf_size = 2048;
+
+// Hilfsfunktionen für HSV→RGB werden in @gfx berechnet
+corr_val = 0;
+corr_smooth = 0;
+
+@slider
+ch_x     = slider1;
+ch_y     = slider2;
+decay    = slider3;
+zoom     = slider4;
+base_hue = slider5;
+show_corr = slider6;
+buf_size = slider7;
+buf_size = max(256, min(BUF_MAX, buf_size));
+
+@sample
+// Pass-through – kein Eingriff ins Audio
+// Samples in Ringpuffer schreiben
+// spl0..spl15 = Kanäle 1..16 in Reaper (0-basiert intern)
+
+// Kanalauswahl via ch_x / ch_y (0-basiert)
+ch_x == 0  ? sx = spl0  : ch_x == 1  ? sx = spl1  : ch_x == 2  ? sx = spl2  :
+ch_x == 3  ? sx = spl3  : ch_x == 4  ? sx = spl4  : ch_x == 5  ? sx = spl5  :
+ch_x == 6  ? sx = spl6  : ch_x == 7  ? sx = spl7  : ch_x == 8  ? sx = spl8  :
+ch_x == 9  ? sx = spl9  : ch_x == 10 ? sx = spl10 : ch_x == 11 ? sx = spl11 :
+ch_x == 12 ? sx = spl12 : ch_x == 13 ? sx = spl13 : ch_x == 14 ? sx = spl14 :
+sx = spl15;
+
+ch_y == 0  ? sy = spl0  : ch_y == 1  ? sy = spl1  : ch_y == 2  ? sy = spl2  :
+ch_y == 3  ? sy = spl3  : ch_y == 4  ? sy = spl4  : ch_y == 5  ? sy = spl5  :
+ch_y == 6  ? sy = spl6  : ch_y == 7  ? sy = spl7  : ch_y == 8  ? sy = spl8  :
+ch_y == 9  ? sy = spl9  : ch_y == 10 ? sy = spl10 : ch_y == 11 ? sy = spl11 :
+ch_y == 12 ? sy = spl12 : ch_y == 13 ? sy = spl13 : ch_y == 14 ? sy = spl14 :
+sy = spl15;
+
+buf_x[buf_pos] = sx;
+buf_y[buf_pos] = sy;
+buf_pos = (buf_pos + 1) % buf_size;
+buf_count < buf_size ? buf_count += 1;
+
+// Kreuzkorrelation (gleitender Mittelwert)
+corr_val = corr_val * 0.998 + sx * sy * 0.002;
+corr_smooth = corr_smooth * 0.99 + abs(sx * sx + sy * sy) * 0.01;
+
+@gfx 600 600
+
+// ── Hintergrund ─────────────────────────────────────────────
+gfx_r = 0.04; gfx_g = 0.04; gfx_b = 0.10; gfx_a = 1.0;
+gfx_rect(0, 0, gfx_w, gfx_h, 1);
+
+cx = gfx_w * 0.5;
+cy = gfx_h * 0.5;
+plot_r = min(cx, cy) * 0.82;
+
+// ── Gitternetz ───────────────────────────────────────────────
+gfx_r = 0.18; gfx_g = 0.18; gfx_b = 0.35; gfx_a = 0.8;
+gfx_circle(cx, cy, plot_r, 0);
+gfx_circle(cx, cy, plot_r * 0.5, 0);
+
+// Achsen
+gfx_r = 0.20; gfx_g = 0.20; gfx_b = 0.40; gfx_a = 1.0;
+gfx_line(cx - plot_r, cy, cx + plot_r, cy);
+gfx_line(cx, cy - plot_r, cx, cy + plot_r);
+
+// ── Achsenbeschriftungen ──────────────────────────────────────
+ch_names = "W Y Z X V T R S U Q O M K L N P";
+gfx_setfont(1, "Arial", 14, 'b');
+
+// X-Achse Label
+gfx_r = 0.6; gfx_g = 0.8; gfx_b = 1.0; gfx_a = 1.0;
+gfx_x = cx + plot_r + 6; gfx_y = cy - 7;
+ch_x == 0 ? gfx_printf("W") : ch_x == 1 ? gfx_printf("Y") : ch_x == 2 ? gfx_printf("Z") :
+ch_x == 3 ? gfx_printf("X") : ch_x == 4 ? gfx_printf("V") : ch_x == 5 ? gfx_printf("T") :
+ch_x == 6 ? gfx_printf("R") : ch_x == 7 ? gfx_printf("S") : ch_x == 8 ? gfx_printf("U") :
+ch_x == 9 ? gfx_printf("Q") : ch_x == 10 ? gfx_printf("O") : ch_x == 11 ? gfx_printf("M") :
+ch_x == 12 ? gfx_printf("K") : ch_x == 13 ? gfx_printf("L") : ch_x == 14 ? gfx_printf("N") :
+gfx_printf("P");
+
+gfx_x = cx - plot_r - 18; gfx_y = cy - 7;
+ch_x == 0 ? gfx_printf("W") : ch_x == 1 ? gfx_printf("Y") : ch_x == 2 ? gfx_printf("Z") :
+ch_x == 3 ? gfx_printf("X") : ch_x == 4 ? gfx_printf("V") : ch_x == 5 ? gfx_printf("T") :
+ch_x == 6 ? gfx_printf("R") : ch_x == 7 ? gfx_printf("S") : ch_x == 8 ? gfx_printf("U") :
+ch_x == 9 ? gfx_printf("Q") : ch_x == 10 ? gfx_printf("O") : ch_x == 11 ? gfx_printf("M") :
+ch_x == 12 ? gfx_printf("K") : ch_x == 13 ? gfx_printf("L") : ch_x == 14 ? gfx_printf("N") :
+gfx_printf("P");
+
+// Y-Achse Label
+gfx_r = 1.0; gfx_g = 0.6; gfx_b = 0.8; gfx_a = 1.0;
+gfx_x = cx - 7; gfx_y = cy - plot_r - 18;
+ch_y == 0 ? gfx_printf("W") : ch_y == 1 ? gfx_printf("Y") : ch_y == 2 ? gfx_printf("Z") :
+ch_y == 3 ? gfx_printf("X") : ch_y == 4 ? gfx_printf("V") : ch_y == 5 ? gfx_printf("T") :
+ch_y == 6 ? gfx_printf("R") : ch_y == 7 ? gfx_printf("S") : ch_y == 8 ? gfx_printf("U") :
+ch_y == 9 ? gfx_printf("Q") : ch_y == 10 ? gfx_printf("O") : ch_y == 11 ? gfx_printf("M") :
+ch_y == 12 ? gfx_printf("K") : ch_y == 13 ? gfx_printf("L") : ch_y == 14 ? gfx_printf("N") :
+gfx_printf("P");
+
+gfx_x = cx - 7; gfx_y = cy + plot_r + 4;
+ch_y == 0 ? gfx_printf("W") : ch_y == 1 ? gfx_printf("Y") : ch_y == 2 ? gfx_printf("Z") :
+ch_y == 3 ? gfx_printf("X") : ch_y == 4 ? gfx_printf("V") : ch_y == 5 ? gfx_printf("T") :
+ch_y == 6 ? gfx_printf("R") : ch_y == 7 ? gfx_printf("S") : ch_y == 8 ? gfx_printf("U") :
+ch_y == 9 ? gfx_printf("Q") : ch_y == 10 ? gfx_printf("O") : ch_y == 11 ? gfx_printf("M") :
+ch_y == 12 ? gfx_printf("K") : ch_y == 13 ? gfx_printf("L") : ch_y == 14 ? gfx_printf("N") :
+gfx_printf("P");
+
+// ── Lissajous-Punkte zeichnen ────────────────────────────────
+i = 0;
+total = min(buf_count, buf_size);
+i < total ?
+(
+  loop(total,
+    // Älteste Punkte zuerst → neueste obendrauf
+    age_idx = (buf_pos - total + i + buf_size) % buf_size;
+    px = buf_x[age_idx];
+    py = buf_y[age_idx];
+
+    // Alterung: ältere Punkte transparenter
+    alpha = (i / total);
+    bright = alpha * 0.9 + 0.1;
+
+    // Farbton dreht sich mit dem Alter leicht durch
+    hue = (base_hue + alpha * 60) % 360;
+    hue_norm = hue / 60;
+    hue_i = floor(hue_norm);
+    hue_f = hue_norm - hue_i;
+    sat = 0.85;
+    val = bright;
+    p = val * (1 - sat);
+    q = val * (1 - sat * hue_f);
+    t2 = val * (1 - sat * (1 - hue_f));
+
+    hue_i == 0 ? (cr = val; cg = t2;  cb = p) :
+    hue_i == 1 ? (cr = q;   cg = val; cb = p) :
+    hue_i == 2 ? (cr = p;   cg = val; cb = t2) :
+    hue_i == 3 ? (cr = p;   cg = q;   cb = val) :
+    hue_i == 4 ? (cr = t2;  cg = p;   cb = val) :
+                 (cr = val; cg = p;   cb = q);
+
+    gfx_r = cr; gfx_g = cg; gfx_b = cb;
+    gfx_a = decay < 0.5 ? alpha * alpha : alpha;
+
+    // Koordinaten → Pixel
+    sx2 = cx + px * plot_r * zoom;
+    sy2 = cy - py * plot_r * zoom;  // Y-Achse invertiert
+
+    // Punkt zeichnen (neuere etwas grösser)
+    dot_r = 0.8 + alpha * 1.2;
+    gfx_circle(sx2, sy2, dot_r, 1);
+
+    i += 1;
+  );
+);
+
+// ── Aktueller Punkt (leuchtet) ────────────────────────────────
+cur = (buf_pos - 1 + buf_size) % buf_size;
+cx2 = cx + buf_x[cur] * plot_r * zoom;
+cy2 = cy - buf_y[cur] * plot_r * zoom;
+gfx_r = 1.0; gfx_g = 1.0; gfx_b = 1.0; gfx_a = 1.0;
+gfx_circle(cx2, cy2, 3.5, 1);
+gfx_r = 0.8; gfx_g = 0.9; gfx_b = 1.0; gfx_a = 0.4;
+gfx_circle(cx2, cy2, 6, 0);
+
+// ── Korrelationsmeter ─────────────────────────────────────────
+show_corr == 1 ?
+(
+  norm_corr = corr_smooth > 0.00001 ? corr_val / corr_smooth : 0;
+  norm_corr = max(-1, min(1, norm_corr));
+
+  meter_x = 12;
+  meter_y = gfx_h * 0.15;
+  meter_h = gfx_h * 0.70;
+  meter_w = 14;
+
+  // Hintergrund
+  gfx_r = 0.1; gfx_g = 0.1; gfx_b = 0.2; gfx_a = 1.0;
+  gfx_rect(meter_x, meter_y, meter_w, meter_h, 1);
+
+  // Füllstand (Mitte = 0)
+  fill_center = meter_y + meter_h * 0.5;
+  fill_h = abs(norm_corr) * meter_h * 0.5;
+  norm_corr >= 0 ?
+  (
+    fill_y = fill_center - fill_h;
+    gfx_r = 0.2; gfx_g = 1.0; gfx_b = 0.5; gfx_a = 0.9;
+  ) :
+  (
+    fill_y = fill_center;
+    gfx_r = 1.0; gfx_g = 0.3; gfx_b = 0.2; gfx_a = 0.9;
+  );
+  gfx_rect(meter_x, fill_y, meter_w, fill_h, 1);
+
+  // Mittellinie
+  gfx_r = 0.8; gfx_g = 0.8; gfx_b = 0.8; gfx_a = 1.0;
+  gfx_line(meter_x, fill_center, meter_x + meter_w, fill_center);
+
+  // Label
+  gfx_setfont(1, "Arial", 11, 0);
+  gfx_r = 0.7; gfx_g = 0.7; gfx_b = 0.9; gfx_a = 1.0;
+  gfx_x = meter_x - 2; gfx_y = meter_y - 15;
+  gfx_printf("corr");
+  gfx_x = meter_x - 2; gfx_y = meter_y + meter_h + 3;
+  gfx_printf("%+.2f", norm_corr);
+);
+
+// ── Titelleiste ───────────────────────────────────────────────
+gfx_setfont(1, "Arial", 13, 'b');
+gfx_r = 0.55; gfx_g = 0.75; gfx_b = 1.0; gfx_a = 1.0;
+gfx_x = 6; gfx_y = 4;
+gfx_printf("ICST Ambisonics Lissajous");
+
+gfx_setfont(1, "Arial", 11, 0);
+gfx_r = 0.45; gfx_g = 0.55; gfx_b = 0.75; gfx_a = 1.0;
+gfx_x = 6; gfx_y = 20;
+gfx_printf("Zoom: %.1fx  Buf: %d  Decay: %.2f", zoom, buf_size, decay);

@@ -1,0 +1,50 @@
+# Cabbage -> ICST MultiEncoder Session
+
+This small session connects Cabbage/Csound with the ICST Ambisonics Plugins in REAPER.
+
+## Files
+
+- icst_cabbage_to_icst_multiencoder.csd
+
+## Concept
+
+The Cabbage plugin is not the Ambisonics encoder in this setup. It is a generative source and controller:
+
+Cabbage audio ch1/ch2
+  -> ICST MultiEncoder
+  -> Bformat Master
+  -> ICST Decoder / binaural monitoring
+
+At the same time, Cabbage sends OSC source positions to the ICST MultiEncoder:
+
+/icst/ambi/sourceindex/aed 1 azimuth elevation distance
+/icst/ambi/sourceindex/aed 2 azimuth elevation distance
+
+## REAPER Setup
+
+1. Install Cabbage and export icst_cabbage_to_icst_multiencoder.csd as a VST3 plugin.
+2. Create a REAPER track named Cabbage Sources.
+3. Set the track channel count to 8.
+4. Insert the exported Cabbage plugin on this track.
+5. Create or use an ICST MultiEncoder track with ICST_AmbiEncoder_Multi_8src.
+6. Route the Cabbage Sources track to the MultiEncoder track.
+7. In the ICST MultiEncoder, enable OSC input and set the input port to 50001.
+8. Route the MultiEncoder output to the Bformat Master.
+9. Route the Bformat Master to the ICST Decoder or binaural monitor.
+
+## What To Check
+
+- Cabbage audio source 1 arrives as ICST source index 1.
+- Cabbage audio source 2 arrives as ICST source index 2.
+- The ICST radar moves when Send OSC is enabled in Cabbage.
+- Loudspeaker and binaural monitoring remain separate branches.
+- Export is still done from the Bformat Master, not from the decoder output.
+
+## Workshop Use
+
+Use this session to demonstrate the boundary between systems:
+
+- Cabbage/Csound: synthesis, generative movement, source behavior
+- ICST MultiEncoder: spatial encoding, source management, OSC receiver
+- Bformat Master: production and archive signal
+- ICST Decoder: monitoring for a specific playback setup

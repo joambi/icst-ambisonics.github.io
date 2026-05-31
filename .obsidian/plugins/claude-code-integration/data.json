@@ -1,7 +1,7 @@
 {
   "backend": "claude",
-  "claudeCodePath": "",
-  "autoDetectPath": false,
+  "claudeCodePath": "/usr/local/bin/claude",
+  "autoDetectPath": true,
   "modelAlias": "",
   "opencodePath": "",
   "opencodeAutoDetect": true,
@@ -10,7 +10,7 @@
   "preserveCursorPosition": true,
   "timeoutSeconds": 300,
   "autoAcceptChanges": false,
-  "allowVaultAccess": true,
+  "allowVaultAccess": false,
   "enablePermissionlessMode": false,
   "anthropicBaseUrl": "",
   "anthropicAuthToken": "",

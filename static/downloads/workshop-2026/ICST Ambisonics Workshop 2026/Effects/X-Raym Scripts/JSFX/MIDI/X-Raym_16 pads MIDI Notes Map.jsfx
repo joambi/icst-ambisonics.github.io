@@ -1,0 +1,473 @@
+/**
+ * JSFX Name: 16 pads MIDI Notes Map
+ * About: Map 16 pads to specific notes
+ * Screenshot: https://cloud.extremraym.com/sharex/reascripts/6kMft2l.mp4
+ * Author: X-Raym
+ * Author URI: https://www.extremraym.com
+ * Donation: http://www.extremraym.com/en/donation
+ * Licence: GPL v3
+ * REAPER: 5.0
+ * Version: 1.21
+ * Provides:
+ *   [nomain] X-Raym_16 pads MIDI Notes Map.jsfx.rpl
+ *   [data] MIDINoteImages/mt-power-drum-kit.txt
+ *   [data] MIDINoteImages/NONE.txt
+ *   [nomain] Images/*.png
+ */
+
+/**
+ * Changelog:
+ * v1.21 (2024-11-18)
+  # Load images in Serialize block
+ * v1.20 (2024-11-18)
+  # Label changes
+  # NONE.txt
+  # C Major and C Natural Minor in presets
+ * v1.19 (2024-09-01)
+  # Presets update
+ * v1.18 (2024-07-12)
+  # Remanent shift fix
+ * v1.17 (2024-01-11)
+  # Fix notes sharps
+ * v1.16 (2023-07-11)
+  # Fix polyphony
+ * v1.15 (2023-03-09)
+  # Keep images proportion and center
+ * v1.14 (2022-09-10)
+  # Fix note-offs
+ * v1.13 (2022-03-25)
+  # Fix unwanted CC
+ * v1.12 (2021-12-11)
+  # Flexible width and height (non square design)
+ * v1.11.1 (2021-12-11)
+  + Shift+mouse_wheel for channel offset
+ * v1.11 (2021-12-11)
+  + Note channel mapping via Shift+Click (thx abaco!)
+ * v1.10 (2020-05-13)
+  + All Notes off if slider change
+ * v1.9.4 (2019-07-11)
+  # Presets update
+ * v1.9.3 (2019-07-10)
+  # Presets with image
+ * v1.9.2 (2019-07-08)
+  # Presets
+ * v1.9.1 (2019-07-08)
+  # Presets
+ * v1.9 (2019-07-07)
+  # Mouse wheel support
+ * v1.8 (2019-06-27)
+  # Remap active toggle, so you an check how some beats could be performed on your remapped pad.
+ * v1.7 (2019-06-27)
+  + Image support. Image file mapping have to be put in REAPER/Data/MIDINotesImages and should contains note number followed by filename with extension (36 kick.png). Images have to be put in /Images from the effect path.
+  # Fixed base note color offset
+  # minor UI tweaks
+ * v1.6 (2019-06-25)
+  + Better pad sizing
+ * v1.5 (2019-06-25)
+  + Nice colored pads
+  + Hide sliders, now offset with clicks
+  + Infos on Pad
+  + Pad brightness based on velocity
+ * v1.0 (2018-30-10)
+  + Initial Release
+ */
+
+desc:16 pads MIDI Notes Map
+
+slider1:0<0,16,1{Any,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}>Input Channel
+slider2:36<0,127,1>Pad 01 Input Note
+slider3:1<0,1,1{Inactive,Active}>Remap
+
+slider4:/MIDINoteImages:NONE.txt:Pads Image Mapping File
+slider5:0<0,1,1{---,Reload Now}>Reload Pads Images
+slider6:0<0,1,1{Notes Numbers,Images}>Display
+
+slider10:36<0,127,1>-Pad 01 note
+slider11:37<0,127,1>-Pad 02 note
+slider12:38<0,127,1>-Pad 03 note
+slider13:39<0,127,1>-Pad 04 note
+
+slider14:40<0,127,1>-Pad 05 note
+slider15:41<0,127,1>-Pad 06 note
+slider16:42<0,127,1>-Pad 07 note
+slider17:43<0,127,1>-Pad 08 note
+
+slider18:44<0,127,1>-Pad 09 note
+slider19:45<0,127,1>-Pad 10 note
+slider20:46<0,127,1>-Pad 11 note
+slider21:47<0,127,1>-Pad 12 note
+
+slider22:48<0,127,1>-Pad 13 note
+slider23:49<0,127,1>-Pad 14 note
+slider24:50<0,127,1>-Pad 15 note
+slider25:51<0,127,1>-Pad 16 note
+
+slider26:-1<-1,15,1>-Pad 01 channel
+slider27:-1<-1,15,1>-Pad 02 channel
+slider28:-1<-1,15,1>-Pad 03 channel
+slider29:-1<-1,15,1>-Pad 04 channel
+
+slider30:-1<-1,15,1>-Pad 01 channel
+slider31:-1<-1,15,1>-Pad 02 channel
+slider32:-1<-1,15,1>-Pad 03 channel
+slider33:-1<-1,15,1>-Pad 04 channel
+
+slider34:-1<-1,15,1>-Pad 01 channel
+slider35:-1<-1,15,1>-Pad 02 channel
+slider36:-1<-1,15,1>-Pad 03 channel
+slider37:-1<-1,15,1>-Pad 04 channel
+
+slider38:-1<-1,15,1>-Pad 01 channel
+slider39:-1<-1,15,1>-Pad 02 channel
+slider40:-1<-1,15,1>-Pad 03 channel
+slider41:-1<-1,15,1>-Pad 04 channel
+
+////////////////////////////////////////////////////////////////////////////////
+@init
+statNoteOn = $x90;
+statNoteOff = $x80;
+afterTouch = $xA0;
+
+file = -1;
+note_buf = 1000;
+
+last_notes_sliders = 2000;
+
+bemol = 0;
+
+// Thanks mschnell
+allOff1   = 0xB0;
+allOff2   = 0x7B;
+allOff3   = 0x00;
+holdOff1  = 0xB0;
+holdOff2  = 0x40;
+holdOff3  = 0x00;
+
+last_chan = slider1;
+last_pad_in = slider2;
+last_remap = slider3;
+
+i = 0;
+loop( 16,
+  last_notes_sliders[i] = slider( 10 + i );
+  i += 1;
+);
+
+slider_is_diff = 0;
+
+function SendAllNotesOff() (
+  outChannel = 0;
+  opos = mpos;
+  opos >= samplesblock-32 ? (
+    opos = samplesblock-33;
+  );
+  loop (16,
+    midisend(opos, holdOff1+outChannel, holdOff2, holdOff3);
+    opos +=1;
+    midisend(opos, allOff1+outChannel,  allOff2,  allOff3);
+    opos +=1;
+    outChannel += 1;
+  );
+);
+
+function ResetImages() local (i) (
+  i = 0;
+  loop( 127,
+    gfx_setimgdim(i,-1,-1);
+    i=i+1;
+  );
+);
+
+////////////////////////////////////////////////////////////////////////////////
+@slider
+inChannel = slider1 - 1;
+
+slider5 == 1 ? (
+  reload = 1;
+  slider5 = 0; sliderchange(slider5);
+);
+
+#imagepath = 300; // Address
+
+undef = 0;
+strcpy(undef, "[Undef]");
+memset(map, undef, 128);
+
+////////////////////////////////////////////////////////////////////////////////
+@serialize
+
+slider4 != file || reload == 1 ? (
+  ResetImages();
+  file = slider4;
+  handle = file_open(slider4);
+  handle >= 0 ? (
+    reload = 0;
+    file_text(handle) ? (
+      str = undef + 1;
+      while(file_avail(handle)) (
+        file_string(handle, #line);
+
+          // You could probably deal with line-endings more efficiently...
+          (match("%d %s\r\n", #line, note, str) || match("%d %s\n", #line, note, str) || match("%d %s*", #line, note, str) )&&
+          note >= 0 && note < 128 ? (
+            map[note] = str;
+            strcpy(#imagepath, "./Images/");
+            strcat(#imagepath, str);
+            gfx_loadimg(note, #imagepath);
+            str += 1;
+
+        );
+      );
+    );
+    file_close(handle);
+  );
+);
+
+////////////////////////////////////////////////////////////////////////////////
+@block
+
+while (
+
+  i = 0;
+  loop( 16,
+    last_notes_sliders[i] != slider( 10 + i ) ? (
+      slider_is_diff = 1;
+      last_notes_sliders[i] = slider( 10 + i );
+    );
+    i += 1;
+  );
+
+  // Not Off if Slider Change
+  last_chan != slider1 || last_pad_in != slider2 || last_remap != slider3 || slider_is_diff == 1 ? (
+    SendAllNotesOff();
+    slider_is_diff = 0;
+  );
+
+last_chan = slider1;
+last_pad_in = slider2;
+last_remap = slider3;
+
+i = 0;
+loop( 16,
+  last_notes_sliders[i] = slider( 10 + i );
+  i += 1;
+);
+slider_is_diff = 0;
+
+  midirecv(offset,msg1,note,vel) ? (
+
+    // Extract message type and channel
+    status = msg1 & $xF0;
+    channel = msg1 & $x0F;
+
+    // Is it on our channel?
+    channel == inChannel || inChannel == -1 ? (
+
+      // Is it a note event?
+      status == statNoteOn || status == statNoteOff || status == afterTouch ? (
+
+        status == statNoteOff || vel == 0 ? note_buf[note] = 0 : note_buf[note] = vel;
+
+        // If note is in Makey Makey MIDI Range
+        note >= slider2 && note <= slider2+15  ? (
+          note_in = note;
+          slider3 ? (
+            cur_note = note - slider2;
+            note = slider( 10 + cur_note ); // Get Note Out
+            outChannel = slider( 10 + 16 + cur_note); // Get Channel Out
+            msg1 = status + (outChannel == -1 ? channel : outChannel);
+          );
+
+        );
+
+      );
+
+    );
+
+    midisend(offset, msg1, note, vel);
+
+    1; // Force loop to continue until all messages have been processed
+
+  );
+
+);
+
+////////////////////////////////////////////////////////////////////////////////
+@gfx 420 480
+
+gfx_size = min(gfx_w, gfx_h);
+
+gfx_setfont(1,"Tahoma Bold",gfx_size / 4 / 3);
+gfx_setfont(2,"Tahoma Bold",gfx_size / 4 / 5);
+
+function uix_getPitName(pit, bemol) (
+  pit = pit == 0 ? "C" :
+        pit == 1 ? (bemol ? "Db" : "C#" ) :
+        pit == 2 ? "D" :
+        pit == 3 ? (bemol ? "Eb" : "D#" ) :
+        pit == 4 ? "E" :
+        pit == 5 ? "F" :
+        pit == 6 ? (bemol ? "Gb" : "F#" ) :
+        pit == 7 ? "G" :
+        pit == 8 ? (bemol ? "Ab" : "G#" ) :
+        pit == 9 ? "A" :
+        pit == 10 ? (bemol ? "Bb" : "A#" ) :
+        pit == 11 ? "B" ;
+  strcpy(#,pit);
+);
+
+function uix_Hue2RGB(p, q, t) local(o, h) (
+  t < 0 ? t += 360; t > 360 ? t -= 360;
+  o = t < 60 ? p + (q - p) * t / 60:
+  t < 180 ? q:
+  t < 240 ? p + (q - p) * (240 - t) / 60: p;
+  o;
+);
+
+function uix_HSL2RGB(h,s,l) local(q,p,h,r,g,b)(
+  s = min(max(s,0),1);
+  l = min(max(l,0),1);
+  !s ? r=g=b=l : !l ? r=g=b=0 : l == 1 ? r=g=b=1 :(
+    q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    p = 2 * l - q;
+    r = uix_Hue2RGB(p, q, h + 120);
+    g = uix_Hue2RGB(p, q, h);
+    b = uix_Hue2RGB(p, q, h - 120);
+  );
+  gfx_r = r; gfx_g = g; gfx_b = b;
+);
+
+function draw_pads() local (a,i,border,pad,pad_w,j, hue, pad_note_in_str_len, dest_w, dest_h, ratio) (
+  x_offset = 0;
+  i = 3;
+  border = 1;
+  pad = 0; // zero based, up to 15
+  columns = 4;
+  rows = 4;
+  i = rows-1;
+  pad_w = floor(gfx_w / columns);
+  pad_h = floor(gfx_h / rows );
+  pad_mouse = 0;
+  loop( rows,
+    j = 0;
+    loop( columns,
+      //note_in >= slider2 && note_in <= slider2+15 && pad == note_in - slider2 ? (
+      slider3 ? (
+        highlight = slider2 + pad;
+      ):(
+        highlight = slider(pad+10);
+      );
+
+      note_buf[highlight] ? (
+        gfx_a = 0.5+note_buf[highlight]/127/2; // From 0.5, increase based on velocity
+        scale = note_buf[highlight]/127;
+      ):(
+        gfx_a = 0.5;
+        scale = 0;
+      );
+
+      hue = (slider(pad+10)+12)%16/16*360; // value of the pad, + offset, modulo 16, percentage, multiplied by hue total val
+
+      uix_HSL2RGB(hue,1,0.5);
+      gfx_rect(j * pad_w, i * pad_h, pad_w - border, pad_h - border );
+
+      x1 = j * pad_w;
+      x2 = (j+1) * pad_w;
+      y1 = i * pad_h;
+      y2 = (i+1) * pad_h;
+      mouse_x > x1 && mouse_x < x2 && mouse_y > y1 && mouse_y < y2 ? pad_mouse = pad+1;
+
+      gfx_getimgdim(slider(pad+10), w, h);
+      (slider6 == 0 || w == 0) && slider2+pad <= 127 ? (
+
+        gfx_a = 0.7;
+        uix_HSL2RGB(360,10,10);
+        gfx_x = j * pad_w + 10;
+        gfx_y = i * pad_h + 10;
+
+        gfx_setfont(2);
+        gfx_drawstr(sprintf(#, "%d", pad+1));
+
+        gfx_setfont(1);
+        gfx_measurestr(sprintf(#, "%d", slider(pad+10)),w,h);
+        gfx_x = j * pad_w + pad_w / 2 - w / 2;
+        gfx_y = i * pad_h + pad_h / 2 - h / 2;
+        gfx_drawstr(sprintf(#, "%d", slider(pad+10)));
+
+        gfx_setfont(2);
+        note_name = uix_getPitName(slider(pad+10)%12, bemol);
+        gfx_y = i * pad_h + pad_h / 2 + h / 2;
+        gfx_measurestr(note_name,w,h);
+        gfx_x = j * pad_w + pad_w / 2 - w / 2;
+        gfx_drawstr(note_name);
+
+
+        out_channel_num = slider(pad+10+16);
+        out_channel_num != -1 ? (
+          out_channel = sprintf(#, "%d", out_channel_num+1);
+          gfx_measurestr(out_channel,w,h);
+          gfx_y = i * pad_h + pad_h - h - 5;
+          gfx_x = j * pad_w + pad_w - w - 5;
+          gfx_drawstr(out_channel);
+        );
+
+        gfx_setfont(2);
+        pad_note_in = sprintf(#, "%d", slider2+pad);
+        gfx_measurestr(pad_note_in, h, w);
+        pad_note_in_str_len = strlen(pad_note_in);
+        gfx_x = j * pad_w + pad_w - w- w/(4-pad_note_in_str_len);
+        gfx_y = i * pad_h + 10;
+        gfx_drawstr(pad_note_in);
+
+      ):( // Images
+          gfx_getimgdim(slider(pad+10), w, h);
+          dest_w = pad_w;
+          dest_h = pad_h;
+          ratio = w/h;
+          dest_w / dest_h > ratio ? (
+            dest_w = dest_h*ratio;
+          ):(
+            dest_h = dest_w*ratio;
+          );
+          dest_x = j * pad_w + (pad_w-dest_w)/2;;
+          dest_y = i * pad_h + (pad_h-dest_h)/2;
+          gfx_blit(slider(pad+10), 1, 0, 0, -scale, w, h, dest_x, dest_y, dest_w, dest_h, 0, 0); // scale is in fact use for offset
+
+      );
+      j += 1;
+      pad += 1;
+    );
+    i -= 1;
+  );
+
+);
+
+mouse_cap > last_mouse_cap && pad_mouse > 0 ? (
+  offset = 0;
+  mouse_cap & 1 == 1 ? offset = 1;
+  mouse_cap & 2 == 2 ? offset = -1;
+  mouse_cap & 8 == 8 ? ( // shift
+    slider(pad_mouse+10+16-1) = min(max(slider(pad_mouse+10+16-1) + offset,-1),15);
+  ):(
+    slider(pad_mouse+10-1) = min(max(slider(pad_mouse+10-1) + offset,0),127);
+  );
+);
+
+mouse_wheel != 0 && pad_mouse > 0 ? (
+  offset = 0;
+  mouse_wheel > 0 ? offset = 1;
+  mouse_wheel < 0 ? offset = -1;
+  offset != 0 ? (
+    char = gfx_getchar(); // for mouse_cap detection
+    mouse_cap & 8 == 8 ? ( // shift
+      slider(pad_mouse+10+16-1) = min(max(slider(pad_mouse+10+16-1) + offset,-1),15);
+    ):(
+      slider(pad_mouse+10-1) = min(max(slider(pad_mouse+10-1) + offset,0),127);
+    );
+  );
+  mouse_wheel = 0;
+);
+
+last_mouse_cap = mouse_cap;
+
+draw_pads();

@@ -1,0 +1,31 @@
+/**
+ * ReaScript Name: Remove content of time selection preserving time sleection and relative play cursor in place
+ * Author: X-Raym
+ * Author URI: https://www.extremraym.com
+ * Reposotory: GitHub > X-Raym > EEL Scripts for Cockos REAPER
+ * Repository URI: https://github.com/X-Raym/REAPER-ReaScripts
+ * Licence: GPL v3
+ * REAPER: 4.76
+ * Version: 1.0.1
+*/
+
+/**
+ * Changelog:
+ * v1.0 (2015-06-07)
+  + Initial Release
+ */
+
+GetSet_LoopTimeRange2(0, 0, 0, start_time, end_time, 0);
+duration = end_time - start_time;
+cur_pos=GetCursorPosition();
+PreventUIRefresh(1);
+GetPlayPosition2() > end_time ?(
+  Main_OnCommand(40201, 0);
+  time = GetPlayPosition2Ex(0);
+  SetEditCurPos2(0, time - duration, 0, 1);
+  SetEditCurPos2(0, cur_pos, 0, 0);
+):(
+  Main_OnCommand(40201, 0);
+);
+GetSet_LoopTimeRange2(0, 1, 0, start_time, end_time, 0);
+PreventUIRefresh(-1);

@@ -73,7 +73,7 @@
   "url": "{{ .Permalink }}",
   "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z" }}",
-  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify | safeJS }},
+  "inLanguage": {{ .Site.Language.Locale | default "en" | jsonify | safeJS }},
   "author": {
     "@type": "Organization",
     "@id": "{{ .Site.BaseURL }}#organization",
@@ -112,7 +112,7 @@
   "url": "{{ .Permalink }}",
   "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z" }}",
-  "inLanguage": {{ .Site.LanguageCode | default "en" | jsonify | safeJS }},
+  "inLanguage": {{ .Site.Language.Locale | default "en" | jsonify | safeJS }},
   "isFamilyFriendly": true,
   "wordCount": {{ .WordCount }},
   "author": {

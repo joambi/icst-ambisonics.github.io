@@ -1,0 +1,1571 @@
+// @description ReaPad
+// @author Rek's Effeks
+// @version 1.5.71
+// @changelog fix Turing-Complete FX display after project load
+// @about
+//   Hotplug-enabled gamepad controller script for Reaper. Requires SWS extension.
+//
+//   Controls:
+//
+//   - A - redo
+//   - B - undo
+//   - X - record
+//   - Y - play/stop
+//   - Bumpers - skip the cursor between markers
+//   - Triggers - scrub the playhead
+//   - Main/guide button - all notes off + reset midi controllers
+//   - D-pad vertical - switch track between mute/normal/solo (hold Main to pull all tracks)
+//   - D-pad horizontal - select track (hold Main to skip to first or last)
+//   - Right stick - edit track volume and pan
+//   - Left stick - edit FX wet and designated parameters
+//
+//   To reset a track's pan or volume, hold down the right stick button and press the axis you want to reset on the d-pad - vertical for volume, horizontal for pan.
+//
+//   SELECT button plus:
+//   - A - new track
+//   - B - delete selected track
+//   - X - record-arm mode
+//   - Y (or RB) - tap tempo
+//   - D-pad down - smooth delete
+//   - D-pad up - smooth copy
+//
+//   When in record-arm mode:
+//   - A - arm selected track on input 1
+//   - X - arm selected track on input 2
+//   - Y - disarm track
+//   - B - cancel
+//   - MAIN - disarm all tracks
+//   - D-pad up - arm smooth copy
+//   - D-pad down - arm smooth delete
+//
+//   Smooth edits are your way of copying and deleting sections of the project. Smooth delete is simple: with a track selected, hold SELECT + DOWN on the D-pad while the project is playing.
+//   Everything that tries to play on the selected track while the button is down will be deleted. You can also arm smooth-delete by pressing down on the D-pad while in record-arm mode. Then,
+//   when you press play, smooth delete will begin immediately. To stop it, you can stop the playback, or you can hold AND THEN RELEASE select + down again. (This may take a bit of getting
+//   used to - remember that smooth edits normally happen only with the buttons held down, so pressing them here is simply picking up the slack.)
+//   Smooth copy is much the same as smooth delete, except that you must first select a focus point (a place to copy from - a specific time on a specific track) before you begin. You can set the focus
+//   point with MAIN + Y. Smooth copy copies elements relatively, from the focus point to your start point. This means you can set the focus point at the beginning of a chorus, then play from
+//   the start of the next chorus and just copy the whole thing down. (Unfortunately, due to technical limitations, previewing smooth copy edits is probably impossible.)
+//
+//   START button plus:
+//   - A - new marker at playhead (snapped to grid)
+//   - B - delete closest marker
+//   - X - time-select mode
+//   - Y - toggle repeat
+//   - MAIN - snap cursor to grid
+//   - Bumpers - skip to start or end of project
+//   - D-pad horizontal - enable/disable pre-roll before record (left means on - "start playback earlier")
+//   - D-pad vertical - enable/disable metronome (up means on)
+//
+//   When in time-select mode, you can marker-skip or scrub to one of your endpoints using the bumpers and triggers, then press A to confirm it. Use the same controls to select and confirm your second point, or press B to cancel anytime. Your previous edit position will restore.
+//
+//   MAIN (aka GUIDE or MODE) button plus:
+//   - Right bumper - graft in selection time (extend project)
+//   - Left bumper - chop out selection time (shorten project)
+//   - X - begin quick edit
+//   - A - do last quick edit again (on newly selected track)
+//   - B - invert last quick edit
+//
+//   Quick edit is the main editing control you get here. It allows you to move a section of the project from its original point (the point in the project at which
+//   you pressed quick edit) to any other point in time (the one at which you press A to confirm the edit). The project contents will then move either earlier or
+//   later to match the new "corrected" point, and the space in between the points will either be chopped (fully removed) or grafted (filled with emptiness) to match.
+//   Works the same as MAIN + bumpers. Modify the confirmation with START (that is, MAIN + X, then START + A) to affect only markers (regions not supported), or SELECT
+//   to affect only items on selected tracks.
+//   But what if you only needed to nudge one transient? Well, you've already moved everything once, so just scrub to the other side and press MAIN + B
+//   to "invert" the edit you just made - which will pull everything after it, back to where it was before.
+//
+//   LEFT STICK button plus:
+//   - Bumpers - cycle between configured FX on selected tracks
+//   - A - add new effect layer to selected tracks
+//   - B - delete current effect on selected tracks
+//   - X - copy FX chain from selected track
+//   - Y - paste FX chain
+//   - D-pad vertical - switch between controlling FX layers
+//
+//   ReaPad version 1.4 introduces FX control, which allows you to switch between a favored few effects and have two-axis control of each using the left analog stick - the
+//   horizontal axis controls a single parameter of your choice, and the vertical axis controls the wet mix. It comes preconfigured with a few stock effects, stored in the
+//   ExtState configuration file (reaper-extstate.ini, at least on my computer), and it's encouraged you edit the list with your favorites. You must restart Reaper to save
+//   any manual changes. The format is EffectName|parameter,Effect2|parameter, etc.
+//   Hold down the MAIN button while moving the stick for finer control over the two axes.
+//
+//   More:
+//   - Start + Select + Main - save
+//   - Main + Start + B - empty out time selection
+//   - Main + Start + Y - duplicate time selection at edit cursor
+//
+//   ReaPad can normally only save the project if it's already been saved (i.e. has a known filename). However, if you also use my Turing-Complete web interface, ReaPad
+//   will auto-name a new project and save it the way TC expects.
+
+
+
+guid       =  #guid;  // strings/array addresses
+os         =  #os;
+fx_options =  #fx;
+backup     =  #fxtwo;
+effect     =  #effect;
+param      =  #param;
+razordel   =  #delete;
+razorcpy   =  #copy;
+turingfx   =  #turingfx;
+newaxis    =  0;
+oldaxis    =  50;
+newpov     =  100;
+oldpov     =  150;
+oldfunc    =  200;  // last frame's triggers & dpads
+Li         =  250;  // last input tracker (used for distinguishing action from modifier)
+// Li[] = mask of which buttons changed most recently
+// Li[1] = mask of were they pressed or released?
+lastqedit  =  300;
+fxcycle    =  400;
+GetOS(#os);
+FocusTrack =  -1;
+
+// dealing with ExtStates
+HasExtState("ReaPad", "RightStickDeadzone") ? (
+  GetExtState(#RDeadzone,"ReaPad","RightStickDeadzone");
+  RDz =  parse_timestr_len(#RDeadzone, 0, 3); // only str -> float conversion i can think of
+):(
+  SetExtState("ReaPad", "RightStickDeadzone", "0.1", 1);
+  RDz = 0.1;
+);
+HasExtState("ReaPad", "LeftStickDeadzone") ? (
+  GetExtState(#LDeadzone,"ReaPad","LeftStickDeadzone");
+  LDz =  parse_timestr_len(#LDeadzone, 0, 3); // only str -> float conversion i can think of
+):(
+  SetExtState("ReaPad", "LeftStickDeadzone", "0.1", 1);
+  LDz = 0.1;
+);
+HasExtState("ReaPad", "FXCycle") ? (
+  GetExtState(#fx,"ReaPad","FXCycle");
+):(
+  SetExtState("ReaPad", "FXCycle", "JS: Chorus|Length,Delay (Floaty)|Delay,ReaPitch|semitones", 1);
+  GetExtState(#fx,"ReaPad","FXCycle");
+);
+
+// parse fx configuration string
+x = fxcycle-3;
+y = fxcycle-2;
+n = 0;
+ind = fxcycle;
+while(
+  match("*,*",#fx) ? ( // if there's a comma,
+    match("%{x}S|%{y}S,*",#fx); // first string | second string , more
+  ):(
+    match("%{x}s|%{y}s",#fx); // first string | second string
+  );
+  !match("*,%s",#fx) ? (
+    fail = 1;
+  );
+  match("*?,%0{#fxtwo}S",#fx); // remove everything up to first comma
+  strcpy(#fx,#fxtwo);
+  strcpy(ind, x);
+  strcpy(ind+1, y);
+  ind += 2;
+
+  n += 1;
+  match("*|*",#fx) && !fail; // keep going if there's still more
+);
+fxcycle[] = n;
+
+
+
+
+function TRIGGERS() // triggers & d-pad behave differently on win vs linux
+(
+  match("Win*",#os) ? (
+    newaxis[2]; // they're one axis on Win
+  ):(
+    ( newaxis[2]-newaxis[5] ) /2; // two separate axes on Linux
+  );
+);
+
+function DPAD_H()
+(
+  match("Win*",#os) ? (
+    newpov[0] == 655.35 ? 0 : sin( newpov[0] * $pi/180 );
+  ):(
+    newaxis[6];
+  );
+);
+
+function DPAD_V()
+(
+  match("Win*",#os) ? (
+    newpov[0] == 655.35 ? 0 : -cos( newpov[0] * $pi/180 );
+  ):(
+    newaxis[7];
+  );
+);
+
+function refresh_funcs()
+(
+  oldfunc[0] = TRIGGERS();
+  oldfunc[1] = DPAD_H();
+  oldfunc[2] = DPAD_V();
+);
+
+function reload(xbox, fromscratch)
+(
+  joystick_update(xbox);
+  i = 0;
+  loop(numaxis,
+    newaxis[i]   = joystick_getaxis(xbox, i);
+    fromscratch ? oldaxis[i] = newaxis[i];
+    i += 1;
+  );
+  i = 0;
+  loop(numpov,
+    newpov[i]    = joystick_getpov(xbox, i);
+    fromscratch ? oldpov[i] = newpov[i];
+    i += 1;
+  );
+  buttons = joystick_getbuttonmask(xbox);
+  fromscratch ? oldbuttons = buttons;
+  fromscratch ? refresh_funcs();
+);
+
+match("Win*",#os) ? (
+  // Windows bindings
+  BUTTON_A = 1;
+  BUTTON_B = 2;
+  BUTTON_X = 4;
+  BUTTON_Y = 8;
+  BUTTON_LB = 16;
+  BUTTON_RB = 32;
+  BUTTON_SELECT =   64;
+  BUTTON_START  =  128;
+  BUTTON_JOY_L  =  256;
+  BUTTON_JOY_R  =  512;
+  BUTTON_MAIN   = 1024;
+
+  MODIFIER_BLOCK = 2048;
+  // dpad is on a POV for windows
+  // button entry is only for input tracking
+
+  JOY_L_H  = 0;
+  JOY_L_V  = 1;
+  // triggers;
+  JOY_R_H  = 3;
+  JOY_R_V  = 4;
+):(
+  // Linux bindings
+  BUTTON_A = 1;
+  BUTTON_B = 2;
+  BUTTON_X = 4;
+  BUTTON_Y = 8;
+  BUTTON_LB = 16;
+  BUTTON_RB = 32;
+  BUTTON_SELECT =   64;
+  BUTTON_START  =  128;
+  BUTTON_MAIN   =  256; // last 3 are different
+  BUTTON_JOY_L  =  512;
+  BUTTON_JOY_R  = 1024;
+
+  MODIFIER_BLOCK = 2048;
+  // only used for input tracking
+
+  JOY_L_H  = 0;
+  JOY_L_V  = 1;
+  // left trigger;
+  JOY_R_H  = 3;
+  JOY_R_V  = 4;
+  // right trigger;
+  // dpad horiz;
+  // dpad vert;
+);
+
+function str(n)
+(
+  x = #;
+  sprintf(x,"%g", n);
+  x;
+);
+
+function r(command)
+(
+  Main_OnCommand(command, 0);
+);
+
+function n(command)
+(
+  Main_OnCommand( NamedCommandLookup(command), 0);
+);
+
+function nw(button) // button was just pressed?
+(
+  (buttons & button) && !(oldbuttons & button);
+);
+
+function b(button) // button is down?
+(
+  (buttons & button);
+);
+
+function off(button) // button was pressed then released on its own?
+(
+  (Li[] & button) && (Li[1] & button) && !(buttons & button);
+  // button is pressed in recent frame's changes and it's not pressed anymore
+);
+
+function reev() // reevaluate last input
+(
+  buttons ~ oldbuttons ? ( // if there were changes,
+    Li[] = buttons ~ oldbuttons; // record only the changes
+    Li[1] = Li[] & buttons; // are they pressed now or released?
+  );
+);
+
+function track_audio_level(direction) // mute <-> normal <-> solo
+(
+  direction > 0 ? (
+    !GetToggleCommandState(6) ? (
+      !GetToggleCommandState(7) ? (
+        r(7);
+      );
+    ):(
+      r(6);
+    );
+  ):(
+    !GetToggleCommandState(7) ? (
+      !GetToggleCommandState(6) ? (
+        r(6);
+      );
+    ):(
+      r(7);
+    );
+  );
+);
+
+function time_now()
+(
+  GetPlayState() & 1 ? (
+    GetPlayPosition();
+  ):(
+    GetCursorPosition();
+  );
+);
+
+function chop_graft_markers(graft, FirstTime, SecondTime) // chop out (shorten) or graft in (extend) markers by time selection
+(
+  Undo_BeginBlock();
+  ( FirstTime == SecondTime && SecondTime == 0 ) ? (
+    GetSet_LoopTimeRange(0, 0, time1, time2, 1);
+  ):(
+    time1 = min(FirstTime,SecondTime);
+    time2 = max(FirstTime,SecondTime);
+  );
+  section_length = time2 - time1;
+  CountProjectMarkers(0, num_markers);
+  graft ? ( // are we ADDING time or subtracting it?
+    i = num_markers; // if adding time,
+    loop(num_markers,
+      marker = GetRegionOrMarker(0, i,"");
+      orig_time = GetRegionOrMarkerInfo_Value(0, marker, "D_STARTPOS");
+      orig_time >= time1 ? ( // move all markers after the start of time selection
+        SetRegionOrMarkerInfo_Value(0, marker, "D_STARTPOS", orig_time + section_length);
+      );
+      i -= 1;
+    );
+  ):( // if subtracting time,
+    i = num_markers;
+    loop(num_markers, // start by deleting all markers INSIDE the time selection
+      marker = GetRegionOrMarker(0, i,"");
+      orig_time = GetRegionOrMarkerInfo_Value(0, marker, "D_STARTPOS");
+      ( time2 >= orig_time && orig_time > time1 ) ? (
+        DeleteProjectMarkerByIndex(0, i);
+      );
+      i -= 1;
+    );
+    CountProjectMarkers(0, num_markers);
+    i = 0;
+    loop(num_markers, // then move all markers beyond it
+      marker = GetRegionOrMarker(0, i,"");
+      orig_time = GetRegionOrMarkerInfo_Value(0, marker, "D_STARTPOS");
+      orig_time > time1 ? (
+        SetRegionOrMarkerInfo_Value(0, marker, "D_STARTPOS", orig_time - section_length);
+      );
+      i += 1;
+    );
+  );
+  r(40898); // renumber markers etc
+  graft ? (
+    Undo_EndBlock("Graft time selection (markers)", 0);
+  ):(
+    Undo_EndBlock("Chop time selection (markers)", 0);
+  );
+);
+
+
+function chop_graft_trackitems(graft, FirstTime, SecondTime)
+( // for all selected tracks, chop out or graft in time selection
+  Undo_BeginBlock();
+  ( FirstTime == SecondTime && SecondTime == 0 ) ? (
+    GetSet_LoopTimeRange(0, 0, time1, time2, 1);
+  ):(
+    time1 = min(FirstTime,SecondTime);
+    time2 = max(FirstTime,SecondTime);
+  );
+  section_length = time2 - time1;
+  num_items = CountMediaItems(0);
+  tracks_seld = CountSelectedTracks(0);
+  graft ? ( // are we ADDING time or subtracting it?
+    i = num_items-1; // if adding time, start by splitting all relevant items at time1
+    loop(num_items,
+      item = GetMediaItem(0, i);
+      t = tracks_seld-1;
+      loop(tracks_seld,
+        GetSelectedTrack(0, t) == GetMediaItem_Track(item) ? (
+          SplitMediaItem(GetMediaItem(0, i), time1);
+        );
+        t -=1;
+      );
+      i -= 1;
+    );
+    num_items = CountMediaItems(0);
+    i = num_items-1; // then move em all over by section_length
+    loop(num_items,
+      item = GetMediaItem(0, i);
+      t = tracks_seld-1;
+      loop(tracks_seld,
+        pos = GetMediaItemInfo_Value(item, "D_POSITION");
+        ( GetSelectedTrack(0, t) == GetMediaItem_Track(item) && pos >= time1 ) ? (
+          SetMediaItemInfo_Value(item, "D_POSITION", pos + section_length);
+        );
+        t -=1;
+      );
+      i -= 1;
+    );
+  ):( // if subtracting time,
+    i = num_items-1; // start by splitting all relevant items at BOTH time1 and time2
+    loop(num_items,
+      item = GetMediaItem(0, i);
+      t = tracks_seld-1;
+      loop(tracks_seld,
+        GetSelectedTrack(0, t) == GetMediaItem_Track(item) ? (
+          SplitMediaItem(GetMediaItem(0, i), time2);
+          SplitMediaItem(GetMediaItem(0, i), time1);
+        );
+        t -=1;
+      );
+      i -= 1;
+    );
+    num_items = CountMediaItems(0);
+    i = num_items-1; // then delete all of em within time selection
+    loop(num_items,
+      item = GetMediaItem(0, i);
+      t = tracks_seld-1;
+      loop(tracks_seld,
+        pos = GetMediaItemInfo_Value(item, "D_POSITION");
+        ( GetSelectedTrack(0, t) == GetMediaItem_Track(item) && pos >= time1 && pos < time2) ? (
+          DeleteTrackMediaItem( GetSelectedTrack(0, t), item );
+        );
+        t -=1;
+      );
+      i -= 1;
+    );
+    num_items = CountMediaItems(0);
+    i = 0; // then move the rest all over by section_length
+    loop(num_items,
+      item = GetMediaItem(0, i);
+      t = tracks_seld-1;
+      loop(tracks_seld,
+        pos = GetMediaItemInfo_Value(item, "D_POSITION");
+        ( GetSelectedTrack(0, t) == GetMediaItem_Track(item) && pos >= time2 ) ? (
+          SetMediaItemInfo_Value(item, "D_POSITION", pos - section_length);
+        );
+        t -=1;
+      );
+      i += 1;
+    );
+  );
+  UpdateArrange();
+  graft ? (
+    Undo_EndBlock("Graft time selection (items on track)", 0);
+  ):(
+    Undo_EndBlock("Chop time selection (items on track)", 0);
+  );
+);
+
+function correct_dz(amt, deadzone) // scale input val to full range
+(
+  ( abs(amt) - deadzone ) / ( 1 - deadzone ) * sign(amt);
+);
+
+function nudge_pan(amt)
+(
+  tracks_seld = CountSelectedTracks(0);
+  i = 0;
+  loop(tracks_seld,
+    track = GetSelectedTrack(0, i);
+    GetTrackUIVolPan(track, volume, pan);
+    pan += 0.1*amt;
+    pan = max(-1, min(1, pan));
+    CSurf_OnPanChange(track, pan, 0);
+    i += 1;
+  );
+);
+
+function nudge_vol(amt)
+(
+  tracks_seld = CountSelectedTracks(0);
+  i = 0;
+  loop(tracks_seld,
+    track = GetSelectedTrack(0, i);
+    GetTrackUIVolPan(track, vol, pan);
+    vol > 1 ? ( // adaptively nudge depending on the current value
+      CSurf_OnVolumeChange(track, 0.5*amt, 1);
+    ):(
+      vol < 0.5 ? (
+        CSurf_OnVolumeChange(track, 3*amt, 1);
+      ):(
+        CSurf_OnVolumeChange(track, amt, 1);
+      );
+    );
+    i += 1;
+  );
+);
+
+function tcfx()
+( // turing-complete - update track FX
+  count = CountTracks(0);
+  strcpy(#turingfx,"");
+  temp = #temp;
+  temp2 = #temp2;
+  i = 0;
+  loop(count,
+    track = GetTrack(0, i);
+    fxn = TrackFX_GetCount(track) - FXOffset;
+    fxc = TrackFX_GetCount(track);
+    fxc ? (
+      TrackFX_GetFXName(track, fxn-1, #temp);
+      match("+?: %{temp2}S",#temp);
+      #turingfx += str(fxn);
+      #turingfx += "/";
+      #turingfx += str(fxc);
+      #turingfx += ": ";
+      #turingfx += #temp2;
+      #turingfx += ",";
+    ):(
+      #turingfx += "No FX,";
+    );
+    i += 1;
+  );
+  SetExtState("Fanciest","TrackFX",#turingfx,0);
+);
+
+function tcsl()
+( // turing-complete - update track selection
+  n("_RS9f79e20ed4fb38201ca57ed8cbec8d2176d4288b");
+  CountTracks(0) ? (
+    GetExtState(#temp, "Fanciest", "TrackFX");
+    match("rerun",#temp) ? (
+      tcfx();
+    );
+  );
+);
+
+function reverse_fx_lookup(fxname)
+(
+  i = 0;
+  output = 0;
+  loop(fxcycle[],
+    ind = fxcycle + i;
+    temp = #temp;
+    strcpy(#temp, "*");
+    strcat(#temp,ind);
+    strcat(#temp,"*");
+    matchi(#temp, fxname) ? (
+      output = ind;
+    );
+    i += 2;
+  );
+  output;
+);
+
+function reverse_param_lookup(track, fxn)
+(
+  TrackFX_GetFXName(track, fxn, #fxname); // match current fx to the table
+  i = 0;
+  inter = 0;
+  loop(fxcycle[],
+    ind = fxcycle + i;
+    temp = #temp;
+    strcpy(#temp, "*");
+    strcat(#temp,ind);
+    strcat(#temp,"*");
+    matchi(#temp, #fxname) ? (
+      inter = ind;
+    );
+    i += 2;
+  );
+  inter != 0 ? ( // then return index of designated parameter
+    inter += 1;
+    param = #param;
+    strcpy(#param, "*");
+    strcat(#param, inter);
+    strcat(#param, "*");
+    params = TrackFX_GetNumParams(track, TrackFX_GetCount(track)-1);
+    p = -1;
+    stop = 0;
+    while(
+      p += 1;
+      !TrackFX_GetParamName(track, fxn, p, #buf) ? (
+        stop = 1;
+      );
+      !matchi(param, #buf) && !stop;
+    );
+    stop ? ( // cbf fixing off by one errors
+      -1;
+    ):(
+      p; // return final param index
+    );
+  ):(
+    -1;
+  );
+);
+
+function fx_show()
+(
+  n("_S&M_WNCLS4"); // hide all fx chains
+  CountSelectedTracks(0) ? (
+    track = GetSelectedTrack(0, CountSelectedTracks(0)-1);
+    fxn = TrackFX_GetCount(track)-1-FXOffset;
+    TrackFX_Show(track, fxn, 1);
+  );
+  tcfx();
+);
+
+function fx_cycle(direction) // swap out fx on selected tracks
+(
+  Undo_BeginBlock();
+  tracks_seld = CountSelectedTracks(0);
+  i = 0;
+  loop(tracks_seld,
+    track = GetSelectedTrack(0, i);
+    fxn = TrackFX_GetCount(track)-1-FXOffset;
+    TrackFX_GetFXName(track, fxn, #buffer);
+    index = reverse_fx_lookup(#buffer);
+    delete_old = 1;//index != 0;
+    direction > 0 ? ( // i'm rly tired so ugly code will have to do
+      index ? (
+        (index-fxcycle)/2 >= fxcycle[]-1 ? (
+          index = fxcycle;
+        ):(
+          index += 2;
+        );
+      ):(
+        index = fxcycle;
+      );
+    ):(
+      index ? (
+        index == fxcycle ? (
+          index = fxcycle + 2*fxcycle[] -2;
+        ):(
+          index -= 2;
+        );
+      ):(
+        index = fxcycle + 2*fxcycle[] -2;
+      );
+    );
+    newfx = #newfx;
+    strcpy(newfx,index);
+    delete_old ? ( TrackFX_Delete(track, fxn) );
+    TrackFX_AddByName(track, newfx, 0, -1000 - fxn);
+  );
+  fx_show();
+  Undo_EndBlock("Cyclical FX swap on selected track",0);
+);
+
+function fx_add()
+(
+  Undo_BeginBlock();
+  tracks_seld = CountSelectedTracks(0);
+  i = 0;
+  loop(tracks_seld,
+    track = GetSelectedTrack(0, i);
+    fxn = TrackFX_GetCount(track)-1-FXOffset;
+    newfx = #newfx;
+    strcpy(newfx,fxcycle);
+    TrackFX_AddByName(track, newfx, 0, -1000-fxn-1);
+    i += 1;
+  );
+  fx_show();
+  Undo_EndBlock("Add FX to selected track", 0);
+);
+
+function fx_val_nudge(axis, amt) // nudge wet or designated fx value using left stick
+(
+  tracks_seld = CountSelectedTracks(0);
+  tracks_seld ? (
+    track = GetSelectedTrack(0, 0);
+    fxn = TrackFX_GetCount(track)-1 - FXOffset;
+  );
+  i = 0;
+  loop(tracks_seld,
+    track = GetSelectedTrack(0, i);
+    axis ? (
+      index = reverse_param_lookup(track, fxn);
+    ):(
+      index = TrackFX_GetParamFromIdent(track, fxn, ":wet");
+    );
+    index != -1 ? (
+      current_val = TrackFX_GetParam(track, fxn, index, minval, maxval);
+      axis ? (
+        (maxval-minval) > 500 ? ( // adapt slider speed based on range
+          coeff = 0.03;
+        ):(
+          (maxval-minval) < 10 ? (
+            coeff = 0.1;
+          ):(
+            coeff = 0.05;
+          );
+        );
+      ):(
+        coeff = 0.03;
+      );
+      final_value = current_val+coeff*(maxval-minval)*amt;
+      final_value = max(minval, min(maxval, final_value));
+      TrackFX_SetParam(track, fxn, index, final_value);
+    );
+    i += 1;
+  );
+);
+
+function finish_delete(StartTime, override)
+(
+  Undo_BeginBlock();
+  SetCursorContext(2, 0);
+  override ? (
+    EndTime = last_time;
+  ):(
+    EndTime = time_now();
+  );
+  tracks_seld = CountSelectedTracks(0);
+  i = 0;
+  loop(tracks_seld,
+    track = GetSelectedTrack(0, i);
+    strcpy(#delete, str(StartTime));
+    strcat(#delete, " ");
+    strcat(#delete, str(EndTime));
+    strcat(#delete, " \"\"");
+    //ShowConsoleMsg(#delete);
+    GetSetMediaTrackInfo_String(track, "P_RAZOREDITS", #delete, 1);
+    i += 1;
+  );
+  n("_SWS_SAVESEL"); // save track selection
+  r(40297); // deselect all tracks
+  n("_SWS_SMARTREMOVE"); // delete contents of razor edits
+  UpdateArrange();
+  r(42406); // razor edit clear all areas
+  n("_SWS_RESTORESEL"); // restore track selection
+  Undo_EndBlock("Smooth delete", 0);
+);
+
+function finish_copy(StartTime, override)
+(
+  FocusTrack != -1 ? (
+    Undo_BeginBlock();
+    SetCursorContext(2, 0);
+    override ? (
+    EndTime = last_time;
+    ):(
+      EndTime = time_now();
+    );
+    track = FocusTrack; // track to copy from
+    finalStartTime = StartTime - CopyRelTime + FocusTime; // start time as it relates to the focus time
+    finalEndTime   = EndTime   - CopyRelTime + FocusTime;
+
+    strcpy(#copy, str(finalStartTime)); // make the razor edit string
+    strcat(#copy, " ");
+    strcat(#copy, str(finalEndTime));
+    strcat(#copy, " \"\"");
+    GetSetMediaTrackInfo_String(track, "P_RAZOREDITS", #copy, 1);
+
+    n("_SWS_SAVESEL"); // save track selection
+    r(40297); // deselect all tracks (changes focus)
+    n("_SWS_SMARTCOPY"); // copy contents of razor edits
+    MoveEditCursor(StartTime - CopyRelTime, 0); // edit cursor to correct time to paste
+    n("_SWS_RESTORESEL"); // restore track selection
+    r(42398); // paste
+    MoveEditCursor(CopyRelTime - StartTime, 0); // edit cursor back to where it was
+    r(42406); // razor edit clear all areas
+    Undo_EndBlock("Smooth copy", 0);
+  );
+);
+
+function mute_all_on_track(mute)
+(
+  Undo_BeginBlock();
+  num_items = CountMediaItems(0);
+  tracks_seld = CountSelectedTracks(0);
+  i = num_items-1;
+  loop(num_items,
+    item = GetMediaItem(0, i);
+    t = tracks_seld-1;
+    loop(tracks_seld,
+      GetSelectedTrack(0, t) == GetMediaItem_Track(item) ? (
+        SetMediaItemInfo_Value(item, "B_MUTE", mute);
+      );
+      t -=1;
+    );
+    i -= 1;
+  );
+  UpdateArrange();
+  Undo_EndBlock("Temporary muting for smooth deletion", 0);
+);
+
+function idx_from_track(track)
+(
+  numtracks = CountTracks(0);
+  i = -1;
+  stop = 0;
+  while(
+    i += 1;
+    track == GetTrack(0, i) ? (
+      stop = 1;
+    );
+    !(stop || i==numtracks);
+  );
+  i;
+);
+
+function snap_cursor()
+(
+  pos = GetCursorPosition();
+  newpos = SnapToGrid(0, pos);
+  MoveEditCursor(newpos - pos, 0);
+);
+
+function justlooped()
+( // if we're earlier than last frame without having stopped, or in a very different place
+  (abs(time_now()-last_time)>0.5 || time_now() < last_time) && playing && (GetPlayState() & 1);
+);
+
+function setup()
+(
+  // Joystick setup
+  joystick_enum(#guid, 0);
+  joystick_index = 0;
+
+  // Personal setup preference
+  /*match("*0000*", #guid) ? (
+    joystick_enum(#guid, 1);
+    joystick_index = 1;
+  );*/
+
+  (strlen(#guid)==0) ? (
+    defer("setup()");
+  ):(
+    xbox = joystick_create(#guid);
+    joystick_getinfo(xbox, numaxis, numpov);
+    reload(xbox, 1);
+    tcfx();
+    defer("main_loop()");
+  );
+);
+
+function main_loop()
+(
+  // really weird method to check if controller still plugged in
+  // far as i know this is The Only way to do so
+  i=0;
+  loop(5,
+    numbr = #numbr;
+    joystick_enum(#numbr, i);
+    i == joystick_index ? (
+      strlen(#numbr) > 0 ? (
+        working = 1;
+      ):(
+        working = 0;
+      );
+    );
+    i += 1;
+  );
+
+  justlooped() ? (
+    deleting ? (
+      deleting = 0;
+      mute_all_on_track(0);
+      finish_delete(DeleteStart,1);
+    );
+    copying ? (
+      copying = 0;
+      finish_copy(CopyStart,1);
+    );
+  );
+
+  // if it's still plugged in
+  working ? (
+    reload(xbox, 0);
+
+    // deal with buttons
+    oldbuttons != buttons ? (
+
+      // a
+      // redo, new track, create marker, confirm quick edit, add fx
+      nw(BUTTON_A) ? ( // only run when pressed not released
+        QuickEditActive ? ( // finish quick edit
+          QuickEditActive = 0;
+          SecondTime = time_now();
+          lastqedit[1] = SecondTime;
+          graft = (SecondTime-FirstTime) > 0;
+          b(BUTTON_SELECT) ? ( // edit selected tracks
+            lastqedit[2] = 1;
+            chop_graft_trackitems( graft, FirstTime, SecondTime );
+          ):(
+            b(BUTTON_START) ? ( // edit markers
+              lastqedit[2] = 2;
+              chop_graft_markers( graft, FirstTime, SecondTime );
+            ):(
+              lastqedit[2] = 0; // edit everything
+              n("_SWS_SAVELOOP1");
+              n("_SWS_SAVETIME1");
+              GetSet_LoopTimeRange(1, 0, FirstTime, SecondTime, 1);
+              graft ? (
+                r(40200);
+              ):(
+                r(40201);
+              );
+              n("_SWS_RESTLOOP1");
+              n("_SWS_RESTTIME1");
+            );
+          );
+        ):(
+          b(BUTTON_SELECT) ? (
+            r(40702); // new track at end of tcp
+            tcsl(); // turing update track sel display
+          ):(
+            b(BUTTON_START) ? (
+              Undo_BeginBlock();
+              r(40157); // marker @ playhead
+              n("_BR_CLOSEST_PROJ_MARKER_PLAY_SNAP"); // snap it in place
+              r(40898); // renumber markers etc
+              Undo_EndBlock("Make new snapped marker", 0);
+            ):(
+              b(BUTTON_MAIN) ? ( // redo last quick edit (e.g. if you switched tracks)
+                FirstTime = lastqedit[];
+                SecondTime = lastqedit[1];
+                !( FirstTime == SecondTime && SecondTime == 0 ) ? (
+                  graft = (SecondTime-FirstTime) > 0;
+                  ( lastqedit[2] == 1 ) ? (
+                    chop_graft_trackitems( graft, FirstTime, SecondTime );
+                  ):(
+                    ( lastqedit[2] == 2 ) ? (
+                      chop_graft_markers( graft, FirstTime, SecondTime );
+                    ):(
+                      n("_SWS_SAVELOOP1");
+                      n("_SWS_SAVETIME1");
+                      GetSet_LoopTimeRange(1, 0, FirstTime, SecondTime, 1);
+                      graft ? (
+                        r(40200); // graft in selection (everything)
+                      ):(
+                        r(40201); // chop out selection (everything)
+                      );
+                      n("_SWS_RESTLOOP1");
+                      n("_SWS_RESTTIME1");
+                    );
+                  );
+                );
+              ):(
+                b(BUTTON_JOY_L) ? (
+                  fx_add();
+                ):(
+                  RecCycleActive ? (
+                    tr = GetSelectedTrack(0,0);
+                    SetMediaTrackInfo_Value(tr, "I_RECINPUT", 0); // set selected track to record arm channel 1
+                    SetMediaTrackInfo_Value(tr, "I_RECARM", 1);
+                    RecCycleActive = 0;
+                  ):(
+                    MarkerSelActive ? ( // if currently in marker select mode,
+                      MSelStage == 0 ? (
+                        FirstTime = time_now(); // lock in the first position (edit cursor)
+                        MSelStage = 1;                   // and move to stage 2
+                      ):(
+                        SecondTime = time_now();
+                        GetSet_LoopTimeRange(1, 0, FirstTime, SecondTime, 1); // set time selection and return to normal
+                        n("_BR_RESTORE_CURSOR_POS_SLOT_2");
+                        MarkerSelActive = 0;
+                      );
+                    ):(
+                      r(40030); // redo
+                      tcsl(); // turing update track sel display
+                    );
+                  );
+                );
+              );
+            );
+          );
+        );
+      );
+
+      // b
+      // undo, cancel, delete track, delete marker, invert quick edit, delete effect, empty time selection
+      nw(BUTTON_B) ? (
+        QuickEditActive ? (
+          QuickEditActive = 0; // cancel quick edit
+        ):(
+          b(BUTTON_MAIN) ? (
+            b(BUTTON_START) ? ( // delete contents of time selection
+              GetSet_LoopTimeRange(0, 0, first, second, 1);
+              first != second ? (
+                Undo_BeginBlock();
+                r(40201); // chop out selection
+                GetSet_LoopTimeRange(1, 0, first, second, 1);
+                r(40200); // graft in selection
+                Undo_EndBlock("Delete contents of time selection", 0);
+              );
+            ):( // invert previous quick edit
+              FirstTime = lastqedit[];
+              SecondTime = lastqedit[1];
+              !( FirstTime == SecondTime && SecondTime == 0 ) ? ( // if there's a quick edit in the history
+                graft = (SecondTime-FirstTime) < 0; // inverted
+                time_difference = SecondTime - FirstTime;
+                FirstTime = time_now();
+                SecondTime = FirstTime+abs(time_difference);
+                ( lastqedit[2] == 1 ) ? (
+                  chop_graft_trackitems( graft, FirstTime, SecondTime );
+                ):(
+                  ( lastqedit[2] == 2 ) ? (
+                    chop_graft_markers( graft, FirstTime, SecondTime );
+                  ):(
+                    n("_SWS_SAVELOOP1");
+                    n("_SWS_SAVETIME1");
+                    GetSet_LoopTimeRange(1, 0, FirstTime, SecondTime, 1);
+                    graft ? (
+                      r(40200); // graft in selection (everything)
+                    ):(
+                      r(40201); // chop out selection (everything)
+                    );
+                    n("_SWS_RESTLOOP1");
+                    n("_SWS_RESTTIME1");
+                  );
+                );
+              );
+            );
+          ):(
+            b(BUTTON_SELECT) ? (
+              // disallow smooth copy if focus track deleted
+              tracks_seld = CountSelectedTracks(0);
+              i = 0;
+              loop(tracks_seld,
+                track = GetSelectedTrack(0, i);
+                track == FocusTrack ? (
+                  FocusTrack = -1;
+                );
+                i += 1;
+              );
+              r(40005); // delete track
+              tcsl(); // turing update track sel display
+            ):(
+              b(BUTTON_START) ? (
+                Undo_BeginBlock();
+                n("_BR_SAVE_CURSOR_POS_SLOT_1"); // save edit cursor pos
+                r(40434); // move edit cursor 2 playhead
+                r(40613); // dlete marker near cursor
+                n("_BR_RESTORE_CURSOR_POS_SLOT_1");
+                r(40898); // renumber markers etc
+                Undo_EndBlock("Delete marker", 0);
+              ):(
+                b(BUTTON_JOY_L) ? ( // delete last effect from selected tracks
+                  Undo_BeginBlock();
+                  tracks_seld = CountSelectedTracks(0);
+                  i = 0;
+                  loop(tracks_seld,
+                    track = GetSelectedTrack(0, i);
+                    TrackFX_Delete(track, TrackFX_GetCount(track)-1-FXOffset);
+                    i += 1;
+                  );
+                  fx_show();
+                  Undo_EndBlock("Remove selected FX", 0);
+                ):(
+                  RecCycleActive ? (
+                    RecCycleActive = 0; // cancel
+                  ):(
+                    MarkerSelActive ? (
+                      n("_BR_RESTORE_CURSOR_POS_SLOT_2");
+                      n("_SWS_RESTLOOP1");
+                      n("_SWS_RESTTIME1");
+                      MarkerSelActive = 0; // cancel
+                    ):(
+                      r(40029); // undo
+                      tcsl(); // turing update track sel display
+                    );
+                  );
+                );
+              );
+            );
+          );
+        );
+      );
+
+      // x
+      // record, start record cycle, time selection edit, quick edit, copy fx chain
+      nw(BUTTON_X) ? (
+        b(BUTTON_MAIN) ? ( // start quick edit
+          QuickEditActive = 1;
+          FirstTime = time_now();
+          lastqedit[] = FirstTime;
+        ):(
+          b(BUTTON_SELECT) ? ( // start record-cycle
+            RecCycleActive = 1;
+          ):(
+            b(BUTTON_START) ? ( // start time selection edit
+              MarkerSelActive = 1;
+              FirstTime = 0;
+              SecondTime = 0;
+              MSelStage = 0;
+              n("_BR_SAVE_CURSOR_POS_SLOT_2");
+              n("_SWS_SAVELOOP1");
+              n("_SWS_SAVETIME1");
+              r(40020); // deselect current loop/time points (useful on headless build)
+            ):(
+              RecCycleActive ? (
+                tr = GetSelectedTrack(0,0);
+                SetMediaTrackInfo_Value(tr, "I_RECINPUT", 1); // set selected track to record arm channel 2
+                SetMediaTrackInfo_Value(tr, "I_RECARM", 1);
+                RecCycleActive = 0;
+              ):(
+                MarkerSelActive ? (
+                  n("_BR_RESTORE_CURSOR_POS_SLOT_2");
+                ):(
+                  b(BUTTON_JOY_L) ? (
+                    n("_S&M_COPYFXCHAIN5");
+                  ):(
+                    r(1013); // record
+                  );
+                );
+              );
+            );
+          );
+        );
+      );
+
+      // y button
+      // play/stop, tap tempo, toggle repeat, paste fx chain, paste project section
+      nw(BUTTON_Y) ? (
+        b(BUTTON_MAIN) ? (
+          b(BUTTON_START) ? (
+            GetSet_LoopTimeRange(0, 0, first, second, 0);
+            first != second ? (
+              Undo_BeginBlock();
+              cursor_time = GetCursorPosition();
+              n("_SWS_SAVETIME1");
+              r(40397); // duplicate contents of time selection to edit cursor
+              GetSet_LoopTimeRange(1, 0, cursor_time + (second-first), cursor_time + 2*(second-first), 0);
+              r(40201); // chop out what used to be there
+              n("_SWS_RESTTIME1");
+              SetEditCurPos(cursor_time, 1, 0);
+              r(40898); // renumber markers
+              Undo_EndBlock("Copy contents of time selection to edit cursor",0);
+            );
+          ):(
+            CountSelectedTracks(0) ? (
+              FocusTime = time_now();
+              FocusTrack = GetSelectedTrack(0, 0);
+            );
+          );
+        ):(
+          b(BUTTON_SELECT) ? (
+            r(1134); // tap tempo
+          ):(
+            b(BUTTON_START) ? (
+              r(1068); // toggle repeat
+            ):(
+              RecCycleActive ? (
+                tr = GetSelectedTrack(0,0);
+                SetMediaTrackInfo_Value(tr, "I_RECARM", 0); // set selected track to disarmed
+                RecCycleActive = 0;
+              ):(
+                b(BUTTON_JOY_L) ? (
+                  n("_S&M_COPYFXCHAIN7"); // paste (replace)
+                ):(
+                  !(GetPlayState() & 1) ? ( // deal with smooth copy/smooth delete
+                    CopyRelTime = time_now();
+                    DeleteArmed ? (
+                      deleting = 1;
+                      mute_all_on_track(1);
+                      DeleteStart = time_now();
+                    );
+                    CopyArmed ? (
+                      copying = 1;
+                      CopyStart = time_now();
+                    );
+                  ):(
+                    deleting ? (
+                      deleting = 0;
+                      mute_all_on_track(0);
+                      finish_delete(DeleteStart,0);
+                      DeleteArmed = 0;
+                    );
+                    copying ? (
+                      copying = 0;
+                      finish_copy(CopyStart,0);
+                      CopyArmed = 0;
+                    );
+                  );
+                  r(40044); // play/stop
+                );
+              );
+            );
+          );
+        );
+      );
+
+      // bumpers - skip markers, tap tempo, go to start/end, chop/graft selection time, fx cycle
+      nw(BUTTON_LB) ? (
+        b(BUTTON_JOY_L) ? (
+          fx_cycle(-1);
+        ):(
+          b(BUTTON_MAIN) ? ( // LB + MAIN BUTTON (chop time selection)
+            b(BUTTON_START) ? ( // chop out selection (markers only)
+              chop_graft_markers(0, 0, 0);
+            ):(
+              b(BUTTON_SELECT) ? ( // chop out selection (items on selected track only)
+                chop_graft_trackitems(0, 0, 0);
+              ):(
+                GetSet_LoopTimeRange(0, 0, first, second, 0);
+                first != second ? r(40201); // chop out selection (everything)
+              );
+            );
+          ):(
+            b(BUTTON_SELECT) ? (
+              0; // nothing bound to select + LB
+            ):(
+              b(BUTTON_START) ? (
+                r(40042); // go to start (start only)
+              ):(
+                r(40172); // prev marker or start (no modifier)
+              );
+            );
+          );
+        );
+      );
+      nw(BUTTON_RB) ? (
+        b(BUTTON_JOY_L) ? (
+          fx_cycle(1);
+        ):(
+          b(BUTTON_MAIN) ? ( // RB + MAIN BUTTON (graft time selection)
+            b(BUTTON_START) ? ( // graft in selection (markers only)
+              chop_graft_markers(1, 0, 0);
+            ):(
+              b(BUTTON_SELECT) ? ( // graft in selection (items on selected track only)
+                chop_graft_trackitems(1, 0, 0);
+              ):(
+                GetSet_LoopTimeRange(0, 0, first, second, 0);
+                first != second ? r(40200); // graft in selection (everything)
+              );
+            );
+          ):(
+            b(BUTTON_SELECT) ? (
+              r(1134); // tap tempo (select only)
+            ):(
+              b(BUTTON_START) ? (
+                r(40043); // go to end (start only)
+              ):(
+                r(40173); // next marker or end (no modifier)
+              );
+            );
+          );
+        );
+      );
+
+      // main button
+      // reset controllers + all notes off, disarm all tracks
+      nw(BUTTON_MAIN) ? (
+        b(BUTTON_START) ? (
+          buttons = buttons | MODIFIER_BLOCK;
+          b(BUTTON_SELECT) ? (
+            GetProjectName(0, #temp);
+            strlen(#temp) ? (
+              Main_SaveProject(0, 0);
+            ):(
+              n("_RSf8293cd03fbff547a101d0d639cb82c16fd2bee5"); // save or autosave
+              // i'll bundle this with the turing complete interface
+            );
+          ):(
+            snap_cursor();
+          );
+        );
+      );
+      off(BUTTON_MAIN) ? (
+        RecCycleActive ? (
+          r(40491); // disarm all tracks
+          RecCycleActive = 0;
+        ):(
+          r(40345); // all notes off to everything
+        );
+      );
+    ); // end of buttons
+
+    // dpad horizontal
+    // track select, pre-roll, reset track pan
+    oldfunc[1] != DPAD_H() ? ( // horizontal
+      buttons = buttons | MODIFIER_BLOCK; // input tracking
+      value = DPAD_H();
+      value && b(BUTTON_JOY_R) ? ( // reset pan to center
+        Undo_BeginBlock();
+        tracks_seld = CountSelectedTracks(0);
+        i = 0;
+        loop(tracks_seld,
+          track = GetSelectedTrack(0, i);
+          SetTrackUIPan(track, 0, 0, 1, 1);
+          i += 1;
+        );
+        Undo_EndBlock("Reset pan on selected tracks", 0);
+      ):(
+        value < 0 ? ( // left
+          b(BUTTON_START) ? (
+            !GetToggleCommandState(41819) ? (
+              r(41819); // enable pre-roll if it's disabled ("start from earlier")
+            );
+          ):(
+            FXOffset = 0;
+            (GetPlayState() & 1) ? ( // stop smooth edits when switching track
+              deleting ? (
+                deleting = 0;
+                mute_all_on_track(0);
+                finish_delete(DeleteStart,0);
+                DeleteArmed = 0;
+              );
+              copying ? (
+                copying = 0;
+                finish_copy(CopyStart,0);
+                CopyArmed = 0;
+              );
+            );
+            b(BUTTON_MAIN) ? (
+              r(40296); // go to first track
+              n("_XENAKIOS_SELFIRSTOFSELTRAX");
+            ):(
+              r(40286); // go to prev track
+            );
+            tcsl(); // turing update track sel display
+          );
+        );
+        value > 0 ? ( // right
+          b(BUTTON_START) ? (
+            GetToggleCommandState(41819) ? (
+              r(41819); // disable pre-roll if it's enabled ("start from later")
+            );
+          ):(
+            FXOffset = 0;
+            (!(CopyArmed || DeleteArmed) && (GetPlayState() & 1)) ? ( // stop smooth edits when switching track
+              deleting ? (
+                deleting = 0;
+                mute_all_on_track(0);
+                finish_delete(DeleteStart,0);
+              );
+              copying ? (
+                copying = 0;
+                finish_copy(CopyStart,0);
+              );
+            );
+            b(BUTTON_MAIN) ? (
+              r(40296); // go to last track
+              n("_XENAKIOS_SELLASTOFSELTRAX");
+            ):(
+              r(40285); // go to next track
+            );
+            tcsl(); // turing update track sel display
+          );
+        );
+      );
+    );
+
+    // dpad vertical
+    // mute-normal-solo, metronome, reset track volume
+    oldfunc[2] != DPAD_V() ? ( // vertical
+      buttons = buttons | MODIFIER_BLOCK; // input tracking
+      value = DPAD_V();
+      value && b(BUTTON_JOY_R) ? ( // reset volume to unity
+        Undo_BeginBlock();
+        tracks_seld = CountSelectedTracks(0);
+        i = 0;
+        loop(tracks_seld,
+          track = GetSelectedTrack(0, i);
+          SetTrackUIVolume(track, 1, 0, 1, 1);
+          i += 1;
+        );
+        Undo_EndBlock("Reset volume on selected tracks", 0);
+      ):(
+        value > 0 ? ( // down
+          b(BUTTON_JOY_L) ? (
+            FXOffset -= 1;
+            FXOffset = max(FXOffset,0);
+            CountSelectedTracks(0) ? (
+              track = GetSelectedTrack(0, CountSelectedTracks(0)-1);
+              FXOffset = min( TrackFX_GetCount(track)-1, FXOffset);
+            );
+            fx_show();
+          ):(
+            b(BUTTON_SELECT) ? ( // smooth delete
+              deleting = 1;
+              mute_all_on_track(1);
+              !DeleteArmed ? (
+                DeleteStart = time_now();
+              );
+              DeleteArmed = 0;
+            ):(
+              b(BUTTON_START) ? (
+                r(41746); // disable metronome (time + less audible)
+              ):(
+                b(BUTTON_MAIN) ? (
+                  r(40340); // unsolo all tracks
+                ):(
+                  RecCycleActive ? (
+                    DeleteArmed = 1;
+                    CopyArmed = 0;
+                    RecCycleActive = 0;
+                  ):(
+                    track_audio_level(-1); // decrease audibility level (mute <- normal <- solo)
+                  );
+                );
+              );
+            );
+          );
+        );
+        value < 0 ? ( // up
+          b(BUTTON_JOY_L) ? (
+            FXOffset += 1;
+            FXOffset = max(FXOffset,0);
+            CountSelectedTracks(0) ? (
+              track = GetSelectedTrack(0, CountSelectedTracks(0)-1);
+              FXOffset = min( TrackFX_GetCount(track)-1, FXOffset);
+            );
+            fx_show();
+          ):(
+            b(BUTTON_SELECT) ? ( // smooth copy
+              copying = 1;
+              !CopyArmed ? (
+                CopyStart = time_now();
+              );
+              CopyArmed = 0;
+            ):(
+              b(BUTTON_START) ? (
+                r(41745); // enable metronome (time + more audible)
+              ):(
+                b(BUTTON_MAIN) ? (
+                  r(40339); // unmute all tracks
+                ):(
+                  RecCycleActive ? (
+                    CopyArmed = 1;
+                    DeleteArmed = 0;
+                    RecCycleActive = 0;
+                  ):(
+                    track_audio_level(1); // increase audibility level (mute -> normal -> solo)
+                  );
+                );
+              );
+            );
+          );
+        );
+        (value == 0 && !(CopyArmed || DeleteArmed) && (GetPlayState() & 1) && b(BUTTON_SELECT)) ? (
+          deleting ? (
+            deleting = 0;
+            mute_all_on_track(0);
+            finish_delete(DeleteStart,0);
+          );
+          copying ? (
+            copying = 0;
+            finish_copy(CopyStart,0);
+          );
+        );
+      );
+    );
+
+    TRIGGERS() ? (
+      CSurf_ScrubAmt(-4*TRIGGERS());
+    );
+
+    // right stick
+    // track pan, track volume
+    abs(correct_dz( newaxis[JOY_R_H], RDz )) > abs(correct_dz( newaxis[JOY_R_V], RDz )) ? (
+      abs(newaxis[JOY_R_H]) > RDz ? ( // right stick horizontal to nudge track pan
+        buttons = buttons | MODIFIER_BLOCK;
+        pan = correct_dz( newaxis[JOY_R_H], RDz );
+        b(BUTTON_MAIN) ? ( pan *= 0.1 );
+        nudge_pan(pan);
+        CSurf_FlushUndo(0);
+      );
+    ):(
+      abs(newaxis[JOY_R_V]) > RDz ? ( // right stick vertical to nudge track volume
+        buttons = buttons | MODIFIER_BLOCK;
+        vol = correct_dz( -newaxis[JOY_R_V], RDz );
+        b(BUTTON_MAIN) ? ( vol *= 0.1 );
+        nudge_vol(vol);
+        CSurf_FlushUndo(0);
+      );
+    );
+
+    // left stick
+    // fx parameter, fx wet
+    abs(correct_dz( newaxis[JOY_L_H], LDz )) > abs(correct_dz( newaxis[JOY_L_V], LDz )) ? (
+      buttons = buttons | MODIFIER_BLOCK; // input tracking (value doesnt matter for our purposes)
+      abs(newaxis[JOY_L_H]) > LDz ? ( // left stick horizontal to nudge designated fx parameter
+        nudge = correct_dz( newaxis[JOY_L_H], LDz );
+        b(BUTTON_MAIN) ? ( nudge *= 0.1 );
+        fx_val_nudge(1, nudge);
+      );
+    ):(
+      abs(newaxis[JOY_L_V]) > LDz ? ( // left stick vertical to nudge fx wet value
+        buttons = buttons | MODIFIER_BLOCK; // input tracking (val doesnt matter)
+        nudge = correct_dz( -newaxis[JOY_L_V], LDz );
+        b(BUTTON_MAIN) ? ( nudge *= 0.1 );
+        fx_val_nudge(0, nudge);
+      );
+    );
+
+
+    // display visuals for smooth copy/smooth delete
+    (copying || deleting) ? (
+      !timelogged ? (
+        n("_SWS_SAVETIME4");
+        timelogged = 1;
+        linkloops = GetToggleCommandState(40621);
+        linkloops ? ( // do not link loop points & time selections
+          r(40621); // (necessary to display it without fucking with loop)
+        );
+      );
+      deleting ? (
+        GetSet_LoopTimeRange(1, 0, DeleteStart, time_now(), 0);
+      ):(
+        GetSet_LoopTimeRange(1, 0, CopyStart, time_now(), 0);
+      );
+    ):(
+      timelogged ? (
+        n("_SWS_RESTTIME4");
+        timelogged = 0;
+        !GetToggleCommandState(40621) ? (
+          linkloops ? (
+            r(40621);
+          );
+        );
+      );
+    );
+    // log the frame & rerun
+    playing = GetPlayState() & 1;
+    last_time = time_now();
+    reev();
+    oldbuttons = buttons;
+    i=0;
+    loop(numaxis,
+      oldaxis[i] = newaxis[i];
+      i+=1;
+    );
+    i=0;
+    loop(numpov,
+      oldpov[i] = newpov[i];
+      i+=1;
+    );
+    refresh_funcs();
+    defer("main_loop()");
+  ):(
+    // if controller no longer in guid list
+    joystick_destroy(xbox);
+    xbox = 0;
+    Li[] = 0;
+    Li[1] = 0;
+    defer("setup()");
+  );
+);
+
+setup();

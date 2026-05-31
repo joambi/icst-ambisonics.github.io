@@ -41,7 +41,7 @@
 
     <generator>Hugo -- gohugo.io</generator>
 
-    {{- with .Site.LanguageCode }}
+    {{- with .Site.Language.Locale }}
       <language>{{ . }}</language>
     {{- end }}
 

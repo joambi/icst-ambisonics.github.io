@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICST Ambisonics Workshop 2026 – Tools</title>
+<style>
+  :root {
+    --dark: #1A1A2E;
+    --panel: #16213E;
+    --card: #0F3460;
+    --accent: #E94560;
+    --accent2: #53C0F0;
+    --text: #E0E0E0;
+    --muted: #8899AA;
+    --green: #4CAF50;
+    --yellow: #FFC107;
+    --red: #E94560;
+    --radius: 10px;
+    --font: 'Segoe UI', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: var(--font);
+    min-height: 100vh;
+  }
+  header {
+    background: var(--panel);
+    border-bottom: 2px solid var(--accent);
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  header h1 { font-size: 1.15rem; font-weight: 700; letter-spacing: 0.03em; }
+  header span { color: var(--accent); }
+  header .sub { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+
+  /* TABS */
+  .tabs {
+    display: flex;
+    gap: 0;
+    background: var(--panel);
+    border-bottom: 1px solid #ffffff18;
+    padding: 0 24px;
+  }
+  .tab-btn {
+    padding: 14px 26px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active { color: var(--accent2); border-bottom-color: var(--accent2); }
+
+  .tab-panel { display: none; padding: 28px 24px; max-width: 980px; margin: 0 auto; }
+  .tab-panel.active { display: block; }
+
+  /* CARDS */
+  .card {
+    background: var(--panel);
+    border: 1px solid #ffffff14;
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+  }
+  .card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .ampel {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--muted);
+    flex-shrink: 0;
+  }
+  .ampel.green { background: var(--green); box-shadow: 0 0 8px var(--green); }
+  .ampel.yellow { background: var(--yellow); box-shadow: 0 0 8px var(--yellow); }
+  .ampel.red { background: var(--red); box-shadow: 0 0 8px var(--red); }
+
+  .chevron { color: var(--muted); font-size: 1.1rem; transition: transform 0.2s; }
+  .card.open .chevron { transform: rotate(180deg); }
+  .card-body { display: none; margin-top: 14px; }
+  .card.open .card-body { display: block; }
+
+  /* CHECKBOXES */
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px solid #ffffff09;
+    cursor: pointer;
+  }
+  .check-item:last-child { border-bottom: none; }
+  .check-item input[type=checkbox] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--accent2); flex-shrink: 0; cursor: pointer; }
+  .check-item label { font-size: 0.85rem; line-height: 1.45; cursor: pointer; }
+  .check-item label .sub-note { color: var(--muted); font-size: 0.78rem; display: block; margin-top: 2px; }
+
+  /* STATS BAR */
+  .stats-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+  }
+  .stat-box {
+    background: var(--card);
+    border-radius: 8px;
+    padding: 10px 18px;
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+  }
+  .stat-box .val { font-size: 1.6rem; font-weight: 700; }
+  .stat-box .lbl { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .stat-box.green .val { color: var(--green); }
+  .stat-box.yellow .val { color: var(--yellow); }
+
+  /* READY BANNER */
+  .ready-banner {
+    display: none;
+    background: linear-gradient(90deg, #1b4d1b, #2a7a2a);
+    border: 1px solid var(--green);
+    border-radius: var(--radius);
+    padding: 16px 22px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--green);
+    margin-bottom: 18px;
+    animation: pulse 1.5s ease-in-out;
+  }
+  .ready-banner.show { display: block; }
+  @keyframes pulse { 0%{opacity:0;transform:scale(0.97)} 100%{opacity:1;transform:scale(1)} }
+
+  /* AUDIT (ring chart) */
+  .audit-header {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+  }
+  .ring-wrap { position: relative; width: 110px; height: 110px; flex-shrink: 0; }
+  .ring-wrap svg { width: 110px; height: 110px; }
+  .ring-score {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .audit-legend { flex: 1; }
+  .audit-legend h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
+  .audit-legend p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+  .audit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px solid #ffffff09;
+    cursor: pointer;
+  }
+  .audit-item:last-child { border-bottom: none; }
+  .audit-item input[type=checkbox] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--green); flex-shrink: 0; cursor: pointer; }
+  .audit-item label { font-size: 0.85rem; line-height: 1.45; cursor: pointer; }
+  .audit-item label .cat { font-size: 0.72rem; color: var(--accent2); text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 1px; }
+
+  /* TROUBLESHOOTING */
+  .symptom-select {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid #ffffff22;
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 0.92rem;
+    padding: 12px 16px;
+    margin-bottom: 22px;
+    cursor: pointer;
+  }
+  .diag-card {
+    background: var(--panel);
+    border: 1px solid #ffffff14;
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+  .diag-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 14px; color: var(--accent2); }
+  .diag-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid #ffffff09;
+    cursor: pointer;
+  }
+  .diag-step:last-child { border-bottom: none; }
+  .step-num {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--card);
+    border: 2px solid var(--accent2);
+    color: var(--accent2);
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+  .diag-step.done .step-num { background: var(--green); border-color: var(--green); color: #fff; }
+  .step-text { font-size: 0.85rem; line-height: 1.5; }
+  .diag-step.done .step-text { text-decoration: line-through; color: var(--muted); }
+  .step-text code {
+    background: #ffffff14;
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 0.82rem;
+    font-family: 'Courier New', monospace;
+  }
+  .escalate-btn {
+    display: inline-block;
+    margin-top: 18px;
+    background: var(--accent);
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 0.83rem;
+    font-weight: 600;
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    text-decoration: none;
+  }
+  .escalate-btn:hover { opacity: 0.85; }
+  .no-symptom {
+    text-align: center;
+    color: var(--muted);
+    padding: 36px 0;
+    font-size: 0.88rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>ICST Ambisonics Workshop 2026 &nbsp;<span>·</span>&nbsp; Workshop Tools</h1>
+    <div class="sub">Preflight-Check &nbsp;·&nbsp; Best-Practices Audit &nbsp;·&nbsp; Troubleshooting</div>
+  </div>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="showTab('preflight',this)">✅ Preflight-Check</button>
+  <button class="tab-btn" onclick="showTab('audit',this)">📊 Best-Practices Audit</button>
+  <button class="tab-btn" onclick="showTab('trouble',this)">🔧 Troubleshooting</button>
+</div>
+
+<!-- ===== PREFLIGHT ===== -->
+<div id="preflight" class="tab-panel active">
+  <div class="ready-banner" id="readyBanner">🎉 Performance-Ready! Alle Checks bestanden.</div>
+
+  <div class="stats-row">
+    <div class="stat-box green"><div class="val" id="pf-done">0</div><div class="lbl">Erledigt</div></div>
+    <div class="stat-box yellow"><div class="val" id="pf-open">16</div><div class="lbl">Offen</div></div>
+    <div class="stat-box"><div class="val" id="pf-pct">0%</div><div class="lbl">Fortschritt</div></div>
+  </div>
+
+  <!-- Phase 1 -->
+  <div class="card open" data-phase="0">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-title"><div class="ampel" id="a0"></div> Phase 1 – Max / App Setup</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <div class="check-item"><input type="checkbox" id="c0" onchange="updatePreflight()"><label for="c0">ACT_Circle_Mover_Main.app (oder .maxpat) gestartet<span class="sub-note">Max Console: „udpreceiver binding to port 50010" sichtbar</span></label></div>
+      <div class="check-item"><input type="checkbox" id="c1" onchange="updatePreflight()"><label for="c1">macOS Netzwerk-Dialog bestätigt (Erlauben)<span class="sub-note">Nur beim ersten Start der .app nötig</span></label></div>
+      <div class="check-item"><input type="checkbox" id="c2" onchange="updatePreflight()"><label for="c2">ambimonitor zeigt Quellen korrekt an<span class="sub-note">Ggf. „read"-Button → snapshots.xml laden</span></label></div>
+      <div class="check-item"><input type="checkbox" id="c3" onchange="updatePreflight()"><label for="c3">Ease_mover-Toggle aktiviert (Interpolation an)</label></div>
+    </div>
+  </div>
+
+  <!-- Phase 2 -->
+  <div class="card" data-phase="1">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-title"><div class="ampel" id="a1"></div> Phase 2 – REAPER Setup</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <div class="check-item"><input type="checkbox" id="c4" onchange="updatePreflight()"><label for="c4">ICST_Trigger_Scenes.lua geladen<span class="sub-note">Actions → Show action list → ReaScript → Load</span></label></div>
+      <div class="check-item"><input type="checkbox" id="c5" onchange="updatePreflight()"><label for="c5">ICST_Store_Current_Marker_Scene.lua geladen</label></div>
+      <div class="check-item"><input type="checkbox" id="c6" onchange="updatePreflight()"><label for="c6">REAPER Console zeigt keinen Python-Fehler<span class="sub-note">Warnung „LuaSocket not available" ist OK – Python-Fallback greift</span></label></div>
+      <div class="check-item"><input type="checkbox" id="c7" onchange="updatePreflight()"><label for="c7">Marker korrekt benannt (Scene_1, Scene_2 … oder 1, 2 …)</label></div>
+    </div>
+  </div>
+
+  <!-- Phase 3 -->
+  <div class="card" data-phase="2">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-title"><div class="ampel" id="a2"></div> Phase 3 – Scenes speichern</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <div class="check-item"><input type="checkbox" id="c8" onchange="updatePreflight()"><label for="c8">Für jede Scene: Quellen im ambimonitor positioniert</label></div>
+      <div class="check-item"><input type="checkbox" id="c9" onchange="updatePreflight()"><label for="c9">Cursor auf Marker gestellt (nicht nur in der Nähe)<span class="sub-note">REAPER-Zoom erhöhen für Präzision</span></label></div>
+      <div class="check-item"><input type="checkbox" id="c10" onchange="updatePreflight()"><label for="c10">ICST_Store_Current_Marker_Scene.lua ausgeführt<span class="sub-note">REAPER Console: „ACT explicit store → Max: marker … duration=…ms"</span></label></div>
+      <div class="check-item"><input type="checkbox" id="c11" onchange="updatePreflight()"><label for="c11">snapshots.xml gespeichert (write-Button in Max)</label></div>
+    </div>
+  </div>
+
+  <!-- Phase 4 -->
+  <div class="card" data-phase="3">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-title"><div class="ampel" id="a3"></div> Phase 4 – Performance-Check</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <div class="check-item"><input type="checkbox" id="c12" onchange="updatePreflight()"><label for="c12">ICST_Trigger_Scenes.lua gestartet (Loop läuft)</label></div>
+      <div class="check-item"><input type="checkbox" id="c13" onchange="updatePreflight()"><label for="c13">Schnelltest: Marker anklicken → Scene springt in Max</label></div>
+      <div class="check-item"><input type="checkbox" id="c14" onchange="updatePreflight()"><label for="c14">Playback-Test: Übergänge interpolieren korrekt<span class="sub-note">live.line-Balken im Scene_Mover bewegen sich</span></label></div>
+      <div class="check-item"><input type="checkbox" id="c15" onchange="updatePreflight()"><label for="c15">AmbiEncoder-Ports 50001–50008 empfangen Daten</label></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== AUDIT ===== -->
+<div id="audit" class="tab-panel">
+  <div class="audit-header">
+    <div class="ring-wrap">
+      <svg viewBox="0 0 110 110">
+        <circle cx="55" cy="55" r="42" fill="none" stroke="#ffffff14" stroke-width="12"/>
+        <circle id="ring-circle" cx="55" cy="55" r="42" fill="none" stroke="#4CAF50" stroke-width="12"
+          stroke-dasharray="263.9" stroke-dashoffset="263.9" stroke-linecap="round"
+          transform="rotate(-90 55 55)" style="transition: stroke-dashoffset 0.5s, stroke 0.5s"/>
+      </svg>
+      <div class="ring-score" id="ring-score">0%</div>
+    </div>
+    <div class="audit-legend">
+      <h2>Best-Practices Audit</h2>
+      <p>Bewertet den aktuellen Stand des REAPER ↔ Max Setups.<br>
+      Grün ≥ 80 % · Gelb ≥ 50 % · Rot &lt; 50 %</p>
+    </div>
+  </div>
+
+  <div class="card open">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-title">OSC-Kommunikation</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <div class="audit-item"><input type="checkbox" id="a0" onchange="updateAudit()"><label for="a0"><span class="cat">OSC</span>Port 50010 ist frei und unblockiert</label></div>
+      <div class="audit-item"><input type="checkbox" id="a1" onchange="updateAudit()"><label for="a1"><span class="cat">OSC</span>udpreceive 50010 in Max Console bestätigt</label></div>
+      <div class="audit-item"><input type="checkbox" id="a2" onchange="updateAudit()"><label for="a2"><span class="cat">OSC</span>LuaSocket verfügbar (kein Python-Fallback nötig)</label></div>
+      <div class="audit-item"><input type="checkbox" id="a3" onchange="updateAudit()"><label for="a3"><span class="cat">OSC</span>Alle Encoder-Ports 50001–50008 aktiv</label></div>
+    </div>
+  </div>
+
+  <div class="card open">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-title">Marker & Scene-Namen</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <div class="audit-item"><input type="checkbox" id="a4" onchange="updateAudit()"><label for="a4"><span class="cat">Naming</span>Konsistentes Benennungsschema (Scene_1, Scene_2 …)</label></div>
+      <div class="audit-item"><input type="checkbox" id="a5" onchange="updateAudit()"><label for="a5"><span class="cat">Naming</span>Keine Leerzeichen in Marker-Namen (→ Unterstriche verwenden)</label></div>
+      <div class="audit-item"><input type="checkbox" id="a6" onchange="updateAudit()"><label for="a6"><span class="cat">Naming</span>Marker in korrekter chronologischer Reihenfolge</label></div>
+    </div>
+  </div>
+
+  <div class="card open">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-title">Zeitlogik & Duration</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <div class="audit-item"><input type="checkbox" id="a7" onchange="updateAudit()"><label for="a7"><span class="cat">Timing</span>Jede Scene hat einen Nachfolge-Marker (für Duration)</label></div>
+      <div class="audit-item"><input type="checkbox" id="a8" onchange="updateAudit()"><label for="a8"><span class="cat">Timing</span>Duration-Werte in Max-Console beim Store geprüft</label></div>
+      <div class="audit-item"><input type="checkbox" id="a9" onchange="updateAudit()"><label for="a9"><span class="cat">Timing</span>Cooldown 0.25 s verhindert Doppeltrigger (kein Fix nötig)</label></div>
+    </div>
+  </div>
+
+  <div class="card open">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-title">Snapshots & Daten</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <div class="audit-item"><input type="checkbox" id="a10" onchange="updateAudit()"><label for="a10"><span class="cat">Data</span>snapshots.xml liegt neben der .app / .maxpat</label></div>
+      <div class="audit-item"><input type="checkbox" id="a11" onchange="updateAudit()"><label for="a11"><span class="cat">Data</span>snapshots.xml nach jeder Session explizit gespeichert (write)</label></div>
+      <div class="audit-item"><input type="checkbox" id="a12" onchange="updateAudit()"><label for="a12"><span class="cat">Data</span>Backup der snapshots.xml vorhanden</label></div>
+    </div>
+  </div>
+
+  <div class="card open">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-title">Workflow & Scripts</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <div class="audit-item"><input type="checkbox" id="a13" onchange="updateAudit()"><label for="a13"><span class="cat">Workflow</span>ICST_Trigger_Scenes.lua läuft im Loop (nicht nur einmalig)</label></div>
+      <div class="audit-item"><input type="checkbox" id="a14" onchange="updateAudit()"><label for="a14"><span class="cat">Workflow</span>Store-Script nur einmalig pro Scene ausgeführt</label></div>
+      <div class="audit-item"><input type="checkbox" id="a15" onchange="updateAudit()"><label for="a15"><span class="cat">Workflow</span>Schnelltest (Marker-Klick) vor Performance durchgeführt</label></div>
+      <div class="audit-item"><input type="checkbox" id="a16" onchange="updateAudit()"><label for="a16"><span class="cat">Workflow</span>helper.py liegt im selben Verzeichnis wie die Lua-Scripts</label></div>
+      <div class="audit-item"><input type="checkbox" id="a17" onchange="updateAudit()"><label for="a17"><span class="cat">Workflow</span>Python 3 unter /opt/homebrew/bin/python3 oder /usr/local verfügbar</label></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TROUBLESHOOTING ===== -->
+<div id="trouble" class="tab-panel">
+  <select class="symptom-select" id="symptom-select" onchange="showSymptom(this.value)">
+    <option value="">— Symptom auswählen —</option>
+    <option value="s1">Max empfängt nichts (kein OSC-Signal)</option>
+    <option value="s2">Falsche Scene wird gefeuert</option>
+    <option value="s3">Duration ist 0 oder fehlt</option>
+    <option value="s4">Kein Playback-Trigger (nur manuell funktioniert)</option>
+    <option value="s5">snapshots.xml leer / ambimonitor leer nach Neustart</option>
+    <option value="s6">Doppel-Trigger (Scene springt zweimal)</option>
+  </select>
+
+  <div id="diag-area">
+    <div class="no-symptom">Bitte oben ein Symptom auswählen.</div>
+  </div>
+</div>
+
+<script>
+// ===== TABS =====
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ===== CARD TOGGLE =====
+function toggleCard(header) {
+  header.parentElement.classList.toggle('open');
+}
+
+// ===== PREFLIGHT =====
+var pfPhases = [[0,1,2,3],[4,5,6,7],[8,9,10,11],[12,13,14,15]];
+
+function updatePreflight() {
+  var total = 16, done = 0;
+  for (var i = 0; i < 16; i++) {
+    if (document.getElementById('c'+i).checked) done++;
+  }
+  var open = total - done;
+  var pct = Math.round(done/total*100);
+  document.getElementById('pf-done').textContent = done;
+  document.getElementById('pf-open').textContent = open;
+  document.getElementById('pf-pct').textContent = pct + '%';
+  document.getElementById('readyBanner').classList.toggle('show', done === total);
+
+  pfPhases.forEach(function(ids, idx) {
+    var phaseDone = ids.filter(function(i){ return document.getElementById('c'+i).checked; }).length;
+    var a = document.getElementById('a'+idx);
+    if (phaseDone === ids.length) { a.className='ampel green'; }
+    else if (phaseDone > 0) { a.className='ampel yellow'; }
+    else { a.className='ampel'; }
+  });
+}
+
+// ===== AUDIT =====
+function updateAudit() {
+  var total = 18, done = 0;
+  for (var i = 0; i < 18; i++) {
+    if (document.getElementById('a'+i).checked) done++;
+  }
+  var pct = Math.round(done/total*100);
+  var circ = document.getElementById('ring-circle');
+  var score = document.getElementById('ring-score');
+  var dash = 263.9;
+  circ.style.strokeDashoffset = dash - (dash * pct / 100);
+  score.textContent = pct + '%';
+  if (pct >= 80) { circ.style.stroke='#4CAF50'; score.style.color='#4CAF50'; }
+  else if (pct >= 50) { circ.style.stroke='#FFC107'; score.style.color='#FFC107'; }
+  else { circ.style.stroke='#E94560'; score.style.color='#E94560'; }
+}
+
+// ===== TROUBLESHOOTING =====
+var symptoms = {
+  s1: {
+    title: 'Max empfängt nichts',
+    steps: [
+      'Prüfen: läuft <code>ICST_Trigger_Scenes.lua</code>? → REAPER Console sollte Zeile mit „running" zeigen',
+      'Port 50010 frei? → Terminal: <code>sudo lsof -i :50010</code>',
+      'App / Patch neu öffnen – UDP-Receiver muss sich neu binden (Console: „binding to port 50010")',
+      'Firewall prüfen: macOS Systemeinstellungen → Netzwerk → Firewall → Max.app erlaubt?',
+      'Sendeziel prüfen: HOST in Lua = <code>127.0.0.1</code>, PORT = <code>50010</code>'
+    ]
+  },
+  s2: {
+    title: 'Falsche Scene wird gefeuert',
+    steps: [
+      'Marker-Namen in REAPER genau prüfen – Gross-/Kleinschreibung zählt',
+      'Im <code>umenu</code> des Scene_Movers nachsehen: welche Scenes sind gespeichert?',
+      '<code>remove_all</code> klicken und alle Scenes neu abspeichern',
+      'Marker-Reihenfolge prüfen: REAPER sortiert nach Position, nicht Eingabe-Reihenfolge',
+      'Tipp: einheitlich <code>Scene_1</code>, <code>Scene_2</code> … statt freier Namen'
+    ]
+  },
+  s3: {
+    title: 'Duration ist 0 oder fehlt',
+    steps: [
+      'Hat der aktuelle Marker einen Nachfolger? → letzter Marker hat keine Duration',
+      'Cursor wirklich exakt auf dem Marker? → REAPER-Zoom erhöhen, nochmals positionieren',
+      'REAPER Console beim Store-Script lesen: Duration-Wert sichtbar?',
+      'Marker-Reihenfolge chronologisch korrekt? → falsche Reihenfolge kann diff_ms = 0 ergeben',
+      'Workaround: Duration manuell im <code>Scene_Mover</code> per <code>/act/scene/setduration</code> setzen'
+    ]
+  },
+  s4: {
+    title: 'Kein Playback-Trigger',
+    steps: [
+      '<code>ICST_Trigger_Scenes.lua</code> gestartet? → REAPER Console zeigt „ACT marker-to-Max OSC trigger running"',
+      'Playhead überquert den Marker? → Mit Zoom prüfen ob Marker in der abgespielten Region liegt',
+      'Cooldown-Problem: Marker zu dicht? Mindestabstand > 0,25 s empfohlen',
+      'ExtState-Konflikt: altes Script-Exemplar läuft noch → REAPER neu starten',
+      'Fallback: Marker anklicken (Edit-Cursor) – wenn das funktioniert, ist OSC ok'
+    ]
+  },
+  s5: {
+    title: 'snapshots.xml leer / ambimonitor leer',
+    steps: [
+      '<code>read</code>-Button in Max klicken → Datei-Dialog: snapshots.xml aus dem richtigen Verzeichnis wählen',
+      'Pfad: snapshots.xml liegt neben der <code>.app</code> oder neben der <code>.maxpat</code>',
+      'Bei .app: Arbeitsverzeichnis ist oft <code>~/Documents</code> – dort nachsehen',
+      'snapshots.xml im Texteditor öffnen: enthält sie <code>&lt;snapshot index="Scene_1"&gt;</code>?',
+      'Nie vergessen: nach jeder Session <code>write</code> klicken – sonst gehen Änderungen verloren'
+    ]
+  },
+  s6: {
+    title: 'Doppel-Trigger',
+    steps: [
+      'Cooldown greift erst nach 0,25 s – Marker-Abstand ggf. zu klein',
+      'Läuft das Lua-Script doppelt? → REAPER Console prüfen, altes Exemplar per ExtState-Check gestoppt?',
+      'Playback-Position prüfen: startet REAPER genau auf einem Marker? → Startpunkt leicht verschieben',
+      'Marker exakt positioniert? Zwei Marker an fast gleicher Stelle können beide triggern',
+      'Workaround: SEND_COOLDOWN_SEC in <code>ICST_Trigger_Scenes.lua</code> auf 0,5 erhöhen'
+    ]
+  }
+};
+
+var stepStates = {};
+
+function showSymptom(key) {
+  var area = document.getElementById('diag-area');
+  if (!key || !symptoms[key]) {
+    area.innerHTML = '<div class="no-symptom">Bitte oben ein Symptom auswählen.</div>';
+    return;
+  }
+  if (!stepStates[key]) stepStates[key] = {};
+  var s = symptoms[key];
+  var html = '<div class="diag-card"><h3>' + s.title + '</h3>';
+  s.steps.forEach(function(step, i) {
+    var done = stepStates[key][i] ? ' done' : '';
+    html += '<div class="diag-step' + done + '" onclick="toggleStep(\'' + key + '\',' + i + ')">';
+    html += '<div class="step-num">' + (stepStates[key][i] ? '✓' : (i+1)) + '</div>';
+    html += '<div class="step-text">' + step + '</div></div>';
+  });
+  html += '<button class="escalate-btn" onclick="escalate(\'' + key + '\')">⚑ Problem noch nicht gelöst – an Claude eskalieren</button>';
+  html += '</div>';
+  area.innerHTML = html;
+}
+
+function toggleStep(key, idx) {
+  stepStates[key][idx] = !stepStates[key][idx];
+  showSymptom(key);
+  document.getElementById('symptom-select').value = key;
+}
+
+function escalate(key) {
+  var s = symptoms[key];
+  var msg = 'ICST Workshop Troubleshooting: Das Symptom „' + s.title + '" lässt sich nicht lösen. Kannst du mir helfen?';
+  alert('Bitte diese Meldung an Claude senden:\n\n' + msg);
+}
+</script>
+</body>
+</html>

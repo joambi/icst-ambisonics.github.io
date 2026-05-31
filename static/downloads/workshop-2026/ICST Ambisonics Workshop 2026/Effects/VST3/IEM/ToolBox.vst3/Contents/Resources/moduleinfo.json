@@ -1,0 +1,64 @@
+{
+  "Name": "ToolBox",
+  "Version": "0.5.6",
+  "Factory Info": {
+    "Vendor": "IEM",
+    "URL": "",
+    "E-Mail": "",
+    "Flags": {
+      "Unicode": true,
+      "Classes Discardable": false,
+      "Component Non Discardable": false,
+    },
+  },
+  "Classes": [
+    {
+      "CID": "ABCDEF019182FAEB49454D41546F426F",
+      "Category": "Audio Module Class",
+      "Name": "ToolBox",
+      "Vendor": "IEM",
+      "Version": "0.5.6",
+      "SDKVersion": "VST 3.7.12",
+      "Sub Categories": [
+        "Fx",
+        "Spatial",
+        "Surround",
+        "Tools",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "ABCDEF011234ABCD49454D41546F426F",
+      "Category": "Component Controller Class",
+      "Name": "ToolBox",
+      "Vendor": "IEM",
+      "Version": "0.5.6",
+      "SDKVersion": "VST 3.7.12",
+      "Sub Categories": [
+        "Fx",
+        "Spatial",
+        "Surround",
+        "Tools",
+      ],
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+    {
+      "CID": "ABCDEF01C0DEF00D49454D41546F426F",
+      "Category": "Plugin Compatibility Class",
+      "Name": "ToolBox",
+      "Vendor": "IEM",
+      "Version": "0.5.6",
+      "SDKVersion": "VST 3.7.12",
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+  ],
+}

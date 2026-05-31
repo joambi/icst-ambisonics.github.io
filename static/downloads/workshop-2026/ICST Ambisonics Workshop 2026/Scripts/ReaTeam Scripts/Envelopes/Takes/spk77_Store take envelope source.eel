@@ -1,0 +1,27 @@
+/*
+   * ReaScript Name: Store take envelope source
+   * EEL script for Cockos REAPER
+   * Author: spk77
+   * Author URI: http://forum.cockos.com/member.php?u=49553
+   * Licence: GPL v3
+   * Version: 1.0
+   */
+  
+  // EEL script - Store active take's ID (by spk77 16.7.2014)
+//
+// Version: 0.2014.7.16
+ 
+function store_take_id()
+(
+  CountSelectedMediaItems(0) == 1 ? (
+    (item = GetSelectedMediaItem(0, 0)) ? ( // get only first selected item
+      (take = GetActiveTake(item)) ? (
+        SetExtState("take_envelope_source", "take", sprintf(#, "%d", take), 0);
+      );
+    );
+  ) : (
+    ShowConsoleMsg("Please select only one (non-empty) item.");
+  );
+);
+
+store_take_id();

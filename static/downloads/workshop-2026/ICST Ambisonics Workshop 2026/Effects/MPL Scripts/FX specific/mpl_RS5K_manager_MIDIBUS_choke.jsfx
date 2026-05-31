@@ -1,0 +1,46 @@
+desc:RS5K_manager_MIDIBUS_choke
+noindex: true
+ 
+options:gmem=RS5K_manager_choke
+
+slider1:0<0,127,1>src
+slider2:0<0,127,1>dest
+
+@init
+
+
+@block
+  src = slider1;
+  dest = slider2;
+  buf = 10000;
+  buf_sendOFF = 10000;
+  maxlen = 65536;
+  while ((recvlen = midirecv_buf(offset,buf,maxlen)) > 0) (
+    ( 
+      
+      vel = buf[2];
+      noteON_dest = (recvlen <= 3 && buf[0] == $x90 && buf[1] == dest);
+      noteON_dest ? gmem[dest] = 0; // reset choke
+      noteOFF_dest = (recvlen <= 3 && buf[0] == $x80 && buf[1] == dest);
+      noteON_src = (recvlen <= 3 && buf[0] == $x90 && buf[1] == src);
+      closed_by_choke = gmem[dest];
+      (noteOFF_dest && closed_by_choke !=1) ? (
+        skip = 1;
+       ) : (
+        noteON_src ? (
+          buf_sendOFF[0] = $x80;
+          buf_sendOFF[1] = dest;
+          buf_sendOFF[2] = 0;
+          midisend_buf(offset,buf_sendOFF,recvlen);
+          gmem[dest]=1; // mark dest closed by choke
+          buf_sendON[0] = $x90;
+          buf_sendON[1] = src;
+          buf_sendON[2] = vel;
+          midisend_buf(offset+1,buf_sendON,recvlen);
+         ) : (
+          midisend_buf(offset,buf,recvlen);
+        );
+      );
+      noteOFF_dest ? midisend_buf(offset,buf,recvlen);
+    );
+  );

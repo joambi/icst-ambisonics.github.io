@@ -1,0 +1,18 @@
+{
+  "sessionName": "Aufgabe",
+  "isStandalone": false,
+  "linkedNotes": [
+    {
+      "path": "content/learn/working-with-ambisonics-workshop/reaper-workshop/Aufgabe.md",
+      "title": "Aufgabe",
+      "linkedAt": "2026-05-15T12:45:53.643Z",
+      "isPrimary": true
+    }
+  ],
+  "backend": "claude",
+  "lastUsed": "2026-05-15T13:14:12.291Z",
+  "createdAt": "2026-05-15T12:45:53.643Z",
+  "messageCount": 2,
+  "notePath": "content/learn/working-with-ambisonics-workshop/reaper-workshop/Aufgabe.md",
+  "noteTitle": "Aufgabe"
+}

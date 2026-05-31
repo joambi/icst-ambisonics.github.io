@@ -5,20 +5,32 @@ description: "Get Ambisonics running in REAPER in minutes — open the MultiEnco
 date: 2025-01-28T14:31:00
 ---
 
-Level: Beginner | Audience: Composer, technician, student, studio user.
-
-Use this page when you want the shortest path to a verified first session. For the full setup logic and routing details, continue with [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/).
+<div class="quick-start-hero">
+  <p class="quick-start-hero__meta">Beginner · Composer, technician, student, studio user</p>
+  <p class="quick-start-hero__lead">Open the prepared MultiEncoder template, check the basic routing, and start your first verified Ambisonics session in REAPER.</p>
+</div>
 
 ## Quick Start with `ICST_AmbiPlugins_MultiEncoder.RPP`
 
-1. Open **Reaper**.
-2. Load **ICST_AmbiPlugins_MultiEncoder.RPP** from the Reaper menu.
-3. Save the project under a new name.
+<ol class="quick-start-steps">
+  <li>
+    <strong>Open REAPER</strong>
+    <span>Start with an empty project or your current session.</span>
+  </li>
+  <li>
+    <strong>Load the MultiEncoder template</strong>
+    <span>Choose <code>ICST_AmbiPlugins_MultiEncoder.RPP</code> from the REAPER menu.</span>
+  </li>
+  <li>
+    <strong>Save a working copy</strong>
+    <span>Save the project under a new name before you begin editing.</span>
+  </li>
+</ol>
 
 ![open_multiencoder_temp](open_multiencoder_temp.gif)
 
 > [!Tip]
-> **Quick check (30 sec):**
+> **Ready in 30 seconds:**
 > - The **Bformat Master** track is present.
 > - The **Decoder** track is loaded.
 > - You see signal activity in routing/metering when playing audio.
@@ -27,6 +39,13 @@ Use this page when you want the shortest path to a verified first session. For t
 
 ## Next step
 
-You can now either:
-- start placing/moving sources in the **MultiEncoder**, or
-- continue with the **[Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)** for routing, decoder, and recording details.
+<div class="next-step-grid">
+  <a class="next-step-card" href="/icst-ambisonics-plugins/10_icst_encoders/">
+    <strong>Start placing sources</strong>
+    <span>Move and automate sources in the MultiEncoder.</span>
+  </a>
+  <a class="next-step-card" href="/icst-ambisonics-plugins/06_step_by_step_setup/">
+    <strong>Understand the routing</strong>
+    <span>Continue with decoder, recording, and setup details.</span>
+  </a>
+</div>

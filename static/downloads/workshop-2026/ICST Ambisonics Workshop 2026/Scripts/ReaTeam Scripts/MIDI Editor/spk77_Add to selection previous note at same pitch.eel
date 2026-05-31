@@ -1,0 +1,36 @@
+/*
+   * ReaScript Name: Add to selection previous note at same pitch
+   * EEL script for Cockos REAPER
+   * Author: spk77
+   * Author URI: http://forum.cockos.com/member.php?u=49553
+   * Licence: GPL v3
+   * Version: 1.0
+   */
+  
+  // Select previous note at same pitch, add to selection  
+// EEL script by spk77 30.9.2014
+//
+// Version: 0.2014.8.30
+
+function select_previous_note() local(take, index, break, pitch, curr_pitch, is_muted, start_pos, end_pos, chan, vol)
+(
+  (take = MIDIEditor_GetTake(MIDIEditor_GetActive())) ? (
+    index = MIDI_EnumSelNotes(take, -1); // first selected note's index
+    MIDI_GetNote(take, index, 0, 0, 0, 0, 0, pitch, 0);
+    index > 0 ? (
+      index -= 1; // last unselected note's index
+      break = 0;
+      while(break == 0 && index >= 0) (
+        MIDI_GetNote(take, index, 0, is_muted, start_pos, end_pos, chan, curr_pitch, vol);
+        curr_pitch == pitch ? (
+          MIDI_SetNote(take, index, 1, is_muted, start_pos, end_pos, chan, curr_pitch, vol);
+          break = 1;
+        );
+        index  -= 1;
+      );
+    );
+    Undo_OnStateChange("Select previous note (at same pitch)");
+  );
+);
+
+select_previous_note();

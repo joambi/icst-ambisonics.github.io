@@ -1,0 +1,22 @@
+[
+  {
+    "role": "user",
+    "content": "kannst du mir ein audio icon einfügen",
+    "timestamp": "2026-05-15T10:25:15.032Z"
+  },
+  {
+    "role": "assistant",
+    "content": "Erledigt. Ich habe ein 🔊-Icon vor \"Example: 01\" (Zeile 42) eingefügt.\n\nFalls du ein anderes Icon möchtest, hier ein paar Alternativen:\n- 🎧 Kopfhörer (passt zu Binaural)\n- 🎵 Musiknote\n- 🎶 Mehrere Noten\n- 🔉 leiserer Lautsprecher\n- 🎙️ Mikrofon\n\nOder soll das Icon an einer anderen Stelle stehen?",
+    "timestamp": "2026-05-15T10:25:15.032Z"
+  },
+  {
+    "role": "user",
+    "content": "bei Example: 01",
+    "timestamp": "2026-05-15T10:26:27.312Z"
+  },
+  {
+    "role": "assistant",
+    "content": "Das 🔊-Icon habe ich bereits in der vorherigen Änderung genau dort eingefügt — bei `#### 🔊 Example: 01`. Es ist schon an der richtigen Stelle. Kein weiterer Schritt nötig.",
+    "timestamp": "2026-05-15T10:26:27.312Z"
+  }
+]

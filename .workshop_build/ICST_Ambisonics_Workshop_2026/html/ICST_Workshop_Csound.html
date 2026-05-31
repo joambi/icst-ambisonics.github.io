@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICST Ambisonics Workshop – Csound Module</title>
+<style>
+  :root {
+    --dark:#1A1A2E; --panel:#16213E; --card:#0F3460;
+    --accent:#E94560; --accent2:#53C0F0; --accent3:#F5A623;
+    --green:#4CAF50; --purple:#9B59B6; --teal:#1ABC9C;
+    --text:#E0E0E0; --muted:#8892A4; --radius:8px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    background:var(--dark);color:var(--text);min-height:100vh;padding-bottom:60px;}
+
+  /* ── Header ── */
+  header{background:linear-gradient(135deg,var(--panel) 0%,#0a1628 100%);
+    border-bottom:2px solid var(--accent2);padding:24px 40px 18px;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  header h1{font-size:1.4rem;font-weight:700;line-height:1.35;}
+  header h1 span{color:var(--accent2);}
+  .badge{background:var(--card);border:1px solid var(--accent2);border-radius:20px;
+    padding:4px 14px;font-size:0.76rem;color:var(--accent2);white-space:nowrap;}
+
+  /* ── Tabs ── */
+  .tab-bar{background:var(--panel);border-bottom:1px solid #2a3a5e;
+    display:flex;padding:0 28px;overflow-x:auto;gap:0;}
+  .tab{padding:14px 20px;cursor:pointer;font-size:0.86rem;font-weight:600;
+    border-bottom:3px solid transparent;color:var(--muted);white-space:nowrap;transition:all .2s;}
+  .tab:hover{color:var(--text);}
+  .tab.active{color:var(--accent2);border-bottom-color:var(--accent2);}
+
+  .tab-content{display:none;}
+  .tab-content.active{display:block;}
+
+  /* ── Layout ── */
+  .container{max-width:920px;margin:0 auto;padding:32px 20px;}
+
+  /* ── Section heads ── */
+  .sec-head{display:flex;align-items:center;gap:12px;margin:30px 0 14px;}
+  .sec-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+  .sec-title{font-size:1.05rem;font-weight:700;}
+  .sec-sub{font-size:0.79rem;color:var(--muted);margin-top:2px;}
+
+  /* ── Cards ── */
+  .card{background:var(--panel);border:1px solid #2a3a5e;border-radius:var(--radius);
+    padding:20px;margin-bottom:12px;}
+  .card h4{font-size:0.88rem;font-weight:700;margin-bottom:12px;}
+
+  /* ── Module cards (overview) ── */
+  .mod-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0;}
+  @media(max-width:600px){.mod-grid{grid-template-columns:1fr;}}
+  .mod-card{border-radius:var(--radius);padding:16px;cursor:pointer;
+    transition:transform .15s,box-shadow .15s;border:1px solid transparent;}
+  .mod-card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(0,0,0,.4);}
+  .mod-num{font-size:0.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;}
+  .mod-name{font-size:1rem;font-weight:700;margin-bottom:6px;}
+  .mod-desc{font-size:0.8rem;line-height:1.5;opacity:.85;}
+  .mod-files{margin-top:10px;display:flex;flex-wrap:wrap;gap:5px;}
+  .file-chip{font-size:0.7rem;background:rgba(0,0,0,.3);border-radius:4px;padding:2px 7px;
+    font-family:'SF Mono','Fira Mono',monospace;}
+
+  .mod1{background:rgba(83,192,240,.08);border-color:rgba(83,192,240,.3);}
+  .mod2{background:rgba(155,89,182,.08);border-color:rgba(155,89,182,.3);}
+  .mod3{background:rgba(245,166,35,.08);border-color:rgba(245,166,35,.3);}
+  .mod4{background:rgba(76,175,80,.08);border-color:rgba(76,175,80,.3);}
+
+  /* ── Steps ── */
+  .steps{list-style:none;}
+  .steps li{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid #1e2d4a;}
+  .steps li:last-child{border-bottom:none;}
+  .step-n{min-width:22px;font-size:0.74rem;color:var(--muted);padding-top:2px;text-align:right;}
+  .step-b{flex:1;font-size:0.86rem;line-height:1.55;}
+  .step-b strong{color:var(--text);}
+
+  /* ── Notes ── */
+  .note{border-radius:0 4px 4px 0;padding:7px 12px;margin:7px 0;font-size:0.79rem;line-height:1.5;}
+  .ni{background:rgba(83,192,240,.10);border-left:3px solid var(--accent2);color:#a8dcf0;}
+  .nw{background:rgba(233,69,96,.12);border-left:3px solid var(--accent);color:#ffb3b3;}
+  .nt{background:rgba(245,166,35,.10);border-left:3px solid var(--accent3);color:#f7d08a;}
+  .ng{background:rgba(76,175,80,.10);border-left:3px solid var(--green);color:#a5d6a7;}
+
+  /* ── Inline code ── */
+  code{background:var(--card);color:var(--accent2);border-radius:3px;
+    padding:1px 6px;font-family:'SF Mono','Fira Mono','Consolas',monospace;font-size:.8em;}
+  pre{background:#0a0e1a;border:1px solid #1e3a5a;border-radius:6px;
+    padding:14px;overflow-x:auto;margin:10px 0;font-size:.79rem;line-height:1.6;}
+  pre code{background:none;padding:0;font-size:inherit;}
+  .kw{color:#c792ea;} .fn{color:#82aaff;} .st{color:#c3e88d;}
+  .cm{color:#546e7a;font-style:italic;} .nm{color:#f78c6c;}
+
+  /* ── Tables ── */
+  table{width:100%;border-collapse:collapse;font-size:.82rem;margin:8px 0;}
+  th{background:var(--card);color:var(--accent2);padding:8px 12px;text-align:left;
+    font-size:.73rem;text-transform:uppercase;letter-spacing:.06em;}
+  td{padding:8px 12px;border-bottom:1px solid #1e2d4a;vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  tr:hover td{background:rgba(83,192,240,.04);}
+  td:first-child{font-family:'SF Mono','Fira Mono','Consolas',monospace;
+    font-size:.79em;color:#7ee8fa;}
+
+  /* ── Patchbay SVG ── */
+  .patchbay-wrap{background:var(--panel);border:1px solid #2a3a5e;
+    border-radius:var(--radius);padding:20px;overflow-x:auto;margin:8px 0 20px;}
+
+  /* ── OSC port pill ── */
+  .port-pill{display:inline-block;background:rgba(83,192,240,.15);
+    border:1px solid var(--accent2);border-radius:12px;
+    padding:1px 9px;font-size:.76rem;color:var(--accent2);
+    font-family:'SF Mono','Fira Mono','Consolas',monospace;}
+
+  /* ── File list ── */
+  .file-row{display:flex;align-items:center;gap:10px;padding:10px 14px;
+    border-bottom:1px solid #1e2d4a;font-size:.84rem;}
+  .file-row:last-child{border-bottom:none;}
+  .file-icon{font-size:1rem;flex-shrink:0;}
+  .file-name{font-family:'SF Mono','Fira Mono','Consolas',monospace;
+    color:var(--accent2);font-size:.82rem;flex:1;}
+  .file-tag{font-size:.7rem;background:var(--card);border-radius:10px;
+    padding:2px 8px;color:var(--muted);}
+  .file-ok{color:var(--green);font-size:.75rem;font-weight:700;}
+
+  /* ── Progress bar (overview) ── */
+  .mod-prog-wrap{margin:24px 0 8px;}
+  .mod-prog-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+  .prog-label{font-size:.8rem;min-width:110px;color:var(--muted);}
+  .prog-track{flex:1;height:6px;background:var(--card);border-radius:3px;overflow:hidden;}
+  .prog-fill{height:100%;border-radius:3px;}
+  .prog-val{font-size:.76rem;min-width:30px;text-align:right;color:var(--muted);}
+
+  footer{text-align:center;padding:28px 20px 0;font-size:.75rem;
+    color:var(--muted);border-top:1px solid #2a3a5e;margin-top:40px;}
+  footer a{color:var(--accent2);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>ICST Ambisonics Workshop 2026<br>
+    <span>Csound – 4 Module</span></h1>
+  </div>
+  <div class="badge">10 Dateien · ZHdK ICST</div>
+</header>
+
+<div class="tab-bar">
+  <div class="tab active"  onclick="showTab('overview',this)">📦 Übersicht</div>
+  <div class="tab" onclick="showTab('mod1',this)">🔵 Modul 1 – Decoder</div>
+  <div class="tab" onclick="showTab('mod2',this)">🟣 Modul 2 – HOA Synthese</div>
+  <div class="tab" onclick="showTab('mod3',this)">🟠 Modul 3 – OSC Bewegung</div>
+  <div class="tab" onclick="showTab('mod4',this)">🟢 Modul 4 – Klangerzeuger</div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     ÜBERSICHT
+══════════════════════════════════════════ -->
+<div id="tab-overview" class="tab-content active">
+<div class="container">
+
+  <!-- Patchbay -->
+  <div class="sec-head">
+    <div class="sec-dot" style="background:var(--accent2)"></div>
+    <div>
+      <div class="sec-title">System-Patchbay</div>
+      <div class="sec-sub">Signalfluss aller 4 Module im Überblick</div>
+    </div>
+  </div>
+
+  <div class="patchbay-wrap">
+    <svg viewBox="0 0 820 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;min-width:600px;">
+      <defs>
+        <marker id="a2" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L7,3z" fill="#53C0F0"/>
+        </marker>
+        <marker id="ag" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L7,3z" fill="#4CAF50"/>
+        </marker>
+        <marker id="ao" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L7,3z" fill="#F5A623"/>
+        </marker>
+        <marker id="ap" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L7,3z" fill="#9B59B6"/>
+        </marker>
+      </defs>
+
+      <!-- ── Modul 1 row ── -->
+      <rect x="10" y="20" width="160" height="52" rx="7" fill="#0F3460" stroke="#53C0F0" stroke-width="1.5"/>
+      <text x="90" y="41" fill="#53C0F0" font-size="11" font-weight="bold" text-anchor="middle">Modul 1</text>
+      <text x="90" y="56" fill="#8892A4" font-size="9.5" text-anchor="middle">ambisonics_icst_decoder</text>
+      <text x="90" y="68" fill="#546e7a" font-size="9" text-anchor="middle">bformenc1 → VST3 Decoder</text>
+      <line x1="170" y1="46" x2="240" y2="46" stroke="#53C0F0" stroke-width="1.5" marker-end="url(#a2)"/>
+      <text x="205" y="41" fill="#546e7a" font-size="8.5" text-anchor="middle">VST3</text>
+
+      <!-- ── Modul 2 row ── -->
+      <rect x="10" y="90" width="160" height="52" rx="7" fill="#0F3460" stroke="#9B59B6" stroke-width="1.5"/>
+      <text x="90" y="111" fill="#9B59B6" font-size="11" font-weight="bold" text-anchor="middle">Modul 2</text>
+      <text x="90" y="126" fill="#8892A4" font-size="9.5" text-anchor="middle">additive_synth_hoa16</text>
+      <text x="90" y="138" fill="#546e7a" font-size="9" text-anchor="middle">bformenc1 × 16 → 16ch HOA</text>
+      <line x1="170" y1="116" x2="240" y2="116" stroke="#9B59B6" stroke-width="1.5" marker-end="url(#ap)"/>
+      <text x="205" y="111" fill="#546e7a" font-size="8.5" text-anchor="middle">16 ch</text>
+
+      <!-- ── Modul 3 row ── -->
+      <rect x="10" y="160" width="160" height="52" rx="7" fill="#0F3460" stroke="#F5A623" stroke-width="1.5"/>
+      <text x="90" y="181" fill="#F5A623" font-size="11" font-weight="bold" text-anchor="middle">Modul 3</text>
+      <text x="90" y="196" fill="#8892A4" font-size="9.5" text-anchor="middle">pendulum / Lissajous</text>
+      <text x="90" y="208" fill="#546e7a" font-size="9" text-anchor="middle">OSCsend XYZ → Port 50001</text>
+      <line x1="170" y1="186" x2="240" y2="186" stroke="#F5A623" stroke-width="1.5" marker-end="url(#ao)"/>
+      <text x="205" y="181" fill="#546e7a" font-size="8.5" text-anchor="middle">OSC</text>
+
+      <!-- ── Modul 4 row ── -->
+      <rect x="10" y="230" width="160" height="52" rx="7" fill="#0F3460" stroke="#4CAF50" stroke-width="1.5"/>
+      <text x="90" y="251" fill="#4CAF50" font-size="11" font-weight="bold" text-anchor="middle">Modul 4</text>
+      <text x="90" y="266" fill="#8892A4" font-size="9.5" text-anchor="middle">fof_choir / dust / granulator</text>
+      <text x="90" y="278" fill="#546e7a" font-size="9" text-anchor="middle">OSClisten :50002 → Audio</text>
+      <line x1="170" y1="256" x2="240" y2="286" stroke="#4CAF50" stroke-width="1.5" marker-end="url(#ag)"/>
+
+      <!-- ── Center: AmbiEncoder ── -->
+      <rect x="240" y="100" width="145" height="65" rx="7" fill="#0d2137" stroke="#53C0F0" stroke-width="2"/>
+      <text x="312" y="125" fill="#53C0F0" font-size="11" font-weight="bold" text-anchor="middle">ICST</text>
+      <text x="312" y="140" fill="#53C0F0" font-size="11" font-weight="bold" text-anchor="middle">AmbiEncoder_64</text>
+      <text x="312" y="156" fill="#546e7a" font-size="9" text-anchor="middle">OSC :50001 · XYZ/AED</text>
+      <!-- from mod3 OSC -->
+      <line x1="385" y1="132" x2="455" y2="132" stroke="#53C0F0" stroke-width="1.5" marker-end="url(#a2)"/>
+
+      <!-- ── Center right: B-Format Bus ── -->
+      <rect x="455" y="100" width="130" height="65" rx="7" fill="#0d2137" stroke="#9B59B6" stroke-width="2"/>
+      <text x="520" y="126" fill="#9B59B6" font-size="11" font-weight="bold" text-anchor="middle">B-Format</text>
+      <text x="520" y="141" fill="#8892A4" font-size="9.5" text-anchor="middle">HOA Bus (16–64 ch)</text>
+      <text x="520" y="155" fill="#546e7a" font-size="9" text-anchor="middle">REAPER Ambi-Bus</text>
+      <!-- direct from mod1/2 -->
+      <line x1="240" y1="46" x2="312" y2="100" stroke="#53C0F0" stroke-width="1" stroke-dasharray="4,3" opacity=".5"/>
+      <line x1="240" y1="116" x2="455" y2="125" stroke="#9B59B6" stroke-width="1" stroke-dasharray="4,3" opacity=".5"/>
+      <line x1="585" y1="132" x2="655" y2="132" stroke="#9B59B6" stroke-width="1.5" marker-end="url(#ap)"/>
+
+      <!-- ── Right: Decoder ── -->
+      <rect x="655" y="100" width="130" height="65" rx="7" fill="#0d2137" stroke="#4CAF50" stroke-width="2"/>
+      <text x="720" y="126" fill="#4CAF50" font-size="11" font-weight="bold" text-anchor="middle">AmbiDecoder</text>
+      <text x="720" y="141" fill="#8892A4" font-size="9.5" text-anchor="middle">ICST VST3</text>
+      <text x="720" y="155" fill="#546e7a" font-size="9" text-anchor="middle">8/16-ch Speaker</text>
+      <line x1="785" y1="132" x2="810" y2="132" stroke="#4CAF50" stroke-width="1.5" marker-end="url(#ag)"/>
+      <text x="813" y="136" fill="#4CAF50" font-size="10">🔊</text>
+
+      <!-- ── OSC legend ── -->
+      <rect x="10" y="295" width="800" height="20" rx="4" fill="rgba(10,14,26,.5)"/>
+      <circle cx="22" cy="305" r="4" fill="#F5A623"/>
+      <text x="30" y="309" fill="#8892A4" font-size="8.5">OSC :50001 → AmbiEncoder (Modul 3)</text>
+      <circle cx="200" cy="305" r="4" fill="#4CAF50"/>
+      <text x="208" y="309" fill="#8892A4" font-size="8.5">OSC :50002 → Csound Instruments (Modul 4)</text>
+      <circle cx="420" cy="305" r="4" fill="#9B59B6"/>
+      <text x="428" y="309" fill="#8892A4" font-size="8.5">HOA Audio direkt (Modul 1 &amp; 2)</text>
+      <circle cx="590" cy="305" r="4" fill="#53C0F0"/>
+      <text x="598" y="309" fill="#8892A4" font-size="8.5">Max/REAPER → AmbiEncoder → Decoder</text>
+    </svg>
+  </div>
+
+  <!-- OSC Port Tabelle -->
+  <div class="sec-head">
+    <div class="sec-dot" style="background:var(--accent3)"></div>
+    <div><div class="sec-title">OSC Port-Übersicht</div></div>
+  </div>
+  <div class="card">
+    <table>
+      <thead><tr><th>Port</th><th>Richtung</th><th>Adresse</th><th>Argumente</th><th>Benutzt von</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="port-pill">50001</span></td>
+          <td>→ AmbiEncoder</td>
+          <td>/icst/ambi/source/xyz<br>/icst/ambi/sourceindex/xyz</td>
+          <td>i ff (index, x, y) oder fff</td>
+          <td>pendulum_12ch, pendulum_waves, ICST_Lissajous16</td>
+        </tr>
+        <tr>
+          <td><span class="port-pill">9001</span></td>
+          <td>→ AmbiEncoder</td>
+          <td>/icst/ambi/source/aed</td>
+          <td>fff (az, el, dist)</td>
+          <td>ICST_Lissajous_OSC (konfigurierbar)</td>
+        </tr>
+        <tr>
+          <td><span class="port-pill">50002</span></td>
+          <td>→ Csound</td>
+          <td>/xy</td>
+          <td>ff (vowel 0–1, octDiv 0–4)</td>
+          <td>fof_choir_osc (Empfänger)</td>
+        </tr>
+        <tr>
+          <td><span class="port-pill">50002</span></td>
+          <td>→ Csound</td>
+          <td>/xyz</td>
+          <td>fff (toneVar, pitch Hz, dustFreq)</td>
+          <td>dust_osc (Empfänger)</td>
+        </tr>
+        <tr>
+          <td><span class="port-pill">50010</span></td>
+          <td>→ Max</td>
+          <td>/act/scene/target</td>
+          <td>s (scene_name)</td>
+          <td>REAPER → ACT_Circle_Mover_Main</td>
+        </tr>
+        <tr>
+          <td><span class="port-pill">4000</span></td>
+          <td>→ AmbiEncoder</td>
+          <td>/icst/ambi/source/xyz</td>
+          <td>i ff</td>
+          <td>pendulum_waves_osc (alt. Port)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modul-Grid -->
+  <div class="sec-head">
+    <div class="sec-dot" style="background:var(--green)"></div>
+    <div><div class="sec-title">Module im Überblick</div></div>
+  </div>
+  <div class="mod-grid">
+    <div class="mod-card mod1" onclick="showTab('mod1',document.querySelectorAll('.tab')[1])">
+      <div class="mod-num" style="color:var(--accent2)">Modul 1 · Einstieg</div>
+      <div class="mod-name">Ambisonics-Decoder</div>
+      <div class="mod-desc">Komplette Signal-Kette: Csound bformenc1 → ICST AmbiDecoder VST3 → 8 Lautsprecher. Versteht den Workflow Encoding ↔ Decoding.</div>
+      <div class="mod-files">
+        <span class="file-chip">ambisonics_icst_decoder.csd</span>
+      </div>
+    </div>
+    <div class="mod-card mod2" onclick="showTab('mod2',document.querySelectorAll('.tab')[2])">
+      <div class="mod-num" style="color:var(--purple)">Modul 2 · HOA Synthese</div>
+      <div class="mod-name">Additive Synthese → HOA</div>
+      <div class="mod-desc">bformenc1-Opcode im Detail: 16 Partials an 16 HOA-Kanälen. Dann 30 Partials live per MIDI spielen und Klangfarben erkunden.</div>
+      <div class="mod-files">
+        <span class="file-chip">additive_synth_hoa16.csd</span>
+        <span class="file-chip">additive_30partials_16ch.csd</span>
+      </div>
+    </div>
+    <div class="mod-card mod3" onclick="showTab('mod3',document.querySelectorAll('.tab')[3])">
+      <div class="mod-num" style="color:var(--accent3)">Modul 3 · Dynamik</div>
+      <div class="mod-name">OSC-Bewegung im Raum</div>
+      <div class="mod-desc">Csound rechnet Physik/Geometrie, AmbiEncoder bewegt Quellen. 12 Pendel, Lissajous-Figuren, 16 simultane Quellen.</div>
+      <div class="mod-files">
+        <span class="file-chip">pendulum_12ch_osc.csd</span>
+        <span class="file-chip">pendulum_waves_osc.csd</span>
+        <span class="file-chip">ICST_Lissajous_OSC.csd</span>
+        <span class="file-chip">ICST_Lissajous16_OSC_AmbiEncoder64.csd</span>
+      </div>
+    </div>
+    <div class="mod-card mod4" onclick="showTab('mod4',document.querySelectorAll('.tab')[4])">
+      <div class="mod-num" style="color:var(--green)">Modul 4 · Kombination</div>
+      <div class="mod-name">Gesteuerte Klangerzeuger</div>
+      <div class="mod-desc">Csound als OSC-Empfänger: FOF-Chor und Dust extern steuern. Granulator als 16-Kanal Klangquelle. Kombination mit REAPER/Max.</div>
+      <div class="mod-files">
+        <span class="file-chip">fof_choir_osc.csd</span>
+        <span class="file-chip">dust_osc.csd</span>
+        <span class="file-chip">granulator_16ch.csd</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alle Dateien -->
+  <div class="sec-head" style="margin-top:28px;">
+    <div class="sec-dot" style="background:var(--muted)"></div>
+    <div><div class="sec-title">Alle Dateien in diesem Ordner</div></div>
+  </div>
+  <div class="card" style="padding:0;">
+    <div class="file-row"><span class="file-icon">📁</span><span class="file-name" style="color:var(--muted);">Modul_1_Decoder/</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">ambisonics_icst_decoder.csd</span><span class="file-tag">bformenc1 · VST3</span><span class="file-ok">✓</span></div>
+    <div class="file-row"><span class="file-icon">📁</span><span class="file-name" style="color:var(--muted);">Modul_2_HOA_Synthese/</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">additive_synth_hoa16.csd</span><span class="file-tag">16-Partial HOA · MIDI</span><span class="file-ok">✓</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">additive_30partials_16ch.csd</span><span class="file-tag">30-Partial · 16ch</span><span class="file-ok">✓</span></div>
+    <div class="file-row"><span class="file-icon">📁</span><span class="file-name" style="color:var(--muted);">Modul_3_OSC_Bewegung/</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">pendulum_12ch_osc.csd</span><span class="file-tag">12 Pendel · OSCsend :50001</span><span class="file-ok">✓</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">pendulum_waves_osc.csd</span><span class="file-tag">Pendulum Waves · 12 src</span><span class="file-ok">✓</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">ICST_Lissajous_OSC.csd</span><span class="file-tag">Lissajous AED · :9001</span><span class="file-ok">✓</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">ICST_Lissajous16_OSC_AmbiEncoder64.csd</span><span class="file-tag">16 src XYZ · :50001</span><span class="file-ok">✓</span></div>
+    <div class="file-row"><span class="file-icon">📁</span><span class="file-name" style="color:var(--muted);">Modul_4_Klangerzeuger/</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">fof_choir_osc.csd</span><span class="file-tag">FOF Vocal · OSClisten :50002</span><span class="file-ok">✓</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">dust_osc.csd</span><span class="file-tag">Stochastisch · OSClisten :50002</span><span class="file-ok">✓</span></div>
+    <div class="file-row" style="padding-left:32px;"><span class="file-icon">🎵</span><span class="file-name">granulator_16ch.csd</span><span class="file-tag">Granular · 16ch</span><span class="file-ok">✓</span></div>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     MODUL 1
+══════════════════════════════════════════ -->
+<div id="tab-mod1" class="tab-content">
+<div class="container">
+  <div class="sec-head">
+    <div class="sec-dot" style="background:var(--accent2);width:14px;height:14px;"></div>
+    <div>
+      <div class="sec-title" style="color:var(--accent2)">Modul 1 – Ambisonics-Decoder</div>
+      <div class="sec-sub">Komplette Signalkette: Csound → ICST AmbiDecoder VST3 → 8 Lautsprecher</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 style="color:var(--accent2)">Lernziel</h4>
+    <p style="font-size:.87rem;line-height:1.6;">Verstehen wie <code>bformenc1</code> eine Mono-Quelle in B-Format enkodiert und der ICST AmbiDecoder VST3 diesen für ein Lautsprecher-Array aufbereitet. Zwei Quellen — eine rotierende und eine statische — demonstrieren den Unterschied.</p>
+  </div>
+
+  <div class="card">
+    <h4>Voraussetzungen</h4>
+    <ul class="steps">
+      <li><span class="step-n">✓</span><div class="step-b">Csound 6.18+ mit <code>vst4cs</code> Opcode-Plugin installiert</div></li>
+      <li><span class="step-n">✓</span><div class="step-b">ICST AmbiDecoder.vst3 in <code>/Library/Audio/Plug-Ins/VST3/ICST Ambisonics Plugins/</code></div></li>
+      <li><span class="step-n">✓</span><div class="step-b">Csound-Output auf 8 Kanäle konfiguriert (Interface oder DAW)</div></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>Schritt-für-Schritt</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">Cabbage (oder Csound direkt) starten → <code>Modul_1_Decoder/ambisonics_icst_decoder.csd</code> öffnen.</div></li>
+      <li><span class="step-n">2.</span><div class="step-b"><strong>VST3-Pfad prüfen</strong>: Zeile <code>vst3init</code> – Pfad auf dein System anpassen falls nötig. Standard: <code>/Library/Audio/Plug-Ins/VST3/ICST Ambisonics Plugins/AmbiDecoder.vst3</code></div></li>
+      <li><span class="step-n">3.</span><div class="step-b">Render starten → Instrument 1 erzeugt rotierende Quelle (Sinuston + Obertöne), Instrument 2 eine statische Quelle rechts-vorne.</div></li>
+      <li><span class="step-n">4.</span><div class="step-b"><strong>Beobachten</strong>: bformenc1-Ausgabe (W, X, Y, Z) → AmbiDecoder verteilt auf 8 Kanäle → Lautsprecher-Ortung hörbar.</div></li>
+      <li><span class="step-n">5.</span><div class="step-b"><strong>Experiment</strong>: Azimut-Wert in Instrument 2 von <code>0.5</code> auf <code>1.0, 2.0, 3.14</code> etc. ändern und Effekt beobachten.</div></li>
+    </ul>
+    <div class="nt">💡 Schlüssel-Opcode: <code>bformenc1 aW,aX,aY,aZ, aSig, kAzimuth, kElevation</code> — Azimuth in Radians (0=vorne, π/2=links, π=hinten)</div>
+  </div>
+
+  <div class="card">
+    <h4>Kerncode-Ausschnitt</h4>
+    <pre><code><span class="cm">; FOA Encoding einer Sinusquelle mit rotierendem Azimut</span>
+<span class="kw">instr</span> <span class="nm">1</span>
+  kAzimuth <span class="fn">phasor</span> <span class="nm">0.1</span>           <span class="cm">; langsame Rotation (0.1 Hz)</span>
+  kAzimuth = kAzimuth * <span class="nm">6.2832</span>  <span class="cm">; → 0..2π</span>
+  aSig     <span class="fn">oscil</span>  <span class="nm">0.5</span>, <span class="nm">440</span>
+  aW,aX,aY,aZ <span class="fn">bformenc1</span> aSig, kAzimuth, <span class="nm">0</span>
+  <span class="fn">vst3audio</span> iVST, aW,aX,aY,aZ  <span class="cm">; → AmbiDecoder</span>
+<span class="kw">endin</span></code></pre>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     MODUL 2
+══════════════════════════════════════════ -->
+<div id="tab-mod2" class="tab-content">
+<div class="container">
+  <div class="sec-head">
+    <div class="sec-dot" style="background:var(--purple);width:14px;height:14px;"></div>
+    <div>
+      <div class="sec-title" style="color:var(--purple)">Modul 2 – HOA Additive Synthese</div>
+      <div class="sec-sub">16 bis 30 Partials, jede an eigenem Azimut-Platz, 3rd Order HOA (16 Kanäle)</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 style="color:var(--purple)">Lernziel</h4>
+    <p style="font-size:.87rem;line-height:1.6;">Additive Synthese und Ambisonics-Encoding direkt verbinden: Jeder Oberton hat seine eigene Raumposition. Klangfarbe ≡ Klangbild im Raum.</p>
+  </div>
+
+  <div class="card">
+    <h4>A: additive_synth_hoa16.csd – 16 Partials auf HOA 3rd Order</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">In Cabbage öffnen → MIDI-Keyboard anschliessen (oder «Play» Button im GUI)</div></li>
+      <li><span class="step-n">2.</span><div class="step-b"><strong>Positionen</strong>: 16 Partials verteilt auf 0°, 22.5°, 45°, …, 337.5° — gleichmässig um den Hörer.</div></li>
+      <li><span class="step-n">3.</span><div class="step-b"><strong>LFO-Modus</strong> wählen: Tremolo / Vibrato / Both → moduliert Amplitude/Frequenz pro Partial individuell.</div></li>
+      <li><span class="step-n">4.</span><div class="step-b"><strong>Inharmonicity</strong>-Koeffizient (B) erhöhen → Partiell-Frequenzen leicht verstimmen → Klang wird rauer, räumlich diffuser.</div></li>
+      <li><span class="step-n">5.</span><div class="step-b">16-Kanal-Ausgang → direkt in REAPER Ambi-Bus routen (HOA 3rd Order FuMa).</div></li>
+    </ul>
+    <div class="ni">ℹ️ Output-Format: HOA FuMa (W, X, Y, Z, R, S, T, U, V, K, L, M, N, O, P, Q) — 16 Kanäle = 3rd Order</div>
+  </div>
+
+  <div class="card">
+    <h4>B: additive_30partials_16ch.csd – 30 Partials, MIDI-spielbar</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">In Cabbage öffnen → MIDI-Keyboard: Grundton bestimmt alle Partial-Frequenzen.</div></li>
+      <li><span class="step-n">2.</span><div class="step-b"><strong>XY-Pad</strong>: X steuert Partial-Amplituden-Spread, Y den Basis-Level.</div></li>
+      <li><span class="step-n">3.</span><div class="step-b"><strong>Preset-Buttons</strong>: «Harmonic» → natürliche Obertöne, «Randomize» → zufällige Partial-Ratios, «Zero» → stille Partials.</div></li>
+      <li><span class="step-n">4.</span><div class="step-b">Partials 17–30 wrappen auf Kanäle 1–14 (summiert) → dichteres Klangbild als Modul 2A.</div></li>
+      <li><span class="step-n">5.</span><div class="step-b"><strong>Reverb</strong>-Send (Global Reverb per <code>reverbsc</code>) auf allen 16 Kanälen gleichzeitig aktiv.</div></li>
+    </ul>
+    <div class="nt">💡 Vergleich der beiden Dateien: hoa16 hat Ambisonics-Encoding (bformenc1), 30partials sendet direkte Kanal-Zuweisungen. Zwei verschiedene Ansätze für mehrkanal Synthese.</div>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     MODUL 3
+══════════════════════════════════════════ -->
+<div id="tab-mod3" class="tab-content">
+<div class="container">
+  <div class="sec-head">
+    <div class="sec-dot" style="background:var(--accent3);width:14px;height:14px;"></div>
+    <div>
+      <div class="sec-title" style="color:var(--accent3)">Modul 3 – OSC Bewegung im Raum</div>
+      <div class="sec-sub">Csound berechnet Trajektorien → OSC → ICST AmbiEncoder_64 bewegt die Quellen</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 style="color:var(--accent3)">Lernziel</h4>
+    <p style="font-size:.87rem;line-height:1.6;">Csound als räumlichen Algorithmus-Generator: Physikmodelle und Lissajous-Figuren liefern XYZ-Koordinaten, die via OSC den AmbiEncoder in Echtzeit steuern.</p>
+    <div class="nw" style="margin-top:10px;">⚠ ACT_Circle_Mover_Main.app muss <strong>vor</strong> den Csound-Patches gestartet sein und auf Port 50001 hören.</div>
+  </div>
+
+  <div class="card">
+    <h4>A: pendulum_12ch_osc.csd – 12 Pendel im Kreis</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">App starten → Port-Nummer im GUI einstellen (Standard: konfigurierbar). AmbiEncoder auf <span class="port-pill">50001</span> hören.</div></li>
+      <li><span class="step-n">2.</span><div class="step-b"><strong>12 Pendel</strong>: jedes an 30°-Abstand (0°, 30°, 60°, …). Individuelle BPM-Frequenzen → Schwebungen entstehen.</div></li>
+      <li><span class="step-n">3.</span><div class="step-b"><strong>Damping</strong>-Zeit anpassen: kurze Dämpfung → schnelle Pendel-Abklingzeit, langer → anhaltende Bewegung.</div></li>
+      <li><span class="step-n">4.</span><div class="step-b">OSC-Rate: 10 Hz (alle 100 ms) → ausreichend für wahrnehmbare Bewegung.</div></li>
+      <li><span class="step-n">5.</span><div class="step-b">Audio-Output: Stereo-Monitor (nur Kontrolle) — räumliches Signal kommt vom AmbiEncoder.</div></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>B: pendulum_waves_osc.csd – Interferenz-Patterns (12 Quellen)</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">Port auf <span class="port-pill">4000</span> oder <span class="port-pill">50001</span> stellen (im GUI).</div></li>
+      <li><span class="step-n">2.</span><div class="step-b"><strong>Speed</strong> erhöhen: Pendel-Frequenz-Schritte werden grösser → Interferenz-Muster ändern sich schneller.</div></li>
+      <li><span class="step-n">3.</span><div class="step-b"><strong>Sound-Auswahl</strong>: «Ping» (Sinuston) oder «Sample» (Audiodatei laden). 12 diskrete Ausgangskanäle.</div></li>
+      <li><span class="step-n">4.</span><div class="step-b"><strong>Swing-Mapping</strong>: X-Achse der Pendelschwingung → Raum-X; Pendel-Index (1–12) → Raum-Y-Tiefe.</div></li>
+      <li><span class="step-n">5.</span><div class="step-b">«Record Out» aktivieren → WAV-Datei mit Timestamp wird gespeichert.</div></li>
+    </ul>
+    <div class="ni">ℹ️ Pendulum Waves erzeugen charakteristische Phasenmuster: Alle Pendel starten synchron, divergieren und kehren nach exakter Zeit wieder zur Synchronisation zurück.</div>
+  </div>
+
+  <div class="card">
+    <h4>C: ICST_Lissajous_OSC.csd – Lissajous-Figur (1 Quelle, AED)</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">Cabbage-Plugin starten → GUI-Port auf <span class="port-pill">9001</span> (oder was AmbiEncoder hört).</div></li>
+      <li><span class="step-n">2.</span><div class="step-b"><strong>Freq X / Freq Y</strong> (1–12): Verhältnis bestimmt die Lissajous-Form. 1:1 = Kreis, 2:1 = ∞-Figur, 3:2 = komplexere Kurve.</div></li>
+      <li><span class="step-n">3.</span><div class="step-b"><strong>Speed</strong> (logarithmisch): steuert wie schnell die Quelle die Figur durchläuft.</div></li>
+      <li><span class="step-n">4.</span><div class="step-b"><strong>Distance</strong>: setzt den Radius der Figur (0.0–1.0). Kleine Werte → enge Bewegung um Zentrum.</div></li>
+      <li><span class="step-n">5.</span><div class="step-b">OSC-Adresse: <code>/icst/ambi/source/aed</code> mit Azimuth, Elevation, Distance.</div></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h4>D: ICST_Lissajous16_OSC_AmbiEncoder64.csd – 16 simultane Quellen</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">Score-basiert: 16 Instrumente mit unterschiedlichen Lissajous-Parametern laufen parallel.</div></li>
+      <li><span class="step-n">2.</span><div class="step-b">OSC: <span class="port-pill">50001</span>, Adresse <code>/icst/ambi/sourceindex/xyz</code> — AmbiEncoder muss 16 Sources unterstützen.</div></li>
+      <li><span class="step-n">3.</span><div class="step-b"><strong>Shape-Varianten</strong>: 4 Morphing-Varianten (via Score-Parameter) → verschiedene Kurven-Familien.</div></li>
+      <li><span class="step-n">4.</span><div class="step-b"><strong>Z-Depth</strong>: Elevation-Kontrolle unabhängig pro Quelle.</div></li>
+    </ul>
+    <div class="ng">✓ Maximale Komplexität: 16 Quellen gleichzeitig, alle in Bewegung — perfekt als Abschluss-Demo für Modul 3.</div>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     MODUL 4
+══════════════════════════════════════════ -->
+<div id="tab-mod4" class="tab-content">
+<div class="container">
+  <div class="sec-head">
+    <div class="sec-dot" style="background:var(--green);width:14px;height:14px;"></div>
+    <div>
+      <div class="sec-title" style="color:var(--green)">Modul 4 – Gesteuerte Klangerzeuger</div>
+      <div class="sec-sub">Csound als OSC-Empfänger: FOF-Chor, Dust und Granulator extern steuern</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4 style="color:var(--green)">Lernziel</h4>
+    <p style="font-size:.87rem;line-height:1.6;">Csound als «Instrument», das von aussen — aus Max, REAPER, einem anderen Csound-Patch oder einem Controller — gesteuert wird. OSC-Empfang kombiniert mit Ambisonics-Routing.</p>
+  </div>
+
+  <div class="card">
+    <h4>A: fof_choir_osc.csd – FOF Vokal-Synthesizer</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">In Cabbage als Plugin laden (VST3/AU) oder standalone starten. Csound hört auf <span class="port-pill">50002</span>.</div></li>
+      <li><span class="step-n">2.</span><div class="step-b"><strong>5 Stimmtypen</strong>: Bass, Tenor, Countertenor, Alto, Soprano — per Dropdown wählen. Jede hat eigene Formant-Tabellen.</div></li>
+      <li><span class="step-n">3.</span><div class="step-b"><strong>OSC steuern</strong> via Max oder Python:<br>
+        Adresse <code>/xy</code>, 2 Floats: <code>vowel</code> (0.0–1.0 = A→E→I→O→U), <code>octDiv</code> (0–4 = Oktav-Division)</div></li>
+      <li><span class="step-n">4.</span><div class="step-b"><strong>MIDI-Kontrolle</strong>: CC1 → Vibrato/Tremolo, CC2 → Vokal-Morphing. Keyboard → Tonhöhe.</div></li>
+      <li><span class="step-n">5.</span><div class="step-b"><strong>Kombinations-Beispiel</strong>: pendulum_waves steuert räumliche Position via AmbiEncoder, ein separater Patch sendet auf Port 50002 die Vokal-Parameter → Chor bewegt sich und verändert gleichzeitig seinen Vokal.</div></li>
+    </ul>
+    <div class="nt">💡 FOF (Fonction d'Onde Formatique) ist Csounds Vokal-Synthesizer-Opcode: 5 Formant-Filter pro Stimme, natürliche Vokalklang-Simulation.</div>
+
+    <h4 style="margin-top:16px;">OSC-Testbefehl (Python)</h4>
+    <pre><code><span class="kw">import</span> socket, struct
+
+<span class="kw">def</span> <span class="fn">osc</span>(addr, *floats):
+    <span class="kw">def</span> <span class="fn">pad</span>(d): <span class="kw">return</span> d + b<span class="st">'\0'</span>*((<span class="nm">4</span>-(len(d)%<span class="nm">4</span>))%<span class="nm">4</span>)
+    p  = pad(addr.encode()+b<span class="st">'\0'</span>)
+    p += pad((<span class="st">','</span>+<span class="st">'f'</span>*len(floats)).encode()+b<span class="st">'\0'</span>)
+    p += struct.pack(<span class="st">f'>{len(floats)}f'</span>, *floats)
+    socket.socket(socket.AF_INET,socket.SOCK_DGRAM).sendto(p,(<span class="st">'127.0.0.1'</span>,<span class="nm">50002</span>))
+
+<span class="cm"># Vokal = 0.3 (zwischen A und E), Oktav-Division = 1</span>
+<span class="fn">osc</span>(<span class="st">'/xy'</span>, <span class="nm">0.3</span>, <span class="nm">1.0</span>)</code></pre>
+  </div>
+
+  <div class="card">
+    <h4>B: dust_osc.csd – Stochastischer Generator</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">In Cabbage laden → <span class="port-pill">50002</span> hört auf <code>/xyz</code>, 3 Floats.</div></li>
+      <li><span class="step-n">2.</span><div class="step-b"><strong>X</strong> (0.0–1.0): ToneVar = Tonhöhen-Variation der Impulse. 0 = alle gleich, 1 = maximale Streuung.</div></li>
+      <li><span class="step-n">3.</span><div class="step-b"><strong>Y</strong> (0.1–20000 Hz): Pitch / Filter-Cutoff. Niedrig = tiefe dunkle Impulse, hoch = Zischen.</div></li>
+      <li><span class="step-n">4.</span><div class="step-b"><strong>Z</strong> (−1.0–+1.0): Dust-Frequenz. Negativ = sehr sparse (einzelne Clicks), positiv = dichtes Rauschen.</div></li>
+      <li><span class="step-n">5.</span><div class="step-b"><strong>Kombination</strong> mit Modul 3: pendulum_waves sendet XYZ für AmbiEncoder (Port 50001) + gleichzeitig an Port 50002 → Pendel-Position steuert auch die Klang-Textur.</div></li>
+    </ul>
+    <div class="ni">ℹ️ Beide Patches (fof_choir + dust) können gleichzeitig laufen — unterschiedliche OSC-Adressen, gleicher Port 50002. Sender muss entsprechend beide Adressen beschicken.</div>
+  </div>
+
+  <div class="card">
+    <h4>C: granulator_16ch.csd – Sample-Granulator (16 Kanäle)</h4>
+    <ul class="steps">
+      <li><span class="step-n">1.</span><div class="step-b">In Cabbage laden → Audiodatei via File-Chooser im GUI laden.</div></li>
+      <li><span class="step-n">2.</span><div class="step-b"><strong>Grain Size</strong>: 10–500 ms. Klein = körnig/perkussiv, gross = fliessend/pitched.</div></li>
+      <li><span class="step-n">3.</span><div class="step-b"><strong>Density</strong>: Anzahl gleichzeitiger Grains. Hoch = dichter Klang-Teppich.</div></li>
+      <li><span class="step-n">4.</span><div class="step-b"><strong>Spread</strong>: Kanal-Verteilung der Grains auf 16 Kanäle. 0 = alle auf Ch1, 1 = gleichmässig verteilt.</div></li>
+      <li><span class="step-n">5.</span><div class="step-b"><strong>Envelope</strong>: Hann / Gaussian / Trapezoid / Ramp — Grain-Hüllkurve wählen.</div></li>
+      <li><span class="step-n">6.</span><div class="step-b">16-Kanal-Ausgang → AmbiDecoder oder 16-Kanal-Interface routen.</div></li>
+    </ul>
+    <div class="nt">💡 Granulator hat kein OSC — wird manuell über das Cabbage-GUI gesteuert. Als Klangquelle für Modul-4-Kombinations-Patches ideal.</div>
+  </div>
+
+  <div class="card">
+    <h4 style="color:var(--green)">Kombinations-Szenario: Alle Module zusammen</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0;">
+      <div style="background:rgba(83,192,240,.07);border:1px solid #2a4a6e;border-radius:6px;padding:12px;">
+        <div style="font-weight:700;font-size:.84rem;margin-bottom:8px;color:var(--accent2)">Signal-Routing</div>
+        <div style="font-size:.8rem;line-height:1.7;">
+          pendulum_waves → <span class="port-pill">50001</span> → AmbiEncoder<br>
+          pendulum_waves → <span class="port-pill">50002</span> → fof_choir<br>
+          Lissajous16 → <span class="port-pill">50001</span> → AmbiEncoder<br>
+          granulator → 16ch → REAPER Bus<br>
+          REAPER → <span class="port-pill">50010</span> → Max Scenes
+        </div>
+      </div>
+      <div style="background:rgba(76,175,80,.07);border:1px solid #1a3a20;border-radius:6px;padding:12px;">
+        <div style="font-weight:700;font-size:.84rem;margin-bottom:8px;color:var(--green)">Effekt</div>
+        <div style="font-size:.8rem;line-height:1.7;">
+          12 Pendel bewegen sich im Raum<br>
+          + Vokal ändert sich mit Position<br>
+          + 16 Lissajous-Quellen überlagert<br>
+          + Granulat-Teppich als Basis<br>
+          + Scene-Wechsel via REAPER-Marker
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<footer>
+  <p>ICST Ambisonics Workshop 2026 · ZHdK / ICST ·
+    <a href="https://www.zhdk.ch/forschung/icst" target="_blank">zhdk.ch/forschung/icst</a></p>
+  <p style="margin-top:6px;">
+    <a href="../MaxReaper/ICST_Betriebsanleitung.html">← Betriebsanleitung</a> &nbsp;·&nbsp;
+    <a href="../MaxReaper/ICST_AmbiEncoder_Tutorial.html">AmbiEncoder Tutorial</a> &nbsp;·&nbsp;
+    <a href="../MaxReaper/ICST_Workshop_Tools.html">Workshop Tools</a>
+  </p>
+</footer>
+
+<script>
+  function showTab(id, el) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    if (el) el.classList.add('active');
+  }
+</script>
+</body>
+</html>

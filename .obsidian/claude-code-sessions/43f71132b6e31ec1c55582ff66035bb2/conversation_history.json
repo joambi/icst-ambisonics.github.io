@@ -1,0 +1,22 @@
+[
+  {
+    "role": "user",
+    "content": "alle umlaute korrigieren",
+    "timestamp": "2026-05-15T12:46:29.593Z"
+  },
+  {
+    "role": "assistant",
+    "content": "Vier Umlaut-Korrekturen vorgenommen:\n\n- Zeile 8: `Uebung` → `Übung`\n- Zeile 10: `fuer` → `für`\n- Zeile 11: `raeumlichen` → `räumlichen`\n- Zeile 46: `Hoerfragen` → `Hörfragen`",
+    "timestamp": "2026-05-15T12:46:29.593Z"
+  },
+  {
+    "role": "user",
+    "content": "ins english (britisch) übersetzten",
+    "timestamp": "2026-05-15T13:14:40.012Z"
+  },
+  {
+    "role": "assistant",
+    "content": "Note ins britische Englisch übersetzt. Beibehalten wurden alle Dateinamen, Code-Blöcke und technischen Bezeichner (REAPER, ICST MultiEncoder, B-Format, HOA Bus etc.). Britische Schreibweisen verwendet: *localisation*, *towards*.",
+    "timestamp": "2026-05-15T13:14:40.012Z"
+  }
+]

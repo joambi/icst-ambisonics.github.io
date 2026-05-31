@@ -15,17 +15,14 @@ group: "Listening"
     <strong>ascolta</strong> is the public listening series of the ICST Composition Studio: acousmatic and electroacoustic music presented in an intimate, immersive setting.
     </div>
     <p class="hub-lead">Sessions connect studio practice, residency projects, and international repertoire through higher-order Ambisonics listening at ZHdK.</p>
-    <div class="hub-note">
-    <strong>Next session:</strong> <strong>#19 ascolta</strong> presents three new Ambisonics works from the <strong>ICST Studio Residencies 2025</strong> by <strong>Nandele Maguni</strong>, <strong>Youngjae Cho</strong>, and <strong>Ana González Gamboa</strong>.
-    </div>
   </div>
-  <a class="hub-upcoming" href="/blog/ascolta/19-ascolta/">
-    <span class="hub-upcoming__eyebrow">Upcoming Date</span>
-    <span class="hub-upcoming__date">21 May 2026</span>
-    <span class="hub-upcoming__meta">18:00–19:00 · Free admission</span>
-    <span class="hub-upcoming__title">#19 ascolta — Acousmatic Listening Sessions</span>
-    <span class="hub-upcoming__text">ICST Studio Residencies 2025: Nandele Maguni, Youngjae Cho, and Ana González Gamboa</span>
-  </a>
+  <div class="hub-info">
+    <span class="hub-info__eyebrow">Series Info</span>
+    <div class="hub-info__item"><strong>Location</strong><span>Toni-Areal · Kompositionsstudio 3.D02 · Level 3 · Pfingstweidstrasse 96, Zürich</span></div>
+    <div class="hub-info__item"><strong>Format</strong><span>~60 min · Acousmatic listening session</span></div>
+    <div class="hub-info__item"><strong>Admission</strong><span>Free · Open to all</span></div>
+    <div class="hub-info__item"><strong>Audience</strong><span>Composers, students, researchers, studio visitors</span></div>
+  </div>
 </div>
 
 ---
@@ -34,8 +31,8 @@ group: "Listening"
 
 <div class="hub-start">
   <a href="/blog/ascolta/19-ascolta/">
-    <span class="hub-card__title">Next session</span>
-    <span class="hub-card__text">Go straight to the current ascolta date and programme.</span>
+    <span class="hub-card__title">Most recent session</span>
+    <span class="hub-card__text">Go straight to the latest ascolta programme and documentation.</span>
   </a>
   <a href="/blog/ascolta-listening-guide/">
     <span class="hub-card__title">Listening Guide</span>

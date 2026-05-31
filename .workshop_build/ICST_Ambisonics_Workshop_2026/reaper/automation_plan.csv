@@ -1,0 +1,14 @@
+time_seconds,source,azimuth_idea,elevation_idea,distance_idea,spread_idea
+0,percussion,-90,0,near,low
+5,percussion,0,0,near,low
+10,percussion,90,0,near,low
+15,percussion,180,10,medium,low
+20,percussion,-90,0,near,low
+0,drone,20,-10,far,medium
+15,drone,-40,15,far,high
+30,drone,120,25,far,high
+45,drone,0,-5,medium,medium
+0,melody,90,10,medium,low
+14,melody,-70,25,near,low
+28,melody,80,-10,medium,low
+42,melody,20,15,near,low
