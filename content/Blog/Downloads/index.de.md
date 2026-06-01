@@ -58,8 +58,8 @@ Lautsprecher-Presets, Session-Templates und Patches für das ICST-Kompositionsst
     <h4>Lautsprecher & Decoder-Presets</h4>
     <p>Lautsprecher-Koordinatendateien und Decoder-Presets für das ICST-Studio und gängige Lautsprecher-Layouts.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="https://raw.githubusercontent.com/joambi/icst-ambisonics.github.io/main/static/downloads/ICST_Ambisonics_Plugins_Speaker-Settings.tar" target="_blank" rel="noopener noreferrer">Decoder-Settings (.tar)</a>
-      <a class="hero__link" href="https://raw.githubusercontent.com/joambi/icst-ambisonics.github.io/main/static/downloads/kompositionsstudio-speakers-max.txt.zip" target="_blank" rel="noopener noreferrer">Max-Lautsprecherdatei (.zip)</a>
+      <a class="hero__link hero__link--primary" href="/downloads/ICST-AmbiDecoder-Settings.zip" download>Decoder-Settings (.zip)</a>
+      <a class="hero__link" href="/downloads/For-Max-9.0.zip" download>Max-Lautsprecherdatei (.zip)</a>
     </div>
   </section>
   <section class="home-card">
