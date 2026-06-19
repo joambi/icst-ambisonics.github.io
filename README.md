@@ -1,6 +1,7 @@
 # ICST Ambisonics — ambisonics.ch
 
 **Official documentation site:** [ambisonics.ch](https://ambisonics.ch)
+📖 **Full documentation:** [ambisonics.ch](https://ambisonics.ch)
 
 Free spatial audio plugins, a composing guide, and artist residencies at ICST / Zurich University of the Arts (ZHdK).
 
