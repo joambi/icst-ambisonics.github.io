@@ -8,11 +8,13 @@ description: "Marker-basierter Workflow für OSC-Preview und Automation-Aufnahme
 
 Level: Intermediate | Zielgruppe: Komponist:in, Sounddesigner:in, Spatial-Audio-Techniker:in, Studierende.
 
-Nutze diese Seite, wenn du Bewegungen für den AmbiEncoder mit REAPER-Markern definieren, per OSC vorhören und als Automation aufzeichnen willst.
+Diese Seite beschreibt, wie du AmbiEncoder-Bewegungen mit REAPER-Markern definierst, per OSC vorhörst und als Automation aufzeichnest.
+
+> **Zuerst herunterladen:** Alles Nötige ist im Bundle — [ICST Ambi Motion Markers Bundle herunterladen](https://github.com/joambi/icst_ambisonics/raw/main/Scripts/bundles/ICST_Ambi_Motion_Markers_Bundle.zip) (Lua-Scripts, Python-Worker, Beispiel-CSVs, Handbuch). [Inhalt auf GitHub ansehen](https://github.com/joambi/icst_ambisonics/tree/main/Scripts/bundles/ICST_Ambi_Motion_Markers_Bundle).
 
 ## Was es macht
 
-`ICST Ambi Motion Markers` ist ein REAPER-Workflow auf Basis von Timeline-Markern.
+`ICST Ambi Motion Markers` ist ein REAPER-Workflow auf Basis von Timeline-Markern. Statt Automationskurven von Hand zu zeichnen, definierst du Positionen als benannte Marker auf der Timeline — und hörst die entstehende Bewegung per OSC vor oder nimmst sie als Automation auf.
 
 Damit kannst du:
 
@@ -21,83 +23,91 @@ Damit kannst du:
 - denselben Bewegungsverlauf als AmbiEncoder-Automation aufnehmen
 - Cue-Sets per CSV importieren statt Markertexte von Hand zu schreiben
 
-Zentrale Dateien:
+Das zentrale Konzept ist das **S/E-Paar**: `S` markiert den Beginn eines Bewegungssegments, `E` das Ende. Jede Vorschau und jede Aufnahme arbeitet entweder auf einem ausgewählten Paar oder auf einer Serie von Paaren ab `S` bis zum letzten Marker.
 
-- `JS_Ambi_Motion_Marker_GUI.lua`
-- `JS_Import_Ambi_Markers_From_CSV.lua`
-- `reaper_marker_ambi_motion.py`
+![ICST Ambi Motion Marker GUI mit vier geladenen Markern](/motion-markers/gui-overview.gif)
+
+## Voraussetzungen
+
+Vor der Installation sicherstellen, dass vorhanden ist:
+
+- **REAPER** (v6 oder neuer empfohlen)
+- **ICST AmbiEncoder** installiert und funktionsfähig — siehe [Installation](/de/icst-ambisonics-plugins/02_installation/)
+- **Python 3.9 oder neuer** — [python.org/downloads](https://www.python.org/downloads/)
+- OSC-Input im AmbiEncoder-Plugin aktiviert — siehe [OSC](/de/icst-ambisonics-plugins/13_osc/)
 
 ## Installation
 
 ### 1. Scripts in REAPER einbinden
 
-Importiere diese ReaScripts:
+Aus dem heruntergeladenen Bundle diese ReaScripts über *Actions → Load ReaScript* importieren:
 
 - `Scripts/JS_Ambi_Motion_Marker_GUI.lua`
 - `Scripts/JS_Import_Ambi_Markers_From_CSV.lua`
 
-### 2. Python-Abhängigkeit installieren
+### 2. Python-Worker ablegen
 
-Die GUI startet `reaper_marker_ambi_motion.py` als Hintergrundprozess für OSC-Befehle.
-
-**Die Datei ablegen** — eine naheliegende Wahl ist neben den Lua-Scripts:
+Die GUI startet `reaper_marker_ambi_motion.py` als Hintergrundprozess für OSC-Befehle. Die Datei kann beliebig abgelegt werden — naheliegend ist neben den Lua-Scripts:
 
 ```text
 Scripts/reaper_marker_ambi_motion.py
 ```
 
-**Benötigtes Paket installieren:**
+Benötigtes Python-Paket installieren:
 
 ```bash
-pip install python-osc
+pip3 install python-osc
 ```
 
-**Python-Pfad in der GUI setzen** (Feld `Python`):
+Danach den Python-Pfad im GUI-Feld `Python` eintragen. Der korrekte Pfad lässt sich im Terminal mit `which python3` herausfinden:
 
 ```text
+# macOS / Linux
+/usr/local/bin/python3
 /Users/yourname/.pyenv/versions/3.11.8/bin/python3
+
+# Windows (Beispiel)
+C:\Python311\python.exe
 ```
 
-Mit `which python3` im Terminal den korrekten Pfad auf dem eigenen System herausfinden. Das GUI übergibt `reaper_marker_ambi_motion.py` und die OSC-Parameter zur Laufzeit an diese ausführbare Datei — kein manueller Start erforderlich.
+Das GUI übergibt `reaper_marker_ambi_motion.py` und die OSC-Parameter zur Laufzeit — kein manueller Start erforderlich.
 
 ### 3. ICST-Plugin konfigurieren
 
-`AmbiEncoder_64` auf der Zielspur einbinden und OSC Input aktivieren.
-
-Der OSC-Port im Plugin muss mit dem GUI-Port übereinstimmen.
-
-Typischer Default:
-
-```text
-50001
-```
+`AmbiEncoder_64` auf der Zielspur einbinden und OSC-Input aktivieren. Der Port im Plugin muss mit dem GUI-Port übereinstimmen (Standard: `50001`).
 
 ## Marker-Workflow
 
-Marker können direkt in dieser Form eingegeben werden:
+### Marker-Syntax
+
+Marker werden mit Positionsdaten in dieser Form benannt:
 
 ```text
 ambi 1 a=-45 e=0 d=0.8
 ambi 2 a=20 e=0 d=0.7
 ```
 
-Mehrere Quellen an einem Cue-Zeitpunkt können in einem Marker stehen:
+`1` / `2` = Quellindex, `a` = Azimut, `e` = Elevation, `d` = Distanz.
+
+Mehrere Quellen am selben Cue-Zeitpunkt können in einem Marker stehen:
 
 ```text
 ambi 1 a=-45 e=0 d=0.8 | ambi 2 a=20 e=0 d=0.7
 ```
 
-In der Marker-Liste:
+### S und E setzen
 
-- links klicken = `S`
-- rechts klicken = `E`
-- `Set Selection` erzeugt die REAPER-Time-Selection
+In der GUI-Markerliste repräsentiert jede Zeile einen Marker. Linke Seite einer Zeile klicken → `S` (Start), rechte Seite → `E` (Ende). Danach `Set Selection` klicken, um den REAPER-Zeitbereich zwischen S und E zu erstellen.
 
-## CSV-first Workflow
+`S` und `E` zusammen definieren ein Bewegungssegment — von der Quellposition bei `S` zur Position bei `E`.
 
-Für größere Projekte ist CSV der empfohlene Weg.
+![S/E-Selektion aktiv mit Konsolenausgabe](/motion-markers/se-selection-console.gif)
 
-### Unterstütztes Format: azimuth/elevation/distance
+## Cues per CSV importieren
+
+Für größere Projekte ist der CSV-Import der empfohlene Weg — alle Cues im Tabellenformat definieren, einmal importieren.
+
+### Format: Azimut/Elevation/Distanz
 
 ```csv
 time,index,source,azimuth,elevation,distance
@@ -107,7 +117,7 @@ time,index,source,azimuth,elevation,distance
 9.2,2,2,90,0,0.2
 ```
 
-### Unterstütztes Format: x/y/z
+### Format: x/y/z
 
 ```csv
 time,index,source,x,y,z
@@ -117,135 +127,106 @@ time,index,source,x,y,z
 
 ### Import in der GUI
 
-Nutze `Load CSV` im Marker-Panel:
-
-1. `Load CSV` klicken
-2. CSV auswählen
+1. `Load CSV` im Marker-Panel klicken
+2. CSV-Datei auswählen
 3. passende Marker im Projekt werden automatisch ersetzt
 
-Beispieldateien:
+![Import-Ambi-Markers-From-CSV-Dialog](/motion-markers/csv-import-dialog.png)
 
-- `ambi_markers_aed_example.csv`
-- `ambi_markers_xyz_example.csv`
+Beispiel-CSV-Dateien sind im Bundle enthalten: `ambi_markers_aed_example.csv` und `ambi_markers_xyz_example.csv`.
 
 ## Hauptfunktionen
 
 ### Send pair
 
-Sendet nur das aktuell gewählte `S -> E`-Paar per OSC.
+Sendet das aktuell gewählte `S → E`-Paar per OSC — die Quelle bewegt sich im Plugin, aber es wird keine Automation geschrieben. Damit lässt sich ein einzelnes Segment vor der Aufnahme testen und verfeinern.
+
+![Send-pair-Workflow mit Konsolenausgabe nach der Bewegung](/motion-markers/opt_workflow-03.gif)
 
 ### Send series
 
-Sendet die komplette Serie vom aktuellen `S`-Marker bis zum letzten Marker der Liste.
+Sendet alle Segmente vom aktuellen `S`-Marker bis zum letzten Marker der Liste, eines nach dem anderen. Für die Vorschau einer kompletten Phrase oder Szene.
 
 ### Record pair
 
-Nimmt das gewählte Paar als AmbiEncoder-Automation auf.
+Nimmt das gewählte `S → E`-Segment als AmbiEncoder-Automation auf. Die AmbiEncoder-Spur muss vor dem Klick selektiert sein.
 
 ### Record series
 
-Verwendet dieselbe Bereichslogik wie `Send series`, schreibt dabei aber Automation.
+Gleiche Bereichslogik wie `Send series`, schreibt aber Automation für jedes Segment während der Bewegungsablauf durchläuft.
 
-## Schritt-für-Schritt-Test
+## Erste Schritte
 
-### Test 1: einzelnes Pair vorhören
+### 1. Einzelne Bewegung vorhören
 
-1. GUI öffnen
+1. GUI öffnen (`JS_Ambi_Motion_Marker_GUI.lua` über das Actions-Menü starten)
+2. zwei Marker mit `ambi`-Namen in REAPER setzen, oder CSV importieren
+3. `S` auf den ersten Marker, `E` auf den zweiten setzen
+4. `Set Selection`, dann `Send pair` klicken
+5. die Quelle sollte sich im AmbiEncoder-Plugin bewegen
+
+Was zu sehen sein sollte: Vorschau-Cursor bewegt sich, OSC-Ausgabe in der Konsole, keine Automation geschrieben.
+
+### 2. Ganze Serie vorhören
+
+1. `S` auf den ersten Marker der Phrase setzen
+2. `Send series` klicken
+3. die GUI läuft automatisch durch alle Segmente bis zum letzten Marker
+
+### 3. Ein Paar als Automation aufnehmen
+
+1. AmbiEncoder-Spur in REAPER selektieren
 2. `S` und `E` setzen
-3. `Set Selection`
-4. `Send pair`
-5. Bewegung im Plugin prüfen
+3. `Record pair` klicken
 
-Expected result:
+Was zu sehen sein sollte: Transport läuft, Plugin bewegt sich, Automation-Lanes erhalten Positionsdaten.
 
-- Vorschau-Cursor bewegt sich
-- OSC-Bewegung ist sichtbar
-- keine Automation wird geschrieben
-
-### Test 2: Serie vorhören
-
-1. `S` auf den gewünschten Startmarker setzen
-2. `Send series`
-3. prüfen, ob alle Segmente bis zum letzten Marker abgespielt werden
-
-Expected result:
-
-- alle Segmente nach `S` werden abgespielt
-- das Ende der Serie ist der letzte Marker
-
-### Test 3: einzelnes Pair aufnehmen
+### 4. Ganze Serie aufnehmen
 
 1. AmbiEncoder-Spur selektieren
-2. `S` und `E` wählen
-3. `Record pair`
-4. Automation prüfen
+2. `S` auf den ersten Marker setzen
+3. `Record series` klicken
 
-Expected result:
-
-- Transport läuft
-- Plugin bewegt sich
-- Automation-Lanes erhalten Daten
-
-### Test 4: Serie aufnehmen
-
-1. AmbiEncoder-Spur selektieren
-2. `S` setzen
-3. `Record series`
-4. prüfen, ob dieselbe Serie wie bei `Send series` aufgezeichnet wird
-
-Expected result:
-
-- Transport läuft die komplette Serie durch
-- Bewegung stimmt mit `Send series` überein
-- Automation wird für jedes Segment geschrieben
+Der Transport läuft die komplette Serie durch und schreibt Automation für jedes Segment.
 
 ## Good Practices
 
-- CSV als Source of Truth verwenden
-- vor dem Aufzeichnen zuerst `Send pair` testen
-- Marker-Indizes stabil halten
-- eine Quelle pro CSV-Zeile verwenden
-- musikalisch klare Cue-Punkte setzen
-- Console nur beim Debuggen aktivieren
+- CSV als Source of Truth verwenden — leichter zu bearbeiten und versionieren als manuelle Marker
+- immer zuerst mit `Send pair` vorhören, bevor aufgenommen wird
+- Marker-Indizes stabil halten — Umnummerieren bricht CSV-Re-Imports
+- eine Quelle pro CSV-Zeile
+- musikalisch klare Cue-Punkte setzen (an Phrasen-Grenzen, nicht mitten in einer Geste)
+- Konsolenausgabe beim Debuggen aktivieren, beim Aufführen deaktivieren
 
 ## Troubleshooting
 
 ### „No markers or regions with 'ambi...' found"
 
-Die Marker-Liste ist leer. Marker manuell hinzufügen oder `Load CSV` ausführen. Jeder Markername muss mit `ambi` beginnen (Gross-/Kleinschreibung beachten).
+Die Markerliste ist leer. Marker manuell hinzufügen oder `Load CSV` ausführen. Jeder Markername muss mit `ambi` beginnen (Gross-/Kleinschreibung beachten).
 
 ### Keine Bewegung im Plugin
 
 Prüfen:
 
-- OSC Input im Plugin aktiv
-- korrekter OSC-Port
-- Start- und Endwerte sind unterschiedlich
+- OSC-Input im AmbiEncoder-Plugin aktiviert
+- Port im Plugin stimmt mit GUI-Port überein (Standard: 50001)
+- `S`- und `E`-Positionen sind tatsächlich verschieden — identische Positionen erzeugen keine sichtbare Bewegung
 
-### `Send series` wirkt wie `Send pair`
+### `Send series` verhält sich wie `Send pair`
 
-Dann gibt es meist nur noch ein Segment zwischen aktuellem `S` und letztem Marker.
+Es gibt nur noch ein Segment zwischen dem aktuellen `S`-Marker und dem letzten Marker. `S` auf einen früheren Marker setzen.
+
+### Python nicht gefunden / Worker startet nicht
+
+- bestätigen, dass der Pfad im `Python`-Feld auf ein gültiges Python-3-Executable zeigt (`which python3` auf macOS/Linux)
+- bestätigen, dass `python-osc` für genau dieses Python installiert ist: `dein/python/pfad -m pip install python-osc`
+- Konsolenausgabe in der GUI auf den genauen Fehler prüfen
 
 ### CSV-Import schlägt fehl
 
 Prüfen:
 
-- Headernamen
-- Dezimalpunkte
+- Spaltenbezeichnungen stimmen exakt (`time`, `index`, `source`, dann Positionsspalten)
+- Dezimalpunkte (keine Kommas) bei Zahlen
 - eine Quelle pro Zeile
-- gültige Zeiten und Indizes
-
-## Downloads
-
-Nutze das vorbereitete Bundle:
-
-- [ICST Ambi Motion Markers Bundle herunterladen](https://github.com/joambi/icst_ambisonics/raw/main/Scripts/bundles/ICST_Ambi_Motion_Markers_Bundle.zip)
-- [Bundle-Inhalt auf GitHub ansehen](https://github.com/joambi/icst_ambisonics/tree/main/Scripts/bundles/ICST_Ambi_Motion_Markers_Bundle)
-
-Empfohlener Inhalt:
-
-- GUI-Script
-- CSV-Import-Script
-- Python-OSC-Worker
-- Beispiel-CSVs
-- Handbuch
+- gültige Zeitwerte und Indizes
