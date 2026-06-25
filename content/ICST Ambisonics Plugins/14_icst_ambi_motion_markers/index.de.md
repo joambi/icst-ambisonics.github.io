@@ -38,25 +38,31 @@ Importiere diese ReaScripts:
 
 ### 2. Python-Abhängigkeit installieren
 
-Die GUI startet einen Python-Worker für OSC-Bewegungen.
+Die GUI startet `reaper_marker_ambi_motion.py` als Hintergrundprozess für OSC-Befehle.
 
-Installieren:
+**Die Datei ablegen** — eine naheliegende Wahl ist neben den Lua-Scripts:
+
+```text
+Scripts/reaper_marker_ambi_motion.py
+```
+
+**Benötigtes Paket installieren:**
 
 ```bash
 pip install python-osc
 ```
 
-Danach den Python-Pfad in der GUI setzen.
-
-Beispiel:
+**Python-Pfad in der GUI setzen** (Feld `Python`):
 
 ```text
 /Users/yourname/.pyenv/versions/3.11.8/bin/python3
 ```
 
+Mit `which python3` im Terminal den korrekten Pfad auf dem eigenen System herausfinden. Das GUI übergibt `reaper_marker_ambi_motion.py` und die OSC-Parameter zur Laufzeit an diese ausführbare Datei — kein manueller Start erforderlich.
+
 ### 3. ICST-Plugin konfigurieren
 
-Setze `AmbiEncoder_64` auf die Zielspur und aktiviere OSC Input.
+`AmbiEncoder_64` auf der Zielspur einbinden und OSC Input aktivieren.
 
 Der OSC-Port im Plugin muss mit dem GUI-Port übereinstimmen.
 
@@ -68,7 +74,7 @@ Typischer Default:
 
 ## Marker-Workflow
 
-Marker können weiterhin direkt so eingegeben werden:
+Marker können direkt in dieser Form eingegeben werden:
 
 ```text
 ambi 1 a=-45 e=0 d=0.8
@@ -150,11 +156,22 @@ Verwendet dieselbe Bereichslogik wie `Send series`, schreibt dabei aber Automati
 4. `Send pair`
 5. Bewegung im Plugin prüfen
 
+Expected result:
+
+- Vorschau-Cursor bewegt sich
+- OSC-Bewegung ist sichtbar
+- keine Automation wird geschrieben
+
 ### Test 2: Serie vorhören
 
 1. `S` auf den gewünschten Startmarker setzen
 2. `Send series`
 3. prüfen, ob alle Segmente bis zum letzten Marker abgespielt werden
+
+Expected result:
+
+- alle Segmente nach `S` werden abgespielt
+- das Ende der Serie ist der letzte Marker
 
 ### Test 3: einzelnes Pair aufnehmen
 
@@ -163,12 +180,24 @@ Verwendet dieselbe Bereichslogik wie `Send series`, schreibt dabei aber Automati
 3. `Record pair`
 4. Automation prüfen
 
+Expected result:
+
+- Transport läuft
+- Plugin bewegt sich
+- Automation-Lanes erhalten Daten
+
 ### Test 4: Serie aufnehmen
 
 1. AmbiEncoder-Spur selektieren
 2. `S` setzen
 3. `Record series`
 4. prüfen, ob dieselbe Serie wie bei `Send series` aufgezeichnet wird
+
+Expected result:
+
+- Transport läuft die komplette Serie durch
+- Bewegung stimmt mit `Send series` überein
+- Automation wird für jedes Segment geschrieben
 
 ## Good Practices
 
@@ -180,6 +209,10 @@ Verwendet dieselbe Bereichslogik wie `Send series`, schreibt dabei aber Automati
 - Console nur beim Debuggen aktivieren
 
 ## Troubleshooting
+
+### „No markers or regions with 'ambi...' found"
+
+Die Marker-Liste ist leer. Marker manuell hinzufügen oder `Load CSV` ausführen. Jeder Markername muss mit `ambi` beginnen (Gross-/Kleinschreibung beachten).
 
 ### Keine Bewegung im Plugin
 
