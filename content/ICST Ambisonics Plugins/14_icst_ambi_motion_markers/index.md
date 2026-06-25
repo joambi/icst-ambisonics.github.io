@@ -30,40 +30,6 @@ The central concept is the **S/E pair**: `S` marks the start of a movement segme
 
 ![ICST Ambi Motion Marker GUI with four markers loaded](/motion-markers/gui-overview.gif)
 
-## First steps
-
-### 1. Preview a single movement
-
-1. open the GUI (run `JS_Ambi_Motion_Marker_GUI.lua` from the Actions menu)
-2. add two markers in REAPER with `ambi` names, or import a CSV
-3. set `S` on the first marker, `E` on the second
-4. click `Set Selection`, then `Send pair`
-5. the source should move in the AmbiEncoder plugin
-
-What you should see: preview cursor moves across the time selection, OSC output appears in the console, no automation written.
-
-### 2. Preview a full series
-
-1. set `S` on the first marker of your phrase
-2. click `Send series`
-3. the GUI steps through all segments to the last marker automatically
-
-### 3. Record a pair as automation
-
-1. select the AmbiEncoder track in REAPER
-2. set `S` and `E`
-3. click `Record pair`
-
-What you should see: transport runs, plugin moves, automation lanes receive position data.
-
-### 4. Record a full series
-
-1. select the AmbiEncoder track
-2. set `S` on the first marker
-3. click `Record series`
-
-The transport runs through the complete series and writes automation for each segment.
-
 ## Requirements
 
 Before installing, make sure you have:
@@ -133,6 +99,45 @@ Before your first test, verify:
   <li><strong>python-osc installed</strong> <span>Run <code>pip3 install python-osc</code> for the same Python executable</span></li>
   <li><strong>AmbiEncoder OSC input active</strong> <span>Plugin → OSC In enabled, port matches GUI setting (default <code>50001</code>)</span></li>
 </ul>
+
+## First steps
+
+Everything below assumes installation is complete and the GUI is open (run `JS_Ambi_Motion_Marker_GUI.lua` from the Actions menu).
+
+**S/E pairs:** In the GUI marker list, click the **left half** of a row to mark it as `S` (start), the **right half** to mark it as `E` (end). Then click `Set Selection` — this creates the REAPER time range the GUI will use for preview and recording.
+
+**Marker names** follow this pattern: `ambi 1 a=-45 e=0 d=0.8` — source index, then azimuth / elevation / distance. The GUI only recognises markers whose name starts with `ambi`. You can add markers manually in REAPER or import them from a CSV file.
+
+### 1. Preview a single movement
+
+1. Add two markers in REAPER — for example `ambi 1 a=-45 e=0 d=0.8` and `ambi 1 a=45 e=0 d=0.8` — or import a CSV
+2. In the GUI marker list, set `S` on the first marker and `E` on the second
+3. Click `Set Selection`, then `Send pair`
+4. The source moves in the AmbiEncoder plugin
+
+What you should see: the preview cursor moves across the time selection, OSC output appears in the console, no automation is written.
+
+### 2. Preview a full series
+
+1. Set `S` on the first marker of your phrase
+2. Click `Send series`
+3. The GUI steps through all segments to the last marker automatically
+
+### 3. Record a pair as automation
+
+1. Select the AmbiEncoder track in REAPER
+2. Set `S` and `E`
+3. Click `Record pair`
+
+What you should see: the transport runs, the plugin moves, and the automation lanes receive position data.
+
+### 4. Record a full series
+
+1. Select the AmbiEncoder track
+2. Set `S` on the first marker
+3. Click `Record series`
+
+The transport runs through the complete series and writes automation for each segment.
 
 ## Marker workflow
 
