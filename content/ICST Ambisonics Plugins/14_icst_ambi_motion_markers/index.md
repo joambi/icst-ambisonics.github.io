@@ -10,11 +10,13 @@ Level: Intermediate | Audience: Composer, sound designer, spatial-audio technici
 
 Use this page when you want to define AmbiEncoder movements with REAPER markers, preview them over OSC, and record them as automation.
 
-> **Download first:** Everything you need is in the bundle — [Download ICST Ambi Motion Markers Bundle](https://github.com/joambi/icst_ambisonics/raw/main/Scripts/bundles/ICST_Ambi_Motion_Markers_Bundle.zip) (Lua scripts, Python worker, example CSVs, handbook). [Browse contents on GitHub](https://github.com/joambi/icst_ambisonics/tree/main/Scripts/bundles/ICST_Ambi_Motion_Markers_Bundle).
+> **Download first:** Everything you need is in the bundle — [Download ICST Ambi Motion Markers Bundle](/downloads/ICST_Ambi_Motion_Markers_Bundle.zip) (Lua scripts, Python worker, example CSVs, handbook).
 
 ## What it does
 
 `ICST Ambi Motion Markers` is a REAPER workflow built around timeline markers. Instead of drawing automation curves by hand, you define positions as named markers on the timeline, then preview or record the resulting movement via OSC.
+
+Markers are persistent and editable like any REAPER marker — you can version them in a CSV, rename them, move them on the timeline, and re-import without touching the plugin. Automation curves don't offer that.
 
 It lets you:
 
@@ -26,6 +28,40 @@ It lets you:
 The central concept is the **S/E pair**: `S` marks the start of a movement segment, `E` marks the end. Every preview and recording operation works on either one selected pair or a series of pairs from `S` to the last marker.
 
 ![ICST Ambi Motion Marker GUI with four markers loaded](/motion-markers/gui-overview.gif)
+
+## First steps
+
+### 1. Preview a single movement
+
+1. open the GUI (run `JS_Ambi_Motion_Marker_GUI.lua` from the Actions menu)
+2. add two markers in REAPER with `ambi` names, or import a CSV
+3. set `S` on the first marker, `E` on the second
+4. click `Set Selection`, then `Send pair`
+5. the source should move in the AmbiEncoder plugin
+
+What you should see: preview cursor moves across the time selection, OSC output appears in the console, no automation written.
+
+### 2. Preview a full series
+
+1. set `S` on the first marker of your phrase
+2. click `Send series`
+3. the GUI steps through all segments to the last marker automatically
+
+### 3. Record a pair as automation
+
+1. select the AmbiEncoder track in REAPER
+2. set `S` and `E`
+3. click `Record pair`
+
+What you should see: transport runs, plugin moves, automation lanes receive position data.
+
+### 4. Record a full series
+
+1. select the AmbiEncoder track
+2. set `S` on the first marker
+3. click `Record series`
+
+The transport runs through the complete series and writes automation for each segment.
 
 ## Requirements
 
@@ -42,15 +78,15 @@ Before installing, make sure you have:
 
 From the downloaded bundle, import these ReaScripts via *Actions → Load ReaScript*:
 
-- `Scripts/JS_Ambi_Motion_Marker_GUI.lua`
-- `Scripts/JS_Import_Ambi_Markers_From_CSV.lua`
+- `scripts/JS_Ambi_Motion_Marker_GUI.lua`
+- `scripts/JS_Import_Ambi_Markers_From_CSV.lua`
 
 ### 2. Place the Python worker
 
-The GUI launches `reaper_marker_ambi_motion.py` as a background process to send OSC commands. Place it anywhere on disk — a common choice is alongside the Lua scripts:
+The GUI launches `reaper_marker_ambi_motion.py` as a persistent background process to send OSC commands. Place it anywhere on disk — a common choice is alongside the Lua scripts. In the bundle it is at:
 
 ```text
-Scripts/reaper_marker_ambi_motion.py
+python/reaper_marker_ambi_motion.py
 ```
 
 Install the required Python package:
@@ -70,13 +106,25 @@ Then set the Python executable path in the GUI (`Python` field). To find the cor
 C:\Python311\python.exe
 ```
 
-The GUI passes `reaper_marker_ambi_motion.py` and OSC parameters to this executable at runtime — no manual launch needed.
+The GUI starts the worker automatically the first time you press a button — no manual launch needed. The worker stays running after you close the GUI and is reused on the next open.
 
 ### 3. Configure the ICST plugin
 
 Insert `AmbiEncoder_64` on the target track and enable OSC input. Make sure the plugin OSC port matches the GUI setting (default: `50001`).
 
 ## Marker workflow
+
+### Coordinate system
+
+AmbiEncoder uses spherical coordinates — azimuth (`a`), elevation (`e`), and distance (`d`):
+
+| Parameter | Range | Description |
+|-----------|-------|-------------|
+| `a` azimuth | −180 … +180° | 0° = front, −90° = left, +90° = right, ±180° = back |
+| `e` elevation | −90 … +90° | 0° = horizontal plane, +90° = directly above, −90° = directly below |
+| `d` distance | 0.0 … 1.0 | 1.0 = unit sphere surface; values above 1 place the source outside the sphere |
+
+The XYZ conversion used internally follows the ICST convention: X = D·cos(E)·sin(A), Y = D·cos(E)·cos(A), Z = D·sin(E).
 
 ### Marker syntax
 
@@ -105,7 +153,7 @@ In the GUI marker list, each row represents one marker. Click the left side of a
 
 ## Import cues from CSV
 
-For larger projects, CSV import is the recommended method — define all cues in a spreadsheet, import once.
+Manual markers work well for a handful of cues. Switch to CSV once you have more than six or seven positions, when coordinates come from a score or a spatial planning spreadsheet, or when you want to version the cue set alongside your project in git. You edit the CSV, click `Load CSV` once, and all markers update — no retyping.
 
 ### Format: azimuth/elevation/distance
 
@@ -141,6 +189,8 @@ Example CSV files are included in the bundle: `ambi_markers_aed_example.csv` and
 
 Sends the currently selected `S → E` pair over OSC — the source moves in the plugin, but no automation is written. Use this to test and refine a single movement segment before recording.
 
+During playback, the REAPER edit cursor moves in real time across the time selection and a `PREVIEW` indicator appears top right. Click `Stop preview` to stop both the cursor and the OSC motion together.
+
 ![Send pair workflow — console output after motion playback](/motion-markers/opt_workflow-03.gif)
 
 ### Send series
@@ -153,41 +203,49 @@ Arms the AmbiEncoder track and records the selected `S → E` movement as automa
 
 ### Record series
 
-Same range logic as `Send series`, but writes automation for every segment while the movement plays through.
+Same range logic as `Send series`, but writes automation for every segment while the movement plays through. The transport runs once from the first to the last ambi cue without stopping; the worker status shows `Segment 1/N`, `2/N`, and so on.
 
-## First steps
+### Interpolation modes
 
-### 1. Preview a single movement
+The `Curve` dropdown controls how the source moves between `S` and `E`:
 
-1. open the GUI (run `JS_Ambi_Motion_Marker_GUI.lua` from the Actions menu)
-2. add two markers in REAPER with `ambi` names, or import a CSV
-3. set `S` on the first marker, `E` on the second
-4. click `Set Selection`, then `Send pair`
-5. the source should move in the AmbiEncoder plugin
+| Mode | Character |
+|------|-----------|
+| `Linear` | Straight line in XYZ space — constant speed |
+| `Parabol` | Soft start and soft end — quadratic easing |
+| `Expon` | Very soft start, fast middle, soft end |
+| `Polar` | Arc in AED space — azimuth/elevation move as angles, not as an XYZ line through the sphere |
+| `Smoothstep` | Neutral smooth curve — kept for compatibility |
 
-What you should see: preview cursor moves, OSC output in the console, no automation written.
+`Polar` is the right choice when you want the source to sweep an arc rather than cut straight through the interior of the sphere.
 
-### 2. Preview a full series
+### Marker list navigation
 
-1. set `S` on the first marker of your phrase
-2. click `Send series`
-3. the GUI steps through all segments to the last marker automatically
+- Click the **left half** of a marker row → set as `S` (start)
+- Click the **right half** → set as `E` (end)
+- `< Pair` / `Pair >` — shift the selected pair one step through the marker sequence (e.g. `1→3` becomes `2→4`)
+- `Follow ON` — the marker list scrolls to keep up with the play cursor or edit cursor
+- The small **timeline bar** at the bottom shows marker tick positions and the current cursor location
 
-### 3. Record a pair as automation
+### Next pair after stop
 
-1. select the AmbiEncoder track in REAPER
-2. set `S` and `E`
-3. click `Record pair`
+When enabled, the GUI automatically advances the selection to the next pair after a preview or recording finishes — `1→3` becomes `2→4`, ready for the next trigger. It does not start the next movement automatically.
 
-What you should see: transport runs, plugin moves, automation lanes receive position data.
+### Polyphonic mode
 
-### 4. Record a full series
+`Polyphonic all indexes` sends every matching `ambi <index>` pair simultaneously, not just the first found. If source 1 and source 2 both have a cue at `S` and at `E`, both move at once. Sources that appear at only one end are skipped.
 
-1. select the AmbiEncoder track
-2. set `S` on the first marker
-3. click `Record series`
+### XYZ Score
 
-The transport runs through the complete series and writes automation for each segment.
+The `XYZ score` button creates or updates a track called `Ambi XYZ Score`. For each neighbouring cue pair, a muted empty item is placed on that track. Item notes contain the XYZ coordinates for each source at start and end:
+
+```text
+XYZ 01  0.50s -> 16.50s
+1: (-0.566, 0.566, 0.000) -> (0.332, 0.332, 0.171)
+2: (0.239, 0.658, 0.000) -> (0.200, 0.000, 0.000)
+```
+
+This gives you a readable score view of all spatial movements without opening the GUI. Clicking `XYZ score` again replaces only the GUI-generated items; anything else on the track is left untouched.
 
 ## Good practices
 

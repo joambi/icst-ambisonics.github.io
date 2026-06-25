@@ -2,7 +2,7 @@
 title: ICST Animator
 date: 2025-01-01T00:00:00
 weight: 85
-draft: false
+draft: true
 type: docs
 description: "Guide to the ICST Animator for timeline-based spatial movement and transformation of source groups in Ambisonics sessions."
 ---
