@@ -35,7 +35,7 @@
     @include conf.desktop {
       flex-grow: 1;
       justify-content: flex-start;
-      padding-top: 5.5rem;
+      padding-top: 3.5rem;
     }
   }
 
@@ -61,25 +61,26 @@
     text-align: center;
 
     &-description {
-      margin: 0 1em;
+      margin: 0 0.5em;
       p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.15rem;
-        line-height: 1.55;
+        gap: 0.1rem;
+        line-height: 1.45;
         margin: 0;
+        font-size: 1.3rem;
       }
     }
 
     &-profileimage {
-      width: 112px;
-      height: 112px;
+      width: 96px;
+      height: 96px;
       border-radius: 50%;
 
       @include conf.desktop {
-        width: 138px;
-        height: 138px;
+        width: 110px;
+        height: 110px;
       }
     }
 
@@ -88,13 +89,13 @@
       font-weight: bold;
       letter-spacing: 2px;
       line-height: 1;
-      margin: 0.55em 1em;
+      margin: 0.45em 0.6em;
 
       a {
-        font-size: 2.65rem;
+        font-size: 2.2rem;
 
         @include conf.desktop {
-          font-size: 3.1rem;
+          font-size: 2.5rem;
         }
       }
 

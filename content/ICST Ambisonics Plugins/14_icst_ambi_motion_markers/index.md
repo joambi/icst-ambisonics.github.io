@@ -3,6 +3,7 @@ title: ICST Ambi Motion Markers
 date: 2026-06-21T00:00:00
 weight: 85
 draft: false
+toc: true
 description: "Marker-based OSC preview and automation recording workflow for ICST AmbiEncoder in REAPER, including CSV-first cue import and good practices."
 ---
 

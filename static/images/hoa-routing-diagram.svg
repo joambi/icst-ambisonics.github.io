@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 820 500"
+   role="img"
+   font-family="'Source Sans 3', system-ui, sans-serif"
+   version="1.1"
+   id="svg60"
+   sodipodi:docname="hoa-routing-diagram.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs60" />
+  <sodipodi:namedview
+     id="namedview60"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.86174335"
+     inkscape:cx="524.51812"
+     inkscape:cy="318.54032"
+     inkscape:window-width="1416"
+     inkscape:window-height="872"
+     inkscape:window-x="112"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg60" />
+  <title
+     id="title1">ICST HOA Routing Diagram</title>
+  <desc
+     id="desc1">Signal flow: Source tracks with encoders feed a 64-channel HOA bus, which routes to a decoder for loudspeakers and optionally to a binaural monitor for headphones.</desc>
+  <!-- Background -->
+  <rect
+     width="820"
+     height="500"
+     fill="#f9f7f4"
+     id="rect1"
+     x="1.7275969"
+     y="0" />
+  <!-- ── HEADER ── -->
+  <rect
+     x="0"
+     y="0"
+     width="820"
+     height="44"
+     fill="#1a2b4a"
+     id="rect2" />
+  <text
+     x="20"
+     y="16"
+     fill="#7ba8d1"
+     font-size="8"
+     font-weight="700"
+     letter-spacing="2"
+     text-anchor="start"
+     id="text2">ICST AMBISONICS · ZHDK</text>
+  <text
+     x="20"
+     y="33"
+     fill="white"
+     font-size="14"
+     font-weight="700"
+     id="text3">HOA Routing Signal Flow</text>
+  <text
+     x="800"
+     y="33"
+     fill="#7ba8d1"
+     font-size="9"
+     text-anchor="end"
+     id="text4">REAPER · ICST Plugins</text>
+  <!-- COLUMN 1 — SOURCE TRACKS -->
+  <text
+     x="72"
+     y="73"
+     fill="#3d6b9e"
+     font-size="8"
+     font-weight="700"
+     letter-spacing="1.5"
+     text-anchor="middle"
+     id="text5">SOURCE TRACKS</text>
+  <rect
+     x="16"
+     y="80"
+     width="133.59496"
+     height="52"
+     rx="3.5784364"
+     fill="#1a2b4a"
+     id="rect5"
+     style="stroke-width:1.09216" />
+  <text
+     x="72"
+     y="97"
+     fill="#7ba8d1"
+     font-size="7.5"
+     font-weight="700"
+     letter-spacing="1"
+     text-anchor="middle"
+     id="text6">TRACK 1</text>
+  <text
+     x="72"
+     y="110"
+     fill="white"
+     font-size="8.5"
+     text-anchor="middle"
+     id="text7">Mono / Stereo</text>
+  <rect
+     x="24"
+     y="117"
+     width="96"
+     height="9"
+     rx="2"
+     fill="#263f66"
+     id="rect7" />
+  <text
+     x="72"
+     y="124.5"
+     fill="#3d6b9e"
+     font-size="7"
+     font-weight="700"
+     text-anchor="middle"
+     id="text8"
+     style="fill:#b6cce4;fill-opacity:1">ICST MonoEncoder</text>
+  <rect
+     x="16"
+     y="148"
+     width="133.59496"
+     height="52"
+     rx="3.5784364"
+     fill="#1a2b4a"
+     id="rect8"
+     style="stroke-width:1.09216" />
+  <text
+     x="72"
+     y="165"
+     fill="#7ba8d1"
+     font-size="7.5"
+     font-weight="700"
+     letter-spacing="1"
+     text-anchor="middle"
+     id="text9">TRACK 2</text>
+  <text
+     x="72"
+     y="178"
+     fill="white"
+     font-size="8.5"
+     text-anchor="middle"
+     id="text10">Multi-Channel</text>
+  <rect
+     x="24"
+     y="185"
+     width="96"
+     height="9"
+     rx="2"
+     fill="#263f66"
+     id="rect10" />
+  <text
+     x="72"
+     y="192.5"
+     fill="#3d6b9e"
+     font-size="7"
+     font-weight="700"
+     text-anchor="middle"
+     id="text11"
+     style="fill:#a6c3e1;fill-opacity:1">ICST MultiEncoder</text>
+  <text
+     x="72"
+     y="226"
+     fill="#9aabbf"
+     font-size="11"
+     text-anchor="middle"
+     id="text12">···</text>
+  <rect
+     x="16"
+     y="236"
+     width="131.00357"
+     height="38"
+     rx="3.5090241"
+     fill="#1a2b4a"
+     opacity="0.5"
+     id="rect12"
+     style="stroke-width:1.08151" />
+  <text
+     x="72"
+     y="254"
+     fill="#7ba8d1"
+     font-size="7.5"
+     font-weight="700"
+     letter-spacing="1"
+     text-anchor="middle"
+     id="text13"
+     style="fill:#0e5eab;fill-opacity:1">TRACK N</text>
+  <rect
+     x="24"
+     y="260"
+     width="96"
+     height="9"
+     rx="2"
+     fill="#263f66"
+     opacity="0.6"
+     id="rect13" />
+  <text
+     x="83.229378"
+     y="267.5"
+     fill="#3d6b9e"
+     font-size="7px"
+     font-weight="700"
+     text-anchor="middle"
+     id="text14"
+     style="fill:#e2ecf3;fill-opacity:1">MonoEncoder / MultiEncoder</text>
+  <rect
+     x="24"
+     y="284"
+     width="96"
+     height="16"
+     rx="2"
+     fill="#e8eff7"
+     id="rect14" />
+  <text
+     x="73.591301"
+     y="321.47025"
+     fill="#1a2b4a"
+     font-size="8.17297px"
+     font-weight="700"
+     text-anchor="middle"
+     id="text15"
+     style="fill:#c65f58;fill-opacity:1;stroke-width:1.08973"
+     transform="scale(1.0897296,0.91765883)">⚠ Set to 64 channels</text>
+  <!-- Arrows: sources → HOA bus -->
+  <line
+     x1="151.25946"
+     y1="112.83672"
+     x2="255.99765"
+     y2="196.94348"
+     stroke="#3d6b9e"
+     stroke-width="1.28199"
+     stroke-dasharray="4, 2"
+     id="line15" />
+  <line
+     x1="148.74489"
+     y1="170.56363"
+     x2="261.98627"
+     y2="209.98117"
+     stroke="#3d6b9e"
+     stroke-width="1.4429"
+     stroke-dasharray="4, 2"
+     id="line16" />
+  <line
+     x1="144.40729"
+     y1="255.01344"
+     x2="261.98672"
+     y2="227.98642"
+     stroke="#3d6b9e"
+     stroke-width="1.40579"
+     stroke-dasharray="4, 2"
+     opacity="0.5"
+     id="line17" />
+  <polygon
+     points="262,196 255,192 255,200"
+     fill="#3d6b9e"
+     id="polygon17" />
+  <polygon
+     points="262,210 255,206 255,214"
+     fill="#3d6b9e"
+     id="polygon18" />
+  <polygon
+     points="262,228 255,224 255,232"
+     fill="#3d6b9e"
+     opacity="0.5"
+     id="polygon19" />
+  <!-- COLUMN 2 — HOA BUS -->
+  <text
+     x="332"
+     y="73"
+     fill="#3d6b9e"
+     font-size="8"
+     font-weight="700"
+     letter-spacing="1.5"
+     text-anchor="middle"
+     id="text19">HOA BUS</text>
+  <rect
+     x="262"
+     y="80"
+     width="140"
+     height="260"
+     rx="4"
+     fill="#1a2b4a"
+     id="rect19" />
+  <rect
+     x="262"
+     y="80"
+     width="4"
+     height="260"
+     rx="2"
+     fill="#3d6b9e"
+     id="rect20" />
+  <text
+     x="332"
+     y="104.54481"
+     fill="#ffffff"
+     font-size="13px"
+     font-weight="700"
+     text-anchor="middle"
+     id="text20">HOA Bus</text>
+  <rect
+     x="278"
+     y="114"
+     width="108"
+     height="18"
+     rx="2"
+     fill="#263f66"
+     id="rect21" />
+  <text
+     x="332"
+     y="126.5"
+     fill="#7ba8d1"
+     font-size="9"
+     font-weight="700"
+     text-anchor="middle"
+     id="text21">64 Channels (7th Order)</text>
+  <line
+     x1="278"
+     y1="142"
+     x2="386"
+     y2="142"
+     stroke="#263f66"
+     stroke-width="1"
+     id="line21" />
+  <text
+     x="332"
+     y="162"
+     fill="#7ba8d1"
+     font-size="8"
+     font-weight="600"
+     text-anchor="middle"
+     id="text22">Track width: 64 ch</text>
+  <text
+     x="332"
+     y="176"
+     fill="#7ba8d1"
+     font-size="8"
+     font-weight="600"
+     text-anchor="middle"
+     id="text23">Master bus: 64 ch</text>
+  <text
+     x="332"
+     y="190"
+     fill="#7ba8d1"
+     font-size="8"
+     font-weight="600"
+     text-anchor="middle"
+     id="text24">No direct-to-Master routes</text>
+  <line
+     x1="278"
+     y1="202"
+     x2="386"
+     y2="202"
+     stroke="#263f66"
+     stroke-width="1"
+     id="line24" />
+  <text
+     x="332"
+     y="220"
+     fill="#9aabbf"
+     font-size="7.5"
+     text-anchor="middle"
+     id="text25">Receives from</text>
+  <text
+     x="332"
+     y="234"
+     fill="white"
+     font-size="8"
+     font-weight="600"
+     text-anchor="middle"
+     id="text26">MonoEncoder · MultiEncoder</text>
+  <line
+     x1="278"
+     y1="248"
+     x2="386"
+     y2="248"
+     stroke="#263f66"
+     stroke-width="1"
+     id="line26" />
+  <text
+     x="332"
+     y="266"
+     fill="#9aabbf"
+     font-size="7.5"
+     text-anchor="middle"
+     id="text27">Sends to</text>
+  <text
+     x="332"
+     y="280"
+     fill="white"
+     font-size="8"
+     font-weight="600"
+     text-anchor="middle"
+     id="text28">Decoder · Binaural Monitor</text>
+  <text
+     x="332"
+     y="294"
+     fill="#7ba8d1"
+     font-size="7.5"
+     text-anchor="middle"
+     id="text29">(same HOA bus feeds both)</text>
+  <rect
+     x="278"
+     y="308"
+     width="108"
+     height="20"
+     rx="2"
+     fill="#e8eff7"
+     id="rect29" />
+  <text
+     x="332"
+     y="321"
+     fill="#1a2b4a"
+     font-size="7.5"
+     font-weight="700"
+     text-anchor="middle"
+     id="text30">⚠ All paths: 64 ch</text>
+  <!-- COLUMN 3 — DECODER -->
+  <text
+     x="535"
+     y="73"
+     fill="#3d6b9e"
+     font-size="8"
+     font-weight="700"
+     letter-spacing="1.5"
+     text-anchor="middle"
+     id="text31">DECODER TRACK</text>
+  <line
+     x1="402"
+     y1="180"
+     x2="451.90683"
+     y2="180"
+     stroke="#3d6b9e"
+     stroke-width="2.24298"
+     id="line31" />
+  <polygon
+     points="457,185 464,180 457,175 "
+     fill="#3d6b9e"
+     id="polygon31"
+     transform="matrix(1.2467996,0,0,1,-117.10639,0)" />
+  <text
+     x="433"
+     y="173"
+     fill="#3d6b9e"
+     font-size="7.5"
+     font-weight="600"
+     text-anchor="middle"
+     id="text32">64 ch</text>
+  <rect
+     x="464"
+     y="80"
+     width="146.31898"
+     height="190"
+     rx="4.1216617"
+     fill="#1a2b4a"
+     id="rect32"
+     style="stroke-width:1.01509" />
+  <rect
+     x="-464"
+     y="80"
+     width="2.9103875"
+     height="191.7276"
+     rx="1.4551938"
+     fill="#3d6b9e"
+     id="rect33"
+     transform="scale(-1,1)"
+     style="stroke-width:0.856862" />
+  <text
+     x="537.59137"
+     y="106.2724"
+     fill="#ffffff"
+     font-size="13px"
+     font-weight="700"
+     text-anchor="middle"
+     id="text33">Decoder</text>
+  <rect
+     x="465.90683"
+     y="114"
+     width="141.64156"
+     height="18"
+     rx="2.4849396"
+     fill="#3d6b9e"
+     id="rect34"
+     style="stroke-width:1.11466" />
+  <text
+     x="528.9679"
+     y="128.45914"
+     fill="#ffffff"
+     font-size="8.63164px"
+     font-weight="700"
+     text-anchor="middle"
+     id="text34"
+     transform="scale(1.0154872,0.98474898)"
+     style="stroke-width:1.01549">AmbiDecoder/MultiDecoder</text>
+  <line
+     x1="478"
+     y1="142"
+     x2="592"
+     y2="142"
+     stroke="#263f66"
+     stroke-width="1"
+     id="line34" />
+  <text
+     x="535"
+     y="160"
+     fill="#7ba8d1"
+     font-size="8"
+     text-anchor="middle"
+     id="text35">Load preset before</text>
+  <text
+     x="535"
+     y="172"
+     fill="#7ba8d1"
+     font-size="8"
+     text-anchor="middle"
+     id="text36">rehearsal or recording</text>
+  <line
+     x1="478"
+     y1="184"
+     x2="592"
+     y2="184"
+     stroke="#263f66"
+     stroke-width="1"
+     id="line36" />
+  <text
+     x="535"
+     y="202"
+     fill="#9aabbf"
+     font-size="7.5"
+     text-anchor="middle"
+     id="text37">Speaker preset</text>
+  <rect
+     x="484"
+     y="208"
+     width="102"
+     height="14"
+     rx="2"
+     fill="#263f66"
+     id="rect37" />
+  <text
+     x="535"
+     y="218.5"
+     fill="white"
+     font-size="7.5"
+     font-weight="600"
+     text-anchor="middle"
+     id="text38">ICST Kompositionsstudio</text>
+  <line
+     x1="478"
+     y1="230"
+     x2="592"
+     y2="230"
+     stroke="#263f66"
+     stroke-width="1"
+     id="line38" />
+  <text
+     x="535"
+     y="248"
+     fill="#9aabbf"
+     font-size="7.5"
+     text-anchor="middle"
+     id="text39">Output</text>
+  <text
+     x="535"
+     y="261"
+     fill="white"
+     font-size="8"
+     font-weight="600"
+     text-anchor="middle"
+     id="text40">LS 1–17 · Sub/LFE ch 18</text>
+  <line
+     x1="606"
+     y1="180"
+     x2="648"
+     y2="180"
+     stroke="#3d6b9e"
+     stroke-width="2.5"
+     id="line40" />
+  <polygon
+     points="648,180 641,175 641,185"
+     fill="#3d6b9e"
+     id="polygon40" />
+  <!-- COLUMN 4 — OUTPUTS -->
+  <text
+     x="726"
+     y="73"
+     fill="#3d6b9e"
+     font-size="8"
+     font-weight="700"
+     letter-spacing="1.5"
+     text-anchor="middle"
+     id="text41">OUTPUTS</text>
+  <rect
+     x="648"
+     y="120"
+     width="150"
+     height="88.956978"
+     rx="4"
+     fill="#263f66"
+     id="rect41"
+     style="stroke-width:1.08189" />
+  <text
+     x="723"
+     y="144"
+     fill="white"
+     font-size="11"
+     font-weight="700"
+     text-anchor="middle"
+     id="text42">🔊 Loudspeakers</text>
+  <text
+     x="723"
+     y="160"
+     fill="#7ba8d1"
+     font-size="8"
+     text-anchor="middle"
+     id="text43">LS 1–17</text>
+  <text
+     x="723"
+     y="174"
+     fill="#7ba8d1"
+     font-size="8"
+     text-anchor="middle"
+     id="text44">Sub / LFE → Channel 18</text>
+  <text
+     x="723"
+     y="188"
+     fill="#9aabbf"
+     font-size="7.5"
+     text-anchor="middle"
+     id="text45">Verify: signal reaches each speaker</text>
+  <!-- Binaural branch -->
+  <path
+     d="m 402.01569,230.60987 q 36.98694,0 36.98694,119.92715 h 16.34307"
+     stroke="#7ba8d1"
+     stroke-width="1.88966"
+     stroke-dasharray="5, 3"
+     fill="none"
+     id="path45" />
+  <polygon
+     points="457,300 464,295 457,290 "
+     fill="#7ba8d1"
+     id="polygon45"
+     transform="matrix(1.4935991,0,0,1.0863798,-227.30239,30.232946)" />
+  <rect
+     x="464"
+     y="310"
+     width="142"
+     height="90"
+     rx="4"
+     fill="#1a2b4a"
+     stroke="#263f66"
+     stroke-width="1.5"
+     id="rect46" />
+  <rect
+     x="464"
+     y="310"
+     width="4"
+     height="90"
+     rx="2"
+     fill="#7ba8d1"
+     id="rect47" />
+  <text
+     x="535"
+     y="334"
+     fill="white"
+     font-size="11"
+     font-weight="700"
+     text-anchor="middle"
+     id="text47">Binaural Monitor</text>
+  <rect
+     x="478"
+     y="340"
+     width="114"
+     height="14"
+     rx="2"
+     fill="#263f66"
+     id="rect48" />
+  <text
+     x="535"
+     y="350.5"
+     fill="#7ba8d1"
+     font-size="7.5"
+     font-weight="600"
+     text-anchor="middle"
+     id="text48">AmbiDecoder (binaural mode)</text>
+  <text
+     x="535"
+     y="368"
+     fill="#7ba8d1"
+     font-size="7.5"
+     text-anchor="middle"
+     id="text49">Same HOA bus source</text>
+  <text
+     x="535"
+     y="381"
+     fill="#9aabbf"
+     font-size="7.5"
+     text-anchor="middle"
+     id="text50">Check headphone path separately</text>
+  <line
+     x1="606"
+     y1="355"
+     x2="648"
+     y2="355"
+     stroke="#7ba8d1"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line50" />
+  <polygon
+     points="648,355 641,350 641,360"
+     fill="#7ba8d1"
+     id="polygon50" />
+  <rect
+     x="648"
+     y="316"
+     width="150"
+     height="60"
+     rx="4"
+     fill="#1a2b4a"
+     stroke="#263f66"
+     stroke-width="1"
+     id="rect50" />
+  <text
+     x="723"
+     y="342"
+     fill="white"
+     font-size="11"
+     font-weight="700"
+     text-anchor="middle"
+     id="text51">🎧 Headphones</text>
+  <text
+     x="723"
+     y="357"
+     fill="#7ba8d1"
+     font-size="8"
+     text-anchor="middle"
+     id="text52">Binaural render</text>
+  <text
+     x="723"
+     y="369"
+     fill="#9aabbf"
+     font-size="7.5"
+     text-anchor="middle"
+     id="text53">Separate output path</text>
+  <!-- LEGEND -->
+  <rect
+     x="16"
+     y="430"
+     width="788"
+     height="56"
+     rx="3"
+     fill="#1a2b4a"
+     opacity="0.6"
+     id="rect53"
+     style="fill:#bebebe;fill-opacity:1" />
+  <text
+     x="32"
+     y="449"
+     fill="#7ba8d1"
+     font-size="7.5"
+     font-weight="700"
+     letter-spacing="1.5"
+     id="text54"
+     style="fill:#1c1c1c;fill-opacity:1">LEGEND</text>
+  <line
+     x1="100"
+     y1="449"
+     x2="130"
+     y2="449"
+     stroke="#3d6b9e"
+     stroke-width="2.5"
+     id="line54" />
+  <polygon
+     points="130,449 124,445 124,453"
+     fill="#3d6b9e"
+     id="polygon54" />
+  <text
+     x="135"
+     y="452"
+     fill="#c2d4e8"
+     font-size="8"
+     id="text55"
+     style="fill:#000000;fill-opacity:1">Main signal path (64 ch)</text>
+  <line
+     x1="310"
+     y1="449"
+     x2="340"
+     y2="449"
+     stroke="#3d6b9e"
+     stroke-width="1.5"
+     stroke-dasharray="4,2"
+     id="line55" />
+  <polygon
+     points="340,449 334,445 334,453"
+     fill="#3d6b9e"
+     id="polygon55" />
+  <text
+     x="345"
+     y="452"
+     fill="#c2d4e8"
+     font-size="8"
+     id="text56"
+     style="fill:#000000;fill-opacity:1">Encoder sends to HOA bus</text>
+  <line
+     x1="520"
+     y1="449"
+     x2="550"
+     y2="449"
+     stroke="#7ba8d1"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line56" />
+  <polygon
+     points="550,449 544,445 544,453"
+     fill="#7ba8d1"
+     id="polygon56" />
+  <text
+     x="555"
+     y="452"
+     fill="#c2d4e8"
+     font-size="8"
+     id="text57"
+     style="fill:#000000;fill-opacity:1">Optional binaural path</text>
+  <rect
+     x="100"
+     y="460"
+     width="68"
+     height="13"
+     rx="2"
+     fill="#e8eff7"
+     id="rect57" />
+  <text
+     x="134"
+     y="470"
+     fill="#1a2b4a"
+     font-size="7"
+     font-weight="700"
+     text-anchor="middle"
+     id="text58">⚠ 64-ch required</text>
+  <text
+     x="310"
+     y="470"
+     fill="#9aabbf"
+     font-size="7.5"
+     id="text59"
+     style="fill:#141414;fill-opacity:1">All HOA tracks must be 64 channels wide</text>
+  <text
+     x="520"
+     y="470"
+     fill="#9aabbf"
+     font-size="7.5"
+     id="text60"
+     style="fill:#010202;fill-opacity:1">Same bus, routed to headphone output</text>
+  <metadata
+     id="metadata164">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>ICST HOA Routing Diagram</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

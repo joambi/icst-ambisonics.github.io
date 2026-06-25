@@ -100,12 +100,92 @@
     }
   }
 
+  &__main {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: flex-start;
+
+    &--with-toc {
+      gap: 0;
+    }
+  }
+
   &__content {
     flex: 1;
     min-width: 0;
 
     @include conf.desktop {
       padding: 0 2rem;
+    }
+  }
+
+  &__toc {
+    display: none;
+
+    @include conf.desktop {
+      display: block;
+      width: 210px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 1.5rem;
+      max-height: calc(100vh - 3rem);
+      overflow-y: auto;
+      padding: 0 0 2rem 1.5rem;
+      margin-top: 0.25rem;
+
+      @include color.themed() {
+        border-left: color.t('border');
+      }
+    }
+  }
+
+  &__toc-inner {
+    padding-top: 0.25rem;
+  }
+
+  &__toc-label {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 0.6rem;
+
+    @include color.themed() {
+      color: color.t('primary-light');
+    }
+  }
+
+  // Override global #TableOfContents styles inside docs TOC sidebar
+  &__toc #TableOfContents {
+    ul {
+      line-height: 1.7em;
+    }
+
+    li a {
+      font-size: 1.1rem;
+      text-decoration: none;
+      display: block;
+      padding: 0.1rem 0;
+      transition: color 0.12s ease;
+
+      @include color.themed() {
+        color: color.t('primary-light');
+      }
+
+      &:hover {
+        color: var.$info;
+      }
+    }
+
+    // Indent H3 entries
+    > ul > li > ul {
+      padding-left: 0.9rem;
+      margin-top: 0;
+
+      li a {
+        font-size: 1.05rem;
+      }
     }
   }
 

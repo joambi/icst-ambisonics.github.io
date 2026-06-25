@@ -35,7 +35,7 @@ profilePicture = "images/AmbiPlugin_logo.gif"
 images = ["images/composing_in_ambisonics.png"]
 mainSections = ["blog", "post"]
 favicon = "favicons/"
-contentratio = 0.7
+contentratio = 0.82
 copyright = ""
 # Google Search Console verification
 googleSiteVerify = "2dac45051b431b1b"
@@ -50,6 +50,11 @@ googleSiteVerify = "2dac45051b431b1b"
 [markup.goldmark.renderer]
 unsafe = true
 ignoreLogs = ["warning-goldmark-raw-html"]
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+ordered = false
 
 ## Social links
 [[params.socialIcons]]

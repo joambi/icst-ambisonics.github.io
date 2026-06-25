@@ -10,7 +10,7 @@ Level: Intermediate | Zielgruppe: Komponist:in, Sounddesigner:in, Spatial-Audio-
 
 Diese Seite beschreibt, wie du AmbiEncoder-Bewegungen mit REAPER-Markern definierst, per OSC vorhörst und als Automation aufzeichnest.
 
-> **Zuerst herunterladen:** Alles Nötige ist im Bundle — [ICST Ambi Motion Markers Bundle herunterladen](https://github.com/joambi/icst_ambisonics/raw/main/Scripts/bundles/ICST_Ambi_Motion_Markers_Bundle.zip) (Lua-Scripts, Python-Worker, Beispiel-CSVs, Handbuch). [Inhalt auf GitHub ansehen](https://github.com/joambi/icst_ambisonics/tree/main/Scripts/bundles/ICST_Ambi_Motion_Markers_Bundle).
+> **Zuerst herunterladen:** Alles Nötige ist im Bundle — [ICST Ambi Motion Markers Bundle herunterladen](/downloads/ICST_Ambi_Motion_Markers_Bundle.zip) (Lua-Scripts, Python-Worker, Beispiel-CSVs, Handbuch)..
 
 ## Was es macht
 
