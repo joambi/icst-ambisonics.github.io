@@ -75,12 +75,22 @@ Before installing, make sure you have:
 
 ## Installation
 
+<div class="hero__links" style="margin-top:0; margin-bottom:1.5rem;">
+  <a class="hero__link hero__link--primary" href="/downloads/ICST_Ambi_Motion_Markers_Bundle.zip">
+    <i class="fas fa-download"></i> Download Bundle
+  </a>
+  <a class="hero__link" href="/icst-ambisonics-plugins/02_installation/">ICST Plugin Installation</a>
+  <a class="hero__link" href="/icst-ambisonics-plugins/13_osc/">OSC Setup</a>
+</div>
+
 ### 1. Add the scripts to REAPER
 
-From the downloaded bundle, import these ReaScripts via *Actions → Load ReaScript*:
+In REAPER: *Actions menu → Load ReaScript…* — then select each file from the bundle:
 
 - `scripts/JS_Ambi_Motion_Marker_GUI.lua`
 - `scripts/JS_Import_Ambi_Markers_From_CSV.lua`
+
+![REAPER Actions menu — Load ReaScript dialog](/motion-markers/install-load-reascript.png)
 
 ### 2. Place the Python worker
 
@@ -112,6 +122,17 @@ The GUI starts the worker automatically the first time you press a button — no
 ### 3. Configure the ICST plugin
 
 Insert `AmbiEncoder_64` on the target track and enable OSC input. Make sure the plugin OSC port matches the GUI setting (default: `50001`).
+
+### Installation checklist
+
+Before your first test, verify:
+
+<ul class="quick-start-steps" style="margin-top:0.5rem;">
+  <li><strong>Both Lua scripts loaded</strong> <span>Visible in <em>Actions → Show action list</em> as <code>JS_Ambi_Motion_Marker_GUI</code> and <code>JS_Import_Ambi_Markers_From_CSV</code></span></li>
+  <li><strong>Python path set in GUI</strong> <span>The <code>Python</code> field points to a valid Python 3 executable — test with <code>which python3</code> in a terminal</span></li>
+  <li><strong>python-osc installed</strong> <span>Run <code>pip3 install python-osc</code> for the same Python executable</span></li>
+  <li><strong>AmbiEncoder OSC input active</strong> <span>Plugin → OSC In enabled, port matches GUI setting (default <code>50001</code>)</span></li>
+</ul>
 
 ## Marker workflow
 
