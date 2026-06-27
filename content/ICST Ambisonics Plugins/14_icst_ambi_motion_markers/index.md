@@ -182,7 +182,7 @@ In the GUI marker list, each row represents one marker. Click the left side of a
 
 Manual markers work well for a handful of cues. Switch to CSV once you have more than six or seven positions, when coordinates come from a score or a spatial planning spreadsheet, or when you want to version the cue set alongside your project in git. You edit the CSV, click `Load CSV` once, and all markers update — no retyping.
 
-### Format: azimuth/elevation/distance
+### Format: AED
 
 ```csv
 time,index,source,azimuth,elevation,distance
@@ -192,7 +192,7 @@ time,index,source,azimuth,elevation,distance
 9.2,2,2,90,0,0.2
 ```
 
-### Format: x/y/z
+### Format: XYZ
 
 ```csv
 time,index,source,x,y,z
@@ -315,3 +315,7 @@ Check:
 - decimal points (not commas) for numbers
 - one source per row
 - valid time values and indices
+
+## See also
+
+[ICST Ambi Motion Map](/icst-ambisonics-plugins/15_icst_ambi_motion_map/) — algorithmic movement generator for AmbiEncoder_64. Assign motion shapes (circle, spiral, Lissajous…) per source and write XYZ automation in one click. Use Motion Map when you need generative spatial textures; use Motion Markers when you need musically timed, cue-defined movement.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/11_animator/index.de.md",
+                "file": "content/ICST Ambisonics Plugins/15_icst_ambi_motion_map/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index.de"
+              "title": "index"
             }
           }
         ]
@@ -192,7 +192,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1782374765150": false,
+      "image-preview-on-icon-hover:1782551922988": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -219,17 +219,17 @@
   },
   "active": "6d07191f14bb7db8",
   "lastOpenFiles": [
-    "public/de/residenzen/icst-studio-residences/icst-air-dates/index.html",
-    "public/de/de/residenzen/nandele_maguni/index.html",
-    "public/de/de/residenzen/Youngjae Cho/index.html",
-    "public/de/de/residenzen/Péter Biró Dániel/index.html",
-    "public/de/de/post/blauertsche_bänder/index.html",
-    "public/de/de/blog/ambisonics-timeline/index.html",
-    "public/de/de/residenzen/Ana Gonzalez Gamboa/index.html",
-    "public/de/blog/ascolta/19-ascolta/index.html",
-    "public/de/blog/ascolta/18-ascolta/index.html",
-    "public/de/blog/ascolta/16-ascolta/index.html",
-    "public/de/blog/ascolta/15-ascolta/index.html",
+    "public/de/icst-ambisonics-plugins/index.xml",
+    "public/de/learn/index.xml",
+    "public/de/residenzen/index.xml",
+    "public/de/series/index.xml",
+    "public/de/series/index.html",
+    "public/de/series",
+    "public/de/month/2026-03/index.xml",
+    "public/de/month/2026-03/index.html",
+    "public/de/month/2025-11/index.xml",
+    "public/de/month/2025-11/index.html",
+    "public/de/month/2025-07/index.xml",
     "public/residenzen/youngjae-cho/Youngjae_Cho.jpg",
     "public/residenzen/youngjae-cho/Youngjae_02.jpg",
     "public/residenzen/peter-biro-daniel/Lucas_Daniel.jpg",
@@ -241,12 +241,14 @@
     "public/residenzen/icst-studio-residences-2026/monoc-small.jpg",
     "public/residenzen/icst-studio-residences-2026/monoc-small-2.jpg",
     "public/blog/faq/Ableton2Reaper.canvas",
-    "content/ICST Ambisonics Plugins/11_animator/index.md",
-    "content/ICST Ambisonics Plugins/11_animator/index.de.md",
-    "content/ICST Ambisonics Plugins/11_animator/Animator-Handbuch.md",
-    "ICST_Ambi_Motion_Markers_Handbook.md",
-    "content/ICST Ambisonics Plugins/14_icst_ambi_motion_markers/index.md",
+    "content/ICST Ambisonics Plugins/15_icst_ambi_motion_map/index.de.md",
     "content/ICST Ambisonics Plugins/14_icst_ambi_motion_markers/index.de.md",
+    "content/ICST Ambisonics Plugins/15_icst_ambi_motion_map/index.md",
+    "ICST_Ambi_Motion_Markers_Handbook.md",
+    "content/ICST Ambisonics Plugins/11_animator/index.de.md",
+    "content/ICST Ambisonics Plugins/11_animator/index.md",
+    "content/ICST Ambisonics Plugins/11_animator/Animator-Handbuch.md",
+    "content/ICST Ambisonics Plugins/14_icst_ambi_motion_markers/index.md",
     "_drafts/Decodierung.md",
     "_drafts/ICST_HOA_Verification_Quick_Guide_DE.md",
     "_drafts/ICST_HOA_Verification_Quick_Guide.md",
@@ -264,8 +266,6 @@
     "content/learn/working-with-ambisonics-workshop/reaper-workshop/ICST Ambisonics Workshop 2026.md",
     "content/learn/working-with-ambisonics-workshop/reaper-workshop/MaxMSP Ambisonics.md",
     "content/learn/working-with-ambisonics-workshop/reaper-workshop/Aufgabe.md",
-    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Ablauf II.md",
-    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Ablauf.md",
     "docs/blog/faq/Ableton2Reaper.canvas",
     "content/Blog/FAQ/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",

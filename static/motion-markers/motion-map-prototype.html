@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AmbiEncoder64 Motion Map GUI — Prototype</title>
+<style>
+/* ── Reset & Base ───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:       #0c0e10;
+  --bg2:      #101418;
+  --bg3:      #141820;
+  --surface:  #191d24;
+  --border:   #1e242c;
+  --border2:  #252c36;
+  --green:    #2e8b5a;
+  --green-hi: #3dab72;
+  --green-tx: #5dd39e;
+  --text:     #c8d0d8;
+  --text-dim: #4e5a68;
+  --text-mid: #7a8898;
+  --accent:   #5dd39e;
+  --hover:    #1c2330;
+  --active-bg:#152e22;
+  --active-br:#2e8b5a;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'SF Mono', 'Menlo', 'Monaco', monospace;
+  font-size: 11px;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Layout ─────────────────────────────────────────────────── */
+.titlebar {
+  padding: 10px 18px 8px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.titlebar h1 { font-size: 13px; color: #e0e6ec; font-weight: 600; letter-spacing: .3px; }
+.titlebar p  { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
+.main { display: flex; flex: 1; overflow: hidden; }
+.left { flex: 1; display: flex; flex-direction: column; overflow: hidden; padding: 10px 12px; }
+.right { width: 320px; flex-shrink: 0; background: var(--bg2); border-left: 1px solid var(--border); padding: 14px; display: flex; flex-direction: column; gap: 10px; overflow-y: auto; }
+
+/* ── Grid header ────────────────────────────────────────────── */
+.grid-header {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  padding-left: 66px;
+  margin-bottom: 4px;
+  flex-shrink: 0;
+}
+.gh-cell {
+  flex: 1;
+  text-align: center;
+  font-size: 10px;
+  color: var(--text-dim);
+  padding: 0 2px;
+  min-width: 0;
+}
+
+/* ── Source rows ─────────────────────────────────────────────── */
+.rows-container { flex: 1; overflow-y: auto; overflow-x: hidden; display: flex; flex-direction: column; gap: 2px; }
+.rows-container::-webkit-scrollbar { width: 6px; }
+.rows-container::-webkit-scrollbar-track { background: var(--bg); }
+.rows-container::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+.source-row { display: flex; gap: 2px; align-items: center; min-height: 30px; }
+.src-on {
+  width: 26px; height: 28px; flex-shrink: 0;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-size: 11px; color: transparent; transition: all .12s; user-select: none;
+}
+.src-on.on { color: var(--accent); border-color: var(--active-br); background: var(--active-bg); }
+.src-on:hover { border-color: var(--border2); }
+.src-label {
+  width: 36px; height: 28px; flex-shrink: 0;
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 4px; display: flex; align-items: center; justify-content: center;
+  font-size: 11px; color: var(--text-dim); cursor: pointer; transition: all .12s; user-select: none;
+}
+.src-label.sel { color: var(--text); background: var(--surface); border-color: var(--active-br); }
+.src-label:hover { border-color: var(--border2); color: var(--text-mid); }
+
+.motion-cells { display: flex; flex: 1; gap: 2px; min-width: 0; }
+.motion-cell {
+  flex: 1; height: 28px; min-width: 0;
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  position: relative; transition: border-color .1s, background .1s; overflow: hidden;
+}
+.motion-cell:hover { border-color: var(--border2); background: var(--hover); }
+.motion-cell.active { background: var(--active-bg); border-color: var(--active-br); }
+.motion-cell canvas { display: block; width: 100%; height: 100%; }
+
+/* ── Presets ─────────────────────────────────────────────────── */
+.presets { flex-shrink: 0; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); }
+.preset-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 5px; }
+.preset-row { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 4px; }
+.btn {
+  background: var(--bg3); border: 1px solid var(--border2); color: var(--text-mid);
+  font-size: 10px; font-family: inherit; padding: 5px 10px; border-radius: 4px;
+  cursor: pointer; transition: all .12s; user-select: none;
+}
+.btn:hover { border-color: #3a4a56; color: var(--text); background: var(--hover); }
+.btn:active { transform: translateY(1px); }
+
+/* ── Status bar ─────────────────────────────────────────────── */
+.statusbar {
+  flex-shrink: 0; padding: 6px 12px;
+  border-top: 1px solid var(--border);
+  background: var(--bg2);
+  font-size: 11px; color: var(--text-dim);
+  display: flex; align-items: center; gap: 10px;
+}
+.status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+
+/* ── Right panel: Preview ────────────────────────────────────── */
+.panel-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 6px; }
+.sphere-wrap {
+  width: 100%; aspect-ratio: 4/3;
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 6px; overflow: hidden; position: relative;
+}
+.sphere-wrap canvas { width: 100%; height: 100%; display: block; }
+
+/* ── Right panel: Settings ───────────────────────────────────── */
+.settings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+.field { display: flex; flex-direction: column; gap: 2px; }
+.field label { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .5px; }
+.field input {
+  background: var(--bg); border: 1px solid var(--border); border-radius: 4px;
+  color: var(--text); font-size: 11px; font-family: inherit; padding: 4px 7px;
+  outline: none; width: 100%; transition: border .12s;
+}
+.field input:focus { border-color: var(--active-br); }
+.field.wide { grid-column: span 2; }
+
+.toggle-group { display: flex; flex-direction: column; gap: 5px; }
+.toggle-row { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+.toggle-box {
+  width: 13px; height: 13px; border: 1px solid var(--active-br);
+  background: var(--bg); border-radius: 3px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .12s;
+}
+.toggle-box.on { background: var(--active-bg); }
+.toggle-box.on::after { content: ''; width: 7px; height: 7px; background: var(--accent); border-radius: 1px; display: block; }
+.toggle-label { font-size: 11px; color: var(--text-mid); }
+
+/* ── Write button ────────────────────────────────────────────── */
+.write-btn {
+  background: var(--active-bg); border: 1px solid var(--active-br);
+  color: var(--accent); font-size: 12px; font-family: inherit;
+  padding: 12px; border-radius: 5px; cursor: pointer;
+  text-align: center; transition: all .15s; font-weight: 600; letter-spacing: .3px;
+  flex-shrink: 0;
+}
+.write-btn:hover { background: #1a3a2a; color: #7de8b4; }
+.write-btn:active { transform: translateY(1px); }
+
+/* ── Active source readout ───────────────────────────────────── */
+.sel-readout { font-size: 11px; color: var(--accent); padding: 6px 0; border-top: 1px solid var(--border); }
+
+/* Scrollbar for right panel */
+.right::-webkit-scrollbar { width: 5px; }
+.right::-webkit-scrollbar-track { background: transparent; }
+.right::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<div class="titlebar">
+  <h1>AmbiEncoder64 Motion Map</h1>
+  <p>Assign one motion shape per source index, then write XYZ automation over the current time selection.</p>
+</div>
+
+<div class="main">
+  <!-- Left: grid -->
+  <div class="left">
+    <div class="grid-header" id="gridHeader"></div>
+    <div class="rows-container" id="rowsContainer"></div>
+
+    <div class="presets">
+      <div class="preset-label">Presets</div>
+      <div class="preset-row">
+        <button class="btn" onclick="applyPreset('auto')">Auto</button>
+        <button class="btn" onclick="applyPreset('random')">Random</button>
+        <button class="btn" onclick="applyPreset('line')">All Line</button>
+        <button class="btn" onclick="applyPreset('circle')">All Circle</button>
+        <button class="btn" onclick="applyPreset('step')">All Step</button>
+        <button class="btn" onclick="applyPreset('arc07')">S0-7 Arc</button>
+        <button class="btn" onclick="applyPreset('circ815')">S8-15 Circle</button>
+      </div>
+      <div class="preset-row">
+        <button class="btn" onclick="srcRange(0,63,true)">All Src</button>
+        <button class="btn" onclick="srcRange(0,63,false)">None Src</button>
+        <button class="btn" onclick="srcRange(0,7,true)">S0-7 Src</button>
+        <button class="btn" onclick="srcRange(8,15,true)">S8-15 Src</button>
+        <button class="btn" onclick="clearSel()">Clear Sel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: preview + settings -->
+  <div class="right">
+    <div>
+      <div class="panel-label">Trajectory Preview</div>
+      <div class="sphere-wrap">
+        <canvas id="sphereCanvas"></canvas>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel-label" style="margin-bottom:4px">Active sources</div>
+      <div style="font-size:12px;color:var(--text)" id="activeCnt">0 / 64</div>
+    </div>
+
+    <div>
+      <div class="panel-label">Spatial parameters</div>
+      <div class="settings-grid">
+        <div class="field"><label>Steps/sec</label><input id="f_steps" value="12" type="number"></div>
+        <div class="field"><label>Motion amount</label><input id="f_motion" value="2.0" type="number" step="0.1"></div>
+        <div class="field"><label>X center (Az°)</label><input id="f_xcen" value="0" type="number"></div>
+        <div class="field"><label>X spread (Az°)</label><input id="f_xspr" value="320" type="number"></div>
+        <div class="field"><label>Y center (El°)</label><input id="f_ycen" value="0" type="number"></div>
+        <div class="field"><label>Y spread (El°)</label><input id="f_yspr" value="50" type="number"></div>
+        <div class="field"><label>Z center</label><input id="f_zcen" value="0.75" type="number" step="0.05"></div>
+        <div class="field"><label>Z spread</label><input id="f_zspr" value="0.35" type="number" step="0.05"></div>
+        <div class="field wide"><label>Region name</label><input id="f_region" value="BFormat_TS"></div>
+      </div>
+    </div>
+
+    <div class="toggle-group" id="toggleGroup">
+      <div class="toggle-row" onclick="toggleOpt('clearExisting')">
+        <div class="toggle-box on" id="tb_clearExisting"></div>
+        <span class="toggle-label">Clear existing</span>
+      </div>
+      <div class="toggle-row" onclick="toggleOpt('trackLatch')">
+        <div class="toggle-box on" id="tb_trackLatch"></div>
+        <span class="toggle-label">Track Latch</span>
+      </div>
+      <div class="toggle-row" onclick="toggleOpt('overwriteRegion')">
+        <div class="toggle-box on" id="tb_overwriteRegion"></div>
+        <span class="toggle-label">Overwrite region</span>
+      </div>
+      <div class="toggle-row" onclick="toggleOpt('useZMotion')">
+        <div class="toggle-box on" id="tb_useZMotion"></div>
+        <span class="toggle-label">Use Z motion</span>
+      </div>
+    </div>
+
+    <div class="sel-readout" id="selReadout">Selected S0: —</div>
+    <button class="write-btn" onclick="doWrite()">Write Automation + Region</button>
+  </div>
+</div>
+
+<div class="statusbar">
+  <div class="status-dot" id="statusDot"></div>
+  <span id="statusText">Ready</span>
+</div>
+
+<script>
+// ── Motion definitions ───────────────────────────────────────
+const MOTIONS = [
+  { id: 'line',        label: 'Line'  },
+  { id: 'arc_up',      label: 'Arc+'  },
+  { id: 'arc_down',    label: 'Arc-'  },
+  { id: 's_curve',     label: 'S'     },
+  { id: 'step',        label: 'Step'  },
+  { id: 'zigzag',      label: 'Zig'   },
+  { id: 'circle',      label: 'Circ'  },
+  { id: 'spiral',      label: 'Spir'  },
+  { id: 'fourier_xyz', label: 'Four'  },
+  { id: 'lissajous',   label: 'Lis'   },
+];
+const N_SRC = 64;
+
+// ── App state ────────────────────────────────────────────────
+const state = {
+  motions:  Array.from({length: N_SRC}, (_, i) => MOTIONS[i % MOTIONS.length].id),
+  enabled:  Array(N_SRC).fill(true),
+  selected: 0,
+  opts: { clearExisting: true, trackLatch: true, overwriteRegion: true, useZMotion: true },
+};
+
+// ── Math helpers ─────────────────────────────────────────────
+const smoothstep = t => t * t * (3 - 2 * t);
+const triangle   = p => { const w = p - Math.floor(p); return w < .5 ? w * 4 - 1 : 3 - w * 4; };
+const clamp      = (v, a, b) => Math.max(a, Math.min(b, v));
+const wrapDeg    = v => { while (v < -180) v += 360; while (v > 180) v -= 360; return v; };
+
+function fourierSum(t, phase, terms) {
+  let sum = 0, wsum = 0;
+  for (const [w, f, ph = 0] of terms) {
+    sum  += w * Math.sin(Math.PI * 2 * (f * t + phase + ph));
+    wsum += Math.abs(w);
+  }
+  return wsum < 1e-6 ? 0 : clamp(sum / wsum, -1, 1);
+}
+
+function getParams() {
+  return {
+    azCen:  parseFloat(document.getElementById('f_xcen').value)  || 0,
+    azSpr:  parseFloat(document.getElementById('f_xspr').value)  || 320,
+    elCen:  parseFloat(document.getElementById('f_ycen').value)  || 0,
+    elSpr:  parseFloat(document.getElementById('f_yspr').value)  || 50,
+    zCen:   parseFloat(document.getElementById('f_zcen').value)  || 0.75,
+    zSpr:   parseFloat(document.getElementById('f_zspr').value)  || 0.35,
+    amt:    parseFloat(document.getElementById('f_motion').value) || 2.0,
+    useZ:   state.opts.useZMotion,
+  };
+}
+
+function computeAED(shape, t, srcIdx, nActive, p) {
+  const π2 = Math.PI * 2;
+  const phase = srcIdx / Math.max(1, nActive);
+  const azA = p.azSpr * 0.5 * (p.amt > 0 ? Math.min(p.amt, 3) : 1);
+  const elA = p.elSpr * 0.5;
+  const zA  = p.useZ ? p.zSpr * 0.5 : 0;
+  let az = p.azCen, el = p.elCen, d = p.zCen;
+
+  switch (shape) {
+    case 'line':
+      az = p.azCen - azA + p.azSpr * t;
+      el = p.elCen - elA + p.elSpr * t;
+      break;
+    case 'arc_up': {
+      const e = smoothstep(t);
+      az = p.azCen - azA + p.azSpr * e + phase * 24;
+      el = p.elCen + elA * Math.sin(Math.PI * t + phase * π2);
+      d  = p.zCen  + zA  * Math.sin(Math.PI * t);
+      break;
+    }
+    case 'arc_down': {
+      const e = smoothstep(t);
+      az = p.azCen - azA + p.azSpr * e + phase * 24;
+      el = p.elCen - elA * Math.sin(Math.PI * t + phase * π2);
+      d  = p.zCen  - zA  * Math.sin(Math.PI * t);
+      break;
+    }
+    case 's_curve': {
+      const e = smoothstep(t);
+      az = p.azCen - azA + p.azSpr * e;
+      el = p.elCen + elA * Math.sin(π2 * (t - 0.25 + phase * 0.5));
+      d  = p.zCen  + zA  * Math.sin(π2 * (e + phase));
+      break;
+    }
+    case 'step': {
+      const steps   = 4;
+      const stepped = t >= 1 ? 1 : Math.floor(t * steps) / steps;
+      az = p.azCen - azA + p.azSpr * stepped;
+      el = p.elCen + elA * triangle(stepped + phase);
+      d  = p.zCen  + zA  * triangle(stepped * 2 + phase);
+      break;
+    }
+    case 'zigzag':
+      az = p.azCen + azA * triangle(t * 4 + phase);
+      el = p.elCen + elA * triangle(t * 2 + phase + 0.25);
+      break;
+    case 'circle':
+      az = p.azCen + p.azSpr * (t + phase - 0.5);
+      el = p.elCen + elA * Math.sin(π2 * (t + phase));
+      d  = p.zCen  + zA  * Math.sin(π2 * (t * 0.5 + phase));
+      break;
+    case 'spiral': {
+      const sw = smoothstep(t);
+      az = p.azCen + azA * Math.sin(π2 * (sw + phase));
+      el = p.elCen - elA + p.elSpr * sw;
+      d  = p.zCen  - zA  + p.zSpr * t;
+      break;
+    }
+    case 'fourier_xyz':
+      az = p.azCen + azA * fourierSum(t, phase, [[1,1,0],[.55,2,.18],[.30,3,.41],[.18,5,.07]]);
+      el = p.elCen + elA * fourierSum(t, phase, [[1,1,.25],[.50,3,.02],[.28,4,.33],[.15,6,.11]]);
+      d  = p.zCen  + zA  * fourierSum(t, phase, [[1,1,.125],[.42,2,.36],[.24,5,.19]]);
+      break;
+    case 'lissajous':
+      az = p.azCen + azA * Math.sin(π2 * (t + phase));
+      el = p.elCen + elA * Math.sin(π2 * (t * 2 + phase));
+      d  = p.zCen  + zA  * Math.cos(π2 * (t + phase));
+      break;
+  }
+  return { az: wrapDeg(az), el: clamp(el, -90, 90), d: clamp(d, 0, 1) };
+}
+
+// ── Icon canvas rendering ─────────────────────────────────────
+const ICON_STEPS = 40;
+const ICON_CACHE = {}; // id+'_'+active -> ImageData
+
+function drawIcon(canvas, shapeId, active) {
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+
+  const pad = 5, aw = W - pad * 2, ah = H - pad * 2;
+  const fakeP = { azCen: 0, azSpr: 1, elCen: 0, elSpr: 1, zCen: .5, zSpr: .3, amt: 1, useZ: true };
+
+  // Collect points
+  const pts = [];
+  for (let i = 0; i <= ICON_STEPS; i++) {
+    const t = i / ICON_STEPS;
+    const { az, el } = computeAED(shapeId, t, 0, 1, fakeP);
+    pts.push([pad + (az + 0.5) * aw, pad + (0.5 - el) * ah]);
+  }
+
+  // Draw shadow / glow for active
+  if (active) {
+    ctx.save();
+    ctx.shadowColor = '#3dab72';
+    ctx.shadowBlur = 4;
+    ctx.strokeStyle = '#5dd39e';
+    ctx.lineWidth = 1.8;
+  } else {
+    ctx.strokeStyle = '#364855';
+    ctx.lineWidth = 1.4;
+  }
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.beginPath();
+  pts.forEach(([x, y], i) => i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y));
+  ctx.stroke();
+  if (active) ctx.restore();
+
+  // Start dot
+  const [x0, y0] = pts[0];
+  ctx.fillStyle = active ? '#3dab72' : '#253340';
+  ctx.beginPath();
+  ctx.arc(x0, y0, active ? 2.5 : 1.8, 0, Math.PI * 2);
+  ctx.fill();
+}
+
+// ── Sphere preview canvas ─────────────────────────────────────
+const SPHERE_COLORS = [
+  '#5dd39e','#4a9eff','#f5a623','#e85d96',
+  '#a78bfa','#34d4c8','#fb923c','#a3e635',
+  '#f472b6','#60a5fa','#facc15','#86efac',
+];
+
+let animT = 0, animFrame = null;
+
+function drawSphere() {
+  const canvas  = document.getElementById('sphereCanvas');
+  const wrapper = canvas.parentElement;
+  const W = wrapper.clientWidth, H = W;
+  canvas.width  = W * devicePixelRatio;
+  canvas.height = H * devicePixelRatio;
+  canvas.style.width  = W + 'px';
+  canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(devicePixelRatio, devicePixelRatio);
+  ctx.clearRect(0, 0, W, H);
+
+  const cx = W / 2, cy = H / 2;
+  const scaleX = W * 0.42, scaleY = H * 0.42;
+
+  // Grid lines
+  ctx.strokeStyle = '#161e26';
+  ctx.lineWidth   = 1;
+  for (let az = -150; az <= 150; az += 60) {
+    const x = cx + (az / 180) * scaleX;
+    ctx.beginPath(); ctx.moveTo(x, cy - scaleY * 0.98); ctx.lineTo(x, cy + scaleY * 0.98); ctx.stroke();
+  }
+  for (let el = -60; el <= 60; el += 30) {
+    const y = cy - (el / 90) * scaleY;
+    ctx.beginPath(); ctx.moveTo(cx - scaleX * 0.98, y); ctx.lineTo(cx + scaleX * 0.98, y); ctx.stroke();
+  }
+
+  // Axis labels
+  ctx.fillStyle = '#1e2c3a';
+  ctx.font      = '9px monospace';
+  ctx.fillText('AZ', cx - 6, H - 4);
+  ctx.fillText('EL', 2, cy + 4);
+  ctx.fillText('−180', 2, cy + 3);
+  ctx.fillText('+180', W - 28, cy + 3);
+
+  const p = getParams();
+  const enabled = state.enabled.map((e, i) => e ? i : -1).filter(i => i >= 0);
+  const TSTEPS  = 80;
+
+  // Draw trails (top 10 enabled sources)
+  enabled.slice(0, 12).forEach((src, ci) => {
+    const shape = state.motions[src];
+    const col   = SPHERE_COLORS[ci % SPHERE_COLORS.length];
+    ctx.strokeStyle = col + '66';
+    ctx.lineWidth   = 1.2;
+    ctx.beginPath();
+    for (let i = 0; i <= TSTEPS; i++) {
+      const t = i / TSTEPS;
+      const { az, el } = computeAED(shape, t, src, enabled.length, p);
+      const px = cx + (az / 180) * scaleX;
+      const py = cy - (el / 90) * scaleY;
+      i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+    }
+    ctx.stroke();
+  });
+
+  // Animated dot for selected source
+  const selShape = state.motions[state.selected];
+  const { az, el } = computeAED(selShape, animT, state.selected, enabled.length, p);
+  const px = cx + (az / 180) * scaleX;
+  const py = cy - (el / 90) * scaleY;
+
+  // Glow ring
+  const grad = ctx.createRadialGradient(px, py, 0, px, py, 16);
+  grad.addColorStop(0, '#5dd39e44');
+  grad.addColorStop(1, 'transparent');
+  ctx.fillStyle = grad;
+  ctx.beginPath(); ctx.arc(px, py, 16, 0, Math.PI * 2); ctx.fill();
+
+  // Dot
+  ctx.fillStyle = '#5dd39e';
+  ctx.beginPath(); ctx.arc(px, py, 5, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#fff';
+  ctx.beginPath(); ctx.arc(px, py, 2.5, 0, Math.PI * 2); ctx.fill();
+
+  // Coord label
+  ctx.fillStyle = '#5dd39e';
+  ctx.font = '9px monospace';
+  ctx.fillText(`S${state.selected}  ${az.toFixed(0)}° ${el.toFixed(0)}°`, px + 8, py - 5);
+}
+
+function animate() {
+  animT = (animT + 0.005) % 1;
+  drawSphere();
+  animFrame = requestAnimationFrame(animate);
+}
+
+// ── Build DOM grid ────────────────────────────────────────────
+function buildGrid() {
+  // Headers
+  const hdr = document.getElementById('gridHeader');
+  MOTIONS.forEach(m => {
+    const d = document.createElement('div');
+    d.className = 'gh-cell';
+    d.textContent = m.label;
+    hdr.appendChild(d);
+  });
+
+  // Rows
+  const container = document.getElementById('rowsContainer');
+  container.innerHTML = '';
+  for (let s = 0; s < N_SRC; s++) {
+    const row = document.createElement('div');
+    row.className = 'source-row';
+
+    // Toggle
+    const tog = document.createElement('div');
+    tog.className = 'src-on' + (state.enabled[s] ? ' on' : '');
+    tog.id = 'tog_' + s;
+    tog.textContent = '✓';
+    tog.addEventListener('click', () => { state.enabled[s] = !state.enabled[s]; refresh(); });
+
+    // Label
+    const lbl = document.createElement('div');
+    lbl.className = 'src-label' + (state.selected === s ? ' sel' : '');
+    lbl.id = 'lbl_' + s;
+    lbl.textContent = 'S' + s;
+    lbl.addEventListener('click', () => { state.selected = s; refresh(); });
+
+    // Motion cells
+    const cellWrap = document.createElement('div');
+    cellWrap.className = 'motion-cells';
+    MOTIONS.forEach(m => {
+      const cell = document.createElement('div');
+      const active = state.motions[s] === m.id;
+      cell.className = 'motion-cell' + (active ? ' active' : '');
+      cell.id = 'cell_' + s + '_' + m.id;
+      const c = document.createElement('canvas');
+      // Will be sized via CSS; use logical pixels
+      c.width  = 56;
+      c.height = 26;
+      drawIcon(c, m.id, active);
+      cell.appendChild(c);
+      cell.addEventListener('click', () => {
+        state.motions[s]  = m.id;
+        state.enabled[s]  = true;
+        state.selected    = s;
+        refresh();
+        // Scroll row into view
+        row.scrollIntoView({ block: 'nearest' });
+      });
+      cellWrap.appendChild(cell);
+    });
+
+    row.appendChild(tog);
+    row.appendChild(lbl);
+    row.appendChild(cellWrap);
+    container.appendChild(row);
+  }
+}
+
+// ── Refresh DOM state (no full rebuild) ───────────────────────
+function refresh() {
+  let cnt = 0;
+  for (let s = 0; s < N_SRC; s++) {
+    if (state.enabled[s]) cnt++;
+    const tog = document.getElementById('tog_' + s);
+    const lbl = document.getElementById('lbl_' + s);
+    if (tog) tog.className = 'src-on' + (state.enabled[s] ? ' on' : '');
+    if (lbl) lbl.className = 'src-label' + (state.selected === s ? ' sel' : '');
+    MOTIONS.forEach(m => {
+      const cell = document.getElementById('cell_' + s + '_' + m.id);
+      if (!cell) return;
+      const active = state.motions[s] === m.id;
+      cell.className = 'motion-cell' + (active ? ' active' : '');
+      const c = cell.querySelector('canvas');
+      if (c) drawIcon(c, m.id, active);
+    });
+  }
+  document.getElementById('activeCnt').textContent = cnt + ' / 64';
+  const motLabel = MOTIONS.find(m => m.id === state.motions[state.selected])?.label || '—';
+  document.getElementById('selReadout').textContent = `Selected S${state.selected}: ${motLabel}`;
+}
+
+// ── Presets ───────────────────────────────────────────────────
+function applyPreset(p) {
+  if (p === 'auto')   for (let i = 0; i < N_SRC; i++) state.motions[i] = MOTIONS[i % MOTIONS.length].id;
+  else if (p === 'random')  for (let i = 0; i < N_SRC; i++) state.motions[i] = MOTIONS[Math.floor(Math.random() * MOTIONS.length)].id;
+  else if (p === 'arc07')   for (let i = 0; i < 8;  i++) state.motions[i] = 'arc_up';
+  else if (p === 'circ815') for (let i = 8; i < 16; i++) state.motions[i] = 'circle';
+  else for (let i = 0; i < N_SRC; i++) state.motions[i] = p;
+  refresh();
+  setStatus('Preset applied');
+}
+function srcRange(a, b, v) {
+  if (!v) for (let i = 0; i < N_SRC; i++) state.enabled[i] = false;
+  for (let i = a; i <= b && i < N_SRC; i++) state.enabled[i] = v;
+  refresh();
+}
+function clearSel() {
+  for (let i = 0; i < N_SRC; i++) { state.motions[i] = null; state.enabled[i] = false; }
+  refresh();
+}
+function toggleOpt(key) {
+  state.opts[key] = !state.opts[key];
+  const el = document.getElementById('tb_' + key);
+  if (el) el.className = 'toggle-box' + (state.opts[key] ? ' on' : '');
+}
+function doWrite() {
+  const cnt = state.enabled.filter(Boolean).length;
+  if (cnt === 0) { setStatus('⚠ No sources enabled', true); return; }
+  const steps = document.getElementById('f_steps').value || 12;
+  const region = document.getElementById('f_region').value || 'BFormat_TS';
+  setStatus(`✓ Automation written · ${cnt} source(s) · ${steps} steps/sec · region "${region}"`);
+}
+function setStatus(msg, warn = false) {
+  document.getElementById('statusText').textContent = msg;
+  document.getElementById('statusDot').style.background = warn ? '#f5a623' : 'var(--accent)';
+}
+
+// ── Settings → redraw sphere on change ───────────────────────
+['f_xcen','f_xspr','f_ycen','f_yspr','f_zcen','f_zspr','f_motion'].forEach(id => {
+  document.getElementById(id)?.addEventListener('input', drawSphere);
+});
+
+// ── Init ──────────────────────────────────────────────────────
+buildGrid();
+refresh();
+animate();
+
+// Handle resize
+window.addEventListener('resize', drawSphere);
+</script>
+</body>
+</html>
