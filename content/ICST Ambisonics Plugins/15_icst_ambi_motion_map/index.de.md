@@ -1,150 +1,327 @@
 ---
-title: ICST Ambi Motion Map
-date: 2026-06-27T00:00:00
+title: ICST Ambi Motion Map — Benutzerhandbuch
+date: 2026-06-28T00:00:00
 weight: 87
 draft: false
 toc: true
-description: "Algorithmischer Bewegungsgenerator für ICST AmbiEncoder_64 in REAPER — Bewegungsformen pro Source zuweisen und XYZ-Automation über eine Zeitauswahl schreiben."
+translationKey: motion-map-user-guide
+description: "Schritt-für-Schritt-Anleitung zum AmbiEncoder64 Motion Map GUI v2.0 — Installation, Source-Setup, Bewegungsformen, XYZ-Koordinaten, Scale, Source-Offset, Presets, Zeitkurve, Palindrom-Modus und Live-OSC-Vorschau."
 ---
 
-Level: Intermediate | Zielgruppe: Komponist:in, Sounddesigner:in, Spatial-Audio-Techniker:in.
+Niveau: Einsteiger–Fortgeschrittene | Zielgruppe: Komponist:in, Sound Designer:in, Spatial-Audio-Techniker:in.
 
-Diese Seite beschreibt, wie du für mehrere AmbiEncoder-Sources gleichzeitig räumliche Bewegungen automatisch generierst — Kreise, Spiralen, Lissajous-Figuren, Bögen — direkt als REAPER-Automation geschrieben.
+Das Motion Map GUI erzeugt algorithmische Raumbewegungen für bis zu 64 AmbiEncoder-Quellen und schreibt sie mit einem Klick als REAPER-Automation. Diese Anleitung führt Schritt für Schritt durch alle Funktionen — vom ersten Start bis zu fortgeschrittenen Techniken.
 
-> **Download:** [ICST Ambi Motion Map Bundle](/downloads/ICST_Ambi_Motion_Map_Bundle.zip) (GUI-Script + Automation-Writer)
+> **Download:** [ICST Ambi Motion Map Bundle](/downloads/ICST_Ambi_Motion_Map_Bundle.zip) (GUI-Script + Automation-Writer, beide erforderlich)
 
-## Was es macht
+---
 
-`AmbiEncoder64 Motion Map GUI` ermöglicht es, pro Source-Index eine Bewegungsform zuzuweisen und mit einem Klick XYZ-Automation über die aktuelle REAPER-Zeitauswahl zu schreiben. Statt Positionen einzeln zu definieren, wählst du ein Bewegungsmuster — Linie, Bogen, Kreis, Spirale, Lissajous — und das Script generiert die vollständige Automationskurve.
+## 1. Voraussetzungen
 
-Es arbeitet mit `AmbiEncoder_64` (bis zu 64 Sources) und schreibt direkt in FX-Parameter-Envelopes, inklusive automatisch erstellter Render-Region.
+Vor dem Start werden folgende Komponenten benötigt:
 
-Einsetzen wenn du brauchst:
+- **REAPER** v6 oder neuer
+- **ICST AmbiEncoder_64** auf dem Ziel-Track (siehe [Installation](/icst-ambisonics-plugins/02_installation/))
+- **Python 3** installiert — nur für die Live-OSC-Vorschau erforderlich
+- Beide Script-Dateien im **selben Ordner**: `JS_AmbiEncoder64_Motion_Map_GUI.lua` und `JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua`
 
-- generative oder texturale Raumbewegung (alle Sources kreisen mit versetzten Phasen)
-- schnelles Prototyping komplexer Mehrquellen-Szenen
-- automatisierte Variation statt manuell definierter Cue-Positionen
+---
 
-![AmbiEncoder64 Motion Map GUI](/motion-markers/motion-map-gui-overview.png)
+## 2. Installation
 
-> **Siehe auch:** Für musikalisch getimte, Cue-basierte Bewegung zwischen definierten Positionen: [ICST Ambi Motion Markers](/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/)
+### Schritt 1 — Bundle herunterladen
 
-## Voraussetzungen
+Das [ICST Ambi Motion Map Bundle](/downloads/ICST_Ambi_Motion_Map_Bundle.zip) herunterladen und entpacken. Beide Lua-Dateien in einem gemeinsamen Ordner belassen (z.B. im REAPER-Scripts-Verzeichnis).
 
-- **REAPER** (v6 oder neuer)
-- **ICST AmbiEncoder_64** auf der Zielspur — siehe [Installation](/de/icst-ambisonics-plugins/02_installation/)
-- Eine Zeitauswahl (Loop Range) muss vor dem Schreiben gesetzt sein
+### Schritt 2 — Script in REAPER laden
 
-## Installation
+In REAPER: **Actions → Load ReaScript…** → `JS_AmbiEncoder64_Motion_Map_GUI.lua` auswählen. Nur das GUI-Script muss geladen werden — es findet den Writer automatisch.
 
-### Scripts in REAPER einbinden
+{{< notice warning >}}
+Der Writer `JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua` muss im **selben Ordner** wie das GUI-Script liegen. Die beiden Dateien nicht trennen.
+{{< /notice >}}
 
-In REAPER: *Actions-Menü → Load ReaScript…* — dann beide Dateien aus dem Bundle laden:
+### Schritt 3 — Aktion zuweisen (optional)
 
-- `scripts/JS_AmbiEncoder64_Motion_Map_GUI.lua` — die GUI
-- `scripts/JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua` — der Automation-Writer (muss im selben Ordner liegen)
+Im **Actions**-Fenster `JS_AmbiEncoder64_Motion_Map_GUI` suchen und einen Tastaturkürzel oder Toolbar-Button zuweisen.
 
-Das GUI-Script ruft den Writer automatisch auf — beide Dateien müssen im selben Verzeichnis bleiben.
+---
 
-## Workflow
+## 3. Erster Start
 
-1. Genau einen Track mit `AmbiEncoder_64` selektieren
-2. Zeitauswahl (Loop Range) auf den gewünschten Bereich setzen
-3. GUI öffnen: `JS_AmbiEncoder64_Motion_Map_GUI` über das Actions-Menü starten
-4. Sources mit dem **✓**-Checkbox aktivieren und jeweils eine Bewegungsform zuweisen
-5. Settings anpassen (Center, Spread, Steps/sec)
-6. **Write Automation + Region** klicken
+1. In REAPER **genau einen Track auswählen**, der das ICST AmbiEncoder_64 FX enthält.
+2. Eine **Time Selection** (Loop-Range) im REAPER-Timeline setzen — sie definiert, wo die Automation geschrieben wird.
+3. Das GUI-Script aus dem Actions-Menü (oder per Tastenkürzel) starten. Das Motion Map Fenster öffnet sich.
 
-Das Script schreibt Envelope-Punkte, setzt den Track auf Latch-Mode und erstellt eine benannte Render-Region über der Zeitauswahl.
+{{< notice warning >}}
+*„Bitte genau einen Track mit ICST AmbiEncoder_64 selektieren"* — kein AmbiEncoder-Track ist ausgewählt. Den richtigen Track selektieren und das GUI neu starten.
 
-## Bewegungsformen
+*„Bitte zuerst eine Loop/Time Selection setzen"* — eine Loop-Range in der Timeline setzen, bevor auf Write geklickt wird.
+{{< /notice >}}
 
-Jeder Source kann eine von zehn Bewegungsformen zugewiesen werden:
+---
 
-| Form | Label | Charakter |
-|------|-------|-----------|
-| `line` | Line | Diagonal über die Zeitspanne, von einer Ecke zur anderen |
-| `arc_up` | Arc+ | Aufwärtsbogen — Smoothstep-Easing auf Azimut |
-| `arc_down` | Arc− | Abwärtsbogen |
-| `s_curve` | S | S-förmige Kurve — eine vollständige Sinusschwingung in Elevation |
-| `step` | Step | Quantisierte Stufen in Azimut mit Elevation-Dreieckswellen |
-| `zigzag` | Zig | Schnelles Azimut/Elevation-Zickzackmuster |
-| `circle` | Circ | Vollständiger Kreis in der Horizontalebene |
-| `spiral` | Spir | Spirale nach aussen vom Zentrum |
-| `fourier_xyz` | Four | Komplexe 3D-Trajektorie aus summierten Fourier-Komponenten |
-| `lissajous` | Lis | Lissajous-Figur — Azimut und Elevation bei verschiedenen Frequenzen |
+## 4. Die Oberfläche auf einen Blick
 
-Sources mit derselben Form werden automatisch phasenversetzt, sodass sie sich über das Klangfeld verteilen statt synchron zu laufen.
+Das Fenster gliedert sich in drei Bereiche:
 
-## Einstellungen
+**Links — Source Grid:** Zeilen für Sources S0–S63. Jede Zeile hat einen Aktivierungs-Toggle, ein Source-Label und zehn Bewegungsform-Zellen.
 
-### Räumliche Parameter
+**Rechts oben — Trajectory Preview:** Animierte Leinwand, die den Pfad jeder aktiven Source zeigt. Die horizontale Achse ist **X** (links–rechts), die vertikale **Y** (unten–oben), beide in der aktuellen Scale-Einheit beschriftet. Die ausgewählte Source zeigt ein Koordinaten-Label (z.B. `S0  X:-0.16  Y:-0.04`).
+
+**Rechts unten — Settings:** Steuerelemente für Scale, räumliche Parameter, Timing, Presets und Ausgabe-Optionen.
+
+---
+
+## 5. Sources aktivieren
+
+Alle Sources starten deaktiviert. Es gibt drei Wege, eine Source einzuschalten:
+
+- **Klick auf das ✓-Kästchen** in der „On"-Spalte — schaltet die Source ein oder aus.
+- **Klick auf das Source-Label** (z.B. S0, S1) — gleicher Effekt, aber größere Klickfläche.
+- **Shift+Klick auf ein Source-Label** — aktiviert alle Sources von der aktuell ausgewählten bis zur angeklickten (Bereichsauswahl).
+
+In der unteren Leiste stehen **Schnellauswahl-Buttons**: `All Src`, `None Src`, `S0-7`, `S8-15` für schnelle Mehrfachauswahl.
+
+Der Zähler oben rechts im Settings-Bereich zeigt, wie viele Sources aktiv sind (z.B. `3 / 64 active`).
+
+---
+
+## 6. Bewegungsformen zuweisen
+
+Jede Zeile hat zehn Form-Buttons. Klick auf einen Button weist diese Bewegungsform der Source zu. Das Zuweisen einer Form aktiviert die Source automatisch.
+
+| Label | Form | Bewegungscharakter |
+|-------|------|--------------------|
+| **Line** | `line` | Linearer Sweep durch das Feld |
+| **Arc+** | `arc_up` | Bogen nach oben mit sanftem Easing |
+| **Arc−** | `arc_down` | Bogen nach unten |
+| **S** | `s_curve` | S-förmiger Sweep — sinusoidale Y-Bewegung |
+| **Step** | `step` | Vier diskrete Positionsschritte |
+| **Zig** | `zigzag` | Schnelles X/Y-Zickzack |
+| **Circ** | `circle` | Vollkreis in der XY-Ebene |
+| **Spir** | `spiral` | Expandierende Spirale von innen nach außen |
+| **Four** | `fourier_xyz` | Komplexe 3D-Bahn aus summierten Harmonischen |
+| **Lis** | `lissajous` | Lissajous-Figur — X und Y auf verschiedenen Frequenzen |
+
+Wenn mehrere Sources dieselbe Form verwenden, verteilt der **Src offset**-Schieberegler (siehe §7) sie entlang der Trajektorie — sonst bewegen sie sich alle überlagert am gleichen Punkt.
+
+### Schnellzuweisung (PRESETS-Leiste unter dem Grid)
+
+| Button | Effekt |
+|--------|--------|
+| **Auto** | Weist Formen im Round-Robin (Line, Arc+, Arc−, …) auf alle 64 Sources zu |
+| **Random** | Weist jeder Source eine zufällige Form zu |
+| **All Line** | Setzt alle aktiven Sources auf Line |
+| **All Circle** | Setzt alle aktiven Sources auf Circle |
+| **All Step** | Setzt alle aktiven Sources auf Step |
+| **S0-7 Arc** | Weist Arc+ den Sources 0–7 zu |
+| **S8-15 Circ** | Weist Circle den Sources 8–15 zu |
+| **Clear All** | Entfernt alle Formzuweisungen und deaktiviert alle Sources |
+
+---
+
+## 7. Räumliche Parameter
+
+### Koordinatensystem
+
+Das GUI arbeitet im **kartesischen XYZ-Raum** (Einheitskugel −1..+1). Der Scale-Wert setzt einen Anzeige-Multiplikator, damit in Metern gedacht werden kann. Die REAPER-Automation wird immer in der nativen Einheitskugel geschrieben — Scale ändert nie das, was aufgezeichnet wird, nur wie Werte angezeigt werden und wie die OSC-Distanz gesendet wird.
+
+- **X** = links–rechts (−1 = links, 0 = Mitte, +1 = rechts)
+- **Y** = unten–oben (−1 = unter dem Hörer, 0 = Horizont, +1 = darüber)
+- **Z** = Distanz (0 = nah, 1 = fern)
+
+### Steuerelemente
+
+Alle Schieberegler sind ziehbar. **Shift** während des Ziehens halten für Feineinstellung. Klick auf das **Wertefeld** rechts ermöglicht direkte Zahleneingabe.
 
 | Parameter | Standard | Beschreibung |
 |-----------|----------|--------------|
-| Steps/sec | 12 | Dichte der Automation-Punkte pro Sekunde |
-| X center | 0 | Azimut-Zentrum in Grad |
-| X spread | 320 | Azimut-Spreizung in Grad (Gesamtbereich) |
-| Y center | 0 | Elevations-Zentrum in Grad |
-| Y spread | 50 | Elevations-Spreizung in Grad |
-| Z center | 0.75 | Distanz-Zentrum (0–1) |
-| Z spread | 0.35 | Distanz-Spreizung |
-| Motion amount | 2.0 | Skalierungsfaktor für alle Bewegungsamplituden |
+| **Scale (m)** | 1 | Raumgröße in Metern. Angezeigte Koordinaten sind in Scale-Einheiten (z.B. Scale 10 → Bereich −10..+10 m). REAPER-Automation und OSC arbeiten intern mit der Einheitskugel. Beliebigen Wert 1–1000 eingeben. |
+| **Steps/sec** | 12 | Automationspunkte pro Sekunde. Höher = flüssiger, aber mehr Envelope-Daten. |
+| **Motion amount** | 1.00 | Globaler Amplituden-Multiplikator. 1.0 = voller Bereich; 0.5 = halbe Amplitude; Werte über 1.0 dehnen über den definierten Spread hinaus und werden an der Kugelgrenze geclampt. |
+| **X center** | 0.00 | Links–rechts-Zentrum des Bewegungsfeldes (−Scale..+Scale). |
+| **X spread** | 2.00 | Gesamter links–rechts-Bereich (0..2×Scale). **2.0 bei Scale 1 = voller −1..+1-Sweep** — der maximale Bereich, der in REAPER geschrieben werden kann. |
+| **Src offset** | 0.00 | Zeitlicher Versatz zwischen Sources entlang der Trajektorie. `0` = alle Sources am gleichen Punkt; `1` = Sources gleichmäßig über den gesamten Pfad verteilt. Damit lassen sich Sources mit gleicher Bewegungsform trennen. |
+| **Y center** | 0.00 | Vertikal-Zentrum (−Scale = unten, 0 = Horizont, +Scale = oben). |
+| **Y spread** | 0.56 | Gesamter Vertikalbereich. |
+| **Z center** | 0.75 | Distanz-Zentrum (0 = nah, Scale = fern). |
+| **Z spread** | 0.35 | Distanz-Variationsbereich. |
 
-### Optionen
+### Reset-Button
 
-**Clear existing** — löscht bestehende Envelope-Punkte in der Zeitauswahl vor dem Schreiben. Deaktivieren, um weitere Bewegung auf bestehende Automation zu schichten.
+**⟲ Reset** (neben Write) stellt alle räumlichen und Timing-Parameter auf ihre Standardwerte zurück, während Formzuweisungen und Presets erhalten bleiben.
 
-**Track Latch** — setzt den AmbiEncoder-Track nach dem Schreiben auf Latch-Automationsmodus, sodass Live-Parameterbewegungen beim nächsten Durchlauf aufgenommen werden.
+### Scale und OSC-Distanz
 
-**Overwrite region** — wenn bereits eine Region mit demselben Namen existiert, wird sie auf die aktuelle Zeitauswahl verschoben statt eine Duplikat zu erstellen.
+Wenn die OSC-Vorschau aktiv ist, wird der gesendete Distanzwert als Einheitskugel-Radius × Scale berechnet. Bei Scale 10 sendet eine Source am Rand der Kugel ~10 m an den AmbiEncoder.
 
-**Use Z motion** — bezieht Distanz (Z) in die Bewegung ein. Deaktivieren, um alle Sources auf fixer Distanz zu halten, während sich Azimut und Elevation trotzdem bewegen.
+---
 
-### Region name
+## 8. Zeitkurve — Bewegungsrhythmus gestalten
 
-Setzt den Namen der Render-Region, die über der Zeitauswahl erstellt wird. Standard: `BFormat_TS`. Nützlich zum Benennen von Szenen oder Abschnitten direkt im Projekt.
+Der Bereich **Time Curve** steuert, wie die Animation zeitlich verläuft. Drei Modi:
 
-## Presets
+| Modus | Verhalten |
+|-------|-----------|
+| **Linear** | Gleichmäßige Geschwindigkeit — konstantes Tempo (Standard). |
+| **Exp** | Langsamer Start, schnelles Ende — die Bewegung beschleunigt. |
+| **Log** | Schneller Start, langsames Ende — die Bewegung verlangsamt sich. |
 
-Die Preset-Zeile bietet schnelle Ausgangspunkte:
+Der **n**-Schieberegler (Exponent) legt die Stärke der Kurve fest. Bei `n = 1` erzeugen alle drei Modi identische Ergebnisse. Typische Werte: `2.0–3.0`.
 
-| Preset | Wirkung |
-|--------|---------|
-| Auto | Weist Bewegungsformen in Round-Robin-Reihenfolge über alle 64 Sources zu |
-| Random | Weist zufällige Formen allen Sources zu |
-| All Line | Setzt alle aktivierten Sources auf Line |
-| All Circle | Setzt alle aktivierten Sources auf Circle |
-| All Step | Setzt alle aktivierten Sources auf Step |
-| S0-7 Arc | Weist Arc+ den Sources 0–7 zu |
-| S8-15 Circle | Weist Circle den Sources 8–15 zu |
+**Anwendungsfälle:** Exp eignet sich für Sources, die abrupt „ankommen" sollen; Log ergibt einen ausholenden Einstieg, der sich setzt. Kombiniert mit Palindrome entstehen symmetrische Beschleunigungsprofile.
 
-Die Source-Auswahlzeile steuert, welche Sources aktiviert sind, ohne ihre zugewiesenen Formen zu ändern: **All Src**, **None Src**, **S0-7 Src**, **S8-15 Src**, **Clear Sel**.
+---
 
-## Good Practices
+## 9. Palindrom-Modus
 
-- Mit dem **Auto**-Preset und 2–4 aktiven Sources starten, um die Standard-Verteilung zu verstehen, bevor mehr hinzugefügt werden
-- **Steps/sec 6–8** für weite Schwingungen, **20–30** für detaillierte Artikulation
-- **Motion amount** zunächst auf 1.0 lassen — Werte über 2 können Sources an die Sphärengrenze drängen
-- **Clear existing** ausschalten, um einen Kreis auf bestehende Linien-Automation zu schichten
-- Regionen sinnvoll benennen — sie erscheinen im REAPER-Projekt und in Render-Exporten
+Wenn **Palindrome** aktiviert ist, spielt die Bewegung innerhalb derselben Time Selection vorwärts und dann rückwärts: die Form läuft 0 → 1 → 0 statt 0 → 1.
 
-## Troubleshooting
+Das bedeutet:
+- Die Source kehrt am Ende an ihre Ausgangsposition zurück.
+- Ideal für oszillierende Bewegungen ohne harten Sprung.
+- Funktioniert mit allen Bewegungsformen.
+- Kombiniert mit **Exp** oder **Log** entstehen asymmetrische Vorwärts-/Rückwärtsgeschwindigkeiten.
 
-### „Bitte genau einen Track mit ICST AmbiEncoder_64 selektieren"
+---
 
-Genau ein Track muss selektiert sein und er muss ein `AmbiEncoder_64`-FX enthalten. Track zuerst selektieren, dann die GUI öffnen.
+## 10. Ausgabe-Optionen
 
-### „Bitte zuerst eine Loop/Time Selection setzen"
+| Option | Beschreibung |
+|--------|--------------|
+| **Clear existing** | Löscht vorhandene Envelope-Punkte in der Time Selection vor dem Schreiben. Deaktivieren, um Bewegung auf vorhandene Automation zu schichten. |
+| **Track Latch** | Setzt den Track nach dem Schreiben in den Latch-Automationsmodus, damit Live-Parameterbewegungen beim nächsten Playback aufgezeichnet werden. |
+| **Overwrite region** | Wenn eine Region mit demselben Namen bereits existiert, wird sie zur aktuellen Time Selection verschoben statt einer neuen erstellt. |
+| **Use Z motion** | Aktiviert die Distanz-(Z)-Variation. Deaktivieren, um Sources auf einer fixen Distanz zu halten, während X und Y sich weiterhin bewegen. |
 
-Keine Zeitauswahl aktiv. Loop Range in REAPER setzen, bevor Write Automation + Region geklickt wird.
+### Regionsname
 
-### Keine Envelope-Punkte geschrieben / keine Bewegung sichtbar
+Legt den Namen der REAPER-Render-Region fest. Standard: `BFormat_TS`. Regionen sinnvoll benennen — sie erscheinen im REAPER-Projekt und in Render-Exporten.
 
-- Bestätigen, dass der Track `AmbiEncoder_64` enthält und keine andere Encoder-Variante
-- Prüfen, dass mindestens eine Source aktiviert ist (✓-Checkbox aktiv)
-- Steps/sec verringern, wenn die Zeitauswahl sehr kurz ist — eine 0,1s-Auswahl bei 12 Steps/sec ergibt nur 1 Punkt
+---
+
+## 11. Preset-System
+
+Die **Preset**-Leiste oben im Settings-Bereich ermöglicht das Speichern, Laden und Löschen vollständiger Parametersets.
+
+Ein Preset speichert: alle Formzuweisungen, welche Sources aktiviert sind, Scale, alle XYZ-Parameter (Center und Spread für X, Y, Z), Src offset, Steps/sec, Motion amount, Zeitkurven-Modus und Exponent, Palindrome, Use Z motion sowie alle Ausgabe-Optionen.
+
+### Preset speichern
+
+1. Einen Namen im **Preset**-Textfeld eingeben (z.B. `Kreis_Weit`).
+2. **Save** klicken.
+
+### Preset laden
+
+- Auf einen **Preset-Chip** (die Buttons unter dem Textfeld) klicken — sofortiges Laden.
+- Oder Namen eintippen und **Load** klicken.
+
+### Preset löschen
+
+Namen eintippen (oder Chip klicken) und **Delete** klicken.
+
+### Viele Presets navigieren
+
+Mit den **◄ ►**-Pfeilen durch mehr als 6 gespeicherte Presets blättern. Presets bleiben über REAPER-Sessions hinaus erhalten (via REAPER ExtState gespeichert).
+
+---
+
+## 12. Live-OSC-Vorschau
+
+Der OSC-Preview-Bereich sendet Live-Positionsdaten an den AmbiEncoder, während die Animation im GUI läuft — so kann die Bewegung gehört werden, bevor sie als Automation festgeschrieben wird.
+
+### Einrichtung Schritt für Schritt
+
+1. In **REAPER Preferences → Control/OSC/web** die Option *„Allow binding of REAPER action and FX parameters to OSC"* aktivieren und den Port notieren (Standard: `9001`).
+2. Im GUI **Host** auf `127.0.0.1` und **Port** entsprechend setzen.
+3. **Connect** klicken. Der Status-Punkt wird grün, wenn der Python-Helfer läuft.
+4. **Live Preview (sends AED to AmbiEncoder)** aktivieren.
+
+Das GUI sendet nun konvertierte OSC-Positionsmeldungen mit ~30 Hz für jede aktivierte Source. Die OSC-Distanz wird in physikalischen Metern gesendet (Einheitskugel-Radius × Scale).
+
+**Disconnect** klicken, um das OSC-Senden zu beenden.
+
+{{< notice warning >}}
+Die Live-Vorschau erfordert Python 3 als `python3` im System-PATH. Wenn der Status-Punkt rot bleibt, im Terminal `python3 --version` ausführen.
+{{< /notice >}}
+
+---
+
+## 13. Automation schreiben
+
+Wenn Sources eingerichtet und die Parameter in der Vorschau korrekt aussehen:
+
+1. Sicherstellen, dass der richtige REAPER-Track ausgewählt ist.
+2. Prüfen, dass die Time Selection den gewünschten Bereich abdeckt.
+3. **▶ Write Automation + Region** klicken.
+
+Das Script löscht vorhandene Envelope-Punkte (wenn Clear existing aktiv), schreibt XYZ-Automation für jede aktivierte Source direkt in der Einheitskugel (−1..+1) — unabhängig vom Scale-Anzeige-Wert — setzt den Track auf Latch-Modus (wenn Track Latch aktiv) und erstellt oder aktualisiert eine Render-Region.
+
+Eine Statusmeldung am unteren Rand des GUIs bestätigt den Abschluss.
+
+---
+
+## 14. Trajektorien-Vorschau
+
+Die Vorschauleinwand zeigt alle aktiven Sources gleichzeitig. Die horizontale Achse ist **X** (links–rechts), die vertikale **Y** (unten–oben), beide in der aktuellen Scale-Einheit beschriftet.
+
+- Jede Source erhält eine eigene Farbe. Die **ausgewählte Source** hat einen pulsierenden Halo und ein Koordinaten-Label (z.B. `S0  X:-0.16  Y:-0.04` bei Scale 1, oder `S0  X:-1.6  Y:-0.4` bei Scale 10).
+- Nicht ausgewählte Sources zeigen kleinere Punkte bei 80 % Deckkraft.
+- Alle Punkte animieren gleichzeitig — die vollständige räumliche Szene ist live sichtbar.
+- Pfade zeigen die vollständige Trajektorie jeder Source.
+
+Auf ein Source-Label im Grid klicken, um es auszuwählen und seine Koordinaten in der Vorschau zu sehen.
+
+---
+
+## 15. Empfehlungen für die Praxis
+
+- **Voller links–rechts-Sweep:** X center = 0, X spread = 2×Scale (z.B. `2.00` bei Scale 1, `20.00` bei Scale 10). So wird der volle −1..+1-Bereich in die REAPER-Automation geschrieben.
+- **Überlappende Sources trennen:** Wenn zwei Sources dieselbe Form haben und ihre Pfade sich überlagern, **Src offset** auf 0.3–0.5 erhöhen, um sie entlang der Trajektorie zu verteilen.
+- **Scale als Raumgröße:** Scale auf den tatsächlichen Raumradius setzen (z.B. 8 für einen 8-m-Raum). Die OSC-Vorschau sendet dann Distanzen in Metern — die REAPER-Automation bleibt unverändert.
+- Mit **Auto** + 3–4 aktiven Sources starten, um die verfügbaren Formen kennenzulernen.
+- **Steps/sec 6–8** für breite Sweeps; **20–30** für detaillierte Bewegungen.
+- **Motion amount** zunächst auf 1.0 — höhere Werte können an der Kugelgrenze geclampt werden.
+- **Clear existing deaktiviert**: Circle auf bestehende Linien-Automation schichten.
+- **Palindrome + Log**: schnell nach außen, sanft zurück — gut für reverbartige räumliche Ausklänge.
+- Vor dem Experimentieren immer ein Preset speichern.
+- Render-Regionen nach Szenen benennen: `Intro_BFormat`, `Strophe_BFormat`, `Outro_BFormat`.
+
+---
+
+## 16. Fehlerbehebung
+
+### Sources bewegen sich nach dem Schreiben nicht
+
+Prüfen, ob mindestens eine Source ein ✓ in der „On"-Spalte und eine zugewiesene Form hat. Die Statusleiste zeigt, was geschrieben wurde.
+
+### Sources überlagern sich alle am gleichen Punkt
+
+**Src offset** über 0 erhöhen (z.B. 0.5), damit Sources mit gleicher Bewegungsform zeitlich entlang des Pfades verteilt werden.
+
+### Automation entspricht nicht der Vorschau
+
+Parameter-Änderungen nach der Vorschau, aber vor dem Schreiben beeinflussen die geschriebene Automation. Die Einstellungen vor dem Schreiben prüfen.
+
+### OSC-Vorschau — Punkt bleibt rot
+
+- Python 3 prüfen: `python3 --version` im Terminal.
+- Port muss mit den REAPER-OSC-Einstellungen übereinstimmen.
+- Disconnect → Connect neu klicken.
 
 ### Writer-Script nicht gefunden
 
-Beide Lua-Dateien müssen im selben Verzeichnis liegen. Falls `JS_AmbiEncoder64_Motion_Map_GUI.lua` nach dem Laden in REAPER verschoben wurde, vom neuen Speicherort neu laden. Der Writer-Pfad wird zur Laufzeit relativ zum GUI-Script aufgelöst.
+Beide Lua-Dateien müssen im selben Verzeichnis liegen. Bei Verschiebung erneut über Actions → Load ReaScript laden.
+
+### Steps/sec zu niedrig für kurze Regionen
+
+Eine 0,1-Sekunden-Time-Selection bei 12 Steps/sec ergibt nur 1 Automationspunkt. Steps/sec erhöhen oder Time Selection verlängern.
+
+---
+
+## Siehe auch
+
+- [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — für musikalisch getaktete, cue-basierte Bewegungen
+- [ICST AmbiEncoder_64](/icst-ambisonics-plugins/01_icst_ambi_encoder/) — das Encoder-Plugin
+- [Installation](/icst-ambisonics-plugins/02_installation/) — Plugin-Einrichtung

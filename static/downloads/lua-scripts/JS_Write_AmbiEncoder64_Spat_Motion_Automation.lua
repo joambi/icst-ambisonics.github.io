@@ -453,11 +453,12 @@ local function safe_motion_amount(requested_amount, x_center, y_center, z_center
     if amp <= 0.000001 then return amount end
     return math.min(center / amp, (1 - center) / amp)
   end
-
+  -- Note: y (elevation) is intentionally excluded here.
+  -- Elevation wrapping is applied after amount scaling, enabling full vertical orbits
+  -- when el_spread > 180°. Values past zenith/nadir reflect to the other side.
   return clamp(math.min(
     amount,
     limit_for(x_center, x_amp),
-    limit_for(y_center, y_amp),
     limit_for(z_center, z_amp)
   ), 0, 8)
 end
@@ -465,7 +466,27 @@ end
 local function xyz_motion_values(source, source_count, progress, settings)
   local phase = (source - 1) / math.max(1, source_count)
   local shape = source_motion_shape(source, settings)
-  local t = progress
+  -- 0. Source temporal offset: spread sources along the trajectory before any warping
+  local src_spread = clamp(settings.source_phase_spread or 0, 0, 1)
+  local progress_src = (progress + phase * src_spread) % 1.0
+  -- 1. Palindrome: map progress 0→1 to 0→1→0 (play forward then reverse)
+  local t_pal
+  if settings.palindrome then
+    t_pal = progress_src < 0.5 and (progress_src * 2.0) or (2.0 - progress_src * 2.0)
+  else
+    t_pal = progress_src
+  end
+  -- 2. Time curve: warp t_pal with linear / exponential / logarithmic scaling
+  local t
+  local tc_mode = settings.time_curve_mode or "linear"
+  local tc_n    = math.max(1.001, settings.time_curve_amount or 2.0)
+  if tc_mode == "exp" then
+    t = t_pal ^ tc_n          -- slow start, fast end
+  elseif tc_mode == "log" then
+    t = t_pal ^ (1.0 / tc_n) -- fast start, slow end (n-th root)
+  else
+    t = t_pal                 -- linear — no warping
+  end
   local two_pi = math.pi * 2
   local x_center = clamp(0.5 + (settings.azimuth_center / 360), 0, 1)
   local y_center = clamp(0.5 + (settings.elevation_center / 180), 0, 1)
@@ -547,6 +568,19 @@ local function xyz_motion_values(source, source_count, progress, settings)
   x = x_center + (x - x_center) * amount
   y = y_center + (y - y_center) * amount
   z = z_center + (z - z_center) * amount
+
+  -- Elevation wrapping: when y exits [0,1], reflect over zenith/nadir and flip azimuth.
+  -- Period = 2 in normalized space (0→1 = nadir→zenith, 1→2 = zenith→nadir from other side).
+  local y_norm = y % 2.0
+  if y_norm < 0 then y_norm = y_norm + 2.0 end
+  if y_norm > 1.0 then
+    y = 2.0 - y_norm   -- reflect over zenith; source continues from the other azimuth
+    x = x + 0.5        -- flip azimuth 180° in normalized [0,1] space
+  else
+    y = y_norm
+  end
+  x = x % 1.0
+  if x < 0 then x = x + 1.0 end
 
   return {
     x = clamp(x, 0, 1),
@@ -644,11 +678,15 @@ local function normalize_external_settings(settings)
     azimuth_center = parse_number(settings.azimuth_center, DEFAULT_AZIMUTH_CENTER),
     azimuth_spread = clamp(parse_number(settings.azimuth_spread, DEFAULT_AZIMUTH_SPREAD), 0, 720),
     elevation_center = parse_number(settings.elevation_center, DEFAULT_ELEVATION_CENTER),
-    elevation_spread = clamp(parse_number(settings.elevation_spread, DEFAULT_ELEVATION_SPREAD), 0, 180),
+    elevation_spread = clamp(parse_number(settings.elevation_spread, DEFAULT_ELEVATION_SPREAD), 0, 360),
     distance_center = clamp(parse_number(settings.distance_center, DEFAULT_DISTANCE_CENTER), 0, 1),
     distance_spread = clamp(parse_number(settings.distance_spread, DEFAULT_DISTANCE_SPREAD), 0, 1),
     motion_amount = clamp(parse_number(settings.motion_amount, DEFAULT_MOTION_AMOUNT), 0, 8),
+    source_phase_spread = clamp(parse_number(settings.source_phase_spread, 0), 0, 1),
     use_z_motion = settings.use_z_motion ~= false,
+    palindrome = settings.palindrome == true,
+    time_curve_mode   = settings.time_curve_mode or "linear",
+    time_curve_amount = clamp(parse_number(settings.time_curve_amount, 2.0), 1.0, 8.0),
     clear_existing = settings.clear_existing ~= false,
     set_latch = settings.set_latch ~= false,
     motion_map = settings.motion_map or parse_motion_map(settings.motion_map_text or DEFAULT_MOTION_MAP),
