@@ -45,6 +45,8 @@ Der Writer `JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua` muss im **selben 
 
 Im **Actions**-Fenster `JS_AmbiEncoder64_Motion_Map_GUI` suchen und einen Tastaturkürzel oder Toolbar-Button zuweisen.
 
+Eine detailliertere Anleitung inkl. Python-OSC-Setup für macOS und Windows bietet die [Motion Map Einrichtungsseite](/icst-ambisonics-plugins/16_motion_map_setup/).
+
 ---
 
 ## 3. Erster Start
@@ -62,6 +64,8 @@ Im **Actions**-Fenster `JS_AmbiEncoder64_Motion_Map_GUI` suchen und einen Tastat
 ---
 
 ## 4. Die Oberfläche auf einen Blick
+
+![ICST Ambi Motion Map GUI v2.1](/images/ICST%20Motion%20Map%202.1.png)
 
 Das Fenster gliedert sich in drei Bereiche:
 

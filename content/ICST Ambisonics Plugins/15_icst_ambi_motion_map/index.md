@@ -44,6 +44,8 @@ The writer script `JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua` must be in
 
 In the **Actions** window, find `JS_AmbiEncoder64_Motion_Map_GUI` and assign a keyboard shortcut or toolbar button for quick access.
 
+For a more detailed walkthrough including Python OSC setup for macOS and Windows, see the [Motion Map Setup guide](/icst-ambisonics-plugins/16_motion_map_setup/).
+
 ---
 
 ## 3. First Launch
@@ -61,6 +63,8 @@ If you see *"Bitte zuerst eine Loop/Time Selection setzen"* (message appears in 
 ---
 
 ## 4. The Interface at a Glance
+
+![ICST Ambi Motion Map GUI v2.1](/images/ICST%20Motion%20Map%202.1.png)
 
 The window is divided into three areas:
 

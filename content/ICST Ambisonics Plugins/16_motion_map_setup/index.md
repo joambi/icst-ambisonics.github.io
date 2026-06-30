@@ -53,9 +53,6 @@ Both files must always stay in the **same folder**. The GUI finds the writer by 
 
 1. Open REAPER.
 2. Go to **Actions → Load ReaScript…**
-
-   ![REAPER Actions menu](actions-menu.png)
-
 3. Navigate to the folder where you saved the bundle.
 4. Select `JS_AmbiEncoder64_Motion_Map_GUI.lua` and click **Open**.
 

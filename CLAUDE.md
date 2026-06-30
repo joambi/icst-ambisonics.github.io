@@ -124,4 +124,4 @@ When sending positions via OSC, the encoder converts incoming AED to Cartesian u
 
 ### Lua scripts and the writer relationship
 
-`JS_AmbiEncoder64_Motion_Map_GUI.lua` is the user-facing GUI. It calls `JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua` (the writer engine) via `dofile()`. Both must be kept in sync — the GUI passes a parameter table to the writer via `_G.__ambi_motion_params`. The ICST plugin parameter layout: first XYZ param index = 11, stride per source = 5.
+`JS_AmbiEncoder64_Motion_Map_GUI.lua` is the user-facing GUI. It calls `JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua` (the writer engine) via `dofile()`. Both must be kept in sync — the GUI passes a parameter table to the writer via `_G.JS_AMBIENCODER64_SETTINGS`. The ICST plugin parameter layout: first XYZ param index = 11, stride per source = 5.
