@@ -66,6 +66,8 @@ If you see *"Bitte zuerst eine Loop/Time Selection setzen"* (message appears in 
 
 ![ICST Ambi Motion Map GUI v2.1](/images/ICST%20Motion%20Map%202.1.png)
 
+![ICST Ambi Motion Map in action](/images/ICST%20Motion%20Map%20Gif.gif)
+
 The window is divided into three areas:
 
 **Left — Source Grid:** Rows for sources S0–S63. Each row has an enable toggle, a source label, and **16 motion-shape cells** (Line through Lis).

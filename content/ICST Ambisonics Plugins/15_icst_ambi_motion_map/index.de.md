@@ -67,6 +67,8 @@ Eine detailliertere Anleitung inkl. Python-OSC-Setup für macOS und Windows biet
 
 ![ICST Ambi Motion Map GUI v2.1](/images/ICST%20Motion%20Map%202.1.png)
 
+![ICST Ambi Motion Map in Aktion](/images/ICST%20Motion%20Map%20Gif.gif)
+
 Das Fenster gliedert sich in drei Bereiche:
 
 **Links — Source Grid:** Zeilen für Sources S0–S63. Jede Zeile hat einen Aktivierungs-Toggle, ein Source-Label und **16 Bewegungsform-Zellen** (Line bis Lis).
