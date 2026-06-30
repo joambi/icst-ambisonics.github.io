@@ -53,9 +53,9 @@ In the **Actions** window, find `JS_AmbiEncoder64_Motion_Map_GUI` and assign a k
 3. Run the GUI script from the Actions menu (or your shortcut). The Motion Map window opens.
 
 {{< notice warning >}}
-If you see *"Bitte genau einen Track mit ICST AmbiEncoder_64 selektieren"*, no AmbiEncoder track is selected. Select the correct track, then reopen the GUI.
+If you see *"Bitte genau einen Track mit ICST AmbiEncoder_64 selektieren"* (message appears in German), no AmbiEncoder track is selected. Select the correct track, then reopen the GUI.
 
-If you see *"Bitte zuerst eine Loop/Time Selection setzen"*, set a loop range in the timeline before clicking Write.
+If you see *"Bitte zuerst eine Loop/Time Selection setzen"* (message appears in German), set a loop range in the timeline before clicking Write.
 {{< /notice >}}
 
 ---
@@ -64,7 +64,7 @@ If you see *"Bitte zuerst eine Loop/Time Selection setzen"*, set a loop range in
 
 The window is divided into three areas:
 
-**Left — Source Grid:** Rows for sources S0–S63. Each row has an enable toggle, a source label, and ten motion-shape cells.
+**Left — Source Grid:** Rows for sources S0–S63. Each row has an enable toggle, a source label, and **16 motion-shape cells** (Line through Lis).
 
 **Right top — Trajectory Preview:** Animated canvas showing the path each active source will travel. Axes are labelled X (left–right) and Y (up–down). The selected source shows a coordinate readout in the current scale unit (e.g. `S0  X:-0.16  Y:-0.04`).
 
@@ -74,7 +74,7 @@ The window is divided into three areas:
 
 ## 5. Enabling Sources
 
-Every source starts disabled. There are three ways to activate one:
+On first launch, all 64 sources are enabled and have shapes automatically assigned (Auto round-robin). There are three ways to toggle a source on or off:
 
 - **Click the ✓ checkbox** in the "On" column — toggles that source on or off.
 - **Click the source label** (e.g. S0, S1) — also toggles enable/disable with a larger click area.
@@ -88,7 +88,7 @@ The counter in the top-right of the settings panel shows how many sources are cu
 
 ## 6. Assigning Motion Shapes
 
-Each row has ten shape buttons. Click one to assign that movement pattern to a source. Assigning a shape also enables the source automatically.
+Each row has **16 shape buttons**. Click one to assign that movement pattern to a source. Assigning a shape also enables the source automatically.
 
 | Label | Shape | Movement Character |
 |-------|-------|--------------------|
@@ -101,6 +101,12 @@ Each row has ten shape buttons. Click one to assign that movement pattern to a s
 | **Circ** | `circle` | Full circle in the XY plane |
 | **Spir** | `spiral` | Expanding spiral from center outward |
 | **Four** | `fourier_xyz` | Complex 3-D path from summed harmonics |
+| **Hrt** | `heart_curve` | Heart-shaped parametric curve |
+| **Card** | `cardioid` | Cardioid — single-lobed teardrop curve |
+| **R8** | `rose8` | Rose curve with 8 petals |
+| **Bern** | `bernoulli` | Lemniscate of Bernoulli — figure-eight variant |
+| **Ast** | `astroid` | Astroid — 4-cusped star curve |
+| **Epi** | `epicycloid` | Epicycloid — complex looping orbit |
 | **Lis** | `lissajous` | Lissajous figure — X and Y at different frequencies |
 
 When multiple sources share the same shape, use the **Src offset** slider (see §7) to spread them across the trajectory — otherwise they all move together at the same position.
@@ -109,7 +115,7 @@ When multiple sources share the same shape, use the **Src offset** slider (see �
 
 | Button | Effect |
 |--------|--------|
-| **Auto** | Assigns shapes in round-robin order (Line, Arc+, Arc−, …) across all 64 sources |
+| **Auto** | Assigns all 16 shapes in round-robin order across all 64 sources |
 | **Random** | Assigns a random shape to every source |
 | **All Line** | Sets all active sources to Line |
 | **All Circle** | Sets all active sources to Circle |
@@ -237,7 +243,13 @@ The OSC Preview section sends live position data to the AmbiEncoder while the an
 3. Click **Connect**. The status dot turns green when the Python helper is running.
 4. Enable **Live Preview (sends AED to AmbiEncoder)**.
 
-The GUI now sends converted OSC position messages at ~30 Hz for every enabled source. OSC distance is sent in physical metres (unit radius × Scale).
+The GUI now sends converted OSC position messages at ~30 Hz for every enabled source using the address:
+
+```
+/icst/ambi/sourceindex/aed <int index> <float azimuth> <float elevation> <float distance>
+```
+
+OSC distance is sent in physical metres (unit radius × Scale).
 
 Click **Disconnect** to stop sending OSC.
 
@@ -326,5 +338,5 @@ A 0.1-second time selection at 12 Steps/sec produces only 1 automation point. In
 ## See also
 
 - [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — for musically timed, cue-based movement between defined positions
-- [ICST AmbiEncoder_64](/icst-ambisonics-plugins/01_icst_ambi_encoder/) — the encoder plugin this script targets
+- [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/) — the encoder plugin this script targets
 - [Installation](/icst-ambisonics-plugins/02_installation/) — plugin setup

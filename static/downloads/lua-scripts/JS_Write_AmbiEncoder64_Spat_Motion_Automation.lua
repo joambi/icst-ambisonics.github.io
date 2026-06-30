@@ -43,6 +43,12 @@ local AUTO_MOTION_SHAPES = {
   "circle",
   "spiral",
   "fourier_xyz",
+  "heart_curve",
+  "cardioid",
+  "rose8",
+  "bernoulli",
+  "astroid",
+  "epicycloid",
 }
 
 local function clamp(value, min_value, max_value)
@@ -139,6 +145,17 @@ local function normalize_motion_shape(shape)
     fourier_xyz = "fourier_xyz",
     fourierxyz = "fourier_xyz",
     fourier3d = "fourier_xyz",
+    heart = "heart_curve",
+    heart_curve = "heart_curve",
+    cardioid = "cardioid",
+    rose = "rose8",
+    rose8 = "rose8",
+    rose_8 = "rose8",
+    bernoulli = "bernoulli",
+    lemniscate = "bernoulli",
+    lemniscate_bernoulli = "bernoulli",
+    astroid = "astroid",
+    epicycloid = "epicycloid",
     lissajous = "lissajous",
     eight = "lissajous",
     acht = "lissajous",
@@ -437,6 +454,50 @@ local function normalized_xyz_to_aed(x, y, z)
   }
 end
 
+local function parametric_shape_xy(shape, t)
+  local angle = math.pi * 2 * t
+  if shape == "heart_curve" then
+    local s = math.sin(angle)
+    local c = math.cos(angle)
+    return (16 * s * s * s) / 18, (13 * c - 5 * math.cos(2 * angle) - 2 * math.cos(3 * angle) - math.cos(4 * angle)) / 18
+  elseif shape == "cardioid" then
+    local r = 0.5 * (1 - math.sin(angle))
+    return r * math.cos(angle), r * math.sin(angle)
+  elseif shape == "rose8" then
+    local r = math.cos(4 * angle)
+    return r * math.cos(angle), r * math.sin(angle)
+  elseif shape == "bernoulli" then
+    local s = math.sin(angle)
+    local c = math.cos(angle)
+    local denom = 1 + s * s
+    return c / denom, (s * c) / denom
+  elseif shape == "astroid" then
+    return math.cos(angle) ^ 3, math.sin(angle) ^ 3
+  elseif shape == "epicycloid" then
+    return (5 * math.cos(angle) - math.cos(5 * angle)) / 6, (5 * math.sin(angle) - math.sin(5 * angle)) / 6
+  end
+  return nil, nil
+end
+
+local function parametric_shape_z(shape, t, phase)
+  local shifted = t + phase
+  local two_pi = math.pi * 2
+  if shape == "heart_curve" then
+    return math.sin(two_pi * shifted)
+  elseif shape == "cardioid" then
+    return math.cos(two_pi * shifted)
+  elseif shape == "rose8" then
+    return math.sin(two_pi * 4 * shifted) * 0.85
+  elseif shape == "bernoulli" then
+    return math.cos(two_pi * 2 * shifted) * 0.75
+  elseif shape == "astroid" then
+    return math.sin(two_pi * 3 * shifted) * 0.65
+  elseif shape == "epicycloid" then
+    return math.sin(two_pi * 5 * shifted) * 0.85
+  end
+  return nil
+end
+
 local function source_motion_shape(source, settings)
   if settings.motion_map and settings.motion_map[source] then
     return settings.motion_map[source]
@@ -500,8 +561,16 @@ local function xyz_motion_values(source, source_count, progress, settings)
   local x = x_center
   local y = y_center
   local z = z_center
+  local px, py = parametric_shape_xy(shape, t)
 
-  if shape == "line" then
+  if px ~= nil and py ~= nil then
+    x = x_center + x_amp * px
+    y = y_center + y_amp * py
+    local pz = parametric_shape_z(shape, t, phase)
+    if pz then
+      z = z_center + z_amp * pz
+    end
+  elseif shape == "line" then
     x = x_center - x_amp + (x_amp * 2) * t
     y = y_center - y_amp + (y_amp * 2) * t
   elseif shape == "arc_up" then
@@ -515,9 +584,10 @@ local function xyz_motion_values(source, source_count, progress, settings)
     y = y_center - y_amp * math.sin(math.pi * t)
     z = z_center - z_amp * math.sin(math.pi * t)
   elseif shape == "s_curve" then
-    x = x_center - x_amp + (x_amp * 2) * t
-    y = y_center + y_amp * math.sin(two_pi * t)
-    z = z_center + z_amp * math.sin(two_pi * t)
+    local eased = smoothstep(t)
+    x = x_center - x_amp + (x_amp * 2) * eased
+    y = y_center + y_amp * math.sin(two_pi * (t - 0.25))
+    z = z_center + z_amp * math.sin(two_pi * eased)
   elseif shape == "step" then
     local steps = 4
     local stepped = math.floor(t * steps) / steps
@@ -600,8 +670,22 @@ local function motion_values(source, source_count, progress, settings)
   local az_amp = settings.azimuth_spread * 0.5
   local el_amp = settings.elevation_spread * 0.5
   local dist_amp = settings.distance_spread * 0.5
+  local is_parametric_shape = (
+    shape == "heart_curve" or
+    shape == "cardioid" or
+    shape == "rose8" or
+    shape == "bernoulli" or
+    shape == "astroid" or
+    shape == "epicycloid"
+  )
 
-  if shape == "line" then
+  if is_parametric_shape then
+    local xyz = xyz_motion_values(source, source_count, progress, settings)
+    local aed = normalized_xyz_to_aed(xyz.x, xyz.y, xyz.z)
+    azimuth = aed.azimuth
+    elevation = aed.elevation
+    distance = aed.distance
+  elseif shape == "line" then
     azimuth = settings.azimuth_center - az_amp + settings.azimuth_spread * t + phase * 18
     elevation = settings.elevation_center - el_amp + settings.elevation_spread * t
     distance = settings.distance_center

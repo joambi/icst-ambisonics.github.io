@@ -19,6 +19,12 @@ local MOTIONS = {
   { id = "circle",      label = "Circ"  },
   { id = "spiral",      label = "Spir"  },
   { id = "fourier_xyz", label = "Four"  },
+  { id = "heart_curve", label = "Hrt"   },
+  { id = "cardioid",    label = "Card"  },
+  { id = "rose8",       label = "R8"    },
+  { id = "bernoulli",   label = "Bern"  },
+  { id = "astroid",     label = "Ast"   },
+  { id = "epicycloid",  label = "Epi"   },
   { id = "lissajous",   label = "Lis"   },
 }
 
@@ -137,6 +143,50 @@ local function fourierSum(t, phase, terms)
   return wsum < 1e-6 and 0 or clamp(sum / wsum, -1, 1)
 end
 
+local function parametric_shape_xy(shape, t)
+  local angle = math.pi * 2 * t
+  if shape == "heart_curve" then
+    local s = math.sin(angle)
+    local c = math.cos(angle)
+    return (16 * s * s * s) / 18, (13 * c - 5 * math.cos(2 * angle) - 2 * math.cos(3 * angle) - math.cos(4 * angle)) / 18
+  elseif shape == "cardioid" then
+    local r = 0.5 * (1 - math.sin(angle))
+    return r * math.cos(angle), r * math.sin(angle)
+  elseif shape == "rose8" then
+    local r = math.cos(4 * angle)
+    return r * math.cos(angle), r * math.sin(angle)
+  elseif shape == "bernoulli" then
+    local s = math.sin(angle)
+    local c = math.cos(angle)
+    local denom = 1 + s * s
+    return c / denom, (s * c) / denom
+  elseif shape == "astroid" then
+    return math.cos(angle) ^ 3, math.sin(angle) ^ 3
+  elseif shape == "epicycloid" then
+    return (5 * math.cos(angle) - math.cos(5 * angle)) / 6, (5 * math.sin(angle) - math.sin(5 * angle)) / 6
+  end
+  return nil, nil
+end
+
+local function parametric_shape_z(shape, t, phase)
+  local shifted = t + phase
+  local two_pi = math.pi * 2
+  if shape == "heart_curve" then
+    return math.sin(two_pi * shifted)
+  elseif shape == "cardioid" then
+    return math.cos(two_pi * shifted)
+  elseif shape == "rose8" then
+    return math.sin(two_pi * 4 * shifted) * 0.85
+  elseif shape == "bernoulli" then
+    return math.cos(two_pi * 2 * shifted) * 0.75
+  elseif shape == "astroid" then
+    return math.sin(two_pi * 3 * shifted) * 0.65
+  elseif shape == "epicycloid" then
+    return math.sin(two_pi * 5 * shifted) * 0.85
+  end
+  return nil
+end
+
 -- Compute raw AED (azimuth°, elevation°, distance 0-1) for a motion shape.
 -- These values mirror the writer's intent in "linear-AED" space:
 --   az maps linearly to X_norm via: X_norm = 0.5 + az/360  (writer formula)
@@ -157,25 +207,31 @@ local function computeAED(shape, t, src_idx, n_active, p)
   local el_a  = p.el_spr * 0.5
   local z_a   = p.use_z and p.z_spr * 0.5 or 0
   local az, el, d = p.az_cen, p.el_cen, p.z_cen
+  local px, py = parametric_shape_xy(shape, t_src)
 
-  if shape == "line" then
+  if px ~= nil and py ~= nil then
+    az = p.az_cen + az_a * px
+    el = p.el_cen + el_a * py
+    local pz = parametric_shape_z(shape, t_src, phase)
+    if pz then d = p.z_cen + z_a * pz end
+  elseif shape == "line" then
     az = p.az_cen - az_a + p.az_spr * t_src
     el = p.el_cen - el_a + p.el_spr * t_src
   elseif shape == "arc_up" then
     local e = smoothstep(t_src)
     az = p.az_cen - az_a + p.az_spr * e
-    el = p.el_cen + el_a * math.sin(math.pi * t_src + phase * pi2)
+    el = p.el_cen + el_a * math.sin(math.pi * t_src)
     d  = p.z_cen  + z_a  * math.sin(math.pi * t_src)
   elseif shape == "arc_down" then
     local e = smoothstep(t_src)
     az = p.az_cen - az_a + p.az_spr * e
-    el = p.el_cen - el_a * math.sin(math.pi * t_src + phase * pi2)
+    el = p.el_cen - el_a * math.sin(math.pi * t_src)
     d  = p.z_cen  - z_a  * math.sin(math.pi * t_src)
   elseif shape == "s_curve" then
     local e = smoothstep(t_src)
     az = p.az_cen - az_a + p.az_spr * e
-    el = p.el_cen + el_a * math.sin(pi2 * (t_src - 0.25 + phase * 0.5))
-    d  = p.z_cen  + z_a  * math.sin(pi2 * (e + phase))
+    el = p.el_cen + el_a * math.sin(pi2 * (t_src - 0.25))
+    d  = p.z_cen  + z_a  * math.sin(pi2 * e)
   elseif shape == "step" then
     local steps   = 4
     local stepped = t_src >= 1 and 1 or math.floor(t_src * steps) / steps
@@ -755,6 +811,31 @@ local function icon_path(shape, t)
     return fourierSum(t, 0, {{1,1,0},{0.55,2,0.18},{0.30,3,0.41},{0.18,5,0.07}}) * 0.5,
            fourierSum(t, 0, {{1,1,0.25},{0.50,3,0.02},{0.28,4,0.33},{0.15,6,0.11}}) * 0.45
 
+  elseif shape == "heart_curve" then
+    local x, y = parametric_shape_xy(shape, t)
+    return x * 0.90, y * 0.82 - 0.03
+
+  elseif shape == "cardioid" then
+    local a = pi2 * t
+    local r = 0.34 * (1 - math.sin(a))
+    return r * math.cos(a), r * math.sin(a) * 0.92 - 0.02
+
+  elseif shape == "rose8" then
+    local a = pi2 * t
+    local r = 0.34 * math.cos(4 * a)
+    return r * math.cos(a), r * math.sin(a) * 0.92
+
+  elseif shape == "bernoulli" then
+    return math.sin(pi2 * t) * 0.42, math.sin(pi2 * t) * math.cos(pi2 * t) * 0.66
+
+  elseif shape == "astroid" then
+    local a = pi2 * t
+    return (math.cos(a) ^ 3) * 0.46, (math.sin(a) ^ 3) * 0.46
+
+  elseif shape == "epicycloid" then
+    local a = pi2 * t
+    return (2 * math.cos(a) - math.cos(2 * a)) * 0.18, (2 * math.sin(a) - math.sin(2 * a)) * 0.18
+
   elseif shape == "lissajous" then
     -- Figure-8: 1:2 Lissajous
     return math.sin(pi2 * t) * 0.5, math.sin(pi2 * t * 2 + 0.5) * 0.45
@@ -827,7 +908,7 @@ local GRID_Y   = 104
 local ROW_H    = 36
 local ENABLE_W = 38
 local SOURCE_W = 58
-local CELL_W   = 66
+local CELL_W   = 42
 local MAX_ROWS = 14
 
 local function draw_source_grid()

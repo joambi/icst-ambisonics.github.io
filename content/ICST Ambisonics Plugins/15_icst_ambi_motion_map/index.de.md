@@ -65,7 +65,7 @@ Im **Actions**-Fenster `JS_AmbiEncoder64_Motion_Map_GUI` suchen und einen Tastat
 
 Das Fenster gliedert sich in drei Bereiche:
 
-**Links — Source Grid:** Zeilen für Sources S0–S63. Jede Zeile hat einen Aktivierungs-Toggle, ein Source-Label und zehn Bewegungsform-Zellen.
+**Links — Source Grid:** Zeilen für Sources S0–S63. Jede Zeile hat einen Aktivierungs-Toggle, ein Source-Label und **16 Bewegungsform-Zellen** (Line bis Lis).
 
 **Rechts oben — Trajectory Preview:** Animierte Leinwand, die den Pfad jeder aktiven Source zeigt. Die horizontale Achse ist **X** (links–rechts), die vertikale **Y** (unten–oben), beide in der aktuellen Scale-Einheit beschriftet. Die ausgewählte Source zeigt ein Koordinaten-Label (z.B. `S0  X:-0.16  Y:-0.04`).
 
@@ -75,7 +75,7 @@ Das Fenster gliedert sich in drei Bereiche:
 
 ## 5. Sources aktivieren
 
-Alle Sources starten deaktiviert. Es gibt drei Wege, eine Source einzuschalten:
+Beim ersten Start sind alle 64 Sources aktiviert und haben automatisch zugewiesene Formen (Auto-Round-Robin). Es gibt drei Wege, eine Source ein- oder auszuschalten:
 
 - **Klick auf das ✓-Kästchen** in der „On"-Spalte — schaltet die Source ein oder aus.
 - **Klick auf das Source-Label** (z.B. S0, S1) — gleicher Effekt, aber größere Klickfläche.
@@ -89,7 +89,7 @@ Der Zähler oben rechts im Settings-Bereich zeigt, wie viele Sources aktiv sind 
 
 ## 6. Bewegungsformen zuweisen
 
-Jede Zeile hat zehn Form-Buttons. Klick auf einen Button weist diese Bewegungsform der Source zu. Das Zuweisen einer Form aktiviert die Source automatisch.
+Jede Zeile hat **16 Form-Buttons**. Klick auf einen Button weist diese Bewegungsform der Source zu. Das Zuweisen einer Form aktiviert die Source automatisch.
 
 | Label | Form | Bewegungscharakter |
 |-------|------|--------------------|
@@ -102,6 +102,12 @@ Jede Zeile hat zehn Form-Buttons. Klick auf einen Button weist diese Bewegungsfo
 | **Circ** | `circle` | Vollkreis in der XY-Ebene |
 | **Spir** | `spiral` | Expandierende Spirale von innen nach außen |
 | **Four** | `fourier_xyz` | Komplexe 3D-Bahn aus summierten Harmonischen |
+| **Hrt** | `heart_curve` | Herzförmige parametrische Kurve |
+| **Card** | `cardioid` | Kardioid — eintropfige Herzkurve |
+| **R8** | `rose8` | Rosenkurve mit 8 Blättern |
+| **Bern** | `bernoulli` | Lemniskate von Bernoulli — Acht-Variante |
+| **Ast** | `astroid` | Astroid — 4-spitzige Sternkurve |
+| **Epi** | `epicycloid` | Epizykloide — komplexe Schleifenbahn |
 | **Lis** | `lissajous` | Lissajous-Figur — X und Y auf verschiedenen Frequenzen |
 
 Wenn mehrere Sources dieselbe Form verwenden, verteilt der **Src offset**-Schieberegler (siehe §7) sie entlang der Trajektorie — sonst bewegen sie sich alle überlagert am gleichen Punkt.
@@ -110,7 +116,7 @@ Wenn mehrere Sources dieselbe Form verwenden, verteilt der **Src offset**-Schieb
 
 | Button | Effekt |
 |--------|--------|
-| **Auto** | Weist Formen im Round-Robin (Line, Arc+, Arc−, …) auf alle 64 Sources zu |
+| **Auto** | Weist alle 16 Formen im Round-Robin auf alle 64 Sources zu |
 | **Random** | Weist jeder Source eine zufällige Form zu |
 | **All Line** | Setzt alle aktiven Sources auf Line |
 | **All Circle** | Setzt alle aktiven Sources auf Circle |
