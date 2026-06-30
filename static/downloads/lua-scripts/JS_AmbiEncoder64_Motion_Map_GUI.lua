@@ -25,7 +25,6 @@ local MOTIONS = {
   { id = "bernoulli",   label = "Bern"  },
   { id = "astroid",     label = "Ast"   },
   { id = "epicycloid",  label = "Epi"   },
-  { id = "lattice",     label = "Lat"   },
   { id = "lissajous",   label = "Lis"   },
 }
 
@@ -48,7 +47,7 @@ local COLORS = {
 -- ── State ────────────────────────────────────────────────────────────────────
 local state = {
   w = 1440,
-  h = 1010,
+  h = 940,
   source_scroll   = 1,
   selected_source = 1,
   motion_by_source = {},
@@ -63,15 +62,6 @@ local state = {
   z_center  = "0.75", -- Z center in scale units (0..scale)
   z_spread  = "0.35", -- Z total spread in scale units (0..scale)
   motion_amount  = "1.0",
-  lattice_rate   = "8.0",
-  lattice_smooth = "1.0",
-  lattice_bound_x = "0.00",
-  lattice_bound_y = "0.00",
-  lattice_bound_z = "0.00",
-  time_quant_steps = "0.0",
-  space_quant_x = "0.00",
-  space_quant_y = "0.00",
-  space_quant_z = "0.00",
   source_phase   = "0.00", -- temporal offset between sources (0=same pos, 1=evenly spread)
   region_name   = "BFormat_TS",
   clear_existing   = true,
@@ -153,37 +143,6 @@ local function fourierSum(t, phase, terms)
   return wsum < 1e-6 and 0 or clamp(sum / wsum, -1, 1)
 end
 
-local function centered_wrap(value, bound)
-  if bound <= 0.000001 then return value end
-  local span = bound * 2
-  local shifted = (value + bound) % span
-  if shifted < 0 then shifted = shifted + span end
-  return shifted - bound
-end
-
-local function lattice_step_progress(t, rate, smooth)
-  if rate <= 0.000001 then return 0 end
-  local raw = t * rate
-  local step_index = math.floor(raw)
-  local frac = raw - step_index
-  local blend = clamp(smooth or 0, 0, 1)
-  if blend <= 0.000001 then
-    return step_index
-  end
-  return step_index + smoothstep(frac) * blend
-end
-
-local function quantize_progress(t, steps)
-  if steps <= 0.000001 then return t end
-  local scaled = t * steps
-  return math.floor(scaled) / steps
-end
-
-local function quantize_value(value, quantum)
-  if quantum <= 0.000001 then return value end
-  return math.floor((value / quantum) + 0.5) * quantum
-end
-
 local function parametric_shape_xy(shape, t)
   local angle = math.pi * 2 * t
   if shape == "heart_curve" then
@@ -243,7 +202,6 @@ local function computeAED(shape, t, src_idx, n_active, p)
   -- Temporal offset: spread sources along the trajectory (0=same pos, 1=evenly distributed)
   local src_spread = p.src_spread or 0
   local t_src = (t + phase * src_spread) % 1.0
-  t_src = quantize_progress(t_src, p.time_quant_steps or 0)
 
   local az_a  = p.az_spr * 0.5
   local el_a  = p.el_spr * 0.5
@@ -256,32 +214,24 @@ local function computeAED(shape, t, src_idx, n_active, p)
     el = p.el_cen + el_a * py
     local pz = parametric_shape_z(shape, t_src, phase)
     if pz then d = p.z_cen + z_a * pz end
-  elseif shape == "lattice" then
-    local step_progress = lattice_step_progress(t_src, p.lattice_rate or 8.0, p.lattice_smooth or 1.0)
-    local dx = centered_wrap(p.az_spr * step_progress, p.lattice_bound_x or 0)
-    local dy = centered_wrap(p.el_spr * step_progress, p.lattice_bound_y or 0)
-    local dz = centered_wrap(p.z_spr * step_progress, p.lattice_bound_z or 0)
-    az = p.az_cen + dx
-    el = p.el_cen + dy
-    d  = p.z_cen + dz
   elseif shape == "line" then
     az = p.az_cen - az_a + p.az_spr * t_src
     el = p.el_cen - el_a + p.el_spr * t_src
   elseif shape == "arc_up" then
     local e = smoothstep(t_src)
     az = p.az_cen - az_a + p.az_spr * e
-    el = p.el_cen + el_a * math.sin(math.pi * t_src)
+    el = p.el_cen + el_a * math.sin(math.pi * t_src + phase * pi2)
     d  = p.z_cen  + z_a  * math.sin(math.pi * t_src)
   elseif shape == "arc_down" then
     local e = smoothstep(t_src)
     az = p.az_cen - az_a + p.az_spr * e
-    el = p.el_cen - el_a * math.sin(math.pi * t_src)
+    el = p.el_cen - el_a * math.sin(math.pi * t_src + phase * pi2)
     d  = p.z_cen  - z_a  * math.sin(math.pi * t_src)
   elseif shape == "s_curve" then
     local e = smoothstep(t_src)
     az = p.az_cen - az_a + p.az_spr * e
-    el = p.el_cen + el_a * math.sin(pi2 * (t_src - 0.25))
-    d  = p.z_cen  + z_a  * math.sin(pi2 * e)
+    el = p.el_cen + el_a * math.sin(pi2 * (t_src - 0.25 + phase * 0.5))
+    d  = p.z_cen  + z_a  * math.sin(pi2 * (e + phase))
   elseif shape == "step" then
     local steps   = 4
     local stepped = t_src >= 1 and 1 or math.floor(t_src * steps) / steps
@@ -312,10 +262,6 @@ local function computeAED(shape, t, src_idx, n_active, p)
     el = p.el_cen + el_a * math.sin(pi2 * (t_src * 2 + phase))
     d  = p.z_cen  + z_a  * math.cos(pi2 * (t_src + phase))
   end
-
-  az = quantize_value(az, p.space_quant_x or 0)
-  el = quantize_value(el, p.space_quant_y or 0)
-  d  = quantize_value(d, p.space_quant_z or 0)
 
   local el_w, az_w = wrap_el_az(el, az)
   return az_w, el_w, clamp(d, 0, 1)
@@ -400,15 +346,6 @@ local function preset_serialize()
     "tc_mode=" .. tostring(state.time_curve_mode),
     "tc_n="    .. tostring(state.time_curve_amount),
     "src_ph="  .. tostring(state.source_phase),
-    "lat_rate=" .. tostring(state.lattice_rate),
-    "lat_smooth=" .. tostring(state.lattice_smooth),
-    "lat_bx="  .. tostring(state.lattice_bound_x),
-    "lat_by="  .. tostring(state.lattice_bound_y),
-    "lat_bz="  .. tostring(state.lattice_bound_z),
-    "q_t="     .. tostring(state.time_quant_steps),
-    "q_x="     .. tostring(state.space_quant_x),
-    "q_y="     .. tostring(state.space_quant_y),
-    "q_z="     .. tostring(state.space_quant_z),
     "palin="   .. b(state.palindrome),
     "use_z="   .. b(state.use_z_motion),
     "clear="   .. b(state.clear_existing),
@@ -472,15 +409,6 @@ local function preset_deserialize(str)
       if fmt == 3 then n = n / 100 end
       state.z_spread = string.format("%.4f", n)
     elseif k == "src_ph"  then state.source_phase      = v
-    elseif k == "lat_rate" then state.lattice_rate     = v
-    elseif k == "lat_smooth" then state.lattice_smooth = v
-    elseif k == "lat_bx"  then state.lattice_bound_x   = v
-    elseif k == "lat_by"  then state.lattice_bound_y   = v
-    elseif k == "lat_bz"  then state.lattice_bound_z   = v
-    elseif k == "q_t"     then state.time_quant_steps  = v
-    elseif k == "q_x"     then state.space_quant_x     = v
-    elseif k == "q_y"     then state.space_quant_y     = v
-    elseif k == "q_z"     then state.space_quant_z     = v
     elseif k == "tc_mode" then state.time_curve_mode  = v
     elseif k == "tc_n"    then state.time_curve_amount = v
     elseif k == "palin"   then state.palindrome       = bv(v)
@@ -883,11 +811,6 @@ local function icon_path(shape, t)
     return fourierSum(t, 0, {{1,1,0},{0.55,2,0.18},{0.30,3,0.41},{0.18,5,0.07}}) * 0.5,
            fourierSum(t, 0, {{1,1,0.25},{0.50,3,0.02},{0.28,4,0.33},{0.15,6,0.11}}) * 0.45
 
-  elseif shape == "lattice" then
-    local sx = centered_wrap(lattice_step_progress(t, tonumber(state.lattice_rate) or 8.0, tonumber(state.lattice_smooth) or 1.0), tonumber(state.lattice_bound_x) or 0)
-    local sy = centered_wrap(lattice_step_progress(t, tonumber(state.lattice_rate) or 8.0, tonumber(state.lattice_smooth) or 1.0) * 0.56, tonumber(state.lattice_bound_y) or 0)
-    return sx * 0.18, sy * 0.18
-
   elseif shape == "heart_curve" then
     local x, y = parametric_shape_xy(shape, t)
     return x * 0.90, y * 0.82 - 0.03
@@ -1082,15 +1005,6 @@ local function preview_params()
     el_spr     = (tonumber(state.y_spread) or 0.56) *  90 / s,
     z_cen      = (tonumber(state.z_center) or 0.75) /   s,
     z_spr      = (tonumber(state.z_spread) or 0.35) /   s,
-    lattice_rate = tonumber(state.lattice_rate) or 8.0,
-    lattice_smooth = clamp(tonumber(state.lattice_smooth) or 1.0, 0, 1),
-    lattice_bound_x = (tonumber(state.lattice_bound_x) or 0) * 180 / s,
-    lattice_bound_y = (tonumber(state.lattice_bound_y) or 0) * 90 / s,
-    lattice_bound_z = (tonumber(state.lattice_bound_z) or 0) / s,
-    time_quant_steps = tonumber(state.time_quant_steps) or 0,
-    space_quant_x = (tonumber(state.space_quant_x) or 0) * 180 / s,
-    space_quant_y = (tonumber(state.space_quant_y) or 0) * 90 / s,
-    space_quant_z = (tonumber(state.space_quant_z) or 0) / s,
     use_z      = state.use_z_motion,
     src_spread = tonumber(state.source_phase) or 0,
   }
@@ -1326,15 +1240,6 @@ local function reset_params()
   state.z_spread          = string.format("%.2f", 0.35 * s)
   state.motion_amount     = "1.0"
   state.source_phase      = "0.00"
-  state.lattice_rate      = "8.0"
-  state.lattice_smooth    = "1.0"
-  state.lattice_bound_x   = "0.00"
-  state.lattice_bound_y   = "0.00"
-  state.lattice_bound_z   = "0.00"
-  state.time_quant_steps  = "0.0"
-  state.space_quant_x     = "0.00"
-  state.space_quant_y     = "0.00"
-  state.space_quant_z     = "0.00"
   state.steps_per_second  = "12"
   state.time_curve_mode   = "linear"
   state.time_curve_amount = "2.0"
@@ -1475,30 +1380,8 @@ local function draw_settings()
   end
   state.palindrome = draw_toggle("Palindrome", state.palindrome, pal_x, y + 3)
 
-  -- ── Lattice ───────────────────────────────────────────────────────────
-  y = y + 42
-  draw_text("Lattice", x, y, 0.56, 0.62, 0.66)
-  draw_text("For Lat: X/Y/Z spread = repeated step vector", x + 80, y, 0.34, 0.42, 0.48)
-  y = y + 18
-  local lat_w = math.floor((PREV_W - 4 * 6) / 5)
-  draw_slider("lattice_rate",   "Rate / T", x,                 y, lat_w, 0, 32, false)
-  draw_slider("lattice_smooth", "Slide",    x + (lat_w+6) * 1, y, lat_w, 0,  1, false)
-  draw_slider("lattice_bound_x","Bound X",  x + (lat_w+6) * 2, y, lat_w, 0,  s, false)
-  draw_slider("lattice_bound_y","Bound Y",  x + (lat_w+6) * 3, y, lat_w, 0,  s, false)
-  draw_slider("lattice_bound_z","Bound Z",  x + (lat_w+6) * 4, y, lat_w, 0,  s, false)
-
-  -- ── Quantize ──────────────────────────────────────────────────────────
-  y = y + 54
-  draw_text("Quantize", x, y, 0.56, 0.62, 0.66)
-  draw_text("Applies to every shape: step time and round XYZ space", x + 80, y, 0.34, 0.42, 0.48)
-  y = y + 18
-  draw_slider("time_quant_steps","Time / T", x,                 y, lat_w, 0, 32, false)
-  draw_slider("space_quant_x",  "Q X",      x + (lat_w+6) * 1, y, lat_w, 0,  s, false)
-  draw_slider("space_quant_y",  "Q Y",      x + (lat_w+6) * 2, y, lat_w, 0,  s, false)
-  draw_slider("space_quant_z",  "Q Z",      x + (lat_w+6) * 3, y, lat_w, 0,  s, false)
-
   -- ── Output options ────────────────────────────────────────────────────
-  y = y + 54
+  y = y + 38
   draw_input("region_name", "Region name", x, y, col_w * 2 + 6)
 
   -- Toggles — 2 per row
@@ -1576,15 +1459,6 @@ function write_automation()
     distance_center  = tostring(w_z_c),
     distance_spread  = tostring(w_z_s),
     motion_amount         = state.motion_amount,
-    lattice_rate         = state.lattice_rate,
-    lattice_smooth       = state.lattice_smooth,
-    lattice_bound_x      = tostring((tonumber(state.lattice_bound_x) or 0) * 180 / w_s),
-    lattice_bound_y      = tostring((tonumber(state.lattice_bound_y) or 0) * 90 / w_s),
-    lattice_bound_z      = tostring((tonumber(state.lattice_bound_z) or 0) / w_s),
-    time_quant_steps     = state.time_quant_steps,
-    space_quant_x        = tostring((tonumber(state.space_quant_x) or 0) * 180 / w_s),
-    space_quant_y        = tostring((tonumber(state.space_quant_y) or 0) * 90 / w_s),
-    space_quant_z        = tostring((tonumber(state.space_quant_z) or 0) / w_s),
     source_phase_spread   = state.source_phase,
     use_z_motion          = state.use_z_motion,
     palindrome          = state.palindrome,
@@ -1621,7 +1495,7 @@ local function draw()
 
   -- Title bar
   gfx.setfont(2, "Arial", 22)
-  draw_text("AmbiEncoder64 Motion Map   v2.0", GRID_X, 10, 0.88, 0.92, 0.94)
+  draw_text("AmbiEncoder64 Motion Map   v2.1", GRID_X, 10, 0.88, 0.92, 0.94)
   gfx.setfont(2, "Arial", 12)
   draw_text("Assign motion shapes to sources, preview trajectories, then write XYZ automation over the current time selection.",
             GRID_X, 40, 0.42, 0.50, 0.56)
