@@ -47,7 +47,9 @@ body {
 
 .main { display: flex; flex: 1; overflow: hidden; }
 .left { flex: 1; display: flex; flex-direction: column; overflow: hidden; padding: 10px 12px; }
-.right { width: 320px; flex-shrink: 0; background: var(--bg2); border-left: 1px solid var(--border); padding: 14px; display: flex; flex-direction: column; gap: 10px; overflow-y: auto; }
+.right { width: 360px; flex-shrink: 0; background: var(--bg2); border-left: 1px solid var(--border); display: flex; flex-direction: column; overflow: hidden; }
+.preview-section { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 14px 14px 10px; }
+.settings-section { flex-shrink: 0; border-top: 1px solid var(--border); padding: 10px 14px 14px; display: flex; flex-direction: column; gap: 8px; overflow-y: auto; max-height: 55%; }
 
 /* ── Grid header ────────────────────────────────────────────── */
 .grid-header {
@@ -127,11 +129,11 @@ body {
 /* ── Right panel: Preview ────────────────────────────────────── */
 .panel-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 6px; }
 .sphere-wrap {
-  width: 100%; aspect-ratio: 4/3;
+  flex: 1; min-height: 0;
   background: var(--bg); border: 1px solid var(--border);
   border-radius: 6px; overflow: hidden; position: relative;
 }
-.sphere-wrap canvas { width: 100%; height: 100%; display: block; }
+.sphere-wrap canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; }
 
 /* ── Right panel: Settings ───────────────────────────────────── */
 .settings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
@@ -211,22 +213,24 @@ body {
     </div>
   </div>
 
-  <!-- Right: preview + settings -->
+  <!-- Right: preview (top, grows) + settings (bottom, fixed) -->
   <div class="right">
-    <div>
+
+    <!-- ① Trajectory Preview — fills all available space -->
+    <div class="preview-section">
       <div class="panel-label">Trajectory Preview</div>
       <div class="sphere-wrap">
         <canvas id="sphereCanvas"></canvas>
       </div>
     </div>
 
-    <div>
-      <div class="panel-label" style="margin-bottom:4px">Active sources</div>
-      <div style="font-size:12px;color:var(--text)" id="activeCnt">0 / 64</div>
-    </div>
+    <!-- ② Settings — pinned at bottom, scrollable if needed -->
+    <div class="settings-section">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <div class="panel-label" style="margin-bottom:0">Settings</div>
+        <span style="font-size:11px;color:var(--text)"><span id="activeCnt">0</span> / 64 active</span>
+      </div>
 
-    <div>
-      <div class="panel-label">Spatial parameters</div>
       <div class="settings-grid">
         <div class="field"><label>Steps/sec</label><input id="f_steps" value="12" type="number"></div>
         <div class="field"><label>Motion amount</label><input id="f_motion" value="2.0" type="number" step="0.1"></div>
@@ -238,29 +242,17 @@ body {
         <div class="field"><label>Z spread</label><input id="f_zspr" value="0.35" type="number" step="0.05"></div>
         <div class="field wide"><label>Region name</label><input id="f_region" value="BFormat_TS"></div>
       </div>
-    </div>
 
-    <div class="toggle-group" id="toggleGroup">
-      <div class="toggle-row" onclick="toggleOpt('clearExisting')">
-        <div class="toggle-box on" id="tb_clearExisting"></div>
-        <span class="toggle-label">Clear existing</span>
+      <div class="toggle-group">
+        <div class="toggle-row" onclick="toggleOpt('clearExisting')"><div class="toggle-box on" id="tb_clearExisting"></div><span class="toggle-label">Clear existing</span></div>
+        <div class="toggle-row" onclick="toggleOpt('trackLatch')"><div class="toggle-box on" id="tb_trackLatch"></div><span class="toggle-label">Track Latch</span></div>
+        <div class="toggle-row" onclick="toggleOpt('overwriteRegion')"><div class="toggle-box on" id="tb_overwriteRegion"></div><span class="toggle-label">Overwrite region</span></div>
+        <div class="toggle-row" onclick="toggleOpt('useZMotion')"><div class="toggle-box on" id="tb_useZMotion"></div><span class="toggle-label">Use Z motion</span></div>
       </div>
-      <div class="toggle-row" onclick="toggleOpt('trackLatch')">
-        <div class="toggle-box on" id="tb_trackLatch"></div>
-        <span class="toggle-label">Track Latch</span>
-      </div>
-      <div class="toggle-row" onclick="toggleOpt('overwriteRegion')">
-        <div class="toggle-box on" id="tb_overwriteRegion"></div>
-        <span class="toggle-label">Overwrite region</span>
-      </div>
-      <div class="toggle-row" onclick="toggleOpt('useZMotion')">
-        <div class="toggle-box on" id="tb_useZMotion"></div>
-        <span class="toggle-label">Use Z motion</span>
-      </div>
-    </div>
 
-    <div class="sel-readout" id="selReadout">Selected S0: —</div>
-    <button class="write-btn" onclick="doWrite()">Write Automation + Region</button>
+      <div class="sel-readout" id="selReadout">Selected S0: —</div>
+      <button class="write-btn" onclick="doWrite()">Write Automation + Region</button>
+    </div>
   </div>
 </div>
 
@@ -451,48 +443,76 @@ let animT = 0, animFrame = null;
 function drawSphere() {
   const canvas  = document.getElementById('sphereCanvas');
   const wrapper = canvas.parentElement;
-  const W = wrapper.clientWidth, H = W;
-  canvas.width  = W * devicePixelRatio;
-  canvas.height = H * devicePixelRatio;
+  const rect = wrapper.getBoundingClientRect();
+  const W = rect.width  || wrapper.clientWidth  || 300;
+  const H = rect.height || wrapper.clientHeight || Math.round(W * 9 / 16);
+  const dpr = devicePixelRatio;
+  canvas.width  = W * dpr;
+  canvas.height = H * dpr;
   canvas.style.width  = W + 'px';
   canvas.style.height = H + 'px';
   const ctx = canvas.getContext('2d');
-  ctx.scale(devicePixelRatio, devicePixelRatio);
+  ctx.scale(dpr, dpr);
   ctx.clearRect(0, 0, W, H);
 
+  const PAD = 28;
   const cx = W / 2, cy = H / 2;
-  const scaleX = W * 0.42, scaleY = H * 0.42;
+  const scaleX = (W - PAD * 2) / 2;
+  const scaleY = (H - PAD * 2) / 2;
 
-  // Grid lines
-  ctx.strokeStyle = '#161e26';
-  ctx.lineWidth   = 1;
-  for (let az = -150; az <= 150; az += 60) {
+  // AZ/EL grid — subtle
+  ctx.lineWidth = 1;
+  for (let az = -180; az <= 180; az += 30) {
     const x = cx + (az / 180) * scaleX;
-    ctx.beginPath(); ctx.moveTo(x, cy - scaleY * 0.98); ctx.lineTo(x, cy + scaleY * 0.98); ctx.stroke();
+    const major = az % 90 === 0;
+    ctx.strokeStyle = major ? '#1d2a38' : '#131b24';
+    ctx.beginPath(); ctx.moveTo(x, PAD); ctx.lineTo(x, H - PAD); ctx.stroke();
+    if (major && az !== -180) {
+      ctx.fillStyle = '#253545'; ctx.font = '9px monospace'; ctx.textAlign = 'center';
+      ctx.fillText(az + '°', x, H - PAD + 11);
+    }
   }
-  for (let el = -60; el <= 60; el += 30) {
+  for (let el = -90; el <= 90; el += 30) {
     const y = cy - (el / 90) * scaleY;
-    ctx.beginPath(); ctx.moveTo(cx - scaleX * 0.98, y); ctx.lineTo(cx + scaleX * 0.98, y); ctx.stroke();
+    const major = el === 0;
+    ctx.strokeStyle = major ? '#1d2a38' : '#131b24';
+    ctx.beginPath(); ctx.moveTo(PAD, y); ctx.lineTo(W - PAD, y); ctx.stroke();
+    if (el !== -90) {
+      ctx.fillStyle = '#253545'; ctx.font = '9px monospace'; ctx.textAlign = 'right';
+      ctx.fillText(el + '°', PAD - 3, y + 3);
+    }
   }
 
   // Axis labels
-  ctx.fillStyle = '#1e2c3a';
-  ctx.font      = '9px monospace';
-  ctx.fillText('AZ', cx - 6, H - 4);
-  ctx.fillText('EL', 2, cy + 4);
-  ctx.fillText('−180', 2, cy + 3);
-  ctx.fillText('+180', W - 28, cy + 3);
+  ctx.fillStyle = '#2e3e50'; ctx.font = '9px monospace'; ctx.textAlign = 'center';
+  ctx.fillText('Azimuth →', W / 2, H - 2);
+  ctx.save(); ctx.translate(10, H / 2); ctx.rotate(-Math.PI / 2);
+  ctx.fillText('Elevation', 0, 0); ctx.restore();
 
-  const p = getParams();
+  const p       = getParams();
   const enabled = state.enabled.map((e, i) => e ? i : -1).filter(i => i >= 0);
-  const TSTEPS  = 80;
+  const TSTEPS  = 100;
 
-  // Draw trails (top 10 enabled sources)
-  enabled.slice(0, 12).forEach((src, ci) => {
-    const shape = state.motions[src];
+  // Draw all unique shapes (grouped by shape, one trail per shape type)
+  const shapeGroups = {};
+  enabled.forEach((src, ci) => {
+    const shape = state.motions[src] || 'line';
+    if (!shapeGroups[shape]) shapeGroups[shape] = [];
+    shapeGroups[shape].push({ src, ci });
+  });
+
+  // Draw each source trail
+  enabled.forEach((src, ci) => {
+    const shape = state.motions[src] || 'line';
     const col   = SPHERE_COLORS[ci % SPHERE_COLORS.length];
-    ctx.strokeStyle = col + '66';
-    ctx.lineWidth   = 1.2;
+    // Fade inactive sources
+    const isSelected = src === state.selected;
+    const alpha = isSelected ? 'cc' : '44';
+    const lw    = isSelected ? 1.8 : 1.0;
+    ctx.strokeStyle = col + alpha;
+    ctx.lineWidth   = lw;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
     ctx.beginPath();
     for (let i = 0; i <= TSTEPS; i++) {
       const t = i / TSTEPS;
@@ -505,28 +525,37 @@ function drawSphere() {
   });
 
   // Animated dot for selected source
-  const selShape = state.motions[state.selected];
-  const { az, el } = computeAED(selShape, animT, state.selected, enabled.length, p);
-  const px = cx + (az / 180) * scaleX;
-  const py = cy - (el / 90) * scaleY;
+  if (state.motions[state.selected]) {
+    const selShape = state.motions[state.selected];
+    const { az, el } = computeAED(selShape, animT, state.selected, enabled.length, p);
+    const px = cx + (az / 180) * scaleX;
+    const py = cy - (el / 90) * scaleY;
 
-  // Glow ring
-  const grad = ctx.createRadialGradient(px, py, 0, px, py, 16);
-  grad.addColorStop(0, '#5dd39e44');
-  grad.addColorStop(1, 'transparent');
-  ctx.fillStyle = grad;
-  ctx.beginPath(); ctx.arc(px, py, 16, 0, Math.PI * 2); ctx.fill();
+    // Pulse ring
+    const pulse = 0.5 + 0.5 * Math.sin(animT * Math.PI * 8);
+    const grad = ctx.createRadialGradient(px, py, 0, px, py, 18 + pulse * 6);
+    grad.addColorStop(0, '#5dd39e55');
+    grad.addColorStop(1, 'transparent');
+    ctx.fillStyle = grad;
+    ctx.beginPath(); ctx.arc(px, py, 18 + pulse * 6, 0, Math.PI * 2); ctx.fill();
 
-  // Dot
-  ctx.fillStyle = '#5dd39e';
-  ctx.beginPath(); ctx.arc(px, py, 5, 0, Math.PI * 2); ctx.fill();
-  ctx.fillStyle = '#fff';
-  ctx.beginPath(); ctx.arc(px, py, 2.5, 0, Math.PI * 2); ctx.fill();
+    // Dot
+    ctx.fillStyle = '#5dd39e';
+    ctx.beginPath(); ctx.arc(px, py, 5, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = '#d0f0e0';
+    ctx.beginPath(); ctx.arc(px, py, 2, 0, Math.PI * 2); ctx.fill();
 
-  // Coord label
-  ctx.fillStyle = '#5dd39e';
-  ctx.font = '9px monospace';
-  ctx.fillText(`S${state.selected}  ${az.toFixed(0)}° ${el.toFixed(0)}°`, px + 8, py - 5);
+    // Label with background pill
+    const label = `S${state.selected}  ${az.toFixed(0)}°  ${el.toFixed(0)}°`;
+    ctx.font = 'bold 10px monospace';
+    const tw = ctx.measureText(label).width;
+    const lx = Math.min(px + 10, W - tw - 14);
+    const ly = py < 20 ? py + 18 : py - 14;
+    ctx.fillStyle = '#0c0e1088';
+    ctx.beginPath(); ctx.roundRect(lx - 4, ly - 11, tw + 8, 16, 3); ctx.fill();
+    ctx.fillStyle = '#5dd39e';
+    ctx.fillText(label, lx, ly);
+  }
 }
 
 function animate() {

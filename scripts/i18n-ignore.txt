@@ -5,3 +5,4 @@ content/ICST Ambisonics Plugins/09_icst_multidecoder/index.md
 content/post/Blauertsche_B
 content/Blog/ascolta/17-ascolta/index.md
 content/Blog/ICST Composer Studio Blog/index.md
+content/ICST Ambisonics Plugins/15_icst_ambi_motion_map/index.md
