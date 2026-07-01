@@ -64,13 +64,11 @@ If you see *"Bitte zuerst eine Loop/Time Selection setzen"* (message appears in 
 
 ## 4. The Interface at a Glance
 
-![ICST Ambi Motion Map GUI v2.1](/images/ICST%20Motion%20Map%202.1.png)
-
 ![ICST Ambi Motion Map in action](/images/ICST%20Motion%20Map%20Gif.gif)
 
 The window is divided into three areas:
 
-**Left — Source Grid:** Rows for sources S0–S63. Each row has an enable toggle, a source label, and **16 motion-shape cells** (Line through Lis).
+**Left — Source Grid:** Rows for sources S0–S63. Each row has an enable toggle, a source label, and **17 motion-shape cells** (Line through Lis, including Lat).
 
 **Right top — Trajectory Preview:** Animated canvas showing the path each active source will travel. Axes are labelled X (left–right) and Y (up–down). The selected source shows a coordinate readout in the current scale unit (e.g. `S0  X:-0.16  Y:-0.04`).
 
@@ -94,7 +92,7 @@ The counter in the top-right of the settings panel shows how many sources are cu
 
 ## 6. Assigning Motion Shapes
 
-Each row has **16 shape buttons**. Click one to assign that movement pattern to a source. Assigning a shape also enables the source automatically.
+Each row has **17 shape buttons**. Click one to assign that movement pattern to a source. Assigning a shape also enables the source automatically.
 
 | Label | Shape | Movement Character |
 |-------|-------|--------------------|
@@ -107,6 +105,7 @@ Each row has **16 shape buttons**. Click one to assign that movement pattern to 
 | **Circ** | `circle` | Full circle in the XY plane |
 | **Spir** | `spiral` | Expanding spiral from center outward |
 | **Four** | `fourier_xyz` | Complex 3-D path from summed harmonics |
+| **Lat** | `lattice` | Repeated XYZ offset pattern with optional sliding and bounds |
 | **Hrt** | `heart_curve` | Heart-shaped parametric curve |
 | **Card** | `cardioid` | Cardioid — single-lobed teardrop curve |
 | **R8** | `rose8` | Rose curve with 8 petals |
@@ -117,11 +116,23 @@ Each row has **16 shape buttons**. Click one to assign that movement pattern to 
 
 When multiple sources share the same shape, use the **Src offset** slider (see §7) to spread them across the trajectory — otherwise they all move together at the same position.
 
+### Lattice shape
+
+`Lat` is a crystal-style repeated transform. Instead of tracing one continuous geometric curve, it starts at the current XYZ center point and keeps adding the XYZ spread vector over time.
+
+- **Starting point:** `X center`, `Y center`, `Z center`
+- **Repeated offset:** `X spread`, `Y spread`, `Z spread`
+- **Rate / T:** how many lattice updates happen over one time selection
+- **Slide:** smooths the transition between lattice points so the motion glides instead of snapping
+- **Bound X/Y/Z:** optional wrap range around the center for each axis; `0` disables bounding
+
+This shape is useful for crystalline motion, staircase movement in depth, repeating spatial grids, and other structured offsets that keep propagating away from the origin.
+
 ### Quick-assign buttons (PRESETS bar below the grid)
 
 | Button | Effect |
 |--------|--------|
-| **Auto** | Assigns all 16 shapes in round-robin order across all 64 sources |
+| **Auto** | Assigns all 17 shapes in round-robin order across all 64 sources |
 | **Random** | Assigns a random shape to every source |
 | **All Line** | Sets all active sources to Line |
 | **All Circle** | Sets all active sources to Circle |
@@ -158,6 +169,27 @@ All sliders are draggable. Hold **Shift** while dragging for fine control. Click
 | **Y spread** | 0.56 | Total vertical range. |
 | **Z center** | 0.75 | Distance center (0 = near, Scale = far). |
 | **Z spread** | 0.35 | Distance variation range. |
+
+### Lattice controls
+
+These controls appear below the main spatial parameters and only affect sources using the **Lat** shape:
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| **Rate / T** | 8.0 | Number of lattice updates across one full time selection. `8` means the offset is added eight times over the selected duration. |
+| **Slide** | 1.0 | Smoothing factor between lattice positions. `0` gives hard stepped jumps; `1` fully interpolates between steps; intermediate values blend the two. |
+| **Bound X / Y / Z** | 0.00 | Optional per-axis wrap bounds around the center point. `0` disables bounding; positive values keep the repeated transform inside a finite range. |
+
+### Quantize controls
+
+Quantization can be applied to **any** motion shape, not just Lattice. It turns continuous motion into stepped motion in time, space, or both.
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| **Time / T** | 0.0 | Number of time slices across one time selection. `0` disables time quantization. Example: `16` updates the curve at 16 evenly spaced moments. |
+| **Q X / Q Y / Q Z** | 0.00 | Spatial rounding step per axis in normalised space. `0` disables rounding; `0.1` rounds that axis to the nearest 0.1. |
+
+Use this when you want any shape to behave like a sequenced spatial grid: the trajectory is sampled in discrete time and/or rounded to discrete positions.
 
 ### Reset button
 
@@ -216,7 +248,7 @@ Sets the name of the REAPER render region created at the time selection. Default
 
 The **Preset** bar at the top of the Settings panel lets you save, load, and delete complete parameter snapshots.
 
-A preset stores: all motion shape assignments, which sources are enabled, Scale, all XYZ spatial parameters (center and spread for X, Y, Z), Src offset, Steps/sec, Motion amount, Time Curve mode and exponent, Palindrome, Use Z motion, and all output options.
+A preset stores: all motion shape assignments, which sources are enabled, Scale, all XYZ spatial parameters (center and spread for X, Y, Z), Src offset, Steps/sec, Motion amount, all Lattice settings, all Quantize settings, Time Curve mode and exponent, Palindrome, Use Z motion, and all output options.
 
 ### Saving a preset
 
@@ -346,3 +378,4 @@ A 0.1-second time selection at 12 Steps/sec produces only 1 automation point. In
 - [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — for musically timed, cue-based movement between defined positions
 - [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/) — the encoder plugin this script targets
 - [Installation](/icst-ambisonics-plugins/02_installation/) — plugin setup
+- [Motion Map Setup](/icst-ambisonics-plugins/16_motion_map_setup/) — Python OSC setup for macOS and Windows

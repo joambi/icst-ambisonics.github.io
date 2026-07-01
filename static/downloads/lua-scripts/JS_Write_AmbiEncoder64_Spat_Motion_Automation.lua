@@ -23,6 +23,15 @@ local DEFAULT_ELEVATION_SPREAD = 50
 local DEFAULT_DISTANCE_CENTER = 0.75
 local DEFAULT_DISTANCE_SPREAD = 0.35
 local DEFAULT_MOTION_AMOUNT = 1.0
+local DEFAULT_LATTICE_RATE = 8.0
+local DEFAULT_LATTICE_SMOOTH = 1.0
+local DEFAULT_LATTICE_BOUND_X = 0.0
+local DEFAULT_LATTICE_BOUND_Y = 0.0
+local DEFAULT_LATTICE_BOUND_Z = 0.0
+local DEFAULT_TIME_QUANT_STEPS = 0.0
+local DEFAULT_SPACE_QUANT_X = 0.0
+local DEFAULT_SPACE_QUANT_Y = 0.0
+local DEFAULT_SPACE_QUANT_Z = 0.0
 local DEFAULT_USE_Z_MOTION = true
 local DEFAULT_CLEAR_EXISTING = true
 local DEFAULT_SET_LATCH = true
@@ -49,6 +58,7 @@ local AUTO_MOTION_SHAPES = {
   "bernoulli",
   "astroid",
   "epicycloid",
+  "lattice",
 }
 
 local function clamp(value, min_value, max_value)
@@ -156,6 +166,9 @@ local function normalize_motion_shape(shape)
     lemniscate_bernoulli = "bernoulli",
     astroid = "astroid",
     epicycloid = "epicycloid",
+    lattice = "lattice",
+    crystal = "lattice",
+    crystal_lattice = "lattice",
     lissajous = "lissajous",
     eight = "lissajous",
     acht = "lissajous",
@@ -454,6 +467,37 @@ local function normalized_xyz_to_aed(x, y, z)
   }
 end
 
+local function centered_wrap(value, bound)
+  if bound <= 0.000001 then return value end
+  local span = bound * 2
+  local shifted = (value + bound) % span
+  if shifted < 0 then shifted = shifted + span end
+  return shifted - bound
+end
+
+local function lattice_step_progress(t, rate, smooth)
+  if rate <= 0.000001 then return 0 end
+  local raw = t * rate
+  local step_index = math.floor(raw)
+  local frac = raw - step_index
+  local blend = clamp(smooth or 0, 0, 1)
+  if blend <= 0.000001 then
+    return step_index
+  end
+  return step_index + smoothstep(frac) * blend
+end
+
+local function quantize_progress(t, steps)
+  if steps <= 0.000001 then return t end
+  local scaled = t * steps
+  return math.floor(scaled) / steps
+end
+
+local function quantize_value(value, quantum)
+  if quantum <= 0.000001 then return value end
+  return math.floor((value / quantum) + 0.5) * quantum
+end
+
 local function parametric_shape_xy(shape, t)
   local angle = math.pi * 2 * t
   if shape == "heart_curve" then
@@ -548,6 +592,7 @@ local function xyz_motion_values(source, source_count, progress, settings)
   else
     t = t_pal                 -- linear — no warping
   end
+  t = quantize_progress(t, settings.time_quant_steps or DEFAULT_TIME_QUANT_STEPS)
   local two_pi = math.pi * 2
   local x_center = clamp(0.5 + (settings.azimuth_center / 360), 0, 1)
   local y_center = clamp(0.5 + (settings.elevation_center / 180), 0, 1)
@@ -556,8 +601,14 @@ local function xyz_motion_values(source, source_count, progress, settings)
   local y_amp = clamp(settings.elevation_spread / 180, 0, 1) * 0.5
   local use_z_motion = settings.use_z_motion ~= false
   local z_amp = use_z_motion and (settings.distance_spread * 0.5) or 0
+  local x_quant = clamp((settings.space_quant_x or DEFAULT_SPACE_QUANT_X) / 360, 0, 1)
+  local y_quant = clamp((settings.space_quant_y or DEFAULT_SPACE_QUANT_Y) / 180, 0, 1)
+  local z_quant = clamp(settings.space_quant_z or DEFAULT_SPACE_QUANT_Z, 0, 1)
   local planar_amp = math.min(x_amp, y_amp)
   local amount = safe_motion_amount(settings.motion_amount, x_center, y_center, z_center, x_amp, y_amp, z_amp)
+  local lattice_bound_x = clamp((settings.lattice_bound_x or 0) / 360, 0, 1)
+  local lattice_bound_y = clamp((settings.lattice_bound_y or 0) / 180, 0, 1)
+  local lattice_bound_z = clamp(settings.lattice_bound_z or 0, 0, 1)
   local x = x_center
   local y = y_center
   local z = z_center
@@ -570,6 +621,17 @@ local function xyz_motion_values(source, source_count, progress, settings)
     if pz then
       z = z_center + z_amp * pz
     end
+  elseif shape == "lattice" then
+    local step_progress = lattice_step_progress(t, settings.lattice_rate or DEFAULT_LATTICE_RATE, settings.lattice_smooth or DEFAULT_LATTICE_SMOOTH)
+    local dx = (x_amp * 2) * step_progress
+    local dy = (y_amp * 2) * step_progress
+    local dz = (z_amp * 2) * step_progress
+    dx = centered_wrap(dx, lattice_bound_x)
+    dy = centered_wrap(dy, lattice_bound_y)
+    dz = centered_wrap(dz, lattice_bound_z)
+    x = x_center + dx
+    y = y_center + dy
+    z = z_center + dz
   elseif shape == "line" then
     x = x_center - x_amp + (x_amp * 2) * t
     y = y_center - y_amp + (y_amp * 2) * t
@@ -638,6 +700,10 @@ local function xyz_motion_values(source, source_count, progress, settings)
   x = x_center + (x - x_center) * amount
   y = y_center + (y - y_center) * amount
   z = z_center + (z - z_center) * amount
+
+  x = quantize_value(x, x_quant)
+  y = quantize_value(y, y_quant)
+  z = quantize_value(z, z_quant)
 
   -- Elevation wrapping: when y exits [0,1], reflect over zenith/nadir and flip azimuth.
   -- Period = 2 in normalized space (0→1 = nadir→zenith, 1→2 = zenith→nadir from other side).
@@ -742,6 +808,19 @@ local function motion_values(source, source_count, progress, settings)
   end
 
   local xyz = xyz_motion_values(source, source_count, progress, settings)
+  local use_xyz_derived_aed = is_parametric_shape
+    or shape == "fourier_xyz"
+    or shape == "lattice"
+    or (settings.time_quant_steps or 0) > 0.000001
+    or (settings.space_quant_x or 0) > 0.000001
+    or (settings.space_quant_y or 0) > 0.000001
+    or (settings.space_quant_z or 0) > 0.000001
+  if use_xyz_derived_aed then
+    local aed = normalized_xyz_to_aed(xyz.x, xyz.y, xyz.z)
+    azimuth = aed.azimuth
+    elevation = aed.elevation
+    distance = aed.distance
+  end
   return {
     azimuth = wrap_degrees(azimuth),
     elevation = clamp(elevation, -90, 90),
@@ -766,6 +845,15 @@ local function normalize_external_settings(settings)
     distance_center = clamp(parse_number(settings.distance_center, DEFAULT_DISTANCE_CENTER), 0, 1),
     distance_spread = clamp(parse_number(settings.distance_spread, DEFAULT_DISTANCE_SPREAD), 0, 1),
     motion_amount = clamp(parse_number(settings.motion_amount, DEFAULT_MOTION_AMOUNT), 0, 8),
+    lattice_rate = clamp(parse_number(settings.lattice_rate, DEFAULT_LATTICE_RATE), 0, 64),
+    lattice_smooth = clamp(parse_number(settings.lattice_smooth, DEFAULT_LATTICE_SMOOTH), 0, 1),
+    lattice_bound_x = clamp(parse_number(settings.lattice_bound_x, DEFAULT_LATTICE_BOUND_X), 0, 720),
+    lattice_bound_y = clamp(parse_number(settings.lattice_bound_y, DEFAULT_LATTICE_BOUND_Y), 0, 360),
+    lattice_bound_z = clamp(parse_number(settings.lattice_bound_z, DEFAULT_LATTICE_BOUND_Z), 0, 1),
+    time_quant_steps = clamp(parse_number(settings.time_quant_steps, DEFAULT_TIME_QUANT_STEPS), 0, 128),
+    space_quant_x = clamp(parse_number(settings.space_quant_x, DEFAULT_SPACE_QUANT_X), 0, 720),
+    space_quant_y = clamp(parse_number(settings.space_quant_y, DEFAULT_SPACE_QUANT_Y), 0, 360),
+    space_quant_z = clamp(parse_number(settings.space_quant_z, DEFAULT_SPACE_QUANT_Z), 0, 1),
     source_phase_spread = clamp(parse_number(settings.source_phase_spread, 0), 0, 1),
     use_z_motion = settings.use_z_motion ~= false,
     palindrome = settings.palindrome == true,
@@ -835,6 +923,15 @@ local function collect_inputs()
     region_name = trim(fields[12]),
     overwrite_region = bool_from_text(fields[13], DEFAULT_OVERWRITE_REGION),
     motion_amount = clamp(parse_number(fields[14], DEFAULT_MOTION_AMOUNT), 0, 8),
+    lattice_rate = DEFAULT_LATTICE_RATE,
+    lattice_smooth = DEFAULT_LATTICE_SMOOTH,
+    lattice_bound_x = DEFAULT_LATTICE_BOUND_X,
+    lattice_bound_y = DEFAULT_LATTICE_BOUND_Y,
+    lattice_bound_z = DEFAULT_LATTICE_BOUND_Z,
+    time_quant_steps = DEFAULT_TIME_QUANT_STEPS,
+    space_quant_x = DEFAULT_SPACE_QUANT_X,
+    space_quant_y = DEFAULT_SPACE_QUANT_Y,
+    space_quant_z = DEFAULT_SPACE_QUANT_Z,
     use_z_motion = bool_from_text(fields[15], DEFAULT_USE_Z_MOTION),
   }
 end

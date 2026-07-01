@@ -220,18 +220,18 @@ local function computeAED(shape, t, src_idx, n_active, p)
   elseif shape == "arc_up" then
     local e = smoothstep(t_src)
     az = p.az_cen - az_a + p.az_spr * e
-    el = p.el_cen + el_a * math.sin(math.pi * t_src)
+    el = p.el_cen + el_a * math.sin(math.pi * t_src + phase * pi2)
     d  = p.z_cen  + z_a  * math.sin(math.pi * t_src)
   elseif shape == "arc_down" then
     local e = smoothstep(t_src)
     az = p.az_cen - az_a + p.az_spr * e
-    el = p.el_cen - el_a * math.sin(math.pi * t_src)
+    el = p.el_cen - el_a * math.sin(math.pi * t_src + phase * pi2)
     d  = p.z_cen  - z_a  * math.sin(math.pi * t_src)
   elseif shape == "s_curve" then
     local e = smoothstep(t_src)
     az = p.az_cen - az_a + p.az_spr * e
-    el = p.el_cen + el_a * math.sin(pi2 * (t_src - 0.25))
-    d  = p.z_cen  + z_a  * math.sin(pi2 * e)
+    el = p.el_cen + el_a * math.sin(pi2 * (t_src - 0.25 + phase * 0.5))
+    d  = p.z_cen  + z_a  * math.sin(pi2 * (e + phase))
   elseif shape == "step" then
     local steps   = 4
     local stepped = t_src >= 1 and 1 or math.floor(t_src * steps) / steps
@@ -1495,7 +1495,7 @@ local function draw()
 
   -- Title bar
   gfx.setfont(2, "Arial", 22)
-  draw_text("AmbiEncoder64 Motion Map   v2.0", GRID_X, 10, 0.88, 0.92, 0.94)
+  draw_text("AmbiEncoder64 Motion Map   v2.1", GRID_X, 10, 0.88, 0.92, 0.94)
   gfx.setfont(2, "Arial", 12)
   draw_text("Assign motion shapes to sources, preview trajectories, then write XYZ automation over the current time selection.",
             GRID_X, 40, 0.42, 0.50, 0.56)
