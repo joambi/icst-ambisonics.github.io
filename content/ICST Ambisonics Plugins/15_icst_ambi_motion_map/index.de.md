@@ -8,7 +8,7 @@ translationKey: motion-map-user-guide
 description: "Schritt-für-Schritt-Anleitung zum AmbiEncoder64 Motion Map GUI v2.0 — Installation, Source-Setup, Bewegungsformen, XYZ-Koordinaten, Scale, Source-Offset, Presets, Zeitkurve, Palindrom-Modus und Live-OSC-Vorschau."
 ---
 
-Niveau: Einsteiger–Fortgeschrittene | Zielgruppe: Komponist:in, Sound Designer:in, Spatial-Audio-Techniker:in.
+Niveau: Einsteiger–Fortgeschrittene | Zielgruppe: Komponist:in, Sound Designer:in, Spatial-Audio-Techniker:in. | **Version: v2.1**
 
 Das Motion Map GUI erzeugt algorithmische Raumbewegungen für bis zu 64 AmbiEncoder-Quellen und schreibt sie mit einem Klick als REAPER-Automation. Diese Anleitung führt Schritt für Schritt durch alle Funktionen — vom ersten Start bis zu fortgeschrittenen Techniken.
 
@@ -65,6 +65,8 @@ Eine detailliertere Anleitung inkl. Python-OSC-Setup für macOS und Windows biet
 
 ## 4. Die Oberfläche auf einen Blick
 
+![ICST Ambi Motion Map GUI v2.1 — beschriftete Übersicht](/images/ICST%20Motion%20Map%202.1.png)
+
 ![ICST Ambi Motion Map in Aktion](/images/ICST%20Motion%20Map%20Gif.gif)
 
 Das Fenster gliedert sich in drei Bereiche:
@@ -94,6 +96,8 @@ Der Zähler oben rechts im Settings-Bereich zeigt, wie viele Sources aktiv sind 
 ## 6. Bewegungsformen zuweisen
 
 Jede Zeile hat **17 Form-Buttons**. Klick auf einen Button weist diese Bewegungsform der Source zu. Das Zuweisen einer Form aktiviert die Source automatisch.
+
+![Übersicht aller 17 Bewegungsformen und ihrer Trajektorien](/images/motion-shapes-overview.svg)
 
 | Label | Form | Bewegungscharakter |
 |-------|------|--------------------|
@@ -206,6 +210,8 @@ Wenn die OSC-Vorschau aktiv ist, wird der gesendete Distanzwert als Einheitskuge
 
 Der Bereich **Time Curve** steuert, wie die Animation zeitlich verläuft. Drei Modi:
 
+![Zeitkurven-Vergleich — Linear, Exp, Log](/images/time-curve-comparison.svg)
+
 | Modus | Verhalten |
 |-------|-----------|
 | **Linear** | Gleichmäßige Geschwindigkeit — konstantes Tempo (Standard). |
@@ -288,6 +294,12 @@ Das GUI sendet nun konvertierte OSC-Positionsmeldungen mit ~30 Hz für jede akti
 /icst/ambi/sourceindex/aed <int index> <float azimuth> <float elevation> <float distance>
 ```
 
+Beispiel — Source 3, 45° Azimut, −15° Elevation, 2,5 m Distanz:
+
+```
+/icst/ambi/sourceindex/aed 3 45.0 -15.0 2.5
+```
+
 Die OSC-Distanz wird in physikalischen Metern gesendet (Einheitskugel-Radius × Scale).
 
 **Disconnect** klicken, um das OSC-Senden zu beenden.
@@ -337,6 +349,10 @@ Auf ein Source-Label im Grid klicken, um es auszuwählen und seine Koordinaten i
 - **Palindrome + Log**: schnell nach außen, sanft zurück — gut für reverbartige räumliche Ausklänge.
 - Vor dem Experimentieren immer ein Preset speichern.
 - Render-Regionen nach Szenen benennen: `Intro_BFormat`, `Strophe_BFormat`, `Outro_BFormat`.
+- **Lattice als räumliches Arpeggio:** Rate/T = 8–16, Slide = 0 → harte Sprünge zwischen Positionen wie ein räumlicher Sequencer.
+- **Lattice mit Bounds:** Bound X = 1.0, Bound Y = 0.5 → Sources bleiben in der Vorderhalbkugel, propagieren aber trotzdem weiter.
+- **Quantize für rhythmische Bewegung:** Time/T = 16 auf einer Circle-Form → 16 diskrete Positionen statt glattem Orbit — synchron zum Takt wenn Steps/sec zum Tempo passt.
+- **Lat + Quantize kombinieren:** Lattice definiert *wohin* die Sources springen; Quantize definiert *wann* — zusammen entstehen strukturierte, gitterbasierte Raumsequenzen.
 
 ---
 
@@ -367,6 +383,18 @@ Beide Lua-Dateien müssen im selben Verzeichnis liegen. Bei Verschiebung erneut 
 ### Steps/sec zu niedrig für kurze Regionen
 
 Eine 0,1-Sekunden-Time-Selection bei 12 Steps/sec ergibt nur 1 Automationspunkt. Steps/sec erhöhen oder Time Selection verlängern.
+
+### Lattice-Sources gleiten statt zu springen
+
+**Slide auf 0 setzen.** Bei Slide = 1 wird zwischen den Gitterpunkten interpoliert; bei Slide = 0 springt die Source sofort.
+
+### Lattice-Sources verlassen das Lautsprecherarray
+
+**Bound X / Y / Z aktivieren.** Den gewünschten Normalisierungsradius eintragen (z.B. `0.8` hält Sources innerhalb von 80 % der Kugel). Bei Bound = 0 akkumuliert sich der Offset unbegrenzt.
+
+### Quantize zeigt keine sichtbare Wirkung
+
+**Time/T muss größer als 0 sein.** Der Standardwert `0` deaktiviert die Zeit-Quantisierung. Auf die gewünschte Schrittanzahl setzen (z.B. `16`) und sicherstellen, dass Steps/sec hoch genug ist, damit jedes Zeitfenster mindestens einen Automationspunkt enthält.
 
 ---
 

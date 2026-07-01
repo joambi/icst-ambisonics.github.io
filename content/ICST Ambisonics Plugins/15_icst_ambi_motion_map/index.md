@@ -7,7 +7,7 @@ toc: true
 description: "Step-by-step guide to the AmbiEncoder64 Motion Map GUI v2.0 — installation, source setup, motion shapes, XYZ coordinates, Scale, Source offset, presets, time curve, palindrome mode, and live OSC preview."
 ---
 
-Level: Beginner–Intermediate | Audience: Composer, sound designer, spatial-audio technician.
+Level: Beginner–Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: v2.1**
 
 The Motion Map GUI generates algorithmic spatial movement for up to 64 AmbiEncoder sources and writes it as REAPER automation in one click. This guide walks you through every feature from first launch to advanced techniques.
 
@@ -64,6 +64,8 @@ If you see *"Bitte zuerst eine Loop/Time Selection setzen"* (message appears in 
 
 ## 4. The Interface at a Glance
 
+![ICST Ambi Motion Map GUI v2.1 — labelled overview](/images/ICST%20Motion%20Map%202.1.png)
+
 ![ICST Ambi Motion Map in action](/images/ICST%20Motion%20Map%20Gif.gif)
 
 The window is divided into three areas:
@@ -93,6 +95,8 @@ The counter in the top-right of the settings panel shows how many sources are cu
 ## 6. Assigning Motion Shapes
 
 Each row has **17 shape buttons**. Click one to assign that movement pattern to a source. Assigning a shape also enables the source automatically.
+
+![Overview of all 17 motion shapes and their trajectories](/images/motion-shapes-overview.svg)
 
 | Label | Shape | Movement Character |
 |-------|-------|--------------------|
@@ -205,6 +209,8 @@ When OSC Preview is active, the sent distance value equals the unit-sphere radiu
 
 The **Time Curve** section controls how the animation progresses through time. Three modes:
 
+![Time Curve comparison — Linear, Exp, Log](/images/time-curve-comparison.svg)
+
 | Mode | Behavior |
 |------|----------|
 | **Linear** | Constant speed — the shape unfolds at even pace (default). |
@@ -287,6 +293,12 @@ The GUI now sends converted OSC position messages at ~30 Hz for every enabled so
 /icst/ambi/sourceindex/aed <int index> <float azimuth> <float elevation> <float distance>
 ```
 
+Example — source 3 at 45° azimuth, −15° elevation, 2.5 m distance:
+
+```
+/icst/ambi/sourceindex/aed 3 45.0 -15.0 2.5
+```
+
 OSC distance is sent in physical metres (unit radius × Scale).
 
 Click **Disconnect** to stop sending OSC.
@@ -340,6 +352,10 @@ Click a source label in the grid to select it and see its coordinates in the pre
 - **Palindrome + Log** creates a movement that sweeps quickly outward and gently returns — good for reverb-like spatial tails.
 - Save a preset before experimenting so you can always return to a known state.
 - Name render regions to match scenes: `Intro_BFormat`, `Verse_BFormat`, `Outro_BFormat`.
+- **Lattice as a spatial arpeggio:** set Rate/T = 8–16 and Slide = 0 for hard stepped jumps between positions — like a spatial sequencer firing at each step.
+- **Lattice with Bounds:** keep Bound X = 1.0 and Bound Y = 0.5 to contain sources within the front hemisphere while still propagating.
+- **Quantize for rhythmic motion:** set Time/T = 16 on a Circle shape to turn a smooth orbit into 16 discrete positions — snaps to the beat if Steps/sec matches your tempo.
+- **Combine Lat + Quantize:** Lattice defines *where* sources jump; Quantize defines *when* — together they create structured, grid-based spatial sequences.
 
 ---
 
@@ -370,6 +386,18 @@ Both Lua files must be in the same directory. If you moved the GUI script after 
 ### Steps/sec too low for short regions
 
 A 0.1-second time selection at 12 Steps/sec produces only 1 automation point. Increase Steps/sec or lengthen the time selection.
+
+### Lattice sources glide instead of stepping
+
+Set **Slide to 0**. At Slide = 1 the motion interpolates smoothly between lattice steps; at Slide = 0 it snaps instantly.
+
+### Lattice sources drift out of the speaker array
+
+Enable **Bound X / Y / Z**. Set each bound to the normalised radius you want to stay within (e.g. `0.8` keeps sources within 80 % of the sphere). With bounds at `0` the lattice offset accumulates indefinitely.
+
+### Quantize has no visible effect
+
+**Time/T must be greater than 0** to activate time quantization. A value of `0` (the default) disables it. Set Time/T to the number of steps you want (e.g. `16`) and make sure Steps/sec is high enough that each time slice contains at least one automation point.
 
 ---
 
