@@ -172,6 +172,83 @@ You should see the AmbiEncoder_64 plugin display moving in a circle. If it does,
 
 ---
 
+## Windows — Step-by-Step Guide
+
+A consolidated walkthrough for Windows users. Follow these steps from download to first live preview without jumping between sections.
+
+### Step 1 — Download and place the files
+
+1. Download the [ICST Ambi Motion Map Bundle](/downloads/ICST_Ambi_Motion_Map_Bundle.zip) and unzip it.
+2. Open **File Explorer** and paste this path into the address bar:
+   ```
+   %APPDATA%\REAPER\Scripts\
+   ```
+   If the folder does not exist, create it.
+3. Copy **both** Lua files into this folder:
+   ```
+   JS_AmbiEncoder64_Motion_Map_GUI.lua
+   JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua
+   ```
+
+{{< notice warning >}}
+Both files must always stay in the **same folder**. The GUI locates the writer by looking in its own directory at runtime.
+{{< /notice >}}
+
+### Step 2 — Load the script into REAPER
+
+1. Open REAPER.
+2. Go to **Actions → Load ReaScript…**
+3. Navigate to `%APPDATA%\REAPER\Scripts\`
+4. Select `JS_AmbiEncoder64_Motion_Map_GUI.lua` and click **Open**.
+5. REAPER confirms: *"Script loaded successfully."*
+
+Only the GUI script is loaded — the writer is called automatically.
+
+### Step 3 — Install Python 3 (live OSC preview only)
+
+Skip this step if you only need to write automation without live preview.
+
+1. Go to [python.org/downloads](https://www.python.org/downloads/) and download the latest **Python 3.x** Windows installer (64-bit recommended).
+2. Run the installer. **Critical:** at the bottom of the first screen, check **"Add Python to PATH"** before clicking *Install Now*.
+3. After installation, open a **new** Command Prompt (`Win + R` → type `cmd` → Enter) and verify:
+   ```cmd
+   python3 --version
+   ```
+   If you see `Python 3.x.x`, Python is ready. If you see `'python3' is not recognized`, try:
+   ```cmd
+   python --version
+   ```
+   The Motion Map GUI tries both commands automatically.
+
+{{< notice warning >}}
+Do **not** install Python from the Microsoft Store. Store versions use sandboxed app paths that REAPER cannot invoke from a Lua script. Always use the [python.org](https://www.python.org/downloads/) installer.
+{{< /notice >}}
+
+### Step 4 — Configure OSC in REAPER
+
+1. In REAPER: **Options → Preferences → Control/OSC/web**
+2. Click **Add** and choose **OSC (Open Sound Control)** as the mode.
+3. Set **Local listen port** to `9001`.
+4. Leave *Allow binding…* enabled and click **OK**.
+
+### Step 5 — Allow Python through Windows Firewall
+
+When you click **Connect** in the Motion Map GUI for the first time, Windows Defender shows a security alert for `python.exe`. Click **Allow access** (Private networks is sufficient).
+
+If you accidentally clicked *Block*: open **Windows Defender Firewall → Allow an app or feature through Windows Defender Firewall**, find Python, and enable the Private checkbox.
+
+### Step 6 — Connect and test
+
+1. In REAPER, select a track that has **ICST AmbiEncoder_64** loaded as an FX.
+2. Set a time selection (loop range) on the timeline.
+3. Open the Actions list (press `?`), find `JS_AmbiEncoder64_Motion_Map_GUI`, and click **Run**.
+4. In the GUI: set **Host** to `127.0.0.1`, **Port** to `9001`, then click **Connect** — the status dot turns green.
+5. Enable source S0, assign shape **Circle**, and enable **Live Preview**.
+
+You should see the AmbiEncoder_64 plugin display moving in a circle. Windows setup is complete.
+
+---
+
 ## Troubleshooting
 
 ### "Script loaded, but writer not found" error when clicking Write
