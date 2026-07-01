@@ -215,6 +215,7 @@ local ui = {
   param_fields   = {},   -- hit-test table rebuilt each frame
   preset_open    = false,
   preset_scroll  = 0,
+  sliderDrag     = {active=false,id=nil,startMx=0,startVal=0,lo=0,hi=1,scale=0.01},
 }
 
 local osc = {
@@ -248,11 +249,22 @@ end
 -- SECTION 9: TRANSFORM ENGINE
 -- ============================================================
 
+-- Global transform variables (declared here so transform functions can close over them)
+local globalTransX = 0.0   -- translation: shifts all final positions uniformly
+local globalTransY = 0.0
+local globalTransZ = 0.0
+local globalMoveX  = 0.0   -- per-step movement added to all instance offsets
+local globalMoveY  = 0.0
+local globalMoveZ  = 0.0
+
 local function computeStepPosition(inst)
   local step=inst.currentStep
-  return vec3(n(inst.startX)+step*inst.effectiveOffset.x,
-              n(inst.startY)+step*inst.effectiveOffset.y,
-              n(inst.startZ)+step*inst.effectiveOffset.z)
+  local ex=inst.effectiveOffset.x+globalMoveX
+  local ey=inst.effectiveOffset.y+globalMoveY
+  local ez=inst.effectiveOffset.z+globalMoveZ
+  return vec3(n(inst.startX)+step*ex,
+              n(inst.startY)+step*ey,
+              n(inst.startZ)+step*ez)
 end
 
 local function applyRotation(pos,inst)
@@ -286,7 +298,8 @@ end
 local function computeTransformedPosition(inst)
   local pos=computeStepPosition(inst)
   pos=applyRotation(pos,inst); pos=applyScale(pos,inst); pos=applyBounds(pos,inst)
-  return pos
+  -- global translation: shift all instances uniformly
+  return vec3(pos.x+globalTransX, pos.y+globalTransY, pos.z+globalTransZ)
 end
 
 -- ============================================================
@@ -305,6 +318,9 @@ end
 -- 0 = steps/sec absolute, 1 = steps/beat (BPM sync)
 local rateMode   = 0
 local globalRateMult = 1.0   -- speed multiplier shown in status bar
+local globalDir    = 1          -- global direction: 1=forward, -1=reverse
+local globalPaused = false      -- pause: freeze steps, keep current positions
+
 
 local function shouldAdvanceStep(inst,dt,transport)
   local bpm=transport.bpm or 120
@@ -406,14 +422,15 @@ local function updateInstance(inst,inf,dt,transport)
   applyInfluenceToInstance(inst,inf)                                  -- 1
   if shouldAdvanceStep(inst,dt,transport) then                        -- 2
     local sc=tonumber(inst.stepCount) or 128
+    local d=inst.direction*globalDir
     if inst.repetitionMode==REP.INFINITE then
-      inst.currentStep=inst.currentStep+1
+      inst.currentStep=inst.currentStep+d
     elseif inst.repetitionMode==REP.FINITE then
-      inst.currentStep=min(inst.currentStep+1,sc-1)
+      inst.currentStep=clamp(inst.currentStep+d, 0, sc-1)
     elseif inst.repetitionMode==REP.PINGPONG then
-      inst.currentStep=inst.currentStep+inst.direction
-      if inst.currentStep>=sc-1 then inst.currentStep=sc-1;inst.direction=-1
-      elseif inst.currentStep<=0 then inst.currentStep=0;inst.direction=1 end
+      inst.currentStep=inst.currentStep+d
+      if inst.currentStep>=sc-1 then inst.currentStep=sc-1;inst.direction=inst.direction*-1
+      elseif inst.currentStep<=0 then inst.currentStep=0;inst.direction=inst.direction*-1 end
     end
   end
   local pos=computeStepPosition(inst)                                 -- 3
@@ -426,6 +443,7 @@ local function updateInstance(inst,inf,dt,transport)
 end
 
 local function updateAllInstances(dt)
+  if globalPaused then return end
   local transport=getTransportState()
   local influences=accumulateInfluences()
   for i,inst in ipairs(instances) do
@@ -632,6 +650,7 @@ local function pCheck(label,inst,key,rx,ry)
     w=14,h=14,checkbox=true,inst=inst}
 end
 
+
 local function pHeader(title,rx,ry,rw)
   setColor(0.13,0.17,0.26); fillRect(rx,ry,rw,17)
   setColor(0.36,0.83,0.62); drawStr(title, rx+4, ry+2)
@@ -829,8 +848,78 @@ local function drawStatusBar(bx,by,bw,bh)
   setColor(bpmOn and 0.55 or 0.45, bpmOn and 1.0 or 0.65, bpmOn and 1.0 or 0.65)
   drawStr(bpmOn and "BPM ✓" or "BPM", bpmx+6, r2y+5)
 
+  -- Global direction toggle button
+  local dirx=bpmx+bpmw+6; local dirw=42
+  local dirRev=(globalDir<0)
+  setColor(dirRev and 0.22 or 0.10, dirRev and 0.10 or 0.12, dirRev and 0.10 or 0.20)
+  fillRect(dirx,r2y+2,dirw,18)
+  setColor(dirRev and 0.90 or 0.28, dirRev and 0.35 or 0.55, dirRev and 0.30 or 0.90)
+  drawRect(dirx,r2y+2,dirw,18)
+  setColor(1,1,1); drawStr(dirRev and "< Rev" or "> Fwd", dirx+4, r2y+5)
+
+  -- Pause button
+  local psx=dirx+dirw+6; local psw=44
+  setColor(globalPaused and 0.30 or 0.11, globalPaused and 0.24 or 0.13, globalPaused and 0.08 or 0.10)
+  fillRect(psx,r2y+2,psw,18)
+  setColor(globalPaused and 1.0 or 0.55, globalPaused and 0.80 or 0.55, globalPaused and 0.10 or 0.20)
+  drawRect(psx,r2y+2,psw,18)
+  setColor(globalPaused and 1 or 0.80, globalPaused and 0.85 or 0.80, globalPaused and 0.10 or 0.30)
+  drawStr(globalPaused and "▶ Play" or "‖ Pause", psx+4, r2y+5)
+
+  -- Stop button
+  local stx=psx+psw+4; local stw=36
+  setColor(0.22,0.10,0.10); fillRect(stx,r2y+2,stw,18)
+  setColor(0.80,0.28,0.28); drawRect(stx,r2y+2,stw,18)
+  setColor(0.95,0.40,0.40); drawStr("■ Stop", stx+4, r2y+5)
+
   -- Status message (rest of row 2)
-  setColor(0.35,0.35,0.45); drawStr(statusMsg, bpmx+bpmw+12, r2y+6)
+  setColor(0.35,0.35,0.45); drawStr(statusMsg, stx+stw+10, r2y+6)
+
+  -- ── Row 3: Global Pos (translation) + Global Move (direction) ──
+  local r3y=by+54
+  setColor(0.12,0.12,0.17); fillRect(bx,r3y,bw,1)  -- divider
+
+  -- Slider helper: draws a scrubber bar with fill from centre
+  local function sb3slider(id, val, lbl, lx, ly, fw, lo, hi)
+    local hot=(ui.sliderDrag.active and ui.sliderDrag.id==id)
+    -- label
+    setColor(hot and 0.70 or 0.45, hot and 0.70 or 0.45, hot and 0.80 or 0.58)
+    drawStr(lbl, lx, ly+5)
+    local sx=lx+measureStr(lbl)+4
+    -- track
+    setColor(0.09,0.10,0.16); fillRect(sx,ly+2,fw,18)
+    -- fill from centre
+    local clamped=clamp(val,lo,hi)
+    local t=(clamped-lo)/(hi-lo)
+    local midx=sx+fw*0.5; local ex=sx+fw*t
+    if val>=0 then
+      setColor(hot and 0.30 or 0.18, hot and 0.80 or 0.52, hot and 0.65 or 0.48)
+      if ex>midx then fillRect(midx,ly+5,ex-midx,12) end
+    else
+      setColor(hot and 0.80 or 0.52, hot and 0.35 or 0.25, hot and 0.30 or 0.20)
+      if midx>ex then fillRect(ex,ly+5,midx-ex,12) end
+    end
+    -- centre tick
+    setColor(0.28,0.28,0.38); fillRect(midx-1,ly+3,2,16)
+    -- border
+    setColor(hot and 0.45 or 0.22, hot and 0.90 or 0.38, hot and 0.80 or 0.52)
+    drawRect(sx,ly+2,fw,18)
+    -- value text
+    setColor(hot and 1 or 0.88, hot and 1 or 0.88, 1)
+    drawStr(string.format("%.3f",val), sx+4, ly+5)
+  end
+
+  local fw3=72  -- slider width
+  local lx=bx+8
+  setColor(0.50,0.50,0.62); drawStr("Pos", lx, r3y+5); lx=lx+28
+  sb3slider("gTX",globalTransX,"X",lx,r3y,fw3,-2,2); lx=lx+measureStr("X")+4+fw3+5
+  sb3slider("gTY",globalTransY,"Y",lx,r3y,fw3,-2,2); lx=lx+measureStr("Y")+4+fw3+5
+  sb3slider("gTZ",globalTransZ,"Z",lx,r3y,fw3,-2,2); lx=lx+measureStr("Z")+4+fw3+16
+
+  setColor(0.50,0.50,0.62); drawStr("Move", lx, r3y+5); lx=lx+40
+  sb3slider("gMX",globalMoveX,"X",lx,r3y,fw3,-2,2); lx=lx+measureStr("X")+4+fw3+5
+  sb3slider("gMY",globalMoveY,"Y",lx,r3y,fw3,-2,2); lx=lx+measureStr("Y")+4+fw3+5
+  sb3slider("gMZ",globalMoveZ,"Z",lx,r3y,fw3,-2,2)
 
   -- version (bottom-right of row 1)
   local vs=SCRIPT_VERSION
@@ -1265,6 +1354,12 @@ local function commitFocus()
   elseif ui.focus_field=="globalRate" then
     local v=tonumber(ui.focus_text)
     if v then globalRateMult=clamp(v, 0.01, 16) end
+  elseif ui.focus_field=="gTX" then local v=tonumber(ui.focus_text); if v then globalTransX=v end
+  elseif ui.focus_field=="gTY" then local v=tonumber(ui.focus_text); if v then globalTransY=v end
+  elseif ui.focus_field=="gTZ" then local v=tonumber(ui.focus_text); if v then globalTransZ=v end
+  elseif ui.focus_field=="gMX" then local v=tonumber(ui.focus_text); if v then globalMoveX=v end
+  elseif ui.focus_field=="gMY" then local v=tonumber(ui.focus_text); if v then globalMoveY=v end
+  elseif ui.focus_field=="gMZ" then local v=tonumber(ui.focus_text); if v then globalMoveZ=v end
   else
     local inst=instances[selectedIdx]
     local key=ui.focus_key
@@ -1278,7 +1373,7 @@ local function commitFocus()
 end
 
 local WIN_W, WIN_H       -- updated each frame from gfx
-local STAT_H = 54  -- row1=28px + row2=26px
+local STAT_H = 80  -- row1=28px + row2=26px + row3=26px
 local PREV_H_FRAC = 0.45  -- fraction of right column for lattice preview
 
 local function handleInput()
@@ -1333,6 +1428,23 @@ local function handleInput()
   local prev_cx=right_x+right_w*0.5; local prev_cy=prev_h*0.55
   local iso_scale=min(right_w,prev_h)*0.17
   local shift_held=(gfx.mouse_cap&8)==8
+
+  -- ── Slider drag update ─────────────────────────────────────────
+  if ui.sliderDrag.active then
+    if lmb then
+      local sd=ui.sliderDrag
+      local delta=(mx-sd.startMx)*sd.scale
+      local newVal=clamp(sd.startVal+delta, sd.lo, sd.hi)
+      if     sd.id=="gTX" then globalTransX=newVal
+      elseif sd.id=="gTY" then globalTransY=newVal
+      elseif sd.id=="gTZ" then globalTransZ=newVal
+      elseif sd.id=="gMX" then globalMoveX=newVal
+      elseif sd.id=="gMY" then globalMoveY=newVal
+      elseif sd.id=="gMZ" then globalMoveZ=newVal end
+    else
+      ui.sliderDrag.active=false
+    end
+  end
 
   if drag.active then
     if lmb then
@@ -1499,6 +1611,54 @@ local function handleInput()
       statusMsg = rateMode==1 and "BPM sync ON — 1 step = 1 beat"
                                or "BPM sync OFF — steps/sec"
     end
+    -- Global direction toggle
+    local dirx_=bpmx+bpmw+6; local dirw_=42
+    if hit(mx,my,dirx_,r2y+2,dirw_,18) then
+      commitFocus()
+      globalDir = globalDir * -1
+      statusMsg = globalDir==1 and "Direction: Forward" or "Direction: Reverse"
+    end
+    -- Pause toggle
+    local psx_=dirx_+dirw_+6; local psw_=44
+    if hit(mx,my,psx_,r2y+2,psw_,18) then
+      commitFocus()
+      globalPaused = not globalPaused
+      statusMsg = globalPaused and "Paused" or "Playing"
+    end
+    -- Stop (reset all to step 0)
+    local stx_=psx_+psw_+4; local stw_=36
+    if hit(mx,my,stx_,r2y+2,stw_,18) then
+      commitFocus()
+      for _,inst in ipairs(instances) do resetInstance(inst) end
+      globalPaused=false
+      statusMsg="Stopped — all instances reset"
+    end
+
+    -- Row 3: Global Pos + Move sliders
+    local r3y=sb_y+54; local fw3=72
+    local function r3sliderHit(id, lbl, lx, lo, hi, scale)
+      local sx=lx+measureStr(lbl)+4
+      if hit(mx,my,sx,r3y+2,fw3,18) then
+        commitFocus()
+        local cur
+        if     id=="gTX" then cur=globalTransX
+        elseif id=="gTY" then cur=globalTransY
+        elseif id=="gTZ" then cur=globalTransZ
+        elseif id=="gMX" then cur=globalMoveX
+        elseif id=="gMY" then cur=globalMoveY
+        elseif id=="gMZ" then cur=globalMoveZ end
+        ui.sliderDrag={active=true,id=id,startMx=mx,startVal=cur or 0,lo=lo,hi=hi,scale=scale}
+        return true
+      end
+      return false
+    end
+    local lx3=8+28  -- after "Pos" label (bx=0)
+    r3sliderHit("gTX","X",lx3,-2,2,0.01); lx3=lx3+measureStr("X")+4+fw3+5
+    r3sliderHit("gTY","Y",lx3,-2,2,0.01); lx3=lx3+measureStr("Y")+4+fw3+5
+    r3sliderHit("gTZ","Z",lx3,-2,2,0.01); lx3=lx3+measureStr("Z")+4+fw3+16+40
+    r3sliderHit("gMX","X",lx3,-2,2,0.01); lx3=lx3+measureStr("X")+4+fw3+5
+    r3sliderHit("gMY","Y",lx3,-2,2,0.01); lx3=lx3+measureStr("Y")+4+fw3+5
+    r3sliderHit("gMZ","Z",lx3,-2,2,0.01)
 
     -- Preset quick-select buttons (presets 1-4)
     local presets={"Cubic","Tetragonal","Hexagonal","RandomSwarm"}
