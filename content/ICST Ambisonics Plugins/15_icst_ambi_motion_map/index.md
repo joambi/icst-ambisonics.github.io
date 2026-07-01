@@ -132,7 +132,7 @@ This shape is useful for crystalline motion, staircase movement in depth, repeat
 
 | Button | Effect |
 |--------|--------|
-| **Auto** | Assigns all 16 shapes in round-robin order across all 64 sources |
+| **Auto** | Assigns all 17 shapes in round-robin order across all 64 sources |
 | **Random** | Assigns a random shape to every source |
 | **All Line** | Sets all active sources to Line |
 | **All Circle** | Sets all active sources to Circle |
@@ -378,3 +378,4 @@ A 0.1-second time selection at 12 Steps/sec produces only 1 automation point. In
 - [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — for musically timed, cue-based movement between defined positions
 - [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/) — the encoder plugin this script targets
 - [Installation](/icst-ambisonics-plugins/02_installation/) — plugin setup
+- [Motion Map Setup](/icst-ambisonics-plugins/16_motion_map_setup/) — Python OSC setup for macOS and Windows

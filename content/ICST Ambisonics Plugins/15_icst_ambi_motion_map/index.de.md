@@ -133,7 +133,7 @@ Diese Form eignet sich für kristalline Bewegung, stufenartige Tiefenbewegung, w
 
 | Button | Effekt |
 |--------|--------|
-| **Auto** | Weist alle 16 Formen im Round-Robin auf alle 64 Sources zu |
+| **Auto** | Weist alle 17 Formen im Round-Robin auf alle 64 Sources zu |
 | **Random** | Weist jeder Source eine zufällige Form zu |
 | **All Line** | Setzt alle aktiven Sources auf Line |
 | **All Circle** | Setzt alle aktiven Sources auf Circle |
@@ -282,7 +282,13 @@ Der OSC-Preview-Bereich sendet Live-Positionsdaten an den AmbiEncoder, während 
 3. **Connect** klicken. Der Status-Punkt wird grün, wenn der Python-Helfer läuft.
 4. **Live Preview (sends AED to AmbiEncoder)** aktivieren.
 
-Das GUI sendet nun konvertierte OSC-Positionsmeldungen mit ~30 Hz für jede aktivierte Source. Die OSC-Distanz wird in physikalischen Metern gesendet (Einheitskugel-Radius × Scale).
+Das GUI sendet nun konvertierte OSC-Positionsmeldungen mit ~30 Hz für jede aktivierte Source über die Adresse:
+
+```
+/icst/ambi/sourceindex/aed <int index> <float azimuth> <float elevation> <float distance>
+```
+
+Die OSC-Distanz wird in physikalischen Metern gesendet (Einheitskugel-Radius × Scale).
 
 **Disconnect** klicken, um das OSC-Senden zu beenden.
 
@@ -369,3 +375,4 @@ Eine 0,1-Sekunden-Time-Selection bei 12 Steps/sec ergibt nur 1 Automationspunkt.
 - [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — für musikalisch getaktete, cue-basierte Bewegungen
 - [ICST AmbiEncoder_64](/icst-ambisonics-plugins/01_icst_ambi_encoder/) — das Encoder-Plugin
 - [Installation](/icst-ambisonics-plugins/02_installation/) — Plugin-Einrichtung
+- [Motion Map Einrichtung](/icst-ambisonics-plugins/16_motion_map_setup/) — Python-OSC-Setup für macOS und Windows
