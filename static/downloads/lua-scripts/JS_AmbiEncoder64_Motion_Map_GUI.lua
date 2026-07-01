@@ -1,12 +1,13 @@
 -- @description AmbiEncoder64 Motion Map GUI
 -- @author JS / Codex
--- @version 2.0
+-- @version 2.1
 -- @about
 --   Improved GUI for assigning motion shapes per ICST AmbiEncoder_64 source index,
 --   with live AZ/EL trajectory preview, anti-aliased icons, and color-coded source trails.
 --   Writes XYZ automation and a render region via JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua.
 
 local SCRIPT_NAME = "AmbiEncoder64 Motion Map GUI"
+local SCRIPT_VERSION = "v2.1"
 
 -- ── Motion shapes ────────────────────────────────────────────────────────────
 local MOTIONS = {
@@ -697,7 +698,7 @@ end
 local _sld = { id = nil, sx = 0, sv = 0 }   -- active drag state
 
 local function draw_slider(id, label, x, y, w, min_v, max_v, is_int)
-  local VAL_W   = 46            -- pixels reserved on the right for the value text
+  local VAL_W   = 54            -- pixels reserved on the right for the value text
   local track_w = w - VAL_W
   local bx, by, bh = x, y + 16, 22
   local active = (state.focus == id)
@@ -994,6 +995,7 @@ local PREV_X = 856
 local PREV_Y = 56
 local PREV_W = 568
 local PREV_H = 340
+local LEFT_PANEL_W = PREV_X - GRID_X - 28
 
 local function preview_params()
   -- Convert XYZ scale-unit values → internal (az/el degrees, z 0-1)
@@ -1017,7 +1019,7 @@ local function draw_trajectory_preview()
 
   -- Title
   gfx.setfont(2, "Arial", 12)
-  draw_text("TRAJECTORY PREVIEW", PREV_X + 8, PREV_Y + 7, 0.40, 0.50, 0.58)
+  draw_text("TRAJECTORY PREVIEW", PREV_X + 10, PREV_Y + 7, 0.44, 0.54, 0.62)
   gfx.setfont(1, "Arial", 16)
 
   -- Plot area
@@ -1041,7 +1043,7 @@ local function draw_trajectory_preview()
     if major then
       local disp_x = az * _sc / 180
       gfx.setfont(2, "Arial", 11)
-      draw_text(string.format("%.4g", disp_x), gx - 10, py + ph + 3, 0.22, 0.29, 0.38)
+      draw_text(string.format("%.4g", disp_x), gx - 10, py + ph + 3, 0.28, 0.35, 0.44)
       gfx.setfont(1, "Arial", 16)
     end
   end
@@ -1053,7 +1055,7 @@ local function draw_trajectory_preview()
     gfx.line(px, gy, px + pw, gy, 0)
     local disp_y = el * _sc / 90
     gfx.setfont(2, "Arial", 11)
-    draw_text(string.format("%.4g", disp_y), px - 28, gy - 6, 0.22, 0.29, 0.38)
+    draw_text(string.format("%.4g", disp_y), px - 28, gy - 6, 0.28, 0.35, 0.44)
     gfx.setfont(1, "Arial", 16)
   end
 
@@ -1061,8 +1063,8 @@ local function draw_trajectory_preview()
   local _ax_x = _sc > 1 and "X (m)" or "X"
   local _ax_y = _sc > 1 and "Y (m)" or "Y"
   gfx.setfont(2, "Arial", 11)
-  draw_text(_ax_x, cx - 14, py + ph + 16, 0.22, 0.29, 0.38)
-  draw_text(_ax_y, px - 26, py - 1, 0.22, 0.29, 0.38)
+  draw_text(_ax_x, cx - 14, py + ph + 16, 0.32, 0.40, 0.48)
+  draw_text(_ax_y, px - 26, py - 1, 0.32, 0.40, 0.48)
   gfx.setfont(1, "Arial", 16)
 
   -- Collect enabled sources
@@ -1142,20 +1144,24 @@ end
 -- ── Presets ───────────────────────────────────────────────────────────────────
 local function set_motion_for_range(a, b, motion)
   for s = a, b do state.motion_by_source[s] = motion end
+  state.status = "Assigned " .. motion_label(motion) .. " to S" .. (a - 1) .. "–" .. (b - 1)
 end
 local function set_source_enabled(a, b, v)
   for s = a, b do state.source_enabled[s] = v end
+  state.status = (v and "Enabled " or "Disabled ") .. "S" .. (a - 1) .. "–" .. (b - 1)
 end
 local function set_auto_map()
   for s = 1, 64 do
     state.motion_by_source[s] = MOTIONS[((s - 1) % #MOTIONS) + 1].id
   end
+  state.status = "Auto preset applied"
 end
 local function set_random()
   math.randomseed(math.floor(reaper.time_precise() * 100000))
   for s = 1, 64 do
     state.motion_by_source[s] = MOTIONS[math.random(1, #MOTIONS)].id
   end
+  state.status = "Random preset applied"
 end
 local function clear_motion_selection()
   for s = 1, 64 do
@@ -1167,9 +1173,10 @@ end
 
 local function draw_presets()
   local x = GRID_X
-  local y = GRID_Y + MAX_ROWS * ROW_H + 8
+  local y = GRID_Y + MAX_ROWS * ROW_H + 16
+  draw_rect(x, y - 12, LEFT_PANEL_W, 1, 0.14, 0.18, 0.22, 1, true)
   gfx.setfont(2, "Arial", 12)
-  draw_text("PRESETS", x, y - 18, 0.40, 0.50, 0.58)
+  draw_text("PRESETS", x, y - 28, 0.40, 0.50, 0.58)
   gfx.setfont(1, "Arial", 16)
 
   if draw_button("Auto",        x,       y, 66, 28, false, false) then set_auto_map() end
@@ -1192,10 +1199,10 @@ end
 local function draw_osc_left()
   local x = GRID_X
   -- sits just below the two preset button rows
-  local y = GRID_Y + MAX_ROWS * ROW_H + 84   -- 8 (base) + 28 (row1) + 6 + 26 (row2) + 16 gap
+  local y = GRID_Y + MAX_ROWS * ROW_H + 94   -- extra gap below presets for cleaner separation
 
   -- thin separator
-  draw_rect(x, y, 620, 1, 0.14, 0.18, 0.22, 1, true)
+  draw_rect(x, y, LEFT_PANEL_W, 1, 0.14, 0.18, 0.22, 1, true)
   y = y + 8
 
   gfx.setfont(2, "Arial", 12)
@@ -1262,14 +1269,16 @@ end
 local function draw_settings()
   local x     = SET_X
   local y     = SET_Y
-  local col_w = 126
+  local col_w = 130
 
   local cnt = 0
   for s = 1, 64 do if state.source_enabled[s] then cnt = cnt + 1 end end
 
   gfx.setfont(2, "Arial", 12)
   draw_text("SETTINGS", x, y, 0.40, 0.50, 0.58)
-  draw_text(tostring(cnt) .. " / 64 active", x + PREV_W - 88, y, 0.65, 0.74, 0.72)
+  local active_label = tostring(cnt) .. " / 64 active"
+  local active_w = gfx.measurestr(active_label)
+  draw_text(active_label, x + PREV_W - active_w - 6, y, 0.65, 0.74, 0.72)
   gfx.setfont(1, "Arial", 16)
 
   -- ── Preset bar ──────────────────────────────────────────────────────────────
@@ -1291,13 +1300,13 @@ local function draw_settings()
   -- Scrollable preset chip row
   y = y + 40
   local list         = preset_list_get()
-  local chips_visible = 6
-  local chip_w       = 80
+  local chips_visible = 5
+  local chip_w       = 92
   local chip_gap     = 4
   local max_scroll   = math.max(0, #list - chips_visible)
   state.preset_list_scroll = math.max(0, math.min(max_scroll, state.preset_list_scroll))
   -- ◄ ► scroll buttons
-  local arr_x = x + chips_visible * (chip_w + chip_gap)
+  local arr_x = x + chips_visible * (chip_w + chip_gap) + 6
   if draw_button("◄", arr_x,      y, 22, 20, false, state.preset_list_scroll == 0) then
     state.preset_list_scroll = math.max(0, state.preset_list_scroll - 1)
   end
@@ -1323,7 +1332,9 @@ local function draw_settings()
   y = y + 8
 
   -- Scale input (room size in metres; rescales stored XYZ values when committed)
-  draw_input("scale", "Scale (m)  ·  1–1000  ·  OSC dist × Scale", x, y, 110)
+  draw_text("Scale (m)", x, y, 0.56, 0.62, 0.66)
+  draw_text("1–1000  ·  OSC dist x Scale", x + 88, y, 0.34, 0.40, 0.46)
+  draw_input("scale", "", x, y, 110)
   -- Rescale stored coords when user finishes editing (focus leaves scale box)
   if state.focus ~= "scale" then
     local new_s = tonumber(state.scale)
@@ -1371,7 +1382,7 @@ local function draw_settings()
     end
   end
   local sld_x = btn_lbl_x + #modes * (btn_w + 4) + 8
-  local sld_w = 110
+  local sld_w = 96
   local pal_x = sld_x + sld_w + 10      -- Palindrome toggle right of n-slider
   if state.time_curve_mode == "linear" then
     draw_text("n/a", sld_x, y + 5, 0.25, 0.28, 0.32)
@@ -1495,7 +1506,10 @@ local function draw()
 
   -- Title bar
   gfx.setfont(2, "Arial", 22)
-  draw_text("AmbiEncoder64 Motion Map   v2.1", GRID_X, 10, 0.88, 0.92, 0.94)
+  draw_text("AmbiEncoder64 Motion Map", GRID_X, 10, 0.88, 0.92, 0.94)
+  local ver_x = GRID_X + 344
+  gfx.setfont(2, "Arial", 20)
+  draw_text(SCRIPT_VERSION, ver_x, 11, 0.58, 0.64, 0.70)
   gfx.setfont(2, "Arial", 12)
   draw_text("Assign motion shapes to sources, preview trajectories, then write XYZ automation over the current time selection.",
             GRID_X, 40, 0.42, 0.50, 0.56)

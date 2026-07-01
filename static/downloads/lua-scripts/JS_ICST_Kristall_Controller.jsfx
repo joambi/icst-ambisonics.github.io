@@ -1,0 +1,21 @@
+desc:ICST Kristall Controller
+// Control surface for JS_ICST_Kristall_Motion_Map.lua
+// The Lua GUI script reads these sliders each frame.
+// Audio passes through unchanged.
+
+// ── Preset & Motion ───────────────────────────────────────────
+slider1:0<0,4,1{None,Cubic,Tetragonal,Hexagonal,RandomSwarm}>Preset Trigger
+slider2:2<0.1,16,0.01>Rate
+slider3:0<0,1,1{Steps/sec (absolute),Steps/beat (BPM sync)}>Rate Mode
+// ── Smoothing ─────────────────────────────────────────────────
+slider4:1<0,1,1{Off,On}>Smoothing
+slider5:0.08<0,2,0.001>Glide Time
+
+@slider
+// No processing — Lua reads params via TrackFX_GetParam
+
+@block
+
+@sample
+outl = inl;
+outr = inr;

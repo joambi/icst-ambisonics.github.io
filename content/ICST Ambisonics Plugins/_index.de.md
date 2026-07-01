@@ -8,13 +8,13 @@ cascade:
   type: docs
 ---
 
-Die **ICST Ambisonics Plugins** sind eine umfassende Produktionsumgebung fuer **Higher Order Ambisonics (HOA)**. Sie sind auf raeumliche Komposition, Gruppenbewegung, flexible Lautsprecher-Layouts und mehrkanalige Produktionsworkflows ausgelegt.
+Die **ICST Ambisonics-Plugins bilden eine umfassende Produktionsumgebung für Higher-Order Ambisonics (HOA)**. Sie sind auf räumliche Komposition, Gruppenbewegung, flexible Lautsprecherlayouts und mehrkanalige Produktionsworkflows ausgelegt.
 
-Die Suite unterstuetzt bis zu **64 Quellen**, die in **B-Format / HOA** enkodiert und auf frei definierbare Lautsprecher-Setups dekodiert werden koennen. Zentrale Module sind **MonoEncoder**, **StereoEncoder**, **MultiEncoder_64**, **AmbiDecoder** und **MultiDecoder**.
+Die Suite unterstützt bis zu **64 Quellen**, die in **B-Format / HOA** enkodiert und auf frei definierbare Lautsprecher-Setups dekodiert werden koennen. Zentrale Module sind **MonoEncoder**, **StereoEncoder**, **MultiEncoder_64**, **AmbiDecoder** und **MultiDecoder**.
 
-Einen eigenen **BinauralDecoder** stellt ICST bewusst nicht bereit, da es bereits sehr gute freie Loesungen gibt. Empfohlen werden etwa der **IEM BinauralDecoder** oder das freie **dearVR AMBI MICRO** Ambisonics-Plugin.
+Einen eigenen **BinauralDecoder** stellt ICST bewusst nicht bereit, da es bereits sehr gute freie Lösungen gibt. Empfohlen werden etwa der **IEM BinauralDecoder** oder das kostenlose **dearVR AMBI MICRO** Ambisonics-Plugin.
 
-Ein wichtiges Merkmal ist die direkte Verbindung von **Panning, Automation und OSC-Steuerung**. In **REAPER** entsteht so ein flexibler Workflow fuer kompositorische und produktionstechnische Arbeit bis zur **7. Ordnung**.
+Ein wichtiges Merkmal ist die direkte Verbindung zwischen **Panning, Automation und OSC-Steuerung**. In **REAPER** entsteht so ein flexibler Workflow für kompositorische und produktionstechnische Arbeit bis zur **7. Ordnung**.
 
 <div class="hero__links" style="margin: 1.4rem 0 0.6rem;">
   <a class="hero__link hero__link--primary" href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank" rel="noopener noreferrer">
