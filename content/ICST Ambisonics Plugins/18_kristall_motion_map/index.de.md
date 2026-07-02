@@ -8,7 +8,7 @@ translationKey: kristall-motion-map
 description: "Installation und Benutzerhandbuch für JS_ICST_Kristall_Motion_Map.lua — ein eigenständiges REAPER-Skript, das bis zu 64 AmbiEncoder-Quellen durch einen 3D-Kristallgitter-Schritt-Sequenzer mit Echtzeit-GUI, OSC-Ausgabe und benannten Presets bewegt."
 ---
 
-Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 0.1.0**
+Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 0.2.0**
 
 ICST Kristall Motion Map ist ein **eigenständiges REAPER-Lua-Skript** mit grafischer Echtzeit-Oberfläche. Es ordnet bis zu 64 AmbiEncoder-Quellen als Punkte in einem 3D-Kristallgitter an und bewegt sie mit einem Schritt-Sequenzer durch den Raum. Die Bewegung kann live in der isometrischen Vorschau verfolgt, per OSC an einen AmbiEncoder gesendet und mit instanzspezifischen Transformationen, Quantisierung, Glättung und Interaktion gestaltet werden.
 
@@ -24,9 +24,15 @@ ICST Kristall Motion Map ist ein **eigenständiges REAPER-Lua-Skript** mit grafi
 
 ## 2. Installation
 
-### Schritt 1 — Skript herunterladen
+### Schritt 1 — Bundle herunterladen
 
-`JS_ICST_Kristall_Motion_Map.lua` von der [Downloads-Seite](/icst-ambisonics-plugins/08_downloads/) herunterladen und beliebig auf dem Computer ablegen, z. B. `~/REAPER/Scripts/`.
+**[ICST_Kristall_Motion_Map_Bundle.zip](/downloads/lua-scripts/ICST_Kristall_Motion_Map_Bundle.zip)** herunterladen (auch auf der [Downloads-Seite](/icst-ambisonics-plugins/08_downloads/) verfügbar) und entpacken, z. B. nach `~/REAPER/Scripts/ICST_Kristall_Motion_Map_Bundle/`.
+
+Das Bundle enthält:
+
+- `scripts/JS_ICST_Kristall_Motion_Map.lua` — Hauptskript
+- `jsfx/JS_ICST_Kristall_Controller.jsfx` — optionale MIDI/JSFX-Steuereinheit
+- `README.md` — Schnellstart-Anleitung
 
 ### Schritt 2 — Als ReaScript laden
 
@@ -49,7 +55,13 @@ Diesen Launcher als ReaScript laden. Zum Neuladen nach einer Skriptänderung das
 
 ## 3. Die Oberfläche auf einen Blick
 
+![ICST Kristall Motion Map in Aktion — Gitter-Vorschau mit 8 kubischen Quellen](/images/kristall-demo.gif)
+
+![ICST Kristall Motion Map — Gesamtansicht mit Instanzliste, Gitter-Vorschau, Parameter-Panel und Statusleiste](/images/kristall-overview.png)
+
 Das Fenster ist in vier Bereiche aufgeteilt:
+
+![Statusleisten-Übersicht — alle 5 Zeilen beschriftet](/images/kristall-status-bar-overview.svg)
 
 ```
 ┌─────────────────┬──────────────────────────────────────┐
@@ -60,7 +72,8 @@ Das Fenster ist in vier Bereiche aufgeteilt:
 ├─────────────────┴──────────────────────────────────────┤
 │  Statusleiste Zeile 1: OSC · Preset                    │
 │  Statusleiste Zeile 2: Speed · BPM · Fwd/Rev · Pause · Stop │
-│  Statusleiste Zeile 3: Pos X Y Z · Move X Y Z         │
+│  Statusleiste Zeile 3: Offset X Y Z · Move X Y Z      │
+│  Statusleiste Zeile 4: Rotate Pt · Yw · Rl            │
 └────────────────────────────────────────────────────────┘
 ```
 
@@ -87,6 +100,8 @@ Das Maximum sind **64 Instanzen**. Darüber hinaus hat das Hinzufügen keine Wir
 ---
 
 ## 5. Gitter-Vorschau
+
+![Instanzliste (links) und isometrische Gitter-Vorschau mit 8 kubischen Quellen — ausgewählte Instanz hervorgehoben](/images/kristall-instance-preview.png)
 
 Das obere rechte Panel zeigt alle aktivierten Instanzen als farbige Punkte in einer isometrischen 3D-Projektion. Ein Einheitswürfel dient als Orientierungsrahmen.
 
@@ -183,6 +198,8 @@ currentPos = currentPos + alpha × (targetPos − currentPos)
 
 ### Interaktion
 
+![Parameter-Panel (untere Bereiche) — Bounds, Quantize, Smoothing und Interaction sichtbar](/images/kristall-param-panel.png)
+
 Instanzen können die Geschwindigkeit und Richtung benachbarter Instanzen beeinflussen.
 
 | Parameter | Beschreibung |
@@ -199,6 +216,8 @@ Instanzen können die Geschwindigkeit und Richtung benachbarter Instanzen beeinf
 
 ## 7. Statusleiste — Zeile 1: OSC und Presets
 
+![Statusleiste — alle vier Steuerzeilen und die acht Preset-Buttons am unteren Rand](/images/kristall-status-bar.png)
+
 ### OSC
 
 | Steuerelement | Beschreibung |
@@ -207,6 +226,7 @@ Instanzen können die Geschwindigkeit und Richtung benachbarter Instanzen beeinf
 | **Host** | IP-Adresse des OSC-Ziels (Standard `127.0.0.1`) |
 | **Port** | UDP-Port des OSC-Ziels (Standard `9001`) |
 | **Connect / Disconnect** | OSC-Brücke öffnen oder schliessen |
+| **in: PORT** | Erscheint nach dem Verbinden — UDP-Port für eingehende OSC-Nachrichten (immer `Ausgangsport + 1`, z. B. `9002` bei Ausgangsport `9001`) |
 
 Felder anklicken zum Bearbeiten, **Enter** zum Bestätigen.
 
@@ -231,7 +251,7 @@ Presets werden im REAPER ExtState gespeichert (projektunabhängig, sitzungsüber
 | **BPM** | BPM-Sync umschalten. Aus = Schritte/Sekunde. An = Schritte/Taktschlag (folgt REAPER-Tempo). |
 | **\> Fwd / < Rev** | Globale Richtung für alle Instanzen. |
 | **‖ Pause** | Alle Bewegungen einfrieren. Nochmals klicken = weiter. |
-| **■ Stop** | Alle Instanzen auf Schritt 0 zurücksetzen und sofort weiterlaufen. |
+| **■ Stop** | Alle Instanzen auf Schritt 0 zurücksetzen und sofort **pausieren** (Wiedergabe startet nicht automatisch). Über **‖ Pause** oder Neustart fortsetzen. |
 
 ### BPM-Modus im Detail
 
@@ -241,15 +261,15 @@ BPM **an**: `Rate = 1` bedeutet 1 Schritt pro Viertelnote. Bei 120 BPM sind das 
 
 ---
 
-## 9. Statusleiste — Zeile 3: Globale Position und Bewegung
+## 9. Statusleiste — Zeile 3: Globaler Offset und Bewegung
 
 Zeile 3 enthält sechs **Scrubber-Slider** mit Bereich −2,0 bis +2,0. Horizontal ziehen zum Ändern des Wertes.
 
-### Pos X / Y / Z — Globale Translation
+### Offset X / Y / Z — Globale Translation
 
 Verschiebt alle Instanzpositionen gleichmässig **nach** allen instanzspezifischen Transformationen. Damit kann das gesamte Kristall im Ambisonics-Raum platziert werden, ohne einzelne Start-Positionen anzufassen.
 
-Beispiel: `Pos X = 0,5` verschiebt alle Quellen um 0,5 Einheiten nach rechts.
+Beispiel: `Offset X = 0,5` verschiebt alle Quellen um 0,5 Einheiten nach rechts.
 
 ### Move X / Y / Z — Globale Bewegungsrichtung
 
@@ -258,25 +278,96 @@ Fügt **allen** Instanzen einen zusätzlichen Schritt-Offset überlagert zu ihre
 Beispiel: `Move X = 0,01` addiert pro Schritt 0,01 Einheiten entlang X zu jeder Instanz. Kombination `Move X = 0,007` und `Move Y = 0,007` ergibt eine Diagonalbewegung.
 
 {{< notice warning >}}
-Pos und Move werden **nicht in Presets gespeichert** — sie sind Steuerungen auf Sitzungsebene für Echtzeit-Performance.
+Offset und Move werden **nicht in Presets gespeichert** — sie sind Steuerungen auf Sitzungsebene für Echtzeit-Performance.
 {{< /notice >}}
 
 ---
 
-## 10. Eingebaute Presets (Schnellauswahl)
+## 10. Statusleiste — Zeile 4: Globale Rotation
 
-Vier Preset-Schaltflächen in der Statusleiste. Jedes Preset löscht alle aktuellen Instanzen.
+Zeile 4 enthält drei **Scrubber-Slider** zum Drehen des gesamten Kristalls um den Weltursprung. Die Rotation wird nach allen instanzspezifischen Transformationen und dem globalen Offset angewendet. Winkel in Grad, Bereich −180 bis +180.
 
-| Preset | Was erstellt wird |
-|--------|-------------------|
-| **Cubic** | 8 Instanzen an den Ecken eines Einheitswürfels |
-| **Tetragonal** | Gitter mit gleichem XY-Abstand und anderem Z-Abstand |
-| **Hexagonal** | 2D-Hexagonalring entlang Z (entspricht typischen Kuppelaufstellungen) |
-| **RandomSwarm** | 20 zufällig in einer Kugel verteilte Instanzen |
+| Slider | Achse | Wirkung |
+|--------|-------|---------|
+| **Pt** (Pitch) | X | Kippt das Kristall vorwärts / rückwärts |
+| **Yw** (Yaw) | Y | Dreht das Kristall links / rechts |
+| **Rl** (Roll) | Z | Rollt das Kristall im / gegen Uhrzeigersinn |
+
+Slider horizontal ziehen oder anklicken und Wert eintippen, dann **Enter** bestätigen.
+
+{{< notice warning >}}
+Die Rotation wirkt auf die **effektive Endposition** jeder Instanz. Die Gittervorschau aktualisiert sich in Echtzeit, auch wenn die Wiedergabe pausiert ist.
+{{< /notice >}}
+
+![Rotationsachsen — Pt kippt vorwärts/rückwärts, Yw dreht links/rechts, Rl rollt CW/CCW](/images/kristall-rotation-axes.svg)
+
+Pt/Yw/Rl können auch extern gesteuert werden — siehe [§11 Externe Steuerung](#11-externe-steuerung--osc-eingang-und-midi).
 
 ---
 
-## 11. Erste Schritte — Schnelleinstieg
+## 11. Externe Steuerung — OSC-Eingang und MIDI
+
+### OSC-Eingang
+
+Wenn die OSC-Brücke verbunden ist (Connect geklickt, Status-Punkt grün), **empfängt** das Kristall gleichzeitig OSC-Nachrichten auf **`Ausgangsport + 1`** (z. B. Port `9002` bei Ausgangsport `9001`). Der Empfangsport wird als **in: PORT** neben dem Connect-Button angezeigt.
+
+![OSC/MIDI Signalfluss — zwei Eingangspfade konvergieren zur globalen Rotation](/images/kristall-osc-signal-flow.svg)
+
+Folgende Nachrichten können von TouchOSC, Max/MSP, OSSIA, SuperCollider oder jedem OSC-fähigen Tool gesendet werden:
+
+| OSC-Adresse | Argumente | Wirkung |
+|-------------|-----------|---------|
+| `/kristall/pitch` | `<float Grad>` | Globalen Pitch setzen (−180…+180) |
+| `/kristall/yaw` | `<float Grad>` | Globalen Yaw setzen (−180…+180) |
+| `/kristall/roll` | `<float Grad>` | Globalen Roll setzen (−180…+180) |
+| `/kristall/rotate` | `<float pitch> <float yaw> <float roll>` | Alle drei gleichzeitig setzen |
+
+Die Werte werden sofort übernommen und überschreiben die Slider. Werte ausserhalb von −180…+180 werden automatisch begrenzt.
+
+**Beispiel** — Kristall mit TouchOSC drehen:
+1. Im Kristall-GUI verbinden (Ausgangsport `9001`, Ziel `127.0.0.1`).
+2. In TouchOSC OSC-Ziel auf `127.0.0.1:9002` setzen.
+3. Einen Fader auf `/kristall/yaw`, Bereich −180 bis +180, zuweisen.
+4. Fader bewegen → Kristall dreht sich in Echtzeit.
+
+### MIDI über JSFX-Controller-Brücke
+
+Falls ein **Kristall Controller** JSFX auf einem Track vorhanden ist, liest das Skript dessen Parameter automatisch:
+
+| JSFX-Slider | Parameter-Index | Bereich | Wirkung |
+|-------------|-----------------|---------|---------|
+| slider6 | 5 | −180…+180° | Globaler Pitch |
+| slider7 | 6 | −180…+180° | Globaler Yaw |
+| slider8 | 7 | −180…+180° | Globaler Roll |
+
+MIDI-CCs über REAPER's MIDI-Learn-Dialog oder den FX-Parameter-Lane auf diese Slider mappen. Ein CC-Sweep von 0 bis 127 entspricht linear −180° bis +180°. Die Slider werden jeden Frame ausgelesen, solange das JSFX auf einem Track geladen ist.
+
+{{< notice warning >}}
+JSFX-Pitch/Yaw/Roll werden nur übernommen, wenn **mindestens einer der drei** ungleich null ist. Wenn alle drei 0 sind oder das JSFX diese Slider nicht enthält, bleiben die Slider-Werte der Oberfläche erhalten.
+{{< /notice >}}
+
+---
+
+## 12. Eingebaute Presets (Schnellauswahl)
+
+![Preset-Layouts — Top-Ansicht aller 8 Preset-Muster](/images/kristall-preset-layouts.svg)
+
+Acht Preset-Schaltflächen am unteren Fensterrand. Jedes Preset löscht alle aktuellen Instanzen und platziert neue. Buttons 1–4 (türkis) sind abstrakte Bewegungslayouts, Buttons 5–8 (bernstein) sind kristallografische Einheitszellenformen.
+
+| # | Preset | Was erstellt wird |
+|---|--------|-------------------|
+| 1 | **Cubic** | 8 Instanzen an den Ecken eines Einheitswürfels |
+| 2 | **Tetragonal** | Gitter mit gleichem XY-Abstand und anderem Z-Abstand |
+| 3 | **Hexagonal** | 2D-Hexagonalring entlang Z (entspricht typischen Kuppelaufstellungen) |
+| 4 | **Rnd.Swarm** | 20 zufällig in einer Kugel verteilte Instanzen |
+| 5 | **Orthorhombic** | Einheitszelle mit drei ungleichen orthogonalen Achsen (α=β=γ=90°) |
+| 6 | **Rhombohedral** | Einheitszelle mit gleichen Achsen und gleichen nicht-orthogonalen Winkeln (α=β=γ≠90°) |
+| 7 | **Monoclinic** | Einheitszelle mit einer geneigten Achse (α=γ=90°, β≠90°) |
+| 8 | **Triclinic** | Einheitszelle ohne gleiche Achsen und ohne rechte Winkel — maximale Asymmetrie |
+
+---
+
+## 13. Erste Schritte — Schnelleinstieg
 
 ### Schritt 1 — Preset anwenden
 
@@ -298,13 +389,17 @@ Instanz 1 auswählen. **Offset X = 0,02**, **Offset Y = 0,01**, **Offset Z = 0**
 
 Den **Move X**-Slider in Zeile 3 auf ca. `0,008` ziehen. Das gesamte Kristall driftet nun nach rechts, während die einzelnen Instanzen weiterhin pendeln.
 
-### Schritt 6 — OSC verbinden
+### Schritt 6 — Kristall drehen
 
-Host und Port in Zeile 1 eingeben, **Connect** klicken. Positionen werden in Echtzeit gesendet.
+Den **Yw**-Slider (Yaw) in Zeile 4 ziehen, um das gesamte Kristall um die Hochachse zu drehen. **Pt** und **Rl** für zusammengesetzte Orientierungen kombinieren. Die Gittervorschau aktualisiert sich in Echtzeit.
+
+### Schritt 7 — OSC verbinden
+
+Host und Port in Zeile 1 eingeben, **Connect** klicken. Positionen werden in Echtzeit gesendet. Nach dem Verbinden erscheint **in: 9002** — dieser Port empfängt externe Rotationssteuerung (siehe [§11](#11-externe-steuerung--osc-eingang-und-midi)).
 
 ---
 
-## 12. Fehlerbehebung
+## 14. Fehlerbehebung
 
 **Quellen bewegen sich nicht.** Speed > 0 prüfen und Instanz auf Enabled kontrollieren. Im BPM-Modus muss der REAPER-Transport laufen.
 
@@ -312,7 +407,13 @@ Host und Port in Zeile 1 eingeben, **Connect** klicken. Positionen werden in Ech
 
 **Positionen driften ausserhalb des Arrays.** Mode auf Pingpong wechseln oder Bounds mit Mirror-Modus aktivieren.
 
-**OSC verbindet sich nicht.** Python-OSC-Brücke (`python-osc`) prüfen. Host-IP und Port kontrollieren.
+**Move-Slider ändert zu grosse Schritte.** Langsam ziehen — der Slider deckt den gesamten Bereich −2 bis +2 ab. Für Feinsteuerung Slider anklicken, Wert eintippen, Enter bestätigen.
+
+**OSC verbindet sich nicht.** Python-OSC-Brücke (`python-osc`) prüfen. Host-IP und Port kontrollieren. Bei Erfolg wird der Status-Punkt grün.
+
+**OSC-Eingang (Rotation) hat keine Wirkung.** Die OSC-Brücke muss zuerst verbunden sein. Sicherstellen, dass der Controller an `Ausgangsport + 1` sendet (Standard: `9002`, nicht `9001`). Mit einem UDP-Monitor (z. B. Protokol) prüfen ob Pakete ankommen.
+
+**Stop-Button pausiert nicht, sondern startet die Wiedergabe.** Dieser Fehler bestand in v0.1.0 und ist ab v0.2.0 behoben. Auf das neueste Skript aktualisieren.
 
 ---
 

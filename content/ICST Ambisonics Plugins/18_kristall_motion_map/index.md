@@ -8,7 +8,7 @@ translationKey: kristall-motion-map
 description: "Installation and user guide for JS_ICST_Kristall_Motion_Map.lua — a standalone REAPER script that moves up to 64 AmbiEncoder sources through a 3D crystal-lattice step sequencer with real-time GUI, OSC output, and named presets."
 ---
 
-Level: Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: 0.1.0**
+Level: Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: 0.2.0**
 
 ICST Kristall Motion Map is a **standalone REAPER Lua script** with a real-time graphical interface. It arranges up to 64 AmbiEncoder sources as points in a 3D crystal lattice and moves them through space using a step sequencer. Motion can be monitored live via the isometric preview, sent to an AmbiEncoder via OSC, and shaped with per-instance transforms, quantization, smoothing, and interaction.
 
@@ -24,9 +24,15 @@ ICST Kristall Motion Map is a **standalone REAPER Lua script** with a real-time 
 
 ## 2. Installation
 
-### Step 1 — Download the script
+### Step 1 — Download the bundle
 
-Download `JS_ICST_Kristall_Motion_Map.lua` from the [Downloads page](/icst-ambisonics-plugins/08_downloads/) and save it anywhere on your computer — for example `~/REAPER/Scripts/`.
+Download **[ICST_Kristall_Motion_Map_Bundle.zip](/downloads/lua-scripts/ICST_Kristall_Motion_Map_Bundle.zip)** (also available on the [Downloads page](/icst-ambisonics-plugins/08_downloads/)). Unzip it anywhere on your computer — for example `~/REAPER/Scripts/ICST_Kristall_Motion_Map_Bundle/`.
+
+The bundle contains:
+
+- `scripts/JS_ICST_Kristall_Motion_Map.lua` — the main script
+- `jsfx/JS_ICST_Kristall_Controller.jsfx` — optional MIDI/JSFX control surface
+- `README.md` — quick-start instructions
 
 ### Step 2 — Load as a ReaScript
 
@@ -49,7 +55,13 @@ Load this launcher as the ReaScript instead. To reload after editing the main sc
 
 ## 3. The interface at a glance
 
+![ICST Kristall Motion Map in action — lattice preview with 8 cubic sources stepping through space](/images/kristall-demo.gif)
+
+![ICST Kristall Motion Map — full window overview showing instance list, lattice preview, parameter panel, and status bar](/images/kristall-overview.png)
+
 The window is divided into four areas:
+
+![Status bar overview — all 5 rows annotated](/images/kristall-status-bar-overview.svg)
 
 ```
 ┌─────────────────┬──────────────────────────────────────┐
@@ -60,7 +72,8 @@ The window is divided into four areas:
 ├─────────────────┴──────────────────────────────────────┤
 │  Status bar — Row 1: OSC · Preset                      │
 │  Status bar — Row 2: Speed · BPM · Fwd/Rev · Pause · Stop │
-│  Status bar — Row 3: Pos X Y Z · Move X Y Z           │
+│  Status bar — Row 3: Offset X Y Z · Move X Y Z        │
+│  Status bar — Row 4: Rotate Pt · Yw · Rl              │
 └────────────────────────────────────────────────────────┘
 ```
 
@@ -87,6 +100,8 @@ The maximum is **64 instances**. Adding beyond this limit has no effect.
 ---
 
 ## 5. Lattice preview
+
+![Instance list (left) and isometric lattice preview with 8 cubic sources — selected instance highlighted](/images/kristall-instance-preview.png)
 
 The top-right panel shows all enabled instances as colored dots in an isometric 3D projection. A unit-cube guide is drawn in the background.
 
@@ -183,6 +198,8 @@ currentPos = currentPos + alpha × (targetPos − currentPos)
 
 ### Interaction
 
+![Parameter panel (lower sections) — Bounds, Quantize, Smoothing, and Interaction visible](/images/kristall-param-panel.png)
+
 Instances can influence each other's speed and direction based on proximity.
 
 | Parameter | Description |
@@ -199,6 +216,8 @@ Instances can influence each other's speed and direction based on proximity.
 
 ## 7. Status bar — Row 1: OSC and Presets
 
+![Status bar — all four control rows and the eight preset buttons at the bottom](/images/kristall-status-bar.png)
+
 ### OSC
 
 | Control | Description |
@@ -207,6 +226,7 @@ Instances can influence each other's speed and direction based on proximity.
 | **Host** field | IP address of the OSC target (default `127.0.0.1`) |
 | **Port** field | UDP port of the OSC target (default `9001`) |
 | **Connect / Disconnect** | Open or close the OSC bridge |
+| **in: PORT** | Shown when connected — the UDP port on which the Kristall listens for incoming OSC messages (always `output port + 1`, e.g., `9002` when the output port is `9001`) |
 
 Click any field to edit, then press **Enter** to confirm.
 
@@ -231,7 +251,7 @@ Presets are stored in REAPER's ExtState (project-independent, persistent across 
 | **BPM** | Toggle BPM sync. Off = steps/second (absolute). On = steps/beat (follows REAPER tempo). |
 | **\> Fwd / < Rev** | Global direction. Fwd = all instances step forward. Rev = all instances step in reverse. |
 | **‖ Pause** | Freeze all motion at the current step. Click again to resume. |
-| **■ Stop** | Reset all instances to step 0 and resume playing immediately. |
+| **■ Stop** | Reset all instances to step 0 and **pause** immediately (motion does not resume automatically). Click **‖ Pause** or restart to continue. |
 
 ### BPM mode in detail
 
@@ -241,15 +261,15 @@ When BPM is **ON**: `Rate = 1` means 1 step per quarter note. At 120 BPM this is
 
 ---
 
-## 9. Status bar — Row 3: Global position and movement
+## 9. Status bar — Row 3: Global offset and movement
 
 Row 3 contains six **scrubber sliders**, all with range −2.0 to +2.0.
 
-### Pos X / Y / Z — Global translation
+### Offset X / Y / Z — Global translation
 
 Shifts all instance positions uniformly **after** all per-instance transforms. Use this to place the entire crystal anywhere in the Ambisonics space without touching individual Start positions.
 
-Example: `Pos X = 0.5` moves all sources 0.5 units to the right.
+Example: `Offset X = 0.5` moves all sources 0.5 units to the right.
 
 ### Move X / Y / Z — Global movement direction
 
@@ -258,25 +278,96 @@ Adds a per-step offset to **all** instances on top of their own Offset X/Y/Z. Us
 Example: `Move X = 0.01` adds 0.01 units per step along X to every instance — the whole crystal drifts rightward. Combine `Move X = 0.007` and `Move Y = 0.007` for a diagonal drift.
 
 {{< notice warning >}}
-Pos and Move are **not saved in presets** — they are session-level controls intended for real-time performance.
+Offset and Move are **not saved in presets** — they are session-level controls intended for real-time performance.
 {{< /notice >}}
 
 ---
 
-## 10. Built-in presets (quick-select)
+## 10. Status bar — Row 4: Global rotation
 
-Four preset buttons appear in the status bar area. Each clears all current instances.
+Row 4 contains three **scrubber sliders** for rotating the entire crystal around the world origin, applied after all per-instance transforms and the global Offset. Angles are in degrees, range −180 to +180.
 
-| Preset | What it creates |
-|--------|-----------------|
-| **Cubic** | 8 instances at the corners of a unit cube (−0.5 to +0.5 on all axes) |
-| **Tetragonal** | Grid with equal XY spacing and different Z spacing |
-| **Hexagonal** | 2D hexagonal ring tiled along Z (mirrors typical dome layouts) |
-| **RandomSwarm** | 20 instances scattered randomly within a sphere |
+| Slider | Axis | Effect |
+|--------|------|--------|
+| **Pt** (Pitch) | X | Tilts the crystal forward / backward |
+| **Yw** (Yaw) | Y | Spins the crystal left / right |
+| **Rl** (Roll) | Z | Rolls the crystal clockwise / counter-clockwise |
+
+Drag a slider horizontally or click it to type a value, then press **Enter** to confirm.
+
+{{< notice warning >}}
+Rotation acts on the final **effective position** of every instance. The lattice preview updates in real time even while playback is paused.
+{{< /notice >}}
+
+![Rotation axes — Pt tilts forward/backward, Yw spins left/right, Rl rolls CW/CCW](/images/kristall-rotation-axes.svg)
+
+The rotation can also be controlled externally — see [§11 External control](#11-external-control--osc-input-and-midi).
 
 ---
 
-## 11. First session walkthrough
+## 11. External control — OSC input and MIDI
+
+### OSC input
+
+When the OSC bridge is connected (Connect clicked, status dot green), the Kristall **simultaneously listens** for incoming OSC messages on **`output port + 1`** (e.g., port `9002` when the output port is `9001`). The receive port is shown as **in: PORT** next to the Connect button.
+
+Send any of these messages from TouchOSC, Max/MSP, OSSIA, SuperCollider, or any OSC-capable tool:
+
+| OSC address | Arguments | Effect |
+|-------------|-----------|--------|
+| `/kristall/pitch` | `<float degrees>` | Set global Pitch (−180…+180) |
+| `/kristall/yaw` | `<float degrees>` | Set global Yaw (−180…+180) |
+| `/kristall/roll` | `<float degrees>` | Set global Roll (−180…+180) |
+| `/kristall/rotate` | `<float pitch> <float yaw> <float roll>` | Set all three at once |
+
+The values are applied immediately and override the on-screen sliders. Clipping to −180…+180 is applied automatically.
+
+![OSC/MIDI signal flow — two input paths converging to global rotation](/images/kristall-osc-signal-flow.svg)
+
+**Example** — rotate the crystal with TouchOSC:
+1. Connect in the Kristall GUI (output port `9001`, target `127.0.0.1`).
+2. In TouchOSC, set the OSC target to `127.0.0.1:9002`.
+3. Assign a fader to `/kristall/yaw`, range −180 to +180.
+4. Moving the fader spins the crystal in real time.
+
+### MIDI via JSFX controller bridge
+
+If a **Kristall Controller** JSFX is present on any track, the Kristall script reads its parameters automatically:
+
+| JSFX slider | Parameter index | Range | Effect |
+|-------------|-----------------|-------|--------|
+| slider6 | 5 | −180…+180° | Global Pitch |
+| slider7 | 6 | −180…+180° | Global Yaw |
+| slider8 | 7 | −180…+180° | Global Roll |
+
+Map MIDI CCs to these sliders in REAPER's FX parameter lane or via the MIDI Learn dialog. A MIDI CC sweep from 0 to 127 maps linearly to −180° to +180°. The sliders are read every frame as long as the JSFX is present on any track.
+
+{{< notice warning >}}
+JSFX Pitch/Yaw/Roll take effect **only when at least one of the three is non-zero**. If all three are 0 (or the JSFX does not expose these sliders), the on-screen sliders retain their values.
+{{< /notice >}}
+
+---
+
+## 12. Built-in presets (quick-select)
+
+![Preset layouts — top-view dot patterns for all 8 presets](/images/kristall-preset-layouts.svg)
+
+Eight preset buttons appear at the very bottom of the window. Each clears all current instances and places new ones. Buttons 1–4 (teal) are abstract motion layouts; buttons 5–8 (amber) are crystallographic unit-cell shapes.
+
+| # | Preset | What it creates |
+|---|--------|-----------------|
+| 1 | **Cubic** | 8 instances at the corners of a unit cube (−0.5 to +0.5 on all axes) |
+| 2 | **Tetragonal** | Grid with equal XY spacing and different Z spacing |
+| 3 | **Hexagonal** | 2D hexagonal ring tiled along Z (mirrors typical dome layouts) |
+| 4 | **Rnd.Swarm** | 20 instances scattered randomly within a sphere |
+| 5 | **Orthorhombic** | Unit cell with three unequal orthogonal axes (α=β=γ=90°) |
+| 6 | **Rhombohedral** | Unit cell with equal axes and equal non-orthogonal angles (α=β=γ≠90°) |
+| 7 | **Monoclinic** | Unit cell with one inclined axis (α=γ=90°, β≠90°) |
+| 8 | **Triclinic** | Unit cell with no equal axes and no right angles — maximum asymmetry |
+
+---
+
+## 13. First session walkthrough
 
 ### Step 1 — Apply a preset
 
@@ -298,13 +389,17 @@ Set **Mode = Pingpong** and **Steps = 64**. The source travels 64 steps out and 
 
 Drag the **Move X** slider in Row 3 slightly to the right (e.g., `0.008`). The entire crystal now drifts rightward while individual instances still bounce within it.
 
-### Step 6 — Connect OSC
+### Step 6 — Rotate the crystal
 
-Enter your AmbiEncoder host and port in Row 1, then click **Connect**. Positions are streamed as OSC messages to the encoder in real time.
+Drag the **Yw** (Yaw) slider in Row 4 to spin the whole crystal around the vertical axis. Combine **Pt** and **Rl** for compound orientations. The lattice preview updates in real time.
+
+### Step 7 — Connect OSC
+
+Enter your AmbiEncoder host and port in Row 1, then click **Connect**. Positions are streamed as OSC messages to the encoder in real time. After connecting, **in: 9002** appears — this is the port for incoming rotation control (see [§11](#11-external-control--osc-input-and-midi)).
 
 ---
 
-## 12. Troubleshooting
+## 14. Troubleshooting
 
 **Sources do not move.**
 Check that Speed > 0 and that the instance is Enabled. In BPM mode, REAPER transport must be running.
@@ -316,10 +411,16 @@ Apply a preset (e.g., Cubic) to distribute them, or set unique Start positions m
 Mode is set to Infinite with a non-zero Offset. Switch to Pingpong, or enable Bounds with Mirror mode.
 
 **Move slider changes are too coarse.**
-Drag slowly — the slider covers the full −2 to +2 range. For fine control, type a value by clicking the nearby area and pressing Enter after switching focus (a text input field appears in some modes).
+Drag slowly — the slider covers the full −2 to +2 range. For fine control, click the slider to enter a numeric value, then press Enter.
 
 **OSC not connecting.**
 Verify that the Python OSC bridge is running (`python-osc` required). Check host IP and port. The status dot turns green on a successful connection.
+
+**OSC input (rotation) has no effect.**
+The OSC bridge must be connected first (output port active). Check that your controller is sending to `output port + 1` (default: `9002`), not `9001`. Confirm the messages arrive with a UDP monitor (e.g., Protokol).
+
+**Stop button does not pause — it starts playing.**
+This was a bug in v0.1.0, fixed in v0.2.0. Update to the latest script.
 
 ---
 

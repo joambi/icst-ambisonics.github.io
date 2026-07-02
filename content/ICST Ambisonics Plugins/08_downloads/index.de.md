@@ -27,6 +27,26 @@ Ambisonics-Externals und Patches für Max/MSP — Encoding-, Decoding- und räum
 
 Hinweis: Die ICST Ambisonics Tools sind ein separates Paket von den REAPER-Plugins und werden unabhängig gepflegt.
 
+## REAPER Lua-Skripte
+
+Eigenständige Lua-Skripte und JSFX-Tools für räumliche Bewegungs-Workflows in REAPER.
+
+### ICST Kristall Motion Map
+
+3D-Kristallgitter-Schritt-Sequenzer — platziert bis zu 64 AmbiEncoder-Quellen in kristallografischen Einheitszellen-Anordnungen und bewegt sie per OSC durch den Raum.
+
+- [ICST_Kristall_Motion_Map_Bundle.zip herunterladen](/downloads/lua-scripts/ICST_Kristall_Motion_Map_Bundle.zip) — enthält `JS_ICST_Kristall_Motion_Map.lua`, `JS_ICST_Kristall_Controller.jsfx` und README
+- [Benutzerhandbuch](/de/icst-ambisonics-plugins/18_kristall_motion_map/)
+
+### ICST Ambi Motion Map
+
+Schrittbasierte 2D/3D-Bewegungsformen für AmbiEncoder-Quellen.
+
+- [JS_AmbiEncoder64_Motion_Map_GUI.lua herunterladen](/downloads/lua-scripts/JS_AmbiEncoder64_Motion_Map_GUI.lua)
+- [Benutzerhandbuch](/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/)
+
+---
+
 ## Templates, Presets und Anleitungen
 
 Für REAPER-Session-Templates, Lautsprecher-Presets, Max-Patches, Ableton-Live-Templates und druckbare PDF-Anleitungen siehe den **[Downloads-Hub](/de/blog/downloads/)**.

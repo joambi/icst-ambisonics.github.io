@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="310" viewBox="0 0 860 310">
+<rect width="860" height="310" fill="#0c0c16" rx="10"/>
+<defs>
+<marker id="arr6b7280" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#6b7280"/></marker>
+<marker id="arr4a7ab0" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4a7ab0"/></marker>
+<marker id="arr3a9a60" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#3a9a60"/></marker>
+<marker id="arr8060c0" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#8060c0"/></marker>
+<marker id="arr2e8b57" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2e8b57"/></marker>
+</defs>
+<text x="430" y="22" font-size="12" fill="#a0c4ff" font-weight="bold" text-anchor="middle" font-family="Arial,sans-serif" letter-spacing="1">EXTERNAL CONTROL — OSC / MIDI SIGNAL FLOW</text>
+<text x="14" y="50" font-size="9.5" fill="#4a5a70" font-family="Arial,sans-serif" font-weight="bold">MIDI PATH</text>
+<rect x="14" y="56" width="106" height="56" rx="8" fill="#2a3a4a" stroke="#405060" stroke-width="1.5"/>
+<text x="67" y="80" font-size="11.5" fill="#e0e8ff" font-weight="700" text-anchor="middle" font-family="Arial,sans-serif">MIDI</text>
+<text x="67" y="95" font-size="9" fill="rgba(220,230,255,0.65)" text-anchor="middle" font-family="Arial,sans-serif">Controller</text>
+<text x="67" y="107" font-size="8.5" fill="rgba(180,200,255,0.45)" text-anchor="middle" font-family="Arial,sans-serif">knob/fader</text>
+<line x1="120" y1="84" x2="146" y2="84" stroke="#6b7280" stroke-width="1.8" marker-end="url(#arr6b7280)"/>
+<text x="133" y="76" font-size="9" fill="#6b7280" text-anchor="middle" font-family="Arial,sans-serif">CC 0–127</text>
+<rect x="146" y="56" width="120" height="56" rx="8" fill="#1e3450" stroke="#2a5080" stroke-width="1.5"/>
+<text x="206" y="80" font-size="11.5" fill="#e0e8ff" font-weight="700" text-anchor="middle" font-family="Arial,sans-serif">JSFX</text>
+<text x="206" y="95" font-size="9" fill="rgba(220,230,255,0.65)" text-anchor="middle" font-family="Arial,sans-serif">Kristall Ctrl</text>
+<text x="206" y="107" font-size="8.5" fill="rgba(180,200,255,0.45)" text-anchor="middle" font-family="Arial,sans-serif">slider6/7/8</text>
+<line x1="266" y1="84" x2="292" y2="84" stroke="#3a9a60" stroke-width="1.8" marker-end="url(#arr3a9a60)"/>
+<text x="279" y="76" font-size="9" fill="#3a9a60" text-anchor="middle" font-family="Arial,sans-serif">TrackFX_GetParam</text>
+<rect x="292" y="56" width="104" height="56" rx="8" fill="#1a3a28" stroke="#2a6040" stroke-width="1.5"/>
+<text x="344" y="80" font-size="11.5" fill="#e0e8ff" font-weight="700" text-anchor="middle" font-family="Arial,sans-serif">ctrlPoll()</text>
+<text x="344" y="95" font-size="9" fill="rgba(220,230,255,0.65)" text-anchor="middle" font-family="Arial,sans-serif">Lua · every frame</text>
+<text x="344" y="107" font-size="8.5" fill="rgba(180,200,255,0.45)" text-anchor="middle" font-family="Arial,sans-serif">param 5/6/7</text>
+<text x="14" y="150" font-size="9.5" fill="#4a5a70" font-family="Arial,sans-serif" font-weight="bold">OSC PATH</text>
+<rect x="14" y="156" width="106" height="56" rx="8" fill="#1c2a3a" stroke="#2a4060" stroke-width="1.5"/>
+<text x="67" y="180" font-size="11.5" fill="#e0e8ff" font-weight="700" text-anchor="middle" font-family="Arial,sans-serif">TouchOSC</text>
+<text x="67" y="195" font-size="9" fill="rgba(220,230,255,0.65)" text-anchor="middle" font-family="Arial,sans-serif">Max/MSP/SC</text>
+<text x="67" y="207" font-size="8.5" fill="rgba(180,200,255,0.45)" text-anchor="middle" font-family="Arial,sans-serif">/kristall/…</text>
+<line x1="120" y1="184" x2="146" y2="184" stroke="#4a7ab0" stroke-width="1.8" marker-end="url(#arr4a7ab0)"/>
+<text x="133" y="176" font-size="9" fill="#4a7ab0" text-anchor="middle" font-family="Arial,sans-serif">UDP port+1</text>
+<rect x="146" y="156" width="120" height="56" rx="8" fill="#1a1a3a" stroke="#2a2a60" stroke-width="1.5"/>
+<text x="206" y="180" font-size="11.5" fill="#e0e8ff" font-weight="700" text-anchor="middle" font-family="Arial,sans-serif">Python OSC</text>
+<text x="206" y="195" font-size="9" fill="rgba(220,230,255,0.65)" text-anchor="middle" font-family="Arial,sans-serif">receiver thread</text>
+<text x="206" y="207" font-size="8.5" fill="rgba(180,200,255,0.45)" text-anchor="middle" font-family="Arial,sans-serif">port+1 listener</text>
+<line x1="266" y1="184" x2="292" y2="184" stroke="#3a9a60" stroke-width="1.8" marker-end="url(#arr3a9a60)"/>
+<text x="279" y="176" font-size="9" fill="#3a9a60" text-anchor="middle" font-family="Arial,sans-serif">state file</text>
+<rect x="292" y="156" width="104" height="56" rx="8" fill="#1a3a28" stroke="#2a6040" stroke-width="1.5"/>
+<text x="344" y="180" font-size="11.5" fill="#e0e8ff" font-weight="700" text-anchor="middle" font-family="Arial,sans-serif">readOscInput()</text>
+<text x="344" y="195" font-size="9" fill="rgba(220,230,255,0.65)" text-anchor="middle" font-family="Arial,sans-serif">Lua · ~20 Hz</text>
+<text x="344" y="207" font-size="8.5" fill="rgba(180,200,255,0.45)" text-anchor="middle" font-family="Arial,sans-serif">polls state file</text>
+<line x1="396" y1="95" x2="460" y2="134" stroke="#3a9a60" stroke-width="1.8" marker-end="url(#arr3a9a60)"/>
+<line x1="396" y1="195" x2="460" y2="134" stroke="#3a9a60" stroke-width="1.8" marker-end="url(#arr3a9a60)"/>
+<circle cx="460" cy="134" r="7" fill="#5040a0" stroke="#8060e0" stroke-width="1.5"/>
+<line x1="467" y1="134" x2="490" y2="134" stroke="#8060c0" stroke-width="1.8" marker-end="url(#arr8060c0)"/>
+<rect x="490" y="107" width="120" height="54" rx="8" fill="#2a1a50" stroke="#4a30a0" stroke-width="1.5"/>
+<text x="550" y="130" font-size="11.5" fill="#e0e8ff" font-weight="700" text-anchor="middle" font-family="Arial,sans-serif">globalPitch</text>
+<text x="550" y="145" font-size="9" fill="rgba(220,230,255,0.65)" text-anchor="middle" font-family="Arial,sans-serif">globalYaw</text>
+<text x="550" y="157" font-size="8.5" fill="rgba(180,200,255,0.45)" text-anchor="middle" font-family="Arial,sans-serif">globalRoll</text>
+<text x="460" y="260" font-size="8.5" fill="#403060" text-anchor="middle" font-family="Arial,sans-serif">OSC overrides on-screen sliders</text>
+<line x1="610" y1="134" x2="648" y2="134" stroke="#8060c0" stroke-width="1.8" marker-end="url(#arr8060c0)"/>
+<rect x="648" y="107" width="120" height="54" rx="8" fill="#1e2e40" stroke="#305070" stroke-width="1.5"/>
+<text x="708" y="130" font-size="11.5" fill="#e0e8ff" font-weight="700" text-anchor="middle" font-family="Arial,sans-serif">applyGlobal</text>
+<text x="708" y="145" font-size="9" fill="rgba(220,230,255,0.65)" text-anchor="middle" font-family="Arial,sans-serif">Transforms()</text>
+<text x="708" y="157" font-size="8.5" fill="rgba(180,200,255,0.45)" text-anchor="middle" font-family="Arial,sans-serif">Euler rotation</text>
+<line x1="768" y1="134" x2="804" y2="134" stroke="#2e8b57" stroke-width="1.8" marker-end="url(#arr2e8b57)"/>
+<rect x="804" y="107" width="48" height="54" rx="8" fill="#103820" stroke="#208050" stroke-width="1.5"/>
+<text x="828" y="130" font-size="11.5" fill="#e0e8ff" font-weight="700" text-anchor="middle" font-family="Arial,sans-serif">OSC</text>
+<text x="828" y="145" font-size="9" fill="rgba(220,230,255,0.65)" text-anchor="middle" font-family="Arial,sans-serif">→ Ambi</text>
+<text x="828" y="157" font-size="8.5" fill="rgba(180,200,255,0.45)" text-anchor="middle" font-family="Arial,sans-serif">Encoder</text>
+<text x="12" y="128" font-size="8.5" fill="#303848" font-family="Arial,sans-serif">↑ reads JSFX every frame</text>
+<text x="12" y="230" font-size="8.5" fill="#303848" font-family="Arial,sans-serif">↑ polls state file at ~20 Hz</text>
+<text x="146" y="150" font-size="8" fill="#3a5080" font-family="Arial,sans-serif">/kristall/pitch  /kristall/yaw</text>
+<text x="146" y="142" font-size="8" fill="#3a5080" font-family="Arial,sans-serif">/kristall/roll  /kristall/rotate</text>
+<text x="430" y="302" font-size="9.5" fill="#303848" text-anchor="middle" font-family="Arial,sans-serif">Both paths write globalPitch/Yaw/Roll — applied uniformly to all instances before OSC output</text>
+</svg>

@@ -221,6 +221,7 @@ local ui = {
 local osc = {
   host="127.0.0.1", port="9001",
   ok=false, status="Not connected", pipe=nil, last_t=0,
+  state_file=nil, in_port=0,
 }
 
 local statusMsg  = "Ready"
@@ -256,6 +257,9 @@ local globalTransZ = 0.0
 local globalMoveX  = 0.0   -- per-step movement added to all instance offsets
 local globalMoveY  = 0.0
 local globalMoveZ  = 0.0
+local globalPitch  = 0.0   -- global rotation X (degrees): tilts figure forward/back
+local globalYaw    = 0.0   -- global rotation Y (degrees): spins figure left/right
+local globalRoll   = 0.0   -- global rotation Z (degrees): rolls figure clockwise/ccw
 
 local function computeStepPosition(inst)
   local step=inst.currentStep
@@ -298,7 +302,12 @@ end
 local function computeTransformedPosition(inst)
   local pos=computeStepPosition(inst)
   pos=applyRotation(pos,inst); pos=applyScale(pos,inst); pos=applyBounds(pos,inst)
-  -- global translation: shift all instances uniformly
+  -- global rotation around figure center (before translation = rotates around anchor)
+  if globalPitch~=0 or globalYaw~=0 or globalRoll~=0 then
+    local M=buildRotMat(globalPitch,globalYaw,globalRoll,1)
+    pos=mat3MulVec(M,pos)
+  end
+  -- global translation: place/anchor figure in space
   return vec3(pos.x+globalTransX, pos.y+globalTransY, pos.z+globalTransZ)
 end
 
@@ -320,6 +329,9 @@ local rateMode   = 0
 local globalRateMult = 1.0   -- speed multiplier shown in status bar
 local globalDir    = 1          -- global direction: 1=forward, -1=reverse
 local globalPaused = false      -- pause: freeze steps, keep current positions
+local globalPingPong    = false -- global ping-pong: whole figure reverses as one
+local globalPingPongDir = 1     -- shared direction used by globalPingPong mode
+local _ppWantsFlip      = false -- set by any instance that hits a boundary; consumed by updateAllInstances
 
 
 local function shouldAdvanceStep(inst,dt,transport)
@@ -422,15 +434,23 @@ local function updateInstance(inst,inf,dt,transport)
   applyInfluenceToInstance(inst,inf)                                  -- 1
   if shouldAdvanceStep(inst,dt,transport) then                        -- 2
     local sc=tonumber(inst.stepCount) or 128
-    local d=inst.direction*globalDir
-    if inst.repetitionMode==REP.INFINITE then
+    if globalPingPong then
+      -- All instances share one direction; boundary of any instance triggers global flip
+      local d=globalPingPongDir*globalDir
       inst.currentStep=inst.currentStep+d
-    elseif inst.repetitionMode==REP.FINITE then
-      inst.currentStep=clamp(inst.currentStep+d, 0, sc-1)
-    elseif inst.repetitionMode==REP.PINGPONG then
-      inst.currentStep=inst.currentStep+d
-      if inst.currentStep>=sc-1 then inst.currentStep=sc-1;inst.direction=inst.direction*-1
-      elseif inst.currentStep<=0 then inst.currentStep=0;inst.direction=inst.direction*-1 end
+      if inst.currentStep>=sc-1 then inst.currentStep=sc-1; _ppWantsFlip=true
+      elseif inst.currentStep<=0 then inst.currentStep=0;   _ppWantsFlip=true end
+    else
+      local d=inst.direction*globalDir
+      if inst.repetitionMode==REP.INFINITE then
+        inst.currentStep=inst.currentStep+d
+      elseif inst.repetitionMode==REP.FINITE then
+        inst.currentStep=clamp(inst.currentStep+d, 0, sc-1)
+      elseif inst.repetitionMode==REP.PINGPONG then
+        inst.currentStep=inst.currentStep+d
+        if inst.currentStep>=sc-1 then inst.currentStep=sc-1;inst.direction=inst.direction*-1
+        elseif inst.currentStep<=0 then inst.currentStep=0;inst.direction=inst.direction*-1 end
+      end
     end
   end
   local pos=computeStepPosition(inst)                                 -- 3
@@ -439,15 +459,40 @@ local function updateInstance(inst,inf,dt,transport)
   pos=applyBounds(pos,inst)                                           -- 6
   pos=quantizePoint(pos,inst)                                         -- 7
   inst.targetPos=pos; updateSmoothing(inst,dt)                        -- 8
-  inst.effectivePos=vecCopy(inst.currentPos)                          -- 9
+  inst.effectivePos=vecCopy(inst.currentPos)                          -- 9: smoothed local pos
 end
 
 local function updateAllInstances(dt)
   if globalPaused then return end
   local transport=getTransportState()
   local influences=accumulateInfluences()
+  _ppWantsFlip=false  -- reset before this pass
   for i,inst in ipairs(instances) do
     updateInstance(inst,influences[i] or {offsetSum=vec3(),rateSum=0,weightSum=0},dt,transport)
+  end
+  if globalPingPong and _ppWantsFlip then
+    globalPingPongDir=globalPingPongDir*-1  -- flip once after all instances processed
+  end
+end
+
+-- Apply global Pt/Yw/Rl rotation + Offset translation to effectivePos every frame.
+-- Runs after updateAllInstances (and even when paused), so dragging sliders
+-- while paused still updates the preview and OSC output immediately.
+local rotMatCache = nil
+local rotCacheKey = ""
+local function applyGlobalTransforms()
+  local needRot = (globalPitch~=0 or globalYaw~=0 or globalRoll~=0)
+  if needRot then
+    local key=globalPitch..","..globalYaw..","..globalRoll
+    if key~=rotCacheKey then
+      rotMatCache=buildRotMat(globalPitch,globalYaw,globalRoll,1)
+      rotCacheKey=key
+    end
+  end
+  for _,inst in ipairs(instances) do
+    local p=vecCopy(inst.currentPos)
+    if needRot then p=mat3MulVec(rotMatCache,p) end
+    inst.effectivePos=vec3(p.x+globalTransX, p.y+globalTransY, p.z+globalTransZ)
   end
 end
 
@@ -789,6 +834,11 @@ local function drawStatusBar(bx,by,bw,bh)
   fillRect(bx+320,by+3,100,20)
   setColor(1,1,1); drawStr(osc.ok and "Disconnect" or "  Connect", bx+324, by+7)
 
+  -- OSC input port indicator (shown when connected)
+  if osc.ok and osc.in_port > 0 then
+    setColor(0.40,0.40,0.48); drawStr("in:"..osc.in_port, bx+426, by+8)
+  end
+
   -- ── Preset section ───────────────────────────────────────────
   -- Layout: "Preset:" | [editable name 148px] | [▼ 24px] | [Save] | [Reset]
   local pnx=bx+434; local pnlw=148  -- name text field
@@ -872,8 +922,17 @@ local function drawStatusBar(bx,by,bw,bh)
   setColor(0.80,0.28,0.28); drawRect(stx,r2y+2,stw,18)
   setColor(0.95,0.40,0.40); drawStr("■ Stop", stx+4, r2y+5)
 
+  -- Global Ping-Pong toggle
+  local ppx=stx+stw+6; local ppw=34
+  setColor(globalPingPong and 0.10 or 0.09, globalPingPong and 0.22 or 0.10, globalPingPong and 0.28 or 0.15)
+  fillRect(ppx,r2y+2,ppw,18)
+  setColor(globalPingPong and 0.20 or 0.22, globalPingPong and 0.75 or 0.35, globalPingPong and 0.95 or 0.50)
+  drawRect(ppx,r2y+2,ppw,18)
+  setColor(globalPingPong and 0.30 or 0.55, globalPingPong and 0.90 or 0.65, globalPingPong and 1.0 or 0.70)
+  drawStr("⇄ PP", ppx+4, r2y+5)
+
   -- Status message (rest of row 2)
-  setColor(0.35,0.35,0.45); drawStr(statusMsg, stx+stw+10, r2y+6)
+  setColor(0.35,0.35,0.45); drawStr(statusMsg, ppx+ppw+10, r2y+6)
 
   -- ── Row 3: Global Pos (translation) + Global Move (direction) ──
   local r3y=by+54
@@ -881,37 +940,49 @@ local function drawStatusBar(bx,by,bw,bh)
 
   -- Slider helper: draws a scrubber bar with fill from centre
   local function sb3slider(id, val, lbl, lx, ly, fw, lo, hi)
-    local hot=(ui.sliderDrag.active and ui.sliderDrag.id==id)
+    local focused=(ui.focus_field==id)
+    local hot=(ui.sliderDrag.active and ui.sliderDrag.id==id) or focused
     -- label
     setColor(hot and 0.70 or 0.45, hot and 0.70 or 0.45, hot and 0.80 or 0.58)
     drawStr(lbl, lx, ly+5)
     local sx=lx+measureStr(lbl)+4
-    -- track
-    setColor(0.09,0.10,0.16); fillRect(sx,ly+2,fw,18)
-    -- fill from centre
-    local clamped=clamp(val,lo,hi)
-    local t=(clamped-lo)/(hi-lo)
-    local midx=sx+fw*0.5; local ex=sx+fw*t
-    if val>=0 then
-      setColor(hot and 0.30 or 0.18, hot and 0.80 or 0.52, hot and 0.65 or 0.48)
-      if ex>midx then fillRect(midx,ly+5,ex-midx,12) end
-    else
-      setColor(hot and 0.80 or 0.52, hot and 0.35 or 0.25, hot and 0.30 or 0.20)
-      if midx>ex then fillRect(ex,ly+5,midx-ex,12) end
+    -- track bg (dimmed when focused to make text stand out)
+    setColor(focused and 0.06 or 0.09, focused and 0.08 or 0.10, focused and 0.12 or 0.16)
+    fillRect(sx,ly+2,fw,18)
+    if not focused then
+      -- fill from centre
+      local clamped=clamp(val,lo,hi)
+      local t=(clamped-lo)/(hi-lo)
+      local midx=sx+fw*0.5; local ex=sx+fw*t
+      if val>=0 then
+        setColor(hot and 0.30 or 0.18, hot and 0.80 or 0.52, hot and 0.65 or 0.48)
+        if ex>midx then fillRect(midx,ly+5,ex-midx,12) end
+      else
+        setColor(hot and 0.80 or 0.52, hot and 0.35 or 0.25, hot and 0.30 or 0.20)
+        if midx>ex then fillRect(ex,ly+5,midx-ex,12) end
+      end
+      -- centre tick
+      setColor(0.28,0.28,0.38); fillRect(midx-1,ly+3,2,16)
     end
-    -- centre tick
-    setColor(0.28,0.28,0.38); fillRect(midx-1,ly+3,2,16)
-    -- border
-    setColor(hot and 0.45 or 0.22, hot and 0.90 or 0.38, hot and 0.80 or 0.52)
+    -- border — bright teal when focused, normal otherwise
+    if focused then
+      setColor(0.36,0.83,0.62)
+    else
+      setColor(hot and 0.45 or 0.22, hot and 0.90 or 0.38, hot and 0.80 or 0.52)
+    end
     drawRect(sx,ly+2,fw,18)
-    -- value text
-    setColor(hot and 1 or 0.88, hot and 1 or 0.88, 1)
-    drawStr(string.format("%.3f",val), sx+4, ly+5)
+    -- value text (or typed text with cursor when focused)
+    setColor(focused and 1 or (hot and 1 or 0.88), focused and 1 or (hot and 1 or 0.88), 1)
+    if focused then
+      drawStr(ui.focus_text.."|", sx+4, ly+5)
+    else
+      drawStr(string.format("%.3f",val), sx+4, ly+5)
+    end
   end
 
   local fw3=72  -- slider width
   local lx=bx+8
-  setColor(0.50,0.50,0.62); drawStr("Pos", lx, r3y+5); lx=lx+28
+  setColor(0.50,0.50,0.62); drawStr("Offset", lx, r3y+5); lx=lx+50
   sb3slider("gTX",globalTransX,"X",lx,r3y,fw3,-2,2); lx=lx+measureStr("X")+4+fw3+5
   sb3slider("gTY",globalTransY,"Y",lx,r3y,fw3,-2,2); lx=lx+measureStr("Y")+4+fw3+5
   sb3slider("gTZ",globalTransZ,"Z",lx,r3y,fw3,-2,2); lx=lx+measureStr("Z")+4+fw3+16
@@ -920,6 +991,15 @@ local function drawStatusBar(bx,by,bw,bh)
   sb3slider("gMX",globalMoveX,"X",lx,r3y,fw3,-2,2); lx=lx+measureStr("X")+4+fw3+5
   sb3slider("gMY",globalMoveY,"Y",lx,r3y,fw3,-2,2); lx=lx+measureStr("Y")+4+fw3+5
   sb3slider("gMZ",globalMoveZ,"Z",lx,r3y,fw3,-2,2)
+
+  -- ── Row 4: Global Rotation — Pitch / Yaw / Roll ──
+  local r4y=by+80
+  setColor(0.12,0.12,0.17); fillRect(bx,r4y,bw,1)
+  local lx4=bx+8
+  setColor(0.50,0.50,0.62); drawStr("Rotate", lx4, r4y+5); lx4=lx4+54
+  sb3slider("gPitch",globalPitch,"Pt",lx4,r4y,fw3,-180,180); lx4=lx4+measureStr("Pt")+4+fw3+5
+  sb3slider("gYaw",  globalYaw,  "Yw",lx4,r4y,fw3,-180,180); lx4=lx4+measureStr("Yw")+4+fw3+5
+  sb3slider("gRoll", globalRoll, "Rl",lx4,r4y,fw3,-180,180)
 
   -- version (bottom-right of row 1)
   local vs=SCRIPT_VERSION
@@ -1072,6 +1152,77 @@ local function presetHexagonal(rings, c)
   statusMsg=string.format("Preset 'Hexagonal' — %d instances",#instances)
 end
 
+-- ── Generic unit-cell helper ──────────────────────────────────
+-- Returns Cartesian lattice vectors (a, b, c) for a parallelepiped
+-- defined by lengths a_len/b_len/c_len and inter-vector angles alpha/beta/gamma (degrees).
+-- Conventions: a along X, b in XY plane, c general.
+local function latticeVecs(a_len, b_len, c_len, alpha_deg, beta_deg, gamma_deg)
+  local d2r = math.pi/180
+  local ca, cb, cg = cos(alpha_deg*d2r), cos(beta_deg*d2r), cos(gamma_deg*d2r)
+  local sg = math.max(sin(gamma_deg*d2r), 1e-6)
+  local Vf = sqrt(math.max(0, 1-ca*ca-cb*cb-cg*cg+2*ca*cb*cg))
+  return
+    a_len, 0,   0,                                 -- a⃗
+    b_len*cg, b_len*sg, 0,                         -- b⃗
+    c_len*cb, c_len*(ca-cb*cg)/sg, c_len*Vf/sg     -- c⃗
+end
+
+-- Place 8 corner instances of a unit cell, centered at origin.
+-- Returns instance count added.
+local function unitCellPreset(pfx, a_len, b_len, c_len, al, be, ga, ox, oy, oz, rate_, mode_)
+  local ax,ay,az, bx_,by_,bz_, cx_,cy_,cz_ = latticeVecs(a_len,b_len,c_len,al,be,ga)
+  local cx0=(ax+bx_+cx_)*0.5; local cy0=(ay+by_+cy_)*0.5; local cz0=(az+bz_+cz_)*0.5
+  clearAll()
+  local ci=1
+  for n1=0,1 do for n2=0,1 do for n3=0,1 do
+    local x=n1*ax+n2*bx_+n3*cx_-cx0
+    local y=n1*ay+n2*by_+n3*cy_-cy0
+    local z=n1*az+n2*bz_+n3*cz_-cz0
+    addInstance({
+      name=string.format("%s%d%d%d",pfx,n1,n2,n3),
+      startX=tostring(x), startY=tostring(y), startZ=tostring(z),
+      offsetX=tostring(ox), offsetY=tostring(oy), offsetZ=tostring(oz),
+      rate=tostring(rate_), stepCount="64",
+      repetitionMode=mode_,
+      colorIdx=((ci-1)%#PALETTE)+1,
+    })
+    ci=ci+1
+  end end end
+  return ci-1
+end
+
+-- ── Primitive-lattice unit-cell presets ───────────────────────
+-- Each places 8 instances at the corners of the crystallographic unit cell.
+-- α=angle(b⃗,c⃗)  β=angle(a⃗,c⃗)  γ=angle(a⃗,b⃗)
+
+local function presetOrthorhombic(a, b, c)
+  -- a≠b≠c, α=β=γ=90°  →  rectangular parallelepiped, different side lengths
+  a=a or 0.55; b=b or 0.85; c=c or 1.25
+  local n=unitCellPreset("O",a,b,c, 90,90,90, 0.012,0.018,0.025, 2, REP.PINGPONG)
+  statusMsg=string.format("Preset 'Orthorhombic' — %d instances",n)
+end
+
+local function presetRhombohedral(a, alpha_deg)
+  -- a=b=c, α=β=γ≠90°  →  equal sides, all oblique angles
+  a=a or 0.80; alpha_deg=alpha_deg or 68
+  local n=unitCellPreset("R",a,a,a, alpha_deg,alpha_deg,alpha_deg, 0.015,0.015,0.015, 1.5, REP.PINGPONG)
+  statusMsg=string.format("Preset 'Rhombohedral' — %d instances",n)
+end
+
+local function presetMonoclinic(a, b, c, beta_deg)
+  -- a≠b≠c, α=γ=90°, β≠90°  →  one pair of tilted faces
+  a=a or 0.65; b=b or 0.95; c=c or 1.20; beta_deg=beta_deg or 108
+  local n=unitCellPreset("M",a,b,c, 90,beta_deg,90, 0.010,0.015,0.020, 2, REP.PINGPONG)
+  statusMsg=string.format("Preset 'Monoclinic' — %d instances",n)
+end
+
+local function presetTriclinic(a, b, c)
+  -- a≠b≠c, α≠β≠γ≠90°  →  fully asymmetric parallelepiped
+  a=a or 0.65; b=b or 0.85; c=c or 1.05
+  local n=unitCellPreset("Tc",a,b,c, 78,85,68, 0.008,0.012,0.018, 1.5, REP.PINGPONG)
+  statusMsg=string.format("Preset 'Triclinic' — %d instances",n)
+end
+
 local function presetRandomSwarm(count, radius)
   count = count or 24; radius = radius or 1.5
   clearAll()
@@ -1198,19 +1349,61 @@ end
 -- ============================================================
 
 local OSC_PYTHON = [[
-import socket, struct, sys, time
+import socket,struct,sys,time,threading,os,tempfile
+
 def osc_str(s):
-    b=s.encode()+b'\x00';n=4-len(b)%4;return b+b'\x00'*n
-def osc_float(f):
-    return struct.pack('>f',f)
-def osc_int(i):
-    return struct.pack('>i',i)
+    b=s.encode()+b'\x00';pad=(4-len(b)%4)%4;return b+b'\x00'*pad
+def osc_float(f): return struct.pack('>f',f)
+def osc_int(i):   return struct.pack('>i',i)
 def build(addr,*args):
     msg=osc_str(addr)+osc_str(','+(''.join('i' if isinstance(a,int) else 'f' for a in args)))
     for a in args: msg+=osc_int(a) if isinstance(a,int) else osc_float(a)
     return msg
-sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+
+def parse_osc(data):
+    def read_str(buf,pos):
+        end=buf.index(b'\x00',pos); s=buf[pos:end].decode('utf-8','ignore')
+        return s,(end+1+3)&~3
+    try:
+        addr,pos=read_str(data,0); tags,pos=read_str(data,pos); args=[]
+        for t in tags[1:]:
+            if t=='f': args.append(struct.unpack('>f',data[pos:pos+4])[0]); pos+=4
+            elif t=='i': args.append(float(struct.unpack('>i',data[pos:pos+4])[0])); pos+=4
+        return addr,args
+    except: return None,[]
+
 host=sys.argv[1]; port=int(sys.argv[2])
+state_file=sys.argv[3] if len(sys.argv)>3 else os.path.join(tempfile.gettempdir(),'kristall_osc_in.txt')
+in_port=port+1
+sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+
+def receiver():
+    rsock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+    try: rsock.bind(('',in_port)); rsock.settimeout(1.0)
+    except Exception as e:
+        with open(state_file,'w') as f: f.write('error='+str(e)+'\n')
+        return
+    state={}
+    while True:
+        try:
+            data,_=rsock.recvfrom(1024)
+            addr,args=parse_osc(data)
+            if not addr or not args: continue
+            v=float(args[0])
+            if   addr=='/kristall/pitch': state['pitch']=v
+            elif addr=='/kristall/yaw':   state['yaw']=v
+            elif addr=='/kristall/roll':  state['roll']=v
+            elif addr=='/kristall/rotate' and len(args)>=3:
+                state['pitch']=float(args[0]); state['yaw']=float(args[1]); state['roll']=float(args[2])
+            tmp=state_file+'.tmp'
+            with open(tmp,'w') as f:
+                for k,val in state.items(): f.write(f'{k}={val}\n')
+            os.replace(tmp,state_file)
+        except socket.timeout: continue
+        except: break
+
+threading.Thread(target=receiver,daemon=True).start()
+
 for line in sys.stdin:
     line=line.strip()
     if not line: continue
@@ -1230,8 +1423,13 @@ local function oscConnect()
   local tmp=os.tmpname()..".py"
   local f=io.open(tmp,"w"); if not f then osc.status="Tmp write fail"; return end
   f:write(OSC_PYTHON); f:close()
-  local cmd=string.format("python3 %s %s %s 2>/dev/null || python %s %s %s 2>/dev/null",
-    tmp, osc.host, osc.port, tmp, osc.host, osc.port)
+  -- state file for OSC input (pitch/yaw/roll from receiver thread)
+  local sf=os.tmpname().."_kristall_osc_in.txt"
+  osc.state_file=sf
+  osc.in_port=(tonumber(osc.port) or 9001)+1
+  local cmd=string.format(
+    "python3 %s %s %s %s 2>/dev/null || python %s %s %s %s 2>/dev/null",
+    tmp, osc.host, osc.port, sf, tmp, osc.host, osc.port, sf)
   osc.pipe=io.popen(cmd,"w")
   if osc.pipe then osc.ok=true; osc.status="Connected"; osc.tmp=tmp
   else osc.status="Failed — check Python install" end
@@ -1241,11 +1439,14 @@ local function oscDisconnect()
   if osc.pipe then pcall(function() osc.pipe:close() end); osc.pipe=nil end
   osc.ok=false; osc.status="Disconnected"
   if osc.tmp then os.remove(osc.tmp); osc.tmp=nil end
+  if osc.state_file then os.remove(osc.state_file); osc.state_file=nil end
+  osc.in_port=0
 end
 
 -- ============================================================
--- JSFX CONTROLLER  (track named "Kristall Controller")
--- Sliders: 0=Preset Trigger, 1=Smoothing, 2=Glide Time, 3=Rate
+-- JSFX CONTROLLER  (JS_ICST_Kristall_Controller.jsfx on any track)
+-- param 0=Preset, 1=Rate, 2=RateMode, 3=Smoothing, 4=Glide
+-- param 5=Pitch(-180..180°), 6=Yaw(-180..180°), 7=Roll(-180..180°)
 -- ============================================================
 local ctrl = {
   track      = nil,
@@ -1272,6 +1473,31 @@ local function ctrlFind()
   end
 end
 
+-- Read OSC input state file written by the Python receiver thread.
+-- Updates globalPitch/globalYaw/globalRoll when the sender sends
+--   /kristall/pitch  <float degrees>
+--   /kristall/yaw    <float degrees>
+--   /kristall/roll   <float degrees>
+--   /kristall/rotate <float pitch> <float yaw> <float roll>
+local oscInReadTimer = 0
+local function readOscInput(dt)
+  if not osc.ok or not osc.state_file then return end
+  oscInReadTimer = oscInReadTimer + dt
+  if oscInReadTimer < 0.05 then return end  -- poll at ~20 Hz
+  oscInReadTimer = 0
+  local f=io.open(osc.state_file,"r"); if not f then return end
+  local content=f:read("*a"); f:close()
+  for key,val in content:gmatch("(%a+)=(%-?%d+%.?%d*)") do
+    local v=tonumber(val)
+    if v then
+      if     key=="pitch" then globalPitch=clamp(v,-180,180)
+      elseif key=="yaw"   then globalYaw  =clamp(v,-180,180)
+      elseif key=="roll"  then globalRoll =clamp(v,-180,180)
+      end
+    end
+  end
+end
+
 local function ctrlPoll(dt)
   -- Periodically rescan if not connected
   if not ctrl.track or ctrl.fxIdx < 0 then
@@ -1286,12 +1512,14 @@ local function ctrlPoll(dt)
     ctrl.track=nil; ctrl.fxIdx=-1; return
   end
 
-  -- slider1=Preset, slider2=Rate, slider3=RateMode, slider4=Smoothing, slider5=Glide
-  local preset   = math.floor(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 0) + 0.5)
-  local rate     = reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 1)
-  local rmode    = math.floor(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 2) + 0.5)
-  local smooth   = math.floor(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 3) + 0.5)
-  local glide    = reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 4)
+  -- param index = slider number − 1
+  local preset = math.floor(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 0) + 0.5)
+  local rate   = reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 1)
+  local rmode  = math.floor(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 2) + 0.5)
+  local smooth = math.floor(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 3) + 0.5)
+  local glide  = reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 4)
+  -- params 5/6/7 (slider6/7/8): Pitch/Yaw/Roll in degrees — only present in JSFX v0.2+
+  local numP   = reaper.TrackFX_GetNumParams(ctrl.track, ctrl.fxIdx)
 
   -- Preset trigger: fire on change away from 0
   if preset ~= ctrl.lastPreset then
@@ -1300,6 +1528,10 @@ local function ctrlPoll(dt)
     elseif preset == 2 then presetTetragonal(3, 0.3, 0.6)
     elseif preset == 3 then presetHexagonal(2, 0.4)
     elseif preset == 4 then presetRandomSwarm(12, 0.8)
+    elseif preset == 5 then presetOrthorhombic()
+    elseif preset == 6 then presetRhombohedral()
+    elseif preset == 7 then presetMonoclinic()
+    elseif preset == 8 then presetTriclinic()
     end
   end
 
@@ -1313,6 +1545,14 @@ local function ctrlPoll(dt)
   for _, inst in ipairs(instances) do
     inst.smoothingEnabled = smoothBool
     inst.glideTime        = glideStr
+  end
+
+  -- MIDI/JSFX Pitch/Yaw/Roll via params 5-7 (degrees, -180..180)
+  -- Only read when the JSFX has slider6/7/8 (numP >= 8).
+  if numP >= 8 then
+    globalPitch = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 5), -180, 180)
+    globalYaw   = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 6), -180, 180)
+    globalRoll  = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 7), -180, 180)
   end
 end
 
@@ -1360,6 +1600,9 @@ local function commitFocus()
   elseif ui.focus_field=="gMX" then local v=tonumber(ui.focus_text); if v then globalMoveX=v end
   elseif ui.focus_field=="gMY" then local v=tonumber(ui.focus_text); if v then globalMoveY=v end
   elseif ui.focus_field=="gMZ" then local v=tonumber(ui.focus_text); if v then globalMoveZ=v end
+  elseif ui.focus_field=="gPitch" then local v=tonumber(ui.focus_text); if v then globalPitch=v end
+  elseif ui.focus_field=="gYaw"   then local v=tonumber(ui.focus_text); if v then globalYaw=v end
+  elseif ui.focus_field=="gRoll"  then local v=tonumber(ui.focus_text); if v then globalRoll=v end
   else
     local inst=instances[selectedIdx]
     local key=ui.focus_key
@@ -1373,7 +1616,7 @@ local function commitFocus()
 end
 
 local WIN_W, WIN_H       -- updated each frame from gfx
-local STAT_H = 80  -- row1=28px + row2=26px + row3=26px
+local STAT_H = 128  -- row1=28px + row2=26px + row3=26px + row4=26px + presetBar=22px
 local PREV_H_FRAC = 0.45  -- fraction of right column for lattice preview
 
 local function handleInput()
@@ -1440,8 +1683,28 @@ local function handleInput()
       elseif sd.id=="gTZ" then globalTransZ=newVal
       elseif sd.id=="gMX" then globalMoveX=newVal
       elseif sd.id=="gMY" then globalMoveY=newVal
-      elseif sd.id=="gMZ" then globalMoveZ=newVal end
+      elseif sd.id=="gMZ" then globalMoveZ=newVal
+      elseif sd.id=="gPitch" then globalPitch=newVal
+      elseif sd.id=="gYaw"   then globalYaw=newVal
+      elseif sd.id=="gRoll"  then globalRoll=newVal end
     else
+      -- Mouse released: if barely moved, treat as click → open text edit
+      local sd=ui.sliderDrag
+      if math.abs(mx - sd.startMx) < 4 then
+        local cur
+        if     sd.id=="gTX"    then cur=globalTransX
+        elseif sd.id=="gTY"    then cur=globalTransY
+        elseif sd.id=="gTZ"    then cur=globalTransZ
+        elseif sd.id=="gMX"    then cur=globalMoveX
+        elseif sd.id=="gMY"    then cur=globalMoveY
+        elseif sd.id=="gMZ"    then cur=globalMoveZ
+        elseif sd.id=="gPitch" then cur=globalPitch
+        elseif sd.id=="gYaw"   then cur=globalYaw
+        elseif sd.id=="gRoll"  then cur=globalRoll
+        end
+        ui.focus_field = sd.id
+        ui.focus_text  = string.format("%.3f", cur or 0)
+      end
       ui.sliderDrag.active=false
     end
   end
@@ -1602,8 +1865,9 @@ local function handleInput()
     local bpmx=spdx+spdw+6; local bpmw=48
     if hit(mx,my,spdx,r2y+2,spdw,18) then
       commitFocus()
+      ui.sliderDrag.active=false  -- cancel any active slider drag
       ui.focus_field="globalRate"
-      ui.focus_text=""  -- clear so user types a fresh value
+      ui.focus_text=""
     end
     if hit(mx,my,bpmx,r2y+2,bpmw,18) then
       commitFocus()
@@ -1630,8 +1894,20 @@ local function handleInput()
     if hit(mx,my,stx_,r2y+2,stw_,18) then
       commitFocus()
       for _,inst in ipairs(instances) do resetInstance(inst) end
-      globalPaused=false
+      globalPaused=true
       statusMsg="Stopped — all instances reset"
+    end
+    -- Global Ping-Pong toggle
+    local ppx_=stx_+stw_+6; local ppw_=34
+    if hit(mx,my,ppx_,r2y+2,ppw_,18) then
+      commitFocus()
+      globalPingPong = not globalPingPong
+      if globalPingPong then
+        globalPingPongDir = 1  -- reset direction when enabling
+        statusMsg = "Global Ping-Pong ON — whole figure reverses together"
+      else
+        statusMsg = "Global Ping-Pong OFF"
+      end
     end
 
     -- Row 3: Global Pos + Move sliders
@@ -1652,7 +1928,7 @@ local function handleInput()
       end
       return false
     end
-    local lx3=8+28  -- after "Pos" label (bx=0)
+    local lx3=8+50  -- after "Offset" label (bx=0)
     r3sliderHit("gTX","X",lx3,-2,2,0.01); lx3=lx3+measureStr("X")+4+fw3+5
     r3sliderHit("gTY","Y",lx3,-2,2,0.01); lx3=lx3+measureStr("Y")+4+fw3+5
     r3sliderHit("gTZ","Z",lx3,-2,2,0.01); lx3=lx3+measureStr("Z")+4+fw3+16+40
@@ -1660,16 +1936,46 @@ local function handleInput()
     r3sliderHit("gMY","Y",lx3,-2,2,0.01); lx3=lx3+measureStr("Y")+4+fw3+5
     r3sliderHit("gMZ","Z",lx3,-2,2,0.01)
 
-    -- Preset quick-select buttons (presets 1-4)
-    local presets={"Cubic","Tetragonal","Hexagonal","RandomSwarm"}
-    for pi,pname in ipairs(presets) do
-      local bx2=right_x+(pi-1)*floor(right_w/4); local by2=sb_y+STAT_H-22
-      if hit(mx,my,bx2,by2,floor(right_w/4)-2,18) then
+    -- Row 4: Rotate sliders (Pitch / Yaw / Roll)
+    local r4y=sb_y+80
+    local function r4sliderHit(id, lbl, lx, lo, hi, scale)
+      local sx=lx+measureStr(lbl)+4
+      if hit(mx,my,sx,r4y+2,fw3,18) then
         commitFocus()
-        if pname=="Cubic"      then presetCubic(2,1.0)
-        elseif pname=="Tetragonal" then presetTetragonal(3,0.8,1.4)
-        elseif pname=="Hexagonal"  then presetHexagonal(2,1.2)
-        elseif pname=="RandomSwarm"then presetRandomSwarm(20,1.5) end
+        local cur
+        if     id=="gPitch" then cur=globalPitch
+        elseif id=="gYaw"   then cur=globalYaw
+        elseif id=="gRoll"  then cur=globalRoll end
+        ui.sliderDrag={active=true,id=id,startMx=mx,startVal=cur or 0,lo=lo,hi=hi,scale=scale}
+        return true
+      end
+      return false
+    end
+    local lx4=8+54  -- after "Rotate" label
+    r4sliderHit("gPitch","Pt",lx4,-180,180,0.5); lx4=lx4+measureStr("Pt")+4+fw3+5
+    r4sliderHit("gYaw",  "Yw",lx4,-180,180,0.5); lx4=lx4+measureStr("Yw")+4+fw3+5
+    r4sliderHit("gRoll", "Rl",lx4,-180,180,0.5)
+
+    -- Preset quick-select bar (row 5 — 8 buttons across full width)
+    local pbar_y=sb_y+106; local pbar_h=22
+    local n8=#PRESET_NAMES; local pw8=floor(WIN_W/n8)
+    ui.hover_preset=nil
+    for pi=1,n8 do
+      local bx2=(pi-1)*pw8; local bw2=pw8-2
+      if hit(mx,my,bx2,pbar_y,bw2,pbar_h) then
+        ui.hover_preset=pi
+        if clicked then
+          commitFocus()
+          if     pi==1 then presetCubic(2,1.0)
+          elseif pi==2 then presetTetragonal(3,0.8,1.4)
+          elseif pi==3 then presetHexagonal(2,1.2)
+          elseif pi==4 then presetRandomSwarm(20,1.5)
+          elseif pi==5 then presetOrthorhombic()
+          elseif pi==6 then presetRhombohedral()
+          elseif pi==7 then presetMonoclinic()
+          elseif pi==8 then presetTriclinic()
+          end
+        end
       end
     end
   end
@@ -1716,16 +2022,31 @@ end
 -- DRAW FRAME
 -- ============================================================
 
+-- All 8 built-in crystal presets.
+-- PRESET_NAMES[i] is the display label; PRESET_COUNT is used for JSFX dispatch.
+PRESET_NAMES = {
+  "Cubic","Tetragonal","Hexagonal","Rnd.Swarm",
+  "Orthorhombic","Rhombohedral","Monoclinic","Triclinic"
+}
+
 local function drawPresetBar(bx,by,bw,bh)
-  setColor(0.09,0.09,0.13); fillRect(bx,by,bw,bh)
-  local names={"1 Cubic","2 Tetra","3 Hex","4 Swarm"}
-  local pw=floor(bw/#names)
-  for i,n in ipairs(names) do
+  setColor(0.07,0.07,0.10); fillRect(bx,by,bw,bh)
+  setColor(0.14,0.14,0.20); fillRect(bx,by,bw,1)  -- top divider
+  local n=#PRESET_NAMES; local pw=floor(bw/n)
+  for i,label in ipairs(PRESET_NAMES) do
     local px=bx+(i-1)*pw
     local hot=(ui.hover_preset==i)
-    setColor(hot and 0.18 or 0.12, hot and 0.26 or 0.16, hot and 0.42 or 0.24)
-    fillRect(px+1,by+1,pw-2,bh-2)
-    setColor(0.36,0.83,0.62); drawStr(n, px+6, by+4)
+    -- slightly different hue for the 4 crystallographic presets (5-8)
+    local r = i<=4 and (hot and 0.18 or 0.12) or (hot and 0.20 or 0.13)
+    local g = i<=4 and (hot and 0.26 or 0.16) or (hot and 0.22 or 0.13)
+    local b_ = i<=4 and (hot and 0.42 or 0.24) or (hot and 0.36 or 0.20)
+    setColor(r,g,b_); fillRect(px+1,by+2,pw-2,bh-3)
+    -- label colour: teal for existing, amber for new crystallographic
+    if i<=4 then setColor(0.36,0.83,0.62)
+    else         setColor(0.95,0.80,0.30) end
+    drawStr(i.." "..label, px+5, by+5)
+    -- separator
+    if i<n then setColor(0.18,0.18,0.25); fillRect(px+pw,by+2,1,bh-4) end
   end
 end
 
@@ -1747,8 +2068,11 @@ local function drawFrame()
   -- param panel (bottom of right column)
   drawParamPanel(right_x, prev_h, right_w, content_h-prev_h)
 
-  -- status bar (very bottom)
+  -- status bar (rows 1-4)
   drawStatusBar(0, content_h, w, STAT_H)
+
+  -- preset quick-select bar (row 5 — last 22 px of STAT_H)
+  drawPresetBar(0, content_h+106, w, 22)
 
   -- preset dropdown overlay (on top of everything)
   drawPresetDropdown(0, content_h, w)
@@ -1767,11 +2091,15 @@ local function mainLoop()
   local dt=clamp(now-last_time, 0, 0.1)
   last_time=now
 
-  -- JSFX controller (reads preset trigger + smoothing/glide/rate)
+  -- JSFX controller (reads preset trigger + smoothing/glide/rate + MIDI Pt/Yw/Rl)
   ctrlPoll(dt)
 
-  -- process all instances
+  -- OSC input: update Pt/Yw/Rl from incoming /kristall/pitch|yaw|roll messages
+  readOscInput(dt)
+
+  -- process all instances, then apply global Pt/Yw/Rl + Offset (runs even when paused)
   updateAllInstances(dt)
+  applyGlobalTransforms()
 
   -- OSC preview
   if osc.ok then oscSendPreview() end
