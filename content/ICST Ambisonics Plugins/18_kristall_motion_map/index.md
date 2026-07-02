@@ -5,460 +5,326 @@ weight: 90
 draft: false
 toc: true
 translationKey: kristall-motion-map
-description: "Step-by-step guide to ICST Kristall Motion Map — a modular 3D crystal-lattice motion system for up to 64 AmbiEncoder sources in REAPER. Covers instances, transforms, quantization, smoothing, interaction, and presets."
+description: "Installation and user guide for JS_ICST_Kristall_Motion_Map.lua — a standalone REAPER script that moves up to 64 AmbiEncoder sources through a 3D crystal-lattice step sequencer with real-time GUI, OSC output, and named presets."
 ---
 
 Level: Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: 0.1.0**
 
-ICST Kristall Motion Map generates **three-dimensional lattice-based spatial movement** for up to 64 AmbiEncoder sources. Each audio source is mapped to a point in a crystal lattice; a step sequencer walks the source through the lattice while transforms (rotation, scale, bounds, quantization) and a distance-based interaction engine shape the movement. Results can be written as REAPER automation or streamed live via OSC.
-
-> **Script file:** `JS_ICST_Kristall_Motion_Map.lua` — see [Downloads](/icst-ambisonics-plugins/08_downloads/)
+ICST Kristall Motion Map is a **standalone REAPER Lua script** with a real-time graphical interface. It arranges up to 64 AmbiEncoder sources as points in a 3D crystal lattice and moves them through space using a step sequencer. Motion can be monitored live via the isometric preview, sent to an AmbiEncoder via OSC, and shaped with per-instance transforms, quantization, smoothing, and interaction.
 
 ---
 
-## 1. What is a crystal lattice?
+## 1. Requirements
 
-A crystal lattice is a **repeating 3D grid** of positions defined by a unit cell — the smallest repeating unit. The seven classical crystal systems differ in axis lengths and angles:
-
-| System | Axes | Angles | Example shape |
-|--------|------|--------|---------------|
-| Cubic | a = b = c | α = β = γ = 90° | Cube |
-| Tetragonal | a = b ≠ c | α = β = γ = 90° | Elongated cube |
-| Orthorhombic | a ≠ b ≠ c | α = β = γ = 90° | Brick |
-| Hexagonal | a = b ≠ c | α = β = 90°, γ = 120° | Honeycomb column |
-| Rhombohedral | a = b = c | α = β = γ ≠ 90° | Skewed cube |
-| Monoclinic | a ≠ b ≠ c | α = γ = 90°, β ≠ 90° | Tilted brick |
-| Triclinic | a ≠ b ≠ c | α ≠ β ≠ γ ≠ 90° | Fully skewed |
-
-In ICST Kristall Motion each **instance** represents one lattice point. Its position is computed as:
-
-```
-position = start + currentStep × offset
-```
-
-Transforms (rotation, scale, bounds) are then applied before output.
+- **REAPER** v6 or later (v7 recommended)
+- **ICST AmbiEncoder_64** on the target track — see [Installation](/icst-ambisonics-plugins/02_installation/)
+- **Python 3** with `python-osc` — required only for the live OSC preview bridge
 
 ---
 
-## 2. Requirements
+## 2. Installation
 
-- **REAPER** v6 or later
-- **ICST AmbiEncoder_64** on the target track (see [Installation](/icst-ambisonics-plugins/02_installation/))
-- `JS_ICST_Kristall_Motion_Map.lua` loaded via *Actions → Load ReaScript*
-- **Python 3** — required only for live OSC preview
+### Step 1 — Download the script
+
+Download `JS_ICST_Kristall_Motion_Map.lua` from the [Downloads page](/icst-ambisonics-plugins/08_downloads/) and save it anywhere on your computer — for example `~/REAPER/Scripts/`.
+
+### Step 2 — Load as a ReaScript
+
+1. In REAPER, go to **Actions → Load ReaScript…**
+2. Navigate to `JS_ICST_Kristall_Motion_Map.lua` and click **Open**.
+3. REAPER adds the script to the Actions list. Run it once — the Kristall Motion Map window opens.
+
+### Step 3 — Optional: launcher file
+
+If you prefer to keep the script in a version-controlled folder, create a one-line launcher anywhere in your REAPER Scripts directory:
+
+```lua
+-- JS_ICST_Kristall_Motion_Map_Launcher.lua
+dofile('/path/to/JS_ICST_Kristall_Motion_Map.lua')
+```
+
+Load this launcher as the ReaScript instead. To reload after editing the main script, close the Kristall window, then re-run the launcher action.
+
+---
+
+## 3. The interface at a glance
+
+The window is divided into four areas:
+
+```
+┌─────────────────┬──────────────────────────────────────┐
+│  Instance list  │       Lattice preview (3D iso)        │
+│                 ├──────────────────────────────────────┤
+│  [+Add] [-Rem]  │         Parameter panel               │
+│  [Dup]          │    (scrollable, per-instance)         │
+├─────────────────┴──────────────────────────────────────┤
+│  Status bar — Row 1: OSC · Preset                      │
+│  Status bar — Row 2: Speed · BPM · Fwd/Rev · Pause · Stop │
+│  Status bar — Row 3: Pos X Y Z · Move X Y Z           │
+└────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 4. Instance list
+
+The left panel lists all active instances. Each row shows the instance number, color dot, name, and current step count.
+
+| Control | Action |
+|---------|--------|
+| Click a row | Select that instance; parameter panel updates |
+| **+ Add** | Create a new instance with default settings |
+| **− Rem** | Delete the selected instance |
+| **Dup** | Duplicate the selected instance |
+| Keyboard **A** | Add instance |
+| Keyboard **D** | Duplicate selected |
+| Keyboard **R** | Reset selected instance to step 0 |
 
 {{< notice warning >}}
-The Lua module exposes a **host adapter** (Section 3 of the script). Before use, replace the six stub functions (`declareParam`, `getParam`, `setParam`, `drawPoint`, `drawLine`, `getTransportState`) with REAPER-specific calls. Without adaptation the script runs as a pure logic module with no UI or output.
+The maximum is **64 instances**. Adding beyond this limit has no effect.
 {{< /notice >}}
 
 ---
 
-## 3. Installation
+## 5. Lattice preview
 
-### Step 1 — Download and place the script
+The top-right panel shows all enabled instances as colored dots in an isometric 3D projection. A unit-cube guide is drawn in the background.
 
-1. Download `JS_ICST_Kristall_Motion_Map.lua` from the [Downloads page](/icst-ambisonics-plugins/08_downloads/).
-2. Place the file in your REAPER Scripts folder:
-   - **macOS:** `~/Library/Application Support/REAPER/Scripts/`
-   - **Windows:** `%APPDATA%\REAPER\Scripts\`
+| Interaction | Effect |
+|-------------|--------|
+| Drag a dot | Move the instance in the XY plane (updates Start X and Start Y) |
+| Shift + drag | Move the instance along the Z axis (updates Start Z) |
+| Hover | Shows instance name and a highlight ring |
 
-### Step 2 — Adapt the host functions
-
-Open the script in a text editor and locate **SECTION 3 — HOST ADAPTER STUBS** (lines ~80–130). Replace each stub with the appropriate REAPER Lua call:
-
-```lua
--- Example REAPER adapter for declareParam using JS_ReaScriptAPI
-local function declareParam(id, label, group, min, max, default)
-  -- Map to your slider/knob system here
-end
-
-local function getTransportState()
-  local playing = reaper.GetPlayState() == 1
-  local _, bpm  = reaper.GetProjectTimeSignature2(0)
-  local time    = reaper.GetPlayPosition()
-  return { playing = playing, bpm = bpm, time = time }
-end
-```
-
-All other sections are pure Lua and need no modification.
-
-### Step 3 — Load the script into REAPER
-
-1. Open REAPER.
-2. Go to **Actions → Load ReaScript…**
-3. Navigate to your Scripts folder and select `JS_ICST_Kristall_Motion_Map.lua`.
-4. Click **Open** — REAPER confirms: *"Script loaded successfully."*
-
-### Step 4 — Initialise the module
-
-Call `init()` once at startup (your wrapper script should do this):
-
-```lua
-local KM = dofile(reaper.GetResourcePath() .. "/Scripts/JS_ICST_Kristall_Motion_Map.lua")
-KM.init()   -- declares all UI parameters and boots a default 2×2×2 cubic lattice
-```
-
-From then on, call `KM.onUpdate(dt)` on every frame, where `dt` is the elapsed time in seconds.
+Edges are drawn between any two instances within `EDGE_DIST` world units — this gives a quick visual of the lattice topology.
 
 ---
 
-## 4. Core concepts
+## 6. Parameter panel
 
-### Instances
+The right column below the preview shows all parameters for the **selected instance**. Use the mouse wheel to scroll.
 
-An **instance** is one crystal-lattice point — one moving audio source. Each instance has its own position, offset vector, rate, transform stack, and interaction settings. Up to **64 instances** can run simultaneously.
+### Identity
 
-### Step sequencer
-
-Each instance has an internal step counter. On every beat subdivision (controlled by **Rate**), the step counter advances by 1. The position is computed as:
-
-```
-rawPos = start + currentStep × effectiveOffset
-```
-
-Three **repetition modes** control what happens at the end:
-
-- **Infinite** — the step counter runs forever (position drifts away from the origin).
-- **Finite** — stops at `stepCount − 1` and holds the final position.
-- **Pingpong** — reverses direction at both ends, creating a back-and-forth motion.
-
-### The transform pipeline
-
-Every frame, each instance's position passes through this chain in order:
-
-```
-Step position → Rotation → Scale → Bounds → Spatial quantization → Smoothing → Output
-```
-
----
-
-## 5. Instance parameters
+| Parameter | Description |
+|-----------|-------------|
+| **Name** | Label shown in the instance list |
+| **Enabled** | If unchecked, the instance is frozen and excluded from OSC output |
 
 ### Position
 
 | Parameter | Description |
 |-----------|-------------|
-| **Start X / Y / Z** | World-space origin of this instance |
-| **Offset X / Y / Z** | Lattice vector — how far the position moves per step |
+| **Start X / Y / Z** | World-space origin of this instance (drag in preview to set visually) |
+| **Offset X / Y / Z** | Step vector — how far the source moves per step along each axis |
+
+Each step, the raw position is computed as:
+
+```
+position = Start + currentStep × Offset
+```
 
 ### Timing
 
-| Parameter | Range | Description |
-|-----------|-------|-------------|
-| **Rate** | 0.001 – 16 | Steps per beat |
-| **Repetition Mode** | Infinite / Finite / Pingpong | What happens when `stepCount` is reached |
-| **Step Count** | 1 – 1024 | Total number of steps (Finite and Pingpong modes) |
+| Parameter | Description |
+|-----------|-------------|
+| **Rate** | Steps per second (BPM OFF) or steps per beat (BPM ON) |
+| **Steps** | Total step count; determines turn-around point for Finite and Pingpong |
+| **Mode** | **Infinite** — steps forever; **Finite** — stops at last step; **Pingpong** — bounces |
 
 ### Rotation
 
-Rotation pivots around the instance's **Start** position. Angles are in degrees.
+Rotation pivots around the Start position using an Euler rotation matrix. Angles are in degrees.
 
 | Parameter | Description |
 |-----------|-------------|
-| **Rotation X / Y / Z** | Euler angles in degrees |
-| **Rotation Order** | Application order: XYZ, XZY, YXZ, YZX, ZXY, ZYX |
+| **Rot X / Y / Z** | Euler angles in degrees |
+| **Order** | Application order: XYZ, XZY, YXZ, YZX, ZXY, ZYX |
 
 ### Scale
 
-Scale stretches the lattice vector relative to the Start position.
+Scales the offset vector relative to the Start position.
 
-| Parameter | Range | Description |
-|-----------|-------|-------------|
-| **Scale X / Y / Z** | 0.001 – 10 | Per-axis scale factor |
+| Parameter | Description |
+|-----------|-------------|
+| **Scale X / Y / Z** | Per-axis stretch factor |
 
 ### Bounds
 
-Bounds clamp or fold the position into a defined region.
+Constrains the position to a box after rotation and scale.
 
 | Parameter | Description |
 |-----------|-------------|
-| **Bounds Enabled** | Toggle bounds processing |
-| **Bound Min/Max X/Y/Z** | The bounding box corners |
-| **Bound Mode** | none / clamp / wrap / mirror |
+| **Bounds On** | Enable bounds processing |
+| **Mode** | **None**, **Clamp** (stop at edge), **Wrap** (teleport to opposite side), **Mirror** (reflect) |
+| **Min / Max X / Y / Z** | Bounding box corners |
 
-**Bound modes explained:**
-
-- `clamp` — position stops at the boundary.
-- `wrap` — position jumps to the opposite boundary (torus topology).
-- `mirror` — position reflects at the boundary (ping-pong in each axis independently).
-
----
-
-## 6. Step-by-step: First crystal motion
-
-This walkthrough creates a simple cubic lattice with three sources moving along the X-axis.
-
-### Step 1 — Apply the Cubic preset
-
-In the Utilities group, trigger **Preset: Cubic** (set the parameter to 1, then back to 0). This creates a 3×3×3 grid of 27 instances with default settings.
-
-### Step 2 — Select an instance
-
-Set **Selected Index** (Utilities group) to `1`. The *Selected Instance* parameters now show instance 1.
-
-### Step 3 — Adjust the offset
-
-Set **Offset X** to `0.5`, **Offset Y** to `0`, **Offset Z** to `0`. Instance 1 will now move 0.5 units along X per step.
-
-### Step 4 — Set repetition
-
-Set **Repetition Mode** to `Pingpong` and **Step Count** to `16`. The source will travel 8 steps out and bounce back.
-
-### Step 5 — Enable smoothing
-
-Make sure **Smoothing** is on and **Glide Time** is around `0.08`. Positions will glide smoothly between steps.
-
-### Step 6 — Connect to AmbiEncoder_64
-
-Call `KM.getOutputPositions()` in your update loop and map each `{x, y, z}` to the corresponding AmbiEncoder source via OSC or automation parameters.
-
-### Step 7 — Press Play
-
-Start REAPER transport. The status dot in your GUI turns green; sources begin moving.
-
----
-
-## 7. Rotation
-
-Rotation applies a 3×3 Euler rotation matrix to the position **relative to the Start point**. The six rotation orders follow standard aerospace convention:
-
-| Order | Sequence |
-|-------|----------|
-| XYZ | Roll → Pitch → Yaw |
-| XZY | Roll → Yaw → Pitch |
-| YXZ | Pitch → Roll → Yaw |
-| YZX | Pitch → Yaw → Roll |
-| ZXY | Yaw → Roll → Pitch |
-| ZYX | Yaw → Pitch → Roll (most common in robotics) |
-
-{{< notice warning >}}
-Rotation order matters. XYZ and ZYX produce the same result only when two of the three angles are zero.
-{{< /notice >}}
-
-**Tip:** To rotate an entire lattice plane without moving the origin, keep Start X/Y/Z at `0` and set the rotation before adding a non-zero Offset.
-
----
-
-## 8. Bounds
-
-Bounds are applied **after** rotation and scale. The four modes are:
-
-**Clamp** — the position is stopped at the boundary and stays there until the step reverses:
-
-```
-position = max(boundMin, min(boundMax, position))
-```
-
-**Wrap** — the position teleports to the opposite side. Creates a torus topology — useful for continuous circular motion without pingpong:
-
-```
-position = boundMin + (position - boundMin) mod (boundMax - boundMin)
-```
-
-**Mirror** — the position reflects at each boundary. Each axis behaves like pingpong independently of the step counter's repetition mode.
-
-**None** — bounds are disabled; positions can go anywhere.
-
----
-
-## 9. Quantization
-
-### Space quantization
-
-Snaps the computed position to the nearest grid point **before** smoothing. The grid is defined per-axis:
+### Quantize
 
 | Parameter | Description |
 |-----------|-------------|
-| **Space Quantize** | Enable/disable |
-| **Grid X / Y / Z** | Grid cell size per axis |
-| **Round Mode** | nearest / floor / ceil |
+| **Space Q.** | Snap final position to a grid before smoothing |
+| **Time Q.** | Snap step advances to beat subdivisions |
+| **Grid X / Y / Z** | Grid cell size per axis (Space Q.) |
 
-Use `nearest` for symmetric snapping, `floor` to always snap downward (useful for indexing speaker arrays), `ceil` to always snap upward.
+### Smoothing
 
-### Time quantization
-
-When enabled, step advances are **snapped to beat subdivisions** rather than accumulating continuously. Rate then controls how many beat subdivisions fit in one step cycle:
+An exponential-decay lerp between the stepped target position and the output:
 
 ```
-stepDuration = (60 / bpm) / rate    (seconds per step)
+alpha      = 1 − exp(−dt / glideTime)
+currentPos = currentPos + alpha × (targetPos − currentPos)
 ```
-
-Enable time quantization for **rhythmically locked** crystal motion that stays in sync with the DAW grid.
-
----
-
-## 10. Smoothing
-
-The smoothing engine applies an **exponential-decay lerp** (one-pole low-pass filter) between the raw stepped position (`targetPos`) and the output (`currentPos`):
-
-```
-alpha       = 1 − exp(−dt / glideTime)
-currentPos  = currentPos + alpha × (targetPos − currentPos)
-```
-
-| Parameter | Range | Description |
-|-----------|-------|-------------|
-| **Smoothing** | on / off | Toggle the filter |
-| **Glide Time** | 0 – 2 s | Time constant (time to reach 63 % of target) |
-
-A glide time of `0.08 s` produces snappy but smooth jumps. Values above `0.5 s` create slow glides that blur step boundaries. Set to `0` for hard discrete steps.
-
----
-
-## 11. Interaction engine
-
-Interaction allows instances to **influence each other's movement** based on their 3D distance. Each instance can act as a sender, a receiver, or both.
-
-### How it works
-
-Every frame, before positions are computed, each sender instance casts an influence sphere of radius **Interaction Radius**. Any receiver within that radius accumulates a weighted contribution to its **Effective Offset** and/or **Effective Rate**.
-
-### Falloff modes
-
-| Mode | Formula | Character |
-|------|---------|-----------|
-| **Linear** | `w = 1 − dist / radius` | Even, predictable fade |
-| **Inverse Square** | `w = (1 − dist/radius)²` | Strong centre, fast edge drop |
-| **Gaussian** | `w = exp(−dist² / 2σ²)` | Smooth bell curve, σ = radius / 3 |
-
-### Interaction parameters
 
 | Parameter | Description |
 |-----------|-------------|
-| **Interaction** | Enable/disable for this instance |
-| **Send Amount** | How strongly this instance influences others (0 = silent sender) |
-| **Receive Amount** | How strongly this instance accepts incoming influence (0 = deaf) |
+| **Smoothing** | Enable/disable the filter |
+| **Glide Time** | Time constant in seconds — 0.08 s is snappy, 0.5 s is slow |
+
+### Interaction
+
+Instances can influence each other's speed and direction based on proximity.
+
+| Parameter | Description |
+|-----------|-------------|
+| **Interaction** | Enable for this instance |
+| **Send Amount** | How strongly this instance influences others |
+| **Receive Amount** | How strongly this instance accepts incoming influence |
 | **Radius** | Sphere of influence in world units |
-| **Affect Offset** | Whether incoming influence modifies the Effective Offset vector |
-| **Affect Rate** | Whether incoming influence modifies the Effective Rate |
+| **Falloff Mode** | Linear / Inverse Square / Gaussian |
+| **Affect Offset** | Incoming influence modifies the step direction |
+| **Affect Rate** | Incoming influence modifies the step rate |
+
+---
+
+## 7. Status bar — Row 1: OSC and Presets
+
+### OSC
+
+| Control | Description |
+|---------|-------------|
+| Colored dot | Green = connected, red = disconnected |
+| **Host** field | IP address of the OSC target (default `127.0.0.1`) |
+| **Port** field | UDP port of the OSC target (default `9001`) |
+| **Connect / Disconnect** | Open or close the OSC bridge |
+
+Click any field to edit, then press **Enter** to confirm.
+
+### Presets
+
+| Control | Description |
+|---------|-------------|
+| Name field | Type a preset name |
+| **▼** | Open the saved-preset dropdown |
+| **Save** | Save all current instances under the preset name |
+| **Reset** | Clear all instances and revert to the default Cubic preset |
+
+Presets are stored in REAPER's ExtState (project-independent, persistent across sessions).
+
+---
+
+## 8. Status bar — Row 2: Playback controls
+
+| Control | Description |
+|---------|-------------|
+| **Speed ×N.NN** | Global rate multiplier — scales all instance rates uniformly. Click to type a value, Enter to confirm. |
+| **BPM** | Toggle BPM sync. Off = steps/second (absolute). On = steps/beat (follows REAPER tempo). |
+| **\> Fwd / < Rev** | Global direction. Fwd = all instances step forward. Rev = all instances step in reverse. |
+| **‖ Pause** | Freeze all motion at the current step. Click again to resume. |
+| **■ Stop** | Reset all instances to step 0 and resume playing immediately. |
+
+### BPM mode in detail
+
+When BPM is **OFF**: `Rate = 2` means the instance advances 2 steps every second, regardless of tempo.
+
+When BPM is **ON**: `Rate = 1` means 1 step per quarter note. At 120 BPM this is 2 steps/sec; at 60 BPM it is 1 step/sec. An instance with 64 steps and Rate 1 completes one cycle every 64 quarter notes (16 bars in 4/4).
+
+---
+
+## 9. Status bar — Row 3: Global position and movement
+
+Row 3 contains six **scrubber sliders**, all with range −2.0 to +2.0.
+
+### Pos X / Y / Z — Global translation
+
+Shifts all instance positions uniformly **after** all per-instance transforms. Use this to place the entire crystal anywhere in the Ambisonics space without touching individual Start positions.
+
+Example: `Pos X = 0.5` moves all sources 0.5 units to the right.
+
+### Move X / Y / Z — Global movement direction
+
+Adds a per-step offset to **all** instances on top of their own Offset X/Y/Z. Use this to make the entire crystal drift through space in a chosen direction.
+
+Example: `Move X = 0.01` adds 0.01 units per step along X to every instance — the whole crystal drifts rightward. Combine `Move X = 0.007` and `Move Y = 0.007` for a diagonal drift.
 
 {{< notice warning >}}
-Interaction is computed between **all** active instances every frame. With 64 instances and large radii, every instance may influence every other. Start with `Send Amount = 0.2` and increase gradually.
+Pos and Move are **not saved in presets** — they are session-level controls intended for real-time performance.
 {{< /notice >}}
 
 ---
 
-## 12. Presets
+## 10. Built-in presets (quick-select)
 
-Four built-in presets generate complete instance configurations. Each preset clears all existing instances.
+Four preset buttons appear in the status bar area. Each clears all current instances.
 
-### Cubic lattice
-
-Creates an n×n×n grid of instances with equal spacing on all axes (a = b = c). Default: 3×3×3 = 27 instances.
-
-```lua
-KM.presetCubic(3, 1.0)    -- 3×3×3 grid, 1.0 unit spacing
-```
-
-### Tetragonal lattice
-
-Creates an nx×ny×nz grid where the X-Y spacing differs from the Z spacing (a = b ≠ c). Default: 3×3×2 = 18 instances.
-
-```lua
-KM.presetTetragonal(3, 3, 2, 1.0, 1.6)    -- sa=1.0, sc=1.6
-```
-
-Use `sc > sa` for elongated columns (like a crystal of quartz). Use `sc < sa` for flat platelet structures.
-
-### Hexagonal lattice
-
-Generates a 2D hexagonal grid (γ = 120°) tiled along the Z-axis. Uses axial coordinates for perfect hex packing.
-
-```lua
-KM.presetHexagonal(2, 2, 1.0)    -- 2 rings, 2 layers, 1.0 spacing
-```
-
-The resulting speaker distribution mirrors common higher-order Ambisonics dome layouts.
-
-### Random crystal swarm
-
-Scatters instances randomly within a sphere. Rate, offset direction, rotation, glide time, and interaction settings are all randomised.
-
-```lua
-KM.presetRandomSwarm(16, 3.0)    -- 16 instances, 3-unit spread radius
-```
-
-Re-triggering the preset re-seeds the random values for a new configuration.
+| Preset | What it creates |
+|--------|-----------------|
+| **Cubic** | 8 instances at the corners of a unit cube (−0.5 to +0.5 on all axes) |
+| **Tetragonal** | Grid with equal XY spacing and different Z spacing |
+| **Hexagonal** | 2D hexagonal ring tiled along Z (mirrors typical dome layouts) |
+| **RandomSwarm** | 20 instances scattered randomly within a sphere |
 
 ---
 
-## 13. Output and AmbiEncoder integration
+## 11. First session walkthrough
 
-### getOutputPositions()
+### Step 1 — Apply a preset
 
-Returns a flat table of `{x, y, z}` for every enabled instance. Use this to feed positions to an OSC sender:
+Click **Cubic** in the status bar. Eight instances appear in the lattice preview, one at each corner of a cube.
 
-```lua
-local positions = KM.getOutputPositions()
-for i, pos in ipairs(positions) do
-  -- Send OSC to AmbiEncoder source i
-  sendOSC("/icst/ambi/sourceindex/aed", i-1, pos.x, pos.y, pos.z)
-end
-```
+### Step 2 — Start motion
 
-{{< notice warning >}}
-Kristall Motion outputs **Cartesian XYZ** coordinates, not AED (Azimuth/Elevation/Distance). Convert before sending OSC if your host expects AED. See the [ICST AmbiEncoder coordinate system](/icst-ambisonics-plugins/13_osc/) for the conversion formula.
-{{< /notice >}}
+Set Speed to `×1.00`, make sure BPM is off. The instances are moving — watch the step counters in the instance list increment.
 
-### Automation writing
+### Step 3 — Adjust direction
 
-To write positions as REAPER automation, iterate over `getOutputPositions()` on each transport step and use REAPER's envelope API to insert points. See [Motion Map](/icst-ambisonics-plugins/15_icst_ambi_motion_map/) for the reference implementation using the writer script pattern.
+In the parameter panel, select instance 1. Set **Offset X = 0.02**, **Offset Y = 0.01**, **Offset Z = 0**. This instance now drifts diagonally in XY.
 
----
+### Step 4 — Bounce with Pingpong
 
-## 14. Good practices
+Set **Mode = Pingpong** and **Steps = 64**. The source travels 64 steps out and bounces back. Repeat for other instances with different offsets.
 
-**Start sparse.** Begin with 4–8 instances rather than a full 64. Add instances incrementally once the basic motion is working.
+### Step 5 — Add global drift
 
-**Match offset scale to room size.** If your speaker array spans roughly 2 units, keep offsets in the range ±1. Positions outside the array are still encoded but may lose spatial resolution.
+Drag the **Move X** slider in Row 3 slightly to the right (e.g., `0.008`). The entire crystal now drifts rightward while individual instances still bounce within it.
 
-**Use Bounds to contain a swarm.** Enable Bounds with `mirror` mode and a box matching your speaker layout to keep all sources audible at all times.
+### Step 6 — Connect OSC
 
-**Combine rotation orders.** Layer two instances at the same Start position with different rotation orders (e.g., XYZ and ZYX) to create intersecting arc trajectories.
-
-**Rhythmic locking.** Enable **Time Quantize** for all instances in a swarm to lock all steps to the project BPM. Combine with Rate values of 1, 2, 4, or 8 (integer beat subdivisions) for rhythmic spatial patterns.
-
-**Interaction as texture, not chaos.** Keep `Send Amount` ≤ 0.3 for subtle mutual perturbation. High send amounts with large radii can make the whole swarm collapse to a single point.
-
-**Preset → tweak → duplicate.** Apply a built-in preset, select an interesting instance, adjust its parameters, then use **Duplicate** to create variations.
+Enter your AmbiEncoder host and port in Row 1, then click **Connect**. Positions are streamed as OSC messages to the encoder in real time.
 
 ---
 
-## 15. Troubleshooting
+## 12. Troubleshooting
 
-### Sources do not move after pressing Play
+**Sources do not move.**
+Check that Speed > 0 and that the instance is Enabled. In BPM mode, REAPER transport must be running.
 
-Check that `getTransportState()` returns `playing = true`. The update loop (`updateAllInstances`) exits immediately when the transport is stopped.
+**All instances are at the same position.**
+Apply a preset (e.g., Cubic) to distribute them, or set unique Start positions manually.
 
-### All instances snap to the same position
+**Positions drift outside the speaker array.**
+Mode is set to Infinite with a non-zero Offset. Switch to Pingpong, or enable Bounds with Mirror mode.
 
-The instances share the same `startX/Y/Z` and `offsetX/Y/Z`. Apply a preset (e.g., Cubic) to distribute them, or manually set unique Start positions.
+**Move slider changes are too coarse.**
+Drag slowly — the slider covers the full −2 to +2 range. For fine control, type a value by clicking the nearby area and pressing Enter after switching focus (a text input field appears in some modes).
 
-### Positions drift far outside the speaker array
-
-The repetition mode is set to **Infinite** with a non-zero offset. Either switch to **Finite** or **Pingpong**, or enable **Bounds** with a box matching your speaker layout.
-
-### Smoothing produces no audible glide
-
-Check that **Glide Time** is above zero and that the step actually advances (Rate must be > 0 and the transport must be running).
-
-### Interaction makes all sources cluster together
-
-Reduce **Send Amount** (try 0.1 – 0.2) and decrease **Interaction Radius** to limit the sphere of influence to immediate neighbours.
-
-### Hexagonal preset produces too many instances
-
-The number of cells in a hex grid grows quickly with `rings`: ring 0 = 1, ring 1 = 7, ring 2 = 19, ring 3 = 37. Keep `rings ≤ 3` or reduce layers to stay within MAX_INSTANCES (64).
-
-### The host adapter functions do nothing
-
-The default script ships with **stub functions**. You must replace the six functions in Section 3 with real host calls before the UI, transport state, and output will work.
+**OSC not connecting.**
+Verify that the Python OSC bridge is running (`python-osc` required). Check host IP and port. The status dot turns green on a successful connection.
 
 ---
 
 ## See also
 
-- [ICST Ambi Motion Map](/icst-ambisonics-plugins/15_icst_ambi_motion_map/) — step-based 2D/3D motion shapes with a ready-made REAPER GUI
-- [Motion Map Setup](/icst-ambisonics-plugins/16_motion_map_setup/) — installation guide for the Motion Map bundle
-- [OSC Reference](/icst-ambisonics-plugins/13_osc/) — AmbiEncoder OSC address format and coordinate system
-- [Downloads](/icst-ambisonics-plugins/08_downloads/) — all script downloads
+- [ICST Ambi Motion Map](/icst-ambisonics-plugins/15_icst_ambi_motion_map/) — step-based 2D/3D motion shapes
+- [OSC Reference](/icst-ambisonics-plugins/13_osc/) — AmbiEncoder OSC format and coordinate system
+- [Downloads](/icst-ambisonics-plugins/08_downloads/) — script downloads
