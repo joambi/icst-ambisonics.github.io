@@ -19,3 +19,6 @@ content/**/*.png
 content/**/*.gif
 content/**/*.jpg
 content/**/*.jpeg
+
+# Lokale Arbeitsordner (Quelldateien, nicht für Deployment)
+static/Kristall Map Bilder/
