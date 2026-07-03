@@ -8,9 +8,10 @@ translationKey: kristall-motion-map
 description: "Installation and user guide for JS_ICST_Kristall_Motion_Map.lua — a standalone REAPER script that moves up to 64 AmbiEncoder sources through a 3D crystal-lattice step sequencer with real-time GUI, OSC output, and named presets."
 ---
 
-Level: Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: 0.2.0**
+Level: Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: 2.1.5**
 
-ICST Kristall Motion Map is a **standalone REAPER Lua script** with a real-time graphical interface. It arranges up to 64 AmbiEncoder sources as points in a 3D crystal lattice and moves them through space using a step sequencer. Motion can be monitored live via the isometric preview, sent to an AmbiEncoder via OSC, and shaped with per-instance transforms, quantization, smoothing, and interaction.
+ICST Kristall Motion Map is a **standalone REAPER Lua script** with a real-time graphical interface. It arranges up to 64 AmbiEncoder sources as points within a 3D crystal lattice and moves them through space using a step sequencer. The movement can be tracked live in the isometric preview, sent via OSC to an ICST AmbiEncoder_64, and shaped using instance-specific transformations, quantisation, smoothing and interaction.
+This instrument was created in collaboration with and inspired by Eli Stine, a guest at the ICST Studio Residency 2026.
 
 ---
 
@@ -441,7 +442,7 @@ Three things to check: (1) Python must be in the system PATH — reinstall Pytho
 The OSC bridge must be connected first (output port active). Check that your controller is sending to `output port + 1` (default: `9002`), not `9001`. Confirm the messages arrive with a UDP monitor (e.g., Protokol).
 
 **Stop button does not pause — it starts playing.**
-This was a bug in v0.1.0, fixed in v0.2.0. Update to the latest script (v2.1.1).
+This was a bug in v0.1.0, fixed in v0.2.0. Update to the latest script (v2.1.5).
 
 ---
 

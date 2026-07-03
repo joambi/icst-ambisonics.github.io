@@ -8,9 +8,10 @@ translationKey: kristall-motion-map
 description: "Installation und Benutzerhandbuch für JS_ICST_Kristall_Motion_Map.lua — ein eigenständiges REAPER-Skript, das bis zu 64 AmbiEncoder-Quellen durch einen 3D-Kristallgitter-Schritt-Sequenzer mit Echtzeit-GUI, OSC-Ausgabe und benannten Presets bewegt."
 ---
 
-Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 0.2.0**
+Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 2.1.5**
 
-ICST Kristall Motion Map ist ein **eigenständiges REAPER-Lua-Skript** mit grafischer Echtzeit-Oberfläche. Es ordnet bis zu 64 AmbiEncoder-Quellen als Punkte in einem 3D-Kristallgitter an und bewegt sie mit einem Schritt-Sequenzer durch den Raum. Die Bewegung kann live in der isometrischen Vorschau verfolgt, per OSC an einen AmbiEncoder gesendet und mit instanzspezifischen Transformationen, Quantisierung, Glättung und Interaktion gestaltet werden.
+ICST Kristall Motion Map ist ein **eigenständiges REAPER-Lua-Skript** mit grafischer Echtzeit-Oberfläche. Es ordnet bis zu 64 AmbiEncoder-Quellen als Punkte in einem 3D-Kristallgitter an und bewegt sie mit einem Schritt-Sequenzer durch den Raum. Die Bewegung kann live in der isometrischen Vorschau verfolgt, per OSC an einen ICST AmbiEncoder_64 gesendet und mit instanzspezifischen Transformationen, Quantisierung, Glättung und Interaktion gestaltet werden.
+Dieses Instrument entstand in Zusammenarbeit mit und inspiriert durch Eli Stine, Gast der ICST Studio Residency 2026.
 
 ---
 
@@ -433,7 +434,7 @@ Host und Port in Zeile 1 eingeben, **Connect** klicken. Positionen werden in Ech
 
 **OSC-Eingang (Rotation) hat keine Wirkung.** Die OSC-Brücke muss zuerst verbunden sein. Sicherstellen, dass der Controller an `Ausgangsport + 1` sendet (Standard: `9002`, nicht `9001`). Mit einem UDP-Monitor (z. B. Protokol) prüfen ob Pakete ankommen.
 
-**Stop-Button pausiert nicht, sondern startet die Wiedergabe.** Dieser Fehler bestand in v0.1.0 und ist ab v0.2.0 behoben. Auf das neueste Skript aktualisieren (v2.1.1).
+**Stop-Button pausiert nicht, sondern startet die Wiedergabe.** Dieser Fehler bestand in v0.1.0 und ist ab v0.2.0 behoben. Auf das neueste Skript aktualisieren (v2.1.5).
 
 ---
 
