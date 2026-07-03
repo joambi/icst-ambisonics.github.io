@@ -1,9 +1,10 @@
 ---
 title: Privacy Policy
-Description: ""
-tags: 
-Categories: 
-DisableComments: false
+description: Privacy Policy for ambisonics.ch.
+date: 2026-03-11T00:00:00
+draft: false
+translationKey: privacy-policy
+slug: privacy-policy
 ---
 
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts
