@@ -358,8 +358,17 @@ Falls ein **Kristall Controller** JSFX auf einem Track vorhanden ist, liest das 
 | slider6 | 5 | −180…+180° | Globaler Pitch |
 | slider7 | 6 | −180…+180° | Globaler Yaw |
 | slider8 | 7 | −180…+180° | Globaler Roll |
+| slider9 | 8 | −2…+2 | Offset X |
+| slider10 | 9 | −2…+2 | Offset Y |
+| slider11 | 10 | −2…+2 | Offset Z |
+| slider12 | 11 | −2…+2 | Move X |
+| slider13 | 12 | −2…+2 | Move Y |
+| slider14 | 13 | −2…+2 | Move Z |
+| slider15 | 14 | 0…2 | Zoom × |
 
-MIDI-CCs über REAPER's MIDI-Learn-Dialog oder den FX-Parameter-Lane auf diese Slider mappen. Ein CC-Sweep von 0 bis 127 entspricht linear −180° bis +180°. Die Slider werden jeden Frame ausgelesen, solange das JSFX auf einem Track geladen ist.
+MIDI-CCs über REAPER's MIDI-Learn-Dialog oder den FX-Parameter-Lane auf Slider 6–8 für Rotationssteuerung mappen. Für **Automation-Envelopes** auf Offset, Move und Zoom (Slider 9–15): JSFX in der FX-Kette rechtsklicken → **Param** → Envelope für den gewünschten Slider aktivieren, dann im REAPER-Envelope-Lane einzeichnen. Die Slider werden jeden Frame ausgelesen, solange das JSFX auf einem Track geladen ist.
+
+![Automation-Envelope-Workflow — Offset X/Y/Z, Move X/Y/Z und Zoom in REAPER-Envelope-Lanes eingezeichnet](/images/kristall-automation-preview.gif)
 
 {{< notice warning >}}
 JSFX-Pitch/Yaw/Roll werden nur übernommen, wenn **mindestens einer der drei** ungleich null ist. Wenn alle drei 0 sind oder das JSFX diese Slider nicht enthält, bleiben die Slider-Werte der Oberfläche erhalten.

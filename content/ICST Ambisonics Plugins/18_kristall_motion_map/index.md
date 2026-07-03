@@ -358,8 +358,17 @@ If a **Kristall Controller** JSFX is present on any track, the Kristall script r
 | slider6 | 5 | −180…+180° | Global Pitch |
 | slider7 | 6 | −180…+180° | Global Yaw |
 | slider8 | 7 | −180…+180° | Global Roll |
+| slider9 | 8 | −2…+2 | Offset X |
+| slider10 | 9 | −2…+2 | Offset Y |
+| slider11 | 10 | −2…+2 | Offset Z |
+| slider12 | 11 | −2…+2 | Move X |
+| slider13 | 12 | −2…+2 | Move Y |
+| slider14 | 13 | −2…+2 | Move Z |
+| slider15 | 14 | 0…2 | Zoom × |
 
-Map MIDI CCs to these sliders in REAPER's FX parameter lane or via the MIDI Learn dialog. A MIDI CC sweep from 0 to 127 maps linearly to −180° to +180°. The sliders are read every frame as long as the JSFX is present on any track.
+Map MIDI CCs to sliders 6–8 for rotation control. For **automation envelopes** on Offset, Move, and Zoom (sliders 9–15): right-click the JSFX in the FX chain → **Param** → enable the envelope for the desired slider, then draw it in the REAPER envelope lane. The sliders are read every frame as long as the JSFX is present on any track.
+
+![Automation envelope workflow — Offset X/Y/Z, Move X/Y/Z and Zoom drawn in REAPER envelope lanes](/images/kristall-automation-preview.gif)
 
 {{< notice warning >}}
 JSFX Pitch/Yaw/Roll take effect **only when at least one of the three is non-zero**. If all three are 0 (or the JSFX does not expose these sliders), the on-screen sliders retain their values.
