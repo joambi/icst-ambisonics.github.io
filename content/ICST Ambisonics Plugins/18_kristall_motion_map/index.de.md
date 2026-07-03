@@ -19,6 +19,8 @@ ICST Kristall Motion Map ist ein **eigenständiges REAPER-Lua-Skript** mit grafi
 - **REAPER** v6 oder neuer (v7 empfohlen)
 - **ICST AmbiEncoder_64** auf dem Ziel-Track — siehe [Installation](/icst-ambisonics-plugins/02_installation/)
 - **Python 3** mit `python-osc` — nur für die Live-OSC-Vorschaubrücke erforderlich
+  - macOS / Linux: `pip3 install python-osc`
+  - Windows: `pip install python-osc` — beim Python-Installer unbedingt **„Add Python to PATH"** aktivieren (sonst findet REAPER Python nicht)
 
 ---
 
@@ -283,9 +285,13 @@ Offset und Move werden **nicht in Presets gespeichert** — sie sind Steuerungen
 
 ---
 
-## 10. Statusleiste — Zeile 4: Globale Rotation
+## 10. Statusleiste — Zeile 4: Globale Rotation und Zoom
 
-Zeile 4 enthält drei **Scrubber-Slider** zum Drehen des gesamten Kristalls um den Weltursprung. Die Rotation wird nach allen instanzspezifischen Transformationen und dem globalen Offset angewendet. Winkel in Grad, Bereich −180 bis +180.
+Zeile 4 enthält drei **Rotations-Scrubber** und einen **Zoom-Scrubber**, die alle nach instanzspezifischen Transformationen und dem globalen Offset angewendet werden.
+
+### Rotation (Pt / Yw / Rl)
+
+Dreht den gesamten Kristall um den Weltursprung. Winkel in Grad, Bereich −180 bis +180.
 
 | Slider | Achse | Wirkung |
 |--------|-------|---------|
@@ -293,10 +299,22 @@ Zeile 4 enthält drei **Scrubber-Slider** zum Drehen des gesamten Kristalls um d
 | **Yw** (Yaw) | Y | Dreht das Kristall links / rechts |
 | **Rl** (Roll) | Z | Rollt das Kristall im / gegen Uhrzeigersinn |
 
-Slider horizontal ziehen oder anklicken und Wert eintippen, dann **Enter** bestätigen.
+### Zoom (×)
+
+Skaliert die gesamte Kristallfigur gleichmässig um den Ursprung — nach der Rotation, vor der Translation. Bereich 0,0–2,0, Neutralpunkt bei 1,0.
+
+| Wert | Wirkung |
+|------|---------|
+| 0,0 | Alle Quellen kollabieren zum Ursprung |
+| 1,0 | Keine Änderung (neutral) |
+| 2,0 | Figur doppelt so gross |
+
+Der Zoom wirkt in Echtzeit auf die Gittervorschau und den Live-OSC-Ausgang. Den `×`-Scrubber horizontal ziehen oder anklicken und einen Wert eintippen.
+
+Alle Slider horizontal ziehen oder anklicken und einen Wert eintippen, dann **Enter** bestätigen.
 
 {{< notice warning >}}
-Die Rotation wirkt auf die **effektive Endposition** jeder Instanz. Die Gittervorschau aktualisiert sich in Echtzeit, auch wenn die Wiedergabe pausiert ist.
+Rotation und Zoom wirken auf die **effektive Endposition** jeder Instanz. Die Gittervorschau aktualisiert sich in Echtzeit, auch wenn die Wiedergabe pausiert ist.
 {{< /notice >}}
 
 ![Rotationsachsen — Pt kippt vorwärts/rückwärts, Yw dreht links/rechts, Rl rollt CW/CCW](/images/kristall-rotation-axes.svg)
@@ -411,9 +429,11 @@ Host und Port in Zeile 1 eingeben, **Connect** klicken. Positionen werden in Ech
 
 **OSC verbindet sich nicht.** Python-OSC-Brücke (`python-osc`) prüfen. Host-IP und Port kontrollieren. Bei Erfolg wird der Status-Punkt grün.
 
+**OSC verbindet sich nicht (Windows).** Drei Punkte prüfen: (1) Python muss im System-PATH stehen — Python neu installieren und **„Add Python to PATH"** ankreuzen falls es fehlt. (2) Die Windows-Firewall zeigt beim ersten Start einen Dialog — **„Zugriff erlauben"** klicken. (3) Status-Punkt ist grün, aber keine Bewegung: Host-IP auf `127.0.0.1` prüfen falls AmbiEncoder lokal läuft.
+
 **OSC-Eingang (Rotation) hat keine Wirkung.** Die OSC-Brücke muss zuerst verbunden sein. Sicherstellen, dass der Controller an `Ausgangsport + 1` sendet (Standard: `9002`, nicht `9001`). Mit einem UDP-Monitor (z. B. Protokol) prüfen ob Pakete ankommen.
 
-**Stop-Button pausiert nicht, sondern startet die Wiedergabe.** Dieser Fehler bestand in v0.1.0 und ist ab v0.2.0 behoben. Auf das neueste Skript aktualisieren.
+**Stop-Button pausiert nicht, sondern startet die Wiedergabe.** Dieser Fehler bestand in v0.1.0 und ist ab v0.2.0 behoben. Auf das neueste Skript aktualisieren (v2.1.1).
 
 ---
 

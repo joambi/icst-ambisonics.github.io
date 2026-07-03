@@ -19,6 +19,8 @@ ICST Kristall Motion Map is a **standalone REAPER Lua script** with a real-time 
 - **REAPER** v6 or later (v7 recommended)
 - **ICST AmbiEncoder_64** on the target track — see [Installation](/icst-ambisonics-plugins/02_installation/)
 - **Python 3** with `python-osc` — required only for the live OSC preview bridge
+  - macOS / Linux: `pip3 install python-osc`
+  - Windows: `pip install python-osc` — and make sure **"Add Python to PATH"** was checked during the Python installer (if not, reinstall and check that box)
 
 ---
 
@@ -283,9 +285,13 @@ Offset and Move are **not saved in presets** — they are session-level controls
 
 ---
 
-## 10. Status bar — Row 4: Global rotation
+## 10. Status bar — Row 4: Global rotation and zoom
 
-Row 4 contains three **scrubber sliders** for rotating the entire crystal around the world origin, applied after all per-instance transforms and the global Offset. Angles are in degrees, range −180 to +180.
+Row 4 contains three **rotation scrubbers** and a **Zoom scrubber**, all applied after per-instance transforms and the global Offset.
+
+### Rotation (Pt / Yw / Rl)
+
+Rotates the entire crystal around the world origin. Angles in degrees, range −180 to +180.
 
 | Slider | Axis | Effect |
 |--------|------|--------|
@@ -293,15 +299,27 @@ Row 4 contains three **scrubber sliders** for rotating the entire crystal around
 | **Yw** (Yaw) | Y | Spins the crystal left / right |
 | **Rl** (Roll) | Z | Rolls the crystal clockwise / counter-clockwise |
 
-Drag a slider horizontally or click it to type a value, then press **Enter** to confirm.
+### Zoom (×)
+
+Scales the entire crystal figure uniformly around the origin — after rotation, before translation. Range 0.0–2.0, neutral at 1.0.
+
+| Value | Effect |
+|-------|--------|
+| 0.0 | All sources collapse to the origin |
+| 1.0 | No change (neutral) |
+| 2.0 | Figure double size |
+
+Zoom is applied to the lattice preview and the live OSC output in real time. Drag the `×` scrubber or click it to type an exact value.
+
+Drag any slider horizontally or click it to type a value, then press **Enter** to confirm.
 
 {{< notice warning >}}
-Rotation acts on the final **effective position** of every instance. The lattice preview updates in real time even while playback is paused.
+Rotation and Zoom act on the final **effective position** of every instance. The lattice preview updates in real time even while playback is paused.
 {{< /notice >}}
 
 ![Rotation axes — Pt tilts forward/backward, Yw spins left/right, Rl rolls CW/CCW](/images/kristall-rotation-axes.svg)
 
-The rotation can also be controlled externally — see [§11 External control](#11-external-control--osc-input-and-midi).
+Rotation can also be controlled externally — see [§11 External control](#11-external-control--osc-input-and-midi).
 
 ---
 
@@ -416,11 +434,14 @@ Drag slowly — the slider covers the full −2 to +2 range. For fine control, c
 **OSC not connecting.**
 Verify that the Python OSC bridge is running (`python-osc` required). Check host IP and port. The status dot turns green on a successful connection.
 
+**OSC not connecting on Windows.**
+Three things to check: (1) Python must be in the system PATH — reinstall Python and tick **"Add Python to PATH"** if missing. (2) Windows Firewall may show a popup the first time Python opens a UDP port — click **"Allow access"**. (3) If the status dot turns green but no movement occurs, make sure the AmbiEncoder host IP is `127.0.0.1` for a local connection.
+
 **OSC input (rotation) has no effect.**
 The OSC bridge must be connected first (output port active). Check that your controller is sending to `output port + 1` (default: `9002`), not `9001`. Confirm the messages arrive with a UDP monitor (e.g., Protokol).
 
 **Stop button does not pause — it starts playing.**
-This was a bug in v0.1.0, fixed in v0.2.0. Update to the latest script.
+This was a bug in v0.1.0, fixed in v0.2.0. Update to the latest script (v2.1.1).
 
 ---
 
