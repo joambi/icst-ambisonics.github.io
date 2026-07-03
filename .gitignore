@@ -1,14 +1,21 @@
 public/
 
 /.quarto/
+
+# Obsidian — nur Plugin-Binaries und workspace.json sind sinnvoll zu tracken
 .obsidian/workspace.json
+.obsidian/plugins/mcp-tools/bin/
+.obsidian/plugins/graph-link-types/
+
+# Smart Environment
+.smart-env/
+.smart-env.obsidian/
 
 # Große Binärdateien
-.obsidian/plugins/mcp-tools/bin/
 images/ICST AmbiPlugins Default.png
 
-
-
-
-# Ignore Smart Environment folder
-.smart-env.obsidian/
+# Temporäre Screenshots/Bilder im Content-Ordner (Originale leben in static/images/)
+content/**/*.png
+content/**/*.gif
+content/**/*.jpg
+content/**/*.jpeg
