@@ -1,6 +1,6 @@
 -- @description ICST Kristall Motion Map
 -- @author JS / Codex
--- @version 0.1.0
+-- @version 2.1.7
 -- @about
 --   Modular 3D crystal-lattice motion system for up to 64 AmbiEncoder sources.
 --   Inspired by ICST Ambi Motion Map. Real-time gfx GUI, isometric 3D preview,
@@ -11,7 +11,7 @@
 -- ============================================================
 
 local SCRIPT_NAME    = "ICST Kristall Motion Map"
-local SCRIPT_VERSION = "v0.1.0"
+local SCRIPT_VERSION = "v2.1.7"
 local MAX_INSTANCES  = 64
 local PRESET_EXT     = "ICST_KristallMotionMap_v1"
 
@@ -51,7 +51,8 @@ local DEFAULTS = {
   smoothingEnabled=true, glideTime="0.08",
   interactionEnabled=false, sendAmount="1.0", receiveAmount="1.0",
   interactionRadius="1.0", falloffMode=FALLOFF.LINEAR,
-  affectOffset=false, affectRate=false, affectScale=false, affectRotation=false,
+  affectOffset=false, affectRate=false,
+  affectScale=false, affectRotation=false,  -- reserved, not yet implemented
 }
 
 -- ============================================================
@@ -236,15 +237,6 @@ local function onSelectionChanged()
   ui.focus_field=nil; ui.focus_text=""; ui.right_scroll=0
 end
 
--- Commit a text field: write ui.focus_text back into inst[key].
-local function commitFocus(inst)
-  if not ui.focus_field or not inst then return end
-  -- Find matching key in param_fields
-  for _,f in ipairs(ui.param_fields) do
-    if f.id==ui.focus_field and f.key then inst[f.key]=ui.focus_text; break end
-  end
-  ui.focus_field=nil
-end
 
 -- ============================================================
 -- SECTION 9: TRANSFORM ENGINE
@@ -260,6 +252,7 @@ local globalMoveZ  = 0.0
 local globalPitch  = 0.0   -- global rotation X (degrees): tilts figure forward/back
 local globalYaw    = 0.0   -- global rotation Y (degrees): spins figure left/right
 local globalRoll   = 0.0   -- global rotation Z (degrees): rolls figure clockwise/ccw
+local globalZoom   = 1.0   -- global zoom: scales whole figure around origin (0=collapse, 1=neutral, 2=2×)
 
 local function computeStepPosition(inst)
   local step=inst.currentStep
@@ -297,18 +290,6 @@ local function applyBounds(pos,inst)
   return vec3(applyBoundAxis(pos.x,n(inst.boundMinX),n(inst.boundMaxX),m),
               applyBoundAxis(pos.y,n(inst.boundMinY),n(inst.boundMaxY),m),
               applyBoundAxis(pos.z,n(inst.boundMinZ),n(inst.boundMaxZ),m))
-end
-
-local function computeTransformedPosition(inst)
-  local pos=computeStepPosition(inst)
-  pos=applyRotation(pos,inst); pos=applyScale(pos,inst); pos=applyBounds(pos,inst)
-  -- global rotation around figure center (before translation = rotates around anchor)
-  if globalPitch~=0 or globalYaw~=0 or globalRoll~=0 then
-    local M=buildRotMat(globalPitch,globalYaw,globalRoll,1)
-    pos=mat3MulVec(M,pos)
-  end
-  -- global translation: place/anchor figure in space
-  return vec3(pos.x+globalTransX, pos.y+globalTransY, pos.z+globalTransZ)
 end
 
 -- ============================================================
@@ -492,6 +473,7 @@ local function applyGlobalTransforms()
   for _,inst in ipairs(instances) do
     local p=vecCopy(inst.currentPos)
     if needRot then p=mat3MulVec(rotMatCache,p) end
+    if globalZoom~=1.0 then p=vec3(p.x*globalZoom,p.y*globalZoom,p.z*globalZoom) end
     inst.effectivePos=vec3(p.x+globalTransX, p.y+globalTransY, p.z+globalTransZ)
   end
 end
@@ -656,8 +638,18 @@ end
 
 local RIGHT_W=300
 
+-- Viewport clip bounds — set by drawParamPanel so that pField/pCheck/pCycle
+-- skip drawing (and skip hit-test registration) for items outside the visible
+-- scrollable area.  Without this, items scrolled below the panel bottom are
+-- painted on top of the status bar, and clicks there trigger both the param
+-- handler AND status-bar handlers, causing the status-bar to steal focus.
+local param_clip_y1    = 0    -- top of scrollable viewport (vpy)
+local param_clip_y2    = 9999 -- bottom of scrollable viewport (vpy + vph)
+local param_content_h  = 1200 -- measured each frame; used for scroll math next frame
+
 -- Draw a labeled text-input field; register in ui.param_fields for hit-testing.
 local function pField(id,label,inst,key,rx,ry,rw)
+  if ry < param_clip_y1 - ROW_H or ry >= param_clip_y2 then return end
   local val=tostring(inst[key] or "")
   local focused=(ui.focus_field==id)
   local display=focused and ui.focus_text or val
@@ -673,6 +665,7 @@ end
 
 -- Cycle-button for enum fields
 local function pCycle(label,inst,key,opts,rx,ry,rw)
+  if ry < param_clip_y1 - ROW_H or ry >= param_clip_y2 then return end
   local cur=inst[key] or 1; local lbl=opts[cur] or "?"
   setColor(0.42,0.42,0.50); drawStr(label, rx, ry)
   local bx=rx+88; local bw=rw-92
@@ -685,6 +678,7 @@ end
 
 -- Checkbox
 local function pCheck(label,inst,key,rx,ry)
+  if ry < param_clip_y1 - ROW_H or ry >= param_clip_y2 then return end
   local v=inst[key]
   setColor(v and 0.25 or 0.22, v and 0.80 or 0.22, v and 0.40 or 0.22)
   fillRect(rx,ry,14,14)
@@ -697,6 +691,7 @@ end
 
 
 local function pHeader(title,rx,ry,rw)
+  if ry < param_clip_y1 - ROW_H or ry >= param_clip_y2 then return end
   setColor(0.13,0.17,0.26); fillRect(rx,ry,rw,17)
   setColor(0.36,0.83,0.62); drawStr(title, rx+4, ry+2)
 end
@@ -714,7 +709,9 @@ local function drawParamPanel(rx,ry,rw,rh)
   drawStr(string.format("Instance %d — %s",selectedIdx,inst.name), rx+6, ry+5)
 
   local vpy=ry+24; local vph=rh-24
-  local max_content=1200  -- approx total content height
+  param_clip_y1 = vpy        -- expose to pField/pCheck/pCycle for clipping
+  param_clip_y2 = vpy + vph
+  local max_content=param_content_h  -- measured from previous frame
   local max_scroll=max(0,max_content-vph)
   ui.right_scroll=clamp(ui.right_scroll,0,max_scroll)
 
@@ -789,8 +786,9 @@ local function drawParamPanel(rx,ry,rw,rh)
   pCycle("Falloff",         inst,"falloffMode",FALLOFF_LABELS,px,row(22),pw)
   pCheck("→ Offset",        inst,"affectOffset",   px,row(24)+2)
   pCheck("→ Rate",          inst,"affectRate",     px,row(24)+2)
-  pCheck("→ Scale",         inst,"affectScale",    px,row(24)+2)
-  pCheck("→ Rotation",      inst,"affectRotation", px,row(24)+2)
+
+  -- update content height for next frame's scroll math
+  param_content_h = max(iy - vpy + ui.right_scroll + ROW_H * 2, vph + ROW_H)
 
   -- scroll bar
   if max_scroll>0 then
@@ -840,13 +838,12 @@ local function drawStatusBar(bx,by,bw,bh)
   end
 
   -- ── Preset section ───────────────────────────────────────────
-  -- Layout: "Preset:" | [editable name 148px] | [▼ 24px] | [Save] | [Reset]
-  local pnx=bx+434; local pnlw=148  -- name text field
+  -- Layout: [editable name 130px] | [▼ 24px] | [Save] | [Reset]
+  -- pnx starts after Connect/Disconnect button (bx+420) + "in: PORT" indicator (~50px)
+  local pnx=bx+486; local pnlw=130  -- name text field
   local ddtx=pnx+pnlw+2; local ddtw=24  -- dropdown arrow button
   local savex=ddtx+ddtw+4
   local resetx=savex+66
-
-  setColor(0.38,0.38,0.48); drawStr("Preset:", bx+370, by+8)
 
   -- Name text field (editable)
   local pfoc=(ui.focus_field=="preset_name")
@@ -939,7 +936,7 @@ local function drawStatusBar(bx,by,bw,bh)
   setColor(0.12,0.12,0.17); fillRect(bx,r3y,bw,1)  -- divider
 
   -- Slider helper: draws a scrubber bar with fill from centre
-  local function sb3slider(id, val, lbl, lx, ly, fw, lo, hi)
+  local function sb3slider(id, val, lbl, lx, ly, fw, lo, hi, ctr)
     local focused=(ui.focus_field==id)
     local hot=(ui.sliderDrag.active and ui.sliderDrag.id==id) or focused
     -- label
@@ -950,18 +947,20 @@ local function drawStatusBar(bx,by,bw,bh)
     setColor(focused and 0.06 or 0.09, focused and 0.08 or 0.10, focused and 0.12 or 0.16)
     fillRect(sx,ly+2,fw,18)
     if not focused then
-      -- fill from centre
+      -- fill from neutral point (ctr defaults to 0 for symmetric ranges)
+      local nc = ctr or 0
+      local tc = clamp((nc-lo)/(hi-lo), 0, 1)
       local clamped=clamp(val,lo,hi)
       local t=(clamped-lo)/(hi-lo)
-      local midx=sx+fw*0.5; local ex=sx+fw*t
-      if val>=0 then
+      local midx=sx+fw*tc; local ex=sx+fw*t
+      if val>=nc then
         setColor(hot and 0.30 or 0.18, hot and 0.80 or 0.52, hot and 0.65 or 0.48)
         if ex>midx then fillRect(midx,ly+5,ex-midx,12) end
       else
         setColor(hot and 0.80 or 0.52, hot and 0.35 or 0.25, hot and 0.30 or 0.20)
         if midx>ex then fillRect(ex,ly+5,midx-ex,12) end
       end
-      -- centre tick
+      -- neutral tick
       setColor(0.28,0.28,0.38); fillRect(midx-1,ly+3,2,16)
     end
     -- border — bright teal when focused, normal otherwise
@@ -999,7 +998,9 @@ local function drawStatusBar(bx,by,bw,bh)
   setColor(0.50,0.50,0.62); drawStr("Rotate", lx4, r4y+5); lx4=lx4+54
   sb3slider("gPitch",globalPitch,"Pt",lx4,r4y,fw3,-180,180); lx4=lx4+measureStr("Pt")+4+fw3+5
   sb3slider("gYaw",  globalYaw,  "Yw",lx4,r4y,fw3,-180,180); lx4=lx4+measureStr("Yw")+4+fw3+5
-  sb3slider("gRoll", globalRoll, "Rl",lx4,r4y,fw3,-180,180)
+  sb3slider("gRoll", globalRoll, "Rl",lx4,r4y,fw3,-180,180); lx4=lx4+measureStr("Rl")+4+fw3+16
+  setColor(0.50,0.50,0.62); drawStr("Zoom",lx4,r4y+5); lx4=lx4+measureStr("Zoom")+4
+  sb3slider("gZoom",globalZoom,"×",lx4,r4y,fw3,0,2,1.0)
 
   -- version (bottom-right of row 1)
   local vs=SCRIPT_VERSION
@@ -1009,7 +1010,7 @@ end
 -- Preset dropdown overlay (drawn on top of everything when open)
 local function drawPresetDropdown(bx,by,bw)
   if not ui.preset_open then return end
-  local pnx_=bx+434; local pnlw_=148; local ddtw_=24
+  local pnx_=bx+486; local pnlw_=130; local ddtw_=24
   local ddx=pnx_; local ddw=pnlw_+ddtw_+2   -- align with name field + arrow
   local item_h=ROW_H; local max_vis=10
   local total=#presetIndex
@@ -1277,6 +1278,10 @@ local function deserializeInstance(s)
   return ov
 end
 
+-- Forward declarations (defined after savePreset, called within it)
+local addToPresetIndex
+local removeFromPresetIndex
+
 local function savePreset(name)
   if name=="" then name="MyPreset" end
   storageSave(name.."__count", #instances)
@@ -1317,11 +1322,11 @@ end
 
 -- ── Preset index (master list of saved preset names) ─────────────────────────
 
-function savePresetIndex()
+local function savePresetIndex()
   storageSave("__preset_index__", table.concat(presetIndex,"\t"))
 end
 
-function loadPresetIndex()
+local function loadPresetIndex()
   local s=storageLoad("__preset_index__")
   presetIndex={}
   if s and s~="" then
@@ -1331,14 +1336,14 @@ function loadPresetIndex()
   end
 end
 
-function addToPresetIndex(name)
+addToPresetIndex = function(name)
   if name=="" then return end
   for _,n in ipairs(presetIndex) do if n==name then return end end
   presetIndex[#presetIndex+1]=name
   savePresetIndex()
 end
 
-function removeFromPresetIndex(name)
+removeFromPresetIndex = function(name)
   for i,n in ipairs(presetIndex) do
     if n==name then table.remove(presetIndex,i); savePresetIndex(); return end
   end
@@ -1395,10 +1400,15 @@ def receiver():
             elif addr=='/kristall/roll':  state['roll']=v
             elif addr=='/kristall/rotate' and len(args)>=3:
                 state['pitch']=float(args[0]); state['yaw']=float(args[1]); state['roll']=float(args[2])
-            tmp=state_file+'.tmp'
-            with open(tmp,'w') as f:
-                for k,val in state.items(): f.write(f'{k}={val}\n')
-            os.replace(tmp,state_file)
+            # atomic replace on Unix; direct write fallback on Windows (file locking)
+            try:
+                tmp_=state_file+'.tmp'
+                with open(tmp_,'w') as fw: [fw.write(f'{k}={val}\n') for k,val in state.items()]
+                os.replace(tmp_,state_file)
+            except OSError:
+                try:
+                    with open(state_file,'w') as fw: [fw.write(f'{k}={val}\n') for k,val in state.items()]
+                except: pass
         except socket.timeout: continue
         except: break
 
@@ -1416,20 +1426,44 @@ for line in sys.stdin:
     except: pass
 ]]
 
+-- Detect OS once (Windows path separator is backslash)
+local IS_WINDOWS = package.config:sub(1,1) == "\\"
+
+-- Cross-platform temp path: on Windows os.tmpname() returns a root-relative
+-- path like \lua_XXXXX which is often unwritable; use %TEMP% instead.
+local function osc_tmppath(suffix)
+  if IS_WINDOWS then
+    local d = os.getenv("TEMP") or os.getenv("TMP") or os.getenv("USERPROFILE") or "C:\\Temp"
+    local id = tostring(math.floor((reaper.time_precise()*1e6) % 1e7))
+    return d .. "\\kristall_osc_" .. id .. suffix
+  end
+  return os.tmpname() .. suffix
+end
+
 local function oscConnect()
   if osc.pipe then pcall(function() osc.pipe:close() end); osc.pipe=nil end
   osc.ok=false; osc.status="Connecting…"
   -- write helper script to temp file
-  local tmp=os.tmpname()..".py"
+  local tmp=osc_tmppath(".py")
   local f=io.open(tmp,"w"); if not f then osc.status="Tmp write fail"; return end
   f:write(OSC_PYTHON); f:close()
   -- state file for OSC input (pitch/yaw/roll from receiver thread)
-  local sf=os.tmpname().."_kristall_osc_in.txt"
+  local sf=osc_tmppath("_in.txt")
   osc.state_file=sf
   osc.in_port=(tonumber(osc.port) or 9001)+1
-  local cmd=string.format(
-    "python3 %s %s %s %s 2>/dev/null || python %s %s %s %s 2>/dev/null",
-    tmp, osc.host, osc.port, sf, tmp, osc.host, osc.port, sf)
+  -- On Windows: paths must be quoted (spaces), stderr → nul (not /dev/null)
+  local null_dev = IS_WINDOWS and "2>nul" or "2>/dev/null"
+  local q = IS_WINDOWS and '"' or ''
+  local function py_cmd(exe)
+    return string.format("%s %s%s%s %s %s %s%s%s %s",
+      exe, q, tmp, q, osc.host, osc.port, q, sf, q, null_dev)
+  end
+  -- On Windows: use pythonw (windowless — no cmd.exe popup) then python fallback.
+  -- Skip python3: on Windows it either doesn't exist or triggers the MS Store stub
+  -- (exit code 9009), which leaves the stdin pipe detached for the || fallback.
+  local cmd = IS_WINDOWS
+    and (py_cmd("pythonw") .. " || " .. py_cmd("python"))
+    or  (py_cmd("python3") .. " || " .. py_cmd("python"))
   osc.pipe=io.popen(cmd,"w")
   if osc.pipe then osc.ok=true; osc.status="Connected"; osc.tmp=tmp
   else osc.status="Failed — check Python install" end
@@ -1438,8 +1472,8 @@ end
 local function oscDisconnect()
   if osc.pipe then pcall(function() osc.pipe:close() end); osc.pipe=nil end
   osc.ok=false; osc.status="Disconnected"
-  if osc.tmp then os.remove(osc.tmp); osc.tmp=nil end
-  if osc.state_file then os.remove(osc.state_file); osc.state_file=nil end
+  if osc.tmp then pcall(os.remove, osc.tmp); osc.tmp=nil end
+  if osc.state_file then pcall(os.remove, osc.state_file); osc.state_file=nil end
   osc.in_port=0
 end
 
@@ -1554,6 +1588,18 @@ local function ctrlPoll(dt)
     globalYaw   = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 6), -180, 180)
     globalRoll  = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 7), -180, 180)
   end
+
+  -- Offset X/Y/Z, Move X/Y/Z, Zoom via params 8-14 (slider9-15)
+  -- Only read when the JSFX has the extended sliders (numP >= 15).
+  if numP >= 15 then
+    globalTransX = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx,  8), -2, 2)
+    globalTransY = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx,  9), -2, 2)
+    globalTransZ = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 10), -2, 2)
+    globalMoveX  = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 11), -2, 2)
+    globalMoveY  = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 12), -2, 2)
+    globalMoveZ  = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 13), -2, 2)
+    globalZoom   = clamp(reaper.TrackFX_GetParam(ctrl.track, ctrl.fxIdx, 14),  0, 2)
+  end
 end
 
 -- Send all enabled instances as OSC /icst/ambi/sourceindex/aed messages
@@ -1564,7 +1610,7 @@ local function oscSendPreview()
   osc.last_t = t
   for i,inst in ipairs(instances) do
     if inst.enabled then
-      -- convert XYZ → AED for OSC (encoder's spherical mapping)
+      -- effectivePos already includes rotation, zoom and translation (via applyGlobalTransforms)
       local x=inst.effectivePos.x; local y=inst.effectivePos.y; local z=inst.effectivePos.z
       local dist=sqrt(x*x+y*y+z*z); if dist<0.001 then dist=0.001 end
       local az=(math.atan2 and math.atan2(x,y) or math.atan(x,y))*180/math.pi
@@ -1603,6 +1649,7 @@ local function commitFocus()
   elseif ui.focus_field=="gPitch" then local v=tonumber(ui.focus_text); if v then globalPitch=v end
   elseif ui.focus_field=="gYaw"   then local v=tonumber(ui.focus_text); if v then globalYaw=v end
   elseif ui.focus_field=="gRoll"  then local v=tonumber(ui.focus_text); if v then globalRoll=v end
+  elseif ui.focus_field=="gZoom"  then local v=tonumber(ui.focus_text); if v then globalZoom=clamp(v,0,2) end
   else
     local inst=instances[selectedIdx]
     local key=ui.focus_key
@@ -1686,7 +1733,8 @@ local function handleInput()
       elseif sd.id=="gMZ" then globalMoveZ=newVal
       elseif sd.id=="gPitch" then globalPitch=newVal
       elseif sd.id=="gYaw"   then globalYaw=newVal
-      elseif sd.id=="gRoll"  then globalRoll=newVal end
+      elseif sd.id=="gRoll"  then globalRoll=newVal
+      elseif sd.id=="gZoom"  then globalZoom=newVal end
     else
       -- Mouse released: if barely moved, treat as click → open text edit
       local sd=ui.sliderDrag
@@ -1701,6 +1749,7 @@ local function handleInput()
         elseif sd.id=="gPitch" then cur=globalPitch
         elseif sd.id=="gYaw"   then cur=globalYaw
         elseif sd.id=="gRoll"  then cur=globalRoll
+        elseif sd.id=="gZoom"  then cur=globalZoom
         end
         ui.focus_field = sd.id
         ui.focus_text  = string.format("%.3f", cur or 0)
@@ -1794,7 +1843,7 @@ local function handleInput()
     -- ── Status bar buttons ─────────────────────────────────────
     local sb_y=content_h
     -- Preset layout constants (must match drawStatusBar)
-    local pnx=434; local pnlw=148
+    local pnx=486; local pnlw=130
     local ddtx=pnx+pnlw+2; local ddtw=24
     local savex=ddtx+ddtw+4
     local resetx=savex+66
@@ -1945,7 +1994,8 @@ local function handleInput()
         local cur
         if     id=="gPitch" then cur=globalPitch
         elseif id=="gYaw"   then cur=globalYaw
-        elseif id=="gRoll"  then cur=globalRoll end
+        elseif id=="gRoll"  then cur=globalRoll
+        elseif id=="gZoom"  then cur=globalZoom end
         ui.sliderDrag={active=true,id=id,startMx=mx,startVal=cur or 0,lo=lo,hi=hi,scale=scale}
         return true
       end
@@ -1954,7 +2004,8 @@ local function handleInput()
     local lx4=8+54  -- after "Rotate" label
     r4sliderHit("gPitch","Pt",lx4,-180,180,0.5); lx4=lx4+measureStr("Pt")+4+fw3+5
     r4sliderHit("gYaw",  "Yw",lx4,-180,180,0.5); lx4=lx4+measureStr("Yw")+4+fw3+5
-    r4sliderHit("gRoll", "Rl",lx4,-180,180,0.5)
+    r4sliderHit("gRoll", "Rl",lx4,-180,180,0.5); lx4=lx4+measureStr("Rl")+4+fw3+16+measureStr("Zoom")+4
+    r4sliderHit("gZoom", "×", lx4,0,2,0.005)
 
     -- Preset quick-select bar (row 5 — 8 buttons across full width)
     local pbar_y=sb_y+106; local pbar_h=22
@@ -2113,6 +2164,7 @@ local function mainLoop()
   if cont and gfx.getchar()~=-1 then
     reaper.defer(mainLoop)
   else
+    savePreset("__last__")   -- auto-save session on close
     oscDisconnect()
     gfx.quit()
   end
@@ -2149,24 +2201,9 @@ reaper.defer(mainLoop)
 -- (appended after all sections to resolve forward references)
 -- ============================================================
 
--- math shims not assigned above
-local atan = math.atan2 or math.atan   -- Lua 5.1 uses atan2; 5.3 uses atan(y,x)
-local asin = math.asin
-
--- computeAllInfluences is the exported name used in mainLoop;
--- accumulateInfluences (Section 12) is the implementation.
-local computeAllInfluences = accumulateInfluences
-
--- Re-expose label tables as globals so pCycle (Section 14) can reach them
--- when called before Section 15's explicit assignments. (Section 15 sets the
--- same globals; these are no-op overrides if sec15 ran first.)
+-- Label table safety guards — Section 15 sets these globals before any draw
+-- call, but these or-guards document the expected values as a fallback.
 REP_LABELS    = REP_LABELS    or {"Infinite","Finite","Pingpong"}
 BOUND_LABELS  = BOUND_LABELS  or {"None","Clamp","Wrap","Mirror"}
 ROUND_LABELS  = ROUND_LABELS  or {"Nearest","Floor","Ceil"}
 FALLOFF_LABELS= FALLOFF_LABELS or {"Linear","InvSq","Gaussian"}
-
--- Global accessibility patch — mainLoop and oscSendPreview were defined
--- before the local aliases above, so they look these up as globals.
-computeAllInfluences = accumulateInfluences
-atan = math.atan2 or math.atan
-asin = math.asin

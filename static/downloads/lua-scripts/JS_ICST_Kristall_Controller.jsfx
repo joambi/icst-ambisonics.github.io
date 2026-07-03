@@ -15,6 +15,14 @@ slider5:0.08<0,2,0.001>Glide Time (sec)
 slider6:0<-180,180,0.1>Pitch (tilt fwd/bck)
 slider7:0<-180,180,0.1>Yaw   (spin L/R)
 slider8:0<-180,180,0.1>Roll  (rotate CW/CCW)
+// ── Global Position / Move / Zoom — automate via envelope ────
+slider9:0<-2,2,0.001>Offset X
+slider10:0<-2,2,0.001>Offset Y
+slider11:0<-2,2,0.001>Offset Z
+slider12:0<-2,2,0.001>Move X
+slider13:0<-2,2,0.001>Move Y
+slider14:0<-2,2,0.001>Move Z
+slider15:1<0,2,0.001>Zoom ×
 
 @slider
 // No processing — Lua reads params via TrackFX_GetParam
