@@ -85,6 +85,24 @@ C:\Python311\python.exe
 
 The GUI starts the worker automatically the first time you press a button — no manual launch needed. The worker stays running after you close the GUI and is reused on the next open.
 
+#### Python on Windows
+
+After installing Python from [python.org/downloads](https://www.python.org/downloads/), REAPER may not detect it automatically. To find where Python was installed, open a Command Prompt and run:
+
+```
+python -c "import os, sys; print(os.path.dirname(sys.executable))"
+```
+
+Example output: `C:\Users\stine\AppData\Local\Python\pythoncore-3.14-64`
+
+In REAPER, go to **Preferences → Plug-ins → ReaScript** and enable **"Force ReaScript to use specific Python .dll…"** — point it to the `python3xx.dll` inside that folder (e.g. `python314.dll`).
+
+Then install `python-osc` using the same Python:
+
+```
+python -m pip install python-osc
+```
+
 ### 3. Configure the ICST plugin
 
 Insert `AmbiEncoder_64` on the target track and enable OSC input. Make sure the plugin OSC port matches the GUI setting (default: `50001`).

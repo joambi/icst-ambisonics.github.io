@@ -21,7 +21,7 @@ Dieses Instrument entstand in Zusammenarbeit mit und inspiriert durch Eli Stine,
 - **ICST AmbiEncoder_64** auf dem Ziel-Track — siehe [Installation](/icst-ambisonics-plugins/02_installation/)
 - **Python 3** mit `python-osc` — nur für die Live-OSC-Vorschaubrücke erforderlich
   - macOS / Linux: `pip3 install python-osc`
-  - Windows: `pip install python-osc` — beim Python-Installer unbedingt **„Add Python to PATH"** aktivieren (sonst findet REAPER Python nicht)
+  - Windows: siehe [Python unter Windows](#python-unter-windows) unten
 
 ---
 
@@ -42,6 +42,26 @@ Das Bundle enthält:
 1. In REAPER: **Actions → Load ReaScript…**
 2. `JS_ICST_Kristall_Motion_Map.lua` auswählen und **Open** klicken.
 3. REAPER fügt das Skript der Aktionsliste hinzu. Einmal ausführen — das Kristall-Motion-Map-Fenster öffnet sich.
+
+### Python unter Windows
+
+Nach der Installation von Python über [python.org/downloads](https://www.python.org/downloads/) findet REAPER Python möglicherweise nicht automatisch. Den Installationspfad ermitteln mit diesem Befehl in der Eingabeaufforderung:
+
+```
+python -c "import os, sys; print(os.path.dirname(sys.executable))"
+```
+
+Beispielausgabe: `C:\Users\stine\AppData\Local\Python\pythoncore-3.14-64`
+
+In REAPER dann **Preferences → Plug-ins → ReaScript** öffnen und **„Force ReaScript to use specific Python .dll…"** aktivieren — auf die `python3xx.dll` in diesem Ordner zeigen (z. B. `python314.dll`).
+
+Anschliessend `python-osc` mit demselben Python installieren:
+
+```
+python -m pip install python-osc
+```
+
+---
 
 ### Schritt 3 — Optional: Launcher-Datei
 
