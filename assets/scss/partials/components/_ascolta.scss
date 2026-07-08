@@ -169,6 +169,17 @@
     }
   }
 
+  .hub-next {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.1rem 0 1.75rem;
+
+    .hub-upcoming {
+      margin-top: 0;
+    }
+  }
+
   .hub-start,
   .hub-related {
     display: grid;
@@ -334,6 +345,17 @@
 
     .session-row__subtitle {
       text-decoration: line-through;
+    }
+  }
+
+  .session-row--upcoming {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: default;
+    font-style: italic;
+
+    .session-row__tag {
+      color: #8aaa6b;
     }
   }
 

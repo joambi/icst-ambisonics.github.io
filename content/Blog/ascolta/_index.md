@@ -27,6 +27,25 @@ group: "Listening"
 
 ---
 
+## Upcoming
+
+<div class="hub-next">
+  <div class="hub-upcoming">
+    <span class="hub-upcoming__eyebrow">Upcoming · #20</span>
+    <div class="hub-upcoming__date">29 October 2026</div>
+    <div class="hub-upcoming__meta">18:00 · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
+    <div class="hub-upcoming__text">Concert · Free admission</div>
+  </div>
+  <div class="hub-upcoming">
+    <span class="hub-upcoming__eyebrow">Upcoming · #21</span>
+    <div class="hub-upcoming__date">26 November 2026</div>
+    <div class="hub-upcoming__meta">18:00 · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
+    <div class="hub-upcoming__text">Concert · Free admission</div>
+  </div>
+</div>
+
+---
+
 ## Start here
 
 <div class="hub-start">

@@ -27,6 +27,25 @@ languageCode: de
 
 ---
 
+## Demnächst
+
+<div class="hub-next">
+  <div class="hub-upcoming">
+    <span class="hub-upcoming__eyebrow">Demnächst · #20</span>
+    <div class="hub-upcoming__date">29. Oktober 2026</div>
+    <div class="hub-upcoming__meta">18:00 Uhr · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
+    <div class="hub-upcoming__text">Konzert · Eintritt frei</div>
+  </div>
+  <div class="hub-upcoming">
+    <span class="hub-upcoming__eyebrow">Demnächst · #21</span>
+    <div class="hub-upcoming__date">26. November 2026</div>
+    <div class="hub-upcoming__meta">18:00 Uhr · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
+    <div class="hub-upcoming__text">Konzert · Eintritt frei</div>
+  </div>
+</div>
+
+---
+
 ## Schnell einsteigen
 
 <div class="hub-start">
