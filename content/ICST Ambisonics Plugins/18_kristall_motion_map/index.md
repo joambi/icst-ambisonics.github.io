@@ -13,7 +13,7 @@ Level: Intermediate | Audience: Composer, sound designer, spatial-audio technici
 ICST Kristall Motion Map is a **standalone REAPER Lua script** with a real-time graphical interface. It arranges up to 64 AmbiEncoder sources as points within a 3D crystal lattice and moves them through space using a step sequencer. The movement can be tracked live in the isometric preview, sent via OSC to an ICST AmbiEncoder_64, and shaped using instance-specific transformations, quantisation, smoothing and interaction.
 This instrument was created in collaboration with and inspired by Eli Stine, a guest at the ICST Studio Residency 2026.
 
-![ICST Kristall Motion Map — full interface overview showing instance list, lattice preview, parameter panel and status bar](Kristall%20Overview.png)
+![ICST Kristall Motion Map — full interface overview showing instance list, lattice preview, parameter panel and status bar](/images/kristall-overview.png)
 
 This is a short demo of a random Kristall by Eli Stine — rendered in binaural.
 
