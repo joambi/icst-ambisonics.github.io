@@ -1,6 +1,6 @@
 -- @description ICST Kristall Motion Map
 -- @author JS / Codex
--- @version 2.1.7
+-- @version 2.2.1
 -- @about
 --   Modular 3D crystal-lattice motion system for up to 64 AmbiEncoder sources.
 --   Inspired by ICST Ambi Motion Map. Real-time gfx GUI, isometric 3D preview,
@@ -11,7 +11,7 @@
 -- ============================================================
 
 local SCRIPT_NAME    = "ICST Kristall Motion Map"
-local SCRIPT_VERSION = "v2.1.7"
+local SCRIPT_VERSION = "v2.2.8"
 local MAX_INSTANCES  = 64
 local PRESET_EXT     = "ICST_KristallMotionMap_v1"
 
@@ -176,6 +176,16 @@ local function resetInstance(inst)
   inst.influenceSum   = 0
 end
 
+-- Restore all parameter values to factory defaults, keeping name and color.
+local function defaultInstance(inst)
+  local keep_name  = inst.name
+  local keep_color = inst.colorIdx
+  for k,v in pairs(DEFAULTS) do inst[k]=v end
+  inst.name     = keep_name
+  inst.colorIdx = keep_color
+  resetInstance(inst)
+end
+
 local function duplicateInstance(src)
   local copy=createInstance(); for k,v in pairs(src) do copy[k]=v end
   resetInstance(copy); return copy
@@ -189,12 +199,13 @@ local function removeInstance(list,idx) table.remove(list,idx) end
 
 local instances   = {}
 local selectedIdx = 1
+local selectedSet = {[1]=true}  -- all currently selected indices (shift-click multi-select)
 
 local function addInstance(ov)
   if #instances>=MAX_INSTANCES then return nil end
   local inst=createInstance(ov); table.insert(instances,inst); return inst
 end
-local function clearAll() instances={}; selectedIdx=1 end
+local function clearAll() instances={}; selectedIdx=1; selectedSet={[1]=true} end
 local function activeCount()
   local c=0; for _,i in ipairs(instances) do if i.enabled then c=c+1 end end; return c
 end
@@ -217,6 +228,11 @@ local ui = {
   preset_open    = false,
   preset_scroll  = 0,
   sliderDrag     = {active=false,id=nil,startMx=0,startVal=0,lo=0,hi=1,scale=0.01},
+  cmdDrag        = {active=false,key=nil,inst=nil,startMy=0,startVal=0,step=0.01},
+  sb_right_geo   = nil,  -- {x,y,w,h,track_y,track_h,max_scroll} set each frame by drawParamPanel
+  sb_right_drag  = false,
+  sb_right_start = 0,    -- mouse_y at drag start
+  sb_right_base  = 0,    -- right_scroll value at drag start
 }
 
 local osc = {
@@ -252,7 +268,10 @@ local globalMoveZ  = 0.0
 local globalPitch  = 0.0   -- global rotation X (degrees): tilts figure forward/back
 local globalYaw    = 0.0   -- global rotation Y (degrees): spins figure left/right
 local globalRoll   = 0.0   -- global rotation Z (degrees): rolls figure clockwise/ccw
-local globalZoom   = 1.0   -- global zoom: scales whole figure around origin (0=collapse, 1=neutral, 2=2×)
+local globalZoom     = 1.0   -- global zoom: scales whole figure around origin (0=collapse, 1=neutral, 2=2×)
+local globalRotPitch = 0.0   -- spin: degrees per second added to globalPitch (feature: global rotation per step)
+local globalRotYaw   = 0.0   -- spin: degrees per second added to globalYaw
+local globalRotRoll  = 0.0   -- spin: degrees per second added to globalRoll
 
 local function computeStepPosition(inst)
   local step=inst.currentStep
@@ -424,7 +443,8 @@ local function updateInstance(inst,inf,dt,transport)
     else
       local d=inst.direction*globalDir
       if inst.repetitionMode==REP.INFINITE then
-        inst.currentStep=inst.currentStep+d
+        local sc_safe=max(1,sc)
+        inst.currentStep=(inst.currentStep+d) % sc_safe
       elseif inst.repetitionMode==REP.FINITE then
         inst.currentStep=clamp(inst.currentStep+d, 0, sc-1)
       elseif inst.repetitionMode==REP.PINGPONG then
@@ -461,7 +481,16 @@ end
 -- while paused still updates the preview and OSC output immediately.
 local rotMatCache = nil
 local rotCacheKey = ""
-local function applyGlobalTransforms()
+local function applyGlobalTransforms(dt)
+  -- Feature: global rotation per step (spin) — accumulate into Pitch/Yaw/Roll
+  if not globalPaused and dt and (globalRotPitch~=0 or globalRotYaw~=0 or globalRotRoll~=0) then
+    local t_=getTransportState(); local bpm_=t_.bpm or 120
+    local rate_=rateMode==1 and (bpm_/60*globalRateMult) or globalRateMult
+    globalPitch=((globalPitch+globalRotPitch*dt*rate_)+180)%360-180
+    globalYaw  =((globalYaw  +globalRotYaw  *dt*rate_)+180)%360-180
+    globalRoll =((globalRoll +globalRotRoll *dt*rate_)+180)%360-180
+    rotCacheKey=""  -- invalidate rotation matrix cache
+  end
   local needRot = (globalPitch~=0 or globalYaw~=0 or globalRoll~=0)
   if needRot then
     local key=globalPitch..","..globalYaw..","..globalRoll
@@ -600,8 +629,10 @@ local function drawInstanceList(lx,ly,lw,lh)
   for i,inst in ipairs(instances) do
     local ry=ly+26+(i-1)*ROW_H-ui.LIST_SCROLL
     if ry>ly+26-ROW_H and ry<ly+26+visible_h then
-      local sel=(i==selectedIdx)
-      if sel then setColor(0.18,0.32,0.58); fillRect(lx,ry,lw,ROW_H) end
+      local isPrimary=(i==selectedIdx)
+      local isInSet=selectedSet[i]
+      if isPrimary then setColor(0.22,0.42,0.68); fillRect(lx,ry,lw,ROW_H)
+      elseif isInSet then setColor(0.14,0.25,0.48); fillRect(lx,ry,lw,ROW_H) end
       -- color swatch
       local c=PALETTE[((inst.colorIdx-1)%#PALETTE)+1]
       setColor(c[1],c[2],c[3]); fillRect(lx+3,ry+5,8,12)
@@ -609,7 +640,9 @@ local function drawInstanceList(lx,ly,lw,lh)
       if inst.enabled then setColor(0.25,0.90,0.35) else setColor(0.50,0.18,0.18) end
       gfx.circle(lx+18,ry+11,4,1)
       -- name
-      setColor(sel and 1.0 or 0.85, sel and 1.0 or 0.85, sel and 1.0 or 0.88)
+      setColor(isPrimary and 1.0 or (isInSet and 0.93 or 0.85),
+               isPrimary and 1.0 or (isInSet and 0.93 or 0.85),
+               isPrimary and 1.0 or (isInSet and 0.95 or 0.88))
       drawStr(string.format("%2d  %s",i,inst.name), lx+28, ry+5)
       -- step
       setColor(0.40,0.40,0.48)
@@ -660,7 +693,7 @@ local function pField(id,label,inst,key,rx,ry,rw)
   setColor(focused and 0.36 or 0.22, focused and 0.83 or 0.22, focused and 0.62 or 0.28)
   drawRect(bx,ry-2,bw,ROW_H-3)
   setColor(1,1,1); drawStr(display, bx+4, ry)
-  ui.param_fields[#ui.param_fields+1]={id=id,key=key,x=bx,y=ry-2,w=bw,h=ROW_H-2}
+  ui.param_fields[#ui.param_fields+1]={id=id,key=key,x=bx,y=ry-2,w=bw,h=ROW_H-2,inst=inst}
 end
 
 -- Cycle-button for enum fields
@@ -707,6 +740,11 @@ local function drawParamPanel(rx,ry,rw,rh)
   setColor(0.12,0.15,0.22); fillRect(rx,ry,rw,22)
   setColor(0.90,0.90,0.95)
   drawStr(string.format("Instance %d — %s",selectedIdx,inst.name), rx+6, ry+5)
+  -- ↺ Defaults button (right-anchored in header, not scrolled)
+  local defbx=rx+rw-54; local defby=ry+3; local defbw=50; local defbh=16
+  setColor(0.14,0.14,0.24); fillRect(defbx,defby,defbw,defbh)
+  setColor(0.38,0.38,0.60); drawRect(defbx,defby,defbw,defbh)
+  setColor(0.62,0.62,0.85); drawStr("↺ Def", defbx+7, defby+2)
 
   local vpy=ry+24; local vph=rh-24
   param_clip_y1 = vpy        -- expose to pField/pCheck/pCycle for clipping
@@ -790,11 +828,15 @@ local function drawParamPanel(rx,ry,rw,rh)
   -- update content height for next frame's scroll math
   param_content_h = max(iy - vpy + ui.right_scroll + ROW_H * 2, vph + ROW_H)
 
-  -- scroll bar
+  -- scroll bar (interactive — geometry stored in ui.sb_right_geo for drag handling)
   if max_scroll>0 then
     local sbh=max(16,vph*vph/max_content)
     local sby=vpy+(ui.right_scroll/max_scroll)*(vph-sbh)
-    setColor(0.25,0.25,0.38); fillRect(rx+rw-5,sby,4,sbh)
+    ui.sb_right_geo={x=rx+rw-8,y=sby,w=7,h=sbh,track_y=vpy,track_h=vph,max_scroll=max_scroll}
+    if ui.sb_right_drag then setColor(0.45,0.50,0.72) else setColor(0.25,0.25,0.38) end
+    fillRect(rx+rw-7,sby,6,sbh)
+  else
+    ui.sb_right_geo=nil
   end
 end
 
@@ -838,11 +880,13 @@ local function drawStatusBar(bx,by,bw,bh)
   end
 
   -- ── Preset section ───────────────────────────────────────────
-  -- Layout: [editable name 130px] | [▼ 24px] | [Save] | [Reset]
-  -- pnx starts after Connect/Disconnect button (bx+420) + "in: PORT" indicator (~50px)
-  local pnx=bx+486; local pnlw=130  -- name text field
-  local ddtx=pnx+pnlw+2; local ddtw=24  -- dropdown arrow button
-  local savex=ddtx+ddtw+4
+  -- Right-anchored so it never collides with the OSC section regardless of window width.
+  -- Total preset widget width: name(130) + gap(2) + ▼(24) + gap(4) + Save(62) + gap(4) + Reset(62) = 288px + margins
+  -- Minimum pnx = bx+490 (keeps 70px clear of Connect button right edge at 420).
+  local pnlw=130; local ddtw=24
+  local pnx  = max(bx+490, bx+bw-296)  -- right-anchored, never left of 490
+  local ddtx = pnx+pnlw+2
+  local savex= ddtx+ddtw+4
   local resetx=savex+66
 
   -- Name text field (editable)
@@ -928,8 +972,13 @@ local function drawStatusBar(bx,by,bw,bh)
   setColor(globalPingPong and 0.30 or 0.55, globalPingPong and 0.90 or 0.65, globalPingPong and 1.0 or 0.70)
   drawStr("⇄ PP", ppx+4, r2y+5)
 
+  -- Sync timing button (after PingPong)
+  local syncx=ppx+ppw+6; local syncw=46
+  setColor(0.09,0.18,0.16); fillRect(syncx,r2y+2,syncw,18)
+  setColor(0.22,0.60,0.52); drawRect(syncx,r2y+2,syncw,18)
+  setColor(0.36,0.88,0.76); drawStr("⊙ Sync", syncx+4, r2y+5)
   -- Status message (rest of row 2)
-  setColor(0.35,0.35,0.45); drawStr(statusMsg, ppx+ppw+10, r2y+6)
+  setColor(0.35,0.35,0.45); drawStr(statusMsg, syncx+syncw+10, r2y+6)
 
   -- ── Row 3: Global Pos (translation) + Global Move (direction) ──
   local r3y=by+54
@@ -1002,15 +1051,37 @@ local function drawStatusBar(bx,by,bw,bh)
   setColor(0.50,0.50,0.62); drawStr("Zoom",lx4,r4y+5); lx4=lx4+measureStr("Zoom")+4
   sb3slider("gZoom",globalZoom,"×",lx4,r4y,fw3,0,2,1.0)
 
-  -- version (bottom-right of row 1)
+  -- ── Row 5: Spin (global rotation per step) + Arrange shapes ──
+  local r5y=by+106
+  setColor(0.12,0.12,0.17); fillRect(bx,r5y,bw,1)  -- divider
+  local lx5=bx+8
+  setColor(0.50,0.50,0.62); drawStr("Spin", lx5, r5y+5); lx5=lx5+48
+  sb3slider("gRPitch",globalRotPitch,"Pt",lx5,r5y,fw3,-360,360); lx5=lx5+measureStr("Pt")+4+fw3+5
+  sb3slider("gRYaw",  globalRotYaw,  "Yw",lx5,r5y,fw3,-360,360); lx5=lx5+measureStr("Yw")+4+fw3+5
+  sb3slider("gRRoll", globalRotRoll, "Rl",lx5,r5y,fw3,-360,360); lx5=lx5+measureStr("Rl")+4+fw3+16
+  -- Arrange buttons (right of Spin)
+  local arrLbl="Arrange:"
+  setColor(0.50,0.50,0.62); drawStr(arrLbl, lx5, r5y+5)
+  lx5=lx5+measureStr(arrLbl)+6
+  local arrNames={"Circle","Helix","Sphere","Line","Grid","Rnd"}
+  local arrW=46
+  for ai,sname in ipairs(arrNames) do
+    local ax=lx5+(ai-1)*(arrW+3)
+    setColor(0.12,0.16,0.24); fillRect(ax,r5y+2,arrW-2,18)
+    setColor(0.22,0.38,0.58); drawRect(ax,r5y+2,arrW-2,18)
+    setColor(0.65,0.82,1.0); drawStr(sname, ax+4, r5y+5)
+  end
+
+  -- version string — right edge of row 2 (avoids row-1 preset section)
   local vs=SCRIPT_VERSION
-  setColor(0.26,0.26,0.34); drawStr(vs, bx+bw-measureStr(vs)-8, by+8)
+  setColor(0.26,0.26,0.34); drawStr(vs, bx+bw-measureStr(vs)-6, r2y+6)
 end
 
 -- Preset dropdown overlay (drawn on top of everything when open)
 local function drawPresetDropdown(bx,by,bw)
   if not ui.preset_open then return end
-  local pnx_=bx+486; local pnlw_=130; local ddtw_=24
+  local pnlw_=130; local ddtw_=24
+  local pnx_=max(bx+490, bx+bw-296)   -- must match drawStatusBar
   local ddx=pnx_; local ddw=pnlw_+ddtw_+2   -- align with name field + arrow
   local item_h=ROW_H; local max_vis=10
   local total=#presetIndex
@@ -1068,15 +1139,27 @@ local function presetCubic(n, spacing)
   n = n or 2; spacing = spacing or 1.0
   clearAll()
   local ci=1
+  local sc=64
   for ix=0,n-1 do for iy=0,n-1 do for iz=0,n-1 do
+    -- Each corner oscillates toward the centre (0,0,0) and back.
+    -- At step 0 the instance sits at its lattice corner; at step sc-1
+    -- it reaches (0,0,0); PingPong reverses back — a breathing cube.
+    local sx=(ix-(n-1)/2)*spacing
+    local sy=(iy-(n-1)/2)*spacing
+    local sz=(iz-(n-1)/2)*spacing
+    local ox= (sc>1) and (-sx/(sc-1)) or 0
+    local oy= (sc>1) and (-sy/(sc-1)) or 0
+    local oz= (sc>1) and (-sz/(sc-1)) or 0
     local ov={
       name=string.format("C%d%d%d",ix,iy,iz),
-      startX=tostring((ix-(n-1)/2)*spacing),
-      startY=tostring((iy-(n-1)/2)*spacing),
-      startZ=tostring((iz-(n-1)/2)*spacing),
-      offsetX="0.02", offsetY="0.01", offsetZ="0.015",
-      rate="2", stepCount="64",
-      repetitionMode=REP.INFINITE,
+      startX=string.format("%.4f",sx),
+      startY=string.format("%.4f",sy),
+      startZ=string.format("%.4f",sz),
+      offsetX=string.format("%.4f",ox),
+      offsetY=string.format("%.4f",oy),
+      offsetZ=string.format("%.4f",oz),
+      rate="2", stepCount=tostring(sc),
+      repetitionMode=REP.PINGPONG,
       colorIdx=((ci-1)%#PALETTE)+1,
     }
     addInstance(ov); ci=ci+1
@@ -1288,8 +1371,10 @@ local function savePreset(name)
   for i,inst in ipairs(instances) do
     storageSave(name.."__inst"..i, serializeInstance(inst))
   end
-  storageSave(name.."__osc_host", osc.host)
-  storageSave(name.."__osc_port", osc.port)
+  storageSave(name.."__osc_host",   osc.host)
+  storageSave(name.."__osc_port",   osc.port)
+  storageSave(name.."__rateMode",   rateMode)
+  storageSave(name.."__rateMult",   globalRateMult)
   addToPresetIndex(name)
   presetName=name
   statusMsg="Preset saved: "..name
@@ -1317,6 +1402,8 @@ local function loadPreset(name)
   end
   local h=storageLoad(name.."__osc_host"); if h and h~="" then osc.host=h end
   local p=storageLoad(name.."__osc_port"); if p and p~="" then osc.port=p end
+  local rm=tonumber(storageLoad(name.."__rateMode")); if rm then rateMode=rm end
+  local rml=tonumber(storageLoad(name.."__rateMult")); if rml then globalRateMult=clamp(rml,0.01,16) end
   statusMsg="Preset loaded: "..name
 end
 
@@ -1649,13 +1736,22 @@ local function commitFocus()
   elseif ui.focus_field=="gPitch" then local v=tonumber(ui.focus_text); if v then globalPitch=v end
   elseif ui.focus_field=="gYaw"   then local v=tonumber(ui.focus_text); if v then globalYaw=v end
   elseif ui.focus_field=="gRoll"  then local v=tonumber(ui.focus_text); if v then globalRoll=v end
-  elseif ui.focus_field=="gZoom"  then local v=tonumber(ui.focus_text); if v then globalZoom=clamp(v,0,2) end
+  elseif ui.focus_field=="gZoom"   then local v=tonumber(ui.focus_text); if v then globalZoom  =clamp(v,0,2) end
+  elseif ui.focus_field=="gRPitch" then local v=tonumber(ui.focus_text); if v then globalRotPitch=clamp(v,-360,360) end
+  elseif ui.focus_field=="gRYaw"   then local v=tonumber(ui.focus_text); if v then globalRotYaw  =clamp(v,-360,360) end
+  elseif ui.focus_field=="gRRoll"  then local v=tonumber(ui.focus_text); if v then globalRotRoll =clamp(v,-360,360) end
   else
     local inst=instances[selectedIdx]
     local key=ui.focus_key
     if inst and key then
       if type(inst[key])~="boolean" then
         inst[key]=ui.focus_text
+        -- batch apply same value to all other selected instances
+        for idx,_ in pairs(selectedSet) do
+          if instances[idx] and idx~=selectedIdx then
+            instances[idx][key]=ui.focus_text
+          end
+        end
       end
     end
   end
@@ -1663,7 +1759,7 @@ local function commitFocus()
 end
 
 local WIN_W, WIN_H       -- updated each frame from gfx
-local STAT_H = 128  -- row1=28px + row2=26px + row3=26px + row4=26px + presetBar=22px
+local STAT_H = 154  -- row1=28px + row2=26px + row3=26px + row4=26px + row5=26px + presetBar=22px
 local PREV_H_FRAC = 0.45  -- fraction of right column for lattice preview
 
 local function handleInput()
@@ -1675,14 +1771,51 @@ local function handleInput()
 
   WIN_W=gfx.w; WIN_H=gfx.h
   local content_h = WIN_H - STAT_H
+  local shift_held=(gfx.mouse_cap&8)==8
+  local cmd_held  =(gfx.mouse_cap&4)==4
+
+  -- ── Focused-field scroll: nudge value without typing ────────────
+  -- Click any value box to focus it, then scroll to adjust.
+  -- Shift+scroll = ×10 coarser step.
+  if gfx.mouse_wheel~=0 and ui.focus_field then
+    local cur=tonumber(ui.focus_text)
+    if cur then
+      local notch=gfx.mouse_wheel>0 and 1 or -1
+      local key=ui.focus_key or ui.focus_field
+      local step
+      if     key=="stepCount"                      then step=1
+      elseif key:match("^rot")                     then step=1.0
+      elseif key:match("^offset")                  then step=0.005
+      elseif key=="rate"                           then step=0.05
+      elseif key:match("^start")                   then step=0.01
+      elseif key=="smoothing"                      then step=0.01
+      elseif key=="globalRate"                     then step=0.1
+      elseif key:match("^gT") or key:match("^gM") then step=0.01
+      elseif key=="gPitch" or key=="gYaw"
+          or key=="gRoll"                          then step=1.0
+      elseif key=="gZoom"                          then step=0.01
+      elseif key:match("^gR")                      then step=1.0
+      else                                              step=0.01
+      end
+      if shift_held then step=step*10 end
+      local newVal=cur+notch*step
+      if key=="stepCount" then
+        newVal=math.floor(clamp(newVal,1,512))
+        ui.focus_text=tostring(newVal)
+      else
+        ui.focus_text=string.format("%.4f",newVal)
+      end
+      gfx.mouse_wheel=0
+    end
+  end
 
   -- ── List panel ─────────────────────────────────────────────
   local list_x=0; local list_y=0; local list_h=content_h
 
   if hit(mx,my,list_x,list_y,LIST_W,list_h) then
-    -- scroll wheel on list
+    -- scroll wheel on list (~1 row per notch)
     if gfx.mouse_wheel~=0 then
-      ui.LIST_SCROLL=ui.LIST_SCROLL - gfx.mouse_wheel*ROW_H*0.5
+      ui.LIST_SCROLL=ui.LIST_SCROLL - (gfx.mouse_wheel/120)*ROW_H
       gfx.mouse_wheel=0
     end
     if clicked then
@@ -1691,8 +1824,18 @@ local function handleInput()
       local row=floor(ry/ROW_H)+1
       if row>=1 and row<=#instances then
         commitFocus()
-        selectedIdx=row
-        onSelectionChanged()
+        if shift_held then
+          if selectedSet[row] and row~=selectedIdx then
+            selectedSet[row]=nil  -- deselect non-primary
+          else
+            selectedSet[row]=true
+            selectedIdx=row
+          end
+        else
+          selectedSet={[row]=true}
+          selectedIdx=row
+          onSelectionChanged()
+        end
       end
       -- Add / Rem / Dup buttons
       local by_=list_y+list_h-24; local bw_=floor(LIST_W/3)
@@ -1715,9 +1858,11 @@ local function handleInput()
   local param_y=prev_h; local param_h=content_h-prev_h
 
   -- ── Lattice preview drag ─────────────────────────────────────
-  local prev_cx=right_x+right_w*0.5; local prev_cy=prev_h*0.55
-  local iso_scale=min(right_w,prev_h)*0.17
-  local shift_held=(gfx.mouse_cap&8)==8
+  -- Must match drawLatticePreview(right_x, 0, right_w, prev_h) exactly:
+  --   cx = px+pw*0.5, cy = py+ph*0.55 = 0+prev_h*0.55, scale = min(pw,ph)*0.17
+  local prev_cx   = right_x + right_w*0.5
+  local prev_cy   = prev_h * 0.55
+  local iso_scale = min(right_w, prev_h) * 0.17
 
   -- ── Slider drag update ─────────────────────────────────────────
   if ui.sliderDrag.active then
@@ -1734,7 +1879,10 @@ local function handleInput()
       elseif sd.id=="gPitch" then globalPitch=newVal
       elseif sd.id=="gYaw"   then globalYaw=newVal
       elseif sd.id=="gRoll"  then globalRoll=newVal
-      elseif sd.id=="gZoom"  then globalZoom=newVal end
+      elseif sd.id=="gZoom"   then globalZoom=newVal
+      elseif sd.id=="gRPitch" then globalRotPitch=newVal
+      elseif sd.id=="gRYaw"   then globalRotYaw=newVal
+      elseif sd.id=="gRRoll"  then globalRotRoll=newVal end
     else
       -- Mouse released: if barely moved, treat as click → open text edit
       local sd=ui.sliderDrag
@@ -1749,7 +1897,10 @@ local function handleInput()
         elseif sd.id=="gPitch" then cur=globalPitch
         elseif sd.id=="gYaw"   then cur=globalYaw
         elseif sd.id=="gRoll"  then cur=globalRoll
-        elseif sd.id=="gZoom"  then cur=globalZoom
+        elseif sd.id=="gZoom"   then cur=globalZoom
+        elseif sd.id=="gRPitch" then cur=globalRotPitch
+        elseif sd.id=="gRYaw"   then cur=globalRotYaw
+        elseif sd.id=="gRRoll"  then cur=globalRotRoll
         end
         ui.focus_field = sd.id
         ui.focus_text  = string.format("%.3f", cur or 0)
@@ -1758,33 +1909,72 @@ local function handleInput()
     end
   end
 
+  -- ── Cmd+drag: vertical mouse scrub on instance value fields ─────
+  -- Cmd+LMB on a value box then drag up/down to change value.
+  -- Shift during drag = ×10 finer step.
+  if ui.cmdDrag.active then
+    if lmb then
+      local dy = ui.cmdDrag.startMy - my   -- positive = moved up = value increases
+      local key = ui.cmdDrag.key
+      local eff_step = shift_held and ui.cmdDrag.step*0.1 or ui.cmdDrag.step
+      local newVal = ui.cmdDrag.startVal + dy * eff_step
+      if key=="stepCount" then newVal=math.floor(clamp(newVal,1,512)) end
+      local inst=ui.cmdDrag.inst
+      if inst then
+        local prevVal=tonumber(inst[key]) or 0
+        local delta=newVal-prevVal
+        inst[key]=tostring(newVal)
+        -- batch: apply same delta to other selected instances
+        for idx,_ in pairs(selectedSet) do
+          if instances[idx] and instances[idx]~=inst then
+            local bc=tonumber(instances[idx][key]) or 0
+            local bv=bc+delta
+            if key=="stepCount" then bv=math.floor(clamp(bv,1,512)) end
+            instances[idx][key]=tostring(bv)
+          end
+        end
+      end
+    else
+      ui.cmdDrag.active=false
+    end
+  end
+
   if drag.active then
     if lmb then
-      -- update position while dragging
+      -- update position while dragging — applies delta to ALL selected instances
       local inst=instances[drag.instIdx]
       if inst then
+        local origs=drag.origPositions or {[drag.instIdx]={x=drag.origX,y=drag.origY,z=drag.origZ}}
         if shift_held then
-          -- Z axis: vertical screen movement maps to Z
+          -- Z axis: apply same dZ to all selected
           local dz=(drag.startMy-my)/iso_scale
-          local newZ=clamp(drag.origZ+dz,-2,2)
-          inst.startZ=string.format("%.4f",newZ)
-          -- also shift currentPos so preview updates
-          inst.currentPos.z=newZ; inst.effectivePos.z=newZ
+          for idx,orig in pairs(origs) do
+            if instances[idx] then
+              local newZ=clamp(orig.z+dz,-2,2)
+              instances[idx].startZ=string.format("%.4f",newZ)
+              instances[idx].currentPos.z=newZ; instances[idx].effectivePos.z=newZ
+            end
+          end
         else
-          -- XY plane via inverse iso projection
+          -- XY plane: compute delta from primary drag, apply to all selected
           local wx,wy=isoUnproject(mx,my,drag.origZ, prev_cx,prev_cy,iso_scale)
           local ox,oy=isoUnproject(drag.startMx,drag.startMy,drag.origZ, prev_cx,prev_cy,iso_scale)
-          local newX=clamp(drag.origX+(wx-ox),-2,2)
-          local newY=clamp(drag.origY+(wy-oy),-2,2)
-          inst.startX=string.format("%.4f",newX)
-          inst.startY=string.format("%.4f",newY)
-          inst.currentPos.x=newX; inst.effectivePos.x=newX
-          inst.currentPos.y=newY; inst.effectivePos.y=newY
+          local dx=wx-ox; local dy=wy-oy
+          for idx,orig in pairs(origs) do
+            if instances[idx] then
+              local newX=clamp(orig.x+dx,-2,2)
+              local newY=clamp(orig.y+dy,-2,2)
+              instances[idx].startX=string.format("%.4f",newX)
+              instances[idx].startY=string.format("%.4f",newY)
+              instances[idx].currentPos.x=newX; instances[idx].effectivePos.x=newX
+              instances[idx].currentPos.y=newY; instances[idx].effectivePos.y=newY
+            end
+          end
         end
       end
     else
       -- mouse released — drag done
-      drag.active=false; drag.instIdx=nil
+      drag.active=false; drag.instIdx=nil; drag.origPositions=nil
     end
   elseif clicked and hit(mx,my,right_x,0,right_w,prev_h) then
     -- check if click landed on any dot
@@ -1794,43 +1984,171 @@ local function handleInput()
                                prev_cx,prev_cy,iso_scale)
         if (mx-sx)*(mx-sx)+(my-sy)*(my-sy)<=(10*10) then
           commitFocus()
-          selectedIdx=i; onSelectionChanged()
+          if shift_held then
+            -- Shift+click in preview: add dot to selectedSet (multi-select)
+            selectedSet[i]=true; selectedIdx=i
+          else
+            selectedSet={[i]=true}; selectedIdx=i; onSelectionChanged()
+          end
           drag.active=true; drag.instIdx=i
           drag.startMx=mx; drag.startMy=my
           drag.origX=tonumber(inst.startX) or 0
           drag.origY=tonumber(inst.startY) or 0
           drag.origZ=tonumber(inst.startZ) or 0
+          -- Snapshot start positions of ALL selected instances for multi-drag
+          drag.origPositions={}
+          for idx,_ in pairs(selectedSet) do
+            if instances[idx] then
+              drag.origPositions[idx]={
+                x=tonumber(instances[idx].startX) or 0,
+                y=tonumber(instances[idx].startY) or 0,
+                z=tonumber(instances[idx].startZ) or 0,
+              }
+            end
+          end
           break
         end
       end
     end
   end
 
-  -- dropdown scroll
+  -- dropdown scroll (~1 row per notch)
   if ui.preset_open and gfx.mouse_wheel~=0 then
-    ui.preset_scroll=ui.preset_scroll - gfx.mouse_wheel*ROW_H*0.5
+    ui.preset_scroll=ui.preset_scroll - (gfx.mouse_wheel/120)*ROW_H
     gfx.mouse_wheel=0
   end
 
-  -- scroll in param panel
-  if hit(mx,my,right_x,param_y,right_w,param_h) then
-    if gfx.mouse_wheel~=0 then
-      ui.right_scroll=ui.right_scroll - gfx.mouse_wheel*ROW_H*0.5
+  -- Param panel: mouse-wheel over a field changes its value; elsewhere scrolls the panel.
+  if hit(mx,my,right_x,param_y,right_w,param_h) and gfx.mouse_wheel~=0 then
+    local consumed=false
+    for _,f in ipairs(ui.param_fields) do
+      if hit(mx,my,f.x,f.y,f.w,f.h) then
+        local notch=gfx.mouse_wheel>0 and 1 or -1
+        if f.cycle and f.inst and f.options then
+          -- Cycle field (Mode, Order…): wheel steps through options
+          local cur=f.inst[f.key] or 1
+          local newVal=((cur-1+notch) % #f.options)+1
+          f.inst[f.key]=newVal
+          for idx,_ in pairs(selectedSet) do
+            if instances[idx] and idx~=selectedIdx then instances[idx][f.key]=newVal end
+          end
+        elseif not f.checkbox and f.inst and f.key then
+          -- Numeric text field: wheel nudges value; shift = ×10 coarser step
+          local key=f.key
+          local step
+          if     key=="stepCount"        then step=1
+          elseif key:match("^rot")       then step=1.0
+          elseif key:match("^offset")    then step=0.005
+          elseif key=="rate"             then step=0.05
+          elseif key:match("^start")     then step=0.01
+          elseif key=="smoothing"        then step=0.01
+          else                                step=0.01
+          end
+          if shift_held then step=step*10 end
+          local delta=notch*step
+          local cur=tonumber(f.inst[key]) or 0
+          local newVal=cur+delta
+          if key=="stepCount" then newVal=math.floor(clamp(newVal,1,512)) end
+          f.inst[key]=tostring(newVal)
+          -- batch apply same delta to all other selected instances
+          for idx,_ in pairs(selectedSet) do
+            if instances[idx] and idx~=selectedIdx then
+              local bc=tonumber(instances[idx][key]) or 0
+              local bv=bc+delta
+              if key=="stepCount" then bv=math.floor(clamp(bv,1,512)) end
+              instances[idx][key]=tostring(bv)
+            end
+          end
+        end
+        gfx.mouse_wheel=0; consumed=true; break
+      end
+    end
+    if not consumed then
+      ui.right_scroll=ui.right_scroll - gfx.mouse_wheel*0.15
       gfx.mouse_wheel=0
+    end
+  end
+
+  -- right scrollbar drag
+  local sg=ui.sb_right_geo
+  if sg and not ui.sb_right_drag and clicked and hit(mx,my,sg.x,sg.y,sg.w,sg.h) then
+    ui.sb_right_drag=true
+    ui.sb_right_start=my
+    ui.sb_right_base=ui.right_scroll
+    clicked=false  -- consume click so param fields below don't fire
+  end
+  if ui.sb_right_drag then
+    if lmb then
+      local g=ui.sb_right_geo
+      if g then
+        local travel=max(1, g.track_h - g.h)
+        ui.right_scroll=clamp(ui.sb_right_base+(my-ui.sb_right_start)*(g.max_scroll/travel), 0, g.max_scroll)
+      end
+    else
+      ui.sb_right_drag=false
     end
   end
 
   if clicked then
     local inst=instances[selectedIdx]
 
+    -- ── ↺ Defaults button in param panel header ────────────────────
+    do
+      local defbx=right_x+right_w-54; local defby=param_y+3
+      local defbw=50; local defbh=16
+      if hit(mx,my,defbx,defby,defbw,defbh) and inst then
+        commitFocus()
+        local ns=0
+        for idx,_ in pairs(selectedSet) do
+          if instances[idx] then defaultInstance(instances[idx]); ns=ns+1 end
+        end
+        statusMsg=string.format("↺ Defaults applied (%d instance%s)", ns, ns==1 and "" or "s")
+        clicked=false  -- consume so param fields below don't fire
+      end
+    end
+
+    -- ── Cmd+click on value field → start vertical scrub drag ──────
+    -- Intercepts before normal text-edit so Cmd+drag doesn't open a text box.
+    local cmdClickHandled=false
+    if cmd_held then
+      for _,f in ipairs(ui.param_fields) do
+        if hit(mx,my,f.x,f.y,f.w,f.h) and not f.checkbox and not f.cycle and f.inst and f.key then
+          commitFocus()
+          local key=f.key
+          local step
+          if     key=="stepCount"        then step=1
+          elseif key:match("^rot")       then step=1.0
+          elseif key:match("^offset")    then step=0.005
+          elseif key=="rate"             then step=0.05
+          elseif key:match("^start")     then step=0.01
+          elseif key=="smoothing"        then step=0.01
+          else                                step=0.01
+          end
+          ui.cmdDrag={active=true,key=key,inst=f.inst,startMy=my,
+                      startVal=tonumber(f.inst[key]) or 0,step=step}
+          cmdClickHandled=true
+          break
+        end
+      end
+    end
+
     -- ── Parameter fields ───────────────────────────────────────
     for _,f in ipairs(ui.param_fields) do
+      if cmdClickHandled then break end
       if hit(mx,my,f.x,f.y,f.w,f.h) then
         if f.checkbox and f.inst then
-          f.inst[f.key]=not f.inst[f.key]
+          local newVal=not f.inst[f.key]
+          f.inst[f.key]=newVal
+          for idx,_ in pairs(selectedSet) do
+            if instances[idx] and idx~=selectedIdx then instances[idx][f.key]=newVal end
+          end
         elseif f.cycle and f.inst and f.options then
           local cur=f.inst[f.key] or 1
-          f.inst[f.key]=(cur % #f.options)+1
+          local newVal=(cur % #f.options)+1
+          f.inst[f.key]=newVal
+          for idx,_ in pairs(selectedSet) do
+            if instances[idx] and idx~=selectedIdx then instances[idx][f.key]=newVal end
+          end
         else
           commitFocus()
           ui.focus_field=f.id; ui.focus_key=f.key
@@ -1842,10 +2160,11 @@ local function handleInput()
 
     -- ── Status bar buttons ─────────────────────────────────────
     local sb_y=content_h
-    -- Preset layout constants (must match drawStatusBar)
-    local pnx=486; local pnlw=130
-    local ddtx=pnx+pnlw+2; local ddtw=24
-    local savex=ddtx+ddtw+4
+    -- Preset layout constants (must match drawStatusBar — right-anchored)
+    local pnlw=130; local ddtw=24
+    local pnx  = max(490, WIN_W-296)
+    local ddtx = pnx+pnlw+2
+    local savex= ddtx+ddtw+4
     local resetx=savex+66
 
     -- Host field
@@ -1902,10 +2221,9 @@ local function handleInput()
       commitFocus()
       if presetName~="" then savePreset(presetName) end
     end
-    -- Reset button
+    -- Reset button → Cubic 2×2×2 default state
     if hit(mx,my,resetx,sb_y+3,62,20) then
-      commitFocus(); clearAll(); addInstance({}); selectedIdx=1
-      statusMsg="Reset to single instance"
+      commitFocus(); presetCubic(2,1.0)
     end
 
     -- Speed controls — row 2 (matches drawStatusBar row2 coords)
@@ -1958,6 +2276,16 @@ local function handleInput()
         statusMsg = "Global Ping-Pong OFF"
       end
     end
+    -- Sync timing: reset phaseAccumulator + currentStep for all selected instances
+    local syncx_=ppx_+ppw_+6; local syncw_=46
+    if hit(mx,my,syncx_,r2y+2,syncw_,18) then
+      commitFocus()
+      for idx,_ in pairs(selectedSet) do
+        if instances[idx] then resetInstance(instances[idx]) end
+      end
+      local cnt=0; for _ in pairs(selectedSet) do cnt=cnt+1 end
+      statusMsg=string.format("Timing synced — %d instance%s reset to step 0", cnt, cnt==1 and "" or "s")
+    end
 
     -- Row 3: Global Pos + Move sliders
     local r3y=sb_y+54; local fw3=72
@@ -2007,8 +2335,76 @@ local function handleInput()
     r4sliderHit("gRoll", "Rl",lx4,-180,180,0.5); lx4=lx4+measureStr("Rl")+4+fw3+16+measureStr("Zoom")+4
     r4sliderHit("gZoom", "×", lx4,0,2,0.005)
 
-    -- Preset quick-select bar (row 5 — 8 buttons across full width)
-    local pbar_y=sb_y+106; local pbar_h=22
+    -- Row 5: Spin sliders (global rotation per step) + Arrange buttons
+    local r5y_=sb_y+106; local fw3_=72
+    local function r5sliderHit(id, lbl, lx, lo, hi, scale)
+      local sx=lx+measureStr(lbl)+4
+      if hit(mx,my,sx,r5y_+2,fw3_,18) then
+        commitFocus()
+        local cur
+        if     id=="gRPitch" then cur=globalRotPitch
+        elseif id=="gRYaw"   then cur=globalRotYaw
+        elseif id=="gRRoll"  then cur=globalRotRoll end
+        ui.sliderDrag={active=true,id=id,startMx=mx,startVal=cur or 0,lo=lo,hi=hi,scale=scale}
+        return true
+      end
+      return false
+    end
+    local lx5_=8+48  -- after "Spin" label
+    r5sliderHit("gRPitch","Pt",lx5_,-360,360,1.0); lx5_=lx5_+measureStr("Pt")+4+fw3_+5
+    r5sliderHit("gRYaw",  "Yw",lx5_,-360,360,1.0); lx5_=lx5_+measureStr("Yw")+4+fw3_+5
+    r5sliderHit("gRRoll", "Rl",lx5_,-360,360,1.0); lx5_=lx5_+measureStr("Rl")+4+fw3_+16
+    -- Arrange buttons (after Spin sliders)
+    local arrLbl="Arrange:"
+    local arrx_=lx5_+measureStr(arrLbl)+6
+    local arrNames={"Circle","Helix","Sphere","Line","Grid","Rnd"}
+    local arrW_=46
+    for ai,sname in ipairs(arrNames) do
+      local ax=arrx_+(ai-1)*(arrW_+3)
+      if hit(mx,my,ax,r5y_+2,arrW_-2,18) then
+        commitFocus()
+        local sel={}
+        for idx,_ in pairs(selectedSet) do if instances[idx] then sel[#sel+1]=idx end end
+        table.sort(sel)
+        local nn=#sel; if nn==0 then break end
+        local rr=0.7
+        for pos,idx in ipairs(sel) do
+          local tt=(nn>1) and (pos-1)/(nn-1) or 0
+          local ff=(pos-1)/nn
+          local xx,yy,zz=0,0,0
+          if ai==1 then      -- Circle (XZ plane)
+            local a=ff*2*pi; xx=sin(a)*rr; yy=0; zz=cos(a)*rr
+          elseif ai==2 then  -- Helix
+            local a=tt*4*pi; xx=sin(a)*rr; yy=(tt-0.5)*1.4; zz=cos(a)*rr
+          elseif ai==3 then  -- Sphere (Fibonacci)
+            local golden=(1+sqrt(5))/2
+            local theta=2*pi*pos/golden
+            local phi=math.acos(clamp(1-2*pos/nn,-1,1))
+            xx=sin(phi)*cos(theta)*rr; yy=cos(phi)*rr; zz=sin(phi)*sin(theta)*rr
+          elseif ai==4 then  -- Line (X axis)
+            xx=(tt-0.5)*1.8; yy=0; zz=0
+          elseif ai==5 then  -- Grid (XZ)
+            local side=max(1,ceil(sqrt(nn)))
+            local gx=((pos-1)%side)-(side-1)*0.5
+            local gz=floor((pos-1)/side)-(ceil(nn/side)-1)*0.5
+            local sp=side>1 and 1.4/(side-1) or 0
+            xx=gx*sp; yy=0; zz=gz*sp
+          elseif ai==6 then  -- Random
+            xx=(math.random()*2-1)*rr
+            yy=(math.random()*2-1)*rr
+            zz=(math.random()*2-1)*rr
+          end
+          instances[idx].startX=string.format("%.4f",xx)
+          instances[idx].startY=string.format("%.4f",yy)
+          instances[idx].startZ=string.format("%.4f",zz)
+        end
+        statusMsg=string.format("Arranged %d instances: %s",nn,sname)
+        break
+      end
+    end
+
+    -- Preset quick-select bar (row 6 — 8 buttons across full width)
+    local pbar_y=sb_y+132; local pbar_h=22
     local n8=#PRESET_NAMES; local pw8=floor(WIN_W/n8)
     ui.hover_preset=nil
     for pi=1,n8 do
@@ -2049,7 +2445,11 @@ local function handleInput()
         end
       else
         -- Global shortcuts
-        if char==string.byte('a') or char==string.byte('A') then
+        if char==1 then  -- Cmd+A: select all instances
+          selectedSet={}; for i=1,#instances do selectedSet[i]=true end
+          if #instances>0 then selectedIdx=1 end
+          statusMsg=string.format("All %d instances selected",#instances)
+        elseif char==string.byte('a') or char==string.byte('A') then
           if #instances<MAX_INSTANCES then addInstance({}); selectedIdx=#instances end
         elseif char==string.byte('d') or char==string.byte('D') then
           if instances[selectedIdx] and #instances<MAX_INSTANCES then
@@ -2123,7 +2523,7 @@ local function drawFrame()
   drawStatusBar(0, content_h, w, STAT_H)
 
   -- preset quick-select bar (row 5 — last 22 px of STAT_H)
-  drawPresetBar(0, content_h+106, w, 22)
+  drawPresetBar(0, content_h+132, w, 22)
 
   -- preset dropdown overlay (on top of everything)
   drawPresetDropdown(0, content_h, w)
@@ -2150,7 +2550,7 @@ local function mainLoop()
 
   -- process all instances, then apply global Pt/Yw/Rl + Offset (runs even when paused)
   updateAllInstances(dt)
-  applyGlobalTransforms()
+  applyGlobalTransforms(dt)
 
   -- OSC preview
   if osc.ok then oscSendPreview() end

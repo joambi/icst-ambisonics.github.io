@@ -8,10 +8,26 @@ translationKey: kristall-motion-map
 description: "Installation and user guide for JS_ICST_Kristall_Motion_Map.lua — a standalone REAPER script that moves up to 64 AmbiEncoder sources through a 3D crystal-lattice step sequencer with real-time GUI, OSC output, and named presets."
 ---
 
-Level: Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: 2.1.5**
+Level: Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: 2.2.8**
 
 ICST Kristall Motion Map is a **standalone REAPER Lua script** with a real-time graphical interface. It arranges up to 64 AmbiEncoder sources as points within a 3D crystal lattice and moves them through space using a step sequencer. The movement can be tracked live in the isometric preview, sent via OSC to an ICST AmbiEncoder_64, and shaped using instance-specific transformations, quantisation, smoothing and interaction.
 This instrument was created in collaboration with and inspired by Eli Stine, a guest at the ICST Studio Residency 2026.
+
+![ICST Kristall Motion Map — full interface overview showing instance list, lattice preview, parameter panel and status bar](Kristall%20Overview.png)
+
+This is a short demo of a random Kristall by Eli Stine — rendered in binaural.
+
+{{< notice warning >}}
+🎧 **Listen with headphones.** This recording is binaural — the spatial effect is lost on speakers.
+{{< /notice >}}
+
+<audio controls style="width:100%;margin:0.5rem 0 1rem">
+  <source src="KristallMotionMap_RND.wav" type="audio/wav">
+</audio>
+
+{{< notice update >}}
+**New to Kristall?** Skip to [§13 First session walkthrough](#13-first-session-walkthrough) and get your first preset running in under five minutes — then come back here for detailed reference.
+{{< /notice >}}
 
 ---
 
@@ -45,7 +61,11 @@ The bundle contains:
 
 ### Python on Windows
 
-After installing Python from [python.org/downloads](https://www.python.org/downloads/), REAPER may not detect it automatically. To find where Python was installed, open a Command Prompt and run:
+{{< notice warning >}}
+**Windows users:** REAPER often cannot find Python automatically. Follow these three steps after installing Python from [python.org/downloads](https://www.python.org/downloads/).
+{{< /notice >}}
+
+**Step 1 — Find your Python path.** Open a Command Prompt and run:
 
 ```
 python -c "import os, sys; print(os.path.dirname(sys.executable))"
@@ -53,9 +73,9 @@ python -c "import os, sys; print(os.path.dirname(sys.executable))"
 
 Example output: `C:\Users\stine\AppData\Local\Python\pythoncore-3.14-64`
 
-In REAPER, go to **Preferences → Plug-ins → ReaScript** and enable **"Force ReaScript to use specific Python .dll…"** — point it to the `python3xx.dll` inside that folder (e.g. `python314.dll`).
+**Step 2 — Point REAPER to Python.** Go to **Preferences → Plug-ins → ReaScript**, enable **"Force ReaScript to use specific Python .dll…"**, and point it to the `python3xx.dll` inside that folder (e.g. `python314.dll`).
 
-Then install `python-osc` using the same Python:
+**Step 3 — Install python-osc** using the same Python:
 
 ```
 python -m pip install python-osc
@@ -90,13 +110,15 @@ The window is divided into four areas:
 ┌─────────────────┬──────────────────────────────────────┐
 │  Instance list  │       Lattice preview (3D iso)        │
 │                 ├──────────────────────────────────────┤
-│  [+Add] [-Rem]  │         Parameter panel               │
+│  [+Add] [-Rem]  │    Parameter panel  [↺ Def]           │
 │  [Dup]          │    (scrollable, per-instance)         │
 ├─────────────────┴──────────────────────────────────────┤
-│  Status bar — Row 1: OSC · Preset                      │
-│  Status bar — Row 2: Speed · BPM · Fwd/Rev · Pause · Stop │
-│  Status bar — Row 3: Offset X Y Z · Move X Y Z        │
-│  Status bar — Row 4: Rotate Pt · Yw · Rl              │
+│  Row 1: OSC · Preset name · Save · Reset               │
+│  Row 2: Speed · BPM · Fwd/Rev · Pause · Stop · PP · Sync │
+│  Row 3: Offset X Y Z · Move X Y Z                     │
+│  Row 4: Rotate Pt · Yw · Rl · Zoom                    │
+│  Row 5: Spin Pt · Yw · Rl · Arrange buttons           │
+│  Preset bar: Cubic · Tetragonal · … · Triclinic        │
 └────────────────────────────────────────────────────────┘
 ```
 
@@ -109,12 +131,14 @@ The left panel lists all active instances. Each row shows the instance number, c
 | Control | Action |
 |---------|--------|
 | Click a row | Select that instance; parameter panel updates |
+| Shift + click | Add to selection (multi-select); all selected instances share parameter edits |
 | **+ Add** | Create a new instance with default settings |
 | **− Rem** | Delete the selected instance |
 | **Dup** | Duplicate the selected instance |
 | Keyboard **A** | Add instance |
 | Keyboard **D** | Duplicate selected |
 | Keyboard **R** | Reset selected instance to step 0 |
+| Keyboard **Cmd+A** | Select all instances at once |
 
 {{< notice warning >}}
 The maximum is **64 instances**. Adding beyond this limit has no effect.
@@ -132,6 +156,7 @@ The top-right panel shows all enabled instances as colored dots in an isometric 
 |-------------|--------|
 | Drag a dot | Move the instance in the XY plane (updates Start X and Start Y) |
 | Shift + drag | Move the instance along the Z axis (updates Start Z) |
+| Shift + click a dot | Add that instance to the multi-select set |
 | Hover | Shows instance name and a highlight ring |
 
 Edges are drawn between any two instances within `EDGE_DIST` world units — this gives a quick visual of the lattice topology.
@@ -141,6 +166,31 @@ Edges are drawn between any two instances within `EDGE_DIST` world units — thi
 ## 6. Parameter panel
 
 The right column below the preview shows all parameters for the **selected instance**. Use the mouse wheel to scroll.
+
+The panel header shows the instance number and name. A small **↺ Def** button in the top-right corner of the header resets all parameters of the selected instance(s) to factory defaults (position, offsets, rate, step count, mode, rotation, scale, bounds, smoothing). The instance name and colour are preserved. If multiple instances are selected, all are reset at once.
+
+### Editing values
+
+Every numeric field supports three ways to change its value without typing:
+
+| Method | How | Note |
+|--------|-----|------|
+| **Scroll wheel** | Click the field to focus it, then scroll up/down | Each key type has an appropriate step size (see table below). Hold **Shift** for a ×10 coarser step. |
+| **Cmd + drag** | Hold Cmd, click the field, then drag the mouse up (increase) or down (decrease) | Hold **Shift** additionally for a ×0.1 finer step. Changes propagate to all selected instances as a relative delta. |
+| **Direct edit** | Click the field, type a value, press **Enter** | Press **Esc** to cancel. |
+
+Scroll step sizes per field type:
+
+| Field | Step |
+|-------|------|
+| Step Count | 1 (integer only) |
+| Rotation fields | 1.0° |
+| Offset fields | 0.005 |
+| Rate | 0.05 |
+| Start position | 0.01 |
+| Smoothing / Glide | 0.01 |
+
+**Basic parameters** — everything you need for a first session:
 
 ### Identity
 
@@ -169,6 +219,10 @@ position = Start + currentStep × Offset
 | **Rate** | Steps per second (BPM OFF) or steps per beat (BPM ON) |
 | **Steps** | Total step count; determines turn-around point for Finite and Pingpong |
 | **Mode** | **Infinite** — steps forever; **Finite** — stops at last step; **Pingpong** — bounces |
+
+---
+
+**Motion transforms** — shape the path after the basic linear motion is computed:
 
 ### Rotation
 
@@ -218,6 +272,10 @@ currentPos = currentPos + alpha × (targetPos − currentPos)
 |-----------|-------------|
 | **Smoothing** | Enable/disable the filter |
 | **Glide Time** | Time constant in seconds — 0.08 s is snappy, 0.5 s is slow |
+
+---
+
+**Advanced** — instances influencing each other (optional for basic use):
 
 ### Interaction
 
@@ -272,9 +330,11 @@ Presets are stored in REAPER's ExtState (project-independent, persistent across 
 |---------|-------------|
 | **Speed ×N.NN** | Global rate multiplier — scales all instance rates uniformly. Click to type a value, Enter to confirm. |
 | **BPM** | Toggle BPM sync. Off = steps/second (absolute). On = steps/beat (follows REAPER tempo). |
-| **\> Fwd / < Rev** | Global direction. Fwd = all instances step forward. Rev = all instances step in reverse. |
+| **> Fwd / < Rev** | Global direction. Fwd = all instances step forward. Rev = all instances step in reverse. |
 | **‖ Pause** | Freeze all motion at the current step. Click again to resume. |
 | **■ Stop** | Reset all instances to step 0 and **pause** immediately (motion does not resume automatically). Click **‖ Pause** or restart to continue. |
+| **⇄ PP** | Toggle global Pingpong mode — all instances bounce instead of repeating forward. |
+| **⊙ Sync** | Reset the phase accumulator and step counter of all **selected** instances to 0, snapping them back in sync without affecting instances that are not selected. |
 
 ### BPM mode in detail
 
@@ -404,7 +464,7 @@ Eight preset buttons appear at the very bottom of the window. Each clears all cu
 
 | # | Preset | What it creates |
 |---|--------|-----------------|
-| 1 | **Cubic** | 8 instances at the corners of a unit cube (−0.5 to +0.5 on all axes) |
+| 1 | **Cubic** | 8 instances at the corners of a unit cube. Each corner oscillates toward the centre (0, 0, 0) and back in Pingpong mode — a "breathing cube" effect. |
 | 2 | **Tetragonal** | Grid with equal XY spacing and different Z spacing |
 | 3 | **Hexagonal** | 2D hexagonal ring tiled along Z (mirrors typical dome layouts) |
 | 4 | **Rnd.Swarm** | 20 instances scattered randomly within a sphere |
@@ -416,6 +476,10 @@ Eight preset buttons appear at the very bottom of the window. Each clears all cu
 ---
 
 ## 13. First session walkthrough
+
+{{< notice update >}}
+**Start here.** This walkthrough takes about five minutes and covers the core workflow. No prior knowledge of the parameters is needed — the Cubic preset is loaded automatically when you click Reset.
+{{< /notice >}}
 
 ### Step 1 — Apply a preset
 
@@ -471,7 +535,7 @@ Three things to check: (1) Python must be in the system PATH — reinstall Pytho
 The OSC bridge must be connected first (output port active). Check that your controller is sending to `output port + 1` (default: `9002`), not `9001`. Confirm the messages arrive with a UDP monitor (e.g., Protokol).
 
 **Stop button does not pause — it starts playing.**
-This was a bug in v0.1.0, fixed in v0.2.0. Update to the latest script (v2.1.5).
+Update to the latest script (v2.2.8) — this was a bug in early pre-release versions.
 
 ---
 

@@ -8,10 +8,26 @@ translationKey: kristall-motion-map
 description: "Installation und Benutzerhandbuch für JS_ICST_Kristall_Motion_Map.lua — ein eigenständiges REAPER-Skript, das bis zu 64 AmbiEncoder-Quellen durch einen 3D-Kristallgitter-Schritt-Sequenzer mit Echtzeit-GUI, OSC-Ausgabe und benannten Presets bewegt."
 ---
 
-Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 2.1.5**
+Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 2.2.8**
 
 ICST Kristall Motion Map ist ein **eigenständiges REAPER-Lua-Skript** mit grafischer Echtzeit-Oberfläche. Es ordnet bis zu 64 AmbiEncoder-Quellen als Punkte in einem 3D-Kristallgitter an und bewegt sie mit einem Schritt-Sequenzer durch den Raum. Die Bewegung kann live in der isometrischen Vorschau verfolgt, per OSC an einen ICST AmbiEncoder_64 gesendet und mit instanzspezifischen Transformationen, Quantisierung, Glättung und Interaktion gestaltet werden.
 Dieses Instrument entstand in Zusammenarbeit mit und inspiriert durch Eli Stine, Gast der ICST Studio Residency 2026.
+
+![ICST Kristall Motion Map — Gesamtansicht mit Instanzliste, Gitter-Vorschau, Parameter-Panel und Statusleiste](Kristall%20Overview.png)
+
+Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaural gerendert.
+
+{{< notice warning >}}
+🎧 **Mit Kopfhörern hören.** Diese Aufnahme ist binaural — über Lautsprecher entfaltet sich der Raumklang nicht.
+{{< /notice >}}
+
+<audio controls style="width:100%;margin:0.5rem 0 1rem">
+  <source src="KristallMotionMap_RND.wav" type="audio/wav">
+</audio>
+
+{{< notice update >}}
+**Neu bei Kristall?** Direkt zu [§13 Erste Schritte — Schnelleinstieg](#13-erste-schritte--schnelleinstieg) springen und in unter fünf Minuten das erste Preset zum Laufen bringen — dann für die detaillierte Referenz hierher zurückkehren.
+{{< /notice >}}
 
 ---
 
@@ -45,7 +61,11 @@ Das Bundle enthält:
 
 ### Python unter Windows
 
-Nach der Installation von Python über [python.org/downloads](https://www.python.org/downloads/) findet REAPER Python möglicherweise nicht automatisch. Den Installationspfad ermitteln mit diesem Befehl in der Eingabeaufforderung:
+{{< notice warning >}}
+**Windows-Nutzer:** REAPER findet Python häufig nicht automatisch. Diese drei Schritte nach der Installation von Python über [python.org/downloads](https://www.python.org/downloads/) durchführen.
+{{< /notice >}}
+
+**Schritt 1 — Python-Pfad ermitteln.** Eingabeaufforderung öffnen und ausführen:
 
 ```
 python -c "import os, sys; print(os.path.dirname(sys.executable))"
@@ -53,9 +73,9 @@ python -c "import os, sys; print(os.path.dirname(sys.executable))"
 
 Beispielausgabe: `C:\Users\stine\AppData\Local\Python\pythoncore-3.14-64`
 
-In REAPER dann **Preferences → Plug-ins → ReaScript** öffnen und **„Force ReaScript to use specific Python .dll…"** aktivieren — auf die `python3xx.dll` in diesem Ordner zeigen (z. B. `python314.dll`).
+**Schritt 2 — REAPER auf Python zeigen.** In REAPER **Preferences → Plug-ins → ReaScript** öffnen, **„Force ReaScript to use specific Python .dll…"** aktivieren und auf die `python3xx.dll` in diesem Ordner zeigen (z. B. `python314.dll`).
 
-Anschliessend `python-osc` mit demselben Python installieren:
+**Schritt 3 — python-osc installieren** mit demselben Python:
 
 ```
 python -m pip install python-osc
@@ -90,13 +110,15 @@ Das Fenster ist in vier Bereiche aufgeteilt:
 ┌─────────────────┬──────────────────────────────────────┐
 │  Instanzliste   │     Gitter-Vorschau (3D isometrisch) │
 │                 ├──────────────────────────────────────┤
-│  [+Add] [-Rem]  │         Parameter-Panel               │
+│  [+Add] [-Rem]  │  Parameter-Panel  [↺ Def]             │
 │  [Dup]          │    (scrollbar, pro Instanz)           │
 ├─────────────────┴──────────────────────────────────────┤
-│  Statusleiste Zeile 1: OSC · Preset                    │
-│  Statusleiste Zeile 2: Speed · BPM · Fwd/Rev · Pause · Stop │
-│  Statusleiste Zeile 3: Offset X Y Z · Move X Y Z      │
-│  Statusleiste Zeile 4: Rotate Pt · Yw · Rl            │
+│  Zeile 1: OSC · Preset-Name · Save · Reset             │
+│  Zeile 2: Speed · BPM · Fwd/Rev · Pause · Stop · PP · Sync │
+│  Zeile 3: Offset X Y Z · Move X Y Z                   │
+│  Zeile 4: Rotate Pt · Yw · Rl · Zoom                  │
+│  Zeile 5: Spin Pt · Yw · Rl · Arrange-Buttons         │
+│  Preset-Leiste: Cubic · Tetragonal · … · Triclinic     │
 └────────────────────────────────────────────────────────┘
 ```
 
@@ -109,12 +131,14 @@ Das linke Panel listet alle aktiven Instanzen auf. Jede Zeile zeigt Nummer, Farb
 | Steuerelement | Aktion |
 |---------------|--------|
 | Zeile anklicken | Instanz auswählen; Parameter-Panel aktualisiert sich |
+| Shift + Klick | Zur Mehrfachauswahl hinzufügen; alle ausgewählten Instanzen teilen Parametereingaben |
 | **+ Add** | Neue Instanz mit Standardeinstellungen erstellen |
 | **− Rem** | Ausgewählte Instanz löschen |
 | **Dup** | Ausgewählte Instanz duplizieren |
 | Taste **A** | Instanz hinzufügen |
 | Taste **D** | Ausgewählte Instanz duplizieren |
 | Taste **R** | Ausgewählte Instanz auf Schritt 0 zurücksetzen |
+| Taste **Cmd+A** | Alle Instanzen auf einmal auswählen |
 
 {{< notice warning >}}
 Das Maximum sind **64 Instanzen**. Darüber hinaus hat das Hinzufügen keine Wirkung.
@@ -132,6 +156,7 @@ Das obere rechte Panel zeigt alle aktivierten Instanzen als farbige Punkte in ei
 |-------------|---------|
 | Punkt ziehen | Instanz in der XY-Ebene verschieben (aktualisiert Start X und Start Y) |
 | Shift + ziehen | Instanz entlang der Z-Achse verschieben (aktualisiert Start Z) |
+| Shift + Punkt anklicken | Instanz zur Mehrfachauswahl hinzufügen |
 | Hovern | Zeigt Instanzname und Markierungsring |
 
 Zwischen je zwei Instanzen innerhalb von `EDGE_DIST` Welteinheiten werden Kanten gezeichnet — so ist die Gitter-Topologie auf einen Blick erkennbar.
@@ -141,6 +166,31 @@ Zwischen je zwei Instanzen innerhalb von `EDGE_DIST` Welteinheiten werden Kanten
 ## 6. Parameter-Panel
 
 Die rechte Spalte unterhalb der Vorschau zeigt alle Parameter der **ausgewählten Instanz**. Mit dem Mausrad scrollen.
+
+In der Panel-Kopfzeile werden Instanznummer und Name angezeigt. Ein kleiner **↺ Def**-Button oben rechts im Header setzt alle Parameter der ausgewählten Instanz(en) auf Werksstandard zurück (Position, Offsets, Rate, Schrittanzahl, Modus, Rotation, Skalierung, Grenzen, Glättung). Name und Farbe bleiben erhalten. Bei Mehrfachauswahl werden alle Instanzen gleichzeitig zurückgesetzt.
+
+### Werte bearbeiten
+
+Jedes Zahlenfeld unterstützt drei Methoden zur Wertänderung ohne Eintippen:
+
+| Methode | Bedienung | Hinweis |
+|---------|-----------|---------|
+| **Mausrad** | Feld anklicken zum Fokussieren, dann scrollen | Pro Feldtyp ein passender Schrittweite (siehe Tabelle unten). Shift halten für ×10 gröberen Schritt. |
+| **Cmd + Ziehen** | Cmd halten, Feld anklicken, Maus nach oben (Wert steigt) oder unten (Wert sinkt) ziehen | Shift zusätzlich halten für ×0,1 feineren Schritt. Änderungen werden relativ auf alle ausgewählten Instanzen übertragen. |
+| **Direkteingabe** | Feld anklicken, Wert eintippen, **Enter** bestätigen | Esc bricht ab. |
+
+Scrollschritte nach Feldtyp:
+
+| Feld | Schritt |
+|------|---------|
+| Schrittanzahl | 1 (nur ganzzahlig) |
+| Rotationsfelder | 1,0° |
+| Offset-Felder | 0,005 |
+| Rate | 0,05 |
+| Start-Position | 0,01 |
+| Glättung / Glide | 0,01 |
+
+**Grundparameter** — alles, was für die erste Sitzung benötigt wird:
 
 ### Identität
 
@@ -169,6 +219,10 @@ Position = Start + currentStep × Offset
 | **Rate** | Schritte pro Sekunde (BPM aus) oder Schritte pro Taktschlag (BPM an) |
 | **Steps** | Gesamtschrittanzahl; bestimmt den Umkehrpunkt bei Finite und Pingpong |
 | **Mode** | **Infinite** — läuft unendlich; **Finite** — stoppt am letzten Schritt; **Pingpong** — prallt ab |
+
+---
+
+**Bewegungstransformationen** — den Pfad nach der linearen Grundbewegung formen:
 
 ### Rotation
 
@@ -218,6 +272,10 @@ currentPos = currentPos + alpha × (targetPos − currentPos)
 |-----------|--------------|
 | **Smoothing** | Filter aktivieren/deaktivieren |
 | **Glide Time** | Zeitkonstante in Sekunden — 0.08 s ist knackig, 0.5 s ist langsam |
+
+---
+
+**Erweitert** — Instanzen beeinflussen sich gegenseitig (optional für den Einstieg):
 
 ### Interaktion
 
@@ -272,9 +330,11 @@ Presets werden im REAPER ExtState gespeichert (projektunabhängig, sitzungsüber
 |---------------|--------------|
 | **Speed ×N.NN** | Globaler Raten-Multiplikator — skaliert alle Instanzraten gleichmässig. Klicken zum Eintippen, Enter bestätigt. |
 | **BPM** | BPM-Sync umschalten. Aus = Schritte/Sekunde. An = Schritte/Taktschlag (folgt REAPER-Tempo). |
-| **\> Fwd / < Rev** | Globale Richtung für alle Instanzen. |
+| **> Fwd / < Rev** | Globale Richtung für alle Instanzen. |
 | **‖ Pause** | Alle Bewegungen einfrieren. Nochmals klicken = weiter. |
 | **■ Stop** | Alle Instanzen auf Schritt 0 zurücksetzen und sofort **pausieren** (Wiedergabe startet nicht automatisch). Über **‖ Pause** oder Neustart fortsetzen. |
+| **⇄ PP** | Globalen Pingpong-Modus umschalten — alle Instanzen prallen statt zu wiederholen. |
+| **⊙ Sync** | Phasen-Akkumulator und Schrittzähler aller **ausgewählten** Instanzen auf 0 zurücksetzen, um sie zu synchronisieren, ohne nicht ausgewählte Instanzen zu beeinflussen. |
 
 ### BPM-Modus im Detail
 
@@ -404,7 +464,7 @@ Acht Preset-Schaltflächen am unteren Fensterrand. Jedes Preset löscht alle akt
 
 | # | Preset | Was erstellt wird |
 |---|--------|-------------------|
-| 1 | **Cubic** | 8 Instanzen an den Ecken eines Einheitswürfels |
+| 1 | **Cubic** | 8 Instanzen an den Ecken eines Einheitswürfels. Jede Ecke pendelt im Pingpong-Modus zum Zentrum (0, 0, 0) und zurück — ein „atmender Würfel"-Effekt. |
 | 2 | **Tetragonal** | Gitter mit gleichem XY-Abstand und anderem Z-Abstand |
 | 3 | **Hexagonal** | 2D-Hexagonalring entlang Z (entspricht typischen Kuppelaufstellungen) |
 | 4 | **Rnd.Swarm** | 20 zufällig in einer Kugel verteilte Instanzen |
@@ -416,6 +476,10 @@ Acht Preset-Schaltflächen am unteren Fensterrand. Jedes Preset löscht alle akt
 ---
 
 ## 13. Erste Schritte — Schnelleinstieg
+
+{{< notice update >}}
+**Hier einsteigen.** Dieser Schnelleinstieg dauert etwa fünf Minuten und vermittelt den grundlegenden Arbeitsablauf. Vorkenntnisse der Parameter sind nicht erforderlich — das Cubic-Preset wird beim Klick auf Reset automatisch geladen.
+{{< /notice >}}
 
 ### Schritt 1 — Preset anwenden
 
@@ -463,7 +527,7 @@ Host und Port in Zeile 1 eingeben, **Connect** klicken. Positionen werden in Ech
 
 **OSC-Eingang (Rotation) hat keine Wirkung.** Die OSC-Brücke muss zuerst verbunden sein. Sicherstellen, dass der Controller an `Ausgangsport + 1` sendet (Standard: `9002`, nicht `9001`). Mit einem UDP-Monitor (z. B. Protokol) prüfen ob Pakete ankommen.
 
-**Stop-Button pausiert nicht, sondern startet die Wiedergabe.** Dieser Fehler bestand in v0.1.0 und ist ab v0.2.0 behoben. Auf das neueste Skript aktualisieren (v2.1.5).
+**Stop-Button pausiert nicht, sondern startet die Wiedergabe.** Auf das neueste Skript aktualisieren (v2.2.8) — dieser Fehler bestand nur in frühen Vorversionen.
 
 ---
 
