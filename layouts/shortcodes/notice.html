@@ -16,7 +16,7 @@
   >
     {{- i18n $noticeType -}}
   </span>
-  {{- $noteContent := (markdownify .Inner | chomp) -}}
+  {{- $noteContent := (.Page.RenderString (dict "display" "block") .Inner | chomp) -}}
   <div class="notice__content">
     {{ $noteContent }}
   </div>

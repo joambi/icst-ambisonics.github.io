@@ -17,6 +17,13 @@ body {
   }
 }
 
+// Anchor-jump targets (headings carry the auto-generated ids) must clear the
+// sticky/fixed site header, otherwise a "#section" link lands with the heading
+// hidden behind the ~71px header and looks like it went nowhere.
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 85px;
+}
+
 hr {
   border: 0;
   border-top: 1px solid #d5d5d5;

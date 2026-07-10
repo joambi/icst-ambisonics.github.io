@@ -222,8 +222,12 @@ local ui = {
   right_scroll   = 0,
   focus_field    = nil,
   focus_text     = "",
+  focus_selectAll = false,  -- true = field just focused, first keystroke replaces value
   focus_key      = nil,
   last_mouse     = 0,
+  last_rmb       = 0,    -- right-button edge tracking (right-click = reset field)
+  prevFrac       = 0.45, -- fraction of right column used by the lattice preview (draggable divider)
+  dividerDrag    = false,-- true while dragging the preview/param divider
   param_fields   = {},   -- hit-test table rebuilt each frame
   preset_open    = false,
   preset_scroll  = 0,
@@ -328,10 +332,11 @@ end
 local rateMode   = 0
 local globalRateMult = 1.0   -- speed multiplier shown in status bar
 local globalDir    = 1          -- global direction: 1=forward, -1=reverse
-local globalPaused = false      -- pause: freeze steps, keep current positions
+local globalPaused = true       -- pause: freeze steps, keep current positions; starts paused (Stop) on launch
 local globalPingPong    = false -- global ping-pong: whole figure reverses as one
 local globalPingPongDir = 1     -- shared direction used by globalPingPong mode
 local _ppWantsFlip      = false -- set by any instance that hits a boundary; consumed by updateAllInstances
+local _prevPlaying      = false -- DAW transport play-state last frame (for BPM auto-sync on start)
 
 
 local function shouldAdvanceStep(inst,dt,transport)
@@ -464,8 +469,22 @@ local function updateInstance(inst,inf,dt,transport)
 end
 
 local function updateAllInstances(dt)
-  if globalPaused then return end
   local transport=getTransportState()
+  -- BPM mode: when the DAW transport starts, auto-trigger Sync so every instance
+  -- restarts from step 0 locked to the moment playback begins → deterministic,
+  -- repeatable timesteps synced to the DAW timeline.
+  local justStarted = transport.playing and not _prevPlaying
+  local justStopped = (not transport.playing) and _prevPlaying
+  _prevPlaying = transport.playing
+  if rateMode==1 and justStarted then
+    globalPaused=false   -- DAW transport start un-pauses (drives) Kristall
+    for _,inst in ipairs(instances) do resetInstance(inst) end
+    statusMsg="Transport started — synced & running"
+  elseif rateMode==1 and justStopped then
+    globalPaused=true    -- DAW transport stop also pauses Kristall
+    statusMsg="Transport stopped — Kristall paused"
+  end
+  if globalPaused then return end
   local influences=accumulateInfluences()
   _ppWantsFlip=false  -- reset before this pass
   for i,inst in ipairs(instances) do
@@ -690,6 +709,9 @@ local function pField(id,label,inst,key,rx,ry,rw)
   local bx=rx+88; local bw=rw-92
   setColor(focused and 0.14 or 0.10, focused and 0.22 or 0.11, focused and 0.38 or 0.16)
   fillRect(bx,ry-2,bw,ROW_H-3)
+  if focused and ui.focus_selectAll then  -- selection highlight behind text
+    setColor(0.20,0.40,0.70); fillRect(bx+2,ry-1,measureStr(display)+4,ROW_H-5)
+  end
   setColor(focused and 0.36 or 0.22, focused and 0.83 or 0.22, focused and 0.62 or 0.28)
   drawRect(bx,ry-2,bw,ROW_H-3)
   setColor(1,1,1); drawStr(display, bx+4, ry)
@@ -867,6 +889,9 @@ local function drawStatusBar(bx,by,bw,bh)
   fillRect(bx+258,by+4,52,18)
   setColor(pfoc and 0.36 or 0.20, pfoc and 0.83 or 0.22, pfoc and 0.62 or 0.26)
   drawRect(bx+258,by+4,52,18)
+  if pfoc and ui.focus_selectAll then  -- selection highlight behind text
+    setColor(0.20,0.40,0.70); fillRect(bx+260,by+5,measureStr(ui.focus_text)+4,16)
+  end
   setColor(1,1,1); drawStr(pfoc and ui.focus_text or osc.port, bx+262, by+8)
 
   -- Connect / Disconnect button
@@ -913,72 +938,75 @@ local function drawStatusBar(bx,by,bw,bh)
   setColor(0.36,0.83,0.62); drawStr(" Reset", resetx+4, by+7)
 
   -- ── Row 2: Speed controls + status message ──────────────────
+  -- Buttons enlarged ~40 % (width ×1.4, taller) — kept within the row slot.
   local r2y=by+28   -- second row y-offset
+  local r2h=23      -- enlarged control height (was 18)
+  local r2ty=r2y+7  -- vertical text position, centred in the taller controls
   setColor(0.12,0.12,0.17); fillRect(bx,r2y,bw,1)  -- subtle divider
 
   -- Speed multiplier label
-  setColor(0.50,0.50,0.60); drawStr("Speed:", bx+8, r2y+6)
-  local spdx=bx+54; local spdw=58
+  setColor(0.50,0.50,0.60); drawStr("Speed:", bx+8, r2y+8)
+  local spdx=bx+54; local spdw=81
   local sfoc=(ui.focus_field=="globalRate")
   setColor(sfoc and 0.14 or 0.11, sfoc and 0.20 or 0.12, sfoc and 0.34 or 0.18)
-  fillRect(spdx,r2y+2,spdw,18)
+  fillRect(spdx,r2y+2,spdw,r2h)
   setColor(sfoc and 0.40 or 0.28, sfoc and 0.85 or 0.36, sfoc and 0.65 or 0.42)
-  drawRect(spdx,r2y+2,spdw,18)
+  drawRect(spdx,r2y+2,spdw,r2h)
   setColor(1,1,1)
   local spdLabel = sfoc and ("×"..ui.focus_text)
                          or string.format("×%.2f", globalRateMult)
-  drawStr(spdLabel, spdx+4, r2y+5)
+  drawStr(spdLabel, spdx+6, r2ty)
 
   -- BPM sync toggle button
-  local bpmx=spdx+spdw+6; local bpmw=48
+  local bpmx=spdx+spdw+6; local bpmw=67
   local bpmOn=(rateMode==1)
   setColor(bpmOn and 0.08 or 0.11, bpmOn and 0.28 or 0.13, bpmOn and 0.48 or 0.19)
-  fillRect(bpmx,r2y+2,bpmw,18)
+  fillRect(bpmx,r2y+2,bpmw,r2h)
   setColor(bpmOn and 0.40 or 0.30, bpmOn and 0.85 or 0.50, bpmOn and 1.0 or 0.60)
-  drawRect(bpmx,r2y+2,bpmw,18)
+  drawRect(bpmx,r2y+2,bpmw,r2h)
   setColor(bpmOn and 0.55 or 0.45, bpmOn and 1.0 or 0.65, bpmOn and 1.0 or 0.65)
-  drawStr(bpmOn and "BPM ✓" or "BPM", bpmx+6, r2y+5)
+  drawStr(bpmOn and "BPM ✓" or "BPM", bpmx+8, r2ty)
 
   -- Global direction toggle button
-  local dirx=bpmx+bpmw+6; local dirw=42
+  local dirx=bpmx+bpmw+6; local dirw=59
   local dirRev=(globalDir<0)
   setColor(dirRev and 0.22 or 0.10, dirRev and 0.10 or 0.12, dirRev and 0.10 or 0.20)
-  fillRect(dirx,r2y+2,dirw,18)
+  fillRect(dirx,r2y+2,dirw,r2h)
   setColor(dirRev and 0.90 or 0.28, dirRev and 0.35 or 0.55, dirRev and 0.30 or 0.90)
-  drawRect(dirx,r2y+2,dirw,18)
-  setColor(1,1,1); drawStr(dirRev and "< Rev" or "> Fwd", dirx+4, r2y+5)
+  drawRect(dirx,r2y+2,dirw,r2h)
+  setColor(1,1,1); drawStr(dirRev and "< Rev" or "> Fwd", dirx+6, r2ty)
 
   -- Pause button
-  local psx=dirx+dirw+6; local psw=44
+  local psx=dirx+dirw+6; local psw=62
   setColor(globalPaused and 0.30 or 0.11, globalPaused and 0.24 or 0.13, globalPaused and 0.08 or 0.10)
-  fillRect(psx,r2y+2,psw,18)
+  fillRect(psx,r2y+2,psw,r2h)
   setColor(globalPaused and 1.0 or 0.55, globalPaused and 0.80 or 0.55, globalPaused and 0.10 or 0.20)
-  drawRect(psx,r2y+2,psw,18)
+  drawRect(psx,r2y+2,psw,r2h)
   setColor(globalPaused and 1 or 0.80, globalPaused and 0.85 or 0.80, globalPaused and 0.10 or 0.30)
-  drawStr(globalPaused and "▶ Play" or "‖ Pause", psx+4, r2y+5)
+  drawStr(globalPaused and "▶ Play" or "‖ Pause", psx+6, r2ty)
 
   -- Stop button
-  local stx=psx+psw+4; local stw=36
-  setColor(0.22,0.10,0.10); fillRect(stx,r2y+2,stw,18)
-  setColor(0.80,0.28,0.28); drawRect(stx,r2y+2,stw,18)
-  setColor(0.95,0.40,0.40); drawStr("■ Stop", stx+4, r2y+5)
+  local stx=psx+psw+4; local stw=50
+  setColor(0.22,0.10,0.10); fillRect(stx,r2y+2,stw,r2h)
+  setColor(0.80,0.28,0.28); drawRect(stx,r2y+2,stw,r2h)
+  setColor(0.95,0.40,0.40); drawStr("■ Stop", stx+6, r2ty)
 
   -- Global Ping-Pong toggle
-  local ppx=stx+stw+6; local ppw=34
+  local ppx=stx+stw+6; local ppw=48
   setColor(globalPingPong and 0.10 or 0.09, globalPingPong and 0.22 or 0.10, globalPingPong and 0.28 or 0.15)
-  fillRect(ppx,r2y+2,ppw,18)
+  fillRect(ppx,r2y+2,ppw,r2h)
   setColor(globalPingPong and 0.20 or 0.22, globalPingPong and 0.75 or 0.35, globalPingPong and 0.95 or 0.50)
-  drawRect(ppx,r2y+2,ppw,18)
+  drawRect(ppx,r2y+2,ppw,r2h)
   setColor(globalPingPong and 0.30 or 0.55, globalPingPong and 0.90 or 0.65, globalPingPong and 1.0 or 0.70)
-  drawStr("⇄ PP", ppx+4, r2y+5)
+  drawStr("⇄ PP", ppx+6, r2ty)
 
   -- Sync timing button (after PingPong)
-  local syncx=ppx+ppw+6; local syncw=46
-  setColor(0.09,0.18,0.16); fillRect(syncx,r2y+2,syncw,18)
-  setColor(0.22,0.60,0.52); drawRect(syncx,r2y+2,syncw,18)
-  setColor(0.36,0.88,0.76); drawStr("⊙ Sync", syncx+4, r2y+5)
+  local syncx=ppx+ppw+6; local syncw=64
+  setColor(0.09,0.18,0.16); fillRect(syncx,r2y+2,syncw,r2h)
+  setColor(0.22,0.60,0.52); drawRect(syncx,r2y+2,syncw,r2h)
+  setColor(0.36,0.88,0.76); drawStr("⊙ Sync", syncx+6, r2ty)
   -- Status message (rest of row 2)
-  setColor(0.35,0.35,0.45); drawStr(statusMsg, syncx+syncw+10, r2y+6)
+  setColor(0.35,0.35,0.45); drawStr(statusMsg, syncx+syncw+10, r2y+8)
 
   -- ── Row 3: Global Pos (translation) + Global Move (direction) ──
   local r3y=by+54
@@ -1020,10 +1048,14 @@ local function drawStatusBar(bx,by,bw,bh)
     end
     drawRect(sx,ly+2,fw,18)
     -- value text (or typed text with cursor when focused)
-    setColor(focused and 1 or (hot and 1 or 0.88), focused and 1 or (hot and 1 or 0.88), 1)
     if focused then
+      if ui.focus_selectAll then  -- selection highlight behind text
+        setColor(0.20,0.40,0.70); fillRect(sx+2,ly+3,measureStr(ui.focus_text)+4,14)
+      end
+      setColor(1,1,1)
       drawStr(ui.focus_text.."|", sx+4, ly+5)
     else
+      setColor(hot and 1 or 0.88, hot and 1 or 0.88, 1)
       drawStr(string.format("%.3f",val), sx+4, ly+5)
     end
   end
@@ -1755,12 +1787,13 @@ local function commitFocus()
       end
     end
   end
-  ui.focus_field=nil; ui.focus_key=nil; ui.focus_text=""
+  ui.focus_field=nil; ui.focus_key=nil; ui.focus_text=""; ui.focus_selectAll=false
 end
 
 local WIN_W, WIN_H       -- updated each frame from gfx
 local STAT_H = 154  -- row1=28px + row2=26px + row3=26px + row4=26px + row5=26px + presetBar=22px
-local PREV_H_FRAC = 0.45  -- fraction of right column for lattice preview
+local PREV_H_FRAC = 0.45  -- default fraction of right column for lattice preview
+local PREV_FRAC_MIN, PREV_FRAC_MAX = 0.18, 0.90  -- drag limits for the divider
 
 local function handleInput()
   local mx=gfx.mouse_x; local my=gfx.mouse_y
@@ -1768,6 +1801,9 @@ local function handleInput()
   local lmb=(mb&1)==1
   local clicked=(lmb and ui.last_mouse==0)
   ui.last_mouse=lmb and 1 or 0
+  local rmb=(mb&2)==2
+  local rclicked=(rmb and ui.last_rmb==0)   -- right-click edge
+  ui.last_rmb=rmb and 1 or 0
 
   WIN_W=gfx.w; WIN_H=gfx.h
   local content_h = WIN_H - STAT_H
@@ -1854,8 +1890,24 @@ local function handleInput()
 
   -- ── Right column ────────────────────────────────────────────
   local right_x=LIST_W; local right_w=WIN_W-LIST_W
-  local prev_h=floor(content_h*PREV_H_FRAC)
+  local prev_h=floor(content_h*ui.prevFrac)
   local param_y=prev_h; local param_h=content_h-prev_h
+
+  -- ── Draggable divider between preview and param panel ───────────
+  -- Grab the boundary and drag up/down to resize the lattice preview.
+  -- Drag all the way down for a near-fullscreen preview.
+  local DIV_GRAB=5
+  if ui.dividerDrag then
+    if lmb then
+      ui.prevFrac=clamp(my/content_h, PREV_FRAC_MIN, PREV_FRAC_MAX)
+    else
+      ui.dividerDrag=false
+    end
+  elseif clicked and mx>=right_x and mx<right_x+right_w
+         and my>=prev_h-DIV_GRAB and my<=prev_h+DIV_GRAB then
+    commitFocus()
+    ui.dividerDrag=true
+  end
 
   -- ── Lattice preview drag ─────────────────────────────────────
   -- Must match drawLatticePreview(right_x, 0, right_w, prev_h) exactly:
@@ -1904,6 +1956,7 @@ local function handleInput()
         end
         ui.focus_field = sd.id
         ui.focus_text  = string.format("%.3f", cur or 0)
+        ui.focus_selectAll = true   -- first keystroke replaces the value
       end
       ui.sliderDrag.active=false
     end
@@ -1935,6 +1988,17 @@ local function handleInput()
         end
       end
     else
+      -- Released without a vertical drag → treat as a plain Cmd+click = reset to default
+      if math.abs(my - ui.cmdDrag.startMy) < 3 then
+        local key=ui.cmdDrag.key; local inst=ui.cmdDrag.inst
+        if inst and key~="name" and DEFAULTS[key]~=nil then
+          inst[key]=DEFAULTS[key]
+          for idx,_ in pairs(selectedSet) do
+            if instances[idx] and instances[idx]~=inst then instances[idx][key]=DEFAULTS[key] end
+          end
+          statusMsg=string.format("%s reset to default (%s)", key, tostring(DEFAULTS[key]))
+        end
+      end
       ui.cmdDrag.active=false
     end
   end
@@ -1976,7 +2040,7 @@ local function handleInput()
       -- mouse released — drag done
       drag.active=false; drag.instIdx=nil; drag.origPositions=nil
     end
-  elseif clicked and hit(mx,my,right_x,0,right_w,prev_h) then
+  elseif clicked and not ui.dividerDrag and hit(mx,my,right_x,0,right_w,prev_h) then
     -- check if click landed on any dot
     for i,inst in ipairs(instances) do
       if inst.enabled then
@@ -2089,7 +2153,25 @@ local function handleInput()
     end
   end
 
-  if clicked then
+  -- ── Right-click a value field → reset it to its default ─────────
+  if rclicked then
+    for _,f in ipairs(ui.param_fields) do
+      if hit(mx,my,f.x,f.y,f.w,f.h) and f.inst and f.key
+         and not f.checkbox and not f.cycle
+         and f.key~="name" and DEFAULTS[f.key]~=nil then
+        commitFocus()
+        local dv=DEFAULTS[f.key]
+        f.inst[f.key]=dv
+        for idx,_ in pairs(selectedSet) do
+          if instances[idx] and instances[idx]~=f.inst then instances[idx][f.key]=dv end
+        end
+        statusMsg=string.format("%s reset to default (%s)", f.key, tostring(dv))
+        break
+      end
+    end
+  end
+
+  if clicked and not ui.dividerDrag then
     local inst=instances[selectedIdx]
 
     -- ── ↺ Defaults button in param panel header ────────────────────
@@ -2153,6 +2235,7 @@ local function handleInput()
           commitFocus()
           ui.focus_field=f.id; ui.focus_key=f.key
           ui.focus_text=inst and tostring(inst[f.key] or "") or ""
+          ui.focus_selectAll=true   -- first keystroke replaces the value
         end
         break
       end
@@ -2173,7 +2256,7 @@ local function handleInput()
     end
     -- Port field
     if hit(mx,my,258,sb_y+4,52,18) then
-      commitFocus(); ui.focus_field="osc_port"; ui.focus_text=osc.port
+      commitFocus(); ui.focus_field="osc_port"; ui.focus_text=osc.port; ui.focus_selectAll=true
     end
     -- Connect / Disconnect
     if hit(mx,my,320,sb_y+3,100,20) then
@@ -2226,47 +2309,47 @@ local function handleInput()
       commitFocus(); presetCubic(2,1.0)
     end
 
-    -- Speed controls — row 2 (matches drawStatusBar row2 coords)
-    local r2y=sb_y+28
-    local spdx=54; local spdw=58
-    local bpmx=spdx+spdw+6; local bpmw=48
-    if hit(mx,my,spdx,r2y+2,spdw,18) then
+    -- Speed controls — row 2 (matches drawStatusBar row2 coords; enlarged ~40 %)
+    local r2y=sb_y+28; local r2h=23
+    local spdx=54; local spdw=81
+    local bpmx=spdx+spdw+6; local bpmw=67
+    if hit(mx,my,spdx,r2y+2,spdw,r2h) then
       commitFocus()
       ui.sliderDrag.active=false  -- cancel any active slider drag
       ui.focus_field="globalRate"
       ui.focus_text=""
     end
-    if hit(mx,my,bpmx,r2y+2,bpmw,18) then
+    if hit(mx,my,bpmx,r2y+2,bpmw,r2h) then
       commitFocus()
       rateMode = (rateMode==0) and 1 or 0
       statusMsg = rateMode==1 and "BPM sync ON — 1 step = 1 beat"
                                or "BPM sync OFF — steps/sec"
     end
     -- Global direction toggle
-    local dirx_=bpmx+bpmw+6; local dirw_=42
-    if hit(mx,my,dirx_,r2y+2,dirw_,18) then
+    local dirx_=bpmx+bpmw+6; local dirw_=59
+    if hit(mx,my,dirx_,r2y+2,dirw_,r2h) then
       commitFocus()
       globalDir = globalDir * -1
       statusMsg = globalDir==1 and "Direction: Forward" or "Direction: Reverse"
     end
     -- Pause toggle
-    local psx_=dirx_+dirw_+6; local psw_=44
-    if hit(mx,my,psx_,r2y+2,psw_,18) then
+    local psx_=dirx_+dirw_+6; local psw_=62
+    if hit(mx,my,psx_,r2y+2,psw_,r2h) then
       commitFocus()
       globalPaused = not globalPaused
       statusMsg = globalPaused and "Paused" or "Playing"
     end
     -- Stop (reset all to step 0)
-    local stx_=psx_+psw_+4; local stw_=36
-    if hit(mx,my,stx_,r2y+2,stw_,18) then
+    local stx_=psx_+psw_+4; local stw_=50
+    if hit(mx,my,stx_,r2y+2,stw_,r2h) then
       commitFocus()
       for _,inst in ipairs(instances) do resetInstance(inst) end
       globalPaused=true
       statusMsg="Stopped — all instances reset"
     end
     -- Global Ping-Pong toggle
-    local ppx_=stx_+stw_+6; local ppw_=34
-    if hit(mx,my,ppx_,r2y+2,ppw_,18) then
+    local ppx_=stx_+stw_+6; local ppw_=48
+    if hit(mx,my,ppx_,r2y+2,ppw_,r2h) then
       commitFocus()
       globalPingPong = not globalPingPong
       if globalPingPong then
@@ -2277,8 +2360,8 @@ local function handleInput()
       end
     end
     -- Sync timing: reset phaseAccumulator + currentStep for all selected instances
-    local syncx_=ppx_+ppw_+6; local syncw_=46
-    if hit(mx,my,syncx_,r2y+2,syncw_,18) then
+    local syncx_=ppx_+ppw_+6; local syncw_=64
+    if hit(mx,my,syncx_,r2y+2,syncw_,r2h) then
       commitFocus()
       for idx,_ in pairs(selectedSet) do
         if instances[idx] then resetInstance(instances[idx]) end
@@ -2437,10 +2520,14 @@ local function handleInput()
           if ui.focus_field=="preset_name" then presetName=ui.focus_text end
           commitFocus()
         elseif char==27 then  -- Esc
-          ui.focus_field=nil; ui.focus_key=nil; ui.focus_text=""
+          ui.focus_field=nil; ui.focus_key=nil; ui.focus_text=""; ui.focus_selectAll=false
+        elseif char==1 then  -- Cmd/Ctrl+A: re-select the whole field
+          ui.focus_selectAll=true
         elseif char==8 or char==127 then  -- Backspace/Del
-          ui.focus_text=ui.focus_text:sub(1,-2)
+          if ui.focus_selectAll then ui.focus_text=""; ui.focus_selectAll=false
+          else ui.focus_text=ui.focus_text:sub(1,-2) end
         elseif char>=32 and char<127 then
+          if ui.focus_selectAll then ui.focus_text=""; ui.focus_selectAll=false end
           ui.focus_text=ui.focus_text..string.char(char)
         end
       else
@@ -2511,13 +2598,24 @@ local function drawFrame()
 
   -- right column
   local right_x=LIST_W; local right_w=w-LIST_W
-  local prev_h=floor(content_h*PREV_H_FRAC)
+  local prev_h=floor(content_h*ui.prevFrac)
 
   -- lattice preview (top of right column)
   drawLatticePreview(right_x, 0, right_w, prev_h)
 
   -- param panel (bottom of right column)
   drawParamPanel(right_x, prev_h, right_w, content_h-prev_h)
+
+  -- draggable divider handle between preview and param panel
+  local mxg,myg=gfx.mouse_x,gfx.mouse_y
+  local divHover=(mxg>=right_x and myg>=prev_h-5 and myg<=prev_h+5)
+  local divOn=ui.dividerDrag or divHover
+  if divOn then setColor(0.36,0.83,0.62) else setColor(0.20,0.22,0.30) end
+  fillRect(right_x, prev_h-1, right_w, 2)
+  -- centre grip dots for discoverability
+  if divOn then setColor(0.55,0.95,0.80) else setColor(0.34,0.36,0.46) end
+  local gcx=right_x+right_w*0.5
+  for i=-2,2 do fillRect(floor(gcx+i*8)-1, prev_h-2, 3, 4) end
 
   -- status bar (rows 1-4)
   drawStatusBar(0, content_h, w, STAT_H)
