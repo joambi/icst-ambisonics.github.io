@@ -8,12 +8,16 @@ translationKey: kristall-motion-map
 description: "Installation und Benutzerhandbuch für JS_ICST_Kristall_Motion_Map.lua — ein eigenständiges REAPER-Skript, das bis zu 64 AmbiEncoder-Quellen durch einen 3D-Kristallgitter-Schritt-Sequenzer mit Echtzeit-GUI, OSC-Ausgabe und benannten Presets bewegt."
 ---
 
+![ICST Kristall Motion Map — Titelbild v2.4.0](/images/kristall-title-2.4.0.png)
+
 Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 2.4.0**
 
 ICST Kristall Motion Map ist ein **eigenständiges REAPER-Lua-Skript** mit grafischer Echtzeit-Oberfläche. Es ordnet bis zu 64 AmbiEncoder-Quellen als Punkte in einem 3D-Kristallgitter an und bewegt sie mit einem Schritt-Sequenzer durch den Raum. Die Bewegung kann live in der isometrischen Vorschau verfolgt, per OSC an einen ICST AmbiEncoder_64 gesendet und mit instanzspezifischen Transformationen, Quantisierung, Glättung und Interaktion gestaltet werden.
 Dieses Instrument entstand in Zusammenarbeit mit und inspiriert durch Eli Stine, Gast der ICST Studio Residency 2026.
 
 ![ICST Kristall Motion Map — Gesamtansicht mit Instanzliste, Gitter-Vorschau, Parameter-Panel und Statusleiste](/images/kristall-overview.png)
+
+![Das Gitter in Bewegung — Quellen wandern in Echtzeit schrittweise durch den Kristall](/images/kristall-demo.gif)
 
 Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaural gerendert.
 
@@ -24,6 +28,21 @@ Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaur
 <audio controls style="width:100%;margin:0.5rem 0 1rem">
   <source src="KristallMotionMap_RND.wav" type="audio/wav">
 </audio>
+
+**Weitere Binaural-Beispiele** — mit Kopfhörern hören, jeweils auf -23 LUFS normalisiert.
+
+**Bsp. 1**
+<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex01.mp3" type="audio/mpeg"></audio>
+**Bsp. 2**
+<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex02.mp3" type="audio/mpeg"></audio>
+**Bsp. 3**
+<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex03.mp3" type="audio/mpeg"></audio>
+**Bsp. 4**
+<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex04.mp3" type="audio/mpeg"></audio>
+**Bsp. 5**
+<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex05.mp3" type="audio/mpeg"></audio>
+
+*Diese Kristall-Motion-Map-Beispiele stammen von Eli Stine, die er während seiner ICST Studio-Residency 2026 erstellt hat.*
 
 {{< notice update >}}
 **Neu bei Kristall?** Direkt zu [§13 Erste Schritte — Schnelleinstieg](#13-erste-schritte--schnelleinstieg) springen und in unter fünf Minuten das erste Preset zum Laufen bringen — dann für die detaillierte Referenz hierher zurückkehren.

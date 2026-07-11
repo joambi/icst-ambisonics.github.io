@@ -22,3 +22,6 @@ content/**/*.jpeg
 
 # Lokale Arbeitsordner (Quelldateien, nicht für Deployment)
 static/Kristall Map Bilder/
+
+# High-res Audio-Master (die web-tauglichen MP3s liegen im Seiten-Bundle)
+content/**/LUFS-23/
