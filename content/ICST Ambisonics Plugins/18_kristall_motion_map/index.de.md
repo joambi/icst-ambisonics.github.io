@@ -26,21 +26,40 @@ Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaur
 {{< /notice >}}
 
 <audio controls style="width:100%;margin:0.5rem 0 1rem">
-  <source src="KristallMotionMap_RND.wav" type="audio/wav">
+  <source src="/icst-ambisonics-plugins/18_kristall_motion_map/KristallMotionMap_RND.wav" type="audio/wav">
 </audio>
 
 **Weitere Binaural-Beispiele** — mit Kopfhörern hören, jeweils auf -23 LUFS normalisiert.
 
 **Bsp. 1**
-<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex01.mp3" type="audio/mpeg"></audio>
+
+<audio controls style="width:100%;margin:0 0 0.7rem">
+  <source src="/icst-ambisonics-plugins/18_kristall_motion_map/kristall-ex01.mp3" type="audio/mpeg">
+</audio>
+
 **Bsp. 2**
-<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex02.mp3" type="audio/mpeg"></audio>
+
+<audio controls style="width:100%;margin:0 0 0.7rem">
+  <source src="/icst-ambisonics-plugins/18_kristall_motion_map/kristall-ex02.mp3" type="audio/mpeg">
+</audio>
+
 **Bsp. 3**
-<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex03.mp3" type="audio/mpeg"></audio>
+
+<audio controls style="width:100%;margin:0 0 0.7rem">
+  <source src="/icst-ambisonics-plugins/18_kristall_motion_map/kristall-ex03.mp3" type="audio/mpeg">
+</audio>
+
 **Bsp. 4**
-<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex04.mp3" type="audio/mpeg"></audio>
+
+<audio controls style="width:100%;margin:0 0 0.7rem">
+  <source src="/icst-ambisonics-plugins/18_kristall_motion_map/kristall-ex04.mp3" type="audio/mpeg">
+</audio>
+
 **Bsp. 5**
-<audio controls style="width:100%;margin:0.15rem 0 0.7rem"><source src="kristall-ex05.mp3" type="audio/mpeg"></audio>
+
+<audio controls style="width:100%;margin:0 0 0.7rem">
+  <source src="/icst-ambisonics-plugins/18_kristall_motion_map/kristall-ex05.mp3" type="audio/mpeg">
+</audio>
 
 *Diese Kristall-Motion-Map-Beispiele stammen von Eli Stine, die er während seiner ICST Studio-Residency 2026 erstellt hat.*
 
