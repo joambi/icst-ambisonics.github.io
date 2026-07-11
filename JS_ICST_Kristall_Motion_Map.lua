@@ -11,7 +11,7 @@
 -- ============================================================
 
 local SCRIPT_NAME    = "ICST Kristall Motion Map"
-local SCRIPT_VERSION = "v2.2.8"
+local SCRIPT_VERSION = "v2.4.0"
 local MAX_INSTANCES  = 64
 local PRESET_EXT     = "ICST_KristallMotionMap_v1"
 
@@ -140,8 +140,10 @@ end
 
 -- Isometric projection: world → screen
 local function isoProject(x,y,z, cx,cy,scale)
-  local sx = cx + (x-y)*cos(pi/6)*scale
-  local sy = cy - (x+y)*sin(pi/6)*scale + z*scale
+  -- Match the ICST encoder layout: +X = right, +Y = front (up), +Z = elevation
+  -- (drawn up-left so it stays distinct from the X and Y axes).
+  local sx = cx + x*scale*0.95 - z*scale*0.30
+  local sy = cy - y*scale*0.95 - z*scale*0.55
   return sx, sy
 end
 
@@ -544,10 +546,10 @@ local EDGE_DIST = 2.0   -- world-units: max distance to draw a lattice edge
 -- sx = cx + (x-y)*cos(π/6)*scale
 -- sy = cy - (x+y)*sin(π/6)*scale + z*scale
 local function isoUnproject(sx,sy,z, cx,cy,scale)
-  local c=cos(pi/6)*scale; local s=sin(pi/6)*scale
-  local A=(sx-cx)/c          -- x - y
-  local B=(cy-sy+z*scale)/s  -- x + y
-  return (A+B)*0.5, (B-A)*0.5
+  -- Inverse of isoProject for a known z (used by XY dragging).
+  local x = (sx - cx + z*scale*0.30)/(scale*0.95)
+  local y = (cy - sy - z*scale*0.55)/(scale*0.95)
+  return x, y
 end
 
 -- Drag state (lives next to ui table, set at UI declaration time via patch below)
@@ -676,9 +678,9 @@ local function drawInstanceList(lx,ly,lw,lh)
     setColor(0.28,0.28,0.40); fillRect(lx+lw-5,sby,4,sbh)
   end
 
-  -- Add / Remove / Dup buttons
-  local by=ly+lh-24; local bw=floor(lw/3)
-  local btns={"+ Add","- Rem","Dup"}
+  -- Add / Remove / Dup / Import / COD buttons
+  local by=ly+lh-24; local bw=floor(lw/5)
+  local btns={"+ Add","- Rem","Dup","CIF","COD"}
   for k,label in ipairs(btns) do
     local bx=lx+(k-1)*bw
     setColor(0.14,0.18,0.28); fillRect(bx+1,by,bw-2,20)
@@ -1721,6 +1723,134 @@ local function ctrlPoll(dt)
   end
 end
 
+-- ============================================================
+-- SECTION 13b: CIF IMPORT (Crystallography Open Database)
+-- ============================================================
+-- Parse a classical CIF (fractional coords + unit-cell params), convert to
+-- centred/normalised cartesian points, and load them as instances. Reuses
+-- latticeVecs() — the same cell matrix as the crystal-system presets.
+
+local function cifTrim(s) return (s:gsub("^%s+",""):gsub("%s+$","")) end
+-- strip standard-uncertainty parens, e.g. "0.1234(5)" -> "0.1234"
+local function cifNum(s) if not s then return nil end return tonumber((s:gsub("%b()",""))) end
+
+-- Element -> palette colour index (approx. CPK; hash fallback for the rest)
+local CIF_ELEM_COLOR = {
+  H=6, C=5, N=2, O=9, F=8, Cl=12, Br=3, I=5, P=7, S=11, B=8,
+  Al=4, Si=6, Na=10, K=10, Mg=1, Ca=1, Zn=3, Fe=7, Cu=3, Ni=6,
+  Co=4, Mn=9, Ti=6, Se=11, As=5,
+}
+local function cifElementColor(sym)
+  sym=(sym or ""):gsub("[^%a]","")
+  sym=sym:sub(1,1):upper()..sym:sub(2):lower()
+  local c=CIF_ELEM_COLOR[sym]
+  if c then return c end
+  local h=0; for i=1,#sym do h=h+sym:byte(i) end
+  return (h % #PALETTE)+1
+end
+
+local function cifFracToCart(fx,fy,fz, cell)
+  local ax,ay,az, bx,by,bz, cx,cy,cz = latticeVecs(cell.a,cell.b,cell.c,cell.al,cell.be,cell.ga)
+  return fx*ax+fy*bx+fz*cx, fx*ay+fy*by+fz*cy, fx*az+fy*bz+fz*cz
+end
+
+local function cifParse(text)
+  local lines={}; for l in (text.."\n"):gmatch("(.-)\n") do lines[#lines+1]=l end
+  local cell={}
+  local function findval(tag)
+    for _,ln in ipairs(lines) do
+      local k,v=ln:match("^%s*(_%S+)%s+(.+)$"); if k==tag then return cifTrim(v) end
+    end
+  end
+  cell.a =cifNum(findval("_cell_length_a"));  cell.b =cifNum(findval("_cell_length_b"));  cell.c =cifNum(findval("_cell_length_c"))
+  cell.al=cifNum(findval("_cell_angle_alpha")); cell.be=cifNum(findval("_cell_angle_beta")); cell.ga=cifNum(findval("_cell_angle_gamma"))
+  local atoms={}
+  local i,nn=1,#lines
+  local function brk(t) return t=="" or t:match("^loop_") or t:match("^_") or t:match("^#") or t:match("^data_") end
+  while i<=nn do
+    if cifTrim(lines[i])=="loop_" then
+      i=i+1; local cols,idx={},{}
+      while i<=nn do local t=cifTrim(lines[i]); if t:match("^_") then cols[#cols+1]=t; idx[t]=#cols; i=i+1 else break end end
+      if idx["_atom_site_fract_x"] then
+        local fxc,fyc,fzc=idx["_atom_site_fract_x"],idx["_atom_site_fract_y"],idx["_atom_site_fract_z"]
+        local lc,sc=idx["_atom_site_label"],idx["_atom_site_type_symbol"]
+        while i<=nn and not brk(cifTrim(lines[i])) do
+          local tk={}; for w in lines[i]:gmatch("%S+") do tk[#tk+1]=w end
+          if #tk>=#cols then
+            local fx,fy,fz=cifNum(tk[fxc]),cifNum(tk[fyc]),cifNum(tk[fzc])
+            if fx and fy and fz then
+              local sym=(sc and tk[sc]) or (lc and tk[lc]:match("^%a+")) or "?"
+              atoms[#atoms+1]={label=(lc and tk[lc]) or "", symbol=sym, fx=fx, fy=fy, fz=fz}
+            end
+          end
+          i=i+1
+        end
+      else
+        while i<=nn and not brk(cifTrim(lines[i])) do i=i+1 end
+      end
+    else i=i+1 end
+  end
+  return cell, atoms
+end
+
+local function cifImport()
+  local ok, path = reaper.GetUserFileNameForRead("", "Import CIF (Crystallography Open Database)", "cif")
+  if not ok or not path or path=="" then return end
+  local f=io.open(path,"r"); if not f then statusMsg="CIF: cannot open file"; return end
+  local text=f:read("*a"); f:close()
+  local cell, atoms = cifParse(text)
+  if not (cell.a and cell.b and cell.c and cell.al and cell.be and cell.ga) then
+    statusMsg="CIF: incomplete unit cell (_cell_* tags missing)"; return
+  end
+  if #atoms==0 then statusMsg="CIF: no _atom_site_fract atoms found"; return end
+  -- fractional -> cartesian, centre on centroid, normalise to unit radius
+  local pts={}
+  for _,a in ipairs(atoms) do
+    local x,y,z=cifFracToCart(a.fx,a.fy,a.fz,cell)
+    pts[#pts+1]={x=x,y=y,z=z,label=a.label,symbol=a.symbol}
+  end
+  local total=#pts; local mx0,my0,mz0=0,0,0
+  for _,p in ipairs(pts) do mx0=mx0+p.x; my0=my0+p.y; mz0=mz0+p.z end
+  mx0,my0,mz0=mx0/total,my0/total,mz0/total
+  local maxr=1e-6
+  for _,p in ipairs(pts) do p.x=p.x-mx0; p.y=p.y-my0; p.z=p.z-mz0
+    local r=sqrt(p.x*p.x+p.y*p.y+p.z*p.z); if r>maxr then maxr=r end end
+  local s=1.0/maxr
+  local capped=false
+  clearAll()
+  for _,p in ipairs(pts) do
+    if #instances>=MAX_INSTANCES then capped=true; break end
+    addInstance({
+      startX=string.format("%.4f",p.x*s), startY=string.format("%.4f",p.y*s), startZ=string.format("%.4f",p.z*s),
+      offsetX="0", offsetY="0", offsetZ="0",   -- imported atoms are static by default
+      name=(p.label~="" and p.label) or p.symbol,
+      colorIdx=cifElementColor(p.symbol),
+    })
+  end
+  selectedIdx=1; selectedSet={[1]=true}
+  statusMsg=string.format("CIF import: %d atoms loaded%s", #instances,
+                          capped and (" (capped from "..total..")") or "")
+end
+
+-- Open the Crystallography Open Database in the default browser — quick access
+-- to search & download .cif files that the CIF button then imports.
+-- Pre-filtered to Acta Crystallographica Section E — small single-crystal
+-- structures whose asymmetric unit usually fits the 64-instance limit.
+local COD_URL = "https://www.crystallography.net/cod/result.php?journal=Acta%20Crystallographica%20Section%20E"
+local function cifOpenDatabase()
+  if reaper.CF_ShellExecute then          -- SWS extension (cleanest, if present)
+    reaper.CF_ShellExecute(COD_URL)
+  else
+    local os_ = reaper.GetOS() or ""
+    local cmd
+    if     os_:match("^Win")               then cmd='start "" "'..COD_URL..'"'
+    elseif os_:match("OSX") or os_:match("macOS") then cmd='open "'..COD_URL..'"'
+    else                                        cmd='xdg-open "'..COD_URL..'" &' end
+    os.execute(cmd)
+  end
+  statusMsg="Opened crystallography.net (COD) in your browser"
+end
+
 -- Send all enabled instances as OSC /icst/ambi/sourceindex/aed messages
 local function oscSendPreview()
   if not osc.ok or not osc.pipe then return end
@@ -1731,6 +1861,9 @@ local function oscSendPreview()
     if inst.enabled then
       -- effectivePos already includes rotation, zoom and translation (via applyGlobalTransforms)
       local x=inst.effectivePos.x; local y=inst.effectivePos.y; local z=inst.effectivePos.z
+      -- ICST AmbiEncoder OSC-AED input convention: azimuth 0° = Front (+Y), +90° = Right (+X);
+      -- distance = raw Euclidean radius (encoder rings extend past 1). Verified against the
+      -- encoder display, this matches; the writer's normalized_xyz_to_aed uses a different space.
       local dist=sqrt(x*x+y*y+z*z); if dist<0.001 then dist=0.001 end
       local az=(math.atan2 and math.atan2(x,y) or math.atan(x,y))*180/math.pi
       local el=math.asin(clamp(z/dist,-1,1))*180/math.pi
@@ -1873,8 +2006,8 @@ local function handleInput()
           onSelectionChanged()
         end
       end
-      -- Add / Rem / Dup buttons
-      local by_=list_y+list_h-24; local bw_=floor(LIST_W/3)
+      -- Add / Rem / Dup / Import / COD buttons
+      local by_=list_y+list_h-24; local bw_=floor(LIST_W/5)
       if hit(mx,my,list_x,by_,bw_,20) then
         if #instances<MAX_INSTANCES then addInstance({}); selectedIdx=#instances end
       elseif hit(mx,my,list_x+bw_,by_,bw_,20) then
@@ -1884,6 +2017,10 @@ local function handleInput()
         if instances[selectedIdx] and #instances<MAX_INSTANCES then
           local dup=duplicateInstance(instances[selectedIdx])
           table.insert(instances,selectedIdx+1,dup); selectedIdx=selectedIdx+1 end
+      elseif hit(mx,my,list_x+bw_*3,by_,bw_,20) then
+        cifImport()
+      elseif hit(mx,my,list_x+bw_*4,by_,bw_,20) then
+        cifOpenDatabase()
       end
     end
   end

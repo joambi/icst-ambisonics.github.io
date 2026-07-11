@@ -8,7 +8,7 @@ translationKey: kristall-motion-map
 description: "Installation und Benutzerhandbuch für JS_ICST_Kristall_Motion_Map.lua — ein eigenständiges REAPER-Skript, das bis zu 64 AmbiEncoder-Quellen durch einen 3D-Kristallgitter-Schritt-Sequenzer mit Echtzeit-GUI, OSC-Ausgabe und benannten Presets bewegt."
 ---
 
-Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 2.2.8**
+Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 2.4.0**
 
 ICST Kristall Motion Map ist ein **eigenständiges REAPER-Lua-Skript** mit grafischer Echtzeit-Oberfläche. Es ordnet bis zu 64 AmbiEncoder-Quellen als Punkte in einem 3D-Kristallgitter an und bewegt sie mit einem Schritt-Sequenzer durch den Raum. Die Bewegung kann live in der isometrischen Vorschau verfolgt, per OSC an einen ICST AmbiEncoder_64 gesendet und mit instanzspezifischen Transformationen, Quantisierung, Glättung und Interaktion gestaltet werden.
 Dieses Instrument entstand in Zusammenarbeit mit und inspiriert durch Eli Stine, Gast der ICST Studio Residency 2026.
@@ -27,6 +27,10 @@ Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaur
 
 {{< notice update >}}
 **Neu bei Kristall?** Direkt zu [§13 Erste Schritte — Schnelleinstieg](#13-erste-schritte--schnelleinstieg) springen und in unter fünf Minuten das erste Preset zum Laufen bringen — dann für die detaillierte Referenz hierher zurückkehren.
+{{< /notice >}}
+
+{{< notice update >}}
+**Neu in v2.4.0:** echte Kristallstrukturen laden — die neuen Buttons **COD** und **CIF** importieren Atome aus der [Crystallography Open Database](#14-kristallstrukturen-importieren). Ausserdem neu: eine grössenverstellbare Gitter-Vorschau, an den Encoder angepasste Achsen (+X rechts, +Y Front, +Z oben), DAW-Transport-Following im BPM-Modus (Play/Stop steuert Kristall) und Zahlenfelder mit Klick-Auswahl / Rechtsklick-Reset.
 {{< /notice >}}
 
 ---
@@ -511,7 +515,28 @@ Host und Port in Zeile 1 eingeben, **Connect** klicken. Positionen werden in Ech
 
 ---
 
-## 14. Fehlerbehebung
+## 14. Kristallstrukturen importieren
+
+Kristall kann eine **echte Kristallstruktur** aus einer CIF-Datei laden und ihre Atome in Instanzen verwandeln — eine Brücke von der Kristallografie zum Raumklang. Zwei Buttons unten in der Instanzliste erledigen das:
+
+| Button | Aktion |
+|--------|--------|
+| **COD** | Öffnet die [Crystallography Open Database](https://www.crystallography.net/cod/) im Browser, vorgefiltert auf *Acta Crystallographica Section E* (kleine Strukturen, die ins 64-Instanzen-Limit passen). |
+| **CIF** | Öffnet einen Datei-Dialog zum Import einer heruntergeladenen `.cif`-Datei. |
+
+### Arbeitsablauf
+
+1. **COD** klicken — der Browser öffnet die Datenbank. Eine Struktur wählen und ihre `.cif` herunterladen (jeder Eintrag hat einen CIF-Link).
+2. Zurück in Kristall auf **CIF** klicken und die heruntergeladene Datei auswählen.
+3. Die Atome der asymmetrischen Einheit werden als Instanzen geladen: Positionen werden aus den fraktionalen Koordinaten und der Elementarzelle berechnet, dann zentriert und auf die Vorschau normiert. Jede Instanz wird nach ihrem Atom-Label benannt und nach Element eingefärbt (CPK-artig: C violett, N blau, O rot, F/Cl grün, H hell, Metalle in warmen Tönen).
+
+{{< notice warning >}}
+Importierte Atome sind **standardmässig statisch** (Offset = 0) — ein Standbild der Struktur. Bewegung fügst du danach hinzu: globale **Rotation** (Zeile 4) dreht den ganzen Kristall, **Move** (Zeile 3) lässt ihn driften, oder ein instanzspezifisches **Offset** schickt Atome schrittweise durch den Raum. Es werden nur die in der Datei gelisteten Atome (die asymmetrische Einheit) importiert — keine Symmetrie-Expansion — und Strukturen mit mehr als 64 Atomen werden gekappt, mit Hinweis in der Statusleiste.
+{{< /notice >}}
+
+---
+
+## 15. Fehlerbehebung
 
 **Quellen bewegen sich nicht.** Speed > 0 prüfen und Instanz auf Enabled kontrollieren. Im BPM-Modus muss der REAPER-Transport laufen.
 
@@ -527,7 +552,7 @@ Host und Port in Zeile 1 eingeben, **Connect** klicken. Positionen werden in Ech
 
 **OSC-Eingang (Rotation) hat keine Wirkung.** Die OSC-Brücke muss zuerst verbunden sein. Sicherstellen, dass der Controller an `Ausgangsport + 1` sendet (Standard: `9002`, nicht `9001`). Mit einem UDP-Monitor (z. B. Protokol) prüfen ob Pakete ankommen.
 
-**Stop-Button pausiert nicht, sondern startet die Wiedergabe.** Auf das neueste Skript aktualisieren (v2.2.8) — dieser Fehler bestand nur in frühen Vorversionen.
+**Stop-Button pausiert nicht, sondern startet die Wiedergabe.** Auf das neueste Skript aktualisieren (v2.4.0) — dieser Fehler bestand nur in frühen Vorversionen.
 
 ---
 

@@ -8,7 +8,7 @@ translationKey: kristall-motion-map
 description: "Installation and user guide for JS_ICST_Kristall_Motion_Map.lua — a standalone REAPER script that moves up to 64 AmbiEncoder sources through a 3D crystal-lattice step sequencer with real-time GUI, OSC output, and named presets."
 ---
 
-Level: Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: 2.2.8**
+Level: Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: 2.4.0**
 
 ICST Kristall Motion Map is a **standalone REAPER Lua script** with a real-time graphical interface. It arranges up to 64 AmbiEncoder sources as points within a 3D crystal lattice and moves them through space using a step sequencer. The movement can be tracked live in the isometric preview, sent via OSC to an ICST AmbiEncoder_64, and shaped using instance-specific transformations, quantisation, smoothing and interaction.
 This instrument was created in collaboration with and inspired by Eli Stine, a guest at the ICST Studio Residency 2026.
@@ -27,6 +27,10 @@ This is a short demo of a random Kristall by Eli Stine — rendered in binaural.
 
 {{< notice update >}}
 **New to Kristall?** Skip to [§13 First session walkthrough](#13-first-session-walkthrough) and get your first preset running in under five minutes — then come back here for detailed reference.
+{{< /notice >}}
+
+{{< notice update >}}
+**New in v2.4.0:** load real crystal structures — the new **COD** and **CIF** buttons import atoms from the [Crystallography Open Database](#14-import-crystal-structures). Also new: a resizable lattice preview, preview axes aligned with the encoder (+X right, +Y front, +Z up), DAW transport following in BPM mode (Play/Stop drives Kristall), and click-to-select / right-click-to-reset value fields.
 {{< /notice >}}
 
 ---
@@ -511,7 +515,28 @@ Enter your AmbiEncoder host and port in Row 1, then click **Connect**. Positions
 
 ---
 
-## 14. Troubleshooting
+## 14. Import crystal structures
+
+Kristall can load a **real crystal structure** from a CIF file and turn its atoms into instances — a bridge from crystallography to spatial sound. Two buttons at the bottom of the instance list handle this:
+
+| Button | Action |
+|--------|--------|
+| **COD** | Opens the [Crystallography Open Database](https://www.crystallography.net/cod/) in your browser, pre-filtered to *Acta Crystallographica Section E* (small structures that fit the 64-instance limit). |
+| **CIF** | Opens a file dialog to import a downloaded `.cif` file. |
+
+### Workflow
+
+1. Click **COD** — your browser opens the database. Pick a structure and download its `.cif` (each entry has a CIF link).
+2. Back in Kristall, click **CIF** and select the downloaded file.
+3. The atoms of the asymmetric unit are loaded as instances: positions are computed from the fractional coordinates and unit cell, then centred and normalised to fit the preview. Each instance is named after its atom label and coloured by element (CPK-style: C violet, N blue, O red, F/Cl green, H light, metals in warm hues).
+
+{{< notice warning >}}
+Imported atoms are **static by default** (Offset = 0) — a still snapshot of the structure. Add motion afterwards with global **Rotation** (Row 4) to spin the whole crystal, **Move** (Row 3) to drift it, or a per-instance **Offset** to step atoms through space. Only the atoms listed in the file (the asymmetric unit) are imported — no symmetry expansion — and structures with more than 64 atoms are capped, with a note in the status bar.
+{{< /notice >}}
+
+---
+
+## 15. Troubleshooting
 
 **Sources do not move.**
 Check that Speed > 0 and that the instance is Enabled. In BPM mode, REAPER transport must be running.
@@ -535,7 +560,7 @@ Three things to check: (1) Python must be in the system PATH — reinstall Pytho
 The OSC bridge must be connected first (output port active). Check that your controller is sending to `output port + 1` (default: `9002`), not `9001`. Confirm the messages arrive with a UDP monitor (e.g., Protokol).
 
 **Stop button does not pause — it starts playing.**
-Update to the latest script (v2.2.8) — this was a bug in early pre-release versions.
+Update to the latest script (v2.4.0) — this was a bug in early pre-release versions.
 
 ---
 
