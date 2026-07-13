@@ -231,6 +231,7 @@ local ui = {
   prevFrac       = 0.45, -- fraction of right column used by the lattice preview (draggable divider)
   dividerDrag    = false,-- true while dragging the preview/param divider
   param_fields   = {},   -- hit-test table rebuilt each frame
+  global_fields  = {},   -- status-bar (global) value-field rects, for right-click reset
   preset_open    = false,
   preset_scroll  = 0,
   sliderDrag     = {active=false,id=nil,startMx=0,startVal=0,lo=0,hi=1,scale=0.01},
@@ -869,6 +870,7 @@ end
 local function drawStatusBar(bx,by,bw,bh)
   setColor(0.08,0.08,0.11); fillRect(bx,by,bw,bh)
   setColor(0.18,0.18,0.24); fillRect(bx,by,bw,1)
+  ui.global_fields={}   -- rebuilt each frame; used by right-click reset
 
   -- OSC dot
   setColor(osc.ok and 0.2 or 0.7, osc.ok and 0.9 or 0.2, osc.ok and 0.3 or 0.2)
@@ -954,6 +956,7 @@ local function drawStatusBar(bx,by,bw,bh)
   fillRect(spdx,r2y+2,spdw,r2h)
   setColor(sfoc and 0.40 or 0.28, sfoc and 0.85 or 0.36, sfoc and 0.65 or 0.42)
   drawRect(spdx,r2y+2,spdw,r2h)
+  ui.global_fields[#ui.global_fields+1]={id="globalRate",x=spdx,y=r2y+2,w=spdw,h=r2h}
   setColor(1,1,1)
   local spdLabel = sfoc and ("×"..ui.focus_text)
                          or string.format("×%.2f", globalRateMult)
@@ -1022,6 +1025,7 @@ local function drawStatusBar(bx,by,bw,bh)
     setColor(hot and 0.70 or 0.45, hot and 0.70 or 0.45, hot and 0.80 or 0.58)
     drawStr(lbl, lx, ly+5)
     local sx=lx+measureStr(lbl)+4
+    ui.global_fields[#ui.global_fields+1]={id=id,x=sx,y=ly+2,w=fw,h=18}
     -- track bg (dimmed when focused to make text stand out)
     setColor(focused and 0.06 or 0.09, focused and 0.08 or 0.10, focused and 0.12 or 0.16)
     fillRect(sx,ly+2,fw,18)
@@ -1928,6 +1932,26 @@ local STAT_H = 154  -- row1=28px + row2=26px + row3=26px + row4=26px + row5=26px
 local PREV_H_FRAC = 0.45  -- default fraction of right column for lattice preview
 local PREV_FRAC_MIN, PREV_FRAC_MAX = 0.18, 0.90  -- drag limits for the divider
 
+-- Reset a global status-bar value field to its neutral default (right-click).
+local function resetGlobalField(id)
+  if     id=="gTX" then globalTransX=0
+  elseif id=="gTY" then globalTransY=0
+  elseif id=="gTZ" then globalTransZ=0
+  elseif id=="gMX" then globalMoveX=0
+  elseif id=="gMY" then globalMoveY=0
+  elseif id=="gMZ" then globalMoveZ=0
+  elseif id=="gPitch"  then globalPitch=0
+  elseif id=="gYaw"    then globalYaw=0
+  elseif id=="gRoll"   then globalRoll=0
+  elseif id=="gZoom"   then globalZoom=1.0
+  elseif id=="gRPitch" then globalRotPitch=0
+  elseif id=="gRYaw"   then globalRotYaw=0
+  elseif id=="gRRoll"  then globalRotRoll=0
+  elseif id=="globalRate" then globalRateMult=1.0
+  else return end
+  statusMsg=id.." reset to default"
+end
+
 local function handleInput()
   local mx=gfx.mouse_x; local my=gfx.mouse_y
   local mb=gfx.mouse_cap
@@ -2305,6 +2329,10 @@ local function handleInput()
         statusMsg=string.format("%s reset to default (%s)", f.key, tostring(dv))
         break
       end
+    end
+    -- global status-bar value fields (Speed, Offset/Move/Rotate/Zoom/Spin)
+    for _,g in ipairs(ui.global_fields) do
+      if hit(mx,my,g.x,g.y,g.w,g.h) then commitFocus(); resetGlobalField(g.id); break end
     end
   end
 
