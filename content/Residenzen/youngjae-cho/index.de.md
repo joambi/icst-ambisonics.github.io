@@ -2,6 +2,7 @@
 tags: []
 date: 2025-07-07T00:00:00
 title: Youngjae Cho
+description: "Youngjae Cho — ICST Artist in Residence an der ZHdK Zürich, Juli 2025. Studioresidenz in räumlicher Audio- und Ambisonics-Komposition."
 slug: youngjae-cho
 aliases:
   - /de/residenzen/Youngjae Cho/

@@ -5,6 +5,7 @@
   "scripts": {
     "build": "hugo --themesDir=../.. --source=exampleSite && shx rm -rf ./resources && shx cp -r ./exampleSite/resources ./resources && shx echo Done building resources.",
     "dev": "hugo serve --themesDir=../.. --source=exampleSite",
+    "dev:site": "bash ./scripts/hugo-server.sh",
     "prettier": "npx prettier --write .",
     "prepare": "husky",
     "release": "release-it",

@@ -11,14 +11,12 @@
             "id": "6d07191f14bb7db8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "content/ICST Ambisonics Plugins/15_icst_ambi_motion_map/index.de.md",
-                "mode": "source",
-                "source": false
+                "file": "content/ICST Ambisonics Plugins/18_kristall_motion_map/Titelbild_Kristall.png"
               },
-              "icon": "lucide-file",
-              "title": "index.de"
+              "icon": "lucide-image",
+              "title": "Titelbild_Kristall"
             }
           }
         ]
@@ -192,7 +190,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "image-preview-on-icon-hover:1782743569666": false,
+      "image-preview-on-icon-hover:1783694789775": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -219,6 +217,11 @@
   },
   "active": "6d07191f14bb7db8",
   "lastOpenFiles": [
+    "content/ICST Ambisonics Plugins/18_kristall_motion_map/Kristall Overview.png",
+    "content/ICST Ambisonics Plugins/18_kristall_motion_map/index.de.md",
+    "content/ICST Ambisonics Plugins/18_kristall_motion_map/Titelbild_Kristall.png",
+    "content/ICST Ambisonics Plugins/_index.de.md",
+    "content/ICST Ambisonics Plugins/15_icst_ambi_motion_map/index.de.md",
     "content/ICST Ambisonics Plugins/14_icst_ambi_motion_markers/index.de.md",
     "content/ICST Ambisonics Plugins/15_icst_ambi_motion_map/index.md",
     "public/de/icst-ambisonics-plugins/16_motion_map_setup/index.html",
@@ -229,7 +232,6 @@
     "content/ICST Ambisonics Plugins/16_motion_map_setup/index.md",
     "content/ICST Ambisonics Plugins/16_motion_map_setup",
     "CLAUDE.md",
-    "content/ICST Ambisonics Plugins/15_icst_ambi_motion_map/index.de.md",
     "public/index.xml",
     "public/post/index.xml",
     "public/blog/index.xml",
@@ -244,7 +246,6 @@
     "public/residenzen/youngjae-cho/Youngjae_02.jpg",
     "public/residenzen/nandele-maguni/nandele_02.png",
     "public/residenzen/nandele-maguni/nandele_01.png",
-    "public/residenzen/nandele-maguni/Unknown.jpeg",
     "content/ICST Ambisonics Plugins/14_icst_ambi_motion_markers/index.md",
     "public/blog/faq/Ableton2Reaper.canvas",
     "ICST_Ambi_Motion_Markers_Handbook.md",
@@ -263,8 +264,6 @@
     "content/learn/ambisonics-formats-overview/index.md",
     "content/learn/working-with-ambisonics-workshop/index.md",
     "content/learn/working-with-ambisonics-workshop/reaper-workshop/Composer Fragen ergänzend.md",
-    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Spatial Counterpoint.md",
-    "content/learn/working-with-ambisonics-workshop/reaper-workshop/Tutorial-Scenen-Wechsler -ACT.md",
     "docs/blog/faq/Ableton2Reaper.canvas",
     "content/Blog/FAQ/Ableton2Reaper.canvas",
     "public/blog/what_we_now/Ableton2Reaper.canvas",

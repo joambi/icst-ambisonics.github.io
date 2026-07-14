@@ -907,6 +907,72 @@
   }
 }
 
+// Feature block: text card on the left, large demo GIF on the right
+.kristall-feature {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 1rem;
+  align-items: stretch;
+
+  @include conf.desktop {
+    grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    align-items: stretch;
+  }
+}
+
+.kristall-feature__text {
+  h4 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin: 0 0 0.6rem;
+  }
+
+  @include conf.desktop {
+    display: flex;
+    flex-direction: column;
+
+    .home-card__actions {
+      margin-top: auto;
+    }
+  }
+}
+
+.kristall-feature__media {
+  margin: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+    @include color.themed() {
+      border: 1px solid color.t('primary-lighter');
+    }
+  }
+}
+
+.kristall-feature__audio {
+  margin: 0 0 1.25rem;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+
+  @include color.themed() {
+    background-color: color.t('accent');
+    border: 1px solid color.t('primary-lighter');
+  }
+
+  audio {
+    display: block;
+    width: 100%;
+  }
+}
+
+.kristall-feature__audio-label {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+}
+
 .home-card__actions,
 .home-accordion__actions {
   display: flex;

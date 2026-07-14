@@ -33,6 +33,10 @@ Verwende den Multi-Decoder Modus, wenn dein Setup enthält:
 
 Für einfache Setups (einzelnes Array, einzelne Geometrie) ist der Standard-Single-Decoder-Modus ausreichend.
 
+> [!Note]
+> Der Multi-Decoder Modus ist keine direkte Umsetzung der Blauertschen Bänder oder eines anderen festen psychoakustischen Modells.
+> Er versteht sich eher als **schichtbewusstes Dekodierungs-Werkzeug**: Du kannst verschiedene Strategien für unterschiedliche Lautsprecherzonen vergleichen und verfeinern, während dieselbe B-Format-Quelle erhalten bleibt.
+
 ---
 
 ## Aktivierung des Multi-Decoder Modus
@@ -104,6 +108,19 @@ Um jeden Decoder zu verifizieren:
 3. Wiederhole für jeden Decoder, nachdem du ihn stummgeschaltet hast.
 
 Verwende `Shift + Control + S` / `Shift + Control + M` (macOS) für tastaturgestützte Solo- und Stumm-Optionen während des Tests.
+
+---
+
+## Was der Multi-Decoder Modus nicht ist
+
+Der Multi-Decoder Modus ist nicht:
+
+- ein direkter Blauert-Band-Decoder
+- für sich genommen ein Distanz-Renderer
+- automatisch besser als ein einzelner Decoder
+- ein Ersatz für korrekte Geometrie, Lautsprecher-Verifikation und Routing-Disziplin
+
+Seine Stärke liegt im **kontrollierten Vergleich**: Du kannst Lautsprechergruppen trennen und testen, wie Ordnung, Gewichtung, Gain und Filterung das wahrgenommene Ergebnis beeinflussen.
 
 ---
 

@@ -6,3 +6,18 @@ content/post/Blauertsche_B
 content/Blog/ascolta/17-ascolta/index.md
 content/Blog/ICST Composer Studio Blog/index.md
 content/ICST Ambisonics Plugins/15_icst_ambi_motion_map/index.md
+
+# Intentional single-language companion posts (linked by their own URLs)
+content/post/ambisonics-mikrofon-a-format-b-format/index.md
+content/post/ambisonics-to-atmos-bed/index.md
+content/post/b-format-export-reaper/index.md
+content/post/binaural-monitoring-icst-workflow/index.md
+content/post/decoder-filter-praxisbeispiele/index.md
+content/post/decoder-methodological-context/index.md
+content/post/decoder-methodischer-kontext/index.md
+content/post/decoder-skalierung-laufzeitkompensation/index.md
+content/post/hoa-ordnung-wahl-praxis/index.md
+content/post/komposition-in-ambisonics/index.md
+content/post/szenen-rotation-b-format-transform/index.md
+content/post/xyz-vs-aed-koordinatensysteme/index.md
+content/Blog/decoder-geschichte-und-anwendungen/index.md

@@ -1,6 +1,7 @@
 ---
 tags:
 title: Péter Biró Dániel
+description: "Dániel Péter Biró — ICST-Studioresidenz an der ZHdK Zürich, August–September 2025. Komponist, Guggenheim Fellow, Professor an der Grieg-Akademie Bergen."
 date: 2025-08-20T18:09:00
 slug: peter-biro-daniel
 aliases:

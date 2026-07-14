@@ -1,5 +1,6 @@
 ---
 title: Nandele Maguni
+description: "Nandele Maguni — ICST-Studioresidenz an der ZHdK Zürich, Juni–Juli 2025. Neue Veröffentlichung 'Kampfumo' auf Basis von Field Recordings aus Maputo, Mosambik."
 date: 2025-07-04T13:08:00
 slug: nandele-maguni
 aliases:

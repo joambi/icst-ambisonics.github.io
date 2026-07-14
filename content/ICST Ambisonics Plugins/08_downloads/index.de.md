@@ -2,6 +2,7 @@
 tags:
 date: 2025-01-15T16:21:00
 title: Downloads
+aliases: ["/de/icst-ambisonics-plugins/downloads/"]
 weight: 140
 description: "Alle Download-Links für die ICST Ambisonics Plugins, die ICST Ambisonics Tools für Max/MSP sowie Templates, Presets und Anleitungen."
 ---

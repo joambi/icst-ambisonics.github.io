@@ -1,7 +1,7 @@
 ---
 title: Was ist neu
 date: 2025-11-03T16:13:00
-weight: 150
+weight: 15
 ---
 
 # ICST Ambisonics Plugins v3.2
@@ -15,6 +15,29 @@ Wir freuen uns, **v3.2** ankündigen zu können, mit einem großen Update für d
 
 📖 **Vollständige Dokumentation:**
 🔗 [**Wiki**](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
+
+---
+
+<div class="kristall-feature">
+  <section class="home-card kristall-feature__text">
+    <h4>Neu: ICST Kristall Motion Map — User Guide</h4>
+    <p>Ein eigenständiges REAPER-Lua-Skript für algorithmische 3D-Bewegung: Bis zu 64 AmbiEncoder-Quellen in einem Kristallgitter anordnen, per Schritt-Sequenzer animieren und das Ergebnis live via OSC ausgeben.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/de/icst-ambisonics-plugins/18_kristall_motion_map/">Zum User Guide</a>
+      <a class="hero__link" href="/de/icst-ambisonics-plugins/08_downloads/">Downloads</a>
+    </div>
+  </section>
+  <figure class="kristall-feature__media">
+    <img src="/images/kristall-demo.gif" alt="ICST Kristall Motion Map Demo">
+  </figure>
+</div>
+
+<div class="kristall-feature__audio">
+  <p class="kristall-feature__audio-label"><strong>Klangbeispiel</strong> — ICST Kristall Motion Map</p>
+  <audio controls preload="none" style="width:100%">
+    <source src="/icst-ambisonics-plugins/18_kristall_motion_map/kristall-ex01.mp3" type="audio/mpeg">
+  </audio>
+</div>
 
 ---
 # ICST AmbiDecoder v3.2

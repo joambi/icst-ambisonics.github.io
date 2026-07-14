@@ -16,7 +16,7 @@ defaultContentLanguage = 'en'
     weight = 2
     [languages.de.menu]
       [[languages.de.menu.footer]]
-      name = "Datenschutzerklaerung"
+      name = "Datenschutzerklärung"
       weight = 1
       identifier = "Privacy Policy"
       url = "/privacy-policy/"
@@ -28,7 +28,7 @@ defaultContentLanguage = 'en'
       url = "https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
 
       [[languages.de.menu.footer]]
-      name = "Allgemeine Geschaeftsbedingungen"
+      name = "Allgemeine Geschäftsbedingungen"
       weight = 3
       identifier = "Terms and Conditions"
       url = "/terms-and-conditions/"

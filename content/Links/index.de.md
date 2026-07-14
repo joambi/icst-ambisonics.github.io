@@ -4,6 +4,7 @@ draft: false
 params:
   author: Johannes Schuett
 title: Links
+description: "Kuratierte Links zu Ambisonics-Ressourcen, Forschung zu räumlichem Audio, verwandter Software, ICST-Publikationen und Community-Referenzen."
 weight: 10
 tags: []
 languageCode: de
