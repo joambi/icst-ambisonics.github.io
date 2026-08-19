@@ -1,0 +1,1344 @@
+{
+  "createdWith": "Open Stage Control",
+  "version": "1.24.0",
+  "type": "session",
+  "content": {
+    "type": "root",
+    "id": "root",
+    "bypass": true,
+    "css": "font-size: 105%;",
+    "tabs": [
+      {
+        "type": "tab",
+        "id": "tab_main",
+        "label": "Select + Focus",
+        "bypass": true,
+        "widgets": [
+          {
+            "type": "variable",
+            "id": "source_index",
+            "default": 1,
+            "bypass": true
+          },
+          {
+            "type": "variable",
+            "id": "source_names",
+            "default": "[]",
+            "bypass": true
+          },
+          {
+            "type": "script",
+            "id": "on_source_change",
+            "visible": false,
+            "value": "@{source_index}",
+            "onValue": "globals.icstZ = globals.icstZ || Array(65).fill(0); globals.icstGain = globals.icstGain || Array(65).fill(0); var index = Math.max(1, Math.min(64, parseInt(value, 10) || 1)); var b = Math.floor((index - 1) / 8) + 1; var v = get('bank_xy_' + b) || []; var pi0 = (index - 1) % 8; var p; if (Array.isArray(v[0])) { p = v[pi0] || [0, 0]; } else { p = [(typeof v[2*pi0] === 'number') ? v[2*pi0] : 0, (typeof v[2*pi0+1] === 'number') ? v[2*pi0+1] : 0]; } var names = []; try { names = JSON.parse(get('source_names') || '[]'); } catch (e) { names = []; } globals.noecho = true; set('focus_xy', p); set('focus_z', globals.icstZ[index] || 0); set('focus_gain', globals.icstGain[index] || 0); set('name_edit', names[index - 1] || ('S' + index)); globals.noecho = false;"
+          },
+          {
+            "type": "panel",
+            "id": "main_split",
+            "width": "100%",
+            "height": "100%",
+            "layout": "horizontal",
+            "bypass": true,
+            "widgets": [
+              {
+                "type": "panel",
+                "id": "select_grid",
+                "label": "Sources S1-S64",
+                "width": "52%",
+                "height": "100%",
+                "layout": "grid",
+                "gridTemplate": 8,
+                "innerSpacing": 6,
+                "bypass": true,
+                "widgets": [
+                  {
+                    "type": "button",
+                    "id": "sel_1",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[0] || \"S1\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 1; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 1);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_2",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[1] || \"S2\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 2; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 2);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_3",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[2] || \"S3\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 3; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 3);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_4",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[3] || \"S4\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 4; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 4);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_5",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[4] || \"S5\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 5; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 5);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_6",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[5] || \"S6\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 6; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 6);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_7",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[6] || \"S7\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 7; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 7);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_8",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[7] || \"S8\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 8; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 8);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_9",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[8] || \"S9\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 9; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 9);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_10",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[9] || \"S10\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 10; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 10);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_11",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[10] || \"S11\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 11; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 11);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_12",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[11] || \"S12\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 12; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 12);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_13",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[12] || \"S13\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 13; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 13);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_14",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[13] || \"S14\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 14; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 14);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_15",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[14] || \"S15\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 15; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 15);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_16",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[15] || \"S16\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 16; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 16);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_17",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[16] || \"S17\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 17; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 17);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_18",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[17] || \"S18\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 18; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 18);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_19",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[18] || \"S19\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 19; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 19);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_20",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[19] || \"S20\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 20; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 20);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_21",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[20] || \"S21\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 21; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 21);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_22",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[21] || \"S22\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 22; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 22);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_23",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[22] || \"S23\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 23; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 23);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_24",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[23] || \"S24\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 24; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 24);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_25",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[24] || \"S25\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 25; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 25);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_26",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[25] || \"S26\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 26; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 26);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_27",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[26] || \"S27\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 27; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 27);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_28",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[27] || \"S28\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 28; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 28);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_29",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[28] || \"S29\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 29; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 29);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_30",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[29] || \"S30\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 30; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 30);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_31",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[30] || \"S31\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 31; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 31);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_32",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[31] || \"S32\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 32; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 32);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_33",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[32] || \"S33\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 33; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 33);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_34",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[33] || \"S34\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 34; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 34);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_35",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[34] || \"S35\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 35; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 35);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_36",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[35] || \"S36\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 36; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 36);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_37",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[36] || \"S37\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 37; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 37);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_38",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[37] || \"S38\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 38; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 38);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_39",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[38] || \"S39\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 39; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 39);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_40",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[39] || \"S40\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 40; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 40);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_41",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[40] || \"S41\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 41; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 41);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_42",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[41] || \"S42\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 42; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 42);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_43",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[42] || \"S43\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 43; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 43);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_44",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[43] || \"S44\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 44; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 44);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_45",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[44] || \"S45\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 45; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 45);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_46",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[45] || \"S46\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 46; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 46);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_47",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[46] || \"S47\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 47; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 47);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_48",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[47] || \"S48\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 48; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 48);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_49",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[48] || \"S49\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 49; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 49);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_50",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[49] || \"S50\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 50; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 50);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_51",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[50] || \"S51\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 51; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 51);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_52",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[51] || \"S52\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 52; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 52);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_53",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[52] || \"S53\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 53; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 53);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_54",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[53] || \"S54\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 54; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 54);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_55",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[54] || \"S55\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 55; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 55);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_56",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[55] || \"S56\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 56; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 56);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_57",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[56] || \"S57\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 57; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 57);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_58",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[57] || \"S58\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 58; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 58);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_59",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[58] || \"S59\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 59; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 59);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_60",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[59] || \"S60\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 60; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 60);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_61",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[60] || \"S61\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 61; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 61);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_62",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[61] || \"S62\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 62; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 62);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_63",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[62] || \"S63\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 63; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 63);"
+                  },
+                  {
+                    "type": "button",
+                    "id": "sel_64",
+                    "mode": "push",
+                    "label": "JS{ var n = []; try { n = JSON.parse(@{source_names} || \"[]\"); } catch (e) { n = []; } return n[63] || \"S64\"; }",
+                    "css": "JS{ var on = parseInt(@{source_index}, 10) === 64; return \"font-size: 95%; --widget-padding: 2px;\" + (on ? \" :host { --color-widget: #ff9f43; --color-text: #1b1b1b; font-weight: 700; }\" : \"\"); }",
+                    "bypass": true,
+                    "onValue": "if (value) set('source_index', 64);"
+                  }
+                ]
+              },
+              {
+                "type": "panel",
+                "id": "focus_panel",
+                "width": "48%",
+                "height": "100%",
+                "layout": "vertical",
+                "innerSpacing": 8,
+                "bypass": true,
+                "widgets": [
+                  {
+                    "type": "input",
+                    "id": "name_edit",
+                    "label": "JS{ return \"Source \" + @{source_index} + \" - Name (tippen zum Umbenennen)\"; }",
+                    "width": "100%",
+                    "height": 80,
+                    "default": "S1",
+                    "css": "font-size: 130%;",
+                    "bypass": true,
+                    "onValue": "if (globals.noecho) return; var index = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); var names = []; try { names = JSON.parse(get('source_names') || '[]'); } catch (e) { names = []; } names[index - 1] = value; set('source_names', JSON.stringify(names));"
+                  },
+                  {
+                    "type": "panel",
+                    "id": "focus_xy_wrap",
+                    "width": "100%",
+                    "height": "52%",
+                    "layout": "vertical",
+                    "innerSpacing": 2,
+                    "css": "padding: 3px; background: #283241; border: 1px solid #4d79a9;",
+                    "bypass": true,
+                    "widgets": [
+                      {
+                        "type": "text",
+                        "id": "focus_xy_readout",
+                        "label": false,
+                        "width": "100%",
+                        "height": 30,
+                        "bypass": true,
+                        "value": "JS{ var v = @{focus_xy} || [0, 0]; return 'X: ' + Number(v[0]).toFixed(2) + '; Y: ' + Number(v[1]).toFixed(2); }",
+                        "css": "font-size: 120%; font-weight: 700; --color-text: #e7eadf; text-align: center; background: #2c3747; border: 1px solid #35506f;"
+                      },
+                      {
+                        "type": "text",
+                        "id": "focus_xy_front",
+                        "label": false,
+                        "width": "100%",
+                        "height": 22,
+                        "bypass": true,
+                        "value": "Front",
+                        "css": "font-size: 96%; font-weight: 700; --color-text: #e7eadf; text-align: center; background: #2c3747; border: 1px solid #35506f;"
+                      },
+                      {
+                        "type": "panel",
+                        "id": "focus_xy_row",
+                        "width": "100%",
+                        "height": "100%",
+                        "layout": "horizontal",
+                        "innerSpacing": 2,
+                        "css": "padding: 2px; background: #24303d; border: 1px solid #35506f;",
+                        "bypass": true,
+                        "widgets": [
+                          {
+                            "type": "text",
+                            "id": "focus_xy_left",
+                            "label": false,
+                            "width": 26,
+                            "height": "100%",
+                            "bypass": true,
+                            "value": "Left",
+                            "css": "font-size: 92%; font-weight: 700; --color-text: #e7eadf; writing-mode: vertical-rl; transform: rotate(180deg); text-align: center; background: #2c3747; border: 1px solid #35506f;"
+                          },
+                          {
+                            "type": "xy",
+                            "id": "focus_xy",
+                            "label": false,
+                            "width": "100%",
+                            "height": "100%",
+                            "default": [
+                              0,
+                              -1
+                            ],
+                            "rangeX": {
+                              "min": -1,
+                              "max": 1
+                            },
+                            "rangeY": {
+                              "min": -1,
+                              "max": 1
+                            },
+                            "snap": true,
+                            "pointSize": 26,
+                            "bypass": true,
+                            "css": "--background: radial-gradient(circle at 50% 100%, rgba(93, 137, 188, 0.28) 0 10%, rgba(93, 137, 188, 0) 10.5%), linear-gradient(rgba(38, 49, 62, 0.96), rgba(38, 49, 62, 0.96)), linear-gradient(90deg, transparent 8%, rgba(45, 57, 72, 0.98) 8% 92%, transparent 92%), linear-gradient(transparent 8%, rgba(43, 54, 69, 0.98) 8% 92%, transparent 92%); --pips-color: #5a86bb; --pips-opacity: 0; --color-text: #dfe7f2; border: 1px solid #557aa6; box-shadow: inset 0 0 0 1px #233041;",
+                            "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var index = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); var b = Math.floor((index - 1) / 8) + 1; var pi = (index - 1) % 8; var v = get('bank_xy_' + b) || []; if (Array.isArray(v[0])) { v[pi] = [value[0], value[1]]; } else { v[2 * pi] = value[0]; v[2 * pi + 1] = value[1]; } globals.noecho = true; set('bank_xy_' + b, v); globals.noecho = false; send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, value[0], value[1], globals.icstZ[index] || 0);"
+                          },
+                          {
+                            "type": "text",
+                            "id": "focus_xy_right",
+                            "label": false,
+                            "width": 26,
+                            "height": "100%",
+                            "bypass": true,
+                            "value": "Right",
+                            "css": "font-size: 92%; font-weight: 700; --color-text: #e7eadf; writing-mode: vertical-rl; text-align: center; background: #2c3747; border: 1px solid #35506f;"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "id": "focus_xy_back",
+                        "label": false,
+                        "width": "100%",
+                        "height": 22,
+                        "bypass": true,
+                        "value": "Back",
+                        "css": "font-size: 96%; font-weight: 700; --color-text: #e7eadf; text-align: center; background: #2c3747; border: 1px solid #35506f;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "panel",
+                    "id": "focus_faders",
+                    "width": "100%",
+                    "height": "28%",
+                    "layout": "horizontal",
+                    "innerSpacing": 8,
+                    "bypass": true,
+                    "widgets": [
+                      {
+                        "type": "panel",
+                        "id": "focus_z_wrap",
+                        "width": "33%",
+                        "height": "100%",
+                        "layout": "vertical",
+                        "innerSpacing": 2,
+                        "css": "padding: 2px;",
+                        "bypass": true,
+                        "widgets": [
+                          {
+                            "type": "text",
+                            "id": "focus_z_top",
+                            "label": false,
+                            "width": "100%",
+                            "height": 20,
+                            "bypass": true,
+                            "value": "Top",
+                            "css": "font-size: 92%; font-weight: 700; --color-text: #d94b5f; text-align: right;"
+                          },
+                          {
+                            "type": "panel",
+                            "id": "focus_z_slider_row",
+                            "width": "100%",
+                            "height": "100%",
+                            "layout": "horizontal",
+                            "innerSpacing": 0,
+                            "bypass": true,
+                            "widgets": [
+                              {
+                                "type": "panel",
+                                "id": "focus_z_spacer_left",
+                                "width": "30%",
+                                "height": "100%",
+                                "bypass": true
+                              },
+                              {
+                                "type": "fader",
+                                "id": "focus_z",
+                                "label": false,
+                                "width": 64,
+                                "height": "100%",
+                                "horizontal": false,
+                                "default": 0,
+                                "range": {
+                                  "min": -1,
+                                  "max": 1
+                                },
+                                "precision": 3,
+                                "snap": true,
+                                "input": true,
+                                "bypass": true,
+                                "css": "font-size: 115%; --color-widget: #4f86c6; --color-fill: #4f86c6; --color-knob: #9cc0ef;",
+                                "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var index = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); globals.icstZ[index] = value; var p = get('focus_xy') || [0, 0]; send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], value);"
+                              },
+                              {
+                                "type": "panel",
+                                "id": "focus_z_spacer_right",
+                                "width": "30%",
+                                "height": "100%",
+                                "bypass": true
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "id": "focus_z_bottom",
+                            "label": false,
+                            "width": "100%",
+                            "height": 20,
+                            "bypass": true,
+                            "value": "Bottom",
+                            "css": "font-size: 92%; font-weight: 700; --color-text: #d94b5f; text-align: left;"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "id": "z_val",
+                        "label": false,
+                        "width": "17%",
+                        "height": "100%",
+                        "bypass": true,
+                        "value": "JS{ return \"Z\\n\" + Number(@{focus_z}).toFixed(3); }",
+                        "css": "font-size: 118%; font-weight: 700; --color-text: #e8f0ff;"
+                      },
+                      {
+                        "type": "fader",
+                        "id": "focus_gain",
+                        "label": "Gain dB",
+                        "width": "33%",
+                        "height": "100%",
+                        "horizontal": true,
+                        "default": 0,
+                        "range": {
+                          "min": -60,
+                          "max": 12
+                        },
+                        "precision": 1,
+                        "snap": true,
+                        "input": true,
+                        "bypass": true,
+                        "css": "font-size: 115%;",
+                        "onValue": "if (globals.noecho) return; globals.icstGain = globals.icstGain || Array(65).fill(0); var index = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); globals.icstGain[index] = value; send('/icst/ambi/sourceindex/gain', {type: 'i', value: index}, Math.pow(10, value / 20));"
+                      },
+                      {
+                        "type": "text",
+                        "id": "gain_val",
+                        "label": false,
+                        "width": "17%",
+                        "height": "100%",
+                        "bypass": true,
+                        "value": "JS{ return \"Gain\\n\" + Number(@{focus_gain}).toFixed(1) + \" dB\"; }",
+                        "css": "font-size: 118%; font-weight: 700; --color-text: #e8f0ff;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "button",
+                    "id": "send_all",
+                    "mode": "push",
+                    "label": "^refresh  Alle 64 senden (Sync)",
+                    "width": "100%",
+                    "height": 70,
+                    "bypass": true,
+                    "css": "font-size: 120%; --color-widget: #4a90d9;",
+                    "onValue": "if (!value) return; globals.icstZ = globals.icstZ || Array(65).fill(0); globals.icstGain = globals.icstGain || Array(65).fill(0); for (var b = 1; b <= 8; b++) { var v = get('bank_xy_' + b) || []; var nested = Array.isArray(v[0]); for (var i = 0; i < 8; i++) { var index = (b - 1) * 8 + i + 1; var p; if (nested) { p = v[i] || [0, 0]; } else { p = [(typeof v[2*i] === 'number') ? v[2*i] : 0, (typeof v[2*i+1] === 'number') ? v[2*i+1] : 0]; } send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], globals.icstZ[index] || 0); send('/icst/ambi/sourceindex/gain', {type: 'i', value: index}, Math.pow(10, (globals.icstGain[index] || 0) / 20)); } }"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "tab_bank_1",
+        "label": "S1-8",
+        "bypass": true,
+        "widgets": [
+          {
+            "type": "multixy",
+            "id": "bank_xy_1",
+            "label": "Sources 1-8 - X/Y Draufsicht (oben = Front)",
+            "width": "100%",
+            "height": "100%",
+            "points": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "default": [
+              -0.049,
+              -0.999,
+              -0.147,
+              -0.989,
+              -0.243,
+              -0.97,
+              -0.337,
+              -0.942,
+              -0.428,
+              -0.904,
+              -0.514,
+              -0.858,
+              -0.596,
+              -0.803,
+              -0.672,
+              -0.741
+            ],
+            "rangeX": {
+              "min": -1,
+              "max": 1
+            },
+            "rangeY": {
+              "min": -1,
+              "max": 1
+            },
+            "pointSize": 32,
+            "snap": true,
+            "bypass": true,
+            "css": "--background: radial-gradient(circle at center, #1d2530 0%, #11161d 100%); --pips-color: #526173; --pips-opacity: 0.35; --color-text: #e8f0ff; font-size: 115%;",
+            "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var nested = Array.isArray(value[0]); for (var i = 0; i < 8; i++) { var index = 0 + i + 1; var p; if (nested) { p = value[i] || [0, 0]; } else { p = [(typeof value[2*i] === 'number') ? value[2*i] : 0, (typeof value[2*i+1] === 'number') ? value[2*i+1] : 0]; } send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], globals.icstZ[index] || 0); } var sel = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); if (sel > 0 && sel <= 8) { var si = (sel - 1) % 8; var sp; if (nested) { sp = value[si] || [0, 0]; } else { sp = [(typeof value[2*si] === 'number') ? value[2*si] : 0, (typeof value[2*si+1] === 'number') ? value[2*si+1] : 0]; } globals.noecho = true; set('focus_xy', sp); globals.noecho = false; }"
+          }
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "tab_bank_2",
+        "label": "S9-16",
+        "bypass": true,
+        "widgets": [
+          {
+            "type": "multixy",
+            "id": "bank_xy_2",
+            "label": "Sources 9-16 - X/Y Draufsicht (oben = Front)",
+            "width": "100%",
+            "height": "100%",
+            "points": [
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16"
+            ],
+            "default": [
+              -0.741,
+              -0.672,
+              -0.803,
+              -0.596,
+              -0.858,
+              -0.514,
+              -0.904,
+              -0.428,
+              -0.942,
+              -0.337,
+              -0.97,
+              -0.243,
+              -0.989,
+              -0.147,
+              -0.999,
+              -0.049
+            ],
+            "rangeX": {
+              "min": -1,
+              "max": 1
+            },
+            "rangeY": {
+              "min": -1,
+              "max": 1
+            },
+            "pointSize": 32,
+            "snap": true,
+            "bypass": true,
+            "css": "--background: radial-gradient(circle at center, #1d2530 0%, #11161d 100%); --pips-color: #526173; --pips-opacity: 0.35; --color-text: #e8f0ff; font-size: 115%;",
+            "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var nested = Array.isArray(value[0]); for (var i = 0; i < 8; i++) { var index = 8 + i + 1; var p; if (nested) { p = value[i] || [0, 0]; } else { p = [(typeof value[2*i] === 'number') ? value[2*i] : 0, (typeof value[2*i+1] === 'number') ? value[2*i+1] : 0]; } send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], globals.icstZ[index] || 0); } var sel = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); if (sel > 8 && sel <= 16) { var si = (sel - 1) % 8; var sp; if (nested) { sp = value[si] || [0, 0]; } else { sp = [(typeof value[2*si] === 'number') ? value[2*si] : 0, (typeof value[2*si+1] === 'number') ? value[2*si+1] : 0]; } globals.noecho = true; set('focus_xy', sp); globals.noecho = false; }"
+          }
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "tab_bank_3",
+        "label": "S17-24",
+        "bypass": true,
+        "widgets": [
+          {
+            "type": "multixy",
+            "id": "bank_xy_3",
+            "label": "Sources 17-24 - X/Y Draufsicht (oben = Front)",
+            "width": "100%",
+            "height": "100%",
+            "points": [
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24"
+            ],
+            "default": [
+              -0.999,
+              0.049,
+              -0.989,
+              0.147,
+              -0.97,
+              0.243,
+              -0.942,
+              0.337,
+              -0.904,
+              0.428,
+              -0.858,
+              0.514,
+              -0.803,
+              0.596,
+              -0.741,
+              0.672
+            ],
+            "rangeX": {
+              "min": -1,
+              "max": 1
+            },
+            "rangeY": {
+              "min": -1,
+              "max": 1
+            },
+            "pointSize": 32,
+            "snap": true,
+            "bypass": true,
+            "css": "--background: radial-gradient(circle at center, #1d2530 0%, #11161d 100%); --pips-color: #526173; --pips-opacity: 0.35; --color-text: #e8f0ff; font-size: 115%;",
+            "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var nested = Array.isArray(value[0]); for (var i = 0; i < 8; i++) { var index = 16 + i + 1; var p; if (nested) { p = value[i] || [0, 0]; } else { p = [(typeof value[2*i] === 'number') ? value[2*i] : 0, (typeof value[2*i+1] === 'number') ? value[2*i+1] : 0]; } send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], globals.icstZ[index] || 0); } var sel = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); if (sel > 16 && sel <= 24) { var si = (sel - 1) % 8; var sp; if (nested) { sp = value[si] || [0, 0]; } else { sp = [(typeof value[2*si] === 'number') ? value[2*si] : 0, (typeof value[2*si+1] === 'number') ? value[2*si+1] : 0]; } globals.noecho = true; set('focus_xy', sp); globals.noecho = false; }"
+          }
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "tab_bank_4",
+        "label": "S25-32",
+        "bypass": true,
+        "widgets": [
+          {
+            "type": "multixy",
+            "id": "bank_xy_4",
+            "label": "Sources 25-32 - X/Y Draufsicht (oben = Front)",
+            "width": "100%",
+            "height": "100%",
+            "points": [
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32"
+            ],
+            "default": [
+              -0.672,
+              0.741,
+              -0.596,
+              0.803,
+              -0.514,
+              0.858,
+              -0.428,
+              0.904,
+              -0.337,
+              0.942,
+              -0.243,
+              0.97,
+              -0.147,
+              0.989,
+              -0.049,
+              0.999
+            ],
+            "rangeX": {
+              "min": -1,
+              "max": 1
+            },
+            "rangeY": {
+              "min": -1,
+              "max": 1
+            },
+            "pointSize": 32,
+            "snap": true,
+            "bypass": true,
+            "css": "--background: radial-gradient(circle at center, #1d2530 0%, #11161d 100%); --pips-color: #526173; --pips-opacity: 0.35; --color-text: #e8f0ff; font-size: 115%;",
+            "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var nested = Array.isArray(value[0]); for (var i = 0; i < 8; i++) { var index = 24 + i + 1; var p; if (nested) { p = value[i] || [0, 0]; } else { p = [(typeof value[2*i] === 'number') ? value[2*i] : 0, (typeof value[2*i+1] === 'number') ? value[2*i+1] : 0]; } send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], globals.icstZ[index] || 0); } var sel = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); if (sel > 24 && sel <= 32) { var si = (sel - 1) % 8; var sp; if (nested) { sp = value[si] || [0, 0]; } else { sp = [(typeof value[2*si] === 'number') ? value[2*si] : 0, (typeof value[2*si+1] === 'number') ? value[2*si+1] : 0]; } globals.noecho = true; set('focus_xy', sp); globals.noecho = false; }"
+          }
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "tab_bank_5",
+        "label": "S33-40",
+        "bypass": true,
+        "widgets": [
+          {
+            "type": "multixy",
+            "id": "bank_xy_5",
+            "label": "Sources 33-40 - X/Y Draufsicht (oben = Front)",
+            "width": "100%",
+            "height": "100%",
+            "points": [
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40"
+            ],
+            "default": [
+              0.049,
+              0.999,
+              0.147,
+              0.989,
+              0.243,
+              0.97,
+              0.337,
+              0.942,
+              0.428,
+              0.904,
+              0.514,
+              0.858,
+              0.596,
+              0.803,
+              0.672,
+              0.741
+            ],
+            "rangeX": {
+              "min": -1,
+              "max": 1
+            },
+            "rangeY": {
+              "min": -1,
+              "max": 1
+            },
+            "pointSize": 32,
+            "snap": true,
+            "bypass": true,
+            "css": "--background: radial-gradient(circle at center, #1d2530 0%, #11161d 100%); --pips-color: #526173; --pips-opacity: 0.35; --color-text: #e8f0ff; font-size: 115%;",
+            "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var nested = Array.isArray(value[0]); for (var i = 0; i < 8; i++) { var index = 32 + i + 1; var p; if (nested) { p = value[i] || [0, 0]; } else { p = [(typeof value[2*i] === 'number') ? value[2*i] : 0, (typeof value[2*i+1] === 'number') ? value[2*i+1] : 0]; } send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], globals.icstZ[index] || 0); } var sel = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); if (sel > 32 && sel <= 40) { var si = (sel - 1) % 8; var sp; if (nested) { sp = value[si] || [0, 0]; } else { sp = [(typeof value[2*si] === 'number') ? value[2*si] : 0, (typeof value[2*si+1] === 'number') ? value[2*si+1] : 0]; } globals.noecho = true; set('focus_xy', sp); globals.noecho = false; }"
+          }
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "tab_bank_6",
+        "label": "S41-48",
+        "bypass": true,
+        "widgets": [
+          {
+            "type": "multixy",
+            "id": "bank_xy_6",
+            "label": "Sources 41-48 - X/Y Draufsicht (oben = Front)",
+            "width": "100%",
+            "height": "100%",
+            "points": [
+              "41",
+              "42",
+              "43",
+              "44",
+              "45",
+              "46",
+              "47",
+              "48"
+            ],
+            "default": [
+              0.741,
+              0.672,
+              0.803,
+              0.596,
+              0.858,
+              0.514,
+              0.904,
+              0.428,
+              0.942,
+              0.337,
+              0.97,
+              0.243,
+              0.989,
+              0.147,
+              0.999,
+              0.049
+            ],
+            "rangeX": {
+              "min": -1,
+              "max": 1
+            },
+            "rangeY": {
+              "min": -1,
+              "max": 1
+            },
+            "pointSize": 32,
+            "snap": true,
+            "bypass": true,
+            "css": "--background: radial-gradient(circle at center, #1d2530 0%, #11161d 100%); --pips-color: #526173; --pips-opacity: 0.35; --color-text: #e8f0ff; font-size: 115%;",
+            "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var nested = Array.isArray(value[0]); for (var i = 0; i < 8; i++) { var index = 40 + i + 1; var p; if (nested) { p = value[i] || [0, 0]; } else { p = [(typeof value[2*i] === 'number') ? value[2*i] : 0, (typeof value[2*i+1] === 'number') ? value[2*i+1] : 0]; } send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], globals.icstZ[index] || 0); } var sel = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); if (sel > 40 && sel <= 48) { var si = (sel - 1) % 8; var sp; if (nested) { sp = value[si] || [0, 0]; } else { sp = [(typeof value[2*si] === 'number') ? value[2*si] : 0, (typeof value[2*si+1] === 'number') ? value[2*si+1] : 0]; } globals.noecho = true; set('focus_xy', sp); globals.noecho = false; }"
+          }
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "tab_bank_7",
+        "label": "S49-56",
+        "bypass": true,
+        "widgets": [
+          {
+            "type": "multixy",
+            "id": "bank_xy_7",
+            "label": "Sources 49-56 - X/Y Draufsicht (oben = Front)",
+            "width": "100%",
+            "height": "100%",
+            "points": [
+              "49",
+              "50",
+              "51",
+              "52",
+              "53",
+              "54",
+              "55",
+              "56"
+            ],
+            "default": [
+              0.999,
+              -0.049,
+              0.989,
+              -0.147,
+              0.97,
+              -0.243,
+              0.942,
+              -0.337,
+              0.904,
+              -0.428,
+              0.858,
+              -0.514,
+              0.803,
+              -0.596,
+              0.741,
+              -0.672
+            ],
+            "rangeX": {
+              "min": -1,
+              "max": 1
+            },
+            "rangeY": {
+              "min": -1,
+              "max": 1
+            },
+            "pointSize": 32,
+            "snap": true,
+            "bypass": true,
+            "css": "--background: radial-gradient(circle at center, #1d2530 0%, #11161d 100%); --pips-color: #526173; --pips-opacity: 0.35; --color-text: #e8f0ff; font-size: 115%;",
+            "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var nested = Array.isArray(value[0]); for (var i = 0; i < 8; i++) { var index = 48 + i + 1; var p; if (nested) { p = value[i] || [0, 0]; } else { p = [(typeof value[2*i] === 'number') ? value[2*i] : 0, (typeof value[2*i+1] === 'number') ? value[2*i+1] : 0]; } send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], globals.icstZ[index] || 0); } var sel = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); if (sel > 48 && sel <= 56) { var si = (sel - 1) % 8; var sp; if (nested) { sp = value[si] || [0, 0]; } else { sp = [(typeof value[2*si] === 'number') ? value[2*si] : 0, (typeof value[2*si+1] === 'number') ? value[2*si+1] : 0]; } globals.noecho = true; set('focus_xy', sp); globals.noecho = false; }"
+          }
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "tab_bank_8",
+        "label": "S57-64",
+        "bypass": true,
+        "widgets": [
+          {
+            "type": "multixy",
+            "id": "bank_xy_8",
+            "label": "Sources 57-64 - X/Y Draufsicht (oben = Front)",
+            "width": "100%",
+            "height": "100%",
+            "points": [
+              "57",
+              "58",
+              "59",
+              "60",
+              "61",
+              "62",
+              "63",
+              "64"
+            ],
+            "default": [
+              0.672,
+              -0.741,
+              0.596,
+              -0.803,
+              0.514,
+              -0.858,
+              0.428,
+              -0.904,
+              0.337,
+              -0.942,
+              0.243,
+              -0.97,
+              0.147,
+              -0.989,
+              0.049,
+              -0.999
+            ],
+            "rangeX": {
+              "min": -1,
+              "max": 1
+            },
+            "rangeY": {
+              "min": -1,
+              "max": 1
+            },
+            "pointSize": 32,
+            "snap": true,
+            "bypass": true,
+            "css": "--background: radial-gradient(circle at center, #1d2530 0%, #11161d 100%); --pips-color: #526173; --pips-opacity: 0.35; --color-text: #e8f0ff; font-size: 115%;",
+            "onValue": "if (globals.noecho) return; globals.icstZ = globals.icstZ || Array(65).fill(0); var nested = Array.isArray(value[0]); for (var i = 0; i < 8; i++) { var index = 56 + i + 1; var p; if (nested) { p = value[i] || [0, 0]; } else { p = [(typeof value[2*i] === 'number') ? value[2*i] : 0, (typeof value[2*i+1] === 'number') ? value[2*i+1] : 0]; } send('/icst/ambi/sourceindex/xyz', {type: 'i', value: index}, p[0], p[1], globals.icstZ[index] || 0); } var sel = Math.max(1, Math.min(64, parseInt(get('source_index'), 10) || 1)); if (sel > 56 && sel <= 64) { var si = (sel - 1) % 8; var sp; if (nested) { sp = value[si] || [0, 0]; } else { sp = [(typeof value[2*si] === 'number') ? value[2*si] : 0, (typeof value[2*si+1] === 'number') ? value[2*si+1] : 0]; } globals.noecho = true; set('focus_xy', sp); globals.noecho = false; }"
+          }
+        ]
+      }
+    ]
+  }
+}
