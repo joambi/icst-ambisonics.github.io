@@ -21,6 +21,26 @@ Dieses Instrument entstand in Zusammenarbeit mit und inspiriert durch Eli Stine,
 
 Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaural gerendert.
 
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/oPud9-HPdcM?cc_load_policy=1&cc_lang_pref=en&rel=0"
+    title="ICST Kristall Motion Map Video-Tutorial"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+  ></iframe>
+</div>
+
+**Kapitel**
+
+- [00:00 Einleitung](https://www.youtube.com/watch?v=oPud9-HPdcM)
+- [02:41 Installation](https://www.youtube.com/watch?v=oPud9-HPdcM&t=161s)
+- [11:24 Plug-in-Parameter](https://www.youtube.com/watch?v=oPud9-HPdcM&t=684s)
+- [24:57 Kristallstrukturen importieren](https://www.youtube.com/watch?v=oPud9-HPdcM&t=1497s)
+- [27:37 Automation in REAPER schreiben](https://www.youtube.com/watch?v=oPud9-HPdcM&t=1657s)
+
 {{< notice warning >}}
 🎧 **Mit Kopfhörern hören.** Diese Aufnahme ist binaural — über Lautsprecher entfaltet sich der Raumklang nicht.
 {{< /notice >}}
