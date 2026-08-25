@@ -1,13 +1,14 @@
 ---
 title: ICST Animator
-date: 2025-01-01T00:00:00
+date: 2026-08-25T00:00:00
 weight: 85
-draft: true
+draft: false
+toc: true
 type: docs
 description: "Guide to the ICST Animator for timeline-based spatial movement and transformation of source groups in Ambisonics sessions."
 ---
 
-Level: Intermediate | Audience: Composer, technician, student, interactive-media user.
+Level: Intermediate | Audience: Composer, technician, student, interactive-media user. | **Version: 3.2.0.6 (experimental)**
 
 Use this page when you want to move, rotate, or transform source groups automatically over time inside the Ambisonics field.
 
@@ -15,7 +16,11 @@ Before using the Animator, make sure your sources are organized into groups insi
 
 ![AmbiEncoder Multi with several source groups set up — the reference scene used in the examples below](AT-BAS-01-Referenzszene.png)
 
-> **Tested with** REAPER v7.74 / macOS arm64.
+> **Tested with** REAPER v7.74 / v7.79, macOS arm64 · Animator v3.2.0.6.
+
+{{< notice warning >}}
+The Animator is an **experimental feature**. An intro overlay and a permanent badge in the window remind you that animations created with this version are not guaranteed to load in later versions — archive exported scenes together with the plugin version you used. The former dialog-based Animator was removed in v3.2.0.5; old-Animator configurations stored in existing projects are no longer read.
+{{< /notice >}}
 
 ## When to use the Animator
 
@@ -39,13 +44,13 @@ Both clip types can run simultaneously on the same group.
 
 The Animator is **coupled to the DAW transport**: pressing Play in the DAW starts playback of all clips; pressing Pause or Stop halts them.
 
-> **Note:** The Animator window must remain open during playback. Closing it stops all running clips.
+> **Note:** The Animator window can be closed during playback — the animation keeps running. Playback is controlled by the Animator ON/OFF switch and the DAW transport (Play/Pause; loops are followed).
 
 ## Opening the Animator
 
 1. Open the **AmbiEncoder Multi** plugin interface.
 2. Click the green **Animator** button in the top-right corner.
-3. The Animator window opens as a separate, resizable panel.
+3. The Animator window opens as a separate panel (resizable in width).
 
 ## User interface
 
@@ -72,7 +77,7 @@ The Animator window shows one row per group, each with two tracks:
 
 ### Menus
 
-**File** manages timelines and scenes: add or remove group timelines, export or import per-group scene files.
+**File** manages timelines and scenes: add or remove group timelines (Add Timeline, ⌘N), import scenes through a per-group import dialog, and export single groups or all groups at once.
 
 **Edit** provides clipboard operations (copy, paste, cut, duplicate) and clip insertion commands. All commands require a clip to be selected.
 
@@ -86,7 +91,7 @@ A movement clip defines how a group travels from one position to another during 
 
 ![A movement clip placed on the Movement track of Group 1](AT-MOV-N01-Movement-Clip-anlegen.png)
 
-Click the clip icon to open the **Edit Movement Clip** dialog, where you set the movement type, start and target positions, and duration.
+**Double-click** a clip to open the **Edit Movement Clip** dialog, where you set the movement type, start and target positions, and duration. A single click selects a clip; repeated clicks at the same spot step through overlapping clips one at a time.
 
 ![Edit Movement Clip dialog showing Clip Properties and Movement Properties](AT-MOV-N02-Edit-Movement-Clip.png)
 
@@ -137,7 +142,7 @@ Click the clip icon to open the **Edit Movement Clip** dialog, where you set the
 
 - **Duration (ms)** — clip length; determines movement speed. Minimum: 10 ms.
 - **Start / Target** — positions can be entered manually or captured from the current group position using the snapshot button.
-- **Count** — number of full revolutions (Circle and Spiral only). Count 1.0 = one full revolution; 1.2 = one revolution plus an extra 72°.
+- **Count** — number of full revolutions (Circle and Spiral only). Count 1.0 = one full revolution; 1.2 = one revolution plus an extra 72°. A negative Count reverses the direction.
 - **Radius change** — radial drift per revolution (Spiral only; 0.0 gives a circular path).
 
 **Circle with Count 1.2** — dialog showing Count set to 1.2:
@@ -194,20 +199,21 @@ Useful combinations:
 
 ## Saving and loading scenes
 
-Each group has its own timeline. Clips can be copied between group timelines using **Edit → Copy / Paste**.
+Each group has its own timeline. Clips can be copied between group timelines using **Edit → Copy / Paste**. All timelines are also stored in the plugin state, so saving the DAW project preserves the animation; scene files are an additional backup and the way to exchange animations between projects.
 
-- **File → Export Scene → \<Group\>** saves one group's timeline to a file.
-- **File → Import Scene → \<Group\>** loads a saved scene into a group's timeline.
+- **File → Export → \<Group\>** saves one group's timeline to an XML file.
+- **File → Export → All Groups** saves all timelines together in one file — the recommended way to back up a session.
+- **File → Import** opens a file chooser and then an import dialog with one row per group found in the file: choose **Ignore**, **Replace** or **Insert at Cursor** for each, targeting an existing group or **New Group**. *Insert at Cursor* shifts the imported clips so the earliest one starts at the cursor position (available when a cursor is set). Older single-group exports load the same way.
 
-A single export covers one group. To back up a full session, export each group individually.
-
-## Limitations (v3.2.0.4)
+## Limitations (v3.2.0.6)
 
 - Group names are not synchronized between AmbiEncoder and Animator. The Animator uses generic names (Group 1, Group 2, …).
 - Renaming a group in AmbiEncoder does not update the Animator label.
 - Reordering groups in AmbiEncoder does not reorder Animator tracks.
 - Deleting a group in AmbiEncoder marks its Animator track as **(No Source)**. Use **File → Remove Timeline → Remove all invalid timelines** to clean up.
-- The Animator is not sample-accurate; updates are driven by a UI timer.
+- Disabling **Use Defined Start Position** in a movement clip currently has no effect — for seamless transitions, set clip 2's start position to clip 1's target manually.
+- **Preferences** and **Undo/Redo** are not implemented yet.
+- Playback follows the DAW transport (including loops) but is not sample-accurate (updates per audio block) and not tempo-synchronized (clip times in milliseconds).
 - Animation parameters are not exposed as standard DAW automation.
 
 ## Common mistakes
@@ -221,4 +227,4 @@ A single export covers one group. To back up a full session, export each group i
 
 - [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
 - [OSC](/icst-ambisonics-plugins/13_osc/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)

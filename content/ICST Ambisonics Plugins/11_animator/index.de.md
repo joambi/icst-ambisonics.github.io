@@ -1,13 +1,14 @@
 ---
 title: ICST Animator
-date: 2025-01-01T00:00:00
+date: 2026-08-25T00:00:00
 weight: 85
-draft: true
+draft: false
+toc: true
 type: docs
 description: "Anleitung zum ICST Animator für timeline-basierte räumliche Bewegung und Transformation von Quellengruppen in Ambisonics-Produktionen."
 ---
 
-Niveau: Fortgeschritten | Zielgruppe: Komponist, Toningenieur, Student, Interactive-Media-Nutzer.
+Niveau: Fortgeschritten | Zielgruppe: Komponist, Toningenieur, Student, Interactive-Media-Nutzer. | **Version: 3.2.0.6 (experimentell)**
 
 Diese Seite beschreibt, wie du Quellengruppen im Ambisonics-Feld automatisch bewegen, rotieren oder transformieren kannst.
 
@@ -15,7 +16,11 @@ Vor der Arbeit mit dem Animator müssen die Quellen im **AmbiEncoder Multi** zu 
 
 ![AmbiEncoder Multi mit mehreren eingerichteten Quellengruppen — die Referenzszene der folgenden Beispiele](AT-BAS-01-Referenzszene.png)
 
-> **Getestet mit** REAPER v7.74 / macOS arm64.
+> **Getestet mit** REAPER v7.74 / v7.79, macOS arm64 · Animator v3.2.0.6.
+
+{{< notice warning >}}
+Der Animator ist eine **experimentelle Funktion**. Ein Intro-Overlay und ein permanentes Badge im Fenster erinnern daran, dass mit dieser Version erstellte Animationen in späteren Versionen nicht garantiert ladbar bleiben — exportierte Szenen zusammen mit der verwendeten Plugin-Version archivieren. Der frühere, dialogbasierte Animator wurde mit v3.2.0.5 vollständig entfernt; in bestehenden Projekten gespeicherte Konfigurationen des alten Animators werden nicht mehr gelesen.
+{{< /notice >}}
 
 ## Wann den Animator verwenden
 
@@ -39,13 +44,13 @@ Beide Clip-Typen können gleichzeitig auf dieselbe Gruppe wirken.
 
 Der Animator ist an den **DAW-Transport gekoppelt**: Play in der DAW startet alle Clips; Pause oder Stop hält sie an.
 
-> **Hinweis:** Das Animator-Fenster muss während der Wiedergabe geöffnet bleiben. Das Schließen stoppt alle laufenden Clips.
+> **Hinweis:** Das Animator-Fenster kann während der Wiedergabe geschlossen werden — die Animation läuft weiter. Gesteuert wird die Wiedergabe über den Animator-EIN/AUS-Schalter und den DAW-Transport (Play/Pause; Loops werden befolgt).
 
 ## Animator öffnen
 
 1. Die Benutzeroberfläche des **AmbiEncoder Multi** öffnen.
 2. Den grünen **Animator**-Button oben rechts anklicken.
-3. Das Animator-Fenster öffnet sich als separates, in der Breite veränderbares Panel.
+3. Das Animator-Fenster öffnet sich als separates Panel (in der Breite veränderbar).
 
 ## Benutzeroberfläche
 
@@ -72,7 +77,7 @@ Das Animator-Fenster zeigt für jede Gruppe eine Zeile mit zwei Spuren:
 
 ### Menüs
 
-**File** verwaltet Timelines und Szenen: Gruppenspuren hinzufügen oder entfernen, Szenen pro Gruppe exportieren oder importieren.
+**File** verwaltet Timelines und Szenen: Gruppenspuren hinzufügen oder entfernen (Add Timeline, ⌘N), Szenen über einen Import-Dialog mit Einzelentscheidung pro Gruppe importieren sowie einzelne Gruppen oder alle Gruppen auf einmal exportieren.
 
 **Edit** bietet Zwischenablage-Operationen (Kopieren, Einfügen, Ausschneiden, Duplizieren) sowie Clip-Einfügebefehle. Alle Befehle erfordern einen ausgewählten Clip.
 
@@ -86,7 +91,7 @@ Ein Movement-Clip legt fest, wie eine Gruppe während seiner Dauer von einer Pos
 
 ![Movement-Clip auf der Movement-Spur von Gruppe 1](AT-MOV-N01-Movement-Clip-anlegen.png)
 
-Klick auf das Clip-Symbol öffnet den Dialog **Edit Movement Clip**, in dem Movement-Typ, Start- und Zielposition sowie die Dauer eingestellt werden.
+**Doppelklick** auf einen Clip öffnet den Dialog **Edit Movement Clip**, in dem Movement-Typ, Start- und Zielposition sowie die Dauer eingestellt werden. Ein Einfachklick selektiert einen Clip; wiederholtes Klicken an derselben Stelle steppt der Reihe nach durch übereinanderliegende Clips.
 
 ![Edit-Movement-Clip-Dialog mit Clip Properties und Movement Properties](AT-MOV-N02-Edit-Movement-Clip.png)
 
@@ -137,7 +142,7 @@ Klick auf das Clip-Symbol öffnet den Dialog **Edit Movement Clip**, in dem Move
 
 - **Duration (ms)** – Clip-Länge; bestimmt die Bewegungsgeschwindigkeit. Minimalwert: 10 ms.
 - **Start / Target** – Positionen können manuell eingegeben oder durch den Snapshot-Button von der aktuellen Gruppenposition übernommen werden.
-- **Count** – Anzahl der vollständigen Umdrehungen (nur Circle und Spiral). Count 1.0 = eine volle Umdrehung; 1.2 = eine Umdrehung plus 72°.
+- **Count** – Anzahl der vollständigen Umdrehungen (nur Circle und Spiral). Count 1.0 = eine volle Umdrehung; 1.2 = eine Umdrehung plus 72°. Ein negativer Count kehrt die Drehrichtung um.
 - **Radius change** – Radiusdrift pro Umdrehung (nur Spiral; 0.0 ergibt eine Kreisbahn).
 
 **Circle mit Count 1.2** – Dialog mit Count auf 1.2:
@@ -154,7 +159,7 @@ Klick auf das Clip-Symbol öffnet den Dialog **Edit Movement Clip**, in dem Move
 
 ### Clip-Übergänge
 
-Folgen zwei Movement-Clips auf derselben Spur aufeinander, springt die Gruppe beim Start des zweiten Clips zur dessen Startposition. Für einen nahtlosen Übergang die Startposition von Clip 2 auf die Zielposition von Clip 1 setzen.
+Folgen zwei Movement-Clips auf derselben Spur aufeinander, springt die Gruppe beim Start des zweiten Clips zu dessen Startposition. Für einen nahtlosen Übergang die Startposition von Clip 2 auf die Zielposition von Clip 1 setzen.
 
 ## Action-Clips
 
@@ -194,20 +199,21 @@ Nützliche Kombinationen:
 
 ## Szenen speichern und laden
 
-Jede Gruppe hat eine eigene Timeline. Clips können per **Edit → Kopieren / Einfügen** zwischen Gruppenspuren übertragen werden.
+Jede Gruppe hat eine eigene Timeline. Clips können per **Edit → Kopieren / Einfügen** zwischen Gruppenspuren übertragen werden. Alle Timelines werden zusätzlich im Plugin-State gespeichert — das Speichern des DAW-Projekts sichert die Animation; Szenen-Dateien dienen als zusätzliches Backup und zum Austausch zwischen Projekten.
 
-- **File → Export Scene → \<Gruppe\>** speichert die Timeline einer Gruppe in eine Datei.
-- **File → Import Scene → \<Gruppe\>** lädt eine gespeicherte Szene in die Timeline der gewählten Gruppe.
+- **File → Export → \<Gruppe\>** speichert die Timeline einer Gruppe in eine XML-Datei.
+- **File → Export → All Groups** speichert alle Timelines zusammen in einer Datei — der empfohlene Weg für ein Session-Backup.
+- **File → Import** öffnet die Dateiauswahl und danach einen Import-Dialog mit einer Zeile pro Gruppe in der Datei: für jede **Ignore**, **Replace** oder **Insert at Cursor** wählen, mit einer bestehenden Gruppe oder **New Group** als Ziel. *Insert at Cursor* verschiebt die importierten Clips so, dass der früheste an der Cursor-Position beginnt (verfügbar, wenn ein Cursor gesetzt ist). Ältere Einzelgruppen-Exporte laden auf demselben Weg.
 
-Ein Export erfasst immer genau eine Gruppe. Für ein vollständiges Backup alle Gruppen einzeln exportieren.
-
-## Einschränkungen (v3.2.0.4)
+## Einschränkungen (v3.2.0.6)
 
 - Gruppennamen werden zwischen AmbiEncoder und Animator nicht synchronisiert. Der Animator verwendet generische Namen (Group 1, Group 2, …).
 - Umbenennen einer Gruppe im AmbiEncoder aktualisiert die Animator-Beschriftung nicht.
 - Umsortieren von Gruppen im AmbiEncoder hat keine Auswirkung auf die Spurenreihenfolge im Animator.
 - Das Löschen einer Gruppe im AmbiEncoder markiert die zugehörige Animator-Spur als **(No Source)**. Über **File → Remove Timeline → Remove all invalid timelines** können solche Spuren bereinigt werden.
-- Der Animator ist nicht samplegenau; die Aktualisierung erfolgt über einen UI-Timer.
+- Das Deaktivieren von **Use Defined Start Position** in einem Movement-Clip hat derzeit keine Wirkung — für nahtlose Übergänge die Startposition von Clip 2 manuell auf die Zielposition von Clip 1 setzen.
+- **Preferences** sowie **Undo/Redo** sind noch nicht implementiert.
+- Die Wiedergabe folgt dem DAW-Transport (inklusive Loops), ist aber nicht samplegenau (Verarbeitung pro Audio-Block) und nicht temposynchron (Clip-Zeiten in Millisekunden).
 - Animator-Parameter sind nicht als reguläre DAW-Automationsparameter verfügbar.
 
 ## Häufige Fehler
@@ -221,4 +227,4 @@ Ein Export erfasst immer genau eine Gruppe. Für ein vollständiges Backup alle 
 
 - [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
 - [OSC](/icst-ambisonics-plugins/13_osc/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
