@@ -16,7 +16,7 @@ _Freier Eintritt_
 
 ---
 
-**#20 ascolta** ist zwei längeren Stücken von **Pierre Alexandre Tremblay** gewidmet, der vom 28. April bis 21. August 2026 als Gastkünstler im ICST-Residenzprogramm war und in mehreren Studiosessions an seinem neuen 3D-Audio-Stück gearbeitet hat. Zusammen mit einem früheren Werk stellt er beide Stücke persönlich vor und spricht über sie.
+**#20 ascolta** ist zwei längeren Stücken von **Pierre Alexandre Tremblay** gewidmet, der vom 28. April bis 21. August 2026 als Gastkünstler im ICST-Residenzprogramm war und in mehreren Studiosessions an seinem neuen 3D-Audio-Stück gearbeitet hat. Er stellt es zusammen mit einem früheren Werk persönlich vor und spricht über beide.
 
 ---
 
