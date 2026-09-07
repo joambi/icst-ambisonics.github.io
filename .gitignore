@@ -19,6 +19,9 @@ content/**/*.png
 content/**/*.gif
 content/**/*.jpg
 content/**/*.jpeg
+# Ausnahme: ascolta-Beitragsbilder werden mit dem Beitrag versioniert
+!content/Blog/ascolta/**/*.png
+!content/Blog/ascolta/**/*.jpg
 
 # Lokale Arbeitsordner (Quelldateien, nicht für Deployment)
 static/Kristall Map Bilder/
