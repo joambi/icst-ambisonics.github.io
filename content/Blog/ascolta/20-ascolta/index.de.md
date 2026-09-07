@@ -1,7 +1,7 @@
 ---
 title: "#20 ascolta — Pierre Alexandre Tremblay"
 description: "ICST-Gastkünstler Pierre Alexandre Tremblay präsentiert zwei längere Ambisonics-Werke, darunter sein neues 3D-Audio-Stück Lugano (2026)."
-date: 2026-09-07T12:00:00
+date: 2026-09-07T08:00:00
 weight: 20
 tags: ["ascolta", "akusmatisch", "ambisonics", "residenz"]
 ---
