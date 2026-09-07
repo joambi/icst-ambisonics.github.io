@@ -34,7 +34,7 @@ group: "Listening"
     <span class="hub-upcoming__eyebrow">Upcoming · #20</span>
     <div class="hub-upcoming__date">29 October 2026</div>
     <div class="hub-upcoming__meta">18:00 · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
-    <div class="hub-upcoming__text">Concert · Free admission</div>
+    <div class="hub-upcoming__text"><a href="/blog/ascolta/20-ascolta/">Pierre Alexandre Tremblay — Espaces_negatifs · Lugano (2026)</a> · Free admission</div>
   </div>
   <div class="hub-upcoming">
     <span class="hub-upcoming__eyebrow">Upcoming · #21</span>
@@ -49,7 +49,7 @@ group: "Listening"
 ## Start here
 
 <div class="hub-start">
-  <a href="/blog/ascolta/19-ascolta/">
+  <a href="/blog/ascolta/20-ascolta/">
     <span class="hub-card__title">Most recent session</span>
     <span class="hub-card__text">Go straight to the latest ascolta programme and documentation.</span>
   </a>
@@ -70,6 +70,14 @@ group: "Listening"
 <div class="season-section">
   <div class="season-label">2026</div>
   <div class="session-list">
+    <a class="session-row" href="/blog/ascolta/20-ascolta/">
+      <span class="session-row__num">#20</span>
+      <span class="session-row__content">
+        <span class="session-row__subtitle">Pierre Alexandre Tremblay — Espaces_negatifs · Lugano (2026)</span>
+        <span class="session-row__date">29 Oct 2026</span>
+        <span class="session-row__tag">Residency · Portrait</span>
+      </span>
+    </a>
     <a class="session-row" href="/blog/ascolta/19-ascolta/">
       <span class="session-row__num">#19</span>
       <span class="session-row__content">
