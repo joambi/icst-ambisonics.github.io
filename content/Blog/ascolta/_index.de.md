@@ -34,7 +34,7 @@ languageCode: de
     <span class="hub-upcoming__eyebrow">Demnächst · #20</span>
     <div class="hub-upcoming__date">29. Oktober 2026</div>
     <div class="hub-upcoming__meta">18:00 Uhr · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
-    <div class="hub-upcoming__text"><a href="/de/blog/ascolta/20-ascolta/">Pierre Alexandre Tremblay — Espaces_negatifs · Lugano (2026)</a> · Eintritt frei</div>
+    <div class="hub-upcoming__text"><a href="/de/blog/ascolta/20-ascolta/">Pierre Alexandre Tremblay — bucolic and broken · Espaces négatifs · Lugano (2026)</a> · Eintritt frei</div>
   </div>
   <div class="hub-upcoming">
     <span class="hub-upcoming__eyebrow">Demnächst · #21</span>
@@ -73,7 +73,7 @@ languageCode: de
     <a class="session-row" href="/de/blog/ascolta/20-ascolta/">
       <span class="session-row__num">#20</span>
       <span class="session-row__content">
-        <span class="session-row__subtitle">Pierre Alexandre Tremblay — Espaces_negatifs · Lugano (2026)</span>
+        <span class="session-row__subtitle">Pierre Alexandre Tremblay — bucolic and broken · Espaces négatifs · Lugano (2026)</span>
         <span class="session-row__date">29 Okt 2026</span>
         <span class="session-row__tag">Residenz · Porträt</span>
       </span>
