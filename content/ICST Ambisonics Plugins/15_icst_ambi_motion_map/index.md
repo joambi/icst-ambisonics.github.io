@@ -4,19 +4,52 @@ date: 2026-06-28T00:00:00
 weight: 87
 draft: false
 toc: true
+hide_default_title: true
 translationKey: motion-map-user-guide
 docs_nav_id: motion-mapping
 docs_nav_label: Motion Mapping
 description: "Create and automate spatial source trajectories in REAPER with the ICST AmbiEncoder64 Motion Map, including motion shapes, coordinates, timing, presets, automation writing, and live OSC preview."
 ---
 
-Level: Beginner–Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: v2.1**
+<div class="motion-map-landing">
+  <section class="motion-map-hero">
+    <div class="motion-map-hero__copy">
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.2</p>
+      <h1><strong>Source Motion Mapping</strong><span>for Spatial Composition in REAPER</span></h1>
+      <p class="motion-map-hero__lead">Guide, setup, and creative techniques for positioning, animating, and automating up to 64 sound sources in three-dimensional space.</p>
+      <p class="motion-map-hero__meta">Beginner–Intermediate · Composer · Sound designer · Spatial-audio technician</p>
+      <div class="motion-map-actions">
+        <a class="motion-map-action motion-map-action--primary" href="/downloads/ICST_Ambi_Motion_Map_Bundle.zip"><i class="fas fa-download" aria-hidden="true"></i> Download Motion Map</a>
+        <a class="motion-map-action" href="#1-requirements"><i class="fas fa-book-open" aria-hidden="true"></i> Read the Guide</a>
+        <a class="motion-map-action" href="/icst-ambisonics-plugins/00_new/"><i class="fas fa-star" aria-hidden="true"></i> What’s New</a>
+      </div>
+    </div>
+    <figure class="motion-map-hero__media">
+      <img src="/images/icst-ambi-motion-map-v2.2.png" alt="AmbiEncoder64 Motion Map v2.2 interface with source grid, trajectory preview, presets, OSC preview, and automation controls">
+      <figcaption>64 sources · 3D motion · REAPER automation · OSC preview</figcaption>
+    </figure>
+  </section>
 
-The Motion Map GUI generates algorithmic spatial movement for up to 64 AmbiEncoder sources and writes it as REAPER automation in one click. This is the main guide to the Motion Mapping workflow, from first launch to advanced techniques.
+  <section class="motion-map-overview" aria-labelledby="about-motion-mapping">
+    <h2 id="about-motion-mapping">About Motion Mapping</h2>
+    <p>The ICST motion mapping tools let you position, animate, and control multiple sound sources in 3D space. They support compositional workflows as well as live performance and integrate directly with REAPER automation and OSC.</p>
+    <div class="motion-map-feature-grid">
+      <div class="motion-map-feature"><i class="fas fa-project-diagram" aria-hidden="true"></i><div><h3>Map &amp; Animate</h3><p>Position and move up to 64 sources with precise XYZ control.</p></div></div>
+      <div class="motion-map-feature"><i class="fas fa-sliders-h" aria-hidden="true"></i><div><h3>Flexible Control</h3><p>Combine REAPER automation, OSC preview, presets, and timing curves.</p></div></div>
+      <div class="motion-map-feature"><i class="fas fa-wave-square" aria-hidden="true"></i><div><h3>Creative Workflows</h3><p>Move from fixed composition to algorithmic trajectories and live performance.</p></div></div>
+    </div>
+  </section>
 
-> **New to Motion Mapping?** Start with [Setup & Workflow](/icst-ambisonics-plugins/16_motion_map_setup/) to install the scripts, configure optional live OSC preview, and prepare your first REAPER session.
-
-> **Download:** [ICST Ambi Motion Map Bundle](/downloads/ICST_Ambi_Motion_Map_Bundle.zip) (GUI script + automation writer, both required)
+  <section class="motion-map-section-list" aria-labelledby="in-this-section">
+    <h2 id="in-this-section">In This Section</h2>
+    <div class="motion-map-section-list__items">
+      <a href="#1-requirements"><span class="motion-map-section-list__number">1</span><span><strong>Motion Map — User Guide</strong><small>Interface, motion shapes, spatial parameters, presets, and automation.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="/icst-ambisonics-plugins/16_motion_map_setup/"><span class="motion-map-section-list__number">2</span><span><strong>Setup &amp; Workflow</strong><small>Installation, configuration, and integration with REAPER and OSC.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="#creative-techniques"><span class="motion-map-section-list__number">3</span><span><strong>Creative Techniques</strong><small>Practical combinations for trajectories, timing, quantization, and performance.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+    </div>
+    <p class="motion-map-related">For session-wide routing, monitoring, and export recommendations, see the separate <a href="/icst-ambisonics-plugins/17_best_practices/">Ambisonics Best Practices</a>.</p>
+  </section>
+</div>
 
 ---
 
@@ -68,8 +101,6 @@ If you see *"Bitte zuerst eine Loop/Time Selection setzen"* (message appears in 
 ---
 
 ## 4. The Interface at a Glance
-
-![ICST Ambi Motion Map GUI v2.1 — labelled overview](/images/ICST%20Motion%20Map%202.1.png)
 
 ![ICST Ambi Motion Map in action](/images/ICST%20Motion%20Map%20Gif.gif)
 
@@ -344,6 +375,8 @@ The preview canvas shows all active sources simultaneously. The horizontal axis 
 Click a source label in the grid to select it and see its coordinates in the preview.
 
 ---
+
+<span id="creative-techniques"></span>
 
 ## 15. Good Practices
 

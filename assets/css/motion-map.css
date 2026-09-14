@@ -1,0 +1,306 @@
+.motion-map-landing {
+  margin-bottom: 2.5rem;
+}
+
+.motion-map-hero {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 0 0 2rem;
+  border: 1px solid;
+  border-radius: 16px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 92% 10%, rgba(74, 158, 255, 0.18), transparent 42%),
+    linear-gradient(135deg, rgba(96, 134, 180, 0.13), rgba(255, 255, 255, 0.015));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.025);
+}
+
+.theme--light .motion-map-hero,
+.theme--light .motion-map-feature,
+.theme--light .motion-map-section-list__items {
+  border-color: #eeeeee;
+}
+
+.theme--dark .motion-map-hero,
+.theme--dark .motion-map-feature,
+.theme--dark .motion-map-section-list__items {
+  border-color: #464646;
+}
+
+.motion-map-hero__eyebrow {
+  margin: 0 0 0.7rem;
+  color: #6086b4;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.motion-map-hero h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 4.2vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.motion-map-hero h1 strong,
+.motion-map-hero h1 span {
+  display: block;
+}
+
+.motion-map-hero h1 strong {
+  font-weight: 800;
+}
+
+.motion-map-hero h1 span {
+  margin-top: 0.25rem;
+  color: #6086b4;
+  font-weight: 400;
+}
+
+.motion-map-hero__lead {
+  margin: 1rem 0 0;
+  font-size: 1.4rem;
+  line-height: 1.65;
+}
+
+.motion-map-hero__meta {
+  margin: 0.7rem 0 0;
+  color: #9f9f9f;
+  font-size: 1.08rem;
+}
+
+.motion-map-hero__media {
+  min-width: 0;
+  margin: 0;
+}
+
+.post__content .motion-map-hero__media img {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 1px solid;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+.theme--light .post__content .motion-map-hero__media img {
+  border-color: #eeeeee;
+}
+
+.theme--dark .post__content .motion-map-hero__media img {
+  border-color: #464646;
+}
+
+.motion-map-hero__media figcaption {
+  margin-top: 0.65rem;
+  color: #9f9f9f;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.motion-map-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.post__content a.motion-map-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid;
+  border-radius: 7px;
+  font-size: 1.18rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.theme--light .post__content a.motion-map-action {
+  color: #464646;
+  border-color: #d5d5d5;
+  background-color: #ffffff;
+}
+
+.theme--dark .post__content a.motion-map-action {
+  color: #eeeeee;
+  border-color: #464646;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.post__content a.motion-map-action:hover {
+  transform: translateY(-1px);
+  border-color: #6086b4;
+}
+
+.theme--light .post__content a.motion-map-action--primary,
+.theme--dark .post__content a.motion-map-action--primary {
+  color: #ffffff;
+  border-color: #4a9eff;
+  background: linear-gradient(135deg, #4a9eff, #6086b4);
+  box-shadow: 0 6px 18px rgba(74, 158, 255, 0.24);
+}
+
+.motion-map-overview,
+.motion-map-section-list {
+  margin: 0 0 2rem;
+}
+
+.motion-map-overview > h2,
+.motion-map-section-list > h2 {
+  margin-bottom: 0.65rem;
+}
+
+.motion-map-overview > p,
+.motion-map-section-list > p {
+  max-width: 76rem;
+}
+
+.motion-map-feature-grid {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.1rem;
+}
+
+.motion-map-feature {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  padding: 1.1rem;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.theme--light .motion-map-feature,
+.theme--light .motion-map-section-list__items a {
+  background-color: #ffffff;
+}
+
+.theme--dark .motion-map-feature,
+.theme--dark .motion-map-section-list__items a {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.motion-map-feature > i {
+  margin-top: 0.2rem;
+  color: #6086b4;
+  font-size: 1.7rem;
+}
+
+.motion-map-feature h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.38rem;
+}
+
+.motion-map-feature p {
+  margin: 0;
+  color: #9f9f9f;
+  font-size: 1.12rem;
+  line-height: 1.55;
+}
+
+.motion-map-section-list__items {
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.motion-map-section-list__items a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.9rem 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.theme--light .motion-map-section-list__items a {
+  color: #464646;
+}
+
+.theme--dark .motion-map-section-list__items a {
+  color: #eeeeee;
+}
+
+.theme--light .motion-map-section-list__items a:not(:last-child) {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.theme--dark .motion-map-section-list__items a:not(:last-child) {
+  border-bottom: 1px solid #464646;
+}
+
+.theme--light .motion-map-section-list__items a:hover {
+  background-color: #eeeeee;
+}
+
+.theme--dark .motion-map-section-list__items a:hover {
+  background-color: #464646;
+}
+
+.motion-map-section-list__items strong,
+.motion-map-section-list__items small {
+  display: block;
+}
+
+.motion-map-section-list__items strong {
+  font-size: 1.25rem;
+}
+
+.motion-map-section-list__items small {
+  margin-top: 0.15rem;
+  color: #9f9f9f;
+  font-size: 1.05rem;
+}
+
+.motion-map-section-list__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+  background: linear-gradient(135deg, #4a9eff, #6086b4);
+}
+
+.motion-map-related {
+  margin-top: 0.9rem;
+  color: #9f9f9f;
+  font-size: 1.12rem;
+}
+
+@media screen and (min-width: 961px) {
+  .motion-map-hero {
+    grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.35fr);
+    padding: 2rem;
+  }
+
+  .motion-map-feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .motion-map-hero {
+    padding: 1.1rem;
+  }
+
+  .motion-map-hero h1 {
+    font-size: 2.65rem;
+  }
+
+  .post__content a.motion-map-action {
+    width: 100%;
+    justify-content: center;
+  }
+}

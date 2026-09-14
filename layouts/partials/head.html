@@ -68,6 +68,14 @@
     crossorigin="anonymous"
     type="text/css"
   />
+  {{ $motionMapStyle := resources.Get "css/motion-map.css" | resources.Minify | resources.Fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ $motionMapStyle.RelPermalink }}"
+    integrity="{{ $motionMapStyle.Data.Integrity }}"
+    crossorigin="anonymous"
+    type="text/css"
+  />
   {{ range .Site.Params.customCss }}
     {{ $minstyles := resources.Get . }}
     {{ $styles := $minstyles | resources.Minify | resources.Fingerprint }}
