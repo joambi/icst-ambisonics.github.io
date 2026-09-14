@@ -25,8 +25,8 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
       </div>
     </div>
     <figure class="motion-map-hero__media">
-      <img src="/images/icst-ambi-motion-map-v2.2.png" alt="AmbiEncoder64 Motion Map v2.2 mit Quellenraster, Trajektorienvorschau, Presets, OSC-Vorschau und Automationssteuerung">
-      <figcaption>64 Quellen · 3D-Bewegung · REAPER-Automation · OSC-Vorschau</figcaption>
+      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animierte AmbiEncoder64 Motion Map v2.2 mit bewegten Quellen und Trajektorien in der Vorschau">
+      <figcaption>Animierte Vorschau · 64 Quellen · 3D-Bewegung · REAPER-Automation · OSC</figcaption>
     </figure>
   </section>
 

@@ -25,8 +25,8 @@ description: "Create and automate spatial source trajectories in REAPER with the
       </div>
     </div>
     <figure class="motion-map-hero__media">
-      <img src="/images/icst-ambi-motion-map-v2.2.png" alt="AmbiEncoder64 Motion Map v2.2 interface with source grid, trajectory preview, presets, OSC preview, and automation controls">
-      <figcaption>64 sources · 3D motion · REAPER automation · OSC preview</figcaption>
+      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animated AmbiEncoder64 Motion Map v2.2 interface with moving sources and trajectories in the preview">
+      <figcaption>Animated preview · 64 sources · 3D motion · REAPER automation · OSC</figcaption>
     </figure>
   </section>
 

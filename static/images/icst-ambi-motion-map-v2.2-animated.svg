@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1433 901" role="img" aria-labelledby="title description">
+  <title id="title">Animated ICST AmbiEncoder64 Motion Map v2.2 interface</title>
+  <desc id="description">The Motion Map interface with animated source points moving along a line and a circular trajectory in the preview area.</desc>
+  <defs>
+    <clipPath id="previewClip">
+      <rect x="883" y="103" width="510" height="310" rx="2" />
+    </clipPath>
+    <filter id="greenGlow" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feFlood flood-color="#54e6a5" flood-opacity="0.82" result="color" />
+      <feComposite in="color" in2="blur" operator="in" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="blueGlow" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feFlood flood-color="#65aaff" flood-opacity="0.8" result="color" />
+      <feComposite in="color" in2="blur" operator="in" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="scanGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#65aaff" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#65aaff" stop-opacity="0.3" />
+      <stop offset="1" stop-color="#65aaff" stop-opacity="0" />
+    </linearGradient>
+    <path id="blueTrajectory" d="M1114 301 C1129 284 1149 255 1185 217" />
+    <path id="greenTrajectory" d="M1174 274 C1148 296 1114 280 1115 255 C1116 230 1148 227 1168 239 C1185 249 1187 265 1174 274 Z" />
+    <style>
+      .trajectory { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .moving-source text { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; paint-order: stroke; stroke: #0d1118; stroke-width: 3px; stroke-linejoin: round; }
+      .static-source { display: none; }
+      @media (prefers-reduced-motion: reduce) {
+        .smil-motion { display: none; }
+        .static-source { display: inline; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1433" height="901" fill="#0d1118" />
+  <image href="icst-ambi-motion-map-v2.2-smil-base.png" xlink:href="icst-ambi-motion-map-v2.2-smil-base.png" width="1433" height="901" preserveAspectRatio="xMidYMid meet" />
+
+  <g clip-path="url(#previewClip)">
+    <rect class="smil-motion" x="858" y="103" width="82" height="310" fill="url(#scanGradient)" opacity="0.7">
+      <animate attributeName="x" values="858;1393;858" dur="9s" repeatCount="indefinite" />
+    </rect>
+
+    <use href="#blueTrajectory" xlink:href="#blueTrajectory" class="trajectory" stroke="#65aaff" stroke-width="2.2" opacity="0.42" />
+    <use href="#blueTrajectory" xlink:href="#blueTrajectory" class="trajectory smil-motion" stroke="#8fc5ff" stroke-width="1.6" stroke-dasharray="10 9">
+      <animate attributeName="stroke-dashoffset" values="38;0" dur="2.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.25;0.95;0.25" dur="3.6s" repeatCount="indefinite" />
+    </use>
+
+    <use href="#greenTrajectory" xlink:href="#greenTrajectory" class="trajectory" stroke="#54e6a5" stroke-width="2.2" opacity="0.5" />
+    <use href="#greenTrajectory" xlink:href="#greenTrajectory" class="trajectory smil-motion" stroke="#8fffc6" stroke-width="1.5" stroke-dasharray="8 8">
+      <animate attributeName="stroke-dashoffset" values="0;-32" dur="2.6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="4.2s" repeatCount="indefinite" />
+    </use>
+
+    <g class="moving-source smil-motion" filter="url(#blueGlow)">
+      <circle r="9" fill="#65aaff" opacity="0.2">
+        <animate attributeName="r" values="7;13;7" dur="1.8s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.38;0.08;0.38" dur="1.8s" repeatCount="indefinite" />
+      </circle>
+      <circle r="4.2" fill="#65aaff" stroke="#d9ecff" stroke-width="1.2" />
+      <animateMotion dur="4.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.42 0 0.58 1">
+        <mpath href="#blueTrajectory" xlink:href="#blueTrajectory" />
+      </animateMotion>
+    </g>
+
+    <g class="moving-source smil-motion" filter="url(#greenGlow)">
+      <circle r="10" fill="#54e6a5" opacity="0.2">
+        <animate attributeName="r" values="8;15;8" dur="2.2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.42;0.08;0.42" dur="2.2s" repeatCount="indefinite" />
+      </circle>
+      <circle r="5" fill="#54e6a5" stroke="#d8ffeb" stroke-width="1.5" />
+      <circle r="1.7" fill="#ffffff" />
+      <text x="10" y="-10" fill="#54e6a5">S0</text>
+      <animateMotion dur="5.4s" repeatCount="indefinite" calcMode="paced">
+        <mpath href="#greenTrajectory" xlink:href="#greenTrajectory" />
+      </animateMotion>
+    </g>
+
+    <g class="static-source">
+      <circle cx="1185" cy="217" r="4.2" fill="#65aaff" stroke="#d9ecff" stroke-width="1.2" />
+      <circle cx="1174" cy="274" r="5" fill="#54e6a5" stroke="#d8ffeb" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <g class="smil-motion" fill="none" stroke="#54e6a5" stroke-width="1.4">
+    <rect x="365" y="130" width="38" height="30" rx="2" opacity="0.1">
+      <animate attributeName="opacity" values="0.08;0.55;0.08" dur="3.6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="196" y="238" width="38" height="30" rx="2" opacity="0.1">
+      <animate attributeName="opacity" values="0.08;0.08;0.55;0.08" dur="4.8s" repeatCount="indefinite" />
+    </rect>
+    <rect x="1053" y="678" width="53" height="23" rx="2" opacity="0.14">
+      <animate attributeName="opacity" values="0.12;0.65;0.12" dur="2.8s" repeatCount="indefinite" />
+    </rect>
+  </g>
+</svg>
