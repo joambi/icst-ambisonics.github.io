@@ -19,9 +19,24 @@
     </div>
     <ul class="docs__nav-list">
       {{ range $pages }}
-        <li class="docs__nav-item{{ if eq .RelPermalink $.RelPermalink }} docs__nav-item--active{{ end }}">
-          <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
-        </li>
+        {{ if not .Params.docs_nav_parent }}
+          {{ $navID := .Params.docs_nav_id }}
+          <li class="docs__nav-item{{ if eq .RelPermalink $.RelPermalink }} docs__nav-item--active{{ end }}">
+            <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ default .Title .Params.docs_nav_label }}</a>
+            {{ with $navID }}
+              {{ $children := where $pages "Params.docs_nav_parent" "eq" . }}
+              {{ if gt (len $children) 0 }}
+                <ul class="docs__nav-list docs__nav-sublist">
+                  {{ range $children }}
+                    <li class="docs__nav-item docs__nav-item--child{{ if eq .RelPermalink $.RelPermalink }} docs__nav-item--active{{ end }}">
+                      <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ default .Title .Params.docs_nav_label }}</a>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </li>
+        {{ end }}
       {{ end }}
     </ul>
   </nav>
@@ -33,7 +48,7 @@
       <div class="post__content">
         <div class="docs__tabs" aria-label="Kapitel-Navigation">
           {{ range $pages }}
-            <a class="docs__tab{{ if eq .RelPermalink $.RelPermalink }} docs__tab--active{{ end }}" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+            <a class="docs__tab{{ if eq .RelPermalink $.RelPermalink }} docs__tab--active{{ end }}" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ default .Title .Params.docs_nav_label }}</a>
           {{ end }}
         </div>
 
@@ -43,20 +58,30 @@
       </div>
 
       {{/* Prev / Next navigation */}}
+      {{ if not .Params.hidden_in_nav }}
       <div class="docs__pagination">
-        {{ with .PrevInSection }}
-          <a class="docs__pagination-link docs__pagination-link--prev" href="{{ .RelPermalink }}">
-            <i class="fas fa-arrow-left"></i>
-            <span>{{ .Title }}</span>
-          </a>
+        {{ $currentIndex := 0 }}
+        {{ range $index, $page := $pages }}
+          {{ if eq $page.RelPermalink $.RelPermalink }}{{ $currentIndex = $index }}{{ end }}
         {{ end }}
-        {{ with .NextInSection }}
-          <a class="docs__pagination-link docs__pagination-link--next" href="{{ .RelPermalink }}">
-            <span>{{ .Title }}</span>
-            <i class="fas fa-arrow-right"></i>
-          </a>
+        {{ if gt $currentIndex 0 }}
+          {{ with index $pages (sub $currentIndex 1) }}
+            <a class="docs__pagination-link docs__pagination-link--prev" href="{{ .RelPermalink }}">
+              <i class="fas fa-arrow-left"></i>
+              <span>{{ .Title }}</span>
+            </a>
+          {{ end }}
+        {{ end }}
+        {{ if lt (add $currentIndex 1) (len $pages) }}
+          {{ with index $pages (add $currentIndex 1) }}
+            <a class="docs__pagination-link docs__pagination-link--next" href="{{ .RelPermalink }}">
+              <span>{{ .Title }}</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          {{ end }}
         {{ end }}
       </div>
+      {{ end }}
     </article>
 
     {{/* Sticky TOC — right column, desktop only */}}

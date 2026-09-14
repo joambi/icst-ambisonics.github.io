@@ -1,16 +1,17 @@
 ---
-title: Motion Map Setup
+title: Setup & Workflow
 date: 2026-06-28T00:00:00
 weight: 88
 draft: false
 toc: true
 translationKey: motion-map-setup
-description: "Step-by-step installation for the ICST Ambi Motion Map — loading Lua scripts into REAPER and configuring Python for live OSC preview. macOS and Windows."
+docs_nav_parent: motion-mapping
+description: "Install the ICST Ambi Motion Map, load its Lua scripts in REAPER, configure optional Python live OSC preview, and prepare the basic source-motion workflow on macOS or Windows."
 ---
 
 Level: Beginner | Audience: Composer, sound designer, spatial-audio technician.
 
-This page covers everything you need to install before using the [Motion Map GUI](/icst-ambisonics-plugins/15_icst_ambi_motion_map/): loading the Lua scripts into REAPER and — if you want live OSC preview — verifying your Python 3 installation. No additional Python packages are required.
+This setup chapter belongs to [Motion Mapping](/icst-ambisonics-plugins/15_icst_ambi_motion_map/). It covers everything you need before using the Motion Map GUI: loading the Lua scripts into REAPER and — if you want live OSC preview — verifying your Python 3 installation. No additional Python packages are required.
 
 ---
 

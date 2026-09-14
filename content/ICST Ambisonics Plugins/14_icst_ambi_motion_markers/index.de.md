@@ -4,6 +4,7 @@ date: 2026-06-21T00:00:00
 weight: 85
 draft: false
 toc: true
+hidden_in_nav: true
 description: "Marker-basierter Workflow für OSC-Preview und Automation-Aufnahme mit dem ICST AmbiEncoder in REAPER, inklusive CSV-Import und Good Practices."
 ---
 

@@ -1,15 +1,20 @@
 ---
-title: ICST Ambi Motion Map — User Guide
+title: Source Motion Mapping for Spatial Composition in REAPER
 date: 2026-06-28T00:00:00
 weight: 87
 draft: false
 toc: true
-description: "Step-by-step guide to the AmbiEncoder64 Motion Map GUI v2.0 — installation, source setup, motion shapes, XYZ coordinates, Scale, Source offset, presets, time curve, palindrome mode, and live OSC preview."
+translationKey: motion-map-user-guide
+docs_nav_id: motion-mapping
+docs_nav_label: Motion Mapping
+description: "Create and automate spatial source trajectories in REAPER with the ICST AmbiEncoder64 Motion Map, including motion shapes, coordinates, timing, presets, automation writing, and live OSC preview."
 ---
 
 Level: Beginner–Intermediate | Audience: Composer, sound designer, spatial-audio technician. | **Version: v2.1**
 
-The Motion Map GUI generates algorithmic spatial movement for up to 64 AmbiEncoder sources and writes it as REAPER automation in one click. This guide walks you through every feature from first launch to advanced techniques.
+The Motion Map GUI generates algorithmic spatial movement for up to 64 AmbiEncoder sources and writes it as REAPER automation in one click. This is the main guide to the Motion Mapping workflow, from first launch to advanced techniques.
+
+> **New to Motion Mapping?** Start with [Setup & Workflow](/icst-ambisonics-plugins/16_motion_map_setup/) to install the scripts, configure optional live OSC preview, and prepare your first REAPER session.
 
 > **Download:** [ICST Ambi Motion Map Bundle](/downloads/ICST_Ambi_Motion_Map_Bundle.zip) (GUI script + automation writer, both required)
 

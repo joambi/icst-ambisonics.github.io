@@ -15,9 +15,24 @@
     </div>
     <ul class="docs__nav-list">
       {{ range $pages }}
-        <li class="docs__nav-item">
-          <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
-        </li>
+        {{ if not .Params.docs_nav_parent }}
+          {{ $navID := .Params.docs_nav_id }}
+          <li class="docs__nav-item">
+            <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ default .Title .Params.docs_nav_label }}</a>
+            {{ with $navID }}
+              {{ $children := where $pages "Params.docs_nav_parent" "eq" . }}
+              {{ if gt (len $children) 0 }}
+                <ul class="docs__nav-list docs__nav-sublist">
+                  {{ range $children }}
+                    <li class="docs__nav-item docs__nav-item--child">
+                      <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ default .Title .Params.docs_nav_label }}</a>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </li>
+        {{ end }}
       {{ end }}
     </ul>
   </nav>
@@ -26,7 +41,7 @@
     <div class="post__content">
       <div class="docs__tabs" aria-label="Chapter navigation">
         {{ range $pages }}
-          <a class="docs__tab" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+          <a class="docs__tab" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ default .Title .Params.docs_nav_label }}</a>
         {{ end }}
       </div>
 

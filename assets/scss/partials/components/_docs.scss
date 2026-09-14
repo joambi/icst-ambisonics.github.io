@@ -60,10 +60,14 @@
       margin: 0;
     }
 
+    &-sublist {
+      margin: 0.1rem 0 0.35rem;
+    }
+
     &-item {
       padding-right: 0.8rem;
 
-      a {
+      > a {
         display: block;
         padding: 0.62rem 1rem 0.62rem 1.1rem;
         font-size: 1.25rem;
@@ -86,7 +90,7 @@
         }
       }
 
-      &--active a {
+      &--active > a {
         font-weight: 600;
         transform: translateX(2px);
 
@@ -96,6 +100,11 @@
           background-color: color.t('primary-lighter');
           box-shadow: inset 0 0 0 1px color.t('border');
         }
+      }
+
+      &--child > a {
+        padding-left: 2rem;
+        font-size: 1.15rem;
       }
     }
   }
