@@ -22,8 +22,8 @@ Die 20. Ausgabe von „Ascolta“ ist drei längeren Stücken von Pierre Alexand
 
 ## Programm
 
-- _bucolic and broken_ (2017)
-- _Espaces négatifs_ (2023)
+- _Bucolic & Broken_ (2017)
+- _Les espaces négatifs_ (2023)
 - _Lugano_ (2026)
 
 ---
