@@ -10,6 +10,8 @@ description: "Guide to the ICST Animator for timeline-based spatial movement and
 
 Level: Intermediate | Audience: Composer, technician, student, interactive-media user. | **Version: 3.2.0.6 (experimental)**
 
+<p><button type="button" disabled aria-disabled="true" style="display:inline-block;padding:.6em 1.4em;border:0;border-radius:6px;background:#2e8b57;color:#fff;font-weight:600;font-size:1em;opacity:.55;cursor:not-allowed;">Download Animator &nbsp;·&nbsp; Coming soon</button></p>
+
 Use this page when you want to move, rotate, or transform source groups automatically over time inside the Ambisonics field.
 
 Before using the Animator, make sure your sources are organized into groups inside the **AmbiEncoder Multi**. The Animator requires at least one group to be active.

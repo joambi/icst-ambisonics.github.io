@@ -10,6 +10,8 @@ description: "Anleitung zum ICST Animator für timeline-basierte räumliche Bewe
 
 Niveau: Fortgeschritten | Zielgruppe: Komponist, Toningenieur, Student, Interactive-Media-Nutzer. | **Version: 3.2.0.6 (experimentell)**
 
+<p><button type="button" disabled aria-disabled="true" style="display:inline-block;padding:.6em 1.4em;border:0;border-radius:6px;background:#2e8b57;color:#fff;font-weight:600;font-size:1em;opacity:.55;cursor:not-allowed;">Animator herunterladen &nbsp;·&nbsp; Coming soon</button></p>
+
 Diese Seite beschreibt, wie du Quellengruppen im Ambisonics-Feld automatisch bewegen, rotieren oder transformieren kannst.
 
 Vor der Arbeit mit dem Animator müssen die Quellen im **AmbiEncoder Multi** zu Gruppen zusammengefasst sein. Mindestens eine aktive Gruppe ist Voraussetzung.
