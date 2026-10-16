@@ -1,0 +1,15 @@
+{{- /*
+  Usage: {{< video name="AT-ACT-V01-Rotation-X" caption="…" >}}
+  Optional: dir="/path/" (default: page path without language prefix, files in static/),
+            muted="true", autoplay="true" (implies muted, behaves like a GIF), poster="false"
+*/ -}}
+{{- $name := .Get "name" -}}
+{{- $dir := .Get "dir" | default (replaceRE `^/[a-z]{2}/` "/" .Page.RelPermalink) -}}
+{{- $autoplay := eq (.Get "autoplay") "true" -}}
+{{- $muted := or $autoplay (eq (.Get "muted") "true") -}}
+<figure class="video">
+  <video controls loop playsinline preload="metadata"{{ if $autoplay }} autoplay{{ end }}{{ if $muted }} muted{{ end }}{{ if ne (.Get "poster") "false" }} poster="{{ $dir }}{{ $name }}-poster.png"{{ end }} src="{{ $dir }}{{ $name }}.mp4" style="max-width:100%"></video>
+  {{- with .Get "caption" }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>

@@ -42,10 +42,21 @@ OSC input and output make the encoders usable in controller-based and algorithmi
 
 ![ICST AmbiEncoder overview](<CleanShot 2026-03-04 at 14.27.47@2x.png>)
 
-| Label | Description |
-|---|---|
-| **A** | MonoEncoder for one source |
-| **B** | MultiEncoder for up to 64 sources per track |
+Top left the **MonoEncoder** (one source), bottom left the **MultiEncoder** with three groups, on the right the **Encoder Settings** window.
+
+1. **Settings** (gear) – opens the Encoder Settings window.
+2. **Help** (?)
+3. **Sources** – source list with position (X/Y/Z, A/E/D), mute/solo, gain and colour.
+4. **Encoding** – encoding settings.
+5. **Radar** – radar display settings.
+6. **OSC In** – receiving OSC messages.
+7. **OSC Out** – sending the encoder state via OSC.
+8. **Distance Scaler** – distance simulation via lowpass filtering and Doppler-style behaviour.
+9. **Infinite** – place sources at the far-field boundary.
+10. **Master Gain [dB]** – overall level of the encoder.
+11. **import/export** – save or load source configurations.
+12. **Groups** – group editor with position, stretch, rotation, number of points and colour; groups can be moved relative to their centre.
+13. **Presets** – save and manage complete encoder states for repeatable setups (save, manage…).
 
 **Video: ICST Ambisonics Plugins – 02 – AmbiEncoder**
 
@@ -53,22 +64,27 @@ OSC input and output make the encoders usable in controller-based and algorithmi
 
 ## User interface
 
-### Main controls
-
-1. **Settings**
-2. **Help**
-
 ### Source window
 
 ![AmbiEncoder source window](<CleanShot 2026-03-04 at 15.02.00@2x.png>)
 
 This area shows and controls individual sources by azimuth, elevation, and distance.
 
+**New in 4.0:** the **Blauert** column switches the Blauert filter on or off per source (settings see [Encoding settings](#encoding-settings)).
+
+![Sources tab with the new Blauert column](ENC-SRC-01-Sources-Blauert.png)
+
 ### Encoding settings
 
 ![AmbiEncoder encoding settings](<CleanShot 2026-03-04 at 15.02.47@2x.png>)
 
 This section sets core encoding parameters such as order and channel format.
+
+**New in 4.0:** in the **Encoding** tab, the **Doppler effect** and the **Blauert filter** can be enabled separately. The Blauert filter has two modes, **Standard** and **Height Only** (acts on the Z axis only), and an **Intensity Factor** (in %) that sets the strength of the filter.
+
+![Encoding tab: Doppler effect and Blauert filter with mode selection Standard / Height Only](ENC-ENC-01-Doppler-Blauert-Modus.png)
+
+![Blauert filter with Intensity Factor (1)](ENC-ENC-02-Blauert-Intensity.png)
 
 ### Radar
 
@@ -84,10 +100,37 @@ MultiEncoder is especially useful when spatial movement is not just individual, 
 
 Use grouping when the scene should behave as a coherent object rather than as unrelated single sources.
 
+**New in 4.0:**
+
+![Sources and Groups: Blauert per source (1), source selection via Edit… (2), group context menu (3)](ENC-GRP-01-Groups-Edit-Kontextmenue.png)
+
+1. **Blauert** – Blauert filter per source.
+2. **Edit…** in the # Points column – opens a selection of all 64 sources; ticked sources belong to the group.
+3. **Group context menu** – **Reset Stretch**, **Reset Rotation** and **Apply color to sources** (applies the group colour to its sources).
+
 ## OSC integration
 
 - **OSC input and JavaScript** receive external control messages
 - **OSC output** sends encoder state to controllers or external applications
+
+**New in 4.0: OSC Out to external targets.** In the **OSC Out** tab, *Send Positions for External Usage* sends the positions to any number of targets, optionally continuously (*Continuous*) at the set interval (ms). At the bottom the tab shows the estimated network traffic.
+
+![OSC Out: external targets with Enable (1), Host (2), Port (3), OSC-Message (4), Type (5) and presets (6)](ENC-OSC-01-OSC-Out-External-Targets.png)
+
+1. **Enable** – switch the target on or off.
+2. **Host** – IP address of the receiver.
+3. **Port** – target port.
+4. **OSC-Message** – message format, e.g. *ICST AmbiPlugins Standard XYZ/AED* with name or index.
+5. **Type** – what is sent: All Sources, All Groups, All Sources & Groups or Select….
+6. **presets…** – save and load target configurations.
+
+With **Select…**, the **…** button opens a selection of individual sources and groups:
+
+![Selection via … (1): individual sources (2) and groups (3)](ENC-OSC-02-OSC-Out-Select.png)
+
+{{< notice warning >}}
+The selection is by **position in the list**. If sources or groups are reordered, added or removed later, the target may send different data.
+{{< /notice >}}
 
 **Video: ICST Ambisonics Plugins – 03 – OSC Part 1**
 
@@ -96,21 +139,6 @@ Use grouping when the scene should behave as a coherent object rather than as un
 For setup and syntax:
 
 - [OSC](/icst-ambisonics-plugins/13_osc/)
-
-## Additional controls
-
-8. **Distance Scaler**  
-   Simulates depth via lowpass filtering and Doppler-like behavior.
-9. **Infiniti**  
-   Places sources at the far field boundary.
-10. **Gain / Volume**  
-   Adjusts encoder input or output gain.
-11. **Import & Export**  
-   Saves or restores source configurations.
-12. **Groups Editor**  
-   Manages source groups and relative repositioning.
-13. **Save & Load Presets**  
-   Stores complete encoder states for repeatable setups.
 
 ## Common mistakes
 

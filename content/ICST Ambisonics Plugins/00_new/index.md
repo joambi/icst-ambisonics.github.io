@@ -3,6 +3,19 @@ title: What's New
 date: 2025-11-03T16:13:00
 weight: 15
 ---
+# ICST Ambisonics Plugins v4.0
+
+Coming soon!
+
+## New in v4.0
+### ICST AmbiEncoders:
+- [Group points (GP) send OSC messages](/icst-ambisonics-plugins/10_icst_encoders/#osc-integration)
+- [New OSC selection window](/icst-ambisonics-plugins/10_icst_encoders/#osc-integration)
+- [Blauert filter on the Z axis only (Height Only)](/icst-ambisonics-plugins/10_icst_encoders/#encoding-settings)
+- [Blauert filter: Intensity Factor in %](/icst-ambisonics-plugins/10_icst_encoders/#encoding-settings)
+- [Blauert filter per source (Blauert column)](/icst-ambisonics-plugins/10_icst_encoders/#source-window)
+- [Group context menu: Reset Stretch, Reset Rotation, Apply color to sources](/icst-ambisonics-plugins/10_icst_encoders/#grouping-and-movement)
+- [Animator](/icst-ambisonics-plugins/11_animator/)
 
 # ICST Ambisonics Plugins v3.2 
 
