@@ -58,6 +58,13 @@ copyright = ""
 # Google Search Console verification
 googleSiteVerify = "2dac45051b431b1b"
 
+  # Popup "Aktuell": erscheint einmal pro Besuch (Browser-Sitzung), wegklickbar.
+  # page = Pfad der Content-Seite (DE/EN wird automatisch gewählt); until = automatisch aus nach diesem Zeitpunkt.
+  [params.popup]
+  enable = true
+  page = "/Blog/ascolta/20-ascolta"
+  until = "2026-10-29T19:00:00+01:00"
+
   [params.mermaid]
   enable = true
 

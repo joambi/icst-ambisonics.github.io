@@ -1,184 +1,184 @@
 ---
-title: "User Guide: 64 Sources mit open-stage-control und ICST AmbiEncoder_64"
+title: "User Guide: 64 Sources with open-stage-control and ICST AmbiEncoder_64"
 date: 2026-08-19T00:00:00
 weight: 121
 draft: false
 toc: true
-description: "User Guide fuer die Steuerung von 64 Quellen mit open-stage-control und dem ICST AmbiEncoder_64 in REAPER."
+description: "User guide for controlling 64 sources with open-stage-control and the ICST AmbiEncoder_64 in REAPER."
 ---
 
 Level: Intermediate | Audience: Composer, technician, student, live-electronics user.
 
 {{< figure
   src="ICST-AmbiPlugin_Open-Stage-control.jpeg"
-  alt="open-stage-control mit ICST AmbiEncoder_64"
-  caption="open-stage-control-Session zur Steuerung von 64 Quellen mit dem ICST AmbiEncoder_64."
+  alt="open-stage-control with ICST AmbiEncoder_64"
+  caption="open-stage-control session for controlling 64 sources with the ICST AmbiEncoder_64."
 >}}
 
-Dieser User Guide beschreibt die aktuelle `XYZ`-Session fuer `open-stage-control` in Verbindung mit dem `ICST AmbiEncoder_64`.
+This user guide describes the current `XYZ` session for `open-stage-control` in combination with the `ICST AmbiEncoder_64`.
 
 Download:
 
 - [64-source-points-tablet-xyz.session.json](/icst-ambisonics-plugins/13a_open_stage_control_64_sources/64-source-points-tablet-xyz.session.json)
 
-Die Session steuert kartesisch in `XYZ` und ist fuer die direkte Arbeit mit dem Plugin-Radar aufgebaut:
+The session controls the sources in Cartesian `XYZ` and is built for working directly with the plugin radar:
 
-- oben = Front
-- rechts = Rechts
-- `+X` zeigt nach rechts
-- `+Y` zeigt nach vorne
+- top = front
+- right = right
+- `+X` points right
+- `+Y` points forward
 
-Der linke Fader steuert `Z` (Hoehe, `-1..1`) statt `Distance`. Pad und Plugin-Radar entsprechen sich in dieser Session daher direkt.
+The left fader controls `Z` (height, `-1..1`) instead of `Distance`. Pad and plugin radar therefore correspond directly in this session.
 
-Die Session sendet ICST-kompatibles OSC an den `AmbiEncoder_64`:
+The session sends ICST-compatible OSC to the `AmbiEncoder_64`:
 
 - `/icst/ambi/sourceindex/xyz [Index] [X] [Y] [Z]`
-- `/icst/ambi/sourceindex/gain [Index] [Gain_dB]`
+- `/icst/ambi/sourceindex/gain [Index] [Gain]`
 
-Der Source-Index ist 1-basiert, Gain ist in dB.
+The source index is 1-based. The gain fader displays dB; a linear factor is sent (see [7. Troubleshooting](#7-troubleshooting)).
 
-## 1. REAPER und AmbiEncoder_64 vorbereiten
+## 1. Prepare REAPER and the AmbiEncoder_64
 
-1. Oeffne dein REAPER-Projekt oder lege ein neues an.
-2. Lege einen Track an, der den Encoder tragen soll, und fuege `ICST AmbiEncoder_64` als Insert-FX ein.
-3. Achte darauf, dass der Track genuegend Kanaele hat (`Track Routing` > `Track channels`), sonst arbeitet der 64er-Encoder nicht vollstaendig.
-4. Oeffne das Plugin-Fenster des `AmbiEncoder_64`.
-5. Oeffne im Plugin den OSC-Bereich und aktiviere `OSC In` (`Receive`).
-6. Notiere dir den dort eingestellten Empfangsport. Der typische Default aus den ICST-Tutorials ist `50001`, massgeblich ist aber immer der Port, der tatsaechlich im Plugin hinterlegt ist.
-7. Lass das Plugin-Fenster fuer den ersten Test geoeffnet, damit du sehen kannst, ob sich die Quellen bewegen.
+1. Open your REAPER project or create a new one.
+2. Create a track for the encoder and insert `ICST AmbiEncoder_64` as an FX.
+3. Make sure the track has enough channels (`Track Routing` > `Track channels`); otherwise the 64-source encoder will not work fully.
+4. Open the plugin window of the `AmbiEncoder_64`.
+5. Open the OSC section in the plugin and enable `OSC In` (`Receive`).
+6. Note the receive port set there. The usual default in the ICST tutorials is `50001`, but what counts is the port actually set in the plugin.
+7. Keep the plugin window open for the first test so you can see whether the sources move.
 
-## 2. open-stage-control starten
+## 2. Start open-stage-control
 
-1. Starte `open-stage-control`. Zuerst oeffnet sich der Launcher.
-2. Trage im Launcher bei `send` das OSC-Ziel ein:
+1. Start `open-stage-control`. The launcher opens first.
+2. In the launcher, enter the OSC target under `send`:
 
-   - REAPER auf demselben Rechner: `127.0.0.1:50001`
-   - REAPER auf einem anderen Rechner: `IP-des-REAPER-Rechners:50001`
-   - Falls noetig: den Port aus Teil 1 verwenden
+   - REAPER on the same computer: `127.0.0.1:50001`
+   - REAPER on another computer: `IP-of-the-REAPER-computer:50001`
+   - If necessary: use the port from part 1
 
-3. Trage bei `Port` den HTTP-Port fuer die Bedienoberflaeche ein, zum Beispiel `8080`.
-4. Klicke auf `Start`. Es oeffnet sich die leere Oberflaeche im Browser oder App-Fenster.
-5. Lade die Session ueber `Menu` > `Session` > `Open` und waehle `64-source-points-tablet-xyz.session.json`. Alternativ kannst du die Datei per Drag-and-drop ins Fenster ziehen.
+3. Under `Port`, enter the HTTP port for the user interface, for example `8080`.
+4. Click `Start`. The empty interface opens in the browser or app window.
+5. Load the session via `Menu` > `Session` > `Open` and choose `64-source-points-tablet-xyz.session.json`. Alternatively, drag and drop the file into the window.
 
 {{< figure
   src="open-stage-control-setup.png"
-  alt="open-stage-control Launcher mit Send-Ziel 127.0.0.1:50001 und Port 8080"
-  caption="Beispiel fuer die Launcher-Einstellungen in open-stage-control: OSC-Ziel auf den AmbiEncoder-Port und HTTP-Port fuer die Bedienoberflaeche."
+  alt="open-stage-control launcher with send target 127.0.0.1:50001 and port 8080"
+  caption="Example launcher settings in open-stage-control: OSC target set to the AmbiEncoder port, and the HTTP port for the user interface."
 >}}
 
-## 3. Tablet verbinden
+## 3. Connect the tablet
 
-1. Verbinde das Tablet mit demselben Netzwerk wie den Rechner, auf dem `open-stage-control` laeuft.
-2. Finde die IP-Adresse dieses Rechners heraus.
+1. Connect the tablet to the same network as the computer running `open-stage-control`.
+2. Find out the IP address of that computer.
 
-   - macOS: `Systemeinstellungen` > `Netzwerk`
-   - alternativ im Terminal: `ipconfig getifaddr en0`
+   - macOS: `System Settings` > `Network`
+   - or in Terminal: `ipconfig getifaddr en0`
 
-3. Oeffne auf dem Tablet einen Browser und rufe `http://IP-des-Rechners:8080` auf. Wenn du einen anderen HTTP-Port gesetzt hast, verwende diesen.
-4. Die Oberflaeche erscheint im Browser. Fuer Vollbild auf dem iPad: Seite ueber `Teilen > Zum Home-Bildschirm` ablegen und von dort starten.
-5. Wichtig: Das Tablet spricht nur mit `open-stage-control`. Das OSC an REAPER schickt der Rechner, auf dem `open-stage-control` laeuft.
+3. On the tablet, open a browser and go to `http://IP-of-the-computer:8080`. If you set a different HTTP port, use that one.
+4. The interface appears in the browser. For full screen on the iPad: add the page via `Share` > `Add to Home Screen` and start it from there.
+5. Important: the tablet only talks to `open-stage-control`. The OSC to REAPER is sent by the computer running `open-stage-control`.
 
-## 4. Erster Funktionstest
+## 4. First function test
 
-1. Gehe in der Oberflaeche zum Tab `Select + Focus`.
-2. Druecke unten rechts den blauen Button `Alle 64 senden (Sync)`.
+1. In the interface, go to the `Select + Focus` tab.
+2. Press the blue button `Alle 64 senden (Sync)` (send all 64) at the bottom right.
 
-   Dieser Button schickt alle Positionen und Gains einmal ans Plugin. Danach zeigen Oberflaeche und Plugin denselben Stand. Dieser Schritt ist nach jedem Start von `open-stage-control` der erste.
+   This button sends all positions and gains to the plugin once. Afterwards, interface and plugin show the same state. This is the first step after every start of `open-stage-control`.
 
-3. Tippe im Raster links auf `S1`. Der Button wird orange, rechts steht `Source 1`.
-4. Bewege den Punkt im grossen `XY`-Pad.
-5. Schau ins Plugin-Fenster des `AmbiEncoder_64`: Quelle 1 muss sich mitbewegen.
-6. Bewege danach den `Z`- und den `Gain dB`-Fader und pruefe die Reaktion im Plugin.
-7. Wenn das funktioniert, teste einen Bank-Tab wie `S1-8` und bewege dort mehrere Punkte gleichzeitig.
+3. Tap `S1` in the grid on the left. The button turns orange, and `Source 1` appears on the right.
+4. Move the point in the large `XY` pad.
+5. Look at the plugin window of the `AmbiEncoder_64`: source 1 must move along.
+6. Then move the `Z` and `Gain dB` faders and check the response in the plugin.
+7. If that works, try a bank tab such as `S1-8` and move several points there at the same time.
 
-Hinweis zur Darstellung: Das Pad ist in dieser Session eine Draufsicht in `XYZ`. Deshalb entspricht es dem Plugin-Radar direkt.
+Note on the display: in this session the pad is a top view in `XYZ`. It therefore corresponds directly to the plugin radar.
 
-Wenn sich in Schritt 4 nichts bewegt, siehe [7. Fehlersuche](#7-fehlersuche).
+If nothing moves in step 4, see [7. Troubleshooting](#7-troubleshooting).
 
-## 5. Bedienung im Ueberblick
+## 5. Operation overview
 
 ### Tab `Select + Focus`
 
-1. Quelle waehlen: Im `8x8`-Raster links auf den gewuenschten Button tippen. Die aktive Quelle ist orange markiert.
-2. Position setzen: den Punkt im grossen Pad rechts bewegen. Die Session arbeitet kartesisch in `X/Y`.
-3. `Z (-1..1)` und `Gain (dB) (-60..+12)` mit den beiden horizontalen Fadern einstellen. Beide Fader haben ein Zahlenfeld fuer praezise Eingaben.
-4. Umbenennen: oben rechts ins Textfeld tippen, den Namen eingeben und mit `Bestaetigen` abschliessen. Der Name erscheint sofort auf dem Raster-Button. Ohne eigenen Namen zeigt der Button `S1` bis `S64` an.
+1. Select a source: tap the desired button in the `8x8` grid on the left. The active source is marked orange.
+2. Set the position: move the point in the large pad on the right. The session works in Cartesian `X/Y`.
+3. Set `Z (-1..1)` and `Gain (dB) (-60..+12)` with the two horizontal faders. Both faders have a number field for precise input.
+4. Rename: tap the text field at the top right, type the name and confirm. The name appears on the grid button immediately. Without a custom name the button shows `S1` to `S64`.
 
-### Bank-Tabs `S1-8` bis `S57-64`
+### Bank tabs `S1-8` to `S57-64`
 
-1. Oeffne den Tab der gewuenschten Gruppe.
-2. Im grossen Multi-XY lassen sich einzelne oder mehrere Punkte gleichzeitig bewegen (`Multitouch`).
-3. Jeder Punkt sendet sofort seine `XYZ`-Message.
-4. Die Quellen sind gleichmaessig im Pad angeordnet. So siehst du sofort, welcher Punkt welcher Quelle entspricht.
+1. Open the tab of the desired group.
+2. In the large multi-XY pad you can move single or several points at the same time (`multitouch`).
+3. Each point sends its `XYZ` message immediately.
+4. The sources are evenly arranged in the pad, so you can see at once which point belongs to which source.
 
-## 6. Speichern
+## 6. Saving
 
-1. Positionen und Namen aendern sich waehrend der Session. Wenn du den Zustand behalten willst, waehle in `open-stage-control` `Menu` > `Session` > `Save` oder `Save As`, am besten unter neuem Namen.
-2. Die Einstellungen im `AmbiEncoder_64`, inklusive der zuletzt empfangenen Positionen, speicherst du wie gewohnt im REAPER-Projekt mit `Cmd+S`.
+1. Positions and names change during the session. To keep the state, choose `Menu` > `Session` > `Save` or `Save As` in `open-stage-control`, ideally under a new name.
+2. The settings of the `AmbiEncoder_64`, including the last received positions, are saved as usual with the REAPER project (`Cmd+S`).
 
-## 7. Fehlersuche
+## 7. Troubleshooting
 
-### Es kommt nichts im Plugin an
+### Nothing arrives in the plugin
 
-1. Ist `OSC In` im `AmbiEncoder_64` wirklich aktiviert?
-2. Stimmen Host und Port in den `send`-Einstellungen von `open-stage-control` exakt mit dem Plugin ueberein?
-3. Blockiert eine Firewall eingehende UDP-Pakete auf dem REAPER-Rechner?
-4. Laeuft versehentlich eine zweite Instanz von `open-stage-control` ohne Send-Ziel?
+1. Is `OSC In` really enabled in the `AmbiEncoder_64`?
+2. Do host and port in the `send` settings of `open-stage-control` exactly match the plugin?
+3. Is a firewall blocking incoming UDP packets on the REAPER computer?
+4. Is a second instance of `open-stage-control` without a send target running by mistake?
 
-### Das Tablet findet die Oberflaeche nicht
+### The tablet cannot find the interface
 
-1. Sind Tablet und Rechner im selben Netzwerk?
-2. Stimmen IP-Adresse und HTTP-Port in der Browser-Adresse ueberein?
-3. Verwende `http://`, nicht `https://`.
-4. Erlaube eingehende Verbindungen fuer `open-stage-control` in der Firewall.
+1. Are tablet and computer on the same network?
+2. Do IP address and HTTP port in the browser address match?
+3. Use `http://`, not `https://`.
+4. Allow incoming connections for `open-stage-control` in the firewall.
 
-### Die falsche Quelle bewegt sich
+### The wrong source moves
 
-1. Der Source-Index ist 1-basiert: `S1` in der Oberflaeche entspricht Quelle 1 im Plugin.
-2. Pruefe, ob im Raster tatsaechlich die gewuenschte Quelle orange markiert ist.
+1. The source index is 1-based: `S1` in the interface corresponds to source 1 in the plugin.
+2. Check that the desired source is actually marked orange in the grid.
 
-### Bewegungen ruckeln im Netzwerk
+### Movements stutter over the network
 
-1. Pruefe die WLAN-Qualitaet.
-2. Schließe den Rechner bei Bedarf per Kabel an.
-3. Nimm andere Geraete mit hohem Traffic aus dem WLAN.
+1. Check the Wi-Fi quality.
+2. Connect the computer by cable if needed.
+3. Take other devices with heavy traffic off the Wi-Fi.
 
-### Plugin und Oberflaeche zeigen unterschiedliche Positionen
+### Plugin and interface show different positions
 
-1. `open-stage-control` sendet beim Start nichts von selbst. Druecke nach jedem Start einmal `Alle 64 senden (Sync)`.
+1. `open-stage-control` sends nothing by itself at startup. Press `Alle 64 senden (Sync)` once after every start.
 
-### Plugin meldet `Unknown OSC message received`
+### Plugin reports `Unknown OSC message received`
 
-1. Es laeuft eine veraltete Session-Kopie, zum Beispiel aus `~/Downloads`.
-2. Verwende nur die Dateien aus diesem Ordner.
-3. Nach Dateiaenderungen `open-stage-control` neu starten. Laufende Sessions laden Aenderungen nicht automatisch nach.
+1. An outdated copy of the session is running, for example from `~/Downloads`.
+2. Use only the current session file from this page.
+3. Restart `open-stage-control` after changing the file. Running sessions do not reload changes automatically.
 
-### Plugin meldet `Malformed OSC message`
+### Plugin reports `Malformed OSC message`
 
-1. Der Source-Index muss als Integer ankommen, nicht als Float.
-2. Die Sessions in diesem Ordner werden in den Skripten korrekt als `{type: 'i'}` typisiert.
+1. The source index must arrive as an integer, not as a float.
+2. The session types it correctly in its scripts as `{type: 'i'}`.
 
-### Gain-Fader bewegt sich, aber das Plugin springt auf `-88 dB`
+### Gain fader moves, but the plugin jumps to `-88 dB`
 
-1. Dieser Plugin-Build erwartet den Gain als linearen Faktor, nicht in dB.
-2. Die Tablet-Sessions rechnen deshalb beim Senden um: Der Fader zeigt dB (`-60..+12`), gesendet wird `10^(dB/20)`.
-3. `0 dB` entspricht dem Faktor `1.0`.
-4. Bestaetigt am `18.08.2026`.
+1. This plugin build expects gain as a linear factor, not in dB.
+2. The session therefore converts when sending: the fader shows dB (`-60..+12`), and `10^(dB/20)` is sent.
+3. `0 dB` corresponds to a factor of `1.0`.
+4. Confirmed on `18.08.2026`.
 
-### Hinweise fuer kuenftige Session-Aenderungen in open-stage-control v1.29
+### Notes for future session changes in open-stage-control v1.29
 
-1. Script-Code gehoert in die Widget-Eigenschaft `onValue`, nicht in `script`.
-2. Das Shared-State-Objekt heisst `globals`, nicht `global`.
-3. `send()` ohne Target-Argument sendet an den Launcher-Default. `send(false, ...)` ist ungueltig.
-4. Jedes Widget, auch Panels und Tabs, braucht `"bypass": true`, sonst sendet es seinen Rohwert.
-5. Die Konsole unten im `open-stage-control`-Fenster zeigt Skriptfehler an. Dort zuerst nachsehen.
+1. Script code belongs in the widget property `onValue`, not in `script`.
+2. The shared-state object is called `globals`, not `global`.
+3. `send()` without a target argument sends to the launcher default. `send(false, ...)` is invalid.
+4. Every widget, including panels and tabs, needs `"bypass": true`; otherwise it sends its raw value.
+5. The console at the bottom of the `open-stage-control` window shows script errors. Check there first.
 
-## 8. Diese Session
+## 8. This session
 
-`64-source-points-tablet-xyz.session.json` steuert in Buehnenkoordinaten (`XYZ`). Das Pad ist eine Draufsicht wie das Plugin-Radar, beide entsprechen sich direkt. Diese Seite beschreibt ausschliesslich diese aktuelle `XYZ`-Version.
+`64-source-points-tablet-xyz.session.json` works in stage coordinates (`XYZ`). The pad is a top view like the plugin radar, and the two correspond directly. This page describes only this current `XYZ` version.
 
-## Quellen
+## Sources
 
-- [ICST AmbiEncoder - OSC Syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+- [ICST AmbiEncoder – OSC syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 - [OSC](/icst-ambisonics-plugins/13_osc/)
 - [Motion Map Setup](/icst-ambisonics-plugins/16_motion_map_setup/)
