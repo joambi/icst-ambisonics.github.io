@@ -772,5 +772,5 @@ Eine moderierte Diskussion zur Vertiefung der Workshop-Erfahrung. Kein Vortrag �
   <a class="ws-resource-link" href="/downloads/lua-scripts/FuMa_to_AmbiX_FOA.jsfx" download>FuMa_to_AmbiX_FOA.jsfx<strong>FuMa → AmbiX FOA-Konverter (JSFX)</strong></a>
   <a class="ws-resource-link" href="/downloads/lua-scripts/icst_fuma_to_ambix_foa.lua" download>icst_fuma_to_ambix_foa.lua<strong>FuMa → AmbiX Lua-Installer</strong></a>
   <a class="ws-resource-link" href="/blog/b-format-archive/">ICST B-Format-Archiv<strong>Archiv mit HOA-Beispieldateien zum Erkunden</strong></a>
-  <a class="ws-resource-link" href="/icst-ambisonics-plugins/15_best_practices/">Best Practices<strong>Empfehlungen für professionelle Ambisonics-Produktionen</strong></a>
+  <a class="ws-resource-link" href="/icst-ambisonics-plugins/17_best_practices/">Best Practices<strong>Empfehlungen für professionelle Ambisonics-Produktionen</strong></a>
 </div>

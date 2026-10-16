@@ -114,4 +114,4 @@ Use **MultiEncoder** when:
 - [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
 - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)

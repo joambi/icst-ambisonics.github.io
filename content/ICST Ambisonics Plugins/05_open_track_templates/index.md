@@ -53,4 +53,4 @@ After inserting, verify the routing between the new tracks and the existing B-fo
 
 - [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
 - [Step-by-Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)

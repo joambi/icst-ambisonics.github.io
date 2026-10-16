@@ -163,4 +163,4 @@ Filterung ist deshalb der letzte Schritt, nicht der erste. Wenn Geometrie oder L
 - [XYZ und AED – Koordinatensysteme im Vergleich](/post/xyz-vs-aed-koordinatensysteme/)
 - [Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
 - [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)

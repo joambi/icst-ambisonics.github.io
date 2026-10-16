@@ -225,7 +225,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     name = "Best Practices"
     parent = "tools-osc"
     weight = 404
-    url = "/icst-ambisonics-plugins/15_best_practices/"
+    url = "/icst-ambisonics-plugins/17_best_practices/"
 
     [[menu.main]]
     name = "FAQ"

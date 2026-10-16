@@ -75,7 +75,7 @@ New in v3.2: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases]
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/03_how_it_works/">How It Works</a>
       <a class="hero__link" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC Syntax</a>
-      <a class="hero__link" href="/icst-ambisonics-plugins/15_best_practices/">Best Practices</a>
+      <a class="hero__link" href="/icst-ambisonics-plugins/17_best_practices/">Best Practices</a>
     </div>
   </section>
   <section class="home-card">

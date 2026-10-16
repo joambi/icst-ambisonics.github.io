@@ -196,7 +196,7 @@ Related pages:
 - [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/)
 - [Ambisonics Formats Explained](/learn/ambisonics-formats/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
 
 ## Go deeper
 
@@ -205,7 +205,7 @@ These articles extend the concepts on this page with practical examples and theo
 - [Why the decoder sounds the way it does – Methodological context](/post/decoder-methodological-context/)
 - [How it Works](/icst-ambisonics-plugins/03_how_it_works/)
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
 - [Binaural Monitoring im ICST-Workflow](/post/binaural-monitoring-icst-workflow/)
 - [Den B-Format-Master exportieren – AmbiX, Kanalreihenfolge und Normalisierung](/post/b-format-export-reaper/)
 - [Ambisonics-Mikrofon aufnehmen – A-Format, B-Format und die ICST-Integration](/post/ambisonics-mikrofon-a-format-b-format/)

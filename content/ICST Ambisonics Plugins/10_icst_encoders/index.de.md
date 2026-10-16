@@ -153,4 +153,4 @@ Für Setup und Syntax:
 - [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)
 - [OSC](/icst-ambisonics-plugins/13_osc/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)

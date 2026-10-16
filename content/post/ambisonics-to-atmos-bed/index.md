@@ -152,4 +152,4 @@ Die Konvertierung ist immer eine Entscheidung für ein spezifisches Wiedergabesy
 - [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
 - [Geschichte und Anwendungen des Ambisonics Decoders](/blog/decoder-geschichte-und-anwendungen/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)

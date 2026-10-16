@@ -438,6 +438,6 @@ Eine 0,1-Sekunden-Time-Selection bei 12 Steps/sec ergibt nur 1 Automationspunkt.
 ## Siehe auch
 
 - [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — für musikalisch getaktete, cue-basierte Bewegungen
-- [ICST AmbiEncoder_64](/icst-ambisonics-plugins/01_icst_ambi_encoder/) — das Encoder-Plugin
+- [ICST AmbiEncoder_64](/icst-ambisonics-plugins/10_icst_encoders/) — das Encoder-Plugin
 - [Installation](/icst-ambisonics-plugins/02_installation/) — Plugin-Einrichtung
 - [Motion Map Einrichtung](/icst-ambisonics-plugins/16_motion_map_setup/) — Python-OSC-Setup für macOS und Windows

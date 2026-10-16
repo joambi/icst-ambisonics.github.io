@@ -53,4 +53,4 @@ Nach dem Einfügen das Routing zwischen den neuen Spuren und dem bestehenden B-F
 
 - [Schnellstart](/icst-ambisonics-plugins/04_quick_start/)
 - [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)

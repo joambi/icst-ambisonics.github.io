@@ -316,7 +316,7 @@ tags:
     <span class="wf-badge">Csound optional</span>
   </div>
   <div class="wf-meta">
-    <span>🎛️ <a href="/de/icst-ambisonics-plugins/15_best_practices/">Voraussetzung: Best Practices</a></span>
+    <span>🎛️ <a href="/de/icst-ambisonics-plugins/17_best_practices/">Voraussetzung: Best Practices</a></span>
     <span>📐 <a href="/de/learn/ambisonics-formats/">Ambisonics-Formate</a></span>
     <span>🔧 <a href="/de/icst-ambisonics-plugins/">ICST Plugin-Dokumentation</a></span>
   </div>
@@ -660,7 +660,7 @@ Bei unregelmässigen Lautsprecher-Layouts (nicht sphärisch, asymmetrisch) biete
 ## Weiterführende Ressourcen
 
 <div class="wf-resources">
-  <a class="wf-resource-link" href="/de/icst-ambisonics-plugins/15_best_practices/">Best Practices<strong>Setup-Regeln, Routing, Monitoring, Export</strong></a>
+  <a class="wf-resource-link" href="/de/icst-ambisonics-plugins/17_best_practices/">Best Practices<strong>Setup-Regeln, Routing, Monitoring, Export</strong></a>
   <a class="wf-resource-link" href="/de/learn/ambisonics-formats/">Ambisonics-Formate<strong>A-Format · B-Format · ambiX · FuMa · ACN/SN3D</strong></a>
   <a class="wf-resource-link" href="/de/icst-ambisonics-plugins/12_render_bformat/">B-Format rendern<strong>Export-Guide für REAPER</strong></a>
   <a class="wf-resource-link" href="/de/learn/working-with-ambisonics-workshop/">Advanced Workshop<strong>4-Stunden Workshop: Audit · Aufnahme · Komposition</strong></a>

@@ -174,5 +174,5 @@ That is why MultiDecoder is especially useful in:
 - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
 - [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [Ambisonics Formats Explained](/learn/ambisonics-formats/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
 - [ICST AmbiDecoder — Multi-Decoder Mode](/post/multi-decoder-mode/)

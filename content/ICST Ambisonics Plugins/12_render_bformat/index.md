@@ -78,5 +78,5 @@ Notes: rendered from B-format master, not decoder output
 
 - [Step-by-Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [Ambisonics Formats Explained](/learn/ambisonics-formats/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
 - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)

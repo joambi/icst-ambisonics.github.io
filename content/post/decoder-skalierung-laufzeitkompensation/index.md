@@ -143,4 +143,4 @@ Die exportierte TXT-Datei enthält alle Lautsprecherpositionen im AED-Format und
 - [XYZ und AED – Koordinatensysteme im Vergleich](/post/xyz-vs-aed-koordinatensysteme/)
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
 - [Der Filter-Tab – Praxisbeispiele und Anwendungsfälle](/post/decoder-filter-praxisbeispiele/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)

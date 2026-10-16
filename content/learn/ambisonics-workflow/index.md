@@ -119,7 +119,7 @@ tags:
     <span class="wf-badge">Csound optional</span>
   </div>
   <div class="wf-meta">
-    <span>🎛️ <a href="/en/icst-ambisonics-plugins/15_best_practices/">Prerequisite: Best Practices</a></span>
+    <span>🎛️ <a href="/en/icst-ambisonics-plugins/17_best_practices/">Prerequisite: Best Practices</a></span>
     <span>📐 <a href="/en/learn/ambisonics-formats/">Ambisonics Formats</a></span>
     <span>🔧 <a href="/en/icst-ambisonics-plugins/">ICST Plugin Documentation</a></span>
   </div>
@@ -463,7 +463,7 @@ For irregular speaker layouts (non-spherical, asymmetric), the **AllRADecoder** 
 ## Further Resources
 
 <div class="wf-resources">
-  <a class="wf-resource-link" href="/en/icst-ambisonics-plugins/15_best_practices/">Best Practices<strong>Setup rules, routing, monitoring, export</strong></a>
+  <a class="wf-resource-link" href="/en/icst-ambisonics-plugins/17_best_practices/">Best Practices<strong>Setup rules, routing, monitoring, export</strong></a>
   <a class="wf-resource-link" href="/en/learn/ambisonics-formats/">Ambisonics Formats<strong>A-Format · B-Format · ambiX · FuMa · ACN/SN3D</strong></a>
   <a class="wf-resource-link" href="/en/icst-ambisonics-plugins/12_render_bformat/">Render B-Format<strong>Export guide for REAPER</strong></a>
   <a class="wf-resource-link" href="/en/learn/working-with-ambisonics-workshop/">Advanced Workshop<strong>4-hour workshop: audit · recording · composition</strong></a>

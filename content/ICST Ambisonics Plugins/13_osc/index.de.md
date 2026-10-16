@@ -78,7 +78,7 @@ Wenn du nur statische Positionierung oder einfache Automation in REAPER brauchst
 
 - [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
 - [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
-- [Best Practices](/icst-ambisonics-plugins/15_best_practices/)
+- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
 **OSC Tutorial Video**
 
 {{< youtube 7_s-jaUQa14 >}}
