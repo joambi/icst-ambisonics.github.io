@@ -76,7 +76,7 @@ Notes: rendered from B-format master, not decoder output
 
 ## Verwandte Seiten
 
-- [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [Schritt-für-Schritt-Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)
-- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
-- [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
+- [Best Practices](/de/icst-ambisonics-plugins/17_best_practices/)
+- [ICST Decoder](/de/icst-ambisonics-plugins/08_icst_decoder/)

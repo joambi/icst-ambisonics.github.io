@@ -17,10 +17,10 @@ A key strength is the direct connection between **panning, automation, and OSC c
 
 <div class="hero__links" style="margin: 1.4rem 0 0.6rem;">
   <a class="hero__link hero__link--primary" href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-download"></i>&nbsp;Download v3.2 (GitHub)
+    <i class="fas fa-download"></i>&nbsp;Download (GitHub Releases)
   </a>
   <a class="hero__link" href="/icst-ambisonics-plugins/00_new/">
-    <i class="fas fa-star"></i>&nbsp;What's new in v3.2
+    <i class="fas fa-star"></i>&nbsp;What's new in v4.0
   </a>
   <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">
     <i class="fas fa-bolt"></i>&nbsp;Quick Start

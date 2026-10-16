@@ -58,7 +58,7 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
 Vor dem Start werden folgende Komponenten benötigt:
 
 - **REAPER** v6 oder neuer
-- **ICST AmbiEncoder_64** auf dem Ziel-Track (siehe [Installation](/icst-ambisonics-plugins/02_installation/))
+- **ICST AmbiEncoder_64** auf dem Ziel-Track (siehe [Installation](/de/icst-ambisonics-plugins/02_installation/))
 - **Python 3** installiert — nur für die Live-OSC-Vorschau erforderlich
 - Beide Script-Dateien im **selben Ordner**: `JS_AmbiEncoder64_Motion_Map_GUI.lua` und `JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua`
 
@@ -82,7 +82,7 @@ Der Writer `JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua` muss im **selben 
 
 Im **Actions**-Fenster `JS_AmbiEncoder64_Motion_Map_GUI` suchen und einen Tastaturkürzel oder Toolbar-Button zuweisen.
 
-Eine detailliertere Anleitung inkl. Python-OSC-Setup für macOS und Windows bietet die [Motion Map Einrichtungsseite](/icst-ambisonics-plugins/16_motion_map_setup/).
+Eine detailliertere Anleitung inkl. Python-OSC-Setup für macOS und Windows bietet die [Motion Map Einrichtungsseite](/de/icst-ambisonics-plugins/16_motion_map_setup/).
 
 ---
 
@@ -437,7 +437,7 @@ Eine 0,1-Sekunden-Time-Selection bei 12 Steps/sec ergibt nur 1 Automationspunkt.
 
 ## Siehe auch
 
-- [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — für musikalisch getaktete, cue-basierte Bewegungen
-- [ICST AmbiEncoder_64](/icst-ambisonics-plugins/10_icst_encoders/) — das Encoder-Plugin
-- [Installation](/icst-ambisonics-plugins/02_installation/) — Plugin-Einrichtung
-- [Motion Map Einrichtung](/icst-ambisonics-plugins/16_motion_map_setup/) — Python-OSC-Setup für macOS und Windows
+- [ICST Ambi Motion Markers](/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — für musikalisch getaktete, cue-basierte Bewegungen
+- [ICST AmbiEncoder_64](/de/icst-ambisonics-plugins/10_icst_encoders/) — das Encoder-Plugin
+- [Installation](/de/icst-ambisonics-plugins/02_installation/) — Plugin-Einrichtung
+- [Motion Map Einrichtung](/de/icst-ambisonics-plugins/16_motion_map_setup/) — Python-OSC-Setup für macOS und Windows

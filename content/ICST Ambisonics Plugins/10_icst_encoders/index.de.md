@@ -138,7 +138,7 @@ Die Auswahl gilt nach **Position in der Liste**. Werden Quellen oder Gruppen sp�
 
 F체r Setup und Syntax:
 
-- [OSC](/icst-ambisonics-plugins/13_osc/)
+- [OSC](/de/icst-ambisonics-plugins/13_osc/)
 
 ## H채ufige Fehler
 
@@ -150,7 +150,7 @@ F체r Setup und Syntax:
 
 ## N채chster Schritt
 
-- [Schritt-f체r-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [Schritt-f체r-Schritt-Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/)
 - [Ambisonics-Formate erkl채rt](/de/learn/ambisonics-formats/)
-- [OSC](/icst-ambisonics-plugins/13_osc/)
-- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
+- [OSC](/de/icst-ambisonics-plugins/13_osc/)
+- [Best Practices](/de/icst-ambisonics-plugins/17_best_practices/)

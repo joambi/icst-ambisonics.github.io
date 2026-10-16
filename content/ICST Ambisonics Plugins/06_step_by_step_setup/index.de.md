@@ -237,7 +237,7 @@ Beispiel mit **Src_3**:
 
 ### Finalisieren und Export
 
-Für einen kompakten eigenständigen Render-Leitfaden siehe [B-Format in REAPER rendern](/icst-ambisonics-plugins/12_render_bformat/).
+Für einen kompakten eigenständigen Render-Leitfaden siehe [B-Format in REAPER rendern](/de/icst-ambisonics-plugins/12_render_bformat/).
 
 ### Pre-Render-Checkliste
 

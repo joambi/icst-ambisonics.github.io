@@ -455,6 +455,6 @@ Der frühere dialogbasierte Animator wurde mit 3.2.0.5 entfernt; dessen Konfigur
 
 ## Weiterführende Seiten
 
-- [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
-- [OSC](/icst-ambisonics-plugins/13_osc/)
-- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
+- [ICST Encoders](/de/icst-ambisonics-plugins/10_icst_encoders/)
+- [OSC](/de/icst-ambisonics-plugins/13_osc/)
+- [Best Practices](/de/icst-ambisonics-plugins/17_best_practices/)

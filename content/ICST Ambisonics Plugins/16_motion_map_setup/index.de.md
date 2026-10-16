@@ -20,7 +20,7 @@ Dieses Setup-Kapitel gehört zu [Motion Mapping](/de/icst-ambisonics-plugins/15_
 | Komponente | Wofür | Bezugsquelle |
 |------------|-------|--------------|
 | REAPER v6+ | Scripts ausführen | [reaper.fm](https://reaper.fm) |
-| ICST AmbiEncoder_64 | Automation schreiben | [Downloads](/icst-ambisonics-plugins/08_downloads/) |
+| ICST AmbiEncoder_64 | Automation schreiben | [Downloads](/de/icst-ambisonics-plugins/08_downloads/) |
 | Motion Map Bundle | Die Scripts | [Unten herunterladen](#1-bundle-herunterladen) |
 | Python 3 | Nur für Live-OSC-Vorschau | Ab macOS 12 vorinstalliert; [python.org](https://www.python.org/downloads/) auf Windows |
 
@@ -285,5 +285,5 @@ Das GUI versucht automatisch `python` als Fallback. Falls beides scheitert, Pyth
 
 Nach abgeschlossenem Setup:
 
-- [Motion Map Benutzerhandbuch](/icst-ambisonics-plugins/15_icst_ambi_motion_map/) — vollständige Anleitung zu allen Funktionen
-- [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — cue-basierte Alternative für räumliche Bewegung
+- [Motion Map Benutzerhandbuch](/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/) — vollständige Anleitung zu allen Funktionen
+- [ICST Ambi Motion Markers](/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) — cue-basierte Alternative für räumliche Bewegung

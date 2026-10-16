@@ -96,7 +96,7 @@ Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaur
 ## 1. Voraussetzungen
 
 - **REAPER** v6 oder neuer (v7 empfohlen)
-- **ICST AmbiEncoder_64** auf dem Ziel-Track — siehe [Installation](/icst-ambisonics-plugins/02_installation/)
+- **ICST AmbiEncoder_64** auf dem Ziel-Track — siehe [Installation](/de/icst-ambisonics-plugins/02_installation/)
 - **Python 3** mit `python-osc` — nur für die Live-OSC-Vorschaubrücke erforderlich
   - macOS / Linux: `pip3 install python-osc`
   - Windows: siehe [Python unter Windows](#python-unter-windows) unten
@@ -107,7 +107,7 @@ Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaur
 
 ### Schritt 1 — Bundle herunterladen
 
-**[ICST_Kristall_Motion_Map_Bundle.zip](/downloads/lua-scripts/ICST_Kristall_Motion_Map_Bundle.zip)** herunterladen (auch auf der [Downloads-Seite](/icst-ambisonics-plugins/08_downloads/) verfügbar) und entpacken, z. B. nach `~/REAPER/Scripts/ICST_Kristall_Motion_Map_Bundle/`.
+**[ICST_Kristall_Motion_Map_Bundle.zip](/downloads/lua-scripts/ICST_Kristall_Motion_Map_Bundle.zip)** herunterladen (auch auf der [Downloads-Seite](/de/icst-ambisonics-plugins/08_downloads/) verfügbar) und entpacken, z. B. nach `~/REAPER/Scripts/ICST_Kristall_Motion_Map_Bundle/`.
 
 Das Bundle enthält:
 
@@ -616,6 +616,6 @@ Importierte Atome sind **standardmässig statisch** (Offset = 0) — ein Standbi
 
 ## Siehe auch
 
-- [ICST Ambi Motion Map](/icst-ambisonics-plugins/15_icst_ambi_motion_map/) — schrittbasierte 2D/3D-Bewegungsformen
-- [OSC-Referenz](/icst-ambisonics-plugins/13_osc/) — AmbiEncoder-OSC-Format und Koordinatensystem
-- [Downloads](/icst-ambisonics-plugins/08_downloads/) — Skript-Downloads
+- [ICST Ambi Motion Map](/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/) — schrittbasierte 2D/3D-Bewegungsformen
+- [OSC-Referenz](/de/icst-ambisonics-plugins/13_osc/) — AmbiEncoder-OSC-Format und Koordinatensystem
+- [Downloads](/de/icst-ambisonics-plugins/08_downloads/) — Skript-Downloads

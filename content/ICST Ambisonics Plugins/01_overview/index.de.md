@@ -21,10 +21,10 @@ Die ICST Ambisonics Plugins bilden eine REAPER-basierte Produktionsumgebung für
 
 Wähle den schnellsten Einstieg für dein Ziel:
 
-- **Erste funktionierende Session:** [Schnellstart](/icst-ambisonics-plugins/04_quick_start/)
-- **Saubere Installation:** [Installation](/icst-ambisonics-plugins/02_installation/)
-- **Routing von Grund auf aufbauen:** [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
-- **B-Format korrekt rendern:** [B-Format in REAPER rendern](/icst-ambisonics-plugins/12_render_bformat/)
+- **Erste funktionierende Session:** [Schnellstart](/de/icst-ambisonics-plugins/04_quick_start/)
+- **Saubere Installation:** [Installation](/de/icst-ambisonics-plugins/02_installation/)
+- **Routing von Grund auf aufbauen:** [Schritt-für-Schritt-Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/)
+- **B-Format korrekt rendern:** [B-Format in REAPER rendern](/de/icst-ambisonics-plugins/12_render_bformat/)
 
 ## Zentrale Plugin-Kette
 

@@ -40,11 +40,11 @@ description: "Kompakter Einstieg zum Öffnen des ICST MultiEncoder-Projekttempla
 ## Nächster Schritt
 
 <div class="next-step-grid">
-  <a class="next-step-card" href="/icst-ambisonics-plugins/10_icst_encoders/">
+  <a class="next-step-card" href="/de/icst-ambisonics-plugins/10_icst_encoders/">
     <strong>Quellen platzieren</strong>
     <span>Bewege und automatisiere Quellen im MultiEncoder.</span>
   </a>
-  <a class="next-step-card" href="/icst-ambisonics-plugins/06_step_by_step_setup/">
+  <a class="next-step-card" href="/de/icst-ambisonics-plugins/06_step_by_step_setup/">
     <strong>Routing verstehen</strong>
     <span>Weiter mit Decoder, Recording und Setup-Details.</span>
   </a>

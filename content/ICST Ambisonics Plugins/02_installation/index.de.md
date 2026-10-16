@@ -24,8 +24,8 @@ Für eine verlässliche Installation solltest du Folgendes bereit haben:
 
 Empfohlener nächster Schritt nach der Installation:
 
-- [Schnellstart](/icst-ambisonics-plugins/04_quick_start/) für die erste funktionierende Session
-- [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/) wenn du das Routing manuell aufbauen willst
+- [Schnellstart](/de/icst-ambisonics-plugins/04_quick_start/) für die erste funktionierende Session
+- [Schritt-für-Schritt-Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/) wenn du das Routing manuell aufbauen willst
 
 ## Installation unter macOS
 
@@ -97,5 +97,5 @@ Wenn die Vorlagen fehlen, prüfe zusätzlich die oben genannten gemeinsamen Temp
 
 ## Nächster Schritt
 
-- [Schnellstart](/icst-ambisonics-plugins/04_quick_start/)
-- [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [Schnellstart](/de/icst-ambisonics-plugins/04_quick_start/)
+- [Schritt-für-Schritt-Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/)

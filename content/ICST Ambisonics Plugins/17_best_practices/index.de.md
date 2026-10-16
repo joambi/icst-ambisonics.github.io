@@ -54,7 +54,7 @@ Der Decoder übersetzt das B-Format-Feld in Lautsprechersignale. Ein Mismatch zw
   Den HOA-Bus zum Decoder für Lautsprecherwiedergabe und zu einem separaten binauralen Decoder wie IEM BinauralDecoder oder SPARTA für Kopfhörerwiedergabe routen.
   Beide Pfade sollen nie unbeabsichtigt parallel laufen.
 
-Für komplexe Setups mit Höhenebenen oder separaten Subgruppen den **[ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)** verwenden.
+Für komplexe Setups mit Höhenebenen oder separaten Subgruppen den **[ICST MultiDecoder](/de/icst-ambisonics-plugins/09_icst_multidecoder/)** verwenden.
 Er kann bis zu vier unabhängige Decoder-Einheiten auf dasselbe B-Format-Eingangssignal anwenden.
 Jede Einheit klar nach ihrer Zone benennen, zum Beispiel `Mid Ring`, `Top Layer` oder `Sub`.
 
@@ -88,7 +88,7 @@ Sorgfalt beim Export verhindert Formatverwirrung bei der Abgabe an andere System
 
 ### REAPER-Render-Leitfaden
 
-Für die vollständige Export-Sequenz, die Kanalzahl-Kurzreferenz und den wiederverwendbaren Meta-Text in REAPER siehe [B-Format in REAPER rendern](/icst-ambisonics-plugins/12_render_bformat/).
+Für die vollständige Export-Sequenz, die Kanalzahl-Kurzreferenz und den wiederverwendbaren Meta-Text in REAPER siehe [B-Format in REAPER rendern](/de/icst-ambisonics-plugins/12_render_bformat/).
 
 ## 6. Projekt-Hygiene
 
@@ -124,11 +124,11 @@ Eine Session, die einfach weitergegeben werden kann, ist auch eine Session, die 
 
 ## Verwandte Seiten
 
-- [B-Format in REAPER rendern](/icst-ambisonics-plugins/12_render_bformat/)
-- [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
-- [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
-- [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
-- [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
-- [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
-- [OSC](/icst-ambisonics-plugins/13_osc/)
+- [B-Format in REAPER rendern](/de/icst-ambisonics-plugins/12_render_bformat/)
+- [Quick Start](/de/icst-ambisonics-plugins/04_quick_start/)
+- [Schritt-für-Schritt-Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [ICST Decoder](/de/icst-ambisonics-plugins/08_icst_decoder/)
+- [ICST MultiDecoder](/de/icst-ambisonics-plugins/09_icst_multidecoder/)
+- [ICST Encoders](/de/icst-ambisonics-plugins/10_icst_encoders/)
+- [OSC](/de/icst-ambisonics-plugins/13_osc/)
 - [Downloads](/blog/downloads/)

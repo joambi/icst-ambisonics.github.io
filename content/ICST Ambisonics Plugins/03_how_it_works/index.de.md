@@ -108,7 +108,7 @@ Nutze **MultiEncoder**, wenn:
 
 ## Nächste Schritte
 
-- [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
-- [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
-- [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
-- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
+- [Schritt-für-Schritt-Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [ICST Encoders](/de/icst-ambisonics-plugins/10_icst_encoders/)
+- [ICST Decoder](/de/icst-ambisonics-plugins/08_icst_decoder/)
+- [Best Practices](/de/icst-ambisonics-plugins/17_best_practices/)

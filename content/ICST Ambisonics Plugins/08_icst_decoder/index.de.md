@@ -179,23 +179,23 @@ Lautsprecher-Presets können jederzeit gespeichert und erneut geladen werden. Da
 
 Wenn dein Array mehrere Höhenebenen oder unterschiedliche Lautsprecher-Subsets verwendet, gehe weiter zu:
 
-- [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
+- [ICST MultiDecoder](/de/icst-ambisonics-plugins/09_icst_multidecoder/)
 
 Verwandte Seiten:
 
-- [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/)
-- [B-Format in REAPER rendern](/icst-ambisonics-plugins/12_render_bformat/)
+- [Schritt-für-Schritt-Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/)
+- [B-Format in REAPER rendern](/de/icst-ambisonics-plugins/12_render_bformat/)
 - [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)
-- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
+- [Best Practices](/de/icst-ambisonics-plugins/17_best_practices/)
 
 ## Mehr erfahren
 
 Diese Artikel vertiefen die Konzepte dieser Seite mit praktischen Beispielen und theoretischem Hintergrund:
 
 - [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)
-- [Wie es funktioniert](/icst-ambisonics-plugins/03_how_it_works/)
-- [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
-- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
+- [Wie es funktioniert](/de/icst-ambisonics-plugins/03_how_it_works/)
+- [ICST MultiDecoder](/de/icst-ambisonics-plugins/09_icst_multidecoder/)
+- [Best Practices](/de/icst-ambisonics-plugins/17_best_practices/)
 - [Binaural Monitoring im ICST-Workflow](/post/binaural-monitoring-icst-workflow/)
 - [Den B-Format-Master exportieren – AmbiX, Kanalreihenfolge und Normalisierung](/post/b-format-export-reaper/)
 - [Ambisonics-Mikrofon aufnehmen – A-Format, B-Format und die ICST-Integration](/post/ambisonics-mikrofon-a-format-b-format/)
