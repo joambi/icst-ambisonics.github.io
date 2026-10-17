@@ -3,6 +3,7 @@ title: What's New
 date: 2025-11-03T16:13:00
 weight: 15
 ---
+<!-- v4.0: bis zum Release ausgeblendet. Zum Freischalten diesen Kommentar entfernen.
 # ICST Ambisonics Plugins v4.0
 
 Coming soon!
@@ -16,6 +17,7 @@ Coming soon!
 - [Blauert filter per source (Blauert column)](/icst-ambisonics-plugins/10_icst_encoders/#source-window)
 - [Group context menu: Reset Stretch, Reset Rotation, Apply color to sources](/icst-ambisonics-plugins/10_icst_encoders/#grouping-and-movement)
 - [Animator](/icst-ambisonics-plugins/11_animator/)
+-->
 
 # ICST Ambisonics Plugins v3.2 
 

@@ -12,6 +12,9 @@
   <!-- Meta -->
   {{- hugo.Generator -}}
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  {{- if .Params.noindex }}
+  <meta name="robots" content="noindex,nofollow" />
+  {{- end }}
   <meta name="author" content="{{ or .Site.Params.authorName .Site.Params.author.name .Site.Params.author }}" />
   <meta
     name="description"

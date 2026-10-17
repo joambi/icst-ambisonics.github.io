@@ -3,6 +3,7 @@ title: Was ist neu
 date: 2025-11-03T16:13:00
 weight: 15
 ---
+<!-- v4.0: bis zum Release ausgeblendet. Zum Freischalten diesen Kommentar entfernen.
 # ICST Ambisonics Plugins v4.0
 
 Coming soon!
@@ -19,6 +20,7 @@ Coming soon!
 - [Kontextmenü der Gruppen: Reset Stretch, Reset Rotation, Apply color to sources](/de/icst-ambisonics-plugins/10_icst_encoders/#gruppierung-und-bewegung)
 
 ---
+-->
 
 # ICST Ambisonics Plugins v3.2
 **Download:**

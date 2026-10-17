@@ -3,6 +3,12 @@ title: ICST Animator
 date: 2026-10-15T00:00:00
 weight: 85
 draft: false
+# Unlisted bis zum Release 4.0: per URL erreichbar, nicht in Listen/Menüs/Sitemap, noindex
+build:
+  list: never
+sitemap:
+  disable: true
+noindex: true
 toc: true
 type: docs
 description: "Tutorial and reference for the ICST Animator: move, rotate and transform source groups in the Multi-AmbiEncoder_64 on a timeline."
