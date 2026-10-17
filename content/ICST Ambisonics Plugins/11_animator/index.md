@@ -83,6 +83,30 @@ Each group has a **group point** (G1, G2, … in the radar) and its **sources** 
 - The animation keeps running while the Animator window is **closed**.
 - A rotation **around the listener** is not an action but a **Circle movement with Center 0/0/0**.
 
+### Where a clip starts: start value and start position
+
+Every clip needs a point of departure. You can **define** it or let the clip **take over** the current state:
+
+| | Movement clip | Action clip |
+|---|---|---|
+| **defined** | *Use Defined Start Position* on, start position entered | *Use Start Value* on, start angle or start stretch entered |
+| **taken over** | off; the clip begins wherever the group point is at that moment | off; the clip builds on the current rotation or stretch |
+
+With a **defined** start the group jumps to that value when the clip begins, and the clip then runs the same way every time, whatever happened before. That holds for every Play, loop, Pause/Resume and even for entering the clip part-way through.
+
+With a **taken-over** start the result is only predictable when playback runs into the clip from before it, without interruption. As soon as anything intervenes, "the current state" is a different one and the clip ends somewhere else:
+
+| Situation | What happens without a defined start |
+|---|---|
+| Stop, then Play again | The second run begins at the end point of the first. A 90° rotation stands at 270° after three runs. |
+| Loop in the DAW | as above, further on every pass |
+| Pause and Resume | The pause position becomes the new start and the clip jumps ahead (as of v4.0). A 180° rotation then ends at 286°, for instance, a circle no longer closes, a spiral runs into the centre. |
+| Locate or scrubbing into the clip | The clip picks up at an arbitrary point of its path; the rest is unpredictable (as of v4.0). |
+| Absolute Target | The target is added to the current rotation instead of being reached (as of v4.0): 90° after 30° gives 120°. |
+| Group moved by hand beforehand | The clip may start at the old position (as of v4.0). |
+
+Hence the rule: **define the start**, unless you explicitly want a clip to carry on where the previous one left off. Even then there is a safe way: start position of the second clip = target of the first, see [Transitions between clips](#transitions-between-clips). The audible jump at the clip start is avoided the same way: start value = state immediately before. Jitter has no start value and needs none.
+
 ## User interface
 
 ![Opening the Animator: Animator button (1) and window (2), group point (3), Movement track (4), tracks without a group (5)](AT-BAS-03-Animator-oeffnen-Annotiert.png)
@@ -178,7 +202,7 @@ For all types with a centre point, the **Target** fields define the centre point
 ### Setting positions
 
 - Enter values, **drag points in the preview** or capture the current group position with **Apply** below the sliders.
-- **Use Defined Start Position:** the clip starts at the defined start position instead of the group's current position.
+- **Use Defined Start Position:** the clip starts at the defined start position instead of the group's current position, see [Where a clip starts](#where-a-clip-starts-start-value-and-start-position).
 - **Show Polar Coordinates (AED):** shows all position fields as azimuth/elevation/distance.
 - **Real-world scale:** the preview circle becomes the scene boundary (the project's distance scaler); unticked, the preview zooms to the clip.
 
@@ -268,7 +292,7 @@ An action clip transforms the sources of a group around the group point. Several
 | **Constant Per Second** | constant rate (e.g. 30 °/s); negative = opposite direction |
 
 {{< notice warning >}}
-**Always set *Use Start Value* for Rotation and Stretch.** Without a start value, the transformation builds on the current state and adds up on every loop, Stop/Play and Pause/Resume. With a start value (e.g. 0°) the result is the same every time.
+**Always set *Use Start Value* for Rotation and Stretch.** Without a start value, the transformation builds on the current state and adds up on every loop, Stop/Play and Pause/Resume; *Absolute Target* is then added to the current rotation as well (90° after 30° gives 120°). With a start value (e.g. 0°) the result is the same every time. Why that is and which situations are affected: [Where a clip starts](#where-a-clip-starts-start-value-and-start-position).
 {{< /notice >}}
 
 For rotations the start angle is absolute: the sources snap to it when the clip starts, and all axes of the clip become absolute (axes without a start angle begin at 0). Jitter has neither timing type nor start value; the actual maximum offset is about **half** of the displayed Intensity.
@@ -292,6 +316,8 @@ For rotations the start angle is absolute: the sources snap to it when the clip 
 ### Jitter
 
 {{< video name="AT-ACT-V05-Jitter" >}}
+
+Each source scatters individually around its base position; the group point stays put. The motion is smooth, with roughly one new random target per second at Speed 1. The offset never adds up, not even across Pause/Resume, and at the end of the clip the sources are back exactly on their base position. The tables in the Encoder Settings do not show the jitter, only the radar does.
 
 ## Recipes
 
@@ -370,12 +396,12 @@ The group positions (X/Y/Z) are ordinary host parameters. **File → Preferences
 
 | Mode | The Animator controls … |
 |---|---|
-| **Always while ON** | always, as long as it is ON |
-| **Over its clips, per layer** | from the first to the last clip, Movement and Action separately |
-| **Over its clips, combined** | as above, both layers together (*default*) |
-| **Only during clips** | only during clips; DAW automation takes over in every gap |
+| **Animator wins while switched on** | its groups for as long as it is enabled; automation on those groups never takes effect |
+| **Animator wins across its clips (per layer)** | from its first clip to its last; the movement and action layers are handed over separately |
+| **Animator wins across its clips (combined)** | as above, but both layers hand over at the same two instants, so position and rotation/stretch always change hands together (*default*) |
+| **Animator wins during clips only** | only during clips; automation has every gap. The most flexible, but control passes back and forth at every clip boundary |
 
-Only what the timeline actually controls with clips is taken over. The Animator itself has no automatable ON/OFF parameter.
+A property (position, rotation, stretch) is only ever taken over if the timeline actually has clips that drive it. The Animator itself has no automatable ON/OFF parameter.
 
 ## Saving and loading scenes
 
@@ -410,15 +436,19 @@ If the distance scaler differs, a dialog asks: **Rescale** (convert positions, w
 | Group jumps at clip 2 | start of clip 2 = target of clip 1, or Use Defined Start Position off |
 | Change has no effect | stop and restart the transport, otherwise save and reload the project |
 | Repetition snaps back | use Palindrome for open paths |
-| Loop does not repeat identically | set *Use Start Value* for Rotation/Stretch |
+| Loop does not repeat identically, Pause/Resume jumps | set *Use Start Value* or *Use Defined Start Position*, see [Where a clip starts](#where-a-clip-starts-start-value-and-start-position) |
 | Animator "does nothing" | check X/Y/Z automation and *Automation Control* |
 | Group cannot be moved | switch the Animator OFF |
 | Polar movement takes an unexpected path | Polar always takes the shortest arc; use Circle for full revolutions |
 
 ## Limitations (v4.0)
 
-<!-- TODO check: compare with v4.0 -->
+<!-- TODO check: compare with v4.0; remove the two bullets below once the fix is in a release -->
+<!-- TODO confirm with developer: Repetitions with Relative During Clip add up (3 × 90° = 270°); use Palindrome for back and forth. Add to the Timing section once confirmed. -->
 
+- Without *Use Start Value* / *Use Defined Start Position*, Pause/Resume continues from the current value instead of the clip's own progress (all movement types, rotation and stretch, all timing types). Entering a clip part-way through (locate) then gives a wrong value too.
+- An Absolute Target for rotation or stretch without a start value is added to the current orientation instead of being reached absolutely.
+- After stopping in the middle of a Jitter clip, the last offset stays until the next Play.
 - Clip edits during playback sometimes only take effect at the next Play start.
 - Movements may stop up to one audio block short of their target.
 - **Circle** with a start point above or below the centre is flattened into the horizontal plane.

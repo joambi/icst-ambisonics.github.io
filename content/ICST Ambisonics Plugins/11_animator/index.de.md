@@ -83,6 +83,30 @@ Jede Gruppe hat einen **Gruppenpunkt** (im Radar G1, G2, …) und ihre **Quellen
 - Die Animation läuft auch bei **geschlossenem** Animator-Fenster weiter.
 - Eine Rotation **um den Hörer** ist keine Action, sondern ein **Circle-Movement mit Center 0/0/0**
 
+### Wo ein Clip beginnt: Startwert und Startposition
+
+Jeder Clip braucht einen Ausgangspunkt. Du kannst ihn **festlegen** oder vom aktuellen Zustand **übernehmen** lassen:
+
+| | Movement-Clip | Action-Clip |
+|---|---|---|
+| **festgelegt** | *Use Defined Start Position* an, Startposition eingetragen | *Use Start Value* an, Startwinkel bzw. Start-Stretch eingetragen |
+| **übernommen** | aus; der Clip beginnt dort, wo der Gruppenpunkt gerade steht | aus; der Clip baut auf der aktuellen Drehung bzw. Dehnung auf |
+
+Mit **festgelegtem** Start springt die Gruppe beim Clipstart auf diesen Wert, und der Clip läuft von dort jedes Mal gleich ab, egal was vorher war. Das ist bei jedem Play, Loop, Pause/Resume und auch beim Einstieg mitten in den Clip reproduzierbar.
+
+Mit **übernommenem** Start ist das Ergebnis nur vorhersagbar, wenn die Wiedergabe von vor dem Clip ohne Unterbruch durchläuft. Sobald etwas dazwischenkommt, ist „der aktuelle Zustand" ein anderer, und der Clip endet woanders:
+
+| Situation | Was ohne festgelegten Start passiert |
+|---|---|
+| Stop und nochmals Play | Der zweite Lauf beginnt am Endpunkt des ersten. Eine Drehung um 90° steht nach drei Läufen bei 270°. |
+| Loop in der DAW | wie oben, bei jedem Durchgang weiter |
+| Pause und Resume | Die Pausenposition wird zum neuen Start, der Clip springt nach vorn (Stand v4.0). Eine Drehung um 180° endet dann z. B. bei 286°, ein Kreis schliesst sich nicht mehr, eine Spirale läuft ins Zentrum. |
+| Locate oder Scrubbing in den Clip | Der Clip setzt an einer beliebigen Stelle seines Verlaufs an; der Rest ist nicht vorhersagbar (Stand v4.0). |
+| Absolute Target | Das Ziel wird auf die aktuelle Drehung addiert statt angefahren (Stand v4.0): 90° nach 30° ergibt 120°. |
+| Gruppe vorher von Hand versetzt | Der Clip startet unter Umständen an der alten Position (Stand v4.0). |
+
+Daraus die Regel: **Start festlegen**, ausser du willst ausdrücklich, dass ein Clip dort weitermacht, wo der vorige aufgehört hat. Auch dann geht es ohne Risiko: Startposition des zweiten Clips = Zielposition des ersten, siehe [Übergänge zwischen Clips](#übergänge-zwischen-clips). Den hörbaren Sprung beim Clipstart vermeidest du auf dieselbe Weise: Startwert = Zustand unmittelbar davor. Jitter hat keinen Startwert und braucht keinen.
+
 ## Oberfläche
 
 ![Animator öffnen: Animator-Button (1) und Fenster (2), Gruppenpunkt (3), Movement-Spur (4), Spuren ohne Gruppe (5)](AT-BAS-03-Animator-oeffnen-Annotiert.png)
@@ -178,7 +202,7 @@ Bei allen Typen mit Mittelpunkt definieren die **Target**-Felder den Mittelpunkt
 ### Positionen setzen
 
 - Werte eintippen, Punkte in der **Vorschau ziehen** oder die aktuelle Gruppenposition mit **Apply** unter den Reglern übernehmen.
-- **Use Defined Start Position:** Der Clip startet an der definierten Startposition statt an der aktuellen Gruppenposition.
+- **Use Defined Start Position:** Der Clip startet an der definierten Startposition statt an der aktuellen Gruppenposition, siehe [Wo ein Clip beginnt](#wo-ein-clip-beginnt-startwert-und-startposition).
 - **Show Polar Coordinates (AED):** zeigt alle Positionsfelder als Azimut/Elevation/Distanz.
 - **Real-world scale:** Der Vorschaukreis wird zur Szenengrenze (Distance-Scaler des Projekts); ohne Häkchen zoomt die Vorschau auf den Clip.
 
@@ -268,7 +292,7 @@ Ein Action-Clip transformiert die Quellen einer Gruppe um den Gruppenpunkt. Mehr
 | **Constant Per Second** | konstante Rate (z. B. 30 °/s); negativ = Gegenrichtung |
 
 {{< notice warning >}}
-**Bei Rotation und Stretch immer *Use Start Value* setzen.** Ohne Startwert baut die Transformation auf dem aktuellen Zustand auf und summiert sich bei jedem Loop, Stop/Play und Pause/Resume. Mit Startwert (z. B. 0°) ist das Ergebnis jedes Mal gleich.
+**Bei Rotation und Stretch immer *Use Start Value* setzen.** Ohne Startwert baut die Transformation auf dem aktuellen Zustand auf und summiert sich bei jedem Loop, Stop/Play und Pause/Resume; auch *Absolute Target* wird dann auf die aktuelle Drehung addiert (90° nach 30° ergibt 120°). Mit Startwert (z. B. 0°) ist das Ergebnis jedes Mal gleich. Warum das so ist und welche Situationen betroffen sind: [Wo ein Clip beginnt](#wo-ein-clip-beginnt-startwert-und-startposition).
 {{< /notice >}}
 
 Bei Rotationen ist der Startwinkel absolut: Die Quellen springen beim Clipstart auf diesen Winkel, und alle Achsen des Clips werden absolut (Achsen ohne Startwinkel beginnen bei 0). Jitter hat weder Timing-Typ noch Startwert; der tatsächliche Maximalversatz beträgt etwa **die Hälfte** der angezeigten Intensity.
@@ -292,6 +316,8 @@ Bei Rotationen ist der Startwinkel absolut: Die Quellen springen beim Clipstart 
 ### Jitter
 
 {{< video name="AT-ACT-V05-Jitter" >}}
+
+Jede Quelle streut einzeln um ihre Grundposition; der Gruppenpunkt bleibt stehen. Die Bewegung ist weich, mit etwa einem neuen Zufallsziel pro Sekunde bei Speed 1. Der Versatz summiert sich nicht, auch nicht bei Pause/Resume, und am Clipende stehen die Quellen wieder exakt auf der Grundposition. Die Tabellen in den Encoder Settings zeigen den Jitter nicht, nur das Radar.
 
 ## Rezepte
 
@@ -370,12 +396,12 @@ Die Gruppenpositionen (X/Y/Z) sind normale Host-Parameter. **File → Preference
 
 | Modus | Der Animator steuert … |
 |---|---|
-| **Solange eingeschaltet** | immer, solange er ON ist |
-| **Über seine Clips (pro Layer)** | vom ersten bis zum letzten Clip, Movement und Action getrennt |
-| **Über seine Clips (kombiniert)** | wie oben, beide Layer gemeinsam (*Standard*) |
-| **Nur während Clips** | nur während Clips; in jeder Lücke übernimmt die DAW-Automation |
+| **Animator wins while switched on** | die Gruppen, solange er eingeschaltet ist; Automation auf diesen Gruppen wirkt nie |
+| **Animator wins across its clips (per layer)** | vom ersten bis zum letzten Clip; Movement- und Action-Layer werden getrennt übergeben |
+| **Animator wins across its clips (combined)** | wie oben, aber beide Layer wechseln im selben Moment, Position und Rotation/Stretch immer gemeinsam (*Standard*) |
+| **Animator wins during clips only** | nur während Clips; in jeder Lücke übernimmt die Automation. Am flexibelsten, aber die Kontrolle wechselt an jeder Clipgrenze |
 
-Übernommen wird nur, was die Timeline tatsächlich mit Clips steuert. Der Animator selbst hat keinen automatisierbaren ON/OFF-Parameter.
+Übernommen wird eine Eigenschaft (Position, Rotation, Stretch) nur, wenn die Timeline tatsächlich Clips hat, die sie steuern. Der Animator selbst hat keinen automatisierbaren ON/OFF-Parameter.
 
 ## Szenen speichern und laden
 
@@ -410,14 +436,19 @@ Bei abweichendem Distance-Scaler fragt ein Dialog: **Rescale** (Positionen, Wayp
 | Gruppe springt bei Clip 2 | Start von Clip 2 = Ziel von Clip 1 oder Use Defined Start Position aus |
 | Änderung wirkt nicht | Transport stoppen und neu starten, sonst Projekt speichern und neu laden |
 | Wiederholung springt zurück | Bei offenen Bahnen Palindrome verwenden |
-| Loop läuft nicht identisch | *Use Start Value* bei Rotation/Stretch setzen |
+| Loop läuft nicht identisch, Pause/Resume springt | *Use Start Value* bzw. *Use Defined Start Position* setzen, siehe [Wo ein Clip beginnt](#wo-ein-clip-beginnt-startwert-und-startposition) |
 | Animator „tut nichts“ | X/Y/Z-Automation und *Automation Control* prüfen |
 | Gruppe lässt sich nicht verschieben | Animator OFF schalten |
 | Polar-Bewegung nimmt unerwarteten Weg | Polar wählt immer den kürzesten Bogen; für Umrundungen Circle verwenden |
 
 ## Einschränkungen (v4.0)
 
-<!-- TODO prüfen: gegen v4.0 abgleichen -->
+<!-- TODO prüfen: gegen v4.0 abgleichen; die zwei Punkte unten entfernen, sobald der Fix in einem Release ist -->
+<!-- TODO mit Entwickler klären: Repetitions bei Relative During Clip addieren sich (3 × 90° = 270°); für Hin und Zurück Palindrome verwenden. Nach Bestätigung in den Timing-Abschnitt übernehmen. -->
+
+- Ohne *Use Start Value* / *Use Defined Start Position* setzt Pause/Resume vom aktuellen Wert statt vom Clipfortschritt aus fort (alle Bewegungstypen, Rotation und Stretch, alle Timing-Typen). Auch der Einstieg mitten in einen Clip (Locate) liefert dann einen falschen Wert.
+- Ein Absolute Target bei Rotation oder Stretch ohne Startwert wird auf die aktuelle Ausrichtung addiert, statt absolut erreicht zu werden.
+- Nach Stop mitten in einem Jitter-Clip bleibt der letzte Versatz stehen (bis zum nächsten Play).
 
 - Clip-Änderungen während der Wiedergabe greifen teils erst beim nächsten Play-Start.
 - Bewegungen können bis zu einem Audio-Block vor dem Ziel enden.
