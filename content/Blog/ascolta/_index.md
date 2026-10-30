@@ -34,7 +34,7 @@ group: "Listening"
     <span class="hub-upcoming__eyebrow">Upcoming · #21</span>
     <div class="hub-upcoming__date">26 November 2026</div>
     <div class="hub-upcoming__meta">18:00 · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
-    <div class="hub-upcoming__text">Concert · Free admission</div>
+    <div class="hub-upcoming__text"><a href="/blog/ascolta/21-ascolta/">Yoko Konishi — Fluctuating Beings · Corpus Lucide</a> · Free admission</div>
   </div>
 </div>
 
@@ -64,6 +64,14 @@ group: "Listening"
 <div class="season-section">
   <div class="season-label">2026</div>
   <div class="session-list">
+    <a class="session-row" href="/blog/ascolta/21-ascolta/">
+      <span class="session-row__num">#21</span>
+      <span class="session-row__content">
+        <span class="session-row__subtitle">Yoko Konishi — Fluctuating Beings · Corpus Lucide</span>
+        <span class="session-row__date">26 Nov 2026</span>
+        <span class="session-row__tag">Residency · Work in progress</span>
+      </span>
+    </a>
     <a class="session-row" href="/blog/ascolta/20-ascolta/">
       <span class="session-row__num">#20</span>
       <span class="session-row__content">
