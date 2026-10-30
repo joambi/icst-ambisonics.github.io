@@ -1,6 +1,6 @@
 ---
 title: "#20 ascolta — Pierre Alexandre Tremblay"
-description: "ICST guest artist Pierre Alexandre Tremblay presents three longer Ambisonics works, including his new 3D audio piece Lugano (2026)."
+description: "ICST guest artist Pierre Alexandre Tremblay presents three longer Ambisonics works, including his new 3D audio piece Un été tessinois (2026)."
 date: 2026-09-07T08:00:00
 weight: 20
 tags: ["ascolta", "acousmatic", "ambisonics", "residency"]
@@ -24,7 +24,7 @@ The 20th edition of ‘Ascolta’ is dedicated to three longer pieces by Pierre 
 
 - _Bucolic & Broken_ (2017)
 - _Les espaces négatifs_ (2023)
-- _Lugano_ (2026)
+- _Un été tessinois_ (2026)
 
 ---
 

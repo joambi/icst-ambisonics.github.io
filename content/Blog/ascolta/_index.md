@@ -31,12 +31,6 @@ group: "Listening"
 
 <div class="hub-next">
   <div class="hub-upcoming">
-    <span class="hub-upcoming__eyebrow">Upcoming · #20</span>
-    <div class="hub-upcoming__date">29 October 2026</div>
-    <div class="hub-upcoming__meta">18:00 · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
-    <div class="hub-upcoming__text"><a href="/blog/ascolta/20-ascolta/">Pierre Alexandre Tremblay — Bucolic &amp; Broken · Les espaces négatifs · Lugano (2026)</a> · Free admission</div>
-  </div>
-  <div class="hub-upcoming">
     <span class="hub-upcoming__eyebrow">Upcoming · #21</span>
     <div class="hub-upcoming__date">26 November 2026</div>
     <div class="hub-upcoming__meta">18:00 · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
@@ -73,7 +67,7 @@ group: "Listening"
     <a class="session-row" href="/blog/ascolta/20-ascolta/">
       <span class="session-row__num">#20</span>
       <span class="session-row__content">
-        <span class="session-row__subtitle">Pierre Alexandre Tremblay — Bucolic &amp; Broken · Les espaces négatifs · Lugano (2026)</span>
+        <span class="session-row__subtitle">Pierre Alexandre Tremblay — Bucolic &amp; Broken · Les espaces négatifs · Un été tessinois (2026)</span>
         <span class="session-row__date">29 Oct 2026</span>
         <span class="session-row__tag">Residency · Portrait</span>
       </span>
