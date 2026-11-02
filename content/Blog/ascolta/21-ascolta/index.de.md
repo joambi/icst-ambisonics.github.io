@@ -22,11 +22,11 @@ _Freier Eintritt_
 
 ## Programm
 
-### _Fluctuating Beings_ (2026, Work in Progress)
+### _Fluctuating Beings_ (2026) · Stereo
 
 Das Stück besteht hauptsächlich aus Aufnahmen von Feedback-Klängen, die auf einer Bassdrum erzeugt wurden. In der ursprünglichen Fassung wird das Feedback zusätzlich live mit einem anderen Setup erzeugt und gespielt; für diese Hörsitzung wird eine akusmatische Version des Werks präsentiert.
 
-### _Corpus Lucide_
+### _Corpus Lucide_ (2025) · Ambisonics
 
 Yoko Konishis Abschlussprojekt für den IRCAM Cursus erforscht Rauschen als musikalisches Thema. Statt von aufgenommenem Rauschen als Ausgangsmaterial auszugehen, konstruiert das Werk Rauschen von Grund auf aus Kombinationen von Sinuswellen.
 

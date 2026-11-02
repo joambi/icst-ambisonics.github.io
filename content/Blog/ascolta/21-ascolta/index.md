@@ -22,11 +22,11 @@ _Free admission_
 
 ## Programme
 
-### _Fluctuating Beings_ (2026, work in progress)
+### _Fluctuating Beings_ (2026) · Stereo
 
 Composed mainly from recordings of feedback sound produced on a bass drum. In its original version, the feedback is also generated and performed live with a different setup; for this listening session, an acousmatic version of the work will be presented.
 
-### _Corpus Lucide_
+### _Corpus Lucide_ (2025) · Ambisonics
 
 Yoko Konishi's final project for the IRCAM Cursus explores noise as a musical theme. Rather than using recorded noise as its starting material, the work constructs noise from scratch through combinations of sine waves.
 
