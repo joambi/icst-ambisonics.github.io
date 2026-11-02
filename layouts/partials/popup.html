@@ -12,14 +12,14 @@
     <button type="button" class="icst-popup__x" data-close aria-label="{{ if $de }}Schliessen{{ else }}Close{{ end }}">&times;</button>
     {{- with $img }}
       {{- $r := .Resize "720x webp" }}
-      <a href="{{ $target.RelPermalink }}"><img class="icst-popup__img" src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" alt=""></a>
+      <a href="{{ $target.RelPermalink }}" tabindex="-1" aria-hidden="true"><img class="icst-popup__img" src="{{ $r.RelPermalink }}" width="{{ $r.Width }}" height="{{ $r.Height }}" alt=""></a>
     {{- end }}
     <div class="icst-popup__body">
       <p class="icst-popup__label">{{ if $de }}Aktuell{{ else }}Coming up{{ end }}</p>
       <h2 class="icst-popup__title" id="icst-popup-title">{{ $target.Title }}</h2>
       {{- with $target.Description }}<p class="icst-popup__text">{{ . }}</p>{{ end }}
       <div class="icst-popup__actions">
-        <a class="icst-popup__btn icst-popup__btn--primary" href="{{ $target.RelPermalink }}">{{ if $de }}Mehr erfahren{{ else }}Read more{{ end }}</a>
+        <a class="icst-popup__btn icst-popup__btn--primary" href="{{ $target.RelPermalink }}" aria-label="{{ if $de }}Mehr erfahren{{ else }}Read more{{ end }}: {{ $target.Title }}">{{ if $de }}Mehr erfahren{{ else }}Read more{{ end }}</a>
         <button type="button" class="icst-popup__btn" data-close>{{ if $de }}Schliessen{{ else }}Close{{ end }}</button>
       </div>
     </div>

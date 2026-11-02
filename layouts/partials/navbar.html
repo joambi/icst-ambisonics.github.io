@@ -5,12 +5,12 @@
     animated fadeInDown
   {{ end }}"
 >
-  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+  <button type="button" class="navbar-burger" data-target="navMenu" aria-controls="navMenu" aria-label="{{ if eq .Site.Language.Lang "de" }}Menü{{ else }}Menu{{ end }}" aria-expanded="false">
     <span aria-hidden="true" class="navbar-burger__line"></span>
     <span aria-hidden="true" class="navbar-burger__line"></span>
     <span aria-hidden="true" class="navbar-burger__line"></span>
-  </a>
-  <nav class="nav">
+  </button>
+  <nav class="nav" aria-label="{{ if eq .Site.Language.Lang "de" }}Hauptmenü{{ else }}Main{{ end }}">
     <ul class="nav__list" id="navMenu">
       {{ $url := .RelPermalink }}
       {{ range $menuId, $menuItem := .Site.Menus.main }}
@@ -19,7 +19,6 @@
 
           <li class="nav__list-item">
             <div class="optionswitch">
-              <input class="optionswitch__picker" type="checkbox" id="{{ $menuId }}" hidden />
 
               {{ $labelClass := "optionswitch__label" }}
               {{ range $menuItem.Children }}
@@ -30,12 +29,12 @@
               {{ end }}
 
 
-              <label class="{{ $labelClass }}" for="{{ $menuId }}"
+              <button type="button" class="{{ $labelClass }}" aria-expanded="false" aria-controls="submenu-{{ $menuId }}"
                 >{{ $menuItem.Name }} <i class="fa fa-angle-down" aria-hidden="true"></i
-              ></label>
+              ></button>
 
               <div class="optionswitch__triangle"></div>
-              <ul class="optionswitch__list">
+              <ul class="optionswitch__list" id="submenu-{{ $menuId }}">
                 {{ range $menuItem.Children }}
                   <li class="optionswitch__list-item">
                     {{ .Pre }}
@@ -75,12 +74,11 @@
       {{ if and .IsTranslated hugo.IsMultilingual }}
         <li class="nav__list-item">
           <div class="optionswitch">
-            <input class="optionswitch__picker" type="checkbox" id="languagepicker" hidden />
-            <label class="optionswitch__label" for="languagepicker"
-              >{{ .Site.Language.Label }} <i class="fa fa-angle-down" aria-hidden="true"></i
-            ></label>
+            <button type="button" class="optionswitch__label" aria-expanded="false" aria-controls="submenu-language"
+              >{{ .Site.Language.Label }}<span class="sr-only"> {{ if eq .Site.Language.Lang "de" }}Sprache wählen{{ else }}Select language{{ end }}</span> <i class="fa fa-angle-down" aria-hidden="true"></i
+            ></button>
             <div class="optionswitch__triangle"></div>
-            <ul class="optionswitch__list">
+            <ul class="optionswitch__list" id="submenu-language">
               {{ range $.Translations }}
                 <li class="optionswitch__list-item">
                   <a href="{{ .RelPermalink }}" title="{{ .Language.Label }}"
@@ -99,16 +97,16 @@
         </li>
       {{ end }}
       <li class="nav__list-item">
-        <a href="{{ "/search/" | relLangURL }}" title="{{ if eq .Site.Language.Lang "de" }}Suche{{ else }}Search{{ end }}">
+        <a href="{{ "/search/" | relLangURL }}" title="{{ if eq .Site.Language.Lang "de" }}Suche{{ else }}Search{{ end }}" aria-label="{{ if eq .Site.Language.Lang "de" }}Suche{{ else }}Search{{ end }}">
           <i class="fas fa-search fa-fw" aria-hidden="true"></i>
         </a>
       </li>
       {{ if not .Site.Params.disableThemeSwitcher }}
         <li class="nav__list-item">
           <div class="themeswitch">
-            <a title="Switch Theme">
+            <button type="button" class="themeswitch__btn" title="{{ if eq .Site.Language.Lang "de" }}Farbschema wechseln{{ else }}Switch theme{{ end }}" aria-label="{{ if eq .Site.Language.Lang "de" }}Farbschema wechseln{{ else }}Switch theme{{ end }}">
               <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a>
+            </button>
           </div>
         </li>
       {{ end }}

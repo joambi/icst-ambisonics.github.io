@@ -1,0 +1,56 @@
+# Quality checks on the built site: internal links (lychee) and accessibility (pa11y/axe).
+# Not part of the deploy path. First phase: report only (continue-on-error), tighten later.
+name: Site quality (links, accessibility)
+
+on:
+  workflow_dispatch:
+  pull_request:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: "0.159.1"
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install Dart Sass
+        run: |
+          DART_SASS_VERSION="1.89.0"
+          wget -q https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          tar -xf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
+          sudo mv dart-sass /opt/dart-sass
+          sudo ln -s /opt/dart-sass/sass /usr/local/bin/sass
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+      - name: Build site including drafts (preview only, not deployed)
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+        run: hugo -D --baseURL "http://localhost:8080/" --destination site
+      - name: Check internal links in built HTML
+        uses: lycheeverse/lychee-action@v2
+        continue-on-error: true
+        with:
+          args: --offline --no-progress --root-dir ${{ github.workspace }}/site 'site/**/*.html'
+          fail: true
+      - name: Serve built site
+        run: |
+          npx -y http-server site -p 8080 -s &
+          for i in $(seq 1 30); do curl -sf http://localhost:8080/ >/dev/null && break; sleep 1; done
+      - name: Accessibility check (axe via pa11y-ci)
+        continue-on-error: true
+        run: npx -y pa11y-ci@3 --config .pa11yci.json

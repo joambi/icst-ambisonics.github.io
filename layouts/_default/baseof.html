@@ -11,6 +11,7 @@
 >
   {{- partial "head.html" . -}}
   <body class="body">
+    <a class="skip-link" href="#main-content">{{ if eq .Site.Language.Lang "de" }}Zum Inhalt springen{{ else }}Skip to content{{ end }}</a>
     <div class="wrapper">
       <aside
         {{ if (and (or (eq .Site.Params.hidesidebar true) (eq .Params.hidesidebar true)) (not .IsHome)) }}
@@ -21,7 +22,7 @@
       >
         {{- partial "sidebar.html" . -}}
       </aside>
-      <main
+      <main id="main-content" tabindex="-1"
         {{ if (and (or (eq .Site.Params.hidesidebar true) (eq .Params.hidesidebar true)) (not .IsHome)) }}
           class="wrapper__main wrapper__main--fullscreen"
         {{ else }}

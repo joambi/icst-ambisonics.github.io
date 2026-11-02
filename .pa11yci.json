@@ -1,0 +1,23 @@
+{
+  "defaults": {
+    "runners": ["axe"],
+    "standard": "WCAG2AA",
+    "timeout": 60000,
+    "chromeLaunchConfig": {
+      "executablePath": "/usr/bin/google-chrome",
+      "args": ["--no-sandbox"]
+    }
+  },
+  "urls": [
+    "http://localhost:8080/",
+    "http://localhost:8080/de/",
+    "http://localhost:8080/start/",
+    "http://localhost:8080/icst-ambisonics-plugins/01_overview/",
+    "http://localhost:8080/de/icst-ambisonics-plugins/01_overview/",
+    "http://localhost:8080/icst-ambisonics-plugins/10_icst_encoders/",
+    "http://localhost:8080/icst-ambisonics-plugins/11_animator/",
+    "http://localhost:8080/de/icst-ambisonics-plugins/11_animator/",
+    "http://localhost:8080/post/",
+    "http://localhost:8080/search/"
+  ]
+}

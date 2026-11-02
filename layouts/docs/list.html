@@ -2,7 +2,7 @@
 {{ $pages := sort (where .RegularPages "Params.hidden_in_nav" "ne" true) "Weight" }}
 
 <div class="docs docs--index animated fadeInDown">
-  <nav class="docs__nav">
+  <nav class="docs__nav" aria-label="{{ if eq .Site.Language.Lang "de" }}Dokumentation{{ else }}Documentation{{ end }}">
     <div class="docs__nav-title">
       <a href="{{ .RelPermalink }}">
         <i class="fas fa-book"></i>

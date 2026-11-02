@@ -26,7 +26,19 @@ Die Seite steht auf `draft: true` und wird erst mit Release 4.0 freigeschaltet. 
 
 ## Site und Repo
 
-- [ ] Link- und Accessibility-Check auf `public/` in der CI (z. B. lychee, pa11y), `pagefind` mit fester Version.
+- [x] Link- und Accessibility-Check auf der gebauten Site: `.github/workflows/a11y.yml` (lychee offline + pa11y/axe, `.pa11yci.json`), vorerst nur berichtend (`continue-on-error`). Erster Lauf manuell starten, Befunde sichten, dann auf blockierend umstellen.
+- [ ] `pagefind` mit fester Version pinnen (`npx -y pagefind` in `hugo.yml`).
+- [ ] Barrierefreiheit offen (aus dem statischen Audit von `public/`):
+  - [x] Dropdown-Menüs (Tutorials, Studio, Ascolta, Docs), Sprachwähler und mobiler Menü-Burger sind jetzt `<button>` mit `aria-expanded`/`aria-controls` (vorher versteckte Checkbox, per Tastatur nicht bedienbar). Escape schliesst, Klick ausserhalb schliesst. Im Browser prüfen.
+  - [ ] Menünamen in der DE-Navbar sind Englisch (Start, Tutorials, Docs): übersetzen oder mit `lang="en"` auszeichnen.
+  - [x] Theme-Umschalter ist jetzt ein `<button>` mit `aria-label` (Handler in `anatole-theme-switcher.js` unverändert, Click bubbelt zu `.themeswitch`). Im Browser mit Tab/Enter/Leertaste und in beiden Themes prüfen.
+  - [ ] Überschriften-Sprünge (z. B. h2 auf h4 auf der Startseite, 101 Seiten).
+  - [ ] Zwei `h1` auf rund 40 Beiträgen: der Titel plus ein `# ` im Markdown (z. B. `post/circle-selected`, `post/gp-manipulation`, `00_new`).
+  - [ ] Doppelte id `fuma-vs-ambix` in `ambisonics-101/formats` (EN und DE).
+  - [ ] Suchfeld in `blog/b-format-archive` ohne Label.
+  - [ ] Farbkontrast nicht geprüft (Download-Button der Animator-Seite mit Inline-Farben, Dark Theme). Das erledigt erst der axe-Lauf.
+  - [ ] Videos ohne Untertitel (VTT) und ohne `<track>`.
+- [ ] `.github/workflows/format.yml` hört auf den Branch `master`, das Repo nutzt `main`: läuft nie. Entfernen oder korrigieren.
 - [ ] 404-Seite: kein `canonical`/`hreflang`, dafür `noindex`.
 - [ ] Doppeltes Deployment klären (`netlify.toml` und GitHub Pages).
 - [ ] Repo aufräumen: `docs/` (Altbestand), `Evernote/`, `Attachments/`, `Clippings/`, `exports/`, Pasted-Image-Dateien im Root, `Volumes/`, `resources/_gen` aus dem Tracking nehmen. Grosse Medien nach Git LFS oder extern, danach Historie verkleinern (vorher Backup).
