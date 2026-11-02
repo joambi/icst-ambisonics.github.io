@@ -90,7 +90,7 @@
     {{ if $hasToc }}
     <aside class="docs__toc">
       <div class="docs__toc-inner">
-        <p class="docs__toc-label">On this page</p>
+        <p class="docs__toc-label">{{ if eq .Site.Language.Lang "de" }}Auf dieser Seite{{ else }}On this page{{ end }}</p>
         {{ .TableOfContents }}
       </div>
     </aside>
