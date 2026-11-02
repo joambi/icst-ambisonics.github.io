@@ -7,8 +7,16 @@
 {{- $dir := .Get "dir" | default (replaceRE `^/[a-z]{2}/` "/" .Page.RelPermalink) -}}
 {{- $autoplay := eq (.Get "autoplay") "true" -}}
 {{- $muted := or $autoplay (eq (.Get "muted") "true") -}}
+{{- /* Fail the build instead of serving a silent 404 when the video file is missing */ -}}
+{{- $file := printf "static%s%s.mp4" $dir $name -}}
+{{- if not (fileExists $file) -}}
+  {{- errorf "video shortcode: file not found: %s (page %s)" $file .Page.File.Path -}}
+{{- end -}}
+{{- if and (ne (.Get "poster") "false") (not (fileExists (printf "static%s%s-poster.png" $dir $name))) -}}
+  {{- warnf "video shortcode: poster not found: static%s%s-poster.png (page %s)" $dir $name .Page.File.Path -}}
+{{- end -}}
 <figure class="video">
-  <video controls loop playsinline preload="metadata"{{ if $autoplay }} autoplay{{ end }}{{ if $muted }} muted{{ end }}{{ if ne (.Get "poster") "false" }} poster="{{ $dir }}{{ $name }}-poster.png"{{ end }} src="{{ $dir }}{{ $name }}.mp4" style="max-width:100%"></video>
+  <video controls loop playsinline preload="metadata"{{ with .Get "caption" }} aria-label="{{ . | plainify }}"{{ end }}{{ if $autoplay }} autoplay{{ end }}{{ if $muted }} muted{{ end }}{{ if ne (.Get "poster") "false" }} poster="{{ $dir }}{{ $name }}-poster.png"{{ end }} src="{{ $dir }}{{ $name }}.mp4" style="max-width:100%"></video>
   {{- with .Get "caption" }}
   <figcaption>{{ . | markdownify }}</figcaption>
   {{- end }}
