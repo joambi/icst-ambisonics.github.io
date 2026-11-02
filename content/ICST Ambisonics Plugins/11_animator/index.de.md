@@ -13,13 +13,13 @@ Niveau: Fortgeschritten | Zielgruppe: Komponierende, Technik, Studierende, Inter
 <!-- TODO Release: Download-Link einsetzen -->
 <p><button type="button" disabled aria-disabled="true" style="display:inline-block;padding:.6em 1.4em;border:0;border-radius:6px;background:#2e8b57;color:#fff;font-weight:600;font-size:1em;opacity:.55;cursor:not-allowed;">Download Animator &nbsp;·&nbsp; Coming soon</button></p>
 
-![Multi-AmbiEncoder_64 mit vier Gruppen und der Animator-Timeline](AT-BAS-05-Animator-Overview.png)
+![Multi-AmbiEncoder_64 mit vier Gruppen und der Animator-Timeline](AT-BAS-05-Animator-Overview.webp)
 
 Der **Animator** ist die Choreografie-Timeline des **Multi-AmbiEncoder_64**: Er bewegt, dreht und verformt ganze Quellengruppen automatisch über die Zeit, synchron zum DAW-Transport.
 
 {{< video name="AT-DEM-V01-Load-Demo" caption="Demo: die vier Beispielszenen aus File → Load Demo." >}}
 
-> **Getestet mit** REAPER v7.74 – v7.82, macOS arm64. Einzelne GIFs zeigen noch ältere Builds. Neu in dieser Version: siehe [Versionshinweise](#versionshinweise).
+> **Getestet mit** REAPER v7.74 – v7.82, macOS arm64. Unter Windows wurde diese Version bisher nicht getestet; dort gilt Ctrl statt ⌘. Einzelne GIFs zeigen noch ältere Builds. Neu in dieser Version: siehe [Versionshinweise](#versionshinweise).
 
 ## Schnellstart: die erste Bewegung
 
@@ -33,7 +33,7 @@ Voraussetzung: Im Multi-AmbiEncoder_64 ist mindestens **eine Gruppe** mit Quelle
 
 Die Gruppe fährt vom Ausgangspunkt zum Ziel:
 
-{{< video name="AT-MOV-V01-MoveTo" >}}
+{{< video name="AT-MOV-V01-MoveTo" caption="MoveTo: die Gruppe wandert vom Startpunkt zum Ziel." >}}
 
 {{< notice warning >}}
 Solange der Animator **ON** ist, lassen sich Gruppen im Radar nicht von Hand verschieben. Zum Positionieren immer zuerst OFF schalten.
@@ -109,7 +109,7 @@ Daraus die Regel: **Start festlegen**, ausser du willst ausdrücklich, dass ein 
 
 ## Oberfläche
 
-![Animator öffnen: Animator-Button (1) und Fenster (2), Gruppenpunkt (3), Movement-Spur (4), Spuren ohne Gruppe (5)](AT-BAS-03-Animator-oeffnen-Annotiert.png)
+![Animator öffnen: Animator-Button (1) und Fenster (2), Gruppenpunkt (3), Movement-Spur (4), Spuren ohne Gruppe (5)](AT-BAS-03-Animator-oeffnen-Annotiert.webp)
 
 1. **Animator-Button** im AmbiEncoder öffnet das Fenster; der Play-Button links daneben schaltet ON/OFF.
 2. **Animator-Fenster** mit Menüs und Werkzeugleiste.
@@ -157,7 +157,7 @@ Daraus die Regel: **Start festlegen**, ausser du willst ausdrücklich, dass ein 
 - **M** schaltet Clips stumm; ein stummer Clip behält alle Daten.
 - Rechteckauswahl mit ⌘-Ziehen; Copy/Paste auch zwischen Gruppen; **Undo/Redo** für alle Änderungen.
 
-![Muted-Checkbox im Clip-Editor und stummgeschalteter Clip in der Timeline](AT-CLP-01-Muted-Annotiert.png)
+![Muted-Checkbox im Clip-Editor und stummgeschalteter Clip in der Timeline](AT-CLP-01-Muted-Annotiert.webp)
 
 ## Movement-Clips
 
@@ -299,23 +299,23 @@ Bei Rotationen ist der Startwinkel absolut: Die Quellen springen beim Clipstart 
 
 ### Rotation X
 
-{{< video name="AT-ACT-V01-Rotation-X" >}}
+{{< video name="AT-ACT-V01-Rotation-X" caption="Rotation X: die Quellenanordnung dreht sich um die X-Achse." >}}
 
 ### Rotation Y
 
-{{< video name="AT-ACT-V02-Rotation-Y" >}}
+{{< video name="AT-ACT-V02-Rotation-Y" caption="Rotation Y: die Quellenanordnung dreht sich um die Y-Achse." >}}
 
 ### Rotation Z
 
-{{< video name="AT-ACT-V03-Rotation-Z" >}}
+{{< video name="AT-ACT-V03-Rotation-Z" caption="Rotation Z: die Quellenanordnung dreht sich um die Z-Achse." >}}
 
 ### Stretch
 
-{{< video name="AT-ACT-V04-Stretch-Grow-Shrink" >}}
+{{< video name="AT-ACT-V04-Stretch-Grow-Shrink" caption="Stretch: die Abstände der Quellen zum Gruppenpunkt wachsen und schrumpfen." >}}
 
 ### Jitter
 
-{{< video name="AT-ACT-V05-Jitter" >}}
+{{< video name="AT-ACT-V05-Jitter" caption="Jitter: jede Quelle streut um ihre Grundposition, der Gruppenpunkt bleibt stehen." >}}
 
 Jede Quelle streut einzeln um ihre Grundposition; der Gruppenpunkt bleibt stehen. Die Bewegung ist weich, mit etwa einem neuen Zufallsziel pro Sekunde bei Speed 1. Der Versatz summiert sich nicht, auch nicht bei Pause/Resume, und am Clipende stehen die Quellen wieder exakt auf der Grundposition. Die Tabellen in den Encoder Settings zeigen den Jitter nicht, nur das Radar.
 
