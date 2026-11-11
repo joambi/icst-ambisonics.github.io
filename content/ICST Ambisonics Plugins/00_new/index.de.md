@@ -3,145 +3,16 @@ title: Was ist neu
 date: 2025-11-03T16:13:00
 weight: 15
 ---
-<!-- v4.0: bis zum Release ausgeblendet. Zum Freischalten diesen Kommentar entfernen.
-# ICST Ambisonics Plugins v4.0
+# ICST Ambisonics Plugins Release 4.0
 
-Coming soon!
+Wir freuen uns, die Version 4.0.0 unserer ICST-Ambisonics-Plugins vorstellen zu dürfen.
 
-## Neu in v4.0
-### ICST AmbiEncoders:
+Dieses Release (v4.0.0) ist ein grosser Schritt nach vorn, um in Ambisonics mit Source-Gruppen zu komponieren: Choreographien direkt in der Reaper-Timeline erstellen und als XML-Scores speichern, um sie auch in anderen Projekten wieder einzubinden und neu gestalten zu können. Der ICST-Gruppen-Animator befindet sich im Stadium «Work in Progress» und wird weiter wachsen.
 
-- [Animator](/de/icst-ambisonics-plugins/11_animator/)
-- [Group-Points (GP) senden OSC-Messages](/de/icst-ambisonics-plugins/10_icst_encoders/#osc-integration)
-- [Neues OSC-Auswahlfenster](/de/icst-ambisonics-plugins/10_icst_encoders/#osc-integration)
-- [Blauert-Filter nur in der Z-Achse (Height Only)](/de/icst-ambisonics-plugins/10_icst_encoders/#encoding-einstellungen)
-- [Blauert-Filter: Intensity Factor in %](/de/icst-ambisonics-plugins/10_icst_encoders/#encoding-einstellungen)
-- [Blauert-Filter pro Quelle (Spalte Blauert)](/de/icst-ambisonics-plugins/10_icst_encoders/#quellen-fenster)
-- [Kontextmenü der Gruppen: Reset Stretch, Reset Rotation, Apply color to sources](/de/icst-ambisonics-plugins/10_icst_encoders/#gruppierung-und-bewegung)
+Auch im ICST AmbiEncoder_64 Plugin haben wir die Blauertschen Filter optimiert, und für eine sphärische Darbietung ohne Frontausrichtung kann nur die Z-Achse gewählt werden.
 
----
--->
-
-# ICST Ambisonics Plugins v3.2
 **Download:**
-🔗 [**GitHub Releases**](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+🔗 [GitHub Release 4.0.0](https://github.com/schweizerweb/icst-ambisonics-plugins/releases/tag/4.0.0)
 
-Wir freuen uns, **v3.2** ankündigen zu können, mit einem großen Update für den **Multi-Decoder**, neuen Benutzeroberflächen-Layouts, verbesserten Filteroptionen, verbesserter OSC-Steuerung und zahlreichen Workflow-Verbesserungen basierend auf laufender empirischer Forschung am ICST.
-
-📖 **Vollständige Dokumentation:**
-🔗 [**Wiki**](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
-
----
-
-<div class="kristall-feature">
-  <section class="home-card kristall-feature__text">
-    <h4>Neu: ICST Kristall Motion Map — User Guide</h4>
-    <p>Ein eigenständiges REAPER-Lua-Skript für algorithmische 3D-Bewegung: Bis zu 64 AmbiEncoder-Quellen in einem Kristallgitter anordnen, per Schritt-Sequenzer animieren und das Ergebnis live via OSC ausgeben.</p>
-    <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/de/icst-ambisonics-plugins/18_kristall_motion_map/">Zum User Guide</a>
-      <a class="hero__link" href="/de/icst-ambisonics-plugins/08_downloads/">Downloads</a>
-    </div>
-  </section>
-  <figure class="kristall-feature__media">
-    <img src="/images/kristall-demo.gif" alt="ICST Kristall Motion Map Demo">
-  </figure>
-</div>
-
-<div class="kristall-feature__audio">
-  <p class="kristall-feature__audio-label"><strong>Klangbeispiel</strong> — ICST Kristall Motion Map</p>
-  <audio controls preload="none" style="width:100%">
-    <source src="/icst-ambisonics-plugins/18_kristall_motion_map/kristall-ex01.mp3" type="audio/mpeg">
-  </audio>
-</div>
-
----
-# ICST AmbiDecoder v3.2
-
-## **Neue Funktionen & Verbesserungen**
-
-### Bidirektionales Solo & Stummschaltung
-- Stummschalten oder Solo einzelner Lautsprecher oder Gruppen ganz einfach.
-- **Tastaturkürzel (macOS):**
-	`Shift + Control + S` / `Shift + Control + M`
-
-  ![bidi_mute](bidi_mute.gif)
-### Neu gestaltetes Layout
-Eine klarere und modularere Struktur:
-- **Lautsprecher-Einstellungen**
-- **Decoder-Einstellungen**
-- **Filteroptionen**
-- **Zusätzliche Funktionen** _(demnächst)_
-  ![New_layout](Layout_v3_1.png)
-### Neue CSV-Export- & Preset-Verwaltung
-- Lautsprecherkoordinaten in **CSV** exportieren zur Verwendung in Max (und umgekehrt).
-- Alle Presets als **XML** sichern und exportieren.
-- Preset-Sicherungen direkt importieren.
-
-![CSV](Speaker_setting_managment.gif)
-### Verbesserte Filteroberfläche
-
-- Acht neue Filteroptionen
-- Aktualisierte Benutzeroberfläche für leichtere Vergleiche und Optimierung
-
-	![filters](filters.png)
-	![filter UI](filter_UI.png)
-
-### Neuer Multi-Decoder-Modus
-
-- Vier vollständig unabhängige Decoder
-- Benutzerdefinierte Namen und Farben
-- Pro-Decoder-Lautsprecherauswahl
-- Unabhängige Ambisonics-Ordnung, Gewichtung, Filter, Stummschaltung und Verstärkung
-- Präzise räumliche Optimierung für komplexe Arrays
-
-📖 **Multi-Decoder-Anleitung:** [ICST AmbiDecoder – Multi-Decoder-Modus](/post/multi-decoder-mode/)
-![MultiDecoder](Multidecoder.png)
-
-### Neue Projektvorlagen
-
-- ICST_AmbiPlugins_MonoEncoder
-- ICST_AmbiPlugins_MultiEncoder
-
-### Neue Spurvorlagen
-
-- ICST AmbiPlugins
-  ![ICST | 400](Track_temp_icst.png)
-- ICST AmbiPlugins 3rdParty
-  ![3rdParty | 400](Track_temp_3rd.png)
-
----
-# **ICST AmbiEncoder v3.2**
-
-## Neue Funktionen & Layout
-
-- Neue Tab-basierte Layout-Struktur
-- Ambisonics-Ordnung-Selektor
-- Bidirektionales Solo & Stummschaltung
-
-![Enc_layout](Enc_layout.png)
-🔹 **Beispiel:** Layout
-
-![Enc_M_S](Enc_M_S.gif)
-🔹 **Beispiel:** Stummschaltung & Solo (bidirektional)
-
-## **OSC-Steuerung**
-
-Steuern Sie Gruppen über OSC mit **absoluten Euler-Winkeln**:
-- OSC-Eingabe aktivieren (z.B. **50001**)
-- Absolute Winkel von externen Tools senden (Max, TouchDesigner, usw.)
-- Sanfte, präzise Rotation und Bewegung kodierter Quellen
-
-![absolut_angel](OSC_abs_angel.gif)
-🔹 **Beispiel:** OSC von Max 9.0+ zu ICST AmbiEncoder
-
-💡 Weitere Details finden Sie im [Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder).
-
----
-# **Fehlerbehebungen**
-
-- Initialisierung der Decoder-Audioausgabe behoben
-- Problem mit der Radarrahmen-Sichtbarkeit gelöst
-- Beschriftungsumkehrung korrigiert
-- Absturz durch falsches Schließen von OSC-Fenstern behoben
-- Tutorial-Link im Hilfemenü aktualisiert
-- Lautsprecher-Test aktualisiert: White-Noise → **Pink-Noise**
+**Dokumentation:**
+📖 [ICST Animator](/de/icst-ambisonics-plugins/11_animator/)
