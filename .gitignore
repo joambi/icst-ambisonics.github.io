@@ -28,3 +28,9 @@ static/Kristall Map Bilder/
 
 # High-res Audio-Master (die web-tauglichen MP3s liegen im Seiten-Bundle)
 content/**/LUFS-23/
+
+# Animator-Rohmaterial (Quellvideos/-bilder); fertige Medien liegen in static/
+content/**/11_animator/*.mp4
+content/**/11_animator/Web_umbenannt/
+content/**/11_animator/_vorschau/
+content/**/11_animator/*Backup vor Medien*.md
