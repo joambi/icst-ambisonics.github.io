@@ -2,7 +2,7 @@
 title: ICST Animator
 date: 2026-10-15T00:00:00
 weight: 85
-draft: true   # bis zum Release 4.0 nicht gebaut; zum Freischalten auf false setzen
+draft: false
 toc: true
 type: docs
 description: "Tutorial and reference for the ICST Animator: move, rotate and transform source groups in the Multi-AmbiEncoder_64 on a timeline."
@@ -11,8 +11,6 @@ description: "Tutorial and reference for the ICST Animator: move, rotate and tra
 Level: Intermediate | Audience: Composer, technician, student, interactive-media user. | **Version: ICST Ambisonics Plugins 4.0**
 
 <!-- TODO release: insert download link -->
-<p><button type="button" disabled aria-disabled="true" style="display:inline-block;padding:.6em 1.4em;border:0;border-radius:6px;background:#2e8b57;color:#fff;font-weight:600;font-size:1em;opacity:.55;cursor:not-allowed;">Download Animator &nbsp;·&nbsp; Coming soon</button></p>
-
 ![Multi-AmbiEncoder_64 with four groups and the Animator timeline](AT-BAS-05-Animator-Overview.png)
 
 The **Animator** is the choreography timeline of the **Multi-AmbiEncoder_64**: it moves, rotates and reshapes entire source groups automatically over time, in sync with the DAW transport.
