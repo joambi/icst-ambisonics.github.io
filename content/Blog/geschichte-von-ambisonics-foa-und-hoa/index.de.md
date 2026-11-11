@@ -11,7 +11,7 @@ aliases:
 <div class="ambisonics-history">
 
 <p class="ambisonics-history__lead">
-Diese Timeline trennt die Entwicklung von <strong>FOA</strong> und <strong>HOA</strong>, zeigt aber auch die gemeinsamen Meilensteine. So wird sichtbar: FOA ist die historische Basis von Ambisonics, HOA entsteht spaeter als systematische Erweiterung fuer hoehere raeumliche Aufloesung.
+Diese Timeline trennt die Entwicklung von <strong>FOA</strong> und <strong>HOA</strong>, zeigt aber auch die gemeinsamen Meilensteine. So wird sichtbar: FOA ist die historische Basis von Ambisonics, HOA entsteht später als systematische Erweiterung für höhere räumliche Auflösung.
 </p>
 
 <div class="ambisonics-history__legend">
@@ -65,11 +65,11 @@ flowchart TB
 <div class="ambisonics-history__notes">
   <section class="ambisonics-history__note">
     <h3>FOA</h3>
-    <p>FOA ist der historische Kern von Ambisonics. Es ist kompakt, robust und bis heute dort stark, wo einfache Produktion, Distribution und Kompatibilitaet wichtiger sind als maximale Richtungsaufloesung.</p>
+    <p>FOA ist der historische Kern von Ambisonics. Es ist kompakt, robust und bis heute dort stark, wo einfache Produktion, Distribution und Kompatibilität wichtiger sind als maximale Richtungsauflösung.</p>
   </section>
   <section class="ambisonics-history__note">
     <h3>HOA</h3>
-    <p>HOA baut auf denselben Grundlagen auf, erweitert sie aber systematisch. Mit hoeherer Ordnung wachsen Richtungsauflosung, Flexibilitaet im Rendering und Relevanz fuer immersive Medien und Forschung.</p>
+    <p>HOA baut auf denselben Grundlagen auf, erweitert sie aber systematisch. Mit höherer Ordnung wachsen Richtungsauflosung, Flexibilität im Rendering und Relevanz für immersive Medien und Forschung.</p>
   </section>
 </div>
 
@@ -79,17 +79,17 @@ flowchart TB
 
 - **FOA** bezeichnet die erste Ordnung von Ambisonics und war die Form, in der das Verfahren historisch zuerst praktisch verbreitet wurde.
 - **HOA** wird ab etwa 2000 als eigenes modernes Forschungs- und Produktionsfeld sichtbar.
-- Die **gemeinsame Achse** zeigt, dass Formate, Standards und heutige Medienpraxis FOA und HOA nicht gegeneinander ausspielen, sondern beide in denselben Oekosystemen vorkommen.
+- Die **gemeinsame Achse** zeigt, dass Formate, Standards und heutige Medienpraxis FOA und HOA nicht gegeneinander ausspielen, sondern beide in denselben Ökosystemen vorkommen.
 
 ## Warum diese Unterscheidung wichtig ist
 
-Wer die Geschichte von Ambisonics nur als eine einzige Linie darstellt, uebersieht leicht, dass zwischen den fruehen FOA-Arbeiten der 1970er Jahre und der systematischen HOA-Entwicklung rund um 2000 ein deutlicher methodischer Sprung liegt. FOA ist nicht "veraltet", sondern oft die pragmatische Wahl. HOA ist nicht einfach "mehr Kanaele", sondern eine andere Groessenordnung an szenischer Praezision und Render-Flexibilitaet.
+Wer die Geschichte von Ambisonics nur als eine einzige Linie darstellt, übersieht leicht, dass zwischen den frühen FOA-Arbeiten der 1970er Jahre und der systematischen HOA-Entwicklung rund um 2000 ein deutlicher methodischer Sprung liegt. FOA ist nicht "veraltet", sondern oft die pragmatische Wahl. HOA ist nicht einfach "mehr Kanäle", sondern eine andere Größenordnung an szenischer Präzision und Render-Flexibilitaet.
 
 ## Quellen und Referenzen
 
 - Michael Gerzon, *Periphony: With-Height Sound Reproduction* (JAES, 1973)
 - Michael Gerzon, *Practical Periphony* (1980)
 - Jerome Daniel, Dissertation zu HOA-Grundlagen (2000/2001)
-- Mark Poletti, Arbeiten zu 3D-Surround-Systemen auf Basis sphaerischer Harmonischer (2005)
+- Mark Poletti, Arbeiten zu 3D-Surround-Systemen auf Basis sphärischer Harmonischer (2005)
 - Ambisonics Symposium 2011, *ambiX - A Suggested Ambisonics Format*
 - [RFC 8486: Ambisonics in an Ogg Opus Container](https://www.rfc-editor.org/info/rfc8486)

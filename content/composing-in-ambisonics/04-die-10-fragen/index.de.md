@@ -1,6 +1,6 @@
 ---
 title: "Die 10 Fragen im 3D-Raum"
-description: "Ein kompositorischer Fragenkatalog fuer Ambisonics-Stücke."
+description: "Ein kompositorischer Fragenkatalog für Ambisonics-Stücke."
 date: 2026-01-01T00:00:00
 weight: 40
 translationKey: "composing-10-questions"
@@ -31,9 +31,9 @@ Ein möglicher Arbeitsrhythmus sieht so aus: **Frage wählen → Mini-Studie bau
 
 ## Zehn kurze REAPER-Studien
 
-Die folgenden Miniaturen sind als **1- bis 2-minütige Skizzen** gedacht. Jede Studie beantwortet eine der zehn Leitfragen auf praktische Weise und laesst sich in **REAPER** mit den **ICST Ambisonics Plugins** oder aehnlichen HOA-Toolchains schnell umsetzen. Sie sind bewusst klein gehalten: eher **kompositorische Etueden** als fertige Stuecke.
+Die folgenden Miniaturen sind als **1- bis 2-minütige Skizzen** gedacht. Jede Studie beantwortet eine der zehn Leitfragen auf praktische Weise und lässt sich in **REAPER** mit den **ICST Ambisonics Plugins** oder ähnlichen HOA-Toolchains schnell umsetzen. Sie sind bewusst klein gehalten: eher **kompositorische Etüden** als fertige Stücke.
 
-Als Basissetup genuegt in allen Beispielen:
+Als Basissetup genügt in allen Beispielen:
 
 - 1 Masterspur mit `AmbiDecoder` oder `MultiDecoder`
 - 2 bis 6 Klangspuren mit `MonoEncoder` oder `MultiEncoder_64`
@@ -44,18 +44,18 @@ Als Basissetup genuegt in allen Beispielen:
 
 | Frage | Dauer | Spuren | Hauptautomation | Ziel |
 | --- | --- | --- | --- | --- |
-| 1. Ontologie | 1:30 | 3 | Position, Distanz, Hoehe | dieselbes Material in drei Raumwelten hoerbar machen |
+| 1. Ontologie | 1:30 | 3 | Position, Distanz, Höhe | dieselbes Material in drei Raumwelten hörbar machen |
 | 2. Raum vs. Spektrum/Zeit | 2:00 | 2 | Azimut, Elevation, Distanz vs. Audio-FX | vergleichen, ob Form eher durch Raum oder Klangwandel entsteht |
 | 3. Raumebenen | 1:30 | 3 Gruppen | Distanz, Spread, langsame Kreisbewegung | Vordergrund, Mittelfeld und Fernfeld stabil staffeln |
 | 4. Objektzahl/Dichte | 2:00 | 6-8 | Quellenanzahl, Position, Gruppierung | Kippmoment zwischen Klarheit und Wolke finden |
 | 5. Trajektorien | 1:30 | 3 | Kreis, Linie, Aufstieg, Implosion | Bewegungs-Vokabular als formale Marker testen |
-| 6. Lokalisation vs. Diffusitaet | 1:30 | 1-2 | Spread, Distance, Decorrelator-Mix | Fokus- und Defokus-Gesten komponieren |
-| 7. Abhoerszenario | 1:00-2:00 | 3 | Overhead vs. laterale Bewegung | Unterschiede zwischen Dome- und Binaural-Mix hoerbar machen |
-| 8. Publikum | 1:30 | 3-4 | kleine vs. grosse Raumkontraste | Lesbarkeit fuer unterschiedliche Hoergewohnheiten pruefen |
+| 6. Lokalisation vs. Diffusität | 1:30 | 1-2 | Spread, Distance, Decorrelator-Mix | Fokus- und Defokus-Gesten komponieren |
+| 7. Abhörszenario | 1:00-2:00 | 3 | Overhead vs. laterale Bewegung | Unterschiede zwischen Dome- und Binaural-Mix hörbar machen |
+| 8. Publikum | 1:30 | 3-4 | kleine vs. grosse Raumkontraste | Lesbarkeit für unterschiedliche Hörgewohnheiten prüfen |
 | 9. Realraum/Archetypen | 2:00 | 3 | Raumcharakter, EQ, Hall, Achsenbewegung | Tunnel, Platz und offener Raum als Archetypen bauen |
-| 10. Werkidentitaet | 1:00 | 2-3 | eine klare Haupttrajektorie | Miniatur plus saubere Dokumentation fuer Uebertragbarkeit |
+| 10. Werkidentität | 1:00 | 2-3 | eine klare Haupttrajektorie | Miniatur plus saubere Dokumentation für Übertragbarkeit |
 
-### Mini-Studie 1 — Ontologie: Was fuer eine Welt ist das?
+### Mini-Studie 1 — Ontologie: Was für eine Welt ist das?
 
 <div class="study-card">
 
@@ -71,21 +71,21 @@ Als Basissetup genuegt in allen Beispielen:
 **Ablauf:**
 | Zeit | Fokus | Aktion |
 | --- | --- | --- |
-| `0:00-0:30` | realistisch | Schritte vorne links, Umgebungsaufnahme als breite Kulisse, kaum unmoegliche Bewegungen |
-| `0:30-1:00` | abstrahiert | Dasselbe Material wird gedehnt, in Hoehe verschoben und klanglich entfremdet |
-| `1:00-1:30` | imaginierter Raum | Nur noch spektrale Spuren, diffuse Flaechen und unklare Tiefenstaffelung |
+| `0:00-0:30` | realistisch | Schritte vorne links, Umgebungsaufnahme als breite Kulisse, kaum unmögliche Bewegungen |
+| `0:30-1:00` | abstrahiert | Dasselbe Material wird gedehnt, in Höhe verschoben und klanglich entfremdet |
+| `1:00-1:30` | imaginierter Raum | Nur noch spektrale Spuren, diffuse Flächen und unklare Tiefenstaffelung |
 
-**REAPER-Fokus:** Positioniere dieselben Quellen in drei verschiedenen Raumlogiken. So wird sofort hoerbar, wie stark die **Ontologie** des Stuecks die kompositorischen Entscheidungen bestimmt.
+**REAPER-Fokus:** Positioniere dieselben Quellen in drei verschiedenen Raumlogiken. So wird sofort hörbar, wie stark die **Ontologie** des Stücks die kompositorischen Entscheidungen bestimmt.
 
 </div>
 
-### Mini-Studie 2 — Raum vs. Spektrum/Zeit: Was traegt die Form?
+### Mini-Studie 2 — Raum vs. Spektrum/Zeit: Was trägt die Form?
 
 <div class="study-card">
 
 **Dauer:** ca. 2 Minuten
 
-**Idee:** Komponiere zwei kontrastierende Abschnitte: einmal entsteht Form fast nur durch **Raumbewegung**, einmal fast nur durch **spektral-zeitliche Veraenderung**.
+**Idee:** Komponiere zwei kontrastierende Abschnitte: einmal entsteht Form fast nur durch **Raumbewegung**, einmal fast nur durch **spektral-zeitliche Veränderung**.
 
 **Material:**
 - ein stabiler Drone-Klang
@@ -95,9 +95,9 @@ Als Basissetup genuegt in allen Beispielen:
 | Zeit | Fokus | Aktion |
 | --- | --- | --- |
 | `0:00-1:00` | Raumbewegung | Spektrum bleibt fast gleich, aber der Drone wandert von Boden zu Decke, von Ring zu Zentrum, von scharf zu diffus |
-| `1:00-2:00` | Spektrum/Zeit | Raum bleibt fast statisch, dafuer veraendern Filter, Granulation und Rhythmus die Form |
+| `1:00-2:00` | Spektrum/Zeit | Raum bleibt fast statisch, dafür verändern Filter, Granulation und Rhythmus die Form |
 
-**REAPER-Fokus:** Zeichne im ersten Teil vor allem `Azimut`, `Elevation`, `Distanz` und `Spread`. Im zweiten Teil bleiben diese Werte fast unveraendert, waehrend Audioeffekte die Form uebernehmen.
+**REAPER-Fokus:** Zeichne im ersten Teil vor allem `Azimut`, `Elevation`, `Distanz` und `Spread`. Im zweiten Teil bleiben diese Werte fast unverändert, während Audioeffekte die Form übernehmen.
 
 </div>
 
@@ -107,10 +107,10 @@ Als Basissetup genuegt in allen Beispielen:
 
 **Dauer:** ca. 90 Sekunden
 
-**Idee:** Lege drei klar unterscheidbare **Layer** an und pruefe, ob sie auch bei geschlossenen Augen stabil als Ebenen wahrnehmbar bleiben.
+**Idee:** Lege drei klar unterscheidbare **Layer** an und prüfe, ob sie auch bei geschlossenen Augen stabil als Ebenen wahrnehmbar bleiben.
 
 **Material:**
-- Vordergrund: kurze Klicks oder einzelne Toene
+- Vordergrund: kurze Klicks oder einzelne Töne
 - Mittelfeld: schwebende Textur
 - Fernfeld: diffuse Hall- oder Windwolke
 
@@ -119,7 +119,7 @@ Als Basissetup genuegt in allen Beispielen:
 | --- | --- | --- |
 | `0:00-0:30` | Staffelung | Ebenen klar trennen |
 | `0:30-1:00` | Bewegung | Mittelfeld beginnt langsam zu kreisen |
-| `1:00-1:30` | Verschiebung | Vordergrund sinkt in die Textur ein, Fernfeld wird kurz heller und naeher |
+| `1:00-1:30` | Verschiebung | Vordergrund sinkt in die Textur ein, Fernfeld wird kurz heller und näher |
 
 **REAPER-Fokus:** Arbeite mit drei Spurgruppen und unterschiedlichen Distanz-/Spread-Werten. Ziel ist nicht Bewegung allein, sondern **lesbare Staffelung**.
 
@@ -131,20 +131,20 @@ Als Basissetup genuegt in allen Beispielen:
 
 **Dauer:** ca. 2 Minuten
 
-**Idee:** Beginne mit einem Objekt und verdichte die Szene schrittweise bis zur Ueberfuellung, dann raeume sie wieder auf.
+**Idee:** Beginne mit einem Objekt und verdichte die Szene schrittweise bis zur Überfüllung, dann räume sie wieder auf.
 
 **Material:**
-- 6 bis 8 kurze Klangobjekte, zum Beispiel metallische Samples, Sprachsplitter oder Sinustoene
+- 6 bis 8 kurze Klangobjekte, zum Beispiel metallische Samples, Sprachsplitter oder Sinustöne
 
 **Ablauf:**
 | Zeit | Fokus | Aktion |
 | --- | --- | --- |
 | `0:00-0:30` | Klarheit | 1-2 klar lokalisierte Objekte |
 | `0:30-1:00` | Verdichtung | 3-4 Objekte mit eigener Bahn |
-| `1:00-1:30` | Ueberfuellung | 6-8 Objekte, teilweise ueberlagert |
-| `1:30-2:00` | Ruecknahme | Ruecknahme auf 2 Objekte und breite Restwolke |
+| `1:00-1:30` | Überfüllung | 6-8 Objekte, teilweise überlagert |
+| `1:30-2:00` | Rücknahme | Rücknahme auf 2 Objekte und breite Restwolke |
 
-**REAPER-Fokus:** Nutze `MultiEncoder_64`, um mehrere Quellen schnell zu schichten. Hoere genau, ab welchem Punkt die Szene nicht mehr kontrapunktisch, sondern nur noch textural wirkt.
+**REAPER-Fokus:** Nutze `MultiEncoder_64`, um mehrere Quellen schnell zu schichten. Höre genau, ab welchem Punkt die Szene nicht mehr kontrapunktisch, sondern nur noch textural wirkt.
 
 </div>
 
@@ -169,17 +169,17 @@ Als Basissetup genuegt in allen Beispielen:
 | `0:40-1:00` | Aufstieg | vertikaler Aufstieg |
 | `1:00-1:30` | Implosion | mehrere Punkte ziehen ins Zentrum |
 
-**REAPER-Fokus:** Zeichne fuer jede Geste nur eine dominante Automation. Dadurch wird hoerbar, wie unterschiedlich sich Bewegungstypen als **formale Marker** verhalten.
+**REAPER-Fokus:** Zeichne für jede Geste nur eine dominante Automation. Dadurch wird hörbar, wie unterschiedlich sich Bewegungstypen als **formale Marker** verhalten.
 
 </div>
 
-### Mini-Studie 6 — Lokalisation vs. Diffusitaet
+### Mini-Studie 6 — Lokalisation vs. Diffusität
 
 <div class="study-card">
 
 **Dauer:** ca. 90 Sekunden
 
-**Idee:** Ein einziges Klangmaterial durchlaeuft mehrfach den Weg von **punktgenau** zu **nebelhaft diffus** und wieder zurueck.
+**Idee:** Ein einziges Klangmaterial durchläuft mehrfach den Weg von **punktgenau** zu **nebelhaft diffus** und wieder zurück.
 
 **Material:**
 - ein kurzer perkussiver Klang oder Sprachfragment
@@ -191,7 +191,7 @@ Als Basissetup genuegt in allen Beispielen:
 | `0:00-0:20` | Fokus | trocken, scharf lokalisierbar |
 | `0:20-0:45` | Aufweitung | zunehmender Spread und Decorrelator |
 | `0:45-1:05` | Wolke | maximale Wolke |
-| `1:05-1:30` | Rueckfokussierung | Rueckfokussierung auf einen einzelnen Punkt |
+| `1:05-1:30` | Rückfokussierung | Rückfokussierung auf einen einzelnen Punkt |
 
 **REAPER-Fokus:** Automatisiere `Spread`, `Distance` und den Anteil diffuser Effekte. Diese Studie eignet sich gut, um **Fokus- und Defokus-Gesten** als Formelement zu testen.
 
@@ -203,7 +203,7 @@ Als Basissetup genuegt in allen Beispielen:
 
 **Dauer:** ca. 1-2 Minuten
 
-**Idee:** Entwirf eine Skizze, die einmal fuer **Dome** und einmal fuer **binaural** optimiert wird, und vergleiche die Prioritaeten.
+**Idee:** Entwirf eine Skizze, die einmal für **Dome** und einmal für **binaural** optimiert wird, und vergleiche die Prioritäten.
 
 **Material:**
 - 3 Klangquellen mit deutlichen Richtungsprofilen
@@ -212,19 +212,19 @@ Als Basissetup genuegt in allen Beispielen:
 | Variante | Fokus | Aktion |
 | --- | --- | --- |
 | Version A | Dome-Logik | starker Einsatz von Overhead und vertikalen Verschiebungen |
-| Version B | binaurale Lesbarkeit | dieselbe Form, aber mit staerkerem Gewicht auf lateralen Bewegungen und klaren Vorder-/Hinterachsen |
+| Version B | binaurale Lesbarkeit | dieselbe Form, aber mit stärkerem Gewicht auf lateralen Bewegungen und klaren Vorder-/Hinterachsen |
 
 **REAPER-Fokus:** Speichere zwei Decoder- oder Mixvarianten desselben Projekts. So wird sofort deutlich, wie das angestrebte **Wiedergabeszenario** die Komposition beeinflusst.
 
 </div>
 
-### Mini-Studie 8 — Publikum und Hoererfahrung
+### Mini-Studie 8 — Publikum und Hörerfahrung
 
 <div class="study-card">
 
 **Dauer:** ca. 90 Sekunden
 
-**Idee:** Komponiere denselben Ablauf in zwei Lesbarkeitsstufen: einmal fuer ein **erfahrenes Spatial-Audio-Publikum**, einmal fuer ein eher **allgemeines Publikum**.
+**Idee:** Komponiere denselben Ablauf in zwei Lesbarkeitsstufen: einmal für ein **erfahrenes Spatial-Audio-Publikum**, einmal für ein eher **allgemeines Publikum**.
 
 **Material:**
 - 3 bis 4 Klangobjekte
@@ -232,10 +232,10 @@ Als Basissetup genuegt in allen Beispielen:
 **Ablauf:**
 | Zeit | Fokus | Aktion |
 | --- | --- | --- |
-| `0:00-0:45` | erfahrenes Publikum | subtile Unterschiede, kleine Winkelveraenderungen, feine Hoehenstaffelung |
-| `0:45-1:30` | allgemeines Publikum | dieselbe Idee in groberer, klarerer Form mit staerkeren Kontrasten |
+| `0:00-0:45` | erfahrenes Publikum | subtile Unterschiede, kleine Winkelveränderungen, feine Höhenstaffelung |
+| `0:45-1:30` | allgemeines Publikum | dieselbe Idee in groberer, klarerer Form mit stärkeren Kontrasten |
 
-**REAPER-Fokus:** Doppelte Version derselben Passage mit unterschiedlichen Automationskurven. Die Frage ist hier nicht nur, was moeglich ist, sondern **was schnell lesbar bleibt**.
+**REAPER-Fokus:** Doppelte Version derselben Passage mit unterschiedlichen Automationskurven. Die Frage ist hier nicht nur, was möglich ist, sondern **was schnell lesbar bleibt**.
 
 </div>
 
@@ -257,13 +257,13 @@ Als Basissetup genuegt in allen Beispielen:
 | --- | --- | --- |
 | `0:00-0:40` | Tunnel | enge Achse, vorne-hinten-Betonung, wenig Breite |
 | `0:40-1:20` | Platz | mehr Offenheit, seitliche Weite, klarere Reflexionsfreiheit |
-| `1:20-2:00` | Dach | Hoehe, Luft, Fernfeld und Overhead-Praesenz |
+| `1:20-2:00` | Dach | Höhe, Luft, Fernfeld und Overhead-Praesenz |
 
 **REAPER-Fokus:** Nutze nicht nur Position, sondern auch Halltyp, EQ und Dynamik. So wird Raum nicht als Metapher behauptet, sondern **kompositorisch gebaut**.
 
 </div>
 
-### Mini-Studie 10 — Werkidentitaet und Dokumentation
+### Mini-Studie 10 — Werkidentität und Dokumentation
 
 <div class="study-card">
 
@@ -278,7 +278,7 @@ Als Basissetup genuegt in allen Beispielen:
 **Ablauf:**
 | Zeit | Fokus | Aktion |
 | --- | --- | --- |
-| `0:00-1:00` | vollstaendige Miniatur | Anfang, Verdichtung und Schlussgeste in einer kompakten Raumform |
+| `0:00-1:00` | vollständige Miniatur | Anfang, Verdichtung und Schlussgeste in einer kompakten Raumform |
 
 **REAPER-Fokus:** Exportiere danach nicht nur Audio, sondern notiere:
 - HOA-Order und Format
@@ -289,7 +289,7 @@ Als Basissetup genuegt in allen Beispielen:
 
 </div>
 
-Diese zehn Studien koennen einzeln bearbeitet oder zu groesseren Projektskizzen verbunden werden. Besonders produktiv ist es, **dieselbe Klangquelle** durch mehrere Fragen hindurch zu testen. So wird hoerbar, dass sich die Leitfragen nicht nur auf Inhalte beziehen, sondern direkt auf **Form, Routing, Automation und Dramaturgie**.
+Diese zehn Studien können einzeln bearbeitet oder zu größeren Projektskizzen verbunden werden. Besonders produktiv ist es, **dieselbe Klangquelle** durch mehrere Fragen hindurch zu testen. So wird hörbar, dass sich die Leitfragen nicht nur auf Inhalte beziehen, sondern direkt auf **Form, Routing, Automation und Dramaturgie**.
 
 Die zehn Fragen machen sichtbar, dass räumliche Komposition nicht allein aus Positionen und Bewegungen besteht, sondern von der Wahrnehmbarkeit und Stabilität klanglicher Einheiten abhängt. Bevor räumliche Beziehungen zwischen mehreren Klangobjekten präzise gestaltet werden können, muss daher geklärt werden, wodurch ein Klang im Raum überhaupt als Gestalt hervortritt. Das folgende Kapitel wendet sich deshalb der **Akustischen Gestalt eines Klanges** zu.
 
@@ -298,7 +298,7 @@ Die zehn Fragen machen sichtbar, dass räumliche Komposition nicht allein aus Po
 Die folgende Übersicht ist kein starres Formular, sondern eine **kompositorische Karte**. Einige Fragen betreffen eher den Weltentwurf eines Stücks, andere seine räumliche Lesbarkeit, wieder andere das spätere Hören, Rendern und Dokumentieren. Gerade in der Arbeit an Ambisonics-Stücken springen diese Ebenen ständig ineinander.
 
 <figure class="big">
-  <img src="/images/ten-questions-map-de.svg" alt="Uebersicht der zehn Fragen im 3D-Raum als Karte mit den Bereichen Ontologie, Form, Layer, Dichte, Bewegung, Lokalisation, Ziel-Setup, Publikum, Archetypen und Werkidentität" loading="lazy" />
+  <img src="/images/ten-questions-map-de.svg" alt="Übersicht der zehn Fragen im 3D-Raum als Karte mit den Bereichen Ontologie, Form, Layer, Dichte, Bewegung, Lokalisation, Ziel-Setup, Publikum, Archetypen und Werkidentität" loading="lazy" />
   <figcaption><strong>Die zehn Fragen als Arbeitskarte.</strong> Links entstehen Welt und Form, in der Mitte werden Objekte, Layer und Bewegungen organisiert, rechts folgen Hörsituation, Publikum und Werkdokumentation. Die Reihenfolge ist hilfreich, aber nicht zwingend linear.</figcaption>
 </figure>
 

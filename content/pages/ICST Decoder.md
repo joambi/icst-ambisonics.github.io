@@ -1,5 +1,6 @@
 ---
 title: "ICST Ambisonics Decoder"
+translationKey: icst-decoder-page
 categories:
   - "ICST Ambisonics Plugins"
 ---

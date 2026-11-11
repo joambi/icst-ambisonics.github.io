@@ -31,9 +31,9 @@ Das Paket reduziert Setup-Zeit und vermeidet typische Routing-Fehler in den erst
 ## Download-Links
 
 ## Hinweis zum Template
-Das Template liefert eine saubere Projektstruktur mit 64-Kanal-Basis fuer HOA-Tracks. Die ICST Plugins und das konkrete Decoder-Preset setzt du passend zu deinem Studio-Setup selbst ein.
+Das Template liefert eine saubere Projektstruktur mit 64-Kanal-Basis für HOA-Tracks. Die ICST Plugins und das konkrete Decoder-Preset setzt du passend zu deinem Studio-Setup selbst ein.
 
-Die neue `ICST Kompositionsstudio Session v4` ist auf das dokumentierte Studio-Setup zugeschnitten: ICST-Kompositionsstudio-Benennung, MultiDecoder-Fokus sowie Hinweise fuer `LS 1-17` und `Sub/LFE auf Kanal 18`. `v3` bleibt als allgemeinere guided Version erhalten.
+Die neue `ICST Kompositionsstudio Session v4` ist auf das dokumentierte Studio-Setup zugeschnitten: ICST-Kompositionsstudio-Benennung, MultiDecoder-Fokus sowie Hinweise für `LS 1-17` und `Sub/LFE auf Kanal 18`. `v3` bleibt als allgemeinere guided Version erhalten.
 
 ## Next step
 - [Downloads](/blog/downloads/)

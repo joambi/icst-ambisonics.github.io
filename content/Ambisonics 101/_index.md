@@ -109,13 +109,70 @@ For the practical differences between A-Format, B-Format, FuMa, ambiX, ACN/SN3D,
 
 From source to speaker — this is how Ambisonics works in REAPER with the ICST plugins:
 
-![Ambisonics Signal Flow — Single Source](/images/signalflow-simple.svg)
-
-*Single source: mono track → AmbiEncoder (az/el/dist) → B-Format Bus → AmbiDecoder → Speakers or Binaural.*
-
-![Ambisonics Signal Flow — Multi-Source (ICST MultiEncoder)](/images/signalflow-multi.svg)
-
-*Multi-source: up to 64 sources feed simultaneously into the ICST MultiEncoder → shared B-Format Bus → decoded once.*
+<div class="ambi-sigflow">
+<div class="ambi-sigflow__track">
+<div class="ambi-sigflow__node ambi-sigflow__node--source">
+<i class="fas fa-music ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">Audio source</div>
+<div class="ambi-sigflow__detail">Mono track<br>in REAPER</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">Plugin insert</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--plugin">
+<i class="fas fa-dot-circle ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">ICST<br>AmbiEncoder</div>
+<div class="ambi-sigflow__detail">Az · El<br>Distance</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">B-Format (ambiX)</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--bus">
+<i class="fas fa-code-branch ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">B-Format<br>Bus</div>
+<div class="ambi-sigflow__detail">64 channels<br>7th order</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">Bus receive</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--plugin">
+<i class="fas fa-broadcast-tower ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">ICST<br>AmbiDecoder</div>
+<div class="ambi-sigflow__detail">Speaker layout<br>Order · Filter</div>
+</div>
+<div class="ambi-sigflow__connector">
+<div class="ambi-sigflow__clabel">Output</div>
+<div class="ambi-sigflow__arrow">
+<div class="ambi-sigflow__arrow-line"></div>
+<span class="ambi-sigflow__arrow-head">▶</span>
+</div>
+</div>
+<div class="ambi-sigflow__outputs">
+<div class="ambi-sigflow__node ambi-sigflow__node--output">
+<i class="fas fa-volume-up ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">Loudspeakers</div>
+</div>
+<div class="ambi-sigflow__or">or</div>
+<div class="ambi-sigflow__node ambi-sigflow__node--output">
+<i class="fas fa-headphones ambi-sigflow__icon"></i>
+<div class="ambi-sigflow__name">Binaural</div>
+</div>
+</div>
+</div>
+<div class="ambi-sigflow__caption">Each source has its own AmbiEncoder — all of them feed the same B-Format bus. Decoding to loudspeakers or headphones happens once, at the bus output.</div>
+</div>
 
 <a id="typical-setups"></a>
 ## 6. [Typical Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)

@@ -43,8 +43,6 @@ languageCode: de
 
 {{< youtube X23hZNoSkUs >}}
 
----
-
 ### Tools von Drittanbietern:
 
 - [Ambisonic Toolkit (ATK) für REAPER](http://www.ambisonictoolkit.net/documentation/reaper/) — JSFX-Plugins für REAPER und SuperCollider; starke Signalverarbeitungsgrundlage, forschungsorientiert

@@ -13,14 +13,17 @@ hideDate: true
 **Audience:** Composer, Student, Researcher, Studio visitor.
 
 Public listening sessions at the ICST Composition Studio, ZHdK
-Free admission · Open to all
 
-📍 Toni-Areal · Kompositionsstudio 3.D02 · Level 3 · Pfingstweidstrasse 96, Zürich
+- Toni-Areal, Composition Studio 3.D02, Level 3
+- Pfingstweidstrasse 96, Zurich
+
+_Free admission · Open to all_
 
 ---
 
 ## Upcoming Dates
 
-**[Thursday, 02 April 2026](/blog/ascolta/18-ascolta/)** · 18:00 – 19:00 · Free admission
-
-**[Thursday, 21 May 2026](/blog/ascolta/19-ascolta/)** · 18:00 – 19:00 · Free admission
+| Date | Time |
+|------|------|
+| [Thursday, 02 April 2026](/blog/ascolta/18-ascolta/) | 18:00–19:00 |
+| [Thursday, 21 May 2026](/blog/ascolta/19-ascolta/) | 18:00–19:00 |

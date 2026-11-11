@@ -1,6 +1,6 @@
 ---
 title: "Composing in Ambisonics"
-description: "Ein kuratierter Guide fuer Komponist:innen: von analytischem Hören über FOA/HOA-Geschichte bis zu Spatial Counterpoint, Werkzeugen und Studiopraxis."
+description: "Ein kuratierter Guide für Komponist:innen: von analytischem Hören über FOA/HOA-Geschichte bis zu Spatial Counterpoint, Werkzeugen und Studiopraxis."
 date: 2026-01-01T00:00:00
 type: docs
 languageCode: de

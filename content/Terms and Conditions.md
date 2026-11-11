@@ -3,6 +3,7 @@ title: Terms and Conditions
 description: Terms and Conditions for ambisonics.ch powered by iubenda.
 date: 2026-03-11T00:00:00
 draft: false
+translationKey: terms-and-conditions
 ---
 
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts

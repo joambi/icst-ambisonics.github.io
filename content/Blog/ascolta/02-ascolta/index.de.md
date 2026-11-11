@@ -1,6 +1,6 @@
 ---
 title: "#02 ascolta Akousmatische Hörstunde"
-description: "Ankuendigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
+description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2022-10-04T18:00:00
 weight: 2
 ---

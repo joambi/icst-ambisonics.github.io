@@ -39,8 +39,8 @@ Status April 2023
     <h4>Regie-Navigation</h4>
     <p>Direkte Sprünge zu Routing, Lautsprecher-Settings und Videosteuerung.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="#lsb-panel--two-operating-modes">LSB-Panel</a>
-      <a class="hero__link" href="#the-extron-touchscreen-panel-for-video">Extron-Panel</a>
+      <a class="hero__link hero__link--primary" href="#lsb-panel--zwei-betriebsmodi">LSB-Panel</a>
+      <a class="hero__link" href="#extron-touchscreen-panel-für-video">Extron-Panel</a>
       <a class="hero__link" href="#displaylink-docking-station">DisplayLink Dock</a>
     </div>
   </section>
@@ -49,10 +49,10 @@ Status April 2023
 <details class="home-accordion">
   <summary>Mobile Schnellzugriffe</summary>
   <div class="home-accordion__actions">
-    <a class="hero__link hero__link--primary" href="#lsb-panel--two-operating-modes">LSB-Modi</a>
-    <a class="hero__link" href="#speaker-settings-in-the-icst-composition-studio">Speaker Settings</a>
-    <a class="hero__link" href="#the-extron-touchscreen-panel-for-video">Videosteuerung</a>
-    <a class="hero__link" href="#additional-hubs-and-interfaces">Hubs & Interfaces</a>
+    <a class="hero__link hero__link--primary" href="#lsb-panel--zwei-betriebsmodi">LSB-Modi</a>
+    <a class="hero__link" href="#speaker-settings-im-icst-kompositionsstudio">Speaker Settings</a>
+    <a class="hero__link" href="#extron-touchscreen-panel-für-video">Videosteuerung</a>
+    <a class="hero__link" href="#zusätzliche-hubs-und-interfaces">Hubs & Interfaces</a>
     <a class="hero__link" href="#displaylink-docking-station">Docking-Station</a>
   </div>
 </details>

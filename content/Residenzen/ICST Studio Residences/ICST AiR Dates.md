@@ -1,4 +1,8 @@
 ---
+title: ICST AiR Dates
+date: 2025-06-16T00:00:00Z
+draft: false
+translationKey: icst-air-dates
 tags:
 ---
 Institute for Computer Music and Sound Technology (ICST) Zurich University of the Arts

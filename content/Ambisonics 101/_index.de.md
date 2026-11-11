@@ -211,7 +211,7 @@ Beide schliessen sich nicht aus: Manche Workflows produzieren Ambisonics für di
 <a id="einstieg-am-icst"></a>
 ## 9. Einstieg am ICST
 
-- Für Einsteiger:innen: [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
+- Für Einsteiger:innen: [Quick Start](/de/icst-ambisonics-plugins/04_quick_start/)
 - Vor dem Setup Formate klären: [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)
 - Starte mit den [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) für DAW-Workflows.
 - Nutze die [ICST Ambisonics Tools](/icst-ambisonics-tools/) für Max/MSP-Workflows.

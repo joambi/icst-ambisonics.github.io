@@ -353,7 +353,11 @@ Wenn Sources eingerichtet und die Parameter in der Vorschau korrekt aussehen:
 2. Prüfen, dass die Time Selection den gewünschten Bereich abdeckt.
 3. **▶ Write Automation + Region** klicken.
 
-Das Script löscht vorhandene Envelope-Punkte (wenn Clear existing aktiv), schreibt XYZ-Automation für jede aktivierte Source direkt in der Einheitskugel (−1..+1) — unabhängig vom Scale-Anzeige-Wert — setzt den Track auf Latch-Modus (wenn Track Latch aktiv) und erstellt oder aktualisiert eine Render-Region.
+Das Script:
+- Löscht vorhandene Envelope-Punkte im Time-Selection-Bereich (wenn Clear existing aktiv).
+- Schreibt XYZ-Automation für jede aktivierte Source direkt in der Einheitskugel (−1..+1), unabhängig vom Scale-Anzeige-Wert.
+- Setzt den Track auf Latch-Modus (wenn Track Latch aktiv).
+- Erstellt oder aktualisiert eine benannte Render-Region.
 
 Eine Statusmeldung am unteren Rand des GUIs bestätigt den Abschluss.
 

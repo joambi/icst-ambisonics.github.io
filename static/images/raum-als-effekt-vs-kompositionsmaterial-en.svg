@@ -1,0 +1,76 @@
+<svg width="1400" height="940" viewBox="0 0 1400 940" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f7f3ea; }
+      .title { font: 700 32px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .subtitle { font: 500 18px 'Helvetica Neue', Arial, sans-serif; fill: #445964; }
+      .header-left { fill: #d8e6f2; stroke: #2f4858; stroke-width: 3; }
+      .header-right { fill: #dce8d4; stroke: #2f4858; stroke-width: 3; }
+      .cell { fill: #fffdf8; stroke: #2f4858; stroke-width: 2.5; }
+      .rowlabel { fill: #efe7d7; stroke: #2f4858; stroke-width: 2.5; }
+      .htext { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .rtext { font: 700 20px 'Helvetica Neue', Arial, sans-serif; fill: #1f2d36; }
+      .body { font: 500 16px 'Helvetica Neue', Arial, sans-serif; fill: #40545f; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="940" rx="28"/>
+  <text class="title" x="64" y="72">Space as effect vs. space as compositional material</text>
+  <text class="subtitle" x="64" y="106">Two different ways of thinking that lead to different listening goals, decisions, and concepts of the work</text>
+
+  <rect class="rowlabel" x="64" y="160" width="260" height="94" rx="18"/>
+  <rect class="header-left" x="324" y="160" width="486" height="86" rx="18"/>
+  <rect class="header-right" x="810" y="160" width="526" height="86" rx="18"/>
+
+  <text class="htext" x="470" y="212">Space as effect</text>
+  <text class="htext" x="930" y="212">Space as compositional material</text>
+
+  <rect class="rowlabel" x="64" y="254" width="260" height="138" rx="18"/>
+  <rect class="cell" x="324" y="254" width="486" height="138" rx="18"/>
+  <rect class="cell" x="810" y="254" width="526" height="138" rx="18"/>
+  <text class="rtext" x="96" y="306">What is shaped?</text>
+  <text class="body" x="356" y="292">Mainly the distribution or</text>
+  <text class="body" x="356" y="320">refinement of already</text>
+  <text class="body" x="356" y="348">existing sound material</text>
+  <text class="body" x="842" y="282">Spatial relationships themselves:</text>
+  <text class="body" x="842" y="310">nearness, height, layering, movement,</text>
+  <text class="body" x="842" y="338">focus, diffusion, perspective</text>
+  <text class="body" x="842" y="366">and spatial relation</text>
+
+  <rect class="rowlabel" x="64" y="400" width="260" height="138" rx="18"/>
+  <rect class="cell" x="324" y="400" width="486" height="138" rx="18"/>
+  <rect class="cell" x="810" y="400" width="526" height="138" rx="18"/>
+  <text class="rtext" x="96" y="460">What do you listen for?</text>
+  <text class="body" x="356" y="436">Whether a signal seems larger,</text>
+  <text class="body" x="356" y="464">wider, closer, or</text>
+  <text class="body" x="356" y="492">more impressive</text>
+  <text class="body" x="842" y="426">How sound objects relate</text>
+  <text class="body" x="842" y="454">to one another and</text>
+  <text class="body" x="842" y="482">how form arises from this</text>
+
+  <rect class="rowlabel" x="64" y="546" width="260" height="138" rx="18"/>
+  <rect class="cell" x="324" y="546" width="486" height="138" rx="18"/>
+  <rect class="cell" x="810" y="546" width="526" height="138" rx="18"/>
+  <text class="rtext" x="96" y="606">How does form arise?</text>
+  <text class="body" x="356" y="582">Form lies primarily in</text>
+  <text class="body" x="356" y="610">rhythm, timbre,</text>
+  <text class="body" x="356" y="638">or montage</text>
+  <text class="body" x="842" y="572">Form also arises through</text>
+  <text class="body" x="842" y="600">approach, separation,</text>
+  <text class="body" x="842" y="628">rotation, layering</text>
+  <text class="body" x="842" y="656">and convergence</text>
+
+  <rect class="rowlabel" x="64" y="692" width="260" height="160" rx="18"/>
+  <rect class="cell" x="324" y="692" width="486" height="160" rx="18"/>
+  <rect class="cell" x="810" y="692" width="526" height="160" rx="18"/>
+  <text class="rtext" x="96" y="768">What is documented?</text>
+  <text class="body" x="356" y="742">More the mix, effect amounts</text>
+  <text class="body" x="356" y="770">or a specific</text>
+  <text class="body" x="356" y="798">monitoring version</text>
+  <text class="body" x="842" y="736">Also the spatial</text>
+  <text class="body" x="842" y="764">logic of the work:</text>
+  <text class="body" x="842" y="792">parameters, trajectories,</text>
+  <text class="body" x="842" y="820">B-format and variants</text>
+
+  <text class="subtitle" x="64" y="904">The right column describes the perspective the “For Composers” area aims at.</text>
+</svg>

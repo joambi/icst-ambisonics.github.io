@@ -30,7 +30,7 @@ Du willst schnell mit ICST Ambisonics Plugins in Reaper starten, ohne lange Rout
 4. Quelle auf `Bformat-Master` routen.
 5. Binaurales Monitoring parallel aufsetzen.
 6. Kurze Bewegungsautomation aufnehmen.
-7. Rendern und Ausgangskanaele prüfen.
+7. Rendern und Ausgangskanäle prüfen.
 
 ## Häufige Fehler
 - Quelle nicht auf `Bformat-Master` geroutet

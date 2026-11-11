@@ -119,6 +119,37 @@ Das folgende Raster hilft, wesentliche räumliche Parameter systematisch zu beob
 | **Schichtung** | Wie viele räumliche Ebenen sind gleichzeitig aktiv? | eine, zwei, mehrere, Überlagerung |
 | **Envelopment** | Werde ich von Klang umhüllt, oder höre ich ihn von außen? | keine, gering, deutlich, vollständig |
 
+#### Drei Räume nach Smalley
+
+Denis Smalleys Konzept des *space-form* (1997, 2007) bietet eines der nützlichsten analytischen Raster für räumliche elektroakustische Musik. Er unterscheidet drei sich überlagernde Kategorien räumlicher Erfahrung:
+
+**Perspektivischer Raum** ist das Gefühl der Hörenden für ihre Position innerhalb einer realen oder imaginierten akustischen Umgebung — Distanz, Raumgröße, der Eindruck, von einem bestimmten Standpunkt aus zu hören. In einem Ambisonics-Stück kann sich dieser abrupt verschieben: Plötzlich befindet man sich in einer halligen Kathedrale, dann in einem schalltoten Raum, dann im Freien. *Hörauftrag: Skizziere den imaginierten Raum. Verändert er sich? Wann?*
+
+**Quellengebundener Raum** beschreibt Raum, der an erkennbaren Klangobjekten haftet — die physische Distanz und Position, die mit einem Schritt, einer Stimme oder einem Instrument verbunden ist. Bewegt sich ein quellengebundener Klang im Ambisonics-Feld, ist die Bewegung nicht nur als Positionswechsel wahrnehmbar, sondern als narratives Ereignis: Er näherte sich, er umkreiste, er entfernte sich. *Hörauftrag: Verfolge ein quellengebundenes Objekt vom Einsatz bis zum Verschwinden.*
+
+**Spektraler Raum** ist Raum, der aus spektraler und texturaler Struktur entsteht statt aus Lokalisation — der Eindruck, dass hohe Frequenzen die obere Hemisphäre besetzen, während tiefe den Boden umgeben, oder dass Helligkeit und Dichte gerichtet verteilt sind. Diese Kategorie ist am wenigsten unmittelbar offensichtlich, aber oft die kompositorisch bedeutsamste. *Hörauftrag: Schließe im zweiten Durchgang die Augen und versuche, die spektrale Geografie des Stücks zu spüren — wo lebt das hohe Material? Wo konzentriert sich das dichte Material?*
+
+Für eine kompositorische Perspektive auf dieselbe Methodik — mit detaillierten Fallstudien und psychoakustischer Analyse — siehe den [Blog](/de/blog/) für kommende Werkanalysen.
+
+#### Fünf Analysefragen
+
+Bringe diese fünf Fragen zu jedem Stück mit. Du musst nicht alle in einem Durchgang beantworten — wähle pro Werk eine oder zwei.
+
+**1. Wie ist der Raum organisiert?**
+Ist das Raumfeld symmetrisch oder asymmetrisch? Nutzt die Komposition die volle Sphäre oder konzentriert sie sich auf die horizontale Ebene? Wird oben/unten kompositorisch gleichwertig zu vorne/hinten behandelt?
+
+**2. Was bewegt sich, was bleibt ruhig?**
+Bewegung und Stillstand sind ein grundlegender räumlicher Gegensatz, vergleichbar mit Spannung und Auflösung in tonaler Musik. Ein fester, zentraler tiefer Drone gegen bewegte hochfrequente Trajektorien ist bereits eine räumliche Form. Kannst du die bewegte Schicht, die statische Schicht und das Verhältnis zwischen ihnen benennen?
+
+**3. Wie wird Envelopment eingesetzt?**
+Envelopment — das Gefühl, umgeben zu sein, statt vor einer Quelle positioniert zu sein — ist eine der stärksten Möglichkeiten eines Vollsphären-Systems. Setzt das Stück es als dauerhaften Zustand oder als Ereignis ein? Gibt es einen Moment, in dem das Feld von Envelopment zu einem einzelnen lokalisierten Punkt kollabiert, oder umgekehrt?
+
+**4. Gibt es Tiefenstaffelung?**
+Erzeugt das Stück den Eindruck von Nah und Fern, oder liegt alles in derselben wahrgenommenen Distanz? Gestaffelte Distanzen — ein naher Vordergrund gegen einen diffusen fernen Hintergrund — erzeugen eine räumliche Tiefe, die der Perspektive in der visuellen Komposition entspricht.
+
+**5. Trägt Raum semantisches Gewicht?**
+Dies ist die interpretativste Frage: Bedeutet die räumliche Organisation im Kontext des Stücks etwas? In Natasha Barretts Arbeit ([#10 ascolta](/de/blog/ascolta/10-ascolta/), März 2024) ist räumliche Bewegung Teil eines kompositorischen Arguments über Innen und Außen, Einschluss und Befreiung. In der akusmatischen Tradition steht das in Beziehung zu Schaeffers *écoute réduite* (reduziertes Hören) — nur dass die Reduktion hier *räumlich* ist: Versuche, ausschließlich auf das räumliche Verhalten zu hören und Klangfarbe und Tonhöhe vollständig auszuklammern.
+
 ### Übergeordnete Analysefragen
 
 - Welche räumliche Strategie dominiert: Stimmtrennung, Bewegungsdramaturgie, Einhüllung oder Perspektive?

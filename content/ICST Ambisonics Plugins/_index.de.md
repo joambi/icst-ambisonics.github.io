@@ -10,7 +10,7 @@ cascade:
 
 Die **ICST Ambisonics-Plugins bilden eine umfassende Produktionsumgebung für Higher-Order Ambisonics (HOA)**. Sie sind auf räumliche Komposition, Gruppenbewegung, flexible Lautsprecherlayouts und mehrkanalige Produktionsworkflows ausgelegt.
 
-Die Suite unterstützt bis zu **64 Quellen**, die in **B-Format / HOA** enkodiert und auf frei definierbare Lautsprecher-Setups dekodiert werden koennen. Zentrale Module sind **MonoEncoder**, **StereoEncoder**, **MultiEncoder_64**, **AmbiDecoder** und **MultiDecoder**.
+Die Suite unterstützt bis zu **64 Quellen**, die in **B-Format / HOA** enkodiert und auf frei definierbare Lautsprecher-Setups dekodiert werden können. Zentrale Module sind **MonoEncoder**, **StereoEncoder**, **MultiEncoder_64**, **AmbiDecoder** und **MultiDecoder**.
 
 Einen eigenen **BinauralDecoder** stellt ICST bewusst nicht bereit, da es bereits sehr gute freie Lösungen gibt. Empfohlen werden etwa der **IEM BinauralDecoder** oder das kostenlose **dearVR AMBI MICRO** Ambisonics-Plugin.
 
@@ -31,8 +31,4 @@ Ein wichtiges Merkmal ist die direkte Verbindung zwischen **Panning, Automation 
   </a>
 </div>
 
-<div style="font-size:0.82em; line-height:1.45; margin-top:0.1rem;">
-
 > **Neu bei Ambisonics?** Beginne mit [Ambisonics 101](/de/ambisonics-101/) und der [Ambisonics-Formate-Referenz](/de/learn/ambisonics-formats/), dann weiter zum [Quick Start Guide](/de/icst-ambisonics-plugins/04_quick_start/) — in unter 10 Minuten zum räumlichen REAPER-Setup.
-
-</div>

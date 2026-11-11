@@ -109,8 +109,6 @@ Now, the AmbiDecoder receives **all OSC messages** from all connected AmbiEncode
 * * *
 
 
----
-
 ## Vollständige OSC-Referenz (aus GitHub-Quellcode)
 
 > Abgeleitet aus dem Plugin-Quellcode ([OSCHandlerEncoder.h/.cpp](https://github.com/schweizerweb/icst-ambisonics-plugins/blob/main/Encoder/Source/OSCHandlerEncoder.h)). Ergänzt die oben dokumentierten Standard-Nachrichten um alle weiteren unterstützten Adressen.

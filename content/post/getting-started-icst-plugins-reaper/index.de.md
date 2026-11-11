@@ -28,13 +28,13 @@ Nutze diesen Guide für den schnellen Einstieg und die Docs-Seite als technische
 Am Ende hast du ein funktionierendes Reaper-Projekt mit Quellrouting, AmbiEncoder-Steuerung und einem grundlegenden Monitoring-Check.
 
 ## Voraussetzungen
-- Reaper ist installiert und laeuft.
+- Reaper ist installiert und läuft.
 - ICST Ambisonics Plugins sind installiert.
 - Empfohlene Reaper-Erweiterungen sind installiert (SWS und ReaPack).
 - Grundkenntnisse zu Tracks, Bussen und Plugin-Insert-Slots.
 
 ## Session-Baseline (aus dem Docs-Setup)
-Setze bei allen Ambisonics-relevanten Tracks standardmaessig 64 Kanäle und prüfe das Routing nach jedem Schritt.
+Setze bei allen Ambisonics-relevanten Tracks standardmäßig 64 Kanäle und prüfe das Routing nach jedem Schritt.
 
 ## Workflow-Phasen (Onboarding-Sicht)
 Nutze diese Seite, um die Struktur zu verstehen, bevor du ins Klick-für-Klick-Setup gehst:

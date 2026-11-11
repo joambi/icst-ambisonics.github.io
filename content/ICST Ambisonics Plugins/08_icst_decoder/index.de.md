@@ -125,6 +125,14 @@ Diese Reihenfolge ist wichtig: zuerst die Geometrie verlässlich machen, dann di
 ![Lautsprecher bearbeiten](Speaker_Editing.gif)
 ![Ambisonics-Ordnung](CleanShot%202026-02-11%20at%2009.30.18@2x.png)
 
+### Gewichtungsschema wählen
+
+Die Gewichtung verschiebt den Kompromiss zwischen räumlicher Fokussierung und Stabilität.
+
+- **Max-rE:** meist der beste Ausgangspunkt für klare Lokalisation und fokussierte Abbildungen
+- **In-Phase:** oft stabiler bei unregelmäßigen Arrays oder schwierigen Hörpositionen
+- **Basic:** nützlich als neutrale Referenz beim Vergleich des Verhaltens
+
 ## Kontrolle pro Lautsprecher
 
 Lautsprecherspezifische Parameter können direkt bearbeitet und als Presets gespeichert werden.

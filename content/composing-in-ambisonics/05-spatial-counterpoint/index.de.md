@@ -133,6 +133,6 @@ Entscheidend ist beim Wechsel der Toolchain vor allem:
 
 - Ist das verwendete Format klar, etwa **ambiX (ACN/SN3D)**?
 - Sind Position, Distanz, Bewegung und Gruppierung verfügbar und automatisierbar?
-- Stimmen Routing, Kanalanzahl und Decoder-Konfiguration mit dem Ziel-Setup ueberein?
+- Stimmen Routing, Kanalanzahl und Decoder-Konfiguration mit dem Ziel-Setup überein?
 
 Spatial Counterpoint ist damit weniger ein festes Verfahren als eine **Denkhaltung**: Raum wird nicht als Zusatz verstanden, sondern als integraler Bestandteil der musikalischen Organisation.

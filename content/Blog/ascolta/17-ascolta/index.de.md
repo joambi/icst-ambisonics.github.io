@@ -6,16 +6,18 @@ weight: 0
 hideDate: true
 ---
 
-# Kommende ascolta Akousmatische Hörstunde
-
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
-
 ![ascolta](ascolta.png)
 
-_Freier Eintritt_
+## ascolta — Akusmatische Hörstunde
+
+**Für wen:** Komponist:in, Studierende, Researcher, Studio-Gäste.
+
+Öffentliche Hörstunden im ICST Kompositionsstudio, ZHdK
 
 - Toni-Areal, Kompositionsstudio 3.D02, Ebene 3
 - Pfingstweidstrasse 96, Zürich
+
+_Freier Eintritt · Offen für alle_
 
 ---
 

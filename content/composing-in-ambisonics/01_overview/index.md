@@ -31,9 +31,28 @@ The B-format decouples a work from any specific loudspeaker layout. The same Amb
   <figcaption><strong>Composing in Ambisonics.</strong> The diagram brings together the spatial field, movement relationships, and the key parameters of azimuth, elevation, distance, and diffusion.</figcaption>
 </figure>
 
+The diagram is not meant as a technical operating manual but as a **compositional map**: azimuth and elevation describe direction, distance describes nearness and remoteness, and diffusion describes the sharpness or cloudiness of a sound object. Ambisonics becomes interesting where these parameters are shaped **not in isolation** but in relation to one another.
+
+<figure class="big">
+  <img src="/images/raumparameter-en.svg" alt="Diagram of the four basic parameters of spatial composition: azimuth, elevation, distance, and diffusion" loading="lazy" />
+  <figcaption><strong>Four basic parameters of spatial composition.</strong> Azimuth and elevation describe direction and height, distance organises nearness and remoteness, and diffusion describes the transition between a focused object and spatial extension.</figcaption>
+</figure>
+
 Composing in Ambisonics means treating space not merely as a distribution system, but as a **form-building parameter**. Sources can approach, separate, rise, cluster, or act as independent voices within a shared sound field.
 
 This area is not meant as a linear textbook, but as a **compositional workspace in text form**. It connects historical context, compositional questions, and technical toolchains.
+
+## What This Is Practically About
+
+This area is aimed at composers who want to use space not merely as a mixing dimension but **as compositional material**. It is not just about distributing sound across loudspeakers, but about the deliberate design of **position, height, distance, diffusion, movement, and spatial relationships** between sound objects.
+
+If you work through this area, you should above all be able to do three things:
+
+- **name spatial phenomena**: such as foreground, far field, envelopment, focus, diffusion, or spatial convergence
+- **design spatial dramaturgies**: that is, decide how sources are layered, approach, separate, or take on form-building movement
+- **choose suitable ways of working**: from the first sketch through monitoring and B-format to the question of which setup or toolchain makes sense for a piece
+
+The common thread is always the same: how does a sound become not only an event in time, but an event **in space**?
 
 ## What You Should Be Able to Take Away
 
@@ -54,6 +73,13 @@ Three arguments are especially important:
 - **Stronger transferability**: an Ambisonics master can move between concerts, studios, headphones, and installations without forcing you to rethink the whole spatial dramaturgy
 
 This also opens specific aesthetic possibilities: narrative movement through space, transitions between interior and exterior, shifts between micro- and macro-perspectives, abstract sculptural motion, and a degree of physical presence that differs markedly from conventional surround. Ambisonics is therefore not only a technical format, but a **compositional way of thinking** that already includes both present and future listening contexts.
+
+This can also be described as a contrast between two ways of thinking: in a mix- or effect-oriented practice, space is often treated as a later extension of sound material that already exists. In the Ambisonics context for composers, space instead becomes a **carrier of form**, relation, and work identity.
+
+<figure class="big">
+  <img src="/images/raum-als-effekt-vs-kompositionsmaterial-en.svg" alt="Comparison of space as effect and space as compositional material across the criteria design, listening, form-building, and documentation" loading="lazy" />
+  <figcaption><strong>Two perspectives on space.</strong> On the left, a mix- or effect-oriented approach; on the right, a compositional approach in which spatial relationships themselves become form. The <em>For Composers</em> area deliberately works from this second perspective.</figcaption>
+</figure>
 
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/composing-in-ambisonics/04-10-questions/">
@@ -94,6 +120,14 @@ This also opens specific aesthetic possibilities: narrative movement through spa
   </section>
 </div>
 
+### Five Terms to Start With
+
+- **FOA**: First Order Ambisonics, the basic historical form of Ambisonics
+- **HOA**: Higher Order Ambisonics, with higher spatial resolution and more flexible rendering
+- **B-format**: the Ambisonics working format in which spatial relationships are stored and processed further
+- **Diffusion**: the degree between precise localisation and spatial extension
+- **Spatial counterpoint**: spatial voice-leading between multiple sources or groups
+
 ## Reading Paths
 
 - **For a first entry point**: `Overview` → `Analytical Listening` → `10 Questions in 3D Space`
@@ -101,6 +135,13 @@ This also opens specific aesthetic possibilities: narrative movement through spa
 - **For production and setup**: `Tools and Software` → `Ambisonics Studio Practice at ICST` → `Binaural Rendering and Headphone Delivery` → `Formats, Stems, and Archiving`
 
 These reading paths are intentionally **not identical** with the numerical chapter order. They mark different entry routes: the first path leads into the topic through perception and basic concepts, while the second moves more directly toward compositional application and piece development.
+
+The following workflow diagram shows the area not as a rigid production pipeline but as an **iterative working process**: you listen, sketch, organise sources, store spatial relations in B-format, and check them under different monitoring conditions before versions and archive states emerge.
+
+<figure class="big">
+  <img src="/images/composing-workflow-en.svg" alt="Workflow from piece sketch to Ambisonics master with the steps listening idea, spatial concept, sources and groups, encoder and B-format, monitoring, and export and archive" loading="lazy" />
+  <figcaption><strong>Compositional workflow in Ambisonics.</strong> From the spatial idea through sources, groups, and B-format to monitoring, export, and archiving. The feedback loop is decisive: the process is rarely linear, but runs through repeated listening and revision steps.</figcaption>
+</figure>
 
 <figure class="big">
   <img src="/blog/icst-composer-studio-overview/ICST_STUDIO.png" alt="ICST Composer Studio in Zurich" loading="lazy" />

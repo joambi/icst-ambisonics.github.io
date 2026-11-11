@@ -124,6 +124,9 @@ hideDate: true
   <div class="artist-card__body">
     <div class="artist-card__name">Nandele Maguni</div>
     <span class="artist-card__period">16 Jun – 06 Jul 2025</span>
+    <div class="artist-card__links">
+      <a href="../nandele-maguni/">Full profile →</a>
+    </div>
     <p class="artist-card__bio">During his three-week ICST Studio Residency, Nandele Maguni produced a new release entitled <em>Kampfumo</em> based on his field recordings from Maputo.</p>
   </div>
 </div>
@@ -146,6 +149,9 @@ hideDate: true
   <div class="artist-card__body">
     <div class="artist-card__name">Dániel Péter Biró</div>
     <span class="artist-card__period">18 Aug – 07 Sep 2025</span>
+    <div class="artist-card__links">
+      <a href="../peter-biro-daniel/">Full profile →</a>
+    </div>
     <p class="artist-card__bio">Professor of Composition at the Grieg Academy, University of Bergen. His research project <em>Sounding Philosophy</em> is funded by the Norwegian Artistic Research Program (2021–2025).</p>
   </div>
 </div>

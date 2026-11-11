@@ -1,6 +1,6 @@
 ---
-title: Datenschutzerklaerung
-description: Datenschutzerklaerung fuer ambisonics.ch.
+title: Datenschutzerklärung
+description: Datenschutzerklärung für ambisonics.ch.
 date: 2026-03-11T00:00:00
 draft: false
 languageCode: de
@@ -12,14 +12,14 @@ Institute for Computer Music and Sound Technology (ICST), Zurich University of t
 
 ---
 
-Diese Seite enthaelt die deutsche Datenschutzerklaerung fuer `ambisonics.ch`.
+Diese Seite enthält die deutsche Datenschutzerklärung für `ambisonics.ch`.
 
-Die vollstaendige Datenschutzerklaerung ist hier verfuegbar:
+Die vollständige Datenschutzerklärung ist hier verfügbar:
 
-<a href="https://www.iubenda.com/privacy-policy/70769495" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe">Datenschutzerklaerung</a>
+<a href="https://www.iubenda.com/privacy-policy/70769495" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe">Datenschutzerklärung</a>
 <script type="text/javascript" src="https://cdn.iubenda.com/iubenda.js"></script>
 
-Die verlinkte Fassung ist die verbindliche Version fuer `ambisonics.ch`.
+Die verlinkte Fassung ist die verbindliche Version für `ambisonics.ch`.
 
 ---
 

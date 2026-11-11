@@ -1,13 +1,13 @@
 ---
 title: "Overview"
-description: "Einstieg und Lesepfad fuer den Bereich Composing in Ambisonics."
+description: "Einstieg und Lesepfad für den Bereich Composing in Ambisonics."
 date: 2026-01-01T00:00:00
 weight: 10
 ---
 
 <div class="home-section-header home-section-header--studio" style="margin-bottom:1.4rem;">
 <p class="home-section-label">Für Komponist:innen</p>
-<p class="home-section-lead">Ein Guide fuer räumliches Denken, Hören und Arbeiten in Ambisonics — von FOA/HOA-Kontext und akustischer Gestalt bis zu Spatial Counterpoint, Werkzeugen und Studio-Praxis.</p>
+<p class="home-section-lead">Ein Guide für räumliches Denken, Hören und Arbeiten in Ambisonics — von FOA/HOA-Kontext und akustischer Gestalt bis zu Spatial Counterpoint, Werkzeugen und Studio-Praxis.</p>
 </div>
 
 > **Kurz gesagt:** Dieser Bereich hilft dir, Raum nicht nur zu mischen, sondern als **kompositorisches Material** zu entwerfen, zu überprüfen und in verschiedenen Wiedergabesituationen tragfähig zu machen.
@@ -111,7 +111,7 @@ Das lässt sich auch als Gegenüberstellung zweier Denkweisen beschreiben: In ei
     </div>
   </section>
   <section class="home-card">
-    <h4>Hoeren</h4>
+    <h4>Hören</h4>
     <p>Begleitend helfen die ASCOLTA-Beiträge und der Listening Guide, räumliche Wahrnehmung beim Hören und Komponieren zu schärfen.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/blog/ascolta-listening-guide/">Listening Guide</a>
@@ -134,7 +134,7 @@ Das lässt sich auch als Gegenüberstellung zweier Denkweisen beschreiben: In ei
 - **Für Stückentwicklung und Komposition**: `Die 10 Fragen` → `Spatial Counterpoint` → `Raumparameter als kompositorisches Material` → `Vergleich kompositorischer Raumstrategien`
 - **Für Produktion und Setup**: `Werkzeuge und Software` → `Studiopraxis in Ambisonics am ICST` → `Binaurales Rendering` → `Formate, Stems und Archivierung`
 
-Diese Lesepfade sind bewusst **nicht identisch** mit der numerischen Kapitelreihenfolge. Sie markieren unterschiedliche Einstiege: Der erste Pfad fuehrt ueber Wahrnehmung und Grundbegriffe in das Thema ein, waehrend der zweite direkt auf kompositorische Anwendung und Stueckentwicklung zielt.
+Diese Lesepfade sind bewusst **nicht identisch** mit der numerischen Kapitelreihenfolge. Sie markieren unterschiedliche Einstiege: Der erste Pfad führt über Wahrnehmung und Grundbegriffe in das Thema ein, während der zweite direkt auf kompositorische Anwendung und Stückentwicklung zielt.
 
 Das folgende Workflow-Schema zeigt den Bereich nicht als starre Produktionspipeline, sondern als **iterativen Arbeitsprozess**: Man hört, entwirft, organisiert Quellen, speichert räumliche Relationen im B-Format und überprüft sie unter verschiedenen Monitoring-Bedingungen, bevor Versionen und Archivstände entstehen.
 
@@ -144,9 +144,19 @@ Das folgende Workflow-Schema zeigt den Bereich nicht als starre Produktionspipel
 </figure>
 
 <figure class="big">
-  <img src="/blog/icst-composer-studio-overview/ICST_STUDIO.png" alt="ICST Kompositionsstudio in Zuerich" loading="lazy" />
+  <img src="/blog/icst-composer-studio-overview/ICST_STUDIO.png" alt="ICST Kompositionsstudio in Zürich" loading="lazy" />
   <figcaption><strong>Komponieren in Ambisonics.</strong> Theorie, Hörpraxis, Werkzeuge und Aufführungskontexte greifen hier ineinander statt getrennt behandelt zu werden.</figcaption>
 </figure>
 
----
+## Was dich hier erwartet
 
+- **Geschichte von FOA und HOA**: historische Linien, Studios, Konzerträume, Archive und Werkzeuge
+- **Die 10 Fragen im 3D-Raum**: ein praktischer Fragenkatalog zum Planen und Reflektieren eines Stücks
+- **Die akustische Gestalt eines Klangs**: warum Raum zur Identität eines Klangobjekts gehört
+- **Spatial Counterpoint**: räumliche Stimmführung, Fallstudien und ICST/REAPER-Workflows
+- **Raumparameter als kompositorisches Material**: B-Format, Wahrnehmung und die kompositorische Rolle von Azimut, Elevation, Distanz, Diffusion und Bewegung
+- **Vergleich kompositorischer Raumstrategien**: wie unterschiedliche Formen räumlicher Organisation als formale Prinzipien wirken
+- **Studiopraxis in Ambisonics am ICST**: Session-Architektur, Monitoring, B-Format-Archivierung und Multiformat-Delivery
+- **Werkzeuge und Software**: ein Überblick über zentrale Ambisonics-Toolchains
+
+---

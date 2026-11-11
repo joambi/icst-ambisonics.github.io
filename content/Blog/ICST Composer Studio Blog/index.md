@@ -128,7 +128,7 @@ The studio is open to international artists in residence, researchers, and stude
 
 ---
 
-# What This Page Is For
+## What This Page Is For
 
 This is the **service and resource hub** for the ICST Composition Studio. From here, you can access technical preparation, speaker and routing information, studio infrastructure, and downloads for working on site.
 
