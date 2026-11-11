@@ -6,17 +6,28 @@
       {{ replace .context.Site.Params.copyright "{{ YEAR }}" (now.Format "2006") | markdownify }}
     </li>
     {{ end }}
+    {{- /* DE: German labels and the local privacy page; keyed by the identifier of the root footer menu */ -}}
+    {{ $de := dict
+      "Privacy Policy" (dict "name" "Datenschutzerklärung" "url" "/privacy-policy/")
+      "Cookie Policy" (dict "name" "Cookie-Richtlinie" "url" "https://www.iubenda.com/privacy-policy/70769495/cookie-policy")
+      "Terms and Conditions" (dict "name" "Allgemeine Geschäftsbedingungen" "url" "/terms-and-conditions/")
+    }}
     {{ range .context.Site.Menus.footer }}
+      {{ $name := .Name }}
+      {{ $href := .URL }}
+      {{ if eq $.context.Site.Language.Lang "de" }}
+        {{ with index $de .Identifier }}{{ $name = .name }}{{ $href = .url }}{{ end }}
+      {{ end }}
       <li class="footer__item">
         <a
           class="link"
-          href="{{ .URL }}"
-          {{ if strings.HasPrefix .URL "http" }}
+          href="{{ $href }}"
+          {{ if strings.HasPrefix $href "http" }}
             target="_blank" rel="noopener noreferrer"
           {{ end }}
-          title="{{ .Title }}"
+          title="{{ $name }}"
         >
-          {{ .Name }}
+          {{ $name }}
         </a>
       </li>
     {{ end }}

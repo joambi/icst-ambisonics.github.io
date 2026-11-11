@@ -11,13 +11,13 @@ description: "Tutorial and reference for the ICST Animator: move, rotate and tra
 Level: Intermediate | Audience: Composer, technician, student, interactive-media user. | **Version: ICST Ambisonics Plugins 4.0**
 
 <!-- TODO release: insert download link -->
-![Multi-AmbiEncoder_64 with four groups and the Animator timeline](AT-BAS-05-Animator-Overview.png)
+![Multi-AmbiEncoder_64 with four groups and the Animator timeline](AT-BAS-05-Animator-Overview.webp)
 
 The **Animator** is the choreography timeline of the **Multi-AmbiEncoder_64**: it moves, rotates and reshapes entire source groups automatically over time, in sync with the DAW transport.
 
 {{< video name="AT-DEM-V01-Load-Demo" caption="Demo: the four example scenes from File → Load Demo." >}}
 
-> **Tested with** REAPER v7.74 – v7.82, macOS arm64. Some GIFs still show earlier builds. What's new in this version: see [Release notes](#release-notes).
+> **Tested with** REAPER v7.74 – v7.82, macOS arm64. Windows has not been tested with this version; shortcuts there use Ctrl instead of ⌘. Some GIFs still show earlier builds. What's new in this version: see [Release notes](#release-notes).
 
 ## Quick start: your first movement
 
@@ -31,7 +31,7 @@ Requirement: at least **one group** with sources is set up in the Multi-AmbiEnco
 
 The group travels from the starting point to the target:
 
-{{< video name="AT-MOV-V01-MoveTo" >}}
+{{< video name="AT-MOV-V01-MoveTo" caption="MoveTo: the group travels from the starting point to the target." >}}
 
 {{< notice warning >}}
 While the Animator is **ON**, groups cannot be moved by hand in the radar. Always switch it OFF before positioning.
@@ -107,7 +107,7 @@ Hence the rule: **define the start**, unless you explicitly want a clip to carry
 
 ## User interface
 
-![Opening the Animator: Animator button (1) and window (2), group point (3), Movement track (4), tracks without a group (5)](AT-BAS-03-Animator-oeffnen-Annotiert.png)
+![Opening the Animator: Animator button (1) and window (2), group point (3), Movement track (4), tracks without a group (5)](AT-BAS-03-Animator-oeffnen-Annotiert.webp)
 
 1. **Animator button** in the AmbiEncoder opens the window; the play button to its left switches ON/OFF.
 2. **Animator window** with menus and toolbar.
@@ -155,7 +155,7 @@ Hence the rule: **define the start**, unless you explicitly want a clip to carry
 - **M** mutes clips; a muted clip keeps all its data.
 - Rectangle selection with ⌘-drag; copy/paste also between groups; **Undo/Redo** for all changes.
 
-![Muted checkbox in the clip editor and muted clip on the timeline](AT-CLP-01-Muted-Annotiert.png)
+![Muted checkbox in the clip editor and muted clip on the timeline](AT-CLP-01-Muted-Annotiert.webp)
 
 ## Movement clips
 
@@ -297,23 +297,23 @@ For rotations the start angle is absolute: the sources snap to it when the clip 
 
 ### Rotation X
 
-{{< video name="AT-ACT-V01-Rotation-X" >}}
+{{< video name="AT-ACT-V01-Rotation-X" caption="Rotation X: the source constellation turns around the X axis." >}}
 
 ### Rotation Y
 
-{{< video name="AT-ACT-V02-Rotation-Y" >}}
+{{< video name="AT-ACT-V02-Rotation-Y" caption="Rotation Y: the source constellation turns around the Y axis." >}}
 
 ### Rotation Z
 
-{{< video name="AT-ACT-V03-Rotation-Z" >}}
+{{< video name="AT-ACT-V03-Rotation-Z" caption="Rotation Z: the source constellation turns around the Z axis." >}}
 
 ### Stretch
 
-{{< video name="AT-ACT-V04-Stretch-Grow-Shrink" >}}
+{{< video name="AT-ACT-V04-Stretch-Grow-Shrink" caption="Stretch: the distances of the sources to the group point grow and shrink." >}}
 
 ### Jitter
 
-{{< video name="AT-ACT-V05-Jitter" >}}
+{{< video name="AT-ACT-V05-Jitter" caption="Jitter: each source scatters around its base position, the group point stays put." >}}
 
 Each source scatters individually around its base position; the group point stays put. The motion is smooth, with roughly one new random target per second at Speed 1. The offset never adds up, not even across Pause/Resume, and at the end of the clip the sources are back exactly on their base position. The tables in the Encoder Settings do not show the jitter, only the radar does.
 
