@@ -180,6 +180,12 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   url = "/ICST Ambisonics Plugins/"
 
     [[menu.main]]
+    name = "EcoSystem"
+    parent = "tools-osc"
+    weight = 400
+    url = "/ecosystem/"
+
+    [[menu.main]]
     name = "Plugin Docs"
     parent = "tools-osc"
     weight = 401
