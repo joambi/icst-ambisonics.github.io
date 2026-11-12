@@ -25,11 +25,11 @@ aliases:
   </a>
 </div>
 
-## Neu hier? Starte mit Ambisonics in REAPER
+## Willkommen im ICST Ambisonics EcoSystem
 
-Eine Methode, dreidimensionalen Klang aufzunehmen und wiederzugeben — für beliebige Lautsprecheranordnungen, in jedem Raum. Die ICST-Plugins bringen das in REAPER, gratis und Open Source, mit studioerprobten Workflows aus der ZHdK Zürich.
+Ambisonics ist eine Methode, dreidimensionalen Klang aufzunehmen und wiederzugeben — für beliebige Lautsprecheranordnungen, in jedem Raum. Das ICST Ambisonics EcoSystem versammelt freie Plugins für REAPER, Tools für Max/MSP, Motion-Werkzeuge, Dokumentation und Studiopraxis der ZHdK Zürich an einem Ort.
 
-Wenn du neu einsteigst, folge dem geführten Startpfad. Wenn du schon mit den Plugins arbeitest, spring direkt in Quick Start oder die Doku.
+Neu dabei? Folge dem geführten Startpfad. Schon im Thema? Spring direkt in die Plugin-Doku oder ins EcoSystem.
 
 ![Plugin-Übersicht](/images/Home_gif.gif)
 
@@ -37,25 +37,21 @@ Wenn du neu einsteigst, folge dem geführten Startpfad. Wenn du schon mit den Pl
   <a class="hero__link hero__link--primary" href="/de/start/">
     <i class="fas fa-play"></i>&nbsp;Hier starten
   </a>
-  <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">
-    <i class="fas fa-bolt"></i>&nbsp;Quick Start
-  </a>
-  <a class="hero__link" href="/ambisonics-101/">
-    <i class="fas fa-compass"></i>&nbsp;Was ist Ambisonics?
-  </a>
   <a class="hero__link" href="/icst-ambisonics-plugins/">
     <i class="fas fa-book-open"></i>&nbsp;Plugin-Doku
   </a>
+  <a class="hero__link" href="/de/ecosystem/">
+    <i class="fas fa-sitemap"></i>&nbsp;EcoSystem
+  </a>
 </div>
 
-Neu in v3.2: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+Neu in v4.0.0: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 
 ---
 
 <div class="home-section-header home-section-header--software">
 <p class="home-section-label">🎛️ Ambisonics-Anwender:innen</p>
 <p class="home-section-lead">Freie, quelloffene Spatial-Audio-Tools für REAPER — vom ersten Setup bis zu fortgeschrittener OSC-Steuerung und DAW-Integration.</p>
-<a class="hero__link hero__link--primary" href="/de/start/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-play"></i>&nbsp;Geführter Einstieg in 4 Schritten</a>
 </div>
 
 <div class="home-cards">
@@ -64,8 +60,6 @@ Neu in v3.2: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releases
     <p>Schneller Einstieg in Setup, Signalfluss und den ersten räumlichen Mix in REAPER.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
-      <a class="hero__link" href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step by Step</a>
-      <a class="hero__link" href="/ambisonics-101/">Ambisonics 101</a>
     </div>
   </section>
   <section class="home-card">
@@ -73,16 +67,13 @@ Neu in v3.2: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releases
     <p>Technische Tiefe für robuste Pipelines, OSC-Steuerung und reproduzierbare Session-Templates.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/03_how_it_works/">How It Works</a>
-      <a class="hero__link" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC-Syntax</a>
-      <a class="hero__link" href="/icst-ambisonics-plugins/15_best_practices/">Best Practices</a>
     </div>
   </section>
   <section class="home-card">
     <h4>🎼 Komponieren in Ambisonics</h4>
     <p>Räumliches Denken für Komponist:innen — analytisches Hören, Bewegung und Tiefe als kompositorische Parameter, Studiopraxis. <em>Kompositions-Guide in Vorbereitung.</em></p>
     <div class="home-card__actions">
-      <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
-      <a class="hero__link" href="/blog/ascolta/">ASCOLTA Sessions</a>
+      <a class="hero__link hero__link--primary" href="/blog/ascolta-listening-guide/">Listening Guide</a>
     </div>
   </section>
 </div>

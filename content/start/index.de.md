@@ -29,6 +29,11 @@ Womit möchtest du beginnen? Wähle deinen Einstieg.
     <strong class="icst-pillar__title">Konzerte & ASCOLTA</strong>
     <span class="icst-pillar__desc">Akusmatische Hörstunden und Konzerte an der ZHdK — räumliche Werke live aufgeführt.</span>
   </a>
+  <a class="icst-pillar icst-pillar--plugins" href="/de/ecosystem/">
+    <span class="icst-pillar__icon">🧭</span>
+    <strong class="icst-pillar__title">EcoSystem – alles im Überblick</strong>
+    <span class="icst-pillar__desc">Plugins, Max-Tools, REAPER-Bundle und Motion-Werkzeuge an einem Ort – mit Status, Plattform und Lizenz.</span>
+  </a>
 </div>
 
 ---

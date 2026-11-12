@@ -24,11 +24,11 @@ aliases:
   </a>
 </div>
 
-## New here? Start with Ambisonics in REAPER
+## Welcome to the ICST Ambisonics EcoSystem
 
 Level: Beginner to Advanced | **Audience:** Composers, students, producers, technicians, and studio residents.
 
-Ambisonics is a method for capturing and reproducing three-dimensional sound. The ICST plugins bring this approach into REAPER through free, open-source, studio-tested workflows developed at ZHdK Zurich.
+Ambisonics is a method for capturing and reproducing three-dimensional sound. The ICST Ambisonics EcoSystem brings free plugins for REAPER, Max/MSP tools, motion tools, documentation and studio practice from ZHdK Zurich together in one place.
 
 If you are new, follow the guided start path. If you already know the plugins, jump straight to Quick Start, tutorials, or the docs.
 
@@ -38,25 +38,21 @@ If you are new, follow the guided start path. If you already know the plugins, j
   <a class="hero__link hero__link--primary" href="/start/">
     <i class="fas fa-play"></i>&nbsp;Start Here
   </a>
-  <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">
-    <i class="fas fa-bolt"></i>&nbsp;Quick Start
-  </a>
-  <a class="hero__link" href="/ambisonics-101/">
-    <i class="fas fa-compass"></i>&nbsp;What is Ambisonics?
-  </a>
   <a class="hero__link" href="/icst-ambisonics-plugins/">
     <i class="fas fa-book-open"></i>&nbsp;Plugin Docs
   </a>
+  <a class="hero__link" href="/ecosystem/">
+    <i class="fas fa-sitemap"></i>&nbsp;EcoSystem
+  </a>
 </div>
 
-New in v3.2: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+New in v4.0.0: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 
 ---
 
 <div class="home-section-header home-section-header--software">
 <p class="home-section-label">🎛️ Working with Ambisonics?</p>
 <p class="home-section-lead">Free and open-source spatial audio tools for REAPER — from first setup to advanced OSC control and DAW integration.</p>
-<a class="hero__link hero__link--primary" href="/start/" style="margin-top:0.7rem;display:inline-flex;"><i class="fas fa-play"></i>&nbsp;Guided 4-step start path</a>
 </div>
 
 <div class="home-cards">
@@ -65,8 +61,6 @@ New in v3.2: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases]
     <p>Fast entry into setup, signal flow, and your first spatial mix in REAPER.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
-      <a class="hero__link" href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step by Step</a>
-      <a class="hero__link" href="/ambisonics-101/">Ambisonics 101</a>
     </div>
   </section>
   <section class="home-card">
@@ -74,16 +68,13 @@ New in v3.2: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases]
     <p>Technical depth for repeatable pipelines, OSC control, and robust session templates.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/03_how_it_works/">How It Works</a>
-      <a class="hero__link" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC Syntax</a>
-      <a class="hero__link" href="/icst-ambisonics-plugins/17_best_practices/">Best Practices</a>
     </div>
   </section>
   <section class="home-card">
     <h4>🎼 Composing in Ambisonics</h4>
     <p>Spatial thinking for composers — analytical listening, movement and depth as compositional parameters, studio workflows. <em>Composing Guide coming soon.</em></p>
     <div class="home-card__actions">
-      <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
-      <a class="hero__link" href="/blog/ascolta/">ASCOLTA Sessions</a>
+      <a class="hero__link hero__link--primary" href="/blog/ascolta-listening-guide/">Listening Guide</a>
     </div>
   </section>
 </div>

@@ -28,6 +28,11 @@ What would you like to explore? Choose a starting point below.
     <strong class="icst-pillar__title">Concerts & ASCOLTA</strong>
     <span class="icst-pillar__desc">Acousmatic listening sessions and concerts at ZHdK — spatial works performed live.</span>
   </a>
+  <a class="icst-pillar icst-pillar--plugins" href="/ecosystem/">
+    <span class="icst-pillar__icon">🧭</span>
+    <strong class="icst-pillar__title">EcoSystem – everything at a glance</strong>
+    <span class="icst-pillar__desc">Plugins, Max tools, REAPER bundle and motion tools in one place – with status, platform and licence.</span>
+  </a>
 </div>
 
 ---
