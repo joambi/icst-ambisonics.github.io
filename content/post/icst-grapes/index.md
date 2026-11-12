@@ -12,7 +12,7 @@ key_points:
   - "Use physical knob control for spatial source positioning in live performance"
 DisableComments: false
 difficulty: "advanced"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiEncoder", "OSC"]
 ---
 

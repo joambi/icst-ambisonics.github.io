@@ -10,7 +10,7 @@ key_points:
   - "Überblick über die neue Struktur von ambisonics.ch: Tutorials, Blog, Docs, Downloads"
   - "Direkte Einstiegspunkte für Einsteiger, Komposition und Forschung"
 difficulty: "intermediate"
-kind: "news"
+post_kind: "news"
 ---
 
 

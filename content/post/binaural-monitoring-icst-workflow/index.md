@@ -11,7 +11,7 @@ key_points:
   - "The BinauralDecoder replaces the loudspeaker decoder in the monitoring chain – it sits on the same bus"
   - "Encoder order and decoder order must match – otherwise you get blur instead of localisation"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["Binaural"]
 ---
 

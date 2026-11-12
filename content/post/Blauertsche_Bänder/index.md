@@ -13,7 +13,7 @@ key_points:
   - "Understand how Blauert's Bands affect perceived elevation and front/back localisation"
   - "Apply IEM MultiEQ filter settings for elevation and direction correction"
 difficulty: "intermediate"
-kind: "background"
+post_kind: "background"
 ---
 
 <style>

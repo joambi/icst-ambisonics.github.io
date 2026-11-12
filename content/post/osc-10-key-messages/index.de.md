@@ -10,7 +10,7 @@ key_points:
   - "Die 10 wichtigsten OSC-Messages für den ICST AmbiEncoder auf einen Blick"
   - "OSC-Verbindung in 2 Minuten einrichten und mit Checkliste debuggen"
 difficulty: "intermediate"
-kind: "reference"
+post_kind: "reference"
 tool: ["OSC"]
 ---
 

@@ -11,7 +11,7 @@ key_points:
   - "AED (Azimut, Elevation, Distanz) orientiert sich an Hörwahrnehmung und Kompassrichtungen"
   - "Beide Systeme sind jederzeit parallel im Decoder sichtbar und editierbar"
 difficulty: "beginner"
-kind: "reference"
+post_kind: "reference"
 tool: ["AmbiDecoder"]
 ---
 

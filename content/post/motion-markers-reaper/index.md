@@ -13,7 +13,7 @@ key_points:
   - "Preview movement live via OSC and record it as automation on the AmbiEncoder track"
   - "Fix typical problems (python-osc, Ambi host, web interface) yourself"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiEncoder", "Lua", "OSC"]
 ---
 

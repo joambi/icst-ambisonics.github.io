@@ -12,7 +12,7 @@ key_points:
   - "Control source position in AED or XYZ coordinates from any OSC sender"
 DisableComments: false
 difficulty: "intermediate"
-kind: "reference"
+post_kind: "reference"
 tool: ["OSC"]
 ---
 

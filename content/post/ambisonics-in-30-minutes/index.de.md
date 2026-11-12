@@ -10,7 +10,7 @@ key_points:
   - "Encoder → B-Format-Bus → Decoder-Routing von Grund auf in REAPER aufbauen"
   - "Häufige Fehler beim ersten Setup erkennen und beheben"
 difficulty: "beginner"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["REAPER"]
 ---
 

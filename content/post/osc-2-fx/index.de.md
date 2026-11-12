@@ -12,7 +12,7 @@ key_points:
   - "Raumposition und Hall synchron aus einem OSC-Stream steuern"
 DisableComments: false
 difficulty: "advanced"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["OSC", "REAPER"]
 ---
 

@@ -15,7 +15,7 @@ key_points:
   - "Sync DAWs with LTC and automate the MultiEncoder from Ableton OSC clips"
 DisableComments: false
 difficulty: "advanced"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiEncoder", "Ableton"]
 ---
 

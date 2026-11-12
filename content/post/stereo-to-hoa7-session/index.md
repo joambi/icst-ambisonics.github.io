@@ -10,7 +10,7 @@ key_points:
   - "Translate a stereo production mindset into a 7th-order Ambisonics workflow"
   - "Design controlled source movement and validate the HOA7 export"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["REAPER"]
 ---
 

@@ -10,7 +10,7 @@ key_points:
   - "Build encoder → B-format bus → decoder routing from scratch in REAPER"
   - "Diagnose and fix the most common first-session errors"
 difficulty: "beginner"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["REAPER"]
 ---
 

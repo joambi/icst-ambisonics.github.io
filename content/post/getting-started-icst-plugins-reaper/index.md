@@ -10,7 +10,7 @@ key_points:
   - "Complete a first working spatial audio session in REAPER step by step"
   - "Structured checklist from plugin install to binaural monitoring"
 difficulty: "beginner"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["REAPER", "AmbiEncoder"]
 ---
 

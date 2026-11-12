@@ -15,7 +15,7 @@ key_points:
   - "Use device tilt for live spatial control or synchronised swarm motion"
 author: Johannes Schuett
 difficulty: "advanced"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiEncoder", "OSC"]
 ---
 

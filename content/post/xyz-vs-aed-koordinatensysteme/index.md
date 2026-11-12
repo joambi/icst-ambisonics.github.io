@@ -11,7 +11,7 @@ key_points:
   - "AED (azimuth, elevation, distance) follows how we hear and the points of the compass"
   - "Both systems are always visible and editable side by side in the decoder"
 difficulty: "beginner"
-kind: "reference"
+post_kind: "reference"
 tool: ["AmbiDecoder"]
 ---
 

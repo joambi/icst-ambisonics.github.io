@@ -14,7 +14,7 @@ key_points:
 DisableComments: false
 difficulty: "intermediate"
 draft: false
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["Animator"]
 ---
 

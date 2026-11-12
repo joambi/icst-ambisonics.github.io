@@ -12,7 +12,7 @@ key_points:
   - "Raumquellen im Live-Einsatz mit physischen Reglern steuern"
 DisableComments: false
 difficulty: "advanced"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiEncoder", "OSC"]
 ---
 

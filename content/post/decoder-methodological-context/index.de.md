@@ -11,7 +11,7 @@ key_points:
   - "Sphärische Harmonische sind die mathematische Grundlage der Ambisonics-Dekodierung"
   - "Der Decoder projiziert das Feld auf Lautsprecher – er verändert das Feld selbst nicht"
 difficulty: "intermediate"
-kind: "background"
+post_kind: "background"
 tool: ["AmbiDecoder"]
 ---
 

@@ -10,7 +10,7 @@ key_points:
   - "Install the Spiral Walk ReaScript and generate spiraling motion envelopes in REAPER"
   - "Understand the GUI parameters and LFO logic behind the spiral algorithm"
 difficulty: "advanced"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiEncoder", "Lua"]
 ---
 

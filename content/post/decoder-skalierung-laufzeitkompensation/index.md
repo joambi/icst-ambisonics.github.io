@@ -11,7 +11,7 @@ key_points:
   - "Delay times are calculated automatically from the distance values"
   - "Without delay compensation at unequal distances the sound image becomes incoherent"
 difficulty: "intermediate"
-kind: "reference"
+post_kind: "reference"
 tool: ["AmbiDecoder"]
 ---
 

@@ -12,7 +12,7 @@ key_points:
   - "Quellposition in AED- oder XYZ-Koordinaten von beliebigen OSC-Sendern steuern"
 DisableComments: false
 difficulty: "intermediate"
-kind: "reference"
+post_kind: "reference"
 tool: ["OSC"]
 ---
 

@@ -11,7 +11,7 @@ key_points:
   - "REAPER: 'Multichannel tracks to multichannel files' must be active in the render dialog"
   - "The channel count of the B-format bus and the order in the decoder must be identical"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["REAPER"]
 ---
 

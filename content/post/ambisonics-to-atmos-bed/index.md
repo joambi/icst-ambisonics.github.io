@@ -11,7 +11,7 @@ key_points:
   - "Three methods of differing quality: simple decode, beamforming, virtual dome"
   - "For headphones and VR: do not convert, render binaural directly from HOA"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["Delivery"]
 ---
 

@@ -15,7 +15,7 @@ key_points:
   - "Geräteneigung für Live-Raumkontrolle oder synchrone Schwarm-Bewegungen nutzen"
 author: Johannes Schuett
 difficulty: "advanced"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiEncoder", "OSC"]
 ---
 

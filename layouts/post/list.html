@@ -221,7 +221,7 @@
         {{ end }}
         {{ $filterText := printf "%s %s %s %s %s %s" (delimit $tags " ") (lower $page.Title) (lower $page.RelPermalink) $difficulty $levelLower (lower $audience) }}
         {{ $toolIds := slice }}{{ range $page.Params.tool }}{{ $toolIds = $toolIds | append (replaceRE `[^a-z0-9]` "" (lower .)) }}{{ end }}
-        <a class="docs-index__chapter" href="{{ $page.RelPermalink }}" data-filter-text="{{ $filterText }}" data-kind="{{ lower (default "" $page.Params.kind) }}" data-tool="{{ delimit $toolIds " " }}" data-level="{{ $difficulty }}">
+        <a class="docs-index__chapter" href="{{ $page.RelPermalink }}" data-filter-text="{{ $filterText }}" data-kind="{{ lower (default "" $page.Params.post_kind) }}" data-tool="{{ delimit $toolIds " " }}" data-level="{{ $difficulty }}">
           <div class="docs-index__chapter-number">{{ add $i 1 }}</div>
           <div class="docs-index__chapter-info">
             <div class="docs-index__chapter-title">

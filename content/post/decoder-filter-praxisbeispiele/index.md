@@ -11,7 +11,7 @@ key_points:
   - "Filters compensate for room-acoustic problems or support a careful psychoacoustic tuning"
   - "In MultiDecoder mode every decoder unit can have its own filter section"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiDecoder"]
 ---
 

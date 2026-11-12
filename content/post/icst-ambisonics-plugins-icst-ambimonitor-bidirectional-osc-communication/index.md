@@ -12,7 +12,7 @@ key_points:
   - "Send and receive source angles in Euler format between Max patches and REAPER"
 DisableComments: false
 difficulty: "advanced"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["Max", "OSC"]
 ---
 

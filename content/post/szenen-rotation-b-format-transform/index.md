@@ -11,7 +11,7 @@ key_points:
   - "The IEM SceneRotator supports Euler angles (yaw/pitch/roll) and quaternions – both controllable via OSC"
   - "REAPER automation envelopes allow compositional rotation as a parametric curve"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["REAPER", "OSC"]
 ---
 

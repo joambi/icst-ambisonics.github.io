@@ -14,7 +14,7 @@ key_points:
   - "Verstehen, wie Blauertsche Bänder Höhen- und Richtungswahrnehmung beeinflussen"
   - "IEM-MultiEQ-Filtersetzung für Elevations- und Front/Back-Korrektur anwenden"
 difficulty: "intermediate"
-kind: "background"
+post_kind: "background"
 ---
 
 

@@ -14,7 +14,7 @@ key_points:
   - "Position sources on a circle using CircleSelected Lua presets in REAPER"
   - "Save, recall, and manage source position presets interactively"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiEncoder", "Lua"]
 ---
 

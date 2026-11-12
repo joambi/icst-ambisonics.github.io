@@ -10,7 +10,7 @@ key_points:
   - "Quellengruppen mit LFO, manuellem Recording oder Quaternion-Motion animieren"
   - "Gruppenmotion aus externem OSC-Signal in REAPER-Envelopes übertragen"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["MultiEncoder", "Animator"]
 ---
 

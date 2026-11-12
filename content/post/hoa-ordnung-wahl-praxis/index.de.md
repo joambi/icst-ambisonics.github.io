@@ -11,7 +11,7 @@ key_points:
   - "Das Lautsprecher-System ist der limitierende Faktor – nicht die DAW"
   - "HOA3 ist der produktive Sweetspot: gute Auflösung, handhabbare CPU-Last, breite Plugin-Unterstützung"
 difficulty: "beginner"
-kind: "background"
+post_kind: "background"
 ---
 
 Level: Beginner–Intermediate | **Audience:** Komponist:in, Producer:in, alle die eine neue Ambisonics-Session aufsetzen.

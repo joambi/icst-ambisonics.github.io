@@ -11,7 +11,7 @@ key_points:
   - "A→B conversion needs a microphone-specific plugin – not a generic matrix"
   - "FOA microphones deliver 1st-order B-format: spatially limited, but ideal for room acoustics, ambience and textures"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["Recording"]
 ---
 

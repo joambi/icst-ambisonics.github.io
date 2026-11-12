@@ -13,7 +13,7 @@ key_points:
   - "Bewegung live per OSC vorhören und als Automation auf die AmbiEncoder-Spur aufnehmen"
   - "Typische Fehler (python-osc, Ambi host, Web-Interface) selbst beheben"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["AmbiEncoder", "Lua", "OSC"]
 ---
 

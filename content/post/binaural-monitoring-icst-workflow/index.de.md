@@ -11,7 +11,7 @@ key_points:
   - "Der BinauralDecoder ersetzt im Monitoring-Chain den Lautsprecher-Decoder – er sitzt am selben Bus"
   - "Encoder-Ordnung und Decoder-Ordnung müssen übereinstimmen – sonst entsteht Blur statt Lokalisation"
 difficulty: "intermediate"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["Binaural"]
 ---
 

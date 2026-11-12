@@ -12,7 +12,7 @@ key_points:
   - "Quellenwinkel im Euler-Format zwischen Max-Patches und REAPER senden und empfangen"
 DisableComments: false
 difficulty: "advanced"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["Max", "OSC"]
 ---
 

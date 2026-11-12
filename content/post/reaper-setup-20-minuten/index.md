@@ -10,7 +10,7 @@ key_points:
   - "ICST AmbiEncoder, B-Format-Bus und Decoder in 20 Minuten aufsetzen"
   - "Routing prüfen und ersten Raumklang-Test in REAPER durchführen"
 difficulty: "beginner"
-kind: "tutorial"
+post_kind: "tutorial"
 tool: ["REAPER", "AmbiEncoder"]
 ---
 
