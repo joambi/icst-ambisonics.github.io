@@ -25,8 +25,11 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
       </div>
     </div>
     <figure class="motion-map-hero__media">
-      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animierte AmbiEncoder64 Motion Map mit bewegten Quellen und Trajektorien in der Vorschau">
-      <figcaption>Animierte Vorschau · 64 Quellen · 3D-Bewegung · REAPER-Automation · OSC</figcaption>
+      <video autoplay muted loop playsinline preload="metadata" poster="/images/icst-ambi-motion-map-demo-poster.jpg" aria-label="Die AmbiEncoder64 Motion Map steuert den AmbiEncoder: Figuren pro Quelle, Trajektorien-Vorschau und Live-Bewegung im Encoder-Radar">
+        <source src="/images/icst-ambi-motion-map-demo.webm" type="video/webm">
+        <source src="/images/icst-ambi-motion-map-demo.mp4" type="video/mp4">
+      </video>
+      <figcaption>Motion Map zusammen mit dem AmbiEncoder · 64 Quellen · Trajektorien-Vorschau · REAPER-Automation · OSC</figcaption>
     </figure>
   </section>
 
@@ -46,6 +49,7 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
       <a href="#1-voraussetzungen"><span class="motion-map-section-list__number">1</span><span><strong>Motion Map — Benutzerhandbuch</strong><small>Oberfläche, Bewegungsformen, Raumparameter, Presets und Automation.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
       <a href="/de/icst-ambisonics-plugins/16_motion_map_setup/"><span class="motion-map-section-list__number">2</span><span><strong>Setup &amp; Workflow</strong><small>Installation, Konfiguration und Integration mit REAPER und OSC.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
       <a href="#creative-techniques"><span class="motion-map-section-list__number">3</span><span><strong>Kreative Techniken</strong><small>Praktische Kombinationen für Trajektorien, Timing, Quantisierung und Performance.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/"><span class="motion-map-section-list__number">4</span><span><strong>Motion Markers — Bewegung per REAPER-Marker</strong><small>Bewegungen mit Markern im Takt der Musik setzen, per OSC vorhören und als Automation aufnehmen.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
     </div>
     <p class="motion-map-related">Empfehlungen zu Routing, Monitoring und Export für die gesamte Session stehen separat unter <a href="/de/icst-ambisonics-plugins/17_best_practices/">Ambisonics Best Practices</a>.</p>
   </section>

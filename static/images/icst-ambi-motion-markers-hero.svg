@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 490" role="img" aria-labelledby="t d">
+  <title id="t">Motion Markers: movement between two REAPER markers</title>
+  <desc id="d">A dot moves in the AmbiEncoder radar from marker S to marker E while the cursor follows on the timeline.</desc>
+  <rect width="800" height="490" rx="10" fill="#0d1117"/>
+  <!-- Radar -->
+  <g transform="translate(400 170)">
+    <circle r="130" fill="#15261c" stroke="#2f5d45" stroke-width="1.5"/>
+    <circle r="97" fill="none" stroke="#2f5d45" stroke-width="1"/>
+    <circle r="65" fill="none" stroke="#2f5d45" stroke-width="1"/>
+    <circle r="32" fill="none" stroke="#2f5d45" stroke-width="1"/>
+    <line x1="-130" y1="0" x2="130" y2="0" stroke="#2f5d45"/>
+    <line x1="0" y1="-130" x2="0" y2="130" stroke="#2f5d45"/>
+    <text x="0" y="-138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#8fb9a0">Front</text>
+    <text x="-142" y="4" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#8fb9a0">L</text>
+    <text x="142" y="4" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#8fb9a0">R</text>
+    <!-- Pfad S -> E -->
+    <path id="mv" d="M-70,-70 A99,99 0 0 1 70,-70" fill="none" stroke="#4ade80" stroke-width="2" stroke-dasharray="5 5" opacity="0.8"/>
+    <g font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="700">
+      <circle cx="-70" cy="-70" r="9" fill="#0d1117" stroke="#60a5fa" stroke-width="2"/>
+      <text x="-70" y="-66" text-anchor="middle" fill="#60a5fa" font-size="11">S</text>
+      <circle cx="70" cy="-70" r="9" fill="#0d1117" stroke="#f472b6" stroke-width="2"/>
+      <text x="70" y="-66" text-anchor="middle" fill="#f472b6" font-size="11">E</text>
+    </g>
+    <circle r="9" fill="#4ade80">
+      <animateMotion dur="4s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.45 0 0.55 1"><mpath href="#mv"/></animateMotion>
+    </circle>
+    <circle r="16" fill="#4ade80" opacity="0.25">
+      <animateMotion dur="4s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.45 0 0.55 1"><mpath href="#mv"/></animateMotion>
+    </circle>
+  </g>
+  <!-- Timeline -->
+  <g font-family="Helvetica,Arial,sans-serif">
+    <rect x="60" y="360" width="680" height="110" rx="8" fill="#161b22" stroke="#30363d"/>
+    <g stroke="#30363d">
+      <line x1="60" y1="392" x2="740" y2="392"/>
+      <line x1="140" y1="360" x2="140" y2="392"/><line x1="240" y1="360" x2="240" y2="392"/>
+      <line x1="340" y1="360" x2="340" y2="392"/><line x1="440" y1="360" x2="440" y2="392"/>
+      <line x1="540" y1="360" x2="540" y2="392"/><line x1="640" y1="360" x2="640" y2="392"/>
+    </g>
+    <!-- Marker S / E -->
+    <g>
+      <path d="M180,360 v110" stroke="#60a5fa" stroke-width="2"/>
+      <rect x="180" y="366" width="118" height="20" rx="3" fill="#60a5fa"/>
+      <text x="187" y="380" font-size="12" font-weight="700" fill="#0d1117">ambi 1 a=-45</text>
+      <path d="M600,360 v110" stroke="#f472b6" stroke-width="2"/>
+      <rect x="600" y="366" width="118" height="20" rx="3" fill="#f472b6"/>
+      <text x="607" y="380" font-size="12" font-weight="700" fill="#0d1117">ambi 2 a=45</text>
+    </g>
+    <!-- Bewegungskurve -->
+    <path d="M180,452 C320,452 460,404 600,404" fill="none" stroke="#4ade80" stroke-width="2.5"/>
+    <text x="390" y="462" text-anchor="middle" font-size="12" fill="#8fb9a0">Smoothstep</text>
+    <!-- Cursor -->
+    <line x1="180" y1="360" x2="180" y2="470" stroke="#f8fafc" stroke-width="1.5">
+      <animate attributeName="x1" values="180;600" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="180;600" dur="4s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>

@@ -1,18 +1,57 @@
 ---
 title: ICST Ambi Motion Markers
 date: 2026-06-21T00:00:00
-weight: 85
+weight: 89
 draft: false
 toc: true
-hidden_in_nav: true
 description: "Marker-basierter Workflow für OSC-Preview und Automation-Aufnahme mit dem ICST AmbiEncoder in REAPER, inklusive CSV-Import und Good Practices."
+hide_default_title: true
+docs_nav_id: motion-markers
+docs_nav_label: Motion Markers
 ---
 
-Level: Intermediate | Zielgruppe: Komponist:in, Sounddesigner:in, Spatial-Audio-Techniker:in, Studierende.
+<div class="motion-map-landing">
+  <section class="motion-map-hero">
+    <div class="motion-map-hero__copy">
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Markers</p>
+      <h1><strong>Motion Markers</strong><span>Bewegung mit REAPER-Markern steuern</span></h1>
+      <p class="motion-map-hero__lead">Setze Positionen als benannte Marker auf die Timeline, höre die Bewegung dazwischen per OSC vor und nimm sie als AmbiEncoder-Automation auf — im Takt der Musik.</p>
+      <p class="motion-map-hero__meta">Fortgeschrittene · Komponist:in · Sound Designer:in · Spatial-Audio-Techniker:in</p>
+      <div class="motion-map-actions">
+        <a class="motion-map-action motion-map-action--primary" href="/downloads/ICST_Ambi_Motion_Markers_Bundle.zip"><i class="fas fa-download" aria-hidden="true"></i> Motion Markers herunterladen</a>
+        <a class="motion-map-action" href="#tutorial-deine-erste-bewegung-in-10-schritten"><i class="fas fa-book-open" aria-hidden="true"></i> Tutorial lesen</a>
+        <a class="motion-map-action" href="/de/icst-ambisonics-plugins/00_new/"><i class="fas fa-star" aria-hidden="true"></i> Neuigkeiten</a>
+      </div>
+    </div>
+    <figure class="motion-map-hero__media">
+      <img src="/images/icst-ambi-motion-markers-hero.svg" alt="Animation: Ein Punkt wandert im AmbiEncoder-Radar von Marker S nach Marker E, der Cursor läuft auf der REAPER-Timeline mit">
+      <figcaption>Zwei Marker · eine Kurve · Bewegung per OSC · Automation</figcaption>
+    </figure>
+  </section>
 
-Diese Seite beschreibt, wie du AmbiEncoder-Bewegungen mit REAPER-Markern definierst, per OSC vorhörst und als Automation aufzeichnest.
+  <section class="motion-map-overview" aria-labelledby="ueber-motion-markers">
+    <h2 id="ueber-motion-markers">Über Motion Markers</h2>
+    <p>Motion Markers verbindet REAPER-Marker mit dem ICST AmbiEncoder: Statt Automationskurven von Hand zu zeichnen, definierst du Positionen als Marker und lässt das Skript den Weg dazwischen berechnen.</p>
+    <div class="motion-map-feature-grid">
+      <div class="motion-map-feature"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><div><h3>Marker als Cues</h3><p>Positionen als benannte Marker setzen oder aus einer CSV-Liste importieren.</p></div></div>
+      <div class="motion-map-feature"><i class="fas fa-play-circle" aria-hidden="true"></i><div><h3>Vorhören per OSC</h3><p>Bewegung zwischen zwei Markern live an den AmbiEncoder senden.</p></div></div>
+      <div class="motion-map-feature"><i class="fas fa-circle" aria-hidden="true"></i><div><h3>Als Automation aufnehmen</h3><p>Einzelne Paare oder ganze Serien auf die AmbiEncoder-Spur schreiben.</p></div></div>
+    </div>
+  </section>
 
-> **Zuerst herunterladen:** Alles Nötige ist im Bundle — [ICST Ambi Motion Markers Bundle herunterladen](/downloads/ICST_Ambi_Motion_Markers_Bundle.zip) (Lua-Scripts, Python-Worker, Beispiel-CSVs, Handbuch).
+  <section class="motion-map-section-list" aria-labelledby="in-diesem-bereich">
+    <h2 id="in-diesem-bereich">In diesem Bereich</h2>
+    <div class="motion-map-section-list__items">
+      <a href="#tutorial-deine-erste-bewegung-in-10-schritten"><span class="motion-map-section-list__number">1</span><span><strong>Tutorial: Deine erste Bewegung</strong><small>In 10 Schritten von der Installation zur ersten aufgenommenen Bewegung.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="#installation"><span class="motion-map-section-list__number">2</span><span><strong>Installation</strong><small>Skripte einbinden, Python-Worker einrichten, Plugin konfigurieren.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="#marker-workflow"><span class="motion-map-section-list__number">3</span><span><strong>Marker-Workflow</strong><small>Marker-Syntax, Koordinatensystem, S/E setzen und CSV-Import.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/"><span class="motion-map-section-list__number">4</span><span><strong>Motion Map</strong><small>Für Bewegungsformen über viele Quellen: Figuren zeichnen statt Cues setzen.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+    </div>
+    <p class="motion-map-related">Das Skript gehört zum <a href="/de/ecosystem/">ICST Ambi REAPER Bundle</a>. Einen Einstieg als Blogpost gibt es unter <a href="/de/post/motion-markers-reaper/">Motion Markers – Bewegung mit REAPER-Markern steuern</a>.</p>
+  </section>
+</div>
+
+---
 
 ## Wann Markers, wann Motion Map?
 

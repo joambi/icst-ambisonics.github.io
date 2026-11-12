@@ -25,8 +25,11 @@ description: "Create and automate spatial source trajectories in REAPER with the
       </div>
     </div>
     <figure class="motion-map-hero__media">
-      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animated AmbiEncoder64 Motion Map interface with moving sources and trajectories in the preview">
-      <figcaption>Animated preview · 64 sources · 3D motion · REAPER automation · OSC</figcaption>
+      <video autoplay muted loop playsinline preload="metadata" poster="/images/icst-ambi-motion-map-demo-poster.jpg" aria-label="The AmbiEncoder64 Motion Map driving the AmbiEncoder: figures per source, trajectory preview and live movement in the encoder radar">
+        <source src="/images/icst-ambi-motion-map-demo.webm" type="video/webm">
+        <source src="/images/icst-ambi-motion-map-demo.mp4" type="video/mp4">
+      </video>
+      <figcaption>Motion Map driving the AmbiEncoder · 64 sources · trajectory preview · REAPER automation · OSC</figcaption>
     </figure>
   </section>
 
@@ -46,6 +49,7 @@ description: "Create and automate spatial source trajectories in REAPER with the
       <a href="#1-requirements"><span class="motion-map-section-list__number">1</span><span><strong>Motion Map — User Guide</strong><small>Interface, motion shapes, spatial parameters, presets, and automation.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
       <a href="/icst-ambisonics-plugins/16_motion_map_setup/"><span class="motion-map-section-list__number">2</span><span><strong>Setup &amp; Workflow</strong><small>Installation, configuration, and integration with REAPER and OSC.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
       <a href="#creative-techniques"><span class="motion-map-section-list__number">3</span><span><strong>Creative Techniques</strong><small>Practical combinations for trajectories, timing, quantization, and performance.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="/icst-ambisonics-plugins/14_icst_ambi_motion_markers/"><span class="motion-map-section-list__number">4</span><span><strong>Motion Markers — motion from REAPER markers</strong><small>Set movements with markers in time with the music, preview them via OSC and record them as automation.</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
     </div>
     <p class="motion-map-related">For session-wide routing, monitoring, and export recommendations, see the separate <a href="/icst-ambisonics-plugins/17_best_practices/">Ambisonics Best Practices</a>.</p>
   </section>
