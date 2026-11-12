@@ -93,5 +93,5 @@ Der ICST AmbiDecoder steht am Ende dieser Linie – als Werkzeug für Praxis, ni
 - Michael Gerzon, *Psychoacoustic Decoders for Multispeaker Stereo and Surround Sound* (AES, 1992)
 - Jérôme Daniel, *Représentation de champs acoustiques* (Dissertation, 2001)
 - [Geschichte von FOA und HOA – visueller Zeitstrahl](/blog/geschichte-von-ambisonics-foa-und-hoa/)
-- [Warum der Decoder klingt wie er klingt](/post/decoder-methodischer-kontext/)
+- [Warum der Decoder klingt wie er klingt](/post/decoder-methodological-context/)
 - [ICST AmbiDecoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)

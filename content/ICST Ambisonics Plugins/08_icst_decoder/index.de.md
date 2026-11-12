@@ -91,7 +91,7 @@ Diese Trennung hält die Session übersichtlich und vereinfacht spätere Fehlers
 > Deshalb beeinflussen Lautsprechergeometrie, Ambisonics-Ordnung, Gewichtung, Delay und Filterung das wahrgenommene Klangbild.
 >
 > Wenn du den konzeptionellen Hintergrund möchtest, siehe:
-> [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)
+> [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodological-context/)
 
 ## Decoder-Logik in drei Schritten
 
@@ -200,7 +200,7 @@ Verwandte Seiten:
 
 Diese Artikel vertiefen die Konzepte dieser Seite mit praktischen Beispielen und theoretischem Hintergrund:
 
-- [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)
+- [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodological-context/)
 - [Wie es funktioniert](/de/icst-ambisonics-plugins/03_how_it_works/)
 - [ICST MultiDecoder](/de/icst-ambisonics-plugins/09_icst_multidecoder/)
 - [Best Practices](/de/icst-ambisonics-plugins/17_best_practices/)
