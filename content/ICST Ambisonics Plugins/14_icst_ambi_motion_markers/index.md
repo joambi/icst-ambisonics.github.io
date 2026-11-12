@@ -66,21 +66,15 @@ In REAPER: *Actions menu → Load ReaScript…* — then select each file from t
 
 ![REAPER Actions menu — Load ReaScript dialog](/motion-markers/install-load-reascript.png)
 
-### 2. Place the Python worker
+### 2. Keep the Python worker next to the Lua scripts
 
-The GUI launches `reaper_marker_ambi_motion.py` as a persistent background process to send OSC commands. Place it anywhere on disk — a common choice is alongside the Lua scripts. In the bundle it is at:
-
-```text
-python/reaper_marker_ambi_motion.py
-```
-
-Install the required Python package:
+The GUI launches `reaper_marker_ambi_motion.py` as a background process. It must stay in the **same folder** as the two Lua scripts (in the bundle: `scripts/`). Install the required Python package:
 
 ```bash
-pip3 install python-osc
+python3 -m pip install python-osc
 ```
 
-Then set the Python executable path in the GUI (`Python` field). To find the correct path, run `which python3` in a terminal:
+Leave the `Python` field in the GUI **empty**: the script finds a Python 3 that has python-osc (Homebrew, pyenv, system) on its own. Only if detection fails, enter the full path (`which python3` in a terminal):
 
 ```text
 # macOS / Linux
@@ -91,7 +85,9 @@ Then set the Python executable path in the GUI (`Python` field). To find the cor
 C:\Python311\python.exe
 ```
 
-The GUI starts the worker automatically the first time you press a button — no manual launch needed. The worker stays running after you close the GUI and is reused on the next open.
+The worker starts automatically with the first button press. For **Record pair / Record series**, enable REAPER's web interface: *Preferences → Control/OSC/web → Add → Web browser interface*, port **8080**.
+
+**Tip:** make sure the *Ambi host* field contains exactly `127.0.0.1` without trailing spaces. After updating the scripts use *Terminate instances* in REAPER and start the GUI again.
 
 #### Python on Windows
 
