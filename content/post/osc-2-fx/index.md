@@ -29,7 +29,7 @@ This example demonstrates a simple synchronization between **ICST AmbiEncoder** 
 
 **FdnReverb** (by IEM) is a CPU-efficient reverb for B-format. The goal is to **increase reverb as the source moves further away** in the spatialization.
 
-![OSC to FX-Reverb](FX-Reverb_osc.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="FX-Reverb_osc-poster.jpg" aria-label="OSC to FX-Reverb" style="max-width:100%;height:auto"><source src="FX-Reverb_osc.mp4" type="video/mp4"></video>
 
 #### 1. Set Up the DAW (Reaper)
 

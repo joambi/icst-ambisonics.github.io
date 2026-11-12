@@ -25,7 +25,7 @@ Der **ICST Multi-Ambisonics Encoder v.2+** bietet ein **Gruppenanimations-Tool**
 ---
 ### Einfache Animation einer Gruppe
 
-![simple](Gp_manipulation.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="Gp_manipulation-poster.jpg" aria-label="simple" style="max-width:100%;height:auto"><source src="Gp_manipulation.mp4" type="video/mp4"></video>
 1. **Punkte auswählen** – Klicke um einen Punkt auszuwählen; nutze **Shift + Klick** für mehrere Punkte.
 2. **Gruppe erstellen** – Klicke auf das **Group**-Symbol um einen Gruppenpunkt zu erstellen (z.B. 'S').
 3. **Gruppe verschieben** – Halte **Shift** und ziehe den Gruppenpunkt.
@@ -40,7 +40,7 @@ Der **ICST Multi-Ambisonics Encoder v.2+** bietet ein **Gruppenanimations-Tool**
 1. Stelle **ICST MultiEncoder** (Track Automation) auf **'LATCH'** (oder **'WRITE'**).
 2. Starte die Wiedergabe in **Reaper**, halte **Alt** und nimm deine Bewegung auf.
 3. Um die aufgenommene Bewegung abzuspielen, stelle "LATCH" auf "READ".
-![GP_REC](Rec_PP.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="Rec_PP-poster.jpg" aria-label="GP_REC" style="max-width:100%;height:auto"><source src="Rec_PP.mp4" type="video/mp4"></video>
 
 ----
 ### LFO-Animation einer Gruppe
@@ -50,14 +50,14 @@ Der **ICST Multi-Ambisonics Encoder v.2+** bietet ein **Gruppenanimations-Tool**
 2. Passe die LFO-Parameter an, z.B. **Geschwindigkeit**, um die gewünschte Bewegung zu erreichen.
 Nun bewegt sich die Gruppe automatisch im Radar.
 
- ![GP_LFO_animated](LFO_A.gif)
+ <video autoplay muted loop playsinline preload="metadata" poster="LFO_A-poster.jpg" aria-label="GP_LFO_animated" style="max-width:100%;height:auto"><source src="LFO_A.mp4" type="video/mp4"></video>
 
 💡 **Tipp:** Das Verbinden der LFO-Parameter mit einer MIDI/OSC-Schnittstelle ermöglicht es dir, die Bewegung live zu steuern.
 
 ----
 ### LFO-Gruppenanimation mit Quaternionen
 
-![LFO_B](LFO_Quarternions.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="LFO_Quarternions-poster.jpg" aria-label="LFO_B" style="max-width:100%;height:auto"><source src="LFO_Quarternions.mp4" type="video/mp4"></video>
 
 Dies ist ein fortgeschritteneres Beispiel für die Animation einer Gruppe mit **Quaternionen-Parametern**.
 

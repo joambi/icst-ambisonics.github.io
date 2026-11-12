@@ -21,7 +21,7 @@ Level: Intermediate | **Audience:** Spatial performer, controller-based workflow
 [Grapes 3D Control](https://grapes-3d.com/) is a handy addition to the ICST Ambisonics plugins.
 Grapes come as a standalone and VST3 and can be operated directly in the DAW (Reaper) in sync. 
 
-![Grapes](Grapes.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="Grapes-poster.jpg" aria-label="Grapes" style="max-width:100%;height:auto"><source src="Grapes.mp4" type="video/mp4"></video>
 ### Advantages of Grapes 3D Control
 
 A major advantage of this method is that the 3D spatial sound control does not have to be recorded in the DAW. Instead, it is sent to the ICST AmbiEncoders via OSC from Grapes. This means that the spatial design remains flexible and can also be interpreted with other spatialization tools such as LISA, Dolby Atmos or binaural audio playback.

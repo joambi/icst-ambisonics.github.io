@@ -48,10 +48,10 @@ Generiere Bewegungsdaten in Max und sende sie via OSC zum _ICST AmbiEncoder_ in 
 - Finde den _OSC communication with ICST plugins in DAW_ Patch.
 
 Siehe die Demo-GIFs:
-- ![Max_Reaper](Max_Reaper.gif)
+- <video autoplay muted loop playsinline preload="metadata" poster="Max_Reaper-poster.jpg" aria-label="Max_Reaper" style="max-width:100%;height:auto"><source src="Max_Reaper.mp4" type="video/mp4"></video>
 
 Nächstes GIF: Wie es funktioniert:
-![Max-AmbiEnc](max_osc_to_AmbiPlugins.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="max_osc_to_AmbiPlugins-poster.jpg" aria-label="Max-AmbiEnc" style="max-width:100%;height:auto"><source src="max_osc_to_AmbiPlugins.mp4" type="video/mp4"></video>
 
 ---
 

@@ -32,7 +32,7 @@ Ableton überträgt Audio über "BlackHole" (bis zu 64 Kanäle) zu Reapers Black
 ![Ableton_outs](Ableton_output.png)
 Der Multi-Panner-OSC kann bis zu 16 OSC-Kanäle via localhost auf Port 50001 zum ICST Multi-AmbiEncoder senden. In Reaper werden Audio-Eingänge von BlackHole (1-4) empfangen, während der ICST Multi-AmbiEncoder OSC-Quellen (1-16) verarbeitet.
 
-![Ableton_to_MultiEncoder](Ableton_OSC_BlackHole.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="Ableton_OSC_BlackHole-poster.jpg" aria-label="Ableton_to_MultiEncoder" style="max-width:100%;height:auto"><source src="Ableton_OSC_BlackHole.mp4" type="video/mp4"></video>
 
 Dieses Setup ermöglicht die Aufnahme von B-Format bis zur 7. Ordnung aus Ableton Live 12.
 
@@ -91,7 +91,7 @@ Tipp: Stelle sicher, dass du die gleichen OSC-Portnummern in Reaper verwendest. 
 
 9. Drücke Play in Ableton Live, um Reaper via LTC Sync (Input 64) zu synchronisieren, was die B-Format 7. Ordnung Ambix-Aufnahme ermöglicht.
 10. Wechsle zum **Start Marker** bei **01:00:000** (LTC hat einen 60'-Offset), dann drücke **Fire** oder **Play** in Ableton Live, um die Aufnahme zu starten.
-![recoding_bf](Live_Reper_BF.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="Live_Reper_BF-poster.jpg" aria-label="recoding_bf" style="max-width:100%;height:auto"><source src="Live_Reper_BF.mp4" type="video/mp4"></video>
 
 Weitere Details findest du in der Dokumentation für Ableton Live, Reaper und den ICST MultiEncoder.
 

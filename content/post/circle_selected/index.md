@@ -26,7 +26,7 @@ Level: Intermediate | **Audience:** Reaper power user, Performance artist.
 **Script:** `ICST_AmbiEncoder_64_CircleSelected_Presets.lua`  
 **Funktion:** Punkte des ICST AmbiEncoder_64 Plugins grafisch auswählen, im Kreis anordnen, bewegen (Rotation/RandomWalk) und als Preset speichern/laden.
 
-![circleselected](Circle_Selected.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="Circle_Selected-poster.jpg" aria-label="circleselected" style="max-width:100%;height:auto"><source src="Circle_Selected.mp4" type="video/mp4"></video>
 
 ---
 

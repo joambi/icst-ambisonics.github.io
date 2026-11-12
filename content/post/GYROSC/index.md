@@ -27,7 +27,7 @@ ICST MultiEncoder and iOS [GyrOSC.app ](https://www.bitshapesoftware.com/instrum
 
 The following GIF demonstrates how the ICST AmbiEncoder receives OSC data from the GyrOSC app.
 
- ![Example video:](GyroOSC_Demo.gif)
+ <video autoplay muted loop playsinline preload="metadata" poster="GyroOSC_Demo-poster.jpg" aria-label="Example video:" style="max-width:100%;height:auto"><source src="GyroOSC_Demo.mp4" type="video/mp4"></video>
  
 ### How It Works:
 

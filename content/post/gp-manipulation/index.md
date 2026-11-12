@@ -25,7 +25,7 @@ The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool f
 ---
 ### Simple animation of a group
 
-![simple](Gp_manipulation.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="Gp_manipulation-poster.jpg" aria-label="simple" style="max-width:100%;height:auto"><source src="Gp_manipulation.mp4" type="video/mp4"></video>
 1. **Select Points** – Click to select a point; use **Shift + Click** for multiple points.
 2. **Create Group** – Click the **Group** symbol to generate a group point (e.g., 'S').
 3. **Move Group** – Hold **Shift** and drag the group point.
@@ -40,7 +40,7 @@ The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool f
 1. Set **ICST MultiEncoder** (Track Automation) to **'LATCH'** (or **'WRITE'**).
 2. Start playback in **Reaper**, hold **Alt**, and record your movement.
 3. To play back the recorded motion, set “LATCH” to “READ”.
-![GP_REC](Rec_PP.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="Rec_PP-poster.jpg" aria-label="GP_REC" style="max-width:100%;height:auto"><source src="Rec_PP.mp4" type="video/mp4"></video>
 
 ----
 ### LFO Animation of a Group
@@ -50,14 +50,14 @@ The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool f
 2. Adjust the LFO parameters, such as **speed**, to achieve the desired movement.  
 Now, the group moves automatically in the radar.
 
- ![GP_LFO_animated](LFO_A.gif)
+ <video autoplay muted loop playsinline preload="metadata" poster="LFO_A-poster.jpg" aria-label="GP_LFO_animated" style="max-width:100%;height:auto"><source src="LFO_A.mp4" type="video/mp4"></video>
 
 💡 **Tip:** Connecting the LFO parameters to a MIDI/OSC interface lets you control the movement live.
 
 ----
 ### LFO Group Animation with Quaternions
 
-![LFO_B](LFO_Quarternions.gif)
+<video autoplay muted loop playsinline preload="metadata" poster="LFO_Quarternions-poster.jpg" aria-label="LFO_B" style="max-width:100%;height:auto"><source src="LFO_Quarternions.mp4" type="video/mp4"></video>
 
 This is a more advanced example of animating a group using **quaternion parameters**.
 

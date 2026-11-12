@@ -215,9 +215,9 @@
         {{ end }}
         {{ $levelLower := lower (default "" $level) }}
         {{ $audience := "" }}
-        {{ $audienceMatch := findRE `(?im)\*\*Audience:\*\*\s*([^\n\.]+)` $raw 1 }}
+        {{ $audienceMatch := findRE `(?im)\*\*Audience:\*\*\s*([^\n\.|]+)` $raw 1 }}
         {{ if gt (len $audienceMatch) 0 }}
-          {{ $audience = replaceRE `(?im)^.*\*\*Audience:\*\*\s*([^\n\.]+).*$` `$1` (index $audienceMatch 0) }}
+          {{ $audience = replaceRE `(?im)^.*\*\*Audience:\*\*\s*([^\n\.|]+).*$` `$1` (index $audienceMatch 0) }}
         {{ end }}
         {{ $filterText := printf "%s %s %s %s %s %s" (delimit $tags " ") (lower $page.Title) (lower $page.RelPermalink) $difficulty $levelLower (lower $audience) }}
         {{ $toolIds := slice }}{{ range $page.Params.tool }}{{ $toolIds = $toolIds | append (replaceRE `[^a-z0-9]` "" (lower .)) }}{{ end }}
