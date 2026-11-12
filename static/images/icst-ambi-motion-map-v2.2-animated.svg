@@ -1,105 +1,238 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1433 901" role="img" aria-labelledby="title description">
-  <title id="title">Animated ICST AmbiEncoder64 Motion Map v2.2 interface</title>
-  <desc id="description">The Motion Map interface with animated source points moving along a line and a circular trajectory in the preview area.</desc>
-  <defs>
-    <clipPath id="previewClip">
-      <rect x="883" y="103" width="510" height="310" rx="2" />
-    </clipPath>
-    <filter id="greenGlow" x="-250%" y="-250%" width="600%" height="600%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feFlood flood-color="#54e6a5" flood-opacity="0.82" result="color" />
-      <feComposite in="color" in2="blur" operator="in" result="glow" />
-      <feMerge>
-        <feMergeNode in="glow" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    <filter id="blueGlow" x="-250%" y="-250%" width="600%" height="600%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feFlood flood-color="#65aaff" flood-opacity="0.8" result="color" />
-      <feComposite in="color" in2="blur" operator="in" result="glow" />
-      <feMerge>
-        <feMergeNode in="glow" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    <linearGradient id="scanGradient" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#65aaff" stop-opacity="0" />
-      <stop offset="0.5" stop-color="#65aaff" stop-opacity="0.3" />
-      <stop offset="1" stop-color="#65aaff" stop-opacity="0" />
-    </linearGradient>
-    <path id="blueTrajectory" d="M1114 301 C1129 284 1149 255 1185 217" />
-    <path id="greenTrajectory" d="M1174 274 C1148 296 1114 280 1115 255 C1116 230 1148 227 1168 239 C1185 249 1187 265 1174 274 Z" />
-    <style>
-      .trajectory { fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .moving-source text { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; paint-order: stroke; stroke: #0d1118; stroke-width: 3px; stroke-linejoin: round; }
-      .static-source { display: none; }
-      @media (prefers-reduced-motion: reduce) {
-        .smil-motion { display: none; }
-        .static-source { display: inline; }
-      }
-    </style>
-  </defs>
-
-  <rect width="1433" height="901" fill="#0d1118" />
-  <image href="icst-ambi-motion-map-v2.2-smil-base.png" xlink:href="icst-ambi-motion-map-v2.2-smil-base.png" width="1433" height="901" preserveAspectRatio="xMidYMid meet" />
-
-  <g clip-path="url(#previewClip)">
-    <rect class="smil-motion" x="858" y="103" width="82" height="310" fill="url(#scanGradient)" opacity="0.7">
-      <animate attributeName="x" values="858;1393;858" dur="9s" repeatCount="indefinite" />
-    </rect>
-
-    <use href="#blueTrajectory" xlink:href="#blueTrajectory" class="trajectory" stroke="#65aaff" stroke-width="2.2" opacity="0.42" />
-    <use href="#blueTrajectory" xlink:href="#blueTrajectory" class="trajectory smil-motion" stroke="#8fc5ff" stroke-width="1.6" stroke-dasharray="10 9">
-      <animate attributeName="stroke-dashoffset" values="38;0" dur="2.2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.25;0.95;0.25" dur="3.6s" repeatCount="indefinite" />
-    </use>
-
-    <use href="#greenTrajectory" xlink:href="#greenTrajectory" class="trajectory" stroke="#54e6a5" stroke-width="2.2" opacity="0.5" />
-    <use href="#greenTrajectory" xlink:href="#greenTrajectory" class="trajectory smil-motion" stroke="#8fffc6" stroke-width="1.5" stroke-dasharray="8 8">
-      <animate attributeName="stroke-dashoffset" values="0;-32" dur="2.6s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.35;1;0.35" dur="4.2s" repeatCount="indefinite" />
-    </use>
-
-    <g class="moving-source smil-motion" filter="url(#blueGlow)">
-      <circle r="9" fill="#65aaff" opacity="0.2">
-        <animate attributeName="r" values="7;13;7" dur="1.8s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.38;0.08;0.38" dur="1.8s" repeatCount="indefinite" />
-      </circle>
-      <circle r="4.2" fill="#65aaff" stroke="#d9ecff" stroke-width="1.2" />
-      <animateMotion dur="4.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.42 0 0.58 1">
-        <mpath href="#blueTrajectory" xlink:href="#blueTrajectory" />
-      </animateMotion>
-    </g>
-
-    <g class="moving-source smil-motion" filter="url(#greenGlow)">
-      <circle r="10" fill="#54e6a5" opacity="0.2">
-        <animate attributeName="r" values="8;15;8" dur="2.2s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.42;0.08;0.42" dur="2.2s" repeatCount="indefinite" />
-      </circle>
-      <circle r="5" fill="#54e6a5" stroke="#d8ffeb" stroke-width="1.5" />
-      <circle r="1.7" fill="#ffffff" />
-      <text x="10" y="-10" fill="#54e6a5">S0</text>
-      <animateMotion dur="5.4s" repeatCount="indefinite" calcMode="paced">
-        <mpath href="#greenTrajectory" xlink:href="#greenTrajectory" />
-      </animateMotion>
-    </g>
-
-    <g class="static-source">
-      <circle cx="1185" cy="217" r="4.2" fill="#65aaff" stroke="#d9ecff" stroke-width="1.2" />
-      <circle cx="1174" cy="274" r="5" fill="#54e6a5" stroke="#d8ffeb" stroke-width="1.5" />
-    </g>
-  </g>
-
-  <g class="smil-motion" fill="none" stroke="#54e6a5" stroke-width="1.4">
-    <rect x="365" y="130" width="38" height="30" rx="2" opacity="0.1">
-      <animate attributeName="opacity" values="0.08;0.55;0.08" dur="3.6s" repeatCount="indefinite" />
-    </rect>
-    <rect x="196" y="238" width="38" height="30" rx="2" opacity="0.1">
-      <animate attributeName="opacity" values="0.08;0.08;0.55;0.08" dur="4.8s" repeatCount="indefinite" />
-    </rect>
-    <rect x="1053" y="678" width="53" height="23" rx="2" opacity="0.14">
-      <animate attributeName="opacity" values="0.12;0.65;0.12" dur="2.8s" repeatCount="indefinite" />
-    </rect>
-  </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d" xmlns:c2pa="http://c2pa.org/manifest"><title id="t">ICST AmbiEncoder64 Motion Map v2.2</title><desc id="d">Illustration of the Motion Map: source grid with motion-shape cells, animated trajectory preview, settings.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1118"/><stop offset="1" stop-color="#151d2b"/></linearGradient>
+<filter id="gl" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="pv"><rect x="760" y="110" width="780" height="470" rx="6"/></clipPath>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}.l{fill:#8da2c0;font-size:15px}.h{fill:#e7eefb;font-size:19px;font-weight:700}.tr{fill:none;stroke-linecap:round;stroke-linejoin:round}@media (prefers-reduced-motion:reduce){.an{display:none}}</style></defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect x="40" y="40" width="1520" height="820" rx="14" fill="#0f1520" stroke="#2a3a52"/>
+<text x="70" y="82" class="h">Motion Map</text><text x="205" y="82" class="l">AmbiEncoder64 · 64 sources</text><text x="1540" y="82" class="l" text-anchor="end">3 / 64 active</text>
+<text x="70" y="128" class="l">Source grid</text>
+<rect x="70" y="150" width="660" height="40" rx="5" fill="#161f2f" stroke="#26354d"/>
+<rect x="82" y="161" width="18" height="18" rx="3" fill="#54e6a5" stroke="#4a5d7a"/>
+<text x="112" y="176" class="h" style="font-size:16px">S0</text>
+<rect x="160" y="156" width="62" height="28" rx="4" fill="#1d4a6e" stroke="#65aaff"/>
+<text x="191" y="175" class="l" text-anchor="middle" style="font-size:13px;fill:#e7eefb">Ln</text>
+<rect x="230" y="156" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="261" y="175" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ar</text>
+<rect x="300" y="156" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="331" y="175" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ci</text>
+<rect x="370" y="156" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="401" y="175" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Sp</text>
+<rect x="440" y="156" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="471" y="175" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ze</text>
+<rect x="510" y="156" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="541" y="175" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Hx</text>
+<rect x="580" y="156" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="611" y="175" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ra</text>
+<rect x="650" y="156" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="681" y="175" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Lis</text>
+<rect x="70" y="200" width="660" height="40" rx="5" fill="#161f2f" stroke="#26354d"/>
+<rect x="82" y="211" width="18" height="18" rx="3" fill="#54e6a5" stroke="#4a5d7a"/>
+<text x="112" y="226" class="h" style="font-size:16px">S1</text>
+<rect x="160" y="206" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="191" y="225" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ln</text>
+<rect x="230" y="206" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="261" y="225" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ar</text>
+<rect x="300" y="206" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="331" y="225" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ci</text>
+<rect x="370" y="206" width="62" height="28" rx="4" fill="#1d4a6e" stroke="#65aaff"/>
+<text x="401" y="225" class="l" text-anchor="middle" style="font-size:13px;fill:#e7eefb">Sp</text>
+<rect x="440" y="206" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="471" y="225" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ze</text>
+<rect x="510" y="206" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="541" y="225" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Hx</text>
+<rect x="580" y="206" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="611" y="225" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ra</text>
+<rect x="650" y="206" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="681" y="225" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Lis</text>
+<rect x="70" y="250" width="660" height="40" rx="5" fill="#161f2f" stroke="#26354d"/>
+<rect x="82" y="261" width="18" height="18" rx="3" fill="none" stroke="#4a5d7a"/>
+<text x="112" y="276" class="h" style="font-size:16px">S2</text>
+<rect x="160" y="256" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="191" y="275" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ln</text>
+<rect x="230" y="256" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="261" y="275" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ar</text>
+<rect x="300" y="256" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="331" y="275" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ci</text>
+<rect x="370" y="256" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="401" y="275" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Sp</text>
+<rect x="440" y="256" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="471" y="275" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ze</text>
+<rect x="510" y="256" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="541" y="275" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Hx</text>
+<rect x="580" y="256" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="611" y="275" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ra</text>
+<rect x="650" y="256" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="681" y="275" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Lis</text>
+<rect x="70" y="300" width="660" height="40" rx="5" fill="#161f2f" stroke="#26354d"/>
+<rect x="82" y="311" width="18" height="18" rx="3" fill="#54e6a5" stroke="#4a5d7a"/>
+<text x="112" y="326" class="h" style="font-size:16px">S3</text>
+<rect x="160" y="306" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="191" y="325" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ln</text>
+<rect x="230" y="306" width="62" height="28" rx="4" fill="#1d4a6e" stroke="#65aaff"/>
+<text x="261" y="325" class="l" text-anchor="middle" style="font-size:13px;fill:#e7eefb">Ar</text>
+<rect x="300" y="306" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="331" y="325" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ci</text>
+<rect x="370" y="306" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="401" y="325" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Sp</text>
+<rect x="440" y="306" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="471" y="325" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ze</text>
+<rect x="510" y="306" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="541" y="325" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Hx</text>
+<rect x="580" y="306" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="611" y="325" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ra</text>
+<rect x="650" y="306" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="681" y="325" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Lis</text>
+<rect x="70" y="350" width="660" height="40" rx="5" fill="#161f2f" stroke="#26354d"/>
+<rect x="82" y="361" width="18" height="18" rx="3" fill="none" stroke="#4a5d7a"/>
+<text x="112" y="376" class="h" style="font-size:16px">S4</text>
+<rect x="160" y="356" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="191" y="375" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ln</text>
+<rect x="230" y="356" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="261" y="375" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ar</text>
+<rect x="300" y="356" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="331" y="375" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ci</text>
+<rect x="370" y="356" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="401" y="375" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Sp</text>
+<rect x="440" y="356" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="471" y="375" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ze</text>
+<rect x="510" y="356" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="541" y="375" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Hx</text>
+<rect x="580" y="356" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="611" y="375" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ra</text>
+<rect x="650" y="356" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="681" y="375" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Lis</text>
+<rect x="70" y="400" width="660" height="40" rx="5" fill="#161f2f" stroke="#26354d"/>
+<rect x="82" y="411" width="18" height="18" rx="3" fill="none" stroke="#4a5d7a"/>
+<text x="112" y="426" class="h" style="font-size:16px">S5</text>
+<rect x="160" y="406" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="191" y="425" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ln</text>
+<rect x="230" y="406" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="261" y="425" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ar</text>
+<rect x="300" y="406" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="331" y="425" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ci</text>
+<rect x="370" y="406" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="401" y="425" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Sp</text>
+<rect x="440" y="406" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="471" y="425" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ze</text>
+<rect x="510" y="406" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="541" y="425" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Hx</text>
+<rect x="580" y="406" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="611" y="425" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ra</text>
+<rect x="650" y="406" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="681" y="425" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Lis</text>
+<rect x="70" y="450" width="660" height="40" rx="5" fill="#161f2f" stroke="#26354d"/>
+<rect x="82" y="461" width="18" height="18" rx="3" fill="none" stroke="#4a5d7a"/>
+<text x="112" y="476" class="h" style="font-size:16px">S6</text>
+<rect x="160" y="456" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="191" y="475" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ln</text>
+<rect x="230" y="456" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="261" y="475" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ar</text>
+<rect x="300" y="456" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="331" y="475" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ci</text>
+<rect x="370" y="456" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="401" y="475" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Sp</text>
+<rect x="440" y="456" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="471" y="475" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ze</text>
+<rect x="510" y="456" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="541" y="475" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Hx</text>
+<rect x="580" y="456" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="611" y="475" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ra</text>
+<rect x="650" y="456" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="681" y="475" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Lis</text>
+<rect x="70" y="500" width="660" height="40" rx="5" fill="#161f2f" stroke="#26354d"/>
+<rect x="82" y="511" width="18" height="18" rx="3" fill="none" stroke="#4a5d7a"/>
+<text x="112" y="526" class="h" style="font-size:16px">S7</text>
+<rect x="160" y="506" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="191" y="525" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ln</text>
+<rect x="230" y="506" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="261" y="525" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ar</text>
+<rect x="300" y="506" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="331" y="525" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ci</text>
+<rect x="370" y="506" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="401" y="525" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Sp</text>
+<rect x="440" y="506" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="471" y="525" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ze</text>
+<rect x="510" y="506" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="541" y="525" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Hx</text>
+<rect x="580" y="506" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="611" y="525" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ra</text>
+<rect x="650" y="506" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="681" y="525" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Lis</text>
+<rect x="70" y="550" width="660" height="40" rx="5" fill="#161f2f" stroke="#26354d"/>
+<rect x="82" y="561" width="18" height="18" rx="3" fill="none" stroke="#4a5d7a"/>
+<text x="112" y="576" class="h" style="font-size:16px">S8</text>
+<rect x="160" y="556" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="191" y="575" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ln</text>
+<rect x="230" y="556" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="261" y="575" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ar</text>
+<rect x="300" y="556" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="331" y="575" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ci</text>
+<rect x="370" y="556" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="401" y="575" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Sp</text>
+<rect x="440" y="556" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="471" y="575" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ze</text>
+<rect x="510" y="556" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="541" y="575" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Hx</text>
+<rect x="580" y="556" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="611" y="575" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Ra</text>
+<rect x="650" y="556" width="62" height="28" rx="4" fill="#1b2638" stroke="#2c3d57"/>
+<text x="681" y="575" class="l" text-anchor="middle" style="font-size:13px;fill:#8da2c0">Lis</text>
+<text x="70" y="620" class="l">… S63</text>
+<rect x="760" y="110" width="780" height="470" rx="6" fill="#0a0e15" stroke="#2a3a52"/>
+<g clip-path="url(#pv)">
+<line x1="760" y1="110" x2="760" y2="580" stroke="#141c2a"/>
+<line x1="825" y1="110" x2="825" y2="580" stroke="#141c2a"/>
+<line x1="890" y1="110" x2="890" y2="580" stroke="#141c2a"/>
+<line x1="955" y1="110" x2="955" y2="580" stroke="#141c2a"/>
+<line x1="1020" y1="110" x2="1020" y2="580" stroke="#141c2a"/>
+<line x1="1085" y1="110" x2="1085" y2="580" stroke="#141c2a"/>
+<line x1="1150" y1="110" x2="1150" y2="580" stroke="#141c2a"/>
+<line x1="1215" y1="110" x2="1215" y2="580" stroke="#141c2a"/>
+<line x1="1280" y1="110" x2="1280" y2="580" stroke="#141c2a"/>
+<line x1="1345" y1="110" x2="1345" y2="580" stroke="#141c2a"/>
+<line x1="1410" y1="110" x2="1410" y2="580" stroke="#141c2a"/>
+<line x1="1475" y1="110" x2="1475" y2="580" stroke="#141c2a"/>
+<line x1="1540" y1="110" x2="1540" y2="580" stroke="#141c2a"/>
+<line x1="760" y1="110" x2="1540" y2="110" stroke="#141c2a"/>
+<line x1="760" y1="157" x2="1540" y2="157" stroke="#141c2a"/>
+<line x1="760" y1="204" x2="1540" y2="204" stroke="#141c2a"/>
+<line x1="760" y1="251" x2="1540" y2="251" stroke="#141c2a"/>
+<line x1="760" y1="298" x2="1540" y2="298" stroke="#141c2a"/>
+<line x1="760" y1="345" x2="1540" y2="345" stroke="#141c2a"/>
+<line x1="760" y1="392" x2="1540" y2="392" stroke="#141c2a"/>
+<line x1="760" y1="439" x2="1540" y2="439" stroke="#141c2a"/>
+<line x1="760" y1="486" x2="1540" y2="486" stroke="#141c2a"/>
+<line x1="760" y1="533" x2="1540" y2="533" stroke="#141c2a"/>
+<line x1="760" y1="580" x2="1540" y2="580" stroke="#141c2a"/>
+<line x1="1150" y1="110" x2="1150" y2="580" stroke="#22314a"/><line x1="760" y1="345" x2="1540" y2="345" stroke="#22314a"/>
+<circle cx="1150" cy="345" r="170" fill="none" stroke="#1b2a42" stroke-dasharray="4 6"/><circle cx="1150" cy="345" r="85" fill="none" stroke="#1b2a42" stroke-dasharray="4 6"/>
+<path id="p1" class="tr" d="M840 480 C960 400 1060 300 1250 210 S1450 150 1490 200" stroke="#65aaff" stroke-width="2.4" opacity=".55"/>
+<path id="p2" class="tr" d="M1150 255 C1250 255 1305 300 1305 345 C1305 410 1230 440 1150 440 C1070 440 1000 400 1000 345 C1000 290 1070 255 1150 255 Z" stroke="#54e6a5" stroke-width="2.4" opacity=".55"/>
+<path id="p3" class="tr" d="M880 220 L960 300 L1040 220 L1120 300 L1200 220" stroke="#f2b45a" stroke-width="2.2" opacity=".5"/>
+<g filter="url(#gl)"><circle r="7" fill="#65aaff" stroke="#fff" stroke-width="1.5"/><animateMotion class="an" dur="6s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></g>
+<g filter="url(#gl)"><circle r="7" fill="#54e6a5" stroke="#fff" stroke-width="1.5"/><animateMotion class="an" dur="7s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></g>
+<g filter="url(#gl)"><circle r="7" fill="#f2b45a" stroke="#fff" stroke-width="1.5"/><animateMotion class="an" dur="5s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></g>
+<circle class="an-static" cx="1490" cy="200" r="7" fill="#65aaff" opacity="0"/>
+</g>
+<text x="780" y="138" class="l">X · Y  top view</text><text x="1520" y="138" class="l" text-anchor="end">S0  X:-0.16  Y:-0.04</text>
+<rect x="760" y="600" width="780" height="230" rx="6" fill="#121a28" stroke="#26354d"/>
+<rect x="780" y="612" width="110" height="26" rx="4" fill="#1b2638" stroke="#2c3d57"/><text x="835" y="630" class="l" text-anchor="middle" style="font-size:12px">SETTINGS</text>
+<rect x="896" y="612" width="170" height="26" rx="4" fill="#1d5a45" stroke="#54e6a5"/><text x="981" y="630" class="l" text-anchor="middle" style="font-size:12px;fill:#e7eefb">FIGURE EDITOR · S7</text>
+<text x="782" y="662" class="h" style="font-size:15px">S7 · Spir</text>
+<rect x="1250" y="646" width="150" height="26" rx="4" fill="#1d5a45" stroke="#54e6a5"/><text x="1325" y="664" class="l" text-anchor="middle" style="font-size:12px;fill:#e7eefb">Figur: alle Quellen</text><rect x="1408" y="646" width="110" height="26" rx="4" fill="#1b2638" stroke="#2c3d57"/><text x="1463" y="664" class="l" text-anchor="middle" style="font-size:12px">Nur S7</text>
+<text x="782" y="696" class="l" style="font-size:11px;letter-spacing:1px">FIGUR</text>
+<text x="782" y="716" class="l" style="font-size:12px">Umläufe</text><rect x="782" y="722" width="230" height="22" rx="3" fill="#1b2638" stroke="#2c3d57"/><rect x="782" y="722" width="23" height="22" rx="3" fill="#1d4a3e"/><text x="1004" y="738" class="l" text-anchor="end" style="font-size:12px;fill:#e7eefb">1.00</text>
+<text x="1032" y="716" class="l" style="font-size:12px">Radius innen</text><rect x="1032" y="722" width="230" height="22" rx="3" fill="#1b2638" stroke="#2c3d57"/><rect x="1032" y="722" width="27" height="22" rx="3" fill="#1d4a3e"/><text x="1254" y="738" class="l" text-anchor="end" style="font-size:12px;fill:#e7eefb">0.15</text>
+<text x="1282" y="716" class="l" style="font-size:12px">Radius aussen</text><rect x="1282" y="722" width="230" height="22" rx="3" fill="#1b2638" stroke="#2c3d57"/><rect x="1282" y="722" width="218" height="22" rx="3" fill="#1d4a3e"/><text x="1504" y="738" class="l" text-anchor="end" style="font-size:12px;fill:#e7eefb">1.00</text>
+<text x="782" y="762" class="l" style="font-size:12px">Easing</text><rect x="782" y="768" width="230" height="22" rx="3" fill="#1b2638" stroke="#2c3d57"/><rect x="782" y="768" width="207" height="22" rx="3" fill="#1d4a3e"/><text x="1004" y="784" class="l" text-anchor="end" style="font-size:12px;fill:#e7eefb">1.00</text>
+<text x="1032" y="762" class="l" style="font-size:12px">Startwinkel °</text><rect x="1032" y="768" width="230" height="22" rx="3" fill="#1b2638" stroke="#2c3d57"/><rect x="1032" y="768" width="115" height="22" rx="3" fill="#1d4a3e"/><text x="1254" y="784" class="l" text-anchor="end" style="font-size:12px;fill:#e7eefb">0.00</text>
+<text x="782" y="812" class="l" style="font-size:11px;letter-spacing:1px">TRANSFORMATION  ·  Drehung · Skalierung X/Y · Versatz X/Y · Zeitversatz · Rückwärts</text>
+<rect x="70" y="620" width="660" height="210" rx="6" fill="#121a28" stroke="#26354d"/><text x="92" y="652" class="h" style="font-size:16px">Quick selectors</text>
+<rect x="92" y="672" width="132" height="40" rx="6" fill="#1b2638" stroke="#2c3d57"/><text x="158" y="698" class="l" text-anchor="middle" style="fill:#e7eefb">All Src</text>
+<rect x="242" y="672" width="132" height="40" rx="6" fill="#1b2638" stroke="#2c3d57"/><text x="308" y="698" class="l" text-anchor="middle" style="fill:#e7eefb">None Src</text>
+<rect x="392" y="672" width="132" height="40" rx="6" fill="#1b2638" stroke="#2c3d57"/><text x="458" y="698" class="l" text-anchor="middle" style="fill:#e7eefb">S0-7</text>
+<rect x="542" y="672" width="132" height="40" rx="6" fill="#1b2638" stroke="#2c3d57"/><text x="608" y="698" class="l" text-anchor="middle" style="fill:#e7eefb">S8-15</text>
+<text x="92" y="760" class="l">Animated preview · 64 sources · 3D motion · REAPER automation · OSC</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpkMTE1YzdhNS1iNDViLTQzNWQtODg4OS1iZjU5ODdlZDg5YTgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaCqZAdIZhiepGdXQd0l7rkMAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpjN2UzYmZhMS04OGRmLTQzZWUtODUzYy1lOWVjYjU1MWY5MTFscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo3gEp4QSpU8NAEdWmIETYcgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggmz5ZPkszzoLocjY4+zOsFuD3sTTEpNLnermXlks7kgOkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaOMPbkoNZq+5+kbuGbA8xRgAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIPP4OQDaGXh/tfqfHz/Z2Hu09tRQKfZ4rIJDeIChxbcwZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GV1eZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmQxMTVjN2E1LWI0NWItNDM1ZC04ODg5LWJmNTk4N2VkODlhOC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjU3MWU4ODg3LWEwZjgtNDMyZC1hYTcyLTI5ODg3ZjBkNWMzMHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCbPlk+SzPOguhyNjj7M6wW4PexNMSk0ud6uZeWSzuSA6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggOPtzwZFOSKqDkYyDK7vcYCZgEXT+UXSId+ZhPx2zBdKiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg9qMMVQahYJQ8d2v6ZIs0cImBpch5FixGETwo2+Kdk3R0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQE3+md2BjQ1LWb1Kml3eyew9bfZ3GNf4TZ6LQuHxPZvq/7numddqHQatpgSLA6a5pxLPKuXmgtyls+Hc2xSEIbk=</c2pa:manifest></metadata></svg>

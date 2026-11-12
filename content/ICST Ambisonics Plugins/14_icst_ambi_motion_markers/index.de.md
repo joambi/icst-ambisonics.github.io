@@ -14,6 +14,13 @@ Diese Seite beschreibt, wie du AmbiEncoder-Bewegungen mit REAPER-Markern definie
 
 > **Zuerst herunterladen:** Alles Nötige ist im Bundle — [ICST Ambi Motion Markers Bundle herunterladen](/downloads/ICST_Ambi_Motion_Markers_Bundle.zip) (Lua-Scripts, Python-Worker, Beispiel-CSVs, Handbuch).
 
+## Wann Markers, wann Motion Map?
+
+- **Markers** – du denkst in Cues: Positionen sind benannte Timeline-Marker (musikalisches Timing, Probenmarken, CSV-Cue-Listen), die Bewegung läuft von einem Marker zum nächsten.
+- **[Motion Map](/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/)** – du denkst in Formen: du zeichnest Pfade oder erzeugst Figuren (Kreis, Spirale, Lissajous) im Figure-Editor, mit Tempo-Sync, und schreibst sie als Automation.
+
+Beide schreiben normale AmbiEncoder-Automation und lassen sich kombinieren. Im vorkonfigurierten ICST-Ambi-Reaper-Ordner hat Markers einen eigenen Toolbar-Button (Scripts in `Scripts/ICST/Markers`).
+
 ## Was es macht
 
 `ICST Ambi Motion Markers` ist ein REAPER-Workflow auf Basis von Timeline-Markern. Statt Automationskurven von Hand zu zeichnen, definierst du Positionen als benannte Marker auf der Timeline — und hörst die entstehende Bewegung per OSC vor oder nimmst sie als Automation auf.

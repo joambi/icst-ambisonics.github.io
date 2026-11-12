@@ -14,7 +14,7 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
 <div class="motion-map-landing">
   <section class="motion-map-hero">
     <div class="motion-map-hero__copy">
-      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.2</p>
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.2</p>
       <h1><strong>Quellenbewegungen gestalten</strong><span>für räumliches Komponieren in REAPER</span></h1>
       <p class="motion-map-hero__lead">Handbuch, Setup und kreative Techniken zum Positionieren, Animieren und Automatisieren von bis zu 64 Klangquellen im dreidimensionalen Raum.</p>
       <p class="motion-map-hero__meta">Einsteiger–Fortgeschrittene · Komponist:in · Sound Designer:in · Spatial-Audio-Techniker:in</p>
@@ -25,7 +25,7 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
       </div>
     </div>
     <figure class="motion-map-hero__media">
-      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animierte AmbiEncoder64 Motion Map v2.2 mit bewegten Quellen und Trajektorien in der Vorschau">
+      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animierte AmbiEncoder64 Motion Map mit bewegten Quellen und Trajektorien in der Vorschau">
       <figcaption>Animierte Vorschau · 64 Quellen · 3D-Bewegung · REAPER-Automation · OSC</figcaption>
     </figure>
   </section>
@@ -168,6 +168,45 @@ Wenn mehrere Sources dieselbe Form verwenden, verteilt der **Src offset**-Schieb
 
 Diese Form eignet sich für kristalline Bewegung, stufenartige Tiefenbewegung, wiederholte Raumgitter und andere strukturierte Offsets, die sich vom Ursprung aus fortpflanzen.
 
+### Figure-Editor
+
+{{< notice info >}}
+Der Figure-Editor ist ab Motion Map v2.3 verfügbar (aktuell: v2.4.2). Die Beschriftungen im Fenster sind deutsch; die Begriffe unten entsprechen ihnen.
+{{< /notice >}}
+
+Jede Bewegungsform hat einen **Figure-Editor**: ein zweiter Tab unterhalb der Trajektorien-Vorschau, mit dem du eine Figur nicht nur auswählst, sondern auch umformst. Öffnen kannst du ihn über den Tab **FIGURE EDITOR · S0** (die Beschriftung zeigt die gewählte Source) oder über den Button **Figur bearbeiten ▸** in den Settings. **◂ Settings** bringt dich zu den normalen Reglern zurück. Die Vorschau folgt den Reglern beim Ziehen.
+
+Die Kopfzeile zeigt die gewählte Source und ihre Form, etwa `S6 · Circ`. Zwei Buttons bestimmen, worauf sich eine Änderung auswirkt:
+
+- **Figur: alle Quellen** — die Änderung gilt für alle Sources, die diese Form verwenden.
+- **Nur S6** — die Änderung gilt nur für die gewählte Source.
+
+Um eine andere Form zu bearbeiten, klicke ihre Spalte an oder klicke das Form-Icon der Source erneut an.
+
+**Figur-Parameter (FIGUR)** hängen von der Form ab. Formen ohne eigene Parameter, etwa `Line`, zeigen nur die Transformation.
+
+| Form | Parameter |
+|------|-----------|
+| **Circ** | Umläufe, Startwinkel, Ellipse Y |
+| **Lis** | Frequenzverhältnisse von X und Y (nicht im Detail geprüft) |
+| **Spir** | Umläufe, Radius innen, Radius aussen, Easing, Startwinkel |
+| **Four** | Teiltöne, Obertöne |
+| **Step** | Stufen, Höhe |
+
+**Transformation (TRANSFORMATION)** ist für alle Formen gleich:
+
+| Regler | Wirkung |
+|--------|---------|
+| **Drehung °** | Dreht die Figur |
+| **Skalierung X / Y** | Streckt oder staucht die Figur je Achse |
+| **Versatz X / Y** | Verschiebt die Figur |
+| **Zeitversatz** | Verzögert den Beginn der Bewegung |
+| **Rückwärts** | `0` spielt vorwärts, `1` spielt die Figur rückwärts |
+
+**Figur zurücksetzen** setzt die aktuelle Figur zurück, **Alle Figuren zurücksetzen** alle Figuren.
+
+Über dem Editor lässt sich die Vorschau zwischen **XY**- und **Time**-Ansicht umschalten. **↓ Score → Region** rendert die Vorschau (XY oder X/Y/Z über die Zeit) als PNG und legt sie als Video-Item auf einer Spur *Motion Score* ab, gestreckt über die Zielregion (Time Selection, sonst Region am Edit-Cursor, sonst die benannte Region). Im Tempo-Sync-Modus zeigt die Time-Ansicht Taktlinien.
+
 ### Schnellzuweisung (PRESETS-Leiste unter dem Grid)
 
 | Button | Effekt |
@@ -279,6 +318,15 @@ Das bedeutet:
 | **Track Latch** | Setzt den Track nach dem Schreiben in den Latch-Automationsmodus, damit Live-Parameterbewegungen beim nächsten Playback aufgezeichnet werden. |
 | **Overwrite region** | Wenn eine Region mit demselben Namen bereits existiert, wird sie zur aktuellen Time Selection verschoben statt einer neuen erstellt. |
 | **Use Z motion** | Aktiviert die Distanz-(Z)-Variation. Deaktivieren, um Sources auf einer fixen Distanz zu halten, während X und Y sich weiterhin bewegen. |
+
+### Tempo-Sync (BPM)
+
+Ab v2.4 kann die Zeitbasis dem Projekttempo folgen. Der Button **BPM** schaltet von Sekunden auf Beats um:
+
+- Der **Zyklus** der Figur wird in Beats angegeben (**Zyklus (Beats)**, Standard 16 = 4 Takte) und wiederholt sich über die ganze Time Selection.
+- **Steps** werden dann pro Beat gezählt.
+- **Taktstart** koppelt die Phase des Zyklus an die Taktlinien.
+- Vorschau und OSC-Animation folgen dem Projekttempo und dem DAW-Transport.
 
 ### Regionsname
 

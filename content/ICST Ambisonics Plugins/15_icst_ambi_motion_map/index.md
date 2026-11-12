@@ -14,7 +14,7 @@ description: "Create and automate spatial source trajectories in REAPER with the
 <div class="motion-map-landing">
   <section class="motion-map-hero">
     <div class="motion-map-hero__copy">
-      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.2</p>
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.2</p>
       <h1><strong>Source Motion Mapping</strong><span>for Spatial Composition in REAPER</span></h1>
       <p class="motion-map-hero__lead">Guide, setup, and creative techniques for positioning, animating, and automating up to 64 sound sources in three-dimensional space.</p>
       <p class="motion-map-hero__meta">Beginner–Intermediate · Composer · Sound designer · Spatial-audio technician</p>
@@ -25,7 +25,7 @@ description: "Create and automate spatial source trajectories in REAPER with the
       </div>
     </div>
     <figure class="motion-map-hero__media">
-      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animated AmbiEncoder64 Motion Map v2.2 interface with moving sources and trajectories in the preview">
+      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animated AmbiEncoder64 Motion Map interface with moving sources and trajectories in the preview">
       <figcaption>Animated preview · 64 sources · 3D motion · REAPER automation · OSC</figcaption>
     </figure>
   </section>
@@ -168,6 +168,45 @@ When multiple sources share the same shape, use the **Src offset** slider (see �
 
 This shape is useful for crystalline motion, staircase movement in depth, repeating spatial grids, and other structured offsets that keep propagating away from the origin.
 
+### Figure Editor
+
+{{< notice info >}}
+The Figure Editor is available from Motion Map v2.3 (current version: v2.4.2). The interface labels inside the window are currently in German; the English equivalents are given in brackets.
+{{< /notice >}}
+
+Each motion shape has a **figure editor**: a second tab below the trajectory preview that lets you reshape a figure instead of only choosing it. Open it with the **FIGURE EDITOR · S0** tab (the label shows the selected source) or with the **Figur bearbeiten ▸** button in the settings. **◂ Settings** returns to the normal controls. The preview updates while you drag the sliders.
+
+The header line shows the selected source and its shape, for example `S6 · Circ`. Two buttons decide what an edit affects:
+
+- **Figur: alle Quellen** (figure: all sources) — the edit applies to every source that uses this shape.
+- **Nur S6** (only S6) — the edit applies to the selected source alone.
+
+To edit another shape, click its column or click the shape icon of the source again.
+
+**Figure parameters (FIGUR)** depend on the shape. Shapes without their own parameters, such as `Line`, show only the transformation.
+
+| Shape | Parameters |
+|-------|------------|
+| **Circ** | Umläufe (revolutions), Startwinkel (start angle), Ellipse Y |
+| **Lis** | frequency ratios of X and Y (not checked in detail) |
+| **Spir** | Umläufe, Radius innen (inner radius), Radius aussen (outer radius), Easing, Startwinkel |
+| **Four** | Teiltöne (partials), Obertöne (overtones) |
+| **Step** | Stufen (steps), Höhe (height) |
+
+**Transformation (TRANSFORMATION)** is the same for every shape:
+
+| Control | Effect |
+|---------|--------|
+| **Drehung °** | Rotates the figure |
+| **Skalierung X / Y** | Stretches or compresses the figure along each axis |
+| **Versatz X / Y** | Shifts the figure |
+| **Zeitversatz** | Delays the start of the movement in time |
+| **Rückwärts** | `0` plays forward, `1` plays the figure backwards |
+
+**Figur zurücksetzen** resets the current figure, **Alle Figuren zurücksetzen** resets all figures.
+
+Above the editor, the preview can be switched between **XY** and **Time** view. **↓ Score → Region** renders the preview (XY, or X/Y/Z over time) as a PNG and inserts it as a video item on a *Motion Score* track, stretched over the target region (time selection, otherwise a region at the edit cursor, otherwise the named region). In tempo-sync mode the Time view shows bar lines.
+
 ### Quick-assign buttons (PRESETS bar below the grid)
 
 | Button | Effect |
@@ -279,6 +318,15 @@ This means:
 | **Track Latch** | Sets the track to Latch automation mode after writing, so live parameter movements record on the next playback pass. |
 | **Overwrite region** | If a region with the same name already exists, it is repositioned to match the current time selection instead of creating a duplicate. |
 | **Use Z motion** | Includes distance (Z) variation. Disable to keep sources at a fixed distance while X and Y still move. |
+
+### Tempo sync (BPM)
+
+From v2.4 the time base can follow the project tempo. The **BPM** button switches from seconds to beats:
+
+- The figure **cycle** is given in beats (**Zyklus (Beats)**, default 16 = 4 bars) and repeats over the whole time selection.
+- **Steps** are then counted per beat.
+- **Taktstart** locks the phase of the cycle to the bar lines.
+- The preview and the OSC animation follow the project tempo and the DAW transport.
 
 ### Region name
 

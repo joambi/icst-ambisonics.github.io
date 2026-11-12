@@ -5,7 +5,8 @@
 .motion-map-hero {
   display: grid;
   gap: 1.5rem;
-  align-items: center;
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr);
   padding: 1.5rem;
   margin: 0 0 2rem;
   border: 1px solid;
@@ -40,7 +41,7 @@
 
 .motion-map-hero h1 {
   margin: 0;
-  font-size: clamp(2.8rem, 4.2vw, 5rem);
+  font-size: clamp(2.6rem, 3.6vw, 4rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
@@ -48,6 +49,11 @@
 .motion-map-hero h1 strong,
 .motion-map-hero h1 span {
   display: block;
+  overflow-wrap: anywhere;
+}
+.motion-map-hero__copy {
+  min-width: 0;
+  max-width: 62rem;
 }
 
 .motion-map-hero h1 strong {
@@ -281,7 +287,6 @@
 
 @media screen and (min-width: 961px) {
   .motion-map-hero {
-    grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.35fr);
     padding: 2rem;
   }
 
