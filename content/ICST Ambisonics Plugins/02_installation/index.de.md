@@ -13,6 +13,8 @@ Level: Beginner | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-Us
 
 Nutze diese Seite, wenn du vor Templates oder manuellem REAPER-Setup zuerst eine saubere Plugin-Installation brauchst.
 
+> **Abkürzung:** Wenn du REAPER nicht selbst einrichten möchtest, nimm das [ICST Ambi REAPER Bundle](/de/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/): ein portabler, vorkonfigurierter REAPER-Ordner mit Toolbar, Skripten und Plugins.
+
 ## Bevor du startest
 
 Für eine verlässliche Installation solltest du Folgendes bereit haben:

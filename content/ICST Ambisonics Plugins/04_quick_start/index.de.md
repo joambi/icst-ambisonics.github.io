@@ -10,6 +10,8 @@ description: "Kompakter Einstieg zum Öffnen des ICST MultiEncoder-Projekttempla
   <p class="quick-start-hero__lead">Öffne das vorbereitete MultiEncoder-Template, prüfe das grundlegende Routing und starte deine erste verifizierte Ambisonics-Session in REAPER.</p>
 </div>
 
+> **REAPER noch nicht eingerichtet?** Das [ICST Ambi REAPER Bundle](/de/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) ist ein portabler, vorkonfigurierter REAPER-Ordner mit Toolbar, Skripten und Plugins. Nimm ihn, statt REAPER selbst vorzubereiten.
+
 ## Schnellstart mit `ICST_AmbiPlugins_MultiEncoder.RPP`
 
 <ol class="quick-start-steps">

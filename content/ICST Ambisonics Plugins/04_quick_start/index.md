@@ -10,6 +10,8 @@ date: 2025-01-28T14:31:00
   <p class="quick-start-hero__lead">Open the prepared MultiEncoder template, check the basic routing, and start your first verified Ambisonics session in REAPER.</p>
 </div>
 
+> **No REAPER setup yet?** The [ICST Ambi REAPER Bundle](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) is a portable, preconfigured REAPER folder with toolbar, scripts and plugins. Use it instead of preparing REAPER yourself.
+
 ## Quick Start with `ICST_AmbiPlugins_MultiEncoder.RPP`
 
 <ol class="quick-start-steps">

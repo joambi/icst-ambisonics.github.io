@@ -1,10 +1,9 @@
 ---
 title: ICST Ambi REAPER Bundle
 date: 2026-11-12T00:00:00
-weight: 126
-draft: true
+weight: 35
+draft: false
 toc: true
-hidden_in_nav: true
 translationKey: ambi-reaper-bundle
 description: "The ICST Ambi REAPER Bundle (ICST_Ambi_Reaper): a portable, preconfigured REAPER folder with toolbar, Lua scripts, VST3 plugins and documentation for working with the ICST Ambisonics Plugins and the Animator Choreographer."
 ---
@@ -14,7 +13,7 @@ Level: Beginner | Audience: Composer, sound designer, student, technician.
 The **ICST Ambi REAPER Bundle** (`ICST_Ambi_Reaper`) is a portable REAPER folder that is already set up for the ICST Ambisonics Plugins. With one click on the toolbar you create Ambisonics tracks (orders 1 to 7), route them, move sources and decode. It is the preconfigured entry point into REAPER within the [ICST Ambisonics EcoSystem](/ecosystem/).
 
 {{< notice warning >}}
-Draft. The macOS version is complete. The Windows version is beta and has not been tested yet. REAPER itself is not included for licence reasons. The licence of the package as a whole is still open.
+Draft. The macOS version is complete. The Windows version is beta and has not been tested yet. REAPER itself is not included for licence reasons. The ICST's own content is licensed under GPL-3.0-or-later; third-party components keep their own licences (see below).
 {{< /notice >}}
 
 ## What it contains
@@ -107,12 +106,24 @@ Scripts ask for the Ambisonics order (1, 3, 5 or 7, that is 4, 16, 36 or 64 chan
 | Motion tools: "python3 not found" | Install Python 3 and `python3 -m pip install python-osc` |
 | Auto-Route misses a track | The track needs a recognisable plugin or "Player" in its name |
 
+## Licence
+
+The bundle's **own ICST content** (ReaScripts, JSFX, toolbar icons, configuration and documentation) is licensed under the **GNU General Public License, version 3 or later (GPL-3.0-or-later)**. The licence text is included as the file `LICENSE` in the folder.
+
+The bundled binaries (plugins, extensions, Animator Choreographer) are not covered by it: each component keeps its own licence, and the bundle only combines them into a single download. An overview is in the file `THIRD_PARTY_LICENSES.md` in the folder and in the table below.
+
+{{< notice warning >}}
+For **AmbiIRVerb, AmbiIRLayers and AmbiGran 16** (ICST Extended, beta) the licence is still open. The IRidesce impulse responses are used with the author's permission and are subject to their own licence file.
+{{< /notice >}}
+
 ## Third-party components
 
 | Component | Licence | Note |
 |---|---|---|
 | [IEM Plug-in Suite](https://plugins.iem.at/) (BinauralDecoder, HOA FX) | GPL3 | The Binaural button uses the IEM BinauralDecoder; breaking changes from v1.16.0, check templates before updating |
-| [SWS](https://www.sws-extension.org), [js_ReaScriptAPI](https://forum.cockos.com/showthread.php?t=212174), [ReaPack](https://reapack.com) | Free | Install manually on Windows |
+| [SWS/S&M Extension](https://www.sws-extension.org) | MIT | Install manually on Windows; the licence text is in the `licenses/` folder |
+| [ReaPack](https://reapack.com) | LGPL-3.0 | Install manually on Windows |
+| [js_ReaScriptAPI](https://github.com/juliansader/ReaExtensions) | MIT | Install manually on Windows |
 | AmbiIRVerb impulse responses (IRidesce) | Used with permission | By Eli Stine, ES MediaWorks |
 
 ## See also
