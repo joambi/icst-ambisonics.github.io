@@ -1,138 +1,138 @@
 ---
-title: Binaural Monitoring im ICST-Workflow – Kopfhörer als Kontrollwerkzeug
-description: "Wie du im ICST-Workflow am Kopfhörer arbeitest: Signal-Chain, Plugin-Auswahl (IEM, SPARTA, dearVR), Monitoring-Setup in REAPER und die häufigsten Fehler beim binauralen Abhören."
+title: Binaural Monitoring in the ICST Workflow – Headphones as a Control Tool
+description: "How to work on headphones in the ICST workflow: signal chain, plugin choice (IEM, SPARTA, dearVR), monitoring setup in REAPER and the most common mistakes in binaural listening."
 date: 2026-03-21T16:00:00+01:00
 year: 2026
 month: 2026-03
 weight: 35
-tags: ["binaural", "monitoring", "hrtf", "iem", "sparta", "reaper", "workflow", "kopfhörer"]
+tags: ["binaural", "monitoring", "hrtf", "iem", "sparta", "reaper", "workflow", "headphones"]
 key_points:
-  - "Binaural Monitoring ist ein Produktionswerkzeug – nicht nur ein Deliverable"
-  - "Der BinauralDecoder ersetzt im Monitoring-Chain den Lautsprecher-Decoder – er sitzt am selben Bus"
-  - "Encoder-Ordnung und Decoder-Ordnung müssen übereinstimmen – sonst entsteht Blur statt Lokalisation"
+  - "Binaural monitoring is a production tool – not just a deliverable"
+  - "The BinauralDecoder replaces the loudspeaker decoder in the monitoring chain – it sits on the same bus"
+  - "Encoder order and decoder order must match – otherwise you get blur instead of localisation"
 difficulty: "intermediate"
 kind: "tutorial"
 tool: ["Binaural"]
 ---
 
-Level: Intermediate | **Audience:** Komponist:in, Producer:in, Techniker:in.
+Level: Intermediate | **Audience:** Composers, producers, technicians.
 
 ---
 
-Binaural ist nicht nur ein Ausgabeformat. Wer eine Ambisonics-Produktion ohne Lautsprecher entwickelt – im Zug, im Homeoffice, an einem Laptop ohne Decodersystem – braucht eine zuverlässige Kopfhörer-Kontrolle, die das räumliche Feld möglichst unverfälscht wiedergibt. Dieser Artikel zeigt, wie du binaural in die ICST-Session integrierst, welche Plugins funktionieren und worauf du bei der Einrichtung achten musst.
+Binaural is not just an output format. Anyone developing an Ambisonics production without loudspeakers – on the train, in a home office, on a laptop without a decoder system – needs reliable headphone monitoring that reproduces the spatial field as faithfully as possible. This article shows how to integrate binaural into the ICST session, which plugins work and what to watch for during setup.
 
 ---
 
-## Warum Binaural-Monitoring kein Notbehelf ist
+## Why binaural monitoring is not a makeshift solution
 
-Binaural aus HOA ist prinzipiell verlustärmer als Binaural aus FOA. Ein 3rd-Order-Signal trägt 16 Kanäle sphärischer Information; ein gut implementierter BinauralDecoder kann diese räumliche Auflösung vollständig für die Kopfhörer-Wiedergabe nutzen. Das Ergebnis ist einem ersten Ordnung deutlich überlegen: schärfere Lokalisation, überzeugendere Elevationsabbildung, breiterer Sweetspot.
+Binaural from HOA is in principle less lossy than binaural from FOA. A 3rd-order signal carries 16 channels of spherical information; a well-implemented BinauralDecoder can use this spatial resolution fully for headphone playback. The result is clearly superior to first order: sharper localisation, more convincing elevation rendering, a wider sweet spot.
 
-Gleichzeitig gilt: Binaural am Kopfhörer und Lautsprecher-Decode auf einem 3D-System klingen nicht identisch. Binaural-Monitoring ist ein **Kontrollwerkzeug**, kein Ersatz für den echten Lautsprecher-Check vor einer Aufführung.
+At the same time: binaural on headphones and a loudspeaker decode on a 3D system do not sound identical. Binaural monitoring is a **control tool**, not a substitute for the real loudspeaker check before a performance.
 
 ---
 
-## Die Signal-Chain
+## The signal chain
 
-Der BinauralDecoder sitzt **am B-Format-Master-Bus** – genau dort, wo du in einer Lautsprecher-Session den ICST AmbiDecoder einsetzt. Er bekommt das vollständige Multikanal-B-Format-Signal und gibt Stereo aus:
+The BinauralDecoder sits **on the B-format master bus** – exactly where you would use the ICST AmbiDecoder in a loudspeaker session. It receives the complete multichannel B-format signal and outputs stereo:
 
 ```
-[Quellen] → [ICST AmbiEncoder] → [B-Format Master Bus] → [BinauralDecoder] → [Stereo Out / Kopfhörer]
+[Sources] → [ICST AmbiEncoder] → [B-format master bus] → [BinauralDecoder] → [Stereo out / headphones]
 ```
 
-Für den Produktionsalltag empfiehlt sich eine **parallele Monitoring-Kette**: Der B-Format-Bus schickt sein Signal an zwei FX-Chains – eine für Lautsprecher-Decode (ICST AmbiDecoder), eine für Binaural. Du aktivierst jeweils eine, die andere bleibt deaktiviert oder in einem separaten Send-Bus.
+For everyday production a **parallel monitoring chain** is recommended: the B-format bus sends its signal to two FX chains – one for the loudspeaker decode (ICST AmbiDecoder), one for binaural. You activate one at a time; the other stays disabled or sits on a separate send bus.
 
-In REAPER geht das einfach über den **FX-Bypass-Button** in der FX-Liste: Den Lautsprecher-Decoder deaktivieren, den BinauralDecoder aktivieren – und umgekehrt. Keine Routing-Änderung nötig.
+In REAPER this is easy with the **FX bypass button** in the FX list: disable the loudspeaker decoder, enable the BinauralDecoder – and vice versa. No routing change is needed.
 
 ---
 
-## Plugin-Übersicht: Welcher BinauralDecoder für welchen Kontext
+## Plugin overview: which BinauralDecoder for which context
 
 ### IEM BinauralDecoder
 
-Das Plugin aus der IEM Plug-in Suite ist die erste Wahl im ICST-Workflow, weil es dieselbe SN3D/ACN-Konvention verwendet wie der Rest der Suite.
+The plugin from the IEM Plug-in Suite is the first choice in the ICST workflow because it uses the same SN3D/ACN convention as the rest of the suite.
 
-- **HRTF**: Neumann KU 100 Kunstkopf-Messungen, mit MagLS (Magnitude Least Squares) verarbeitet – minimiert Timbral-Artefakte durch HRTF-Ordnungsreduktion
-- **Headphone EQ**: Optional ladbare Kopfhörer-Entzerrung (nach Bernschütz et al.)
-- **Ordnungs-Erkennung**: Automatisch – das Plugin passt sich an die Kanalzahl des Busses an
-- **Empfehlung**: Immer mit derselben Ordnung betreiben, mit der die Encoder arbeiten. Kanalzahl am B-Format-Bus muss stimmen (1st=4ch, 3rd=16ch, 7th=64ch)
+- **HRTF**: Neumann KU 100 dummy-head measurements, processed with MagLS (Magnitude Least Squares) – minimises timbral artefacts from HRTF order reduction
+- **Headphone EQ**: optionally loadable headphone equalisation (after Bernschütz et al.)
+- **Order detection**: automatic – the plugin adapts to the channel count of the bus
+- **Recommendation**: always run it at the same order at which the encoders work. The channel count on the B-format bus must be right (1st = 4 ch, 3rd = 16 ch, 7th = 64 ch)
 
 ### SPARTA AmbiBIN
 
-Teil der SPARTA Spatial Audio Suite. Flexibler als IEM für experimentelle Workflows, weil es SOFA-Dateien laden kann – eigene HRTF-Messungen oder spezialisierte Datensätze lassen sich direkt verwenden.
+Part of the SPARTA Spatial Audio Suite. More flexible than IEM for experimental workflows because it can load SOFA files – your own HRTF measurements or specialised datasets can be used directly.
 
-- **Ordnung**: Bis 10th Order
-- **SOFA-Support**: Eigene HRTFs einladbar (.sofa Dateien)
-- **Head Tracking**: Via OSC (z.B. von GyrOSC aus iPhone)
-- **Decode-Methoden**: LS, SPR, TA, MagLS – MagLS für die beste Klangqualität empfohlen
-- **Empfehlung**: Gut für Komponist:innen, die Head-Tracking in den Monitoring-Workflow integrieren wollen
+- **Order**: up to 10th order
+- **SOFA support**: your own HRTFs can be loaded (.sofa files)
+- **Head tracking**: via OSC (e.g. from GyrOSC on an iPhone)
+- **Decoding methods**: LS, SPR, TA, MagLS – MagLS recommended for the best sound quality
+- **Recommendation**: good for composers who want to integrate head tracking into the monitoring workflow
 
 ### dearVR AMBI MICRO
 
-Kostenlos verfügbar (VST/AU/AAX). Guter Einstieg ohne Lizenzkosten.
+Available for free (VST/AU/AAX). A good start without licence costs.
 
-- **4 Binaural-Modi**: Unterschiedliche Räumlichkeitsgrade
-- **AMBEO A-to-B Converter**: Integriert – nützlich wenn Mikrofon-Aufnahmen Teil der Session sind
-- **Head Tracking**: VR-fähig
-- **Einschränkung**: Weniger HRTF-Kontrolle als IEM oder SPARTA; kein SOFA-Import in der Gratis-Version
+- **4 binaural modes**: different degrees of spaciousness
+- **AMBEO A-to-B converter**: integrated – useful when microphone recordings are part of the session
+- **Head tracking**: VR-capable
+- **Limitation**: less HRTF control than IEM or SPARTA; no SOFA import in the free version
 
-| Plugin | Kostenlos | SOFA | Head Track | Order max | Empfohlen für |
+| Plugin | Free | SOFA | Head track | Max order | Recommended for |
 |---|---|---|---|---|---|
-| IEM BinauralDecoder | ✓ | ✗ | ✗ | 7th | ICST-Standardworkflow |
-| SPARTA AmbiBIN | ✓ | ✓ | ✓ (OSC) | 10th | Eigene HRTFs, Head Tracking |
-| dearVR AMBI MICRO | ✓ | ✗ | ✓ | 1st–3rd | Schneller Einstieg |
+| IEM BinauralDecoder | ✓ | ✗ | ✗ | 7th | standard ICST workflow |
+| SPARTA AmbiBIN | ✓ | ✓ | ✓ (OSC) | 10th | own HRTFs, head tracking |
+| dearVR AMBI MICRO | ✓ | ✗ | ✓ | 1st–3rd | quick start |
 
 ---
 
-## Einrichtung in REAPER: Schritt für Schritt
+## Setup in REAPER: step by step
 
-**1. B-Format-Master-Bus auf korrekte Kanalzahl setzen**
+**1. Set the B-format master bus to the correct channel count**
 
-Die Kanalzahl des Busses muss zur Encoder-Ordnung passen: 4 Kanäle für 1st Order, 16 für 3rd, 36 für 5th, 64 für 7th. Ein falsch konfigurierter Bus schneidet höhere Ordnungskomponenten still ab – ohne Fehlermeldung.
+The channel count of the bus must match the encoder order: 4 channels for 1st order, 16 for 3rd, 36 for 5th, 64 for 7th. A wrongly configured bus silently cuts off higher-order components – without an error message.
 
-**2. BinauralDecoder als FX auf dem B-Format-Bus einrichten**
+**2. Set up the BinauralDecoder as FX on the B-format bus**
 
-IEM BinauralDecoder als FX-Plugin auf den B-Format-Master-Bus legen. Normalisierung im Plugin auf **SN3D** setzen, falls manuell wählbar. Das Plugin gibt 2 Kanäle aus (Stereo).
+Put the IEM BinauralDecoder as an FX plugin on the B-format master bus. Set normalisation in the plugin to **SN3D**, if it can be chosen manually. The plugin outputs 2 channels (stereo).
 
-**3. Stereo-Output routen**
+**3. Route the stereo output**
 
-Den Stereo-Output des BinauralDecoders an den Kopfhörer-Ausgang deines Audio-Interfaces routen. In REAPER geht das über einen separaten Stereo-Summenbus oder direkt über den Hardware-Output des Tracks.
+Route the stereo output of the BinauralDecoder to the headphone output of your audio interface. In REAPER you can do this via a separate stereo sum bus or directly via the hardware output of the track.
 
-**4. Parallel-Kette für Lautsprecher-Monitoring**
+**4. Parallel chain for loudspeaker monitoring**
 
-Wenn du zwischen Lautsprecher und Kopfhörer wechseln willst: ICST AmbiDecoder und IEM BinauralDecoder beide als FX auf dem Bus. Immer genau einen aktivieren. Alternativ: separater Send-Bus für Binaural-Monitoring mit eigenem Hardware-Ausgang – dann kannst du beide gleichzeitig abhören (nützlich für Vergleiche).
-
----
-
-## Häufige Fehler
-
-**Ordnungs-Mismatch:** Der Encoder arbeitet auf HOA3 (16 Kanäle), aber der B-Format-Bus ist nur auf 4 Kanäle eingestellt. Der BinauralDecoder empfängt dann ein gekürztes Signal – die Lokalisation ist unscharf, der Klang klingt nach FOA, obwohl HOA-Material vorliegt. Lösung: Kanalzahl am Bus überprüfen.
-
-**Normalisierungs-Mismatch:** Wenn ein Plugin mit N3D betrieben wird, ein anderes mit SN3D, entstehen Pegelunterschiede zwischen den Ordnungen. Das klingt nicht falsch, aber verfälscht die Tiefenwahrnehmung. Konsequent SN3D / ACN im gesamten ICST-Signal-Pfad.
-
-**Binaural als primären Monitor verwenden:** Binaural-Monitoring zeigt nicht, was auf einem echten Lautsprecher-System klingt. Elevationsabbildung, Enveloppement und raumakustische Effekte verhalten sich am Kopfhörer anders. Binaural ist Kontrolle, nicht Referenz.
-
-**Headphone EQ vergessen:** Der IEM BinauralDecoder bietet optionale Kopfhörer-Entzerrung. Ohne sie klingt der Sweetspot enger und die Externalisation schwächer. Passende EQ-Kurve für deinen Kopfhörer laden, sofern vorhanden.
-
-**Head Tracking nicht kalibrieren:** Wer SPARTA AmbiBIN mit GyrOSC oder einem anderen Head-Tracker nutzt, muss das Tracking-Offset kalibrieren bevor er musikalische Entscheidungen trifft – sonst ist die Referenzachse verdreht.
+If you want to switch between loudspeakers and headphones: put the ICST AmbiDecoder and the IEM BinauralDecoder both as FX on the bus. Always activate exactly one. Alternatively: a separate send bus for binaural monitoring with its own hardware output – then you can listen to both at the same time (useful for comparisons).
 
 ---
 
-## Binaural als Deliverable vs. Binaural als Monitoring
+## Common mistakes
 
-Diese Seite beschreibt Binaural-Monitoring **während der Produktion**. Wer eine fertige Ambisonics-Szene als binaurales File ausliefern will (für Streaming, YouTube 360°, Kopfhörer-Distribution), folgt einem anderen Workflow:
+**Order mismatch:** The encoder works at HOA3 (16 channels), but the B-format bus is set to only 4 channels. The BinauralDecoder then receives a truncated signal – localisation is blurred and the sound is like FOA although HOA material is present. Solution: check the channel count on the bus.
 
-- Binaural-Render als eigenständige Rendering-Session
-- Keine Lautsprecher-Decoder parallel aktiv
-- Ggf. Headphone EQ dauerhaft gebacken
-- Ausgabe als 2-Kanal-WAV mit Stereo-Metadaten
+**Normalisation mismatch:** If one plugin runs with N3D and another with SN3D, level differences arise between orders. It does not sound wrong, but it distorts depth perception. Use SN3D / ACN consistently throughout the ICST signal path.
 
-Mehr dazu im Artikel [Von der Ambisonics-Szene zum Atmos Bed](/post/ambisonics-to-atmos-bed/) unter dem Abschnitt „Binaural als besserer Weg für Kopfhörer".
+**Using binaural as the primary monitor:** Binaural monitoring does not show what sounds on a real loudspeaker system. Elevation rendering, envelopment and room-acoustic effects behave differently on headphones. Binaural is a check, not a reference.
+
+**Forgetting the headphone EQ:** The IEM BinauralDecoder offers optional headphone equalisation. Without it the sweet spot sounds narrower and externalisation weaker. Load a suitable EQ curve for your headphones, if available.
+
+**Not calibrating head tracking:** Anyone using SPARTA AmbiBIN with GyrOSC or another head tracker must calibrate the tracking offset before making musical decisions – otherwise the reference axis is rotated.
 
 ---
 
-## Weiterführende Seiten
+## Binaural as a deliverable vs. binaural as monitoring
 
-- [ICST AmbiDecoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
-- [Von der Ambisonics-Szene zum Atmos Bed](/post/ambisonics-to-atmos-bed/)
-- [ICST AmbiEncoder – OSC Syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/) *(für Head-Tracking-Integration via OSC)*
+This page describes binaural monitoring **during production**. Anyone who wants to deliver a finished Ambisonics scene as a binaural file (for streaming, YouTube 360°, headphone distribution) follows a different workflow:
+
+- binaural render as a separate rendering session
+- no loudspeaker decoders active in parallel
+- headphone EQ permanently baked in, if needed
+- output as a 2-channel WAV with stereo metadata
+
+More on this in the article [From the Ambisonics scene to an Atmos bed](/post/ambisonics-to-atmos-bed/) in the section "Binaural as a better route for headphones".
+
+---
+
+## Further reading
+
+- [ICST AmbiDecoder – setup and operation](/icst-ambisonics-plugins/08_icst_decoder/)
+- [From the Ambisonics scene to an Atmos bed](/post/ambisonics-to-atmos-bed/)
+- [ICST AmbiEncoder – OSC syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/) *(for head-tracking integration via OSC)*
 - [GyrOSC & ICST AmbiPlugins](/post/gyrosc/)

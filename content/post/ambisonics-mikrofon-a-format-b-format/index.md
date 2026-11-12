@@ -1,143 +1,143 @@
 ---
-title: Ambisonics-Mikrofon aufnehmen – A-Format, B-Format und die ICST-Integration
-description: "Wie du mit Ambisonics-Mikrofonen (Sennheiser Ambeo, Rode NT-SF1, Zylia ZM-1) arbeitest: A-Format verstehen, A→B-Konvertierung, Integration ins ICST-Workflow und was FOA-Aufnahmen leisten können und wo ihre Grenzen liegen."
+title: Recording with an Ambisonics Microphone – A-Format, B-Format and ICST Integration
+description: "How to work with Ambisonics microphones (Sennheiser Ambeo, Rode NT-SF1, Zylia ZM-1): understanding A-format, A→B conversion, integration into the ICST workflow and what FOA recordings can do and where their limits lie."
 date: 2026-03-21T17:00:00+01:00
 year: 2026
 month: 2026-03
 weight: 37
-tags: ["mikrofon", "a-format", "b-format", "aufnahme", "ambeo", "nt-sf1", "zylia", "foa", "reaper", "workflow"]
+tags: ["microphone", "a-format", "b-format", "recording", "ambeo", "nt-sf1", "zylia", "foa", "reaper", "workflow"]
 key_points:
-  - "A-Format ist das rohe Kapsel-Signal – es klingt nicht nach Ambisonics, bis es zu B-Format matriziert wird"
-  - "Die A→B-Konvertierung braucht ein mikrofonspezifisches Plugin – keine generische Matrix"
-  - "FOA-Mikrofone liefern 1st-Order-B-Format: räumlich begrenzt, aber ideal für Raumakustik, Atmo und Texturen"
+  - "A-format is the raw capsule signal – it does not sound like Ambisonics until it is matrixed into B-format"
+  - "A→B conversion needs a microphone-specific plugin – not a generic matrix"
+  - "FOA microphones deliver 1st-order B-format: spatially limited, but ideal for room acoustics, ambience and textures"
 difficulty: "intermediate"
 kind: "tutorial"
 tool: ["Recording"]
 ---
 
-Level: Intermediate | **Audience:** Komponist:in, Sounddesigner:in, Recording-Techniker:in.
+Level: Intermediate | **Audience:** Composers, sound designers, recording engineers.
 
 ---
 
-Ambisonics-Mikrofone nehmen den Raum auf – nicht als Stereo, nicht als Surround, sondern als vollständiges sphärisches Schallfeld. Das klingt nach mehr als es zunächst ist: Fast alle käuflichen Ambisonics-Mikrofone sind First-Order-Geräte (FOA). Sie liefern vier Kanäle, die das Feld in einer Auflösung beschreiben, die für Raumatmosphären, Texturen und Klangobjekte hervorragend ist, für die scharfe Lokalisation eines HOA3- oder HOA7-Systems aber nicht ausreicht. Dieser Artikel erklärt den Aufnahmeprozess, die Konvertierung und wie das Ergebnis in den ICST-Workflow integriert wird.
+Ambisonics microphones record the space – not as stereo, not as surround, but as a complete spherical sound field. That sounds like more than it is at first: almost all commercially available Ambisonics microphones are first-order (FOA) devices. They deliver four channels that describe the field at a resolution that is excellent for room atmospheres, textures and sound objects but insufficient for the sharp localisation of an HOA3 or HOA7 system. This article explains the recording process, the conversion and how the result is integrated into the ICST workflow.
 
 ---
 
-## A-Format: Was aus dem Mikrofon kommt
+## A-format: what comes out of the microphone
 
-Ein Ambisonics-Mikrofon besteht aus vier Kapseln in tetraedrischer Anordnung – typischerweise eine Kapsel oben vorne links, eine unten vorne rechts, eine unten hinten links, eine oben hinten rechts. Jede Kapsel nimmt ihr eigenes Signal auf. Diese vier rohen Kapsel-Signale heißen **A-Format**.
+An Ambisonics microphone consists of four capsules in a tetrahedral arrangement – typically one capsule up front left, one down front right, one down back left, one up back right. Each capsule records its own signal. These four raw capsule signals are called **A-format**.
 
-A-Format klingt nicht wie Ambisonics. Es ist das Rohmaterial: vier leicht unterschiedliche Perspektiven desselben Raums, mit Kapseldistanz-Artefakten und ohne direkten Bezug zu W, X, Y, Z. Du kannst A-Format nicht direkt in den ICST-Workflow einspeisen.
+A-format does not sound like Ambisonics. It is the raw material: four slightly different perspectives of the same room, with capsule-spacing artefacts and no direct relation to W, X, Y, Z. You cannot feed A-format directly into the ICST workflow.
 
-Was du brauchst, ist die **A→B-Konvertierung**: eine Matrizierung, die aus den vier Kapsel-Signalen die vier B-Format-Komponenten W (Druck), X (vorne-hinten), Y (links-rechts) und Z (oben-unten) berechnet.
-
----
-
-## Warum ein mikrofonspezifisches Plugin nötig ist
-
-Die Konvertierungsmatrix ist nicht universell. Sie hängt von der exakten Kapsel-Geometrie, der Kapselpolarität und den Frequenzgang-Eigenschaften des jeweiligen Mikrofons ab. Dazu kommt das **Non-Koinzidenz-Problem**: Die vier Kapseln sind physisch voneinander getrennt, meist ca. 1 cm. Bei hohen Frequenzen führt diese Distanz zu Richtungsabweichungen, die eine einfache feste Matrix nicht kompensieren kann. Moderne Konvertierungs-Plugins arbeiten deshalb frequenzabhängig – sie korrigieren die Non-Koinzidenz-Artefakte im Frequenzbereich.
-
-Jeder Mikrofonhersteller liefert sein eigenes Konvertierungs-Plugin mit, das auf die Messdaten des jeweiligen Mikrofons kalibriert ist. Drittanbieter-Plugins können generische Matrizen anwenden – das funktioniert, ist aber weniger präzise.
+What you need is the **A→B conversion**: a matrixing that calculates the four B-format components W (pressure), X (front-back), Y (left-right) and Z (up-down) from the four capsule signals.
 
 ---
 
-## Mikrofon-Übersicht
+## Why a microphone-specific plugin is necessary
+
+The conversion matrix is not universal. It depends on the exact capsule geometry, the capsule polarity and the frequency-response characteristics of the particular microphone. On top of that comes the **non-coincidence problem**: the four capsules are physically separated from each other, usually by about 1 cm. At high frequencies this distance leads to directional deviations that a simple fixed matrix cannot compensate. Modern conversion plugins therefore work frequency-dependently – they correct the non-coincidence artefacts in the frequency domain.
+
+Every microphone manufacturer supplies its own conversion plugin, calibrated to the measurement data of that microphone. Third-party plugins can apply generic matrices – that works, but is less precise.
+
+---
+
+## Microphone overview
 
 ### Sennheiser Ambeo VR Mic
 
-- **Kapseln**: 4 × KE 14 Kardioid, tetraedrisch
-- **A-Format Bezeichnung**: FLU (Front Left Up), FRD (Front Right Down), BLD (Back Left Down), BRU (Back Right Up)
-- **Konvertierungs-Plugin**: **Sennheiser AMBEO A-B Converter** (kostenlos, VST/AU/AAX) – kalibriert auf dieses Mikrofon, mit EQ-Kompensation
-- **Ausgang**: 4-Kanal XLR, 48V Phantom Power benötigt
+- **Capsules**: 4 × KE 14 cardioid, tetrahedral
+- **A-format designation**: FLU (Front Left Up), FRD (Front Right Down), BLD (Back Left Down), BRU (Back Right Up)
+- **Conversion plugin**: **Sennheiser AMBEO A-B Converter** (free, VST/AU/AAX) – calibrated to this microphone, with EQ compensation
+- **Output**: 4-channel XLR, 48 V phantom power required
 
 ### Rode NT-SF1
 
-- **Kapseln**: 4 × 1/2" TF45C Kardioid, tetraedrisch
-- **Anschluss**: 10-Pin XLR → 4 × XLR-Adapter (mitgeliefert)
-- **Konvertierungs-Plugin**: **SoundField by RØDE** (kostenlos, VST/AU/AAX) – frequenzabhängige Konvertierung, besonders gut bei hohen Frequenzen
-- **Ausgabeformate**: AmbiX (ACN/SN3D), FuMa, Stereo, 5.1, 7.1, und Atmos-kompatible Formate direkt aus dem Plugin
-- **Besonderheit**: Das SoundField-Plugin bietet Richtungsmanipulation (Rotation, Tilt, Tumble) direkt im Konvertierungs-Schritt
+- **Capsules**: 4 × 1/2" TF45C cardioid, tetrahedral
+- **Connection**: 10-pin XLR → 4 × XLR adapter (supplied)
+- **Conversion plugin**: **SoundField by RØDE** (free, VST/AU/AAX) – frequency-dependent conversion, particularly good at high frequencies
+- **Output formats**: AmbiX (ACN/SN3D), FuMa, stereo, 5.1, 7.1 and Atmos-compatible formats directly from the plugin
+- **Special feature**: the SoundField plugin offers direction manipulation (rotation, tilt, tumble) directly in the conversion step
 
 ### Zylia ZM-1
 
-- **Kapseln**: 19 MEMS-Mikrofone (Infineon XENSIV)
-- **Ambisonics-Ordnung**: Nativ **3rd Order** (herunterskalierbar auf 2nd oder 1st)
-- **Anschluss**: USB direkt an Rechner oder an Zylia ZR-1 Recorder
-- **Besonderheit**: Einziges hier genanntes Mikrofon mit HOA-Ausgabe ab Werk. Kein A→B-Konvertierungs-Plugin nötig – der Zylia-Treiber liefert direkt AmbiX/SN3D
-- **Einschränkung**: Durch MEMS-Kapseln höheres Eigenrauschen als Kondensator-Mikrofone; SNR 69 dB
+- **Capsules**: 19 MEMS microphones (Infineon XENSIV)
+- **Ambisonics order**: natively **3rd order** (scalable down to 2nd or 1st)
+- **Connection**: USB directly to the computer or to the Zylia ZR-1 recorder
+- **Special feature**: the only microphone named here with HOA output out of the box. No A→B conversion plugin needed – the Zylia driver delivers AmbiX/SN3D directly
+- **Limitation**: higher self-noise than condenser microphones because of the MEMS capsules; SNR 69 dB
 
-| Mikrofon | Ordnung | Konvertierungs-Plugin | Anschluss | Stärken |
+| Microphone | Order | Conversion plugin | Connection | Strengths |
 |---|---|---|---|---|
-| Sennheiser Ambeo VR | FOA | AMBEO A-B Converter | 4× XLR | Klangqualität, Kalibrierung |
-| Rode NT-SF1 | FOA | SoundField by RØDE | 10-Pin XLR | Formatflexibilität, Richtungskorrektur |
-| Zylia ZM-1 | HOA3 | Nicht nötig (direkt AmbiX) | USB | Einzige günstige HOA-Option |
+| Sennheiser Ambeo VR | FOA | AMBEO A-B Converter | 4× XLR | sound quality, calibration |
+| Rode NT-SF1 | FOA | SoundField by RØDE | 10-pin XLR | format flexibility, direction correction |
+| Zylia ZM-1 | HOA3 | not needed (direct AmbiX) | USB | the only affordable HOA option |
 
 ---
 
-## Workflow in REAPER: Schritt für Schritt
+## Workflow in REAPER: step by step
 
-### 1. Vier Kanäle aufnehmen
+### 1. Record four channels
 
-Das A-Format-Mikrofon braucht 4 Eingangskanäle am Audio-Interface – jeweils mit 48V Phantom Power. In REAPER einen 4-Kanal-Track anlegen und die vier Kapsel-Signale als Mehrkanal-Aufnahme routen. Beim Abhören während der Aufnahme klingt es noch nicht nach Ambisonics – das ist normal.
+The A-format microphone needs 4 input channels on the audio interface – each with 48 V phantom power. In REAPER create a 4-channel track and route the four capsule signals as a multichannel recording. When monitoring during the recording it does not yet sound like Ambisonics – that is normal.
 
-### 2. A→B-Konvertierungs-Plugin auf den Aufnahme-Track legen
+### 2. Put the A→B conversion plugin on the recording track
 
-Nach der Aufnahme (oder direkt im Monitoring-Pfad): Konvertierungs-Plugin auf den 4-Kanal-Track legen. Der Output des Plugins sind 4 Kanäle B-Format (W, X, Y, Z in ACN-Reihenfolge, SN3D-normalisiert).
+After the recording (or directly in the monitoring path): put the conversion plugin on the 4-channel track. The output of the plugin is 4 channels of B-format (W, X, Y, Z in ACN order, SN3D-normalised).
 
-- Sennheiser Ambeo: AMBEO A-B Converter → Output auf AmbiX/SN3D stellen
-- Rode NT-SF1: SoundField by RØDE → Format auf AmbiX stellen, Order = 1st
-- Zylia ZM-1: Kein Plugin nötig, direkt als HOA3-Track routen
+- Sennheiser Ambeo: AMBEO A-B Converter → set output to AmbiX/SN3D
+- Rode NT-SF1: SoundField by RØDE → set format to AmbiX, order = 1st
+- Zylia ZM-1: no plugin needed, route directly as an HOA3 track
 
-### 3. Output auf den B-Format-Master-Bus routen
+### 3. Route the output to the B-format master bus
 
-Den 4-Kanal-Output des Konvertierungs-Plugins auf den B-Format-Master-Bus senden. Kanaloffset = 0, alle 4 Kanäle senden. Ab hier verhält sich das Mikrofon-Signal wie jede andere Ambisonics-Quelle in der Session – es wird zusammen mit Encoder-Quellen im B-Format-Bus summiert.
+Send the 4-channel output of the conversion plugin to the B-format master bus. Channel offset = 0, send all 4 channels. From here the microphone signal behaves like any other Ambisonics source in the session – it is summed together with encoder sources in the B-format bus.
 
-### 4. Monitoring und Orientierungskontrolle
+### 4. Monitoring and orientation check
 
-Beim ersten Abhören prüfen, ob die Hauptrichtung stimmt. Ein Ambisonics-Mikrofon hat eine Referenzachse – typischerweise die Vorderkante des Mikrofons, die in Richtung der Hauptschallquelle zeigen soll. Wenn die Szene gespiegelt oder rotiert klingt: Im SoundField-Plugin (Rode) oder über ein separates SPARTA Rotator-Plugin die Orientierung korrigieren.
-
----
-
-## Was FOA-Aufnahmen leisten – und wo die Grenze liegt
-
-First-Order-Ambisonics aus einem 4-Kapsel-Mikrofon beschreibt das Schallfeld mit begrenzter räumlicher Auflösung. Das hat praktische Konsequenzen:
-
-**Gut geeignet für:**
-- Raumatmosphären (Atmo, Ambience, Außenaufnahmen)
-- Diffuse Klangtexturen
-- Raumakustik-Impulse (Konvolutions-Hall)
-- Natürliche Klangumgebungen für kompositorischen Hintergrund
-
-**Begrenzt geeignet für:**
-- Scharfe Punktquelle-Lokalisation (ein einzelner Lautsprecher in einem Cluster klingt unscharf)
-- Elevationsabbildung mit hoher Präzision
-- Mischung mit HOA3- oder HOA7-Encoder-Quellen, wenn dieselbe Lokalisation erwartet wird
-
-FOA-Material und HOA-Encoder-Quellen **können im selben B-Format-Bus summiert werden** – das ist kein technisches Problem. Die räumliche Kohärenz hängt dann davon ab, wie gut sich die FOA-Textur gegen die schärferen HOA-Quellen verhält. In vielen kompositorischen Kontexten ist genau diese Differenz interessant: ein diffuses FOA-Feld als Untergrund, scharfe HOA-Objekte darüber.
+On first listening, check that the main direction is right. An Ambisonics microphone has a reference axis – typically the front edge of the microphone, which should point towards the main sound source. If the scene sounds mirrored or rotated: correct the orientation in the SoundField plugin (Rode) or via a separate SPARTA Rotator plugin.
 
 ---
 
-## FOA auf HOA skalieren?
+## What FOA recordings can do – and where the limit lies
 
-Prinzipiell gibt es neuronale Netzwerk-Ansätze, die FOA zu HOA3 hochrechnen – experimentelle Werkzeuge, die in der Forschung existieren (z.B. Conv-TasNet-basierte Modelle). Für den Produktionsalltag gilt: Diese Verfahren verbessern die räumliche Repräsentation, können aber keine Information zurückgewinnen, die die Mikrofon-Physik nie aufgenommen hat. FOA-Aufnahmen bleiben FOA – upscaling ist Enhancement, kein Ersatz.
+First-order Ambisonics from a 4-capsule microphone describes the sound field with limited spatial resolution. This has practical consequences:
 
-Wer native HOA-Mikrofonaufnahmen braucht, greift zum Zylia ZM-1 (HOA3) oder zu Mehr-Mikrofon-Arrayaufnahmen.
+**Well suited to:**
+- room atmospheres (ambience, outdoor recordings)
+- diffuse sound textures
+- room-acoustic impulses (convolution reverb)
+- natural sound environments as compositional background
+
+**Of limited suitability for:**
+- sharp point-source localisation (a single loudspeaker in a cluster sounds blurred)
+- elevation rendering with high precision
+- mixing with HOA3 or HOA7 encoder sources when the same localisation is expected
+
+FOA material and HOA encoder sources **can be summed in the same B-format bus** – that is not a technical problem. The spatial coherence then depends on how well the FOA texture behaves against the sharper HOA sources. In many compositional contexts exactly this difference is interesting: a diffuse FOA field as a ground, sharp HOA objects above it.
 
 ---
 
-## Gain-Staging und Headroom
+## Upscaling FOA to HOA?
 
-FOA-Mikrofone, insbesondere mit MEMS-Kapseln (Zylia), haben höheres Eigenrauschen als Studio-Kondensatormikrofone. Empfehlungen:
+In principle there are neural-network approaches that extrapolate FOA to HOA3 – experimental tools that exist in research (e.g. Conv-TasNet-based models). For everyday production: these methods improve the spatial representation but cannot recover information that the microphone physics never captured. FOA recordings remain FOA – upscaling is enhancement, not replacement.
 
-- Aufnahmelautstärke so wählen, dass der W-Kanal (Omnidirektional) bei lauten Momenten etwa –12 dBFS Peak hat
-- Keine Gain-Normalisierung nach der Aufnahme, bevor die A→B-Konvertierung nicht abgeschlossen ist – das Pegelgleichgewicht zwischen den Kapseln ist für die Matrizierung entscheidend
-- Nach der Konvertierung: W-Kanal sollte den höchsten Pegel haben; wenn X, Y oder Z dominieren, stimmt die Matrizierung oder der Gain nicht
+Anyone who needs native HOA microphone recordings should reach for the Zylia ZM-1 (HOA3) or for multi-microphone array recordings.
 
 ---
 
-## Weiterführende Seiten
+## Gain staging and headroom
 
-- [Den B-Format-Master exportieren](/post/b-format-export-reaper/)
-- [Binaural Monitoring im ICST-Workflow](/post/binaural-monitoring-icst-workflow/)
-- [XYZ und AED – Zwei Koordinatensysteme, ein Lautsprecher](/post/xyz-vs-aed-koordinatensysteme/)
-- [ICST AmbiDecoder – Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
+FOA microphones, especially those with MEMS capsules (Zylia), have higher self-noise than studio condenser microphones. Recommendations:
+
+- set the recording level so that the W channel (omnidirectional) peaks at about –12 dBFS in loud moments
+- do no gain normalisation after the recording before the A→B conversion is complete – the level balance between the capsules is decisive for the matrixing
+- after conversion: the W channel should have the highest level; if X, Y or Z dominate, the matrixing or the gain is wrong
+
+---
+
+## Further reading
+
+- [Exporting the B-format master](/post/b-format-export-reaper/)
+- [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/)
+- [XYZ and AED – two coordinate systems, one loudspeaker](/post/xyz-vs-aed-koordinatensysteme/)
+- [ICST AmbiDecoder – scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)

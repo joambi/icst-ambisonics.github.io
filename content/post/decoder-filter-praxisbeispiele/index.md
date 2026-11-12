@@ -1,168 +1,168 @@
 ---
-title: Der Filter-Tab im ICST AmbiDecoder – Praxisbeispiele und Anwendungsfälle
-description: "Wie du kanalspezifische Filter im ICST AmbiDecoder einsetzt: von raumakustischer Korrektur über Höhenabbildung bis zur experimentellen Gewichtung einzelner Lautsprecherpositionen."
+title: The Filter Tab in the ICST AmbiDecoder – Practical Examples and Use Cases
+description: "How to use channel-specific filters in the ICST AmbiDecoder: from room-acoustic correction and height rendering to experimental weighting of individual loudspeaker positions."
 date: 2026-03-21T11:30:00+01:00
 year: 2026
 month: 2026-03
 weight: 33
-tags: ["decoder", "filter", "eq", "raumakustik", "multidecoder", "klanganpassung", "tutorial"]
+tags: ["decoder", "filter", "eq", "room-acoustics", "multidecoder", "tuning", "tutorial"]
 key_points:
-  - "Jeder Lautsprecher kann individuell mit bis zu acht Filtertypen bearbeitet werden"
-  - "Filter kompensieren raumakustische Probleme oder unterstützen eine vorsichtige psychoakustische Abstimmung"
-  - "Im MultiDecoder-Modus kann jede Decoder-Einheit eine eigene Filtersektion erhalten"
+  - "Each loudspeaker can be processed individually with up to eight filter types"
+  - "Filters compensate for room-acoustic problems or support a careful psychoacoustic tuning"
+  - "In MultiDecoder mode every decoder unit can have its own filter section"
 difficulty: "intermediate"
 kind: "tutorial"
 tool: ["AmbiDecoder"]
 ---
 
-Level: Intermediate | **Audience:** Techniker:in, Komponist:in mit technischem Interesse, Studiobetreiber:in.
+Level: Intermediate | **Audience:** Technicians, composers with a technical interest, studio operators.
 
-Diese Seite erklärt, wie du den Filter-Tab des ICST AmbiDecoders praktisch nutzt – und zeigt konkrete Szenarien, wann welche Filterstrategie sinnvoll ist.
+This page explains how to use the Filter tab of the ICST AmbiDecoder in practice – and shows concrete scenarios for when which filter strategy makes sense.
 
-> **Gemeinsamer Kernsatz dieser Decoder-Serie:** Der Decoder erzeugt den Raum nicht neu, sondern projiziert ein B-Format-Feld auf ein reales System.
+> **Core sentence of this decoder series:** The decoder does not create the space anew; it projects a B-format field onto a real system.
 >
-> In diesem Artikel geht es um den dritten Schritt dieser Projektion: **Abstimmung**. Filter, Gewichtung und ähnliche Eingriffe bestimmen, **wie deutlich** oder **wie gefärbt** das Ergebnis wahrgenommen wird, nachdem Geometrie und Laufzeit bereits stimmen.
+> This article covers the third step of that projection: **tuning**. Filters, weighting and similar interventions determine **how clearly** or **how coloured** the result is perceived, once geometry and delay are already right.
 
 ---
 
-## Was der Filter-Tab kann
+## What the Filter tab can do
 
-Über die Registerkarte **Filter** im Speaker-Settings-Fenster lassen sich einzelne Lautsprecher separat bearbeiten. Jedem Lautsprecher stehen bis zu **acht unabhängige Filterslots** zur Verfügung. Die verfügbaren Filtertypen sind:
+The **Filter** tab in the speaker settings window lets you process individual loudspeakers separately. Each loudspeaker has up to **eight independent filter slots**. The available filter types are:
 
-- **Peak** – schmalbandige Anhebung oder Absenkung (parametrischer EQ)
-- **High Shelf / Low Shelf** – Anhebung oder Absenkung oberhalb/unterhalb einer Grenzfrequenz
-- **High Pass / Low Pass** – Frequenzschnitt mit einstellbarer Flankensteilheit
-- **Off** – Slot deaktiviert
+- **Peak** – narrow-band boost or cut (parametric EQ)
+- **High Shelf / Low Shelf** – boost or cut above/below a cut-off frequency
+- **High Pass / Low Pass** – frequency cut with adjustable slope
+- **Off** – slot disabled
 
-Jeder Slot hat drei Parameter: **Frequenz**, **Gain (dB)** und **Q-Wert** (Güte / Bandbreite).
+Each slot has three parameters: **frequency**, **gain (dB)** and **Q value** (quality / bandwidth).
 
-Der **FFT-Toggle** zeigt das gemessene oder simulierte Spektrum des Lautsprechers im Hintergrund des Displays – hilfreich zur visuellen Kontrolle der Filterkurve.
+The **FFT toggle** shows the measured or simulated spectrum of the loudspeaker in the background of the display – helpful for visually checking the filter curve.
 
-> **Wichtige Einordnung:** Der Filter-Tab ist in erster Linie für gezielte Korrekturen und vorsichtige Abstimmung gedacht, nicht für eine harte Zerlegung des Schallfeldes in starre Wahrnehmungsbänder.
-
----
-
-## Öffnen des Filters für einen Lautsprecher
-
-1. Öffne **Speaker Settings** (Zahnrad-Icon im Decoder).
-2. Wähle einen Lautsprecher in der Tabelle aus.
-3. Klicke auf den **Filter**-Button rechts in der Zeile – das Filter-Panel öffnet sich.
-4. Wähle einen Filtertyp aus dem Dropdown-Menü und setze Frequenz, Gain und Q.
-
-> **Tipp:** Aktiviere **Bypass filter** im Panel, um den Filter vorübergehend zu deaktivieren und die Wirkung direkt A/B zu hören.
+> **Important context:** The Filter tab is primarily intended for targeted corrections and careful tuning, not for a hard decomposition of the sound field into rigid perceptual bands.
 
 ---
 
-## Praxisbeispiel 1: Hochtöner ist zu hell
+## Opening the filter for a loudspeaker
 
-**Problem:** Lautsprecher 7 hat einen zu präsenten Hochtonanteil – er klingt scharf und stört die Einheitlichkeit des Arrays.
+1. Open **Speaker Settings** (gear icon in the decoder).
+2. Select a loudspeaker in the table.
+3. Click the **Filter** button on the right of the row – the filter panel opens.
+4. Choose a filter type from the dropdown menu and set frequency, gain and Q.
 
-**Lösung:**
-- Filtertyp: **High Shelf**
-- Frequenz: ca. 8.000 Hz
-- Gain: -3.0 bis -5.0 dB
-- Q: 0.7 (breit)
-
-Das dämpft den Hochton oberhalb 8 kHz sanft ab, ohne den Mittenbereich zu beeinflussen. Vergleiche mit dem Nachbar-Lautsprecher per Solo/Mute.
+> **Tip:** Activate **Bypass filter** in the panel to disable the filter temporarily and hear the effect directly as an A/B comparison.
 
 ---
 
-## Praxisbeispiel 2: Raummoden bei einem Subwoofer
+## Practical example 1: the tweeter is too bright
 
-**Problem:** Der Subwoofer (SUB) hat eine ausgeprägte Raummode bei 63 Hz – ein deutlicher Anstieg, der Bass-Phantomquellen aufbläht.
+**Problem:** Loudspeaker 7 has too prominent a high-frequency component – it sounds harsh and disturbs the uniformity of the array.
 
-**Lösung:**
-- Filtertyp: **Peak** (absenkend)
-- Frequenz: 63 Hz
-- Gain: -6.0 bis -9.0 dB
-- Q: 4.0 (schmalbandig)
+**Solution:**
+- Filter type: **High Shelf**
+- Frequency: approx. 8,000 Hz
+- Gain: -3.0 to -5.0 dB
+- Q: 0.7 (wide)
 
-Damit wird die Mode gezielt adressiert, ohne den gesamten Bassbereich zu schwächen.
+This gently attenuates the highs above 8 kHz without affecting the midrange. Compare with the neighbouring loudspeaker using solo/mute.
 
 ---
 
-## Praxisbeispiel 3: Höhenabbildung mit Hochtonanhebung
+## Practical example 2: room modes with a subwoofer
 
-**Problem:** Bei einem 3D-Array klingen die Höhenlautsprecher im Hochton schwächer als die Ringlautsprecher – Klangereignisse, die nach oben steigen sollen, verschwinden im Diffusfeld.
+**Problem:** The subwoofer (SUB) has a pronounced room mode at 63 Hz – a clear rise that bloats bass phantom sources.
 
-**Lösung (für alle Höhenlautsprecher):**
-- Filtertyp: **High Shelf**
-- Frequenz: 3.000 Hz
-- Gain: +3.0 bis +5.0 dB
+**Solution:**
+- Filter type: **Peak** (cutting)
+- Frequency: 63 Hz
+- Gain: -6.0 to -9.0 dB
+- Q: 4.0 (narrow-band)
+
+This addresses the mode specifically without weakening the whole bass range.
+
+---
+
+## Practical example 3: height rendering with a high-frequency boost
+
+**Problem:** In a 3D array the height loudspeakers sound weaker in the highs than the ring loudspeakers – sound events that are meant to rise upwards disappear in the diffuse field.
+
+**Solution (for all height loudspeakers):**
+- Filter type: **High Shelf**
+- Frequency: 3,000 Hz
+- Gain: +3.0 to +5.0 dB
 - Q: 1.0
 
-Das kann die Wahrnehmung von Höhe unterstützen und Bewegungen nach oben deutlicher machen. Solche Eingriffe sollten jedoch immer vorsichtig dosiert und am realen Array gegengehört werden.
+This can support the perception of height and make upward movements clearer. Such interventions should always be dosed carefully and checked by ear on the real array.
 
 ---
 
-## Praxisbeispiel 4: Tieffrequenzen in Höhenebenen unterdrücken
+## Practical example 4: suppressing low frequencies in the height layers
 
-**Problem:** In einem mehrstöckigen Array (unten, mitte, oben) produzieren die oberen Lautsprecher störende Tieftonanteile, die Phantomquellen in der Horizontalebene destabilisieren.
+**Problem:** In a multi-level array (bottom, middle, top) the upper loudspeakers produce disturbing low-frequency components that destabilise phantom sources in the horizontal plane.
 
-**Lösung (für obere Lautsprecher-Gruppe):**
-- Filtertyp: **High Pass**
-- Frequenz: 250–400 Hz
+**Solution (for the upper loudspeaker group):**
+- Filter type: **High Pass**
+- Frequency: 250–400 Hz
 - Q: 0.7
 
-Das schneidet Tieffrequenzen unterhalb der Grenzfrequenz ab. Kombiniert mit dem MultiDecoder-Modus kann diese Einstellung für eine gesamte Decoder-Einheit (z.B. die „Top"-Gruppe) angewendet werden, ohne die anderen Ebenen zu beeinflussen.
+This cuts low frequencies below the cut-off frequency. Combined with MultiDecoder mode, this setting can be applied to a whole decoder unit (e.g. the "Top" group) without affecting the other layers.
 
 ---
 
-## Filter im MultiDecoder-Modus
+## Filters in MultiDecoder mode
 
-Im **MultiDecoder-Modus** hat jede der bis zu vier Decoder-Einheiten eine eigene Filtersektion. Das ermöglicht frequenzbandabhängige Raumabbildung über verschiedene Lautsprechergruppen hinweg:
+In **MultiDecoder mode** each of the up to four decoder units has its own filter section. This enables frequency-dependent spatial rendering across different loudspeaker groups:
 
-| Decoder-Einheit | Lautsprecher | Filterstrategie |
+| Decoder unit | Loudspeakers | Filter strategy |
 |---|---|---|
-| Hight (oben) | 12 Speaker | High Shelf +4 dB ab 3 kHz |
-| Middle (mitte) | 16 Speaker | flach (keine Filterung) |
-| Deep (unten/sub) | 12 Speaker | Low Pass 300 Hz |
+| High (top) | 12 speakers | High Shelf +4 dB from 3 kHz |
+| Middle | 16 speakers | flat (no filtering) |
+| Deep (bottom/sub) | 12 speakers | Low Pass 300 Hz |
 
-Dieser Ansatz kann sich an psychoakustischen Wahrnehmungsmodellen orientieren: Tieffrequenzen tragen oft stärker zu Umhüllung bei, Hochfrequenzen stärker zu vertikaler Klarheit. Die getrennte Filterung ist dabei keine feststehende Wahrheitsmaschine, sondern eine Form vorsichtiger Abstimmung, die auf dem konkreten Array überprüft werden muss.
-
----
-
-## Filter-Presets speichern
-
-Filter-Einstellungen werden mit dem Lautsprecher-Preset gespeichert. Wenn du ein Preset lädst, werden auch alle Filter-Einstellungen aller Lautsprecher wiederhergestellt.
-
-Zum expliziten Speichern eines Filter-Presets für einen einzelnen Lautsprecher:
-- Klicke auf **Save** oben rechts im Filter-Panel
-- Gib dem Preset einen beschreibenden Namen (z.B. `LS7_Hochton_Korrektur_ICST`)
-
-Presets können zwischen Lautsprechern kopiert werden – sinnvoll, wenn mehrere Lautsprecher desselben Typs im Array dieselbe Korrektur brauchen.
+This approach can follow psychoacoustic models of perception: low frequencies often contribute more to envelopment, high frequencies more to vertical clarity. The separate filtering is not a fixed truth machine but a form of careful tuning that has to be verified on the specific array.
 
 ---
 
-## Was der Filter nicht ersetzt
+## Saving filter presets
 
-Der Filter-Tab ist kein Ersatz für:
+Filter settings are saved with the loudspeaker preset. When you load a preset, all filter settings of all loudspeakers are restored as well.
 
-- **Raumakkustische Behandlung** (Absorber, Diffusoren)
-- **Ordentliches Lautsprecher-Routing** (falsch geroutete Kanäle klingt auch mit Filter nicht richtig)
-- **Exakte Lautsprecherkalibrierung** (ein vollständiger Messdurchgang mit z.B. Room EQ Wizard ist genauer)
+To save a filter preset explicitly for a single loudspeaker:
+- Click **Save** at the top right of the filter panel
+- Give the preset a descriptive name (e.g. `LS7_HF_correction_ICST`)
 
-Nutze die Filter im Decoder für gezielte, spezifische Korrekturen – nicht als pauschale Klangfärbung des gesamten Systems.
-
----
-
-## Decoder-Serie: Abstimmung
-
-Wenn du den Decoder als Dreischritt denkst, ist diese Seite der Teil **Abstimmung**:
-
-- **Geometrie** bestimmt, **wo** Lautsprecher stehen
-- **Laufzeit** bestimmt, **wann** Signale ankommen
-- **Abstimmung** bestimmt, **wie deutlich** oder **wie gefärbt** das Ergebnis wahrgenommen wird
-
-Filterung ist deshalb der letzte Schritt, nicht der erste. Wenn Geometrie oder Laufzeit noch unstimmig sind, wirken Filter schnell wie Problemlöser, obwohl sie nur Symptome überdecken.
+Presets can be copied between loudspeakers – useful when several loudspeakers of the same type in the array need the same correction.
 
 ---
 
-## Weiterführende Seiten
+## What the filter does not replace
 
-- [ICST Decoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
+The Filter tab is not a substitute for:
+
+- **Room-acoustic treatment** (absorbers, diffusers)
+- **Proper loudspeaker routing** (wrongly routed channels will not sound right even with a filter)
+- **Exact loudspeaker calibration** (a full measurement run with e.g. Room EQ Wizard is more accurate)
+
+Use the filters in the decoder for targeted, specific corrections – not as a blanket colouring of the whole system.
+
+---
+
+## Decoder series: tuning
+
+If you think of the decoder as a three-step process, this page covers **tuning**:
+
+- **Geometry** determines **where** loudspeakers stand
+- **Delay** determines **when** signals arrive
+- **Tuning** determines **how clearly** or **how coloured** the result is perceived
+
+Filtering is therefore the last step, not the first. If geometry or delay are still inconsistent, filters quickly look like problem solvers although they only mask symptoms.
+
+---
+
+## Further reading
+
+- [ICST Decoder – setup and operation](/icst-ambisonics-plugins/08_icst_decoder/)
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
-- [XYZ und AED – Koordinatensysteme im Vergleich](/post/xyz-vs-aed-koordinatensysteme/)
-- [Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
-- [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)
-- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
+- [XYZ and AED – coordinate systems compared](/post/xyz-vs-aed-koordinatensysteme/)
+- [Scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)
+- [Why the decoder sounds the way it does – methodological context](/post/decoder-methodological-context/)
+- [Best practices](/icst-ambisonics-plugins/17_best_practices/)

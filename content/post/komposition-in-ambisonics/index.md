@@ -1,10 +1,10 @@
 ---
-title: "Komposition in Ambisonics: Raum, Bewegung und Performance"
-description: "Nicht nur 'mehr Raum': Ambisonics als kompositorisches System mit Perspektive, Bewegung, Dichte und Übersetzung in verschiedene Wiedergabesituationen."
+title: "Composing in Ambisonics: Space, Movement and Performance"
+description: "Not just 'more space': Ambisonics as a compositional system with perspective, movement, density and translation to different playback situations."
 date: 2026-05-11T00:00:00+02:00
 year: 2026
 month: 2026-05
-tags: ["komposition", "performance", "workflow", "ambisonics", "raum", "live"]
+tags: ["composition", "performance", "workflow", "ambisonics", "space", "live"]
 categories:
   - ICST Ambisonics Workshop
   - Composition
@@ -12,182 +12,182 @@ difficulty: "intermediate"
 kind: "background"
 ---
 
-Am besten bereitest du dich auf Ambisonics wie auf ein eigenes Instrument vor: nicht nur „mehr Raum", sondern ein kompositorisches System mit Perspektive, Bewegung, Dichte und Übersetzung in verschiedene Wiedergabesituationen.
+The best way to prepare for Ambisonics is to treat it like an instrument of its own: not just "more space", but a compositional system with perspective, movement, density and translation to different playback situations.
 
-Das bedeutet: Raum ist kein Effekt, den man am Ende auf eine fertige Komposition legt. Er ist ein Parameter, der von Anfang an mitgedacht werden muss — genauso wie Timbre, Dynamik oder Form. Wer Ambisonics erst im Mix „aufträgt", nutzt das System nur zur Hälfte.
+This means: space is not an effect that you lay over a finished composition at the end. It is a parameter that has to be thought of from the start – just like timbre, dynamics or form. Anyone who only "applies" Ambisonics in the mix uses the system by half.
 
 ---
 
-## 1. Den Raum als Partitur denken
+## 1. Think of space as a score
 
-Bevor du eine einzige Spur aufnimmst oder einen Encoder öffnest, lohnt es sich, die Komposition räumlich zu skizzieren — nicht als technischen Plan, sondern als dramaturgische Idee.
+Before you record a single track or open an encoder, it is worth sketching the composition spatially – not as a technical plan, but as a dramaturgical idea.
 
-Überlege früh:
+Consider early on:
 
-- Welche Klänge sind **Punkte** im Raum?
-- Welche sind **Flächen / Atmosphären**?
-- Welche bewegen sich wirklich?
-- Welche sollen nur „räumlich atmen"?
-- Gibt es ein klares Vorne, Zentrum, Oben, Unten?
-- Ist das Publikum innen im Klang oder schaut es auf eine virtuelle Szene?
+- Which sounds are **points** in space?
+- Which are **surfaces / atmospheres**?
+- Which really move?
+- Which should only "breathe spatially"?
+- Is there a clear front, centre, top, bottom?
+- Is the audience inside the sound, or does it look at a virtual scene?
 
-Die Unterscheidung zwischen Punkt und Fläche ist dabei entscheidend: Ein einzelner hoher Ton, der sich von links nach rechts bewegt, ist ein Punkt — er hat Richtung und Schärfe. Ein tiefer, diffuser Raumklang, der den Hörer umhüllt, ist eine Fläche — er hat Dichte, aber keine klare Quelle. Beide haben ihre kompositorische Funktion, aber sie reagieren sehr unterschiedlich auf Bewegung, Lautstärke und Distanz.
+The distinction between point and surface is decisive: a single high tone moving from left to right is a point – it has direction and sharpness. A deep, diffuse room sound that envelops the listener is a surface – it has density but no clear source. Both have their compositional function, but they react very differently to movement, loudness and distance.
 
-Die Frage nach der Publikumsperspektive ist eine der grundlegendsten in der Raumkomposition überhaupt. Ist das Publikum inmitten des Klangs — umgeben, eingeschlossen, immersiv? Oder blickt es auf eine Szene, in der Klänge wie Figuren auf einer Bühne agieren? Beide Ansätze sind legitim, aber sie verlangen völlig andere kompositorische Entscheidungen, besonders in Bezug auf Distanz und Raumtiefe.
+The question of the audience's perspective is one of the most fundamental in spatial composition. Is the audience in the middle of the sound – surrounded, enclosed, immersed? Or does it look at a scene in which sounds act like figures on a stage? Both approaches are legitimate, but they demand completely different compositional decisions, especially with regard to distance and spatial depth.
 
 > **Note**
-> Was passiert musikalisch, wenn man die Augen schließt? Wenn die räumliche Idee auch dann verständlich bleibt, ist sie meist stark. Das ist ein nützlicher Test, weil er den Raum von der visuellen Erwartung trennt — Ambisonics wirkt nicht durch Sehen, sondern durch Hören.
+> What happens musically when you close your eyes? If the spatial idea remains comprehensible even then, it is usually strong. This is a useful test because it separates space from visual expectation – Ambisonics works not through seeing but through hearing.
 
 ---
 
-## 2. Technisches Setup vorher klären
+## 2. Clarify the technical setup beforehand
 
-Technische Unklarheiten vor einer Performance können alles zunichtemachen — selbst eine sorgfältig vorbereitete Komposition. Ambisonics-Setups variieren stark: zwischen Studios mit Höhenebenen und einfachen Lautsprecherringen, zwischen HOA7 und FOA, zwischen REAPER und Max/MSP. Was zuhause klingt, klingt am Aufführungsort möglicherweise völlig anders, wenn das Decoder-Setup nicht bekannt ist.
+Technical uncertainties before a performance can ruin everything – even a carefully prepared composition. Ambisonics setups vary greatly: between studios with height layers and simple loudspeaker rings, between HOA7 and FOA, between REAPER and Max/MSP. What sounds good at home may sound completely different at the venue if the decoder setup is not known.
 
-Vor einer Performance solltest du wissen:
+Before a performance you should know:
 
-- Welche Ambisonics-Ordnung? 1st, 3rd, 5th order?
-- ACN/SN3D oder anderes Format?
-- Binaural, Lautsprecherarray oder beides?
-- Wie viele Lautsprecher und wo stehen sie?
-- Gibt es Höhenlautsprecher?
-- Welche DAW oder Umgebung: Reaper, Max/MSP, Ableton mit Plugins, SuperCollider?
-- Welche Plugins: IEM, SPARTA, ATK, Blue Ripple, etc.?
-- Wie wird am Ende dekodiert?
+- Which Ambisonics order? 1st, 3rd, 5th order?
+- ACN/SN3D or another format?
+- Binaural, loudspeaker array or both?
+- How many loudspeakers and where do they stand?
+- Are there height loudspeakers?
+- Which DAW or environment: REAPER, Max/MSP, Ableton with plugins, SuperCollider?
+- Which plugins: IEM, SPARTA, ATK, Blue Ripple, etc.?
+- How is it decoded in the end?
 
-Die Ordnungsfrage ist nicht nur technisch, sondern auch ästhetisch relevant: Erstordnungs-Ambisonics (FOA) hat eine weichere, diffusere Räumlichkeit. Höhere Ordnungen (HOA3, HOA7) erlauben schärfere Lokalisation und präzisere Bewegungen — aber nur, wenn das Lautsprechersystem das auch abbilden kann. Ein 8-Kanal-Ring dekodiert HOA7 nicht besser als FOA; der limitierende Faktor ist immer das physische System.
+The question of order is not only technical but also aesthetic: first-order Ambisonics (FOA) has a softer, more diffuse spatiality. Higher orders (HOA3, HOA7) allow sharper localisation and more precise movements – but only if the loudspeaker system can reproduce them. An 8-channel ring does not decode HOA7 better than FOA; the limiting factor is always the physical system.
 
-Wichtig: Immer den kompletten Signalfluss testen — nicht nur den Decoder, nicht nur den Encoder, sondern alles zusammen:
+Important: always test the complete signal flow – not only the decoder, not only the encoder, but everything together:
 
-`Quelle → Encoder → B-format Bus → FX / Rotation → Decoder → Output`
+`Source → encoder → B-format bus → FX / rotation → decoder → output`
 
-Ein häufiges Problem ist, dass Encoder und Decoder unterschiedliche Kanalzahlen oder Normierungen erwarten. Das führt zu lautlosem Output oder falsch lokalisierten Quellen — und ist schwer zu diagnostizieren, wenn man unter Zeitdruck steht.
-
----
-
-## 3. In Szenen statt nur Spuren arbeiten
-
-Das Denken in Spuren — Spur A ist Klang X, Spur B ist Klang Y — ist aus der Stereo-Produktion vertraut, reicht für Ambisonics aber oft nicht aus. Weil Raum dynamisch ist, braucht eine Ambisonics-Komposition eine zeitliche Dramaturgie des Raums selbst: Was passiert räumlich in Minute 1, in Minute 3, am Höhepunkt?
-
-Für Ambisonics hilft es, musikalische Situationen zu planen:
-
-- **Szene 1:** statische Klangarchitektur — der Raum stellt sich vor
-- **Szene 2:** einzelne Bewegungen — erste gerichtete Energie
-- **Szene 3:** Rotation des ganzen Raums — das Klangfeld selbst bewegt sich
-- **Szene 4:** Verdichtung / Nähe — räumliche Dichte steigt, Distanzen schrumpfen
-- **Szene 5:** Auflösung / Entfernung — Quellen wandern nach außen oder oben
-
-Das ist kein verbindliches Schema, sondern ein Beispiel dafür, wie Raumbewegung als Dramaturgie funktioniert. Man kann Szenen auch umkehren, verschachteln oder gleichzeitig spielen. Entscheidend ist, dass Raumveränderungen nicht zufällig entstehen, sondern kompositorisch begründet sind — genauso wie ein Crescendo nicht zufällig beginnt.
-
-Das verhindert das häufigste ästhetische Problem beim ersten Einsatz von Ambisonics: dass man einfach „sounds im Kreis fahren" lässt, weil es technisch möglich ist. Kreisende Bewegungen ohne Funktion werden schnell monoton — der Raum wird zum Trick, nicht zum Argument.
+A common problem is that encoder and decoder expect different channel counts or normalisations. This leads to silent output or wrongly localised sources – and is hard to diagnose under time pressure.
 
 ---
 
-## 4. Bewegungen sparsam komponieren
+## 3. Work in scenes, not just tracks
 
-Bewegung ist das stärkste Ausdrucksmittel in Ambisonics — und deshalb das gefährlichste, wenn man es übereinsetzt. Das Ohr ist auf Bewegung konditioniert, sie zieht Aufmerksamkeit auf sich. Wenn viele Quellen gleichzeitig in Bewegung sind, konkurrieren sie um diese Aufmerksamkeit — und keine gewinnt. Das Ergebnis ist nicht Intensität, sondern Orientierungslosigkeit.
+Thinking in tracks – track A is sound X, track B is sound Y – is familiar from stereo production but often not enough for Ambisonics. Because space is dynamic, an Ambisonics composition needs a temporal dramaturgy of space itself: what happens spatially in minute 1, in minute 3, at the climax?
 
-Besser:
+For Ambisonics it helps to plan musical situations:
 
-- wenige, klare Bewegungen — das Ohr kann ihnen folgen
-- langsame Bewegungen oft wirkungsvoller als schnelle — sie durchqueren den Raum sichtbar
-- Bewegungen rhythmisch oder formal motivieren — Bewegung als strukturelles Ereignis, nicht als Dekoration
-- statische Anker setzen — mindestens eine ruhende Quelle gibt dem Raum Stabilität
-- Höhe nur gezielt einsetzen — vertikale Bewegungen sind ungewohnt und wirken stark, verlieren aber schnell an Wirkung, wenn überstrapaziert
+- **Scene 1:** static sound architecture – the space introduces itself
+- **Scene 2:** individual movements – first directed energy
+- **Scene 3:** rotation of the whole space – the sound field itself moves
+- **Scene 4:** condensation / proximity – spatial density rises, distances shrink
+- **Scene 5:** dissolution / distance – sources move outwards or upwards
 
-Eine langsame, einzelne Quelle, die sich in 30 Sekunden von vorne nach hinten bewegt, kann dramatisch wirken — wenn der Rest des Klangfelds ruhig bleibt. Dieselbe Bewegung geht unter, wenn gleichzeitig fünf andere Quellen ebenfalls bewegt werden.
+This is not a binding scheme but an example of how spatial movement works as dramaturgy. You can also reverse scenes, interleave them or play them simultaneously. What matters is that spatial changes do not happen by chance but are compositionally justified – just as a crescendo does not start by chance.
 
-Raum ist wie Dynamik: Wenn alles ständig maximal räumlich ist, hört man den Unterschied nicht mehr. Die Stärke von Ambisonics liegt im Kontrast — zwischen Bewegung und Ruhe, zwischen Nähe und Ferne, zwischen Punkt und Fläche.
-
----
-
-## 5. Monitoring in mehreren Modi
-
-Eine Ambisonics-Komposition, die nur binauraler über Kopfhörer überprüft wurde, ist nicht fertig. Binaural und Lautsprecher klingen fundamental verschieden — nicht weil eines falsch ist, sondern weil sie physisch andere Dinge tun. Kopfhörer simulieren Lokalisation über HRTF-Filter; Lautsprecher erzeugen ein physisches Schallfeld im Raum. Besonders drei Aspekte weichen regelmäßig voneinander ab:
-
-- **Tiefenstaffelung:** Binaural übertreibt Nähe und Ferne häufig; auf Lautsprechern wirken Distanzen oft flacher.
-- **Höheninformation:** Elevation ist binaural stark HRTF-abhängig und individuell verschieden; auf Lautsprechern mit echter Höhenebene ist sie physisch erfahrbar.
-- **Bewegungspräzision:** Schnelle, präzise Bewegungen klingen binaural schärfer; auf Arrays verlieren sie sich manchmal im Raum.
-
-Teste deine Komposition mindestens in:
-
-- binaural über Kopfhörer — für schnelle Checks, Feinarbeit, Remote-Arbeit
-- Stereo-Downmix — wichtig für Übersetzbarkeit und eventuelle Streaming-Verwendung
-- echtem Lautsprecherdecoder, falls möglich — für das eigentliche räumliche Erlebnis
-- kleiner und großer Lautstärke — Lokalisation und Raumgefühl verändern sich mit dem Pegel
-
-Wer keine Möglichkeit hat, regelmäßig auf einem echten Array zu hören, sollte zumindest den Stereo-Downmix ernst nehmen. Eine Komposition, die im Downmix klanglich zusammenbricht, hat ein strukturelles Problem.
+This prevents the most common aesthetic problem when first using Ambisonics: simply letting "sounds travel in circles" because it is technically possible. Circling movements without a function quickly become monotonous – space becomes a trick, not an argument.
 
 ---
 
-## 6. Eine technische Checkliste für die Probe
+## 4. Compose movements sparingly
 
-Technische Vorbereitung für eine Ambisonics-Performance unterscheidet sich von einer normalen Stereo-Performance vor allem in einem Punkt: Es gibt mehr Stellen, an denen etwas schiefgehen kann, und die Fehler sind schwerer zu diagnostizieren. Ein falsch geroutetes Interface, eine falsche Decoder-Matrix oder eine vergessene Plugin-Version können dazu führen, dass der Raum einfach „flach" klingt — und man findet die Ursache nicht in den zehn Minuten vor dem Konzert.
+Movement is the strongest means of expression in Ambisonics – and therefore the most dangerous when overused. The ear is conditioned to movement; it draws attention. When many sources move at the same time, they compete for this attention – and none wins. The result is not intensity but disorientation.
 
-Mitbringen oder vorbereiten:
+Better:
 
-- Projektdatei mit sauber benannten Spuren
-- Export als B-format, falls nötig
-- Stereo-Backup
-- binauraler Backup-Render
-- Liste der Plugin-Versionen
-- Interface-Routing (dokumentiert, nicht nur im Kopf)
-- Lautsprecher-Mapping (welcher Kanal → welcher Lautsprecher)
-- Testsignal pro Kanal (z.B. kurzes Pink Noise oder Sinuston)
-- kurze Demo-Szene zum Einrichten — ein 30-Sekunden-Ausschnitt, der alle räumlichen Dimensionen zeigt
-- Notfallplan, falls nur Stereo möglich ist
+- few, clear movements – the ear can follow them
+- slow movements are often more effective than fast ones – they visibly cross the space
+- motivate movements rhythmically or formally – movement as a structural event, not as decoration
+- set static anchors – at least one resting source gives the space stability
+- use height only deliberately – vertical movements are unfamiliar and have a strong effect, but quickly lose it when overused
 
-Bei Performances gilt: lieber ein robustes System als ein maximal komplexes, das unter Stress fragil wird. Zwei Stunden Soundcheck mit einem stabilen System bringen mehr als vier Stunden Fehlersuche mit einem optimierten, aber instabilen.
+A slow, single source moving from front to back in 30 seconds can be dramatic – if the rest of the sound field stays calm. The same movement is lost when five other sources are moving at the same time.
+
+Space is like dynamics: if everything is constantly at maximum spatiality, you no longer hear the difference. The strength of Ambisonics lies in contrast – between movement and stillness, between near and far, between point and surface.
 
 ---
 
-## 7. Performance-Strategie
+## 5. Monitoring in several modes
 
-Live-Kontrolle über einen Ambisonics-Raum bedeutet: aus einem potenziell sehr großen Parameterraum genau das auswählen, was musikalisch sinnvoll ist — und alles andere festschreiben oder automatisieren.
+An Ambisonics composition that has only been checked binaurally on headphones is not finished. Binaural and loudspeakers sound fundamentally different – not because one is wrong, but because they physically do different things. Headphones simulate localisation via HRTF filters; loudspeakers create a physical sound field in the room. Three aspects in particular regularly differ:
 
-Entscheide vorher, was live kontrolliert wird:
+- **Depth staging:** binaural often exaggerates near and far; on loudspeakers distances often seem flatter.
+- **Height information:** elevation is strongly HRTF-dependent and individual in binaural; on loudspeakers with a real height layer it can be physically experienced.
+- **Movement precision:** fast, precise movements sound sharper in binaural; on arrays they sometimes get lost in the room.
 
-- Position einzelner Quellen
-- Rotation des gesamten Klangfeldes
-- Distanz / Spread
-- Reverb / Diffusion
-- Decoder-Wechsel
-- Szenenwechsel
-- Dichte / Mutes / Sends
+Test your composition at least in:
 
-Die wichtigste Entscheidung ist, was *nicht* live kontrolliert wird. Zu viele offene Parameter führen zu Unsicherheit — man greift zu viel, korrigiert zu viel, und die Aufführung verliert Klarheit.
+- binaural on headphones – for quick checks, detail work, remote work
+- stereo downmix – important for translatability and possible streaming use
+- a real loudspeaker decoder, if possible – for the actual spatial experience
+- low and high volume – localisation and sense of space change with level
 
-Gute Makro-Controls lösen dieses Problem: ein Regler für „Nähe" steuert gleichzeitig Distanz aller Quellen, Raumanteile und vielleicht Spread. Ein Regler für „Rotation" dreht das gesamte Klangfeld. Das erlaubt expressive Kontrolle mit wenigen Gesten — ähnlich wie ein Dirigent nicht jeden Finger einzeln anweist, sondern mit wenigen Bewegungen viel kommuniziert.
-
-Wenn möglich, sollte die Performance-Steuerung in Proben verankert werden, nicht nur konzeptionell geplant. Räumliche Übergänge, die auf dem Papier sinnvoll wirken, fühlen sich unter Bühnenbedingungen manchmal zu schnell, zu langsam oder zu vage an.
+Anyone who cannot listen regularly on a real array should at least take the stereo downmix seriously. A composition that collapses sonically in the downmix has a structural problem.
 
 ---
 
-## 8. Musikalische Vorbereitung
+## 6. A technical checklist for the rehearsal
 
-Ambisonics als Instrument — das bedeutet auch: üben. Nicht das technische System üben, sondern die musikalischen Entscheidungen, die im Raum getroffen werden.
+Technical preparation for an Ambisonics performance differs from a normal stereo performance above all in one respect: there are more places where something can go wrong, and the errors are harder to diagnose. A wrongly routed interface, a wrong decoder matrix or a forgotten plugin version can make the space simply sound "flat" – and you will not find the cause in the ten minutes before the concert.
 
-Übe gezielt:
+Bring or prepare:
 
-- räumliche Übergänge — wie verändert sich der Raum von Szene zu Szene?
-- Start- und Endzustände jeder Szene — wo beginnt der Raum, wo landet er?
-- kritische Bewegungen — die Momente, die musikalisch viel tragen
-- Momente mit viel Energie — wie verhält sich das System unter Last?
-- stille oder fragile Passagen — oft die schwierigsten, weil jeder Fehler hörbar ist
-- Recovery, falls ein Cue verpasst wird — was ist der schnellste Weg zurück in den Fluss?
+- project file with cleanly named tracks
+- export as B-format, if necessary
+- stereo backup
+- binaural backup render
+- list of plugin versions
+- interface routing (documented, not just in your head)
+- loudspeaker mapping (which channel → which loudspeaker)
+- test signal per channel (e.g. short pink noise or sine tone)
+- short demo scene for setting up – a 30-second excerpt that shows all spatial dimensions
+- emergency plan in case only stereo is possible
 
-Eine einfache Performance-Partitur hilft enorm: nicht die volle Kompositionspartitur, sondern eine Aktionsliste — Zeit, Szene, Aktion, Risiko, Backup. Sie muss während der Aufführung auf einen Blick lesbar sein.
-
-Das klingt nach Überplanung, ist aber das Gegenteil: Wer die kritischen Momente kennt und vorbereitet hat, kann im Konzert freier agieren — weil er weiß, wo die Sicherheitsnetz sind.
+For performances: better a robust system than a maximally complex one that becomes fragile under stress. Two hours of soundcheck with a stable system achieve more than four hours of troubleshooting with an optimised but unstable one.
 
 ---
 
-## Kurz gesagt
+## 7. Performance strategy
 
-Bereite dich in drei Ebenen vor:
+Live control over an Ambisonics space means: choosing from a potentially very large parameter space exactly what makes musical sense – and fixing or automating everything else.
 
-1. **Kompositorisch:** Was bedeutet Raum musikalisch in diesem Stück — als Struktur, als Dramatik, als Perspektive?
-2. **Technisch:** Ist der Ambisonics-Signalfluss stabil, dokumentiert und mehrfach getestet?
-3. **Performativ:** Welche räumlichen Entscheidungen steuerst du live, und mit welchen Gesten?
+Decide beforehand what is controlled live:
 
-Der stärkste Ansatz ist meistens: wenige klare räumliche Ideen, technisch sauber umgesetzt, dramaturgisch bewusst eingesetzt. Nicht der Raum selbst ist das Ziel — sondern was er musikalisch ermöglicht.
+- position of individual sources
+- rotation of the entire sound field
+- distance / spread
+- reverb / diffusion
+- decoder switching
+- scene changes
+- density / mutes / sends
+
+The most important decision is what is *not* controlled live. Too many open parameters lead to uncertainty – you reach too much, correct too much, and the performance loses clarity.
+
+Good macro controls solve this problem: one fader for "proximity" simultaneously controls the distance of all sources, room portions and perhaps spread. One fader for "rotation" turns the entire sound field. This allows expressive control with few gestures – much as a conductor does not instruct every finger individually but communicates a lot with a few movements.
+
+If possible, performance control should be anchored in rehearsals, not just planned conceptually. Spatial transitions that seem sensible on paper sometimes feel too fast, too slow or too vague under stage conditions.
+
+---
+
+## 8. Musical preparation
+
+Ambisonics as an instrument – that also means: practising. Not practising the technical system, but the musical decisions that are made in space.
+
+Practise specifically:
+
+- spatial transitions – how does the space change from scene to scene?
+- start and end states of each scene – where does the space begin, where does it land?
+- critical movements – the moments that carry a lot musically
+- moments with a lot of energy – how does the system behave under load?
+- quiet or fragile passages – often the most difficult, because every error is audible
+- recovery if a cue is missed – what is the fastest way back into the flow?
+
+A simple performance score helps enormously: not the full composition score but an action list – time, scene, action, risk, backup. It must be readable at a glance during the performance.
+
+This sounds like over-planning but is the opposite: whoever knows and has prepared the critical moments can act more freely in the concert – because they know where the safety nets are.
+
+---
+
+## In short
+
+Prepare on three levels:
+
+1. **Compositional:** what does space mean musically in this piece – as structure, as drama, as perspective?
+2. **Technical:** is the Ambisonics signal flow stable, documented and tested several times?
+3. **Performative:** which spatial decisions do you control live, and with which gestures?
+
+The strongest approach is usually: few clear spatial ideas, technically cleanly implemented, deployed with dramaturgical awareness. Space itself is not the goal – what it makes possible musically is.

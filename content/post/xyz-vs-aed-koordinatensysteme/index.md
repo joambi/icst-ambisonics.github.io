@@ -1,99 +1,99 @@
 ---
-title: XYZ und AED – Zwei Koordinatensysteme, ein Lautsprecher
-description: "Der ICST AmbiDecoder erlaubt die Eingabe von Lautsprecherpositionen sowohl in kartesischen (XYZ) als auch in Polarkoordinaten (AED). Dieser Artikel erklärt den Unterschied und wann welches System sinnvoll ist."
+title: XYZ and AED – Two Coordinate Systems, One Loudspeaker
+description: "The ICST AmbiDecoder accepts loudspeaker positions in Cartesian (XYZ) as well as polar (AED) coordinates. This article explains the difference and when to use which system."
 date: 2026-03-21T10:30:00+01:00
 year: 2026
 month: 2026-03
 weight: 31
-tags: ["decoder", "koordinaten", "xyz", "aed", "lautsprecher", "setup", "konfiguration"]
+tags: ["decoder", "coordinates", "xyz", "aed", "loudspeaker", "setup", "configuration"]
 key_points:
-  - "XYZ beschreibt Positionen im euklidischen Raum – ideal für eingemessene Installationen"
-  - "AED (Azimut, Elevation, Distanz) orientiert sich an Hörwahrnehmung und Kompassrichtungen"
-  - "Beide Systeme sind jederzeit parallel im Decoder sichtbar und editierbar"
+  - "XYZ describes positions in Euclidean space – ideal for surveyed installations"
+  - "AED (azimuth, elevation, distance) follows how we hear and the points of the compass"
+  - "Both systems are always visible and editable side by side in the decoder"
 difficulty: "beginner"
 kind: "reference"
 tool: ["AmbiDecoder"]
 ---
 
-Level: Beginner | **Audience:** Techniker:in, Komponist:in, Studierende.
+Level: Beginner | **Audience:** Technicians, composers, students.
 
-Diese Seite erklärt, warum der ICST AmbiDecoder zwei Koordinatensysteme anbietet und wie du entscheidest, welches du verwenden solltest.
+This page explains why the ICST AmbiDecoder offers two coordinate systems and how to decide which one to use.
 
-> **Gemeinsamer Kernsatz dieser Decoder-Serie:** Der Decoder erzeugt den Raum nicht neu, sondern projiziert ein B-Format-Feld auf ein reales System.
+> **Core sentence of this decoder series:** The decoder does not create the space anew; it projects a B-format field onto a real system.
 >
-> In diesem Artikel geht es um den ersten Schritt dieser Projektion: **Geometrie**. Koordinaten bestimmen, **wo** der Decoder Lautsprecher im Raum verortet.
+> This article covers the first step of that projection: **geometry**. Coordinates determine **where** the decoder places the loudspeakers in space.
 
 ---
 
-## Das Problem: Wie beschreibt man, wo ein Lautsprecher steht?
+## The problem: how do you describe where a loudspeaker stands?
 
-Ein Lautsprecher im Raum hat eine Position – aber diese Position lässt sich auf verschiedene Arten beschreiben. Der ICST AmbiDecoder bietet zwei Systeme gleichzeitig an:
+A loudspeaker in a room has a position, but that position can be described in different ways. The ICST AmbiDecoder offers two systems at the same time:
 
-- **XYZ** – Kartesische Koordinaten (euklidischer Raum)
-- **AED** – Polarkoordinaten: Azimut, Elevation, Distanz
+- **XYZ** – Cartesian coordinates (Euclidean space)
+- **AED** – polar coordinates: azimuth, elevation, distance
 
-Beide Systeme beschreiben denselben Punkt im Raum. Der Decoder rechnet intern mit XYZ, zeigt aber immer beide Werte an. Du kannst jederzeit in beiden Systemen editieren – Doppelklick auf ein Parameterfeld genügt.
-
----
-
-## XYZ – Kartesische Koordinaten
-
-XYZ beschreibt die Position eines Lautsprechers als Punkt im dreidimensionalen euklidischen Raum:
-
-- **X** – Richtung links/rechts (negativ = links, positiv = rechts)
-- **Y** – Richtung vorne/hinten (positiv = vorne, negativ = hinten)
-- **Z** – Richtung oben/unten (positiv = oben, negativ = unten)
-
-**Wann XYZ verwenden?** Immer dann, wenn du Messdaten aus einem Laservermessungsgerät, einer CAD-Zeichnung oder einer Architekturdokumentation hast. Solche Daten liegen fast immer in kartesischen Koordinaten vor. Du kannst sie direkt in den Decoder übertragen, ohne umzurechnen.
-
-XYZ-Eingabe ist präzise und reproduzierbar. Sie eignet sich besonders für:
-
-- Konzertinstallationen mit eingemessenen Lautsprechern
-- wissenschaftliche Forschungsumgebungen
-- Setups, die zwischen Aufführungsorten übertragen werden sollen
+Both systems describe the same point in space. The decoder calculates internally with XYZ but always shows both values. You can edit in either system at any time – a double-click on a parameter field is enough.
 
 ---
 
-## AED – Azimut, Elevation, Distanz
+## XYZ – Cartesian coordinates
 
-AED beschreibt dieselbe Position wahrnehmungsorientiert, ausgehend vom Zentrum des Hörraums:
+XYZ describes the position of a loudspeaker as a point in three-dimensional Euclidean space:
 
-- **A (Azimut)** – horizontaler Winkel in Grad (0° = vorne, 90° = links, 180° / -180° = hinten, 270° / -90° = rechts)
-- **E (Elevation)** – vertikaler Winkel in Grad (0° = Horizontalebene, +90° = direkt oben, -90° = direkt unten)
-- **D (Distanz)** – Abstand des Lautsprechers vom Zentrum in Metern
+- **X** – left/right (negative = left, positive = right)
+- **Y** – front/back (positive = front, negative = back)
+- **Z** – up/down (positive = up, negative = down)
 
-**Wann AED verwenden?** Wenn du intuitiv nach Richtung und Höhe denkst, nicht nach Koordinaten. AED entspricht der Art, wie Menschen Richtung beschreiben: „Der Lautsprecher hängt links oben, 45° seitlich und 30° erhöht."
+**When to use XYZ?** Whenever you have measurement data from a laser rangefinder, a CAD drawing or architectural documentation. Such data almost always comes as Cartesian coordinates. You can transfer it straight into the decoder without converting.
 
-AED ist besonders nützlich für:
+XYZ input is precise and reproducible. It is particularly suited to:
 
-- schnelle manuelle Konfiguration symmetrischer Arrays
-- konzeptuelle Planung von Lautsprecheranordnungen
-- Anpassungen im Betrieb, wenn die Geometrie im Kopf schon klar ist
+- concert installations with surveyed loudspeakers
+- scientific research environments
+- setups that need to be transferred between venues
 
 ---
 
-## Beide Systeme gleichzeitig
+## AED – azimuth, elevation, distance
 
-Im Speaker-Parameter-Editor des ICST AmbiDecoders siehst du für jeden Lautsprecher immer beide Darstellungen:
+AED describes the same position in a perception-oriented way, starting from the centre of the listening area:
+
+- **A (azimuth)** – horizontal angle in degrees (0° = front, 90° = left, 180° / -180° = back, 270° / -90° = right)
+- **E (elevation)** – vertical angle in degrees (0° = horizontal plane, +90° = directly above, -90° = directly below)
+- **D (distance)** – distance of the loudspeaker from the centre in metres
+
+**When to use AED?** When you think in direction and height rather than in coordinates. AED matches the way people describe direction: "The loudspeaker hangs to the left and up, 45° to the side and 30° raised."
+
+AED is particularly useful for:
+
+- quick manual configuration of symmetrical arrays
+- conceptual planning of loudspeaker layouts
+- adjustments during operation, when the geometry is already clear in your head
+
+---
+
+## Both systems at the same time
+
+In the speaker parameter editor of the ICST AmbiDecoder you always see both representations for every loudspeaker:
 
 ```
 Cartesian XYZ:   -1.186    3.110    0.000
 Polar AED:        339.12   0.00     3.328
 ```
 
-Änderst du einen Wert in XYZ, aktualisiert sich AED automatisch – und umgekehrt. Du verlierst keine Präzision, egal welches System du verwendest.
+If you change a value in XYZ, AED updates automatically – and vice versa. You lose no precision, whichever system you use.
 
-> **Tipp:** Doppelklick auf ein Parameterfeld öffnet die direkte numerische Eingabe. So kannst du Messwerte ohne Umrechnungsfehler übertragen.
+> **Tip:** A double-click on a parameter field opens direct numeric input. This lets you transfer measured values without conversion errors.
 
 ---
 
-## Typisches Praxisszenario
+## A typical practical scenario
 
-**Szenario:** Du baust ein Oktagon-Array auf (8 Lautsprecher gleichmäßig im Kreis, alle auf Ohrhöhe, alle 3 Meter vom Zentrum entfernt).
+**Scenario:** You set up an octagon array (8 loudspeakers evenly spaced on a circle, all at ear height, all 3 metres from the centre).
 
-Mit **AED** geht das schnell:
+With **AED** this is quick:
 
-| Lautsprecher | Azimut (A) | Elevation (E) | Distanz (D) |
+| Loudspeaker | Azimuth (A) | Elevation (E) | Distance (D) |
 |---|---|---|---|
 | LS 1 | 0° | 0° | 3.0 m |
 | LS 2 | 45° | 0° | 3.0 m |
@@ -102,50 +102,50 @@ Mit **AED** geht das schnell:
 | LS 5 | 180° | 0° | 3.0 m |
 | ... | ... | ... | ... |
 
-Mit **XYZ** wäre dafür Trigonometrie nötig. AED ist hier eindeutig schneller.
+With **XYZ** you would need trigonometry. Here AED is clearly faster.
 
-**Gegenbeispiel:** Du hast ein Konzertsaal-Setup eingemessen und erhältst die Positionen als CAD-Export. Die Koordinaten liegen als `X=2.45, Y=-3.11, Z=1.20` vor. Hier nimmst du die XYZ-Werte direkt – keine Umrechnung, kein Fehler.
-
----
-
-## Häufige Fehlerquelle: Azimut-Konvention
-
-Nicht alle Systeme verwenden dieselbe Azimut-Richtung. Im ICST AmbiDecoder gilt:
-
-- **0°** = Front (Richtung Y+)
-- **90°** = Links (Richtung X-)
-- **180° / -180°** = Back
-
-Das ist die mathematische Konvention, nicht die Navigation (wo 90° oft Ost = rechts bedeutet). Wenn du Koordinaten aus anderen Quellen importierst, prüfe die Konvention.
+**Counter-example:** You have surveyed a concert hall setup and received the positions as a CAD export. The coordinates come as `X=2.45, Y=-3.11, Z=1.20`. Here you take the XYZ values directly – no conversion, no error.
 
 ---
 
-## Zusammenfassung
+## A common source of error: the azimuth convention
 
-### Decoder-Serie: Geometrie
+Not all systems use the same azimuth direction. In the ICST AmbiDecoder:
 
-Wenn du den Decoder als Dreischritt denkst, ist diese Seite der Teil **Geometrie**:
+- **0°** = front (direction Y+)
+- **90°** = left (direction X-)
+- **180° / -180°** = back
 
-- **Geometrie** bestimmt, **wo** Lautsprecher im Raum stehen
-- **Laufzeit** bestimmt, **wann** Signale dort ankommen
-- **Abstimmung** bestimmt, **wie deutlich** oder **wie gefärbt** das Ergebnis wahrgenommen wird
+This is the mathematical convention, not the navigation convention (where 90° often means east = right). If you import coordinates from other sources, check the convention.
 
-Falsche Koordinaten sind deshalb kein klanglicher Charakterzug, sondern ein Setup-Fehler. Erst wenn die Geometrie stimmt, sind spätere Entscheidungen über Delay, Gewichtung oder Filterung sinnvoll beurteilbar.
+---
+
+## Summary
+
+### Decoder series: geometry
+
+If you think of the decoder as a three-step process, this page covers **geometry**:
+
+- **Geometry** determines **where** the loudspeakers stand in space
+- **Delay** determines **when** the signals arrive there
+- **Tuning** determines **how clearly** or **how coloured** the result is perceived
+
+Wrong coordinates are therefore not a sonic character trait but a setup error. Only once the geometry is right can later decisions about delay, weighting or filtering be judged sensibly.
 
 | | XYZ | AED |
 |---|---|---|
-| **Sinnvoll wenn…** | Messdaten vorhanden | Intuitive Winkelplanung |
-| **Stärke** | präzise, direkt aus CAD/Laser | wahrnehmungsorientiert, schnell |
-| **Typischer Kontext** | Konzertinstallation, Forschung | Studio, Probe, Schnelleinstieg |
-| **Editierbar im Decoder** | ja | ja |
+| **Makes sense when…** | measurement data is available | planning angles intuitively |
+| **Strength** | precise, straight from CAD/laser | perception-oriented, fast |
+| **Typical context** | concert installation, research | studio, rehearsal, quick start |
+| **Editable in the decoder** | yes | yes |
 
-Du musst dich nicht entscheiden. Der Decoder zeigt immer beide – nutze das, was die Situation gerade erfordert.
+You do not have to choose. The decoder always shows both – use whichever the situation calls for.
 
 ---
 
-## Weiterführende Seiten
+## Further reading
 
-- [ICST Decoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
-- [Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
-- [Der Filter-Tab – Praxisbeispiele und Anwendungsfälle](/post/decoder-filter-praxisbeispiele/)
-- [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)
+- [ICST Decoder – Setup and operation](/icst-ambisonics-plugins/08_icst_decoder/)
+- [Scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)
+- [The Filter tab – practical examples and use cases](/post/decoder-filter-praxisbeispiele/)
+- [Why the decoder sounds the way it does – methodological context](/post/decoder-methodological-context/)

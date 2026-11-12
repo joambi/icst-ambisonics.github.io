@@ -105,7 +105,7 @@ In der Praxis heißt das: den **B-Format Master** stabil halten, Decoder-Einstel
 
 ## Weiterführende Seiten
 
-- [ICST Decoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
-- [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
-- [Koordinatensysteme: XYZ und AED im Vergleich](/post/xyz-vs-aed-koordinatensysteme/)
-- [Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
+- [ICST Decoder – Einrichtung und Bedienung](/de/icst-ambisonics-plugins/08_icst_decoder/)
+- [ICST MultiDecoder](/de/icst-ambisonics-plugins/09_icst_multidecoder/)
+- [Koordinatensysteme: XYZ und AED im Vergleich](/de/post/xyz-vs-aed-koordinatensysteme/)
+- [Skalierung und Laufzeitkompensation](/de/post/decoder-skalierung-laufzeitkompensation/)

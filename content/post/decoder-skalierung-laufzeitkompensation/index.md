@@ -1,50 +1,50 @@
 ---
-title: Skalierung und Laufzeitkompensation im ICST AmbiDecoder
-description: "Wie die Scaling-Funktion des ICST AmbiDecoders Raumgröße und Lautsprecherabstände berücksichtigt und warum Laufzeitkompensation für geometrisch kohärente Wiedergabe entscheidend ist."
+title: Scaling and Delay Compensation in the ICST AmbiDecoder
+description: "How the scaling function of the ICST AmbiDecoder takes room size and loudspeaker distances into account, and why delay compensation is essential for geometrically coherent playback."
 date: 2026-03-21T11:00:00+01:00
 year: 2026
 month: 2026-03
 weight: 32
-tags: ["decoder", "skalierung", "delay", "laufzeitkompensation", "setup", "installation", "konfiguration"]
+tags: ["decoder", "scaling", "delay", "delay-compensation", "setup", "installation", "configuration"]
 key_points:
-  - "Die Scaling-Funktion skaliert alle Lautsprecherkoordinaten auf eine reale Raumgröße"
-  - "Laufzeit-Delays werden automatisch aus den Distanzangaben berechnet"
-  - "Ohne Laufzeitkompensation bei ungleichen Abständen entsteht ein inkohärentes Klangbild"
+  - "The scaling function scales all loudspeaker coordinates to a real room size"
+  - "Delay times are calculated automatically from the distance values"
+  - "Without delay compensation at unequal distances the sound image becomes incoherent"
 difficulty: "intermediate"
 kind: "reference"
 tool: ["AmbiDecoder"]
 ---
 
-Level: Intermediate | **Audience:** Techniker:in, Installationskünstler:in, Studiobetreiber:in.
+Level: Intermediate | **Audience:** Technicians, installation artists, studio operators.
 
-Diese Seite erklärt, wie die Scaling- und Delay-Kompensationsfunktion des ICST AmbiDecoders funktioniert und wann du sie brauchst.
+This page explains how the scaling and delay compensation function of the ICST AmbiDecoder works and when you need it.
 
-> **Gemeinsamer Kernsatz dieser Decoder-Serie:** Der Decoder erzeugt den Raum nicht neu, sondern projiziert ein B-Format-Feld auf ein reales System.
+> **Core sentence of this decoder series:** The decoder does not create the space anew; it projects a B-format field onto a real system.
 >
-> In diesem Artikel geht es um den zweiten Schritt dieser Projektion: **Laufzeit**. Delay-Kompensation bestimmt, **wann** Signale am Hörzentrum ankommen, nachdem die Geometrie bereits festgelegt wurde.
+> This article covers the second step of that projection: **delay**. Delay compensation determines **when** signals arrive at the listening centre once the geometry has been fixed.
 
 ---
 
-## Das Problem: Lautsprecher stehen nicht alle gleich weit weg
+## The problem: loudspeakers are not all equally far away
 
-In idealen Setups – z.B. einem gleichmäßigen Oktagon oder einer Kugelform – haben alle Lautsprecher denselben Abstand vom Hörzentrum. Die Signale kommen also gleichzeitig an.
+In ideal setups – for example an even octagon or a spherical layout – all loudspeakers have the same distance from the listening centre. The signals therefore arrive at the same time.
 
-In realen Räumen ist das fast nie der Fall:
+In real rooms this is almost never the case:
 
-- Konzerthäuser haben asymmetrische Wände
-- Lautsprecher hängen auf verschiedenen Ebenen
-- Subwoofer stehen oft anders platziert als Breitbänder
-- Installationen passen sich vorhandenen Strukturen an
+- concert halls have asymmetric walls
+- loudspeakers hang at different levels
+- subwoofers are often placed differently from full-range speakers
+- installations adapt to existing structures
 
-Wenn Lautsprecher unterschiedlich weit entfernt sind, erreichen die Signale das Hörzentrum zu unterschiedlichen Zeiten. Das verschlechtert Phantomschallquellenbildung, Lokalisationsschärfe und das Kohärenzgefühl des Klangfeldes deutlich.
+If loudspeakers are at different distances, the signals reach the listening centre at different times. This clearly degrades the formation of phantom sources, the sharpness of localisation and the sense of coherence of the sound field.
 
 ---
 
-## Die Lösung: Delay-Kompensation
+## The solution: delay compensation
 
-Der ICST AmbiDecoder berechnet aus den Distanzangaben jedes Lautsprechers automatisch einen individuellen Delay-Wert. Weiter entfernte Lautsprecher erhalten ein größeres vorangestelltes Delay – so dass alle Signale (akustisch gesehen) gleichzeitig am Hörzentrum ankommen.
+From the distance values of each loudspeaker, the ICST AmbiDecoder automatically calculates an individual delay value. Loudspeakers further away receive a larger leading delay – so that all signals arrive at the listening centre (acoustically speaking) at the same time.
 
-Die Delay-Werte sind in der Speaker-Tabelle sichtbar:
+The delay values are visible in the speaker table:
 
 | CH | Name | D [m] | Delay [ms] | Delay comp. [ms] |
 |----|------|--------|------------|------------------|
@@ -52,97 +52,97 @@ Die Delay-Werte sind in der Speaker-Tabelle sichtbar:
 | 2  | R    | 3.347  | 9.76       | 3.65             |
 | 5  | SUB  | 2.709  | 7.88       | 5.45             |
 
-- **D [m]** – gemessene Distanz des Lautsprechers vom Zentrum
-- **Delay [ms]** – berechnete Laufzeit des Schalls (Distanz / Schallgeschwindigkeit)
-- **Delay comp. [ms]** – tatsächlich angewendete Verzögerung zur Kompensation
+- **D [m]** – measured distance of the loudspeaker from the centre
+- **Delay [ms]** – calculated travel time of the sound (distance / speed of sound)
+- **Delay comp. [ms]** – delay actually applied for compensation
 
-> **Merksatz:** Der Lautsprecher, der am weitesten entfernt ist, braucht keine Verzögerung – er ist ohnehin am langsamsten. Alle anderen werden so verzögert, dass sie auf ihn warten.
-
----
-
-## Die Scaling-Funktion
-
-Wenn du ein Lautsprecher-Preset für einen Raum konfigurierst, sind die Koordinaten manchmal in normierten Einheiten angegeben (z.B. als Vektoren der Länge 1, also alle Lautsprecher auf einer Einheitskugel). Das ist praktisch für Presets, die in verschiedenen Räumen funktionieren sollen – aber es bildet die reale Geometrie nicht ab.
-
-Die **Scaling-Funktion** erlaubt dir, alle Lautsprecherkoordinaten auf eine tatsächliche Raumgröße zu skalieren:
-
-1. Klicke auf **Scaling** im Speaker-Settings-Fenster.
-2. Gib die Raummaße ein: **X** (Breite), **Y** (Tiefe), **Z** (Höhe) in Metern.
-3. Der Decoder skaliert alle Koordinaten proportional – und berechnet danach die Laufzeit-Delays neu.
-
-Dabei werden automatisch aktualisiert:
-
-- alle kartesischen Lautsprecherkoordinaten (XYZ)
-- alle polaren Distanzwerte (D in AED)
-- alle daraus resultierenden Delay-Werte
+> **Rule of thumb:** The loudspeaker that is furthest away needs no delay – it is the slowest anyway. All the others are delayed so that they wait for it.
 
 ---
 
-## Wann brauchst du Scaling?
+## The scaling function
 
-**Szenario 1: Preset aus einer anderen Raumgröße**
-Du verwendest ein vorhandenes Oktagon-Preset, das für einen 6×6 m Raum konfiguriert wurde. Dein Raum ist aber 8×9 m. Mit Scaling passt du das Preset in wenigen Sekunden an, ohne jeden Lautsprecher manuell editieren zu müssen.
+When you configure a loudspeaker preset for a room, the coordinates are sometimes given in normalised units (for example as vectors of length 1, i.e. all loudspeakers on a unit sphere). This is practical for presets that should work in different rooms – but it does not reflect the real geometry.
 
-**Szenario 2: Normiertes Preset, realer Raum**
-Viele Standard-Presets verwenden Einheitsvektoren (Distanz = 1.0 m). Du gibst deine echten Raumdimensionen ein – und alle Lautsprecherkoordinaten werden korrekt skaliert.
+The **scaling function** lets you scale all loudspeaker coordinates to an actual room size:
 
-**Szenario 3: Tournee oder Gastspiel**
-Du spielst dasselbe Stück in drei verschiedenen Räumen. Statt drei separate Presets zu pflegen, hast du ein normiertes Basis-Preset und skalierst es für jeden Raum individuell – mit automatischer Delay-Neuberechnung.
+1. Click **Scaling** in the speaker settings window.
+2. Enter the room dimensions: **X** (width), **Y** (depth), **Z** (height) in metres.
+3. The decoder scales all coordinates proportionally – and then recalculates the delay times.
 
----
+The following are updated automatically:
 
-## Manueller Delay-Override
-
-Neben der automatischen Berechnung kannst du Delay-Werte für einzelne Lautsprecher auch manuell überschreiben. Das ist sinnvoll, wenn:
-
-- ein Lautsprecher baubedingt eine andere akustische Charakteristik hat (z.B. eingebaut hinter einer Membran)
-- du raumakustische Korrekturen machst, die über reine Laufzeit hinausgehen
-- du im Betrieb kleine Feinkorrekturen vornehmen willst
-
-> **Vorsicht:** Manuelle Delay-Eingriffe werden beim nächsten Scaling-Vorgang überschrieben. Speichere dein Preset vorher.
+- all Cartesian loudspeaker coordinates (XYZ)
+- all polar distance values (D in AED)
+- all delay values that result from them
 
 ---
 
-## Quick-Check vor der Aufführung
+## When do you need scaling?
 
-Bevor du einen Raum abspielst, prüfe folgende Punkte:
+**Scenario 1: preset from a different room size**
+You use an existing octagon preset that was configured for a 6×6 m room. Your room is 8×9 m. With scaling you adapt the preset in a few seconds, without having to edit each loudspeaker by hand.
 
-1. Sind die **Distanzwerte (D)** für alle Lautsprecher eingetragen und plausibel?
-2. Stimmen die **Delay comp.**-Werte ungefähr mit den erwarteten Laufzeitunterschieden überein?
-3. Hast du nach einer Skalierung das Preset **neu gespeichert**?
-4. Ist die **Ambisonics Order** im Decoder auf das Quellmaterial abgestimmt?
+**Scenario 2: normalised preset, real room**
+Many standard presets use unit vectors (distance = 1.0 m). You enter your real room dimensions – and all loudspeaker coordinates are scaled correctly.
 
-Ein kurzer Pink-Noise-Test mit Mute/Solo-Überprüfung zeigt sofort, ob die zeitliche Kohärenz stimmt.
-
----
-
-## Decoder-Serie: Laufzeit
-
-Wenn du den Decoder als Dreischritt denkst, ist diese Seite der Teil **Laufzeit**:
-
-- **Geometrie** bestimmt, **wo** Lautsprecher stehen
-- **Laufzeit** bestimmt, **wann** ihre Signale ankommen
-- **Abstimmung** bestimmt, **wie deutlich** oder **wie gefärbt** das Ergebnis erscheint
-
-Scaling und Delay-Kompensation sind deshalb keine kreative Klangformung, sondern ein Übersetzungsschritt zwischen normiertem Preset und realem Raum. Erst wenn die Zeitverhältnisse stimmen, lassen sich Gewichtung, Filter oder MultiDecoder-Layer sinnvoll beurteilen.
+**Scenario 3: touring or guest performances**
+You perform the same piece in three different rooms. Instead of maintaining three separate presets, you have one normalised base preset and scale it for each room individually – with automatic delay recalculation.
 
 ---
 
-## Preset speichern und exportieren
+## Manual delay override
 
-Nach jeder Skalierung solltest du das Setup als Preset speichern:
+In addition to the automatic calculation, you can also override the delay values for individual loudspeakers by hand. This makes sense when:
 
-- **Speichern:** Speaker → Save preset → Namen vergeben (z.B. `ICST-Studio_HOA7_2026-03`)
-- **Exportieren:** Die Konfiguration kann als **TXT-Datei** exportiert werden (Speaker → Export)
+- a loudspeaker has a different acoustic characteristic because of its construction (e.g. mounted behind a membrane)
+- you make room-acoustic corrections that go beyond pure travel time
+- you want to make small fine corrections during operation
 
-Die exportierte TXT-Datei enthält alle Lautsprecherpositionen im AED-Format und kann in externe Systeme (z.B. Max/MSP via `coll`-Objekt oder `ambidecode~`) geladen werden. Das ermöglicht eine plattformübergreifende Integration der Lautsprechergeometrie in hybride Systeme.
+> **Caution:** Manual delay changes are overwritten by the next scaling operation. Save your preset beforehand.
 
 ---
 
-## Weiterführende Seiten
+## Quick check before the performance
 
-- [ICST Decoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
-- [XYZ und AED – Koordinatensysteme im Vergleich](/post/xyz-vs-aed-koordinatensysteme/)
+Before you play a room, check the following points:
+
+1. Are the **distance values (D)** entered for all loudspeakers and plausible?
+2. Do the **delay comp.** values roughly match the expected travel-time differences?
+3. Did you **save the preset again** after scaling?
+4. Is the **Ambisonics order** in the decoder matched to the source material?
+
+A short pink-noise test with a mute/solo check shows immediately whether the timing coherence is right.
+
+---
+
+## Decoder series: delay
+
+If you think of the decoder as a three-step process, this page covers **delay**:
+
+- **Geometry** determines **where** loudspeakers stand
+- **Delay** determines **when** their signals arrive
+- **Tuning** determines **how clearly** or **how coloured** the result appears
+
+Scaling and delay compensation are therefore not creative sound shaping but a translation step between normalised preset and real room. Only once the timing relationships are right can weighting, filters or MultiDecoder layers be judged sensibly.
+
+---
+
+## Saving and exporting presets
+
+After every scaling you should save the setup as a preset:
+
+- **Save:** Speaker → Save preset → give it a name (e.g. `ICST-Studio_HOA7_2026-03`)
+- **Export:** the configuration can be exported as a **TXT file** (Speaker → Export)
+
+The exported TXT file contains all loudspeaker positions in AED format and can be loaded into external systems (e.g. Max/MSP via the `coll` object or `ambidecode~`). This enables cross-platform integration of the loudspeaker geometry into hybrid systems.
+
+---
+
+## Further reading
+
+- [ICST Decoder – setup and operation](/icst-ambisonics-plugins/08_icst_decoder/)
+- [XYZ and AED – coordinate systems compared](/post/xyz-vs-aed-koordinatensysteme/)
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
-- [Der Filter-Tab – Praxisbeispiele und Anwendungsfälle](/post/decoder-filter-praxisbeispiele/)
-- [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
+- [The Filter tab – practical examples and use cases](/post/decoder-filter-praxisbeispiele/)
+- [Best practices](/icst-ambisonics-plugins/17_best_practices/)

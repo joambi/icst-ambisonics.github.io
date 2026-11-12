@@ -1,148 +1,148 @@
 ---
-title: Den B-Format-Master exportieren – AmbiX, Kanalreihenfolge und Normalisierung
-description: "Wie du in REAPER einen korrekten Ambisonics-Master exportierst: AmbiX-Format, ACN-Kanalreihenfolge, SN3D-Normalisierung, Render-Dialog-Einstellungen und die häufigsten Fehler beim Multichannel-Export."
+title: Exporting the B-Format Master – AmbiX, Channel Order and Normalisation
+description: "How to export a correct Ambisonics master in REAPER: AmbiX format, ACN channel order, SN3D normalisation, render dialog settings and the most common mistakes in multichannel export."
 date: 2026-03-21T16:30:00+01:00
 year: 2026
 month: 2026-03
 weight: 36
 tags: ["export", "render", "ambix", "acn", "sn3d", "reaper", "b-format", "workflow", "delivery"]
 key_points:
-  - "AmbiX = ACN-Kanalreihenfolge + SN3D-Normalisierung – das ist der heutige Standard"
-  - "REAPER: 'Multichannel tracks to multichannel files' muss im Render-Dialog aktiv sein"
-  - "Kanalzahl am B-Format-Bus und Ordnungszahl im Decoder müssen identisch sein"
+  - "AmbiX = ACN channel order + SN3D normalisation – today's standard"
+  - "REAPER: 'Multichannel tracks to multichannel files' must be active in the render dialog"
+  - "The channel count of the B-format bus and the order in the decoder must be identical"
 difficulty: "intermediate"
 kind: "tutorial"
 tool: ["REAPER"]
 ---
 
-Level: Intermediate | **Audience:** Komponist:in, Techniker:in, Toningenieur:in.
+Level: Intermediate | **Audience:** Composers, technicians, sound engineers.
 
 ---
 
-Eine fertige Ambisonics-Produktion zu exportieren klingt trivial – ist es aber nicht. Ein falsch konfigurierter Render erzeugt stille Kanäle, vertauschte Kanalreihenfolge oder falsch normalisierte Signale, die in der nächsten Produktionsstufe falsch klingen, ohne dass ein offensichtlicher Fehler sichtbar ist. Dieser Artikel zeigt, wie du einen korrekten AmbiX-Master aus REAPER heraus erzeugst.
+Exporting a finished Ambisonics production sounds trivial – but it is not. A wrongly configured render produces silent channels, swapped channel order or incorrectly normalised signals that sound wrong at the next production stage without any obvious error being visible. This article shows how to produce a correct AmbiX master from REAPER.
 
 ---
 
-## Das Format: AmbiX
+## The format: AmbiX
 
-Der heutige Industriestandard für Ambisonics-Austausch ist **AmbiX**. AmbiX definiert zwei Dinge:
+Today's industry standard for exchanging Ambisonics is **AmbiX**. AmbiX defines two things:
 
-**ACN – Ambisonic Channel Number**: Die Reihenfolge, in der die sphärischen Harmonischen in der Datei abgelegt werden. ACN nummeriert die Kanäle nach der Formel `n(n+1) + m`, wobei `n` die Ordnung und `m` den Grad bezeichnet.
+**ACN – Ambisonic Channel Number**: the order in which the spherical harmonics are stored in the file. ACN numbers the channels with the formula `n(n+1) + m`, where `n` is the order and `m` the degree.
 
-**SN3D – Semi-Normalized 3D**: Das Normalisierungsschema, das bestimmt, wie stark die einzelnen Harmonischen gewichtet werden. SN3D stellt sicher, dass der Peak-Pegel einer Punktquelle den W-Kanal nicht übersteigt – keine Übersteuerung durch höhere Ordnungen.
+**SN3D – Semi-Normalized 3D**: the normalisation scheme that determines how strongly the individual harmonics are weighted. SN3D ensures that the peak level of a point source does not exceed the W channel – no overload from higher orders.
 
-Die Kombination ACN/SN3D ist das, was alle aktuellen Plugins – IEM Suite, SPARTA, ICST AmbiPlugins – als Standard verwenden. Wann immer du ein File übergibst oder empfängst, stelle sicher, dass beide Seiten dasselbe Format sprechen.
+The combination ACN/SN3D is what all current plugins – IEM Suite, SPARTA, ICST AmbiPlugins – use as the standard. Whenever you hand over or receive a file, make sure both sides speak the same format.
 
-### Kanalzahlen pro Ordnung
+### Channel counts per order
 
-| Ordnung | Kanäle gesamt | Neue Kanäle dieser Ordnung |
+| Order | Total channels | New channels of this order |
 |---|---|---|
-| 1st Order (FOA) | 4 | 4 |
-| 2nd Order | 9 | 5 |
-| 3rd Order | 16 | 7 |
-| 4th Order | 25 | 9 |
-| 5th Order | 36 | 11 |
-| 7th Order | 64 | 15 |
+| 1st order (FOA) | 4 | 4 |
+| 2nd order | 9 | 5 |
+| 3rd order | 16 | 7 |
+| 4th order | 25 | 9 |
+| 5th order | 36 | 11 |
+| 7th order | 64 | 15 |
 
-Die Formel: `(n+1)²` Kanäle für Ordnung `n`.
+The formula: `(n+1)²` channels for order `n`.
 
-### FuMa – das alte Format
+### FuMa – the old format
 
-FuMa (Furse-Malham) ist das Legacy-Format aus der Zeit vor AmbiX. Die Unterschiede:
+FuMa (Furse-Malham) is the legacy format from the time before AmbiX. The differences:
 
-- **Kanalreihenfolge**: WXYZ statt ACN (bei 1st Order: W ist Kanal 1, dann X, Y, Z)
-- **W-Pegel**: 3 dB schwächer als in AmbiX/SN3D
-- **Höhere Ordnungen**: Abweichende Bezeichnungen und Normalisierung
+- **Channel order**: WXYZ instead of ACN (at 1st order: W is channel 1, then X, Y, Z)
+- **W level**: 3 dB lower than in AmbiX/SN3D
+- **Higher orders**: different designations and normalisation
 
-FuMa ist noch in älteren Plugins und einigen Archiv-Files anzutreffen (Endung `.amb`). Im ICST-Workflow alles auf AmbiX/SN3D halten; FuMa nur verwenden, wenn ein Empfänger das explizit fordert. Für Konvertierungen zwischen Formaten: **ambix_converter** (kostenlos, Kommandozeile) oder **dearVR AMBI MICRO** mit eingebautem Konverter.
+FuMa is still found in older plugins and some archive files (extension `.amb`). In the ICST workflow, keep everything in AmbiX/SN3D; use FuMa only if a recipient explicitly demands it. For conversions between formats: **ambix_converter** (free, command line) or **dearVR AMBI MICRO** with a built-in converter.
 
 ---
 
-## REAPER: Render-Setup Schritt für Schritt
+## REAPER: render setup step by step
 
-### 1. B-Format-Bus korrekt konfigurieren
+### 1. Configure the B-format bus correctly
 
-Bevor du renderst, muss der B-Format-Master-Bus die richtige Kanalzahl haben. Rechtsklick auf den Track → *Track Channels* → Kanalzahl auf die Summe aller aktiven Harmonischen setzen:
+Before you render, the B-format master bus must have the right channel count. Right-click the track → *Track Channels* → set the channel count to the sum of all active harmonics:
 
-- HOA1: 4 Kanäle
-- HOA3: 16 Kanäle
-- HOA7: 64 Kanäle
+- HOA1: 4 channels
+- HOA3: 16 channels
+- HOA7: 64 channels
 
-Ein Bus mit zu wenigen Kanälen schneidet höhere Harmonische still ab – der Render enthält dann stille Kanäle ohne Fehlermeldung.
+A bus with too few channels silently cuts off the higher harmonics – the render then contains silent channels without any error message.
 
-### 2. Alle Encoder-Sends auf den Bus prüfen
+### 2. Check all encoder sends to the bus
 
-Jeder AmbiEncoder muss seinen Ausgang vollständig auf den B-Format-Bus senden. In REAPER: Send-Routing kontrollieren, Kanaloffset = 0, Source Channels = alle aktiven Kanäle. Ein einzelner falsch konfigurierter Send kann Kanäle überlagern oder auslassen.
+Every AmbiEncoder must send its output completely to the B-format bus. In REAPER: check the send routing, channel offset = 0, source channels = all active channels. A single wrongly configured send can overlay or omit channels.
 
-### 3. Render-Dialog konfigurieren
+### 3. Configure the render dialog
 
-**Datei → Render** öffnen. Die entscheidende Einstellung:
+Open **File → Render**. The decisive setting:
 
 > **☑ Multichannel tracks to multichannel files**
 
-Ohne diesen Haken rendert REAPER nur die ersten zwei Kanäle (Stereo-Fallback). Die Option muss aktiv sein, damit die volle Kanalzahl des Busses in die Ausgabedatei geschrieben wird.
+Without this tick REAPER renders only the first two channels (stereo fallback). The option must be active so that the full channel count of the bus is written to the output file.
 
-Weitere Einstellungen:
+Further settings:
 
-- **Source**: Master mix oder ausgewählter Track (je nach Session-Aufbau)
-- **Format**: WAV, 32-bit float oder 24-bit PCM – für Archive immer 32-bit float; für Lieferung 24-bit PCM
-- **Sample Rate**: 48 kHz Standard; 96 kHz wenn die Produktion darauf basiert
-- **Dither**: Nur bei 16-bit oder 24-bit float → int Konvertierung nötig
+- **Source**: master mix or selected track (depending on the session layout)
+- **Format**: WAV, 32-bit float or 24-bit PCM – always 32-bit float for archives; 24-bit PCM for delivery
+- **Sample rate**: 48 kHz standard; 96 kHz if the production is based on it
+- **Dither**: only needed for 16-bit or 24-bit float → int conversion
 
-### 4. Dateinamen-Konvention
+### 4. File naming convention
 
-Eine AmbiX-Datei ohne Dokumentation ist für den Empfänger nutzlos. Die Kanalreihenfolge und Normalisierung sind nicht im WAV-Standard gespeichert. Empfohlene Konvention im Dateinamen:
+An AmbiX file without documentation is useless to the recipient. Channel order and normalisation are not stored in the WAV standard. Recommended convention in the file name:
 
 ```
-Titel_HOA3_ACN_SN3D_48k_24bit.wav
+Title_HOA3_ACN_SN3D_48k_24bit.wav
 ```
 
-Oder als Begleitdokument: `.txt`-File mit Format-Angaben, Order, Kanalzahl, Normalisierung, verwendete Encoder-Suite.
+Or as an accompanying document: a `.txt` file with format details, order, channel count, normalisation and the encoder suite used.
 
 ---
 
-## Validierung vor der Abgabe
+## Validation before delivery
 
-Bevor du das File übergibst: kurze Kontrolle.
+Before you hand over the file: a short check.
 
-**Kanalzahl prüfen**: Das gerenderte File in einem Multikanal-Viewer oder direkt in REAPER öffnen. Kanalanzahl muss zur erwarteten Ordnung passen. Ein HOA3-File hat exakt 16 Kanäle.
+**Check the channel count**: open the rendered file in a multichannel viewer or directly in REAPER. The channel count must match the expected order. An HOA3 file has exactly 16 channels.
 
-**Keine stillen Kanäle**: Im Wellenform-Editor prüfen ob alle Kanäle Signal haben. Stille Kanäle (flat line) deuten auf falsche Bus-Konfiguration oder unterbrochene Sends hin.
+**No silent channels**: check in the waveform editor that all channels carry signal. Silent channels (flat line) point to a wrong bus configuration or interrupted sends.
 
-**Pegel-Check W-Kanal**: Kanal 1 (W, Omnidirektional) sollte den höchsten Pegel aller Kanäle haben. Wenn Kanal 2 oder 3 stärker ist, stimmt die Normalisierung oder die Kanalreihenfolge nicht.
+**Level check on the W channel**: channel 1 (W, omnidirectional) should have the highest level of all channels. If channel 2 or 3 is stronger, the normalisation or the channel order is wrong.
 
-**A/B-Abhör**: Das File in einer frischen REAPER-Session mit IEM AllRAD-Decoder oder ICST AmbiDecoder öffnen. Die Lokalisation muss mit der Produktionssession übereinstimmen. Wenn Quellen gespiegelt oder rotiert klingen: Kanalreihenfolge prüfen.
-
----
-
-## Häufige Fehler
-
-**"Multichannel to multichannel files" vergessen**: Der häufigste Fehler. Der Render erzeugt eine 2-Kanal-Datei ohne Fehlermeldung. Immer prüfen.
-
-**Falscher Bus-Kanal-Count**: Encoder auf HOA3, Bus auf 4 Kanäle. Die höheren 12 Kanäle sind im Render Null. Klingt wie FOA.
-
-**N3D statt SN3D in Plugins**: Wenn ein Plugin auf N3D läuft während alle anderen SN3D verwenden, entstehen inkohärente Pegel zwischen Ordnungen. Lokalisation klingt verschoben, Pegel der höheren Harmonischen zu laut oder zu leise.
-
-**FuMa und AmbiX mischen**: Ein FOA-Source-File in FuMa in eine HOA3-AmbiX-Session laden und nicht konvertieren erzeugt Kanalverwirrung. Alle importierten B-Format-Files zuerst auf AmbiX/SN3D bringen.
-
-**Headroom zu knapp**: N3D-normalisierte Signale können bei höheren Ordnungen 6–12 dB mehr Pegel haben als SN3D. Wenn du in N3D arbeitest (z.B. wegen eines Plug-ins), entsprechend mehr Headroom einplanen.
+**A/B listening**: open the file in a fresh REAPER session with the IEM AllRAD decoder or the ICST AmbiDecoder. Localisation must match the production session. If sources sound mirrored or rotated: check the channel order.
 
 ---
 
-## AmbiX-Konvertierungs-Tools
+## Common mistakes
 
-Wenn du ein FuMa-File erhalten hast oder eine andere Ordnung brauchst:
+**Forgetting "Multichannel to multichannel files"**: the most common mistake. The render produces a 2-channel file without an error message. Always check.
 
-- **ambix_converter**: Kommandozeilen-Tool, konvertiert zwischen FuMa, AmbiX, verschiedenen Normalisierungen. Kostenlos.
-- **IEM AmbiX Converter** (Teil der IEM Suite): GUI-Tool für Format-Konvertierungen direkt in REAPER
-- **VVMicArray**: Für Mikrofon-spezifische Konvertierungen
-- **dearVR AMBI MICRO**: Enthält FuMa-zu-AmbiX-Konverter als Plugin
+**Wrong bus channel count**: encoder set to HOA3, bus at 4 channels. The higher 12 channels are zero in the render. It sounds like FOA.
+
+**N3D instead of SN3D in plugins**: if one plugin runs on N3D while all the others use SN3D, incoherent levels arise between orders. Localisation sounds shifted, the level of the higher harmonics is too loud or too quiet.
+
+**Mixing FuMa and AmbiX**: loading an FOA source file in FuMa into an HOA3 AmbiX session without converting creates channel confusion. Bring all imported B-format files to AmbiX/SN3D first.
+
+**Too little headroom**: N3D-normalised signals can have 6–12 dB more level than SN3D at higher orders. If you work in N3D (e.g. because of a plugin), plan for correspondingly more headroom.
 
 ---
 
-## Weiterführende Seiten
+## AmbiX conversion tools
 
-- [ICST AmbiDecoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
-- [Koordinatensysteme: XYZ und AED im Vergleich](/post/xyz-vs-aed-koordinatensysteme/)
-- [Von der Ambisonics-Szene zum Atmos Bed](/post/ambisonics-to-atmos-bed/)
-- [Binaural Monitoring im ICST-Workflow](/post/binaural-monitoring-icst-workflow/)
+If you have received a FuMa file or need a different order:
+
+- **ambix_converter**: command-line tool that converts between FuMa, AmbiX and various normalisations. Free.
+- **IEM AmbiX Converter** (part of the IEM Suite): GUI tool for format conversions directly in REAPER
+- **VVMicArray**: for microphone-specific conversions
+- **dearVR AMBI MICRO**: contains a FuMa-to-AmbiX converter as a plugin
+
+---
+
+## Further reading
+
+- [ICST AmbiDecoder – setup and operation](/icst-ambisonics-plugins/08_icst_decoder/)
+- [Coordinate systems: XYZ and AED compared](/post/xyz-vs-aed-koordinatensysteme/)
+- [From the Ambisonics scene to an Atmos bed](/post/ambisonics-to-atmos-bed/)
+- [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/)

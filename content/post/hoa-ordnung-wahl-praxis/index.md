@@ -1,67 +1,67 @@
 ---
-title: Welche Ambisonics-Ordnung brauche ich? – HOA-Wahl in der Praxis
-description: "FOA, HOA3 oder HOA7? Dieser Artikel erklärt, wann welche Ordnung sinnvoll ist: Kanalzahl, räumliche Auflösung, Lautsprecher-Anforderungen, CPU-Last und binaural – als klare Entscheidungshilfe für den Produktionsalltag."
+title: Which Ambisonics Order Do I Need? – Choosing HOA in Practice
+description: "FOA, HOA3 or HOA7? This article explains when which order makes sense: channel count, spatial resolution, loudspeaker requirements, CPU load and binaural – as a clear decision aid for everyday production."
 date: 2026-03-21T18:00:00+01:00
 year: 2026
 month: 2026-03
 weight: 38
-tags: ["hoa", "foa", "ordnung", "order", "kanalzahl", "workflow", "konzept", "reaper"]
+tags: ["hoa", "foa", "order", "channel-count", "workflow", "concept", "reaper"]
 key_points:
-  - "Die Formel (N+1)² bestimmt die Kanalzahl: 1st=4, 3rd=16, 7th=64 Kanäle"
-  - "Das Lautsprecher-System ist der limitierende Faktor – nicht die DAW"
-  - "HOA3 ist der produktive Sweetspot: gute Auflösung, handhabbare CPU-Last, breite Plugin-Unterstützung"
+  - "The formula (N+1)² sets the channel count: 1st = 4, 3rd = 16, 7th = 64 channels"
+  - "The loudspeaker system is the limiting factor – not the DAW"
+  - "HOA3 is the productive sweet spot: good resolution, manageable CPU load, broad plugin support"
 difficulty: "beginner"
 kind: "background"
 ---
 
-Level: Beginner–Intermediate | **Audience:** Komponist:in, Producer:in, alle die eine neue Ambisonics-Session aufsetzen.
+Level: Beginner–Intermediate | **Audience:** Composers, producers, anyone setting up a new Ambisonics session.
 
 ---
 
-Die Wahl der Ambisonics-Ordnung ist eine der ersten Entscheidungen jeder Produktion – und sie bestimmt Kanalzahl, CPU-Last, Plugin-Anforderungen und die klangliche Qualität auf einem Lautsprecher-System. Dieser Artikel erklärt die Zusammenhänge ohne Mathematik und gibt klare Empfehlungen für typische Situationen.
+Choosing the Ambisonics order is one of the first decisions in any production, and it determines channel count, CPU load, plugin requirements and the sound quality on a loudspeaker system. This article explains the relationships without maths and gives clear recommendations for typical situations.
 
 ---
 
-## Die Grundformel
+## The basic formula
 
-Die Anzahl der Kanäle im B-Format-Master ergibt sich aus der gewählten Ordnung:
+The number of channels in the B-format master follows from the chosen order:
 
-**(N + 1)² = Kanalzahl**
+**(N + 1)² = channel count**
 
-| Ordnung | Kanalzahl | Neue Kanäle |
+| Order | Channels | New channels |
 |---|---|---|
-| 1st Order (FOA) | **4** | 4 |
-| 2nd Order | **9** | 5 |
-| 3rd Order | **16** | 7 |
-| 4th Order | **25** | 9 |
-| 5th Order | **36** | 11 |
-| 7th Order | **64** | 15 |
+| 1st order (FOA) | **4** | 4 |
+| 2nd order | **9** | 5 |
+| 3rd order | **16** | 7 |
+| 4th order | **25** | 9 |
+| 5th order | **36** | 11 |
+| 7th order | **64** | 15 |
 
-Höhere Ordnung bedeutet: mehr Kanäle, mehr sphärische Information, feinere räumliche Auflösung – und mehr Rechenaufwand.
+A higher order means more channels, more spherical information, finer spatial resolution – and more computing effort.
 
 ---
 
-## Was sich mit der Ordnung ändert
+## What changes with the order
 
-### Räumliche Auflösung
+### Spatial resolution
 
-Mit steigender Ordnung werden Klangquellen schärfer lokalisierbar. Bei 1st Order klingt eine Punktquelle leicht diffus – ein Lautsprecher in einem Cluster ist schwer von seinen Nachbarn zu unterscheiden. Bei 3rd Order ist die Lokalisation für die meisten Abhörsituationen überzeugend. Bei 7th Order nähert sich die Auflösung dem, was das menschliche Gehör unter idealen Bedingungen auflösen kann.
+As the order rises, sound sources become sharper to localise. At 1st order a point source sounds slightly diffuse – a loudspeaker in a cluster is hard to tell from its neighbours. At 3rd order localisation is convincing for most listening situations. At 7th order the resolution approaches what the human ear can resolve under ideal conditions.
 
-Ein einfaches Bild: Ordnung verhält sich ähnlich wie Bildauflösung bei einem Foto. FOA ist 480p – erkennbar, aber unscharf. HOA3 ist 1080p – gut für fast alle Zwecke. HOA7 ist 4K – man braucht ein sehr gutes Wiedergabesystem, um den Unterschied zu hören.
+A simple picture: order behaves much like the resolution of a photo. FOA is 480p – recognisable but soft. HOA3 is 1080p – good for almost every purpose. HOA7 is 4K – you need a very good playback system to hear the difference.
 
-### Sweetspot-Größe
+### Sweet spot size
 
-Der Sweetspot ist der Bereich, in dem das Schallfeld korrekt reproduziert wird. Er wächst mit der Ordnung. Bei FOA ist er bei mittleren und hohen Frequenzen kaum größer als ein Kopf. Bei HOA3 reicht er für eine kleine Gruppe von Zuhörer:innen. Für große Räume und viele Personen ist HOA5 oder HOA7 relevant.
+The sweet spot is the area in which the sound field is reproduced correctly. It grows with the order. With FOA it is hardly larger than a head at mid and high frequencies. With HOA3 it suffices for a small group of listeners. For large rooms and many people, HOA5 or HOA7 become relevant.
 
-In der Praxis: Wer für Studio-Produktion und Kopfhörer arbeitet, merkt den Sweetspot-Unterschied kaum. Wer für ein 31-Speaker-Konzertsystem produziert, macht den Unterschied zwischen HOA3 und HOA7 je nach Repertoire und Saal hörbar.
+In practice: if you work for studio production and headphones, you hardly notice the sweet-spot difference. If you produce for a 31-speaker concert system, the difference between HOA3 and HOA7 becomes audible depending on repertoire and hall.
 
-### Minimale Lautsprecher-Anzahl
+### Minimum number of loudspeakers
 
-Das Lautsprecher-System setzt die praktische Obergrenze der nutzbaren Ordnung. Die Faustregel:
+The loudspeaker system sets the practical ceiling of the usable order. The rule of thumb:
 
-> **Mindestens (N+1)² Lautsprecher für Ordnung N**
+> **At least (N+1)² loudspeakers for order N**
 
-| Ordnung | Mindest-Lautsprecher |
+| Order | Minimum loudspeakers |
 |---|---|
 | 1st | 4 |
 | 2nd | 9 |
@@ -69,85 +69,85 @@ Das Lautsprecher-System setzt die praktische Obergrenze der nutzbaren Ordnung. D
 | 5th | 36 |
 | 7th | 64 |
 
-In einem System mit 8 Lautsprechern ist HOA3 wenig sinnvoll – das System kann die 16-kanalige Information nicht vollständig reproduzieren. Der Decoder rechnet zwar, aber die räumliche Auflösung ist durch die Lautsprecher gedeckelt. Das **ICST Composition Studio an der ZHdK** hat 31 Lautsprecher – dort ist HOA3 gut ausgenutzt, HOA5 bereits anspruchsvoll.
+On a system with 8 loudspeakers HOA3 makes little sense – the system cannot fully reproduce the 16-channel information. The decoder still calculates, but the spatial resolution is capped by the loudspeakers. The **ICST Composition Studio at ZHdK** has 31 loudspeakers – HOA3 is well used there, HOA5 is already demanding.
 
-> **Wichtig:** In REAPER und den ICST Plugins kannst du jede Ordnung verwenden, egal wie viele Lautsprecher du hast. Das System rechnet korrekt. Aber die klangliche Qualität wird durch das schwächste Glied bestimmt – das Abhörsystem.
-
----
-
-## Praktische Entscheidungshilfe
-
-### Wann reicht FOA (1st Order)?
-
-- Binaural-only Produktion für Kopfhörer oder Streaming
-- Kompositorische Skizze oder Konzeptarbeit ohne finales Lautsprecher-System
-- Echtzeit-Performance auf kleinem System (4–8 Lautsprecher, z.B. Oktagon)
-- Ambisonics-Mikrofon-Aufnahmen (Ambeo, NT-SF1 – diese liefern ausschliesslich FOA)
-- Ressourcenknappe Live-Situation (älteres Laptop, instabiler Rechner)
-
-### Wann ist HOA3 die richtige Wahl?
-
-HOA3 ist der **produktive Standard** für die meisten Ambisonics-Produktionen heute:
-
-- Professionelle Komposition für ein Mehrlautsprecher-System ab ca. 16 Lautsprechern
-- Binaural-Render mit hoher Qualität (IEM BinauralDecoder nutzt HOA3 voll aus)
-- Mischung aus Encoder-Quellen und Mikrofon-Aufnahmen (Zylia ZM-1 liefert HOA3)
-- Export für Plattformen wie YouTube 360° oder VR (die meisten Plattformen akzeptieren maximal HOA3)
-- Studioproduktion mit modernem Rechner ohne spezifischen Bedarf an HOA7
-
-### Wann braucht es HOA5 oder HOA7?
-
-- Große Konzerthäuser mit 40+ Lautsprechern (z.B. Kuppelinstallationen, IMAX-ähnliche Systeme)
-- Archive und Masterdateien, die für zukünftige höhere Systeme ausgelegt sind
-- Spezielle Höhenabbildung in dichten 3D-Arrays
-- Akademische oder Forschungs-Kontexte mit Präzisionsanforderungen
-
-### Binaural: Wie viel Ordnung klingt besser?
-
-Für binaurales Kopfhörer-Monitoring gilt: der wahrnehmbare Qualitätssprung liegt zwischen FOA und HOA3 – deutlich. Zwischen HOA3 und HOA7 ist der Unterschied im Binaural-Rendering messbar, aber perceptuell weniger dramatisch. Ab HOA3 ist Binaural für die meisten Zwecke ausreichend hochauflösend.
+> **Important:** In REAPER and the ICST plugins you can use any order, however many loudspeakers you have. The system calculates correctly. But the sound quality is set by the weakest link – the monitoring system.
 
 ---
 
-## CPU-Last in REAPER
+## A practical decision aid
 
-| Ordnung | Kanäle | Relative CPU | Praktisch |
+### When is FOA (1st order) enough?
+
+- Binaural-only production for headphones or streaming
+- Compositional sketches or concept work without a final loudspeaker system
+- Real-time performance on a small system (4–8 loudspeakers, e.g. an octagon)
+- Ambisonics microphone recordings (Ambeo, NT-SF1 – these deliver FOA only)
+- Resource-limited live situations (older laptop, unstable machine)
+
+### When is HOA3 the right choice?
+
+HOA3 is the **productive standard** for most Ambisonics productions today:
+
+- Professional composition for a multi-loudspeaker system from about 16 loudspeakers
+- High-quality binaural rendering (the IEM BinauralDecoder makes full use of HOA3)
+- Mixing encoder sources and microphone recordings (the Zylia ZM-1 delivers HOA3)
+- Export for platforms such as YouTube 360° or VR (most platforms accept HOA3 at most)
+- Studio production on a modern computer without a specific need for HOA7
+
+### When do you need HOA5 or HOA7?
+
+- Large concert halls with 40+ loudspeakers (e.g. dome installations, IMAX-like systems)
+- Archives and master files designed for future, higher-order systems
+- Special height rendering in dense 3D arrays
+- Academic or research contexts with precision requirements
+
+### Binaural: how much order sounds better?
+
+For binaural headphone monitoring, the perceptible jump in quality lies between FOA and HOA3 – clearly. Between HOA3 and HOA7 the difference in binaural rendering is measurable but perceptually less dramatic. From HOA3 up, binaural is high-resolution enough for most purposes.
+
+---
+
+## CPU load in REAPER
+
+| Order | Channels | Relative CPU | In practice |
 |---|---|---|---|
-| FOA | 4 | sehr gering | problemlos auch auf älteren Systemen |
-| HOA3 | 16 | moderat | Standard auf modernem Rechner, kein Problem |
-| HOA5 | 36 | merklich | große Sessions erfordern Freeze-Strategie |
-| HOA7 | 64 | hoch | bei vielen Quellen: Freeze oder Render-to-File |
+| FOA | 4 | very low | no problem even on older systems |
+| HOA3 | 16 | moderate | standard on a modern computer, no problem |
+| HOA5 | 36 | noticeable | large sessions require a freeze strategy |
+| HOA7 | 64 | high | with many sources: freeze or render to file |
 
-In REAPER: Wenn HOA7-Spuren einzufrieren sind, *Freeze*-Funktion nutzen (rechtsklick auf Track → Freeze). Der eingefrorene Track wird als voll berechnetes Multichannel-File intern gespeichert und verursacht keine Encoder-CPU mehr – nur noch Bus-Routing.
-
----
-
-## Ordnung wechseln während der Produktion
-
-Es ist möglich, die Ordnung einer laufenden Session zu ändern – aber es erfordert Anpassungen:
-
-1. **B-Format-Bus Kanalzahl** anpassen (Rechtsklick → Track Channels)
-2. **Alle AmbiEncoder** auf die neue Ordnung setzen (Order-Parameter im Plugin)
-3. **ICST AmbiDecoder** auf die neue Ordnung setzen
-4. **BinauralDecoder** passt sich automatisch an (IEM erkennt Kanalzahl)
-
-Am einfachsten ist: Ordnung vor dem Produktionsstart festlegen und ein REAPER-Template auf dieser Ordnung aufbauen. Das ICST Download-Pack enthält vorbereitete Templates.
+In REAPER: if HOA7 tracks need to be frozen, use the *Freeze* function (right-click the track → Freeze). The frozen track is stored internally as a fully calculated multichannel file and no longer causes encoder CPU load – only bus routing remains.
 
 ---
 
-## Empfehlung für den ICST-Workflow
+## Changing the order during production
 
-Wer am **ICST Composition Studio** (31 Lautsprecher) produziert: **HOA3** als Standard. Das Studio ist für HOA3 optimiert und kalibriert. HOA7 ist technisch möglich, bringt aber auf diesem System einen geringen Mehrwert.
+You can change the order of a running session, but it requires adjustments:
 
-Wer für **Kopfhörer und Binaural** produziert: **HOA3** als sinnvoller Kompromiss zwischen Qualität und Performance.
+1. **Adjust the channel count of the B-format bus** (right-click → Track Channels)
+2. **Set all AmbiEncoders** to the new order (order parameter in the plugin)
+3. **Set the ICST AmbiDecoder** to the new order
+4. **The BinauralDecoder** adapts automatically (IEM detects the channel count)
 
-Wer eine **erste eigene Session** aufbaut: Mit **FOA oder HOA3** beginnen – die Konzepte sind dieselben, und der Einstieg ist leichter.
+The easiest way: fix the order before starting the production and build a REAPER template on that order. The ICST download pack contains prepared templates.
 
 ---
 
-## Weiterführende Seiten
+## Recommendation for the ICST workflow
 
-- [Koordinatensysteme: XYZ und AED im Vergleich](/post/xyz-vs-aed-koordinatensysteme/)
-- [ICST AmbiDecoder – Skalierung und Laufzeitkompensation](/post/decoder-skalierung-laufzeitkompensation/)
-- [Binaural Monitoring im ICST-Workflow](/post/binaural-monitoring-icst-workflow/)
-- [Den B-Format-Master exportieren](/post/b-format-export-reaper/)
-- [Ambisonics-Mikrofon aufnehmen – A-Format, B-Format und die ICST-Integration](/post/ambisonics-mikrofon-a-format-b-format/)
+If you produce at the **ICST Composition Studio** (31 loudspeakers): **HOA3** as the standard. The studio is optimised and calibrated for HOA3. HOA7 is technically possible but adds little on this system.
+
+If you produce for **headphones and binaural**: **HOA3** as a sensible compromise between quality and performance.
+
+If you build **your first own session**: start with **FOA or HOA3** – the concepts are the same, and getting started is easier.
+
+---
+
+## Further reading
+
+- [Coordinate systems: XYZ and AED compared](/post/xyz-vs-aed-koordinatensysteme/)
+- [ICST AmbiDecoder – scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)
+- [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/)
+- [Exporting the B-format master](/post/b-format-export-reaper/)
+- [Recording with an Ambisonics microphone – A-format, B-format and ICST integration](/post/ambisonics-mikrofon-a-format-b-format/)

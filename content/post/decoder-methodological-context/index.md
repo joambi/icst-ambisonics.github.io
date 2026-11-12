@@ -1,4 +1,5 @@
 ---
+aliases: ["/post/decoder-methodischer-kontext/"]
 title: Why the Decoder Sounds the Way It Does – Methodological Context
 description: "What is behind the Ambisonics decoder? This article explains field-based projection, the role of spherical harmonics, and why B-format remains rotation-invariant."
 date: 2026-03-21T10:00:00+01:00

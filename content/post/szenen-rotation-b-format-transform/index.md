@@ -1,184 +1,184 @@
 ---
-title: Szenen-Rotation – Das gesamte B-Format-Feld drehen
-description: "Wie du eine Ambisonics-Szene als Ganzes rotierst: IEM SceneRotator und SPARTA Rotator im REAPER-Workflow, OSC-Adressen, REAPER-Automations-Envelopes und drei typische Anwendungsfälle – Livekorrektur, Nachbearbeitung und kompositorische Rotation."
+title: Scene Rotation – Rotating the Entire B-Format Field
+description: "How to rotate an Ambisonics scene as a whole: IEM SceneRotator and SPARTA Rotator in the REAPER workflow, OSC addresses, REAPER automation envelopes and three typical use cases – live correction, post-production and compositional rotation."
 date: 2026-03-21T18:30:00+01:00
 year: 2026
 month: 2026-03
 weight: 39
 tags: ["rotation", "scenerotator", "sparta", "iem", "osc", "automation", "b-format", "transform", "live", "workflow"]
 key_points:
-  - "Szenen-Rotation dreht das gesamte B-Format-Feld – alle Quellen rotieren gleichzeitig"
-  - "IEM SceneRotator unterstützt Euler-Winkel (Yaw/Pitch/Roll) und Quaternionen – beide via OSC steuerbar"
-  - "REAPER-Automation-Envelopes erlauben kompositorische Rotation als parametrische Kurve"
+  - "Scene rotation turns the entire B-format field – all sources rotate at the same time"
+  - "The IEM SceneRotator supports Euler angles (yaw/pitch/roll) and quaternions – both controllable via OSC"
+  - "REAPER automation envelopes allow compositional rotation as a parametric curve"
 difficulty: "intermediate"
 kind: "tutorial"
 tool: ["REAPER", "OSC"]
 ---
 
-Level: Intermediate | **Audience:** Komponist:in, Live-Techniker:in, Recording-Techniker:in.
+Level: Intermediate | **Audience:** Composers, live technicians, recording engineers.
 
 ---
 
-Ambisonics hat gegenüber kanalbasierten Formaten einen entscheidenden Vorteil: Das B-Format-Feld ist rotationsinvariant. Eine gespeicherte Ambisonics-Szene lässt sich jederzeit nachträglich drehen – ohne Qualitätsverlust, ohne neue Encoder-Durchläufe, ohne die Quellen einzeln anzufassen. Dieser Artikel zeigt, wie diese Rotation in der Praxis funktioniert.
+Ambisonics has a decisive advantage over channel-based formats: the B-format field is rotation-invariant. A stored Ambisonics scene can be rotated at any time afterwards – without loss of quality, without new encoder passes, without touching the sources individually. This article shows how this rotation works in practice.
 
 ---
 
-## Szenen-Rotation vs. Objekt-Rotation
+## Scene rotation vs. object rotation
 
-Es gibt zwei grundlegend verschiedene Arten, räumliche Positionen in Ambisonics zu bewegen:
+There are two fundamentally different ways of moving spatial positions in Ambisonics:
 
-**Objekt-Rotation** (ICST AmbiEncoder / AmbiAnimator): Einzelne Quellen werden an andere Positionen bewegt. Azimut, Elevation und Distanz einer Quelle ändern sich. Alle anderen Quellen bleiben wo sie sind.
+**Object rotation** (ICST AmbiEncoder / AmbiAnimator): individual sources are moved to other positions. The azimuth, elevation and distance of one source change. All other sources stay where they are.
 
-**Szenen-Rotation** (IEM SceneRotator / SPARTA Rotator): Das gesamte B-Format-Feld wird als Einheit gedreht. Alle Quellen in der Szene rotieren gleichzeitig – inklusive aufgenommener Ambisonics-Felder, die keine einzelnen Objekte mehr haben. Das ist der Werkzeugtyp, der in diesem Artikel behandelt wird.
+**Scene rotation** (IEM SceneRotator / SPARTA Rotator): the entire B-format field is turned as a unit. All sources in the scene rotate at the same time – including recorded Ambisonics fields that no longer have individual objects. This is the type of tool covered in this article.
 
-| | Objekt-Rotation | Szenen-Rotation |
+| | Object rotation | Scene rotation |
 |---|---|---|
-| Eingabe | Einzelne Quellen mit Positions-Parametern | B-Format-Masterbus |
-| Granularität | Pro Quelle | Gesamtes Feld |
+| Input | individual sources with position parameters | B-format master bus |
+| Granularity | per source | entire field |
 | Plugin | ICST AmbiEncoder / Animator | IEM SceneRotator, SPARTA Rotator |
-| Typischer Einsatz | Kompositorische Bewegung | Orientierungskorrektur, Live-Headtracking |
+| Typical use | compositional movement | orientation correction, live head tracking |
 
 ---
 
 ## IEM SceneRotator
 
-Das Plugin aus der IEM Plug-in Suite ist die empfohlene Lösung im ICST-Workflow, weil es SN3D/ACN-kompatibel ist und nahtlos mit den anderen IEM-Plugins zusammenarbeitet.
+The plugin from the IEM Plug-in Suite is the recommended solution in the ICST workflow because it is SN3D/ACN-compatible and works seamlessly with the other IEM plugins.
 
-### Platzierung in der Signal-Chain
+### Placement in the signal chain
 
 ```
-[Quellen] → [ICST AmbiEncoder] → [B-Format Bus] → [IEM SceneRotator] → [ICST AmbiDecoder / BinauralDecoder]
+[Sources] → [ICST AmbiEncoder] → [B-format bus] → [IEM SceneRotator] → [ICST AmbiDecoder / BinauralDecoder]
 ```
 
-Der SceneRotator sitzt **auf dem B-Format-Master-Bus**, nach den Encodern und vor dem Decoder. Er bekommt das vollständige Multikanal-Signal und gibt es rotiert weiter.
+The SceneRotator sits **on the B-format master bus**, after the encoders and before the decoder. It receives the complete multichannel signal and passes it on rotated.
 
-### Parameter
+### Parameters
 
-**Euler-Winkel-Modus (Standard):**
+**Euler angle mode (default):**
 
-| Parameter | Bereich | Bedeutung |
+| Parameter | Range | Meaning |
 |---|---|---|
-| Yaw | –180° bis +180° | Horizontale Rotation (Kompass-Drehung) |
-| Pitch | –180° bis +180° | Vertikale Kippung (nach vorne / hinten kippen) |
-| Roll | –180° bis +180° | Längsachsen-Drehung (um die Vorne-hinten-Achse rollen) |
-| Rotationsreihenfolge | Yaw→Pitch→Roll oder Roll→Pitch→Yaw | Bestimmt die Reihenfolge der Winkelanwendung |
+| Yaw | –180° to +180° | horizontal rotation (compass turn) |
+| Pitch | –180° to +180° | vertical tilt (tilting forward / backward) |
+| Roll | –180° to +180° | longitudinal-axis rotation (rolling about the front-back axis) |
+| Rotation order | Yaw→Pitch→Roll or Roll→Pitch→Yaw | determines the order in which the angles are applied |
 
-**Quaternionen-Modus (alternativ):**
-Vier Parameter (qw, qx, qy, qz) statt Euler-Winkeln. Vorteil: kein Gimbal Lock, stabiler bei kontinuierlichen Rotationen. Für Head-Tracking mit Geräten, die Quaternionen ausgeben (z.B. MrHeadTracker), direkter verwendbar.
+**Quaternion mode (alternative):**
+Four parameters (qw, qx, qy, qz) instead of Euler angles. Advantage: no gimbal lock, more stable with continuous rotations. More directly usable for head tracking with devices that output quaternions (e.g. MrHeadTracker).
 
-**Normalisierung:**
-`useSN3D`: SN3D = 1 (Standard im ICST-Workflow). N3D = 0 nur wenn die gesamte Session auf N3D normiert ist.
+**Normalisation:**
+`useSN3D`: SN3D = 1 (standard in the ICST workflow). N3D = 0 only if the entire session is normalised to N3D.
 
-### Ordnungs-Erkennung
+### Order detection
 
-Der IEM SceneRotator erkennt die Kanalzahl des Busses automatisch (`orderSetting = 0 = Auto`) und passt die Rotationsmatrix entsprechend an. Das Plugin rechnet korrekt für jede Ordnung von FOA bis HOA7.
+The IEM SceneRotator detects the channel count of the bus automatically (`orderSetting = 0 = Auto`) and adapts the rotation matrix accordingly. The plugin calculates correctly for every order from FOA to HOA7.
 
 ---
 
 ## SPARTA Rotator
 
-Teil der SPARTA Spatial Audio Suite. Einsatz sinnvoll wenn du SPARTA-Plugins bereits in der Session verwendest oder SOFA-basiertes Head-Tracking brauchst.
+Part of the SPARTA Spatial Audio Suite. Makes sense when you already use SPARTA plugins in the session or need SOFA-based head tracking.
 
-- Unterstützt Yaw/Pitch/Roll und Quaternionen
-- OSC-Empfang für Head-Tracking via externem Gerät
-- Kann Rotationsachsen invertieren – nützlich wenn das Tracking-Gerät eine andere Vorzeichenkonvention hat
-- Bis 10th Order
-
----
-
-## REAPER-Automation: Rotation als kompositorische Kurve
-
-Rotation lässt sich in REAPER wie jeder andere Parameter automatisieren. Das ermöglicht kompositorische Rotation als Envelope – eine langsam rotierende Szene, eine abrupte Orientierungsänderung als dramatisches Mittel, oder eine oszillierende Pendelbewegung.
-
-**Envelope anlegen:**
-
-1. SceneRotator auf dem B-Format-Bus als FX einrichten
-2. Auf dem Track-Panel den Automations-Button (Trim/Read) klicken → *Write* wählen
-3. Im Arrange View unten am Track den Yaw-Envelope aufklappen (FX-Parameter → SceneRotator → Yaw)
-4. Envelope-Punkte manuell setzen oder im *Write*-Modus live aufnehmen
-5. Envelope-Modus auf *Read* zurückschalten für die Wiedergabe
-
-**Envelope-Typen für Rotation:**
-
-- *Langsame Gesamtrotation*: Linearer Yaw-Envelope von 0° auf 360° über die Stücklänge – die Szene dreht sich kontinuierlich
-- *Schnelle Umorientierung*: Stufenförmiger Envelope (Hold-Punkt) – Szene springt schlagartig auf neuen Winkel
-- *Pendeln*: Sinusförmige LFO-Kurve auf dem Yaw – Szene schwingt zwischen zwei Richtungen
+- supports yaw/pitch/roll and quaternions
+- OSC reception for head tracking via an external device
+- can invert rotation axes – useful when the tracking device uses a different sign convention
+- up to 10th order
 
 ---
 
-## OSC-Steuerung
+## REAPER automation: rotation as a compositional curve
 
-Der IEM SceneRotator empfängt OSC-Nachrichten auf einem konfigurierbaren Port. Setup:
+Rotation can be automated in REAPER like any other parameter. This allows compositional rotation as an envelope – a slowly rotating scene, an abrupt change of orientation as a dramatic device, or an oscillating pendulum movement.
 
-1. Plugin öffnen → OSC-Status-Anzeige (unten links, neben IEM-Logo) anklicken
-2. Empfangs-Port einstellen (z.B. 9000) → *OPEN* klicken
-3. Grüne Statuskreise bestätigen die Verbindung
+**Creating an envelope:**
 
-**OSC-Adressen:**
+1. Set up the SceneRotator as FX on the B-format bus
+2. In the track panel click the automation button (Trim/Read) → choose *Write*
+3. In the arrange view below the track, open the yaw envelope (FX parameter → SceneRotator → Yaw)
+4. Set envelope points manually or record them live in *Write* mode
+5. Switch the envelope mode back to *Read* for playback
+
+**Envelope types for rotation:**
+
+- *Slow overall rotation*: linear yaw envelope from 0° to 360° over the length of the piece – the scene turns continuously
+- *Quick reorientation*: stepped envelope (hold point) – the scene jumps abruptly to a new angle
+- *Pendulum*: sinusoidal LFO curve on the yaw – the scene swings between two directions
+
+---
+
+## OSC control
+
+The IEM SceneRotator receives OSC messages on a configurable port. Setup:
+
+1. Open the plugin → click the OSC status display (bottom left, next to the IEM logo)
+2. Set the receive port (e.g. 9000) → click *OPEN*
+3. Green status circles confirm the connection
+
+**OSC addresses:**
 
 ```
-# Einzelne Euler-Winkel
+# Individual Euler angles
 /SceneRotator/yaw   45.0
 /SceneRotator/pitch -15.0
 /SceneRotator/roll   0.0
 
-# Alle drei gleichzeitig
+# All three at once
 /SceneRotator/ypr   45.0 -15.0 0.0
 
-# Quaternionen
+# Quaternions
 /SceneRotator/quaternions  0.707 0.0 0.707 0.0
 ```
 
-OSC-Sender: Max/MSP, Pure Data, GyrOSC (iPhone), MrHeadTracker, oder jede andere OSC-fähige Umgebung.
+OSC senders: Max/MSP, Pure Data, GyrOSC (iPhone), MrHeadTracker, or any other OSC-capable environment.
 
 ---
 
-## Drei typische Anwendungsfälle
+## Three typical use cases
 
-### 1. Live-Korrektur der Szenen-Orientierung
+### 1. Live correction of the scene orientation
 
-Ein Ambisonics-Mikrofon wurde mit der Frontseite nicht exakt in Richtung der Hauptquelle gehalten. Das aufgenommene Feld ist um 30° nach rechts verdreht. Mit dem SceneRotator: Yaw = –30° statisch setzen. Die gesamte Szene ist korrigiert.
+An Ambisonics microphone was not held with its front exactly towards the main source. The recorded field is rotated 30° to the right. With the SceneRotator: set yaw = –30° statically. The whole scene is corrected.
 
-In Live-Situations: Wenn das Mikrofon live platziert wird und die Orientierung nicht immer identisch ist, kann eine OSC-Steuerung die Orientierung in Echtzeit anpassen.
+In live situations: if the microphone is placed live and the orientation is not always identical, OSC control can adjust the orientation in real time.
 
-### 2. Head-Tracking im Binaural-Monitoring
+### 2. Head tracking in binaural monitoring
 
-Im Binaural-Workflow (IEM BinauralDecoder oder SPARTA AmbiBIN) lässt sich die Szene live drehen, um die Kopfbewegung des Hörers zu kompensieren – die Szene bleibt stationär, der Hörer bewegt sich darin. Signal-Chain für Head-Tracking:
+In the binaural workflow (IEM BinauralDecoder or SPARTA AmbiBIN) the scene can be rotated live to compensate for the listener's head movement – the scene stays stationary, the listener moves within it. Signal chain for head tracking:
 
 ```
-[GyrOSC / MrHeadTracker] → [OSC → /SceneRotator/ypr] → [IEM SceneRotator] → [IEM BinauralDecoder] → Kopfhörer
+[GyrOSC / MrHeadTracker] → [OSC → /SceneRotator/ypr] → [IEM SceneRotator] → [IEM BinauralDecoder] → headphones
 ```
 
-GyrOSC auf dem iPhone sendet Yaw/Pitch/Roll direkt als OSC. Der SceneRotator dreht die Szene entsprechend gegenläufig. Das Ergebnis: stabile räumliche Szene trotz Kopfbewegung.
+GyrOSC on the iPhone sends yaw/pitch/roll directly as OSC. The SceneRotator turns the scene in the opposite direction. The result: a stable spatial scene despite head movement.
 
-### 3. Kompositorische Rotation als Gestaltungsmittel
+### 3. Compositional rotation as a design device
 
-Die permanente Rotation einer Ambisonics-Szene als kompositorisches Element – ähnlich wie ein Kamerafahrt in Film. Mögliche Gesten:
+The permanent rotation of an Ambisonics scene as a compositional element – similar to a camera move in film. Possible gestures:
 
-- *Orbiting*: Langsame Yaw-Rotation über mehrere Minuten – der Hörer steht still, die Klangwelt dreht sich
-- *Auskippen*: Pitch-Envelope von 0° auf 90° – die Szene kippt aus der horizontalen in die vertikale Ebene
-- *Spinning*: Schnelle Yaw-Rotation als rhythmisches Element (z.B. auf Schlag synchronisiert via REAPER-Envelope)
+- *Orbiting*: slow yaw rotation over several minutes – the listener stands still, the sound world turns
+- *Tipping over*: pitch envelope from 0° to 90° – the scene tips from the horizontal into the vertical plane
+- *Spinning*: fast yaw rotation as a rhythmic element (e.g. synchronised to the beat via a REAPER envelope)
 
 ---
 
-## Rotation und Encoder-Objekte: Kombination
+## Rotation and encoder objects: combination
 
-In einer Produktion mit gemischten Quellen (aufgenommene Ambisonics-Felder + Encoder-Objekte) kann ein SceneRotator den aufgenommenen Teil der Szene unabhängig von den Encoder-Objekten rotieren:
+In a production with mixed sources (recorded Ambisonics fields + encoder objects) a SceneRotator can rotate the recorded part of the scene independently of the encoder objects:
 
 ```
-[Aufnahme-Track B-Format]  → [SceneRotator] ──┐
-                                               ├── [Summierungsbus] → [AmbiDecoder]
-[Encoder-Tracks]           ────────────────────┘
+[Recording track B-format]  → [SceneRotator] ──┐
+                                               ├── [Summing bus] → [AmbiDecoder]
+[Encoder tracks]            ───────────────────┘
 ```
 
-So dreht sich nur der aufgenommene Raumklang, während die komponierten Objekte an ihren Positionen bleiben – oder umgekehrt.
+This way only the recorded room sound rotates while the composed objects stay in their positions – or the other way round.
 
 ---
 
-## Weiterführende Seiten
+## Further reading
 
-- [Ambisonics-Mikrofon aufnehmen – A-Format, B-Format und die ICST-Integration](/post/ambisonics-mikrofon-a-format-b-format/)
-- [Binaural Monitoring im ICST-Workflow](/post/binaural-monitoring-icst-workflow/)
+- [Recording with an Ambisonics microphone – A-format, B-format and ICST integration](/post/ambisonics-mikrofon-a-format-b-format/)
+- [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/)
 - [GyrOSC & ICST AmbiPlugins](/post/gyrosc/)
-- [ICST AmbiEncoder – OSC Syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
-- [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)
+- [ICST AmbiEncoder – OSC syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+- [Why the decoder sounds the way it does – methodological context](/post/decoder-methodological-context/)
