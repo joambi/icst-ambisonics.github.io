@@ -43,7 +43,7 @@ Stand 11.11.2026. Komponenten mit dem Status **Beta** sind zur Evaluation freige
 | [ICST Ambisonics Plugins](/de/icst-ambisonics-plugins/) (Core) | AmbiEncoder, AmbiEncoder_64, AmbiDecoder, MultiDecoder, Monitor, Animator | VST3, AU; LV2 experimentell; macOS, Windows | Stabil | GPL3 | [schweizerweb/icst-ambisonics-plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases) |
 | ICST AmbiPlugins (Extended) | AmbiIRVerb, AmbiIRLayers, AmbiGran 16 | VST3; macOS, Windows | Beta, nicht signiert | Offen; IRidesce-Material mit eigener Rechtenotiz | [joambi/ICST-AmbiPlugins](https://github.com/joambi/ICST-AmbiPlugins/releases) |
 | [ICST Ambisonics Tools für Max](/de/icst-ambisonics-tools/) | `ambiencode~`, `mc.ambiencode~`, `ambidecode~`, `ambipanning~`, `ambimonitor`, `ambicontrol` u. a. | Max 8, Max Package Manager | Stabil | Frei | ICST / ZHdK |
-| ICST Ambisonics Bundle (`ICST_Ambi_Reaper`) | Portabler REAPER-Ordner: Toolbar, Lua-Skripte, ICST- und IEM-VST3, SWS, js_ReaScriptAPI, ReaPack, Doku | REAPER 7; macOS (Apple Silicon empfohlen), Windows | macOS vollständig, Windows Beta ungetestet | Gemischt, Gesamtpaket offen | [joambi/ICST-AmbiPlugins](https://github.com/joambi/ICST-AmbiPlugins/releases) |
+| [ICST Ambisonics Bundle (`ICST_Ambi_Reaper`)](/de/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) | Portabler REAPER-Ordner: Toolbar, Lua-Skripte, ICST- und IEM-VST3, SWS, js_ReaScriptAPI, ReaPack, Doku | REAPER 7; macOS (Apple Silicon empfohlen), Windows | macOS vollständig, Windows Beta ungetestet | Gemischt, Gesamtpaket offen | [joambi/ICST-AmbiPlugins](https://github.com/joambi/ICST-AmbiPlugins/releases) |
 | [ICST Animator](/de/icst-ambisonics-plugins/11_animator/) | Zeitleisten-Animation von Quellengruppen im Multi-AmbiEncoder_64, Szenen als XML | macOS, Windows | Doku erschienen mit Plugins 4.0 | Offen | ICST |
 | [ICST Animator Choreographer](/de/post/icst-animator-choreographer/) | Desktop-App, die Animator-Szenen-XML in fünf Schritten erzeugt; Regionen-Import aus REAPER per CSV; optional Entwurf aus einer Beschreibung mit lokalem Modell (Ollama) | macOS; App nicht signiert | In Entwicklung | GPL3 | ICST |
 | [Motion Map](/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/), [Kristall Motion Map](/de/icst-ambisonics-plugins/18_kristall_motion_map/), [Motion Markers](/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) | Bewegungsformen mit Figure-Editor, Kristallgitter und markerbasierte Bewegung für AmbiEncoder_64 | REAPER-Lua, Python 3 für OSC-Vorschau | Stabil | Frei | [joambi/icst-ambisonics.github.io](https://github.com/joambi/icst-ambisonics.github.io) |
@@ -60,10 +60,3 @@ Stand 11.11.2026. Komponenten mit dem Status **Beta** sind zur Evaluation freige
 | [SWS](https://www.sws-extension.org), [js_ReaScriptAPI](https://forum.cockos.com/showthread.php?t=212174), [ReaPack](https://reapack.com) | Bundle-Skripte | Frei | Auf Windows selbst installieren |
 | dearVR AMBI MICRO | Ersatzweg des Binaural-Skripts | Proprietär, eingestellt | Wird nicht mehr gepflegt; nicht für neue Projekte |
 | Python 3 | Motion Map, Kristall Motion Map | PSF | Nur für die OSC-Vorschau |
-
-## Offene Punkte
-
-- Lizenz für das Gesamtpaket des Bundles und für ICST AmbiPlugins festlegen.
-- Windows-Durchlauf des Bundles abnehmen.
-- dearVR-Ersatzweg im Binaural-Skript ersetzen oder als Altlast kennzeichnen.
-- Institutionelle Pflege und Zuständigkeit je Komponente für die Zeit nach der ICST-Übergabe klären.
