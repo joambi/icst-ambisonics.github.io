@@ -14,7 +14,7 @@ kind: "tutorial"
 tool: ["AmbiEncoder", "Lua"]
 ---
 
-# ICST AmbiEncoder_64 Spiral Walk - Dokumentation
+## ICST AmbiEncoder_64 Spiral Walk - Dokumentation
 
 Level: Advanced | **Audience:** ReaScript user, Technical artist.
 
@@ -81,7 +81,7 @@ DOWNLOAD ICST LuaScripts:
 - Min Radius < 0.1 ist nicht erlaubt (Verhinderung unphysikalischer Spiralen)
 
 ---
-# Example:
+## Example:
 
 Spiral_Walk_out:
 Spiral_Walk_in:

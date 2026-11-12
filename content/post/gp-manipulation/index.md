@@ -14,7 +14,7 @@ kind: "tutorial"
 tool: ["MultiEncoder", "Animator"]
 ---
 
-# Group Animation
+## Group Animation
 
 Level: Intermediate | **Audience:** Composer, Live performer.
 

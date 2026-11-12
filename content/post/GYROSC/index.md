@@ -67,7 +67,7 @@ The GyrOSC app will send the 'Gravity' data via OSC (port 50001) to the ICST Mul
 
 ---
 
-# Inspirations:
+## Inspirations:
 
 Level: Intermediate | **Audience:** Mobile-controller user, Performer.
 

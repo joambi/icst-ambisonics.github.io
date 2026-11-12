@@ -17,7 +17,7 @@ tool: ["OSC", "REAPER"]
 ---
 
 --
-# ICST AmbiEncoder sendet OSC zu FX-Plugins-Parameter
+## ICST AmbiEncoder sendet OSC zu FX-Plugins-Parameter
 
 **Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Sound Engineer.
 

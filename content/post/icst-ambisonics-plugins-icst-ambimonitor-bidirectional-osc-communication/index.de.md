@@ -16,7 +16,7 @@ kind: "tutorial"
 tool: ["Max", "OSC"]
 ---
 
-# Bidirektionale OSC-Kommunikation mit MaxMSP
+## Bidirektionale OSC-Kommunikation mit MaxMSP
 
 **Für wen:** Level: Advanced | Zielgruppe: Max/MSP- und OSC-Integrator:in.
 

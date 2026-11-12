@@ -179,6 +179,6 @@ So dreht sich nur der aufgenommene Raumklang, während die komponierten Objekte 
 
 - [Ambisonics-Mikrofon aufnehmen – A-Format, B-Format und die ICST-Integration](/post/ambisonics-mikrofon-a-format-b-format/)
 - [Binaural Monitoring im ICST-Workflow](/post/binaural-monitoring-icst-workflow/)
-- [GyrOSC & ICST AmbiPlugins](/post/gyrosc-icst-ambi/)
-- [ICST AmbiEncoder – OSC Syntax](/post/icst-ambiencoder-osc-syntax/)
+- [GyrOSC & ICST AmbiPlugins](/post/gyrosc/)
+- [ICST AmbiEncoder – OSC Syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 - [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/post/decoder-methodischer-kontext/)

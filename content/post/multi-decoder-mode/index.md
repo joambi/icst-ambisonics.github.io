@@ -14,7 +14,7 @@ kind: "reference"
 tool: ["AmbiDecoder"]
 ---
 
-# Multi-Decoder Mode
+## Multi-Decoder Mode
 
 Level: Advanced | **Audience:** Technician, Studio engineer.
 

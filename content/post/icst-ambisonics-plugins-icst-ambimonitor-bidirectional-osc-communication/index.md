@@ -16,7 +16,7 @@ kind: "tutorial"
 tool: ["Max", "OSC"]
 ---
 
-# Bidirectional OSC Communication with MaxMSP
+## Bidirectional OSC Communication with MaxMSP
 
 Level: Advanced | **Audience:** Max/MSP and OSC integrator.
 

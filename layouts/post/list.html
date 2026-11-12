@@ -185,7 +185,7 @@
     </div>
     {{ $groups := slice
       (dict "key" "kind" "label" (cond $isDe "Art" "Type") "items" (slice (dict "v" "tutorial" "l" (cond $isDe "Tutorial" "Tutorial")) (dict "v" "reference" "l" (cond $isDe "Referenz" "Reference")) (dict "v" "background" "l" (cond $isDe "Hintergrund" "Background")) (dict "v" "news" "l" "News")))
-      (dict "key" "tool" "label" (cond $isDe "Werkzeug" "Tool") "items" (slice (dict "v" "ambiencoder" "l" "AmbiEncoder") (dict "v" "ambidecoder" "l" "AmbiDecoder") (dict "v" "animator" "l" "Animator") (dict "v" "osc" "l" "OSC") (dict "v" "reaper" "l" "REAPER") (dict "v" "max" "l" "Max") (dict "v" "lua" "l" "Lua")))
+      (dict "key" "tool" "label" (cond $isDe "Werkzeug" "Tool") "items" (slice (dict "v" "ambiencoder" "l" "AmbiEncoder") (dict "v" "ambidecoder" "l" "AmbiDecoder") (dict "v" "animator" "l" "Animator") (dict "v" "osc" "l" "OSC") (dict "v" "reaper" "l" "REAPER") (dict "v" "max" "l" "Max") (dict "v" "lua" "l" "Lua") (dict "v" "ableton" "l" "Ableton") (dict "v" "multiencoder" "l" "MultiEncoder") (dict "v" "binaural" "l" "Binaural") (dict "v" "recording" "l" "Recording") (dict "v" "delivery" "l" "Delivery")))
       (dict "key" "level" "label" "Level" "items" (slice (dict "v" "beginner" "l" "Beginner") (dict "v" "intermediate" "l" "Intermediate") (dict "v" "advanced" "l" "Advanced"))) }}
     {{ range $groups }}
     <div class="tutorial-filters" role="group" data-group="{{ .key }}" aria-label="{{ .label }}">

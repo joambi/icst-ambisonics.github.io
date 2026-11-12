@@ -14,7 +14,7 @@ kind: "tutorial"
 tool: ["MultiEncoder", "Animator"]
 ---
 
-# Gruppenanimation
+## Gruppenanimation
 
 **Für wen:** Level: Intermediate | Zielgruppe: Komponist:in, Live-Performer:in.
 

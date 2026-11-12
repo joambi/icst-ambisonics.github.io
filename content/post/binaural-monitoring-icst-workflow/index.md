@@ -134,5 +134,5 @@ Mehr dazu im Artikel [Von der Ambisonics-Szene zum Atmos Bed](/post/ambisonics-t
 
 - [ICST AmbiDecoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
 - [Von der Ambisonics-Szene zum Atmos Bed](/post/ambisonics-to-atmos-bed/)
-- [ICST AmbiEncoder – OSC Syntax](/post/icst-ambiencoder-osc-syntax/) *(für Head-Tracking-Integration via OSC)*
-- [GyrOSC & ICST AmbiPlugins](/post/gyrosc-icst-ambi/)
+- [ICST AmbiEncoder – OSC Syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/) *(für Head-Tracking-Integration via OSC)*
+- [GyrOSC & ICST AmbiPlugins](/post/gyrosc/)
