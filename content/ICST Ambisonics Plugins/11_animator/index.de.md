@@ -10,6 +10,8 @@ description: "Tutorial und Referenz zum ICST Animator: Quellengruppen im Multi-A
 
 Niveau: Fortgeschritten | Zielgruppe: Komponierende, Technik, Studierende, Interactive-Media-Anwender:innen. | **Version: ICST Ambisonics Plugins 4.0**
 
+> **Szenen planen:** Mit dem [Animator Choreographer](/de/icst-ambisonics-plugins/20_animator_choreographer/) erzeugst du die Szenen-XML für den Animator aus einem Plan.
+
 <!-- TODO Release: Download-Link einsetzen -->
 ![Multi-AmbiEncoder_64 mit vier Gruppen und der Animator-Timeline](AT-BAS-05-Animator-Overview.webp)
 

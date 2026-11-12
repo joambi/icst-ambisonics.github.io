@@ -10,6 +10,8 @@ description: "Tutorial and reference for the ICST Animator: move, rotate and tra
 
 Level: Intermediate | Audience: Composer, technician, student, interactive-media user. | **Version: ICST Ambisonics Plugins 4.0**
 
+> **Plan scenes:** With the [Animator Choreographer](/icst-ambisonics-plugins/20_animator_choreographer/) you create the scene XML for the Animator from a plan.
+
 <!-- TODO release: insert download link -->
 ![Multi-AmbiEncoder_64 with four groups and the Animator timeline](AT-BAS-05-Animator-Overview.webp)
 
