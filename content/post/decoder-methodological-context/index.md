@@ -11,6 +11,8 @@ key_points:
   - "Spherical harmonics are the mathematical basis of Ambisonics decoding"
   - "The decoder projects the field onto loudspeakers without redefining the field itself"
 difficulty: "intermediate"
+kind: "background"
+tool: ["AmbiDecoder"]
 ---
 
 Level: Intermediate | **Audience:** Composer, student, technically curious reader.

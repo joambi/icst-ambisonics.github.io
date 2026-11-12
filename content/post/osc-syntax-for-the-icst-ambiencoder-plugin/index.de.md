@@ -12,6 +12,8 @@ key_points:
   - "Quellposition in AED- oder XYZ-Koordinaten von beliebigen OSC-Sendern steuern"
 DisableComments: false
 difficulty: "intermediate"
+kind: "reference"
+tool: ["OSC"]
 ---
 
 ## OSC Syntax für das ICST AmbiEncoder Plugin

@@ -1,5 +1,5 @@
 ---
-title: OSC in ICST AmbiEncoder - The 10 Most Important Messages
+title: OSC in ICST AmbiEncoder – The 10 Most Important Messages
 description: "Practical OSC quick reference for ICST AmbiEncoder, covering the essential message types, setup guidance, and a debugging checklist."
 date: 2026-03-08T11:50:00+01:00
 year: 2026
@@ -10,6 +10,8 @@ key_points:
   - "Die 10 wichtigsten OSC-Messages für den ICST AmbiEncoder auf einen Blick"
   - "OSC-Verbindung in 2 Minuten einrichten und mit Checkliste debuggen"
 difficulty: "intermediate"
+kind: "reference"
+tool: ["OSC"]
 ---
 
 

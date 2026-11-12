@@ -16,6 +16,7 @@ defaultContentLanguage = 'en'
     weight = 2
 
 [params]
+disableTitleCapitalization = true
 title = "ICST Ambisonics"
 authorName = "Johannes Schuett"
 email = "johannes.schuett@zhdk.ch"
@@ -202,12 +203,6 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     parent = "tools-osc"
     weight = 403
     url = "/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
-
-    [[menu.main]]
-    name = "B-Format Archive"
-    parent = "tools-osc"
-    weight = 405
-    url = "/blog/b-format-archive/"
 
     [[menu.main]]
     name = "Best Practices"

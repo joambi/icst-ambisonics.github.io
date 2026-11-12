@@ -12,6 +12,8 @@ key_points:
   - "Use physical knob control for spatial source positioning in live performance"
 DisableComments: false
 difficulty: "advanced"
+kind: "tutorial"
+tool: ["AmbiEncoder", "OSC"]
 ---
 
 Level: Intermediate | **Audience:** Spatial performer, controller-based workflow user.

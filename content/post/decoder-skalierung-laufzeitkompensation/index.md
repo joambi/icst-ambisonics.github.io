@@ -11,6 +11,8 @@ key_points:
   - "Laufzeit-Delays werden automatisch aus den Distanzangaben berechnet"
   - "Ohne Laufzeitkompensation bei ungleichen Abständen entsteht ein inkohärentes Klangbild"
 difficulty: "intermediate"
+kind: "reference"
+tool: ["AmbiDecoder"]
 ---
 
 Level: Intermediate | **Audience:** Techniker:in, Installationskünstler:in, Studiobetreiber:in.

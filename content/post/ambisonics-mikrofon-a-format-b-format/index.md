@@ -11,6 +11,8 @@ key_points:
   - "Die A→B-Konvertierung braucht ein mikrofonspezifisches Plugin – keine generische Matrix"
   - "FOA-Mikrofone liefern 1st-Order-B-Format: räumlich begrenzt, aber ideal für Raumakustik, Atmo und Texturen"
 difficulty: "intermediate"
+kind: "tutorial"
+tool: ["Recording"]
 ---
 
 Level: Intermediate | **Audience:** Komponist:in, Sounddesigner:in, Recording-Techniker:in.

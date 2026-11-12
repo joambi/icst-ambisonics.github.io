@@ -15,6 +15,8 @@ key_points:
   - "Use device tilt for live spatial control or synchronised swarm motion"
 author: Johannes Schuett
 difficulty: "advanced"
+kind: "tutorial"
+tool: ["AmbiEncoder", "OSC"]
 ---
 
 ICST MultiEncoder and iOS [GyrOSC.app ](https://www.bitshapesoftware.com/instruments/gyrosc/)

@@ -10,6 +10,8 @@ key_points:
   - "Bis zu vier unabhängige Decoder im ICST AmbiDecoder konfigurieren"
   - "Separate Lautsprechergruppen, Ambisonics-Order und Filter pro Decoder zuweisen"
 difficulty: "intermediate"
+kind: "reference"
+tool: ["AmbiDecoder"]
 ---
 
 # Multi-Decoder Modus

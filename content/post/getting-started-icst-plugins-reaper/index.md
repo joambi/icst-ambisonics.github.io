@@ -1,5 +1,5 @@
 ---
-title: Getting Started with ICST Ambisonics Plugins in Reaper
+title: Getting Started with ICST Ambisonics Plugins in REAPER
 description: "A practical starter guide for composers, students, and technicians to set up ICST Ambisonics Plugins in Reaper and complete a first working session."
 date: 2026-03-08T14:10:00+01:00
 year: 2026
@@ -10,6 +10,8 @@ key_points:
   - "Complete a first working spatial audio session in REAPER step by step"
   - "Structured checklist from plugin install to binaural monitoring"
 difficulty: "beginner"
+kind: "tutorial"
+tool: ["REAPER", "AmbiEncoder"]
 ---
 
 

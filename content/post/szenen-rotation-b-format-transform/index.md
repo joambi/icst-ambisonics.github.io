@@ -11,6 +11,8 @@ key_points:
   - "IEM SceneRotator unterstützt Euler-Winkel (Yaw/Pitch/Roll) und Quaternionen – beide via OSC steuerbar"
   - "REAPER-Automation-Envelopes erlauben kompositorische Rotation als parametrische Kurve"
 difficulty: "intermediate"
+kind: "tutorial"
+tool: ["REAPER", "OSC"]
 ---
 
 Level: Intermediate | **Audience:** Komponist:in, Live-Techniker:in, Recording-Techniker:in.

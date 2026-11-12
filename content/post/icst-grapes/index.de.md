@@ -1,5 +1,5 @@
 ---
-title: ICST AmbiPlugins & Grapes – 3D Kontrolle
+title: ICST AmbiPlugins & Grapes – 3D-Kontrolle
 description: "Stellt die Grapes-3D-Control-Integration mit dem AmbiEncoder/Reaper vor und beschreibt OSC-Sync zwischen Controller und Plugin."
 date: 2025-03-16T09:44:58+01:00
 year: 2025
@@ -12,6 +12,8 @@ key_points:
   - "Raumquellen im Live-Einsatz mit physischen Reglern steuern"
 DisableComments: false
 difficulty: "advanced"
+kind: "tutorial"
+tool: ["AmbiEncoder", "OSC"]
 ---
 
 **Für wen:** Level: Intermediate | Zielgruppe: Spatial-Performer:in, Controller-Workflow-User.

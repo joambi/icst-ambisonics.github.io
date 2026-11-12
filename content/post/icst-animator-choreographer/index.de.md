@@ -14,6 +14,8 @@ key_points:
 DisableComments: false
 difficulty: "intermediate"
 draft: false
+kind: "tutorial"
+tool: ["Animator"]
 ---
 
 Level: Intermediate | **Zielgruppe:** Komponist:in, Sounddesigner:in | **Arbeitet mit:** [ICST Animator](/de/icst-ambisonics-plugins/11_animator/)
@@ -25,6 +27,8 @@ Der **Animator Choreographer** ist eine Desktop-App, mit der du planst, wie sich
 {{< /notice >}}
 
 ![Der Schritt Form im Animator Choreographer: Abschnitte, Raumgrösse und Encoder links, Draufsicht, Seitenansicht und Zeitleiste rechts](/images/icst-animator-choreographer-form.jpg)
+
+Eine kurze Referenzseite steht in der Plugin-Doku: [Animator Choreographer](/de/icst-ambisonics-plugins/20_animator_choreographer/).
 
 ## Was sie tut
 

@@ -12,6 +12,8 @@ key_points:
   - "Quellenwinkel im Euler-Format zwischen Max-Patches und REAPER senden und empfangen"
 DisableComments: false
 difficulty: "advanced"
+kind: "tutorial"
+tool: ["Max", "OSC"]
 ---
 
 # Bidirektionale OSC-Kommunikation mit MaxMSP

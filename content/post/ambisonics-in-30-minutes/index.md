@@ -1,5 +1,5 @@
 ---
-title: "Ambisonics in 30 Minutes: Your First Working Reaper Session Flow"
+title: "Ambisonics in 30 Minutes: Your First Working REAPER Session Flow"
 description: "A fast onboarding tutorial to build a stable first Ambisonics session in Reaper with ICST plugins."
 date: 2026-03-09T09:00:00+01:00
 year: 2026
@@ -10,6 +10,8 @@ key_points:
   - "Build encoder → B-format bus → decoder routing from scratch in REAPER"
   - "Diagnose and fix the most common first-session errors"
 difficulty: "beginner"
+kind: "tutorial"
+tool: ["REAPER"]
 ---
 
 

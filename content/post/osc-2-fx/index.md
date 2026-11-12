@@ -12,6 +12,8 @@ key_points:
   - "Build synchronized spatial-position and reverb control from a single OSC stream"
 DisableComments: false
 difficulty: "advanced"
+kind: "tutorial"
+tool: ["OSC", "REAPER"]
 ---
 
 --

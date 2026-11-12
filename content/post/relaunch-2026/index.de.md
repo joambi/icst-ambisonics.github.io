@@ -1,5 +1,5 @@
 ---
-title: Ambisonics.ch Relaunch 2026 - Was ist neu
+title: Ambisonics.ch Relaunch 2026 – Was ist neu
 description: "Überblick über die neue Struktur von ambisonics.ch mit klaren Einstiegen in Tutorials, Studio Cases, Downloads und Dokumentation."
 date: 2026-03-08T11:30:00+01:00
 year: 2026
@@ -10,6 +10,7 @@ key_points:
   - "Überblick über die neue Struktur von ambisonics.ch: Tutorials, Blog, Docs, Downloads"
   - "Direkte Einstiegspunkte für Einsteiger, Komposition und Forschung"
 difficulty: "intermediate"
+kind: "news"
 ---
 
 

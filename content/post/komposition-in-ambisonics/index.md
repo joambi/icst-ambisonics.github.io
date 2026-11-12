@@ -9,6 +9,7 @@ categories:
   - ICST Ambisonics Workshop
   - Composition
 difficulty: "intermediate"
+kind: "background"
 ---
 
 Am besten bereitest du dich auf Ambisonics wie auf ein eigenes Instrument vor: nicht nur „mehr Raum", sondern ein kompositorisches System mit Perspektive, Bewegung, Dichte und Übersetzung in verschiedene Wiedergabesituationen.

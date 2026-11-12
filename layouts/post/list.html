@@ -161,6 +161,13 @@
     </div>
   </div>
 
+  <style>
+    .tutorial-search__input{width:100%;max-width:46rem;box-sizing:border-box;padding:.7rem 1rem;font-size:1.4rem;border:1px solid #464646;border-radius:8px;background:transparent;color:inherit;margin:.2rem 0 1rem}
+    .theme--light .tutorial-search__input{border-color:#ccc}
+    .tutorial-search__input:focus{outline:none;border-color:#6086b4;box-shadow:0 0 0 2px rgba(96,134,180,.3)}
+    .tutorial-filters{align-items:center}
+    .tutorial-filters__label{min-width:8.5rem;font-size:1.15rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#9f9f9f}
+  </style>
   <div class="docs-index animated fadeInDown">
     <div data-tutorials-root>
     <div class="archive__heading">
@@ -173,15 +180,21 @@
         Looking for studio news and residency updates? You can find them in the <a href="/blog/">Studio Blog</a>.
       {{ end }}
     </p>
-    <div class="tutorial-filters" role="group" aria-label="{{ if eq .Site.Language.Lang "de" }}Tutorial Filter{{ else }}Tutorial filters{{ end }}">
-      <button type="button" class="tutorial-filters__btn is-active" data-filter="all">{{ if eq .Site.Language.Lang "de" }}Alle{{ else }}All{{ end }}</button>
-      <button type="button" class="tutorial-filters__btn" data-filter="beginner">{{ if eq .Site.Language.Lang "de" }}Beginner{{ else }}Beginner{{ end }}</button>
-      <button type="button" class="tutorial-filters__btn" data-filter="intermediate">{{ if $isDe }}Intermediate{{ else }}Intermediate{{ end }}</button>
-      <button type="button" class="tutorial-filters__btn" data-filter="advanced">{{ if $isDe }}Advanced{{ else }}Advanced{{ end }}</button>
-      <button type="button" class="tutorial-filters__btn" data-filter="osc">OSC</button>
-      <button type="button" class="tutorial-filters__btn" data-filter="reaper">Reaper</button>
-      <button type="button" class="tutorial-filters__btn" data-filter="max">Max</button>
+    <div class="tutorial-search">
+      <input type="search" class="tutorial-search__input" data-search placeholder="{{ if $isDe }}Tutorials durchsuchen …{{ else }}Search tutorials …{{ end }}" aria-label="{{ if $isDe }}Suche{{ else }}Search{{ end }}">
     </div>
+    {{ $groups := slice
+      (dict "key" "kind" "label" (cond $isDe "Art" "Type") "items" (slice (dict "v" "tutorial" "l" (cond $isDe "Tutorial" "Tutorial")) (dict "v" "reference" "l" (cond $isDe "Referenz" "Reference")) (dict "v" "background" "l" (cond $isDe "Hintergrund" "Background")) (dict "v" "news" "l" "News")))
+      (dict "key" "tool" "label" (cond $isDe "Werkzeug" "Tool") "items" (slice (dict "v" "ambiencoder" "l" "AmbiEncoder") (dict "v" "ambidecoder" "l" "AmbiDecoder") (dict "v" "animator" "l" "Animator") (dict "v" "osc" "l" "OSC") (dict "v" "reaper" "l" "REAPER") (dict "v" "max" "l" "Max") (dict "v" "lua" "l" "Lua")))
+      (dict "key" "level" "label" "Level" "items" (slice (dict "v" "beginner" "l" "Beginner") (dict "v" "intermediate" "l" "Intermediate") (dict "v" "advanced" "l" "Advanced"))) }}
+    {{ range $groups }}
+    <div class="tutorial-filters" role="group" data-group="{{ .key }}" aria-label="{{ .label }}">
+      <span class="tutorial-filters__label">{{ .label }}</span>
+      <button type="button" class="tutorial-filters__btn is-active" data-filter="all">{{ if $isDe }}Alle{{ else }}All{{ end }}</button>
+      {{ range .items }}<button type="button" class="tutorial-filters__btn" data-filter="{{ .v }}">{{ .l }}</button>{{ end }}
+    </div>
+    {{ end }}
+    <p class="archive__intro" data-result-count aria-live="polite"></p>
     <div class="docs-index__chapters">
       {{ range $i, $page := $pages }}
         {{ $tags := slice }}
@@ -207,7 +220,8 @@
           {{ $audience = replaceRE `(?im)^.*\*\*Audience:\*\*\s*([^\n\.]+).*$` `$1` (index $audienceMatch 0) }}
         {{ end }}
         {{ $filterText := printf "%s %s %s %s %s %s" (delimit $tags " ") (lower $page.Title) (lower $page.RelPermalink) $difficulty $levelLower (lower $audience) }}
-        <a class="docs-index__chapter" href="{{ $page.RelPermalink }}" data-filter-text="{{ $filterText }}">
+        {{ $toolIds := slice }}{{ range $page.Params.tool }}{{ $toolIds = $toolIds | append (replaceRE `[^a-z0-9]` "" (lower .)) }}{{ end }}
+        <a class="docs-index__chapter" href="{{ $page.RelPermalink }}" data-filter-text="{{ $filterText }}" data-kind="{{ lower (default "" $page.Params.kind) }}" data-tool="{{ delimit $toolIds " " }}" data-level="{{ $difficulty }}">
           <div class="docs-index__chapter-number">{{ add $i 1 }}</div>
           <div class="docs-index__chapter-info">
             <div class="docs-index__chapter-title">
@@ -261,53 +275,65 @@
     (function () {
       var root = document.querySelector("[data-tutorials-root]");
       if (!root) return;
-      var buttons = Array.prototype.slice.call(root.querySelectorAll("[data-filter]"));
       var cards = Array.prototype.slice.call(root.querySelectorAll(".docs-index__chapter[data-filter-text]"));
-      var matchers = {
-        all: function () { return true; },
-        beginner: function (text) { return text.indexOf("beginner") !== -1 || text.indexOf("getting started") !== -1 || text.indexOf("quick start") !== -1; },
-        intermediate: function (text) { return text.indexOf("intermediate") !== -1; },
-        advanced: function (text) { return text.indexOf("advanced") !== -1 || text.indexOf("reference") !== -1 || text.indexOf("syntax") !== -1; },
-        osc: function (text) { return text.indexOf("osc") !== -1; },
-        reaper: function (text) { return text.indexOf("reaper") !== -1; },
-        max: function (text) { return text.indexOf("max") !== -1 || text.indexOf("maxmsp") !== -1 || text.indexOf("msp") !== -1; }
-      };
+      var groups = Array.prototype.slice.call(root.querySelectorAll("[data-group]"));
+      var search = root.querySelector("[data-search]");
+      var count = root.querySelector("[data-result-count]");
+      var state = { kind: "all", tool: "all", level: "all", q: "" };
+      var legacy = { beginner: "level", intermediate: "level", advanced: "level", osc: "tool", reaper: "tool", max: "tool" };
+      var isDe = document.documentElement.lang === "de";
 
-      function applyFilter(key) {
-        var matcher = matchers[key] || matchers.all;
-        var activeKey = matchers[key] ? key : "all";
-        cards.forEach(function (card) {
-          var text = (card.getAttribute("data-filter-text") || "").toLowerCase();
-          var show = matcher(text);
-          card.classList.toggle("is-hidden", !show);
-        });
-        buttons.forEach(function (btn) {
-          var isActive = btn.getAttribute("data-filter") === activeKey;
-          btn.classList.toggle("is-active", isActive);
-          btn.setAttribute("aria-pressed", isActive ? "true" : "false");
-        });
-        if (window.location.hash !== "#" + activeKey) {
-          if (window.history && window.history.replaceState) {
-            window.history.replaceState(null, "", "#" + activeKey);
-          } else {
-            window.location.hash = activeKey;
-          }
+      function matches(card) {
+        var kind = card.getAttribute("data-kind") || "";
+        var tools = (card.getAttribute("data-tool") || "").split(" ");
+        var level = card.getAttribute("data-level") || "";
+        var text = (card.getAttribute("data-filter-text") || "").toLowerCase();
+        if (state.kind !== "all" && kind !== state.kind) return false;
+        if (state.tool !== "all" && tools.indexOf(state.tool) === -1 && text.indexOf(state.tool) === -1) return false;
+        if (state.level !== "all" && level !== state.level) return false;
+        if (state.q) {
+          var words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+          for (var i = 0; i < words.length; i++) { if (text.indexOf(words[i]) === -1) return false; }
         }
+        return true;
       }
 
-      buttons.forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          applyFilter(btn.getAttribute("data-filter") || "all");
+      function render() {
+        var shown = 0;
+        cards.forEach(function (card) {
+          var ok = matches(card);
+          card.classList.toggle("is-hidden", !ok);
+          if (ok) shown++;
+        });
+        groups.forEach(function (g) {
+          var key = g.getAttribute("data-group");
+          Array.prototype.forEach.call(g.querySelectorAll("[data-filter]"), function (btn) {
+            var active = btn.getAttribute("data-filter") === state[key];
+            btn.classList.toggle("is-active", active);
+            btn.setAttribute("aria-pressed", active ? "true" : "false");
+          });
+        });
+        if (count) count.textContent = shown + (isDe ? " von " : " of ") + cards.length + (isDe ? " Tutorials" : " tutorials");
+      }
+
+      groups.forEach(function (g) {
+        var key = g.getAttribute("data-group");
+        g.addEventListener("click", function (e) {
+          var btn = e.target.closest("[data-filter]");
+          if (!btn) return;
+          state[key] = btn.getAttribute("data-filter") || "all";
+          render();
         });
       });
+      if (search) search.addEventListener("input", function () { state.q = search.value.trim(); render(); });
 
-      var hashKey = (window.location.hash || "").replace(/^#/, "").toLowerCase();
-      applyFilter(matchers[hashKey] ? hashKey : "all");
-
-      window.addEventListener("hashchange", function () {
-        var nextKey = (window.location.hash || "").replace(/^#/, "").toLowerCase();
-        applyFilter(matchers[nextKey] ? nextKey : "all");
-      });
+      function fromHash() {
+        var h = (window.location.hash || "").replace(/^#/, "").toLowerCase();
+        if (legacy[h]) state[legacy[h]] = h;
+      }
+      fromHash();
+      window.addEventListener("hashchange", function () { fromHash(); render(); });
+      render();
     })();
   </script>
 {{ end }}

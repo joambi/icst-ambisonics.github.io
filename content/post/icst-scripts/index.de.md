@@ -10,6 +10,8 @@ key_points:
   - "Spiral-Walk-ReaScript installieren und Spiralbewegungs-Envelopes in REAPER erzeugen"
   - "GUI-Parameter und LFO-Logik des Spiral-Algorithmus verstehen"
 difficulty: "advanced"
+kind: "tutorial"
+tool: ["AmbiEncoder", "Lua"]
 ---
 
 # ICST AmbiEncoder_64 Spiral Walk - Dokumentation

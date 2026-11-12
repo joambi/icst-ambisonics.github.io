@@ -11,6 +11,8 @@ key_points:
   - "Filter kompensieren raumakustische Probleme oder unterstützen eine vorsichtige psychoakustische Abstimmung"
   - "Im MultiDecoder-Modus kann jede Decoder-Einheit eine eigene Filtersektion erhalten"
 difficulty: "intermediate"
+kind: "tutorial"
+tool: ["AmbiDecoder"]
 ---
 
 Level: Intermediate | **Audience:** Techniker:in, Komponist:in mit technischem Interesse, Studiobetreiber:in.

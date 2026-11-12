@@ -14,6 +14,8 @@ key_points:
   - "Quellen mit CircleSelected-Presets auf einem Kreis in REAPER positionieren"
   - "Quellenposition-Presets interaktiv speichern, laden und verwalten"
 difficulty: "intermediate"
+kind: "tutorial"
+tool: ["AmbiEncoder", "Lua"]
 ---
 
 # ICST_AmbiEncoder_64_CircleSelected_Lua-Presets

@@ -10,6 +10,8 @@ key_points:
   - "Animate source groups with LFO, manual recording, or quaternion motion"
   - "Drive group motion from an external OSC source into REAPER envelopes"
 difficulty: "intermediate"
+kind: "tutorial"
+tool: ["MultiEncoder", "Animator"]
 ---
 
 # Group Animation

@@ -1,5 +1,5 @@
 ---
-title: Reaper Ambisonics Setup in 20 Minutes (ICST Workflow)
+title: REAPER Ambisonics Setup in 20 Minutes (ICST Workflow)
 description: "Step-by-step quickstart for a stable Reaper Ambisonics setup with ICST plugins, routing, and a first monitoring check."
 date: 2026-03-08T11:40:00+01:00
 year: 2026
@@ -10,6 +10,8 @@ key_points:
   - "ICST AmbiEncoder, B-Format-Bus und Decoder in 20 Minuten aufsetzen"
   - "Routing prüfen und ersten Raumklang-Test in REAPER durchführen"
 difficulty: "beginner"
+kind: "tutorial"
+tool: ["REAPER", "AmbiEncoder"]
 ---
 
 

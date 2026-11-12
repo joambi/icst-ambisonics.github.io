@@ -10,6 +10,8 @@ key_points:
   - "Stereo-Produktionsdenken in einen 7th-Order-Ambisonics-Workflow überführen"
   - "Kontrollierte Quellbewegungen gestalten und HOA7-Export prüfen"
 difficulty: "intermediate"
+kind: "tutorial"
+tool: ["REAPER"]
 ---
 
 

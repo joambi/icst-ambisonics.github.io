@@ -11,6 +11,8 @@ key_points:
   - "REAPER: 'Multichannel tracks to multichannel files' muss im Render-Dialog aktiv sein"
   - "Kanalzahl am B-Format-Bus und Ordnungszahl im Decoder müssen identisch sein"
 difficulty: "intermediate"
+kind: "tutorial"
+tool: ["REAPER"]
 ---
 
 Level: Intermediate | **Audience:** Komponist:in, Techniker:in, Toningenieur:in.
