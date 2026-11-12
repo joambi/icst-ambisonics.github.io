@@ -12,6 +12,8 @@
     </div>
   {{ end }}
 
+  <details class="blog-guides" id="blogGuides">
+    <summary>{{ if $isDe }}Empfohlene Einstiege &amp; Themenwege{{ else }}Recommended starts &amp; topic paths{{ end }}</summary>
   <div class="post animated fadeInDown">
     <div class="post__content">
       <h2>{{ if $isDe }}Empfohlene Einstiege{{ else }}Recommended Starts{{ end }}</h2>
@@ -160,8 +162,17 @@
       </div>
     </div>
   </div>
+  </details>
+  <script>(function(){var d=document.getElementById("blogGuides");if(d&&window.matchMedia("(min-width:768px)").matches)d.open=true;})();</script>
 
   <style>
+    .blog-guides{margin:0 0 1.6rem}
+    .blog-guides>summary{cursor:pointer;font-size:1.5rem;font-weight:700;padding:.9rem 1.2rem;border:1px solid #464646;border-radius:8px;list-style:none}
+    .theme--light .blog-guides>summary{border-color:#ccc}
+    .blog-guides>summary::-webkit-details-marker{display:none}
+    .blog-guides>summary::before{content:"\25B8";display:inline-block;margin-right:.7rem;transition:transform .15s}
+    .blog-guides[open]>summary::before{transform:rotate(90deg)}
+    .blog-guides[open]>summary{margin-bottom:1rem}
     .tutorial-search__input{width:100%;max-width:46rem;box-sizing:border-box;padding:.7rem 1rem;font-size:1.4rem;border:1px solid #464646;border-radius:8px;background:transparent;color:inherit;margin:.2rem 0 1rem}
     .theme--light .tutorial-search__input{border-color:#ccc}
     .tutorial-search__input:focus{outline:none;border-color:#6086b4;box-shadow:0 0 0 2px rgba(96,134,180,.3)}
