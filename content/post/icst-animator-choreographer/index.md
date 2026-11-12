@@ -24,7 +24,7 @@ The **Animator Choreographer** is a desktop app for planning how groups of sourc
 **In development, unsigned.** The app is not yet code-signed and the documentation follows the current state of development. On macOS, open it the first time with right-click › Open, or remove the quarantine flag in Terminal: `xattr -dr com.apple.quarantine "Animator Choreographer.app"`.
 {{< /notice >}}
 
-![The Form step of the Animator Choreographer: sections, space size and encoder on the left, top view, side view and timeline on the right](choreographer-form.jpg)
+![The Form step of the Animator Choreographer: sections, space size and encoder on the left, top view, side view and timeline on the right](/images/icst-animator-choreographer-form.jpg)
 
 ## What it does
 
@@ -105,7 +105,7 @@ Title: Tidal Canon.
 7. For the last 8 seconds they move straight back to their starting corners and rest.
 ```
 
-![Tidal Canon in the Animator Choreographer: the plan drafted from the description, with preview and timeline](tidal-canon-demo.gif)
+![Tidal Canon in the Animator Choreographer: the plan drafted from the description, with preview and timeline](/images/icst-animator-choreographer-tidal-canon-demo.gif)
 
 *Figure: animated GIF (plays automatically, loops). The Tidal Canon plan after **Draft**: preview with four voices, side view and timeline.*
 

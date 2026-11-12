@@ -24,7 +24,7 @@ Der **Animator Choreographer** ist eine Desktop-App, mit der du planst, wie sich
 **In Entwicklung, nicht signiert.** Die App ist noch nicht codesigniert, und die Dokumentation folgt dem aktuellen Entwicklungsstand. Unter macOS öffnest du sie beim ersten Start mit Rechtsklick › Öffnen oder entfernst das Quarantäne-Flag im Terminal: `xattr -dr com.apple.quarantine "Animator Choreographer.app"`.
 {{< /notice >}}
 
-![Der Schritt Form im Animator Choreographer: Abschnitte, Raumgrösse und Encoder links, Draufsicht, Seitenansicht und Zeitleiste rechts](choreographer-form.jpg)
+![Der Schritt Form im Animator Choreographer: Abschnitte, Raumgrösse und Encoder links, Draufsicht, Seitenansicht und Zeitleiste rechts](/images/icst-animator-choreographer-form.jpg)
 
 ## Was sie tut
 
@@ -105,7 +105,7 @@ Title: Tidal Canon.
 7. For the last 8 seconds they move straight back to their starting corners and rest.
 ```
 
-![Tidal Canon im Animator Choreographer: der aus der Beschreibung entworfene Plan mit Vorschau und Zeitleiste](tidal-canon-demo.gif)
+![Tidal Canon im Animator Choreographer: der aus der Beschreibung entworfene Plan mit Vorschau und Zeitleiste](/images/icst-animator-choreographer-tidal-canon-demo.gif)
 
 *Abbildung: animiertes GIF (läuft automatisch, in Schleife). Der Plan „Tidal Canon“ nach **Draft**: Vorschau mit vier Stimmen, Seitenansicht und Zeitleiste.*
 
