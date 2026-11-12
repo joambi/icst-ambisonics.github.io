@@ -117,10 +117,23 @@ Vor dem ersten Test prüfen:
 
 <ul class="quick-start-steps" style="margin-top:0.5rem;">
   <li><strong>Beide Lua-Scripts geladen</strong> <span>Sichtbar in <em>Actions → Show action list</em> als <code>JS_Ambi_Motion_Marker_GUI</code> und <code>JS_Import_Ambi_Markers_From_CSV</code></span></li>
-  <li><strong>Python-Pfad in der GUI gesetzt</strong> <span>Das Feld <code>Python</code> zeigt auf ein gültiges Python-3-Executable — mit <code>which python3</code> im Terminal prüfen</span></li>
+  <li><strong>Python-Feld</strong> <span>Am besten <em>leer</em> lassen – das Script findet selbst ein Python 3 mit python-osc. Nur bei Fehlern den vollen Pfad eintragen (<code>which python3</code>)</span></li>
   <li><strong>python-osc installiert</strong> <span><code>pip3 install python-osc</code> für dasselbe Python-Executable ausführen</span></li>
   <li><strong>AmbiEncoder OSC-Input aktiv</strong> <span>Plugin → OSC In aktiviert, Port stimmt mit GUI-Einstellung überein (Standard <code>50001</code>)</span></li>
 </ul>
+
+## Tutorial: Deine erste Bewegung in 10 Schritten
+
+1. **`python-osc` installieren:** `python3 -m pip install python-osc`.
+2. **Beide Lua-Scripts laden** (*Actions → Show action list → New action → Load ReaScript…*). `reaper_marker_ambi_motion.py` bleibt im selben Ordner.
+3. **Spur vorbereiten:** `AmbiEncoder_64` einfügen, OSC-Eingang aktivieren, Port `50001`.
+4. **Zwei Marker anlegen:** `ambi 1 a=-45 e=0 d=0.8` und `ambi 1 a=45 e=20 d=0.5` – oder `examples/ambi_markers_aed_example.csv` importieren.
+5. **GUI starten** über die Actions-Liste. Läuft sie schon, zuerst *Terminate instances* wählen.
+6. **Felder prüfen:** *Ambi host* `127.0.0.1` (kein Leerzeichen am Ende), *Ambi port* `50001`, *Python* leer.
+7. **Paar wählen:** ersten Marker linksklicken (`S`), zweiten rechtsklicken (`E`), `Set Selection` drücken.
+8. **Vorhören:** `Send pair` drücken. Die Quelle bewegt sich im AmbiEncoder, es wird nichts aufgenommen.
+9. **Aufnehmen:** Webinterface in REAPER aktivieren (*Einstellungen → Control/OSC/web → Add → Web browser interface*, Port `8080`), AmbiEncoder-Spur wählen, `Record pair` drücken.
+10. **Serie:** `S` auf den ersten Marker einer Phrase setzen und `Send series` oder `Record series` nutzen.
 
 ## Erste Schritte
 

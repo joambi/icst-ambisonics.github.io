@@ -117,10 +117,23 @@ Before your first test, verify:
 
 <ul class="quick-start-steps" style="margin-top:0.5rem;">
   <li><strong>Both Lua scripts loaded</strong> <span>Visible in <em>Actions → Show action list</em> as <code>JS_Ambi_Motion_Marker_GUI</code> and <code>JS_Import_Ambi_Markers_From_CSV</code></span></li>
-  <li><strong>Python path set in GUI</strong> <span>The <code>Python</code> field points to a valid Python 3 executable — test with <code>which python3</code> in a terminal</span></li>
+  <li><strong>Python field</strong> <span>Leave it <em>empty</em> — the script finds a Python 3 with python-osc itself. Enter a full path only if detection fails (<code>which python3</code>)</span></li>
   <li><strong>python-osc installed</strong> <span>Run <code>pip3 install python-osc</code> for the same Python executable</span></li>
   <li><strong>AmbiEncoder OSC input active</strong> <span>Plugin → OSC In enabled, port matches GUI setting (default <code>50001</code>)</span></li>
 </ul>
+
+## Tutorial: your first motion in 10 steps
+
+1. **Install** `python-osc`: `python3 -m pip install python-osc`.
+2. **Load both Lua scripts** in REAPER (*Actions → Show action list → New action → Load ReaScript…*). Keep `reaper_marker_ambi_motion.py` in the same folder.
+3. **Prepare the track:** insert `AmbiEncoder_64`, enable OSC input, port `50001`.
+4. **Add two markers** named `ambi 1 a=-45 e=0 d=0.8` and `ambi 1 a=45 e=20 d=0.5` — or import `examples/ambi_markers_aed_example.csv`.
+5. **Start the GUI** from the Actions list. If it is already running, choose *Terminate instances* first.
+6. **Check the fields:** *Ambi host* `127.0.0.1` (no trailing space), *Ambi port* `50001`, *Python* empty.
+7. **Pick the pair:** left-click the first marker (`S`), right-click the second (`E`), press `Set Selection`.
+8. **Preview:** press `Send pair`. The source moves in the AmbiEncoder, nothing is recorded.
+9. **Record:** enable REAPER's web interface (*Preferences → Control/OSC/web → Add → Web browser interface*, port `8080`), select the AmbiEncoder track and press `Record pair`.
+10. **Series:** set `S` on the first marker of a phrase and use `Send series` or `Record series`.
 
 ## First steps
 
