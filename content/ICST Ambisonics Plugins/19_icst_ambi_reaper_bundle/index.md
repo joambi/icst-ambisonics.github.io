@@ -38,7 +38,7 @@ Draft. The macOS version is complete. The Windows version is beta and has not be
 
 ## Download
 
-The downloads will appear as a GitHub release in the repository `joambi/ICST-AmbiPlugins` once the release is published. These files are planned:
+The downloads will appear as a GitHub release in the repository `joambi/ICST_Ambi_Reaper` once the release is published. These files are planned:
 
 - `ICST_Ambi_Reaper_<Version>_macOS.pkg`: installer to `/Applications/ICST_Ambi_Reaper`
 - `ICST_Ambi_Reaper_<Version>_macOS.zip`: portable, for example for an external SSD
