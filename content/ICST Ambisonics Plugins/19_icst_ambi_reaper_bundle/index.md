@@ -111,10 +111,9 @@ Scripts ask for the Ambisonics order (1, 3, 5 or 7, that is 4, 16, 36 or 64 chan
 
 | Component | Licence | Note |
 |---|---|---|
-| [IEM Plug-in Suite](https://plugins.iem.at/) (BinauralDecoder, HOA FX) | GPL3 | Breaking changes from v1.16.0; check templates before updating |
+| [IEM Plug-in Suite](https://plugins.iem.at/) (BinauralDecoder, HOA FX) | GPL3 | The Binaural button uses the IEM BinauralDecoder; breaking changes from v1.16.0, check templates before updating |
 | [SWS](https://www.sws-extension.org), [js_ReaScriptAPI](https://forum.cockos.com/showthread.php?t=212174), [ReaPack](https://reapack.com) | Free | Install manually on Windows |
 | AmbiIRVerb impulse responses (IRidesce) | Used with permission | By Eli Stine, ES MediaWorks |
-| dearVR AMBI MICRO | Proprietary, discontinued | Fallback in the binaural script; not included, not for new projects |
 
 ## See also
 

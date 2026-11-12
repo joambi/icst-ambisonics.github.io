@@ -87,7 +87,7 @@ Erstelle die Spur **Bformat Master**:
 
 #### 5. Binaurales Monitoring aktivieren
 
-- Erstelle eine neue **64-Kanal-Spur** und lade ein **binaurales Plugin** (z. B. _DearVR Ambi Micro.vst3_).
+- Erstelle eine neue **64-Kanal-Spur** und lade ein **binaurales Plugin** (z. B. den _IEM BinauralDecoder_).
 - Verschiebe die Spur nach oben in deinem Reaper-Projekt.
 - Route den **Ausgang vom Bformat Master** auf diese Binaural-Spur.
 - Stummschalte den **AmbiDecoder**, wenn du nur binaural hören willst.

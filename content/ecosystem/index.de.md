@@ -56,7 +56,6 @@ Stand 11.11.2026. Komponenten mit dem Status **Beta** sind zur Evaluation freige
 
 | Komponente | Verwendet in | Lizenz | Hinweis |
 |---|---|---|---|
-| [IEM Plug-in Suite](https://plugins.iem.at/) | Bundle (BinauralDecoder, HOA-FX) | GPL3 | Ab v1.16.0 Breaking Changes; Templates vor einem Update prüfen |
+| [IEM Plug-in Suite](https://plugins.iem.at/) | Bundle (BinauralDecoder, HOA-FX) | GPL3 | Das Binaural-Skript nutzt den IEM BinauralDecoder; ab v1.16.0 Breaking Changes, Templates vor einem Update prüfen |
 | [SWS](https://www.sws-extension.org), [js_ReaScriptAPI](https://forum.cockos.com/showthread.php?t=212174), [ReaPack](https://reapack.com) | Bundle-Skripte | Frei | Auf Windows selbst installieren |
-| dearVR AMBI MICRO | Ersatzweg des Binaural-Skripts | Proprietär, eingestellt | Wird nicht mehr gepflegt; nicht für neue Projekte |
 | Python 3 | Motion Map, Kristall Motion Map | PSF | Nur für die OSC-Vorschau |

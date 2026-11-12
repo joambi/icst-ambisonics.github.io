@@ -86,7 +86,7 @@ Create the **Bformat Master** track:
 
 #### 5. Enable binaural listening
 
-- Create a new **64-channel track** and load a **binaural plugin** (e.g. _DearVR Ambi Micro.vst3_).
+- Create a new **64-channel track** and load a **binaural plugin** (e.g. the _IEM BinauralDecoder_).
 - Move the track to the top of your Reaper project.
 - Route the **output of Bformat Master** to this binaural track.
 - Mute **AmbiDecoder** if you want to monitor only the binaural output.

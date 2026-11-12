@@ -111,10 +111,9 @@ Die Skripte fragen nach der Ambisonics-Ordnung (1, 3, 5 oder 7, also 4, 16, 36 o
 
 | Komponente | Lizenz | Hinweis |
 |---|---|---|
-| [IEM Plug-in Suite](https://plugins.iem.at/) (BinauralDecoder, HOA FX) | GPL3 | Breaking Changes ab v1.16.0; Templates vor dem Update prüfen |
+| [IEM Plug-in Suite](https://plugins.iem.at/) (BinauralDecoder, HOA FX) | GPL3 | Der Binaural-Button nutzt den IEM BinauralDecoder; Breaking Changes ab v1.16.0, Templates vor dem Update prüfen |
 | [SWS](https://www.sws-extension.org), [js_ReaScriptAPI](https://forum.cockos.com/showthread.php?t=212174), [ReaPack](https://reapack.com) | Frei | Unter Windows manuell installieren |
 | AmbiIRVerb-Impulsantworten (IRidesce) | Mit Erlaubnis verwendet | Von Eli Stine, ES MediaWorks |
-| dearVR AMBI MICRO | Proprietär, eingestellt | Fallback im Binaural-Skript; nicht enthalten, nicht für neue Projekte |
 
 ## Siehe auch
 

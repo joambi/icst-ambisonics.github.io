@@ -13,7 +13,7 @@ description: "Installation und Benutzerhandbuch für JS_ICST_Kristall_Motion_Map
 Niveau: Mittel | Zielgruppe: Komponist, Klangestalter, Raumklangtechniker. | **Version: 2.4.0**
 
 ICST Kristall Motion Map ist ein **eigenständiges REAPER-Lua-Skript** mit grafischer Echtzeit-Oberfläche. Es ordnet bis zu 64 AmbiEncoder-Quellen als Punkte in einem 3D-Kristallgitter an und bewegt sie mit einem Schritt-Sequenzer durch den Raum. Die Bewegung kann live in der isometrischen Vorschau verfolgt, per OSC an einen ICST AmbiEncoder_64 gesendet und mit instanzspezifischen Transformationen, Quantisierung, Glättung und Interaktion gestaltet werden.
-Dieses Instrument entstand in Zusammenarbeit mit und inspiriert durch Eli Stine, Gast der ICST Studio Residency 2026.
+Dieses Instrument entstand in Zusammenarbeit mit und inspiriert durch [Eli Stine](https://elistine.com), Gast der [ICST Studio Residency 2026](/de/residenzen/icst-studio-residences-2026/) am [ICST](https://www.zhdk.ch/en/research/icst).
 
 ![ICST Kristall Motion Map — Gesamtansicht mit Instanzliste, Gitter-Vorschau, Parameter-Panel und Statusleiste](/images/kristall-overview.png)
 
@@ -81,7 +81,7 @@ Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaur
   <source src="/icst-ambisonics-plugins/18_kristall_motion_map/kristall-ex05.mp3" type="audio/mpeg">
 </audio>
 
-*Diese Kristall-Motion-Map-Beispiele stammen von Eli Stine, die er während seiner ICST Studio-Residency 2026 erstellt hat.*
+*Diese Kristall-Motion-Map-Beispiele stammen von [Eli Stine](https://elistine.com), die er während seiner [ICST Studio-Residency 2026](/de/residenzen/icst-studio-residences-2026/) erstellt hat.*
 
 {{< notice update >}}
 **Neu bei Kristall?** Direkt zu [§13 Erste Schritte — Schnelleinstieg](#13-erste-schritte--schnelleinstieg) springen und in unter fünf Minuten das erste Preset zum Laufen bringen — dann für die detaillierte Referenz hierher zurückkehren.
