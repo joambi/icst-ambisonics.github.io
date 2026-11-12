@@ -25,11 +25,8 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
       </div>
     </div>
     <figure class="motion-map-hero__media">
-      <video autoplay muted loop playsinline preload="metadata" poster="/images/icst-ambi-motion-map-demo-poster.jpg" aria-label="Die AmbiEncoder64 Motion Map steuert den AmbiEncoder: Figuren pro Quelle, Trajektorien-Vorschau und Live-Bewegung im Encoder-Radar">
-        <source src="/images/icst-ambi-motion-map-demo.webm" type="video/webm">
-        <source src="/images/icst-ambi-motion-map-demo.mp4" type="video/mp4">
-      </video>
-      <figcaption>Motion Map zusammen mit dem AmbiEncoder · 64 Quellen · Trajektorien-Vorschau · REAPER-Automation · OSC</figcaption>
+      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animierte AmbiEncoder64 Motion Map mit bewegten Quellen und Trajektorien in der Vorschau">
+      <figcaption>Animierte Vorschau (schematisch) · 64 Quellen · 3D-Bewegung · REAPER-Automation · OSC</figcaption>
     </figure>
   </section>
 
@@ -367,6 +364,14 @@ Mit den **◄ ►**-Pfeilen durch mehr als 6 gespeicherte Presets blättern. Pre
 ## 12. Live-OSC-Vorschau
 
 Der OSC-Preview-Bereich sendet Live-Positionsdaten an den AmbiEncoder, während die Animation im GUI läuft — so kann die Bewegung gehört werden, bevor sie als Automation festgeschrieben wird.
+
+<figure>
+  <video autoplay muted loop playsinline preload="metadata" poster="/images/icst-ambi-motion-map-demo-poster.jpg" aria-label="Bildschirmaufnahme: Die Motion Map sendet Positionen live an den AmbiEncoder, im Radar bewegen sich die Quellen mit" style="width:100%;max-width:900px;height:auto;border-radius:6px">
+    <source src="/images/icst-ambi-motion-map-demo.webm" type="video/webm">
+    <source src="/images/icst-ambi-motion-map-demo.mp4" type="video/mp4">
+  </video>
+  <figcaption>Aufnahme: Motion Map (v2.4) steuert den AmbiEncoder live per OSC; im Encoder-Radar bewegen sich die Quellen mit.</figcaption>
+</figure>
 
 ### Einrichtung Schritt für Schritt
 

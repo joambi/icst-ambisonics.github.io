@@ -25,11 +25,8 @@ description: "Create and automate spatial source trajectories in REAPER with the
       </div>
     </div>
     <figure class="motion-map-hero__media">
-      <video autoplay muted loop playsinline preload="metadata" poster="/images/icst-ambi-motion-map-demo-poster.jpg" aria-label="The AmbiEncoder64 Motion Map driving the AmbiEncoder: figures per source, trajectory preview and live movement in the encoder radar">
-        <source src="/images/icst-ambi-motion-map-demo.webm" type="video/webm">
-        <source src="/images/icst-ambi-motion-map-demo.mp4" type="video/mp4">
-      </video>
-      <figcaption>Motion Map driving the AmbiEncoder · 64 sources · trajectory preview · REAPER automation · OSC</figcaption>
+      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animated AmbiEncoder64 Motion Map interface with moving sources and trajectories in the preview">
+      <figcaption>Animated preview (schematic) · 64 sources · 3D motion · REAPER automation · OSC</figcaption>
     </figure>
   </section>
 
@@ -367,6 +364,14 @@ Use the **◄ ►** arrows to scroll through more than 6 saved presets. Presets 
 ## 12. Live OSC Preview
 
 The OSC Preview section sends live position data to the AmbiEncoder while the animation plays in the GUI — so you can hear the movement before committing it to automation.
+
+<figure>
+  <video autoplay muted loop playsinline preload="metadata" poster="/images/icst-ambi-motion-map-demo-poster.jpg" aria-label="Screen recording: the Motion Map sends positions live to the AmbiEncoder while the sources move in the encoder radar" style="width:100%;max-width:900px;height:auto;border-radius:6px">
+    <source src="/images/icst-ambi-motion-map-demo.webm" type="video/webm">
+    <source src="/images/icst-ambi-motion-map-demo.mp4" type="video/mp4">
+  </video>
+  <figcaption>Recording: the Motion Map (v2.4) driving the AmbiEncoder live via OSC; the sources move in the encoder radar.</figcaption>
+</figure>
 
 ### Step-by-step setup
 
