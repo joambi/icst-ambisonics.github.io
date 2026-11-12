@@ -34,7 +34,7 @@ As of 2026-11-11. Components marked **Beta** are released for evaluation, not ap
 | Contents | REAPER folder with toolbar, scripts, VST3 plugins, impulse responses and docs | Plugins, Max externals, bundle, motion tools, templates, layouts, archive, docs |
 | Version | Own release number | None; components are versioned |
 | Platform | macOS complete, Windows beta | Per component |
-| Licence | Mixed, package licence still open | Each component keeps its licence |
+| Licence | ICST parts GPL-3.0-or-later, components keep their own | Each component keeps its licence |
 
 ## Components
 
@@ -43,7 +43,7 @@ As of 2026-11-11. Components marked **Beta** are released for evaluation, not ap
 | [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) (Core) | AmbiEncoder, AmbiEncoder_64, AmbiDecoder, MultiDecoder, Monitor, Animator | VST3, AU; LV2 experimental; macOS, Windows | Stable | GPL3 | [schweizerweb/icst-ambisonics-plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases) |
 | ICST AmbiPlugins (Extended) | AmbiIRVerb, AmbiIRLayers, AmbiGran 16 | VST3; macOS, Windows | Beta, unsigned | Open; IRidesce material with its own rights notice | [joambi/ICST-AmbiPlugins](https://github.com/joambi/ICST-AmbiPlugins/releases) |
 | [ICST Ambisonics Tools for Max](/icst-ambisonics-tools/) | `ambiencode~`, `mc.ambiencode~`, `ambidecode~`, `ambipanning~`, `ambimonitor`, `ambicontrol` and more | Max 8, Max Package Manager | Stable | Free | ICST / ZHdK |
-| [ICST Ambisonics Bundle (`ICST_Ambi_Reaper`)](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) | Portable REAPER folder: toolbar, Lua scripts, ICST and IEM VST3, SWS, js_ReaScriptAPI, ReaPack, docs | REAPER 7; macOS (Apple Silicon recommended), Windows | macOS complete, Windows beta untested | Mixed, package licence open | [joambi/ICST-AmbiPlugins](https://github.com/joambi/ICST-AmbiPlugins/releases) |
+| [ICST Ambisonics Bundle (`ICST_Ambi_Reaper`)](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) | Portable REAPER folder: toolbar, Lua scripts, ICST and IEM VST3, SWS, js_ReaScriptAPI, ReaPack, docs | REAPER 7; macOS (Apple Silicon recommended), Windows | macOS complete, Windows beta untested | ICST parts GPL-3.0-or-later, otherwise per component | [joambi/ICST-AmbiPlugins](https://github.com/joambi/ICST-AmbiPlugins/releases) |
 | [ICST Animator](/icst-ambisonics-plugins/11_animator/) | Timeline animation of source groups in the Multi-AmbiEncoder_64, scenes as XML | macOS, Windows | Docs released with Plugins 4.0 | Open | ICST |
 | [ICST Animator Choreographer](/post/icst-animator-choreographer/) | Desktop app that builds Animator scene XML in five steps; region import from REAPER via CSV; optional draft from a description with a local model (Ollama) | macOS; app unsigned | In development | GPL3 | ICST |
 | [Motion Map](/icst-ambisonics-plugins/15_icst_ambi_motion_map/), [Kristall Motion Map](/icst-ambisonics-plugins/18_kristall_motion_map/), [Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) | Motion shapes with a figure editor, crystal lattices and marker-based motion for AmbiEncoder_64 | REAPER Lua, Python 3 for OSC preview | Stable | Free | [joambi/icst-ambisonics.github.io](https://github.com/joambi/icst-ambisonics.github.io) |
@@ -57,5 +57,7 @@ As of 2026-11-11. Components marked **Beta** are released for evaluation, not ap
 | Component | Used in | Licence | Note |
 |---|---|---|---|
 | [IEM Plug-in Suite](https://plugins.iem.at/) | Bundle (BinauralDecoder, HOA FX) | GPL3 | The binaural script uses the IEM BinauralDecoder; breaking changes from v1.16.0, check templates before updating |
-| [SWS](https://www.sws-extension.org), [js_ReaScriptAPI](https://forum.cockos.com/showthread.php?t=212174), [ReaPack](https://reapack.com) | Bundle scripts | Free | Install manually on Windows |
+| [SWS](https://www.sws-extension.org) | Bundle scripts | MIT | Install manually on Windows |
+| [js_ReaScriptAPI](https://github.com/juliansader/ReaExtensions) | Bundle scripts | MIT | Install manually on Windows |
+| [ReaPack](https://reapack.com) | Bundle scripts | LGPL-3.0 | Install manually on Windows |
 | Python 3 | Motion Map, Kristall Motion Map | PSF | Only for the OSC preview |
