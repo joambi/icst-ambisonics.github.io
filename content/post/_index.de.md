@@ -5,6 +5,10 @@ description: "Schritt-für-Schritt-Anleitungen für die ICST Ambisonics Plugins 
 author: Johannes Schuett
 languageCode: de
 ---
+{{< notice info >}}
+Der Blog von ambisonics.ch ist derzeit im Aufbau. Beiträge werden überarbeitet und ergänzt.
+{{< /notice >}}
+
 Praktische Anleitungen für räumliche Audioproduktion mit den ICST Ambisonics Plugins in REAPER. Starte mit Setup und Monitoring und gehe dann weiter zu Routing, Bewegungsdesign, OSC-Steuerung, Max-Integration und fortgeschrittenen Produktions-Workflows.
 
 📺 [@ZHDK_ICST auf YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)

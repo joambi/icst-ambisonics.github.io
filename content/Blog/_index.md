@@ -5,6 +5,10 @@ description: "News, studio documentation, and updates from the ICST Composition 
 date: 2025-06-28T16:13:00
 ---
 
+{{< notice info >}}
+The ‘ambisonics.ch’ blog is currently under construction. Posts are being revised and added.
+{{< /notice >}}
+
 The Studio Journal documents the production context around Ambisonics at ZHdK: studio infrastructure, residency activities, listening sessions, public programme, and ongoing updates from daily practice.
 Start here when you are looking for context, people, programme, and project-oriented documentation rather than technical step-by-step instructions.
 
