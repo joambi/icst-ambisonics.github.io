@@ -85,7 +85,9 @@ Scripts ask for the Ambisonics order (1, 3, 5 or 7, that is 4, 16, 36 or 64 chan
 
 | Button | Function |
 |---|---|
+| Quick Start | Creates a whole session (sources, encoder, optional HOA FX, decoder, binaural) and routes it |
 | B-Format Player, Encoder 64, Encoder | Create player and encoder tracks |
+| HOA Master, Mono Sources | Bus track `HOA_MASTER`; mono source tracks routed into the AmbiEncoder_64 |
 | HOA FX | Effect track with IEM effects |
 | Decoder, Binaural | Loudspeaker decoder, IEM BinauralDecoder (up to 7th order); the Binaural script uses dearVR AMBI MICRO only if dearVR is installed |
 | Auto-Route | Detects tracks and creates all sends |

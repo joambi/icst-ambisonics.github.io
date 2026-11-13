@@ -85,7 +85,9 @@ Die Skripte fragen nach der Ambisonics-Ordnung (1, 3, 5 oder 7, also 4, 16, 36 o
 
 | Button | Funktion |
 |---|---|
+| Quick Start | Legt eine komplette Session an (Quellen, Encoder, optional HOA FX, Decoder, Binaural) und routet sie |
 | B-Format Player, Encoder 64, Encoder | Player- und Encoder-Spuren anlegen |
+| HOA Master, Mono Sources | Sammelspur `HOA_MASTER`; Mono-Quellspuren auf den AmbiEncoder_64 routen |
 | HOA FX | Effektspur mit IEM-Effekten |
 | Decoder, Binaural | Lautsprecher-Decoder, IEM BinauralDecoder (bis 7. Ordnung); das Binaural-Skript nutzt dearVR AMBI MICRO nur, wenn dearVR installiert ist |
 | Auto-Route | Erkennt Spuren und legt alle Sends an |
