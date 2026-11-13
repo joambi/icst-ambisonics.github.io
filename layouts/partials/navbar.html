@@ -13,6 +13,8 @@
   <nav class="nav" aria-label="{{ if eq .Site.Language.Lang "de" }}Hauptmenü{{ else }}Main{{ end }}">
     <ul class="nav__list" id="navMenu">
       {{ $url := .RelPermalink }}
+      {{- /* Menu labels are English and link to English pages; mark them so DE screen readers use the right voice */ -}}
+      {{ $ml := "" }}{{ if eq .Site.Language.Lang "de" }}{{ $ml = `lang="en"` }}{{ end }}
       {{ range $menuId, $menuItem := .Site.Menus.main }}
         {{ $active := eq $url $menuItem.URL }}
         {{ if $menuItem.HasChildren }}
@@ -30,6 +32,7 @@
 
 
               <button type="button" class="{{ $labelClass }}" aria-expanded="false" aria-controls="submenu-{{ $menuId }}"
+                {{ with $ml }}{{ . | safeHTMLAttr }}{{ end }}
                 >{{ $menuItem.Name }} <i class="fa fa-angle-down" aria-hidden="true"></i
               ></button>
 
@@ -39,6 +42,7 @@
                   <li class="optionswitch__list-item">
                     {{ .Pre }}
                     <a
+                      {{ with $ml }}{{ . | safeHTMLAttr }}{{ end }}
                       href="{{ .URL }}"
                       {{ if strings.HasPrefix .URL "http" }}
                         target="_blank" rel="noopener noreferrer"
@@ -55,6 +59,7 @@
           <li class="nav__list-item">
             {{ .Pre }}
             <a
+              {{ with $ml }}{{ . | safeHTMLAttr }}{{ end }}
               {{ if $active }}
                 class="nav__link--active"
               {{ end }}

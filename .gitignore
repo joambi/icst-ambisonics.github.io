@@ -36,3 +36,12 @@ content/**/11_animator/_vorschau/
 content/**/11_animator/*Backup vor Medien*.md
 
 _to_delete/
+
+# Müll / lokal
+.DS_Store
+.hugo_cache/
+resources/_gen/
+.obsidian/
+*conflicted*
+CleanShot *
+Pasted image *

@@ -72,3 +72,8 @@ button.navbar-burger:focus-visible {
 @media screen and (min-width: 961px) {
   .optionswitch--open > .optionswitch__triangle { display: block; }
 }
+/* Dropdown titles (buttons) get the same colour as plain nav links */
+.theme--light .nav__list:not(.nav__list--end) button.optionswitch__label{color:#464646}
+.theme--dark .nav__list:not(.nav__list--end) button.optionswitch__label{color:#eee}
+.theme--light .nav__list:not(.nav__list--end) button.optionswitch__label:hover,
+.theme--dark .nav__list:not(.nav__list--end) button.optionswitch__label:hover{color:#6086b4}

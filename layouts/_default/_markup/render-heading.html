@@ -1,0 +1,9 @@
+{{- /*
+  Single pages already print the page title as <h1> in the layout.
+  A "# " heading in the Markdown body is therefore output as <h2> (one h1 per page).
+  Section/list/home pages are left unchanged: their layouts do not print an h1.
+  The table of contents is built from the Markdown levels and is not affected.
+*/ -}}
+{{- $level := .Level -}}
+{{- if and (eq $level 1) .Page.IsPage -}}{{- $level = 2 -}}{{- end -}}
+<h{{ $level }} id="{{ .Anchor | safeURL }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</h{{ $level }}>
