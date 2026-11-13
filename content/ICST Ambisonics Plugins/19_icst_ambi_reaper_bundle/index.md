@@ -20,9 +20,9 @@ Draft. The macOS version is complete. The Windows version is beta and has not be
 
 - A REAPER resource folder with the toolbar *ICST_Ambi_Automation* and icons for the ICST tools
 - Lua scripts for spatial workflows: track creation, auto-routing, motion, markers, Animator
-- ICST and IEM plugins as VST3 (AmbiEncoder, AmbiEncoder_64, AmbiDecoder, AmbiGran 16, AmbiIRVerb, AmbiIRLayers, IEM BinauralDecoder)
+- ICST and IEM plugins as VST3 (AmbiEncoder, AmbiEncoder_64, AmbiDecoder, IEM BinauralDecoder)
 - SWS, js_ReaScriptAPI and ReaPack (macOS, Apple Silicon)
-- Impulse responses (`Data/IRidesce`) and an offline manual (`Docs/index.html`)
+- An offline manual (`Docs/index.html`)
 - The [Animator Choreographer](/post/icst-animator-choreographer/) app (`Animator/`)
 
 ## Requirements
@@ -67,7 +67,7 @@ The folder is a macOS bundle, so only the platform-neutral parts are used on Win
 
 1. Install REAPER as a **portable install** (for example `C:\ICST_Ambi_Reaper`), start it once and close it.
 2. Install SWS and ReaPack, then **js_ReaScriptAPI** through ReaPack.
-3. Copy `Scripts\ICST`, `Data\toolbar_icons`, `Data\IRidesce`, `Docs`, `OSC`, `ICST_Player_Presets`, `reaper-menu.ini` and `reaper-kb.ini` from the *scripts-only* zip into that folder.
+3. Copy `Scripts\ICST`, `Data\toolbar_icons`, `Docs`, `OSC`, `ICST_Player_Presets`, `reaper-menu.ini` and `reaper-kb.ini` from the *scripts-only* zip into that folder.
 4. Install the plugins with their installers (ICST packages, AmbiEncoder/AmbiDecoder from [ambisonics.ch](/icst-ambisonics-plugins/02_installation/), [IEM Plug-in Suite](https://plugins.iem.at)).
 5. Start REAPER, *Re-scan* the VST plugins, show *Floating toolbar 1*.
 
@@ -86,8 +86,8 @@ Scripts ask for the Ambisonics order (1, 3, 5 or 7, that is 4, 16, 36 or 64 chan
 | Button | Function |
 |---|---|
 | B-Format Player, Encoder 64, Encoder | Create player and encoder tracks |
-| HOA FX, HOA Reverb, AmbiGran 16 | Effect tracks (IEM FX, AmbiIRVerb, granular) |
-| Decoder, Binaural | Loudspeaker decoder, IEM BinauralDecoder (up to 7th order) |
+| HOA FX | Effect track with IEM effects |
+| Decoder, Binaural | Loudspeaker decoder, IEM BinauralDecoder (up to 7th order); the Binaural script uses dearVR AMBI MICRO only if dearVR is installed |
 | Auto-Route | Detects tracks and creates all sends |
 | Motion Map GUI, Kristall Motion Map, Spat Motion Automation | Movement shapes and automation |
 | [Motion Markers GUI](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/), CSV import | Movement between markers via OSC, recorded as automation |
@@ -112,10 +112,6 @@ The bundle's **own ICST content** (ReaScripts, JSFX, toolbar icons, configuratio
 
 The bundled binaries (plugins, extensions, Animator Choreographer) are not covered by it: each component keeps its own licence, and the bundle only combines them into a single download. An overview is in the file `THIRD_PARTY_LICENSES.md` in the folder and in the table below.
 
-{{< notice warning >}}
-For **AmbiIRVerb, AmbiIRLayers and AmbiGran 16** (ICST Extended, beta) the licence is still open. The IRidesce impulse responses are used with the author's permission and are subject to their own licence file.
-{{< /notice >}}
-
 ## Third-party components
 
 | Component | Licence | Note |
@@ -124,7 +120,6 @@ For **AmbiIRVerb, AmbiIRLayers and AmbiGran 16** (ICST Extended, beta) the licen
 | [SWS/S&M Extension](https://www.sws-extension.org) | MIT | Install manually on Windows; the licence text is in the `licenses/` folder |
 | [ReaPack](https://reapack.com) | LGPL-3.0 | Install manually on Windows |
 | [js_ReaScriptAPI](https://github.com/juliansader/ReaExtensions) | MIT | Install manually on Windows |
-| AmbiIRVerb impulse responses (IRidesce) | Used with permission | By Eli Stine, ES MediaWorks |
 
 ## See also
 
