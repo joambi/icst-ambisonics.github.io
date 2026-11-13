@@ -38,13 +38,11 @@ Entwurf. Die macOS-Version ist vollständig. Die Windows-Version ist Beta und no
 
 ## Download
 
-Die Downloads erscheinen als GitHub-Release im Repository `joambi/ICST_Ambi_Reaper`, sobald das Release veröffentlicht ist. Geplant sind diese Dateien:
+Aktuelle Version: **1.0.0** ([Release-Notizen und alle Dateien auf GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.0.0)):
 
-- `ICST_Ambi_Reaper_<Version>_macOS.pkg`: Installer nach `/Applications/ICST_Ambi_Reaper`
-- `ICST_Ambi_Reaper_<Version>_macOS.zip`: portabel, zum Beispiel für eine externe SSD
-- `ICST_Ambi_Reaper_<Version>_scripts-only.zip`: nur die plattformneutralen Teile (für Windows)
-
-<!-- TODO release: aktuelle Versionsnummer eintragen, sobald das Release veröffentlicht ist. -->
+- [`ICST_Ambi_Reaper_1.0.0_macOS.pkg`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.0.0/ICST_Ambi_Reaper_1.0.0_macOS.pkg): Installer nach `/Applications/ICST_Ambi_Reaper`
+- [`ICST_Ambi_Reaper_1.0.0_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.0.0/ICST_Ambi_Reaper_1.0.0_macOS.zip): portabel, zum Beispiel für eine externe SSD
+- [`ICST_Ambi_Reaper_1.0.0_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.0.0/ICST_Ambi_Reaper_1.0.0_scripts-only.zip): nur die plattformneutralen Teile (für Windows)
 
 ## Installation unter macOS
 
