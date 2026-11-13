@@ -1,0 +1,41 @@
+{{- /*
+  Download-Tabelle aus data/releases.yml.
+  Aufruf: {{< release "animator-choreographer" >}}
+  Optional zweites Argument "compact": nur Version und Link zur Release-Seite.
+*/ -}}
+{{- $key := .Get 0 -}}
+{{- $mode := .Get 1 | default "full" -}}
+{{- $r := index hugo.Data.releases $key -}}
+{{- if not $r -}}{{- errorf "release shortcode: Eintrag %q fehlt in data/releases.yml (%s)" $key .Position -}}{{- end -}}
+{{- $de := eq .Page.Language.Lang "de" -}}
+{{- $base := printf "https://github.com/%s/releases" $r.repo -}}
+{{- $page := printf "%s/tag/%s" $base $r.tag -}}
+{{- $dl := printf "%s/download/%s" $base $r.tag -}}
+{{- $status := cond $r.prerelease (cond $de "Evaluationsbeta" "Evaluation beta") (cond $de "Release" "Release") -}}
+{{- if eq $mode "compact" -}}
+<a class="hero__link hero__link--primary" href="{{ $page }}" target="_blank" rel="noopener noreferrer">{{ cond $de "Version" "Version" }} {{ $r.version }} {{ cond $de "auf GitHub" "on GitHub" }} →</a>
+{{- else -}}
+<div class="release-downloads">
+<p><strong>{{ $r.name }} {{ $r.version }}</strong> · {{ $status }} · {{ cond $de "veröffentlicht am" "released" }} {{ $r.date }} · {{ if not $r.signed }}{{ cond $de "nicht signiert" "unsigned" }} · {{ end }}<a href="{{ $page }}" target="_blank" rel="noopener noreferrer">{{ cond $de "Release-Seite auf GitHub" "Release page on GitHub" }}</a></p>
+<table>
+<thead><tr><th>{{ cond $de "System" "System" }}</th><th>{{ cond $de "Datei" "File" }}</th><th>{{ cond $de "Art" "Type" }}</th><th>{{ cond $de "Grösse" "Size" }}</th></tr></thead>
+<tbody>
+{{- range $r.files }}
+<tr>
+<td>{{ .os }}</td>
+<td class="release-downloads__file"><a href="{{ $dl }}/{{ .name }}">{{ .name }}</a></td>
+<td>{{ index .kind (cond $de "de" "en") }}; {{ index .req (cond $de "de" "en") }}</td>
+<td class="release-downloads__size">{{ lang.FormatNumber 1 (div (float .size) 1048576) }}&nbsp;MB</td>
+</tr>
+{{- end }}
+</tbody>
+</table>
+<details>
+<summary>{{ cond $de "SHA-256-Prüfsummen" "SHA-256 checksums" }}</summary>
+<pre><code>{{- range $r.files }}{{ .name }}
+{{ .sha256 }}
+{{ end -}}</code></pre>
+<p>{{ cond $de "Dieselben Werte stehen in" "The same values are in" }} <a href="{{ $dl }}/{{ $r.sums }}">{{ $r.sums }}</a>. {{ cond $de "Prüfen" "Verify" }}: <code>shasum -a 256 -c {{ $r.sums }}</code> (macOS), <code>sha256sum -c {{ $r.sums }}</code> (Linux), <code>Get-FileHash</code> (Windows).</p>
+</details>
+</div>
+{{- end -}}

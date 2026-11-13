@@ -23,7 +23,7 @@ Level: Intermediate | **Zielgruppe:** Komponist:in, Sounddesigner:in | **Arbeite
 Der **Animator Choreographer** ist eine Desktop-App, mit der du planst, wie sich Gruppen von Quellen über die Zeit im Raum bewegen. Du beschreibst die Choreographie in Hörbegriffen (Richtung, Distanz, Höhe, Geste); die App erzeugt daraus die Szenen-XML, die der Animator im ICST AmbiEncoder_64 importiert und abspielt.
 
 {{< notice warning >}}
-**In Entwicklung, nicht signiert.** Die App ist noch nicht codesigniert, und die Dokumentation folgt dem aktuellen Entwicklungsstand. Unter macOS öffnest du sie beim ersten Start mit Rechtsklick › Öffnen oder entfernst das Quarantäne-Flag im Terminal: `xattr -dr com.apple.quarantine "Animator Choreographer.app"`.
+**Evaluationsbeta, nicht signiert.** macOS 15 und neuer: App öffnen, Meldung schliessen, dann **Systemeinstellungen › Datenschutz & Sicherheit › Dennoch öffnen** und mit dem Passwort bestätigen. Bis macOS 14 genügt beim ersten Start Ctrl-Klick › Öffnen. Alternative im Terminal: `xattr -dr com.apple.quarantine "Animator Choreographer.app"`. Windows: SmartScreen › **Weitere Informationen › Trotzdem ausführen**. Die Dokumentation folgt dem aktuellen Entwicklungsstand.
 {{< /notice >}}
 
 ![Der Schritt Form im Animator Choreographer: Abschnitte, Raumgrösse und Encoder links, Draufsicht, Seitenansicht und Zeitleiste rechts](/images/icst-animator-choreographer-form.jpg)
@@ -42,14 +42,18 @@ Eine kurze Referenzseite steht in der Plugin-Doku: [Animator Choreographer](/de/
 
 | Punkt | Details |
 |-------|---------|
-| System | macOS und Windows |
+| System | macOS 11+ (Universal), Windows 10/11 (x64), Linux x86_64 (glibc 2.35+) |
 | Plug-ins | ICST Ambisonics Plugins mit dem Animator (AmbiEncoder_64) in REAPER |
 | Optional | [Ollama](https://ollama.com) für den Entwurf aus einer Beschreibung |
-| Lizenz | GPL3 |
+| Lizenz | GPL-3.0 |
 
 ## Bezugsquelle
 
-Der Animator Choreographer gehört zum vorkonfigurierten **ICST-Ambi-Reaper**-Ordner: Die App liegt im Ordner `Animator`, und der Toolbar-Button 13 (*Open Animator*) startet sie. Die bebilderte Dokumentation dieses Ordners (`Docs/index.html`, Toolbar-Button *Documentation*) beschreibt Installation und erste Schritte. Eine eigene Veröffentlichung auf GitHub folgt.
+Version 0.1.0 steht als Evaluationsbeta für macOS, Windows und Linux auf GitHub. Dateien, Grössen und Prüfsummen:
+
+{{< release "animator-choreographer" >}}
+
+Im vorkonfigurierten **ICST-Ambi-Reaper**-Ordner ist die macOS-App bereits enthalten: Sie liegt im Ordner `Animator`, und der Toolbar-Button 13 (*Open Animator*) startet sie. Die bebilderte Dokumentation dieses Ordners (`Docs/index.html`, Toolbar-Button *Documentation*) beschreibt Installation und erste Schritte.
 
 ## Ablauf
 

@@ -1,0 +1,50 @@
+# Versionierte Downloads aus GitHub Releases.
+# Links zeigen auf einen festen Tag, nicht auf /latest/ (Pre-releases sind nie "latest").
+# Bei einem neuen Release: version, tag, date, Dateien, Grössen und SHA-256 aus SHA256SUMS.txt übernehmen.
+animator-choreographer:
+  name: Animator Choreographer
+  repo: joambi/animator-choreographer
+  version: "0.1.0"
+  tag: v0.1.0
+  date: "2026-11-13"
+  prerelease: true
+  signed: false
+  tested_with: "ICST Ambisonics Plugins 3.2.0.9"
+  sums: SHA256SUMS.txt
+  files:
+    - os: macOS
+      name: Animator-Choreographer-0.1.0-macOS.zip
+      size: 6207564
+      sha256: 89ab6cd7393cfe9e38732c4b87330cbe9b039ebe7be430135bc379e19a2a29ec
+      kind: { de: "App als ZIP (empfohlen)", en: "App as ZIP (recommended)" }
+      req: { de: "macOS 11+, Universal", en: "macOS 11+, Universal" }
+    - os: macOS
+      name: Animator-Choreographer-0.1.0-macOS.pkg
+      size: 6209857
+      sha256: 86f8896c5b04a5af02d82d36b9760325ab6387504694d01d0d04efdcbfd13bc4
+      kind: { de: "Installer, noch nicht installationsgeprüft", en: "Installer, installation not yet tested" }
+      req: { de: "macOS 11+, Universal", en: "macOS 11+, Universal" }
+    - os: Windows
+      name: Animator-Choreographer-0.1.0-Windows-Setup.exe
+      size: 4726949
+      sha256: 0798931e440e50c9c14504b7975bc1490aabb236d7c05926ae3a3aae8c71f8f9
+      kind: { de: "Installer, ohne Administratorrechte", en: "Installer, no admin rights" }
+      req: { de: "Windows 10/11, x64", en: "Windows 10/11, x64" }
+    - os: Windows
+      name: Animator-Choreographer-0.1.0-Windows-portable.zip
+      size: 3957268
+      sha256: 2e9416ee82c399508d7c8d363f3890967062cafe12977cd2ef0d78cb87bf0216
+      kind: { de: "Portables ZIP", en: "Portable ZIP" }
+      req: { de: "Windows 10/11, x64", en: "Windows 10/11, x64" }
+    - os: Linux
+      name: animator-choreographer_0.1.0_amd64.deb
+      size: 2799110
+      sha256: 21a8bd01a208e732a3767e35883433f0a8fcb51088d29f155d80c9279c38b5fc
+      kind: { de: "Paket für Debian/Ubuntu", en: "Package for Debian/Ubuntu" }
+      req: { de: "x86_64, glibc 2.35+", en: "x86_64, glibc 2.35+" }
+    - os: Linux
+      name: animator-choreographer-0.1.0-linux-x86_64.tar.gz
+      size: 3504265
+      sha256: 2344030993cc4bc82d219a7014fa79e0d82182557cbedeba0cb35e11824e7ab4
+      kind: { de: "Archiv", en: "Archive" }
+      req: { de: "x86_64, glibc 2.35+", en: "x86_64, glibc 2.35+" }

@@ -46,6 +46,13 @@ Schrittbasierte 2D/3D-Bewegungsformen für AmbiEncoder-Quellen.
 - [JS_AmbiEncoder64_Motion_Map_GUI.lua herunterladen](/downloads/lua-scripts/JS_AmbiEncoder64_Motion_Map_GUI.lua)
 - [Benutzerhandbuch](/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/)
 
+## Animator Choreographer
+
+Desktop-App, die Raumchoreographien plant und als Szenen-XML für den [Animator](/de/icst-ambisonics-plugins/11_animator/) exportiert. Evaluationsbeta für macOS, Windows und Linux, nicht signiert.
+
+- [Release 0.1.0 auf GitHub](https://github.com/joambi/animator-choreographer/releases/tag/v0.1.0): pkg und ZIP (macOS), Setup.exe und portables ZIP (Windows), .deb und .tar.gz (Linux), `SHA256SUMS.txt`
+- [Dateien, Prüfsummen und Hinweise zum ersten Start](/de/icst-ambisonics-plugins/20_animator_choreographer/#download)
+
 ---
 
 ## Templates, Presets und Anleitungen
