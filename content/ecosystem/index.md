@@ -41,7 +41,6 @@ As of 2026-11-11. Components marked **Beta** are released for evaluation, not ap
 | Component | Contents | Platform / format | Status | Licence | Maintained in |
 |---|---|---|---|---|---|
 | [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) (Core) | AmbiEncoder, AmbiEncoder_64, AmbiDecoder, MultiDecoder, Monitor, Animator | VST3, AU; LV2 experimental; macOS, Windows | Stable | GPL3 | [schweizerweb/icst-ambisonics-plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases) |
-| ICST AmbiPlugins (Extended) | AmbiIRVerb, AmbiIRLayers, AmbiGran 16 | VST3; macOS, Windows | Beta, unsigned | Open; IRidesce material with its own rights notice | joambi/ICST-AmbiPlugins (release in preparation) |
 | [ICST Ambisonics Tools for Max](/icst-ambisonics-tools/) | `ambiencode~`, `mc.ambiencode~`, `ambidecode~`, `ambipanning~`, `ambimonitor`, `ambicontrol` and more | Max 8, Max Package Manager | Stable | Free | ICST / ZHdK |
 | [ICST Ambisonics Bundle (`ICST_Ambi_Reaper`)](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) | Portable REAPER folder: toolbar, Lua scripts, ICST and IEM VST3, SWS, js_ReaScriptAPI, ReaPack, docs | REAPER 7; macOS (Apple Silicon recommended), Windows | macOS complete, Windows beta untested | ICST parts GPL-3.0-or-later, otherwise per component | joambi/ICST_Ambi_Reaper (release in preparation) |
 | [ICST Animator](/icst-ambisonics-plugins/11_animator/) | Timeline animation of source groups in the Multi-AmbiEncoder_64, scenes as XML | macOS, Windows | Docs released with Plugins 4.0 | Open | ICST |
