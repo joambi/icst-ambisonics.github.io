@@ -7,6 +7,10 @@ cascade:
   type: docs
 ---
 
+{{< notice info >}}
+The ‘ambisonics.ch’ documentation is currently under construction. Pages are being revised and added.
+{{< /notice >}}
+
 The **ICST Ambisonics Plugins** are a comprehensive production environment for **Higher Order Ambisonics (HOA)**. They are designed for spatial composition, group movement, flexible loudspeaker layouts, and multichannel production workflows.
 
 The suite supports up to **64 sources**, which can be encoded to **B-format / HOA** and decoded to freely configurable loudspeaker setups. Core modules include **MonoEncoder**, **StereoEncoder**, **MultiEncoder_64**, **AmbiDecoder**, and **MultiDecoder**.
