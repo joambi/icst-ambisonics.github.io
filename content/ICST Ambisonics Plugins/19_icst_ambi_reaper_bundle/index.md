@@ -51,12 +51,12 @@ Current version: **1.0.0** ([release notes and all files on GitHub](https://gith
 
 1. **Copy the folder** to a fixed place (external SSD or `~/Music`). Spaces in the path are fine.
 2. **Add REAPER.app.** If `REAPER.app` is not in the folder, download it from [reaper.fm](https://www.reaper.fm) (same major version) and put it **into the folder** next to `reaper.ini`.
-3. **Run the setup script:** right-click `run-me-before-install.command` → *Open*. It removes the macOS quarantine flag and sets the plugin path. Run it again after every move of the folder.
-4. **Start REAPER from the folder.** If macOS warns: right-click the app → *Open*. Check: *Options → Show REAPER resource path* must point to `ICST_Ambi_Reaper`.
+3. **Run the setup script:** double-click `run-me-before-install.command`. If macOS blocks it, close the message, then go to **System Settings › Privacy & Security › Open Anyway** and confirm with your password (macOS 15 and later; up to macOS 14, Ctrl-click › *Open* is enough). The script removes the macOS quarantine flag and sets the plugin path. Run it again after every move of the folder.
+4. **Start REAPER from the folder.** If macOS still warns, use the same *Open Anyway* path. Check: *Options → Show REAPER resource path* must point to `ICST_Ambi_Reaper`.
 5. **Scan plugins:** *Options → Preferences → Plug-ins → VST*, path ends in `Effects/VST3`, click *Re-scan*.
 6. **Show the toolbar:** *View → Toolbars → Floating toolbar 1*.
 
-With the `.pkg` installer, steps 1 to 3 are done for you. An unsigned PKG opens with right-click → *Open*.
+With the `.pkg` installer, steps 1 to 3 are done for you. An unsigned PKG opens the same way: double-click, close the message, then *Open Anyway* in Privacy & Security.
 
 {{< notice info >}}
 Do not install twice: if the same plugins also sit in `/Library/Audio/Plug-Ins/VST3`, REAPER may load the old copy. Use either the folder or the system installers.
