@@ -43,7 +43,7 @@ The **Animator Choreographer** is a desktop app for planning how groups of sourc
 | System | macOS 11+ (Universal), Windows 10/11 (x64), Linux x86_64 (glibc 2.35+) |
 | Plugins | ICST Ambisonics Plugins with the Animator (AmbiEncoder_64) in REAPER; tested with 3.2.0.9 |
 | Optional | [Ollama](https://ollama.com) for drafting a plan from a description |
-| Source | [Release on GitHub](https://github.com/joambi/animator-choreographer/releases/tag/v0.1.0); the macOS app is also included in the [ICST Ambi REAPER Bundle](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) (`Animator` folder, toolbar button *Open Animator*) |
+| Source | [Release on GitHub](https://github.com/joambi/animator-choreographer/releases/tag/v0.1.0); the macOS app is also included in the [ICST Ambi REAPER Bundle](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) (`Animator` folder, toolbar button 16 *Open Animator*) |
 | Licence | GPL-3.0 |
 | Source code | [joambi/animator-choreographer](https://github.com/joambi/animator-choreographer) |
 

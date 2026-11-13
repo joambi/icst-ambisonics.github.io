@@ -53,7 +53,7 @@ Version 0.1.0 steht als Evaluationsbeta für macOS, Windows und Linux auf GitHub
 
 {{< release "animator-choreographer" >}}
 
-Im vorkonfigurierten **ICST-Ambi-Reaper**-Ordner ist die macOS-App bereits enthalten: Sie liegt im Ordner `Animator`, und der Toolbar-Button 13 (*Open Animator*) startet sie. Die bebilderte Dokumentation dieses Ordners (`Docs/index.html`, Toolbar-Button *Documentation*) beschreibt Installation und erste Schritte.
+Im vorkonfigurierten **ICST-Ambi-Reaper**-Ordner ist die macOS-App bereits enthalten: Sie liegt im Ordner `Animator`, und der Toolbar-Button 16 (*Animator öffnen*) startet sie. Die bebilderte Dokumentation dieses Ordners (`Docs/index.html`, Toolbar-Button *Documentation*) beschreibt Installation und erste Schritte.
 
 ## Ablauf
 

@@ -51,12 +51,12 @@ Aktuelle Version: **1.0.0** ([Release-Notizen und alle Dateien auf GitHub](https
 
 1. **Ordner kopieren** an einen festen Ort (externe SSD oder `~/Music`). Leerzeichen im Pfad sind erlaubt.
 2. **REAPER.app ergänzen.** Liegt `REAPER.app` nicht im Ordner, von [reaper.fm](https://www.reaper.fm) laden (gleiche Hauptversion) und **in den Ordner** neben `reaper.ini` legen.
-3. **Einrichtungsskript starten:** Rechtsklick auf `run-me-before-install.command` → *Öffnen*. Es entfernt das macOS-Quarantäne-Flag und setzt den Plugin-Pfad. Nach jedem Verschieben des Ordners erneut ausführen.
-4. **REAPER aus dem Ordner starten.** Warnt macOS: Rechtsklick auf die App → *Öffnen*. Kontrolle: *Options → Show REAPER resource path* muss auf `ICST_Ambi_Reaper` zeigen.
+3. **Einrichtungsskript starten:** Doppelklick auf `run-me-before-install.command`. Blockiert macOS das Skript: Meldung schliessen, dann **Systemeinstellungen › Datenschutz & Sicherheit › Dennoch öffnen** und mit dem Passwort bestätigen (ab macOS 15; bis macOS 14 genügt Ctrl-Klick › *Öffnen*). Das Skript entfernt das macOS-Quarantäne-Flag und setzt den Plugin-Pfad. Nach jedem Verschieben des Ordners erneut ausführen.
+4. **REAPER aus dem Ordner starten.** Warnt macOS trotzdem, gilt derselbe Weg über *Dennoch öffnen*. Kontrolle: *Options → Show REAPER resource path* muss auf `ICST_Ambi_Reaper` zeigen.
 5. **Plugins scannen:** *Options → Preferences → Plug-ins → VST*, Pfad endet auf `Effects/VST3`, *Re-scan* klicken.
 6. **Toolbar zeigen:** *View → Toolbars → Floating toolbar 1*.
 
-Mit dem `.pkg`-Installer entfallen die Schritte 1 bis 3. Ein unsigniertes PKG öffnest du mit Rechtsklick → *Öffnen*.
+Mit dem `.pkg`-Installer entfallen die Schritte 1 bis 3. Ein unsigniertes PKG öffnest du ebenso: Doppelklick, Meldung schliessen, dann *Dennoch öffnen* in Datenschutz & Sicherheit.
 
 {{< notice info >}}
 Nicht doppelt installieren: Liegen dieselben Plugins zusätzlich in `/Library/Audio/Plug-Ins/VST3`, lädt REAPER unter Umständen die alte Kopie. Entweder nur den Ordner oder nur die System-Installer benutzen.

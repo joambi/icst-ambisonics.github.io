@@ -53,7 +53,7 @@ Version 0.1.0 is available on GitHub as an evaluation beta for macOS, Windows an
 
 {{< release "animator-choreographer" >}}
 
-The preconfigured **ICST Ambi Reaper** folder already contains the macOS app: it lives in the `Animator` folder, and toolbar button 13 (*Open Animator*) starts it. The illustrated documentation of that folder (`Docs/index.html`, toolbar button *Documentation*) covers installation and the first steps.
+The preconfigured **ICST Ambi Reaper** folder already contains the macOS app: it lives in the `Animator` folder, and toolbar button 16 (*Open Animator*) starts it. The illustrated documentation of that folder (`Docs/index.html`, toolbar button *Documentation*) covers installation and the first steps.
 
 ## Workflow
 
