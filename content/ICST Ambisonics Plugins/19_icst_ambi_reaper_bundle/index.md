@@ -75,8 +75,8 @@ The folder is a macOS bundle, so only the platform-neutral parts are used on Win
 
 1. New track, insert a mono audio file. Click **Encoder 64** on the track.
 2. Click **Decoder** for loudspeakers or **Binaural** for headphones.
-3. Optional: **HOA Reverb**.
-4. Click **Auto-Route**: the 16-channel sends source → reverb → decoder/binaural are created.
+3. Optional: **HOA FX**.
+4. Click **Auto-Route**: the 16-channel sends source → HOA FX → decoder/binaural are created.
 5. Play and move the source in the encoder. For recorded movements use [Motion Map](/icst-ambisonics-plugins/15_icst_ambi_motion_map/), [Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) or Spat Motion Automation.
 
 ## Toolbar and scripts
