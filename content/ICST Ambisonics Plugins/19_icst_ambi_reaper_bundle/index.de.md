@@ -94,7 +94,9 @@ Die Skripte fragen nach der Ambisonics-Ordnung (1, 3, 5 oder 7, also 4, 16, 36 o
 | Animator-Buttons | [Choreographer](/de/post/icst-animator-choreographer/) öffnen, Region-Navigation, Encoder-Spuren, CSV-Export |
 | Dokumentation | Öffnet das Offline-Handbuch |
 
-<!-- TODO release: Screenshot der Toolbar ergänzen. -->
+![Die Toolbar des ICST Ambi REAPER Bundles mit 21 Buttons, von links nach rechts nummeriert 1 bis 21](/images/reaper-toolbar-numbered.png)
+
+*Die Toolbar mit ihren 21 Buttons, von links nach rechts nummeriert. Die Nummern entsprechen dem Offline-Handbuch.*
 
 ## Wenn etwas nicht geht
 

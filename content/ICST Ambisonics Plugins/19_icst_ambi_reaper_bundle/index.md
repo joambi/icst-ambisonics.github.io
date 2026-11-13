@@ -94,7 +94,9 @@ Scripts ask for the Ambisonics order (1, 3, 5 or 7, that is 4, 16, 36 or 64 chan
 | Animator buttons | Open the [Choreographer](/post/icst-animator-choreographer/), region navigation, encoder tracks, CSV export |
 | Documentation | Opens the offline manual |
 
-<!-- TODO release: add a screenshot of the toolbar. -->
+![The ICST Ambi REAPER toolbar with its 21 buttons, numbered 1 to 21 from left to right](/images/reaper-toolbar-numbered.png)
+
+*The toolbar with its 21 buttons, numbered from left to right. The numbers match the offline manual.*
 
 ## Troubleshooting
 
