@@ -14,7 +14,7 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
 <div class="motion-map-landing">
   <section class="motion-map-hero">
     <div class="motion-map-hero__copy">
-      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.4</p>
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.5</p>
       <h1><strong>Quellenbewegungen gestalten</strong><span>für räumliches Komponieren in REAPER</span></h1>
       <p class="motion-map-hero__lead">Handbuch, Setup und kreative Techniken zum Positionieren, Animieren und Automatisieren von bis zu 64 Klangquellen im dreidimensionalen Raum.</p>
       <p class="motion-map-hero__meta">Einsteiger–Fortgeschrittene · Komponist:in · Sound Designer:in · Spatial-Audio-Techniker:in</p>
@@ -159,7 +159,7 @@ Wenn mehrere Sources dieselbe Form verwenden, verteilt der **Src offset**-Schieb
 ### Figure-Editor
 
 {{< notice info >}}
-Der Figure-Editor ist ab Motion Map v2.3 verfügbar (aktuell: v2.4.4). Die Beschriftungen im Fenster sind deutsch; die Begriffe unten entsprechen ihnen.
+Der Figure-Editor ist ab Motion Map v2.3 verfügbar (aktuell: v2.4.5). Die Beschriftungen im Fenster sind deutsch; die Begriffe unten entsprechen ihnen.
 {{< /notice >}}
 
 Jede Bewegungsform hat einen **Figure-Editor**: ein zweiter Tab unterhalb der Trajektorien-Vorschau, mit dem du eine Figur nicht nur auswählst, sondern auch umformst. Öffnen kannst du ihn über den Tab **FIGURE EDITOR · S0** (die Beschriftung zeigt die gewählte Source) oder über den Button **Figur bearbeiten ▸** in den Settings. **◂ Settings** bringt dich zu den normalen Reglern zurück. Die Vorschau folgt den Reglern beim Ziehen.
@@ -239,7 +239,7 @@ Alle Schieberegler sind ziehbar. **Shift** während des Ziehens halten für Fein
 
 ### Quantize-Steuerung
 
-Quantisierung kann auf **jede** Bewegungsform angewendet werden. Sie verwandelt kontinuierliche Bewegung in zeitlich, räumlich oder doppelt gestufte Bewegung. Die vier Felder **Quant T**, **Q X**, **Q Y**, **Q Z** stehen im Tab Settings rechts neben den Toggles *Clear existing* / *Track Latch* (ab v2.4.3).
+Quantisierung kann auf **jede** Bewegungsform angewendet werden. Sie verwandelt kontinuierliche Bewegung in zeitlich, räumlich oder doppelt gestufte Bewegung. Die vier Felder **Quant T**, **Q X**, **Q Y**, **Q Z** stehen im Tab Settings rechts neben den Toggles *Clear existing* (ab v2.4.3).
 
 | Parameter | Standard | Beschreibung |
 |-----------|----------|--------------|
@@ -293,7 +293,7 @@ Das bedeutet:
 | Option | Beschreibung |
 |--------|--------------|
 | **Clear existing** | Löscht vorhandene Envelope-Punkte in der Time Selection vor dem Schreiben. Deaktivieren, um Bewegung auf vorhandene Automation zu schichten. |
-| **Track Latch** | Setzt den Track nach dem Schreiben in den Latch-Automationsmodus, damit Live-Parameterbewegungen beim nächsten Playback aufgezeichnet werden. |
+| **Automation: Latch** | Keine Option: Der Track wird nach dem Schreiben immer in den Latch-Automationsmodus gesetzt (ab v2.4.5), damit Live-Parameterbewegungen beim nächsten Playback aufgezeichnet werden. |
 | **Overwrite region** | Wenn eine Region mit demselben Namen bereits existiert, wird sie zur aktuellen Time Selection verschoben statt einer neuen erstellt. |
 | **Use Z motion** | Aktiviert die Distanz-(Z)-Variation. Deaktivieren, um Sources auf einer fixen Distanz zu halten, während X und Y sich weiterhin bewegen. |
 
@@ -373,7 +373,7 @@ Die OSC-Distanz wird in physikalischen Metern gesendet (Einheitskugel-Radius × 
 
 **Disconnect** klicken, um das OSC-Senden zu beenden.
 
-### Preview-Transport (ab v2.4.4)
+### Preview-Transport (ab v2.4.4, Sync ab v2.4.5)
 
 Unter dem OSC-Bereich (links unten) steuert ein kleiner Transport die Animation in der Trajektorien-Vorschau und in der Live-OSC-Vorschau. Er ändert nichts an der geschriebenen Automation.
 
@@ -383,8 +383,9 @@ Unter dem OSC-Bereich (links unten) steuert ein kleiner Transport die Animation 
 | **> Fwd / < Rev** | Spielt die Vorschau vorwärts oder rückwärts. |
 | **▶ Play** | Startet die Vorschau-Animation. |
 | **■ Stop** | Friert die Animation ein, so lässt sich eine Position in Ruhe anhören. |
+| **Sync** | Die Vorschau folgt dem REAPER-Transport: Sie läuft, solange REAPER spielt, und steht, wenn REAPER stoppt. **▶ Play** und **■ Stop** starten und stoppen dann den REAPER-Transport. |
 
-Ist **BPM** aktiv und läuft der REAPER-Transport, folgt die Vorschau der Projektposition (Tempo-Sync). Speed und Richtung wirken dann nur bei gestopptem Transport.
+Ist **BPM** aktiv und läuft der REAPER-Transport, folgt die Vorschau der Projektposition (Tempo-Sync). Mit **Sync** läuft die Vorschau nur, solange REAPER spielt; mit **BPM** folgt sie der Projektposition, sonst läuft sie mit dem eingestellten Speed und der gewählten Richtung.
 
 {{< notice warning >}}
 Die Live-Vorschau erfordert Python 3 als `python3` im System-PATH. Wenn der Status-Punkt rot bleibt, im Terminal `python3 --version` ausführen.
@@ -403,7 +404,7 @@ Wenn Sources eingerichtet und die Parameter in der Vorschau korrekt aussehen:
 Das Script:
 - Löscht vorhandene Envelope-Punkte im Time-Selection-Bereich (wenn Clear existing aktiv).
 - Schreibt XYZ-Automation für jede aktivierte Source direkt in der Einheitskugel (−1..+1), unabhängig vom Scale-Anzeige-Wert.
-- Setzt den Track auf Latch-Modus (wenn Track Latch aktiv).
+- Setzt den Track auf Latch-Modus (immer, ab v2.4.5).
 - Erstellt oder aktualisiert eine benannte Render-Region.
 
 Eine Statusmeldung am unteren Rand des GUIs bestätigt den Abschluss.

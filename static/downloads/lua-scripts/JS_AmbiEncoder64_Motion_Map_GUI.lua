@@ -1,11 +1,14 @@
 -- @description AmbiEncoder64 Motion Map GUI
 -- @author JS / Codex
--- @version 2.4.4
+-- @version 2.4.5
 -- @about
 --   Improved GUI for assigning motion shapes per ICST AmbiEncoder_64 source index,
 --   with live AZ/EL trajectory preview, anti-aliased icons, and color-coded source trails.
 --   Writes XYZ automation and a render region via JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua.
 -- @changelog
+--   v2.4.5: Written tracks are always set to Latch (the Track Latch option is gone; old presets
+--         are ignored for this). New Sync button in the preview transport: the preview follows
+--         REAPER play/stop, and the GUI Play / Stop buttons start / stop the REAPER transport.
 --   v2.4.4: Preview transport under OSC PREVIEW (like Kristall Motion Map): Speed x (free-run
 --         and tempo-synced preview), Fwd/Rev direction, Play / Stop (Stop freezes the animation
 --         in the trajectory preview and in the live OSC preview). Not stored in presets.
@@ -87,6 +90,7 @@ local state = {
   anim_speed       = "1.00", -- preview transport: speed factor (preview / live OSC only)
   anim_rev         = false,  -- preview transport: reverse direction
   anim_run         = true,   -- preview transport: false = animation frozen (Stop)
+  sync_transport   = false,  -- preview follows REAPER play/stop; Play/Stop buttons drive REAPER
   scale     = "1",    -- display scale factor (1=unit sphere, 10=10m, 50=50m, 100=100m)
   x_center  = "0.00", -- X center in scale units (−scale..+scale)
   x_spread  = "2.00", -- X total spread in scale units (0..2×scale) — 2.0 = full -1..+1
@@ -684,7 +688,7 @@ local function preset_deserialize(str)
     elseif k == "palin"   then state.palindrome       = bv(v)
     elseif k == "use_z"   then state.use_z_motion     = bv(v)
     elseif k == "clear"   then state.clear_existing   = bv(v)
-    elseif k == "latch"   then state.set_latch        = bv(v)
+    elseif k == "latch"   then state.set_latch        = true   -- always Latch (v2.4.5)
     elseif k == "overwrite" then state.overwrite_region = bv(v)
     elseif k == "region"  then state.region_name      = v
     elseif k == "fig"     then state.shape_params     = fig_deserialize(v, false)
@@ -2162,9 +2166,16 @@ local function draw_osc_left()
   end
   if draw_button("\226\150\182 Play", x + 180, y + 16, 80, 22, state.anim_run, false) then
     state.anim_run = true; state.focus = nil
+    if state.sync_transport and (reaper.GetPlayState() & 1) == 0 then reaper.Main_OnCommand(1007, 0) end
   end
   if draw_button("\226\150\160 Stop", x + 268, y + 16, 80, 22, not state.anim_run, false) then
     state.anim_run = false; state.focus = nil
+    if state.sync_transport and (reaper.GetPlayState() & 1) == 1 then reaper.Main_OnCommand(1016, 0) end
+  end
+  if draw_button(state.sync_transport and "Sync \226\156\147" or "Sync", x + 356, y + 16, 80, 22, state.sync_transport, false) then
+    state.sync_transport = not state.sync_transport; state.focus = nil
+    state.status = state.sync_transport and "Sync ON \226\128\148 preview follows REAPER play/stop; Play/Stop here start/stop REAPER"
+                                         or "Sync OFF \226\128\148 preview runs on its own"
   end
 end
 
@@ -2377,7 +2388,10 @@ local function draw_settings()
     draw_input("space_quant_z",   "Q Z",     qx + (qw + 4) * 3, y - 4, qw)
   end
   state.clear_existing   = draw_toggle("Clear existing",  state.clear_existing,   x,        y)
-  state.set_latch        = draw_toggle("Track Latch",      state.set_latch,        x + 164,  y)
+  state.set_latch        = true   -- tracks are always written in Latch mode
+  gfx.setfont(2, "Arial", 12)
+  draw_text("Automation: Latch", x + 164 + 28, y + 5, 0.40, 0.50, 0.58)
+  gfx.setfont(1, "Arial", 16)
   y = y + 28
   state.overwrite_region = draw_toggle("Overwrite region", state.overwrite_region, x,        y)
   state.use_z_motion     = draw_toggle("Use Z motion",     state.use_z_motion,     x + 164,  y)
@@ -2676,7 +2690,7 @@ local function draw()
 
   -- Title bar
   gfx.setfont(2, "Arial", 22)
-  draw_text("AmbiEncoder64 Motion Map   v2.4.4", GRID_X, 10, 0.88, 0.92, 0.94)
+  draw_text("AmbiEncoder64 Motion Map   v2.4.5", GRID_X, 10, 0.88, 0.92, 0.94)
   gfx.setfont(2, "Arial", 12)
   draw_text("Assign motion shapes to sources, edit the figures in the Figure Editor, preview, then write XYZ automation over the time selection — or export the preview as a score image.",
             GRID_X, 40, 0.42, 0.50, 0.56)
@@ -2707,6 +2721,7 @@ local function loop()
   ui.char        = gfx.getchar()
   if ui.char < 0 then osc_close(); return end
   handle_text_input()
+  if state.sync_transport then state.anim_run = (reaper.GetPlayState() & 1) == 1 end
   if state.osc_preview then osc_send_preview() end
   draw()
   ui.last_mouse_down = ui.mouse_down

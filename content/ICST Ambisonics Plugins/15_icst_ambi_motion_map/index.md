@@ -14,7 +14,7 @@ description: "Create and automate spatial source trajectories in REAPER with the
 <div class="motion-map-landing">
   <section class="motion-map-hero">
     <div class="motion-map-hero__copy">
-      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.4</p>
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.5</p>
       <h1><strong>Source Motion Mapping</strong><span>for Spatial Composition in REAPER</span></h1>
       <p class="motion-map-hero__lead">Guide, setup, and creative techniques for positioning, animating, and automating up to 64 sound sources in three-dimensional space.</p>
       <p class="motion-map-hero__meta">Beginner–Intermediate · Composer · Sound designer · Spatial-audio technician</p>
@@ -159,7 +159,7 @@ When multiple sources share the same shape, use the **Src offset** slider (see �
 ### Figure Editor
 
 {{< notice info >}}
-The Figure Editor is available from Motion Map v2.3 (current version: v2.4.4). The interface labels inside the window are currently in German; the English equivalents are given in brackets.
+The Figure Editor is available from Motion Map v2.3 (current version: v2.4.5). The interface labels inside the window are currently in German; the English equivalents are given in brackets.
 {{< /notice >}}
 
 Each motion shape has a **figure editor**: a second tab below the trajectory preview that lets you reshape a figure instead of only choosing it. Open it with the **FIGURE EDITOR · S0** tab (the label shows the selected source) or with the **Figur bearbeiten ▸** button in the settings. **◂ Settings** returns to the normal controls. The preview updates while you drag the sliders.
@@ -239,7 +239,7 @@ All sliders are draggable. Hold **Shift** while dragging for fine control. Click
 
 ### Quantize controls
 
-Quantization can be applied to **any** motion shape. It turns continuous motion into stepped motion in time, space, or both. The four fields **Quant T**, **Q X**, **Q Y**, **Q Z** sit in the Settings tab to the right of the *Clear existing* / *Track Latch* toggles (available from v2.4.3).
+Quantization can be applied to **any** motion shape. It turns continuous motion into stepped motion in time, space, or both. The four fields **Quant T**, **Q X**, **Q Y**, **Q Z** sit in the Settings tab to the right of the *Clear existing* toggle (available from v2.4.3).
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
@@ -293,7 +293,7 @@ This means:
 | Option | Description |
 |--------|-------------|
 | **Clear existing** | Deletes existing envelope points in the time selection before writing. Turn off to layer movement on top of existing automation. |
-| **Track Latch** | Sets the track to Latch automation mode after writing, so live parameter movements record on the next playback pass. |
+| **Automation: Latch** | Not an option: the track is always set to Latch automation mode after writing (from v2.4.5), so live parameter movements record on the next playback pass. |
 | **Overwrite region** | If a region with the same name already exists, it is repositioned to match the current time selection instead of creating a duplicate. |
 | **Use Z motion** | Includes distance (Z) variation. Disable to keep sources at a fixed distance while X and Y still move. |
 
@@ -373,7 +373,7 @@ OSC distance is sent in physical metres (unit radius × Scale).
 
 Click **Disconnect** to stop sending OSC.
 
-### Preview transport (from v2.4.4)
+### Preview transport (from v2.4.4, Sync from v2.4.5)
 
 Below the OSC panel (bottom left) a small transport controls the animation in the trajectory preview and in the live OSC preview. It does not change what is written as automation.
 
@@ -383,8 +383,9 @@ Below the OSC panel (bottom left) a small transport controls the animation in th
 | **> Fwd / < Rev** | Plays the preview forwards or backwards. |
 | **▶ Play** | Starts the preview animation. |
 | **■ Stop** | Freezes the animation, so you can listen to one position. |
+| **Sync** | The preview follows the REAPER transport: it runs while REAPER plays and stands still when REAPER stops. **▶ Play** and **■ Stop** then start and stop the REAPER transport. |
 
-With **BPM** on and the REAPER transport playing, the preview follows the project position (tempo sync). Speed and direction then apply only while the transport is stopped.
+With **BPM** on and the REAPER transport playing, the preview follows the project position (tempo sync). With **Sync** on, the preview runs only while REAPER plays; with **BPM** on it follows the project position, otherwise it runs at the set Speed and direction.
 
 {{< notice warning >}}
 Live Preview requires Python 3 to be installed and accessible as `python3` in your system PATH. If the status dot stays red, open a terminal and run `python3 --version` to verify.
@@ -403,7 +404,7 @@ Once sources are set up and parameters look right in the preview:
 The script will:
 - Delete existing envelope points in the time selection (if Clear existing is on).
 - Write XYZ automation for every enabled source directly in the unit sphere (−1..+1), independent of the Scale display setting.
-- Set the track to Latch mode (if Track Latch is on).
+- Set the track to Latch mode (always, from v2.4.5).
 - Create or update a named render region.
 
 A status message at the bottom of the GUI confirms completion.
