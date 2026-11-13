@@ -36,6 +36,7 @@ Entwurf. Die macOS-Version ist vollständig. Die Windows-Version ist Beta und no
 | Python 3 | Optional, für Motion Map, [Motion Markers](/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) und Kristall Motion Map | Dasselbe, von python.org |
 | Plugin-Format | VST3 (nicht AU) | VST3 |
 
+<!-- HIDDEN bis Test abgeschlossen
 ## Download
 
 Aktuelle Version: **1.0.0** ([Release-Notizen und alle Dateien auf GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.0.0)):
@@ -43,6 +44,8 @@ Aktuelle Version: **1.0.0** ([Release-Notizen und alle Dateien auf GitHub](https
 - [`ICST_Ambi_Reaper_1.0.0_macOS.pkg`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.0.0/ICST_Ambi_Reaper_1.0.0_macOS.pkg): Installer nach `/Applications/ICST_Ambi_Reaper`
 - [`ICST_Ambi_Reaper_1.0.0_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.0.0/ICST_Ambi_Reaper_1.0.0_macOS.zip): portabel, zum Beispiel für eine externe SSD
 - [`ICST_Ambi_Reaper_1.0.0_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.0.0/ICST_Ambi_Reaper_1.0.0_scripts-only.zip): nur die plattformneutralen Teile (für Windows)
+
+-->
 
 ## Installation unter macOS
 
