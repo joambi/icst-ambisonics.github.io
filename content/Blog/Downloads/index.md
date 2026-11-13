@@ -42,6 +42,14 @@ Free and open-source VST3/AU/LV2 plugin suite for Higher Order Ambisonics in REA
       <a class="hero__link" href="/icst-ambisonics-tools/">Max Tools Docs</a>
     </div>
   </section>
+  <section class="home-card">
+    <h4>Animator Choreographer</h4>
+    <p>Desktop app for space choreographies, exported as scene XML for the Animator. Evaluation beta for macOS, Windows and Linux, unsigned.</p>
+    <div class="home-card__actions">
+      {{< release "animator-choreographer" "compact" >}}
+      <a class="hero__link" href="/icst-ambisonics-plugins/20_animator_choreographer/#download">Files and checksums</a>
+    </div>
+  </section>
 </div>
 
 ---

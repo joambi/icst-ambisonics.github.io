@@ -77,3 +77,23 @@ button.navbar-burger:focus-visible {
 .theme--dark .nav__list:not(.nav__list--end) button.optionswitch__label{color:#eee}
 .theme--light .nav__list:not(.nav__list--end) button.optionswitch__label:hover,
 .theme--dark .nav__list:not(.nav__list--end) button.optionswitch__label:hover{color:#6086b4}
+
+/* Download-Tabelle des release-Shortcodes (data/releases.yml) */
+.release-downloads {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.release-downloads table {
+  width: 100%;
+}
+.release-downloads__file {
+  min-width: 14em;
+}
+.release-downloads__size {
+  white-space: nowrap;
+}
+.release-downloads pre,
+.release-downloads pre code {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

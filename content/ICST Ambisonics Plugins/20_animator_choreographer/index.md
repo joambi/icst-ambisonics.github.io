@@ -16,7 +16,7 @@ Level: Advanced | Audience: Composers, sound designers | **Works with:** [ICST A
 The **Animator Choreographer** is a desktop app for planning how groups of sources move through space over time. You describe the choreography in listening terms (direction, distance, height, gesture). The app turns it into the scene XML that the [Animator](/icst-ambisonics-plugins/11_animator/) imports and plays in the ICST AmbiEncoder_64.
 
 {{< notice warning >}}
-**In development, unsigned.** On macOS, open the app the first time with right-click › Open or remove the quarantine flag: `xattr -dr com.apple.quarantine "Animator Choreographer.app"`.
+**Evaluation beta, unsigned.** macOS 15 and later: open the app, close the message, then go to **System Settings › Privacy & Security › Open Anyway** and confirm with your password. Up to macOS 14, Ctrl-click › Open on first launch is enough. Alternative in Terminal: `xattr -dr com.apple.quarantine "Animator Choreographer.app"`. Windows: SmartScreen › **More info › Run anyway**.
 {{< /notice >}}
 
 ![The Form step in the Animator Choreographer: sections, room size and encoder on the left, top view, side view and timeline on the right](/images/icst-animator-choreographer-form.jpg)
@@ -40,11 +40,18 @@ The **Animator Choreographer** is a desktop app for planning how groups of sourc
 
 | Item | Details |
 |------|---------|
-| System | macOS and Windows |
-| Plugins | ICST Ambisonics Plugins with the Animator (AmbiEncoder_64) in REAPER |
+| System | macOS 11+ (Universal), Windows 10/11 (x64), Linux x86_64 (glibc 2.35+) |
+| Plugins | ICST Ambisonics Plugins with the Animator (AmbiEncoder_64) in REAPER; tested with 3.2.0.9 |
 | Optional | [Ollama](https://ollama.com) for drafting a plan from a description |
-| Source | Part of the [ICST Ambi REAPER Bundle](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) (`Animator` folder, toolbar button *Open Animator*) |
-| Licence | GPL3 |
+| Source | [Release on GitHub](https://github.com/joambi/animator-choreographer/releases/tag/v0.1.0); the macOS app is also included in the [ICST Ambi REAPER Bundle](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) (`Animator` folder, toolbar button *Open Animator*) |
+| Licence | GPL-3.0 |
+| Source code | [joambi/animator-choreographer](https://github.com/joambi/animator-choreographer) |
+
+## Download
+
+{{< release "animator-choreographer" >}}
+
+Tested with ICST Ambisonics Plugins 3.2.0.9, not yet with 4.0.0. The macOS `.pkg` has not yet been installed on a test machine; until then the ZIP is the safe choice. Windows and Linux have so far only been built, installed and started in GitHub Actions, not on a machine with REAPER.
 
 ## Further reading
 
