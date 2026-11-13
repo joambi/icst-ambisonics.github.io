@@ -14,7 +14,7 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
 <div class="motion-map-landing">
   <section class="motion-map-hero">
     <div class="motion-map-hero__copy">
-      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.3</p>
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.4</p>
       <h1><strong>Quellenbewegungen gestalten</strong><span>für räumliches Komponieren in REAPER</span></h1>
       <p class="motion-map-hero__lead">Handbuch, Setup und kreative Techniken zum Positionieren, Animieren und Automatisieren von bis zu 64 Klangquellen im dreidimensionalen Raum.</p>
       <p class="motion-map-hero__meta">Einsteiger–Fortgeschrittene · Komponist:in · Sound Designer:in · Spatial-Audio-Techniker:in</p>
@@ -159,7 +159,7 @@ Wenn mehrere Sources dieselbe Form verwenden, verteilt der **Src offset**-Schieb
 ### Figure-Editor
 
 {{< notice info >}}
-Der Figure-Editor ist ab Motion Map v2.3 verfügbar (aktuell: v2.4.3). Die Beschriftungen im Fenster sind deutsch; die Begriffe unten entsprechen ihnen.
+Der Figure-Editor ist ab Motion Map v2.3 verfügbar (aktuell: v2.4.4). Die Beschriftungen im Fenster sind deutsch; die Begriffe unten entsprechen ihnen.
 {{< /notice >}}
 
 Jede Bewegungsform hat einen **Figure-Editor**: ein zweiter Tab unterhalb der Trajektorien-Vorschau, mit dem du eine Figur nicht nur auswählst, sondern auch umformst. Öffnen kannst du ihn über den Tab **FIGURE EDITOR · S0** (die Beschriftung zeigt die gewählte Source) oder über den Button **Figur bearbeiten ▸** in den Settings. **◂ Settings** bringt dich zu den normalen Reglern zurück. Die Vorschau folgt den Reglern beim Ziehen.
@@ -372,6 +372,19 @@ Beispiel — Source 3, 45° Azimut, −15° Elevation, 2,5 m Distanz:
 Die OSC-Distanz wird in physikalischen Metern gesendet (Einheitskugel-Radius × Scale).
 
 **Disconnect** klicken, um das OSC-Senden zu beenden.
+
+### Preview-Transport (ab v2.4.4)
+
+Unter dem OSC-Bereich (links unten) steuert ein kleiner Transport die Animation in der Trajektorien-Vorschau und in der Live-OSC-Vorschau. Er ändert nichts an der geschriebenen Automation.
+
+| Bedienelement | Funktion |
+|---|---|
+| **Speed ×** | Geschwindigkeitsfaktor der Vorschau (0 bis 16). Ohne Tempo-Sync läuft die Vorschau mit 0,28 Zyklen pro Sekunde; mit **BPM** dauert ein Zyklus die eingestellten Beats im Projekttempo. |
+| **> Fwd / < Rev** | Spielt die Vorschau vorwärts oder rückwärts. |
+| **▶ Play** | Startet die Vorschau-Animation. |
+| **■ Stop** | Friert die Animation ein, so lässt sich eine Position in Ruhe anhören. |
+
+Ist **BPM** aktiv und läuft der REAPER-Transport, folgt die Vorschau der Projektposition (Tempo-Sync). Speed und Richtung wirken dann nur bei gestopptem Transport.
 
 {{< notice warning >}}
 Die Live-Vorschau erfordert Python 3 als `python3` im System-PATH. Wenn der Status-Punkt rot bleibt, im Terminal `python3 --version` ausführen.

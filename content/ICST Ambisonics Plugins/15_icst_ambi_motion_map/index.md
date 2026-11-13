@@ -14,7 +14,7 @@ description: "Create and automate spatial source trajectories in REAPER with the
 <div class="motion-map-landing">
   <section class="motion-map-hero">
     <div class="motion-map-hero__copy">
-      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.3</p>
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.4</p>
       <h1><strong>Source Motion Mapping</strong><span>for Spatial Composition in REAPER</span></h1>
       <p class="motion-map-hero__lead">Guide, setup, and creative techniques for positioning, animating, and automating up to 64 sound sources in three-dimensional space.</p>
       <p class="motion-map-hero__meta">Beginner–Intermediate · Composer · Sound designer · Spatial-audio technician</p>
@@ -159,7 +159,7 @@ When multiple sources share the same shape, use the **Src offset** slider (see �
 ### Figure Editor
 
 {{< notice info >}}
-The Figure Editor is available from Motion Map v2.3 (current version: v2.4.3). The interface labels inside the window are currently in German; the English equivalents are given in brackets.
+The Figure Editor is available from Motion Map v2.3 (current version: v2.4.4). The interface labels inside the window are currently in German; the English equivalents are given in brackets.
 {{< /notice >}}
 
 Each motion shape has a **figure editor**: a second tab below the trajectory preview that lets you reshape a figure instead of only choosing it. Open it with the **FIGURE EDITOR · S0** tab (the label shows the selected source) or with the **Figur bearbeiten ▸** button in the settings. **◂ Settings** returns to the normal controls. The preview updates while you drag the sliders.
@@ -372,6 +372,19 @@ Example — source 3 at 45° azimuth, −15° elevation, 2.5 m distance:
 OSC distance is sent in physical metres (unit radius × Scale).
 
 Click **Disconnect** to stop sending OSC.
+
+### Preview transport (from v2.4.4)
+
+Below the OSC panel (bottom left) a small transport controls the animation in the trajectory preview and in the live OSC preview. It does not change what is written as automation.
+
+| Control | Function |
+|---|---|
+| **Speed ×** | Speed factor for the preview (0 to 16). Without tempo sync the preview runs at 0.28 cycles per second; with **BPM** on, one cycle takes the set number of beats at the project tempo. |
+| **> Fwd / < Rev** | Plays the preview forwards or backwards. |
+| **▶ Play** | Starts the preview animation. |
+| **■ Stop** | Freezes the animation, so you can listen to one position. |
+
+With **BPM** on and the REAPER transport playing, the preview follows the project position (tempo sync). Speed and direction then apply only while the transport is stopped.
 
 {{< notice warning >}}
 Live Preview requires Python 3 to be installed and accessible as `python3` in your system PATH. If the status dot stays red, open a terminal and run `python3 --version` to verify.
