@@ -14,7 +14,7 @@ description: "Create and automate spatial source trajectories in REAPER with the
 <div class="motion-map-landing">
   <section class="motion-map-hero">
     <div class="motion-map-hero__copy">
-      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.2</p>
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.3</p>
       <h1><strong>Source Motion Mapping</strong><span>for Spatial Composition in REAPER</span></h1>
       <p class="motion-map-hero__lead">Guide, setup, and creative techniques for positioning, animating, and automating up to 64 sound sources in three-dimensional space.</p>
       <p class="motion-map-hero__meta">Beginner–Intermediate · Composer · Sound designer · Spatial-audio technician</p>
@@ -107,7 +107,7 @@ If you see *"Bitte zuerst eine Loop/Time Selection setzen"* (message appears in 
 
 The window is divided into three areas:
 
-**Left — Source Grid:** Rows for sources S0–S63. Each row has an enable toggle, a source label, and **17 motion-shape cells** (Line through Lis, including Lat).
+**Left — Source Grid:** Rows for sources S0–S63. Each row has an enable toggle, a source label, and **16 motion-shape cells** (Line through Lis, including Lat).
 
 **Right top — Trajectory Preview:** Animated canvas showing the path each active source will travel. Axes are labelled X (left–right) and Y (up–down). The selected source shows a coordinate readout in the current scale unit (e.g. `S0  X:-0.16  Y:-0.04`).
 
@@ -131,9 +131,9 @@ The counter in the top-right of the settings panel shows how many sources are cu
 
 ## 6. Assigning Motion Shapes
 
-Each row has **17 shape buttons**. Click one to assign that movement pattern to a source. Assigning a shape also enables the source automatically.
+Each row has **16 shape buttons**. Click one to assign that movement pattern to a source. Assigning a shape also enables the source automatically.
 
-![Overview of all 17 motion shapes and their trajectories](/images/motion-shapes-overview.svg)
+![Overview of all 16 motion shapes and their trajectories](/images/motion-shapes-overview.svg)
 
 | Label | Shape | Movement Character |
 |-------|-------|--------------------|
@@ -146,7 +146,6 @@ Each row has **17 shape buttons**. Click one to assign that movement pattern to 
 | **Circ** | `circle` | Full circle in the XY plane |
 | **Spir** | `spiral` | Expanding spiral from center outward |
 | **Four** | `fourier_xyz` | Complex 3-D path from summed harmonics |
-| **Lat** | `lattice` | Repeated XYZ offset pattern with optional sliding and bounds |
 | **Hrt** | `heart_curve` | Heart-shaped parametric curve |
 | **Card** | `cardioid` | Cardioid — single-lobed teardrop curve |
 | **R8** | `rose8` | Rose curve with 8 petals |
@@ -157,22 +156,10 @@ Each row has **17 shape buttons**. Click one to assign that movement pattern to 
 
 When multiple sources share the same shape, use the **Src offset** slider (see §7) to spread them across the trajectory — otherwise they all move together at the same position.
 
-### Lattice shape
-
-`Lat` is a crystal-style repeated transform. Instead of tracing one continuous geometric curve, it starts at the current XYZ center point and keeps adding the XYZ spread vector over time.
-
-- **Starting point:** `X center`, `Y center`, `Z center`
-- **Repeated offset:** `X spread`, `Y spread`, `Z spread`
-- **Rate / T:** how many lattice updates happen over one time selection
-- **Slide:** smooths the transition between lattice points so the motion glides instead of snapping
-- **Bound X/Y/Z:** optional wrap range around the center for each axis; `0` disables bounding
-
-This shape is useful for crystalline motion, staircase movement in depth, repeating spatial grids, and other structured offsets that keep propagating away from the origin.
-
 ### Figure Editor
 
 {{< notice info >}}
-The Figure Editor is available from Motion Map v2.3 (current version: v2.4.2). The interface labels inside the window are currently in German; the English equivalents are given in brackets.
+The Figure Editor is available from Motion Map v2.3 (current version: v2.4.3). The interface labels inside the window are currently in German; the English equivalents are given in brackets.
 {{< /notice >}}
 
 Each motion shape has a **figure editor**: a second tab below the trajectory preview that lets you reshape a figure instead of only choosing it. Open it with the **FIGURE EDITOR · S0** tab (the label shows the selected source) or with the **Figur bearbeiten ▸** button in the settings. **◂ Settings** returns to the normal controls. The preview updates while you drag the sliders.
@@ -212,7 +199,7 @@ Above the editor, the preview can be switched between **XY** and **Time** view. 
 
 | Button | Effect |
 |--------|--------|
-| **Auto** | Assigns all 17 shapes in round-robin order across all 64 sources |
+| **Auto** | Assigns all 16 shapes in round-robin order across all 64 sources |
 | **Random** | Assigns a random shape to every source |
 | **All Line** | Sets all active sources to Line |
 | **All Circle** | Sets all active sources to Circle |
@@ -250,24 +237,14 @@ All sliders are draggable. Hold **Shift** while dragging for fine control. Click
 | **Z center** | 0.75 | Distance center (0 = near, Scale = far). |
 | **Z spread** | 0.35 | Distance variation range. |
 
-### Lattice controls
-
-These controls appear below the main spatial parameters and only affect sources using the **Lat** shape:
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| **Rate / T** | 8.0 | Number of lattice updates across one full time selection. `8` means the offset is added eight times over the selected duration. |
-| **Slide** | 1.0 | Smoothing factor between lattice positions. `0` gives hard stepped jumps; `1` fully interpolates between steps; intermediate values blend the two. |
-| **Bound X / Y / Z** | 0.00 | Optional per-axis wrap bounds around the center point. `0` disables bounding; positive values keep the repeated transform inside a finite range. |
-
 ### Quantize controls
 
-Quantization can be applied to **any** motion shape, not just Lattice. It turns continuous motion into stepped motion in time, space, or both.
+Quantization can be applied to **any** motion shape. It turns continuous motion into stepped motion in time, space, or both. The four fields **Quant T**, **Q X**, **Q Y**, **Q Z** sit in the Settings tab to the right of the *Clear existing* / *Track Latch* toggles (available from v2.4.3).
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
-| **Time / T** | 0.0 | Number of time slices across one time selection. `0` disables time quantization. Example: `16` updates the curve at 16 evenly spaced moments. |
-| **Q X / Q Y / Q Z** | 0.00 | Spatial rounding step per axis in normalised space. `0` disables rounding; `0.1` rounds that axis to the nearest 0.1. |
+| **Quant T** (Time / T) | 0 | Number of time slices per figure cycle. `0` disables time quantization. Example: `16` updates the curve at 16 evenly spaced moments. |
+| **Q X / Q Y / Q Z** | 0.00 | Spatial rounding step per axis in scale units (like X/Y/Z center). `0` disables rounding; `0.1` rounds that axis to the nearest 0.1. |
 
 Use this when you want any shape to behave like a sequenced spatial grid: the trajectory is sampled in discrete time and/or rounded to discrete positions.
 
@@ -339,7 +316,7 @@ Sets the name of the REAPER render region created at the time selection. Default
 
 The **Preset** bar at the top of the Settings panel lets you save, load, and delete complete parameter snapshots.
 
-A preset stores: all motion shape assignments, which sources are enabled, Scale, all XYZ spatial parameters (center and spread for X, Y, Z), Src offset, Steps/sec, Motion amount, all Lattice settings, all Quantize settings, Time Curve mode and exponent, Palindrome, Use Z motion, and all output options.
+A preset stores: all motion shape assignments, which sources are enabled, Scale, all XYZ spatial parameters (center and spread for X, Y, Z), Src offset, Steps/sec, Motion amount, all Quantize settings, Time Curve mode and exponent, Palindrome, Use Z motion, and all output options.
 
 ### Saving a preset
 
@@ -447,10 +424,7 @@ Click a source label in the grid to select it and see its coordinates in the pre
 - **Palindrome + Log** creates a movement that sweeps quickly outward and gently returns — good for reverb-like spatial tails.
 - Save a preset before experimenting so you can always return to a known state.
 - Name render regions to match scenes: `Intro_BFormat`, `Verse_BFormat`, `Outro_BFormat`.
-- **Lattice as a spatial arpeggio:** set Rate/T = 8–16 and Slide = 0 for hard stepped jumps between positions — like a spatial sequencer firing at each step.
-- **Lattice with Bounds:** keep Bound X = 1.0 and Bound Y = 0.5 to contain sources within the front hemisphere while still propagating.
-- **Quantize for rhythmic motion:** set Time/T = 16 on a Circle shape to turn a smooth orbit into 16 discrete positions — snaps to the beat if Steps/sec matches your tempo.
-- **Combine Lat + Quantize:** Lattice defines *where* sources jump; Quantize defines *when* — together they create structured, grid-based spatial sequences.
+- **Quantize for rhythmic motion:** set Quant T = 16 on a Circle shape to turn a smooth orbit into 16 discrete positions — snaps to the beat if Steps/sec matches your tempo.
 
 ---
 
@@ -482,17 +456,9 @@ Both Lua files must be in the same directory. If you moved the GUI script after 
 
 A 0.1-second time selection at 12 Steps/sec produces only 1 automation point. Increase Steps/sec or lengthen the time selection.
 
-### Lattice sources glide instead of stepping
-
-Set **Slide to 0**. At Slide = 1 the motion interpolates smoothly between lattice steps; at Slide = 0 it snaps instantly.
-
-### Lattice sources drift out of the speaker array
-
-Enable **Bound X / Y / Z**. Set each bound to the normalised radius you want to stay within (e.g. `0.8` keeps sources within 80 % of the sphere). With bounds at `0` the lattice offset accumulates indefinitely.
-
 ### Quantize has no visible effect
 
-**Time/T must be greater than 0** to activate time quantization. A value of `0` (the default) disables it. Set Time/T to the number of steps you want (e.g. `16`) and make sure Steps/sec is high enough that each time slice contains at least one automation point.
+**Quant T must be greater than 0** to activate time quantization. A value of `0` (the default) disables it. Set Quant T to the number of steps you want (e.g. `16`) and make sure Steps/sec is high enough that each time slice contains at least one automation point.
 
 ---
 

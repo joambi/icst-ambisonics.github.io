@@ -1,11 +1,14 @@
 -- @description AmbiEncoder64 Motion Map GUI
 -- @author JS / Codex
--- @version 2.4.2
+-- @version 2.4.3
 -- @about
 --   Improved GUI for assigning motion shapes per ICST AmbiEncoder_64 source index,
 --   with live AZ/EL trajectory preview, anti-aliased icons, and color-coded source trails.
 --   Writes XYZ automation and a render region via JS_Write_AmbiEncoder64_Spat_Motion_Automation.lua.
 -- @changelog
+--   v2.4.3: Quantize controls (any figure): Time / T = number of time slices per figure cycle
+--         (0 = off), Q X / Q Y / Q Z = spatial rounding step in scale units (0 = off).
+--         Used by preview, live OSC, score export and the written automation; stored in presets.
 --   v2.3: Figure Editor — every motion shape has editable parameters (e.g. spiral: turns,
 --         inner/outer radius, easing; circle: turns, start angle, ellipse; lissajous: ratios),
 --         plus generic transforms (rotation, X/Y scale, offset, time offset, reverse).
@@ -87,6 +90,10 @@ local state = {
   z_spread  = "0.35", -- Z total spread in scale units (0..scale)
   motion_amount  = "1.0",
   source_phase   = "0.00", -- temporal offset between sources (0=same pos, 1=evenly spread)
+  time_quant_steps = "0",    -- Quantize: time slices per figure cycle (0 = off)
+  space_quant_x  = "0.00",   -- Quantize: rounding step X in scale units (0 = off)
+  space_quant_y  = "0.00",
+  space_quant_z  = "0.00",
   region_name   = "BFormat_TS",
   clear_existing   = true,
   set_latch        = true,
@@ -194,6 +201,14 @@ local function anim_phase(now)
   return (now * bpm / 60 / sync_cycle_beats()) % 1.0
 end
 local function smoothstep(t)   return t * t * (3 - 2 * t) end
+local function quantize_progress(t, steps)
+  if not steps or steps <= 0.000001 then return t end
+  return math.floor(t * steps) / steps
+end
+local function quantize_value(v, quantum)
+  if not quantum or quantum <= 0.000001 then return v end
+  return math.floor(v / quantum + 0.5) * quantum
+end
 local function tri(p)
   local w = p - math.floor(p)
   return w < 0.5 and w * 4 - 1 or 3 - w * 4
@@ -368,6 +383,7 @@ local function computeAED(shape, t, src_idx, n_active, p)
   local src_spread = p.src_spread or 0
   local t_src = (t + phase * src_spread + (fp.toff or 0)) % 1.0
   if (fp.rev or 0) >= 0.5 then t_src = 1.0 - t_src end
+  t_src = quantize_progress(t_src, p.time_quant_steps)
 
   local az_a  = p.az_spr * 0.5
   local el_a  = p.el_spr * 0.5
@@ -437,6 +453,10 @@ local function computeAED(shape, t, src_idx, n_active, p)
   local az = p.az_cen + az_a * x
   local el = p.el_cen + el_a * y
   local d  = p.z_cen + (z and z_a * z or 0)
+
+  az = quantize_value(az, p.space_quant_x)
+  el = quantize_value(el, p.space_quant_y)
+  d  = quantize_value(d,  p.space_quant_z)
 
   local el_w, az_w = wrap_el_az(el, az)
   return az_w, el_w, clamp(d, 0, 1)
@@ -563,6 +583,10 @@ local function preset_serialize()
     "tc_mode=" .. tostring(state.time_curve_mode),
     "tc_n="    .. tostring(state.time_curve_amount),
     "src_ph="  .. tostring(state.source_phase),
+    "q_t="     .. tostring(state.time_quant_steps),
+    "q_x="     .. tostring(state.space_quant_x),
+    "q_y="     .. tostring(state.space_quant_y),
+    "q_z="     .. tostring(state.space_quant_z),
     "palin="   .. b(state.palindrome),
     "use_z="   .. b(state.use_z_motion),
     "clear="   .. b(state.clear_existing),
@@ -634,6 +658,10 @@ local function preset_deserialize(str)
       if fmt == 3 then n = n / 100 end
       state.z_spread = string.format("%.4f", n)
     elseif k == "src_ph"  then state.source_phase      = v
+    elseif k == "q_t"     then state.time_quant_steps  = v
+    elseif k == "q_x"     then state.space_quant_x     = v
+    elseif k == "q_y"     then state.space_quant_y     = v
+    elseif k == "q_z"     then state.space_quant_z     = v
     elseif k == "tc_mode" then state.time_curve_mode  = v
     elseif k == "tc_n"    then state.time_curve_amount = v
     elseif k == "palin"   then state.palindrome       = bv(v)
@@ -815,6 +843,10 @@ local function osc_send_preview()
     el_spr     = (tonumber(state.y_spread) or 0.56) *  90 / _s,
     z_cen      = (tonumber(state.z_center) or 0.75) /  _s,
     z_spr      = (tonumber(state.z_spread) or 0.35) /  _s,
+    time_quant_steps = tonumber(state.time_quant_steps) or 0,
+    space_quant_x = (tonumber(state.space_quant_x) or 0) * 180 / _s,
+    space_quant_y = (tonumber(state.space_quant_y) or 0) *  90 / _s,
+    space_quant_z = (tonumber(state.space_quant_z) or 0) /  _s,
     use_z      = state.use_z_motion,
     src_spread = tonumber(state.source_phase) or 0,
   }
@@ -1250,6 +1282,10 @@ local function preview_params()
     el_spr     = (tonumber(state.y_spread) or 0.56) *  90 / s,
     z_cen      = (tonumber(state.z_center) or 0.75) /   s,
     z_spr      = (tonumber(state.z_spread) or 0.35) /   s,
+    time_quant_steps = tonumber(state.time_quant_steps) or 0,
+    space_quant_x = (tonumber(state.space_quant_x) or 0) * 180 / s,
+    space_quant_y = (tonumber(state.space_quant_y) or 0) *  90 / s,
+    space_quant_z = (tonumber(state.space_quant_z) or 0) /   s,
     use_z      = state.use_z_motion,
     src_spread = tonumber(state.source_phase) or 0,
   }
@@ -2112,6 +2148,8 @@ local function reset_params()
   state.z_spread          = string.format("%.2f", 0.35 * s)
   state.motion_amount     = "1.0"
   state.source_phase      = "0.00"
+  state.time_quant_steps  = "0"
+  state.space_quant_x, state.space_quant_y, state.space_quant_z = "0.00", "0.00", "0.00"
   state.steps_per_second  = "12"
   state.bpm_sync = false; state.cycle_beats = "16"; state.steps_per_beat = "4"; state.quant_start = true
   state.time_curve_mode   = "linear"
@@ -2299,6 +2337,14 @@ local function draw_settings()
 
   -- Toggles — 2 per row
   y = y + 50
+  -- Quantize (any figure): time slices per cycle + spatial rounding step per axis (0 = off)
+  do
+    local qx, qw = x + 330, 56
+    draw_input("time_quant_steps", "Quant T", qx,               y - 4, qw)
+    draw_input("space_quant_x",   "Q X",     qx + (qw + 4),     y - 4, qw)
+    draw_input("space_quant_y",   "Q Y",     qx + (qw + 4) * 2, y - 4, qw)
+    draw_input("space_quant_z",   "Q Z",     qx + (qw + 4) * 3, y - 4, qw)
+  end
   state.clear_existing   = draw_toggle("Clear existing",  state.clear_existing,   x,        y)
   state.set_latch        = draw_toggle("Track Latch",      state.set_latch,        x + 164,  y)
   y = y + 28

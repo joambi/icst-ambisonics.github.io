@@ -14,7 +14,7 @@ description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 
 <div class="motion-map-landing">
   <section class="motion-map-hero">
     <div class="motion-map-hero__copy">
-      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.2</p>
+      <p class="motion-map-hero__eyebrow">ICST Ambisonics Plugins · Motion Map v2.4.3</p>
       <h1><strong>Quellenbewegungen gestalten</strong><span>für räumliches Komponieren in REAPER</span></h1>
       <p class="motion-map-hero__lead">Handbuch, Setup und kreative Techniken zum Positionieren, Animieren und Automatisieren von bis zu 64 Klangquellen im dreidimensionalen Raum.</p>
       <p class="motion-map-hero__meta">Einsteiger–Fortgeschrittene · Komponist:in · Sound Designer:in · Spatial-Audio-Techniker:in</p>
@@ -107,7 +107,7 @@ Eine detailliertere Anleitung inkl. Python-OSC-Setup für macOS und Windows biet
 
 Das Fenster gliedert sich in drei Bereiche:
 
-**Links — Source Grid:** Zeilen für Sources S0–S63. Jede Zeile hat einen Aktivierungs-Toggle, ein Source-Label und **17 Bewegungsform-Zellen** (Line bis Lis, inklusive Lat).
+**Links — Source Grid:** Zeilen für Sources S0–S63. Jede Zeile hat einen Aktivierungs-Toggle, ein Source-Label und **16 Bewegungsform-Zellen** (Line bis Lis, inklusive Lat).
 
 **Rechts oben — Trajectory Preview:** Animierte Leinwand, die den Pfad jeder aktiven Source zeigt. Die horizontale Achse ist **X** (links–rechts), die vertikale **Y** (unten–oben), beide in der aktuellen Scale-Einheit beschriftet. Die ausgewählte Source zeigt ein Koordinaten-Label (z.B. `S0  X:-0.16  Y:-0.04`).
 
@@ -131,9 +131,9 @@ Der Zähler oben rechts im Settings-Bereich zeigt, wie viele Sources aktiv sind 
 
 ## 6. Bewegungsformen zuweisen
 
-Jede Zeile hat **17 Form-Buttons**. Klick auf einen Button weist diese Bewegungsform der Source zu. Das Zuweisen einer Form aktiviert die Source automatisch.
+Jede Zeile hat **16 Form-Buttons**. Klick auf einen Button weist diese Bewegungsform der Source zu. Das Zuweisen einer Form aktiviert die Source automatisch.
 
-![Übersicht aller 17 Bewegungsformen und ihrer Trajektorien](/images/motion-shapes-overview.svg)
+![Übersicht aller 16 Bewegungsformen und ihrer Trajektorien](/images/motion-shapes-overview.svg)
 
 | Label | Form | Bewegungscharakter |
 |-------|------|--------------------|
@@ -146,7 +146,6 @@ Jede Zeile hat **17 Form-Buttons**. Klick auf einen Button weist diese Bewegungs
 | **Circ** | `circle` | Vollkreis in der XY-Ebene |
 | **Spir** | `spiral` | Expandierende Spirale von innen nach außen |
 | **Four** | `fourier_xyz` | Komplexe 3D-Bahn aus summierten Harmonischen |
-| **Lat** | `lattice` | Wiederholte XYZ-Offset-Struktur mit optionalem Gleiten und Begrenzung |
 | **Hrt** | `heart_curve` | Herzförmige parametrische Kurve |
 | **Card** | `cardioid` | Kardioid — eintropfige Herzkurve |
 | **R8** | `rose8` | Rosenkurve mit 8 Blättern |
@@ -157,22 +156,10 @@ Jede Zeile hat **17 Form-Buttons**. Klick auf einen Button weist diese Bewegungs
 
 Wenn mehrere Sources dieselbe Form verwenden, verteilt der **Src offset**-Schieberegler (siehe §7) sie entlang der Trajektorie — sonst bewegen sie sich alle überlagert am gleichen Punkt.
 
-### Lattice-Form
-
-`Lat` ist eine kristallartige Wiederholungsbewegung. Statt eine einzelne kontinuierliche geometrische Kurve zu zeichnen, startet sie am aktuellen XYZ-Zentrum und addiert im Zeitverlauf immer wieder den XYZ-Spread-Vektor.
-
-- **Startpunkt:** `X center`, `Y center`, `Z center`
-- **Wiederholter Offset:** `X spread`, `Y spread`, `Z spread`
-- **Rate / T:** wie viele Lattice-Updates innerhalb einer Time Selection passieren
-- **Slide:** glättet den Übergang zwischen den Gitterpunkten, sodass die Bewegung gleitet statt hart zu springen
-- **Bound X/Y/Z:** optionale Wrap-Grenzen um das Zentrum pro Achse; `0` deaktiviert die Begrenzung
-
-Diese Form eignet sich für kristalline Bewegung, stufenartige Tiefenbewegung, wiederholte Raumgitter und andere strukturierte Offsets, die sich vom Ursprung aus fortpflanzen.
-
 ### Figure-Editor
 
 {{< notice info >}}
-Der Figure-Editor ist ab Motion Map v2.3 verfügbar (aktuell: v2.4.2). Die Beschriftungen im Fenster sind deutsch; die Begriffe unten entsprechen ihnen.
+Der Figure-Editor ist ab Motion Map v2.3 verfügbar (aktuell: v2.4.3). Die Beschriftungen im Fenster sind deutsch; die Begriffe unten entsprechen ihnen.
 {{< /notice >}}
 
 Jede Bewegungsform hat einen **Figure-Editor**: ein zweiter Tab unterhalb der Trajektorien-Vorschau, mit dem du eine Figur nicht nur auswählst, sondern auch umformst. Öffnen kannst du ihn über den Tab **FIGURE EDITOR · S0** (die Beschriftung zeigt die gewählte Source) oder über den Button **Figur bearbeiten ▸** in den Settings. **◂ Settings** bringt dich zu den normalen Reglern zurück. Die Vorschau folgt den Reglern beim Ziehen.
@@ -212,7 +199,7 @@ Um eine andere Form zu bearbeiten, klicke ihre Spalte an oder klicke das Form-Ic
 
 | Button | Effekt |
 |--------|--------|
-| **Auto** | Weist alle 17 Formen im Round-Robin auf alle 64 Sources zu |
+| **Auto** | Weist alle 16 Formen im Round-Robin auf alle 64 Sources zu |
 | **Random** | Weist jeder Source eine zufällige Form zu |
 | **All Line** | Setzt alle aktiven Sources auf Line |
 | **All Circle** | Setzt alle aktiven Sources auf Circle |
@@ -250,24 +237,14 @@ Alle Schieberegler sind ziehbar. **Shift** während des Ziehens halten für Fein
 | **Z center** | 0.75 | Distanz-Zentrum (0 = nah, Scale = fern). |
 | **Z spread** | 0.35 | Distanz-Variationsbereich. |
 
-### Lattice-Steuerung
-
-Diese Parameter erscheinen unter den Haupt-XYZ-Einstellungen und wirken nur auf Sources mit der Form **Lat**:
-
-| Parameter | Standard | Beschreibung |
-|-----------|----------|--------------|
-| **Rate / T** | 8.0 | Anzahl der Lattice-Updates über eine komplette Time Selection. `8` bedeutet, dass der Offset über die gewählte Dauer achtmal addiert wird. |
-| **Slide** | 1.0 | Glättungsfaktor zwischen Lattice-Positionen. `0` erzeugt harte Sprünge; `1` interpoliert vollständig zwischen den Schritten; Zwischenwerte mischen beides. |
-| **Bound X / Y / Z** | 0.00 | Optionale Wrap-Grenzen pro Achse um den Mittelpunkt. `0` deaktiviert die Begrenzung; positive Werte halten die wiederholte Transformation in einem endlichen Bereich. |
-
 ### Quantize-Steuerung
 
-Quantisierung kann auf **jede** Bewegungsform angewendet werden, nicht nur auf Lattice. Sie verwandelt kontinuierliche Bewegung in zeitlich, räumlich oder doppelt gestufte Bewegung.
+Quantisierung kann auf **jede** Bewegungsform angewendet werden. Sie verwandelt kontinuierliche Bewegung in zeitlich, räumlich oder doppelt gestufte Bewegung. Die vier Felder **Quant T**, **Q X**, **Q Y**, **Q Z** stehen im Tab Settings rechts neben den Toggles *Clear existing* / *Track Latch* (ab v2.4.3).
 
 | Parameter | Standard | Beschreibung |
 |-----------|----------|--------------|
-| **Time / T** | 0.0 | Anzahl zeitlicher Rasterpunkte über eine Time Selection. `0` deaktiviert die Zeit-Quantisierung. Beispiel: `16` aktualisiert die Kurve an 16 gleichmäßig verteilten Zeitpunkten. |
-| **Q X / Q Y / Q Z** | 0.00 | Räumliche Rundungsstufe pro Achse im normierten Raum. `0` deaktiviert die Rundung; `0.1` rundet die jeweilige Achse auf 0.1-Schritte. |
+| **Quant T** (Time / T) | 0 | Anzahl zeitlicher Rasterpunkte pro Figurenzyklus. `0` deaktiviert die Zeit-Quantisierung. Beispiel: `16` aktualisiert die Kurve an 16 gleichmäßig verteilten Zeitpunkten. |
+| **Q X / Q Y / Q Z** | 0.00 | Räumliche Rundungsstufe pro Achse in Scale-Einheiten (wie X/Y/Z center). `0` deaktiviert die Rundung; `0.1` rundet die jeweilige Achse auf 0.1-Schritte. |
 
 Das ist nützlich, wenn sich eine beliebige Form wie ein räumlicher Sequencer verhalten soll: Die Trajektorie wird in diskreten Zeiten abgetastet und/oder auf diskrete Positionen gerundet.
 
@@ -339,7 +316,7 @@ Legt den Namen der REAPER-Render-Region fest. Standard: `BFormat_TS`. Regionen s
 
 Die **Preset**-Leiste oben im Settings-Bereich ermöglicht das Speichern, Laden und Löschen vollständiger Parametersets.
 
-Ein Preset speichert: alle Formzuweisungen, welche Sources aktiviert sind, Scale, alle XYZ-Parameter (Center und Spread für X, Y, Z), Src offset, Steps/sec, Motion amount, alle Lattice-Parameter, alle Quantize-Parameter, Zeitkurven-Modus und Exponent, Palindrome, Use Z motion sowie alle Ausgabe-Optionen.
+Ein Preset speichert: alle Formzuweisungen, welche Sources aktiviert sind, Scale, alle XYZ-Parameter (Center und Spread für X, Y, Z), Src offset, Steps/sec, Motion amount, alle Quantize-Parameter, Zeitkurven-Modus und Exponent, Palindrome, Use Z motion sowie alle Ausgabe-Optionen.
 
 ### Preset speichern
 
@@ -447,10 +424,7 @@ Auf ein Source-Label im Grid klicken, um es auszuwählen und seine Koordinaten i
 - **Palindrome + Log**: schnell nach außen, sanft zurück — gut für reverbartige räumliche Ausklänge.
 - Vor dem Experimentieren immer ein Preset speichern.
 - Render-Regionen nach Szenen benennen: `Intro_BFormat`, `Strophe_BFormat`, `Outro_BFormat`.
-- **Lattice als räumliches Arpeggio:** Rate/T = 8–16, Slide = 0 → harte Sprünge zwischen Positionen wie ein räumlicher Sequencer.
-- **Lattice mit Bounds:** Bound X = 1.0, Bound Y = 0.5 → Sources bleiben in der Vorderhalbkugel, propagieren aber trotzdem weiter.
-- **Quantize für rhythmische Bewegung:** Time/T = 16 auf einer Circle-Form → 16 diskrete Positionen statt glattem Orbit — synchron zum Takt wenn Steps/sec zum Tempo passt.
-- **Lat + Quantize kombinieren:** Lattice definiert *wohin* die Sources springen; Quantize definiert *wann* — zusammen entstehen strukturierte, gitterbasierte Raumsequenzen.
+- **Quantize für rhythmische Bewegung:** Quant T = 16 auf einer Circle-Form → 16 diskrete Positionen statt glattem Orbit — synchron zum Takt wenn Steps/sec zum Tempo passt.
 
 ---
 
@@ -482,17 +456,9 @@ Beide Lua-Dateien müssen im selben Verzeichnis liegen. Bei Verschiebung erneut 
 
 Eine 0,1-Sekunden-Time-Selection bei 12 Steps/sec ergibt nur 1 Automationspunkt. Steps/sec erhöhen oder Time Selection verlängern.
 
-### Lattice-Sources gleiten statt zu springen
-
-**Slide auf 0 setzen.** Bei Slide = 1 wird zwischen den Gitterpunkten interpoliert; bei Slide = 0 springt die Source sofort.
-
-### Lattice-Sources verlassen das Lautsprecherarray
-
-**Bound X / Y / Z aktivieren.** Den gewünschten Normalisierungsradius eintragen (z.B. `0.8` hält Sources innerhalb von 80 % der Kugel). Bei Bound = 0 akkumuliert sich der Offset unbegrenzt.
-
 ### Quantize zeigt keine sichtbare Wirkung
 
-**Time/T muss größer als 0 sein.** Der Standardwert `0` deaktiviert die Zeit-Quantisierung. Auf die gewünschte Schrittanzahl setzen (z.B. `16`) und sicherstellen, dass Steps/sec hoch genug ist, damit jedes Zeitfenster mindestens einen Automationspunkt enthält.
+**Quant T muss größer als 0 sein.** Der Standardwert `0` deaktiviert die Zeit-Quantisierung. Auf die gewünschte Schrittanzahl setzen (z.B. `16`) und sicherstellen, dass Steps/sec hoch genug ist, damit jedes Zeitfenster mindestens einen Automationspunkt enthält.
 
 ---
 
