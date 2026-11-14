@@ -46,6 +46,15 @@ Schrittbasierte 2D/3D-Bewegungsformen für AmbiEncoder-Quellen.
 - [JS_AmbiEncoder64_Motion_Map_GUI.lua herunterladen](/downloads/lua-scripts/JS_AmbiEncoder64_Motion_Map_GUI.lua)
 - [Benutzerhandbuch](/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/)
 
+## ICST Ambi REAPER Bundle
+
+Portabler, vorkonfigurierter REAPER-Ordner mit Toolbar, Lua-Skripten, ICST- und IEM-VST3 und Doku. REAPER selbst ist nicht enthalten. Evaluationsbeta: macOS vollständig, Windows Beta ungetestet, nicht signiert.
+
+- [Release 1.1.2 auf GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.2): pkg und ZIP (macOS), scripts-only-ZIP (Aufbau unter Windows)
+- [Dateien, Prüfsummen, Installation und erster Durchlauf](/de/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/#download)
+
+---
+
 ## Animator Choreographer
 
 Desktop-App, die Raumchoreographien plant und als Szenen-XML für den [Animator](/de/icst-ambisonics-plugins/11_animator/) exportiert. Evaluationsbeta für macOS, Windows und Linux, nicht signiert.
