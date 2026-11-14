@@ -50,7 +50,7 @@ Step-based 2D/3D motion shapes for AmbiEncoder sources.
 
 Portable, preconfigured REAPER folder with toolbar, Lua scripts, ICST and IEM VST3 plugins and docs. REAPER itself is not included. Evaluation beta: macOS complete, Windows beta untested, unsigned.
 
-- [Release 1.1.2 on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.2): pkg and ZIP (macOS), scripts-only ZIP (for setting up on Windows)
+- [Release 1.1.3 on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.3): pkg and ZIP (macOS), scripts-only ZIP (for setting up on Windows)
 - [Files, checksums, installation and first run](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/#download)
 
 ---
