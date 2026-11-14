@@ -1,6 +1,6 @@
 ---
 title: What's New
-date: 2026-11-14T16:00:00
+date: 2026-11-14T08:00:00
 weight: 15
 ---
 # November 2026: REAPER bundle, Motion Map 2.4.5, Animator Choreographer
