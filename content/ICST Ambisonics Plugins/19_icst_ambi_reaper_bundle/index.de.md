@@ -13,7 +13,7 @@ Level: Einsteiger | Zielgruppe: Komponist:in, Sounddesigner:in, Studierende, Tec
 Das **ICST Ambi REAPER Bundle** (`ICST_Ambi_Reaper`) ist ein portabler REAPER-Ordner, der für die ICST Ambisonics Plugins bereits eingerichtet ist. Mit einem Klick auf die Toolbar legst du Ambisonics-Spuren (1. bis 7. Ordnung) an, verbindest sie, bewegst Quellen und dekodierst. Er ist der vorkonfigurierte Einstieg in REAPER innerhalb des [ICST Ambisonics EcoSystems](/de/ecosystem/).
 
 {{< notice warning >}}
-Evaluationsbeta, Stand v1.1.2. Die macOS-Version ist vollständig. Die Windows-Version ist Beta und noch nicht getestet. REAPER selbst ist aus Lizenzgründen nicht enthalten. Die ICST-eigenen Inhalte stehen unter GPL-3.0-or-later, Komponenten von Dritten behalten ihre Lizenz (siehe unten).
+Evaluationsbeta, Stand v1.1.3. Die macOS-Version ist vollständig. Die Windows-Version ist Beta und noch nicht getestet. REAPER selbst ist aus Lizenzgründen nicht enthalten. Die ICST-eigenen Inhalte stehen unter GPL-3.0-or-later, Komponenten von Dritten behalten ihre Lizenz (siehe unten).
 {{< /notice >}}
 
 ## Was enthalten ist
@@ -38,15 +38,15 @@ Evaluationsbeta, Stand v1.1.2. Die macOS-Version ist vollständig. Die Windows-V
 
 ## Download
 
-Aktuelle Version: **1.1.2** ([Release-Notizen und alle Dateien auf GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.2)):
+Aktuelle Version: **1.1.3** mit Motion Map GUI v2.4.5 ([Release-Notizen und alle Dateien auf GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.3)):
 
-- [`ICST_Ambi_Reaper_1.1.2_macOS.pkg`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_macOS.pkg): Installer nach `/Applications/ICST_Ambi_Reaper`
-- [`ICST_Ambi_Reaper_1.1.2_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_macOS.zip): portabel, zum Beispiel für eine externe SSD
-- [`ICST_Ambi_Reaper_1.1.2_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_scripts-only.zip): nur Skripte, Toolbar, Konfiguration und Doku (für den Aufbau unter Windows)
+- [`ICST_Ambi_Reaper_1.1.3_macOS.pkg`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_macOS.pkg): Installer nach `/Applications/ICST_Ambi_Reaper`
+- [`ICST_Ambi_Reaper_1.1.3_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_macOS.zip): portabel, zum Beispiel für eine externe SSD
+- [`ICST_Ambi_Reaper_1.1.3_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_scripts-only.zip): nur Skripte, Toolbar, Konfiguration und Doku (für den Aufbau unter Windows)
 
 Die Version ist eine Evaluationsbeta (Vorabversion auf GitHub). Rückmeldungen bitte als [Issue auf GitHub](https://github.com/joambi/ICST_Ambi_Reaper/issues).
 
-Die SHA-256-Prüfsummen stehen in den [Release-Notizen](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.2).
+Die SHA-256-Prüfsummen stehen in den [Release-Notizen](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.3).
 
 ## Installation unter macOS
 
@@ -78,6 +78,8 @@ Nicht doppelt installieren: Liegen dieselben Plugins zusätzlich in `/Library/Au
 Das PKG überschreibt in `/Applications/ICST_Ambi_Reaper` die Dateien `reaper.ini` (unter anderem Audiogerät und Fensterpositionen), `reaper-kb.ini`, `reaper-menu.ini`, `reaper-mouse.ini` und `reapack.ini`. Wer eigene Einstellungen, Tastenbelegungen oder Menüs behalten will, kopiert diese Dateien vor der Installation an einen anderen Ort und legt sie danach zurück. Plugin-Liste und übrige Einstellungsdateien bleiben erhalten.
 
 Wer von 1.1.0 oder 1.1.1 kommt und nur die Korrektur aus 1.1.2 braucht, kopiert aus `…_scripts-only.zip` die Dateien `Scripts/ICST/Ambi/Ambi_Auto_Route.lua`, `Scripts/ICST/Ambi/Ambi_Quick_Start.lua` und `Scripts/ICST/Ambi/lib/ambi_common.lua` in den bestehenden Ordner.
+
+Von 1.1.2 auf 1.1.3 genügt es, `Scripts/ICST/JS_AmbiEncoder64_Motion_Map_GUI.lua` (Motion Map GUI v2.4.5) aus `…_scripts-only.zip` in den bestehenden Ordner zu kopieren.
 
 ## Installation unter Windows (Beta)
 

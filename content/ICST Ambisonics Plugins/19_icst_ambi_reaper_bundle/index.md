@@ -13,7 +13,7 @@ Level: Beginner | Audience: Composer, sound designer, student, technician.
 The **ICST Ambi REAPER Bundle** (`ICST_Ambi_Reaper`) is a portable REAPER folder that is already set up for the ICST Ambisonics Plugins. With one click on the toolbar you create Ambisonics tracks (orders 1 to 7), route them, move sources and decode. It is the preconfigured entry point into REAPER within the [ICST Ambisonics EcoSystem](/ecosystem/).
 
 {{< notice warning >}}
-Evaluation beta, as of v1.1.2. The macOS version is complete. The Windows version is beta and has not been tested yet. REAPER itself is not included for licence reasons. The ICST's own content is licensed under GPL-3.0-or-later; third-party components keep their own licences (see below).
+Evaluation beta, as of v1.1.3. The macOS version is complete. The Windows version is beta and has not been tested yet. REAPER itself is not included for licence reasons. The ICST's own content is licensed under GPL-3.0-or-later; third-party components keep their own licences (see below).
 {{< /notice >}}
 
 ## What it contains
@@ -38,15 +38,15 @@ Evaluation beta, as of v1.1.2. The macOS version is complete. The Windows versio
 
 ## Download
 
-Current version: **1.1.2** ([release notes and all files on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.2)):
+Current version: **1.1.3** with Motion Map GUI v2.4.5 ([release notes and all files on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.3)):
 
-- [`ICST_Ambi_Reaper_1.1.2_macOS.pkg`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_macOS.pkg): installer to `/Applications/ICST_Ambi_Reaper`
-- [`ICST_Ambi_Reaper_1.1.2_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_macOS.zip): portable, for example for an external SSD
-- [`ICST_Ambi_Reaper_1.1.2_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_scripts-only.zip): scripts, toolbar, configuration and docs only (for setting up on Windows)
+- [`ICST_Ambi_Reaper_1.1.3_macOS.pkg`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_macOS.pkg): installer to `/Applications/ICST_Ambi_Reaper`
+- [`ICST_Ambi_Reaper_1.1.3_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_macOS.zip): portable, for example for an external SSD
+- [`ICST_Ambi_Reaper_1.1.3_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_scripts-only.zip): scripts, toolbar, configuration and docs only (for setting up on Windows)
 
 This version is an evaluation beta (pre-release on GitHub). Please report problems as an [issue on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/issues).
 
-The SHA-256 checksums are in the [release notes](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.2).
+The SHA-256 checksums are in the [release notes](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.3).
 
 ## Installation on macOS
 
@@ -78,6 +78,8 @@ Do not install twice: if the same plugins also sit in `/Library/Audio/Plug-Ins/V
 The PKG overwrites `reaper.ini` (audio device, window positions etc.), `reaper-kb.ini`, `reaper-menu.ini`, `reaper-mouse.ini` and `reapack.ini` in `/Applications/ICST_Ambi_Reaper`. To keep your own settings, key bindings or menus, copy these files elsewhere before installing and put them back afterwards. The plugin list and the other settings files are kept.
 
 Coming from 1.1.0 or 1.1.1 and only need the fix in 1.1.2? Copy `Scripts/ICST/Ambi/Ambi_Auto_Route.lua`, `Scripts/ICST/Ambi/Ambi_Quick_Start.lua` and `Scripts/ICST/Ambi/lib/ambi_common.lua` from `…_scripts-only.zip` into your existing folder.
+
+From 1.1.2 to 1.1.3, copying `Scripts/ICST/JS_AmbiEncoder64_Motion_Map_GUI.lua` (Motion Map GUI v2.4.5) from `…_scripts-only.zip` into your existing folder is enough.
 
 ## Installation on Windows (beta)
 
