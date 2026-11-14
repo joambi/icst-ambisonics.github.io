@@ -13,7 +13,7 @@ Level: Beginner | Audience: Composer, sound designer, student, technician.
 The **ICST Ambi REAPER Bundle** (`ICST_Ambi_Reaper`) is a portable REAPER folder that is already set up for the ICST Ambisonics Plugins. With one click on the toolbar you create Ambisonics tracks (orders 1 to 7), route them, move sources and decode. It is the preconfigured entry point into REAPER within the [ICST Ambisonics EcoSystem](/ecosystem/).
 
 {{< notice warning >}}
-Draft, as of v1.1.2. The macOS version is complete. The Windows version is beta and has not been tested yet. REAPER itself is not included for licence reasons. The ICST's own content is licensed under GPL-3.0-or-later; third-party components keep their own licences (see below).
+Evaluation beta, as of v1.1.2. The macOS version is complete. The Windows version is beta and has not been tested yet. REAPER itself is not included for licence reasons. The ICST's own content is licensed under GPL-3.0-or-later; third-party components keep their own licences (see below).
 {{< /notice >}}
 
 ## What it contains
@@ -36,16 +36,17 @@ Draft, as of v1.1.2. The macOS version is complete. The Windows version is beta 
 | Python 3 | Optional, for Motion Map, [Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/) and Kristall Motion Map | Same, from python.org |
 | Plugin format | VST3 (not AU) | VST3 |
 
-<!-- HIDDEN bis Test abgeschlossen
 ## Download
 
 Current version: **1.1.2** ([release notes and all files on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.2)):
 
 - [`ICST_Ambi_Reaper_1.1.2_macOS.pkg`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_macOS.pkg): installer to `/Applications/ICST_Ambi_Reaper`
 - [`ICST_Ambi_Reaper_1.1.2_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_macOS.zip): portable, for example for an external SSD
-- [`ICST_Ambi_Reaper_1.1.2_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_scripts-only.zip): scripts, toolbar, configuration and docs only (for building on Windows)
+- [`ICST_Ambi_Reaper_1.1.2_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.2/ICST_Ambi_Reaper_1.1.2_scripts-only.zip): scripts, toolbar, configuration and docs only (for setting up on Windows)
 
--->
+This version is an evaluation beta (pre-release on GitHub). Please report problems as an [issue on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/issues).
+
+The SHA-256 checksums are in the [release notes](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.2).
 
 ## Installation on macOS
 
