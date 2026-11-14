@@ -103,7 +103,7 @@ Eine detailliertere Anleitung inkl. Python-OSC-Setup für macOS und Windows biet
 
 ## 4. Die Oberfläche auf einen Blick
 
-![ICST Ambi Motion Map in Aktion](/images/ICST%20Motion%20Map%20Gif.gif)
+![ICST Ambi Motion Map v2.4.5 in REAPER: Figure Editor, Tempo-Sync, Live-OSC-Vorschau und Sync-Transport](/images/ICST%20Motion%20Map%20Gif.gif)
 
 Das Fenster gliedert sich in drei Bereiche:
 

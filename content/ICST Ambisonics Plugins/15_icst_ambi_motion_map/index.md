@@ -103,7 +103,7 @@ If you see *"Bitte zuerst eine Loop/Time Selection setzen"* (message appears in 
 
 ## 4. The Interface at a Glance
 
-![ICST Ambi Motion Map in action](/images/ICST%20Motion%20Map%20Gif.gif)
+![ICST Ambi Motion Map v2.4.5 in REAPER: Figure Editor, tempo sync, live OSC preview and Sync transport](/images/ICST%20Motion%20Map%20Gif.gif)
 
 The window is divided into three areas:
 
