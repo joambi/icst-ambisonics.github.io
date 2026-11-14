@@ -103,7 +103,21 @@ Eine detailliertere Anleitung inkl. Python-OSC-Setup für macOS und Windows biet
 
 ## 4. Die Oberfläche auf einen Blick
 
-![ICST Ambi Motion Map v2.4.5 in REAPER: Figure Editor, Tempo-Sync, Live-OSC-Vorschau und Sync-Transport](/images/ICST%20Motion%20Map%20Gif.gif)
+<figure>
+  <video autoplay muted loop playsinline preload="metadata" poster="/images/icst-ambi-motion-map-v2.4.5-demo-poster.jpg" aria-label="Bildschirmaufnahme der Motion Map v2.4.5 in REAPER: Figure Editor, dann Live-OSC-Vorschau mit Sync zum REAPER-Transport" style="width:100%;max-width:900px;height:auto;border-radius:6px">
+    <source src="/images/icst-ambi-motion-map-v2.4.5-demo.webm" type="video/webm">
+    <source src="/images/icst-ambi-motion-map-v2.4.5-demo.mp4" type="video/mp4">
+  </video>
+  <figcaption>Motion Map v2.4.5 in REAPER (24 s): zuerst formt der Figure Editor das Astroid von S2 um, dann läuft die Live-OSC-Vorschau mit <strong>Sync</strong>: Die Vorschau startet und stoppt mit dem REAPER-Transport, und die Quellen bewegen sich im Encoder-Radar.</figcaption>
+</figure>
+
+Neu in der Aufnahme (Details in den genannten Abschnitten):
+
+- **Figure Editor** (v2.3): Figur pro Quelle oder für alle Quellen mit dieser Figur umformen (§6).
+- **Tempo-Sync** (v2.4): Der Zyklus wird in Beats angegeben (*Zyklus (Beats)*), *Taktstart* rastet die Phase auf die Taktstriche ein (§10).
+- **Quantize** (v2.4.3): *Quant T* und *Q X/Y/Z* machen aus jeder Figur eine gestufte Bewegung (§7).
+- **Preview-Transport mit Sync** (v2.4.4/v2.4.5): *Sync* koppelt die Vorschau an REAPER. Sie läuft, solange REAPER spielt, steht still, wenn REAPER stoppt, und *Play* / *Stop* in der GUI starten und stoppen den REAPER-Transport (§12).
+- **Latch** (v2.4.5): Beschriebene Spuren werden immer auf Latch-Automation gesetzt (§13).
 
 Das Fenster gliedert sich in drei Bereiche:
 

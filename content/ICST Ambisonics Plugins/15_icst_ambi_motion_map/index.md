@@ -103,7 +103,21 @@ If you see *"Bitte zuerst eine Loop/Time Selection setzen"* (message appears in 
 
 ## 4. The Interface at a Glance
 
-![ICST Ambi Motion Map v2.4.5 in REAPER: Figure Editor, tempo sync, live OSC preview and Sync transport](/images/ICST%20Motion%20Map%20Gif.gif)
+<figure>
+  <video autoplay muted loop playsinline preload="metadata" poster="/images/icst-ambi-motion-map-v2.4.5-demo-poster.jpg" aria-label="Screen recording of Motion Map v2.4.5 in REAPER: Figure Editor, then live OSC preview with Sync to the REAPER transport" style="width:100%;max-width:900px;height:auto;border-radius:6px">
+    <source src="/images/icst-ambi-motion-map-v2.4.5-demo.webm" type="video/webm">
+    <source src="/images/icst-ambi-motion-map-v2.4.5-demo.mp4" type="video/mp4">
+  </video>
+  <figcaption>Motion Map v2.4.5 in REAPER (24 s): first the Figure Editor reshapes the Astroid of S2, then the live OSC preview runs with <strong>Sync</strong>: the preview plays and stops with the REAPER transport, and the sources move in the encoder radar.</figcaption>
+</figure>
+
+New in the recording (details in the sections named):
+
+- **Figure Editor** (v2.3): reshape a figure per source or for all sources that use it (§6).
+- **Tempo sync** (v2.4): the cycle is set in beats (*Zyklus (Beats)*), with *Taktstart* locking the phase to the bar lines (§10).
+- **Quantize** (v2.4.3): *Quant T*, *Q X/Y/Z* turn any figure into stepped motion (§7).
+- **Preview transport with Sync** (v2.4.4/v2.4.5): *Sync* ties the preview to REAPER. It runs while REAPER plays, stands still when REAPER stops, and *Play* / *Stop* in the GUI start and stop the REAPER transport (§12).
+- **Latch** (v2.4.5): written tracks are always set to Latch automation (§13).
 
 The window is divided into three areas:
 
