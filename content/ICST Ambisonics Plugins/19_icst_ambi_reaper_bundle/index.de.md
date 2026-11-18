@@ -61,12 +61,21 @@ Das ZIP ist nicht mit einer Developer-ID signiert. Blockiert macOS die Datei: Me
 
 ### Portabler Ordner (ZIP)
 
+![Aufbau des Ordners ICST_Ambi_Reaper](/images/reaper-bundle-anatomy-de.svg)
+
+*Was im Ordner liegt und welche Dateien du selbst ergänzt oder startest.*
+
+
 1. **Entpacken** und den Ordner `ICST_Ambi_Reaper` an einen festen Ort legen (externe SSD oder `~/Music`). Leerzeichen im Pfad sind erlaubt.
 2. **REAPER.app ergänzen:** von [reaper.fm](https://www.reaper.fm/download.php) laden (gleiche Hauptversion) und **in den Ordner** neben `reaper.ini` legen.
 3. **Einrichtungsskript:** Doppelklick auf `run-me-before-install.command`, beim ersten Mal über *Dennoch öffnen*. Das Skript entfernt das Quarantäne-Flag und setzt den Plugin-Pfad.
 4. **REAPER starten:** ab jetzt immer mit `ICST_Ambi_Reaper starten.command`. Es setzt den Plugin-Pfad bei jedem Start auf den aktuellen Ort, auch auf externen Laufwerken mit anderem Namen.
 5. **Plugin-Pfad prüfen:** Fragt REAPER *New portable install detected … scan system VST/CLAP/LV2 paths?*, mit **No** antworten. Hängt REAPER die System-VST3-Ordner trotzdem an und beginnt zu scannen: Scan abbrechen, REAPER beenden und wieder mit `ICST_Ambi_Reaper starten.command` öffnen. Kontrolle: *Options › Preferences › Plug-ins › VST*, der Pfad endet auf `Effects/VST3`. Fehlen Plugins: dort *Re-scan*.
 6. **Toolbar:** *ICST_Ambi_Automation* erscheint beim ersten Start fest oben im Hauptfenster. Wurde sie geschlossen: *View › Toolbars › Floating toolbar 1*.
+
+![Einmal einrichten, dann immer mit dem Start-Skript starten](/images/reaper-bundle-setup-flow-de.svg)
+
+*Die Einrichtung geschieht einmal; danach startest du immer mit demselben Skript.*
 
 {{< notice info >}}
 Nicht doppelt installieren: Liegen dieselben Plugins zusätzlich in `/Library/Audio/Plug-Ins/VST3`, lädt REAPER unter Umständen die alte Kopie. Entweder nur den Ordner oder nur die System-Installer benutzen.
@@ -99,6 +108,10 @@ Der Ordner ist ein macOS-Bundle, unter Windows werden deshalb nur die plattformn
 3. Der Dialog fragt fünf Werte ab. Vorgabe: `4, n, n, j, j` = 4 Mono-Quellen, keine HOA_FX-Spur, kein HOA_Reverb, Decoder ja, Binaural ja. Mit **OK** bestätigen. Der Dialog merkt sich die zuletzt gewählten Werte.
 4. Es entstehen `Src_01` bis `Src_04`, `Ambi_Encoder_64`, `HOA_MASTER`, ein Decoder und eine Binaural-Spur, fertig geroutet mit 64 Kanälen. Mit `j` bei *HOA_FX* kommt eine Effektspur (IEM SceneRotator, MultiEQ) dazu, mit `j` bei *HOA_Reverb* eine Spur mit IEM FdnReverb, parallel zwischen Encoder (bzw. HOA_FX) und `HOA_MASTER`.
 5. Auf `Src_01` eine Mono-Audiodatei einfügen, abspielen und die Quelle im AmbiEncoder_64 bewegen. Kopfhörer über die Binaural-Spur, Lautsprecher über den Decoder.
+
+![Signalfluss nach Quick Start](/images/reaper-bundle-routing-de.svg)
+
+*Was Quick Start erzeugt: Quellen in den Encoder, optional über HOA_FX und HOA_Reverb in HOA_MASTER, dann zu Decoder und Binaural.*
 
 In allen Ja/Nein-Feldern gelten `j`, `ja`, `y`, `yes` und `1` als ja (ab 1.1.2; vorher galt nur `j`).
 
