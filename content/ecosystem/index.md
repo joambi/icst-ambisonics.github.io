@@ -22,6 +22,8 @@ tags:
 
 The **ICST Ambisonics EcoSystem** is the umbrella term for all tools, packages and materials developed and maintained at ICST (ZHdK) for Higher-Order Ambisonics. Each component has its own versions and its own licence. The **ICST Ambisonics Bundle** is one of them: the preconfigured entry point into REAPER.
 
+The idea behind it: space is treated as compositional material, not as an effect added at the end. The plugins (VST3/AU/LV2) handle encoding, decoding and binaural monitoring. The REAPER and Max tools write, control and import spatial movement. The same toolset carries a piece from the first sketch in the studio to the performance over a loudspeaker dome. This blog, ambisonics.ch, brings documentation, tutorials and downloads together, so composers, students and researchers can use the whole chain openly and follow how it works.
+
 {{< notice warning >}}
 As of 2026-11-11. Components marked **Beta** are released for evaluation, not approved for production or teaching. Licence and status information applies to the linked version.
 {{< /notice >}}
