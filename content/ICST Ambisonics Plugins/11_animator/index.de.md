@@ -12,7 +12,8 @@ Niveau: Fortgeschritten | Zielgruppe: Komponierende, Technik, Studierende, Inter
 
 > **Szenen planen:** Mit dem [Animator Choreographer](/de/icst-ambisonics-plugins/20_animator_choreographer/) erzeugst du die Szenen-XML für den Animator aus einem Plan.
 
-<!-- TODO Release: Download-Link einsetzen -->
+> **Download:** Der Animator ist Teil der ICST Ambisonics Plugins 4.0. [Releases und Downloads auf GitHub](https://github.com/schweizerweb/icst-ambisonics-plugins/releases).
+
 ![Multi-AmbiEncoder_64 mit vier Gruppen und der Animator-Timeline](AT-BAS-05-Animator-Overview.webp)
 
 Der **Animator** ist die Choreografie-Timeline des **Multi-AmbiEncoder_64**: Er bewegt, dreht und verformt ganze Quellengruppen automatisch über die Zeit, synchron zum DAW-Transport.
