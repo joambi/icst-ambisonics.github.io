@@ -40,7 +40,6 @@ Evaluationsbeta, Stand v1.1.3. Die macOS-Version ist vollständig. Die Windows-V
 
 Aktuelle Version: **1.1.3** mit Motion Map GUI v2.4.5 ([Release-Notizen und alle Dateien auf GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.3)):
 
-- [`ICST_Ambi_Reaper_1.1.3_macOS.pkg`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_macOS.pkg): Installer nach `/Applications/ICST_Ambi_Reaper`
 - [`ICST_Ambi_Reaper_1.1.3_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_macOS.zip): portabel, zum Beispiel für eine externe SSD
 - [`ICST_Ambi_Reaper_1.1.3_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_scripts-only.zip): nur Skripte, Toolbar, Konfiguration und Doku (für den Aufbau unter Windows)
 
@@ -58,16 +57,7 @@ Die SHA-256-Prüfsummen stehen in den [Release-Notizen](https://github.com/joamb
 </figure>
 
 
-PKG und ZIP haben denselben Inhalt. Beide sind nicht mit einer Developer-ID signiert. Blockiert macOS eine Datei: Meldung schliessen, dann **Systemeinstellungen › Datenschutz & Sicherheit › Dennoch öffnen** und mit dem Passwort bestätigen (ab macOS 15; bis macOS 14 genügt Ctrl-Klick › *Öffnen*).
-
-### Installer (PKG)
-
-1. **PKG öffnen:** Doppelklick auf `ICST_Ambi_Reaper_<Version>_macOS.pkg`, bei Bedarf über *Dennoch öffnen*.
-2. **Installer durchlaufen:** *Fortfahren*, Lizenz *Akzeptieren*, *Installieren*, mit dem Passwort bestätigen. Der Installer legt `/Applications/ICST_Ambi_Reaper` an und setzt den Plugin-Pfad. `run-me-before-install.command` ist nicht nötig.
-3. **REAPER.app ergänzen:** Von [reaper.fm](https://www.reaper.fm/download.php) die macOS-Version laden und `REAPER.app` in den Ordner *Programme › ICST_Ambi_Reaper* ziehen, neben `reaper.ini`. Eine vorhandene `/Applications/REAPER.app` bleibt unberührt.
-4. **REAPER starten:** immer mit `ICST_Ambi_Reaper starten.command` im Ordner. Das Skript setzt den Plugin-Pfad und startet `REAPER.app` aus dem Ordner.
-5. **Plugin-Pfad prüfen:** Fragt REAPER *New portable install detected … scan system VST/CLAP/LV2 paths?*, mit **No** antworten. Hängt REAPER die System-VST3-Ordner trotzdem an und beginnt zu scannen: Scan abbrechen, REAPER beenden und wieder mit `ICST_Ambi_Reaper starten.command` öffnen. Kontrolle: *Options › Preferences › Plug-ins › VST*, der Pfad endet auf `Effects/VST3`.
-6. **Toolbar:** *ICST_Ambi_Automation* erscheint beim ersten Start fest oben im Hauptfenster. Wurde sie geschlossen: *View › Toolbars › Floating toolbar 1*.
+Das ZIP ist nicht mit einer Developer-ID signiert. Blockiert macOS die Datei: Meldung schliessen, dann **Systemeinstellungen › Datenschutz & Sicherheit › Dennoch öffnen** und mit dem Passwort bestätigen (ab macOS 15; bis macOS 14 genügt Ctrl-Klick › *Öffnen*).
 
 ### Portabler Ordner (ZIP)
 
@@ -75,7 +65,8 @@ PKG und ZIP haben denselben Inhalt. Beide sind nicht mit einer Developer-ID sign
 2. **REAPER.app ergänzen:** von [reaper.fm](https://www.reaper.fm/download.php) laden (gleiche Hauptversion) und **in den Ordner** neben `reaper.ini` legen.
 3. **Einrichtungsskript:** Doppelklick auf `run-me-before-install.command`, beim ersten Mal über *Dennoch öffnen*. Das Skript entfernt das Quarantäne-Flag und setzt den Plugin-Pfad.
 4. **REAPER starten:** ab jetzt immer mit `ICST_Ambi_Reaper starten.command`. Es setzt den Plugin-Pfad bei jedem Start auf den aktuellen Ort, auch auf externen Laufwerken mit anderem Namen.
-5. **Plugin-Pfad und Toolbar prüfen** wie beim PKG (Schritte 5 und 6). Fehlen Plugins: *Options › Preferences › Plug-ins › VST › Re-scan*.
+5. **Plugin-Pfad prüfen:** Fragt REAPER *New portable install detected … scan system VST/CLAP/LV2 paths?*, mit **No** antworten. Hängt REAPER die System-VST3-Ordner trotzdem an und beginnt zu scannen: Scan abbrechen, REAPER beenden und wieder mit `ICST_Ambi_Reaper starten.command` öffnen. Kontrolle: *Options › Preferences › Plug-ins › VST*, der Pfad endet auf `Effects/VST3`. Fehlen Plugins: dort *Re-scan*.
+6. **Toolbar:** *ICST_Ambi_Automation* erscheint beim ersten Start fest oben im Hauptfenster. Wurde sie geschlossen: *View › Toolbars › Floating toolbar 1*.
 
 {{< notice info >}}
 Nicht doppelt installieren: Liegen dieselben Plugins zusätzlich in `/Library/Audio/Plug-Ins/VST3`, lädt REAPER unter Umständen die alte Kopie. Entweder nur den Ordner oder nur die System-Installer benutzen.
@@ -83,7 +74,7 @@ Nicht doppelt installieren: Liegen dieselben Plugins zusätzlich in `/Library/Au
 
 ## Update einer bestehenden Installation
 
-Das PKG überschreibt in `/Applications/ICST_Ambi_Reaper` die Dateien `reaper.ini` (unter anderem Audiogerät und Fensterpositionen), `reaper-kb.ini`, `reaper-menu.ini`, `reaper-mouse.ini` und `reapack.ini`. Wer eigene Einstellungen, Tastenbelegungen oder Menüs behalten will, kopiert diese Dateien vor der Installation an einen anderen Ort und legt sie danach zurück. Plugin-Liste und übrige Einstellungsdateien bleiben erhalten.
+Ein neues ZIP bringt eigene `reaper.ini` (unter anderem Audiogerät und Fensterpositionen), `reaper-kb.ini`, `reaper-menu.ini`, `reaper-mouse.ini` und `reapack.ini` mit. Wer eigene Einstellungen, Tastenbelegungen oder Menüs behalten will, kopiert diese Dateien vor dem Ersetzen aus dem alten Ordner `ICST_Ambi_Reaper` und legt sie danach zurück.
 
 Wer von 1.1.0 oder 1.1.1 kommt und nur die Korrektur aus 1.1.2 braucht, kopiert aus `…_scripts-only.zip` die Dateien `Scripts/ICST/Ambi/Ambi_Auto_Route.lua`, `Scripts/ICST/Ambi/Ambi_Quick_Start.lua` und `Scripts/ICST/Ambi/lib/ambi_common.lua` in den bestehenden Ordner.
 
