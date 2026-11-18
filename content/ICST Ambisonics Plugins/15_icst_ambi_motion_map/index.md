@@ -67,6 +67,13 @@ Before you start, make sure you have:
 
 ## 2. Installation
 
+<figure class="motion-map-video" style="margin:0 0 1.5rem 0;">
+  <video controls playsinline preload="metadata" poster="/motion-map/install-tutorial-en-poster.jpg" aria-label="Video: installation and first launch of the ICST Ambi Motion Map" style="max-width:100%;height:auto">
+    <source src="/motion-map/install-tutorial-en.mp4" type="video/mp4">
+  </video>
+  <figcaption>Video: installation and first launch of the Motion Map, step by step (about 80 seconds). The written steps follow below.</figcaption>
+</figure>
+
 ### Step 1 — Download the bundle
 
 Download the [ICST Ambi Motion Map Bundle](/downloads/ICST_Ambi_Motion_Map_Bundle.zip) and unzip it. Keep both Lua files together in one folder (e.g. your REAPER Scripts directory).
