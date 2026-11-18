@@ -473,9 +473,7 @@ Die CPU-Last ist gering: im 12-minütigen Dauertest 0,11–0,18 % FX-CPU, kurzze
 
 ## Versionshinweise
 
-<!-- TODO Release: Neuerungen von 4.0 gegenüber 3.2.0.9 ergänzen -->
-
-**4.0:** Der Animator ist Teil des neuen Releases ICST Ambisonics Plugins v4.0.
+**4.0:** Der Animator ist Teil des neuen Releases ICST Ambisonics Plugins v4.0. Er ist funktional identisch mit 3.2.0.9.
 
 **3.2.0.9:** Automation Control, Slot-Bindung der Timelines an ihre Gruppe, Lissajous mit *Closed path*, Komma als Dezimaltrenner.
 
