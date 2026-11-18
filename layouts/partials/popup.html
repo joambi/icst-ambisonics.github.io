@@ -1,6 +1,7 @@
 {{- /* Popup "Aktuell" – Konfiguration in hugo.toml unter [params.popup] */ -}}
 {{- with site.Params.popup -}}
-{{- if .enable -}}
+{{- /* Nach Ablauf (until) wird das Popup gar nicht mehr gebaut; das JS-Ablaufdatum bleibt als zweite Sicherung */ -}}
+{{- if and .enable (or (not .until) (now.Before (time .until))) -}}
 {{- $target := site.GetPage .page -}}
 {{- if and $target (ne $target.RelPermalink $.RelPermalink) -}}
 {{- $de := eq site.Language.Lang "de" -}}

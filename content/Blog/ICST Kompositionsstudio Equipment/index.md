@@ -7,6 +7,7 @@ aliases:
   - /blog/icst-kompositionsstudio-equipment/
 weight: 3
 group: "Studio"
+home_hide: true
 ---
 
 Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.

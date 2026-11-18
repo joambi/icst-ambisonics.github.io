@@ -22,7 +22,7 @@ tool: ["AmbiEncoder", "Ableton"]
 * * *
 ## AbletonLive zu ICST Ambisonics MultiEncoder in Reaper
 
-**Für wen:** Level: Advanced | Zielgruppe: Ableton/Reaper-Hybrid-Producer.
+**Level:** Advanced | **Zielgruppe:** Ableton/Reaper-Hybrid-Producer.
 
 Dieses Tutorial bietet eine detaillierte Anleitung zur Aufnahme von 7. Ordnung Ambisonics mit Ableton Live und Reaper. Es richtet sich an Benutzer mit grundlegenden Kenntnissen beider Programme. Wenn du mit den Konzepten von Ableton Live, Reaper und Ambisonics vertraut bist, sollten die Schritte einfach sein. Andernfalls können einige Abschnitte herausfordernd sein. In diesem Fall wird empfohlen, zuerst die Grundlagen dieser Software und der Ambisonics-Technologie zu erlernen.
 ### Ableton zu ICST MultiEncoder in Reaper

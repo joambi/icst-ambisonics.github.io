@@ -4,6 +4,7 @@ description: "Photo gallery — impressions of the ICST Composition Studio"
 date: 2025-06-25T15:12:00
 weight: 12
 group: "Studio"
+home_hide: true
 ---
 
 Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.

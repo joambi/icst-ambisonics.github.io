@@ -18,11 +18,11 @@ What would you like to explore? Choose a starting point below.
     <strong class="icst-pillar__title">Max Externals</strong>
     <span class="icst-pillar__desc">Live spatialisation and algorithmic sound in Max/MSP. Runs natively in Max 8.</span>
   </a>
-  <div class="icst-pillar icst-pillar--residency icst-pillar--coming-soon">
+  <a class="icst-pillar icst-pillar--residency" href="/post/komposition-in-ambisonics/">
     <span class="icst-pillar__icon">🎼</span>
     <strong class="icst-pillar__title">Studio Practice</strong>
-    <span class="icst-pillar__desc">Composing in 3D space — spatial parameters, room capture, binaural delivery, notation. <em>(Guide coming soon)</em></span>
-  </div>
+    <span class="icst-pillar__desc">Composing in 3D space — spatial parameters, room capture, binaural delivery, notation. Introduction available; full guide in preparation.</span>
+  </a>
   <a class="icst-pillar icst-pillar--ascolta" href="/blog/ascolta/">
     <span class="icst-pillar__icon">🎧</span>
     <strong class="icst-pillar__title">Concerts & ASCOLTA</strong>
@@ -132,7 +132,10 @@ Prefer an offline version or want to print the guide?
 <div class="home-cards">
   <section class="home-card">
     <h4>🎼 Composing in Ambisonics</h4>
-    <p>From analytical listening and spatial counterpoint to room capture and binaural delivery — a curated guide for composers working in 3D audio. <em>Coming soon.</em></p>
+    <p>From analytical listening and spatial counterpoint to room capture and binaural delivery — a curated guide for composers working in 3D audio, currently in preparation. The introduction is already available.</p>
+    <div class="home-card__actions">
+      <a class="hero__link hero__link--primary" href="/post/komposition-in-ambisonics/">Read the introduction</a>
+    </div>
   </section>
   <section class="home-card">
     <h4>🏛️ Work in the ICST Studio</h4>

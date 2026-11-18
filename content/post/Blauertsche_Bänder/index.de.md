@@ -18,7 +18,7 @@ post_kind: "background"
 ---
 
 
-**Für wen:** Level: Advanced | Zielgruppe: psychoakustisch orientierte Komponist:innen/Researcher.
+**Level:** Advanced | **Zielgruppe:** psychoakustisch orientierte Komponist:innen/Researcher.
 
 Für die Stimme und ihre Richtungswahrnehmung habe ich Experimente mit den [Blauertsche Bänder](https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder) durchgeführt.
 ![Richtungsbänder | 400](Richtungsbänder.png)

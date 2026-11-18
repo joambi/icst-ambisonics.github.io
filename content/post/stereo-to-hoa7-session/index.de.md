@@ -15,7 +15,7 @@ tool: ["REAPER"]
 ---
 
 
-**Für wen:** Level: Intermediate | Zielgruppe: Komponist:in, Producer.
+**Level:** Intermediate | **Zielgruppe:** Komponist:in, Producer.
 
 ## Warum es diesen Guide gibt
 Viele Nutzer:innen kennen Stereo-Produktion sehr gut, brauchen aber eine konkrete Brücke zu Higher-Order Ambisonics in einer realen Session.

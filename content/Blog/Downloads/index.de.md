@@ -5,6 +5,7 @@ date: 2025-06-12T15:09:00
 weight: 0
 group: "Residents"
 languageCode: de
+home_hide: true
 ---
 
 Alle ICST-Tools und unterstützenden Dateien an einem Ort.

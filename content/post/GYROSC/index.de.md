@@ -69,7 +69,7 @@ Die GyrOSC-App sendet die 'Gravity'-Daten via OSC (Port 50001) zum ICST MultiEnc
 
 ## Inspirationen:
 
-**Für wen:** Level: Intermediate | Zielgruppe: Mobile-Controller-User, Performer:in.
+**Level:** Intermediate | **Zielgruppe:** Mobile-Controller-User, Performer:in.
 
 ### OSC-Swarm
 

@@ -19,7 +19,7 @@ tool: ["OSC", "REAPER"]
 --
 ## ICST AmbiEncoder sendet OSC zu FX-Plugins-Parameter
 
-**Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Sound Engineer.
+**Level:** Advanced | **Zielgruppe:** Techniker:in, Sound Engineer.
 
 ### Integration des ICST AmbiEncoder mit IEM FdnReverb via OSC
 

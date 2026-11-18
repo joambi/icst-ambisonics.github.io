@@ -15,7 +15,7 @@ tool: ["REAPER", "AmbiEncoder"]
 ---
 
 
-**Für wen:** Level: Beginner | Zielgruppe: Komponist:in, Studierende, DAW-Einsteiger:in.
+**Level:** Beginner | **Zielgruppe:** Komponist:in, Studierende, DAW-Einsteiger:in.
 
 Diese Seite ist die **Ausführungs-Checkliste** (klickorientiert).
 Für Onboarding-Logik und systematische Fehlersuche siehe:

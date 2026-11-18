@@ -8,6 +8,7 @@ aliases:
 weight: 1
 group: "Studio"
 languageCode: de
+home_hide: true
 ---
 
 <style>

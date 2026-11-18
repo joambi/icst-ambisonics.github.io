@@ -15,7 +15,7 @@ tool: ["REAPER", "AmbiEncoder"]
 ---
 
 
-**Für wen:** Level: Beginner | Zielgruppe: Komponist:in, Studierende, Studio-Assistenz.
+**Level:** Beginner | **Zielgruppe:** Komponist:in, Studierende, Studio-Assistenz.
 
 Diese Seite ist die kompakte Onboarding-Version des vollständigen Docs-Workflows:
 [Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/).

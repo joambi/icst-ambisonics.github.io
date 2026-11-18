@@ -8,7 +8,7 @@ group: "Downloads"
 tags: ["download", "reaper", "hoa", "template", "checklist"]
 ---
 
-**Für wen:** Level: Beginner bis Intermediate | Zielgruppe: Komponist:in, Studierende, Techniker:in.
+**Level:** Beginner bis Intermediate | **Zielgruppe:** Komponist:in, Studierende, Techniker:in.
 
 ## Enthaltene Dateien
 - Reaper-Projekt-Template (`.RPP`)
@@ -24,7 +24,7 @@ Das Paket reduziert Setup-Zeit und vermeidet typische Routing-Fehler in den erst
 3. Decoder-Preset für das Lautsprecher-Setup laden.
 4. Kurzen Signalcheck vor der Aufnahme durchführen.
 
-## Related tutorial
+## Verwandte Tutorials
 - [Ambisonics in 30 Minuten: Dein erster funktionierender Reaper-Session-Flow](/post/ambisonics-in-30-minutes/)
 - [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 

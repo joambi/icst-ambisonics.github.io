@@ -6,6 +6,7 @@ aliases:
   - /blog/icst-composer-studio-blog/
 weight: -1
 description: "Das ICST Kompositionsstudio an der ZHdK — ein Higher-Order Ambisonics Produktionsraum für elektroakustische Musik und Klangkunst."
+home_hide: true
 ---
 
 <style>

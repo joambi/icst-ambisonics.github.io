@@ -8,12 +8,13 @@ aliases:
 weight: 5
 group: "Studio"
 languageCode: de
+home_hide: true
 ---
 
 
 # **Überblick über das ICST Kompositionsstudio**
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Status April 2023
 

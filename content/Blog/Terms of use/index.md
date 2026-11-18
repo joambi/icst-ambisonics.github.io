@@ -5,6 +5,7 @@ date: 2026-03-07T00:00:00
 tags: []
 weight: 8
 group: "Residents"
+home_hide: true
 ---
 
 **Audience:** Composer, Student, Researcher, Studio visitor.

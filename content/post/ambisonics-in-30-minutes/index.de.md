@@ -15,7 +15,7 @@ tool: ["REAPER"]
 ---
 
 
-**Für wen:** Level: Beginner | Zielgruppe: Komponist:in, Studierende, Studio-Assistenz.
+**Level:** Beginner | **Zielgruppe:** Komponist:in, Studierende, Studio-Assistenz.
 
 ## Problem
 Du willst schnell mit ICST Ambisonics Plugins in Reaper starten, ohne lange Routing-Fehlersuche.
@@ -39,7 +39,7 @@ Du willst schnell mit ICST Ambisonics Plugins in Reaper starten, ohne lange Rout
 - Nicht-64-Kanal-Track im Signalpfad
 - Falsches Decoder-Preset für Lautsprecher-Setup
 
-## Related tutorial
+## Verwandte Tutorials
 - [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 - [Reaper Ambisonics Setup in 20 Minuten](/post/reaper-setup-20-minuten/)
 

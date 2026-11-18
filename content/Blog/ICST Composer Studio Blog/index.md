@@ -7,6 +7,7 @@ aliases:
 weight: -1
 description: "The ICST Composition Studio at ZHdK — a higher-order Ambisonics production environment for electroacoustic music and sound art."
 group: "Studio"
+home_hide: true
 ---
 
 <style>

@@ -37,20 +37,20 @@ flowchart TB
       F3["spaete 1970er<br/>UHJ macht Ambisonics stereo-kompatibel"]:::foa
       F4["1980er<br/>FOA wird in Aufnahme, Rundfunk und UHJ-Releases praktisch genutzt"]:::foa
       F5["1990er<br/>FOA bleibt die dominante Praxisform und Lehrbasis"]:::foa
-      F6["2010er-heute<br/>FOA bleibt der einfache Einstieg fuer 360-Audio und Produktion"]:::foa
+      F6["2010er-heute<br/>FOA bleibt der einfache Einstieg für 360-Audio und Produktion"]:::foa
     end
 
     subgraph HOA["HOA: Higher-Order Ambisonics"]
       direction TB
       H1["2000/2001<br/>Jerome Daniel formuliert die moderne HOA-Grundlage"]:::hoa
       H2["2003<br/>Near-Field- und Distance-Coding erweitern HOA"]:::hoa
-      H3["2005<br/>Poletti etabliert HOA ueber sphaerische Harmonische"]:::hoa
+      H3["2005<br/>Poletti etabliert HOA über sphärische Harmonische"]:::hoa
       H4["2006-2009<br/>Mikrofonarrays, Symposien und Forschung machen HOA praktikabel"]:::hoa
       H5["2011<br/>ambiX vereinheitlicht Ordering und Normalisierung"]:::hoa
-      H6["2010er-heute<br/>HOA wird Schluesseltechnologie fuer VR, XR und scene-based audio"]:::hoa
+      H6["2010er-heute<br/>HOA wird Schlüsseltechnologie für VR, XR und scene-based audio"]:::hoa
     end
 
-    S1["2011<br/>Datei- und Austauschformate werden fuer HOA-Workflows entscheidend"]:::shared
+    S1["2011<br/>Datei- und Austauschformate werden für HOA-Workflows entscheidend"]:::shared
     S2["2018<br/>RFC 8486 standardisiert Ambisonics in Ogg Opus"]:::shared
     S3["heute<br/>FOA und HOA koexistieren als praktische und skalierbare Formate"]:::shared
 

@@ -8,6 +8,7 @@ aliases:
   - /blog/icst-kompositionsstudio-speaker-settings/
 weight: 11
 group: "Residents"
+home_hide: true
 ---
 
 Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.

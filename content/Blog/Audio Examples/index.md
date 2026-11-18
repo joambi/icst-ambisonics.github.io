@@ -7,6 +7,7 @@ aliases:
   - /audio-examples/
 group: "Studio"
 weight: 8
+home_hide: true
 ---
 
 **Audience:** Composer, Student, Researcher, Studio visitor.

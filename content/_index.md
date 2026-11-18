@@ -46,7 +46,7 @@ If you are new, follow the guided start path. If you already know the plugins, j
   </a>
 </div>
 
-New in v4.0.0: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+New in v{{< param pluginVersion >}}: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 
 ---
 
@@ -72,9 +72,10 @@ New in v4.0.0: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Release
   </section>
   <section class="home-card">
     <h4>🎼 Composing in Ambisonics</h4>
-    <p>Spatial thinking for composers — analytical listening, movement and depth as compositional parameters, studio workflows. <em>Composing Guide coming soon.</em></p>
+    <p>Spatial thinking for composers — analytical listening, movement and depth as compositional parameters, studio workflows. The full Composing Guide is in preparation.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/blog/ascolta-listening-guide/">Listening Guide</a>
+      <a class="hero__link hero__link--primary" href="/post/komposition-in-ambisonics/">Introduction</a>
+      <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
     </div>
   </section>
 </div>
