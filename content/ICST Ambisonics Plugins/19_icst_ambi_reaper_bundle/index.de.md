@@ -1,6 +1,6 @@
 ---
 title: ICST Ambi REAPER Bundle
-date: 2026-11-12T00:00:00
+date: 2026-11-18T00:00:00
 weight: 35
 draft: false
 toc: true
@@ -42,6 +42,10 @@ Aktuelle Version: **1.1.3** mit Motion Map GUI v2.4.5 ([Release-Notizen und alle
 
 - [`ICST_Ambi_Reaper_1.1.3_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_macOS.zip): portabel, zum Beispiel für eine externe SSD
 - [`ICST_Ambi_Reaper_1.1.3_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_scripts-only.zip): nur Skripte, Toolbar, Konfiguration und Doku (für den Aufbau unter Windows)
+
+**Neu in 1.1.3:** Motion Map GUI v2.4.5 (vorher: v2.4.3). Version 2.4.4 bringt einen Preview-Transport mit Geschwindigkeit, Richtung und Play/Stop; Presets speichern diese Einstellungen nicht. Version 2.4.5 schreibt Spuren immer mit Latch (die Option *Track Latch* entfällt, ältere Presets werden dafür ignoriert) und ergänzt einen *Sync*-Button, der die Vorschau an den REAPER-Transport koppelt. Toolbar-Button, Action-ID und Icon bleiben gleich. Alle übrigen Skripte, Konfigurationsdateien und die Dokumentation sind gegenüber 1.1.2 unverändert.
+
+**Getestet:** als 1.1.2 mit REAPER 7.85 auf macOS (Apple Silicon): Auto-Route, Quick Start und Routing mit 64 Kanälen. Die Motion Map GUI v2.4.5 wurde einzeln getestet; der Start über die Toolbar dieses Bundles wurde nicht eigens getestet.
 
 Die Version ist eine Evaluationsbeta (Vorabversion auf GitHub). Rückmeldungen bitte als [Issue auf GitHub](https://github.com/joambi/ICST_Ambi_Reaper/issues).
 
@@ -175,6 +179,7 @@ Die mitgelieferten Binaries (Plugins, Erweiterungen, Animator Choreographer) fal
 | [SWS/S&M Extension](https://www.sws-extension.org) | MIT | Unter Windows manuell installieren; Lizenztext liegt im Ordner `licenses/` |
 | [ReaPack](https://reapack.com) | LGPL-3.0 | Unter Windows manuell installieren |
 | [js_ReaScriptAPI](https://github.com/juliansader/ReaExtensions) | MIT | Unter Windows manuell installieren |
+| Animator Choreographer | GPL-3.0 | Im Ordner `Animator/`; Toolbar-Button 16 startet ihn |
 
 ## Siehe auch
 
