@@ -61,12 +61,21 @@ The ZIP is not signed with a Developer ID. If macOS blocks the file, close the m
 
 ### Portable folder (ZIP)
 
+![Anatomy of the ICST_Ambi_Reaper folder](/images/reaper-bundle-anatomy-en.svg)
+
+*What the folder contains, and which files you add or run yourself.*
+
+
 1. **Unzip** and put the folder `ICST_Ambi_Reaper` in a fixed place (external SSD or `~/Music`). Spaces in the path are fine.
 2. **Add REAPER.app:** download it from [reaper.fm](https://www.reaper.fm/download.php) (same major version) and put it **into the folder** next to `reaper.ini`.
 3. **Setup script:** double-click `run-me-before-install.command`, the first time via *Open Anyway*. The script removes the quarantine flag and sets the plugin path.
 4. **Start REAPER:** from now on always with `ICST_Ambi_Reaper starten.command`. It sets the plugin path to the current location on every start, including external drives with a different name.
 5. **Check the plugin path:** if REAPER asks *New portable install detected … scan system VST/CLAP/LV2 paths?*, answer **No**. If REAPER still adds the system VST3 folders and starts scanning: cancel the scan, quit REAPER and reopen it with `ICST_Ambi_Reaper starten.command`. Check: *Options › Preferences › Plug-ins › VST*, the path ends in `Effects/VST3`. If plugins are missing: *Re-scan* there.
 6. **Toolbar:** *ICST_Ambi_Automation* appears docked at the top of the main window on first start. If it was closed: *View › Toolbars › Floating toolbar 1*.
+
+![Set up once, then always start with the start script](/images/reaper-bundle-setup-flow-en.svg)
+
+*The setup happens once; after that you always start with the same script.*
 
 {{< notice info >}}
 Do not install twice: if the same plugins also sit in `/Library/Audio/Plug-Ins/VST3`, REAPER may load the old copy. Use either the folder or the system installers.
@@ -99,6 +108,10 @@ The folder is a macOS bundle, so only the platform-neutral parts are used on Win
 3. The dialog asks for five values. Default: `4, n, n, j, j` = 4 mono sources, no HOA_FX track, no HOA_Reverb, decoder yes, binaural yes. Confirm with **OK**. The dialog remembers the last values.
 4. This creates `Src_01` to `Src_04`, `Ambi_Encoder_64`, `HOA_MASTER`, a decoder and a binaural track, fully routed with 64 channels. With `y` for *HOA_FX* you also get an effect track (IEM SceneRotator, MultiEQ); with `y` for *HOA_Reverb* a track with IEM FdnReverb, in parallel between the encoder (or HOA_FX) and `HOA_MASTER`.
 5. Insert a mono audio file on `Src_01`, play and move the source in the AmbiEncoder_64. Headphones via the binaural track, loudspeakers via the decoder.
+
+![Signal flow after Quick Start](/images/reaper-bundle-routing-en.svg)
+
+*What Quick Start creates: sources into the encoder, optionally via HOA_FX and HOA_Reverb into HOA_MASTER, then to decoder and binaural.*
 
 In all yes/no fields, `j`, `ja`, `y`, `yes` and `1` count as yes (from 1.1.2; before, only `j` counted).
 
