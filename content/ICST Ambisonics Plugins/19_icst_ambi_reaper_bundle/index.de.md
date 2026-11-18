@@ -50,6 +50,14 @@ Die SHA-256-Prüfsummen stehen in den [Release-Notizen](https://github.com/joamb
 
 ## Installation unter macOS
 
+<figure class="reaper-bundle-video" style="margin:0 0 1.5rem 0;">
+  <video controls playsinline preload="metadata" poster="/reaper-bundle/install-tutorial-de-poster.jpg" aria-label="Video: Installation und erster Durchlauf des ICST Ambi REAPER Bundles unter macOS" style="max-width:100%;height:auto">
+    <source src="/reaper-bundle/install-tutorial-de.mp4" type="video/mp4">
+  </video>
+  <figcaption>Video: Bundle unter macOS installieren und erster Durchlauf mit Quick Start (ca. 80 Sekunden). Die Schritte stehen darunter auch als Text.</figcaption>
+</figure>
+
+
 PKG und ZIP haben denselben Inhalt. Beide sind nicht mit einer Developer-ID signiert. Blockiert macOS eine Datei: Meldung schliessen, dann **Systemeinstellungen › Datenschutz & Sicherheit › Dennoch öffnen** und mit dem Passwort bestätigen (ab macOS 15; bis macOS 14 genügt Ctrl-Klick › *Öffnen*).
 
 ### Installer (PKG)

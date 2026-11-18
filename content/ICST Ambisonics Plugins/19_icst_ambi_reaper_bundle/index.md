@@ -50,6 +50,14 @@ The SHA-256 checksums are in the [release notes](https://github.com/joambi/ICST_
 
 ## Installation on macOS
 
+<figure class="reaper-bundle-video" style="margin:0 0 1.5rem 0;">
+  <video controls playsinline preload="metadata" poster="/reaper-bundle/install-tutorial-en-poster.jpg" aria-label="Video: installation and first run of the ICST Ambi REAPER Bundle on macOS" style="max-width:100%;height:auto">
+    <source src="/reaper-bundle/install-tutorial-en.mp4" type="video/mp4">
+  </video>
+  <figcaption>Video: installing the bundle on macOS and your first run with Quick Start (about 80 seconds). The written steps follow below.</figcaption>
+</figure>
+
+
 PKG and ZIP have the same content. Neither is signed with a Developer ID. If macOS blocks a file, close the message, then go to **System Settings › Privacy & Security › Open Anyway** and confirm with your password (macOS 15 and later; up to macOS 14, Ctrl-click › *Open* is enough).
 
 ### Installer (PKG)
