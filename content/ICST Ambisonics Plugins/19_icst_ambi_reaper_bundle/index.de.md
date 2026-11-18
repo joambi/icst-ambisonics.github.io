@@ -78,16 +78,20 @@ Das ZIP ist nicht mit einer Developer-ID signiert. Blockiert macOS die Datei: Me
 *Die Einrichtung geschieht einmal; danach startest du immer mit demselben Skript.*
 
 {{< notice info >}}
-Nicht doppelt installieren: Liegen dieselben Plugins zusätzlich in `/Library/Audio/Plug-Ins/VST3`, lädt REAPER unter Umständen die alte Kopie. Entweder nur den Ordner oder nur die System-Installer benutzen.
+Nicht doppelt installieren: Liegen dieselben Plugins zusätzlich in `/Library/Audio/Plug-Ins/VST3`, lädt REAPER unter Umständen die alte Kopie. Entweder die Plugins im Ordner oder die systemweiten aus den ICST-Plugin-Installern benutzen, nicht beides. Lädt REAPER eine alte Kopie, die Plugins aus `/Library/Audio/Plug-Ins/VST3` entfernen.
 {{< /notice >}}
 
 ## Update einer bestehenden Installation
 
 Ein neues ZIP bringt eigene `reaper.ini` (unter anderem Audiogerät und Fensterpositionen), `reaper-kb.ini`, `reaper-menu.ini`, `reaper-mouse.ini` und `reapack.ini` mit. Wer eigene Einstellungen, Tastenbelegungen oder Menüs behalten will, kopiert diese Dateien vor dem Ersetzen aus dem alten Ordner `ICST_Ambi_Reaper` und legt sie danach zurück.
 
-Wer von 1.1.0 oder 1.1.1 kommt und nur die Korrektur aus 1.1.2 braucht, kopiert aus `…_scripts-only.zip` die Dateien `Scripts/ICST/Ambi/Ambi_Auto_Route.lua`, `Scripts/ICST/Ambi/Ambi_Quick_Start.lua` und `Scripts/ICST/Ambi/lib/ambi_common.lua` in den bestehenden Ordner.
+Welche Dateien du kopierst, hängt vom Ausgangsstand ab:
 
-Von 1.1.2 auf 1.1.3 genügt es, `Scripts/ICST/JS_AmbiEncoder64_Motion_Map_GUI.lua` (Motion Map GUI v2.4.5) aus `…_scripts-only.zip` in den bestehenden Ordner zu kopieren.
+| Von | Nach | Was tun |
+|---|---|---|
+| Beliebige Version | 1.1.3, vollständig | Den ganzen Ordner durch das neue ZIP ersetzen (vorher die eigenen Einstellungen kopieren, siehe oben) |
+| 1.1.0 oder 1.1.1 | 1.1.2, nur die Korrektur | `Scripts/ICST/Ambi/Ambi_Auto_Route.lua`, `Scripts/ICST/Ambi/Ambi_Quick_Start.lua` und `Scripts/ICST/Ambi/lib/ambi_common.lua` aus `…_scripts-only.zip` in den bestehenden Ordner kopieren |
+| 1.1.2 | 1.1.3 | `Scripts/ICST/JS_AmbiEncoder64_Motion_Map_GUI.lua` (Motion Map GUI v2.4.5) aus `…_scripts-only.zip` in den bestehenden Ordner kopieren |
 
 ## Installation unter Windows (Beta)
 
@@ -131,18 +135,18 @@ Die Skripte fragen nach der Ambisonics-Ordnung (1, 3, 5 oder 7, also 4, 16, 36 o
 
 | Button | Funktion |
 |---|---|
-| Quick Start | Legt eine komplette Session an (Quellen, Encoder, optional HOA FX und HOA_Reverb, Decoder, Binaural) und routet sie |
-| B-Format Player, Encoder 64, Encoder | Player- und Encoder-Spuren anlegen |
-| HOA Master, Mono Sources | Sammelspur `HOA_MASTER`; Mono-Quellspuren auf den AmbiEncoder_64 routen |
-| HOA FX | Effektspur mit IEM-Effekten (SceneRotator, MultiEQ, FdnReverb, DualDelay u. a.), Auswahl per Menü |
-| Decoder, Binaural | Lautsprecher-Decoder, IEM BinauralDecoder (bis 7. Ordnung); das Binaural-Skript nutzt dearVR AMBI MICRO nur, wenn dearVR installiert ist |
-| Auto-Route | Erkennt Spuren, legt alle Sends an und sortiert die Spuren auf Wunsch |
-| Motion Map GUI, Kristall Motion Map, Spat Motion Automation | Bewegungsformen und Automation |
-| [Motion Markers GUI](/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/), CSV-Import | Bewegung zwischen Markern per OSC, Aufnahme als Automation |
-| Animator-Buttons | [Choreographer](/de/post/icst-animator-choreographer/) öffnen, Region-Navigation, Encoder-Spuren, CSV-Export |
-| Dokumentation | Öffnet das Offline-Handbuch |
+| Quick Start (1) | Legt eine komplette Session an (Quellen, Encoder, optional HOA FX und HOA_Reverb, Decoder, Binaural) und routet sie |
+| B-Format Player, Encoder 64, Encoder (2–4) | Player- und Encoder-Spuren anlegen |
+| HOA Master, Mono Sources (6–7) | Sammelspur `HOA_MASTER`; Mono-Quellspuren auf den AmbiEncoder_64 routen |
+| HOA FX (5) | Effektspur mit IEM-Effekten (SceneRotator, MultiEQ, FdnReverb, DualDelay u. a.), Auswahl per Menü |
+| Decoder, Binaural (8–9) | Lautsprecher-Decoder, IEM BinauralDecoder (bis 7. Ordnung); das Binaural-Skript nutzt dearVR AMBI MICRO nur, wenn dearVR installiert ist |
+| Auto-Route (10) | Erkennt Spuren, legt alle Sends an und sortiert die Spuren auf Wunsch |
+| Motion Map GUI, Kristall Motion Map, Spat Motion Automation (11, 12, 15) | Bewegungsformen und Automation |
+| [Motion Markers GUI](/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/), CSV-Import (13–14) | Bewegung zwischen Markern per OSC, Aufnahme als Automation |
+| Animator-Buttons (16–20) | [Choreographer](/de/post/icst-animator-choreographer/) öffnen, Region-Navigation, Encoder-Spuren, CSV-Export |
+| Dokumentation (21) | Öffnet das Offline-Handbuch |
 
-![Die Toolbar des ICST Ambi REAPER Bundles mit 21 Buttons, von links nach rechts nummeriert 1 bis 21](/images/reaper-toolbar-numbered.png)
+![Die Toolbar des ICST Ambi REAPER Bundles mit 21 Buttons in Funktionsgruppen](/images/reaper-bundle-toolbar-de.svg)
 
 *Die Toolbar mit ihren 21 Buttons, von links nach rechts nummeriert. Die Nummern entsprechen dem Offline-Handbuch.*
 

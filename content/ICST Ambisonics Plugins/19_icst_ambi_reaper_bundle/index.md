@@ -78,16 +78,20 @@ The ZIP is not signed with a Developer ID. If macOS blocks the file, close the m
 *The setup happens once; after that you always start with the same script.*
 
 {{< notice info >}}
-Do not install twice: if the same plugins also sit in `/Library/Audio/Plug-Ins/VST3`, REAPER may load the old copy. Use either the folder or the system installers.
+Do not install twice: if the same plugins also sit in `/Library/Audio/Plug-Ins/VST3`, REAPER may load the old copy. Use either the plugins in the folder or the system-wide ones from the ICST plugin installers, not both. If REAPER loads an old copy, remove the plugins from `/Library/Audio/Plug-Ins/VST3`.
 {{< /notice >}}
 
 ## Updating an existing installation
 
 A new ZIP brings its own `reaper.ini` (audio device, window positions etc.), `reaper-kb.ini`, `reaper-menu.ini`, `reaper-mouse.ini` and `reapack.ini`. To keep your own settings, key bindings or menus, copy these files from your old `ICST_Ambi_Reaper` folder before replacing it and put them back afterwards.
 
-Coming from 1.1.0 or 1.1.1 and only need the fix in 1.1.2? Copy `Scripts/ICST/Ambi/Ambi_Auto_Route.lua`, `Scripts/ICST/Ambi/Ambi_Quick_Start.lua` and `Scripts/ICST/Ambi/lib/ambi_common.lua` from `…_scripts-only.zip` into your existing folder.
+Which files to copy depends on where you start from:
 
-From 1.1.2 to 1.1.3, copying `Scripts/ICST/JS_AmbiEncoder64_Motion_Map_GUI.lua` (Motion Map GUI v2.4.5) from `…_scripts-only.zip` into your existing folder is enough.
+| From | To | What to do |
+|---|---|---|
+| Any version | 1.1.3, complete | Replace the whole folder with the new ZIP (copy your settings first, see above) |
+| 1.1.0 or 1.1.1 | 1.1.2, only the fix | Copy `Scripts/ICST/Ambi/Ambi_Auto_Route.lua`, `Scripts/ICST/Ambi/Ambi_Quick_Start.lua` and `Scripts/ICST/Ambi/lib/ambi_common.lua` from `…_scripts-only.zip` into your existing folder |
+| 1.1.2 | 1.1.3 | Copy `Scripts/ICST/JS_AmbiEncoder64_Motion_Map_GUI.lua` (Motion Map GUI v2.4.5) from `…_scripts-only.zip` into your existing folder |
 
 ## Installation on Windows (beta)
 
@@ -131,18 +135,18 @@ Scripts ask for the Ambisonics order (1, 3, 5 or 7, that is 4, 16, 36 or 64 chan
 
 | Button | Function |
 |---|---|
-| Quick Start | Creates a whole session (sources, encoder, optional HOA FX and HOA_Reverb, decoder, binaural) and routes it |
-| B-Format Player, Encoder 64, Encoder | Create player and encoder tracks |
-| HOA Master, Mono Sources | Bus track `HOA_MASTER`; mono source tracks routed into the AmbiEncoder_64 |
-| HOA FX | Effect track with IEM effects (SceneRotator, MultiEQ, FdnReverb, DualDelay and others), chosen from a menu |
-| Decoder, Binaural | Loudspeaker decoder, IEM BinauralDecoder (up to 7th order); the Binaural script uses dearVR AMBI MICRO only if dearVR is installed |
-| Auto-Route | Detects tracks, creates all sends and sorts the tracks on request |
-| Motion Map GUI, Kristall Motion Map, Spat Motion Automation | Movement shapes and automation |
-| [Motion Markers GUI](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/), CSV import | Movement between markers via OSC, recorded as automation |
-| Animator buttons | Open the [Choreographer](/post/icst-animator-choreographer/), region navigation, encoder tracks, CSV export |
-| Documentation | Opens the offline manual |
+| Quick Start (1) | Creates a whole session (sources, encoder, optional HOA FX and HOA_Reverb, decoder, binaural) and routes it |
+| B-Format Player, Encoder 64, Encoder (2–4) | Create player and encoder tracks |
+| HOA Master, Mono Sources (6–7) | Bus track `HOA_MASTER`; mono source tracks routed into the AmbiEncoder_64 |
+| HOA FX (5) | Effect track with IEM effects (SceneRotator, MultiEQ, FdnReverb, DualDelay and others), chosen from a menu |
+| Decoder, Binaural (8–9) | Loudspeaker decoder, IEM BinauralDecoder (up to 7th order); the Binaural script uses dearVR AMBI MICRO only if dearVR is installed |
+| Auto-Route (10) | Detects tracks, creates all sends and sorts the tracks on request |
+| Motion Map GUI, Kristall Motion Map, Spat Motion Automation (11, 12, 15) | Movement shapes and automation |
+| [Motion Markers GUI](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/), CSV import (13–14) | Movement between markers via OSC, recorded as automation |
+| Animator buttons (16–20) | Open the [Choreographer](/post/icst-animator-choreographer/), region navigation, encoder tracks, CSV export |
+| Documentation (21) | Opens the offline manual |
 
-![The ICST Ambi REAPER toolbar with its 21 buttons, numbered 1 to 21 from left to right](/images/reaper-toolbar-numbered.png)
+![The ICST Ambi REAPER toolbar with its 21 buttons in functional groups](/images/reaper-bundle-toolbar-en.svg)
 
 *The toolbar with its 21 buttons, numbered from left to right. The numbers match the offline manual.*
 
