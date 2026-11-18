@@ -49,7 +49,7 @@ Neu dabei? Folge dem geführten Startpfad. Schon im Thema? Spring direkt in die 
   </a>
 </div>
 
-Neu in v4.0.0: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
+Neu in v{{< param pluginVersion >}}: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releases](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
 
 ---
 
@@ -75,9 +75,10 @@ Neu in v4.0.0: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releas
   </section>
   <section class="home-card">
     <h4>🎼 Komponieren in Ambisonics</h4>
-    <p>Räumliches Denken für Komponist:innen — analytisches Hören, Bewegung und Tiefe als kompositorische Parameter, Studiopraxis.</p>
+    <p>Räumliches Denken für Komponist:innen — analytisches Hören, Bewegung und Tiefe als kompositorische Parameter, Studiopraxis. Der vollständige Kompositions-Guide ist in Vorbereitung.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/blog/ascolta-listening-guide/">Listening Guide</a>
+      <a class="hero__link hero__link--primary" href="/de/post/komposition-in-ambisonics/">Einführung</a>
+      <a class="hero__link" href="/de/blog/ascolta-listening-guide/">Listening Guide</a>
     </div>
   </section>
 </div>
@@ -114,10 +115,10 @@ Neu in v4.0.0: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releas
 <div class="home-cards">
   <section class="home-card">
     <h4>🎧 ASCOLTA</h4>
-    <p>Regelmässige acousmatische Hörstunden und Konzerte an der ZHdK — räumliche Werke live aufgeführt, offen für Publikum.</p>
+    <p>Regelmässige akusmatische Hörstunden und Konzerte an der ZHdK — räumliche Werke live aufgeführt, offen für Publikum.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/blog/ascolta/">Alle Sessions</a>
-      <a class="hero__link" href="/blog/ascolta-listening-guide/">Hörleitfaden</a>
+      <a class="hero__link" href="/de/blog/ascolta-listening-guide/">Hörleitfaden</a>
     </div>
   </section>
   <section class="home-card">

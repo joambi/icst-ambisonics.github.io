@@ -4,11 +4,12 @@ description: "Überblick zur Klangkunstreihe Sounding Future und zur Erkundung i
 date: 2025-06-11T15:09:00
 weight: 14
 languageCode: de
+home_hide: true
 ---
 
 ## Listen Online
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![SoundingFuture](SoundingFuture.png)
 [sounding FUTURE](https://audiospace.soundingfuture.com/)

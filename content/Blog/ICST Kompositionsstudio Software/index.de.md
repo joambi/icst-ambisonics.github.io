@@ -8,9 +8,10 @@ aliases:
 weight: 4
 group: "Studio"
 languageCode: de
+home_hide: true
 ---
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Software- und Plugin-Umgebung für die Produktion auf dem ICST Mac Pro.
 

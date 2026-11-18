@@ -7,6 +7,7 @@ aliases:
   - /blog/icst-kompositionsstudio-pre-installation/
 weight: 2
 group: "Residents"
+home_hide: true
 ---
 
 ## Pre-installation for your laptop

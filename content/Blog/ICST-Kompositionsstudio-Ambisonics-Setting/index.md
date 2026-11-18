@@ -7,6 +7,7 @@ aliases:
   - /blog/icst-kompositionsstudio-ambisonics-setting/
 weight: 6
 group: "Studio"
+home_hide: true
 ---
 
 Level: Intermediate | **Audience:** Composer, student, researcher, studio visitor.

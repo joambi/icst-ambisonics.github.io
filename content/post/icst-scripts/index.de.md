@@ -16,7 +16,7 @@ tool: ["AmbiEncoder", "Lua"]
 
 ## ICST AmbiEncoder_64 Spiral Walk - Dokumentation
 
-**Für wen:** Level: Advanced | Zielgruppe: ReaScript-User, Technical Artist.
+**Level:** Advanced | **Zielgruppe:** ReaScript-User, Technical Artist.
 
 ### 🔍 **Funktion**
 

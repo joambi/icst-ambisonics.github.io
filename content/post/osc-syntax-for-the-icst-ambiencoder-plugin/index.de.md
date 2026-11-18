@@ -18,7 +18,7 @@ tool: ["OSC"]
 
 ## OSC Syntax für das ICST AmbiEncoder Plugin
 
-**Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Developer, Max/OSC-User.
+**Level:** Advanced | **Zielgruppe:** Techniker:in, Developer, Max/OSC-User.
 
 Der **ICST AmbiEncoder** unterstützt **OSC** und **JavaScript**, was eine nahtlose Kommunikation mit OSC-Tools wie **TouchOSC, IanniX, MaxMSP** und andere OSC-fähige Software ermöglicht.
 Diese Seite ist die **Syntax-Referenz**.

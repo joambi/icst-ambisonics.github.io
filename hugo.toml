@@ -47,6 +47,8 @@ contentratio = 0.82
 copyright = ""
 # Google Search Console verification
 googleSiteVerify = "2dac45051b431b1b"
+# Aktuelle Version der ICST Ambisonics Plugins – einzige Quelle für Startseite (EN/DE) und schema.org
+pluginVersion = "4.0.0"
 
   # Popup "Aktuell": erscheint einmal pro Besuch (Browser-Sitzung), wegklickbar.
   # page = Pfad der Content-Seite (DE/EN wird automatisch gewählt); until = automatisch aus nach diesem Zeitpunkt.
