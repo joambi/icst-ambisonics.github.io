@@ -1,5 +1,6 @@
 ---
 title: "ICST Studio-Residenzen 2026"
+description: "Künstler:innen der ICST Studio-Residenzen 2026: Projekte und Arbeiten mit Raumklang im ICST-Kompositionsstudio."
 date: 2026-03-01T00:00:00
 hideDate: true
 ---

@@ -34,7 +34,7 @@ In 2019, Philip received a grant from the Swiss National Science Foundation to c
 This project is supported by Creative Victoria; High Altitude Research Station at Jungfraujoch and Gornergrat; Institute for Computer Music and Sound Technology at the ZhDK; RMIT School of Art; Swiss National Science Foundation
 ![Ph.Samartzis](img_6516.jpg)
 
-What climate change sounds like - SWI [swissinfo.ch](http://swissinfo.ch)
+What climate change sounds like - SWI [swissinfo.ch](https://www.swissinfo.ch)
 <https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
 
 * * *
@@ -49,5 +49,5 @@ Cathy Lane is an English composer, sound artist, and academic. Her work uses lan
 
 ![Cathy](Cathy.png)
 
-[cathylane.co.uk](http://cathylane.co.uk)
+[cathylane.co.uk](https://cathylane.co.uk)
 <https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>

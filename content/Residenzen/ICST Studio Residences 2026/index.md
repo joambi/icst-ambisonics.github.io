@@ -1,5 +1,6 @@
 ---
 title: "2026 ICST Artist in Studio-Residency"
+description: "Artists in the 2026 ICST Studio Residency: projects and work with spatial audio in the ICST composition studio."
 date: 2026-03-01T00:00:00
 hideDate: true
 ---

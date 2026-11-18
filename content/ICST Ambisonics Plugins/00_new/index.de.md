@@ -1,5 +1,6 @@
 ---
 title: Was ist neu
+description: "Neu bei den ICST-Ambisonics-Tools: REAPER-Bundle 1.1.3, Motion Map GUI 2.4.5, Animator Choreographer 0.1.0 und das Plugin-Release 4.0."
 date: 2026-11-14T08:00:00
 weight: 15
 ---

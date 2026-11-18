@@ -1,5 +1,6 @@
 ---
 title: "ICST Studio-Residenzen 2025"
+description: "Künstler:innen der ICST Studio-Residenzen 2025: Projekte und Arbeiten mit Raumklang im ICST-Kompositionsstudio."
 date: 2025-09-16T00:00:00
 hideDate: true
 ---

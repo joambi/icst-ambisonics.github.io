@@ -34,7 +34,7 @@ Dur: 28.30
 Dieses Projekt wird unterstützt von Creative Victoria; Hochaltitudenforschungsstation am Jungfraujoch und Gornergrat; Institut für Computermusik und Soundtechnologie an der ZhDK; RMIT School of Art; Schweizer Nationalfonds
 ![Ph.Samartzis](img_6516.jpg)
 
-Was Klimawandel klingt wie - SWI [swissinfo.ch](http://swissinfo.ch)
+Was Klimawandel klingt wie - SWI [swissinfo.ch](https://www.swissinfo.ch)
 <https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
 
 * * *
@@ -49,5 +49,5 @@ Cathy Lane ist eine englische Komponistin, Soundkünstlerin und Akademikerin. Ih
 
 ![Cathy](Cathy.png)
 
-[cathylane.co.uk](http://cathylane.co.uk)
+[cathylane.co.uk](https://cathylane.co.uk)
 <https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>

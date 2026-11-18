@@ -24,10 +24,10 @@ Generate motion data in Max and send it via OSC to the _ICST AmbiEncoder_ in you
 
 ### **Required Software:**
 
-- **MaxMSP v.8.0+** → [cycling74.com](http://cycling74.com)
-- **ICST Ambisonics Tools v3** → [cycling74.com](http://cycling74.com)
+- **MaxMSP v.8.0+** → [cycling74.com](https://cycling74.com)
+- **ICST Ambisonics Tools v3** → [cycling74.com](https://cycling74.com)
 - **ICST Ambisonics Plugins (VST3/AU)** → [ICST AmbiPlugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
-- **Reaper (DAW)** → [reaper.fm](http://reaper.fm/download.php)
+- **Reaper (DAW)** → [reaper.fm](https://reaper.fm/download.php)
 
 ### **Setup Guide:**
 
