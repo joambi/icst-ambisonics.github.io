@@ -44,7 +44,7 @@ tags: []
 {{< youtube X23hZNoSkUs >}}
 ### 3rd-party tools:
 
-- [Ambisonic Toolkit (ATK) for REAPER](http://www.ambisonictoolkit.net/documentation/reaper/) — JSFX plugins for REAPER and SuperCollider; strong signal-processing foundation, research-oriented
+- [Ambisonic Toolkit (ATK) for REAPER](https://www.ambisonictoolkit.net/documentation/reaper/) — JSFX plugins for REAPER and SuperCollider; strong signal-processing foundation, research-oriented
 - [IEM Plugin suite](https://plugins.iem.at/) — free HOA plugin suite up to 7th order; VST3/AU/LV2 for all platforms
 - [Sparta Plugins](https://leomccormack.github.io/sparta-site/) — research-grade spatial audio processing plugins up to 10th order by Leo McCormack
 - [Wigware](https://www.brucewiggins.co.uk/?page_id=78)
@@ -53,8 +53,8 @@ tags: []
 - [Grapes 3D Audio Control](https://grapes-3d.com/)
 - [Audio Brewers](https://www.audiobrewers.com/plugins/ambisonics-tools)    
 - [Envelop](https://envelop.us/page/software)
-- [Blue Ripple Sound Core Suite](http://www.blueripplesound.com/products/o3a-core)
-- [Kronlachner Ambix](http://www.matthiaskronlachner.com/?p=1910)
+- [Blue Ripple Sound Core Suite](https://www.blueripplesound.com/products/o3a-core)
+- [Kronlachner Ambix](https://www.matthiaskronlachner.com/posts/mcfx-v0-1-multichannel-cross-plattform-audio-plug-in-suite/)
 - [Noisemaker](https://www.noisemakers.fr/)
 - [VVAudio](https://www.vvaudio.com/)
 - [Harpex](https://harpex.net/)
