@@ -5,6 +5,9 @@
 .notice {
   display: flex;
   flex-direction: column;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  line-height: 1.45;
 
   @include colorTheme.themed() {
     background-color: color.mix(colorTheme.t('info'), colorTheme.t('accent'), 40%);
@@ -27,7 +30,9 @@
     align-self: flex-end;
     font-weight: 300;
     letter-spacing: 0.025em;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    padding: 0.1rem 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
 
     @include colorTheme.themed() {
       color: colorTheme.t('accent');
@@ -43,6 +48,26 @@
   }
 
   &__content {
-    padding: 8px 8px 1rem 1rem;
+    padding: 0.4rem 0.8rem 0.6rem;
+
+    p,
+    ul,
+    ol {
+      line-height: 1.45;
+      margin: 0.3rem 0;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.6rem;
+    }
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
   }
 }
