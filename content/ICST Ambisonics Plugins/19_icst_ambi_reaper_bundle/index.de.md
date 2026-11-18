@@ -43,9 +43,9 @@ Aktuelle Version: **1.1.3** mit Motion Map GUI v2.4.5 ([Release-Notizen und alle
 - [`ICST_Ambi_Reaper_1.1.3_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_macOS.zip): portabel, zum Beispiel für eine externe SSD
 - [`ICST_Ambi_Reaper_1.1.3_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_scripts-only.zip): nur Skripte, Toolbar, Konfiguration und Doku (für den Aufbau unter Windows)
 
-**Neu in 1.1.3:** Motion Map GUI v2.4.5 (vorher: v2.4.3). Version 2.4.4 bringt einen Preview-Transport mit Geschwindigkeit, Richtung und Play/Stop; Presets speichern diese Einstellungen nicht. Version 2.4.5 schreibt Spuren immer mit Latch (die Option *Track Latch* entfällt, ältere Presets werden dafür ignoriert) und ergänzt einen *Sync*-Button, der die Vorschau an den REAPER-Transport koppelt. Toolbar-Button, Action-ID und Icon bleiben gleich. Alle übrigen Skripte, Konfigurationsdateien und die Dokumentation sind gegenüber 1.1.2 unverändert.
+**Neu in 1.1.3:** Motion Map GUI v2.4.5 (vorher: v2.4.3). Version 2.4.4 bringt einen Preview-Transport mit Geschwindigkeit, Richtung und Play/Stop; Presets speichern diese Einstellungen nicht. Version 2.4.5 schreibt Spuren immer mit Latch (die Option *Track Latch* entfällt, ältere Presets werden dafür ignoriert) und ergänzt einen *Sync*-Button: Die Vorschau folgt Play/Stop von REAPER, und Play/Stop in der GUI starten und stoppen den REAPER-Transport. Stop hält die Animation in der Trajektorien-Vorschau und in der Live-OSC-Vorschau an, und der Speed-Faktor läuft frei und im Tempo (Details im [Motion-Map-Guide](/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/#preview-transport-ab-v244-sync-ab-v245)). Toolbar-Button, Action-ID und Icon bleiben gleich. Alle übrigen Skripte, Konfigurationsdateien und die Dokumentation sind gegenüber 1.1.2 unverändert.
 
-**Getestet:** als 1.1.2 mit REAPER 7.85 auf macOS (Apple Silicon): Auto-Route, Quick Start und Routing mit 64 Kanälen. Die Motion Map GUI v2.4.5 wurde einzeln getestet; der Start über die Toolbar dieses Bundles wurde nicht eigens getestet.
+**Getestet:** als 1.1.2 mit REAPER 7.85 auf macOS (Apple Silicon): Auto-Route, Quick Start und Routing mit 64 Kanälen. Die Motion Map GUI v2.4.5 wurde vor der Aufnahme ins Bundle einzeln in REAPER verwendet; der Start über die Toolbar dieses Bundles wurde nicht eigens getestet.
 
 Die Version ist eine Evaluationsbeta (Vorabversion auf GitHub). Rückmeldungen bitte als [Issue auf GitHub](https://github.com/joambi/ICST_Ambi_Reaper/issues).
 
@@ -186,4 +186,5 @@ Die mitgelieferten Binaries (Plugins, Erweiterungen, Animator Choreographer) fal
 - [Quick Start: ICST Ambisonics Plugins in REAPER](/de/icst-ambisonics-plugins/04_quick_start/)
 - [Installation](/de/icst-ambisonics-plugins/02_installation/)
 - [Downloads](/de/icst-ambisonics-plugins/08_downloads/)
+- [ICST Ambi Reaper Online-Handbuch](/icst-ambisonics-plugins/19_icst_ambi_reaper/docs/)
 - [ICST Ambisonics EcoSystem](/de/ecosystem/)
