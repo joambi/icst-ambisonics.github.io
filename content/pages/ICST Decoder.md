@@ -3,6 +3,9 @@ title: "ICST Ambisonics Decoder"
 translationKey: icst-decoder-page
 categories:
   - "ICST Ambisonics Plugins"
+build:
+  render: never
+  list: never
 ---
 
 Das Decoding ist die zentrale Schnittstelle zwischen dem Ambisonics-B-Format und der physischen Lautsprecherwiedergabe – seine Qualität entscheidet über räumliche Präzision, Tiefenstaffelung und Lokalisation.

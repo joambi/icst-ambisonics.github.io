@@ -6,6 +6,9 @@ categories:
 languageCode: de
 translationKey: icst-decoder-page
 draft: false
+build:
+  render: never
+  list: never
 ---
 
 Das Decoding ist die zentrale Schnittstelle zwischen dem Ambisonics-B-Format und der physischen Lautsprecherwiedergabe. Seine Qualität entscheidet über räumliche Präzision, Tiefenstaffelung und Lokalisation.
