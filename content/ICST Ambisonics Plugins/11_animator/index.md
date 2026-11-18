@@ -472,9 +472,7 @@ The CPU load is low: 0.11–0.18 % FX CPU in a 12-minute endurance test, briefly
 
 ## Release notes
 
-<!-- TODO release: add what's new in 4.0 compared to 3.2.0.9 -->
-
-**4.0:** the Animator is part of the new ICST Ambisonics Plugins v4.0 release.
+**4.0:** the Animator is part of the new ICST Ambisonics Plugins v4.0 release. It is functionally identical to 3.2.0.9.
 
 **3.2.0.9:** Automation Control, slot binding of timelines to their group, Lissajous with *Closed path*, comma as decimal separator.
 
