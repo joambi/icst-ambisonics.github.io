@@ -96,6 +96,13 @@ Before installing, make sure you have:
   <a class="hero__link" href="/icst-ambisonics-plugins/13_osc/">OSC Setup</a>
 </div>
 
+<figure class="motion-markers-video" style="margin:0 0 1.5rem 0;">
+  <video controls playsinline preload="metadata" poster="/motion-markers/install-tutorial-en-poster.jpg" aria-label="Video: installation and first motion with ICST Ambi Motion Markers" style="max-width:100%;height:auto">
+    <source src="/motion-markers/install-tutorial-en.mp4" type="video/mp4">
+  </video>
+  <figcaption>Video: installation and your first motion, step by step (about 75 seconds). The written steps follow below.</figcaption>
+</figure>
+
 ### 1. Add the scripts to REAPER
 
 In REAPER: *Actions menu → Load ReaScript…* — then select each file from the bundle:
