@@ -1,6 +1,6 @@
 ---
 title: ICST Ambi REAPER Bundle
-date: 2026-11-12T00:00:00
+date: 2026-11-18T00:00:00
 weight: 35
 draft: false
 toc: true
@@ -42,6 +42,10 @@ Current version: **1.1.3** with Motion Map GUI v2.4.5 ([release notes and all fi
 
 - [`ICST_Ambi_Reaper_1.1.3_macOS.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_macOS.zip): portable, for example for an external SSD
 - [`ICST_Ambi_Reaper_1.1.3_scripts-only.zip`](https://github.com/joambi/ICST_Ambi_Reaper/releases/download/v1.1.3/ICST_Ambi_Reaper_1.1.3_scripts-only.zip): scripts, toolbar, configuration and docs only (for setting up on Windows)
+
+**New in 1.1.3:** Motion Map GUI v2.4.5 (before: v2.4.3). Version 2.4.4 adds a preview transport with speed, direction and Play/Stop; presets do not store these settings. Version 2.4.5 always writes tracks with Latch (the *Track Latch* option is gone, older presets are ignored for it) and adds a *Sync* button that couples the preview to the REAPER transport. Toolbar button, action ID and icon are unchanged. All other scripts, configuration files and the documentation are unchanged from 1.1.2.
+
+**Tested:** as 1.1.2 with REAPER 7.85 on macOS (Apple Silicon): Auto-Route, Quick Start and routing with 64 channels. The Motion Map GUI v2.4.5 was tested on its own; starting it from this bundle's toolbar was not tested separately.
 
 This version is an evaluation beta (pre-release on GitHub). Please report problems as an [issue on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/issues).
 
@@ -175,6 +179,7 @@ The bundled binaries (plugins, extensions, Animator Choreographer) are not cover
 | [SWS/S&M Extension](https://www.sws-extension.org) | MIT | Install manually on Windows; the licence text is in the `licenses/` folder |
 | [ReaPack](https://reapack.com) | LGPL-3.0 | Install manually on Windows |
 | [js_ReaScriptAPI](https://github.com/juliansader/ReaExtensions) | MIT | Install manually on Windows |
+| Animator Choreographer | GPL-3.0 | In the folder `Animator/`; toolbar button 16 starts it |
 
 ## See also
 
