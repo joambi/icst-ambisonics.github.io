@@ -16,7 +16,7 @@ tool: ["AmbiDecoder"]
 
 ## Multi-Decoder Modus
 
-**Für wen:** Level: Advanced | Zielgruppe: Techniker:in, Studio-Engineer.
+**Level:** Advanced | **Zielgruppe:** Techniker:in, Studio-Engineer.
 
 Der **Multi-Decoder Modus**, eingeführt in **ICST AmbiDecoder v3.2**, ermöglicht es dir, bis zu **vier vollständig unabhängige Decoder** in einer einzelnen Plugin-Instanz auszuführen. Dies ist ideal für komplexe Lautsprechersetups, die unterschiedliche Lautsprecher-Arrays kombinieren, zum Beispiel einen Hauptambisonics-Ring zusammen mit Höhenlautsprechern, einer Subwoofer-Gruppe oder einem separaten Nahfeld-Array.
 

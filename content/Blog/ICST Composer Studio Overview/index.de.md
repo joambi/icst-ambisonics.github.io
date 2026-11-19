@@ -5,9 +5,10 @@ date: 2025-05-05T16:43:00
 weight: 1
 group: "Studio"
 languageCode: de
+home_hide: true
 ---
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ## Studio für Komposition
 

@@ -22,6 +22,6 @@ Mit dem ICST Ambisonics Decoder steht ein leistungsfähiges und praxisnahes Werk
 Weitere Informationen zur Installation finden sich hier:
 [ICST Ambisonics Plugins](/de/icst-ambisonics-plugins/)
 
-Alternativ bietet dieses Video eine anschauliche Schritt-fuer-Schritt-Einfuehrung:
+Alternativ bietet dieses Video eine anschauliche Schritt-für-Schritt-Einführung:
 
 {{< youtube 2GXb5tbqW1Y >}}

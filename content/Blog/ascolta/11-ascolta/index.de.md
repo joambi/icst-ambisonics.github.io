@@ -7,7 +7,7 @@ weight: 11
 
 * * *
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ![ascolta](ascolta.png)
 

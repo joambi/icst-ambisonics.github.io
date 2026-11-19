@@ -4,6 +4,7 @@ description: "Studio space, 31-speaker Ambisonics system, and general overview."
 date: 2025-05-05T16:43:00
 weight: 1
 group: "Studio"
+home_hide: true
 ---
 
 Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.

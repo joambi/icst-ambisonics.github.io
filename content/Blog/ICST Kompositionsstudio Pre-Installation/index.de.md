@@ -8,11 +8,12 @@ aliases:
 weight: 2
 group: "Residents"
 languageCode: de
+home_hide: true
 ---
 
 # Vorinstallation für deinen externen Laptop
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ### **AUDIO**
 

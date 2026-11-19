@@ -9,9 +9,10 @@ aliases:
 weight: 11
 group: "Residents"
 languageCode: de
+home_hide: true
 ---
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.
 

@@ -7,6 +7,7 @@ aliases:
   - /blog/icst-kompositionsstudio-regie/
 weight: 5
 group: "Studio"
+home_hide: true
 ---
 
 

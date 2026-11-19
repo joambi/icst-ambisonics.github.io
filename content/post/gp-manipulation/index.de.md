@@ -16,7 +16,7 @@ tool: ["MultiEncoder", "Animator"]
 
 ## Gruppenanimation
 
-**Für wen:** Level: Intermediate | Zielgruppe: Komponist:in, Live-Performer:in.
+**Level:** Intermediate | **Zielgruppe:** Komponist:in, Live-Performer:in.
 
 Der **ICST Multi-Ambisonics Encoder v.2+** bietet ein **Gruppenanimations-Tool** zur dynamischen Manipulation gruppierter Audioquellen in der **Radar-Anzeige**. Durch Auswahl eines Gruppenpunkts und Halten von **Option (Alt) auf Mac** schaltest du erweiterte Funktionen wie **Gruppenanimation** und **Gruppenstrecken** frei, die es dir ermöglichen, mehrere Quellen synchronisiert zu bewegen und zu transformieren für verbesserte 3D-Raumalisierung.
 

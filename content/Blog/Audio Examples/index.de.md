@@ -8,9 +8,10 @@ aliases:
   - /audio-examples/
 group: "Studio"
 weight: 8
+home_hide: true
 ---
 
-Für wen: Zielgruppe: Komponist:in, Studierende, Forschende, Studio-Besucher:in.
+**Zielgruppe:** Komponist:in, Studierende, Forschende, Studio-Besucher:in.
 
 Kurze Preview-Snippets werden auf dieser Website gehostet. Längere Vollversionen sind extern verlinkt, um die GitHub-Pages-Limits einzuhalten.
 

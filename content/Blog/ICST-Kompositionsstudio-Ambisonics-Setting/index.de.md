@@ -8,9 +8,10 @@ aliases:
 weight: 6
 group: "Studio"
 languageCode: de
+home_hide: true
 ---
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 Ambisonics-Lautsprecher-Setup und Koordinaten
 **Beispiel für „ICST_AmbiDecoder 3.1.0" VST3 (2025)**

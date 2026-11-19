@@ -10,7 +10,7 @@ languageCode: de
 * * *
 # ICST Support für das Kompositionsstudio
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ### RME MadiFace USB-Treiber installieren
 

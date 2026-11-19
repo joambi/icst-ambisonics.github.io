@@ -7,6 +7,7 @@ tags:
   - b-format
   - test-files
   - ambisonics
+home_hide: true
 ---
 
 A curated collection of Ambisonics B-Format reference files for testing decoders, binaural renderers, and spatial audio pipelines. All files use the **ambiX** convention: ACN channel ordering, SN3D normalisation.

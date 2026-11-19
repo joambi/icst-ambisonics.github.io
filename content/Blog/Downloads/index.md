@@ -4,6 +4,7 @@ description: "ICST Ambisonics Plugins, Max tools, speaker presets, session templ
 date: 2025-06-12T15:09:00
 weight: 0
 group: "Residents"
+home_hide: true
 ---
 
 All ICST tools and supporting files in one place.

@@ -6,9 +6,10 @@ tags: []
 weight: 8
 group: "Residents"
 languageCode: de
+home_hide: true
 ---
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 * * *
 
