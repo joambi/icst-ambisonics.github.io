@@ -84,167 +84,195 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 ## Menu items
 [menu]
 
-  [[menu.main]]
+[[menu.main]]
   name = "Start"
   identifier = "start"
   weight = 50
   url = "/start/"
 
-  [[menu.main]]
-  name = "Tutorials"
-  identifier = "tutorials"
+[[menu.main]]
+  name = "Learn"
+  identifier = "learn"
   weight = 100
   url = "/post/"
 
-    [[menu.main]]
-    name = "All Tutorials"
-    parent = "tutorials"
-    weight = 100
-    url = "/post/"
+[[menu.main]]
+  name = "Ambisonics 101"
+  identifier = "learn-0"
+  weight = 100
+  url = "/ambisonics-101/"
+  parent = "learn"
 
-    [[menu.main]]
-    name = "Ambisonics 101"
-    parent = "tutorials"
-    weight = 101
-    url = "/ambisonics-101/"
+[[menu.main]]
+  name = "Ambisonics Formats"
+  identifier = "learn-1"
+  weight = 101
+  url = "/learn/ambisonics-formats/"
+  parent = "learn"
 
-    [[menu.main]]
-    name = "Ambisonics Formats"
-    parent = "tutorials"
-    weight = 102
-    url = "/learn/ambisonics-formats/"
+[[menu.main]]
+  name = "All Tutorials"
+  identifier = "learn-2"
+  weight = 102
+  url = "/post/"
+  parent = "learn"
 
-    [[menu.main]]
-    name = "Videos"
-    parent = "tutorials"
-    weight = 104
-    url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
+[[menu.main]]
+  name = "Videos"
+  identifier = "learn-4"
+  weight = 104
+  url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
+  parent = "learn"
 
-  [[menu.main]]
+[[menu.main]]
+  name = "Tools"
+  identifier = "tools"
+  weight = 200
+  url = "/ecosystem/"
+
+[[menu.main]]
+  name = "EcoSystem Overview"
+  identifier = "tools-0"
+  weight = 200
+  url = "/ecosystem/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "Plugins (REAPER)"
+  identifier = "tools-1"
+  weight = 201
+  url = "/icst-ambisonics-plugins/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "Max Tools"
+  identifier = "tools-2"
+  weight = 202
+  url = "/icst-ambisonics-tools/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "REAPER Bundle"
+  identifier = "tools-3"
+  weight = 203
+  url = "/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "Animator"
+  identifier = "tools-4"
+  weight = 204
+  url = "/icst-ambisonics-plugins/11_animator/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "Animator Choreographer"
+  identifier = "tools-5"
+  weight = 205
+  url = "/icst-ambisonics-plugins/20_animator_choreographer/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "Motion Map"
+  identifier = "tools-6"
+  weight = 206
+  url = "/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "Docs"
+  identifier = "docs"
+  weight = 300
+  url = "/icst-ambisonics-plugins/"
+
+[[menu.main]]
+  name = "Plugin Docs"
+  identifier = "docs-0"
+  weight = 300
+  url = "/icst-ambisonics-plugins/"
+  parent = "docs"
+
+[[menu.main]]
+  name = "OSC Syntax"
+  identifier = "docs-1"
+  weight = 301
+  url = "/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
+  parent = "docs"
+
+[[menu.main]]
+  name = "Best Practices"
+  identifier = "docs-2"
+  weight = 302
+  url = "/icst-ambisonics-plugins/17_best_practices/"
+  parent = "docs"
+
+[[menu.main]]
+  name = "FAQ"
+  identifier = "docs-3"
+  weight = 303
+  url = "/blog/faq/"
+  parent = "docs"
+
+[[menu.main]]
+  name = "Links"
+  identifier = "docs-4"
+  weight = 304
+  url = "/links/"
+  parent = "docs"
+
+[[menu.main]]
   name = "Studio"
   identifier = "studio"
-  weight = 200
+  weight = 400
   url = "/blog/"
 
-    [[menu.main]]
-    name = "Resident Guide"
-    parent = "studio"
-    weight = 200
-    url = "/for-residents/"
-
-    [[menu.main]]
-    name = "Studio Hub"
-    parent = "studio"
-    weight = 201
-    url = "/blog/icst-composer-studio-blog/"
-
-    [[menu.main]]
-    name = "Support"
-    parent = "studio"
-    weight = 202
-    url = "/blog/icst-kompositionsstudio-support/"
-
-    [[menu.main]]
-    name = "Residencies"
-    parent = "studio"
-    weight = 203
-    url = "/residenzen/"
-
-  [[menu.main]]
-  name = "ASCOLTA"
-  identifier = "ascolta"
-  weight = 300
-  url = "/blog/ascolta/"
-
-    [[menu.main]]
-    name = "ASCOLTA"
-    parent = "ascolta"
-    weight = 301
-    url = "/blog/ascolta/"
-
-    [[menu.main]]
-    name = "Listening"
-    parent = "ascolta"
-    weight = 302
-    url = "/blog/sounding_future/"
-
-  [[menu.main]]
-  name = "Docs"
-  identifier = "tools-osc"
+[[menu.main]]
+  name = "Resident Guide"
+  identifier = "studio-0"
   weight = 400
-  url = "/ICST Ambisonics Plugins/"
+  url = "/for-residents/"
+  parent = "studio"
 
-    [[menu.main]]
-    name = "EcoSystem"
-    parent = "tools-osc"
-    weight = 400
-    url = "/ecosystem/"
+[[menu.main]]
+  name = "Residencies"
+  identifier = "studio-1"
+  weight = 401
+  url = "/residenzen/"
+  parent = "studio"
 
-    [[menu.main]]
-    name = "Plugin Docs"
-    parent = "tools-osc"
-    weight = 401
-    url = "/ICST Ambisonics Plugins/"
+[[menu.main]]
+  name = "Studio Hub"
+  identifier = "studio-2"
+  weight = 402
+  url = "/blog/icst-composer-studio-blog/"
+  parent = "studio"
 
-    [[menu.main]]
-    name = "Ambi Tools"
-    parent = "tools-osc"
-    weight = 402
-    url = "/ICST Ambisonics Tools/"
+[[menu.main]]
+  name = "Support"
+  identifier = "studio-3"
+  weight = 403
+  url = "/blog/icst-kompositionsstudio-support/"
+  parent = "studio"
 
-    [[menu.main]]
-    name = "OSC Syntax"
-    parent = "tools-osc"
-    weight = 403
-    url = "/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
+[[menu.main]]
+  name = "ASCOLTA"
+  identifier = "studio-4"
+  weight = 404
+  url = "/blog/ascolta/"
+  parent = "studio"
 
-    [[menu.main]]
-    name = "Best Practices"
-    parent = "tools-osc"
-    weight = 404
-    url = "/icst-ambisonics-plugins/17_best_practices/"
+[[menu.main]]
+  name = "Listening"
+  identifier = "studio-5"
+  weight = 405
+  url = "/blog/sounding_future/"
+  parent = "studio"
 
-    [[menu.main]]
-    name = "FAQ"
-    parent = "tools-osc"
-    weight = 407
-    url = "/blog/faq/"
-
-    [[menu.main]]
-    name = "Links"
-    parent = "tools-osc"
-    weight = 408
-    url = "/links/"
-
-  [[menu.main]]
+[[menu.main]]
   name = "Downloads"
   identifier = "downloads"
   weight = 450
   url = "/blog/downloads/"
-
-  [[menu.main]]
-  name = "About"
-  identifier = "about"
-  weight = 500
-  url = "/about/"
-
-  [[menu.footer]]
-  name = "Privacy Policy"
-  weight = 1
-  identifier = "Privacy Policy"
-  url = "https://www.iubenda.com/privacy-policy/70769495"
-
-  [[menu.footer]]
-  name = "Cookie Policy"
-  weight = 2
-  identifier = "Cookie Policy"
-  url = "https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
-
-  [[menu.footer]]
-  name = "Terms and Conditions"
-  weight = 3
-  identifier = "Terms and Conditions"
-  url = "/terms-and-conditions/"
 
 
 
@@ -253,3 +281,242 @@ series = "series"
 tag = "tags"
 year = "year"
 month = "month"
+
+# --- Deutsches Hauptmenü (ersetzt für DE das [menu.main] oben; Ziele mit /de/-Präfix) ---
+[[languages.de.menus.main]]
+  name = "Start"
+  identifier = "start"
+  weight = 50
+  url = "/de/start/"
+
+[[languages.de.menus.main]]
+  name = "Lernen"
+  identifier = "learn"
+  weight = 100
+  url = "/de/post/"
+
+[[languages.de.menus.main]]
+  name = "Ambisonics 101"
+  identifier = "learn-0"
+  weight = 100
+  url = "/de/ambisonics-101/"
+  parent = "learn"
+
+[[languages.de.menus.main]]
+  name = "Ambisonics-Formate"
+  identifier = "learn-1"
+  weight = 101
+  url = "/de/learn/ambisonics-formats/"
+  parent = "learn"
+
+[[languages.de.menus.main]]
+  name = "Alle Tutorials"
+  identifier = "learn-2"
+  weight = 102
+  url = "/de/post/"
+  parent = "learn"
+
+[[languages.de.menus.main]]
+  name = "Videos"
+  identifier = "learn-4"
+  weight = 104
+  url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
+  parent = "learn"
+
+[[languages.de.menus.main]]
+  name = "Tools"
+  identifier = "tools"
+  weight = 200
+  url = "/de/ecosystem/"
+
+[[languages.de.menus.main]]
+  name = "EcoSystem-Übersicht"
+  identifier = "tools-0"
+  weight = 200
+  url = "/de/ecosystem/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "Plugins (REAPER)"
+  identifier = "tools-1"
+  weight = 201
+  url = "/de/icst-ambisonics-plugins/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "Max-Tools"
+  identifier = "tools-2"
+  weight = 202
+  url = "/de/icst-ambisonics-tools/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "REAPER-Bundle"
+  identifier = "tools-3"
+  weight = 203
+  url = "/de/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "Animator"
+  identifier = "tools-4"
+  weight = 204
+  url = "/de/icst-ambisonics-plugins/11_animator/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "Animator Choreographer"
+  identifier = "tools-5"
+  weight = 205
+  url = "/de/icst-ambisonics-plugins/20_animator_choreographer/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "Motion Map"
+  identifier = "tools-6"
+  weight = 206
+  url = "/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "Doku"
+  identifier = "docs"
+  weight = 300
+  url = "/de/icst-ambisonics-plugins/"
+
+[[languages.de.menus.main]]
+  name = "Plugin-Doku"
+  identifier = "docs-0"
+  weight = 300
+  url = "/de/icst-ambisonics-plugins/"
+  parent = "docs"
+
+[[languages.de.menus.main]]
+  name = "OSC Syntax"
+  identifier = "docs-1"
+  weight = 301
+  url = "/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/"
+  parent = "docs"
+
+[[languages.de.menus.main]]
+  name = "Best Practices"
+  identifier = "docs-2"
+  weight = 302
+  url = "/de/icst-ambisonics-plugins/17_best_practices/"
+  parent = "docs"
+
+[[languages.de.menus.main]]
+  name = "FAQ"
+  identifier = "docs-3"
+  weight = 303
+  url = "/de/blog/faq/"
+  parent = "docs"
+
+[[languages.de.menus.main]]
+  name = "Links"
+  identifier = "docs-4"
+  weight = 304
+  url = "/de/links/"
+  parent = "docs"
+
+[[languages.de.menus.main]]
+  name = "Studio"
+  identifier = "studio"
+  weight = 400
+  url = "/de/blog/"
+
+[[languages.de.menus.main]]
+  name = "Resident-Leitfaden"
+  identifier = "studio-0"
+  weight = 400
+  url = "/de/for-residents/"
+  parent = "studio"
+
+[[languages.de.menus.main]]
+  name = "Residenzen"
+  identifier = "studio-1"
+  weight = 401
+  url = "/de/residenzen/"
+  parent = "studio"
+
+[[languages.de.menus.main]]
+  name = "Studio-Hub"
+  identifier = "studio-2"
+  weight = 402
+  url = "/de/blog/icst-composer-studio-blog/"
+  parent = "studio"
+
+[[languages.de.menus.main]]
+  name = "Support"
+  identifier = "studio-3"
+  weight = 403
+  url = "/de/blog/icst-kompositionsstudio-support/"
+  parent = "studio"
+
+[[languages.de.menus.main]]
+  name = "ASCOLTA"
+  identifier = "studio-4"
+  weight = 404
+  url = "/de/blog/ascolta/"
+  parent = "studio"
+
+[[languages.de.menus.main]]
+  name = "Hören"
+  identifier = "studio-5"
+  weight = 405
+  url = "/de/blog/sounding_future/"
+  parent = "studio"
+
+[[languages.de.menus.main]]
+  name = "Downloads"
+  identifier = "downloads"
+  weight = 450
+  url = "/de/blog/downloads/"
+
+[[menu.footer]]
+  name = "About"
+  identifier = "About"
+  weight = 0
+  url = "/about/"
+
+[[menu.footer]]
+  name = "Privacy Policy"
+  identifier = "Privacy Policy"
+  weight = 1
+  url = "https://www.iubenda.com/privacy-policy/70769495"
+
+[[menu.footer]]
+  name = "Cookie Policy"
+  identifier = "Cookie Policy"
+  weight = 2
+  url = "https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+
+[[menu.footer]]
+  name = "Terms and Conditions"
+  identifier = "Terms and Conditions"
+  weight = 3
+  url = "/terms-and-conditions/"
+
+[[languages.de.menus.footer]]
+  name = "Über"
+  identifier = "Über"
+  weight = 0
+  url = "/de/about/"
+
+[[languages.de.menus.footer]]
+  name = "Privacy Policy"
+  identifier = "Privacy Policy"
+  weight = 1
+  url = "https://www.iubenda.com/privacy-policy/70769495"
+
+[[languages.de.menus.footer]]
+  name = "Cookie Policy"
+  identifier = "Cookie Policy"
+  weight = 2
+  url = "https://www.iubenda.com/privacy-policy/70769495/cookie-policy"
+
+[[languages.de.menus.footer]]
+  name = "Terms and Conditions"
+  identifier = "Terms and Conditions"
+  weight = 3
+  url = "/terms-and-conditions/"
