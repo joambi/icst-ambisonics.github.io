@@ -466,7 +466,6 @@ For irregular speaker layouts (non-spherical, asymmetric), the **AllRADecoder** 
   <a class="wf-resource-link" href="/en/icst-ambisonics-plugins/17_best_practices/">Best Practices<strong>Setup rules, routing, monitoring, export</strong></a>
   <a class="wf-resource-link" href="/en/learn/ambisonics-formats/">Ambisonics Formats<strong>A-Format · B-Format · ambiX · FuMa · ACN/SN3D</strong></a>
   <a class="wf-resource-link" href="/en/icst-ambisonics-plugins/12_render_bformat/">Render B-Format<strong>Export guide for REAPER</strong></a>
-  <a class="wf-resource-link" href="/en/learn/working-with-ambisonics-workshop/">Advanced Workshop<strong>4-hour workshop: audit · recording · composition</strong></a>
   <a class="wf-resource-link" href="/en/icst-ambisonics-plugins/">ICST Plugins Docs<strong>Plugin documentation for REAPER and Max/MSP</strong></a>
   <a class="wf-resource-link" href="https://plugins.iem.at/">IEM Plugin Suite<strong>AllRADecoder · BinauralDecoder · further HOA tools</strong></a>
   <a class="wf-resource-link" href="https://cabbageaudio.com/">Cabbage Audio<strong>Csound as VST3/AU for algorithmic HOA composition</strong></a>
