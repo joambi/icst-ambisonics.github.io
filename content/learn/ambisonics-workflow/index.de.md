@@ -629,7 +629,7 @@ Wichtige Vorbereitung:
 - Latenz testen: OSC over UDP ist unbestätigt, kritische Nachrichten ggf. bestätigt senden.
 - Fallback: Automations-Lanes in REAPER als Backup wenn OSC ausfällt.
 
-→ Vollständige OSC-Syntax: [OSC Syntax für den ICST AmbiEncoder](/de/icst-ambisonics-plugins/osc-syntax/)
+→ Vollständige OSC-Syntax: [OSC Syntax für den ICST AmbiEncoder](/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 
 ### Irregular Arrays und AllRADecoder
 

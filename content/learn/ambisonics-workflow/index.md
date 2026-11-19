@@ -119,9 +119,9 @@ tags:
     <span class="wf-badge">Csound optional</span>
   </div>
   <div class="wf-meta">
-    <span>🎛️ <a href="/en/icst-ambisonics-plugins/17_best_practices/">Prerequisite: Best Practices</a></span>
-    <span>📐 <a href="/en/learn/ambisonics-formats/">Ambisonics Formats</a></span>
-    <span>🔧 <a href="/en/icst-ambisonics-plugins/">ICST Plugin Documentation</a></span>
+    <span>🎛️ <a href="/icst-ambisonics-plugins/17_best_practices/">Prerequisite: Best Practices</a></span>
+    <span>📐 <a href="/learn/ambisonics-formats/">Ambisonics Formats</a></span>
+    <span>🔧 <a href="/icst-ambisonics-plugins/">ICST Plugin Documentation</a></span>
   </div>
 </div>
 
@@ -432,7 +432,7 @@ Key preparation:
 - Test latency: OSC over UDP is unconfirmed delivery; for critical messages, consider confirmed transmission.
 - Fallback: REAPER automation lanes as backup if OSC fails.
 
-→ Full OSC syntax reference: [OSC Syntax for the ICST AmbiEncoder](/en/icst-ambisonics-plugins/osc-syntax/)
+→ Full OSC syntax reference: [OSC Syntax for the ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 
 ### Irregular Arrays and AllRADecoder
 
@@ -463,10 +463,10 @@ For irregular speaker layouts (non-spherical, asymmetric), the **AllRADecoder** 
 ## Further Resources
 
 <div class="wf-resources">
-  <a class="wf-resource-link" href="/en/icst-ambisonics-plugins/17_best_practices/">Best Practices<strong>Setup rules, routing, monitoring, export</strong></a>
-  <a class="wf-resource-link" href="/en/learn/ambisonics-formats/">Ambisonics Formats<strong>A-Format · B-Format · ambiX · FuMa · ACN/SN3D</strong></a>
-  <a class="wf-resource-link" href="/en/icst-ambisonics-plugins/12_render_bformat/">Render B-Format<strong>Export guide for REAPER</strong></a>
-  <a class="wf-resource-link" href="/en/icst-ambisonics-plugins/">ICST Plugins Docs<strong>Plugin documentation for REAPER and Max/MSP</strong></a>
+  <a class="wf-resource-link" href="/icst-ambisonics-plugins/17_best_practices/">Best Practices<strong>Setup rules, routing, monitoring, export</strong></a>
+  <a class="wf-resource-link" href="/learn/ambisonics-formats/">Ambisonics Formats<strong>A-Format · B-Format · ambiX · FuMa · ACN/SN3D</strong></a>
+  <a class="wf-resource-link" href="/icst-ambisonics-plugins/12_render_bformat/">Render B-Format<strong>Export guide for REAPER</strong></a>
+  <a class="wf-resource-link" href="/icst-ambisonics-plugins/">ICST Plugins Docs<strong>Plugin documentation for REAPER and Max/MSP</strong></a>
   <a class="wf-resource-link" href="https://plugins.iem.at/">IEM Plugin Suite<strong>AllRADecoder · BinauralDecoder · further HOA tools</strong></a>
   <a class="wf-resource-link" href="https://cabbageaudio.com/">Cabbage Audio<strong>Csound as VST3/AU for algorithmic HOA composition</strong></a>
   <a class="wf-resource-link" href="https://www.openairlib.net/">OpenAIR / SOFA-HRTF<strong>HRTF files for binaural renderers</strong></a>

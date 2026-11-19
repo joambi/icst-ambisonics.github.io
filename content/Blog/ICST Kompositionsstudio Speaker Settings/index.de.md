@@ -44,7 +44,7 @@ Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.
     <span class="hero__link">Grau = MO-2</span>
     <span class="hero__link">Rot = MO-2 (hinter der Leinwand)</span>
   </div>
-  <img src="2023-04-Stereo.jpg" alt="Stereo setting">
+  <img src="/blog/icst-kompositionsstudio-speaker-settings/2023-04-Stereo.jpg" alt="Stereo setting">
 </details>
 
 <details class="home-accordion" id="dolby-surround">
@@ -53,7 +53,7 @@ Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.
     <span class="hero__link hero__link--primary">5.1 Surround</span>
     <span class="hero__link">7.1.4 Atmos</span>
   </div>
-  <img src="2023-04-Dolby.jpg" alt="Dolby surround setting">
+  <img src="/blog/icst-kompositionsstudio-speaker-settings/2023-04-Dolby.jpg" alt="Dolby surround setting">
 </details>
 
 <details class="home-accordion" id="octogon--ambisonics">
@@ -62,7 +62,7 @@ Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.
     <span class="hero__link hero__link--primary">Ring 1-8 (im Uhrzeigersinn) & Ambisonics (2D)</span>
     <span class="hero__link">Ambisonics Full (17 Lautsprecher)</span>
   </div>
-  <img src="2023-04-Okto-Ambi.jpg" alt="Octogon and Ambisonics setting">
+  <img src="/blog/icst-kompositionsstudio-speaker-settings/2023-04-Okto-Ambi.jpg" alt="Octogon and Ambisonics setting">
 </details>
 
 <details class="home-accordion" id="quadrophonie">
@@ -71,7 +71,7 @@ Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.
     <span class="hero__link hero__link--primary">Quadro (diagonal)</span>
     <span class="hero__link">Quadro (orthogonal)</span>
   </div>
-  <img src="2023-04-Quadro.jpg" alt="Quadrophonie setting">
+  <img src="/blog/icst-kompositionsstudio-speaker-settings/2023-04-Quadro.jpg" alt="Quadrophonie setting">
 </details>
 
 <details class="home-accordion" id="all-speakers">
@@ -79,7 +79,7 @@ Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.
   <div class="home-accordion__actions">
     <span class="hero__link hero__link--primary">Eigene Lautsprecher-Routings erstellen</span>
   </div>
-  <img src="2023-04-All.jpg" alt="All speakers setting">
+  <img src="/blog/icst-kompositionsstudio-speaker-settings/2023-04-All.jpg" alt="All speakers setting">
 </details>
 
 ### Weitere Links

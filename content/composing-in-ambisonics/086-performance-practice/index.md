@@ -44,7 +44,7 @@ A minimal rider for an Ambisonics fixed-media piece includes:
 
 ---
 
-A rider template can be adapted from the [ICST Ambisonics documentation](/ICST-Ambisonics-Plugins/) or sent as a simple PDF. A clear rider prevents the most common concert failures before they happen.
+A rider template can be adapted from the [ICST Ambisonics documentation](/icst-ambisonics-plugins/) or sent as a simple PDF. A clear rider prevents the most common concert failures before they happen.
 
 ## Pre-Concert Communication
 

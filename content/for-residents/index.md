@@ -48,7 +48,7 @@ Planning a residency or studio visit at the ICST Composition Studio? Follow thes
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Studio terms of use</p>
 <p class="onboarding-step__desc">Read the studio usage guidelines before your first session — booking procedures, equipment handling, session hours, and responsibilities. Required reading for all residents and visitors.</p>
-<a class="hero__link hero__link--primary" href="/blog/studio-terms-of-use/">Terms of Use →</a>
+<a class="hero__link hero__link--primary" href="/blog/terms-of-use/">Terms of Use →</a>
 </div>
 </li>
 </ol>
