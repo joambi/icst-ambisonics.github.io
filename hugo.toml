@@ -118,6 +118,13 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   parent = "learn"
 
 [[menu.main]]
+  name = "Composing Guide"
+  identifier = "learn-3"
+  weight = 103
+  url = "/composing-in-ambisonics/"
+  parent = "learn"
+
+[[menu.main]]
   name = "Videos"
   identifier = "learn-4"
   weight = 104
@@ -314,6 +321,13 @@ month = "month"
   identifier = "learn-2"
   weight = 102
   url = "/de/post/"
+  parent = "learn"
+
+[[languages.de.menus.main]]
+  name = "Kompositions-Guide"
+  identifier = "learn-3"
+  weight = 103
+  url = "/de/composing-in-ambisonics/"
   parent = "learn"
 
 [[languages.de.menus.main]]
