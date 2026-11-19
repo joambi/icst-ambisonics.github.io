@@ -45,7 +45,7 @@ Ein minimaler Rider für ein Ambisonics-Fixed-Media-Stück umfasst:
 
 ---
 
-Eine Rider-Vorlage kann aus der [ICST Ambisonics Dokumentation](/de/ICST-Ambisonics-Plugins/) übernommen oder als einfaches PDF verschickt werden. Ein klarer Rider verhindert die häufigsten Konzertprobleme, bevor sie entstehen.
+Eine Rider-Vorlage kann aus der [ICST Ambisonics Dokumentation](/de/icst-ambisonics-plugins/) übernommen oder als einfaches PDF verschickt werden. Ein klarer Rider verhindert die häufigsten Konzertprobleme, bevor sie entstehen.
 
 ## Vorabkommunikation
 

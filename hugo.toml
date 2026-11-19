@@ -120,12 +120,6 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
     weight = 104
     url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 
-    [[menu.main]]
-    name = "Workshop"
-    parent = "tutorials"
-    weight = 105
-    url = "/learn/working-with-ambisonics-workshop/"
-
   [[menu.main]]
   name = "Studio"
   identifier = "studio"

@@ -47,7 +47,7 @@ Du planst eine Residency oder einen Studiobesuch im ICST Kompositionsstudio? Fol
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Nutzungsbedingungen des Studios</p>
 <p class="onboarding-step__desc">Die Nutzungsrichtlinien vor der ersten Session lesen — Buchungsverfahren, Umgang mit Equipment, Studiozeiten und Verantwortlichkeiten. Pflichtlektüre für alle Residents und Gäste.</p>
-<a class="hero__link hero__link--primary" href="/de/blog/studio-terms-of-use/">Nutzungsbedingungen →</a>
+<a class="hero__link hero__link--primary" href="/de/blog/terms-of-use/">Nutzungsbedingungen →</a>
 </div>
 </li>
 </ol>

@@ -114,7 +114,7 @@ hideDate: true
 </style>
 
 <div class="artist-card">
-  <img src="nandele_01.png" alt="Nandele Maguni">
+  <img src="/residenzen/icst-studio-residences-2025/nandele_01.png" alt="Nandele Maguni">
   <div class="artist-card__body">
     <div class="artist-card__name">Nandele Maguni</div>
     <span class="artist-card__period">16. Jun – 06. Jul 2025</span>
@@ -126,7 +126,7 @@ hideDate: true
 </div>
 
 <div class="artist-card">
-  <img src="Youngjae_Cho.jpg" alt="Youngjae Cho">
+  <img src="/residenzen/icst-studio-residences-2025/Youngjae_Cho.jpg" alt="Youngjae Cho">
   <div class="artist-card__body">
     <div class="artist-card__name">Youngjae Cho</div>
     <span class="artist-card__period">07. Jul – 27. Jul 2025</span>
@@ -139,7 +139,7 @@ hideDate: true
 </div>
 
 <div class="artist-card">
-  <img src="Lucas_Daniel.jpg" alt="Dániel Péter Biró">
+  <img src="/residenzen/icst-studio-residences-2025/Lucas_Daniel.jpg" alt="Dániel Péter Biró">
   <div class="artist-card__body">
     <div class="artist-card__name">Dániel Péter Biró</div>
     <span class="artist-card__period">18. Aug – 07. Sep 2025</span>
@@ -151,7 +151,7 @@ hideDate: true
 </div>
 
 <div class="artist-card">
-  <img src="GOPR4281.jpg" alt="Ana Gonzalez Gamboa">
+  <img src="/residenzen/icst-studio-residences-2025/GOPR4281.jpg" alt="Ana Gonzalez Gamboa">
   <div class="artist-card__body">
     <div class="artist-card__name">Ana Gonzalez Gamboa <span class="artist-card__badge">Prix CIME 2025</span></div>
     <span class="artist-card__period">08. Sep – 16. Sep 2025</span>

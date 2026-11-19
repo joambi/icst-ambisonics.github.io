@@ -26,7 +26,7 @@ tool: ["AmbiEncoder", "Lua"]
 **Script:** `ICST_AmbiEncoder_64_CircleSelected_Presets.lua`
 **Funktion:** Punkte des ICST AmbiEncoder_64 Plugins grafisch auswählen, im Kreis anordnen, bewegen (Rotation/RandomWalk) und als Preset speichern/laden.
 
-<video autoplay muted loop playsinline preload="metadata" poster="Circle_Selected-poster.jpg" aria-label="circleselected" style="max-width:100%;height:auto"><source src="Circle_Selected.mp4" type="video/mp4"></video>
+<video autoplay muted loop playsinline preload="metadata" poster="/post/circle-selected/Circle_Selected-poster.jpg" aria-label="circleselected" style="max-width:100%;height:auto"><source src="/post/circle-selected/Circle_Selected.mp4" type="video/mp4"></video>
 
 ---
 
