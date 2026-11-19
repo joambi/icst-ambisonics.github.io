@@ -761,7 +761,7 @@ A guided discussion to consolidate the workshop experience. Not a lecture — pa
 
 <div class="ws-resources">
   <a class="ws-resource-link ws-resource-link--featured" href="https://e.pcloud.link/publink/show?code=XZAeJrZH78kTyE16GyaO0aFzw3kdhpvNeYk" target="_blank" rel="noopener">⬇ ICST Workshop — Large Download (pCloud)<strong>Pre-configured Reaper folder (drag in Reaper.app → ready to go) + Workshop papers</strong></a>
-  <a class="ws-resource-link ws-resource-link--featured" href="https://github.com/joambi/Ambisonics-Workshop/releases/latest/download/ICST_Ambisonics_Workshop_2026.zip" download>⬇ ICST_Ambisonics_Workshop_2026.zip<strong>Complete workshop package — Reaper session, Lua scripts, Csound, MaxMSP (6.8 MB)</strong></a>
+  <a class="ws-resource-link ws-resource-link--featured" href="https://github.com/joambi/Ambisonics-Workshop/releases/download/v2026.1/ICST_Ambisonics_Workshop_2026.zip" download>⬇ ICST_Ambisonics_Workshop_2026.zip<strong>Complete workshop package — Reaper session, Lua scripts, Csound, MaxMSP (6.8 MB)</strong></a>
   <a class="ws-resource-link" href="/downloads/zylia-recording-example/zylia_recording_example.RPP" download>zylia_recording_example.RPP<strong>Pre-configured Reaper session for Zylia ZM-1</strong></a>
   <a class="ws-resource-link" href="/downloads/ICST_Ambisonics_Workshop.docx" download>Workshop Document (.docx)<strong>Complete workshop document</strong></a>
   <a class="ws-resource-link" href="/downloads/lua-scripts/icst_ambi_encoding_voice.lua" download>icst_ambi_encoding_voice.lua<strong>Encoding: voice at Az −45°, El +20°</strong></a>
