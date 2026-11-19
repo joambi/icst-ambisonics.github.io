@@ -1,1 +1,0 @@
-If you want MaCCLane to propose you some templates in the popup menu of the '+' button, save your templates here.
