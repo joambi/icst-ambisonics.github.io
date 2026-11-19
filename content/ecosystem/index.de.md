@@ -61,4 +61,4 @@ Stand 11.11.2026. Komponenten mit dem Status **Beta** sind zur Evaluation freige
 | [SWS](https://www.sws-extension.org) | Bundle-Skripte | MIT | Auf Windows selbst installieren |
 | [js_ReaScriptAPI](https://github.com/juliansader/ReaExtensions) | Bundle-Skripte | MIT | Auf Windows selbst installieren |
 | [ReaPack](https://reapack.com) | Bundle-Skripte | LGPL-3.0 | Auf Windows selbst installieren |
-| Python 3 | Motion Map, Kristall Motion Map | PSF | Nur für die OSC-Vorschau |
+| [Python 3](https://www.python.org/) | Motion Map, Kristall Motion Map | PSF | Nur für die OSC-Vorschau |
