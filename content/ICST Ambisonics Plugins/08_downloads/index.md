@@ -43,14 +43,14 @@ Standalone Lua scripts and JSFX tools for spatial motion workflows in REAPER.
 
 Step-based 2D/3D motion shapes for AmbiEncoder sources.
 
-- [Download JS_AmbiEncoder64_Motion_Map_GUI.lua](/downloads/lua-scripts/JS_AmbiEncoder64_Motion_Map_GUI.lua)
+- [Download ICST Ambi Motion Map Bundle (v2.4.5)](/downloads/ICST_Ambi_Motion_Map_Bundle.zip): GUI script and writer script, keep both in the same folder
 - [User Guide](/icst-ambisonics-plugins/15_icst_ambi_motion_map/)
 
 ## ICST Ambi REAPER Bundle
 
 Portable, preconfigured REAPER folder with toolbar, Lua scripts, ICST and IEM VST3 plugins and docs. REAPER itself is not included. Evaluation beta: macOS complete, Windows beta untested, unsigned.
 
-- [Release 1.1.3 on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.3): pkg and ZIP (macOS), scripts-only ZIP (for setting up on Windows)
+- [Release 1.1.3 on GitHub](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.3): ZIP (macOS), scripts-only ZIP (for setting up on Windows)
 - [Files, checksums, installation and first run](/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/#download)
 
 ---
