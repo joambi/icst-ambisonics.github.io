@@ -21,7 +21,7 @@ This setup chapter belongs to [Motion Mapping](/icst-ambisonics-plugins/15_icst_
 |-----------|-------------|-----------------|
 | REAPER v6+ | Running the scripts | [reaper.fm](https://reaper.fm) |
 | ICST AmbiEncoder_64 | Writing automation | [Downloads](/icst-ambisonics-plugins/08_downloads/) |
-| Motion Map Bundle | The scripts themselves | [Download below](#download-the-bundle) |
+| Motion Map Bundle | The scripts themselves | [Download below](#1-download-the-bundle) |
 | Python 3 | Live OSC preview only | Pre-installed on macOS 12+; [python.org](https://www.python.org/downloads/) on Windows |
 
 {{< notice warning >}}

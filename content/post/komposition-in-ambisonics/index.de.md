@@ -5,9 +5,6 @@ date: 2026-05-11T00:00:00+02:00
 year: 2026
 month: 2026-05
 tags: ["komposition", "performance", "workflow", "ambisonics", "raum", "live"]
-categories:
-  - ICST Ambisonics Workshop
-  - Composition
 difficulty: "intermediate"
 post_kind: "background"
 ---
