@@ -13,8 +13,8 @@
   <nav class="nav" aria-label="{{ if eq .Site.Language.Lang "de" }}Hauptmenü{{ else }}Main{{ end }}">
     <ul class="nav__list" id="navMenu">
       {{ $url := .RelPermalink }}
-      {{- /* Menu labels are English and link to English pages; mark them so DE screen readers use the right voice */ -}}
-      {{ $ml := "" }}{{ if eq .Site.Language.Lang "de" }}{{ $ml = `lang="en"` }}{{ end }}
+      {{- /* DE uses its own menu (languages.de.menus.main) with German labels; no lang override needed */ -}}
+      {{ $ml := "" }}
       {{ range $menuId, $menuItem := .Site.Menus.main }}
         {{ $active := eq $url $menuItem.URL }}
         {{ if $menuItem.HasChildren }}
