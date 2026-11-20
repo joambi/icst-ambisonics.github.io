@@ -76,10 +76,9 @@ New in v4.0.0: [What's New](/icst-ambisonics-plugins/00_new/) · [GitHub Release
   </section>
   <section class="home-card">
     <h4>🎼 Composing in Ambisonics</h4>
-    <p>Spatial thinking for composers — analytical listening, movement and depth as compositional parameters, studio workflows.</p>
+    <p>Spatial thinking for composers — analytical listening, movement and depth as compositional parameters, studio workflows. <em>Composing Guide coming soon.</em></p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/composing-in-ambisonics/">Composing Guide</a>
-      <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
+      <a class="hero__link hero__link--primary" href="/blog/ascolta-listening-guide/">Listening Guide</a>
     </div>
   </section>
 </div>

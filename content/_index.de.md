@@ -75,10 +75,9 @@ Neu in v4.0.0: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releas
   </section>
   <section class="home-card">
     <h4>🎼 Komponieren in Ambisonics</h4>
-    <p>Räumliches Denken für Komponist:innen — analytisches Hören, Bewegung und Tiefe als kompositorische Parameter, Studiopraxis.</p>
+    <p>Räumliches Denken für Komponist:innen — analytisches Hören, Bewegung und Tiefe als kompositorische Parameter, Studiopraxis. <em>Kompositions-Guide in Vorbereitung.</em></p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/de/composing-in-ambisonics/">Kompositions-Guide</a>
-      <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
+      <a class="hero__link hero__link--primary" href="/blog/ascolta-listening-guide/">Listening Guide</a>
     </div>
   </section>
 </div>
