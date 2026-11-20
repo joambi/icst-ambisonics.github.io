@@ -8,7 +8,7 @@ docs_nav_title: "For Composers"
 menu:
   main:
     name: "Composing Guide"
-    identifier: learn-3
+    identifier: learn-composing
     weight: 103
     parent: learn
 cascade:
