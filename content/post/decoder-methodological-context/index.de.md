@@ -132,3 +132,4 @@ In der Praxis heisst das: den **B-Format Master** stabil halten, Decoder-Einstel
 - [ICST MultiDecoder](/de/icst-ambisonics-plugins/09_icst_multidecoder/)
 - [Koordinatensysteme: XYZ und AED im Vergleich](/de/post/xyz-vs-aed-koordinatensysteme/)
 - [Skalierung und Laufzeitkompensation](/de/post/decoder-skalierung-laufzeitkompensation/)
+- [Geschichte und Anwendungen des Ambisonics Decoders](/de/blog/decoder-geschichte-und-anwendungen/)

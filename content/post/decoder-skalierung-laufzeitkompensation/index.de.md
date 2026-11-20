@@ -167,3 +167,4 @@ Die exportierte TXT-Datei enthält alle Lautsprecherpositionen im AED-Format und
 - [ICST MultiDecoder](/de/icst-ambisonics-plugins/09_icst_multidecoder/)
 - [Der Filter-Tab – Praxisbeispiele und Anwendungsfälle](/de/post/decoder-filter-praxisbeispiele/)
 - [Best Practices](/de/icst-ambisonics-plugins/17_best_practices/)
+- [Geschichte und Anwendungen des Ambisonics Decoders](/de/blog/decoder-geschichte-und-anwendungen/)

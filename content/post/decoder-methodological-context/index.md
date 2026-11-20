@@ -133,3 +133,4 @@ In practice, this means: keep the **B-format Master** stable, choose decoder set
 - [ICST MultiDecoder](/icst-ambisonics-plugins/09_icst_multidecoder/)
 - [XYZ and AED – Comparing coordinate systems](/post/xyz-vs-aed-koordinatensysteme/)
 - [Scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)
+- [History and applications of the Ambisonics decoder](/blog/decoder-geschichte-und-anwendungen/)
