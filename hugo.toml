@@ -135,7 +135,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   name = "Videos"
   identifier = "learn-4"
   weight = 105
-  url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
+  url = "/learn/videos/"
   parent = "learn"
 
 [[menu.main]]
@@ -216,21 +216,35 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 [[menu.main]]
   name = "Best Practices"
   identifier = "docs-2"
-  weight = 302
+  weight = 304
   url = "/icst-ambisonics-plugins/17_best_practices/"
   parent = "docs"
 
 [[menu.main]]
   name = "FAQ"
   identifier = "docs-3"
-  weight = 303
+  weight = 305
   url = "/blog/faq/"
+  parent = "docs"
+
+[[menu.main]]
+  name = "OSC and Control"
+  identifier = "docs-5"
+  weight = 302
+  url = "/reference/osc-and-control/"
+  parent = "docs"
+
+[[menu.main]]
+  name = "Decoder and Monitoring"
+  identifier = "docs-6"
+  weight = 303
+  url = "/reference/decoder-and-monitoring/"
   parent = "docs"
 
 [[menu.main]]
   name = "Links"
   identifier = "docs-4"
-  weight = 304
+  weight = 306
   url = "/links/"
   parent = "docs"
 
@@ -271,7 +285,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 [[menu.main]]
   name = "Downloads"
   identifier = "downloads"
-  weight = 305
+  weight = 307
   url = "/blog/downloads/"
   parent = "docs"
 
@@ -362,7 +376,7 @@ month = "month"
   name = "Videos"
   identifier = "learn-4"
   weight = 105
-  url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
+  url = "/de/learn/videos/"
   parent = "learn"
 
 [[languages.de.menus.main]]
@@ -443,21 +457,35 @@ month = "month"
 [[languages.de.menus.main]]
   name = "Best Practices"
   identifier = "docs-2"
-  weight = 302
+  weight = 304
   url = "/de/icst-ambisonics-plugins/17_best_practices/"
   parent = "docs"
 
 [[languages.de.menus.main]]
   name = "FAQ"
   identifier = "docs-3"
-  weight = 303
+  weight = 305
   url = "/de/blog/faq/"
+  parent = "docs"
+
+[[languages.de.menus.main]]
+  name = "OSC und Steuerung"
+  identifier = "docs-5"
+  weight = 302
+  url = "/de/reference/osc-and-control/"
+  parent = "docs"
+
+[[languages.de.menus.main]]
+  name = "Decoder und Monitoring"
+  identifier = "docs-6"
+  weight = 303
+  url = "/de/reference/decoder-and-monitoring/"
   parent = "docs"
 
 [[languages.de.menus.main]]
   name = "Links"
   identifier = "docs-4"
-  weight = 304
+  weight = 306
   url = "/de/links/"
   parent = "docs"
 
@@ -498,7 +526,7 @@ month = "month"
 [[languages.de.menus.main]]
   name = "Downloads"
   identifier = "downloads"
-  weight = 305
+  weight = 307
   url = "/de/blog/downloads/"
   parent = "docs"
 
