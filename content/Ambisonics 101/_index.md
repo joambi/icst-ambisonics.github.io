@@ -41,7 +41,7 @@ layout: single
 .fig101 figcaption{font-size:1.3rem;opacity:.8;margin-top:.6rem}
 .post__content table{width:100%;font-size:1.45rem}
 .post__content table th,.post__content table td{padding:.9rem 1.2rem;vertical-align:top}
-.post__content div[style*="56.25%"]{max-width:560px;margin-left:0;margin-right:auto}
+.post__content div[style*="56.25%"]{max-width:560px;width:100%;margin-left:0;margin-right:auto;aspect-ratio:16/9;height:auto !important;padding-bottom:0 !important}
 </style>
 
 <div class="toc-card">
