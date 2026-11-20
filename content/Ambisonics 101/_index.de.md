@@ -53,7 +53,7 @@ layout: single
     <li><a href="#immersive-vs-atmos">Wie unterscheidet sich Ambisonics von Immersive Audio, Dolby Atmos und Spatial Audio?</a></li>
     <li><a href="#einstieg-am-icst">Einstieg am ICST</a></li>
     <li><a href="#ambisonics-mikrofone">Ambisonische Mikrofone — Einstieg</a></li>
-    <li><a href="#begriffssammlung-ambisonics">Begriffssammlung Ambisonics (Kurzreferenz)</a></li>
+    <li><a href="/de/ambisonics-101/glossary/">Begriffssammlung Ambisonics (eigene Seite)</a></li>
   </ol>
 </div>
 
@@ -70,7 +70,9 @@ Zwei kurze Hörbeispiele:
 {{< youtube LKTdCq6AhDI >}}
 
 <a id="was-ist-ambisonics"></a>
-## 2. [Was ist Ambisonics?](https://de.wikipedia.org/wiki/Ambisonics)
+## 2. Was ist Ambisonics?
+
+Weiterlesen: [de.wikipedia.org](https://de.wikipedia.org/wiki/Ambisonics)
 Ambisonics ist eine formatagnostische Methode, um ein räumliches 3D-Klangfeld zu beschreiben. Statt direkt für ein festes Lautsprecher-Layout zu mischen, arbeitet man mit einer räumlichen Repräsentation, die später für unterschiedliche Wiedergabesysteme gerendert werden kann.
 
 <a id="ambisonics-vs-stereo"></a>
@@ -91,7 +93,9 @@ Ambisonics verfolgt einen anderen Ansatz. Statt direkt für ein Lautsprecher-Lay
 **Wann ist Stereo die bessere Wahl?** Für die meisten Musikveröffentlichungen, Podcasts und Rundfunkanwendungen bleibt Stereo der Standard — es ist mit jedem Wiedergabesystem kompatibel und erfordert keine speziellen Werkzeuge. Ambisonics lohnt sich, wenn die räumliche Dimension des Klangs künstlerisch oder technisch entscheidend ist, oder wenn man eine einzige Master-Datei benötigt, die verschiedene Wiedergabekontexte bedienen soll.
 
 <a id="was-ist-b-format"></a>
-## 4. [Was ist B-Format?](https://ambisonic.info/ambisonics/channels.html)
+## 4. Was ist B-Format?
+
+Weiterlesen: [ambisonic.info](https://ambisonic.info/ambisonics/channels.html)
 
 Das B-Format ist das zentrale Signalformat von Ambisonics und enthält die räumlichen Informationen. Klangquellen werden ins B-Format encodiert und anschliessend für ein Ziel-Setup dekodiert, etwa für Kopfhörer, Stereo oder verschiedene Lautsprecher-Arrays.
 
@@ -176,7 +180,9 @@ Von der Quelle zum Lautsprecher — so funktioniert Ambisonics in REAPER mit den
 </div>
 
 <a id="typische-setups"></a>
-## 6. [Typische Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
+## 6. Typische Setups
+
+Weiterlesen: [en.wikipedia.org](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
 Typische Setups reichen von kleinen Studio-Ringen über Höhenebenen bis hin zu individuellen Arrays im Kompositionsstudio. Dasselbe Ambisonics-Material kann durch Dekodierung an diese verschiedenen Setups angepasst werden.
 
 <a id="kopfhoerer-vs-lautsprecher"></a>
@@ -250,52 +256,10 @@ Einige Mikrofone (z. B. der Zoom H3-VR) übernehmen dies intern und geben B-Form
 Jede B-Format-Aufnahme — ob von einem Mikrofon erster Ordnung oder [HOA](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics) — kann direkt in eine REAPER-Session geladen und mit dem ICST AmbiDecoder dekodiert werden. Bei HOA-Aufnahmen muss die Ambisonics-Ordnung im Decoder mit der Aufnahmeordnung übereinstimmen.
 
 ---
-<a id="begriffssammlung-ambisonics"></a>
-## 11. Begriffssammlung Ambisonics (Kurzreferenz)
-
-- <a id="gl-a-format"></a>**A-Format** — Rohsignal eines tetraedrischen Ambisonics-Mikrofons: vier Kapselsignale in tetraedrischer Anordnung. Muss vor der Verwendung in B-Format enkodiert werden.
-  → [Wikipedia: Ambisonics](https://de.wikipedia.org/wiki/Ambisonics)
-
-- <a id="gl-b-format"></a>**B-Format** — Das Ambisonics-Trägersignal: kodiert das räumliche Klangfeld als Kugelflächenfunktionen. Erste Ordnung = 4 Kanäle (W, X, Y, Z); siebte Ordnung = 64 Kanäle.
-  → [Wikipedia: Ambisonics](https://de.wikipedia.org/wiki/Ambisonics) | [ICST Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
-
-- <a id="gl-ambix"></a>**ambiX** — Standardisiertes Ambisonics-Dateiformat (ACN-Kanalreihenfolge, SN3D-Normierung); De-facto-Standard für HOA-Austausch und -Archivierung.
-  → [ambiX Spezifikation (IEM)](https://ambisonics.iem.at/proceedings-of-the-ambisonics-symposium-2011/ambix-a-suggested-ambisonics-format)
-
-- <a id="gl-order"></a>**Ambisonics-Ordnung** — Räumliche Auflösungsstufe: 1st order = 4 Kanäle, 3rd = 16, 7th = 64. Höhere Ordnung bedeutet präzisere Lokalisation und mehr Kanäle.
-  → [Wikipedia: Higher-order Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics) | [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
-
-- <a id="gl-encoder"></a>**Encoder** — Wandelt eine Mono-/Stereo-Quelle mit Positionsdaten (Azimut, Elevation, Distanz) in B-Format um.
-  → [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
-
-- <a id="gl-decoder"></a>**Decoder** — Rendert B-Format auf ein Zielsystem: Lautsprecher-Array oder Binaural.
-  → [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
-
-- <a id="gl-channel-count"></a>**Channel Count** — Anzahl der Kanäle im Ambisonics-Signalpfad; muss im gesamten Routing konsistent bleiben.
-  → [ICST Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
-
-- <a id="gl-speaker-layout"></a>**Speaker Layout** — Physische Lautsprechergeometrie, auf die der Decoder das B-Format rendert.
-  → [Wikipedia: Ambisonic reproduction systems](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
-
-- <a id="gl-binaural"></a>**Binaural / HRTF** — Kopfhörer-Rendering via Head-Related Transfer Functions (HRTFs): simuliert räumliche Richtungswahrnehmung ohne Lautsprecher. Ermöglicht Ambisonics-Abhören auf jedem Kopfhörer.
-  → [Wikipedia: Binauraltechnik](https://de.wikipedia.org/wiki/Binauraltechnik) | [Wikipedia: HRTF](https://de.wikipedia.org/wiki/Head-Related_Transfer_Function)
-
-- <a id="gl-dolby-atmos"></a>**Dolby Atmos** — Objektbasiertes 3D-Audioformat: Klangquellen werden als Audio-Objekte mit Positions-Metadaten gespeichert; ein lizenzierter Renderer platziert sie im Zielsystem (Kino, Heimkino, Streaming-Dienste).
-  → [dolby.com](https://www.dolby.com/technologies/dolby-atmos/) | [Wikipedia: Dolby Atmos](https://de.wikipedia.org/wiki/Dolby_Atmos)
-
-- <a id="gl-osc"></a>**OSC (Open Sound Control)** — Netzwerkprotokoll (UDP/IP) zur Echtzeitsteuerung räumlicher Parameter.
-  → [opensoundcontrol.stanford.edu](https://opensoundcontrol.stanford.edu/) | [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
-
-- <a id="gl-yaw"></a>**Yaw / Pitch / Roll** — Rotationsachsen im 3D-Raum: Yaw = horizontal (links/rechts), Pitch = vertikal (oben/unten), Roll = Neigung.
-  → [Wikipedia: Eulersche Winkel](https://de.wikipedia.org/wiki/Eulersche_Winkel)
-
-- <a id="gl-azimuth"></a>**Azimut / Elevation** — Polarkoordinaten zur Beschreibung von Quellrichtungen: Azimut = horizontaler Winkel (0°–360°), Elevation = vertikaler Winkel (−90° bis +90°).
-  → [Wikipedia: Horizontalkoordinatensystem](https://de.wikipedia.org/wiki/Horizontalkoordinatensystem)
-
----
 
 Passende nächste Artikel:
 - [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
+- [Ambisonics-Begriffssammlung](/de/ambisonics-101/glossary/)
 - [OSC-Syntax für den ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 - [Audio Brewers, Beginner: Ambisonics Made Simple](https://www.audiobrewers.com/faq/Blog%20Post%20Title%20One-3zaa9-9fsz6-j2ed5-dj7rh) (extern): dieselben Grundlagen aus Produzentensicht
 - [Audio Brewers, Intermediate: Understanding Ambisonics](https://www.audiobrewers.com/faq/intermediate-understanding-ambisonics) (extern): Kugelflächenfunktionen, Ordnung, ambiX vs. FuMa

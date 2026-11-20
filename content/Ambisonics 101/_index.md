@@ -52,7 +52,7 @@ layout: single
     <li><a href="#immersive-vs-atmos">How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?</a></li>
     <li><a href="#where-to-start-at-icst">Where To Start at ICST</a></li>
     <li><a href="#ambisonic-microphones">Ambisonic Microphones — A Practical Introduction</a></li>
-    <li><a href="#ambisonics-glossary">Ambisonics Glossary (Quick Reference)</a></li>
+    <li><a href="/ambisonics-101/glossary/">Ambisonics Glossary (separate page)</a></li>
   </ol>
 </div>
 
@@ -69,7 +69,9 @@ Two short listening examples:
 {{< youtube LKTdCq6AhDI >}}
 
 <a id="what-is-ambisonics"></a>
-## 2. [What Is Ambisonics?](https://en.wikipedia.org/wiki/Ambisonics)
+## 2. What Is Ambisonics?
+
+Further reading: [en.wikipedia.org](https://en.wikipedia.org/wiki/Ambisonics)
 Ambisonics is a format-agnostic method for describing a spatial 3D sound field. Instead of mixing directly for a fixed loudspeaker layout, you work with a spatial representation that can later be rendered for different playback systems.
 
 <a id="ambisonics-vs-stereo"></a>
@@ -90,7 +92,9 @@ Ambisonics takes a different approach. Instead of mixing directly for a speaker 
 **When does stereo make more sense?** For most music distribution, podcasts, and broadcast, stereo remains the standard — it is compatible with every playback system and requires no special tools. Ambisonics pays off when the spatial dimension of sound matters artistically or technically, or when you need a single master file that can serve multiple playback contexts.
 
 <a id="what-is-b-format"></a>
-## 4. [What Is B-Format?](https://ambisonic.info/ambisonics/channels.html)
+## 4. What Is B-Format?
+
+Further reading: [ambisonic.info](https://ambisonic.info/ambisonics/channels.html)
 
 B-format is the core signal format in Ambisonics and carries spatial information. Sources are encoded into B-format and then decoded for a target setup, such as headphones, stereo, or different loudspeaker arrays.
 
@@ -175,7 +179,9 @@ From source to speaker — this is how Ambisonics works in REAPER with the ICST 
 </div>
 
 <a id="typical-setups"></a>
-## 6. [Typical Setups](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
+## 6. Typical Setups
+
+Further reading: [en.wikipedia.org](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
 Common setups range from small studio rings and dome-like height configurations to custom arrays in composition studios. The same Ambisonics material can be adapted to each of these setups through decoding.
 
 <a id="headphones-vs-loudspeakers"></a>
@@ -249,52 +255,10 @@ Some microphones (e.g. the Zoom H3-VR) handle this internally and output B-forma
 Any B-format recording — whether from a first-order or [HOA](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics) microphone — can be loaded directly into a REAPER session and decoded with the ICST AmbiDecoder. For HOA recordings, make sure the Ambisonics order in the decoder matches the recording order.
 
 ---
-<a id="ambisonics-glossary"></a>
-## 11. Ambisonics Glossary (Quick Reference)
-
-- <a id="gl-a-format"></a>**A-format** — Raw signal from a tetrahedral Ambisonics microphone: four capsule signals in tetrahedral geometry. Must be encoded to B-format before use in a DAW.
-  → [Wikipedia: Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#A-format)
-
-- <a id="gl-b-format"></a>**B-format** — The Ambisonics carrier signal: encodes the spatial sound field as spherical harmonics. First order = 4 channels (W, X, Y, Z); seventh order = 64 channels.
-  → [Wikipedia: Ambisonics](https://en.wikipedia.org/wiki/Ambisonics) | [ICST Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
-
-- <a id="gl-ambix"></a>**ambiX** — Standardised Ambisonics file format (ACN channel ordering, SN3D normalisation); the de-facto standard for HOA exchange and archiving.
-  → [ambiX Specification (IEM)](https://ambisonics.iem.at/proceedings-of-the-ambisonics-symposium-2011/ambix-a-suggested-ambisonics-format)
-
-- <a id="gl-order"></a>**Ambisonics Order** — Spatial resolution level: 1st order = 4 channels, 3rd = 16, 7th = 64. Higher order means finer localisation and more channels.
-  → [Wikipedia: Higher-order Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics) | [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
-
-- <a id="gl-encoder"></a>**Encoder** — Converts a mono/stereo source with position data (azimuth, elevation, distance) into B-format.
-  → [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
-
-- <a id="gl-decoder"></a>**Decoder** — Renders B-format to a target playback system: loudspeaker array or binaural.
-  → [ICST AmbiDecoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiDecoder)
-
-- <a id="gl-channel-count"></a>**Channel Count** — Number of channels in the Ambisonics signal path; must remain consistent across the entire routing.
-  → [ICST Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
-
-- <a id="gl-speaker-layout"></a>**Speaker Layout** — Physical loudspeaker geometry to which the decoder renders B-format.
-  → [Wikipedia: Ambisonic reproduction systems](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
-
-- <a id="gl-binaural"></a>**Binaural / HRTF** — Headphone rendering via Head-Related Transfer Functions (HRTFs): simulates spatial directional cues without loudspeakers. Enables Ambisonics monitoring on any headphone.
-  → [Wikipedia: Binaural recording](https://en.wikipedia.org/wiki/Binaural_recording) | [Wikipedia: HRTF](https://en.wikipedia.org/wiki/Head-related_transfer_function)
-
-- <a id="gl-dolby-atmos"></a>**Dolby Atmos** — Object-based 3D audio format: sound sources are stored as audio objects with position metadata; a licensed renderer places them in the target system (cinema, home theatre, streaming services).
-  → [dolby.com](https://www.dolby.com/technologies/dolby-atmos/) | [Wikipedia: Dolby Atmos](https://en.wikipedia.org/wiki/Dolby_Atmos)
-
-- <a id="gl-osc"></a>**OSC (Open Sound Control)** — Network protocol (UDP/IP) for real-time control of spatial parameters.
-  → [opensoundcontrol.stanford.edu](https://opensoundcontrol.stanford.edu/) | [ICST AmbiEncoder](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki/ICST-AmbiEncoder)
-
-- <a id="gl-yaw"></a>**Yaw / Pitch / Roll** — Rotation axes in 3D space: Yaw = horizontal (left/right), Pitch = vertical (up/down), Roll = tilt.
-  → [Wikipedia: Euler angles](https://en.wikipedia.org/wiki/Euler_angles)
-
-- <a id="gl-azimuth"></a>**Azimuth / Elevation** — Polar coordinates for source direction: Azimuth = horizontal angle (0°–360°), Elevation = vertical angle (−90° to +90°).
-  → [Wikipedia: Horizontal coordinate system](https://en.wikipedia.org/wiki/Horizontal_coordinate_system)  
-
----
 
 Related next reads:
 - [Getting Started with ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
+- [Ambisonics Glossary](/ambisonics-101/glossary/)
 - [OSC Syntax for the ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 - [Audio Brewers, Beginner: Ambisonics Made Simple](https://www.audiobrewers.com/faq/Blog%20Post%20Title%20One-3zaa9-9fsz6-j2ed5-dj7rh) (external): the same basics from a producer's perspective
 - [Audio Brewers, Intermediate: Understanding Ambisonics](https://www.audiobrewers.com/faq/intermediate-understanding-ambisonics) (external): spherical harmonics, order, ambiX vs. FuMa
