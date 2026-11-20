@@ -45,3 +45,12 @@ resources/_gen/
 *conflicted*
 CleanShot *
 Pasted image *
+
+# Local notes and working files (Obsidian vault lives in the repo root)
+/*.md
+!/README.md
+!/CLAUDE.md
+!/CONTRIBUTING.md
+/Excalidraw/
+hugo.nav-preview.toml*
+hugo.toml.vor_nav_*
