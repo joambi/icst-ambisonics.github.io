@@ -55,6 +55,8 @@ Exportiere den Ambisonics-Render und sichere Projektnotizen für reproduzierbare
 - Fehlende Dokumentation von Routing und OSC-Zuordnungen.
 
 ## Weiterführend
-- [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
-- [ICST MultiEncoder - Gruppenanimation](/post/gp-manipulation/)
-- [ICST AmbiDecoder - Multi-Decoder Modus](/post/multi-decoder-mode/)
+- [Welche Ambisonics-Ordnung brauche ich?](/de/post/hoa-ordnung-wahl-praxis/): prüfen, ob HOA7 für dein Projekt wirklich nötig ist
+- [ICST MultiEncoder: Gruppenanimation](/de/post/gp-manipulation/): mehrere Quellen gemeinsam bewegen
+- [ICST AmbiDecoder: Multi-Decoder-Modus](/de/post/multi-decoder-mode/): für grössere oder gemischte Lautsprecher-Setups
+- [Ambisonics-Workflow](/de/learn/ambisonics-workflow/): der ganze Weg von der Aufnahme bis zur Abgabe
+- Später: [OSC und Steuerung](/de/reference/osc-and-control/)
