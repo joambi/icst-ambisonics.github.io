@@ -160,6 +160,38 @@ Dieses Setup ermöglicht eine feinabgestimmte Dekodierung für jede Schicht unab
 
 ---
 
+## Beispiel: Drei Decoder nach Frequenzband mit Pegelabgleich
+
+<figure style="margin:1.8rem 0">
+<svg viewBox="0 0 720 200" style="width:100%;max-width:720px;height:auto;display:block" role="img" aria-label="Drei Decoder (Deep, Middle, High) haben je einen eigenen Decoder-Gain von plus 1,5, 0 und minus 1,5 Dezibel, danach folgt ein Gain pro einzelnem Lautsprecher." xmlns="http://www.w3.org/2000/svg"><defs><marker id="mg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs><rect x="10" y="45" width="120" height="90" rx="8" stroke="currentColor" fill="currentColor" fill-opacity=".06" stroke-width="1.5"/><text x="70.0" y="87.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">B-Format-Bus</text><text x="70.0" y="104.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">64 Kanäle</text><text x="305" y="18" text-anchor="middle" font-size="11" font-weight="600" fill="currentColor" fill-opacity=".75">Decoder</text><text x="465" y="18" text-anchor="middle" font-size="11" font-weight="600" fill="currentColor" fill-opacity=".75">Decoder-Gain</text><line x1="132" y1="90" x2="168" y2="52" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="170" y="28" width="270" height="48" rx="8" stroke="#d9534f" fill="#d9534f" fill-opacity=".16" stroke-width="1.5"/><text x="305.0" y="49.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Deep · 5 Lautsprecher</text><text x="305.0" y="66.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">3. Ordnung · inPhase · Tiefpass</text><line x1="442" y1="52" x2="458" y2="52" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="460" y="28" width="100" height="48" rx="8" stroke="#d9534f" fill="#d9534f" fill-opacity=".16" stroke-width="1.5"/><text x="510.0" y="57.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">+1,5 dB</text><line x1="562" y1="52" x2="578" y2="52" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><line x1="132" y1="90" x2="168" y2="108" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="170" y="84" width="270" height="48" rx="8" stroke="#3fa968" fill="#3fa968" fill-opacity=".16" stroke-width="1.5"/><text x="305.0" y="105.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Middle · 16 Lautsprecher</text><text x="305.0" y="122.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">6. Ordnung · maxRe · Bandpass</text><line x1="442" y1="108" x2="458" y2="108" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="460" y="84" width="100" height="48" rx="8" stroke="#3fa968" fill="#3fa968" fill-opacity=".16" stroke-width="1.5"/><text x="510.0" y="113.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">0,0 dB</text><line x1="562" y1="108" x2="578" y2="108" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><line x1="132" y1="90" x2="168" y2="164" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="170" y="140" width="270" height="48" rx="8" stroke="#4a8fe0" fill="#4a8fe0" fill-opacity=".16" stroke-width="1.5"/><text x="305.0" y="161.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">High · 6 Lautsprecher</text><text x="305.0" y="178.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">3. Ordnung · basic · Hochpass</text><line x1="442" y1="164" x2="458" y2="164" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="460" y="140" width="100" height="48" rx="8" stroke="#4a8fe0" fill="#4a8fe0" fill-opacity=".16" stroke-width="1.5"/><text x="510.0" y="169.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">−1,5 dB</text><line x1="562" y1="164" x2="578" y2="164" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="580" y="28" width="130" height="160" rx="8" stroke="currentColor" fill="currentColor" fill-opacity=".06" stroke-width="1.5"/><text x="645.0" y="105.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Speaker-Gain</text><text x="645.0" y="122.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">je Lautsprecher</text></svg>
+<figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Zwei Pegelstufen: pro Decoder und pro Lautsprecher. Beide addieren sich in dB.</figcaption>
+</figure>
+
+![Multi-Decoder mit drei Decodern (Deep, Middle, High)](multidecoder-3band.png)
+
+Ein reales ICST-Setup kann das System statt nach Schicht auch nach Frequenzband aufteilen. Drei Decoder laufen parallel, und jeder hat eine eigene Filterkurve, die von einem Band ins nächste übergibt:
+
+| Decoder | Lautsprecher | Ordnung | Gewichtung | Gain | Filter (ca.) |
+|---------|--------------|---------|------------|------|--------------|
+| Deep    | 5            | 3.      | inPhase    | +1,5 dB | Tiefpass: voll unter ~300 Hz, darüber abfallend |
+| Middle  | 16           | 6.      | maxRe      | 0,0 dB  | Bandpass, ~200 Hz bis ~5 kHz |
+| High    | 6            | 3.      | basic      | −1,5 dB | Hochpass ab ~3 kHz |
+
+Die Werte sind dem Screenshot entnommen; die Filtergrenzen sind ungefähre Angaben.
+
+**Zwei Pegelstufen**
+
+- **Pro Lautsprecher:** Die Spalte *Gain [dB]* in der Lautsprechertabelle trimmt einzelne Lautsprecher (hier zwischen −1,0 und +1,5 dB), etwa um Unterschiede bei Distanz, Lautsprechermodell oder Raum auszugleichen.
+- **Pro Decoder:** Der Gain-Regler unten an jedem Decoder (hier +1,5, 0,0 und −1,5 dB) gleicht die Gruppen gegeneinander ab.
+
+Beide addieren sich in dB. Arbeite von innen nach aussen:
+
+1. **Innerhalb eines Decoders:** Rosa Rauschen nacheinander auf jeden einzelnen Lautsprecher geben (*Test*-Button) und am Hörplatz auf gleichen Pegel bringen.
+2. **Zwischen den Decodern:** Die anderen Decoder stummschalten (*M*), jede Gruppe einzeln messen und den Decoder-Gain setzen.
+3. **Alles zusammen:** Mit allen aktiven Decodern den Summenfrequenzgang am Hörplatz prüfen. Wo sich die Filterflanken überlappen, addieren sich die Pegel. Zum Schluss eine bewegte Quelle durch alle Zonen führen und auf Pegelsprünge hören.
+
+---
+
 ## Weitere Ressourcen
 
 - 📖 [ICST AmbiDecoder Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)

@@ -164,6 +164,38 @@ The split can be useful because the horizontal ring and the height layer do not 
 
 ---
 
+## Example: Three decoders by frequency band, with level matching
+
+<figure style="margin:1.8rem 0">
+<svg viewBox="0 0 720 200" style="width:100%;max-width:720px;height:auto;display:block" role="img" aria-label="Three decoders (Deep, Middle, High) each have their own decoder gain of plus 1.5, 0 and minus 1.5 decibels, followed by a gain per individual speaker." xmlns="http://www.w3.org/2000/svg"><defs><marker id="mg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs><rect x="10" y="45" width="120" height="90" rx="8" stroke="currentColor" fill="currentColor" fill-opacity=".06" stroke-width="1.5"/><text x="70.0" y="87.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">B-format bus</text><text x="70.0" y="104.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">64 ch</text><text x="305" y="18" text-anchor="middle" font-size="11" font-weight="600" fill="currentColor" fill-opacity=".75">Decoder</text><text x="465" y="18" text-anchor="middle" font-size="11" font-weight="600" fill="currentColor" fill-opacity=".75">Decoder gain</text><line x1="132" y1="90" x2="168" y2="52" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="170" y="28" width="270" height="48" rx="8" stroke="#d9534f" fill="#d9534f" fill-opacity=".16" stroke-width="1.5"/><text x="305.0" y="49.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Deep · 5 speakers</text><text x="305.0" y="66.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">3rd order · inPhase · low-pass</text><line x1="442" y1="52" x2="458" y2="52" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="460" y="28" width="100" height="48" rx="8" stroke="#d9534f" fill="#d9534f" fill-opacity=".16" stroke-width="1.5"/><text x="510.0" y="57.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">+1.5 dB</text><line x1="562" y1="52" x2="578" y2="52" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><line x1="132" y1="90" x2="168" y2="108" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="170" y="84" width="270" height="48" rx="8" stroke="#3fa968" fill="#3fa968" fill-opacity=".16" stroke-width="1.5"/><text x="305.0" y="105.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Middle · 16 speakers</text><text x="305.0" y="122.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">6th order · maxRe · band-pass</text><line x1="442" y1="108" x2="458" y2="108" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="460" y="84" width="100" height="48" rx="8" stroke="#3fa968" fill="#3fa968" fill-opacity=".16" stroke-width="1.5"/><text x="510.0" y="113.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">0.0 dB</text><line x1="562" y1="108" x2="578" y2="108" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><line x1="132" y1="90" x2="168" y2="164" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="170" y="140" width="270" height="48" rx="8" stroke="#4a8fe0" fill="#4a8fe0" fill-opacity=".16" stroke-width="1.5"/><text x="305.0" y="161.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">High · 6 speakers</text><text x="305.0" y="178.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">3rd order · basic · high-pass</text><line x1="442" y1="164" x2="458" y2="164" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="460" y="140" width="100" height="48" rx="8" stroke="#4a8fe0" fill="#4a8fe0" fill-opacity=".16" stroke-width="1.5"/><text x="510.0" y="169.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">−1.5 dB</text><line x1="562" y1="164" x2="578" y2="164" stroke="currentColor" stroke-width="1.6" marker-end="url(#mg)"/><rect x="580" y="28" width="130" height="160" rx="8" stroke="currentColor" fill="currentColor" fill-opacity=".06" stroke-width="1.5"/><text x="645.0" y="105.0" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">Speaker gain</text><text x="645.0" y="122.0" text-anchor="middle" font-size="11" fill="currentColor" fill-opacity=".75">per speaker</text></svg>
+<figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Two levels of amplitude control: per decoder and per speaker. Both add up in dB.</figcaption>
+</figure>
+
+![Multi-Decoder with three decoders (Deep, Middle, High)](multidecoder-3band.png)
+
+A real ICST setup can split the system by frequency band instead of by layer. Three decoders run in parallel, and each has its own filter curve that hands over from one band to the next:
+
+| Decoder | Speakers | Order | Weighting | Gain | Filter (approx.) |
+|---------|----------|-------|-----------|------|------------------|
+| Deep    | 5        | 3rd   | inPhase   | +1.5 dB | low-pass: full below ~300 Hz, falling above |
+| Middle  | 16       | 6th   | maxRe     | 0.0 dB  | band-pass, ~200 Hz to ~5 kHz |
+| High    | 6        | 3rd   | basic     | −1.5 dB | high-pass from ~3 kHz |
+
+The values are read from the screenshot; the filter edges are approximate.
+
+**Two levels of amplitude control**
+
+- **Per speaker:** the *Gain [dB]* column in the speaker table trims single speakers (here between −1.0 and +1.5 dB), for example to compensate differences in distance, speaker model or room.
+- **Per decoder:** the gain knob at the bottom of each decoder (here +1.5, 0.0 and −1.5 dB) balances the groups against each other.
+
+Both add up in dB. Work from the inside out:
+
+1. **Within each decoder:** play pink noise through one speaker at a time (*Test* button) and match them to the same level at the listening position.
+2. **Between decoders:** mute the other decoders (*M*), measure each group on its own and set the decoder gain.
+3. **All together:** with all decoders active, check the summed frequency response at the listening position. Where the filter slopes overlap, the levels add up. Finally run a moving source through all zones and listen for level jumps.
+
+---
+
 ## Further Resources
 
 - 📖 [ICST AmbiDecoder Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
