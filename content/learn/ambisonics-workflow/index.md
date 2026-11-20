@@ -107,6 +107,26 @@ tags:
 .theme--dark .wf-resource-link { background: #1a2d1a; border-color: #2a4a2a; color: #7ec8a0; }
 .theme--dark .wf-resource-link:hover { background: #1e3d1e; }
 .theme--dark .wf-resource-link strong { color: #5a8a6a; }
+
+/* Readability pass: stronger contrast in both themes */
+.post__content .wf-meta a { color: #e8f5e8 !important; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.6); }
+.wf-hero__subtitle { opacity: 0.92; }
+.wf-meta { opacity: 1; }
+.wf-chain__label { font-size: 1.35rem; }
+.wf-chain__sub { font-size: 1.2rem; opacity: 0.88; }
+.wf-section__meta { color: #4a4a4a; font-size: 1.4rem; }
+.theme--dark .wf-section__meta { color: #b4d2b4; }
+.wf-resource-link strong { color: #4a6a50; font-size: 1.2rem; }
+.theme--dark .wf-resource-link strong { color: #a3cdb3; }
+.theme--dark .wf-resource-link { color: #a8e0c0; }
+.theme--dark .wf-key { background: #20402a; border-left-color: #5fcf7a; }
+.theme--dark .wf-key__title { color: #9be8bb; }
+.theme--dark .wf-warn { background: #3a3110; }
+.theme--dark .wf-checklist li::before { color: #7fdc94; }
+.theme--dark .wf-table th { background: #356b3c; }
+.theme--dark .wf-table tr:nth-child(even) td { background: #1e3322; }
+.wf-table td strong, .wf-table td:first-child { font-weight: 600; }
+.wf-badge { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.4); }
 </style>
 
 <div class="wf-hero">
