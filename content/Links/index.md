@@ -86,6 +86,9 @@ tags: []
 - [Ambisonic data exchange formats](https://en.wikipedia.org/wiki/Ambisonic_data_exchange_formats)
 - [Springer: Ambisonics Reference Entry](https://link.springer.com/referenceworkentry/10.1007/978-3-662-60357-4_25-1)
 - [Waves: Ambisonics Explained](https://www.waves.com/ambisonics-explained-guide-for-sound-engineers)
+- [Audio Brewers, Beginner: Ambisonics Made Simple](https://www.audiobrewers.com/faq/Blog%20Post%20Title%20One-3zaa9-9fsz6-j2ed5-dj7rh) — introduction for newcomers: HOA basics and how Ambisonics works with stereo, surround, binaural, Dolby Atmos and VR/AR
+- [Audio Brewers, Intermediate: Understanding Ambisonics](https://www.audiobrewers.com/faq/intermediate-understanding-ambisonics) — spherical harmonics, channel count and order reduction, decoding, ambiX vs. FuMa (ACN, SN3D, N3D)
+- [Audio Brewers, Advanced](https://www.audiobrewers.com/faq/advanced) — announced, content not yet published
 - [Reaper Ambisonics Forum](https://forum.cockos.com/forumdisplay.php?s=75823a68d22b96a21e8025b8fea609ad&f=53)
 
 ### Literature: Books & Papers

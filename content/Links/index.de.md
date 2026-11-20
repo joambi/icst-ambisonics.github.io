@@ -89,6 +89,9 @@ languageCode: de
 - https://www.ambisonic.net/
 - https://link.springer.com/referenceworkentry/10.1007/978-3-662-60357-4_25-1
 - https://www.waves.com/ambisonics-explained-guide-for-sound-engineers
+- [Audio Brewers, Beginner: Ambisonics Made Simple](https://www.audiobrewers.com/faq/Blog%20Post%20Title%20One-3zaa9-9fsz6-j2ed5-dj7rh) — Einstieg für Neulinge: HOA-Grundlagen und das Zusammenspiel von Ambisonics mit Stereo, Surround, Binaural, Dolby Atmos und VR/AR
+- [Audio Brewers, Intermediate: Understanding Ambisonics](https://www.audiobrewers.com/faq/intermediate-understanding-ambisonics) — Kugelflächenfunktionen, Kanalzahl und Ordnungsreduktion, Decoding, ambiX vs. FuMa (ACN, SN3D, N3D)
+- [Audio Brewers, Advanced](https://www.audiobrewers.com/faq/advanced) — angekündigt, Inhalt noch nicht veröffentlicht
 - [REAPER Ambisonics Forum](https://forum.cockos.com/forumdisplay.php?s=75823a68d22b96a21e8025b8fea609ad&f=53)
 
 ### Literatur: Bücher und Papers
