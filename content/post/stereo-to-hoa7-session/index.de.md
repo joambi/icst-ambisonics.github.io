@@ -47,13 +47,28 @@ Ordne Stereo-Elemente räumlichen Objekten zu:
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">HOA7 enthält alle niedrigeren Ordnungen; 64 Kanäle tragen alles von FOA aufwärts.</figcaption>
 </figure>
 
-Lege Quelltracks an, setze AmbiEncoder-Instanzen und definiere einen sauberen HOA7-Buspfad.
+Lege pro Stereo-Element einen Mono-Quelltrack an, setze auf jedem einen AmbiEncoder ein und leite alle Encoder-Ausgänge auf einen `Bformat-Master`-Track.
+
+- Stelle **alle** Ambisonics-Tracks auf **64 Kanäle**. HOA7 braucht genau 64 Kanäle (ACN 0-63); ein Track mit weniger Kanälen verliert still die höheren Ordnungen.
+- Halte eine klare Kette: `Quelle -> Encoder -> Bformat-Master -> Decoder`. Keine Quelle geht direkt auf den Master.
+- Benenne Tracks konsequent (`LEAD`, `PAD_L`, `ATMO`, `Bformat-Master`), damit Routing-Fehler später auffallen.
+- Starte mit den [Track-Templates](/de/icst-ambisonics-plugins/05_open_track_templates/), statt das Routing von Hand zu bauen, und ergänze den Decoder mit dem Preset deiner Lautsprecher im Monitoring-Pfad.
 
 ## Schritt 3 - Mit statischer Platzierung starten
-Setze klare Ausgangspositionen, bevor Bewegung dazu kommt.
+Gib jeder Quelle eine feste Position und höre, bevor es Automation gibt.
+
+- Prüfe die Kette mit einer Mono-Testquelle an bekannter Position (geradeaus), bevor du den Rest platzierst.
+- Lead nah an die Front, Support links und rechts, Atmosphäre höher und breiter. Nutze die Distanz, um Tiefenebenen zu trennen.
+- Höre über Lautsprecher und binaural. Ist eine Quelle statisch nicht ortbar, rettet Bewegung sie nicht.
+- Speichere ein Plugin-Preset pro Rolle und einen Projekt-Snapshot (zum Beispiel `_static`) als Rückfallebene.
 
 ## Schritt 4 - Kontrollierte Bewegung ergänzen
-Nutze kleine, gezielte Automationsbewegungen und prüfe die Lesbarkeit im Monitoring.
+Ergänze Bewegung Element für Element, beginnend mit dem Lead.
+
+- Starte mit kleinen Bewegungen; werde grösser, wenn sie im Monitoring nicht hörbar sind.
+- Lass ein Vordergrund-Element sich bewegen, während Support und Atmosphäre ruhen.
+- Wähle das Werkzeug nach Aufgabe: [Motion Markers](/de/post/motion-markers-reaper/) für zeitgebundene Bewegung, der [Animator](/de/icst-ambisonics-plugins/11_animator/) für Choreographien, [Gruppenanimation](/de/post/gp-manipulation/) für mehrere Quellen gleichzeitig.
+- Prüfe jede Bewegung auch im binauralen Pfad, nicht nur über Lautsprecher.
 
 ## Schritt 5 - Übertragung prüfen
 
@@ -62,15 +77,27 @@ Nutze kleine, gezielte Automationsbewegungen und prüfe die Lesbarkeit im Monito
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Schritt 5: ein Bus, vier Prüfungen.</figcaption>
 </figure>
 
-Prüfe Referenzen in Mono/Stereo und validiere die HOA7-Ausgabekette.
+Prüfe, ob die Session auch funktioniert, wenn das räumliche Format nicht verfügbar ist.
+
+- Falte das B-Format auf Mono und Stereo: Die wichtigen Quellen müssen hörbar und ausgewogen bleiben (achte auf Phasenauslöschungen).
+- Vergleiche Lautsprecher- und Binaural-Monitoring; beide sollten dieselbe Geschichte erzählen.
+- Mache nach dem Laden eines Presets oder dem Wiederöffnen des Projekts einen 30-Sekunden-Signalcheck und prüfe, ob das Decoder-Preset zu den realen Lautsprechern passt.
 
 ## Schritt 6 - Export und Dokumentation
-Exportiere den Ambisonics-Render und sichere Projektnotizen für reproduzierbare Sessions.
+Rendere den **Bformat-Master**, nicht den Decoder-Ausgang.
+
+1. Setze `Bformat-Master` auf Solo, öffne **File -> Render**, wähle 48 kHz und Multichannel-WAV mit **64 Kanälen**.
+2. Rendere zuerst eine kurze Testdatei, importiere sie wieder und spiele sie über Decoder oder Binaural-Pfad ab.
+3. Schreibe eine Notiz in **Project Settings -> Notes**: ambiX (ACN/SN3D), 48000 Hz, 64 Kanäle, 7. Ordnung, verwendetes Decoder-Preset.
+
+Details: [B-Format rendern](/de/icst-ambisonics-plugins/12_render_bformat/) und [B-Format-Master exportieren](/de/post/b-format-export-reaper/).
 
 ## Typische Stolperfallen
 - Zu früh zu viel Bewegung.
 - Gain-Staging auf Higher-Order-Bussen wird ignoriert.
 - Fehlende Dokumentation von Routing und OSC-Zuordnungen.
+- Ein Track mit weniger als 64 Kanälen im Signalweg.
+- Decoder-Preset, das nicht zu den realen Lautsprechern passt.
 
 ## Weiterführend
 - [Welche Ambisonics-Ordnung brauche ich?](/de/post/hoa-ordnung-wahl-praxis/): prüfen, ob HOA7 für dein Projekt wirklich nötig ist

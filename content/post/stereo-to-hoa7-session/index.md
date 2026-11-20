@@ -47,13 +47,28 @@ Assign your stereo elements to spatial objects:
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">HOA7 contains all lower orders; 64 channels carry everything from FOA upwards.</figcaption>
 </figure>
 
-Create source tracks, assign AmbiEncoder instances, and define a clean HOA7 bus path.
+Create one mono source track per stereo element, insert an AmbiEncoder on each, and send every encoder output to one `Bformat-Master` track.
+
+- Set **all** Ambisonics tracks to **64 channels**. HOA7 needs exactly 64 channels (ACN 0-63); a track with fewer channels silently drops the higher orders.
+- Keep one clear chain: `Source -> Encoder -> Bformat-Master -> Decoder`. No source goes straight to the master.
+- Name tracks consistently (`LEAD`, `PAD_L`, `ATMO`, `Bformat-Master`) so routing errors stand out later.
+- Start from the [track templates](/icst-ambisonics-plugins/05_open_track_templates/) instead of building the routing by hand, and add the decoder for your speaker preset on the monitoring path.
 
 ## Step 3 - Start with static placement
-Set clear initial positions before adding motion.
+Give every source a fixed position and listen before any automation exists.
+
+- Check the chain with one mono test source at a known position (straight ahead) before placing the rest.
+- Place Lead near the front, Support left and right, atmosphere higher and wider. Use distance to separate depth layers.
+- Listen over loudspeakers and binaural. If a source is not locatable when static, movement will not fix it.
+- Save one plugin preset per role and a project snapshot (for example `_static`) as your fallback.
 
 ## Step 4 - Add controlled movement
-Use small, intentional automation moves and test readability in monitoring.
+Add movement one element at a time, starting with the Lead.
+
+- Begin with small moves; widen them only if they are not audible in the monitoring.
+- Let one foreground element move while Support and atmosphere stay still.
+- Choose the tool by the job: [Motion Markers](/post/motion-markers-reaper/) for movement tied to the timeline, the [Animator](/icst-ambisonics-plugins/11_animator/) for choreographies, [group animation](/post/gp-manipulation/) for several sources at once.
+- Re-check every movement in the binaural path as well as over loudspeakers.
 
 ## Step 5 - Validate translation
 
@@ -62,15 +77,27 @@ Use small, intentional automation moves and test readability in monitoring.
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Step 5: one bus, four checks.</figcaption>
 </figure>
 
-Check mono/stereo compatibility references and verify the HOA7 output chain.
+Verify that the session still works when the spatial format is not available.
+
+- Fold the B-format down to mono and stereo: the key sources must stay audible and balanced (watch for phase cancellations).
+- Compare loudspeaker and binaural monitoring; they should tell the same story.
+- Run a 30-second signal check after loading a preset or reopening the project, and confirm the decoder preset matches the real speaker setup.
 
 ## Step 6 - Export and archive
-Export your Ambisonics render and save project notes for reproducibility.
+Render the **Bformat-Master**, not the decoder output.
+
+1. Solo `Bformat-Master`, open **File -> Render**, choose 48 kHz and multichannel WAV with **64 channels**.
+2. Render a short test file first, re-import it and play it through the decoder or the binaural path.
+3. Write a note in **Project Settings -> Notes**: ambiX (ACN/SN3D), 48000 Hz, 64 channels, 7th order, decoder preset used.
+
+Details: [Render B-format](/icst-ambisonics-plugins/12_render_bformat/) and [Exporting the B-format master](/post/b-format-export-reaper/).
 
 ## Common pitfalls
 - Over-animating too early.
 - Ignoring gain staging on higher-order buses.
 - Missing documentation of routing and OSC assignments.
+- A track with fewer than 64 channels in the signal path.
+- Decoder preset that does not match the real loudspeaker setup.
 
 ## Continue with
 - [Which Ambisonics Order Do I Need?](/post/hoa-ordnung-wahl-praxis/): check whether HOA7 is really what your project needs
