@@ -1,5 +1,5 @@
 ---
-title: "#07 ascolta Acousmatic Listening Session"
+title: "#07 ascolta — ICST Artists in Residence"
 description: "ICST Artists in Residence – concert with works by former residents"
 date: 2023-06-06T18:00:00
 weight: 7

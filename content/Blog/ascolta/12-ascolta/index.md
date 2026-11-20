@@ -1,5 +1,5 @@
 ---
-title: "#12 ascolta Acousmatic Listening Session"
+title: "#12 ascolta — Georg Katzer"
 description: "Georg Katzer – electroacoustic works"
 date: 2024-09-17T18:00:00
 weight: 12

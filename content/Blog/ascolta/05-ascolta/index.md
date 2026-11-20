@@ -1,5 +1,5 @@
 ---
-title: "#05 ascolta Acousmatic Listening Session"
+title: "#05 ascolta — Philip Samartzis"
 description: "Field-Recordings & Soundscapes – Philip Samartzis"
 date: 2023-03-14T18:00:00
 weight: 5

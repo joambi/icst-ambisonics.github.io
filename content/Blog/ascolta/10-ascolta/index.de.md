@@ -1,5 +1,5 @@
 ---
-title: "#10 ascolta Akousmatische Hörstunde"
+title: "#10 ascolta — Natasha Barrett"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2024-03-19T18:00:00
 weight: 10
@@ -31,7 +31,7 @@ _Freier Eintritt_
 **Prince Prospero's Party** \[2005\] 2. Ordnung Ambisonics 16:00
 Eines der ersten Stücke in Ambisonics 2. Ordnung war von Natasha Barrett als Artist in Residency 2005 an der HMT Zürich.
 
-Natasha Barrett (1972) ist eine Komponistin, die neue Technologien und experimentelle Ansätze zum Klang in zeitgenössischer Musik erforscht, einschließlich Konzertwerke, öffentliche Klangkunst-Installationen und interaktive Multimedia-Musik. Sie ist international anerkannt für ihre elektroakustische und akousmatische Musik sowie ihre Verwendung von 3D-Soundtechnologie in Kompositionen. Ihre Werke wurden weltweit kommissioniert und aufgeführt und haben über 20 internationale Auszeichnungen erhalten, darunter den Nordic Council Music Prize, den Giga-Hertz Award (Deutschland), fünf erste Preise und die Euphonie D'Or in den Bourges International Electroacoustic Music Awards (Frankreich), zwei erste Preise im International Rostrum für elektroakustische Musik und kürzlich den Thomas Seelig Fixed Media Award für 2023. Sie arbeitet mit Performern, Künstlern, Architekten und Wissenschaftlern zusammen und ist aktiv in Performance, Bildung und Forschung.
+Natasha Barrett (1972) ist eine Komponistin, die neue Technologien und experimentelle Ansätze zum Klang in zeitgenössischer Musik erforscht, einschliesslich Konzertwerke, öffentliche Klangkunst-Installationen und interaktive Multimedia-Musik. Sie ist international anerkannt für ihre elektroakustische und akousmatische Musik sowie ihre Verwendung von 3D-Soundtechnologie in Kompositionen. Ihre Werke wurden weltweit kommissioniert und aufgeführt und haben über 20 internationale Auszeichnungen erhalten, darunter den Nordic Council Music Prize, den Giga-Hertz Award (Deutschland), fünf erste Preise und die Euphonie D'Or in den Bourges International Electroacoustic Music Awards (Frankreich), zwei erste Preise im International Rostrum für elektroakustische Musik und kürzlich den Thomas Seelig Fixed Media Award für 2023. Sie arbeitet mit Performern, Künstlern, Architekten und Wissenschaftlern zusammen und ist aktiv in Performance, Bildung und Forschung.
 Link: <http://www.natashabarrett.org/about.html>
 
 ## Beatriz Ferreyra
@@ -39,7 +39,7 @@ Link: <http://www.natashabarrett.org/about.html>
 **Huellas Entreveradas** \[2018\] 14:40
 8-KANAL gespielt in Ambisonics
 
-DEGEM (Deutscher Verband für Elektronische Musik) hat sie beauftragt. Spuren und Fußabdrücke überqueren sich, verschwinden, verstecken sich, werden flüssig, schwach vor dem Labyrinth der Erinnerung oder vielleicht während einer Wanderung durch eine unbekannte Landschaft.
+DEGEM (Deutscher Verband für Elektronische Musik) hat sie beauftragt. Spuren und Fussabdrücke überqueren sich, verschwinden, verstecken sich, werden flüssig, schwach vor dem Labyrinth der Erinnerung oder vielleicht während einer Wanderung durch eine unbekannte Landschaft.
 
 Beatriz Ferreyra (geboren 1937 in Córdoba, Argentinien) steht seit 1963 an der Spitze der elektroakustischen Musikkomposition, als sie als Forschungsassistentin zu Pierre Schaeffer in die Groupe de Recherches Musicales kam. Sie ist eine der wenigen noch aktiven Komponisten, die an den Anfängen von Schaeffers Theorien über Soundobjekte und Techniken des reduzierten Hörens beteiligt waren. In ihrer sechzigjährigen Karriere komponiert sie weiterhin in Auftrag gegebene Werke und tritt weltweit auf.
 Link: <https://beatrizferreyra.odexpo.com/>

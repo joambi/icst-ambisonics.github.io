@@ -1,5 +1,5 @@
 ---
-title: "#08 ascolta Acousmatic Listening Session"
+title: "#08 ascolta — Mesias Maiguashca"
 description: "La Canción de la Tierra – Mesias Maiguashca"
 date: 2023-10-24T18:00:00
 weight: 8

@@ -1,5 +1,5 @@
 ---
-title: "#08 ascolta Akousmatische Hörstunde"
+title: "#08 ascolta — Mesias Maiguashca"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2023-10-24T18:00:00
 weight: 8

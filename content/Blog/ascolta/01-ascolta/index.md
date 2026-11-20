@@ -1,5 +1,5 @@
 ---
-title: "#01 ascolta Acousmatic Listening Session"
+title: "#01 ascolta — Jean-Claude Risset"
 description: "Jean-Claude Risset – Songs, Octant, Sud I–III, Resonant"
 date: 2019-11-26T18:00:00
 weight: 1

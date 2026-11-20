@@ -1,5 +1,5 @@
 ---
-title: "#10 ascolta Acousmatic Listening Session"
+title: "#10 ascolta — Natasha Barrett"
 description: "The Composer, Herself – Natasha Barrett"
 date: 2024-03-19T18:00:00
 weight: 10

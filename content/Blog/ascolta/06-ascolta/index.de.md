@@ -1,5 +1,5 @@
 ---
-title: "#06 ascolta Akousmatische Hörstunde"
+title: "#06 ascolta — Zbigniew Karkowski"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2023-04-04T18:00:00
 weight: 6

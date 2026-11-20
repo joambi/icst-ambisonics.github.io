@@ -1,5 +1,5 @@
 ---
-title: "#02 ascolta Akousmatische Hörstunde"
+title: "#02 ascolta — Gerald Bennett"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2022-10-04T18:00:00
 weight: 2
@@ -46,7 +46,7 @@ Aktuelle Informationen zur Veranstaltung findest du [hier](https://www.zhdk.ch/v
 
 ### Gerald Bennett: Vêpres vénitiennes - Il dì s'appressa (1999)
 
-"Il dì s'appressa" ist Teil eines größeren Werkes (das natürlich immer noch unvollständig ist): die "Venetian Vespers". Die Venezianischen Vesper in San Marco unterschieden sich von den Römischen Vespern durch ihren Reichtum an Musik. Dieses Werk ersetzt den antiken Marian, das gegen Ende der Vesper gesungen wurde. Es basiert auf den ersten zwei Zeilen des letzten Gedichts aus Petrarchs "Canzoniere", einem Gedicht über den Tod, das an die Jungfrau adressiert ist: Il dì s'appresa e non puot' esser lunge, Sì corr' il temp e vola ...
+"Il dì s'appressa" ist Teil eines grösseren Werkes (das natürlich immer noch unvollständig ist): die "Venetian Vespers". Die Venezianischen Vesper in San Marco unterschieden sich von den Römischen Vespern durch ihren Reichtum an Musik. Dieses Werk ersetzt den antiken Marian, das gegen Ende der Vesper gesungen wurde. Es basiert auf den ersten zwei Zeilen des letzten Gedichts aus Petrarchs "Canzoniere", einem Gedicht über den Tod, das an die Jungfrau adressiert ist: Il dì s'appresa e non puot' esser lunge, Sì corr' il temp e vola ...
 "Il dì s'appressa" wurde vom International Institute of Electroacoustic Music in Bourges, Frankreich, in Auftrag gegeben und 1999 in seinen Studios realisiert.
 
 * * *
@@ -79,7 +79,7 @@ con voce soavissima e amorosa.
 
 Der Doktor singt ein anmutiges Madrigal
 unter dem Balkon seiner liebsten
-mit der süßesten liebevollen Stimme.
+mit der süssesten liebevollen Stimme.
 
 (Enfants au Grand Guignol)
 Attention! Attention!
@@ -87,7 +87,7 @@ Attention! Attention!
 Achtung! Achtung!
 
 . . . tanto son dolci . . .
-. . . wie süß sind . . .
+. . . wie süss sind . . .
 
 Im Prolog des «Amfiparnaso» erzählt der Erzähler uns:
 
@@ -102,7 +102,7 @@ Però silenzio fatte,
 e'n vece di vedere hora ascoltate.
 
 Und die Stadt, wo dieses Stück
-spielt, ist das große Theater
+spielt, ist das grosse Theater
 der Welt, das jeder gerne sehen möchte.
 Doch ihr solltet wissen,
 dass das Drama, von dem ich spreche,

@@ -1,5 +1,5 @@
 ---
-title: "#13 ascolta Akousmatische Hörstunde"
+title: "#13 ascolta — Zweimal Hören: Stereo vs. immersiv"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2024-12-17T18:00:00
 weight: 13

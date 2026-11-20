@@ -1,5 +1,5 @@
 ---
-title: "#09 ascolta Akousmatische Hörstunde"
+title: "#09 ascolta — Hans Tutschku"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2023-12-05T18:00:00
 weight: 9

@@ -1,5 +1,5 @@
 ---
-title: "#13 ascolta Acousmatic Listening Session"
+title: "#13 ascolta — Listening Twice: Stereo vs. Immersive"
 description: "Listening Twice – stereo vs. immersive, an experimental comparison"
 date: 2024-12-17T18:00:00
 weight: 13

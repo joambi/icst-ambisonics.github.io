@@ -1,5 +1,5 @@
 ---
-title: "#19 ascolta — Acousmatic Listening Sessions"
+title: "#19 ascolta — ICST Studio-Residenzen 2025"
 description: "ICST Studio Residenzen 2025: Drei neue Ambisonics-Werke von Nandele Maguni, Youngjae Cho und Ana Gonzalez Gamboa."
 date: 2026-03-17T12:00:00
 weight: 19

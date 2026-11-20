@@ -1,5 +1,5 @@
 ---
-title: "#14 ascolta Akousmatische Hörstunde"
+title: "#14 ascolta — Zweimal Hören: 5.1 vs. Ambisonics UHJ"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2025-04-22T18:00:00
 weight: 14

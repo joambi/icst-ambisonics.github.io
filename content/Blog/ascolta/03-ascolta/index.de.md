@@ -1,5 +1,5 @@
 ---
-title: "#03 ascolta Akousmatische Hörstunde"
+title: "#03 ascolta — Nikos Stavropoulos & Horacio Vaggione"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2022-11-15T18:00:00
 weight: 3

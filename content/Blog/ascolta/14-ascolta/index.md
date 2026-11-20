@@ -1,5 +1,5 @@
 ---
-title: "#14 ascolta Acousmatic Listening Session"
+title: "#14 ascolta — Listening Twice: 5.1 vs. Ambisonics UHJ"
 description: "Listening Twice – 5.1 surround vs. Ambisonics UHJ (1970s)"
 date: 2025-04-22T18:00:00
 weight: 14

@@ -1,5 +1,5 @@
 ---
-title: "#04 ascolta Acousmatic Listening Session"
+title: "#04 ascolta — Glocken — Werner Geissberger"
 description: "Glocken – bells and tape, Werner Geissberger"
 date: 2022-12-13T18:00:00
 weight: 4

@@ -1,5 +1,5 @@
 ---
-title: "#02 ascolta Acousmatic Listening Session"
+title: "#02 ascolta — Gerald Bennett"
 description: "Gerald Bennett portrait – electroacoustic works by the co-founder of ICST"
 date: 2022-10-04T18:00:00
 weight: 2

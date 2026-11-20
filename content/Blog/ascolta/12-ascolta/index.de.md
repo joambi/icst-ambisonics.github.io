@@ -1,5 +1,5 @@
 ---
-title: "#12 ascolta Akousmatische Hörstunde"
+title: "#12 ascolta — Georg Katzer"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2024-09-17T18:00:00
 weight: 12
@@ -49,24 +49,24 @@ Steinelied 2 2010 In einer Nebelkammer hinterlässt ionisierende Strahlung eine 
 
 ###
 
-### Preußisches Blau. Tagtraum. Erinnerung
+### Preussisches Blau. Tagtraum. Erinnerung
 
 2008
 12'26''
 
 Anmerkungen:
 
-Wie das tiefe Blau von Yves Klein, meine kleinen Wolken, die durch meinen Sinn zwischen Wachen und Schlafen schwimmen, mit Erinnerungen an jene Jahre in dieser Stadt, in jenem vergangenen Land. Mit den blauen Wolken kommen die Bilder zurück, die blassen Wiedergaben, die sich in meinem Unterbewusstsein ausbreiten, sich hartnäckig umeinander drehen und sich in mein Gehirn bohren. Aber: der Film läuft rückwärts. Die Konturen verblassen, am Ende nur Blau, Preußischblau, Berlinerblau. Das Stück ist auch eine Erinnerung an eine vergangene Technologie mit raumfüllenden Geräten, platzbeanspruchenden Tonbandschleifen und dem ewigen Kampf mit Rauschen. So mischen sich analoge und digitale Klänge und Signale in dem Stück. Der Farbstoff erhielt den Namen Preußischblau im 18. Jahrhundert, weil er hauptsächlich zum Färben der preußischen Uniformmäntel verwendet wurde.
+Wie das tiefe Blau von Yves Klein, meine kleinen Wolken, die durch meinen Sinn zwischen Wachen und Schlafen schwimmen, mit Erinnerungen an jene Jahre in dieser Stadt, in jenem vergangenen Land. Mit den blauen Wolken kommen die Bilder zurück, die blassen Wiedergaben, die sich in meinem Unterbewusstsein ausbreiten, sich hartnäckig umeinander drehen und sich in mein Gehirn bohren. Aber: der Film läuft rückwärts. Die Konturen verblassen, am Ende nur Blau, Preussischblau, Berlinerblau. Das Stück ist auch eine Erinnerung an eine vergangene Technologie mit raumfüllenden Geräten, platzbeanspruchenden Tonbandschleifen und dem ewigen Kampf mit Rauschen. So mischen sich analoge und digitale Klänge und Signale in dem Stück. Der Farbstoff erhielt den Namen Preussischblau im 18. Jahrhundert, weil er hauptsächlich zum Färben der preussischen Uniformmäntel verwendet wurde.
 
 Studio GMEB, Bourges 1979/Studio des Komponisten 2008
 
 Anmerkungen:
 
-Wie das reiche Blau von Yves Klein, meine kleinen Wolken, die durch meinen Kopf zwischen Wachen und Schlafen mit den Erinnerungen an jene Jahre in dieser Stadt, in jenem vergangenen Land schwimmen. Mit den blauen Wolken kommen die Bilder zurück, ihre blassen Wiedergaben, die sich in meinem Halbwissen ausbreiten, die sich hartnäckig umeinander drehen und die sich unerbittlich in mein Gehirn bohren. Aber: der Film läuft rückwärts. Die Konturen verblassen, am Ende nur Blau, Preußischblau, Berlinerblau.
+Wie das reiche Blau von Yves Klein, meine kleinen Wolken, die durch meinen Kopf zwischen Wachen und Schlafen mit den Erinnerungen an jene Jahre in dieser Stadt, in jenem vergangenen Land schwimmen. Mit den blauen Wolken kommen die Bilder zurück, ihre blassen Wiedergaben, die sich in meinem Halbwissen ausbreiten, die sich hartnäckig umeinander drehen und die sich unerbittlich in mein Gehirn bohren. Aber: der Film läuft rückwärts. Die Konturen verblassen, am Ende nur Blau, Preussischblau, Berlinerblau.
 
 Das Stück ist auch eine Erinnerung an eine vergangene Technologie mit raumfüllenden Geräten, platzbeanspruchenden Tonbandschleifen und dem ewigen Kampf mit Rauschen. So mischen sich Analog- und Digitalsignale und -klänge in dem Stück.
 
-Preußischblau erhielt seinen Namen im 18. Jahrhundert, weil es hauptsächlich zum Färben preußischer Uniformmäntel verwendet wurde.
+Preussischblau erhielt seinen Namen im 18. Jahrhundert, weil es hauptsächlich zum Färben preussischer Uniformmäntel verwendet wurde.
 
 Studio GMEB, Bourges 1979/Studio des Komponisten 2008
 
@@ -79,13 +79,13 @@ Studio GMEB, Bourges 1979/Studio des Komponisten 2008
 
 Anmerkungen:
 
-Neben der Unterhaltung kann Tonbandmusik auch dem größeren Zweck der Dokumentation dienen, entweder intakt, wie in Luc Ferraris ländlichen Pastoralen, oder inszeniert, wie in Katzers Porträt des abscheulichen Aufstiegs der Nazi-Intoleranz. Katzers Collage, die bei GDR Radio erstellt wurde, verwendet Nazi-Reden, Massenszenen und historische Musik und wurde für den Rundfunk zum 50. Jahrestag von Hitlers Machtergreifung zusammengestellt.
+Neben der Unterhaltung kann Tonbandmusik auch dem grösseren Zweck der Dokumentation dienen, entweder intakt, wie in Luc Ferraris ländlichen Pastoralen, oder inszeniert, wie in Katzers Porträt des abscheulichen Aufstiegs der Nazi-Intoleranz. Katzers Collage, die bei GDR Radio erstellt wurde, verwendet Nazi-Reden, Massenszenen und historische Musik und wurde für den Rundfunk zum 50. Jahrestag von Hitlers Machtergreifung zusammengestellt.
 
 Das Oberflächenrauschen der 78er ist ein integrales Element der Komposition, das uns sagt, dass die präsentierten Beweise historisch sind, aber die Gefahr sehr präsent ist. Wer Begriffe wie Gleichheit und Freiheit in pathetischem Pathos nicht entwerten will, sollte darauf achten, wie vorsichtig und kritisch Georg Katzer sie anspricht und singt.
 
 Anmerkungen:
 
-Neben der Unterhaltung kann Tonbandmusik auch dem größeren Zweck der Dokumentation dienen, entweder intakt, wie in den ländlichen Pastoralen von Luc Ferrari, oder inszeniert, wie in Katzers Porträt des grauenvollen Aufstiegs der Nazi-Intoleranz. Katzers Collage, die bei GDR Radio entstand, nutzt Nazi-Reden, Massenszenen und historische Musik und wurde zur Rundfunksendung zum 50. Jahrestag von Hitlers Machtergreifung zusammengestellt.
+Neben der Unterhaltung kann Tonbandmusik auch dem grösseren Zweck der Dokumentation dienen, entweder intakt, wie in den ländlichen Pastoralen von Luc Ferrari, oder inszeniert, wie in Katzers Porträt des grauenvollen Aufstiegs der Nazi-Intoleranz. Katzers Collage, die bei GDR Radio entstand, nutzt Nazi-Reden, Massenszenen und historische Musik und wurde zur Rundfunksendung zum 50. Jahrestag von Hitlers Machtergreifung zusammengestellt.
 
 Das Oberflächenrauschen der 78er ist ein integrales Element der Komposition, das uns sagt, dass die präsentierten Beweise historisch sind, aber die Gefahr sehr präsent bleibt. Wer Begriffe wie Gleichheit und Freiheit nicht in grandios pathetisches Pathos entwerten will, sollte darauf achten, wie vorsichtig und kritisch Georg Katzer sie anspricht und singt.
 
@@ -121,7 +121,7 @@ Die Schwierigkeiten des Anfangs, das ständige Scheitern, der Rückfall in schö
 
 Anmerkungen:
 
-"Steine-Lied" ist eine Computerkomposition. Ein Mainframe-Computer, ausgestattet mit einem spezifischen Programmpaket (eine VAX mit dem Programm "Chant", das am IRCAM/Paris entwickelt wurde), berechnete musikalische Ordnungen und Klänge (basierend auf Primzahlverhältnissen) nach den Spezifikationen des Komponisten und ließ sie auch erklingen.
+"Steine-Lied" ist eine Computerkomposition. Ein Mainframe-Computer, ausgestattet mit einem spezifischen Programmpaket (eine VAX mit dem Programm "Chant", das am IRCAM/Paris entwickelt wurde), berechnete musikalische Ordnungen und Klänge (basierend auf Primzahlverhältnissen) nach den Spezifikationen des Komponisten und liess sie auch erklingen.
 
 Der Titel bedeutet, dass es die Steine sind, die Siliziumkristalle, die singen, als wollten sie Subjekte statt Objekte, lebende statt tote Materie werden.
 
@@ -148,7 +148,7 @@ Quelle: EMDocu (erstellt: 25.08.1993 Quelle: Ruschkowski-Kartei 1989)
 
 ![Katzer_Georg_StudioCircé_IMEB_2.jpg](Katzer_Georg_StudioCircé_IMEB_2.jpg)
 
-**Georg Katzer,** 1935 in Niederschlesien geboren und 2019 in Zeuthen gestorben, gilt als einer der wichtigsten Komponisten der ostdeutschen Schule. Katzer, ein Meisterschüler von Hanns Eisler, hinterließ ein umfassendes Œuvre von Orchester-, Instrumental- und Filmmusik sowie Hörspielen. Dieses Porträt ist Georg Katzer als Pionier der elektroakustischen Musik gewidmet.
+**Georg Katzer,** 1935 in Niederschlesien geboren und 2019 in Zeuthen gestorben, gilt als einer der wichtigsten Komponisten der ostdeutschen Schule. Katzer, ein Meisterschüler von Hanns Eisler, hinterliess ein umfassendes Œuvre von Orchester-, Instrumental- und Filmmusik sowie Hörspielen. Dieses Porträt ist Georg Katzer als Pionier der elektroakustischen Musik gewidmet.
 
 1978 wurde Katzer in die Akademie der Künste Ost-Berlins gewählt. 1982 gründete er das Studio für elektroakustische Musik "Studio für elektroakustische Musik" angegliedert an die Musikabteilung der Akademie der Künste, deren künstlerischer Direktor er bis 2005 war.
 

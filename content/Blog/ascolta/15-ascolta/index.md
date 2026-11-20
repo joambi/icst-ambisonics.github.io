@@ -1,5 +1,5 @@
 ---
-title: "#15 ascolta Acousmatic Listening Session"
+title: "#15 ascolta — Listening Twice: Ambisonics UHJ"
 description: "Listening Twice – Ambisonics UHJ recordings from the 1970s"
 date: 2025-05-06T18:00:00
 weight: 15

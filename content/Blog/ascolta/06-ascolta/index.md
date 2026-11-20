@@ -1,5 +1,5 @@
 ---
-title: "#06 ascolta Acousmatic Listening Session"
+title: "#06 ascolta — Zbigniew Karkowski"
 description: "Zbigniew Karkowski – noise and experimental electronic music"
 date: 2023-04-04T18:00:00
 weight: 6

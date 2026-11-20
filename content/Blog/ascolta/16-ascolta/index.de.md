@@ -1,5 +1,5 @@
 ---
-title: "#16 ascolta Akousmatische Hörstunde"
+title: "#16 ascolta — B-Format-Archivierung"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2025-10-16T18:00:00
 weight: 16

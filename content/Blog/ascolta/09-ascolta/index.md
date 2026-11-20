@@ -1,5 +1,5 @@
 ---
-title: "#09 ascolta Acousmatic Listening Session"
+title: "#09 ascolta — Hans Tutschku"
 description: "Hans Tutschku – Remembering Japan"
 date: 2023-12-05T18:00:00
 weight: 9

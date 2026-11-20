@@ -1,5 +1,5 @@
 ---
-title: "#03 ascolta Acousmatic Listening Session"
+title: "#03 ascolta — Nikos Stavropoulos & Horacio Vaggione"
 description: "Granular – Nikos Stavropoulos & Horacio Vaggione"
 date: 2022-11-15T18:00:00
 weight: 3

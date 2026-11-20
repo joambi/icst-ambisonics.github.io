@@ -1,5 +1,5 @@
 ---
-title: "#04 ascolta Akousmatische Hörstunde"
+title: "#04 ascolta — Glocken — Werner Geissberger"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2022-12-13T18:00:00
 weight: 4
@@ -28,7 +28,7 @@ _Freier Eintritt_
 
 Sie wird erstmals in einem Dokument vom 27.03.757 erwähnt.
 Ihr Hauptpatron ist St. Dionysius (1517 "Churches Sant Dionysius).
-Die fünf Glocken wurden 1883 von der Glockengießerei Keller in Zürich gegossen.
+Die fünf Glocken wurden 1883 von der Glockengiesserei Keller in Zürich gegossen.
 und erzeugen einen reinen B-Dur-Akkord.
 
 * * *
@@ -61,14 +61,14 @@ Spaces (Resonant Spaces) ist eine "mise en espace" von Resonant Soundscapes in A
 
 **Programm-Notiz**
 Dieses Werk spiegelt meine Erfahrungen in der Winchester Cathedral wider, wo mein Sohn Dominique von 1975 bis 1980 Chorknabe war.
-Es basiert auf seiner Stimme und der des großen Tenor-Glockenschlags.
+Es basiert auf seiner Stimme und der des grossen Tenor-Glockenschlags.
 Diese riesige schwarze Glocke mit übermenschlicher Kraft trägt die Aufschrift:
 " Horas avolantes number mortuos plango: vivos ad pres voco ".
 
 * * *
 
 **Abschlussglocke**
-Ich beschließe die letzte Akousmatische Hörstunde dieses Jahres mit den Kirchenglocken der Reformierten Kirche Diessenhofen/TG.
+Ich beschliesse die letzte Akousmatische Hörstunde dieses Jahres mit den Kirchenglocken der Reformierten Kirche Diessenhofen/TG.
 Die nächste Akousmatische Hörstunde findet nächstes Jahr statt.
 Ich wünsche euch Frieden und Ruhe über die Feiertage und alles Gute für das neue Jahr 2023!
 

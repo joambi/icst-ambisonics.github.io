@@ -1,5 +1,5 @@
 ---
-title: "#11 ascolta Akousmatische Hörstunde"
+title: "#11 ascolta — Mario Mary"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2024-06-11T18:00:00
 weight: 11
@@ -40,7 +40,7 @@ _Freier Eintritt_
 		Uraufführung im MPAA von Saint-Germain - Paris - Frankreich im Oktober 2018
 		Zweiter Preis Klang! 2019 (Frankreich)
 		Ehrenerwähnung CIME 2019 (Frankreich)
-		Diese Musik wird durch persönliche Techniken sowie reflektierte Arbeit konkretisiert, um elektroakustische Kunst und die heutige Welt auszudrücken. In diesem Stück habe ich besondere Aufmerksamkeit auf die Qualität der Klangmaterialien gelegt, wesentliche Essenz der elektroakustischen Kunst. Und ich habe auch besondere Aufmerksamkeit auf den musikalischen Diskurs gegeben, der uns durch die verschiedenen Abschnitte des Stücks auf fließende Weise führt.
+		Diese Musik wird durch persönliche Techniken sowie reflektierte Arbeit konkretisiert, um elektroakustische Kunst und die heutige Welt auszudrücken. In diesem Stück habe ich besondere Aufmerksamkeit auf die Qualität der Klangmaterialien gelegt, wesentliche Essenz der elektroakustischen Kunst. Und ich habe auch besondere Aufmerksamkeit auf den musikalischen Diskurs gegeben, der uns durch die verschiedenen Abschnitte des Stücks auf fliessende Weise führt.
 
 * * *
 

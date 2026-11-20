@@ -1,5 +1,5 @@
 ---
-title: "#11 ascolta Acousmatic Listening Session"
+title: "#11 ascolta — Mario Mary"
 description: "Mario Mary, portrait"
 date: 2024-06-11T18:00:00
 weight: 11

@@ -1,5 +1,5 @@
 ---
-title: "#16 ascolta Acousmatic Listening Session"
+title: "#16 ascolta — B-Format Archiving"
 description: "B-Format Archiving – immersive access to the electroacoustic repertoire"
 date: 2025-10-16T18:00:00
 weight: 16

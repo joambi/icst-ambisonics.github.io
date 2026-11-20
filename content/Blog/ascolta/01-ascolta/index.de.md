@@ -1,5 +1,5 @@
 ---
-title: "#01 ascolta Akousmatische Hörstunde"
+title: "#01 ascolta — Jean-Claude Risset"
 description: "Ankündigung und Archiv der ascolta Akousmatischen Hörstunde mit Programm, Infos und Hördaten."
 date: 2019-11-26T18:00:00
 weight: 1
