@@ -1,6 +1,6 @@
 ---
 title: Blauert's Bands
-description: "Dokumentiert Blauerts Bänder sowie OSC-Routing und IEM MultiEQ-Frequenzbänder mit Workflow-Hinweisen zu Front/Back und Höhen."
+description: "Documents Blauert's Bands, the OSC routing and the IEM MultiEQ frequency bands, with workflow notes for front/back and height."
 date: 2025-05-16
 slug: blauerts-bands
 aliases:
