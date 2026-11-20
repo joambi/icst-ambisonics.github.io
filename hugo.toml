@@ -111,16 +111,30 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   parent = "learn"
 
 [[menu.main]]
-  name = "All Tutorials"
-  identifier = "learn-2"
+  name = "First session"
+  identifier = "learn-6"
   weight = 102
+  url = "/post/getting-started-icst-plugins-reaper/"
+  parent = "learn"
+
+[[menu.main]]
+  name = "Workflow"
+  identifier = "learn-5"
+  weight = 103
+  url = "/learn/ambisonics-workflow/"
+  parent = "learn"
+
+[[menu.main]]
+  name = "Tutorials"
+  identifier = "learn-2"
+  weight = 104
   url = "/post/"
   parent = "learn"
 
 [[menu.main]]
   name = "Videos"
   identifier = "learn-4"
-  weight = 104
+  weight = 105
   url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   parent = "learn"
 
@@ -180,7 +194,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   parent = "tools"
 
 [[menu.main]]
-  name = "Docs"
+  name = "Reference"
   identifier = "docs"
   weight = 300
   url = "/icst-ambisonics-plugins/"
@@ -255,26 +269,40 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   parent = "studio"
 
 [[menu.main]]
+  name = "Downloads"
+  identifier = "downloads"
+  weight = 305
+  url = "/blog/downloads/"
+  parent = "docs"
+
+
+
+[[menu.main]]
   name = "ASCOLTA"
-  identifier = "studio-4"
-  weight = 404
+  identifier = "ascolta"
+  weight = 450
   url = "/blog/ascolta/"
-  parent = "studio"
+
+[[menu.main]]
+  name = "Sessions"
+  identifier = "ascolta-0"
+  weight = 450
+  url = "/blog/ascolta/"
+  parent = "ascolta"
+
+[[menu.main]]
+  name = "Listening Guide"
+  identifier = "ascolta-1"
+  weight = 451
+  url = "/blog/ascolta-listening-guide/"
+  parent = "ascolta"
 
 [[menu.main]]
   name = "Listening"
-  identifier = "studio-5"
-  weight = 405
+  identifier = "ascolta-2"
+  weight = 452
   url = "/blog/sounding_future/"
-  parent = "studio"
-
-[[menu.main]]
-  name = "Downloads"
-  identifier = "downloads"
-  weight = 450
-  url = "/blog/downloads/"
-
-
+  parent = "ascolta"
 
 [taxonomies]
 series = "series"
@@ -310,16 +338,30 @@ month = "month"
   parent = "learn"
 
 [[languages.de.menus.main]]
-  name = "Alle Tutorials"
-  identifier = "learn-2"
+  name = "Erste Session"
+  identifier = "learn-6"
   weight = 102
+  url = "/de/post/getting-started-icst-plugins-reaper/"
+  parent = "learn"
+
+[[languages.de.menus.main]]
+  name = "Workflow"
+  identifier = "learn-5"
+  weight = 103
+  url = "/de/learn/ambisonics-workflow/"
+  parent = "learn"
+
+[[languages.de.menus.main]]
+  name = "Tutorials"
+  identifier = "learn-2"
+  weight = 104
   url = "/de/post/"
   parent = "learn"
 
 [[languages.de.menus.main]]
   name = "Videos"
   identifier = "learn-4"
-  weight = 104
+  weight = 105
   url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   parent = "learn"
 
@@ -379,7 +421,7 @@ month = "month"
   parent = "tools"
 
 [[languages.de.menus.main]]
-  name = "Doku"
+  name = "Referenz"
   identifier = "docs"
   weight = 300
   url = "/de/icst-ambisonics-plugins/"
@@ -454,24 +496,38 @@ month = "month"
   parent = "studio"
 
 [[languages.de.menus.main]]
+  name = "Downloads"
+  identifier = "downloads"
+  weight = 305
+  url = "/de/blog/downloads/"
+  parent = "docs"
+
+[[languages.de.menus.main]]
   name = "ASCOLTA"
-  identifier = "studio-4"
-  weight = 404
+  identifier = "ascolta"
+  weight = 450
   url = "/de/blog/ascolta/"
-  parent = "studio"
+
+[[languages.de.menus.main]]
+  name = "Sessions"
+  identifier = "ascolta-0"
+  weight = 450
+  url = "/de/blog/ascolta/"
+  parent = "ascolta"
+
+[[languages.de.menus.main]]
+  name = "Hörleitfaden"
+  identifier = "ascolta-1"
+  weight = 451
+  url = "/de/blog/ascolta-listening-guide/"
+  parent = "ascolta"
 
 [[languages.de.menus.main]]
   name = "Hören"
-  identifier = "studio-5"
-  weight = 405
+  identifier = "ascolta-2"
+  weight = 452
   url = "/de/blog/sounding_future/"
-  parent = "studio"
-
-[[languages.de.menus.main]]
-  name = "Downloads"
-  identifier = "downloads"
-  weight = 450
-  url = "/de/blog/downloads/"
+  parent = "ascolta"
 
 [[menu.footer]]
   name = "About"
