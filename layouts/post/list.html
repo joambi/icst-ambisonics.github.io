@@ -2,9 +2,16 @@
   {{ $pages := .RegularPages.ByDate.Reverse }}
   {{ $isDe := eq .Site.Language.Lang "de" }}
   {{ $startPage := site.GetPage "post/getting-started-icst-plugins-reaper" }}
-  {{ $quickPage := site.GetPage "post/getting-started-icst-plugins-reaper" }}
+  {{ $quickPage := site.GetPage "post/hoa-ordnung-wahl-praxis" }}
   {{ $hoaPage := site.GetPage "post/stereo-to-hoa7-session" }}
   {{ $oscPage := site.GetPage "post/osc-syntax-for-the-icst-ambiencoder-plugin" }}
+
+  {{ $groupDefs := slice
+    (dict "en" "Start here" "de" "Einstieg" "descEn" "First session, HOA7 workflow, and choosing the right order." "descDe" "Erste Session, HOA7-Workflow und die Wahl der richtigen Ordnung." "slugs" (slice "getting-started-icst-plugins-reaper" "stereo-to-hoa7-session" "hoa-ordnung-wahl-praxis"))
+    (dict "en" "Recording, monitoring, delivery" "de" "Aufnahme, Monitoring, Abgabe" "descEn" "From microphone to master: recording, binaural monitoring, rotation, export, Atmos." "descDe" "Vom Mikrofon zum Master: Aufnahme, Binaural-Monitoring, Rotation, Export, Atmos." "slugs" (slice "ambisonics-mikrofon-a-format-b-format" "binaural-monitoring-icst-workflow" "szenen-rotation-b-format-transform" "b-format-export-reaper" "ambisonics-to-atmos-bed"))
+    (dict "en" "Composition and movement" "de" "Komposition und Bewegung" "descEn" "Composing with space, animating sources, markers and scripts." "descDe" "Komponieren mit Raum, Quellen animieren, Marker und Skripte." "slugs" (slice "komposition-in-ambisonics" "gp-manipulation" "icst-animator-choreographer" "motion-markers-reaper" "circle_selected" "icst-scripts"))
+    (dict "en" "Understanding the decoder" "de" "Den Decoder verstehen" "descEn" "Method, coordinates, scaling, filters and multi-decoder setups." "descDe" "Methodik, Koordinaten, Skalierung, Filter und Multi-Decoder-Setups." "slugs" (slice "decoder-methodological-context" "xyz-vs-aed-koordinatensysteme" "decoder-skalierung-laufzeitkompensation" "decoder-filter-praxisbeispiele" "multi-decoder-mode" "Blauertsche_Bänder"))
+    (dict "en" "Integration: Ableton, Max, sensors" "de" "Integration: Ableton, Max, Sensoren" "descEn" "Connecting the plugins to other tools." "descDe" "Die Plugins mit anderen Werkzeugen verbinden." "slugs" (slice "ableton_reaper" "icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication" "GYROSC" "icst-grapes")) }}
 
   {{ with .Content }}
     <div class="post {{ with $.Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
@@ -19,9 +26,9 @@
       <h2>{{ if $isDe }}Empfohlene Einstiege{{ else }}Recommended Starts{{ end }}</h2>
       <p class="archive__intro">
         {{ if $isDe }}
-          Beginne mit einem klaren Einstiegspfad statt mit einer rohen Chronologie. Diese vier Guides decken Erstsetup, schnelle Umsetzung, Produktionslogik und technische Referenz ab.
+          Beginne mit einem klaren Einstiegspfad statt mit einer rohen Chronologie. Diese vier Guides decken Erstsetup, Ordnungswahl, Produktionslogik und technische Referenz ab.
         {{ else }}
-          Start with a clear entry path instead of a raw archive. These four guides cover first setup, quick execution, production thinking, and technical reference.
+          Start with a clear entry path instead of a raw archive. These four guides cover first setup, choosing an order, production thinking, and technical reference.
         {{ end }}
       </p>
       <div class="home-cards">
@@ -47,12 +54,12 @@
           </div>
         </div>
         <div class="home-card">
-          <h4>{{ if $isDe }}Schneller Session-Bau{{ else }}Fast Session Build{{ end }}</h4>
+          <h4>{{ if $isDe }}Welche Ordnung?{{ else }}Which order?{{ end }}</h4>
           <p>
             {{ if $isDe }}
-              Klickorientierte 20-Minuten-Checkliste für Encoder, B-Format-Bus, Decoder und Monitoring-Test.
+              Entscheidungshilfe: FOA, HOA3 oder HOA7 — Kanalzahl, Rechenlast und Lautsprecher-Setup.
             {{ else }}
-              Click-by-click 20-minute checklist for encoder, B-format bus, decoder, and monitoring test.
+              Decision guide: FOA, HOA3 or HOA7 — channel count, CPU load and loudspeaker setup.
             {{ end }}
           </p>
           {{ with $quickPage }}
@@ -62,7 +69,7 @@
             </div>
           {{ end }}
           <div class="hero__links">
-            <a class="hero__link hero__link--primary" href="{{ "post/getting-started-icst-plugins-reaper/" | relLangURL }}">
+            <a class="hero__link hero__link--primary" href="{{ "post/hoa-ordnung-wahl-praxis/" | relLangURL }}">
               {{ if $isDe }}Zur Anleitung{{ else }}Open guide{{ end }}
             </a>
           </div>
@@ -104,7 +111,7 @@
             </div>
           {{ end }}
           <div class="hero__links">
-            <a class="hero__link hero__link--primary" href="{{ "post/osc-syntax-for-the-icst-ambiencoder-plugin/" | relLangURL }}">
+            <a class="hero__link hero__link--primary" href="{{ "reference/osc-and-control/" | relLangURL }}">
               {{ if $isDe }}Referenz öffnen{{ else }}Open reference{{ end }}
             </a>
           </div>
@@ -178,11 +185,14 @@
     .tutorial-search__input:focus{outline:none;border-color:#6086b4;box-shadow:0 0 0 2px rgba(96,134,180,.3)}
     .tutorial-filters{align-items:center}
     .tutorial-filters__label{min-width:8.5rem;font-size:1.15rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#9f9f9f}
+    .tutorial-group{margin:2rem 0 0}
+    .tutorial-group__title{font-size:1.8rem;margin:0 0 .2rem}
+    .tutorial-note{margin-top:2rem}
   </style>
   <div class="docs-index animated fadeInDown">
     <div data-tutorials-root>
     <div class="archive__heading">
-      {{ if $isDe }}Alle Tutorials{{ else }}All Tutorials{{ end }}
+      {{ if $isDe }}Alle Tutorials nach Thema{{ else }}All tutorials by topic{{ end }}
     </div>
     <p class="archive__intro">
       {{ if $isDe }}
@@ -206,8 +216,14 @@
     </div>
     {{ end }}
     <p class="archive__intro" data-result-count aria-live="polite"></p>
+    {{ range $g := $groupDefs }}
+    <div class="tutorial-group" data-tgroup>
+    <h3 class="tutorial-group__title">{{ cond $isDe $g.de $g.en }}</h3>
+    <p class="archive__intro">{{ cond $isDe $g.descDe $g.descEn }}</p>
     <div class="docs-index__chapters">
-      {{ range $i, $page := $pages }}
+      {{ range $i, $slug := $g.slugs }}
+      {{ $page := site.GetPage (printf "post/%s" $slug) }}
+      {{ if $page }}
         {{ $tags := slice }}
         {{ with $page.Params.tags }}
           {{ range . }}
@@ -279,7 +295,13 @@
           <i class="fas fa-chevron-right docs-index__chapter-arrow"></i>
         </a>
       {{ end }}
+      {{ end }}
     </div>
+    </div>
+    {{ end }}
+    <p class="archive__intro tutorial-note">
+      {{ if $isDe }}OSC-Syntax, Key Messages und FX-Mapping stehen in der <a href="/de/reference/osc-and-control/">Referenz: OSC und Steuerung</a>. Neuigkeiten im <a href="/de/blog/">Studio Blog</a>.{{ else }}OSC syntax, key messages and FX mapping live in the <a href="/reference/osc-and-control/">reference: OSC and Control</a>. News is in the <a href="/blog/">Studio Blog</a>.{{ end }}
+    </p>
     </div>
   </div>
   <script>
@@ -315,6 +337,9 @@
           var ok = matches(card);
           card.classList.toggle("is-hidden", !ok);
           if (ok) shown++;
+        });
+        Array.prototype.forEach.call(root.querySelectorAll("[data-tgroup]"), function (tg) {
+          tg.style.display = tg.querySelector(".docs-index__chapter:not(.is-hidden)") ? "" : "none";
         });
         groups.forEach(function (g) {
           var key = g.getAttribute("data-group");
