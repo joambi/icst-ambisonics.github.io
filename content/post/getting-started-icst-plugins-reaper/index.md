@@ -27,29 +27,46 @@ This is the short path. The full technical reference is [Step by Step Setup](/ic
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">The session structure from steps 1 to 4: every source gets its own AmbiEncoder, all feed one B-format bus, decoding happens once at the output.</figcaption>
 </figure>
 
+## Shortcut: start from a project template
+If you want to skip the setup, open `ICST_AmbiPlugins_MonoEncoder.RPP` (installed with the plugins). It already contains one encoder track, the 64-channel `Bformat-Master` and the decoder, so steps 1 and 2 are done. Start at step 3 and use the checks of steps 1 and 2 as a quick sanity test. See [Track Templates](/icst-ambisonics-plugins/05_open_track_templates/) for all templates.
+
 ## Prerequisites
 - Reaper and the ICST Ambisonics Plugins are installed ([Installation](/icst-ambisonics-plugins/02_installation/)).
-- Recommended: SWS and ReaPack.
-- Audio interface with a suitable I/O configuration.
+- Recommended: SWS and ReaPack (extensions for scripts and updates inside REAPER).
+- Audio interface with a suitable I/O configuration. For the first session, headphones are enough; a loudspeaker array is not required.
 - Basic knowledge of tracks, buses and plugin inserts.
-- Rule for the whole session: use **64 channels** on all Ambisonics tracks and check the routing after each step.
+- Rule for the whole session: use **64 channels** on all Ambisonics tracks and check the routing after each step. 64 channels hold up to 7th order; lower orders simply use fewer of them (see [Which Ambisonics Order Do I Need?](/post/hoa-ordnung-wahl-praxis/)).
 
 ## Step 1 - Monitoring backbone
 Create a new session, set the sample rate and create the track `Bformat-Master` (64 channels). Insert the decoder on the monitoring path and choose the speaker preset.
+
+**Check (about 5 minutes):** in the decoder use *test all speakers*. Each loudspeaker should sound in turn, in the position and order you expect. If not, fix the preset before going on.
+
 - Docs: [Quick Start](/icst-ambisonics-plugins/04_quick_start/), [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/), [Track Templates](/icst-ambisonics-plugins/05_open_track_templates/)
 
 ## Step 2 - Add a source
 Add one source track with the AmbiEncoder and route its output to `Bformat-Master`. Check the channel assignment in the routing window.
+
+**Check (about 5 minutes):** play a mono test sound. With the encoder at the front you should hear it in front, and the meter of `Bformat-Master` should move. No signal there means the routing is broken.
+
 - Docs: [How it Works](/icst-ambisonics-plugins/03_how_it_works/), [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
 
 ## Step 3 - Move the source in space
-Move the source in X/Y/Z, watch it in the radar view and save a preset. Then record a short motion pass and check that the automation plays back.
+Move the source in X/Y/Z, watch it in the radar view and save a preset. Then record a short motion pass: set the encoder position parameters to *Write* or *Touch* automation, move the source while the project plays, then stop.
+
+**Check (about 5 minutes):** play the section again without touching anything. The source should repeat your movement. For markers and scripted motion see [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/).
 
 ## Step 4 - Binaural check
 Add a binaural path in parallel for headphone monitoring and run a short level and listening test.
 
+Use a binaural decoder such as the free IEM BinauralDecoder or the SPARTA binaural decoder. It sits on a separate track that is fed from `Bformat-Master`, parallel to the speaker decoder. Never let both paths play audibly at the same time. Details: [Binaural Monitoring in the ICST Workflow](/post/binaural-monitoring-icst-workflow/).
+
+**Check (about 5 minutes):** with headphones, the source at the front should be heard in front, and moving it to the left should move it to the left.
+
 ## Step 5 - Render
-Render from `Bformat-Master` as multichannel and verify the output channels.
+Render from `Bformat-Master` as multichannel and verify the output channels. The detailed render settings are on [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/).
+
+**Check (about 5 minutes):** the file has the channel count of your order (64 for the setup above). Import it into a new track and play it through the decoder.
 
 ## Common first errors
 
@@ -58,11 +75,12 @@ Render from `Bformat-Master` as multichannel and verify the output channels.
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Where the first session usually breaks.</figcaption>
 </figure>
 
-- Source not routed to `Bformat-Master`; the chain `Source -> Bformat-Master -> Decoder` is broken.
-- A non-64-channel track in the signal path.
-- Wrong decoder preset for the speaker setup.
-- Binaural track fed from the wrong source.
-- OSC port mismatch when external control is enabled.
+- Source not routed to `Bformat-Master`; the chain `Source -> Bformat-Master -> Decoder` is broken. *Fix:* check the track routing and the channel assignment (step 2).
+- A non-64-channel track in the signal path. *Fix:* set every Ambisonics track to 64 channels.
+- Wrong decoder preset for the speaker setup. *Fix:* load the matching preset and run *test all speakers* (step 1).
+- Binaural track fed from the wrong source. *Fix:* feed it only from `Bformat-Master` (step 4).
+- OSC port mismatch when external control is enabled. *Fix:* compare the ports in REAPER, the controller and the plugin; see [OSC and Control](/reference/osc-and-control/).
+- No sound at all. *Fix:* mute/solo state, the decoder output routing to your interface, then the master send of `Bformat-Master`.
 
 ## Next steps
 - [Stereo to HOA7: A Step-by-Step Session](/post/stereo-to-hoa7-session/): a complete project from start to render

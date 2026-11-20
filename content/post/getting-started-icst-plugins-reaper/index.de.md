@@ -27,29 +27,46 @@ Das ist der kurze Weg. Die vollständige technische Referenz ist [Schritt-für-S
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Die Session-Struktur aus den Schritten 1 bis 4: Jede Quelle hat einen eigenen AmbiEncoder, alle speisen einen B-Format-Bus, dekodiert wird einmal am Ausgang.</figcaption>
 </figure>
 
+## Abkürzung: mit einer Projektvorlage starten
+Wenn du das Setup überspringen willst, öffne `ICST_AmbiPlugins_MonoEncoder.RPP` (wird mit den Plugins installiert). Sie enthält bereits einen Encoder-Track, den 64-Kanal-`Bformat-Master` und den Decoder, die Schritte 1 und 2 sind damit erledigt. Starte bei Schritt 3 und nutze die Prüfungen aus Schritt 1 und 2 als schnellen Funktionstest. Alle Vorlagen siehst du unter [Spurvorlagen](/de/icst-ambisonics-plugins/05_open_track_templates/).
+
 ## Voraussetzungen
 - Reaper und die ICST Ambisonics Plugins sind installiert ([Installation](/icst-ambisonics-plugins/02_installation/)).
-- Empfohlen: SWS und ReaPack.
-- Audio-Interface mit passender I/O-Konfiguration.
+- Empfohlen: SWS und ReaPack (Erweiterungen für Skripte und Updates in REAPER).
+- Audio-Interface mit passender I/O-Konfiguration. Für die erste Session reichen Kopfhörer, ein Lautsprecherarray ist nicht nötig.
 - Grundkenntnisse zu Tracks, Bussen und Plugin-Insert-Slots.
-- Regel für die ganze Session: **64 Kanäle** auf allen Ambisonics-Tracks und das Routing nach jedem Schritt prüfen.
+- Regel für die ganze Session: **64 Kanäle** auf allen Ambisonics-Tracks und das Routing nach jedem Schritt prüfen. 64 Kanäle reichen bis zur 7. Ordnung; niedrigere Ordnungen nutzen einfach weniger davon (siehe [Welche Ambisonics-Ordnung brauche ich?](/de/post/hoa-ordnung-wahl-praxis/)).
 
 ## Schritt 1 - Monitoring-Backbone
 Lege eine neue Session an, setze die Sample Rate und erstelle den Track `Bformat-Master` (64 Kanäle). Setze den Decoder in den Monitoring-Pfad und wähle das Lautsprecher-Preset.
+
+**Prüfung (ca. 5 Minuten):** Nutze im Decoder *test all speakers*. Jeder Lautsprecher sollte nacheinander an der erwarteten Position und in der erwarteten Reihenfolge erklingen. Wenn nicht, korrigiere das Preset, bevor du weitermachst.
+
 - Docs: [Schnellstart](/icst-ambisonics-plugins/04_quick_start/), [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/), [Spurvorlagen](/icst-ambisonics-plugins/05_open_track_templates/)
 
 ## Schritt 2 - Quelle hinzufügen
 Lege einen Quelltrack mit dem AmbiEncoder an und route den Ausgang auf `Bformat-Master`. Prüfe die Kanalzuordnung im Routing-Fenster.
+
+**Prüfung (ca. 5 Minuten):** Spiele einen Mono-Testklang ab. Steht der Encoder vorne, hörst du ihn vorne, und der Pegelanzeiger von `Bformat-Master` bewegt sich. Kein Signal dort bedeutet: Das Routing ist unterbrochen.
+
 - Docs: [Wie es funktioniert](/icst-ambisonics-plugins/03_how_it_works/), [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
 
 ## Schritt 3 - Quelle im Raum bewegen
-Bewege die Quelle in X/Y/Z, beobachte sie in der Radar-Ansicht und speichere ein Preset. Nimm dann eine kurze Bewegung auf und prüfe, ob die Automation abgespielt wird.
+Bewege die Quelle in X/Y/Z, beobachte sie in der Radar-Ansicht und speichere ein Preset. Nimm dann eine kurze Bewegung auf: Stelle die Positionsparameter des Encoders auf *Write*- oder *Touch*-Automation, bewege die Quelle bei laufender Wiedergabe und stoppe.
+
+**Prüfung (ca. 5 Minuten):** Spiele die Stelle erneut ab, ohne etwas zu berühren. Die Quelle sollte deine Bewegung wiederholen. Für Marker und skriptgesteuerte Bewegung siehe [ICST Ambi Motion Markers](/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/).
 
 ## Schritt 4 - Binaural-Kontrolle
 Setze parallel einen binauralen Pfad fürs Kopfhörer-Monitoring auf und mache einen kurzen Pegel- und Hörtest.
 
+Nutze einen binauralen Decoder wie den kostenlosen IEM BinauralDecoder oder den SPARTA-Binauraldecoder. Er sitzt auf einem eigenen Track, der von `Bformat-Master` gespeist wird, parallel zum Lautsprecher-Decoder. Lass nie beide Pfade gleichzeitig hörbar laufen. Details: [Binaurales Monitoring im ICST-Workflow](/de/post/binaural-monitoring-icst-workflow/).
+
+**Prüfung (ca. 5 Minuten):** Mit Kopfhörern sollte eine Quelle, die vorne steht, auch vorne klingen, und beim Bewegen nach links auch links.
+
 ## Schritt 5 - Rendern
-Rendere aus `Bformat-Master` als Multichannel und prüfe die Ausgangskanäle.
+Rendere aus `Bformat-Master` als Multichannel und prüfe die Ausgangskanäle. Die genauen Render-Einstellungen stehen auf [B-Format in REAPER rendern](/de/icst-ambisonics-plugins/12_render_bformat/).
+
+**Prüfung (ca. 5 Minuten):** Die Datei hat die Kanalzahl deiner Ordnung (64 im obigen Setup). Importiere sie auf einen neuen Track und spiele sie über den Decoder ab.
 
 ## Häufige Startfehler
 
@@ -58,11 +75,12 @@ Rendere aus `Bformat-Master` als Multichannel und prüfe die Ausgangskanäle.
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Wo die erste Session meistens bricht.</figcaption>
 </figure>
 
-- Quelle nicht auf `Bformat-Master` geroutet; die Kette `Source -> Bformat-Master -> Decoder` ist unterbrochen.
-- Nicht-64-Kanal-Track im Signalpfad.
-- Falsches Decoder-Preset für das Lautsprecher-Setup.
-- Binaural-Track von falscher Quelle gespeist.
-- OSC-Port-Mismatch bei externer Steuerung.
+- Quelle nicht auf `Bformat-Master` geroutet; die Kette `Source -> Bformat-Master -> Decoder` ist unterbrochen. *Lösung:* Track-Routing und Kanalzuordnung prüfen (Schritt 2).
+- Nicht-64-Kanal-Track im Signalpfad. *Lösung:* Jeden Ambisonics-Track auf 64 Kanäle stellen.
+- Falsches Decoder-Preset für das Lautsprecher-Setup. *Lösung:* Passendes Preset laden und *test all speakers* ausführen (Schritt 1).
+- Binaural-Track von falscher Quelle gespeist. *Lösung:* Nur von `Bformat-Master` speisen (Schritt 4).
+- OSC-Port-Mismatch bei externer Steuerung. *Lösung:* Ports in REAPER, Controller und Plugin vergleichen; siehe [OSC und Steuerung](/de/reference/osc-and-control/).
+- Gar kein Ton. *Lösung:* Mute/Solo-Status, Decoder-Ausgangsrouting auf dein Interface, dann den Master-Send von `Bformat-Master` prüfen.
 
 ## Nächste Schritte
 - [Von Stereo zu HOA7: Schritt-für-Schritt-Session](/de/post/stereo-to-hoa7-session/): ein komplettes Projekt vom Start bis zum Render
