@@ -13,7 +13,7 @@ Nutze diese Seite, wenn du den Grundworkflow schon kennst und während der Bearb
 
 **Aktionen in Encoder und Decoder verfügbar:**
 
-- **Vergrößern:** _Rechte Maustaste Klick / Mausrad_
+- **Vergrössern:** _Rechte Maustaste Klick / Mausrad_
 - **Verkleinern**: _Shift + Rechte Maustaste Klick_ / _Mausrad_
 - **Zoom zurücksetzen:** _Home-Taste (OSX: Fn + Linke Pfeil)_
 - **Mehrere Punkte auswählen:** _Shift + Klick auf mehrere Punkte oder Rechteckbereich mit Drag-Drop auswählen_
@@ -22,7 +22,7 @@ Nutze diese Seite, wenn du den Grundworkflow schon kennst und während der Bearb
 
 - **Mehrere Gruppen auswählen:** _Shift + Klick auf mehrere Gruppenpunkte_
 - **Nur Gruppenpunkt(e) verschieben:** _Shift + Drag-Drop ausgewählte Gruppenpunkt(e)_
-- **Gruppe dehnen:** _Alt -> Dehn-Symbol -> Maus nach oben/unten zum Vergrößern/Verkleinern_
+- **Gruppe dehnen:** _Alt -> Dehn-Symbol -> Maus nach oben/unten zum Vergrössern/Verkleinern_
 - **Punkt(e) um Gruppenpunkt(e) rotieren:** _Alt -> Drag-Drop Rotate-Around-Group-Symbol_
 - **Gruppe(n) um Ursprung rotieren:** _Alt -> Drag-Drop Rotate-Around-Origin-Symbol_
 

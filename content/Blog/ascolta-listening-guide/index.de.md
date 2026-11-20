@@ -49,7 +49,7 @@ Sondern auch: **Wo, wie und mit welcher Wirkung klingt es im Raum?**
 
 ## Vorbereitung auf eine Hörsitzung
 
-Betritt den Raum einige Minuten vor dem ersten Klangereignis, nimm deinen Hörplatz ein und lasse die Stille auf dich wirken. Diese kurze Eingewöhnung unterstützt die bewusste Wahrnehmung des Raumes vor Beginn des Stücks, einschließlich des Nachhalls, der Größe und des Grundrauschens.
+Betritt den Raum einige Minuten vor dem ersten Klangereignis, nimm deinen Hörplatz ein und lasse die Stille auf dich wirken. Diese kurze Eingewöhnung unterstützt die bewusste Wahrnehmung des Raumes vor Beginn des Stücks, einschliesslich des Nachhalls, der Grösse und des Grundrauschens.
 
 Formuliere vor dem Hören konkrete Fragen, die deine Aufmerksamkeit auf sich ziehen. Zum Beispiel:
 
@@ -117,17 +117,17 @@ Das folgende Raster hilft, wesentliche räumliche Parameter systematisch zu beob
 | **Spread / Diffusion** | Ist der Klang punktförmig oder flächig verteilt? | Punkt, breit, diffus, Feld |
 | **Bewegung** | Bewegt sich die Quelle, und wenn ja wie? | statisch, Rotation, linear, Implosion |
 | **Schichtung** | Wie viele räumliche Ebenen sind gleichzeitig aktiv? | eine, zwei, mehrere, Überlagerung |
-| **Envelopment** | Werde ich von Klang umhüllt, oder höre ich ihn von außen? | keine, gering, deutlich, vollständig |
+| **Envelopment** | Werde ich von Klang umhüllt, oder höre ich ihn von aussen? | keine, gering, deutlich, vollständig |
 
 #### Drei Räume nach Smalley
 
 Denis Smalleys Konzept des *space-form* (1997, 2007) bietet eines der nützlichsten analytischen Raster für räumliche elektroakustische Musik. Er unterscheidet drei sich überlagernde Kategorien räumlicher Erfahrung:
 
-**Perspektivischer Raum** ist das Gefühl der Hörenden für ihre Position innerhalb einer realen oder imaginierten akustischen Umgebung — Distanz, Raumgröße, der Eindruck, von einem bestimmten Standpunkt aus zu hören. In einem Ambisonics-Stück kann sich dieser abrupt verschieben: Plötzlich befindet man sich in einer halligen Kathedrale, dann in einem schalltoten Raum, dann im Freien. *Hörauftrag: Skizziere den imaginierten Raum. Verändert er sich? Wann?*
+**Perspektivischer Raum** ist das Gefühl der Hörenden für ihre Position innerhalb einer realen oder imaginierten akustischen Umgebung — Distanz, Raumgrösse, der Eindruck, von einem bestimmten Standpunkt aus zu hören. In einem Ambisonics-Stück kann sich dieser abrupt verschieben: Plötzlich befindet man sich in einer halligen Kathedrale, dann in einem schalltoten Raum, dann im Freien. *Hörauftrag: Skizziere den imaginierten Raum. Verändert er sich? Wann?*
 
 **Quellengebundener Raum** beschreibt Raum, der an erkennbaren Klangobjekten haftet — die physische Distanz und Position, die mit einem Schritt, einer Stimme oder einem Instrument verbunden ist. Bewegt sich ein quellengebundener Klang im Ambisonics-Feld, ist die Bewegung nicht nur als Positionswechsel wahrnehmbar, sondern als narratives Ereignis: Er näherte sich, er umkreiste, er entfernte sich. *Hörauftrag: Verfolge ein quellengebundenes Objekt vom Einsatz bis zum Verschwinden.*
 
-**Spektraler Raum** ist Raum, der aus spektraler und texturaler Struktur entsteht statt aus Lokalisation — der Eindruck, dass hohe Frequenzen die obere Hemisphäre besetzen, während tiefe den Boden umgeben, oder dass Helligkeit und Dichte gerichtet verteilt sind. Diese Kategorie ist am wenigsten unmittelbar offensichtlich, aber oft die kompositorisch bedeutsamste. *Hörauftrag: Schließe im zweiten Durchgang die Augen und versuche, die spektrale Geografie des Stücks zu spüren — wo lebt das hohe Material? Wo konzentriert sich das dichte Material?*
+**Spektraler Raum** ist Raum, der aus spektraler und texturaler Struktur entsteht statt aus Lokalisation — der Eindruck, dass hohe Frequenzen die obere Hemisphäre besetzen, während tiefe den Boden umgeben, oder dass Helligkeit und Dichte gerichtet verteilt sind. Diese Kategorie ist am wenigsten unmittelbar offensichtlich, aber oft die kompositorisch bedeutsamste. *Hörauftrag: Schliesse im zweiten Durchgang die Augen und versuche, die spektrale Geografie des Stücks zu spüren — wo lebt das hohe Material? Wo konzentriert sich das dichte Material?*
 
 Für eine kompositorische Perspektive auf dieselbe Methodik — mit detaillierten Fallstudien und psychoakustischer Analyse — siehe den [Blog](/de/blog/) für kommende Werkanalysen.
 
@@ -148,7 +148,7 @@ Envelopment — das Gefühl, umgeben zu sein, statt vor einer Quelle positionier
 Erzeugt das Stück den Eindruck von Nah und Fern, oder liegt alles in derselben wahrgenommenen Distanz? Gestaffelte Distanzen — ein naher Vordergrund gegen einen diffusen fernen Hintergrund — erzeugen eine räumliche Tiefe, die der Perspektive in der visuellen Komposition entspricht.
 
 **5. Trägt Raum semantisches Gewicht?**
-Dies ist die interpretativste Frage: Bedeutet die räumliche Organisation im Kontext des Stücks etwas? In Natasha Barretts Arbeit ([#10 ascolta](/de/blog/ascolta/10-ascolta/), März 2024) ist räumliche Bewegung Teil eines kompositorischen Arguments über Innen und Außen, Einschluss und Befreiung. In der akusmatischen Tradition steht das in Beziehung zu Schaeffers *écoute réduite* (reduziertes Hören) — nur dass die Reduktion hier *räumlich* ist: Versuche, ausschließlich auf das räumliche Verhalten zu hören und Klangfarbe und Tonhöhe vollständig auszuklammern.
+Dies ist die interpretativste Frage: Bedeutet die räumliche Organisation im Kontext des Stücks etwas? In Natasha Barretts Arbeit ([#10 ascolta](/de/blog/ascolta/10-ascolta/), März 2024) ist räumliche Bewegung Teil eines kompositorischen Arguments über Innen und Aussen, Einschluss und Befreiung. In der akusmatischen Tradition steht das in Beziehung zu Schaeffers *écoute réduite* (reduziertes Hören) — nur dass die Reduktion hier *räumlich* ist: Versuche, ausschliesslich auf das räumliche Verhalten zu hören und Klangfarbe und Tonhöhe vollständig auszuklammern.
 
 ### Übergeordnete Analysefragen
 
@@ -181,7 +181,7 @@ Neben den körperlichen und kognitiven Dimensionen existiert eine dritte, ebenso
 Diese Reaktionen sind keine Störung der Analyse, sondern Teil des Materials. Entscheidend ist, sie möglichst genau zu beschreiben. Statt nur „bedrohlich“ zu notieren, frage: Wodurch entsteht diese Wirkung?
 
 - Kommt sie aus Richtung, Höhe, Distanz oder Bewegung?
-- Bleibt der Klang außerhalb meines Körpers, oder scheint er mich zu umschließen?
+- Bleibt der Klang ausserhalb meines Körpers, oder scheint er mich zu umschliessen?
 
 Ein naher, rückwärtiger Klang kann bedrängend wirken, da er keine frontale Auflösung erhält. Ein diffuser, hoch liegender Klang kann dagegen Weite oder Entrückung erzeugen, weil er sich nicht als einzelner Punkt fixieren lässt. So wird aus einer subjektiven Reaktion eine analytisch verwertbare Beobachtung.
 

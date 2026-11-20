@@ -83,7 +83,7 @@ flowchart TB
 
 ## Warum diese Unterscheidung wichtig ist
 
-Wer die Geschichte von Ambisonics nur als eine einzige Linie darstellt, übersieht leicht, dass zwischen den frühen FOA-Arbeiten der 1970er Jahre und der systematischen HOA-Entwicklung rund um 2000 ein deutlicher methodischer Sprung liegt. FOA ist nicht "veraltet", sondern oft die pragmatische Wahl. HOA ist nicht einfach "mehr Kanäle", sondern eine andere Größenordnung an szenischer Präzision und Render-Flexibilitaet.
+Wer die Geschichte von Ambisonics nur als eine einzige Linie darstellt, übersieht leicht, dass zwischen den frühen FOA-Arbeiten der 1970er Jahre und der systematischen HOA-Entwicklung rund um 2000 ein deutlicher methodischer Sprung liegt. FOA ist nicht "veraltet", sondern oft die pragmatische Wahl. HOA ist nicht einfach "mehr Kanäle", sondern eine andere Grössenordnung an szenischer Präzision und Render-Flexibilitaet.
 
 ## Quellen und Referenzen
 

@@ -169,7 +169,7 @@ Max 8.0 oder neuer. Das Paket ist über den Max Package Manager verfügbar.
 <summary class="faq-question">Was ist der Unterschied zwischen Plugins und Tools?</summary>
 <div class="faq-answer">
 
-Die Plugins laufen in REAPER als VST/AU-Effects und sind für Session-basiertes Multitrack-Arbeiten ausgelegt. Die Tools sind Max/MSP-Externals für Live-Spatialisation, algorithmische Komposition und eigene Patches außerhalb einer DAW.
+Die Plugins laufen in REAPER als VST/AU-Effects und sind für Session-basiertes Multitrack-Arbeiten ausgelegt. Die Tools sind Max/MSP-Externals für Live-Spatialisation, algorithmische Komposition und eigene Patches ausserhalb einer DAW.
 
 </div>
 </details>

@@ -89,7 +89,7 @@ Polar AED:        339.12   0.00     3.328
 
 ## Typisches Praxisszenario
 
-**Szenario:** Du baust ein Oktagon-Array auf (8 Lautsprecher gleichmäßig im Kreis, alle auf Ohrhöhe, alle 3 Meter vom Zentrum entfernt).
+**Szenario:** Du baust ein Oktagon-Array auf (8 Lautsprecher gleichmässig im Kreis, alle auf Ohrhöhe, alle 3 Meter vom Zentrum entfernt).
 
 Mit **AED** geht das schnell:
 

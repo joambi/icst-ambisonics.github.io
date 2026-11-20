@@ -24,7 +24,7 @@ Nutze **MultiEncoder**, wenn:
 
 - du viele Quellen in einer Oberfläche steuern willst
 - du Quellengruppen brauchst
-- du größere Bewegungsstrukturen aufnehmen oder editieren willst
+- du grössere Bewegungsstrukturen aufnehmen oder editieren willst
 - du OSC-basierte Interaktion mit mehreren Quellen planst
 
 ## Was die Encoder machen
@@ -96,7 +96,7 @@ MultiEncoder ist besonders dann sinnvoll, wenn räumliche Bewegung nicht nur ind
 
 - mehrere Quellen können gruppiert werden
 - Gruppen lassen sich relativ zu ihrem Gruppenzentrum bewegen
-- größere räumliche Choreografien können aufgenommen und verfeinert werden
+- grössere räumliche Choreografien können aufgenommen und verfeinert werden
 
 Nutze Gruppen, wenn die Szene als zusammenhängendes Objekt funktionieren soll und nicht als Sammlung unabhängiger Einzelquellen.
 

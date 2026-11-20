@@ -49,9 +49,9 @@ Mit steigender Ordnung werden Klangquellen schärfer lokalisierbar. Bei 1st Orde
 
 Ein einfaches Bild: Ordnung verhält sich ähnlich wie Bildauflösung bei einem Foto. FOA ist 480p – erkennbar, aber unscharf. HOA3 ist 1080p – gut für fast alle Zwecke. HOA7 ist 4K – man braucht ein sehr gutes Wiedergabesystem, um den Unterschied zu hören.
 
-### Sweetspot-Größe
+### Sweetspot-Grösse
 
-Der Sweetspot ist der Bereich, in dem das Schallfeld korrekt reproduziert wird. Er wächst mit der Ordnung. Bei FOA ist er bei mittleren und hohen Frequenzen kaum größer als ein Kopf. Bei HOA3 reicht er für eine kleine Gruppe von Zuhörer:innen. Für große Räume und viele Personen ist HOA5 oder HOA7 relevant.
+Der Sweetspot ist der Bereich, in dem das Schallfeld korrekt reproduziert wird. Er wächst mit der Ordnung. Bei FOA ist er bei mittleren und hohen Frequenzen kaum grösser als ein Kopf. Bei HOA3 reicht er für eine kleine Gruppe von Zuhörer:innen. Für grosse Räume und viele Personen ist HOA5 oder HOA7 relevant.
 
 In der Praxis: Wer für Studio-Produktion und Kopfhörer arbeitet, merkt den Sweetspot-Unterschied kaum. Wer für ein 31-Speaker-Konzertsystem produziert, macht den Unterschied zwischen HOA3 und HOA7 je nach Repertoire und Saal hörbar.
 
@@ -97,7 +97,7 @@ HOA3 ist der **produktive Standard** für die meisten Ambisonics-Produktionen he
 
 ### Wann braucht es HOA5 oder HOA7?
 
-- Große Konzerthäuser mit 40+ Lautsprechern (z.B. Kuppelinstallationen, IMAX-ähnliche Systeme)
+- Grosse Konzerthäuser mit 40+ Lautsprechern (z.B. Kuppelinstallationen, IMAX-ähnliche Systeme)
 - Archive und Masterdateien, die für zukünftige höhere Systeme ausgelegt sind
 - Spezielle Höhenabbildung in dichten 3D-Arrays
 - Akademische oder Forschungs-Kontexte mit Präzisionsanforderungen
@@ -114,7 +114,7 @@ Für binaurales Kopfhörer-Monitoring gilt: der wahrnehmbare Qualitätssprung li
 |---|---|---|---|
 | FOA | 4 | sehr gering | problemlos auch auf älteren Systemen |
 | HOA3 | 16 | moderat | Standard auf modernem Rechner, kein Problem |
-| HOA5 | 36 | merklich | große Sessions erfordern Freeze-Strategie |
+| HOA5 | 36 | merklich | grosse Sessions erfordern Freeze-Strategie |
 | HOA7 | 64 | hoch | bei vielen Quellen: Freeze oder Render-to-File |
 
 In REAPER: Wenn HOA7-Spuren einzufrieren sind, *Freeze*-Funktion nutzen (rechtsklick auf Track → Freeze). Der eingefrorene Track wird als voll berechnetes Multichannel-File intern gespeichert und verursacht keine Encoder-CPU mehr – nur noch Bus-Routing.

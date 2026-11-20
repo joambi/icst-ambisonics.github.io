@@ -33,7 +33,7 @@ Die Unterscheidung zwischen Punkt und Fläche ist dabei entscheidend: Ein einzel
 Die Frage nach der Publikumsperspektive ist eine der grundlegendsten in der Raumkomposition überhaupt. Ist das Publikum inmitten des Klangs — umgeben, eingeschlossen, immersiv? Oder blickt es auf eine Szene, in der Klänge wie Figuren auf einer Bühne agieren? Beide Ansätze sind legitim, aber sie verlangen völlig andere kompositorische Entscheidungen, besonders in Bezug auf Distanz und Raumtiefe.
 
 > **Note**
-> Was passiert musikalisch, wenn man die Augen schließt? Wenn die räumliche Idee auch dann verständlich bleibt, ist sie meist stark. Das ist ein nützlicher Test, weil er den Raum von der visuellen Erwartung trennt — Ambisonics wirkt nicht durch Sehen, sondern durch Hören.
+> Was passiert musikalisch, wenn man die Augen schliesst? Wenn die räumliche Idee auch dann verständlich bleibt, ist sie meist stark. Das ist ein nützlicher Test, weil er den Raum von der visuellen Erwartung trennt — Ambisonics wirkt nicht durch Sehen, sondern durch Hören.
 
 ---
 
@@ -72,7 +72,7 @@ Für Ambisonics hilft es, musikalische Situationen zu planen:
 - **Szene 2:** einzelne Bewegungen — erste gerichtete Energie
 - **Szene 3:** Rotation des ganzen Raums — das Klangfeld selbst bewegt sich
 - **Szene 4:** Verdichtung / Nähe — räumliche Dichte steigt, Distanzen schrumpfen
-- **Szene 5:** Auflösung / Entfernung — Quellen wandern nach außen oder oben
+- **Szene 5:** Auflösung / Entfernung — Quellen wandern nach aussen oder oben
 
 Das ist kein verbindliches Schema, sondern ein Beispiel dafür, wie Raumbewegung als Dramaturgie funktioniert. Man kann Szenen auch umkehren, verschachteln oder gleichzeitig spielen. Entscheidend ist, dass Raumveränderungen nicht zufällig entstehen, sondern kompositorisch begründet sind — genauso wie ein Crescendo nicht zufällig beginnt.
 
@@ -100,7 +100,7 @@ Raum ist wie Dynamik: Wenn alles ständig maximal räumlich ist, hört man den U
 
 ## 5. Monitoring in mehreren Modi
 
-Eine Ambisonics-Komposition, die nur binauraler über Kopfhörer überprüft wurde, ist nicht fertig. Binaural und Lautsprecher klingen fundamental verschieden — nicht weil eines falsch ist, sondern weil sie physisch andere Dinge tun. Kopfhörer simulieren Lokalisation über HRTF-Filter; Lautsprecher erzeugen ein physisches Schallfeld im Raum. Besonders drei Aspekte weichen regelmäßig voneinander ab:
+Eine Ambisonics-Komposition, die nur binauraler über Kopfhörer überprüft wurde, ist nicht fertig. Binaural und Lautsprecher klingen fundamental verschieden — nicht weil eines falsch ist, sondern weil sie physisch andere Dinge tun. Kopfhörer simulieren Lokalisation über HRTF-Filter; Lautsprecher erzeugen ein physisches Schallfeld im Raum. Besonders drei Aspekte weichen regelmässig voneinander ab:
 
 - **Tiefenstaffelung:** Binaural übertreibt Nähe und Ferne häufig; auf Lautsprechern wirken Distanzen oft flacher.
 - **Höheninformation:** Elevation ist binaural stark HRTF-abhängig und individuell verschieden; auf Lautsprechern mit echter Höhenebene ist sie physisch erfahrbar.
@@ -111,9 +111,9 @@ Teste deine Komposition mindestens in:
 - binaural über Kopfhörer — für schnelle Checks, Feinarbeit, Remote-Arbeit
 - Stereo-Downmix — wichtig für Übersetzbarkeit und eventuelle Streaming-Verwendung
 - echtem Lautsprecherdecoder, falls möglich — für das eigentliche räumliche Erlebnis
-- kleiner und großer Lautstärke — Lokalisation und Raumgefühl verändern sich mit dem Pegel
+- kleiner und grosser Lautstärke — Lokalisation und Raumgefühl verändern sich mit dem Pegel
 
-Wer keine Möglichkeit hat, regelmäßig auf einem echten Array zu hören, sollte zumindest den Stereo-Downmix ernst nehmen. Eine Komposition, die im Downmix klanglich zusammenbricht, hat ein strukturelles Problem.
+Wer keine Möglichkeit hat, regelmässig auf einem echten Array zu hören, sollte zumindest den Stereo-Downmix ernst nehmen. Eine Komposition, die im Downmix klanglich zusammenbricht, hat ein strukturelles Problem.
 
 ---
 
@@ -140,7 +140,7 @@ Bei Performances gilt: lieber ein robustes System als ein maximal komplexes, das
 
 ## 7. Performance-Strategie
 
-Live-Kontrolle über einen Ambisonics-Raum bedeutet: aus einem potenziell sehr großen Parameterraum genau das auswählen, was musikalisch sinnvoll ist — und alles andere festschreiben oder automatisieren.
+Live-Kontrolle über einen Ambisonics-Raum bedeutet: aus einem potenziell sehr grossen Parameterraum genau das auswählen, was musikalisch sinnvoll ist — und alles andere festschreiben oder automatisieren.
 
 Entscheide vorher, was live kontrolliert wird:
 
@@ -175,7 +175,7 @@ Ambisonics als Instrument — das bedeutet auch: üben. Nicht das technische Sys
 
 Eine einfache Performance-Partitur hilft enorm: nicht die volle Kompositionspartitur, sondern eine Aktionsliste — Zeit, Szene, Aktion, Risiko, Backup. Sie muss während der Aufführung auf einen Blick lesbar sein.
 
-Das klingt nach Überplanung, ist aber das Gegenteil: Wer die kritischen Momente kennt und vorbereitet hat, kann im Konzert freier agieren — weil er weiß, wo die Sicherheitsnetz sind.
+Das klingt nach Überplanung, ist aber das Gegenteil: Wer die kritischen Momente kennt und vorbereitet hat, kann im Konzert freier agieren — weil er weiss, wo die Sicherheitsnetz sind.
 
 ---
 

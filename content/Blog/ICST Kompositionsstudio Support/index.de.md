@@ -105,7 +105,7 @@ languageCode: de
 <div class="support-checklist">
   <div class="support-checklist__item">
     <strong>1. RME-Treiber installieren</strong>
-    MadiFace USB anschließen und prüfen, ob das Interface in macOS oder in der DAW erscheint.
+    MadiFace USB anschliessen und prüfen, ob das Interface in macOS oder in der DAW erscheint.
   </div>
   <div class="support-checklist__item">
     <strong>2. DriverKit erlauben</strong>
@@ -157,7 +157,7 @@ Installiere den passenden RME-Treiber vor deinem Studiotermin, wenn du mit dem e
 
 ## Video: Curved Screen und DisplayLink
 
-Für den großen Studio-Screen wird DisplayLink benötigt. Installiere den [DisplayLink Manager](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) vor der Session und erlaube die nötigen Bildschirmfreigabe-Rechte in macOS.
+Für den grossen Studio-Screen wird DisplayLink benötigt. Installiere den [DisplayLink Manager](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) vor der Session und erlaube die nötigen Bildschirmfreigabe-Rechte in macOS.
 
 <ol class="support-steps">
   <li><a href="https://www.synaptics.com/products/displaylink-graphics/downloads/macos" target="_blank" rel="noopener noreferrer">DisplayLink Manager</a> installieren.</li>

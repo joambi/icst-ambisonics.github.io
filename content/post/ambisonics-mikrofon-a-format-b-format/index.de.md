@@ -25,7 +25,7 @@ Ambisonics-Mikrofone nehmen den Raum auf – nicht als Stereo, nicht als Surroun
 
 ## A-Format: Was aus dem Mikrofon kommt
 
-Ein Ambisonics-Mikrofon besteht aus vier Kapseln in tetraedrischer Anordnung – typischerweise eine Kapsel oben vorne links, eine unten vorne rechts, eine unten hinten links, eine oben hinten rechts. Jede Kapsel nimmt ihr eigenes Signal auf. Diese vier rohen Kapsel-Signale heißen **A-Format**.
+Ein Ambisonics-Mikrofon besteht aus vier Kapseln in tetraedrischer Anordnung – typischerweise eine Kapsel oben vorne links, eine unten vorne rechts, eine unten hinten links, eine oben hinten rechts. Jede Kapsel nimmt ihr eigenes Signal auf. Diese vier rohen Kapsel-Signale heissen **A-Format**.
 
 A-Format klingt nicht wie Ambisonics. Es ist das Rohmaterial: vier leicht unterschiedliche Perspektiven desselben Raums, mit Kapseldistanz-Artefakten und ohne direkten Bezug zu W, X, Y, Z. Du kannst A-Format nicht direkt in den ICST-Workflow einspeisen.
 
@@ -103,7 +103,7 @@ Beim ersten Abhören prüfen, ob die Hauptrichtung stimmt. Ein Ambisonics-Mikrof
 First-Order-Ambisonics aus einem 4-Kapsel-Mikrofon beschreibt das Schallfeld mit begrenzter räumlicher Auflösung. Das hat praktische Konsequenzen:
 
 **Gut geeignet für:**
-- Raumatmosphären (Atmo, Ambience, Außenaufnahmen)
+- Raumatmosphären (Atmo, Ambience, Aussenaufnahmen)
 - Diffuse Klangtexturen
 - Raumakustik-Impulse (Konvolutions-Hall)
 - Natürliche Klangumgebungen für kompositorischen Hintergrund

@@ -33,7 +33,7 @@ Wir erstellen die Vorlage Schritt für Schritt von oben nach unten.
    ![01_dec](01_Decoder_A.gif)
 
 > [!Tip]
-> Erstelle alle Spuren standardmäßig mit **64 Kanälen** und achte auf das Routing.
+> Erstelle alle Spuren standardmässig mit **64 Kanälen** und achte auf das Routing.
 
 #### 2. Decoder-Routing einrichten
 
@@ -262,7 +262,7 @@ Wenn alles passt:
 3. **Abtastrate** -> **48,000 Hz**
 4. **Kanäle** -> 64 (für **Ambisonics 7. Ordnung**)
 5. **Mehrkanalformat** -> **Mehrkanaldateien**
-6. **Unterstützung großer Dateien** -> **Wave/RF64**
+6. **Unterstützung grosser Dateien** -> **Wave/RF64**
 7. **Rendern** klicken
 
 Render-Info:

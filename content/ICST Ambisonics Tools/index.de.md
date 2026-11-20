@@ -57,7 +57,7 @@ Vorteile:
 Nachteile:
 > * Erfordert Max-Programmierkenntnisse
 > * Nicht zeitbasiert.
-> * (Außer Envelop in Ableton)
+> * (Ausser Envelop in Ableton)
 
 **Empfehlung:**
 

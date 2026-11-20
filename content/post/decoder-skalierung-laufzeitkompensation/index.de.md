@@ -1,13 +1,13 @@
 ---
 title: Skalierung und Laufzeitkompensation im ICST AmbiDecoder
-description: "Wie die Scaling-Funktion des ICST AmbiDecoders Raumgröße und Lautsprecherabstände berücksichtigt und warum Laufzeitkompensation für geometrisch kohärente Wiedergabe entscheidend ist."
+description: "Wie die Scaling-Funktion des ICST AmbiDecoders Raumgrösse und Lautsprecherabstände berücksichtigt und warum Laufzeitkompensation für geometrisch kohärente Wiedergabe entscheidend ist."
 date: 2026-03-21T11:00:00+01:00
 year: 2026
 month: 2026-03
 weight: 32
 tags: ["decoder", "skalierung", "delay", "laufzeitkompensation", "setup", "installation", "konfiguration"]
 key_points:
-  - "Die Scaling-Funktion skaliert alle Lautsprecherkoordinaten auf eine reale Raumgröße"
+  - "Die Scaling-Funktion skaliert alle Lautsprecherkoordinaten auf eine reale Raumgrösse"
   - "Laufzeit-Delays werden automatisch aus den Distanzangaben berechnet"
   - "Ohne Laufzeitkompensation bei ungleichen Abständen entsteht ein inkohärentes Klangbild"
 difficulty: "intermediate"
@@ -27,7 +27,7 @@ Diese Seite erklärt, wie die Scaling- und Delay-Kompensationsfunktion des ICST 
 
 ## Das Problem: Lautsprecher stehen nicht alle gleich weit weg
 
-In idealen Setups – z.B. einem gleichmäßigen Oktagon oder einer Kugelform – haben alle Lautsprecher denselben Abstand vom Hörzentrum. Die Signale kommen also gleichzeitig an.
+In idealen Setups – z.B. einem gleichmässigen Oktagon oder einer Kugelform – haben alle Lautsprecher denselben Abstand vom Hörzentrum. Die Signale kommen also gleichzeitig an.
 
 In realen Räumen ist das fast nie der Fall:
 
@@ -42,7 +42,7 @@ Wenn Lautsprecher unterschiedlich weit entfernt sind, erreichen die Signale das 
 
 ## Die Lösung: Delay-Kompensation
 
-Der ICST AmbiDecoder berechnet aus den Distanzangaben jedes Lautsprechers automatisch einen individuellen Delay-Wert. Weiter entfernte Lautsprecher erhalten ein größeres vorangestelltes Delay – so dass alle Signale (akustisch gesehen) gleichzeitig am Hörzentrum ankommen.
+Der ICST AmbiDecoder berechnet aus den Distanzangaben jedes Lautsprechers automatisch einen individuellen Delay-Wert. Weiter entfernte Lautsprecher erhalten ein grösseres vorangestelltes Delay – so dass alle Signale (akustisch gesehen) gleichzeitig am Hörzentrum ankommen.
 
 Die Delay-Werte sind in der Speaker-Tabelle sichtbar:
 
@@ -64,10 +64,10 @@ Die Delay-Werte sind in der Speaker-Tabelle sichtbar:
 
 Wenn du ein Lautsprecher-Preset für einen Raum konfigurierst, sind die Koordinaten manchmal in normierten Einheiten angegeben (z.B. als Vektoren der Länge 1, also alle Lautsprecher auf einer Einheitskugel). Das ist praktisch für Presets, die in verschiedenen Räumen funktionieren sollen – aber es bildet die reale Geometrie nicht ab.
 
-Die **Scaling-Funktion** erlaubt dir, alle Lautsprecherkoordinaten auf eine tatsächliche Raumgröße zu skalieren:
+Die **Scaling-Funktion** erlaubt dir, alle Lautsprecherkoordinaten auf eine tatsächliche Raumgrösse zu skalieren:
 
 1. Klicke auf **Scaling** im Speaker-Settings-Fenster.
-2. Gib die Raummaße ein: **X** (Breite), **Y** (Tiefe), **Z** (Höhe) in Metern.
+2. Gib die Raummasse ein: **X** (Breite), **Y** (Tiefe), **Z** (Höhe) in Metern.
 3. Der Decoder skaliert alle Koordinaten proportional – und berechnet danach die Laufzeit-Delays neu.
 
 Dabei werden automatisch aktualisiert:
@@ -80,7 +80,7 @@ Dabei werden automatisch aktualisiert:
 
 ## Wann brauchst du Scaling?
 
-**Szenario 1: Preset aus einer anderen Raumgröße**
+**Szenario 1: Preset aus einer anderen Raumgrösse**
 Du verwendest ein vorhandenes Oktagon-Preset, das für einen 6×6 m Raum konfiguriert wurde. Dein Raum ist aber 8×9 m. Mit Scaling passt du das Preset in wenigen Sekunden an, ohne jeden Lautsprecher manuell editieren zu müssen.
 
 **Szenario 2: Normiertes Preset, realer Raum**

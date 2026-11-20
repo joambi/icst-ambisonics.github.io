@@ -101,7 +101,7 @@ Welche Dateien du kopierst, hängt vom Ausgangsstand ab:
 
 Der Ordner ist ein macOS-Bundle, unter Windows werden deshalb nur die plattformneutralen Teile verwendet:
 
-1. REAPER als **Portable-Installation** einrichten (zum Beispiel `C:\ICST_Ambi_Reaper`), einmal starten und wieder schließen.
+1. REAPER als **Portable-Installation** einrichten (zum Beispiel `C:\ICST_Ambi_Reaper`), einmal starten und wieder schliessen.
 2. SWS und ReaPack installieren, danach über ReaPack **js_ReaScriptAPI**.
 3. Aus dem *scripts-only*-Zip `Scripts\ICST`, `Data\toolbar_icons`, `Docs`, `OSC`, `ICST_Player_Presets`, `reaper-menu.ini` und `reaper-kb.ini` in diesen Ordner kopieren. In einer bestehenden Installation überschreiben die beiden ini-Dateien eigene Toolbars und Tastenbelegungen.
 4. Plugins mit ihren Installern einrichten (ICST-Pakete, AmbiEncoder/AmbiDecoder von [ambisonics.ch](/de/icst-ambisonics-plugins/02_installation/), [IEM Plug-in Suite](https://plugins.iem.at)).

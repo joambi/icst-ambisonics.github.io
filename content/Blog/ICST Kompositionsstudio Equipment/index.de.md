@@ -39,7 +39,7 @@ Zentrale Ausstattung und praktische Checkliste für die Arbeit im ICST Kompositi
   <summary>Systemdetails</summary>
   <div class="home-accordion__actions">
     <a class="hero__link hero__link--primary" href="https://www.apple.com/mac-pro/">Mac Pro (28-Core Intel, macOS Sequoia 15.4)</a>
-    <a class="hero__link" href="https://www.synaptics.com/products/displaylink-graphics/downloads/macos">Großbildschirm + DisplayLink-Adapter</a>
+    <a class="hero__link" href="https://www.synaptics.com/products/displaylink-graphics/downloads/macos">Grossbildschirm + DisplayLink-Adapter</a>
     <a class="hero__link" href="https://rme-audio.de/de_madiface-usb.html">RME MadiFace</a>
     <a class="hero__link" href="https://lawo.com/produkte/nova73-hd/?lang=de">LAWO Kreuzschiene</a>
   </div>

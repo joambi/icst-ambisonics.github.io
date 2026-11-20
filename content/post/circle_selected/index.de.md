@@ -67,7 +67,7 @@ tool: ["AmbiEncoder", "Lua"]
 - **Startwinkel:** Dreht den Kreis.
 - **Uhrzeigersinn:** Reihenfolge invertieren.
 - **Winkel-Abstand:** Skaliert den Winkel zwischen den Punkten.
-- **Abstandszuwachs:** Jeder folgende Punkt kann weiter außen liegen.
+- **Abstandszuwachs:** Jeder folgende Punkt kann weiter aussen liegen.
 
 **Apply Kreis:** 👉 Überträgt die Parameter auf die aktivierten Punkte.
 
@@ -101,7 +101,7 @@ tool: ["AmbiEncoder", "Lua"]
 
 ## 🎨 Visualisierung
 - Im Fenster siehst du eine Echtzeit-Darstellung:
-  - Weiße Punkte = aktuelle Positionen der ausgewählten Punkte.
+  - Weisse Punkte = aktuelle Positionen der ausgewählten Punkte.
   - Linien verbinden die Punkte in Reihenfolge.
   - Blauer Kreis = maximaler Bewegungsradius (Random Range).
 
@@ -115,7 +115,7 @@ tool: ["AmbiEncoder", "Lua"]
 
 ## ✨ Tipps & Hinweise
 - Wähle nur die Punkte aus, die du brauchst → übersichtlicher und ressourcenschonend.
-- Speichere verschiedene Presets (kleiner Radius, großer Radius, etc.).
+- Speichere verschiedene Presets (kleiner Radius, grosser Radius, etc.).
 - Preset-Dateien sind einfache Textdateien und können auch extern editiert werden.
 
 ---

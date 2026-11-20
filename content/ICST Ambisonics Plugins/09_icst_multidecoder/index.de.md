@@ -79,7 +79,7 @@ Der MultiDecoder ersetzt die Grundlogik des Decoders nicht, sondern erweitert si
 3. **Abstimmung**  
    Erst dann Ordnung, Gewichtung, Gain und Filterung vergleichen, um zu hören, **wie** sich die Ebenen wahrnehmungsbezogen unterscheiden.
 
-Praktisch heißt das: keine Abstimmungs-Experimente starten, solange Geometrie oder Laufzeit noch unklar sind.
+Praktisch heisst das: keine Abstimmungs-Experimente starten, solange Geometrie oder Laufzeit noch unklar sind.
 
 > [!tip]
 > **Decoder-Serie:**

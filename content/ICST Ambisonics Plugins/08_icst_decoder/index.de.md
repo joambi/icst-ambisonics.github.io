@@ -87,7 +87,7 @@ Lege drei 64-Kanal-Spuren an:
 Diese Trennung hält die Session übersichtlich und vereinfacht spätere Fehlersuche deutlich.
 
 > [!note]
-> Der Decoder ist nicht bloß ein Lautsprecher-Router. Er projiziert ein **B-Format-Schallfeld** auf ein reales Lautsprecher-Array.
+> Der Decoder ist nicht bloss ein Lautsprecher-Router. Er projiziert ein **B-Format-Schallfeld** auf ein reales Lautsprecher-Array.
 > Deshalb beeinflussen Lautsprechergeometrie, Ambisonics-Ordnung, Gewichtung, Delay und Filterung das wahrgenommene Klangbild.
 >
 > Wenn du den konzeptionellen Hintergrund möchtest, siehe:
@@ -130,7 +130,7 @@ Diese Reihenfolge ist wichtig: zuerst die Geometrie verlässlich machen, dann di
 Die Gewichtung verschiebt den Kompromiss zwischen räumlicher Fokussierung und Stabilität.
 
 - **Max-rE:** meist der beste Ausgangspunkt für klare Lokalisation und fokussierte Abbildungen
-- **In-Phase:** oft stabiler bei unregelmäßigen Arrays oder schwierigen Hörpositionen
+- **In-Phase:** oft stabiler bei unregelmässigen Arrays oder schwierigen Hörpositionen
 - **Basic:** nützlich als neutrale Referenz beim Vergleich des Verhaltens
 
 ## Kontrolle pro Lautsprecher

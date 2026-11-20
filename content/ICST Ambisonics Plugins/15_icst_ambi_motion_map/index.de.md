@@ -141,7 +141,7 @@ Das Fenster gliedert sich in drei Bereiche:
 Beim ersten Start sind alle 64 Sources aktiviert und haben automatisch zugewiesene Formen (Auto-Round-Robin). Es gibt drei Wege, eine Source ein- oder auszuschalten:
 
 - **Klick auf das ✓-Kästchen** in der „On"-Spalte — schaltet die Source ein oder aus.
-- **Klick auf das Source-Label** (z.B. S0, S1) — gleicher Effekt, aber größere Klickfläche.
+- **Klick auf das Source-Label** (z.B. S0, S1) — gleicher Effekt, aber grössere Klickfläche.
 - **Shift+Klick auf ein Source-Label** — aktiviert alle Sources von der aktuell ausgewählten bis zur angeklickten (Bereichsauswahl).
 
 In der unteren Leiste stehen **Schnellauswahl-Buttons**: `All Src`, `None Src`, `S0-7`, `S8-15` für schnelle Mehrfachauswahl.
@@ -165,7 +165,7 @@ Jede Zeile hat **16 Form-Buttons**. Klick auf einen Button weist diese Bewegungs
 | **Step** | `step` | Vier diskrete Positionsschritte |
 | **Zig** | `zigzag` | Schnelles X/Y-Zickzack |
 | **Circ** | `circle` | Vollkreis in der XY-Ebene |
-| **Spir** | `spiral` | Expandierende Spirale von innen nach außen |
+| **Spir** | `spiral` | Expandierende Spirale von innen nach aussen |
 | **Four** | `fourier_xyz` | Komplexe 3D-Bahn aus summierten Harmonischen |
 | **Hrt** | `heart_curve` | Herzförmige parametrische Kurve |
 | **Card** | `cardioid` | Kardioid — eintropfige Herzkurve |
@@ -247,12 +247,12 @@ Alle Schieberegler sind ziehbar. **Shift** während des Ziehens halten für Fein
 
 | Parameter | Standard | Beschreibung |
 |-----------|----------|--------------|
-| **Scale (m)** | 1 | Raumgröße in Metern. Angezeigte Koordinaten sind in Scale-Einheiten (z.B. Scale 10 → Bereich −10..+10 m). REAPER-Automation und OSC arbeiten intern mit der Einheitskugel. Beliebigen Wert 1–1000 eingeben. |
+| **Scale (m)** | 1 | Raumgrösse in Metern. Angezeigte Koordinaten sind in Scale-Einheiten (z.B. Scale 10 → Bereich −10..+10 m). REAPER-Automation und OSC arbeiten intern mit der Einheitskugel. Beliebigen Wert 1–1000 eingeben. |
 | **Steps/sec** | 12 | Automationspunkte pro Sekunde. Höher = flüssiger, aber mehr Envelope-Daten. |
 | **Motion amount** | 1.00 | Globaler Amplituden-Multiplikator. 1.0 = voller Bereich; 0.5 = halbe Amplitude; Werte über 1.0 dehnen über den definierten Spread hinaus und werden an der Kugelgrenze geclampt. |
 | **X center** | 0.00 | Links–rechts-Zentrum des Bewegungsfeldes (−Scale..+Scale). |
 | **X spread** | 2.00 | Gesamter links–rechts-Bereich (0..2×Scale). **2.0 bei Scale 1 = voller −1..+1-Sweep** — der maximale Bereich, der in REAPER geschrieben werden kann. |
-| **Src offset** | 0.00 | Zeitlicher Versatz zwischen Sources entlang der Trajektorie. `0` = alle Sources am gleichen Punkt; `1` = Sources gleichmäßig über den gesamten Pfad verteilt. Damit lassen sich Sources mit gleicher Bewegungsform trennen. |
+| **Src offset** | 0.00 | Zeitlicher Versatz zwischen Sources entlang der Trajektorie. `0` = alle Sources am gleichen Punkt; `1` = Sources gleichmässig über den gesamten Pfad verteilt. Damit lassen sich Sources mit gleicher Bewegungsform trennen. |
 | **Y center** | 0.00 | Vertikal-Zentrum (−Scale = unten, 0 = Horizont, +Scale = oben). |
 | **Y spread** | 0.56 | Gesamter Vertikalbereich. |
 | **Z center** | 0.75 | Distanz-Zentrum (0 = nah, Scale = fern). |
@@ -264,7 +264,7 @@ Quantisierung kann auf **jede** Bewegungsform angewendet werden. Sie verwandelt 
 
 | Parameter | Standard | Beschreibung |
 |-----------|----------|--------------|
-| **Quant T** (Time / T) | 0 | Anzahl zeitlicher Rasterpunkte pro Figurenzyklus. `0` deaktiviert die Zeit-Quantisierung. Beispiel: `16` aktualisiert die Kurve an 16 gleichmäßig verteilten Zeitpunkten. |
+| **Quant T** (Time / T) | 0 | Anzahl zeitlicher Rasterpunkte pro Figurenzyklus. `0` deaktiviert die Zeit-Quantisierung. Beispiel: `16` aktualisiert die Kurve an 16 gleichmässig verteilten Zeitpunkten. |
 | **Q X / Q Y / Q Z** | 0.00 | Räumliche Rundungsstufe pro Achse in Scale-Einheiten (wie X/Y/Z center). `0` deaktiviert die Rundung; `0.1` rundet die jeweilige Achse auf 0.1-Schritte. |
 
 Das ist nützlich, wenn sich eine beliebige Form wie ein räumlicher Sequencer verhalten soll: Die Trajektorie wird in diskreten Zeiten abgetastet und/oder auf diskrete Positionen gerundet.
@@ -287,7 +287,7 @@ Der Bereich **Time Curve** steuert, wie die Animation zeitlich verläuft. Drei M
 
 | Modus | Verhalten |
 |-------|-----------|
-| **Linear** | Gleichmäßige Geschwindigkeit — konstantes Tempo (Standard). |
+| **Linear** | Gleichmässige Geschwindigkeit — konstantes Tempo (Standard). |
 | **Exp** | Langsamer Start, schnelles Ende — die Bewegung beschleunigt. |
 | **Log** | Schneller Start, langsames Ende — die Bewegung verlangsamt sich. |
 
@@ -451,12 +451,12 @@ Auf ein Source-Label im Grid klicken, um es auszuwählen und seine Koordinaten i
 
 - **Voller links–rechts-Sweep:** X center = 0, X spread = 2×Scale (z.B. `2.00` bei Scale 1, `20.00` bei Scale 10). So wird der volle −1..+1-Bereich in die REAPER-Automation geschrieben.
 - **Überlappende Sources trennen:** Wenn zwei Sources dieselbe Form haben und ihre Pfade sich überlagern, **Src offset** auf 0.3–0.5 erhöhen, um sie entlang der Trajektorie zu verteilen.
-- **Scale als Raumgröße:** Scale auf den tatsächlichen Raumradius setzen (z.B. 8 für einen 8-m-Raum). Die OSC-Vorschau sendet dann Distanzen in Metern — die REAPER-Automation bleibt unverändert.
+- **Scale als Raumgrösse:** Scale auf den tatsächlichen Raumradius setzen (z.B. 8 für einen 8-m-Raum). Die OSC-Vorschau sendet dann Distanzen in Metern — die REAPER-Automation bleibt unverändert.
 - Mit **Auto** + 3–4 aktiven Sources starten, um die verfügbaren Formen kennenzulernen.
 - **Steps/sec 6–8** für breite Sweeps; **20–30** für detaillierte Bewegungen.
 - **Motion amount** zunächst auf 1.0 — höhere Werte können an der Kugelgrenze geclampt werden.
 - **Clear existing deaktiviert**: Circle auf bestehende Linien-Automation schichten.
-- **Palindrome + Log**: schnell nach außen, sanft zurück — gut für reverbartige räumliche Ausklänge.
+- **Palindrome + Log**: schnell nach aussen, sanft zurück — gut für reverbartige räumliche Ausklänge.
 - Vor dem Experimentieren immer ein Preset speichern.
 - Render-Regionen nach Szenen benennen: `Intro_BFormat`, `Strophe_BFormat`, `Outro_BFormat`.
 - **Quantize für rhythmische Bewegung:** Quant T = 16 auf einer Circle-Form → 16 diskrete Positionen statt glattem Orbit — synchron zum Takt wenn Steps/sec zum Tempo passt.
@@ -493,7 +493,7 @@ Eine 0,1-Sekunden-Time-Selection bei 12 Steps/sec ergibt nur 1 Automationspunkt.
 
 ### Quantize zeigt keine sichtbare Wirkung
 
-**Quant T muss größer als 0 sein.** Der Standardwert `0` deaktiviert die Zeit-Quantisierung. Auf die gewünschte Schrittanzahl setzen (z.B. `16`) und sicherstellen, dass Steps/sec hoch genug ist, damit jedes Zeitfenster mindestens einen Automationspunkt enthält.
+**Quant T muss grösser als 0 sein.** Der Standardwert `0` deaktiviert die Zeit-Quantisierung. Auf die gewünschte Schrittanzahl setzen (z.B. `16`) und sicherstellen, dass Steps/sec hoch genug ist, damit jedes Zeitfenster mindestens einen Automationspunkt enthält.
 
 ---
 

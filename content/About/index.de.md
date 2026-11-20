@@ -47,7 +47,7 @@ Die Website wird mit [Hugo](https://gohugo.io/) und dem [Anatole](https://themes
 
 Zürcher Hochschule der Künste  
 Institute for Computer Music and Sound Technology  
-Toni-Areal, Pfingstweidstraße 96  
+Toni-Areal, Pfingstweidstrasse 96  
 Postfach, CH-8031 Zürich
 
 Administration ICST  

@@ -23,7 +23,7 @@ Level: Intermediate | **Audience:** Komponist:in, Student:in, technisch Interess
 
 Das B-Format beschreibt ein **Schallfeld** – keine einzelnen Objekte oder Kanäle. Dieses Feld besteht aus sphärischen Harmonischen, die den Klang in alle Richtungen des Raumes gleichzeitig beschreiben. Der Decoder **projiziert** dieses Feld auf eine konkrete Lautsprecheranordnung, ohne es zu verändern.
 
-Das unterscheidet Ambisonics grundlegend von reinen Vektorverfahren wie **VBAP** (Vector Base Amplitude Panning), bei dem jede Quelle explizit als diskretes Richtungsobjekt behandelt und auf die nächsten Lautsprecher verteilt wird. **AllRAD** nimmt eine Zwischenstellung ein: Es kombiniert eine Ambisonics-Dekodermatrix mit VBAP für unregelmäßige Lautsprecher-Layouts – das B-Format bleibt der Eingang, aber die Projektion verlässt das reine Feldparadigma. Der ICST AmbiDecoder bleibt durchgehend feldbasiert: keine Objektzerlegung, keine Richtungsselektion einzelner Quellen.
+Das unterscheidet Ambisonics grundlegend von reinen Vektorverfahren wie **VBAP** (Vector Base Amplitude Panning), bei dem jede Quelle explizit als diskretes Richtungsobjekt behandelt und auf die nächsten Lautsprecher verteilt wird. **AllRAD** nimmt eine Zwischenstellung ein: Es kombiniert eine Ambisonics-Dekodermatrix mit VBAP für unregelmässige Lautsprecher-Layouts – das B-Format bleibt der Eingang, aber die Projektion verlässt das reine Feldparadigma. Der ICST AmbiDecoder bleibt durchgehend feldbasiert: keine Objektzerlegung, keine Richtungsselektion einzelner Quellen.
 
 ---
 
@@ -31,7 +31,7 @@ Das unterscheidet Ambisonics grundlegend von reinen Vektorverfahren wie **VBAP**
 
 Sphärische Harmonische teilen die Oberfläche einer Kugel in Richtungskomponenten auf – ähnlich wie Fourier-Reihen eine Zeitkurve in Frequenzanteile zerlegen. Jede Ordnung verfeinert die Richtungsauflösung:
 
-- **0. Ordnung (W):** omnidirektional – gleichmäßige Energie in alle Richtungen
+- **0. Ordnung (W):** omnidirektional – gleichmässige Energie in alle Richtungen
 - **1. Ordnung (X, Y, Z):** achsenorientiert – vorne/hinten, links/rechts, oben/unten
 - **Höhere Ordnungen:** schärfere Lokalisation, mehr Kanäle
 
@@ -47,7 +47,7 @@ Das B-Format ist **rotationsinvariant**: Das Schallfeld lässt sich drehen, spie
 
 ## Geometrische Genauigkeit und psychoakustische Kohärenz
 
-**Geometrie:** Die Lautsprecherkoordinaten fließen direkt in die Dekodermatrix ein. Falsche Winkel oder Abstände erzeugen Abweichungen in der Raumabbildung – eingemessene Setups klingen deshalb besser als geschätzte.
+**Geometrie:** Die Lautsprecherkoordinaten fliessen direkt in die Dekodermatrix ein. Falsche Winkel oder Abstände erzeugen Abweichungen in der Raumabbildung – eingemessene Setups klingen deshalb besser als geschätzte.
 
 **Gewichtung – die eigentliche Entscheidung:** Hinter Basic, In-Phase und Max-rE steckt ein psychoakustisches Modell aus den 1970ern, das Michael Gerzon formulierte. Er definierte zwei Lokalisationsvektoren:
 
@@ -60,7 +60,7 @@ Ein guter Decoder hält beide Vektoren möglichst in dieselbe Richtung und so na
 |---|---|---|
 | **Basic** | ungewichtet, saubere Impulsantwort, aber Seitenkeulen bei Off-Center-Positionen | Tieffrequenzbereich, Sweetspot-Hören |
 | **Max-rE** | maximiert den Energy-Vektor, dämpft Seitenkeulen | Mittel- und Hochfrequenzen, Standard für die meisten Setups |
-| **In-Phase** | unterdrückt alle Seitenkeulen, breitere Hauptkeule | ungünstige Hörbedingungen, unregelmäßige Arrays |
+| **In-Phase** | unterdrückt alle Seitenkeulen, breitere Hauptkeule | ungünstige Hörbedingungen, unregelmässige Arrays |
 
 Für anspruchsvolle Setups empfehlen Forscher am IEM Graz ein **Dual-Band-Decoding**: Basic (oder ungewichtet) unterhalb von etwa 400–700 Hz, Max-rE darüber – mit automatischer Frequenzweiche. Das liefert die theoretisch beste Kombination aus Tiefton-Stabilität und Hochton-Lokalisationsschärfe.
 
@@ -72,7 +72,7 @@ Beim Einrichten eines neuen Setups gilt diese Reihenfolge:
 
 1. **Ordnung zuerst** – passend zu Quellmaterial und Lautsprecheranzahl
 2. **Geometrie dann** – Positionen so exakt wie möglich eintragen
-3. **Gewichtung zuletzt** – Max-rE als Standard, In-Phase bei unregelmäßigen Arrays
+3. **Gewichtung zuletzt** – Max-rE als Standard, In-Phase bei unregelmässigen Arrays
 4. **Skalierung wenn nötig** – für Laufzeitkompensation bei ungleichen Abständen
 
 Der Decoder trifft keine künstlerischen Entscheidungen – er rechnet exakt das aus, was du ihm mitteilst.
@@ -88,7 +88,7 @@ Diese theoretische Unterscheidung hat direkte praktische Folgen:
 - Decoder-Entscheidungen formen das Monitoring, aber sie definieren das Werk nicht neu.
 - Gewichtungen verändern, wie klar oder wie stabil räumliche Gesten wahrgenommen werden.
 
-In der Praxis heißt das: den **B-Format Master** stabil halten, Decoder-Einstellungen bewusst wählen und zentrale Passagen möglichst auf dem realen Ziel-Setup gegenhören.
+In der Praxis heisst das: den **B-Format Master** stabil halten, Decoder-Einstellungen bewusst wählen und zentrale Passagen möglichst auf dem realen Ziel-Setup gegenhören.
 
 ---
 
