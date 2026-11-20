@@ -1,6 +1,6 @@
 ---
-title: "ICST Studio-Case: Warum unser 31-Speaker-Setup so geroutet ist"
-description: "Praxis-Case zu Routing-Entscheidungen im 31-Lautsprecher-Ambisonics-Setup des ICST Kompositionsstudios — was wir gewählt haben, warum, und was es verhindert."
+title: "ICST Studio-Case: Warum unser 18-Speaker-Setup so geroutet ist"
+description: "Praxis-Case zu Routing-Entscheidungen im 18-Lautsprecher-Ambisonics-Setup des ICST Kompositionsstudios — was wir gewählt haben, warum, und was es verhindert."
 date: 2026-03-16T09:00:00+01:00
 weight: -1
 draft: false
@@ -16,7 +16,7 @@ tags: ["studio", "routing", "lautsprecher", "decoder", "case-study"]
 
 Jeder Mehrkanal-Ambisonics-Raum sammelt über die Zeit kleine Routing-Entscheidungen an — ein Bus hier hinzugefügt, ein Monitoring-Pfad dort umgeleitet. Im ICST Kompositionsstudio wurden diese Entscheidungen bewusst getroffen und dokumentiert, damit jede neue Residenz von einer stabilen, verstandenen Ausgangslage startet — nicht von einer rätselhaften Vorlage.
 
-Dieser Artikel erklärt die vier Kernentscheidungen hinter dem 31-Lautsprecher-REAPER-Session-Template des Studios, die Probleme, die jede Entscheidung löst, und die Fehlerquellen, die sie verhindert.
+Dieser Artikel erklärt die vier Kernentscheidungen hinter dem 18-Lautsprecher-REAPER-Session-Template des Studios, die Probleme, die jede Entscheidung löst, und die Fehlerquellen, die sie verhindert.
 
 ---
 
@@ -38,7 +38,7 @@ Der Decoder (AmbiDecoder) empfängt nur vom `Bformat-Master`. Er sitzt nicht in 
 
 ## Entscheidung 3 — Lautsprecher-Ausgang und Binaural-Monitoring als parallele Pfade
 
-Das Session-Template enthält zwei Monitoring-Pfade, die per Konvention sich gegenseitig ausschliessen: den 31-Lautsprecher-Hardware-Ausgang und ein Stereo-Binaural-Render. Beide dekodieren vom selben `Bformat-Master`. Das Umschalten zwischen ihnen ist eine Frage des Stummschaltens eines Ausgangsbusses und des Aktivierens des anderen — keine Routing-Änderungen, kein Umpatchen.
+Das Session-Template enthält zwei Monitoring-Pfade, die per Konvention sich gegenseitig ausschliessen: den 18-Lautsprecher-Hardware-Ausgang und ein Stereo-Binaural-Render. Beide dekodieren vom selben `Bformat-Master`. Das Umschalten zwischen ihnen ist eine Frage des Stummschaltens eines Ausgangsbusses und des Aktivierens des anderen — keine Routing-Änderungen, kein Umpatchen.
 
 **Warum:** Komponist:innen im Studio möchten ihren Mix häufig auf Kopfhörern prüfen, bevor sie eine Speaker-Session buchen, oder einen Binaural-Rohexport an Mitarbeitende schicken. Wenn Binaural-Monitoring eine Neuverkabelung der Session erfordert, wird es zur Unterbrechung und oft übersprungen. Mit parallelen Pfaden im Template ist es ein Ein-Klick-Toggle, der die räumliche Signalkette nicht berührt.
 
@@ -48,14 +48,14 @@ Das Session-Template enthält zwei Monitoring-Pfade, die per Konvention sich geg
 
 Alle Tracks im Template folgen einer Benennungskonvention: `[Nummer]_[Funktion]_[Format]`, z.B. `01_source_mono`, `10_bformat-master_HOA3`, `20_decoder_out`. Kanalzahlen sind pro Track-Typ festgelegt und im Template dokumentiert.
 
-**Warum:** In einer 31-Kanal-Umgebung kann ein einzelner falsch zugewiesener Kanal einen Ausfall produzieren, der von einem Hardware-Defekt des Lautsprechers nicht zu unterscheiden ist. Einheitliche Benennung bedeutet, dass ein:e Gastkünstler:in oder Techniker:in den Signalpfad in unter einer Minute prüfen kann, ohne jedes Plugin öffnen zu müssen. Es macht REAPERs Track-Liste auch als Dokumentation lesbar — eine neue Residenz kann die Session-Architektur verstehen, bevor Play gedrückt wird.
+**Warum:** In einer 18-Kanal-Umgebung kann ein einzelner falsch zugewiesener Kanal einen Ausfall produzieren, der von einem Hardware-Defekt des Lautsprechers nicht zu unterscheiden ist. Einheitliche Benennung bedeutet, dass ein:e Gastkünstler:in oder Techniker:in den Signalpfad in unter einer Minute prüfen kann, ohne jedes Plugin öffnen zu müssen. Es macht REAPERs Track-Liste auch als Dokumentation lesbar — eine neue Residenz kann die Session-Architektur verstehen, bevor Play gedrückt wird.
 
 ---
 
 ## Häufige Fehlerstellen, die dieses Setup verhindert
 
 - **Gemischte HOA-Ordnungen auf dem B-Format-Master:** Eine dritter-Ordnung-Quelle zu einer Session erster Ordnung hinzuzufügen degradiert stumm auf erste Ordnung, wenn beide denselben Master speisen. Das Template dokumentiert die Zielordnung prominent im Master-Track-Namen.
-- **Monitoring vom falschen Bus gespeist:** Ein direkter Send von einem Quell-Track zum Lautsprecher-Ausgang umgeht den Decoder und produziert ein Mono- oder Stereo-Signal durch ein 31-Lautsprecher-Array — sofort hörbar, aber verwirrend zu diagnostizieren. Die getrennten Ebenen machen dies im Template strukturell unmöglich.
+- **Monitoring vom falschen Bus gespeist:** Ein direkter Send von einem Quell-Track zum Lautsprecher-Ausgang umgeht den Decoder und produziert ein Mono- oder Stereo-Signal durch ein 18-Lautsprecher-Array — sofort hörbar, aber verwirrend zu diagnostizieren. Die getrennten Ebenen machen dies im Template strukturell unmöglich.
 - **Decoder-Preset passt nach einem System-Update nicht mehr:** Lautsprecher-Koordinatendateien werden im Template mit absolutem Pfad referenziert und im Dateinamen versioniert. Das Laden des falschen Presets ist die häufigste Ursache für falsch lokalisierte Quellen nach einem Software-Update.
 
 ---

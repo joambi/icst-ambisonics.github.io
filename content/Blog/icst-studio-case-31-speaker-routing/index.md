@@ -1,6 +1,6 @@
 ---
-title: "ICST Studio Case: Why Our 31-Speaker Setup Is Routed This Way"
-description: "A practical case study of routing decisions in the ICST 31-speaker Ambisonics environment — what we chose, why, and what it prevents."
+title: "ICST Studio Case: Why Our 18-Speaker Setup Is Routed This Way"
+description: "A practical case study of routing decisions in the ICST 18-speaker Ambisonics environment — what we chose, why, and what it prevents."
 date: 2026-03-16T09:00:00+01:00
 weight: -1
 draft: false
@@ -16,7 +16,7 @@ Level: Intermediate | **Audience:** Composers, technicians, and researchers work
 
 Every multi-speaker Ambisonics room accumulates small routing decisions over time — a bus added here, a monitoring path rerouted there. In the ICST Composition Studio, those decisions have been made deliberately and documented so that each new resident starts from a stable, understood baseline rather than a mystery template.
 
-This article explains the four core decisions behind the studio's 31-speaker REAPER session template, the problems each decision solves, and the failure modes it prevents.
+This article explains the four core decisions behind the studio's 18-speaker REAPER session template, the problems each decision solves, and the failure modes it prevents.
 
 ---
 
@@ -38,7 +38,7 @@ The decoder (AmbiDecoder) receives only from the `Bformat-Master`. It does not s
 
 ## Decision 3 — Speaker output and binaural monitoring as parallel paths
 
-The session template includes two monitoring paths that are mutually exclusive by convention: the 31-speaker hardware output and a stereo binaural render. Both decode from the same `Bformat-Master`. Switching between them is a matter of muting one output bus and unmuting the other — no routing changes, no re-patching.
+The session template includes two monitoring paths that are mutually exclusive by convention: the 18-speaker hardware output and a stereo binaural render. Both decode from the same `Bformat-Master`. Switching between them is a matter of muting one output bus and unmuting the other — no routing changes, no re-patching.
 
 **Why:** Composers working in the studio frequently want to check their mix on headphones before committing to a speaker session booking, or want to send a rough binaural export to a collaborator. If binaural monitoring requires re-routing the session, it becomes a disruption and often gets skipped. With parallel paths in the template, it is a one-click toggle that does not touch the spatial signal chain.
 
@@ -48,14 +48,14 @@ The session template includes two monitoring paths that are mutually exclusive b
 
 All tracks in the template follow a naming convention: `[number]_[function]_[format]`, e.g. `01_source_mono`, `10_bformat-master_HOA3`, `20_decoder_out`. Channel counts are fixed per track type and documented in the template.
 
-**Why:** In a 31-channel environment, a single misassigned channel can produce an output that is indistinguishable from a speaker hardware failure. Consistent naming means that a guest artist or technician can audit the signal path in under a minute without needing to open every plugin. It also makes REAPER's track list readable as documentation — a new resident can understand the session architecture before pressing play.
+**Why:** In a 18-channel environment, a single misassigned channel can produce an output that is indistinguishable from a speaker hardware failure. Consistent naming means that a guest artist or technician can audit the signal path in under a minute without needing to open every plugin. It also makes REAPER's track list readable as documentation — a new resident can understand the session architecture before pressing play.
 
 ---
 
 ## Common failure points this setup prevents
 
 - **Mixed HOA orders on the B-Format master:** Adding a third-order source to a first-order session silently degrades to first-order when both feed the same master. The template documents the target order prominently in the master track name.
-- **Monitoring fed from the wrong bus:** A direct send from a source track to the speaker output bypasses the decoder and produces a mono or stereo signal through a 31-speaker array — audible immediately, but confusing to diagnose. The separated layers make this structurally impossible in the template.
+- **Monitoring fed from the wrong bus:** A direct send from a source track to the speaker output bypasses the decoder and produces a mono or stereo signal through a 18-speaker array — audible immediately, but confusing to diagnose. The separated layers make this structurally impossible in the template.
 - **Decoder preset mismatch after a system update:** Speaker coordinate files are referenced by absolute path in the template and version-tagged in the filename. Loading the wrong preset is the most common cause of incorrectly localised sources after a software update.
 
 ---

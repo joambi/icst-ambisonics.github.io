@@ -7,7 +7,7 @@ draft: false
 
 Level: Beginner | **Audience:** Resident, visiting artist, composer, researcher, studio guest.
 
-Planning a residency or studio visit at the ICST Composition Studio? Follow these four steps to arrive prepared and get the most out of your time with the 31-speaker Ambisonics system.
+Planning a residency or studio visit at the ICST Composition Studio? Follow these four steps to arrive prepared and get the most out of your time with the 18-speaker Ambisonics system.
 
 <a class="hero__link" href="/downloads/icst-resident-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;Download as PDF</a>
 
@@ -21,7 +21,7 @@ Planning a residency or studio visit at the ICST Composition Studio? Follow thes
 <span class="onboarding-step__num">1</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Get to know the studio</p>
-<p class="onboarding-step__desc">The ICST Composition Studio at ZHdK houses a 31-speaker Ambisonics system, a large format mixing console, and a dedicated listening room. Read the overview to understand the space, the technical setup, and who to contact.</p>
+<p class="onboarding-step__desc">The ICST Composition Studio at ZHdK houses a 18-speaker Ambisonics system, a large format mixing console, and a dedicated listening room. Read the overview to understand the space, the technical setup, and who to contact.</p>
 <a class="hero__link hero__link--primary" href="/blog/icst-composer-studio-overview/">Studio Overview →</a>
 </div>
 </li>
@@ -38,7 +38,7 @@ Planning a residency or studio visit at the ICST Composition Studio? Follow thes
 <span class="onboarding-step__num">3</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Load the speaker settings and decoder presets</p>
-<p class="onboarding-step__desc">The ICST studio uses specific speaker coordinate files and decoder presets configured for the 31-speaker layout. Load these into REAPER at the start of your session to get the correct spatial output.</p>
+<p class="onboarding-step__desc">The ICST studio uses specific speaker coordinate files and decoder presets configured for the 18-speaker layout. Load these into REAPER at the start of your session to get the correct spatial output.</p>
 <a class="hero__link hero__link--primary" href="/blog/icst-kompositionsstudio-speaker-settings/">Speaker Settings →</a>
 <a class="hero__link" href="/blog/downloads/">All Downloads →</a>
 </div>

@@ -1,6 +1,6 @@
 ---
 title: ICST Kompositionsstudio Überblick
-description: "Studioraum, 31-Lautsprecher-Ambisonics-System und allgemeiner Überblick"
+description: "Studioraum, 18-Lautsprecher-Ambisonics-System und allgemeiner Überblick"
 date: 2025-05-05T16:43:00
 weight: 1
 group: "Studio"

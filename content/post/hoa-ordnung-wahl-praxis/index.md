@@ -231,14 +231,14 @@ In REAPER: if HOA7 tracks need to be frozen, use the *Freeze* function (right-cl
 
 
 
-You can change the order of a running session, but it requires adjustments:
+Start in HOA7 right away if your computer allows it – a later reduction is easy, a later increase is not. If you still need to change the order of a running session, it requires adjustments:
 
 1. **Adjust the channel count of the B-format bus** (right-click → Track Channels)
 2. **Set all AmbiEncoders** to the new order (order parameter in the plugin)
 3. **Set the ICST AmbiDecoder** to the new order
 4. **The BinauralDecoder** adapts automatically (IEM detects the channel count)
 
-The easiest way: fix the order before starting the production and build a REAPER template on that order. The ICST download pack contains prepared templates.
+The easiest way: fix the order (ideally HOA7) before starting the production and build a REAPER template on that order. The ICST download pack contains prepared templates.
 
 ---
 
@@ -261,3 +261,4 @@ If you build **your first own session**: start with **FOA or HOA3** – the conc
 - [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/)
 - [Exporting the B-format master](/post/b-format-export-reaper/)
 - [Recording with an Ambisonics microphone – A-format, B-format and ICST integration](/post/ambisonics-mikrofon-a-format-b-format/)
+

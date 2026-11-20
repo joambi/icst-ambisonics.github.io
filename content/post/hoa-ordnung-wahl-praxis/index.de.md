@@ -231,14 +231,14 @@ In REAPER: Wenn HOA7-Spuren einzufrieren sind, *Freeze*-Funktion nutzen (rechtsk
 
 
 
-Es ist möglich, die Ordnung einer laufenden Session zu ändern – aber es erfordert Anpassungen:
+Am besten startest du gleich in HOA7, wenn der Rechner es erlaubt – eine spätere Reduktion ist einfach, eine spätere Erhöhung nicht. Musst du die Ordnung einer laufenden Session trotzdem ändern, erfordert das Anpassungen:
 
 1. **B-Format-Bus Kanalzahl** anpassen (Rechtsklick → Track Channels)
 2. **Alle AmbiEncoder** auf die neue Ordnung setzen (Order-Parameter im Plugin)
 3. **ICST AmbiDecoder** auf die neue Ordnung setzen
 4. **BinauralDecoder** passt sich automatisch an (IEM erkennt Kanalzahl)
 
-Am einfachsten ist: Ordnung vor dem Produktionsstart festlegen und ein REAPER-Template auf dieser Ordnung aufbauen. Das ICST Download-Pack enthält vorbereitete Templates.
+Am einfachsten ist: Ordnung (idealerweise HOA7) vor dem Produktionsstart festlegen und ein REAPER-Template auf dieser Ordnung aufbauen. Das ICST Download-Pack enthält vorbereitete Templates.
 
 ---
 

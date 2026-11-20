@@ -6,7 +6,7 @@ draft: false
 languageCode: de
 ---
 
-Du planst eine Residency oder einen Studiobesuch im ICST Kompositionsstudio? Folge diesen vier Schritten, um gut vorbereitet anzukommen und die Zeit mit dem 31-Kanal-Ambisonics-System optimal zu nutzen.
+Du planst eine Residency oder einen Studiobesuch im ICST Kompositionsstudio? Folge diesen vier Schritten, um gut vorbereitet anzukommen und die Zeit mit dem 18-Kanal-Ambisonics-System optimal zu nutzen.
 
 <a class="hero__link" href="/downloads/icst-resident-guide.pdf" download><i class="fas fa-file-pdf"></i>&nbsp;Als PDF herunterladen</a>
 
@@ -20,7 +20,7 @@ Du planst eine Residency oder einen Studiobesuch im ICST Kompositionsstudio? Fol
 <span class="onboarding-step__num">1</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Das Studio kennenlernen</p>
-<p class="onboarding-step__desc">Das ICST Kompositionsstudio an der ZHdK verfügt über ein 31-Kanal-Ambisonics-System, ein Grossformat-Mischpult und einen dedizierten Abhörraum. Die Übersicht erklärt den Raum, das technische Setup und wer für was zuständig ist.</p>
+<p class="onboarding-step__desc">Das ICST Kompositionsstudio an der ZHdK verfügt über ein 18-Kanal-Ambisonics-System, ein Grossformat-Mischpult und einen dedizierten Abhörraum. Die Übersicht erklärt den Raum, das technische Setup und wer für was zuständig ist.</p>
 <a class="hero__link hero__link--primary" href="/de/blog/icst-composer-studio-overview/">Studio-Übersicht →</a>
 </div>
 </li>
@@ -37,7 +37,7 @@ Du planst eine Residency oder einen Studiobesuch im ICST Kompositionsstudio? Fol
 <span class="onboarding-step__num">3</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Lautsprechereinstellungen und Decoder-Presets laden</p>
-<p class="onboarding-step__desc">Das ICST Studio verwendet spezifische Lautsprecher-Koordinatendateien und Decoder-Presets, die für das 31-Kanal-Layout konfiguriert sind. Diese zu Beginn jeder Session in REAPER laden, um korrekte räumliche Ausgabe zu erhalten.</p>
+<p class="onboarding-step__desc">Das ICST Studio verwendet spezifische Lautsprecher-Koordinatendateien und Decoder-Presets, die für das 18-Kanal-Layout konfiguriert sind. Diese zu Beginn jeder Session in REAPER laden, um korrekte räumliche Ausgabe zu erhalten.</p>
 <a class="hero__link hero__link--primary" href="/de/blog/icst-kompositionsstudio-speaker-settings/">Lautsprechereinstellungen →</a>
 <a class="hero__link" href="/de/blog/downloads/">Alle Downloads →</a>
 </div>

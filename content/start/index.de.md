@@ -136,7 +136,7 @@ Wenn du die Anleitung lieber offline lesen oder ausdrucken möchtest:
   </section>
   <section class="home-card">
     <h4>🏛️ Im ICST-Studio arbeiten</h4>
-    <p>Bewirb dich für eine Residenz am ICST-Kompositionsstudio — 31-Kanal-Ambisonics-Anlage, ZHdK Zürich, betreut vom ICST-Team.</p>
+    <p>Bewirb dich für eine Residenz am ICST-Kompositionsstudio — 18-Kanal-Ambisonics-Anlage, ZHdK Zürich, betreut vom ICST-Team.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/de/residenzen/">Studio-Residenzen</a>
       <a class="hero__link" href="/de/for-residents/">Guide für Residenten</a>

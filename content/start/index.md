@@ -135,7 +135,7 @@ Prefer an offline version or want to print the guide?
   </section>
   <section class="home-card">
     <h4>🏛️ Work in the ICST Studio</h4>
-    <p>Apply for a residency at the ICST Composition Studio — 31-speaker Ambisonics system, ZHdK Zurich, supported by ICST.</p>
+    <p>Apply for a residency at the ICST Composition Studio — 18-speaker Ambisonics system, ZHdK Zurich, supported by ICST.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/residenzen/">Studio Residencies</a>
       <a class="hero__link" href="/for-residents/">Resident Guide</a>
