@@ -43,7 +43,7 @@ Womit möchtest du beginnen? Wähle deinen Einstieg.
 <p class="home-section-lead">Folge den fünf Schritten unten — von den ersten Grundlagen bis zur funktionierenden Ambisonics-Session in REAPER. Geschätzte Zeit: 1–2 Stunden. Alle Tools sind kostenlos und Open Source.</p>
 </div>
 
-Level: Einstieg | **Audience:** Komponist:in, Student:in, Producer, Techniker:in.
+**Niveau:** Einstieg | **Zielgruppe:** Komponist:in, Student:in, Producer, Techniker:in.
 
 <div class="home-cards">
   <section class="home-card">
@@ -72,7 +72,6 @@ Level: Einstieg | **Audience:** Komponist:in, Student:in, Producer, Techniker:in
 <p class="onboarding-step__title">Ambisonics verstehen — die Konzepte</p>
 <p class="onboarding-step__desc">B-Format, HOA-Ordnungen, ACN/SN3D, Encoder vs. Decoder — der 15-Minuten-Text, der alles andere verständlich macht. Mit Signalfluss-Diagramm vom Mono-Signal zu Lautsprechern oder Binaural-Output.</p>
 <a class="hero__link hero__link--primary" href="/de/ambisonics-101/">Ambisonics 101 →</a>
-<a class="hero__link" href="/de/learn/ambisonics-formats/">Ambisonics-Formate →</a>
 </div>
 </li>
 <li class="onboarding-step">
