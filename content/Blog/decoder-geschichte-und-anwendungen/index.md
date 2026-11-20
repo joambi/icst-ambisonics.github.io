@@ -1,97 +1,97 @@
 ---
-title: "Geschichte und Anwendungen des Ambisonics Decoders"
-description: "Vom Theoriemodell zum Werkzeug: wie der Ambisonics Decoder entstand, welche Ideen ihn geprägt haben – und wozu er heute eingesetzt wird."
+title: "History and Applications of the Ambisonics Decoder"
+description: "From theoretical model to tool: how the Ambisonics decoder came about, which ideas shaped it, and what it is used for today."
 date: 2026-03-21T12:00:00+01:00
 draft: false
-tags: ["ambisonics", "decoder", "geschichte", "gerzon", "hoa", "psychoakustik"]
+tags: ["ambisonics", "decoder", "history", "gerzon", "hoa", "psychoacoustics"]
 aliases:
   - /blog/decoder-geschichte/
 ---
 
-**Thema:** Vom Theoriemodell zum Werkzeug – wie der Ambisonics Decoder entstand und wozu er heute eingesetzt wird.
-**Zeitraum:** 1970er bis heute
-**Relevanz für:** Komponist:innen, Techniker:innen, Forschende im Bereich räumlicher Audioproduktion
+**Topic:** From theoretical model to tool: how the Ambisonics decoder came about and what it is used for today.
+**Period:** 1970s to the present
+**Relevant for:** Composers, technicians, researchers in spatial audio production
 
 ---
 
-## Kernaussagen
+## Key points
 
-- Der Ambisonics Decoder ist nicht ein Produkt, sondern ein Konzept – seine Geschichte ist die Geschichte wachsender Anforderungen an räumliche Auflösung.
-- Die entscheidende Weiterentwicklung kam nicht durch neue Hardware, sondern durch präzisere psychoakustische Kriterien und höhere mathematische Ordnungen.
-- Heutige Decoder wie der ICST AmbiDecoder sind direkte Nachfolger eines über 50 Jahre alten Paradigmas – mit denselben Grundprinzipien und radikal erweiterten Möglichkeiten.
-
----
-
-## 1. Die Ursprünge: Gerzon und das Decodierungsproblem (1970er)
-
-Als Michael Gerzon und Peter Fellgett Anfang der 1970er die Grundlagen von Ambisonics entwickelten, war das zentrale Problem nicht die Aufnahme, sondern die Wiedergabe. Das B-Format beschreibt ein Schallfeld – aber wie bringt man dieses Feld auf eine konkrete Anordnung von Lautsprechern?
-
-Gerzons frühe Lösung war eine **Dekodermatrix**: eine mathematische Transformation, die aus den B-Format-Kanälen (W, X, Y, Z) die Lautsprechersignale berechnet. Diese Matrix enthielt die Geometrie des Lautsprecher-Arrays als einzige Variable – alles andere folgte aus der Mathematik der sphärischen Harmonischen.
-
-Die erste Generation dieser Decoder arbeitete mit analoger Hardware. Lautsprecher-Layouts waren meist symmetrisch (Quadro, Octagon), und der Decoder war ein physisches Gerät, keine Software.
+- The Ambisonics decoder is not a product but a concept. Its history is the history of growing demands on spatial resolution.
+- The decisive advances came not from new hardware but from more precise psychoacoustic criteria and higher mathematical orders.
+- Today's decoders such as the ICST AmbiDecoder are direct descendants of a paradigm more than 50 years old, with the same basic principles and radically expanded possibilities.
 
 ---
 
-## 2. Psychoakustische Kriterien: Was einen guten Decoder ausmacht (1980–1992)
+## 1. The origins: Gerzon and the decoding problem (1970s)
 
-Der entscheidende intellektuelle Beitrag Gerzons war die Erkenntnis, dass eine mathematisch korrekte Matrix nicht automatisch gut klingt. Er entwickelte **psychoakustische Dekodierkriterien**, die beschreiben, was ein Decoder leisten muss, damit ein Hörer eine kohärente Raumabbildung wahrnimmt:
+When Michael Gerzon and Peter Fellgett developed the foundations of Ambisonics in the early 1970s, the central problem was not recording but reproduction. B-format describes a sound field, but how do you bring that field to a concrete arrangement of loudspeakers?
 
-- **Velocity-Vektor (rV):** beschreibt die wahrgenommene Lokalisationsrichtung bei tiefen Frequenzen
-- **Energy-Vektor (rE):** beschreibt die Energieverteilung bei hohen Frequenzen
-- **Makita-Richtung:** Grundlage für die Stabilitätsbewertung eines Decoders
+Gerzon's early solution was a **decoder matrix**: a mathematical transformation that calculates the loudspeaker signals from the B-format channels (W, X, Y, Z). The matrix contained the geometry of the loudspeaker array as its only variable; everything else followed from the mathematics of spherical harmonics.
 
-Diese Kriterien führten zu den drei Gewichtungsschemata, die heute noch in jedem modernen Decoder zu finden sind: **Basic**, **In-Phase** und **Max-rE**. Gerzons Paper *Psychoacoustic Decoders for Multispeaker Stereo and Surround Sound* (1992, AES) gilt als Schlüsseltext dieser Phase.
+The first generation of these decoders used analogue hardware. Loudspeaker layouts were mostly symmetrical (quad, octagon), and the decoder was a physical device, not software.
 
 ---
 
-## 3. Das digitale Zeitalter: Software-Decoder und HOA (2000er)
+## 2. Psychoacoustic criteria: what makes a good decoder (1980–1992)
 
-Mit der Digitalisierung der Audiotechnik wurde der Decoder zur Software. Das öffnete zwei neue Möglichkeiten:
+Gerzon's decisive intellectual contribution was the insight that a mathematically correct matrix does not automatically sound good. He developed **psychoacoustic decoding criteria** that describe what a decoder must achieve for a listener to perceive a coherent spatial image:
 
-**Flexibilität.** Ein Software-Decoder kann beliebige Lautsprecher-Layouts verarbeiten – symmetrisch oder asymmetrisch, 2D oder 3D, 4 oder 64 Kanäle. Die physische Hardwarebeschränkung fiel weg.
+- **Velocity vector (rV):** describes the perceived localisation direction at low frequencies
+- **Energy vector (rE):** describes the energy distribution at high frequencies
+- **Makita direction:** basis for assessing a decoder's stability
 
-**HOA.** Jérôme Daniel entwickelte um 2000 die theoretische Grundlage für Higher-Order Ambisonics. Mit steigender Ordnung wächst die Anzahl der B-Format-Kanäle (1st Order: 4, 3rd Order: 16, 7th Order: 64) – und damit auch die Komplexität des Decoders. Die Transformationsmatrix wird größer, die psychoakustischen Optimierungen differenzierter.
-
-Der ICST AmbiDecoder entstand in dieser Phase als Werkzeug für reale Studio- und Konzertpraxis. Entwickelt am ICST (ZHdK Zürich), kombiniert er HOA-Unterstützung bis zur 7. Ordnung mit eingemessenen Lautsprecher-Setups aus der tatsächlichen Aufführungspraxis.
-
----
-
-## 4. Die MultiDecoder-Idee: Parallele Feldprojektion (2010er–heute)
-
-Die jüngste Entwicklungslinie ist konzeptuell besonders interessant: Anstatt das Schallfeld mit einer einzigen Matrix auf alle Lautsprecher zu projizieren, kann der **MultiDecoder** bis zu vier unabhängige Decoder-Einheiten parallel betreiben – jede mit eigenem Lautsprecher-Subset, eigener Ordnung, eigener Gewichtung, eigenem Filter.
-
-Das adressiert ein reales Problem in komplexen 3D-Arrays: Ein horizontaler Ring und eine Höhendome brauchen oft unterschiedliche Dekodierstrategien. Mit einem einzigen Standard-Decoder muss man Kompromisse eingehen.
-
-Entscheidend: Das B-Format bleibt dabei als gemeinsamer Eingang erhalten. Es wird nicht in Objekte zerlegt, sondern mehrfach projiziert. Das Paradigma des Felddenkens bleibt intakt – die Komplexität liegt ausschließlich auf der Projektionsseite.
+These criteria led to the three weighting schemes still found in every modern decoder: **Basic**, **In-Phase**, and **Max-rE**. Gerzon's paper *Psychoacoustic Decoders for Multispeaker Stereo and Surround Sound* (AES, 1992) is regarded as the key text of this phase.
 
 ---
 
-## 5. Anwendungsfelder heute
+## 3. The digital age: software decoders and HOA (2000s)
 
-| Kontext | Typische Decoder-Strategie |
+With the digitisation of audio technology, the decoder became software. This opened up two new possibilities:
+
+**Flexibility.** A software decoder can handle any loudspeaker layout: symmetrical or asymmetrical, 2D or 3D, 4 or 64 channels. The physical hardware limit disappeared.
+
+**HOA.** Around 2000, Jérôme Daniel developed the theoretical basis for Higher-Order Ambisonics. As the order rises, so does the number of B-format channels (1st order: 4, 3rd order: 16, 7th order: 64), and with it the complexity of the decoder. The transformation matrix grows and the psychoacoustic optimisations become more differentiated.
+
+The ICST AmbiDecoder came about in this phase as a tool for real studio and concert practice. Developed at ICST (ZHdK Zurich), it combines HOA support up to 7th order with measured loudspeaker setups from actual performance practice.
+
+---
+
+## 4. The MultiDecoder idea: parallel field projection (2010s to today)
+
+The most recent line of development is conceptually especially interesting. Instead of projecting the sound field onto all loudspeakers with a single matrix, the **MultiDecoder** can run up to four independent decoder units in parallel, each with its own loudspeaker subset, its own order, its own weighting, and its own filter.
+
+This addresses a real problem in complex 3D arrays: a horizontal ring and a height dome often need different decoding strategies. With a single standard decoder you have to compromise.
+
+Crucially, B-format remains the shared input. It is not broken down into objects but projected several times. The field-based paradigm stays intact; the complexity lies entirely on the projection side.
+
+---
+
+## 5. Fields of application today
+
+| Context | Typical decoder strategy |
 |---|---|
-| Konzertinstallation (Kugel/Dome) | HOA 3–7, Max-rE, eingemessenes Preset |
-| Kompositionsstudio (z.B. ICST) | HOA 7 (64ch), MultiDecoder mit Höhenebene |
-| Binaural (Kopfhörer) | separater Binaural-Decoder, kein Lautsprecher-Preset |
-| VR / XR | HOA 1–3, binaural, oft mit Head-Tracking |
-| Tournee / wechselnde Räume | normiertes Preset + Scaling-Funktion |
-| Forschung / A-B-Vergleiche | MultiDecoder, temporäres Muten einzelner Einheiten |
+| Concert installation (sphere/dome) | HOA 3–7, Max-rE, measured preset |
+| Composition studio (e.g. ICST) | HOA 7 (64 ch), MultiDecoder with height layer |
+| Binaural (headphones) | separate binaural decoder, no loudspeaker preset |
+| VR / XR | HOA 1–3, binaural, often with head tracking |
+| Touring / changing rooms | normalised preset + scaling function |
+| Research / A-B comparisons | MultiDecoder, temporary muting of individual units |
 
 ---
 
-## Was bleibt
+## What remains
 
-Die Geschichte des Ambisonics Decoders ist keine Geschichte von Brüchen, sondern von Verfeinerung. Das Grundprinzip – eine Transformationsmatrix projiziert ein Schallfeld auf Lautsprecher – ist seit Gerzon unverändert. Was sich verändert hat: die mathematische Ordnung, die psychoakustische Präzision, die Flexibilität der Software, die Komplexität der Lautsprecher-Setups.
+The history of the Ambisonics decoder is not a history of breaks but of refinement. The basic principle, a transformation matrix projecting a sound field onto loudspeakers, has been unchanged since Gerzon. What has changed: the mathematical order, the psychoacoustic precision, the flexibility of software, the complexity of loudspeaker setups.
 
-Der ICST AmbiDecoder steht am Ende dieser Linie – als Werkzeug für Praxis, nicht für Theorie. Wer ihn versteht, versteht nicht nur ein Plugin, sondern das Feld, aus dem er gewachsen ist.
+The ICST AmbiDecoder stands at the end of this line, as a tool for practice, not for theory. Whoever understands it understands not only a plugin but the field it grew out of.
 
 ---
 
-## Weiterführende Quellen
+## Further sources
 
 - Michael Gerzon, *Periphony: With-Height Sound Reproduction* (JAES, 1973)
 - Michael Gerzon, *Psychoacoustic Decoders for Multispeaker Stereo and Surround Sound* (AES, 1992)
-- Jérôme Daniel, *Représentation de champs acoustiques* (Dissertation, 2001)
-- [Geschichte von FOA und HOA – visueller Zeitstrahl](/blog/geschichte-von-ambisonics-foa-und-hoa/)
-- [Warum der Decoder klingt wie er klingt](/post/decoder-methodological-context/)
-- [ICST AmbiDecoder – Einrichtung und Bedienung](/icst-ambisonics-plugins/08_icst_decoder/)
+- Jérôme Daniel, *Représentation de champs acoustiques* (dissertation, 2001)
+- [History of FOA and HOA: visual timeline](/blog/geschichte-von-ambisonics-foa-und-hoa/)
+- [Why the decoder sounds the way it does](/post/decoder-methodological-context/)
+- [ICST AmbiDecoder: setup and operation](/icst-ambisonics-plugins/08_icst_decoder/)

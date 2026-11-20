@@ -150,9 +150,29 @@ Does the piece create a sense of near and far, or does everything occupy the sam
 **5. Does space carry semantic weight?**
 This is the most interpretive question: does the spatial organisation mean something in the context of the piece? In Natasha Barrett's work ([#10 ascolta](/blog/ascolta/10-ascolta/), March 2024), spatial movement is part of a compositional argument about inside and outside, containment and release. In the acousmatic tradition, this relates to Schaeffer's *écoute réduite* (reduced listening) — except here the reduction is *spatial*: try listening only to the spatial behaviour, bracketing timbral and pitch content entirely.
 
+### Overarching analysis questions
+
+- Which spatial strategy dominates: voice separation, movement dramaturgy, envelopment, or perspective?
+- How does the spatial layer influence the formal structure of the piece?
+- Are there moments where localisation and envelopment are in tension?
+
 {{< notice update >}}
 Do not try to follow all parameters at once. Choose one or two aspects per listening pass and concentrate your attention there.
 {{< /notice >}}
+
+**Format comparison** (for sessions where the same piece appears in different formats)
+
+When a piece is presented in stereo and in Ambisonics, or in surround and in HOA, use this note structure:
+
+| Dimension | Stereo / Surround | Ambisonics |
+|---|---|---|
+| Localisation precision | | |
+| Sense of depth | | |
+| Envelopment | | |
+| Source movement | | |
+| Most surprising difference | | |
+
+Filling in the table during or immediately after each version prevents the second version from overwriting the memory of the first.
 
 ### 3. Aesthetic-emotional level: taking effect seriously
 
@@ -204,20 +224,6 @@ The first pass serves spatial orientation; the second supports conceptual sharpe
 - How does space relate to form?
 - Which moments do I want to hear again?
 {{< /notice >}}
-
-**Format comparison** (for sessions where the same piece appears in different formats)
-
-When a piece is presented in stereo and in Ambisonics, or in surround and in HOA, use this note structure:
-
-| Dimension | Stereo / Surround | Ambisonics |
-|---|---|---|
-| Localisation precision | | |
-| Sense of depth | | |
-| Envelopment | | |
-| Source movement | | |
-| Most surprising difference | | |
-
-Filling in the table during or immediately after each version prevents the second version from overwriting the memory of the first.
 
 ## Recording your observations
 

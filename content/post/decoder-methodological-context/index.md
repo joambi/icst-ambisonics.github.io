@@ -50,7 +50,20 @@ B-format is **rotation-invariant**: the sound field can be rotated, mirrored, or
 
 **Geometry:** Loudspeaker coordinates enter directly into the decoder matrix. Wrong angles or distances cause deviations in the spatial image. Measured setups therefore sound better than guessed ones.
 
-**Weighting:** The Basic, In-Phase, and Max-rE schemes control how strongly different orders contribute to loudspeaker distribution. Max-rE balances energy focus and localisation sharpness and is the right starting point for most setups. In-Phase is often more stable under difficult listening conditions, but less precise in localisation.
+**Weighting, the actual decision:** Behind Basic, In-Phase, and Max-rE is a psychoacoustic model from the 1970s, formulated by Michael Gerzon. He defined two localisation vectors:
+
+- **Velocity vector (rV):** describes the perceived direction at low frequencies, where hearing responds to interaural phase differences
+- **Energy vector (rE):** describes the energy distribution at high frequencies, where interaural level differences dominate
+
+A good decoder keeps both vectors pointing in the same direction and as close to length 1 as possible. The three schemes are different strategies for reaching this goal:
+
+| Scheme | Behaviour | Use |
+|---|---|---|
+| **Basic** | unweighted, clean impulse response, but side lobes at off-centre positions | low frequencies, sweet-spot listening |
+| **Max-rE** | maximises the energy vector, attenuates side lobes | mid and high frequencies, default for most setups |
+| **In-Phase** | suppresses all side lobes, wider main lobe | difficult listening conditions, irregular arrays |
+
+For demanding setups, researchers at IEM Graz recommend **dual-band decoding**: Basic (or unweighted) below roughly 400–700 Hz, Max-rE above, with an automatic crossover. In theory this gives the best combination of low-frequency stability and high-frequency localisation sharpness.
 
 ---
 
@@ -77,6 +90,17 @@ This theoretical distinction has direct practical consequences:
 - Weightings change how clearly or how stably spatial gestures are perceived.
 
 In practice, this means: keep the **B-format Master** stable, choose decoder settings consciously, and evaluate key passages on the real target setup whenever possible.
+
+---
+
+## Sources and further reading
+
+- Michael Gerzon, *Periphony: With-Height Sound Reproduction*, JAES 1973
+- Michael Gerzon, *Psychoacoustic Decoders for Multispeaker Stereo and Surround Sound*, AES 1992
+- Jens Ahrens, [*Introduction to Ambisonics, Part 1*](https://arxiv.org/abs/2512.07570), arXiv 2024: the most accessible introduction without maths
+- Matthias Frank (IEM Graz), [*How to Make Ambisonics Sound Good*](https://iaem.at/Members/frank/files/2014_frank_howtomakeambisonicssoundgood.pdf), 2014: practical weighting recommendations
+- Franz Zotter & Matthias Frank, [*All-Round Ambisonic Panning and Decoding*](https://www.aes.org/tmpFiles/elib/20250925/16554.pdf), AES: the foundational AllRAD text
+- [IEM Graz: Spherical Harmonics Documentation](https://ambisonics.iem.at/xchange/fileformat/docs/spherical-harmonics-symmetries)
 
 ---
 

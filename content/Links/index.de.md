@@ -85,10 +85,11 @@ languageCode: de
 
 ### Ambisonics Links:
 
-- https://de.wikipedia.org/wiki/Ambisonics
-- https://www.ambisonic.net/
-- https://link.springer.com/referenceworkentry/10.1007/978-3-662-60357-4_25-1
-- https://www.waves.com/ambisonics-explained-guide-for-sound-engineers
+- [Ambisonics (Wikipedia)](https://de.wikipedia.org/wiki/Ambisonics)
+- [ambisonic.net](https://www.ambisonic.net/)
+- [Ambisonic data exchange formats](https://en.wikipedia.org/wiki/Ambisonic_data_exchange_formats)
+- [Springer: Ambisonics Reference Entry](https://link.springer.com/referenceworkentry/10.1007/978-3-662-60357-4_25-1)
+- [Waves: Ambisonics Explained](https://www.waves.com/ambisonics-explained-guide-for-sound-engineers)
 - [Audio Brewers, Beginner: Ambisonics Made Simple](https://www.audiobrewers.com/faq/Blog%20Post%20Title%20One-3zaa9-9fsz6-j2ed5-dj7rh) — Einstieg für Neulinge: HOA-Grundlagen und das Zusammenspiel von Ambisonics mit Stereo, Surround, Binaural, Dolby Atmos und VR/AR
 - [Audio Brewers, Intermediate: Understanding Ambisonics](https://www.audiobrewers.com/faq/intermediate-understanding-ambisonics) — Kugelflächenfunktionen, Kanalzahl und Ordnungsreduktion, Decoding, ambiX vs. FuMa (ACN, SN3D, N3D)
 - [Audio Brewers, Advanced](https://www.audiobrewers.com/faq/advanced) — angekündigt, Inhalt noch nicht veröffentlicht
@@ -101,6 +102,7 @@ languageCode: de
 - [Ambisonics: A Practical 3D Audio Theory (Zotter, Frank, 2019, Open Access)](https://link.springer.com/book/10.1007/978-3-030-17207-7)
 - [Parametric Time-Frequency Domain Spatial Audio (Pulkki, Delikaris-Manias, Politis, 2017)](https://doi.org/10.1002/9781119252634)
 - [Immersive Sound: The Art and Science of Binaural and Multi-Channel Audio (Rumsey, 2012)](https://www.routledge.com/Immersive-Sound-The-Art-and-Science-of-Binaural-and-Multi-Channel-Audio/Rumsey/p/book/9780240815091)
+- [Kompositionen für hörbaren Raum / Compositions for Audible Space bei transcript Verlag](https://www.transcript-verlag.de/978-3-8376-3076-3/kompositionen-fuer-hoerbaren-raum/compositions-for-audible-space/)
 
 #### Schlüssel-Papers
 
@@ -109,6 +111,10 @@ languageCode: de
 - [Ambisonics in Multichannel Broadcasting and Video (Gerzon, JAES, 1985 issue reference)](https://www.aes-media.org/historical/pdf/jaes-contents-v30-39.pdf)
 - [Sector-Based Parametric Sound Field Reproduction in the Spherical Harmonic Domain (Politis, Vilkamo, Pulkki, 2015)](https://doi.org/10.1109/JSTSP.2015.2415762)
 - [Parametric Spatial Audio Reproduction with Higher-Order B-Format Microphone Input (Pulkki et al., AES 134th Convention, 2013)](https://publica.fraunhofer.de/entities/publication/649e4c9c-4d59-476c-9928-4a35a33bd090)
+- [(PDF) Producing 3D Audio in Ambisonics](https://www.researchgate.net/publication/281559396_Producing_3D_Audio_in_Ambisonics)
+- [zhdk.ch/file/live/99/9990e912b1f7d2e6f41a88967702df3e4ba5fbdb/aep\_icmc.pdf](https://www.zhdk.ch/file/live/99/9990e912b1f7d2e6f41a88967702df3e4ba5fbdb/aep_icmc.pdf)
+- [(PDF) Introduction to Ambisonics](https://www.researchgate.net/publication/280010078_Introduction_to_Ambisonics)
+- [ambisonics.iem.at/proceedings-of-the-ambisonics-symposium-2011/ambix-a-suggested-ambisonics-format](https://ambisonics.iem.at/proceedings-of-the-ambisonics-symposium-2011/ambix-a-suggested-ambisonics-format)
 
 ### Weitere Ambisonics-Ressourcen
 
