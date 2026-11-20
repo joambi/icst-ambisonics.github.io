@@ -30,7 +30,7 @@ The new structure reduces search effort and leads more quickly to the right cont
 - Artists and studios: residency cases with real production processes.
 
 ## Three quick starts
-- [Reaper Ambisonics Setup in 20 Minutes](/post/reaper-setup-20-minuten/)
+- [Getting Started: Your First Session in 30 Minutes](/post/getting-started-icst-plugins-reaper/)
 - [OSC in ICST AmbiEncoder: The 10 Most Important Messages](/post/osc-10-key-messages/)
 - [Ableton Live and ICST Ambisonics Integration](/post/ableton_reaper/)
 

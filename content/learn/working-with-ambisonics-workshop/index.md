@@ -278,7 +278,7 @@ Ambisonics is a channel-format-independent, full-sphere audio system. Every prod
 
 <div class="ws-info">
 <strong>📖 Further reading: Ambisonics Fundamentals</strong>
-→ <a href="/post/ambisonics-in-30-minutes/">Ambisonics in 30 Minutes</a> — compact overview of the system<br>
+→ <a href="/post/getting-started-icst-plugins-reaper/">First session in 30 minutes</a> — compact overview of the system<br>
 → <a href="/learn/ambisonics-workflow/">Workflow from Recording to Delivery</a> — in-depth step-by-step guide<br>
 → <a href="/post/getting-started-icst-plugins-reaper/">Getting Started: ICST Plugins in Reaper</a> — introduction to the plugin chain
 </div>
@@ -726,7 +726,7 @@ Guided exercise with the prepared sessions:
 <div class="ws-info">
 <strong>📖 Further reading: Compositional Practice</strong>
 → <a href="/composing-in-ambisonics/05-spatial-counterpoint/">Spatial Counterpoint</a> — spatial contrary motion as a compositional technique<br>
-→ <a href="/post/reaper-setup-20-minuten/">Reaper Ambisonics Setup in 20 Minutes</a> — quick setup for your own projects after the workshop
+→ <a href="/post/getting-started-icst-plugins-reaper/">First session: Getting Started</a> — quick setup for your own projects after the workshop
 </div>
 
 ---

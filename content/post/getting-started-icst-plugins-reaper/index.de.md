@@ -7,57 +7,54 @@ month: 2026-03
 weight: 23
 tags: ["tutorial", "reaper", "ambiencoder", "getting-started", "workflow"]
 key_points:
-  - "Erste funktionierende Spatial-Audio-Session in REAPER Schritt für Schritt aufbauen"
+  - "Erste funktionierende Spatial-Audio-Session in REAPER in rund 30 Minuten aufbauen"
   - "Strukturierte Checkliste vom Plugin-Install bis zum Binaural-Monitoring"
 difficulty: "beginner"
 post_kind: "tutorial"
 tool: ["REAPER", "AmbiEncoder"]
+aliases:
+  - /de/post/reaper-setup-20-minuten/
+  - /de/post/ambisonics-in-30-minutes/
 ---
 
+**Level:** Beginner | **Zielgruppe:** Komponist:in, Studierende, Studio-Assistenz.
 
-**Für wen:** Level: Beginner | Zielgruppe: Komponist:in, Studierende, Studio-Assistenz.
-
-Diese Seite ist die kompakte Onboarding-Version des vollständigen Docs-Workflows:
-[Step by Step Setup](/icst-ambisonics-plugins/06_step_by_step_setup/).
-Nutze diesen Guide für den schnellen Einstieg und die Docs-Seite als technische Referenz.
-
-## Für wen ist das gedacht
-- Komponist:innen, die eine stabile erste Ambisonics-Session brauchen.
-- Studierende, die einen klaren Praxiseinstieg suchen.
-- Techniker:innen, die ein reproduzierbares Setup als Grundlage wollen.
-
-## Was du am Ende hast
-Am Ende hast du ein funktionierendes Reaper-Projekt mit Quellrouting, AmbiEncoder-Steuerung und einem grundlegenden Monitoring-Check.
+In rund 30 Minuten baust du eine funktionierende Reaper-Session auf: Quellrouting, AmbiEncoder-Steuerung, B-Format-Bus, Decoder und ein Monitoring-Check.
+Das ist der kurze Weg. Die vollständige technische Referenz ist [Schritt-für-Schritt-Setup](/icst-ambisonics-plugins/06_step_by_step_setup/).
 
 ## Voraussetzungen
-- Reaper ist installiert und läuft.
-- ICST Ambisonics Plugins sind installiert.
-- Empfohlene Reaper-Erweiterungen sind installiert (SWS und ReaPack).
+- Reaper und die ICST Ambisonics Plugins sind installiert ([Installation](/icst-ambisonics-plugins/02_installation/)).
+- Empfohlen: SWS und ReaPack.
+- Audio-Interface mit passender I/O-Konfiguration.
 - Grundkenntnisse zu Tracks, Bussen und Plugin-Insert-Slots.
+- Regel für die ganze Session: **64 Kanäle** auf allen Ambisonics-Tracks und das Routing nach jedem Schritt prüfen.
 
-## Session-Baseline (aus dem Docs-Setup)
-Setze bei allen Ambisonics-relevanten Tracks standardmäßig 64 Kanäle und prüfe das Routing nach jedem Schritt.
+## Schritt 1 - Monitoring-Backbone
+Lege eine neue Session an, setze die Sample Rate und erstelle den Track `Bformat-Master` (64 Kanäle). Setze den Decoder in den Monitoring-Pfad und wähle das Lautsprecher-Preset.
+- Docs: [Schnellstart](/icst-ambisonics-plugins/04_quick_start/), [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/), [Spurvorlagen](/icst-ambisonics-plugins/05_open_track_templates/)
 
-## Workflow-Phasen (Onboarding-Sicht)
-Nutze diese Seite, um die Struktur zu verstehen, bevor du ins Klick-für-Klick-Setup gehst:
-1. Monitoring-Backbone: `Decoder` + `Bformat-Master` + Lautsprecher-Preset.
-2. Paralleles Hören: binauralen Pfad für Kopfhoerer-Validierung aufsetzen.
-3. Quellen-Ebene: mit einer MonoEncoder-Quelle starten und Routing verifizieren.
-4. Bewegungs-Ebene: erste Bewegung aufnehmen und Automation prüfen.
-5. Output-Ebene: aus `Bformat-Master` als Multichannel rendern.
+## Schritt 2 - Quelle hinzufügen
+Lege einen Quelltrack mit dem AmbiEncoder an und route den Ausgang auf `Bformat-Master`. Prüfe die Kanalzuordnung im Routing-Fenster.
+- Docs: [Wie es funktioniert](/icst-ambisonics-plugins/03_how_it_works/), [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
 
-## Hands-on-Checkliste (Ausführung)
-Für die exakte Schrittfolge nutze:
-- [Reaper Ambisonics Setup in 20 Minuten](/post/reaper-setup-20-minuten/)
-- [Step by Step Setup (Docs)](/icst-ambisonics-plugins/06_step_by_step_setup/)
+## Schritt 3 - Quelle im Raum bewegen
+Bewege die Quelle in X/Y/Z, beobachte sie in der Radar-Ansicht und speichere ein Preset. Nimm dann eine kurze Bewegung auf und prüfe, ob die Automation abgespielt wird.
 
-## Typische Startfehler (und wo du suchst)
-- Falsche Bus-Zuordnung (Kette `Source -> Bformat-Master -> Decoder` unterbrochen).
-- Binaural-Track von falscher Quelle gespeist.
+## Schritt 4 - Binaural-Kontrolle
+Setze parallel einen binauralen Pfad fürs Kopfhörer-Monitoring auf und mache einen kurzen Pegel- und Hörtest.
+
+## Schritt 5 - Rendern
+Rendere aus `Bformat-Master` als Multichannel und prüfe die Ausgangskanäle.
+
+## Häufige Startfehler
+- Quelle nicht auf `Bformat-Master` geroutet; die Kette `Source -> Bformat-Master -> Decoder` ist unterbrochen.
 - Nicht-64-Kanal-Track im Signalpfad.
+- Falsches Decoder-Preset für das Lautsprecher-Setup.
+- Binaural-Track von falscher Quelle gespeist.
 - OSC-Port-Mismatch bei externer Steuerung.
 
 ## Nächste Schritte
 - [OSC Syntax für den ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
-- [Reaper Ambisonics Setup in 20 Minuten](/post/reaper-setup-20-minuten/)
+- [OSC im ICST AmbiEncoder: Die 10 wichtigsten Nachrichten](/post/osc-10-key-messages/)
 - [Von Stereo zu HOA7: Schritt-für-Schritt-Session](/post/stereo-to-hoa7-session/)
+- [Ableton Live und ICST Ambisonics Integration](/post/ableton_reaper/)

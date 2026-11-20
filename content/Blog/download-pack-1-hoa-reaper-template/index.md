@@ -25,7 +25,6 @@ Use this pack to reduce setup time and avoid common routing mistakes in first se
 4. Run quick signal check before recording.
 
 ## Related tutorial
-- [Ambisonics in 30 Minutes: Your First Working Reaper Session Flow](/post/ambisonics-in-30-minutes/)
 - [Getting Started with ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 
 ## Download links

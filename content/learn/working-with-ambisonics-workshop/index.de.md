@@ -278,7 +278,7 @@ Ambisonics ist ein kanalformat-unabhängiges Vollkugel-Audiosystem. Jede Produkt
 
 <div class="ws-info">
 <strong>📖 Weiterlesen: Ambisonics-Grundlagen</strong>
-→ <a href="/post/ambisonics-in-30-minutes/">Ambisonics in 30 Minuten</a> — kompakte Übersicht des Systems<br>
+→ <a href="/post/getting-started-icst-plugins-reaper/">Erste Session in 30 Minuten</a> — kompakte Übersicht des Systems<br>
 → <a href="/learn/ambisonics-workflow/">Workflow von der Aufnahme bis zur Delivery</a> — ausführliche Schritt-für-Schritt-Anleitung<br>
 → <a href="/post/getting-started-icst-plugins-reaper/">Einstieg: ICST Plugins in Reaper</a> — Einführung in die Plugin-Kette
 </div>
@@ -383,7 +383,7 @@ Die Position des Mikrofons bestimmt die Hörperspektive — das ist keine techni
 - **Ausrichtung:** Das Mikrofon hat eine Vorzugsrichtung (Markierung). „Vorne" im B-Format entspricht dieser Richtung — dokumentieren, damit die Dekodierung korrekt ist
 - **Abstand zur Quelle:** Näher = mehr Direktschall, mehr räumliches Detail; weiter = mehr diffuses Feld, weniger Lokalisation
 - **Reflexionen:** Harte Wände, Böden und Decken sind in einem HOA-Mikrofon sehr präsent — den Aufstellungsort vor der Aufnahme sorgfältig abhören
-- **Windschutz:** Draußen stets Windschutz verwenden (Blimp oder Fell). LF-Rolloff unterhalb 80 Hz aktivieren
+- **Windschutz:** Draussen stets Windschutz verwenden (Blimp oder Fell). LF-Rolloff unterhalb 80 Hz aktivieren
 
 ### Pegelmanagement
 
@@ -547,7 +547,7 @@ Im ICST AmbiEncoder simuliert **Param 13 (Distance)** die Raumtiefe. Das Plugin 
 
 - Nahe Quellen (Distanz ~0): präsent, direkt, hoher HF-Anteil
 - Ferne Quellen (Distanz ~1): leiser, dumpfer, mehr Diffusfeld-Anteil
-- **In Kombination mit Hall:** Je größer die Distanz, desto höher der Wet-Anteil im Raum-Plugin auf dem HOA-Bus
+- **In Kombination mit Hall:** Je grösser die Distanz, desto höher der Wet-Anteil im Raum-Plugin auf dem HOA-Bus
 
 <div class="ws-info">
 <strong>📥 Reaper-Beispiel: Distanz-Automation</strong>
@@ -560,7 +560,7 @@ Der Hall liegt auf dem **HOA-Bus-Track** — nicht auf dem Quell-Track. Nur so b
 
 - **ReaVerb oder FX-Hall** auf dem HOA-Bus (nach allen Encodern, vor dem Decoder)
 - Dry/Wet-Verhältnis: sparsam beginnen (~10–20 % Wet), da HOA-Hall sehr präsent klingt
-- **Raumgröße und Pre-Delay** bestimmen die Größe des Raums
+- **Raumgrösse und Pre-Delay** bestimmen die Grösse des Raums
 - Separate Hall-Sends pro Quelle ermöglichen unterschiedliche Raumdistanzen
 
 <div class="ws-info">
@@ -705,7 +705,7 @@ MaxMSP mit den ICST Ambisonics Externals bietet eine vollständige Echtzeit-Ambi
 Das ACT-Tool (Ambisonics Composition Tool) ist ein am ICST entwickeltes MaxMSP-Patch:
 - 3D-Visualisierungsschnittstelle zum Platzieren und Animieren von Klangquellen
 - Quellen können manuell (Maus/Trackpad) oder algorithmisch (LFOs, Hüllkurven, Datenströme) bewegt werden
-- OSC-Ausgang: sendet Azimut, Elevation und Distanz an jeden Ambisonics-Encoder — einschließlich des ICST AmbiEncoder in Reaper
+- OSC-Ausgang: sendet Azimut, Elevation und Distanz an jeden Ambisonics-Encoder — einschliesslich des ICST AmbiEncoder in Reaper
 - Das ACT-Tool kann als „räumliche Partitur" genutzt werden: Bewegung visuell definieren, OSC-Ausgang als Automation in Reaper aufzeichnen
 
 ---
@@ -726,7 +726,7 @@ Angeleitete Übung mit den vorbereiteten Sessions:
 <div class="ws-info">
 <strong>📖 Weiterlesen: Kompositorische Praxis</strong>
 → <a href="/composing-in-ambisonics/05-spatial-counterpoint/">Räumlicher Kontrapunkt</a> — räumliche Gegenbewegung als kompositorische Technik<br>
-→ <a href="/post/reaper-setup-20-minuten/">Reaper Ambisonics Setup in 20 Minuten</a> — schnelles Setup für eigene Projekte nach dem Workshop
+→ <a href="/post/getting-started-icst-plugins-reaper/">Erste Session: Getting Started</a> — schnelles Setup für eigene Projekte nach dem Workshop
 </div>
 
 ---
@@ -748,7 +748,7 @@ Eine moderierte Diskussion zur Vertiefung der Workshop-Erfahrung. Kein Vortrag �
 - **Raum als kompositorisches Material:** Kann der Raum selbst das Instrument sein? Was passiert, wenn der Raum sich bewegt und die Quelle stillsteht?
 - **Die Perspektive der Komponistin / des Komponisten:** Wie verändert das Arbeiten in Ambisonics kompositorische Entscheidungen im Vergleich zu Stereo?
 - **Elevation und Ausdruckskraft:** Wann wirkt Höhe natürlich, wann künstlich? Was ermöglicht die vertikale Achse, das Stereo nie konnte?
-- **Distanz und Hall:** Wie interagieren Distanz und Hall? Wann klingt eine Quelle „im Raum" statt „außerhalb"?
+- **Distanz und Hall:** Wie interagieren Distanz und Hall? Wann klingt eine Quelle „im Raum" statt „ausserhalb"?
 - **Ausblick — Folge-Workshop:** MaxMSP + Csound in der Tiefe (Blöcke D, E, F).
 
 ---

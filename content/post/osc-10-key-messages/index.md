@@ -51,7 +51,7 @@ Combine an external controller with Reaper automation: OSC drives movement in re
 
 ## Related content
 - [MaxMSP and ICST AmbiEncoder - OSC Communication](/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/)
-- [Reaper Ambisonics Setup in 20 Minutes](/post/reaper-setup-20-minuten/)
+- [Getting Started: Your First Session in 30 Minutes](/post/getting-started-icst-plugins-reaper/)
 
 ## Next step
 Adopt two or three messages into your setup and test them first with a single source before enabling group control.

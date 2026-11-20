@@ -51,7 +51,7 @@ Kombiniere einen externen Controller mit Reaper-Automation: OSC steuert die Bewe
 
 ## Weiterführende Inhalte
 - [MaxMSP und ICST AmbiEncoder - OSC Communication](/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/)
-- [Reaper Ambisonics Setup in 20 Minuten](/post/reaper-setup-20-minuten/)
+- [Getting Started: Deine erste Session in 30 Minuten](/post/getting-started-icst-plugins-reaper/)
 
 ## Nächster Schritt
 Übernimm zwei bis drei Messages in dein Setup und teste sie zuerst mit einer einzelnen Quelle, bevor du Gruppensteuerung aktivierst.

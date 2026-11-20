@@ -25,7 +25,6 @@ Das Paket reduziert Setup-Zeit und vermeidet typische Routing-Fehler in den erst
 4. Kurzen Signalcheck vor der Aufnahme durchführen.
 
 ## Related tutorial
-- [Ambisonics in 30 Minuten: Dein erster funktionierender Reaper-Session-Flow](/post/ambisonics-in-30-minutes/)
 - [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 
 ## Download-Links

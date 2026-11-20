@@ -2,7 +2,7 @@
   {{ $pages := .RegularPages.ByDate.Reverse }}
   {{ $isDe := eq .Site.Language.Lang "de" }}
   {{ $startPage := site.GetPage "post/getting-started-icst-plugins-reaper" }}
-  {{ $quickPage := site.GetPage "post/reaper-setup-20-minuten" }}
+  {{ $quickPage := site.GetPage "post/getting-started-icst-plugins-reaper" }}
   {{ $hoaPage := site.GetPage "post/stereo-to-hoa7-session" }}
   {{ $oscPage := site.GetPage "post/osc-syntax-for-the-icst-ambiencoder-plugin" }}
 
@@ -62,8 +62,8 @@
             </div>
           {{ end }}
           <div class="hero__links">
-            <a class="hero__link hero__link--primary" href="{{ "post/reaper-setup-20-minuten/" | relLangURL }}">
-              {{ if $isDe }}Zur Checkliste{{ else }}Open checklist{{ end }}
+            <a class="hero__link hero__link--primary" href="{{ "post/getting-started-icst-plugins-reaper/" | relLangURL }}">
+              {{ if $isDe }}Zur Anleitung{{ else }}Open guide{{ end }}
             </a>
           </div>
         </div>
