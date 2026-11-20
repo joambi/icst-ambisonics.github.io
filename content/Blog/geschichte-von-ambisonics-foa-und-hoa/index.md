@@ -87,9 +87,9 @@ Representing the history of Ambisonics as a single unbroken line makes it easy t
 
 ## Sources and references
 
-- Michael Gerzon, *Periphony: With-Height Sound Reproduction* (JAES, 1973)
-- Michael Gerzon, *Practical Periphony* (1980)
+- Michael Gerzon, [*Periphony: With-Height Sound Reproduction*](https://ringbuffer.org/papers/gerzon1973periphony.html) (JAES, 1973)
+- Michael Gerzon, [*Practical Periphony*](https://www.aes.org/e-lib/browse.cfm?elib=3794) (1980)
 - Jérôme Daniel, dissertation on the foundations of HOA (2000/2001)
-- Mark Poletti, work on 3D surround systems based on spherical harmonics (2005)
-- Ambisonics Symposium 2011, *ambiX — A Suggested Ambisonics Format*
+- Mark Poletti, [work on 3D surround systems based on spherical harmonics](https://aes2.org/publications/elibrary-page/?id=13396) (2005)
+- Ambisonics Symposium 2011, [*ambiX — A Suggested Ambisonics Format*](https://ambisonics.iem.at/proceedings-of-the-ambisonics-symposium-2011/ambix-a-suggested-ambisonics-format)
 - [RFC 8486: Ambisonics in an Ogg Opus Container](https://www.rfc-editor.org/info/rfc8486)
