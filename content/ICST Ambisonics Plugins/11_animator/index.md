@@ -444,11 +444,10 @@ If the distance scaler differs, a dialog asks: **Rescale** (convert positions, w
 
 ## Limitations (v4.0)
 
-<!-- TODO check: compare with v4.0; remove the two bullets below once the fix is in a release -->
+<!-- TODO check: compare with v4.0; remove the first bullet below once the fix is in a release -->
 <!-- TODO confirm with developer: Repetitions with Relative During Clip add up (3 × 90° = 270°); use Palindrome for back and forth. Add to the Timing section once confirmed. -->
 
-- Without *Use Start Value* / *Use Defined Start Position*, Pause/Resume continues from the current value instead of the clip's own progress (all movement types, rotation and stretch, all timing types). Entering a clip part-way through (locate) then gives a wrong value too.
-- An Absolute Target for rotation or stretch without a start value is added to the current orientation instead of being reached absolutely.
+- Without *Use Start Value* / *Use Defined Start Position*, Pause/Resume, locate and Absolute Target do not behave as expected (all movement types, rotation and stretch, all timing types): see [Where a clip starts](#where-a-clip-starts-start-value-and-start-position).
 - After stopping in the middle of a Jitter clip, the last offset stays until the next Play.
 - Clip edits during playback sometimes only take effect at the next Play start.
 - Movements may stop up to one audio block short of their target.

@@ -23,14 +23,14 @@ Im Konzertkontext wird ein zentraler Höhpunkt — der Sweet Spot — optimiert.
 - **Klangfelder und Texturen** statt Einzelereignissen, die einen bestimmten Hörpunkt voraussetzen.
 - **Räumliche Hierarchie** durch Intensität und spektrale Eigenschaften, nicht nur durch Azimut-Position.
 
-Das bedeutet nicht, dass Lokalisation ausgeschlossen ist. Aber sie wird unzuverlässiger als im Konzert, und eine Komposition, die ausschließlich auf präzise Punktlokalisation setzt, verliert außerhalb des Sweet Spots einen wesentlichen Teil ihrer Wirkung.
+Das bedeutet nicht, dass Lokalisation ausgeschlossen ist. Aber sie wird unzuverlässiger als im Konzert, und eine Komposition, die ausschliesslich auf präzise Punktlokalisation setzt, verliert ausserhalb des Sweet Spots einen wesentlichen Teil ihrer Wirkung.
 
 ### Zeitlich non-lineares Hören
 
 Eine Besucherin betritt die Installation nach 4 Minuten, bleibt 7 Minuten, verlässt sie. Eine andere hört von Anfang an, geht nach 2 Minuten. Lineares narratives Komponieren — ein Stück mit klarem Anfang, Mitte und Schluss — funktioniert in diesem Kontext nur, wenn die Gesamtdauer so kurz ist, dass sie fast immer vollständig gehört wird.
 
 Alternativen:
-- **Zyklische Strukturen:** Das Stück kehrt regelmäßig zu Ausgangspunkten zurück. Jede Eintrittszeit ist ein gültiger Eintrittspunkt.
+- **Zyklische Strukturen:** Das Stück kehrt regelmässig zu Ausgangspunkten zurück. Jede Eintrittszeit ist ein gültiger Eintrittspunkt.
 - **Generative Systeme:** Klangereignisse werden algorithmisch generiert oder variiert. Wiederholung mit Variation statt Wiederholung ohne Unterschied.
 - **Atmosphärische Zeitstruktur:** Kein narrativer Bogen, sondern ein zeitlicher Zustand — ein Klangfeld, das sich langsam verändert, aber keine einzelnen dramaturgischen Punkte markiert.
 
@@ -38,7 +38,7 @@ Alternativen:
 
 Installationen können auf Präsenz reagieren. Sensoren (Bewegungsmelder, Kameras, Mikrofone) liefern Daten, die räumliche Parameter verändern: Eine Person tritt ein → ein Klangereignis wird ausgelöst; mehrere Personen bewegen sich → das Klangfeld verändert seine Dichte; Stille im Raum → das Feld öffnet sich.
 
-In diesem Kontext wird Ambisonics zum Teil eines größeren interaktiven Systems. Die Enkodierung räumlicher Ereignisse kann durch Max/MSP, SuperCollider, Pure Data oder ähnliche Systeme gesteuert werden, die mit REAPER und den ICST-Plugins über OSC kommunizieren.
+In diesem Kontext wird Ambisonics zum Teil eines grösseren interaktiven Systems. Die Enkodierung räumlicher Ereignisse kann durch Max/MSP, SuperCollider, Pure Data oder ähnliche Systeme gesteuert werden, die mit REAPER und den ICST-Plugins über OSC kommunizieren.
 
 ## Virtual Reality: Kopfbewegung als Kompositionsparameter
 
@@ -46,7 +46,7 @@ VR verbindet die immersive Perspektive des Ambisonics mit einem neuen Freiheitsg
 
 ### Binaural + Head Tracking
 
-VR-Ambisonics wird fast ausschließlich binaural wiedergegeben. Das Ambisonics-Feld wird in Echtzeit in ein Binaural-Signal umgewandelt, wobei die aktuelle Kopfausrichtung (Yaw, Pitch, Roll aus der VR-Hardware) berücksichtigt wird. Das Ergebnis: Klingt eine Quelle „rechts", bleibt sie rechts, auch wenn der Kopf sich dreht. Das ist der entscheidende Unterschied zum statischen binauralen Rendering ohne Head Tracking.
+VR-Ambisonics wird fast ausschliesslich binaural wiedergegeben. Das Ambisonics-Feld wird in Echtzeit in ein Binaural-Signal umgewandelt, wobei die aktuelle Kopfausrichtung (Yaw, Pitch, Roll aus der VR-Hardware) berücksichtigt wird. Das Ergebnis: Klingt eine Quelle „rechts", bleibt sie rechts, auch wenn der Kopf sich dreht. Das ist der entscheidende Unterschied zum statischen binauralen Rendering ohne Head Tracking.
 
 **Kompositorische Implikation:** Head Tracking verändert die Beziehung zwischen Komponistin und Hörerin fundamental. Die Komponistin legt eine räumliche Konstellation fest — Quellen, Felder, Bewegungen. Die Hörerin erkundet diese Konstellation aktiv durch Kopf- und Körperbewegung. Das Erlebnis ist partiell personalisiert: Wer nach links schaut, hört die linke Seite des Feldes frontal; wer geradeaus blickt, hört sie lateral.
 
@@ -64,7 +64,7 @@ In VR gibt es zwei grundsätzliche Quellentypen:
 
 In VR treten spezifische psychoakustische Herausforderungen auf, die für Komposition relevant sind:
 
-**Externalisation und In-Head-Localisation:** Binaurales Audio ohne perfekt angepasste HRTF klingt oft „im Kopf" statt „draußen im Raum". Ambisonics-basiertes VR-Audio mit Head Tracking verbessert die Externalisation erheblich, aber nicht vollständig. Höhere HOA-Ordnungen (5. oder 7. Ordnung) verbessern die binaurale Qualität.
+**Externalisation und In-Head-Localisation:** Binaurales Audio ohne perfekt angepasste HRTF klingt oft „im Kopf" statt „draussen im Raum". Ambisonics-basiertes VR-Audio mit Head Tracking verbessert die Externalisation erheblich, aber nicht vollständig. Höhere HOA-Ordnungen (5. oder 7. Ordnung) verbessern die binaurale Qualität.
 
 **Vertigo und Orientierungsstabilität:** Inkonsistenz zwischen visueller und akustischer Welt in VR kann Desorientierung oder Unbehagen verursachen. Audio-Latenzen von mehr als 20–30 ms zwischen Kopfbewegung und Klangfeld-Update können wahrnehmbar werden. Für musikalische Komposition bedeutet das: nicht-synchrone Raum-Cues sollten bewusst und sparsam eingesetzt werden.
 
@@ -80,6 +80,6 @@ Der Standard für 360°-Video und VR-Plattformen ist **First-Order Ambisonics (F
 
 VR und Installation sind keine marginalen Sonderformen von Ambisonics — sie sind eigenständige kompositorische Kontexte mit eigenem Publikumsverhalten, eigenen Wahrnehmungsbedingungen und eigenen Stärken. Ihr gemeinsamer Nenner ist die **Aktivität des Hörens**: Statt einer passiven Rezeptionsrolle wie im Konzert wird in beiden Kontexten das Hören selbst zu einem Akt der Raumdurchquerung.
 
-Das kompositorische Denken muss sich anpassen: Nicht mehr „was höre ich wann", sondern „was ist erfahrbar, wo auch immer man sich befindet und wohin man sich auch bewegt". Das schließt narrative Linearität nicht aus — es erfordert aber eine andere Form der kompositorischen Kontrolle: die Gestaltung von Räumen und Zuständen statt von Zeitverläufen.
+Das kompositorische Denken muss sich anpassen: Nicht mehr „was höre ich wann", sondern „was ist erfahrbar, wo auch immer man sich befindet und wohin man sich auch bewegt". Das schliesst narrative Linearität nicht aus — es erfordert aber eine andere Form der kompositorischen Kontrolle: die Gestaltung von Räumen und Zuständen statt von Zeitverläufen.
 
 Die technischen Werkzeuge sind dieselben — ICST-Plugins, REAPER, ambiX-Format. Aber die kompositorische Architektur, in der sie eingesetzt werden, unterscheidet sich wesentlich von Konzert und Fixed Media. Wer für VR oder Installation komponiert, muss die Frage „Wie erleben verschiedene Personen dieses Stück gleichzeitig und voneinander unabhängig?" als Grundfrage jeder kompositorischen Entscheidung mitdenken.

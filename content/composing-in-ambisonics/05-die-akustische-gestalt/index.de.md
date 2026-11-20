@@ -28,7 +28,7 @@ translationKey: "composing-acoustic-gestalt"
 
 Bevor wir von **Spatial Counterpoint** sprechen, lohnt sich ein kurzer Schritt zur Wahrnehmung selbst: 
 **Was macht ein Klangobjekt eigentlich zu einer erkennbaren Gestalt?** 
-- Die Gestaltpsychologie versteht eine Gestalt nicht als bloßes Addieren einzelner Teile, sondern als **kohärente Einheit**, die sich vom Hintergrund abhebt und als zusammenhängendes Ereignis wahrgenommen wird.
+- Die Gestaltpsychologie versteht eine Gestalt nicht als blosses Addieren einzelner Teile, sondern als **kohärente Einheit**, die sich vom Hintergrund abhebt und als zusammenhängendes Ereignis wahrgenommen wird.
 
 Für das Hören sind dabei vor allem drei Prinzipien wichtig:
 
@@ -48,7 +48,7 @@ Diese drei Ebenen machen ein Klangobjekt unterscheidbar. Eine Klarinette, ein Be
 
 ## Raum als vierte Dimension der Klanggestalt
 
-In vielen traditionellen Modellen erscheint Raum nur als **Container** oder **Bühne**, auf der Klänge platziert werden. Für kompositorische Arbeit in Ambisonics reicht dieses Verständnis jedoch nicht aus. Raum ist nicht bloß dekoratives Beiwerk, sondern oft ein **konstitutiver Teil der akustischen Gestalt**.
+In vielen traditionellen Modellen erscheint Raum nur als **Container** oder **Bühne**, auf der Klänge platziert werden. Für kompositorische Arbeit in Ambisonics reicht dieses Verständnis jedoch nicht aus. Raum ist nicht bloss dekoratives Beiwerk, sondern oft ein **konstitutiver Teil der akustischen Gestalt**.
 
 Das zeigt sich auf mehreren Ebenen:
 
@@ -65,7 +65,7 @@ Die Gestaltpsychologie beschreibt Wahrnehmung oft als Verhältnis von **Figur un
 Für Ambisonics ist das unmittelbar produktiv. Im ICST- oder REAPER-Workflow können etwa:
 
 - eine Melodie oder Solostimme mit geringer Distanz und klarer Höhenposition als Figur gesetzt werden
-- Texturen oder Atmosphären durch größere Distanz, mehr Diffusion und geringere Bewegung in den Hintergrund treten
+- Texturen oder Atmosphären durch grössere Distanz, mehr Diffusion und geringere Bewegung in den Hintergrund treten
 - Übergänge zwischen Figur und Hintergrund als eigentliche Formgeste komponiert werden
 
 Raum wird damit zu einem Mittel der **Hierarchisierung**, ohne dass nur mit Lautstärke gearbeitet werden muss.

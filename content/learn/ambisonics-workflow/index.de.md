@@ -492,12 +492,13 @@ Quell-Track → AmbiEncoder → [HOA FX: SN3D-konformer Reverb] → HOA-Bus → 
 
 ### HOA-Ordnung wählen
 
-| Ordnung | Kanäle | Empfehlung |
-|---:|---:|---|
-| 1st | 4 | Binaural-Produktion, Lehre, FOA-Aufnahmen |
-| 3rd | 16 | Standard für HOA-Produktionen und mittlere Arrays |
-| 5th | 36 | Grosse Arrays, hohe Richtungsauflösung |
-| 7th | 64 | Wissenschaftliche Referenz, max. Auflösung |
+| Ordnung | Kanäle | Formel | Empfehlung |
+|---:|---:|---|---|
+| 1st (FOA) | 4 | `(1+1)²` | Binaural-Produktion, Lehre, FOA-Aufnahmen |
+| 2nd | 9 | `(2+1)²` | — |
+| 3rd | 16 | `(3+1)²` | Standard für HOA-Produktionen und mittlere Arrays |
+| 5th | 36 | `(5+1)²` | Grosse Arrays, hohe Richtungsauflösung |
+| 7th | 64 | `(7+1)²` | Wissenschaftliche Referenz, max. Auflösung |
 
 ---
 
@@ -547,28 +548,14 @@ Render: B-Format Master | Format: ambiX (ACN/SN3D) | SR: 48000 Hz | Bit: 32-bit 
 </tbody>
 </table>
 
-### Kanalzahl nach HOA-Ordnung
-
-| Ordnung | Kanäle | Formel |
-|---:|---:|---|
-| 1st (FOA) | 4 | `(1+1)²` |
-| 2nd | 9 | `(2+1)²` |
-| 3rd | 16 | `(3+1)²` |
-| 5th | 36 | `(5+1)²` |
-| 7th | 64 | `(7+1)²` |
-
 ### Export-Checkliste
 
 <ul class="wf-checklist">
-<li>B-Format-Master-Track als Source bestätigt</li>
 <li>Kanalzahl zur HOA-Ordnung passend</li>
 <li>Sample Rate: 48 kHz</li>
 <li>Bit Depth: 32-bit float (Master) oder 24-bit (Delivery)</li>
 <li>Format: ambiX (ACN/SN3D) dokumentiert</li>
 <li>Dateiname enthält Ordnung und Format</li>
-<li>Test-Render vor dem vollständigen Export</li>
-<li>Re-Import und Binaural-Check bestanden</li>
-<li>Project Notes aktualisiert</li>
 <li>B-Format-Archiv-Kopie gesichert</li>
 </ul>
 

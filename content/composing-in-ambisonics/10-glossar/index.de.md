@@ -21,7 +21,7 @@ Modernes Ambisonics-Dateiformat, das ACN-Kanalreihenfolge mit SN3D-Normalisierun
 ---
 
 **ASW (Apparent Source Width)**
-Psychoakustische Größe, die beschreibt, wie breit oder ausgedehnt eine Klangquelle wahrgenommen wird. ASW hängt von frühen seitlichen Reflexionen und der räumlichen Kohärenz des Signals ab und ist kompositorisch über Spread und Diffusion steuerbar.
+Psychoakustische Grösse, die beschreibt, wie breit oder ausgedehnt eine Klangquelle wahrgenommen wird. ASW hängt von frühen seitlichen Reflexionen und der räumlichen Kohärenz des Signals ab und ist kompositorisch über Spread und Diffusion steuerbar.
 
 ---
 
@@ -106,7 +106,7 @@ Zeitunterschied zwischen dem Eintreffen eines Schallsignals am linken und rechte
 ---
 
 **LEV (Listener Envelopment)**
-Psychoakustische Größe für das Ausmass, in dem ein Hörer das Gefühl hat, von Schall umhüllt zu sein. LEV wird hauptsächlich durch späte laterale Schallreflexionen erzeugt und ist ein zentrales Qualitätsmerkmal räumlicher Klangwiedergabe. In Ambisonics-Kompositionen über Diffusion, Hallcharakter und rückwärtige/seitliche Schallanteile steuerbar.
+Psychoakustische Grösse für das Ausmass, in dem ein Hörer das Gefühl hat, von Schall umhüllt zu sein. LEV wird hauptsächlich durch späte laterale Schallreflexionen erzeugt und ist ein zentrales Qualitätsmerkmal räumlicher Klangwiedergabe. In Ambisonics-Kompositionen über Diffusion, Hallcharakter und rückwärtige/seitliche Schallanteile steuerbar.
 
 ---
 

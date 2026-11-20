@@ -444,13 +444,11 @@ Bei abweichendem Distance-Scaler fragt ein Dialog: **Rescale** (Positionen, Wayp
 
 ## Einschränkungen (v4.0)
 
-<!-- TODO prüfen: gegen v4.0 abgleichen; die zwei Punkte unten entfernen, sobald der Fix in einem Release ist -->
+<!-- TODO prüfen: gegen v4.0 abgleichen; den ersten Punkt unten entfernen, sobald der Fix in einem Release ist -->
 <!-- TODO mit Entwickler klären: Repetitions bei Relative During Clip addieren sich (3 × 90° = 270°); für Hin und Zurück Palindrome verwenden. Nach Bestätigung in den Timing-Abschnitt übernehmen. -->
 
-- Ohne *Use Start Value* / *Use Defined Start Position* setzt Pause/Resume vom aktuellen Wert statt vom Clipfortschritt aus fort (alle Bewegungstypen, Rotation und Stretch, alle Timing-Typen). Auch der Einstieg mitten in einen Clip (Locate) liefert dann einen falschen Wert.
-- Ein Absolute Target bei Rotation oder Stretch ohne Startwert wird auf die aktuelle Ausrichtung addiert, statt absolut erreicht zu werden.
+- Ohne *Use Start Value* / *Use Defined Start Position* verhalten sich Pause/Resume, Locate und Absolute Target nicht wie erwartet (alle Bewegungstypen, Rotation und Stretch, alle Timing-Typen): siehe [Wo ein Clip beginnt](#wo-ein-clip-beginnt-startwert-und-startposition).
 - Nach Stop mitten in einem Jitter-Clip bleibt der letzte Versatz stehen (bis zum nächsten Play).
-
 - Clip-Änderungen während der Wiedergabe greifen teils erst beim nächsten Play-Start.
 - Bewegungen können bis zu einem Audio-Block vor dem Ziel enden.
 - **Circle** mit Startpunkt ober- oder unterhalb des Mittelpunkts wird in die Horizontale abgeflacht.

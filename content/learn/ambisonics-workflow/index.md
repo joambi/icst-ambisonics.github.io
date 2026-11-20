@@ -295,12 +295,13 @@ Source Track → AmbiEncoder → [HOA FX: SN3D-compliant Reverb] → HOA Bus →
 
 ### Choosing HOA Order
 
-| Order | Channels | Recommendation |
-|---:|---:|---|
-| 1st | 4 | Binaural production, education, FOA recordings |
-| 3rd | 16 | Standard for HOA productions and mid-sized arrays |
-| 5th | 36 | Large arrays, high directional resolution |
-| 7th | 64 | Scientific reference, maximum resolution |
+| Order | Channels | Formula | Recommendation |
+|---:|---:|---|---|
+| 1st (FOA) | 4 | `(1+1)²` | Binaural production, education, FOA recordings |
+| 2nd | 9 | `(2+1)²` | — |
+| 3rd | 16 | `(3+1)²` | Standard for HOA productions and mid-sized arrays |
+| 5th | 36 | `(5+1)²` | Large arrays, high directional resolution |
+| 7th | 64 | `(7+1)²` | Scientific reference, maximum resolution |
 
 ---
 
@@ -350,28 +351,14 @@ Render: B-Format Master | Format: ambiX (ACN/SN3D) | SR: 48000 Hz | Bit: 32-bit 
 </tbody>
 </table>
 
-### Channel Count by HOA Order
-
-| Order | Channels | Formula |
-|---:|---:|---|
-| 1st (FOA) | 4 | `(1+1)²` |
-| 2nd | 9 | `(2+1)²` |
-| 3rd | 16 | `(3+1)²` |
-| 5th | 36 | `(5+1)²` |
-| 7th | 64 | `(7+1)²` |
-
 ### Export Checklist
 
 <ul class="wf-checklist">
-<li>B-Format master track confirmed as source</li>
 <li>Channel count matches HOA order</li>
 <li>Sample rate: 48 kHz</li>
 <li>Bit depth: 32-bit float (master) or 24-bit (delivery)</li>
 <li>Format: ambiX (ACN/SN3D) documented</li>
 <li>Filename includes order and format</li>
-<li>Test render before full export</li>
-<li>Re-import and binaural check passed</li>
-<li>Project notes updated</li>
 <li>B-Format archive copy backed up</li>
 </ul>
 

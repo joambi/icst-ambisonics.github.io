@@ -8,7 +8,7 @@ translationKey: "composing-psychoacoustics"
 
 Räumliche Komposition setzt voraus, dass Wahrnehmungseffekte zuverlässig erzielt werden können. Ein Klang soll näher klingen, eine Stimme soll von oben kommen, eine Bewegung soll von links nach rechts verlaufen — all das kann nur dann als kompositorisches Material funktionieren, wenn es vom Gehör tatsächlich so erlebt wird. Dieses Kapitel gibt einen Überblick über die wichtigsten Mechanismen räumlicher Wahrnehmung und leitet daraus konkrete Konsequenzen für das Komponieren in Ambisonics ab.
 
-Die psychoakustischen Grundlagen der Raumwahrnehmung sind kein rein technisches Thema. Sie beschreiben, was das Gehör leisten kann, wo es an Grenzen stößt und unter welchen Bedingungen räumliche Ereignisse stabil, mehrdeutig oder wirkungslos werden. Wer diese Mechanismen kennt, komponiert nicht gegen die Wahrnehmung, sondern mit ihr.
+Die psychoakustischen Grundlagen der Raumwahrnehmung sind kein rein technisches Thema. Sie beschreiben, was das Gehör leisten kann, wo es an Grenzen stösst und unter welchen Bedingungen räumliche Ereignisse stabil, mehrdeutig oder wirkungslos werden. Wer diese Mechanismen kennt, komponiert nicht gegen die Wahrnehmung, sondern mit ihr.
 
 ## Das binaurale System: Horizontale Lokalisation
 
@@ -38,14 +38,14 @@ Distanz wird nicht durch einen einzelnen Mechanismus, sondern durch das Zusammen
 
 - **D/R-Verhältnis (Direct-to-Reverberant Ratio):** Das Verhältnis von Direktschall zu diffusem Hallanteil ist der stärkste Distanzhinweis. Viel Direktschall → nah; viel Hallanteil → fern. Dieser Effekt lässt sich in Ambisonics über die Distanzparameter im Encoder steuern.
 - **Lautstärke:** Stärkerer Pegel wird tendenziell als Nähe wahrgenommen — ist aber stark kontextabhängig und durch musikalische Gewohnheiten überlagert.
-- **Luftabsorption:** Bei großen Distanzen dämpft Luft bevorzugt hohe Frequenzen. Dieser Effekt kann kompositorisch simuliert werden (Hochfrequenzabsenkung = mehr Distanz).
+- **Luftabsorption:** Bei grossen Distanzen dämpft Luft bevorzugt hohe Frequenzen. Dieser Effekt kann kompositorisch simuliert werden (Hochfrequenzabsenkung = mehr Distanz).
 - **Spectral Brightness:** Nähe wird oft mit grösserem Höhenpegel assoziiert; Ferne mit einem dumpfen, gefilterten Klangbild.
 
 *Kompositorische Konsequenz:* Die stärkste Distanzwirkung entsteht durch das **kombinierte Steuern** von D/R-Verhältnis, Pegelverlauf und spektraler Helligkeit. Wer nur den Pegel ändert, erzeugt Lautheit, nicht Distanz. Erst das gleichzeitige Verschieben mehrerer Cues macht Nähe und Ferne überzeugend erlebbar.
 
 ## Einhüllung und Quellenbreite: LEV und ASW
 
-Zwei psychoakustische Größen beschreiben, wie ein Klangfeld als immersiv oder objektorientiert erlebt wird:
+Zwei psychoakustische Grössen beschreiben, wie ein Klangfeld als immersiv oder objektorientiert erlebt wird:
 
 **LEV (Listener Envelopment)** ist das Gefühl, von Klang umgeben zu sein. Es wird primär durch **späte laterale Reflexionen** erzeugt — also durch diffuse Energie, die aus seitlichen und rückwärtigen Richtungen eintrifft. Hohe LEV lässt sich durch Diffusion, rückwärtige Spreizung und hallige Texturschichten erzeugen.
 

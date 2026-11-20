@@ -40,44 +40,29 @@ Wer mit Ambisonics komponiert, arbeitet nicht nur mit einer Technik, sondern mit
 <div class="ambisonics-history__section">
   <div class="ambisonics-history__section-title">
     <span class="ambisonics-history__section-num">2.1</span>
-    <h4>Wichtige Institute und Zentren</h4>
+    <h4>Wichtige Institute und Orte</h4>
   </div>
-  <p class="ambisonics-history__section-intro">Ambisonics wurde nicht nur durch einzelne Texte oder technische Formate entwickelt, sondern auch durch bestimmte Institutionen, an denen Forschung, künstlerische Produktion und Lehre zusammenkamen. Einige Orte waren historisch entscheidend, andere wurden später zu Knotenpunkten für HOA, immersive Medien und Spatial-Audio-Werkzeuge.</p>
+  <p class="ambisonics-history__section-intro">Ambisonics ist an Institutionen gewachsen, in denen Forschung, künstlerische Produktion und Lehre zusammenkommen, und es ist an Orten für Konzerte, Residenzen und Installationen zu hören. Nur wenige davon arbeiten ausschliesslich mit Ambisonics.</p>
   <ul class="ambisonics-history__section-list">
-    <li><a href="https://intothesoundfield.music.ox.ac.uk/michael-gerzon-story">Oxford / Michael Gerzon Umfeld</a> ist der historische Ausgangspunkt: Hier wurden die Grundlagen von Ambisonics in den 1970er Jahren entscheidend mitgeprägt.</li>
-    <li><a href="https://ambisonics.iem.at/">IEM Graz</a> ist eines der zentralen Zentren für HOA, Ambisonics-Standards, Symposien und die internationale Community rund um immersive Audioforschung.</li>
-    <li><a href="https://www.zhdk.ch/forschung/icst">ICST Zürich</a> verbindet Forschung, Komposition und Werkzeuge besonders praxisnah, etwa mit den ICST Ambisonics Tools und Plugins sowie dem Kompositionsstudio.</li>
-    <li><a href="https://support.ircam.fr/docs/spat/3.0/spat-3-intro/co/overview.html">IRCAM Paris</a> ist wichtig für Raumklang, Virtual Acoustics und künstlerische Spatialization-Workflows, auch wenn der Fokus breiter ist als nur Ambisonics.</li>
-    <li><a href="https://zkm.de/en/project/sound-dome">ZKM Karlsruhe</a> ist ein zentraler Ort für räumliche Klangkunst und Aufführungspraxis, mit dem Sound Dome und Werkzeugen wie <a href="https://zkm.de/en/zirkonium">Zirkonium</a>.</li>
-    <li><a href="https://music.stanford.edu/venues-facilities/venues/ccrma-stage">CCRMA Stanford</a> ist ein wichtiger Knoten für Forschung, Lehre und künstlerische Praxis im Bereich Spatial Audio, einschliesslich Ambisonics-basierter Wiedergabe.</li>
+    <li><a href="https://intothesoundfield.music.ox.ac.uk/michael-gerzon-story">Oxford / Michael Gerzon Umfeld</a>: der historische Ausgangspunkt; hier wurden die Grundlagen von Ambisonics in den 1970er Jahren geprägt.</li>
+    <li><a href="https://ambisonics.iem.at/">IEM Graz</a> und der <a href="https://iem.kug.ac.at/projektseiten/cos/about/further-information/infrastructure">IEM CUBE</a>: zentrales Zentrum für HOA, Standards, Symposien, Projektion und künstlerische Präsentation.</li>
+    <li><a href="https://www.zhdk.ch/forschung/icst">ICST Zürich</a>: Forschung, Komposition und Werkzeuge (ICST Ambisonics Tools und Plugins) sowie das <a href="https://ambisonics.ch/blog/icst-composer-studio-overview/">Kompositionsstudio</a>, eher Produktions- und Residenzort als Konzertsaal.</li>
+    <li><a href="https://zkm.de/en/project/sound-dome">ZKM Karlsruhe</a>: Sound Dome und <a href="https://zkm.de/en/zirkonium">Zirkonium</a>; ein führender Ort für räumliche elektroakustische Musik.</li>
+    <li>IRCAM Paris (<a href="https://support.ircam.fr/docs/spat/3.0/spat-3-intro/co/overview.html">SPAT</a>, <a href="https://medias.ircam.fr/en/media/x0e32bd">Medien</a>): Raumklang und Virtual Acoustics, Ambisonics als ein Verfahren unter mehreren.</li>
+    <li><a href="https://music.stanford.edu/venues-facilities/venues/ccrma-stage">CCRMA Stanford</a>: Forschung, Lehre und künstlerische Praxis, einschliesslich Ambisonics-basierter Wiedergabe.</li>
+    <li><a href="https://notam.no/en/studio/studio-3/">NOTAM Spatial Audio Studio, Oslo</a>: Produktionsort für Ambisonics und andere immersive Lautsprecherverfahren.</li>
+    <li><a href="https://elektronmusikstudion.se/en/about-elektronmusikstudion-ems/">EMS, Stockholm</a>: seit Jahrzehnten elektroakustische Musik; Ambisonics ist Teil eines breiteren Studio-Kontexts.</li>
+    <li><a href="https://empac.rpi.edu/2017/spatial-audio-summer-workshop">EMPAC, Troy, New York</a>: grossformatige Spatial-Audio-Praxis in den USA, mit explizitem HOA-Bezug.</li>
+    <li><a href="https://temporeale.it/en/">Tempo Reale, Florenz</a>: italienischer Produktions- und Aufführungsort für elektroakustische und immersive Musik.</li>
+    <li><a href="https://sat.qc.ca/en/satosphere">Satosphere / SAT, Montreal</a>: prägend für Kuppel-, Spatial-Audio- und performative Formate.</li>
+    <li><a href="https://beast.cal.bham.ac.uk/offspring/beastdome/">BEASTdome, Birmingham</a>: Aufführungsort für elektroakustische und immersive Mehrkanalpraxis.</li>
   </ul>
+  <p class="ambisonics-history__section-intro">Kuratorisch wichtig ist die Unterscheidung zwischen Orten mit <strong>explizitem Ambisonics-/HOA-Schwerpunkt</strong> wie IEM, ICST oder NOTAM und breiteren Spatial-Audio-Zentren wie IRCAM, EMS, EMPAC oder Tempo Reale, in denen Ambisonics Teil eines grösseren künstlerischen und technischen Ökosystems ist.</p>
 </div>
 
 <div class="ambisonics-history__section">
   <div class="ambisonics-history__section-title">
     <span class="ambisonics-history__section-num">2.2</span>
-    <h4>Wichtige Konzert- und Produktionsorte für Ambisonics weltweit</h4>
-  </div>
-  <p class="ambisonics-history__section-intro">Neben Forschungszentren gibt es weltweit Orte, an denen Ambisonics und verwandte Spatial-Audio-Verfahren vor allem künstlerisch präsent werden: in Konzerten, Residenzen, Produktionen und installativen Formaten. Nicht alle dieser Orte arbeiten ausschliesslich mit Ambisonics, aber alle sind wichtige Bezugspunkte für die künstlerische Praxis.</p>
-  <ul class="ambisonics-history__section-list">
-    <li><a href="https://zkm.de/en/project/sound-dome">ZKM Sound Dome, Karlsruhe</a> ist einer der wichtigsten Konzertorte für räumliche elektroakustische Musik und immersive Aufführungspraxis.</li>
-    <li><a href="https://iem.kug.ac.at/projektseiten/cos/about/further-information/infrastructure">IEM CUBE, Graz</a> ist ein zentraler Raum für HOA-Projektion, Forschung und künstlerische Präsentation.</li>
-    <li><a href="https://ambisonics.ch/blog/icst-composer-studio-overview/">ICST Kompositionsstudio, Zürich</a> ist weniger klassischer Konzertsaal als Produktions- und Residenzort, aber international relevant für Ambisonics-Komposition.</li>
-    <li><a href="https://medias.ircam.fr/en/media/x0e32bd">IRCAM, Paris</a> ist ein Schlüsselort für künstlerische Spatial-Audio-Praxis; in Produktionen, Seminaren und Tools wie SPAT spielt Ambisonics neben anderen Verfahren eine wichtige Rolle.</li>
-    <li><a href="https://notam.no/en/studio/studio-3/">NOTAM Spatial Audio Studio, Oslo</a> ist ein wichtiger Produktionsort für künstlerische Arbeit mit Ambisonics und anderen immersiven Lautsprecherverfahren.</li>
-    <li><a href="https://elektronmusikstudion.se/en/about-elektronmusikstudion-ems/">EMS Elektronmusikstudion, Stockholm</a> ist seit Jahrzehnten ein zentraler Ort für elektroakustische Musik; Ambisonics ist dort Teil eines breiteren Spatial-Audio- und Studio-Kontexts.</li>
-    <li><a href="https://empac.rpi.edu/2017/spatial-audio-summer-workshop">EMPAC, Troy, New York</a> ist einer der wichtigsten US-amerikanischen Orte für grossformatige Spatial-Audio-Praxis mit explizitem HOA- und Ambisonics-Bezug.</li>
-    <li><a href="https://music.stanford.edu/venues-facilities/venues/ccrma-stage">CCRMA Stage, Stanford</a> ist ein bedeutender US-Ort für Forschung, Lehre und künstlerische Spatial-Audio-Praxis, auch wenn der Fokus nicht ausschliesslich auf Ambisonics liegt.</li>
-    <li><a href="https://temporeale.it/en/">Tempo Reale, Florenz</a> ist ein wichtiger italienischer Produktions- und Aufführungsort für elektroakustische und immersive Musik; der Schwerpunkt liegt breiter auf Spatial Audio und Soundscape-Praxis.</li>
-    <li><a href="https://sat.qc.ca/en/satosphere">Satosphere / SAT, Montreal</a> ist weltweit prägend für immersive künstlerische Praxis mit Kuppel-, Spatial-Audio- und performativen Formaten.</li>
-    <li><a href="https://beast.cal.bham.ac.uk/offspring/beastdome/">BEASTdome, Birmingham</a> ist ein wichtiger Aufführungsort für elektroakustische und immersive Mehrkanalpraxis.</li>
-  </ul>
-  <p class="ambisonics-history__section-intro">Kuratorisch wichtig ist die Unterscheidung zwischen Orten mit <strong>explizitem Ambisonics-/HOA-Schwerpunkt</strong> wie IEM, ICST oder NOTAM und breiteren Spatial-Audio-Zentren wie IRCAM, EMS, EMPAC oder Tempo Reale, in denen Ambisonics Teil eines größeren künstlerischen und technischen Ökosystems ist.</p>
-</div>
-
-<div class="ambisonics-history__section">
-  <div class="ambisonics-history__section-title">
-    <span class="ambisonics-history__section-num">2.3</span>
     <h4>Kleinere Bühnen, Ateliers und Residencies</h4>
   </div>
   <p class="ambisonics-history__section-intro">Zur Geschichte und Gegenwart von Ambisonics gehören nicht nur grosse Institutionen. Gerade kleinere Studios, mobile Dome-Setups und künstlerische Residencies sind wichtig, weil dort experimentelle, niedrigschwellige und oft sehr direkte Formen von Spatial-Audio-Praxis entstehen.</p>
@@ -92,7 +77,7 @@ Wer mit Ambisonics komponiert, arbeitet nicht nur mit einer Technik, sondern mit
 
 <div class="ambisonics-history__section">
   <div class="ambisonics-history__section-title">
-    <span class="ambisonics-history__section-num">2.4</span>
+    <span class="ambisonics-history__section-num">2.3</span>
     <h4>Historische Labels, Einspielorte und Archive</h4>
   </div>
   <p class="ambisonics-history__section-intro">Ambisonics ist nicht nur eine Geschichte von Laboren und Lautsprechersystemen, sondern auch von Labels, Veröffentlichungen und Hörarchiven. Gerade diese Orte zeigen, wie sich Ambisonics früh als künstlerische Praxis verbreitete und bis heute als Repertoire, Referenz und Dokumentation zirkuliert.</p>
@@ -108,4 +93,4 @@ Wer mit Ambisonics komponiert, arbeitet nicht nur mit einer Technik, sondern mit
 
 Für die kompositorische Praxis ist diese Geschichte nicht bloss Hintergrundwissen. Sie erklärt, warum heutige Ambisonics-Arbeit fast immer zwischen drei Ebenen vermittelt: zwischen **Format und Ordnung** (FOA oder HOA), zwischen **konkretem Aufführungsort** (Dome, Studio, Binaural, mobiles Setup) und zwischen **Werkzeugkette** (DAW, Encoder, Decoder, Monitoring, Automation).
 
-Wer heute in Ambisonics komponiert, entscheidet daher nicht nur über Klangmaterial, sondern immer auch über **Raumauflösung**, **Wiedergabekontext** und **Übersetzbarkeit** des Werks in andere Setups. Genau daraus ergeben sich die nächsten Fragen: Wie viele Raumebenen braucht ein Stück? Wie bewegt sich Material? Wie präzise müssen Lokalisation und Diffusität sein? Und wie lässt sich das so dokumentieren, dass ein Werk nicht an ein einziges Lautsprecher-Setup gebunden bleibt?
+Wer heute in Ambisonics komponiert, entscheidet daher nicht nur über Klangmaterial, sondern immer auch über **Raumauflösung**, **Wiedergabekontext** und **Übersetzbarkeit** des Werks in andere Setups. Die folgenden Kapitel greifen diese Fragen auf.

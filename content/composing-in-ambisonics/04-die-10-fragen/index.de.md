@@ -289,7 +289,7 @@ Als Basissetup genügt in allen Beispielen:
 
 </div>
 
-Diese zehn Studien können einzeln bearbeitet oder zu größeren Projektskizzen verbunden werden. Besonders produktiv ist es, **dieselbe Klangquelle** durch mehrere Fragen hindurch zu testen. So wird hörbar, dass sich die Leitfragen nicht nur auf Inhalte beziehen, sondern direkt auf **Form, Routing, Automation und Dramaturgie**.
+Diese zehn Studien können einzeln bearbeitet oder zu grösseren Projektskizzen verbunden werden. Besonders produktiv ist es, **dieselbe Klangquelle** durch mehrere Fragen hindurch zu testen. So wird hörbar, dass sich die Leitfragen nicht nur auf Inhalte beziehen, sondern direkt auf **Form, Routing, Automation und Dramaturgie**.
 
 Die zehn Fragen machen sichtbar, dass räumliche Komposition nicht allein aus Positionen und Bewegungen besteht, sondern von der Wahrnehmbarkeit und Stabilität klanglicher Einheiten abhängt. Bevor räumliche Beziehungen zwischen mehreren Klangobjekten präzise gestaltet werden können, muss daher geklärt werden, wodurch ein Klang im Raum überhaupt als Gestalt hervortritt. Das folgende Kapitel wendet sich deshalb der **Akustischen Gestalt eines Klanges** zu.
 
@@ -327,7 +327,7 @@ Die folgende Übersicht ist kein starres Formular, sondern eine **kompositorisch
 
 **Leitfrage:** Was trägt primär die Form — die Raumgesten oder die spektral‑zeitliche Entwicklung?
 
-**Unterfragen:** Könnte das Stück in Stereo noch funktionieren, oder bricht die Form dann zusammen? Gibt es Abschnitte, die fast ausschließlich über räumliche Veränderungen definiert sind (space‑form)?
+**Unterfragen:** Könnte das Stück in Stereo noch funktionieren, oder bricht die Form dann zusammen? Gibt es Abschnitte, die fast ausschliesslich über räumliche Veränderungen definiert sind (space‑form)?
 
 **Entscheidungsoptionen:**
 - Form primär spektral/zeitlich, Raum sekundär
@@ -465,7 +465,7 @@ Die folgende Übersicht ist kein starres Formular, sondern eine **kompositorisch
 
 **Leitfrage:** Wie verhalte ich mich zu realen Räumen und Raum‑Metaphern?
 
-**Unterfragen:** Nutze ich bekannte Archetypen (Tunnel, Platz, Innenraum, Außen, Höhe, Abgrund)? Will ich reale Räume nachbilden, verfremden oder etwas physisch Unmögliches bauen?
+**Unterfragen:** Nutze ich bekannte Archetypen (Tunnel, Platz, Innenraum, Aussen, Höhe, Abgrund)? Will ich reale Räume nachbilden, verfremden oder etwas physisch Unmögliches bauen?
 
 **Entscheidungsoptionen:**
 - Mimesis (Nachbildung realer Räume)

@@ -38,7 +38,7 @@ Die häufigste Konfiguration: Ein vorproduziertes Ambisonics-Playback wird durch
 Alle Klangereignisse werden in Echtzeit enkodiert und räumlich verarbeitet. Typisch für interaktive Systeme, algorithmische Komposition oder improvisierte räumliche Musik.
 
 **Technische Grundvoraussetzungen:**
-- Niedrige Latenz ist essenziell: für Ambisonics-Encoding mit ICST-Plugins ist REAPER in einem stabilen Echtzeitmodus zu betreiben (ASIO oder CoreAudio-Treiber, Puffergrößen typischerweise 64–256 Samples)
+- Niedrige Latenz ist essenziell: für Ambisonics-Encoding mit ICST-Plugins ist REAPER in einem stabilen Echtzeitmodus zu betreiben (ASIO oder CoreAudio-Treiber, Puffergrössen typischerweise 64–256 Samples)
 - Dedizierte Hardware: performancetaugliche CPU, stabile Audioschnittstelle
 - OSC oder MIDI für Echtzeit-Steuerung räumlicher Parameter ist empfehlenswert, wenn mehrere Quellen gleichzeitig bewegt werden sollen
 

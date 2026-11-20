@@ -5,7 +5,7 @@ date: 2026-01-01T00:00:00
 weight: 60
 ---
 
-Spatial Counterpoint ist der Versuch, **Ausdehnung, Position und Bewegung** zu gleichwertigen kompositorischen Parametern neben Tonhöhe, Zeit, Dynamik und Klangfarbe zu machen. Raum ist dabei nicht bloß Bühne oder Verteilungssystem, sondern wird selbst zur Formkraft. Bewegungen, Annäherungen, Überlagerungen und räumliche Trennungen erzeugen Spannungen, Verdichtungen, Öffnungen oder Auflösungen, die ebenso präzise gestaltet werden können wie harmonische oder rhythmische Beziehungen.
+Spatial Counterpoint ist der Versuch, **Ausdehnung, Position und Bewegung** zu gleichwertigen kompositorischen Parametern neben Tonhöhe, Zeit, Dynamik und Klangfarbe zu machen. Raum ist dabei nicht bloss Bühne oder Verteilungssystem, sondern wird selbst zur Formkraft. Bewegungen, Annäherungen, Überlagerungen und räumliche Trennungen erzeugen Spannungen, Verdichtungen, Öffnungen oder Auflösungen, die ebenso präzise gestaltet werden können wie harmonische oder rhythmische Beziehungen.
 
 Für Hörende entsteht dadurch eine unmittelbar erfahrbare Klangumgebung: musikalische Prozesse werden nicht nur zeitlich, sondern auch räumlich nachvollziehbar. Gerade in Ambisonics wird diese Erfahrung besonders stark, weil Quellen nicht an ein fixes Lautsprecherbild gebunden sind, sondern als Schallfeld gedacht und auf unterschiedliche Setups übertragen werden können.
 

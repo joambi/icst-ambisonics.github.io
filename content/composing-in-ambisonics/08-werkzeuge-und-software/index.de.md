@@ -42,7 +42,7 @@ Die Tabelle ist bewusst als **Orientierung** zu lesen: Manche Tools sind komplet
 
 - **Für freie HOA-Produktion** sind ICST, IEM, SPARTA, ambix und ATK die wichtigsten Ökosysteme.
 - **Für künstlerische Komposition** sind ICST, IEM, ATK, Audio Brewers und teilweise audioCube besonders interessant, weil sie zwischen präziser Technik und kreativer Schallfeldbearbeitung vermitteln.
-- **Für VR, Film und kommerzielle Workflows** spielen SSA, Sound Particles, FLUX:: SPAT, dearVR, Spatial Audio Designer, Nuendo, Pro Tools und Game-Engines eine größere Rolle.
+- **Für VR, Film und kommerzielle Workflows** spielen SSA, Sound Particles, FLUX:: SPAT, dearVR, Spatial Audio Designer, Nuendo, Pro Tools und Game-Engines eine grössere Rolle.
 - **Für Lehre, DIY und kleinere Setups** sind OAT, ambix, Blue Ripple, Envelop for Live, audioCube und Reaper-basierte Kombinationen oft besonders attraktiv.
 - **Für Mikrofon-Workflows** ist SoundField by RODE relevant, wenn FOA-Aufnahmen aus A-Format-Mikrofonen weiterverarbeitet werden sollen.
 - **Für Upmixing, Spezial-Decoder und experimentelle HOA-Produktionsketten** lohnt sich ein Blick auf Blue Ripple Sound, FLUX:: SPAT, Spatial Audio Designer und Audio Brewers.

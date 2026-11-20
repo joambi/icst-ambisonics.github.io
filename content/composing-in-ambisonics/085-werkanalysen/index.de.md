@@ -8,7 +8,7 @@ translationKey: "composing-work-analyses"
 
 Analytisches Hören und kompositorische Theorie bleiben abstrakt, solange sie nicht an konkreten Stücken erprobt werden. Dieses Kapitel verbindet daher die bisher entwickelten Konzepte — die Parameter-Taxonomie aus den Raumparameter-Kapiteln, die Kategorien des analytischen Hörens, die psychoakustischen Prinzipien und die vier kompositorischen Raumstrategien — zu einem praktischen Analyseverfahren und führt es an zwei strukturierten Fallstudien vor.
 
-Die Fallstudien sind als **Musteranalysen** angelegt: Sie beschreiben keine spezifischen Werke im Sinne einer Sekundärliteratur-Analyse, sondern rekonstruieren zwei typische räumliche Dramaturgien aus dem elektroakustischen Repertoire und zeigen, mit welchen Kategorien und Fragen sich solche Stücke hörend erschließen lassen. Am Ende des Kapitels folgt ein kommentierter Repertoire-Guide mit konkreten Hörtipps — aus dem ASCOLTA-Programm, aus ICST-Residenzen und von der [3D AudioSpace-Plattform](https://audiospace.soundingfuture.com/) von Sounding Future.
+Die Fallstudien sind als **Musteranalysen** angelegt: Sie beschreiben keine spezifischen Werke im Sinne einer Sekundärliteratur-Analyse, sondern rekonstruieren zwei typische räumliche Dramaturgien aus dem elektroakustischen Repertoire und zeigen, mit welchen Kategorien und Fragen sich solche Stücke hörend erschliessen lassen. Am Ende des Kapitels folgt ein kommentierter Repertoire-Guide mit konkreten Hörtipps — aus dem ASCOLTA-Programm, aus ICST-Residenzen und von der [3D AudioSpace-Plattform](https://audiospace.soundingfuture.com/) von Sounding Future.
 
 Einen hilfreichen begrifflichen Rahmen für diese Analysearbeit bietet Denis Smalleys Raumtypologie aus seinem Aufsatz *Space-form and the acousmatic image* (2007): **Source-bonded Space** bezeichnet Raum als Eigenschaft des klingenden Objekts selbst; **Perspectival Space** beschreibt erfahrbare Tiefe, Distanz und Umgebung; **Spectral Space** meint den durch harmonische und spektrale Strukturen aufgespannten Raum jenseits der Lokalisation. Diese drei Kategorien durchdringen sich in realen Kompositionen — sie anzuwenden schärft den Blick für kompositorische Entscheidungen. Der [ASCOLTA-Hörführer](/de/blog/ascolta-listening-guide/) entwickelt diese Kategorien im Kontext konkreter Hörsessions weiter und kann als analytische Begleitlektüre genutzt werden.
 
@@ -26,7 +26,7 @@ Die drei Ebenen sind nicht unabhängig. Eine Beobachtung auf Ebene 1 (z.B. „di
 
 ## Fallstudie A: Raumtransformation — Feldklang und synthetische Einhüllung
 
-**Typisches Szenario:** Ein Stück für 3D-Ambisonics (mindestens 3. Ordnung), das von Feldaufnahmen ausgeht und diese in synthetische Raumfelder transformiert. Aufführungskontext: Dome oder großes Lautsprecher-Array.
+**Typisches Szenario:** Ein Stück für 3D-Ambisonics (mindestens 3. Ordnung), das von Feldaufnahmen ausgeht und diese in synthetische Raumfelder transformiert. Aufführungskontext: Dome oder grosses Lautsprecher-Array.
 
 ### Phase 1 — Exposition (0:00–2:00): Räumliche Verortung
 
@@ -48,7 +48,7 @@ Die Feldaufnahme beginnt sich zu verändern. Spektral: Hochfrequenzanteile werde
 
 Die ursprüngliche Quelle ist kaum mehr als solche hörbar. Das Feld ist jetzt vollständig diffus — keine klare Richtung mehr, maximale LEV, geringe Lokalisation. Overhead-Schichten und untere Bereiche sind aktiv. Die Wahrnehmung wechselt von „Ich höre etwas dort" zu „Ich befinde mich innerhalb von etwas".
 
-**Analytische Beobachtung:** Diese Phase arbeitet ausschließlich mit der Strategie der **Textur und Einhüllung**. Die Psychoakustik des LEV — späte laterale Reflexionen, Dekorrélation — ist hier der eigentliche kompositorische Parameter. Die räumliche Auflösung ist für Lokalisation irrelevant geworden; jetzt entscheidet die zeitliche Struktur der Reflexionsdichte.
+**Analytische Beobachtung:** Diese Phase arbeitet ausschliesslich mit der Strategie der **Textur und Einhüllung**. Die Psychoakustik des LEV — späte laterale Reflexionen, Dekorrélation — ist hier der eigentliche kompositorische Parameter. Die räumliche Auflösung ist für Lokalisation irrelevant geworden; jetzt entscheidet die zeitliche Struktur der Reflexionsdichte.
 
 **Kompositorische Funktion:** Klimax durch räumliche Vollständigkeit, nicht durch Lautstärke.
 

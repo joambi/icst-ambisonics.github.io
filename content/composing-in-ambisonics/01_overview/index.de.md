@@ -38,13 +38,13 @@ Das Diagramm ist nicht als technische Bedienanleitung zu lesen, sondern als **ko
   <figcaption><strong>Vier Grundparameter räumlicher Komposition.</strong> Azimut und Elevation beschreiben Richtung und Höhe, Distanz organisiert Nähe und Ferne, Diffusion den Übergang zwischen fokussiertem Objekt und räumlicher Ausdehnung.</figcaption>
 </figure>
 
-Komponieren in Ambisonics heißt, Raum nicht nur als Verteilungssystem, sondern als **formbildenden Parameter** zu verstehen. Quellen können sich annähern, auseinanderdriften, in Höhe staffeln, sich zu Clustern verdichten oder als unabhängige Stimmen durch ein gemeinsames Schallfeld geführt werden.
+Komponieren in Ambisonics heisst, Raum nicht nur als Verteilungssystem, sondern als **formbildenden Parameter** zu verstehen. Quellen können sich annähern, auseinanderdriften, in Höhe staffeln, sich zu Clustern verdichten oder als unabhängige Stimmen durch ein gemeinsames Schallfeld geführt werden.
 
 Dieser Bereich ist nicht als lineares Lehrbuch gedacht, sondern als **kompositorische Arbeitsumgebung in Textform**. Er verbindet historische Orientierung, kompositorische Fragen und technische Toolchains.
 
 ## Worum es hier praktisch geht
 
-Dieser Bereich richtet sich an Komponist:innen, die Raum nicht nur mischen, sondern **als kompositorisches Material** einsetzen wollen. Gemeint ist nicht bloß die Verteilung von Klang auf Lautsprecher, sondern die bewusste Gestaltung von **Position, Höhe, Distanz, Diffusion, Bewegung und räumlichen Beziehungen** zwischen Klangobjekten.
+Dieser Bereich richtet sich an Komponist:innen, die Raum nicht nur mischen, sondern **als kompositorisches Material** einsetzen wollen. Gemeint ist nicht bloss die Verteilung von Klang auf Lautsprecher, sondern die bewusste Gestaltung von **Position, Höhe, Distanz, Diffusion, Bewegung und räumlichen Beziehungen** zwischen Klangobjekten.
 
 Wenn du diesen Bereich durcharbeitest, sollst du vor allem drei Dinge können:
 
@@ -72,7 +72,7 @@ Drei Gründe sprechen besonders für das Komponieren in Ambisonics:
 - **Format-Unabhängigkeit**: FOA und HOA lösen das Werk von einem einzigen Lautsprecherbild und erlauben flexible Dekodierungen für verschiedene Setups.
 - **Bessere Übertragbarkeit**: Ein Ambisonics-Master kann in Konzert, Studio, Kopfhörer- oder Installationskontexten unterschiedlich gerendert werden, ohne die räumliche Dramaturgie neu denken zu müssen.
 
-Gerade ästhetisch entstehen dadurch besondere Chancen: narrative Wege durch Räume, Wechsel zwischen Innen und Außen, Mikro- und Makroperspektiven, abstrakte skulpturale Bewegungsformen und ein Grad an Körperlichkeit, der sich deutlich von klassischem Surround unterscheidet. Ambisonics ist deshalb nicht nur ein technisches Format, sondern eine **kompositorische Denkweise**, die heutige und zukünftige Aufführungssituationen zugleich mitdenkt.
+Gerade ästhetisch entstehen dadurch besondere Chancen: narrative Wege durch Räume, Wechsel zwischen Innen und Aussen, Mikro- und Makroperspektiven, abstrakte skulpturale Bewegungsformen und ein Grad an Körperlichkeit, der sich deutlich von klassischem Surround unterscheidet. Ambisonics ist deshalb nicht nur ein technisches Format, sondern eine **kompositorische Denkweise**, die heutige und zukünftige Aufführungssituationen zugleich mitdenkt.
 
 Das lässt sich auch als Gegenüberstellung zweier Denkweisen beschreiben: In einer eher mix- oder effektorientierten Praxis wird Raum häufig als nachträgliche Erweiterung eines bereits vorhandenen Klanggeschehens behandelt. Im Ambisonics-Kontext für Komponist:innen wird Raum dagegen selbst zum **Träger von Form**, Relation und Werkidentität.
 
