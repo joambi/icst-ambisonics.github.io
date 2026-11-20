@@ -31,7 +31,11 @@ Ambisonics ist eine Methode, dreidimensionalen Klang aufzunehmen und wiederzugeb
 
 Neu dabei? Folge dem geführten Startpfad. Schon im Thema? Spring direkt in die Plugin-Doku oder ins EcoSystem.
 
+<div class="home-hero-img">
+
 ![Plugin-Übersicht](/images/Home_gif.gif)
+
+</div>
 
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/de/start/">

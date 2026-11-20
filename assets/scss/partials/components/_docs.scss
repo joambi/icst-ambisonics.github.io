@@ -1038,7 +1038,9 @@
 // Homepage hero image — full-width, not capped at 720px
 .post--home .post__content > p:first-of-type > img,
 .post--home .post__content .home-hero-img img {
+  width: 100%;
   max-width: 100%;
+  height: auto;
   max-height: none;
 }
 

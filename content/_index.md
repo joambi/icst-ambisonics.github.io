@@ -32,7 +32,11 @@ Ambisonics is a method for capturing and reproducing three-dimensional sound. Th
 
 If you are new, follow the guided start path. If you already know the plugins, jump straight to Quick Start, tutorials, or the docs.
 
+<div class="home-hero-img">
+
 ![Plugin Overview](/images/Home_gif.gif)
+
+</div>
 
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/start/">
