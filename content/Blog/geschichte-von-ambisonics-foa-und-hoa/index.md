@@ -20,47 +20,10 @@ This timeline separates the development of <strong>FOA</strong> and <strong>HOA<
   <span class="ambisonics-history__legend-item"><span class="ambisonics-history__dot ambisonics-history__dot--shared"></span>Shared standards and media practice</span>
 </div>
 
-<div class="ambisonics-history__card">
-
-```mermaid
-flowchart TB
-    classDef foa fill:#d9f3f4,stroke:#00838f,color:#0d2a2d,stroke-width:1.6px;
-    classDef hoa fill:#ffe7d1,stroke:#ef6c00,color:#432100,stroke-width:1.6px;
-    classDef shared fill:#eceff1,stroke:#455a64,color:#1f2a30,stroke-width:1.4px;
-
-    A["1970s<br/>Gerzon and Fellgett develop the foundations of Ambisonics"]:::shared
-
-    subgraph FOA["FOA: First-Order Ambisonics"]
-      direction TB
-      F1["1973<br/>Periphony: With-Height Sound Reproduction"]:::foa
-      F2["1975<br/>The term Ambisonics becomes established"]:::foa
-      F3["Late 1970s<br/>UHJ makes Ambisonics stereo-compatible"]:::foa
-      F4["1980s<br/>FOA enters practical use in recording, broadcasting, and UHJ releases"]:::foa
-      F5["1990s<br/>FOA remains the dominant practical form and teaching basis"]:::foa
-      F6["2010s–present<br/>FOA remains the accessible entry point for 360 audio and production"]:::foa
-    end
-
-    subgraph HOA["HOA: Higher-Order Ambisonics"]
-      direction TB
-      H1["2000/2001<br/>Jérôme Daniel establishes the modern theoretical basis for HOA"]:::hoa
-      H2["2003<br/>Near-field and distance coding extend HOA"]:::hoa
-      H3["2005<br/>Poletti grounds HOA in spherical harmonics"]:::hoa
-      H4["2006–2009<br/>Microphone arrays, symposia, and research make HOA practical"]:::hoa
-      H5["2011<br/>ambiX unifies channel ordering and normalisation"]:::hoa
-      H6["2010s–present<br/>HOA becomes a key technology for VR, XR, and scene-based audio"]:::hoa
-    end
-
-    S1["2011<br/>File and interchange formats become critical for HOA workflows"]:::shared
-    S2["2018<br/>RFC 8486 standardises Ambisonics in Ogg Opus"]:::shared
-    S3["Today<br/>FOA and HOA coexist as practical and scalable formats"]:::shared
-
-    A --> F1 --> F2 --> F3 --> F4 --> F5 --> F6
-    A --> H1 --> H2 --> H3 --> H4 --> H5 --> H6
-    F5 --> S1 --> S2 --> S3
-    H4 --> S1
-```
-
-</div>
+<figure data-gen="g18" style="margin:1.8rem 0">
+<svg viewBox="0 0 720 818" role="img" aria-label="Timeline of FOA and HOA development from 1973 to today" style="width:100%;height:auto;display:block" font-family="sans-serif" font-size="12.5" fill="currentColor"><defs><marker id="arg18" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="currentColor"/></marker></defs><text x="145" y="26" text-anchor="middle" font-weight="600" fill="#26a6b3" font-size="15">FOA</text><text x="575" y="26" text-anchor="middle" font-weight="600" fill="#f08a2e" font-size="15">HOA</text><text x="360" y="26" text-anchor="middle" font-size="12"></text><line x1="360" y1="40" x2="360" y2="702" stroke="currentColor" stroke-width="2" opacity="0.35"/><a href="https://ringbuffer.org/papers/gerzon1973periphony.html" style="cursor:pointer"><rect x="15" y="58" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#26a6b3" stroke-width="1.5" opacity="1"/><text x="142.5" y="75" text-anchor="middle" font-weight="600" font-size="12">Periphony</text><text x="142.5" y="90" text-anchor="middle" font-size="11">With-Height Sound Reproduction (Gerzon)</text><text x="350" y="82" text-anchor="end" font-weight="600" fill="#26a6b3" font-size="12.5">1973</text><circle cx="360" cy="78" r="6" fill="#26a6b3" stroke="#26a6b3" stroke-width="1.5"/></a><rect x="15" y="108" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#26a6b3" stroke-width="1.5" opacity="1"/><text x="142.5" y="125" text-anchor="middle" font-weight="600" font-size="12">The term Ambisonics</text><text x="142.5" y="140" text-anchor="middle" font-size="11">becomes established</text><text x="350" y="132" text-anchor="end" font-weight="600" fill="#26a6b3" font-size="12.5">1975</text><circle cx="360" cy="128" r="6" fill="#26a6b3" stroke="#26a6b3" stroke-width="1.5"/><a href="/post/ambisonics-mikrofon-a-format-b-format/" style="cursor:pointer"><rect x="15" y="158" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#26a6b3" stroke-width="1.5" opacity="1"/><text x="142.5" y="175" text-anchor="middle" font-weight="600" font-size="12">Soundfield microphone</text><text x="142.5" y="190" text-anchor="middle" font-size="11">Calrec brings FOA recording to practice</text><text x="350" y="182" text-anchor="end" font-weight="600" fill="#26a6b3" font-size="12.5">1978</text><circle cx="360" cy="178" r="6" fill="#26a6b3" stroke="#26a6b3" stroke-width="1.5"/></a><rect x="15" y="208" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#26a6b3" stroke-width="1.5" opacity="1"/><text x="142.5" y="225" text-anchor="middle" font-weight="600" font-size="12">UHJ</text><text x="142.5" y="240" text-anchor="middle" font-size="11">makes Ambisonics stereo-compatible</text><text x="350" y="232" text-anchor="end" font-weight="600" fill="#26a6b3" font-size="12.5">Late 1970s</text><circle cx="360" cy="228" r="6" fill="#26a6b3" stroke="#26a6b3" stroke-width="1.5"/><rect x="15" y="258" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#26a6b3" stroke-width="1.5" opacity="1"/><text x="142.5" y="275" text-anchor="middle" font-weight="600" font-size="12">FOA in practice</text><text x="142.5" y="290" text-anchor="middle" font-size="11">recording, broadcast, UHJ releases</text><text x="350" y="282" text-anchor="end" font-weight="600" fill="#26a6b3" font-size="12.5">1980s</text><circle cx="360" cy="278" r="6" fill="#26a6b3" stroke="#26a6b3" stroke-width="1.5"/><a href="https://aes2.org/publications/elibrary-page/?id=6728" style="cursor:pointer"><rect x="15" y="308" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#26a6b3" stroke-width="1.5" opacity="1"/><text x="142.5" y="325" text-anchor="middle" font-weight="600" font-size="12">Psychoacoustic decoders</text><text x="142.5" y="340" text-anchor="middle" font-size="11">Gerzon: rV, rE, weightings</text><text x="350" y="332" text-anchor="end" font-weight="600" fill="#26a6b3" font-size="12.5">1992</text><circle cx="360" cy="328" r="6" fill="#26a6b3" stroke="#26a6b3" stroke-width="1.5"/></a><a href="/blog/decoder-geschichte-und-anwendungen/" style="cursor:pointer"><rect x="450" y="358" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#f08a2e" stroke-width="1.5" opacity="1"/><text x="577.5" y="375" text-anchor="middle" font-weight="600" font-size="12">Jérôme Daniel</text><text x="577.5" y="390" text-anchor="middle" font-size="11">modern theoretical basis for HOA</text><text x="370" y="382" text-anchor="start" font-weight="600" fill="#f08a2e" font-size="12.5">2000/01</text><circle cx="360" cy="378" r="6" fill="#f08a2e" stroke="#f08a2e" stroke-width="1.5"/></a><rect x="450" y="408" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#f08a2e" stroke-width="1.5" opacity="1"/><text x="577.5" y="425" text-anchor="middle" font-weight="600" font-size="12">Near-field coding</text><text x="577.5" y="440" text-anchor="middle" font-size="11">distance extends HOA</text><text x="370" y="432" text-anchor="start" font-weight="600" fill="#f08a2e" font-size="12.5">2003</text><circle cx="360" cy="428" r="6" fill="#f08a2e" stroke="#f08a2e" stroke-width="1.5"/><a href="https://aes2.org/publications/elibrary-page/?id=13396" style="cursor:pointer"><rect x="450" y="458" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#f08a2e" stroke-width="1.5" opacity="1"/><text x="577.5" y="475" text-anchor="middle" font-weight="600" font-size="12">Poletti</text><text x="577.5" y="490" text-anchor="middle" font-size="11">HOA grounded in spherical harmonics</text><text x="370" y="482" text-anchor="start" font-weight="600" fill="#f08a2e" font-size="12.5">2005</text><circle cx="360" cy="478" r="6" fill="#f08a2e" stroke="#f08a2e" stroke-width="1.5"/></a><rect x="450" y="508" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#f08a2e" stroke-width="1.5" opacity="1"/><text x="577.5" y="525" text-anchor="middle" font-weight="600" font-size="12">Mic arrays and symposia</text><text x="577.5" y="540" text-anchor="middle" font-size="11">HOA becomes practical</text><text x="370" y="532" text-anchor="start" font-weight="600" fill="#f08a2e" font-size="12.5">2006–09</text><circle cx="360" cy="528" r="6" fill="#f08a2e" stroke="#f08a2e" stroke-width="1.5"/><a href="https://ambisonics.iem.at/proceedings-of-the-ambisonics-symposium-2011/ambix-a-suggested-ambisonics-format" style="cursor:pointer"><rect x="450" y="558" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#f08a2e" stroke-width="1.5" opacity="1"/><text x="577.5" y="575" text-anchor="middle" font-weight="600" font-size="12">ambiX</text><text x="577.5" y="590" text-anchor="middle" font-size="11">unified channel order and normalisation</text><text x="370" y="582" text-anchor="start" font-weight="600" fill="#f08a2e" font-size="12.5">2011</text><circle cx="360" cy="578" r="6" fill="#f08a2e" stroke="#f08a2e" stroke-width="1.5"/></a><a href="https://en.wikipedia.org/wiki/MPEG-H_3D_Audio" style="cursor:pointer"><rect x="450" y="608" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#f08a2e" stroke-width="1.5" opacity="1"/><text x="577.5" y="625" text-anchor="middle" font-weight="600" font-size="12">MPEG-H 3D Audio</text><text x="577.5" y="640" text-anchor="middle" font-size="11">includes HOA coding</text><text x="370" y="632" text-anchor="start" font-weight="600" fill="#f08a2e" font-size="12.5">2015</text><circle cx="360" cy="628" r="6" fill="#f08a2e" stroke="#f08a2e" stroke-width="1.5"/></a><a href="https://youtube.googleblog.com/2016/04/one-step-closer-to-reality-introducing.html" style="cursor:pointer"><rect x="15" y="658" width="255" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#26a6b3" stroke-width="1.5" opacity="1"/><text x="142.5" y="675" text-anchor="middle" font-weight="600" font-size="12">YouTube 360</text><text x="142.5" y="690" text-anchor="middle" font-size="11">spatial audio as FOA (ambiX)</text><text x="350" y="682" text-anchor="end" font-weight="600" fill="#26a6b3" font-size="12.5">2016</text><circle cx="360" cy="678" r="6" fill="#26a6b3" stroke="#26a6b3" stroke-width="1.5"/></a><a href="https://www.rfc-editor.org/info/rfc8486" style="cursor:pointer"><rect x="165" y="708" width="390" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#9aa7b0" stroke-width="1.5" opacity="1"/><text x="360" y="725" text-anchor="middle" font-weight="600" font-size="12">2018  ·  RFC 8486</text><text x="360" y="740" text-anchor="middle" font-size="11">Ambisonics in Ogg Opus</text></a><rect x="165" y="758" width="390" height="40" rx="8" fill="currentColor" fill-opacity="0.12" stroke="#9aa7b0" stroke-width="1.5" opacity="1"/><text x="360" y="775" text-anchor="middle" font-weight="600" font-size="12">Today  ·  FOA and HOA coexist</text><text x="360" y="790" text-anchor="middle" font-size="11">as practical and scalable formats</text></svg>
+<figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">FOA on the left, HOA on the right, shared standards at the bottom. Cards with a source or related page are clickable.</figcaption>
+</figure>
 
 <div class="ambisonics-history__notes">
   <section class="ambisonics-history__note">
@@ -81,6 +44,10 @@ flowchart TB
 - **HOA** becomes visible as a distinct modern field of research and production from around 2000 onwards.
 - The **shared axis** shows that formats, standards, and today's media practice do not pit FOA against HOA — both coexist within the same ecosystems.
 
+## Channel order and normalisation: FuMa and ambiX
+
+The older FuMa convention orders the channels W, X, Y, Z with maxN normalisation. ambiX (2011) uses ACN channel order with SN3D normalisation and scales to any order, which is why YouTube and most current tools use it. The [ambiX specification](https://iem-projects.github.io/ambix/apiref/format.html) describes the format; how to record and convert is explained in [Recording with an Ambisonics microphone](/post/ambisonics-mikrofon-a-format-b-format/).
+
 ## Why this distinction matters
 
 Representing the history of Ambisonics as a single unbroken line makes it easy to miss that there is a clear methodological leap between the early FOA work of the 1970s and the systematic development of HOA around the year 2000. FOA is not "outdated" — it is often the pragmatic choice. HOA is not simply "more channels" — it represents a different order of scenic precision and rendering flexibility.
@@ -88,8 +55,11 @@ Representing the history of Ambisonics as a single unbroken line makes it easy t
 ## Sources and references
 
 - Michael Gerzon, [*Periphony: With-Height Sound Reproduction*](https://ringbuffer.org/papers/gerzon1973periphony.html) (JAES, 1973)
-- Michael Gerzon, [*Practical Periphony*](https://www.aes.org/e-lib/browse.cfm?elib=3794) (1980)
-- Jérôme Daniel, dissertation on the foundations of HOA (2000/2001)
+- Michael Gerzon, [*Practical Periphony: The Reproduction of Full-Sphere Sound*](https://www.aes.org/e-lib/browse.cfm?elib=3794) (AES Convention, 1980)
+- Michael Gerzon, [*Psychoacoustic Decoders for Multispeaker Stereo and Surround Sound*](https://aes2.org/publications/elibrary-page/?id=6728) (AES, 1992)
+- Jérôme Daniel, *Représentation de champs acoustiques, application à la transmission et à la reproduction de scènes sonores complexes dans un contexte multimédia* (PhD thesis, Université Paris 6, 2001)
 - Mark Poletti, [work on 3D surround systems based on spherical harmonics](https://aes2.org/publications/elibrary-page/?id=13396) (2005)
 - Ambisonics Symposium 2011, [*ambiX — A Suggested Ambisonics Format*](https://ambisonics.iem.at/proceedings-of-the-ambisonics-symposium-2011/ambix-a-suggested-ambisonics-format)
 - [RFC 8486: Ambisonics in an Ogg Opus Container](https://www.rfc-editor.org/info/rfc8486)
+- [YouTube: 360-degree live streaming and spatial audio](https://youtube.googleblog.com/2016/04/one-step-closer-to-reality-introducing.html) (2016)
+- [Decoder history and applications](/blog/decoder-geschichte-und-anwendungen/)
