@@ -57,6 +57,7 @@ Export your Ambisonics render and save project notes for reproducibility.
 ## Continue with
 - [Which Ambisonics Order Do I Need?](/post/hoa-ordnung-wahl-praxis/): check whether HOA7 is really what your project needs
 - [ICST MultiEncoder: Group Animation](/post/gp-manipulation/): move several sources together
+- [ICST Animator](/icst-ambisonics-plugins/11_animator/): design movements on a timeline instead of by hand
 - [ICST AmbiDecoder: Multi-Decoder Mode](/post/multi-decoder-mode/): for larger or mixed loudspeaker setups
 - [Ambisonics Workflow](/learn/ambisonics-workflow/): the whole path from recording to delivery
 - Later: [OSC and Control](/reference/osc-and-control/)

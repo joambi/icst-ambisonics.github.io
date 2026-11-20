@@ -147,4 +147,4 @@ The split can be useful because the horizontal ring and the height layer do not 
 
 - 📖 [ICST AmbiDecoder Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins/wiki)
 - 📥 [Download v3.2](https://github.com/schweizerweb/icst-ambisonics-plugins/releases)
-- 📺 [ICST Ambisonics Videos on YouTube](https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins)
+- 📺 [Videos](/learn/videos/)
