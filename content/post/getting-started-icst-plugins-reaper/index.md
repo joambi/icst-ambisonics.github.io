@@ -66,7 +66,7 @@ Render from `Bformat-Master` as multichannel and verify the output channels.
 
 ## Next steps
 - [Stereo to HOA7: A Step-by-Step Session](/post/stereo-to-hoa7-session/): a complete project from start to render
-- [Ambisonics Workflow](/learn/ambisonics-workflow/): from idea to B-format master, with checklist
 - [Which Ambisonics Order Do I Need?](/post/hoa-ordnung-wahl-praxis/)
 - [Best Practices](/icst-ambisonics-plugins/17_best_practices/)
+- [Ambisonics Workflow](/learn/ambisonics-workflow/): from idea to B-format master, with checklist
 - Later: [OSC and Control](/reference/osc-and-control/) and [Ableton Live Integration](/post/ableton_reaper/)
