@@ -65,7 +65,8 @@ Rendere aus `Bformat-Master` als Multichannel und prüfe die Ausgangskanäle.
 - OSC-Port-Mismatch bei externer Steuerung.
 
 ## Nächste Schritte
-- [OSC Syntax für den ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
-- [OSC im ICST AmbiEncoder: Die 10 wichtigsten Nachrichten](/post/osc-10-key-messages/)
-- [Von Stereo zu HOA7: Schritt-für-Schritt-Session](/post/stereo-to-hoa7-session/)
-- [Ableton Live und ICST Ambisonics Integration](/post/ableton_reaper/)
+- [Von Stereo zu HOA7: Schritt-für-Schritt-Session](/de/post/stereo-to-hoa7-session/): ein komplettes Projekt vom Start bis zum Render
+- [Ambisonics-Workflow](/de/learn/ambisonics-workflow/): von der Idee zum B-Format-Master, mit Checkliste
+- [Welche Ambisonics-Ordnung brauche ich?](/de/post/hoa-ordnung-wahl-praxis/)
+- [Best Practices](/de/icst-ambisonics-plugins/17_best_practices/)
+- Später: [OSC und Steuerung](/de/reference/osc-and-control/) und [Ableton-Live-Integration](/de/post/ableton_reaper/)
