@@ -5,6 +5,12 @@ date: 2026-01-01T00:00:00
 draft: true
 type: docs
 docs_nav_title: "For Composers"
+menu:
+  main:
+    name: "Composing Guide"
+    identifier: learn-3
+    weight: 103
+    parent: learn
 cascade:
   type: docs
   draft: true

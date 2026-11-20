@@ -6,6 +6,12 @@ draft: true
 type: docs
 languageCode: de
 docs_nav_title: "Für Komponist:innen"
+menu:
+  main:
+    name: "Kompositions-Guide"
+    identifier: learn-3
+    weight: 103
+    parent: learn
 cascade:
   draft: true
   type: docs
