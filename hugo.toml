@@ -106,28 +106,28 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 [[menu.main]]
   name = "Ambisonics Formats"
   identifier = "learn-1"
-  weight = 101
+  weight = 102
   url = "/learn/ambisonics-formats/"
   parent = "learn"
 
 [[menu.main]]
   name = "First session"
   identifier = "learn-6"
-  weight = 102
+  weight = 101
   url = "/post/getting-started-icst-plugins-reaper/"
   parent = "learn"
 
 [[menu.main]]
   name = "Workflow"
   identifier = "learn-5"
-  weight = 103
+  weight = 104
   url = "/learn/ambisonics-workflow/"
   parent = "learn"
 
 [[menu.main]]
   name = "Tutorials"
   identifier = "learn-2"
-  weight = 104
+  weight = 103
   url = "/post/"
   parent = "learn"
 
@@ -347,28 +347,28 @@ month = "month"
 [[languages.de.menus.main]]
   name = "Ambisonics-Formate"
   identifier = "learn-1"
-  weight = 101
+  weight = 102
   url = "/de/learn/ambisonics-formats/"
   parent = "learn"
 
 [[languages.de.menus.main]]
   name = "Erste Session"
   identifier = "learn-6"
-  weight = 102
+  weight = 101
   url = "/de/post/getting-started-icst-plugins-reaper/"
   parent = "learn"
 
 [[languages.de.menus.main]]
   name = "Workflow"
   identifier = "learn-5"
-  weight = 103
+  weight = 104
   url = "/de/learn/ambisonics-workflow/"
   parent = "learn"
 
 [[languages.de.menus.main]]
   name = "Tutorials"
   identifier = "learn-2"
-  weight = 104
+  weight = 103
   url = "/de/post/"
   parent = "learn"
 
