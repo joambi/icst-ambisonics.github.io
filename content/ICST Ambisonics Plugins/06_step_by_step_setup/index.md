@@ -114,10 +114,6 @@ Use stable names early to avoid routing mistakes:
 
 - Create a new **Mono Source** track and load a mono audio file.
 
-**Video Tutorial: AmbiEncoder Setup**
-
-{{< youtube aDa-vNWriLM >}}
-
 Mono AmbiEncoder overview:
 ![open monoencoder](MonoEncoder_01.png)
 
@@ -163,7 +159,7 @@ In the next example, we use the **Multi-Encoder**:
 ![Enc_Settings](Enc_Settings.gif)
 
 > [!Tip]
-> Watch the AmbiEncoder [Video tutorial](https://www.youtube.com/watch?v=aDa-vNWriLM&t=31s) for more details.
+> Watch the [video tutorials](/learn/videos/) for more details.
 
 4. **ICST Distance Function**
 

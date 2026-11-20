@@ -115,10 +115,6 @@ Nutze früh stabile Spur-Namen, um Routing-Fehler zu vermeiden:
 
 - Erstelle eine neue Spur **Mono-Quelle** und lade eine Mono-Audiodatei.
 
-**Video-Tutorial: AmbiEncoder Setup**
-
-{{< youtube aDa-vNWriLM >}}
-
 Mono-AmbiEncoder-Überblick:
 ![open monoencoder](MonoEncoder_01.png)
 
@@ -164,7 +160,7 @@ Im nächsten Beispiel nutzen wir den **Multi-Encoder**:
 ![Enc_Settings](Enc_Settings.gif)
 
 > [!Tip]
-> Sieh dir das AmbiEncoder-[Video-Tutorial](https://www.youtube.com/watch?v=aDa-vNWriLM&t=31s) für mehr Details an.
+> Sieh dir die [Video-Tutorials](/de/learn/videos/) für mehr Details an.
 
 4. **ICST-Distanzfunktion**
 

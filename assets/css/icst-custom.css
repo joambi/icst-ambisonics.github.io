@@ -99,3 +99,5 @@ button.navbar-burger:focus-visible {
 }
 
 .theme--light .home-section-lead{color:#5f5f5f}
+
+.post__content table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
