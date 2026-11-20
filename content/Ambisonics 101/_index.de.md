@@ -46,7 +46,7 @@ layout: single
     <li><a href="#was-ist-ambisonics">Was ist Ambisonics?</a></li>
     <li><a href="#ambisonics-vs-stereo">Ambisonics vs. Stereo</a></li>
     <li><a href="#was-ist-b-format">Was ist B-Format?</a></li>
-    <li><a href="/de/ambisonics-101/formats/">Ambisonics-Formate im Überblick</a></li>
+    <li><a href="/de/learn/ambisonics-formats/">Ambisonics-Formate</a></li>
     <li><a href="#signalfluss">Signalfluss auf einen Blick</a></li>
     <li><a href="#typische-setups">Typische Setups</a></li>
     <li><a href="#kopfhoerer-vs-lautsprecher">Kopfhörer vs. Lautsprecher</a></li>
@@ -93,7 +93,7 @@ Ambisonics verfolgt einen anderen Ansatz. Statt direkt für ein Lautsprecher-Lay
 <a id="was-ist-b-format"></a>
 ## 4. [Was ist B-Format?](https://ambisonic.info/ambisonics/channels.html)
 
-Das B-Format ist das zentrale Signalformat von Ambisonics und enthält die räumlichen Informationen. Klangquellen werden ins B-Format encodiert und anschließend für ein Ziel-Setup dekodiert, etwa für Kopfhörer, Stereo oder verschiedene Lautsprecher-Arrays.
+Das B-Format ist das zentrale Signalformat von Ambisonics und enthält die räumlichen Informationen. Klangquellen werden ins B-Format encodiert und anschliessend für ein Ziel-Setup dekodiert, etwa für Kopfhörer, Stereo oder verschiedene Lautsprecher-Arrays.
 
 Es beschreibt einen Raumzustand um einen Hörpunkt herum, der aus Druck- und Richtungsanteilen besteht. In der ersten Ordnung bedeutet das:
 - `W` ist die omnidirektionale Komponente, also der Druck bzw. die Präsenz im Raum.
@@ -101,7 +101,7 @@ Es beschreibt einen Raumzustand um einen Hörpunkt herum, der aus Druck- und Ric
 
 Im engeren, klassischen Sinn bezeichnet "B-Format" dieses vierkanalige Ambisonics-Format erster Ordnung (`W`, `X`, `Y`, `Z`). Im erweiterten Sinn kann man B-Format auch für [höhere Ordnungen](https://en.wikipedia.org/wiki/Ambisonics#Higher-order_Ambisonics) verwenden. Dann umfasst es alle Ambisonics-Koeffizienten bis zu einer bestimmten Ordnung, jeweils als eigener Audiokanal.
 
-Dieses Format kann anschließend auf verschiedene Ziel-Setups dekodiert werden, etwa auf Kopfhörer, Stereo oder Lautsprecher-Arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
+Dieses Format kann anschliessend auf verschiedene Ziel-Setups dekodiert werden, etwa auf Kopfhörer, Stereo oder Lautsprecher-Arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
 
 Für die praktischen Unterschiede zwischen A-Format, B-Format, FuMa, ambiX, ACN/SN3D, FOA und HOA lies weiter bei [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/).
 
@@ -297,3 +297,5 @@ Jede B-Format-Aufnahme — ob von einem Mikrofon erster Ordnung oder [HOA](https
 Passende nächste Artikel:
 - [Getting Started mit ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 - [OSC-Syntax für den ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+- [Audio Brewers, Beginner: Ambisonics Made Simple](https://www.audiobrewers.com/faq/Blog%20Post%20Title%20One-3zaa9-9fsz6-j2ed5-dj7rh) (extern): dieselben Grundlagen aus Produzentensicht
+- [Audio Brewers, Intermediate: Understanding Ambisonics](https://www.audiobrewers.com/faq/intermediate-understanding-ambisonics) (extern): Kugelflächenfunktionen, Ordnung, ambiX vs. FuMa

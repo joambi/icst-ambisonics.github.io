@@ -45,7 +45,7 @@ layout: single
     <li><a href="#what-is-ambisonics">What Is Ambisonics?</a></li>
     <li><a href="#ambisonics-vs-stereo">Ambisonics vs. Stereo</a></li>
     <li><a href="#what-is-b-format">What Is B-Format?</a></li>
-    <li><a href="/ambisonics-101/formats/">Ambisonics Formats at a Glance</a></li>
+    <li><a href="/learn/ambisonics-formats/">Ambisonics Formats</a></li>
     <li><a href="#signal-flow">Signal Flow at a Glance</a></li>
     <li><a href="#typical-setups">Typical Setups</a></li>
     <li><a href="#headphones-vs-loudspeakers">Headphones vs. Loudspeakers</a></li>
@@ -102,7 +102,7 @@ In the strict classical sense, "B-format" refers to this four-channel first-orde
 
 This format can then be decoded to different target systems such as headphones, stereo, or loudspeaker arrays. [1](https://en.wikipedia.org/wiki/Ambisonics) [2](https://ambisonic.info/ambisonics/channels.html)
 
-For the practical differences between A-Format, B-Format, FuMa, ambiX, ACN/SN3D, FOA, and HOA, continue with [Ambisonics Formats at a Glance](/ambisonics-101/formats/).
+For the practical differences between A-Format, B-Format, FuMa, ambiX, ACN/SN3D, FOA, and HOA, continue with [Ambisonics Formats](/learn/ambisonics-formats/).
 
 <a id="signal-flow"></a>
 ## 5. Signal Flow at a Glance
@@ -211,7 +211,7 @@ The two are not mutually exclusive: some workflows produce Ambisonics for archiv
 ## 9. Where To Start at ICST
 
 - For Beginners: [Quick Start](/icst-ambisonics-plugins/04_quick_start/)
-- Clarify formats before setup: [Ambisonics Formats at a Glance](/ambisonics-101/formats/)
+- Clarify formats before setup: [Ambisonics Formats](/learn/ambisonics-formats/)
 - Start with the [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) for DAW workflows.
 - Use the [ICST Ambisonics Tools](/icst-ambisonics-tools/) for Max/MSP workflows.
 - Explore [Ascolta](/blog/ascolta/) for listening practice and references.
@@ -296,3 +296,5 @@ Any B-format recording — whether from a first-order or [HOA](https://en.wikipe
 Related next reads:
 - [Getting Started with ICST Ambisonics Plugins in Reaper](/post/getting-started-icst-plugins-reaper/)
 - [OSC Syntax for the ICST AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+- [Audio Brewers, Beginner: Ambisonics Made Simple](https://www.audiobrewers.com/faq/Blog%20Post%20Title%20One-3zaa9-9fsz6-j2ed5-dj7rh) (external): the same basics from a producer's perspective
+- [Audio Brewers, Intermediate: Understanding Ambisonics](https://www.audiobrewers.com/faq/intermediate-understanding-ambisonics) (external): spherical harmonics, order, ambiX vs. FuMa

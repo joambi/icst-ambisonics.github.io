@@ -1,9 +1,11 @@
 ---
-title: "Ambisonics Formats at a Glance"
-description: "A visual reference for Ambisonics formats: A-Format vs B-Format, FuMa vs ambiX, FOA vs HOA, channel counts, and normalization conventions — all in one place."
+title: "Ambisonics Formats Explained: A-Format, B-Format, FuMa, ambiX, FOA and HOA"
+description: "A practical reference for Ambisonics formats: A-Format, B-Format, FuMa, ambiX, ACN, SN3D, N3D, FOA, HOA, channel counts, and the ICST recommendation — in tables at a glance."
 date: 2026-05-01T00:00:00
 draft: false
-url: /ambisonics-101/formats/
+url: /learn/ambisonics-formats/
+aliases:
+  - /ambisonics-101/formats/
 tags:
   - ambisonics
   - b-format
@@ -14,46 +16,46 @@ tags:
 
 <style>
 .fmt-intro {
-  font-size: 1.05rem;
-  margin-bottom: 1.8rem;
+  font-size: 1.55rem;
+  margin-bottom: 2.2rem;
   line-height: 1.7;
 }
 .fmt-section {
   margin: 2.2rem 0;
 }
 .fmt-section h2 {
-  font-size: 1.2rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  margin-bottom: 0.8rem;
-  padding-bottom: 0.3rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
   border-bottom: 2px solid #e0e0e0;
 }
 .fmt-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.93rem;
-  margin: 0.6rem 0 1.2rem 0;
+  font-size: 1.45rem;
+  margin: 1rem 0 1.8rem 0;
 }
 .fmt-table th {
   background: #f5f5f5;
   text-align: left;
-  padding: 0.55rem 0.8rem;
+  padding: 0.9rem 1.2rem;
   font-weight: 700;
   border-bottom: 2px solid #ccc;
 }
 .fmt-table td {
-  padding: 0.5rem 0.8rem;
+  padding: 0.9rem 1.2rem;
   border-bottom: 1px solid #e8e8e8;
   vertical-align: top;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 .fmt-table tr:last-child td { border-bottom: none; }
 .fmt-table tr:hover td { background: #fafafa; }
 .fmt-badge {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  padding: 0.15rem 0.5rem;
+  padding: 0.2rem 0.7rem;
   border-radius: 3px;
   margin-left: 0.4rem;
 }
@@ -63,20 +65,21 @@ tags:
 .fmt-rule {
   background: #f0f7ff;
   border-left: 4px solid #6086b4;
-  padding: 0.8rem 1rem;
-  margin: 1rem 0;
+  padding: 1.2rem 1.6rem;
+  margin: 1.4rem 0;
   border-radius: 0 4px 4px 0;
-  font-size: 0.95rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 .fmt-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
   margin: 1.6rem 0 0.4rem 0;
 }
 .fmt-links a {
-  font-size: 0.9rem;
-  padding: 0.35rem 0.9rem;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.4rem;
   border: 1px solid #6086b4;
   border-radius: 4px;
   color: #6086b4;
@@ -123,6 +126,9 @@ html.theme--dark .fmt-links a:hover {
   background: #6086b4;
   color: #fff;
 }
+.fmt-fig{margin:1.8rem 0}
+.fmt-fig svg{width:100%;height:auto;max-width:720px;display:block}
+.fmt-fig figcaption{font-size:1.3rem;opacity:.8;margin-top:.6rem}
 </style>
 
 <p class="fmt-intro">
@@ -136,6 +142,26 @@ Ambisonics uses the word <em>format</em> for several different things at once: t
   <a href="#orders">Orders & channels</a>
   <a href="#normalisation">Normalisation</a>
   <a href="#recommendation">ICST recommendation</a>
+</div>
+
+---
+
+<div class="fmt-section" id="why">
+
+## Why "format" is confusing
+
+Ambisonics uses the word **format** for several different things:
+
+- the raw output of a microphone
+- the internal spatial signal in a DAW
+- the channel order inside a file
+- the normalization convention of the spherical harmonics
+- the Ambisonics order, which determines the channel count
+
+That is why "Is this B-Format?" is often not specific enough. A better question is:
+
+> Is this an ambiX B-Format file, with ACN channel ordering and SN3D normalization, and which order does it use?
+
 </div>
 
 ---
@@ -201,6 +227,11 @@ Ambisonics uses the word <em>format</em> for several different things at once: t
 
 ## A-Format vs B-Format
 
+<figure class="fmt-fig">
+<svg viewBox="0 0 720 210" role="img" aria-label="A-Format: four capsule signals are converted into the B-Format channels W, X, Y, Z" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs><text x="90" y="22" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">A-Format (4 capsules)</text><circle cx="50" cy="62" r="26" stroke="currentColor" fill="currentColor" fill-opacity=".06" stroke-width="1.5"/><text x="50" y="67" text-anchor="middle" font-size="14" fill="currentColor">LF</text><circle cx="130" cy="62" r="26" stroke="currentColor" fill="currentColor" fill-opacity=".06" stroke-width="1.5"/><text x="130" y="67" text-anchor="middle" font-size="14" fill="currentColor">RF</text><circle cx="50" cy="132" r="26" stroke="currentColor" fill="currentColor" fill-opacity=".06" stroke-width="1.5"/><text x="50" y="137" text-anchor="middle" font-size="14" fill="currentColor">LB</text><circle cx="130" cy="132" r="26" stroke="currentColor" fill="currentColor" fill-opacity=".06" stroke-width="1.5"/><text x="130" y="137" text-anchor="middle" font-size="14" fill="currentColor">RB</text><line x1="150" y1="110" x2="250" y2="110" stroke="currentColor" stroke-width="1.5" marker-end="url(#ah1)"/><rect x="255" y="70" width="170" height="80" rx="8" stroke="currentColor" fill="currentColor" fill-opacity=".06" stroke-width="1.5"/><text x="340.0" y="111.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">A→B conversion</text><text x="340.0" y="126.0" text-anchor="middle" font-size="12" fill="currentColor" fill-opacity=".75">matrix + filters</text><line x1="430" y1="110" x2="520" y2="110" stroke="currentColor" stroke-width="1.5" marker-end="url(#ah1)"/><text x="615" y="22" text-anchor="middle" font-size="13" font-weight="600" fill="currentColor">B-Format (FOA)</text><rect x="530" y="36" width="170" height="34" rx="8" stroke="#8a8a8a" fill="#8a8a8a" fill-opacity=".18" stroke-width="1.5"/><text x="615.0" y="58.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">W</text><rect x="530" y="76" width="170" height="34" rx="8" stroke="#d9534f" fill="#d9534f" fill-opacity=".18" stroke-width="1.5"/><text x="615.0" y="98.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">X</text><rect x="530" y="116" width="170" height="34" rx="8" stroke="#3fa968" fill="#3fa968" fill-opacity=".18" stroke-width="1.5"/><text x="615.0" y="138.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">Y</text><rect x="530" y="156" width="170" height="34" rx="8" stroke="#4a8fe0" fill="#4a8fe0" fill-opacity=".18" stroke-width="1.5"/><text x="615.0" y="178.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">Z</text></svg>
+<figcaption>From microphone capsules to the B-Format scene: the A→B step is specific to each microphone.</figcaption>
+</figure>
+
 <table class="fmt-table">
   <thead>
     <tr>
@@ -249,6 +280,11 @@ Ambisonics uses the word <em>format</em> for several different things at once: t
 <div class="fmt-section" id="fuma-vs-ambix">
 
 ## FuMa vs ambiX
+
+<figure class="fmt-fig">
+<svg viewBox="0 0 720 230" role="img" aria-label="Channel order of first-order Ambisonics: FuMa W X Y Z versus ambiX ACN W Y Z X, same components connected by lines" xmlns="http://www.w3.org/2000/svg"><text x="10" y="55" font-size="14" font-weight="600" fill="currentColor">FuMa</text><text x="10" y="73" font-size="11" fill="currentColor" fill-opacity=".75">W X Y Z</text><text x="10" y="175" font-size="14" font-weight="600" fill="currentColor">ambiX</text><text x="10" y="193" font-size="11" fill="currentColor" fill-opacity=".75">ACN / SN3D</text><text x="10" y="22" font-size="12" fill="currentColor" fill-opacity=".8">Channel position (0 – 3)</text><text x="240" y="22" text-anchor="middle" font-size="12" fill="currentColor" fill-opacity=".8">0</text><rect x="190" y="34" width="100" height="44" rx="8" stroke="#8a8a8a" fill="#8a8a8a" fill-opacity=".18" stroke-width="1.5"/><text x="240.0" y="57.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">W</text><rect x="190" y="152" width="100" height="44" rx="8" stroke="#8a8a8a" fill="#8a8a8a" fill-opacity=".18" stroke-width="1.5"/><text x="240.0" y="179.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">W</text><text x="365" y="22" text-anchor="middle" font-size="12" fill="currentColor" fill-opacity=".8">1</text><rect x="315" y="34" width="100" height="44" rx="8" stroke="#d9534f" fill="#d9534f" fill-opacity=".18" stroke-width="1.5"/><text x="365.0" y="61.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">X</text><rect x="315" y="152" width="100" height="44" rx="8" stroke="#3fa968" fill="#3fa968" fill-opacity=".18" stroke-width="1.5"/><text x="365.0" y="179.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">Y</text><text x="490" y="22" text-anchor="middle" font-size="12" fill="currentColor" fill-opacity=".8">2</text><rect x="440" y="34" width="100" height="44" rx="8" stroke="#3fa968" fill="#3fa968" fill-opacity=".18" stroke-width="1.5"/><text x="490.0" y="61.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">Y</text><rect x="440" y="152" width="100" height="44" rx="8" stroke="#4a8fe0" fill="#4a8fe0" fill-opacity=".18" stroke-width="1.5"/><text x="490.0" y="179.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">Z</text><text x="615" y="22" text-anchor="middle" font-size="12" fill="currentColor" fill-opacity=".8">3</text><rect x="565" y="34" width="100" height="44" rx="8" stroke="#4a8fe0" fill="#4a8fe0" fill-opacity=".18" stroke-width="1.5"/><text x="615.0" y="61.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">Z</text><rect x="565" y="152" width="100" height="44" rx="8" stroke="#d9534f" fill="#d9534f" fill-opacity=".18" stroke-width="1.5"/><text x="615.0" y="179.0" text-anchor="middle" font-size="16" font-weight="600" fill="currentColor">X</text><line x1="240" y1="80" x2="240" y2="150" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="0"/><text x="250" y="120" font-size="11" fill="currentColor" fill-opacity=".8">W is 3 dB lower</text><line x1="365" y1="80" x2="615" y2="150" stroke="#d9534f" stroke-width="2" stroke-dasharray="5 3"/><line x1="490" y1="80" x2="365" y2="150" stroke="#3fa968" stroke-width="2" stroke-dasharray="5 3"/><line x1="615" y1="80" x2="490" y2="150" stroke="#4a8fe0" stroke-width="2" stroke-dasharray="5 3"/><text x="360" y="222" text-anchor="middle" font-size="12" fill="currentColor" fill-opacity=".8">Same components, different order. In ambiX the W channel is not attenuated by 3 dB.</text></svg>
+<figcaption>Channel order of first-order material: the same four components, in a different order.</figcaption>
+</figure>
 
 <table class="fmt-table">
   <thead>
@@ -420,6 +456,18 @@ Normalisation defines how the amplitude of each spherical harmonic component is 
 
 ---
 
+<div class="fmt-section" id="scene">
+
+## Scene-based vs channel-based
+
+Ambisonics is **scene-based**: the channels are not speaker feeds but components of a spatial sound-field representation. In **channel-based** audio, channel 1 means left speaker, channel 2 right speaker, and so on.
+
+In Ambisonics the decoder decides how the scene becomes loudspeaker signals or binaural output. That is why the same B-Format master can be rendered for a dome, an octagon, a studio array, headphones, or stereo.
+
+</div>
+
+---
+
 <div class="fmt-section" id="recommendation">
 
 ## ICST Recommendation
@@ -437,6 +485,26 @@ This keeps your session open: the same B-Format master can feed loudspeaker deco
 
 ---
 
-**Go deeper:** [Ambisonics Formats Explained](/learn/ambisonics-formats/) — the full technical reference with all conventions, ACN numbering, and archiving guidelines.
+<div class="fmt-section" id="checklist">
 
-**Back to:** [Ambisonics 101](/ambisonics-101/)
+## Checklist: Which format should I use?
+
+**ambiX B-Format, ACN/SN3D** when you start a new production, work with ICST, IEM, SPARTA or other modern HOA tools, export an archive master, or need reliable exchange between DAWs and plugins.
+
+**A-Format** only for raw microphone recordings that still need the manufacturer-specific A-to-B conversion.
+
+**FuMa** only when an older tool or archive requires it, or when you convert historical first-order material.
+
+Always document: order, channel count, channel ordering, normalization, sample rate and bit depth, and the decoder or renderer used for monitoring.
+
+</div>
+
+---
+
+## Related pages
+
+- [Ambisonics 101](/ambisonics-101/)
+- [ICST B-Format Archive](/blog/b-format-archive/)
+- [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
+- [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
+- [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/)
