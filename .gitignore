@@ -60,3 +60,11 @@ hugo.toml.vor_nav_*
 /Attachments/
 /_drafts/
 /_notes/
+
+# Altbestand und Rohmaterial (nicht Teil der Site, siehe chore/repo-hygiene)
+/docs/
+/Evernote/
+/exports/
+/.workshop_build/
+/Animator-Testnachweise/.DS_Store
+/main
