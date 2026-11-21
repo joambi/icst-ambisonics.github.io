@@ -15,6 +15,18 @@ tags:
   - reaper
 ---
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**What you will learn**
+
+- The stages of an Ambisonics production from recording to delivery
+- Where to decide on order and format, and why you always render from the B-format master
+- Where decoding happens for loudspeakers, headphones and live systems
+- Which page to open next for each stage
+
+</div>
+
+
 <style>
 /* ══════════════════════════════════════════════════════════
    WORKFLOW PAGE STYLES — Light + Dark Mode

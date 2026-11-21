@@ -149,6 +149,17 @@ Ambisonics verwendet das Wort <em>Format</em> gleichzeitig für verschiedene Din
 
 <div class="fmt-section" id="warum">
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**Das lernst du**
+
+- A-Format und B-Format unterscheiden
+- Den Unterschied zwischen FuMa und ambiX (ACN/SN3D) kennen
+- Kanalzahlen je Ordnung lesen
+- Das passende Format für dein Projekt wählen
+
+</div>
+
 ## Warum "Format" verwirrend ist
 
 In Ambisonics bezeichnet **Format** mehrere unterschiedliche Dinge:

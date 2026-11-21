@@ -63,6 +63,17 @@ layout: single
   </ol>
 </div>
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**Das lernst du**
+
+- Was Ambisonics ist und wie es sich von Stereo und kanalbasiertem Audio unterscheidet
+- Wie das Signal vom Encoder über den B-Format-Bus zum Decoder fliesst
+- Was B-Format ist und welche Setups typisch sind
+- Wo du mit den ICST-Tools beginnst
+
+</div>
+
 <a id="was-ist-3d-audio"></a>
 ## 1. Was ist 3D-Audio?
 3D-Audio ist der Oberbegriff für Klang, der nicht nur links und rechts, sondern auch vorne, hinten, oben, unten und in der Tiefe wahrgenommen wird. Statt eines flachen Stereobilds entsteht der Eindruck eines umgebenden akustischen Raums.

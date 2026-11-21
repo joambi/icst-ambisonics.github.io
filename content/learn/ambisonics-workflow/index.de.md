@@ -15,6 +15,18 @@ tags:
   - reaper
 ---
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**Das lernst du**
+
+- Die Stationen einer Ambisonics-Produktion von der Aufnahme bis zur Abgabe
+- Wo du Ordnung und Format festlegst und warum du immer vom B-Format-Master renderst
+- Wo für Lautsprecher, Kopfhörer und Live-Systeme dekodiert wird
+- Welche Seite du für jede Station als Nächstes öffnest
+
+</div>
+
+
 <style>
 /* ══════════════════════════════════════════════════════════
    WORKFLOW PAGE STYLES — Light + Dark Mode

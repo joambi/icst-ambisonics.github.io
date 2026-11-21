@@ -148,6 +148,17 @@ Ambisonics uses the word <em>format</em> for several different things at once: t
 
 <div class="fmt-section" id="why">
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**What you will learn**
+
+- Tell A-format and B-format apart
+- Know the difference between FuMa and ambiX (ACN/SN3D)
+- Read channel counts per order
+- Choose the right format for your project
+
+</div>
+
 ## Why "format" is confusing
 
 Ambisonics uses the word **format** for several different things:
