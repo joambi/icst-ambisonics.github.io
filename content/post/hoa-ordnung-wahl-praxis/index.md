@@ -61,6 +61,11 @@ A higher order means more channels, more spherical information, finer spatial re
 
 ## What changes with the order
 
+<figure class="explainer-video" style="margin:1.8rem 0">
+<video controls muted loop playsinline preload="metadata" style="width:100%;max-width:720px;height:auto;display:block;border-radius:8px" src="/videos/hoa-order-en.mp4"></video>
+<figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Short video: the same source at HOA1, HOA3 and HOA7. A higher order sharpens the direction (schematic pattern).</figcaption>
+</figure>
+
 ### Spatial resolution
 
 <figure style="margin:1.8rem 0">

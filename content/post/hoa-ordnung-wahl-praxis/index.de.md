@@ -61,6 +61,11 @@ Höhere Ordnung bedeutet: mehr Kanäle, mehr sphärische Information, feinere r�
 
 ## Was sich mit der Ordnung ändert
 
+<figure class="explainer-video" style="margin:1.8rem 0">
+<video controls muted loop playsinline preload="metadata" style="width:100%;max-width:720px;height:auto;display:block;border-radius:8px" src="/videos/hoa-order-de.mp4"></video>
+<figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Kurzvideo: dieselbe Quelle in HOA1, HOA3 und HOA7. Höhere Ordnung macht die Richtung schärfer (schematisches Muster).</figcaption>
+</figure>
+
 ### Räumliche Auflösung
 
 <figure style="margin:1.8rem 0">
