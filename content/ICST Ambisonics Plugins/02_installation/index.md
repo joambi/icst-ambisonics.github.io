@@ -53,7 +53,7 @@ Recommended next step after installation:
 7. Download the current ICST Ambisonics Plugins release from <https://github.com/schweizerweb/icst-ambisonics-plugins/releases>.
 8. Run the Windows installer or extract the release to the standard VST3 location if the package requires manual placement.
 
-> **Note:** The screenshots below show an earlier version of the Windows installer. Follow the prompts of the newest installer; the steps are the same in principle, but wording and version numbers may differ.
+> **Note:** The screenshots show the Windows installer version 4.0.0 (the installer itself is in English). Newer versions may differ slightly in wording.
 
 <style>
 .win-shots { display:flex; flex-wrap:wrap; gap:1.2rem; align-items:flex-start; margin:1.2rem 0 }
@@ -64,26 +64,26 @@ Recommended next step after installation:
 
 <div class="win-shots">
 
-![SmartScreen warning: Windows protected your PC](01_win.png)
-*1. SmartScreen warning: click “More info”.*
+![SmartScreen: Windows protected your PC](01_win.jpg)
+*1. SmartScreen warns about an unknown publisher: click “Run anyway”. If only “More info” is shown, click that first.*
 
-![SmartScreen: Run anyway](02_win.png)
-*2. Click “Run anyway”.*
+![User Account Control prompt](02_win.jpg)
+*2. Confirm the User Account Control prompt with “Yes”.*
 
-![User Account Control prompt](03_win.png)
-*3. Confirm the User Account Control prompt with “Yes”.*
+![Installer readme page](03_win.jpg)
+*3. Read the notes and click “Next”.*
 
-![Installer readme page](04_win.png)
-*4. Read the notes and click “Next”.*
+![Destination folder: Common Files](04_win.jpg)
+*4. Keep the destination folder (Common Files) and click “Next”.*
 
-![Destination folder: Common Files VST3](05_win.png)
-*5. Keep the VST3 folder and click “Next”.*
+![Select components](05_win.jpg)
+*5. Choose “Full installation” (LV2, VST3, REAPER project and track templates) and click “Next”.*
 
-![Message: folder already exists](06_win.png)
-*6. If the folder already exists, confirm with “Yes”.*
+![Ready to install](06_win.jpg)
+*6. Check the summary and click “Install”.*
 
-![Setup completed](07_win.png)
-*7. Finish the setup; restart now or later.*
+![Installation in progress](07_win.jpg)
+*7. Wait until the installation has finished.*
 
 </div>
 

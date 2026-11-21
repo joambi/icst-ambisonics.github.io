@@ -53,7 +53,7 @@ Empfohlener nächster Schritt nach der Installation:
 7. Lade das aktuelle Release der ICST Ambisonics Plugins von <https://github.com/schweizerweb/icst-ambisonics-plugins/releases> herunter.
 8. Starte den Windows-Installer oder kopiere das Release manuell in den üblichen VST3-Ordner, falls das Paket keine automatische Installation verwendet.
 
-> **Hinweis:** Die folgenden Screenshots zeigen eine frühere Version des Windows-Installers. Folge den Hinweisen des neuesten Installers; die Schritte sind im Prinzip dieselben, Wortlaut und Versionsnummern können abweichen.
+> **Hinweis:** Die Screenshots zeigen den Windows-Installer in Version 4.0.0 (der Installer selbst ist englisch). Neuere Versionen können im Wortlaut leicht abweichen.
 
 <style>
 .win-shots { display:flex; flex-wrap:wrap; gap:1.2rem; align-items:flex-start; margin:1.2rem 0 }
@@ -64,26 +64,26 @@ Empfohlener nächster Schritt nach der Installation:
 
 <div class="win-shots">
 
-![SmartScreen-Warnung: Windows hat den PC geschützt](01_win.png)
-*1. SmartScreen-Warnung: „Weitere Informationen“ anklicken.*
+![SmartScreen: Der Computer wurde durch Windows geschützt](01_win.jpg)
+*1. SmartScreen warnt vor einem unbekannten Herausgeber: „Trotzdem ausführen“ anklicken. Wird nur „Weitere Informationen“ angezeigt, zuerst diese anklicken.*
 
-![SmartScreen: Trotzdem ausführen](02_win.png)
-*2. „Trotzdem ausführen“ anklicken.*
+![Benutzerkontensteuerung](02_win.jpg)
+*2. Die Benutzerkontensteuerung mit „Ja“ bestätigen.*
 
-![Benutzerkontensteuerung](03_win.png)
-*3. Die Benutzerkontensteuerung mit „Ja“ bestätigen.*
+![Installer-Infoseite](03_win.jpg)
+*3. Hinweise lesen und „Next“ anklicken.*
 
-![Installer-Infoseite](04_win.png)
-*4. Hinweise lesen und „Weiter“ anklicken.*
+![Zielordner Common Files](04_win.jpg)
+*4. Zielordner (Common Files) beibehalten und „Next“ anklicken.*
 
-![Zielordner Common Files VST3](05_win.png)
-*5. VST3-Ordner beibehalten und „Weiter“ anklicken.*
+![Komponenten auswählen](05_win.jpg)
+*5. „Full installation“ wählen (LV2, VST3, REAPER-Projekt- und Track-Templates) und „Next“ anklicken.*
 
-![Meldung: Ordner existiert bereits](06_win.png)
-*6. Existiert der Ordner schon, mit „Ja“ bestätigen.*
+![Bereit zur Installation](06_win.jpg)
+*6. Zusammenfassung prüfen und „Install“ anklicken.*
 
-![Setup abgeschlossen](07_win.png)
-*7. Setup beenden; Neustart jetzt oder später.*
+![Installation läuft](07_win.jpg)
+*7. Warten, bis die Installation abgeschlossen ist.*
 
 </div>
 
