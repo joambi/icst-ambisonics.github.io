@@ -8,9 +8,7 @@ draft: false
 docs_nav_group: "Reference"
 ---
 
-Level: Intermediate | Audience: Composer, technician, student, studio user.
-
-Use this page when you already know the basic setup and want working habits that reduce routing errors, monitoring problems, and export mistakes.
+Level: Intermediate | Audience: composer, technician, student, studio user. Use this page when you already know the basic setup and want working habits that reduce routing errors, monitoring problems and export mistakes.
 
 Short, reliable rules for stable Ambisonics sessions in REAPER: clean routing, repeatable decoder setups, and less troubleshooting before recording, rehearsal, or export.
 
@@ -21,20 +19,9 @@ Short, reliable rules for stable Ambisonics sessions in REAPER: clean routing, r
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Channel count grows quadratically with order. A uniform 64-channel setting on all Ambisonics tracks covers every order up to HOA7.</figcaption>
 </figure>
 
+Before adding sources, establish the session structure; retrofitting routing later is a reliable source of errors.
 
-
-
-
-
-
-
-Before adding sources, establish the session structure. Retrofitting routing later is a reliable source of errors.
-
-**Choose your HOA order first.** The order determines both spatial resolution and channel count, and it cannot be changed without rebuilding the session.
-
-As a rough guide: 1st order (4 ch) for basic archiving or small setups, 3rd order (16 ch) for most studio and concert work, and 5th order (36 ch) or 7th order (64 ch) for large-scale installations or maximum resolution.
-
-Match the order to your speaker array. Decoding high-order B-format to a low-density array gives no audible benefit.
+**Choose your HOA order first.** It determines spatial resolution and channel count and cannot be changed without rebuilding the session. Rough guide: 1st order (4 ch) for archiving or small setups, 3rd order (16 ch) for most studio and concert work, 5th order (36 ch) or 7th order (64 ch) for large installations or maximum resolution. Match the order to your speaker array: decoding high-order B-format to a low-density array gives no audible benefit.
 
 ![Signal flow overview](/images/best-practices-signal-flow.svg)
 
@@ -51,7 +38,7 @@ Routing errors in Ambisonics sessions are often invisible until playback reveals
 - Avoid accidental direct source-to-master paths — all sources should feed through the HOA bus.
 - Name source tracks, the HOA bus, and the decoder clearly and consistently.
 - Check routing immediately after adding each new source or bus track.
-- Keep gain staging clean: set source track levels so the HOA bus does not clip. Avoid compensating for low gain at the decoder output — fix it at the source. The B-format field carries spatial information in its amplitude ratios, so unexpected gain changes anywhere in the chain can distort the perceived image.
+- Keep gain staging clean: set source levels so the HOA bus does not clip, and fix low gain at the source, not at the decoder output. The B-format field carries spatial information in its amplitude ratios, so unexpected gain changes anywhere in the chain can distort the perceived image.
 
 ## 3. Standardize decoder practice
 
@@ -95,13 +82,6 @@ A quick signal check at the start of each session prevents problems that are muc
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">The decoder output is already tied to one loudspeaker layout. Only the B-format master can be played back on any system later.</figcaption>
 </figure>
 
-
-
-
-
-
-
-
 Export discipline prevents format confusion when delivering files to other systems, studios, or archiving.
 
 - Export B-format from the **Bformat Master** track in solo, not from the decoder output.
@@ -131,12 +111,8 @@ A session that is easy to hand over is also a session that is easy to reopen six
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Seven places where sessions typically break. Walk the chain from left to right when something sounds wrong.</figcaption>
 </figure>
 
-
-
-
-
-
-
+<details>
+<summary>The same seven points as text</summary>
 
 - One track in the HOA path is not set to `64` channels.
 - The decoder preset does not match the real loudspeaker routing.
@@ -145,6 +121,8 @@ A session that is easy to hand over is also a session that is easy to reopen six
 - OSC ports do not match between REAPER, external controllers, or helper tools.
 - Export was rendered from the decoder output instead of the B-format master.
 - ambiX and FuMa channel ordering mixed up between production and delivery.
+
+</details>
 
 ## 8. Recommended order for new setups
 

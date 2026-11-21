@@ -8,9 +8,7 @@ draft: false
 docs_nav_group: "Referenz"
 ---
 
-Level: Intermediate | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.
-
-Nutze diese Seite, wenn du das Grundsetup bereits kennst und Arbeitsweisen suchst, die Routing-Fehler, Monitoring-Probleme und Exportfehler reduzieren.
+Level: Intermediate | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User. Nutze diese Seite, wenn du das Grundsetup bereits kennst und Arbeitsweisen suchst, die Routing-Fehler, Monitoring-Probleme und Exportfehler reduzieren.
 
 Kurze, belastbare Regeln für stabile Ambisonics-Sessions in REAPER: sauberes Routing, reproduzierbare Decoder-Setups und weniger Fehlersuche vor Aufnahme, Probe oder Render.
 
@@ -21,20 +19,9 @@ Kurze, belastbare Regeln für stabile Ambisonics-Sessions in REAPER: sauberes Ro
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Die Kanalzahl wächst quadratisch mit der Ordnung. Eine einheitliche 64-Kanal-Einstellung auf allen Ambisonics-Spuren deckt jede Ordnung bis HOA7 ab.</figcaption>
 </figure>
 
+Bevor Quellen hinzugefügt werden, sollte die Session-Struktur feststehen; Routing nachträglich anzupassen ist eine verlässliche Fehlerquelle.
 
-
-
-
-
-
-
-Bevor Quellen hinzugefügt werden, sollte die Session-Struktur feststehen. Routing nachträglich anzupassen ist eine verlässliche Fehlerquelle.
-
-**HOA-Ordnung zuerst wählen.** Die Ordnung bestimmt sowohl die räumliche Auflösung als auch die Kanalzahl und lässt sich später nicht mehr ohne Neuaufbau der Session ändern.
-
-Als grobe Orientierung gilt: 1. Ordnung (4 Ch) für einfache Archivierung oder kleine Setups, 3. Ordnung (16 Ch) für die meisten Studio- und Konzertanwendungen, 5. Ordnung (36 Ch) oder 7. Ordnung (64 Ch) für grosse Installationen oder maximale Auflösung.
-
-Die Ordnung sollte zur Lautsprecherarray-Dichte passen. Hohes B-Format auf eine niedrig aufgelöste Box zu decodieren bringt keinen hörbaren Vorteil.
+**HOA-Ordnung zuerst wählen.** Sie bestimmt räumliche Auflösung und Kanalzahl und lässt sich später nicht ohne Neuaufbau der Session ändern. Grobe Orientierung: 1. Ordnung (4 Ch) für einfache Archivierung oder kleine Setups, 3. Ordnung (16 Ch) für die meisten Studio- und Konzertanwendungen, 5. Ordnung (36 Ch) oder 7. Ordnung (64 Ch) für grosse Installationen oder maximale Auflösung. Die Ordnung sollte zur Lautsprecherarray-Dichte passen: Hohes B-Format auf eine niedrig aufgelöste Box zu decodieren bringt keinen hörbaren Vorteil.
 
 ![Signalfluss-Übersicht](/images/best-practices-signal-flow.svg)
 
@@ -51,7 +38,7 @@ Routing-Fehler in Ambisonics-Sessions sind oft unsichtbar — bis die Wiedergabe
 - Unbeabsichtigte Direktwege von Quellen zum Master vermeiden — alle Quellen sollten über den HOA-Bus laufen.
 - Quellspuren, HOA-Bus und Decoder klar und konsistent benennen.
 - Das Routing sofort nach jedem neuen Source- oder Bus-Track überprüfen.
-- Gain Staging sauber halten: Quellspuren so aussteuern, dass der HOA-Bus nicht clippt. Gain-Verluste nicht am Decoder-Ausgang kompensieren — an der Quelle beheben. Das B-Format-Feld trägt räumliche Information in seinen Amplitudenverhältnissen; unerwartete Pegeländerungen in der Kette können das wahrgenommene Klangbild verzerren.
+- Gain Staging sauber halten: Quellspuren so aussteuern, dass der HOA-Bus nicht clippt; Gain-Verluste an der Quelle beheben, nicht am Decoder-Ausgang. Das B-Format-Feld trägt räumliche Information in seinen Amplitudenverhältnissen; unerwartete Pegeländerungen in der Kette können das wahrgenommene Klangbild verzerren.
 
 ## 3. Decoder-Praxis standardisieren
 
@@ -95,13 +82,6 @@ Ein kurzer Signalcheck zu Beginn jeder Session verhindert Probleme, die nach der
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Der Decoder-Ausgang ist schon an ein Lautsprecher-Layout gebunden. Nur der B-Format-Master lässt sich später auf jedem System abspielen.</figcaption>
 </figure>
 
-
-
-
-
-
-
-
 Sorgfalt beim Export verhindert Formatverwirrung bei der Abgabe an andere Systeme, Studios oder Archive.
 
 - B-Format vom **Bformat Master**-Track in Solo exportieren, nicht vom Decoder-Ausgang.
@@ -131,12 +111,8 @@ Eine Session, die einfach weitergegeben werden kann, ist auch eine Session, die 
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Sieben Stellen, an denen Sessions typischerweise brechen. Bei Problemen die Kette von links nach rechts durchgehen.</figcaption>
 </figure>
 
-
-
-
-
-
-
+<details>
+<summary>Dieselben sieben Punkte als Text</summary>
 
 - Ein Track im HOA-Pfad hat nicht `64` Kanäle.
 - Das Decoder-Preset passt nicht zur realen Lautsprecherzuordnung.
@@ -145,6 +121,8 @@ Eine Session, die einfach weitergegeben werden kann, ist auch eine Session, die 
 - OSC-Ports stimmen zwischen REAPER, externen Controllern oder Zusatztools nicht überein.
 - Export wurde vom Decoder-Ausgang statt vom B-Format-Master gerendert.
 - ambiX- und FuMa-Channel-Ordering zwischen Produktion und Abgabe verwechselt.
+
+</details>
 
 ## 8. Empfohlene Reihenfolge für neue Setups
 
