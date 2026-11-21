@@ -58,3 +58,5 @@ hugo.toml.vor_nav_*
 # local working material (not for the public repo)
 /Clippings/
 /Attachments/
+/_drafts/
+/_notes/
