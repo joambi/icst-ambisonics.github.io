@@ -3,8 +3,9 @@ aliases: ["/icst-ambisonics-plugins/15_best_practices/"]
 title: Best Practices
 description: "Practical rules for stable Ambisonics sessions in REAPER, including signal flow, monitoring separation, export discipline, and setup order."
 date: 2025-01-01T00:00:00
-weight: 125
+weight: 310
 draft: false
+docs_nav_group: "Reference"
 ---
 
 Level: Intermediate | Audience: Composer, technician, student, studio user.

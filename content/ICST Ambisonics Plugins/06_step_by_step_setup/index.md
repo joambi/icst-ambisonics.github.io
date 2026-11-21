@@ -1,8 +1,9 @@
 ---
-weight: 50
+weight: 60
 title: Step by Step Setup
 date: 2025-01-23T15:38:00
 description: "Detailed REAPER setup guide for building an ICST Ambisonics session from scratch: decoder, Bformat Master, binaural path, encoders, and movement recording."
+docs_nav_group: "Getting started"
 ---
 
 Level: Beginner to Intermediate | Audience: Composer, technician, student, studio user.

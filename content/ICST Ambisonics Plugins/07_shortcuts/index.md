@@ -1,8 +1,9 @@
 ---
-weight: 140
+weight: 320
 title: Shortcuts
 date: 2025-01-22T14:36:00
 description: "Shortcut reference for the ICST Encoder and Decoder interfaces in REAPER, including radar interaction and multi-source editing gestures."
+docs_nav_group: "Reference"
 ---
 
 Level: Reference | Audience: Composer, technician, student, advanced user.

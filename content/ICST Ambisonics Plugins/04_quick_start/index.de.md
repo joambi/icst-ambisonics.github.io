@@ -1,8 +1,10 @@
 ---
 title: Schnellstart
-weight: 20
+weight: 40
 date: 2025-01-28T14:31:00
 description: "Kompakter Einstieg zum Öffnen des ICST MultiEncoder-Projekttemplates in REAPER und zur schnellen Prüfung einer ersten funktionierenden Ambisonics-Session."
+docs_nav_group: "Einstieg"
+docs_nav_label: "Schnellstart"
 ---
 
 <div class="quick-start-hero">

@@ -1,7 +1,7 @@
 ---
 title: Quellenbewegungen für räumliches Komponieren in REAPER
 date: 2026-06-28T00:00:00
-weight: 87
+weight: 220
 draft: false
 toc: true
 hide_default_title: true
@@ -9,6 +9,7 @@ translationKey: motion-map-user-guide
 docs_nav_id: motion-mapping
 docs_nav_label: Motion Mapping
 description: "Räumliche Quellenbewegungen in REAPER mit der ICST AmbiEncoder64 Motion Map erzeugen und automatisieren — inklusive Bewegungsformen, Koordinaten, Timing, Presets, Automation und Live-OSC-Vorschau."
+docs_nav_group: "Komponieren & Tools"
 ---
 
 <div class="motion-map-landing">

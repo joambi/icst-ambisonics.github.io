@@ -1,7 +1,7 @@
 ---
 title: Animator Choreographer
 date: 2026-11-12T00:00:00
-weight: 86
+weight: 250
 draft: false
 toc: true
 type: docs
@@ -9,6 +9,7 @@ translationKey: animator-choreographer-docs
 docs_nav_id: animator-choreographer
 docs_nav_label: Animator Choreographer
 description: "Desktop app that builds scene XML for the ICST Animator in five steps: groups, gestures, relations and REAPER regions as sections."
+docs_nav_group: "Composing & tools"
 ---
 
 Level: Advanced | Audience: Composers, sound designers | **Works with:** [ICST Animator](/icst-ambisonics-plugins/11_animator/)

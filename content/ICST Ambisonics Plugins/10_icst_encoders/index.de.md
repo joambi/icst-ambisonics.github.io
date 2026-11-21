@@ -1,9 +1,10 @@
 ---
 title: ICST Encoders
 date: 2025-01-01T00:00:00
-weight: 80
+weight: 110
 draft: false
 description: "Leitfaden zu den ICST Encoders für Quellenpositionierung, Bewegung, Gruppierung und OSC-basierte Steuerung in Ambisonics-Sessions."
+docs_nav_group: "Plugins"
 ---
 
 Level: Intermediate | Zielgruppe: Komponist:in, Techniker:in, Studierende, Interactive-Media-User.

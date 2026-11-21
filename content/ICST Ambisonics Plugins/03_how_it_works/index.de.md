@@ -1,9 +1,10 @@
 ---
 tags:
 title: Wie es funktioniert
-weight: 70
+weight: 20
 date: 2025-02-01T19:26:00
 description: "Grundübersicht zum Signalfluss der ICST Ambisonics Plugins in REAPER: was jede Stufe tut, was Pflicht ist und was optional bleibt."
+docs_nav_group: "Einstieg"
 ---
 
 Level: Beginner | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.

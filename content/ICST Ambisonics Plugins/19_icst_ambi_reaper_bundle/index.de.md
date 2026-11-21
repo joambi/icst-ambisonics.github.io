@@ -1,11 +1,12 @@
 ---
 title: ICST Ambi REAPER Bundle
 date: 2026-11-18T00:00:00
-weight: 35
+weight: 210
 draft: false
 toc: true
 translationKey: ambi-reaper-bundle
 description: "Das ICST Ambi REAPER Bundle (ICST_Ambi_Reaper): ein portabler, vorkonfigurierter REAPER-Ordner mit Toolbar, Lua-Skripten, VST3-Plugins und Doku für die ICST Ambisonics Plugins und den Animator Choreographer."
+docs_nav_group: "Komponieren & Tools"
 ---
 
 Level: Einsteiger | Zielgruppe: Komponist:in, Sounddesigner:in, Studierende, Techniker:in.

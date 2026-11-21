@@ -7,6 +7,7 @@ params:
   author: Johannes Schuett
 weight: 30
 tags:
+docs_nav_group: "Getting started"
 ---
 
 Level: Beginner | Audience: Composer, technician, student, studio user.

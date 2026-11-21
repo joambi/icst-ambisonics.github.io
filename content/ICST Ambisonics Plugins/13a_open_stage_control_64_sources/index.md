@@ -1,10 +1,12 @@
 ---
 title: "User Guide: 64 Sources with open-stage-control and ICST AmbiEncoder_64"
 date: 2026-08-19T00:00:00
-weight: 121
+weight: 260
 draft: false
 toc: true
 description: "User guide for controlling 64 sources with open-stage-control and the ICST AmbiEncoder_64 in REAPER."
+docs_nav_group: "Composing & tools"
+docs_nav_label: "64 Sources (OSC)"
 ---
 
 Level: Intermediate | Audience: Composer, technician, student, live-electronics user.

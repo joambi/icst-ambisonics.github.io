@@ -1,12 +1,13 @@
 ---
 title: Setup & Workflow
 date: 2026-06-28T00:00:00
-weight: 88
+weight: 225
 draft: false
 toc: true
 translationKey: motion-map-setup
 docs_nav_parent: motion-mapping
 description: "Install the ICST Ambi Motion Map, load its Lua scripts in REAPER, configure optional Python live OSC preview, and prepare the basic source-motion workflow on macOS or Windows."
+docs_nav_group: "Composing & tools"
 ---
 
 Level: Beginner | Audience: Composer, sound designer, spatial-audio technician.

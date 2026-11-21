@@ -1,9 +1,10 @@
 ---
 title: OSC
 date: 2025-01-01T00:00:00
-weight: 120
+weight: 160
 draft: false
 description: "Practical entry page for OSC control with the ICST AmbiEncoder: what it can control, first test steps, and where to go for syntax and advanced workflows."
+docs_nav_group: "Plugins"
 ---
 
 Level: Intermediate | Audience: Composer, technician, student, interactive-media user.

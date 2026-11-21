@@ -7,6 +7,7 @@ params:
   author: Johannes Schuett
 weight: 30
 tags:
+docs_nav_group: "Einstieg"
 ---
 
 Level: Beginner | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.

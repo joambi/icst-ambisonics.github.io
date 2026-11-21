@@ -1,9 +1,10 @@
 ---
 title: OSC
 date: 2025-01-01T00:00:00
-weight: 120
+weight: 160
 draft: false
 description: "Praktische Einstiegsseite für OSC-Steuerung mit dem ICST AmbiEncoder: was sich steuern lässt, wie der erste Test aussieht und wo Syntax und fortgeschrittene Workflows dokumentiert sind."
+docs_nav_group: "Plugins"
 ---
 
 Level: Intermediate | Zielgruppe: Komponist:in, Techniker:in, Studierende, Interactive-Media-User.

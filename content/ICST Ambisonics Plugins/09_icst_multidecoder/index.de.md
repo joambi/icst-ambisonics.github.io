@@ -1,9 +1,10 @@
 ---
 title: ICST MultiDecoder
 date: 2025-01-01T00:00:00
-weight: 100
+weight: 130
 draft: false
 description: "Leitfaden zum ICST MultiDecoder für geschichtete oder segmentierte Lautsprecher-Arrays: wann er sinnvoll ist, wie die Einheiten arbeiten und welche Fehler man vermeiden sollte."
+docs_nav_group: "Plugins"
 ---
 
 Level: Advanced | Zielgruppe: Techniker:in, fortgeschrittene Komponist:in, Studio-Operator, Forscher:in.

@@ -1,11 +1,13 @@
 ---
 title: ICST Kristall Motion Map — User Guide
 date: 2026-07-01T00:00:00
-weight: 90
+weight: 240
 draft: false
 toc: true
 translationKey: kristall-motion-map
 description: "Installation and user guide for JS_ICST_Kristall_Motion_Map.lua — a standalone REAPER script that moves up to 64 AmbiEncoder sources through a 3D crystal-lattice step sequencer with real-time GUI, OSC output, and named presets."
+docs_nav_group: "Composing & tools"
+docs_nav_label: "Kristall Motion Map"
 ---
 
 ![ICST Kristall Motion Map — v2.4.0](/images/kristall-title-2.4.0.png)

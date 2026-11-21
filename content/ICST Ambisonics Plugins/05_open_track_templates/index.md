@@ -1,8 +1,9 @@
 ---
-weight: 40
+weight: 50
 date: 2025-01-27T14:32:00
 title: Track Templates
 description: "Overview of the ICST track template groups in REAPER — what each template contains, when to use which, and how to insert them into your session."
+docs_nav_group: "Getting started"
 ---
 
 Level: Beginner | Audience: Composer, technician, student, studio user.

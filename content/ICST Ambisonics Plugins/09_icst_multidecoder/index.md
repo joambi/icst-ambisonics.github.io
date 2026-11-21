@@ -1,9 +1,10 @@
 ---
 title: ICST MultiDecoder
 date: 2025-01-01T00:00:00
-weight: 100
+weight: 130
 draft: false
 description: "Guide to the ICST MultiDecoder for layered or segmented loudspeaker arrays: when to use it, how the units work, and which mistakes to avoid."
+docs_nav_group: "Plugins"
 ---
 
 Level: Advanced | Audience: Technician, advanced composer, studio operator, researcher.

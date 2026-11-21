@@ -1,8 +1,9 @@
 ---
 title: Schritt-für-Schritt-Setup
-weight: 50
+weight: 60
 date: 2025-01-23T15:38:00
 description: "Detaillierte REAPER-Anleitung zum manuellen Aufbau einer ICST-Ambisonics-Session: Decoder, Bformat Master, binauraler Pfad, Encoder und Bewegungsaufnahme."
+docs_nav_group: "Einstieg"
 ---
 
 Level: Beginner bis Intermediate | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.

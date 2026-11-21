@@ -1,7 +1,7 @@
 ---
 title: Source Motion Mapping for Spatial Composition in REAPER
 date: 2026-06-28T00:00:00
-weight: 87
+weight: 220
 draft: false
 toc: true
 hide_default_title: true
@@ -9,6 +9,7 @@ translationKey: motion-map-user-guide
 docs_nav_id: motion-mapping
 docs_nav_label: Motion Mapping
 description: "Create and automate spatial source trajectories in REAPER with the ICST AmbiEncoder64 Motion Map, including motion shapes, coordinates, timing, presets, automation writing, and live OSC preview."
+docs_nav_group: "Composing & tools"
 ---
 
 <div class="motion-map-landing">

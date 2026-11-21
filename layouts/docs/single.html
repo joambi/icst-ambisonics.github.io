@@ -18,9 +18,11 @@
       </a>
     </div>
     <ul class="docs__nav-list">
+      {{ $navGroup := "" }}
       {{ range $pages }}
         {{ if not .Params.docs_nav_parent }}
           {{ $navID := .Params.docs_nav_id }}
+          {{ with .Params.docs_nav_group }}{{ if ne . $navGroup }}{{ $navGroup = . }}<li class="docs__nav-group">{{ . }}</li>{{ end }}{{ end }}
           <li class="docs__nav-item{{ if eq .RelPermalink $.RelPermalink }} docs__nav-item--active{{ end }}">
             <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ default .Title .Params.docs_nav_label }}</a>
             {{ with $navID }}
@@ -47,7 +49,9 @@
     <article class="docs__content post">
       <div class="post__content">
         <div class="docs__tabs" aria-label="Kapitel-Navigation">
+          {{ $tabGroup := "" }}
           {{ range $pages }}
+            {{ with .Params.docs_nav_group }}{{ if ne . $tabGroup }}{{ $tabGroup = . }}<span class="docs__tab-group">{{ . }}</span>{{ end }}{{ end }}
             <a class="docs__tab{{ if eq .RelPermalink $.RelPermalink }} docs__tab--active{{ end }}" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ default .Title .Params.docs_nav_label }}</a>
           {{ end }}
         </div>

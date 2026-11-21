@@ -1,8 +1,9 @@
 ---
 title: Tastaturkürzel
-weight: 140
+weight: 320
 date: 2025-01-22T14:36:00
 description: "Kürzel-Referenz für die Oberflächen von ICST Encoder und Decoder in REAPER, inklusive Radar-Interaktion und Multi-Source-Gesten."
+docs_nav_group: "Referenz"
 ---
 
 Level: Referenz | Zielgruppe: Komponist:in, Techniker:in, Studierende, Advanced User.

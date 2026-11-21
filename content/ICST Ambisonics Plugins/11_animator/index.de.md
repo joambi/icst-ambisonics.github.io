@@ -1,11 +1,12 @@
 ---
 title: ICST Animator
 date: 2026-10-15T00:00:00
-weight: 85
+weight: 140
 draft: false
 toc: true
 type: docs
 description: "Tutorial und Referenz zum ICST Animator: Quellengruppen im Multi-AmbiEncoder_64 auf einer Timeline bewegen, drehen und transformieren."
+docs_nav_group: "Plugins"
 ---
 
 Niveau: Fortgeschritten | Zielgruppe: Komponierende, Technik, Studierende, Interactive-Media-Anwender:innen. | **Version: ICST Ambisonics Plugins 4.0**

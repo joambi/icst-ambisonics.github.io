@@ -7,17 +7,18 @@ cascade:
   type: docs
 ---
 
-{{< notice info >}}
-The ‘ambisonics.ch’ documentation is currently under construction. Pages are being revised and added.
-{{< /notice >}}
+The **ICST Ambisonics Plugins** are a production environment for **Higher Order Ambisonics (HOA)** up to **7th order** in **REAPER** (VST3, AU, LV2). They are designed for spatial composition, group movement, flexible loudspeaker layouts and multichannel workflows.
 
-The **ICST Ambisonics Plugins** are a comprehensive production environment for **Higher Order Ambisonics (HOA)**. They are designed for spatial composition, group movement, flexible loudspeaker layouts, and multichannel production workflows.
+Up to **64 sources** can be encoded to **B-format / HOA** and decoded to freely configurable loudspeaker setups. A key strength is the direct connection between **panning, automation and OSC control**.
 
-The suite supports up to **64 sources**, which can be encoded to **B-format / HOA** and decoded to freely configurable loudspeaker setups. Core modules include **MonoEncoder**, **StereoEncoder**, **MultiEncoder_64**, **AmbiDecoder**, and **MultiDecoder**.
+| Module | Use it for |
+|---|---|
+| **MonoEncoder**, **StereoEncoder** | place mono or stereo sources in the Ambisonics field |
+| **MultiEncoder_64** | position and move up to 64 sources, with source groups and the Animator |
+| **AmbiDecoder** | decode B-format to a loudspeaker setup |
+| **MultiDecoder** | decode to layered or segmented loudspeaker arrays |
 
-ICST intentionally does not provide its own **binaural decoder**, since several strong free options already exist. Recommended choices include the **IEM BinauralDecoder** and the free **dearVR AMBI MICRO** ambisonics plugin.
-
-A key strength is the direct connection between **panning, automation, and OSC control**. In **REAPER**, this creates a flexible workflow for both compositional and production-oriented work up to **7th order**.
+ICST intentionally does not provide its own **binaural decoder**, since several strong free options already exist, for example the **IEM BinauralDecoder** or the free **dearVR AMBI MICRO**.
 
 <div class="hero__links" style="margin: 1.4rem 0 0.6rem;">
   <a class="hero__link hero__link--primary" href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank" rel="noopener noreferrer">
@@ -35,3 +36,7 @@ A key strength is the direct connection between **panning, automation, and OSC c
 </div>
 
 > **New to Ambisonics?** Start with [Ambisonics 101](/ambisonics-101/) and the [Ambisonics Formats reference](/learn/ambisonics-formats/), then move to the [Quick Start guide](/icst-ambisonics-plugins/04_quick_start/) — you'll have a working spatial audio setup in REAPER in under 10 minutes.
+
+{{< notice info >}}
+The ‘ambisonics.ch’ documentation is currently under construction. Pages are being revised and added.
+{{< /notice >}}

@@ -1,8 +1,9 @@
 ---
 date: 2025-01-27T14:32:00
 title: Spurvorlagen
-weight: 40
+weight: 50
 description: "Übersicht der ICST-Spurvorlagen in REAPER — Inhalt, Verwendungszweck und Anleitung zum Einfügen in eine bestehende Session."
+docs_nav_group: "Einstieg"
 ---
 
 Level: Beginner | Zielgruppe: Komponist:in, Techniker:in, Studierende, Studio-User.

@@ -1,9 +1,10 @@
 ---
 title: ICST Decoder
 date: 2025-01-01T00:00:00
-weight: 90
+weight: 120
 draft: false
 description: "Leitfaden zum ICST Decoder für Lautsprecherwiedergabe in Ambisonics-Sessions: wann man ihn einsetzt, wie der Grundaufbau aussieht und welche Fehler vermieden werden sollten."
+docs_nav_group: "Plugins"
 ---
 
 Level: Intermediate | Zielgruppe: Techniker:in, Komponist:in, Studierende, Studio-User.
