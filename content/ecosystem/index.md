@@ -79,7 +79,7 @@ As of 2026-11-19. Components marked **Beta** are released for evaluation, not ap
 | [HOA REAPER Template Pack](/blog/download-pack-1-hoa-reaper-template/) | Session templates and HOA routing checklist | REAPER | Stable | — | CC BY 4.0 | ICST |
 | [Speaker layouts and decoder settings](/blog/downloads/) | ICST Composition Studio, ICST DOM, ZHdK IA Space, Notam Studio 3 | XML, ZIP | Stable | — | CC BY 4.0 | ICST |
 | [ICST B-Format Archive](/blog/b-format-archive/) | Reference recordings in ambiX (ACN/SN3D) | WAV | Stable | — | Per work | ICST |
-| Documentation | Plugin docs, tutorials, Ambisonics 101, workflow guide, [Composing in Ambisonics](/composing-in-ambisonics/), resident guide | Web, PDF | Ongoing | — | CC BY 4.0 | [ambisonics.ch](/) |
+| Documentation | Plugin docs, tutorials, Ambisonics 101, workflow guide, resident guide | Web, PDF | Ongoing | — | CC BY 4.0 | [ambisonics.ch](/) |
 
 ## Platform overview
 

@@ -25,11 +25,6 @@ Womit möchtest du beginnen? Wähle deinen Einstieg.
     <strong class="icst-pillar__title">Max-Externals</strong>
     <span class="icst-pillar__desc">Live-Spatialisation und algorithmischer Klang in Max/MSP. Läuft nativ in Max 8.</span>
   </a>
-  <div class="icst-pillar icst-pillar--residency icst-pillar--coming-soon">
-    <span class="icst-pillar__icon">🎼</span>
-    <strong class="icst-pillar__title">Studiopraxis</strong>
-    <span class="icst-pillar__desc">Komponieren im 3D-Raum — Raumparameter, Room Capture, Binaural-Delivery, Notation. <em>(Guide in Vorbereitung)</em></span>
-  </div>
   <a class="icst-pillar icst-pillar--ascolta" href="/de/blog/ascolta/">
     <span class="icst-pillar__icon">🎧</span>
     <strong class="icst-pillar__title">Konzerte & ASCOLTA</strong>
@@ -136,10 +131,6 @@ Wenn du die Anleitung lieber offline lesen oder ausdrucken möchtest:
 </div>
 
 <div class="home-cards">
-  <section class="home-card">
-    <h4>🎼 Komponieren in Ambisonics</h4>
-    <p>Von analytischem Hören und räumlichem Kontrapunkt bis zu Room Capture und Binaural-Delivery — ein kuratierter Guide für Komponist:innen im 3D-Audio. <em>In Vorbereitung.</em></p>
-  </section>
   <section class="home-card">
     <h4>🏛️ Im ICST-Studio arbeiten</h4>
     <p>Bewirb dich für eine Residenz am ICST-Kompositionsstudio — 18-Kanal-Ambisonics-Anlage, ZHdK Zürich, betreut vom ICST-Team.</p>
