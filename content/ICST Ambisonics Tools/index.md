@@ -14,7 +14,7 @@ tags: ["ambisonics", "max", "externals", "icst"]
   </a>
 </div>
 
-![ICST Tools](large-1.jpg)
+<img src="/icst-ambisonics-tools/large-1.jpg" alt="ICST Ambisonics Tools in Max: patch with ambimonitor and icst.spline" style="display:block;width:100%;max-width:640px;height:auto;margin:1.2rem auto;border-radius:8px">
 
 A collection of **MaxMSP externals** for **Ambisonics** surround sound processing and 3D source control. Developed through research and practice since 2000 and first released in 2003, the tools have been used in concerts, compositions and installations. They run in music studios, listening spaces and acoustics labs worldwide, and, as an extension of Max, in Ableton Live. The current release reworks and extends almost every part of the package.
 
@@ -54,7 +54,7 @@ A collection of **MaxMSP externals** for **Ambisonics** surround sound processin
 
 Install **ICST Ambisonics Tools** in **Max 8 or Max 9** via the **Package Manager**:
 
-![Installing the package in the Max Package Manager](Amb_Max.gif)
+<img src="/icst-ambisonics-tools/Amb_Max.gif" alt="Installing the package in the Max Package Manager" style="display:block;width:100%;max-width:560px;height:auto;margin:1.2rem auto;border-radius:8px">
 
 More information and the download at [ZHdK](https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385).
 
