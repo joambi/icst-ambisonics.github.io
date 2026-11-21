@@ -98,3 +98,5 @@ Mit **Console ON** erscheinen Meldungen im ReaScript-Konsolenfenster.
 - [ICST Ambi Motion Markers](/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/): vollständige Referenz
 - [Motion Map](/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/): Bewegungsformen für viele Quellen
 - [OSC-Syntax für den AmbiEncoder](/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

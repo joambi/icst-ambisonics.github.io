@@ -84,3 +84,5 @@ DOWNLOAD ICST LuaScripts:
 - Die Spiralbewegung basiert auf Startposition jedes Punktes
 - Der Skalierungsfaktor für Z hat keinen Einfluss, wenn Z deaktiviert ist
 - Min Radius < 0.1 ist nicht erlaubt (Verhinderung unphysikalischer Spiralen)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

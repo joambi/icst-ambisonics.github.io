@@ -527,3 +527,5 @@ For irregular speaker layouts (non-spherical, asymmetric), the **AllRADecoder** 
   <a class="wf-resource-link" href="https://zenodo.org/records/2261633">ARTE Database<strong>Ambisonic recordings of typical environments (Zenodo)</strong></a>
   <a class="wf-resource-link" href="https://www.audiobrewers.com/">Audio Brewers<strong>ab Decoder, ab Recorder and the Ambisonics Test Library</strong></a>
 </div>
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

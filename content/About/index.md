@@ -25,7 +25,7 @@ Both toolsets are free and open source. Students and visiting artists work with 
 
 ---
 
-## About This Site
+## About This Site {#about-this-site}
 
 Ambisonics.ch documents tools, workflows, and artistic practice around Ambisonics and spatial audio at the ICST Composition Studio. The site brings plugin documentation, compositional thinking, residency work, and listening practice together in one place.
 

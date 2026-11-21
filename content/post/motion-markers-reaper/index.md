@@ -98,3 +98,5 @@ Turn **Console ON** to see messages in the ReaScript console window.
 - [ICST Ambi Motion Markers](/icst-ambisonics-plugins/14_icst_ambi_motion_markers/): full reference
 - [Motion Map](/icst-ambisonics-plugins/15_icst_ambi_motion_map/): motion figures for many sources
 - [OSC syntax for the AmbiEncoder](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

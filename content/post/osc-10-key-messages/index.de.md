@@ -64,3 +64,5 @@ Kombiniere einen externen Controller mit Reaper-Automation: OSC steuert die Bewe
 
 ## Nächster Schritt
 Übernimm zwei bis drei Messages in dein Setup und teste sie zuerst mit einer einzelnen Quelle, bevor du Gruppensteuerung aktivierst.
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

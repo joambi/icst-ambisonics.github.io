@@ -245,3 +245,5 @@ Du musst dich nicht entscheiden. Der Decoder zeigt immer beide – nutze das, wa
 - [Skalierung und Laufzeitkompensation](/de/post/decoder-skalierung-laufzeitkompensation/)
 - [Der Filter-Tab – Praxisbeispiele und Anwendungsfälle](/de/post/decoder-filter-praxisbeispiele/)
 - [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/de/post/decoder-methodological-context/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

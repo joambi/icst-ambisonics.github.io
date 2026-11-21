@@ -156,3 +156,5 @@ Mehr dazu im Artikel [Von der Ambisonics-Szene zum Atmos Bed](/de/post/ambisonic
 - [Von der Ambisonics-Szene zum Atmos Bed](/de/post/ambisonics-to-atmos-bed/)
 - [ICST AmbiEncoder – OSC Syntax](/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/) *(für Head-Tracking-Integration via OSC)*
 - [GyrOSC & ICST AmbiPlugins](/de/post/gyrosc/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

@@ -63,3 +63,5 @@ Wer die Geschichte von Ambisonics nur als eine einzige Linie darstellt, übersie
 - [RFC 8486: Ambisonics in an Ogg Opus Container](https://www.rfc-editor.org/info/rfc8486)
 - [YouTube: 360-Grad-Livestreaming und Raumklang](https://youtube.googleblog.com/2016/04/one-step-closer-to-reality-introducing.html) (2016)
 - [Geschichte und Anwendungen des Ambisonics Decoders](/de/blog/decoder-geschichte-und-anwendungen/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

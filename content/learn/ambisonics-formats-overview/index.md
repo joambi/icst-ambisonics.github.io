@@ -550,3 +550,5 @@ Always document: order, channel count, channel ordering, normalization, sample r
 - [Which Ambisonics order do I need?](/post/hoa-ordnung-wahl-praxis/)
 - [First session in REAPER](/post/getting-started-icst-plugins-reaper/)
 - [Glossary](/ambisonics-101/glossary/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

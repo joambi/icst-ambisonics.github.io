@@ -551,3 +551,5 @@ Immer dokumentieren: Ordnung, Kanalzahl, Kanalreihenfolge, Normierung, Sample Ra
 - [Welche Ambisonics-Ordnung brauche ich?](/de/post/hoa-ordnung-wahl-praxis/)
 - [Erste Session in REAPER](/de/post/getting-started-icst-plugins-reaper/)
 - [Glossar](/de/ambisonics-101/glossary/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

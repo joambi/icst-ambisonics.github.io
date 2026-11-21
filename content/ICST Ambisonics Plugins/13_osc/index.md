@@ -111,3 +111,5 @@ If you only need static placement or simple automation inside REAPER, the encode
 **OSC Tutorial Video**
 
 {{< youtube 7_s-jaUQa14 >}}
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

@@ -209,3 +209,5 @@ This way only the recorded room sound rotates while the composed objects stay in
 - [GyrOSC & ICST AmbiPlugins](/post/gyrosc/)
 - [ICST AmbiEncoder – OSC syntax](/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 - [Why the decoder sounds the way it does – methodological context](/post/decoder-methodological-context/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

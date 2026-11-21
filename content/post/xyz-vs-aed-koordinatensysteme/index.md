@@ -245,3 +245,5 @@ You do not have to choose. The decoder always shows both – use whichever the s
 - [Scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)
 - [The Filter tab – practical examples and use cases](/post/decoder-filter-praxisbeispiele/)
 - [Why the decoder sounds the way it does – methodological context](/post/decoder-methodological-context/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

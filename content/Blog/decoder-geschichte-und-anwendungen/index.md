@@ -140,3 +140,5 @@ The ICST AmbiDecoder stands at the end of this line, as a tool for practice, not
 - [History of FOA and HOA: visual timeline](/blog/geschichte-von-ambisonics-foa-und-hoa/)
 - [Why the decoder sounds the way it does](/post/decoder-methodological-context/)
 - [ICST AmbiDecoder: setup and operation](/icst-ambisonics-plugins/08_icst_decoder/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

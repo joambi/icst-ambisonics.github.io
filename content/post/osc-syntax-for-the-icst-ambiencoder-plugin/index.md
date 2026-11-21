@@ -187,3 +187,5 @@ Now, the AmbiDecoder receives **all OSC messages** from all connected AmbiEncode
 | OSC address | Arguments | Description |
 |---|---|---|
 | `/aed` | `[CH] [A] [E] [D] [CH_check]` | MuseScore SSMN format (int, float, float, float, int) |
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

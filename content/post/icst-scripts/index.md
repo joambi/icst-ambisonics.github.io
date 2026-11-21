@@ -84,3 +84,5 @@ DOWNLOAD ICST LuaScripts:
 - The spiral is based on the start position of each point
 - The Z scale factor has no effect when Z is switched off
 - Min radius < 0.1 is not allowed (prevents unphysical spirals)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

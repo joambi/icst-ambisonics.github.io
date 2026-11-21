@@ -26,7 +26,7 @@ Beide Werkzeuge sind kostenfrei und Open Source verfügbar. Studierende und Gast
 
 ---
 
-## Über diese Site
+## Über diese Site {#about-this-site}
 
 Ambisonics.ch dokumentiert Werkzeuge, Workflows und künstlerische Praxis rund um Ambisonics und räumlichen Klang am ICST-Kompositionsstudio. Die Website bringt Plugin-Dokumentation, kompositorisches Denken, Residenzarbeit und Hörpraxis an einem Ort zusammen.
 

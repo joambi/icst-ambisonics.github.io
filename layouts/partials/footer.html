@@ -31,6 +31,10 @@
         </a>
       </li>
     {{ end }}
+    {{- /* AI transparency link (points to the About page) */ -}}
+    <li class="footer__item ai-note">
+      <a class="link" href="{{ "about/" | relLangURL }}#about-this-site">{{ if eq .context.Site.Language.Lang "de" }}KI-Transparenz{{ else }}AI transparency{{ end }}</a>
+    </li>
   </ul>
 </footer>
 {{- partial "medium-zoom.html" .context -}}

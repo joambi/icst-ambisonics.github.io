@@ -170,3 +170,5 @@ If you have received a FuMa file or need a different order:
 - [Coordinate systems: XYZ and AED compared](/post/xyz-vs-aed-koordinatensysteme/)
 - [From the Ambisonics scene to an Atmos bed](/post/ambisonics-to-atmos-bed/)
 - [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

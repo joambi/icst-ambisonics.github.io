@@ -188,3 +188,5 @@ FOA microphones, especially those with MEMS capsules (Zylia), have higher self-n
 - [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/)
 - [XYZ and AED – two coordinate systems, one loudspeaker](/post/xyz-vs-aed-koordinatensysteme/)
 - [ICST AmbiDecoder – scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

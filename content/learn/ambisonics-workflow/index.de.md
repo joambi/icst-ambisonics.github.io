@@ -724,3 +724,5 @@ Bei unregelmässigen Lautsprecher-Layouts (nicht sphärisch, asymmetrisch) biete
   <a class="wf-resource-link" href="https://zenodo.org/records/2261633">ARTE-Datenbank<strong>Ambisonics-Aufnahmen typischer Umgebungen (Zenodo)</strong></a>
   <a class="wf-resource-link" href="https://www.audiobrewers.com/">Audio Brewers<strong>ab Decoder, ab Recorder und Ambisonics Test Library</strong></a>
 </div>
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

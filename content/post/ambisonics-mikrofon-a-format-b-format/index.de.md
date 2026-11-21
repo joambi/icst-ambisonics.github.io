@@ -188,3 +188,5 @@ FOA-Mikrofone, insbesondere mit MEMS-Kapseln (Zylia), haben höheres Eigenrausch
 - [Binaural Monitoring im ICST-Workflow](/de/post/binaural-monitoring-icst-workflow/)
 - [XYZ und AED – Zwei Koordinatensysteme, ein Lautsprecher](/de/post/xyz-vs-aed-koordinatensysteme/)
 - [ICST AmbiDecoder – Skalierung und Laufzeitkompensation](/de/post/decoder-skalierung-laufzeitkompensation/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

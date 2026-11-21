@@ -64,3 +64,5 @@ Combine an external controller with Reaper automation: OSC drives movement in re
 
 ## Next step
 Adopt two or three messages into your setup and test them first with a single source before enabling group control.
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagrams and explainer videos created with the help of Claude (Anthropic). <a href="/about/#about-this-site">→</a></em></p>

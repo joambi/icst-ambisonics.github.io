@@ -209,3 +209,5 @@ So dreht sich nur der aufgenommene Raumklang, während die komponierten Objekte 
 - [GyrOSC & ICST AmbiPlugins](/de/post/gyrosc/)
 - [ICST AmbiEncoder – OSC Syntax](/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
 - [Warum der Decoder klingt wie er klingt – Methodischer Kontext](/de/post/decoder-methodological-context/)
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>

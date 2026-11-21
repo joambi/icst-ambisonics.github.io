@@ -111,3 +111,5 @@ Wenn du nur statische Positionierung oder einfache Automation in REAPER brauchst
 **OSC Tutorial Video**
 
 {{< youtube 7_s-jaUQa14 >}}
+
+<p class="ai-credit" style="font-size:.85em;opacity:.7"><em>Diagramme und Erklärvideos mit Hilfe von Claude (Anthropic) erstellt. <a href="/de/about/#about-this-site">→</a></em></p>
