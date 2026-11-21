@@ -54,3 +54,7 @@ Pasted image *
 /Excalidraw/
 hugo.nav-preview.toml*
 hugo.toml.vor_nav_*
+
+# local working material (not for the public repo)
+/Clippings/
+/Attachments/
