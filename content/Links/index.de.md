@@ -10,7 +10,7 @@ tags: []
 languageCode: de
 ---
 
-### ICST Ambisonics
+## ICST Ambisonics
 
 - [The ICST Ambisonics Tools](https://joambi.github.io/icst-ambisonics.github.io/icst-ambisonics-tools/)
 - [Übersicht über die ICST Ambisonics Plugins](https://ambisonics.ch/)

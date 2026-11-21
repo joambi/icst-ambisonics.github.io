@@ -9,7 +9,7 @@ languageCode: de
 
 **Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
-### Das ICST Kompositionsstudio
+## Das ICST Kompositionsstudio
 
 ![Studio overview](Kompstudio.jpg)
 

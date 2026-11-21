@@ -34,7 +34,7 @@ Software and plugin environment for production at the ICST Mac Pro.
   </section>
 </div>
 
-### Software Inventory (Accordion)
+## Software Inventory (Accordion)
 
 <details class="home-accordion">
   <summary>Audio Analysis & Editors</summary>

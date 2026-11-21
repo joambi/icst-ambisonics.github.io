@@ -25,7 +25,7 @@ Before we begin, make sure you have **Reaper**, the **ICST Ambisonics plugins**,
 
 We will create the template step by step from top to bottom.
 
-#### 1. Prepare Reaper
+### 1. Prepare Reaper
 
 1. Open a **new, empty Reaper session**.
     ![empty_reaper](empty_reaper.png)

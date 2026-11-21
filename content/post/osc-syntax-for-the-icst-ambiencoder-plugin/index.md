@@ -102,7 +102,7 @@ Messages can be:
 
 _Figure: Custom 'OSC Out' Editor_
 
-#### **Internal OSC Communication**
+### **Internal OSC Communication**
 
 To send **all AmbiEncoder movements** to the ICST AmbiDecoder:
 1. Deactivate **Speaker Edit Mode** in the AmbiDecoder.

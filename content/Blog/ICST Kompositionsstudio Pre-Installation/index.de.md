@@ -48,7 +48,7 @@ Wie in der Abbildung oben ist die Synchronisation korrekt.
 **DisplayLink Manager installieren**  
 Lade den [DisplayLink Manager für macOS](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) für dein System herunter und installiere ihn.
 
-#### **Tipp:**
+### **Tipp:**
 Damit der Curved Screen als ein grosser Bildschirm erscheint, ist eine zusätzliche Einstellung auf dem Mac nötig.
 
 1. Systemeinstellungen -> Mission Control

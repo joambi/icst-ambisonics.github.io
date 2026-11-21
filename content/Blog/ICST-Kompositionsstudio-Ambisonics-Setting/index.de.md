@@ -23,9 +23,9 @@ Der Studioraum ist ca. 7 m lang, 7 m breit und 7 m hoch.
 Lautsprecher-Koordinaten für das "ICST Kompositionsstudio"
 
 ![Speaker Setup](Speakers_Kompstudio.png)
-### **Koordinaten:**
+## **Koordinaten:**
 ![Speaker-Setting](Speaker_Setting.png)
-#### Multi-Decoder-Setting (Beispiel)
+### Multi-Decoder-Setting (Beispiel)
 ![MultiDecoder](MultiDec.png)
 
  Lautsprecher 1 - 17 --> Kanäle 1 - 17

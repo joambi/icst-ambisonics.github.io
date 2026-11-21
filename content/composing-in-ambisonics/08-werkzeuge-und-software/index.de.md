@@ -10,7 +10,7 @@ Wer mit Ambisonics arbeitet, braucht fast immer eine Kombination aus **DAW**, **
 
 Die Tabelle ist bewusst als **Orientierung** zu lesen: Manche Tools sind komplette Produktionsumgebungen, andere eher spezialisierte Bausteine für Analyse, Mikrofon-Postproduktion, VR oder experimentelle Komposition. Gerade bei maximaler Ordnung, Host-Support und Formatkonventionen lohnt sich immer ein Blick in die jeweilige Dokumentation.
 
-### Ambisonics Software Übersicht
+## Ambisonics Software Übersicht
 
 | Paket / Name | Typ / Fokus | Max. Ordnung (typisch) | Formate / Konventionen | Plattform / Host | Lizenz / Kosten | Typische Use-Cases |
 | --- | --- | --- | --- | --- | --- | --- |

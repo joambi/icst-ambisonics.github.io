@@ -31,7 +31,7 @@ Wer mit Ambisonics komponiert, arbeitet nicht nur mit einer Technik, sondern mit
 
 {{< ambisonics-history >}}
 
-### Referenzpunkte
+## Referenzpunkte
 
 - **FOA** ist die historische Wurzel und bleibt bis heute ein praktikables Format für Lehre, Skizze, Produktion und Distribution.
 - **HOA** entsteht als modernes Feld eigentlich erst ab etwa 2000 und markiert einen methodischen Sprung in Richtung höherer Richtungsauflösung.

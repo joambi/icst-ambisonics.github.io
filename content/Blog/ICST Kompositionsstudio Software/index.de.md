@@ -35,7 +35,7 @@ Software- und Plugin-Umgebung für die Produktion auf dem ICST Mac Pro.
   </section>
 </div>
 
-### Software-Inventar (Akkordeon)
+## Software-Inventar (Akkordeon)
 
 <details class="home-accordion">
   <summary>Audioanalyse & Editoren</summary>

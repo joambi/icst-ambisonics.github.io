@@ -10,7 +10,7 @@ Working in Ambisonics almost always means combining a **DAW**, **encoder/decoder
 
 The table is intended as **orientation**: some tools are complete production environments, others are more specialized building blocks for analysis, microphone post-processing, VR, or experimental composition. For maximum order, host support, and format conventions, it is always worth checking the current documentation.
 
-### Ambisonics Software Overview
+## Ambisonics Software Overview
 
 | Package / Name | Type / Focus | Max. Order (typical) | Formats / Conventions | Platform / Host | License / Cost | Typical Use Cases |
 | --- | --- | --- | --- | --- | --- | --- |

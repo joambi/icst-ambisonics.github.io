@@ -31,7 +31,7 @@ Working with Ambisonics means working within a historical field, not just with a
 
 {{< ambisonics-history >}}
 
-### Key Reference Points
+## Key Reference Points
 
 - **FOA** is the historical root and remains a practical format for teaching, sketching, production, and distribution.
 - **HOA** effectively emerges as a modern field from around 2000 onward, marking a methodological shift toward higher spatial resolution.

@@ -8,7 +8,7 @@ group: "Studio"
 
 Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 
-### The ICST Composition Studio
+## The ICST Composition Studio
 
 ![Studio overview](Kompstudio.jpg)
 

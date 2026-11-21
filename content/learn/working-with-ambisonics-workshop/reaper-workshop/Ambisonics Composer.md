@@ -8,7 +8,7 @@ categories:
 
 nicht nur "mehr Raum", sondern ein kompositorisches System mit Perspektive, Bewegung, Dichte und Übersetzung in verschiedene Wiedergabesituationen.
 
-### **1. Den Raum als Partitur denken**
+## **1. Den Raum als Partitur denken**
 
 - Welche Klänge sind **Punkte** im Raum?
 - Welche sind **Flächen / Atmosphären**?

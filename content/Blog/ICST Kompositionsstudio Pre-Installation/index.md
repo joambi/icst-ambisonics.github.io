@@ -47,7 +47,7 @@ As shown above, synchronization is correct.
 **Install DisplayLink Manager**  
 Download and install  [DisplayLink Manager for macOS](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) for your system.
 
-#### **Tip:** 
+### **Tip:** 
 To get the curved screen as a single large screen, you need to make an additional setting on your Mac.
 
 1. system preferences -> mission control

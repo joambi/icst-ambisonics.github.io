@@ -288,7 +288,7 @@ That is why "Is this B-Format?" is often not specific enough. A better question 
 
 ---
 
-<div class="fmt-section" id="fuma-vs-ambix">
+<div class="fmt-section">
 
 ## FuMa vs ambiX
 

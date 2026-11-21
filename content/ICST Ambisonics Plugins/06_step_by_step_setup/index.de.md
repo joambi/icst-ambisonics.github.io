@@ -25,7 +25,7 @@ Bevor du startest, stelle sicher, dass **Reaper**, die **ICST Ambisonics Plugins
 
 Wir erstellen die Vorlage Schritt für Schritt von oben nach unten.
 
-#### 1. Reaper vorbereiten
+### 1. Reaper vorbereiten
 
 1. Öffne eine **neue, leere Reaper-Session**.
    ![empty_reaper](empty_reaper.png)

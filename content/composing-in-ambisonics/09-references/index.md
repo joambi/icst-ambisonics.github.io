@@ -6,7 +6,7 @@ weight: 98
 translationKey: "composing-references"
 ---
 
-### Books
+## Books
 
 - [Ambisonics: A Practical 3D Audio Theory — Zotter & Frank (2019, Open Access)](https://link.springer.com/book/10.1007/978-3-030-17207-7)
 - [Parametric Time-Frequency Domain Spatial Audio — Pulkki, Delikaris-Manias & Politis (2017)](https://doi.org/10.1002/9781119252634)

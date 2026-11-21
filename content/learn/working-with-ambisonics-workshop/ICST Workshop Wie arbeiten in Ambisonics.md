@@ -11,7 +11,7 @@ created: 2026-05-17
 ---
 ---
 
-### A: Overall workflow
+## A: Overall workflow
 - [ ] How Ambisonics works
 
 ![[Pasted image 20260515123225.png]]

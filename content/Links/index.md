@@ -9,7 +9,7 @@ weight: 10
 tags: []
 ---
 
-### ICST Ambisonics
+## ICST Ambisonics
 
 - [The ICST Ambisonics Tools](https://joambi.github.io/icst-ambisonics.github.io/icst-ambisonics-tools/)
 - [The ICST Ambisonics Plugins Overview](https://ambisonics.ch/)
