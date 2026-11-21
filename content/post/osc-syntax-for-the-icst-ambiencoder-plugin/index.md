@@ -120,70 +120,70 @@ Now, the AmbiDecoder receives **all OSC messages** from all connected AmbiEncode
 * * *
 
 
-## Vollständige OSC-Referenz (aus GitHub-Quellcode)
+## Complete OSC reference (from the GitHub source code)
 
-> Abgeleitet aus dem Plugin-Quellcode ([OSCHandlerEncoder.h/.cpp](https://github.com/schweizerweb/icst-ambisonics-plugins/blob/main/Encoder/Source/OSCHandlerEncoder.h)). Ergänzt die oben dokumentierten Standard-Nachrichten um alle weiteren unterstützten Adressen.
+> Derived from the plugin source code ([OSCHandlerEncoder.h/.cpp](https://github.com/schweizerweb/icst-ambisonics-plugins/blob/main/Encoder/Source/OSCHandlerEncoder.h)). Adds all further supported addresses to the standard messages documented above.
 
-### Quellen – Name-basiert
+### Sources – by name
 
-| OSC-Adresse | Argumente | Typ | Beschreibung |
+| OSC address | Arguments | Type | Description |
 |---|---|---|---|
-| `/icst/ambi/source/aed` | `[Name] [A] [E] [D]` | string, float, float, float | Position setzen (Azimut/Elevation/Distanz) per Quellname |
-| `/icst/ambi/source/xyz` | `[Name] [X] [Y] [Z]` | string, float, float, float | Position setzen (kartesisch) per Quellname |
-| `/icst/ambi/source/gain` | `[Name] [Gain_dB]` | string, float | Gain setzen per Quellname |
+| `/icst/ambi/source/aed` | `[Name] [A] [E] [D]` | string, float, float, float | Set position (azimuth/elevation/distance) by source name |
+| `/icst/ambi/source/xyz` | `[Name] [X] [Y] [Z]` | string, float, float, float | Set position (Cartesian) by source name |
+| `/icst/ambi/source/gain` | `[Name] [Gain_dB]` | string, float | Set gain by source name |
 
-### Quellen – Index-basiert
+### Sources – by index
 
-| OSC-Adresse | Argumente | Typ | Beschreibung |
+| OSC address | Arguments | Type | Description |
 |---|---|---|---|
-| `/icst/ambi/sourceindex/aed` | `[Index] [A] [E] [D]` | int, float, float, float | Position setzen (AED) per Quellindex (1-basiert) |
-| `/icst/ambi/sourceindex/xyz` | `[Index] [X] [Y] [Z]` | int, float, float, float | Position setzen (XYZ) per Quellindex (1-basiert) |
-| `/icst/ambi/sourceindex/gain` | `[Index] [Gain_dB]` | int, float | Gain setzen per Quellindex |
-| `/icst/ambi/sourceindex/name` | `[Index] [Name]` | int, string | Name der Quelle setzen per Index |
+| `/icst/ambi/sourceindex/aed` | `[Index] [A] [E] [D]` | int, float, float, float | Set position (AED) by source index (1-based) |
+| `/icst/ambi/sourceindex/xyz` | `[Index] [X] [Y] [Z]` | int, float, float, float | Set position (XYZ) by source index (1-based) |
+| `/icst/ambi/sourceindex/gain` | `[Index] [Gain_dB]` | int, float | Set gain by source index |
+| `/icst/ambi/sourceindex/name` | `[Index] [Name]` | int, string | Set source name by index |
 
-### Gruppen
+### Groups
 
-| OSC-Adresse | Argumente | Typ | Beschreibung |
+| OSC address | Arguments | Type | Description |
 |---|---|---|---|
-| `/icst/ambi/group/aed` | `[Name] [A] [E] [D] [MovePoints]` | string, float, float, float, int | Gruppenposition setzen (AED); MovePoints: 0=nur Gruppe, 1=mit Quellen |
-| `/icst/ambi/group/xyz` | `[Name] [X] [Y] [Z] [MovePoints]` | string, float, float, float, int | Gruppenposition setzen (XYZ); MovePoints: 0/1 |
-| `/icst/ambi/group/rotate` | `[Name] [Rx] [Ry] [Rz]` | string, float, float, float | Gruppe relativ rotieren (Euler, Grad) |
-| `/icst/ambi/group/setrotation/euler` | `[Name] [Rx] [Ry] [Rz]` | string, float, float, float | Absolute Gruppenrotation setzen (Euler, Grad) |
-| `/icst/ambi/group/setrotation/quaternion` | `[Name] [q1] [q2] [q3] [q4]` | string, float×4 | Absolute Gruppenrotation setzen (Quaternion) |
-| `/icst/ambi/group/rotateorigin` | `[Name] [Rx] [Ry] [Rz] [MovePoints]` | string, float, float, float, int | Gruppe um den Ursprung rotieren |
-| `/icst/ambi/group/stretch` | `[Name] [Factor]` | string, float | Gruppe relativ strecken/stauchen (relativ) |
-| `/icst/ambi/group/setstretch` | `[Name] [Factor]` | string, float | Absolute Streckung der Gruppe setzen |
+| `/icst/ambi/group/aed` | `[Name] [A] [E] [D] [MovePoints]` | string, float, float, float, int | Set group position (AED); MovePoints: 0 = group only, 1 = with sources |
+| `/icst/ambi/group/xyz` | `[Name] [X] [Y] [Z] [MovePoints]` | string, float, float, float, int | Set group position (XYZ); MovePoints: 0/1 |
+| `/icst/ambi/group/rotate` | `[Name] [Rx] [Ry] [Rz]` | string, float, float, float | Rotate group relatively (Euler, degrees) |
+| `/icst/ambi/group/setrotation/euler` | `[Name] [Rx] [Ry] [Rz]` | string, float, float, float | Set absolute group rotation (Euler, degrees) |
+| `/icst/ambi/group/setrotation/quaternion` | `[Name] [q1] [q2] [q3] [q4]` | string, float×4 | Set absolute group rotation (quaternion) |
+| `/icst/ambi/group/rotateorigin` | `[Name] [Rx] [Ry] [Rz] [MovePoints]` | string, float, float, float, int | Rotate group around the origin |
+| `/icst/ambi/group/stretch` | `[Name] [Factor]` | string, float | Stretch/compress group relatively |
+| `/icst/ambi/group/setstretch` | `[Name] [Factor]` | string, float | Set absolute group stretch |
 
-### Distance Encoding – Einzelparameter
+### Distance encoding – single parameters
 
-| OSC-Adresse | Argumente | Typ | Beschreibung |
+| OSC address | Arguments | Type | Description |
 |---|---|---|---|
-| `/icst/ambi/distanceencoding/mode` | `[Mode]` | int | Modus: 0=Standard, 1=Advanced, 2=Exponential, 3=InverseProportional |
-| `/icst/ambi/distanceencoding/unitcircle` | `[Radius]` | float | Radius des Einheitskreises |
-| `/icst/ambi/distanceencoding/dbunit` | `[dB]` | float | dB-Einheit für Abstandscodierung |
-| `/icst/ambi/distanceencoding/distanceattenuation` | `[Value]` | float | Distanzabschwächung (nur Inverse Proportional) |
-| `/icst/ambi/distanceencoding/centercurve` | `[Value]` | float | Center-Kurven-Parameter |
-| `/icst/ambi/distanceencoding/advancedfactor` | `[Value]` | float | Advanced-Faktor |
-| `/icst/ambi/distanceencoding/advancedexponent` | `[Value]` | float | Advanced-Exponent |
+| `/icst/ambi/distanceencoding/mode` | `[Mode]` | int | Mode: 0=Standard, 1=Advanced, 2=Exponential, 3=InverseProportional |
+| `/icst/ambi/distanceencoding/unitcircle` | `[Radius]` | float | Unit circle radius |
+| `/icst/ambi/distanceencoding/dbunit` | `[dB]` | float | dB unit for distance encoding |
+| `/icst/ambi/distanceencoding/distanceattenuation` | `[Value]` | float | Distance attenuation (Inverse Proportional only) |
+| `/icst/ambi/distanceencoding/centercurve` | `[Value]` | float | Center curve parameter |
+| `/icst/ambi/distanceencoding/advancedfactor` | `[Value]` | float | Advanced factor |
+| `/icst/ambi/distanceencoding/advancedexponent` | `[Value]` | float | Advanced exponent |
 
-### Distance Encoding – Kombinierte Presets
+### Distance encoding – combined presets
 
-| OSC-Adresse | Argumente | Typ | Beschreibung |
+| OSC address | Arguments | Type | Description |
 |---|---|---|---|
-| `/icst/ambi/distanceencoding/standard` | `[UnitCircleRadius]` | float | Standard-Modus + Einheitskreis setzen |
-| `/icst/ambi/distanceencoding/advanced` | `[UnitCircle] [Factor] [Exponent]` | float, float, float | Advanced-Modus mit 3 Parametern |
-| `/icst/ambi/distanceencoding/exponential` | `[UnitCircle] [dBUnit] [CenterCurve]` | float, float, float | Exponential-Modus mit 3 Parametern |
-| `/icst/ambi/distanceencoding/inverseproportional` | `[UnitCircle] [dBUnit] [CenterCurve] [DistAttn]` | float, float, float, float | Inverse-Proportional-Modus mit 4 Parametern |
+| `/icst/ambi/distanceencoding/standard` | `[UnitCircleRadius]` | float | Set Standard mode + unit circle |
+| `/icst/ambi/distanceencoding/advanced` | `[UnitCircle] [Factor] [Exponent]` | float, float, float | Advanced mode with 3 parameters |
+| `/icst/ambi/distanceencoding/exponential` | `[UnitCircle] [dBUnit] [CenterCurve]` | float, float, float | Exponential mode with 3 parameters |
+| `/icst/ambi/distanceencoding/inverseproportional` | `[UnitCircle] [dBUnit] [CenterCurve] [DistAttn]` | float, float, float, float | Inverse Proportional mode with 4 parameters |
 
-### OSC Out – Custom Message Formate
+### OSC Out – custom message formats
 
-| Format | Beschreibung |
+| Format | Description |
 |---|---|
-| `/icst/ambi/sourceindex/xyz {i} {x} {y} {z}` | Positions-Ausgabe per Index (XYZ) |
-| `/icst/ambi/sourceindex/aed {i} {a} {e} {d}` | Positions-Ausgabe per Index (AED) |
+| `/icst/ambi/sourceindex/xyz {i} {x} {y} {z}` | Position output by index (XYZ) |
+| `/icst/ambi/sourceindex/aed {i} {a} {e} {d}` | Position output by index (AED) |
 
-### MuseScore SSMN-Kompatibilität
+### MuseScore SSMN compatibility
 
-| OSC-Adresse | Argumente | Beschreibung |
+| OSC address | Arguments | Description |
 |---|---|---|
-| `/aed` | `[CH] [A] [E] [D] [CH_check]` | MuseScore SSMN-Format (int, float, float, float, int) |
+| `/aed` | `[CH] [A] [E] [D] [CH_check]` | MuseScore SSMN format (int, float, float, float, int) |
