@@ -508,3 +508,6 @@ Always document: order, channel count, channel ordering, normalization, sample r
 - [ICST Encoders](/icst-ambisonics-plugins/10_icst_encoders/)
 - [ICST Decoder](/icst-ambisonics-plugins/08_icst_decoder/)
 - [Render B-Format in REAPER](/icst-ambisonics-plugins/12_render_bformat/)
+- [Which Ambisonics order do I need?](/post/hoa-ordnung-wahl-praxis/)
+- [First session in REAPER](/post/getting-started-icst-plugins-reaper/)
+- [Glossary](/ambisonics-101/glossary/)

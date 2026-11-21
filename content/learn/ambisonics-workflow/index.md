@@ -316,9 +316,11 @@ Source Track → AmbiEncoder → [HOA FX: SN3D-compliant Reverb] → HOA Bus →
 |---:|---:|---|---|
 | 1st (FOA) | 4 | `(1+1)²` | Binaural production, education, FOA recordings |
 | 2nd | 9 | `(2+1)²` | — |
-| 3rd | 16 | `(3+1)²` | Standard for HOA productions and mid-sized arrays |
+| 3rd | 16 | `(3+1)²` | Fallback and typical delivery order; sufficient for mid-sized arrays |
 | 5th | 36 | `(5+1)²` | Large arrays, high directional resolution |
-| 7th | 64 | `(7+1)²` | Scientific reference, maximum resolution |
+| 7th | 64 | `(7+1)²` | Recommended working order if the CPU allows; scientific reference |
+
+**Working rule:** produce in the highest order your computer's CPU copes with (ideally 7th). A higher-order master can always be reduced to 3rd or 1st order for a specific system or platform; a lower-order session can never be upgraded. See [Which Ambisonics order do I need?](/post/hoa-ordnung-wahl-praxis/).
 
 ---
 
@@ -477,6 +479,9 @@ For irregular speaker layouts (non-spherical, asymmetric), the **AllRADecoder** 
 ## Further Resources
 
 <div class="wf-resources">
+  <a class="wf-resource-link" href="/post/getting-started-icst-plugins-reaper/">First session<strong>Your first working ICST session in REAPER</strong></a>
+  <a class="wf-resource-link" href="/post/hoa-ordnung-wahl-praxis/">Which order?<strong>FOA, HOA3 or HOA7: channels, CPU, loudspeakers</strong></a>
+  <a class="wf-resource-link" href="/post/xyz-vs-aed-koordinatensysteme/">XYZ and AED<strong>Coordinate systems and the ICST azimuth convention</strong></a>
   <a class="wf-resource-link" href="/icst-ambisonics-plugins/17_best_practices/">Best Practices<strong>Setup rules, routing, monitoring, export</strong></a>
   <a class="wf-resource-link" href="/learn/ambisonics-formats/">Ambisonics Formats<strong>A-Format · B-Format · ambiX · FuMa · ACN/SN3D</strong></a>
   <a class="wf-resource-link" href="/icst-ambisonics-plugins/12_render_bformat/">Render B-Format<strong>Export guide for REAPER</strong></a>

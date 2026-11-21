@@ -513,9 +513,11 @@ Quell-Track → AmbiEncoder → [HOA FX: SN3D-konformer Reverb] → HOA-Bus → 
 |---:|---:|---|---|
 | 1st (FOA) | 4 | `(1+1)²` | Binaural-Produktion, Lehre, FOA-Aufnahmen |
 | 2nd | 9 | `(2+1)²` | — |
-| 3rd | 16 | `(3+1)²` | Standard für HOA-Produktionen und mittlere Arrays |
+| 3rd | 16 | `(3+1)²` | Fallback und typische Abgabe-Ordnung; genügt für mittlere Arrays |
 | 5th | 36 | `(5+1)²` | Grosse Arrays, hohe Richtungsauflösung |
-| 7th | 64 | `(7+1)²` | Wissenschaftliche Referenz, max. Auflösung |
+| 7th | 64 | `(7+1)²` | Empfohlene Arbeitsordnung, wenn die CPU es erlaubt; wissenschaftliche Referenz |
+
+**Arbeitsregel:** In der höchsten Ordnung produzieren, die die CPU deines Rechners schafft (idealerweise 7th). Ein Master in höherer Ordnung lässt sich jederzeit für ein bestimmtes System oder eine Plattform auf 3rd oder 1st Order reduzieren; eine Session in niedriger Ordnung lässt sich nie aufwerten. Siehe [Welche Ambisonics-Ordnung brauche ich?](/de/post/hoa-ordnung-wahl-praxis/).
 
 ---
 
@@ -674,6 +676,9 @@ Bei unregelmässigen Lautsprecher-Layouts (nicht sphärisch, asymmetrisch) biete
 ## Weiterführende Ressourcen
 
 <div class="wf-resources">
+  <a class="wf-resource-link" href="/de/post/getting-started-icst-plugins-reaper/">Erste Session<strong>Deine erste funktionierende ICST-Session in REAPER</strong></a>
+  <a class="wf-resource-link" href="/de/post/hoa-ordnung-wahl-praxis/">Welche Ordnung?<strong>FOA, HOA3 oder HOA7: Kanäle, CPU, Lautsprecher</strong></a>
+  <a class="wf-resource-link" href="/de/post/xyz-vs-aed-koordinatensysteme/">XYZ und AED<strong>Koordinatensysteme und die ICST-Azimut-Konvention</strong></a>
   <a class="wf-resource-link" href="/de/icst-ambisonics-plugins/17_best_practices/">Best Practices<strong>Setup-Regeln, Routing, Monitoring, Export</strong></a>
   <a class="wf-resource-link" href="/de/learn/ambisonics-formats/">Ambisonics-Formate<strong>A-Format · B-Format · ambiX · FuMa · ACN/SN3D</strong></a>
   <a class="wf-resource-link" href="/de/icst-ambisonics-plugins/12_render_bformat/">B-Format rendern<strong>Export-Guide für REAPER</strong></a>

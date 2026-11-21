@@ -245,7 +245,11 @@ Beide schliessen sich nicht aus: Manche Workflows produzieren Ambisonics für di
 <a id="einstieg-am-icst"></a>
 ## 9. Einstieg am ICST
 
+- Deine erste funktionierende Session: [Erste Session in REAPER](/de/post/getting-started-icst-plugins-reaper/)
 - Für Einsteiger:innen: [Quick Start](/de/icst-ambisonics-plugins/04_quick_start/)
+- Ordnung wählen: [Welche Ambisonics-Ordnung brauche ich?](/de/post/hoa-ordnung-wahl-praxis/)
+- Positionen verstehen: [Koordinatensysteme XYZ und AED](/de/post/xyz-vs-aed-koordinatensysteme/)
+- Begriffe nachschlagen im [Glossar](/de/ambisonics-101/glossary/)
 - Vor dem Setup Formate klären: [Ambisonics-Formate erklärt](/de/learn/ambisonics-formats/)
 - Starte mit den [ICST Ambisonics Plugins](/icst-ambisonics-plugins/) für DAW-Workflows.
 - Nutze die [ICST Ambisonics Tools](/icst-ambisonics-tools/) für Max/MSP-Workflows.
