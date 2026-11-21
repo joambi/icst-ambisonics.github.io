@@ -55,6 +55,15 @@ docs_nav_group: "Komponieren & Tools"
 
 ---
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**Auf einen Blick**
+
+- **Du brauchst:** REAPER 6 oder neuer, `ICST AmbiEncoder_64` auf der Zielspur und beide Script-Dateien im selben Ordner; Python 3 nur für die Live-OSC-Vorschau.
+- **Du lernst:** Bewegungsformen zuweisen und im Figure Editor bearbeiten, räumliche Parameter, Zeitkurve, Palindrome und Tempo-Sync einstellen, live per OSC vorhören und das Ergebnis als REAPER-Automation schreiben.
+
+</div>
+
 ## 1. Voraussetzungen
 
 Vor dem Start werden folgende Komponenten benötigt:

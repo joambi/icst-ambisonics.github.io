@@ -23,6 +23,15 @@ The **Animator** is the choreography timeline of the **Multi-AmbiEncoder_64**: i
 
 > **Tested with** REAPER v7.74 – v7.82, macOS arm64. Windows has not been tested with this version; shortcuts there use Ctrl instead of ⌘. Some GIFs still show earlier builds. What's new in this version: see [Release notes](#release-notes).
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**At a glance**
+
+- **You need:** the Multi-AmbiEncoder_64 from ICST Ambisonics Plugins 4.0 in REAPER.
+- **You will learn:** build a first movement, work with movement and action clips (move, rotate, stretch, jitter), shape timing with speed curve, repetitions and palindrome, try the recipes, and save and load scenes.
+
+</div>
+
 ## Quick start: your first movement
 
 Requirement: at least **one group** with sources is set up in the Multi-AmbiEncoder_64. The AmbiEncoder Solo has no Animator.

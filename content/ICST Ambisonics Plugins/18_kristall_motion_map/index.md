@@ -95,6 +95,15 @@ This is a short demo of a random Kristall by Eli Stine — rendered in binaural.
 
 ---
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**At a glance**
+
+- **You need:** REAPER 6 or later and `ICST AmbiEncoder_64` on the target track; Python 3 with `python-osc` only for the live OSC preview.
+- **You will learn:** install and start the script, read the interface (instance list, lattice preview, parameter panel, status bar), set up a first motion with a built-in preset, control it via OSC or MIDI, and import crystal structures.
+
+</div>
+
 ## 1. Requirements
 
 - **REAPER** v6 or later (v7 recommended)

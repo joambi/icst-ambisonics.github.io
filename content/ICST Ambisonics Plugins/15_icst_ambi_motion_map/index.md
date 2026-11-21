@@ -55,6 +55,15 @@ docs_nav_group: "Composing & tools"
 
 ---
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**At a glance**
+
+- **You need:** REAPER 6 or later, `ICST AmbiEncoder_64` on the target track, and both script files in the same folder; Python 3 only for the live OSC preview.
+- **You will learn:** assign motion shapes and edit them in the Figure Editor, set spatial parameters, time curve, palindrome and tempo sync, preview live over OSC, and write the result as REAPER automation.
+
+</div>
+
 ## 1. Requirements
 
 Before you start, make sure you have:

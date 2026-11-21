@@ -95,6 +95,15 @@ Dies ist ein kurzes Demobeispiel eines Random-Kristalls von Eli Stine — binaur
 
 ---
 
+<div class="learn-box" style="border:1px solid var(--border-color,#8886);border-left:4px solid #4a8fe0;border-radius:8px;padding:.4rem 1.4rem;margin:1.6rem 0">
+
+**Auf einen Blick**
+
+- **Du brauchst:** REAPER 6 oder neuer und `ICST AmbiEncoder_64` auf der Zielspur; Python 3 mit `python-osc` nur für die Live-OSC-Vorschau.
+- **Du lernst:** das Script installieren und starten, die Oberfläche lesen (Instanzliste, Gitter-Vorschau, Parameter-Panel, Statusleiste), mit einem eingebauten Preset eine erste Bewegung aufsetzen, sie per OSC oder MIDI steuern und Kristallstrukturen importieren.
+
+</div>
+
 ## 1. Voraussetzungen
 
 - **REAPER** v6 oder neuer (v7 empfohlen)
