@@ -8,6 +8,12 @@ languageCode: de
 
 Womit möchtest du beginnen? Wähle deinen Einstieg.
 
+<form class="icst-startsearch" action="/de/search/" method="get" role="search" style="display:flex;gap:.6rem;margin:1.2rem 0 .4rem">
+  <input type="search" name="q" placeholder="Website durchsuchen…" aria-label="Website durchsuchen…" style="flex:1;padding:.7rem 1rem;font-size:1.6rem;border:1px solid var(--border-color,#8886);border-radius:8px;background:transparent;color:inherit">
+  <button type="submit" style="padding:.7rem 1.4rem;font-size:1.6rem;border:1px solid var(--border-color,#8886);border-radius:8px;background:transparent;color:inherit;cursor:pointer">Suchen</button>
+</form>
+<p style="margin:0 0 2rem;font-size:1.3rem;opacity:.85">Beliebt: <a href="/de/search/?q=ambiX" style="display:inline-block;padding:.2rem .7rem;margin:.2rem .3rem .2rem 0;border:1px solid var(--border-color,#8885);border-radius:999px;font-size:1.3rem;text-decoration:none">ambiX</a><a href="/de/search/?q=Decoder" style="display:inline-block;padding:.2rem .7rem;margin:.2rem .3rem .2rem 0;border:1px solid var(--border-color,#8885);border-radius:999px;font-size:1.3rem;text-decoration:none">Decoder</a><a href="/de/search/?q=HOA%20Ordnung" style="display:inline-block;padding:.2rem .7rem;margin:.2rem .3rem .2rem 0;border:1px solid var(--border-color,#8885);border-radius:999px;font-size:1.3rem;text-decoration:none">HOA-Ordnung</a><a href="/de/search/?q=OSC" style="display:inline-block;padding:.2rem .7rem;margin:.2rem .3rem .2rem 0;border:1px solid var(--border-color,#8885);border-radius:999px;font-size:1.3rem;text-decoration:none">OSC</a><a href="/de/search/?q=binaural" style="display:inline-block;padding:.2rem .7rem;margin:.2rem .3rem .2rem 0;border:1px solid var(--border-color,#8885);border-radius:999px;font-size:1.3rem;text-decoration:none">Binaural</a></p>
+
 <div class="icst-pillars" style="grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin-bottom: 2rem;">
   <a class="icst-pillar icst-pillar--plugins" href="/de/icst-ambisonics-plugins/">
     <span class="icst-pillar__icon">🎛️</span>
