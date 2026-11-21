@@ -17,7 +17,7 @@ The **[ICST](https://www.zhdk.ch/forschung/icst)** is a research and artistic in
 
 Two open-source toolsets have emerged from ICST's research:
 
-**[ICST Ambisonics Plugins](/icst-ambisonics-plugins/)** — Free VST3/AU/LV2 plugin suite for Higher Order Ambisonics in REAPER. Encoder, decoder, multi-decoder, monitor, and animator. Currently at [v3.2](https://github.com/schweizerweb/icst-ambisonics-plugins/releases). Developed by Johannes Schütt, [Christian Schweizer](https://github.com/schweizerweb), and Axel Kolb.
+**[ICST Ambisonics Plugins](/icst-ambisonics-plugins/)** — Free VST3/AU/LV2 plugin suite for Higher Order Ambisonics in REAPER. Encoder, decoder, multi-decoder, monitor, and animator. Currently at [v4.0](https://github.com/schweizerweb/icst-ambisonics-plugins/releases). Developed by Johannes Schütt, [Christian Schweizer](https://github.com/schweizerweb), and Axel Kolb.
 
 **ICST Ambisonics Tools** — Max/MSP externals for live spatialisation, algorithmic sound design, and OSC integration. Available via ZHdK and running natively in Max 8.
 

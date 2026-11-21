@@ -22,9 +22,9 @@ tool: ["AmbiEncoder", "Lua"]
 
 Level: Intermediate | **Audience:** Reaper power user, Performance artist.
 
-## 📃 Benutzer-Dokumentation
+## 📃 User documentation
 **Script:** `ICST_AmbiEncoder_64_CircleSelected_Presets.lua`  
-**Funktion:** Punkte des ICST AmbiEncoder_64 Plugins grafisch auswählen, im Kreis anordnen, bewegen (Rotation/RandomWalk) und als Preset speichern/laden.
+**Function:** Select points of the ICST AmbiEncoder_64 plugin graphically, arrange them in a circle, move them (rotation/random walk) and save/load them as presets.
 
 <video autoplay muted loop playsinline preload="metadata" poster="Circle_Selected-poster.jpg" aria-label="circleselected" style="max-width:100%;height:auto"><source src="Circle_Selected.mp4" type="video/mp4"></video>
 
@@ -32,105 +32,105 @@ Level: Intermediate | **Audience:** Reaper power user, Performance artist.
 
 ## 🚀 Installation
 
-1. **Datei speichern**  
-   Lege die Datei `ICST_AmbiEncoder_64_CircleSelected_Presets.lua` in deinen REAPER-Scripts-Ordner:  
+1. **Save the file**  
+   Put the file `ICST_AmbiEncoder_64_CircleSelected_Presets.lua` into your REAPER scripts folder:  
    ```
    /Users/<name>/Library/Application Support/REAPER/Scripts/ICST_AMBI/
    ```
 
-2. **In REAPER registrieren**  
-   - Öffne REAPER → `Actions` → `Show Action List...`  
-   - Klick auf `ReaScript: Load...`  
-   - Wähle die Datei und bestätige.  
-   - Das Script ist nun als Action verfügbar.
+2. **Register in REAPER**  
+   - Open REAPER → `Actions` → `Show Action List...`  
+   - Click `ReaScript: Load...`  
+   - Select the file and confirm.  
+   - The script is now available as an action.
 
-3. **AmbiEncoder laden**  
-   - Lege auf eine Spur das Plugin `AmbiEncoder_64 (ICST)` und markiere die Spur.  
-   - Starte das Script über die Action List.
+3. **Load the AmbiEncoder**  
+   - Put the plugin `AmbiEncoder_64 (ICST)` on a track and select the track.  
+   - Start the script from the Action List.
 
 ---
 
-## 🖥️ GUI-Elemente & Bedienung
+## 🖥️ GUI elements & operation
 
-### ✅ Punkte auswählen
-- Alle 64 Punkte erscheinen als Checkboxen.
-- Aktiviere nur die Punkte, die du steuern willst.
+### ✅ Select points
+- All 64 points appear as checkboxes.
+- Enable only the points you want to control.
 - Buttons:
-  - **Alle auswählen**
-  - **Alle abwählen**
+  - **Select all**
+  - **Deselect all**
 
 ---
 
-### 🔄 Kreis-Offsets setzen
-- **Kreis-Radius:** Abstand der Punkte vom Zentrum.
-- **Punkte-Anzahl:** Anzahl der Punkte auf dem Kreis.
-- **Startwinkel:** Dreht den Kreis.
-- **Uhrzeigersinn:** Reihenfolge invertieren.
-- **Winkel-Abstand:** Skaliert den Winkel zwischen den Punkten.
-- **Abstandszuwachs:** Jeder folgende Punkt kann weiter außen liegen.
+### 🔄 Set circle offsets
+- **Circle radius:** distance of the points from the centre.
+- **Number of points:** number of points on the circle.
+- **Start angle:** rotates the circle.
+- **Clockwise:** reverses the order.
+- **Angle spacing:** scales the angle between the points.
+- **Distance increment:** each following point can sit further out.
 
-**Apply Kreis:** 👉 Überträgt die Parameter auf die aktivierten Punkte.
+**Apply circle:** 👉 applies the parameters to the enabled points.
 
 ---
 
-### 💾 Preset-Verwaltung
-- **Preset-Name:** Eingabefeld für den Namen.
-- **Preset speichern:** Speichert die aktuellen Kreis-Parameter in
+### 💾 Preset management
+- **Preset name:** input field for the name.
+- **Save preset:** saves the current circle parameters in
   `REAPER/ResourcePath/AmbiPresets/`.
-- **Preset wählen:** Dropdown mit allen vorhandenen Presets.
-- **Preset laden:** Übernimmt gespeicherte Werte.
+- **Select preset:** dropdown with all existing presets.
+- **Load preset:** applies the saved values.
 
 ---
 
-### 📤 Punkte Export/Import
-- **Punkte exportieren:** Speichert die aktuelle Auswahl in `points_export.txt` im REAPER-ResourcePath.
-- **Punkte importieren:** Lädt eine gespeicherte Auswahl per Dialog.
+### 📤 Export/import points
+- **Export points:** saves the current selection to `points_export.txt` in the REAPER resource path.
+- **Import points:** loads a saved selection via a dialog.
 
 ---
 
-### ⚙️ Bewegung
-- **Rotationsgeschw.:** Umdrehungen pro Sekunde.
-- **RandomWalk Speed:** Schrittweite der Zufallsbewegung.
-- **Random Range:** Maximaler Bewegungsradius.
-- **Z-Achse:** Punkte auch in Z bewegen.
-- **Start Bewegung / Stop Bewegung:** Startet oder stoppt die Animation.
+### ⚙️ Movement
+- **Rotation speed:** revolutions per second.
+- **RandomWalk speed:** step size of the random movement.
+- **Random range:** maximum movement radius.
+- **Z axis:** also move points in Z.
+- **Start movement / Stop movement:** starts or stops the animation.
 
-> Beim Start werden die aktuellen Positionen als Basis übernommen.
-
----
-
-## 🎨 Visualisierung
-- Im Fenster siehst du eine Echtzeit-Darstellung:
-  - Weiße Punkte = aktuelle Positionen der ausgewählten Punkte.
-  - Linien verbinden die Punkte in Reihenfolge.
-  - Blauer Kreis = maximaler Bewegungsradius (Random Range).
+> On start, the current positions are taken as the base.
 
 ---
 
-## 📁 Speicherorte
-- **Preset-Dateien:** `REAPER/ResourcePath/AmbiPresets/<presetname>.txt`
-- **Exportierte Punkt-Sets:** `REAPER/ResourcePath/points_export.txt`
+## 🎨 Visualisation
+- The window shows a real-time display:
+  - White dots = current positions of the selected points.
+  - Lines connect the points in order.
+  - Blue circle = maximum movement radius (random range).
 
 ---
 
-## ✨ Tipps & Hinweise
-- Wähle nur die Punkte aus, die du brauchst → übersichtlicher und ressourcenschonend.
-- Speichere verschiedene Presets (kleiner Radius, großer Radius, etc.).
-- Preset-Dateien sind einfache Textdateien und können auch extern editiert werden.
+## 📁 Storage locations
+- **Preset files:** `REAPER/ResourcePath/AmbiPresets/<presetname>.txt`
+- **Exported point sets:** `REAPER/ResourcePath/points_export.txt`
 
 ---
 
-## 🔧 Anforderungen
-- REAPER mit aktivem `ICST AmbiEncoder_64 (VST3)`
-- ReaPack mit ReaImGui installiert:
+## ✨ Tips & notes
+- Select only the points you need → clearer and lighter on resources.
+- Save different presets (small radius, large radius, etc.).
+- Preset files are plain text files and can also be edited externally.
+
+---
+
+## 🔧 Requirements
+- REAPER with an active `ICST AmbiEncoder_64 (VST3)`
+- ReaPack with ReaImGui installed:
   - `Extensions → ReaPack → Browse Packages → ReaImGui`
-- REAPER 6.x oder höher empfohlen.
+- REAPER 6.x or higher recommended.
 
 ---
 
-## 🏷️ Version & Autor
-- **Version:** Juli 2025
-- **Autor:** Johannes Schütt &  Reaper-Assistent ✨
-- **Features:** Presets, Export/Import, Visualisierung, auswählbare Punkte
+## 🏷️ Version & author
+- **Version:** July 2025
+- **Author:** Johannes Schütt & Reaper assistant ✨
+- **Features:** presets, export/import, visualisation, selectable points
 
 

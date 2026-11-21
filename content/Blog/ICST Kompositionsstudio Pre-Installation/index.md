@@ -29,6 +29,9 @@ Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 - [Login Items & Extensions for DriverKit](https://rme-audio.de/de_login-items-extensions-driverkit-macos-sequoia.html) ![macOS Privacy & Security Guide](https://rme-audio.de/files/uploads/Support/macOS-Privacy-Security-Sequoia.jpg)
 	#### **Troubleshooting**
 - Watch the [Video](https://youtu.be/Ilkwtb2MKrM) starting at 2:36 for assistance.
+#### **Troubleshooting**
+- For help, watch the [video](https://youtu.be/Ilkwtb2MKrM) from minute 2:36.
+
 #### RME MadiFace sync
 ![RME-MadiFace](MadiFace.png)
 

@@ -18,7 +18,7 @@ Das [ICST](https://www.zhdk.ch/forschung/icst) ist ein Forschungs- und Kunstinst
 
 Aus der Forschung am ICST sind zwei Open-Source-Werkzeuge hervorgegangen:
 
-**[ICST Ambisonics Plugins](/de/icst-ambisonics-plugins/)** — Kostenlose VST3/AU/LV2-Plugin-Suite für Higher Order Ambisonics in REAPER. Encoder, Decoder, Multi-Decoder, Monitor und Animator. Aktuell in [v3.2](https://github.com/schweizerweb/icst-ambisonics-plugins/releases). Entwickelt von Johannes Schütt, [Christian Schweizer](https://github.com/schweizerweb/icst-ambisonics-plugins) und Axel Kolb.
+**[ICST Ambisonics Plugins](/de/icst-ambisonics-plugins/)** — Kostenlose VST3/AU/LV2-Plugin-Suite für Higher Order Ambisonics in REAPER. Encoder, Decoder, Multi-Decoder, Monitor und Animator. Aktuell in [v4.0](https://github.com/schweizerweb/icst-ambisonics-plugins/releases). Entwickelt von Johannes Schütt, [Christian Schweizer](https://github.com/schweizerweb) und Axel Kolb.
 
 **ICST Ambisonics Tools** — Max/MSP-Externals für Live-Spatialisation, algorithmische Klanggestaltung und OSC-Integration. Über die ZHdK verfügbar und nativ lauffähig in Max 8.
 
@@ -39,7 +39,7 @@ Ich bin Johannes Schütt und arbeite seit über 30 Jahren mit Ambisonics. Diese 
 Institute for Computer Music and Sound Technology (ICST)  
 Zürcher Hochschule der Künste (ZHdK)
 
-Die Website wird mit [Hugo](https://gohugo.io/) und dem [Anatole](https://themes.gohugo.io/themes/anatole/)-Theme betrieben, auf GitHub Pages gehostet und von Johannes Schütt am ICST/ZHdK betreut.
+Die Website wird mit [Hugo](https://gohugo.io/) und dem [Anatole](https://themes.gohugo.io/themes/anatole/)-Theme betrieben, auf [GitHub Pages](https://pages.github.com/) gehostet und von Johannes Schütt am ICST/ZHdK betreut.
 
 ---
 
