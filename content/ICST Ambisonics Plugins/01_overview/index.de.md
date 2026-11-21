@@ -56,4 +56,4 @@ Formate: `VST3`, `AU (Component)` und `LV2`. LV2 ist derzeit experimentell und s
 
 ## Entwicklung
 
-Entwicklerteam: Christian Schweizer, Johannes Schütt, Martin Neukom. Zusätzliche Produktionsunterstützung: Axel Kolb (Video Editing).
+Entwicklerteam: Christian Schweizer, Johannes Schütt, Martin Neukom. Zusätzliche Produktionsunterstützung: Axel Kolb (Video Creator und Beta Tester).

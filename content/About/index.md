@@ -17,7 +17,7 @@ The **[ICST](https://www.zhdk.ch/forschung/icst)** is a research and artistic in
 
 Two open-source toolsets have emerged from ICST's research:
 
-**[ICST Ambisonics Plugins](/icst-ambisonics-plugins/)** — Free VST3/AU/LV2 plugin suite for Higher Order Ambisonics in REAPER. Encoder, decoder, multi-decoder, monitor, and animator. Currently at [v4.0](https://github.com/schweizerweb/icst-ambisonics-plugins/releases). Developed by Johannes Schütt, [Christian Schweizer](https://github.com/schweizerweb), and Axel Kolb.
+**[ICST Ambisonics Plugins](/icst-ambisonics-plugins/)** — Free VST3/AU/LV2 plugin suite for Higher Order Ambisonics in REAPER. Encoder, decoder, multi-decoder, monitor, and animator. Currently at [v4.0](https://github.com/schweizerweb/icst-ambisonics-plugins/releases). Developed by Johannes Schütt and [Christian Schweizer](https://github.com/schweizerweb). Axel Kolb: video creator and beta tester.
 
 **ICST Ambisonics Tools** — Max/MSP externals for live spatialisation, algorithmic sound design, and OSC integration. Available via ZHdK and running natively in Max 8.
 
@@ -30,6 +30,8 @@ Both toolsets are free and open source. Students and visiting artists work with 
 Ambisonics.ch documents tools, workflows, and artistic practice around Ambisonics and spatial audio at the ICST Composition Studio. The site brings plugin documentation, compositional thinking, residency work, and listening practice together in one place.
 
 I am Johannes Schütt, and I have been working with Ambisonics for over 30 years. This website grew out of shared studio practice with residents, students, and the ICST team, and is meant to offer others an accessible, motivating entry point into this field.
+
+Parts of the documentation (drafts of texts, diagrams, explainer videos and translations) were created with the help of the AI assistant Claude (Anthropic). Content, wording and technical statements are edited and checked by Johannes Schütt.
 
 ---
 
