@@ -111,3 +111,6 @@ button.navbar-burger:focus-visible {
 /* Tools dropdown: small group labels */
 .optionswitch__group{display:block;font-size:.68em;letter-spacing:.08em;text-transform:uppercase;opacity:.55;padding:.55rem 0 .15rem;text-align:inherit}
 .optionswitch__list-item:first-child .optionswitch__group{padding-top:.2rem}
+
+/* home-card titles are h3 (heading order h2 > h3); keep the former h4 look */
+.post__content .home-card h3{margin:0 0 .5rem;line-height:1.3;font-size:1em;font-weight:700;letter-spacing:normal}
