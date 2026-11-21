@@ -105,7 +105,7 @@ Kurzreferenz zu den Begriffen aus [Ambisonics 101](/de/ambisonics-101/).
 - <a id="gl-delay-compensation"></a>**Laufzeitkompensation** — Der Decoder verzögert die näheren Lautsprecher, damit alle Signale gleichzeitig an der Hörposition ankommen.
   → [Skalierung und Laufzeitkompensation](/de/post/decoder-skalierung-laufzeitkompensation/)
 
-- <a id="gl-uhj"></a>**UHJ** — Stereo-kompatible Kodierung von Ambisonics (2 oder 3 Kanäle) aus den späten 1970ern, genutzt für Veröffentlichungen, die auf normalen Stereoanlagen laufen mussten.
+- <a id="gl-uhj"></a>**UHJ** — Stereo-kompatible Kodierung von Ambisonics (2 bis 4 Kanäle, meist 2) aus den 1970ern, genutzt für Veröffentlichungen, die auf normalen Stereoanlagen laufen mussten.
   → [Zeitleiste](/de/blog/geschichte-von-ambisonics-foa-und-hoa/)
 
 - <a id="gl-scene-based"></a>**Szenenbasiertes und kanalbasiertes Audio** — Ambisonics speichert das Schallfeld (die Szene) unabhängig vom Lautsprecher-Layout und dekodiert es für jedes System. Kanalbasierte Formate speichern ein Signal pro Lautsprecher.

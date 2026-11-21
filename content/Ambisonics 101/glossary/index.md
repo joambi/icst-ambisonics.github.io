@@ -104,7 +104,7 @@ Quick reference for the terms used in [Ambisonics 101](/ambisonics-101/).
 - <a id="gl-delay-compensation"></a>**Delay compensation** — The decoder delays the nearer loudspeakers so that all signals arrive at the listening position at the same time.
   → [Scaling and delay compensation](/post/decoder-skalierung-laufzeitkompensation/)
 
-- <a id="gl-uhj"></a>**UHJ** — Stereo-compatible encoding of Ambisonics (2 or 3 channels) from the late 1970s, used for releases that had to play on ordinary stereo systems.
+- <a id="gl-uhj"></a>**UHJ** — Stereo-compatible encoding of Ambisonics (2 to 4 channels, usually 2) from the 1970s, used for releases that had to play on ordinary stereo systems.
   → [History timeline](/blog/geschichte-von-ambisonics-foa-und-hoa/)
 
 - <a id="gl-scene-based"></a>**Scene-based and channel-based audio** — Ambisonics stores the sound field (the scene) independent of the loudspeaker layout and decodes it for each system. Channel-based formats store one signal per loudspeaker.
