@@ -119,7 +119,6 @@ tags: []
 - [Ambisonics Symposium / Xchange](https://ambisonics-symposium.org/)
 - [ambiX Format Specification (ACN/SN3D)](https://iem-projects.github.io/ambix/apiref/format.html)
 - [Spatial Audio Framework (SAF)](https://github.com/leomccormack/Spatial_Audio_Framework)
-- [OpenAIR Library (University of York)](https://www.openair.hosted.york.ac.uk/)
 - [ARTE: Ambisonics Recordings of Typical Environments](https://zenodo.org/records/2261633)
 - [MAIR: Microphone Array Impulse Response Library (University of Huddersfield, first-order Ambisonics and surround)](https://zenodo.org/records/2639677)
 - [RØDE SoundField Library](https://library.soundfield.com/)

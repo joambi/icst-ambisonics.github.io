@@ -721,5 +721,5 @@ Bei unregelmässigen Lautsprecher-Layouts (nicht sphärisch, asymmetrisch) biete
   <a class="wf-resource-link" href="/de/icst-ambisonics-plugins/">ICST Plugins Docs<strong>Plugin-Dokumentation für REAPER und Max/MSP</strong></a>
   <a class="wf-resource-link" href="https://plugins.iem.at/">IEM Plugin Suite<strong>AllRADecoder · BinauralDecoder · weitere HOA-Tools</strong></a>
   <a class="wf-resource-link" href="https://cabbageaudio.com/">Cabbage Audio<strong>Csound als VST3/AU für algorithmische HOA-Komposition</strong></a>
-  <a class="wf-resource-link" href="https://www.openair.hosted.york.ac.uk/">OpenAIR<strong>Offene Bibliothek mit Raumimpulsantworten (University of York)</strong></a>
+  <a class="wf-resource-link" href="https://zenodo.org/records/2261633">ARTE-Datenbank<strong>Ambisonics-Aufnahmen typischer Umgebungen (Zenodo)</strong></a>
 </div>
