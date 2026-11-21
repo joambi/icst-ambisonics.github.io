@@ -524,5 +524,5 @@ For irregular speaker layouts (non-spherical, asymmetric), the **AllRADecoder** 
   <a class="wf-resource-link" href="/icst-ambisonics-plugins/">ICST Plugins Docs<strong>Plugin documentation for REAPER and Max/MSP</strong></a>
   <a class="wf-resource-link" href="https://plugins.iem.at/">IEM Plugin Suite<strong>AllRADecoder · BinauralDecoder · further HOA tools</strong></a>
   <a class="wf-resource-link" href="https://cabbageaudio.com/">Cabbage Audio<strong>Csound as VST3/AU for algorithmic HOA composition</strong></a>
-  <a class="wf-resource-link" href="https://www.openairlib.net/">OpenAIR / SOFA-HRTF<strong>HRTF files for binaural renderers</strong></a>
+  <a class="wf-resource-link" href="https://www.openair.hosted.york.ac.uk/">OpenAIR<strong>Open library of room impulse responses (University of York)</strong></a>
 </div>
