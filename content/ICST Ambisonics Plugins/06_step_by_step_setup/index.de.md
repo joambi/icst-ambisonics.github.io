@@ -130,7 +130,7 @@ Routing:
 #### 7. Bewegungen in Reaper aufnehmen
 
 Bewegungen im MonoEncoder aufnehmen:
-![rec_xyz](rec_xyz.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="rec_xyz" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/rec_xyz.mp4"></video>
 
 Gespeicherte Bewegung abspielen:
 ![play_xyt](play_xyz.gif)
@@ -192,9 +192,9 @@ Zum Verständnis der Multi-Encoder-Logik:
 - Drücke **Play** (Leertaste) und bewege **Src_1** im Multi-Encoder-Radar.
 - Wiederhole das für weitere Quellen.
 
-![MultiEnc_01_write](MultiEnc_01_write.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="MultiEnc_01_write" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_01_write.mp4"></video>
 Beispiel mit **Src_3**:
-![Encoder_move_03](Move_03.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Encoder_move_03" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/Move_03.mp4"></video>
 
 6. **XYZ-Kurven manuell bearbeiten**
 
@@ -202,7 +202,7 @@ Beispiel mit **Src_3**:
 - Halte **Shift** und klicke auf eine Kurve, um einen neuen Punkt zu erstellen.
 - Verschiebe den Punkt, um XYZ-Koordinaten anzupassen.
 
-![Manuel_edit](MultiEnc_Manuell_edit.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Manuel_edit" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_Manuell_edit.mp4"></video>
 
 7. **Aufgenommene Ambisonics-Szene abspielen**
 
@@ -224,11 +224,11 @@ Beispiel mit **Src_3**:
   - **Touch (Berühren):** schreibt nur während Berührung
   - **Write (Schreiben):** überschreibt vorhandene Automation
 
-![Rec_GP](Rec_GP.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Rec_GP" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/Rec_GP.mp4"></video>
 
 10. **Wiedergabe und Bewertung**
 
-![Play_GP](play_GP.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Play_GP" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/play_GP.mp4"></video>
 
 - Höre die finale Gruppenbewegung über **Lautsprecher (Decoder)** oder **Kopfhörer (binauraler Decoder)**.
 

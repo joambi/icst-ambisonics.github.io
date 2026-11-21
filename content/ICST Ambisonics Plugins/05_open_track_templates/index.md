@@ -46,7 +46,7 @@ Two groups of track templates are installed to `Users/Shared/AmbiPluginsTemplate
 2. Select **Insert track from template**.
 3. Navigate to the desired template group (**ICST AmbiPlugins** or **ICST AmbiPlugins 3rdParty**) and choose the template.
 
-![Track_template](Track_templates.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Track_template" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/05_open_track_templates/Track_templates.mp4"></video>
 
 After inserting, verify the routing between the new tracks and the existing B-format master to ensure a valid signal flow before adding audio.
 

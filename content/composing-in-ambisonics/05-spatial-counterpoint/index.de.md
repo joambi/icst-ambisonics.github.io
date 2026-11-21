@@ -99,7 +99,7 @@ Ein zweites Modell ist ein **räumlicher Kanon**: Ein identisches Klangmaterial 
 So entsteht eine räumliche Imitationsstruktur: Das Material bleibt verwandt, die Stimmen unterscheiden sich aber durch **Zeit**, **Position**, **Bewegungspfad** und **Höhenlage**. Besonders interessant wird das mit **Group Animation** im MultiEncoder: Der Gruppenpunkt bewegt sich, während die internen Relationen der Quellen erhalten bleiben oder moduliert werden.
 
 <figure class="big">
-  <img src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_01.gif" alt="MultiEncoder mit mehreren Quellen und Gruppenbewegung" loading="lazy" />
+  <video autoplay muted loop playsinline preload="metadata" aria-label="MultiEncoder mit mehreren Quellen und Gruppenbewegung" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_01.mp4"></video>
   <figcaption><strong>Räumlicher Kanon im MultiEncoder.</strong> Mehrere Quellen lassen sich als kontrapunktische Gruppe organisieren und gemeinsam oder relativ zueinander durch das Klangfeld führen.</figcaption>
 </figure>
 

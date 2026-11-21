@@ -258,7 +258,7 @@ In der GUI-Markerliste repräsentiert jede Zeile einen Marker. Linke Seite einer
 
 `S` und `E` definieren zusammen ein Bewegungssegment — von der Quellposition bei `S` zur Position bei `E`.
 
-![S/E-Selektion aktiv mit Konsolenausgabe](/motion-markers/se-selection-console.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="S/E-Selektion aktiv mit Konsolenausgabe" style="width:100%;height:auto;border-radius:6px" src="/motion-markers/se-selection-console.mp4"></video>
 
 ## Cues per CSV importieren
 
@@ -300,7 +300,7 @@ Sendet das aktuell gewählte `S → E`-Paar per OSC — die Quelle bewegt sich i
 
 Während der Wiedergabe bewegt sich der REAPER-Edit-Cursor in Echtzeit über den Zeitbereich, und oben rechts erscheint ein `PREVIEW`-Indikator. `Stop preview` klicken, um Cursor und OSC-Bewegung gemeinsam zu stoppen.
 
-![Send-pair-Workflow mit Konsolenausgabe nach der Bewegung](/motion-markers/opt_workflow-03.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Send-pair-Workflow mit Konsolenausgabe nach der Bewegung" style="width:100%;height:auto;border-radius:6px" src="/motion-markers/workflow-03.mp4"></video>
 
 ### Send series
 

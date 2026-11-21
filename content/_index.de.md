@@ -33,7 +33,7 @@ Neu dabei? Folge dem geführten Startpfad. Schon im Thema? Spring direkt in die 
 
 <div class="home-hero-img">
 
-![Plugin-Übersicht](/images/Home_gif.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Plugin-Übersicht" style="width:100%;height:auto;border-radius:6px" src="/images/Home_gif.mp4"></video>
 
 </div>
 
@@ -86,7 +86,7 @@ Neu in v4.0.0: [Was ist neu](/icst-ambisonics-plugins/00_new/) · [GitHub Releas
   <div class="tool-card">
     <h4>🎛️ Ambisonics Plugins für REAPER</h4>
     <p>Enkodieren, dekodieren und räumlich mischen — direkt in der DAW. Die vollständige ICST-Suite: Encoder, Decoder, Monitor und mehr.</p>
-    <img src="/images/Home_gif.gif" alt="ICST Ambisonics Plugins in REAPER" loading="lazy" />
+    <video autoplay muted loop playsinline preload="metadata" aria-label="ICST Ambisonics Plugins in REAPER" style="width:100%;height:auto;border-radius:6px" src="/images/Home_gif.mp4"></video>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/01_overview/">Plugin-Übersicht</a>
       <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>

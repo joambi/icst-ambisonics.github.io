@@ -46,7 +46,7 @@ Zwei Gruppen von Spurvorlagen werden nach `Users/Shared/AmbiPluginsTemplatesTemp
 2. **Spur aus Vorlage einfügen** wählen.
 3. Zur gewünschten Vorlagengruppe (**ICST AmbiPlugins** oder **ICST AmbiPlugins 3rdParty**) navigieren und die Vorlage auswählen.
 
-![Track_template](Track_templates.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Track_template" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/05_open_track_templates/Track_templates.mp4"></video>
 
 Nach dem Einfügen das Routing zwischen den neuen Spuren und dem bestehenden B-Format-Master prüfen, bevor Audio hinzugefügt wird.
 

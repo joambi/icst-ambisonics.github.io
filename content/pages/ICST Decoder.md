@@ -94,7 +94,7 @@ Der Workflow in Reaper: schematisch dargestellt.
 	- Standart mässig öffnet sich der Decoder mit dem Stereo (90°) Setting. 
    ![](/icst-ambisonics-plugins/08_icst_decoder/Choose_Quadro.gif)
 2. Um ihr Lautsprecher-Setting zu finden, gehen Sie ins Decoder "Speaker settings“-Fenster, klicken Sie auf das "Zahnrad“ und dann auf „Speaker“, um die "Speaker settings" zu öffnen. Wählen Sie eines der vielen Standard-Settings oder geben Sie Ihre eigene Lautsprecherkonfiguration ein. (siehe next gif)
-   ![](/icst-ambisonics-plugins/08_icst_decoder/Speaker_Editing.gif)
+   <video autoplay muted loop playsinline preload="metadata" aria-label="" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/08_icst_decoder/Speaker_Editing.mp4"></video>
 
 3. Aktivieren und öffnen sie die "Filter" um jeden Lautsprecher separat zu filtern. (optional)
    ![](/icst-ambisonics-plugins/08_icst_decoder/CleanShot%202026-02-11%20at%2011.05.51@2x.png)

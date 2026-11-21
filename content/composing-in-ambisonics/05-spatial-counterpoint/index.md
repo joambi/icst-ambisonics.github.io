@@ -100,7 +100,7 @@ A second model is a **spatial canon**: identical sound material enters multiple 
 This creates a spatial imitation structure: the material stays related, but the voices differ through **time**, **position**, **movement path**, and **height**. The **Group Animation** feature in the MultiEncoder becomes especially interesting here — the group point moves while the internal relations of the sources are preserved or modulated.
 
 <figure class="big">
-  <img src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_01.gif" alt="MultiEncoder with multiple sources and group movement" loading="lazy" />
+  <video autoplay muted loop playsinline preload="metadata" aria-label="MultiEncoder with multiple sources and group movement" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/MultiEnc_01.mp4"></video>
   <figcaption><strong>Spatial canon in the MultiEncoder.</strong> Multiple sources can be organized as a contrapuntal group and guided through the sound field together or relative to one another.</figcaption>
 </figure>
 

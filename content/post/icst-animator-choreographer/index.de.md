@@ -113,7 +113,7 @@ Title: Tidal Canon.
 7. For the last 8 seconds they move straight back to their starting corners and rest.
 ```
 
-![Tidal Canon im Animator Choreographer: der aus der Beschreibung entworfene Plan mit Vorschau und Zeitleiste](/images/icst-animator-choreographer-tidal-canon-demo.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Tidal Canon im Animator Choreographer: der aus der Beschreibung entworfene Plan mit Vorschau und Zeitleiste" style="width:100%;height:auto;border-radius:6px" src="/images/icst-animator-choreographer-tidal-canon-demo.mp4"></video>
 
 *Abbildung: animiertes GIF (läuft automatisch, in Schleife). Der Plan „Tidal Canon“ nach **Draft**: Vorschau mit vier Stimmen, Seitenansicht und Zeitleiste.*
 

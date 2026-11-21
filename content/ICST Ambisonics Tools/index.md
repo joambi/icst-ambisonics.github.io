@@ -54,7 +54,7 @@ A collection of **MaxMSP externals** for **Ambisonics** surround sound processin
 
 Install **ICST Ambisonics Tools** in **Max 8 or Max 9** via the **Package Manager**:
 
-<img src="/icst-ambisonics-tools/Amb_Max.gif" alt="Installing the package in the Max Package Manager" style="display:block;width:100%;max-width:560px;height:auto;margin:1.2rem auto;border-radius:8px">
+<video autoplay muted loop playsinline preload="metadata" aria-label="Installing the package in the Max Package Manager" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-tools/Amb_Max.mp4"></video>
 
 More information and the download at [ZHdK](https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385).
 

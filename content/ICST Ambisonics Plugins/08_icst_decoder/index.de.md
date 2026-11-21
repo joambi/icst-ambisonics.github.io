@@ -123,7 +123,7 @@ Diese Reihenfolge ist wichtig: zuerst die Geometrie verlässlich machen, dann di
 6. Vor Probe, Aufnahme oder Export einen Lautsprechertest durchführen.
 
 ![Plugin hinzufügen](CleanShot%202026-02-10%20at%2017.54.52@2x.png)
-![Lautsprecher bearbeiten](Speaker_Editing.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Lautsprecher bearbeiten" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/08_icst_decoder/Speaker_Editing.mp4"></video>
 ![Ambisonics-Ordnung](CleanShot%202026-02-11%20at%2009.30.18@2x.png)
 
 ### Gewichtungsschema wählen

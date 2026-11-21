@@ -258,7 +258,7 @@ In the GUI marker list, each row represents one marker. Click the left side of a
 
 `S` and `E` together define one movement segment — from the source position at `S` to the position at `E`.
 
-![S/E selection active with console output visible](/motion-markers/se-selection-console.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="S/E selection active with console output visible" style="width:100%;height:auto;border-radius:6px" src="/motion-markers/se-selection-console.mp4"></video>
 
 ## Import cues from CSV
 
@@ -300,7 +300,7 @@ Sends the currently selected `S → E` pair over OSC — the source moves in the
 
 During playback, the REAPER edit cursor moves in real time across the time selection and a `PREVIEW` indicator appears top right. Click `Stop preview` to stop both the cursor and the OSC motion together.
 
-![Send pair workflow — console output after motion playback](/motion-markers/opt_workflow-03.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Send pair workflow — console output after motion playback" style="width:100%;height:auto;border-radius:6px" src="/motion-markers/workflow-03.mp4"></video>
 
 ### Send series
 

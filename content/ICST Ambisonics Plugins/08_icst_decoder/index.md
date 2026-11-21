@@ -123,7 +123,7 @@ That order matters. First make geometry reliable, then stabilise timing, then re
 6. Run a speaker test before rehearsal, recording, or export.
 
 ![Add plugin](CleanShot%202026-02-10%20at%2017.54.52@2x.png)
-![Speaker editing](Speaker_Editing.gif)
+<video autoplay muted loop playsinline preload="metadata" aria-label="Speaker editing" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/08_icst_decoder/Speaker_Editing.mp4"></video>
 ![Ambisonics order](CleanShot%202026-02-11%20at%2009.30.18@2x.png)
 
 ### Choosing a weighting scheme
