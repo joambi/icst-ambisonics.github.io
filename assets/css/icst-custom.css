@@ -107,3 +107,7 @@ button.navbar-burger:focus-visible {
 .docs__nav-group{list-style:none;font-size:.95rem;letter-spacing:.1em;text-transform:uppercase;opacity:.6;margin:1.1rem 0 .3rem}
 .docs__nav-group:first-child{margin-top:.2rem}
 .docs-index__group{font-size:1.6rem;margin:1.8rem 0 .7rem}
+
+/* Tools dropdown: small group labels */
+.optionswitch__group{display:block;font-size:.68em;letter-spacing:.08em;text-transform:uppercase;opacity:.55;padding:.55rem 0 .15rem;text-align:inherit}
+.optionswitch__list-item:first-child .optionswitch__group{padding-top:.2rem}

@@ -168,51 +168,76 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 [[menu.main]]
   name = "EcoSystem Overview"
   identifier = "tools-0"
-  weight = 200
+  weight = 201
   url = "/ecosystem/"
   parent = "tools"
+  pre = '<span class="optionswitch__group">Overview</span>'
 
 [[menu.main]]
-  name = "Plugins (REAPER)"
+  name = "Downloads"
+  identifier = "tools-7"
+  weight = 202
+  url = "/icst-ambisonics-plugins/08_downloads/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "Plugins (VST3/AU/LV2)"
   identifier = "tools-1"
-  weight = 201
+  weight = 203
   url = "/icst-ambisonics-plugins/"
   parent = "tools"
-
-[[menu.main]]
-  name = "Max Tools"
-  identifier = "tools-2"
-  weight = 202
-  url = "/icst-ambisonics-tools/"
-  parent = "tools"
+  pre = '<span class="optionswitch__group">REAPER</span>'
 
 [[menu.main]]
   name = "REAPER Bundle"
   identifier = "tools-3"
-  weight = 203
+  weight = 204
   url = "/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "Motion Map"
+  identifier = "tools-6"
+  weight = 205
+  url = "/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  parent = "tools"
+  pre = '<span class="optionswitch__group">Movement & automation</span>'
+
+[[menu.main]]
+  name = "Kristall Motion Map"
+  identifier = "tools-8"
+  weight = 206
+  url = "/icst-ambisonics-plugins/18_kristall_motion_map/"
+  parent = "tools"
+
+[[menu.main]]
+  name = "Motion Markers"
+  identifier = "tools-9"
+  weight = 207
+  url = "/icst-ambisonics-plugins/14_icst_ambi_motion_markers/"
   parent = "tools"
 
 [[menu.main]]
   name = "Animator"
   identifier = "tools-4"
-  weight = 204
+  weight = 208
   url = "/icst-ambisonics-plugins/11_animator/"
   parent = "tools"
 
 [[menu.main]]
   name = "Animator Choreographer"
   identifier = "tools-5"
-  weight = 205
+  weight = 209
   url = "/icst-ambisonics-plugins/20_animator_choreographer/"
   parent = "tools"
 
 [[menu.main]]
-  name = "Motion Map"
-  identifier = "tools-6"
-  weight = 206
-  url = "/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  name = "Max Tools"
+  identifier = "tools-2"
+  weight = 210
+  url = "/icst-ambisonics-tools/"
   parent = "tools"
+  pre = '<span class="optionswitch__group">Max</span>'
 
 [[menu.main]]
   name = "Reference"
@@ -423,51 +448,76 @@ month = "month"
 [[languages.de.menus.main]]
   name = "EcoSystem-Übersicht"
   identifier = "tools-0"
-  weight = 200
+  weight = 201
   url = "/de/ecosystem/"
   parent = "tools"
+  pre = '<span class="optionswitch__group">Überblick</span>'
 
 [[languages.de.menus.main]]
-  name = "Plugins (REAPER)"
+  name = "Downloads"
+  identifier = "tools-7"
+  weight = 202
+  url = "/de/icst-ambisonics-plugins/08_downloads/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "Plugins (VST3/AU/LV2)"
   identifier = "tools-1"
-  weight = 201
+  weight = 203
   url = "/de/icst-ambisonics-plugins/"
   parent = "tools"
-
-[[languages.de.menus.main]]
-  name = "Max-Tools"
-  identifier = "tools-2"
-  weight = 202
-  url = "/de/icst-ambisonics-tools/"
-  parent = "tools"
+  pre = '<span class="optionswitch__group">REAPER</span>'
 
 [[languages.de.menus.main]]
   name = "REAPER-Bundle"
   identifier = "tools-3"
-  weight = 203
+  weight = 204
   url = "/de/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "Motion Map"
+  identifier = "tools-6"
+  weight = 205
+  url = "/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  parent = "tools"
+  pre = '<span class="optionswitch__group">Bewegung & Automation</span>'
+
+[[languages.de.menus.main]]
+  name = "Kristall Motion Map"
+  identifier = "tools-8"
+  weight = 206
+  url = "/de/icst-ambisonics-plugins/18_kristall_motion_map/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
+  name = "Motion Markers"
+  identifier = "tools-9"
+  weight = 207
+  url = "/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/"
   parent = "tools"
 
 [[languages.de.menus.main]]
   name = "Animator"
   identifier = "tools-4"
-  weight = 204
+  weight = 208
   url = "/de/icst-ambisonics-plugins/11_animator/"
   parent = "tools"
 
 [[languages.de.menus.main]]
   name = "Animator Choreographer"
   identifier = "tools-5"
-  weight = 205
+  weight = 209
   url = "/de/icst-ambisonics-plugins/20_animator_choreographer/"
   parent = "tools"
 
 [[languages.de.menus.main]]
-  name = "Motion Map"
-  identifier = "tools-6"
-  weight = 206
-  url = "/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  name = "Max-Tools"
+  identifier = "tools-2"
+  weight = 210
+  url = "/de/icst-ambisonics-tools/"
   parent = "tools"
+  pre = '<span class="optionswitch__group">Max</span>'
 
 [[languages.de.menus.main]]
   name = "Referenz"

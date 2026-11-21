@@ -1,8 +1,8 @@
 ---
 title: "ICST Ambisonics Tools"
-description: "MaxMSP Externals für Ambisonics Surround-Sound-Verarbeitung und 3D-Quellenkontrolle. Kostenlos, open source, verfügbar über den Max Package Manager."
-date: 2025-06-01T00:00:00
-tags:
+description: "MaxMSP-Externals für Ambisonics-Encoding, -Decoding und 3D-Quellenkontrolle. Kostenlos, Open Source, kompatibel mit Max 8 und Max 9, verfügbar über den Max Package Manager."
+date: 2026-11-21T00:00:00
+tags: ["ambisonics", "max", "externals", "icst"]
 languageCode: de
 ---
 
@@ -15,51 +15,57 @@ languageCode: de
   </a>
 </div>
 
-### ICST Ambisonics Tools
-
 ![ICST Tools](large-1.jpg)
 
-Eine Sammlung von **MaxMSP Externals** für **Ambisonics** Surroundsound-Verarbeitung und 3D Quellenkontrolle. Seit 2000 durch Forschung und Praxis entwickelt, wurden diese Werkzeuge umfangreich getestet und in Konzerten, Kompositionen und Installationen eingesetzt.
+Eine Sammlung von **MaxMSP-Externals** für **Ambisonics**-Surround-Verarbeitung und 3D-Quellenkontrolle. Aus Forschung und Praxis seit 2000 entstanden und 2003 erstmals veröffentlicht, sind die Tools in Konzerten, Kompositionen und Installationen im Einsatz. Sie laufen in Musikstudios, Hörräumen und Akustiklabors weltweit und als Erweiterung von Max auch in Ableton Live. Die aktuelle Version überarbeitet und erweitert nahezu alle Teile des Pakets.
 
-- Die Werkzeuge haben breite Anerkennung in der Audio-Community gefunden und werden in Musikstudios, dedizierten Hörsälen und Akustiklaboren weltweit angewendet.
+## Auf einen Blick
 
-- Als Erweiterung für die MaxMSP Audio-Umgebung ermöglicht sie auch räumliche Audio-Workflows in Ableton Live, einem weit verbreiteten Produktionswerkzeug für elektronische Musik.
+| | |
+|---|---|
+| Typ | Max/MSP-Externals (Max-Package) |
+| Version | 3.0.1 (Mai 2021) |
+| Kompatibel mit | Max 8.1 und neuer, **auch mit dem aktuellen Max 9** |
+| Plattform | macOS, Windows 10 |
+| Lizenz | Revised BSD (im Paket enthalten) |
+| Installation | Max Package Manager |
 
-- Die aktuelle Version stellt ein wichtiges Update dar, bei dem nahezu alle Aspekte der Werkzeuge überarbeitet, verfeinert und erweitert wurden.
+## Enthaltene Externals
 
-Erstmals 2003 veröffentlicht, wird diese neue Version den Benutzern der ICST Ambisonics Tools eine solide Grundlage für weitere Jahre fortgeschrittener räumlicher Musik- und Soundproduktionen bieten.
+| External | Funktion | Bereich |
+|---|---|---|
+| `ambiencode~` | Mehrere Audioquellen in Ambisonics-B-Format kodieren. | Encoding |
+| `mc.ambiencode~` | Wie oben, Multichannel-Version. | Encoding |
+| `ambidecode~` | B-Format auf mehrere Audioausgänge dekodieren. | Decoding |
+| `mc.ambidecode~` | Wie oben, Multichannel-Version. | Decoding |
+| `ambipanning~` | Panning auf Ambisonics-Basis. | Panning |
+| `mc.ambipanning~` | Wie oben, Multichannel-Version. | Panning |
+| `ambimonitor` | GUI-Objekt für Ambisonics-Spatialisierung. | Steuerung |
+| `ambicontrol` | Trajektorien-Controller für ambimonitor. | Steuerung |
+| `ambipoint` | Schweizer Taschenmesser für Ambi-Punkte. | Steuerung |
+| `icst.map` | Wert über Kurve, Tabelle, Buffer oder Liste umrechnen. | Algorithmisch |
+| `icst.random` | Zufallswerte aus Verteilungskurven. | Algorithmisch |
+| `icst.spline` | Splines definieren und auswerten. | Algorithmisch |
+| `icst.button` | Button oder Toggle-Schalter. | Benutzeroberfläche |
+| `icst.floatui` | GUI für Fliesskommawerte. | Benutzeroberfläche |
+| `icst.intui` | GUI für ganze Zahlen. | Benutzeroberfläche |
+| `icst.listui` | GUI für Listen. | Benutzeroberfläche |
 
-#### **Enthaltene Externals:**
+## Installation
 
-![max-external](max-externals.png)
-### Lizenzierung & Installation
+**ICST Ambisonics Tools** in **Max 8 oder Max 9** über den **Package Manager** installieren:
 
-Die **ICST Ambisonics Tools** werden unter der **Revised BSD License** verteilt (im Paket enthalten).
+![Installation im Max Package Manager](Amb_Max.gif)
 
-#### **Aktuelle Version: 3.0.1**
+Weitere Informationen und Download bei der [ZHdK](https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385).
 
-- Veröffentlicht **Mai 2021** für **Max 8.1 (64-Bit)**
-- Kompatibel mit **macOS** und **Windows 10**
+## Wann die Max-Tools?
 
-#### **Installation**
+| | Max-Tools | REAPER-Plugins |
+|---|---|---|
+| Stärke | Modular, individuelles Patching je Anwendung | Fertig nutzbar, zeitbasiert (Automation, Motion Map, Animator) |
+| Voraussetzung | Max-Programmierkenntnisse | REAPER und die Plugin-Suite |
+| Zeitbasiert | Nein (ausser Envelop in Ableton) | Ja |
+| Empfohlen für | Live-Elektronik, besondere Aufführungen | Studioproduktion, Komponieren auf der Timeline |
 
-Installiere die **ICST Ambisonics Tools** in **Max 8+** über den **Package Manager**:
-
-![max-external](Amb_Max.gif)
-
-Info bei ZHdK: https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385
-
-Vorteile:
-
-> * Modular und daher hochgradig flexibel
-> * Individuelle Programmierung für individuelle Anwendungen
-
-Nachteile:
-> * Erfordert Max-Programmierkenntnisse
-> * Nicht zeitbasiert.
-> * (Ausser Envelop in Ableton)
-
-**Empfehlung:**
-
-> * Für Live Electronic
-> * Spezielle Performances
+Wie die Komponenten zusammenpassen, zeigt die [EcoSystem-Übersicht](/de/ecosystem/), die Grundlagen stehen in [Ambisonics 101](/de/ambisonics-101/).
