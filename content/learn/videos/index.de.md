@@ -14,6 +14,24 @@ Video-Tutorials zu den ICST-Tools und zwei Hintergrundfilme zu Ambisonics und Ra
 
 ## ICST-Video-Tutorials
 
+### ICST Ambisonics Plugins 01: Installation
+
+{{< youtube 2GXb5tbqW1Y >}}
+
+Länge: 2:15. Schriftliche Anleitung: [Installation](/de/icst-ambisonics-plugins/02_installation/)
+
+### ICST Ambisonics Plugins 02: Encoder und Routing
+
+{{< youtube -U0t8sjeTsw >}}
+
+Länge: 14:07. Schriftliche Anleitung: [Schritt-für-Schritt-Setup](/de/icst-ambisonics-plugins/06_step_by_step_setup/)
+
+### ICST Ambisonics Plugins 03: OSC, Teil 1
+
+{{< youtube 7_s-jaUQa14 >}}
+
+Länge: 14:00. Schriftliche Anleitung: [OSC-Syntax für den AmbiEncoder](/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/)
+
 ### Kristall Motion Map: vollständiges Tutorial
 
 {{< youtube oPud9-HPdcM >}}
@@ -34,3 +52,7 @@ Dokumentarfilm (2018) über die Anfänge von Ambisonics.
 {{< youtube _G68Q4gkOMc >}}
 
 Vortrag (CIRMMT) über räumliches Denken in der akusmatischen Komposition.
+
+## Mehr vom ICST-Kanal
+
+Auf dem Kanal [@ZHDK_ICST](https://www.youtube.com/@ZHDK_ICST/videos) gibt es ausserdem Artist Talks, die Generator-Reihe und AiR-Interviews mit Komponist:innen und Forschenden.
