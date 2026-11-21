@@ -51,7 +51,7 @@ Empfohlener nächster Schritt nach der Installation:
 5. Installiere **ReaPack** von <https://reapack.com/>.
 6. Folge der ReaPack-Installationsanleitung: <https://reapack.com/user-guide#installation>
 7. Lade das aktuelle Release der ICST Ambisonics Plugins von <https://github.com/schweizerweb/icst-ambisonics-plugins/releases> herunter.
-8. Starte den Windows-Installer oder kopiere das Release manuell in den üblichen VST3-Ordner, falls das Paket keine automatische Installation verwendet.
+8. Lade `ICST_AmbiPlugins_Windows_4.0.0.exe` (oder den neuesten Installer) herunter und starte ihn. Die „Full installation“ richtet die VST3- und LV2-Plugins sowie die REAPER-Projekt- und Track-Templates ein. Folge den Schritten unten.
 
 > **Hinweis:** Die Screenshots zeigen den Windows-Installer in Version 4.0.0 (der Installer selbst ist englisch). Neuere Versionen können im Wortlaut leicht abweichen.
 
