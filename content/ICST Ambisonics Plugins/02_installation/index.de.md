@@ -55,25 +55,33 @@ Empfohlener nächster Schritt nach der Installation:
 
 <style>
 .win-shots { display:flex; flex-wrap:wrap; gap:1.2rem; align-items:flex-start; margin:1.2rem 0 }
-.win-shots p { margin:0 }
+.win-shots p { margin:0; width:320px; max-width:100% }
+.win-shots em { display:block; font-size:1.3rem; opacity:.85; margin-top:.4rem }
 .win-shots img { width:320px; max-width:100%; height:auto; border-radius:6px }
 </style>
 
 <div class="win-shots">
 
-![Installation step 1](01_win.png)
+![SmartScreen-Warnung: Windows hat den PC geschützt](01_win.png)
+*1. SmartScreen-Warnung: „Weitere Informationen“ anklicken.*
 
-![Installation step 2](02_win.png)
+![SmartScreen: Trotzdem ausführen](02_win.png)
+*2. „Trotzdem ausführen“ anklicken.*
 
-![Installation step 3](03_win.png)
+![Benutzerkontensteuerung](03_win.png)
+*3. Die Benutzerkontensteuerung mit „Ja“ bestätigen.*
 
-![Installation step 4](04_win.png)
+![Installer-Infoseite](04_win.png)
+*4. Hinweise lesen und „Weiter“ anklicken.*
 
-![Installation step 5](05_win.png)
+![Zielordner Common Files VST3](05_win.png)
+*5. VST3-Ordner beibehalten und „Weiter“ anklicken.*
 
-![Installation step 6](06_win.png)
+![Meldung: Ordner existiert bereits](06_win.png)
+*6. Existiert der Ordner schon, mit „Ja“ bestätigen.*
 
-![Installation step 7](07_win.png)
+![Setup abgeschlossen](07_win.png)
+*7. Setup beenden; Neustart jetzt oder später.*
 
 </div>
 
