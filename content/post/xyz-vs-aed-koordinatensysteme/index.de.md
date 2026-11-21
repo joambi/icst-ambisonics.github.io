@@ -25,6 +25,11 @@ Diese Seite erklärt, warum der ICST AmbiDecoder zwei Koordinatensysteme anbiete
 
 ---
 
+<figure data-gen="g24" style="margin:1.8rem 0">
+<video controls muted loop playsinline preload="metadata" poster="/videos/xyz-vs-aed-de-poster.jpg" src="/videos/xyz-vs-aed-de.mp4" style="width:100%;max-width:720px;height:auto;display:block;border-radius:8px"></video>
+<figcaption style="font-size:.9em;opacity:.8;margin-top:.4rem">Video: dieselbe Position als Azimut, Elevation, Distanz und als X, Y, Z (ca. 14 Sekunden).</figcaption>
+</figure>
+
 ## Das Problem: Wie beschreibt man, wo ein Lautsprecher steht?
 
 <figure style="margin:1.8rem 0">

@@ -25,6 +25,11 @@ This page explains why the ICST AmbiDecoder offers two coordinate systems and ho
 
 ---
 
+<figure data-gen="g24" style="margin:1.8rem 0">
+<video controls muted loop playsinline preload="metadata" poster="/videos/xyz-vs-aed-en-poster.jpg" src="/videos/xyz-vs-aed-en.mp4" style="width:100%;max-width:720px;height:auto;display:block;border-radius:8px"></video>
+<figcaption style="font-size:.9em;opacity:.8;margin-top:.4rem">Video: the same position as azimuth, elevation, distance and as X, Y, Z (about 14 seconds).</figcaption>
+</figure>
+
 ## The problem: how do you describe where a loudspeaker stands?
 
 <figure style="margin:1.8rem 0">

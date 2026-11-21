@@ -23,6 +23,11 @@ Eine fertige Ambisonics-Produktion zu exportieren klingt trivial – ist es aber
 
 ---
 
+<figure data-gen="g24" style="margin:1.8rem 0">
+<video controls muted loop playsinline preload="metadata" poster="/videos/bformat-export-de-poster.jpg" src="/videos/bformat-export-de.mp4" style="width:100%;max-width:720px;height:auto;display:block;border-radius:8px"></video>
+<figcaption style="font-size:.9em;opacity:.8;margin-top:.4rem">Video: vom B-Format-Master rendern, nicht vom Decoder-Ausgang (ca. 14 Sekunden).</figcaption>
+</figure>
+
 ## Das Format: AmbiX
 
 Der heutige Industriestandard für Ambisonics-Austausch ist **AmbiX**. AmbiX definiert zwei Dinge:
