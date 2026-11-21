@@ -3,6 +3,7 @@ title: ICST Encoders
 date: 2025-01-01T00:00:00
 weight: 110
 draft: false
+docs_nav_id: icst-encoders
 description: "Leitfaden zu den ICST Encoders für Quellenpositionierung, Bewegung, Gruppierung und OSC-basierte Steuerung in Ambisonics-Sessions."
 docs_nav_group: "Plugins"
 ---

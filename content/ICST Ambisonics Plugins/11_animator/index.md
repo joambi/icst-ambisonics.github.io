@@ -1,8 +1,9 @@
 ---
 title: ICST Animator
 date: 2026-10-15T00:00:00
-weight: 140
+weight: 115
 draft: false
+docs_nav_parent: icst-encoders
 toc: true
 type: docs
 description: "Tutorial and reference for the ICST Animator: move, rotate and transform source groups in the Multi-AmbiEncoder_64 on a timeline."
