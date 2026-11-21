@@ -123,6 +123,7 @@ languageCode: de
 - [Spatial Audio Framework (SAF)](https://github.com/leomccormack/Spatial_Audio_Framework)
 - [OpenAIR Library (University of York)](https://www.openair.hosted.york.ac.uk/)
 - [ARTE: Ambisonics Recordings of Typical Environments](https://zenodo.org/records/2261633)
+- [MAIR: Microphone Array Impulse Response Library (University of Huddersfield, Ambisonics erster Ordnung und Surround)](https://zenodo.org/records/2639677)
 - [RØDE SoundField Library](https://library.soundfield.com/)
 - [AES Technical Committee: Spatial Audio](https://aes.org/community/technical-council/aes-technical-committee-spatial-audio/)
 - [Omnitone (Web Ambisonics Renderer)](https://github.com/GoogleChrome/omnitone)
