@@ -10,6 +10,10 @@
       <script src="/pagefind/pagefind-ui.js"></script>
       <script>
         window.addEventListener("DOMContentLoaded", function () {
+          if (typeof PagefindUI === "undefined") {
+            document.getElementById("search-fallback").textContent = {{ if eq .Site.Language.Lang "de" }}"Die Suche ist nur auf der veröffentlichten Seite verfügbar (Suchindex wird beim Deploy erzeugt)."{{ else }}"Search is only available on the published site (the index is built on deploy)."{{ end }};
+            return;
+          }
           new PagefindUI({
             element: "#search",
             showSubResults: true,
