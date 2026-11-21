@@ -53,6 +53,8 @@ Empfohlener nächster Schritt nach der Installation:
 7. Lade das aktuelle Release der ICST Ambisonics Plugins von <https://github.com/schweizerweb/icst-ambisonics-plugins/releases> herunter.
 8. Starte den Windows-Installer oder kopiere das Release manuell in den üblichen VST3-Ordner, falls das Paket keine automatische Installation verwendet.
 
+> **Hinweis:** Die folgenden Screenshots zeigen eine frühere Version des Windows-Installers. Folge den Hinweisen des neuesten Installers; die Schritte sind im Prinzip dieselben, Wortlaut und Versionsnummern können abweichen.
+
 <style>
 .win-shots { display:flex; flex-wrap:wrap; gap:1.2rem; align-items:flex-start; margin:1.2rem 0 }
 .win-shots p { margin:0; width:320px; max-width:100% }
