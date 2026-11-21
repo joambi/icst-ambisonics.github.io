@@ -140,6 +140,11 @@ Für die praktischen Unterschiede zwischen A-Format, B-Format, FuMa, ambiX, ACN/
 <a id="signalfluss"></a>
 ## 5. Signalfluss auf einen Blick
 
+<figure class="explainer-video" style="margin:1.8rem 0">
+<video controls muted loop playsinline preload="metadata" style="width:100%;max-width:720px;height:auto;display:block;border-radius:8px" src="/videos/signal-flow-de.mp4"></video>
+<figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Kurzvideo: vom Mono-Signal über Encoder und B-Format-Bus zum Decoder.</figcaption>
+</figure>
+
 Von der Quelle zum Lautsprecher — so funktioniert Ambisonics in REAPER mit den ICST Plugins:
 
 <div class="ambi-sigflow">
