@@ -7,6 +7,14 @@ draft: false
 
 What would you like to explore? Choose a starting point below.
 
+<div class="hero__links" style="margin:0 0 1.4rem">
+  <a class="hero__link hero__link--primary" href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank" rel="noopener noreferrer">⬇️ Download plugins</a>
+  <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">⚡ Quick start (5 min)</a>
+  <a class="hero__link" href="/ambisonics-101/">📖 Understand Ambisonics</a>
+  <a class="hero__link" href="/learn/ambisonics-workflow/">🎼 Compose with it</a>
+  <a class="hero__link" href="/residenzen/">🏛️ Apply for a residency</a>
+</div>
+
 <form class="icst-startsearch" action="/search/" method="get" role="search" style="display:flex;gap:.6rem;margin:1.2rem 0 .4rem">
   <input type="search" name="q" placeholder="Search the site…" aria-label="Search the site…" style="flex:1;padding:.7rem 1rem;font-size:1.6rem;border:1px solid var(--border-color,#8886);border-radius:8px;background:transparent;color:inherit">
   <button type="submit" style="padding:.7rem 1.4rem;font-size:1.6rem;border:1px solid var(--border-color,#8886);border-radius:8px;background:transparent;color:inherit;cursor:pointer">Search</button>
@@ -106,6 +114,9 @@ What would you like to explore? Choose a starting point below.
 <p class="onboarding-step__title">Go deeper — tutorials and references</p>
 <p class="onboarding-step__desc">OSC control, multi-decoder mode, group panning, DAW bridging (Ableton + REAPER), controller integration (GyrOSC, GRAPES) — all in the tutorial library, filtered by difficulty.</p>
 <a class="hero__link hero__link--primary" href="/post/">All Tutorials →</a>
+<a class="hero__link" href="/post/hoa-ordnung-wahl-praxis/">Which HOA order?</a>
+<a class="hero__link" href="/ambisonics-101/glossary/">Glossary</a>
+<a class="hero__link" href="/blog/decoder-geschichte-und-anwendungen/">Decoder history &amp; applications</a>
 <a class="hero__link" href="/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC Syntax Reference →</a>
 <a class="hero__link" href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins" target="_blank" rel="noopener noreferrer">@ZHDK_ICST on YouTube →</a>
 </div>

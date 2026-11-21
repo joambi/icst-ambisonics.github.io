@@ -8,6 +8,14 @@ languageCode: de
 
 Womit möchtest du beginnen? Wähle deinen Einstieg.
 
+<div class="hero__links" style="margin:0 0 1.4rem">
+  <a class="hero__link hero__link--primary" href="https://github.com/schweizerweb/icst-ambisonics-plugins/releases" target="_blank" rel="noopener noreferrer">⬇️ Plugins herunterladen</a>
+  <a class="hero__link" href="/de/icst-ambisonics-plugins/04_quick_start/">⚡ Quick Start (5 Min.)</a>
+  <a class="hero__link" href="/de/ambisonics-101/">📖 Ambisonics verstehen</a>
+  <a class="hero__link" href="/de/learn/ambisonics-workflow/">🎼 Damit komponieren</a>
+  <a class="hero__link" href="/de/residenzen/">🏛️ Für eine Residenz bewerben</a>
+</div>
+
 <form class="icst-startsearch" action="/de/search/" method="get" role="search" style="display:flex;gap:.6rem;margin:1.2rem 0 .4rem">
   <input type="search" name="q" placeholder="Website durchsuchen…" aria-label="Website durchsuchen…" style="flex:1;padding:.7rem 1rem;font-size:1.6rem;border:1px solid var(--border-color,#8886);border-radius:8px;background:transparent;color:inherit">
   <button type="submit" style="padding:.7rem 1.4rem;font-size:1.6rem;border:1px solid var(--border-color,#8886);border-radius:8px;background:transparent;color:inherit;cursor:pointer">Suchen</button>
@@ -107,6 +115,9 @@ Womit möchtest du beginnen? Wähle deinen Einstieg.
 <p class="onboarding-step__title">Tiefer gehen — Tutorials und Referenzen</p>
 <p class="onboarding-step__desc">OSC-Steuerung, Multi-Decoder-Modus, Gruppen-Panning, DAW-Bridging (Ableton + REAPER), Controller-Integration (GyrOSC, GRAPES) — alles in der Tutorial-Bibliothek, gefiltert nach Schwierigkeitsgrad.</p>
 <a class="hero__link hero__link--primary" href="/de/post/">Alle Tutorials →</a>
+<a class="hero__link" href="/de/post/hoa-ordnung-wahl-praxis/">Welche HOA-Ordnung?</a>
+<a class="hero__link" href="/de/ambisonics-101/glossary/">Begriffssammlung</a>
+<a class="hero__link" href="/de/blog/decoder-geschichte-und-anwendungen/">Decoder-Geschichte &amp; Anwendungen</a>
 <a class="hero__link" href="/de/post/osc-syntax-for-the-icst-ambiencoder-plugin/">OSC-Syntax-Referenz →</a>
 <a class="hero__link" href="https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins" target="_blank" rel="noopener noreferrer">@ZHDK_ICST auf YouTube →</a>
 </div>
