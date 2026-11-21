@@ -20,13 +20,13 @@ weight: 9
 _Free admission_ 
 
 ---
-# Hans Tutschku: **_Remembering Japan_**
+## Hans Tutschku: **_Remembering Japan_**
 
  **Hans Tutschku**
  ICST Artist in Residence from January 31 to February 13, 2022.
 
 * * *
-# Remembering Japan
+## Remembering Japan
 
 INFO: <https://tutschku.com/remembering-japan/>
 ![Tutschku](montage-pochette-pour-internet.jpg)

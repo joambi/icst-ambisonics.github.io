@@ -22,7 +22,7 @@ weight: 4
 _Freier Eintritt_
 
 ----
-# GLOCKEN
+## GLOCKEN
 
 **'Anläuten'** mit den Kirchenglocken der Reformierten Kirche Diessenhofen/TG.
 

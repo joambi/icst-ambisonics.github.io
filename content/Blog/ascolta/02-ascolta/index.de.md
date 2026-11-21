@@ -42,7 +42,7 @@ Aktuelle Informationen zur Veranstaltung findest du [hier](https://www.zhdk.ch/v
 
 * * *
 
-# Programm-Noten:
+## Programm-Noten:
 
 ### Gerald Bennett: Vêpres vénitiennes - Il dì s'appressa (1999)
 

@@ -13,7 +13,7 @@ tags: ["ascolta", "listening", "spatial-audio", "analysis", "guide"]
 
 ---
 
-# Active Listening in the Three-Dimensional Sound Field
+## Active Listening in the Three-Dimensional Sound Field
 
 ## Who is this guide for?
 

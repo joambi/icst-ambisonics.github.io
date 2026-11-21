@@ -42,7 +42,7 @@ Current information about the event can be found [here](https://www.zhdk.ch/vera
 
 * * *
 
-# Program notes:
+## Program notes:
 
 ### Gerald Bennett: Vêpres vénitiennes - Il dì s'appressa (1999)
 

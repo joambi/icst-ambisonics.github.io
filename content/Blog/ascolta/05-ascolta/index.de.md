@@ -22,7 +22,7 @@ weight: 5
 _Freier Eintritt_
 
 ---
-# Feldaufnahmen & Klanglandschaften
+## Feldaufnahmen & Klanglandschaften
 
 Philip Samartzis  (ICST Artist in Residency 2019)
 [Atmospheres & Disturbances](https://bogongsound.com.au/projects/atmospheres-and-disturbances)

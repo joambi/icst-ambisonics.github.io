@@ -10,7 +10,7 @@ weight: 10
 ![ascolta](ascolta.png)
 
 ---
-# The Composer, Herself
+## The Composer, Herself
 
 **Concert**
 
@@ -26,7 +26,7 @@ _Free admission_
 
 #
 
-# **Program:**
+## **Program:**
 
 ## Natasha Barrett
 

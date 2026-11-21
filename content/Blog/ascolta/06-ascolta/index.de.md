@@ -22,7 +22,7 @@ weight: 6
 _Freier Eintritt_
 
 ---
-# Zbigniew Karkowski (Polen/Japan)
+## Zbigniew Karkowski (Polen/Japan)
 
 ## Titel: \_kein Name\_
 

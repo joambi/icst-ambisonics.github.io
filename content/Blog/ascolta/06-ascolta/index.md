@@ -22,7 +22,7 @@ weight: 6
 _Free admission_ 
 
 ---
-# Zbigniew Karkowski (Poland/Japan)
+## Zbigniew Karkowski (Poland/Japan)
 
 ## Title: \_no name\_
 

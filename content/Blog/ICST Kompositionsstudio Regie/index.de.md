@@ -11,7 +11,7 @@ languageCode: de
 ---
 
 
-# **Überblick über das ICST Kompositionsstudio**
+## **Überblick über das ICST Kompositionsstudio**
 
 **Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 

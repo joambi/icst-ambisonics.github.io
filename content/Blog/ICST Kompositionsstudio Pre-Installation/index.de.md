@@ -10,7 +10,7 @@ group: "Residents"
 languageCode: de
 ---
 
-# Vorinstallation für deinen externen Laptop
+## Vorinstallation für deinen externen Laptop
 
 **Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 
@@ -43,7 +43,7 @@ Wie in der Abbildung oben ist die Synchronisation korrekt.
 - Für Ambisonics den "stereo-mix" löschen.
 
 ---
-# Video / Screen
+## Video / Screen
 
 **DisplayLink Manager installieren**  
 Lade den [DisplayLink Manager für macOS](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) für dein System herunter und installiere ihn.
@@ -58,7 +58,7 @@ Damit der Curved Screen als ein grosser Bildschirm erscheint, ist eine zusätzli
    ![Mission_3](Mission3.webp)
 
 ---
-# Support & Kontakt
+## Support & Kontakt
 
 **Hilfe:**
 - Johannes Schütt &nbsp;&nbsp; Mobile: +41 79 786 12 49 &nbsp;&nbsp; Mail: [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
@@ -67,6 +67,6 @@ Damit der Curved Screen als ein grosser Bildschirm erscheint, ist eine zusätzli
 - [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch) &nbsp;&nbsp; Mobile: +41 76 330 11 02
 
 ---
-# Downloads
+## Downloads
 
 → Alle Downloads sind zentral auf der Seite [Downloads](/blog/downloads/) verfügbar.

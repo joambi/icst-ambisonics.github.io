@@ -6,7 +6,7 @@ weight: 15
 docs_nav_group: "Einstieg"
 ---
 
-# ICST Ambisonics Plugins Release 4.0
+## ICST Ambisonics Plugins Release 4.0
 
 Version 4.0.0 ist erschienen. Sie ist ein grosser Schritt nach vorn, um in Ambisonics mit Source-Gruppen zu komponieren: Choreographien direkt in der REAPER-Timeline erstellen und als XML-Scores speichern, um sie auch in anderen Projekten wieder einzubinden und neu zu gestalten. Der ICST-Gruppen-Animator ist «Work in Progress» und wird weiter wachsen.
 
@@ -16,7 +16,7 @@ Im ICST AmbiEncoder_64 Plugin wurden die Blauertschen Filter optimiert, und für
 
 ---
 
-# November 2026: REAPER-Bundle, Motion Map 2.4.5, Animator Choreographer
+## November 2026: REAPER-Bundle, Motion Map 2.4.5, Animator Choreographer
 
 Neue Werkzeuge und Dokumentation zum Komponieren mit den ICST-Ambisonics-Plugins in REAPER. Alle drei sind Evaluationsbetas.
 

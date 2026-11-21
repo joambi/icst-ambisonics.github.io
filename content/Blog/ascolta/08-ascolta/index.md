@@ -20,7 +20,7 @@ weight: 8
 _Free admission_
 
 ----
-# **_La Canción de la Tierra_**
+## **_La Canción de la Tierra_**
 
 Mesias Maiguashca
 Artist in Residency at ICST: 2018 | February 28 – March 1, 2019 | April 25 – April 26, 2019 | 2020

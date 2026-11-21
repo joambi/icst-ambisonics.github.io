@@ -13,7 +13,7 @@ tags: ["ascolta", "hören", "spatial-audio", "analyse", "guide"]
 
 ---
 
-# Aktives Hören im dreidimensionalen Klangfeld
+## Aktives Hören im dreidimensionalen Klangfeld
 
 ## Für wen ist dieser Text?
 
