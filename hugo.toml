@@ -196,32 +196,32 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   parent = "tools"
 
 [[menu.main]]
-  name = "Motion Map"
-  identifier = "tools-6"
+  name = "Animator"
+  identifier = "tools-4"
   weight = 205
-  url = "/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  url = "/icst-ambisonics-plugins/11_animator/"
   parent = "tools"
   pre = '<span class="optionswitch__group">Movement & automation</span>'
 
 [[menu.main]]
+  name = "Motion Map"
+  identifier = "tools-6"
+  weight = 206
+  url = "/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  parent = "tools"
+
+[[menu.main]]
   name = "Kristall Motion Map"
   identifier = "tools-8"
-  weight = 206
+  weight = 207
   url = "/icst-ambisonics-plugins/18_kristall_motion_map/"
   parent = "tools"
 
 [[menu.main]]
   name = "Motion Markers"
   identifier = "tools-9"
-  weight = 207
-  url = "/icst-ambisonics-plugins/14_icst_ambi_motion_markers/"
-  parent = "tools"
-
-[[menu.main]]
-  name = "Animator"
-  identifier = "tools-4"
   weight = 208
-  url = "/icst-ambisonics-plugins/11_animator/"
+  url = "/icst-ambisonics-plugins/14_icst_ambi_motion_markers/"
   parent = "tools"
 
 [[menu.main]]
@@ -476,32 +476,32 @@ month = "month"
   parent = "tools"
 
 [[languages.de.menus.main]]
-  name = "Motion Map"
-  identifier = "tools-6"
+  name = "Animator"
+  identifier = "tools-4"
   weight = 205
-  url = "/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  url = "/de/icst-ambisonics-plugins/11_animator/"
   parent = "tools"
   pre = '<span class="optionswitch__group">Bewegung & Automation</span>'
 
 [[languages.de.menus.main]]
+  name = "Motion Map"
+  identifier = "tools-6"
+  weight = 206
+  url = "/de/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
+  parent = "tools"
+
+[[languages.de.menus.main]]
   name = "Kristall Motion Map"
   identifier = "tools-8"
-  weight = 206
+  weight = 207
   url = "/de/icst-ambisonics-plugins/18_kristall_motion_map/"
   parent = "tools"
 
 [[languages.de.menus.main]]
   name = "Motion Markers"
   identifier = "tools-9"
-  weight = 207
-  url = "/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/"
-  parent = "tools"
-
-[[languages.de.menus.main]]
-  name = "Animator"
-  identifier = "tools-4"
   weight = 208
-  url = "/de/icst-ambisonics-plugins/11_animator/"
+  url = "/de/icst-ambisonics-plugins/14_icst_ambi_motion_markers/"
   parent = "tools"
 
 [[languages.de.menus.main]]
