@@ -113,36 +113,50 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
 [[menu.main]]
   name = "Ambisonics Formats"
   identifier = "learn-1"
-  weight = 102
+  weight = 101
   url = "/learn/ambisonics-formats/"
   parent = "learn"
 
 [[menu.main]]
   name = "First session"
   identifier = "learn-6"
-  weight = 101
+  weight = 102
   url = "/post/getting-started-icst-plugins-reaper/"
   parent = "learn"
 
 [[menu.main]]
   name = "Workflow"
   identifier = "learn-5"
-  weight = 104
+  weight = 103
   url = "/learn/ambisonics-workflow/"
   parent = "learn"
 
 [[menu.main]]
   name = "Tutorials"
   identifier = "learn-2"
-  weight = 103
+  weight = 104
   url = "/post/"
   parent = "learn"
 
 [[menu.main]]
   name = "Videos"
   identifier = "learn-4"
-  weight = 105
+  weight = 106
   url = "/learn/videos/"
+  parent = "learn"
+
+[[menu.main]]
+  name = "Which HOA order?"
+  identifier = "learn-7"
+  weight = 105
+  url = "/post/hoa-ordnung-wahl-praxis/"
+  parent = "learn"
+
+[[menu.main]]
+  name = "Glossary"
+  identifier = "learn-8"
+  weight = 107
+  url = "/ambisonics-101/glossary/"
   parent = "learn"
 
 [[menu.main]]
@@ -354,36 +368,50 @@ month = "month"
 [[languages.de.menus.main]]
   name = "Ambisonics-Formate"
   identifier = "learn-1"
-  weight = 102
+  weight = 101
   url = "/de/learn/ambisonics-formats/"
   parent = "learn"
 
 [[languages.de.menus.main]]
   name = "Erste Session"
   identifier = "learn-6"
-  weight = 101
+  weight = 102
   url = "/de/post/getting-started-icst-plugins-reaper/"
   parent = "learn"
 
 [[languages.de.menus.main]]
   name = "Workflow"
   identifier = "learn-5"
-  weight = 104
+  weight = 103
   url = "/de/learn/ambisonics-workflow/"
   parent = "learn"
 
 [[languages.de.menus.main]]
   name = "Tutorials"
   identifier = "learn-2"
-  weight = 103
+  weight = 104
   url = "/de/post/"
   parent = "learn"
 
 [[languages.de.menus.main]]
   name = "Videos"
   identifier = "learn-4"
-  weight = 105
+  weight = 106
   url = "/de/learn/videos/"
+  parent = "learn"
+
+[[languages.de.menus.main]]
+  name = "Welche HOA-Ordnung?"
+  identifier = "learn-7"
+  weight = 105
+  url = "/de/post/hoa-ordnung-wahl-praxis/"
+  parent = "learn"
+
+[[languages.de.menus.main]]
+  name = "Begriffssammlung"
+  identifier = "learn-8"
+  weight = 107
+  url = "/de/ambisonics-101/glossary/"
   parent = "learn"
 
 [[languages.de.menus.main]]
