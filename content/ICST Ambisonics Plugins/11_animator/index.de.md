@@ -174,8 +174,6 @@ Doppelklick auf einen Movement-Clip öffnet **Edit Movement Clip** mit drei Bere
 
 ### Bewegungstypen und ihre Parameter
 
-<!-- TODO prüfen: Parametermatrix gegen v4.0-Dialog abgleichen -->
-
 | Typ | Bahn | Positionen | Typ-Parameter |
 |---|---|---|---|
 | **MoveTo (Cartesian)** | Gerade von Start zu Ziel | Start, Target | – |
@@ -185,8 +183,8 @@ Doppelklick auf einen Movement-Clip öffnet **Edit Movement Clip** mit drei Bere
 | **Helix** | Spirale mit Höhenanstieg | Start, Center | Rotations, Radius change, Height rise |
 | **Spline** | Weiche Kurve durch Waypoints | Waypoints | Tension, Closed path |
 | **Polygon** | Gerade Segmente zwischen Waypoints | Waypoints | Closed path |
-| **Lissajous** | Lissajous-Figur um einen Mittelpunkt | Center | Frequency X/Y, Phase, Closed path |
-| **Rose** | Rosenkurve um einen Mittelpunkt | Center | Petals, Phase |
+| **Lissajous** | Lissajous-Figur um einen Mittelpunkt | Center | Rotations, Frequency X/Y, Phase, Closed path |
+| **Rose** | Rosenkurve um einen Mittelpunkt | Center | Rotations, Petals, Phase |
 | **Random Walk** | Weiches, rauschbasiertes Wandern | Center | Wander cycles, Seed |
 
 Bei allen Typen mit Mittelpunkt definieren die **Target**-Felder den Mittelpunkt (Center).
@@ -262,6 +260,8 @@ Jeder Clip, Movement wie Action, hat dieselben Timing-Optionen:
 ![Speed curve mit Presets](AT-CLP-06-Speed-Curve.png)
 
 {{< video name="AT-MOV-V02-Spiral-Palindrome-Speed-Curve" caption="Spiral mit Palindrome und Speed curve (Rotations 1.8, Radius change 0.4)." >}}
+
+**Repetitions in Action-Clips:** Eine wiederholte **Rotation** dreht in derselben Richtung weiter (3 Wiederholungen à 90° ergeben 270°); mit **Palindrome** pendelt sie stattdessen hin und her. Movement und Stretch spielen ihre Kurve erneut ab, Palindrome spiegelt sie. **Jitter** ignoriert beide Optionen.
 
 Die **(i)**-Buttons in den Dialogen erklären jede Option kurz.
 
@@ -445,7 +445,6 @@ Bei abweichendem Distance-Scaler fragt ein Dialog: **Rescale** (Positionen, Wayp
 ## Einschränkungen (v4.0)
 
 <!-- TODO prüfen: gegen v4.0 abgleichen; den ersten Punkt unten entfernen, sobald der Fix in einem Release ist -->
-<!-- TODO mit Entwickler klären: Repetitions bei Relative During Clip addieren sich (3 × 90° = 270°); für Hin und Zurück Palindrome verwenden. Nach Bestätigung in den Timing-Abschnitt übernehmen. -->
 
 - Ohne *Use Start Value* / *Use Defined Start Position* verhalten sich Pause/Resume, Locate und Absolute Target nicht wie erwartet (alle Bewegungstypen, Rotation und Stretch, alle Timing-Typen): siehe [Wo ein Clip beginnt](#wo-ein-clip-beginnt-startwert-und-startposition).
 - Nach Stop mitten in einem Jitter-Clip bleibt der letzte Versatz stehen (bis zum nächsten Play).

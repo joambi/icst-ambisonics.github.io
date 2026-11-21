@@ -174,8 +174,6 @@ Double-clicking a movement clip opens **Edit Movement Clip** with three areas: *
 
 ### Movement types and their parameters
 
-<!-- TODO check: compare parameter matrix with the v4.0 dialog -->
-
 | Type | Path | Positions | Type parameters |
 |---|---|---|---|
 | **MoveTo (Cartesian)** | straight line from start to target | Start, Target | – |
@@ -185,8 +183,8 @@ Double-clicking a movement clip opens **Edit Movement Clip** with three areas: *
 | **Helix** | spiral with rising height | Start, Center | Rotations, Radius change, Height rise |
 | **Spline** | smooth curve through waypoints | Waypoints | Tension, Closed path |
 | **Polygon** | straight segments between waypoints | Waypoints | Closed path |
-| **Lissajous** | Lissajous figure around a centre point | Center | Frequency X/Y, Phase, Closed path |
-| **Rose** | rose curve around a centre point | Center | Petals, Phase |
+| **Lissajous** | Lissajous figure around a centre point | Center | Rotations, Frequency X/Y, Phase, Closed path |
+| **Rose** | rose curve around a centre point | Center | Rotations, Petals, Phase |
 | **Random Walk** | smooth, noise-based wandering | Center | Wander cycles, Seed |
 
 For all types with a centre point, the **Target** fields define the centre point (Center).
@@ -262,6 +260,8 @@ Every clip, movement or action, has the same timing options:
 ![Speed curve with presets](AT-CLP-06-Speed-Curve.png)
 
 {{< video name="AT-MOV-V02-Spiral-Palindrome-Speed-Curve" caption="Spiral with Palindrome and Speed curve (Rotations 1.8, Radius change 0.4)." >}}
+
+**Repetitions in action clips:** a repeated **rotation** keeps turning in the same direction (3 repetitions of 90° give 270°); with **Palindrome** it swings back and forth instead. Movement and Stretch replay their curve, and Palindrome mirrors it. **Jitter** ignores both options.
 
 The **(i)** buttons in the dialogs explain each option briefly.
 
@@ -445,7 +445,6 @@ If the distance scaler differs, a dialog asks: **Rescale** (convert positions, w
 ## Limitations (v4.0)
 
 <!-- TODO check: compare with v4.0; remove the first bullet below once the fix is in a release -->
-<!-- TODO confirm with developer: Repetitions with Relative During Clip add up (3 × 90° = 270°); use Palindrome for back and forth. Add to the Timing section once confirmed. -->
 
 - Without *Use Start Value* / *Use Defined Start Position*, Pause/Resume, locate and Absolute Target do not behave as expected (all movement types, rotation and stretch, all timing types): see [Where a clip starts](#where-a-clip-starts-start-value-and-start-position).
 - After stopping in the middle of a Jitter clip, the last offset stays until the next Play.
