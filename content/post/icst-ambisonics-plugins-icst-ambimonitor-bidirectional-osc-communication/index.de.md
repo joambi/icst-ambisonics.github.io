@@ -35,23 +35,23 @@ Generiere Bewegungsdaten in Max und sende sie via OSC zum _ICST AmbiEncoder_ in 
 
 - Öffne den _ICST AmbiEncoder_ in einem FX-Slot und navigiere zu **Encoder Settings**.
 - Unter **OSC In** aktiviere den OSC-Eingangs-Port (z.B. `50001`).
-   ![OSC-IN](osc-port.png)
+   <img src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-port.png" alt="OSC-IN" style="display:block;width:100%;max-width:520px;height:auto;margin:.8rem 0;border-radius:6px">
 - Klicke auf **OSC Out** und aktiviere den OSC-Ausgangs-Port.
     - Nutzt **ICST AmbiPlugins Standard XYZ Index**.
 - Der Max-Demo-Patch hört auf:
     `'/icst/ambi/sourceindex/xyz'`
 
-   ![OSC-OUT](osc-out.png)
+   <img src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-out.png" alt="OSC-OUT" style="display:block;width:100%;max-width:520px;height:auto;margin:.8rem 0;border-radius:6px">
 
 #### 2. Öffne MaxMSP und lade den Patch
 
 - Finde den _OSC communication with ICST plugins in DAW_ Patch.
 
 Siehe die Demo-GIFs:
-- <video autoplay muted loop playsinline preload="metadata" poster="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper-poster.jpg" aria-label="Max_Reaper" style="max-width:100%;height:auto"><source src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.mp4" type="video/mp4"></video>
+- <video autoplay muted loop playsinline preload="metadata" poster="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper-poster.jpg" aria-label="Max_Reaper" style="width:100%;max-width:720px;height:auto;border-radius:6px"><source src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/Max_Reaper.mp4" type="video/mp4"></video>
 
 Nächstes GIF: Wie es funktioniert:
-<video autoplay muted loop playsinline preload="metadata" poster="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins-poster.jpg" aria-label="Max-AmbiEnc" style="max-width:100%;height:auto"><source src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.mp4" type="video/mp4"></video>
+<video autoplay muted loop playsinline preload="metadata" poster="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins-poster.jpg" aria-label="Max-AmbiEnc" style="width:100%;max-width:720px;height:auto;border-radius:6px"><source src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/max_osc_to_AmbiPlugins.mp4" type="video/mp4"></video>
 
 ---
 

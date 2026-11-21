@@ -35,23 +35,23 @@ Generate motion data in Max and send it via OSC to the _ICST AmbiEncoder_ in you
 
 - Open the _ICST AmbiEncoder_ in an FX slot and navigate to **Encoder Settings**.
 - Under **OSC In**, activate the OSC input port (e.g., `50001`).
-   ![OSC-IN](osc-port.png)
+   <img src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-port.png" alt="OSC-IN" style="display:block;width:100%;max-width:520px;height:auto;margin:.8rem 0;border-radius:6px">
 - Click **OSC Out** and enable the OSC output port.
     - Uses **ICST AmbiPlugins Standard XYZ Index**.
 - The Max demo patch listens for:
     `'/icst/ambi/sourceindex/xyz'`
 
-   ![OSC-OUT](osc-out.png)
+   <img src="/post/icst-ambisonics-plugins-icst-ambimonitor-bidirectional-osc-communication/osc-out.png" alt="OSC-OUT" style="display:block;width:100%;max-width:520px;height:auto;margin:.8rem 0;border-radius:6px">
 
 #### 2. Open MaxMSP and Load the Patch
 
 - Find the _OSC communication with ICST plugins in DAW_ patch.
 
 See the demo Gifs:
-- <video autoplay muted loop playsinline preload="metadata" poster="Max_Reaper-poster.jpg" aria-label="Max_Reaper" style="max-width:100%;height:auto"><source src="Max_Reaper.mp4" type="video/mp4"></video>
+- <video autoplay muted loop playsinline preload="metadata" poster="Max_Reaper-poster.jpg" aria-label="Max_Reaper" style="width:100%;max-width:720px;height:auto;border-radius:6px"><source src="Max_Reaper.mp4" type="video/mp4"></video>
 
 Next Gif: How it works:
-<video autoplay muted loop playsinline preload="metadata" poster="max_osc_to_AmbiPlugins-poster.jpg" aria-label="Max-AmbiEnc" style="max-width:100%;height:auto"><source src="max_osc_to_AmbiPlugins.mp4" type="video/mp4"></video>
+<video autoplay muted loop playsinline preload="metadata" poster="max_osc_to_AmbiPlugins-poster.jpg" aria-label="Max-AmbiEnc" style="width:100%;max-width:720px;height:auto;border-radius:6px"><source src="max_osc_to_AmbiPlugins.mp4" type="video/mp4"></video>
 
 ---
 
