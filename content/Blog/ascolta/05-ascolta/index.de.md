@@ -35,7 +35,7 @@ Dieses Projekt wird unterstützt von Creative Victoria; Hochaltitudenforschungss
 ![Ph.Samartzis](img_6516.jpg)
 
 Was Klimawandel klingt wie - SWI [swissinfo.ch](https://www.swissinfo.ch)
-<https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
+<https://www.zhdk.ch/forschung-und-innovation/icst#js-content-element-42165>
 
 * * *
 
@@ -50,4 +50,4 @@ Cathy Lane ist eine englische Komponistin, Soundkünstlerin und Akademikerin. Ih
 ![Cathy](Cathy.png)
 
 [cathylane.co.uk](https://cathylane.co.uk)
-<https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
+<https://www.zhdk.ch/forschung-und-innovation/icst#js-content-element-42165>

@@ -35,7 +35,7 @@ This project is supported by Creative Victoria; High Altitude Research Station a
 ![Ph.Samartzis](img_6516.jpg)
 
 What climate change sounds like - SWI [swissinfo.ch](https://www.swissinfo.ch)
-<https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
+<https://www.zhdk.ch/forschung-und-innovation/icst#js-content-element-42165>
 
 * * *
 
@@ -50,4 +50,4 @@ Cathy Lane is an English composer, sound artist, and academic. Her work uses lan
 ![Cathy](Cathy.png)
 
 [cathylane.co.uk](https://cathylane.co.uk)
-<https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031>
+<https://www.zhdk.ch/forschung-und-innovation/icst#js-content-element-42165>

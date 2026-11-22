@@ -297,7 +297,7 @@ Einige Mikrofone (z. B. der Zoom H3-VR) übernehmen dies intern und geben B-Form
 | Mikrofon | Ordnung | Kapseln | Ausgabe | Hinweise |
 |---|---|---|---|---|
 | [Zoom H3-VR](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h3-vr/) | 1. | 4 | A- oder B-Format | Einsteigergerät, integrierter Encoder, gut für Feldaufnahmen |
-| [Sennheiser Ambeo VR Mic](https://www.sennheiser.com/en-us/catalog/products/microphones/ambeo-vr-mic/ambeo-vr-mic-506071) | 1. | 4 | A-Format | Weit verbreitet, Enkodierung via Sennheiser A-B-Ambisonics-Plugin |
+| [Sennheiser Ambeo VR Mic](https://www.sennheiser.com/en-us) | 1. | 4 | A-Format | Weit verbreitet, Enkodierung via Sennheiser A-B-Ambisonics-Plugin |
 | [Rode NT-SF1](https://rode.com/en/microphones/studio-condenser/nt-sf1) | 1. | 4 | A-Format | SoundField-by-Rode-Software inklusive |
 | [Core Sound TetraMic](https://www.core-sound.com/TetraMic/1.php) | 1. | 4 | A-Format | Bewährtes Gerät, weit verbreitet in Feldaufnahme und Forschung |
 | [Zylia ZM-1](https://www.zylia.co/zylia-zm-1-microphone.html) | 3. | 19 | A-Format | Higher-Order, inkl. Zylia Studio Software, gute Ortsauflösung |

@@ -24,13 +24,6 @@ Ich entwickle derzeit das Projekt Kampfumo, eine klangkünstlerische Erkundung d
 
 Im räumlichen Audio-Studio des ICST experimentiere ich mit immersiven Technologien, um ein kinematisches und multidimensionales Hörerlebnis zu schaffen.
 
-### Höre die neue Veröffentlichung von Nandele Maguni:
-- [Nandele Maguni "Kampfumo" Stereo](https://e.pcloud.link/publink/show?code=XZcB96ZIpQd93jYp9YJyyVLT0aWOSThvLNV)
-- [Nandele Maguni "Kampfumo" Binaural](https://e.pcloud.link/publink/show?code=XZk296ZezHI5GUzScpbYWV0SADkCjkigCbV)
-- [Nandele Maguni "Kampfumo" Binaural+ ](https://e.pcloud.link/publink/show?code=XZV296ZHgMAiKBRIB0EGXgbV9g5V0hDomjk)
-
-- (Binaural+ funktioniert ähnlich wie im Heimkino)
-
 Es geht nicht nur um Klang, sondern um Bewegung, Gedächtnis und Raum.
 ![nandele_02](nandele_02.png)
 

@@ -39,7 +39,7 @@ Kurzreferenz zu den Begriffen aus [Ambisonics 101](/de/ambisonics-101/).
   → [Wikipedia: Ambisonic reproduction systems](https://en.wikipedia.org/wiki/Ambisonic_reproduction_systems)
 
 - <a id="gl-binaural"></a>**Binaural / HRTF** — Kopfhörer-Rendering via Head-Related Transfer Functions (HRTFs): simuliert räumliche Richtungswahrnehmung ohne Lautsprecher. Ermöglicht Ambisonics-Abhören auf jedem Kopfhörer.
-  → [Wikipedia: Binauraltechnik](https://de.wikipedia.org/wiki/Binauraltechnik) | [Wikipedia: HRTF](https://de.wikipedia.org/wiki/Head-Related_Transfer_Function)
+  → [Wikipedia: Binaurale Tonaufnahme](https://de.wikipedia.org/wiki/Binaurale_Tonaufnahme) | [Wikipedia: HRTF](https://de.wikipedia.org/wiki/Head-Related_Transfer_Function)
 
 - <a id="gl-dolby-atmos"></a>**Dolby Atmos** — Objektbasiertes 3D-Audioformat: Klangquellen werden als Audio-Objekte mit Positions-Metadaten gespeichert; ein lizenzierter Renderer platziert sie im Zielsystem (Kino, Heimkino, Streaming-Dienste).
   → [dolby.com](https://www.dolby.com/technologies/dolby-atmos/) | [Wikipedia: Dolby Atmos](https://de.wikipedia.org/wiki/Dolby_Atmos)
@@ -51,7 +51,7 @@ Kurzreferenz zu den Begriffen aus [Ambisonics 101](/de/ambisonics-101/).
   → [Wikipedia: Eulersche Winkel](https://de.wikipedia.org/wiki/Eulersche_Winkel)
 
 - <a id="gl-azimuth"></a>**Azimut / Elevation** — Polarkoordinaten zur Beschreibung von Quellrichtungen: Azimut = horizontaler Winkel (0°–360°, in den ICST-Tools im Uhrzeigersinn: 0° vorne, 90° rechts, 180° hinten, 270° links), Elevation = vertikaler Winkel (−90° bis +90°).
-  → [Wikipedia: Horizontalkoordinatensystem](https://de.wikipedia.org/wiki/Horizontalkoordinatensystem)
+  → [Wikipedia: Kartesisches Koordinatensystem](https://de.wikipedia.org/wiki/Kartesisches_Koordinatensystem)
 
 - <a id="gl-foa"></a>**First-Order Ambisonics (FOA)** — Ambisonics 1. Ordnung: 4 Kanäle (W, X, Y, Z). Liefern alle gängigen Ambisonics-Mikrofone. Kompakt und robust, mit begrenzter räumlicher Auflösung.
   → [Welche Ordnung brauche ich?](/de/post/hoa-ordnung-wahl-praxis/)
@@ -182,7 +182,7 @@ Kurzreferenz zu den Begriffen aus [Ambisonics 101](/de/ambisonics-101/).
   → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
 
 - <a id="gl-vbap-wfs"></a>**VBAP und Wellenfeldsynthese** — Zwei andere Wiedergabeverfahren. VBAP verteilt eine Quelle auf die zwei oder drei nächsten Lautsprecher und hängt vom Layout ab. Wellenfeldsynthese rekonstruiert Wellenfronten mit vielen Lautsprechern auf einer grossen Fläche.
-  → [Wikipedia: VBAP](https://en.wikipedia.org/wiki/Vector_base_amplitude_panning) | [Wikipedia: Wave field synthesis](https://en.wikipedia.org/wiki/Wave_field_synthesis)
+  → [VBAP (Aalto University)](http://legacy.spa.aalto.fi/research/cat/vbap/) | [Wikipedia: Wave field synthesis](https://en.wikipedia.org/wiki/Wave_field_synthesis)
 
 ## Binaural
 

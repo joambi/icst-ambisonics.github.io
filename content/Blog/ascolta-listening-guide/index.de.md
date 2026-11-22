@@ -283,4 +283,4 @@ Schuett, J. (2021). *ICST Kompositionsstudio*. https://icst-kompositionsstudio.c
 
 Girot, C., Schütz, N., Toro-Pérez, G., Schütt, J., Feucht, F. & Vollmer, M. (2012). *Raum-Klang-Labor*. ETH Zürich. https://girot.arch.ethz.ch/archived/raum-klang-labor
 
-Kock, M. (2025). *Wie Sounddesign wirkt*. Hanser. https://www.hanser-fachbuch.de/en/fachbuch/artikel/9783446483002
+Kock, M. (2025). *Wie Sounddesign wirkt*. Hanser.

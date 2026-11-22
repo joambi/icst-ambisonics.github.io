@@ -296,7 +296,7 @@ Some microphones (e.g. the Zoom H3-VR) handle this internally and output B-forma
 | Microphone | Order | Capsules | Output | Notes |
 |---|---|---|---|---|
 | [Zoom H3-VR](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h3-vr/) | 1st | 4 | A- or B-format | Entry-level, integrated encoder, good for field recording |
-| [Sennheiser Ambeo VR Mic](https://www.sennheiser.com/en-us/catalog/products/microphones/ambeo-vr-mic/ambeo-vr-mic-506071) | 1st | 4 | A-format | Widely used, requires Sennheiser A-B Ambisonics plugin for encoding |
+| [Sennheiser Ambeo VR Mic](https://www.sennheiser.com/en-us) | 1st | 4 | A-format | Widely used, requires Sennheiser A-B Ambisonics plugin for encoding |
 | [Rode NT-SF1](https://rode.com/en/microphones/studio-condenser/nt-sf1) | 1st | 4 | A-format | SoundField by Rode software included |
 | [Core Sound TetraMic](https://www.core-sound.com/TetraMic/1.php) | 1st | 4 | A-format | Long-established, widely used in field recording and research |
 | [Zylia ZM-1](https://www.zylia.co/zylia-zm-1-microphone.html) | 3rd | 19 | A-format | Higher-order, includes Zylia Studio software, good spatial resolution |

@@ -181,7 +181,7 @@ Quick reference for the terms used in [Ambisonics 101](/ambisonics-101/).
   → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
 
 - <a id="gl-vbap-wfs"></a>**VBAP and wave field synthesis** — Two other reproduction methods. VBAP distributes a source over the nearest two or three loudspeakers and depends on the layout. Wave field synthesis reconstructs wave fronts with many loudspeakers over a large area.
-  → [Wikipedia: VBAP](https://en.wikipedia.org/wiki/Vector_base_amplitude_panning) | [Wikipedia: Wave field synthesis](https://en.wikipedia.org/wiki/Wave_field_synthesis)
+  → [VBAP (Aalto University)](http://legacy.spa.aalto.fi/research/cat/vbap/) | [Wikipedia: Wave field synthesis](https://en.wikipedia.org/wiki/Wave_field_synthesis)
 
 ## Binaural
 
