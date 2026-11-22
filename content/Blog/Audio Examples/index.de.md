@@ -27,22 +27,4 @@ Hinweis: Ambitest-Referenzbeispiel von Audiobrewers:
 
 ### Beispiele
 
-<div class="home-cards">
-  <section class="home-card playback-card">
-    <h4>3D-Audio-Test 01 · Binaural Preview</h4>
-    <p>Format: Binaural Stereo · Preview-Dauer: 4min</p>
-    <audio controls preload="none">
-      <source src="/audio/ambitest%20bin.ogg" type="audio/ogg">
-      Dein Browser unterstützt das Audio-Element nicht.
-    </audio>
-  </section>
-
-  <section class="home-card playback-card">
-    <h4>Beispiel 02 · Speaker Stereo Preview</h4>
-    <p>Format: Stereo for Speakers · Preview-Dauer: 4min</p>
-    <audio controls preload="none">
-      <source src="/audio/ambitest%20stereo.ogg" type="audio/ogg">
-      Dein Browser unterstützt das Audio-Element nicht.
-    </audio>
-  </section>
-</div>
+Die Ambitest-Referenzbeispiele (Stereo und Binaural) werden hier nicht gehostet; sie sind in der oben verlinkten AudioBrewers-Bibliothek zu hören.

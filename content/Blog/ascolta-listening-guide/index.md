@@ -268,8 +268,6 @@ Xie, B. & Yu, G. (2021). *Psychoacoustic Principle, Methods, and Problems with P
 
 Ziemer, T. (2023). *Psychoacoustic Sound Field Synthesis for Music*. Springer. https://link.springer.com/book/10.1007/978-3-031-26863-2
 
-Gaveau, V., Parizet, E., & Koehl, V. (2022). *Perceptual evaluation of high-order ambisonics reproduction.* Acta Acustica, 6, 28.
-
 ### Theory of listening and space-form
 
 Schaeffer, P. (1966). *Traité des objets musicaux*. Paris: Éditions du Seuil.

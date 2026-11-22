@@ -138,9 +138,9 @@ Referenz-ambiX-Aufnahmen (ACN/SN3D) zum Testen von Decodern, Binaural-Renderern 
 Schlüsseltexte zur akusmatischen Komposition und räumlichem Audio — für Studium, Analyse und Residenz-Vorbereitung.
 
 <div class="hero__links">
-  <a class="hero__link" href="/downloads/papers/DENIS SMALLEY Space form and the acousmatic image.pdf" download>Smalley — Space-form and the Acousmatic Image (PDF)</a>
-  <a class="hero__link" href="/downloads/papers/SMALLEYFromSoundShapestoSpaceForm.pdf" download>Smalley — From Sound Shapes to Space-Form (PDF)</a>
-  <a class="hero__link" href="/downloads/papers/EMS_Barrett2010.pdf" download>Barrett — EMS 2010 (PDF)</a>
+  <a class="hero__link" href="https://doi.org/10.1017/S1355771807001872" target="_blank" rel="noopener noreferrer">Smalley — Space-form and the Acousmatic Image (Organised Sound, extern)</a>
+  <a class="hero__link" href="https://doi.org/10.1017/S1355771810000427" target="_blank" rel="noopener noreferrer">From Sound Shapes to Space-Form: Smalley's writings and works (Organised Sound 2011, extern)</a>
+  <a class="hero__link" href="https://www.ems-network.org/" target="_blank" rel="noopener noreferrer">Barrett — Ambisonics and acousmatic space (EMS 2010, extern)</a>
   <a class="hero__link" href="https://drive.switch.ch/index.php/s/dM2GrZPe8EmPwzV" target="_blank" rel="noopener noreferrer">Grosse Mehrkanal-Dateien (SWITCHdrive, extern)</a>
   <a class="hero__link" href="https://www.zhdk.ch/forschung/icst/software-downloads-5379" target="_blank" rel="noopener noreferrer">Alle ICST-Software (ZHdK, extern)</a>
 </div>
