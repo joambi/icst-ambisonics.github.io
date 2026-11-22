@@ -8,6 +8,7 @@ build:
 params:
   author: Johannes Schuett
 title: HOME
+description: "Startseite von ICST Ambisonics: Plugins, Werkzeuge und Dokumentation zu Ambisonics am ICST, ZHdK."
 weight: 10
 image:
 tags:
