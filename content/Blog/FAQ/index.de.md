@@ -6,6 +6,7 @@ weight: 16
 draft: false
 languageCode: de
 class: faq
+home_hide: true
 ---
 
 <p class="faq-intro">Antworten auf die häufigsten Fragen zu den ICST Ambisonics Plugins für REAPER und den ICST Ambisonics Tools für Max/MSP.</p>

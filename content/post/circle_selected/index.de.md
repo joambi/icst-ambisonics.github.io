@@ -20,7 +20,7 @@ tool: ["AmbiEncoder", "Lua"]
 
 ## ICST_AmbiEncoder_64_CircleSelected_Lua-Presets
 
-**Für wen:** Level: Intermediate | Zielgruppe: Reaper-Power-User, Performance Artist.
+**Level:** Intermediate | **Zielgruppe:** Reaper-Power-User, Performance Artist.
 
 ## 📃 Benutzer-Dokumentation
 **Script:** `ICST_AmbiEncoder_64_CircleSelected_Presets.lua`

@@ -5,9 +5,10 @@ date: 2025-06-25T15:12:00
 weight: 12
 group: "Studio"
 languageCode: de
+home_hide: true
 ---
 
-**Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
+**Zielgruppe:** Komponist:in, Studierende, Researcher, Studio-Gäste.
 
 ## Das ICST Kompositionsstudio
 

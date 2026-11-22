@@ -5,6 +5,7 @@ date: 2026-01-01T00:00:00
 weight: 16
 draft: false
 class: faq
+home_hide: true
 ---
 
 <p class="faq-intro">Answers to the most common questions about the ICST Ambisonics Plugins for REAPER and the ICST Ambisonics Tools for Max/MSP.</p>

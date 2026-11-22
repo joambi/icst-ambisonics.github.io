@@ -8,6 +8,7 @@ tags:
   - b-format
   - test-files
   - ambisonics
+home_hide: true
 ---
 
 Eine kuratierte Sammlung von Ambisonics-B-Format-Referenzdateien zum Testen von Dekodern, Binauralrenderern und räumlichen Audio-Pipelines. Alle Dateien verwenden die **ambiX**-Konvention: ACN-Kanalreihenfolge, SN3D-Normierung.

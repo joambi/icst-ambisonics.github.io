@@ -14,7 +14,7 @@ post_kind: "news"
 ---
 
 
-**Für wen:** Zielgruppe: neue und wiederkehrende Seitennutzer:innen.
+**Zielgruppe:** neue und wiederkehrende Seitennutzer:innen.
 
 ## Warum wir die Seite neu strukturiert haben
 Die neue Struktur reduziert Suchaufwand und führt schneller zu den passenden Inhalten. Statt gemischter Bereiche gibt es klare Einstiegspunkte für Tutorials, Studio Cases, Downloads und Dokumentation.

@@ -15,7 +15,7 @@ tool: ["OSC"]
 ---
 
 
-**Für wen:** Level: Intermediate | Zielgruppe: Power-User, Technical Artist.
+**Level:** Intermediate | **Zielgruppe:** Power-User, Technical Artist.
 
 Diese Seite ist der **Praxis-Quickstart**.
 Für die vollständige Adress- und Parameterreferenz siehe:
