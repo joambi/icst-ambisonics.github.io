@@ -124,7 +124,7 @@ Thus I coupled Y Front ↔ Back and Z Top ↔ Bottom with the IEM-Multifilter.
 <div class="step-grid">
   <div class="step"><div class="step__num">1</div><div class="step__text">How can I make the presence of the front/back and the feeling of highs and lows more audible?</div></div>
   <div class="step"><div class="step__num">2</div><div class="step__text">Create OSC communication between Encoder (Y, Z axes) and IEM MultiEQ (Blauert's Bands).</div></div>
-  <div class="step"><div class="step__num">3</div><div class="step__text">Set up a Mono-Encoder FX-Chain "Blauert's Bands-Ambi".</div></div>
+  <div class="step"><div class="step__num">3</div><div class="step__text">Set up an AmbiEncoder FX-Chain "Blauert's Bands-Ambi".</div></div>
 </div>
 
 ---

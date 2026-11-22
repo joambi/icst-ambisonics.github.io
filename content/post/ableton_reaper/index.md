@@ -32,7 +32,7 @@ Ableton transmits audio via "BlackHole" (up to 64 channels) to Reaper's BlackHol
 ![Ableton_outs](Ableton_output.png)
 The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncoder via localhost on port 50001. In Reaper, audio inputs from BlackHole (1-4) are received, while the ICST Multi-AmbiEncoder processes OSC sources (1-16).
 
-<video autoplay muted loop playsinline preload="metadata" poster="Ableton_OSC_BlackHole-poster.jpg" aria-label="Ableton_to_MultiEncoder" style="max-width:100%;height:auto"><source src="Ableton_OSC_BlackHole.mp4" type="video/mp4"></video>
+<video autoplay muted loop playsinline preload="metadata" poster="Ableton_OSC_BlackHole-poster.jpg" aria-label="Ableton_to_AmbiEncoder_64" style="max-width:100%;height:auto"><source src="Ableton_OSC_BlackHole.mp4" type="video/mp4"></video>
 
 This setup allows recording B-format up to the 7th order from Ableton Live 12.
 
@@ -74,12 +74,12 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)
 3. Set all active tracks to "Record: Disable (monitor only)."
    ![Rec_disable](rec_disable.png)
 
-4. Route Tracks 1-63 to ICST MultiEncoder_64.
+4. Route Tracks 1-63 to ICST AmbiEncoder_64.
 
 ![Routing_Inputs](Routing_Overview.png)
 - When correctly routed, the source appears in the encoder radar for verification.
 
-5. Configure OSC connection between Ableton and ICST MultiEncoder. Each encoder requires its own OSC port.
+5. Configure OSC connection between Ableton and ICST AmbiEncoder_64. Each encoder requires its own OSC port.
 
     ![OSC-Ports](OSC-Port.png)
 6. Activate OSC transmission in E4L_Multi-Panner. The ICST AmbiEncoder_64 will display moving dots when receiving OSC data.
@@ -93,6 +93,6 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)
 10. Move to the **Start Marker** at **01:00:000** (LTC has a 60' offset), then press **Fire** or **Play** in Ableton Live to start recording.
 <video autoplay muted loop playsinline preload="metadata" poster="Live_Reper_BF-poster.jpg" aria-label="recoding_bf" style="max-width:100%;height:auto"><source src="Live_Reper_BF.mp4" type="video/mp4"></video>
 
-For more details, refer to the documentation for Ableton Live, Reaper, and the ICST MultiEncoder.
+For more details, refer to the documentation for Ableton Live, Reaper, and the ICST AmbiEncoder_64.
 
 ----
