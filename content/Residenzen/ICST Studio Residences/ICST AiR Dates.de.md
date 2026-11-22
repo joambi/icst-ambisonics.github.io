@@ -1,5 +1,6 @@
 ---
 title: ICST AiR Daten
+description: "Termine der ICST Artist-in-Residence-Aufenthalte im Studio."
 date: 2025-06-16T00:00:00Z
 draft: false
 languageCode: de

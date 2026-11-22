@@ -1,5 +1,6 @@
 ---
 title: ICST AiR Dates
+description: "Dates of the ICST Artist-in-Residence stays in the studio."
 date: 2025-06-16T00:00:00Z
 draft: false
 translationKey: icst-air-dates
