@@ -1,6 +1,6 @@
 ---
 title: Welche Ambisonics-Ordnung brauche ich? – HOA-Wahl in der Praxis
-description: "FOA, HOA3 oder HOA7? Dieser Artikel erklärt, wann welche Ordnung sinnvoll ist: Kanalzahl, räumliche Auflösung, Lautsprecher-Anforderungen, CPU-Last und binaural – als klare Entscheidungshilfe für den Produktionsalltag."
+description: "FOA, HOA3 oder HOA7? Kurzantwort: in HOA7 arbeiten, solange die CPU reicht, mit HOA3 als Rückfall. Mit Kanalzahlen, Lautsprecher-Anforderungen, gemessener CPU-Last in REAPER und binauralem Abhören."
 date: 2026-03-21T18:00:00+01:00
 year: 2026
 month: 2026-03
@@ -15,6 +15,10 @@ post_kind: "background"
 ---
 
 Level: Beginner–Intermediate | **Audience:** Komponist:in, Producer:in, alle die eine neue Ambisonics-Session aufsetzen.
+
+---
+
+**Kurzantwort:** Arbeite in **HOA7**, solange dein Computer das schafft, sonst in **HOA3**. **FOA** genügt für Skizzen nur mit Kopfhörern und für kleine Anlagen. Die Ordnung lässt sich später reduzieren, aber nie nachträglich erhöhen. Auf einem MacBook Pro M2 Pro brauchte eine volle HOA7-Session mit 32 Quellen rund 3 % CPU in REAPER (siehe die gemessene Tabelle unten).
 
 ---
 
