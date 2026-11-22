@@ -1,6 +1,6 @@
 ---
 title: "ICST Ambisonics Plugins"
-description: "Free, open-source VST3/AU/LV2 Ambisonics plugin suite for REAPER — MonoEncoder, MultiEncoder, AmbiDecoder, MultiDecoder. Higher Order Ambisonics up to 7th order."
+description: "Free, open-source VST3/AU/LV2 Ambisonics plugin suite for REAPER — AmbiEncoder, AmbiEncoder_64, AmbiDecoder, MultiDecoder. Higher Order Ambisonics up to 7th order."
 date: 2025-01-20T02:35:00
 type: docs
 cascade:
@@ -13,8 +13,8 @@ Up to **64 sources** can be encoded to **B-format / HOA** and decoded to freely 
 
 | Module | Use it for |
 |---|---|
-| **MonoEncoder**, **StereoEncoder** | place mono or stereo sources in the Ambisonics field |
-| **MultiEncoder_64** | position and move up to 64 sources, with source groups and the Animator |
+| **AmbiEncoder**, **StereoEncoder** | place mono or stereo sources in the Ambisonics field |
+| **AmbiEncoder_64** | position and move up to 64 sources, with source groups and the Animator |
 | **AmbiDecoder** | decode B-format to a loudspeaker setup |
 | **MultiDecoder** | decode to layered or segmented loudspeaker arrays |
 

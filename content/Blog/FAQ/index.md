@@ -64,10 +64,10 @@ Open System Settings → Privacy & Security → scroll down and click "Open Anyw
 ## Signal Flow & Setup
 
 <details class="faq-item">
-<summary class="faq-question">What is the difference between AmbiEncoder and MultiEncoder?</summary>
+<summary class="faq-question">What is the difference between AmbiEncoder and AmbiEncoder_64?</summary>
 <div class="faq-answer">
 
-The AmbiEncoder handles a single mono audio source and positions it in 3D space. The MultiEncoder handles multiple sources simultaneously (up to 36 in v3.2) and is the recommended choice for production sessions.
+The AmbiEncoder handles a single mono audio source and positions it in 3D space. The AmbiEncoder_64 handles multiple sources simultaneously (up to 64 in v4.0, 36 in v3.2) and is the recommended choice for production sessions.
 
 </div>
 </details>

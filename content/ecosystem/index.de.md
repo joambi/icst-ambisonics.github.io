@@ -44,7 +44,7 @@ Stand: 2026-11-19. Als **Beta** markierte Komponenten sind zur Evaluation freige
 - Die **ICST Ambisonics Plugins** sind der Kern: Encoding, Decoding, Monitoring.
 - Das **Bundle** verpackt sie für REAPER zusammen mit Skripten, IEM-Plugins und Dokumentation.
 - **Motion Map, Kristall Motion Map und Motion Markers** schreiben räumliche Bewegung für den AmbiEncoder_64 (REAPER Lua).
-- Der **Animator** animiert Quellgruppen im Multi-AmbiEncoder_64 auf einer Timeline. Der **Animator Choreographer** erzeugt die Animator-Szenen-XML und importiert Regionen aus REAPER per CSV.
+- Der **Animator** animiert Quellgruppen im AmbiEncoder_64 auf einer Timeline. Der **Animator Choreographer** erzeugt die Animator-Szenen-XML und importiert Regionen aus REAPER per CSV.
 - Die **Max-Tools** decken dieselbe Kette aus Encoding, Decoding und Steuerung innerhalb von Max ab.
 - **Layouts, Templates und das B-Format-Archiv** sind das Material rund um die Werkzeuge.
 
@@ -72,7 +72,7 @@ Stand: 2026-11-19. Als **Beta** markierte Komponenten sind zur Evaluation freige
 | Komponente | Inhalt | Plattform / Format | Status | Version | Lizenz | Quelle |
 | --- | --- | --- | --- | --- | --- | --- |
 | [ICST Ambisonics Plugins](/de/icst-ambisonics-plugins/) (Core) | AmbiEncoder, AmbiEncoder_64, AmbiDecoder, MultiDecoder, Monitor | VST3, AU; LV2 experimentell; macOS, Windows | Stable | 4.0 | GPL-3.0-or-later | [schweizerweb/icst-ambisonics-plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases) |
-| [ICST Animator](/de/icst-ambisonics-plugins/11_animator/) | Timeline-Animation von Quellgruppen im Multi-AmbiEncoder_64, Szenen als XML | macOS, Windows | Docs only (veröffentlicht mit Plugins 4.0) | Teil der Plugins | GPL-3.0-or-later | [schweizerweb/icst-ambisonics-plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases) |
+| [ICST Animator](/de/icst-ambisonics-plugins/11_animator/) | Timeline-Animation von Quellgruppen im AmbiEncoder_64, Szenen als XML | macOS, Windows | Docs only (veröffentlicht mit Plugins 4.0) | Teil der Plugins | GPL-3.0-or-later | [schweizerweb/icst-ambisonics-plugins](https://github.com/schweizerweb/icst-ambisonics-plugins/releases) |
 | [ICST Animator Choreographer](/de/post/icst-animator-choreographer/) | Desktop-App, die Animator-Szenen-XML in fünf Schritten aufbaut; Regionen-Import aus REAPER per CSV; optionaler Entwurf aus einer Beschreibung mit lokalem Modell (Ollama) | macOS, Windows, Linux; unsigniert | Beta | [0.1.0](https://github.com/joambi/animator-choreographer/releases/tag/v0.1.0) | GPL-3.0-or-later | [joambi/animator-choreographer](https://github.com/joambi/animator-choreographer) |
 | [ICST Ambisonics Bundle (`ICST_Ambi_Reaper`)](/de/icst-ambisonics-plugins/19_icst_ambi_reaper_bundle/) | Portabler REAPER-Ordner: Toolbar, Lua-Skripte, ICST- und IEM-VST3, SWS, js_ReaScriptAPI, ReaPack, Doku | REAPER 7; macOS (Apple Silicon empfohlen), Windows | Beta (macOS vollständig, Windows ungetestet) | [1.1.3](https://github.com/joambi/ICST_Ambi_Reaper/releases/tag/v1.1.3) | ICST-Teile GPL-3.0-or-later, sonst je Komponente | [joambi/ICST_Ambi_Reaper](https://github.com/joambi/ICST_Ambi_Reaper) |
 | [ICST Ambisonics Tools für Max](/de/icst-ambisonics-tools/) | `ambiencode~`, `mc.ambiencode~`, `ambidecode~`, `ambipanning~`, `ambimonitor`, `ambicontrol` und weitere | Max 8, Max Package Manager | Stable | — | GPL-3.0-or-later | — |

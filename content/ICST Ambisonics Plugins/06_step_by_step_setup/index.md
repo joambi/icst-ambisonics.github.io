@@ -118,17 +118,17 @@ Use stable names early to avoid routing mistakes:
 Mono AmbiEncoder overview:
 ![open monoencoder](MonoEncoder_01.png)
 
-- In the FX window, load the **ICST MonoEncoder**.
+- In the FX window, load the **ICST AmbiEncoder**.
 - Add an **AmbiEncoder (ICST)** (1-4) to the mono source.
 
 Routing:
-- MonoEncoder -> 64-channel output -> Bformat Master.
+- AmbiEncoder -> 64-channel output -> Bformat Master.
 
 ![MonnoEncoder](MonoEncoder.png)
 
 #### 7. Record motions in the Reaper track
 
-Record motions in the MonoEncoder:
+Record motions in the AmbiEncoder:
 <video autoplay muted loop playsinline preload="metadata" aria-label="rec_xyz" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/rec_xyz.mp4"></video>
 
 Play back saved motion:

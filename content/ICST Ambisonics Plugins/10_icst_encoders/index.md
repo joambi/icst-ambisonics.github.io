@@ -16,13 +16,13 @@ If you are unsure what **B-Format**, **ambiX**, **ACN/SN3D**, or **64 channels**
 
 ## When to use which encoder
 
-Use **MonoEncoder** when:
+Use **AmbiEncoder** when:
 
 - you want to position one source at a time
 - you are learning the workflow
 - you want the clearest per-source routing
 
-Use **MultiEncoder** when:
+Use **AmbiEncoder_64** when:
 
 - you want to control many sources in one interface
 - you need source grouping
@@ -33,8 +33,8 @@ Use **MultiEncoder** when:
 
 The **ICST Encoders** position and move sound sources inside the Ambisonics B-format field.
 
-- **MonoEncoder** handles one mono source.
-- **MultiEncoder** handles up to 64 sources on one track and organizes them into up to 8 groups.
+- **AmbiEncoder** handles one mono source.
+- **AmbiEncoder_64** handles up to 64 sources on one track and organizes them into up to 8 groups.
 
 A distinctive feature is the built-in **distance simulation**, which combines lowpass filtering and a Doppler-style effect to shape depth perception.
 
@@ -44,7 +44,7 @@ OSC input and output make the encoders usable in controller-based and algorithmi
 
 ![ICST AmbiEncoder overview](<CleanShot 2026-03-04 at 14.27.47@2x.png>)
 
-Top left the **MonoEncoder** (one source), bottom left the **MultiEncoder** with three groups, on the right the **Encoder Settings** window.
+Top left the **AmbiEncoder** (one source), bottom left the **AmbiEncoder_64** with three groups, on the right the **Encoder Settings** window.
 
 1. **Settings** (gear) – opens the Encoder Settings window.
 2. **Help** (?)
@@ -94,7 +94,7 @@ The radar gives a top-down view of the field and makes source positions and grou
 
 ## Grouping and movement
 
-MultiEncoder is especially useful when spatial movement is not just individual, but structural:
+AmbiEncoder_64 is especially useful when spatial movement is not just individual, but structural:
 
 - several sources can be grouped
 - groups can be moved relative to a group center
@@ -144,7 +144,7 @@ For setup and syntax:
 
 ## Common mistakes
 
-- using MultiEncoder when a simple MonoEncoder track would be clearer
+- using AmbiEncoder_64 when a simple AmbiEncoder track would be clearer
 - changing distance scaling late in the project and breaking movement consistency
 - forgetting that encoder routing must still end in a stable Bformat Master
 - treating OSC as required when normal REAPER automation would be enough

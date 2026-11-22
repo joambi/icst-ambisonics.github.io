@@ -1,6 +1,6 @@
 ---
 title: Ableton Live & ICST Ambisonics Integration
-description: "Anleitung zur Aufnahme von 7. Ordnung Ambisonics aus Ableton Live in Reaper über BlackHole, OSC-gesteuerte MultiEncoder-Automation und LTC-Sync."
+description: "Anleitung zur Aufnahme von 7. Ordnung Ambisonics aus Ableton Live in Reaper über BlackHole, OSC-gesteuerte AmbiEncoder_64-Automation und LTC-Sync."
 date: 2025-03-16T09:44:58+01:00
 slug: ableton-reaper
 aliases:
@@ -12,7 +12,7 @@ tags: ["ableton", "reaper", "workflow", "ambiencoder", "tutorial", "blackhole"]
 
 key_points:
   - "Audio aus Ableton Live via BlackHole in REAPER für 7th-Order Ambisonics routen"
-  - "DAWs per LTC synchronisieren und MultiEncoder aus Ableton-OSC-Clips automatisieren"
+  - "DAWs per LTC synchronisieren und AmbiEncoder_64 aus Ableton-OSC-Clips automatisieren"
 DisableComments: false
 difficulty: "advanced"
 post_kind: "tutorial"
@@ -20,12 +20,12 @@ tool: ["AmbiEncoder", "Ableton"]
 ---
 
 * * *
-## AbletonLive zu ICST Ambisonics MultiEncoder in Reaper
+## AbletonLive zu ICST Ambisonics AmbiEncoder_64 in Reaper
 
 **Level:** Advanced | **Zielgruppe:** Ableton/Reaper-Hybrid-Producer.
 
 Dieses Tutorial bietet eine detaillierte Anleitung zur Aufnahme von 7. Ordnung Ambisonics mit Ableton Live und Reaper. Es richtet sich an Benutzer mit grundlegenden Kenntnissen beider Programme. Wenn du mit den Konzepten von Ableton Live, Reaper und Ambisonics vertraut bist, sollten die Schritte einfach sein. Andernfalls können einige Abschnitte herausfordernd sein. In diesem Fall wird empfohlen, zuerst die Grundlagen dieser Software und der Ambisonics-Technologie zu erlernen.
-### Ableton zu ICST MultiEncoder in Reaper
+### Ableton zu ICST AmbiEncoder_64 in Reaper
 
 Ableton überträgt Audio über "BlackHole" (bis zu 64 Kanäle) zu Reapers BlackHole-Eingangsgeräten.
 
@@ -74,7 +74,7 @@ Tipp: Stelle sicher, dass du die gleichen OSC-Portnummern in Reaper verwendest. 
 3. Stelle alle aktiven Spuren auf "Record: Disable (monitor only)."
    ![Rec_disable](rec_disable.png)
 
-4. Leite Spuren 1-63 zum ICST MultiEncoder_64 weiter.
+4. Leite Spuren 1-63 zum ICST AmbiEncoder_64 weiter.
 
 ![Routing_Inputs](Routing_Overview.png)
 - Wenn korrekt geroutet, erscheint die Quelle im Encoder-Radar zur Verifizierung.
@@ -82,7 +82,7 @@ Tipp: Stelle sicher, dass du die gleichen OSC-Portnummern in Reaper verwendest. 
 5. Konfiguriere die OSC-Verbindung zwischen Ableton und ICST MultiEncoder. Jeder Encoder benötigt seinen eigenen OSC-Port.
 
     ![OSC-Ports](OSC-Port.png)
-6. Aktiviere OSC-Übertragung in E4L_Multi-Panner. Der ICST MultiEncoder zeigt bewegliche Punkte an, wenn OSC-Daten empfangen werden.
+6. Aktiviere OSC-Übertragung in E4L_Multi-Panner. Der ICST AmbiEncoder_64 zeigt bewegliche Punkte an, wenn OSC-Daten empfangen werden.
    ![OSC_ON](OSC_ON.png)
 7. Klicke in Reaper auf Record -Output, um dein Bformat aufzunehmen. Siehe nächstes Bild.
    ![Rec_BF](Rec_BF.png)

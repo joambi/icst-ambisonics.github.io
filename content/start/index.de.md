@@ -104,7 +104,7 @@ Womit möchtest du beginnen? Wähle deinen Einstieg.
 <span class="onboarding-step__num">4</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Erste Session aufbauen — Schritt für Schritt</p>
-<p class="onboarding-step__desc">Der vollständige Walkthrough: B-Format-Bus einrichten, MultiEncoder hinzufügen, Decoder für Lautsprecher oder Binaural konfigurieren, Pegel prüfen, rendern. Mit Screenshots und annotierten GIFs bei jedem Schritt.</p>
+<p class="onboarding-step__desc">Der vollständige Walkthrough: B-Format-Bus einrichten, AmbiEncoder_64 hinzufügen, Decoder für Lautsprecher oder Binaural konfigurieren, Pegel prüfen, rendern. Mit Screenshots und annotierten GIFs bei jedem Schritt.</p>
 <a class="hero__link hero__link--primary" href="/de/icst-ambisonics-plugins/06_step_by_step_setup/">Step-by-Step Setup →</a>
 <a class="hero__link" href="/de/icst-ambisonics-plugins/04_quick_start/">Quick Start (5 Min.) →</a>
 </div>

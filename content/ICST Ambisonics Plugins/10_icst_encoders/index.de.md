@@ -16,13 +16,13 @@ Wenn du vor den Encoder-Einstellungen unsicher bist, was **B-Format**, **ambiX**
 
 ## Welchen Encoder solltest du verwenden?
 
-Nutze **MonoEncoder**, wenn:
+Nutze **AmbiEncoder**, wenn:
 
 - du jeweils nur eine Quelle positionieren willst
 - du den Workflow gerade lernst
 - du das klarste Routing pro Quelle willst
 
-Nutze **MultiEncoder**, wenn:
+Nutze **AmbiEncoder_64**, wenn:
 
 - du viele Quellen in einer Oberfläche steuern willst
 - du Quellengruppen brauchst
@@ -33,8 +33,8 @@ Nutze **MultiEncoder**, wenn:
 
 Die **ICST Encoders** positionieren und bewegen Klangquellen im Ambisonics-B-Format-Feld.
 
-- **MonoEncoder** arbeitet mit einer einzelnen Mono-Quelle.
-- **MultiEncoder** verarbeitet bis zu 64 Quellen auf einer Spur und organisiert sie in bis zu 8 Gruppen.
+- **AmbiEncoder** arbeitet mit einer einzelnen Mono-Quelle.
+- **AmbiEncoder_64** verarbeitet bis zu 64 Quellen auf einer Spur und organisiert sie in bis zu 8 Gruppen.
 
 Ein prägendes Merkmal ist die integrierte **Distanzsimulation**, die Tiefpassfilterung und einen Doppler-ähnlichen Effekt kombiniert, um Tiefenwahrnehmung zu formen.
 
@@ -44,7 +44,7 @@ Durch OSC-Ein- und Ausgang sind die Encoder auch für controllerbasierte und alg
 
 ![ICST AmbiEncoder overview](<CleanShot 2026-03-04 at 14.27.47@2x.png>)
 
-Oben links der **MonoEncoder** (eine Quelle), unten links der **MultiEncoder** mit drei Gruppen, rechts das Fenster **Encoder Settings**.
+Oben links der **AmbiEncoder** (eine Quelle), unten links der **AmbiEncoder_64** mit drei Gruppen, rechts das Fenster **Encoder Settings**.
 
 1. **Einstellungen** (Zahnrad) – öffnet das Fenster Encoder Settings.
 2. **Hilfe** (?)
@@ -94,7 +94,7 @@ Das Radar zeigt das Feld in Draufsicht und macht Quellenpositionen und Gruppen d
 
 ## Gruppierung und Bewegung
 
-MultiEncoder ist besonders dann sinnvoll, wenn räumliche Bewegung nicht nur individuell, sondern strukturell gedacht wird:
+AmbiEncoder_64 ist besonders dann sinnvoll, wenn räumliche Bewegung nicht nur individuell, sondern strukturell gedacht wird:
 
 - mehrere Quellen können gruppiert werden
 - Gruppen lassen sich relativ zu ihrem Gruppenzentrum bewegen
@@ -144,7 +144,7 @@ Für Setup und Syntax:
 
 ## Häufige Fehler
 
-- MultiEncoder wird genutzt, obwohl eine einfache MonoEncoder-Spur klarer wäre
+- AmbiEncoder_64 wird genutzt, obwohl eine einfache AmbiEncoder-Spur klarer wäre
 - Distanz-Skalierung wird spät im Projekt verändert und bricht die Bewegungskonsistenz
 - vergessen wird, dass das Encoder-Routing trotzdem in einen stabilen Bformat Master führen muss
 - OSC wird als Pflicht behandelt, obwohl normale REAPER-Automation ausreichen würde

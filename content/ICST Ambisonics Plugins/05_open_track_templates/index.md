@@ -25,7 +25,7 @@ Two project templates are installed to `Users/Shared/AmbiPluginsTemp/ProjectTemp
 | Template | Contents | When to use |
 |---|---|---|
 | `ICST_AmbiPlugins_MonoEncoder.RPP` | Single mono source, encoder, B-format master, decoder | First sessions, minimal setups, or testing a single moving source |
-| `ICST_AmbiPlugins_MultiEncoder.RPP` | MultiEncoder with 16 mono source child tracks, B-format master, decoder | Most production work — start here for multi-source sessions |
+| `ICST_AmbiPlugins_MultiEncoder.RPP` | AmbiEncoder_64 with 16 mono source child tracks, B-format master, decoder | Most production work — start here for multi-source sessions |
 
 ## Available track templates
 
@@ -33,8 +33,8 @@ Two groups of track templates are installed to `Users/Shared/AmbiPluginsTemplate
 
 **ICST AmbiPlugins** — core encoder blocks:
 
-- `ICST_AmbiEncoder_Multi_8src` — MultiEncoder with 8 pre-routed mono sources. The most common starting point for adding a new source group to an existing session.
-- MonoEncoder template — single source track with encoder pre-loaded and 64-channel output.
+- `ICST_AmbiEncoder_Multi_8src` — AmbiEncoder_64 with 8 pre-routed mono sources. The most common starting point for adding a new source group to an existing session.
+- AmbiEncoder template — single source track with encoder pre-loaded and 64-channel output.
 
 **ICST AmbiPlugins 3rdParty** — integrations with third-party spatial audio plugins such as IEM and SPARTA tools. Use these when combining ICST encoders with external processing in the same signal path.
 

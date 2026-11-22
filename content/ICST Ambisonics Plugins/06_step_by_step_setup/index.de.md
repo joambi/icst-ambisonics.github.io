@@ -119,17 +119,17 @@ Nutze früh stabile Spur-Namen, um Routing-Fehler zu vermeiden:
 Mono-AmbiEncoder-Überblick:
 ![open monoencoder](MonoEncoder_01.png)
 
-- Lade im FX-Fenster den **ICST MonoEncoder**.
+- Lade im FX-Fenster den **ICST AmbiEncoder**.
 - Füge einen **AmbiEncoder (ICST)** (1-4) zur Mono-Quelle hinzu.
 
 Routing:
-- MonoEncoder -> 64-Kanal-Ausgang -> Bformat Master
+- AmbiEncoder -> 64-Kanal-Ausgang -> Bformat Master
 
 ![MonnoEncoder](MonoEncoder.png)
 
 #### 7. Bewegungen in Reaper aufnehmen
 
-Bewegungen im MonoEncoder aufnehmen:
+Bewegungen im AmbiEncoder aufnehmen:
 <video autoplay muted loop playsinline preload="metadata" aria-label="rec_xyz" style="width:100%;height:auto;border-radius:6px" src="/icst-ambisonics-plugins/06_step_by_step_setup/rec_xyz.mp4"></video>
 
 Gespeicherte Bewegung abspielen:
