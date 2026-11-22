@@ -1,6 +1,6 @@
 ---
-title: Binaural Monitoring im ICST-Workflow – Kopfhörer als Kontrollwerkzeug
-description: "Wie du im ICST-Workflow am Kopfhörer arbeitest: Signal-Chain, Plugin-Auswahl (IEM, SPARTA, dearVR), Monitoring-Setup in REAPER und die häufigsten Fehler beim binauralen Abhören."
+title: Ambisonics am Kopfhörer abhören in REAPER – Binaural Monitoring im ICST-Workflow
+description: "Wie du Ambisonics in REAPER am Kopfhörer abhörst: einen freien BinauralDecoder (IEM, SPARTA, dearVR) auf den B-Format-Masterbus legen, Ordnung angleichen, SN3D/ACN nutzen. Mit Signalweg, Schritt-für-Schritt-Setup und den häufigsten Fehlern."
 date: 2026-03-21T16:00:00+01:00
 year: 2026
 month: 2026-03
@@ -16,6 +16,10 @@ tool: ["Binaural"]
 ---
 
 Level: Intermediate | **Audience:** Komponist:in, Producer:in, Techniker:in.
+
+---
+
+**Kurzantwort:** Lege einen Binaural-Decoder (meist der freie IEM BinauralDecoder) als FX auf den B-Format-Masterbus, anstelle des Lautsprecher-Decoders. Die Kanalzahl des Busses muss zur Encoder-Ordnung passen (4, 16, 36 oder 64 Kanäle), und überall gilt SN3D/ACN. Der Kopfhörer ist ein Kontrollwerkzeug, kein Ersatz für die Lautsprecherprobe.
 
 ---
 
