@@ -115,17 +115,7 @@ Ambisonics verfolgt einen anderen Ansatz. Statt direkt für ein Lautsprecher-Lay
 
 **Wann ist Stereo die bessere Wahl?** Für die meisten Musikveröffentlichungen, Podcasts und Rundfunkanwendungen bleibt Stereo der Standard — es ist mit jedem Wiedergabesystem kompatibel und erfordert keine speziellen Werkzeuge. Ambisonics lohnt sich, wenn die räumliche Dimension des Klangs künstlerisch oder technisch entscheidend ist, oder wenn man eine einzige Master-Datei benötigt, die verschiedene Wiedergabekontexte bedienen soll.
 
-<figure class="fig101">
-<p><strong>Stereo für Lautsprecher (4 Min.)</strong></p>
-<audio controls preload="none" style="width:100%" aria-label="Stereo für Lautsprecher (4 Min.)">
-  <source src="/audio/ambitest%20stereo.ogg" type="audio/ogg">
-</audio>
-<p><strong>Binaural für Kopfhörer (4 Min.)</strong></p>
-<audio controls preload="none" style="width:100%" aria-label="Binaural für Kopfhörer (4 Min.)">
-  <source src="/audio/ambitest%20bin.ogg" type="audio/ogg">
-</audio>
-<figcaption>Hörvergleich mit Kopfhörern: Beide Beispiele stammen aus der <a href="https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen">AmbiTest-Bibliothek von AudioBrewers</a>. Wie räumlich das Binaural-Beispiel wirkt, hängt vom Hörer ab. Mehr unter <a href="/de/blog/audio-examples/">Audio Examples</a>.</figcaption>
-</figure>
+**Hören:** Stereo- und Binaural-Fassungen desselben Materials gibt es in der <a href="https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen" target="_blank" rel="noopener noreferrer">AmbiTest-Bibliothek von AudioBrewers</a> (extern). Mehr unter <a href="/de/blog/audio-examples/">Audio Examples</a>.
 
 <a id="was-ist-b-format"></a>
 ## 4. Was ist B-Format?
