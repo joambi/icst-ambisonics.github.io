@@ -205,14 +205,19 @@ Für binaurales Kopfhörer-Monitoring gilt: der wahrnehmbare Qualitätssprung li
 
 ## CPU-Last in REAPER
 
-| Ordnung | Kanäle | Relative CPU | Praktisch |
-|---|---|---|---|
-| FOA | 4 | sehr gering | problemlos auch auf älteren Systemen |
-| HOA3 | 16 | moderat | Standard auf modernem Rechner, kein Problem |
-| HOA5 | 36 | merklich | grosse Sessions erfordern Freeze-Strategie |
-| HOA7 | 64 | hoch | bei vielen Quellen: Freeze oder Render-to-File |
+Gemessen: FX CPU in Prozent laut REAPER Performance Meter, je Zelle nach 60 s Wiedergabe. Die Last des Encoders steigt mit der Quellenzahl und der Ordnung, die des Decoders mit der Ordnung (nicht mit der Quellenzahl).
 
-In REAPER: Wenn HOA7-Spuren einzufrieren sind, *Freeze*-Funktion nutzen (rechtsklick auf Track → Freeze). Der eingefrorene Track wird als voll berechnetes Multichannel-File intern gespeichert und verursacht keine Encoder-CPU mehr – nur noch Bus-Routing.
+| Ordnung | Kanäle | Encoder, 1 Quelle | Encoder, 32 Quellen | Decoder (18 Lautsprecher) | Encoder + Decoder, 32 Quellen | Praktisch |
+|---|---|---|---|---|---|---|
+| FOA | 4 | 0.26 % | 1.0 % | 0.55–0.86 % | 1.7 % | keine Aussetzer bis 32 Quellen |
+| HOA3 | 16 | 0.26 % | 1.3 % | 0.68–0.95 % | 2.0 % | keine Aussetzer bis 32 Quellen |
+| HOA5 | 36 | 0.22 % | 1.8 % | 0.83–1.0 % | 2.6 % | keine Aussetzer bis 32 Quellen |
+| HOA7 | 64 | 0.33 % | 2.2 % | 1.0–1.7 % | 3.2 % | keine Aussetzer bis 32 Quellen; bei grossen Sessions mit Effekten Freeze sinnvoll |
+| HOA7 nach Freeze | 64 | – | – | 1.6 % | 1.7 % (Datei 0.14 %) | spart die Encoder-Last |
+
+Messbedingungen: MacBook Pro 16" (2023, Apple M2 Pro, 16 GB), REAPER 7.86, 48 kHz, 512 Samples, ICST-Plugins als VST3, Rosa Rauschen auf allen Quellen, Quellen unbewegt, eine Ablesung pro Zelle, Messreihe vom 22. November 2026. Die Gesamtlast lag in allen Zellen unter 6 %, Aussetzer gab es keine. Die Werte gelten für diesen Rechner und diese Plugin-Kette; mit Effekten, Hall, Animator oder einem langsameren Rechner fällt die Last höher aus. Die Freeze-Zeile wurde mit einer synthetischen 64-Kanal-Datei gemessen.
+
+In REAPER: Wenn HOA7-Spuren einzufrieren sind, *Freeze*-Funktion nutzen (rechtsklick auf Track → Freeze). Der eingefrorene Track wird als voll berechnetes Multichannel-File intern gespeichert und verursacht keine Encoder-CPU mehr – nur noch Bus-Routing und das Lesen der Datei (gemessen 0.14 % bei 64 Kanälen).
 
 ---
 
@@ -266,7 +271,7 @@ Was auf dieser Seite belegt ist und was Erfahrung:
 - **Kanalzahl (N+1)² und Mindestzahl an Lautsprechern:** Standardresultat der Ambisonics-Theorie, nachzulesen in Zotter & Frank, *Ambisonics: A Practical 3D Audio Theory for Recording, Studio Production, Sound Reinforcement, and Virtual Reality* (Springer, 2019, Open Access).
 - **Sweetspot wächst mit der Ordnung und schrumpft mit der Frequenz:** Ward & Abhayapala, *Reproduction of a plane-wave sound field using an array of loudspeakers*, IEEE Transactions on Speech and Audio Processing 9(6), 2001, S. 697–707 ([DOI](https://doi.org/10.1109/89.943347)). Die Arbeit leitet den Zusammenhang zwischen Lautsprecherzahl, Grösse der Wiedergabezone, Frequenzbereich und Genauigkeit her. Die Angaben zu Kopf, Person und Gruppe in den Grafiken sind eine Veranschaulichung, keine Messung.
 - **Lokalisation bei FOA und HOA:** Bertet, Daniel, Parizet & Warusfel, *Investigation on localisation accuracy for first and higher order ambisonics reproduced sound sources*, Acta Acustica united with Acustica 99(4), 2013, S. 642–657.
-- **Nicht aus kontrollierten Studien:** Das Bild mit der Bildauflösung (480p, 1080p, 4K) ist eine Analogie. Die Aussagen zu HOA3 als Fallback und die Empfehlungen für das ICST-Kompositionsstudio beruhen auf Studioerfahrung. Die Tabelle zur CPU-Last ist eine qualitative Einschätzung, keine Messung auf einem bestimmten Rechner.
+- **Nicht aus kontrollierten Studien:** Das Bild mit der Bildauflösung (480p, 1080p, 4K) ist eine Analogie. Die Aussagen zu HOA3 als Fallback und die Empfehlungen für das ICST-Kompositionsstudio beruhen auf Studioerfahrung. Die Tabelle zur CPU-Last ist gemessen (MacBook Pro 16" 2023, Apple M2 Pro, 16 GB, REAPER 7.86, 22. November 2026) und gilt nur für diesen Rechner und diese Kette.
 
 ---
 
