@@ -259,6 +259,17 @@ If you build **your first own session**: start with **FOA or HOA3** – the conc
 
 ---
 
+## Sources and context
+
+What on this page is documented and what is experience:
+
+- **Channel count (N+1)² and minimum number of loudspeakers:** a standard result of Ambisonics theory, see Zotter & Frank, *Ambisonics: A Practical 3D Audio Theory for Recording, Studio Production, Sound Reinforcement, and Virtual Reality* (Springer, 2019, open access).
+- **The sweet spot grows with order and shrinks with frequency:** Ward & Abhayapala, *Reproduction of a plane-wave sound field using an array of loudspeakers*, IEEE Transactions on Speech and Audio Processing 9(6), 2001, pp. 697–707 ([DOI](https://doi.org/10.1109/89.943347)). The paper derives the relationship between the number of loudspeakers, the size of the reproduction zone, the frequency range and the accuracy. The head, person and group sizes in the graphics are an illustration, not a measurement.
+- **Localisation with FOA and HOA:** Bertet, Daniel, Parizet & Warusfel, *Investigation on localisation accuracy for first and higher order ambisonics reproduced sound sources*, Acta Acustica united with Acustica 99(4), 2013, pp. 642–657.
+- **Not from controlled studies:** the image-resolution comparison (480p, 1080p, 4K) is an analogy. The statements about HOA3 as a fallback and the recommendations for the ICST Composition Studio are based on studio experience. The CPU-load table is a qualitative estimate, not a measurement on a specific computer.
+
+---
+
 ## Further reading
 
 - [Coordinate systems: XYZ and AED compared](/post/xyz-vs-aed-koordinatensysteme/)
