@@ -1,7 +1,7 @@
 ---
 title: "Ambisonics Glossary"
-description: "Quick reference for the most important Ambisonics terms: A-format, B-format, ambiX, order, encoder, decoder, binaural, OSC, yaw/pitch/roll, azimuth/elevation."
-date: 2026-11-20T00:00:00
+description: "Quick reference for Ambisonics and HOA: format, order, normalisation, microphones, decoders, binaural, processing and parametric methods."
+date: 2026-11-22T00:00:00
 draft: false
 url: /ambisonics-101/glossary/
 tags:
@@ -10,6 +10,8 @@ tags:
 ---
 
 Quick reference for the terms used in [Ambisonics 101](/ambisonics-101/).
+
+## Core terms
 
 - <a id="gl-a-format"></a>**A-format** — Raw signal from a tetrahedral Ambisonics microphone: four capsule signals in tetrahedral geometry. Must be encoded to B-format before use in a DAW.
   → [Wikipedia: Ambisonics](https://en.wikipedia.org/wiki/Ambisonics#A-format)
@@ -109,3 +111,98 @@ Quick reference for the terms used in [Ambisonics 101](/ambisonics-101/).
 
 - <a id="gl-scene-based"></a>**Scene-based and channel-based audio** — Ambisonics stores the sound field (the scene) independent of the loudspeaker layout and decodes it for each system. Channel-based formats store one signal per loudspeaker.
   → [Ambisonics 101](/ambisonics-101/)
+
+## Mathematical foundations
+
+- <a id="gl-spherical-harmonics"></a>**Spherical harmonics** — Mathematical functions on the surface of a sphere into which Ambisonics decomposes the sound field. Each function has a degree n (the Ambisonics order) and an index m from −n to n. Up to order N there are (N+1)² functions, i.e. channels.
+  → [Wikipedia: Spherical harmonics](https://en.wikipedia.org/wiki/Spherical_harmonics) | [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-plane-spherical-wave"></a>**Plane wave and spherical wave** — Ambisonics first describes sources as plane waves: infinitely far away, with a direction only. Sources at a finite distance are spherical waves; near-field coding captures their near-field behaviour.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-periphony"></a>**Periphony and pantophony** — Terms from Gerzon: periphony is reproduction with height (full sphere), pantophony is horizontal-only reproduction.
+  → [Gerzon 1973](https://ringbuffer.org/papers/gerzon1973periphony.html)
+
+- <a id="gl-2d-ambisonics"></a>**Horizontal (2D) Ambisonics** — Ambisonics in the horizontal plane only. Order N needs 2N+1 channels there instead of (N+1)².
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-mixed-order"></a>**Mixed-order Ambisonics** — Horizontal and vertical order differ, for example high horizontally and low vertically. This saves channels compared with full order.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-order-reduction"></a>**Order reduction** — The channels of higher orders are dropped: an HOA7 master becomes HOA3 or FOA. Mixing up again does not create new spatial resolution.
+  → [HOA-Wahl in der Praxis](/post/hoa-ordnung-wahl-praxis/)
+
+- <a id="gl-spatial-aliasing"></a>**Spatial aliasing** — Above a cut-off frequency the sound field is captured or reconstructed incompletely. It depends on the capsule spacing (microphone) or the number of loudspeakers. The results are directional errors and colouration.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7) | [Ward & Abhayapala 2001](https://doi.org/10.1109/89.943347)
+
+## Formats and exchange
+
+- <a id="gl-n3d-maxn"></a>**N3D and maxN** — Further normalisations besides SN3D. N3D is fully orthonormal; it equals SN3D times √(2n+1) for degree n. maxN scales so that no channel exceeds 1 and belongs to FuMa.
+  → [Wikipedia: Ambisonic data exchange formats](https://en.wikipedia.org/wiki/Ambisonic_data_exchange_formats)
+
+- <a id="gl-ogg-opus"></a>**Ambisonics in Opus (RFC 8486)** — Defines how Ambisonics signals are stored in Ogg Opus files. This allows Ambisonics in common streaming containers.
+  → [RFC 8486](https://www.rfc-editor.org/info/rfc8486)
+
+- <a id="gl-mpegh"></a>**MPEG-H 3D Audio** — Audio codec standard that can encode HOA scenes alongside channels and objects.
+  → [Wikipedia: MPEG-H 3D Audio](https://en.wikipedia.org/wiki/MPEG-H_3D_Audio)
+
+## Microphones and recording
+
+- <a id="gl-soundfield-mic"></a>**Soundfield microphone** — The first commercial Ambisonics microphone (Calrec, 1978): four capsules in a tetrahedron that deliver A-format.
+  → [Zeitleiste](/blog/geschichte-von-ambisonics-foa-und-hoa/)
+
+- <a id="gl-spherical-array"></a>**Spherical microphone array** — Many capsules on a sphere, for example Eigenmike (32 capsules) or Zylia ZM-1 (19 capsules). It captures higher orders. Order N needs at least (N+1)² capsules.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7) | [Mikrofon: A- und B-Format](/post/ambisonics-mikrofon-a-format-b-format/)
+
+- <a id="gl-radial-filter"></a>**Radial filters (capsule equalisation)** — Frequency-dependent filters that turn the capsule signals into correct B-format. The higher the order, the more they boost low frequencies and with them noise. This limits the usable order in the bass.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-beamforming"></a>**Beamforming (virtual microphones)** — From B-format, microphones of any direction and polar pattern can be computed.
+  → [Wikipedia: Beamforming](https://en.wikipedia.org/wiki/Beamforming)
+
+- <a id="gl-srir"></a>**Spatial room impulse response (SRIR)** — Impulse response of a room measured with an Ambisonics microphone. Convolved with a signal it gives room reverberation as B-format.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+## Decoders and reproduction
+
+- <a id="gl-sad"></a>**Sampling decoder (SAD)** — Evaluates the spherical harmonics at the loudspeaker directions. Simple and good for regular layouts, uneven for irregular ones.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-mmd"></a>**Mode-matching decoder (MMD)** — Inverts (pseudo-inverse) the matrix of spherical harmonics at the loudspeaker positions. Exact with enough well-distributed loudspeakers, unstable with gaps in the layout.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-epad"></a>**EPAD (energy-preserving ambisonic decoder)** — Decoder that provides even energy across all directions.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-nfc"></a>**Near-field compensation (NFC)** — Accounts for the finite distance of loudspeakers or sources (spherical instead of plane waves). Important at higher order and for sources close to the head.
+  → [Decoder-Geschichte](/blog/decoder-geschichte-und-anwendungen/)
+
+- <a id="gl-t-design"></a>**t-design and regular layouts** — Point sets evenly distributed on the sphere (for example Lebedev grids) for which the spherical harmonics are sampled cleanly up to a given degree. Ideal for loudspeaker layouts.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-vbap-wfs"></a>**VBAP and wave field synthesis** — Two other reproduction methods. VBAP distributes a source over the nearest two or three loudspeakers and depends on the layout. Wave field synthesis reconstructs wave fronts with many loudspeakers over a large area.
+  → [Wikipedia: VBAP](https://en.wikipedia.org/wiki/Vector_base_amplitude_panning) | [Wikipedia: Wave field synthesis](https://en.wikipedia.org/wiki/Wave_field_synthesis)
+
+## Binaural
+
+- <a id="gl-virtual-speakers"></a>**Virtual loudspeakers** — Binaural rendering in two steps: B-format is first decoded to virtual loudspeakers, then each one is convolved with the HRTF of its direction. Alternatively the HRTF is applied directly in the spherical-harmonic domain.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-magls"></a>**MagLS (magnitude least squares)** — Optimises the magnitude spectrum of the HRTF representation in low-order binaural rendering. This improves timbre compared with a plain spherical-harmonic approximation.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+## Processing in the Ambisonics domain
+
+- <a id="gl-rotation"></a>**Rotation** — Rotation of the entire sound field about yaw, pitch and roll. In the spherical-harmonic domain this is done with matrices and without loss. Basis for head tracking.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-dominance"></a>**Dominance (zoom)** — Shifts the energy of the sound field towards one direction: sources in front of the listener are emphasised, those behind are reduced.
+  → [Zotter & Frank 2019](https://link.springer.com/book/10.1007/978-3-030-17207-7)
+
+- <a id="gl-source-width"></a>**Source width (spread)** — A source appears wider. In Ambisonics this can be done, for example, with a lower order for that source, because low order focuses less sharply.
+  → [HOA-Wahl in der Praxis](/post/hoa-ordnung-wahl-praxis/)
+
+## Parametric methods
+
+- <a id="gl-dirac"></a>**DirAC (directional audio coding)** — Analyses direction and diffuseness of the sound field per frequency band and renders them to any loudspeaker layout. A parametric method instead of a pure spherical-harmonic decomposition.
+  → [Pulkki et al. 2017](https://doi.org/10.1002/9781119252634)
