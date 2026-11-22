@@ -1,6 +1,6 @@
 ---
-title: ICST MultiEncoder – Group Animation
-description: "Walks through ICST MultiEncoder group animation tools for selecting, rotating, stretching, and recording grouped sources in Reaper."
+title: ICST AmbiEncoder_64 – Group Animation
+description: "Walks through ICST AmbiEncoder_64 group animation tools for selecting, rotating, stretching, and recording grouped sources in Reaper."
 date: 2025-05-28T13:00:00
 year: 2025
 month: 2025-05
@@ -11,7 +11,7 @@ key_points:
   - "Drive group motion from an external OSC source into REAPER envelopes"
 difficulty: "intermediate"
 post_kind: "tutorial"
-tool: ["MultiEncoder", "Animator"]
+tool: ["AmbiEncoder_64", "Animator"]
 ---
 
 ## Group Animation
@@ -37,7 +37,7 @@ The **ICST Multi-Ambisonics Encoder v.2+** features a **Group Animation** tool f
 
 ### Manual recording
 
-1. Set **ICST MultiEncoder** (Track Automation) to **'LATCH'** (or **'WRITE'**).
+1. Set **ICST AmbiEncoder_64** (Track Automation) to **'LATCH'** (or **'WRITE'**).
 2. Start playback in **Reaper**, hold **Alt**, and record your movement.
 3. To play back the recorded motion, set “LATCH” to “READ”.
 <video autoplay muted loop playsinline preload="metadata" poster="Rec_PP-poster.jpg" aria-label="GP_REC" style="max-width:100%;height:auto"><source src="Rec_PP.mp4" type="video/mp4"></video>
@@ -66,7 +66,7 @@ This is a more advanced example of animating a group using **quaternion paramete
 ---
 ### Group animation from an external source 
 
-A new 'ICST Ambi-OSC-Patcher' shows the direct group animation possibilities, we’ll demonstrate how to animate groups using OSC from an external source. The MultiEncoder internally converts Euler angles into quaternions. In this example, the angles from the source point (1) are crucial for the animation.
+A new 'ICST Ambi-OSC-Patcher' shows the direct group animation possibilities, we’ll demonstrate how to animate groups using OSC from an external source. The AmbiEncoder_64 internally converts Euler angles into quaternions. In this example, the angles from the source point (1) are crucial for the animation.
 
 ![Max example patch](max-example-patch.png)
 
@@ -81,7 +81,7 @@ Download MaxPatch: [Neuer OSC-Messenger](https://github.com/joambi/icst-ambisoni
 
 ### **OSC Animation**
 
-The ICST MultiEncoder can now be controlled directly using Euler angles via OSC. 
+The ICST AmbiEncoder_64 can now be controlled directly using Euler angles via OSC. 
 
 ![Euler_Winkel](OSC_abs_angel.gif)
 

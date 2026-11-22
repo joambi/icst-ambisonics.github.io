@@ -74,7 +74,7 @@ Speaker presets, session templates, and patches for the ICST Composition Studio 
     <h4>Patches & Templates</h4>
     <p>Ready-to-use OSC patches for Max and Ableton Live. REAPER session templates via the HOA Template Pack.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/downloads/OSC-GP-ICST-MultiEncoder.maxpat" download>OSC MultiEncoder (Max)</a>
+      <a class="hero__link hero__link--primary" href="/downloads/OSC-GP-ICST-MultiEncoder.maxpat" download>OSC AmbiEncoder_64 (Max)</a>
       <a class="hero__link" href="/downloads/E4L Multi-Panner_OSC.adv" download>Multi-Panner (Ableton)</a>
       <a class="hero__link" href="/blog/download-pack-1-hoa-reaper-template/">HOA REAPER Template Pack →</a>
     </div>

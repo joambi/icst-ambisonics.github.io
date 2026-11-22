@@ -65,10 +65,10 @@ Systemeinstellungen → Datenschutz & Sicherheit → nach unten scrollen und bei
 ## Signalfluss & Einrichtung
 
 <details class="faq-item">
-<summary class="faq-question">Was ist der Unterschied zwischen AmbiEncoder und MultiEncoder?</summary>
+<summary class="faq-question">Was ist der Unterschied zwischen AmbiEncoder und AmbiEncoder_64?</summary>
 <div class="faq-answer">
 
-Der AmbiEncoder verarbeitet eine einzelne Mono-Audioquelle und positioniert sie im 3D-Raum. Der MultiEncoder verarbeitet mehrere Quellen gleichzeitig (bis zu 36 in v3.2) und ist die empfohlene Wahl für Produktions-Sessions.
+Der AmbiEncoder verarbeitet eine einzelne Mono-Audioquelle und positioniert sie im 3D-Raum. Der AmbiEncoder_64 verarbeitet mehrere Quellen gleichzeitig (bis zu 64 in v4.0, 36 in v3.2) und ist die empfohlene Wahl für Produktions-Sessions.
 
 </div>
 </details>

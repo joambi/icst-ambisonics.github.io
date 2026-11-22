@@ -1,6 +1,6 @@
 ---
 title: Ableton Live & ICST Ambisonics Integration
-description: "Step-by-step guide for recording 7th-order Ambisonics from Ableton Live into Reaper via BlackHole, OSC-driven MultiEncoder automation, and LTC sync."
+description: "Step-by-step guide for recording 7th-order Ambisonics from Ableton Live into Reaper via BlackHole, OSC-driven AmbiEncoder_64 automation, and LTC sync."
 date: 2025-03-16T09:44:58+01:00
 slug: ableton-reaper
 aliases:
@@ -12,7 +12,7 @@ tags: ["ableton", "reaper", "workflow", "ambiencoder", "tutorial", "blackhole"]
 
 key_points:
   - "Route audio from Ableton Live into REAPER via BlackHole for 7th-order Ambisonics"
-  - "Sync DAWs with LTC and automate the MultiEncoder from Ableton OSC clips"
+  - "Sync DAWs with LTC and automate the AmbiEncoder_64 from Ableton OSC clips"
 DisableComments: false
 difficulty: "advanced"
 post_kind: "tutorial"
@@ -20,12 +20,12 @@ tool: ["AmbiEncoder", "Ableton"]
 ---
 
 * * *
-## AbletonLive to ICST Ambisonics MultiEncoder in Reaper
+## AbletonLive to ICST Ambisonics AmbiEncoder_64 in Reaper
 
 Level: Advanced | **Audience:** Ableton/Reaper hybrid producer.
 
 This tutorial provides a detailed guide to recording 7th-Order Ambisonics using Ableton Live and Reaper. It is aimed at users with a basic knowledge of both programs. If you are familiar with the concepts of Ableton Live, Reaper, and Ambisonics, the steps should be straightforward. Otherwise, some sections may be challenging. In this case, it is recommended that you first learn the basics of this software and Ambisonics technology.
-### Ableton to ICST MultiEncoder in Reaper
+### Ableton to ICST AmbiEncoder_64 in Reaper
 
 Ableton transmits audio via "BlackHole" (up to 64 channels) to Reaper's BlackHole input devices.
 
@@ -82,7 +82,7 @@ Tip: Make sure you use the same OSC port numbers in Reaper. (port: 50001)
 5. Configure OSC connection between Ableton and ICST MultiEncoder. Each encoder requires its own OSC port.
 
     ![OSC-Ports](OSC-Port.png)
-6. Activate OSC transmission in E4L_Multi-Panner. The ICST MultiEncoder will display moving dots when receiving OSC data.
+6. Activate OSC transmission in E4L_Multi-Panner. The ICST AmbiEncoder_64 will display moving dots when receiving OSC data.
    ![OSC_ON](OSC_ON.png)
 7. In Reaper press Record -Output for recording your Bformat see next image.
    ![Rec_BF](Rec_BF.png)

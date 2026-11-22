@@ -103,7 +103,7 @@ What would you like to explore? Choose a starting point below.
 <span class="onboarding-step__num">4</span>
 <div class="onboarding-step__body">
 <p class="onboarding-step__title">Build your first session — step by step</p>
-<p class="onboarding-step__desc">The full walkthrough: set up a B-Format bus, add the MultiEncoder, configure the decoder for speakers or binaural, check levels, render. With screenshots and annotated GIFs at every step.</p>
+<p class="onboarding-step__desc">The full walkthrough: set up a B-Format bus, add the AmbiEncoder_64, configure the decoder for speakers or binaural, check levels, render. With screenshots and annotated GIFs at every step.</p>
 <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/06_step_by_step_setup/">Step-by-Step Setup →</a>
 <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start (5 min) →</a>
 </div>

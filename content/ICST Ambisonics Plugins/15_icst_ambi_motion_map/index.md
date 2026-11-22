@@ -8,7 +8,7 @@ hide_default_title: true
 translationKey: motion-map-user-guide
 docs_nav_id: motion-mapping
 docs_nav_label: Motion Mapping
-description: "Create and automate spatial source trajectories in REAPER with the ICST AmbiEncoder64 Motion Map, including motion shapes, coordinates, timing, presets, automation writing, and live OSC preview."
+description: "Create and automate spatial source trajectories in REAPER with the ICST AmbiEncoder_64 Motion Map, including motion shapes, coordinates, timing, presets, automation writing, and live OSC preview."
 docs_nav_group: "Composing & tools"
 ---
 
@@ -26,7 +26,7 @@ docs_nav_group: "Composing & tools"
       </div>
     </div>
     <figure class="motion-map-hero__media">
-      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animated AmbiEncoder64 Motion Map interface with moving sources and trajectories in the preview">
+      <img src="/images/icst-ambi-motion-map-v2.2-animated.svg" alt="Animated AmbiEncoder_64 Motion Map interface with moving sources and trajectories in the preview">
       <figcaption>Animated preview (schematic) · 64 sources · 3D motion · REAPER automation · OSC</figcaption>
     </figure>
   </section>

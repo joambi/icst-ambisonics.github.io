@@ -25,7 +25,7 @@ Zwei Projektvorlagen werden nach `Users/Shared/AmbiPluginsTemp/ProjectTemplates`
 | Vorlage | Inhalt | Wann verwenden |
 |---|---|---|
 | `ICST_AmbiPlugins_MonoEncoder.RPP` | Einzelne Monoquelle, Encoder, B-Format-Master, Decoder | Erste Sessions, minimale Setups oder Test einer einzelnen bewegten Quelle |
-| `ICST_AmbiPlugins_MultiEncoder.RPP` | MultiEncoder mit 16 Monoquellen als Child-Tracks, B-Format-Master, Decoder | Für die meisten Produktionen — hier beginnen bei Multi-Source-Sessions |
+| `ICST_AmbiPlugins_MultiEncoder.RPP` | AmbiEncoder_64 mit 16 Monoquellen als Child-Tracks, B-Format-Master, Decoder | Für die meisten Produktionen — hier beginnen bei Multi-Source-Sessions |
 
 ## Verfügbare Spurvorlagen
 
@@ -33,8 +33,8 @@ Zwei Gruppen von Spurvorlagen werden nach `Users/Shared/AmbiPluginsTemplatesTemp
 
 **ICST AmbiPlugins** — Kern-Encoder-Blöcke:
 
-- `ICST_AmbiEncoder_Multi_8src` — MultiEncoder mit 8 vorgerouteten Monoquellen. Häufigster Ausgangspunkt zum Hinzufügen einer neuen Quellengruppe zu einer bestehenden Session.
-- MonoEncoder-Vorlage — Einzelquellen-Track mit vorgeladenem Encoder und 64-Kanal-Ausgang.
+- `ICST_AmbiEncoder_Multi_8src` — AmbiEncoder_64 mit 8 vorgerouteten Monoquellen. Häufigster Ausgangspunkt zum Hinzufügen einer neuen Quellengruppe zu einer bestehenden Session.
+- AmbiEncoder-Vorlage — Einzelquellen-Track mit vorgeladenem Encoder und 64-Kanal-Ausgang.
 
 **ICST AmbiPlugins 3rdParty** — Integrationen mit Drittanbieter-Plugins wie IEM- und SPARTA-Werkzeuge. Sinnvoll, wenn ICST-Encoder mit externer Bearbeitung im selben Signalpfad kombiniert werden.
 

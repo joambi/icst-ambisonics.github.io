@@ -6,7 +6,7 @@ draft: false
 docs_nav_parent: icst-encoders
 toc: true
 type: docs
-description: "Tutorial und Referenz zum ICST Animator: Quellengruppen im Multi-AmbiEncoder_64 auf einer Timeline bewegen, drehen und transformieren."
+description: "Tutorial und Referenz zum ICST Animator: Quellengruppen im AmbiEncoder_64 auf einer Timeline bewegen, drehen und transformieren."
 docs_nav_group: "Plugins"
 ---
 
@@ -16,9 +16,9 @@ Niveau: Fortgeschritten | Zielgruppe: Komponierende, Technik, Studierende, Inter
 
 > **Download:** Der Animator ist Teil der ICST Ambisonics Plugins 4.0. [Releases und Downloads auf GitHub](https://github.com/schweizerweb/icst-ambisonics-plugins/releases).
 
-![Multi-AmbiEncoder_64 mit vier Gruppen und der Animator-Timeline](AT-BAS-05-Animator-Overview.webp)
+![AmbiEncoder_64 mit vier Gruppen und der Animator-Timeline](AT-BAS-05-Animator-Overview.webp)
 
-Der **Animator** ist die Choreografie-Timeline des **Multi-AmbiEncoder_64**: Er bewegt, dreht und verformt ganze Quellengruppen automatisch über die Zeit, synchron zum DAW-Transport.
+Der **Animator** ist die Choreografie-Timeline des **AmbiEncoder_64**: Er bewegt, dreht und verformt ganze Quellengruppen automatisch über die Zeit, synchron zum DAW-Transport.
 
 {{< video name="AT-DEM-V01-Load-Demo" caption="Demo: die vier Beispielszenen aus File → Load Demo." >}}
 
@@ -28,14 +28,14 @@ Der **Animator** ist die Choreografie-Timeline des **Multi-AmbiEncoder_64**: Er 
 
 **Auf einen Blick**
 
-- **Du brauchst:** den Multi-AmbiEncoder_64 aus den ICST Ambisonics Plugins 4.0 in REAPER.
+- **Du brauchst:** den AmbiEncoder_64 aus den ICST Ambisonics Plugins 4.0 in REAPER.
 - **Du lernst:** eine erste Bewegung aufbauen, mit Movement- und Action-Clips arbeiten (bewegen, rotieren, strecken, jittern), das Timing mit Speed curve, Repetitions und Palindrome gestalten, die Rezepte ausprobieren sowie Szenen speichern und laden.
 
 </div>
 
 ## Schnellstart: die erste Bewegung
 
-Voraussetzung: Im Multi-AmbiEncoder_64 ist mindestens **eine Gruppe** mit Quellen angelegt. Im AmbiEncoder Solo gibt es keinen Animator.
+Voraussetzung: Im AmbiEncoder_64 ist mindestens **eine Gruppe** mit Quellen angelegt. Im AmbiEncoder Solo gibt es keinen Animator.
 
 1. **Animator öffnen:** im AmbiEncoder oben rechts auf den grünen **Animator**-Button klicken. Animator **OFF** lassen.
 2. **Clip anlegen:** in der Werkzeugleiste **Add Movement Clip** (vier Pfeile) klicken. Der Clip erscheint auf der Movement-Spur von Group 1.

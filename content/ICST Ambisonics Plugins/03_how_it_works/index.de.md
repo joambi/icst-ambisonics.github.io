@@ -78,19 +78,19 @@ Typische Spurrollen:
 - **Decoder**
 - **Bformat Master**
 - **B-Format (ambiX) Player**
-- **MultiEncoder** mit Mono-Child-Tracks
+- **AmbiEncoder_64** mit Mono-Child-Tracks
 
 ![Ambi_Signalflow](Ambi_Signalflow.jpg)
 
 ## Welchen Encoder solltest du verwenden?
 
-Nutze **MonoEncoder**, wenn:
+Nutze **AmbiEncoder**, wenn:
 
 - du eine einzelne Quelle positionieren oder automatisieren willst
 - du den Workflow gerade lernst
 - du pro Quelle das klarste Routing willst
 
-Nutze **MultiEncoder**, wenn:
+Nutze **AmbiEncoder_64**, wenn:
 
 - du mehrere Quellen in einer Oberfläche verwalten willst
 - du Gruppenbewegungen oder räumliche Choreografien brauchst

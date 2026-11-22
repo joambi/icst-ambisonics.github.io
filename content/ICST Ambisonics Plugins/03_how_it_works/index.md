@@ -81,19 +81,19 @@ Typical track roles:
 - **Decoder**
 - **Bformat Master**
 - **B-format (ambiX) Player**
-- **MultiEncoder** with mono child tracks
+- **AmbiEncoder_64** with mono child tracks
 
 ![Ambi_Signalflow](Ambi_Signalflow.jpg)
 
 ## Which encoder should you use?
 
-Use **MonoEncoder** when:
+Use **AmbiEncoder** when:
 
 - you want to position or automate one source at a time
 - you are learning the workflow
 - you want the clearest routing per source
 
-Use **MultiEncoder** when:
+Use **AmbiEncoder_64** when:
 
 - you want to manage several sources in one interface
 - you need grouped motion or choreographic movement

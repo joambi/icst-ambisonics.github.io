@@ -6,7 +6,7 @@ draft: false
 docs_nav_parent: icst-encoders
 toc: true
 type: docs
-description: "Tutorial and reference for the ICST Animator: move, rotate and transform source groups in the Multi-AmbiEncoder_64 on a timeline."
+description: "Tutorial and reference for the ICST Animator: move, rotate and transform source groups in the AmbiEncoder_64 on a timeline."
 docs_nav_group: "Plugins"
 ---
 
@@ -16,9 +16,9 @@ Level: Intermediate | Audience: Composer, technician, student, interactive-media
 
 > **Download:** the Animator is part of the ICST Ambisonics Plugins 4.0. [Releases and downloads on GitHub](https://github.com/schweizerweb/icst-ambisonics-plugins/releases).
 
-![Multi-AmbiEncoder_64 with four groups and the Animator timeline](AT-BAS-05-Animator-Overview.webp)
+![AmbiEncoder_64 with four groups and the Animator timeline](AT-BAS-05-Animator-Overview.webp)
 
-The **Animator** is the choreography timeline of the **Multi-AmbiEncoder_64**: it moves, rotates and reshapes entire source groups automatically over time, in sync with the DAW transport.
+The **Animator** is the choreography timeline of the **AmbiEncoder_64**: it moves, rotates and reshapes entire source groups automatically over time, in sync with the DAW transport.
 
 {{< video name="AT-DEM-V01-Load-Demo" caption="Demo: the four example scenes from File → Load Demo." >}}
 
@@ -28,7 +28,7 @@ The **Animator** is the choreography timeline of the **Multi-AmbiEncoder_64**: i
 
 **At a glance**
 
-- **You need:** the Multi-AmbiEncoder_64 from ICST Ambisonics Plugins 4.0 in REAPER.
+- **You need:** the AmbiEncoder_64 from ICST Ambisonics Plugins 4.0 in REAPER.
 - **You will learn:** build a first movement, work with movement and action clips (move, rotate, stretch, jitter), shape timing with speed curve, repetitions and palindrome, try the recipes, and save and load scenes.
 
 </div>

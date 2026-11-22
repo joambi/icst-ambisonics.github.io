@@ -19,7 +19,7 @@ post_kind: "tutorial"
 tool: ["AmbiEncoder", "OSC"]
 ---
 
-ICST MultiEncoder and iOS [GyrOSC.app ](https://www.bitshapesoftware.com/instruments/gyrosc/)
+ICST AmbiEncoder_64 and iOS [GyrOSC.app ](https://www.bitshapesoftware.com/instruments/gyrosc/)
 
 **GyrOSC** is a lightweight utility that sends motion sensor data (from your iPhone, iPod Touch, or iPad) over a local wireless network to any OSC-compatible host application. It allows you to control live audio or video applications using your device's built-in gyroscope, accelerometer, compass, and altimeter.
 

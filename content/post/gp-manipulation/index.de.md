@@ -1,6 +1,6 @@
 ---
-title: ICST MultiEncoder – Gruppenanimation
-description: "Erklärt MultiEncoder Group Animation zum Auswählen, Rotieren, Stretch und Aufzeichnen gruppierter Quellen in Reaper."
+title: ICST AmbiEncoder_64 – Gruppenanimation
+description: "Erklärt AmbiEncoder_64 Group Animation zum Auswählen, Rotieren, Stretch und Aufzeichnen gruppierter Quellen in Reaper."
 date: 2025-05-28T13:00:00
 year: 2025
 month: 2025-05
@@ -11,7 +11,7 @@ key_points:
   - "Gruppenmotion aus externem OSC-Signal in REAPER-Envelopes übertragen"
 difficulty: "intermediate"
 post_kind: "tutorial"
-tool: ["MultiEncoder", "Animator"]
+tool: ["AmbiEncoder_64", "Animator"]
 ---
 
 ## Gruppenanimation
@@ -37,7 +37,7 @@ Der **ICST Multi-Ambisonics Encoder v.2+** bietet ein **Gruppenanimations-Tool**
 
 ### Manuelle Aufnahme
 
-1. Stelle **ICST MultiEncoder** (Track Automation) auf **'LATCH'** (oder **'WRITE'**).
+1. Stelle **ICST AmbiEncoder_64** (Track Automation) auf **'LATCH'** (oder **'WRITE'**).
 2. Starte die Wiedergabe in **Reaper**, halte **Alt** und nimm deine Bewegung auf.
 3. Um die aufgenommene Bewegung abzuspielen, stelle "LATCH" auf "READ".
 <video autoplay muted loop playsinline preload="metadata" poster="/post/gp-manipulation/Rec_PP-poster.jpg" aria-label="GP_REC" style="max-width:100%;height:auto"><source src="/post/gp-manipulation/Rec_PP.mp4" type="video/mp4"></video>
@@ -66,7 +66,7 @@ Dies ist ein fortgeschritteneres Beispiel für die Animation einer Gruppe mit **
 ---
 ### Gruppenanimation aus einer externen Quelle
 
-Der neue 'ICST Ambi-OSC-Patcher' zeigt die direkten Möglichkeiten der Gruppenanimation. Wir demonstrieren, wie man Gruppen mit OSC aus einer externen Quelle animiert. Der MultiEncoder konvertiert Euler-Winkel intern in Quaternionen. In diesem Beispiel sind die Winkel vom Quellenpunkt (1) entscheidend für die Animation.
+Der neue 'ICST Ambi-OSC-Patcher' zeigt die direkten Möglichkeiten der Gruppenanimation. Wir demonstrieren, wie man Gruppen mit OSC aus einer externen Quelle animiert. Der AmbiEncoder_64 konvertiert Euler-Winkel intern in Quaternionen. In diesem Beispiel sind die Winkel vom Quellenpunkt (1) entscheidend für die Animation.
 
 ![Max example patch](max-example-patch.png)
 
@@ -81,7 +81,7 @@ Download MaxPatch: [Neuer OSC-Messenger](https://github.com/joambi/icst-ambisoni
 
 ### **OSC-Animation**
 
-Der ICST MultiEncoder kann jetzt direkt mit Euler-Winkeln via OSC gesteuert werden.
+Der ICST AmbiEncoder_64 kann jetzt direkt mit Euler-Winkeln via OSC gesteuert werden.
 
 ![Euler_Winkel](OSC_abs_angel.gif)
 
