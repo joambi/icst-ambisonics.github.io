@@ -115,6 +115,18 @@ Ambisonics verfolgt einen anderen Ansatz. Statt direkt für ein Lautsprecher-Lay
 
 **Wann ist Stereo die bessere Wahl?** Für die meisten Musikveröffentlichungen, Podcasts und Rundfunkanwendungen bleibt Stereo der Standard — es ist mit jedem Wiedergabesystem kompatibel und erfordert keine speziellen Werkzeuge. Ambisonics lohnt sich, wenn die räumliche Dimension des Klangs künstlerisch oder technisch entscheidend ist, oder wenn man eine einzige Master-Datei benötigt, die verschiedene Wiedergabekontexte bedienen soll.
 
+<figure class="fig101">
+<p><strong>Stereo für Lautsprecher (4 Min.)</strong></p>
+<audio controls preload="none" style="width:100%" aria-label="Stereo für Lautsprecher (4 Min.)">
+  <source src="/audio/ambitest%20stereo.ogg" type="audio/ogg">
+</audio>
+<p><strong>Binaural für Kopfhörer (4 Min.)</strong></p>
+<audio controls preload="none" style="width:100%" aria-label="Binaural für Kopfhörer (4 Min.)">
+  <source src="/audio/ambitest%20bin.ogg" type="audio/ogg">
+</audio>
+<figcaption>Hörvergleich mit Kopfhörern: Beide Beispiele stammen aus der <a href="https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen">AmbiTest-Bibliothek von AudioBrewers</a>. Wie räumlich das Binaural-Beispiel wirkt, hängt vom Hörer ab. Mehr unter <a href="/de/blog/audio-examples/">Audio Examples</a>.</figcaption>
+</figure>
+
 <a id="was-ist-b-format"></a>
 ## 4. Was ist B-Format?
 
@@ -227,6 +239,8 @@ Typische Setups reichen von kleinen Studio-Ringen über Höhenebenen bis hin zu 
 <a id="kopfhoerer-vs-lautsprecher"></a>
 ## 7. Kopfhörer vs. Lautsprecher
 Kopfhörer arbeiten mit [binauralem Rendering](/de/ambisonics-101/glossary/#gl-binaural) und sind praktisch für Editing, Translation-Checks und die Zusammenarbeit auf Distanz. Lautsprecher erzeugen ein physisches Klangfeld im Raum und bleiben zentral für Komposition, Tiefenwahrnehmung und künstlerische Bewertung.
+
+**Hören statt nur lesen:** Binaurale Beispiele findest du unter [Audio Examples](/de/blog/audio-examples/), B-Format-Dateien zum selbst Dekodieren im [B-Format-Archiv](/de/blog/b-format-archive/). Räumliche Musik von Künstler:innen weltweit gibt es bei [AudioSpace](https://audiospace.soundingfuture.com/tracks), für Kopfhörer und Lautsprecher aufbereitet (Gäste können einige Titel gratis anhören, danach ist eine kostenlose Anmeldung nötig).
 
 <a id="immersive-vs-atmos"></a>
 ## 8. Wie unterscheidet sich Ambisonics von Immersive Audio, Dolby Atmos und Spatial Audio?
