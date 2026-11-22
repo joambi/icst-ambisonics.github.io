@@ -239,7 +239,7 @@ Common setups range from small studio rings and dome-like height configurations 
 ## 7. Headphones vs. Loudspeakers
 Headphones use [binaural rendering](/ambisonics-101/glossary/#gl-binaural) and are practical for editing, checking translation, and remote collaboration. Loudspeakers provide a physical spatial field in the room and remain essential for composition, depth perception, and artistic evaluation.
 
-**Listen instead of just reading:** binaural examples are on [Audio Examples](/blog/audio-examples/); B-format files to decode yourself are in the [B-format archive](/blog/b-format-archive/).
+**Listen instead of just reading:** binaural examples are on [Audio Examples](/blog/audio-examples/); B-format files to decode yourself are in the [B-format archive](/blog/b-format-archive/). Spatial music by artists worldwide is available on [AudioSpace](https://audiospace.soundingfuture.com/tracks), rendered for headphones and speakers (guests can play a few tracks for free, after that a free sign-up is required).
 
 <a id="immersive-vs-atmos"></a>
 ## 8. How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?

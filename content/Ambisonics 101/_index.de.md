@@ -240,7 +240,7 @@ Typische Setups reichen von kleinen Studio-Ringen über Höhenebenen bis hin zu 
 ## 7. Kopfhörer vs. Lautsprecher
 Kopfhörer arbeiten mit [binauralem Rendering](/de/ambisonics-101/glossary/#gl-binaural) und sind praktisch für Editing, Translation-Checks und die Zusammenarbeit auf Distanz. Lautsprecher erzeugen ein physisches Klangfeld im Raum und bleiben zentral für Komposition, Tiefenwahrnehmung und künstlerische Bewertung.
 
-**Hören statt nur lesen:** Binaurale Beispiele findest du unter [Audio Examples](/de/blog/audio-examples/), B-Format-Dateien zum selbst Dekodieren im [B-Format-Archiv](/de/blog/b-format-archive/).
+**Hören statt nur lesen:** Binaurale Beispiele findest du unter [Audio Examples](/de/blog/audio-examples/), B-Format-Dateien zum selbst Dekodieren im [B-Format-Archiv](/de/blog/b-format-archive/). Räumliche Musik von Künstler:innen weltweit gibt es bei [AudioSpace](https://audiospace.soundingfuture.com/tracks), für Kopfhörer und Lautsprecher aufbereitet (Gäste können einige Titel gratis anhören, danach ist eine kostenlose Anmeldung nötig).
 
 <a id="immersive-vs-atmos"></a>
 ## 8. Wie unterscheidet sich Ambisonics von Immersive Audio, Dolby Atmos und Spatial Audio?
