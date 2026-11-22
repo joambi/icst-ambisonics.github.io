@@ -31,7 +31,7 @@ Karst Grotto     7:15
 
 * * *
 
-[Oliver Carman](https://www.liverpool.ac.uk/music/staff/oli-carman/)
+[Oliver Carman](https://soundcloud.com/oliver-carman)
 Artist in Residency  11.2. -24.2.2008
 
 **dark\_zurich**   5:11
@@ -40,7 +40,7 @@ Artist in Residency  11.2. -24.2.2008
 
 * * *
 
-[Nahuel Sauza](https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031)
+[Nahuel Sauza](https://www.zhdk.ch/forschung-und-innovation/icst#js-content-element-42165)
 (Artist in Residency  20.4. – 4.5.2009)
 
 A OCHO    7:35
@@ -49,7 +49,7 @@ A OCHO    7:35
 
 * * *
 
-[Zuriñe F. Gerenabarrena](https://www.zhdk.ch/forschung/icst/kreation-artist-in-residence-1031)
+[Zuriñe F. Gerenabarrena](https://www.zhdk.ch/forschung-und-innovation/icst#js-content-element-42165)
 Artist in Residency 2.5. – 13.5.2016
 
 IKUR         10:00

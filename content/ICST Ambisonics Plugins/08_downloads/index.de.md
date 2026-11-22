@@ -75,4 +75,4 @@ Zur Bedeutung von ambiX, ACN/SN3D, FOA/HOA und B-Format-Kanalzahlen siehe **[Amb
 
 Tutorial-Videos zu den ICST Ambisonics Plugins:
 
-- [ZHDK ICST auf YouTube](https://www.youtube.com/@ICSTAmbisonics)
+- [ZHDK ICST auf YouTube](https://www.youtube.com/@ZHDK_ICST/search)

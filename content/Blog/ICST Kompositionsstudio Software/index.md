@@ -58,7 +58,7 @@ Software and plugin environment for production at the ICST Mac Pro.
     <a class="hero__link" href="http://www.matthiaskronlachner.com/?p=1910" target="_blank" rel="noopener noreferrer">ambiX</a>
     <a class="hero__link" href="https://harpex.net/" target="_blank" rel="noopener noreferrer">Harpex</a>
     <a class="hero__link" href="https://forum.ircam.fr/projects/detail/spat/" target="_blank" rel="noopener noreferrer">Panoramix / Spat</a>
-    <a class="hero__link" href="https://github.com/mcfx-dev/mcfx" target="_blank" rel="noopener noreferrer">mcfx</a>
+    <a class="hero__link" href="https://www.matthiaskronlachner.com/posts/mcfx-v0-1-multichannel-cross-plattform-audio-plug-in-suite/" target="_blank" rel="noopener noreferrer">mcfx</a>
   </div>
 </details>
 

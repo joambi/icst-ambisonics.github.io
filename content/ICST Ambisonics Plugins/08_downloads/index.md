@@ -75,4 +75,4 @@ For the meaning of ambiX, ACN/SN3D, FOA/HOA, and B-Format channel counts, see **
 
 Tutorial videos for the ICST Ambisonics Plugins:
 
-- [ZHDK ICST on YouTube](https://www.youtube.com/@ICSTAmbisonics)
+- [ZHDK ICST on YouTube](https://www.youtube.com/@ZHDK_ICST/search)

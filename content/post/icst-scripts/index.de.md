@@ -27,11 +27,6 @@ Dieses ReaScript generiert Spiralbewegungen (z.B. expandierende Spiralen) für d
 <figcaption style="font-size:1.3rem;opacity:.8;margin-top:.6rem">Spiral Walk startet an der aktuellen Position jedes Punkts und schreibt die Spirale als X-, Y- (und optional Z-)Envelopes über die Zeitauswahl.</figcaption>
 </figure>
 
-DOWNLOAD ICST LuaScripts:
-(Copy to /Reaper/Scripts)
-
-- [ICST Spiral Walk.lua](https://e.pcloud.link/publink/show?code=XZmro6ZLP1Wyf6A0xL5fdX1tbfVjyhpaE7X)
-
 ---
 
 ### ⚖️ **Features**
