@@ -1,6 +1,6 @@
 ---
 title: Which Ambisonics Order Do I Need? – Choosing HOA in Practice
-description: "FOA, HOA3 or HOA7? This article explains when which order makes sense: channel count, spatial resolution, loudspeaker requirements, CPU load and binaural – as a clear decision aid for everyday production."
+description: "FOA, HOA3 or HOA7? Short answer: work in HOA7 as long as your CPU allows, with HOA3 as the fallback. Includes channel counts, loudspeaker requirements, measured CPU load in REAPER and binaural monitoring."
 date: 2026-03-21T18:00:00+01:00
 year: 2026
 month: 2026-03
@@ -15,6 +15,10 @@ post_kind: "background"
 ---
 
 Level: Beginner–Intermediate | **Audience:** Composers, producers, anyone setting up a new Ambisonics session.
+
+---
+
+**Short answer:** Work in **HOA7** as long as your computer allows it, and drop to **HOA3** if it does not. Use **FOA** for headphone-only sketches and small systems. You can always reduce the order later, but you can never add it back. On a MacBook Pro M2 Pro, a full HOA7 session with 32 sources used about 3 % CPU in REAPER (see the measured table below).
 
 ---
 
