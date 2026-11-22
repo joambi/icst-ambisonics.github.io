@@ -124,7 +124,7 @@ So habe ich Y vorne ↔ hinten und Z oben ↔ unten mit dem IEM-Multifilter geko
 <div class="step-grid">
   <div class="step"><div class="step__num">1</div><div class="step__text">Wie kann ich die Präsenz von vorne und hinten sowie das Gefühl von Höhen und Tiefen hörbarer machen?</div></div>
   <div class="step"><div class="step__num">2</div><div class="step__text">OSC-Kommunikation zwischen Encoder (Y-, Z-Achse) und IEM MultiEQ (Blauertsche Bänder) erstellen.</div></div>
-  <div class="step"><div class="step__num">3</div><div class="step__text">Mono-Encoder-FX-Chain „Blauertsche Bänder-Ambi“ einrichten.</div></div>
+  <div class="step"><div class="step__num">3</div><div class="step__text">AmbiEncoder-FX-Chain „Blauertsche Bänder-Ambi“ einrichten.</div></div>
 </div>
 
 ---
