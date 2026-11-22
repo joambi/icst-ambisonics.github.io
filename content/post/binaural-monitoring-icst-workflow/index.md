@@ -1,6 +1,6 @@
 ---
-title: Binaural Monitoring in the ICST Workflow – Headphones as a Control Tool
-description: "How to work on headphones in the ICST workflow: signal chain, plugin choice (IEM, SPARTA, dearVR), monitoring setup in REAPER and the most common mistakes in binaural listening."
+title: Monitor Ambisonics on Headphones in REAPER – Binaural Monitoring in the ICST Workflow
+description: "How to monitor Ambisonics on headphones in REAPER: put a free BinauralDecoder (IEM, SPARTA, dearVR) on the B-format master bus, match the order, use SN3D/ACN. With signal chain, step-by-step setup and the most common mistakes."
 date: 2026-03-21T16:00:00+01:00
 year: 2026
 month: 2026-03
@@ -16,6 +16,10 @@ tool: ["Binaural"]
 ---
 
 Level: Intermediate | **Audience:** Composers, producers, technicians.
+
+---
+
+**Short answer:** Put a binaural decoder (the free IEM BinauralDecoder is the standard choice) as an FX on the B-format master bus, in place of the loudspeaker decoder. The channel count of the bus must match the encoder order (4, 16, 36 or 64 channels), and everything must use SN3D/ACN. Treat headphones as a control tool, not as a replacement for the loudspeaker check.
 
 ---
 
