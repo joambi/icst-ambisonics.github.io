@@ -114,6 +114,18 @@ Ambisonics takes a different approach. Instead of mixing directly for a speaker 
 
 **When does stereo make more sense?** For most music distribution, podcasts, and broadcast, stereo remains the standard — it is compatible with every playback system and requires no special tools. Ambisonics pays off when the spatial dimension of sound matters artistically or technically, or when you need a single master file that can serve multiple playback contexts.
 
+<figure class="fig101">
+<p><strong>Stereo for loudspeakers (4 min)</strong></p>
+<audio controls preload="none" style="width:100%" aria-label="Stereo for loudspeakers (4 min)">
+  <source src="/audio/ambitest%20stereo.ogg" type="audio/ogg">
+</audio>
+<p><strong>Binaural for headphones (4 min)</strong></p>
+<audio controls preload="none" style="width:100%" aria-label="Binaural for headphones (4 min)">
+  <source src="/audio/ambitest%20bin.ogg" type="audio/ogg">
+</audio>
+<figcaption>Listening comparison on headphones: both examples come from the <a href="https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen">AmbiTest library by AudioBrewers</a>. How spatial the binaural example feels depends on the listener. More on <a href="/blog/audio-examples/">Audio Examples</a>.</figcaption>
+</figure>
+
 <a id="what-is-b-format"></a>
 ## 4. What Is B-Format?
 
@@ -226,6 +238,8 @@ Common setups range from small studio rings and dome-like height configurations 
 <a id="headphones-vs-loudspeakers"></a>
 ## 7. Headphones vs. Loudspeakers
 Headphones use [binaural rendering](/ambisonics-101/glossary/#gl-binaural) and are practical for editing, checking translation, and remote collaboration. Loudspeakers provide a physical spatial field in the room and remain essential for composition, depth perception, and artistic evaluation.
+
+**Listen instead of just reading:** binaural examples are on [Audio Examples](/blog/audio-examples/); B-format files to decode yourself are in the [B-format archive](/blog/b-format-archive/).
 
 <a id="immersive-vs-atmos"></a>
 ## 8. How is Ambisonics Different from Immersive Audio, Dolby Atmos, and Spatial Audio?

@@ -52,6 +52,10 @@ Die ältere FuMa-Konvention ordnet die Kanäle W, X, Y, Z mit maxN-Normalisierun
 
 Wer die Geschichte von Ambisonics nur als eine einzige Linie darstellt, übersieht leicht, dass zwischen den frühen FOA-Arbeiten der 1970er Jahre und der systematischen HOA-Entwicklung rund um 2000 ein deutlicher methodischer Sprung liegt. FOA ist nicht "veraltet", sondern oft die pragmatische Wahl. HOA ist nicht einfach "mehr Kanäle", sondern eine andere Grössenordnung an szenischer Präzision und Render-Flexibilitaet.
 
+## Hören
+
+Wie sich FOA und HOA anhören, zeigen die [Audio Examples](/de/blog/audio-examples/). Die Grundlagen stehen in [Ambisonics 101](/de/ambisonics-101/).
+
 ## Quellen und Referenzen
 
 - Michael Gerzon, [*Periphony: With-Height Sound Reproduction*](https://ringbuffer.org/papers/gerzon1973periphony.html) (JAES, 1973)
