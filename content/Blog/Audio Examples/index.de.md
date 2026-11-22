@@ -13,9 +13,9 @@ home_hide: true
 
 **Zielgruppe:** Komponist:in, Studierende, Forschende, Studio-Besucher:in.
 
-Kurze Preview-Snippets werden auf dieser Website gehostet. Längere Vollversionen sind extern verlinkt, um die GitHub-Pages-Limits einzuhalten.
+Auf dieser Website werden keine Audiodateien gehostet; die Beispiele sind extern verlinkt.
 
-Hinweis: Ambitest-Referenzbeispiel von Audiobrewers:
+Hinweis: Ambitest-Referenzbeispiele von AudioBrewers:
 [Ambisonics Test Library](https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen)
 
 ## So hörst du die Beispiele

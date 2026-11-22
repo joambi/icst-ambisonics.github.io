@@ -12,9 +12,9 @@ home_hide: true
 
 **Audience:** Composer, Student, Researcher, Studio visitor.
 
-Short preview snippets are hosted on this site. Full-length versions are linked externally to avoid GitHub Page size limits.
+No audio files are hosted on this site; the examples are linked externally.
 
-Hinweis: Ambitest-Referenzbeispiel von Audiobrewers:
+Note: Ambitest reference examples by AudioBrewers:
 [Ambisonics Test Library](https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen)
 
 ## How To Listen
