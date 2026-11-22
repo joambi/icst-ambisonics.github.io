@@ -11,7 +11,7 @@ weight: 12
 
 ---
 
-# Georg Katzer
+## Georg Katzer
 
 **Concert**
 
@@ -25,7 +25,7 @@ _Free admission_
 
 * * *
 
-# Programm:
+## Programm:
 
 ### Steinelied 2
 

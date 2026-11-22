@@ -11,7 +11,7 @@ Finishing a composition in Ambisonics raises an immediate practical question: wh
 > [!note]
 > This page deliberately focuses on the **ICST / B-format-centred workflow** and the most common delivery paths around it. Topics such as **ADM/BWAV**, **MPEG-H**, platform-specific streaming pipelines, or **game-engine integration** are only touched on briefly here or delegated to external resources. If you are looking for an **all-formats how-to** across broadcast, streaming, VR, and interactive media, you will need additional research beyond this guide.
 
-### External starting points
+## External starting points
 
 - **Ambisonics to ADM / Atmos delivery**: [From the Ambisonics scene to the Atmos bed – methods and tools](/post/ambisonics-to-atmos-bed/) *(currently available in German)*
 - **ADM / BWAV / ADM in BW64**: [EBU ADM Guidelines](https://adm.ebu.io/) and [ITU-R BS.2076 Audio Definition Model](https://www.itu.int/rec/R-REC-BS.2076/)

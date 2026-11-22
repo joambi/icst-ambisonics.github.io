@@ -29,11 +29,11 @@ Das folgende GIF zeigt, wie der ICST AmbiEncoder OSC-Daten von der GyrOSC-App em
 
  <video autoplay muted loop playsinline preload="metadata" poster="/post/gyrosc/GyroOSC_Demo-poster.jpg" aria-label="Beispielvideo" style="max-width:100%;height:auto"><source src="/post/gyrosc/GyroOSC_Demo.mp4" type="video/mp4"></video>
 
-### Funktionsweise:
+## Funktionsweise:
 
 Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung zur Verwendung der iOS-App _GyrOSC_ mit dem ICST Ambisonics Encoder.
 
-#### Einrichtung der GyrOSC-App:
+### Einrichtung der GyrOSC-App:
 
 1. Lade die [GyrOSC-App](https://apps.apple.com/us/app/gyrosc/id418751595) herunter.
 2. Konfiguriere die App wie folgt:

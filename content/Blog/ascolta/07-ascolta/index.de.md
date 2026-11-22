@@ -10,7 +10,7 @@ weight: 7
 ![ascolta](ascolta.png)
 
 ---
-### Ein Konzert mit einigen der ICST-Künstler in Residency
+## Ein Konzert mit einigen der ICST-Künstler in Residency
 
 **Dienstag, 6. Juni 2023, 18:00**
 

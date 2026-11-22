@@ -10,7 +10,7 @@ weight: 7
 ![ascolta](ascolta.png)
 
 ---
-### A concert featuring some of the ICST artists in residence
+## A concert featuring some of the ICST artists in residence
 
 **Tuesday, June 6, 2023, 18:00**
 

@@ -10,7 +10,7 @@ weight: 4
 ![ascolta](ascolta.png)
 
 ---
-#### Concert
+## Concert
 
 **Tuesday, December 13, 2022, 18:00**
 
@@ -22,7 +22,7 @@ weight: 4
 _Free admission_ 
 
 ----
-# GLOCKEN
+## GLOCKEN
 
 **'Ringing in'** with the church bells of the Diessenhofen/TG Reformed Church.
 

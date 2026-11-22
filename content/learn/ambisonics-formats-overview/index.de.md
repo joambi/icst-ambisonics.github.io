@@ -289,7 +289,7 @@ Darum ist die Frage "Ist das B-Format?" oft nicht genau genug. Praktischer ist:
 
 ---
 
-<div class="fmt-section" id="fuma-vs-ambix">
+<div class="fmt-section">
 
 ## FuMa vs. ambiX
 

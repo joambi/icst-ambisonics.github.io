@@ -10,7 +10,7 @@ weight: 5
 ![ascolta](ascolta.png)
 
 ---
-#### Concert
+## Concert
 
 **Tuesday, March 14, 2023, 18:00**
 
@@ -22,7 +22,7 @@ weight: 5
 _Free admission_ 
 
 ---
-# Field-Recordings & Soundscapes
+## Field-Recordings & Soundscapes
 
 Philip Samartzis  (ICST Artist in Residency 2019)
 [Atmospheres & Disturbances](https://bogongsound.com.au/projects/atmospheres-and-disturbances)

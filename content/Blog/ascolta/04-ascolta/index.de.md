@@ -10,7 +10,7 @@ weight: 4
 ![ascolta](ascolta.png)
 
 ---
-#### Konzert
+## Konzert
 
 **Dienstag, 13. Dezember 2022, 18:00**
 
@@ -22,7 +22,7 @@ weight: 4
 _Freier Eintritt_
 
 ----
-# GLOCKEN
+## GLOCKEN
 
 **'Anläuten'** mit den Kirchenglocken der Reformierten Kirche Diessenhofen/TG.
 

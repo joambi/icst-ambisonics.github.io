@@ -10,7 +10,7 @@ group: "Studio"
 ---
 
 
-# Overview of the ICST Composition Studio Control Room
+## Overview of the ICST Composition Studio Control Room
 
 Level: Intermediate | **Audience:** Composer, student, researcher, studio visitor.
 

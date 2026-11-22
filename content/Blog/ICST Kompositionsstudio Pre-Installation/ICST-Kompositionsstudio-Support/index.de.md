@@ -8,7 +8,7 @@ languageCode: de
 ---
 
 * * *
-# ICST Support für das Kompositionsstudio
+## ICST Support für das Kompositionsstudio
 
 **Für wen:** Zielgruppe: Komponist:in, Studierende, Researcher, Studio-Gäste.
 

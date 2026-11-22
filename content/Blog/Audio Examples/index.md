@@ -16,7 +16,7 @@ Short preview snippets are hosted on this site. Full-length versions are linked 
 Hinweis: Ambitest-Referenzbeispiel von Audiobrewers:
 [Ambisonics Test Library](https://www.audiobrewers.com/shop/p/ambisonics-test-library#product-listen)
 
-### How To Listen
+## How To Listen
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/ambisonics-101/">Ambisonics 101</a>
   <a class="hero__link" href="/blog/ascolta/">Ascolta</a>

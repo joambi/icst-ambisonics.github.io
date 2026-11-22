@@ -10,7 +10,7 @@ weight: 2
 ![ascolta](ascolta.png)
 
 ---
-#### Concert
+## Concert
 
 **Tuesday, October 4, 2022, 18:00**
 
@@ -42,7 +42,7 @@ Current information about the event can be found [here](https://www.zhdk.ch/vera
 
 * * *
 
-# Program notes:
+## Program notes:
 
 ### Gerald Bennett: Vêpres vénitiennes - Il dì s'appressa (1999)
 

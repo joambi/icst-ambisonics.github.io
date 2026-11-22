@@ -16,7 +16,7 @@ ICST Artist in Residence vom **16.06.2025 bis 06.07.2025** (Studio-Residenz)
 Während seiner dreiwöchigen ICST Studio-Residenz produzierte Nandele Maguni eine neue Veröffentlichung mit dem Titel "Kampfumo", basierend auf seinen Feldaufnahmen aus Maputo.
 ![nandele_01](nandele_01.png)
 
-### Klang an der ZHdK – ICST erforschen
+## Klang an der ZHdK – ICST erforschen
 
 Die Residenz an der ZHdK – Zurich University of the Arts im ICST war für mich eine inspirierende Erfahrung.
 

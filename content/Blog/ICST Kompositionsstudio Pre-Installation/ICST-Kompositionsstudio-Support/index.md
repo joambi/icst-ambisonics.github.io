@@ -7,7 +7,7 @@ group: "Residents"
 ---
 
 * * *
-# ICST support for the composition studio
+## ICST support for the composition studio
 
 Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 

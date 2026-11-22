@@ -38,7 +38,7 @@ https://github.com/schweizerweb/icst-ambisonics-plugins/wiki
 Alle Beispiele werden in der DAW Reaper durchgeführt, da Reaper bis zu 128 Audiospuren pro Track verarbeitet. Dies macht Reaper zur prädestinierten DAW für das Arbeiten mit Ambisonics und 3D-Audio.
 
 ---
-### Overview ICST Ambisonics Decoder
+## Overview ICST Ambisonics Decoder
 
 ![](/icst-ambisonics-plugins/08_icst_decoder/decoder-overview.png)
 1. Radar Horizontal Ansicht der Laustprecher-Anordnung (ICST Kompositionsstudio)
@@ -60,7 +60,7 @@ Settings:
 5. Speaker-Parmeter Editor
 	 ![](/icst-ambisonics-plugins/08_icst_decoder/CleanShot%202026-02-11%20at%2010.59.50@2x.png)
 
-#### Actions affecting sound:
+### Actions affecting sound:
 
 | Action                       | Mouse/Keyboard   |     |
 | ---------------------------- | ---------------- | --- |

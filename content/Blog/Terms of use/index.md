@@ -11,7 +11,7 @@ group: "Residents"
 
 * * *
 
-### Regulations for the use of the ICST composition studio:
+## Regulations for the use of the ICST composition studio:
 
 * **Do not eat or drink in the studio.**
 * **do not set up your own user accounts on the composition computer**

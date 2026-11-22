@@ -82,7 +82,7 @@ Preset-Ansichten und Referenzlayouts für ein schnelles Setup im ICST Studio.
   <img src="/blog/icst-kompositionsstudio-speaker-settings/2023-04-All.jpg" alt="All speakers setting">
 </details>
 
-### Weitere Links
+## Weitere Links
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/blog/downloads/">Speaker Files & Downloads</a>
   <a class="hero__link" href="/blog/icst-kompositionsstudio-regie/">Regie</a>

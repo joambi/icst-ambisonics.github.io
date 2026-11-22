@@ -194,7 +194,7 @@ This page describes the **complete Ambisonics workflow** — from microphone pla
 </div>
 </div>
 
-### Microphone Selection
+## Microphone Selection
 
 Ambisonics microphones record in **A-Format** — the raw capsule signals, not yet a sound-field format. Conversion to **B-Format (ambiX)** happens afterwards, either internally in the microphone or via software.
 

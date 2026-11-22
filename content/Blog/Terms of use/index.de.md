@@ -12,7 +12,7 @@ languageCode: de
 
 * * *
 
-### Regeln für die Nutzung des ICST Kompositionsstudios:
+## Regeln für die Nutzung des ICST Kompositionsstudios:
 
 * **Im Studio nicht essen oder trinken.**
 * **Keine eigenen Benutzerkonten auf dem Kompositionsrechner einrichten.**

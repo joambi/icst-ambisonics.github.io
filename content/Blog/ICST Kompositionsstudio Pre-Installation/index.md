@@ -9,7 +9,7 @@ weight: 2
 group: "Residents"
 ---
 
-# Pre-installation for your laptop
+## Pre-installation for your laptop
 
 Level: Beginner | **Audience:** Composer, student, researcher, studio visitor.
 
@@ -42,12 +42,12 @@ As shown above, synchronization is correct.
 - For Ambisonics, delete the `stereo-mix`.
 
 ---
-# Video / Screen
+## Video / Screen
 
 **Install DisplayLink Manager**  
 Download and install  [DisplayLink Manager for macOS](https://www.synaptics.com/products/displaylink-graphics/downloads/macos) for your system.
 
-#### **Tip:** 
+### **Tip:** 
 To get the curved screen as a single large screen, you need to make an additional setting on your Mac.
 
 1. system preferences -> mission control
@@ -57,7 +57,7 @@ To get the curved screen as a single large screen, you need to make an additiona
    ![Mission_3](Mission3.webp)
 
 ---
-# Support & Contact
+## Support & Contact
 
 **Help:**
 - Johannes Schütt &nbsp;&nbsp; Mobile: +41 79 786 12 49 &nbsp;&nbsp; Mail: [johannes.schuett@zhdk.ch](mailto:johannes.schuett@zhdk.ch)
@@ -66,6 +66,6 @@ To get the curved screen as a single large screen, you need to make an additiona
 - [simon.koenz@zhdk.ch](mailto:simon.koenz@zhdk.ch) &nbsp;&nbsp; Mobile: +41 76 330 11 02
 
 ---
-# Downloads
+## Downloads
 
 → All downloads are centralized on the [Downloads](/blog/downloads/) page.

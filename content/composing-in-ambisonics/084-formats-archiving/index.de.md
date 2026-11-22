@@ -12,7 +12,7 @@ Das Abschliessen einer Ambisonics-Komposition stellt sofort eine praktische Frag
 > [!note]
 > Diese Seite konzentriert sich bewusst auf den **ICST- bzw. B-Format-zentrierten Workflow** und die häufigsten daraus abgeleiteten Lieferwege. Themen wie **ADM/BWAV**, **MPEG-H**, plattformspezifische Streaming-Pipelines oder die Integration in **Game-Engines** werden hier nur angerissen oder auf externe Ressourcen ausgelagert. Wer ein wirkliches **„All-formats“-Howto** für Broadcast, Streaming, VR und interaktive Medien sucht, muss ergänzend recherchieren.
 
-### Externe Einstiege
+## Externe Einstiege
 
 - **Ambisonics zu ADM / Atmos-Delivery**: [Von der Ambisonics-Szene zum Atmos Bed – Methodik und Werkzeuge](/post/ambisonics-to-atmos-bed/)
 - **ADM / BWAV / ADM in BW64**: [EBU ADM Guidelines](https://adm.ebu.io/) und [ITU-R BS.2076 Audio Definition Model](https://www.itu.int/rec/R-REC-BS.2076/)

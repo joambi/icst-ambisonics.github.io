@@ -81,7 +81,7 @@ Preset views and reference layouts for fast setup in the ICST studio.
   <img src="2023-04-All.jpg" alt="All speakers setting">
 </details>
 
-### Further Links
+## Further Links
 <div class="hero__links">
   <a class="hero__link hero__link--primary" href="/blog/downloads/">Speaker Files & Downloads</a>
   <a class="hero__link" href="/blog/icst-kompositionsstudio-regie/">Regie</a>

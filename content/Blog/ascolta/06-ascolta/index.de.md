@@ -10,7 +10,7 @@ weight: 6
 ![ascolta](ascolta.png)
 
 ---
-#### Konzert
+## Konzert
 
 **Dienstag, 4. April 2023, 18:00**
 
@@ -22,11 +22,11 @@ weight: 6
 _Freier Eintritt_
 
 ---
-# Zbigniew Karkowski (Polen/Japan)
+## Zbigniew Karkowski (Polen/Japan)
 
 ## Titel: \_kein Name\_
 
-#### Dur: 60'
+### Dur: 60'
 
 ### Beschreibung:
 

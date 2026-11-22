@@ -22,9 +22,9 @@ The studio room is approximately 7 m long, 7 m wide, and 7 m high.
 Speaker coordinates for the ICST Composition Studio
 
 ![Speaker Setup](Speakers_Kompstudio.png)
-### Coordinates
+## Coordinates
 ![Speaker-Setting](Speaker_Setting.png)
-#### Multi-decoder setup (example)
+### Multi-decoder setup (example)
 ![MultiDecoder](MultiDec.png)
 
 Speakers 1-17 -> channels 1-17

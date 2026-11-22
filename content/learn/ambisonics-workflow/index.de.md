@@ -391,7 +391,7 @@ Diese Seite beschreibt den **vollständigen Ambisonics-Workflow** — von der er
 </div>
 </div>
 
-### Mikrofon-Auswahl
+## Mikrofon-Auswahl
 
 Ambisonics-Mikrofone nehmen im **A-Format** auf — das sind die Rohsignale der Kapseln, noch kein Schallfeld-Format. Die Konversion in **B-Format (ambiX)** erfolgt danach, entweder direkt im Mikrofon oder per Software.
 

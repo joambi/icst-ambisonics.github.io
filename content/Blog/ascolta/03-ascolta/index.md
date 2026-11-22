@@ -10,7 +10,7 @@ weight: 3
 ![ascolta](ascolta.png)
 
 ---
-#### Concert
+## Concert
 
 **Tuesday, October 4, 2022, 18:00**
 
@@ -22,7 +22,7 @@ weight: 3
 _Free admission_
 
 ---
-# GRANULAR
+## GRANULAR
 
 **Nicos Stavropoulos,** January 12, 2018 - January 19, 2018
 **Karst Grotto (2018)**
