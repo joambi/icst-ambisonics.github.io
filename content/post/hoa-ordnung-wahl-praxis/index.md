@@ -205,14 +205,19 @@ For binaural headphone monitoring, the perceptible jump in quality lies between 
 
 ## CPU load in REAPER
 
-| Order | Channels | Relative CPU | In practice |
-|---|---|---|---|
-| FOA | 4 | very low | no problem even on older systems |
-| HOA3 | 16 | moderate | standard on a modern computer, no problem |
-| HOA5 | 36 | noticeable | large sessions require a freeze strategy |
-| HOA7 | 64 | high | with many sources: freeze or render to file |
+Measured: FX CPU in percent according to the REAPER Performance Meter, per cell after 60 s of playback. The encoder load rises with the number of sources and the order; the decoder load rises with the order (not with the number of sources).
 
-In REAPER: if HOA7 tracks need to be frozen, use the *Freeze* function (right-click the track → Freeze). The frozen track is stored internally as a fully calculated multichannel file and no longer causes encoder CPU load – only bus routing remains.
+| Order | Channels | Encoder, 1 source | Encoder, 32 sources | Decoder (18 loudspeakers) | Encoder + decoder, 32 sources | In practice |
+|---|---|---|---|---|---|---|
+| FOA | 4 | 0.26 % | 1.0 % | 0.55–0.86 % | 1.7 % | no dropouts up to 32 sources |
+| HOA3 | 16 | 0.26 % | 1.3 % | 0.68–0.95 % | 2.0 % | no dropouts up to 32 sources |
+| HOA5 | 36 | 0.22 % | 1.8 % | 0.83–1.0 % | 2.6 % | no dropouts up to 32 sources |
+| HOA7 | 64 | 0.33 % | 2.2 % | 1.0–1.7 % | 3.2 % | no dropouts up to 32 sources; freeze is sensible for large sessions with effects |
+| HOA7 after Freeze | 64 | – | – | 1.6 % | 1.7 % (file 0.14 %) | saves the encoder load |
+
+Measurement conditions: MacBook Pro 16" (2023, Apple M2 Pro, 16 GB), REAPER 7.86, 48 kHz, 512 samples, ICST plugins as VST3, pink noise on all sources, sources not moving, one reading per cell, series of 22 November 2026. The total load stayed below 6 % in all cells and there were no dropouts. The values apply to this computer and this plugin chain; with effects, reverb, the Animator or a slower computer the load will be higher. The freeze row was measured with a synthetic 64-channel file.
+
+In REAPER: if HOA7 tracks need to be frozen, use the *Freeze* function (right-click the track → Freeze). The frozen track is stored internally as a fully calculated multichannel file and no longer causes encoder CPU load – only bus routing and reading the file remain (measured 0.14 % at 64 channels).
 
 ---
 
@@ -266,7 +271,7 @@ What on this page is documented and what is experience:
 - **Channel count (N+1)² and minimum number of loudspeakers:** a standard result of Ambisonics theory, see Zotter & Frank, *Ambisonics: A Practical 3D Audio Theory for Recording, Studio Production, Sound Reinforcement, and Virtual Reality* (Springer, 2019, open access).
 - **The sweet spot grows with order and shrinks with frequency:** Ward & Abhayapala, *Reproduction of a plane-wave sound field using an array of loudspeakers*, IEEE Transactions on Speech and Audio Processing 9(6), 2001, pp. 697–707 ([DOI](https://doi.org/10.1109/89.943347)). The paper derives the relationship between the number of loudspeakers, the size of the reproduction zone, the frequency range and the accuracy. The head, person and group sizes in the graphics are an illustration, not a measurement.
 - **Localisation with FOA and HOA:** Bertet, Daniel, Parizet & Warusfel, *Investigation on localisation accuracy for first and higher order ambisonics reproduced sound sources*, Acta Acustica united with Acustica 99(4), 2013, pp. 642–657.
-- **Not from controlled studies:** the image-resolution comparison (480p, 1080p, 4K) is an analogy. The statements about HOA3 as a fallback and the recommendations for the ICST Composition Studio are based on studio experience. The CPU-load table is a qualitative estimate, not a measurement on a specific computer.
+- **Not from controlled studies:** the image-resolution comparison (480p, 1080p, 4K) is an analogy. The statements about HOA3 as a fallback and the recommendations for the ICST Composition Studio are based on studio experience. The CPU-load table is measured (MacBook Pro 16" 2023, Apple M2 Pro, 16 GB, REAPER 7.86, 22 November 2026) and applies only to this computer and this chain.
 
 ---
 
