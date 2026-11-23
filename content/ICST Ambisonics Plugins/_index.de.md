@@ -14,8 +14,8 @@ Bis zu **64 Quellen** lassen sich in **B-Format / HOA** enkodieren und auf frei 
 
 | Modul | Wofür |
 |---|---|
-| **AmbiEncoder**, **StereoEncoder** | Mono- oder Stereo-Quellen im Ambisonics-Feld platzieren |
-| **AmbiEncoder_64** | bis zu 64 Quellen positionieren und bewegen, mit Source-Gruppen und Animator |
+| **AmbiEncoder** | eine einzelne Mono-Quelle im Ambisonics-Feld platzieren |
+| **AmbiEncoder_64** | Stereo- und mehrere Quellen (bis zu 64) positionieren und bewegen, mit Source-Gruppen und Animator |
 | **AmbiDecoder** | B-Format auf ein Lautsprecher-Setup dekodieren |
 | **MultiDecoder** | auf geschichtete oder segmentierte Lautsprecher-Arrays dekodieren |
 
