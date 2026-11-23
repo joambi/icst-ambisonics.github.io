@@ -68,7 +68,7 @@ post_kind: "background"
 
 <div class="info-box">
 <strong>Worum es in diesem Tutorial geht</strong>
-Wie Blauertsche Bänder (frequenzabhängige Richtungswahrnehmung) die Wahrnehmung von vorne/hinten und Höhe in Ambisonics verstärken – indem die Y- und Z-Achse des ICST Encoders per OSC mit dem IEM MultiEQ gekoppelt werden.
+Wie Blauertsche Bänder (frequenzabhängige Richtungswahrnehmung) die Wahrnehmung von vorne/hinten und Höhe in Ambisonics verstärken – indem die Y- und Z-Achse des ICST AmbiEncoders per OSC mit dem IEM MultiEQ gekoppelt werden.
 </div>
 
 Für die Stimme und ihre Richtungswahrnehmung habe ich Experimente mit den [Blauertschen Bändern](https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder).
@@ -87,7 +87,7 @@ So habe ich Y vorne ↔ hinten und Z oben ↔ unten mit dem IEM-Multifilter geko
 
 <div class="osc-block">
   <div class="label">OSC OUT · Port 8008</div>
-  <span class="arrow">ICST Encoder OSC-Out Höhe</span> <span class="arrow">→</span> <span class="path">/MultiEQ/filterGain4</span> <span class="param">{sz, -5.3, 0.0, 5.3}</span>
+  <span class="arrow">ICST AmbiEncoder OSC-Out Höhe</span> <span class="arrow">→</span> <span class="path">/MultiEQ/filterGain4</span> <span class="param">{sz, -5.3, 0.0, 5.3}</span>
 </div>
 
 <div class="osc-block">
@@ -99,7 +99,7 @@ So habe ich Y vorne ↔ hinten und Z oben ↔ unten mit dem IEM-Multifilter geko
 
 <div class="osc-block">
   <div class="label">OSC OUT · Port 8008</div>
-  <span class="arrow">ICST Encoder OSC-Out Vorne</span> <span class="arrow">→</span> <span class="path">/MultiEQ/filterGain4</span> <span class="param">{sz, -5.3, 0.0, 5.3}</span>
+  <span class="arrow">ICST AmbiEncoder OSC-Out Vorne</span> <span class="arrow">→</span> <span class="path">/MultiEQ/filterGain4</span> <span class="param">{sz, -5.3, 0.0, 5.3}</span>
 </div>
 
 ![OSC Connection](osc-anbindung.png)

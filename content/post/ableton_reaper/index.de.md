@@ -30,7 +30,7 @@ Dieses Tutorial bietet eine detaillierte Anleitung zur Aufnahme von 7. Ordnung A
 Ableton überträgt Audio über "BlackHole" (bis zu 64 Kanäle) zu Reapers BlackHole-Eingangsgeräten.
 
 ![Ableton_outs](Ableton_output.png)
-Der Multi-Panner-OSC kann bis zu 16 OSC-Kanäle via localhost auf Port 50001 zum ICST Multi-AmbiEncoder senden. In Reaper werden Audio-Eingänge von BlackHole (1-4) empfangen, während der ICST Multi-AmbiEncoder OSC-Quellen (1-16) verarbeitet.
+Der Multi-Panner-OSC kann bis zu 16 OSC-Kanäle via localhost auf Port 50001 zum ICST AmbiEncoder_64 senden. In Reaper werden Audio-Eingänge von BlackHole (1-4) empfangen, während der ICST AmbiEncoder_64 OSC-Quellen (1-16) verarbeitet.
 
 <video autoplay muted loop playsinline preload="metadata" poster="/post/ableton-reaper/Ableton_OSC_BlackHole-poster.jpg" aria-label="Ableton_to_AmbiEncoder_64" style="max-width:100%;height:auto"><source src="/post/ableton-reaper/Ableton_OSC_BlackHole.mp4" type="video/mp4"></video>
 

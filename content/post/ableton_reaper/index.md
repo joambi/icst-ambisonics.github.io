@@ -30,7 +30,7 @@ This tutorial provides a detailed guide to recording 7th-Order Ambisonics using 
 Ableton transmits audio via "BlackHole" (up to 64 channels) to Reaper's BlackHole input devices.
 
 ![Ableton_outs](Ableton_output.png)
-The Multi-Panner-OSC can send up to 16 OSC channels to the ICST Multi-AmbiEncoder via localhost on port 50001. In Reaper, audio inputs from BlackHole (1-4) are received, while the ICST Multi-AmbiEncoder processes OSC sources (1-16).
+The Multi-Panner-OSC can send up to 16 OSC channels to the ICST AmbiEncoder_64 via localhost on port 50001. In Reaper, audio inputs from BlackHole (1-4) are received, while the ICST AmbiEncoder_64 processes OSC sources (1-16).
 
 <video autoplay muted loop playsinline preload="metadata" poster="Ableton_OSC_BlackHole-poster.jpg" aria-label="Ableton_to_AmbiEncoder_64" style="max-width:100%;height:auto"><source src="Ableton_OSC_BlackHole.mp4" type="video/mp4"></video>
 
