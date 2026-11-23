@@ -106,7 +106,7 @@ Kostenlos, aber proprietär (VST/AU/AAX). Dear Reality wurde eingestellt: Seit 2
 | SPARTA AmbiBIN | GPLv3 ([SPARTA](https://leomccormack.github.io/sparta-site/docs/plugins/sparta-suite/)) | [offen](https://github.com/leomccormack/SPARTA) | gepflegt |
 | dearVR AMBI MICRO | proprietäre Freeware ([Sennheiser](https://www.sennheiser.com/de-ch/immersive/dear-reality)) | geschlossen | eingestellt, keine Updates |
 
-Alle drei dürfen kostenlos privat, in Lehre und Forschung sowie kommerziell eingesetzt werden. Die GPL betrifft die Software, nicht das damit gerenderte Audio: Binaurale Mischungen mit IEM oder SPARTA sind lizenzfrei ([GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.html#GPLOutput)). Pflichten entstehen erst, wenn du die Plugins selbst veränderst oder weitergibst – etwa in einem Session-Paket für Studierende. Dann müssen der GPL-Lizenztext und der Zugang zum Quellcode mitgeliefert werden. dearVR wird nur über Sennheiser verteilt; alle laden es daher am besten selbst dort herunter.
+Alle drei dürfen kostenlos privat, in Lehre und Forschung sowie kommerziell eingesetzt werden. Die GPL betrifft die Software, nicht das damit gerenderte Audio: Binaurale Mischungen mit IEM oder SPARTA unterliegen nicht der GPL ([GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.html#GPLOutput)). Pflichten entstehen erst, wenn du die Plugins selbst veränderst oder weitergibst – etwa in einem Session-Paket für Studierende. Dann müssen der GPL-Lizenztext und der Zugang zum Quellcode mitgeliefert werden. dearVR wird nur über Sennheiser verteilt; alle laden es daher am besten selbst dort herunter.
 
 ---
 
