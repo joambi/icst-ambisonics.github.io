@@ -54,8 +54,8 @@ pluginVersion = "4.0.0"
   # page = Pfad der Content-Seite (DE/EN wird automatisch gewählt); until = automatisch aus nach diesem Zeitpunkt.
   [params.popup]
   enable = true
-  page = "/Blog/ascolta/20-ascolta"
-  until = "2026-10-29T19:00:00+01:00"
+  page = "/Blog/ascolta/21-ascolta"
+  until = "2026-11-26T19:00:00+01:00"
 
   [params.mermaid]
   enable = true
