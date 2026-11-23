@@ -203,7 +203,7 @@ HOA3 is the **practical fallback** when the CPU or the plugin chain does not all
 
 ### Binaural: how much order sounds better?
 
-For binaural headphone monitoring, the perceptible jump in quality lies between FOA and HOA3 – clearly. Between HOA3 and HOA7 the difference in binaural rendering is measurable but perceptually less dramatic. From HOA3 up, binaural is high-resolution enough for most purposes.
+For binaural headphone monitoring (setup: [Monitor Ambisonics on headphones in REAPER](/post/binaural-monitoring-icst-workflow/)), the perceptible jump in quality lies between FOA and HOA3 – clearly. Between HOA3 and HOA7 the difference in binaural rendering is measurable but perceptually less dramatic. From HOA3 up, binaural is high-resolution enough for most purposes.
 
 ---
 

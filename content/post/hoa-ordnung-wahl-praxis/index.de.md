@@ -203,7 +203,7 @@ HOA3 ist der **praktische Fallback**, wenn CPU oder Plugin-Kette HOA7 nicht erla
 
 ### Binaural: Wie viel Ordnung klingt besser?
 
-Für binaurales Kopfhörer-Monitoring gilt: der wahrnehmbare Qualitätssprung liegt zwischen FOA und HOA3 – deutlich. Zwischen HOA3 und HOA7 ist der Unterschied im Binaural-Rendering messbar, aber perceptuell weniger dramatisch. Ab HOA3 ist Binaural für die meisten Zwecke ausreichend hochauflösend.
+Für binaurales Kopfhörer-Monitoring (Einrichtung: [Ambisonics in REAPER am Kopfhörer abhören](/de/post/binaural-monitoring-icst-workflow/)) gilt: der wahrnehmbare Qualitätssprung liegt zwischen FOA und HOA3 – deutlich. Zwischen HOA3 und HOA7 ist der Unterschied im Binaural-Rendering messbar, aber perceptuell weniger dramatisch. Ab HOA3 ist Binaural für die meisten Zwecke ausreichend hochauflösend.
 
 ---
 

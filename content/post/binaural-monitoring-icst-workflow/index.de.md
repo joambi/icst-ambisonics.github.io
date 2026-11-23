@@ -10,16 +10,16 @@ key_points:
   - "Binaural Monitoring ist ein Produktionswerkzeug – nicht nur ein Deliverable"
   - "Der BinauralDecoder ersetzt im Monitoring-Chain den Lautsprecher-Decoder – er sitzt am selben Bus"
   - "Encoder-Ordnung und Decoder-Ordnung müssen übereinstimmen – sonst entsteht Blur statt Lokalisation"
-difficulty: "intermediate"
+difficulty: "beginner"
 post_kind: "tutorial"
 tool: ["Binaural"]
 ---
 
-Level: Intermediate | **Audience:** Komponist:in, Producer:in, Techniker:in.
+Level: Beginner–Intermediate | **Audience:** Komponist:in, Producer:in, Techniker:in – auch ohne Lautsprecher-System.
 
 ---
 
-**Kurzantwort:** Lege einen Binaural-Decoder (meist der freie IEM BinauralDecoder) als FX auf den B-Format-Masterbus, anstelle des Lautsprecher-Decoders. Die Kanalzahl des Busses muss zur Encoder-Ordnung passen: (N+1)² Kanäle bei Ordnung N, von 4 bei 1. Ordnung bis 64 bei 7. Ordnung, und überall gilt SN3D/ACN. Der Kopfhörer ist ein Kontrollwerkzeug, kein Ersatz für die Lautsprecherprobe.
+**Kurzantwort:** Für Ambisonics brauchst du keine Lautsprecher. Lege einen Binaural-Decoder (meist der freie IEM BinauralDecoder) als FX auf den B-Format-Masterbus, anstelle des Lautsprecher-Decoders. Die Kanalzahl des Busses muss zur Encoder-Ordnung passen: (N+1)² Kanäle bei Ordnung N, von 4 bei 1. Ordnung bis 64 bei 7. Ordnung, und überall gilt SN3D/ACN. Der Kopfhörer ist ein Kontrollwerkzeug, kein Ersatz für die Lautsprecherprobe.
 
 ---
 
@@ -132,7 +132,7 @@ Wenn du zwischen Lautsprecher und Kopfhörer wechseln willst: ICST AmbiDecoder u
 
 ## Häufige Fehler
 
-**Ordnungs-Mismatch:** Der Encoder arbeitet auf HOA3 (16 Kanäle), aber der B-Format-Bus ist nur auf 4 Kanäle eingestellt. Der BinauralDecoder empfängt dann ein gekürztes Signal – die Lokalisation ist unscharf, der Klang klingt nach FOA, obwohl HOA-Material vorliegt. Lösung: Kanalzahl am Bus überprüfen.
+**Ordnungs-Mismatch (siehe auch [Welche Ambisonics-Ordnung brauche ich?](/de/post/hoa-ordnung-wahl-praxis/)):** Der Encoder arbeitet auf HOA3 (16 Kanäle), aber der B-Format-Bus ist nur auf 4 Kanäle eingestellt. Der BinauralDecoder empfängt dann ein gekürztes Signal – die Lokalisation ist unscharf, der Klang klingt nach FOA, obwohl HOA-Material vorliegt. Lösung: Kanalzahl am Bus überprüfen.
 
 **Normalisierungs-Mismatch:** Wenn ein Plugin mit N3D betrieben wird, ein anderes mit SN3D, entstehen Pegelunterschiede zwischen den Ordnungen. Das klingt nicht falsch, aber verfälscht die Tiefenwahrnehmung. Konsequent SN3D / ACN im gesamten ICST-Signal-Pfad.
 

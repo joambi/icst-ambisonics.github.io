@@ -10,16 +10,16 @@ key_points:
   - "Binaural monitoring is a production tool – not just a deliverable"
   - "The BinauralDecoder replaces the loudspeaker decoder in the monitoring chain – it sits on the same bus"
   - "Encoder order and decoder order must match – otherwise you get blur instead of localisation"
-difficulty: "intermediate"
+difficulty: "beginner"
 post_kind: "tutorial"
 tool: ["Binaural"]
 ---
 
-Level: Intermediate | **Audience:** Composers, producers, technicians.
+Level: Beginner–Intermediate | **Audience:** Composers, producers, technicians – also anyone without a loudspeaker system.
 
 ---
 
-**Short answer:** Put a binaural decoder (the free IEM BinauralDecoder is the standard choice) as an FX on the B-format master bus, in place of the loudspeaker decoder. The channel count of the bus must match the encoder order: (N+1)² channels for order N, from 4 for first order to 64 for 7th order, and everything must use SN3D/ACN. Treat headphones as a control tool, not as a replacement for the loudspeaker check.
+**Short answer:** You do not need loudspeakers to work in Ambisonics. Put a binaural decoder (the free IEM BinauralDecoder is the standard choice) as an FX on the B-format master bus, in place of the loudspeaker decoder. The channel count of the bus must match the encoder order: (N+1)² channels for order N, from 4 for first order to 64 for 7th order, and everything must use SN3D/ACN. Treat headphones as a control tool, not as a replacement for the loudspeaker check.
 
 ---
 
@@ -132,7 +132,7 @@ If you want to switch between loudspeakers and headphones: put the ICST AmbiDeco
 
 ## Common mistakes
 
-**Order mismatch:** The encoder works at HOA3 (16 channels), but the B-format bus is set to only 4 channels. The BinauralDecoder then receives a truncated signal – localisation is blurred and the sound is like FOA although HOA material is present. Solution: check the channel count on the bus.
+**Order mismatch (see also [Which Ambisonics order do I need?](/post/hoa-ordnung-wahl-praxis/)):** The encoder works at HOA3 (16 channels), but the B-format bus is set to only 4 channels. The BinauralDecoder then receives a truncated signal – localisation is blurred and the sound is like FOA although HOA material is present. Solution: check the channel count on the bus.
 
 **Normalisation mismatch:** If one plugin runs with N3D and another with SN3D, level differences arise between orders. It does not sound wrong, but it distorts depth perception. Use SN3D / ACN consistently throughout the ICST signal path.
 
