@@ -19,7 +19,7 @@ Level: Intermediate | **Audience:** Composers, producers, technicians.
 
 ---
 
-**Short answer:** Put a binaural decoder (the free IEM BinauralDecoder is the standard choice) as an FX on the B-format master bus, in place of the loudspeaker decoder. The channel count of the bus must match the encoder order (4, 16, 36 or 64 channels), and everything must use SN3D/ACN. Treat headphones as a control tool, not as a replacement for the loudspeaker check.
+**Short answer:** Put a binaural decoder (the free IEM BinauralDecoder is the standard choice) as an FX on the B-format master bus, in place of the loudspeaker decoder. The channel count of the bus must match the encoder order: (N+1)² channels for order N, from 4 for first order to 64 for 7th order, and everything must use SN3D/ACN. Treat headphones as a control tool, not as a replacement for the loudspeaker check.
 
 ---
 
