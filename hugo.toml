@@ -205,7 +205,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   parent = "tools"
 
 [[menu.main]]
-  name = "Animator"
+  name = "Animator · timeline groups"
   identifier = "tools-4"
   weight = 205
   url = "/icst-ambisonics-plugins/11_animator/"
@@ -213,28 +213,28 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   pre = '<span class="optionswitch__group">Movement & automation</span>'
 
 [[menu.main]]
-  name = "Motion Map"
+  name = "Motion Map · trajectories"
   identifier = "tools-6"
   weight = 206
   url = "/icst-ambisonics-plugins/15_icst_ambi_motion_map/"
   parent = "tools"
 
 [[menu.main]]
-  name = "Kristall Motion Map"
+  name = "Kristall Motion Map · lattice sequencer"
   identifier = "tools-8"
   weight = 207
   url = "/icst-ambisonics-plugins/18_kristall_motion_map/"
   parent = "tools"
 
 [[menu.main]]
-  name = "Motion Markers"
+  name = "Motion Markers · cue import"
   identifier = "tools-9"
   weight = 208
   url = "/icst-ambisonics-plugins/14_icst_ambi_motion_markers/"
   parent = "tools"
 
 [[menu.main]]
-  name = "Animator Choreographer"
+  name = "Animator Choreographer · desktop app"
   identifier = "tools-5"
   weight = 209
   url = "/icst-ambisonics-plugins/20_animator_choreographer/"
