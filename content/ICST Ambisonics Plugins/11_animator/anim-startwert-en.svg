@@ -6,19 +6,19 @@
   <path d="M263.2 27 l-4 6 h4 l-2 5 l7 -8 h-4 l2 -3 z" fill="#339af0"/>
   <rect x="446.4" y="22" width="141.6" height="20" rx="4" fill="#339af0" fill-opacity=".18" stroke="#339af0" stroke-width="1.2"/>
   <path d="M454.4 27 l-4 6 h4 l-2 5 l7 -8 h-4 l2 -3 z" fill="#339af0"/>
-  <text x="64" y="16" font-family="sans-serif" font-size="14" fill="currentColor" opacity=".8">Action clip: Rotation Z, Relative During Clip 90°</text>
+  <text x="64" y="16" font-family="sans-serif" font-size="14" fill="currentColor">Action clip: Rotation Z, Relative During Clip 90°</text>
   <rect x="64" y="96" width="141.6" height="110" fill="#339af0" fill-opacity=".06"/>
   <rect x="255.2" y="96" width="141.6" height="110" fill="#339af0" fill-opacity=".06"/>
   <rect x="446.4" y="96" width="141.6" height="110" fill="#339af0" fill-opacity=".06"/>
   <line x1="64" y1="206" x2="588" y2="206" stroke="currentColor" stroke-width="1" opacity="0.5"/>
-  <text x="56" y="210" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".7">0°</text>
+  <text x="56" y="210" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor">0°</text>
   <line x1="64" y1="169.3" x2="588" y2="169.3" stroke="currentColor" stroke-width="0.6" opacity="0.22"/>
-  <text x="56" y="173.3" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".7">90°</text>
+  <text x="56" y="173.3" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor">90°</text>
   <line x1="64" y1="132.7" x2="588" y2="132.7" stroke="currentColor" stroke-width="0.6" opacity="0.22"/>
-  <text x="56" y="136.7" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".7">180°</text>
+  <text x="56" y="136.7" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor">180°</text>
   <line x1="64" y1="96" x2="588" y2="96" stroke="currentColor" stroke-width="0.6" opacity="0.22"/>
-  <text x="56" y="100" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".7">270°</text>
-  <text x="64" y="82" font-family="sans-serif" font-size="16" font-weight="600" fill="#339af0">Use Start Value 0° (defined)<tspan font-weight="400" fill="currentColor" opacity=".75"> – every run the same</tspan></text>
+  <text x="56" y="100" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor">270°</text>
+  <text x="64" y="82" font-family="sans-serif" font-size="16" font-weight="600" class="anim-accent" fill="#1864ab">Use Start Value 0° (defined)<tspan font-weight="400" class="anim-text" fill="currentColor"> – every run the same</tspan></text>
   <line x1="64" y1="206" x2="205.6" y2="169.3" stroke="#339af0" stroke-width="3" stroke-linecap="round"/>
   <circle cx="205.6" cy="169.3" r="4" fill="#339af0"/>
   <text x="205.6" y="160.3" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="600" fill="currentColor">90°</text>
@@ -32,19 +32,19 @@
   <line x1="446.4" y1="206" x2="588" y2="169.3" stroke="#339af0" stroke-width="3" stroke-linecap="round"/>
   <circle cx="588" cy="169.3" r="4" fill="#339af0"/>
   <text x="588" y="160.3" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="600" fill="currentColor">90°</text>
-  <text x="249.2" y="191.7" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".8">jump to 0°</text>
+  <text x="249.2" y="191.7" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor">jump to 0°</text>
   <rect x="64" y="276" width="141.6" height="110" fill="#339af0" fill-opacity=".06"/>
   <rect x="255.2" y="276" width="141.6" height="110" fill="#339af0" fill-opacity=".06"/>
   <rect x="446.4" y="276" width="141.6" height="110" fill="#339af0" fill-opacity=".06"/>
   <line x1="64" y1="386" x2="588" y2="386" stroke="currentColor" stroke-width="1" opacity="0.5"/>
-  <text x="56" y="390" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".7">0°</text>
+  <text x="56" y="390" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor">0°</text>
   <line x1="64" y1="349.3" x2="588" y2="349.3" stroke="currentColor" stroke-width="0.6" opacity="0.22"/>
-  <text x="56" y="353.3" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".7">90°</text>
+  <text x="56" y="353.3" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor">90°</text>
   <line x1="64" y1="312.7" x2="588" y2="312.7" stroke="currentColor" stroke-width="0.6" opacity="0.22"/>
-  <text x="56" y="316.7" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".7">180°</text>
+  <text x="56" y="316.7" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor">180°</text>
   <line x1="64" y1="276" x2="588" y2="276" stroke="currentColor" stroke-width="0.6" opacity="0.22"/>
-  <text x="56" y="280" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".7">270°</text>
-  <text x="64" y="262" font-family="sans-serif" font-size="16" font-weight="600" fill="#339af0">no start value (taken over)<tspan font-weight="400" fill="currentColor" opacity=".75"> – each run builds on the previous one</tspan></text>
+  <text x="56" y="280" text-anchor="end" font-family="sans-serif" font-size="13" fill="currentColor">270°</text>
+  <text x="64" y="262" font-family="sans-serif" font-size="16" font-weight="600" class="anim-accent" fill="#1864ab">no start value (taken over)<tspan font-weight="400" class="anim-text" fill="currentColor"> – each run builds on the previous one</tspan></text>
   <line x1="64" y1="386" x2="205.6" y2="349.3" stroke="#339af0" stroke-width="3" stroke-linecap="round"/>
   <circle cx="205.6" cy="349.3" r="4" fill="#339af0"/>
   <text x="205.6" y="340.3" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="600" fill="currentColor">90°</text>
@@ -57,9 +57,9 @@
   <circle cx="588" cy="276" r="4" fill="#339af0"/>
   <text x="588" y="267" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="600" fill="currentColor">270°</text>
   <text x="134.8" y="408" text-anchor="middle" font-family="sans-serif" font-size="15" fill="currentColor">Play 1</text>
-  <text x="230.4" y="408" text-anchor="middle" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".6">Stop</text>
+  <text x="230.4" y="408" text-anchor="middle" font-family="sans-serif" font-size="13" fill="currentColor">Stop</text>
   <text x="326" y="408" text-anchor="middle" font-family="sans-serif" font-size="15" fill="currentColor">Play 2</text>
-  <text x="421.6" y="408" text-anchor="middle" font-family="sans-serif" font-size="13" fill="currentColor" opacity=".6">Stop</text>
+  <text x="421.6" y="408" text-anchor="middle" font-family="sans-serif" font-size="13" fill="currentColor">Stop</text>
   <text x="517.2" y="408" text-anchor="middle" font-family="sans-serif" font-size="15" fill="currentColor">Play 3</text>
   <line x1="64" y1="418" x2="588" y2="418" stroke="currentColor" stroke-width="1" opacity=".4" marker-end="url(#sw-en-ah)"/>
 </svg>

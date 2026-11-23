@@ -81,7 +81,7 @@ def startwert_svg(lang):
     for i, (a, b) in enumerate(runs):
         o.append(f'  <rect x="{f(sx(a))}" y="22" width="{f(sx(b) - sx(a))}" height="20" rx="4" fill="{ACTION}" fill-opacity=".18" stroke="{ACTION}" stroke-width="1.2"/>')
         o.append(f'  <path d="M{f(sx(a) + 8)} 27 l-4 6 h4 l-2 5 l7 -8 h-4 l2 -3 z" fill="{ACTION}"/>')
-    o.append(f'  <text x="{x0}" y="16" {FONT} font-size="14" fill="currentColor" opacity=".8">{t["clip"]}</text>')
+    o.append(f'  <text x="{x0}" y="16" {FONT} font-size="14" fill="currentColor">{t["clip"]}</text>')
 
     for p in range(2):
         top, bottom = panels[p]
@@ -91,11 +91,11 @@ def startwert_svg(lang):
         for deg in (0, 90, 180, 270):
             y = sy(p, deg)
             o.append(f'  <line x1="{x0}" y1="{f(y)}" x2="{x1}" y2="{f(y)}" stroke="currentColor" stroke-width="{1 if deg == 0 else .6}" opacity="{.5 if deg == 0 else .22}"/>')
-            o.append(f'  <text x="{x0 - 8}" y="{f(y + 4)}" text-anchor="end" {FONT} font-size="13" fill="currentColor" opacity=".7">{deg}°</text>')
+            o.append(f'  <text x="{x0 - 8}" y="{f(y + 4)}" text-anchor="end" {FONT} font-size="13" fill="currentColor">{deg}°</text>')
         title = t["top"] if p == 0 else t["bottom"]
         sub = t["top2"] if p == 0 else t["bottom2"]
-        o.append(f'  <text x="{x0}" y="{top - 14}" {FONT} font-size="16" font-weight="600" fill="{ACTION}">{title}'
-                 f'<tspan font-weight="400" fill="currentColor" opacity=".75"> – {sub}</tspan></text>')
+        o.append(f'  <text x="{x0}" y="{top - 14}" {FONT} font-size="16" font-weight="600" class="anim-accent" fill="#1864ab">{title}'
+                 f'<tspan font-weight="400" class="anim-text" fill="currentColor"> – {sub}</tspan></text>')
 
         # value curve
         starts = [0, 0, 0] if p == 0 else [0, 90, 180]
@@ -111,14 +111,14 @@ def startwert_svg(lang):
                 if p == 0:
                     o.append(f'  <line x1="{f(sx(nxt))}" y1="{f(sy(p, 90) + 3)}" x2="{f(sx(nxt))}" y2="{f(sy(p, 0) - 5)}" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 3" marker-end="url(#{pid}-ah)"/>')
         if p == 0:
-            o.append(f'  <text x="{f(sx(runs[1][0]) - 6)}" y="{f(sy(0, 45) + 4)}" text-anchor="end" {FONT} font-size="13" fill="currentColor" opacity=".8">{t["snap"]}</text>')
+            o.append(f'  <text x="{f(sx(runs[1][0]) - 6)}" y="{f(sy(0, 45) + 4)}" text-anchor="end" {FONT} font-size="13" fill="currentColor">{t["snap"]}</text>')
 
     # time labels
     yl = panels[1][1] + 22
     for i, (a, b) in enumerate(runs):
         o.append(f'  <text x="{f((sx(a) + sx(b)) / 2)}" y="{yl}" text-anchor="middle" {FONT} font-size="15" fill="currentColor">{t["play"].format(i + 1)}</text>')
         if i < 2:
-            o.append(f'  <text x="{f((sx(b) + sx(runs[i + 1][0])) / 2)}" y="{yl}" text-anchor="middle" {FONT} font-size="13" fill="currentColor" opacity=".6">{t["stop"]}</text>')
+            o.append(f'  <text x="{f((sx(b) + sx(runs[i + 1][0])) / 2)}" y="{yl}" text-anchor="middle" {FONT} font-size="13" fill="currentColor">{t["stop"]}</text>')
     o.append(f'  <line x1="{x0}" y1="{yl + 10}" x2="{x1}" y2="{yl + 10}" stroke="currentColor" stroke-width="1" opacity=".4" marker-end="url(#{pid}-ah)"/>')
     o.append("</svg>")
     return "\n".join(o) + "\n"
