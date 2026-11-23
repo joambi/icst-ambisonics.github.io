@@ -219,7 +219,7 @@ Measured: FX CPU in percent according to the REAPER Performance Meter, per cell 
 | HOA7 | 64 | 0.33 % | 2.2 % | 1.0–1.7 % | 3.2 % | no dropouts up to 32 sources; freeze is sensible for large sessions with effects |
 | HOA7 after Freeze | 64 | – | – | 1.6 % | 1.7 % (file 0.14 %) | saves the encoder load |
 
-Measurement conditions: MacBook Pro 16" (2023, Apple M2 Pro, 16 GB), REAPER 7.86, 48 kHz, 512 samples, ICST plugins as VST3, pink noise on all sources, sources not moving, one reading per cell, series of 22 November 2026. The total load stayed below 6 % in all cells and there were no dropouts. The values apply to this computer and this plugin chain; with effects, reverb, the Animator or a slower computer the load will be higher. The freeze row was measured with a synthetic 64-channel file.
+Measurement conditions: MacBook Pro 16" (2023, Apple M2 Pro, 16 GB), REAPER 7.86, 48 kHz, 512 samples, ICST plugins as VST3, pink noise on all sources, sources not moving, one reading per cell, series of 22 November 2026. The total load stayed below 6 % in all cells and there were no dropouts. The values apply to this computer and this plugin chain; with effects, reverb, the Animator or a slower computer the load will be higher. The freeze row was measured with a synthetic 64-channel file. The full method, all cells and the limitations are in the [measurement protocol](/post/messprotokoll-cpu-last-hoa/).
 
 In REAPER: if HOA7 tracks need to be frozen, use the *Freeze* function (right-click the track → Freeze). The frozen track is stored internally as a fully calculated multichannel file and no longer causes encoder CPU load – only bus routing and reading the file remain (measured 0.14 % at 64 channels).
 
