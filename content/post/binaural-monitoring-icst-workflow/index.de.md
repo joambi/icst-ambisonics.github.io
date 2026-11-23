@@ -19,7 +19,7 @@ Level: Intermediate | **Audience:** Komponist:in, Producer:in, Techniker:in.
 
 ---
 
-**Kurzantwort:** Lege einen Binaural-Decoder (meist der freie IEM BinauralDecoder) als FX auf den B-Format-Masterbus, anstelle des Lautsprecher-Decoders. Die Kanalzahl des Busses muss zur Encoder-Ordnung passen (4, 16, 36 oder 64 Kanäle), und überall gilt SN3D/ACN. Der Kopfhörer ist ein Kontrollwerkzeug, kein Ersatz für die Lautsprecherprobe.
+**Kurzantwort:** Lege einen Binaural-Decoder (meist der freie IEM BinauralDecoder) als FX auf den B-Format-Masterbus, anstelle des Lautsprecher-Decoders. Die Kanalzahl des Busses muss zur Encoder-Ordnung passen: (N+1)² Kanäle bei Ordnung N, von 4 bei 1. Ordnung bis 64 bei 7. Ordnung, und überall gilt SN3D/ACN. Der Kopfhörer ist ein Kontrollwerkzeug, kein Ersatz für die Lautsprecherprobe.
 
 ---
 
