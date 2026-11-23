@@ -68,7 +68,7 @@ Level: Advanced | **Audience:** Psychoacoustics-focused composer/researcher.
 
 <div class="info-box">
 <strong>What this tutorial covers</strong>
-How to use Blauert's Bands (frequency-dependent directional perception) to enhance front/back and height perception in Ambisonics — by coupling the ICST Encoder's Y and Z axes to the IEM MultiEQ via OSC.
+How to use Blauert's Bands (frequency-dependent directional perception) to enhance front/back and height perception in Ambisonics — by coupling the ICST AmbiEncoder's Y and Z axes to the IEM MultiEQ via OSC.
 </div>
 
 For the voice and its directivity perception I conducted experiments with the [Blauert's Bands](https://de.wikipedia.org/wiki/Blauertsche_B%C3%A4nder).
@@ -87,7 +87,7 @@ Thus I coupled Y Front ↔ Back and Z Top ↔ Bottom with the IEM-Multifilter.
 
 <div class="osc-block">
   <div class="label">OSC OUT · Port 8008</div>
-  <span class="arrow">ICST Encoder OSC-Out Height</span> <span class="arrow">→</span> <span class="path">/MultiEQ/filterGain4</span> <span class="param">{sz, -5.3, 0.0, 5.3}</span>
+  <span class="arrow">ICST AmbiEncoder OSC-Out Height</span> <span class="arrow">→</span> <span class="path">/MultiEQ/filterGain4</span> <span class="param">{sz, -5.3, 0.0, 5.3}</span>
 </div>
 
 <div class="osc-block">
@@ -99,7 +99,7 @@ Thus I coupled Y Front ↔ Back and Z Top ↔ Bottom with the IEM-Multifilter.
 
 <div class="osc-block">
   <div class="label">OSC OUT · Port 8008</div>
-  <span class="arrow">ICST Encoder OSC-Out Front</span> <span class="arrow">→</span> <span class="path">/MultiEQ/filterGain4</span> <span class="param">{sz, -5.3, 0.0, 5.3}</span>
+  <span class="arrow">ICST AmbiEncoder OSC-Out Front</span> <span class="arrow">→</span> <span class="path">/MultiEQ/filterGain4</span> <span class="param">{sz, -5.3, 0.0, 5.3}</span>
 </div>
 
 ![OSC Connection](osc-anbindung.png)
