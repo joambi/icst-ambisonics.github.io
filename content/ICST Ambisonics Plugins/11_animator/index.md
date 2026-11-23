@@ -104,6 +104,8 @@ Every clip needs a point of departure. You can **define** it or let the clip **t
 | **defined** | *Use Defined Start Position* on, start position entered | *Use Start Value* on, start angle or start stretch entered |
 | **taken over** | off; the clip begins wherever the group point is at that moment | off; the clip builds on the current rotation or stretch |
 
+{{< inline-svg src="anim-startwert" >}}
+
 With a **defined** start the group jumps to that value when the clip begins, and the clip then runs the same way every time, whatever happened before. That holds for every Play, loop, Pause/Resume and even for entering the clip part-way through.
 
 With a **taken-over** start the result is only predictable when playback runs into the clip from before it, without interruption. As soon as anything intervenes, "the current state" is a different one and the clip ends somewhere else:
@@ -184,6 +186,8 @@ Double-clicking a movement clip opens **Edit Movement Clip** with three areas: *
 {{< video name="AT-MOV-V01-Movement-Types-Tour" muted="true" caption="Tour of all movement types in the editor." >}}
 
 ### Movement types and their parameters
+
+{{< animator-movement-types >}}
 
 | Type | Path | Positions | Type parameters |
 |---|---|---|---|

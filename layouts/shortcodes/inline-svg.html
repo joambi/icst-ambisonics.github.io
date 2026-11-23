@@ -1,0 +1,10 @@
+{{- /* Inlines an SVG from the page bundle so it inherits text colour (dark mode).
+       Usage: {{< inline-svg src="anim-startwert" >}}  -> loads anim-startwert-<lang>.svg if present, else anim-startwert.svg */ -}}
+{{- $src := .Get "src" -}}
+{{- $lang := .Page.Language.Lang -}}
+{{- $res := or (.Page.Resources.Get (printf "%s-%s.svg" $src $lang)) (.Page.Resources.Get (printf "%s.svg" $src)) -}}
+{{- with $res -}}
+<figure class="inline-svg">{{ .Content | safeHTML }}{{ with $.Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}</figure>
+{{- else -}}
+{{- errorf "inline-svg: %s not found in %s" $src $.Page.File.Path -}}
+{{- end -}}
