@@ -28,6 +28,10 @@ We conduct regular malware scans. 
 Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.   
 We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information.   
 All transactions are processed through a gateway provider and are not stored or processed on our servers.   
+### Visitor statistics (GoatCounter)
+
+To count page views, ambisonics.ch uses [GoatCounter](https://www.goatcounter.com/), an open-source, privacy-friendly web analytics service. GoatCounter does not set cookies and does not store IP addresses or other personally identifiable information. It records only aggregated data: the page visited, the referring website, the browser and operating system, the screen size and the approximate country derived from the IP address. See the [GoatCounter privacy policy](https://www.goatcounter.com/help/privacy).
+
 ### Do we use “cookies”?   
   
 Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow) that enables the site's or service provider's systems to recognize your browser and capture and remember certain information. We use cookies, for example, to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, enabling us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.   

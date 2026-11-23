@@ -38,6 +38,8 @@
 
     {{- partial "popup.html" . -}}
 
+    {{- partial "analytics/goatcounter.html" . -}}
+
     {{- if (eq .Site.Params.simpleAnalytics.enable true) -}}
       {{- partial "analytics/simpleanalytics.html" . -}}
     {{- end -}}

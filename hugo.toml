@@ -52,6 +52,12 @@ pluginVersion = "4.0.0"
 
   # Popup "Aktuell": erscheint einmal pro Besuch (Browser-Sitzung), wegklickbar.
   # page = Pfad der Content-Seite (DE/EN wird automatisch gewählt); until = automatisch aus nach diesem Zeitpunkt.
+  # Besucherstatistik: GoatCounter (cookielos, keine personenbezogenen Daten).
+  # Läuft nur im Production-Build. Dashboard: https://ambisonics.goatcounter.com
+  [params.goatcounter]
+  enable = true
+  code = "ambisonics"
+
   [params.popup]
   enable = true
   page = "/Blog/ascolta/21-ascolta"

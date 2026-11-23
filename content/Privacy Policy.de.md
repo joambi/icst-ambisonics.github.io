@@ -21,6 +21,10 @@ Die vollständige Datenschutzerklärung ist hier verfügbar:
 
 Die verlinkte Fassung ist die verbindliche Version für `ambisonics.ch`.
 
+### Besucherstatistik (GoatCounter)
+
+Um Seitenaufrufe zu zählen, verwendet ambisonics.ch [GoatCounter](https://www.goatcounter.com/), einen quelloffenen, datensparsamen Statistikdienst. GoatCounter setzt keine Cookies und speichert weder IP-Adressen noch andere personenbezogene Daten. Erfasst werden nur zusammengefasste Angaben: aufgerufene Seite, verweisende Website, Browser und Betriebssystem, Bildschirmgrösse sowie das aus der IP-Adresse abgeleitete ungefähre Land. Details: [Datenschutzerklärung von GoatCounter](https://www.goatcounter.com/help/privacy).
+
 ---
 
 <span style="font-size:9px;color:#9f9f9f;">©2026 ICST</span>
