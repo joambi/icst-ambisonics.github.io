@@ -8,7 +8,7 @@ docs_nav_group: "Getting started"
 
 ## ICST Ambisonics Plugins Release 4.0
 
-Version 4.0.0 is out. It is a major step forward for composing in Ambisonics with source groups: create choreographies directly in the REAPER timeline and save them as XML scores, so you can reuse and reshape them in other projects. The ICST Group Animator is a work in progress and will continue to grow.
+Version 4.0.0 is out (released 9 November 2026). It is a major step forward for composing in Ambisonics with source groups: create choreographies directly in the REAPER timeline and save them as XML scores, so you can reuse and reshape them in other projects. The ICST Group Animator is a work in progress and will continue to grow.
 
 In the ICST AmbiEncoder_64 plugin the Blauert filters have been optimised, and for a spherical presentation without a frontal orientation, the Z axis alone can be selected.
 
