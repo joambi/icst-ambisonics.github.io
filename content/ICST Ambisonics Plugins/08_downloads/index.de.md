@@ -18,6 +18,8 @@ Die zentrale Plugin-Suite für Encoding und Decoding von Ambisonics B-Format in 
 - Aktuelle Version: 4.0.0, erschienen am 9. November 2026 ([Release Notes](https://github.com/schweizerweb/icst-ambisonics-plugins/releases/tag/4.0.0))
 - [GitHub-Repository und Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins) — Quellcode, Issue-Tracker und vollständige technische Dokumentation
 
+Die Installer sind nicht signiert. macOS und Windows können beim ersten Start eine Sicherheitswarnung anzeigen. Lade sie nur von der GitHub-Release-Seite herunter.
+
 Enthält: AmbiEncoder (Mono + Multi), AmbiDecoder, MultiDecoder, Animator und OSC-Unterstützung.
 
 Für die Installationsanleitung siehe [Installation](/de/icst-ambisonics-plugins/02_installation/).
