@@ -8,17 +8,17 @@ aliases:
 ---
 
 <div class="icst-pillars">
-  <a class="icst-pillar icst-pillar--plugins" href="/icst-ambisonics-plugins/">
+  <a class="icst-pillar icst-pillar--plugins" href="/de/icst-ambisonics-plugins/">
     <span class="icst-pillar__icon">🎛️</span>
     <strong class="icst-pillar__title">Ambisonics Plugins & Max Tools</strong>
     <span class="icst-pillar__desc">Freie Ambisonics-Tools für REAPER und Max/MSP — Encoder, Decoder, Monitor, OSC-Steuerung.</span>
   </a>
-  <a class="icst-pillar icst-pillar--residency" href="/residenzen/">
+  <a class="icst-pillar icst-pillar--residency" href="/de/residenzen/">
     <span class="icst-pillar__icon">🏛️</span>
     <strong class="icst-pillar__title">Studio-Residenzen</strong>
     <span class="icst-pillar__desc">Artist-in-Residence am ICST — aktuelle und vergangene Residenzen, Projekte, Dokumentation.</span>
   </a>
-  <a class="icst-pillar icst-pillar--ascolta" href="/blog/ascolta/">
+  <a class="icst-pillar icst-pillar--ascolta" href="/de/blog/ascolta/">
     <span class="icst-pillar__icon">🎧</span>
     <strong class="icst-pillar__title">ASCOLTA</strong>
     <span class="icst-pillar__desc">Akusmatische Konzerte und Listening-Sessions an der ZHdK — offen für alle.</span>
@@ -41,7 +41,7 @@ Neu dabei? Folge dem geführten Startpfad. Schon im Thema? Spring direkt in die 
   <a class="hero__link hero__link--primary" href="/de/start/">
     <i class="fas fa-play"></i>&nbsp;Hier starten
   </a>
-  <a class="hero__link" href="/icst-ambisonics-plugins/">
+  <a class="hero__link" href="/de/icst-ambisonics-plugins/">
     <i class="fas fa-book-open"></i>&nbsp;Plugin-Doku
   </a>
   <a class="hero__link" href="/de/ecosystem/">
@@ -63,14 +63,14 @@ Neu in v{{< param pluginVersion >}}: [Was ist neu](/icst-ambisonics-plugins/00_n
     <h4>🎧 Für Einsteiger:innen</h4>
     <p>Schneller Einstieg in Setup, Signalfluss und den ersten räumlichen Mix in REAPER.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
+      <a class="hero__link hero__link--primary" href="/de/icst-ambisonics-plugins/04_quick_start/">Schnellstart</a>
     </div>
   </section>
   <section class="home-card">
-    <h4>⚙️ Für Production Work</h4>
+    <h4>⚙️ Für die Produktion</h4>
     <p>Technische Tiefe für robuste Pipelines, OSC-Steuerung und reproduzierbare Session-Templates.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/03_how_it_works/">How It Works</a>
+      <a class="hero__link hero__link--primary" href="/de/icst-ambisonics-plugins/03_how_it_works/">Wie es funktioniert</a>
     </div>
   </section>
   <section class="home-card">
@@ -78,7 +78,7 @@ Neu in v{{< param pluginVersion >}}: [Was ist neu](/icst-ambisonics-plugins/00_n
     <p>Räumliches Denken für Komponist:innen — analytisches Hören, Bewegung und Tiefe als kompositorische Parameter, Studiopraxis. Der vollständige Kompositions-Guide ist in Vorbereitung.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/de/post/komposition-in-ambisonics/">Einführung</a>
-      <a class="hero__link" href="/de/blog/ascolta-listening-guide/">Listening Guide</a>
+      <a class="hero__link" href="/de/blog/ascolta-listening-guide/">Hörleitfaden</a>
     </div>
   </section>
 </div>
@@ -89,8 +89,8 @@ Neu in v{{< param pluginVersion >}}: [Was ist neu](/icst-ambisonics-plugins/00_n
     <p>Enkodieren, dekodieren und räumlich mischen — direkt in der DAW. Die vollständige ICST-Suite: Encoder, Decoder, Monitor und mehr.</p>
     <video autoplay muted loop playsinline preload="metadata" aria-label="ICST Ambisonics Plugins in REAPER" style="width:100%;height:auto;border-radius:6px" src="/images/Home_v4.mp4"></video>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/01_overview/">Plugin-Übersicht</a>
-      <a class="hero__link" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
+      <a class="hero__link hero__link--primary" href="/de/icst-ambisonics-plugins/01_overview/">Plugin-Übersicht</a>
+      <a class="hero__link" href="/de/icst-ambisonics-plugins/04_quick_start/">Schnellstart</a>
     </div>
   </div>
   <div class="tool-card">
@@ -98,7 +98,7 @@ Neu in v{{< param pluginVersion >}}: [Was ist neu](/icst-ambisonics-plugins/00_n
     <p>Für Live-Spatialisierung, algorithmischen Klang und Workflows jenseits von REAPER — läuft nativ in Max 8.</p>
     <img src="/images/ICST_Ambi-Tools_Max.png" alt="ICST Ambisonics Tools für Max/MSP" loading="lazy" />
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/icst-ambisonics-tools/">Docs & Beispiele</a>
+      <a class="hero__link hero__link--primary" href="/de/icst-ambisonics-tools/">Docs & Beispiele</a>
       <a class="hero__link" href="https://www.zhdk.ch/en/research/icst/software-downloads-5379/downloads-icst-tools-for-maxmsp-5385">ZHdK Download</a>
     </div>
   </div>
@@ -117,23 +117,23 @@ Neu in v{{< param pluginVersion >}}: [Was ist neu](/icst-ambisonics-plugins/00_n
     <h4>🎧 ASCOLTA</h4>
     <p>Regelmässige akusmatische Hörstunden und Konzerte an der ZHdK — räumliche Werke live aufgeführt, offen für Publikum.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/blog/ascolta/">Alle Sessions</a>
+      <a class="hero__link hero__link--primary" href="/de/blog/ascolta/">Alle Sessions</a>
       <a class="hero__link" href="/de/blog/ascolta-listening-guide/">Hörleitfaden</a>
     </div>
   </section>
   <section class="home-card">
-    <h4>🎼 Residencies</h4>
-    <p>Artist-in-Residence-Programm am ICST — Profile, Projekte und Dokumentation aus vergangenen und aktuellen Residencies.</p>
+    <h4>🎼 Residenzen</h4>
+    <p>Artist-in-Residence-Programm am ICST — Profile, Projekte und Dokumentation aus vergangenen und aktuellen Residenzen.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/residenzen/">Alle Residencies</a>
+      <a class="hero__link hero__link--primary" href="/de/residenzen/">Alle Residenzen</a>
     </div>
   </section>
   <section class="home-card">
     <h4>🖥️ Kompositionsstudio</h4>
     <p>Setup-Dokumentation, Equipment, Lautsprecherkonfigurationen und Studio-Cases aus dem ICST Kompositionsstudio.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/blog/icst-composer-studio-blog/">Studio Blog</a>
-      <a class="hero__link" href="/blog/downloads/">Downloads</a>
+      <a class="hero__link hero__link--primary" href="/de/blog/icst-composer-studio-blog/">Studio-Blog</a>
+      <a class="hero__link" href="/de/blog/downloads/">Downloads</a>
     </div>
   </section>
 </div>
