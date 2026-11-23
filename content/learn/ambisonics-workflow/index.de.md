@@ -484,7 +484,7 @@ Eine saubere Ambisonics-Session hat eine klare Hierarchie:
 <li>ICST AmbiEncoder auf jeden Quell-Track: Azimut, Elevation, Breite einstellen</li>
 <li>Encoder-Output auf HOA-Bus routen — nie direkt auf Master</li>
 <li>ICST AmbiDecoder am Ende der Kette: Lautsprecherlayout-Preset laden</li>
-<li>Separaten Binaural-Branch aufbauen: AmbiHeadphone auf eigenem Monitoring-Track</li>
+<li>Separaten Binaural-Branch aufbauen: externer Binaural-Decoder (z. B. IEM BinauralDecoder) auf eigenem Monitoring-Track, siehe <a href="/de/post/binaural-monitoring-icst-workflow/">Binaurales Monitoring</a></li>
 <li>B-Format-Master als separaten Render-Track (ohne Decoder) vorbereiten</li>
 </ul>
 
@@ -523,7 +523,7 @@ Quell-Track → AmbiEncoder → [HOA FX: SN3D-konformer Reverb] → HOA-Bus → 
 <p>Laufen Binaural-Decoder und Lautsprecher-Decoder parallel, phasieren sie sich gegenseitig aus. Monitoring-Branches als exklusive Sends aufbauen.</p>
 </div>
 
-- **Binaural:** AmbiHeadphone auf dediziertem Monitor-Track, Solo-Routing.
+- **Binaural:** Externer Binaural-Decoder (z. B. IEM BinauralDecoder oder SPARTA AmbiBIN; die ICST-Plugins enthalten keinen) auf dediziertem Monitor-Track, Solo-Routing. Details: [Binaurales Monitoring im ICST-Workflow](/de/post/binaural-monitoring-icst-workflow/).
 - **Lautsprecher:** ICST AmbiDecoder mit dem Preset des aktuellen Raums.
 - **Preset-Wechsel:** Nur den Decoder austauschen — der HOA-Bus bleibt unverändert.
 

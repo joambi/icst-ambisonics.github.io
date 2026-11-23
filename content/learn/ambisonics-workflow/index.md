@@ -287,7 +287,7 @@ A clean Ambisonics session has a clear hierarchy:
 <li>Insert ICST AmbiEncoder on every source track: set azimuth, elevation, spread</li>
 <li>Route encoder output to HOA Bus — never directly to master</li>
 <li>Insert ICST AmbiDecoder at the end of the chain: load speaker layout preset</li>
-<li>Build a separate binaural branch: AmbiHeadphone on its own monitoring track</li>
+<li>Build a separate binaural branch: an external binaural decoder (e.g. IEM BinauralDecoder) on its own monitoring track, see <a href="/post/binaural-monitoring-icst-workflow/">binaural monitoring</a></li>
 <li>Prepare B-Format Master as a separate render track (without decoder)</li>
 </ul>
 
@@ -326,7 +326,7 @@ Source Track → AmbiEncoder → [HOA FX: SN3D-compliant Reverb] → HOA Bus →
 <p>Running a binaural decoder and a speaker decoder in parallel causes phase cancellation. Build monitoring branches as exclusive sends.</p>
 </div>
 
-- **Binaural:** AmbiHeadphone on a dedicated monitor track, solo routing.
+- **Binaural:** External binaural decoder (e.g. IEM BinauralDecoder or SPARTA AmbiBIN; the ICST plugins include none) on a dedicated monitor track, solo routing. Details: [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/).
 - **Speakers:** ICST AmbiDecoder with the preset for the current room.
 - **Preset switching:** Only swap the decoder — the HOA bus remains unchanged.
 
