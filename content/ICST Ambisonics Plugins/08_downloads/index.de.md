@@ -1,6 +1,6 @@
 ---
 tags:
-date: 2026-11-22T09:30:00
+date: 2026-11-23T19:00:00
 title: Downloads
 aliases: ["/de/icst-ambisonics-plugins/downloads/"]
 weight: 330
@@ -15,6 +15,7 @@ Nutze diese Seite, wenn du aktuelle Plugin-Releases, Max/MSP-Tools oder ergänze
 Die zentrale Plugin-Suite für Encoding und Decoding von Ambisonics B-Format in REAPER. Kostenlos und Open Source.
 
 - [Aktuelles Release herunterladen](https://github.com/schweizerweb/icst-ambisonics-plugins/releases) — VST3 / AU / LV2 Installer für macOS und Windows
+- Aktuelle Version: 4.0.0, erschienen am 9. November 2026 ([Release Notes](https://github.com/schweizerweb/icst-ambisonics-plugins/releases/tag/4.0.0))
 - [GitHub-Repository und Wiki](https://github.com/schweizerweb/icst-ambisonics-plugins) — Quellcode, Issue-Tracker und vollständige technische Dokumentation
 
 Enthält: AmbiEncoder (Mono + Multi), AmbiDecoder, MultiDecoder, Animator und OSC-Unterstützung.
