@@ -13,8 +13,8 @@ Up to **64 sources** can be encoded to **B-format / HOA** and decoded to freely 
 
 | Module | Use it for |
 |---|---|
-| **AmbiEncoder**, **StereoEncoder** | place mono or stereo sources in the Ambisonics field |
-| **AmbiEncoder_64** | position and move up to 64 sources, with source groups and the Animator |
+| **AmbiEncoder** | place a single mono source in the Ambisonics field |
+| **AmbiEncoder_64** | position and move stereo and multiple sources (up to 64), with source groups and the Animator |
 | **AmbiDecoder** | decode B-format to a loudspeaker setup |
 | **MultiDecoder** | decode to layered or segmented loudspeaker arrays |
 
