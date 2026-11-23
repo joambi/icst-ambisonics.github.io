@@ -1,5 +1,6 @@
 ---
 title: "ICST Ambisonics"
+seoTitle: "ICST Ambisonics — Kostenlose Ambisonics-Plugins & Raumklang-Leitfaden | ZHdK"
 description: "Kostenlose Ambisonics-Plugins für REAPER, ein Kompositions-Guide für räumliches Komponieren und Künstlerresidenzen. ICST / Zürcher Hochschule der Künste."
 mainSectionsTitle: "Aktuelle Beiträge"
 languageCode: de
