@@ -2,7 +2,7 @@
   <meta charset="utf-8" />
   <title>
     {{- if .IsHome -}}
-      {{- .Site.Title }} — Free Ambisonics Plugins &amp; Spatial Audio Guide | ZHdK
+      {{- with .Params.seoTitle }}{{ . }}{{ else }}{{ .Site.Title }} — Free Ambisonics Plugins &amp; Spatial Audio Guide | ZHdK{{ end }}
     {{- else -}}
       {{- with .Title }}{{ . }} | {{ end -}}
       {{- .Site.Title }}
