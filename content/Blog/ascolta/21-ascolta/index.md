@@ -22,7 +22,7 @@ _Free admission_
 
 ## Programme
 
-### _Fluctuating Beings_ (2026) · Stereo
+### _Fluctuating Beings_ (2026) · Hybrid
 
 Composed mainly from recordings of feedback sound produced on a bass drum. In its original version, the feedback is also generated and performed live with a different setup; for this listening session, an acousmatic version of the work will be presented.
 
