@@ -1,6 +1,6 @@
 ---
 tags:
-date: 2025-01-15T16:21:00
+date: 2026-11-23T09:30:00
 title: Downloads
 aliases: ["/de/icst-ambisonics-plugins/downloads/"]
 weight: 330
