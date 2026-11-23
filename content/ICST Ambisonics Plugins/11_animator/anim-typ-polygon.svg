@@ -1,0 +1,12 @@
+<svg viewBox="0 0 160 160" width="100%" style="max-width:160px;color:inherit" aria-hidden="true" focusable="false">
+  <defs><marker id="amt-polygon-ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e64980"/></marker></defs>
+  <rect x="1" y="1" width="158" height="158" rx="10" fill="none" stroke="currentColor" stroke-opacity=".15"/>
+  <polyline points="33.9,104.3 55.7,40.3 106.9,44.8 129.9,91.5 85.1,124.8 33.9,104.3" fill="none" stroke="#e64980" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="44.8" y1="72.3" x2="45.2" y2="71" stroke="#e64980" stroke-width="2.4" marker-end="url(#amt-polygon-ah)"/>
+  <rect x="30.4" y="100.8" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <rect x="52.2" y="36.8" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <rect x="103.4" y="41.3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <rect x="126.4" y="88" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <rect x="81.6" y="121.3" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <circle cx="33.9" cy="104.3" r="4.5" fill="currentColor"/>
+</svg>

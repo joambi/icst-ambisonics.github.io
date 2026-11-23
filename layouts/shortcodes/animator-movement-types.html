@@ -1,0 +1,21 @@
+{{- /* Grid of the ten Animator movement types (top view). Texts: data/animator_movement_types.yaml */ -}}
+{{- $lang := .Page.Language.Lang -}}
+{{- $d := index site.Data.animator_movement_types $lang | default (index site.Data.animator_movement_types "en") -}}
+<div class="anim-types" role="list" aria-label="{{ $d.aria }}">
+{{- range $d.types }}
+  {{- $res := $.Page.Resources.Get (printf "anim-typ-%s.svg" .slug) }}
+  <figure class="anim-types__item" role="listitem">
+    {{ with $res }}{{ .Content | safeHTML }}{{ else }}{{ errorf "animator-movement-types: anim-typ-%s.svg missing" .slug }}{{ end }}
+    <figcaption><strong>{{ .name }}</strong><span>{{ .params }}</span></figcaption>
+  </figure>
+{{- end }}
+</div>
+<p class="anim-types__legend">
+  <span><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="currentColor"/></svg>{{ $d.legend.start }}</span>
+  <span><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>{{ $d.legend.target }}</span>
+  <span><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M0 6h12M6 0v12" stroke="currentColor" stroke-width="1.8"/></svg>{{ $d.legend.center }}</span>
+  <span><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><rect x="2" y="2" width="8" height="8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>{{ $d.legend.waypoint }}</span>
+  <span><svg viewBox="0 0 12 16" width="12" height="16" aria-hidden="true"><path d="M2.5 7 L6 1 L9.5 7z" fill="currentColor" fill-opacity=".55"/><circle cx="6" cy="9.5" r="5" fill="currentColor" fill-opacity=".55"/></svg>{{ $d.legend.listener }}</span>
+  <span><svg viewBox="0 0 20 12" width="20" height="12" aria-hidden="true"><path d="M1 6h12" stroke="#e64980" stroke-width="2.4"/><path d="M12 1l7 5-7 5z" fill="#e64980"/></svg>{{ $d.legend.path }}</span>
+</p>
+<p class="anim-types__note">{{ $d.note }}</p>

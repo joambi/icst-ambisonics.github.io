@@ -1,0 +1,30 @@
+de:
+  aria: "Die zehn Bewegungstypen des Animators in der Draufsicht"
+  note: "Draufsicht wie im XY-Radar des AmbiEncoder (X nach rechts, Y nach oben); Helix schräg von vorn. Positive Rotations laufen im Uhrzeigersinn. Die Bahnen sind mit den Formeln des Plugins berechnet."
+  legend: {start: "Start", target: "Ziel", center: "Center", waypoint: "Waypoint", listener: "Hörer", path: "Bahn und Richtung"}
+  types:
+    - {slug: moveto-cartesian, name: "MoveTo (Cartesian)", params: "Gerade"}
+    - {slug: moveto-polar, name: "MoveTo (Polar)", params: "kürzester Bogen um den Hörer"}
+    - {slug: circle, name: "Circle", params: "Rotations 1"}
+    - {slug: spiral, name: "Spiral", params: "Rotations 2, Radius change −0.3"}
+    - {slug: helix, name: "Helix", params: "Rotations 3, Height rise"}
+    - {slug: spline, name: "Spline", params: "Tension 0.5, Closed path"}
+    - {slug: polygon, name: "Polygon", params: "Closed path"}
+    - {slug: lissajous, name: "Lissajous", params: "Frequency X 3 / Y 2, Phase 90°"}
+    - {slug: rose, name: "Rose", params: "Petals 3"}
+    - {slug: random-walk, name: "Random Walk", params: "Wander cycles 2.5, Seed 1"}
+en:
+  aria: "The ten Animator movement types seen from above"
+  note: "Top view as in the AmbiEncoder XY radar (X to the right, Y up); Helix seen obliquely from the front. Positive Rotations run clockwise. The paths are computed with the plug-in's own formulas."
+  legend: {start: "Start", target: "Target", center: "Center", waypoint: "Waypoint", listener: "Listener", path: "Path and direction"}
+  types:
+    - {slug: moveto-cartesian, name: "MoveTo (Cartesian)", params: "straight line"}
+    - {slug: moveto-polar, name: "MoveTo (Polar)", params: "shortest arc around the listener"}
+    - {slug: circle, name: "Circle", params: "Rotations 1"}
+    - {slug: spiral, name: "Spiral", params: "Rotations 2, Radius change −0.3"}
+    - {slug: helix, name: "Helix", params: "Rotations 3, Height rise"}
+    - {slug: spline, name: "Spline", params: "Tension 0.5, Closed path"}
+    - {slug: polygon, name: "Polygon", params: "Closed path"}
+    - {slug: lissajous, name: "Lissajous", params: "Frequency X 3 / Y 2, Phase 90°"}
+    - {slug: rose, name: "Rose", params: "Petals 3"}
+    - {slug: random-walk, name: "Random Walk", params: "Wander cycles 2.5, Seed 1"}

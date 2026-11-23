@@ -104,6 +104,8 @@ Jeder Clip braucht einen Ausgangspunkt. Du kannst ihn **festlegen** oder vom akt
 | **festgelegt** | *Use Defined Start Position* an, Startposition eingetragen | *Use Start Value* an, Startwinkel bzw. Start-Stretch eingetragen |
 | **übernommen** | aus; der Clip beginnt dort, wo der Gruppenpunkt gerade steht | aus; der Clip baut auf der aktuellen Drehung bzw. Dehnung auf |
 
+{{< inline-svg src="anim-startwert" >}}
+
 Mit **festgelegtem** Start springt die Gruppe beim Clipstart auf diesen Wert, und der Clip läuft von dort jedes Mal gleich ab, egal was vorher war. Das ist bei jedem Play, Loop, Pause/Resume und auch beim Einstieg mitten in den Clip reproduzierbar.
 
 Mit **übernommenem** Start ist das Ergebnis nur vorhersagbar, wenn die Wiedergabe von vor dem Clip ohne Unterbruch durchläuft. Sobald etwas dazwischenkommt, ist „der aktuelle Zustand" ein anderer, und der Clip endet woanders:
@@ -184,6 +186,8 @@ Doppelklick auf einen Movement-Clip öffnet **Edit Movement Clip** mit drei Bere
 {{< video name="AT-MOV-V01-Movement-Types-Tour" muted="true" caption="Rundgang durch alle Bewegungstypen im Editor." >}}
 
 ### Bewegungstypen und ihre Parameter
+
+{{< animator-movement-types >}}
 
 | Typ | Bahn | Positionen | Typ-Parameter |
 |---|---|---|---|
