@@ -1,7 +1,7 @@
 ---
 title: "ICST Ambisonics"
 seoTitle: "ICST Ambisonics — Kostenlose Ambisonics-Plugins & Raumklang-Leitfaden | ZHdK"
-description: "Kostenlose Ambisonics-Plugins für REAPER, ein Kompositions-Guide für räumliches Komponieren und Künstlerresidenzen. ICST / Zürcher Hochschule der Künste."
+description: "Kostenlose Ambisonics-Plugins für REAPER, Dokumentation und Tutorials für räumliches Komponieren und Künstlerresidenzen. ICST / Zürcher Hochschule der Künste."
 mainSectionsTitle: "Aktuelle Beiträge"
 languageCode: de
 aliases:
@@ -27,6 +27,8 @@ aliases:
 </div>
 
 ## Willkommen im ICST Ambisonics EcoSystem
+
+**Freie Ambisonics-Werkzeuge für REAPER — entwickelt am ICST der Zürcher Hochschule der Künste.**
 
 Ambisonics ist eine Methode, dreidimensionalen Klang aufzunehmen und wiederzugeben — für beliebige Lautsprecheranordnungen, in jedem Raum. Das ICST Ambisonics EcoSystem versammelt freie Plugins für REAPER, Tools für Max/MSP, Motion-Werkzeuge, Dokumentation und Studiopraxis der ZHdK Zürich an einem Ort.
 
@@ -65,6 +67,8 @@ Neu in v{{< param pluginVersion >}}: [Was ist neu](/icst-ambisonics-plugins/00_n
     <p>Schneller Einstieg in Setup, Signalfluss und den ersten räumlichen Mix in REAPER.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/de/icst-ambisonics-plugins/04_quick_start/">Schnellstart</a>
+      <a class="hero__link" href="/de/post/hoa-ordnung-wahl-praxis/">Welche Ordnung?</a>
+      <a class="hero__link" href="/de/post/binaural-monitoring-icst-workflow/">Am Kopfhörer</a>
     </div>
   </section>
   <section class="home-card">
@@ -76,7 +80,7 @@ Neu in v{{< param pluginVersion >}}: [Was ist neu](/icst-ambisonics-plugins/00_n
   </section>
   <section class="home-card">
     <h4>🎼 Komponieren in Ambisonics</h4>
-    <p>Räumliches Denken für Komponist:innen — analytisches Hören, Bewegung und Tiefe als kompositorische Parameter, Studiopraxis. Der vollständige Kompositions-Guide ist in Vorbereitung.</p>
+    <p>Räumliches Denken für Komponist:innen — analytisches Hören, Bewegung und Tiefe als kompositorische Parameter, Studiopraxis.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/de/post/komposition-in-ambisonics/">Einführung</a>
       <a class="hero__link" href="/de/blog/ascolta-listening-guide/">Hörleitfaden</a>

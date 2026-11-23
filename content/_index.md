@@ -26,6 +26,8 @@ aliases:
 
 ## Welcome to the ICST Ambisonics EcoSystem
 
+**Free Ambisonics tools for REAPER — developed at ICST, Zurich University of the Arts.**
+
 Level: Beginner to Advanced | **Audience:** Composers, students, producers, technicians, and studio residents.
 
 Ambisonics is a method for capturing and reproducing three-dimensional sound. The ICST Ambisonics EcoSystem brings free plugins for REAPER, Max/MSP tools, motion tools, documentation and studio practice from ZHdK Zurich together in one place.
@@ -65,6 +67,8 @@ New in v{{< param pluginVersion >}}: [What's New](/icst-ambisonics-plugins/00_ne
     <p>Fast entry into setup, signal flow, and your first spatial mix in REAPER.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/icst-ambisonics-plugins/04_quick_start/">Quick Start</a>
+      <a class="hero__link" href="/post/hoa-ordnung-wahl-praxis/">Which Order?</a>
+      <a class="hero__link" href="/post/binaural-monitoring-icst-workflow/">On Headphones</a>
     </div>
   </section>
   <section class="home-card">
@@ -76,7 +80,7 @@ New in v{{< param pluginVersion >}}: [What's New](/icst-ambisonics-plugins/00_ne
   </section>
   <section class="home-card">
     <h4>🎼 Composing in Ambisonics</h4>
-    <p>Spatial thinking for composers — analytical listening, movement and depth as compositional parameters, studio workflows. The full Composing Guide is in preparation.</p>
+    <p>Spatial thinking for composers — analytical listening, movement and depth as compositional parameters, studio workflows.</p>
     <div class="home-card__actions">
       <a class="hero__link hero__link--primary" href="/post/komposition-in-ambisonics/">Introduction</a>
       <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
