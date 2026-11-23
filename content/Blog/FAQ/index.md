@@ -138,7 +138,7 @@ Yes — use Max for Live MIDI or OSC clips to send control messages, synchronise
 <summary class="faq-question">Can I monitor in binaural without a speaker array?</summary>
 <div class="faq-answer">
 
-Yes. The AmbiDecoder includes a binaural decoding mode using HRTFs. Enable it in the decoder's output section and route to a stereo output. For higher-quality HRTF rendering, the [DearVR integration tutorial](/post/getting-started-icst-plugins-reaper/) covers using a third-party binaural renderer on the decoder output.
+Yes, with an external binaural decoder. The ICST plugins deliberately do not include one: the AmbiDecoder decodes to loudspeakers only. Insert a free binaural decoder such as the IEM BinauralDecoder or SPARTA AmbiBIN on the B-format master bus in place of the loudspeaker decoder, set it to the same order as your encoders (ACN/SN3D) and route its output to a stereo pair. Setup, signal chain and common mistakes: [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/).
 
 </div>
 </details>
@@ -147,7 +147,7 @@ Yes. The AmbiDecoder includes a binaural decoding mode using HRTFs. Enable it in
 <summary class="faq-question">The binaural output sounds mono or collapsed — why?</summary>
 <div class="faq-answer">
 
-Usually caused by a channel count mismatch: the decoder is receiving fewer HOA channels than it expects. Check that the B-Format bus send is set to full multichannel (not summed to stereo).
+Usually caused by a channel count mismatch: the binaural decoder is receiving fewer HOA channels than it expects, or its order setting differs from the encoders. Check that the B-format bus carries the full channel count (4, 16, 36 or 64, not summed to stereo) and that the decoder is set to the same order and to ACN/SN3D.
 
 </div>
 </details>

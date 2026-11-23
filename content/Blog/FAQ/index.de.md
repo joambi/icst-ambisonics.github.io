@@ -139,7 +139,7 @@ Ja — Max-for-Live-MIDI- oder OSC-Clips senden Steuernachrichten, synchronisier
 <summary class="faq-question">Kann ich binaurales Monitoring ohne Lautsprecheranlage nutzen?</summary>
 <div class="faq-answer">
 
-Ja. Der AmbiDecoder enthält einen Binaural-Modus auf Basis von HRTFs. Im Decoder-Ausgangsbereich aktivieren und auf einen Stereo-Ausgang routen. Das [DearVR-Integrations-Tutorial](/de/post/getting-started-icst-plugins-reaper/) zeigt die Verwendung eines externen Binaural-Renderers am Decoder-Ausgang.
+Ja, mit einem externen Binaural-Decoder. Die ICST-Plugins enthalten bewusst keinen: Der AmbiDecoder dekodiert nur auf Lautsprecher. Einen freien Binaural-Decoder wie den IEM BinauralDecoder oder SPARTA AmbiBIN anstelle des Lautsprecher-Decoders auf den B-Format-Master-Bus legen, auf dieselbe Ordnung wie die Encoder einstellen (ACN/SN3D) und den Ausgang auf ein Stereopaar routen. Aufbau, Signalkette und häufige Fehler: [Binaurales Monitoring im ICST-Workflow](/de/post/binaural-monitoring-icst-workflow/).
 
 </div>
 </details>
@@ -148,7 +148,7 @@ Ja. Der AmbiDecoder enthält einen Binaural-Modus auf Basis von HRTFs. Im Decode
 <summary class="faq-question">Der binaurale Ausgang klingt mono oder zusammengebrochen — warum?</summary>
 <div class="faq-answer">
 
-Meist ein Kanal-Count-Mismatch: der Decoder empfängt weniger HOA-Kanäle als erwartet. Prüfen, ob das B-Format-Bus-Send auf vollständiges Multichannel gesetzt ist (nicht auf Stereo-Summe).
+Meist stimmt die Kanalzahl nicht: Der Binaural-Decoder erhält weniger HOA-Kanäle als erwartet, oder seine Ordnung weicht von der der Encoder ab. Prüfen, ob der B-Format-Bus die volle Kanalzahl führt (4, 16, 36 oder 64, nicht auf Stereo summiert) und der Decoder auf dieselbe Ordnung und auf ACN/SN3D eingestellt ist.
 
 </div>
 </details>
