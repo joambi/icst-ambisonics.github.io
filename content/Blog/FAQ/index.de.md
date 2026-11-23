@@ -180,10 +180,10 @@ Die Plugins laufen in REAPER als VST/AU-Effects und sind für Session-basiertes 
 ## Updates & Versionen
 
 <details class="faq-item">
-<summary class="faq-question">Wie aktualisiere ich von v3.1 auf v3.2?</summary>
+<summary class="faq-question">Wie aktualisiere ich auf v4.0?</summary>
 <div class="faq-answer">
 
-Die alten Plugin-Dateien durch die neuen von der [GitHub-Releases-Seite](https://github.com/schweizerweb/icst-ambisonics-plugins/releases) ersetzen und REAPER neu scannen lassen. Bestehende Sessions öffnen korrekt — keine Einstellungsmigration nötig. Neue Features sind unter [Was ist neu in v3.2](/de/icst-ambisonics-plugins/00_new/) beschrieben.
+Den Installer für das eigene System (macOS .pkg, Windows .exe, Linux .deb) vom [GitHub-Release 4.0.0](https://github.com/schweizerweb/icst-ambisonics-plugins/releases/tag/4.0.0) laden, über die bestehende Installation ausführen und die Plugins in REAPER neu scannen lassen. Mit v3.x gespeicherte Sessions öffnen in v4.0 ohne Umwandlung. Umgekehrt nicht verlässlich: Eine mit v4.0 gespeicherte Session zeigt in einer älteren Version die Warnung «Outdated AmbiEncoder version». Vor dem Wechsel wichtige Projekte sichern. Sessions aus v2.x und früher sind mit v3 und später nicht kompatibel. Neuerungen: [Was ist neu](/de/icst-ambisonics-plugins/00_new/).
 
 </div>
 </details>
