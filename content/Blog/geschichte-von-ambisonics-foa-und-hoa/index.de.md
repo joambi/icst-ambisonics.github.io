@@ -32,7 +32,7 @@ Diese Timeline trennt die Entwicklung von <strong>FOA</strong> und <strong>HOA</
   </section>
   <section class="ambisonics-history__note">
     <h3>HOA</h3>
-    <p>HOA baut auf denselben Grundlagen auf, erweitert sie aber systematisch. Mit höherer Ordnung wachsen Richtungsauflosung, Flexibilität im Rendering und Relevanz für immersive Medien und Forschung.</p>
+    <p>HOA baut auf denselben Grundlagen auf, erweitert sie aber systematisch. Mit höherer Ordnung wachsen Richtungsauflösung, Flexibilität im Rendering und Relevanz für immersive Medien und Forschung.</p>
   </section>
 </div>
 
