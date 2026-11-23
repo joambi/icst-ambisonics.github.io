@@ -18,6 +18,8 @@ The core plugin suite for encoding and decoding Ambisonics B-format in REAPER. F
 - Current version: 4.0.0, released 9 November 2026 ([release notes](https://github.com/schweizerweb/icst-ambisonics-plugins/releases/tag/4.0.0))
 - [GitHub repository and wiki](https://github.com/schweizerweb/icst-ambisonics-plugins) — source code, issue tracker, and full technical documentation
 
+The installers are not signed. macOS and Windows may show a security warning on first launch. Download them only from the GitHub release page.
+
 Includes: AmbiEncoder (Mono + Multi), AmbiDecoder, MultiDecoder, Animator, and OSC support.
 
 For installation instructions, see [Installation](/icst-ambisonics-plugins/02_installation/).
