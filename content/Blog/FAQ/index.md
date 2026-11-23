@@ -138,7 +138,7 @@ Yes — use Max for Live MIDI or OSC clips to send control messages, synchronise
 <summary class="faq-question">Can I monitor in binaural without a speaker array?</summary>
 <div class="faq-answer">
 
-Yes, with an external binaural decoder. The ICST plugins deliberately do not include one: the AmbiDecoder decodes to loudspeakers only. Insert a free binaural decoder such as the IEM BinauralDecoder or SPARTA AmbiBIN on the B-format master bus in place of the loudspeaker decoder, set it to the same order as your encoders (ACN/SN3D) and route its output to a stereo pair. Setup, signal chain and common mistakes: [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/).
+Yes, with an external binaural decoder. The ICST plugins deliberately do not include one: the AmbiDecoder decodes to loudspeakers only. Insert a free binaural decoder such as the IEM BinauralDecoder or SPARTA AmbiBIN on the B-format master bus in place of the loudspeaker decoder, set it to the same order as your encoders (ACN/SN3D) and route its output to a stereo pair. To switch between loudspeakers and headphones, put the AmbiDecoder and the binaural decoder side by side on the bus and keep exactly one active via FX bypass; a separate send bus with its own hardware output lets you compare both at the same time. Setup, signal chain and common mistakes: [Binaural monitoring in the ICST workflow](/post/binaural-monitoring-icst-workflow/).
 
 </div>
 </details>

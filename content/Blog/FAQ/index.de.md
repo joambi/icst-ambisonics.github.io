@@ -139,7 +139,7 @@ Ja — Max-for-Live-MIDI- oder OSC-Clips senden Steuernachrichten, synchronisier
 <summary class="faq-question">Kann ich binaurales Monitoring ohne Lautsprecheranlage nutzen?</summary>
 <div class="faq-answer">
 
-Ja, mit einem externen Binaural-Decoder. Die ICST-Plugins enthalten bewusst keinen: Der AmbiDecoder dekodiert nur auf Lautsprecher. Einen freien Binaural-Decoder wie den IEM BinauralDecoder oder SPARTA AmbiBIN anstelle des Lautsprecher-Decoders auf den B-Format-Master-Bus legen, auf dieselbe Ordnung wie die Encoder einstellen (ACN/SN3D) und den Ausgang auf ein Stereopaar routen. Aufbau, Signalkette und häufige Fehler: [Binaurales Monitoring im ICST-Workflow](/de/post/binaural-monitoring-icst-workflow/).
+Ja, mit einem externen Binaural-Decoder. Die ICST-Plugins enthalten bewusst keinen: Der AmbiDecoder dekodiert nur auf Lautsprecher. Einen freien Binaural-Decoder wie den IEM BinauralDecoder oder SPARTA AmbiBIN anstelle des Lautsprecher-Decoders auf den B-Format-Master-Bus legen, auf dieselbe Ordnung wie die Encoder einstellen (ACN/SN3D) und den Ausgang auf ein Stereopaar routen. Wer zwischen Lautsprechern und Kopfhörer wechseln will, legt AmbiDecoder und Binaural-Decoder nebeneinander auf den Bus und hält per FX-Bypass genau einen aktiv; ein separater Send-Bus mit eigenem Hardware-Ausgang erlaubt den direkten Vergleich beider. Aufbau, Signalkette und häufige Fehler: [Binaurales Monitoring im ICST-Workflow](/de/post/binaural-monitoring-icst-workflow/).
 
 </div>
 </details>
