@@ -1,0 +1,15 @@
+{{- /*
+  GoatCounter – cookielose, datensparsame Besucherzählung.
+  Aktiv nur im Production-Build (hugo / CI), nicht in `hugo server`.
+  Konfiguration: [params.goatcounter] in hugo.toml.
+  Dashboard: https://<code>.goatcounter.com
+*/ -}}
+{{- with site.Params.goatcounter -}}
+  {{- if and .enable .code hugo.IsProduction -}}
+    <script
+      data-goatcounter="https://{{ .code }}.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  {{- end -}}
+{{- end -}}
