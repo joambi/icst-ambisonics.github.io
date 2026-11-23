@@ -148,7 +148,7 @@ Ja, mit einem externen Binaural-Decoder. Die ICST-Plugins enthalten bewusst kein
 <summary class="faq-question">Der binaurale Ausgang klingt mono oder zusammengebrochen — warum?</summary>
 <div class="faq-answer">
 
-Meist stimmt die Kanalzahl nicht: Der Binaural-Decoder erhält weniger HOA-Kanäle als erwartet, oder seine Ordnung weicht von der der Encoder ab. Prüfen, ob der B-Format-Bus die volle Kanalzahl führt (4, 16, 36 oder 64, nicht auf Stereo summiert) und der Decoder auf dieselbe Ordnung und auf ACN/SN3D eingestellt ist.
+Fast immer erhält der Decoder nur zwei Kanäle: Eine Spur oder ein Bus in der Kette steht noch auf REAPERs Standard von 2 Kanälen, oder das Signal läuft vor dem Decoder über einen Stereo-Bus. Dann kommen nur W und Y an, und das Raumbild bricht zusammen. Prüfen, ob jede Spur von den Encodern bis zum Decoder die volle Kanalzahl von (Ordnung + 1)² führt, von 4 Kanälen bei 1. Ordnung bis 64 bei 7. Ordnung, und ob der Decoder auf ACN/SN3D eingestellt ist. Klingt es nicht mono, sondern verschwommen, führt der Bus weniger Kanäle, als die Encoder erzeugen, oder der Decoder ist auf eine niedrigere Ordnung eingestellt als die Encoder: Die Ortung klingt dann wie 1. Ordnung, obwohl HOA-Material anliegt.
 
 </div>
 </details>

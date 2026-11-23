@@ -147,7 +147,7 @@ Yes, with an external binaural decoder. The ICST plugins deliberately do not inc
 <summary class="faq-question">The binaural output sounds mono or collapsed — why?</summary>
 <div class="faq-answer">
 
-Usually caused by a channel count mismatch: the binaural decoder is receiving fewer HOA channels than it expects, or its order setting differs from the encoders. Check that the B-format bus carries the full channel count (4, 16, 36 or 64, not summed to stereo) and that the decoder is set to the same order and to ACN/SN3D.
+Almost always because the decoder receives only two channels: a track or bus in the chain is still at REAPER's default of 2 channels, or the signal is routed through a stereo bus before the decoder. Only W and Y arrive, and the spatial image collapses. Check that every track from the encoders to the decoder carries the full channel count of (order + 1)², from 4 channels for first order to 64 for 7th order, and that the decoder is set to ACN/SN3D. If the image is blurred rather than mono, the bus carries fewer channels than the encoders produce or the decoder is set to a lower order than the encoders: localisation then sounds like first order even though the material is HOA.
 
 </div>
 </details>
