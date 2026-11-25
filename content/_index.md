@@ -122,7 +122,7 @@ New in v{{< param pluginVersion >}}: [What's New](/icst-ambisonics-plugins/00_ne
     <h4>🎧 ASCOLTA</h4>
     <p>Regular acousmatic listening sessions and concerts at ZHdK — spatial works performed live, open for audience.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/blog/ascolta/">All Sessions</a>
+      <a class="hero__link hero__link--primary" href="/blog/ascolta/">All ASCOLTA</a>
       <a class="hero__link" href="/blog/ascolta-listening-guide/">Listening Guide</a>
     </div>
   </section>

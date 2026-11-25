@@ -122,7 +122,7 @@ Neu in v{{< param pluginVersion >}}: [Was ist neu](/icst-ambisonics-plugins/00_n
     <h4>🎧 ASCOLTA</h4>
     <p>Regelmässige akusmatische Hörstunden und Konzerte an der ZHdK — räumliche Werke live aufgeführt, offen für Publikum.</p>
     <div class="home-card__actions">
-      <a class="hero__link hero__link--primary" href="/de/blog/ascolta/">Alle Sessions</a>
+      <a class="hero__link hero__link--primary" href="/de/blog/ascolta/">Alle ASCOLTA</a>
       <a class="hero__link" href="/de/blog/ascolta-listening-guide/">Hörleitfaden</a>
     </div>
   </section>
