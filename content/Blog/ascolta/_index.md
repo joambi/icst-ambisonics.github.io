@@ -59,7 +59,7 @@ group: "Listening"
 
 ---
 
-## All Sessions
+## All ASCOLTA
 
 <div class="season-section">
   <div class="season-label">2026</div>
