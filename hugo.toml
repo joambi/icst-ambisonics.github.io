@@ -357,7 +357,7 @@ url = "https://www.youtube.com/@ZHDK_ICST/search?query=ambisonics+plugins"
   url = "/blog/ascolta/"
 
 [[menu.main]]
-  name = "Sessions"
+  name = "ASCOLTA"
   identifier = "ascolta-0"
   weight = 451
   url = "/blog/ascolta/"
@@ -658,7 +658,7 @@ month = "month"
   url = "/de/blog/ascolta/"
 
 [[languages.de.menus.main]]
-  name = "Sessions"
+  name = "ASCOLTA"
   identifier = "ascolta-0"
   weight = 451
   url = "/de/blog/ascolta/"
