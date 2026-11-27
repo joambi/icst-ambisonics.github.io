@@ -30,12 +30,7 @@ languageCode: de
 ## Demnächst
 
 <div class="hub-next">
-  <div class="hub-upcoming">
-    <span class="hub-upcoming__eyebrow">Demnächst · #21</span>
-    <div class="hub-upcoming__date">26. November 2026</div>
-    <div class="hub-upcoming__meta">18:00 Uhr · Kompositionsstudio 3.D02, Toni-Areal, Zürich</div>
-    <div class="hub-upcoming__text"><a href="/de/blog/ascolta/21-ascolta/">Yoko Konishi — Fluctuating Beings · Corpus Lucide</a> · Eintritt frei</div>
-  </div>
+  <p>Der nächste Termin wird hier bekannt gegeben.</p>
 </div>
 
 ---
@@ -43,7 +38,7 @@ languageCode: de
 ## Schnell einsteigen
 
 <div class="hub-start">
-  <a href="/de/blog/ascolta/20-ascolta/">
+  <a href="/de/blog/ascolta/21-ascolta/">
     <span class="hub-card__title">Letzte Sitzung</span>
     <span class="hub-card__text">Zum aktuellsten ascolta-Programm und zur Dokumentation.</span>
   </a>

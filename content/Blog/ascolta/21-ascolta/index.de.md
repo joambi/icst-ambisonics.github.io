@@ -22,7 +22,7 @@ _Freier Eintritt_
 
 ## Programm
 
-### _Fluctuating Beings_ (2026) · Hybrid
+### _Fluctuating Beings_ (2021) · Hybrid
 
 Das Stück besteht hauptsächlich aus Aufnahmen von Feedback-Klängen, die auf einer Bassdrum erzeugt wurden. In der ursprünglichen Fassung wird das Feedback zusätzlich live mit einem anderen Setup erzeugt und gespielt; für diese Hörsitzung wird eine akusmatische Version des Werks präsentiert.
 
